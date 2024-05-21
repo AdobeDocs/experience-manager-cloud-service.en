@@ -12,8 +12,8 @@ Content delivery speed benefits from caching pages aggressively, achieved throug
 
 Some use cases where Edge Side Includes may be useful:
 
-* Displaying an end user's name, or other information that is unique to an end user
-* Displaying a list of recent information, such as news articles or stock prices
+* Displaying an end user's name, or other information that is unique to an end user.
+* Displaying a list of recent information, such as news articles or stock prices.
 
 ## ESI syntax {#esi-syntax}
 
@@ -37,15 +37,15 @@ See the [ESI specification](https://www.w3.org/TR/esi-lang/) for details.
 
 ### Considerations (#esi-syntax-considerations}
 
-* The following ESI tags are supported: include, comment, remove
-* ESI tags are processed at the CDN sequentially rather than concurrently, so many ESI tags on a page with low TTLs can add latency to the end user's experience
-* The maximum depth of esi:include processing is 5
-* The maximum total esi:include processing fragments is 256
+* The following ESI tags are supported: include, comment, remove.
+* ESI tags are processed at the CDN sequentially rather than concurrently, so many ESI tags on a page with low TTLs can add latency to the end user's experience.
+* The maximum depth of ESI:include processing is 5.
+* The maximum total ESI:include processing fragments is 256.
 
 
 ## Apache Configuration {#esi-apache}
 
-If you have pages with ESI tags you should declare the following properties in the apache configuration:
+If you have pages with ESI tags you should declare the following properties in the Apache configuration:
 
 ```
 <LocationMatch "/parent-pages/*content/page.html">
@@ -75,7 +75,7 @@ The configured properties have the following behavior:
 
 | Property  | Behavior |
 |-----------|--------------------------|
-| **no-gzip** |If set to 1, the HTML page is transmitted from apache to the CDN uncompressed.  This is necessary for ESI since content must be sent to CDN uncompressed so CDN can see and evaluate the ESI tags.<br/><br/>Both the parent page and included snippets should set no-gzip to 1.<br/><br/>This setting overrides whatever compression setting apache might have otherwise used, based on the request's Accept-Encoding values.|
+| **no-gzip** |If set to 1, the HTML page is transmitted from apache to the CDN uncompressed. This is necessary for ESI since content must be sent to CDN uncompressed so the CDN can see and evaluate the ESI tags.<br/><br/>Both the parent page and the included snippets should set no-gzip to 1.<br/><br/>This setting overrides whatever compression setting Apache might have otherwise used, based on the request's `Accept-Encoding` values.|
 | **x-aem-esi** |If set to "on", the CDN will evaluate the parent HTML page's ESI tags.  By default, the header is not set.|
 | **x-aem-compress** |If set to "on", the CDN will compress the content from the CDN to the browser. Since the transmission of the parent page from apache to CDN must be uncompressed for ESI to work (no-gzip set to 1), this can reduce latency.<br/><br/>If this header is not set, when the CDN retrieves content from the origin uncompressed, it would serve content to the client uncompressed, as well. Thus, it is necessary to set this header if no-gzip is set to 1 (required for ESI) and it is desired to serve content compressed from the CDN to the browser.|
 
