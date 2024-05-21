@@ -39,8 +39,8 @@ See the [ESI specification](https://www.w3.org/TR/esi-lang/) for details.
 
 * The following ESI tags are supported: include, comment, remove.
 * ESI tags are processed at the CDN sequentially rather than concurrently, so many ESI tags on a page with low TTLs can add latency to the end user's experience.
-* The maximum depth of ESI:include processing is 5.
-* The maximum total ESI:include processing fragments is 256.
+* The maximum depth of ESI: include processing is 5.
+* The maximum total ESI: include processing fragments is 256.
 
 
 ## Apache Configuration {#esi-apache}
