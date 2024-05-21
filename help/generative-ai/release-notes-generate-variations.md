@@ -13,6 +13,15 @@ This page documents the release notes for Generate Variations, accessible from A
 
 ## Release Highlights {#release-highlights}
 
+The current release is version 2.2.0.
+
+### 2.2.0 {#release-notes-2-2-0}
+
+* Implemented support for Content Fragments
+* Introduced the ability to download results as CSV files from Favorites
+* Enhanced the Recents list with time groupings
+* Localization support has been added for multiple languages
+ 
 The current releaase is version 2.0.0.
 
 ### 2.0.0 {#release-notes-2-0-0}
