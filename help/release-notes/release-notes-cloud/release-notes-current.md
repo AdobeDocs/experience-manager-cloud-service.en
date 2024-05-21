@@ -54,40 +54,12 @@ Interested in trying out the feature and sharing feedback? Send an email to aemc
 
 ### New features in Assets view {#assets-view-new-features}
 
+**Publish assets to AEM and Dynamic Media**
 
-**Contextual Search**
+Experience Manager Assets now enables you to quickly [publish assets to Experience Manager and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md) using the Assets view without switching to the Admin view. You can publish assets while uploading, browsing, and searching assets.
 
-You can now also [search assets available in the repository by defining text prompts](/help/assets/search-assets-view.md#contextual-search). Experience Manager Assets automatically transforms those text prompts to search filters and displays the search results. You can view and modify automatic filters using the Filters Pane to further narrow down the search results.
+![check publish status1](/help/assets/assets/check-publish-status1.png)
 
-![Contextual Search](/help/assets/assets/contextual-search-text-prompt1.png)
-
-**Express video quick actions**
-
-Experience Manager Assets now includes [easy and intuitive video editing tools powered by Adobe Express](/help/assets/edit-videos-assets-view.md) to increase content re-use and accelerate content velocity. The editing options include trimming, cropping, resizing a video, and also converting an MP4 to a GIF file.
-
-![crop video with Adobe Express](/help/assets/assets/adobe-express-crop-video.png)
-
-**Dynamic renditions**
-
-You can now [view and download dynamic renditions (including smart crops)](/help/assets/renditions.md) in Experience Manager Assets. Dynamic renditions are customized versions of image assets created in real-time to meet specific needs, such as resizing images based on device resolution or cropping to fit different aspect ratios. These renditions enable organizations to deliver personalized and optimized experiences to diverse audience needs.
-
-![Dynamic renditions](/help/assets/assets/preset_smart_crop.png)
-
-**In-place rename for assets and folders**
-
-Experience Manager Assets now offers a simplified user experience by providing [ability to rename an asset or a folder via single click](/help/assets/manage-organize-assets-view.md).
-
-**Assign or remove metadata form to multiple folders**
-
-You can now [assign or remove metadata form to multiple folders](/help/assets/metadata-assets-view.md#assign-metadata-form-to-a-folder).
-
-### New features in Admin view {#admin-view-new-features}
-
-**Link share configuration**
-
-A new improved user experience for [creating link shares](/help/assets/share-assets.md) along with a brand new set of configurations that let administrators customize the default behavior of this capability for your users.
-
-![Link share configuration](/help/assets/assets/config-email-service.png)
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
