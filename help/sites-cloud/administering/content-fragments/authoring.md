@@ -171,7 +171,7 @@ To use the Generative Variations in the Content Fragment Editor:
 
   ![Export to Generate Variations in Content Fragment](assets/cfm-generate-variations2.png)
 
-1. Generate content by filling in the prompts. The content model from the fragment will be automatically be used to generate content using GenAI.
+1. Generate content by filling in the prompts. The content model from the fragment will be automatically used to generate content using GenAI.
 
     >[!NOTE]
     >
