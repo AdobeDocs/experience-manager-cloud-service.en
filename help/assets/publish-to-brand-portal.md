@@ -285,3 +285,4 @@ See, [Brand Portal documentation](https://experienceleague.adobe.com/docs/experi
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
