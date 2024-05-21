@@ -35,7 +35,7 @@ The ESI syntax is as follows, if a parent page `/content/page.html` includes a s
 
 See the [ESI specification](https://www.w3.org/TR/esi-lang/) for details.
 
-### Considerations (#esi-syntax-considerations}
+### Considerations {#esi-syntax-considerations}
 
 * The following ESI tags are supported: include, comment, remove.
 * ESI tags are processed at the CDN sequentially rather than concurrently, so many ESI tags on a page with low TTLs can add latency to the end user's experience.
