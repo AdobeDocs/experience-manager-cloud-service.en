@@ -28,7 +28,7 @@ You can find the latest maintenance release notes [here](/help/release-notes/mai
 
 <!-- ## Release Video {#release-video}
 
-Have a look at the April 2024 Release Overview video for a summary of the features added in the 2024.4.0 release:
+Have a look at the May 2024 Release Overview video for a summary of the features added in the 2024.5.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3429111?quality=12)
 
@@ -166,7 +166,7 @@ Real User Monitoring (RUM) Data Service offers a more precise reflection of user
 
 ### Traffic Spike at Origin Alerts {#traffic-spike-origin}
 
-Receive proactive notifications when traffic patterns at the origin are indicative of a DDoS attack, allowing you to investigate and configure [traffic filter rules]((/help/security/traffic-filter-rules-including-waf.md).
+Receive proactive notifications when traffic patterns at the origin are indicative of a DDoS attack, allowing you to investigate and configure [traffic filter rules](/help/security/traffic-filter-rules-including-waf.md).
 
 ### RDE Support for Front-End Code using Site Themes and Site Templates (Early Adopter Program) {#rde-frontend}
 
@@ -202,80 +202,6 @@ While debugging code in a [Rapid Development Environment (RDE)](/help/implementi
 * stream multiple logs in parallel 
 
 Please reach out to **<aemcs-rde-support@adobe.com>** to try it out and provide feedback.
-
-
-## [!DNL Experience Manager] Guides {#guides}
-
-
-### Ability to Translate Content into Multiple Languages Using Preconfigured Language Groups
-
-Experience Manager Guides now allows you to create language groups and easily translate your content into multiple languages. This feature helps you organize and manage translations according to your organization's needs. 
-
-For example, if you need to translate your content for some countries in Europe, you can create a language group for European languages like English (EN), French (FR), German (DE), Spanish (ES), and Italian (IT).
-
-![translation panel](../assets/guides/translation-languages-2404.png)
-
-*Select the language groups or languages you want to translate your documents.* 
-
->[!NOTE]
->
->If a language's target folder is missing or the target language is the same as the source, it's grayed out and shows a warning sign.
-
-As an administrator you can create language groups and configure them to multiple folder profiles. As an author, you can view the language groups that are configured on your folder profile.
-
-
-Overall, creating language groups enhances the efficiency and productivity of translation projects, ultimately improving the localization process across multiple languages.
-
-
-Learn how to [translate documents from the Web Editor](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/translate-documents-web-editor)
-
-### Revamped Experience to Search and Filter Files in the Repository View
-
-Now, you have an enhanced experience while filtering files. The revamped functionality to filter files provides an improved way to effortlessly search and navigate through files. 
-
-![search files in repository view](../assets/guides/repository-filter-search-2404.png)
-
-*Search for the files containing the text `general purpose.`*
-
-Enjoy benefits such as quicker access to relevant files and a more intuitive user interface, making your search experience smoother and more efficient. 
-
-![quick search filter ](../assets/guides/repository-filter-search-quick.png)
-
-*Use the quick filters to search for DITA and Non-DITA files.*
-
-Learn more about the **Filter Search** feature in the [Left Panel](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-features#id2051EA0M0HS) section.
-
-### Enhancements in the Data Source Connectors
-
-The following enhancements have been made to the data source connectors for the 2024.4.0 release:
-
-#### Connect to Salsify, Akeneo, and Microsoft Azure DevOps Boards (ADO) Data Sources
-
-In addition to the existing out-of-the-box connectors, Experience Manager Guides also provides connectors for Salsify, Akeneo, and Microsoft Azure DevOps Boards (ADO) data sources. As an administrator, you can download and install these connectors. Then, configure the installed connectors.
-
-#### Copy and Paste the Sample Query to Create a Content Snippet or Topic
-
-You can easily copy and paste a sample data query in the generator to create a content snippet or topic. With this feature, you don't have to remember the syntax or create a  query manually. Instead of manually typing the query, you can copy and paste a sample query, edit it, and use it to fetch the data per your requirements. 
-
-![insert content snippet dialog box](../assets/guides/insert-content-snippet.png)
-
- *Copy and edit a sample query to create the content snippet.*
-
-#### Connect to JSON Data Files Using a File Connector 
-
-
-Now, as an administrator, you can configure a JSON file connector to use JSON data files as a data source. Use the connector to import the JSON files from your computer or the Adobe Experience Manager Assets. Then, as an author, you can create content snippets or topics using the generators.
-
-This feature helps you use the data stored in your JSON files and reuse it across various snippets. The content is also updated dynamically whenever you update the JSON files.
-
-#### Configure Multiple Resource URLs for a Connector to Create Content Snippets or Topics
-
-As an administrator, you can configure multiple resource  URLs for some connectors like Generic REST Client, Salsify, Akeneo, and Microsoft Azure DevOps Boards (ADO). 
-Then, as an author, connect with the data sources to create content snippets or topics using the generators. This feature is handy as you don't have to create a data source for each URL. It helps you to quickly fetch data from any of the resources for a particular data source in a single content snippet or topic. View more details about the data source connectors and how to [configure a data source connector from the user interface](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools). Learn how to [use data from your data source](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet).
-
-For more information about the new features and enhancements, view [What's new in the 2024.04.0 release](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0).
-
-For the list of issues fixed in this release, view [Fixed issues in the 2024.4.0 release](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/fixed-issues-2024-04-0).
 
 ## Cloud Manager {#cloud-manager}
 
