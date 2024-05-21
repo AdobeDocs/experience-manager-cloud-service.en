@@ -596,7 +596,7 @@ interface SelectedAsset {
     'repo:state': string;
     computedMetadata: Record<string, any>;
     _links: {
-        'http://ns.adobe.com/adobecloud/rel/rendition': Array<{
+        'https://ns.adobe.com/adobecloud/rel/rendition': Array<{
             href: string;
             type: string;
             'repo:size': number;
@@ -629,12 +629,12 @@ The following table describes some of the important properties of the Selected A
 | *tiff:imageLength* | number | The height of an asset. |
 | *computedMetadata* | `Record<string, any>` | An object which represents a bucket for all the asset's metadata of all kinds (repository, application, or embedded metadata). |
 | *_links* | `Record<string, any>` | Hypermedia links for the associated asset. Includes links for resources such as metadata and renditions. |
-| *_links.<http://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>`| Array of objects containing information about renditions of the asset. |
-| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].href>* | string | The URI to the rendition.|
-| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].type>* | string | The MIME type of the rendition.|
-| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].'repo:size>'* | number | The size of the rendition in bytes.|
-| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].width>* | number | The rendition's width. |
-| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].height>* | number | The rendition's height. |
+| *_links.<https://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>`| Array of objects containing information about renditions of the asset. |
+| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].href>* | string | The URI to the rendition.|
+| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].type>* | string | The MIME type of the rendition.|
+| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].'repo:size>'* | number | The size of the rendition in bytes.|
+| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].width>* | number | The rendition's width. |
+| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].height>* | number | The rendition's height. |
 
 For a complete list of properties and detailed example, visit [Asset Selector Code Example](https://github.com/adobe/aem-assets-selectors-mfe-examples).
 
