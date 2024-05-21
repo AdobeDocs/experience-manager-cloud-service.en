@@ -5,6 +5,6 @@ exl-id: 077eed73-a066-4273-b2f5-da4bf5cd900c
 ---
 # Content Fragments and Content Fragment Models OpenAPIs {#content-fragments-and-content-fragment-models-openapis}
 
-Content Fragments and Content Fragment Models OpenAPIs allow developers to programmatically interact with Content Fragments and Content Fragment Models stored in AEM, and perform CRUD (Create, Read, Update, Delete) operations on them.
+The modernized OpenAPI implementation of the Content Fragment Management API allows developers to programmatically perform Create, Read, Update, and Delete operations on AEM Author to manage Content Fragment Models and Content Fragments that are stored in AEM. These APIs support a number of use-cases.
 
-The APIs support a number of use-cases. For full information see [Content Fragments and Contest Fragment Models OpenAPIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/).
+The existing usage of [Assets HTTP API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) for Content Fragments should be migrated to the new Content Fragment Management OpenAPI. For full documentation see [Content Fragment Management API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/). 
