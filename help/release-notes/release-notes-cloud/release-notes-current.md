@@ -177,7 +177,7 @@ Receive proactive notifications when traffic patterns at the origin are indicati
 
 #### Client-side redirects (Early Adopter Program) {#client-side-redirects-early-adopter}
 
-Configure 301/302 client-side redirects in source control, and deploy to the CDN. [Learn more](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. Note that there are several other features already available related to [CDN configuration](/help/implementing/dispatcher/cdn-configuring-traffic), including request and response transformations, and routing traffic to off-AEM sites.
+Configure 301/302 client-side redirects in source control, and deploy to the CDN. [Learn more](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. Note that there are several other features already available related to [CDN configuration](/help/implementing/dispatcher/cdn-configuring-traffic.md), including request and response transformations, and routing traffic to off-AEM sites.
 
 #### Traffic Filter Rules Alerts (Early Adopter Program) {#traffic-filter-rules-alerts-early-adopter}
 
