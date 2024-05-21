@@ -161,7 +161,7 @@ To use the Generative Variations in the Content Fragment Editor:
 
 1. Open the Content Fragment Editor. In the header you will find the entry point to Generate Variations:
 
-  ![Generate Variations in Content Fragment Editor](assets/cfm-generate-variations1.png)
+      ![Generate Variations in Content Fragment Editor](assets/cfm-generate-variations1.png)
 
 1. Generate variations opens in new tab. In the left rail you can see the AEM Cloud instance and the Content Fragment you are creating content for. Select the prompt you want to use or create a new prompt. 
 
@@ -169,7 +169,7 @@ To use the Generative Variations in the Content Fragment Editor:
     >
     >The available Adobe prompt templates available is limited now, but more will be added in future releases.
 
-  ![Export to Generate Variations in Content Fragment](assets/cfm-generate-variations2.png)
+      ![Export to Generate Variations in Content Fragment](assets/cfm-generate-variations2.png)
 
 1. Generate content by filling in the prompts. The content model from the fragment will be automatically used to generate content using GenAI.
 
@@ -177,20 +177,20 @@ To use the Generative Variations in the Content Fragment Editor:
     >
     >We are currently only supporting text fields.
 
-  ![Export to Generate Variations in Content Fragment](assets/cfm-generate-variations3.png)
+      ![Export to Generate Variations in Content Fragment](assets/cfm-generate-variations3.png)
 
 1. Select the generate variant you like and select “export variation”. Confirm the name of the content fragment variation and select either:
  
     * **Export**: export variation to Content Fragment and stay in the Generate Variation application.
     * **Export and open**: export variation to Content Fragment and open a new tab that shows the Content Fragment with the new variation from GenAI.
 
-    ![Export to Generate Variations in Content Fragment](assets/cfm-generate-variations4.png)
+        ![Export to Generate Variations in Content Fragment](assets/cfm-generate-variations4.png)
 
 1. Variations generated are shown in Main Content Fragment Editor.
 
     ![View Generate Variations in Content Fragment](assets/cfm-generate-variations5.png)
 
-You can learn more about Generate Variations [here]{generative-ai/generate-variations.md}.    
+You can learn more about Generate Variations [here](generative-ai/generate-variations.md).    
 
 ### Delete a variation {#delete-variation}
 
