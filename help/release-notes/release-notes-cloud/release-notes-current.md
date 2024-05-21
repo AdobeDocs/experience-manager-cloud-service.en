@@ -40,7 +40,7 @@ Have a look at the May 2024 Release Overview video for a summary of the features
 
 **AEM Authoring for Edge Delivery Services**
 
-Enhanced stability and various improvements for a better authoring experience.### Early Adopter Program {#sites-early-adopter}
+Enhanced stability and various improvements for a better authoring experience.
 
 ### Early Adopter Program {#sites-early-adopter}
 
