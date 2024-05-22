@@ -89,6 +89,7 @@ The following are the component types that are possible to use for rendering fie
 |[Boolean](#boolean)|`boolean`|
 |[Checkbox Group](#checkbox-group)|`checkbox-group`|
 |[Container](#container)|`container`|
+|[Content Fragment](#content-fragment)|`aem-content-fragment`|
 |[Date Time](#date-time)|`date-time`|
 |[Multiselect](#multiselect)|`multiselect`|
 |[Number](#number)|`number`|
@@ -283,6 +284,8 @@ A container component type allows the grouping of components. It offers an addit
 >[!TAB Screenshot]
 
 ![Screenshot of container component type](assets/component-types/container.png)
+
+>[!ENDTABS]
 
 #### Content Fragment {#content-fragment}
 
@@ -824,4 +827,3 @@ Text allows for a single line of text input.  It includes additional validation 
 ![Screenshot of text component type](assets/component-types/simpletext.png)
 
 >[!ENDTABS]
-

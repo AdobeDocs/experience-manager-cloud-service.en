@@ -12,7 +12,7 @@ Learn how to view, edit, delete, and check the status of IP allowlists in Cloud 
 A user in the **Business Owner** or **Deployment Manager** role can follow these steps to view and update an IP allowlist. 
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
-1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, select the program.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
 1. Navigate to the **Environments** screen from the **Overview** page.
 1. Navigate to the **IP Allow Lists** page from the **Environments** screen.
 1. Identify the row for the IP allowlists that you want to view or update.
