@@ -82,4 +82,3 @@ The configured properties have the following behavior:
 ## Sling Dynamic Include {#esi-sdi}
 
 While not required, [Sling Dynamic Include](https://sling.apache.org/documentation/bundles/dynamic-includes.html) (SDI) can be used to generate ESI snippets that are interpreted at the CDN.
-
