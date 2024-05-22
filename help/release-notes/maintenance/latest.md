@@ -9,11 +9,11 @@ The following section outlines the technical release notes for the current maint
 
 ## Release 16357 {#release-16357}
 
-Summarized below are the continuous improvements for maintenance release 16357, which was publicly released on May 29, 2024. The previous maintenance release was release 16145.
+Summarized below are the continuous improvements for maintenance release 16357, which was publicly released on May 22, 2024. The previous maintenance release was release 16145.
 
-2024.5.0 Feature Activation provides the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
+2024.5.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-forms}
+### Enhancements {#enhancements-16357}
 
 * SITES-19579: Java API to migrate content fragment(s) from one model to the other
 * SITES-19698: [Open API] Create read operation for managing a UI Schema per model in the OpenAPI definition
@@ -69,7 +69,7 @@ Summarized below are the continuous improvements for maintenance release 16357, 
 * FORMS-11295: Added support for SHA256 with ECDSA algorithm for AEM Forms Digital Signature.
 * FORMS-9432: An additional content type (REST Endpoint) has been added to the data source cloud configuration. It enables data submission in key-value pairs to an authenticated endpoint.
 
-### Fixed Issues {#fixed-issues-forms}
+### Fixed Issues {#fixed-issues-16357}
 
 * SITES-20146: Enable Preview Version / Compare for moved pages
 * SITES-20608: Experience Fragment's with personalization enabled when included in a template causes an infinite loop
@@ -122,35 +122,11 @@ Summarized below are the continuous improvements for maintenance release 16357, 
 * FORMS-11589: For users with only the AEM Forms solution (without any other solutions), the frontend pipeline is not functioning.
 * FORMS-13896: In DoR (Document of Record) output, dates, and numbers are displayed in Arabic regardless of whether the input data is merged using Gregorian numbers.
 
-### Known Issues {#known-issues-X}
+### Known Issues {#known-issues-16357}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-X}
-
-* [JWT Credentials Deprecation in Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
-
-* Effective May 1, 2024, Adobe Dynamic Media is ending support for the following:
-
-    * SSL (Secure Socket Layer) 2.0
-    * SSL 3.0
-    * TLS (Transport Layer Security) 1.0 and 1.1
-    * The following weak ciphers in TLS 1.2:
-        * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
-        * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
-        * `TLS_RSA_WITH_AES_256_GCM_SHA384`
-        * `TLS_RSA_WITH_AES_256_CBC_SHA256`
-        * `TLS_RSA_WITH_AES_256_CBC_SHA`
-        * `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`
-        * `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`
-        * `TLS_RSA_WITH_AES_128_GCM_SHA256`
-        * `TLS_RSA_WITH_AES_128_CBC_SHA256`
-        * `TLS_RSA_WITH_AES_128_CBC_SHA`
-        * `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`
-        * `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`
-        * `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
-        * `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
-
+### Deprecated Features and APIs {#deprecated-16357}
 
 To know what is deprecated or removed in AEM as a Cloud Service, see [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md).
 
@@ -160,5 +136,5 @@ To know what is deprecated or removed in AEM as a Cloud Service, see [Deprecated
 |---|---|---|
 |AEM Oak | 1.62.0|[Oak API 1.62.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.62.0/index.html)| 
 |AEM SLING API | 2.27.2 |[Apache Sling API 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
-|AEM HTL| 1.4.20-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
-|AEM Core Components| 2.24.6|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
+|AEM HTL| 1.4.22-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
+|AEM Core Components| 2.25.4|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
