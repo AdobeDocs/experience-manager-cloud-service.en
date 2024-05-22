@@ -103,7 +103,7 @@ After you have added an RDE for your program using Cloud Manager, you can intera
    * work with a single RDE only.
    
    Choose `yes` to
-   * store the organization, program and environment locally in the current directory, in a `.aio` file.
+   * store the organization, program and environment locally in the current directory, in a `.aio` file. This is convenient if you want to commit the file to version control so others cloning the git repository can use it.
    * work with many RDEs, so that switching the to another directory will use that configuration instead.
    * use the configuration in a programmatic context like a script, which can reference it.
 
