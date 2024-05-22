@@ -184,7 +184,7 @@ However, with careful coordination, it is possible for more than one developer t
   
   This returns valid JSON while suppressing any console output. See below for JSON examples.
   
-* To avoid configuring the RDE connection information using the setup command, or and aio config creation, type:
+* To avoid configuring the RDE connection information using the setup command, or any aio config creation, type:
   
   `aio aem rde <command> --organizationId=<value> --programId=<value> --environmentId=<value>`
   
