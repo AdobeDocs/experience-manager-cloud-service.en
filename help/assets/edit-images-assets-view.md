@@ -1,12 +1,12 @@
 ---
 title: Edit images
-description: Edit images using [!DNL Adobe Photoshop Express] powered options and save updated images as versions.
+description: Edit images using [!DNL Adobe Express] powered options and save updated images as versions.
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 ---
 # Edit images in [!DNL Assets view] {#edit-images}
 
-[!DNL Assets view] provides user-friendly editing options that are powered by [!DNL Adobe Express] and [!DNL Adobe Photoshop Express]. The editing actions that are available using [!DNL Adobe Express] are Resize image, Remove background, Crop image, and Convert JPEG into PNG or vice versa.
+[!DNL Assets view] provides user-friendly editing options that are powered by [!DNL Adobe Express]. The editing actions that are available using [!DNL Adobe Express] are Resize image, Remove background, Crop image, and Convert JPEG into PNG or vice versa.
 
 After editing an image, you can save the new image as a new version. Versioning helps you to revert to the original asset later, if needed. Additionaly, versioning is available for the PNG file types only, which means when you try to remove background from a JPG file type, JPG is auto converted to PNG. To edit an image, [open its preview](navigate-assets-view.md) and click **[!UICONTROL Edit Image]**.
 
