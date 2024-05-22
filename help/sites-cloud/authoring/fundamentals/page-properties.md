@@ -46,7 +46,7 @@ The properties are distributed across several tabs.
 
   * **Page Title** - A title to be used on the page. Typically used by title components. If empty, the **Title** is used.
   * **Navigation Title** - You can specify a separate title for use in the navigation (for example, if you want something more concise). If empty, the **Title** is used.
-  * **Subtitle** - A subtitle for use on the page.
+  * **Caption** - A subtitle for use on the page.
   * **Description** - Your description of the page, its purpose, or any other details you want to add.
 
 * **On/Off Time**
