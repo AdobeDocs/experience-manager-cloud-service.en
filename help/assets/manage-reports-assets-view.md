@@ -53,9 +53,9 @@ Click **[!UICONTROL Insights]** available in the left navigation pane to view th
    ![Insights](assets/insights2.png)
    -->
 
-* **Asset Count by size:** Shows the count of assets distributed across various size ranges along with their percentage within your Assets view environment.
+* **Asset Count by size:** Count of assets distributed across various size ranges along with their percentage within your Assets view environment.
 ![insights-assets-count-by-size](/help/assets/assets/insights-assets-count-by-size.svg)
-* **Asset Count by Asset Type:** Presents assets distribution by file type, highlighting the absolute count and proportionate percentage of each asset type within your Assets view environment.
+* **Asset Count by Asset Type:** Assets distributed by file type, highlights the absolute count and proportionate percentage of each asset type within your Assets view environment.
 ![insights-assets-count-by-size](/help/assets/assets/insights-assest-count-by-asset-type1.svg)
 
 ## Create a Download report {#create-download-report}
