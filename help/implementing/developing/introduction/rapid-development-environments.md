@@ -105,7 +105,7 @@ After you have added an RDE for your program using Cloud Manager, you can intera
    Choose `yes` to
    * store the organization, program and environment locally in the current directory, in a `.aio` file.
    * work with many RDEs, so that switching the to another directory will use that configuration instead.
-   * work with a CLI based environment.
+   * use the configuration in a programmatic context like a script, which can reference it.
 
 
    Once local or global configuration is selected, the setup command will try to read your oriagnization ID from your current login and then read the programs of your organization. In case the organization cannot be found, you can enter it manually along with some guidance.
