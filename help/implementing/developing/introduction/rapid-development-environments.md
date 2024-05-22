@@ -802,7 +802,7 @@ Most commands support the global ```--json``` flag. This suppresses any console 
 {
   "programId": "myProgram",
   "environmentId": "myEnv",
-  “status”: “resetting”
+  "status": "resetting"
 }
 ```
 
@@ -813,7 +813,7 @@ Most commands support the global ```--json``` flag. This suppresses any console 
 {
   "programId": "myProgram",
   "environmentId": "myEnv",
-  “status”: "reset”
+  "status": "reset"
 }
 ```
 
