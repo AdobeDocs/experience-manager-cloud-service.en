@@ -34,7 +34,7 @@ Assets view enables you to view real-time data for your Assets view environment 
 Click **[!UICONTROL Insights]** available in the left navigation pane to view the following automatically generated charts:
 
 * **Downloads**: The number of assets downloaded from the Assets view environment in the last 30 days or 12 months represented using a line graph.
-![insights-downloads](/help/assets/assets/insights-uploads1.svg)
+![insights-downloads](/help/assets/assets/insights-downloads2341.svg)
 
 * **Uploads**: The number of assets uploaded to the Assets view environment in the last 30 days or 12 months represented using a line graph.
 ![insights-uploads](/help/assets/assets/insights-uplods2.svg)
@@ -53,9 +53,9 @@ Click **[!UICONTROL Insights]** available in the left navigation pane to view th
    ![Insights](assets/insights2.png)
    -->
 
-* **Asset Count by size:** This graph shows the count of assets distributed across various size ranges along with their percentage within your Assets view environment.
+* **Asset Count by size:** Shows the count of assets distributed across various size ranges along with their percentage within your Assets view environment.
 ![insights-assets-count-by-size](/help/assets/assets/insights-assets-count-by-size.svg)
-* **Asset Count by Asset Type:** The graph represents - assets distribution by asset type, presenting the absolute count and proportionate percentage of each asset type within your Assets view environment.
+* **Asset Count by Asset Type:** Presents assets distribution by file type, highlighting the absolute count and proportionate percentage of each asset type within your Assets view environment.
 ![insights-assets-count-by-size](/help/assets/assets/insights-assest-count-by-asset-type1.svg)
 
 ## Create a Download report {#create-download-report}
