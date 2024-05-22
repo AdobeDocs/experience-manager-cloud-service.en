@@ -89,6 +89,8 @@ After you have added an RDE for your program using Cloud Manager, you can intera
    aio aem:rde:setup
    ```
    
+   The setup step can be skipped while always passing the arguments for organization, program and environment to each command, i.e. in a scripted environment. [See rde commands below for more information](#rde-cli-commands).
+   
 ### The Interactive Setup
 
   The setup command will ask if the provided configuration shall be stored locally or globally.
@@ -134,7 +136,7 @@ Adobe recommends the following workflow for developing a new feature:
   > If your staging and production environments are not receiving automatic AEM release updates and are behind the most recent AEM release version, the code running on the RDE may not match how the code functions on staging and production. In that case, it is especially important to perform thorough testing of the code on staging before deploying it to production.
 
 
-* Using the RDE command-line interface, sync local code to the RDE. Options include installing a content package, a specific bundle, an OSGI configuration file, a content file, and a zip file of an Apache/Dispatcher configuration. Referencing a remote content package is also possible. See [RDE Command-Line Tools](#rde-cli-commands) for more information. You can use the status command to validate that the deployment was successful. Optionally, use Package Manager to install content packages.
+* Using the RDE command-line interface, sync local code to the RDE. Options include installing a content package, a specific bundle, an OSGI configuration file, a content file, and a zip file of an Apache/Dispatcher configuration. Referencing a remote content package is also possible. See [RDE Command-Line Tools](/help/implementing/developing/introduction/rapid-development-environments.md#rde-cli-commands) for more information. You can use the status command to validate that the deployment was successful. Optionally, use Package Manager to install content packages.
 
 * Test the code in the RDE. Author and Publish URLs are available in Cloud Manager.
 
@@ -170,11 +172,23 @@ However, with careful coordination, it is possible for more than one developer t
 
   `aio aem rde <command> --help`
   
-* For CI/CD specific way of running a command, type:
+* For a less verbose output, use the quiet mode:
 
-  `aio aem rde <command> --cicd`
+  `aio aem rde <command> --quiet`
   
   This removes certain user information like spinners, progress bars and tries to avoid user input.
+  
+* For JSON instead of console log output, type:
+  
+  `aio aem rde <command> --json`
+  
+  This returns valid JSON while suppressing any console output. See below for JSON examples.
+  
+* To avoid configuring the RDE connection information using the setup command, or and aio config creation, type:
+  
+  `aio aem rde <command> --organizationId=<value> --programId=<value> --environmentId=<value>`
+  
+  This still needs an ```aio login``` to be performed.
 
 ### Deploying to RDE {#deploying-to-rde}
 
