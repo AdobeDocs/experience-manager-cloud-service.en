@@ -496,8 +496,8 @@ Most commands support the global ```--json``` flag. This suppresses any console 
 
 #### Clean RDE
 
-```
-$ aio aem rde status --json
+```$ aio aem rde status --json```
+```json
 {
   "programId": "myProgram",
   "environmentId": "myEnv",
@@ -515,8 +515,8 @@ $ aio aem rde status --json
 
 #### Some installed bundles (example)
 
-```
-$ aio aem rde status --json
+```$ aio aem rde status --json```
+```json
 {
   "programId": "myProgram",
   "environmentId": "myEnv",
@@ -582,8 +582,8 @@ $ aio aem rde status --json
 
 ### Install
 
-```
-$ aio aem rde install ~/Downloads/hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip --json
+```$ aio aem rde install ~/Downloads/hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip --json```
+```json
 {
   "programId": "myProgram",
   "environmentId": "myEnv",
@@ -617,8 +617,8 @@ $ aio aem rde install ~/Downloads/hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip --j
 
 ### Delete
 
-```
-$ aio aem rde delete com.adobe.granite.hotdev.demo-1.0.0.SNAPSHOT --json
+```$ aio aem rde delete com.adobe.granite.hotdev.demo-1.0.0.SNAPSHOT --json```
+```json
 {
   "programId": "myProgram",
   "environmentId": "myEnv",
@@ -693,8 +693,8 @@ $ aio aem rde delete com.adobe.granite.hotdev.demo-1.0.0.SNAPSHOT --json
 
 ### History (empty)
 
-```
-$ aio aem rde history --json
+```$ aio aem rde history --json```
+```json
 {
   "programId": "myProgram",
   "environmentId": "myEnv",
@@ -704,8 +704,8 @@ $ aio aem rde history --json
 
 ### History
 
-```
-$ aio aem rde history --json
+```$ aio aem rde history --json```
+```json
 {
   "programId": "myProgram",
   "environmentId": "myEnv",
@@ -797,8 +797,8 @@ $ aio aem rde history --json
 
 #### fire and forget, no-wait
 
-```
-$ aio aem rde reset --no-wait --json
+```$ aio aem rde reset --no-wait --json```
+```json
 {
   "programId": "myProgram",
   "environmentId": "myEnv",
@@ -808,8 +808,8 @@ $ aio aem rde reset --no-wait --json
 
 #### wait for completion
 
-```
-$ aio aem rde reset --json
+```$ aio aem rde reset --json```
+```json
 {
   "programId": "myProgram",
   "environmentId": "myEnv",
@@ -819,8 +819,8 @@ $ aio aem rde reset --json
 
 ### Restart
 
-```
-$ aio aem rde restart --json
+```$ aio aem rde restart --json```
+```json
 {
   "programId": "myProgram",
   "environmentId": "myEnv",
