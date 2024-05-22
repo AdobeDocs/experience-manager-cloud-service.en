@@ -89,6 +89,7 @@ The following are the component types that are possible to use for rendering fie
 |[Boolean](#boolean)|`boolean`|
 |[Checkbox Group](#checkbox-group)|`checkbox-group`|
 |[Container](#container)|`container`|
+|[Content Fragment](#content-fragment)|`aem-content-fragment`|
 |[Date Time](#date-time)|`date-time`|
 |[Multiselect](#multiselect)|`multiselect`|
 |[Number](#number)|`number`|
