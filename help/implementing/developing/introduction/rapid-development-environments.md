@@ -118,6 +118,8 @@ After you have added an RDE for your program using Cloud Manager, you can intera
    Once the programs are retrieved, the user can select from the list and also type to filter.
    When the program was selected, a list of RDE environments is provided to choose from.
    In case there is only one program and/or RDEenvironment available, it is selected automatically.
+   
+   Use ```aio aem rde setup --show``` to show the ```Current configuration: cm-p1-e1: programName - environmentName (organization: ...@AdobeOrg)``` information.
 
 ## Using RDE while Developing a New Feature {#using-rde-while-developing-a-new-feature}
 
@@ -471,6 +473,346 @@ You can also reset the RDE using the ellipsis button directly from the **Environ
 ![Reset RDE from Environments card](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
 For more information about how to use Cloud Manager to manage your environments, see [the Cloud Manager documentation](/help/implementing/cloud-manager/manage-environments.md).
+
+## Commands that support JSON output
+
+Most commands support the global ```--json``` flag. This suppresses any console output and returns valid json to be processed in scripts.
+
+### Status
+
+#### Clean RDE
+
+```
+$ aio aem rde status --json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "status": "Modification in progress | Deployment in progress | Upload in progress | Ready (instances are currently deploying) | Ready",
+  "author": {
+    "osgiBundles": [],
+    "osgiConfigs": []
+  },
+  "publish": {
+    "osgiBundles": [],
+    "osgiConfigs": []
+  }
+}
+```
+
+#### Some installed bundles (example)
+
+```
+$ aio aem rde status --json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "status": "Ready",
+  "author": {
+    "osgiBundles": [
+      {
+        "id": "author_osgi-bundle_com.adobe.granite.hotdev.demo",
+        "updateId": "80",
+        "service": "author",
+        "type": "osgi-bundle",
+        "metadata": {
+          "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip",
+          "bundleSymbolicName": "com.adobe.granite.hotdev.demo",
+          "bundleName": "HotDev Bundle",
+          "bundleVersion": "1.0.0.SNAPSHOT"
+        }
+      }
+    ],
+    "osgiConfigs": [
+      {
+        "id": "publish_osgi-config_com.adobe.granite.demo.MyServlet",
+        "updateId": "80",
+        "service": "publish",
+        "type": "osgi-config",
+        "metadata": {
+          "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip",
+          "configPid": "com.adobe.granite.demo.MyServlet"
+        }
+      }
+    ]
+  },
+  "publish": {
+    "osgiBundles": [
+      {
+        "id": "author_osgi-bundle_com.adobe.granite.hotdev.demo",
+        "updateId": "80",
+        "service": "author",
+        "type": "osgi-bundle",
+        "metadata": {
+          "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip",
+          "bundleSymbolicName": "com.adobe.granite.hotdev.demo",
+          "bundleName": "HotDev Bundle",
+          "bundleVersion": "1.0.0.SNAPSHOT"
+        }
+      }
+    ],
+    "osgiConfigs": [
+      {
+        "id": "publish_osgi-config_com.adobe.granite.demo.MyServlet",
+        "updateId": "80",
+        "service": "publish",
+        "type": "osgi-config",
+        "metadata": {
+          "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip",
+          "configPid": "com.adobe.granite.demo.MyServlet"
+        }
+      }
+    ]
+  }
+}
+```
+
+### Install
+
+```
+$ aio aem rde install ~/Downloads/hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip --json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "items": [
+    {
+      "updateId": "4",
+      "info": "deploy",
+      "action": "deploy",
+      "metadata": {
+        "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip"
+      },
+      "services": [
+        "author",
+        "publish"
+      ],
+      "status": "completed",
+      "timestamps": {
+        "received": "2024-05-21T12:30:44.578Z",
+        "processed": "2024-05-21T12:31:07.886468Z"
+      },
+      "user": "userId",
+      "type": "content-package",
+      "hash": "2ad73507",
+      "logs": [
+        "No logs available for this update."
+      ]
+    }
+  ]
+}
+```
+
+### Delete
+
+```
+$ aio aem rde delete com.adobe.granite.hotdev.demo-1.0.0.SNAPSHOT --json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "items": [
+    {
+      "updateId": "84",
+      "info": "delete author_osgi-bundle_com.adobe.granite.hotdev.demo",
+      "action": "delete",
+      "metadata": {},
+      "services": [
+        "author"
+      ],
+      "status": "completed",
+      "timestamps": {
+        "received": "2024-05-21T11:49:16.889Z",
+        "processed": "2024-05-21T11:49:18.188420Z"
+      },
+      "user": "userId",
+      "type": "osgi-bundle",
+      "deletedArtifact": {
+        "id": "author_osgi-bundle_com.adobe.granite.hotdev.demo",
+        "metadata": {
+          "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip",
+          "bundleSymbolicName": "com.adobe.granite.hotdev.demo",
+          "bundleName": "HotDev Bundle",
+          "bundleVersion": "1.0.0.SNAPSHOT"
+        },
+        "service": "author",
+        "type": "osgi-bundle",
+        "updateId": "83"
+      },
+      "hash": "636f6d2e",
+      "logs": [
+        "No logs available for this update."
+      ]
+    },
+    {
+      "updateId": "85",
+      "info": "delete publish_osgi-bundle_com.adobe.granite.hotdev.demo",
+      "action": "delete",
+      "metadata": {},
+      "services": [
+        "publish"
+      ],
+      "status": "completed",
+      "timestamps": {
+        "received": "2024-05-21T11:49:23.857Z",
+        "processed": "2024-05-21T11:49:25.237930Z"
+      },
+      "user": "userId",
+      "type": "osgi-bundle",
+      "deletedArtifact": {
+        "id": "publish_osgi-bundle_com.adobe.granite.hotdev.demo",
+        "metadata": {
+          "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip",
+          "bundleSymbolicName": "com.adobe.granite.hotdev.demo",
+          "bundleName": "HotDev Bundle",
+          "bundleVersion": "1.0.0.SNAPSHOT"
+        },
+        "service": "publish",
+        "type": "osgi-bundle",
+        "updateId": "83"
+      },
+      "hash": "636f6d2e",
+      "logs": [
+        "No logs available for this update."
+      ]
+    }
+  ]
+}
+```
+
+### History (empty)
+
+```
+$ aio aem rde history --json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "status": "Ready"
+}
+```
+
+### History
+
+```
+$ aio aem rde history --json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "status": "Ready",
+  "items": [
+    {
+      "updateId": "112",
+      "info": "delete publish_osgi-bundle_com.adobe.granite.hotdev.demo",
+      "action": "delete",
+      "metadata": {},
+      "services": [
+        "publish"
+      ],
+      "status": "completed",
+      "timestamps": {
+        "received": "2024-05-21T12:53:07.934Z",
+        "processed": "2024-05-21T12:53:09.118766Z"
+      },
+      "user": "userId",
+      "type": "osgi-bundle",
+      "deletedArtifact": {
+        "id": "publish_osgi-bundle_com.adobe.granite.hotdev.demo",
+        "metadata": {
+          "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip",
+          "bundleSymbolicName": "com.adobe.granite.hotdev.demo",
+          "bundleName": "HotDev Bundle",
+          "bundleVersion": "1.0.0.SNAPSHOT"
+        },
+        "service": "publish",
+        "type": "osgi-bundle",
+        "updateId": "110"
+      },
+      "hash": "636f6d2e"
+    },
+    {
+      "updateId": "111",
+      "info": "delete author_osgi-bundle_com.adobe.granite.hotdev.demo",
+      "action": "delete",
+      "metadata": {},
+      "services": [
+        "author"
+      ],
+      "status": "completed",
+      "timestamps": {
+        "received": "2024-05-21T12:53:00.824Z",
+        "processed": "2024-05-21T12:53:02.101560Z"
+      },
+      "user": "userId",
+      "type": "osgi-bundle",
+      "deletedArtifact": {
+        "id": "author_osgi-bundle_com.adobe.granite.hotdev.demo",
+        "metadata": {
+          "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip",
+          "bundleSymbolicName": "com.adobe.granite.hotdev.demo",
+          "bundleName": "HotDev Bundle",
+          "bundleVersion": "1.0.0.SNAPSHOT"
+        },
+        "service": "author",
+        "type": "osgi-bundle",
+        "updateId": "110"
+      },
+      "hash": "636f6d2e"
+    },
+    {
+      "updateId": "110",
+      "info": "deploy",
+      "action": "deploy",
+      "metadata": {
+        "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip"
+      },
+      "services": [
+        "author",
+        "publish"
+      ],
+      "status": "completed",
+      "timestamps": {
+        "received": "2024-05-21T12:52:12.123Z",
+        "processed": "2024-05-21T12:52:31.026147Z"
+      },
+      "user": "userId",
+      "type": "content-package",
+      "hash": "2ad73507"
+    }
+  ]
+}
+```
+
+### Reset
+
+#### fire and forget, no-wait
+
+```
+$ aio aem rde reset --no-wait --json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  “status”: “resetting”
+}
+```
+
+#### wait for completion
+
+```
+$ aio aem rde reset --json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  “status”: "reset”
+}
+```
+
+### Restart
+
+```
+$ aio aem rde restart --json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "status": "restarted"
+}
+```
 
 ## Run Modes {#runmodes}
 
