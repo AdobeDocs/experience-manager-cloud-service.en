@@ -5,7 +5,7 @@ exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 ---
 # Manage reports {#manage-reports}
 
-Asset reporting provides administrators with visibility into activity of the Adobe Experience Manager Assets view environment. This data provides useful information about how users interact with content and the product. All users can access the Insights dashboard and the ones who are assigned to the Administrators product profile can create user-defined reports. 
+Asset reporting provides administrators with visibility into activity of the Adobe Experience Manager Assets View environment. This data provides useful information about how users interact with content and the product. All users can access the Insights dashboard and the ones who are assigned to the Administrators product profile can create user-defined reports. 
 
 ## Access reports {#access-reports}
 
