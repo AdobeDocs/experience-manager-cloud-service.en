@@ -10,15 +10,28 @@ hidefromtoc: yes
 
 <span class="preview"> This feature is under Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
 
-Cloudflare's Turnstile Captcha is a security measure that aims to protect forms and sites from automated bots, malicious attacks, spams and unwanted automated traffic. It presents a checkbox on form submission to verify that they are human, before allowing them to submit the form. AEM Forms as a Cloud Service supports Turnstile Captcha in Adaptive Forms Core Components.
+CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) is a program commonly used in online transactions to distinguish between humans and automated programs or bots. It poses a challenge and evaluates user response to determine if it's a human or a bot interacting with the site. It prevents the user to proceed if the test fails and helps make online transactions secure by keeping bots from posting spam or malicious purposes. 
+
+AEM Forms as a Cloud Service supports the following CAPTCHA solutions: 
+
+
+* [Cloudflare Turnstile](#integrate-aem-forms-environment-with-turnstile-captcha)
+* [Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
+* [hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)  
+
+
 
 <!-- ![Turnstile](assets/Turnstile-challenge.png)-->
 
-## Prerequisites to integrate AEM Forms environment with Turnstile Captcha {#prerequisite}
+## Integrate AEM Forms environment with Turnstile Captcha
+
+Cloudflare's Turnstile Captcha is a security measure that aims to protect forms and sites from automated bots, malicious attacks, spams and unwanted automated traffic. It presents a checkbox on form submission to verify that they are human, before allowing them to submit the form. AEM Forms as a Cloud Service supports Turnstile Captcha in Adaptive Forms Core Components.
+
+### Prerequisites to integrate AEM Forms environment with Turnstile Captcha {#prerequisite}
 
 To configure Turnstile for AEM Forms Core Components, you need to obtain [Turnstile sitekey and secret key](https://developers.cloudflare.com/turnstile/get-started/) from the Turnstile website.
 
-## Steps to configure Turnstile {#steps-to-configure-hcaptcha}
+### Configure Turnstile {#steps-to-configure-hcaptcha}
 
 To integrate AEM Forms with Turnstile service, perform the following steps:
 
@@ -51,7 +64,7 @@ To integrate AEM Forms with Turnstile service, perform the following steps:
 
    Once the Turnstile Captcha service is configured, it is available for use in an [Adaptive Form based on Core Components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction).
 
-## Use Turnstile in an Adaptive Forms Core Components {#using-turnstile-core-components}
+## Use Turnstile in an Adaptive Form {#using-turnstile-core-components}
 
 1. Open your AEM Forms as a Cloud Service instance. 
 1. Go to **[!UICONTROL Forms]** > **[!UICONTROL Forms and Documents]**.
