@@ -86,6 +86,7 @@ Configurations for the supported logging destinations are listed below, along wi
    data:
      azureBlob:
        default:
+         enabled: true       
          storageAccountName: "example_acc"
          container: "aem_logs"
          sasToken: "${{AZURE_BLOB_SAS_TOKEN}}
@@ -105,9 +106,10 @@ Considerations:
    metadata:
      envTypes: ["dev"]
    data:
-     datadog:
+     dataDog:
        default:
-         host: "http-intake.datadog.eu"
+         enabled: true       
+         host: "http-intake.logs.datadoghq.eu"
          token: "${{DATADOG_API_KEY}}"
          
    ```
@@ -127,8 +129,8 @@ Considerations:
    data:
      elasticsearch:
        default:
+         enabled: true
          host: "example.com"
-         port: 8888 # Optional
          user: "${{ELASTICSEARCH_USER}}"
          password: "${{ELASTICSEARCH_PASSWORD}}"
    
@@ -160,12 +162,29 @@ Considerations:
    data:
      splunk:
        default:
-         host: "example.com"
-         port: 8888 # Optional
-         index: "AEMaaCS"
+         enabled: true
+         host: "splunk-host.example.com"
          token: "${{SPLUNK_TOKEN}}"
+         index: "AEMaaCS"
    
    ```
+   
+### Sumo Logic {#sumologic}
+
+   ```
+   kind: "LogForwarding"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     splunk:
+       default:
+         enabled: true
+         host: "https://collectors.de.sumologic.com"
+         uri: "/receiver/v1/http"
+         privateKey: "${{SomeOtherToken}}"
+   
+   ```   
 
 ## Advanced Networking {#advanced-networking}
 
