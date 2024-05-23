@@ -188,5 +188,103 @@ Considerations:
 
 ## Advanced Networking {#advanced-networking}
 
-If you have organizational requirements to lock down traffic to your logging vendor, you can configure [advanced networking](/help/security/configuring-advanced-networking.md) and configure the yaml's host and port accordingly. 
+If you have organizational requirements to lock down traffic to your logging destination, you can configure log forwarding to go through [advanced networking](/help/security/configuring-advanced-networking.md). See the patterns for the three advanced networking types below, which make use of an optional `port` parameter, along with the `host` parameter.
 
+### Flexible Port Egress {#flex-port}
+
+If the log traffic is going to a port other than 443 (e.g., 8443 below), configure advanced networking like so:
+
+```
+{
+    "portForwards": [
+        {
+            "name": "mylogging.service.logger.com",
+            "portDest": 8443, # something other than 443
+            "portOrig": 30443
+        }    
+    ]
+}
+
+```
+
+and configure the yaml file like so:
+
+```
+
+kind: "LogForwarding"
+version: "1"
+data:
+  splunk:
+    default:
+      host: "proxy.tunnel"
+      token: "${{SomeToken}}"
+      port: 30443
+      index: "index_name"
+
+```
+
+### Dedicated Egress IP {#dedicated-egress}
+
+If the log traffic needs to come out of a dedicated egress IP, configure advanced networking like so:
+
+```
+{
+    "portForwards": [
+        {
+            "name": "mylogging.service.com",
+            "portDest": 443, # something other than 443
+            "portOrig": 30443
+        }    
+    ]
+}
+
+```
+
+and configure the yaml file like so:
+
+```
+
+kind: "LogForwarding"
+version: "1"
+data:
+  splunk:
+    default:
+      host: "proxy.tunnel"
+      token: "${{SomeToken}}"
+      port: 30443
+      index: "index_name"
+
+```
+
+### VPN {#vpn}
+
+If the log traffic needs to go through a VPN, configure advanced networking like so:
+
+```
+{
+    "portForwards": [
+        {
+            "name": "mylogging.service.com",
+            "portDest": 443, # something other than 443
+            "portOrig": 30443
+        }    
+    ]
+}
+
+```
+
+and configure the yaml file like so:
+
+```
+
+kind: "LogForwarding"
+version: "1"
+data:
+  splunk:
+    default:
+      host: "mylogging.service.com"
+      token: "${{SomeToken}}"
+      port: 30443
+      index: "index_name"
+
+```
