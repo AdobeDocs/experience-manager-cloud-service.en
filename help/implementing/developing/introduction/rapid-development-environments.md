@@ -353,7 +353,7 @@ Logs:
 
 >[!TIP]
 >
-> If you created your RDE a long time ago and experience the error "UNEXPECTED_API_ERROR" when trying the frontend feature for the first time, please try to delete your environment and create it again.
+> If you created your RDE before April 2023 and experience the error "UNEXPECTED_API_ERROR" when trying the frontend feature for the first time, please try to delete your environment and create it again.
 
 ### Checking the Status of the RDE {#checking-rde-status}
 
