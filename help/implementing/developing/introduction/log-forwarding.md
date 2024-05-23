@@ -2,16 +2,14 @@
 title: Log Forwarding for AEM as a Cloud Service
 description: Learn about forwarding logs to Splunk and other logging vendors in AEM as a Cloud Service
 hide: yes
-hidefromtoc: yex
+hidefromtoc: yes
 ---
 
 # Log Forwarding {#log-forwarding}
 
 >[!NOTE]
 >
->This self-serve feature is not yet released. In the meanwhile, you can open a support ticket to forward logs to Splunk. Learn more in the [logging article](help/implementing/developing/introduction/logging.md).
-
-
+>This self-serve feature is not yet released and some logging destinations may not be available at the time of release. In the meanwhile, you can open a support ticket to forward logs to **Splunk**. Learn more in the [logging article](help/implementing/developing/introduction/logging.md).
 
 Customers who have a license for a logging vendor or host a logging product can have AEM, Apache/Dispatcher, and CDN logs forwarded to the associated logging destinations. AEM as a Cloud Service supports the following logging destinations: 
 
@@ -23,7 +21,7 @@ Customers who have a license for a logging vendor or host a logging product can 
 * Splunk
 * Sumo Logic
 
-Log forwarding is configured in a self-service manner by declaring a configuration in Git, and deploying it via the Cloud Manager Configuration Pipeline.
+Log forwarding is configured in a self-service manner by declaring a configuration in Git, and deploying it via the Cloud Manager Configuration Pipeline to dev, stage, and production environment types in production (non-sandbox) programs.
 
 Note that the network bandwidth associated with logs sent to the logging destination are considered part of your organization's Network I/O usage.
 
@@ -62,14 +60,13 @@ This article is organized in the following way:
          token: "${{SPLUNK_TOKEN}}"
    
    ```
+   
+   The default node must be included for future compatibility reasons. 
 
-The default node must be included for future compatibility reasons. 
-
-The kind parameter should be set to LogForwarding the version should be set to the schema version, which is 1.
-
-Tokens in the configuration (such as "${{SPLUNK_TOKEN}}") represent secrets, which should not be stored in Git. Instead, declare them as Cloud Manager  [Environment Variables](/help/implementing/cloud-manager/environment-variables.md) of Type "secret".
-
-
+   The kind parameter should be set to LogForwarding the version should be set to the schema version, which is 1.
+   
+   Tokens in the configuration (such as "${{SPLUNK_TOKEN}}") represent secrets, which should not be stored in Git. Instead, declare them as Cloud Manager  [Environment Variables](/help/implementing/cloud-manager/environment-variables.md) of Type "secret".
+   
 1. For environment types other than RDE (which is not currently supported), create a targeted deployment config pipeline in Cloud Manager.
 
    * [See configuring production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
@@ -169,23 +166,6 @@ Considerations:
          token: "${{SPLUNK_TOKEN}}"
    
    ```
-
-
-### Enabling Splunk Forwarding {#enabling-splunk-forwarding}
-
-In the support request, customers should indicate:
-
-* Splunk HEC endpoint address. This endpoint must have a valid SSL certificate and be publicly accessible.
-* The Splunk index
-* The Splunk port 
-* The Splunk HEC token. See [this page](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) for more information.
-
-The properties above should be specified for each relevant program/environment type combination. For example, if a customer wanted dev, staging, and production environments, they should provide three sets of information, as indicated below. 
-
->[!NOTE]
->
->Splunk forwarding for sandbox program environments is not supported.
-
 
 ## Advanced Networking {#advanced-networking}
 
