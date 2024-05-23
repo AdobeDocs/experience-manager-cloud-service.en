@@ -9,7 +9,7 @@ hidefromtoc: yes
 
 >[!NOTE]
 >
->This self-serve feature is not yet released and some logging destinations may not be available at the time of release. In the meanwhile, you can open a support ticket to forward logs to **Splunk**. Learn more in the [logging article](help/implementing/developing/introduction/logging.md).
+>This self-serve feature is not yet released and some logging destinations may not be available at the time of release. In the meanwhile, you can open a support ticket to forward logs to **Splunk**. Learn more in the [logging article](/help/implementing/developing/introduction/logging.md).
 
 Customers who have a license for a logging vendor or host a logging product can have AEM, Apache/Dispatcher, and CDN logs forwarded to the associated logging destinations. AEM as a Cloud Service supports the following logging destinations: 
 
