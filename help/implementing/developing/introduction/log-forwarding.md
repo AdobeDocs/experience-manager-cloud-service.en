@@ -9,19 +9,167 @@ hidefromtoc: yex
 
 >[!NOTE]
 >
->This feature is not release yet.
+>This self-serve feature is not yet released. In the meanwhile, you can open a support ticket to forward logs to Splunk. Learn more in the [logging article](help/implementing/developing/introduction/logging.md).
 
-With AEM as a Cloud Service, logs can be forwarded to supported vendors. Currently, Splunk and Elasticsearch are supported, with more to follow soon.
 
-Log forwarding is a self-service that can be configured by declaring the configuration in Git, and deploying it via the Configuration Pipeline. It includes AEM logs, Apache/Dispatcher logs, as well as CDN logs.
 
-## Splunk Logs {#splunk-logs}
+Customers who have a license for a logging vendor or host a logging product can have AEM, Apache/Dispatcher, and CDN logs forwarded to the associated logging destinations. AEM as a Cloud Service supports the following logging destinations: 
 
-Customers who have Splunk accounts may request via customer support ticket that their AEM Cloud Service logs are forwarded to the appropriate index. The logging data is equivalent to what is available through the Cloud Manager log downloads, but customers may find it convenient to use the query features available in the Splunk product.
+* Azure Blob Storage
+* DataDog
+* Elasticsearch or OpenSearch
+* HTTPS
+* OpenSearch
+* Splunk
+* Sumo Logic
 
-The network bandwidth associated with logs sent to Splunk are considered part of the customer's Network I/O usage.
+Log forwarding is configured in a self-service manner by declaring a configuration in Git, and deploying it via the Cloud Manager Configuration Pipeline.
 
-CDN logs will be forwarded to Splunk for new support ticket requests; customers who already have Splunk forwarding enabled will be able to add CDN logs in the future.
+Note that the network bandwidth associated with logs sent to the logging destination are considered part of your organization's Network I/O usage.
+
+
+## How This Article is Organized {#how-organized}
+
+This article is organized in the following way:
+
+* Setup - common for all logging destinations
+* Logging destination configurations - each destination has a slightly different format
+* Advanced networking - sending AEM and Apache/Dispatcher logs through a dedicated egress or through a VPN
+
+
+## Setup {#setup}
+
+1. Create the following folder and file structure the top-level folder in your project in Git:
+
+   ```
+   config/
+        logForwarding.yaml
+   ```
+
+1. logForwarding.yaml should contain metadata and a configuration similar to the following format (we use Splunk as an example). 
+
+   ```
+   kind: "LogForwarding"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     splunk:
+       default:
+         host: "example.com"
+         port: 8888 # Optional
+         index: "AEMaaCS"
+         token: "${{SPLUNK_TOKEN}}"
+   
+   ```
+
+The default node must be included for future compatibility reasons. 
+
+The kind parameter should be set to LogForwarding the version should be set to the schema version, which is 1.
+
+Tokens in the configuration (such as "${{SPLUNK_TOKEN}}") represent secrets, which should not be stored in Git. Instead, declare them as Cloud Manager  [Environment Variables](/help/implementing/cloud-manager/environment-variables.md) of Type "secret".
+
+
+1. For environment types other than RDE (which is not currently supported), create a targeted deployment config pipeline in Cloud Manager.
+
+   * [See configuring production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+   * [See configuring non-production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+
+## Logging Destination Configuration {#logging-destinations}
+
+Configurations for the supported logging destinations are listed below, along with any specific considerations.
+
+### Azure Blob Storage {#azureblob}
+
+   ```
+   kind: "LogForwarding"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     azureBlob:
+       default:
+         storageAccountName: "example_acc"
+         container: "aem_logs"
+         sasToken: "${{AZURE_BLOB_SAS_TOKEN}}
+         
+   ```
+   
+Considerations:
+
+* Authenticate using the SAS token, which should have a minimum validaty period.
+* The SAS Token should be created on the account page, not the container page.
+   
+### Datadog {#datadog}
+
+   ```
+   kind: "LogForwarding"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     datadog:
+       default:
+         host: "http-intake.datadog.eu"
+         token: "${{DATADOG_API_KEY}}"
+         
+   ```
+   
+Considerations:
+
+* Create an API Key, without any integration with a specific cloud provider.
+   
+
+### Elasticsearch and OpenSearch {#elastic}
+
+   ```
+   kind: "LogForwarding"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     elasticsearch:
+       default:
+         host: "example.com"
+         port: 8888 # Optional
+         user: "${{ELASTICSEARCH_USER}}"
+         password: "${{ELASTICSEARCH_PASSWORD}}"
+   
+   ```
+
+### HTTPS {#https}
+
+   ```
+   kind: "LogForwarding"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     https:
+       default:
+         url: "https://example.com/aem_logs/aem"
+         authHeaderName: "X-AEMaaCS-Log-Forwarding-Token"
+         authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
+   
+   ```
+   
+### Splunk {#splunk}
+
+   ```
+   kind: "LogForwarding"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     splunk:
+       default:
+         host: "example.com"
+         port: 8888 # Optional
+         index: "AEMaaCS"
+         token: "${{SPLUNK_TOKEN}}"
+   
+   ```
+
 
 ### Enabling Splunk Forwarding {#enabling-splunk-forwarding}
 
@@ -38,109 +186,8 @@ The properties above should be specified for each relevant program/environment t
 >
 >Splunk forwarding for sandbox program environments is not supported.
 
->[!NOTE]
->
->The Splunk forwarding capability is not possible from a dedicated egress IP address.
 
-You should make sure that the initial request includes all dev environment that should be enabled, in addition to the stage/prod environments. Splunk must have an SSL certificate, and be public facing. 
-
-If any new dev environments created after the initial request are intended to have Splunk forwarding, but do not have it enabled, an additional request should be made.
-
-Also note that if dev environments have been requested, it is possible that other dev environments not in the request or even sandbox environments will have Splunk forwarding enabled and will share a Splunk index. Customers can use the `aem_env_id` field to distinguish between these environments.
-
-Below you will find a sample customer support request:
-
-Program 123, Production Env
-
-* Splunk HEC endpoint address: `splunk-hec-ext.acme.com`
-* Splunk index: acme_123prod (customer can choose whatever naming convention it wantes)
-* Splunk port: 443
-* Splunk HEC token: ABC123
-
-Program 123, Stage Env
-
-* Splunk HEC endpoint address: `splunk-hec-ext.acme.com`
-* Splunk index: acme_123stage
-* Splunk port: 443
-* Splunk HEC token: ABC123
-
-Program 123, Dev Envs
-
-* Splunk HEC endpoint address: `splunk-hec-ext.acme.com`
-* Splunk index: acme_123dev
-* Splunk port: 443
-* Splunk HEC token: ABC123
-
-It may be sufficient for the same Splunk index to be used for each environment, in which case either the `aem_env_type` field can be used to differentiate based on the values dev, stage, and prod. If there are multiple dev environments, the `aem_env_id` field can also be used. Some organizations may choose a separate index for the production environment's logs if the associated index limits access to a reduced set of Splunk users. 
-
-Here is an example log entry:
-
-```
-aem_env_id: 1242
-aem_env_type: dev
-aem_program_id: 12314
-aem_tier: author
-file_path: /var/log/aem/error.log
-host: 172.34.200.12 
-level: INFO
-msg: [FelixLogListener] com.adobe.granite.repository Service [5091, [org.apache.jackrabbit.oak.api.jmx.SessionMBean]] ServiceEvent REGISTERED
-orig_time: 16.07.2020 08:35:32.346
-pod_name: aemloggingall-aem-author-77797d55d4-74zvt
-splunk_customer: true
-```
-
-## Setup {#setup}
-
-1. Create the following folder and file structure the top-level folder in your project in Git:
-
-   ```
-   config/
-        LogForwarding.yaml
-   ```
-
-2. A default configuration is supported in the `LogForwarding.yaml` file, which allows to extend the vendor specific configuration to a finer-grained version later:
-
-   ```
-      kind: "LogForwarding"
-   version: "1"
-   metadata:
-     ...
-      data:
-     splunk:
-       default:
-         enabled: false # Always present?
-         host: "example.com"
-         port: 8888 # Optional
-         index: "AEMaaCS"
-         token: "${{SPLUNK_TOKEN}}"
-       cdn:
-         index: "cdn_logs"
-         additionalLogFields:
-         - resp_body_size
-         - resp_surrogate_key
-   
-   ```
-
-## Logging Destination Configurations {#logging-destination-configurations}
-
-Specific parameters will differ by destination (or vendor), but in general, involve specifying a url and a set of credentials.
-
-At this time, there is a single declaration for all logs, declared under the default node.
-
-Vendors that are currently supported include:
-
-* Azure Blob
-* Data Dog
-* Elastic Search
-* Splunk
-* Sumo Logic
-
->[!NOTE]
->
-> The tokens represent Cloud Manager [environment variables](/help/implementing/cloud-manager/environment-variables.md).
-
-
-## Forwarding Logs Over a Dedicated Egress {#forwarding-logs-over-a-dedicated-egress}
+## Advanced Networking {#advanced-networking}
 
 If you have organizational requirements to lock down traffic to your logging vendor, you can configure [advanced networking](/help/security/configuring-advanced-networking.md) and configure the yaml's host and port accordingly. 
 
