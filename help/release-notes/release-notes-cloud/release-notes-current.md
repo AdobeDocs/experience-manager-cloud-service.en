@@ -142,7 +142,7 @@ Real User Monitoring (RUM) Data Service offers a more precise reflection of user
      
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### OAuth Server-to-Server credentials support for AEM integrations with other Adobe solutions {#S2S OAuth credentials}
+### OAuth Server-to-Server credentials support for AEM integrations with other Adobe solutions {#S2S-OAuth-credentials}
 
 Adobe Developer Console is used to generate credentials to access various APIs. One of those credential types, Service Account (JWT) credentials, has been deprecated in favor of OAuth Server-to-Server credentials, which AEM Cloud Service now supports for integrations with other Adobe solutions such as Adobe Analytics and Adobe Target.
 
@@ -152,10 +152,25 @@ Adobe Developer Console is used to generate credentials to access various APIs. 
 
 Receive proactive notifications when traffic patterns at the origin are indicative of a DDoS attack, allowing you to investigate and configure [traffic filter rules](/help/security/traffic-filter-rules-including-waf.md).
 
-### RDE Support for Front-End Code using Site Themes and Site Templates (Early Adopter Program) {#rde-frontend}
+### RDE Support for Front-End Code using Site Themes and Site Templates {#rde-frontend}
 
 [Rapid Development Environments (RDEs)](/help/implementing/developing/introduction/rapid-development-environments.md) now support front-end code based on [site themes](/help/sites-cloud/administering/site-creation/site-themes.md) and [site templates](/help/sites-cloud/administering/site-creation/site-templates.md), for early adopters. With RDEs, this is done using a command line directive, rather than a [front-end pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
 
+### Enhanced logging for RDEs {#rde-logging}
+
+While debugging code in a [Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md), developers can now configure and stream logs more efficiently, using the command line, and without modifying OSGI properties in version control. Features include:
+
+* declare log levels on a per package or class level
+* customize the log output format
+* stream multiple logs in parallel 
+
+### RDE CLI enhancements {#rde-cli-enhancements}
+
+The [Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) command line interface has some new features, which improve the developer experience:
+
+* the setup command is interactive, making it easier to choose between organizations, programs and environments. It is also now possible to override these values at the command line 
+* quiet mode
+* json mode
 
 ### Early Adopter Programs {#foundation-early-adopter}
 
@@ -176,16 +191,6 @@ Similar to AEM 6.5, Apache/dispatcher will ingest rewrite maps placed in a speci
 #### Edge Side Includes (ESI) for Loading Dynamic Content (Early Adopter Program) {#esi-early-adopter}
 
 The Adobe Managed CDN now supports [Edge Side Includes (ESI)](/help/implementing/dispatcher/edge-side-includes.md), a markup language for edge level dynamic web content assembly. By including ESI snippets, you can cache the overall HTML page at the CDN with higher TTLs, while more frequently fetching from origin those smaller sections that require higher cadence updates (lower TTLs). Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.
-
-#### Enhanced logging for RDEs (Early Adopter Program) {#rde-logging-early-adopter}
-
-While debugging code in a [Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md), developers can now configure and stream logs more efficiently, using the command line, and without modifying OSGI properties in version control. Features include:
-
-* declare log levels on a per package or class level
-* customize the log output format
-* stream multiple logs in parallel 
-
-Please reach out to **<aemcs-rde-support@adobe.com>** to try it out and provide feedback.
 
 ## Cloud Manager {#cloud-manager}
 
