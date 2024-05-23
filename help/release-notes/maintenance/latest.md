@@ -62,7 +62,6 @@ Summarized below are the continuous improvements for maintenance release 16357, 
 * SITES-20238: [RTC] Pfizer MVP - Add CF API to resolve CF paths to IDs and for vice versa.
 * SITES-21043: [CF][launches] Side-port performance improvements to Cloud Service.
 * SITES-21044: [CF][launches] Side-port async edit payload implementation to Cloud Service.
-* FORMS-9606: Previously, in the Adaptive Forms editor, only field values could be mapped to the response of an invoke service. Now, authors have the ability to map any property of the field to the invoke service response.
 * FORMS-7483: AEM Forms JSON Schema Parser now supports JSON schema (2020-12).
 * FORMS-13209: A handler is included to override Adaptive Forms default submission success and submission failure handlers. You can configure these handlers via Adaptive Forms Rule Editor. 
 * FORMS-13612: Screen readers now read error messages, short descriptions, and long descriptions for fields in core component-based Adaptive Forms. Additionally, support has been added to invalidate adaptive form inputs when the form contains errors and is not valid for submission.
