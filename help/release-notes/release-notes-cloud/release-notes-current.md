@@ -142,6 +142,12 @@ Real User Monitoring (RUM) Data Service offers a more precise reflection of user
      
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
+### OAuth Server-to-Server credentials support for AEM integrations with other Adobe solutions {#S2S OAuth credentials}
+
+Adobe Developer Console is used to generate credentials to access various APIs. One of those credential types, Service Account (JWT) credentials, has been deprecated in favor of OAuth Server-to-Server credentials, which AEM Cloud Service now supports for integrations with other Adobe solutions such as Adobe Analytics and Adobe Target.
+
+[Read about the deprecation](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md) and [learn how to use the AEM author UI](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) to configure integrations with other Adobe solutions. 
+
 ### Traffic Spike at Origin Alerts {#traffic-spike-origin}
 
 Receive proactive notifications when traffic patterns at the origin are indicative of a DDoS attack, allowing you to investigate and configure [traffic filter rules](/help/security/traffic-filter-rules-including-waf.md).
