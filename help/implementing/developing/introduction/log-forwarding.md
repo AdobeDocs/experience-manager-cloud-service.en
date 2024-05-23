@@ -54,10 +54,10 @@ This article is organized in the following way:
    data:
      splunk:
        default:
-         host: "example.com"
-         port: 8888 # Optional
-         index: "AEMaaCS"
+         enabled: true
+         host: "splunk-host.example.com"
          token: "${{SPLUNK_TOKEN}}"
+         index: "AEMaaCS"
    
    ```
    
