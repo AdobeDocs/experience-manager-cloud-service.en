@@ -5,7 +5,7 @@ exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 ---
 # Manage reports {#manage-reports}
 
-Asset reporting provides administrators with visibility into activity of the Adobe Experience Manager Assets view environment. This data provides useful information about how users interact with content and the product. All users can access the Insights dashboard and the ones who are assigned to the Administrators product profile can create user-defined reports. 
+Asset reporting provides administrators with visibility into activity of the Adobe Experience Manager Assets View environment. This data provides useful information about how users interact with content and the product. All users can access the Insights dashboard and the ones who are assigned to the Administrators product profile can create user-defined reports. 
 
 ## Access reports {#access-reports}
 
@@ -33,27 +33,31 @@ Assets view enables you to view real-time data for your Assets view environment 
 
 Click **[!UICONTROL Insights]** available in the left navigation pane to view the following automatically generated charts:
 
-   ![Insights](assets/insights.png)
-
 * **Downloads**: The number of assets downloaded from the Assets view environment in the last 30 days or 12 months represented using a line graph.
+![insights-downloads](/help/assets/assets/insights-downloads2341.svg)
 
 * **Uploads**: The number of assets uploaded to the Assets view environment in the last 30 days or 12 months represented using a line graph.
-
+![insights-uploads](/help/assets/assets/insights-uplods2.svg)
 <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
 
 * **Storage usage**: The storage usage, in bytes, for the Assets view environment represented using a bar chart.
-
+![insights-uploads](/help/assets/assets/insights-storage-usage1.svg)
 <!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
 
 <!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
 
 * **Top Searches**: View top searched terms along with the number of times those terms are searched within your Assets view environment in the last 30 days or 12 months represented in a tabular format.
-
+![insights-uploads](/help/assets/assets/insights-top-search.svg)
   <!--
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)
    -->
-   
+
+* **Asset Count by size:** Segments the total asset count in your Assets View environment into different size ranges, highlighting the count and percentage of assets in each size range, represented using a donut chart.
+![insights-assets-count-by-size](/help/assets/assets/insights-assets-count-by-size.svg)
+* **Asset Count by Asset Type:** Segments the total asset count in your Assets View environment, highlighting the count and percentage of assets based on their file types, represented by donut chart.
+![insights-assets-count-by-size](/help/assets/assets/insights-assest-count-by-asset-type1.svg)
+
 ## Create a Download report {#create-download-report}
 
 To create a Download report:
@@ -72,7 +76,7 @@ To create a Download report:
    >
    > Assets view converts all local time zones to Coordinated Universal Time (UTC).
 
-1. In the [!UICONTROL Columns] tab, select the column names that you need to display in the report.
+1. In the [!UICONTROL Columns] tab, select the column names that you need to display in the report..
 
 1. Click **[!UICONTROL Create]**.
 
