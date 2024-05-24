@@ -31,12 +31,22 @@ Billing APIs does not account for the number of pages, the length of a document 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_submission_graph_en"
 >title="Form Submissions Tracker"
->abstract="Effortlessly monitor form submissions on your AEM Forms Publish instance with our intuitive tracking dashboard. The graph provides data specific to the current instance, allowing you to swiftly analyze trends and make informed decisions. For submissions data of other instances, simply access the dashboard of the respective instance."
+>abstract="This graph represents the count of Adaptive Form submissions during specific time periods. The increase in submissions could indicate that the form is becoming more popular or that there is a need to collect more data from users. **Note:** The graph provides data specific to the current instance, allowing you to swiftly analyze trends and make informed decisions. For submissions data of other instances, simply access the dashboard of the respective instance."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_conversions_graph_en"
->title="Form Conversions Tracker"
->abstract="Stay informed about form conversions with a summary of the total count of conversions. The graph provides data specific to the current AEM Forms Publish instance, allowing you to swiftly analyze trends and make informed decisions. To view conversion data of other instances, access the respective instance's dashboard."
+>title="Document Rendition Tracker"
+>abstract="This graph represents the count of document rendition during specific time periods. **Note:** The graph provides data specific to the current instance, allowing you to swiftly analyze trends and make informed decisions. For submissions data of other instances, simply access the dashboard of the respective instance."
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_newForms_graph_en"
+>title="New Forms Tracker"
+>abstract="The graph provides information on the number of newly created forms during specific time periods. **Note:** The graph provides data specific to the current AEM Forms Author instance. To view data of other instances, access the respective instance's dashboard."
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
+>title="Published Forms Tracker"
+>abstract="The graph provides information about the number of forms that have been successfully published during specific time periods. **Note:** The graph provides data specific to the current AEM Forms Publish instance. To view conversion data of other instances, access the respective instance's dashboard."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
@@ -46,27 +56,19 @@ Billing APIs does not account for the number of pages, the length of a document 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"
 >title="Average Duration for Form Creation"
->abstract="The graph displays the average time taken to create and publish a form, measured from the initial day the form was opened for editing.The graph provides data specific to the current AEM Forms Author instance. To view data of other instances, access the respective instance's dashboard."
+>abstract="The graph displays the average time taken to create and publish a form, measured from the initial day the form was opened for editing. **Note:** The graph provides data specific to the current AEM Forms Author instance. To view data of other instances, access the respective instance's dashboard."
 
->[!CONTEXTUALHELP]
->id="aemforms_cs_transaction_reporting_newForms_graph_en"
->title="New Forms Tracker"
->abstract="The graph provides information on the number or frequency of newly created forms during specific time periods. The graph provides data specific to the current AEM Forms Author instance. To view data of other instances, access the respective instance's dashboard."
-
->[!CONTEXTUALHELP]
->id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
->title="Published Forms Tracker"
->abstract="The graph provides information about the number or frequency of forms that have been successfully published during specific time periods. The graph provides data specific to the current AEM Forms Publish instance. To view conversion data of other instances, access the respective instance's dashboard."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formFragments_graph_en"
->title="Published Forms Tracker"
->abstract="This graph helps you see how many form fragments people use in their forms. The graph provides data specific to the current AEM Forms Publish instance. To view conversion data of other instances, access the respective instance's dashboard."
+>title="Forms Fragments Tracker"
+>abstract="This graph helps you see how many form fragments you are using in your forms. **Note:** The graph provides data specific to the current AEM Forms Publish instance. To view conversion data of other instances, access the respective instance's dashboard."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_avgFormPerFragments_graph_en"
->title="Published Forms Tracker"
->abstract="The graph displays the average time taken to create a form fragment, measured from the initial day the form fragment was opened for editing. The graph provides data specific to the current AEM Forms Publish instance. To view conversion data of other instances, access the respective instance's dashboard."
+>title="Form Fragment Average Time Tracker"
+>abstract="The graph displays the average time taken to create a form fragment, measured from the initial day the form fragment was opened for editing. **Note:** The graph provides data specific to the current AEM Forms Publish instance. To view conversion data of other instances, access the respective instance's dashboard."
+
 
 <!-- 
 
