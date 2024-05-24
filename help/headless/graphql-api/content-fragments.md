@@ -1111,7 +1111,7 @@ See [Authentication for Remote AEM GraphQL Queries on Content Fragments](/help/h
 
 ## Automated Testing {#automated-testing}
 
-When running a deployment pipeline in AEM Cloud Manager, to allow automated tests during pipeline execution provide most accurate results, please ensure that your AEM as a Cloud Service stage environment is as close as possible to the production environment. This is especially important for content on the stage environment that should mirror production content as closely as possible. You can achieve this by using the AEM as a Cloud Service [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) tool to copy production content to the stage environment.
+When running a deployment pipeline in AEM Cloud Manager, to allow automated tests during pipeline execution to provide the most accurate results, please ensure that your AEM as a Cloud Service stage environment is as close as possible to the production environment. This is especially important for content on the stage environment that should mirror production content as closely as possible. You can achieve this by using the AEM as a Cloud Service [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) tool to copy production content to the stage environment.
 
 ## Limitations {#limitations}
 
