@@ -273,7 +273,7 @@ See [configuring production pipelines](/help/implementing/cloud-manager/configur
 
 ### Version Purge {#version-purge}
 
-#### Version Purge Defaults {#version-purge-defaults}
+### Version Purge Defaults {#version-purge-defaults}
 <!-- For version purging, environments with an id higher than **TBD** have the following default values: -->
 
 Currently, purging is not enabled by default, but this will change in the future. Environments that were created before the default purging is enabled will have the following defaults: 
@@ -292,7 +292,7 @@ Environments that were created before the default purging is enabled will have t
 * All versions in the last 7 years are kept.
 * After 7 years, versions other than the most recent version (in addition to the current file) are removed.
 
-#### Version Purge Properties {#version-purge-properties}
+### Version Purge Properties {#version-purge-properties}
 
 | Properties | default for envs>xyz  | default for envs<=xyz  | required   | type    | Values   |
 |-----------|--------------------------|-------------|-----------|---------------------|-------------|
@@ -333,7 +333,7 @@ No versions newer than 30 days will be purged since the `maximumVersions` proper
 
 ### Audit Log Purge {#audit-purge}
 
-#### Audit Log Purge Defaults {#audit-purge-defaults}
+### Audit Log Purge Defaults {#audit-purge-defaults}
 <!-- For audit log purging, environments with an id higher than **TBD** have the following default values: -->
 
 Currently, purging is not enabled by default, but this will change in the future. Environments that were created before the default purging is enabled will have the following defaults: 
@@ -353,7 +353,7 @@ Environments that were created before the default purging is enabled will have t
 >[!NOTE]
 >It is recommended that customers who have regulatory requirements to produce uneditable audit logs, integrate with specialized, external services.
 
-#### Audit Log Purge Properties {#audit-purge-properties}
+### Audit Log Purge Properties {#audit-purge-properties}
 
 | Properties | default for envs>xyz  | default for envs<=xyz  | required   | type    | Values   |
 |-----------|--------------------------|-------------|-----------|---------------------|-------------|
