@@ -91,10 +91,17 @@ Configurations for the supported logging destinations are listed below, along wi
          
    ```
    
-Considerations:
+A SAS token should be used for authentication. It should be created from the Shared access signature page, rather than on the Shared access token page, and should be configured with these settings:
 
-* Authenticate using the SAS token, which should have a minimum validaty period.
-* The SAS Token should be created on the account page, not the container page.
+* Allowed services: Blob must be selected
+* Allowed resources: Object must be selected
+* Allowed permissions: Write, Add, Create must be selected
+* A valid Start and Expiry date/time.
+
+Here is a screenshot of a sample SAS token configuration:
+
+![Azure Blob SAS token configuration](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
+
    
 ### Datadog {#datadog}
 
