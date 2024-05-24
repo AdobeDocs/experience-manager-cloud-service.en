@@ -9,7 +9,7 @@ hidefromtoc: yes
 
 >[!NOTE]
 >
->This self-serve feature is not yet released and some logging destinations may not be available at the time of release. In the meanwhile, you can open a support ticket to forward logs to **Splunk**. Learn more in the [logging article](/help/implementing/developing/introduction/logging.md).
+>This self-serve feature is not yet released and some logging destinations may not be available at the time of release. In the meantime, you can open a support ticket to forward logs to **Splunk**. Learn more in the [logging article](/help/implementing/developing/introduction/logging.md).
 
 Customers who have a license for a logging vendor or host a logging product can have AEM, Apache/Dispatcher, and CDN logs forwarded to the associated logging destinations. AEM as a Cloud Service supports the following logging destinations: 
 
@@ -17,9 +17,7 @@ Customers who have a license for a logging vendor or host a logging product can 
 * DataDog
 * Elasticsearch or OpenSearch
 * HTTPS
-* OpenSearch
 * Splunk
-* Sumo Logic
 
 Log forwarding is configured in a self-service manner by declaring a configuration in Git, and deploying it via the Cloud Manager Configuration Pipeline to dev, stage, and production environment types in production (non-sandbox) programs.
 
@@ -37,7 +35,7 @@ This article is organized in the following way:
 
 ## Setup {#setup}
 
-1. Create the following folder and file structure the top-level folder in your project in Git:
+1. Create the following folder and file structure in the top-level folder in your project in Git:
 
    ```
    config/
@@ -65,7 +63,7 @@ This article is organized in the following way:
 
    The kind parameter should be set to LogForwarding the version should be set to the schema version, which is 1.
    
-   Tokens in the configuration (such as "${{SPLUNK_TOKEN}}") represent secrets, which should not be stored in Git. Instead, declare them as Cloud Manager  [Environment Variables](/help/implementing/cloud-manager/environment-variables.md) of Type "secret".
+   Tokens in the configuration (such as "${{SPLUNK_TOKEN}}") represent secrets, which should not be stored in Git. Instead, declare them as Cloud Manager  [Environment Variables](/help/implementing/cloud-manager/environment-variables.md) of type "secret". Make sure to select **All** as the dropdown value for the Service Applied field, so logs can be forwarded to author, publish, and preview tiers.
    
 1. For environment types other than RDE (which is not currently supported), create a targeted deployment config pipeline in Cloud Manager.
 
@@ -136,6 +134,12 @@ Considerations:
    
    ```
 
+Considerations:
+
+* For credentials, make sure to use use deployment credentials, rather than account credentials. These are the credentials that are generated in a screen that may resemble this image:
+
+![Elastic deployment credentials](/help/implementing/developing/introduction/assets/ec-creds.png)
+
 ### HTTPS {#https}
 
    ```
@@ -168,7 +172,7 @@ Considerations:
          index: "AEMaaCS"
    
    ```
-   
+<!--
 ### Sumo Logic {#sumologic}
 
    ```
@@ -185,7 +189,7 @@ Considerations:
          privateKey: "${{SomeOtherToken}}"
    
    ```   
-
+-->
 ## Advanced Networking {#advanced-networking}
 
 If you have organizational requirements to lock down traffic to your logging destination, you can configure log forwarding to go through [advanced networking](/help/security/configuring-advanced-networking.md). See the patterns for the three advanced networking types below, which make use of an optional `port` parameter, along with the `host` parameter.
