@@ -278,7 +278,7 @@ Now, let's incorporate the `clientlib-it-custom-locale` library into your AEM as
     
 
 
-### 5. Add locale support to the dictionary
+### Add locale support to the dictionary
 
 This step applies only to locales other than the following commonly supported ones: English (en), German (de), Spanish (es), French (fr), Italian (it), Brazilian Portuguese (pt-br), Chinese (Simplified - zh_cn), Chinese (Traditional - zh_tw), Japanese (ja), and Korean (ko_kr).
 
@@ -370,7 +370,7 @@ You are now all set to use the new locale with your Adaptive Forms. You can
 
         Trigger a deployment of your code through the [existing full-stack pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline). This automatically builds and deploys the updated code with the new locale support.
 
-        If you haven't already set up a pipeline, refer to the guide on [how to set up a pipeline for AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)..
+        If you haven't already set up a pipeline, refer to the guide on [how to set up a pipeline for AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
 
 
 ## Preview an Adaptive Form with newly added locale
@@ -378,8 +378,6 @@ You are now all set to use the new locale with your Adaptive Forms. You can
 These steps guide you through previewing an Adaptive Form with the newly added locale:
 
 1. Log in to your AEM Forms as a Cloud Service instance.
-
-1. Locate the "Forms" section and navigate to "Forms and Documents".
 1. Go to **Forms** >  **Forms and Documents**.
 1. Select an Adaptive Form and click **Add Dictionary** and **Add Dictionary To Translation Project** wizard appears.
 1. Specify the **Project Title** and select the **Target Languages** from the drop-down menu in the **Add Dictionary To Translation Project** wizard.
@@ -387,20 +385,6 @@ These steps guide you through previewing an Adaptive Form with the newly added l
 1. Go to **Forms** >  **Forms and Documents**.
 1. Select the Adaptive Form and choose the **Preview as HTML** option. 
 1. Append `&afAcceptLang=<locale-name>` to the preview URL and press the return key. Replace `<locale-name>` with your actual locale code. The adaptive form is displayed in the specified locale. 
-
-
-## Preview an Adaptive Form with newly added locale {#use-added-locale-in-af}
-
-Perform the following steps to preview an Adaptive with newly added locale:
-
-1. Log in to your AEM Forms as a Cloud Service instance.
-1. Go to **Forms** >  **Forms and Documents**.
-1. Select an Adaptive Form and click **Add Dictionary** and **Add Dictionary To Translation Project** wizard appears.
-1. Specify the **Project Title** and select the **Target Languages** from the drop-down menu in the **Add Dictionary To Translation Project** wizard.
-1. Click **Done** and execute the created translation project.
-1. Select an Adaptive Form and click **Preview as HTML**.
-1. Add `&afAcceptLang=<locale-name>` in the URL of an Adaptive Form.
-1. Refresh the page and Adaptive Form is rendered in a specified locale. 
 
 ## Best Practices to support for new localization {#best-practices}
 
@@ -413,12 +397,11 @@ Perform the following steps to preview an Adaptive with newly added locale:
 
     * **Human Translation**: For human translation workflows, export the dictionary using the UI at `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. Update the dictionary for the new fields and upload the revised version.
 
-## See more
-
-* [Generate document of record for Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
-* [Add an Adaptive Form to an AEM Sites page or Experience Fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-
 
 ## See Also {#see-also}
 
 {{see-also}}
+
+* [Generate document of record for Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
+* [Add an Adaptive Form to an AEM Sites page or Experience Fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
