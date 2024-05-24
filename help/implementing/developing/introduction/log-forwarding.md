@@ -59,11 +59,47 @@ This article is organized in the following way:
    
    ```
    
-   The default node must be included for future compatibility reasons. 
-
-   The kind parameter should be set to LogForwarding the version should be set to the schema version, which is 1.
+   The **kind** parameter should be set to LogForwarding the version should be set to the schema version, which is 1.
    
-   Tokens in the configuration (such as `${{SPLUNK_TOKEN}}`) represent secrets, which should not be stored in Git. Instead, declare them as Cloud Manager  [Environment Variables](/help/implementing/cloud-manager/environment-variables.md) of type "secret". Make sure to select **All** as the dropdown value for the Service Applied field, so logs can be forwarded to author, publish, and preview tiers.
+   Tokens in the configuration (such as `${{SPLUNK_TOKEN}}`) represent secrets, which should not be stored in Git. Instead, declare them as Cloud Manager  [Environment Variables](/help/implementing/cloud-manager/environment-variables.md) of type **secret**. Make sure to select **All** as the dropdown value for the Service Applied field, so logs can be forwarded to author, publish, and preview tiers.
+   
+   It is possible to set different values between cdn logs and everything else (AEM and apache logs), by including an additional **cdn** and/or **aem** block after the **default** block, where properties can override those defined in the **default** block; only the enabled property is required. A possible use case could be to use a different Splunk index for CDN logs, as the example below illustrates. 
+   
+   ```
+      kind: "LogForwarding"
+      version: "1"
+      metadata:
+        envTypes: ["dev"]
+      data:
+        splunk:
+          default:
+            enabled: true
+            host: "splunk-host.example.com"
+            token: "${{SPLUNK_TOKEN}}"
+            index: "AEMaaCS"
+          cdn:
+            enabled: true
+            token: "${{SPLUNK_TOKEN_CDN}}"
+            index: "AEMaaCS_CDN"   
+   ```
+   
+   Another scenario is to disable either forwarding of the CDN logs or everything else (AEM and apache logs). For example, to only forward the CDN logs, one can configure the following: 
+
+   ```
+      kind: "LogForwarding"
+      version: "1"
+      metadata:
+        envTypes: ["dev"]
+      data:
+        splunk:
+          default:
+            enabled: true
+            host: "splunk-host.example.com"
+            token: "${{SPLUNK_TOKEN}}"
+            index: "AEMaaCS"
+          aem:
+            enabled: false
+   ```
    
 1. For environment types other than RDE (which is not currently supported), create a targeted deployment config pipeline in Cloud Manager.
 
