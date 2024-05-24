@@ -53,7 +53,7 @@ Click **[!UICONTROL Insights]** available in the left navigation pane to view th
    ![Insights](assets/insights2.png)
    -->
 
-* **Asset Count by size:** Segments the total asset count in your Assets View environment into different size ranges, highlighting the count and percentage of assets in each size range, represented using a donut chart.
+* **Asset Count by size:** Segments the total asset count in your Assets View environment into different size ranges, highlighting the count and percentage of assets in each size range, represented by a donut chart.
 ![insights-assets-count-by-size](/help/assets/assets/insights-assets-count-by-size.svg)
 * **Asset Count by Asset Type:** Segments the total asset count in your Assets View environment, highlighting the count and percentage of assets based on their file types, represented by donut chart.
 ![insights-assets-count-by-size](/help/assets/assets/insights-assest-count-by-asset-type1.svg)
@@ -76,7 +76,7 @@ To create a Download report:
    >
    > Assets view converts all local time zones to Coordinated Universal Time (UTC).
 
-1. In the [!UICONTROL Columns] tab, select the column names that you need to display in the report..
+1. In the [!UICONTROL Columns] tab, select the column names that you need to display in the report.
 
 1. Click **[!UICONTROL Create]**.
 
