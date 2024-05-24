@@ -152,7 +152,7 @@ Adobe Developer Console is used to generate credentials to access various APIs. 
 
 Receive proactive notifications when traffic patterns at the origin are indicative of a DDoS attack, allowing you to investigate and configure [traffic filter rules](/help/security/traffic-filter-rules-including-waf.md).
 
-### RDE Support for Front-End Code using Site Themes and Site Templates {#rde-frontend}
+### RDE support for front-end code using Site Themes and Site Templates {#rde-frontend}
 
 [Rapid Development Environments (RDEs)](/help/implementing/developing/introduction/rapid-development-environments.md) now support front-end code based on [site themes](/help/sites-cloud/administering/site-creation/site-themes.md) and [site templates](/help/sites-cloud/administering/site-creation/site-templates.md), for early adopters. With RDEs, this is done using a command line directive, rather than a [front-end pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
 
@@ -174,6 +174,18 @@ The [Rapid Development Environment (RDE)](/help/implementing/developing/introduc
 
 ### Early Adopter Programs {#foundation-early-adopter}
 
+#### Purge content at the CDN with a self-serve API key (Early Adopter Program) {#purge-cdn}
+
+Register a CDN purge API key in a self-service way, and use it to invalidate content at the CDN, either globally, or for one or more resources.  
+
+Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter.
+
+#### Self-serve creation of X-AEM-Edge-Key for BYOCDN (Early Adopter Program) {#purge-cdn}
+
+Previously, a support ticket was needed to generate the X-AEM-Edge-Key required for configuration of a customer-managed CDN. This can now be accomplished in a self-serve way through a configuration file that is deployed using the Configuration Pipeline, removing any delay in onboarding a new environment.  
+
+Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter.
+
 #### Client-side redirects (Early Adopter Program) {#client-side-redirects-early-adopter}
 
 Configure 301/302 client-side redirects in source control, and deploy to the CDN. [Learn more](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. Note that there are several other features already available related to [CDN configuration](/help/implementing/dispatcher/cdn-configuring-traffic.md), including request and response transformations, and routing traffic to off-AEM sites.
@@ -184,9 +196,9 @@ The recently released [Traffic Filter Rules](/help/security/traffic-filter-rules
 
 Now you can email **<aemcs-cdn-config-adopter@adobe.com>** to join the early adopter program so you can be alerted whenever your traffic filter rules are triggered. Actions Center email notifications will keep you informed when certain traffic conditions occur so you can take appropriate measures. 
 
-#### Apache/Dispatcher Runtime Ingestion of Rewrite Maps (Early Adopter Program) {#apache-rewritemaps-early-adopter}
+#### Business users can declare redirects outside of Git (Early Adopter Program) {#apache-rewritemaps-early-adopter}
 
-Similar to AEM 6.5, Apache/dispatcher will ingest rewrite maps placed in a specific location in the publish repository, and load them, without requiring a web tier pipeline execution. This opens up opportunities for a business user to declare redirects using a UI, such as that offered by ACS Commons Redirect Map Manager. Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.
+Similar to AEM 6.5, Apache/dispatcher will ingest rewrite maps placed in a specific location in the publish repository, and load them, without requiring a web tier pipeline execution. This opens up opportunities for a business user to declare redirects using either a spreadsheet or a UI, such as that offered by ACS Commons Redirect Map Manager or created as part of a customer application. Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.
 
 #### Edge Side Includes (ESI) for Loading Dynamic Content (Early Adopter Program) {#esi-early-adopter}
 
