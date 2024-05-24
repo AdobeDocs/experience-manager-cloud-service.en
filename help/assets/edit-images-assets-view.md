@@ -78,9 +78,9 @@ You can quickly convert a PNG image into a JPEG format using Adobe Express. Exec
 
 ### Limitations {#limitations-adobe-express}
 
-* Supported image resolution: Minimum - 50 pixels, Maximum - 6000 pixels per dimension
+* Supported image resolution: Minimum - 50 pixels, Maximum - 6000 pixels per dimension.
 
-* Maximum file size supported: 17 MB
+* Maximum file size supported: 17 MB.
 
 ## Edit images using Adobe Express embedded editor {#edit-using-embedded-editor}
 
