@@ -172,6 +172,7 @@ Considerations:
          index: "AEMaaCS"
    
    ```
+
 <!--
 ### Sumo Logic {#sumologic}
 
@@ -190,6 +191,7 @@ Considerations:
    
    ```   
 -->
+
 ## Advanced Networking {#advanced-networking}
 
 If you have organizational requirements to lock down traffic to your logging destination, you can configure log forwarding to go through [advanced networking](/help/security/configuring-advanced-networking.md). See the patterns for the three advanced networking types below, which make use of an optional `port` parameter, along with the `host` parameter.

@@ -600,8 +600,6 @@ Depending on the traffic and the amount of log statement written by Debug, this 
 * Done judiciously, and only when absolutely necessary
 * Reverted to the appropriate levels and re-deployed as soon as possible
 
-<!-- Alexandru: drafting for now because of CQDOC-21448
-
 ## Splunk Logs {#splunk-logs}
 
 Customers who have Splunk accounts may request via customer support ticket that their AEM Cloud Service logs are forwarded to the appropriate index. The logging data is equivalent to what is available through the Cloud Manager log downloads, but customers may find it convenient to use the query features available in the Splunk product.
@@ -675,5 +673,3 @@ orig_time: 16.07.2020 08:35:32.346
 pod_name: aemloggingall-aem-author-77797d55d4-74zvt
 splunk_customer: true
 ```
-
--->
