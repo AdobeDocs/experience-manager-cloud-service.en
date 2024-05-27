@@ -7,13 +7,13 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 16357 {#release-16357}
+## Release 16461 {#release-16461}
 
-Summarized below are the continuous improvements for maintenance release 16357, which was publicly released on May 22, 2024. The previous maintenance release was release 16145.
+Summarized below are the continuous improvements for maintenance release 16461, which was publicly released on May 22, 2024. The previous maintenance release was release 16145.
 
 2024.5.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-16357}
+### Enhancements {#enhancements-16461}
 
 * ASSETS-30379: DRM License check walks entire tree of assets being downloaded.
 * ASSETS-35535: [DaaS Adapter Error] Empty Asset Downloads need to be ignored for v1 Events.
@@ -69,7 +69,7 @@ Summarized below are the continuous improvements for maintenance release 16357, 
 * SITES-21550: [Xwalk] Custom metadata: number, date, datetime, time fields.
 * SITES-21769: Use the /jcr:id/ path prefix for resource-by-id retrieval.
 
-### Fixed Issues {#fixed-issues-16357}
+### Fixed Issues {#fixed-issues-16461}
 
 * ASSETS-37611: "Request to Complete Move Operation" workflow is triggered for un-published asset.
 * ASSETS-38723: NPE thrown by MetadataRulesProviderImpl when getReadRulesForMetadataChildNodes() is called before this.readRules is initialized.
@@ -101,12 +101,10 @@ Summarized below are the continuous improvements for maintenance release 16357, 
 * SITES-20029: Content fragment Versions are created right after closing it without changing the content.
 * SITES-20168: Content Fragment Model `locked` field not properly updated.
 * SITES-20214: AEM Rollout Configuration Sequence Issue on Save.
-* SITES-20364: 302 Redirects Not Working with Selector in URL.
 * SITES-20367: Issue with Deleting Launches in AEM.
 * SITES-20401: [Xwalk] Section metadata do not support multi-value properties.
 * SITES-20496: [Xwalk] No properties option when selecting spreadsheet in site admin.
 * SITES-20522: Corrupted Content Fragments break /adobe/sites/cf/fragments endpoint.
-* SITES-20547: Truncated Paths in Live Copy Excluded Paths List on AEM as a Cloud Service.
 * SITES-20559: [MSM][XF][Lufthansa] Rollout of Experience Fragments from masters/language to country/language does not update references.
 * SITES-20582: Searching and listing content fragments should allow depth 0.
 * SITES-20586: Template "Published" timestamp not updated.
@@ -121,15 +119,15 @@ Summarized below are the continuous improvements for maintenance release 16357, 
 * SKYOPS-73234: Error log failure increase on AEM Assets Global DAM program upgrade to AEM release 15553 and PR Id 35362.
 * SKYOPS-75341: NoSuchMethodError in distribution Crosswalk bundle.
 
-### Known Issues {#known-issues-16357}
+### Known Issues {#known-issues-16461}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-16357}
+### Deprecated Features and APIs {#deprecated-16461}
 
 To know what is deprecated or removed in AEM as a Cloud Service, see [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md).
 
-### Embedded Technologies {#embedded-tech-16357}
+### Embedded Technologies {#embedded-tech-16461}
 
 |Technology|Version|Link|
 |---|---|---|
