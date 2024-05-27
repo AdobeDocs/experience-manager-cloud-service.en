@@ -1,25 +1,25 @@
 ---
 title: Current Early Adopter features of [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 description: Current Early Adopter features of [!DNL Adobe Experience Manager Forms] as a Cloud Service.
-hide: yes
-hidefromtoc: yes
 Feature: Introduction
 Role: developer, user
 
 ---
-# Early Adopter (EA) program 
+# AEM Forms Early Adopter Program
 
 
-The Early Adopter program offers a unique opportunity to you to get exclusive access to cutting-edge features before anyone else, and help shape their development. The Early Adopter program offers a unique opportunity to:
+The AEM Forms Early Adopter Program program offers a unique opportunity to you to get exclusive access to cutting-edge features before anyone else, and help shape their development. The program offers you to:
 
-* Provide valuable feedback and influence the development of upcoming features.
-* Be among the first to experience cutting-edge technology before it hits the mainstream.
-* Help identify and iron out bugs, leading to a smoother user experience upon full release.
+* Be among the first to get access to cutting-edge technology before it hits the mainstream.
+* Co-innovate with the product team, shaping the future of the product together. Use your use cases to guide development, ensuring the innovation is mature and address your real-world challenges.
+* Provide feedback and help us squash issues before launch, leading to a smoother user experience upon full release. 
 
-[Join our community of early adopters today](#how-to-join-the-early-adopter-program). You can request access to all or any specific upcoming capability.  
+## How to join the Early Adopter program? 
+
+If you're interested in joining our Early Adopter program for any early adopter innovation, simply send an email from your official address to aem-forms-ea@adobe.com to request access. You can request access to all or any specific innovation.  
 
 
-## Early Adopter (EA) Capabilities
+## Early Adopter Innovations 
 
 ### AEM Forms Generative AI (Gen AI)
 
@@ -41,17 +41,19 @@ The Generative AI capabilities on offer are:
 * **Create Form Rules with Generative AI Prompts**: Use Generative AI prompts to get help in creating smart rules that react to user input. Our Generative AI can suggest and even generate conditional rules based on your form's purpose. 
 
 
-### Workfront Fusion 
+### AEM Forms Workfront Fusion Connector 
 
-The [AEM Forms Adobe Workfront Fusion Connector](/help/forms/submit-adaptive-form-to-workfront-fusion.md) empowers seamless integration between Adobe Experience Manager (AEM) Forms and Adobe Workfront Fusion. Adobe Workfront serves as a work management application, centralizing the entire work lifecycle, while Workfront Fusion acts as the integration platform facilitating connectivity between Workfront and various business applications. 
+The AEM Forms Workfront Fusion Connector empowers seamless integration between Adobe Experience Manager (AEM) Forms and Adobe Workfront Fusion. Adobe Workfront serves as a work management application, centralizing the entire work lifecycle, while Workfront Fusion acts as the integration platform facilitating connectivity between Workfront and various business applications. 
 
-Using the AEM Forms Adobe Workfront Fusion Connector, you can design workflows that are triggered automatically upon submission of an Adaptive Form. For instance, envision a scenario where a workflow is initiated to assign a specific individual the task of reviewing submitted data, allowing approval or rejection of an application based on the information captured through the adaptive form. This streamlined integration enhances efficiency and brings a new level of automation to your workflow processes.
+Using the AEM Forms Workfront Fusion Connector, you can design workflows that are triggered automatically upon submission of an Adaptive Form. For instance, envision a scenario where a workflow is initiated to assign a specific individual the task of reviewing submitted data, allowing approval or rejection of an application based on the information captured through the adaptive form. This streamlined integration enhances efficiency and brings a new level of automation to your workflow processes.
+
+Ready to start? The [submit an Adaptive Form to Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md) documentation provides a step-by-step guide to use the innovation.
 
 <!-- <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> -->
 
 ### Conversational Forms
 
-The Conversational Forms capability lets you interact with forms like a friendly chatbot on any AEM Sites page. 
+The Conversational Forms innovation lets you interact with forms like a friendly chatbot on any AEM Sites page. 
 
 You can simply drag and drop the Conversational Forms component onto your AEM Sites page and get started. There's no coding required, so anyone can create engaging and user-friendly Conversational Forms experiences quickly.
 
@@ -67,20 +69,15 @@ Here's what more Conversational Forms bring:
 Conversational Forms are more than just a new look – they're a game-changer for user experience.  Boost engagement, reduce form abandonment, and make interacting with your website a more enjoyable experience for everyone.
 
 
-### AEM Authoring for Edge Delivery Services
+### AEM-based Authoring for Edge Delivery Services
 
-AEM Authoring provides a WYSIWYG interface (Adaptive Forms Editor) to build and publish these forms to Edge Delivery Services to achieve unmatched load speeds and a near-perfect Google Lighthouse score on live forms, guaranteeing top performance and user experiences.
-
-![next gen composability tools to create forms](/help/forms/assets/web-vitals.jpeg)
-
-AEM Authoring offers all the capabilities of [Document-based Authoring](/help/edge/docs/forms/overview.md#document-based-authoring-features), plus a wide range of additional features:
+AEM-based Authoring provides a WYSIWYG interface (Adaptive Forms Editor) to build and publish these forms to Edge Delivery Services. AEM-based Authoring offers all the capabilities of [Document-based Authoring](/help/edge/docs/forms/overview.md#document-based-authoring-features), plus a wide range of additional features:
 
 * Advanced rules editor for creating complex logic.
 * Server-side extensibility for custom functionalities.
 * WYSIWYG editing experience for easy form creation and visualization.
 * Document of record functionality to create tamper-proof archives of submitted data.
 * Integration with Adobe Sign for electronic signatures.
-* Integration with Adobe Workfront Fusion to trigger Adobe Workfront Fusion scenarios upon form submission.
 * Integration with various data sources for pre-populating forms and submitting data.
 * Form Data Model (FDM) for defining data structure and interactions with various data sources.
 * Ability to choose from multiple submit actions for handling form submissions, including submitting data to Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics, and many more data sources.
@@ -99,6 +96,65 @@ By streamlining the data transfer process, the connector can help you improve yo
 In essence, AEM Forms to Marketo Connector helps you leverage the strengths of both platforms to create a more efficient and effective marketing funnel.
 
 
-## How to join the Early Adopter program? 
+## Additional Early Adopter Innovations
 
-If you're interested in joining our Early Adopter program for any capability, simply send an email from your official address to aem-forms-ea@adobe.com to request access.
+### Right-to-left (RTL) languages support
+
+Adaptive Forms can now be displayed in a Right-to-Left (RTL) language, allowing a more inclusive user experience and ease of use. 
+
+This functionality caters to languages like Arabic, Hebrew, and Urdu, which are written and read from Right-to-Left (RTL), fostering better comprehension and completion rates for forms. 
+
+![Right to left (RTL) languages support](mobile-responsive.png)
+
+The Right-to-Left (RTL) languages support in Adaptive Forms help you: 
+
+* **Expands user base**: Businesses can now reach over 2 billion people globally who are more comfortable with RTL languages.
+
+* **Deliver enhanced user experience**: Forms render flawlessly with natural text flow from right to left, proper UI element alignment, and intuitive layouts mirroring user reading habits. This reduces confusion and increases form completion rates.
+
+* **Deliver mobile responsive experiences**: Forms remain accessible on any device due to inherent mobile responsiveness, ensuring a smooth experience across desktops, tablets, and smartphones.
+
+Overall, RTL language support in Adaptive Forms empowers businesses to design truly global forms, boosting reach, engagement, and inclusivity.
+
+Ready to start? [Adaptive Forms RTL documentation](/help/forms/supporting-new-language-localization-core-components.md) provides a step-by-step guide to use the RTL innovation.
+
+### Enhanced bot protection methods
+
+AEM Forms has enhanced its security features by adding support for two popular CAPTCHA solutions: Cloudflare Turnstile and hCaptcha. This adds to the already available Google reCAPTCHA, providing users with more choice and flexibility in protecting their forms from bots and spam submissions.
+
+* **Cloudflare Turnstile**: This frictionless CAPTCHA verifies users through a simple challenge that doesn't require explicit interaction. It seamlessly integrates into your forms, improving the user experience.
+* **hCaptcha**: This privacy-focused CAPTCHA offers a user-friendly alternative with a focus on data privacy. It aims to strike a balance between security and user experience.
+* **Google reCAPTCHA**: AEM Forms continue to support both reCAPTCHA v2 and reCAPTCHA Enterprise, offering a reliable and well-established solution.
+
+By offering multiple CAPTCHA options, AEM Forms have empowered you to select the solution that best aligns with your specific needs. 
+
+Ready to integrate any of these CAPTCHA solution with your Adaptive Forms? Our documentation provides detailed instructions for each: [Cloudflare Turnstile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), and [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+
+### Doc Assurance APIs
+
+
+AEM Forms Doc Assurance APIs are a set of tools within the AEM Forms Cloud Service Communication APIs that allow you to manage the security and user interaction of your PDF documents.
+
+Here's a breakdown of what Doc Assurance APIs can do:
+
+* **Encrypt and decrypt documents**: Protect your documents by making their contents unreadable with encryption. You have control over what parts of the PDF are encrypted, including the entire document, specific content, metadata, or attachments.
+
+* **Digitally sign documents**: Add digital signatures to your documents for validation and tamper-proof verification. This can be used for certification purposes or to ensure document integrity 
+
+* **Reader Extend your documents (Apply or edit usage rights of PDF documents)**: Enables your organization to easily share interactive PDF documents by extending the functionality of Adobe Reader with additional usage rights. 
+
+    The Reader Extension (Usage Rights) APIs adds usage rights to a PDF document. This action activates features that are not usually available when a PDF document is opened using Adobe Reader, such as adding comments to a document, filling forms, and saving the document. Third-party users do not require additional software or plug-ins to work with rights-enabled documents.
+
+    When PDF documents have the appropriate usage rights added, recipients can do enabled activities from within Adobe Reader. 
+
+Overall, [Doc Assurance APIs](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) help you improve document security and compliance by adding an extra layer of control.
+
+
+
+## See also
+
+* [Latest Innovations in AEM Forms](/help/forms/latest-innovations.md)
+
+* [Capabilities of AEM Forms as a Cloud Services](/help/forms/home.md)
+
+* [Difference between AEM 6.5 Forms (AMS and on-prem) and AEM Forms as a Cloud Services (AEM CS Forms)](/help/forms/notable-changes.md)
