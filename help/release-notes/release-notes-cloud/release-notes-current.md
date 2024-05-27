@@ -117,7 +117,7 @@ Ready to integrate any of these CAPTCHA solution with your Adaptive Forms? Our d
 
 >[!SUCCESS]
 >
-> The AEM Forms Early Adopter Program program offers a unique opportunity to you to get exclusive access to cutting-edge innovations before anyone else, and help shape their development. The program offers access to multiple innovations. For the complete list of innovations available under the Early Adopter Program, see [AEM Forms Early Adopter Program documentation](). 
+> The AEM Forms Early Adopter Program program offers a unique opportunity to you to get exclusive access to cutting-edge innovations before anyone else, and help shape their development. The program offers access to multiple innovations. For the complete list of innovations available under the Early Adopter Program, see [AEM Forms Early Adopter Program documentation](/help/forms/early-adopter-ea-features.md). 
 
      
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
