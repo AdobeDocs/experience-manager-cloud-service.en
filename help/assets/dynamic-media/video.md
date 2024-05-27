@@ -531,13 +531,13 @@ Some key benefits from enabling DASH on your account include the following:
 
 Enabling DASH support on your account is done by way of an Adobe Customer Support case that you create and submit.
 
-**About enabling multi-caption and multi-audio track support on your account**
+**About enabling multiple caption and audio track support on your account**
 
-At the same time that you create an Adobe Support case to have DASH enabled on your account, you can also benefit from having multi-caption and multi-audio track support automatically enabled. After enablement, all subsequent videos that you upload are processed with a new backend architecture that includes support for adding multi-caption and multi-audio tracks to your videos.
+At the same time that you create an Adobe Support case to have DASH enabled on your account, you can also benefit from having multiple caption and audio track support automatically enabled. After enablement, all subsequent videos that you upload are processed with a new backend architecture that includes support for adding multiple caption and audio tracks to your videos.
 
 >[!IMPORTANT]
 >
->Any videos that you uploaded *before* enabling multi-caption and multi-audio track support on your Dynamic Media account, [must be reprocessed](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). This video reprocessing step is necessary so that multi-caption and multi-audio track capability is available to them. The video URLs continue to work and play as usual, after reprocessing.
+>Any videos that you uploaded *before* enabling multiple caption and audio track support on your Dynamic Media account, [must be reprocessed](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). This video reprocessing step is necessary so that multiple caption and audio track capability is available to them. The video URLs continue to work and play as usual, after reprocessing.
 
 **To enable DASH, multi-caption, and multi-audio track support on your Dynamic Media account:** 
 
@@ -556,16 +556,16 @@ At the same time that you create an Adobe Support case to have DASH enabled on y
 1. Now you can do either one of the following:
 
     * Create your [video viewer preset](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) as usual.
-    * [Add multi-captions and multi-audio tracks](#add-msma) to your video.
+    * [Add multiple captions and audio tracks](#add-msma) to your video.
 
 
-## About multi-caption and multi-audio track support for videos in Dynamic Media{#about-msma}
+## About multiple caption and audio track support for videos in Dynamic Media{#about-msma}
 
-With multi-caption and multi-audio track capability in Dynamic Media, you can easily add multiple captions and audio tracks to a primary video. This capability means that your videos are accessible across a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the captions and audio tracks from a single tab in the user interface.
+With multiple caption and audio track capability in Dynamic Media, you can easily add multiple captions and audio tracks to a primary video. This capability means that your videos are accessible across a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the captions and audio tracks from a single tab in the user interface.
 
 ![Captions and audio tracks tab in Dynamic Media along with a table showing uploaded .VTT caption files and uploaded .MP3 audio track files for a video.](/help/assets/dynamic-media/assets/msma-subtitle-audiotracks-tab.png)
 
-Some of the use cases to consider for adding multi-captions and multi-audio tracks to your primary video include the following:
+Some of the use cases to consider for adding multiple captions and audio tracks to your primary video include the following:
 
 | Type | Use case |
 |--- |--- |
@@ -575,13 +575,13 @@ Some of the use cases to consider for adding multi-captions and multi-audio trac
 |  | Commentary tracks |
 |  | Descriptive audio |
 
-All [video formats supported in Dynamic Media](/help/assets/file-format-support.md) and all Dynamic Media video viewers&mdash;except the Dynamic Media *Video_360* viewer&mdash;are supported for use with multi-captions and multi-audio tracks.
+All [video formats supported in Dynamic Media](/help/assets/file-format-support.md) and all Dynamic Media video viewers&mdash;except the Dynamic Media *Video_360* viewer&mdash;are supported for use with multiple captions and audio tracks.
 
 Multi-caption and multi-audio track capability is available for your Dynamic Media account by way of a feature toggle that must be enabled (turned on) by Adobe Customer Support.
 
-### Add multi-captions and multi-audio tracks to your video {#add-msma}
+### Add multiple captions and audio tracks to your video {#add-msma}
 
-Before you add multi-caption and multi-audio tracks to your video, be sure you already have the following in-place:
+Before you add multiple caption and audio tracks to your video, be sure you already have the following in-place:
 
 * Dynamic Media is set up in an AEM environment.
 * A [Dynamic Media Video profile is applied to the folder where your videos are ingested](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
@@ -591,12 +591,12 @@ Added captions and captions are supported with WebVTT and Adobe VTT formats. And
 
 >[!IMPORTANT]
 >
->Any videos that you uploaded *before* enabling multi-caption and multi-audio track support on your Dynamic Media account, [must be reprocessed](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). This video reprocessing step is necessary so that multi-caption and multi-audio track capability is available to them. The video URLs continue to work and play as usual, after reprocessing.
+>Any videos that you uploaded *before* enabling multiple caption and audio track support on your Dynamic Media account, [must be reprocessed](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). This video reprocessing step is necessary so that multiple caption and audio track capability is available to them. The video URLs continue to work and play as usual, after reprocessing.
 
-**To add multi-captions and multi-audio tracks to your video:**
+**To add multiple captions and audio tracks to your video:**
 
 1. [Upload your primary video to a folder](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) that already has a video profile assigned to it.
-1. Navigate to the uploaded video asset that you want to add multi-caption and multi-audio tracks.
+1. Navigate to the uploaded video asset that you want to add multiple caption and audio tracks.
 1. In asset selection mode, either from the List View or the Card View, select the video asset.
 1. On the toolbar, select the Properties icon (a circle with an "i" in it).
 ![Selected video asset with checkmark over video thumbnail image and View Properties highlighted on the toolbar.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Selected video asset in Card view.*
@@ -636,7 +636,7 @@ Added captions and captions are supported with WebVTT and Adobe VTT formats. And
       | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional audio track files or caption files. |
       | Language | Select the language of the audio track. |
       | Type | Select the type of audio track that you are using.<br>**Original** &ndash; The audio track originally attached to the video and represented as `[Original]` in the label with `English` language selected by default. While **[!UICONTROL Label]** and **[!UICONTROL Language]** can be changed in the **[!UICONTROL Edit Audio Track]** dialog box, it defaults to the original values if the primary video is reprocessed.<br>**Standard** &ndash; An add-on audio track for a language other than the original.<br>**Audio description** &ndash; An audio track that also includes a descriptive narration of non-verbal actions and gestures in the video, making content more accessible for individuals who are visually impaired. |
-      | Label | The text that is displayed as the audio track's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to an audio track. For example, `English [Original]`. The label of audio attached to a video is set to `[Original|` by default. |
+      | Label | The text that is displayed as the audio track's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to an audio track. For example, `English [Original]`. The label of audio attached to a video is set to `[Original]` by default. |
 
       You can change or edit this audio track metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
 
@@ -813,13 +813,11 @@ The original audio track extracted from a primary file cannot be downloaded.
 
 
 
-
-
 ## Add closed captions to video {#adding-captions-to-video}
 
 >[!IMPORTANT]
 >
->Adobe recommends that you [enable multi-caption and multi-audio track capability](#enable-dash) on your Dynamic Media account. Doing so lets you take advantage of the latest Dynamic Media backend architecture and a simplified workflow for adding captions, captions, and audio tracks to your videos.
+>Adobe recommends that you [enable multiple caption and audio track capability](#enable-dash) on your Dynamic Media account. Doing so lets you take advantage of the latest Dynamic Media backend architecture and a simplified workflow for adding captions, captions, and audio tracks to your videos.
 
 You can extend the reach of your videos to global markets by adding closed captioning to single videos or to Adaptive Video Sets. By adding closed captioning, you avoid the need to dub the audio, or the need to use native speakers to rerecord the audio for each different language. The video is played in the language that it was recorded. Foreign language captions appear so that people of different languages can still understand the audio portion.
 

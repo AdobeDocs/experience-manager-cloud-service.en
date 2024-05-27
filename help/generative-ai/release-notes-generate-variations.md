@@ -22,8 +22,6 @@ The current release is version 2.2.0.
 * Enhanced the Recents list with time groupings
 * Localization support has been added for multiple languages
  
-The current releaase is version 2.0.0.
-
 ### 2.0.0 {#release-notes-2-0-0}
 
 * Introduced universal persistent storage for Prompt Templates.
