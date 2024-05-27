@@ -115,13 +115,9 @@ By offering multiple CAPTCHA options, AEM Forms have empowered you to select the
 Ready to integrate any of these CAPTCHA solution with your Adaptive Forms? Our documentation provides detailed instructions for each: [Cloudflare Turnstile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), and [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 
-#### AEM Forms Early Adopter Program 
-
-The AEM Forms Early Adopter Program program offers a unique opportunity to you to get exclusive access to cutting-edge innovations before anyone else, and help shape their development. The program offers access to multiple innovations. For the complete list of innovations available under the Early Adopter Program, see [AEM Forms Early Adopter Program] documentation. 
-
-Be among the first to get access to cutting-edge technology before it hits the mainstream.
-Co-innovate with the product team, shaping the future of the product together. Use your use cases to guide development, ensuring the innovation is mature and address your real-world challenges.
-Provide feedback and help us squash issues before launch, leading to a smoother user experience upon full release.
+>[!SUCCESS]
+>
+> The AEM Forms Early Adopter Program program offers a unique opportunity to you to get exclusive access to cutting-edge innovations before anyone else, and help shape their development. The program offers access to multiple innovations. For the complete list of innovations available under the Early Adopter Program, see [AEM Forms Early Adopter Program documentation](). 
 
      
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
@@ -166,7 +162,7 @@ Register a CDN purge API key in a self-service way, and use it to invalidate con
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
-#### Self-serve creation of X-AEM-Edge-Key for BYOCDN (Early Adopter Program) {#purge-cdn}
+#### Self-serve creation of X-AEM-Edge-Key for BYOCDN (Early Adopter Program) {#purge-cdn-2}
 
 Previously, a support ticket was needed to generate the X-AEM-Edge-Key required for configuration of a customer-managed CDN. This can now be accomplished in a self-serve way through a configuration file that is deployed using the Configuration Pipeline, removing any delay in onboarding a new environment.  
 
