@@ -26,6 +26,10 @@ None.
 * SITES-20364: 302 Redirects Not Working with Selector in URL.
 * SITES-20547: Truncated Paths in Live Copy Excluded Paths List on AEM as a Cloud Service.
 
+>[!NOTE]
+>
+>Two fixes for known issues have been reverted in this new release.
+
 ### Deprecated Features and APIs {#deprecated-16461}
 
 To know what is deprecated or removed in AEM as a Cloud Service, see [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md).
