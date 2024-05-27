@@ -90,11 +90,11 @@ Experience Manager Assets now enables you to quickly [publish assets to Experien
 
 This release brings a significant upgrade to the visual rule editor for adaptive forms based on core components. You can now: 
 
-  * Create rules in Visual Rule editor to [override default form submission success/failure handlers](/help/forms/rule-editor-core-components). 
+  * Create rules in Visual Rule editor to [override default form submission success/failure handlers](/help/forms/rule-editor-core-components.md). 
   
-  * In the Adaptive Forms Rule Editor, added the ability to [select different types of fields for the WHEN operation](/help/forms/rule-editor-core-components).
+  * In the Adaptive Forms Rule Editor, added the ability to [select different types of fields for the WHEN operation](/help/forms/rule-editor-core-components.md).
   
-  * A form author can now apply custom functions to [preprocess data before submission](/help/forms/rule-editor-core-components). 
+  * A form author can now apply custom functions to [preprocess data before submission](/help/forms/rule-editor-core-components.md). 
 
   * Use the **Save as Draft** functionlaity to save partially completed forms for later submission. This is useful in scenarios where users need to interrupt filling out a form and come back to it later.
 
