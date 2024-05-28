@@ -3,10 +3,8 @@ title: Current Early Adopter features of [!DNL Adobe Experience Manager Forms] a
 description: Current Early Adopter features of [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 Feature: Introduction
 Role: developer, user
-
 ---
 # AEM Forms Early Adopter Program
-
 
 The AEM Forms Early Adopter Program program offers a unique opportunity to you to get exclusive access to cutting-edge features before anyone else, and help shape their development. The program offers you to:
 
@@ -16,7 +14,7 @@ The AEM Forms Early Adopter Program program offers a unique opportunity to you t
 
 ## How to join the Early Adopter program? 
 
-If you're interested in joining our Early Adopter program for any early adopter innovation, simply send an email from your official address to aem-forms-ea@adobe.com to request access. You can request access to all or any specific innovation.  
+If you're interested in joining our Early Adopter program for any early adopter innovation, simply send an email from your official address to `aem-forms-ea@adobe.com` to request access. You can request access to all or any specific innovation.  
 
 
 ## Early Adopter Innovations 
