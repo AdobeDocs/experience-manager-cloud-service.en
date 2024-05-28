@@ -10,13 +10,13 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 Cloud Service content requests are measured via server-side collection of data. The collection is enabled via CDN log analysis.
 
 >[!NOTE]
->Additionally, for a limited number of [Early Adopter customers](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-early-adopter), client-side collection will also be enabled via Real User Monitoring service measurement. You can learn more by consulting the documentation in [this article](#real-user-monitoring-for-aem-as-a-cloud-service).
+>We are excited to announce the GA rollout (Link to Release Notes) for client-side collection enabled via Real Use Monitoring service measurement. With the gA rollout, Adobe will start monitoring client-side traffic for it's customers automatically and there is no customer set up required. You can learn more by consulting the documentation in [this article](#real-user-monitoring-for-aem-as-a-cloud-service).
 
 ## Understanding Cloud Service Content Requests {#understaing-cloud-service-content-requests}
 
 Content requests are automatically collected server-side at the edge of Adobe Experience Manager as a Cloud Service, via automated analysis of the log files originating from the AEM as a Cloud Service CDN. This is done by isolating the requests returning HTML `(text/html)` or JSON `(application /Json)` content from the CDN, and based on several inclusion and exclusion rules detailed below. A content request occurs independently from the returned content being served from the CDN caches or the content going back to the origin of the CDN (AEM's dispatchers).
 
-The Real User Monitoring service , the client-side collection, offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. This gives customers advanced insights into their page traffic and performance. While this is beneficial for both customers who use either the Adobe managed CDN or a non-Adobe managed CDN. In addition, automatic traffic reporting can now be enabled for customers using a non-Adobe managed CDN, thus removing the need to share any traffic reports with Adobe.
+The Real Use Monitoring service , the client-side collection, offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. This gives customers advanced insights into their page traffic and performance. While this is beneficial for both customers who use either the Adobe managed CDN or a non-Adobe managed CDN. In addition, automatic traffic reporting can now be enabled for customers using a non-Adobe managed CDN, thus removing the need to share any traffic reports with Adobe.
 
 For customers that bring their own CDN on top of AEM as a Cloud Service, server-side reporting will result in numbers that cannot be used to compare with the licensed content requests. These numbers will have to be measured by the customer at the edge of the outer CDN. For these customers, client-side reporting and associated performance, the [Adobe RUM Data Service](#real-user-monitoring-for-aem-as-a-cloud-service) is the Adobe recommended option. See the [release notes](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-early-adopter) for the information on how to opt-in.
 
@@ -67,7 +67,8 @@ See also [License Dashboard](/help/implementing/cloud-manager/license-dashboard.
 | Traffic from DDOS attacks | Excluded | DDOS protection. AEM does auto-detect some of the DDOS attacks and blocks them. DDOS attacks if detected are not billable. |
 | AEM as a Cloud Service NewRelic Monitoring | Excluded | AEM as a Cloud Service global monitoring.|
 | URL for customers to monitor their Cloud Service program | Excluded | Recommended URL to externally monitor the availability.<br><br>`/system/probes/health`|
-| AEM as a Cloud Service Pod Warm-up Service | Excluded | User Agent: skyline-service-warmup/1.*|
+| AEM as a Cloud Service Pod Warm-up Service | Excluded | 
+Agent: skyline-service-warmup/1.*|
 | Well-known search engines, social networks, and HTTP libraries (tagged by Fastly) | Excluded | Well-known services visiting the site regularly to refresh their search index or service:<br><br>Examples:<br>&bull; AddSearchBot<br>&bull; AhrefsBot<br>&bull; Applebot<br>&bull; Ask Jeeves Corporate Spider<br>&bull; Bingbot<br>&bull; BingPreview<br>&bull; BLEXBot<br>&bull; BuiltWith<br>&bull; Bytespider<br>&bull; CrawlerKengo<br>&bull; Facebookexternalhit<br>&bull; Google AdsBot<br>&bull; Google AdsBot Mobile<br>&bull; Googlebot<br>&bull; Googlebot Mobile<br>&bull; lmspider<br>&bull; LucidWorks<br>&bull; MJ12bot<br>&bull; Pingdom<br>&bull; Pinterest<br>&bull; SemrushBot<br>&bull; SiteImprove<br>&bull; StashBot<br>&bull; StatusCake<br>&bull; YandexBot|
 | Exclude Commerce Integration Framework calls | Excluded | These are requests made to AEM that get forwarded to the Commerce Integration Framework&mdash;the URL starts with `/api/graphql`&mdash;to avoid double counting, they are not billable for Cloud Service.|
 | Exclude `manifest.json` | Excluded | Manifest is not an API call, it is here to provide information on how to install web sites on desktop or mobile phone. Adobe should not count JSON request to `/etc.clientlibs/*/manifest.json`|
@@ -75,7 +76,7 @@ See also [License Dashboard](/help/implementing/cloud-manager/license-dashboard.
 
 ## Client-side Collection {#cliendside-collection}
 
-### Real User Monitoring Service for AEM as a Cloud Service {#real-user-monitoring-service-for-aem-as-a-cloud-service}
+### Real Use Monitoring Service for AEM as a Cloud Service {#real-use-monitoring-service-for-aem-as-a-cloud-service}
 
 >[!INFO]
 >
@@ -84,39 +85,39 @@ See also [License Dashboard](/help/implementing/cloud-manager/license-dashboard.
 
 ### Overview {#overview}
 
-The Real User Monitoring service is a type of performance monitoring technology that captures and analyzes the digital user experiences of a website or application in real-time. It provides visibility into the real-time performance of a web application and provides accurate insight into the end-user experience. 
+The Real Use Monitoring service is a type of performance monitoring technology that captures and analyzes the digital user experiences of a website or application in real-time. It provides visibility into the real-time performance of a web application and provides deeper insight into the end-user experience. 
 
-The Real User Monitoring service provides deep insight into key performance metrics right from the initiation of the URL until the request is served back to the browser all of which helps the developers enhance the application to make it easy to use for the end users. 
+With Real Use Monitoring , key performance metrics are tracked right from the initiation of the URL until the request is served back to the browser all of which helps the developers enhance the application to make it easy to use for the end users. 
 
-### Who Can Benefit from Real User Monitoring Service? {#who-can-benefit-from-rum-service}
+### Who Can Benefit from Real Use Monitoring Service? {#who-can-benefit-from-rum-service}
 
-RUM Data Service is beneficial for all customers whether utilising Adobe's, or their own CDN. It offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement by reflecting the number of Page Views on the client-side. 
+RUM Data Service is beneficial for all customers whether utilising Adobe's, or their own CDN. It offers a representative reflection of user interactions, ensuring a reliable measure of website engagement by capturing the number of Page Views on the client-side. 
 
-In particular, for Adobe CDN users, it accurately tracks user interactions for a direct comparison of client-side Page Views with server-side CDN logs.
+In particular, for Adobe CDN users,  this service provides valuable insights into user interactions, helping to identify if your CDN setup or implementation may be resulting in a higher number of content requests compared to server-side logs.
 
-For customers employing their own CDN they can benefit from simplified traffic reporting, as Adobe now directly integrates these Page Views, eliminating the need for separate reports. 
+For customers employing their own CDN they can benefit from simplified traffic reporting, as Adobe now directly integrates these Page Views, eliminating the need for separate reports during renewal cycles. 
 
-Additionally, all customers gain deep insights into page performance, to optimise their digital experiences effectively.
+Would you like to unlock the full potential of your website , then ask us for providing you access to our Early Adopter version of RUM Explorer platform! This cutting-edge tool can provide unparalleled insights into your page performance, including detailed metrics on the number of clicks, Core Web Vitals (CWV), conversions, and comprehensive customer journey maps. Discover where your traffic is coming from—whether it's referrals, search engines, or direct visits—and understand your audience better with data on user agents, including bots, desktops, and mobile devices. By utilizing these powerful insights, you can fine-tune your digital experiences to meet your users' needs more effectively. Don't miss out on this opportunity to elevate your web performance. Interested in learning more? Reach out to us at email  "aemcs-rum-adopter@adobe.com" today and start optimizing your digital strategy!
 
-### Understand how the Real User Monitoring Service Works {#understand-how-the-rum-service-works}
+### Understand how the Real Use Monitoring Service Works {#understand-how-the-rum-service-works}
 
-Adobe Experience Manager uses Real User Monitoring (RUM) to help customers and Adobe understand, how visitors are interacting with Adobe Experience Manager-powered sites, to diagnose performance issues, and to measure the effectiveness of experiments. RUM preserves the privacy of visitors through sampling - only a small portion of all page views will be monitored - and judicious exclusion of all personally identifiable information (PII). 
+Adobe Experience Manager uses Real Use Monitoring (RUM) to help customers and Adobe understand, how visitors are interacting with Adobe Experience Manager-powered sites, to diagnose performance issues, and to measure the effectiveness of experiments. RUM preserves the privacy of visitors through sampling - only a small portion of all page views will be monitored - and judicious exclusion of all personally identifiable information (PII). 
 
-### Real User Monitoring Service and Privacy {#rum-service-and-privacy}
+### Real Use Monitoring Service and Privacy {#rum-service-and-privacy}
 
-The Real User Monitoring service in Adobe Experience Manager is designed to preserve visitor privacy and minimize data collection. As a visitor, this means that no personal information will be collected by the site you are visiting or made available to Adobe. 
+The Real Use Monitoring service in Adobe Experience Manager is designed to preserve visitor privacy and minimize data collection. As a visitor, this means that no personal information will be collected by the site you are visiting or made available to Adobe. 
 
 As a site operator, this means no additional opt-in is required to enable monitoring through this feature.So, there will be no additional pop up for the end users to accept for enabling RUM monitoring. 
 
-### Real User Monitoring Service Data Sampling {#rum-service-data-sampling}
+### Real Use Monitoring Service Data Sampling {#rum-service-data-sampling}
 
-Traditional web analytics solutions try to collect data on every single visitor. Adobe Experience Manager's Real User Monitoring service only captures information from a small fraction of page views. The Real User Monitoring service data is meant to be sampled and anonymized rather than a replacement for analytics. By default, pages will have a 1:100 sampling ratio. Site operators cannot configure this number to increase or decrease the sampling rate as of today. To estimate total traffic accurately,for every 100 page views, we gather detailed data from one, giving you a reliable approximation of overall traffic."
+Traditional web analytics solutions try to collect data on every single visitor. Adobe Experience Manager's Real Use Monitoring service only captures information from a small fraction of page views. The Real Use Monitoring service data is meant to be sampled and anonymized rather than a replacement for analytics. By default, pages will have a 1:100 sampling ratio. Site operators cannot configure this number to increase or decrease the sampling rate as of today. To estimate total traffic accurately,for every 100 page views, we gather detailed data from one, giving you a reliable approximation of overall traffic."
 
 As the decision of whether the data will be collected is made on a page view by page view basis, it becomes virtually impossible to track interactions across multiple pages. RUM has no concept of visits, visitors, or sessions, only of page views. This is by design.
 
 ### What Data is Being Collected {#what-data-is-being-collected}
 
-The Real User Monitoring service is designed to prevent the collection of personally identifiable information. The full set of information that can be collected by Adobe Experience Manager's Real User Monitoring service is listed below:
+The Real Use Monitoring service is designed to prevent the collection of personally identifiable information. The full set of information that can be collected by Adobe Experience Manager's Real Use Monitoring service is listed below:
 
 * The host name of the site being visited, for example: `experienceleague.adobe.com`
 * The broad user agent type that is used to display the page, such as: desktop or mobile
@@ -130,19 +131,16 @@ The Real User Monitoring service is designed to prevent the collection of person
 * The target, or link to an external page or resource that the user interacts with for the checkpoint mentioned above. For example: `https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
 * The Core Web Vitals (CWV) performance metrics, the Largest Contentful Paint (LCP), First Input Delay (FID), and Cumulative Layout Shift (CLS) that describe the visitor's quality of experience.
 
-### How to Set Up the Real User Monitoring Service {#how-to-set-up-the-rum-service}
+### How Real Use Monitoring Works for a customer
 
-* If you wish to be a part of our Early Adopter program, please send an email to `aemcs-rum-adopter@adobe.com`, along with your domain name for the production, stage and dev environment from your email address associated with your Adobe ID. Adobe's product team will then enable the Real User Monitoring (RUM) Data Service for you.
-* Once this is completed, Adobe's product team will create a Customer collaboration Channel.
-* Adobe's Product team will reach out to you to provide you with the domain key and data dashboard URL where you can view the Page Views and [The Core Web Vitals(CWV)](https://web.dev/vitals/) metrics collected by the client-side Real User Monitoring service collection.
-* You will then be guided on how to use the domain key to access the data dashboard url and view the metrics.
+We are pleased to introduce Real Use Monitoring, a service that automatically monitors client-side traffic to provide you with valuable insights. As an Adobe customer, you don’t need to take any additional steps—this service is seamlessly integrated into your existing setup. With the General Availability (GA) rollout, you will automatically benefit from this new feature. If you wish to leverage more insights with this new feature to optimize your digital experiences effortlessly, please see here (link to Row 99).
 
-### How Real User Monitoring Service Data is Being Used {#how-rum-service-data-is-being-used}
+### How Real Use Monitoring Service Data is Being Used {#how-rum-service-data-is-being-used}
 
 RUM data is beneficial for the following purposes:
 
 * To identify and fix performance bottlenecks for customer sites
-* Streamlined, automatic traffic reporting that includes Page Views for customers using their own CDN, which means they do not have to share any traffic report with Adobe.
+* Streamlined, automatic traffic reporting that includes Page Views for customers using their own CDN, which means they do not have to share any traffic report with Adobe during their renewal cycles and we have got you covered.
 * To understand how Adobe Experience Manager interacts with other scripts (such as analytics, targeting, or external libraries) on the same page, in order to increase compatibility.
 
 ### Limitations and Understanding Variance in Page Views and Performance Metrics {#limitations-and-understanding-variance-in-page-views-and-performance-metrics}
@@ -159,11 +157,11 @@ As you will analyze this data, there might or might not be variances in page vie
 
 ### FAQ {#faq}
 
-1. **How can I configure paths to include or exclude in monitoring?**
+1. **How can I opt-out?**
 
-   Customers will be able to configure paths to include or exclude the URLs for monitoring by setting the Environment variables within the configuration in Cloud Manager by using these variables: `AEM_WEBVITALS_EXCLUDE` and `AEM_WEBVITALS_INCLUDE_PATHS`
-   
-   Please note that by default, the 'include' setting is configured to target '/content'. It's important to remember that the paths you need to configure here are content paths within the system, not the URL paths you see in your browser. This distinction is key for accurately setting up and customizing your configuration to meet your specific needs.
+We highly recommend using the Real Use Monitoring (RUM)  due to its significant benefits and that it can allow you to optimize your digital experiences. It can offers valuable insights that can help improve website performance and increase conversions. The service is designed to be seamless and has no impact on your website’s performance.
+
+Opting out means missing out on these powerful insights. However, if you encounter any issues, our support team is here to help. 
 
 1. **Would Adobe be able to track all the page views before the interaction reaches the customer managed CDN or at the point when the interaction reaches the customer managed CDN?**
 
