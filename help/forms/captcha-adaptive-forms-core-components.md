@@ -15,14 +15,16 @@ exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
 
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) is a program commonly used in online transactions to distinguish between humans and automated programs or bots. It poses a challenge and evaluates user response to determine if it's a human or a bot interacting with the site. It prevents the user to proceed if the test fails and helps make online transactions secure by keeping bots from posting spam or malicious purposes. 
 
-[!DNL AEM Forms] as a [!DNL Cloud Service] supports Google reCAPTCHA v2 in Adaptive Forms. You can use it to present a CAPTCHA challenge on form submission. To use the reCAPTCHA in an Adaptive Form:
+AEM Forms as a Cloud Service supports the following CAPTCHA solutions: 
 
-1. [Connect your AEM Forms environment with reCAPTCHA service by Google](#connect-your-forms-environment-with-recaptcha-service-by-google)
-1. [Configure your Adaptive Form to display the CAPTCHA challenge on form submission](#using-reCAPTCHA)
+* [Google reCAPTCHA](#connect-your-aem-forms-environment-with-recaptcha-service-by-google)
+* [Cloudflare Turnstile](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
+* [hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)  
+
 
 ## Connect your AEM Forms environment with reCAPTCHA service by Google {#connect-your-forms-environment-with-recaptcha-service-by-google}
 
-To connect your AEM Forms environment with reCAPTCHA service by Google 
+Form authors can use the reCAPTCHA service by Google to implement reCAPTCHA in Adaptive Forms. It offers advance CAPTCHA capabilities to protect your site. For more information on how reCAPTCHA works, see [Google reCAPTCHA](https://developers.google.com/recaptcha/). [!DNL AEM Forms] as a [!DNL Cloud Service] supports Google reCAPTCHA v2 in Adaptive Forms. You can use it to present a CAPTCHA challenge on form submission. To connect your AEM Forms environment with reCAPTCHA service by Google 
 
 1. Obtain [reCAPTCHA API key pair](https://www.google.com/recaptcha/admin) from Google. It includes a **site key** and a **secret key**.
 
