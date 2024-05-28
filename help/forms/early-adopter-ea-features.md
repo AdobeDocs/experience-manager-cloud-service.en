@@ -152,13 +152,13 @@ Overall, [Doc Assurance APIs](https://developer.adobe.com/experience-manager-for
 
 ### Forms Service APIs
 
-Forms Service APIs acts as an engine that takes form designs and data, and generates interactive PDF forms for users for data capture purposes. It can also extract the filled information and integrate it with other systems. Here's a breakdown of its functionalities:
+Forms service generates interactive PDF forms for data capture. It can also be used to import/export data to/from an existing interactive PDF form and validate submitted data. Here's a breakdown of its functionalities: 
 
-* **Rendering Forms**: It can render PDF forms based on templates you design in AEM Forms Designer and data stored in XML format. This essentially creates an interactive fillable form from the static template.
-* **Data Extraction and Import**: The Forms Service can both extract data filled out in a PDF form and import data into existing PDF forms. The data is typically formatted in XML for processing.
-* **Fragment-Based Rendering**: It allows you to render forms partially, based on specific sections or fragments designed in AEM Forms Designer. This can be useful for building modular forms or dynamically showing sections based on user input.
+* **Rendering Forms**: Generate an interactive PDF form from a template created using AEM Forms Designer and, optionally, XML data. This essentially produces a fillable PDF form optionally pre-filled with data.
 
+* **Data Extraction and Import**: Import data into an existing PDF form as well as extract data from a filled PDF form. Both XDP and XML data formats are supported, and importing to non-XFA PDF forms (also known as AcroForms) additionally supports FDF and XFDF data.
 
+* **Data Validation**: : Validate submitted data, in XDP or XML format, against a template created using AEM Forms Designer.
 
 ## See also
 
