@@ -119,8 +119,6 @@ By offering multiple CAPTCHA options, AEM Forms have empowered you to select the
 
 Ready to integrate any of these CAPTCHA solution with your Adaptive Forms? Our documentation provides detailed instructions for each: [Cloudflare Turnstile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), and [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
-if you're interested in joining our Early Adopter program for any early adopter innovation, simply send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) to request access. You can request access to all or any specific innovation.  
-
 
 ### Forms Service
 
@@ -129,6 +127,10 @@ Forms Service acts as an engine that takes form designs and data, and generates 
 * **Rendering Forms**: It can render PDF forms based on templates you design in AEM Forms Designer and data stored in XML format. This essentially creates an interactive fillable form from the static template.
 * **Data Extraction and Import**: The Forms Service can both extract data filled out in a PDF form and import data into existing PDF forms. The data is typically formatted in XML for processing.
 * **Fragment-Based Rendering**: It allows you to render forms partially, based on specific sections or fragments designed in AEM Forms Designer. This can be useful for building modular forms or dynamically showing sections based on user input.
+
+>[!IMPORTANT] 
+>
+> If you're interested in joining our Early Adopter program for any early adopter innovation, simply send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) to request access. You can request access to all or any specific innovation.  
 
      
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
