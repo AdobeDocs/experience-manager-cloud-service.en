@@ -209,9 +209,7 @@ While debugging code in a [Rapid Development Environment (RDE)](/help/implementi
 
 Please reach out to **<aemcs-rde-support@adobe.com>** to try it out and provide feedback.
 
-
 ## [!DNL Experience Manager] Guides {#guides}
-
 
 ### Ability to Translate Content into Multiple Languages Using Preconfigured Language Groups
 
