@@ -136,7 +136,12 @@ After you have added an RDE for your program using Cloud Manager, you can intera
    
 For more information and demonstration, watch the video tutorial [how to set up an RDE (06:24)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html).
 
-## Installing the RDE Command-Line Tools (end of June) {#installing-the-rde-command-line-tools-june}
+## Installing the RDE Command-Line Tools (with interactive mode) {#installing-the-rde-command-line-tools-interactive}
+
+>[!NOTE]
+>
+> This setup process is not yet available. It will replace the previous process sometime in June.
+> 
 
 After you have added an RDE for your program using Cloud Manager, you can interact with it by setting up the command-line tools as described in the following steps:
 
@@ -161,7 +166,7 @@ After you have added an RDE for your program using Cloud Manager, you can intera
    
    The setup step can be skipped while always passing the arguments for organization, program and environment to each command, i.e. in a scripted environment. [See rde commands below for more information](#rde-cli-commands).
    
-### The Interactive Setup (end of June)
+### The Interactive Setup
 
   The setup command will ask if the provided configuration shall be stored locally or globally.
    
@@ -243,7 +248,12 @@ However, with careful coordination, it is possible for more than one developer t
   `aio aem rde <command> --help`
   
   
-### new run modes (end of June)
+### run modes variations {#run-mode-variations}
+
+>[!NOTE]
+>
+> These run modes are not yet available. They will be rolled out sometime in June.
+> 
 
 * For a less verbose output, use the quiet mode:
 
@@ -487,7 +497,13 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 
 For more information and demonstration, see the video tutorial [how to use RDE commands (10:01)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html).
 
-## Logs (end of June){#tail-logs-from-rde}
+## Logs {#tail-logs-from-rde}
+
+>[!NOTE]
+>
+> This feature is not yet available. It will be rolled out sometime in June.
+> 
+
 
 Using the logs command, the user can tail live logs of an RDE directly in his CLI. Ther can be up to four concurrent log configurations be active on an RDE. Once a fifth log configuration is added, an old one has to be replaced. 
 
@@ -561,7 +577,12 @@ You can also reset the RDE using the ellipsis button directly from the **Environ
 
 For more information about how to use Cloud Manager to manage your environments, see [the Cloud Manager documentation](/help/implementing/cloud-manager/manage-environments.md).
 
-## Commands that support JSON output (end of June)
+## Commands that support JSON output {#json-commands}
+
+>[!NOTE]
+>
+> These commands are not yet available. They will be rolled out sometime in June.
+> 
 
 Most commands support the global ```--json``` flag. This suppresses any console output and returns valid json to be processed in scripts.
 
@@ -977,9 +998,9 @@ Forms developers can use AEM Forms Cloud Service Rapid Development Environment t
 
 To learn about RDE in AEM as a Cloud Service, see the video tutorial that demonstrates [how to set it up, how to use it, and the development life cycle (01:25)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html).
 
-# Troubleshooting (end of June)
+# Troubleshooting
 
-## aio RDE plugin
+## aio RDE plugin {#aio-rde-plugin}
 
 ### errors regarding insufficient permissions
 
