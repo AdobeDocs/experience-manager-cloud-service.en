@@ -12,9 +12,9 @@ Cloud Service content requests are measured via server-side collection of data. 
 >[!NOTE]
 >We are excited to announce the GA rollout (Link to Release Notes) for client-side collection enabled via Real Use Monitoring service measurement. With the GA rollout, Adobe will start monitoring client-side traffic for it's customers automatically and there is no customer set up required. You can learn more by consulting the documentation in [this article](Update link).
 
-## Understanding Cloud Service Content Requests {#understaind-cloud-service-content-requests}
+## Understanding Cloud Service Content Requests {#understaing-cloud-service-content-requests}
 
-Content requests are automatically collected server-side at the edge of Adobe Experience Manager as a Cloud Service, via automated analysis of the log files originating from the AEM as a Cloud Service CDN. This is done by isolating the requests returning HTML `(text/html)` or JSON `(application/json)` content from the CDN, and based on several inclusion and exclusion rules detailed below. A content request occurs independently from the returned content being served from the CDN caches or the content going back to the origin of the CDN (AEM's dispatchers).
+Content requests are automatically collected server-side at the edge of Adobe Experience Manager as a Cloud Service, via automated analysis of the log files originating from the AEM as a Cloud Service CDN. This is done by isolating the requests returning HTML `(text/html)` or JSON `(application /Json)` content from the CDN, and based on several inclusion and exclusion rules detailed below. A content request occurs independently from the returned content being served from the CDN caches or the content going back to the origin of the CDN (AEM's dispatchers).
 
 The Real Use Monitoring service , the client-side collection, offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. This gives customers advanced insights into their page traffic and performance. While this is beneficial for both customers who use either the Adobe managed CDN or a non-Adobe managed CDN. In addition, automatic traffic reporting can now be enabled for customers using a non-Adobe managed CDN, thus removing the need to share any traffic reports with Adobe.
 
@@ -93,9 +93,9 @@ With Real Use Monitoring , key performance metrics are tracked right from the in
 
 RUM Data Service is beneficial for all customers whether utilising Adobe's, or their own CDN. It offers a representative reflection of user interactions, ensuring a reliable measure of website engagement by capturing the number of Page Views on the client-side. 
 
-For all Adobe customers ,  this service provides valuable insights into user interactions. For customers employing their own CDN they can benefit from simplified traffic reporting, as Adobe now directly integrates the Page Views, eliminating the need for separate reports during renewal cycles. 
+In particular, for Adobe CDN users,  this service provides valuable insights into user interactions. For customers employing their own CDN they can benefit from simplified traffic reporting, as Adobe now directly integrates the Page Views, eliminating the need for separate reports during renewal cycles. 
 
-Would you like to unlock the full potential of your website , then ask us for providing you access to our Early Adopter version of RUM Explorer platform! This cutting-edge tool can provide unparalleled insights into your page performance, including detailed metrics on the number of clicks, Core Web Vitals (CWV), conversions, and comprehensive customer journey maps. Discover where your traffic is coming from—whether it's referrals, search engines, or direct visits—and understand your audience better with data on user agents, including bots, desktops, and mobile devices. By utilizing these powerful insights, you can fine-tune your digital experiences to meet your users' needs more effectively. Don't miss out on this opportunity to elevate your web performance. Interested in learning more? Reach out to us at email  "xyz@adobe.com" today and start optimizing your digital strategy!
+Would you like to unlock the full potential of your website , then ask us for providing you access to our Early Adopter version of RUM Explorer platform! This cutting-edge tool can provide unparalleled insights into your page performance, including detailed metrics on the number of clicks, Core Web Vitals (CWV), conversions, and comprehensive customer journey maps. Discover where your traffic is coming from—whether it's referrals, search engines, or direct visits—and understand your audience better with data on user agents, including bots, desktops, and mobile devices. By utilizing these powerful insights, you can fine-tune your digital experiences to meet your users' needs more effectively. Don't miss out on this opportunity to elevate your web performance. Interested in learning more? Reach out to us at email  "aemcs-rum-adopter@adobe.com" today and start optimizing your digital strategy!
 
 ### Understand how the Real Use Monitoring Service Works {#understand-how-the-rum-service-works}
 
@@ -118,7 +118,7 @@ As the decision of whether the data will be collected is made on a page view by 
 The Real Use Monitoring service is designed to prevent the collection of personally identifiable information. The full set of information that can be collected by Adobe Experience Manager's Real Use Monitoring service is listed below:
 
 * The host name of the site being visited, for example: `experienceleague.adobe.com`
-* The broad user agent type that is used to display the page, such as: desktop or mobile
+* The broad user agent type and operating system that is used to display the page, such as: `desktop:windows` or `mobile:ios`
 * The time of the data collection, such as: `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
 * The URL of the page being visited, for instance: `https://experienceleague.adobe.com/docs`
 * The Referrer URL (the URL of the page that linked to the current page, if the user followed a link)
@@ -127,7 +127,7 @@ The Real Use Monitoring service is designed to prevent the collection of persona
 * The checkpoint, or name of a particular event in the sequence of loading the page or interacting with it as a visitor
 * The source, or identifier of the DOM element that the user interacts with for the checkpoint mentioned above. For instance, this could be an image
 * The target, or link to an external page or resource that the user interacts with for the checkpoint mentioned above. For example: `https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
-* The Core Web Vitals (CWV) performance metrics, the Largest Contentful Paint (LCP), First Input Delay (FID), and Cumulative Layout Shift (CLS) that describe the visitor's quality of experience.
+* The Core Web Vitals (CWV) performance metrics, including the Largest Contentful Paint (LCP), First Input Delay (FID), Cumulative Layout Shift (CLS), and Time To First Byte (TTFB) that describe the visitor's quality of experience.
 
 ### How Real Use Monitoring Works for a customer
 
@@ -151,7 +151,7 @@ As you will analyze this data, there might or might not be variances in page vie
 
 1. **Limitations in capturing API/JSON calls**
 
-   * RUM data service focuses on the client-side experience and doesn't capture the backend API or JSON calls at this time. The exclusion of these calls from Real User Monitoring service data will create variances from the content requests measured by CDN Analytics.
+   * RUM data service focuses on the client-side experience and doesn't capture the backend API or JSON calls made from a non-AEM headless app at this time. The exclusion of these calls from Real User Monitoring service data will create variances from the content requests measured by CDN Analytics.
 
 ### FAQ {#faq}
 
@@ -172,3 +172,7 @@ Opting out means missing out on these powerful insights. However, if you encount
 1. **Are "Interaction to next paint", "Time to first byte" and "First contentful paint" Web vitals Metrics being collected?**
 
    Interaction to next paint (INP) and Time to first byte (TTFB) are collected.  First contentful paint is not collected at this time.
+   
+1. **The `/.rum` path is blocked on my site, how should I fix?**
+
+   The `/.rum` path is required for RUM collection to work.  If you have a CDN in front of what Adobe provides as part of AEM as a Cloud Service, you'll need to ensure that the `/.rum` path forwards to the same AEM origin as the rest of your AEM content.
