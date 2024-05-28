@@ -66,6 +66,14 @@ Upon creation, RDEs are set to the most recently available AEM version. An RDE r
 
 For more information about using Cloud Manager to create environments, manage who has access to them, and assign custom domains, see [the Cloud Manager documentation](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
+## Installing the RDE Command-Line Tools {#installing-the-rde-command-line-tools}
+
+After you have added an RDE for your program using Cloud Manager, you can interact with it by setting up the command-line tools as described in the following steps:
+
+>[!IMPORTANT]
+>
+>Make sure you have the latest version of [Node and NPM installed](https://nodejs.org/en/download/) for Adobe I/O CLI and related plugins to work properly.
+
 ## Installing the RDE Command-Line Tools {#installing-the-rde-command-line-tools} 
 
 1. Install the Adobe I/O CLI tools according by following the procedure [here](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
