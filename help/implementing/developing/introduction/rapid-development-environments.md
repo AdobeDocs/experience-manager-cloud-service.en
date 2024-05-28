@@ -74,8 +74,6 @@ After you have added an RDE for your program using Cloud Manager, you can intera
 >
 >Make sure you have the latest version of [Node and NPM installed](https://nodejs.org/en/download/) for Adobe I/O CLI and related plugins to work properly.
 
-## Installing the RDE Command-Line Tools {#installing-the-rde-command-line-tools} 
-
 1. Install the Adobe I/O CLI tools according by following the procedure [here](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 1. Install the Adobe I/O CLI tools cloud manager plugin, and configure them as described [here](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 1. Install the Adobe I/O CLI tools AEM RDE plugin by running these commands:
@@ -111,9 +109,10 @@ After you have added an RDE for your program using Cloud Manager, you can intera
    1. Org: <no org selected>
    2. Project: <no project selected>
    3. Workspace: <no workspace selected>
+   4. 
    ```
-
-   This step requires you to be a member of the Cloud Manager **Developer - Cloud Service** Product Profile. See [this page](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) for more details.
+   
+This step requires you to be a member of the Cloud Manager **Developer - Cloud Service** Product Profile. See [this page](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) for more details.
 
    Alternatively, you can confirm that you have this developer role if you can log in to the developer console by running this command:
 
@@ -126,11 +125,13 @@ After you have added an RDE for your program using Cloud Manager, you can intera
    >```
    >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
    >```
+
 1. Verify that the login was completed successfully by running
 
    `aio cloudmanager:list-programs`
 
    This should list all programs under your configured organization.
+
 
 For more information and demonstration, watch the video tutorial [how to set up an RDE (06:24)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html).
 
