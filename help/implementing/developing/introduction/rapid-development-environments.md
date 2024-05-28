@@ -136,7 +136,7 @@ After you have added an RDE for your program using Cloud Manager, you can intera
    
 For more information and demonstration, watch the video tutorial [how to set up an RDE (06:24)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html).
 
-## Installing the RDE Command-Line Tools {#installing-the-rde-command-line-tools} (end of June)
+## Installing the RDE Command-Line Tools (end of June) {#installing-the-rde-command-line-tools}
 
 After you have added an RDE for your program using Cloud Manager, you can interact with it by setting up the command-line tools as described in the following steps:
 
@@ -244,6 +244,7 @@ However, with careful coordination, it is possible for more than one developer t
   
   
 ### new run modes (end of June)
+
 * For a less verbose output, use the quiet mode:
 
   `aio aem rde <command> --quiet`
@@ -486,7 +487,7 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 
 For more information and demonstration, see the video tutorial [how to use RDE commands (10:01)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html).
 
-## Logs {#tail-logs-from-rde} (end of June)
+## Logs (end of June){#tail-logs-from-rde}
 
 Using the logs command, the user can tail live logs of an RDE directly in his CLI. Ther can be up to four concurrent log configurations be active on an RDE. Once a fifth log configuration is added, an old one has to be replaced. 
 
@@ -1008,7 +1009,7 @@ If not mentioned differently, all APIs prefix with ```/program/${programId}/envi
 
 ```serviceName```is ```author``` or ```publisher```
 
-| Operation | API  | Product Profile(s) 
+| Operation | API  | Product Profile(s) |
 | :----- | :--- | :--- |
 | get AEM logs | GET /runtime/${serviceName}/logs | [Developer - Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access) |
 | get AEM log | GET /runtime/${serviceName}/logs/${id} | [Developer - Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access) |
