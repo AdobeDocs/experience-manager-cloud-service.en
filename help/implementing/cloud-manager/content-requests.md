@@ -18,7 +18,7 @@ Content requests are automatically collected server-side at the edge of Adobe Ex
 
 The Real Use Monitoring service , the client-side collection, offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. This gives customers advanced insights into their page traffic and performance. While this is beneficial for both customers who use either the Adobe managed CDN or a non-Adobe managed CDN. In addition, automatic traffic reporting can now be enabled for customers using a non-Adobe managed CDN, thus removing the need to share any traffic reports with Adobe.
 
-For customers that bring their own CDN on top of AEM as a Cloud Service, server-side reporting will result in numbers that cannot be used to compare with the licensed content requests. These numbers will have to be measured by the customer at the edge of the outer CDN. For these customers, client-side reporting and associated performance, the [Adobe RUM Data Service](#real-user-monitoring-for-aem-as-a-cloud-service) is the Adobe recommended option. See the [release notes](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-early-adopter) for the information on how to opt-in.
+For customers that bring their own CDN on top of AEM as a Cloud Service, server-side reporting will result in numbers that cannot be used to compare with the licensed content requests. With Real Use Monitoring GA roll-out(see link), customers can benefit from simplified traffic reporting, as Adobe now directly integrates the Page Views, eliminating the need for separate reports during renewal cycles. 
 
 ## Server-side Collection {#serverside-collection}
 
