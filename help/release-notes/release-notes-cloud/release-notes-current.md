@@ -199,6 +199,10 @@ Similar to AEM 6.5, Apache/dispatcher will ingest rewrite maps placed in a speci
 
 The Adobe Managed CDN now supports [Edge Side Includes (ESI)](/help/implementing/dispatcher/edge-side-includes.md), a markup language for edge level dynamic web content assembly. By including ESI snippets, you can cache the overall HTML page at the CDN with higher TTLs, while more frequently fetching from origin those smaller sections that require higher cadence updates (lower TTLs). <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
+## [!DNL Experience Manager] Guides {#guides}
+
+You can find a complete list of new and enhanced features of the 2024.5.0 release of Adobe Experience Manager Guides [here](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0).
+
 ## Cloud Manager {#cloud-manager}
 
 You can find a complete list of Cloud Manager monthly releases [here](/help/implementing/cloud-manager/release-notes/current.md).
