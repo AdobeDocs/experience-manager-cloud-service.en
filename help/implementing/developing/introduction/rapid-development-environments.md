@@ -910,7 +910,7 @@ To learn about RDE in AEM as a Cloud Service, see the video tutorial that demons
 
 ### errors regarding insufficient permissions
 
-To use the RDE plugn, it requires you to be a member of the Cloud Manager **Developer - Cloud Service** Product Profile. See [this page](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) for more details.
+To use the RDE plugin, it requires you to be a member of the Cloud Manager **Developer - Cloud Service** Product Profile. See [this page](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) for more details.
 
 Alternatively, you can confirm that you have this developer role if you can log in to the developer console by running this command:
 
