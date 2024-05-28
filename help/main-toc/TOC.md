@@ -209,6 +209,7 @@ user-guide-title: AEM as a Cloud Service
     + [Create Environments](/help/journey-onboarding/create-environments.md)
     + [Assigning AEM Product Profiles](/help/journey-onboarding/assign-profiles-aem.md)
     + [Developer and Deployment Manager Tasks](/help/journey-onboarding/developers.md)
+    + [Managing Principals](/help/journey-migration/managing-principals.md)
     + [AEM User Tasks](/help/journey-onboarding/aem-users.md)
     + [Go-Live Checklist](/help/journey-onboarding/go-live-checklist.md)
   + AEM Reference Demos Add-On Journey {#demo-add-on}
@@ -261,13 +262,14 @@ user-guide-title: AEM as a Cloud Service
       + [Validating Content Transfers](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
       + [Migrating Closed User Groups](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)
       + [Handling Large Content Repositories](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
-      + [User Mapping and Principal Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)
+      + [Group Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)
       + [Extracting Content from Source](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
       + [Ingesting Content into Cloud Service](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
       + [Indexing after Migrating Content](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md)
       + [Viewing Logs for a Migration Set](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
       + [Deleting a Migration Set](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
       + [Running the Content Transfer Tool on a Publish Instance](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
+      + [Managing Principals After Migration](/help/journey-migration/managing-principals-after-migration.md)
       + [Troubleshooting Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
       + Legacy User Mapping Tool (Legacy){#legacy-user-mapping-tool}
         + [Overview](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)

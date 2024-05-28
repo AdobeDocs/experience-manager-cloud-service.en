@@ -1,42 +1,26 @@
 ---
-title: Managing Principals after Migration
-description: Learn how to set up users and groups in IMS and AEM
+title: Managing Principals
+description: Managing Principals for Migration, using Admin Console
+exl-id: 
 ---
-# Managing Principals after Migration {#managing-principals}
+
+# Managing Principals {#managing-principals}
 
 >[!CONTEXTUALHELP]
->id="managing-principals"
->title="Managing Principals after Migration"
->abstract="Learn how to set up users and groups in IMS and AEM"
+>id="aemcloud_ctt_managingprincipals"
+>title="Managing Principals"
+>abstract="Learn what needs to be done to manage users during or after a content migration"
 
-This document describes high level steps customers should take to set up their users and groups in IMS and AEM to work with their AEM as a Cloud Service environment.
+Before the content is transferred to the AEM as a Cloud Service cloud environment, there are a few tasks that can be carried out on the Admin Console.  They are: create users, create groups, and assign users to groups; these users and groups will exist in in IMS, Adobe's Identity Management Service, which is used to manage users and groups for all Adobe cloud-based services.
 
-## After Migration {#after-migration}
+### Creating Groups and their Users in Admin Console
 
-Once the content is migrated to the AEM as a Cloud Service environment, users of the AEM authoring system must be created and given access to the content. This is done by following these steps.
+[Using Admin Console for AEM Principals](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/ims-support#how-to-set-up) provides detailed instructions on how to create users and groups in IMS, and how to add the users to the groups at the same time or later.  The document includes three options for creating them: Manually through the Admin Console, via CSV upload through the Admin Console, and via a User Sync Tool.  
 
-* Create Users and Groups in IMS
-* Assign Users to Groups in IMS
-* Assign IMS groups to AEM groups
+The manual option lets you create one group or user at a time; the CSV upload allows you do create and link several user and groups at once; and the User Sync Tool lets you use an existing IDP to
 
-### Creating Users and Groups in IMS
+Once a user uses IMS to log into AEM, an AEM representation of the user will be created.  Furthermore, any IMS groups the user is in will have equivalent AEM groups created in AEM.  These IMS-created AEM users and groups are still mainly managed using the Admin Console.
 
-The documents linked below provide detailed instructions on how to create users and groups in IMS, including three options for creating them: Manually through the Admin Console, via CSV upload through the Admin Console, and via a User Sync Tool.
+After the content migration is complete, IMS groups will typically need to have some additional configuration on them so that users can access the migrated content.  See [Migrating Principals After Migration](/help/journey-migration/managing-principals-after-migration.md)
 
-### Assigning Users to Groups in IMS
-
-Use the Admin Console, manually or via CSV upload, to add IMS users to IMS groups.  See the links below for further instructions.
-
-Once a user uses IMS to log into AEM, an AEM version of the user will be created.  Furthermore, any IMS groups the user is in will have equivalent AEM groups created in AEM.  These AEM users and groups are still managed using the Admin Console.
-
-### Assigning IMS Groups to AEM Groups in AEM
-
-Use the AEM Security UI to assign IMS groups to AEM groups.  
-
-AEM local groups are typically those that have been migrated along with the content.  AEM local groups are referred to in Access Control Lists of content to give their members access to that content; assigning an IMS group to an AEM local group passes on the access to its member IMS group and to that group's members (users and/or groups).  It is via this membership chaining that a specific user can have access to specific AEM content.  (link??)
-
-
-See [Using Admin Console for AEM Principals](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/ims-support#how-to-set-up) to learn more about how Admin Console is used for managing users and groups.
-
-See [Tutorial, AEM users, groups and permissions](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions) to learn more about how AEM and IMS users and groups are integrated and administered.
-
+See also [Tutorial, AEM users, groups and permissions](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions) to learn more about how AEM and IMS users and groups are integrated and administered.
