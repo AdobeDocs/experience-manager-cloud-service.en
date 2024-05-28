@@ -25,7 +25,7 @@ None.
 
 None.
 
-### Deprecated Features and APIs {#deprecated-16461}
+### Deprecated Features and APIs {#deprecated-X}
 
 To know what is deprecated or removed in AEM as a Cloud Service, see [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md).
 
