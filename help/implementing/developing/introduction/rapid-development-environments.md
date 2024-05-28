@@ -136,7 +136,7 @@ After you have added an RDE for your program using Cloud Manager, you can intera
    
 For more information and demonstration, watch the video tutorial [how to set up an RDE (06:24)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html).
 
-## Installing the RDE Command-Line Tools (end of June) {#installing-the-rde-command-line-tools}
+## Installing the RDE Command-Line Tools (end of June) {#installing-the-rde-command-line-tools-june}
 
 After you have added an RDE for your program using Cloud Manager, you can interact with it by setting up the command-line tools as described in the following steps:
 
