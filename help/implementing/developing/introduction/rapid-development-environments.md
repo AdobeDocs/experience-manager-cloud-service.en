@@ -929,3 +929,24 @@ Verify that the login was completed successfully by running
    `aio cloudmanager:list-programs`
 
    This should list all programs under your configured organization and confirm that you have the correct role assigned.
+
+## Detailed Permission Information
+
+If not mentioned differently, all APIs prefix with ```/program/${programId}/environment/${environmentId}```
+
+```serviceName```is ```author``` or ```publisher```
+
+| Operation | API  | Product Profile(s) 
+| :----- | :--- | :--- |
+| get AEM logs | GET /runtime/${serviceName}/logs | [Developer - Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access) |
+| get AEM log | GET /runtime/${serviceName}/logs/${id} | [Developer - Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access) |
+| tail AEM log | GET /runtime/${serviceName}/logs/${id}/tail | [Developer - Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access) |
+| create AEM logs | POST /runtime/${serviceName}/logs | [Developer - Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access) |
+| delete AEM log | DEL /runtime/${serviceName}/logs/${id} | [Developer - Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access) |
+| get changes | GET /runtime/updates | [Developer - Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access) |
+| get change | GET /runtime/updates/${id} | [Developer - Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access) |
+| get logs of change | GET /runtime/updates/${id}/logs | [Developer - Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access) |
+| get status | GET /runtime/updates/artifacts | [Developer - Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access) |
+| install artifact | PUT /runtime/updates/${id} | [Developer - Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access) |
+| delete artifact | DEL /runtime/updates/artifacts/${id} | [Developer - Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access) |
+| reset | called on cloud manager (CM) | see [resetRDE](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/#detailed-permission-information) | 
