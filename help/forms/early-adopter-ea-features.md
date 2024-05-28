@@ -16,7 +16,7 @@ The AEM Forms Early Adopter Program program offers a unique opportunity to you t
 
 ## How to join the Early Adopter program? 
 
-If you're interested in joining our Early Adopter program for any early adopter innovation, simply send an email from your official address to aem-forms-ea@adobe.com to request access. You can request access to all or any specific innovation.  
+If you're interested in joining our Early Adopter program for any early adopter innovation, simply send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  to request access. You can request access to all or any specific innovation.  
 
 
 ## Early Adopter Innovations 
@@ -148,6 +148,15 @@ Here's a breakdown of what Doc Assurance APIs can do:
     When PDF documents have the appropriate usage rights added, recipients can do enabled activities from within Adobe Reader. 
 
 Overall, [Doc Assurance APIs](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) help you improve document security and compliance by adding an extra layer of control.
+
+
+### Forms Service APIs
+
+Forms Service APIs acts as an engine that takes form designs and data, and generates interactive PDF forms for users for data capture purposes. It can also extract the filled information and integrate it with other systems. Here's a breakdown of its functionalities:
+
+* **Rendering Forms**: It can render PDF forms based on templates you design in AEM Forms Designer and data stored in XML format. This essentially creates an interactive fillable form from the static template.
+* **Data Extraction and Import**: The Forms Service can both extract data filled out in a PDF form and import data into existing PDF forms. The data is typically formatted in XML for processing.
+* **Fragment-Based Rendering**: It allows you to render forms partially, based on specific sections or fragments designed in AEM Forms Designer. This can be useful for building modular forms or dynamically showing sections based on user input.
 
 
 
