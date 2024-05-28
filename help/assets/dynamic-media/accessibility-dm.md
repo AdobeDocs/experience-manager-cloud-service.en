@@ -1,6 +1,6 @@
 ---
 title: Accessibility in Dynamic Media
-description: Learn how to work with video in Dynamic Media such as best practices for encoding videos, publishing videos to YouTube, and viewing video reports. Also learn how to add closed captioning, subtitles, or chapter markers to videos.
+description: Learn how to work with video in Dynamic Media such as best practices for encoding videos, publishing videos to YouTube, and viewing video reports. Also learn how to add closed captioning, captions, or chapter markers to videos.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
@@ -58,7 +58,7 @@ See the **Assistive technology support** Help topic in any customizing viewer to
 
 Dynamic Media supports the delivery of videos and adaptive video sets with closed captioning. The captions must be displayed on top of the video content.
 
-See [Video in Dynamic Media - Add closed captions or subtitles to video](/help/assets/dynamic-media/video.md#adding-captions-to-video).
+See [Video in Dynamic Media - Add closed captions to video](/help/assets/dynamic-media/video.md#adding-captions-to-video).
 
 
 >[!MORELIKETHIS]
