@@ -74,7 +74,7 @@ Agent: skyline-service-warmup/1.*|
 | Exclude `manifest.json` | Excluded | Manifest is not an API call, it is here to provide information on how to install web sites on desktop or mobile phone. Adobe should not count JSON request to `/etc.clientlibs/*/manifest.json`|
 | Exclude `favicon.ico` | Excluded | While the returned content should not be HTML or JSON, we are observing that in some scenarios like SAML authentication flows, favicons can be returned as HTML therefore are explicitly excluded from the count.|
 
-## Client-side Collection {#cliendside-collection}
+## Client-side Collection {#client-side collection}
 
 ### Real Use Monitoring Service for AEM as a Cloud Service {#real-use-monitoring-service-for-aem-as-a-cloud-service}
 
