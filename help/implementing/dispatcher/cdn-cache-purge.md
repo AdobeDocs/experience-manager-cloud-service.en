@@ -5,6 +5,9 @@ feature: Dispatcher
 ---
 # Purging the CDN cache {#cdn-purge-cache}
 
+>[!NOTE]
+>This feature is not yet generally available. To join the early-adopter program, email `aemcs-cdn-config-adopter@adobe.com`.
+
 Purging removes an object from the Adobe CDN cache, prompting future requests that would otherwise hit that cached object to proceed to origin as a cache miss.
 AEM as a Cloud Service allows you to configure a Purge API Token, which can then be used in API calls. See link TBD  to learn how to configure this token by using the Cloud Manager Configuration Pipeline Authentication directives.
 
