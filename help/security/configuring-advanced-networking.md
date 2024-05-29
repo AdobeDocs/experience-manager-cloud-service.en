@@ -786,3 +786,15 @@ The procedure is mostly similar to the previous instructions. However, if the pr
 #### VPN {#vpn-regions}
 
 The procedure is nearly identical to the dedicated egress IP addresses instructions. The only difference is that in addition to the region property being configured differently from the primary region, the `connections.gateway` field can optionally be configured. The configuration can route to a different VPN endpoint operated by your organization, geographically closer to the new region.
+
+## Troubleshooting
+
+Please be advised that the following points are provided as informative guidelines and encompass best practices for troubleshooting. These recommendations are intended to assist in effectively diagnosing and resolving issues.
+
+### Connection pooling {#connection-pooling-advanced-networking}
+
+Connection pooling is a technique tailored to create and sustain a repository of connections, which stand ready for immediate use by any thread that may require them. Numerous connection pooling techniques can be found across various online platforms and resources, each with its unique merits and considerations. We encourage our customers to investigate these methodologies to identify the one most compatible with their system's architecture.
+
+Implementing an appropriate connection pooling strategy is a proactive measure to correct a common oversight in system configuration, which often leads to suboptimal performance. By correctly establishing a connection pool, Adobe Experience Manager (AEM) can improve the efficiency of external calls. This not only reduces resource consumption but also mitigates the risk of service disruptions and decreases the probability of encountering failed requests when communicating with upstream servers.
+
+In light of this information, Adobe advises reassessing your current AEM configuration and consider the deliberate incorporation of connection pooling in conjunction with Advanced Networking settings. By managing the number of parallel connections and minimizing the possibility of stale connections, these measures lead to a reduction in the risk of proxy servers reaching their connection limits. Consequently, this strategic implementation is designed to decrease the likelihood of requests failing to reach external endpoints.
