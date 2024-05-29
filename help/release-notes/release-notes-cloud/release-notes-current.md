@@ -149,6 +149,8 @@ Receive proactive notifications when traffic patterns at the origin are indicati
 
 [Rapid Development Environments (RDEs)](/help/implementing/developing/introduction/rapid-development-environments.md) now support front-end code based on [site themes](/help/sites-cloud/administering/site-creation/site-themes.md) and [site templates](/help/sites-cloud/administering/site-creation/site-templates.md), for early adopters. With RDEs, this is done using a command line directive, rather than a [front-end pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
 
+This feature will be rolled out in June.
+
 ### Enhanced logging for RDEs {#rde-logging}
 
 While debugging code in a [Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md), developers can now configure and stream logs more efficiently, using the command line, and without modifying OSGI properties in version control. Features include:
@@ -156,6 +158,8 @@ While debugging code in a [Rapid Development Environment (RDE)](/help/implementi
 * declare log levels on a per package or class level
 * customize the log output format
 * stream multiple logs in parallel 
+
+This feature will be rolled out in June.
 
 ### RDE CLI enhancements {#rde-cli-enhancements}
 
@@ -165,19 +169,22 @@ The [Rapid Development Environment (RDE)](/help/implementing/developing/introduc
 * quiet mode
 * json mode
 
+This feature will be rolled out in June.
+
+
 ### Early Adopter Programs {#foundation-early-adopter}
 
 Email **<aemcs-cdn-config-adopter@adobe.com>**, indicating which of the early adopter programs below you are interested in.
 
 #### Purge content at the CDN with a self-serve API key (Early Adopter Program) {#purge-cdn}
 
-Register a CDN purge API key in a self-service way, and use it to invalidate content at the CDN, either globally, or for one or more resources.  
+Register a CDN purge API key in a self-service way, and use it to invalidate content at the CDN, either globally, or for one or more resources. [Learn more](/help/implementing/dispatcher/cdn-cache-purge.md).  
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
-#### Self-serve creation of X-AEM-Edge-Key for BYOCDN (Early Adopter Program) {#purge-cdn-2}
+#### Self-serve creation of X-AEM-Edge-Key for customer-managed CDN (BYOCDN) (Early Adopter Program) {#purge-cdn-2}
 
-Previously, a support ticket was needed to generate the X-AEM-Edge-Key required for configuration of a customer-managed CDN. This can now be accomplished in a self-serve way through a configuration file that is deployed using the Configuration Pipeline, removing any delay in onboarding a new environment.  
+Previously, a support ticket was needed to generate the X-AEM-Edge-Key required for configuration of a customer-managed CDN. This can now be accomplished in a self-serve way through a configuration file that is deployed using the Configuration Pipeline, removing any delay in onboarding a new environment. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
