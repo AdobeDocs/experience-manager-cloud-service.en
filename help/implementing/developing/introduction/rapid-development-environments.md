@@ -11,6 +11,9 @@ RDEs allow developers to swiftly deploy and review changes, minimizing the amoun
 
 Once the changes have been tested in an RDE, they can be deployed to a regular Cloud Development environment through the Cloud Manager pipeline.
 
+>[!NOTE]
+> Get in touch with the RDE developers on our [Discord channel](https://discord.com/channels/1131492224371277874/1245304281184079872). Feel free to ask any questions or give feedback regarding RDE topics.
+
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
