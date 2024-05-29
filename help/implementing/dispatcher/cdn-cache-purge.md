@@ -8,8 +8,8 @@ feature: Dispatcher
 >[!NOTE]
 >This feature is not yet generally available. To join the early-adopter program, email `aemcs-cdn-config-adopter@adobe.com`.
 
-Purging removes an object from the Adobe CDN cache, prompting future requests that would otherwise hit that cached object to proceed to origin as a cache miss.
-AEM as a Cloud Service allows you to configure a Purge API Token, which can then be used in API calls. See link TBD  to learn how to configure this token by using the Cloud Manager Configuration Pipeline Authentication directives.
+Purging removes an object from the Adobe CDN cache, resulting in future requests proceeding to the origin as a cache miss, rather than being served from cache.
+AEM as a Cloud Service allows you to configure a Purge API Token, which can then be used in API calls. Read the [Configuring CDN Credentials and Authentication article](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) to learn how to configure this token using the Cloud Manager Configuration Pipeline Authentication directives.
 
 There are three supported purging variations:
 
@@ -17,11 +17,14 @@ There are three supported purging variations:
 * [Purge by surrogate key](#surrogate-key-purge) - purge multiple resources at one time.
 * [Full purge](#full-purge) - purge all resources.
 
-All purging variations share the following:
+All purge variations share the following:
 
 * The HTTP method must be set to `PURGE`.
 * The URL can be any domain associated with the AEM service that the purge request is intended for.
 * The `X-AEM-Purge-Key` must be provided in a HTTP header.
+
+>[!CAUTION]
+>Purging the CDN cache, especially with the hard flag, will increase traffic at the origin and could lead to an outage when not executed properly.
 
 ## Single URL purge {#single-purge}
 
@@ -31,10 +34,12 @@ You can purge a single resource at a time as follows:
 curl
 -X PURGE "https://publish-p1234-e5467.adobeaemcloud.com/resource-path" \
 -H 'X-AEM-Purge-Key: <my_purge_key>' \
--H 'X-AEM-Purge: soft' #optional
+-H 'X-AEM-Purge: soft'
 ```
 
-As shown in the example above, you can **optionally** specify if the CDN should perform a hard purge (default) or a soft purge on the cached objects. The default is a hard purge, which makes the content immediately inaccessible to new requests until the content is retrieved from the origin. This can be configured to be a soft purge,which marks content as stale, but it is still served to clients so they do not need to wait until the content is retrieved from the origin.
+As shown in the example above, you can **optionally** specify if the CDN should perform a **hard** purge (default) or a **soft** purge on the cached objects. 
+
+The default hard purge makes the content immediately inaccessible to new requests until the content is retrieved from the origin. Soft purge marks content as stale, but still serves it to clients so they do not need to wait until the content is retrieved from the origin.
 
 ## Surrogate key purge {#surrogate-key-purge}
 
@@ -48,7 +53,7 @@ curl
 -H "X-AEM-Purge: soft" #optional
 ```
 
-The `Surrogate-Key`(s) are separated by space. Similarly to the single URL purge, you can configure either a hard or a soft purge.
+The `Surrogate-Key`(s) are separated by spaces. Similarly to the single URL purge, you can configure either a hard or a soft purge.
 
 ## Full purge {#full-purge}
 
@@ -62,3 +67,8 @@ curl
 ```
 
 Be aware that the `X-AEM-Purge` header must include the 'all' value.
+
+## Interactions with Apache/Dispatcher layer {#apache-layer}
+
+As described in the [Content Delivery Flow article](/help/implementing/dispatcher/overview.md), the CDN retrieves content from the Apache/Dispatcher layer, if the cache has expired. This implies that before purging a resource at the CDN, you should ensure that a fresh version of the content is also available at the Dispatcher. Learn more about [Dispatcher Cache Invalidation](/help/implementing/dispatcher/caching.md#disp).
+
