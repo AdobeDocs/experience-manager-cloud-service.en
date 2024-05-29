@@ -92,7 +92,7 @@ The syntax in the example above includes:
 * Authenticators: Lets you declare a type of token or credential, which in this case is an purge key. It includes the following properties:
   * name - a descriptive string.
   * type - must be purge.
-  * purgeKey1 - its value must reference a secret token, which should not be stored in git, but rather declared as a [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md) of type secret. For the Service Applied field, select publish and/or preview, depending on which tiers the Purge Key should be valid. It is recommended that the value (i.e. ${{CDN_PURGEKEY_031224}}) reflects the day it was added.
+  * purgeKey1 - its value must reference a secret token, which should not be stored in git, but rather declared as a [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md) of type secret. For the Service Applied field, select publish and/or preview, depending on which tiers the Purge Key should be valid. It is recommended that the value i.e. `${{CDN_PURGEKEY_031224}}` reflects the day it was added.
   * purgeKey2 - used for rotation of secrets, which is described in the link tbd section below. At least one of `purgeKey1` and `purgeKey2` must be declared.
 
 >[!NOTE]
@@ -136,7 +136,7 @@ experimental_authentication:
 
 ```
 
-* When it's time to rotate the key, create a new Cloud Manager secret, for example ${{CDN_EDGEKEY_041425}}.
+* When it's time to rotate the key, create a new Cloud Manager secret, for example `${{CDN_EDGEKEY_041425}}`.
 * In the configuration, reference it from `edgeKey2` and deploy.
 
 ```
@@ -161,4 +161,4 @@ experimental_authentication:
 ```
 
 * Delete the old secret reference (`${{CDN_EDGEKEY_052824}}`) from Cloud Manager and deploy.
-* When ready for the next rotation, follow the same procedure, however this time you will add edgeKey2 to the configuration, referencing a new Cloud Manager environment secret named, for example, ${{CDN_EDGEKEY_031426}}.
+* When ready for the next rotation, follow the same procedure, however this time you will add edgeKey2 to the configuration, referencing a new Cloud Manager environment secret named, for example, `${{CDN_EDGEKEY_031426}}`.
