@@ -93,7 +93,7 @@ With Real Use Monitoring , key performance metrics are tracked right from the in
 
 RUM Data Service is beneficial for all customers whether utilising Adobe's, or their own CDN. It offers a representative reflection of user interactions, ensuring a reliable measure of website engagement by capturing the number of Page Views on the client-side. 
 
-In particular, for Adobe CDN users,  this service provides valuable insights into user interactions. For customers employing their own CDN they can benefit from simplified traffic reporting, as Adobe now directly integrates the Page Views, eliminating the need for separate reports during renewal cycles. 
+For all Adobe customers, this service provides valuable insights into user interactions. For customers employing their own CDN they can benefit from simplified traffic reporting, as Adobe now directly integrates the Page Views, eliminating the need for separate reports during renewal cycles. 
 
 Would you like to unlock the full potential of your website , then ask us for providing you access to our Early Adopter version of RUM Explorer platform. This tool can provide insights into your page performance, including metrics on the number of clicks, Core Web Vitals (CWV), conversions, and customer journey maps. By utilizing these powerful insights, you can fine-tune your digital experiences to meet your users' needs more effectively.Interested in learning more? Reach out to us at email  "xyz@adobe.com" today and start optimizing your digital strategy!
 
