@@ -1175,6 +1175,7 @@ user-guide-title: AEM as a Cloud Service
     + [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
     + [Configuring Traffic at the CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md)
     + [Edge Side Includes](/help/implementing/dispatcher/edge-side-includes.md)
+    + [Configuring CDN Credentials and Authentication](/help/implementing/dispatcher/cdn-credentials-authentication.md)
     + [Configuring CDN error pages](/help/implementing/dispatcher/cdn-error-pages.md)
     + [Caching in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md)
 + Connectors {#connectors}
