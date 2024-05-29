@@ -235,7 +235,11 @@ Considerations:
 
 ## Advanced Networking {#advanced-networking}
 
-If you have organizational requirements to lock down traffic to your logging destination, you can configure log forwarding to go through [advanced networking](/help/security/configuring-advanced-networking.md). See the patterns for the three advanced networking types below, which make use of an optional `port` parameter, along with the `host` parameter.
+It is possible lock to configure traffic to your logging destination.
+
+For the CDN log, you can allow-list the IP addresses, as described in [this article](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/).
+
+For other logs, you can configure log forwarding to go through [advanced networking](/help/security/configuring-advanced-networking.md). See the patterns for the three advanced networking types below, which make use of an optional `port` parameter, along with the `host` parameter.
 
 ### Flexible Port Egress {#flex-port}
 
