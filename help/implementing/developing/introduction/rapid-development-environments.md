@@ -248,26 +248,26 @@ However, with careful coordination, it is possible for more than one developer t
   `aio aem rde <command> --help`
   
   
-### run modes variations {#run-mode-variations}
+### global flags {#global-flags}
 
 >[!NOTE]
 >
-> These run modes are not yet available. They will be rolled out sometime in June.
+> These global flags are not yet available. They will be rolled out sometime in June.
 > 
 
-* For a less verbose output, use the quiet mode:
+* For a less verbose output, use the quiet flag:
 
   `aio aem rde <command> --quiet`
   
   This removes certain user information like spinners, progress bars and tries to avoid user input.
   
-* For JSON instead of console log output, type:
+* For JSON instead of console log output, use the json flag:
   
   `aio aem rde <command> --json`
   
-  This returns valid JSON while suppressing any console output. See below for JSON examples.
+  This returns valid JSON while suppressing any console output. See further below for JSON examples.
   
-* To avoid configuring the RDE connection information using the setup command, or any aio config creation, type:
+* To avoid configuring the RDE connection information using the setup command, or any aio config creation, use the three flags for organization, program and environment:
   
   `aio aem rde <command> --organizationId=<value> --programId=<value> --environmentId=<value>`
   
@@ -1024,23 +1024,8 @@ Verify that the login was completed successfully by running
 
    This should list all programs under your configured organization and confirm that you have the correct role assigned.
 
-## Detailed Permission Information
+## Permission Information
 
-If not mentioned differently, all APIs prefix with ```/program/${programId}/environment/${environmentId}```
-
-```serviceName```is ```author``` or ```publisher```
-
-| Operation | API  | Product Profile(s) |
-| :----- | :--- | :--- |
-| get AEM logs | GET /runtime/${serviceName}/logs | [Developer - Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access) |
-| get AEM log | GET /runtime/${serviceName}/logs/${id} | [Developer - Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access) |
-| tail AEM log | GET /runtime/${serviceName}/logs/${id}/tail | [Developer - Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access) |
-| create AEM logs | POST /runtime/${serviceName}/logs | [Developer - Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access) |
-| delete AEM log | DEL /runtime/${serviceName}/logs/${id} | [Developer - Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access) |
-| get changes | GET /runtime/updates | [Developer - Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access) |
-| get change | GET /runtime/updates/${id} | [Developer - Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access) |
-| get logs of change | GET /runtime/updates/${id}/logs | [Developer - Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access) |
-| get status | GET /runtime/updates/artifacts | [Developer - Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access) |
-| install artifact | PUT /runtime/updates/${id} | [Developer - Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access) |
-| delete artifact | DEL /runtime/updates/artifacts/${id} | [Developer - Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access) |
-| reset | called on cloud manager (CM) | see [resetRDE](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/#detailed-permission-information) | 
+To execute any of the commands in the ```aio aem rde``` plugin, the user must own certain product profile roles:
+1. Reset command: see [resetRDE](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/#detailed-permission-information) on cloud manager
+1. All others: [Developer - Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access)
