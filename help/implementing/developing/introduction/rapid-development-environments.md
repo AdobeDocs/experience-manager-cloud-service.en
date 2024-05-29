@@ -1023,9 +1023,3 @@ Verify that the login was completed successfully by running
    `aio cloudmanager:list-programs`
 
    This should list all programs under your configured organization and confirm that you have the correct role assigned.
-
-## Permission Information
-
-To execute any of the commands in the ```aio aem rde``` plugin, the user must own certain product profile roles:
-1. Reset command: see [resetRDE](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/#detailed-permission-information) on cloud manager
-1. All others: [Developer - Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access)
