@@ -19,7 +19,7 @@ Each of these, including the configuration syntax, is described in its own secti
 
 As described in the [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) page, customers may choose to route traffic through their own CDN, which is referred to as the Customer CDN (also sometimes called BYOCDN).
 
-As part of the setup, the Adobe CDN and the Customer CDN must agree upon a value of the `X-AEM-Edge-Key` HTTP Header. This value is set on each request, at the Customer CDN, before it is routed to the Adobe CDN, which then validates that the value is as expected, so it can trust other HTTP headers, including those that help route the request to the appropriate AEM origin.  
+As part of the setup, the Adobe CDN and the Customer CDN must agree on a value of the `X-AEM-Edge-Key` HTTP Header. This value is set on each request, at the Customer CDN, before it is routed to the Adobe CDN, which then validates that the value is as expected, so it can trust other HTTP headers, including those that help route the request to the appropriate AEM origin.  
 
 The `X-AEM-Edge-Key` value is declared with the syntax below. See the [Common Setup](#common-setup) section to learn how to deploy it.
 
@@ -45,10 +45,10 @@ data:
 
 ```
 
-The syntax in the example above includes:
+The syntax for the `X-AEM-Edge-Key` value includes:
 
 * Kind, version, and metadata.
-* Data node that contains a child `experimental_authentication` node (the experimental prefix will be removed when the feature is released)
+* Data node that contains a child `experimental_authentication` node (the experimental prefix will be removed when the feature is released).
 * Under `experimental_authentication`, with one authenticators and one rules node.
 * Authenticators: Lets you declare a type of token or credential, which in this case is an edge key. It includes the following properties:
    * name - a descriptive string.
@@ -62,7 +62,7 @@ The syntax in the example above includes:
    * action - must specify "authenticate", with the intended authenticator referenced.
 
 >[!NOTE]
->The Edge Key must be configured as a Cloud Manager environment variable before the configuration referencing it is deployed.
+>The Edge Key must be configured as a [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md) variable before the configuration referencing it is deployed.
 
 ## Purge API Token {#purge-API-token}
 
@@ -84,7 +84,7 @@ data:
 
 ```
 
-The syntax in the example above includes:
+The syntax includes:
 
 * kind, version, and metadata.
 * data node that contains a child `experimental_authentication` node (the experimental prefix will be removed when the feature is released).
@@ -93,10 +93,10 @@ The syntax in the example above includes:
   * name - a descriptive string.
   * type - must be purge.
   * purgeKey1 - its value must reference a secret token, which should not be stored in git, but rather declared as a [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md) of type secret. For the Service Applied field, select publish and/or preview, depending on which tiers the Purge Key should be valid. It is recommended that the value i.e. `${{CDN_PURGEKEY_031224}}` reflects the day it was added.
-  * purgeKey2 - used for rotation of secrets, which is described in the link tbd section below. At least one of `purgeKey1` and `purgeKey2` must be declared.
+  * purgeKey2 - used for the rotation of secrets, which is described in the [Rotating Secrets](#rotating-secrets) section below. At least one of `purgeKey1` and `purgeKey2` must be declared.
 
 >[!NOTE]
->The Purge Key must be configured as a [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md) variable before the configuration referencing it is deployed.
+>The Purge Key must be configured as a [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md) before the configuration referencing it is deployed.
 
 ## Common Setup {#common-setup}
 
