@@ -53,7 +53,7 @@ The syntax in the example above includes:
 * Authenticators: Lets you declare a type of token or credential, which in this case is an edge key. It includes the following properties:
    * name - a descriptive string.
    * type - must be edge.
-   * edgeKey1 - its value must reference a secret token, which should not be stored in git, but rather declared as a [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md) of type secret. For the Service Applied field, select publish and/or preview, depending on which tiers the Edge Key should be valid. It is recommended that the value (i.e. ${{CDN_EDGEKEY_052824}}) reflects the day it was added.
+   * edgeKey1 - its value must reference a secret token, which should not be stored in git, but rather declared as a [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md) of type secret. For the Service Applied field, select publish and/or preview, depending on which tiers the Edge Key should be valid. It is recommended that the value (i.e. `${{CDN_EDGEKEY_052824}}`) reflects the day it was added.
    * edgeKey2 - used for the rotation of secrets, which is described in a section below. At least one of `edgeKey1` and `edgeKey2` must be declared.
    * OnFailure - TBD
 * Rules: Lets you declare which of the authenticators should be used, and whether it's for the publish and/or preview tier.  It includes:
@@ -124,7 +124,7 @@ Note that:
 
 It is good security practice to occasionally change credentials. This can be accomplished as exemplified below, using the example of an edge key, although the same strategy is used for purge keys.
 
-* Initially just `edgeKey1` has been defined, in this case referenced as ${{CDN_EDGEKEY_052824}}, which as a recommended convention, reflects the date it was created.
+* Initially just `edgeKey1` has been defined, in this case referenced as `${{CDN_EDGEKEY_052824}}`, which as a recommended convention, reflects the date it was created.
 
 ```
 
@@ -160,5 +160,5 @@ experimental_authentication:
 
 ```
 
-* Delete the old secret reference (${{CDN_EDGEKEY_052824}}) from Cloud Manager and deploy.
+* Delete the old secret reference (`${{CDN_EDGEKEY_052824}}`) from Cloud Manager and deploy.
 * When ready for the next rotation, follow the same procedure, however this time you will add edgeKey2 to the configuration, referencing a new Cloud Manager environment secret named, for example, ${{CDN_EDGEKEY_031426}}.
