@@ -49,20 +49,20 @@ The syntax for the `X-AEM-Edge-Key` value includes:
 
 * Kind, version, and metadata.
 * Data node that contains a child `experimental_authentication` node (the experimental prefix will be removed when the feature is released).
-* Under `experimental_authentication`, with one authenticators and one rules node.
+* Under experimental_authentication, with one authenticator node and one rules node, both of which are arrays.
 * Authenticators: Lets you declare a type of token or credential, which in this case is an edge key. It includes the following properties:
    * name - a descriptive string.
    * type - must be edge.
-   * edgeKey1 - its value must reference a secret token, which should not be stored in git, but rather declared as a [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md) of type secret. For the Service Applied field, select publish and/or preview, depending on which tiers the Edge Key should be valid. It is recommended that the value (i.e. `${{CDN_EDGEKEY_052824}}`) reflects the day it was added.
-   * edgeKey2 - used for the rotation of secrets, which is described in a section below. At least one of `edgeKey1` and `edgeKey2` must be declared.
-   * OnFailure - TBD
+   * edgeKey1 - its value must reference a secret token, which should not be stored in git, but rather declared as a [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md) of type secret. For the Service Applied field, select All. It is recommended that the value (for example,`${{CDN_EDGEKEY_052824}}`) reflects the day it was added.
+   * edgeKey2 - used for the rotation of secrets, which is described in the [rotating secrets section](#rotating-secrets) below. At least one of `edgeKey1` and `edgeKey2` must be declared.
+   * OnFailure - defines the action, either `log` or `block`, when a request doesn't match either `edgeKey1` or `edgeKey2`. For `log`, request processing will continue, while `block` will serve a 403 error. The `log` value is useful when testing a new token on a live site since you can first confirm that the CDN is correctly accepting the new token before changing to `block` mode; it also reduces the chance of lost connectivity between the customer CDN and the Adobe CDN, as a result of an incorrect configuration.
 * Rules: Lets you declare which of the authenticators should be used, and whether it's for the publish and/or preview tier.  It includes:
    * name - a descriptive string.
-   * when - the condition that determines the tier(s) for which the rule should be evaluated.
+   * when - a condition that determines when the rule should be evaluated, according to the syntax in the [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md) article. Typically, it will include a comparison of the current tier (for example., publish) so all live traffic is validated as routing through the customer CDN.
    * action - must specify "authenticate", with the intended authenticator referenced.
 
 >[!NOTE]
->The Edge Key must be configured as a [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md) variable before the configuration referencing it is deployed.
+>The Edge Key must be configured as a [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md) variable of type `secret`, before the configuration referencing it is deployed.
 
 ## Purge API Token {#purge-API-token}
 
@@ -81,6 +81,12 @@ data:
          type: purge
          purgeKey1: ${{CDN_PURGEKEY_031224}}
          purgeKey2: ${{CDN_PURGEKEY_021225}}
+    rules:
+     - name: purge-auth-rule
+       when: { reqProperty: tier, equals: "publish" }
+       action:
+         type: authenticate
+         authenticator: purge-auth
 
 ```
 
@@ -89,14 +95,19 @@ The syntax includes:
 * kind, version, and metadata.
 * data node that contains a child `experimental_authentication` node (the experimental prefix will be removed when the feature is released).
 * Under `experimental_authentication`, with a single one authenticators node.
-* Authenticators: Lets you declare a type of token or credential, which in this case is an purge key. It includes the following properties:
+* Authenticators: Lets you declare a type of token or credential, which in this case is an purge key. It includes the following properties::
   * name - a descriptive string.
   * type - must be purge.
-  * purgeKey1 - its value must reference a secret token, which should not be stored in git, but rather declared as a [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md) of type secret. For the Service Applied field, select publish and/or preview, depending on which tiers the Purge Key should be valid. It is recommended that the value i.e. `${{CDN_PURGEKEY_031224}}` reflects the day it was added.
-  * purgeKey2 - used for the rotation of secrets, which is described in the [Rotating Secrets](#rotating-secrets) section below. At least one of `purgeKey1` and `purgeKey2` must be declared.
+  * purgeKey1 - its value must reference a secret token, which should not be stored in git, but rather declared as [Cloud Manager Environment Variables](/help/implementing/cloud-manager/environment-variables.md) of type `secret`.
+  * For the Service Applied field, select All. It is recommended that the value (for example, `${{CDN_PURGEKEY_031224}}`) reflects the day it was added.
+  * purgeKey2 - used for rotation of secrets, which is described in the [rotating secrets section](#rotating-secrets) section below. At least one of `purgeKey1` and `purgeKey2` must be declared.
+* Rules: Lets you declare which of the authenticators should be used, and whether it's for the publish and/or preview tier.  It includes:
+  * name - a descriptive string
+  * when - a condition that determines when the rule should be evaluated, according to the syntax in the [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md) article. Typically, it will include a comparison of the current tier (for example., publish).
+  * action - must specify "authenticate", with the intended authenticator referenced.
 
 >[!NOTE]
->The Purge Key must be configured as a [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md) before the configuration referencing it is deployed.
+>The Edge Key must be configured as a [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md) variable of type `secret`, before the configuration referencing it is deployed.
 
 ## Common Setup {#common-setup}
 
@@ -111,7 +122,7 @@ config/
 
 ```
 
-* Secondly, the `cdn.yaml` configuration file should contain the nodes described in the examples below. The `kind` parameter should be set to `CDN` and the version should be set to the schema version, which is currently `1`.
+* Secondly, the `cdn.yaml` configuration file should contain the nodes described in the examples below. The `kind` property should be set to `CDN` and the version should be set to the schema version, which is currently `1`. The metadata node has a "envTypes" property, which indicates on which environment types (dev, stage, prod)this configuration will be evaluated.
 
 * Lastly, Create a targeted deployment config pipeline in Cloud Manager. See [configuring production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) and [configuring non-production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
@@ -149,7 +160,7 @@ experimental_authentication:
 
 ```
 
-* Remove the old edge key, by removing `edgeKey1` from the configuration.
+* Once you are sure the old edge key is not used anymore, remove it by removing `edgeKey1` from the configuration.
 
 ```
 experimental_authentication:
@@ -161,4 +172,14 @@ experimental_authentication:
 ```
 
 * Delete the old secret reference (`${{CDN_EDGEKEY_052824}}`) from Cloud Manager and deploy.
-* When ready for the next rotation, follow the same procedure, however this time you will add edgeKey2 to the configuration, referencing a new Cloud Manager environment secret named, for example, `${{CDN_EDGEKEY_031426}}`.
+* When ready for the next rotation, follow the same procedure, however this time you will add `edgeKey1` to the configuration, referencing a new Cloud Manager environment secret named, for example, `${{CDN_EDGEKEY_031426}}`.
+
+```
+experimental_authentication:
+  authenticators:
+    - name: edge-auth
+      type: edge
+      edgeKey2: ${{CDN_EDGEKEY_041425}}
+      edgeKey1: ${{CDN_EDGEKEY_031426}}
+
+```
