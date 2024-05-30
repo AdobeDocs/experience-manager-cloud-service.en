@@ -88,7 +88,7 @@ This release brings a significant upgrade to the visual rule editor for adaptive
   
   * A form author can now apply custom functions to [preprocess data before submission](/help/forms/rule-editor-core-components.md). 
 
-  * Use the **Save as Draft** functionlaity to save partially completed forms for later submission. This is useful in scenarios where users need to interrupt filling out a form and come back to it later.
+  * Use the **Save as Draft** functionality to save partially completed forms for later submission. This is useful in scenarios where users need to interrupt filling out a form and come back to it later.
 
  
 
