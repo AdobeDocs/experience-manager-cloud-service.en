@@ -58,6 +58,11 @@ Interested in trying out the feature and sharing feedback? Send an email to aemc
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
+### New features in Admin view {#admin-view-new-features}
+
+* WebM is now a supported output file in processing profile for video.
+* MP4 is now supported in the native integration of AEM in Express (import and export).
+
 ### New features in Assets view {#assets-view-new-features}
 
 **Publish assets to AEM and Dynamic Media**
@@ -65,8 +70,6 @@ Interested in trying out the feature and sharing feedback? Send an email to aemc
 Experience Manager Assets now enables you to quickly [publish assets to Experience Manager and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md) using the Assets view without switching to the Admin view. You can publish assets while uploading, browsing, and searching assets.
 
 ![check publish status1](/help/assets/assets/check-publish-status1.png)
-
-
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
