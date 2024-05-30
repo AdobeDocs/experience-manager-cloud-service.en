@@ -147,7 +147,8 @@ Adobe Developer Console is used to generate credentials to access various APIs. 
 
 ### New Features for RDEs {#RDE-new-features}
 
-[Rapid Development Environments (RDEs)](/help/implementing/developing/introduction/rapid-development-environments.md) let developers swiftly deploy, review, and test changes in the Cloud. Several new features will be rolled out during the month of June.
+[Rapid Development Environments (RDEs)](/help/implementing/developing/introduction/rapid-development-environments.md) let developers swiftly deploy, review, and test changes in the Cloud. Several new features will be rolled out during the month of June. We also invite you to engage directly with Adobe engineering at the [RDE Discord channel](https://discord.com/channels/1131492224371277874/1245304281184079872).
+
 
 #### RDE support for front-end code using Site Themes and Site Templates {#rde-frontend}
 
