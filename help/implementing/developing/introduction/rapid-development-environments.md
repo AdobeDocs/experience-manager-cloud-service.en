@@ -161,17 +161,17 @@ After you have added an RDE for your program using Cloud Manager, you can intera
    aio plugins:update
    ```
 
-1. Configure the RDE plugin to use your organization, program and environment. Below setup command will interactively provide the user with a list of programs in their origanization, and show RDE environments in that program to choose from.
+1. Configure the RDE plugin to use your organization, program and environment. The setup command below will interactively provide the user with a list of programs in their organization, and show RDE environments in that program to choose from.
    ```
    aio login
    aio aem:rde:setup
    ```
    
-   The setup step can be skipped while always passing the arguments for organization, program and environment to each command, i.e. in a scripted environment. [See rde commands below for more information](#rde-cli-commands).
+   The setup step may be skipped if the intent is to use a scripted environment, in which case the organization, program and environment values can be included in each command. [See rde commands below for more information](#rde-cli-commands).
    
 ### The Interactive Setup
 
-  The setup command will ask if the provided configuration shall be stored locally or globally.
+  The setup command will ask if the provided configuration should be stored locally or globally.
    
    ```
    Setup the CLI configuration necessary to use the RDE commands.
@@ -184,11 +184,11 @@ After you have added an RDE for your program using Cloud Manager, you can intera
    
    Choose `yes` to
    * store the organization, program and environment locally in the current directory, in a `.aio` file. This is convenient if you want to commit the file to version control so others cloning the git repository can use it.
-   * work with many RDEs, so that switching the to another directory will use that configuration instead.
+   * work with many RDEs, so that switching to another directory will use that configuration instead.
    * use the configuration in a programmatic context like a script, which can reference it.
 
 
-   Once local or global configuration is selected, the setup command will try to read your oriagnization ID from your current login and then read the programs of your organization. In case the organization cannot be found, you can enter it manually along with some guidance.
+   Once local or global configuration is selected, the setup command will try to read your organization id from your current login and then read the organization's programs. In case the organization cannot be found, you can enter it manually along with some guidance.
    
   ```
    Selected only organization: XYXYXYXYXYXYXYXXYY
@@ -196,10 +196,16 @@ After you have added an RDE for your program using Cloud Manager, you can intera
    ```
    
    Once the programs are retrieved, the user can select from the list and also type to filter.
-   When the program was selected, a list of RDE environments is provided to choose from.
-   In case there is only one program and/or RDEenvironment available, it is selected automatically.
+   When the program was selected, a list of RDE environments is listed to choose from.
+   In case there is only one program and/or RDE environment available, it is selected automatically.
    
-   Use ```aio aem rde setup --show``` to show the ```Current configuration: cm-p1-e1: programName - environmentName (organization: ...@AdobeOrg)``` information.
+   To see the current environment context, execute:
+   
+   ```aio aem rde setup --show```
+   
+   Ther command will respond with a result similar to:
+   
+   ```Current configuration: cm-p1-e1: programName - environmentName (organization: ...@AdobeOrg)```
 
 ## Using RDE while Developing a New Feature {#using-rde-while-developing-a-new-feature}
 
@@ -262,19 +268,19 @@ However, with careful coordination, it is possible for more than one developer t
 
   `aio aem rde <command> --quiet`
   
-  This removes certain user information like spinners, progress bars and tries to avoid user input.
+  This removes certain elements such as spinners and progress bars, and limits the need for user input.
   
 * For JSON instead of console log output, use the json flag:
   
   `aio aem rde <command> --json`
   
-  This returns valid JSON while suppressing any console output. See further below for JSON examples.
+  This returns valid JSON while suppressing any console output. See JSON examples further below.
   
 * To avoid configuring the RDE connection information using the setup command, or any aio config creation, use the three flags for organization, program and environment:
   
   `aio aem rde <command> --organizationId=<value> --programId=<value> --environmentId=<value>`
   
-  This still needs an ```aio login``` to be performed.
+  This still requires an ```aio login``` to be performed.
 
 ### Deploying to RDE {#deploying-to-rde}
 
@@ -598,11 +604,11 @@ For more information about how to use Cloud Manager to manage your environments,
 > These commands are not yet available. They will be rolled out sometime in June.
 > 
 
-Most commands support the global ```--json``` flag. This suppresses any console output and returns valid json to be processed in scripts.
+Most commands support the global ```--json``` flag which suppresses console output and returns valid json to be processed in scripts. Below are some supported commands, with examples of the json output.
 
 ### Status
 
-#### Clean RDE
+#### A clean RDE
 
 ```$ aio aem rde status --json```
 ```json
@@ -621,7 +627,7 @@ Most commands support the global ```--json``` flag. This suppresses any console 
 }
 ```
 
-#### Some installed bundles (example)
+#### An RDE with some installed bundles
 
 ```$ aio aem rde status --json```
 ```json
@@ -796,17 +802,6 @@ Most commands support the global ```--json``` flag. This suppresses any console 
       ]
     }
   ]
-}
-```
-
-### History (empty)
-
-```$ aio aem rde history --json```
-```json
-{
-  "programId": "myProgram",
-  "environmentId": "myEnv",
-  "status": "Ready"
 }
 ```
 
