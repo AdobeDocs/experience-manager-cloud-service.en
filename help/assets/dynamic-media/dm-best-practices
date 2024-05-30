@@ -1,0 +1,25 @@
+---
+title: Best practices for Dynamic Media
+description: Learn about best practices in Dynamic Media when it comes to images and video.
+contentOwner: Rick Brough
+products: Experience Manager as a Cloud Service
+topic-tags: introduction,administering
+content-type: reference
+feature: Video,Renditions,Configuration
+role: User, Admin
+mini-toc-levels: 4
+hide: no
+hidefromtoc: no
+
+---
+# About best practices for Dynamic Media{#about-dm-best-practices}
+
+
+This articles identifies 
+
+
+topic lists the actions you should take to manage the complexity of upgrading Adobe Commerce and Magento Open Source projects. 
+Your team should be thinking about upgrades from the moment your project development starts and continue through each release. 
+By following these best practices, the upgrade process will be much easier, faster, and cheaper.
+
+##
