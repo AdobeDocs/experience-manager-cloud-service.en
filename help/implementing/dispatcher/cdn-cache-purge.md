@@ -70,5 +70,4 @@ Be aware that the `X-AEM-Purge` header must include the 'all' value.
 
 ## Interactions with Apache/Dispatcher layer {#apache-layer}
 
-As described in the [Content Delivery Flow article](/help/implementing/dispatcher/overview.md), the CDN retrieves content from the Apache/Dispatcher layer, if the cache has expired. This implies that before purging a resource at the CDN, you should ensure that a fresh version of the content is also available at the Dispatcher. Learn more about [Dispatcher Cache Invalidation](/help/implementing/dispatcher/caching.md#disp).
-
+As described in the [Content Delivery Flow article](/help/implementing/dispatcher/overview.md), the CDN retrieves content from the Apache/Dispatcher layer, if the cache has expired. This implies that before purging a resource at the CDN, you should ensure that a fresh version of the content is also available at the Dispatcher. For further details also see [Dispatcher Cache Invalidation](/help/implementing/dispatcher/caching.md#disp).
