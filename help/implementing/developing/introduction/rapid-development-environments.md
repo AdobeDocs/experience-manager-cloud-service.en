@@ -608,6 +608,9 @@ Most commands support the global ```--json``` flag which suppresses console outp
 
 ### Status
 
+<details>
+  <summary>Expand to see Status examples</summary>
+
 #### A clean RDE
 
 ```$ aio aem rde status --json```
@@ -693,9 +696,13 @@ Most commands support the global ```--json``` flag which suppresses console outp
   }
 }
 ```
+</details>
 
 ### Install
 
+<details>
+  <summary>Expand to see Install examples</summary>
+  
 ```$ aio aem rde install ~/Downloads/hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip --json```
 ```json
 {
@@ -728,8 +735,12 @@ Most commands support the global ```--json``` flag which suppresses console outp
   ]
 }
 ```
+</details>
 
 ### Delete
+
+<details>
+  <summary>Expand to see Delete examples</summary>
 
 ```$ aio aem rde delete com.adobe.granite.hotdev.demo-1.0.0.SNAPSHOT --json```
 ```json
@@ -805,7 +816,12 @@ Most commands support the global ```--json``` flag which suppresses console outp
 }
 ```
 
+</details>
+
 ### History
+
+<details>
+  <summary>Expand to see History examples</summary>
 
 ```$ aio aem rde history --json```
 ```json
@@ -895,8 +911,12 @@ Most commands support the global ```--json``` flag which suppresses console outp
   ]
 }
 ```
+</details>
 
 ### Reset
+
+<details>
+  <summary>Expand to see Reset examples</summary>
 
 #### fire and forget, no-wait
 
@@ -919,8 +939,12 @@ Most commands support the global ```--json``` flag which suppresses console outp
   "status": "reset"
 }
 ```
+</details>
 
 ### Restart
+
+<details>
+  <summary>Expand to see Restart examples</summary>
 
 ```$ aio aem rde restart --json```
 ```json
@@ -930,6 +954,8 @@ Most commands support the global ```--json``` flag which suppresses console outp
   "status": "restarted"
 }
 ```
+
+</details>
 
 ## Run Modes {#runmodes}
 
