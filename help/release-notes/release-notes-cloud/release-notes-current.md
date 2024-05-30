@@ -143,11 +143,11 @@ Adobe Developer Console is used to generate credentials to access various APIs. 
 
 ### Traffic Spike at Origin Alerts {#traffic-spike-origin}
 
-Receive proactive notifications when traffic patterns at the origin are indicative of a DDoS attack, allowing you to investigate and configure [traffic filter rules](/help/security/traffic-filter-rules-including-waf.md).
+[Receive proactive notifications](/help/security/traffic-filter-rules-including-waf.md#traffic-spike-at-origin-alert) when traffic patterns at the origin are indicative of a DDoS attack, allowing you to investigate and configure traffic filter rules.
 
 ### RDE support for front-end code using Site Themes and Site Templates {#rde-frontend}
 
-[Rapid Development Environments (RDEs)](/help/implementing/developing/introduction/rapid-development-environments.md) now support front-end code based on [site themes](/help/sites-cloud/administering/site-creation/site-themes.md) and [site templates](/help/sites-cloud/administering/site-creation/site-templates.md), for early adopters. With RDEs, this is done using a command line directive, rather than a [front-end pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
+Rapid Development Environments (RDEs) [now support front-end code]((/help/implementing/developing/introduction/rapid-development-environments.mdd#eploying-themes-to-rde) based on [site themes](/help/sites-cloud/administering/site-creation/site-themes.md) and [site templates](/help/sites-cloud/administering/site-creation/site-templates.md), for early adopters. With RDEs, this is done using a command line directive, rather than a [front-end pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
 
 This feature will be rolled out in June.
 
