@@ -153,7 +153,7 @@ This feature will be rolled out in June.
 
 ### Enhanced logging for RDEs {#rde-logging}
 
-While debugging code in a [Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md), developers can now configure and stream logs more efficiently, using the command line, and without modifying OSGI properties in version control. Features include:
+While debugging code in a [Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md), developers can now [configure and stream logs more efficiently](/help/implementing/developing/introduction/rapid-development-environments.md#rde-logging), using the command line, and without modifying OSGI properties in version control. Features include:
 
 * declare log levels on a per package or class level
 * customize the log output format
@@ -165,9 +165,9 @@ This feature will be rolled out in June.
 
 The [Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) command line interface has some new features, which improve the developer experience:
 
-* the setup command is interactive, making it easier to choose between organizations, programs and environments. It is also now possible to override these values at the command line 
-* quiet mode
-* json mode
+* [the setup command is interactive](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools-interactive), making it easier to choose between organizations, programs and environments. It is also now possible to override these values at the command line.
+* [quiet mode](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) for a less verbose output.
+* json mode (/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) for useful output when invoked programatically. 
 
 This feature will be rolled out in June.
 
