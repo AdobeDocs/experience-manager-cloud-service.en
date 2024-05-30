@@ -58,3 +58,55 @@
 * [Show a custom thank you message after form submission​](/help/edge/docs/forms/thank-you-page-form.md)
 * [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
 
+
+## Difference between Rule editor in Core Components and Rule Editor in Foundation Components  {#rule-editor-diff}
+
+The following table demonstrates the difference between the features available in the Rule Editor's Core Components and the Rule Editor's Foundation Components:
+
+<table>
+  <tbody>
+  <tr>
+    <td><strong>Features</strong></td>
+    <td><strong>Adpative Form Foundation Components</strong></td>
+    <td><strong>Adpative Form Core Components</strong></td>   
+    </tr>
+  </tr>
+  <tr>
+    <td>Set the dropdown list options </td>
+    <td>The dropdown list options are set using the Rule Editor’s <b>Set Options of</b> property.</td>
+    <td>The dropdown options are set using the custom functions. 
+   </td>
+   </tr>
+     </tr>
+   <tr>
+    <td>Perform mathematical operations on the repeatable panel field </td>
+    <td>OOTB Math functions can be applied on repeatable panel fields to perform functions like sum, average. </td>
+    <td>Mathematical operations on the repeatable panel field can be performed using the custom functions.
+   </td>
+   </tr>
+      <tr>
+    <td>Validate/Reset field/panel/form rule in ‘Then’ </td>
+    <td>Validate and Reset functions only supports form object in Rule Editor. 
+   </td>
+    <td>Validate and Reset functions supports form/panel/field object in Rule Editor. 
+   </td>
+   </tr>
+   <tr>
+    <td>ES10 Support </td>
+    <td>ES10 is not supported yet. </td>
+    <td>Support for modern JavaScript features such as let and arrow functions (ES10 support) within custom functions. 
+   </td>
+   </tr>
+   </tr>
+   <tr>
+   <td>Service output property</td>
+   <td> The Service output property is supported in the <b>Set Value of</b> option of the Rule Editor. </td>
+   <td>The <b>Set Value of</b> option does not support the <b>Service output</b> property for invoking APIs in the Rule Editor.
+   </td>
+   </tr>
+   </tr>
+   </tr>
+  </tbody>
+  <table>
+  </tbody>
+
