@@ -82,13 +82,13 @@ Experience Manager Assets now enables you to quickly [publish assets to Experien
 
 This release brings a significant upgrade to the visual rule editor for adaptive forms based on core components. You can now: 
 
-  * Create rules in Visual Rule editor to [override default form submission success/failure handlers](/help/forms/rule-editor-core-components.md). 
+  * Create rules in Visual Rule editor to [override default form submission success/failure handlers](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions). 
   
-  * In the Adaptive Forms Rule Editor, added the ability to [select different types of fields for the WHEN operation](/help/forms/rule-editor-core-components.md).
+  * In the Adaptive Forms Rule Editor, added the ability to [select different types of fields for the WHEN operation](/help/forms/rule-editor-core-components.md#allowed-multiple-fields-in-when).
   
-  * A form author can now apply custom functions to [preprocess data before submission](/help/forms/rule-editor-core-components.md). 
+  * A form author can now apply custom functions to [preprocess data before submission](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions). 
 
-  * Use the **Save as Draft** functionality to save partially completed forms for later submission. This is useful in scenarios where users need to interrupt filling out a form and come back to it later.
+  * Use the [**Save as Draft**](/help/forms/save-core-component-based-form-as-draft.md) functionality to save partially completed forms for later submission. This is useful in scenarios where users need to interrupt filling out a form and come back to it later.
 
  
 
@@ -114,7 +114,7 @@ Ready to integrate any of these CAPTCHA solution with your Adaptive Forms? Our d
 
 ### Forms Service
 
-Forms service generates interactive PDF forms for data capture. It can also be used to import/export data to/from an existing interactive PDF form and validate submitted data. Here's a breakdown of its functionalities: 
+Forms service generates interactive PDF forms for data capture. It can also be used to importor  export data to and from an existing interactive PDF form and validate submitted data. Here's a breakdown of its functionalities: 
 
 * **Rendering Forms**: Generate an interactive PDF form from a template created using AEM Forms Designer and, optionally, XML data. This essentially produces a fillable PDF form optionally pre-filled with data.
 * **Data Extraction and Import**: Import data into an existing PDF form as well as extract data from a filled PDF form. Both XDP and XML data formats are supported, and importing to non-XFA PDF forms (also known as AcroForms) additionally supports FDF and XFDF data.
