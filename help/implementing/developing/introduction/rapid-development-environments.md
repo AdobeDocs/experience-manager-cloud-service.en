@@ -402,11 +402,12 @@ The analyser found the following errors for publish :
 
 The above code sample illustrates the behavior if a bundle does not resolve. In which case, it is "staged" and is only installed if its requirements (missing imports, in this case) are satisfied through the installation of other code. 
 
-<u>Deploying front-end code bsed on site themes and site templates</u>
+### Deploying front-end code based on site themes and site templates {#deploying-themes-to-rde}
 
 >[!NOTE]
 >
->This feature is not yet GA, but can be used by early adopters. Please reach out to **aemcs-rde-support@adobe.com** to try it out and provide feedback.
+> This feature is not yet available. It will be rolled out sometime in June.
+>
 
 RDEs support front-end code based on [site themes](/help/sites-cloud/administering/site-creation/site-themes.md) and [site templates](/help/sites-cloud/administering/site-creation/site-templates.md). With RDEs, this is done using a command line directive to deploy front-end packages, rather than the Cloud Manager [Front-End Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) used for other environment types.
 
@@ -998,8 +999,6 @@ Also note the following considerations:
 
 * RDEs do not include a preview tier
 * RDEs do not currently support the prerelease channel.
-* While RDE support for viewing and debugging front-end code based on [site themes](/help/sites-cloud/administering/site-creation/site-themes.md) and [site templates](/help/sites-cloud/administering/site-creation/site-templates.md) deployed is not yet GA-ready, it can be used by early adopters. Please reach out to **aemcs-rde-support@adobe.com** to try it out and provide feedback.
-
 
 
 ## How many RDEs do I need? {#how-many-rds-do-i-need}
