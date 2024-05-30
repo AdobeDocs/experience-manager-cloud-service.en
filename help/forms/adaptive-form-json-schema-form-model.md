@@ -38,6 +38,7 @@ The key features of using a JSON Schema are:
 * The structure of the JSON is displayed as a tree in the Content Finder tab in the authoring mode for an Adaptive Form. You can drag and add element from the JSON hierarchy to the Adaptive Form.
 * You can pre-populate the form using JSON that is compliant with the associated schema.
 * On submission, the data entered by the user is submitted as JSON that aligns with the associated schema.
+* You can also create the form based on the JSON schema according to the specifications of the [2012-20 version](https://json-schema.org/draft/2020-12/release-notes).
 
 A JSON Schema consists of simple and complex element types. The elements have attributes that add rules to the element. When these elements and attributes are dragged onto an Adaptive Form, they are automatically mapped to the corresponding Adaptive Form component.
 
@@ -60,6 +61,7 @@ This mapping of JSON elements with Adaptive Form components is as follows:
                 "validatePictureClause": "date{DD MMMM, YYYY}",
                 "validatePictureClauseMessage": "Date must be in DD MMMM, YYYY format."
               }
+  }
 ```
 
 <table>
@@ -129,60 +131,62 @@ Adaptive Form uses information available in JSON Schema to map each generated fi
 
 ## Sample JSON Schema {#sample-json-schema}
 
-Here's an example of a JSON Schema.
+>[!BEGINTABS]
 
-```json
-{
- "$schema": "https://json-schema.org/draft-04/schema#",
- "definitions": {
-  "employee": {
-   "type": "object",
-   "properties": {
-    "userName": {
-     "type": "string"
-    },
-    "dateOfBirth": {
-     "type": "string",
-     "format": "date"
-    },
-    "email": {
-     "type": "string",
-     "format": "email"
-    },
-    "language": {
-     "type": "string"
-    },
-    "personalDetails": {
-     "$ref": "#/definitions/personalDetails"
-    },
-    "projectDetails": {
-     "$ref": "#/definitions/projectDetails"
-    }
-   },
-   "required": [
-    "userName",
-    "dateOfBirth",
-    "language"
-   ]
-  },
-  "personalDetails": {
-   "type": "object",
-   "properties": {
-    "GeneralDetails": {
-     "$ref": "#/definitions/GeneralDetails"
-    },
-    "Family": {
-     "$ref": "#/definitions/Family"
-    },
-    "Income": {
-     "$ref": "#/definitions/Income"
-    }
-   }
-  },
-  "projectDetails": {
-   "type": "array",
-   "items": {
+>[!TAB JSON Schema v4]
+  
+  ```json 
+  {
+  "$schema": "https://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "employee": {
+    "type": "object",
     "properties": {
+      "userName": {
+       "type": "string"
+     },
+      "dateOfBirth": {
+       "type": "string",
+       "format": "date"
+      },
+      "email": {
+      "type": "string",
+      "format": "email"
+      },
+      "language": {
+       "type": "string"
+     },
+      "personalDetails": {
+       "$ref": "#/definitions/personalDetails"
+     },
+      "projectDetails": {
+       "$ref": "#/definitions/projectDetails"
+      }
+    },
+    "required": [
+     "userName",
+     "dateOfBirth",
+     "language"
+    ]
+    },
+      "personalDetails": {
+     "type": "object",
+    "properties": {
+       "GeneralDetails": {
+      "$ref": "#/definitions/GeneralDetails"
+     },
+      "Family": {
+       "$ref": "#/definitions/Family"
+      },
+      "Income": {
+       "$ref": "#/definitions/Income"
+     }
+     }
+       },
+    "projectDetails": {
+     "type": "array",
+     "items": {
+     "properties": {
      "name": {
       "type": "string"
      },
@@ -308,6 +312,141 @@ Here's an example of a JSON Schema.
  }
 }
 ```
+
+
+>[!TAB JSON Schema 2012-20]
+
+    
+```json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/employee.schema.json",
+  "$defs": {
+    "employee": {
+      "type": "object",
+      "properties": {
+        "userName": {
+          "type": "string"
+        },
+        "dateOfBirth": {
+          "type": "string",
+          "format": "date"
+        },
+        "email": {
+          "type": "string",
+          "format": "email"
+        },
+        "language": {
+          "type": "string"
+        },
+        "personalDetails": {
+          "$ref": "#/$defs/personalDetails"
+        },
+        "projectDetails": {
+          "$ref": "#/$defs/projectDetails"
+        }
+      },
+      "required": [
+        "userName",
+        "dateOfBirth",
+        "language"
+      ]
+    },
+    "personalDetails": {
+      "type": "object",
+      "properties": {
+        "GeneralDetails": {
+          "$ref": "#/$defs/GeneralDetails"
+        },
+        "Family": {
+          "$ref": "#/$defs/Family"
+        },
+        "Income": {
+          "$ref": "#/$defs/Income"
+        }
+      }
+    },
+    "projectDetails": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "age": {
+            "type": "number"
+          },
+          "projects": {
+            "$ref": "#/$defs/projects"
+          }
+        }
+      },
+      "minItems": 1,
+      "maxItems": 4
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "age": {
+            "type": "number"
+          },
+          "projectsAdditional": {
+            "$ref": "#/$defs/projectsAdditional"
+          }
+        }
+      },
+      "minItems": 1,
+      "maxItems": 4
+    },
+    "projectsAdditional": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "Additional_name": {
+            "type": "string"
+          },
+          "Additional_areacode": {
+            "type": "number"
+          }
+        }
+      },
+      "minItems": 1,
+      "maxItems": 4
+    },
+    "GeneralDetails": {
+      "type": "object",
+      "properties": {
+        "age": {
+          "type": "number"
+        },
+        "married": {
+          "type": "boolean"
+        },
+        "phone": {
+          "type": "number",
+          "aem:afProperties": {
+            "sling:resourceType": "/libs/fd/af/components/guidetelephone",
+            "guideNodeClass": "guideTelephone"
+          }
+        },
+        "address": {
+          "type": "string"
+        }
+      }
+      }
+  }
+  }
+  ```
+  
+>[!ENDTABS]
+
+The key changes from JSON Schema V4 to version 2020-12 specifications are:
+* Id is declared as `$id`
+* definitions is declared as `$defs`
 
 ### Reusable schema definitions {#reusable-schema-definitions}
 
@@ -755,6 +894,7 @@ Adaptive Forms do not support the following JSON Schema constructs:
 * Union types such as any, and
 * OneOf, AnyOf, AllOf, and NOT
 * Only Homogenous arrays are supported. So, the items constraint must be an object and not be an array.
+* URI references in $ref 
 
 ## Frequently asked questions {#frequently-asked-questions}
 
