@@ -10,7 +10,7 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 Cloud Service content requests are measured via server-side collection of data. The collection is enabled via CDN log analysis.
 
 >[!NOTE]
->We are excited to announce the GA rollout (Link to Release Notes) for client-side collection enabled via Real Use Monitoring service measurement. With the GA rollout, Adobe will start monitoring client-side traffic for it's customers automatically and there is no customer set up required. You can learn more by consulting the documentation in [this article](Update link).
+>We are excited to announce the GA rollout (Link to Release Notes) for client-side collection enabled via Real Use Monitoring service measurement. With the GA rollout, Adobe will start monitoring client-side traffic for its customers automatically and there is no customer set up required. You can learn more by consulting the documentation in [this article](Update link).
 
 ## Understanding Cloud Service Content Requests {#understanding-cloud-service-content-requests}
 
@@ -81,7 +81,7 @@ Agent: skyline-service-warmup/1.*|
 >[!INFO]
 >
 >This feature is only available to the early adopter program. 
->You need to be using AEM Cloud Service version **2023.11.14227** and above in order to enabled the RUM data service.
+>Client-side monitoring will only work for customers with AEM Cloud Service version **2023.11.14227** and above.
 
 ### Overview {#overview}
 
@@ -91,11 +91,11 @@ With Real Use Monitoring , key performance metrics are tracked right from the in
 
 ### Who Can Benefit from Real Use Monitoring Service? {#who-can-benefit-from-rum-service}
 
-RUM Data Service is beneficial for all customers whether utilising Adobe's, or their own CDN. It offers a representative reflection of user interactions, ensuring a reliable measure of website engagement by capturing the number of Page Views on the client-side. 
+Real Use Monitoring service is beneficial for all customers whether utilising Adobe's, or their own CDN. It offers a representative reflection of user interactions, ensuring a reliable measure of website engagement by capturing the number of Page Views on the client-side. 
 
-For all Adobe customers, this service provides valuable insights into user interactions. For customers employing their own CDN they can benefit from simplified traffic reporting, as Adobe now directly integrates the Page Views, eliminating the need for separate reports during renewal cycles. 
+For all Adobe customers, this service provides valuable insights into user interactions. For customers employing their own CDN, can benefit from simplified traffic reporting, as Adobe now directly integrates the data collection, eliminating the need for separate reports during renewal cycles. 
 
-Would you like to unlock the full potential of your website , then ask us for providing you access to our Early Adopter version of RUM Explorer platform. This tool can provide insights into your page performance, including metrics on the number of clicks, Core Web Vitals (CWV), conversions, and customer journey maps. By utilizing these powerful insights, you can fine-tune your digital experiences to meet your users' needs more effectively.Interested in learning more? Reach out to us at email  "xyz@adobe.com" today and start optimizing your digital strategy!
+Would you like to unlock the full potential of your website , then reach out to us to be a part of our Early Adopter version of RUM Explorer platform. This tool can provide insights into your page performance, including metrics on the number of clicks, Core Web Vitals (CWV), conversions, and customer journey maps. By utilizing these powerful insights, you can fine-tune your digital experiences to meet your users' needs more effectively.Interested in learning more? Reach out to us at email  "xyz@adobe.com" today and start optimizing your digital strategy!
 
 ### Understand how the Real Use Monitoring Service Works {#understand-how-the-rum-service-works}
 
@@ -131,7 +131,7 @@ The Real Use Monitoring service is designed to prevent the collection of persona
 
 ### How Real Use Monitoring Works for a customer
 
-We are pleased to introduce Real Use Monitoring, a service that automatically monitors client-side traffic to provide you with valuable insights. As an Adobe customer, you don’t need to take any additional steps—this service is seamlessly integrated into your existing setup. With the General Availability (GA) rollout, you will automatically benefit from this new feature. If you wish to leverage more insights with this new feature to optimize your digital experiences effortlessly, please see here (link to Row 99).
+Real Use Monitoring, automatically monitors client-side traffic to provide you with valuable insights. As an Adobe customer, you don’t need to take any additional steps—this service is seamlessly integrated into your existing setup. With the General Availability (GA) rollout, you will automatically benefit from this new feature. If you wish to leverage more insights with this new feature to optimize your digital experiences effortlessly, please see here (link to Row 99).
 
 ### How Real Use Monitoring Service Data is Being Used {#how-rum-service-data-is-being-used}
 
@@ -165,7 +165,7 @@ Opting out means missing out on these insights. However, if you encounter any is
 
    Yes.
 
-1. **Will customers be able to integrate the RUM data service scripts with third-party systems like Dynatrace?**
+1. **Will customers be able to integrate the RUM service scripts with third-party systems like Dynatrace?**
 
    Yes.
 
@@ -176,3 +176,7 @@ Opting out means missing out on these insights. However, if you encounter any is
 1. **The `/.rum` path is blocked on my site, how should I fix?**
 
    The `/.rum` path is required for RUM collection to work.  If you have a CDN in front of what Adobe provides as part of AEM as a Cloud Service, you'll need to ensure that the `/.rum` path forwards to the same AEM origin as the rest of your AEM content.
+   
+1. **Does RUM count toward content requests for contractual purposes?**
+
+   Neither RUM library nor RUM collection count as content requests and will not increase the reported number of page views or API calls. Additionally, for customers who use out-of-the-box Adobe CDN with AEM as a Cloud Service, the server-side collection(add link to server side collection above) will be the basis for content requests.
