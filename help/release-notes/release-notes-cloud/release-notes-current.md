@@ -171,7 +171,7 @@ The RDE command line interface has some new features, which improve the develope
 
 ### New Actions Center notifications {#actions-center-notifications}
 
-[Actions Center](/help/operations/actions-center.md) sends email notifications when important incidents happen, or if we notice something about your code or configuration where you should take proactive action. There are three new categories of notification:
+[Actions Center](/help/operations/actions-center.md) sends email notifications when important incidents happen, or if we notice something about your code or configuration where you should take proactive action. There are three new types of notification:
 
 * too many outgoing connections through advanced networking infrastructure
 * usage of a deprecated Service User Mapping format
