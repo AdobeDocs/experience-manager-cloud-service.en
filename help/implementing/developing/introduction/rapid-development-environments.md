@@ -918,7 +918,7 @@ Most commands support the global ```--json``` flag which suppresses console outp
 <details>
   <summary>Expand to see Reset examples</summary>
 
-#### fire and forget, no-wait
+#### Fire and Forget, No-wait
 
 ```$ aio aem rde reset --no-wait --json```
 ```json
@@ -929,7 +929,7 @@ Most commands support the global ```--json``` flag which suppresses console outp
 }
 ```
 
-#### wait for completion
+#### Wait for Completion
 
 ```$ aio aem rde reset --json```
 ```json
