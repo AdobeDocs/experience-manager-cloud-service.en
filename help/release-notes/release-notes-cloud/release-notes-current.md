@@ -145,32 +145,29 @@ Adobe Developer Console is used to generate credentials to access various APIs. 
 
 [Receive proactive notifications](/help/security/traffic-filter-rules-including-waf.md#traffic-spike-at-origin-alert) when traffic patterns at the origin are indicative of a DDoS attack, allowing you to investigate and configure traffic filter rules.
 
-### RDE support for front-end code using Site Themes and Site Templates {#rde-frontend}
+### New Features for RDEs {#RDE-new-features}
 
-Rapid Development Environments (RDEs) [now support front-end code]((/help/implementing/developing/introduction/rapid-development-environments.mdd#eploying-themes-to-rde) based on [site themes](/help/sites-cloud/administering/site-creation/site-themes.md) and [site templates](/help/sites-cloud/administering/site-creation/site-templates.md), for early adopters. With RDEs, this is done using a command line directive, rather than a [front-end pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
+[Rapid Development Environments (RDEs)](/help/implementing/developing/introduction/rapid-development-environments.md) let developers swiftly deploy, review, and test changes in the Cloud. Several new features will be rolled out during the month of June.
 
-This feature will be rolled out in June.
+#### RDE support for front-end code using Site Themes and Site Templates {#rde-frontend}
 
-### Enhanced logging for RDEs {#rde-logging}
+[RDEs now support front-end code](/help/implementing/developing/introduction/rapid-development-environments.md#deploying-themes-to-rde) based on [site themes](/help/sites-cloud/administering/site-creation/site-themes.md) and [site templates](/help/sites-cloud/administering/site-creation/site-templates.md), for early adopters. With RDEs, this is done using a command line directive, rather than a [front-end pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
 
-While debugging code in a [Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md), developers can now [configure and stream logs more efficiently](/help/implementing/developing/introduction/rapid-development-environments.md#rde-logging), using the command line, and without modifying OSGI properties in version control. Features include:
+#### Enhanced logging for RDEs {#rde-logging}
 
-* declare log levels on a per package or class level
-* customize the log output format
-* stream multiple logs in parallel 
+While debugging code in an RDE, developers can now [configure and stream logs more productively](/help/implementing/developing/introduction/rapid-development-environments.md#rde-logging), using the command line, and without modifying OSGI properties in version control. Features include:
 
-This feature will be rolled out in June.
+* declarong log levels on a per package or class level
+* customizing the log output format
+* streaming multiple logs in parallel 
 
-### RDE CLI enhancements {#rde-cli-enhancements}
+#### RDE CLI enhancements {#rde-cli-enhancements}
 
-The [Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) command line interface has some new features, which improve the developer experience:
+The RDE command line interface has some new features, which improve the developer experience:
 
 * [the setup command is interactive](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools-interactive), making it easier to choose between organizations, programs and environments. It is also now possible to override these values at the command line.
 * [quiet mode](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) for a less verbose output.
-* json mode (/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) for useful output when invoked programatically. 
-
-This feature will be rolled out in June.
-
+* [json mode](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) for useful output when invoked programatically. 
 
 ### Early Adopter Programs {#foundation-early-adopter}
 
@@ -182,7 +179,7 @@ Register a CDN purge API key in a self-service way, and use it to invalidate con
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
-#### Self-serve creation of X-AEM-Edge-Key for customer-managed CDN (BYOCDN) (Early Adopter Program) {#purge-cdn-2}
+#### Self-serve creation of X-AEM-Edge-Key for customer-managed CDN (BYOCDN) (Early Adopter Program) {#byocdn-keys}
 
 Previously, a support ticket was needed to generate the X-AEM-Edge-Key required for configuration of a customer-managed CDN. This can now be accomplished in a self-serve way through a configuration file that is deployed using the Configuration Pipeline, removing any delay in onboarding a new environment. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
