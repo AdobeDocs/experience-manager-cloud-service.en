@@ -1,7 +1,7 @@
 ---
 title: Purging the CDN cache
 description: Learn how to remove cached objects from the Adobe CDN cache by configuring the purge API Token which can then be used in API calls.
-feature: Dispatcher
+feature: CDN Cache
 ---
 # Purging the CDN cache {#cdn-purge-cache}
 
