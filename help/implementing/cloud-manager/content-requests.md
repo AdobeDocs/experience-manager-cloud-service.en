@@ -177,6 +177,6 @@ Opting out means missing out on these insights. However, if you encounter any is
 
    The `/.rum` path is required for RUM collection to work.  If you have a CDN in front of what Adobe provides as part of AEM as a Cloud Service, you'll need to ensure that the `/.rum` path forwards to the same AEM origin as the rest of your AEM content.
    
-1. **Does RUM count toward content requests for contractual purposes?**
+1. **Does RUM collection count toward content requests for contractual purposes?**
 
    Neither RUM library nor RUM collection count as content requests and will not increase the reported number of page views or API calls. Additionally, for customers who use out-of-the-box Adobe CDN with AEM as a Cloud Service, the server-side collection(add link to server side collection above) will be the basis for content requests.
