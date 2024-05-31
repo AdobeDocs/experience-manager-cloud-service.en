@@ -10,7 +10,7 @@ The following section outlines the feature release notes for the current (latest
 
 >[!NOTE]
 >
->From here, you can navigate to release notes of previous versions such as 2021 or 2022.
+>From here, you can navigate to release notes of previous versions such as 2022 or 2023.
 >
 >Have a look at the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) to learn about the upcoming feature activations for [!DNL Experience Manager] as a Cloud Service. 
 
@@ -20,17 +20,19 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2024.5.0) is May 30, 2024. The next feature release (2024.6.0) is planned for June 27, 2024.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2024.6.0) is June 25, 2024. The next feature release (2024.7.0) is planned for July 27, 2024.
 
 ## Maintenance Release Notes {#maintenance}
 
 You can find the latest maintenance release notes [here](/help/release-notes/maintenance/latest.md).
 
-## Release Video {#release-video}
+<!--  ## Release Video {#release-video}
 
-Have a look at the May 2024 Release Overview video for a summary of the features added in the 2024.5.0 release:
+Have a look at the June 2024 Release Overview video for a summary of the features added in the 2024.6.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3429503?quality=12)
+
+-->
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
