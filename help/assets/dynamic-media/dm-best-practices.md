@@ -72,7 +72,7 @@ For efficient asset organization that streamlines workflows, use one or more of 
 
     Ready to learn more? Go to [Organize assets using profiles](/help/assets/manage-collections.md).
 
-### Optimize the quality of your images
+### Optimize the quality of images
 
 Enhancing image quality requires careful consideration of various factors. It can be a time-intensive process. However, there are some tried-and-true practices that can help you achieve desirable results. Some of those best practices include how to obtain optimal image sizing, image sharpening, and the best image formats to use.
 
@@ -86,11 +86,25 @@ To assess these different commands' impact on image quality, you can upload an i
 
 Ready to try it? Launch [Dynamic Media Snapshot](https://snapshot.scene7.com/)
 
+### Standardize on styles applied to images
+
+Use Image Presets regularly in Dynamic Media to consistently and dynamically adjust image sizes, formats, and properties. Think of an Image Preset as a macro: it's a named set of commands for sizing and formatting. For example, if your site needs product images in various sizes and formats, with specific compression for desktop and mobile, Image Presets automate this process efficiently.
+
+Ready to try it? Go to [Fundamentals of creating image presets to render assets](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-e)
+
+### Adjust the focus and framing of images and videos
+
+Smart Crop is a feature in Dynamic Media that uses Adobe Sensei, Adobe's AI and machine learning framework, to automate the cropping of images and videos. It intelligently detects and focuses on the main subject or point of interest in an image or video, ensuring that the focal point is maintained across various screen sizes on desktop computers and mobile devices.
+
+A best practice is to create an Image Profile with Smart Crop. In the profile, you can define various screen sizes and let Adobe Sensei do the rest, ensuring that your images and videos are always optimized for the viewer's device.
+
+Ready to learn more? Watch [Using Smart Crop with AEM Assets Dynamic Media (6 minutes, 35 seconds)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) and [Using Dynamic Media Smart Crop for Video (6 minutes, 22 seconds)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video)
+
+### Techniques in Dynamic Media to improve SEO rankings
 
 
 
-
-
+Ready to learn more? Go to [Google image SEO best practices](https://developers.google.com/search/docs/appearance/google-images)
 
 
 ## Deliver assets to customers
