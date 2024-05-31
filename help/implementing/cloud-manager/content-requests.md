@@ -84,13 +84,13 @@ Agent: skyline-service-warmup/1.*|
 
 ### Overview {#overview}
 
-The Real Use Monitoring service is a type of performance monitoring technology that captures and analyzes the digital user experiences of a website or application in real-time. It provides visibility into the real-time performance of a web application and provides deeper insight into the end-user experience. 
+The Real Use Monitoring(RUM) service is a performance monitoring technology that captures and analyzes the digital user experiences of a website or application in real-time. It provides visibility into the real-time performance of a web application and provides deeper insight into the end-user experience. 
 
-With Real Use Monitoring , key performance metrics are tracked right from the initiation of the URL until the request is served back to the browser all of which helps the developers enhance the application to make it easy to use for the end users. 
+With RUM,key performance metrics are tracked right from the initiation of the URL until the request is served back to the browser all of which helps the developers enhance the application to make it easy to use for the end users. 
 
 ### Who Can Benefit from Real Use Monitoring Service? {#who-can-benefit-from-rum-service}
 
-Real Use Monitoring service is beneficial for all customers whether utilising Adobe's, or their own CDN. It offers a representative reflection of user interactions, ensuring a reliable measure of website engagement by capturing the number of Page Views on the client-side. 
+Real Use Monitoring service is beneficial for all customers. It offers a representative reflection of user interactions, ensuring a reliable measure of website engagement by capturing the number of Page Views on the client-side. 
 
 For all Adobe customers, this service provides valuable insights into user interactions. For customers employing their own CDN, can benefit from simplified traffic reporting, as Adobe now directly integrates the data collection, eliminating the need for separate reports during renewal cycles. 
 
@@ -98,23 +98,23 @@ Would you like to unlock the full potential of your website , then reach out to 
 
 ### Understand how the Real Use Monitoring Service Works {#understand-how-the-rum-service-works}
 
-Adobe Experience Manager uses Real Use Monitoring (RUM) to help customers and Adobe understand, how visitors are interacting with Adobe Experience Manager-powered sites, to diagnose performance issues, and to measure the effectiveness of experiments. RUM preserves the privacy of visitors through sampling - only a small portion of all page views will be monitored - and judicious exclusion of all personally identifiable information (PII). 
+Adobe Experience Manager uses Real Use Monitoring (RUM) to help customers and Adobe understand, how visitors are interacting with Adobe Experience Manager sites, to diagnose performance issues, and to measure the effectiveness of experiments. RUM preserves the privacy of visitors through sampling - only a small portion of all page views will be monitored - and no personally identifiable information (PII) is collected. 
 
 ### Real Use Monitoring Service and Privacy {#rum-service-and-privacy}
 
 The Real Use Monitoring service in Adobe Experience Manager is designed to preserve visitor privacy and minimize data collection. As a visitor, this means that no personal information will be collected by the site you are visiting or made available to Adobe. 
 
-As a site operator, this means no additional opt-in is required to enable monitoring through this feature.So, there will be no additional pop up for the end users to accept for enabling RUM monitoring. 
+As a site operator, this means no additional opt-in is required to enable monitoring through this feature.So, there will be no additional pop up for the end users to accept for enabling RUM. 
 
 ### Real Use Monitoring Service Data Sampling {#rum-service-data-sampling}
 
-Traditional web analytics solutions try to collect data on every single visitor. Adobe Experience Manager's Real Use Monitoring service only captures information from a small fraction of page views. The Real Use Monitoring service data is meant to be sampled and anonymized rather than a replacement for analytics. By default, pages will have a 1:100 sampling ratio. Site operators cannot configure this number to increase or decrease the sampling rate as of today. To estimate total traffic accurately,for every 100 page views, we gather detailed data from one, giving you a reliable approximation of overall traffic."
+Traditional web analytics solutions try to collect data on every single visitor. Adobe Experience Manager's RUM service only captures information from a small fraction of page views. The service is meant to be sampled and anonymized rather than a replacement for analytics. By default, pages will have a 1:100 sampling ratio. Site operators cannot increase or decrease the sampling rate at this time. To estimate total traffic accurately,for every 100 page views, we gather detailed data from 1, giving you a reliable approximation of overall traffic."
 
-As the decision of whether the data will be collected is made on a page view by page view basis, it becomes virtually impossible to track interactions across multiple pages. RUM has no concept of visits, visitors, or sessions, only of page views. This is by design.
+As the decision of whether the data will be collected is made on a page view by page view basis, it becomes virtually impossible to track interactions across multiple pages. By design, RUM has no concept of visits, visitors, or sessions, only of page views. .
 
 ### What Data is Being Collected {#what-data-is-being-collected}
 
-The Real Use Monitoring service is designed to prevent the collection of personally identifiable information. The full set of information that can be collected by Adobe Experience Manager's Real Use Monitoring service is listed below:
+The Real Use Monitoring service is designed to prevent the collection of personally identifiable information. The full set of information that can be collected by RUM is listed below:
 
 * The host name of the site being visited, for example: `experienceleague.adobe.com`
 * The broad user agent type and operating system that is used to display the page, such as: `desktop:windows` or `mobile:ios`
@@ -137,28 +137,22 @@ Real Use Monitoring, automatically monitors client-side traffic to provide you w
 RUM data is beneficial for the following purposes:
 
 * To identify and fix performance bottlenecks for customer sites
-* Streamlined, automatic traffic reporting that includes Page Views for customers using their own CDN, which means they do not have to share any traffic report with Adobe during their renewal cycles and we have got you covered.
+* Streamlined, automatic traffic lookup that includes Page Views.
 * To understand how Adobe Experience Manager interacts with other scripts (such as analytics, targeting, or external libraries) on the same page, in order to increase compatibility.
 
 ### Limitations and Understanding Variance in Page Views and Performance Metrics {#limitations-and-understanding-variance-in-page-views-and-performance-metrics}
 
-As you will analyze this data, there might or might not be variances in page views and other performance metrics reported by Real User Monitoring (RUM). These variances can be attributed to several factors inherent in real-time, client-side monitoring. Here are key considerations for customers to keep in mind when interpreting their RUM data:
+As you will analyze RUM data, there may be variances in Page Views and other performance metrics. These variances can be attributed to several factors inherent in real-time, client-side monitoring. Here are key considerations for customers to keep in mind when interpreting their RUM data:
 
 1. **Tracker blockers**
 
-   * End-users employing tracker blockers or privacy extensions can impede Real User Monitoring service's data collection, as these tools restrict the tracking scripts' execution. This restriction can lead to underreported page views and user interactions, creating a discrepancy between actual site activity and the data captured by RUM.
+   * End-users employing tracker blockers or privacy extensions can impede RUM data collection, as these tools restrict the tracking scripts' execution. This restriction may lead to underreported page views and user interactions, creating a discrepancy between actual site activity and the data captured by RUM.
 
-1. **Limitations in capturing API/JSON calls**
+1. **Limitations in capturing headless API/JSON calls**
 
-   * RUM data service focuses on the client-side experience and doesn't capture the backend API or JSON calls made from a non-AEM headless app at this time. The exclusion of these calls from Real Use Monitoring service data will create variances from the content requests measured by CDN Analytics.
+   * RUM data service focuses on the client-side experience and doesn't capture the backend API or JSON calls made from a non-AEM headless app at this time. The exclusion of these calls from RUM service data will create variances from the content requests measured by CDN Analytics.
 
 ### FAQ {#faq}
-
-1. **How can I opt-out?**
-
-We highly recommend using the Real Use Monitoring (RUM)  due to its significant benefits and that it can allow you to optimize your digital experiences. It can offers valuable insights that can help improve website performance.The service is designed to be seamless and has no impact on your website’s performance.
-
-Opting out means missing out on these insights. However, if you encounter any issues, our support team is here to help. 
 
 1. **Would Adobe be able to track all the page views before the interaction reaches the customer managed CDN or at the point when the interaction reaches the customer managed CDN?**
 
@@ -179,3 +173,9 @@ Opting out means missing out on these insights. However, if you encounter any is
 1. **Does RUM collection count toward content requests for contractual purposes?**
 
    Neither RUM library nor RUM collection count as content requests and will not increase the reported number of page views or API calls. Additionally, for customers who use out-of-the-box Adobe CDN with AEM as a Cloud Service, the server-side collection(add link to server side collection above) will be the basis for content requests.
+   
+1. **How can I opt-out?**
+
+We highly recommend using the Real Use Monitoring (RUM)  due to its significant benefits and that it can allow you to optimize your digital experiences. It can offers valuable insights that can help improve website performance.The service is designed to be seamless and has no impact on your website’s performance.
+
+Opting out means missing out on these insights. However, if you encounter any issues, our support team is here to help.
