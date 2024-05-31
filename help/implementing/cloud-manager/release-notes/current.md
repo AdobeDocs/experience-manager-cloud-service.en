@@ -25,6 +25,20 @@ The release date for Cloud Manager release 2024.6.0 in AEM as a Cloud Service is
 
 For a chance to test some upcoming features, be a part of Adobe's early adoption program.
 
+### Edge Delivery Services Support in Cloud Manager {#edge-delivery-services}
+
+If you have licensed Edge Delivery Services as part of Adobe Experience Manager Sites, [you can now onboard your site with Edge Delivery Services directly in Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md) and go live using a guided, self-service experience.
+
+This enables a unified experience for all of your AEM properties, ensuring consistency with all critical workflows including domain name management, SSL certificate management, and CDN mappings.
+
+If you are interested in testing this new feature and sharing your feedback, please send an email to ` Grp-AEMCS-CMEdgeDelSvs-Program-Adopter@adobe.com` from the email address associated with your Adobe ID. 
+
+### Domain Validated (DV) Certificates
+
+Cloud Manager now allows you to [self-service generate and manage domain validated (DV) SSL certificates.](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) This gives you the fastest, easiest, and most cost-effective solution to create a secure website for your online business.
+
+If you are interested in testing this new feature and sharing your feedback, please send an email to `Grp-aemcs-dv-dert-adopter@adobe.com` from the email address associated with your Adobe ID.
+
 ### Client-Side Collection via Real User Monitoring (RUM) {#rum}
 
 You can leverage the [Real User Monitoring (RUM) Data Service](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) to enable client-side collection for AEM as a Cloud Service.
