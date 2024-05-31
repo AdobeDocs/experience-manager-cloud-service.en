@@ -80,7 +80,6 @@ Agent: skyline-service-warmup/1.*|
 
 >[!INFO]
 >
->This feature is only available to the early adopter program. 
 >Client-side monitoring will only work for customers with AEM Cloud Service version **2023.11.14227** and above.
 
 ### Overview {#overview}
