@@ -77,7 +77,7 @@ Your video is available in GIF format for download. You can either save the edit
 
 * Only videos in the MP4 format are supported for editing.
 
-* The maximum source file size supported is 1GB.
+* The maximum source file size supported is 200 MB.
 
 * Supported videos are larger than 46 pixels and smaller than 3840 pixels on any side.
 
