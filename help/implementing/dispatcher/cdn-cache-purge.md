@@ -1,7 +1,7 @@
 ---
 title: Purging the CDN cache
 description: Learn how to remove cached objects from the Adobe CDN cache by configuring the purge API Token which can then be used in API calls.
-feature: Dispatcher
+feature: CDN Cache
 ---
 # Purging the CDN cache {#cdn-purge-cache}
 
@@ -37,7 +37,7 @@ curl
 -H 'X-AEM-Purge: soft'
 ```
 
-As shown in the example above, you can **optionally** specify if the CDN should perform a **hard** purge (default) or a **soft** purge on the cached objects. 
+As shown in the example above, you can **optionally** specify if the CDN should perform a **hard** purge (default) or a **soft** purge on the cached objects.
 
 The default hard purge makes the content immediately inaccessible to new requests until the content is retrieved from the origin. Soft purge marks content as stale, but still serves it to clients so they do not need to wait until the content is retrieved from the origin.
 
