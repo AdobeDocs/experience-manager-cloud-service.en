@@ -84,7 +84,7 @@ Agent: skyline-service-warmup/1.*|
 
 ### Overview {#overview}
 
-The Real Use Monitoring(RUM) service is a performance monitoring technology that captures and analyzes the digital user experiences of a website or application in real-time. It provides visibility into the real-time performance of a web application and provides deeper insight into the end-user experience. "Real User Monitoring" has been rebranded to "Real Use Monitoring". This new name better reflects the true essence of our service, which focuses on optimizing performance by monitoring website engagements, rather than the users themselves.
+The Real Use Monitoring(RUM) service is a performance monitoring technology that captures and analyzes the digital user experiences of a website or application in real-time. It provides visibility into the real-time performance of a web application and provides deeper insight into the end-user experience. "Real User Monitoring" has been rebranded to "Real Use Monitoring" simply because it better reflects the true essence of our service, which focuses on optimizing performance by monitoring website engagements, rather than the users themselves.
 
 With RUM,key performance metrics are tracked right from the initiation of the URL until the request is served back to the browser all of which helps the developers enhance the application to make it easy to use for the end users. 
 
