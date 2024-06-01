@@ -10,7 +10,7 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 Cloud Service content requests are measured via server-side collection of data. The collection is enabled via CDN log analysis.
 
 >[!NOTE]
->We are excited to announce the GA rollout (Link to Release Notes) for client-side collection enabled via Real Use Monitoring service measurement. With the GA rollout, Adobe will start monitoring client-side traffic for its customers automatically and there is no customer set up required. You can learn more by consulting the documentation in [this article](Update link).
+>We are excited to announce the GA rollout (Link to Release Notes) for Real Use Monitoring service, the client-side collection of data. It is an automated service and there is no customer set up required. You can learn more by consulting the documentation in [this article](Update link).
 
 ## Understanding Cloud Service Content Requests {#understanding-cloud-service-content-requests}
 
