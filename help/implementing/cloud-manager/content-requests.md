@@ -14,9 +14,9 @@ Cloud Service content requests are measured via server-side collection of data. 
 
 ## Understanding Cloud Service Content Requests {#understanding-cloud-service-content-requests}
 
-Content requests are automatically collected server-side at the edge of Adobe Experience Manager as a Cloud Service, via automated analysis of the log files originating from the AEM as a Cloud Service CDN. This is done by isolating the requests returning HTML `(text/html)` or JSON `(application/json)` content from the CDN, and based on several inclusion and exclusion rules detailed below. A content request occurs independently from the returned content being served from the CDN caches or the content going back to the origin of the CDN (AEM's dispatchers).
+Content requests are automatically collected server-side at the edge of Adobe Experience Manager as a Cloud Service, via automated analysis of the log files originating from AEM as a Cloud Service CDN. This is done by isolating the requests returning HTML `(text/html)` or JSON `(application/json)` content from the CDN, and based on several inclusion and exclusion rules detailed below. A content request occurs independently from the returned content being served from the CDN caches or the content going back to the origin of the CDN (AEM's dispatchers).
 
-The Real Use Monitoring service , the client-side collection, offers a more precise reflection of interactions, ensuring a reliable measure of website engagement. This gives customers advanced insights into their page traffic and performance. While this is beneficial for all customers, it offers a representative reflection of user interactions, ensuring a reliable measure of website engagement by capturing the number of Page Views on the client-side. 
+The Real Use Monitoring service ,client-side collection, offers a more precise reflection of interactions, ensuring a reliable measure of website engagement. This gives customers advanced insights into their page traffic and performance. While it is beneficial for all customers, it offers a representative reflection of user interactions, ensuring a reliable measure of website engagement by capturing the number of Page Views on the client-side. 
 
 For customers that bring their own CDN on top of AEM as a Cloud Service, server-side reporting will result in numbers that cannot be used to compare with the licensed content requests. With Real Use Monitoring (see link),Adobe can reflect a reliable measure of website engagement.
 
@@ -84,7 +84,7 @@ Agent: skyline-service-warmup/1.*|
 
 ### Overview {#overview}
 
-The Real Use Monitoring(RUM) service is a performance monitoring technology that captures and analyzes the digital user experiences of a website or application in real-time. It provides visibility into the real-time performance of a web application and provides deeper insight into the end-user experience. "Real User Monitoring" has been rebranded to "Real Use Monitoring." This new name better reflects the true essence of our service, which focuses on optimizing performance by monitoring website engagements, rather than the users themselves.
+The Real Use Monitoring(RUM) service is a performance monitoring technology that captures and analyzes the digital user experiences of a website or application in real-time. It provides visibility into the real-time performance of a web application and provides deeper insight into the end-user experience. "Real User Monitoring" has been rebranded to "Real Use Monitoring". This new name better reflects the true essence of our service, which focuses on optimizing performance by monitoring website engagements, rather than the users themselves.
 
 With RUM,key performance metrics are tracked right from the initiation of the URL until the request is served back to the browser all of which helps the developers enhance the application to make it easy to use for the end users. 
 
@@ -94,7 +94,7 @@ Real Use Monitoring service is beneficial for all customers. It offers a represe
 
 For all Adobe customers, this service provides valuable insights into user interactions. For customers employing their own CDN, can benefit from simplified traffic reporting, as Adobe now directly integrates the data collection, eliminating the need for separate reports during renewal cycles. 
 
-Would you like to unlock the full potential of your website , using our Early Adopter RUM Explorer platform to gain useful insights into your website engagement? This tool can provide insights into your page performance, including metrics on the number of clicks, Core Web Vitals (CWV), conversions, and customer journey maps. By utilizing these powerful insights, you can fine-tune your digital experiences to meet your users' needs more effectively. If you wish to learn more and get access,reach out to us at email "rum-explorer@adobe.com".
+Would you like to unlock the full potential of your website , using our Early Adopter RUM Explorer visualisation tool to gain useful insights into your website engagement? This tool can provide insights into your page performance, including metrics on the number of clicks, Core Web Vitals (CWV), conversions, and customer journey maps. By utilizing these powerful insights, you can fine-tune your digital experiences to meet your users' needs more effectively. If you wish to learn more and get access,reach out to us at email "rum-explorer@adobe.com".
 
 ### Understand how the Real Use Monitoring Service Works {#understand-how-the-rum-service-works}
 
