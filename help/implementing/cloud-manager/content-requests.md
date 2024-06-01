@@ -94,7 +94,7 @@ Real Use Monitoring service is beneficial for all customers. It offers a represe
 
 For all Adobe customers, this service provides valuable insights into user interactions. For customers employing their own CDN, can benefit from simplified traffic reporting, as Adobe now directly integrates the data collection, eliminating the need for separate reports during renewal cycles. 
 
-Would you like to unlock the full potential of your website , then reach out to us to be a part of our Early Adopter version of RUM Explorer platform. This tool can provide insights into your page performance, including metrics on the number of clicks, Core Web Vitals (CWV), conversions, and customer journey maps. By utilizing these powerful insights, you can fine-tune your digital experiences to meet your users' needs more effectively.Interested in learning more? Reach out to us at email  "xyz@adobe.com" today and start optimizing your digital strategy!
+Would you like to unlock the full potential of your website , using our Early Adopter RUM Explorer platform to gain useful insights into your website engagement? This tool can provide insights into your page performance, including metrics on the number of clicks, Core Web Vitals (CWV), conversions, and customer journey maps. By utilizing these powerful insights, you can fine-tune your digital experiences to meet your users' needs more effectively. If you wish to learn more and get access,reach out to us at email "rum-explorer@adobe.com".
 
 ### Understand how the Real Use Monitoring Service Works {#understand-how-the-rum-service-works}
 
