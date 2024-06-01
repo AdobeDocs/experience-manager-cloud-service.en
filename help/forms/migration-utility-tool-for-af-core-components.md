@@ -6,8 +6,8 @@ role: User, Developer, Admin
 features: core components
 hide: yes
 hidefromtoc: yes
+exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 ---
-
 # Introduction 
 
 You can use the migration utility to convert Adaptive Forms based on foundation components to core component-based forms. You can use the [AEM Modernize tool](https://opensource.adobe.com/aem-modernize-tools/) as a migration utility tool. The [AEM Modernize tools](https://opensource.adobe.com/aem-modernize-tools/) provide a suite of utilities used to convert Adaptive Forms based on foundation components to the modern and supported capabilities of core components.
@@ -148,5 +148,3 @@ You can now see that the Adaptive Form built on foundation components transforms
 
 * The form built on foundation components includes only those components found in the core component-based components.
 * Make sure that the rules are formatted in XML.
-
-
