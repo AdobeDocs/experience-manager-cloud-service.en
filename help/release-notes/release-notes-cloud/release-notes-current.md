@@ -83,11 +83,11 @@ Experience Manager Assets now enables you to quickly [publish assets to Experien
 
 This release brings a significant upgrade to the visual rule editor for adaptive forms based on core components. You can now: 
 
-  * Create rules in Visual Rule editor to [override default form submission success/failure handlers](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions). 
+  * Create rules in Visual Rule editor to [override default form submission success/failure messages](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers). 
   
   * In the Adaptive Forms Rule Editor, added the ability to [select different types of fields for the WHEN operation](/help/forms/rule-editor-core-components.md#allowed-multiple-fields-in-when).
   
-  * A form author can now apply custom functions to [preprocess data before submission](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions). 
+  * A form author can now apply custom functions to [preprocess data before submission](/help/forms/create-and-use-custom-functions.md#use-case-submit-altered-data-to-the-server). 
 
   * Use the [**Save as Draft**](/help/forms/save-core-component-based-form-as-draft.md) functionality to save partially completed forms for later submission. This is useful in scenarios where users need to interrupt filling out a form and come back to it later.
 
@@ -205,12 +205,10 @@ Similar to AEM 6.5, Apache/dispatcher will ingest rewrite maps placed in a speci
 
 The Adobe Managed CDN now supports [Edge Side Includes (ESI)](/help/implementing/dispatcher/edge-side-includes.md), a markup language for edge level dynamic web content assembly. By including ESI snippets, you can cache the overall HTML page at the CDN with higher TTLs, while more frequently fetching from origin those smaller sections that require higher cadence updates (lower TTLs). <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
-#### Real User Monitoring (RUM) Data Service (Early Adopter Program)
+#### Real Use Monitoring (RUM) Data Service (Early Adopter Program)
 
-* **[You can leverage the Real User Monitoring (RUM) Data Service](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** to enable client-side collection for AEM as a Cloud Service.
-Real User Monitoring (RUM) Data Service offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. It is a great opportunity to gain advanced insights into your page performance. While this is beneficial for customers who use either Adobe-managed CDN or non-Adobe-managed CDN. Additionally, for customers using a non-Adobe managed CDN, automated traffic reporting can now be enabled for them, thus removing the need to share any traffic report with Adobe.
-
-   If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-rum-adopter@adobe.com`, along with your domain name for each of the environments that you would like to enable RUM for from your email address associated with your Adobe ID. Adobe's product team will then enable the Real User Monitoring (RUM) Data Service for you.
+* **Real Use Monitoring (RUM) Data Service is now GA(/help/implementing/cloud-manager/content-requests.md#real-use-monitoring-for-aem-as-a-cloud-service)** enabling client-side collection of data for AEM as a Cloud Service.
+The Real Use Monitoring service , the client-side collection, offers a more precise reflection of interactions, ensuring a reliable measure of website engagement. It enables customers with advanced insights into their page traffic and performance. It is a great opportunity to learn more about your page performance and gain insights to improve it.
 
 ## [!DNL Experience Manager] Guides {#guides}
 

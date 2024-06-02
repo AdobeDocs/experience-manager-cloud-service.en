@@ -441,7 +441,7 @@ Let's learn how custom functions use field and global objects with the help of a
 
 ![Contact Us Form](/help/forms/assets/contact-us-form.png)
 
-+++ **Use Case**: Show a panel using the `SetProperty` rule
++++ Use Case: Show a panel using the `SetProperty` rule
 
 Add the following code in the custom function as explained in the [create-custom-function ](#create-custom-function) section, to set the form field as `Required`.
 
@@ -483,9 +483,8 @@ If errors are present in the fields of the `personaldetails` panel, they are dis
 
 ![Set Property Form Preview](/help/forms/assets/set-property-panel.png)
 
-+++
 
-+++ **Use Case**: Validate the field.
+####  Use Case: Validate the field.
 
 Add the following code in the custom function as explained in the [create-custom-function ](#create-custom-function) section, to validate the field.
 
@@ -525,9 +524,9 @@ If the user enters a valid phone number and all fields in the `personaldetails` 
 
 ![Email Address Validation Pattern](/help/forms/assets/validate-form-preview-form.png)
 
-+++
 
-+++ **Use Case**: Reset a panel
+
+#### Use Case: Reset a panel
 
 Add the following code in the custom function as explained in the [create-custom-function ](#create-custom-function) section, to reset the panel.
 
@@ -559,9 +558,9 @@ See the illustration below to display that if the user clicks the `clear` button
 
 ![Reset Form](/help/forms/assets/custom-function-reset-form.png)
 
-+++
 
-+++ **Use Case**: To display a custom message at the field level and marking the field as invalid
+
+#### Use Case: To display a custom message at the field level and marking the field as invalid
 
 You can use the `markFieldAsInvalid()` function to define a field as invalid and set custom error message at a field level. The `fieldIdentifier` value can be `fieldId`, or `field qualifiedName`, or `field dataRef`. The value of the object named `option` can be `{useId: true}`, `{useQualifiedName: true}`, or `{useDataRef: true}`. 
 The syntaxes used to mark a field as invalid and set a custom message are:
@@ -603,9 +602,9 @@ If the user enters more than 15 characters in the comments textbox, the field ge
 
 ![Mark field as valid Preview form](/help/forms/assets/custom-function-validfield-form.png)
 
-+++
 
-+++ **Use Case**: Submit altered data to the server
+
+#### Use Case: Submit altered data to the server
 
 The following line of code: 
 `globals.functions.submitForm(globals.functions.exportData(), false);` is used to submit the form data after manipulation. 
@@ -650,9 +649,9 @@ You can also inspect the console window to view the data submitted to the server
 
 ![Inspect data at the console window](/help/forms/assets/custom-function-submit-data-console-data.png)
 
-+++
 
-+++ **Use Case**: Override form submission success and error handlers 
+
+#### Use Case: Override form submission success and error handlers 
 
 Add the following line of code as explained in the [create-custom-function ](#create-custom-function) section, to customize the submission or failure message for form submissions and display the form submission messages in a modal box:
 
@@ -763,9 +762,8 @@ In case, the custom submission handler fails to perform as expected in existing 
 
 <!--
 
-+++
 
-+++ **Use Case**:  Perform actions in a specific instance of the repeatable panel 
+#### Use Case:  Perform actions in a specific instance of the repeatable panel 
 
 Rules created using the visual rule editor on a repeatable panel apply to the last instance of the repeatable panel. To write a rule for a specific instance of the repeatable panel, we can use a custom function.
 
@@ -796,9 +794,9 @@ Let us add a button labeled `Hide` to add a rule to hide a specific panel.
 Refer to the video below to demonstrate that when the `Hide` is clicked, the panel in the second repeatable instance hides:
 
 
-+++
 
-+++ **Usecase**: Pre-fill the field with a value when the form loads
+
+#### **Usecase**: Pre-fill the field with a value when the form loads
 
 Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to load the pre-filled value in a field when the form is initialized:
 
@@ -823,9 +821,9 @@ Refer to the screenshot below, which demonstrates that when the form loads, the 
 
 ![Import Data Rule](/help/forms/assets/cg)
 
-+++
 
-+++ **Usecase**: Set focus on the specific field
+
+#### **Usecase**: Set focus on the specific field
 
 Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to set focus on the specified field when the `Submit` button is clicked.:
 
