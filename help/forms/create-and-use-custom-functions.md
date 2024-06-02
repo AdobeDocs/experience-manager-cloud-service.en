@@ -441,7 +441,7 @@ Let's learn how custom functions use field and global objects with the help of a
 
 ![Contact Us Form](/help/forms/assets/contact-us-form.png)
 
-+++ Use Case: Show a panel using the `SetProperty` rule
+#### Use Case: Show a panel using the SetProperty rule
 
 Add the following code in the custom function as explained in the [create-custom-function ](#create-custom-function) section, to set the form field as `Required`.
 
@@ -484,7 +484,7 @@ If errors are present in the fields of the `personaldetails` panel, they are dis
 ![Set Property Form Preview](/help/forms/assets/set-property-panel.png)
 
 
-####  Use Case: Validate the field.
+#### Use Case: Validate the field.
 
 Add the following code in the custom function as explained in the [create-custom-function ](#create-custom-function) section, to validate the field.
 
