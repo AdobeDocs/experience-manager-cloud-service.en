@@ -652,7 +652,7 @@ You can also inspect the console window to view the data submitted to the server
 
 
 
-#### Override form submission success and error messages
+#### Override submission success and error messages for your adaptive form
 
 Add the following line of code as explained in the [create-custom-function ](#create-custom-function) section, to customize the submission or failure message for form submissions and display the form submission messages in a modal box:
 
