@@ -137,7 +137,7 @@ Real Use Monitoring, automatically monitors client-side traffic to provide you w
 RUM data is beneficial for the following purposes:
 
 * To identify and fix performance bottlenecks for customer sites
-* Streamlined, automatic traffic lookup that includes Page Views.
+* To streamline automated traffic lookup that includes Page Views.
 * To understand how Adobe Experience Manager interacts with other scripts (such as analytics, targeting, or external libraries) on the same page, in order to increase compatibility.
 
 ### Limitations and Understanding Variance in Page Views and Performance Metrics {#limitations-and-understanding-variance-in-page-views-and-performance-metrics}
