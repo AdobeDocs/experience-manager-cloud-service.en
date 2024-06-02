@@ -77,4 +77,4 @@ As a best practice, Adobe recommends specifying values in the rest of the fields
 3. For MP4 video export: 
 
    a) The maximum file size supported is 200 MB. If this limit exceeds, an alert message appears with a work around suggestion as shown in the image below
-   ![alert with workaround](/help/assets/assets/alert-with-workaround.png)
+   ![alert with workaround](/help/assets/assets/alert-with-workaround.png).
