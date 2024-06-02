@@ -3,6 +3,7 @@ title: Current Early Adopter features of [!DNL Adobe Experience Manager Forms] a
 description: Current Early Adopter features of [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 Feature: Introduction
 Role: developer, user
+exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 ---
 # AEM Forms Early Adopter Program
 
@@ -14,8 +15,7 @@ The AEM Forms Early Adopter Program program offers a unique opportunity to you t
 
 ## How to join the Early Adopter program? 
 
-If you're interested in joining our Early Adopter program for any early adopter innovation, simply send an email from your official address to `aem-forms-ea@adobe.com` to request access. You can request access to all or any specific innovation.  
-
+If you're interested in joining our Early Adopter program for any early adopter innovation, simply send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  to request access. You can request access to all or any specific innovation.  
 
 ## Early Adopter Innovations 
 
@@ -148,6 +148,15 @@ Here's a breakdown of what Doc Assurance APIs can do:
 Overall, [Doc Assurance APIs](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) help you improve document security and compliance by adding an extra layer of control.
 
 
+### Forms Service APIs
+
+Forms service generates interactive PDF forms for data capture. It can also be used to import/export data to/from an existing interactive PDF form and validate submitted data. Here's a breakdown of its functionalities: 
+
+* **Rendering Forms**: Generate an interactive PDF form from a template created using AEM Forms Designer and, optionally, XML data. This essentially produces a fillable PDF form optionally pre-filled with data.
+
+* **Data Extraction and Import**: Import data into an existing PDF form as well as extract data from a filled PDF form. Both XDP and XML data formats are supported, and importing to non-XFA PDF forms (also known as AcroForms) additionally supports FDF and XFDF data.
+
+* **Data Validation**: : Validate submitted data, in XDP or XML format, against a template created using AEM Forms Designer.
 
 ## See also
 
