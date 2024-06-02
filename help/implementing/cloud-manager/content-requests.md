@@ -172,7 +172,7 @@ As you will analyze RUM data, there may be variances in Page Views and other per
    
 1. **Does RUM collection count toward content requests for contractual purposes?**
 
-   Neither RUM library nor RUM collection count as content requests and will not increase the reported number of page views or API calls. Additionally, for customers who use out-of-the-box CDN with AEM as a Cloud Service, the server-side [server-side collection](#serverside-collection) will be the basis for content requests.
+   Neither RUM library nor RUM collection count as content requests and will not increase the reported number of page views or API calls. Additionally, for customers who use out-of-the-box CDN with AEM as a Cloud Service, [server-side collection](#serverside-collection) will be the basis for content requests.
    
 1. **How can I opt-out?**
 
