@@ -18,7 +18,7 @@ Content requests are automatically collected server-side at the edge of Adobe Ex
 
 The Real Use Monitoring service ,client-side collection, offers a more precise reflection of interactions, ensuring a reliable measure of website engagement. This gives customers advanced insights into their page traffic and performance. While it is beneficial for all customers, it offers a representative reflection of user interactions, ensuring a reliable measure of website engagement by capturing the number of Page Views on the client-side. 
 
-For customers that bring their own CDN on top of AEM as a Cloud Service, server-side reporting will result in numbers that cannot be used to compare with the licensed content requests. With Real Use Monitoring (see link),Adobe can reflect a reliable measure of website engagement.
+For customers that bring their own CDN on top of AEM as a Cloud Service, server-side reporting will result in numbers that cannot be used to compare with the licensed content requests. With [Real Use Monitoring](#real-use-monitoring-service-for-aem-as-a-cloud-service),Adobe can reflect a reliable measure of website engagement.
 
 ## Server-side Collection {#serverside-collection}
 
