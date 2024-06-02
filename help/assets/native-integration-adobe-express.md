@@ -22,11 +22,15 @@ Perform the following steps to start using AEM Assets in Adobe Express editor:
 
 1. Open the Adobe Express web application.
 
-1. Open a new blank canvas by loading a new template or a project, or by creating an asset.
+2. Open a new blank canvas by loading a new template or a project, or by creating an asset.
 
-1. Click **[!UICONTROL Assets]** available in the left navigation pane. Adobe Express  displays the list of repositories that you are entitled to access along with the list of assets and folders available at the root-level.
+3. Click **[!UICONTROL Assets]** available in the left navigation pane. Adobe Express  displays the list of repositories that you are entitled to access along with the list of assets and folders available at the root-level.
 
-1. Browse or search assets in your repository to drag & drop onto the canvas. You can filter assets using various available filters, such as, file type, MIME type, and dimensions.
+4. Browse or search assets in your repository to drag & drop onto the canvas. You can filter assets using various available filters, such as, file type, MIME type, and dimensions.
+
+   >[!NOTE]
+   >
+   >Filter by dimension does not apply to videos.
 
    ![Include assets from Assets add-on](assets/adobe-express-native-integration.png)
 
@@ -39,23 +43,38 @@ After incorporating appropriate modifications in the Express canvas, you can sav
 
    ![Save assets in AEM](assets/adobe-express-share.png)
 
-1. Select **[!UICONTROL AEM Assets]** from the **[!UICONTROL Storage]** section available in the right pane. Adobe Express displays the upload dialog.
-1. Specify a name and format for the asset. You can save the contents of the canvas in PNG or JPEG format types.
+2. From the Storage section in the right pane select, **AEM Assets**. Adobe Express displays the upload dialog.
+3. Specify a name and format for the asset. You can save the canvas contents in PNG, JPEG, PDF, MP4, MP4+PNG, or MP4+JPEG formats. The format automatically adjusts based on the asset(s).
+ 
+   >[!NOTE]
+   >
+   >Selecting "Current Page" saves the file in your destination folder. Selecting "All Pages" creates a new folder in your destination for all non-PDF files and saves them there while PDF files gets saved as a single file in the destination folder.
 
-1. Click the folder icon adjacent to the **[!UICONTROL Location]** field, navigate to the location where you need to save the asset, and click **[!UICONTROL Select]**. The name of the folder displays in the **[!UICONTROL Location]** field.
+4. Click the text area under **Destination Folder** to select a location and save the asset(s). 
 
-   ![Save assets in AEM](assets/adobe-express-upload.png)
+   ![Save assets in AEM](/help/assets/assets/page-selection-and-destination-folder.png)
 
-1. Optional: You can add campaign metadata for your upload using the **[!UICONTROL Project or campaign name]** field. You can use an existing name or create a new one. You can define multiple Project or Campaign names for your upload. While you are typing a name, either click anywhere else within the dialog box or press the `,` (Comma) key to register the name.
+5. Optional: You can add campaign metadata for your upload using the **Project or campaign name** field. You can use an existing name or create a new one. You can define multiple Project or Campaign names for your upload. To register the name, simply type the name and hit enter.
+As a best practice, Adobe recommends specifying values in the rest of the fields as well as it creates an enhanced search experience for your uploaded assets.
 
-   As a best practice, Adobe recommends specifying values in the rest of the fields as well as it creates an enhanced search experience for your uploaded assets.
-1. Similarly, define values for the **[!UICONTROL Keywords]** and **[!UICONTROL Channels]** fields.
+6. Similarly, define values for the **[!UICONTROL Keywords]** and **[!UICONTROL Channels]** fields.
 
-1. Click **[!UICONTROL Upload]** to upload the asset to AEM Assets.
+7. Click **[!UICONTROL Upload]** to upload the asset to AEM Assets.
 
    
 
 
 ## Limitations {#limitations}
 
-There is a known bug experienced by some users with access to more than one Assets repository when saving a document with assets from multiple repositories.
+1. For importing and exporting, the supported video file type is MP4.
+
+2. For MP4 video import: 
+
+   a) The maximum file size supported is 200 MB. If this limit exceeds, an alert message appears.
+   b) The maximum supported resolution is 3840 X 3840 pixels.
+   c) Videos with transparent backgrounds (alpha channel) are not supported.
+
+3. For MP4 video export: 
+
+   a) The maximum file size supported is 200 MB. If this limit exceeds, an alert message appears with a work around suggestion as shown in the image below
+   ![alert with workaround](/help/assets/assets/alert-with-workaround.png)
