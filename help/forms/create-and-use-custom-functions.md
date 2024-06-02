@@ -442,7 +442,7 @@ Let's learn how custom functions use field and global objects with the help of a
 
 ![Contact Us Form](/help/forms/assets/contact-us-form.png)
 
-#### Use Case: Show a panel using the SetProperty rule
+#### Show a panel using the SetProperty rule
 
 Add the following code in the custom function as explained in the [create-custom-function ](#create-custom-function) section, to set the form field as `Required`.
 
@@ -485,7 +485,7 @@ If errors are present in the fields of the `personaldetails` panel, they are dis
 ![Set Property Form Preview](/help/forms/assets/set-property-panel.png)
 
 
-#### Use Case: Validate the field.
+#### Validate a field.
 
 Add the following code in the custom function as explained in the [create-custom-function ](#create-custom-function) section, to validate the field.
 
@@ -527,7 +527,7 @@ If the user enters a valid phone number and all fields in the `personaldetails` 
 
 
 
-#### Use Case: Reset a panel
+#### Reset a panel
 
 Add the following code in the custom function as explained in the [create-custom-function ](#create-custom-function) section, to reset the panel.
 
@@ -561,7 +561,7 @@ See the illustration below to display that if the user clicks the `clear` button
 
 
 
-#### Use Case: To display a custom message at the field level and marking the field as invalid
+#### To display a custom message at the field level and marking the field as invalid
 
 You can use the `markFieldAsInvalid()` function to define a field as invalid and set custom error message at a field level. The `fieldIdentifier` value can be `fieldId`, or `field qualifiedName`, or `field dataRef`. The value of the object named `option` can be `{useId: true}`, `{useQualifiedName: true}`, or `{useDataRef: true}`. 
 The syntaxes used to mark a field as invalid and set a custom message are:
@@ -605,7 +605,7 @@ If the user enters more than 15 characters in the comments textbox, the field ge
 
 
 
-#### Use Case: Submit altered data to the server
+#### Alter captured data before submitting it
 
 The following line of code: 
 `globals.functions.submitForm(globals.functions.exportData(), false);` is used to submit the form data after manipulation. 
@@ -652,7 +652,7 @@ You can also inspect the console window to view the data submitted to the server
 
 
 
-#### Use Case: Override form submission success and error handlers 
+#### Override form submission success and error messages
 
 Add the following line of code as explained in the [create-custom-function ](#create-custom-function) section, to customize the submission or failure message for form submissions and display the form submission messages in a modal box:
 
