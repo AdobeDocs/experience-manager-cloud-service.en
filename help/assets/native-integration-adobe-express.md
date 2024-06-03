@@ -43,26 +43,19 @@ After incorporating appropriate modifications in the Express canvas, you can sav
 
    ![Save assets in AEM](assets/adobe-express-share.png)
 
-2. From the Storage section in the right pane select **AEM Assets**. Adobe Express displays the upload dialog.
-3. Specify a name and format for the asset. You can save the canvas contents in PNG, JPEG, PDF, MP4, MP4+PNG, or MP4+JPEG formats. The format automatically adjusts based on the asset(s).
- 
-   >[!NOTE]
-   >
-   >Selecting **Current Page** saves the file in your destination folder. Selecting **All Pages** creates a new folder in your destination for all non-PDF files and saves them there while PDF files gets saved as a single file in the destination folder.
-
-4. Click the folder icon under **Destination Folder** to select a location and save the asset(s). 
+2. From the Storage section in the right pane, select **AEM Assets**. Adobe Express displays the upload dialog.
+3. Select either **Current Page** or **All Pages** saving option. Selecting **Current Page** saves the file in your destination folder, however, selecting **All Pages** creates a new folder in your destination for all non-PDF files and saves them as separate files while PDF files gets saved as a single file in the destination folder.
+4. Specify a name and format for the asset. You can save the canvas contents in PNG, JPEG, PDF, MP4, MP4+PNG, or MP4+JPEG formats. The format automatically adjusts based on the asset(s).
+5. Click the folder icon under **Destination Folder** to select a location and save the asset(s). 
 
    ![Save assets in AEM](/help/assets/assets/page-selection-and-destination-folder.svg)
 
-5. Optional: You can add campaign metadata for your upload using the **Project or campaign name** field. You can use an existing name or create a new one. You can define multiple Project or Campaign names for your upload. To register the name, simply type the name and hit enter.
+6. Optional: You can add campaign metadata for your upload using the **Project or campaign name** field. You can use an existing name or create a new one. You can define multiple Project or Campaign names for your upload. To register the name, simply type the name and hit enter.
 As a best practice, Adobe recommends specifying values in the rest of the fields as well as it creates an enhanced search experience for your uploaded assets.
 
-6. Similarly, define values for the **[!UICONTROL Keywords]** and **[!UICONTROL Channels]** fields.
+7. Similarly, define values for the **[!UICONTROL Keywords]** and **[!UICONTROL Channels]** fields.
 
-7. Click **[!UICONTROL Upload]** to upload the asset(s) to AEM Assets.
-
-   
-
+8. Click **[!UICONTROL Upload]** to upload the asset(s) to AEM Assets.
 
 ## Limitations {#limitations}
 
@@ -70,13 +63,13 @@ As a best practice, Adobe recommends specifying values in the rest of the fields
 
 2. For MP4 video import: 
 
-   a) The maximum file size supported is 200 MB. If this limit exceeds, an alert message appears.
-   b) The maximum supported resolution is 3840 X 3840 pixels.
-   c) Videos with transparent backgrounds (alpha channel) are not supported.
+   1. The maximum file size supported is 200 MB. If this limit exceeds, an alert message appears.
+   2. The maximum supported resolution is 3840 X 3840 pixels.
+   3. Videos with transparent backgrounds (alpha channel) are not supported.
 
 3. For MP4 video export: 
 
-   a) The maximum file size supported is 200 MB. If this limit exceeds, an alert suggests trimming the video to 200 MB or less, or manually uploading it to the AEM Assets destination folder after downloading.
+   1. The maximum file size supported is 200 MB. If this limit exceeds, an alert suggests trimming the video to 200 MB or less, or manually uploading it to the AEM Assets destination folder after downloading.
 
    
    
