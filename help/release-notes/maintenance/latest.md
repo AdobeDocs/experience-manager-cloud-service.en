@@ -7,33 +7,40 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release X {#release-X}
+## Release 16461 {#release-16461}
 
-Summarized below are the continuous improvements for maintenance release X, which was publicly released on June X, 2024. The previous maintenance release was release 16461.
+Summarized below are the continuous improvements for maintenance release 16544, which was publicly released on June 4, 2024. The previous maintenance release was release 16461.
 
 2024.6.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-X}
+### Enhancements {#enhancements-16461}
+
+* GRANITE-41133: Support Jakarta Servlet API 5 and OSGi Servlet Whiteboard API
+* GRANITE-51355: Deprecate org.slf4j.event
+* GRANITE-51565: DT (Dynamic Group) AEM loses local group relationship with external group when local group is published from AEM
+* GRANITE-51707: Set the cookie saml_request_path during http redirect for authentication
+* GRANITE-52010: Update Jackrabbit version to 2.20.16
+* GRANITE-52057: Update Filevault to 3.7.3-T20240514105118-694f6aea fixing JCRVLT-745
+* GRANITE-52128: Update deprecation of commons-collections:commons-collections-3.2.2 in the SDK
+* SKYOPS-35998: Update 'Sling RepoInit' dependencies :  Repoinit Parser 1.9.0, Repoinit JCR 1.1.46
+
+### Fixed Issues {#fixed-issues-16461}
+
+* GRANITE-51375: idp-sync throws NPE if no intermediate path is specified
+
+### Known Issues {#known-issues-16461}
 
 None.
 
-### Fixed Issues {#fixed-issues-X}
-
-None.
-
-### Known Issues {#known-issues-X}
-
-None.
-
-### Deprecated Features and APIs {#deprecated-X}
+### Deprecated Features and APIs {#deprecated-16461}
 
 To know what is deprecated or removed in AEM as a Cloud Service, see [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md).
 
-### Embedded Technologies {#embedded-tech-X}
+### Embedded Technologies {#embedded-tech-16461}
 
 |Technology|Version|Link|
 |---|---|---|
-|AEM Oak | 1.62.0|[Oak API 1.62.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.62.0/index.html)| 
+|AEM Oak | 1.64.0|[Oak API 1.64.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.64.0/index.html)| 
 |AEM SLING API | 2.27.2 |[Apache Sling API 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL| 1.4.22-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
 |AEM Core Components| 2.25.4|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
