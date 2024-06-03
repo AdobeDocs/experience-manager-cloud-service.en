@@ -4,6 +4,29 @@ description: Troubleshooting failures of forms creation on AEM Forms as a Cloud 
 feature: Adaptive Forms, Troubleshooting
 role: User
 ---
+# Issue {#form-creation-fails}
+
+When a user updates to AEM Forms as a Cloud Service version ~ `2024.5.16461.20240524T172309Z`.
+
+* **Some users** may face issue while creating forms, the issue is such that when a user creates a form, the following error message pops up in the creation dialog box:
+
+    `A server error occurred. Try again after sometime.`
+
+## Cause {#cause-form-creation-fails}
+
+The issue occurs because the author publishes the form without **first publishing the template** used in it. This results in the addition of the `jcr:uuid` and other protected and system-generated properties to the `<template-path>/initial/jcr:content` node, causing failures in subsequent form creation.
+
+## Workaround {#resolution-form-creation-fails}
+
+To resolve the issue, perform the following steps:
+
+1. Ensure that the template you use in your form does not have the `jcr:uuid` and other system generated protected properties at the path `<template-path>/initial/jcr:content node`.
+1. Publish the template explicitly using the template console.
+1. Now, when your template is published, try creating new forms using the template.
+1. If the template you used updates in the future releases, Publish the template again (as given in the step 2) to prevent form creation failure issues.
+
+
+<!--
 
 # Issue {#form-creation-fails}
 
@@ -25,7 +48,7 @@ To resolve the issue, perform the following workaround steps:
 1. Now, when your template is published, try creating new forms using the template.
 1. If the template is changed in the future, publish it again as mentioned in the step 1.
 
-
+-->
 
 
 
