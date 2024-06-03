@@ -276,5 +276,5 @@ See also [3D formats supported](/help/assets/file-format-support.md#support-3d-f
 
 >[!MORELIKETHIS]
 >
->* [Asset processing using asset microservices](asset-microservices-overview.md)
+>* [Asset processing using asset microservices](asset-microservices-overview.md).
 >* [Supported file formats for smart tagging of text-based assets](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
