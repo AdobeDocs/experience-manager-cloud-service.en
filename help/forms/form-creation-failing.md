@@ -6,11 +6,11 @@ role: User
 ---
 # Issue {#form-creation-fails}
 
-When a user updates to AEM Forms as a Cloud Service version ~ `2024.5.16461`:
+After users update to AEM Forms as a Cloud Service version ~ `2024.5.16461`:
 
 **Some users** may face issue while creating forms, the issue is such that when a user creates a form, the following error message pops up in the creation dialog box:
 
-    `A server error occurred. Try again after sometime.`
+`A server error occurred. Try again after sometime.`
 
 ## Cause {#cause-form-creation-fails}
 
