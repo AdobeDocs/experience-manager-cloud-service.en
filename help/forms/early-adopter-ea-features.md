@@ -3,6 +3,7 @@ title: Current Early Adopter features of [!DNL Adobe Experience Manager Forms] a
 description: Current Early Adopter features of [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 Feature: Introduction
 Role: developer, user
+exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 ---
 # AEM Forms Early Adopter Program
 
