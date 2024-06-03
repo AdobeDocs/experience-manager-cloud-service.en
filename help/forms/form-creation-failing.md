@@ -17,12 +17,11 @@ To resolve the issue, perform the following workaround steps:
 
 1. Publish the template explicitly using the template console.
     
-    >[!Note]
+    >[!NOTE]
     > Prior to this step ensure that the (unpublished) template does not have `jcr:uuid` and other system generated properties under the initial content's `jcr:content node`. To sort out it, first, sanitize the template to publish it explicitly.
 
     >[!NOTE]
     > This action doesn't replicate the initial content node.
-
 1. Now, when your template is published, try creating new forms using the template.
 1. If the template is changed in the future, publish it again as mentioned in the step 1.
 
