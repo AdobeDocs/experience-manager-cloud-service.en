@@ -44,9 +44,11 @@ Adapt these Dynamic Media best practices to your specific context and project re
 
 Streamline your management of large numbers of assets efficiently. Ensure that only the appropriate, authorized content reaches your end-users by using Dynamic Media's **Selective Sync** and **Selective Publish** features.
 
-* **Selective Sync:** A proactive feature that lets you choose which assets to sync with Dynamic Media. For example, you might decide to sync only those folders containing assets that have received final approval. This workflow helps you maintain control over which assets are being prepared for delivery to your customers.
+* **Selective Sync:**
+A proactive feature that lets you choose which assets to sync with Dynamic Media. For example, you might decide to sync only those folders containing assets that have received final approval. This workflow helps you maintain control over which assets are being prepared for delivery to your customers.
 
-**Selective Publish:** After syncing your assets, Selective Publish gives you control over which assets are visible to your customers. This ability means you can govern which approved assets are actually delivered through your channels, ensuring that your customers see only the best and most relevant content.
+* **Selective Publish:**
+After syncing your assets, Selective Publish gives you control over which assets are visible to your customers. This ability means you can govern which approved assets are actually delivered through your channels, ensuring that your customers see only the best and most relevant content.
 
 These two best practices help you achieve better control, governance, and productivity over your rich-media content. Want to learn more? Go to [Configure Selective Publish at the folder level in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
 
@@ -57,20 +59,18 @@ These two best practices help you achieve better control, governance, and produc
 
 For efficient asset organization that streamlines workflows, use one or more of the following best practices: 
 
-* **Organize assets in folders:** Organizing assets effectively involves categorizing them into folders, similar to file organization on a computer. Proper naming, structuring subfolders, and file management within these folders are crucial for efficient asset processing. Implementing systematic naming conventions and metadata practices maximizes the utility of your digital asset repository. For detailed guidance on folder management, refer to the "Manage assets" section.
-    
-    Want to learn more? Go to [Organize assets in folders](/help/assets/organize-assets.md#organize-using-folders).
-* **Organize assets using tags:** Tagging assets enhances searchability, collection creation, and search ranking. Adobe Sensei's AI employs a self-learning algorithm for precise tagging, enabling quick asset retrieval. Adobe Sensei also recognizes and assigns relevant tags&ndash;including custom ones&ndash;to assets, simplifying asset management with automatic, descriptive tagging.
-
-    Want to learn more? Go to [Organize assets using tags](/help/assets/organize-assets.md#use-tags-to-organize-assets).
-
-* **Organize assets as collections:** Dynamic Media along with Experience Manager Assets allows for the efficient creation, editing, and sharing of asset collections among users. You can establish various collection types, including static lists and dynamic, search-based compilations. These collection types can be shared across diverse locations with customizable access and editing rights.
-
-    Want to learn more? Go to [Organize assets as collections](/help/assets/manage-collections.md).
-
-* **Organize assets using profiles:** A processing profile automates asset handling in designated folders, streamlining organization. Standardizing metadata, file names, and folder structures allows for consistent and precise application of these profiles as your digital asset collection expands.
-
-    Want to learn more? Go to [Organize assets using profiles](/help/assets/manage-collections.md).
+* **Organize assets in folders:**
+Organizing assets effectively involves categorizing them into folders, similar to file organization on a computer. Proper naming, structuring subfolders, and file management within these folders are crucial for efficient asset processing. Implementing systematic naming conventions and metadata practices maximizes the utility of your digital asset repository.
+Want to learn more? Go to [Organize assets in folders](/help/assets/organize-assets.md#organize-using-folders).
+* **Organize assets using tags:**
+Tagging assets enhances searchability, collection creation, and search ranking. Adobe Sensei's AI employs a self-learning algorithm for precise tagging, enabling quick asset retrieval. Adobe Sensei also recognizes and assigns relevant tags&ndash;including custom ones&ndash;to assets, simplifying asset management with automatic, descriptive tagging.
+Want to learn more? Go to [Organize assets using tags](/help/assets/organize-assets.md#use-tags-to-organize-assets).
+* **Organize assets as collections:**
+Dynamic Media along with Experience Manager Assets allows for the efficient creation, editing, and sharing of asset collections among users. You can establish various collection types, including static lists and dynamic, search-based compilations. These collection types can be shared across diverse locations with customizable access and editing rights.
+Want to learn more? Go to [Organize assets as collections](/help/assets/manage-collections.md).
+* **Organize assets using profiles:**
+A processing profile automates asset handling in designated folders, streamlining organization. Standardizing metadata, file names, and folder structures allows for consistent and precise application of these profiles as your digital asset collection expands.
+Want to learn more? Go to [Organize assets using profiles](/help/assets/manage-collections.md).
 
 ### Optimize the quality of images
 
@@ -80,7 +80,7 @@ Want to learn more? Go to [Best practices for optimizing the quality of your ima
 
 Because perception of image quality varies from person to person, sometimes a systematic approach to experimentation is essential for achieving desirable results. Adobe Experience Manager aids this process with more than 100 Dynamic Media commands for image enhancement.
 
-Want to learn more? Watch [Dynamic Media Snapshot (3 minutes, 17 seconds)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
+Want to learn more? Watch [Dynamic Media Snapshot](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) (3 minutes, 17 seconds).
 
 To assess these different commands' impact on image quality, you can upload an image to Dynamic Media, use the tool's interface at the specified URL, and apply the commands you want to try out. 
 
@@ -98,26 +98,31 @@ Smart Crop is a feature in Dynamic Media that uses Adobe Sensei, Adobe's AI and 
 
 A best practice is to create an Image Profile with Smart Crop. In the profile, you can define various screen sizes and let Adobe Sensei do the rest, ensuring that your images and videos are always optimized for the viewer's device.
 
-Want to learn more? Watch [Using Smart Crop with AEM Assets Dynamic Media (6 minutes, 35 seconds)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) and [Using Dynamic Media Smart Crop for Video (6 minutes, 22 seconds)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video)
+Want to learn more? Watch [Using Smart Crop with AEM Assets Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minutes, 35 seconds) and [Using Dynamic Media Smart Crop for Video](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) (6 minutes, 22 seconds).
 
-### Techniques to improve SEO rankings
+### Improve SEO rankings
 
 Use the following recommendations regularly to ensure that your images contribute effectively to your overall SEO strategy.
 
-* **Meaningful Image File Names:** Use descriptive file names that reflect the image content. For example, 
+* **Meaningful Image File Names:**
+Use descriptive file names that reflect the image content. For example, 
   * use `myCompany-Silver-Wrist-Watch`
   * *avoid* `myCompany_Silver_Wrist_Watch` or `myCompanySilverWristWatch`
-  
+
   Doing so helps search engines understand the image context and improves SEO. Also, be aware that Google prefers hyphens over underscores or concatenated words for word separation.
-* **Custom Domain:** Implement a custom domain that includes your company or brand name to reinforce brand recognition and trust. For example,
+* **Custom Domain:** 
+Implement a custom domain that includes your company or brand name to reinforce brand recognition and trust. For example,
 
   * use `http://images.mycompany.com/is/image/companyname/`
   * *avoid* `https://s7d1.scene7.com/is/image/folder/AdobeStock_28563982`
-* **SEO-Friendly Folder Structure:** Organize your images in a folder structure that includes your company name or brand for better indexing, like `http://images.mycompany.com/is/image/companyname/`.
-* **Dynamic Media Rule Sets:** Learn how you can conditionally transform URLs based on various factors, enhancing SEO and user experience.
+* **SEO-Friendly Folder Structure:**
+Organize your images in a folder structure that includes your company name or brand for better indexing, like `http://images.mycompany.com/is/image/companyname/`.
+* **Dynamic Media Rule Sets:**
+Learn how you can conditionally transform URLs based on various factors, enhancing SEO and user experience.
 Want to learn more? Go to [Use rule sets to transform URLs](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md).
-* **Smart Imaging and Smart Crop:** Use Smart Imaging and Smart Crop features in Dynamic Media to serve optimized and responsive images. Doing so not only improves page load times but also contributes positively to SEO rankings.
-Want to learn more? Go to [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md), or watch [Using Smart Crop with AEM Assets Dynamic Media (6 minutes, 35 seconds)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+* **Smart Imaging and Smart Crop:**
+Use Smart Imaging and Smart Crop features in Dynamic Media to serve optimized and responsive images. Doing so not only improves page load times but also contributes positively to SEO rankings.
+Want to learn more? Go to [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md), or watch [Using Smart Crop with AEM Assets Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minutes, 35 seconds).
 
 Remember, these best practices align well with Google's image SEO best practices. Such practices emphasize the importance of providing context and clarity to search engines through proper naming conventions, structured data, and optimized image delivery. 
 
@@ -126,55 +131,165 @@ Want to learn more? Go to [URL structure best practices for Google](https://deve
 
 ### Dynamically enhance images and create visual effects using commands
 
-Dynamic Media offers a suite of commands for enhancing images and creating visual effects dynamically, without the need for multiple static assets. Here are some brief explanations of a few of these processes and some examples to guide you:
+Dynamic Media offers a suite of commands for enhancing images and creating visual effects dynamically, without the need for multiple static assets. The following are some brief explanations of a few of these processes and some examples to guide you:
 
-* **Effects inside the source image:** 
+#### Effects inside the source image
 
-  1. **Upload and publish your original image:** In this example, a stock image of a watch with a white background.
+| Task | What to do |
+| --- | --- |
+| **Upload and publish your original image** | &bull; Start by uploading the original image to Dynamic Media.<br>&bull; Make sure that it is published and accessible through a URL.<br>&bull; In this example, a stock image of a watch with a white background (let's call it "Image X") is uploaded to Dynamic Media. |
+| **Create a Mask** | &bull; Develop a mask that defines the subject (the area where you want to apply effects) and the background (the area you want to change).<br>&bull; Masks are typically grayscale images, where white represents the subject, and black represents the background. You can create masks using tools like Adobe Photoshop.<br>Want to learn more? Go to [Creating and editing a quick mask in Photoshop](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html).<br>&bull; For "Image X," create a mask that precisely outlines the subject you want to enhance. For example, a person, an object, and so on. | 
+| **Apply Dynamic Media URL Commands for Effects** |  After you have your mask, use URL commands to apply effects like drop shadows or change the background color to "Image X." Here are two examples:<br><br> &bull; **Drop Shadow Effect:**<br>To add a drop shadow effect along the subject's boundary, edit the URL like this:<br>[https://s7g10.scene7.com/is/image/genaibeta/AdobeStock_754660022?size=400,400&extend=10,10,10,10&effect=-1&$shadow$&color=0,0,0](https://s7g10.scene7.com/is/image/genaibeta/AdobeStock_754660022?size=400,400&extend=10,10,10,10&effect=-1&$shadow$&color=0,0,0)<br>In this URL, the `$shadow$` parameter creates the shadow effect, and `color=0,0,0` sets the shadow color to black.<br>&bull; **Background color change:**<br>To change the background color, use the URL with a different background color value:<br>[https://s7g10.scene7.com/is/image/genaibeta/AdobeStock_754660022?size=400,400&extend=10,10,10,10&effect=-1&color=255,255,255](https://s7g10.scene7.com/is/image/genaibeta/AdobeStock_754660022?size=400,400&extend=10,10,10,10&effect=-1&color=255,255,255)<br> In this example, `color=255,255,255` sets the background color to white. Edit the background to a specific color for visual impact. |
 
-  1. **Create a Mask Image:** Use Adobe Photoshop to create a mask of the subject in the image.
+#### Add an image border
 
-     Want to learn more? Go to [Creating and editing a quick mask in Photoshop](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html)
+Dynamic Media lets you manipulate images directly through URLs, making it a powerful tool for creating dynamic digital experiences. The following are some examples. Let's start with the following original image URL: [https://s7d2.scene7.com/is/image/Adobe1/AdobeStock_754660022](https://s7d2.scene7.com/is/image/Adobe1/AdobeStock_754660022).
 
-  1. **Apply Dynamic Media Commands:** Use URL commands to apply effects like drop shadows or change the background color.
+| Task | What to do |
+| --- | --- |
+| **White Border** | To add a white border, use the following URL:<br>[https://s7g10.scene7.com/is/image/genaibeta/AdobeStock_754660022?size=400,400&extend=10,10,10,10](https://s7g10.scene7.com/is/image/genaibeta/AdobeStock_754660022?size=400,400&extend=10,10,10,10)<br>In this URL, the `extend=10,10,10,10` parameter specifies the border size of ten pixels on all sides. | 
+| **Blur Along the White Border** | To add a blur effect along the white border, you can edit the URL as follows:<br>[https://s7d2.scene7.com/is/image/Adobe1/AdobeStock_754660022?size=400,400&extend=10,10,10,10&effect=-1&op_blur=60&color=0,0,0](https://s7d2.scene7.com/is/image/Adobe1/AdobeStock_754660022?size=400,400&extend=10,10,10,10&effect=-1&op_blur=60&color=0,0,0)<br>In this URL, the `effect=-1` parameter applies the blur effect, and `op_blur=60` controls the blur intensity. |
+| **Blur Throughout the Inner Boundary** | To blur the entire inner boundary of the image, use this URL:<br>[https://s7g10.scene7.com/is/image/genaibeta/AdobeStock_754660022?size=400,400&extend=10,10,10,10&effect=-1&op_blur=60&color=0,0,0](https://s7g10.scene7.com/is/image/genaibeta/AdobeStock_754660022?size=400,400&extend=10,10,10,10&effect=-1&op_blur=60&color=0,0,0)<br>Similar to the previous example, the blur effect is applied, but this time it covers the entire image. |
+| **Drop Shadow Effect Along the Outer Boundary** | To add a drop shadow effect along the outer boundary, use this URL:<br>https://s7g10.scene7.com/is/image/genaibeta/AdobeStock_754660022?size=400,400&extend=10,10,10,10&effect=-1&$shadow$&color=0,0,0<br>The `$shadow$` parameter creates the shadow effect, and `color=0,0,0` sets the shadow color to black. |
 
-     * Apply a drop shadow: Add a shadow effect to make the subject pop.
-     * Change the background color: Modify the background to a specific color for visual impact.
+Feel free to experiment with these URLs to achieve the desired visual effects.
 
-* **Add an image border:**
+#### Create image overlays
 
-    Add a white border: Create a border around the image for a framed look.
-    Blur the border: Apply a blur effect to the border for a soft edge.
+If you are looking to superimpose a logo or icon on an existing image, Dynamic Media provides a straightforward way to achieve this using URL commands. Let's break down the steps.
 
-* **Create image overlays:**
+| Step | What to do |
+| --- | --- |
+| **Upload and Publish the Base Image** | First, upload and publish the base image on which you want to superimpose the logo or icon. You can use any image as your base.<br>For example, here is a base image:<br>[https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage). | 
+| **Upload and Publish the Logo or Icon Image** | Next, upload and publish the image that you want to superimpose over the base image. This image should be a transparent PNG with the logo or icon you want to overlay.<br>Here is the transparent PNG image of a star object with transparency effects that is going to be superimposed:<br>https://s7g10.scene7.com/is/image/genaibeta/starxp |
+| **Apply the Dynamic Media URL** | Now, create a Dynamic Media URL that combines the base image and the logo or icon image. You can use URL commands to achieve this effect.<br>The URL structure looks something like this:<br>[https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?layer=1&src=starxp&scale=1.25&posN=0.33,-.25&fmt=png](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?layer=1&src=starxp&scale=1.25&posN=0.33,-.25&fmt=png)<br>where<br>&bull; `hotspotRetailBaseImage` is the base image.<br>&bull; `starxp` is the logo/icon image.<br>&bull; `layer=1` specifies that the logo or icon should be layered over the base image.<br>&bull; `scale=1.25` adjusts the size of the logo/icon.<br>&bull; `posN=0.33,-.25` determines the position of the logo/icon relative to the base image.<br>&bull; `fmt=png` ensures that the output is in PNG format. |
 
-    Upload the base image: Upload the image you want to overlay onto.
-    Upload the overlay image: Upload a transparent PNG image of the object you want to overlay.
-    Apply Overlay Command: Use a URL command to superimpose the overlay image onto the base image.
+What to learn more? Go to [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) for more details on the `src` command and other Dynamic Media commands.
 
-* **Overlaying Promotional Text:**
 
-    Use text operators to add a promotional message directly onto the image.
+#### Overlaying Promotional Text
 
-* **Resizing and Cropping for Various Use Cases:**
+The following are the steps for overlaying a promotional text message on an image using HTML and CSS.
 
-    Create thumbnails, banners, and product display images by resizing and cropping the original image to fit different formats and dimensions.
+| Step | What to do |
+| --- | --- |
+| **Upload and Publish the Base Image** | First, upload and publish the base image on which you want to superimpose the text. You can use any image you like. For example, here's a sample base image:<br>[https://s7g10.scene7.com/is/image/genaibeta/FurnitureSofa](https://s7g10.scene7.com/is/image/genaibeta/FurnitureSofa)<br> |
+| **Apply Dynamic Media Text Operators** | Using Dynamic Media, you can apply text operators to overlay dynamic text directly onto the image. The following sample URL demonstrates this ability:<br>[https://s7g10.scene7.com/is/image/genaibeta/FurnitureSofa?layer=1&posN=-0.3,-0.455&text={\rtf1\ansi{\fonttbl{\f0+Arial;}}{\colortbl+\red255\green255\blue255;}\copyfit1000\vertalc\qc{\cf0\fs42+New+Collection}}&size=370,70&textAttr=130&bgcolor=FF3333&wid=600&hei=600](https://s7g10.scene7.com/is/image/genaibeta/FurnitureSofa?layer=1&posN=-0.3,-0.455&text={\rtf1\ansi{\fonttbl{\f0+Arial;}}{\colortbl+\red255\green255\blue255;}\copyfit1000\vertalc\qc{\cf0\fs42+New+Collection}}&size=370,70&textAttr=130&bgcolor=FF3333&wid=600&hei=600) |
 
-These commands allow for real-time image manipulation, providing flexibility and efficiency in managing digital assets. Be sure to consult the Dynamic Media documentation for detailed information on each command and its usage.
+#### Resizing and Cropping for Various Use Cases
+
+##### Image Resizing Basics
+
+Image resizing involves altering an image's dimensions, resolution, and file size. Here are some key points to consider:
+
+* **Pixel Composition:**
+Digital images consist of tiny dots called pixels. When an image is created, it has a specific number of pixels. Resizing involves adding or subtracting pixels to change the image's dimensions, resolution, and file size.
+* **Aspect Ratio:**
+Maintaining the aspect ratio (the relationship between width and height) is crucial to prevent distortion. Whether you're making an image larger (upscaling) or smaller (downscaling), preserving the aspect ratio ensures visual consistency.
+* **Quality Considerations:**
+Resizing can impact image quality. Avoid drastic upscaling, as it may lead to pixelation. Instead, consider reproducing the image at a larger size and resolution. For smaller images, use the appropriate tools to maintain resolution.
+
+##### Cropping versus Resizing
+
+Resizing and cropping are techniques in Dynamic Media that let you transform images to suit various use cases, whether it's creating thumbnails, banners, or product display images.
+
+* **Cropping:**
+Involves removing part of an image to alter its composition and framing. It does not change the overall dimensions but focuses on a specific area.
+* **Resizing:**
+Adjusts the entire image's dimensions, resolution, and file size while maintaining the aspect ratio.
+
+Let's explore a use case that involves the following living room image:
+
+* **Original living room image:**
+    [https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage)
+* **Thumbnail (200 px x 200 px):**
+        A smaller version suitable for quick loading or display.
+        [https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?wid=200&hei=200&fit=crop](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?wid=200&hei=200&fit=crop)
+* **Thumbnail with Crop (200 px x 200 px):**
+        Cropped to focus on the sofa area.
+        [https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?wid=200&hei=200&cropN=.24,.24,.6,.72&fit=crop](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?wid=200&hei=200&cropN=.24,.24,.6,.72&fit=crop)
+* **Product Display Image (800 px x 600 px):**
+        Cropped and resized for showcasing the sofa.
+        [https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?wid=800&hei=600&cropN=.24,.24,.6,.72&fit=crop](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?wid=800&hei=600&cropN=.24,.24,.6,.72&fit=crop)
+* **Banner (1720 px x 820 px):**
+        Derived from the original image, emphasizing the room.
+        [https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?wid=1720&hei=820&cropN=0,.1,1,1&fit=crop](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?wid=1720&hei=820&cropN=0,.1,1,1&fit=crop)
+
+Feel free to explore these variations for your specific needs.
+Want to learn more about the commands available within a URL? Go to [Command Reference](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference).
 
 ### Publish a video for my website
 
+* **Select a Video Profile:** 
+  First, in Dynamic Media, you should select a suitable video profile. You can opt for the *Adaptive Video Encoding* profile available in AEM Assets under Video Profiles. These pre-defined encoding settings ensure that your video is optimized for playback across various devices and bandwidth conditions. Alternatively, you can create your own Adaptive Video profile.
+* **Assign the Profile:**
+  Assign the chosen video profile to the folders where your video is going to be uploaded. This step ensures that the correct encoding settings are applied during the upload process.
+* **Upload the Original Video:**
+  Upload the original video file. Make sure it's a high-resolution video with good quality. The better the source video, the better the final result.
+* **Preview and Publish:**
+  Preview the video to ensure that everything looks as expected. Once satisfied, go ahead and publish it. This step makes the video accessible to your audience.
+* **Link or Embed:**
+  After publishing, you have two options.
+    * **Link Directly:**
+    Use the provided URL to link directly to the video. Hyperlink it appropriately on your marketing site.
+    * **Embed the Video:**
+    Copy the embed code provided and paste it into the HTML of your web page where you want the video to appear. Doing so allows the video to play directly on your site.
 
-
+Want to learn more? Go to [Video](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video). 
 
 ### Configure videos for optimal quality and engagement
 
+To ensure the best quality and engagement for your videos, consider implementing a combination of the following best practice strategies:
 
+* **Use the Built-in HTML5 Video Viewer:**
+        The Dynamic Media HTML5 Video Viewer Presets are robust video players. Use them to avoid common issues associated with HTML5 video playback and mobile devices.
+        These presets address challenges like adaptive bitrate streaming delivery and limited desktop browser reach.
+        Want to learn more? Go to [Best practice: Using the HTML 5 video viewer](/help/assets/dynamic-media/video.md#best-practice-using-the-html-video-viewer).
 
+* **Use Dynamic Media Video Profiles:**
+        Video profiles in Dynamic Media help with efficient video management, consistent quality, and adaptive streaming.
+        Want to learn more? Go to [Dynamic Media Video Profiles](/help/assets/dynamic-media/video-profiles.md).
 
-### Deliver multilingual videos
+* **Follow Best Practices for Video Encoding:**
+        Apply video encoding profiles that maintain the original video quality without excessive downscaling during encoding.
+        Want to learn more? Go to [Best practices for encoding videos](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
+* **Adopt Adaptive Streaming Instead of Progressive Streaming:**
+        Adaptive streaming adjusts video quality based on the viewer's Internet connection speed and device capabilities.
+        It uses protocols like HLS (HTTP Live Streaming) or DASH (Dynamic Adaptive Streaming over HTTP) to ensure optimal playback quality.
+        Unlike progressive streaming, which delivers videos linearly, adaptive streaming minimizes buffering and offers a seamless viewing experience.
 
+* **Enable DASH on your account (Digital Adaptive Streaming over HTTP):**
+        DASH dynamically serves video content by way of adaptive streaming.
+        To enable DASH, create a support ticket for your environment.
+        Want to learn more? Go to [Enable DASH on your Dynamic Media account](/help/assets/dynamic-media/video.md#enable-dash).
+
+### Internationalizing videos for multilingual consumption
+
+Internationalizing videos for multilingual consumption is essential for reaching a global audience. Dynamic Media provides features that can help you achieve this goal.
+
+* **Upload Your Videos:**
+     * First, create a video encoding profile. You can either use the predefined Adaptive Video Encoding profile that comes with Dynamic Media or create your own custom profile.
+     * Associate the video processing profile with one or more folders where you upload your primary source videos.
+     * Upload your primary source videos to these folders. Dynamic Media encodes them based on the assigned video processing profile.
+     * Dynamic Media primarily supports short-form videos (up to 30 minutes) with a minimum resolution greater than 25 &times; 25. Video files up to 15 GB each can be uploaded1.
+
+* **Manage Your Videos:**
+     * Organize, browse, and search video assets within AEM.
+     * Preview and publish video assets.
+     * View the source video and its encoded renditions along with associated thumbnails.
+     * Edit video properties such as title, description, and tags2.
+
+* **Localization:**
+     * For each target geography/language, create audio tracks and subtitles.
+     * Add these audio and subtitle tracks to your videos from the AEM interface.
+     * As users play the videos, they can select their preferred language for audio and subtitles.
+
+* **Publishing:**
+     * If you are using AEM as your Web Content Management (WCM) system, you can directly add videos to your web pages.
+     * If you are using a third-party WCM system, you can link or embed videos on your web pages using URLs or embed codes.
+
+Want to learn more? Go to [About multiple caption and audio track support for videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) or watch [Add multiple captions and audio tracks to a video](https://delivery-p106302-e1008131.adobeaemcloud.com/adobe/assets/urn:aaid:aem:daf9a222-9f7f-4333-b167-98cb4c63a1f8/play) (1 minutes, 41 seconds). 
 
 
 ## Deliver assets to customers
@@ -185,11 +300,16 @@ Dynamic Media Smart Imaging is a powerful tool that enhances image delivery perf
 
 Adobe recommends that you use Smart Imaging's capabilities rather than manually setting the image format to `webp` or `avif`. Here's why:
 
-* **Browser compatibility:** Smart Imaging ensures that the delivered image format is compatible with the user's browser.
-* **Optimal compression:** It selects the best format for compression based on the specific browser, network conditions, and screen resolution.
-* **Modern formats:** While `avif` is a newer format offering better compression, it is not universally supported across all browsers yet.
-* **Best practices:** To guarantee the best web-optimized format, you can trust Smart Imaging to make the format selection rather than manually using the commands `fmt=webp` or `fmt=avif`.
+* **Browser compatibility:**
+  Smart Imaging ensures that the delivered image format is compatible with the user's browser.
+* **Optimal compression:**
+  It selects the best format for compression based on the specific browser, network conditions, and screen resolution.
+* **Modern formats:**
+  While `avif` is a newer format offering better compression, it is not universally supported across all browsers yet.
+* **Best practices:**
+  To guarantee the best web-optimized format, you can trust Smart Imaging to make the format selection rather than manually using the commands `fmt=webp` or `fmt=avif`.
 
 By relying on Smart Imaging, you can ensure that your images are delivered in the most efficient manner possible, tailored to each user's browsing environment. This approach simplifies the process and can lead to improved performance in terms of image loading times and overall user experience.
 
 Want to learn more? Go to [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md)
+
