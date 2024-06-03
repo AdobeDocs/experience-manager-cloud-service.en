@@ -76,10 +76,6 @@ The default URL of your Brand Portal tenant is: `https://<tenant-id>.brand-porta
 
 Wherein, the Tenant id is the IMS org.
 
->[!NOTE]
->
-> You cannot create new JWT credentials from June 2024 onwards. Henceforth, only OAuth credentials are created.
-> See more [creating an OAuth configuration](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a).
 
 Perform the following steps if you are not sure of the Brand Portal URL:
 
@@ -187,14 +183,21 @@ Along with the automation workflow to activate Brand Portal on Experience Manage
 
 ## Manual configuration using Adobe Developer Console {#manual-configuration}
 
+>[!NOTE]
+>
+> You cannot create new JWT credentials from June 2024 onwards. Henceforth, only OAuth credentials are created.
+> See more [creating an OAuth configuration](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a).
+
 The following section describes how to manually configure Experience Manager Assets as a [!DNL Cloud Service] with Brand Portal using Adobe Developer Console. 
 
 Earlier, Experience Manager Assets as a [!DNL Cloud Service] was manually configured with Brand Portal via Adobe Developer Console, which procures an Adobe Identity Management Services (IMS) account token for authorization of the Brand Portal tenant. It requires configurations in both, Experience Manager Assets and Adobe Developer Console.
 
-1. In Experience Manager Assets, create an IMS account and generate a public key (certificate).
+1. [Create an OAuth configuration](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a).
+<!--1. In Experience Manager Assets, create an IMS account and generate a public key (certificate).-->
+
 1. In Adobe Developer Console, create a project for your Brand Portal tenant (organization).
-1. Under the project, configure an API using the public key to create a service account connection.
-<!--1. Get the service account credentials and JSON Web Token (JWT) payload information.
+<!--1. Under the project, configure an API using the public key to create a service account connection.
+1. Get the service account credentials and JSON Web Token (JWT) payload information.
 1. In Experience Manager Assets, configure the IMS account using the service account credentials and JWT payload.-->
 1. In Experience Manager Assets, configure the Brand Portal cloud service using the IMS account and Brand Portal endpoint (organization URL).
 1. Test your configuration by publishing an asset from Experience Manager Assets to Brand Portal.
@@ -215,12 +218,12 @@ You require the following to configure Experience Manager Assets with Brand Port
 
 Perform the following steps in the specified sequence to configure Experience Manager Assets with Brand Portal.
  
-1. [Obtain public certificate](#public-certificate)
-<!--1. [Create service account (JWT) connection](#createnewintegration)--> 
-1. [Configure IMS account](#create-ims-account-configuration)
+1. [Configure the OAuth credentials in the Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#credentials-in-the-developer-console)
+1. [Create a new Adobe IMS Integration using OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration)
+<!--1. [Obtain public certificate](#public-certificate)-->
+<!--1. [Create service account (JWT) connection](#createnewintegration) 
+1. [Configure IMS account](#create-ims-account-configuration)-->
 1. [Configure cloud service](#configure-the-cloud-service)
-
-Refer to [Setting Up IMS Integrations for AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service).
 
 <!--
 ### Create IMS configuration {#create-ims-configuration}
@@ -358,23 +361,25 @@ Ensure that you have performed the following steps:
 * [Obtain public certificate](#public-certificate)
 * [Create service account (JWT) connection](#createnewintegration)
 -->
-Perform the following steps to configure the IMS account. 
 
-1. Open the IMS Configuration and navigate to the **[!UICONTROL Account]** tab. You kept the page open while [obtaining the public certificate](#public-certificate).
+[Set Up IMS Integrations for AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service).
+
+<!--1. Open the IMS Configuration and navigate to the **[!UICONTROL Account]** tab. Keep the page open while [obtaining the public certificate](#public-certificate).
 
 1. Specify a **[!UICONTROL Title]** for the IMS account.
 
    In the **[!UICONTROL Authorization Server]** field, specify the URL: [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)  
-
-   <!--Specify client ID in the **[!UICONTROL API key]** field, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]** (JWT payload) that you have copied while [creating the service account (JWT) connection](#createnewintegration).-->
-
-   Click **[!UICONTROL Create]**.
+-->
+<!--
+1. Complete the configuration based on details from the [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/). Click **[!UICONTROL Create]**.
+-->
+   <!--Specify client ID in the **[!UICONTROL API key]** field, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]** (JWT payload) that you have copied while [creating the service account (JWT) connection](#createnewintegration).
 
    The IMS account is configured. 
 
    ![IMS Account configuration](assets/create-new-integration6.png)
 
-   
+ <!--  
 1. Select the IMS account configuration and click **[!UICONTROL Check Health]**.
 
    Click **[!UICONTROL Check]** in the dialog box. On successful configuration, a message appears that the *Token is retrieved successfully*.
@@ -386,6 +391,7 @@ Perform the following steps to configure the IMS account.
 >You must have only one IMS configuration.
 >
 >Ensure that the IMS configuration passes the health check. If the configuration does not pass the health check, it is invalid. You must delete it and create another valid configuration.
+-->
 
 ### Configure cloud service {#configure-the-cloud-service}
 
