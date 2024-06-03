@@ -2,6 +2,7 @@
 title: Configuring CDN Credentials and Authentication
 description: Learn how to configure CDN credentials and authentication by declaring rules in a configuration file that is then deployed by using the Cloud Manager Configuration Pipeline.
 feature: Dispatcher
+exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 ---
 # Configuring CDN Credentials and Authentication {#cdn-credentials-authentication}
 
