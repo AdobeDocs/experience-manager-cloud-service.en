@@ -194,11 +194,10 @@ Earlier, Experience Manager Assets as a [!DNL Cloud Service] was manually config
 
 1. [Create an OAuth configuration](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a).
 <!--1. In Experience Manager Assets, create an IMS account and generate a public key (certificate).-->
-
-1. In Adobe Developer Console, create a project for your Brand Portal tenant (organization).
 <!--1. Under the project, configure an API using the public key to create a service account connection.
 1. Get the service account credentials and JSON Web Token (JWT) payload information.
 1. In Experience Manager Assets, configure the IMS account using the service account credentials and JWT payload.-->
+1. In Adobe Developer Console, create a project for your Brand Portal tenant (organization).
 1. In Experience Manager Assets, configure the Brand Portal cloud service using the IMS account and Brand Portal endpoint (organization URL).
 1. Test your configuration by publishing an asset from Experience Manager Assets to Brand Portal.
 
