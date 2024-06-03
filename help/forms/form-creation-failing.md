@@ -4,7 +4,7 @@ description: Troubleshooting failures of forms creation on AEM Forms as a Cloud 
 feature: Adaptive Forms, Troubleshooting
 role: User
 ---
-# Issue {#form-creation-fails}
+# Issue while publishing forms{#form-creation-fails}
 
 After users update to AEM Forms as a Cloud Service version `2024.5.16461`:
 
