@@ -220,10 +220,10 @@ Perform the following steps in the specified sequence to configure Experience Ma
  
 1. [Configure the OAuth credentials in the Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#credentials-in-the-developer-console)
 1. [Create a new Adobe IMS Integration using OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration)
+1. [Configure cloud service](#configure-cloud-service)
 <!--1. [Obtain public certificate](#public-certificate)-->
 <!--1. [Create service account (JWT) connection](#createnewintegration) 
 1. [Configure IMS account](#create-ims-account-configuration)-->
-1. [Configure cloud service](#configure-the-cloud-service)
 
 <!--
 ### Create IMS configuration {#create-ims-configuration}
@@ -393,7 +393,7 @@ Ensure that you have performed the following steps:
 >Ensure that the IMS configuration passes the health check. If the configuration does not pass the health check, it is invalid. You must delete it and create another valid configuration.
 -->
 
-### Configure cloud service {#configure-the-cloud-service}
+### Configure cloud service {#configure-cloud-service}
 
 Perform the following steps to configure the Brand Portal cloud service:
 
