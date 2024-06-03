@@ -59,7 +59,7 @@ As a best practice, Adobe recommends specifying values in the rest of the fields
 
 6. Similarly, define values for the **[!UICONTROL Keywords]** and **[!UICONTROL Channels]** fields.
 
-7. Click **[!UICONTROL Upload]** to upload the asset to AEM Assets.
+7. Click **[!UICONTROL Upload]** to upload the asset(s) to AEM Assets.
 
    
 
