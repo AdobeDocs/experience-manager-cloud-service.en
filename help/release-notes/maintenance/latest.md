@@ -15,18 +15,18 @@ Summarized below are the continuous improvements for maintenance release 16544, 
 
 ### Enhancements {#enhancements-16544}
 
-* GRANITE-41133: Support Jakarta Servlet API 5 and OSGi Servlet Whiteboard API
-* GRANITE-51355: Deprecate org.slf4j.event
-* GRANITE-51565: DT (Dynamic Group) AEM loses local group relationship with external group when local group is published from AEM
-* GRANITE-51707: Set the cookie saml_request_path during http redirect for authentication
-* GRANITE-52010: Update Jackrabbit version to 2.20.16
-* GRANITE-52057: Update Filevault to 3.7.3-T20240514105118-694f6aea fixing JCRVLT-745
-* GRANITE-52128: Update deprecation of commons-collections:commons-collections-3.2.2 in the SDK
-* SKYOPS-35998: Update 'Sling RepoInit' dependencies :  Repoinit Parser 1.9.0, Repoinit JCR 1.1.46
+* GRANITE-41133: Support Jakarta Servlet API 5 and OSGi Servlet Whiteboard API.
+* GRANITE-51355: Deprecate org.slf4j.event.
+* GRANITE-51565: DT (Dynamic Group) AEM loses local group relationship with external group when local group is published from AEM.
+* GRANITE-51707: Set the cookie saml_request_path during http redirect for authentication.
+* GRANITE-52010: Update Jackrabbit version to 2.20.16.
+* GRANITE-52057: Update Filevault to 3.7.3-T20240514105118-694f6aea fixing JCRVLT-745.
+* GRANITE-52128: Update deprecation of commons-collections:commons-collections-3.2.2 in the SDK.
+* SKYOPS-35998: Update 'Sling RepoInit' dependencies :  Repoinit Parser 1.9.0, Repoinit JCR 1.1.46.
 
 ### Fixed Issues {#fixed-issues-16544}
 
-* GRANITE-51375: idp-sync throws NPE if no intermediate path is specified
+* GRANITE-51375: idp-sync throws NPE if no intermediate path is specified.
 
 ### Known Issues {#known-issues-16544}
 
