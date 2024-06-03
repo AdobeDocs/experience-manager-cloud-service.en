@@ -52,7 +52,7 @@ After incorporating appropriate modifications in the Express canvas, you can sav
 
 4. Click the text area under **Destination Folder** to select a location and save the asset(s). 
 
-   ![Save assets in AEM](/help/assets/assets/page-selection-and-destination-folder.png)
+   ![Save assets in AEM](/help/assets/assets/page-selection-and-destination-folder.svg)
 
 5. Optional: You can add campaign metadata for your upload using the **Project or campaign name** field. You can use an existing name or create a new one. You can define multiple Project or Campaign names for your upload. To register the name, simply type the name and hit enter.
 As a best practice, Adobe recommends specifying values in the rest of the fields as well as it creates an enhanced search experience for your uploaded assets.
@@ -76,5 +76,5 @@ As a best practice, Adobe recommends specifying values in the rest of the fields
 
 3. For MP4 video export: 
 
-   a) The maximum file size supported is 200 MB. If this limit exceeds, an alert message appears with a work around suggestion as shown in the image below
-   ![alert with workaround](/help/assets/assets/alert-with-workaround.png).
+   a) The maximum file size supported is 200 MB. If this limit exceeds, an alert message appears with a work around suggestion as shown in the image below.
+   ![alert with workaround](/help/assets/assets/alert-with-workaround.png)
