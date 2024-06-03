@@ -43,14 +43,14 @@ After incorporating appropriate modifications in the Express canvas, you can sav
 
    ![Save assets in AEM](assets/adobe-express-share.png)
 
-2. From the Storage section in the right pane select, **AEM Assets**. Adobe Express displays the upload dialog.
+2. From the Storage section in the right pane select **AEM Assets**. Adobe Express displays the upload dialog.
 3. Specify a name and format for the asset. You can save the canvas contents in PNG, JPEG, PDF, MP4, MP4+PNG, or MP4+JPEG formats. The format automatically adjusts based on the asset(s).
  
    >[!NOTE]
    >
-   >Selecting "Current Page" saves the file in your destination folder. Selecting "All Pages" creates a new folder in your destination for all non-PDF files and saves them there while PDF files gets saved as a single file in the destination folder.
+   >Selecting **Current Page** saves the file in your destination folder. Selecting **All Pages** creates a new folder in your destination for all non-PDF files and saves them there while PDF files gets saved as a single file in the destination folder.
 
-4. Click the text area under **Destination Folder** to select a location and save the asset(s). 
+4. Click the folder icon under **Destination Folder** to select a location and save the asset(s). 
 
    ![Save assets in AEM](/help/assets/assets/page-selection-and-destination-folder.svg)
 
@@ -76,5 +76,7 @@ As a best practice, Adobe recommends specifying values in the rest of the fields
 
 3. For MP4 video export: 
 
-   a) The maximum file size supported is 200 MB. If this limit exceeds, an alert message appears with a work around suggestion as shown in the image below.
-   ![alert with workaround](/help/assets/assets/alert-with-workaround.png)
+   a) The maximum file size supported is 200 MB. If this limit exceeds, an alert suggests trimming the video to 200 MB or less, or manually uploading it to the AEM Assets destination folder after downloading.
+
+   
+   
