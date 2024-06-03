@@ -217,7 +217,7 @@ You require the following to configure Experience Manager Assets with Brand Port
 Perform the following steps in the specified sequence to configure Experience Manager Assets with Brand Portal.
 
 1. [Configure the OAuth credentials in the Adobe Developer Console](#config-oauth)
-1. [Create a new Adobe IMS Integration using OAuth](create-ims-account-configuration)
+1. [Create a new Adobe IMS Integration using OAuth](#create-ims-account-configuration)
 1. [Configure cloud service](#configure-cloud-service)
 <!--1. [Obtain public certificate](#public-certificate)-->
 <!--1. [Create service account (JWT) connection](#createnewintegration) 
