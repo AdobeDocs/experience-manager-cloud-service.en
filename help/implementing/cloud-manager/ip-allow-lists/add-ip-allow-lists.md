@@ -2,6 +2,9 @@
 title: Adding IP Allow Lists
 description: Learn how to add your own IP allowlist using Cloud Manager.
 exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
+solution: Experience Manager
+feature: "Cloud Manager, Developing"
+role: "Admin, Architect, Developer"
 ---
 
 # Adding an IP Allow List {#add-ip-allow-list}

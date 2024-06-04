@@ -2,6 +2,9 @@
 title: Using git with Cloud Manager
 description: Learn how to use Cloud Manager's git repositories and how to integrate your own on-premise customer-managed git repository with Cloud Manager.
 exl-id: 57e71b8a-4546-4d7f-825c-a1637d08e608
+solution: Experience Manager
+feature: "Cloud Manager, Developing"
+role: "Admin, Architect, Developer"
 ---
 # Using git with Cloud Manager {#git-integration}
 

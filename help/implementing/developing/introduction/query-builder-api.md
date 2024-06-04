@@ -2,6 +2,8 @@
 title: Query Builder API
 description: The functionality of the Asset Share Query Builder is exposed through a Java&trade; API and a REST API.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
+feature: Developing
+role: "Admin, Architect, Developer"
 ---
 # Query Builder API {#query-builder-api}
 

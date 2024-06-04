@@ -2,6 +2,9 @@
 title: Checking DNS Record Status
 description: Learn how to determine whether your DNS settings are properly resolving by using Cloud Manager.
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
+solution: Experience Manager
+feature: "Cloud Manager, Developing"
+role: "Admin, Architect, Developer"
 ---
 # Checking DNS Record Status {#check-dns-record-status}
 

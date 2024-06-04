@@ -2,6 +2,9 @@
 title: Introduction to IP Allow Lists
 description: Learn how IP allowlists can limit from which addresses users can access domains on AEM as a Cloud Service.
 exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
+solution: Experience Manager
+feature: "Cloud Manager, Developing"
+role: "Admin, Architect, Developer"
 ---
 
 # Introduction to IP Allow Lists {#introduction}

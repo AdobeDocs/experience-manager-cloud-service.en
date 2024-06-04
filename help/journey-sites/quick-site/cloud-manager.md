@@ -2,6 +2,9 @@
 title: Understand Cloud Manager and the Quick Site Creation Workflow
 description: Learn about Cloud Manager and how it ties together the new Quick Site Creation process.
 exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
+solution: Experience Manager Sites
+feature: Developing
+role: "Admin, Developer"
 ---
 # Understand Cloud Manager and the Quick Site Creation Workflow {#understand-cloud-manager}
 

@@ -2,6 +2,9 @@
 title: Applying and Un-Applying IP Allow Lists 
 description: Learn how to apply and unapply IP allow lists to environments.
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
+solution: Experience Manager
+feature: "Cloud Manager, Developing"
+role: "Admin, Architect, Developer"
 ---
 
 # Applying and Un-Applying IP Allow Lists {#apply-allow-list}

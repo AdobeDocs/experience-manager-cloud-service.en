@@ -2,6 +2,8 @@
 title: AEM as a Cloud Service Development Guidelines
 description: Learn guidelines for developing on AEM as a Cloud Service and about important ways in which it differs from AEM on premises and AEM in AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
+feature: Developing
+role: "Admin, Architect, Developer"
 ---
 # AEM as a Cloud Service Development Guidelines {#aem-as-a-cloud-service-development-guidelines}
 

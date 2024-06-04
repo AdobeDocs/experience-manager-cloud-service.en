@@ -2,6 +2,9 @@
 title: Set Up Your Pipeline
 description: Create a front-end pipeline to manage the customization of your site's theme.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
+solution: Experience Manager Sites
+feature: Developing
+role: "Admin, Developer"
 ---
 # Set up Your Pipeline {#set-up-your-pipeline}
 

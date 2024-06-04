@@ -2,6 +2,8 @@
 title: Local AEM Development with the Universal Editor
 description: Learn how the Universal Editor supports editing on local AEM instances for development purposes.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
+feature: Developing
+role: "Admin, Architect, Developer"
 ---
 
 # Local AEM Development with the Universal Editor {#local-dev-ue}

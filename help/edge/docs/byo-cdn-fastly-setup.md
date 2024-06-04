@@ -3,6 +3,7 @@ description: The following screenshots illustrate how to configure Fastly to del
 title: Fastly Setup
 feature: Edge Delivery Services
 exl-id: 90986139-9c7f-4b63-b24d-c199b4d4dff0
+role: "Admin, Architect, Developer"
 ---
 # Fastly Setup
 

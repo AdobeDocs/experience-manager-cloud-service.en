@@ -2,6 +2,8 @@
 title: Naming Conventions
 description: Nodes in the repository are subject to naming conventions of the Java Content Repository
 exl-id: 3c5c39dd-b209-488b-a93e-e840786fe224
+feature: Developing
+role: "Admin, Architect, Developer"
 ---
 # Naming Conventions{#naming-conventions}
 

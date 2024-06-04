@@ -2,6 +2,9 @@
 title: Experience Audit Dashboard
 description: Learn how Experience Audit validates your deployment process and helps ensure that changes deployed meet baseline standards for performance, accessibility, best practices, and SEO through a clear, informative dashboard interface.
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
+solution: Experience Manager
+feature: "Cloud Manager, Developing"
+role: "Admin, Architect, Developer"
 ---
 
 # Experience Audit Dashboard {#experience-audit-dashboard}

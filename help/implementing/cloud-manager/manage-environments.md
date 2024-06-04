@@ -2,6 +2,9 @@
 title: Managing Environments
 description: Learn about the types of environments that you can create and how to create them for your Cloud Manager project.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
+solution: Experience Manager
+feature: "Cloud Manager, Developing"
+role: "Admin, Architect, Developer"
 ---
 
 # Managing Environments {#managing-environments} 

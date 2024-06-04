@@ -2,6 +2,8 @@
 title: Create Program
 description: Learn how to set up a new program and pipeline to deploy the add-on.
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
+feature: Onboarding
+role: "Admin, User, Developer"
 ---
 
 # Create Program {#creating-a-program}

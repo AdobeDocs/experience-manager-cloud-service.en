@@ -2,6 +2,8 @@
 title: Components Overview
 description: Components are modular units which realize specific functionality to present your content on your website
 exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
+feature: Developing
+role: "Admin, Architect, Developer"
 ---
 # Components Overview {#components-overview}
 

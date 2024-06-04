@@ -2,6 +2,9 @@
 title: Editing Programs
 description: Learn how to edit your production and sandbox programs to adjust their options after you have created them.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
+solution: Experience Manager
+feature: "Cloud Manager, Developing"
+role: "Admin, Architect, Developer"
 ---
 
 # Editing Programs {#editing-programs}

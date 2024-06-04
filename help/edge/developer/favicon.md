@@ -3,6 +3,7 @@ description: 'Adding a favicon to your site gives it a professional look in your
 title: Favicon
 feature: Edge Delivery Services
 exl-id: e5225611-8bc7-4239-96db-83f7819410d7
+role: "Admin, Architect, Developer"
 ---
 # Favicon
 
