@@ -2,6 +2,9 @@
 title: Functional Testing
 description: Learn about the three different types of functional testing built into the AEM as a Cloud Service deployment process to ensure quality and reliability of your code.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 
 # Introduction {#functional-testing-introduction}

@@ -2,6 +2,9 @@
 title: Page Diff
 description: The page diff feature allows for the convenient side-by-side comparison of two pages with their differences highlighted.
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Page Diff {#page-diff}
 

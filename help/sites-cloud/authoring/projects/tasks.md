@@ -2,6 +2,9 @@
 title: Working with Tasks
 description: Tasks represent items of work to be done on content and are used in projects to determine the level of completeness of current tasks
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Working with Tasks {#working-with-tasks}
 
