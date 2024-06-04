@@ -974,12 +974,14 @@ user-guide-title: AEM as a Cloud Service
     + [Managing Environments](/help/implementing/cloud-manager/manage-environments.md)
     + Managing your Code {#managing-code}
       + [Maven Project Version Handling](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
-      + [Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
+      + [Managing Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
+      + [Adding Adobe Repositories](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+      + [Adding Private Repositories](/help/implementing/cloud-manager/managing-code/private-repositories.md)
       + [Accessing Repositories](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+      + [Git Submodule Support](/help/implementing/cloud-manager/managing-code/git-submodules.md)
       + [Using git with Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
       + [Using Multiple Repositories](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
       + [Enterprise Development Team Setup](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
-      + [Working with Your Own GitHub Repositories](/help/implementing/cloud-manager/managing-code/byo-github.md)
     + [Environment Variables](/help/implementing/cloud-manager/environment-variables.md)
     + Cloud Manager CI-CD Pipelines {#cicd-pipelines}
       + [Introduction](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)

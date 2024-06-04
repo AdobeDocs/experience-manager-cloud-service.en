@@ -1,62 +1,9 @@
 ---
-title: Cloud Manager Repositories
-description: Learn how to create, view, and delete your git repositories in Cloud Manager.
-exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
+title: Git Submodule Support
+description: Learn how you can use Git submodules to merge the content of multiple branches across git repositories at build time.
 ---
 
-# Cloud Manager Repositories {#cloud-manager-repos} 
-
-Learn how to create, view, and delete your git repositories in Cloud Manager.
-
->[!NOTE]
->
->There is a limit of 300 repositories across all programs in any given company or IMS organization.
-
-## Adding and Managing Repositories {#add-manage-repos}
-
-Follow these steps view and manage repositories in Cloud Manager.
-
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
-
-1. From the **Program Overview** page, select the **Repositories** tab to switch to the **Repositories** page.
-
-1. Click **Add Repository**.
-
-   ![Add repository button](/help/implementing/cloud-manager/assets/repos/create-repo2.png)
-  
-1. Enter the name and description as requested and click **Save**.
-
-   ![Add Repository dialog](/help/implementing/cloud-manager/assets/repos/repo-1.png)
-
-When the wizard closes, your new repository is displayed in the table.
-
-You can select the repository in the table and click the ellipsis button and select **Copy Repository URL**, **View &amp; Update**, or **Delete**.
-
-![Repository options](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
-
-Repositories created in Cloud Manager will also be available for you to select when adding or editing pipelines. See [CI-CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) to learn more.
-
-There is a single primary repository or a branch for any given pipeline. With [git submodule support](#git-submodule-support), many secondary branches can be included at build time.
-
->[!NOTE]
->
->A user must have the role **Deployment Manager** or **Business Owner** to be able to add a repository.
-
-## Deleting a Repository {#delete-repo}
-
-Deleting a repository will:
-
-* Make the deleted repository name unusable for new repositories that may be created in the future.
-   * The error message `Repository name should be unique within organization.` is shown in such cases.
-* Make the deleted repository unavailable in Cloud Manager and unavailable for linking to a pipeline.
-
-Follow these to delete a repository in Cloud Manager.
-
-1. From the **Program Overview** page, click the **Repositories** tab and navigate to the **Repositories** page.
-
-1. Select the repository and click the ellipsis button and select **Delete** to delete the repository.
-
-## Git Submodule Support {#git-submodule-support}
+# Git Submodule Support {#git-submodule-support}
 
 Git submodules can be used to merge the content of multiple branches across git repositories at build time.
 
@@ -113,7 +60,7 @@ This results in a `.gitmodules` file similar to the following.
 
 More information on git submodules can be found in the [Git Reference Manual.](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
 
-### Limitations and Recommendations {#limitations-recommendations}
+## Limitations and Recommendations {#limitations-recommendations}
 
 When using git submodules, be aware of the following limitations.
 

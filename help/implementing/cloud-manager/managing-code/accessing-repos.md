@@ -1,24 +1,24 @@
 ---
-title: Accessing Repositories
-description: Learn how to access and manage your git repository using the self-service git account management from Cloud Manager.
+title: Repository Access Information
+description: Learn how to access and manage your Adobe-managed git repositories using the self-service git account management from Cloud Manager.
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 ---
 
-# Accessing Repositories {#accessing-repos}
+# Repository Access Information {#accessing-repos}
 
-Learn how to access and manage your git repository using the self-service git account management from Cloud Manager.
+Learn how to access and manage your Adobe-managed git repositories using the self-service git account management from Cloud Manager.
 
-## Using Self-Service Repository Account Management {#self-service-repos}
+## Accessing Repository Info from the Overview Page {#overview-page}
 
-Cloud Manager makes it easy to retrieve your repository info by using the **Access Repo Info** button available prominently on the pipeline card.
+Cloud Manager makes it easy to retrieve your repository access information for Adobe-managed repositories by using the **Access Repo Info** button available prominently on the pipeline card.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. Navigate to **Pipelines** card from your **Program Overview** page and find the **Access Repo Info** button to access and manage your git Repository.
+1. Navigate to **Pipelines** card from your **Program Overview** page.
 
-   ![Access Repo Info button on Environments card](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
+   ![Access Repo Info button on Environments card](assets/pipelines-card.png)
 
-1. Click the **View Repo Info** button to open a dialog to view:
+1. Tap or click the **Access Repo Info** button to open the **Repository Info** dialog and view:
 
    * The URL to the Cloud Manager git repository.
    * The git username.
@@ -26,15 +26,16 @@ Cloud Manager makes it easy to retrieve your repository info by using the **Acce
 
    ![Repo Info View](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
 
-Using these credentials, the user can clone a local copy of the repository, and make changes in that local repository, and when ready can commit any code changes back to the remote code repository in Cloud Manager.
-
-The **Access Repo Info** option is also available on the **Non-Production** pipeline tab of the **Pipelines** card.
-
-![Access Repo Info button on non-production tab](/help/implementing/cloud-manager/assets/repos/access-repo-nonprod.png)
+Using these credentials, you can clone a local copy of the repository, make changes in that local repository, and when ready commit any code changes back to the remote code repository in Cloud Manager.
 
 >[!NOTE]
 >
->The **Access Repo Info** option is visible to users with **Developer** or **Deployment Manager** roles.
+>* The **Access Repo Info** option is visible to users with **Developer** or **Deployment Manager** roles.
+>* The **Access Repo Info** button only displays the repository access information for Adobe-managed repositories. Access information about [private repositories](private-repositories.md) is not available in Cloud Manager.
+
+## Accessing Repository Information from the Repositories Window {#repositories-window}
+
+An **Access Repo Info** button is also available in the toolbar of the [**Repositories** window.](managing-repositories.md) it displays the same information about accessing Adobe-managed repositories.
 
 ## Revoking an Access Password {#revoke-password}
 
