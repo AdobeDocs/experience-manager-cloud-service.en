@@ -55,11 +55,11 @@ To install and configure the AEM Modernize Tools:
 Perform the following steps to install AEM Modernize Tools to your local AEM Forms environment:
 
 1. Open the command prompt or terminal.
-2. Start the local AEM Author Service. For example, execute the following code from the to start local AEM Author instance:
+1. Start the local AEM Author Service. For example, execute the following code from the to start local AEM Author instance:
 
     `java -jar aem-author-p4502.jar`
 
-3. Clone the [AEM Modernize Tool](https://git.corp.adobe.com/livecycle/forms-modernizer/tree/convertForms) repository in your local system.
+1. Clone the [AEM Modernize Tool](https://git.corp.adobe.com/livecycle/forms-modernizer/tree/convertForms) repository in your local system.
 
     ```Shell 
 
@@ -69,8 +69,8 @@ Perform the following steps to install AEM Modernize Tools to your local AEM For
 
     After executing the command successfully, you have a local copy of the AEM Modernize Tool repository available on your machine.
 
-4. Navigate to the`[AEM Modernize Tool Repository]`  in your local system.
-5. Run the following command: 
+1. Navigate to the`[AEM Modernize Tool Repository]`  in your local system.
+1. Run the following command: 
 
     ```Shell
         mvn clean install 
@@ -88,10 +88,10 @@ After successful installation, the AEM Modernize Tools becomes available for you
 To enable and use the AEM Modernize Tools for your AEM Environment, it is important to map the rules for migrating Foundation Components to Core Components:
 
 1. Log in to your author instance.
-2. Navigate to `http://[host]:[port]/system/console/configMgr`
-3. Find and edit the `AEM Modernize Tools - Component Rewrite Rule Service`.
-4. Add the `Component Rule Paths` as `/apps/forms-modernizer/rules`. 
-5. Click **Save** to save the changes.
+1. Navigate to `http://[host]:[port]/system/console/configMgr`
+1. Find and edit the `AEM Modernize Tools - Component Rewrite Rule Service`.
+1. Add the `Component Rule Paths` as `/apps/forms-modernizer/rules`. 
+1. Click **Save** to save the changes.
 
 ![AEM Modernize Component Rule](/help/forms/assets/aem-modernize-tools-component-rule.png)
 
@@ -101,32 +101,32 @@ To enable and use the AEM Modernize Tools for your AEM Environment, it is import
    
    ![Select AEM Modernize Tools](/help/forms/assets/aem-modernize-tools-select-form.png)
 
-2. Select the **[!UICONTROL Forms Conversion]** option.
+1. Select the **[!UICONTROL Forms Conversion]** option.
    
    ![Select Forms Conversion option](/help/forms/assets/aem-modernize-forms-conversion.png)
 
-3. Click **Create** to create a new job.
+1. Click **Create** to create a new job.
 
     ![AEM Modernize Tools Create Job](/help/forms/assets/aem-modernize-tools-create-job.png)
 
-4. Specify the **[!UICONTROL Job Name]**.
-5. In the **[!UICONTROL Form]** tab, you can select one of the following options:
+1. Specify the **[!UICONTROL Job Name]**.
+1. In the **[!UICONTROL Form]** tab, you can select one of the following options:
    * **None** : Select the option if you do not want to create a copy of the Foundation Component based forms before starting the form conversion.
    * **Restore** : Select the option to restore the form to the state it was in before starting the form conversion.
    * **Copy to Target**: Select the option to create a copy of the Foundation Component based forms before starting the form conversion.
   In our case, the **Copy to Target** option is selected. If the **Copy to Target** option is selected, the **[!UICONTROL Source Path]** and **[!UICONTROL Target Path]** options become visible.
 
 1. Specify the `source folder` name in the **[!UICONTROL Source Path]**.
-2. Specify the `target folder` name in the **[!UICONTROL Target Path]**.
-3. Select **[!UICONTROL Next]**.
-4. Click on **[!UICONTROL Add Forms]**. All the forms in the `source folder` appears on the screen.
-5. Select the Adaptive Forms based on Foundation Components to convert it to Core Component based forms. You can also select multiple forms.
+1. Specify the `target folder` name in the **[!UICONTROL Target Path]**.
+1. Select **[!UICONTROL Next]**.
+1. Click on **[!UICONTROL Add Forms]**. All the forms in the `source folder` appears on the screen.
+1. Select the Adaptive Forms based on Foundation Components to convert it to Core Component based forms. You can also select multiple forms.
 
     ![AEM Modernize Tools Select Form](/help/forms/assets/aem-modernize-tools-select-form.png)
 
-6. Click **[!UICONTROL Select]**.
-7. Click **[!UICONTROL Schedule Job]** to start the conversion process.
-8. Click **[!UICONTROL Convert]** from the **[!UICONTROL Convert Pages]** dialog box.
+1. Click **[!UICONTROL Select]**.
+1. Click **[!UICONTROL Schedule Job]** to start the conversion process.
+1. Click **[!UICONTROL Convert]** from the **[!UICONTROL Convert Pages]** dialog box.
 
    ![AEM Modernize Tools Convert Pages](/help/forms/assets/aem-modernize-tools-convert-form.png)
 
@@ -134,10 +134,10 @@ To enable and use the AEM Modernize Tools for your AEM Environment, it is import
 
    ![AEM Modernize Tools Success](/help/forms/assets/aem-modernize-tools-success.png)
 
-9.  Select the Adaptive Form and select > **[!UICONTROL Properties]**. The Form Properties page opens. 
+1.  Select the Adaptive Form and select > **[!UICONTROL Properties]**. The Form Properties page opens. 
      ![AEM Modernize Tools Destination Folder](/help/forms/assets/aem-modernize-tools-destination-folder.png)
 
-10. Select **[!UICONTROL Save and Close]** to save the properties of the converted form again.
+1. Select **[!UICONTROL Save and Close]** to save the properties of the converted form again.
     ![AEM Modernize Tools Adpative Form Properties](/help/forms/assets/aem-modernize-tools-af-properties.png)
 
 You can now see that the Adaptive Form built on Foundation Components transforms into the Adaptive Form built on Core Components. 
