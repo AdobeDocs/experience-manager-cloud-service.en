@@ -1,19 +1,15 @@
 ---
 title: Create and add custom functions in an Adaptive Form
-description: AEM Forms support custom functions which allow users to create and use their own functions within the rule editor.
+description: AEM Forms support custom functions, which allow users to create and use their own functions within the rule editor.
 keywords: Add a custom function, use a custom function, create a custom function, use custom function in rule editor.
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
+mini-toc-levels: 4
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 ---
 
-<span class="preview"> This article contains content for some pre-release features. These pre-release features are accessible only through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). The features under the pre-release program are: 
-* Optional parameter support in custom functions
-* Caching feature for custom functions
-* Global scope object and field objects support for custom functions
-* Support for modern JavaScript features like let and arrow functions(ES10 support). 
-Ensure that the [core component is set to version 3.0.8](https://github.com/adobe/aem-core-forms-components) to use pre-release features in custom fuction. </span>
+<span class="preview"> This article contains `Override form submission success and error handlers` as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).
 
 # Custom functions in Adaptive Forms (Core Components)
 
@@ -25,6 +21,10 @@ Ensure that the [core component is set to version 3.0.8](https://github.com/adob
 ## Introduction
 
 AEM Forms supports custom functions, allowing users to define JavaScript functions for implementing complex business rules. These custom functions extend the capabilities of forms by facilitating manipulation and processing of entered data to meet specified requirements. They also enable dynamic alteration of form behavior based on predefined criteria. 
+
+>[!NOTE]
+>
+> Ensure that the [core component](https://github.com/adobe/aem-core-forms-components) is set to the latest version to use the latest features.
 
 ### Uses of custom functions {#uses-of-custom-function}
 
@@ -38,11 +38,11 @@ Custom functions are essentially client libraries that are added in the JavaScri
 
 ### Supported JavaScript annotations for custom function {#js-annotations}
 
-JavaScript annotations are used to provide metadata for JavaScript code. It includes comments that start with specific symbols for example, /** and @. The annotations provide important information about functions, variables, and other elements in the code. Adaptive Form supports the following JavaScript annotations for custom functions:
+JavaScript annotations are used to provide metadata for JavaScript code. It includes comments that start with specific symbols, for example, /** and @. The annotations provide important information about functions, variables, and other elements in the code. Adaptive Form supports the following JavaScript annotations for custom functions:
 
 #### Name
 
-  The name is used to identify the custom function in the rule editor of an Adaptive form. Following syntaxes are used to name a custom function:
+  The name is used to identify the custom function in the rule editor of an Adaptive Form. The following syntaxes are used to name a custom function:
 
   * `@name [functionName] <Function Name>`
   * `@function [functionName] <Function Name>`
@@ -78,7 +78,7 @@ The parameter type is not case-sensitive and spaces are not allowed in the param
 
 **Optional Parameters**
 By default, all parameters are mandatory. You can define a parameter as optional by either adding `=` after the parameter type or enclosing the parameter name in  `[]`. Parameters defined as optional in JavaScript annotations are displayed as optional in the rule editor. 
-To define a variable as an optional parameter, you can use the any of the following syntaxes:
+To define a variable as an optional parameter, you can use any of the following syntaxes:
   
 * `@param {type=} Input1`
 
@@ -115,15 +115,15 @@ Consider the following code snippet, where input2 is defined as an optional para
         }
 ```
 
-The following illustration displays using the `OptionalParameterFunction` csutom function in the rule editor:
+The following illustration displays using the `OptionalParameterFunction` custom function in the rule editor:
 
 ![Optional or required parameters ](/help/forms/assets/optional-default-params.png) 
 
-You can save the rule without specifying a value for required parameters, but the rule is not executed and displays a warning message as:
+You can save the rule without specifying a value for the required parameters, but the rule is not executed and displays a warning message as:
 
 ![incomplete rule warning](/help/forms/assets/incomplete-rule.png)
 
-When user leaves the optional parameter empty, then the "Undefined" value is passed to the custom function for the optional parameter.
+When the user leaves the optional parameter empty, then the "Undefined" value is passed to the custom function for the optional parameter.
 
 To learn more about how to define optional parameters in JSDocs, [click here](https://jsdoc.app/tags-param).
     
@@ -149,10 +149,10 @@ To learn more about how to define optional parameters in JSDocs, [click here](ht
 
 #### Private
 
-  The custom function, declared as private, does not appear in the list of custom functions in the rule editor of an Adaptive form. By default, custom functions are public. The syntax to declare custom function as private is `@private`.
+  The custom function declared as private, does not appear in the list of custom functions in the rule editor of an Adaptive form. By default, custom functions are public. The syntax to declare custom function as private is `@private`.
 
 
-## Guidelines while creating custom functions {#considerations}
+## Guidelines while creating custom functions
 
 To list the custom functions in the rule editor, you can use any one of the following formats:
 
@@ -222,7 +222,7 @@ Steps to create custom functions are:
 
 ### Create a client library {#create-client-library}
 
-You can add custom functions by adding client library. To create a client library, perform the following steps:
+You can add custom functions by adding a client library. To create a client library, perform the following steps:
 
 1. [Clone your AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
 1. Create a folder under the `[AEM Forms as a Cloud Service repository folder]/apps/` folder. For example, create a folder named as `experience-league`.
@@ -235,7 +235,7 @@ You can add custom functions by adding client library. To create a client librar
 
 1. Create a folder named `js`.
 1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` folder.
-1. Add a JavaScript file, for example, `function.js`. The file comprises the code for custom function.
+1. Add a JavaScript file, for example, `function.js`. The file comprises the code for the custom function.
 1. Save the `function.js` file.
 1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` folder.
 1. Add a text file as `js.txt`. The file contains:
@@ -257,7 +257,7 @@ You can add custom functions by adding client library. To create a client librar
 
 1. [Run the pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) to deploy the custom function.
 
-Once the pipeline is executed successfully, the custom function added in client library becomes available in your [Adaptive Form rule editor](/help/forms/rule-editor-core-components.md). 
+Once the pipeline is executed successfully, the custom function added in the client library becomes available in your [Adaptive Form rule editor](/help/forms/rule-editor-core-components.md). 
 
 ### Add client library to an Adaptive Form{#use-custom-function}
 
@@ -276,9 +276,9 @@ Once you have deployed your client library to your Forms CS environment, use its
 
 1. Click **[!UICONTROL Done]**.
 
-You can use the custom function in the [rule editor of an Adaptive Form](/help/forms/rule-editor-core-components.md) using the [Javascript annotations](##js-annotations).
+You can use the custom function in the [rule editor of an Adaptive Form](/help/forms/rule-editor-core-components.md) using the [JavaScript annotations](##js-annotations).
 
-## Using custom function in an Adaptive Form
+## Using a custom function in an Adaptive Form
 
 In an Adaptive Form, you can use [custom functions within the rule editor](/help/forms/rule-editor-core-components.md). Let us add the following code to the JavaScript file (`Function.js` file) to calculate age based on the Date of Birth(YYYY-MM-DD). Create a custom function as `calculateAge()` which takes the date of birth as input and returns age:
 
@@ -316,7 +316,45 @@ Let's preview the form to observe how the custom functions are implemented throu
 
 >[!NOTE]
 >
-> You can refer to the following [custom function](/help/forms/assets//customfunctions.zip) folder. Download and install this folder in your AEM instance using the [Package manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
+> You can refer to the following [custom function](/help/forms/assets//customfunctions.zip) folder. Download and install this folder in your AEM instance using the [Package Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
+
+
+### Set the dropdown list options using custom functions
+
+Rule Editor in Core Components does not support the **Set Options of** property to set the dropdown list options at runtime. However, you can set the dropdown list options using custom functions.
+
+Look at the code below to see how we can set the dropdown list options using custom functions:
+
+```javascript
+    /**
+    * @name setEnums
+    * @returns {string[]}
+    **/
+    function setEnums() {
+    return ["0","1","2","3","4","5","6"];   
+    }
+
+    /**
+    * @name setEnumNames
+    * @returns {string[]}
+    **/
+    function setEnumNames() {
+    return ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    }
+
+```
+
+In the above code, `setEnums` is used to set the `enum` property and `setEnumNames` is used to set the `enumNames` property of dropdown.
+
+Let's create a rule for the `Next` button, which sets the value of dropdown list option when the user clicks the `Next` button:
+
+![Drop-down list options](/help/forms/assets/drop-down-list-options.png)
+
+Refer to the illustration below to demonstrate where the options of the dropdown list are set upon clicking the Display button:
+
+![Drop down options in rule Editor](/help/forms/assets/drop-down-option-rule-editor.png)
+
+
 
 ### Support for asynchronous functions in custom functions {#support-of-async-functions}
 
@@ -360,7 +398,7 @@ To see its working, let us add a button and create a rule for the button that in
 
  ![creating rule for async function](/help/forms/assets/rule-for-async-funct.png)
 
-Refer to the illustration of the console window below to demonstrate that when the user clicks the `Fetch` button, the custom function `callAsyncFunction` is invoked, which in turn calls an asynchronous function `asyncFunction`. Inspect the console window to view the response upon the button click:
+Refer to the illustration of the console window below to demonstrate that when the user clicks the `Fetch` button, the custom function `callAsyncFunction` is invoked, which in turn calls an asynchronous function `asyncFunction`. Inspect the console window to view the response to the button click:
 
  ![Console window](/help/forms/assets/async-custom-funct-console.png)
 
@@ -372,7 +410,7 @@ You can use custom functions to add personalized features to forms. These functi
 
 ### Field and Global scope objects in custom functions {#support-field-and-global-objects}
 
-Field objects refers to the individual components or elements within a form, such as text fields, checkboxes. The Globals object contains read-only variables such as form instance, target field instance and methods to do form modifications within custom functions. 
+Field objects refer to the individual components or elements within a form, such as text fields, checkboxes. The Globals object contains read-only variables such as form instance, target field instance and methods to do form modifications within custom functions. 
 
 >[!NOTE]
 >
@@ -400,11 +438,11 @@ Field objects refers to the individual components or elements within a form, suc
 
 In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form. -->
 
-Let's learn how custom functions use field and global objects with the help of a `Contact Us` form using different usecases.
+Let's learn how custom functions use field and global objects with the help of a `Contact Us` form using different use cases.
 
 ![Contact Us Form](/help/forms/assets/contact-us-form.png)
 
-#### **Use Case**: Show a panel using the `SetProperty` rule
+#### Show a panel using the SetProperty rule
 
 Add the following code in the custom function as explained in the [create-custom-function ](#create-custom-function) section, to set the form field as `Required`.
 
@@ -446,7 +484,8 @@ If errors are present in the fields of the `personaldetails` panel, they are dis
 
 ![Set Property Form Preview](/help/forms/assets/set-property-panel.png)
 
-#### **Use Case**: Validate the field.
+
+#### Validate a field.
 
 Add the following code in the custom function as explained in the [create-custom-function ](#create-custom-function) section, to validate the field.
 
@@ -486,7 +525,9 @@ If the user enters a valid phone number and all fields in the `personaldetails` 
 
 ![Email Address Validation Pattern](/help/forms/assets/validate-form-preview-form.png)
 
-#### **Use Case**: Reset a panel
+
+
+#### Reset a panel
 
 Add the following code in the custom function as explained in the [create-custom-function ](#create-custom-function) section, to reset the panel.
 
@@ -518,16 +559,18 @@ See the illustration below to display that if the user clicks the `clear` button
 
 ![Reset Form](/help/forms/assets/custom-function-reset-form.png)
 
-#### **Use Case**: To display custom message at the field level and marking the field as invalid
+
+
+#### To display a custom message at the field level and marking the field as invalid
 
 You can use the `markFieldAsInvalid()` function to define a field as invalid and set custom error message at a field level. The `fieldIdentifier` value can be `fieldId`, or `field qualifiedName`, or `field dataRef`. The value of the object named `option` can be `{useId: true}`, `{useQualifiedName: true}`, or `{useDataRef: true}`. 
-The syntaxes used to mark field as invalid and set custom message are:
+The syntaxes used to mark a field as invalid and set a custom message are:
 
 * `globals.functions.markFieldAsInvalid(field.$id,"[custom message]",{useId: true});`
 * `globals.functions.markFieldAsInvalid(field.$qualifiedName, "[custom message]", {useQualifiedName: true});`
 * `globals.functions.markFieldAsInvalid(field.$dataRef, "[custom message]", {useDataRef: true});`
 
-Add the following code in the custom function as explained in the [create-custom-function ](#create-custom-function) section, to enable custom message at the field level.
+Add the following code in the custom function as explained in the [create-custom-function ](#create-custom-function) section, to enable a custom message at the field level.
 
 ```javascript
 
@@ -556,12 +599,13 @@ See the demonstration below to display that entering negative feedback in the `c
 
 ![Mark field as Invalid Preview form](/help/forms/assets/custom-function-invalidfield-form.png)
 
-If the user enters more than 15 characters in commments textbox, the field gets validated and form is submitted:
+If the user enters more than 15 characters in the comments textbox, the field gets validated and the form is submitted:
 
 ![Mark field as valid Preview form](/help/forms/assets/custom-function-validfield-form.png)
 
 
-#### **Use Case**: Submit altered data to the server
+
+#### Alter captured data before submitting it
 
 The following line of code: 
 `globals.functions.submitForm(globals.functions.exportData(), false);` is used to submit the form data after manipulation. 
@@ -594,7 +638,7 @@ Add the following code in the custom function as explained in the [create-custom
 
 In this example, if the user leaves the `comments` textbox empty, the `NA` is submitted to the server at form submission.
 
-Now create a rule for the `Submit` button which submits data:
+Now, create a rule for the `Submit` button that submits data:
 
 ![Submit data](/help/forms/assets/custom-function-submit-data.png)
 
@@ -606,6 +650,261 @@ You can also inspect the console window to view the data submitted to the server
 
 ![Inspect data at the console window](/help/forms/assets/custom-function-submit-data-console-data.png)
 
+
+
+#### Override submission success and error messages for your adaptive form
+
+Add the following line of code as explained in the [create-custom-function ](#create-custom-function) section, to customize the submission or failure message for form submissions and display the form submission messages in a modal box:
+
+```javascript
+/**
+ * Handles the success response after a form submission.
+ *
+ * @param {scope} globals - This object contains a read-only form instance, target field instance, triggered event, and methods for performing form modifications within custom functions.
+ * @returns {void}
+ */
+function customSubmitSuccessHandler(globals) {
+    var event = globals.event;
+    var submitSuccessResponse = event.payload.body;
+    var form = globals.form;
+
+    if (submitSuccessResponse) {
+        if (submitSuccessResponse.redirectUrl) {
+            window.location.href = encodeURI(submitSuccessResponse.redirectUrl);
+        } else if (submitSuccessResponse.thankYouMessage) {
+            showModal("success", submitSuccessResponse.thankYouMessage);
+        }
+    }
+}
+
+/**
+ * Handles the error response after a form submission.
+ *
+ * @param {string} customSubmitErrorMessage - The custom error message.
+ * @param {scope} globals - This object contains a read-only form instance, target field instance, triggered event, and methods for performing form modifications within custom functions.
+ * @returns {void}
+ */
+function customSubmitErrorHandler(customSubmitErrorMessage, globals) {
+    showModal("error", customSubmitErrorMessage);
+}
+function showModal(type, message) {
+    // Remove any existing modals
+    var existingModal = document.getElementById("modal");
+    if (existingModal) {
+        existingModal.remove();
+    }
+
+    // Create the modal dialog
+    var modal = document.createElement("div");
+    modal.setAttribute("id", "modal");
+    modal.setAttribute("class", "modal");
+
+    // Create the modal content
+    var modalContent = document.createElement("div");
+    modalContent.setAttribute("class", "modal-content");
+
+    // Create the modal header
+    var modalHeader = document.createElement("div");
+    modalHeader.setAttribute("class", "modal-header");
+    modalHeader.innerHTML = "<h2>" + (type === "success" ? "Thank You" : "Error") + "</h2>";
+
+    // Create the modal body
+    var modalBody = document.createElement("div");
+    modalBody.setAttribute("class", "modal-body");
+    modalBody.innerHTML = "<p class='" + type + "-message'>" + message + "</p>";
+
+    // Create the modal footer
+    var modalFooter = document.createElement("div");
+    modalFooter.setAttribute("class", "modal-footer");
+
+    // Create the close button
+    var closeButton = document.createElement("button");
+    closeButton.setAttribute("class", "close-button");
+    closeButton.innerHTML = "Close";
+    closeButton.onclick = function() {
+        modal.remove();
+    };
+
+    // Append the elements to the modal content
+    modalFooter.appendChild(closeButton);
+    modalContent.appendChild(modalHeader);
+    modalContent.appendChild(modalBody);
+    modalContent.appendChild(modalFooter);
+
+    // Append the modal content to the modal
+    modal.appendChild(modalContent);
+
+    // Append the modal to the document body
+    document.body.appendChild(modal);
+}
+```
+
+In this example, when the user uses the `customSubmitSuccessHandler` and `customSubmitErrorHandler` custom functions, the success and failure messages are displayed in a modal. The JavaScript function `showModal(type, message)` is used to dynamically create and display a modal dialog box on a screen.
+
+Now, create a rule for successful form submission:
+
+![Form submission success](/help/forms/assets/form-submission-success.png)
+
+Refer to the illustration below to demonstrate that when the form is submitted successfully, the success message is displayed in a modal:
+
+![Form submission success message](/help/forms/assets/form-submission-success-message.png )
+ 
+Similarly, let us create a rule for failed form submissions:
+
+![Form submission fail](/help/forms/assets/form-submission-fail.png)
+
+Refer to the illustration below to demonstrate that when the form submission fails, the error message is displayed in a modal:
+
+![Form submission fail message](/help/forms/assets/form-submission-fail-message.png )
+
+To display form submission success and failure in a default manner, the `Default submit Form Success Handler` and `Default submit Form Error Handler` functions are available out of the box.
+
+In case, the custom submission handler fails to perform as expected in existing AEM Projects or forms, refer to the [troubleshooting](#troubleshooting) section.
+
+<!--
+
+
+#### Use Case:  Perform actions in a specific instance of the repeatable panel 
+
+Rules created using the visual rule editor on a repeatable panel apply to the last instance of the repeatable panel. To write a rule for a specific instance of the repeatable panel, we can use a custom function.
+
+Let's create a form to collect information about travelers heading to a destination. A traveler panel is added as a repeatable panel, where the user can add details for 5 travelers using the Add button.
+
+Add the following line of code as explained in the [create-custom-function](#create-custom-function) section, to perform actions in a specific instance of the repeatable panel, other than the last one:
+
+```javascript
+
+/**
+* @name hidePanelInRepeatablePanel
+* @param {scope} globals
+*/
+function hidePanelInRepeatablePanel(globals)
+{    
+    var repeatablePanel = globals.form.travelerinfo;
+    // hides a panel inside second instance of repeatable panel
+    globals.functions.setProperty(repeatablePanel[1].traveler, {visible : false});
+}  
+
+```
+ 
+In this example, the `hidePanelInRepeatablePanel` custom function performs action in a specific instance of the repeatable panel. In the above code, `travelerinfo` represents the repeatable panel. The `repeatablePanel[1].traveler, {visible: false}` code hides the panel in the second instance of the repeatable panel. 
+Let us add a button labeled `Hide` to add a rule to hide a specific panel.
+
+![Hide Panel rule](/help/forms/assets/custom-function-hidepanel-rule.png)
+
+Refer to the video below to demonstrate that when the `Hide` is clicked, the panel in the second repeatable instance hides:
+
+
+
+
+#### **Usecase**: Pre-fill the field with a value when the form loads
+
+Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to load the pre-filled value in a field when the form is initialized:
+
+```javascript
+/**
+ * @name importData
+ * @param {scope} globals
+ */
+function importData(globals)
+{
+    globals.functions.importData(Object.fromEntries([['amount',200000]]));
+} 
+```
+
+In the aforementioned code, the `importData` function updates the value in the `amount` textbox field when the form loads.
+
+Let us create a rule for the `Submit` button, where the value in the `amount` textbox field changes to specified value when the form loads:
+
+![Import Data Rule](/help/forms/assets/custom-function-import-data.png)
+
+Refer to the screenshot below, which demonstrates that when the form loads, the value in the amount textbox is pre-filled with a specified value:
+
+![Import Data Rule](/help/forms/assets/cg)
+
+
+
+#### **Usecase**: Set focus on the specific field
+
+Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to set focus on the specified field when the `Submit` button is clicked.:
+
+```javascript
+/**
+ * @name setFocus
+ * @param {object} field
+ * @param {scope} globals
+ */
+function setFocus(field, globals)
+{
+    globals.functions.setFocus(field);
+}
+```
+
+Let us add a rule to the `Submit` button to set focus on the `email` field when it is clicked:
+
+![Set Focus Rule](/help/forms/assets/custom-function-set-focus.png)
+
+Refer to the screenshot below, which demonstrates that when the `Submit` button is clicked, the focus is set on the `email` field:
+
+![Set Focus Rule](/help/forms/assets/custom-function-set-focus-form.png)
+
+>[!NOTE]
+>
+> You can use the optional `$focusOption` parameter, if you want to focus on the next or previous field relative to the `email` field.
+
++++
+
++++ **Usecase**: Add or delete repeatable panel using the `dispatchEvent` property
+
+Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to add a panel when the `Add Traveler` button is clicked using the `dispatchEvent` property:
+
+```javascript
+/**
+ 
+ * @name addInstance
+ * @param {scope} globals
+ */
+function addInstance(globals)
+{
+    var repeatablePanel = globals.form.traveler;
+    globals.functions.dispatchEvent(repeatablePanel, 'addInstance');
+} 
+
+```
+
+Let us add a rule to the `Add Traveler` button to add the repeatable panel when it is clicked:
+
+![Add Panel Rule](/help/forms/assets/custom-function-add-panel.png)
+
+Refer to the screenshot below, which demonstrates that when the `Add Traveler` button is clicked, the traveler panel is added using the `dispatchEvent` property:
+
+![Add Panel](/help/forms/assets/customg)
+
+Similarly, add a button labeled `Delete Traveler` to delete a panel. Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to delete a panel when the `Delete Traveler` button is clicked using the `dispatchEvent` property:
+
+```javascript
+
+/**
+ 
+ * @name removeInstance
+ * @param {scope} globals
+ */
+function removeInstance(globals)
+{
+    var repeatablePanel = globals.form.traveler;
+    globals.functions.dispatchEvent(repeatablePanel, 'removeInstance');
+} 
+
+```
+Let us add a rule to the `Delete Traveler` button to delete the repeatable panel when it is clicked:
+
+![Delete Panel Rule](/help/forms/assets/custom-function-delete-panel.png)
+
+Refer to the screenshot below, which demonstrates that when the `Delete Traveler` button is clicked, the traveler panel is deleted using the `dispatchEvent` property:
+
+![Delete Panel](/help/forms/assets/customg)
+-->
+
 ## Caching support for custom function
 
 Adaptive Forms implement caching for custom functions to enhance response time while retrieving the custom function list in the rule editor. A message as `Fetched following custom functions list from cache` appears in the `error.log` file. 
@@ -614,15 +913,23 @@ Adaptive Forms implement caching for custom functions to enhance response time w
 
 In case the custom functions are modified, the caching becomes invalidated, and it is parsed.  
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
-If the JavaScript file containing code for custom functions has an error, the custom functions are not listed in the rule editor of an Adaptive Form. To check the custom function list, you can navigate to the `error.log` file for the error. In case of an error, the custom function list appears empty:
+* If the custom submission handler fails to perform as expected in existing AEM Projects or forms, perform the following steps:
+  * Ensure that the [core components version is updated to 3.0.18 and later](https://github.com/adobe/aem-core-forms-components). However, for existing AEM Projects and forms, there are additional steps to follow:
 
-![error log file](/help/forms/assets/custom-function-list-error-file.png)
+  * For the AEM project, the user should replace all instances of `submitForm('custom:submitSuccess', 'custom:submitError')` with `submitForm()` and deploy the project through the Cloud Manager pipeline.
 
-In case of there is no error, the custom function are fetched and appear in the `error.log` file. A message as `Fetched following custom functions list` appears in the `error.log` file: 
+  * For existing forms, if the custom submission handlers are not functioning correctly, the user needs to open and save the `submitForm` rule on the **Submit** button using the Rule Editor. This action replaces the existing rule from `submitForm('custom:submitSuccess', 'custom:submitError')` with `submitForm()` in the form.
 
-![error log file with proper custom function](/help/forms/assets/custom-function-list-fetched-in-error.png)
+
+* If the JavaScript file containing code for custom functions has an error, the custom functions are not listed in the rule editor of an Adaptive Form. To check the custom function list, you can navigate to the `error.log` file for the error. In case of an error, the custom function list appears empty:
+
+    ![error log file](/help/forms/assets/custom-function-list-error-file.png)
+
+    In case of there is no error, the custom function are fetched and appear in the `error.log` file. A message as `Fetched following custom functions list` appears in the `error.log` file: 
+
+    ![error log file with proper custom function](/help/forms/assets/custom-function-list-fetched-in-error.png)
 
 ## Considerations
 
