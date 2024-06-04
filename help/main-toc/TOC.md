@@ -26,6 +26,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2024 {#2024}
+      + [Release Notes for 2024.4.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-4-0.md)
       + [Release Notes for 2024.3.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-3-0.md)
       + [Release Notes for 2024.1.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-1-0.md)
     + 2023 {#2023}
@@ -589,7 +590,7 @@ user-guide-title: AEM as a Cloud Service
   + Overview {#forms-overview}
     + [Introduction](/help/forms/home.md)
     + [Top Adobe Experience Manager Forms innovations](/help/forms/latest-innovations.md)
-    + [arly Adopter (EA) capabilities](/help/forms/early-adopter-ea-features.md)
+    + [Early Adopter (EA) capabilities](/help/forms/early-adopter-ea-features.md)
     + [Notable changes](/help/forms/notable-changes.md)
     + [Architecture](/help/forms/aem-forms-cloud-service-architecture.md)
     + [Frequently asked questions](/help/forms/faq.md)
@@ -657,7 +658,9 @@ user-guide-title: AEM as a Cloud Service
         +  [Add rules to an Adaptive Form based on Core Components](/help/forms/rule-editor-core-components.md)
         +  [Design JSON Schema for an Adaptive Form (Core Components)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
         +  [Add versionings, comments, and annotations to an Adaptive Form](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
-        +  [Compare Adaptive Forms](/help/forms/compare-forms.md)  
+        +  [Compare Adaptive Forms](/help/forms/compare-forms.md) 
+        +  [Converting Adaptive Forms based on foundation components to Core Component-based forms using migration utility tool](/help/forms/migration-utility-tool-for-af-core-components.md)
+        +  [Save an Adaptive Form as a Draft](/help/forms/save-core-component-based-form-as-draft.md)
     + Foundation Components {#authoring-adaptive-forms-foundation-components}
       + Convert your PDF forms to Adaptive Forms {#afcs}
         + [Introduction to Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
@@ -732,6 +735,7 @@ user-guide-title: AEM as a Cloud Service
     + [Installation and configuration](/help/forms/troubleshooting-installation-and-configuration.md)
     + [Dispatcher and CDN caching](/help/forms/troubleshooting-caching-performance.md)
     + [Restarting AEM SDK](/help/forms/restart-aem-sdk.md)
+    + [Resolving Forms creation failures](/help/forms/form-creation-failing.md)
 + Screens {#screens-as-cloud-service}
   + Overview to Screens as a Cloud Service {#overview}
     + [Introduction](/help/screens-cloud/introduction/introduction.md)
@@ -1175,7 +1179,9 @@ user-guide-title: AEM as a Cloud Service
     + [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
     + [Configuring Traffic at the CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md)
     + [Edge Side Includes](/help/implementing/dispatcher/edge-side-includes.md)
+    + [Configuring CDN Credentials and Authentication](/help/implementing/dispatcher/cdn-credentials-authentication.md)
     + [Configuring CDN error pages](/help/implementing/dispatcher/cdn-error-pages.md)
+    + [Purging the CDN cache](/help/implementing/dispatcher/cdn-cache-purge.md)
     + [Caching in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md)
 + Connectors {#connectors}
   + [Implementing an AEM Connector](/help/connectors/implement.md)
