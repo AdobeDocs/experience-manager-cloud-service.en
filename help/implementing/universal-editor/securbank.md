@@ -3,7 +3,7 @@ title: SecurBank Sample App for the Universal Editor
 description: Learn about the Universal Editor with hands-on experience by using the SecurBank App, designed to showcase the power, flexibility, and usability of the Universal Editor to accelerate content creation.
 exl-id: 97e1395f-b51e-4cee-b1d0-2466a08f96af
 feature: Developing
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # SecurBank Sample App for the Universal Editor {#securbank}
 

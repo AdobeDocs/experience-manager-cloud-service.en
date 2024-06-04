@@ -4,7 +4,7 @@ description: Learn how to define translation rules to identify content for trans
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 solution: Experience Manager
 feature: Headless
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Configure Translation Rules {#configure-translation-rules}
 

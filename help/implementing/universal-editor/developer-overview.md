@@ -3,7 +3,7 @@ title: Universal Editor Overview for AEM Developers
 description: If you are an AEM developer interested in how the Universal Editor works and how to use it in your project, this document gives you an end-to-end introduction by leading you through instrumenting the WKND project to work with the Universal Editor.
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 
 # Universal Editor Overview for AEM Developers {#developer-overview}

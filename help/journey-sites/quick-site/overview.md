@@ -4,7 +4,7 @@ description: Start here for a guided journey through the easy-to-use AEM Quick S
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
 solution: Experience Manager Sites
 feature: Developing
-role: "Admin, Developer"
+role: Admin, Developer
 ---
 # AEM Quick Site Creation Journey {#quick-site-creation-journey}
 

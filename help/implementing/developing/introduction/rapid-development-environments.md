@@ -3,7 +3,7 @@ title: Rapid Development Environments
 description: Learn how to use Rapid Development Environments for rapid development iterations on a cloud environment.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Rapid Development Environments {#rapid-development-environments}
 

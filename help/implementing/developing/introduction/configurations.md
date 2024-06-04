@@ -3,7 +3,7 @@ title: Configurations and the Configuration Browser
 description: Understand Adobe Experience Manager (AEM) configurations and how they manage workspace settings in AEM.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 feature: Developing
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Configurations and the Configuration Browser {#configuration-browser}
 

@@ -3,7 +3,7 @@ title: Configuring ContextHub
 description: Learn how to configure Context Hub, a framework for storing, manipulating, and presenting context data.
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
 feature: Developing
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Configuring ContextHub {#configuring-contexthub}
 

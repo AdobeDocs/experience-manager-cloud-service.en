@@ -4,7 +4,7 @@ description: Start here for a guided journey through the powerful and flexible h
 exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
 solution: Experience Manager
 feature: Headless
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # AEM Headless Content Author Journey {#aem-headless-author-journey}
 

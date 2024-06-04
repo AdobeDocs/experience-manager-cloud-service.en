@@ -4,7 +4,7 @@ description: In this part of the Adobe Experience Manager (AEM) Headless Develop
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 solution: Experience Manager
 feature: Headless
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # How to Model Your Content {#model-your-content}
 

@@ -1,10 +1,10 @@
 ---
 title: Working with Your Own GitHub Repositories in Cloud Manager
 description: Learn how to set up Cloud Manager to work with your own GitHub repositories.
-feature: "Cloud Manager, Developing"
+feature: Cloud Manager, Developing
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
 solution: Experience Manager
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 
 # Working with Your Own GitHub Repositories in Cloud Manager {#byo-github}

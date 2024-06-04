@@ -3,8 +3,8 @@ title: Cloud Manager Tests Overview
 description: Get an overview of the three types of tests that Cloud Manager automatically runs to ensure quality of your custom code.
 exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
 solution: Experience Manager
-feature: "Cloud Manager, Developing"
-role: "Admin, Architect, Developer"
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 
 # Cloud Manager Tests Overview {#overview}

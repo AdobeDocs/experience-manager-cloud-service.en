@@ -4,7 +4,7 @@ description: Configure Rich Text Editor to author content in [!DNL Adobe Experie
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
 feature: Developing
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Configure the Rich Text Editor {#configure-the-rich-text-editor}
 

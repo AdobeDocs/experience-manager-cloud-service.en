@@ -2,7 +2,7 @@
 title: Front-end applications for App Builder
 description: Learn how to build front-end App Builder applications.
 version: Cloud Service
-feature: "App Builder, Developing"
+feature: App Builder, Developing
 topic: Integrations, Development
 role: Developer, Architect
 level: Beginner

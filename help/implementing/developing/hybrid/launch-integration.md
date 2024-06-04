@@ -3,7 +3,7 @@ title: SPA and Adobe Experience Platform Launch Integration
 description: Adobe Experience Platform Launch is the recommended way to implement Analytics, Target, and Audience Manager within SPAs.
 exl-id: 95008563-c1e5-4685-9c6d-5226d4a66c53
 feature: Developing
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # SPA and Adobe Experience Platform Launch Integration {#spa-and-adobe-experience-platform-launch-integration}
 

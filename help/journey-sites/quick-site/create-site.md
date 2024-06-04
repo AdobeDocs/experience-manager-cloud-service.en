@@ -4,7 +4,7 @@ description: Learn how to quickly create an AEM site using a site template.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
 solution: Experience Manager Sites
 feature: Developing
-role: "Admin, Developer"
+role: Admin, Developer
 ---
 # Create Site from Template {#create-site-from-template}
 

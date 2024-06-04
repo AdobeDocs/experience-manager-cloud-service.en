@@ -5,7 +5,7 @@ hidefromtoc: yes
 index: no
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 feature: Onboarding
-role: "Admin, User, Developer"
+role: Admin, User, Developer
 ---
 
 # Customize Content in a Sample React App {#customize-app}

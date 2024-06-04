@@ -5,7 +5,7 @@ landing-page-description: Get an understanding of headless content delivery and 
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 solution: Experience Manager
 feature: Headless
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # AEM Headless CMS Developer Journey {#aem-headless-developer-journey}
 

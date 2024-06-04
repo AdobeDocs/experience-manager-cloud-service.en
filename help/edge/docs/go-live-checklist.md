@@ -3,7 +3,7 @@ description: The go-live checklist is a summary of best practices to consider wh
 title: Go-Live Checklist
 feature: Edge Delivery Services
 exl-id: 7f22d7f5-39b8-4b91-a1ef-24f89b5ded14
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Go-Live Checklist
 

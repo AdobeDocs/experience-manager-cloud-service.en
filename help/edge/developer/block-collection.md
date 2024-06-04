@@ -3,7 +3,7 @@ description: This is a collection of blocks considered a part of the AEM product
 title: Block Collection
 feature: Edge Delivery Services
 exl-id: ea7c071a-1ce9-4af0-a6dc-a2ba9bdbbef0
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Block Collection
 

@@ -3,8 +3,8 @@ title: Build Environment
 description: Learn about Cloud Manager's build environment and how it builds and tests your code.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
-feature: "Cloud Manager, Developing"
-role: "Admin, Architect, Developer"
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 
 # Build Environment {#build-environment} 

@@ -4,7 +4,7 @@ description: In this part of the AEM Headless Developer Journey, learn how to ta
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
 solution: Experience Manager
 feature: Headless
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # How to Put It All Together - Your App and Your Content in AEM Headless {#put-it-all-together}
 

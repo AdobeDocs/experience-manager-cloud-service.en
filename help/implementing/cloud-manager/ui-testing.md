@@ -3,8 +3,8 @@ title: UI Testing
 description: Custom UI testing is an optional feature that enables you to create and automatically run UI tests for your custom applications
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
-feature: "Cloud Manager, Developing"
-role: "Admin, Architect, Developer"
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 
 # UI Testing {#ui-testing}

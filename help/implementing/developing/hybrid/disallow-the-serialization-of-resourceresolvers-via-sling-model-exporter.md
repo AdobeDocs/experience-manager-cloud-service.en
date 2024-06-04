@@ -3,7 +3,7 @@ title: Disallow the Serialization of ResourceResolvers via Sling Model Exporter
 description: Disallow the Serialization of ResourceResolvers via Sling Model Exporter
 exl-id: 63972c1e-04bd-4eae-bb65-73361b676687
 feature: Developing
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Disallow the Serialization of ResourceResolvers via Sling Model Exporter {#disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter}
 

@@ -3,8 +3,8 @@ title: Code Quality Testing
 description: Learn how code quality testing of pipelines works and how it can improve the quality of your deployments.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 solution: Experience Manager
-feature: "Cloud Manager, Developing"
-role: "Admin, Architect, Developer"
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 # Code Quality Testing {#code-quality-testing}
 

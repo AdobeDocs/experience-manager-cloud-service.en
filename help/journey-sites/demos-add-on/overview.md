@@ -3,7 +3,7 @@ title: AEM Reference Demos Add-on Journey
 description: Start here for a guided journey on adding the AEM Reference Demos Add-on to a sandbox environment with minimal AEM configuration. And, test the powerful features of AEM with rich examples based on best-practices.
 exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
 feature: Onboarding
-role: "Admin, User, Developer"
+role: Admin, User, Developer
 ---
 # AEM Reference Demos Add-on Journey {#reference-demos-add-on-journey}
 

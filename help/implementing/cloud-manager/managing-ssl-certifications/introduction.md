@@ -3,8 +3,8 @@ title: Introduction to Managing SSL Certificates
 description: Learn how Cloud Manager provides you with self-service tools to install SSL certificates.
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
-feature: "Cloud Manager, Developing"
-role: "Admin, Architect, Developer"
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 
 # Introduction to Managing SSL Certificates{#introduction}

@@ -4,7 +4,7 @@ description: Use the translation connector to translate your headless content.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
 solution: Experience Manager
 feature: Headless
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 
 # Translate Headless Content {#translate-content}

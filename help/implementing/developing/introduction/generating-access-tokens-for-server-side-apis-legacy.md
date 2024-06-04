@@ -4,7 +4,7 @@ description: Learn how to facilitate communication between a third-party server 
 hidefromtoc: yes
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
 feature: Developing
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Generating Access Tokens for Server-Side APIs (Legacy) {#generating-access-tokens-for-server-side-apis-legacy}
 

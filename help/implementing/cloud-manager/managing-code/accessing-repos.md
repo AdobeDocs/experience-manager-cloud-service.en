@@ -3,8 +3,8 @@ title: Accessing Repositories
 description: Learn how to access and manage your git repository using the self-service git account management from Cloud Manager.
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
-feature: "Cloud Manager, Developing"
-role: "Admin, Architect, Developer"
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 
 # Accessing Repositories {#accessing-repos}

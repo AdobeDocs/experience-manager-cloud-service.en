@@ -3,7 +3,7 @@ title: Overlays for Adobe Experience Manager as a Cloud Service
 description: AEM as a Cloud Service uses the principle of overlays to allow you to extend and customize the consoles and other functionality
 exl-id: 24bdb1a9-6d77-43c7-a75e-28e6e0fd7608
 feature: Developing
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Overlays in AEM as a Cloud Service {#overlays-in-aem}
 

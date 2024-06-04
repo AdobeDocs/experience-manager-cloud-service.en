@@ -4,8 +4,8 @@ description: Learn how to configure non-production pipelines to test the quality
 index: yes
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
-feature: "Cloud Manager, Developing"
-role: "Admin, Architect, Developer"
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 
 # Configuring Non-Production Pipelines {#configuring-non-production-pipelines}

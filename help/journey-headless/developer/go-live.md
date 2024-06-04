@@ -4,7 +4,7 @@ description: In this part of the AEM Headless Developer Journey, learn how to de
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 solution: Experience Manager
 feature: Headless
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # How to Go Live with Your Headless Application {#go-live}
 

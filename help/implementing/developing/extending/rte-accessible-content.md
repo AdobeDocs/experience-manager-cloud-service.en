@@ -4,7 +4,7 @@ description: Learn to configure Rich Text Editor to create accessible sites in [
 contentOwner: AG
 exl-id: 54050fc9-0348-4033-8e2b-b3897588cb62
 feature: Developing
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Configure RTE to create accessible sites {#configure-rte-accessible-sites}
 

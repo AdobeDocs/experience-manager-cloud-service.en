@@ -3,7 +3,7 @@ title: Building Tagging into AEM Applications
 description: Programmatically work with tags or extending tags within a custom AEM application
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
 feature: Developing
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Building Tagging into AEM Applications {#building-tagging-into-aem-applications}
 

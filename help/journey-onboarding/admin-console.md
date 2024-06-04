@@ -3,7 +3,7 @@ title: Accessing the Admin Console
 description: Once you understand the preparation necessary to onboarding and the basics of AEMaaCS structure, you are ready to log into the Admin Console for the first time.
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
 feature: Onboarding
-role: "Admin, User, Developer"
+role: Admin, User, Developer
 ---
 # Accessing the Admin Console {#accessing-admin-console}
 

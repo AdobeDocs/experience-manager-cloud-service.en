@@ -4,7 +4,7 @@ description: Learn how the front-end developer uses Cloud Manager to access git 
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
 solution: Experience Manager Sites
 feature: Developing
-role: "Admin, Developer"
+role: Admin, Developer
 ---
 # Retrieve Git Repository Access Information {#retrieve-access}
 

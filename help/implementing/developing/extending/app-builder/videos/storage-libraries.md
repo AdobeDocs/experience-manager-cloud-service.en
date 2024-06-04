@@ -2,7 +2,7 @@
 title: App Builder storage libraries
 description: Learn about state and file storage libraries for App Builder applications.
 version: Cloud Service
-feature: "App Builder, Developing"
+feature: App Builder, Developing
 topic: Integrations, Development
 role: Developer, Architect
 level: Beginner
