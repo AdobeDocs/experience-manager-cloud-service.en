@@ -235,9 +235,9 @@ Considerations:
 
 ## Advanced Networking {#advanced-networking}
 
-It is possible lock to configure traffic to your logging destination.
+Some organizations choose to restrict which traffic can be received by the logging destinations.
 
-For the CDN log, you can allow-list the IP addresses, as described in [this article](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/).
+For the CDN log, you can allow-list the IP addresses, as described in [this article](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). If that list of shared IP addresses is too large, consider sending traffic to a (non-Adobe) Azure Blob Store where logic can be written to send the logs out of a dedicated IP to their ultimate destination. 
 
 For other logs, you can configure log forwarding to go through [advanced networking](/help/security/configuring-advanced-networking.md). See the patterns for the three advanced networking types below, which make use of an optional `port` parameter, along with the `host` parameter.
 
@@ -249,7 +249,7 @@ If the log traffic is going to a port other than 443 (e.g., 8443 below), configu
 {
     "portForwards": [
         {
-            "name": "mylogging.service.logger.com",
+            "name": "splunk-host.example.com",
             "portDest": 8443, # something other than 443
             "portOrig": 30443
         }    
@@ -267,7 +267,7 @@ version: "1"
 data:
   splunk:
     default:
-      host: "proxy.tunnel"
+      host: "${{AEM_PROXY_HOST}}"
       token: "${{SomeToken}}"
       port: 30443
       index: "index_name"
@@ -282,8 +282,8 @@ If the log traffic needs to come out of a dedicated egress IP, configure advance
 {
     "portForwards": [
         {
-            "name": "mylogging.service.com",
-            "portDest": 443, # something other than 443
+            "name": "splunk-host.example.com",
+            "portDest": 443, 
             "portOrig": 30443
         }    
     ]
@@ -294,16 +294,25 @@ If the log traffic needs to come out of a dedicated egress IP, configure advance
 and configure the yaml file like so:
 
 ```
-
+      
 kind: "LogForwarding"
 version: "1"
+   metadata:
+     envTypes: ["dev"]
 data:
   splunk:
-    default:
-      host: "proxy.tunnel"
-      token: "${{SomeToken}}"
-      port: 30443
-      index: "index_name"
+     default:
+       enabled: true
+       index: "index_name" 
+       token: "${{SPLUNK_TOKEN}}"  
+     aem:
+       enabled: true
+       host: "${{AEM_PROXY_HOST}}"
+       port: 30443       
+     cdn:
+       enabled: true
+       host: "splunk-host.example.com"
+       port: 443    
 
 ```
 
@@ -315,27 +324,30 @@ If the log traffic needs to go through a VPN, configure advanced networking like
 {
     "portForwards": [
         {
-            "name": "mylogging.service.com",
-            "portDest": 443, # something other than 443
+            "name": "splunk-host.example.com",
+            "portDest": 443,
             "portOrig": 30443
         }    
     ]
 }
 
-```
-
-and configure the yaml file like so:
-
-```
-
 kind: "LogForwarding"
 version: "1"
+   metadata:
+     envTypes: ["dev"]
 data:
   splunk:
-    default:
-      host: "mylogging.service.com"
-      token: "${{SomeToken}}"
-      port: 30443
-      index: "index_name"
+     default:
+       enabled: true
+       index: "index_name" 
+       token: "${{SPLUNK_TOKEN}}"  
+     aem:
+       enabled: true
+       host: "${{AEM_PROXY_HOST}}"
+       port: 30443       
+     cdn:
+       enabled: true
+       host: "splunk-host.example.com"
+       port: 443     
 
 ```
