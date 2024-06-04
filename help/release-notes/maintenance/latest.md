@@ -30,7 +30,8 @@ Summarized below are the continuous improvements for maintenance release 16544, 
 * GUIDES-17088: The functionality to change the document state from the **File Properties** panel isn’t working correctly and changes to the *Draft* state.
 * GUIDES-16931: Linked images from the topics fail to appear in the baseline after version creation.
 * GUIDES-16896: Reusable content panels don’t list elements when the **User preferences** are set to view files by **Filename**.
-* AEM Guides: for more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+
+AEM Guides: for more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ### Known Issues {#known-issues-16544}
 
