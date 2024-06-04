@@ -74,7 +74,7 @@ Agent: skyline-service-warmup/1.*|
 | Exclude `manifest.json` | Excluded | Manifest is not an API call, it is here to provide information on how to install web sites on desktop or mobile phone. Adobe should not count JSON request to `/etc.clientlibs/*/manifest.json`|
 | Exclude `favicon.ico` | Excluded | While the returned content should not be HTML or JSON, we are observing that in some scenarios like SAML authentication flows, favicons can be returned as HTML therefore are explicitly excluded from the count.|
 
-## Client-side Collection {#client-side collection}
+## Client-side Collection {#client-side-collection}
 
 ### Real Use Monitoring Service for AEM as a Cloud Service {#real-use-monitoring-service-for-aem-as-a-cloud-service}
 
@@ -130,7 +130,7 @@ The Real Use Monitoring service is designed to prevent the collection of persona
 
 ### How Real Use Monitoring Works for a customer {#how-rum-works-for-a-customer}
 
-Real Use Monitoring, automatically monitors client-side traffic to provide you with valuable insights. As an Adobe customer, you don’t need to take any additional steps - this service is seamlessly integrated into your existing setup. With the General Availability (GA) rollout, you will automatically benefit from this new feature. If you wish to leverage more insights with this new feature to optimize your digital experiences effortlessly, please see here (link to Row 99).
+Real Use Monitoring, automatically monitors client-side traffic to provide you with valuable insights. As an Adobe customer, you don't need to take any additional steps - this service is seamlessly integrated into your existing setup. With the General Availability (GA) rollout, you will automatically benefit from this new feature. If you wish to leverage more insights with this new feature to optimize your digital experiences effortlessly, please see here (link to Row 99).
 
 ### How Real Use Monitoring Service Data is Being Used {#how-rum-service-data-is-being-used}
 
@@ -176,6 +176,6 @@ As you will analyze RUM data, there may be variances in Page Views and other per
    
 1. **How can I opt-out?**
 
-We highly recommend using the Real Use Monitoring (RUM)  due to its significant benefits and that it can allow you to optimize your digital experiences. It can offers valuable insights that can help improve website performance.The service is designed to be seamless and has no impact on your website’s performance.
+We highly recommend using the Real Use Monitoring (RUM)  due to its significant benefits and that it can allow you to optimize your digital experiences. It can offers valuable insights that can help improve website performance.The service is designed to be seamless and has no impact on your website's performance.
 
 Opting out means missing out on these insights. However, if you encounter any issues, our support team is here to help.
