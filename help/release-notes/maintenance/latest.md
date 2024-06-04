@@ -28,7 +28,7 @@ Summarized below are the continuous improvements for maintenance release 16544, 
 * DXML-17171: AEM Guides: The copy and paste operation of topics exceeding 15KB fails with an unexpected error. 
 * DXML-17088: AEM Guides: The functionality to change the document state from the **File Properties** panel isn’t working correctly and changes to the *Draft* state. 
 * DXML-16931: AEM Guides: Linked images from the topics fail to appear in the baseline after version creation. 
-* DXML-16896:AEM Guides: Reusable content panels don’t list elements when the **User preferences** are set to view files by **Filename**. 
+* DXML-16896: AEM Guides: Reusable content panels don’t list elements when the **User preferences** are set to view files by **Filename**. 
 * GRANITE-51375: idp-sync throws NPE if no intermediate path is specified.
 
 ### Known Issues {#known-issues-16544}
