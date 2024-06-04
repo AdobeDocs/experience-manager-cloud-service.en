@@ -3,7 +3,7 @@ title: Universal Editor Authentication
 description: Learn how the Universal Editor uses Adobe's Identity Management System (IMS) for authentication.
 exl-id: fb86c510-3c41-4511-81b7-1bdf2f5e7dd3
 feature: Developing
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 
 # Universal Editor Authentication {#authentication}

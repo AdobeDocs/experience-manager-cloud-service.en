@@ -3,7 +3,7 @@ title: AEM Project Structure
 description: Learn about how to define package structures for deployment to Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
 feature: Developing
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # AEM Project Structure
 

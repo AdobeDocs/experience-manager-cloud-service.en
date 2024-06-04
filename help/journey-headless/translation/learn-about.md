@@ -4,7 +4,7 @@ description: Learn headless concepts, how they map to AEM, and the theory of AEM
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
 solution: Experience Manager
 feature: Headless
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Learn about headless content and how to translate it in AEM {#learn-about}
 

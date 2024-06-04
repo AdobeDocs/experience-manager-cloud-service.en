@@ -5,7 +5,7 @@ contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
 feature: Developing
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Configure the Rich Text Editor plug-ins {#configure-the-rich-text-editor-plug-ins}
 

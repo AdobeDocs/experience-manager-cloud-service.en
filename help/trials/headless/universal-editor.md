@@ -5,7 +5,7 @@ hidefromtoc: yes
 index: no
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
 feature: Onboarding
-role: "Admin, User, Developer"
+role: Admin, User, Developer
 ---
 
 # Edit in Context with the Universal Editor {#editing-in-context}

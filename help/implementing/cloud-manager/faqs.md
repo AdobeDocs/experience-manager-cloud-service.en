@@ -3,8 +3,8 @@ title: Cloud Manager FAQs
 description: Find answers to the most frequently asked questions about Cloud Manager in AEM as a Cloud Service.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 solution: Experience Manager
-feature: "Cloud Manager, Developing"
-role: "Admin, Architect, Developer"
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 
 # Cloud Manager FAQs {#cloud-manager-faqs}

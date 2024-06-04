@@ -3,7 +3,7 @@ title: Extending the Multi Site Manager
 description: Learn how to extend the functionality of the Multi Site Manager.
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
 feature: Developing
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Extending the Multi Site Manager {#extending-the-multi-site-manager}
 

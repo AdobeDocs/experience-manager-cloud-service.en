@@ -3,7 +3,7 @@ title: Dynamic Model to Component Mapping for SPAs
 description: This article describes how the dynamic model to component mapping occurs in the JavaScript SPA SDK for AEM.
 exl-id: 3a7b3f26-4a09-40c1-af03-bb8408a68e57
 feature: Developing
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Dynamic Model to Component Mapping for SPAs {#dynamic-model-to-component-mapping-for-spas}
 

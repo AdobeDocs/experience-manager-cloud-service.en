@@ -3,7 +3,7 @@ description: Admin and indexing operations are recorded in an audit log that can
 title: Audit log
 feature: Edge Delivery Services
 exl-id: 18751843-d2c9-44d7-b354-4c551a1a634c
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Audit log
 

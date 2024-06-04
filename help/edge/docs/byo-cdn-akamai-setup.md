@@ -3,7 +3,7 @@ description: The following screenshots illustrate how to use the Akamai Property
 title: Akamai Setup
 feature: Edge Delivery Services
 exl-id: c65206dc-3fbe-4d3e-bc48-5fca9a5899c9
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Akamai Setup
 

@@ -3,7 +3,7 @@ title: Go-Live Checklist
 description: Learn about all the elements that need to be in place in order to have a successful Go-Live with AEM as a Cloud Service
 exl-id: b424a9db-0f3b-4a8d-be84-365d68df46ca
 feature: Onboarding
-role: "Admin, User, Developer"
+role: Admin, User, Developer
 ---
 # Go-Live Checklist {#Go-Live-Checklist}
 

@@ -3,7 +3,7 @@ title: Universal Editor Use Cases and Learning Paths
 description: Learn about the main use cases of the Universal Editor and how best to learn about its use and how to implement it on your own projects.
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Universal Editor Use Cases and Learning Paths {#use-cases-learning-paths}
 

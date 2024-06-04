@@ -3,8 +3,8 @@ title: SLA Reporting
 description: Learn how to see the performance of your production AEM environment relative to the contracted Service Level Agreement (SLA).
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
 solution: Experience Manager
-feature: "Cloud Manager, Developing"
-role: "Admin, Architect, Developer"
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 
 # SLA Reporting {#sla-reporting} 

@@ -3,8 +3,8 @@ title: Managing SSL Certificates
 description: Learn how to use Cloud Manager to check the status of your SSL certificates and how to edit, replace, update, and delete them.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
-feature: "Cloud Manager, Developing"
-role: "Admin, Architect, Developer"
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 
 # Managing SSL Certificates {#managing-ssl-certificates}

@@ -4,7 +4,7 @@ description: In this part of the AEM Headless Developer Journey, learn about AEM
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 solution: Experience Manager
 feature: Headless
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Getting Started with AEM Headless as a Cloud Service {#getting-started}
 

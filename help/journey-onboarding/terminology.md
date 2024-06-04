@@ -3,7 +3,7 @@ title: AEM as a Cloud Service Terminology
 description: Before you sign into AEMaaCS, it is helpful to understand some of the terminology of the system and its basic structure.
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
 feature: Onboarding
-role: "Admin, User, Developer"
+role: Admin, User, Developer
 ---
 # AEM as a Cloud Service Terminology {#terminology}
 

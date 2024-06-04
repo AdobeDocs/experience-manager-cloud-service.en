@@ -3,7 +3,7 @@ title: AEM Node Types
 description: AEM is based on Sling and uses a JCR repository with node types offered by both, but AEM also provides a range of its own node types.
 exl-id: 82cc28ca-37e2-4ca3-b3e4-cc03bbc5bdf5
 feature: Developing
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # AEM Node Types {#aem-node-types}
 

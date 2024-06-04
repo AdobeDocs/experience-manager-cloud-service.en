@@ -3,7 +3,7 @@ description: Adobe Experience Manager offers a way to keep an index of all the p
 title: Indexing
 feature: Edge Delivery Services
 exl-id: 8ca968fd-73af-4082-bfc5-0737fdd8a5be
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Indexing
 

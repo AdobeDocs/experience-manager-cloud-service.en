@@ -3,7 +3,7 @@ description: Every website has the need for redirects. For example if you reloca
 title: Redirects
 feature: Edge Delivery Services
 exl-id: a41e08bb-2488-494d-8abd-b271e0cd4c34
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Redirects
 

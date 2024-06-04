@@ -3,7 +3,7 @@ title: SPA Deep Dives
 description: The AEM SPA Editor SDK was featured in a series of AEM Gems sessions. Hosted by Adobe engineers, this series can serve as a great guide to gain a deeper understanding of the AEM SPA Editor SDK at a low level, hosted by Adobe engineers.
 exl-id: 93c950be-be80-42d5-93eb-805a91b6ebba
 feature: Developing
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # SPA Deep Dives {#spa-deep-dives}
 

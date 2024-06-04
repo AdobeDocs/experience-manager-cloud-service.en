@@ -4,7 +4,7 @@ description: In this part of the AEM Headless Developer Journey, you will unders
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
 solution: Experience Manager
 feature: Headless
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Path to Your First Experience Using AEM Headless {#path-to-first-experience}
 

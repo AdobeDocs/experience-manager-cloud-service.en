@@ -2,7 +2,7 @@
 title: App Builder SDKs and CLI
 description: Learn about the SDKs and CLI used to develop App Builder applications.
 version: Cloud Service
-feature: "App Builder, Developing"
+feature: App Builder, Developing
 topic: Integrations, Development
 role: Developer, Architect
 level: Beginner

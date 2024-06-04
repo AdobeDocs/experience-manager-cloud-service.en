@@ -3,7 +3,7 @@ title: AEM Tagging Framework
 description: Tag content and use the AEM Tagging infrastructure to categorize and organize it.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
 feature: Developing
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # The AEM Tagging Framework {#aem-tagging-framework}
 

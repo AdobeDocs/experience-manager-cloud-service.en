@@ -4,7 +4,7 @@ description: Start here for a guided journey through translating your headless c
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
 solution: Experience Manager
 feature: Headless
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # AEM Headless Translation Journey {#aem-headless-translation-journey}
 

@@ -4,7 +4,7 @@ description: In this part of the AEM Headless Developer Journey, learn about hea
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
 solution: Experience Manager
 feature: Headless
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Learn About CMS Headless Development {#learn-about}
 

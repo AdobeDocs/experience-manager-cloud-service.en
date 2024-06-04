@@ -4,7 +4,7 @@ description: Learn how to publish your translated content and update the transla
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
 solution: Experience Manager
 feature: Headless
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Publish Translated Headless Content {#publish-content}
 

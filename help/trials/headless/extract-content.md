@@ -5,7 +5,7 @@ hidefromtoc: yes
 index: no
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 feature: Onboarding
-role: "Admin, User, Developer"
+role: Admin, User, Developer
 ---
 
 # Extract Content via the GraphQL API {#extract-content}

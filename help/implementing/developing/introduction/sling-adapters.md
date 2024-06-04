@@ -3,7 +3,7 @@ title: Using Sling Adapters
 description: Sling offers an Adapter pattern to conveniently translate objects that implement the Adaptable interface
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
 feature: Developing
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Using Sling Adapters {#using-sling-adapters}
 

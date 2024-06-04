@@ -3,8 +3,8 @@ title: Understanding Cloud Service Content Requests
 description: If you have purchased content request licenses from Adobe, learn about the types of content requests that Adobe Experience Cloud as a Service measures and the variances with an organization's analytics reporting tools.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
-feature: "Cloud Manager, Developing"
-role: "Admin, Architect, Developer"
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 # Cloud Service Content Requests
 

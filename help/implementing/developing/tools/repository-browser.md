@@ -5,7 +5,7 @@ description: The repository browser provides a read-only view into the repositor
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 feature: Developing
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Repository Browser {#repository-browser}
 

@@ -3,7 +3,7 @@ title: AEM as a Cloud Service Team and Product Profiles
 description: Learn how AEM as a Cloud Service team and product profiles can grant and limit access to your licensed Adobe solutions.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
-role: "Admin, User, Developer"
+role: Admin, User, Developer
 ---
 
 # AEM as a Cloud Service Team and Product Profiles {#product-profiles}

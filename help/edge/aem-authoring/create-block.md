@@ -3,7 +3,7 @@ title: Creating Blocks Instrumented for use with the Universal Editor
 description: Learn how to create blocks instrumented for use with the Universal Editor in AEM authoring with Edge Delivery Services projects.
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 
 # Creating Blocks Instrumented for use with the Universal Editor {#create-block}

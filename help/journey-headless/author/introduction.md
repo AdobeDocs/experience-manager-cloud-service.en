@@ -4,7 +4,7 @@ description: An introduction to using the features of Adobe Experience Manager a
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
 solution: Experience Manager
 feature: Headless
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Authoring for AEM as a Headless CMS - An Introduction {#author-headless-introduction}
 

@@ -3,7 +3,7 @@ description: 'In some cases, it is useful to apply metadata en masse to a websit
 title: Bulk Metadata
 feature: Edge Delivery Services
 exl-id: 2d56c4e9-1a0f-470b-8c42-bc48f61ea3eb
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Bulk Metadata
 

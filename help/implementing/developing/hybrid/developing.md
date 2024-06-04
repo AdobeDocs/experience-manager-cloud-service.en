@@ -3,7 +3,7 @@ title: Developing SPAs for AEM
 description: This article presents important questions to consider when engaging a front-end developer to develop a SPA for AEM. It also gives an overview of the architecture of AEM concerning SPAs to keep in mind when deploying a developed SPA on AEM.
 exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
 feature: Developing
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Developing SPAs for AEM {#developing-spas-for-aem}
 

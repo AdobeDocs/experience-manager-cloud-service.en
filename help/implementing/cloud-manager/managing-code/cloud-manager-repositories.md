@@ -3,8 +3,8 @@ title: Cloud Manager Repositories
 description: Learn how to create, view, and delete your git repositories in Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 solution: Experience Manager
-feature: "Cloud Manager, Developing"
-role: "Admin, Architect, Developer"
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 
 # Cloud Manager Repositories {#cloud-manager-repos} 

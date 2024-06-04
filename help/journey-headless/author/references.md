@@ -4,7 +4,7 @@ description: Learn about using references in Content Fragments, for content, oth
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 solution: Experience Manager
 feature: Headless
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Learn about using references in Content Fragments {#author-headless-references}
 

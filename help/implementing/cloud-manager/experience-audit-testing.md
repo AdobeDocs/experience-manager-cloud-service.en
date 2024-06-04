@@ -3,8 +3,8 @@ title: Experience Audit Testing
 description: Learn how Experience Audit validates your deployment process and helps ensure that changes deployed meet baseline standards for performance, accessibility, best practices, and SEO.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
 solution: Experience Manager
-feature: "Cloud Manager, Developing"
-role: "Admin, Architect, Developer"
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 
 # Experience Audit Testing {#experience-audit-testing}

@@ -3,7 +3,7 @@ title: API Reference Materials
 description: AEM has extensive and powerful APIs that you can use for your digital experience project.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # API Reference Materials {#api-reference-materials}
 

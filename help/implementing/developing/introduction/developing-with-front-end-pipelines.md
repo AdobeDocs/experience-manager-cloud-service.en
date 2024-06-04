@@ -3,7 +3,7 @@ title: Developing Sites with the Front-End Pipeline
 description: With the front-end pipeline, more independence is given to front-end developers and the development process can gain substantial velocity. This document describes some particular considerations of the front-end build process that should be given.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 feature: Developing
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 
 # Developing Sites with the Front-End Pipeline {#developing-site-with-front-end-pipeline}

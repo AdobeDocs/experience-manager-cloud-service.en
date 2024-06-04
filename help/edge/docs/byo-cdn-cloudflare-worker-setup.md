@@ -3,7 +3,7 @@ description: The following screenshots illustrate how to configure Cloudflare to
 title: Cloudflare Setup
 feature: Edge Delivery Services
 exl-id: b8240a05-091e-46ba-b0e7-d04737bd63e3
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Cloudflare Setup
 

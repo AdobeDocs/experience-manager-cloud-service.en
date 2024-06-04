@@ -3,7 +3,7 @@ title: Using Edge Delivery Services with Existing AEM Projects
 description: Learn how to leverage the benefits of Edge Delivery Services on your existing AEM projects
 feature: Edge Delivery Services
 exl-id: f54aac3a-1d0c-4be0-9aa6-616217e0e458
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 
 # Using Edge Delivery Services with Existing AEM Projects {#existing-projects}

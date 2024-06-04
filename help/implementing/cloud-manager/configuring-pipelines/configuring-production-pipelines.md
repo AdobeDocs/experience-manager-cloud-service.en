@@ -4,8 +4,8 @@ description: Learn how to configuring production pipelines to build and deploy y
 index: yes
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
-feature: "Cloud Manager, Developing"
-role: "Admin, Architect, Developer"
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 
 # Configuring a Production Pipeline {#configure-production-pipeline}
