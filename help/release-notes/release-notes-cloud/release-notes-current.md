@@ -212,7 +212,12 @@ The Real Use Monitoring service , the client-side collection, offers a more prec
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-You can find a complete list of new and enhanced features of the latest release of Adobe Experience Manager Guides [here](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0).
+* **Publish a topic or its elements to an Experience Fragment**
+  Now, Experience Manager Guides allow you to publish a topic or its elements to an Experience Fragment. An Experience Fragment is a modular content unit that integrates both content and layout.  Experience Fragments are instrumental and can help you create consistent and engaging experiences. 
+* **Ability to pass the topic asset metadata to Native PDF output**
+  You can add the topic asset metadata while generating the Native PDF output. This feature helps you add specific metadata for different topics, like the topic title and author, to the topic page headers and footers. 
+
+For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
