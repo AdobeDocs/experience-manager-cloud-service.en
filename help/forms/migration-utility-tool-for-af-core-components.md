@@ -18,7 +18,7 @@ The Migration Utility, part of the [AEM Modernize Tool](https://opensource.adobe
 
 AEM Modernize Tools converts Adaptive Forms that are based on older Foundation Components to newer Core Component based forms. This conversion process ensures that the forms align with modern standards and capabilities, potentially improving performance, compatibility, and ease of maintenance within the AEM environment.
 
-![AEM Modernize Tools](/help/forms/assets/aem-modernize-Tools.png)
+![AEM Modernize Tools](/help/forms/assets/aem-modernize-tools.png)
 
 >[!NOTE]
 > 
