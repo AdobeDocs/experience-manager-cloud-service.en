@@ -124,9 +124,9 @@ To enable and use the AEM Migration Utility Tool for your AEM Environment, it is
 
     ![AEM Modernize Tools Select Form](/help/forms/assets/aem-modernize-Tools-select-form.png)
 
-6. Click **[!UICONTROL Select]**.
-7. Click **[!UICONTROL Schedule Job]** to start the conversion process.
-8. Click **[!UICONTROL Convert]** from the **[!UICONTROL Convert Pages]** dialog box.
+1. Click **[!UICONTROL Select]**.
+1. Click **[!UICONTROL Schedule Job]** to start the conversion process.
+1. Click **[!UICONTROL Convert]** from the **[!UICONTROL Convert Pages]** dialog box.
 
    ![AEM Modernize Tools Convert Pages](/help/forms/assets/aem-modernize-Tools-convert-form.png)
 
@@ -134,10 +134,10 @@ To enable and use the AEM Migration Utility Tool for your AEM Environment, it is
 
    ![AEM Modernize Tools Success](/help/forms/assets/aem-modernize-Tools-success.png)
 
-9.  Select the Adaptive Form and select > **[!UICONTROL Properties]**. The Form Properties page opens. 
+1.  Select the Adaptive Form and select > **[!UICONTROL Properties]**. The Form Properties page opens. 
      ![AEM Modernize Tools Destination Folder](/help/forms/assets/aem-modernize-Tools-destination-folder.png)
 
-10. Select **[!UICONTROL Save and Close]** to save the properties of the converted form again.
+1. Select **[!UICONTROL Save and Close]** to save the properties of the converted form again.
     ![AEM Modernize Tools Adpative Form Properties](/help/forms/assets/aem-modernize-Tools-af-properties.png)
 
 You can now see that the Adaptive Form built on Foundation Components transforms into the Adaptive Form built on Core Components. 
