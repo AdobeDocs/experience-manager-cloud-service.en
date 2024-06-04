@@ -2,6 +2,8 @@
 title: Components Reference Guide
 description: A developer reference guide to the details of components and their structure
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
+feature: Developing
+role: "Admin, Architect, Developer"
 ---
 # Components Reference Guide {#components-reference-guide}
 

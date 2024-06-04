@@ -3,6 +3,8 @@ title: AEM as a Cloud Service Onboarding Journey Introduction
 description: Start here for an overview of the guided journey through the onboarding process to AEM as a Cloud Service.
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 recommendations: noDisplay
+feature: Onboarding
+role: "Admin, User, Developer"
 ---
 
 # Onboarding Journey {#onboarding-journey}

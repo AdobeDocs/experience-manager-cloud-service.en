@@ -3,6 +3,7 @@ description: To design websites and create functionality, developers use the mar
 title: Markup, Sections, Blocks, and Auto Blocking
 feature: Edge Delivery Services
 exl-id: 3f4ae9e9-e5c8-4873-a3d0-591c4d8683dd
+role: "Admin, Architect, Developer"
 ---
 # Markup, Sections, Blocks, and Auto Blocking
 

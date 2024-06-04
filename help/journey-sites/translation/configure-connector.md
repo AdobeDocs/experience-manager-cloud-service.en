@@ -5,6 +5,9 @@ index: yes
 hide: no
 hidefromtoc: no
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
+solution: Experience Manager Sites
+feature: Translation
+role: Admin
 ---
 # Configure the Translation Connector {#configure-connector}
 

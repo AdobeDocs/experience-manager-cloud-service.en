@@ -2,6 +2,8 @@
 title: Customizing and Extending the Universal Editor
 description: Learn about the different extension points and other features that allow you to customize the UI of the Universal Editor to support the needs of your content authors.
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
+feature: Developing
+role: "Admin, Architect, Developer"
 ---
 
 # Customizing and Extending the Universal Editor {#customizing-extending}

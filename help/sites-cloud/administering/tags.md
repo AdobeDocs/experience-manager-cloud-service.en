@@ -2,6 +2,9 @@
 title: Administering Tags
 description: Learn how to administer tags in AEM to organize your content.
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
+solution: Experience Manager Sites
+feature: Workflows
+role: Admin
 ---
 # Administering Tags {#administering-tags}
 

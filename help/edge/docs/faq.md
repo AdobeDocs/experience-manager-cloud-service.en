@@ -3,6 +3,7 @@ description: '[image0]: https://www.aem.live/media_1eae7d48a2a73903d8c880cb8cf2d
 title: Frequently Asked Questions
 feature: Edge Delivery Services
 exl-id: 1fd0f7a2-dcc8-4600-8353-7750ed6a2937
+role: "Admin, Architect, Developer"
 ---
 # Frequently Asked Questions
 

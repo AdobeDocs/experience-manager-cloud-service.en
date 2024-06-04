@@ -1,9 +1,10 @@
 ---
 title: Creating a New Site
 description: Learn how administrators use AEM to create a site using site templates to define the style and structure of your site.
-feature: Administering
-role: Admin
+feature: "Administering, Authoring"
+role: "Admin, User"
 exl-id: 50105d03-9d94-4aec-b0a7-0b88e3fe50e0
+solution: Experience Manager Sites
 ---
 
 # Creating a New Site {#new-site}

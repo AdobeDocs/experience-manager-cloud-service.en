@@ -4,6 +4,7 @@ description: Learn how you can enable the front-end pipeline for existing sites 
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
+solution: Experience Manager Sites
 ---
 # Enabling the Front-End Pipeline {#enable-front-end-pipeline}
 

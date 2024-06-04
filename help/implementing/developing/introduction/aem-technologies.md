@@ -2,6 +2,8 @@
 title: AEM Technical Foundations
 description: An overview of the technical foundations of AEM including how AEM is structured and fundamental technologies like JCR, Sling, and OSGi.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
+feature: Developing
+role: "Admin, Architect, Developer"
 ---
 # AEM Technical Foundations {#aem-technical-foundations}
 

@@ -2,6 +2,9 @@
 title: Adding a TXT Record
 description: Learn how to add TXT record to add a custom domain name in Cloud Manager.
 exl-id: d441de29-af41-4d3e-9155-531af9702841
+solution: Experience Manager
+feature: "Cloud Manager, Developing"
+role: "Admin, Architect, Developer"
 ---
 # Adding a TXT Record {#adding-txt}
 

@@ -2,6 +2,8 @@
 title: Getting Started with the Universal Editor in AEM
 description: Learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
+feature: Developing
+role: "Admin, Architect, Developer"
 ---
 
 # Getting Started with the Universal Editor in AEM {#getting-started}

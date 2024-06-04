@@ -2,6 +2,9 @@
 title: Introduction to Custom Domain Names
 description: Cloud Manager's UI lets you add a custom domain to identify your site with a unique, branded name in a self-service manner.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
+solution: Experience Manager
+feature: "Cloud Manager, Developing"
+role: "Admin, Architect, Developer"
 ---
 
 # Introduction to Custom Domain Names {#introduction}

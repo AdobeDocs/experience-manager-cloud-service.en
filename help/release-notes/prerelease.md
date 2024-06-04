@@ -2,6 +2,8 @@
 title: Adobe Experience Manager as a Cloud Service Prerelease Channel
 description: Learn how to use the prerelease channel to get a preview of upcoming features to AEM as a Cloud Service.
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
+feature: Release Information
+role: Admin
 ---
 
 # Adobe Experience Manager as a Cloud Service Prerelease Channel {#prerelease-channel}

@@ -3,6 +3,7 @@ description: In most websites, there are strings or variables that will be used 
 title: Placeholders
 feature: Edge Delivery Services
 exl-id: 392e2323-8d6f-40eb-a68e-51baeee7fc2d
+role: "Admin, Architect, Developer"
 ---
 # Placeholders
 

@@ -2,6 +2,9 @@
 title: Notifications
 description: Learn how to receive information about pipeline deployments using the Adobe Experience Cloud notification system.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
+solution: Experience Manager
+feature: "Cloud Manager, Developing"
+role: "Admin, Architect, Developer"
 ---
 
 # Notifications {#notifications}

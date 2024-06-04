@@ -4,6 +4,8 @@ description: Learn how to use AEM's Content Fragment models to create your conte
 hidefromtoc: yes
 index: no
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
+feature: Onboarding
+role: "Admin, User, Developer"
 ---
 
 # Create the Content Structure for Your App {#content-structure}

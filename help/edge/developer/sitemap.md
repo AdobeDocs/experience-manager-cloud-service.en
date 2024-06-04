@@ -3,6 +3,7 @@ description: Create automatically generated sitemap files to be referenced from 
 title: Sitemaps
 feature: Edge Delivery Services
 exl-id: cdc12747-6003-4744-819e-d17e010901e7
+role: "Admin, Architect, Developer"
 ---
 # Sitemaps
 

@@ -4,6 +4,8 @@ description: Use the Content Fragment model that you created previously to creat
 hidefromtoc: yes
 index: no
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
+feature: Onboarding
+role: "Admin, User, Developer"
 ---
 
 # Create Headless Content {#create-content}

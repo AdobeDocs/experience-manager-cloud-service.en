@@ -2,6 +2,8 @@
 title: Setting Up IMS Integrations for AEM as a Cloud Service
 description: Learn how to set up IMS integrations for AEM as a Cloud Service
 exl-id: 72fb1ea1-355c-4faa-a733-77bc7de75ed5
+feature: Security
+role: Admin
 ---
 # Setting Up IMS Integrations for AEM as a Cloud Service {#setting-up-ims-integrations-for-aemaacs}
 

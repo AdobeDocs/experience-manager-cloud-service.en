@@ -2,6 +2,9 @@
 title: Java&trade; Functional Tests
 description: Learn how to write Java&trade; functional tests for AEM as a Cloud Service
 exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
+solution: Experience Manager
+feature: "Cloud Manager, Developing"
+role: "Admin, Architect, Developer"
 ---
 # Java&trade; Functional Testing
 

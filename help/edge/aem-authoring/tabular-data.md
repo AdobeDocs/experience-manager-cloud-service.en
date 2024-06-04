@@ -3,6 +3,7 @@ title: Using Spreadsheets to Manage Tabular Data
 description: Learn how to use spreadsheets to manage tabular data for various values such as metadata and redirects for your AEM with Edge Delivery Services site.
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
+role: "Admin, Architect, Developer"
 ---
 
 # Using Spreadsheets to Manage Tabular Data {#tabular-data}

@@ -2,6 +2,8 @@
 title: Create Demo Site
 description: Create a demo site in AEM based on a library of pre-configured templates.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
+feature: Onboarding
+role: "Admin, User, Developer"
 ---
 # Create Demo Site {#creating-a-site}
 

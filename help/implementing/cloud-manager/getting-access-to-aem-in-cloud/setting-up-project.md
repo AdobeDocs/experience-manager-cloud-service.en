@@ -2,6 +2,9 @@
 title: Project Setup
 description: Learn how AEM projects are built with Maven and the standards you must observe when creating your own project.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
+solution: Experience Manager
+feature: "Cloud Manager, Developing"
+role: "Admin, Architect, Developer"
 ---
 # Project Setup {#project-setup}
 

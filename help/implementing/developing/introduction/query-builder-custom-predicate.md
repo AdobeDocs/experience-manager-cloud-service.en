@@ -2,6 +2,8 @@
 title: Implementing a Custom Predicate Evaluator for the Query Builder
 description: The Query Builder in AEM offers an easy, customizable way to query the content repository
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
+feature: Developing
+role: "Admin, Architect, Developer"
 ---
 # Implementing a Custom Predicate Evaluator for the Query Builder {#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
