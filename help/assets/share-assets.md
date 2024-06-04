@@ -106,7 +106,7 @@ A well-designed template conveys professionalism and competence, enhancing the c
 
 #### Format of a customized email template {#format-of-custom-email-template}
 
-The email template can be personalized using tabular format in a markup language, for example, HTML. The default editable template link can be found at `/libs/settings/dam/adhocassetshare/en.txt`. And the override file that you create is available at `/apps/settings/dam/adhocassetshare/en.txt`. You can modify the email template as many times as required.
+The email template can be customized using plain text or HTML. The default editable template link can be found at `/libs/settings/dam/adhocassetshare/en.txt`. You can override the template by creating the file `/apps/settings/dam/adhocassetshare/en.txt`. You can modify the email template as many times as required.
 
 | Placeholders | Description |
 |---|-----|
@@ -120,6 +120,8 @@ The email template can be personalized using tabular format in a markup language
 #### Customized email template example {#custom-email-template-example}
 
 ```
+subject: ${emailSubject}
+
 <!DOCTYPE html>
 <html><body>
 <p><strong>${emailInitiator}</strong> invited you to review assets.</p>
