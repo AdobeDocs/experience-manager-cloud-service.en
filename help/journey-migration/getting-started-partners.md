@@ -2,6 +2,8 @@
 title: Migration Guide to Experience Manager as a Cloud Service for Partners
 description: Migration Guide to Experience Manager as a Cloud Service for Partners
 exl-id: 9d5a72b8-06af-4b82-ab20-e65aea7903b3
+feature: Migration
+role: Admin
 ---
 # Migration Guide to Adobe Experience Manager as a Cloud Service for Partners {#Overview}
 

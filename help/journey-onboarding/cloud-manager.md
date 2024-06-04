@@ -3,6 +3,7 @@ title: Access Cloud Manager
 description: Learn how to access Cloud Manager so that you can set up your project resources.
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
+feature: Onboarding
 ---
 # Access Cloud Manager {#cloud-resources}
 

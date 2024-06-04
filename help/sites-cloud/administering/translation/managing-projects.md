@@ -4,6 +4,7 @@ description: Learn how to create and manage both machine and human translation p
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
+solution: Experience Manager Sites
 ---
 # Managing Translation Projects {#managing-translation-projects}
 

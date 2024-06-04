@@ -2,6 +2,9 @@
 title: Creating Accessible Content for Adobe Experience Manager as a Cloud Service (WCAG 2.1 Conformance)
 description: Use AEM as a Cloud Service to help make web content accessible to, and usable by, persons with disabilities
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Creating Accessible Content (WCAG 2.1 Conformance) {#creating-accessible-content-wcag-conformance}
 

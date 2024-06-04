@@ -2,6 +2,8 @@
 title: SPA Model Routing
 description: For single page applications in AEM, the app is responsible for the routing. This document describes the routing mechanism, the contract, and options available.
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # SPA Model Routing{#spa-model-routing}
 

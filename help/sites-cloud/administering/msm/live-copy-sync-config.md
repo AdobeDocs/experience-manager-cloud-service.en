@@ -4,6 +4,7 @@ description: Learn about the powerful Live Copy synchronization options availabl
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
+solution: Experience Manager Sites
 ---
 
 # Configuring Live Copy Synchronization {#configuring-live-copy-synchronization}

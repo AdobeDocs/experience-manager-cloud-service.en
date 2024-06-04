@@ -4,6 +4,7 @@ description: Learn how AEM site templates can be used to predefine site structur
 feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
+solution: Experience Manager Sites
 ---
 # Site Templates {#site-templates}
 

@@ -2,6 +2,8 @@
 title: How to configure search filters for Inbox?
 description: Learn how to configure search filters for Inbox items.
 exl-id: 0e82d7ad-7a82-4d67-8eb8-9af6936652d8
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Configure search filters for Inbox {#configure-search-filters-inbox}
 

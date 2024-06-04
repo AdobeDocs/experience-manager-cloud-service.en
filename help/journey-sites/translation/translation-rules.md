@@ -5,6 +5,9 @@ index: yes
 hide: no
 hidefromtoc: no
 exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
+solution: Experience Manager Sites
+feature: Translation
+role: Admin
 ---
 # Configure Translation Rules {#configure-translation-rules}
 

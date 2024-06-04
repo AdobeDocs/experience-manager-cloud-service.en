@@ -2,6 +2,9 @@
 title: Creating Production Programs 
 description: Learn how to use Cloud Manager to create your own production program to host live traffic.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 
 # Creating Production Programs {#create-production-program}
