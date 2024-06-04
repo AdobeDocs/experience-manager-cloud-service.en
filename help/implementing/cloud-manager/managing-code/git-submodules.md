@@ -3,7 +3,7 @@ title: Git Submodule Support
 description: Learn how you can use Git submodules to merge the content of multiple branches across git repositories at build time.
 ---
 
-# Git Submodule Support {#git-submodule-support}
+# Git Submodule Support for Adobe Repositories {#git-submodule-support}
 
 Git submodules can be used to merge the content of multiple branches across git repositories at build time.
 
@@ -60,9 +60,9 @@ This results in a `.gitmodules` file similar to the following.
 
 More information on git submodules can be found in the [Git Reference Manual.](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
 
-## Limitations and Recommendations {#limitations-recommendations}
+### Limitations and Recommendations {#limitations-recommendations}
 
-When using git submodules, be aware of the following limitations.
+When using git submodules with Adobe-managed repositories, be aware of the following limitations.
 
 * The git URL must be exactly in the syntax described in the previous section.
 * Only submodules at the root of the branch are supported.
@@ -71,3 +71,22 @@ When using git submodules, be aware of the following limitations.
   * To do this, run `git config -f .gitmodules submodule.<submodule path>.shallow true` for each submodule.
 * Git submodule references are stored to specific git commits. As a result, when changes to the submodule repository are made, the commit referenced must be updated.
   * For example, by using `git submodule update --remote`
+
+## Git Submodule Support for Private Repositories {#private-repositories}
+
+Support for git submodules when using [private repositories](private-repositories.md) is largely the same as when using Adobe repositories.
+
+However, after setting up your `pom.xml` file and running the `git submodule` commands, you must add a `.gitmodules` file to the root directory of the aggregator repository for Cloud Manager to detect the submodule setup.
+
+![.gitmodules file](assets/gitmodules.png)
+
+![Aggregator](assets/aggregator.png)
+
+### Limitations and Recommendations {#limitations-recommendations-private-repos}
+
+When using git submodules with private repositories, be aware of the following limitations.
+
+* The git URLs for the submodules can either be in the HTTPS or SSH format, but they must link to a github.com repository
+   * Adding an Adobe repository submodule to a GitHub aggregator repository or vice-versa won't work.
+* The GitHub submodules must be accessible to the Adobe GitHub App.
+* [The limitations of using git submodules with Adobe-managed repositories](#limitations-recommendations) also apply.

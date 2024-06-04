@@ -117,6 +117,10 @@ A targeted deployment deploys code only for selected parts of your AEM applicati
   * If a web-tier code pipeline exists for the selected environment, this selection is disabled.
   * If you have an existing full-stack pipeline deploying to an environment, creating a web tier config pipeline for the same environment will case the existing web tier configuration in the full-stack pipeline to be ignored.
 
+>[!NOTE]
+>
+>Web tier and config pipelines are not supported with private repositories. Please see the document [Adding Private Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) for details and the full list of limitations.
+
 The steps to complete the creation of your production, targeted deployment pipeline are the same once you choose a deployment type.
 
 1. Choose which deployment type you require.
