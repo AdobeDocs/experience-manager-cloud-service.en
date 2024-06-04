@@ -15,10 +15,6 @@ Summarized below are the continuous improvements for maintenance release 16544, 
 
 ### Enhancements {#enhancements-16544}
 
-* DXML-17171: The copy and paste operation of topics exceeding 15KB fails with an unexpected error. 
-* DXML-17088: The functionality to change the document state from the **File Properties** panel isn’t working correctly and changes to the *Draft* state. 
-* DXML-16931: Linked images from the topics fail to appear in the baseline after version creation. 
-* DXML-16896: Reusable content panels don’t list elements when the **User preferences** are set to view files by **Filename**. 
 * GRANITE-41133: Support Jakarta Servlet API 5 and OSGi Servlet Whiteboard API.
 * GRANITE-51355: Deprecate org.slf4j.event.
 * GRANITE-51565: AEM loses local group relationship with external group when local group is published from AEM.
