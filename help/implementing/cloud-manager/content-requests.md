@@ -9,8 +9,12 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 
 Cloud Service content requests are measured via server-side collection of data. The collection is enabled via CDN log analysis.
 
+<!-- Alexandru: temporarly commenting this out
+
 >[!NOTE]
 >We are excited to announce the GA rollout (Link to Release Notes) for Real Use Monitoring service, the client-side collection of data. It is an automated service and there is no customer set up required. You can learn more by consulting the documentation in [this article](Update link).
+
+-->
 
 ## Understanding Cloud Service Content Requests {#understanding-cloud-service-content-requests}
 
@@ -94,7 +98,7 @@ Real Use Monitoring service is beneficial for all customers. It offers a represe
 
 For all Adobe customers, this service provides valuable insights into user interactions. Customers employing their own CDN, can benefit from simplified traffic reporting, as Adobe now directly integrates the data collection, eliminating the need for separate reports during renewal cycles. 
 
-Would you like to unlock the full potential of your website , using our Early Adopter RUM Explorer visualisation tool to gain useful insights into your website engagement? This tool can provide insights into your page performance, including metrics on the number of clicks, Core Web Vitals (CWV), conversions, and customer journey maps. By utilizing these powerful insights, you can fine-tune your digital experiences to meet your users' needs more effectively. If you wish to learn more and get access, email us at "rum-explorer@adobe.com".
+Would you like to unlock the full potential of your website , using our Early Adopter RUM Explorer visualisation tool to gain useful insights into your website engagement? This tool can provide insights into your page performance, including metrics on the number of clicks, Core Web Vitals (CWV), conversions, and customer journey maps. By utilizing these powerful insights, you can fine-tune your digital experiences to meet your users' needs more effectively. If you wish to learn more and get access, email us at `rum-explorer@adobe.com`.
 
 ### Understand how the Real Use Monitoring Service Works {#understand-how-the-rum-service-works}
 
