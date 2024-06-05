@@ -12,6 +12,45 @@ Optimizing image quality can be a time consuming process as many factors contrib
 
 Adobe Experience Manager includes more than 100 Dynamic Media image delivery commands for tuning and optimizing images and rendering results. The following guidelines can help you streamline the process and achieve good results quickly using some essential commands and best practices.
 
+<!-- ADDED TOPIC AS PER CQDOC-21594 -->
+## Enable Smart Imaging in Dynamic Media
+
+**Smart imaging:**
+
+* Enabling Smart Imaging in Dynamic Media allows automatic optimization of image format, size, and quality based on client browser capabilities.
+Want to learn more? Go to [Smart Imaging](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq)
+* It enhances image delivery performance by dynamically adjusting these parameters.
+* You can evaluate Smart Imaging using the self-evaluation tool [Snapshot](https://snapshot.scene7.com/)
+
+**Image formats:**
+
+* Avoid using explicit `fmt=webp` or `fmt=avif` commands in a URL unless specifically required for a use case.
+* Smart Imaging automatically selects the best format, resulting in optimal bandwidth gains.
+
+**Default behavior:**
+
+* When no format command is specified in the URL and Smart Imaging is not enabled, Dynamic Media Image Delivery defaults to using JPEG format.
+
+By making informed choices about image formats and enabling Smart Imaging, you can significantly impact performance and user experience.
+
+
+<!-- ADDED TOPIC AS PER CQDOC-21594 -->
+## Best practices for selecting the source image {#bp-select-source-image}
+
+Essential considerations for working with source images:
+
+* **Source image format:**
+  * Using lossless formats like PNG, TIFF, or PSD ensures that the image quality remains high without any compression artifacts.
+  * These formats preserve all the original data, making them ideal for editing and further processing.
+* **Source image size:**
+  * Starting with a high-resolution image provides more detail and flexibility.
+  * When images need to be displayed at different sizes (for example, across devices or screen resolutions), having a larger source image allows for better scaling.
+  * For images that support zoom (like product photos), aim for dimensions of around 2,000 pixels or more on the longest side.
+  * Logos or banners that don't require zoom can be uploaded in the largest size needed for their intended use.
+
+By making these careful choices at the source level, you can contribute significantly to the overall quality of your visual content.
+
+<!-- REMOVED TOPIC AS PER CQDOC-21594 
 ## Best practices for image format (`&fmt=`) {#best-practices-for-image-format-fmt}
 
 * JPG or PNG are the best choices to deliver images in good quality and with manageable size and weight.
@@ -21,7 +60,7 @@ Adobe Experience Manager includes more than 100 Dynamic Media image delivery com
 * JPG often compresses photographic images with better fidelity than synthetic images with sharp edges and contrast.
 * If your images contain transparency, use PNG because JPG does not support transparency.
 
-As a best practice for image format, start with the most common setting `&fmt=JPG`.
+As a best practice for image format, start with the most common setting `&fmt=JPG`. -->
 
 ## Best practices for image size {#best-practices-for-image-size}
 
