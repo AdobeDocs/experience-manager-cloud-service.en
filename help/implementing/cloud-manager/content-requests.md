@@ -22,7 +22,7 @@ Content requests are automatically collected server-side at the edge of Adobe Ex
 
 The Real Use Monitoring service, client-side collection, offers a more precise reflection of interactions, ensuring a reliable measure of website engagement. This gives customers advanced insights into their page traffic and performance. While it is beneficial for all customers, it offers a representative reflection of user interactions, ensuring a reliable measure of website engagement by capturing the number of Page Views on the client-side. 
 
-For customers that bring their own CDN on top of AEM as a Cloud Service, server-side reporting will result in numbers that cannot be used to compare with the licensed content requests. With [Real Use Monitoring](#real-use-monitoring-service-for-aem-as-a-cloud-service), Adobe can reflect a reliable measure of website engagement.
+For customers that bring their own CDN on top of AEM as a Cloud Service, server-side reporting results in numbers that cannot be used to compare with the licensed content requests. With [Real Use Monitoring](#real-use-monitoring-service-for-aem-as-a-cloud-service), Adobe can reflect a reliable measure of website engagement.
 
 ## Server-side Collection {#serverside-collection}
 
@@ -30,11 +30,11 @@ There are rules in place to exclude well-known bots, including well-known servic
 
 ### Variances of Cloud Service Content Requests {#content-requests-variances}
 
-Content Requests can have variances with an organization's Analytics reporting tools as summarized in the following table. In general, *do not* use analytics tools that gather data by way of client-side instrumentation to report on the number of content requests for a given site, simply because they often depend on user consent to be triggered, therefore missing out on a significant fraction of the traffic. Analytics tools gathering data server-side in log files, or CDN reports for customers adding their own CDN on top of AEM as a Cloud Service, will provide better counts. For reporting on Page Views and their associated performance, the Adobe RUM Data Service is the Adobe recommended option. 
+Content Requests can have variances with an organization's Analytics reporting tools as summarized in the following table. In general, *do not* use analytics tools that gather data by way of client-side instrumentation to report on the number of content requests for a given site, simply because they often depend on user consent to be triggered, therefore missing a significant fraction of the traffic. Analytics tools gathering data server-side in log files, or CDN reports for customers adding their own CDN on top of AEM as a Cloud Service, will provide better counts. For reporting on Page Views and their associated performance, the Adobe RUM Data Service is the Adobe recommended option. 
 
 |Reason For Variance|Explanation|
 |---|---|
-|End user consent|Analytics tools relying on client-side instrumention often depend on user consent to be triggered. This could represent the majority of the traffic not being tracked. For customers who want to measure content requests on their own, it is recommended to rely on analytics tools gathering data server-side or CDN reports.|
+|End user consent|Analytics tools relying on client-side instrumentation often depend on user consent to be triggered. This could represent the majority of the traffic not being tracked. For customers who want to measure content requests on their own, it is recommended to rely on analytics tools gathering data server-side or CDN reports.|
 |Tagging|All pages or API calls that are tracked as Adobe Experience Manager (AEM) content requests may not be tagged with Analytics tracking.|
 |Tag Management Rules|Tag management rule settings may result in various data collection configurations on a page, resulting in some combination of discrepancies with content request tracking.|
 |Bots|Unknown bots that have not been pre-identified and removed by AEM may cause tracking discrepancies.|
