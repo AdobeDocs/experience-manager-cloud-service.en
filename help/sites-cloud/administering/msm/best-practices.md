@@ -4,6 +4,7 @@ description: Learn the best practices compiled by Adobe engineering and consulti
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
+solution: Experience Manager Sites
 ---
 # MSM Best Practices {#msm-best-practices}
 

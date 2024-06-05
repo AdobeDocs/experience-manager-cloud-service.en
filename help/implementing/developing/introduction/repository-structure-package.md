@@ -2,6 +2,8 @@
 title: AEM Project Repository Structure Package  
 description: Maven projects on Adobe Experience Manager as a Cloud Service require a Repository Structure Subpackage definition whose sole purpose is to define the JCR repository roots in which the project's Code subpackages deploy into.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # AEM Project Repository Structure Package
 

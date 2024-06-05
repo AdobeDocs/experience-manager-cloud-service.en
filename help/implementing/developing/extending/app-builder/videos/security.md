@@ -2,7 +2,7 @@
 title: App Builder security
 description: Learn about App Builder application security for AEM as a Cloud Service.
 version: Cloud Service
-feature: App Builder
+feature: App Builder, Developing
 topic: Integrations, Development
 role: Developer, Architect
 level: Beginner

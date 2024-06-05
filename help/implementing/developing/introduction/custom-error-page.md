@@ -2,6 +2,8 @@
 title: Custom Error Pages
 description: AEM comes with a standard error handler for handling HTTP errors, which can be customized.
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Customizing Error Pages {#customizing-error-pages}
 

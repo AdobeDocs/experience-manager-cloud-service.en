@@ -1,7 +1,7 @@
 ---
 title: Package Manager
 description: Learn the basics of AE; package management with Package Manager.
-feature: Administering
+feature: Administering, Developing
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
 ---

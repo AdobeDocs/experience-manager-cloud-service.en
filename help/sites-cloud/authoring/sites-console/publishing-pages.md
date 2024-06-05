@@ -2,6 +2,9 @@
 title: Publishing Pages
 description: Learn how to publish, and unpublish, your pages using various mechanisms in AEM.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Publishing Pages {#publishing-pages}
 
