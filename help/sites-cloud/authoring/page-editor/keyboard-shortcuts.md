@@ -2,6 +2,9 @@
 title: Keyboard Shortcuts for Page Editing
 description: Various keyboard shortcuts are available throughout AEM, including some for page editing
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Keyboard Shortcuts for Page Editing {#keyboard-shortcuts-when-editing-pages}
 
