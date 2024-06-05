@@ -6,8 +6,8 @@ role: User, Developer, Admin
 features: core components
 hide: yes
 hidefromtoc: yes
+exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 ---
-
 # Introduction 
 
 The Forms Conversion Utility, part of [AEM Modernize Tool](https://opensource.adobe.com/aem-modernize-Tools/) suite, helps you easily convert Adaptive Forms built with legacy Foundation Components to forms that leverage the modern, supported capabilities of Core Components.
@@ -146,6 +146,3 @@ You can now see that the Adaptive Form built on Foundation Components transforms
 
 * Ensure your Foundation Components based forms, use only those components that have an equivalent [Core Components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) available. In cases where you use Foundation Components that do not have an equivalent Core Component, the Foundation Component is not converted. As a result, it does not function properly while authoring a form
 * Make sure that the rules to covert the Foundation Components to Core Components are formatted in XML.
-
-
-
