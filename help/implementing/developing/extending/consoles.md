@@ -2,6 +2,8 @@
 title: Customizing Consoles
 description: Learn about the different options that AEM provides to customize the consoles of your authoring instance.
 exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Customizing Consoles {#customizing-consoles}
 

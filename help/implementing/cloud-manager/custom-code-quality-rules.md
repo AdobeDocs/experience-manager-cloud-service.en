@@ -2,6 +2,9 @@
 title: Custom Code Quality Rules
 description: This page describes the custom code quality rules executed by Cloud Manager as part of code quality testing. They are based on best practices from Adobe Experience Manager Engineering.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 # Custom code quality rules {#custom-code-quality-rules} 
 
