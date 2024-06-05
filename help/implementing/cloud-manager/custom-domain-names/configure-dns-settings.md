@@ -2,6 +2,9 @@
 title: Configuring DNS Settings 
 description: Learn how to configuring DNS settings for your custom domain names.
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 # Configuring DNS Settings {#configure-dns}
 

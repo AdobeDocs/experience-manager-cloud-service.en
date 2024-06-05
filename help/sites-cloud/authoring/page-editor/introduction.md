@@ -2,6 +2,9 @@
 title: The AEM Page Editor
 description: The AEM page editor is a powerful tool for authoring your content.
 exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # The AEM Page Editor {#editing-page-content}
 

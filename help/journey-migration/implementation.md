@@ -2,6 +2,8 @@
 title: Implementation Phase
 description: Making sure your code and content are ready for the migration to the cloud
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
+feature: Migration
+role: Admin
 ---
 # Implementation Phase {#implementation-phase}
 

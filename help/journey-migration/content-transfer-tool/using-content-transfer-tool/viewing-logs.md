@@ -2,6 +2,8 @@
 title: Viewing Logs for a Migration Set in Content Transfer Tool
 description: Viewing Logs for a Migration Set in Content Transfer Tool
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
+feature: Migration
+role: Admin
 ---
 # Viewing Logs for a Migration Set {#view-logs-content-transfer-tool}
 

@@ -2,6 +2,9 @@
 title: Sites Console Side Panel
 description: Learn how to use the side panel in the AEM sites console to better understand and navigate your content.
 exl-id: 7f2571d6-b847-4cce-8e94-94ba0d2e04a5
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Sites Console Side Panel {#side-panel}
 

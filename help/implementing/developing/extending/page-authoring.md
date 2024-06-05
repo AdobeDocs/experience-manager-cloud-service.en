@@ -2,6 +2,8 @@
 title: Customizing Page Authoring
 description: Learn about the mechanisms that AEM as a Cloud Service provides to customize page authoring functionality.
 exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Customizing Page Authoring {#customizing-page-authoring}
 

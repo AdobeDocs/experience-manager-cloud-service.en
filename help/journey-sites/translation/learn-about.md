@@ -5,6 +5,9 @@ index: yes
 hide: no
 hidefromtoc: no
 exl-id: 1e5e739a-1fbd-49cf-b529-335696d7e2f4
+solution: Experience Manager Sites
+feature: Translation
+role: Admin
 ---
 # Learn about sites content and how to translate it in AEM {#learn-about}
 
