@@ -10,19 +10,16 @@ role: Admin, Architect, Developer
 
 ## Introduction {#introduction}
 
-Cloud Service content requests are measured via server-side collection of data. The collection is enabled via CDN log analysis.
+Content Requests means a request coming into AEM Sites (including in connection with Edge Delivery Services for AEM Sites) or any Customer-provided caching system (e.g., content delivery network) to deliver content or data in either HTML format via Page Views (e.g., pages and fragments) or JSON format via API Calls (e.g., headless). Content Requests are counted either as a Page View or 5 API Calls, measured at the ingress of the first caching system to receive a Content Request. Certain HTTP requests are included or excluded for purposes of counting Content Requests; the full list of such included and excluded HTTP requests, as well as their technical definitions, are available in the Documentation.
 
 ## Understanding Cloud Service Content Requests {#understanding-cloud-service-content-requests}
 
-Content requests are automatically collected server-side at the edge of Adobe Experience Manager as a Cloud Service, via automated analysis of the log files originating from AEM as a Cloud Service CDN. This is done by isolating the requests returning HTML `(text/html)` or JSON `(application/json)` content from the CDN, and based on several inclusion and exclusion rules detailed below. A content request occurs independently from the returned content being served from the CDN caches or the content going back to the origin of the CDN (AEM's dispatchers).
+For customers using out-of-the-box CDNCloud Service content requests are measured via server-side collection of data . This collection is enabled via CDN log analysis.Content requests are automatically collected server-side at the edge of Adobe Experience Manager as a Cloud Service, via automated analysis of the log files originating from AEM as a Cloud Service CDN. This is done by isolating the requests returning HTML `(text/html)` or JSON `(application/json)` content from the CDN, and based on several inclusion and exclusion rules detailed below. A content request occurs independently from the returned content being served from the CDN caches or the content going back to the origin of the CDN (AEM's dispatchers).
 
-The [Real Use Monitoring service](#real-use-monitoring-service-for-aem-as-a-cloud-service), client-side collection, offers a more precise reflection of interactions, ensuring a reliable measure of website engagement. This gives customers advanced insights into their page traffic and performance. While it is beneficial for all customers, it offers a representative reflection of user interactions, ensuring a reliable measure of website engagement by capturing the number of Page Views on the client-side. 
+For customers emplying their own CDN, client-side collection, offers a more precise reflection of interactions, ensuring a reliable measure of website engagement via [Real Use Monitoring service](#real-use-monitoring-service-for-aem-as-a-cloud-service). This gives customers advanced insights into their page traffic and performance. While it is beneficial for all customers, it offers a representative reflection of user interactions, ensuring a reliable measure of website engagement by capturing the number of Page Views on the client-side. 
 
 For customers that bring their own CDN on top of AEM as a Cloud Service, server-side reporting results in numbers that cannot be used to compare with the licensed content requests. With [Real Use Monitoring](#real-use-monitoring-service-for-aem-as-a-cloud-service), Adobe can reflect a reliable measure of website engagement.
 
-## Server-side Collection {#serverside-collection}
-
-There are rules in place to exclude well-known bots, including well-known services visiting the site regularly to refresh their search index or service.
 
 ### Variances of Cloud Service Content Requests {#content-requests-variances}
 
@@ -43,6 +40,10 @@ Content Requests can have variances with an organization's Analytics reporting t
 |Firewalls|Firewalls may block Analytics tracking. This scenario is more frequent with corporate firewalls.|
 
 See also [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md).
+
+## Server-side Collection Rules {#serverside-collection}
+
+There are rules in place to exclude well-known bots, including well-known services visiting the site regularly to refresh their search index or service.
 
 ### Types of included content requests {#included-content-requests}
 
