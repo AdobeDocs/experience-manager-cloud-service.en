@@ -2,6 +2,8 @@
 title: SPA and Server-Side Rendering
 description: Using server-side rendering (SSR) in your SPA can accelerate the initial load of the page and then pass further rendering on to the client.
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # SPA and Server-Side Rendering{#spa-and-server-side-rendering}
 

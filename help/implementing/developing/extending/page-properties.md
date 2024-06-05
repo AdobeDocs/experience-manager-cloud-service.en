@@ -2,6 +2,8 @@
 title: Customizing Views of Page Properties
 description: Learn how to page properties are viewed and edited by authors.
 exl-id: 363b3c2d-f965-485f-bdae-2ea5b4cecb83
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Customizing Views of Page Properties{#customizing-views-of-page-properties}
 

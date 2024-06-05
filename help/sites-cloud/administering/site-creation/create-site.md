@@ -4,6 +4,7 @@ description: Learn how to use AEM to create a site using site templates to defin
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
+solution: Experience Manager Sites
 ---
 # Creating a Site {#creating-site}
 

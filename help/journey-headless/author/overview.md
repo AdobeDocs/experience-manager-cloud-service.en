@@ -2,6 +2,9 @@
 title: AEM Headless Content Author Journey
 description: Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to author content for your project.
 exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
 ---
 # AEM Headless Content Author Journey {#aem-headless-author-journey}
 

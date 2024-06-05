@@ -1,7 +1,7 @@
 ---
 title: Customizing Site Templates and Themes
 description: Learn how AEM site templates can be used to predefine site structure and initial content and how themes are used to define site style to allow you to quickly create sites.
-feature: Administering
+feature: Administering, Developing
 role: Admin
 exl-id: dc20f26c-59f0-4244-9797-926f25ed4da3
 ---

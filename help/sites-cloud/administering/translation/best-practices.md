@@ -4,6 +4,7 @@ description: Learn about best practices compiled by Adobe engineering and consul
 feature: Language Copy
 role: Admin
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
+solution: Experience Manager Sites
 ---
 # Translation Best Practices {#translation-best-practices}
 

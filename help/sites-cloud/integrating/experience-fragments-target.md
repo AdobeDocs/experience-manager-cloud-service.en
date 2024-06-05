@@ -2,6 +2,9 @@
 title: Exporting Experience Fragments to Adobe Target
 description: Learn how to export your Experience Fragments to Adobe Target, to test and personalize experiences.
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
+solution: Experience Manager Sites
+feature: Integration
+role: Admin
 ---
 # Exporting Experience Fragments to Adobe Target{#exporting-experience-fragments-to-adobe-target}
 

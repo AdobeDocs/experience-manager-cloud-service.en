@@ -2,7 +2,7 @@
 title: Deploying App Builder applications
 description: Learn how to deploy App Builder applications for Adobe Experience Manager (AEM) as a Cloud Service.
 version: Cloud Service
-feature: App Builder
+feature: App Builder, Developing
 topic: Integrations, Development
 role: Developer, Architect
 level: Beginner

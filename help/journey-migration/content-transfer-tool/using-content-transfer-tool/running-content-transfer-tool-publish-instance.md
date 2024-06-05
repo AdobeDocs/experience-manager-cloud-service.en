@@ -2,6 +2,8 @@
 title: Running the Content Transfer Tool on a Publish Instance
 description: Running the Content Transfer Tool on a Publish Instance
 exl-id: 01faab94-a939-4004-b094-e9eb8f67b96e
+feature: Migration
+role: Admin
 ---
 # Running the Content Transfer Tool on a Publish Instance {#run-content-transfer-tool-publish-instance}
 

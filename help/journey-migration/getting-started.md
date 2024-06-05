@@ -2,6 +2,8 @@
 title: Getting Started with the Migration Journey to AEM as a Cloud Service
 description: Start your migration journey by familiarizing yourself on the basics of moving to AEM as a Cloud Service
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
+feature: Migration
+role: Admin
 ---
 # Getting Started with the Migration Journey to AEM as a Cloud Service {#getting-started}
 
