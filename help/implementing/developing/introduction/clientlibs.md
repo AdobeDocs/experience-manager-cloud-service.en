@@ -2,6 +2,8 @@
 title: Using Client-Side Libraries on AEM as a Cloud Service
 description: AEM provides Client-side Library Folders, which allow you to store your client-side code (clientlibs) in the repository, organize it into categories, and define when and how each category of code is to be served to the client
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
+feature: Developing
+role: Admin, Architect, Developer
 ---
 
 # Using Client-Side Libraries on AEM as a Cloud Service {#using-client-side-libraries}

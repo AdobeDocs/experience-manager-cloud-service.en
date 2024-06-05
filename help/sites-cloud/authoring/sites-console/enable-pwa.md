@@ -2,6 +2,9 @@
 title: Enabling Progressive Web App Features
 description: AEM Sites allows the content author to enable progressive web app capabilities to any site through simple configuration instead of coding.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Enabling Progressive Web App Features {#enabling-pwa}
 
