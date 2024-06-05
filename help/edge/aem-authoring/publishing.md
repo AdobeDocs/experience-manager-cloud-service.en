@@ -3,6 +3,7 @@ title: Publishing Content for Edge Delivery Services
 description: Learn how content publishing works with Edge Delivery Services and how to publish AEM content with Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
+role: User
 ---
 
 # Publishing Content for Edge Delivery Services {#publishing-edge}

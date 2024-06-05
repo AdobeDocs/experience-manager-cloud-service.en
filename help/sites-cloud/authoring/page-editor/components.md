@@ -2,6 +2,9 @@
 title: Components
 description: Components are the fundamental authoring building block of content pages in AEM
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Components {#components}
 

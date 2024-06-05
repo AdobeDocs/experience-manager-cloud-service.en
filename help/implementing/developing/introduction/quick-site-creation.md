@@ -2,6 +2,8 @@
 title: Quick Site Creation and Front-End Customization
 description: Learn how the Quick Site Creation tool uses site templates, themes, and the front-end pipeline to enable fast deployment of new sites and decouple front-end development.
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Quick Site Creation and Front-End Customization {#quick-site-creation}
 

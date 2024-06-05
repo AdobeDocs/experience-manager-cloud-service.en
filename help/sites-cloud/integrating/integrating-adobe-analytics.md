@@ -1,9 +1,10 @@
 ---
 title: Integrating with Adobe Analytics
 description: Learn how to integrate Adobe Analytics with AEM as a Cloud Service by using the Touch UI and Adobe Launch.
-feature: Administering
+feature: Integration
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
+solution: Experience Manager Sites
 ---
 # Integrating with Adobe Analytics{#integrating-with-adobe-analytics}
 
@@ -41,7 +42,15 @@ The fields present in the configuration window are as follows :
 
 ### Adobe Analytics with IMS authentication {#configuration-parameters-ims}
 
-An IMS configuration is required to properly integrate Adobe Analytics with AEM as a Cloud Service. This configuration must be created so see [page](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) to learn how to create the Analytics IMS configuration.
+The integration of Adobe Experience Manager as a Cloud Service (AEMaaCS) with Adobe Analytics via the Analytics Standard API requires the configuration of Adobe IMS (Identity Management System).
+
+See [Setting Up IMS Integrations for AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) to learn how to create the IMS configuration.
+
+>[!NOTE]
+>
+>[IMS integrations are now configured with S2S OAuth](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md). 
+>
+>Previous configurations were made with [JWT Credentials that are now subject to deprecation in the Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md). 
 
 ### Adding a configuration to a site {#add-configuration}
 

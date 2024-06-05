@@ -2,6 +2,8 @@
 title: Release Notes for Generate Variations
 description: Release Notes for Generate Variations, accessible from AEM as a Cloud Service and the Sidekick of Edge Delivery Services
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
+feature: Release Information
+role: Admin
 ---
 # Release Notes for Generate Variations {#release-notes-generate-variations}
 
@@ -13,8 +15,15 @@ This page documents the release notes for Generate Variations, accessible from A
 
 ## Release Highlights {#release-highlights}
 
-The current releaase is version 2.0.0.
+The current release is version 2.2.0.
 
+### 2.2.0 {#release-notes-2-2-0}
+
+* Implemented support for Content Fragments
+* Introduced the ability to download results as CSV files from Favorites
+* Enhanced the Recents list with time groupings
+* Localization support has been added for multiple languages
+ 
 ### 2.0.0 {#release-notes-2-0-0}
 
 * Introduced universal persistent storage for Prompt Templates.

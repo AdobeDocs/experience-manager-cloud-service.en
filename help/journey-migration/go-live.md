@@ -2,6 +2,8 @@
 title: Go-Live
 description: Learn how to perform the migration once the code and the content are cloud ready
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
+feature: Migration
+role: Admin
 ---
 # Go-Live {#go-live}
 
