@@ -12,8 +12,9 @@ Optimizing image quality can be a time consuming process as many factors contrib
 
 Adobe Experience Manager includes more than 100 Dynamic Media image delivery commands for tuning and optimizing images and rendering results. The following guidelines can help you streamline the process and achieve good results quickly using some essential commands and best practices.
 
-<!-- ADDED TOPIC AS PER CQDOC-21594 -->
-## Enable Smart Imaging in Dynamic Media
+<!-- ADDED THE FOLLOWING TOPIC AS PER CQDOC-21594 -->
+
+## Enable Smart Imaging in Dynamic Media {#bp-enable-smart-imaging}
 
 **Smart imaging:**
 
@@ -29,12 +30,13 @@ Want to learn more? Go to [Smart Imaging](https://experienceleague.adobe.com/en/
 
 **Default behavior:**
 
-* When no format command is specified in the URL and Smart Imaging is not enabled, Dynamic Media Image Delivery defaults to using JPEG format.
+* When no format command is specified in the URL and Smart Imaging is not enabled, Dynamic Media image delivery defaults to using JPEG format.
 
 By making informed choices about image formats and enabling Smart Imaging, you can significantly impact performance and user experience.
 
 
-<!-- ADDED TOPIC AS PER CQDOC-21594 -->
+<!-- ADDED THE FOLLOWING TOPIC AS PER CQDOC-21594 -->
+
 ## Best practices for selecting the source image {#bp-select-source-image}
 
 Essential considerations for working with source images:
@@ -50,7 +52,7 @@ Essential considerations for working with source images:
 
 By making these careful choices at the source level, you can contribute significantly to the overall quality of your visual content.
 
-<!-- REMOVED TOPIC AS PER CQDOC-21594 
+<!-- REMOVED TOPIC AS PER CQDOC-21594
 ## Best practices for image format (`&fmt=`) {#best-practices-for-image-format-fmt}
 
 * JPG or PNG are the best choices to deliver images in good quality and with manageable size and weight.
@@ -77,13 +79,13 @@ Image sharpening is the most complex aspect of controlling images on your websit
 
 * Best practices white paper [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf) applies to Experience Manager as well.
 
-* Watch [Use Image Sharpening with Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
+* Watch [Use Image Sharpening with Experience Manager - Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
 
 With Experience Manager, you can sharpen images on ingestion, on delivery, or both. Usually, however, it is best to sharpen images using only one method or the other, but not both. Sharpening images on delivery, on a URL, typically gives you the best results.
 
 There are two image sharpening methods that you can use:
 
-* Simple sharpening ( `&op_sharpen`) &ndash; Similar to the sharpen filter used in Photoshop, simple sharpening applies basic sharpening to the final view of the image following dynamic resizing. However, this method is not user-configurable. The best practice is to not use &op_sharpen unless required.
+* Simple sharpening ( `&op_sharpen`) &ndash; Similar to the sharpen filter used in Photoshop, simple sharpening applies basic sharpening to the final view of the image following dynamic resizing. However, this method is not user-configurable. The best practice is to avoid using `&op_sharpen` unless required.
 * Unsharp masking ( `&op_USM`) &ndash; Unsharp masking is an industry standard sharpening filter. The best practice is to sharpen images with unsharp masking following the guidelines below. Unsharp masking lets you control the following three parameters:
 
   * `&op_sharpen=`amount,radius,threshold
@@ -91,17 +93,17 @@ There are two image sharpening methods that you can use:
     * **[!UICONTROL amount]** (0-5, strength of the effect.)
     * **[!UICONTROL radius]** (0-250, width of the "sharpening lines" drawn around the sharpened object, as measured in pixels.)
 
-    Keep in mind that the parameters radius and amount work against each other. Reducing radius can be compensated by increasing amount. Radius allows finer control as a lower value sharpens only the edge pixels, whereas a higher value sharpens a wider band of pixels.
+    Keep in mind that the parameters radius and amount work against each other. Reducing radius can be compensated by increasing the amount. Radius allows finer control as a lower value sharpens only the edge pixels, whereas a higher value sharpens a wider band of pixels.
 
     * **[!UICONTROL threshold]** (0-255, sensitivity of effect.)
 
-    This parameter determines how different the sharpened pixels must be from the surrounding area before they are considered edge pixels and the filter sharpens them. The **[!UICONTROL threshold]** parameter helps to avoid over-sharpening areas with similar colors, such as skin tones. For example, a threshold value of 12 ignores slight variations in skin tone brightness to avoid adding "noise", while still adding edge contrast to high contrast areas, such as where eyelashes meet skin.
+    This parameter determines how different the sharpened pixels must be from the surrounding area before they are considered edge pixels and the filter sharpens them. The **[!UICONTROL threshold]** parameter helps to avoid over-sharpening areas with similar colors, such as skin tones. For example, a threshold value of 12 ignores slight variations in skin tone brightness to avoid adding "noise," while still adding edge contrast to high contrast areas, such as where eyelashes meet skin.
 
     For more information about how you set these three parameters, including best practices to use with the filter, see the following resources:
 
     * Best practices white paper [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf) applies to Experience Manager as well.
 
-    * Watch [Use Image Sharpening with Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
+    * Watch [Use Image Sharpening with Experience Manager - Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
 
     * Experience Manager also lets you control a fourth parameter: monochrome (0,1). This parameter determines if unsharp masking is applied to each color component separately using the value 0 or to the image brightness/intensity using the value 1.
 
@@ -119,7 +121,7 @@ Leave the monochrome parameter setting at 0.
 ### Best practices for JPEF compression (`&qlt=`) {#best-practices-for-jpef-compression-qlt}
 
 * This parameter controls JPG encoding quality. A higher value means a higher-quality image but a large file size; alternatively, a lower value means a lower quality image but a smaller file size. The range for this parameter is 0-100.
-* To optimize for quality, do not set the parameter value to 100. The difference between a setting of 90 or 95 and 100 is almost imperceptible, yet 100 unnecessarily increases the size of the image file. Therefore, to optimize for quality but avoid image files becoming too large, set the `qlt= value` to 90 or 95.
+* To optimize for quality, do not set the parameter value to 100. The difference between a setting of 90 or 95 and 100 is almost imperceptible. And yet 100 unnecessarily increases the size of the image file. Therefore, to optimize for quality but avoid image files becoming too large, set the `qlt= value` to 90 or 95.
 * To optimize for a small image file size but keep image quality at an acceptable level, set the `qlt= value` to 80. Values below 70 to 75 results in significant image quality degradation.
 * As a best practice, to stay in the middle, set the `qlt= value` to 85 to stay in the middle.
 * Using the chroma flag in `qlt=`
@@ -134,17 +136,17 @@ As a best practice for JPG compression use `&qlt=85,0`.
 The parameter `jpegSize` is useful if you want to guarantee that an image does not exceed a certain size for delivery to devices that have limited memory.
 
 * This parameter is set in kilobytes (`jpegSize=&lt;size_in_kilobytes&gt;`). It defines the maximum allowed size for image delivery.
-* `&jpegSize=` interacts with the JPG compression parameter `&qlt=`. If the JPG response with the specified JPG compression parameter (`&qlt=`) does not exceed thejpegSize value, the image is returned with `&qlt=` as defined. Otherwise, `&qlt=` is gradually decreased until the image fits in the maximum allowed size, or until the system determines it cannot fit and returns an error.
+* `&jpegSize=` interacts with the JPG compression parameter `&qlt=`. If the JPG response with the specified JPG compression parameter (`&qlt=`) does not exceed thejpegSize value, the image is returned with `&qlt=` as defined. Otherwise, `&qlt=` is gradually decreased until the image fits in the maximum allowed size. Or, until the system determines it cannot fit and returns an error.
 
 As a best practice, set `&jpegSize=` and add the parameter `&qlt=` if you are delivering JPG images to devices with limited memory.
 
 ## Best practices summary {#best-practices-summary}
 
-As a best practice, to achieve a high image quality and small file size, start with the following combination of parameters:
+As a best practice, to achieve a high image quality and a small file size, start with the following combination of parameters:
 
 `fmt=jpg&qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0`
 
-This combination of settings products excellent results under most circumstances.
+This combination of settings produces excellent results under most circumstances.
 
 If the image requires further optimization, gradually fine-tune sharpening (unsharp masking) parameters by starting with a radius set to 0.2 or 0.3. Then, gradually increase the amount from 1.75 to a maximum of 4 (equivalent to 400% in Photoshop). Check to see that the desired result is achieved.
 
