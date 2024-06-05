@@ -2,6 +2,9 @@
 title: Deploy Your Customized Theme
 description: Learn how to deploy the site theme using the pipeline.
 exl-id: fe065972-39db-4074-a802-85895c701efd
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
 ---
 # Deploy Your Customized Theme {#deploy-your-customized-theme}
 

@@ -3,6 +3,7 @@ title: AEM Forms Edge Delivery Services Overview
 description: AEM Forms Edge Delivery Services built for peak performance, empowering you to envision the future of streamlined data collection and user engagement.
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
+role: Admin, Architect, Developer
 ---
 # AEM Forms Edge Delivery Services 
 

@@ -3,6 +3,7 @@ title: Release Notes for Migration Tools in AEM as a Cloud Service Release 2021.
 description: Release Notes for Migration Tools in AEM as a Cloud Service Release 2021.11.0
 feature: Release Information
 exl-id: 668c0c66-88f5-4d74-9a2a-3bdc63b0bba7
+role: Admin
 ---
 # Release Notes for Migration Tools in AEM as a Cloud Service Release 2021.11.0 {#release-notes}
 
