@@ -219,33 +219,125 @@ Steps to create custom functions are:
 1. [Create a client library](#create-client-library)
 1. [Add client library to an Adaptive Form](#use-custom-function)
 
+
+### Prerequisites to create a custom function
+Before you begin adding a custom function to your Adaptive Forms, ensure you have the following:
+
+**Software:**
+
+* **Plain Text Editor (IDE)**: While any plain text editor can work, an Integrated Development Environment (IDE) like Microsoft Visual Studio Code offers advanced features for easier editing.
+
+* **Git:** This version control system is required for managing code changes. If you don't have it installed, download it from https://git-scm.com.
+
 ### Create a client library {#create-client-library}
 
 You can add custom functions by adding a client library. To create a client library, perform the following steps:
 
-1. [Clone your AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
-1. Create a folder under the `[AEM Forms as a Cloud Service repository folder]/apps/` folder. For example, create a folder named as `experience-league`.
-1. Navigate to `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` and create a `ClientLibraryFolder`. For example, create a client library folder as `customclientlibs`.
-1. Add a property `categories` with string type value. For example, assign the value `customfunctionscategory` to the `categories` property for the `customclientlibs` folder.
+**Clone the Repository**
+
+Clone your [AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git):
+
+1. Open your command line or terminal window.
+
+1. Navigate to the desired location on your machine where you want to store the repository.
+
+1. Run the following command to clone the repository:
+
+    `git clone [Git Repository URL]`
+
+This command downloads the repository and creates a local folder of the cloned repository on your machine. Throughout this guide, we refer to this folder as the [AEMaaCS project directory].
+
+**Add a Client Library Folder**
+
+To add new client library folder to [AEMaaCS project directory], follow these steps:
+
+1. Open the [AEMaaCS project directory] in an editor.
+
+    ![custom fuction folder structure](/help/forms/assets/custom-library-folder-structure.png)
+
+1. Locate `ui.apps`.
+   
+    `Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/`
+
+1. Add new folder. For example, add a folder named as `experience-league`.
+1. Navigate to `/experience-league/` folder and add a `ClientLibraryFolder`. For example, create a client library folder named as `customclientlibs`.
+
+**Add files and folders in Client Library Folder**
+
+Add the following in an added client libray folder:
+    
+* .content.xml file
+* js.txt file
+* js folder 
+
+`Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/experience-league/customclientlibs/` 
+
+1. In the `.content.xml` add the folloiwng lines of code:
+    
+    ```javascript
+    <?xml version="1.0" encoding="UTF-8"?>
+    <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    categories="[customfunctionscategory]"/>
+    ```
 
    >[!NOTE]
    >
    > You can choose any name for `client library folder` and `categories` property.
 
-1. Create a folder named `js`.
-1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` folder.
-1. Add a JavaScript file, for example, `function.js`. The file comprises the code for the custom function.
-1. Save the `function.js` file.
-1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` folder.
-1. Add a text file as `js.txt`. The file contains:
-  
+1. In the `js.txt` add the following lines of code:
+   
     ```javascript
-        #base=js
-        functions.js
+          #base=js
+        function.js
     ```
+1. In the `js` folder add a javascript file as `function.js` which includes the custom functions:
 
-1. Save the `js.txt` file. 
-1. Add, commit, and push the changes in the repository using the below commands:
+   ```javascript
+    /**
+        * Calculates Age
+        * @name calculateAge
+        * @param {object} field
+        * @return {string} 
+    */
+
+    function calculateAge(field) {
+    var dob = new Date(field);
+    var now = new Date();
+
+    var age = now.getFullYear() - dob.getFullYear();
+    var monthDiff = now.getMonth() - dob.getMonth();
+
+    if (monthDiff < 0 || (monthDiff === 0 && now.getDate() < dob.getDate())) {
+    age--;
+    }
+
+    return age;
+    }
+
+    ```
+1. Save the files.
+
+ ![custom fuction folder structure](/help/forms/assets/custom-function-added-files.png)
+
+**Include the new folder in filter.xml**:
+
+1. Navigate to the `/ui.apps/src/main/content/META-INF/vault/filter.xml` file in your [AEMaaCS project directory].
+
+1. Open the file and add the following line at the end:
+
+    `<filter root="/apps/experience-league" />`
+1. Save the file.
+
+![custom fuction filter xml](/help/forms/assets/custom-function-filterxml.png)
+
+**Deploy the newly created Client library folder to your AEM environment**
+
+Deploy the AEM as a Cloud Service, [AEMaaCS project directory], to your Cloud Service environment. To deploy to your Cloud Service environment:
+
+1. Commit the changes
+
+   1.  Add, commit, and push the changes in the repository using the below commands:
          
     ```javascript
 
@@ -254,7 +346,11 @@ You can add custom functions by adding a client library. To create a client libr
         git push
     ```
 
-1. [Run the pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) to deploy the custom function.
+1. Deploy the updated code:
+
+    1. Trigger a deployment of your code through the existing full-stack pipeline. This automatically builds and deploys the updated code with the new locale support.
+
+If you haven't already set up a pipeline, refer to the guide on [how to set up a pipeline for AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
 
 Once the pipeline is executed successfully, the custom function added in the client library becomes available in your [Adaptive Form rule editor](/help/forms/rule-editor-core-components.md). 
 
@@ -796,6 +892,7 @@ Let us add a button labeled `Hide` and add a rule to hide the second instance of
 
 Refer to the video below to demonstrate that when the `Hide` is clicked, the panel in the second repeatable instance hides:
 
+>[!VIDEO](https://video.tv.adobe.com/v/3429554?quality=12&learn=on)
 
 +++
 
