@@ -16,7 +16,7 @@ description: Learn how to use Real Use Monitoring (RUM) to capture and analyze t
 
 The Real Use Monitoring (RUM) service is a performance monitoring technology that captures and analyzes the digital user experiences of a website or application in real-time. It provides visibility into the real-time performance of a web application and provides deeper insight into the end-user experience. "Real User Monitoring" has been rebranded to "Real Use Monitoring" because it better reflects the true essence of the service, which focuses on optimizing performance by monitoring website engagements, rather than the users themselves.
 
-With RUM, key performance metrics are tracked right from the initiation of the URL until the request is served back to the browser,, all of which helps the developers enhance the application to make it easy to use for the end users. 
+With RUM, key performance metrics are tracked right from the initiation of the URL until the request is served back to the browser, all of which helps the developers enhance the application to make it easy to use for the end users. 
 
 ## Who Can Benefit From Real Use Monitoring Service? {#who-can-benefit-from-rum-service}
 
@@ -38,7 +38,7 @@ As a site operator, no additional opt-in is required to enable monitoring throug
 
 ## Real Use Monitoring Service Data Sampling {#rum-service-data-sampling}
 
-Traditional web analytics solutions try to collect data on every single visitor. Adobe Experience Manager's RUM service only captures information from a small fraction of page views. The service is meant to be sampled and anonymized rather than a replacement for analytics. By default, pages have a 1:100 sampling ratio. Site operators cannot increase or decrease the sampling rate at this time. To estimate total traffic accurately, for every 100 page views, data is gathered from 1, giving you a reliable approximation of overall traffic."
+Traditional web analytics solutions try to collect data on every single visitor. Adobe Experience Manager's RUM service only captures information from a small fraction of page views. The service is meant to be sampled and anonymized rather than a replacement for analytics. By default, pages have a 1:100 sampling ratio. Site operators cannot increase or decrease the sampling rate at this time. To estimate total traffic accurately, for every 100 page views, data is gathered from 1, giving you a reliable approximation of overall traffic.
 
 As the decision of whether the data will be collected is made on a page view by page view basis, it becomes virtually impossible to track interactions across multiple pages. By design, RUM has no concept of visitors or sessions, only of page views.
 
@@ -88,9 +88,6 @@ As you will analyze RUM data, there may be variances in Page Views and other per
 
 ## FAQ {#faq}
 
-1. **Would Adobe be able to track all the page views before the interaction reaches the customer managed CDN or at the point when the interaction reaches the customer managed CDN?**
-
-   Yes.
 
 1. **Will customers be able to integrate the RUM service scripts with third-party systems like Dynatrace?**
 
