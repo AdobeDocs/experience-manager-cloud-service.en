@@ -38,7 +38,12 @@ Have a look at the May 2024 Release Overview video for a summary of the features
 
 ### New features in Sites {#sites-new-features}
 
-**AEM Authoring for Edge Delivery Services**
+#### Real Use Monitoring (RUM) Data Service {#real-use-monitoring}
+
+* **[Real Use Monitoring (RUM) Data Service is now GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** enabling client-side collection of data for AEM as a Cloud Service.
+The Real Use Monitoring service , the client-side collection, offers a more precise reflection of interactions, ensuring a reliable measure of website engagement. It enables customers with advanced insights into their page traffic and performance. It is a great opportunity to learn more about your page performance and gain insights to improve it.
+
+### AEM Authoring for Edge Delivery Services
 
 Enhanced stability and various improvements for a better authoring experience.
 
@@ -172,13 +177,6 @@ The RDE command line interface has some new features, which improve the develope
 * too many outgoing connections through advanced networking infrastructure
 * usage of a deprecated Service User Mapping format
 * a potential DDoS attack is underway
-
-### General Availability {#foundation-general-availability}
-
-#### Real Use Monitoring (RUM) Data Service
-
-* **[Real Use Monitoring (RUM) Data Service is now GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** enabling client-side collection of data for AEM as a Cloud Service.
-The Real Use Monitoring service , the client-side collection, offers a more precise reflection of interactions, ensuring a reliable measure of website engagement. It enables customers with advanced insights into their page traffic and performance. It is a great opportunity to learn more about your page performance and gain insights to improve it.
 
 ### Early Adopter Programs {#foundation-early-adopter}
 
