@@ -29,11 +29,21 @@ In the accompanying guide, you'll find a comprehensive list of best practices fo
 
 Stage Business Problem Best Practice Recommendation: This section will outline specific business challenges and provide targeted best practices and recommendations to address them effectively. -->
 
+Organizations face an explosion of channels and devices for engaging with users. The customer journey spans physical stores, web, mobile, social media, emails, and commerce. To meet this demand, Dynamic Media on Adobe Experience Manager as a Cloud (AEM) offers a comprehensive solution. It optimizes asset delivery, handles personalization, and ensures consistent, performant, and brand-aligned experiences across channels and devices.
 
+Some of the key tenets of Dynamic Media include the following:
 
-In Dynamic Media on Adobe Experience Manager as a Cloud Service, there are sets of methods, techniques, and guidelines that can help you maximize the potential of your rich media content. These best practices can lead to optimal results and increase efficiency in your use of Dynamic Media. They represent the most efficient and effective courses of action in a particular situation. They also unlock high value for your audience and deliver high-quality, engaging content.
+* **Single File Approach:** With Dynamic Media, you store one primary source file, and all size variations and visual effects are dynamically created and optimized at the time of delivery. This approach saves storage costs and eliminates workflow complexity.
+* **Truly Global:** Smart Imaging, applied during content delivery, significantly reduces image size and page weight without compromising visual quality. It's optimized for network bandwidth and device pixel ratios.
+* **AI Powered:** Smart Crop, an AI-driven feature, automates image and video point-of-interest cropping. It eliminates manual effort and scales efficiently for enterprise use.
+* **Easy Video:** Upload primary source videos into Dynamic Media and stream them adaptively across multiple languages with descriptive audio.
+* **Experience Viewer Library:** Customize and brand experience viewers for images and videos. These viewers seamlessly integrate into your digital experiences.
+* **Emerging Format Support:** Dynamic Media enables the delivery of 3D and panoramic experiences.
 
-Adapt these Dynamic Media best practices to your specific context and project requirements. 
+As you explore the [Dynamic Media Journey](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1), reviewing the consolidated list of best practices below can help you make the most of its capabilities. Adapt these Dynamic Media best practices to your specific context and project requirements so you can optimize your experiences across channels and devices. 
+
+<!-- In Dynamic Media on AEM, there are sets of methods, techniques, and guidelines that can help you maximize the potential of your rich media content. These best practices can lead to optimal results and increase efficiency in your use of Dynamic Media. They represent the most efficient and effective courses of action in a particular situation. They also unlock high value for your audience and deliver high-quality, engaging content. -->
+
 
 >[!IMPORTANT]
 >
@@ -41,6 +51,8 @@ Adapt these Dynamic Media best practices to your specific context and project re
 
 
 ## Ingest assets into Dynamic Media
+
+**Business case:** *Efficiently manage large volumes of assets and ensure that only relevant, approved content is delivered to end users.*
 
 Streamline your management of large numbers of assets efficiently. Ensure that only the appropriate, authorized content reaches your end-users by using Dynamic Media's **Selective Sync** and **Selective Publish** features.
 
@@ -56,6 +68,8 @@ These two best practices help you achieve better control, governance, and produc
 ## Prepare assets for delivery
 
 ### Organize your assets
+
+**Business case:** *Efficiently organize assets to streamline workflows.*
 
 For efficient asset organization that streamlines workflows, use one or more of the following best practices: 
 
@@ -74,6 +88,8 @@ Want to learn more? Go to [Organize assets using profiles](/help/assets/manage-c
 
 ### Optimize the quality of images
 
+**Business case:** *Obtain good quality images from Dynamic Media.*
+
 Enhancing image quality requires careful consideration of various factors. It can be a time-intensive process. However, there are some tried-and-true practices that can help you achieve desirable results. Some of those best practices include how to obtain optimal image sizing, image sharpening, and the best image formats to use.
 
 Want to learn more? Go to [Best practices for optimizing the quality of your images](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md).
@@ -88,11 +104,15 @@ Want to try it? Launch [Dynamic Media Snapshot](https://snapshot.scene7.com/)
 
 ### Standardize on styles applied to images
 
+**Business case:** *Efficiently standardize the style and transformation applied to my image assets.*
+
 Use Image Presets regularly in Dynamic Media so you can consistently and dynamically adjust image sizes, formats, and properties. Think of an Image Preset as a macro: it's a named set of commands for sizing and formatting. For example, if your site needs product images in various sizes and formats, with specific compression for desktop and mobile, Image Presets automate this process efficiently.
 
 Want to try it? Go to [Fundamentals of creating image presets to render assets](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-e)
 
 ### Adjust the focus and framing of images and videos
+
+**Business case:** *Ensure that the main point of interest of my images or videos remains in focus across devices.*
 
 Smart Crop is a feature in Dynamic Media that uses Adobe Sensei, Adobe's AI and machine learning framework, to automate the cropping of images and videos. It intelligently detects and focuses on the main subject or point of interest in an image or video. This intelligence ensures that the focal point is maintained across various screen sizes on desktop computers and mobile devices.
 
@@ -101,6 +121,8 @@ A best practice is to create an Image Profile with Smart Crop. In the profile, y
 Want to learn more? Watch [Using Smart Crop with AEM Assets Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minutes, 35 seconds) and [Using Dynamic Media Smart Crop for Video](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) (6 minutes, 22 seconds).
 
 ### Improve SEO rankings
+
+**Business case:** *Configure Dynamic Media to get improved SEO rankings.*
 
 Use the following recommendations regularly to ensure that your images contribute effectively to your overall SEO strategy.
 
@@ -131,15 +153,17 @@ Want to learn more? Go to [URL structure best practices for Google](https://deve
 
 ### Dynamically enhance images and create visual effects using commands
 
+**Business case:** *Apply rich visual effects to images.*
+
 Dynamic Media offers a suite of commands for enhancing images and creating visual effects dynamically, without the need for multiple static assets. The following are some brief explanations of a few of these processes and some examples to guide you:
 
 #### Effects inside the source image
 
 | Task | What to do |
 | --- | --- |
-| **Upload and publish your original image** | &bull; Start by uploading the original image to Dynamic Media.<br>&bull; Make sure that it is published and accessible through a URL.<br>&bull; In this example, a stock image of a watch with a white background (let's call it "Image X") is uploaded to Dynamic Media. |
-| **Create a Mask** | &bull; Develop a mask that defines the subject (the area where you want to apply effects) and the background (the area you want to change).<br>&bull; Masks are typically grayscale images, where white represents the subject, and black represents the background. You can create masks using tools like Adobe Photoshop.<br>Want to learn more? Go to [Creating and editing a quick mask in Photoshop](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html).<br>&bull; For "Image X," create a mask that precisely outlines the subject you want to enhance. For example, a person, an object, and so on. | 
-| **Apply Dynamic Media URL Commands for Effects** |  After you have your mask, use URL commands to apply effects like drop shadows or change the background color to "Image X." Here are two examples:<br><br> &bull; **Drop Shadow Effect:**<br>To add a drop shadow effect along the subject's boundary, edit the URL like this:<br>[https://s7g10.scene7.com/is/image/genaibeta/AdobeStock_754660022?size=400,400&extend=10,10,10,10&effect=-1&$shadow$&color=0,0,0](https://s7g10.scene7.com/is/image/genaibeta/AdobeStock_754660022?size=400,400&extend=10,10,10,10&effect=-1&$shadow$&color=0,0,0)<br>In this URL, the `$shadow$` parameter creates the shadow effect, and `color=0,0,0` sets the shadow color to black.<br>&bull; **Background color change:**<br>To change the background color, use the URL with a different background color value:<br>[https://s7g10.scene7.com/is/image/genaibeta/AdobeStock_754660022?size=400,400&extend=10,10,10,10&effect=-1&color=255,255,255](https://s7g10.scene7.com/is/image/genaibeta/AdobeStock_754660022?size=400,400&extend=10,10,10,10&effect=-1&color=255,255,255)<br> In this example, `color=255,255,255` sets the background color to white. Edit the background to a specific color for visual impact. |
+| **Upload and publish your original image** | &bull; Start by uploading the original image to Dynamic Media.<br>&bull; Make sure that it is published and accessible through a URL.<br>&bull; In this example, a stock image of a watch with a white background (let's call it "Image X") is uploaded to Dynamic Media.<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage) |
+| **Create a Mask** | &bull; Develop a mask that defines the subject (the area where you want to apply effects) and the background (the area you want to change).<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage_maskps](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage_maskps)<br>&bull; Masks are typically grayscale images, where white represents the subject, and black represents the background. You can create masks using tools like Adobe Photoshop.<br>Want to learn more? Go to [Creating and editing a quick mask in Photoshop](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html).<br>&bull; For "Image X," create a mask that precisely outlines the subject you want to enhance. For example, a person, an object, and so on. | 
+| **Apply Dynamic Media URL Commands for Effects** |  After you have your mask, use URL commands to apply effects like drop shadows or change the background color to "Image X." Here are two examples:<br><br> &bull; **Drop Shadow Effect:**<br>To add a drop shadow effect along the subject's boundary, edit the URL like this:<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&maskUse=invert&effect=-1&pos=100,100&op_blur=75&op_grow=1&opac=25](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&maskUse=invert&effect=-1&pos=100,100&op_blur=75&op_grow=1&opac=25)<br>In this URL, the `$shadow$` parameter creates the shadow effect, and `color=0,0,0` sets the shadow color to black.<br>&bull; **Background color change:**<br>To change the background color, use the URL with a different background color value:<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&maskUse=invert&maskUse=invert&color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&maskUse=invert&maskUse=invert&color=255,255,0)<br> In this example, `color=255,255,255` sets the background color to white. Edit the background to a specific color for visual impact. |
 
 #### Add an image border
 
@@ -220,6 +244,8 @@ Want to learn more about the commands available within a URL? Go to [Command Ref
 
 ### Publish a video for my website
 
+**Business case:** *Quickly publish a video for a marketing site.*
+
 * **Select a Video Profile:** 
   First, in Dynamic Media, you should select a suitable video profile. You can opt for the *Adaptive Video Encoding* profile available in AEM Assets under Video Profiles. These pre-defined encoding settings ensure that your video is optimized for playback across various devices and bandwidth conditions. Alternatively, you can create your own Adaptive Video profile.
 * **Assign the Profile:**
@@ -227,7 +253,7 @@ Want to learn more about the commands available within a URL? Go to [Command Ref
 * **Upload the Original Video:**
   Upload the original video file. Make sure it's a high-resolution video with good quality. The better the source video, the better the final result.
 * **Preview and Publish:**
-  Preview the video to ensure that everything looks as expected. Once satisfied, go ahead and publish it. This step makes the video accessible to your audience.
+  Preview the video so you can ensure that everything looks as expected. Once satisfied, go ahead and publish it. This step makes the video accessible to your audience.
 * **Link or Embed:**
   After publishing, you have two options.
     * **Link Directly:**
@@ -238,6 +264,8 @@ Want to learn more about the commands available within a URL? Go to [Command Ref
 Want to learn more? Go to [Video](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video). 
 
 ### Configure videos for optimal quality and engagement
+
+**Business case:** *Set up videos for the best quality and engagement.*
 
 To ensure the best quality and engagement for your videos, consider implementing a combination of the following best practice strategies:
 
@@ -256,7 +284,7 @@ To ensure the best quality and engagement for your videos, consider implementing
 
 * **Adopt Adaptive Streaming Instead of Progressive Streaming:**
         Adaptive streaming adjusts video quality based on the viewer's Internet connection speed and device capabilities.
-        It uses protocols like HLS (HTTP Live Streaming) or DASH (Dynamic Adaptive Streaming over HTTP) to ensure optimal playback quality.
+        It uses protocols like HLS (HTTP Live Streaming) or DASH (`Dynamic Adaptive Streaming over HTTP`) to ensure optimal playback quality.
         Unlike progressive streaming, which delivers videos linearly, adaptive streaming minimizes buffering and offers a seamless viewing experience.
 
 * **Enable DASH on your account (Digital Adaptive Streaming over HTTP):**
@@ -265,6 +293,8 @@ To ensure the best quality and engagement for your videos, consider implementing
         Want to learn more? Go to [Enable DASH on your Dynamic Media account](/help/assets/dynamic-media/video.md#enable-dash).
 
 ### Internationalizing videos for multilingual consumption
+
+**Business case:** *Make videos ready for multilingual consumption.*
 
 Internationalizing videos for multilingual consumption is essential for reaching a global audience. Dynamic Media provides features that can help you achieve this goal.
 
@@ -295,6 +325,8 @@ Want to learn more? Go to [About multiple caption and audio track support for vi
 ## Deliver assets to customers
 
 ### Optimize image sizes and minimize page load times
+
+**Business case:** *Optimize the size of images for any browser or screen and reduce page load time.*
 
 Dynamic Media Smart Imaging is a powerful tool that enhances image delivery performance by automatically optimizing the image's format, size, and quality based on the client's browser capabilities. 
 
