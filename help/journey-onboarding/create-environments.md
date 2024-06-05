@@ -3,6 +3,7 @@ title: Create Environments
 description: Lean how to use Cloud Manager to create your first environments.
 role: Admin, User, Developer
 exl-id: 31940e1e-fe27-4c5f-b67f-41affebea63a
+feature: Onboarding
 ---
 # Create Environments {#create-environments}
 

@@ -5,6 +5,9 @@ index: yes
 hide: no
 hidefromtoc: no
 exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
+solution: Experience Manager Sites
+feature: Translation
+role: Admin
 ---
 # Publish Translated Content {#publish-content}
 
