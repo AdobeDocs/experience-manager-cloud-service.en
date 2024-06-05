@@ -2,6 +2,8 @@
 title: Benefits of using Cloud Acceleration Manager
 description: This page highlights the key benefits of using Cloud Acceleration Manager.
 exl-id: d7a6c4f6-0f50-4f44-8a62-4a5769c76bd5
+feature: Migration
+role: Admin
 ---
 # Benefits of using Cloud Acceleration Manager {#benefits-cam}
 

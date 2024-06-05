@@ -4,6 +4,8 @@ description: Important Considerations for User Mapping Tool (Legacy)
 exl-id: 0d39a5be-93e1-4b00-ac92-c2593c02b740
 hide: yes
 hidefromtoc: yes
+feature: Migration
+role: Admin
 ---
 # Important Considerations for User Mapping Tool (Legacy) {#important-considerations}
 

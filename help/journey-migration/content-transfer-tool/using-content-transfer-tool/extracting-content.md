@@ -2,6 +2,8 @@
 title: Extracting Content from Source
 description: Learn how to extract content from a source Adobe Experience Manager (AEM) instance to later transfer it to a Cloud Service AEM instance.
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
+feature: Migration
+role: Admin
 ---
 # Extracting Content from Source {#extracting-content}
 

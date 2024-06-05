@@ -2,6 +2,8 @@
 title: AEM Developer Tools for Eclipse
 description: Learn how to use the AEM Developer Tools for Eclipse, an Eclipse plug-in based on the Eclipse plug-in for Apache Sling.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # AEM Developer Tools for Eclipse{#aem-developer-tools-for-eclipse}
 

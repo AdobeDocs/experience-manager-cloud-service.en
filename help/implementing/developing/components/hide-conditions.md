@@ -2,6 +2,8 @@
 title: Using Hide Conditions
 description: Hide conditions can be used to determine if a component resource is rendered or not.
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Using Hide Conditions {#using-hide-conditions}
 

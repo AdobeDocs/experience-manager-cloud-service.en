@@ -2,6 +2,9 @@
 title: Your Inbox
 description: Learn how to use the notifications that arrive in your Inbox to manage your tasks.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Your Inbox {#your-inbox}
 
