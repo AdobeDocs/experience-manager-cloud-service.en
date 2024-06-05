@@ -275,7 +275,6 @@ user-guide-title: AEM as a Cloud Service
     + [AEM Modernization Tools](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 + Sites {#sites}
   + [Notable Changes to AEM Sites in AEM Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
-  + [Real Use Monitoring for AEM as a Cloud Service](/help/implementing/cloud-manager/real-use-monitoring-for-aem-as-a-cloud-service.md)
   + Authoring {#authoring}
     + [Quick Start Guide to Authoring Pages](/help/sites-cloud/authoring/quick-start.md)
     + [Basic Handling](/help/sites-cloud/authoring/basic-handling.md)
@@ -419,6 +418,7 @@ user-guide-title: AEM as a Cloud Service
     + [Exporting Content Fragments to Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
     + [Exporting Experience Fragments to Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
     + [Integrating with Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
+  + [Real Use Monitoring for AEM as a Cloud Service](help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
   + [Overview and what's new](/help/assets/overview.md)
   + [Notable Changes to [!DNL Assets] as a [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
