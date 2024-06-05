@@ -12,9 +12,6 @@ role: Admin, Architect, Developer
 
 Cloud Service content requests are measured via server-side collection of data. The collection is enabled via CDN log analysis.
 
->[!NOTE]
->We are excited to announce the [GA rollout](/help/release-notes/release-notes-cloud/release-notes-current.md#real-use-monitoring) for Real Use Monitoring service, the client-side collection of data. It is an automated service and there is no customer set up required. You can learn more by consulting the documentation in [this article](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md).
-
 ## Understanding Cloud Service Content Requests {#understanding-cloud-service-content-requests}
 
 Content requests are automatically collected server-side at the edge of Adobe Experience Manager as a Cloud Service, via automated analysis of the log files originating from AEM as a Cloud Service CDN. This is done by isolating the requests returning HTML `(text/html)` or JSON `(application/json)` content from the CDN, and based on several inclusion and exclusion rules detailed below. A content request occurs independently from the returned content being served from the CDN caches or the content going back to the origin of the CDN (AEM's dispatchers).
