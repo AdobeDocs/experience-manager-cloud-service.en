@@ -91,7 +91,7 @@ In the above line of code, `Input1` is an optional parameter without any default
 In the above line of code, `Input1` is an optional parameter without any default value. To declare optional parameter with default value:
 `@param {array} [input1=<value>]`
     `input1` is an optional parameter of array type with the default value set to `value`. 
-    Ensure that the parameter type is enclosed in curly brackets {} and the parameter name is enclosed in square brackets []. 
+    Ensure that the parameter type is enclosed in curly brackets {} and the parameter name is enclosed in square brackets. 
 
 Consider the following code snippet, where input2 is defined as an optional parameter:
 
@@ -221,13 +221,14 @@ Steps to create custom functions are:
 
 
 ### Prerequisites to create a custom function
+
 Before you begin adding a custom function to your Adaptive Forms, ensure you have the following:
 
 **Software:**
 
 * **Plain Text Editor (IDE)**: While any plain text editor can work, an Integrated Development Environment (IDE) like Microsoft Visual Studio Code offers advanced features for easier editing.
 
-* **Git:** This version control system is required for managing code changes. If you don't have it installed, download it from https://git-scm.com.
+* **Git:** This version control system is required for managing code changes. If you do not have it installed, download it from https://git-scm.com.
 
 ### Create a client library {#create-client-library}
 
@@ -249,22 +250,21 @@ This command downloads the repository and creates a local folder of the cloned r
 
 **Add a Client Library Folder**
 
-To add new client library folder to [AEMaaCS project directory], follow these steps:
+To add new client library folder to the [AEMaaCS project directory], follow these steps:
 
 1. Open the [AEMaaCS project directory] in an editor.
 
     ![custom fuction folder structure](/help/forms/assets/custom-library-folder-structure.png)
 
 1. Locate `ui.apps`.
-   
-    `Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/`
-
 1. Add new folder. For example, add a folder named as `experience-league`.
 1. Navigate to `/experience-league/` folder and add a `ClientLibraryFolder`. For example, create a client library folder named as `customclientlibs`.
 
-**Add files and folders in Client Library Folder**
+   `Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/`
 
-Add the following in an added client libray folder:
+**Add files and folders to the Client Library folder**
+
+Add the following to the added client library folder:
     
 * .content.xml file
 * js.txt file
@@ -272,7 +272,7 @@ Add the following in an added client libray folder:
 
 `Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/experience-league/customclientlibs/` 
 
-1. In the `.content.xml` add the folloiwng lines of code:
+1. In the `.content.xml` add the following lines of code:
     
     ```javascript
     <?xml version="1.0" encoding="UTF-8"?>
@@ -291,7 +291,7 @@ Add the following in an added client libray folder:
           #base=js
         function.js
     ```
-1. In the `js` folder add a javascript file as `function.js` which includes the custom functions:
+1. In the `js` folder, add the javascript file as `function.js` which includes the custom functions:
 
    ```javascript
     /**
@@ -348,7 +348,7 @@ Deploy the AEM as a Cloud Service, [AEMaaCS project directory], to your Cloud Se
 
 1. Deploy the updated code:
 
-    1. Trigger a deployment of your code through the existing full-stack pipeline. This automatically builds and deploys the updated code with the new locale support.
+    1. Trigger a deployment of your code through the existing full-stack pipeline. This automatically builds and deploys the updated code.
 
 If you haven't already set up a pipeline, refer to the guide on [how to set up a pipeline for AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
 
@@ -859,7 +859,7 @@ In case, the custom submission handler fails to perform as expected in existing 
 
 +++
 
-+++ **Use Case**:  Perform actions in a specific instance of the repeatable panel 
++++ **Use Case**: Perform actions in a specific instance of the repeatable panel 
 
 Rules created using the visual rule editor on a repeatable panel apply to the last instance of the repeatable panel. To write a rule for a specific instance of the repeatable panel, we can use a custom function.
 
