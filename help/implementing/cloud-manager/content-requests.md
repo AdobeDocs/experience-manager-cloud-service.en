@@ -10,7 +10,7 @@ role: Admin, Architect, Developer
 
 ## Introduction {#introduction}
 
-Content requests are requests coming into AEM Sites (including in connection with Edge Delivery Services for AEM Sites) or any customer-provided caching system (like a Content Delivery Network) to deliver content or data in either HTML format via page views (for example, pages and fragments) or JSON format via API calls (in a headless manner). Content Requests are counted either as a page view or 5 API Calls, and are measured at the ingress of the first caching system to receive a Content Request. Certain HTTP requests are included or excluded for purposes of counting content requests. The full list of such included and excluded HTTP requests, as well as their technical definitions, are available in the documentation.
+Content requests are requests coming into AEM Sites (including in connection with Edge Delivery Services for AEM Sites) or any customer-provided caching system (like a Content Delivery Network) to deliver content or data in either HTML format via page views (for example, pages and experience fragments) or JSON format via API calls (in a headless manner). Content Requests are counted either as a page view or 5 API Calls, and are measured at the ingress of the first caching system to receive a Content Request. Certain HTTP requests are included or excluded for purposes of counting content requests. The full list of such included and excluded HTTP requests, as well as their technical definitions, are available in the documentation.
 
 ## Understanding Cloud Service Content Requests {#understanding-cloud-service-content-requests}
 
@@ -23,7 +23,7 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 
 ### Variances of Cloud Service Content Requests {#content-requests-variances}
 
-Content Requests can have variances within an organization's Analytics reporting tools as summarized in the following table. In general, *do not* use analytics tools that gather data by way of client-side instrumentation to report on the number of content requests for a given site, simply because they often depend on user consent to be triggered, therefore missing a significant fraction of the traffic. Analytics tools gathering data server-side in log files, or CDN reports for customers adding their own CDN on top of AEM as a Cloud Service, will provide better counts. For reporting on Page Views and their associated performance, the [Adobe RUM Data Service](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) is the Adobe recommended option. 
+Content Requests can have variances within an organization's Analytics reporting tools as summarized in the following table. In general, *do not* use analytics tools that gather data by way of client-side instrumentation to report on the number of content requests for a given site, simply because they often depend on user consent to be triggered, therefore missing a significant fraction of the traffic. Analytics tools gathering data server-side in log files, or CDN reports for customers adding their own CDN on top of AEM as a Cloud Service, will provide better counts. For reporting on page views and their associated performance, the [Adobe RUM Data Service](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) is the Adobe recommended option. 
 
 |Reason For Variance|Explanation|
 |---|---|
