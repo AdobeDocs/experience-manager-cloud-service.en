@@ -9,12 +9,8 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 
 Cloud Service content requests are measured via server-side collection of data. The collection is enabled via CDN log analysis.
 
-<!-- Alexandru: temporarly commenting this out
-
 >[!NOTE]
->We are excited to announce the GA rollout (Link to Release Notes) for Real Use Monitoring service, the client-side collection of data. It is an automated service and there is no customer set up required. You can learn more by consulting the documentation in [this article](Update link).
-
--->
+>We are excited to announce the [GA rollout](/help/release-notes/release-notes-cloud/release-notes-current.md#real-use-monitoring) for Real Use Monitoring service, the client-side collection of data. It is an automated service and there is no customer set up required. You can learn more by consulting the documentation in [this article](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md).
 
 ## Understanding Cloud Service Content Requests {#understanding-cloud-service-content-requests}
 
