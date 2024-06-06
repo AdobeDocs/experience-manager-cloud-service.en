@@ -389,6 +389,7 @@ These steps guide you through previewing an Adaptive Form with the newly added l
 ## Best Practices to support for new localization {#best-practices}
 
 * Adobe recommends creating a translation project after creating an Adaptive Form. This streamlines the localization process.
+* When Numeric Box and Date Picker components are translated into a specific locale, formatting issues may arise. To mitigate this, a **Language** option has been incorporated into the Configure dialog of [Date picker component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/number-input#formats-configure-tab) and [Numerc Box component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
 
 
 * Handling New Fields:
