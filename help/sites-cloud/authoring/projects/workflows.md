@@ -2,6 +2,9 @@
 title: Working with Project Workflows
 description: A variety of project workflows are available out of the box.
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Working with Project Workflows {#working-with-project-workflows}
 
