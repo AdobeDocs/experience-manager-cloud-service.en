@@ -108,6 +108,6 @@ As you will analyze RUM data, there may be variances in Page Views and other per
    
 1. **How can I opt out?**
 
-We highly recommend using the Real Use Monitoring (RUM)  due to its significant benefits and that it can allow you to optimize your digital experiences. It can offers valuable insights that can help improve website performance.The service is designed to be seamless and has no impact on your website's performance.
+   We highly recommend using the Real Use Monitoring (RUM)  due to its significant benefits and that it can allow you to optimize your digital experiences. It can offers valuable insights that can help improve website performance.The service is designed to be seamless and has no impact on your website's performance.
 
-Opting out means missing out on these insights. However, if you encounter any issues, please contact Adobe Support.
+   Opting out means missing out on these insights. However, if you encounter any issues, please contact Adobe Support.
