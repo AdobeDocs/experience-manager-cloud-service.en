@@ -8,15 +8,6 @@ exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 
 Learn how to restore your AEM as a Cloud Service content from backup using Cloud Manager.
 
->[!NOTE]
->
->This feature is only available to [the early adopter program](/help/implementing/cloud-manager/release-notes/current.md#early-adoption) and has certain limitations beyond those documented in the article. In the early adoption phase:
->
->* The feature is only available in development environments.
->* Content restorations are limited to two per month per program.
->
->For details on the existing backup and restore system for AEM as a Cloud Service, see [Backup and Restore in AEM as a Cloud Service](/help/operations/backup.md).
-
 ## Overview {#overview}
 
 Cloud Manager's self-service restore process copies data from Adobe system backups and restores it to its original environment. A restore is performed to return data, which has been lost, damaged, or accidentally deleted, to its original condition.
@@ -34,13 +25,41 @@ In both cases, the version of your custom code and the AEM version remain unchan
 >
 >It is also possible to restore backups [using the public API.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
 
+>[!WARNING]
+>
+>* This feature should only be used when there are serious issues with either code or content.
+>* Restoring a backup will result in the loss of recent data between the time of the backup and the present. Staging is also restored to the old version.
+>* Before initiating a content restoration, consider other selective content restoration options.
+
+## Selective Content Restoration Options {#selective-options}
+
+Before restoring to a full content restoration, consider these options to restore your content more easily.
+
+* If a package for the deleted path is available, install the package again using the [Package Manager.](/help/implementing/developing/tools/package-manager.md)
+* If the deleted path was a page in Sites, use the [Restore Tree function.](/help/sites-cloud/authoring/sites-console/page-versions.md)
+* If the deleted path was an assets folder and the original files are available, re-upload them via [the Assets console.](/help/assets/add-assets.md)
+* If the delete content were assets, consider [restoring previous versions of the assets.](/help/assets/manage-digital-assets.md)
+
+If none of the above options work and the contents of the deleted path are significant, perform a content restoration as detailed in the following sections.
+
+## Create User Role {#user-role}
+
+By default no user will have permission to execute content restorations on development, production, or staging environments. In order to delegate this permission to specific users or groups following these general steps.
+
+1. Create a product profile with an expressive name that refers to content restoration.
+1. Provide the **Program Access** permission on the required program.
+1. Provide the **Content Restore** permission on the required environment or all environments of the program, depending on your use case.
+1. Assign users to that profile profile.
+
+For details on managing permissions, please see [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md) documentation.
+
 ## Restoring Content {#restoring-content}
 
 First determine the time frame of the content that you want to restore. Then to restore your environment's content from a backup perform these steps.
 
 >[!NOTE]
 >
->A user with the **Business Owner** or **Deployment Manager** role must be logged in to initiate a restore operation.
+>A user must have [appropriate permissions](#user-role) to initiate a restore operation.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
