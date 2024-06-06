@@ -44,7 +44,6 @@ As you explore the [Dynamic Media Journey](https://experienceleague.adobe.com/en
 
 <!-- In Dynamic Media on AEM, there are sets of methods, techniques, and guidelines that can help you maximize the potential of your rich media content. These best practices can lead to optimal results and increase efficiency in your use of Dynamic Media. They represent the most efficient and effective courses of action in a particular situation. They also unlock high value for your audience and deliver high-quality, engaging content. -->
 
-
 >[!IMPORTANT]
 >
 >The Dynamic Media best practices in this article may evolve over time as new technologies in Dynamic Media emerge. The information below is current for the latest version of Dynamic Media.
