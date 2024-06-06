@@ -2,6 +2,8 @@
 title: Content Fragments Configuring Components for Rendering
 description: Content Fragments Configuring Components for Rendering
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Content Fragments Configuring Components for Rendering{#content-fragments-configuring-components-for-rendering}
 

@@ -2,6 +2,8 @@
 title: Same Site Cookie Support for Adobe Experience Manager as a Cloud Service
 description: Same Site Cookie Support for Adobe Experience Manager as a Cloud Service.
 exl-id: 2cec7202-4450-456f-8e62-b7ed3791505c
+feature: Security
+role: Admin
 ---
 # Same Site Cookie Support for Adobe Experience Manager as a Cloud Service {#same-site-cookie-support-for-adobe-experience-manager-as-a-cloud-service}
 

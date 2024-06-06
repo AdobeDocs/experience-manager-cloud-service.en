@@ -2,6 +2,9 @@
 title: Navigating the Cloud Manager UI
 description: Learn how the Cloud Manager UI is organized and how to navigate to manage your programs and environments.
 exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 # Navigating the Cloud Manger UI {#navigation}
 

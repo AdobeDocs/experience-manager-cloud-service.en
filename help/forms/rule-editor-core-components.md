@@ -9,8 +9,9 @@ exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| Foundation Components  |    [Click here](/help/forms/rule-editor.md)                  |
-| Core Components     | This article         |
+| AEM as a Cloud Service (Core Components)    | This article         |
+| AEM as a Cloud Service (Foundation Components)    | [Click here](/help/forms/rule-editor.md)       |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html)                  |
 
 # Add rules to an Adaptive Form (Core Components) {#adaptive-forms-rule-editor}
 
