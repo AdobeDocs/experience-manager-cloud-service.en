@@ -3,6 +3,8 @@ title: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Serv
 description: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+feature: Release Information
+role: Admin
 ---
 # Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -20,7 +22,7 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2024.4.0) is April 25, 2024. The next feature release (2024.5.0) is planned for May 30, 2024.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2024.5.0) is May 30, 2024. The next feature release (2024.6.0) is planned for June 27, 2024.
 
 ## Maintenance Release Notes {#maintenance}
 
@@ -28,11 +30,17 @@ You can find the latest maintenance release notes [here](/help/release-notes/mai
 
 ## Release Video {#release-video}
 
-Have a look at the April 2024 Release Overview video for a summary of the features added in the 2024.4.0 release:
+Have a look at the May 2024 Release Overview video for a summary of the features added in the 2024.5.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3429111?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3429503?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### New features in Sites {#sites-new-features}
+
+**AEM Authoring for Edge Delivery Services**
+
+Enhanced stability and various improvements for a better authoring experience.
 
 ### Early Adopter Program {#sites-early-adopter}
 
@@ -50,43 +58,18 @@ Interested in trying out the feature and sharing feedback? Send an email to aemc
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New features in Assets view {#assets-view-new-features}
-
-
-**Contextual Search**
-
-You can now also [search assets available in the repository by defining text prompts](/help/assets/search-assets-view.md#contextual-search). Experience Manager Assets automatically transforms those text prompts to search filters and displays the search results. You can view and modify automatic filters using the Filters Pane to further narrow down the search results.
-
-![Contextual Search](/help/assets/assets/contextual-search-text-prompt1.png)
-
-**Express video quick actions**
-
-Experience Manager Assets now includes [easy and intuitive video editing tools powered by Adobe Express](/help/assets/edit-videos-assets-view.md) to increase content re-use and accelerate content velocity. The editing options include trimming, cropping, resizing a video, and also converting an MP4 to a GIF file.
-
-![crop video with Adobe Express](/help/assets/assets/adobe-express-crop-video.png)
-
-**Dynamic renditions**
-
-You can now [view and download dynamic renditions (including smart crops)](/help/assets/renditions.md) in Experience Manager Assets. Dynamic renditions are customized versions of image assets created in real-time to meet specific needs, such as resizing images based on device resolution or cropping to fit different aspect ratios. These renditions enable organizations to deliver personalized and optimized experiences to diverse audience needs.
-
-![Dynamic renditions](/help/assets/assets/preset_smart_crop.png)
-
-**In-place rename for assets and folders**
-
-Experience Manager Assets now offers a simplified user experience by providing [ability to rename an asset or a folder via single click](/help/assets/manage-organize-assets-view.md).
-
-**Assign or remove metadata form to multiple folders**
-
-You can now [assign or remove metadata form to multiple folders](/help/assets/metadata-assets-view.md#assign-metadata-form-to-a-folder).
-
 ### New features in Admin view {#admin-view-new-features}
 
-**Link share configuration**
+* WebM is now a supported output file in processing profile for video.
+* MP4 is now supported in the native integration of AEM in Express (import and export).
 
-A new improved user experience for [creating link shares](/help/assets/share-assets.md) along with a brand new set of configurations that let administrators customize the default behavior of this capability for your users.
+### New features in Assets view {#assets-view-new-features}
 
-![Link share configuration](/help/assets/assets/config-email-service.png)
+**Publish assets to AEM and Dynamic Media**
 
+Experience Manager Assets now enables you to quickly [publish assets to Experience Manager and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md) using the Assets view without switching to the Admin view. You can publish assets while uploading, browsing, and searching assets.
+
+![check publish status1](/help/assets/assets/check-publish-status1.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -96,193 +79,147 @@ A new improved user experience for [creating link shares](/help/assets/share-ass
 
 --> 
 
-### New features in AEM Forms {#forms-new-features}
+### New pre-release features in AEM Forms {#forms-new-prerelease-features}
 
-* **Enhanced Visual Rule Editor for Core Component Based Adaptive Forms**: This release brings a significant upgrade to the visual rule editor for adaptive forms based on core components. This release brings a significant upgrade to the visual rule editor for adaptive forms based on core components. This update focuses on streamlining interactions with custom functions, empowering you to build more robust and efficient forms. 
+#### Enhanced Visual Rule Editor for Core Component Based Adaptive Forms
 
-  You can now streamline custom function interactions by: 
+This release brings a significant upgrade to the visual rule editor for adaptive forms based on core components. You can now: 
 
-  * [Leveraging new annotations to provide clearer function definitions](/help/forms/create-and-use-custom-functions.md#supported-javascript-annotations-for-custom-function). 
-  * [Using caching mechanisms for custom functions, leading to faster form performance](/help/forms/create-and-use-custom-functions.md#caching-support-for-custom-function).
-  * [Seamlessly working with global objects within custom functions](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
-  * [Defining and utilizing optional parameters within custom functions](/help/forms/create-and-use-custom-functions.md#parameter).
-
-  This update also brings the following enhancements to rule editor functionality. You can: 
-
-  * Implement powerful ["when-then-else"](/help/forms/rule-editor-core-components.md#when) logic for conditional execution.
-  * Leverage modern JavaScript features like let and arrow functions (ES10 support).
-  * Validate or reset not only fields, but also entire panels and forms, expanding control over user interactions.
-
-  These advancements provide a more intuitive and powerful experience for crafting rules and custom functions within the visual rule editor.
-
-* **[Create multiple versions of an Adaptive Form](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)**: You can now easily manage variations of existing forms. This simplifies version control and facilitates comparison for form optimization, all within a single, streamlined workflow.
-
-* **[Compare Adaptive Form](/help/forms/compare-forms.md)**: You can now easily compare two forms to dentify differences between two forms. It facilitates smooth collaboration by enabling team members to compare revisions and discuss changes efficiently.
-
-* **Accessibility Enhancements for Scribble Signature Component**: This update brings significant accessibility improvements to the Scribble Signature component:
-
-  **Improved Keyboard Navigation:**
-  * Pressing the Tab key allows users to navigate through all interactive elements within the signature dialog box.
-  * Signing with a brush or keyboard and pressing Enter closes the dialog.
-  * Focus remains on the signature control after signing and clicking "OK".
+  * Create rules in Visual Rule editor to [override default form submission success/failure messages](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers). 
   
-  **Clear Signature Functionality:**
+  * In the Adaptive Forms Rule Editor, added the ability to [select different types of fields for the WHEN operation](/help/forms/rule-editor-core-components.md#allowed-multiple-fields-in-when).
   
-  * A clear cross icon for erasing the signature is accessible via the Tab key.
-  * The "Clear Signature Confirmation" dialog is also accessible through Tab navigation.
+  * A form author can now apply custom functions to [preprocess data before submission](/help/forms/create-and-use-custom-functions.md#use-case-submit-altered-data-to-the-server). 
 
-  **Enhanced Labels and Controls:**
-  * The label for the keyboard signature button is now clearer, using "aria-label" to announce functionality (such as "aria-label='Sign using Keyboard'").
-  * Improved contrast ensures all controls within the scribble signature are easily distinguishable.
-  * The OK/check mark button now visually indicates when it's inactive.
+  * Use the [**Save as Draft**](/help/forms/save-core-component-based-form-as-draft.md) functionality to save partially completed forms for later submission. This is useful in scenarios where users need to interrupt filling out a form and come back to it later.
 
-  **Signature Feedback for Screen Readers:**
-  * When a signature is typed, screen reader users can hear the text used to create the signature.
+ 
 
-This update ensures a more inclusive experience for users with disabilities by improving navigation, clarity, and feedback for the Scribble Signature component.
+### Early Adopter features in AEM Forms {#forms-new-early-adopter-features} 
 
-### Early Adopter Program {#forms-early-adopter}
+The AEM Forms Early Adopter Program program offers a unique opportunity to you to get exclusive access to cutting-edge innovations before anyone else, and help shape their development. 
+The program offers access to multiple innovations. 
 
-* **[Submit an Adaptive Form to Adobe Workfront Fusion Scenario](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**: Forms as a Cloud Service offers an out-of-the-box option to effortlessly connect an Adaptive Form with Adobe Workfront. This simplifies the process of submitting an Adaptive Form to an Adobe Workfront scenario, allowing you trigger a Workfront Fusion scenario on submission of an Adaptive Form. 
+This release notes lists the innovations delivered in current release. For the complete list of innovations available under the Early Adopter Program, see [AEM Forms Early Adopter Program documentation](/help/forms/early-adopter-ea-features.md). 
 
-    <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> Using the Adobe Workfront Fusion Connector, you can design workflows that are triggered automatically upon submission of an Adaptive Form. For instance, envision a scenario where a workflow is initiated to assign a specific individual the task of reviewing submitted data, allowing approval or rejection of an application based on the information captured through the adaptive form. This streamlined integration enhances efficiency and brings a new level of automation to your workflow processes.| 
+#### Enhanced bot protection methods
 
-* **[Reader Extension Service](/help/forms/aem-forms-cloud-service-communications-introduction.md#reader-extension-service)**: AEM Forms Communication APIs has brought Reader Extension Service to allow you to add functionalities like form filling and commenting to regular PDFs, making them interactive for users with the free Adobe Reader. 
+AEM Forms has enhanced its security features by adding support for two popular CAPTCHA solutions: Cloudflare Turnstile and hCaptcha. This adds to the already available Google reCAPTCHA, providing users with more choice and flexibility in protecting their forms from bots and spam submissions.
 
-* [Right to left languages support](/help/forms/supporting-new-language-localization-core-components.md): Adaptive Forms built on Core Components can now be presented in a Right-to-Left (RTL) language like Arabic, Persian, and Urdu. The RTL languages are spoken by over 2 billion people globally. Using a form in RTL language allows you to extend the reach of your adaptive forms to cater to these diverse audiences and select into RTL markets. In certain regions, it's also a legal mandate to provide forms in the local language. By accommodating local languages, you not only open doors to a broader audience but also ensure compliance with relevant laws and regulations.
+* **Cloudflare Turnstile**: This frictionless CAPTCHA verifies users through a simple challenge that doesn't require explicit interaction. It seamlessly integrates into your forms, improving the user experience.
+* **hCaptcha**: This privacy-focused CAPTCHA offers a user-friendly alternative with a focus on data privacy. It aims to strike a balance between security and user experience.
+* **Google reCAPTCHA**: AEM Forms continue to support both reCAPTCHA v2 and reCAPTCHA Enterprise, offering a reliable and well-established solution.
 
-* **[Protect your documents with DocAssurance APIs (Part of Communication APIs)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: The DocAssurance APIs empower you to safeguard sensitive information by signing and encrypting the documents. Through encryption, the contents of a document are transformed into an unreadable format, ensuring that only authorized users can gain access. This fortified layer of protection not only shields valuable data from unauthorized eyes but also provides peace of mind. The Signature APIs let your organization protect the security and privacy of Adobe PDF documents that it distributes and receives. This service uses digital signatures and certification to ensure that only intended recipients can alter documents. 
+By offering multiple CAPTCHA options, AEM Forms have empowered you to select the solution that best aligns with your specific needs. 
 
-     You can write to `aem-forms-ea@adobe.com` from your official email id to join the early adopter program and request access to the capability.
+Ready to integrate any of these CAPTCHA solution with your Adaptive Forms? Our documentation provides detailed instructions for each: [Cloudflare Turnstile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), and [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
-* **[You can leverage the Real User Monitoring (RUM) Data Service](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** to enable client-side collection for AEM as a Cloud Service.
-Real User Monitoring (RUM) Data Service offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. It is a great opportunity to gain advanced insights into your page performance. While this is beneficial for customers who use either Adobe-managed CDN or non-Adobe-managed CDN. Additionally, for customers using a non-Adobe managed CDN, automated traffic reporting can now be enabled for them, thus removing the need to share any traffic report with Adobe.
 
-   If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-rum-adopter@adobe.com`, along with your domain name for each of the environments that you would like to enable RUM for from your email address associated with your Adobe ID. Adobe's product team will then enable the Real User Monitoring (RUM) Data Service for you.
+### Forms Service
+
+Forms service generates interactive PDF forms for data capture. It can also be used to importor  export data to and from an existing interactive PDF form and validate submitted data. Here's a breakdown of its functionalities: 
+
+* **Rendering Forms**: Generate an interactive PDF form from a template created using AEM Forms Designer and, optionally, XML data. This essentially produces a fillable PDF form optionally pre-filled with data.
+* **Data Extraction and Import**: Import data into an existing PDF form as well as extract data from a filled PDF form. Both XDP and XML data formats are supported, and importing to non-XFA PDF forms (also known as AcroForms) additionally supports FDF and XFDF data.
+* **Data Validation**: : Validate submitted data, in XDP or XML format, against a template created using AEM Forms Designer.
+
+>[!IMPORTANT] 
+>
+> If you're interested in joining our Early Adopter program for any early adopter innovation, simply send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) to request access. You can request access to all or any specific innovation.  
+
      
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### CDN Configuration {#cdn-config}
+### OAuth Server-to-Server credentials support for AEM integrations with other Adobe solutions {#S2S-OAuth-credentials}
 
-Configure traffic at the Adobe CDN in the following ways:
+Adobe Developer Console is used to generate credentials to access various APIs. One of those credential types, Service Account (JWT) credentials, has been deprecated in favor of OAuth Server-to-Server credentials, which AEM Cloud Service now supports for integrations with other Adobe solutions such as Adobe Analytics and Adobe Target.
 
-* [Request transformations](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) - modify aspects of incoming requests, including paths, query parameters, and HTTP headers before they are routed to AEM.
-* [Response transformations](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) - change HTTP headers of the outgoing responses before they are served to the browser.
-* [Origin selectors](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations#origin-selectors) - route traffic through the CDN to off-AEM sites and applications.
+[Read about the deprecation](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md) and [learn how to use the AEM author UI](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) to configure integrations with other Adobe solutions. 
 
-Once these rules are declared in source control (git), you can deploy them to the CDN using the Cloud Manager Configuration Pipeline. Also see the client-side redirects feature in the early adopter section below.
+### Traffic Spike at Origin Alerts {#traffic-spike-origin}
 
-### Custom CDN error pages {#cdn-error-pages}
+[Receive proactive notifications](/help/security/traffic-filter-rules-including-waf.md#traffic-spike-at-origin-alert) through Actions Center when traffic patterns at the origin are indicative of a DDoS attack, allowing you to investigate and configure traffic filter rules.
 
-In the unlikely event that the CDN cannot route traffic to the AEM origin, a custom error page can be declared, replacing the generic version. [Learn more](/help/implementing/dispatcher/cdn-error-pages.md) about how to serve branded error pages.
+### New Features for RDEs {#RDE-new-features}
+
+[Rapid Development Environments (RDEs)](/help/implementing/developing/introduction/rapid-development-environments.md) let developers swiftly deploy, review, and test changes in the Cloud. Several new features will be rolled out during the month of June. We also invite you to engage directly with Adobe engineering at the [RDE Discord channel](https://discord.com/channels/1131492224371277874/1245304281184079872).
+
+
+#### RDE support for front-end code using Site Themes and Site Templates {#rde-frontend}
+
+[RDEs now support front-end code](/help/implementing/developing/introduction/rapid-development-environments.md#deploying-themes-to-rde) based on [site themes](/help/sites-cloud/administering/site-creation/site-themes.md) and [site templates](/help/sites-cloud/administering/site-creation/site-templates.md), for early adopters. With RDEs, this is done using a command line directive, rather than a [front-end pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
+
+#### Enhanced logging for RDEs {#rde-logging}
+
+While debugging code in an RDE, developers can now [configure and stream logs more productively](/help/implementing/developing/introduction/rapid-development-environments.md#rde-logging), using the command line, and without modifying OSGI properties in version control. Features include:
+
+* declaring log levels on a per package or class level
+* customizing the log output format
+* streaming multiple logs in parallel 
+
+#### RDE CLI enhancements {#rde-cli-enhancements}
+
+The RDE command line interface has some new features, which improve the developer experience:
+
+* [the setup command is interactive](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools-interactive), making it easier to choose between organizations, programs and environments. It is also now possible to override these values at the command line.
+* [quiet mode](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) for a less verbose output.
+* [json mode](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) for useful output when invoked programatically. 
+
+### New Actions Center notifications {#actions-center-notifications}
+
+[Actions Center](/help/operations/actions-center.md) sends email notifications when important incidents happen, or if we notice something about your code or configuration where you should take proactive action. There are three new types of notification:
+
+* too many outgoing connections through advanced networking infrastructure
+* usage of a deprecated Service User Mapping format
+* a potential DDoS attack is underway
 
 ### Early Adopter Programs {#foundation-early-adopter}
 
+Email **<aemcs-cdn-config-adopter@adobe.com>**, indicating which of the early adopter programs below you are interested in.
+
+#### Purge content at the CDN with a self-serve API key (Early Adopter Program) {#purge-cdn}
+
+Register a CDN purge API key in a self-service way, and use it to invalidate content at the CDN, either globally, or for one or more resources. [Learn more](/help/implementing/dispatcher/cdn-cache-purge.md).  
+
+<!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
+
+#### Self-serve creation of X-AEM-Edge-Key for customer-managed CDN (BYOCDN) (Early Adopter Program) {#byocdn-keys}
+
+Previously, a support ticket was needed to generate the X-AEM-Edge-Key required for configuration of a customer-managed CDN. This can now be accomplished in a self-serve way through a configuration file that is deployed using the Configuration Pipeline, removing any delay in onboarding a new environment. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
+
+<!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
+
 #### Client-side redirects (Early Adopter Program) {#client-side-redirects-early-adopter}
 
-Configure 301/302 client-side redirects in source control, and deploy to the CDN. [Learn more](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**.
+Configure 301/302 client-side redirects in source control, and deploy to the CDN. [Learn more](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Note that there are several other features already available related to [CDN configuration](/help/implementing/dispatcher/cdn-configuring-traffic.md), including request and response transformations, and routing traffic to off-AEM sites.
 
 #### Traffic Filter Rules Alerts (Early Adopter Program) {#traffic-filter-rules-alerts-early-adopter}
 
 The recently released [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md), which include the optionally licensable Web Application Firewall (WAF) rules, lets you configure what traffic should be allowed or denied. 
 
-Now you can email **<aemcs-cdn-config-adopter@adobe.com>** to join the early adopter program so you can be alerted whenever your traffic filter rules are triggered. Actions Center email notifications will keep you informed when certain traffic conditions occur so you can take appropriate measures. 
+Join the early adopter program so you can be alerted whenever your traffic filter rules are triggered. Actions Center email notifications will keep you informed when certain traffic conditions occur so you can take appropriate measures. 
 
-#### Apache/Dispatcher Runtime Ingestion of Rewrite Maps (Early Adopter Program) {#apache-rewritemaps-early-adopter}
+#### Business users can declare redirects outside of Git (Early Adopter Program) {#apache-rewritemaps-early-adopter}
 
-Similar to AEM 6.5, Apache/dispatcher will ingest rewrite maps placed in a specific location in the publish repository, and load them, without requiring a web tier pipeline execution. This opens up opportunities for a business user to declare redirects using a UI, such as that offered by ACS Commons Redirect Map Manager. Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.
+Similar to AEM 6.5, Apache/dispatcher will ingest rewrite maps placed in a specific location in the publish repository, and load them, without requiring a web tier pipeline execution. This opens up opportunities for a business user to declare redirects using either a spreadsheet or a UI, such as that offered by ACS Commons Redirect Map Manager or created as part of a customer application. <!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
 
 #### Edge Side Includes (ESI) for Loading Dynamic Content (Early Adopter Program) {#esi-early-adopter}
 
-The Adobe Managed CDN now supports Edge Side Includes (ESI), a markup language for edge level dynamic web content assembly. By including ESI snippets, you can cache the overall HTML page at the CDN with higher TTLs, while more frequently fetching from origin those smaller sections that require higher cadence updates (lower TTLs). Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.
+The Adobe Managed CDN now supports [Edge Side Includes (ESI)](/help/implementing/dispatcher/edge-side-includes.md), a markup language for edge level dynamic web content assembly. By including ESI snippets, you can cache the overall HTML page at the CDN with higher TTLs, while more frequently fetching from origin those smaller sections that require higher cadence updates (lower TTLs). <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
-#### RDE Support for Front-End Code using Site Themes and Site Templates (Early Adopter Program) {#rde-frontend-early-adopter}
+#### Real User Monitoring (RUM) Data Service (Early Adopter Program)
 
-[Rapid Development Environments (RDEs)](/help/implementing/developing/introduction/rapid-development-environments.md) now support front-end code based on [site themes](/help/sites-cloud/administering/site-creation/site-themes.md) and [site templates](/help/sites-cloud/administering/site-creation/site-templates.md), for early adopters. With RDEs, this is done using a command line directive, rather than a [front-end pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Please reach out to **<aemcs-rde-support@adobe.com>** to try it out and provide feedback.
-
-#### Enhanced logging for RDEs (Early Adopter Program) {#rde-logging-early-adopter}
-
-While debugging code in a [Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md), developers can now configure and stream logs more efficiently, using the command line, and without modifying OSGI properties in version control. Features include:
-
-* declare log levels on a per package or class level
-* customize the log output format
-* stream multiple logs in parallel 
-
-Please reach out to **<aemcs-rde-support@adobe.com>** to try it out and provide feedback.
-
+* **[Real Use Monitoring (RUM) Data Service is now GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** enabling client-side collection of data for AEM as a Cloud Service.
+The Real Use Monitoring service , the client-side collection, offers a more precise reflection of interactions, ensuring a reliable measure of website engagement. It enables customers with advanced insights into their page traffic and performance. It is a great opportunity to learn more about your page performance and gain insights to improve it.
 
 ## [!DNL Experience Manager] Guides {#guides}
 
+* **Publish a topic or its elements to an Experience Fragment**
+  Now, Experience Manager Guides allow you to publish a topic or its elements to an Experience Fragment. An Experience Fragment is a modular content unit that integrates both content and layout.  Experience Fragments are instrumental and can help you create consistent and engaging experiences. 
+* **Ability to pass the topic asset metadata to Native PDF output**
+  You can add the topic asset metadata while generating the Native PDF output. This feature helps you add specific metadata for different topics, like the topic title and author, to the topic page headers and footers. 
 
-### Ability to Translate Content into Multiple Languages Using Preconfigured Language Groups
-
-Experience Manager Guides now allows you to create language groups and easily translate your content into multiple languages. This feature helps you organize and manage translations according to your organization's needs. 
-
-For example, if you need to translate your content for some countries in Europe, you can create a language group for European languages like English (EN), French (FR), German (DE), Spanish (ES), and Italian (IT).
-
-![translation panel](../assets/guides/translation-languages-2404.png)
-
-*Select the language groups or languages you want to translate your documents.* 
-
->[!NOTE]
->
->If a language's target folder is missing or the target language is the same as the source, it's grayed out and shows a warning sign.
-
-As an administrator you can create language groups and configure them to multiple folder profiles. As an author, you can view the language groups that are configured on your folder profile.
-
-
-Overall, creating language groups enhances the efficiency and productivity of translation projects, ultimately improving the localization process across multiple languages.
-
-
-Learn how to [translate documents from the Web Editor](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/translate-documents-web-editor)
-
-### Revamped Experience to Search and Filter Files in the Repository View
-
-Now, you have an enhanced experience while filtering files. The revamped functionality to filter files provides an improved way to effortlessly search and navigate through files. 
-
-![search files in repository view](../assets/guides/repository-filter-search-2404.png)
-
-*Search for the files containing the text `general purpose.`*
-
-Enjoy benefits such as quicker access to relevant files and a more intuitive user interface, making your search experience smoother and more efficient. 
-
-![quick search filter ](../assets/guides/repository-filter-search-quick.png)
-
-*Use the quick filters to search for DITA and Non-DITA files.*
-
-Learn more about the **Filter Search** feature in the [Left Panel](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-features#id2051EA0M0HS) section.
-
-### Enhancements in the Data Source Connectors
-
-The following enhancements have been made to the data source connectors for the 2024.4.0 release:
-
-#### Connect to Salsify, Akeneo, and Microsoft Azure DevOps Boards (ADO) Data Sources
-
-In addition to the existing out-of-the-box connectors, Experience Manager Guides also provides connectors for Salsify, Akeneo, and Microsoft Azure DevOps Boards (ADO) data sources. As an administrator, you can download and install these connectors. Then, configure the installed connectors.
-
-#### Copy and Paste the Sample Query to Create a Content Snippet or Topic
-
-You can easily copy and paste a sample data query in the generator to create a content snippet or topic. With this feature, you don't have to remember the syntax or create a  query manually. Instead of manually typing the query, you can copy and paste a sample query, edit it, and use it to fetch the data per your requirements. 
-
-![insert content snippet dialog box](../assets/guides/insert-content-snippet.png)
-
- *Copy and edit a sample query to create the content snippet.*
-
-#### Connect to JSON Data Files Using a File Connector 
-
-
-Now, as an administrator, you can configure a JSON file connector to use JSON data files as a data source. Use the connector to import the JSON files from your computer or the Adobe Experience Manager Assets. Then, as an author, you can create content snippets or topics using the generators.
-
-This feature helps you use the data stored in your JSON files and reuse it across various snippets. The content is also updated dynamically whenever you update the JSON files.
-
-#### Configure Multiple Resource URLs for a Connector to Create Content Snippets or Topics
-
-As an administrator, you can configure multiple resource  URLs for some connectors like Generic REST Client, Salsify, Akeneo, and Microsoft Azure DevOps Boards (ADO). 
-Then, as an author, connect with the data sources to create content snippets or topics using the generators. This feature is handy as you don't have to create a data source for each URL. It helps you to quickly fetch data from any of the resources for a particular data source in a single content snippet or topic. View more details about the data source connectors and how to [configure a data source connector from the user interface](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools). Learn how to [use data from your data source](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet).
-
-For more information about the new features and enhancements, view [What's new in the 2024.04.0 release](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0).
-
-For the list of issues fixed in this release, view [Fixed issues in the 2024.4.0 release](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/fixed-issues-2024-04-0).
+For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
@@ -291,3 +228,9 @@ You can find a complete list of Cloud Manager monthly releases [here](/help/impl
 ## Migration Tools {#migration-tools}
 
 You can find a complete list of Migration Tools releases [here](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
+
+## Experience Cloud Release Notes {#experience-cloud}
+
+You can find information about releases of other Experience Cloud applications [here](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current).
+To receive a monthly email notification about updates to Experience Cloud release notes, subscribe to the [Adobe Priority Product Update](https://www.adobe.com/subscription/priority-product-update.html). 
+
