@@ -36,7 +36,7 @@ Configuration consists of two main steps:
 
 >[!TIP]
 >
->For details about managing repositories in Cloud Manager, see [Cloud Manager Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md).
+>For details about managing repositories in Cloud Manager, see [Cloud Manager Repositories](/help/implementing/cloud-manager/managing-code/managing-repo.md).
 
 ### Private Repository Ownership Validation {#validate-ownership}
 
