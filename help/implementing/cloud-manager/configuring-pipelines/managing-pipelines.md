@@ -139,6 +139,14 @@ Select the **View details** link to reveal the **Duration** section. This includ
 
 ![Duration](/help/implementing/cloud-manager/assets/configure-pipeline/duration.png)
 
+If your pipeline contained a **Code Scanning** step, which raised issues, you can tap or click the **Download Details** button to view a list of [code quality tests](/help/implementing/cloud-manager/code-quality-testing.md) that did not pass.
+
+![Code quality issues](assets/managing-pipelines-code-quality-issues.png)
+
+A **Project File Location** column is available in the CSV file to indicate the location of the offending code. This column is the project-relative path, whereas the **File Location** column is Maven-generated.
+
+![Project code scan issue details](assets/managing-pipelines-code-quality-details.png)
+
 >[!NOTE]
 >
 >You can only view details of a pipeline that is running or has been run at least once.
