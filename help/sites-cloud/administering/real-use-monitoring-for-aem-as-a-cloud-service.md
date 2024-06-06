@@ -4,6 +4,7 @@ description: Learn how to use Real Use Monitoring (RUM) to capture and analyze t
 ---
 
 >[!NOTE]
+>
 >We are excited to announce the [GA rollout](/help/release-notes/release-notes-cloud/release-notes-current.md#real-use-monitoring) for Real Use Monitoring service, the client-side collection of data. It is an automated service and there is no customer set up required.
 
 # Real Use Monitoring Service for AEM as a Cloud Service {#real-use-monitoring-service-for-aem-as-a-cloud-service}
