@@ -39,6 +39,9 @@ None.
 
 To know what is deprecated or removed in AEM as a Cloud Service, see [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md).
 
+### Change announcements
+* Starting in September 2024 AEM as a Cloud Service will disable the serialization of Resource Resolvers via the Sling Model Exporter framework. See [the documentation|https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter] for more details.
+
 ### Embedded Technologies {#embedded-tech-16544}
 
 |Technology|Version|Link|
