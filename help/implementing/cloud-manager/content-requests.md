@@ -10,7 +10,7 @@ role: Admin, Architect, Developer
 
 ## Introduction {#introduction}
 
-Content requests are requests coming into AEM Sites (including in connection with Edge Delivery Services for AEM Sites) or any customer-provided caching system (like a Content Delivery Network) to deliver content or data in either HTML format via page views (for example, pages and experience fragments) or JSON format via API calls (in a headless manner). Content Requests are counted either as a page view or 5 API Calls, and are measured at the ingress of the first caching system to receive a Content Request. Certain HTTP requests are included or excluded for purposes of counting content requests. The full list of such included and excluded HTTP requests, as well as their technical definitions, are available in the documentation.
+Content requests are requests coming into AEM Sites (including in connection with Edge Delivery Services for AEM Sites) or any customer-provided caching system (like a Content Delivery Network) to deliver content or data in either HTML format via page views (for example, pages and experience fragments) or JSON format via API calls (in a headless manner). Content requests are counted either as a page view or 5 API Calls, and are measured at the ingress of the first caching system to receive a content request. Certain HTTP requests are included or excluded for purposes of counting content requests. The full list of such included and excluded HTTP requests, as well as their technical definitions, are available in the documentation.
 
 ## Understanding Cloud Service Content Requests {#understanding-cloud-service-content-requests}
 
