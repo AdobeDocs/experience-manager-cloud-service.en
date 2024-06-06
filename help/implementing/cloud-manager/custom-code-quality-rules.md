@@ -1200,6 +1200,10 @@ For specific indexes, ensure you retain the tags property and its current values
 
 AEM Cloud Service prohibits custom search index definitions (nodes of type `oak:QueryIndexDefinition`) from being deployed in the UI Content package.
 
+>[!WARNING]
+>
+>You are urged to address this as soon as possible since it will cause pipelines to fail starting with the [Cloud Manager August 2024 release.](/help/implementing/cloud-manager/release-notes/current.md)
+
 ### Custom full-text Index Definition Of Type damAssetLucene Must Be Correctly Prefixed With 'damAssetLucene' {#oakpal-dam-asset-lucene}
 
 * **Key**: CustomFulltextIndexesOfTheDamAssetCheck
@@ -1209,6 +1213,10 @@ AEM Cloud Service prohibits custom search index definitions (nodes of type `oak:
 
 AEM Cloud Service prohibits custom full-text index definitions of type `damAssetLucene` from being prefixed with anything other than `damAssetLucene`.
 
+>[!WARNING]
+>
+>You are urged to address this as soon as possible since it will cause pipelines to fail starting with the [Cloud Manager August 2024 release.](/help/implementing/cloud-manager/release-notes/current.md)
+
 ### Index Definition Nodes Must Not Contain Properties With Same Name {#oakpal-index-property-name}
 
 * **Key**: DuplicateNameProperty
@@ -1217,6 +1225,10 @@ AEM Cloud Service prohibits custom full-text index definitions of type `damAsset
 * **Since**: Version 2024.6.0
 
 AEM Cloud Service prohibits custom search index definitions (that is, nodes of type `oak:QueryIndexDefinition`) from containing properties with the same name
+
+>[!WARNING]
+>
+>You are urged to address this as soon as possible since it will cause pipelines to fail starting with the [Cloud Manager August 2024 release.](/help/implementing/cloud-manager/release-notes/current.md)
 
 ### Customizing Of Certain OOTB Index Definitions is Prohibited {#oakpal-customizing-ootb-index}
 
@@ -1234,6 +1246,10 @@ AEM Cloud Service prohibits unauthorized modifications of the following OOTB ind
 * `authorizables`
 * `pathReference`
 
+>[!WARNING]
+>
+>You are urged to address this as soon as possible since it will cause pipelines to fail starting with the [Cloud Manager August 2024 release.](/help/implementing/cloud-manager/release-notes/current.md)
+
 ### Configuration Of The Tokenizers In Analyzers Should Be Created With The Name 'tokenizer' {#oakpal-tokenizer}
 
 * **Key**: AnalyzerTokenizerConfigCheck
@@ -1242,3 +1258,7 @@ AEM Cloud Service prohibits unauthorized modifications of the following OOTB ind
 * **Since**: Version 2024.6.0
 
 AEM Cloud Service prohibits creation of tokenizers with incorrect names in analyzers. Tokenizers should always be defined as `tokenizer`.
+
+>[!WARNING]
+>
+>You are urged to address this as soon as possible since it will cause pipelines to fail starting with the [Cloud Manager August 2024 release.](/help/implementing/cloud-manager/release-notes/current.md)
