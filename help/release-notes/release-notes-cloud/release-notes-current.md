@@ -57,7 +57,7 @@ Content translation actions and workflows now trigger events to allow tracking r
 #### Real Use Monitoring (RUM) Data Service {#real-use-monitoring}
 
 * **[Real Use Monitoring (RUM) Data Service is now GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** enabling client-side collection of data for AEM as a Cloud Service.
-The Real Use Monitoring service , the client-side collection, offers a more precise reflection of interactions, ensuring a reliable measure of website engagement. It enables customers with advanced insights into their page traffic and performance. It is a great opportunity to learn more about your page performance and gain insights to improve it.
+The Real Use Monitoring service, the client-side collection, offers a more precise reflection of interactions, ensuring a reliable measure of website engagement. It enables customers with advanced insights into their page traffic and performance. It is a great opportunity to learn more about your page performance and gain insights to improve it.
 
 #### AEM Authoring for Edge Delivery Services {#edge-enhancements}
 
@@ -138,11 +138,11 @@ Ready to integrate any of these CAPTCHA solution with your Adaptive Forms? Our d
 
 ### Forms Service
 
-Forms service generates interactive PDF forms for data capture. It can also be used to importor  export data to and from an existing interactive PDF form and validate submitted data. Here's a breakdown of its functionalities: 
+Forms service generates interactive PDF forms for data capture. It can also be used to import or export data to and from an existing interactive PDF form and validate submitted data. Here's a breakdown of its functionalities: 
 
 * **Rendering Forms**: Generate an interactive PDF form from a template created using AEM Forms Designer and, optionally, XML data. This essentially produces a fillable PDF form optionally pre-filled with data.
 * **Data Extraction and Import**: Import data into an existing PDF form as well as extract data from a filled PDF form. Both XDP and XML data formats are supported, and importing to non-XFA PDF forms (also known as AcroForms) additionally supports FDF and XFDF data.
-* **Data Validation**: : Validate submitted data, in XDP or XML format, against a template created using AEM Forms Designer.
+* **Data Validation**: Validate submitted data, in XDP or XML format, against a template created using AEM Forms Designer.
 
 >[!IMPORTANT] 
 >
@@ -184,7 +184,7 @@ The RDE command line interface has some new features, which improve the develope
 
 * [the setup command is interactive](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools-interactive), making it easier to choose between organizations, programs and environments. It is also now possible to override these values at the command line.
 * [quiet mode](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) for a less verbose output.
-* [json mode](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) for useful output when invoked programatically. 
+* [json mode](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) for useful output when invoked programmatically. 
 
 ### New Actions Center notifications {#actions-center-notifications}
 
@@ -249,4 +249,3 @@ You can find a complete list of Migration Tools releases [here](/help/journey-mi
 
 You can find information about releases of other Experience Cloud applications [here](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current).
 To receive a monthly email notification about updates to Experience Cloud release notes, subscribe to the [Adobe Priority Product Update](https://www.adobe.com/subscription/priority-product-update.html). 
-
