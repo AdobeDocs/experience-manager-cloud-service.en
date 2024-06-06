@@ -11,7 +11,8 @@ exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service     | This article   |
+| AEM as a Cloud Service (Core Components)     | This article   |
+| AEM as a Cloud Service (Foundation Components)     | [Click here](/help/forms/adaptive-form-fragments.md)   |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html)                  |
 
 While every form is designed for a specific purpose, there are some common segments in most forms, such as to provide personal details like name and address, family details, income details. Form developers are required to create these common segments every time a new form is created.
