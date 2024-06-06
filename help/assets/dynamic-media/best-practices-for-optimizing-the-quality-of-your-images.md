@@ -19,9 +19,9 @@ Adobe Experience Manager includes more than 100 Dynamic Media image delivery com
 **Smart imaging:**
 
 * Enabling Smart Imaging in Dynamic Media allows automatic optimization of image format, size, and quality based on client browser capabilities.
-Want to learn more? Go to [Smart Imaging](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq)
+Want to learn more? Go to [Smart Imaging](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq).
 * It enhances image delivery performance by dynamically adjusting these parameters.
-* You can evaluate Smart Imaging using the self-evaluation tool [Snapshot](https://snapshot.scene7.com/)
+* You can evaluate Smart Imaging using the self-evaluation tool [Snapshot](https://snapshot.scene7.com/).
 
 **Image formats:**
 
