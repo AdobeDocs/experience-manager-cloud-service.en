@@ -192,7 +192,7 @@ Each program has a lot of options and data associated with it. These data are ga
 * Overview - The program overview as described in the current document
 * [Activity](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity) - The history of pipeline runs of the program
 * [Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines) - All pipelines configured for the program
-* [Repositories](/help/implementing/cloud-manager/managing-code/managing-repo.md) - All repositories configured for the program
+* [Repositories](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - All repositories configured for the program
 * [Reports](/help/implementing/cloud-manager/sla-reporting.md) - Metrics such as SLA data
 * [Environments](/help/implementing/cloud-manager/manage-environments.md) - All environments configured for the program
 * [Content Sets](/help/implementing/developing/tools/content-copy.md) - Sets of content created for copy purposes
