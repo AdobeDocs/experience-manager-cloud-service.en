@@ -1130,7 +1130,6 @@ Overriding the default value can lead to very slow page reads, particularly when
 
 The expected pattern for fully custom index names is: `[prefix].[indexName]-custom-[version]`. More information can be found in the document [Content Search and Indexing](/help/operations/indexing.md).
 
-
 ### Same property with different analyzed values in the same index definition {#oakpal-same-property-different-analyzed-values}
 
 #### Non-compliant code {#non-compliant-code-same-property-different-analyzed-values}
@@ -1183,7 +1182,7 @@ Example:
 
 If the analyzed property has not been explicitly set, its default value will be false. 
 
-### Tags property
+### Tags property {#tags-property}
 
 * **Key**: IndexHasValidTagsProperty
 * **Type**: Code Smell
@@ -1191,3 +1190,55 @@ If the analyzed property has not been explicitly set, its default value will be 
 * **Since**: Version 2023.1.0
 
 For specific indexes, ensure you retain the tags property and its current values. While adding new values to the tags property is permissible, deleting any existing ones (or the property altogether) can lead to unexpected results.
+
+### Index Definition Nodes Must Not Be deployed in UI Content package {#oakpal-ui-content-package}
+
+* **Key**: IndexNotUnderUIContent
+* **Type**: Improvement
+* **Severity**: Minor
+* **Since**: Version 2024.6.0
+
+AEM Cloud Service prohibits custom search index definitions (nodes of type `oak:QueryIndexDefinition`) from being deployed in the UI Content package.
+
+### Custom full-text Index Definition Of Type damAssetLucene Must Be Correctly Prefixed With 'damAssetLucene' {#oakpal-dam-asset-lucene}
+
+* **Key**: CustomFulltextIndexesOfTheDamAssetCheck
+* **Type**: Improvement
+* **Severity**: Minor
+* **Since**: Version 2024.6.0
+
+AEM Cloud Service prohibits custom full-text index definitions of type `damAssetLucene` from being prefixed with anything other than `damAssetLucene`.
+
+### Index Definition Nodes Must Not Contain Properties With Same Name {#oakpal-index-property-name}
+
+* **Key**: DuplicateNameProperty
+* **Type**: Improvement
+* **Severity**: Minor
+* **Since**: Version 2024.6.0
+
+AEM Cloud Service prohibits custom search index definitions (that is, nodes of type `oak:QueryIndexDefinition`) from containing properties with the same name
+
+### Customizing Of Certain OOTB Index Definitions is Prohibited {#oakpal-customizing-ootb-index}
+
+* **Key**: RestrictIndexCustomization
+* **Type**: Improvement
+* **Severity**: Minor
+* **Since**: Version 2024.6.0
+
+AEM Cloud Service prohibits unauthorized modifications of the following OOTB indexes:
+
+* `nodetypeLucene`
+* `slingResourceResolver`
+* `socialLucene`
+* `appsLibsLucene`
+* `authorizables`
+* `pathReference`
+
+### Configuration Of The Tokenizers In Analyzers Should Be Created With The Name 'tokenizer' {#oakpal-tokenizer}
+
+* **Key**: AnalyzerTokenizerConfigCheck
+* **Type**: Improvement
+* **Severity**: Minor
+* **Since**: Version 2024.6.0
+
+AEM Cloud Service prohibits creation of tokenizers with incorrect names in analyzers. Tokenizers should always be defined as `tokenizer`.

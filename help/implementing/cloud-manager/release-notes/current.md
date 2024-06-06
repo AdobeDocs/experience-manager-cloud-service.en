@@ -26,7 +26,7 @@ The release date for Cloud Manager release 2024.6.0 in AEM as a Cloud Service is
 * [Self-service content restore](/help/operations/restore.md) provides backup restoration for up to seven days and features:
   * Point-in-time backup restoration for the previous 24 hours
   * Fixed time restorations for up to seven days
-* New OakPal rules were added to Cloud Manager Code Quality scan.
+* [New OakPal rules](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-ui-content-package) were added to Cloud Manager Code Quality scan.
   * Every new rule added as of June 2024 is a non-breaking change.
   * You are urged to address these as soon as possible since these new rules will cause pipelines to fail starting with the Cloud Manager August 2024 release.
 
