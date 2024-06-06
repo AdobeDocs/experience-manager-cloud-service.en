@@ -19,7 +19,12 @@ The release date for Cloud Manager release 2024.6.0 in AEM as a Cloud Service is
 
 ## What's New {#what-is-new}
 
-* 
+* You can now [use your own GitHub repositories](/help/implementing/cloud-manager/managing-code/private-repositories.md) as sources for both full-stack and frontend pipelines.
+  * Additionally, you can take advantage of GitHub repositories with [git submodules,](/help/implementing/cloud-manager/managing-code/git-submodules.md) providing you with enhanced control over the auto-generated pipelines used for pull request validation and allowing you to define behaviors for crucial metrics during the code scanning phase.
+  * [You also have the choice](/help/implementing/cloud-manager/managing-code/github-check-config.md) to preserve the report history on GitHub, name the pipeline, and set pipeline variables to suit your needs.
+* [Self-service content restore](/help/operations/restore.md) provides backup restoration for up to seven days and features:
+  * Point-in-time backup restoration for the previous 24 hours
+  * Fixed time restorations for up to seven days
 
 ## Early Adoption Program {#early-adoption}
 
@@ -31,7 +36,7 @@ If you have licensed Edge Delivery Services as part of Adobe Experience Manager 
 
 This enables a unified experience for all of your AEM properties, ensuring consistency with all critical workflows including domain name management, SSL certificate management, and CDN mappings.
 
-If you are interested in testing this new feature and sharing your feedback, please send an email to ` Grp-AEMCS-CMEdgeDelSvs-Program-Adopter@adobe.com` from the email address associated with your Adobe ID. 
+If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-cmedgedelsvs-program-adopter@adobe.com` from the email address associated with your Adobe ID. 
 
 ### Domain Validated (DV) Certificates
 
@@ -47,25 +52,6 @@ Real User Monitoring (RUM) Data Service offers a more precise reflection of user
 
 If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-rum-adopter@adobe.com` from the email address associated with your Adobe ID. Please include the domain name for production, stage, and dev environments in your email.  Availability of the early adopter program of this feature is limited.
 
-### Bring your own GitHub {#byo-github}
-
-If you use GitHub to manage your repositories, [you can now validate code directly within your GitHub repositories through Cloud Manager.](/help/implementing/cloud-manager/managing-code/byo-github.md) This integration eliminates the need to consistently sync code with the Adobe repository and allows you to verify pull requests before merging them into the main branches. This feature is exclusive to public GitHub. Support for self-hosted GitHub is not available.
-
-If you are interested in testing this new feature and sharing your feedback, send an email to `Grp-CloudManager_BYOG@adobe.com` from your email address associated with your Adobe ID.
-
-### Self-Service Content Restore {#content-restore}
-
-[A new self-service content restore feature](/help/operations/restore.md) now provides backup restoration for up to seven days and is available to early adopters for evaluation purposes featuring:
-
-* Point-in-time backup restoration for the previous 24 hours
-* Fixed time restorations for up to seven days
-
-If you are interested in testing this new feature and sharing your feedback, send an email to `aemcs-restorefrombackup-adopter@adobe.com` from your email associated with your Adobe ID.
-
-* The early adopter program is limited to development environments only.
-* Availability of the early adopter program of this feature is limited.
-* This feature is for recovering accidentally deleted content and is not intended for disaster recovery.
-
 ### Experience Audit Dashboard {#experience-audit-dashboard}
 
 [The Cloud Manager Experience Audit dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md) includes a trended view of your page performance scores along with insights and recommendations to help you improve them. Experience Audit is included as a step in the Cloud Manager production pipeline.
@@ -73,7 +59,3 @@ If you are interested in testing this new feature and sharing your feedback, sen
 The dashboard uses Google Lighthouse, an open-source, automated tool for improving the quality of your web apps. You can run it against any web page, public, or requiring authentication. It has audits for performance, accessibility, progressive web apps, SEO, and more.
 
 Interested in test-driving the new dashboard? To get started, send an email to `aem-lighthouse-pilot@adobe.com` from your email associated with your Adobe ID.
-
-## Bug Fixes {#bug-fixes}
-
-* 
