@@ -3,6 +3,7 @@ title: Developer Getting Started Guide for AEM Authoring with Edge Delivery Serv
 description: This guide will get you up-and-running with a new Adobe Experience Manager site using Edge Delivery Services and the Universal Editor for content authoring.
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
+role: Admin, Architect, Developer
 ---
 
 # Developer Getting Started Guide for AEM Authoring with Edge Delivery Services {#edge-dev-getting-started}

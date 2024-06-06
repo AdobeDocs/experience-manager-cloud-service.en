@@ -1,14 +1,12 @@
 ---
-
 title: AEM Forms value realization dashboard
-description: Effortlessly monitor form submissions on your AEM Forms instances with our intuitive tracking dashboard. 
+description: Effortlessly monitor form submissions on your AEM Forms instances with our intuitive tracking dashboard.
 feature: Adaptive Forms, Foundation Components, Core Components
 role: Admin, Developer, Leader, User
 hide: yes
 hidefromtoc: yes
-
+exl-id: 2c071f3c-b74a-4efc-808d-6aba9f294663
 ---
-
 # Understanding Your Value Realization Dashboard: Making the Most of Your Forms {#value-realization-dashboard}
 
 <span class="preview"> This feature is a beta feature, enabled only for a few selected customers. </span>

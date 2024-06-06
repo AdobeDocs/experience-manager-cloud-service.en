@@ -2,6 +2,9 @@
 title: Adding Page Annotations
 description: Use annotation mode to leave annotations and sketches on pages as you would use sticky notes to assist your content review process
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Adding Page Annotations {#adding-page-annotations}
 
