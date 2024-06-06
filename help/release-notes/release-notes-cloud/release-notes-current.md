@@ -38,12 +38,28 @@ Have a look at the May 2024 Release Overview video for a summary of the features
 
 ### New features in Sites {#sites-new-features}
 
+#### AEM Translation Integration {#translation-integration}
+
+Content translation actions and workflows now trigger events to allow tracking relevant process steps and states from external applications. The following events are being generated. Users will be able to subscribe to events using the Adobe Developer Console.
+
+* `TRANSLATION_JOB_CREATED`
+* `TRANSLATION_JOB_CONTENT_ADDITION_STARTED`
+* `TRANSLATION_JOB_CONTENT_ADDITION_COMPLETED`
+* `TRANSLATION_JOB_CONTENT_DELETION_STARTED`
+* `TRANSLATION_JOB_CONTENT_DELETION_COMPLETED`
+* `TRANSLATION_JOB_COMMITTED_FOR_TRANSLATION`
+* `TRANSLATION_JOB_READY_FOR_REVIEW`
+* `TRANSLATION_JOB_APPROVED`
+* `TRANSLATION_JOB_COMPLETED`
+* `TRANSLATION_JOB_CANCELLED`
+* `TRANSLATION_JOB_ERROR`
+
 #### Real Use Monitoring (RUM) Data Service {#real-use-monitoring}
 
 * **[Real Use Monitoring (RUM) Data Service is now GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** enabling client-side collection of data for AEM as a Cloud Service.
 The Real Use Monitoring service , the client-side collection, offers a more precise reflection of interactions, ensuring a reliable measure of website engagement. It enables customers with advanced insights into their page traffic and performance. It is a great opportunity to learn more about your page performance and gain insights to improve it.
 
-### AEM Authoring for Edge Delivery Services
+#### AEM Authoring for Edge Delivery Services {#edge-enhancements}
 
 Enhanced stability and various improvements for a better authoring experience.
 
