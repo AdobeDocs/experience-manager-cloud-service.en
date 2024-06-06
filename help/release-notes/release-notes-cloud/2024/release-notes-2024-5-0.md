@@ -34,7 +34,28 @@ Have a look at the May 2024 Release Overview video for a summary of the features
 
 ### New features in Sites {#sites-new-features}
 
-**AEM Authoring for Edge Delivery Services**
+#### AEM Translation Integration {#translation-integration}
+
+Content translation actions and workflows now trigger events to allow tracking relevant process steps and states from external applications. The following events are being generated. Users will be able to subscribe to events using the Adobe Developer Console.
+
+* `TRANSLATION_JOB_CREATED`
+* `TRANSLATION_JOB_CONTENT_ADDITION_STARTED`
+* `TRANSLATION_JOB_CONTENT_ADDITION_COMPLETED`
+* `TRANSLATION_JOB_CONTENT_DELETION_STARTED`
+* `TRANSLATION_JOB_CONTENT_DELETION_COMPLETED`
+* `TRANSLATION_JOB_COMMITTED_FOR_TRANSLATION`
+* `TRANSLATION_JOB_READY_FOR_REVIEW`
+* `TRANSLATION_JOB_APPROVED`
+* `TRANSLATION_JOB_COMPLETED`
+* `TRANSLATION_JOB_CANCELLED`
+* `TRANSLATION_JOB_ERROR`
+
+#### Real Use Monitoring (RUM) Data Service {#real-use-monitoring}
+
+* **[Real Use Monitoring (RUM) Data Service is now GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** enabling client-side collection of data for AEM as a Cloud Service.
+The Real Use Monitoring service, the client-side collection, offers a more precise reflection of interactions, ensuring a reliable measure of website engagement. It enables customers with advanced insights into their page traffic and performance. It is a great opportunity to learn more about your page performance and gain insights to improve it.
+
+#### AEM Authoring for Edge Delivery Services {#edge-enhancements}
 
 Enhanced stability and various improvements for a better authoring experience.
 
@@ -81,11 +102,11 @@ Experience Manager Assets now enables you to quickly [publish assets to Experien
 
 This release brings a significant upgrade to the visual rule editor for adaptive forms based on core components. You can now: 
 
-  * Create rules in Visual Rule editor to [override default form submission success/failure handlers](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions). 
+  * Create rules in Visual Rule editor to [override default form submission success/failure messages](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers). 
   
   * In the Adaptive Forms Rule Editor, added the ability to [select different types of fields for the WHEN operation](/help/forms/rule-editor-core-components.md#allowed-multiple-fields-in-when).
   
-  * A form author can now apply custom functions to [preprocess data before submission](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions). 
+  * A form author can now apply custom functions to [preprocess data before submission](/help/forms/create-and-use-custom-functions.md#use-case-submit-altered-data-to-the-server). 
 
   * Use the [**Save as Draft**](/help/forms/save-core-component-based-form-as-draft.md) functionality to save partially completed forms for later submission. This is useful in scenarios where users need to interrupt filling out a form and come back to it later.
 
@@ -113,11 +134,11 @@ Ready to integrate any of these CAPTCHA solution with your Adaptive Forms? Our d
 
 ### Forms Service
 
-Forms service generates interactive PDF forms for data capture. It can also be used to importor  export data to and from an existing interactive PDF form and validate submitted data. Here's a breakdown of its functionalities: 
+Forms service generates interactive PDF forms for data capture. It can also be used to import or export data to and from an existing interactive PDF form and validate submitted data. Here's a breakdown of its functionalities: 
 
 * **Rendering Forms**: Generate an interactive PDF form from a template created using AEM Forms Designer and, optionally, XML data. This essentially produces a fillable PDF form optionally pre-filled with data.
 * **Data Extraction and Import**: Import data into an existing PDF form as well as extract data from a filled PDF form. Both XDP and XML data formats are supported, and importing to non-XFA PDF forms (also known as AcroForms) additionally supports FDF and XFDF data.
-* **Data Validation**: : Validate submitted data, in XDP or XML format, against a template created using AEM Forms Designer.
+* **Data Validation**: Validate submitted data, in XDP or XML format, against a template created using AEM Forms Designer.
 
 >[!IMPORTANT] 
 >
@@ -159,7 +180,7 @@ The RDE command line interface has some new features, which improve the develope
 
 * [the setup command is interactive](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools-interactive), making it easier to choose between organizations, programs and environments. It is also now possible to override these values at the command line.
 * [quiet mode](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) for a less verbose output.
-* [json mode](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) for useful output when invoked programatically. 
+* [json mode](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) for useful output when invoked programmatically. 
 
 ### New Actions Center notifications {#actions-center-notifications}
 
@@ -203,14 +224,14 @@ Similar to AEM 6.5, Apache/dispatcher will ingest rewrite maps placed in a speci
 
 The Adobe Managed CDN now supports [Edge Side Includes (ESI)](/help/implementing/dispatcher/edge-side-includes.md), a markup language for edge level dynamic web content assembly. By including ESI snippets, you can cache the overall HTML page at the CDN with higher TTLs, while more frequently fetching from origin those smaller sections that require higher cadence updates (lower TTLs). <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
-#### Real User Monitoring (RUM) Data Service (Early Adopter Program)
-
-* **[Real Use Monitoring (RUM) Data Service is now GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** enabling client-side collection of data for AEM as a Cloud Service.
-The Real Use Monitoring service , the client-side collection, offers a more precise reflection of interactions, ensuring a reliable measure of website engagement. It enables customers with advanced insights into their page traffic and performance. It is a great opportunity to learn more about your page performance and gain insights to improve it.
-
 ## [!DNL Experience Manager] Guides {#guides}
 
-You can find a complete list of new and enhanced features of the latest release of Adobe Experience Manager Guides [here](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0).
+* **Publish a topic or its elements to an Experience Fragment**
+  Now, Experience Manager Guides allow you to publish a topic or its elements to an Experience Fragment. An Experience Fragment is a modular content unit that integrates both content and layout.  Experience Fragments are instrumental and can help you create consistent and engaging experiences. 
+* **Ability to pass the topic asset metadata to Native PDF output**
+  You can add the topic asset metadata while generating the Native PDF output. This feature helps you add specific metadata for different topics, like the topic title and author, to the topic page headers and footers. 
+
+For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
