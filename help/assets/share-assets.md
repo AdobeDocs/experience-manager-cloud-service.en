@@ -110,12 +110,12 @@ The email template can be customized using plain text or HTML. The default edita
 
 | Placeholders | Description |
 |---|-----|
-| ${emailSubject} | Subject of an email |
-| ${emailInitiator} | Email ID of the user who created the email |
-| ${emailMessage} | Email body |
-| ${pagePath} | URL of the shared link |
-| ${linkExpiry} | Shared link expiry date |
-| ${host.prefix} | Origin of the [!DNL Experience Manager] instance, for example `http://www.adobe.com"` |
+| `${emailSubject}` | Subject of an email |
+| `${emailInitiator}` | Email ID of the user who created the email |
+| `${emailMessage}` | Email body |
+| `${pagePath}` | URL of the shared link |
+| `${linkExpiry}` | Shared link expiry date |
+| `${host.prefix}` | Origin of the [!DNL Experience Manager] instance, for example `http://www.adobe.com"` |
 
 #### Customized email template example {#custom-email-template-example}
 
