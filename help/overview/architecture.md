@@ -227,7 +227,7 @@ The latest architecture for AEM as a Cloud Service introduces some fundamental c
   * [Onboarding Journey](/help/journey-onboarding/overview.md)
   * [Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 * Development Architecture
-  * [Cloud Manager Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
+  * [Cloud Manager Repositories](/help/implementing/cloud-manager/managing-code/managing-repo.md)
   * [CI/CD Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
   * [Code Quality Testing](/help/implementing/cloud-manager/code-quality-testing.md)
 * Edge Delivery Services:
