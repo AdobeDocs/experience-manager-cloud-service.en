@@ -87,7 +87,7 @@ To finish the configuration of the full-stack code non-production pipeline, foll
 
    >[!TIP]
    > 
-   >See [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) so you can learn how to add and manage repositories in Cloud Manager.
+   >See [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/managing-repositories.md) so you can learn how to add and manage repositories in Cloud Manager.
 
    * **Git Branch** - This option defines from which branch in the selected pipeline should retrieve the code.
      * Enter the first few characters of the branch name and the auto-complete feature of this field. It helps you find the matching branches that you can select.
@@ -121,6 +121,10 @@ A targeted deployment deploys code only for selected parts of your AEM applicati
   * If a web-tier code pipeline exists for the selected environment, this selection is disabled.
   * If you have an existing full-stack pipeline deploying to an environment, creating a web tier config pipeline for the same environment will case the existing web tier configuration in the full-stack pipeline to be ignored.
 
+>[!NOTE]
+>
+>Web tier and config pipelines are not supported with private repositories. Please see the document [Adding Private Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) for details and the full list of limitations.
+
 The steps to complete the creation of your non-production, targeted deployment pipeline are the same once you choose a deployment type.
 
 1. Choose which deployment type you require.
@@ -137,7 +141,7 @@ The steps to complete the creation of your non-production, targeted deployment p
 
    >[!TIP]
    > 
-   >See [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) so you can learn how to add and manage repositories in Cloud Manager.
+   >See [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/managing-repositories.md) so you can learn how to add and manage repositories in Cloud Manager.
 
    * **Git Branch** - This option defines from which branch in the selected pipeline should retrieve the code.
      * Enter the first few characters of the branch name and the auto-complete feature of this field. It finds the matching branches that you can select.
