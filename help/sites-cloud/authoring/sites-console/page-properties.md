@@ -2,6 +2,9 @@
 title: Editing Page Properties
 description: Learn how to define the properties required for managing a page in AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Editing Page Properties {#editing-page-properties}
 
@@ -46,7 +49,7 @@ The properties are distributed across several tabs.
 
   * **Page Title** - A title to be used on the page. Typically used by title components. If empty, the **Title** is used.
   * **Navigation Title** - You can specify a separate title for use in the navigation (for example, if you want something more concise). If empty, the **Title** is used.
-  * **Subtitle** - A subtitle for use on the page.
+  * **Caption** - A subtitle for use on the page.
   * **Description** - Your description of the page, its purpose, or any other details you want to add.
 
 * **On/Off Time**

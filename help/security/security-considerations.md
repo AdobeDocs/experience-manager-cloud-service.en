@@ -4,6 +4,8 @@ description: Learn about important security considerations when using AEM as a C
 hidefromtoc: yes
 hide: yes
 exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
+feature: Security
+role: Admin
 ---
 # AEM as a Cloud Service Security Considerations {#security-considerations}
 

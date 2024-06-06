@@ -2,6 +2,8 @@
 title: What is Different and What is New - Adobe Experience Manager as a Cloud Service
 description: What is Different and What is New - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
+feature: Release Information
+role: Admin
 ---
 # What is New and What is Different {#what-is-new-and-what-is-different}
 

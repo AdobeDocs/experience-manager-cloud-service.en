@@ -6,7 +6,7 @@ role: Admin, Developer, User
 feature: Adaptive Forms
 contentOwner: khsingh
 ---
-# Notable changes for existing Adobe Experience Manager 6.5 Forms users  {#notable-changes-for-existing-AEM-Forms-users}
+# Difference between AEM 6.5 Forms (AMS and on-Prem) and AEM Forms as a Cloud Services (AEM CS Forms) {#notable-changes-for-existing-AEM-Forms-users}
 
 Adobe Experience Manager Forms as a Cloud Service brings some notable changes to existing features in comparison to Adobe Experience Manager Forms On-Premise and [!DNL Adobe-Managed Service] environments. The key differences are listed below:
 
@@ -74,22 +74,22 @@ Forms as a Cloud Service provide Document Generation and Document Manipulation R
 
 * **Document Manipulation APIs (Assembler Service)**:  
 
-    *   The operations that rely on document services or applications are not available. For example, Microsoft® Word to PDF, Microsoft® Excel to PDF, and HTML to PDF, PostScript (PS) to PDF, XDP to PDF Forms are not supported. These operations rely on Microsoft® Office, Adobe Acrobat, Adobe Distiller, Forms Document Service respectively.   
+    *   The operations that rely on document services or applications are not available. For example, Microsoft&reg; Word to PDF, Microsoft&reg; Excel to PDF, and HTML to PDF, PostScript (PS) to PDF, XDP to PDF Forms are not supported. These operations rely on Microsoft&reg; Office, Adobe Acrobat, Adobe Distiller, Forms Document Service respectively.   
     
-    *   Convert documents that are in a non-PDF format into a PDF format before using those with Communications Document Manipulation APIs. For example, if your documents are in Microsoft® Office, HTML, PostScript (PS), XDP format, convert these documents to PDF format before using those with PDF documents. You can use the [ConvertPDF](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/using-convertpdf-service.html) service for such conversions. 
+    *   Convert documents that are in a non-PDF format into a PDF format before using those with Communications Document Manipulation APIs. For example, if your documents are in Microsoft&reg; Office, HTML, PostScript (PS), XDP format, convert these documents to PDF format before using those with PDF documents. You can use the [ConvertPDF](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/using-convertpdf-service.html) service for such conversions. 
 
     * You can use an AEM 6.5 Forms environment for Digital Signature, Encryption, Reader Extension, Send to printer, Convert PDF, and Barcoded Forms service.
 
 
 ## Data integration (Form Data Model)
 
-*   The service also provides support for JDBC connector, Microsoft® Dynamics, SalesForce, SOAP-based web services, and services that support OData.
+*   The service also provides support for JDBC connector, Microsoft&reg; Dynamics, SalesForce, SOAP-based web services, and services that support OData.
 
 * You can also connect AEM user profile to retrieve and update user information.
 
 * Forms data model supports only HTTP and HTTPS endpoints to submit data. The service does not support Mutual SSL for REST connector and x509 certificate-based authentication for SOAP data sources.
 
-* Forms as a Cloud Service allows to use Microsoft® Azure Blob, Microsoft® Sharepoint, Microsoft® OneDrive, and services supporting general CRUD (Create, Read, Update, and Delete) operations as data stores, both Open API specification 2.0 and Open API 3.0 specification are supported.
+* Forms as a Cloud Service allows to use Microsoft&reg; Azure Blob, Microsoft&reg; Sharepoint, Microsoft&reg; OneDrive, and services supporting general CRUD (Create, Read, Update, and Delete) operations as data stores, both Open API specification 2.0 and Open API 3.0 specification are supported.
 
 
 ## E-Sign

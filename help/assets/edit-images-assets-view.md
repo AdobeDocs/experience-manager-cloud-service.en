@@ -1,12 +1,12 @@
 ---
 title: Edit images
-description: Edit images using [!DNL Adobe Photoshop Express] powered options and save updated images as versions.
+description: Edit images using [!DNL Adobe Express] powered options and save updated images as versions.
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 ---
 # Edit images in [!DNL Assets view] {#edit-images}
 
-[!DNL Assets view] provides user-friendly editing options that are powered by [!DNL Adobe Express] and [!DNL Adobe Photoshop Express]. The editing actions that are available using [!DNL Adobe Express] are Resize image, Remove background, Crop image, and Convert JPEG into PNG or vice versa.
+[!DNL Assets view] provides user-friendly editing options that are powered by [!DNL Adobe Express]. The editing actions that are available using [!DNL Adobe Express] are Resize image, Remove background, Crop image, and Convert JPEG into PNG or vice versa.
 
 After editing an image, you can save the new image as a new version. Versioning helps you to revert to the original asset later, if needed. Additionaly, versioning is available for the PNG file types only, which means when you try to remove background from a JPG file type, JPG is auto converted to PNG. To edit an image, [open its preview](navigate-assets-view.md) and click **[!UICONTROL Edit Image]**.
 
@@ -78,9 +78,9 @@ You can quickly convert a PNG image into a JPEG format using Adobe Express. Exec
 
 ### Limitations {#limitations-adobe-express}
 
-* Supported image resolution: Minimum - 50 pixels, Maximum - 6000 pixels per dimension
+* Supported image resolution: Minimum - 50 pixels, Maximum - 6000 pixels per dimension.
 
-* Maximum file size supported: 17 MB
+* Maximum file size supported: 17 MB.
 
 ## Edit images using Adobe Express embedded editor {#edit-using-embedded-editor}
 
@@ -112,6 +112,7 @@ To edit images using [!DNL Adobe Express] embedded editor, follow the steps belo
 >* The asset size must be less than 17 MB.
 >* You can save an image in `PDF`, `JPEG`, or `PNG` formats; whereas, when there are multiple pages, you can save them as `PDF`.
 
+<!--
 ## Edit images using [!DNL Adobe Photoshop Express] {#edit-using-photoshop-express}
 
 <!--
@@ -121,7 +122,7 @@ After editing an image, you can save the new image as a new version. Versioning 
 
 *Figure: The options to edit images are powered by [!DNL Adobe Photoshop Express].*
 -->
-
+<!--
 ### Touch up images {#spot-heal-images-using-photoshop-express}
 
 If there are minor spots or small objects on an image, you can edit and remove the spots using the spot healing feature provided by Adobe Photoshop.
@@ -134,7 +135,7 @@ The brush samples the retouched area and makes the repaired pixels blend seamles
 TBD: See if we should give backlinks to PS docs for these concepts.
 For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/photoshop/using/retouching-repairing-images.html). 
 -->
-
+<!-- 
 ### Crop and straighten images {#crop-straighten-images-using-photoshop-express}
 
 Using the crop and straighten option that you can do basic cropping, rotate image, flip it horizontally or vertically, and crop it to dimensions suitable for popular social media websites.
