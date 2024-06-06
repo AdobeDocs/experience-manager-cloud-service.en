@@ -80,7 +80,7 @@ To finish the configuration of the full-stack code production pipeline, follow t
 
    >[!TIP]
    > 
-   >See the document [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/managing-repo.md) to learn how to add and manage repositories in Cloud Manager.
+   >See the document [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/managing-repositories.md) to learn how to add and manage repositories in Cloud Manager.
 
    * **Git Branch** - This option defines from which branch in the selected the pipeline should retrieve the code.
      * Enter the first few characters of the branch name and the auto-complete feature of this field will find the matching branches to help you select.
@@ -140,7 +140,7 @@ The steps to complete the creation of your production, targeted deployment pipel
 
    >[!TIP]
    > 
-   >See [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/managing-repo.md) so you can learn how to add and manage repositories in Cloud Manager.
+   >See [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/managing-repositories.md) so you can learn how to add and manage repositories in Cloud Manager.
 
    * **Git Branch** - This option defines from which branch in the selected pipeline should retrieve the code.
      * Enter the first few characters of the branch name and the auto-complete feature of this field. It finds the matching branches that you can select.
