@@ -1006,6 +1006,7 @@ Refer to the gif below, which demonstrates that when the `Delete Traveler` butto
 
 ![Delete Panel](/help/forms/assets/custom-function-delete-panel.gif)
 
++++
 
 ## Caching support for custom function
 
