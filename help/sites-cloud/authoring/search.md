@@ -2,6 +2,9 @@
 title: Search
 description: Find your content faster with comprehensive search
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Search {#search-feature}
 

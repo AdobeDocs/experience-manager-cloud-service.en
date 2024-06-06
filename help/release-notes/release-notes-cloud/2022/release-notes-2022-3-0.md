@@ -2,6 +2,8 @@
 title: Release Notes for 2022.3.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Release Notes for 2022.3.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
+feature: Release Information
+role: Admin
 ---
 # 2022.3.0 Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 

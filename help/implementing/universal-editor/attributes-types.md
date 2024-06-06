@@ -2,6 +2,8 @@
 title: Attributes and Item Types
 description: Learn about the data attributes and item types that the Universal Editor requires.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
+feature: Developing
+role: Admin, Architect, Developer
 ---
 
 # Attributes and Types {#attributes-types}

@@ -2,6 +2,8 @@
 title: Notable Changes to Adobe Experience Manager (AEM) as a Cloud Service
 description: Notable Changes to Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
+feature: Release Information
+role: Admin
 ---
 # Notable Changes to Adobe Experience Manager as a Cloud Service {#notable-changes-aem-cloud}
 
