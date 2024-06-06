@@ -1,5 +1,5 @@
 ---
-title: Real Use Monitoring (RUM) for Edge Delivery Services for AEM Forms as a Cloud Service
+title: Realtime User Monitoring (RUM) for Edge Delivery Services for AEM Forms as a Cloud Service
 description: Real Use Monitoring (RUM) for Edge Delivery Services for AEM Forms as a Cloud Service involves the ongoing tracking and analysis of user interactions with forms.
 feature: Edge Delivery Services
 hide: yes
