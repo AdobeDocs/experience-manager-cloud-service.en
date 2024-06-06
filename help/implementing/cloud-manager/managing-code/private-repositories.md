@@ -95,6 +95,10 @@ When the pull request is closed or merged, the full stack code quality pipeline 
 
 >[!TIP]
 >
+>See the document [GitHub Check Annotations](github-annotations.md) for details on the information provided via GitHub when pull request checks are run.
+
+>[!TIP]
+>
 >You can control the pipelines that are created automatically to validate each pull request to a private repository. Please see the document [GitHub Check Configuration for Private Repositories](github-check-config.md) for more information.
 
 ## Associating Private Repositories with Pipelines {#pipelines}
