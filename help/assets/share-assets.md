@@ -115,7 +115,7 @@ The email template can be customized using plain text or HTML. The default edita
 | `${emailMessage}` | Email body |
 | `${pagePath}` | URL of the shared link |
 | `${linkExpiry}` | Shared link expiry date |
-| `${host.prefix}` | Origin of the [!DNL Experience Manager] instance, for example `http://www.adobe.com"` |
+<!--| `${host.prefix}` | Origin of the [!DNL Experience Manager] instance, for example `http://www.adobe.com"` |--> 
 
 #### Customized email template example {#custom-email-template-example}
 
@@ -131,10 +131,10 @@ subject: ${emailSubject}
     <a href="${pagePath}" target="_blank"><strong>Open</strong></a>
 </p>
 
-Sent from instance: ${host.prefix}
-
 </body></html>
 ```
+
+<!--Sent from instance: ${host.prefix}-->
 
 ### Download assets using the asset link {#download-assets-using-asset-link}
 
