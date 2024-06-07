@@ -44,9 +44,8 @@ After incorporating appropriate modifications in the Express canvas, you can sav
    ![Save assets in AEM](assets/adobe-express-share.png)
 
 2. From the Storage section in the right pane, select **AEM Assets**. Adobe Express displays the upload dialog.
-3. Select either the **Current Page** or **All Pages**. Specify a name and format for the asset. You can save the canvas contents in PNG, JPEG, PDF, MP4, MP4+PNG, or MP4+JPEG formats. The format automatically adjusts based on the asset(s).
-Selecting **Current Page** saves the file in your destination folder. However, selecting **All Pages** with file format other than pdf, creates a new folder in your destination and saves each page as separate files while selecting **All Pages** with file format as PDF, saves the files as single PDF file in the destination folder. 
-
+3. Select either **Current Page** or **All Pages**. Specify a name and format for the asset(s) to export. You can export the canvas contents in PNG, JPEG, PDF, MP4, MP4+PNG, or MP4+JPEG formats. The format automatically adjusts based on the assets on the canvas pages.
+Selecting the **Current Page** saves the asset on your current page to your destination folder. However, selecting **All Pages** with a file format other than PDF exports all canvas pages to a new folder within your destination and saves each page as a separate file there while selecting **All Pages** with a file format as PDF exports all canvas pages as a single PDF file to the destination folder.
 4. Click the folder icon under **Destination Folder** to select a location and save the asset(s). 
 
    ![Save assets in AEM](/help/assets/assets/page-selection-and-destination-folder.svg)
