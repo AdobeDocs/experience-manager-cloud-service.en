@@ -44,18 +44,19 @@ After incorporating appropriate modifications in the Express canvas, you can sav
    ![Save assets in AEM](assets/adobe-express-share.png)
 
 2. From the Storage section in the right pane, select **AEM Assets**. Adobe Express displays the upload dialog.
-3. Select either the **Current Page** or **All Pages** saving option. Selecting **Current Page** saves the file in your destination folder, however, selecting **All Pages** creates a new folder in your destination for all non-PDF files and saves them as separate files while PDF files get saved as a single file in the destination folder.
-4. Specify a name and format for the asset. You can save the canvas contents in PNG, JPEG, PDF, MP4, MP4+PNG, or MP4+JPEG formats. The format automatically adjusts based on the asset(s).
-5. Click the folder icon under **Destination Folder** to select a location and save the asset(s). 
+3. Select either the **Current Page** or **All Pages**. Specify a name and format for the asset. You can save the canvas contents in PNG, JPEG, PDF, MP4, MP4+PNG, or MP4+JPEG formats. The format automatically adjusts based on the asset(s).
+Selecting **Current Page** saves the file in your destination folder. However, selecting **All Pages** with file format other than pdf, creates a new folder in your destination and saves each page as separate files while selecting **All Pages** with file format as PDF, saves the files as single PDF file in the destination folder. 
+
+4. Click the folder icon under **Destination Folder** to select a location and save the asset(s). 
 
    ![Save assets in AEM](/help/assets/assets/page-selection-and-destination-folder.svg)
 
-6. Optional: You can add campaign metadata for your upload using the **Project or campaign name** field. You can use an existing name or create a new one. You can define multiple Project or Campaign names for your upload. To register the name, simply type the name and hit enter.
+5. Optional: You can add campaign metadata for your upload using the **Project or campaign name** field. You can use an existing name or create a new one. You can define multiple Project or Campaign names for your upload. To register the name, simply type the name and hit enter.
 As a best practice, Adobe recommends specifying values in the rest of the fields as well as creating an enhanced search experience for your uploaded assets.
 
-7. Similarly, define values for the **[!UICONTROL Keywords]** and **[!UICONTROL Channels]** fields.
+6. Similarly, define values for the **[!UICONTROL Keywords]** and **[!UICONTROL Channels]** fields.
 
-8. Click **[!UICONTROL Upload]** to upload the asset(s) to AEM Assets.
+7. Click **[!UICONTROL Upload]** to upload the asset(s) to AEM Assets.
 
 ## Limitations {#limitations}
 
