@@ -2,7 +2,7 @@
 title: Best practices for optimizing the quality of your images
 description: Learn best practices that help you optimize the quality of your image assets using Dynamic Media.
 contentOwner: Rick Brough
-feature: Asset Management
+feature: Asset Management,Best Practices
 role: User
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
 ---
