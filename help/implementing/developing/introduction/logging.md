@@ -2,7 +2,7 @@
 title: Logging for AEM as a Cloud Service
 description: Learn how to use Logging for AEM as a Cloud Service to configure global parameters for the central logging service, specific settings for the individual services or how to request data logging.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-feature: "Log Files, Developing"
+feature: Log Files, Developing
 role: Admin, Architect, Developer
 ---
 # Logging for AEM as a Cloud Service {#logging-for-aem-as-a-cloud-service}
