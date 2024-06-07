@@ -2,6 +2,8 @@
 title: Content Restore in AEM as a Cloud Service
 description: Learn how to restore your AEM as a Cloud Service content from backup using Cloud Manager.
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
+feature: Operations
+role: Admin
 ---
 
 # Content Restore in AEM as a Cloud Service {#content-restore}
