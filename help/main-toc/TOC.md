@@ -93,6 +93,7 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
     + 2024 {#2024}
+      + [Release Notes for 2024.5.0](/help/implementing/cloud-manager/release-notes/2024/2024-5-0.md)
       + [Release Notes for 2024.4.0](/help/implementing/cloud-manager/release-notes/2024/2024-4-0.md)
       + [Release Notes for 2024.3.0](/help/implementing/cloud-manager/release-notes/2024/2024-3-0.md)
       + [Release Notes for 2024.2.0](/help/implementing/cloud-manager/release-notes/2024/2024-2-0.md)
@@ -970,6 +971,7 @@ user-guide-title: AEM as a Cloud Service
       + [Creating Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
       + [Editing Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
       + [Hibernating Environments](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
+      + [Edge Delivery Services Support](/help/implementing/cloud-manager/edge-delivery-services.md)
     + Creating an AEM Application Project {#create-application-project}
       + [Project Creation Wizard](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
       + [Project Setup](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
@@ -977,12 +979,16 @@ user-guide-title: AEM as a Cloud Service
     + [Managing Environments](/help/implementing/cloud-manager/manage-environments.md)
     + Managing your Code {#managing-code}
       + [Maven Project Version Handling](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
-      + [Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
+      + [Managing Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
+      + [Adding Adobe Repositories](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+      + [Adding Private Repositories](/help/implementing/cloud-manager/managing-code/private-repositories.md)
       + [Accessing Repositories](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+      + [Git Submodule Support](/help/implementing/cloud-manager/managing-code/git-submodules.md)
       + [Using git with Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
       + [Using Multiple Repositories](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
       + [Enterprise Development Team Setup](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
-      + [Working with Your Own GitHub Repositories](/help/implementing/cloud-manager/managing-code/byo-github.md)
+      + [GitHub Check Configuration](/help/implementing/cloud-manager/managing-code/github-check-config.md)
+      + [GitHub Check Annotations](/help/implementing/cloud-manager/managing-code/github-annotations.md)
     + [Environment Variables](/help/implementing/cloud-manager/environment-variables.md)
     + Cloud Manager CI-CD Pipelines {#cicd-pipelines}
       + [Introduction](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
@@ -1020,6 +1026,7 @@ user-guide-title: AEM as a Cloud Service
       + [Configuring DNS Settings](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
       + [Checking DNS Record Status](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
       + [Managing Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
+      + [Domain Validated (DV) Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)
     + IP Allow Lists {#ip-allow-lists}
       + [Introduction](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
       + [Adding an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
@@ -1196,7 +1203,6 @@ user-guide-title: AEM as a Cloud Service
   + [Additional Publish Regions](/help/operations/additional-publish-regions.md)
   + [Infrastructure and Service Monitoring in AEM as a Cloud Service](/help/operations/monitoring.md)
   + [Maintenance Tasks](/help/operations/maintenance.md)
-  + [Backup and Restore](/help/operations/backup.md)
   + [Self-Service Restore](/help/operations/restore.md)
   + [Asynchronous Jobs](/help/operations/asynchronous-jobs.md)
   + [Removal of the generic lucene index](/help/operations/removal-generic-lucene-index.md)

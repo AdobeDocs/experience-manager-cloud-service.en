@@ -1,13 +1,13 @@
 ---
 title: Real Use Monitoring for AEM as a Cloud Service
 description: Learn how to use Real Use Monitoring (RUM) to capture and analyze the digital user experience of a website or application in real-time.
+exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 ---
+# Real Use Monitoring Service for AEM as a Cloud Service {#real-use-monitoring-service-for-aem-as-a-cloud-service}
 
 >[!NOTE]
 >
 >We are excited to announce the [GA rollout](/help/release-notes/release-notes-cloud/release-notes-current.md#real-use-monitoring) for Real Use Monitoring service, the client-side collection of data. It is an automated service and there is no customer set up required.
-
-# Real Use Monitoring Service for AEM as a Cloud Service {#real-use-monitoring-service-for-aem-as-a-cloud-service}
 
 >[!INFO]
 >
@@ -108,6 +108,6 @@ As you will analyze RUM data, there may be variances in Page Views and other per
    
 1. **How can I opt out?**
 
-We highly recommend using the Real Use Monitoring (RUM)  due to its significant benefits and that it can allow you to optimize your digital experiences. It can offers valuable insights that can help improve website performance.The service is designed to be seamless and has no impact on your website's performance.
+   We highly recommend using the Real Use Monitoring (RUM)  due to its significant benefits and that it can allow you to optimize your digital experiences. It can offers valuable insights that can help improve website performance.The service is designed to be seamless and has no impact on your website's performance.
 
-Opting out means missing out on these insights. However, if you encounter any issues, please contact Adobe Support.
+   Opting out means missing out on these insights. However, if you encounter any issues, please contact Adobe Support.
