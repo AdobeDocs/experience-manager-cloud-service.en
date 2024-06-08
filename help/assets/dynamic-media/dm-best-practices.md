@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
 content-type: reference
-feature: Video,Renditions,Configuration,Asset Management,Best Practices
+feature: Video,Renditions, Configuration, Asset Management, Best Practices
 role: User, Admin
 mini-toc-levels: 4
 hide: no
@@ -61,7 +61,9 @@ A proactive feature that lets you choose which assets to sync with Dynamic Media
 * **Selective Publish:**
 After syncing your assets, Selective Publish gives you control over which assets are visible to your customers. This ability means you can govern which approved assets are actually delivered through your channels, ensuring that your customers see only the best and most relevant content.
 
-These two best practices help you achieve better control, governance, and productivity over your rich-media content. Want to learn more? Go to [Configure Selective Publish at the folder level in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
+These two best practices help you achieve better control, governance, and productivity over your rich-media content. 
+
+Want to learn more? Go to [Configure Selective Publish at the folder level in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
 
 
 ## Prepare assets for delivery
@@ -125,20 +127,20 @@ Want to learn more? Watch [Using Smart Crop with AEM Assets Dynamic Media](https
 
 Use the following recommendations regularly to ensure that your images contribute effectively to your overall SEO strategy.
 
-* **Meaningful Image File Names:**
+* **Meaningful image file names:**
 Use descriptive file names that reflect the image content. For example, 
   * use `myCompany-Silver-Wrist-Watch`
   * *avoid* `myCompany_Silver_Wrist_Watch` or `myCompanySilverWristWatch`
 
-  Doing so helps search engines understand the image context and improves SEO. Also, be aware that Google prefers hyphens over underscores or concatenated words for word separation.
-* **Custom Domain:** 
+  Doing so helps search engines understand the image context and improves SEO. Google prefers hyphens over underscores or spaces in a file name. Also, avoid concatenating words in a file name.
+* **Custom domain:** 
 Implement a custom domain that includes your company or brand name to reinforce brand recognition and trust. For example,
 
   * use `http://images.mycompany.com/is/image/companyname/`
   * *avoid* `https://s7d1.scene7.com/is/image/folder/AdobeStock_28563982`
-* **SEO-Friendly Folder Structure:**
+* **SEO-friendly folder structure:**
 Organize your images in a folder structure that includes your company name or brand for better indexing, like `http://images.mycompany.com/is/image/companyname/`.
-* **Dynamic Media Rule Sets:**
+* **Dynamic Media rule sets:**
 Learn how you can conditionally transform URLs based on various factors, enhancing SEO and user experience.
 Want to learn more? Go to [Use rule sets to transform URLs](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md).
 * **Smart Imaging and Smart Crop:**
@@ -161,8 +163,8 @@ Dynamic Media offers a suite of commands for enhancing images and creating visua
 | Task | What to do |
 | --- | --- |
 | **Upload and publish your original image** | &bull; Start by uploading the original image to Dynamic Media.<br>&bull; Make sure that it is published and accessible through a URL.<br>&bull; In this example, a stock image of a watch with a white background (let's call it "Image X") is uploaded to Dynamic Media.<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage) |
-| **Create a Mask** | &bull; Develop a mask that defines the subject (the area where you want to apply effects) and the background (the area you want to change).<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage_maskps](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage_maskps)<br>&bull; Masks are typically grayscale images, where white represents the subject, and black represents the background. You can create masks using tools like Adobe Photoshop.<br>Want to learn more? Go to [Creating and editing a quick mask in Photoshop](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html).<br>&bull; For "Image X," create a mask that precisely outlines the subject you want to enhance. For example, a person, an object, and so on. | 
-| **Apply Dynamic Media URL Commands for Effects** |  After you have your mask, use URL commands to apply effects like drop shadows or change the background color to "Image X." Here are two examples:<br><br> &bull; **Drop Shadow Effect:**<br>To add a drop shadow effect along the subject's boundary, edit the URL like this:<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&maskUse=invert&effect=-1&pos=100,100&op_blur=75&op_grow=1&opac=25](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&maskUse=invert&effect=-1&pos=100,100&op_blur=75&op_grow=1&opac=25)<br>In this URL, the `$shadow$` parameter creates the shadow effect, and `color=0,0,0` sets the shadow color to black.<br>&bull; **Background color change:**<br>To change the background color, use the URL with a different background color value:<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&maskUse=invert&maskUse=invert&color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&maskUse=invert&maskUse=invert&color=255,255,0)<br> In this example, `color=255,255,255` sets the background color to white. Edit the background to a specific color for visual impact. |
+| **Create a mask** | &bull; Develop a mask that defines the subject (the area where you want to apply effects) and the background (the area you want to change).<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage_maskps](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage_maskps)<br>&bull; Masks are typically grayscale images, where white represents the subject, and black represents the background. You can create masks using tools like Adobe Photoshop.<br>Want to learn more? Go to [Creating and editing a quick mask in Photoshop](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html).<br>&bull; For "Image X," create a mask that precisely outlines the subject you want to enhance. For example, a person, an object, and so on. | 
+| **Apply Dynamic Media URL commands for effects** |  After you have your mask, use URL commands to apply effects like drop shadows or change the background color to "Image X." Here are two examples:<br><br> &bull; **Drop shadow effect:**<br>To add a drop shadow effect along the subject's boundary, edit the URL like this:<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&maskUse=invert&effect=-1&pos=100,100&op_blur=75&op_grow=1&opac=25](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&maskUse=invert&effect=-1&pos=100,100&op_blur=75&op_grow=1&opac=25)<br>In this URL, the `$shadow$` parameter creates the shadow effect, and `color=0,0,0` sets the shadow color to black.<br>&bull; **Background color change:**<br>To change the background color, use the URL with a different background color value:<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&maskUse=invert&maskUse=invert&color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&maskUse=invert&maskUse=invert&color=255,255,0)<br> In this example, `color=255,255,0` sets the background color to yellow. Edit the background to a specific color for visual impact. |
 
 #### Add an image border
 
@@ -170,9 +172,9 @@ Dynamic Media lets you manipulate images directly through URLs, making it a powe
 
 | Task | What to do |
 | --- | --- |
-| **White Border** | To add a white border, use the following URL:<br>[https://s7g10.scene7.com/is/image/genaibeta/AdobeStock_754660022?size=400,400&extend=10,10,10,10](https://s7g10.scene7.com/is/image/genaibeta/AdobeStock_754660022?size=400,400&extend=10,10,10,10)<br>In this URL, the `extend=10,10,10,10` parameter specifies the border size of ten pixels on all sides. | 
-| **Blur Along the White Border** | To add a blur effect along the white border, you can edit the URL as follows:<br>[https://s7d2.scene7.com/is/image/Adobe1/AdobeStock_754660022?size=400,400&extend=10,10,10,10&effect=-1&op_blur=60&color=0,0,0](https://s7d2.scene7.com/is/image/Adobe1/AdobeStock_754660022?size=400,400&extend=10,10,10,10&effect=-1&op_blur=60&color=0,0,0)<br>In this URL, the `effect=-1` parameter applies the blur effect, and `op_blur=60` controls the blur intensity. |
-| **Drop Shadow Effect Along the Outer Boundary** | To add a drop shadow effect along the outer boundary, use this URL:<br>https://s7g10.scene7.com/is/image/genaibeta/AdobeStock_754660022?size=400,400&extend=10,10,10,10&effect=-1&$shadow$&color=0,0,0<br>The `$shadow$` parameter creates the shadow effect, and `color=0,0,0` sets the shadow color to black. |
+| **White border** | To add a white border, use the following URL:<br>[https://s7g10.scene7.com/is/image/genaibeta/AdobeStock_754660022?size=400,400&extend=10,10,10,10](https://s7g10.scene7.com/is/image/genaibeta/AdobeStock_754660022?size=400,400&extend=10,10,10,10)<br>In this URL, the `extend=10,10,10,10` parameter specifies the border size of ten pixels on all sides. | 
+| **Blur along the white border** | To add a blur effect along the white border, you can edit the URL as follows:<br>[https://s7d2.scene7.com/is/image/Adobe1/AdobeStock_754660022?size=400,400&extend=10,10,10,10&effect=-1&op_blur=60&color=0,0,0](https://s7d2.scene7.com/is/image/Adobe1/AdobeStock_754660022?size=400,400&extend=10,10,10,10&effect=-1&op_blur=60&color=0,0,0)<br>In this URL, the `effect=-1` parameter applies the blur effect, and `op_blur=60` controls the blur intensity. |
+| **Drop shadow effect along the outer boundary** | To add a drop shadow effect along the outer boundary, use this URL:<br>https://s7g10.scene7.com/is/image/genaibeta/AdobeStock_754660022?size=400,400&extend=10,10,10,10&effect=-1&$shadow$&color=0,0,0<br>The `$shadow$` parameter creates the shadow effect, and `color=0,0,0` sets the shadow color to black. |
 
 Feel free to experiment with these URLs to achieve the desired visual effects.
 
@@ -182,38 +184,38 @@ If you are looking to superimpose a logo or icon on an existing image, Dynamic M
 
 | Step | What to do |
 | --- | --- |
-| **Upload and Publish the Base Image** | First, upload and publish the base image on which you want to superimpose the logo or icon. You can use any image as your base.<br>For example, here is a base image:<br>[https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage). | 
-| **Upload and Publish the Logo or Icon Image** | Next, upload and publish the image that you want to superimpose over the base image. This image should be a transparent PNG with the logo or icon you want to overlay.<br>Here is the transparent PNG image of a star object with transparency effects that is going to be superimposed:<br>https://s7g10.scene7.com/is/image/genaibeta/starxp |
+| **Upload and publish the base image** | First, upload and publish the base image on which you want to superimpose the logo or icon. You can use any image as your base.<br>For example, here is a base image:<br>[https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage). | 
+| **Upload and publish the logo or icon image** | Next, upload and publish the image that you want to superimpose over the base image. This image should be a transparent PNG with the logo or icon you want to overlay.<br>Here is the transparent PNG image of a star object with transparency effects that is going to be superimposed:<br>https://s7g10.scene7.com/is/image/genaibeta/starxp |
 | **Apply the Dynamic Media URL** | Now, create a Dynamic Media URL that combines the base image and the logo or icon image. You can use URL commands to achieve this effect.<br>The URL structure looks something like this:<br>[https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?layer=1&src=starxp&scale=1.25&posN=0.33,-.25&fmt=png](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?layer=1&src=starxp&scale=1.25&posN=0.33,-.25&fmt=png)<br>where<br>&bull; `hotspotRetailBaseImage` is the base image.<br>&bull; `starxp` is the logo/icon image.<br>&bull; `layer=1` specifies that the logo or icon should be layered over the base image.<br>&bull; `scale=1.25` adjusts the size of the logo/icon.<br>&bull; `posN=0.33,-.25` determines the position of the logo/icon relative to the base image.<br>&bull; `fmt=png` ensures that the output is in PNG format. |
 
-What to learn more? Go to [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) for more details on the `src` command and other Dynamic Media commands.
+What to learn more? Go to [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) for more details on the `src` command and other Dynamic Media URL commands.
 
 
-#### Overlaying Promotional Text
+#### Overlaying promotional text
 
 The following are the steps for overlaying a promotional text message on an image using HTML and CSS.
 
 | Step | What to do |
 | --- | --- |
-| **Upload and Publish the Base Image** | First, upload and publish the base image on which you want to superimpose the text. You can use any image you like. For example, here's a sample base image:<br>[https://s7g10.scene7.com/is/image/genaibeta/FurnitureSofa](https://s7g10.scene7.com/is/image/genaibeta/FurnitureSofa)<br> |
-| **Apply Dynamic Media Text Operators** | Using Dynamic Media, you can apply text operators to overlay dynamic text directly onto the image. The following sample URL demonstrates this ability:<br>[https://s7g10.scene7.com/is/image/genaibeta/FurnitureSofa?layer=1&posN=-0.3,-0.455&text={\rtf1\ansi{\fonttbl{\f0+Arial;}}{\colortbl+\red255\green255\blue255;}\copyfit1000\vertalc\qc{\cf0\fs42+New+Collection}}&size=370,70&textAttr=130&bgcolor=FF3333&wid=600&hei=600](https://s7g10.scene7.com/is/image/genaibeta/FurnitureSofa?layer=1&posN=-0.3,-0.455&text={\rtf1\ansi{\fonttbl{\f0+Arial;}}{\colortbl+\red255\green255\blue255;}\copyfit1000\vertalc\qc{\cf0\fs42+New+Collection}}&size=370,70&textAttr=130&bgcolor=FF3333&wid=600&hei=600) |
+| **Upload and publish the base image** | First, upload and publish the base image on which you want to superimpose the text. You can use any image you like. For example, here's a sample base image:<br>[https://s7g10.scene7.com/is/image/genaibeta/FurnitureSofa](https://s7g10.scene7.com/is/image/genaibeta/FurnitureSofa)<br> |
+| **Apply Dynamic Media text operators** | Using Dynamic Media, you can apply text operators to overlay dynamic text directly onto the image. The following sample URL demonstrates this ability:<br>[https://s7g10.scene7.com/is/image/genaibeta/FurnitureSofa?layer=1&posN=-0.3,-0.455&text={\rtf1\ansi{\fonttbl{\f0+Arial;}}{\colortbl+\red255\green255\blue255;}\copyfit1000\vertalc\qc{\cf0\fs42+New+Collection}}&size=370,70&textAttr=130&bgcolor=FF3333&wid=600&hei=600](https://s7g10.scene7.com/is/image/genaibeta/FurnitureSofa?layer=1&posN=-0.3,-0.455&text={\rtf1\ansi{\fonttbl{\f0+Arial;}}{\colortbl+\red255\green255\blue255;}\copyfit1000\vertalc\qc{\cf0\fs42+New+Collection}}&size=370,70&textAttr=130&bgcolor=FF3333&wid=600&hei=600) |
 
-#### Resizing and Cropping for Various Use Cases
+#### Resizing and cropping for various use cases
 
-##### Image Resizing Basics
+##### Image resizing basics
 
 Image resizing involves altering an image's dimensions, resolution, and file size. Here are some key points to consider:
 
-* **Pixel Composition:**
+* **Pixel composition:**
 Digital images consist of tiny dots called pixels. When an image is created, it has a specific number of pixels. Resizing involves adding or subtracting pixels to change the image's dimensions, resolution, and file size.
-* **Aspect Ratio:**
+* **Aspect ratio:**
 Maintaining the aspect ratio (the relationship between width and height) is crucial to prevent distortion. Whether you're making an image larger (upscaling) or smaller (downscaling), preserving the aspect ratio ensures visual consistency.
-* **Quality Considerations:**
+* **Quality considerations:**
 Resizing can impact image quality. Avoid drastic upscaling, as it may lead to pixelation. Instead, consider reproducing the image at a larger size and resolution. For smaller images, use the appropriate tools to maintain resolution.
 
-##### Cropping versus Resizing
+##### Cropping versus resizing
 
-Resizing and cropping are techniques in Dynamic Media that let you transform images to suit various use cases, whether it's creating thumbnails, banners, or product display images.
+Cropping and resizing are techniques in Dynamic Media that let you transform images to suit various use cases, whether it's creating thumbnails, product display images, or banners.
 
 * **Cropping:**
 Involves removing part of an image to alter its composition and framing. It does not change the overall dimensions but focuses on a specific area.
@@ -227,10 +229,10 @@ Let's explore a use case that involves the following living room image:
 * **Thumbnail (200 px x 200 px):**
         A smaller version suitable for quick loading or display.
         [https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?wid=200&hei=200&fit=crop](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?wid=200&hei=200&fit=crop)
-* **Thumbnail with Crop (200 px x 200 px):**
+* **Thumbnail with crop (200 px x 200 px):**
         Cropped to focus on the sofa area.
         [https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?wid=200&hei=200&cropN=.24,.24,.6,.72&fit=crop](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?wid=200&hei=200&cropN=.24,.24,.6,.72&fit=crop)
-* **Product Display Image (800 px x 600 px):**
+* **Product display image (800 px x 600 px):**
         Cropped and resized for showcasing the sofa.
         [https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?wid=800&hei=600&cropN=.24,.24,.6,.72&fit=crop](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?wid=800&hei=600&cropN=.24,.24,.6,.72&fit=crop)
 * **Banner (1720 px x 820 px):**
@@ -238,25 +240,25 @@ Let's explore a use case that involves the following living room image:
         [https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?wid=1720&hei=820&cropN=0,.1,1,1&fit=crop](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?wid=1720&hei=820&cropN=0,.1,1,1&fit=crop)
 
 Feel free to explore these variations for your specific needs.
-Want to learn more about the commands available within a URL? Go to [Command Reference](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference).
+Want to learn more about the commands available within a URL? Go to [Command reference](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference).
 
 ### Publish a video for my website
 
 **Business case:** *Quickly publish a video for a marketing site.*
 
-* **Select a Video Profile:** 
+* **Select a video profile:** 
   First, in Dynamic Media, you should select a suitable video profile. You can opt for the *Adaptive Video Encoding* profile available in AEM Assets under Video Profiles. These pre-defined encoding settings ensure that your video is optimized for playback across various devices and bandwidth conditions. Alternatively, you can create your own Adaptive Video profile.
-* **Assign the Profile:**
+* **Assign the profile:**
   Assign the chosen video profile to the folders where your video is going to be uploaded. This step ensures that the correct encoding settings are applied during the upload process.
-* **Upload the Original Video:**
+* **Upload the original video:**
   Upload the original video file. Make sure it's a high-resolution video with good quality. The better the source video, the better the final result.
-* **Preview and Publish:**
+* **Preview and publish:**
   Preview the video so you can ensure that everything looks as expected. Once satisfied, go ahead and publish it. This step makes the video accessible to your audience.
-* **Link or Embed:**
+* **Link or embed:**
   After publishing, you have two options.
-    * **Link Directly:**
+    * **Link directly:**
     Use the provided URL to link directly to the video. Hyperlink it appropriately on your marketing site.
-    * **Embed the Video:**
+    * **Embed the video:**
     Copy the embed code provided and paste it into the HTML of your web page where you want the video to appear. Doing so allows the video to play directly on your site.
 
 Want to learn more? Go to [Video](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video). 
@@ -267,7 +269,7 @@ Want to learn more? Go to [Video](https://experienceleague.adobe.com/en/docs/exp
 
 To ensure the best quality and engagement for your videos, consider implementing a combination of the following best practice strategies:
 
-* **Use the Built-in HTML5 Video Viewer:**
+* **Use the built-in HTML5 Video Viewer:**
         The Dynamic Media HTML5 Video Viewer Presets are robust video players. Use them to avoid common issues associated with HTML5 video playback and mobile devices.
         These presets address challenges like adaptive bitrate streaming delivery and limited desktop browser reach.
         Want to learn more? Go to [Best practice: Using the HTML 5 video viewer](/help/assets/dynamic-media/video.md#best-practice-using-the-html-video-viewer).
@@ -280,7 +282,7 @@ To ensure the best quality and engagement for your videos, consider implementing
         Apply video encoding profiles that maintain the original video quality without excessive downscaling during encoding.
         Want to learn more? Go to [Best practices for encoding videos](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
-* **Adopt Adaptive Streaming Instead of Progressive Streaming:**
+* **Adopt adaptive streaming instead of progressive streaming:**
         Adaptive streaming adjusts video quality based on the viewer's Internet connection speed and device capabilities.
         It uses protocols like HLS (HTTP Live Streaming) or DASH (`Dynamic Adaptive Streaming over HTTP`) to ensure optimal playback quality.
         Unlike progressive streaming, which delivers videos linearly, adaptive streaming minimizes buffering and offers a seamless viewing experience.
@@ -296,13 +298,13 @@ To ensure the best quality and engagement for your videos, consider implementing
 
 Internationalizing videos for multilingual consumption is essential for reaching a global audience. Dynamic Media provides features that can help you achieve this goal.
 
-* **Upload Your Videos:**
+* **Upload your videos:**
      * First, create a video encoding profile. You can either use the predefined Adaptive Video Encoding profile that comes with Dynamic Media or create your own custom profile.
      * Associate the video processing profile with one or more folders where you upload your primary source videos.
      * Upload your primary source videos to these folders. Dynamic Media encodes them based on the assigned video processing profile.
      * Dynamic Media primarily supports short-form videos (up to 30 minutes) with a minimum resolution greater than 25 &times; 25. Video files up to 15 GB each can be uploaded1.
 
-* **Manage Your Videos:**
+* **Manage your videos:**
      * Organize, browse, and search video assets within AEM.
      * Preview and publish video assets.
      * View the source video and its encoded renditions along with associated thumbnails.
@@ -341,5 +343,5 @@ Adobe recommends that you use Smart Imaging's capabilities rather than manually 
 
 By relying on Smart Imaging, you can ensure that your images are delivered in the most efficient manner possible, tailored to each user's browsing environment. This approach simplifies the process and can lead to improved performance in terms of image loading times and overall user experience.
 
-Want to learn more? Go to [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md)
+Want to learn more? Go to [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md).
 
