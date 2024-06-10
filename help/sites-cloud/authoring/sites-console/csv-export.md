@@ -2,6 +2,9 @@
 title: Export to CSV
 description: Export information about your pages to a CSV file on your local system
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Export to CSV {#export-to-csv}
 

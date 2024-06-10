@@ -2,6 +2,9 @@
 title: Exporting Content Fragments to Adobe Target
 description: Learn how to export your Content Fragments to Adobe Target, to test and personalize experiences.
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
+solution: Experience Manager Sites
+feature: Integration
+role: Admin
 ---
 # Exporting Content Fragments to Adobe Target {#exporting-content-fragments-to-adobe-target}
 

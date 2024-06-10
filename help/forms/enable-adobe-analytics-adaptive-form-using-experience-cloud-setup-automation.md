@@ -1,6 +1,6 @@
 ---
-title: How to enable Adobe Analytics for an Adaptive Form?
-description: Experience Cloud Setup Automation helps connect Adobe Analytics to an Adaptive Form to track insights about visitor interactions and engagement.
+title: How to enable Adobe Analytics for a fast track analytics of an Adaptive Form?
+description: Experience Cloud Setup Automation helps connect Adobe Analytics to an Adaptive Form for a fast track analytics and insights about visitor interactions and engagement.
 keywords: Enable Adobe Analytics for an Adaptive Form using Experience Cloud Setup Automation, Enable Adobe Analytics in Forms, Adobe Analytics in Adaptive Forms, Forms analytics integration, Forms and Adobe Analytics
 feature: Adaptive Forms
 role: Admin, User
@@ -13,7 +13,7 @@ exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
 | AEM as a Cloud Service     | This article   |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html)                  |
 
-Experience Cloud Setup Automation helps to connect Adobe Analytics to Adaptive Forms which aids in tracking and analyzing user interaction with your forms and offering insights into visitor interactions and engagement. Experience Cloud Setup Automation also helps monitoring form performance which involves assessing metrics like completion times and drop-off points. This analysis helps optimize forms for better user experience while distinguishing user behavior based on login status, for example, anonymous users, to identify general trends and patterns.
+Experience Cloud Setup Automation helps to connect Adobe Analytics to Adaptive Forms which aids in fast track analytics of user interaction with your forms and offering insights into visitor interactions and engagement. Experience Cloud Setup Automation also helps monitoring form performance which involves assessing metrics like completion times and drop-off points. This analysis helps optimize forms for better user experience while distinguishing user behavior based on login status, for example, anonymous users, to identify general trends and patterns.
 
 ## Advantages of integrating Adobe Analytics with Adaptive Forms {#advantages-of-integrating-adobe-analytics-with-aem-forms}
 
@@ -23,7 +23,7 @@ Experience Cloud Setup Automation helps to connect Adobe Analytics to Adaptive F
 
 ## Scope of Adaptive Forms usage metrics {#scope-of-adaptive-forms-usage-metrics}
 
-Adobe Analytics offers a comprehensive array of Adaptive Forms performance metrics designed to provide valuable insights into form usage. These metrics are:
+Adobe Analytics offers a comprehensive array of Adaptive Forms performance metrics designed to provide valuable insights into form usage and offers a fast track analytics. These metrics are:
 
 * **Form renditions, Form submissions, Validation errors, and Unique visitors**, allowing you to assess the usage and effectiveness of your forms.
 
@@ -56,7 +56,7 @@ Experience Cloud Setup Automation requires an **Adobe Analytics license**, **Dat
 
 If you have an active license for **Adobe Analytics** and **Experience Manager Forms**, and you have integration with **Data Collection (Formerly Adobe Launch)**, you should verify their availability within your developer console.
 
-To verify the aforementioned are available for your Forms as a Cloud Service environment, visit the [developer console](https://developer.adobe.com/console/projects), navigate to project and search your project with the program id - environment id, for instance, for the environment with URL `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`, program id - environment id is `p45913-e175111`. Ensure that the Experience Cloud Setup Automation, Adobe Analytics, and Experience Platform Launch API are listed. If these are listed, you can enable Adobe Analytics for your Adaptive Forms.
+To verify the aforementioned are available for your Forms as a Cloud Service environment, visit the [developer console](https://developer.adobe.com/console/projects), navigate to project and search your project with the program id - environment id, for instance, for the environment with URL `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`, program id - environment id is `p45913-e175111`. Ensure that the Experience Cloud Setup Automation, Adobe Analytics, and Experience Platform Launch API are listed. If these are listed, you can enable Adobe Analytics for a fast track analytics of your Adaptive Forms.
 
 ![Prerequiste Forms Analytics Integration](assets/analytics-aem.png){width="100%"}
 
@@ -70,7 +70,7 @@ To verify the aforementioned are available for your Forms as a Cloud Service env
 
 ## Configure Adobe Analytics {#configure-adobe-analytics}
 
-Perform the below listed steps to enable and configure Adobe Analytics for your Adaptive Forms:
+Perform the below listed steps to enable and configure Adobe Analytics for a fast track analytics of your Adaptive Forms:
 
 * [Enable Adobe Analytics for Adaptive Forms based on Foundation Components](#integrate-adobe-analytics-with-aem-forms-for-foundation-component)
 * [Enable Adobe Analytics for Adaptive Forms based on Core Components](#integrate-adobe-analytics-with-aem-forms-for-core-components)
@@ -133,7 +133,7 @@ To connect an Adaptive Form with Adobe Analytics using the manual method, visit 
 
 ## Enable Analytics to Adaptive Forms in Sites {#Connect-Analytics-to-Adaptive-Forms-in-Sites}
 
-Configuring analytics for your Adaptive Form in AEM Sites help you to track user interactions and form submissions on your Form in Sites page. By seamlessly integrating analytics in your Sites Forms, you gain valuable insights into user behavior, conversion rates, and areas for improvement in your form.
+Configuring fast track analytics for your Adaptive Form in AEM Sites help you to track user interactions and form submissions on your Form in Sites page. By seamlessly integrating analytics in your Sites Forms, you gain valuable insights into user behavior, conversion rates, and areas for improvement in your form.
 
 ### Prerequisites {#Prerequisites-to-connect-forms-analytics-to-sites}
 
@@ -141,7 +141,7 @@ To connect and enable analytics in Adaptive Forms for AEM Sites, you must ensure
 
 ### Connect Adaptive Forms in Sites to enable Analytics {#Connect-analytics-to-adaptive-forms}
 
-To connect Adaptive Form in an AEM Sites page to enable Analytics, include the `customfooterlibs` client library to the AEM Sites page using the AEM Archetype/Git Repository and deployment pipeline.
+To connect Adaptive Form in an AEM Sites page to enable Analytics for a fast track analytics, include the `customfooterlibs` client library to the AEM Sites page using the AEM Archetype/Git Repository and deployment pipeline.
 
 1. Open your [AEM Forms Archetype or Cloned Git Repository](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) project in a text editor. For example, Visual Studio Code.
 

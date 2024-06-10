@@ -4,6 +4,7 @@ description: Learn how to prepare content for translation when developing multi-
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
+solution: Experience Manager Sites
 ---
 # Preparing Content for Translation {#preparing-content-for-translation}
 

@@ -2,6 +2,8 @@
 title: Implementation Phase in Cloud Acceleration Manager
 description: This page provides an overview on the implementation phase in Cloud Acceleration Manager.
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
+feature: Migration
+role: Admin
 ---
 # Implementation Phase in Cloud Acceleration Manager {#implementation-phase-cam}
 

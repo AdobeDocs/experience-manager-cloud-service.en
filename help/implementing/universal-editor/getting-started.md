@@ -2,6 +2,8 @@
 title: Getting Started with the Universal Editor in AEM
 description: Learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
+feature: Developing
+role: Admin, Architect, Developer
 ---
 
 # Getting Started with the Universal Editor in AEM {#getting-started}
@@ -18,22 +20,11 @@ Although the Universal Editor can edit content from any source, this document wi
 
 There are several steps to onboarding your AEM app and instrumenting it to use the Universal Editor.
 
-1. [Request access to the Universal Editor.](#request-access)
 1. [Include the Universal Editor core library.](#core-library)
 1. [Add the necessary OSGi configuration.](#osgi-configurations)
 1. [Instrument the page.](#instrument-page)
 
 This document will guide you through these steps.
-
-## Request Access to the Universal Editor {#request-access}
-
-You first need to request access to the Universal Editor. Open [`https://experience.adobe.com/#/aem/editor``](https://experience.adobe.com/#/aem/editor), sign in, and validate if you have access to the Universal Editor.
-
-In case you do not have access, it can be requested via a form linked on the same page.
-
-![Request access to the Universal Editor](assets/request-access.png)
-
-Click **Request access** and fill out the form as directed to request access. An Adobe representative will review your request and reach out to discuss your use case.
 
 ## Include the Universal Editor Core Library {#core-library}
 

@@ -348,6 +348,7 @@ If you are not assigned an administrator role, here is a list of permissions you
 * [Manage metadata](manage-metadata.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

@@ -85,6 +85,11 @@ To download latest version of Adobe Experience Manager as a Cloud Service SDK, E
 1. Navigate to the **[!UICONTROL AEM as a Cloud Service]** tab.
 1. Sort by published date in descending order.
 1. Click the latest Adobe Experience Manager as a Cloud Service SDK, Experience Manager Forms feature archive (AEM Forms add-on), forms reference assets, or Forms Designer.
+
+    >[!NOTE]
+    >
+    > It is recommended to download the latest version of Experience Manager Forms feature archive (AEM Forms add-on), forms reference assets, or Forms Designer for a seamless compatibility with Adobe Experience Manager as a Cloud Service SDK.
+
 1. Review and accept the EULA. Select the **[!UICONTROL Download]** button.
 
 ## Set up development tools for AEM Projects {#setup-development-tools-for-AEM-projects}
@@ -130,6 +135,13 @@ Adobe Experience Manager Forms as a Cloud Service feature archive provides tools
     >[!NOTE]
     >
     > It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
+
+<!--**Q**: I've set up a Aem as a Cloud Service environment and added the Forms Add-On for a project. After the .far file addition, the bundles are not in the active state and are in installed state only due to the missing dependencies. How to make the bundles in the active state?
+**A**: To resolve the issue:
+1. Start the AEM and wait for it to start completely (all bundles up)
+1. Stop aem (ctrl + c). Place the forms far in the install folder.
+1. Restart AEM.-->
+
 
 ### Configure users and permissions {#configure-users-and-permissions}
 
