@@ -1,8 +1,10 @@
 ---
 title: Log Forwarding for AEM as a Cloud Service
 description: Learn about forwarding logs to Splunk and other logging vendors in AEM as a Cloud Service
+exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
+feature: Developing
+role: Admin, Architect, Developer
 ---
-
 # Log Forwarding {#log-forwarding}
 
 >[!NOTE]

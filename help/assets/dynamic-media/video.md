@@ -2,7 +2,7 @@
 title: Video in Dynamic Media
 description: Learn how to work with video in Dynamic Media. Review best practices for encoding videos, publishing videos to YouTube, viewing video reports, and adding closed captioning or chapter markers to videos.
 contentOwner: Rick Brough
-feature: Video Profiles
+feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 ---

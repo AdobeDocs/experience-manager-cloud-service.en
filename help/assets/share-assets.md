@@ -1,7 +1,6 @@
 ---
 title: Distribute and share assets, folders, and collections
 description: Distribute your digital assets using methods like share as a link, downloading, and via [!DNL Brand Portal], [!DNL desktop app], and [!DNL Asset Link].
-contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
@@ -80,7 +79,7 @@ To share assets as a public URL:
 1. The **[!UICONTROL Link Sharing]** dialog appears which contains an auto-generated asset link in the **[!UICONTROL Share Link]** field.
 1. Set the expiration date of the shared link as required.
 1. Under **[!UICONTROL Link Settings]**, check or uncheck `Include Originals` or `Include Renditions` to include or exclude either of the two. Choosing at least option is mandatory. 
-1. The names of selected Assets appears in the right column of the [!DNL Share Link] dialog box.
+1. The names of selected Assets appear in the right column of the [!DNL Share Link] dialog box.
 1. Copy the asset link and share it with the users. 
 
 ### Share asset link through email notification {#share-assets-link-through-email}
@@ -95,15 +94,51 @@ To share assets through email:
    * In the **[!UICONTROL Subject]** box, type a subject to specify the purpose of the assets that are shared.
    * In the **[!UICONTROL Message]** box, type a message if necessary.
    * In the **[!UICONTROL Expiration]** field, use the date picker to specify an expiration date and time for the link.
-   * Enable the **[!UICONTROL Allow download of original file]** check box to allow the recipients to download the original rendition. 
+   * Enable the **[!UICONTROL Allow download of the original file]** check box to allow the recipients to download the original rendition. 
 
 1. Click **[!UICONTROL Share]**. A message confirms that the link is shared with the users. The users receive an email containing the shared link. 
 
    ![Link Sharing email](assets/link-sharing-email-notification.png)
 
-### Download assets using the asset link
+### Customize email template {#customize-email-template}
 
-Any user having access to the shared asset link can download the assets bundled in a zip folder. The download process is same, whether a user is accessing the copied asset link, or using the asset link shared through the email. 
+A well-designed template conveys professionalism and competence, enhancing the credibility of your message and your organization. The [!DNL Adobe Experience Manager] allows you to customize the email template, which is sent to the recipients who receive the email containing the shared link. Additionally, customized email templates allow personalizing your email content by addressing your recipients with name and referencing specific details relevant to them. This personal touch can make the recipient feel valued and increase engagement. Not just that, a customized template ensures that your emails are consistent with your brand identity, including logos, colors, and fonts. Consistency reinforces brand recognition and trust among recipients.
+
+#### Format of a customized email template {#format-of-custom-email-template}
+
+The email template can be customized using plain text or HTML. The default editable template link can be found at `/libs/settings/dam/adhocassetshare/en.txt`. You can override the template by creating the file `/apps/settings/dam/adhocassetshare/en.txt`. You can modify the email template as many times as required.
+
+| Placeholders | Description |
+|---|-----|
+| `${emailSubject}` | Subject of an email |
+| `${emailInitiator}` | Email ID of the user who created the email |
+| `${emailMessage}` | Email body |
+| `${pagePath}` | URL of the shared link |
+| `${linkExpiry}` | Shared link expiry date |
+<!--| `${host.prefix}` | Origin of the [!DNL Experience Manager] instance, for example `http://www.adobe.com"` |--> 
+
+#### Customized email template example {#custom-email-template-example}
+
+```
+subject: ${emailSubject}
+
+<!DOCTYPE html>
+<html><body>
+<p><strong>${emailInitiator}</strong> invited you to review assets.</p>
+<p>${emailMessage}</p>
+<p>The shared link will be available until ${linkExpiry}.
+<p>
+    <a href="${pagePath}" target="_blank"><strong>Open</strong></a>
+</p>
+
+</body></html>
+```
+
+<!--Sent from instance: ${host.prefix}-->
+
+### Download assets using the asset link {#download-assets-using-asset-link}
+
+Any user having access to the shared asset link can download the assets bundled in a zip folder. The download process is the same, whether a user is accessing the copied asset link, or using the asset link shared through the email. 
 
 * Click the asset link or paste the URL in your browser. The [!UICONTROL Link Share] interface opens wherein you can switch to the [!UICONTROL Card View] or [!UICONTROL List View]. 
 
@@ -205,7 +240,7 @@ Users can download the required assets and share these outside of [!DNL Experien
 
 Marketers and line-of-business users can easily share approved assets with their creative professionals using,
 
-* **Experience Manager desktop app**: The app works on Windows and Mac. See [desktop app overview](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html). To know how any authorized desktop user can easily access the shared assets, see [browse, search, and preview assets](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). The desktop users can create assets and share it back with their counterparts who are Experience Manager users, for example, by uploading new images. See [upload assets using desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* **Experience Manager desktop app**: The app works on Windows and Mac. See [desktop app overview](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html). To know how any authorized desktop user can easily access the shared assets, see [browse, search, and preview assets](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). The desktop users can create assets and share it back with their counterparts who are Experience Manager users, for example, by uploading new images. See [upload assets using a desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
 * **Adobe Asset Link**: The creative professionals can search and use assets directly from within [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop].
 
@@ -217,7 +252,7 @@ The different options to share the assets require specific configuration and hav
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
-To generate the URL for assets that you want to share with users, use the Link Sharing dialog. Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. Sharing assets through a link is a convenient way of making resources available to external parties without them having to first log in to [!DNL Assets].
+To generate the URL for assets that you want to share with users, use the Link Sharing dialog. Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. Sharing assets through a link is a convenient way of making resources available to external parties without them having to first login to [!DNL Assets].
 
    >[!NOTE]
    >
@@ -260,7 +295,7 @@ From within the [!DNL Assets] user interface in a browser, you can explore the a
 
 ### Configurations to use [!DNL Adobe Asset Link] {#configure-asset-link}
 
-Adobe Asset Link streamlines collaboration between creatives and marketers in the content creation process. It connects [!DNL Adobe Experience Manager Assets] with [!DNL Creative Cloud] desktop apps [!DNL Adobe InDesign], [!DNL Adobe Photoshop], and [!DNL Adobe Illustrator]. The [!DNL Adobe Asset Link] panel allows creatives to access and modify content stored in [!DNL Assets] without leaving the creative apps they are most familiar with.
+Adobe Asset Link streamlines collaboration between creatives and marketers in the content creation process. It connects [!DNL Adobe Experience Manager Assets] with [!DNL Creative Cloud] desktop apps, [!DNL Adobe InDesign], [!DNL Adobe Photoshop], and [!DNL Adobe Illustrator]. The [!DNL Adobe Asset Link] panel allows creatives to access and modify content stored in [!DNL Assets] without leaving the creative apps they are most familiar with.
 
 See [how to configure [!DNL Assets] to use it with [!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
 
@@ -294,3 +329,4 @@ See [how to configure [!DNL Assets] to use it with [!DNL Adobe Asset Link]](http
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
