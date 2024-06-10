@@ -1,8 +1,8 @@
 ---
 title: Quick Publish to AEM and Dynamic Media
-description: Quick Publish is a feature in the new UI or assets view. This feature gives flexibility to users to either quick publish to AEM and Dynamic media simultaneously or individually . This means that after selecting assets and folders users can choose to publish to Dynamic Media or Publish to AEM. Quick publish feature equips the new UI to publish assets and folders to Dynamic Media and AEM.
+description: Quick Publish in Assets view enables you to publish assets to AEM and Dynamic media simultaneously or separately. You can select assets and folders and choose to publish to Dynamic Media or AEM.
+exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 ---
-
 # Publish Assets to AEM and Dynamic Media{#Publish-Assets-to-AEM-and-Dynamic-Media}
 
 Experience Manager Assets enables you to quickly publish assets to Experience Manager and Dynamic Media using the Assets view. This ensures that you manage your assets and then publish them using [Assets view without switching to the Admin view](/help/assets/overview.md##persona-based-experiences). 
@@ -34,7 +34,7 @@ You can publish assets to AEM and Dynamic Media while uploading assets to a fold
 To publish assets during upload to a folder with Dynamic Media Publish Mode set to **Upon Activation**: 
 
 1. Click **Add Assets** > **Browse** > **Browse Files** to navigate to the appropriate folder to upload assets. The **Publish Options** secton displays the **DM Publish Mode** as **Upon Activation**. 
-![Upload image upon activation](/help/assets/assets/upload-upon-activation.png)
+![Upload image upon activation](/help/assets/assets/upload-uactivation.svg)
 2. Select **Publish to AEM and Dynamic Media** and click **Upload**. The assets are published to AEM and Dynamic Media at the same time. To see the updated publish status for these assets, see [Check Publish status](#check-publish-status). 
 
 ### Dynamic Media Publish Mode set to Immediate {#dynamic-media-publish-mode-set-to-immediate}
@@ -42,8 +42,10 @@ To publish assets during upload to a folder with Dynamic Media Publish Mode set 
  To publish assets during upload to a folder with Dynamic Media Publish Mode set to **Immediate**: 
 
  1. Click **Add Assets** > **Browse** > **Browse Files** to navigate to the appropriate folder to upload assets. The Publish Optons secton displays the **DM Publish Mode** as **Immediate**. 
- ![file upload image - immediate mode](/help/assets/assets/upload-immediate-mode.png)
- As the Dynamic Media Publish Mode is **Immediate**, the uploaded assets are automatically published to Dynamic Media when you click **Upload**. 
+![file upload image - immediate mode](/help/assets/assets/resized-image-pdf-svg-new.svg)
+
+
+    As the Dynamic Media Publish Mode is **Immediate**, the uploaded assets are automatically published to Dynamic Media when you click **Upload**. 
 
  2. Select Publish to **AEM to publish** the uploaded assets to AEM and click Upload. 
  
@@ -56,7 +58,7 @@ To publish assets during upload to a folder with Dynamic Media Publish Mode set 
  To publish assets during upload to a folder with Dynamic Media Publish Mode set to **Selective Publish**:
 
   1. Click **Add Assets** > **Browse** > **Browse Files** to navigate to the appropriate folder to upload assets. The Publish Options section displays the **DM Publish Mode** as **Selective Publish**. 
-  ![upload image-selective piblish mode](/help/assets/assets/upload-image-selective-publish-mode.png)
+  ![upload image-selective piblish mode](/help/assets/assets/upload-selective.svg)
 
   2. Select **Publish to AEM**, **Publish to Dynamic Media**, or both as per your requirements and click **Upload**. 
  
@@ -70,10 +72,10 @@ To publish assets during upload to a folder with Dynamic Media Publish Mode set 
 
  1. Click **Assets** in the **Assets Management** section available in the left pane. 
  2. Select the asset(s) or folder(s) that you need to publish and click **Publish**.
- 3. Select **AEM** and click **Publish** to publish assets to AEM and Dynamic Media. 
-![assets browse](/help/assets/assets/assets-browse-1.png)
+ 3. Select **AEM** and click **Publish** to publish assets to AEM and Dynamic Media.
+![assets browse](/help/assets/assets/browse-uactivation-immediate.svg) 
 You cannot publish a folder that has the Dynamic Media Publish Mode set to **Selective Publishing.** All other selected folders or assets get published to AEM and Dynamic Media after selecting AEM. 
-![assets browse](/help/assets/assets/assets-browse-2.png)
+![assets browse](/help/assets/assets/browse-selective123.svg)
 
 ## Publish assets using search results page {#publish-assets-using-search-results-page}
 
@@ -82,7 +84,7 @@ You cannot publish a folder that has the Dynamic Media Publish Mode set to **Sel
  1. Specify the criteria in the Search bar and click the Search icon to view the results.
  2. Select the assets that you need to publish and click **Publish.**
  3. Select AEM, Dynamic Media, or both as per your requirements and click **Publish.** 
-![search image](/help/assets/assets/search-image1.png)
+![search image](/help/assets/assets/search-mode.svg)
 The option to publish to Dynamic Media on the search results page depends on the Dynamic Media Publish Mode set on the folder where the asset is available in the repository.
 
     >[!NOTE]
@@ -118,4 +120,5 @@ You can also check an asset publish status by selecting an asset and clicking **
  * An ability to copy or paste Dynamic Media URL at an asset level (if the assets are published to Dynamic Media). 
  * Ability to publish references (assets, tags, and so on) while publishing to AEM. 
  * Ability to overwrite Dynamic Media sync status at folder-level. 
- * Ability to overwrite Dynamic Media Publish mode at folder-level.
+ * Ability to overwrite Dynamic Media Publish mode at folder-level
+ * Manage Publication is not yet supported..

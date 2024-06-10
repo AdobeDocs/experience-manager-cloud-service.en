@@ -2,6 +2,8 @@
 title: What is Different and What is New - Adobe Experience Manager as a Cloud Service
 description: What is Different and What is New - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
+feature: Release Information
+role: Admin
 ---
 # What is New and What is Different {#what-is-new-and-what-is-different}
 
@@ -200,7 +202,7 @@ To support rapid iterations and development, it is also possible to develop AEM 
 
 >[!NOTE]
 >
->For more details, start with [content restoration](/help/operations/backup.md), [Indexing](/help/operations/indexing.md), and [other Maintenance Tasks](/help/operations/maintenance.md).
+>For more details, start with [content restoration](/help/operations/restore.md), [Indexing](/help/operations/indexing.md), and [other Maintenance Tasks](/help/operations/maintenance.md).
 
 With AEM as a Cloud Service, such operations are automated so that any interruption of service is no longer necessary.
 

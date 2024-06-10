@@ -2,6 +2,8 @@
 title: Page Templates
 description: Page Templates are used when creating a page which is used as the base for the new page
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Page Templates {#page-templates}
 

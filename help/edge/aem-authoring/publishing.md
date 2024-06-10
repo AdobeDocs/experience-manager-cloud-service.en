@@ -3,6 +3,7 @@ title: Publishing Content for Edge Delivery Services
 description: Learn how content publishing works with Edge Delivery Services and how to publish AEM content with Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
+role: User
 ---
 
 # Publishing Content for Edge Delivery Services {#publishing-edge}
@@ -20,7 +21,7 @@ The flow of information when publishing is as follows. Once the author starts pu
 
 >[!NOTE]
 >
->Up to a maximum of 5000 paths published from the authoring UI or by workflows are permitted per day. Integrations that create bulk-publication work loads are not supported.
+>Up to a maximum of 5000 paths published from the authoring UI or by workflows are permitted per day. Integrations that create bulk-publication work loads are not supported. If you project requires higher capacity, please propose it for the [VIP Program](https://www.aem.live/vip/intake).
 
 ![The flow of information when publishing from AEM to Edge Delivery Services](assets/publishing-flow.png)
 
