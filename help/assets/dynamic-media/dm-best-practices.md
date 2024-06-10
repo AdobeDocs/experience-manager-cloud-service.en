@@ -135,7 +135,6 @@ Use descriptive file names that reflect the image content. For example,
   Doing so helps search engines understand the image context and improves SEO. Google prefers hyphens over underscores or spaces in a file name. Also, avoid concatenating words in a file name.
 * **Custom domain:** 
 Implement a custom domain that includes your company or brand name to reinforce brand recognition and trust. For example,
-
   * use `http://images.mycompany.com/is/image/companyname/`
   * *avoid* `https://s7d1.scene7.com/is/image/folder/AdobeStock_28563982`
 * **SEO-friendly folder structure:**
