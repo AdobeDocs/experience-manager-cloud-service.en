@@ -3,6 +3,7 @@ title: Authoring Content for Edge Delivery Services
 description: Learn how content authoring works with Edge Delivery Services and how to author AEM content with Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
+role: User
 ---
 
 # Authoring Content for Edge Delivery Services {#authoring-edge}

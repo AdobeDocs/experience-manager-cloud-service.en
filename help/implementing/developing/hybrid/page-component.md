@@ -2,6 +2,8 @@
 title: SPA Page Component
 description: In an SPA the page component does not provide the HTML elements of its child components, but instead delegates this to the SPA framework. This document explains how this makes the page component of an SPA unique.
 exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # SPA Page Component {#spa-page-component}
 

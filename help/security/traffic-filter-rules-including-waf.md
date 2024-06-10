@@ -2,6 +2,8 @@
 title: Traffic Filter Rules including WAF Rules
 description: Configuring Traffic Filter Rules including Web Application Firewall (WAF) Rules.
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
+feature: Security
+role: Admin
 ---
 
 # Traffic Filter Rules Including WAF Rules {#traffic-filter-rules-including-waf-rules}
