@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
 content-type: reference
-feature: Video,Renditions, Configuration, Asset Management, Best Practices
+feature: Video, Renditions, Configuration, Asset Management, Best Practices
 role: User, Admin
 mini-toc-levels: 4
 hide: no
@@ -29,16 +29,16 @@ In the accompanying guide, you'll find a comprehensive list of best practices fo
 
 Stage Business Problem Best Practice Recommendation: This section will outline specific business challenges and provide targeted best practices and recommendations to address them effectively. -->
 
-Organizations face an explosion of channels and devices for engaging with users. The customer journey spans physical stores, web, mobile, social media, emails, and commerce. To meet this demand, Dynamic Media on Adobe Experience Manager as a Cloud (AEM) offers a comprehensive solution. It optimizes asset delivery, handles personalization, and ensures consistent, performant, and brand-aligned experiences across channels and devices.
+Organizations face an explosion of channels and devices for engaging with users. The customer journey spans physical stores, web, mobile, social media, emails, and commerce. To meet this demand, Dynamic Media on Adobe Experience Manager (AEM) offers a comprehensive solution. It optimizes asset delivery, handles personalization, and ensures consistent, performant, and brand-aligned experiences across channels and devices.
 
 Some of the key tenets of Dynamic Media include the following:
 
-* **Single File Approach:** With Dynamic Media, you store one primary source file, and all size variations and visual effects are dynamically created and optimized at the time of delivery. This approach saves storage costs and eliminates workflow complexity.
-* **Truly Global:** Smart Imaging, applied during content delivery, significantly reduces image size and page weight without compromising visual quality. It's optimized for network bandwidth and device pixel ratios.
-* **AI Powered:** Smart Crop, an AI-driven feature, automates image and video point-of-interest cropping. It eliminates manual effort and scales efficiently for enterprise use.
-* **Easy Video:** Upload primary source videos into Dynamic Media and stream them adaptively across multiple languages with descriptive audio.
-* **Experience Viewer Library:** Customize and brand experience viewers for images and videos. These viewers seamlessly integrate into your digital experiences.
-* **Emerging Format Support:** Dynamic Media enables the delivery of 3D and panoramic experiences.
+* **Single file approach:** With Dynamic Media, you store one primary source file, and all size variations and visual effects are dynamically created and optimized at the time of delivery. This approach saves storage costs and eliminates workflow complexity.
+* **Truly global:** Smart Imaging, applied during content delivery, significantly reduces image size and page weight without compromising visual quality. It's optimized for network bandwidth and device pixel ratios.
+* **AI powered:** Smart Crop, an AI-driven feature, automates image and video point-of-interest cropping. It eliminates manual effort and scales efficiently for enterprise use.
+* **Easy video:** Upload primary source videos into Dynamic Media and stream them adaptively across multiple languages with descriptive audio.
+* **Experience viewer library:** Customize and brand experience viewers for images and videos. These viewers seamlessly integrate into your digital experiences.
+* **Emerging format support:** Dynamic Media enables the delivery of 3D and panoramic experiences.
 
 As you explore the [Dynamic Media Journey](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1), reviewing the consolidated list of best practices below can help you make the most of its capabilities. Adapt these Dynamic Media best practices to your specific context and project requirements so you can optimize your experiences across channels and devices. 
 
@@ -55,10 +55,10 @@ As you explore the [Dynamic Media Journey](https://experienceleague.adobe.com/en
 
 Streamline your management of large numbers of assets efficiently. Ensure that only the appropriate, authorized content reaches your end-users by using Dynamic Media's **Selective Sync** and **Selective Publish** features.
 
-* **Selective Sync:**
+* **Selective sync:**
 A proactive feature that lets you choose which assets to sync with Dynamic Media. For example, you might decide to sync only those folders containing assets that have received final approval. This workflow helps you maintain control over which assets are being prepared for delivery to your customers.
 
-* **Selective Publish:**
+* **Selective publish:**
 After syncing your assets, Selective Publish gives you control over which assets are visible to your customers. This ability means you can govern which approved assets are actually delivered through your channels, ensuring that your customers see only the best and most relevant content.
 
 These two best practices help you achieve better control, governance, and productivity over your rich-media content. 
