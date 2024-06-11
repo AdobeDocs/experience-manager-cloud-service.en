@@ -12,6 +12,7 @@ You can [access Generate Variations](#access-generate-variations) from:
 
 * [within Adobe Experience Manager (AEM) as a Cloud Service](#access-aemaacs)
 * [the Sidekick of AEM Edge Delivery Services](#access-aem-sidekick)
+* [within the Content Fragments Editor](/help/sites-cloud/administering/content-fragments/authoring.md#generate-variations-ai)
 
 >[!NOTE]
 >

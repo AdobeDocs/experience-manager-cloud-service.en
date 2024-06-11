@@ -2,6 +2,9 @@
 title: Use the Rich Text Editor in [!DNL Adobe Experience Manager] to author content.
 description: Use the [!DNL Experience Manager] Rich Text Editor to author content.
 exl-id: 15c175f8-11de-4475-87a9-920219a4c004
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Use the Rich Text Editor to author content {#use-rich-text-editor-to-author-content}
 

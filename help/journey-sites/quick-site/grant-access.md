@@ -2,6 +2,9 @@
 title: Grant Access to the Front-End Developer
 description: Onboard the front-end developers into Cloud Manager so they have access to your AEM site git repository and pipeline.
 exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
 ---
 # Grant Access to the Front-End Developer {#grant-fed-access}
 

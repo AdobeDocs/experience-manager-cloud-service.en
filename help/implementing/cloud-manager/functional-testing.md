@@ -2,6 +2,9 @@
 title: Functional Testing
 description: Learn about the three different types of functional testing built into the AEM as a Cloud Service deployment process to ensure quality and reliability of your code.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 
 # Introduction {#functional-testing-introduction}
@@ -39,9 +42,9 @@ The following diagram provides a detailed view of available quality gates and th
 
 |                               |      Unit Tests       |    Custom<br/> Functional Tests     |        Custom<br/> UI Tests         | Customer<br/> Validations | Manual<br/> Testing |
 |:------------------------------|:---------------------:|:-----------------------------------:|:-----------------------------------:|:-------------------------:|:-------------------:|
-| **Production Pipeline**       | Yes<br/>Blocking<br/> |  Yes<br/>Blocking<br/>60m Timeout   |  Yes<br/>Blocking<br/>60m Timeout   |            No             |         No          |
-| **Non-Production Pipeline**   | Yes<br/>Blocking<br/> | Opt-In<br/>Blocking<br/>60m Timeout | Opt-In<br/>Blocking<br/>60m Timeout |            No             |         No          |
-| **Adobe Internal Validation** | Yes<br/>Blocking<br/> |  Yes<br/>Blocking<br/>60m Timeout   |  Yes<br/>Blocking<br/>60m Timeout   |            No             |         No          |
+| **Production Pipeline**       | Yes<br/>Blocking<br/> |  Yes<br/>Blocking<br/>60m Timeout   |  Yes<br/>Blocking<br/>30m Timeout   |            No             |         No          |
+| **Non-Production Pipeline**   | Yes<br/>Blocking<br/> | Opt-In<br/>Blocking<br/>60m Timeout | Opt-In<br/>Blocking<br/>30m Timeout |            No             |         No          |
+| **Adobe Internal Validation** | Yes<br/>Blocking<br/> |  Yes<br/>Blocking<br/>60m Timeout   |  Yes<br/>Blocking<br/>30m Timeout   |            No             |         No          |
 | **Customer CI/CD**            |          Yes          |                 Yes                 |                 Yes                 |            Yes            |         Yes         |
 | **Customer Local Developer**  |          Yes          |                 Yes                 |                 Yes                 |            Yes            |         Yes         |
 
@@ -87,6 +90,8 @@ The tests are packaged in a Docker image - designed to be as volatile as possibl
 >[!NOTE]
 >
 >Custom UI tests are executed in the production and non-production (opt-in) pipelines which are used by your AEM application changes deployments and AEM product push updates and are therefore a key contribution to help ensure proper functioning of your application and increase release safety. The customer UI tests are also executed in internal pre-release validation pipelines for each customer, which helps provide early feedback.
+>
+>Non-Selenium containers should execute tests using an HTTP proxy based on the environment variables in the [UI Testing Section.](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
 
 In order to keep pipeline executions efficient, we recommend focusing on key features and main user interaction flows. Full UI test suites that do not fit in this quality gate are recommended to be executed as part of general customer validation pipelines during customer's development flow.
 

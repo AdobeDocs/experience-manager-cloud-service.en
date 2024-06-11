@@ -4,6 +4,7 @@ description: Get an overview of how to translate content for multilingual sites.
 feature: Language Copy
 role: Admin
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
+solution: Experience Manager Sites
 ---
 # Translating Content for Multilingual Sites {#translating-content-for-multilingual-sites}
 

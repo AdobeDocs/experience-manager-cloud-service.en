@@ -2,6 +2,9 @@
 title: Personalization and Content Targeting
 description: Learn how you can create personalized, targeted content with AEM
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 
 # Personalization and Content Targeting {#personalization-and-content-targeting}
