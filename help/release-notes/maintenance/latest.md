@@ -42,7 +42,7 @@ For more information about the new and enhanced features and issues fixed in Exp
 
 ### Known Issues {#known-issues-16544}
 
-None.
+* GRANITE-52573: Requests containing a double slash `//` are rejected with status code 400. This behaviour will be reverted in a subsequent maintenance release.
 
 ### Change Notice {#change-notice-16544}
 
