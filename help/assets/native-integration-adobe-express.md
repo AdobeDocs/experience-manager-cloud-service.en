@@ -37,7 +37,7 @@ Perform the following steps to start using AEM Assets in Adobe Express editor:
 
 ## Save Adobe Express projects in AEM Assets {#save-express-projects-in-assets}
 
-After incorporating appropriate modifications in the Express canvas, you can save it in the AEM Assets repository. 
+After incorporating appropriate modifications in the Express canvas, you can save it in the AEM Assets repository.. 
 
 1. Click **[!UICONTROL Share]** to open the **[!UICONTROL Share]** dialog.
 
