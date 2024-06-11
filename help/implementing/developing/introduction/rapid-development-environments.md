@@ -406,11 +406,6 @@ The above code sample illustrates the behavior if a bundle does not resolve. In 
 
 ### Deploying front-end code based on site themes and site templates {#deploying-themes-to-rde}
 
->[!NOTE]
->
-> This feature is not yet available. It will be rolled out sometime in June.
->
-
 RDEs support front-end code based on [site themes](/help/sites-cloud/administering/site-creation/site-themes.md) and [site templates](/help/sites-cloud/administering/site-creation/site-templates.md). With RDEs, this is done using a command line directive to deploy front-end packages, rather than the Cloud Manager [Front-End Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) used for other environment types.
 
 As usual, build your front-end package using npm: 
@@ -454,6 +449,10 @@ Logs:
 >The naming of the files in the front-end package must adhere to the following naming conventions:
 > * "dist" folder, for the npm build output package folder
 > * "package.json" file, for the npm dependencies package
+
+>[!TIP]
+>
+> If you created your RDE before April 2023 and experience the error "UNEXPECTED_API_ERROR" when trying the frontend feature for the first time, please try to delete your environment and create it again.
 
 ### Checking the Status of the RDE {#checking-rde-status}
 
