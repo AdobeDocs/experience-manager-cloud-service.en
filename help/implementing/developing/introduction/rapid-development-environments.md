@@ -2,6 +2,8 @@
 title: Rapid Development Environments
 description: Learn how to use Rapid Development Environments for rapid development iterations on a cloud environment.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Rapid Development Environments {#rapid-development-environments}
 
@@ -10,6 +12,9 @@ To deploy changes, current Cloud Development environments require the use of a p
 RDEs allow developers to swiftly deploy and review changes, minimizing the amount of time needed to test features that are proven to work on a local development environment.
 
 Once the changes have been tested in an RDE, they can be deployed to a regular Cloud Development environment through the Cloud Manager pipeline.
+
+>[!NOTE]
+> Get in touch with the RDE developers on our [Discord channel](https://discord.com/channels/1131492224371277874/1245304281184079872). Feel free to ask any questions or give feedback regarding RDE topics.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
@@ -136,6 +141,74 @@ After you have added an RDE for your program using Cloud Manager, you can intera
    
 For more information and demonstration, watch the video tutorial [how to set up an RDE (06:24)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html).
 
+## Installing the RDE Command-Line Tools (with interactive mode) {#installing-the-rde-command-line-tools-interactive}
+
+>[!NOTE]
+>
+> This setup process is not yet available. It will replace the previous process sometime in June.
+> 
+
+After you have added an RDE for your program using Cloud Manager, you can interact with it by setting up the command-line tools as described in the following steps:
+
+>[!IMPORTANT]
+>
+>Make sure you have the latest version of [Node and NPM installed](https://nodejs.org/en/download/) for Adobe I/O CLI and related plugins to work properly.
+
+
+1. Install the Adobe I/O CLI tools according to this [procedure](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
+1. Install the Adobe I/O CLI tools AEM RDE plugin:
+
+   ```
+   aio plugins:install @adobe/aio-cli-plugin-aem-rde
+   aio plugins:update
+   ```
+
+1. Configure the RDE plugin to use your organization, program and environment. The setup command below will interactively provide the user with a list of programs in their organization, and show RDE environments in that program to choose from.
+   ```
+   aio login
+   aio aem:rde:setup
+   ```
+   
+   The setup step may be skipped if the intent is to use a scripted environment, in which case the organization, program and environment values can be included in each command. [See rde commands below for more information](#rde-cli-commands).
+   
+### The Interactive Setup
+
+  The setup command will ask if the provided configuration should be stored locally or globally.
+   
+   ```
+   Setup the CLI configuration necessary to use the RDE commands.
+   ? Do you want to store the information you enter in this setup procedure locally? (y/N)
+   ```
+   
+   Choose `no` to 
+   * store the organization, program and environment globally in your aio configuration.
+   * work with a single RDE only.
+   
+   Choose `yes` to
+   * store the organization, program and environment locally in the current directory, in a `.aio` file. This is convenient if you want to commit the file to version control so others cloning the git repository can use it.
+   * work with many RDEs, so that switching to another directory will use that configuration instead.
+   * use the configuration in a programmatic context like a script, which can reference it.
+
+
+   Once local or global configuration is selected, the setup command will try to read your organization id from your current login and then read the organization's programs. In case the organization cannot be found, you can enter it manually along with some guidance.
+   
+  ```
+   Selected only organization: XYXYXYXYXYXYXYXXYY
+   retrieving programs of your organization ...
+   ```
+   
+   Once the programs are retrieved, the user can select from the list and also type to filter.
+   When the program was selected, a list of RDE environments is listed to choose from.
+   In case there is only one program and/or RDE environment available, it is selected automatically.
+   
+   To see the current environment context, execute:
+   
+   ```aio aem rde setup --show```
+   
+   Ther command will respond with a result similar to:
+   
+   ```Current configuration: cm-p1-e1: programName - environmentName (organization: ...@AdobeOrg)```
+
 ## Using RDE while Developing a New Feature {#using-rde-while-developing-a-new-feature}
 
 Adobe recommends the following workflow for developing a new feature:
@@ -149,7 +222,7 @@ Adobe recommends the following workflow for developing a new feature:
   > If your staging and production environments are not receiving automatic AEM release updates and are behind the most recent AEM release version, the code running on the RDE may not match how the code functions on staging and production. In that case, it is especially important to perform thorough testing of the code on staging before deploying it to production.
 
 
-* Using the RDE command-line interface, sync local code to the RDE. Options include installing a content package, a specific bundle, an OSGI configuration file, a content file, and a zip file of an Apache/Dispatcher configuration. Referencing a remote content package is also possible. See [RDE Command-Line Tools](#rde-cli-commands) for more information. You can use the status command to validate that the deployment was successful. Optionally, use Package Manager to install content packages.
+* Using the RDE command-line interface, sync local code to the RDE. Options include installing a content package, a specific bundle, an OSGI configuration file, a content file, and a zip file of an Apache/Dispatcher configuration. Referencing a remote content package is also possible. See [RDE Command-Line Tools](/help/implementing/developing/introduction/rapid-development-environments.md#rde-cli-commands) for more information. You can use the status command to validate that the deployment was successful. Optionally, use Package Manager to install content packages.
 
 * Test the code in the RDE. Author and Publish URLs are available in Cloud Manager.
 
@@ -184,6 +257,32 @@ However, with careful coordination, it is possible for more than one developer t
 * For detailed help for a command, type:
 
   `aio aem rde <command> --help`
+  
+  
+### Global flags {#global-flags}
+
+>[!NOTE]
+>
+> These global flags are not yet available. They will be rolled out sometime in June.
+> 
+
+* For a less verbose output, use the quiet flag:
+
+  `aio aem rde <command> --quiet`
+  
+  This removes certain elements such as spinners and progress bars, and limits the need for user input.
+  
+* For JSON instead of console log output, use the json flag:
+  
+  `aio aem rde <command> --json`
+  
+  This returns valid JSON while suppressing any console output. See JSON examples further below.
+  
+* To avoid configuring the RDE connection information using the setup command, or any aio config creation, use the three flags for organization, program and environment:
+  
+  `aio aem rde <command> --organizationId=<value> --programId=<value> --environmentId=<value>`
+  
+  This still requires an ```aio login``` to be performed.
 
 ### Deploying to RDE {#deploying-to-rde}
 
@@ -305,11 +404,7 @@ The analyser found the following errors for publish :
 
 The above code sample illustrates the behavior if a bundle does not resolve. In which case, it is "staged" and is only installed if its requirements (missing imports, in this case) are satisfied through the installation of other code. 
 
-<u>Deploying front-end code bsed on site themes and site templates</u>
-
->[!NOTE]
->
->This feature is not yet GA, but can be used by early adopters. Please reach out to **aemcs-rde-support@adobe.com** to try it out and provide feedback.
+### Deploying front-end code based on site themes and site templates {#deploying-themes-to-rde}
 
 RDEs support front-end code based on [site themes](/help/sites-cloud/administering/site-creation/site-themes.md) and [site templates](/help/sites-cloud/administering/site-creation/site-templates.md). With RDEs, this is done using a command line directive to deploy front-end packages, rather than the Cloud Manager [Front-End Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) used for other environment types.
 
@@ -354,6 +449,10 @@ Logs:
 >The naming of the files in the front-end package must adhere to the following naming conventions:
 > * "dist" folder, for the npm build output package folder
 > * "package.json" file, for the npm dependencies package
+
+>[!TIP]
+>
+> If you created your RDE before April 2023 and experience the error "UNEXPECTED_API_ERROR" when trying the frontend feature for the first time, please try to delete your environment and create it again.
 
 ### Checking the Status of the RDE {#checking-rde-status}
 
@@ -408,6 +507,33 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 ```
 
 For more information and demonstration, see the video tutorial [how to use RDE commands (10:01)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html).
+
+## Logs {#rde-logging}
+
+>[!NOTE]
+>
+> This feature is not yet available. It will be rolled out sometime in June.
+> 
+
+Similar to other environment types, log levels can be set by modifying OSGi configurations, although as described above, the deployment model for RDEs involves a command line rather than a Cloud Manager deployment. Check the [logging documentation](/help/implementing/developing/introduction/logging.md) for more information about how to view, download, and interpret logs.
+
+The RDE CLI has also its own log command that can be used to quickly configure which classes and packages should be logged, and at what log level. These configurations can be viewed as ephemeral, as they do not modify the OSGI properties in version control. This feature is focused on tailing logs in real time, rather than looking up logs from the distant past. 
+
+The following example illustrates how to tail the author tier, with one package set to a debug log level, and two packages (separated by spaces) set to an info debug level. Output that includes an **auth** package is highlighted.
+
+`aio aem:rde:logs --target=author --debug=org.apache.sling --info=org.apache.sling.commons.threads.impl org.apache.sling.jcr.resource.internal.helper.jcr -H .auth.`
+
+See `aio aem:rde:logs --help` for the full set of command line options.
+
+Features include:
+
+* declaring log levels on a per package or class level 
+* customizing the log output format
+* tailing up to four current log configurations, each in its own terminal
+* highlighting specific logs
+
+Note that logs are stored in memory on the RDE and these logs are recycled and thus discarded if not tailed or if the network is too slow.
+
 
 ## Reset {#reset-rde}
 
@@ -473,6 +599,366 @@ You can also reset the RDE using the ellipsis button directly from the **Environ
 
 For more information about how to use Cloud Manager to manage your environments, see [the Cloud Manager documentation](/help/implementing/cloud-manager/manage-environments.md).
 
+## Commands that support JSON output {#json-commands}
+
+>[!NOTE]
+>
+> These commands are not yet available. They will be rolled out sometime in June.
+> 
+
+Most commands support the global ```--json``` flag which suppresses console output and returns valid json to be processed in scripts. Below are some supported commands, with examples of the json output.
+
+### Status
+
+<details>
+  <summary>Expand to see Status examples</summary>
+
+#### A clean RDE
+
+```$ aio aem rde status --json```
+```json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "status": "Modification in progress | Deployment in progress | Upload in progress | Ready (instances are currently deploying) | Ready",
+  "author": {
+    "osgiBundles": [],
+    "osgiConfigs": []
+  },
+  "publish": {
+    "osgiBundles": [],
+    "osgiConfigs": []
+  }
+}
+```
+
+#### An RDE with some installed bundles
+
+```$ aio aem rde status --json```
+```json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "status": "Ready",
+  "author": {
+    "osgiBundles": [
+      {
+        "id": "author_osgi-bundle_com.adobe.granite.hotdev.demo",
+        "updateId": "80",
+        "service": "author",
+        "type": "osgi-bundle",
+        "metadata": {
+          "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip",
+          "bundleSymbolicName": "com.adobe.granite.hotdev.demo",
+          "bundleName": "HotDev Bundle",
+          "bundleVersion": "1.0.0.SNAPSHOT"
+        }
+      }
+    ],
+    "osgiConfigs": [
+      {
+        "id": "publish_osgi-config_com.adobe.granite.demo.MyServlet",
+        "updateId": "80",
+        "service": "publish",
+        "type": "osgi-config",
+        "metadata": {
+          "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip",
+          "configPid": "com.adobe.granite.demo.MyServlet"
+        }
+      }
+    ]
+  },
+  "publish": {
+    "osgiBundles": [
+      {
+        "id": "author_osgi-bundle_com.adobe.granite.hotdev.demo",
+        "updateId": "80",
+        "service": "author",
+        "type": "osgi-bundle",
+        "metadata": {
+          "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip",
+          "bundleSymbolicName": "com.adobe.granite.hotdev.demo",
+          "bundleName": "HotDev Bundle",
+          "bundleVersion": "1.0.0.SNAPSHOT"
+        }
+      }
+    ],
+    "osgiConfigs": [
+      {
+        "id": "publish_osgi-config_com.adobe.granite.demo.MyServlet",
+        "updateId": "80",
+        "service": "publish",
+        "type": "osgi-config",
+        "metadata": {
+          "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip",
+          "configPid": "com.adobe.granite.demo.MyServlet"
+        }
+      }
+    ]
+  }
+}
+```
+</details>
+
+### Install
+
+<details>
+  <summary>Expand to see Install examples</summary>
+  
+```$ aio aem rde install ~/Downloads/hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip --json```
+```json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "items": [
+    {
+      "updateId": "4",
+      "info": "deploy",
+      "action": "deploy",
+      "metadata": {
+        "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip"
+      },
+      "services": [
+        "author",
+        "publish"
+      ],
+      "status": "completed",
+      "timestamps": {
+        "received": "2024-05-21T12:30:44.578Z",
+        "processed": "2024-05-21T12:31:07.886468Z"
+      },
+      "user": "userId",
+      "type": "content-package",
+      "hash": "2ad73507",
+      "logs": [
+        "No logs available for this update."
+      ]
+    }
+  ]
+}
+```
+</details>
+
+### Delete
+
+<details>
+  <summary>Expand to see Delete examples</summary>
+
+```$ aio aem rde delete com.adobe.granite.hotdev.demo-1.0.0.SNAPSHOT --json```
+```json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "items": [
+    {
+      "updateId": "84",
+      "info": "delete author_osgi-bundle_com.adobe.granite.hotdev.demo",
+      "action": "delete",
+      "metadata": {},
+      "services": [
+        "author"
+      ],
+      "status": "completed",
+      "timestamps": {
+        "received": "2024-05-21T11:49:16.889Z",
+        "processed": "2024-05-21T11:49:18.188420Z"
+      },
+      "user": "userId",
+      "type": "osgi-bundle",
+      "deletedArtifact": {
+        "id": "author_osgi-bundle_com.adobe.granite.hotdev.demo",
+        "metadata": {
+          "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip",
+          "bundleSymbolicName": "com.adobe.granite.hotdev.demo",
+          "bundleName": "HotDev Bundle",
+          "bundleVersion": "1.0.0.SNAPSHOT"
+        },
+        "service": "author",
+        "type": "osgi-bundle",
+        "updateId": "83"
+      },
+      "hash": "636f6d2e",
+      "logs": [
+        "No logs available for this update."
+      ]
+    },
+    {
+      "updateId": "85",
+      "info": "delete publish_osgi-bundle_com.adobe.granite.hotdev.demo",
+      "action": "delete",
+      "metadata": {},
+      "services": [
+        "publish"
+      ],
+      "status": "completed",
+      "timestamps": {
+        "received": "2024-05-21T11:49:23.857Z",
+        "processed": "2024-05-21T11:49:25.237930Z"
+      },
+      "user": "userId",
+      "type": "osgi-bundle",
+      "deletedArtifact": {
+        "id": "publish_osgi-bundle_com.adobe.granite.hotdev.demo",
+        "metadata": {
+          "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip",
+          "bundleSymbolicName": "com.adobe.granite.hotdev.demo",
+          "bundleName": "HotDev Bundle",
+          "bundleVersion": "1.0.0.SNAPSHOT"
+        },
+        "service": "publish",
+        "type": "osgi-bundle",
+        "updateId": "83"
+      },
+      "hash": "636f6d2e",
+      "logs": [
+        "No logs available for this update."
+      ]
+    }
+  ]
+}
+```
+
+</details>
+
+### History
+
+<details>
+  <summary>Expand to see History examples</summary>
+
+```$ aio aem rde history --json```
+```json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "status": "Ready",
+  "items": [
+    {
+      "updateId": "112",
+      "info": "delete publish_osgi-bundle_com.adobe.granite.hotdev.demo",
+      "action": "delete",
+      "metadata": {},
+      "services": [
+        "publish"
+      ],
+      "status": "completed",
+      "timestamps": {
+        "received": "2024-05-21T12:53:07.934Z",
+        "processed": "2024-05-21T12:53:09.118766Z"
+      },
+      "user": "userId",
+      "type": "osgi-bundle",
+      "deletedArtifact": {
+        "id": "publish_osgi-bundle_com.adobe.granite.hotdev.demo",
+        "metadata": {
+          "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip",
+          "bundleSymbolicName": "com.adobe.granite.hotdev.demo",
+          "bundleName": "HotDev Bundle",
+          "bundleVersion": "1.0.0.SNAPSHOT"
+        },
+        "service": "publish",
+        "type": "osgi-bundle",
+        "updateId": "110"
+      },
+      "hash": "636f6d2e"
+    },
+    {
+      "updateId": "111",
+      "info": "delete author_osgi-bundle_com.adobe.granite.hotdev.demo",
+      "action": "delete",
+      "metadata": {},
+      "services": [
+        "author"
+      ],
+      "status": "completed",
+      "timestamps": {
+        "received": "2024-05-21T12:53:00.824Z",
+        "processed": "2024-05-21T12:53:02.101560Z"
+      },
+      "user": "userId",
+      "type": "osgi-bundle",
+      "deletedArtifact": {
+        "id": "author_osgi-bundle_com.adobe.granite.hotdev.demo",
+        "metadata": {
+          "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip",
+          "bundleSymbolicName": "com.adobe.granite.hotdev.demo",
+          "bundleName": "HotDev Bundle",
+          "bundleVersion": "1.0.0.SNAPSHOT"
+        },
+        "service": "author",
+        "type": "osgi-bundle",
+        "updateId": "110"
+      },
+      "hash": "636f6d2e"
+    },
+    {
+      "updateId": "110",
+      "info": "deploy",
+      "action": "deploy",
+      "metadata": {
+        "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip"
+      },
+      "services": [
+        "author",
+        "publish"
+      ],
+      "status": "completed",
+      "timestamps": {
+        "received": "2024-05-21T12:52:12.123Z",
+        "processed": "2024-05-21T12:52:31.026147Z"
+      },
+      "user": "userId",
+      "type": "content-package",
+      "hash": "2ad73507"
+    }
+  ]
+}
+```
+</details>
+
+### Reset
+
+<details>
+  <summary>Expand to see Reset examples</summary>
+
+#### Fire and Forget, No-wait
+
+```$ aio aem rde reset --no-wait --json```
+```json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "status": "resetting"
+}
+```
+
+#### Wait for Completion
+
+```$ aio aem rde reset --json```
+```json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "status": "reset"
+}
+```
+</details>
+
+### Restart
+
+<details>
+  <summary>Expand to see Restart examples</summary>
+
+```$ aio aem rde restart --json```
+```json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "status": "restarted"
+}
+```
+
+</details>
+
 ## Run Modes {#runmodes}
 
 RDE-specific OSGI configuration can be applied by using suffixes on the folder name, like in the examples below:
@@ -503,9 +989,6 @@ When an RDE is reset, all content is removed and so if desired, explicit action 
 
 You are limited to 1 GB when syncing content packages.
 
-## Logging {#logging}
-
-Log levels can be set by modifying OSGi configurations. Check the [documentation](/help/implementing/developing/introduction/logging.md) for more information.
 
 ## How are RDEs Different from Cloud Development Environments? {#how-are-rds-different-from-cloud-development-environments}
 
@@ -517,8 +1000,6 @@ Also note the following considerations:
 
 * RDEs do not include a preview tier
 * RDEs do not currently support the prerelease channel.
-* While RDE support for viewing and debugging front-end code based on [site themes](/help/sites-cloud/administering/site-creation/site-themes.md) and [site templates](/help/sites-cloud/administering/site-creation/site-templates.md) deployed is not yet GA-ready, it can be used by early adopters. Please reach out to **aemcs-rde-support@adobe.com** to try it out and provide feedback.
-
 
 
 ## How many RDEs do I need? {#how-many-rds-do-i-need}
@@ -548,3 +1029,29 @@ Forms developers can use AEM Forms Cloud Service Rapid Development Environment t
 ## RDE tutorial
 
 To learn about RDE in AEM as a Cloud Service, see the video tutorial that demonstrates [how to set it up, how to use it, and the development life cycle (01:25)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html).
+
+# Troubleshooting
+
+## aio RDE plugin {#aio-rde-plugin}
+
+### errors regarding insufficient permissions
+
+To use the RDE plugin, it requires you to be a member of the Cloud Manager **Developer - Cloud Service** Product Profile. See [this page](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) for more details.
+
+Alternatively, you can confirm that you have this developer role if you can log in to the developer console by running this command:
+
+   `aio cloudmanager:environment:open-developer-console`
+
+   >[!TIP]
+   >
+   >If you see the `Warning: cloudmanager:* is not a aio command.` error, you must install the [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) by running the command below:
+   >
+   >```
+   >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
+   >```
+
+Verify that the login was completed successfully by running
+
+   `aio cloudmanager:list-programs`
+
+   This should list all programs under your configured organization and confirm that you have the correct role assigned.

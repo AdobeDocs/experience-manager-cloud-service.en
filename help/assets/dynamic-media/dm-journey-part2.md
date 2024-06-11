@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
 content-type: reference
-feature: Image Profiles
+feature: Image Profiles,Best Practices
 role: User, Admin
 mini-toc-levels: 4
 hide: no

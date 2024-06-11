@@ -2,6 +2,9 @@
 title: Undo and Redo Limitations
 description: Learn about the limitations of the undo and redo options in the AEM page editor.
 exl-id: 87773f47-5116-4966-9ba4-5deedb7c4fa6
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Undo and Redo Limitations {#undo-redo}
 

@@ -7,11 +7,11 @@ level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
 ---
 
-<span class="preview"> This article contains content for some pre-release features. These pre-release features are accessible only through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). The features under the pre-release program are: 
-* Support for implementing nested conditions with When-then-else functionality
-* Validate or reset panels and forms, including fields 
-* Support for modern JavaScript features such as let and arrow functions (ES10 support) within custom functions. 
-</span>
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service (Core Components)    | This article         |
+| AEM as a Cloud Service (Foundation Components)    | [Click here](/help/forms/rule-editor.md)       |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html)                  |
 
 # Add rules to an Adaptive Form (Core Components) {#adaptive-forms-rule-editor}
 
@@ -30,6 +30,14 @@ The rule editor provides an intuitive and simplified user interface to write rul
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
 
 Users added to the forms-power-users group can create scripts and edit existing ones. Users in the [!DNL forms-users] group can use the scripts but not create or edit scripts.
+
+## Difference between Rule editor in Core Components and Rule Editor in Foundation Components
+
+{{rule-editor-diff}}
+
+>[!NOTE]
+>
+> To see how to create and use custom functions in detail, refer to [Custom functions in Adaptive Forms (Core Components)](/help/forms/create-and-use-custom-functions.md) article.
 
 ## Understanding a rule {#understanding-a-rule}
 
@@ -111,13 +119,13 @@ In plain words, a typical When rule is structured as follows:
 
 `Then, do the following:`
 
-Action 2 on Object B;
-AND
-Action 3 on Object C;
+`Action 2 on Object B;`
+`AND`
+`Action 3 on Object C;
 
 `Else, do the following:`
 
-Action 2 on Object C;
+`Action 2 on Object C;`
 _
 
 When you have a multi-value component, such as radio buttons or list, while creating a rule for that component the options are automatically retrieved and made available to the rule creator. You need not type the option values again.
@@ -133,6 +141,58 @@ While writing a When rule, you can trigger the Clear Value Of action. Clear Valu
 >[!NOTE]
 >
 > When rule type only supports single-level then-else statements.
+
+#### Allowed Multiple fields in [!UICONTROL When] {#allowed-multiple-fields}
+
+In the **When** condition, you have the option to add other fields apart from the field to which the rule is applied. 
+
+For example, using the When rule type, you can evaluate a condition on different form objects and perform the action:
+
+When:
+
+(Object A Condition 1)
+
+AND/OR
+
+(Object B Condtion 2)
+
+Then, do the following:
+
+Action 1 on Object A
+
+_
+
+![Allowed Multiple fields in When](/help/forms/assets/allowed-multiple-field-when.png)
+
+##### Considerations while using Allowed Multiple fields in When condition feature
+
+* Ensure that the [core component is set to version 3.0.14 or later](https://github.com/adobe/aem-core-forms-components) to use this feature in the rule editor.
+* If rules are applied to different fields within the When condition, the rule triggers even if only one of those fields is changed.
+
+
+<!--
+* It is not possible to add multiple fields in the When condition while applying rules to a button.
+
+##### To enable Allowed Multiple fields in When condition feature
+
+Allowed Multiple fields in When condition feature is disabled by default. To enable this feature, add a custom property at the template policy:
+
+1. Open the corresponding template associated with an Adaptive Form in the template editor.
+1. Select the existing policy as **formcontainer-policy**.
+1. Navigate to the **[!UICONTROL Structure]**  view and, from the **[!UICONTROL Allowed Components]** list, open the **[!UICONTROL Adaptive Forms Container]** policy.
+1. Go to the **[!UICONTROL Custom Properties]** tab and to add a custom property, click **[!UICONTROL Add]**.
+1. Specify the **Group Name** of your choice. For example, in our case, we added the group name as **allowedfeature**.
+1. Add the **key** and **value** pair as follows:
+   * key: fd:changeEventBehaviour
+   * value: deps
+1. Click **[!UICONTROL Done]**. -->
+
+If the allowed multiple fields in the When condition feature encounter any issues, follow the troubleshooting steps as:
+
+1. Open the form in edit mode.
+1. Open the Content browser and select the **[!UICONTROL Guide Container]** component of your Adaptive Form.
+1. Click the Guide Container properties ![Guide properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box opens.
+1. Click Done and save the dialog again.
 
 **[!UICONTROL Hide]** Hides the specified object.
 
@@ -898,8 +958,6 @@ Rule in the code editor -->
 In the purchase order form explained in the previous example, you want to restrict user from ordering more than one quantity of any product that is priced more that 10000. To do this validation, you can write a Validate rule as shown below.
 
 ![Example-validate](assets/example-validate.png)
-
-Rule in the visual editor
 
 <!-- The rule appears as follows in the code editor.
 

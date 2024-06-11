@@ -2,7 +2,7 @@
 title: Organize your digital assets
 description: Organize your digital assets, images, files, folders, and so on, using Experience Manager.
 contentOwner: AG
-feature: Asset Management, Search
+feature: Asset Management,Search,Best Practices
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
 ---
@@ -123,6 +123,7 @@ Standardizing metadata usage, file naming, and folder structure ensures that as 
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
