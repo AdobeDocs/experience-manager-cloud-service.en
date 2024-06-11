@@ -3,7 +3,7 @@ title: Dynatrace
 description: Learn how to use Dynatrace with AEM as a Cloud Service
 exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
 solution: Experience Manager
-feature: Cloud Manager, Developing
+feature: Log Files, Developing
 role: Admin, Architect, Developer
 ---
 # Dynatrace {#dynatrace}
