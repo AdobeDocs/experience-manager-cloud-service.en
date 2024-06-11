@@ -15,6 +15,11 @@ Summarized below are the continuous improvements for maintenance release 16544, 
 
 2024.6.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
+>[!CAUTION]
+>
+>Please use the SDK referenced here under, as a regression has been confirmed with the previous SDK:
+>`AEM SDK v2024.06.16647.20240607T103723Z-240500`
+
 ### Enhancements {#enhancements-16544}
 
 * GRANITE-41133: Support Jakarta Servlet API 5 and OSGi Servlet Whiteboard API.
