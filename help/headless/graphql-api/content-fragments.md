@@ -1117,7 +1117,6 @@ To provide accurate results, your AEM as a Cloud Service **Stage** environment s
 
 You can achieve this by using the AEM as a Cloud Service [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) to copy your Production content to the Stage environment.
 
-
 ## Limitations {#limitations}
 
 To protect against potential problems there are default limitations imposed on your queries:
