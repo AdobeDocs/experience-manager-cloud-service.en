@@ -67,7 +67,7 @@ The syntax for the `X-AEM-Edge-Key` value includes:
 
 ## Purge API Token {#purge-API-token}
 
-Customers can purge the CDN cache by using a declared Purge API token. The token is declared with the syntax below.  See the [Common Setup](#common-setup) section to learn how to deploy it.
+Customers can [purge the CDN cache](/help/implementing/dispatcher/cdn-cache-purge.md) by using a declared Purge API token. The token is declared with the syntax below.  See the [Common Setup](#common-setup) section to learn how to deploy it.
 
 ```
 
