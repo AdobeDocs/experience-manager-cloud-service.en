@@ -130,7 +130,7 @@ After you have added an RDE for your program using Cloud Manager, you can intera
    
    ```aio aem rde setup --show```
    
-   Ther command will respond with a result similar to:
+   The command will respond with a result similar to:
    
    ```Current configuration: cm-p1-e1: programName - environmentName (organization: ...@AdobeOrg)```
 
@@ -146,7 +146,7 @@ For environments where no user can interactively run the setup command as descri
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   * Your own organizaiton ID can be looked up using the method [documented here.](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255)
+   * Your own organization ID can be looked up using the method [documented here.](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255)
 
 1. Next, configure your program ID:
 
@@ -160,7 +160,7 @@ For environments where no user can interactively run the setup command as descri
 
    `aio login`
 
-   These steps requires you to be a member of the Cloud Manager **Developer - Cloud Service** Product Profile. See [this page](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) for more details.
+   These steps require you to be a member of the Cloud Manager **Developer - Cloud Service** Product Profile. See [this page](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) for more details.
 
 For more information and demonstration, watch the video tutorial [how to set up an RDE (06:24)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html).
 </details>
