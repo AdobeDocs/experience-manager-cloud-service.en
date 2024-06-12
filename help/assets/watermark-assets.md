@@ -13,7 +13,7 @@ exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/watermarking.html)                  |
 | AEM as a Cloud Service     | This article         |
 
-[!DNL Adobe Experience Manager Assets] lets you add a digital watermark to images. [!DNL Assets] supports applying an image as a watermark to other image files. Watermarks can help users verify the authenticity and copyright ownership of the assets. Also, a watermark can be used to indicate a document's state like confidential, draft, validity, and so on.
+[!DNL Adobe Experience Manager Assets] lets you add a digital watermark to images and videos. [!DNL Assets] supports applying an image as a watermark to other image files. Watermarks can help users verify the authenticity and copyright ownership of the assets. Also, a watermark can be used to indicate a document's state like confidential, draft, validity, and so on.
 
 To configure [!DNL Experience Manager] to watermark assets:
 
