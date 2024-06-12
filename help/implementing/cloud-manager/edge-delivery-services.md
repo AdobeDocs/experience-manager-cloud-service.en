@@ -15,7 +15,7 @@ Learn how to deliver your Cloud Manager projects using Edge Delivery Services.
 
 Edge Delivery Services is a composable set of services that allows for a high degree of flexibility in how you author content on your website. This allows you to:
 
-* Create fast sites with a perfect Lighthouse Score and continuously monitor performance through real user monitoring (RUM).
+* Create fast sites with a perfect Lighthouse Score and continuously monitor performance through real use monitoring (RUM).
 * Increase authoring efficiency by decoupling content sources.
 
 You can use both AEM content management and AEM-based authoring using the Universal Editor as well as document-based authoring.
