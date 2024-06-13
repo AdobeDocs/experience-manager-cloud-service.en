@@ -234,6 +234,50 @@ Now that you have a working quote block you can apply styling to it.
 
 Congratulations! You now have a fully working and styled quote block. You can use this example as a basis for designing your own project-specific blocks.
 
+### Block Options {#block-options}
+
+If you need a block to look or behave slightly differently based on certain circumstances, but not different enough to become a new block in itself, you can let authors choose from [block options.](content-modeling.md#type-inference)
+
+By adding a `classes` property to the block, the property rendered in the table header for simple blocks, or as value list for items in a container block.
+
+```json
+{
+  "id": "simpleMarquee",
+  "fields": [
+    {
+      "component": "text",
+      "valueType": "string",
+      "name": "marqueeText",
+      "value": "",
+      "label": "Marquee text",
+      "description": "The text you want shown in your marquee"
+    },
+    {
+      "component": "select",
+      "name": "classes",
+      "value": "",
+      "label": "Background Color",
+      "description": "The marquee background color",
+      "valueType": "string",
+      "options": [
+        {
+          "name": "Red",
+          "value": "bg-red"
+        },
+        {
+          "name": "Green",
+          "value": "bg-green"
+        },
+        {
+          "name": "Blue",
+          "value": "bg-blue"
+        }
+      ]
+    }
+  ]
+}
+```
+
 ## Using Other Working Branches {#other-branches}
 
 This guide had you commit directly to the `main` branch for simplicity's sake. For experimentation in a sample repository, this is usually not an issue. For actual project work, [you should follow development best practices](https://www.aem.live/docs/dev-collab-and-good-practices) by developing on a different branch and reviewing all changes via pull request before merging to `main`.
