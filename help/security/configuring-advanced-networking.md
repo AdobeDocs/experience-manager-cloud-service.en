@@ -807,33 +807,42 @@ When using Advanced Networking the number of connections is limited in order to 
 
 The connections are limited to 1000 per AEM instance and alerts are sent to customers when the number reaches 750.
 
-
 ##### Is the connection limit applied only to outbound traffic out of non-standard ports or on all outbound traffic?
+
 The limit is only for connections using Advanced Networking (egress on non-standard ports, using dedicated egress IP, or VPN).
 
 ##### We don’t see a significant difference in the number of outgoing connections. Why are we receiving the notification now?
+
 If the customer creates connections dynamically (i.e., one or more for each request), an increase in traffic can cause the connections to spike.
 
 ##### Is it possible that we experienced a similar situation in the past without being alerted?
+
 Alerts are only sent when the soft limit is reached.
 
 ##### What happens if the maximum limit is reached?
+
 When the hard limit is reached, new egress connections from AEM through Advanced Networking (egress on non-standard ports, using dedicated egress IP, or VPN) will be dropped to protect against a DoS attack.
 
 ##### Can the limit be raised?
+
 No, having a large number of connections can cause a significant performance impact and a DoS across pods and environments.
 
 ##### Are the connections automatically closed by the AEM system after a certain period?
+
 Yes, connections are closed at the JVM and different points in the networking infrastructure. However, this will be too late for any production service. Connections should be explicitly closed when no longer needed or returned to the pool when using connection pooling. Otherwise, the resource consumption will be too high and can cause exhaustion of resources.
 
 ##### If the maximum connection limit is reached, does it affect any licenses and result in extra costs?
+
 No, there is no license or cost associated with this limit. It is a technical limit.
 
 ##### How close are we to the limit? What is the maximum limit?
+
 The alert is triggered when connections exceed 750. The maximum limit is 1000 connections per AEM instance.
 
 ##### Is this limit applicable to VPNs?
+
 Yes, the limit applies to connections using Advanced Networking, including VPNs.
 
 ##### If we use a Dedicated Egress IP, will this limit still be applicable?
+
 Yes, the limit is still applicable if using a dedicated egress IP.
