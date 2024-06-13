@@ -130,48 +130,13 @@ Forms service generates interactive PDF forms for data capture. It can also be u
      
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### OAuth Server-to-Server credentials support for AEM integrations with other Adobe solutions {#S2S-OAuth-credentials}
-
-Adobe Developer Console is used to generate credentials to access various APIs. One of those credential types, Service Account (JWT) credentials, has been deprecated in favor of OAuth Server-to-Server credentials, which AEM Cloud Service now supports for integrations with other Adobe solutions such as Adobe Analytics and Adobe Target.
-
-[Read about the deprecation](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md) and [learn how to use the AEM author UI](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) to configure integrations with other Adobe solutions. 
-
-### Traffic Spike at Origin Alerts {#traffic-spike-origin}
-
-[Receive proactive notifications](/help/security/traffic-filter-rules-including-waf.md#traffic-spike-at-origin-alert) through Actions Center when traffic patterns at the origin are indicative of a DDoS attack, allowing you to investigate and configure traffic filter rules.
-
-### New Features for RDEs {#RDE-new-features}
-
-[Rapid Development Environments (RDEs)](/help/implementing/developing/introduction/rapid-development-environments.md) let developers swiftly deploy, review, and test changes in the Cloud. Several new features will be rolled out during the month of June. We also invite you to engage directly with Adobe engineering at the [RDE Discord channel](https://discord.com/channels/1131492224371277874/1245304281184079872).
-
-
-#### RDE support for front-end code using Site Themes and Site Templates {#rde-frontend}
-
-[RDEs now support front-end code](/help/implementing/developing/introduction/rapid-development-environments.md#deploying-themes-to-rde) based on [site themes](/help/sites-cloud/administering/site-creation/site-themes.md) and [site templates](/help/sites-cloud/administering/site-creation/site-templates.md), for early adopters. With RDEs, this is done using a command line directive, rather than a [front-end pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
-
-#### Enhanced logging for RDEs {#rde-logging}
-
-While debugging code in an RDE, developers can now [configure and stream logs more productively](/help/implementing/developing/introduction/rapid-development-environments.md#rde-logging), using the command line, and without modifying OSGI properties in version control. Features include:
-
-* declaring log levels on a per package or class level
-* customizing the log output format
-* streaming multiple logs in parallel 
-
-#### RDE CLI enhancements {#rde-cli-enhancements}
-
-The RDE command line interface has some new features, which improve the developer experience:
-
-* [the setup command is interactive](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools-interactive), making it easier to choose between organizations, programs and environments. It is also now possible to override these values at the command line.
-* [quiet mode](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) for a less verbose output.
-* [json mode](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) for useful output when invoked programatically. 
-
 ### New Actions Center notifications {#actions-center-notifications}
 
-[Actions Center](/help/operations/actions-center.md) sends email notifications when important incidents happen, or if we notice something about your code or configuration where you should take proactive action. There are three new types of notification:
+[Actions Center](/help/operations/actions-center.md) sends email notifications when important incidents happen, or if we notice something about your code or configuration where you should take proactive action. There are several new types of notification:
 
-* too many outgoing connections through advanced networking infrastructure
-* usage of a deprecated Service User Mapping format
-* a potential DDoS attack is underway
+* a
+* b
+* c
 
 ### Early Adopter Programs {#foundation-early-adopter}
 
