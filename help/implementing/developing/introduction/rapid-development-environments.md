@@ -475,11 +475,11 @@ The following example illustrates how to tail the author tier, with one package 
 `aio aem:rde:logs --target=author --debug=org.apache.sling --info=org.apache.sling.commons.threads.impl org.apache.sling.jcr.resource.internal.helper.jcr -H .auth.`
 
 >[!TIP]
-  >
-  >If you see the error "RDECLI:UNEXPECTED_API_ERROR" when playing with the logs commands for the author service, please reset your environment and try again. This error will be thrown if your latest reset operation was before end of May 2024.
-  >```
-  >aio aem:rde:reset
-  >```
+>
+>If you see the error `RDECLI:UNEXPECTED_API_ERROR` when playing with the logs commands for the author service, please reset your environment and try again. This error will be thrown if your latest reset operation was before end of May 2024.
+>```
+>aio aem:rde:reset
+>```
 
 See `aio aem:rde:logs --help` for the full set of command line options.
 
