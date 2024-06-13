@@ -803,6 +803,11 @@ In light of this information, Adobe advises reassessing your current AEM configu
 
 #### Connection Limits FAQ
 
+When using Advanced Networking the number of connections is limited in order to ensure stability across environments and to prevent that lower environments can exhaust the connections available.
+
+The connections are limited to 1000 per AEM instance and alerts are sent to customers when the number reaches 750.
+
+
 ##### Is the connection limit applied only to outbound traffic out of non-standard ports or on all outbound traffic?
 The limit is only for connections using Advanced Networking (egress on non-standard ports, using dedicated egress IP, or VPN).
 
