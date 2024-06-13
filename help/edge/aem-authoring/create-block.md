@@ -47,9 +47,9 @@ The following quote block example follows this approach.
 
 1. Edit the `component-definition.json` file at the root of the project and add the following definition for your new quote block and save the file.
 
-   >[!BEGINTABS]
+>[!BEGINTABS]
 
-   >[!TAB JSON Example]
+>[!TAB JSON Example]
 
    ```json
    {
@@ -70,19 +70,20 @@ The following quote block example follows this approach.
      }
    }
    ```
-   >[TAB Screenshot]
 
-   ![Editing the component-definitions.json file to define the quote block](assets/create-block/component-definitions.png)
+>[TAB Screenshot]
 
-   >[!ENDTABS]
+![Editing the component-definitions.json file to define the quote block](assets/create-block/component-definitions.png)
+
+>[!ENDTABS]
 
 1. Edit the `component-models.json` file at the root of the project and add the following [model definition](/help/implementing/universal-editor/field-types.md#model-structure) for your new quote block and save the file.
 
    * Please see the document [Content Modeling for AEM authoring with Edge Delivery Services Projects](/help/edge/aem-authoring/content-modeling.md) for more information about what is important to consider when creating content models.
 
-   >[!BEGINTABS]
+>[!BEGINTABS]
 
-   >[!TAB JSON Example]
+>[!TAB JSON Example]
 
    ```json
    {
@@ -105,17 +106,18 @@ The following quote block example follows this approach.
       ]
    }
    ```
-   >[!TAB Screenshot]
 
-   ![Editing the component-models.json file to define the model of the quote block](assets/create-block/component-models.png)
+>[!TAB Screenshot]
 
-   >[!ENDTABS]
+![Editing the component-models.json file to define the model of the quote block](assets/create-block/component-models.png)
+
+>[!ENDTABS]
 
 1. Edit the `component-filters.json` file at the root of the project and add the quote block to the [filter definition](/help/implementing/universal-editor/customizing.md#filtering-components) to allow the block to be added to any section and save the file.
 
-   >[!BEGINTABS]
+>[!BEGINTABS]
 
-   >[!TAB JSON Example]
+>[!TAB JSON Example]
 
    ```json
    {
@@ -133,11 +135,11 @@ The following quote block example follows this approach.
    }
    ```
 
-   >[!TAB Screenshot]
+>[!TAB Screenshot]
 
-   ![Editing the component-filters.json file to define the filters for the quote block](assets/create-block/component-filters.png)
+![Editing the component-filters.json file to define the filters for the quote block](assets/create-block/component-filters.png)
 
-   >[!ENDTABS]
+>[!ENDTABS]
 
 1. Using git, commit these changes to your `main` branch.
 
@@ -190,9 +192,9 @@ Now that you have a working quote block you can apply styling to it.
 
 1. In the new `quote` folder, add a `quote.js` file to implement block decoration by adding the following JavaScript and save the file.
 
-   >[!BEGINTABS]
+>[!BEGINTABS]
 
-   >[!TAB JavaScript Example]
+>[!TAB JavaScript Example]
 
    ```javascript
    export default function decorate(block) {
@@ -204,17 +206,17 @@ Now that you have a working quote block you can apply styling to it.
    }
    ```
 
-   >[!TAB Screenshot]
+>[!TAB Screenshot]
 
-   ![Adding JavaScript to decorate the block](assets/create-block/quote-js.png)
+![Adding JavaScript to decorate the block](assets/create-block/quote-js.png)
 
-   >[!ENDTABS]
+>[!ENDTABS]
 
 1. In the `quote` folder, add a `quote.css` file to define the styling for the block by adding the following CSS code and save the file.
 
-   >[!BEGINTABS]
+>[!BEGINTABS]
 
-   >[!TAB CSS Example]
+>[!TAB CSS Example]
 
    ```css
    .block.quote {
@@ -249,11 +251,11 @@ Now that you have a working quote block you can apply styling to it.
    }
    ```
 
-   >[!TAB Screenshot]
+>[!TAB Screenshot]
 
-   ![Adding CSS to define the block styling](assets/create-block/quote-css.png)
+![Adding CSS to define the block styling](assets/create-block/quote-css.png)
 
-   >[!ENDTABS]
+>[!ENDTABS]
 
 1. Using git, commit these changes to your `main` branch.
 
