@@ -256,7 +256,7 @@ There is also be a property named `sourcetype`, which is set to the value `aemcd
 
 #### HTTPS AEM logs {#https-aem}
 
-For AEM logs (including apache/dispacher), web requests (POSTs) will be sent continuously, with a json payload that is an array of log entries, with the various log entry formats as described in the [logging article](/help/implementing/developing/introduction/logging.md#cdn-log). Additional properties are mentioned in the [Log Entry Formats](#log-format) section below.
+For AEM logs (including apache/dispacher), web requests (POSTs) will be sent continuously, with a json payload that is an array of log entries, with the various log entry formats as described in the [logging article](/help/implementing/developing/introduction/logging.md). Additional properties are mentioned in the [Log Entry Formats](#log-format) section below.
 
 There is also be a property named `sourcetype`, which is set to one of these values:
 
