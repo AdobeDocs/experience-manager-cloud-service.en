@@ -47,6 +47,10 @@ The following quote block example follows this approach.
 
 1. Edit the `component-definition.json` file at the root of the project and add the following definition for your new quote block and save the file.
 
+>[!BEGINTABS]
+
+>[!TAB JSON Example]
+
    ```json
    {
      "title": "Quote",
@@ -67,11 +71,19 @@ The following quote block example follows this approach.
    }
    ```
 
-   ![Editing the component-definitions.json file to define the quote block](assets/create-block/component-definitions.png)
+>[!TAB Screenshot]
+
+![Editing the component-definitions.json file to define the quote block](assets/create-block/component-definitions.png)
+
+>[!ENDTABS]
 
 1. Edit the `component-models.json` file at the root of the project and add the following [model definition](/help/implementing/universal-editor/field-types.md#model-structure) for your new quote block and save the file.
 
    * Please see the document [Content Modeling for AEM authoring with Edge Delivery Services Projects](/help/edge/aem-authoring/content-modeling.md) for more information about what is important to consider when creating content models.
+
+>[!BEGINTABS]
+
+>[!TAB JSON Example]
 
    ```json
    {
@@ -95,9 +107,17 @@ The following quote block example follows this approach.
    }
    ```
 
-   ![Editing the component-models.json file to define the model of the quote block](assets/create-block/component-models.png)
+>[!TAB Screenshot]
+
+![Editing the component-models.json file to define the model of the quote block](assets/create-block/component-models.png)
+
+>[!ENDTABS]
 
 1. Edit the `component-filters.json` file at the root of the project and add the quote block to the [filter definition](/help/implementing/universal-editor/customizing.md#filtering-components) to allow the block to be added to any section and save the file.
+
+>[!BEGINTABS]
+
+>[!TAB JSON Example]
 
    ```json
    {
@@ -115,7 +135,11 @@ The following quote block example follows this approach.
    }
    ```
 
-   ![Editing the component-filters.json file to define the filters for the quote block](assets/create-block/component-filters.png)
+>[!TAB Screenshot]
+
+![Editing the component-filters.json file to define the filters for the quote block](assets/create-block/component-filters.png)
+
+>[!ENDTABS]
 
 1. Using git, commit these changes to your `main` branch.
 
@@ -168,6 +192,10 @@ Now that you have a working quote block you can apply styling to it.
 
 1. In the new `quote` folder, add a `quote.js` file to implement block decoration by adding the following JavaScript and save the file.
 
+>[!BEGINTABS]
+
+>[!TAB JavaScript Example]
+
    ```javascript
    export default function decorate(block) {
      const [quoteWrapper] = block.children;
@@ -178,10 +206,17 @@ Now that you have a working quote block you can apply styling to it.
    }
    ```
 
-   ![Adding JavaScript to decorate the block](assets/create-block/quote-js.png)
+>[!TAB Screenshot]
 
+![Adding JavaScript to decorate the block](assets/create-block/quote-js.png)
+
+>[!ENDTABS]
 
 1. In the `quote` folder, add a `quote.css` file to define the styling for the block by adding the following CSS code and save the file.
+
+>[!BEGINTABS]
+
+>[!TAB CSS Example]
 
    ```css
    .block.quote {
@@ -216,7 +251,11 @@ Now that you have a working quote block you can apply styling to it.
    }
    ```
 
-   ![Adding CSS to define the block styling](assets/create-block/quote-css.png)
+>[!TAB Screenshot]
+
+![Adding CSS to define the block styling](assets/create-block/quote-css.png)
+
+>[!ENDTABS]
 
 1. Using git, commit these changes to your `main` branch.
 
@@ -233,6 +272,50 @@ Now that you have a working quote block you can apply styling to it.
    ![The published and styled quote block](assets/create-block/quote-styled-published.png)
 
 Congratulations! You now have a fully working and styled quote block. You can use this example as a basis for designing your own project-specific blocks.
+
+### Block Options {#block-options}
+
+If you need a block to look or behave slightly differently based on certain circumstances, but not different enough to become a new block in itself, you can let authors choose from [block options.](content-modeling.md#type-inference)
+
+By adding a `classes` property to the block, the property rendered in the table header for simple blocks, or as value list for items in a container block.
+
+```json
+{
+  "id": "simpleMarquee",
+  "fields": [
+    {
+      "component": "text",
+      "valueType": "string",
+      "name": "marqueeText",
+      "value": "",
+      "label": "Marquee text",
+      "description": "The text you want shown in your marquee"
+    },
+    {
+      "component": "select",
+      "name": "classes",
+      "value": "",
+      "label": "Background Color",
+      "description": "The marquee background color",
+      "valueType": "string",
+      "options": [
+        {
+          "name": "Red",
+          "value": "bg-red"
+        },
+        {
+          "name": "Green",
+          "value": "bg-green"
+        },
+        {
+          "name": "Blue",
+          "value": "bg-blue"
+        }
+      ]
+    }
+  ]
+}
+```
 
 ## Using Other Working Branches {#other-branches}
 
