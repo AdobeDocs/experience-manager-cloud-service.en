@@ -71,7 +71,7 @@ The following quote block example follows this approach.
    }
    ```
 
->[TAB Screenshot]
+>[!TAB Screenshot]
 
 ![Editing the component-definitions.json file to define the quote block](assets/create-block/component-definitions.png)
 
