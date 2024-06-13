@@ -830,7 +830,7 @@ Yes, connections are closed at the JVM and different points in the networking in
 No, there is no license or cost associated with this limit. It is a technical limit.
 
 ##### How close are we to the limit? What is the maximum limit?
-The alert is triggered when connections exceed 750. The maximum limit is 1000 connections per pod.
+The alert is triggered when connections exceed 750. The maximum limit is 1000 connections per AEM instance.
 
 ##### Is this limit applicable to VPNs?
 Yes, the limit applies to connections using Advanced Networking, including VPNs.
