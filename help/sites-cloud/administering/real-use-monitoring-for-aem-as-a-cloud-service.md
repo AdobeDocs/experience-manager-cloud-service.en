@@ -100,7 +100,7 @@ As you will analyze RUM data, there may be variances in Page Views and other per
    
 1. **The `/.rum` path is blocked on my site, how should I fix?**
 
-   The `/.rum` path is required for RUM collection to work.  If you have a CDN in front of what Adobe provides as part of AEM as a Cloud Service, you need to ensure that the `/.rum` path forwards to the same AEM origin as the rest of your AEM content.
+   The `/.rum` path is required for RUM collection to work.  If you have a CDN in front of what Adobe provides as part of AEM as a Cloud Service, you need to ensure that the `/.rum` path forwards to the same AEM origin as the rest of your AEM content and is not adjusted in any way.
    
 1. **Does RUM collection count toward content requests for contractual purposes?**
 
