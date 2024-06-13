@@ -11,7 +11,7 @@ role: Admin, Architect, Developer
 >
 >This feature is not yet released, and some logging destinations may not be available at the time of release. In the meantime, you can open a support ticket to forward logs to **Splunk**, as described in the [logging article](/help/implementing/developing/introduction/logging.md).
 
-Customers who have a license for a logging vendor or host a logging product can have AEM, Apache/Dispatcher, and CDN logs forwarded to the associated logging destinations. AEM as a Cloud Service supports the following logging destinations: 
+Customers who have a license for a logging vendor or host a logging product can have AEM logs (including Apache/Dispatcher) and CDN logs forwarded to the associated logging destinations. AEM as a Cloud Service supports the following logging destinations: 
 
 * Azure Blob Storage
 * DataDog
@@ -66,7 +66,7 @@ This article is organized in the following way:
    
    Tokens in the configuration (such as `${{SPLUNK_TOKEN}}`) represent secrets, which should not be stored in Git. Instead, declare them as Cloud Manager  [Environment Variables](/help/implementing/cloud-manager/environment-variables.md) of type **secret**. Make sure to select **All** as the dropdown value for the Service Applied field, so logs can be forwarded to author, publish, and preview tiers.
    
-   It is possible to set different values between cdn logs and everything else (AEM and apache logs), by including an additional **cdn** and/or **aem** block after the **default** block, where properties can override those defined in the **default** block; only the enabled property is required. A possible use case could be to use a different Splunk index for CDN logs, as the example below illustrates. 
+   It is possible to set different values between CDN logs and AEM logs (including Apache/Dispatcher), by including an additional **cdn** and/or **aem** block after the **default** block, where properties can override those defined in the **default** block; only the enabled property is required. A possible use case could be to use a different Splunk index for CDN logs, as the example below illustrates. 
    
    ```
       kind: "LogForwarding"
@@ -86,7 +86,7 @@ This article is organized in the following way:
             index: "AEMaaCS_CDN"   
    ```
    
-   Another scenario is to disable either forwarding of the CDN logs or everything else (AEM and apache logs). For example, to only forward the CDN logs, one can configure the following: 
+   Another scenario is to disable either forwarding of the CDN logs or AEM logs (including Apache/Dispatcher). For example, to only forward the CDN logs, one can configure the following: 
 
    ```
       kind: "LogForwarding"
@@ -168,9 +168,9 @@ aemcdn/
 
 Each file contains multiple json log entries, each on a separate line. The log entry formats are described in the [logging article](/help/implementing/developing/introduction/logging.md), and each log entry also includes the additional properties mentioned in the [Log Entry Formats](#log-format) section below.
 
-#### Other Azure Blob Storage logs {#azureblob-other}
+#### Azure Blob Storage AEM logs {#azureblob-aem}
 
-Logs other than CDN logs appear below a folder with the following naming convention:
+AEM logs (including Apache/Dispatcher) appear below a folder with the following naming convention:
 
 * aemaccess
 * aemerror
@@ -249,9 +249,14 @@ Web requests (POSTs) will be sent continuously, with a json payload that is an a
 
 There is also be a property named `sourcetype`, which is set to the value `aemcdn`.
 
-#### Other HTTPS logs {#https-other}
+>[!NOTE]
+>
+> Before the first CDN log entry is sent, your HTTP server must successfully complete a one-time challenge: a request sent to the path ``wellknownpath`` must respond with ``*``.
 
-A separate web request (POST) will be sent for each log entry, with the log entry formats described in the [logging article](/help/implementing/developing/introduction/logging.md). Additional properties are mentioned in the [Log Entry Formats](#log-format) section below.
+
+#### HTTPS AEM logs {#https-aem}
+
+For AEM logs (including apache/dispacher), web requests (POSTs) will be sent continuously, with a json payload that is an array of log entries, with the various log entry formats as described in the [logging article](/help/implementing/developing/introduction/logging.md#cdn-log). Additional properties are mentioned in the [Log Entry Formats](#log-format) section below.
 
 There is also be a property named `sourcetype`, which is set to one of these values:
 
@@ -299,7 +304,7 @@ There is also be a property named `sourcetype`, which is set to one of these val
 
 ## Log Entry Formats {#log-formats}
 
-See the general [logging article](/help/implementing/developing/introduction/logging.md) for the format of each respective log type (Dispatcher log, CDN log, etc).
+See the general [logging article](/help/implementing/developing/introduction/logging.md) for the format of each respective log type (CDN logs, and AEM logs including Apache/Dispatcher).
 
 Since logs from multiple programs and environments may be forwarded to the same logging destination, in addition to the output described in the logging article, the following properties will be included in each log entry:
 
@@ -329,7 +334,7 @@ Some organizations choose to restrict which traffic can be received by the loggi
 
 For the CDN log, you can allow-list the IP addresses, as described in [this article](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). If that list of shared IP addresses is too large, consider sending traffic to a (non-Adobe) Azure Blob Store where logic can be written to send the logs out of a dedicated IP to their ultimate destination. 
 
-For other logs, you can configure log forwarding to go through [advanced networking](/help/security/configuring-advanced-networking.md). See the patterns for the three advanced networking types below, which make use of an optional `port` parameter, along with the `host` parameter.
+For AEM logs (including Apache/Dispatcher), you can configure log forwarding to go through [advanced networking](/help/security/configuring-advanced-networking.md). See the patterns for the three advanced networking types below, which make use of an optional `port` parameter, along with the `host` parameter.
 
 ### Flexible Port Egress {#flex-port}
 
