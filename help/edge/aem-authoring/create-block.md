@@ -16,7 +16,7 @@ This guide provides step-by-step instructions for how to create blocks instrumen
 
 This guide necessarily requires existing knowledge of AEM authoring with Edge Delivery Services projects as well as the Universal Editor. Before beginning this guide, you should already have access to Edge Delivery Services and be familiar with its basics including:
 
-You have completed the [Edge Delivery Service tutorial.](/help/edge/developer/tutorial.md)
+* You have completed the [Edge Delivery Service tutorial.](/help/edge/developer/tutorial.md)
 * You have access to an [AEM Cloud Service sandbox.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
 * You have [enabled the Universal Editor on the same sandbox environment.](/help/implementing/universal-editor/getting-started.md)
 * You have completed the [Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/aem-authoring/edge-dev-getting-started.md) guide.
@@ -51,25 +51,25 @@ The following quote block example follows this approach.
 
 >[!TAB JSON Example]
 
-   ```json
-   {
-     "title": "Quote",
-     "id": "quote",
-     "plugins": {
-       "xwalk": {
-         "page": {
-           "resourceType": "core/franklin/components/block/v1/block",
-           "template": {
-             "name": "Quote",
-             "model": "quote",
-             "quote": "<p>Think, McFly! Think!</p>",
-             "author": "Biff Tannen"
-           }
-         }
-       }
-     }
-   }
-   ```
+```json
+{
+  "title": "Quote",
+  "id": "quote",
+  "plugins": {
+    "xwalk": {
+      "page": {
+        "resourceType": "core/franklin/components/block/v1/block",
+        "template": {
+          "name": "Quote",
+          "model": "quote",
+          "quote": "<p>Think, McFly! Think!</p>",
+          "author": "Biff Tannen"
+        }
+      }
+    }
+  }
+}
+```
 
 >[!TAB Screenshot]
 
@@ -85,27 +85,27 @@ The following quote block example follows this approach.
 
 >[!TAB JSON Example]
 
-   ```json
-   {
-     "id": "quote",
-     "fields": [
-        {
-          "component": "text-area",
-          "name": "quote",
-          "value": "",
-          "label": "Quote",
-          "valueType": "string"
-        },
-        {
-          "component": "text-input",
-          "valueType": "string",
-          "name": "author",
-          "label": "Author",
-          "value": ""
-        }
-      ]
-   }
-   ```
+```json
+{
+  "id": "quote",
+  "fields": [
+     {
+       "component": "text-area",
+       "name": "quote",
+       "value": "",
+       "label": "Quote",
+       "valueType": "string"
+     },
+     {
+       "component": "text-input",
+       "valueType": "string",
+       "name": "author",
+       "label": "Author",
+       "value": ""
+     }
+   ]
+}
+```
 
 >[!TAB Screenshot]
 
@@ -119,21 +119,21 @@ The following quote block example follows this approach.
 
 >[!TAB JSON Example]
 
-   ```json
-   {
-     "id": "section",
-     "components": [
-       "text",
-       "image",
-       "button",
-       "title",
-       "hero",
-       "cards",
-       "columns",
-       "quote"
-      ]
-   }
-   ```
+```json
+{
+  "id": "section",
+  "components": [
+    "text",
+    "image",
+    "button",
+    "title",
+    "hero",
+    "cards",
+    "columns",
+    "quote"
+   ]
+}
+```
 
 >[!TAB Screenshot]
 
@@ -196,14 +196,14 @@ Now that you have a working quote block you can apply styling to it.
 
 >[!TAB JavaScript Example]
 
-   ```javascript
-   export default function decorate(block) {
-     const [quoteWrapper] = block.children;
+```javascript
+export default function decorate(block) {
+  const [quoteWrapper] = block.children;
  
-     const blockquote = document.createElement('blockquote');
-     blockquote.textContent = quoteWrapper.textContent.trim();
-     quoteWrapper.replaceChildren(blockquote);
-   }
+  const blockquote = document.createElement('blockquote');
+  blockquote.textContent = quoteWrapper.textContent.trim();
+  quoteWrapper.replaceChildren(blockquote);
+}
    ```
 
 >[!TAB Screenshot]
@@ -218,38 +218,38 @@ Now that you have a working quote block you can apply styling to it.
 
 >[!TAB CSS Example]
 
-   ```css
-   .block.quote {
-       background-color: #ccc;
-       padding: 0 0 24px;
-       display: flex;
-       flex-direction: column;
-       margin: 1rem 0;
-   }
+```css
+.block.quote {
+    background-color: #ccc;
+    padding: 0 0 24px;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
  
-   .block.quote blockquote {
-       margin: 16px;
-       text-indent: 0;
-   }
+.block.quote blockquote {
+    margin: 16px;
+    text-indent: 0;
+}
  
-   .block.quote > div:last-child > div {
-       margin: 0 16px;
-       font-size: small;
-       font-style: italic;
-       position: relative;
-   }
+.block.quote > div:last-child > div {
+    margin: 0 16px;
+    font-size: small;
+    font-style: italic;
+    position: relative;
+}
  
-   .block.quote > div:last-child > div::after {
-       content: "";
-       display: block;
-       position: absolute;
-       left: 0;
-       bottom: -8px;
-       height: 5px;
-       width: 30px;
-       background-color: darkgray;
-   }
-   ```
+.block.quote > div:last-child > div::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    height: 5px;
+    width: 30px;
+    background-color: darkgray;
+}
+```
 
 >[!TAB Screenshot]
 
@@ -334,4 +334,3 @@ Please see the document [Content Modeling for AEM authoring with Edge Delivery S
 >[!TIP]
 >
 >For an end-to-end walkthrough of creating a new Edge Delivery Services project that is enabled for AEM authoring with AEM as a Cloud Service as a content source, please view [this AEM GEMs webinar.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
-

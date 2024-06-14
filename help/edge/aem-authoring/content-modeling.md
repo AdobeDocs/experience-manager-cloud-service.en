@@ -339,7 +339,7 @@ For some values we can infer the semantic meaning from the values itself. Such v
 * **Images** - If a reference to a resource in AEM is an asset with a MIME type starting with `image/`,  the reference is rendered as `<picture><img src="${reference}"></picture>`.
 * **Links** - If a reference exists in AEM and is not an image, or if the value starts with `https?://`  or `#`,  the reference is rendered as `<a href="${reference}">${reference}</a>` .
 * **Rich Text** - If a trimmed value starts with a paragraph (`p`, `ul`, `ol`, `h1`-`h6`, etc.), the value is rendered as rich text.
-* **Class Names** - The `classes` property is treated as [block options](/help/edge/developer/markup-sections-blocks.md#block-options) and rendered in the table header for [simple blocks,](#simple) or as value list for items in a [container block.](#container)
+* **Class Names** - The `classes` property is treated as [block options](/help/edge/developer/markup-sections-blocks.md#block-options) and rendered in the table header for [simple blocks,](#simple) or as value list for items in a [container block.](#container) It is useful if you wish to [style a block differently,](/help/edge/aem-authoring/create-block.md#block-options) but don't need to create an entirely new block.
 * **Value Lists** - If a value is a multi-value property and the first value is none of the previous, all values are concatenated as comma-separated list.
 
 Everything else will be rendered as plain text.
