@@ -2,8 +2,8 @@
 title: Process assets using asset microservices
 description: Process your digital assets using cloud-native and scalable asset processing microservices.
 contentOwner: AG
-feature: Asset Compute Microservices,Workflow,Release Information,Asset Processing
-role: Architect,Admin
+feature: "Asset Compute Microservices, Asset Ingestion, Asset Processing"
+role: "Architect, Admin"
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
 ---
 # Overview of asset ingestion and processing with asset microservices {#asset-microservices-overview}

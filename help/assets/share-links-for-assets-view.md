@@ -2,7 +2,7 @@
 title: How to share links to assets?
 description: Generate a link and share assets with others who do not have access to the [!DNL Assets view] application.
 exl-id: 7d7d488b-410b-4e90-bd10-4ffbb5fcec49
-feature: "Adobe Asset Link, Asset Sharing"
+feature: "Adobe Asset Link, Link Sharing"
 role: Admin
 ---
 # Share links to assets {#share-links-assets}

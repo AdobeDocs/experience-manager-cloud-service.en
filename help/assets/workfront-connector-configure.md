@@ -2,7 +2,7 @@
 title: Configure [!DNL Workfront for Experience Manager enhanced connector]
 description: Configure [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
-feature: "Integrations, Experience Manager Intergration, Workfront , Workfront Integrations and Apps"
+feature: Workfront Integrations and Apps
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
 ---
 # Configure [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
