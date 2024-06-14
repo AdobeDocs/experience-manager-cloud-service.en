@@ -4,6 +4,7 @@ description: Learn how to manage metadata in Assets view. Better metadata manage
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
+feature: "Metadata, Metadata management"
 ---
 # Metadata in Assets View {#metadata}
 

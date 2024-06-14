@@ -4,6 +4,7 @@ description: Use Asset selector to search, find, and retrieve assets' metadata a
 contentOwner: KK
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
+feature: Use Cases
 ---
 # Micro-Frontend Asset Selector {#Overview}
 
