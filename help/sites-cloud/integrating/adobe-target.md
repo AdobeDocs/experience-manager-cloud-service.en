@@ -24,8 +24,11 @@ To integrate with Target, perform the following tasks:
 * [Perform prerequisite tasks](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html): Register with Adobe Target and configure certain aspects of the AEM author instance. Your Adobe Target account must have **approver** level permissions at a minimum. In addition, you must secure the activity settings on the publish node so that it is inaccessible to users.
 
 * Launch by Adobe is the defacto tool for instrumenting an AEM site with Target capabilities (JS libraries). Therefore, integrating AEM as a Cloud Service with Launch and Adobe Target goes hand-in-hand (see the links below).
-   
+
+<!--   
   * [Integration with Adobe Target using Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-target-ims.html)
+--> 
+
   * [Integrate Launch by Adobe](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
   * [Integrate AEM with Adobe Launch by way of Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
   * [Understanding AEM Integration with Launch By Adobe, Analytics and Target](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
