@@ -2,7 +2,7 @@
 title: Publish assets, folders, and collections to Brand Portal
 description: Publish assets, folders, and collections to Brand Portal.
 contentOwner: Adobe
-feature: Brand Portal,Asset Distribution,Configuration
+feature: "Brand Portal, Asset Distribution, Configuration"
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
 ---

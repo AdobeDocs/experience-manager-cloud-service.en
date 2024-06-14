@@ -2,8 +2,8 @@
 title: How to add smart tags to assets in AEM?
 description: Add smart tags to assets in AEM with an artificially intelligent service that applies contextual and descriptive business tags.
 contentOwner: AG
-feature: Smart Tags,Tagging
-role: Admin,User
+feature: Smart Tags
+role: "Admin, User"
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 ---
 

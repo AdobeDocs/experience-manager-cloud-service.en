@@ -2,7 +2,7 @@
 title: Notable changes in [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service]
 description: Notable changes to [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] as compared to [!DNL Adobe Experience Manager] 6.5.
 feature: Release Information
-role: User,Leader,Architect,Admin
+role: "User, Leader, Architect, Admin"
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
 ---
 # Notable changes to [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#notable-changes}

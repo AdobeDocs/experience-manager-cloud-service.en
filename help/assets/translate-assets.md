@@ -2,8 +2,8 @@
 title: How to translate assets in AEM?
 description: Learn how to automate workflows to translate assets in AEM, including binaries, metadata, and tags into multiple languages.
 contentOwner: AG
-feature: Asset Management,Translation
-role: Admin,User
+feature: "Asset Management, Translation"
+role: "Admin, User"
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
 ---
 # Translate assets in AEM {#multilingual-assets}
