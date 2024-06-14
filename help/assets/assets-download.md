@@ -1,16 +1,16 @@
 ---
-title: Download assets from the content module of Adobe GenStudio
-description: Download assets from the content module of Adobe GenStudio
+title: Download assets from the Content Hub
+description: Download assets from the Content Hub
 role: User
 ---
-# Download assets from the content module of Adobe GenStudio {#download-assets}
+# Download assets from the Content Hub {#download-assets}
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Download assets](assets/download-asset-genstudio.jpeg)
 
-The content module of Adobe GenStudio lets you download and share your assets. These assets may include images, videos, or any other digital content. The content module of Adobe GenStudio enhances accessibility and adaptability for effective asset management and distribution.  
+The Content Hub lets you download and share your assets. These assets may include images, videos, or any other digital content. The Content Hub enhances accessibility and adaptability for effective asset management and distribution.  
 
-You can download single asset or multiple assets using the content module of Adobe GenStudio. The original versions of the asset are downloaded.
+You can download single asset or multiple assets using the Content Hub. The original versions of the asset are downloaded.
 
 ## Download asset {#download-single-asset} 
 
