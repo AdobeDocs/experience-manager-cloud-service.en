@@ -1,10 +1,10 @@
 ---
 title: Supported file formats
 description: Supported file formats for the various use cases of [!DNL Assets view]
-role: "User, Leader, Admin, Architect, Developer"
+role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 5936ace2-318e-4888-9ad4-23e6f6bfb857
-feature: "Asset Management, Publishing, Collaboration, Asset Processing"
+feature: Asset Management, Publishing, Collaboration, Asset Processing
 ---
 # Files formats support in [!DNL Assets view] {#file-format-support}
 

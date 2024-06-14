@@ -3,7 +3,7 @@ title: How to watermark your assets in AEM?
 description: Learn how to add a digital watermark to your assets in AEM. Watermarks can help users verify the authenticity and copyright ownership of the assets.
 contentOwner: AG
 feature: Asset Management,Publishing
-role: "User, Admin"
+role: User, Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
 ---
 # Watermark your assets {#watermark-assets}
