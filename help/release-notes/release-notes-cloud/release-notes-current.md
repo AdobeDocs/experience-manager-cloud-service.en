@@ -130,8 +130,8 @@ Forms service generates interactive PDF forms for data capture. It can also be u
      
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### New Actions Center notifications {#actions-center-notifications}
-[Actions Center](/help/operations/actions-center.md) sends email notifications when important incidents happen, or if we notice something about your code or configuration where you should take proactive action. We have now introduced several new types of notification associated with your content health. This is available through an early adopter program. To participate, please reach out to Adobe Customer Care.
+### Content health-related Actions Center notifications Early Adopter Program {#actions-center-notifications}
+[Actions Center](/help/operations/actions-center.md) sends email notifications when important incidents happen, or if we notice something about your code or configuration where you should take proactive action. We have now introduced several new types of notifications associated with your content health. This is available through an early adopter program. To participate, please reach out to Adobe Customer Care.
 
 #### Pages contain a large number of nodes {#page-nodes}
 A large number of nodes can degrade rendering performance and reduce page load times. Receive a proactive notification through Actions Center when a large number of nodes is detected on a page, allowing you to take the necessary steps to reduce the total number of nodes withing a page.
@@ -151,7 +151,7 @@ Receive a proactive notification through Actions Center when completed workflows
 #### Missing Sling resource {#sling-resource}
 Receive a proactive notification through Actions Center when a missing Sling resource is detected, allowing you to add the missing Sling resource and avoid failure of certain AEM Assets features.
 
-### Early Adopter Programs {#foundation-early-adopter}
+### Content Delivery-related Early Adopter Programs {#foundation-early-adopter}
 
 Email **<aemcs-cdn-config-adopter@adobe.com>**, indicating which of the early adopter programs below you are interested in.
 
