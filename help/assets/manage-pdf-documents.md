@@ -2,7 +2,7 @@
 title: Manage your PDF documents in [!DNL Adobe Experience Manager].
 description: Manage PDF documents in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 feature: Asset Management
-role: "User, Admin"
+role: User, Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
 ---
 # Manage PDF documents in Experience Manager Assets as a Cloud Service {#add-assets-to-experience-manager}

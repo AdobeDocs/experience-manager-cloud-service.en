@@ -3,7 +3,7 @@ title: Upload assets to the repository
 description: Upload assets to [!DNL Assets view], view upload statuses, and resolve upload issues.
 role: User
 exl-id: 01af3b66-dba8-4b09-aadf-ba4ae09b824f
-feature: "Asset Management, Publishing, Collaboration, Asset Processing"
+feature: Asset Management, Publishing, Collaboration, Asset Processing
 ---
 # Upload assets {#add-assets}
 

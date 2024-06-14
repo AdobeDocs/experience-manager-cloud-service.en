@@ -3,7 +3,7 @@ title: How to edit or add metadata
 description: Learn about asset metadata in [!DNL Experience Manager Assets] an various ways by which you can edit asset metadata.
 contentOwner: AG
 feature: Metadata
-role: "User, Admin"
+role: User, Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
 ---
 # How to edit or add metadata {#how-to-edit-or-add-metadata}

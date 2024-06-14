@@ -2,7 +2,7 @@
 title: Architecture of [!DNL Assets]
 description: Architecture of Adobe Experience Manager Assets as a [!DNL Cloud Service]
 contentOwner: AG
-feature: "Asset Management, Asset Compute Microservices "
+feature: Asset Management, Asset Compute Microservices 
 role: Architect
 exl-id: 0440c6a0-97c7-440e-a96e-629825d34a73
 ---

@@ -2,8 +2,8 @@
 title: Color tags for images
 description: Adobe Experience Manager Assets enables you to distinguish between colors in an image and apply those as tags automatically. You can then use these tags to search and filter images.
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-feature: "Smart Imaging, Interactive Images, Asset Management"
-role: "User, Admin"
+feature: Smart Imaging, Interactive Images, Asset Management
+role: User, Admin
 ---
 # Color tags for images {#color-tag-images}
 

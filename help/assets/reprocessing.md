@@ -4,7 +4,7 @@ description: Learn about various methods of reprocessing digital assets
 contentOwner: KK
 exl-id: 4759fa8c-10c7-4446-a135-3104b9beaee8
 feature: Asset Processing
-role: "User, Leader, Developer"
+role: User, Leader, Developer
 ---
 # Reprocessing digital assets {#reprocessing-digital-assets}
 
