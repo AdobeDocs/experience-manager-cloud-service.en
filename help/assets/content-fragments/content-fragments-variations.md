@@ -2,6 +2,8 @@
 title: Variations - Authoring Fragment Content (Assets - Content Fragments)
 description: Understand how Content Fragment variations allow you to author content for the fragment, then create variations of that content according to purpose, therefore increasing the flexibility. 
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
+feature: Content Fragments
+role: user
 ---
 # Variations - Authoring Fragment Content{#variations-authoring-fragment-content}
 

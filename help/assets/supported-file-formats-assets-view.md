@@ -4,6 +4,7 @@ description: Supported file formats for the various use cases of [!DNL Assets vi
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: 5936ace2-318e-4888-9ad4-23e6f6bfb857
+feature: AEM
 ---
 # Files formats support in [!DNL Assets view] {#file-format-support}
 

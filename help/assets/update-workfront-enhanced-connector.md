@@ -2,6 +2,8 @@
 title: Update [!DNL Workfront for Experience Manager enhanced connector]
 description: Update [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 09276b4d-a7c8-4927-8c0a-40eda48e55a7
+feature: "Integrations, Experience Manager Intergration, Workfront , Workfront Integrations and Apps"
+role: Admin
 ---
 # Update [!DNL Workfront for Experience Manager enhanced connector] {#update-enhanced-connector-for-workfront}
 

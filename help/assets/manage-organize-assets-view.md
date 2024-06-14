@@ -4,6 +4,7 @@ description: Move, delete, copy, rename, update, and version your assets in [!DN
 role: User,Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
+feature: "Asset Management,Publishing,Collaboration,Asset Processing"
 ---
 # Manage assets {#manage-assets}
 
