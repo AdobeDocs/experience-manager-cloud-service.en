@@ -2,6 +2,8 @@
 title: Metadata - Fragment Properties (Assets - Content Fragments)
 description: See how you can view and edit the metadata properties for Content Fragments.
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
+feature: Content Fragments
+role: user
 ---
 # Metadata - Fragment Properties {#metadata-fragment-properties}
 
