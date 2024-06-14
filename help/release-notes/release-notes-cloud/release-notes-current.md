@@ -247,7 +247,7 @@ You can find a complete list of Migration Tools releases [here](/help/journey-mi
 
 ## Universal Editor {#universal-editor}
 
-You can find a complete list of Universal Editor releases [here.](/help/release-notes/universal-editor/current.md)
+You can find a complete list of Universal Editor releases [here](/help/release-notes/universal-editor/current.md).
 
 ## Generate Variations {#generate-variations}
 
