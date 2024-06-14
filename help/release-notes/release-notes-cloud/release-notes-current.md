@@ -245,6 +245,10 @@ You can find a complete list of Cloud Manager monthly releases [here](/help/impl
 
 You can find a complete list of Migration Tools releases [here](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
 
+## Universal Editor {#universal-editor}
+
+You can find a complete list of Universal Editor releases [here.](/help/release-notes/universal-editor/current.md)
+
 ## Experience Cloud Release Notes {#experience-cloud}
 
 You can find information about releases of other Experience Cloud applications [here](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current).
