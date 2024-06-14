@@ -146,10 +146,10 @@ Receive a proactive notification through Actions Center when users are added dir
 Receive a proactive notification through Actions Center when missing JCR content is detected, allowing you to add the missing JCR content and avoid failure of certain AEM Assets features.
 
 #### Completed workflows not purged {#workflows}
-Receive a proactive notification through Actions Center when missing JCR content is detected, allowing you to add the missing JCR content and avoid failure of certain AEM Assets features.
+Receive a proactive notification through Actions Center when completed workflows over 90 days have not been purged, allowing you to improve the performance of your workflow engine by minimizing the number of workflows instances. 
 
 #### Missing Sling resource {#sling-resource}
-Receive a proactive notification through Actions Center when missing JCR content is detected, allowing you to add the missing JCR content and avoid failure of certain AEM Assets features.
+Receive a proactive notification through Actions Center when a missing Sling resource is detected, allowing you to add the missing Sling resource and avoid failure of certain AEM Assets features.
 
 ### Early Adopter Programs {#foundation-early-adopter}
 
