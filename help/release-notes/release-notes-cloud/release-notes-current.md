@@ -249,6 +249,10 @@ You can find a complete list of Migration Tools releases [here](/help/journey-mi
 
 You can find a complete list of Universal Editor releases [here.](/help/release-notes/universal-editor/current.md)
 
+## Generate Variations {#generate-variations}
+
+You can find a complete list of Generate Variations releases [here](/help/generative-ai/release-notes-generate-variations.md).
+
 ## Experience Cloud Release Notes {#experience-cloud}
 
 You can find information about releases of other Experience Cloud applications [here](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current).
