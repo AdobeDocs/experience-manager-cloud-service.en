@@ -18,7 +18,7 @@ Edge Delivery Services is a composable set of services that allows for a high de
 * Create fast sites with a perfect Lighthouse Score and continuously monitor performance through real use monitoring (RUM).
 * Increase authoring efficiency by decoupling content sources.
 
-You can use both AEM content management and AEM-based authoring using the Universal Editor as well as document-based authoring.
+You can use both AEM content management and WYSIWYG authoring using the Universal Editor as well as document-based authoring.
 
 Cloud Manager in AEM as a Cloud Service allows you to enable Edge Delivery Service for your project.
 
