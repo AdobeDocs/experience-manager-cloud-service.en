@@ -16,7 +16,7 @@ This guide provides step-by-step instructions for how to create blocks instrumen
 
 This guide necessarily requires existing knowledge of AEM authoring with Edge Delivery Services projects as well as the Universal Editor. Before beginning this guide, you should already have access to Edge Delivery Services and be familiar with its basics including:
 
-You have completed the [Edge Delivery Service tutorial.](/help/edge/developer/tutorial.md)
+* You have completed the [Edge Delivery Service tutorial.](/help/edge/developer/tutorial.md)
 * You have access to an [AEM Cloud Service sandbox.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
 * You have [enabled the Universal Editor on the same sandbox environment.](/help/implementing/universal-editor/getting-started.md)
 * You have completed the [Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/aem-authoring/edge-dev-getting-started.md) guide.
@@ -45,7 +45,7 @@ The following quote block example follows this approach.
 
    ![Cloning the project](assets/create-block/clone.png)
 
-1. Edit the `component-definition.json` file at the root of the project and add the following definition for your new quote block and save the file.
+2. Edit the `component-definition.json` file at the root of the project and add the following definition for your new quote block and save the file.
 
 >[!BEGINTABS]
 
@@ -77,7 +77,7 @@ The following quote block example follows this approach.
 
 >[!ENDTABS]
 
-1. Edit the `component-models.json` file at the root of the project and add the following [model definition](/help/implementing/universal-editor/field-types.md#model-structure) for your new quote block and save the file.
+3. Edit the `component-models.json` file at the root of the project and add the following [model definition](/help/implementing/universal-editor/field-types.md#model-structure) for your new quote block and save the file.
 
    * Please see the document [Content Modeling for AEM authoring with Edge Delivery Services Projects](/help/edge/aem-authoring/content-modeling.md) for more information about what is important to consider when creating content models.
 
@@ -113,7 +113,7 @@ The following quote block example follows this approach.
 
 >[!ENDTABS]
 
-1. Edit the `component-filters.json` file at the root of the project and add the quote block to the [filter definition](/help/implementing/universal-editor/customizing.md#filtering-components) to allow the block to be added to any section and save the file.
+4. Edit the `component-filters.json` file at the root of the project and add the quote block to the [filter definition](/help/implementing/universal-editor/customizing.md#filtering-components) to allow the block to be added to any section and save the file.
 
 >[!BEGINTABS]
 
@@ -141,7 +141,7 @@ The following quote block example follows this approach.
 
 >[!ENDTABS]
 
-1. Using git, commit these changes to your `main` branch.
+5. Using git, commit these changes to your `main` branch.
 
    * Committing to `main` is for illustrative purposes only. [Follow best practices](https://www.aem.live/docs/dev-collab-and-good-practices) and use a pull request for actual project work.
 
@@ -186,11 +186,11 @@ Now that you have a working quote block you can apply styling to it.
 
 1. Return to the editor for your project.
 
-1. Create a `quote` folder under the `blocks` folder.
+2. Create a `quote` folder under the `blocks` folder.
 
    ![Create a quote folder](assets/create-block/new-folder.png)
 
-1. In the new `quote` folder, add a `quote.js` file to implement block decoration by adding the following JavaScript and save the file.
+3. In the new `quote` folder, add a `quote.js` file to implement block decoration by adding the following JavaScript and save the file.
 
 >[!BEGINTABS]
 
@@ -212,7 +212,7 @@ Now that you have a working quote block you can apply styling to it.
 
 >[!ENDTABS]
 
-1. In the `quote` folder, add a `quote.css` file to define the styling for the block by adding the following CSS code and save the file.
+4. In the `quote` folder, add a `quote.css` file to define the styling for the block by adding the following CSS code and save the file.
 
 >[!BEGINTABS]
 
@@ -257,17 +257,17 @@ Now that you have a working quote block you can apply styling to it.
 
 >[!ENDTABS]
 
-1. Using git, commit these changes to your `main` branch.
+5. Using git, commit these changes to your `main` branch.
 
    * Committing to `main` is for illustrative purposes only. [Follow best practices](https://www.aem.live/docs/dev-collab-and-good-practices) and use a pull request for actual project work.
 
-1. Return to your browser tab of the Universal Editor where you were editing the page of your project and reload the page to view your styled block.
+6. Return to your browser tab of the Universal Editor where you were editing the page of your project and reload the page to view your styled block.
 
-1. See the now styled quote block on the page.
+7. See the now styled quote block on the page.
 
    ![The styled quote block in the Universal Editor](assets/create-block/quote-styled.png)
 
-1. Verify that the changes were pushed to production by navigating to the published page. The link will be similar to `https://<branch>--<repo>--<owner>.hlx.page`
+8. Verify that the changes were pushed to production by navigating to the published page. The link will be similar to `https://<branch>--<repo>--<owner>.hlx.page`
 
    ![The published and styled quote block](assets/create-block/quote-styled-published.png)
 
@@ -334,4 +334,3 @@ Please see the document [Content Modeling for AEM authoring with Edge Delivery S
 >[!TIP]
 >
 >For an end-to-end walkthrough of creating a new Edge Delivery Services project that is enabled for AEM authoring with AEM as a Cloud Service as a content source, please view [this AEM GEMs webinar.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
-
