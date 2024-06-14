@@ -87,6 +87,8 @@ Want to learn more? Go to [Organize assets as collections](/help/assets/manage-c
 A processing profile automates asset handling in designated folders, streamlining organization. Standardizing metadata, file names, and folder structures allows for consistent and precise application of these profiles as your digital asset collection expands.
 Want to learn more? Go to [Organize assets using profiles](/help/assets/organize-assets.md#organize-to-use-profiles).
 
+ 
+
 ### Optimize the quality of images
 
 **Business case:** *Obtain good quality images from Dynamic Media.*
@@ -174,7 +176,7 @@ Dynamic Media lets you manipulate images directly through URLs, making it a powe
 | --- | --- |
 | **White border** | To add a white border, use the following URL:<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10)<br>In this URL, the `extend=10,10,10,10` parameter specifies the border size of ten pixels on all sides. | 
 | **Blur along the white border** | To add a blur effect along the white border, you can edit the URL as follows:<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&op_blur=60&color=0,0,0](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&op_blur=60&color=0,0,0)<br>In this URL, the `effect=-1` parameter applies the blur effect, and `op_blur=60` controls the blur intensity. |
-| **Drop shadow effect along the outer boundary** | To add a drop shadow effect along the outer boundary, use this URL:<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&$shadow$&color=0,0,0](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&$shadow$&color=0,0,0)<br>The `$shadow$` parameter creates the shadow effect, and `color=0,0,0` sets the shadow color to black. |
+| **Drop shadow effect along the outer boundary** | To add a drop shadow effect along the outer boundary, use this URL:<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&$shadow$&color=0,0,0](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&$shadow$&color=0,0,0)<br>The `$shadow$` parameter creates the shadow effect, and `color=0,0,0` sets the shadow color to black.  |
 
 Feel free to experiment with these URLs to achieve the desired visual effects.
 
