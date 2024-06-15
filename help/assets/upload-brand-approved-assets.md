@@ -1,14 +1,14 @@
 ---
-title: Upload your brand approved assets to [!DNL Adobe GenStudio]
-description: Learn how to upload your brand approved assets to Content module of GenStudio
+title: Upload your brand approved assets to [!DNL Content Hub]
+description: Learn how to upload your brand approved assets to Content Hub
 role: User
 ---
 
-# Upload brand approved assets to Adobe GenStudio {#upload-brand-approved-assets-genstudio}
+# Upload brand approved assets to Content Hub {#upload-brand-approved-assets-content-hub}
 
-Add assets to the Content module of Adobe GenStudio either from your local file system or while creating assets using Adobe Express and saving it to Adobe GenStudio using the Express-add on. All assets display at the top-level in Content module of Adobe GenStudio irrespective of the folder structure available on your local file system to enhance the search capabilities.
+Add assets to the Content Hub either from your local file system or while creating assets using Adobe Express and saving it to Adobe GenStudio using the Express-add on. All assets display at the top-level in Content Hub irrespective of the folder structure available on your local file system to enhance the search capabilities.
 
-To further enhance asset search, Content module of Adobe GenStudio allows you to:
+To further enhance asset search, Content Hub allows you to:
 
 * Define key details relevant to your asset upload, such as Project or campaign name, keywords, channels, and so on. 
 
@@ -16,13 +16,13 @@ To further enhance asset search, Content module of Adobe GenStudio allows you to
 
 * Use artificial intelligence provided by [Adobe Sensei](https://www.adobe.com/sensei.html) to automatically apply relevant tags to all your uploaded assets. These tags, aptly named Smart Tags, increase the content velocity of your projects by helping you find relevant assets quickly.
 
-Ensure that you only upload your brand approved assets to the Content module of Adobe GenStudio.
+Ensure that you only upload your brand approved assets to the Content Hub.
 
 ![Upload brand approved assets](assets/upload-brand-approved-assets.png)
 
-## Add assets to Content module of Adobe GenStudio {#add-assets-genstudio}
+## Add assets to Content Hub {#add-assets-genstudio}
 
-To add assets to Content module of Adobe GenStudio, perform the following steps:
+To add assets to Content Hub, perform the following steps:
 
 1. Click **[!UICONTROL Add Assets]** to view the **[!UICONTROL Upload your approved assets]** dialog box that enables you to create an upload.
 
@@ -33,12 +33,14 @@ To add assets to Content module of Adobe GenStudio, perform the following steps:
 
    To finish the upload process and enable the **[!UICONTROL Upload button]**, you must group your assets under a Project or Campaign name
    
-   ![Upload assets to content module GenStudio](assets/upload-assets-content-module-genstudio.png)
+   ![Upload assets to Content Hub](assets/upload-assets-content-hub.png)
 
 1. Define the name for your upload using the **[!UICONTROL Project or campaign name]** field. You can use an existing name or create a new one. Adobe GenStudio provides you with more options as you type the name. You can define multiple Project or Campaign names for your upload. While you are typing a name, either click anywhere else within the dialog box or press the `,` (Comma) key to register the name.
 
    As a best practice, Adobe recommends specifying values in the rest of the fields as well as it creates an enhanced search experience for your uploaded assets.
 1. Similarly, define values for the **[!UICONTROL Keywords]**, **[!UICONTROL Channels]**, **[!UICONTROL Timeframe]**, and **[!UICONTROL Region]** fields. Tagging and grouping assets by keywords, channels, and location enables everyone who uses your approved company content find these assets and keep it organized.
 
-1. Click **[!UICONTROL Upload]** to upload assets to the Content module of Adobe GenStudio.
+1. Click **[!UICONTROL Upload]** to upload assets to the Content Hub. [!UICONTROL Review details] confirmation box appears. Click [!UICONTROL Continue].
+
+1. Assets start uploading. Click [!UICONTROL New Upload] to restart the upload procedure. Click [!UICONTROL Done] to complete uploading.
 

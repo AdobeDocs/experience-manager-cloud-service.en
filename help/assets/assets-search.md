@@ -1,36 +1,36 @@
 ---
-title: Search assets in the content module of Adobe GenStudio
-description: Search assets in [!DNL the content module of Adobe GenStudio]
+title: Search assets in the Content Hub
+description: Search assets in [!DNL the Content Hub]
 role: User
 ---
 
-# Search Assets in [!DNL the content module of Adobe GenStudio] {#search-assets}
+# Search Assets in [!DNL the Content Hub] {#search-assets}
 
 ![Share assets banner image](assets/search.png)
 
-When you have a large number of assets in your repository, searching for the right asset is time-consuming. [!DNL The content module of Adobe GenStudio] search provides you with the capability to look for the approved assets so that you can perform additional actions on them, such as download, share, or create collections. You can utilize various capabilities to narrow down your search results, such as, performing text-based search, using filters, performing tags or smart tags-specific search, searching for a particular file format, and so on.
+When you have a large number of assets in your repository, searching for the right asset is time-consuming. [!DNL The Content Hub] search provides you with the capability to look for the approved assets so that you can perform additional actions on them, such as download, share, or create collections. You can utilize various capabilities to narrow down your search results, such as, performing text-based search, using filters, performing tags or smart tags-specific search, searching for a particular file format, and so on.
 
 ## What you can search for  {#what-you-can-search}
 
-The [!DNL content module of Adobe GenStudio] search provides results based on: 
+The [!DNL Content Hub] search provides results based on: 
 
-* **Matching text:** The [!DNL content module of Adobe GenStudio] search allows you to search for an asset using its name or description. You can perform keyword-based search, which compares the keyword to the text available in the properties of an asset. 
+* **Matching text:** The [!DNL Content Hub] search allows you to search for an asset using its name or description. You can perform keyword-based search, which compares the keyword to the text available in the properties of an asset. 
 
-* **Matching context:** [!DNL content module of Adobe GenStudio] search results list contains proximate results of assets that you get based on the matching context. For example, if you type `cool` in the search bar, the assets related to `winter`, `snow`, `cold surroundings`, display in the search list. 
+* **Matching context:** [!DNL Content Hub] search results list contains proximate results of assets that you get based on the matching context. For example, if you type `cool` in the search bar, the assets related to `winter`, `snow`, `cold surroundings`, display in the search list. 
 
-* **Asset information (title, tags, or smart tags):** [!DNL content module of Adobe GenStudio] uses smart search algorithm to rank search results accurately and as relevant as possible. [Metadata](#asset-properties.md) is the collection of all the data available for an asset, but it may not necessarily be contained in that asset. It helps you further categorize assets and is helpful as the amount of digital information grows. 
+* **Asset information (title, tags, or smart tags):** [!DNL Content Hub] uses smart search algorithm to rank search results accurately and as relevant as possible. [Metadata](#asset-properties.md) is the collection of all the data available for an asset, but it may not necessarily be contained in that asset. It helps you further categorize assets and is helpful as the amount of digital information grows. 
 
 * **Last modified date:** The assets that were modified recently appear on the top of search results list. You can also filter the date range as per your requirement. 
 
 * **Usage:** The commonly used assets appear on the top of the search list.
 
-* **Search history:** Click inside the search box without typing a character to get your search history. You can also remove any particular keyword from history. The search history is saved in the cache memory of a web browser, which means, if you access the [!DNL content module of Adobe GenStudio] search in a different browser or clear cache memory of the browser, you cannot view the search history anymore.
+* **Search history:** Click inside the search box without typing a character to get your search history. You can also remove any particular keyword from history. The search history is saved in the cache memory of a web browser, which means, if you access the [!DNL Content Hub] search in a different browser or clear cache memory of the browser, you cannot view the search history anymore.
 
-* **Search while you type:** The [!DNL content module of Adobe GenStudio] search enhances your search experience by providing autocomplete suggestions as you start typing.
+* **Search while you type:** The [!DNL Content Hub] search enhances your search experience by providing autocomplete suggestions as you start typing.
 
 ## Basic search {#basic-search}
 
-To perform basic search on [!DNL the content module of Adobe GenStudio], navigate to the search bar and specify the keyword that you need to search. Navigate to filters available in the left pane and apply them to narrow down your search results. 
+To perform basic search on [!DNL the Content Hub], navigate to the search bar and specify the keyword that you need to search. Navigate to filters available in the left pane and apply them to narrow down your search results. 
 
 For example, search for all the **[!UICONTROL JPEG]** images with keyword `architect` in it, which is modified within the last year. To execute this scenario, execute the following steps: 
 
@@ -138,4 +138,4 @@ Use the Filters panel to search for assets based on metadata. You can filter sea
 
 ## Do more with search {#do-more-with-search}
 
-[!DNL The content module of Adobe GenStudio] is not limited to search, instead it allows you to perform additional actions, such as [download](assets-download.md), [share](share-assets-as-a-link.md), and [add assets to collection](collections.md) right from the search or preview interface. Select the assets on the search results page to view these options. 
+[!DNL The Content Hub] is not limited to search, instead it allows you to perform additional actions, such as [download](assets-download.md), [share](share-assets-as-a-link.md), [add assets to collection](collections.md), [configure search filters](configure.md#filters), and [configure add or edit metadata](configure.md#search) right from the search or preview interface. Select the assets on the search results page to view these options. 
