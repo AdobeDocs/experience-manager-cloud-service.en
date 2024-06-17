@@ -14,7 +14,7 @@ To help you troubleshoot and resolve such problems, this page covers the *most c
 
 A GraphQL persisted query can fail when it is based on GraphQL types that are obsolete, often due to a change in the underlying Content Fragment models.
 
-Such errors can happen for a variety of reasons. For example, when the author of a Content Fragment Model (the list is not exhaustive):
+Such errors can happen for a variety of reasons. Examples include (the list is not exhaustive), when the author of a Content Fragment Model:
 
 * removes or renames a field
 * updates the **Model Type** that defines the models allowed for the fragment reference
