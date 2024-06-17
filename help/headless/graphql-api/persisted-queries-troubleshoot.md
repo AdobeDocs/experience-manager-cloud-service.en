@@ -12,7 +12,7 @@ To help you troubleshoot and resolve such problems, this page covers the *most c
 
 ## Changes to the Content Fragment model {#changes-to-content-fragment-model}
 
-A GraphQL persisted query can fail when it is based on GraphQL types that are obsolete, often due a change in the underlying Content Fragment models.
+A GraphQL persisted query can fail when it is based on GraphQL types that are obsolete, often due to a change in the underlying Content Fragment models.
 
 Such errors can happen for a variety of reasons. For example, when the author of a Content Fragment Model (the list is not exhaustive):
 
@@ -22,7 +22,7 @@ Such errors can happen for a variety of reasons. For example, when the author of
 
 To address such errors, you should either:
 
-* update the persisted query that is failing to accommodate the change on the Content Fragment Model 
+* update the persisted query that is failing to accommodate the changes made to the Content Fragment Model 
 * revert the change on the model that introduced the problem
 
 ## GraphQL endpoint not configured {#graphql-endpoint-not-configured}
@@ -41,7 +41,7 @@ The pattern should be `/graphql/execute.json/thePath`.
 
 In such a case, the query returns the `405` error code.
 
-Such an error is not something specific to GraphQL. See the KB article [405 Error Not Allowed](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-20824.html).
+Such an error is not something specific to GraphQL. See the KB article [405 Error Not Allowed](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-20824).
 
 ## Blocked by dispatcher {#blocked-dispatcher}
 
