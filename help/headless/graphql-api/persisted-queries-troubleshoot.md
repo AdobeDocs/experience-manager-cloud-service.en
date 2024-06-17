@@ -8,19 +8,19 @@ exl-id: 71bd1f68-ca96-4c78-a936-abed250ecec1
 
 The [Actions Center](/help/operations/actions-center.md) includes the **GraphQL persisted query error** alert. This means that you are informed whenever one of your GraphQL persisted queries throws an error.
 
-To help you troubleshoot and resolve such problems, this pages covers the *most common* causes of failures, and steps on how to fix them.
+To help you troubleshoot and resolve such problems, this page covers the *most common* causes of failures, and steps on how to fix them.
 
 ## Changes to the Content Fragment model {#changes-to-content-fragment-model}
 
 A GraphQL persisted query can fail when it is based on GraphQL types that are obsolete, often due a change in the underlying Content Fragment models.
 
-This can happen for a variety of reasons. For example, when the author of a Content Fragment Model (the list is not exhaustive):
+Such errors can happen for a variety of reasons. For example, when the author of a Content Fragment Model (the list is not exhaustive):
 
 * removes or renames a field
 * updates the **Model Type** that defines the models allowed for the fragment reference
 * un-publishes a model that is referenced by other models
 
-To address this, you should either:
+To address such errors, you should either:
 
 * update the persisted query that is failing to accommodate the change on the Content Fragment Model 
 * revert the change on the model that introduced the problem
@@ -41,7 +41,7 @@ The pattern should be `/graphql/execute.json/thePath`.
 
 In such a case, the query returns the `405` error code.
 
-This is not something specific to GraphQL. See the KB article [405 Error Not Allowed](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-20824.html).
+Such an error is not something specific to GraphQL. See the KB article [405 Error Not Allowed](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-20824.html).
 
 ## Blocked by dispatcher {#blocked-dispatcher}
 
