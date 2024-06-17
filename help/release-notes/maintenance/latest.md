@@ -16,7 +16,7 @@ Summarized below are the continuous improvements for maintenance release 16799, 
 2024.6.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
 ### Enhancements {#enhancements-16799}
-* ASSETS-31977 - enhanced Asset Move, Copy and Delete operations
+* ASSETS-31977 - Enhanced Asset Move, Copy and Delete operations
 * ASSETS-33618 - Auto-transcription and translation capability for Videos in Dynamic Media
 * ASSETS-33618 - Approval Action for ContentHub and DM and add properties to damAssetLucene properties
 * ASSETS-35533 - Add DRM and CAI properties to damAssetLucene index
@@ -26,6 +26,7 @@ Summarized below are the continuous improvements for maintenance release 16799, 
 * ASSETS-37724 - Implement asset unpublished event
 * ASSETS-38614 - Share Link UI enhancements
 * ASSETS-39601 - Apply validation regex automatically to Asset Livecopy name
+* ASSETS-39454 - Upgrade to viewers 2024.5.0 in Quickstart
 * CNTBF-184 - Support paths beneath /conf in Content Backflow
 
 ### Fixed Issues {#fixed-issues-16799}
@@ -39,7 +40,6 @@ Summarized below are the continuous improvements for maintenance release 16799, 
 * ASSETS-39316 - Sorting by name not working in Collections
 * ASSETS-39377 - Bulk import from OneDrive might fail when receiving backpressure from remote API
 * ASSETS-39428 - Rendering issues in Copyright Management UI
-* ASSETS-39454 - Upgrade to viewers 2024.5.0 in Quickstart
 
   
 ### Known Issues {#known-issues-16799}
