@@ -466,11 +466,6 @@ For more information and demonstration, see the video tutorial [how to use RDE c
 
 ## Logs {#rde-logging}
 
->[!NOTE]
->
-> This feature is not yet available. It will be rolled out sometime in June.
-> 
-
 Similar to other environment types, log levels can be set by modifying OSGi configurations, although as described above, the deployment model for RDEs involves a command line rather than a Cloud Manager deployment. Check the [logging documentation](/help/implementing/developing/introduction/logging.md) for more information about how to view, download, and interpret logs.
 
 The RDE CLI has also its own log command that can be used to quickly configure which classes and packages should be logged, and at what log level. These configurations can be viewed as ephemeral, as they do not modify the OSGI properties in version control. This feature is focused on tailing logs in real time, rather than looking up logs from the distant past. 
@@ -478,6 +473,13 @@ The RDE CLI has also its own log command that can be used to quickly configure w
 The following example illustrates how to tail the author tier, with one package set to a debug log level, and two packages (separated by spaces) set to an info debug level. Output that includes an **auth** package is highlighted.
 
 `aio aem:rde:logs --target=author --debug=org.apache.sling --info=org.apache.sling.commons.threads.impl org.apache.sling.jcr.resource.internal.helper.jcr -H .auth.`
+
+>[!TIP]
+>
+>If you see the error `RDECLI:UNEXPECTED_API_ERROR` when playing with the logs commands for the author service, please reset your environment and try again. This error will be thrown if your latest reset operation was before end of May 2024.
+>```
+>aio aem:rde:reset
+>```
 
 See `aio aem:rde:logs --help` for the full set of command line options.
 
