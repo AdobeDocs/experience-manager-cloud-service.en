@@ -2,6 +2,8 @@
 title: AEM Assets native integration with Adobe Express
 description: AEM Assets native integration with Adobe Express allows you to directly access the assets stored in AEM Assets from within the Adobe Express user interface.
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
+feature: Collaboration
+role: User
 ---
 # Native integration with Adobe Express {#native-integration-adobe-express}
 
@@ -37,25 +39,26 @@ Perform the following steps to start using AEM Assets in Adobe Express editor:
 
 ## Save Adobe Express projects in AEM Assets {#save-express-projects-in-assets}
 
-After incorporating appropriate modifications in the Express canvas, you can save it in the AEM Assets repository. 
+After incorporating appropriate modifications in the Express canvas, you can save it in the AEM Assets repository.. 
 
 1. Click **[!UICONTROL Share]** to open the **[!UICONTROL Share]** dialog.
 
    ![Save assets in AEM](assets/adobe-express-share.png)
 
 2. From the Storage section in the right pane, select **AEM Assets**. Adobe Express displays the upload dialog.
-3. Select either the **Current Page** or **All Pages** saving option. Selecting **Current Page** saves the file in your destination folder, however, selecting **All Pages** creates a new folder in your destination for all non-PDF files and saves them as separate files while PDF files get saved as a single file in the destination folder.
-4. Specify a name and format for the asset. You can save the canvas contents in PNG, JPEG, PDF, MP4, MP4+PNG, or MP4+JPEG formats. The format automatically adjusts based on the asset(s).
-5. Click the folder icon under **Destination Folder** to select a location and save the asset(s). 
+3. Select either **Current Page** or **All Pages**. Specify a name and format for the asset(s) to export. You can export the canvas contents in PNG, JPEG, PDF, MP4, MP4+PNG, or MP4+JPEG formats. The format adjusts automatically based on the asset(s) on the canvas page(s).
+Selecting **Current Page** saves the asset on your current page to your destination folder. If you select **All Pages** and the export format is not PDF, all canvas pages are saved as separate files in a new folder within your destination folder. If the export format is PDF, all canvas pages are saved as a single PDF file in the destination folder.
+
+4. Click the folder icon under **Destination Folder** to select a location and save the asset(s). 
 
    ![Save assets in AEM](/help/assets/assets/page-selection-and-destination-folder.svg)
 
-6. Optional: You can add campaign metadata for your upload using the **Project or campaign name** field. You can use an existing name or create a new one. You can define multiple Project or Campaign names for your upload. To register the name, simply type the name and hit enter.
+5. Optional: You can add campaign metadata for your upload using the **Project or campaign name** field. You can use an existing name or create a new one. You can define multiple Project or Campaign names for your upload. To register the name, simply type the name and hit enter.
 As a best practice, Adobe recommends specifying values in the rest of the fields as well as creating an enhanced search experience for your uploaded assets.
 
-7. Similarly, define values for the **[!UICONTROL Keywords]** and **[!UICONTROL Channels]** fields.
+6. Similarly, define values for the **[!UICONTROL Keywords]** and **[!UICONTROL Channels]** fields.
 
-8. Click **[!UICONTROL Upload]** to upload the asset(s) to AEM Assets.
+7. Click **[!UICONTROL Upload]** to upload the asset(s) to AEM Assets.
 
 ## Limitations {#limitations}
 

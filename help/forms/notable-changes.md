@@ -31,7 +31,7 @@ Adobe Experience Manager Forms as a Cloud Service brings some notable changes to
 
 * Before using your customer bundles with Forms as a Cloud Service, recompile your custom code with the latest version of adobe-aemfd-docmanager.
 
-*   Use [AEM Forms as a Cloud Service migration utility](/help/forms/migrate-to-forms-as-a-cloud-service.md) to prepare and migrate your Adaptive Forms, themes, templates, and cloud configurations from <!-- AEM 6.3 Forms--> AEM 6.4 Forms on OSGi and AEM 6.5 Forms on OSGi to [!DNL AEM] as a Cloud Service. Use the [Git repository of your program](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) to import existing Adaptive Form templates.
+*   Use [AEM Forms as a Cloud Service migration utility](/help/forms/migrate-to-forms-as-a-cloud-service.md) to prepare and migrate your Adaptive Forms, themes, templates, and cloud configurations from <!-- AEM 6.3 Forms--> AEM 6.4 Forms on OSGi and AEM 6.5 Forms on OSGi to [!DNL AEM] as a Cloud Service. Use the [Git repository of your program](/help/implementing/cloud-manager/managing-code/managing-repositories.md) to import existing Adaptive Form templates.
 
 *   Email supports only HTTP and HTTPs protocols, by default. [Contact the support team](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) to enable ports to send emails and  enable SMTP protocol for your environment.
 

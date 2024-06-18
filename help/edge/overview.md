@@ -12,15 +12,15 @@ With Edge Delivery Services, AEM delivers exceptional experiences that drive eng
 
 By using Edge Delivery Services, you can:
 
-* Create fast sites with a perfect Lighthouse Score and continuously monitor your site performance through real user monitoring (RUM).
-* Increase authoring efficiency by decoupling content sources. Out of the box you can use both AEM authoring and Document-based Authoring . As such, you can work with multiple content sources on the same website.
+* Create fast sites with a perfect Lighthouse Score and continuously monitor your site performance through real use monitoring (RUM).
+* Increase authoring efficiency by decoupling content sources. Out of the box you can use both WYSIWYG and Document-based Authoring . As such, you can work with multiple content sources on the same website.
 * Use a built-in experimentation framework that allows quick test creation, execution without performance impact and fast release to production of a test winner.
 
 ## Overview {#overview}
 
-Edge Delivery Services is a composable set of services that allows for a high degree of flexibility in how you author content on your website. You can use both [AEM content management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) and AEM-based authoring using the [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) as well as [document-based authoring.](https://www.aem.live/docs/authoring)
+Edge Delivery Services is a composable set of services that allows for a high degree of flexibility in how you author content on your website. You can use both [AEM content management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) and WYSIWYG authoring using the [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) as well as [document-based authoring.](https://www.aem.live/docs/authoring)
 
-The following diagram illustrates how you can edit content in Microsoft Word (document-based authoring) and publish to Edge Delivery Services. It also shows the AEM-based editing using the Universal Editor.
+The following diagram illustrates how you can edit content in Microsoft Word (document-based authoring) and publish to Edge Delivery Services. It also shows the WYSIWYG editing using the Universal Editor.
 
 ![Edge Delivery Architecture](assets/AEM-with-EDS-publishing-simple2.png)
 
@@ -38,9 +38,9 @@ Further reading in the Edge Delivery Services documentation:
 
 Edge Delivery Services are part of Adobe Experience Manager and as such Edge Delivery Services and AEM sites can co-exist on the same domain, which is a common use case for larger websites. Additionally, content from Edge Delivery Services can easily be consumed by your AEM Sites pages and vice-versa.
 
-Please see the [Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/aem-authoring/edge-dev-getting-started.md) to learn how to start your own project to author with AEM and Edge Delivery Services.
+Please see the [Developer Getting Started Guide for WYSIWYG with Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) to learn how to start your own project to author with AEM and Edge Delivery Services.
 
-You can also use Edge Delivery Services with [Adobe Target,](https://www.aem.live/developer/target-integration) [Real User Monitoring (RUM)](https://www.aem.live/developer/rum) to diagnose usage and performance of your sites, and [Launch.](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
+You can also use Edge Delivery Services with [Adobe Target,](https://www.aem.live/developer/target-integration) [Real Use Monitoring (RUM)](https://www.aem.live/developer/rum) to diagnose usage and performance of your sites, and [Launch.](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
 
 ## Getting Started with Edge Delivery Services {#getting-started}
 
@@ -56,7 +56,7 @@ Adobe provides three channels to help you with Edge Delivery Services:
 
 ### Access Community Resources {#community-resources}
 
-Adobe is committed to empowering you with the best community engagement and support for Edge Delivery Services, AEM-based, and document-based authoring.
+Adobe is committed to empowering you with the best community engagement and support for Edge Delivery Services, WYSIWYG, and document-based authoring.
 
 * Participate in [Experience League Community](https://adobe.ly/3Q6kTKl) to ask questions, share feedback, initiate discussions, seek assistance from Adobe experts and AEM Advisors/Champs, and connect with like-minded individuals in real-time.
 * Join our [Discord channel,](https://discord.gg/aem-live) a more casual platform for real-time interactions and quick idea exchanges.

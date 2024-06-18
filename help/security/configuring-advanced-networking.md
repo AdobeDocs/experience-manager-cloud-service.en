@@ -800,3 +800,49 @@ Connection pooling is a technique tailored to create and sustain a repository of
 Implementing an appropriate connection pooling strategy is a proactive measure to correct a common oversight in system configuration, which often leads to suboptimal performance. By correctly establishing a connection pool, Adobe Experience Manager (AEM) can improve the efficiency of external calls. This not only reduces resource consumption but also mitigates the risk of service disruptions and decreases the probability of encountering failed requests when communicating with upstream servers.
 
 In light of this information, Adobe advises reassessing your current AEM configuration and consider the deliberate incorporation of connection pooling in conjunction with Advanced Networking settings. By managing the number of parallel connections and minimizing the possibility of stale connections, these measures lead to a reduction in the risk of proxy servers reaching their connection limits. Consequently, this strategic implementation is designed to decrease the likelihood of requests failing to reach external endpoints.
+
+#### Connection Limits FAQ
+
+When using Advanced Networking the number of connections is limited in order to ensure stability across environments and to prevent that lower environments from exhausting the available connections.
+
+The connections are limited to 1000 per AEM instance and alerts are sent to customers when the number reaches 750.
+
+##### Is the connection limit applied only to outbound traffic out of non-standard ports or to all outbound traffic?
+
+The limit is only for connections using Advanced Networking (egress on non-standard ports, using dedicated egress IP, or VPN).
+
+##### We do not see a significant difference in the number of outgoing connections. Why are we receiving the notification now?
+
+If the customer creates connections dynamically (for example, one or more for each request), an increase in traffic can cause the connections to spike.
+
+##### Is it possible that we experienced a similar situation in the past without being alerted?
+
+Alerts are only sent when the soft limit is reached.
+
+##### What happens if the maximum limit is reached?
+
+When the hard limit is reached, new egress connections from AEM through Advanced Networking (egress on non-standard ports, using dedicated egress IP, or VPN) will be dropped to protect against a DoS attack.
+
+##### Can the limit be raised?
+
+No, having a large number of connections can cause a significant performance impact and a DoS across pods and environments.
+
+##### Are the connections automatically closed by the AEM system after a certain period?
+
+Yes, connections are closed at the JVM level and different points in the networking infrastructure. However, this will be too late for any production service. Connections should be explicitly closed when no longer needed or returned to the pool when using connection pooling. Otherwise, the resource consumption will be too high and can cause exhaustion of resources.
+
+##### If the maximum connection limit is reached, does it affect any licenses and result in extra costs?
+
+No, there is no license or cost associated with this limit. It is a technical limit.
+
+##### How close are we to the limit? What is the maximum limit?
+
+The alert is triggered when connections exceed 750. The maximum limit is 1000 connections per AEM instance.
+
+##### Is this limit applicable to VPNs?
+
+Yes, the limit applies to connections using Advanced Networking, including VPNs.
+
+##### If we use a Dedicated Egress IP, will this limit still be applicable?
+
+Yes, the limit is still applicable if using a dedicated egress IP.
