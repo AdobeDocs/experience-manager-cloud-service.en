@@ -40,10 +40,10 @@ Summarized below are the continuous improvements for maintenance release 16799, 
 * ASSETS-39316 - Sorting by name not working in Collections
 * ASSETS-39377 - Bulk import from OneDrive might fail when receiving backpressure from remote API
 * ASSETS-39428 - Rendering issues in Copyright Management UI
-* SCRNS-4194 - [screens-core] Remove dependency Google Guava APIs
-* SCRNS-4360 - Missing “Manage Publication” & "Quick Publish" Button for non-admin users in Content Provider for Channels
+* SCRNS-4194 - Remove dependency Google Guava APIs
+* SCRNS-4360 - Missing Manage Publication & Quick Publish Button for non-admin users in Content Provider for Channels
 * SCRNS-4323 - Hide/Disable launches from screens.html
-* CQ-4357150 - [Replace/Remove] Guava in cq-content-sync bundle
+* CQ-4357150 - Guava in cq-content-sync bundle
 
   
 ### Known Issues {#known-issues-16799}
