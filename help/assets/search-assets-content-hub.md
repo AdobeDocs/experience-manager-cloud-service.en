@@ -1,10 +1,10 @@
 ---
-title: Search assets in the Content Hub
-description: Search assets in [!DNL the Content Hub]
+title: Search assets in Content Hub
+description: Learn how to search assets in [!DNL Content Hub]
 role: User
 ---
 
-# Search Assets in [!DNL the Content Hub] {#search-assets}
+# Search Assets in [!DNL Content Hub] {#search-assets}
 
 ![Share assets banner image](assets/search.png)
 
@@ -44,7 +44,9 @@ For example, search for all the **[!UICONTROL JPEG]** images with keyword `archi
 
 ## Narrow your search results using filters {#narrow-down-search-results}
 
-Use the Filters panel to search for assets based on metadata. You can filter search results based on various search predicates, such as [!UICONTROL tags], [!UICONTROL subject], [!UICONTROL format], and [!UICONTROL last modified date]. The filters have mixed-state checkboxes. You can select all the required predicates to minimize your search results. 
+Use the Filters panel to search for assets based on metadata. You can filter search results based on various search predicates, such as [!UICONTROL tags], [!UICONTROL subject], [!UICONTROL format], [!UICONTROL last modified date], and so on. The filters have mixed-state checkboxes. You can select all the required predicates to minimize your search results.
+
+Administrators can also configure the filters that display in the list of filters. For more information, see [Configure Content Hub user interface](configure-content-hub-ui-options.md#configure-filters-content-hub).
 
 <table>
     <tbody>
@@ -65,7 +67,7 @@ Use the Filters panel to search for assets based on metadata. You can filter sea
      </tr>
      <tr>
       <td> Region </td>
-      <td> Helps you to understand the location from where the asset is coming from. For example, Japan, EMEA, Worldwide, etc.</td>
+      <td> Helps you to understand the location where the asset is created. For example, Japan, EMEA, Worldwide, etc.</td>
       <td>NA</td>
      </tr>
      <tr>

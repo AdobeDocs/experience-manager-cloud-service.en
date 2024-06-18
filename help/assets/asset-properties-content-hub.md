@@ -107,7 +107,7 @@ Once you upload an asset, the Content Hub derives some properties that are gener
 
 There are also properties that are specified while adding assets to Content Hub. For more information, see [Add brand approved assets to Content Hub](upload-brand-approved-assets.md). Those properties are also displayed on the asset properties page.
 
-Administrators can also configure the properties that display for each asset. For more information, see [Configure Content Hub user interface](configure-content-hub-ui-options.md).
+Administrators can also configure the properties that display for each asset. For more information, see [Configure Content Hub user interface](configure-content-hub-ui-options.md#configure-asset-details-content-hub).
 
 <!--
 
