@@ -17,35 +17,34 @@ Summarized below are the continuous improvements for maintenance release 16799, 
 
 ### Enhancements {#enhancements-16799}
 
-* ASSETS-31977 - Enhanced Asset Move, Copy and Delete operations
-* ASSETS-33618 - Auto-transcription and translation capability for Videos in Dynamic Media
-* ASSETS-33618 - Approval Action for ContentHub and DM and add properties to damAssetLucene properties
-* ASSETS-35533 - Add DRM and CAI properties to damAssetLucene index
-* ASSETS-37280 - Sequential job handling for translation when source subtitle (vtt) is still processing
-* ASSETS-37559 - Improved asset deleted event
-* ASSETS-37723 - Implement asset published event
-* ASSETS-37724 - Implement asset unpublished event
-* ASSETS-38614 - Share Link UI enhancements
-* ASSETS-39601 - Apply validation regex automatically to Asset Livecopy name
-* ASSETS-39454 - Upgrade to viewers 2024.5.0 in Quickstart
-* CNTBF-184 - Support paths beneath /conf in Content Backflow
+* ASSETS-31977: Enhanced Asset Move, Copy and Delete operations.
+* ASSETS-33618: Auto-transcription and translation capability for Videos in Dynamic Media.
+* ASSETS-33618: Approval Action for ContentHub and DM and add properties to damAssetLucene properties.
+* ASSETS-35533: Add DRM and CAI properties to damAssetLucene index.
+* ASSETS-37280: Sequential job handling for translation when source subtitle (vtt) is still processing.
+* ASSETS-37559: Improved asset deleted event.
+* ASSETS-37723: Implement asset published event.
+* ASSETS-37724: Implement asset unpublished event.
+* ASSETS-38614: Share Link UI enhancements.
+* ASSETS-39601: Apply validation regex automatically to Asset Livecopy name.
+* ASSETS-39454: Upgrade to viewers 2024.5.0 in Quickstart.
+* CNTBF-184: Support paths beneath `/conf` in Content Backflow.
 
 ### Fixed Issues {#fixed-issues-16799}
 
-* ASSETS-37335 - Editing Search Panel In Filter Unchecks All Boxes
-* ASSETS-38069 - AEM DAM PDF Preview Issue on Timeline Filter Selection
-* ASSETS-38215 - Adobe Stock license button greyed out in AEMaaCS for enterprise subscription
-* ASSETS-38578 - Incorrect Hyperlinks in Assets Link Share Report
-* ASSETS-38678 - View settings broken in Collection Details
-* ASSETS-39071 - Web optimised delivery may throw exception if original rendition mimetype is null
-* ASSETS-39316 - Sorting by name not working in Collections
-* ASSETS-39377 - Bulk import from OneDrive might fail when receiving backpressure from remote API
-* ASSETS-39428 - Rendering issues in Copyright Management UI
-* SCRNS-4194 - Remove dependency Google Guava APIs
-* SCRNS-4360 - Missing Manage Publication & Quick Publish Button for non-admin users in Content Provider for Channels
-* SCRNS-4323 - Hide/Disable launches from screens.html
-* CQ-4357150 - Guava in cq-content-sync bundle
-
+* ASSETS-37335: Editing Search Panel In Filter Unchecks All Boxes.
+* ASSETS-38069: AEM DAM PDF Preview Issue on Timeline Filter Selection.
+* ASSETS-38215: Adobe Stock license button grayed out in AEM as a Cloud Service for enterprise subscription.
+* ASSETS-38578: Incorrect Hyperlinks in Assets Link Share Report.
+* ASSETS-38678: View settings broken in Collection Details.
+* ASSETS-39071: Web optimized delivery may throw an exception if the original rendition mimetype is null.
+* ASSETS-39316: Sorting by name not working in Collections.
+* ASSETS-39377: Bulk import from OneDrive might fail when receiving backpressure from remote API.
+* ASSETS-39428: Rendering issues in Copyright Management UI.
+* CQ-4357150: Guava in cq-content-sync bundle.
+* SCRNS-4194: Remove dependency on Google Guava APIs.
+* SCRNS-4360: Missing Manage Publication & Quick Publish Button for non-admin users in Content Provider for Channels.
+* SCRNS-4323: Hide/Disable launches from screens.html.
   
 ### Known Issues {#known-issues-16799}
 
