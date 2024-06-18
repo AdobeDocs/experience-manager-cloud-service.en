@@ -1,10 +1,10 @@
 ---
-title: View asset properties in [!DNL the Content Hub]
-description: View asset properties in [!DNL the Content Hub]
+title: Asset properties in [!DNL the Content Hub]
+description: Learn how to view and manage asset properties in [!DNL Content Hub]
 role: User
 ---
 
-# Manage asset properties in the Content Hub {#asset-properties}
+# Manage asset properties in Content Hub {#asset-properties}
 
 ![Metadata banner image](assets/metadata-banner-image.png)
 
@@ -16,13 +16,9 @@ Viewing asset properties help you further categorize assets and is helpful as th
 * Easier to manage - you can find assets with the same set of properties easily and apply changes to them.
 * Complete - asset carries more information and context.
 
-## Evaluate information for the searched assets  {#evaluate-info}
+## View properties of an asset {#properties-ui}
 
-Assets provide you with the right means of creating, managing, and exchanging information for your digital assets.
-
-### View properties of an asset {#properties-ui}
-
-Before you use, share, or download an asset, you can view it more closely. The preview feature lets you view not just the images but a few other supported asset types as well. You can not only view the asset but also view its detailed information and take other actions. To view information of an asset, navigate to the asset or [search](search-assets.md) the asset. Then, click the asset to open its properties. The following figure demonstrates the fields available on an asset preview screen: 
+Before you use, share, or download an asset, you can view it more closely. The preview feature lets you view not just the images but a few other supported asset types as well. You can not only view the asset but also view its detailed information and take other actions. To view information of an asset, navigate to the asset or [search](search-assets.md) the asset and then click the asset to open its properties. The following figure demonstrates the fields available on an asset preview screen: 
 
 ![Properties of an asset UI](assets/properties-ui.png)
 
@@ -99,9 +95,19 @@ Once you upload an asset, the Content Hub derives some properties that are gener
 
 * **Smart Tags:** [!DNL The Content Hub] uses Adobe Sensei's smart content services to train assets using recognition algorithm on the tags-based structure. This content intelligence is then used to apply relevant tags on a different set of assets. Smart Tags increase the content velocity of your projects by helping that you find relevant assets quickly. The smart tags are an example of asset information that is not contained in the image. [!DNL The Content Hub] automatically applies smart tags to assets, by default. 
 
-* **Color Tags:** [Color tags](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) help you recognize an asset using colors that are automatically identified in an asset using Adobe's Sensei AI capabilities. 
+* **Color Tags:** [Color tags](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) help you recognize an asset using colors that are automatically identified in an asset using Adobe's Sensei AI capabilities.
 
-See more at [search predicates](#assets-search.md#narrow-down-search-results).
+* Upload date
+
+* Uploaded by
+
+* Last modified
+
+* Last modified by
+
+There are also properties that are specified while adding assets to Content Hub. For more information, see [Add brand approved assets to Content Hub](upload-brand-approved-assets.md). Those properties are also displayed on the asset properties page.
+
+Administrators can also configure the properties that display for each asset. For more information, see [Configure Content Hub user interface](configure-content-hub-ui-options.md).
 
 <!--
 
