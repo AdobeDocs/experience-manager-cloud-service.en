@@ -19,7 +19,7 @@ You can manage the configuration settings for OSGi components through configurat
 
 ## OSGi Configuration Files {#osgi-configuration-files}
 
-Configuration changes are defined in the AEM Project's code packages (`ui.apps`) as configuration files (`.cfg.json`) under runmode specific config folders:
+Configuration changes are defined in the AEM Project's code packages (`ui.config`) as configuration files (`.cfg.json`) under runmode specific config folders:
 
 `/apps/example/config.<runmode>`
 
@@ -38,6 +38,10 @@ following the `cfg.json` OSGi configuration format.
 >[!NOTE]
 >
 >Prior versions of AEM supported OSGi configuration files using different file formats such as `.cfg`, `.config` and as XML `sling:OsgiConfig` resource definitions. These formats are superseded by the `.cfg.json` OSGi configuration format.
+
+>[!NOTE]
+>
+>The OSGi configs are not stored under /apps like typical AEM instances in Cloud they are stored in an external location. Check in Cloud Manager [Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations) to view the OSGi configs.
 
 ## Runmode Resolution {#runmode-resolution}
 
