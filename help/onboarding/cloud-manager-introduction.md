@@ -2,6 +2,8 @@
 title: Introduction to Cloud Manager
 description: Learn about how Cloud Manager supports your AEM project through its programs, environments, and pipelines.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
+feature: Onboarding
+role: Admin, User, Developer
 ---
 
 # Introduction to Cloud Manager {#intro-cloud-manager}
@@ -52,6 +54,10 @@ You can also navigate to Cloud Manager's Programs and Products page from Adobe E
 >[!NOTE]
 >
 >A user can be assigned to multiple roles. For example, assigning both **Business Owner** and **Deployment Manager** roles to a user gives the user the sum of these permissions.
+
+>[!TIP]
+>
+>Custom permission profiles with configurable permissions are also available. Please see the document [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md) for more details.
 
 ## Cloud Manager Programs {#cloud-manager-programs}
 

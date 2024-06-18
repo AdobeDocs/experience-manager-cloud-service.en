@@ -77,7 +77,7 @@ To import out-of-the-box Forms Portal components on AEM Forms as a Cloud Service
 
 ## Configure Azure Storage for Adaptive Forms {#configure-azure-storage-adaptive-forms}
 
-[[!DNL Experience Manager Forms] Data Integration](data-integration.md) provides [!DNL Azure] storage configuration to integrate forms with [!DNL Azure] storage services. The Form Data Model can be used to create Adaptive Forms that interact with [!DNL Azure] server to enable business workflows.
+[[!DNL Experience Manager Forms] Data Integration](data-integration.md) provides [!DNL Azure] storage configuration to integrate forms with [!DNL Azure] storage services. The Form Data Model (FDM) can be used to create Adaptive Forms that interact with [!DNL Azure] server to enable business workflows.
 
 ### Create Azure Storage Configuration {#create-azure-storage-configuration}
 

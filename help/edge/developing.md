@@ -14,7 +14,7 @@ Blocks are the most fundamental part of a page delivered by Edge Delivery Servic
 
 AEM provides standard blocks as part of the product within the project boilerplate. Such blocks include heading, text, images, links, lists, etc.
 
-<!--Please see the [Build section](/help/edge/developer/block-collection.md) of the Edge Delivery Services documentation for more details on blocks and how to develop for Edge Delivery services.-->
+Please see the [Build section](/help/edge/developer/block-collection.md) of the Edge Delivery Services documentation for more details on blocks and how to develop for Edge Delivery services.
 
 ## Edge Delivery Services and GitHub {#github-edge}
 
@@ -24,4 +24,4 @@ Your authors can create content using either Document-based Authoring  or conten
 
 Websites are automatically created for each of your branches from content preview to production. Every resource that you put into your GitHub repository is available on your website without a build process.
 
-<!--Please see the [Build section](/help/edge/developer/block-collection.md) of the Edge Delivery Services documentation for more details on blocks and how to develop for Edge Delivery services.-->
+Please see the [Build section](/help/edge/developer/block-collection.md) of the Edge Delivery Services documentation for more details on blocks and how to develop for Edge Delivery services.

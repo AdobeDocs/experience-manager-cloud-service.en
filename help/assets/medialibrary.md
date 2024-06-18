@@ -2,8 +2,8 @@
 title: Use Media Library for basic digital asset management
 description: "[!DNL Experience Manager Assets] and Media Library for asset management."
 contentOwner: AG
-feature: Asset Management,Publishing
-role: User,Architect,Leader
+feature: Asset Management, Publishing
+role: User, Architect, Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
 ---
 <!--
@@ -106,6 +106,7 @@ You cannot use smart tags, [!DNL Asset] link, [!DNL Asset] selector, bulk taggin
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

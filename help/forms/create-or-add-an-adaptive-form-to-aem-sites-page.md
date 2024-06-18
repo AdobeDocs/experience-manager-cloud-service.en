@@ -27,7 +27,7 @@ AEM Forms Cloud Service provides Adaptive Form Container and Adaptive Forms – 
 If you have created Adaptive Forms Foundation Component or plain HTML based forms for your Sites in the past, Adobe recommends that you use Adaptive Forms Core Components to create an Adaptive Form in AEM Sites page or Expereince Fragment. It lets you use various features of AEM Sites pages like, versioning, targeting, translation, and multi-site manager, enhancing the overall form creation and management experience for Adaptive Forms. Let's explore some of these features:
 
 * **Versioning:** AEM Sites pages offer [robust versioning capabilities](/help/sites-cloud/authoring/sites-console/page-versions.md), allowing you to track and manage different versions of your forms. This enables you to make changes and enhancements to forms while maintaining the ability to roll back to previous versions if needed. Versioning ensures a controlled and organized approach to form development and evolution.
-* **Targeting (Integration with Adobe Target):** With AEM Sites pages targeting capabilities, you can also [personalize the form experience for different audiences](/help/sites-cloud/integrating/integration-adobe-target-ims.md). By using user segments and targeting criteria, you can tailor the form's content, design, or behavior to specific groups of users. This enables you to provide a personalized and relevant form experience, increasing engagement and conversion rates.
+* **Targeting (Integration with Adobe Target):** With AEM Sites pages targeting capabilities, you can also [personalize the form experience for different audiences](/help/sites-cloud/integrating/integrating-adobe-target.md). By using user segments and targeting criteria, you can tailor the form's content, design, or behavior to specific groups of users. This enables you to provide a personalized and relevant form experience, increasing engagement and conversion rates.
 * **Translation:** AEM Sites [seamless integration with translation services](/help/sites-cloud/administering/translation/overview.md), allowing you to translate forms into multiple languages easily. This feature simplifies the localization process, ensuring that your forms are accessible to a global audience. You can manage translations efficiently within AEM translation projects, reducing time and effort required for multilingual form support. See considerations section for more information on translation.  
 * **Multi-site Management and Live Copy:** AEM Sites provide robust [Multi-site Management and Live Copy capabilities](/help/sites-cloud/administering/msm/overview.md), enabling you to create and manage multiple websites within a single environment. This feature now lets you reuse forms across different sites, ensuring consistency and reducing duplication efforts. With centralized control and management, you can efficiently maintain and update forms across multiple websites.
 * **Themes:** AEM Sites pages provide a framework for designing and maintaining consistent visual styles across multiple web pages. These define colors, fonts, style sheets, and other visual elements that contribute to the overall look and feel of the website. [You can use the themes designed for an AEM Sites page for an Adaptive Form, saving time and effort](/help/sites-cloud/administering/site-creation/site-themes.md#using-site-themes-using-themes). 
@@ -198,22 +198,22 @@ A Submit Action lets you choose the destination of data captured via an Adaptive
 1. Select and configure a Submit action, based on your requirements. For detailed information about Submit Actions, see [Adaptive Form Submit Action](/help/forms/configuring-submit-actions.md)
 
 
-## Configure a Schema or Form Data Model for a form in AEM Sites page or Expereince Fragment {#configure-schema-or-data-model-for-form}
+## Configure a Schema or Form Data Model (FDM) for a form in AEM Sites page or Expereince Fragment {#configure-schema-or-data-model-for-form}
 
-You can use the Form Data Model to connect a form to a Data Source to send and receive data based on user actions. You can also connect a form to a JSON schema to receive the submitted data in a pre-defined format. Based on the requirement, connect your form to a JSON schema or Form data model:
+You can use the Form Data Model (FDM) to connect a form to a Data Source to send and receive data based on user actions. You can also connect a form to a JSON schema to receive the submitted data in a pre-defined format. Based on the requirement, connect your form to a JSON schema or Form data model(FDM):
 
 * [Create a JSON Schema and upload to your environment](/help/forms/adaptive-form-json-schema-form-model.md)  or, 
-* [Create a Form Data Model](/help/forms/create-form-data-models.md)
+* [Create a Form Data Model (FDM)](/help/forms/create-form-data-models.md)
 
-To configure a JSON Schema or Form Data Model for your form:
+To configure a JSON Schema or Form Data Model (FDM) for your form:
 
 1. Open the AEM Page Editor or Experience Fragment that contains the Adaptive Form.
 1. Open the Content Tree, and select the **[!UICONTROL Adaptive Forms Container]** that hosts your Adaptive Form. An AEM Sites page can host multiple Adaptive Forms. So, carefully select the correct Adaptive Forms Container. 
 1. Click the Adaptive Form Container properties ![Adaptive Form Container properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box to configure Data Models opens. 
 ![Click the Wrench icon to configure a Data Models for the Adaptive Form](/help/forms/assets/form-data-model-adaptive-forms-container.png)
-1. Select and configure a JSON Schema or Form Data Model, based on your requirements. For detailed information about Submit Actions, see [Adaptive Form Submit Action](/help/forms/configuring-submit-actions.md). 
+1. Select and configure a JSON Schema or Form Data Model (FDM), based on your requirements. For detailed information about Submit Actions, see [Adaptive Form Submit Action](/help/forms/configuring-submit-actions.md). 
 
-    * When you select the **[!UICONTROL Form Model]** option, use the **[!UICONTROL Select Form Data Model]** option to select a pre-configured Form Data Model.
+    * When you select the **[!UICONTROL Form Model]** option, use the **[!UICONTROL Select Form Data Model]** option to select a pre-configured Form Data Model (FDM).
     * When you select the **[!UICONTROL Schema]** option, use the **[!UICONTROL Schema]** option to select a JSON schema for your form.
 
 1. Click **[!UICONTROL Done]**.

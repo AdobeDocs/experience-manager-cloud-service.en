@@ -2,6 +2,9 @@
 title: License Dashboard
 description: Cloud Manager provides a dashboard for easy viewing of AEMaaCS product entitlements available to your organization or tenant.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 # License Dashboard {#license-dashboard}
 
@@ -24,7 +27,7 @@ To access your license dashboard, follow these steps.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, switch to the **License** tab.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, switch to the **License** tab.
 
 ![License Dashboard](assets/license-dashboard.png)
 

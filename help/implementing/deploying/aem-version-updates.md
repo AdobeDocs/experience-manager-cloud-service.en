@@ -13,11 +13,24 @@ Learn how Adobe Experience Manager (AEM) as a Cloud Service uses continuous inte
 
 AEM as a Cloud Service uses continuous integration and continuous delivery (CI/CD) to ensure that your projects are on the most current AEM version. This process seamlessly updates your production, staging, and development instances without causing any disruption to your users.
 
-Before your instances are automatically updated, a new AEM Maintenance release is published 3-5 days in advance. During this period, you can optionally [trigger manual updates for your development instances](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment). After this time elapses, version updates are automatically applied to your development environments first. If the update is successful, the update process proceeds to your stage and production instances. The development and staging instances act as an automated quality gate, where your custom-written tests are run before the update is applied on your production environment.
+>[!NOTE]
+> As development instances are already automatically updated, the manual updates for development instances might not be available to _some_ of your programs. This feature is being transitioned to automatic updates.
+
+Before your instances are automatically updated, a new AEM Maintenance release is published 3-5 days in advance. During this period, your development instance might be automatically updated or in case it is available you can optionally [trigger the update for your development instances](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment). Version updates are automatically applied to your development environments first. If the update is successful, the update process proceeds to your stage and production instances. The development and staging instances act as an automated quality gate, where your custom-written tests are run before the update is applied on your production environment.
+
+### NIMU (Non-Intrusive Maintenance Updates) {#nimu}
+
+Non-Intrusive Maintenance Updates are automatic updates that are applied without involving the customer pipelines. 
+Through NIMU, the customer can use the pipeline at any moment, even if an AEM version update is scheduled or in progress and Maintenance Updates will no longer appear in the Customer pipeline execution history, making it easier to follow the history of code deployments.
+
+#### Update Activities
+
+The current AEM version can still be checked for each environment, as before, using the Cloud Manager UI Environments panel. The same quality gates that are used in the pipeline are used by Non-Intrusive Maintenance Updates, including the customer written tests.
+A Cloud Manager UI notification will be sent whenever a Non-Intrusive Maintenance Update is applied to the environments of your program. You can configure it to be also sent to your email.
 
 >[!NOTE]
 >
-> Note: The automatic updates for development environments are progressively enabled in 2023 for all customers. If your development environments are not automatically updated, you can use manual updates to keep them in sync with your stage and production environments.
+> Note: Non-Intrusive Maintenance Updates will be progressively enabled for all customers in 2024.
 
 
 ## Type of Updates {#update-types}
@@ -29,7 +42,7 @@ There are two types of AEM version updates:
   * They are mostly for maintenance purposes, including the latest bug-fixes and security updates.
   * It has minimal impact because changes are applied regularly.
 
-* [**New Feature Updates**](/help/release-notes/release-notes-cloud/release-notes-current.md)
+* [**AEM Feature Activation**](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
    * They are released on a predictable, monthly schedule.
 

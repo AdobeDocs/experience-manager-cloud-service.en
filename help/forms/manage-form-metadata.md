@@ -65,7 +65,7 @@ The following is an extensive list of metadata properties supported in [!DNL AEM
      <li>PDF form, PDF form (Acroform), or PDF form (Signed)</li> 
      <li>Document, Document (Signed)</li> 
      <li>Adaptive Form</li> 
-     <li>Form Data Model</li>
+     <li>Form Data Model (FDM)</li>
      <li>Resource</li> 
     </ul> </td> 
   </tr> 
@@ -156,7 +156,7 @@ The following is an extensive list of metadata properties supported in [!DNL AEM
    <td>Adaptive Form</td> 
    <td><p>Specifies which form model is used while authoring the Adaptive Form. This property can have following values:</p> 
     <ul> 
-      <li>Form Data Model </li>
+      <li>Form Data Model (FDM)</li>
       <li>Schema: An XML of JSON schema</li>
      <!-- <li>Form template: A form template is selected from the ones existing in the repository. This value can be updated.</li> 
      <li>XML schema: An XSD file is uploaded. This value can be updated.</li> -->

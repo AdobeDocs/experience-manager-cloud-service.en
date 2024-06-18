@@ -2,8 +2,8 @@
 title: How to translate assets in AEM?
 description: Learn how to automate workflows to translate assets in AEM, including binaries, metadata, and tags into multiple languages.
 contentOwner: AG
-feature: Asset Management,Translation
-role: Admin,User
+feature: Asset Management, Translation
+role: Admin, User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
 ---
 # Translate assets in AEM {#multilingual-assets}
@@ -288,3 +288,4 @@ If you want to apply a custom connector for the translation services you want to
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

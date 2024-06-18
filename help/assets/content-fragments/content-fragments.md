@@ -2,6 +2,8 @@
 title: Working with Content Fragments (Assets - Content Fragments)
 description: Learn how Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service lets you design, create, curate, and use page-independent content, ideal for page authoring and headless delivery. Also how they can be used together with MSM.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
+feature: Content Fragments
+role: User
 ---
 # Working with Content Fragments {#working-with-content-fragments}
 
@@ -55,6 +57,7 @@ This and the following pages cover the tasks for creating, configuring, maintain
 >* [Content Fragments Configuring Components for Rendering](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [Content Fragments Support in AEM Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [AEM GraphQL API for use with Content Fragments](/help/headless/graphql-api/content-fragments.md)
+>* The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) 
 
 The number of communication channels is increasing annually. Typically channels refer to the delivery mechanism, either as the:
 

@@ -14,12 +14,12 @@ exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
 
 <span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
 
-AEM Forms as a Cloud Service provides multiple reference themes, templates, and form data models to help you start quickly with creating Adaptive Forms. You can download the [reference content package from software distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) and use the [Package Manager](/help/implementing/developing/tools/package-manager.md) to install the [reference content package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) on your production, development, or local development environment to get these reference assets to your environment. 
+AEM Forms as a Cloud Service provides multiple reference themes, templates, and form data model (FDM) to help you start quickly with creating Adaptive Forms. You can download the [reference content package from software distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) and use the [Package Manager](/help/implementing/developing/tools/package-manager.md) to install the [reference content package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) on your production, development, or local development environment to get these reference assets to your environment. 
 
-The themes, templates, and form data models included the reference content package are:
+The themes, templates, and form data model (FDM) included the reference content package are:
 
 
-|Themes | Templates | Form Data Models |
+|Themes | Templates | Form Data Model (FDM) |
 ---------|----------|---------
 | Canvas 3.0 |Basic | Microsoft Dynamics 365 |
 | Tranquil   |Blank | Salesforce |
@@ -106,16 +106,16 @@ FSI theme emphasizes a minimalist and functional look for your form. When you ap
 Basic template helps you quickly create an enrollment form. You can also use it to preview functionality of Adaptive Forms foundation components. It provides a wizard layout for section-by-section presentation of data. Use the Blank template to start creating an Adaptive Form from on a blank canvas. 
 
 
-## Reference Form Data Models {#reference-models}
+## Reference Form Data Model (FDM) {#reference-models}
 
 The Adaptive Forms can then interact with Microsoft Dynamics 365 and Salesforce servers to enable business workflows. For example:
 
 * Write data into Microsoft Dynamics 365 and Salesforce on Adaptive Form submission.
-* Write data in Microsoft Dynamics 365 and Salesforce through custom entities defined in Form Data Model and conversely.
+* Write data in Microsoft Dynamics 365 and Salesforce through custom entities defined in Form Data Model (FDM) and conversely.
 * Query Microsoft Dynamics 365 and Salesforce server for data and prepopulate Adaptive Forms.
 * Read data from Microsoft Dynamics 365 and Salesforce server.
 
-You can get the following Form Data Models by installing the [Reference content package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
+You can get the following Form Data Model (FDM) by installing the [Reference content package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
 
 * Microsoft&reg; Dynamics 365
 * Salesforce 

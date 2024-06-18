@@ -1,8 +1,8 @@
 ---
 title: Search facets.
 description: This article describes how to create, modify, and use search facets in Experience Manager.
-feature: Search,Metadata
-role: User,Admin
+feature: Metadata
+role: Admin, User
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
 ---
 # Search facets {#search-facets}
@@ -348,6 +348,7 @@ If you are not assigned an administrator role, here is a list of permissions you
 * [Manage metadata](manage-metadata.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

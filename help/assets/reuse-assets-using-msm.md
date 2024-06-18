@@ -4,7 +4,7 @@ description: Use assets across multiple pages/folders that are derived from and 
 contentOwner: AG
 mini-toc-levels: 1
 role: User, Admin, Architect
-feature: Asset Management,Multi Site Manager
+feature: Asset Management
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
 ---
 # Reuse assets using MSM for [!DNL Assets] {#reuse-assets-using-msm-for-assets}
@@ -380,3 +380,4 @@ Following are limitations of MSM for [!DNL Assets].
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
 * [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

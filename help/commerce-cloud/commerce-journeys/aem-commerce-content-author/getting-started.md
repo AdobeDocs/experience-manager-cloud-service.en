@@ -17,13 +17,13 @@ This article builds on those fundamentals.
 
 This document helps you understand how to use CIF for Content and Commerce specific authoring. After reading, you should:
 
-* Understand the concepts of CIF authoring using the Universal Editor
+* Understand the concepts of CIF authoring using Page Editor in AEM
 * How to access product catalog data in AEM using product and category pickers
 * How to access content and commerce data using the product cockpit and AEM Omnisearch
 
-## CIF Authoring in the Universal Editor {#cif-authoring}
+## CIF Authoring in AEM Page Editor {#cif-authoring}
 
-CIF extends the Universal Editor with capabilities to access the real-time product data without leaving the context:
+CIF extends the Page Editor in AEM with capabilities to access the real-time product data without leaving the context:
 
 Open the side panel and select 'Products' from the drop-down list.
 ![Select product type](assets/asset-finder-overview.png)
@@ -89,7 +89,7 @@ Omnisearch runs a full-text search in the commerce backend to find all related p
 
 Now that you have completed this part of the journey you should:
 
-* Understand the concepts of CIF authoring using the Universal Editor
+* Understand the concepts of CIF authoring using the Page Editor
 * How to access product catalog in AEM using product & category pickers
 * How to access content and commerce data using the product cockpit and AEM Omnisearch
 

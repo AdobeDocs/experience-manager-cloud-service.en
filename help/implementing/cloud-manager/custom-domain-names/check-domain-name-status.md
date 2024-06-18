@@ -2,6 +2,9 @@
 title: Checking Domain Name Status
 description: Learn how to determine whether your custom domain name has been verified successfully by Cloud Manager.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 
 # Checking Domain Name Status {#check-status}
@@ -10,7 +13,7 @@ You can determine status of your custom domain name within Cloud Manager.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, select the program.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
 
 1. Navigate to the **Environments** screen from the **Overview** page.
 

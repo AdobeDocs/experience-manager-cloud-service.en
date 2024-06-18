@@ -2,13 +2,15 @@
 title: Release Notes for Adobe Experience Manager (AEM) as a Cloud Service.
 description: Release Notes for Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
+feature: Release Information
+role: Admin
 ---
 
 # Release Information {#release-information}
 
 | Product | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Version | 2024.1.0 |
+| Version | 2024.5.0 |
 | Type | Continuous Updates |
 | Availability date | Continuous Update |
 
