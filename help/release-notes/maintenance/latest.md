@@ -15,6 +15,11 @@ Summarized below are the continuous improvements for maintenance release 16544, 
 
 2024.6.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
+>[!CAUTION]
+>
+>Please use the SDK referenced here under, as a regression has been confirmed with the previous SDK:
+>`AEM SDK v2024.06.16647.20240607T103723Z-240500`
+
 ### Enhancements {#enhancements-16544}
 
 * GRANITE-41133: Support Jakarta Servlet API 5 and OSGi Servlet Whiteboard API.
@@ -37,7 +42,12 @@ For more information about the new and enhanced features and issues fixed in Exp
 
 ### Known Issues {#known-issues-16544}
 
-None.
+* GRANITE-52573: Requests containing a double slash `//` are rejected with status code 400. This behaviour will be reverted in a subsequent maintenance release.
+
+>[!NOTE]
+> AEM Engineering has identified a regression for Launches functionality which is affecting current AEM releases starting with 16461. Because of this regression, new Launches (created after new releases have been applied) that include non-deep pages will not be properly promoted due to missing configurations.
+> In case your environments are affected, a shell script to identify and update missing configurations is available through customer support (internal reference SITES-22457).
+> A longer term fix will be made available that will ensure new Launches are created with all the right configurations. Until then, an internal patch release is also available on demand.
 
 ### Change Notice {#change-notice-16544}
 
