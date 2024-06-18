@@ -42,13 +42,17 @@ Summarized below are the continuous improvements for maintenance release 16799, 
 * ASSETS-39377: Bulk import from OneDrive might fail when receiving backpressure from remote API.
 * ASSETS-39428: Rendering issues in Copyright Management UI.
 * CQ-4357150: Guava in cq-content-sync bundle.
+* GRANITE-52573: Requests containing a double slash `//` are rejected with status code 400.
 * SCRNS-4194: Remove dependency on Google Guava APIs.
 * SCRNS-4360: Missing Manage Publication & Quick Publish Button for non-admin users in Content Provider for Channels.
 * SCRNS-4323: Hide/Disable launches from screens.html.
   
 ### Known Issues {#known-issues-16799}
 
-None.
+>[!NOTE]
+> AEM Engineering has identified a regression for Launches functionality which is affecting current AEM releases starting with 16461. Because of this regression, new Launches (created after new releases have been applied) that include non-deep pages will not be properly promoted due to missing configurations.
+> In case your environments are affected, a shell script to identify and update missing configurations is available through customer support (internal reference SITES-22457).
+> A longer term fix will be made available that will ensure new Launches are created with all the right configurations. Until then, an internal patch release is also available on demand.
 
 ### Change Notice {#change-notice-16799}
 
