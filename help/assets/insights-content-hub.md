@@ -1,6 +1,6 @@
 ---
 title: View assets insights in Content Hub
-description: View assets insights in [!DNL Content Hub]
+description: Learn how to view assets insights in [!DNL Content Hub]
 role: User
 ---
 # Assets Insights in [!DNL Content Hub] {#assets-insights}
@@ -11,7 +11,7 @@ role: User
 
 ## View statistics for uploaded assets{#view-statistics-for-uploaded-assets}
 
-You can view statistics of the uploaded assets and collections by navigating to the **[!UICONTROL Insights]** tab. Track the upload history of your assets with the yearly, monthly, and daily asset upload's view.
+You can view statistics of the uploaded assets and collections by navigating to the **[!UICONTROL Insights]** tab. Track the upload history of your assets with the yearly, monthly, and daily asset uploads view.
    
    ![Upload assets statistics](assets/assets-insights.jpg)
 
@@ -35,7 +35,7 @@ The pie chart visually represents the total count of assets by file format, prov
 
 You can also view:
 
-* **[!UICONTROL Assets by File format]**: Asset count and respective percentage based on file format.
+* **Active Users by Day and Month**: Number of active users by day or by month represented using a line graph.
 * **[!UICONTROL Assets by Campaigns]**: Asset count and respective percentage based on campaigns.
 * **[!UICONTROL Assets by Channels]**: Asset count and respective percentage based on channels used.
 * **[!UICONTROL Assets by Regions]**: Asset count and respective percentage based on regions of asset usage.
