@@ -803,17 +803,17 @@ In light of this information, Adobe advises reassessing your current AEM configu
 
 #### Connection Limits FAQ
 
-When using Advanced Networking the number of connections is limited in order to ensure stability across environments and to prevent that lower environments can exhaust the connections available.
+When using Advanced Networking the number of connections is limited in order to ensure stability across environments and to prevent that lower environments from exhausting the available connections.
 
 The connections are limited to 1000 per AEM instance and alerts are sent to customers when the number reaches 750.
 
-##### Is the connection limit applied only to outbound traffic out of non-standard ports or on all outbound traffic?
+##### Is the connection limit applied only to outbound traffic out of non-standard ports or to all outbound traffic?
 
 The limit is only for connections using Advanced Networking (egress on non-standard ports, using dedicated egress IP, or VPN).
 
-##### We don’t see a significant difference in the number of outgoing connections. Why are we receiving the notification now?
+##### We do not see a significant difference in the number of outgoing connections. Why are we receiving the notification now?
 
-If the customer creates connections dynamically (i.e., one or more for each request), an increase in traffic can cause the connections to spike.
+If the customer creates connections dynamically (for example, one or more for each request), an increase in traffic can cause the connections to spike.
 
 ##### Is it possible that we experienced a similar situation in the past without being alerted?
 
@@ -829,7 +829,7 @@ No, having a large number of connections can cause a significant performance imp
 
 ##### Are the connections automatically closed by the AEM system after a certain period?
 
-Yes, connections are closed at the JVM and different points in the networking infrastructure. However, this will be too late for any production service. Connections should be explicitly closed when no longer needed or returned to the pool when using connection pooling. Otherwise, the resource consumption will be too high and can cause exhaustion of resources.
+Yes, connections are closed at the JVM level and different points in the networking infrastructure. However, this will be too late for any production service. Connections should be explicitly closed when no longer needed or returned to the pool when using connection pooling. Otherwise, the resource consumption will be too high and can cause exhaustion of resources.
 
 ##### If the maximum connection limit is reached, does it affect any licenses and result in extra costs?
 
