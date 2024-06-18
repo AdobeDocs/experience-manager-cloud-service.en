@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 hide: no
 hidefromtoc: no
-
+exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
 ---
 # About best practices in Dynamic Media{#about-dm-best-practices}
 
@@ -346,4 +346,3 @@ Adobe recommends that you use Smart Imaging's capabilities rather than manually 
 By relying on Smart Imaging, you can ensure that your images are delivered in the most efficient manner possible, tailored to each user's browsing environment. This approach simplifies the process and can lead to improved performance in terms of image loading times and overall user experience.
 
 Want to learn more? Go to [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md).
-

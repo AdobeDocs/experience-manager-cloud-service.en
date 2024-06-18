@@ -2,6 +2,8 @@
 title: Real Use Monitoring for AEM as a Cloud Service
 description: Learn how to use Real Use Monitoring (RUM) to capture and analyze the digital user experience of a website or application in real-time.
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
+feature: Administering
+role: Admin
 ---
 # Real Use Monitoring Service for AEM as a Cloud Service {#real-use-monitoring-service-for-aem-as-a-cloud-service}
 
