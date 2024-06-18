@@ -33,7 +33,7 @@ To access the Repository Browser, the requisites are the same as for the AEM as 
 
 * Author instances: Users with the AEM Users Product Profile for the **Author instance** can view the repository browser with minimal read access; the user's permissions are respected when browsing the repository. Users with the AEM Administrators Product Profile can view the repository browser with full read access.
 
-* Publish instances: By default, you'll navigate using the anonymous user if no more user permissions are assigned. You might see some paths not appearing due to the lacking of permissions. Users with the AEM Users Product Profile for the **Publish instance** can view the repository browser with minimal read access.
+* Publish instances: Users with the AEM Users Product Profile for the **Publish instance** can view the repository browser with minimal read access. Without that product profile set, users will navigate as an anonymous user, and some paths will not appear due to limited permissions.
 
 For more information about setting up user permissions, see the [Cloud Manager Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).
 
