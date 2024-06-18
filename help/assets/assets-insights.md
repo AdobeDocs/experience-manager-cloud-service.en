@@ -2,8 +2,8 @@
 title: Assets Insights
 description: Track user ratings and usage statistics of images that are used in third-party websites, marketing campaigns, and Adobe's creative solutions.
 contentOwner: AG
-feature: Asset Insights,Asset Reports
-role: User,Leader
+feature: Asset Insights, Asset Reports
+role: User, Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
 ---
 # Assets Insights {#asset-insights}
@@ -189,3 +189,4 @@ Using the demo package, you can enable Adobe Assets Insights to capture data fro
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

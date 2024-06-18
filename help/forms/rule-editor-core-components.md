@@ -6,6 +6,13 @@ role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
 ---
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service (Core Components)    | This article         |
+| AEM as a Cloud Service (Foundation Components)    | [Click here](/help/forms/rule-editor.md)       |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html)                  |
+
 # Add rules to an Adaptive Form (Core Components) {#adaptive-forms-rule-editor}
 
 The rule editor feature empowers forms business users and developers to write rules on Adaptive Form objects. These rules define actions to trigger on form objects based on preset conditions, user inputs, and user actions on the form. It helps further streamline the form filling experience ensuring accuracy and speed.
@@ -17,12 +24,20 @@ The rule editor provides an intuitive and simplified user interface to write rul
 * Set a value for an object
 * Validate the value of an object
 * Execute functions to compute the value of an object
-* Invoke a Form Data Model service and perform an operation
+* Invoke a Form Data Model (FDM) service and perform an operation
 * Set property of an object
 
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
 
 Users added to the forms-power-users group can create scripts and edit existing ones. Users in the [!DNL forms-users] group can use the scripts but not create or edit scripts.
+
+## Difference between Rule editor in Core Components and Rule Editor in Foundation Components
+
+{{rule-editor-diff}}
+
+>[!NOTE]
+>
+> To see how to create and use custom functions in detail, refer to [Custom functions in Adaptive Forms (Core Components)](/help/forms/create-and-use-custom-functions.md) article.
 
 ## Understanding a rule {#understanding-a-rule}
 
@@ -104,13 +119,13 @@ In plain words, a typical When rule is structured as follows:
 
 `Then, do the following:`
 
-Action 2 on Object B;
-AND
-Action 3 on Object C;
+`Action 2 on Object B;`
+`AND`
+`Action 3 on Object C;
 
 `Else, do the following:`
 
-Action 2 on Object C;
+`Action 2 on Object C;`
 _
 
 When you have a multi-value component, such as radio buttons or list, while creating a rule for that component the options are automatically retrieved and made available to the rule creator. You need not type the option values again.
@@ -127,6 +142,58 @@ While writing a When rule, you can trigger the Clear Value Of action. Clear Valu
 >
 > When rule type only supports single-level then-else statements.
 
+#### Allowed Multiple fields in [!UICONTROL When] {#allowed-multiple-fields}
+
+In the **When** condition, you have the option to add other fields apart from the field to which the rule is applied. 
+
+For example, using the When rule type, you can evaluate a condition on different form objects and perform the action:
+
+When:
+
+(Object A Condition 1)
+
+AND/OR
+
+(Object B Condtion 2)
+
+Then, do the following:
+
+Action 1 on Object A
+
+_
+
+![Allowed Multiple fields in When](/help/forms/assets/allowed-multiple-field-when.png)
+
+##### Considerations while using Allowed Multiple fields in When condition feature
+
+* Ensure that the [core component is set to version 3.0.14 or later](https://github.com/adobe/aem-core-forms-components) to use this feature in the rule editor.
+* If rules are applied to different fields within the When condition, the rule triggers even if only one of those fields is changed.
+
+
+<!--
+* It is not possible to add multiple fields in the When condition while applying rules to a button.
+
+##### To enable Allowed Multiple fields in When condition feature
+
+Allowed Multiple fields in When condition feature is disabled by default. To enable this feature, add a custom property at the template policy:
+
+1. Open the corresponding template associated with an Adaptive Form in the template editor.
+1. Select the existing policy as **formcontainer-policy**.
+1. Navigate to the **[!UICONTROL Structure]**  view and, from the **[!UICONTROL Allowed Components]** list, open the **[!UICONTROL Adaptive Forms Container]** policy.
+1. Go to the **[!UICONTROL Custom Properties]** tab and to add a custom property, click **[!UICONTROL Add]**.
+1. Specify the **Group Name** of your choice. For example, in our case, we added the group name as **allowedfeature**.
+1. Add the **key** and **value** pair as follows:
+   * key: fd:changeEventBehaviour
+   * value: deps
+1. Click **[!UICONTROL Done]**. -->
+
+If the allowed multiple fields in the When condition feature encounter any issues, follow the troubleshooting steps as:
+
+1. Open the form in edit mode.
+1. Open the Content browser and select the **[!UICONTROL Guide Container]** component of your Adaptive Form.
+1. Click the Guide Container properties ![Guide properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box opens.
+1. Click Done and save the dialog again.
+
 **[!UICONTROL Hide]** Hides the specified object.
 
 **[!UICONTROL Show]** Shows the specified object.
@@ -135,15 +202,15 @@ While writing a When rule, you can trigger the Clear Value Of action. Clear Valu
 
 **[!UICONTROL Disable]** Disables the specified object.
 
-**[!UICONTROL Invoke service]** Invokes a service configured in a form data model. When you choose the Invoke Service operation, a field appears. On tapping the field, it displays all services configured in all form data models on your [!DNL Experience Manager] instance. On choosing a Form Data Model service, more fields appear where you can map form objects with input and output parameters for the specified service. See example rule for invoking Form Data Model services.
+**[!UICONTROL Invoke service]** Invokes a service configured in a form data model (FDM). When you choose the Invoke Service operation, a field appears. On tapping the field, it displays all services configured in all form data model (FDM) on your [!DNL Experience Manager] instance. On choosing a Form Data Model service, more fields appear where you can map form objects with input and output parameters for the specified service. See example rule for invoking Form Data Model (FDM) services.
 
 In addition to Form Data Model service, you can specify a direct WSDL URL to invoke a web service. However, a Form Data Model service has many benefits and the recommended approach to invoke a service.
 
-For more information about configuring services in form data model, see [[!DNL Experience Manager Forms] Data Integration](data-integration.md).
+For more information about configuring services in form data model (FDM), see [[!DNL Experience Manager Forms] Data Integration](data-integration.md).
 
-**[!UICONTROL Set value of]** Computes and sets the value of the specified object. You can set the object value to a string, the value of another object, the computed value using mathematical expression or function, the value of a property of an object, or the output value from a configured Form Data Model service. When you choose the web service option, it displays all services configured in all form data models on your [!DNL Experience Manager] instance. On choosing a Form Data Model service, more fields appear where you can map form objects with input and output parameters for the specified service.
+**[!UICONTROL Set value of]** Computes and sets the value of the specified object. You can set the object value to a string, the value of another object, the computed value using mathematical expression or function, the value of a property of an object, or the output value from a configured Form Data Model service. When you choose the web service option, it displays all services configured in all form data model (FDM) on your [!DNL Experience Manager] instance. On choosing a Form Data Model service, more fields appear where you can map form objects with input and output parameters for the specified service.
 
-For more information about configuring services in form data model, see [[!DNL Experience Manager Forms] Data Integration](data-integration.md).
+For more information about configuring services in form data model (FDM), see [[!DNL Experience Manager Forms] Data Integration](data-integration.md).
 
 The **[!UICONTROL Set Property]** rule type lets you set the value of a property of the specified object based on a condition action. You can set property to one of the following:
 * visible (Boolean)
@@ -563,17 +630,18 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 #### Custom functions in rule editor {#custom-functions}
 
-You can also use custom functions in your rule editor. For instructions on creating custom functions, refer to the article [Custom Functions in Adaptive Forms](/help/forms/create-and-use-custom-functions.md).
+Apart from the out-of-the-box functions like *Sum of* that are listed under **Functions Output**, you can also use custom functions in your rule editor. Rule editor supports JavaScript ECMAScript 2019 syntax for scripts and custom functions. For instructions on creating custom functions, refer to the article [Custom Functions in Adaptive Forms](/help/forms/create-and-use-custom-functions.md).
 
-Apart from the out-of-the-box functions like *Sum of* that are listed under Functions Output, you can write custom functions that you frequently need. Ensure that the function you write is accompanied by the `jsdoc` above it.
+<!--
+
+Ensure that the function you write is accompanied by the `jsdoc` above it. Adaptive Form supports the various [JavaScript annotations for custom functions](/help/forms/create-and-use-custom-functions.md#js-annotations).
+
+For more information, see [jsdoc.app](https://jsdoc.app/).
 
 Accompanying `jsdoc` is required:
 
 * If you want custom configuration and description
 * Because there are multiple ways to declare a function in `JavaScript,` and comments let you keep a track of the functions.
-
-Rule editor supports JavaScript ES2015 syntax for scripts and custom functions.
-For more information, see [jsdoc.app](https://jsdoc.app/).
 
 Supported `jsdoc` tags:
 
@@ -594,16 +662,16 @@ Supported `jsdoc` tags:
   `{type}` represents parameter type. Allowed parameter types are:
 
     1. string
-    1. number
-    1. boolean
-    1. scope
-    1. string[]
-    1. number[]
-    1. boolean[]
-    1. date
-    1. date[]
-    1. array
-    1. object
+    2. number
+    3. boolean
+    4. scope
+    5. string[]
+    6. number[]
+    7. boolean[]
+    8. date
+    9. date[]
+    10. array
+    11. object
 
    `scope` refers to a special globals object which is provided by forms runtime. It must be the last parameter and is not be visible to the user in the rule editor. You can use scope to access readable form and field proxy object to read properties, event which triggered the rule and a set of functions to manipulate the form.
 
@@ -639,7 +707,6 @@ By default all parameters are mandatory. You can mark a parameter optional by ad
 
   All other return types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Return types are not case-sensitive.
 
-<!--
 **Adding a custom function**
 
 For example, you want to add a custom function which calculates area of a square. Side length is the user input to the custom function, which is accepted using a numeric box in your form. The calculated output is displayed in another numeric box in your form. To add a custom function, you have to first create a client library, and then add it to the CRX repository.
@@ -647,7 +714,7 @@ For example, you want to add a custom function which calculates area of a square
 To create a client library and add it in the CRX repository, perform the following steps:
 
 1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
-1. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
+2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
    >
@@ -830,7 +897,7 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 
 ### Invoke Form Data Model service {#invoke}
 
-Consider a web service `GetInterestRates` that takes loan amount, tenure, and applicant's credit score as input and returns a loan plan including EMI amount and rate of interest. You create a Form Data Model using the web service as a data source. You add data model objects and a `get` service to the form model. The service appears in the Services tab of the form data model. Then, create an Adaptive Form that includes fields from data model objects to capture user inputs for loan amount, tenure, and credit score. Add a button that triggers the web service to fetch plan details. The output is populated in appropriate fields.
+Consider a web service `GetInterestRates` that takes loan amount, tenure, and applicant's credit score as input and returns a loan plan including EMI amount and rate of interest. You create a Form Data Model (FDM) using the web service as a data source. You add data model objects and a `get` service to the form model. The service appears in the Services tab of the form data model (FDM). Then, create an Adaptive Form that includes fields from data model objects to capture user inputs for loan amount, tenure, and credit score. Add a button that triggers the web service to fetch plan details. The output is populated in appropriate fields.
 
 The following rule shows how you configure the Invoke service action to accomplish the example scenario.
 
@@ -891,8 +958,6 @@ Rule in the code editor -->
 In the purchase order form explained in the previous example, you want to restrict user from ordering more than one quantity of any product that is priced more that 10000. To do this validation, you can write a Validate rule as shown below.
 
 ![Example-validate](assets/example-validate.png)
-
-Rule in the visual editor
 
 <!-- The rule appears as follows in the code editor.
 

@@ -2,6 +2,9 @@
 title: Previewing Content
 description: Learn how to use the AEM preview service to preview content before going live.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 
 # Previewing Content {#previewing-content}
@@ -48,11 +51,3 @@ Content may also be published to preview by using a [publish content tree workfl
 Unpublishing content from your **Preview** environment is basically the same process as [unpublishing pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md#unpublishing-pages) from the **Publish** environment. 
 
 The only difference is that you can select the **Destination** to be **Preview**.
-
-## Further Information {#further-information}
-
-See also:
-
-* [Configuring OSGi Settings for the Preview Tier](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
-
-* [Debugging Preview Using the Developer Console](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)

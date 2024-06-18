@@ -3,7 +3,7 @@ title: Import and export asset metadata in bulk
 description: This article describes how to import and export metadata in bulk.
 contentOwner: AG
 feature: Metadata
-role: User,Admin
+role: User, Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
 ---
 # Import and export asset metadata in bulk {#import-and-export-asset-metadata-in-bulk}
@@ -88,6 +88,7 @@ A few use cases for exporting metadata in bulk are:
 * [Manage metadata](manage-metadata.md)
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

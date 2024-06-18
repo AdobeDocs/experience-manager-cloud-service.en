@@ -3,8 +3,8 @@ title: How to search assets in AEM?
 description: Learn how to search assets in AEM by using Filters panel, and how to use the results that show up in asset search.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Search,Metadata,Asset Distribution
-role: User,Admin
+feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
+role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
 ---
 # Search assets in AEM {#search-assets-in-aem}
@@ -545,6 +545,7 @@ Navigate to the folder location for assets displayed in the search results. Sele
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

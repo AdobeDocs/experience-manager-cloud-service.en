@@ -3,7 +3,7 @@ title: How to edit or add metadata
 description: Learn about asset metadata in [!DNL Experience Manager Assets] an various ways by which you can edit asset metadata.
 contentOwner: AG
 feature: Metadata
-role: User,Admin
+role: User, Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
 ---
 # How to edit or add metadata {#how-to-edit-or-add-metadata}
@@ -62,3 +62,4 @@ You can add your own namespaces within Experience Manager. Just as there are pre
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

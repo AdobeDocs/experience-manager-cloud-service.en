@@ -3,8 +3,8 @@ title: Manage digital assets
 description: Learn about various asset management and editing methods
 contentOwner: AG
 mini-toc-levels: 3
-feature: Asset Management,Publishing,Collaboration,Asset Processing
-role: User,Architect,Admin
+feature: Asset Management, Publishing,Collaboration, Asset Processing
+role: User, Architect, Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 ---
 # Manage assets {#manage-assets}
@@ -670,3 +670,4 @@ To know more, see how to [browse DAM assets using desktop app](https://experienc
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

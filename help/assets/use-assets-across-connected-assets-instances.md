@@ -3,8 +3,8 @@ title: Use Connected Assets to share DAM assets in [!DNL Sites]
 description: Use assets available on a remote [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] deployment.
 contentOwner: AK
 mini-toc-levels: 2
-feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
-role: Admin,User,Architect
+feature: Asset Management, Connected Assets, Asset Distribution
+role: Admin, User, Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 ---
 
@@ -371,3 +371,4 @@ To troubleshoot common errors, follow these steps:
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

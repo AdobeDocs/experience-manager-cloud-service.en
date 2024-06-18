@@ -3,6 +3,9 @@ title: Managing Pipelines
 description: Learn how to manage your existing pipelines including editing, running, and deleting them.
 index: yes
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 
 # Managing Pipelines {#managing-pipelines}
@@ -35,21 +38,25 @@ The **Pipelines** window shows a complete list of all pipelines for the selected
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, select the program.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
 
 1. From the **Program Overview** page, select the **Pipelines** tab to switch to the **Pipelines** window.
 
 1. Here you can see a list of all pipelines for the program and start and stop pipeline execution as you would in the **Pipelines Card**.
 
-If a pipeline is executing, hovering over its **Status** column will reveal details about the execution.
+If a pipeline is executing, tapping the information icon in the **Status** column will reveal details about the execution.
 
 ![Pipeline execution details](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-status.png)
 
 Tapping or clicking **View details** will take you to the [details of the pipeline execution.](#view-details)
 
+You can also tap or click the ellipsis button of the pipeline to take additional actions appropriate to the pipeline state such as [editing](#editing-pipelines) it or [cancelling execution.](#cancel)
+
+![Pipeline actions](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-actions.png)
+
 ## Activity Window {#activity}
 
-The **Activities** window shows a complete list of all pipelines executions for the selected program.
+The **Activity** window shows a complete list of all pipelines executions for the selected program as well as other important program events.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
@@ -57,11 +64,15 @@ The **Activities** window shows a complete list of all pipelines executions for 
 
 1. Here you can see a list of all pipeline executions for the program including current and historical executions.
 
-If a pipeline is executing, hovering over its **Status** column will reveal details about the execution.
+If a pipeline is executing, tapping the information icon in the **Status** column will reveal details about the execution.
 
 ![Pipeline execution details](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-activity.png)
 
-Tapping or clicking **View details** will take you to the [details of the pipeline execution.](#view-details)
+Tapping or clicking the row representing the pipeline execution will take you to the [details of the pipeline execution.](#view-details)
+
+You can also tap or click the ellipsis button to take further action on the pipeline execution, such as view its details or download the log, which takes you to the [pipeline details page.](#view-details)
+
+![Pipeline execution actions](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-execution-actions.png)
 
 ## Running Pipelines {#running-pipelines}
 
@@ -92,6 +103,10 @@ Depending on the type of pipeline, you may be able to cancel the run by clicking
 >[!NOTE]
 >
 >You cannot edit a running pipeline.
+
+>[!NOTE]
+>
+>Web tier and config pipelines are not supported with private repositories. Please see the document [Adding Private Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) for details and the full list of limitations.
 
 ## Deleting Pipelines {#deleting-pipelines}
 
@@ -126,6 +141,14 @@ Once a pipeline step is complete, a summary is presented.
 Select the **View details** link to reveal the **Duration** section. This includes the average duration for the pipeline based on the historical trend for that program.
 
 ![Duration](/help/implementing/cloud-manager/assets/configure-pipeline/duration.png)
+
+If your pipeline contained a **Code Scanning** step, which raised issues, you can tap or click the **Download Details** button to view a list of [code quality tests](/help/implementing/cloud-manager/code-quality-testing.md) that did not pass.
+
+![Code quality issues](assets/managing-pipelines-code-quality-issues.png)
+
+A **Project File Location** column is available in the CSV file to indicate the location of the offending code. This column is the project-relative path, whereas the **File Location** column is Maven-generated.
+
+![Project code scan issue details](assets/managing-pipelines-code-quality-details.png)
 
 >[!NOTE]
 >

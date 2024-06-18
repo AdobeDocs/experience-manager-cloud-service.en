@@ -2,6 +2,8 @@
 title: Developing and Page Diff
 description: Understand how the Page Diff feature works and how it can impact a developer
 exl-id: 03c08616-2203-4b90-bed6-4836266e2507
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Developing and Page Diff {#developing-and-page-diff}
 

@@ -2,6 +2,8 @@
 title: Reuse Content Fragments using MSM and Live Copies
 description: Learn about using the Live Copy functionality of MSM to use the same, or similar, Content Fragment content in multiple locations, while synchronizing with the source content.
 exl-id: f050b2d1-856c-4cdb-ac74-bc78016f144a
+feature: Content Fragments
+role: User
 ---
 # Reuse Content Fragments using MSM {#reuse-content-fragments-using-msm}
 

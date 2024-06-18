@@ -2,8 +2,8 @@
 title: Accessibility in [!DNL Experience Manager Assets]
 description: Know how accessibility features in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] help users with disabilities.
 contentOwner: AG
-feature: Accessibility,Asset Management
-role: User,Architect,Leader
+feature: Accessibility, Asset Management
+role: User, Architect, Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
 ---
 <!--
@@ -225,6 +225,7 @@ When sharing assets, the following functionalities improve the accessibility:
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 ## Provide feedback {#a11y-feedback}
 

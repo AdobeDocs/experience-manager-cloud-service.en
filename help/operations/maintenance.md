@@ -2,6 +2,8 @@
 title: Maintenance Tasks in AEM as a Cloud Service
 description: Learn about maintenance tasks in AEM as a Cloud Service and how to configure them.
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
+feature: Operations
+role: Admin
 ---
 # Maintenance Tasks in AEM as a Cloud Service {#maintenance-tasks-in-aem-as-a-cloud-service}
 
@@ -38,7 +40,7 @@ The following table illustrates the maintenance tasks that are available at the 
   <tr>
     <td>Version Purge</td>
     <td>Adobe</td>
-    <td>For existing environments (those created before April 15, 2024), purging is disabled and will be enabled in the future with a default of 7 years; customers will be able to configure it with lower, custom values (such as 30 days).<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->New environments (those created starting April 15, 2024) will have purging enabled by default with the values below, with customers being able to configure with custom values.
+    <td>For existing environments (those created before a yet-to-be-determined date in 2024), purging is disabled and will be enabled in the future with a default of 7 years; customers will be able to configure it with lower, custom values (such as 30 days).<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->New environments (those created starting a yet-to-be-determined date in 2024) will have purging enabled by default with the values below, with customers being able to configure with custom values.
      <ol>
        <li>Versions older than 30 days are removed</li>
        <li>The most recent 5 versions in the last 30 days are kept</li>
@@ -50,7 +52,7 @@ The following table illustrates the maintenance tasks that are available at the 
   <tr>
     <td>Audit Log Purge</td>
     <td>Adobe</td>
-    <td>For existing environments (those created before April 15, 2024), purging is disabled and will be enabled in the future with a default of 7 years; customers will be able to configure it with lower, custom values (such as 30 days).<br><br> <!-- See above for the two line breaks -->New environments (those created starting April, 2024) will have purging enabled by default under the <code>/content</code> node of the repository according to the following behavior:
+    <td>For existing environments (those created before a yet-to-be-determined date in 2024), purging is disabled and will be enabled in the future with a default of 7 years; customers will be able to configure it with lower, custom values (such as 30 days).<br><br> <!-- See above for the two line breaks -->New environments (those created starting a yet-to-be-determined date in 2024) will have purging enabled by default under the <code>/content</code> node of the repository according to the following behavior:
      <ol>
        <li>For replication auditing, audit logs older than 3 days are removed</li>
        <li>For DAM (Assets) auditing, audit logs older than 30 days are removed</li>

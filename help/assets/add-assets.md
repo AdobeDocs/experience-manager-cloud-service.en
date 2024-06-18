@@ -1,8 +1,8 @@
 ---
 title: Add your digital assets to [!DNL Adobe Experience Manager].
 description: Add your digital assets to [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
-feature: Asset Management,Upload
-role: User,Admin
+feature: Asset Ingestion, Asset Management, Asset Processing, Upload
+role: User, Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 ---
 # Add digital assets to [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}
@@ -408,6 +408,7 @@ Technical details of the upload APIs and protocol, and links to open-source SDK 
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

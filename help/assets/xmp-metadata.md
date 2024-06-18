@@ -3,7 +3,7 @@ title: XMP metadata
 description: Learn about the XMP (Extensible Metadata Platform) metadata standard for metadata management. It is used by Experience Manager as a standardized format for creation, processing, and interchange of metadata.
 contentOwner: AG
 feature: Metadata
-role: User,Admin
+role: Admin, User
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
 ---
 # XMP metadata {#xmp-metadata}
@@ -154,3 +154,4 @@ The metadata changes are propagated to the renditions renditions thumbnail.140.1
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

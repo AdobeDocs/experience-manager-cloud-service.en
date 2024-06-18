@@ -2,6 +2,8 @@
 title: Ingesting Content into Cloud Service
 description: Learn how to use the Cloud Acceleration Manager to ingest content from your migration set into a destination Cloud Service instance.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
+feature: Migration
+role: Admin
 ---
 # Ingesting Content into Cloud Service {#ingesting-content}
 
@@ -49,11 +51,24 @@ Follow the steps below to ingest your migration set using the Cloud Acceleration
    > If the setting **Wipe** is enabled for the ingestion, it resets the entire existing repository including the user permissions on the target Cloud Service instance. This resetting is true also for an admin user added to the **administrators** group and that user must be added to the administrators group again to start an ingestion.
 
    * **Pre-Copy:** Choose the `Pre-copy` value
-     * You can run the optional pre-copy step to significantly speed-up the ingestion. See [Ingesting with AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) for more details.
+     * You can run the optional pre-copy step to significantly speed up the ingestion. See [Ingesting with AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) for more details.
      * If ingesting with pre-copy is used (for S3 or Azure Data Store), it is recommended to run `Author` ingestion first alone. Doing so speeds up the `Publish` ingestion when it is run later.
 
    >[!IMPORTANT]
    > You can initiate an ingestion to the destination environment only if you belong to the local **AEM administrators** group on the destination Cloud Service author service. If you are unable to start an ingestion, see [Unable to Start Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) for more details.
+
+1. Once ingestion choices have been selected, an estimate of its duration will be shown. This is a best-effort estimate based on historical data of similar ingestions.
+
+   * This estimate is only calculated and shown if the 'Check Size' values of the extraction were collected and are available.
+   * This value is an estimate and, although intelligently calculated, should not be considered exact. Various factors can change the actual duration.
+   * While the ingestion is running, this value will also be available in the durations dialog, accessed through the "**View durations**" action of the ingestion.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_estimate"
+>title="Ingestion Duration Estimate"
+>abstract="An approximate duration of a particular ingestion can be displayed to provide a general sense as to how long it will take. Limitations to its accuracy do exist."
+
+   ![image](/help/journey-migration/content-transfer-tool/assets/estimate.png)
 
 1. Click **Ingest**.
 
@@ -196,6 +211,8 @@ Best practices indicate that if a **Non-Wipe** ingestion must be run using a mig
 Node property values stored in MongoDB cannot exceed 16 MB. If a node value exceeds the supported size, the ingestion fails and the log will contain a `BSONObjectTooLarge` error and specify which node exceeded the maximum. This is a MongoDB restriction.
 
 See the `Node property value in MongoDB` note in [Prerequisites for Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) for more information and a link to an Oak tool that could help find all the large nodes. Once all nodes with large sizes are remedied, run the extraction and ingestion again.
+
+To possibly avoid this restriction, run the [Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) on the source AEM instance and review the findings it presents, particularly the ["Unsupported Repository Structure" (URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs) pattern.
 
 ### Ingestion Rescinded {#ingestion-rescinded}
 

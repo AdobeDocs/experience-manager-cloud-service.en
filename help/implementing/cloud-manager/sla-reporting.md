@@ -2,6 +2,9 @@
 title: SLA Reporting
 description: Learn how to see the performance of your production AEM environment relative to the contracted Service Level Agreement (SLA).
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 
 # SLA Reporting {#sla-reporting} 
@@ -14,9 +17,9 @@ SLA reporting data is available for every production program via the **Reports**
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen select the program.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
 
-1. Navigate to the **Reports** tab from the **Overview** page.
+1. Using the side navigation panel, navigate to the **Reports** tab from the **Overview** page.
 
 1. Click the year desired to see the SLA data graphed.
 

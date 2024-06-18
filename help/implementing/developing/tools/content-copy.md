@@ -2,6 +2,8 @@
 title: The Content Copy Tool
 description: The content copy tool enables users to copy mutable content on-demand from their production environments on AEM as a Cloud Service to lower environments for testing purposes.
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # The Content Copy Tool {#content-copy}
 
@@ -43,9 +45,7 @@ Before any content can be copied, a content set must be defined. After it is def
 
 1. Log on to Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. Navigate to the **Environments** screen from the **Overview** page.
-
-1. Navigate to the **Content Sets** page from the **Environments** screen.
+1. Using the side navigation panel, navigate to the **Content Sets** tab from the **Overview** page.
 
 1. At the top-right of the screen, click **Add Content Set**.
 

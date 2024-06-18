@@ -2,6 +2,9 @@
 title: Adding a Custom Domain Name
 description: Learn how to add a custom domain name using Cloud Manager.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 
 # Adding a Custom Domain Name {#adding-cdn}
@@ -23,11 +26,9 @@ Follow these steps to add a custom domain name from the **Domain Settings** page
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, select the program.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
 
-1. Navigate to the **Environments** screen from the **Overview** page.
-
-1. Click **Domain Settings** in the left navigation panel.
+1. Navigate to the select the **Domain Settings** tab in the left navigation panel.
 
    ![The Domain Settings window](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 

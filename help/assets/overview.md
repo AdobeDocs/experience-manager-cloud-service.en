@@ -1,13 +1,13 @@
 ---
-title: Introduction to Assets as a [!DNL Cloud Service]
-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
+title: Adobe's Digital Asset Management (DAM) using AEM 
+description: Understand how to use and administer Adobe's Digital Asset Management (DAM) using Experience Manager Assets as a Cloud Service.
 contentOwner: AK
 feature: Asset Management
-role: User,Leader,Architect
+role: User, Leader, Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 ---
 
-# Introducing Assets as a [!DNL Cloud Service] {#assets-cloud-service-introduction}
+# Introducing Assets as a [!DNL Cloud Service] for Digital Asset Management in AEM {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
 
@@ -17,13 +17,13 @@ Concurrent ingestion of many assets or complex assets is resource-intensive task
 
 Businesses require support for a wide variety of file formats and content resolutions for multi-device, cross-geography, and multilingual use cases. Asset processing and storage requirements demand resources and capabilities that can overburden a traditional solution. At times, technical limitations of asset processing do not yield the desired results and at other times the cost of storage is an impediment for profit margins.
 
-To begin with, understand the [benefits of a cloud-native offering](#solution-benefits). Check out the notable [changes to Experience Manager as a [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md) that also impact Experience Manager Assets followed up the notable [changes to Assets](/help/assets/assets-cloud-changes.md).
+To begin with, understand the [benefits of a cloud-native offering](#solution-benefits) for Digital Asset Management. Check out the notable [changes to Experience Manager as a [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md) that also impact Experience Manager Assets followed up the notable [changes to Assets](/help/assets/assets-cloud-changes.md).
 
 Read on to know the [details of the new Assets capabilities](#whats-new-assets) and the [known issues](/help/release-notes/maintenance/latest.md). See a list of [deprecated or removed functionality](/help/release-notes/deprecated-removed-features.md) to know what is removed in this release. Finally, understand the Experience Manager terms with the help of this [glossary](/help/overview/terminology.md).
 
 ## Solution benefits {#solution-benefits}
 
-The following are the key benefits of Assets as a [!DNL Cloud Service]. To know more, see [overview of Experience Manager as a [!DNL Cloud Service]](/help/overview/introduction.md).
+The following are the key benefits of Assets as a [!DNL Cloud Service] for Digital Asset Management. To know more, see [overview of Experience Manager as a [!DNL Cloud Service]](/help/overview/introduction.md).
 
 * **Modern cloud services for asset processing**: The new asset microservices is a cloud-based, scalable, reliable, and hassle-free asset processing service.
 * **Highly scalable**: Elastic scalability across all types of deployments. Practically unlimited resources that are available on-demand, as and when needed. Saves the cost of over-design as compared to a traditional system.
@@ -32,13 +32,13 @@ The following are the key benefits of Assets as a [!DNL Cloud Service]. To know 
 * **Constant monitoring**: The monitoring of the system is automated and built-in checks and triggers help maintain the performance, availability, and overall robustness.
 * **Hassle-free deployments**: Experience Manager in the Cloud operations are completely automated that require no manual intervention. For automated deployments, the Cloud Manager (CM) component automates the build of deployable Docker images containing your custom code.
 
-## Available persona-based experiences {#persona-based-experiences}
+## Available persona-based experiences for Digital Asset Management {#persona-based-experiences}
 
 Adobe offers robust Digital Asset Management (DAM) solutions for you to get the most out of your digital assets. Adobe Experience Manager Assets has two separate experiences that use the same Cloud Services repository:
 
-* **Admin View**: The existing Assets as a Cloud Service user interface. Use the Admin View for all advanced asset management capabilities including integrations, workflows, content automation, publishing and more. 
+* **Admin View**: The existing Assets as a Cloud Service user interface. Use the Admin View for all advanced Digital Asset Management capabilities including integrations, workflows, content automation, publishing and more. 
 
-* **Assets View**: Adobe's lightweight asset management experience to store, manage, discover, and use digital assets. Streamlined user interface containing essential asset management capabilities. Designed for the light-weight DAM users with a focus on upload, metadata management, search, download, and sharing.
+* **Assets View**: Adobe's lightweight asset management experience to store, manage, discover, and use digital assets. Streamlined user interface containing essential Digital Asset Management capabilities. Designed for the light-weight DAM users with a focus on upload, metadata management, search, download, and sharing.
 
 Users with access to the Admin view can also access the Assets view. Assets View provides simplified user interface makes it easy to manage, discover, and distribute your digital assets. A broad set of users from across different functions, including creatives, marketing and line-of-business teams can collaborate on assets and access the right, approved assets when and where they need them. Many casual DAM users prefer the Assets view because it only contains a subset of features. The experience is targeted to creatives, read-only asset consumers, and lighter-weight DAM users.  
 
@@ -79,3 +79,4 @@ The significant new capabilities are:
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

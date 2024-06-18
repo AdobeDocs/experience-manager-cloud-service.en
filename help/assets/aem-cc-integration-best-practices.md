@@ -3,8 +3,8 @@ title: Best practices to integrate with [!DNL Adobe Creative Cloud]
 description: Best practices integrate an Experience Manager deployment with Adobe Creative Cloud to streamline asset transfer workflows and achieve maximum efficiency.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Collaboration,Adobe Asset Link,Desktop App
-role: Architect,User,Admin
+feature: Collaboration, Adobe Asset Link, Desktop App
+role: User, Architect, Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
 ---
 # Adobe Experience Manager and Creative Cloud integration best practices {#aem-and-creative-cloud-integration-best-practices}
@@ -242,3 +242,4 @@ Avoid using Experience Manager desktop app to manage assets directly in the netw
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

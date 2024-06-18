@@ -2,8 +2,8 @@
 title: Content Automation for Creative Cloud integration
 description: Generate variations of assets using Creative Cloud integration
 contentOwner: AG
-feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
-role: User,Admin
+feature: Upload, Asset Processing, Publishing, Asset Compute Microservices
+role: User, Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
 ---
 # Generate variations of assets using [!DNL Adobe Creative Cloud] integration {#content-automation}
@@ -109,6 +109,7 @@ To process the existing assets, select the assets, select **[!UICONTROL Reproces
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
