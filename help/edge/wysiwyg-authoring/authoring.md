@@ -10,16 +10,16 @@ role: User
 
 With Edge Delivery Services, authoring is easy, fast, and flexible. You have two options to author content for Edge Delivery Services:
 
-* [Universal Editor](#universal-editor) - A modern UI for authoring content within AEM
+* [Universal Editor](#universal-editor) - A modern what-you-see-is-what-you-get (WYSIWYG) UI for  authoring content within AEM
 * [Document-Based Authoring ](#document-based) - Such as Microsoft Word or Google Docs
 
 ## Universal Editor Authoring {#universal-editor}
 
 When using Edge Delivery Services with AEM as a Cloud Service, the most fundamental fact to understand is that the content you author is persisted in AEM as a Cloud Service.
 
-![How AEM authoring works with Edge Delivery Services](assets/how-aem-edge-works.png)
+![How WYSIWYG Authoring works with Edge Delivery Services](assets/how-aem-edge-works.png)
 
-1. [The AEM authoring environment](/help/sites-cloud/authoring/quick-start.md) is used for content management such as creating new pages, Experience Fragments, Content Fragments, etc.
+1. [The WYSIWYG Authoring environment](/help/sites-cloud/authoring/quick-start.md) is used for content management such as creating new pages, Experience Fragments, Content Fragments, etc.
    * All features of AEM are available such as workflows, MSM, translation, Launches, etc.
 1. [The Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) is used to author the content managed in AEM.
    * The Universal Editor offers a new and modern UI for content authoring.
@@ -44,7 +44,7 @@ Details of the blocks can then be configured in the Properties rail.
 
 For details on how to author using the Universal Editor, please see the document [Authoring Content with the Universal Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
-Please see the [Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/aem-authoring/edge-dev-getting-started.md) to learn how to start your own project to author with AEM and Edge Delivery Services.
+Please see the [Developer Getting Started Guide for WYSIWYG Authoring with Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) to learn how to start your own project to author with AEM and Edge Delivery Services.
 
 ## Document-Based Authoring  {#document-based}
 
