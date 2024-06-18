@@ -5,12 +5,12 @@ contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
 content-type: reference
-feature: Video, Renditions, Configuration, Asset Management, Best Practices
+feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rulesets, Viewers, Smart Crop, SEO Optimization, Publishing, Video, Renditions, Asset Management
 role: User, Admin
 mini-toc-levels: 4
 hide: no
 hidefromtoc: no
-
+exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
 ---
 # About best practices in Dynamic Media{#about-dm-best-practices}
 
@@ -87,6 +87,8 @@ Want to learn more? Go to [Organize assets as collections](/help/assets/manage-c
 A processing profile automates asset handling in designated folders, streamlining organization. Standardizing metadata, file names, and folder structures allows for consistent and precise application of these profiles as your digital asset collection expands.
 Want to learn more? Go to [Organize assets using profiles](/help/assets/organize-assets.md#organize-to-use-profiles).
 
+ 
+
 ### Optimize the quality of images
 
 **Business case:** *Obtain good quality images from Dynamic Media.*
@@ -162,8 +164,8 @@ Dynamic Media offers a suite of commands for enhancing images and creating visua
 | Task | What to do |
 | --- | --- |
 | **Upload and publish your original image** | &bull; Start by uploading the original image to Dynamic Media.<br>&bull; Make sure that it is published and accessible through a URL.<br>&bull; In this example, a stock image of a watch with a white background (let's call it "Image X") is uploaded to Dynamic Media.<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer) |
-| **Create a mask** | &bull; Develop a mask that defines the subject (the area where you want to apply effects) and the background (the area you want to change).<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer_maskps](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer_maskps)<br>&bull; Masks are typically grayscale images, where white represents the subject, and black represents the background. You can create masks using tools like Adobe Photoshop.<br>Want to learn more? Go to [Creating and editing a quick mask in Photoshop](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html).<br>&bull; For "Image X," create a mask that precisely outlines the subject you want to enhance. For example, a person, an object, and so on. | 
-| **Apply Dynamic Media URL commands for effects** |  After you have your mask, use URL commands to apply effects like drop shadows or change the background color to "Image X." Here are two examples:<br><br> &bull; **Drop shadow effect:**<br>To add a drop shadow effect along the subject's boundary, edit the URL like this:<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer_maskps&maskUse=invert&effect=-1&pos=100,100&op_blur=75&op_grow=1&opac=25](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer_maskps&maskUse=invert&effect=-1&pos=100,100&op_blur=75&op_grow=1&opac=25)<br>In this URL, the `$shadow$` parameter creates the shadow effect, and `color=0,0,0` sets the shadow color to black.<br>&bull; **Background color change:**<br>To change the background color, use the URL with a different background color value:<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer_maskps&maskUse=invert&maskUse=invert&color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer_maskps&maskUse=invert&maskUse=invert&color=255,255,0)<br> In this example, `color=255,255,0` sets the background color to yellow. Edit the background to a specific color for visual impact. |
+| **Create a mask** | &bull; Develop a mask that defines the subject (the area where you want to apply effects) and the background (the area you want to change).<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps)<br>&bull; Masks are typically grayscale images, where white represents the subject, and black represents the background. You can create masks using tools like Adobe Photoshop.<br>Want to learn more? Go to [Creating and editing a quick mask in Photoshop](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html).<br>&bull; For "Image X," create a mask that precisely outlines the subject you want to enhance. For example, a person, an object, and so on. | 
+| **Apply Dynamic Media URL commands for effects** |  After you have your mask, use URL commands to apply effects like drop shadows or change the background color to "Image X." Here are two examples:<br><br> &bull; **Drop shadow effect:**<br>To add a drop shadow effect along the subject's boundary, edit the URL like this:<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&effect=-1&pos=100,100&op_blur=75&op_grow=1&opac=25](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&effect=-1&pos=100,100&op_blur=75&op_grow=1&opac=25)<br>In this URL, the `$shadow$` parameter creates the shadow effect, and `color=0,0,0` sets the shadow color to black.<br>&bull; **Background color change:**<br>To change the background color, use the URL with a different background color value:<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&maskUse=invert&color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&maskUse=invert&color=255,255,0)<br> In this example, `color=255,255,0` sets the background color to yellow. Edit the background to a specific color for visual impact. |
 
 #### Add an image border
 
@@ -173,7 +175,7 @@ Dynamic Media lets you manipulate images directly through URLs, making it a powe
 | --- | --- |
 | **White border** | To add a white border, use the following URL:<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10)<br>In this URL, the `extend=10,10,10,10` parameter specifies the border size of ten pixels on all sides. | 
 | **Blur along the white border** | To add a blur effect along the white border, you can edit the URL as follows:<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&op_blur=60&color=0,0,0](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&op_blur=60&color=0,0,0)<br>In this URL, the `effect=-1` parameter applies the blur effect, and `op_blur=60` controls the blur intensity. |
-| **Drop shadow effect along the outer boundary** | To add a drop shadow effect along the outer boundary, use this URL:<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&$shadow$&color=0,0,0](https://s7g10.scene7.com/is/image/genaibeta/AdobeStock_754660022?size=400,400&extend=10,10,10,10&effect=-1&$shadow$&color=0,0,0)<br>The `$shadow$` parameter creates the shadow effect, and `color=0,0,0` sets the shadow color to black. |
+| **Drop shadow effect along the outer boundary** | To add a drop shadow effect along the outer boundary, use this URL:<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&$shadow$&color=0,0,0](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&$shadow$&color=0,0,0)<br>The `$shadow$` parameter creates the shadow effect, and `color=0,0,0` sets the shadow color to black.  |
 
 Feel free to experiment with these URLs to achieve the desired visual effects.
 
@@ -184,7 +186,7 @@ If you are looking to superimpose a logo or icon on an existing image, Dynamic M
 | Step | What to do |
 | --- | --- |
 | **Upload and publish the base image** | First, upload and publish the base image on which you want to superimpose the logo or icon. You can use any image as your base.<br>For example, here is a base image:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa). | 
-| **Upload and publish the logo or icon image** | Next, upload and publish the image that you want to superimpose over the base image. This image should be a transparent PNG with the logo or icon you want to overlay.<br>Here is the transparent PNG image of a star object with transparency effects that is going to be superimposed:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g10.scene7.com/is/image/genaibeta/starxp) |
+| **Upload and publish the logo or icon image** | Next, upload and publish the image that you want to superimpose over the base image. This image should be a transparent PNG with the logo or icon you want to overlay.<br>Here is the transparent PNG image of a star object with transparency effects that is going to be superimposed:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
 | **Apply the Dynamic Media URL** | Now, create a Dynamic Media URL that combines the base image and the logo or icon image. You can use URL commands to achieve this effect.<br>The URL structure looks something like this:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png)<br>where<br>&bull; `hotspotRetailBaseImage` is the base image.<br>&bull; `starxp` is the logo/icon image.<br>&bull; `layer=1` specifies that the logo or icon should be layered over the base image.<br>&bull; `scale=1.25` adjusts the size of the logo/icon.<br>&bull; `posN=0.33,-.25` determines the position of the logo/icon relative to the base image.<br>&bull; `fmt=png` ensures that the output is in PNG format. |
 
 What to learn more? Go to [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) for more details on the `src` command and other Dynamic Media URL commands.
@@ -197,7 +199,7 @@ The following are the steps for overlaying a promotional text message on an imag
 | Step | What to do |
 | --- | --- |
 | **Upload and publish the base image** | First, upload and publish the base image on which you want to superimpose the text. You can use any image you like. For example, here's a sample base image:<br>[https://s7g2.scene7.com/is/image/genaibeta/leather-sofa](https://s7g2.scene7.com/is/image/genaibeta/leather-sofa)<br> |
-| **Apply Dynamic Media text operators** | Using Dynamic Media, you can apply text operators to overlay dynamic text directly onto the image. The following sample URL demonstrates this ability:<br>[https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&posN=-0.3,-0.455&text=%7b%5Crtf1%5Cansi%7b%5Cfonttbl%7b%5Cf0+Arial;%7d%7d%7b%5Ccolortbl+%5Cred255%5Cgreen255%5Cblue255;%7d%5Ccopyfit1000%5Cvertalc%5Cqc%7b%5Ccf0%5Cfs42+New+Collection%7d%7d&size=370,70&textAttr=130&bgcolor=FF3333&wid=600&hei=600](https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&posN=-0.3,-0.455&text=%7b%5Crtf1%5Cansi%7b%5Cfonttbl%7b%5Cf0+Arial;%7d%7d%7b%5Ccolortbl+%5Cred255%5Cgreen255%5Cblue255;%7d%5Ccopyfit1000%5Cvertalc%5Cqc%7b%5Ccf0%5Cfs42+New+Collection%7d%7d&size=370,70&textAttr=130&bgcolor=FF3333&wid=600&hei=600) |
+| **Apply Dynamic Media text operators** | Using Dynamic Media, you can apply text operators to overlay dynamic text directly onto the image. The following sample URL demonstrates this ability:<br>[https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&posN=-0.3,-0.455&text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial;%7d%7d%7b\colortbl+\red255\green255\blue255;%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&size=370,70&textAttr=130&bgcolor=FF3333&wid=600&hei=600](https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&posN=-0.3,-0.455&text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial;%7d%7d%7b\colortbl+\red255\green255\blue255;%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&size=370,70&textAttr=130&bgcolor=FF3333&wid=600&hei=600) |
 
 #### Resizing and cropping for various use cases
 
@@ -343,4 +345,3 @@ Adobe recommends that you use Smart Imaging's capabilities rather than manually 
 By relying on Smart Imaging, you can ensure that your images are delivered in the most efficient manner possible, tailored to each user's browsing environment. This approach simplifies the process and can lead to improved performance in terms of image loading times and overall user experience.
 
 Want to learn more? Go to [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md).
-

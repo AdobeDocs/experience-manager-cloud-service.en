@@ -2,6 +2,8 @@
 title: How to manage tags in Assets view?
 description: Learn how to manage tags in Assets view. Tags help you categorize assets that can be browsed and searched more efficiently.
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
+feature: Smart Tags
+role: User, Admin, Developer
 ---
 # Manage tags in Assets view {#view-assets-and-details}
 
