@@ -232,7 +232,7 @@ Configuring dedicated egress IP address is similar to [flexible port egress.](#f
 
 >[!INFO]
 >
->The Splunk forwarding capability is not possible from a dedicated egress IP address.
+>If a dedicated egress IP is configured, Splunk forwarding will continue to use the dynamic egress ranges. Splunk forwarding cannot be configured to use a dedicated egress IP.
 
 ### UI Configuration {#configuring-dedicated-egress-provision-ui}
 
