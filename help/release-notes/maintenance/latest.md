@@ -16,6 +16,7 @@ Summarized below are the continuous improvements for maintenance release 16799, 
 2024.6.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
 ### Enhancements {#enhancements-16799}
+
 * ASSETS-31977 - Enhanced Asset Move, Copy and Delete operations
 * ASSETS-33618 - Auto-transcription and translation capability for Videos in Dynamic Media
 * ASSETS-33618 - Approval Action for ContentHub and DM and add properties to damAssetLucene properties
