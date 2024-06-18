@@ -2,6 +2,9 @@
 title: Navigating the Cloud Manager UI
 description: Learn how the Cloud Manager UI is organized and how to navigate to manage your programs and environments.
 exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 # Navigating the Cloud Manger UI {#navigation}
 
@@ -189,7 +192,7 @@ Each program has a lot of options and data associated with it. These data are ga
 * Overview - The program overview as described in the current document
 * [Activity](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity) - The history of pipeline runs of the program
 * [Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines) - All pipelines configured for the program
-* [Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) - All repositories configured for the program
+* [Repositories](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - All repositories configured for the program
 * [Reports](/help/implementing/cloud-manager/sla-reporting.md) - Metrics such as SLA data
 * [Environments](/help/implementing/cloud-manager/manage-environments.md) - All environments configured for the program
 * [Content Sets](/help/implementing/developing/tools/content-copy.md) - Sets of content created for copy purposes

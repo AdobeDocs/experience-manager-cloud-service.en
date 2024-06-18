@@ -1,8 +1,8 @@
 ---
 title: Search facets.
 description: This article describes how to create, modify, and use search facets in Experience Manager.
-feature: Search,Metadata
-role: User,Admin
+feature: Metadata
+role: Admin, User
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
 ---
 # Search facets {#search-facets}

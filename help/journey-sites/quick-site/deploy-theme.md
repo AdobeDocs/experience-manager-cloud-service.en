@@ -2,6 +2,9 @@
 title: Deploy Your Customized Theme
 description: Learn how to deploy the site theme using the pipeline.
 exl-id: fe065972-39db-4074-a802-85895c701efd
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
 ---
 # Deploy Your Customized Theme {#deploy-your-customized-theme}
 
@@ -100,7 +103,7 @@ The following are some additional resources that do a deeper dive on some concep
 * [AEM as a Cloud Service technical documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - If you already have a firm understanding of AEM, you may want to directly consult the in-depth technical docs.
 * [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - If you would like more details on Cloud Manager's features, you may want to directly consult the in-depth technical docs.
 * [Role Based Permissions](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager has pre-configured roles with appropriate permissions. See this document for details of these roles and how to administer them.
-* [Cloud Manager Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) - If you need more information about how to set up and manage git repositories for your AEMaaCS project, see this document.
+* [Cloud Manager Repositories](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - If you need more information about how to set up and manage git repositories for your AEMaaCS project, see this document.
 * [Configure CI/CD Pipeline - Cloud Services](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) - Learn more details about setting up pipelines, both full stack and front end, in this document.
 * [AEM Standard Site Template](https://github.com/adobe/aem-site-template-standard) - This is the GitHub repository of the AEM Standard Site template.
 * [AEM Site Theme](https://github.com/adobe/aem-site-template-standard-theme-e2e) - This is the GitHub repository of the AEM Site Theme.

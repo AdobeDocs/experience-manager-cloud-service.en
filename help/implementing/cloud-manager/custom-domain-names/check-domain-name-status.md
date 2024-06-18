@@ -2,6 +2,9 @@
 title: Checking Domain Name Status
 description: Learn how to determine whether your custom domain name has been verified successfully by Cloud Manager.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 
 # Checking Domain Name Status {#check-status}

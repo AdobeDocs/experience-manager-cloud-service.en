@@ -2,6 +2,9 @@
 title: Responsive Layout
 description: AEM lets you realize a responsive layout for your pages
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Responsive Layout {#responsive-layout}
 

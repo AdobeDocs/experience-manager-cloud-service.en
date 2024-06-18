@@ -2,6 +2,8 @@
 title: Introduction to Cloud Manager
 description: Learn about how Cloud Manager supports your AEM project through its programs, environments, and pipelines.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
+feature: Onboarding
+role: Admin, User, Developer
 ---
 
 # Introduction to Cloud Manager {#intro-cloud-manager}
