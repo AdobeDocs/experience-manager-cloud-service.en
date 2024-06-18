@@ -2,6 +2,8 @@
 title: View and manage renditions in Experience Manager Assets
 description: Learn how AEM Assets and Dynamic Media simplify effective image management with static and dynamic image renditions.
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
+feature: Renditions
+role: User
 ---
 # View and manage renditions in Experience Manager Assets{#renditions}
 

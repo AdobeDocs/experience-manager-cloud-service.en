@@ -1,18 +1,18 @@
 ---
-title: Content Modeling for AEM authoring with Edge Delivery Services Projects
-description: Learn how content modeling works for AEM authoring with Edge Delivery Services projects and how to model your own content.
+title: Content Modeling for WYSIWYG Authoring with Edge Delivery Services Projects
+description: Learn how content modeling works for WYSIWYG Authoring with Edge Delivery Services projects and how to model your own content.
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 ---
 
-# Content Modeling for AEM authoring with Edge Delivery Services Projects {#content-modeling}
+# Content Modeling for WYSIWYG Authoring with Edge Delivery Services Projects {#content-modeling}
 
-Learn how content modeling works for AEM authoring with Edge Delivery Services projects and how to model your own content.
+Learn how content modeling works for WYSIWYG Authoring with Edge Delivery Services projects and how to model your own content.
 
 ## Prerequisites {#prerequisites}
 
-Projects using AEM authoring with Edge Delivery Services inherit the majority of the mechanics of any other Edge Delivery Services project, independent of the content source or [authoring method.](/help/edge/aem-authoring/authoring.md)
+Projects using WYSIWYG Authoring with Edge Delivery Services inherit the majority of the mechanics of any other Edge Delivery Services project, independent of the content source or [authoring method.](/help/edge/wysiwyg-authoring/authoring.md)
 
 Before you begin modeling content for your project, make sure you first read the following documentation.
 
@@ -20,7 +20,7 @@ Before you begin modeling content for your project, make sure you first read the
 * [Markup, Sections, Blocks, and Auto Blocking](/help/edge/developer/markup-sections-blocks.md)
 * [Block Collection](/help/edge/developer/block-collection.md)
 
-It is essential to understand those concepts in order to come up with a compelling content model that works in a content source-agnostic way. This document provides details about the mechanics implemented specifically for AEM authoring.
+It is essential to understand those concepts in order to come up with a compelling content model that works in a content source-agnostic way. This document provides details about the mechanics implemented specifically for WYSIWYG authoring.
 
 ## Default Content {#default-content}
 
@@ -33,7 +33,7 @@ In AEM, this content is implemented as components with very simple, pre-defined 
 * **Image**: Source, description
 * **Button**: Text, title, url, type (default, primary, secondary)
 
-The model of these components is part of the [Boilerplate for AEM Authoring with Edge Delivery Services.](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)
+The model of these components is part of the [Boilerplate for WYSIWYG authoring with Edge Delivery Services.](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)
 
 ## Blocks {#blocks}
 
@@ -43,7 +43,7 @@ Blocks are essentially pieces of content decorated by JavaScript and styled with
 
 ### Block Model Definition {#model-definition}
 
-When using AEM authoring with Edge Delivery Services, the content of blocks must be modelled explicitly in order to provide the author the interface to create content. Essentially you need to create a model so the authoring UI knows what options to present to the author based on the block. 
+When using WYSIWYG authoring with Edge Delivery Services, the content of blocks must be modelled explicitly in order to provide the author the interface to create content. Essentially you need to create a model so the authoring UI knows what options to present to the author based on the block. 
 
 The [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json) file defines the model of blocks. The fields defined in the component model are persisted as properties in AEM and rendered as cells in the table that makes up a block.
 
@@ -320,7 +320,7 @@ With the [mechanics of block structure explained,](#block-structure) it is possi
 
 Early in every project, a content model must be carefully considered for every block. It must be agnostic to the content source and authoring experience in order to allow authors to switch or combine them while reusing block implementations and styles. More details and general guidance can be found in [David's Model (take 2).](https://www.aem.live/docs/davidsmodel) More specifically, the [block collection](/help/edge/developer/block-collection.md) contains a extensive set of content models for specific use cases of common user interface patterns.
 
-For AEM authoring with Edge Delivery Services, this raises the question how to serve a compelling semantic content model when the information is authored with forms composed of multiple fields instead of editing semantic markup in-context like rich text.
+For WYSIWYG authoring with Edge Delivery Services, this raises the question how to serve a compelling semantic content model when the information is authored with forms composed of multiple fields instead of editing semantic markup in-context like rich text.
 
 To solve this problem, there are three methods that facilitate creating a compelling content model:
 
@@ -339,7 +339,7 @@ For some values we can infer the semantic meaning from the values itself. Such v
 * **Images** - If a reference to a resource in AEM is an asset with a MIME type starting with `image/`,  the reference is rendered as `<picture><img src="${reference}"></picture>`.
 * **Links** - If a reference exists in AEM and is not an image, or if the value starts with `https?://`  or `#`,  the reference is rendered as `<a href="${reference}">${reference}</a>` .
 * **Rich Text** - If a trimmed value starts with a paragraph (`p`, `ul`, `ol`, `h1`-`h6`, etc.), the value is rendered as rich text.
-* **Class Names** - The `classes` property is treated as block options and rendered in the table header for [simple blocks,](#simple) or as value list for items in a [container block.](#container)
+* **Class Names** - The `classes` property is treated as [block options](/help/edge/developer/markup-sections-blocks.md#block-options) and rendered in the table header for [simple blocks,](#simple) or as value list for items in a [container block.](#container) It is useful if you wish to [style a block differently,](/help/edge/wysiwyg-authoring/create-block.md#block-options) but don't need to create an entirely new block.
 * **Value Lists** - If a value is a multi-value property and the first value is none of the previous, all values are concatenated as comma-separated list.
 
 Everything else will be rendered as plain text.
@@ -644,13 +644,13 @@ To do so, create a component model with the ID `page-metadata`.
 
 ## Next Steps {#next-steps}
 
-Now that you know how to model content, you can create blocks for your own Edge Delivery Services with AEM authoring project.
+Now that you know how to model content, you can create blocks for your own Edge Delivery Services with WYSIWYG authoring project.
 
-See the document [Creating Blocks Instrumented for use with the Universal Editor](/help/edge/aem-authoring/create-block.md) to learn how to create blocks instrumented for use with the Universal Editor in AEM authoring with Edge Delivery Services projects.
+See the document [Creating Blocks Instrumented for use with the Universal Editor](/help/edge/wysiwyg-authoring/create-block.md) to learn how to create blocks instrumented for use with the Universal Editor in WYSIWYG authoring with Edge Delivery Services projects.
 
-If you are already familiar with creating blocks, please see the document [Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/aem-authoring/edge-dev-getting-started.md) to get you up-and-running with a new Adobe Experience Manager site using Edge Delivery Services and the Universal Editor for content authoring.
+If you are already familiar with creating blocks, please see the document [Developer Getting Started Guide for WYSIWYG authoring with Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) to get you up-and-running with a new Adobe Experience Manager site using Edge Delivery Services and the Universal Editor for content authoring.
 
 >[!TIP]
 >
->For an end-to-end walkthrough of creating a new Edge Delivery Services project that is enabled for AEM authoring with AEM as a Cloud Service as a content source, please view [this AEM GEMs webinar.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>For an end-to-end walkthrough of creating a new Edge Delivery Services project that is enabled for WYSIWYG authoring with AEM as a Cloud Service as a content source, please view [this AEM GEMs webinar.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)
 
