@@ -704,7 +704,7 @@ You can observe the lifecycle status of any caption or audio track file uploaded
 
 By default, a video's original audio is set as the default audio to be played.
 
-However, any uploaded audio track files can be set as the default audio to play after a video is loaded into the viewer. In the Properties user interface, under the **Captions & Audio Tracks** tab, the `Default` label is applied to the right of the audio track file for video playback.
+However, any uploaded audio track files can be set as the default audio to play after a video is loaded into the viewer. In the Properties user interface, under the **Captions & Audio Tracks** tab, the `Default` label is applied to the right of the audio track file for video playback. 
 
 >[!NOTE]
 >
