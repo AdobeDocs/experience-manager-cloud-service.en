@@ -2,6 +2,8 @@
 title: SPA Blueprint
 description: This document describes the general, framework-independent contract that any SPA framework should fulfill so you can implement editable SPA components within AEM.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # SPA Blueprint {#spa-blueprint}
 

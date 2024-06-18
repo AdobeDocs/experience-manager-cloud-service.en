@@ -13,4 +13,4 @@ Find out about the back-end operations of Experience Manager as a Cloud Service,
 
 * [Content Replication](replication.md)
 * [Maintenance Tasks](maintenance.md)
-* [Backing Up and Restoring](backup.md)
+* [Self-Service Restore](restore.md)

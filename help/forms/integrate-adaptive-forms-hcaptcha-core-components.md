@@ -6,6 +6,7 @@ keywords: hCaptcha&reg; service, Adaptive Forms, CAPTCHA challenge, Bot preventi
 feature: Adaptive Forms, Core Components
 hide: yes
 hidefromtoc: yes
+exl-id: 6c559df2-7b6a-42fe-b44c-29a782570a0c
 ---
 # Connect your AEM Forms environment with hCaptcha&reg; {#connect-your-forms-environment-with-hcaptcha-service}
 
