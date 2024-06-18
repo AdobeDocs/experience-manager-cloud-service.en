@@ -97,7 +97,7 @@ The following are the component types that are possible to use for rendering fie
 |[Number](#number)|`number`|
 |[Radio Group](#radio-group)|`radio-group`|
 |[Reference](#reference)|`reference`|
-|[Rich Text](#rich-text)|`rich-text`|
+|[Rich Text](#rich-text)|`richtext`|
 |[Select](#select)|`select`|
 |[Tab](#tab)|`tab`|
 |[Text](#text)|`text`|

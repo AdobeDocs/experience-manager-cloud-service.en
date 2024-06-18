@@ -9,55 +9,62 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 16544 {#release-16544}
+## Release 16799 {#release-16799}
 
-Summarized below are the continuous improvements for maintenance release 16544, which was publicly released on June 4, 2024. The previous maintenance release was release 16461.
+Summarized below are the continuous improvements for maintenance release 16799, which was publicly released on June 18, 2024. The previous maintenance release was release 16544.
 
 2024.6.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
->[!CAUTION]
->
->Please use the SDK referenced here under, as a regression has been confirmed with the previous SDK:
->`AEM SDK v2024.06.16647.20240607T103723Z-240500`
+### Enhancements {#enhancements-16799}
 
-### Enhancements {#enhancements-16544}
+* ASSETS-31977: Enhanced Asset Move, Copy and Delete operations.
+* ASSETS-33618: Auto-transcription and translation capability for Videos in Dynamic Media.
+* ASSETS-33618: Approval Action for ContentHub and DM and add properties to damAssetLucene properties.
+* ASSETS-35533: Add DRM and CAI properties to damAssetLucene index.
+* ASSETS-37280: Sequential job handling for translation when source subtitle (vtt) is still processing.
+* ASSETS-37559: Improved asset deleted event.
+* ASSETS-37723: Implement asset published event.
+* ASSETS-37724: Implement asset unpublished event.
+* ASSETS-38614: Share Link UI enhancements.
+* ASSETS-39601: Apply validation regex automatically to Asset Livecopy name.
+* ASSETS-39454: Upgrade to viewers 2024.5.0 in Quickstart.
+* CNTBF-184: Support paths beneath `/conf` in Content Backflow.
 
-* GRANITE-41133: Support Jakarta Servlet API 5 and OSGi Servlet Whiteboard API.
-* GRANITE-51355: Deprecate org.slf4j.event.
-* GRANITE-51565: AEM loses local group relationship with external group when local group is published from AEM.
-* GRANITE-51707: Set the cookie saml_request_path during http redirect for authentication.
-* GRANITE-52010: Update Jackrabbit version to 2.20.16.
-* GRANITE-52057: Update Filevault to 3.7.3-T20240514105118-694f6aea fixing JCRVLT-745.
-* SKYOPS-35998: Update 'Sling RepoInit' dependencies :  Repoinit Parser 1.9.0, Repoinit JCR 1.1.46.
+### Fixed Issues {#fixed-issues-16799}
 
-### Fixed Issues {#fixed-issues-16544}
+* ASSETS-37335: Editing Search Panel In Filter Unchecks All Boxes.
+* ASSETS-38069: AEM DAM PDF Preview Issue on Timeline Filter Selection.
+* ASSETS-38215: Adobe Stock license button grayed out in AEM as a Cloud Service for enterprise subscription.
+* ASSETS-38578: Incorrect Hyperlinks in Assets Link Share Report.
+* ASSETS-38678: View settings broken in Collection Details.
+* ASSETS-39071: Web optimized delivery may throw an exception if the original rendition mimetype is null.
+* ASSETS-39316: Sorting by name not working in Collections.
+* ASSETS-39377: Bulk import from OneDrive might fail when receiving backpressure from remote API.
+* ASSETS-39428: Rendering issues in Copyright Management UI.
+* CQ-4357150: Guava in cq-content-sync bundle.
+* SCRNS-4194: Remove dependency on Google Guava APIs.
+* SCRNS-4360: Missing Manage Publication & Quick Publish Button for non-admin users in Content Provider for Channels.
+* SCRNS-4323: Hide/Disable launches from screens.html.
+  
+### Known Issues {#known-issues-16799}
 
-* GRANITE-51375: idp-sync throws NPE if no intermediate path is specified.
-* GUIDES-17171: The copy and paste operation of topics exceeding 15KB fails with an unexpected error.
-* GUIDES-17088: The functionality to change the document state from the **File Properties** panel isn’t working correctly and changes to the *Draft* state.
-* GUIDES-16931: Linked images from the topics fail to appear in the baseline after version creation.
-* GUIDES-16896: Reusable content panels don’t list elements when the **User preferences** are set to view files by **Filename**.
+None.
 
-For more information about the new and enhanced features and issues fixed in Experience Manager Guides, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+### Change Notice {#change-notice-16799}
 
-### Known Issues {#known-issues-16544}
+* This release contains the following new product index versions:
+  * **damAssetLucene-11**
+  * **fragments-11**
 
-* GRANITE-52573: Requests containing a double slash `//` are rejected with status code 400. This behaviour will be reverted in a subsequent maintenance release.
+  Custom versions of the previous index versions will be automatically merged with the new product index version. Please apply further custom updates to the merged version.
 
->[!NOTE]
-> AEM Engineering has identified a regression for Launches functionality which is affecting current AEM releases starting with 16461. Because of this regression, new Launches (created after new releases have been applied) that include non-deep pages will not be properly promoted due to missing configurations.
-> In case your environments are affected, a shell script to identify and update missing configurations is available through customer support (internal reference SITES-22457).
-> A longer term fix will be made available that will ensure new Launches are created with all the right configurations. Until then, an internal patch release is also available on demand.
+* Starting in September 2024, AEM as a Cloud Service will disable the serialization of Resource Resolvers via the Sling Model Exporter framework. See [the documentation](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) for more details.
 
-### Change Notice {#change-notice-16544}
-
-Starting in September 2024, AEM as a Cloud Service will disable the serialization of Resource Resolvers via the Sling Model Exporter framework. See [the documentation](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) for more details.
-
-### Deprecated Features and APIs {#deprecated-16544}
+### Deprecated Features and APIs {#deprecated-16799}
 
 To know what is deprecated or removed in AEM as a Cloud Service, see [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md).
 
-### Embedded Technologies {#embedded-tech-16544}
+### Embedded Technologies {#embedded-tech-16799}
 
 |Technology|Version|Link|
 |---|---|---|
