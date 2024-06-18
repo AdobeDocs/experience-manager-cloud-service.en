@@ -67,7 +67,7 @@ AEM offers customizable components and content delivery options.
 |[Assets API](/help/assets/mac-api-assets.md)|Allows for create-read-update-delete (CRUD) operations on assets, including binary, metadata, renditions, and comments. See AEM Assets HTTP API|
 |[Content Fragments HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)|Access Content Fragment content directly over the HTTP API via CRUD operations|
 |[Content Fragment GraphQL API](/help/headless/graphql-api/content-fragments.md)|Enable the efficient delivery of Content Fragments to JavaScript clients in headless CMS implementations|
-|[Content Fragments Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html)|Eexact format of supported HTTP asset requests|
+|[Content Fragments Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html)|Exact format of supported HTTP asset requests|
 | [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) | Content Fragment and Content Fragment Model OpenAPIs |
 
 ## SPA-Specific APIs {#spa-apis}
