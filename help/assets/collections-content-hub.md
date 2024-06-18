@@ -1,6 +1,6 @@
 ---
 title: Manage Collections in Content Hub
-description: Manage Collections in Content Hub
+description: Learn how to manage collections in Content Hub
 role: User
 ---
 # Manage collections in [!DNL Content Hub] {#manage-collections}
@@ -31,7 +31,7 @@ Select the assets that you need to add to a collection and click **[!UICONTROL A
 
  ![Create collection](assets/add-assets-collection.jpg)
 
-To create a new collection, click **[!UICONTROL Create new collection]**. Enter the **[!UICONTROL Title]** and provide a **[!UICONTROL Description]** for the assets. Then, click **[!UICONTROL Create]**.
+To create a new collection, navigate to the **[!UICONTROL Collections]** tab and click **[!UICONTROL Create new collection]**. Enter the **[!UICONTROL Title]** and provide an optional **[!UICONTROL Description]** for the assets. Click **[!UICONTROL Create]**.
 
 ### Add assets to an existing collection{#add-assets-to-existing-collection}
 
@@ -39,11 +39,11 @@ To add assets to an existing collection, select the assets you need to add to th
 
  ![Create a new collection](assets/create-add-collection.jpg)
 
-Choose the collection where you need to add the asset. You can also search the existing collection in the search bar. <br>Select the collection (s) to which you need to add the assets and click **[!UICONTROL Add to collection]**.
+Choose the collection where you need to add the asset. You can also search the existing collection using the search bar. <br>Select the collection (s) to which you need to add the assets and click **[!UICONTROL Add to collection]**.
 
 ## View collections{#view-collections}
 
-Navigate to the **[!UICONTROL Collections]** tab. To view the list of assets available in a collection, click the collection name. <br> Click the asset that you need to view within a collection. [!DNL Content Hub] displays the detailed view for the asset. [See asset details](#asset-properties#properties-ui).
+Navigate to the **[!UICONTROL Collections]** tab. To view the list of assets available in a collection, click the collection name. <br> Click the asset that you need to view within a collection. [!DNL Content Hub] displays the detailed view for the asset. [See asset details](asset-properties-content-hub.md).
 
 <!--
 ![Asset details](assets/view-collection.jpg)
@@ -69,15 +69,15 @@ All the assets in the collection are downloaded.
 
 You can also open the collection to download the assets individually. Click the collection containing the assets that you need to download. Select the assets and click **[!UICONTROL Download]**. 
 
-Learn how to [download an asset from the [!DNL Content Hub]](assets-download.md). 
+Learn how to [download an asset from the [!DNL Content Hub]](download-assets-content-hub.md). 
 
 ## Share assets available within a collection {#share-assets-available-within-collection}
 
-You can also share the assets available within a collection. Navigate to the **[!UICONTROL Collections]** tab. Select the ![share icon](assets/share.svg) icon on the collection card. The share link is copied. You can share the copied link with the recipient. Learn more about [sharing assets in the [!DNL Content Hub]](#share-assets-as-a-link.md).
+You can also share the assets available within a collection. Navigate to the **[!UICONTROL Collections]** tab. Select the ![share icon](assets/share.svg) icon on the collection card. The share link is copied. You can share the copied link with the recipient. Learn more about [sharing assets in the [!DNL Content Hub]](share-assets-content-hub.md).
 
 ## Edit details of a collection {#edit-details-of-collection}
 
-To edit [!UICONTROL Title] and [!UICONTROL Description] of a collection, click ![info icon](assets/info-icon.svg) icon on the collection card. [!UICONTROL Collection Details] screen appears that allows you to edit the [!UICONTROL Title] and [!UICONTROL Description] of a collection. Click [!UICONTROL Save Changes] to confirm the modifications.
+To edit **[!UICONTROL Title]** and **[!UICONTROL Description]** of a collection, click the collection name and then click the ![info icon](assets/info-icon.svg) icon. [!UICONTROL Collection Details] screen appears that allows you to edit the **[!UICONTROL Title]** and **[!UICONTROL Description]** of a collection. Click **[!UICONTROL Save Changes]** to confirm the modifications.
 
 ![collection details](assets/collection-details.png)
 
