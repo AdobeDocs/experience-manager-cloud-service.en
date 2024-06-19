@@ -19,7 +19,7 @@ Summarized below are the continuous improvements for maintenance release 16799, 
 
 * ASSETS-31977: Enhanced Asset Move, Copy and Delete operations.
 * ASSETS-33618: Auto-transcription and translation capability for Videos in Dynamic Media.
-* ASSETS-33618: Approval Action for ContentHub and DM and add properties to damAssetLucene properties.
+* ASSETS-35185: Approval Action for ContentHub and DM and add properties to damAssetLucene properties.
 * ASSETS-35533: Add DRM and CAI properties to damAssetLucene index.
 * ASSETS-37280: Sequential job handling for translation when source subtitle (vtt) is still processing.
 * ASSETS-37559: Improved asset deleted event.
