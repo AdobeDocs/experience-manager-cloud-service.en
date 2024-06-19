@@ -3,7 +3,7 @@ title: Adaptive Form Block components and their properties
 description: This document provides an overview of the form components and their properties available in AEM Forms Edge Delivery Service.
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Adaptive Form Block components and their properties
 

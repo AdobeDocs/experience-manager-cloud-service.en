@@ -2,8 +2,8 @@
 title: Adding Private Repositories in Cloud Manager
 description: Learn how to set up Cloud Manager to work with your own private GitHub repositories.
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
-feature: "Cloud Manager, Developing"
-role: "Admin, Architect, Developer"
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 # Adding Private Repositories in Cloud Manager {#private-repositories}
 

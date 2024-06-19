@@ -3,7 +3,7 @@ title: Creating and Managing Displays in Screens as a Cloud Service
 description: This page describes how to create and manage displays in Screens as a Cloud Service.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
 feature: Authoring Screens
-role: "Admin, Developer, User"
+role: Admin, Developer, User
 ---
 # Creating and Managing Displays in Screens as a Cloud Service {#create-displays-screens-cloud}
 

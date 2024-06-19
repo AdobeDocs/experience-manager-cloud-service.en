@@ -2,8 +2,8 @@
 title: Edge Delivery Services Support in Cloud Manager
 description: Learn how to deliver your Cloud Manager projects using Edge Delivery Services.
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
-feature: "Cloud Manager, Developing"
-role: "Admin, Architect, Developer"
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 # Edge Delivery Services Support in Cloud Manager {#edge-delivery-services}
 

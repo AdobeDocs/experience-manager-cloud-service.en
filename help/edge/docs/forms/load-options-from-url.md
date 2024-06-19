@@ -3,7 +3,7 @@ title: Load Dropdown List Options from a URL or another sheet for Edge Delivery 
 description: The dropdown list options are included in a distinct spreadsheet and then imported into the primary spreadsheet via the provided URL.
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 
 # Options from a URL or another sheet for Edge Delivery Services for AEM Forms as a Cloud Service 

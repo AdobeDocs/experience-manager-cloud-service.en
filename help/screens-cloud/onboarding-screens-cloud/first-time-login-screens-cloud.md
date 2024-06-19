@@ -3,7 +3,7 @@ title: First Time Login to Screens as a Cloud Service
 description: This page describes the first steps in getting started with Screens as a Cloud Service.
 exl-id: d3a6aa5d-226b-484d-97ea-0b8312c7a0fd
 feature: Screens Deployments
-role: "Admin, Developer, User"
+role: Admin, Developer, User
 ---
 # First Time Login to Screens as a Cloud Service {#first-time-login-screens-cloud}
 

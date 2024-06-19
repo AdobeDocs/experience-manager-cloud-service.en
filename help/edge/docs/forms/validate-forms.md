@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: yes
 hidefromtoc: yes
 exl-id: 16e1d42a-42d0-4335-ba81-feedea7ed7d7
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Add validations to form fields
 
