@@ -55,10 +55,10 @@ As you explore the [Dynamic Media Journey](https://experienceleague.adobe.com/en
 
 Streamline your management of large numbers of assets efficiently. Ensure that only the appropriate, authorized content reaches your end-users by using Dynamic Media's **Selective Sync** and **Selective Publish** features.
 
-* **Selective Sync:**
+* **Selective sync:**
 A proactive feature that lets you choose which assets to sync with Dynamic Media. For example, you might decide to sync only those folders containing assets that have received final approval. This workflow helps you maintain control over which assets are being prepared for delivery to your customers.
 
-* **Selective Publish:**
+* **Selective publish:**
 After syncing your assets, Selective Publish gives you control over which assets are visible to your customers. This ability means you can govern which approved assets are actually delivered through your channels, ensuring that your customers see only the best and most relevant content.
 
 These two best practices help you achieve better control, governance, and productivity over your rich-media content. 
@@ -137,7 +137,6 @@ Use descriptive file names that reflect the image content. For example,
   Doing so helps search engines understand the image context and improves SEO. Google prefers hyphens over underscores or spaces in a file name. Also, avoid concatenating words in a file name.
 * **Custom domain:** 
 Implement a custom domain that includes your company or brand name to reinforce brand recognition and trust. For example,
-
   * use `http://images.mycompany.com/is/image/companyname/`
   * *avoid* `https://s7d1.scene7.com/is/image/folder/AdobeStock_28563982`
 * **SEO-friendly folder structure:**
