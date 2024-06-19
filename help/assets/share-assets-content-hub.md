@@ -8,7 +8,7 @@ role: User
 
 ![Share assets banner image](assets/share-assets-banner.png)
 
-Sharing assets through a link is a convenient way of making the resources available to the [!DNL the Content Hub] users. The functionality allows authorized users to access and download the assets shared with them. When downloading assets from a shared link, [!DNL the Content Hub] uses an asynchronous service that offers faster and uninterrupted download.
+Sharing assets through a link is a convenient way of making the resources available to [!DNL the Content Hub] users. The functionality allows authorized users to access and download the assets shared with them. When downloading assets from a shared link, [!DNL the Content Hub] uses an asynchronous service that offers faster and uninterrupted download.
 
 ## Share a single asset {#share-a-single-asset}
 
