@@ -12,7 +12,7 @@ AEM Forms Edge Delivery provides a block, known as Adaptive Forms Block, to help
 
 These forms submit data directly to a Microsoft Excel or Google Sheets file, enabling you to use vibrant ecosystem and robust APIs of Google Sheets, Microsoft Excel, and Microsoft SharePoint to easily process submitted data or to initiate an existing business workflow.
 
-![Document-based Authoring  ecosystem](/help/edge/assets/document-based-authoring-workflow-create-form.png)
+![Document-based Authoring ecosystem](/help/edge/assets/document-based-authoring-workflow-create-form.png)
 
 
 ## Prerequisites
