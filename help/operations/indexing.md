@@ -2,6 +2,8 @@
 title: Content Search and Indexing
 description: Learn about Content Search and Indexing in AEM as a Cloud Service.
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
+feature: Operations
+role: Admin
 ---
 # Content Search and Indexing {#indexing}
 

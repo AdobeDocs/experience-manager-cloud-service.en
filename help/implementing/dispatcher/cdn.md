@@ -3,6 +3,7 @@ title: CDN in AEM as a Cloud Service
 description: Learn how to use the AEM-managed CDN and how to point your own CDN to the AEM-managed CDN.
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
+role: Admin
 ---
 # CDN in AEM as a Cloud Service {#cdn}
 

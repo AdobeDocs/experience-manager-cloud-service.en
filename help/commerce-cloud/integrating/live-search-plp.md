@@ -2,6 +2,8 @@
 title: '[!DNL Live Search] Product Listing Page CIF component'
 description: Using CIF components to enable [!DNL Live Search] Product Listing Page component on an AEM site
 exl-id: 7f2d9a43-a7cb-4d9d-a108-b016cd1ff81e
+feature: Commerce Integration Framework
+role: Admin
 ---
 # [!DNL Live Search] CIF Component {#live-search-cif-component}
 
