@@ -76,6 +76,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2024 {#2024}
+      + [Maintenance Release Notes for 2024.6.0](/help/release-notes/maintenance/2024/2024-6-0.md)
       + [Maintenance Release Notes for 2024.5.0](/help/release-notes/maintenance/2024/2024-5-0.md)
       + [Maintenance Release Notes for 2024.4.0](/help/release-notes/maintenance/2024/2024-4-0.md)
       + [Maintenance Release Notes for 2024.3.0](/help/release-notes/maintenance/2024/2024-3-0.md) 
@@ -817,14 +818,14 @@ user-guide-title: AEM as a Cloud Service
 + Edge Delivery Services {#edge-delivery}
   + [Edge Delivery Services Overview](/help/edge/overview.md)
   + [Using Edge Delivery Services with AEM](/help/edge/using.md)
-  + AEM-Based Authoring {#aem-authoring}
-    + [Authoring Content for Edge Delivery](/help/edge/aem-authoring/authoring.md)
-    + [Publishing Content for Edge Delivery](/help/edge/aem-authoring/publishing.md)
-    + [Developer Getting Started Guide](/help/edge/aem-authoring/edge-dev-getting-started.md)
-    + [Creating Blocks](/help/edge/aem-authoring/create-block.md)
-    + [Content Modeling](/help/edge/aem-authoring/content-modeling.md)
-    + [Tabular Data and Spreadheets](/help/edge/aem-authoring/tabular-data.md)
-    + [Existing Projects and Edge Delivery](/help/edge/aem-authoring/existing-projects.md)
+  + WYSIWYG Authoring {#wysiwyg-authoring}
+    + [Authoring Content for Edge Delivery](/help/edge/wysiwyg-authoring/authoring.md)
+    + [Publishing Content for Edge Delivery](/help/edge/wysiwyg-authoring/publishing.md)
+    + [Developer Getting Started Guide](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
+    + [Creating Blocks](/help/edge/wysiwyg-authoring/create-block.md)
+    + [Content Modeling](/help/edge/wysiwyg-authoring/content-modeling.md)
+    + [Tabular Data and Spreadheets](/help/edge/wysiwyg-authoring/tabular-data.md)
+    + [Existing Projects and Edge Delivery](/help/edge/wysiwyg-authoring/existing-projects.md)
   + Document-Based Authoring {#document-authoring}
     + [Authoring](/help/edge/docs/authoring.md)
     + [Bulk Metadata](/help/edge/docs/bulk-metadata.md)
