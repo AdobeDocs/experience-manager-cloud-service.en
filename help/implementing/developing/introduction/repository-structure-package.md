@@ -158,7 +158,7 @@ For example:
 + Code package A deploys into `/apps/a`
 + Code package B deploys into `/apps/a/b`
 
-If a package-level dependency is not established from code package B on code package A, code package B may deploy first into `/apps/a`. It would then be followed by code package B, which deploys into `/apps/a`. The result is a removal of the previously installed `/apps/a/b`.
+If a package-level dependency is not established from code package B on code package A, code package B may deploy first into `/apps/a`. If it is then followed by code package A, which deploys into `/apps/a`. the result is a removal of the previously installed `/apps/a/b`.
 
 In this case:
 
