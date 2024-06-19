@@ -2,6 +2,8 @@
 title: Registering Players in Screens as a Cloud Service
 description: This page describes how to register players in Screens as a Cloud Service.
 exl-id: 1a0d6b22-71b1-4f3c-acaa-82d8d9c0f81a
+feature: Developing Screens
+role: Admin, Developer, User
 ---
 # Registering Players in Screens as a Cloud Service {#registering-players-screens-cloud}
 

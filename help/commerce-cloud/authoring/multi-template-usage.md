@@ -10,6 +10,7 @@ feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e
+role: Admin
 ---
 # Creating Multiple Category and Product Pages {#multiple}
 
