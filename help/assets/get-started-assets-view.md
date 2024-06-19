@@ -3,6 +3,7 @@ title: Get started using [!DNL Assets View]
 description: How to access, login experience of, supported use cases of, and known issues of [!DNL Assets View].
 role: User, Leader
 exl-id: 51ae6657-f6b5-44b0-a47f-451735ab0d01
+feature: Asset Management, Publishing, Collaboration, Asset Processing
 ---
 # Get started with Assets view {#assets-view-get-started}
 

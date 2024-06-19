@@ -91,6 +91,10 @@ Follow the steps below to delete your project:
 
 1. Click **Delete** to confirm the step.
 
+   >[!NOTE]
+   >Projects will automatically expire and be deleted after 1 year of migration inactivity. Projects will remain active by editing the project name or description, uploading a BPA report, creating or editing a migration set, running an extraction or running an ingestion.
+
+
 ## What's Next {#whats-next}
 
 After you have learned how to log into Cloud Acceleration Manager and how to create a project, you are ready to review the next step in the [Readiness Phase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html).
