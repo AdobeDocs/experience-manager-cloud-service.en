@@ -6,6 +6,7 @@ hide: yes
 hidefromtoc: yes
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
 
+role: "Admin, Architect, Developer"
 ---
 
 # Real Use Monitoring (RUM) for Edge Delivery Services for AEM Forms as a Cloud Service

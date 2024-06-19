@@ -2,6 +2,8 @@
 title: Adobe Experience Manager as a Cloud Service and the Web Accessibility Guidelines
 description: An Introduction to Adobe Experience Manager as a Cloud Service and the Web Accessibility Guidelines
 exl-id: ad7627cd-3c97-47b7-8a13-0aae39aa8169
+feature: Compliance
+role: "Admin, Architect, Developer, Leader"
 ---
 # Adobe Experience Manager as a Cloud Service and the Web Accessibility Guidelines{#aem-and-the-web-accessibility-guidelines}
  

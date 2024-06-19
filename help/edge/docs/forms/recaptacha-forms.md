@@ -3,6 +3,7 @@ title: Use reCAPTCHA with Edge Delivery Services for AEM Forms as a Cloud Servic
 description: Use Google reCAPTCHA in an EDS Form
 feature: Edge Delivery Services
 exl-id: ac104e23-f175-435f-8414-19847efa5825
+role: "Admin, Architect, Developer"
 ---
 
 # Use reCAPTCHA with Edge Delivery Services for AEM Forms as a Cloud Service
