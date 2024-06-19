@@ -67,7 +67,7 @@ The filters enabled on the Configuration User Interface display on the Search pa
 
 ### Asset details {#configure-asset-details-content-hub}
 
-You can also configure the asset properties that display for each asset, such as file name, title, format, size, and so on. To do so, execute the folowing steps:
+You can also configure the asset properties that display for each asset, such as file name, title, format, size, and so on. To do so, execute the following steps:
 
 1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Asset details]**.
 
@@ -102,7 +102,7 @@ You can configure the metadata fields that display to the users while uploading 
 
 1. Click **[!UICONTROL Save]** to apply the changes.
 
-Similarly, you can click ![Edit icon](assets/do-not-localize/Edit_icon.svg), available next to each available property, to edit the labels, make these fields mandatory or non-mandatory to users while upoloading assets, or control their visibility to the users. Click **[!UICONTROL Save]** after making all modifications to apply the changes.
+Similarly, you can click ![Edit icon](assets/do-not-localize/Edit_icon.svg), available next to each available property, to edit the labels, make these fields mandatory or non-mandatory to users while uploading assets, or control their visibility to the users. Click **[!UICONTROL Save]** after making all modifications to apply the changes.
 
 ![Configuration UI upload details on Content Hub](assets/configuration-ui-upload-details.png)
 
