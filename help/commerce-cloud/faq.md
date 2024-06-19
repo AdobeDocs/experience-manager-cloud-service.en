@@ -3,7 +3,7 @@ title: AEM - Commerce Integration using Commerce Integration Framework FAQ
 description: AEM - Commerce Integration using Commerce Integration Framework FAQ
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
 feature: Commerce Integration Framework
-role: "Admin, Architect, User"
+role: Admin, Architect, User
 ---
 # AEM - Commerce Integration using Commerce Integration Framework FAQ
 

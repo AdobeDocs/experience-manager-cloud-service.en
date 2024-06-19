@@ -3,7 +3,7 @@ title: Using up Screens Content Provider
 description: This page describes how to use Screens Content Provider for creating content.
 exl-id: ed7de2c0-13cf-4ce0-8794-aef918cf8e71
 feature: Administering Screens
-role: "Admin, Developer, User"
+role: Admin, Developer, User
 ---
 # Using Screens Content Provider {#using-screens-content-provider}
 

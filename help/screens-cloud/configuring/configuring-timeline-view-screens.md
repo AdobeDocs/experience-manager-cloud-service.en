@@ -3,7 +3,7 @@ title: Configuring Timeline View for AEM Screens
 description: This page describes how to configure a timeline view in Screens as a Cloud Service.
 exl-id: 53afe1f5-8f0b-4cca-a819-d3e9375cbe37
 feature: Administering Screens
-role: "Admin, Developer, User"
+role: Admin, Developer, User
 ---
 # Configuring Timeline View for AEM Screens {#configuring-timelineview-screens}
 

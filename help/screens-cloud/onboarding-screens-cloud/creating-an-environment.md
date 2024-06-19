@@ -3,7 +3,7 @@ title: Creating an Environment
 description: This page describes creating an environment in Cloud Manager for Screens as a Cloud Service.
 exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
 feature: Screens Deployments
-role: "Admin, Developer, User"
+role: Admin, Developer, User
 ---
 # Creating an Environment in Cloud Manager {#create-environment-screens-cloud}
 

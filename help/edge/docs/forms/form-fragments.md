@@ -5,6 +5,6 @@ feature: Edge Delivery Services
 hide: yes
 hidefromtoc: yes
 exl-id: ba8c7220-55b3-4731-9e40-ce0c360c508d
-role: "Admin, Architect, Developer"
+role: Admin, Architect, Developer
 ---
 # Mastering Form Fragements for AEM Forms Edge Delivery Service
