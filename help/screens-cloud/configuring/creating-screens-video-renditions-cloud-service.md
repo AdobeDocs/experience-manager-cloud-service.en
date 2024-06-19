@@ -2,6 +2,8 @@
 title: Creating Video Renditions in Screens as a Cloud Service
 description: This page describes how to create video renditions in Screens as a Cloud Service.
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
+feature: Administering Screens
+role: "Admin, Developer, User"
 ---
 # Creating Video Renditions in Screens as a Cloud Service {#creating-screens-video-renditions}
 

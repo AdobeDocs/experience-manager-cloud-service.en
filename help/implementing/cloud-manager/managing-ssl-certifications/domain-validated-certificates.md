@@ -2,6 +2,8 @@
 title: Domain Validated (DV) Certificates
 description: Learn how to manage domain validated (DV) certificates in Cloud Manager.
 exl-id: 7f2c71b6-15c3-4919-9f51-a3e26d0d48d4
+feature: "Cloud Manager, Developing"
+role: "Admin, Architect, Developer"
 ---
 # Domain Validated (DV) Certificates {#domain-validated-certificates}
 

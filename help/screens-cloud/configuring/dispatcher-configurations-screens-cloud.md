@@ -2,6 +2,8 @@
 title: Dispatcher Configurations in Screens as a Cloud Service
 description: This page describes Dispatcher Configurations in Screens as a Cloud Service.
 exl-id: cc04b480-9310-4975-a7c2-20682c567fa4
+feature: Administering Screens
+role: "Admin, Developer, User"
 ---
 # Dispatcher Configurations in Screens as a Cloud Service {#dispatcher-configurations-screens-cloud}
 

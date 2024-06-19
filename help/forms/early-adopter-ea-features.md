@@ -4,6 +4,8 @@ description: Current Early Adopter features of [!DNL Adobe Experience Manager Fo
 Feature: Introduction
 Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
+feature: Adaptive Forms
+role: "Admin, Developer, User"
 ---
 # AEM Forms Early Adopter Program
 
