@@ -11,7 +11,7 @@ AEM Forms Edge Delivery Services is a composable set of services that enables a 
 
 These services enable you to:
 
-* **Create enrolment experiences with tools of your choice:** Increase authoring efficiency by decoupling content sources. Out of the box you can use both Document-based Authoring (Microsoft SharePoint or Google Drive) and AEM Authoring (Adaptive Forms Editor). You can work with multiple content sources on the same forms site and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, or Adaptive Forms Editor.
+* **Create enrolment experiences with tools of your choice:** Increase authoring efficiency by decoupling content sources. Out of the box you can use both Document-based Authoring (Microsoft SharePoint or Google Drive) and WYSIWYG Authoring (Adaptive Forms Editor). You can work with multiple content sources on the same forms site and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, or Adaptive Forms Editor.
 
 * **Deliver exceptional Digital Enrolment experiences:** Deliver Digital Enrolment experiences that load and render quickly and continuously monitor your forms performance through real use monitoring (RUM). Faster loading times and optimized user experience contribute to higher form completion and conversion rates. 
 
@@ -19,13 +19,13 @@ These services enable you to:
 
 ## AEM Forms Edge Delivery Services Overview {#edge-overview}
 
-AEM Forms Edge Delivery services  allows for a high degree of flexibility in how you author forms on your website. You can author content and forms with [AEM Authoring](/help/forms/creating-adaptive-form-core-components.md) as well as [Document-based Authoring](/help/edge/docs/forms/create-forms.md). AEM Forms Edge Delivery Services provide a forms block, known as [Adaptive Forms Block](/help/edge/docs/forms/create-forms.md) to add a form to your Edge Delivery Services site.
+AEM Forms Edge Delivery services  allows for a high degree of flexibility in how you author forms on your website. You can author content and forms with [WYSIWYG Authoring](/help/forms/creating-adaptive-form-core-components.md) as well as [Document-based Authoring](/help/edge/docs/forms/create-forms.md). AEM Forms Edge Delivery Services provide a forms block, known as [Adaptive Forms Block](/help/edge/docs/forms/create-forms.md) to add a form to your Edge Delivery Services site.
 
 For example, you author forms directly in Microsoft Excel or Google Sheets and these spreadsheets are transformed into forms for your website. Any new form or form content, such as a new form field, is instantly available on your website without requiring a rebuild process.
 
-The following diagram illustrates how you can edit forms in Microsoft Excel or Google Sheets (Document-based Authoring) and publish to Edge Delivery Services. It also shows the AEM publishing method using the Adaptive Forms Editor (AEM Authoring).
+The following diagram illustrates how you can edit forms in Microsoft Excel or Google Sheets (Document-based Authoring) and publish to Edge Delivery Services. It also shows the AEM publishing method using the Adaptive Forms Editor (WYSIWYG Authoring).
 
-![Publish to Edge Delivery Services and AEM](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
+![Publish to Edge Delivery Services and AEM](/help/edge/docs/forms/assets/AEM-forms-with-EDS-publishing.png)
 
 AEM Forms Edge Delivery Services uses GitHub so customers can manage and deploy code directly from their GitHub repository. For example, you can write forms in either [Google Sheets](/help/edge/docs/forms/create-forms.md) or [Microsoft Excel](/help/edge/docs/forms/create-forms.md) and the components of your forms can be developed by using CSS and JavaScript in a GitHub repository.
 
@@ -33,16 +33,16 @@ When your forms are ready, you can use the [AEM Sidekick](/help/edge/docs/forms/
 
 ![Install AEM SideKick](/help/edge/assets/aem-sidekick-preview-publish-forms.png)
 
-The choice between the [Document-based Authoring ](#document-based-authoring-features) and [AEM Authoring](#aem-authoring-features) depends on your specific requirements:
+The choice between the [Document-based Authoring ](#document-based-authoring-features) and [WYSIWYG Authoring](#wysiwyg-authoring-features) depends on your specific requirements:
 
 * For simple forms that just collect basic information with a few fields (think contact us forms, lead generation forms, or service request forms), and where you need quick data connectivity using a spreadsheet, the [Document-based Authoring](#document-based-authoring-features) is a good fit. You can build these forms like you would build a document in Google Sheets or Microsoft Excel. 
 
-* For complex forms, like forms requiring multiple panels, complex rules and business logic, data manipulation, integration with external systems, or streamlined workflows using AEM features, then [AEM Authoring](#aem-authoring-features) is a better option. 
+* For complex forms, like forms requiring multiple panels, complex rules and business logic, data manipulation, integration with external systems, or streamlined workflows using AEM features, then [WYSIWYG Authoring](#wysiwyg-authoring-features) is a better option. 
 
 
-### Key Features of Document-based Authoring  and AEM Authoring
+### Key Features of Document-based Authoring and WYSIWYG Authoring
 
-Document-based Authoring  offers a basic set of features and AEM Authoring unlocks additional capabilities beyond the Document-based Authoring , empowering you to build more complex and interactive forms. The key features of both Document-based Authoring  and AEM Authoring are:
+Document-based Authoring  offers a basic set of features and WYSIWYG Authoring unlocks additional capabilities beyond the Document-based Authoring , empowering you to build more complex and interactive forms. The key features of both Document-based Authoring and WYSIWYG Authoring are:
 
 #### Document-based Authoring features
 
@@ -57,9 +57,9 @@ Document-based Authoring  allows you to create forms using familiar tools like M
 * Submit form data directly to Microsoft Excel or Google Sheets or email addresses.
 * Monitor your forms performance through real use monitoring (RUM)
 
-#### AEM Authoring features
+#### WYSIWYG Authoring features
 
-AEM Authoring provides a WYSIWYG interface (Adaptive Forms Editor) for building forms and offers all the capabilities of Document-based Authoring, plus a wide range of additional features:
+WYSIWYG Authoring provides a WYSIWYG interface (Adaptive Forms Editor) for building forms and offers all the capabilities of Document-based Authoring, plus a wide range of additional features:
 
 * Advanced rules editor for creating complex logic.
 * Server-side extensibility for custom functionalities.
@@ -71,20 +71,20 @@ AEM Authoring provides a WYSIWYG interface (Adaptive Forms Editor) for building 
 * Form Data Model (FDM) for defining data structure and interactions with various data sources.
 * Ability to choose from multiple submit actions for handling form submissions, including submitting data to Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics, many more data sources.
 
-In essence, [AEM Authoring](/help/forms/creating-adaptive-form-core-components.md) builds upon the foundation of [Document-based Authoring](/help/edge/docs/forms/create-forms.md), providing a more advanced toolkit for creating and managing complex forms. 
+In essence, [WYSIWYG Authoring](/help/forms/creating-adaptive-form-core-components.md) builds upon the foundation of [Document-based Authoring](/help/edge/docs/forms/create-forms.md), providing a more advanced toolkit for creating and managing complex forms. 
 
 >[!NOTE]
 >
 >
-> The AEM Authoring capability is available under the early-adopter program. If you are interested, send a quick email from your work address to aem-forms-ea@adobe.com to request access to the capability.
+> The WYSIWYG Authoring capability is available under the early-adopter program. If you are interested, send a quick email from your work address to aem-forms-ea@adobe.com to request access to the capability.
 
 ### AEM Forms Edge Delivery Services: Authoring, Publishing, and Submission of Forms  
 
-The following diagrams illustrate the process of creating, publishing, and submitting forms using Document-based Authoring and AEM Authoring.
+The following diagrams illustrate the process of creating, publishing, and submitting forms using Document-based Authoring and WYSIWYG Authoring.
 
 ![Document-based Authoring ](/help/edge/assets/document-based-authoring-workflow.png)
 
-![AEM Authoring](/help/edge/assets/aem-authoring-workflow.png)
+![WYSIWYG Authoring](/help/edge/assets/wysiwyg-authoring-workflow.png)
 
 ## Start creating forms
 
