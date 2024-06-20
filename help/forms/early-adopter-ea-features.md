@@ -69,9 +69,9 @@ Here's what more Conversational Forms bring:
 Conversational Forms are more than just a new look – they're a game-changer for user experience.  Boost engagement, reduce form abandonment, and make interacting with your website a more enjoyable experience for everyone.
 
 
-### AEM-based Authoring for Edge Delivery Services
+### WYSIWYG Authoring for Edge Delivery Services
 
-AEM-based Authoring provides a WYSIWYG interface (Adaptive Forms Editor) to build and publish these forms to Edge Delivery Services. AEM-based Authoring offers all the capabilities of [Document-based Authoring](/help/edge/docs/forms/overview.md#document-based-authoring-features), plus a wide range of additional features:
+WYSIWYG Authoring provides WYSIWYG interfaces (Universal Editor and Adaptive Forms Editor) to build and publish adaptive forms to Edge Delivery Services. WYSIWYG Authoring offers all the capabilities of [Document-based Authoring](/help/edge/docs/forms/overview.md#document-based-authoring-features), plus a wide range of additional features:
 
 * Advanced rules editor for creating complex logic.
 * Server-side extensibility for custom functionalities.
