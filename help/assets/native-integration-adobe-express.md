@@ -2,6 +2,8 @@
 title: AEM Assets native integration with Adobe Express
 description: AEM Assets native integration with Adobe Express allows you to directly access the assets stored in AEM Assets from within the Adobe Express user interface.
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
+feature: Collaboration
+role: User
 ---
 # Native integration with Adobe Express {#native-integration-adobe-express}
 

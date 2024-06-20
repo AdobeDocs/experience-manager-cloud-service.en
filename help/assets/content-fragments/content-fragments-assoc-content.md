@@ -2,6 +2,8 @@
 title: Associated Content (Assets - Content Fragments)
 description: Understand how the associated content feature for AEM Content Fragments provides the connection so that assets can be optionally used with the fragment.
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
+feature: Content Fragments
+role: User
 ---
 # Associated Content{#associated-content}
 
