@@ -3,6 +3,7 @@ title: Caching in AEM as a Cloud Service
 description: Learn about the basics of Caching in AEM as a Cloud Service 
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
+role: Admin
 ---
 # Introduction {#intro}
 
