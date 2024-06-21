@@ -30,7 +30,7 @@ Entitlements to access Adobe Express and at least one environment within AEM Ass
     * **[!UICONTROL PDF]** (which is suitable for documents)
 
 1. [!UICONTROL Save asset] screen appears.
-   ![Save image with Adobe Express](assets/adobe-express-saveas.png)
+   ![Save image with Adobe Express](assets/adobe-express-save-as.png)
 
    You can fill up the following fields with one or multiple options available in the drop-down:
 
