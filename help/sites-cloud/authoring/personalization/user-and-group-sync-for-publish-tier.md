@@ -3,7 +3,7 @@ title: Registration, Login, and User Profile
 description: Learn about Registration, Login, User Data and Group Synchronization for AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 solution: Experience Manager Sites
-feature: "Authoring, Personalization"
+feature: Authoring, Personalization
 role: User
 ---
 # Registration, Login, and User Profile {#registration-login-and-userprofile}

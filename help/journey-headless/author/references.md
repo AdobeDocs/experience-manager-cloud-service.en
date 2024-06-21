@@ -3,7 +3,7 @@ title: Learn about using references in Content Fragments
 description: Learn about using references in Content Fragments, for content, other fragments and other assets (media). Introduce the necessity for, and the mechanics of, nested fragments for Headless CMS Authoring.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 solution: Experience Manager
-feature: "Headless, Content Fragments,GraphQL API"
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 ---
 # Learn about using references in Content Fragments {#author-headless-references}

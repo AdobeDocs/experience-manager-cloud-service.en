@@ -2,8 +2,8 @@
 title: Creating a Configuration - Headless Setup
 description: Create a configuration as a first step to getting started with headless in AEM as a Cloud Service.
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-feature: "Headless, Content Fragments,GraphQL API"
-role: "Admin, Developer"
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Developer
 ---
 # Creating a Configuration - Headless Setup {#creating-configuration}
 

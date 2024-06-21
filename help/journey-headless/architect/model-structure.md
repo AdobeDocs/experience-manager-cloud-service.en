@@ -3,7 +3,7 @@ title: Learn about Creating Content Fragment Models in AEM
 description: Learn about the concepts and mechanics of modeling content for your Headless CMS using Content Fragments Models.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 solution: Experience Manager
-feature: "Headless, Content Fragments,GraphQL API"
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 ---
 # Learn about Creating Content Fragment Models in AEM {#architect-headless-content-fragment-models}
