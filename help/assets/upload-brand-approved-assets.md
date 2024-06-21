@@ -6,7 +6,7 @@ role: User
 
 # Upload brand approved assets to Content Hub {#upload-brand-approved-assets-content-hub}
 
-Add assets to the Content Hub either from your local file system or while creating assets using Adobe Express and saving it to Adobe GenStudio using the Express-add on. All assets display at the top-level in Content Hub irrespective of the folder structure available on your local file system to enhance the search capabilities.
+Administrators can add assets to the Content Hub either from local file system or import assets from OneDrive or Dropbox data sources. All assets display at the top-level in Content Hub irrespective of the folder structure available on your local file system or OneDrive and Dropbox data sources to enhance the search capabilities.
 
 To further enhance asset search, Content Hub allows you to:
 
@@ -20,11 +20,11 @@ Ensure that you only upload your brand approved assets to the Content Hub.
 
 ![Upload brand approved assets](assets/upload-brand-approved-assets.png)
 
-## Add assets to Content Hub {#add-assets-genstudio}
+## Add assets to Content Hub from local file system {#add-assets-local-file-system}
 
 To add assets to Content Hub, perform the following steps:
 
-1. Click **[!UICONTROL Add Assets]** to view the **[!UICONTROL Upload your approved assets]** dialog box that enables you to create an upload.
+1. Click **[!UICONTROL Add Assets]** to view the **[!UICONTROL Add your approved assets]** dialog box that enables you to create an upload.
 
 1. In the **[!UICONTROL Drag files or folders here]** section available in the right pane, you can either drag the assets from the local file system or click **[!UICONTROL Browse]** to manually select files or folders available on the local file system. This list of files that are part of your upload are available as a list. 
 
@@ -44,3 +44,19 @@ To add assets to Content Hub, perform the following steps:
 
 1. Assets start uploading. Click [!UICONTROL New Upload] to restart the upload procedure. Click [!UICONTROL Done] to complete uploading.
 
+Administrators can also configure the mandatory and optional fields that display while uploading assets. For more information, see [Configure Content Hub user interface](configure-content-hub-ui-options.md#configure-upload-options-content-hub).
+
+
+## Add assets to Content Hub from OneDrive or Dropbox data sources {#add-assets-onedrive-dropbox}
+
+To add assets to Content Hub from OneDrive or Dropbox data sources:
+
+1. Click **[!UICONTROL Add Assets]** to view the **[!UICONTROL Add your approved assets]** dialog box that enables you to import assets from OneDrive or Dropbox.
+
+1. Click **[!UICONTROL OneDrive]** or **[!UICONTROL Dropbox]** to start the import process. Content Hub prompts you to log on to your OneDrive or Dropbox account and then displays your OneDrive or Dropbox folder structure in the left pane.
+
+1. Click the + icon adjacent to the file or the folder name to view the item in the list of Selected items. After selecting all the files that you need to add to the Content Hub portal, repeat steps 3 to 6 of [Add assets to Content Hub from local file system](#add-assets-local-file-system) to complete the upload process.
+
+   ![Upload assets to Content Hub from OneDrive or Dropbox](assets/add-assets-onedrive-dropbox.png)
+
+Administrators can also configure the mandatory and optional fields that display while uploading assets. For more information, see [Configure Content Hub user interface](configure-content-hub-ui-options.md#configure-upload-options-content-hub).
