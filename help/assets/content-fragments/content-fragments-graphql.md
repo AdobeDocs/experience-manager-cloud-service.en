@@ -4,6 +4,7 @@ description: Learn the basic concepts of realizing an AEM Headless CMS using Con
 feature: Content Fragments
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
 role: User
+solution: Experience Manager Sites
 ---
 # Headless Content Delivery using Content Fragments with GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 

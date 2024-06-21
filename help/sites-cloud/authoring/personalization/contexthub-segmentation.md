@@ -3,7 +3,7 @@ title: Configuring Segmentation with ContextHub
 description: Learn how to configure segmentation using ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
 solution: Experience Manager Sites
-feature: Authoring
+feature: "Authoring, Personalization"
 role: User
 ---
 # Configuring Segmentation with ContextHub{#configuring-segmentation-with-contexthub}

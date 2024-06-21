@@ -4,6 +4,7 @@ description: Review these important considerations before defining your Content 
 exl-id: 69c08f2f-4d51-4aea-957e-ee81c4604377
 feature: Content Fragments
 role: User
+solution: Experience Manager Sites
 ---
 # Content Fragments - Delete Considerations {#content-fragments-delete-considerations}
 

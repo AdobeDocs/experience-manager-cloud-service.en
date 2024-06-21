@@ -1,8 +1,9 @@
 ---
 title: Troubleshoot Persisted GraphQL queries
 description: Learn how to troubleshoot issues with persisted GraphQL queries in Adobe Experience Manager as a Cloud Service.
-feature: Content Fragments,GraphQL API
+feature: "Headless, Content Fragments,GraphQL API"
 exl-id: 71bd1f68-ca96-4c78-a936-abed250ecec1
+role: "Admin, Developer"
 ---
 # Troubleshoot Persisted GraphQL Queries {#troubleshoot-persisted-graphql-queries}
 

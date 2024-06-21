@@ -3,7 +3,7 @@ title: Content Fragments
 description: Adobe Experience Manager as a Cloud Service Content Fragments allow you to design, create, curate, and use page-independent content
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
-feature: Authoring
+feature: "Authoring, Content Fragments"
 role: User
 ---
 # Content Fragments {#content-fragments}

@@ -2,6 +2,8 @@
 title: Create an API Request - Headless Setup
 description: Learn how to use the GraphQL API for headless delivery of Content Fragment content and AEM's Assets REST API to manage Content Fragments.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
+feature: "Headless, Content Fragments,GraphQL API"
+role: "Admin, Developer"
 ---
 # Create an API Request - Headless Setup {#accessing-delivering-content-fragments}
 
