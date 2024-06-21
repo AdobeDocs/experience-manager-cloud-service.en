@@ -4,6 +4,7 @@ description: Understand how Content Fragment variations allow you to author cont
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
+solution: Experience Manager Sites
 ---
 # Variations - Authoring Fragment Content{#variations-authoring-fragment-content}
 

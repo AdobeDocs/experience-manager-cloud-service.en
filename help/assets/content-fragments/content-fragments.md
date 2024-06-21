@@ -4,6 +4,7 @@ description: Learn how Content Fragments in Adobe Experience Manager (AEM) as a 
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
+solution: Experience Manager Sites
 ---
 # Working with Content Fragments {#working-with-content-fragments}
 
