@@ -3,7 +3,7 @@ title: Get Started with AEM Headless Translation
 description: Get to know how to organize your headless content and how AEM's translation tools work.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 solution: Experience Manager
-feature: Headless
+feature: "Headless, Content Fragments,GraphQL API"
 role: Admin, Architect, Developer
 ---
 # Get Started with AEM Headless Translation {#getting-started}

@@ -2,7 +2,7 @@
 title: ContextHub Diagnostics
 description: ContextHub provides a diagnostics page where you can see an overview of the ContextHub framework
 exl-id: c8d4e160-ea02-49f3-9e31-119445ef5a68
-feature: Developing
+feature: "Developing, Personalization"
 role: Admin, Architect, Developer
 ---
 # ContextHub Diagnostics {#contexthub-diagnostics}

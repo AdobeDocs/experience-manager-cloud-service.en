@@ -2,7 +2,7 @@
 title: Sample ContextHub Store Candidates
 description: ContextHub provides several sample store candidates that you can use in your solutions
 exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
-feature: Developing
+feature: "Developing, Personalization"
 role: Admin, Architect, Developer
 ---
 # Sample ContextHub Store Candidates {#sample-contexthub-store-candidates}

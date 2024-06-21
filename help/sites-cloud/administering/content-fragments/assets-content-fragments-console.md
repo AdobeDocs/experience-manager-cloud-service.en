@@ -4,6 +4,7 @@ description: Learn how to view, and manage, Assets in the **Content Fragments Co
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 865e1fa8-2956-45cf-9dd7-034d491808fe
+solution: Experience Manager Sites
 ---
 # Viewing and Managing Assets in the Content Fragments Console {#viewing-managing-assets-content-fragments-console}
 

@@ -2,6 +2,8 @@
 title: Creating Content Fragments - Headless Setup
 description: Learn how to use AEM's Content Fragments to design, create, curate, and use page-independent content for headless delivery.
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
+feature: "Headless, Content Fragments,GraphQL API"
+role: "Admin, Developer"
 ---
 # Creating Content Fragments - Headless Setup {#creating-content-fragments}
 

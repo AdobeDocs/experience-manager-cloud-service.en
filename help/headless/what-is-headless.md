@@ -2,6 +2,8 @@
 title: What is a Headless CMS?
 description: Learn about Headless CMS. How do they work? What are the alternatives and differences? Why would you want to use a Headless CMS?
 exl-id: 53f24f69-ad49-4b8e-9a91-36cd64c1f2b9
+feature: Headless
+role: "Admin, Developer"
 ---
 # What is a Headless CMS? {#what-is-a-headless-cms}
 
