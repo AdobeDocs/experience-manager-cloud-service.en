@@ -4,7 +4,7 @@ description: Learn about headless development using Adobe Experience Manager (AE
 landing-page-description: Get an understanding of headless content delivery and implementation. Learn more about developing your strategy within your business. 
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 solution: Experience Manager
-feature: "Headless, Content Fragments,GraphQL API"
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 ---
 # AEM Headless CMS Developer Journey {#aem-headless-developer-journey}

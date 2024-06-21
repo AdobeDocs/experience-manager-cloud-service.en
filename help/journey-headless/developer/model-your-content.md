@@ -3,7 +3,7 @@ title: How to Model Your Content
 description: In this part of the Adobe Experience Manager (AEM) Headless Developer Journey, learn how to model your content for AEM Headless delivery using Content Modeling with Content Fragment Models and Content Fragments.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 solution: Experience Manager
-feature: "Headless, Content Fragments,GraphQL API"
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 ---
 # How to Model Your Content {#model-your-content}

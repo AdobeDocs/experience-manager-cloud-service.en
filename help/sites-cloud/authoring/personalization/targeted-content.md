@@ -3,7 +3,7 @@ title: Authoring Targeted Content Using Targeting Mode
 description:  Targeting mode and the Target component provide tools for creating content for experiences
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
 solution: Experience Manager Sites
-feature: "Authoring, Personalization"
+feature: Authoring, Personalization
 role: User
 ---
 # Authoring Targeted Content Using Targeting Mode {#authoring-targeted-content-using-targeting-mode}

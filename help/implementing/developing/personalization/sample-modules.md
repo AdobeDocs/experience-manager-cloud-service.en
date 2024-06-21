@@ -2,7 +2,7 @@
 title: Sample ContextHub UI Module Types
 description: ContextHub provides several sample UI modules that you can use in your solutions
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
-feature: "Developing, Personalization"
+feature: Developing, Personalization
 role: Admin, Architect, Developer
 ---
 # Sample ContextHub UI Module Types {#sample-contexthub-ui-module-types}

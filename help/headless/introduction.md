@@ -4,7 +4,7 @@ description: Learn about Headless in Adobe Experience Manager (AEM) with a combi
 landing-page-description: Understand how to use and administer Headless in Adobe Experience Manager as a Cloud Service.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 feature: Headless
-role: "Admin, Developer"
+role: Admin, Developer
 ---
 
 # Introduction to Adobe Experience Manager as a Headless CMS {#introduction-aem-headless}
