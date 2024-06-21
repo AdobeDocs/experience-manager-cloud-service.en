@@ -54,6 +54,13 @@ Summarized below are the continuous improvements for maintenance release 16799, 
 > In case your environments are affected, a shell script to identify and update missing configurations is available through customer support (internal reference SITES-22457).
 > A longer term fix will be made available that will ensure new Launches are created with all the right configurations. Until then, an internal patch release is also available on demand.
 
+#### Forms
+
+1.	If a user downloads the latest AEM Forms SDK (`AEM Forms add-on v2024.05.04.00-240400`), the batch file fails to start the Docker service. To resolve this issue:
+    1. Download the [folder](/help/forms/assets/sdk_hotfix.zip).
+    1. Extract the contents from the downloaded folder and copy the `sdk.sh` and `sdk.bat` files.
+    1.	Replace the existing `sdk.sh` and `sdk.bat` files in your AEM Forms SDK with the new files.
+
 ### Change Notice {#change-notice-16799}
 
 * This release contains the following new product index versions:
