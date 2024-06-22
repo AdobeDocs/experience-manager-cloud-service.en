@@ -183,7 +183,7 @@ Examples for `userproperties-copy-service`:
 * Reduce scope
 
   * Place access control policies at feature specific subtrees
-  * In case of distributed items: use restrictions to limit scope (consult [the documentation](http://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html) for list of built-in restrictions).
+  * In case of distributed items: use restrictions to limit scope (consult [the documentation](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html) for list of built-in restrictions).
 
 * Ensure Consistency
 
