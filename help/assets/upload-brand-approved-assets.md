@@ -44,7 +44,7 @@ To add assets to Content Hub, perform the following steps:
 
 1. Assets start uploading. Click [!UICONTROL New Upload] to restart the upload procedure. Click [!UICONTROL Done] to complete uploading.
 
-Administrators can also configure the mandatory and optional fields that display while uploading assets. For more information, see [Configure Content Hub user interface](configure-content-hub-ui-options.md#configure-upload-options-content-hub).
+Administrators can also configure the mandatory and optional fields that display while uploading assets, such as Campaign name, Keywords, Channels, and so on. For more information, see [Configure Content Hub user interface](configure-content-hub-ui-options.md#configure-upload-options-content-hub).
 
 
 ## Add assets to Content Hub from OneDrive or Dropbox data sources {#add-assets-onedrive-dropbox}
@@ -59,4 +59,4 @@ To add assets to Content Hub from OneDrive or Dropbox data sources:
 
    ![Upload assets to Content Hub from OneDrive or Dropbox](assets/add-assets-onedrive-dropbox.png)
 
-Administrators can also configure the mandatory and optional fields that display while uploading assets. For more information, see [Configure Content Hub user interface](configure-content-hub-ui-options.md#configure-upload-options-content-hub).
+Administrators can also configure the mandatory and optional fields that display while uploading assets, such as Campaign name, Keywords, Channels, and so on. For more information, see [Configure Content Hub user interface](configure-content-hub-ui-options.md#configure-upload-options-content-hub).
