@@ -50,7 +50,7 @@ The syntax for the `X-AEM-Edge-Key` value includes:
 
 * Kind, version, and metadata.
 * Data node that contains a child `experimental_authentication` node (the experimental prefix will be removed when the feature is released).
-* Under experimental_authentication, with one authenticator node and one rules node, both of which are arrays.
+* Under `experimental_authentication`, one `authenticators` node and one `rules` node, both of which are arrays.
 * Authenticators: Lets you declare a type of token or credential, which in this case is an edge key. It includes the following properties:
    * name - a descriptive string.
    * type - must be edge.
@@ -83,11 +83,11 @@ data:
          purgeKey1: ${{CDN_PURGEKEY_031224}}
          purgeKey2: ${{CDN_PURGEKEY_021225}}
     rules:
-     - name: purge-auth-rule
-       when: { reqProperty: tier, equals: "publish" }
-       action:
-         type: authenticate
-         authenticator: purge-auth
+       - name: purge-auth-rule
+         when: { reqProperty: tier, equals: "publish" }
+         action:
+           type: authenticate
+           authenticator: purge-auth
 
 ```
 
@@ -95,8 +95,8 @@ The syntax includes:
 
 * kind, version, and metadata.
 * data node that contains a child `experimental_authentication` node (the experimental prefix will be removed when the feature is released).
-* Under `experimental_authentication`, with a single one authenticators node.
-* Authenticators: Lets you declare a type of token or credential, which in this case is an purge key. It includes the following properties::
+* Under `experimental_authentication`, one `authenticators` node and one `rules` node, both of which are arrays.
+* Authenticators: Lets you declare a type of token or credential, which in this case is an purge key. It includes the following properties:
   * name - a descriptive string.
   * type - must be purge.
   * purgeKey1 - its value must reference a secret token, which should not be stored in git, but rather declared as [Cloud Manager Environment Variables](/help/implementing/cloud-manager/environment-variables.md) of type `secret`.
@@ -106,6 +106,61 @@ The syntax includes:
   * name - a descriptive string
   * when - a condition that determines when the rule should be evaluated, according to the syntax in the [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md) article. Typically, it will include a comparison of the current tier (for example., publish).
   * action - must specify "authenticate", with the intended authenticator referenced.
+
+>[!NOTE]
+>The Edge Key must be configured as a [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md) variable of type `secret`, before the configuration referencing it is deployed.
+
+## Basic Authentication {#basic-auth}
+
+Protect certain content resources by popping up a basic auth dialog requiring a username and password. This feature is primarily intended for light authentication use cases such as business stakeholder review of content, rather than as a full-fledged solution for end-user access rights.
+
+The end user will experience a basic auth dialog popping up like the following:
+
+ ![basicauth-dialog](/help/implementing/dispatcher/assets/basic-auth-dialog.png)
+
+
+The syntax is declared as described below. See the [Common Setup](#common-setup) section below for infromation about how to deploy it.
+
+```
+
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  experimental_authentication:
+    authenticators:
+       - name: my-basic-authenticator
+         type: basic
+         credentials
+           - user: johndoe
+             password: ${{JOHNDOE_PASSWORD}}
+           - user: janedoe
+             password: ${{JANEDOE_PASSWORD}}
+    rules:
+       - name: basic-auth-rule
+         when: { reqProperty: path, like: "/summercampaign" }
+         action:
+           type: authenticate
+           authenticator: my-basic-authenticator
+
+```
+
+The syntax includes:
+
+* kind, version, and metadata.
+* a data node that contains an `experimental_authentication` node (the experimental prefix will be removed when the feature is released).
+* Under `experimental_authentication`, one `authenticators` node and one `rules` node, both of which are arrays.
+* Authenticators: in this scenario declare a basic authenticator, which has the following structure:
+  * name - a descriptive string
+  * type - must be `basic`
+  * an array of credentials, each of which includes the following name/value pairs, which end-users can enter in the basic auth dialog:
+    * user - the name of user
+    * password - its value must reference a secret token, which should not be stored in git, but rather declared as Cloud Manager Environment Variables of type secret (with **All** selected as the service field)
+* Rules: Lets you declare which of the authenticators should be used, and which resources should be protected. Each rule includes:
+  * name - a descriptive string
+  * when - a condition that determines when the rule should be evaluated, according to the syntax in the [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md) article. Typically, it will include a comparison of the publish tier or specific paths. 
+  * action - must specify "authenticate", with the intended authenticator referenced, which is basic-auth for this scenario
 
 >[!NOTE]
 >The Edge Key must be configured as a [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md) variable of type `secret`, before the configuration referencing it is deployed.
