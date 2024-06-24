@@ -2,6 +2,8 @@
 title: Custom HTTP Headers
 description: Learn how to configure custom HTTP headers that would be sent to the commerce engine, along with the ones already sent by CIF.
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
+feature: Commerce Integration Framework
+role: Admin
 ---
 # Custom HTTP Headers {#custom-http-headers}
 
