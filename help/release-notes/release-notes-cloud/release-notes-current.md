@@ -79,7 +79,7 @@ Experience Manager Assets now enables you to quickly [publish assets to Experien
 
 --> 
 
-### New pre-release features in AEM Forms {#forms-new-prerelease-features}
+### New features in AEM Forms {#forms-new-prerelease-features}
 
 #### Enhanced Visual Rule Editor for Core Component Based Adaptive Forms
 
@@ -94,13 +94,11 @@ This release brings a significant upgrade to the visual rule editor for adaptive
   * Use the [**Save as Draft**](/help/forms/save-core-component-based-form-as-draft.md) functionality to save partially completed forms for later submission. This is useful in scenarios where users need to interrupt filling out a form and come back to it later.
 
  
+### Early Access features in AEM Forms {#forms-new-early-adopter-features} 
 
-### Early Adopter features in AEM Forms {#forms-new-early-adopter-features} 
+The AEM Forms Early Access Program program offers a unique opportunity to you to get exclusive access to cutting-edge innovations before anyone else, and help shape their development. The program offers access to multiple innovations. 
 
-The AEM Forms Early Adopter Program program offers a unique opportunity to you to get exclusive access to cutting-edge innovations before anyone else, and help shape their development. 
-The program offers access to multiple innovations. 
-
-This release notes lists the innovations delivered in current release. For the complete list of innovations available under the Early Adopter Program, see [AEM Forms Early Adopter Program documentation](/help/forms/early-adopter-ea-features.md). 
+This release notes lists the innovations delivered in current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
 
 #### Enhanced bot protection methods
 
