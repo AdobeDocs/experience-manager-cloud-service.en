@@ -35,9 +35,10 @@ To add assets to Content Hub, perform the following steps:
    
    ![Upload assets to Content Hub](assets/upload-assets-content-hub.png)
 
-1. Define the name for your upload using the **[!UICONTROL Project or campaign name]** field. You can use an existing name or create a new one. Adobe GenStudio provides you with more options as you type the name. You can define multiple Project or Campaign names for your upload. While you are typing a name, either click anywhere else within the dialog box or press the `,` (Comma) key to register the name.
+1. Define the name for your upload using the **[!UICONTROL Project or campaign name]** field. You can use an existing name or create a new one. Adobe GenStudio provides you with more options as you type the name. <!--You can define multiple Project or Campaign names for your upload. While you are typing a name, either click anywhere else within the dialog box or press the `,` (Comma) key to register the name.-->
 
    As a best practice, Adobe recommends specifying values in the rest of the fields as well as it creates an enhanced search experience for your uploaded assets.
+   
 1. Similarly, define values for the **[!UICONTROL Keywords]**, **[!UICONTROL Channels]**, **[!UICONTROL Timeframe]**, and **[!UICONTROL Region]** fields. Tagging and grouping assets by keywords, channels, and location enables everyone who uses your approved company content find these assets and keep it organized.
 
 1. Click **[!UICONTROL Upload]** to upload assets to the Content Hub. [!UICONTROL Review details] confirmation box appears. Click [!UICONTROL Continue].
