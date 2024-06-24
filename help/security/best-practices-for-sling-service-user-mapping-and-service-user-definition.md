@@ -2,6 +2,8 @@
 title: Best Practices for Sling Service User Mapping and Service User Definition
 description: Learn about the best practices for sling service user mapping and service user definition
 exl-id: 72f0dcbf-b4e6-4a73-8232-3574a212ac19
+feature: Security
+role: Admin
 ---
 # Best Practices for Sling Service User Mapping and Service User Definition {#best-practices-for-sling-service-user-mapping-and-service-user-definition}
 
@@ -181,7 +183,7 @@ Examples for `userproperties-copy-service`:
 * Reduce scope
 
   * Place access control policies at feature specific subtrees
-  * In case of distributed items: use restrictions to limit scope (consult [the documentation](http://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html) for list of built-in restrictions).
+  * In case of distributed items: use restrictions to limit scope (consult [the documentation](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html) for list of built-in restrictions).
 
 * Ensure Consistency
 

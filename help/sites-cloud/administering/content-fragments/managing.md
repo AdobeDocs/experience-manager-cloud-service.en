@@ -4,6 +4,7 @@ description: Learn how to manage your AEM Content Fragments from the console and
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
+solution: Experience Manager Sites
 ---
 # Managing Content Fragments {#managing-content-fragments}
 

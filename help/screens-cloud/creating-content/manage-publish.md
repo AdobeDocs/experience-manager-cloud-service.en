@@ -2,6 +2,8 @@
 title: Publishing a Channel in Screens as a Cloud Service
 description: This page describes how to publish a channel in Screens as a Cloud Service.
 exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
+feature: Authoring Screens
+role: Admin, Developer, User
 ---
 # Publishing Channels in Screens as a Cloud Service {#publish-channel-screens-cloud}
 

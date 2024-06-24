@@ -2,6 +2,9 @@
 title: Adding a Custom Domain Name
 description: Learn how to add a custom domain name using Cloud Manager.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 
 # Adding a Custom Domain Name {#adding-cdn}

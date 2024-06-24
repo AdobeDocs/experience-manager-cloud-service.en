@@ -2,6 +2,8 @@
 title: Configuring CDN Credentials and Authentication
 description: Learn how to configure CDN credentials and authentication by declaring rules in a configuration file that is then deployed by using the Cloud Manager Configuration Pipeline.
 feature: Dispatcher
+exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
+role: Admin
 ---
 # Configuring CDN Credentials and Authentication {#cdn-credentials-authentication}
 
@@ -35,7 +37,6 @@ data:
         type: edge
         edgeKey1: ${{CDN_EDGEKEY_052824}}
         edgeKey2: ${{CDN_EDGEKEY_041425}}
-        onFailure: log # optional, default: log, enum: log/block
     rules:
       - name: edge-auth-rule
         when: { reqProperty: tier, equals: "publish" }
@@ -55,7 +56,7 @@ The syntax for the `X-AEM-Edge-Key` value includes:
    * type - must be edge.
    * edgeKey1 - its value must reference a secret token, which should not be stored in git, but rather declared as a [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md) of type secret. For the Service Applied field, select All. It is recommended that the value (for example,`${{CDN_EDGEKEY_052824}}`) reflects the day it was added.
    * edgeKey2 - used for the rotation of secrets, which is described in the [rotating secrets section](#rotating-secrets) below. At least one of `edgeKey1` and `edgeKey2` must be declared.
-   * OnFailure - defines the action, either `log` or `block`, when a request doesn't match either `edgeKey1` or `edgeKey2`. For `log`, request processing will continue, while `block` will serve a 403 error. The `log` value is useful when testing a new token on a live site since you can first confirm that the CDN is correctly accepting the new token before changing to `block` mode; it also reduces the chance of lost connectivity between the customer CDN and the Adobe CDN, as a result of an incorrect configuration.
+<!--   * OnFailure - defines the action, either `log` or `block`, when a request doesn't match either `edgeKey1` or `edgeKey2`. For `log`, request processing will continue, while `block` will serve a 403 error. The `log` value is useful when testing a new token on a live site since you can first confirm that the CDN is correctly accepting the new token before changing to `block` mode; it also reduces the chance of lost connectivity between the customer CDN and the Adobe CDN, as a result of an incorrect configuration. -->
 * Rules: Lets you declare which of the authenticators should be used, and whether it's for the publish and/or preview tier.  It includes:
    * name - a descriptive string.
    * when - a condition that determines when the rule should be evaluated, according to the syntax in the [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md) article. Typically, it will include a comparison of the current tier (for example., publish) so all live traffic is validated as routing through the customer CDN.
@@ -66,7 +67,7 @@ The syntax for the `X-AEM-Edge-Key` value includes:
 
 ## Purge API Token {#purge-API-token}
 
-Customers can purge the CDN cache by using a declared Purge API token. The token is declared with the syntax below.  See the [Common Setup](#common-setup) section to learn how to deploy it.
+Customers can [purge the CDN cache](/help/implementing/dispatcher/cdn-cache-purge.md) by using a declared Purge API token. The token is declared with the syntax below.  See the [Common Setup](#common-setup) section to learn how to deploy it.
 
 ```
 

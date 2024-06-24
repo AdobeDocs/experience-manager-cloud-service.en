@@ -3,6 +3,7 @@ title: Learn how to search and discover assets in [!DNL Assets view]?
 description: Learn how to search and discover assets in AEM Assets view. The powerful search functionality lets you quickly discover the appropriate asset and help you improve your content velocity.
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
+feature: Asset Management, Publishing, Collaboration, Asset Processing
 ---
 # Search assets in [!DNL Assets view] {#search-assets}
 
@@ -305,7 +306,6 @@ The following video illustrates the end-to-end process from accessing the Contex
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428407)
 
-<!--
 ### Disable Contextual Search {#disable-contextual-search}
 
 Administrators also have the option to disable Contextual Search for users in your organization. To do so, execute the following steps:
@@ -313,7 +313,6 @@ Administrators also have the option to disable Contextual Search for users in yo
 1. Navigate to **[!UICONTROL Settings]** > **[!UICONTROL General Settings]**.
 
 1. In the [!UICONTROL Contextual Search] section, turn off the **[!UICONTROL Enable Contextual Search for your organization]** toggle to disable the Contextual Search feature for all users in your organization.  
--->
 
 ### Contextual Search feedback {#contextual-search-feedback}
 
@@ -327,6 +326,6 @@ If you need to provide feedback on the Contextual Search feature, click ![Contex
 
 * Provide product feedback using the [!UICONTROL Feedback] option available on the Assets view user interface
 
-* Provide documentation feedback using [!UICONTROL Edit this page] ![edit the page](assets/do-not-localize/edit-page.png) or [!UICONTROL Log an issue] ![create a GitHub issue](assets/do-not-localize/github-issue.png) available on the right sidebar
+* Provide documentation feedback using [!UICONTROL Edit this page] ![edit the page](assets/do-not-localize/edit-page.png) or [!UICONTROL Log an issue] ![create a GitHub issue](assets/do-not-localize/github-issue.png) available on the right sidebar.
 
 * Contact [Customer Care](https://experienceleague.adobe.com/?support-solution=General#support)

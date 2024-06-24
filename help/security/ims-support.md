@@ -2,6 +2,8 @@
 title: IMS Support for Adobe Experience Manager as a Cloud Service
 description: Image Management System support for Adobe Experience Manager as a Cloud Service.
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
+feature: Security
+role: Admin
 ---
 # IMS Support for Adobe Experience Manager as a Cloud Service {#ims-support-for-aem-as-a-cloud-service}
 

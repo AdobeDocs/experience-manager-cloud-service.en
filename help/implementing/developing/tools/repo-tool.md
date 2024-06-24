@@ -2,6 +2,8 @@
 title: AEM Repo Tool
 description: The AEM Repo Tool is a simple solution to transfer JCR content between your local filesystem and the AEM server via the command line comparable to FTP.
 exl-id: fb887ba3-e40b-4ab1-b142-0748c6d9f18e
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # AEM Repo Tool {#aem-repo-tool}
 

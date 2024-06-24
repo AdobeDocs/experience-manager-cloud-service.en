@@ -2,6 +2,8 @@
 title: Model Definitions, Fields, and Component Types
 description: Learn about fields and the component types that the Universal Editor can edit in the properties rail with examples. Understand how you can instrument your own app by creating a model definition and linking to the component.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
+feature: Developing
+role: Admin, Architect, Developer
 ---
 
 # Model Definitions, Fields, and Component Types {#field-types}
@@ -95,7 +97,7 @@ The following are the component types that are possible to use for rendering fie
 |[Number](#number)|`number`|
 |[Radio Group](#radio-group)|`radio-group`|
 |[Reference](#reference)|`reference`|
-|[Rich Text](#rich-text)|`rich-text`|
+|[Rich Text](#rich-text)|`richtext`|
 |[Select](#select)|`select`|
 |[Tab](#tab)|`tab`|
 |[Text](#text)|`text`|

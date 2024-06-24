@@ -3,6 +3,7 @@ title: Configuring Traffic at the CDN
 description: Learn how to configure CDN traffic by declaring rules and filters in a configuration file and deploying them to the CDN by using the Cloud Manager Configuration Pipeline.
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
+role: Admin
 ---
 # Configuring Traffic at the CDN {#cdn-configuring-cloud}
 
@@ -308,6 +309,42 @@ Connections to origins are SSL only and use port 443.
 | **forwardCookie** (optional, default is false) |If set to true then the "Cookie" header from the client request will be passed to backend, otherwise the Cookie header is removed.|
 | **forwardAuthorization** (optional, default is false) |If set to true then the "Authorization" header from the client request will be passed to the backend, otherwise the Authorization header is removed.|
 | **timeout** (optional, in seconds, default is 60) |Number of seconds the CDN should wait for a backend server to deliver the first byte of an HTTP response body. This value is also used as a between bytes timeout to the backend server.|
+
+### Proxying to Edge Delivery Services {#proxying-to-edge-delivery}
+
+There are scenarios where origin selectors should be used to route traffic through AEM Publish to AEM Edge Delivery Services:
+
+* Some content is delivered by a domain managed by AEM Publish, while other content from the same domain is delivered by Edge Delivery Services 
+* Content delivered by Edge Delivery Services would benefit from rules deployed via Configuration Pipeline, including traffic filter rules or request/response transformations
+
+Here is an example of an origin selector rule that can accomplish this:
+
+```
+kind: CDN
+version: '1'
+data:
+  originSelectors:
+    rules:
+      - name: select-edge-delivery-services-origin
+        when:
+          allOf:
+            - reqProperty: tier
+              equals: publish
+            - reqProperty: domain
+              equals: <Production Host>
+            - reqProperty: path
+              matches: "^^(/scripts/.*|/styles/.*|/fonts/.*|/blocks/.*|/icons/.*|.*/media_.*|/favicon.ico)"
+        action:
+          type: selectOrigin
+          originName: aem-live
+    origins:
+      - name: aem-live
+        domain: main--repo--owner.aem.live
+```        
+        
+>[!NOTE]
+> Since the Adobe Managed CDN is used, make sure to configure push invalidation in **managed** mode, by following the Edge Delivery Services [Setup push invalidation documentation](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
+
 
 ## Client-side Redirects {#client-side-redirectors}
 
