@@ -20,6 +20,10 @@ Ensure that you only upload your brand approved assets to the Content Hub.
 
 ![Upload brand approved assets](assets/upload-brand-approved-assets.png)
 
+## Prerequisites {#prerequisites-add-assets}
+
+[Content Hub asset consumer users with submission permissions ](/help/assets/deploy-content-hub.md#onboard-content-hub-consumer-users-submission-rights) can upload assets to Content Hub.
+
 ## Add assets to Content Hub from local file system {#add-assets-local-file-system}
 
 To add assets to Content Hub, perform the following steps:
