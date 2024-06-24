@@ -85,16 +85,15 @@ Experience Manager Assets now enables you to quickly [publish assets to Experien
 
 This release brings a significant upgrade to the visual rule editor for adaptive forms based on core components. You can now: 
 
-  * Create rules in Visual Rule editor to [override default form submission success/failure handlers](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions). 
-  
-  * In the Adaptive Forms Rule Editor, added the ability to [select different types of fields for the WHEN operation](/help/forms/rule-editor-core-components.md#allowed-multiple-fields-in-when).
-  
-  * A form author can now apply custom functions to [preprocess data before submission](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions). 
+   * Create rules in Visual Rule editor to [override default form submission success/failure messages](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers). 
 
-  * Use the [**Save as Draft**](/help/forms/save-core-component-based-form-as-draft.md) functionality to save partially completed forms for later submission. This is useful in scenarios where users need to interrupt filling out a form and come back to it later.
+   * In the Adaptive Forms Rule Editor, added the ability to [select different types of fields for the WHEN operation](/help/forms/rule-editor-core-components.md#allowed-multiple-fields-in-when).
 
+   * A form author can now apply custom functions to [preprocess data before submission](/help/forms/create-and-use-custom-functions.md#use-case-submit-altered-data-to-the-server). 
+
+   * Use the [**Save as Draft**](/help/forms/save-core-component-based-form-as-draft.md) functionality to save partially completed forms for later submission. This is useful in scenarios where users need to interrupt filling out a form and come back to it later.
  
-### Early Access features in AEM Forms {#forms-new-early-adopter-features} 
+### Early Access features in AEM Forms {#forms-new-early-access-features}
 
 The AEM Forms Early Access Program program offers a unique opportunity to you to get exclusive access to cutting-edge innovations before anyone else, and help shape their development. The program offers access to multiple innovations. 
 
@@ -123,7 +122,7 @@ Forms service generates interactive PDF forms for data capture. It can also be u
 
 >[!IMPORTANT] 
 >
-> If you're interested in joining our Early Adopter program for any early adopter innovation, simply send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) to request access. You can request access to all or any specific innovation.  
+> If you're interested in joining our Early Access program for any early access innovation, simply send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) to request access. You can request access to all or any specific innovation.  
 
      
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
