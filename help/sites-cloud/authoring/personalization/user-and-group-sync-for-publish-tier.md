@@ -18,10 +18,6 @@ Web applications often provide account management features for end users to regi
 * Group membership
 * Data Synchronization
 
->[!IMPORTANT]
->
->In order for the functionality described in this article to work, the User Data Synchronization feature must be enabled, which at this time requires a request to customer support indicating the appropriate program and environments. If not enabled, user information is persisted for just a short period (1 to 24 hours) before disappearing.
-
 ## Registration {#registration}
 
 When an end-user registers for an account on an AEM application, a user account is created on the AEM Publish service, as reflected on a user resource under `/home/users` in the JCR repository.
@@ -38,6 +34,11 @@ Custom registration code can be written that takes, minimally, the user's userna
    1. Create a user record using one of the UserManager API's `createUser()` methods
    1. Persist any profile data captured using the Authorizable interface's `setProperty()` methods
 1. Optional flows, such as requiring the user to validate their email.
+
+**Prerequisite:**
+
+For the above-described logic to function correctly, please enable [data synchronization](#data-synchronization-data-synchronization) by submitting
+a request to Customer Support indicating the appropriate program and environments.
 
 ### External {#external-managed-registration}
 
@@ -57,6 +58,11 @@ Customers can write their own custom components. To learn more, consider becomin
 
 * The [Sling Authentication Framework](https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-framework.html) 
 * And consider [asking the AEM Community Experts session](https://bit.ly/ATACEFeb15) about login.
+
+**Prerequisite:**
+
+For the above-described logic to function correctly, please enable [data synchronization](#data-synchronization-data-synchronization) by submitting
+a request to Customer Support indicating the appropriate program and environments.
 
 ### Integration with an Identity Provider {#integration-with-an-idp}
 
@@ -78,9 +84,15 @@ See the [Single Sign On (SSO) documentation](https://experienceleague.adobe.com/
 
 The `com.adobe.granite.auth.oauth.provider` interface can be implemented with the OAuth provider of your choice.
 
+**Prerequisite:**
+
+As a best practice, always rely on the idP (Identity Provider) as a single point of truth when storing user-specific data. If the additional user information is stored in the local repository, which is not part of the idP, please enable [data synchronization](#data-synchronization-data-synchronization) by submitting a request to Customer Support indicating the appropriate program and environments. In addition to [data synchronization](#data-synchronization-data-synchronization), in the case of the SAML authentication provider, ensure that [dynamic group membership](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) is enabled.
+
 ### Sticky sessions and Encapsulated Tokens {#sticky-sessions-and-encapsulated-tokens}
 
-AEM as a Cloud Service has cookie-based sticky sessions enabled, which ensures that an end-user is routed to the same publish node on each request. To increase performance, the encapsulated token feature is enabled by default so the user record in the repository does not need to be referenced on each request. If the publish node which an end-user has an affinity to is replaced, their user id record is available on the new publish node, as described in the data synchronization section below.
+AEM as a Cloud Service has cookie-based sticky sessions enabled, which ensures that an end-user is routed to the same publish node on each request. To increase performance, the encapsulated token feature is required so the user record in the repository does not need to be referenced on each request. If the publish node which an end-user has an affinity to is replaced, their user id record is available on the new publish node, as described in the [data synchronization](#data-synchronization-data-synchronization) section below.
+
+To leverage the encapsulated token feature, please submit a request to Customer Support indicating the appropriate program and environments. More importantly, the encapsulated token can not be enabled without [data synchronization](#data-synchronization-data-synchronization) and must be enabled together. Therefore, carefully review the use case before enabling and ensure the feature is essential.
 
 ## User Profile {#user-profile}
 
@@ -98,6 +110,11 @@ User profile information can be written and read in two ways:
 End-user data can be sent to third-party vendors such as CRMs and retrieved via APIs upon the user's login to AEM and persisted (or refreshed) on the AEM user's profile node, and used by AEM as needed.
 
 Real-time access to third-party services to retrieve profile attributes is possible, however, it is important to ensure this does not materially impact request processing in AEM.
+
+**Prerequisite:**
+
+For the above-described logic to function correctly, please enable [data synchronization](#data-synchronization-data-synchronization) by submitting
+a request to Customer Support indicating the appropriate program and environments.
 
 ## Permissions (Closed User Groups) {#permissions-closed-user-groups}
 
@@ -117,6 +134,10 @@ Unlike other AEM solutions, user and group membership synchronization in AEM as 
 >[!NOTE]
 >
 >By default, user profile and group membership synchronization are not enabled and so data will not be synchronized to or even permanently persisted on the publish tier. To enable the feature, send a request to Customer Support indicating the appropriate program and environments.
+
+>[!IMPORTANT]
+>
+>Test the implementation at scale before enabling data synchronization in the production environment. Depending on the use case and the data persisted, some consistency and latency issues might occur.
 
 ## Cache Considerations {#cache-considerations}
 
