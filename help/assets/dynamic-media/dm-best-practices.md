@@ -8,8 +8,6 @@ content-type: reference
 feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rulesets, Viewers, Smart Crop, SEO Optimization, Publishing, Video, Renditions, Asset Management
 role: User, Admin
 mini-toc-levels: 4
-hide: no
-hidefromtoc: no
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
 ---
 # Dynamic Media best practices{#about-dm-best-practices}
