@@ -42,4 +42,6 @@ To edit images using Content Hub:
 
 1. Click **[!UICONTROL Save as new asset]** to save the asset.
 
+Administrators can also configure the mandatory and optional fields that display while adding assets to Content Hub, such as Campaign name, Keywords, Channels, and so on. For more information, see [Configure the Content Hub user interface](configure-content-hub-ui-options.md#configure-upload-options-content-hub).
+
    
