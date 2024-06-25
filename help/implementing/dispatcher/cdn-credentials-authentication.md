@@ -14,6 +14,8 @@ The Adobe-provided CDN has several features and services, some of which rely on 
 
 * The HTTP header value used by the Adobe CDN to validate requests coming from a Customer-managed CDN.
 * The API token used to purge resources in the CDN cache.
+* A list of username/password combinations that can access restricted content, by submitting a Basic Authentication form.
+
 
 Each of these, including the configuration syntax, is described in its own section below. The [Common Setup](#common-setup) section illustrates the setup common to both, as well as deployment. Finally, there is a section on how to [rotate keys](#rotating-secrets), which is considered a good security practice.
 
