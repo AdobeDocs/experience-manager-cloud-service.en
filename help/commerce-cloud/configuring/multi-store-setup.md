@@ -10,6 +10,7 @@ feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
+role: Admin
 ---
 # Commerce Multi-Store Setup {#multi-store}
 

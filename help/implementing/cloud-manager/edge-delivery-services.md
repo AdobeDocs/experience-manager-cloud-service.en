@@ -1,8 +1,10 @@
 ---
 title: Edge Delivery Services Support in Cloud Manager
 description: Learn how to deliver your Cloud Manager projects using Edge Delivery Services.
+exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
-
 # Edge Delivery Services Support in Cloud Manager {#edge-delivery-services}
 
 Learn how to deliver your Cloud Manager projects using Edge Delivery Services.
@@ -15,10 +17,10 @@ Learn how to deliver your Cloud Manager projects using Edge Delivery Services.
 
 Edge Delivery Services is a composable set of services that allows for a high degree of flexibility in how you author content on your website. This allows you to:
 
-* Create fast sites with a perfect Lighthouse Score and continuously monitor performance through real user monitoring (RUM).
+* Create fast sites with a perfect Lighthouse Score and continuously monitor performance through real use monitoring (RUM).
 * Increase authoring efficiency by decoupling content sources.
 
-You can use both AEM content management and AEM-based authoring using the Universal Editor as well as document-based authoring.
+You can use both AEM content management and WYSIWYG authoring using the Universal Editor as well as document-based authoring.
 
 Cloud Manager in AEM as a Cloud Service allows you to enable Edge Delivery Service for your project.
 

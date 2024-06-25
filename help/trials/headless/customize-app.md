@@ -4,7 +4,7 @@ description: Use a sample React app to learn how to customize content using the 
 hidefromtoc: yes
 index: no
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-feature: Onboarding
+feature: Headless
 role: Admin, User, Developer
 ---
 

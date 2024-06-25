@@ -3,6 +3,7 @@ title: AEM Version Updates
 description: Learn how Adobe Experience Manager (AEM) as a Cloud Service uses continuous integration and delivery (CI/CD) to keep your projects on the latest version. 
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
+role: Admin
 ---
 
 # AEM Version Updates {#aem-version-updates}

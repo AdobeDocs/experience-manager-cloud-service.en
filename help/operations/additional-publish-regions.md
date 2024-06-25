@@ -2,6 +2,8 @@
 title: Additional Publish Regions
 description: Learn how AEM as a Cloud Service supports additional publish regions for increased availability and reduced latency.
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
+feature: Operations
+role: Admin
 ---
 # Additional Publish Regions {#additional-publish-regions}
 
