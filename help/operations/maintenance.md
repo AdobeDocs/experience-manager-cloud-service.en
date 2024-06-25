@@ -188,22 +188,24 @@ Code sample 3 (monthly)
 
 ## Version Purge and Audit Log Purge Maintenance Tasks {#purge-tasks}
 
-Purging versions and the audit log reduces the size of the repository and in some scenarios can improve performance.
+Purging versions and the audit log reduces the size of the repository, and in some scenarios, can improve performance.
+
+[!NOTE] AEM Guides customers should not configure Version Purge.
 
 ### Defaults {#defaults}
 
-Currently, purging is not enabled by default, but this will change in the future. Environments that were created before the default purging is enabled will have a more conservative threshold, so that purging does not occur unexpectedly. See the Version Purge and Audit Log Purge sections below for more details about the default purging policy.
+Currently, purging is not enabled by default, but this will change in the future. Environments that were created before the default purging is enabled will have a more conservative threshold so that purging does not occur unexpectedly. See the Version Purge and Audit Log Purge sections below for more details about the default purging policy.
 <!-- Version purging and audit log purging are on by default, with different default values for environments with ids higher than **TBD** versus those with ids lower than that value. -->
 
 <!-- ### Overriding the default values with a new configuration {#override} -->
 
-The default purge values can be overridden by declaring a configuration file and deploying it, as described below.
+The default purge values can be overridden by declaring a configuration file and deploying it as described below.
 
 <!-- The reason for this behavior is to clarify the ambiguity over whether the default purge values would take effect once you remove the declaration. -->
 
 ### Applying a configuration {#configure-purge}
 
-Declare a configuration file and deploy it, as described in the following steps. When declaring a configuration file, both version purge and audit log purge rules must be declared.
+Declare a configuration file and deploy it as described in the following steps.
 
 >[!NOTE]
 > Once you deploy the version purge node in the configuration file, you must keep it declared and not remove it. The configuration pipeline will fail if you attempt to do so. 
@@ -219,7 +221,7 @@ config/
 
 ```
 
-**2** - Declare properties in the configiuration file, which include:
+**2** - Declare properties in the configuration file, which include:
 
 * a "kind" property with the value "MaintenanceTasks".
 * a "version" property (currently we are at version 1).
@@ -228,7 +230,7 @@ config/
 
 See the definitions and syntax of the `versionPurge` and `auditLogPurge` objects below.
 
-You should structure the configuration similarly to the following example:
+You should structure the configuration similar to the following example:
 
 ```
 
@@ -273,11 +275,13 @@ See [configuring production pipelines](/help/implementing/cloud-manager/configur
 
 ### Version Purge {#version-purge}
 
+[!NOTE] AEM Guides customers should not configure Version Purge.
+
 #### Version Purge Defaults {#version-purge-defaults}
 
 <!-- For version purging, environments with an id higher than **TBD** have the following default values: -->
 
-Currently, purging is not enabled by default, but this will change in the future. Environments that were created before the default purging is enabled will have the following defaults: 
+Currently, purging is not enabled by default, but this will change in the future.
 
 Environments that were created after the default purging is enabled will have the following default values: 
 
@@ -287,7 +291,7 @@ Environments that were created after the default purging is enabled will have th
 
 <!-- Environments with an id equal or lower than **TBD** will have the following default values: -->
 
-Environments that were created before the default purging is enabled will have the default values listed below, however it is recommended to change those values in order to optimize performance.
+Environments that were created before the default purging is enabled will have the default values listed below, however it is recommended to lower those values in order to optimize performance.
 
 * Versions older than 7 years are removed.
 * All versions in the last 7 years are kept.
@@ -295,16 +299,22 @@ Environments that were created before the default purging is enabled will have t
 
 #### Version Purge Properties {#version-purge-properties}
 
-| Properties | default for envs>xyz  | default for envs<=xyz  | required   | type    | Values   |
+The allowed properties are listed below. 
+
+The columns indicating *default* indicate the default values in the future, when defaults are applied; *TBD* reflects an environment id that is still not determined.
+
+| Properties | future default for envs>TBD  | future default for envs<=TBD  | required   | type    | Values   |
 |-----------|--------------------------|-------------|-----------|---------------------|-------------|
 | paths | ["/content"] | ["/content"] | Yes | array of strings | Specifies under which paths to purge versions when new versions are created.  Customers must declare this property, but the only allowable value is "/content". |
 | maximumAgeDays | 30 | 2557 (7 years + 2 leap days) | Yes | Integer | Any version older than the configured value is removed. If the value is less than 1, purging is not performed based on the age of the version. |
 | maximumVersions | 5 | 0 (no limit) | Yes | Integer | Any version older than the n-th newest version is removed. If the value is 0, purging is not performed based on the number of versions.|
 | minimumVersions | 1 | 1 | Yes | Integer | The minimum number of versions that are kept regardless of the age. If the value is set to a value less than 1, no minimum number of versions is retained. |
+| retainLabelledVersioned | false | false | Yes | boolean | Determines whether explicitly labelled versions will be excluded from the purge. For better repository optimization, it is recommended to set this value to false. |
+
 
 **Property interactions**
 
-The following examples illustrate how properties interact once configured.
+The following examples illustrate how properties interact when combined.
 
 Example:
 
@@ -326,11 +336,13 @@ Example:
 
 maximumAgeDays = 30
 maximumVersions = 0
-minimumVersions = 0 (or any other positive integer)
+minimumVersions = 0
 
 ```
 
 No versions newer than 30 days will be purged since the `maximumVersions` property is set to 0.
+
+All versions older than 30 days will be purged since `minimumVersions` is  zero.
 
 ### Audit Log Purge {#audit-purge}
 
@@ -338,7 +350,7 @@ No versions newer than 30 days will be purged since the `maximumVersions` proper
 
 <!-- For audit log purging, environments with an id higher than **TBD** have the following default values: -->
 
-Currently, purging is not enabled by default, but this will change in the future. Environments that were created before the default purging is enabled will have the following defaults: 
+Currently, purging is not enabled by default, but this will change in the future.
 
 Environments that were created after the default purging is enabled will have the following default values: 
 
@@ -347,18 +359,23 @@ Environments that were created after the default purging is enabled will have th
 
 <!-- Environments with an id equal or lower than **TBD** will have the following default values: -->
 
-Environments that were created before the default purging is enabled will have the default values listed below, however it is recommended to change those values in order to optimize performance.
+Environments that were created before the default purging is enabled will have the default values listed below, however it is recommended to lower those values in order to optimize performance.
 
 * Replication, DAM, and page audit logs older than 7 years are removed.
 * All possible events are logged.
 
 >[!NOTE]
->It is recommended that customers who have regulatory requirements to produce uneditable audit logs, integrate with specialized, external services.
+>It is recommended that customers, who have regulatory requirements to produce uneditable audit logs, integrate with specialized, external services.
 
 #### Audit Log Purge Properties {#audit-purge-properties}
 
-| Properties | default for envs>xyz  | default for envs<=xyz  | required   | type    | Values   |
+The allowed properties are listed below. 
+
+The columns indicating *default* indicate the default values in the future, when defaults are applied; *TBD* reflects an environment id that is still not determined.
+
+
+| Properties | future default for envs>TBD  | future default for envs<=TBD  | required   | type    | Values   |
 |-----------|--------------------------|-------------|-----------|---------------------|-------------|
 | rules | - | - | Yes | Object | One or more of the following nodes: replication, pages, dam. Each of these nodes defines rules, with the properties below. All properties must be declared.|
 | maximumAgeDays | 7 days| for all, 2557 (7 years + 2 leap days) | Yes | integer | For either replication, pages, or dam: the number of days the audit logs are kept. Audit logs older than the configured value are purged. |
-| types | all values | all values | Yes | Array of enumeration | For **replication**, the enumerated values are: Activate, Deactivate, Delete, Test, Reverse, Internal Poll. For **pages**, the enumerated values are: PageCreated, PageModified, PageMoved, PageDeleted, VersionCreated, Page Restored, PageValid, PageInvalid. For **dam**, the enumerated values are: ASSET_EXPIRING, METADATA_UPDATED, ASSET_EXPIRED, ASSET_REMOVED, RESTORED, ASSET_MOVED, ASSET_VIEWED, PROJECT_VIEWED, PUBLISHED_EXTERNAL, COLLECTION_VIEWED, VERSIONED, ADDED_COMMENT, "RENDITION_UPDATED", ACCEPTED, DOWNLOADED, SUBASSET_UPDATED, SUBASSET_REMOVED, ASSET_CREATED, ASSET_SHARED, RENDITION_REMOVED, ASSET_PUBLISHED, ORIGINAL_UPDATED, RENDITION_DOWNLOADED, REJECTED. |
+| types | all values | all values | Yes | Array of enumeration | For **replication**, the enumerated values are: Activate, Deactivate, Delete, Test, Reverse, Internal Poll. For **pages**, the enumerated values are: PageCreated, PageModified, PageMoved, PageDeleted, VersionCreated, Page Restored, PageValid, PageInvalid. For **dam**, the enumerated values are: ASSET_EXPIRING, METADATA_UPDATED, ASSET_EXPIRED, ASSET_REMOVED, RESTORED, ASSET_MOVED, ASSET_VIEWED, PROJECT_VIEWED, PUBLISHED_EXTERNAL, COLLECTION_VIEWED, VERSIONED, ADDED_COMMENT, RENDITION_UPDATED, ACCEPTED, DOWNLOADED, SUBASSET_UPDATED, SUBASSET_REMOVED, ASSET_CREATED, ASSET_SHARED, RENDITION_REMOVED, ASSET_PUBLISHED, ORIGINAL_UPDATED, RENDITION_DOWNLOADED, REJECTED. |
