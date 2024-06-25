@@ -6,19 +6,21 @@ role: Admin
 
 # Deploy Content Hub {#deploy-content-hub}
 
+![Deploy Content Hub](assets/deploy-content-hub.png)
+
 Content Hub is available as part of Experience Manager Assets as a Cloud Service for democratizing access to on-brand content for organizations and their business partners.
 
 The assets that are marked Approved on Experience Manager Assets as a Cloud Service are available for asset distribution on Content Hub.
 
-This article provides end-to-end workflow to provide Content Hub access to users including the variations of privileges based on their needs.
+This article provides an end-to-end workflow to provide Content Hub access to users including the variations of privileges based on their needs.
 
 The variations of privileges on Content Hub include:
 
-* [Asset consumers](#onboard-content-hub-consumer-users): Access brand approved assets on Content Hub portal.
+* [Asset consumers](#onboard-content-hub-consumer-users): Access brand approved assets on the Content Hub portal.
 
 * [Administrators](#onboard-content-hub-administrator): Access to the [Configuration User Interface](/help/assets/configure-content-hub-ui-options.md) on Content Hub in addition to Asset consumer with submission rights.
 
-* [Asset consumers with submission rights](#onboard-content-hub-consumer-users-submission-rights): Ability to [upload assets to Content Hub](/help/assets/upload-brand-approved-assets.md) and [Adobe Express Integration](/help/assets/edit-images-content-hub.md) in addition to accessing brand approved assets on Content Hub portal.
+* [Asset consumers with submission rights](#onboard-content-hub-consumer-users-submission-rights): Ability to [upload assets to Content Hub](/help/assets/upload-brand-approved-assets.md) and [Adobe Express Integration](/help/assets/edit-images-content-hub.md) in addition to accessing brand approved assets on the Content Hub portal.
 
 * [Asset distributors](#content-hub-asset-distributors): Ability to approve assets on Experience Manager Assets as a Cloud Service to make those assets available on Content Hub.
 
@@ -28,7 +30,7 @@ To access the Content Hub portal, administrators first need to enable Content Hu
 
 1. Log on to Cloud Manager. Ensure that you select the right organization while logging in. The Cloud Manager lists all your programs.
 
-1. Navigate to Experience Manager Assets as a Cloud Service program, click More options icon (...) and select **[!UICONTROL Edit Program]**.
+1. Navigate to Experience Manager Assets as a Cloud Service program, click the More options icon (...) and select **[!UICONTROL Edit Program]**.
 
    ![Edit program in Cloud Manager](assets/edit-program-cloud-manager.png)
 
@@ -59,9 +61,9 @@ Click the instance name to view the Content Hub product profile.
 
 Content Hub administrators can add assets to Content Hub and can also set the [Configuration options](/help/assets/configure-content-hub-ui-options.md) for other users within your organization. 
 
-To onboard Content Hub administrator:
+To onboard the Content Hub administrator:
 
-1. [Access and click the Content Hub user product profile](#content-hub-instance-product-profile) .
+1. [Access and click the Content Hub user product profile](#content-hub-instance-product-profile).
 
 1. Click **[!UICONTROL Add users]** to add users or user groups to the product profile.
 
@@ -84,13 +86,13 @@ Content Hub consumer users can access assets available on the portal but cannot 
 
 To onboard consumer users to Content Hub:
 
-1. [Access and click the Content Hub user product profile](#content-hub-instance-product-profile) .
+1. [Access and click the Content Hub user product profile](#content-hub-instance-product-profile).
 
 1. Click **[!UICONTROL Add users]** to add users or user groups to the product profile.
 
 1. Click **[!UICONTROL Save]** to save the changes.
 
-These users can now access the assets available on Content Hub portal.
+These users can now access the assets available on the Content Hub portal.
 
 >[!NOTE]
 >
@@ -102,7 +104,7 @@ After adding the appropriate users using Admin Console, the users can access Con
 
 ### Disable email notifications to users {#disable-email-notifications}
 
-If administrators need to disable email notifications sent to users when they are added to Content Hub product profile:
+If administrators need to disable email notifications sent to users when they are added to the Content Hub product profile:
 
 Click the search icon adjacent to the product profile name and disable the **[!UICONTROL Notify users by email]** toggle.
 
@@ -134,7 +136,7 @@ To onboard Content Hub consumer user with submission rights:
 
 Asset distributors can approve assets on AEM as a Cloud Service so that they are available on Content Hub.
 
-To configure asset distributor role:
+To configure the asset distributor role:
 
 1. Access Experience Manager Assets product profiles by clicking the AEM as a Cloud Service product name in the list of products on Admin Console.
 
