@@ -6,7 +6,7 @@ description: Edit images in Content Hub using Adobe Express
 
 ![Edit images in Content Hub using Adobe Express](assets/edit-images-content-hub.png)
 
-Content Hub allows you to integrate with Adobe Express and modify assets of image format type to enable various options and techniques aimed at enhancing the visual appeal, correcting flaws, or creating artistic compositions. You can use pre-defined elements to make your asset look stunning or perform quick actions to edit your image with just a few clicks.
+Content Hub allows you to integrate with Adobe Express and modify assets of image format type to enable various options and techniques aimed at enhancing the visual appeal, correct flaws, or create artistic compositions. You can use pre-defined elements to make your asset look stunning or perform quick actions to edit your image with just a few clicks.
 
 ## Prerequisites {#prereqs-edit-image-content-hub}
 
