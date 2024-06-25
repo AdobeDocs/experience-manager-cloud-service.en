@@ -4,7 +4,6 @@ description: Learn how to save core component based Adaptive Form as a draft and
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 ---
-<span class="preview"> This article contains content for the pre-release feature. The pre-release feature are accessible only through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). 
 
 # Save Core Component based Adaptive Form as a draft {#save-af-form}
 
