@@ -8,8 +8,6 @@ feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 ---
 
-<span class="preview"> This article contains `Override form submission success and error handlers` as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).
-
 # Custom functions in Adaptive Forms (Core Components)
 
 | Version | Article link |
