@@ -72,11 +72,11 @@ To onboard the Content Hub administrator:
 1. After adding the user to the Content Hub product profile, access Experience Manager Assets product profiles by clicking the AEM as a Cloud Service product name in the list of products on Admin Console.
 
 1. Click the production author instance for AEM as a Cloud Service:
-   ![Product profiles for AEM as a Cloud Service](assets/aem-cloud-service-instances.png).
+   ![Product profiles for AEM as a Cloud Service](assets/aem-cloud-service-instances.png)
 
    Admin Console displays two product profiles for AEM as a Cloud Service: Administrators and Users.
 1. Click the Administrators product profile and click **[!UICONTROL Add users]** to add the user to the product profile.
-   ![Administrator product profile](assets/aem-cs-admin-product-profile.png).
+   ![Administrator product profile](assets/aem-cs-admin-product-profile.png)
 
 1. Click **[!UICONTROL Save]** to save the changes.
 
@@ -108,7 +108,7 @@ If administrators need to disable email notifications sent to users when they ar
 
 Click the search icon adjacent to the product profile name and disable the **[!UICONTROL Notify users by email]** toggle.
 
-![Disable email notifications](assets/disable-email-notifications.png).
+![Disable email notifications](assets/disable-email-notifications.png)
 
 
 ## Step 4: Onboard Content Hub asset consumer users with submission permissions (Optional) {#onboard-content-hub-consumer-users-submission-rights}
@@ -124,11 +124,11 @@ To onboard Content Hub consumer user with submission rights:
 1. [After adding the user to the Content Hub product profile](#onboard-content-hub-consumer-users), access Experience Manager Assets product profiles by clicking the AEM as a Cloud Service product name in the list of products on Admin Console.
 
 1. Click the production author instance for AEM as a Cloud Service:
-   ![Product profiles for AEM as a Cloud Service](assets/aem-cloud-service-instances.png).
+   ![Product profiles for AEM as a Cloud Service](assets/aem-cloud-service-instances.png)
 
    Admin Console displays two product profiles for AEM as a Cloud Service: Administrators and Users.
 1. Click the Users product profile and click **[!UICONTROL Add users]** to add the user to the product profile.
-   ![User product profile](assets/aem-cs-user-product-profile.png).
+   ![User product profile](assets/aem-cs-user-product-profile.png)
 
 1. Click **[!UICONTROL Save]** to save the changes.
 
@@ -141,11 +141,11 @@ To configure the asset distributor role:
 1. Access Experience Manager Assets product profiles by clicking the AEM as a Cloud Service product name in the list of products on Admin Console.
 
 1. Click the production author instance for AEM as a Cloud Service:
-   ![Product profiles for AEM as a Cloud Service](assets/aem-cloud-service-instances.png).
+   ![Product profiles for AEM as a Cloud Service](assets/aem-cloud-service-instances.png)
 
    Admin Console displays two product profiles for AEM as a Cloud Service: Administrators and Users.
 1. Click the Users product profile and click **[!UICONTROL Add users]** to add the user to the product profile.
-   ![User product profile](assets/aem-cs-user-product-profile.png).
+   ![User product profile](assets/aem-cs-user-product-profile.png)
 
 1. Click **[!UICONTROL Save]** to save the changes.
 
