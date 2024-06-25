@@ -33,27 +33,41 @@ Greg to share this on how to mention Assets CS June release here
 
 ## How to access Content Hub? {#access-content-hub}
 
+After adding a user to the [Content Hub product profile](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), Content Hub can be accessed using the following ways:
+
+* Access Content Hub using the following link:
+
+   `https://experience.adobe.com/#/assets/contenthub`
+
+* Log on to experience.adobe com and click **[!UICONTROL Experience Manager Assets Content Hub]** available in the **[!UICONTROL Quick access]** section:
+   ![Content Hub Access](assets/access-content-hub.png)
+
+* Log on to experience.adobe com and click **[!UICONTROL Experience Manager Assets Content Hub]** available in the product switcher:
+   ![Content Hub Access method 3](assets/access-content-hub-alternate.png)
+
 
 
 ## Provide Content Hub feedback {#provide-content-hub-feedback}
 
-**Overview Graphic**
+To recommend any product-related improvements, click **[!UICONTROL Feedback]** next to your Organization name at the top of the Content Hub user interface.
+
+Specify a subject, a description of the recommendation, and attach files, if required. Click **[!UICONTROL Submit]** to submit the feedback to Adobe.
 
 
 ## Learn more on key capabilities {#key-capabilities-content-module}
 
 <table>
 <td>
-   <a href="/help/upload-brand-approved-assets.md">
-   <img alt="Upload brand approved assets to Content Hub" src="./assets/upload-brand-approved-assets.png" />
+   <a href="/help/deploy-content-hub.md">
+   <img alt="Deploy Content Hub" src="./assets/deploy-content-hub.png" />
    </a>
    <div>
-      <a href="/help/upload-brand-approved-assets.md">
-      <strong>Upload brand approved assets to Content Hub</strong>
+      <a href="/help/assets/deploy-content-hub.md">
+      <strong>Deploy Content Hub</strong>
       </a>
    </div>
    <p>
-      <em>Learn the basics of adding brand approved assets to Content Hub.</em>
+      <em>Provide Content Hub access to users including the privilege variations </em>
    </p>
 </td>
 <td>
