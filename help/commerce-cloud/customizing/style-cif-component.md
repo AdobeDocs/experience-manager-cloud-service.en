@@ -11,6 +11,7 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
+role: Admin
 ---
 # Style AEM CIF Core Components {#style-aem-cif-core-components}
 

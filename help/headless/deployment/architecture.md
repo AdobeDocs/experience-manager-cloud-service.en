@@ -1,8 +1,9 @@
 ---
 title: Architecture of AEM Headless
 description: Learn about the high level architecture for Adobe Experience Manager as it relates to a headless deployment. Understand the role of AEM Author, Preview, and Publish services and the recommended deployment pattern for headless applications.
-feature: Content Fragments,GraphQL API
+feature: Headless, Content Fragments,GraphQL API
 exl-id: 5ba6921f-b06e-463d-b956-d1fb434090c9
+role: Admin, Developer
 ---
 # Architecture of AEM Headless
 
