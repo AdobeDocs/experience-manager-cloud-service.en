@@ -55,7 +55,30 @@ Click the instance name to view the Content Hub product profile.
 
 ![Content Hub product profile](assets/content-hub-product-profile.png)
 
-## Step 2: Onboard Content Hub asset consumer users {#onboard-content-hub-consumer-users}
+## Step 2: Onboard Content Hub administrator {#onboard-content-hub-administrator}
+
+Content Hub administrators can add assets to Content Hub and can also set the [Configuration options](/help/assets/configure-content-hub-ui-options.md) for other users within your organization. 
+
+To onboard Content Hub administrator:
+
+1. [Access and click the Content Hub user product profile](#content-hub-instance-product-profile) .
+
+1. Click **[!UICONTROL Add users]** to add users or user groups to the product profile.
+
+1. Click **[!UICONTROL Save]** to save the changes.
+
+1. After adding the user to the Content Hub product profile, access Experience Manager Assets product profiles by clicking the AEM as a Cloud Service product name in the list of products on Admin Console.
+
+1. Click the production author instance for AEM as a Cloud Service:
+   ![Product profiles for AEM as a Cloud Service](assets/aem-cloud-service-instances.png).
+
+   Admin Console displays two product profiles for AEM as a Cloud Service: Administrators and Users.
+1. Click the Administrators product profile and click **[!UICONTROL Add users]** to add the user to the product profile.
+   ![Administrator product profile](assets/aem-cs-admin-product-profile.png).
+
+1. Click **[!UICONTROL Save]** to save the changes.
+
+## Step 3: Onboard Content Hub asset consumer users {#onboard-content-hub-consumer-users}
 
 Content Hub consumer users can access assets available on the portal but cannot add any new assets or modify existing assets.
 
@@ -73,22 +96,18 @@ These users can now access the assets available on Content Hub portal.
 >
 >You can use all the advanced enterprise features like synchronization with external Identity Providers.
 
-## Step 3: Onboard Content Hub administrator {#onboard-content-hub-administrator}
+After adding the appropriate users using Admin Console, the users can access Content Hub using the following link:
 
-Content Hub administrators can add assets to Content Hub and can also set the [Configuration options](/help/assets/configure-content-hub-ui-options.md) for other users within your organization. 
+`https://experience.adobe.com/#/assets/contenthub`
 
-To onboard Content Hub administrator:
+### Disable email notifications to users {#disable-email-notifications}
 
-1. [After adding the user to the Content Hub product profile](#onboard-content-hub-consumer-users), access Experience Manager Assets product profiles by clicking the AEM as a Cloud Service product name in the list of products on Admin Console.
+If administrators need to disable email notifications sent to users when they are added to Content Hub product profile:
 
-1. Click the production author instance for AEM as a Cloud Service:
-   ![Product profiles for AEM as a Cloud Service](assets/aem-cloud-service-instances.png).
+Click the search icon adjacent to the product profile name and disable the **[!UICONTROL Notify users by email]** toggle.
 
-   Admin Console displays two product profiles for AEM as a Cloud Service: Administrators and Users.
-1. Click the Administrators product profile and click **[!UICONTROL Add users]** to add the user to the product profile.
-   ![Administrator product profile](assets/aem-cs-admin-product-profile.png).
+![Disable email notifications](assets/disable-email-notifications.png).
 
-1. Click **[!UICONTROL Save]** to save the changes.
 
 ## Step 4: Onboard Content Hub asset consumer users with submission permissions (Optional) {#onboard-content-hub-consumer-users-submission-rights}
 
