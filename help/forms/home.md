@@ -3,7 +3,7 @@ title: Introduction to [!DNL AEM Forms] as a Cloud Service
 description: Discover AEM Forms to produce business-ready forms, create business process workflows, and use document services to produce and protect documents.
 landing-page-description: Understand how to use forms in AEM as a Cloud Service.
 role: Admin, Developer, User
-feature: Adaptive Forms
+feature: "Adaptive Forms, Release Information"
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 ---
 

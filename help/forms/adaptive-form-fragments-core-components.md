@@ -5,6 +5,7 @@ topic-tags: author
 keywords: Add Adaptive Form fragments, Adaptive Form fragments, Create a form fragment, Add a fragment to an Adaptive Form, Manage fragments
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
+role: "User, Developer"
 ---
 # Create and use Adaptive Forms Fragments in an Adaptive Form based on Core Components {#adaptive-form-fragments}
 

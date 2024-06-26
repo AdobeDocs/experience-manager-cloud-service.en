@@ -3,6 +3,7 @@ title: How to generate document of record for Adaptive Forms?
 description: Learn to generate a template for a Document of Record (DoR) for Adaptive Forms Core Components.
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
+role: "User, Developer"
 ---
 # Generate Document of Record for Adaptive Forms (Core Components)
 

@@ -4,6 +4,7 @@ description: Use the review mechanism to add reviewers and allow reviewers to co
 topic-tags: forms-manager
 feature: Adaptive Forms, Foundation Components
 exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
+role: "User, Developer"
 ---
 # Creating and managing reviews to forms{#creating-and-managing-reviews-to-forms}
 
