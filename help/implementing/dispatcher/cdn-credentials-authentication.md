@@ -55,8 +55,8 @@ The syntax for the `X-AEM-Edge-Key` value includes:
 * Under `experimental_authentication`, one `authenticators` node and one `rules` node, both of which are arrays.
 * Authenticators: Lets you declare a type of token or credential, which in this case is an edge key. It includes the following properties:
    * name - a descriptive string.
-   * type - must be edge.
-   * edgeKey1 - the value of the X-AEM-Edge-Key, which must reference a secret token, which should not be stored in git, but rather declared as a [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md) of type secret. For the Service Applied field, select All. It is recommended that the value (for example,`${{CDN_EDGEKEY_052824}}`) reflects the day it was added.
+   * type - must be `edge`.
+   * edgeKey1 - the value of the *X-AEM-Edge-Key*, which must reference a secret token, which should not be stored in git, but rather declared as a [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md) of type secret. For the Service Applied field, select All. It is recommended that the value (for example,`${{CDN_EDGEKEY_052824}}`) reflects the day it was added.
    * edgeKey2 - used for the rotation of secrets, which is described in the [rotating secrets section](#rotating-secrets) below. Define it similarly to edgeKey1. At least one of `edgeKey1` and `edgeKey2` must be declared.
 <!--   * OnFailure - defines the action, either `log` or `block`, when a request doesn't match either `edgeKey1` or `edgeKey2`. For `log`, request processing will continue, while `block` will serve a 403 error. The `log` value is useful when testing a new token on a live site since you can first confirm that the CDN is correctly accepting the new token before changing to `block` mode; it also reduces the chance of lost connectivity between the customer CDN and the Adobe CDN, as a result of an incorrect configuration. -->
 * Rules: Lets you declare which of the authenticators should be used, and whether it's for the publish and/or preview tier.  It includes:
