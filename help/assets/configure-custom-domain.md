@@ -7,7 +7,6 @@ role:
 # Configure custom domain for publish tier{#configure-custom-domain}
 
 In Adobe Cloud Manager, you can make your website stand out by adding a custom domain. While AEM as a Cloud Service comes with a default domain, you can customize it as per your needs.
-<!-- For example, AEM sites can use `sites.custom_domain.com`, and the AEM publish domain can be accessed via `assets.custom_domain.com`. Additionally, getting an SSL certificate for assets.pmi.com with a SAN entry for `delivery.custom_domain.com` improves security and trustworthiness. -->
 
 ## Before you begin
 
@@ -22,13 +21,13 @@ To configure a custom domain for the publish tier, follow these steps:
 
 1. Go to **[!UICONTROL Adobe Cloud Manager]** > **[!UICONTROL Program Overview]** > **[!UICONTROL SSL Certificates]**, and add your SSL certificate. 
  ![image](/help/assets/assets/ssl-certificate.png)
-Learn how to add [SSL certificate](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html?lang=en) in Adobe Cloud Manager.
+Learn how to add [SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) in Adobe Cloud Manager.
 
 1. After adding the SSL certificate, add a custom domain. Click **[!UICONTROL Domain Settings]** and specify the custom domain against the **[!UICONTROL Publish service]** option.
-<br> Learn more about [custom domain](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html?lang=en).
+Learn more about [custom domain](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
-1. Add 2 CNAME records in your DNS record corresponding to publish domains. 
-<br> DNS verification can take a few hours to process because of DNS propagation delays.
+1. Add 2 [CNAME records](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) in your DNS record corresponding to publish domains. 
+DNS verification can take a few hours to process because of DNS propagation delays.
 
 1. Log a support case to facilitate the configuration of the custom domain, ensuring it directs to the delivery tier.
 
