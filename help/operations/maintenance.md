@@ -249,12 +249,15 @@ data:
     rules:
       - replication:
           maximumAgeDays: 15
+          contentPath: "/content"
           types: ["Activate", "Deactivate", "Delete", "Test", "Reverse", "Internal Poll"]
       - pages:
           maximumAgeDays: 15
+          contentPath: "/content"
           types: ["PageCreated", "PageModified", "PageMoved", "PageDeleted", "VersionCreated", "PageRestored", "PageValid", "PageInvalid"]
       - dam:
           maximumAgeDays: 15
+          contentPath: "/content"
           types: ["ASSET_EXPIRING", "METADATA_UPDATED", "ASSET_EXPIRED", "ASSET_REMOVED", "RESTORED", "ASSET_MOVED", "ASSET_VIEWED", "PROJECT_VIEWED", "PUBLISHED_EXTERNAL", "COLLECTION_VIEWED", "VERSIONED", "ADDED_COMMENT", "RENDITION_UPDATED", "ACCEPTED", "DOWNLOADED", "SUBASSET_UPDATED", "SUBASSET_REMOVED", "ASSET_CREATED", "ASSET_SHARED", "RENDITION_REMOVED", "ASSET_PUBLISHED", "ORIGINAL_UPDATED", "RENDITION_DOWNLOADED", "REJECTED"]
 
 ```
@@ -265,7 +268,7 @@ Keep in mind that in order for the configuration to be valid:
 * the types (integers, strings, booleans, etc) in the property tables below must be respected.
 
 >[!NOTE]
->You can use `yq` to locally validate the YAML formatting of your configuration file (for example, `yq cdn.yaml`).
+>You can use `yq` to locally validate the YAML formatting of your configuration file (for example, `yq mt.yaml`).
 
 **3** - Configure the non-production and production configuration pipelines.
 
@@ -306,7 +309,7 @@ The columns indicating *default* indicate the default values in the future, when
 | Properties | future default for envs>TBD  | future default for envs<=TBD  | required   | type    | Values   |
 |-----------|--------------------------|-------------|-----------|---------------------|-------------|
 | paths | ["/content"] | ["/content"] | Yes | array of strings | Specifies under which paths to purge versions when new versions are created.  Customers must declare this property, but the only allowable value is "/content". |
-| maximumAgeDays | 30 | 2557 (7 years + 2 leap days) | Yes | Integer | Any version older than the configured value is removed. If the value is less than 1, purging is not performed based on the age of the version. |
+| maximumAgeDays | 30 | 2557 (7 years + 2 leap days) | Yes | Integer | Any version older than the configured value is removed. If the value is 0, purging is not performed based on the age of the version. |
 | maximumVersions | 5 | 0 (no limit) | Yes | Integer | Any version older than the n-th newest version is removed. If the value is 0, purging is not performed based on the number of versions.|
 | minimumVersions | 1 | 1 | Yes | Integer | The minimum number of versions that are kept regardless of the age. If the value is set to a value less than 1, no minimum number of versions is retained. |
 | retainLabelledVersioned | false | false | Yes | boolean | Determines whether explicitly labelled versions will be excluded from the purge. For better repository optimization, it is recommended to set this value to false. |
@@ -378,4 +381,5 @@ The columns indicating *default* indicate the default values in the future, when
 |-----------|--------------------------|-------------|-----------|---------------------|-------------|
 | rules | - | - | Yes | Object | One or more of the following nodes: replication, pages, dam. Each of these nodes defines rules, with the properties below. All properties must be declared.|
 | maximumAgeDays | 7 days| for all, 2557 (7 years + 2 leap days) | Yes | integer | For either replication, pages, or dam: the number of days the audit logs are kept. Audit logs older than the configured value are purged. |
-| types | all values | all values | Yes | Array of enumeration | For **replication**, the enumerated values are: Activate, Deactivate, Delete, Test, Reverse, Internal Poll. For **pages**, the enumerated values are: PageCreated, PageModified, PageMoved, PageDeleted, VersionCreated, Page Restored, PageValid, PageInvalid. For **dam**, the enumerated values are: ASSET_EXPIRING, METADATA_UPDATED, ASSET_EXPIRED, ASSET_REMOVED, RESTORED, ASSET_MOVED, ASSET_VIEWED, PROJECT_VIEWED, PUBLISHED_EXTERNAL, COLLECTION_VIEWED, VERSIONED, ADDED_COMMENT, RENDITION_UPDATED, ACCEPTED, DOWNLOADED, SUBASSET_UPDATED, SUBASSET_REMOVED, ASSET_CREATED, ASSET_SHARED, RENDITION_REMOVED, ASSET_PUBLISHED, ORIGINAL_UPDATED, RENDITION_DOWNLOADED, REJECTED. |
+| contentPath | "/content" | "/content" | Yes | String | The path under which the audit logs will be purged, for the related type. Must be set to "/content". |
+| types | all values | all values | Yes | Array of enumeration | For **replication**, the enumerated values are: Activate, Deactivate, Delete, Test, Reverse, Internal Poll. For **pages**, the enumerated values are: PageCreated, PageModified, PageMoved, PageDeleted, VersionCreated, PageRestored, PageRolled Out, PageValid, PageInvalid. For **dam**, the enumerated values are: ASSET_EXPIRING, METADATA_UPDATED, ASSET_EXPIRED, ASSET_REMOVED, RESTORED, ASSET_MOVED, ASSET_VIEWED, PROJECT_VIEWED, PUBLISHED_EXTERNAL, COLLECTION_VIEWED, VERSIONED, ADDED_COMMENT, RENDITION_UPDATED, ACCEPTED, DOWNLOADED, SUBASSET_UPDATED, SUBASSET_REMOVED, ASSET_CREATED, ASSET_SHARED, RENDITION_REMOVED, ASSET_PUBLISHED, ORIGINAL_UPDATED, RENDITION_DOWNLOADED, REJECTED. |
