@@ -8,7 +8,7 @@ role: User
 
 ![Metadata banner image](assets/metadata-banner-image.png)
 
-[!DNL The Content Hub] allows you to view information about the asset which is critical for efficient asset management. It is the collection of all the data available for an asset.
+[!DNL The Content Hub] allows you to view information about the asset which is critical for efficient asset distribution. It is the collection of all the data available for an asset.
 
 Viewing asset properties help you further categorize assets and is helpful as the amount of digital information grows. It is possible to manage a few hundred files based on just the filenames, thumbnails, and memory. However, this approach is not scalable when the number of people involved, and the number of managed assets increase. In addition, the value of a digital asset grows, as the asset becomes:
 
@@ -18,7 +18,7 @@ Viewing asset properties help you further categorize assets and is helpful as th
 
 ## View properties of an asset {#properties-ui}
 
-Before you use, share, or download an asset, you can view it more closely. The preview feature lets you view not just the images but a few other supported asset types as well. You can not only view the asset but also view its detailed information and take other actions. To view information of an asset, navigate to the asset or [search](search-assets.md) the asset and then click the asset to open its properties. The following figure demonstrates the fields available on an asset preview screen: 
+Before you use, share, or download an asset, you can view it more closely. The preview feature lets you view not just the images but a few other supported asset types as well. You can not only view the asset but also view its detailed information and take other actions. To view information of an asset, navigate to the asset or [search](search-assets.md) the asset and then click the asset to open its properties. The following figure demonstrates the fields available on an asset properties page: 
 
 ![Properties of an asset UI](assets/properties-ui.png)
 

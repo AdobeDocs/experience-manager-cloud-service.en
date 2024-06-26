@@ -8,7 +8,7 @@ role: User
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Download assets](assets/download-asset-genstudio.jpeg)
 
-The Content Hub lets you download and share your assets. These assets may include images, videos, or any other digital content. The Content Hub enhances accessibility and adaptability for effective asset management and distribution.  
+The Content Hub lets you download and share your assets. These assets may include images, videos, or any other digital content. The Content Hub enhances accessibility and adaptability for effective asset distribution.  
 
 You can download single asset or multiple assets using the Content Hub. The original versions of the asset are downloaded.
 
