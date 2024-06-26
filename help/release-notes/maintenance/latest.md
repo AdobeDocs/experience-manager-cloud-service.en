@@ -29,12 +29,6 @@ None.
 
 ### Change Notice {#change-notice-X}
 
-* This release contains the following new product index versions:
-  * **damAssetLucene-11**
-  * **fragments-11**
-
-  Custom versions of the previous index versions will be automatically merged with the new product index version. Please apply further custom updates to the merged version.
-
 * Starting in September 2024, AEM as a Cloud Service will disable the serialization of Resource Resolvers via the Sling Model Exporter framework. See [the documentation](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) for more details.
 
 ### Deprecated Features and APIs {#deprecated-X}
