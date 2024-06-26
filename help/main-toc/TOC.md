@@ -594,7 +594,7 @@ user-guide-title: AEM as a Cloud Service
   + Overview {#forms-overview}
     + [Introduction](/help/forms/home.md)
     + [Top Adobe Experience Manager Forms innovations](/help/forms/latest-innovations.md)
-    + [Early Adopter (EA) capabilities](/help/forms/early-adopter-ea-features.md)
+    + [Early Access (EA) capabilities](/help/forms/early-access-ea-features.md)
     + [Notable changes](/help/forms/notable-changes.md)
     + [Architecture](/help/forms/aem-forms-cloud-service-architecture.md)
     + [Frequently asked questions](/help/forms/faq.md)
