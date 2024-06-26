@@ -5,6 +5,8 @@ description: Learn more about Content Hub, its key benefits, how to access it, a
 
 # Content Hub Overview {#overview-content-hub}
 
+![Content Hub overview](assets/content-hub-overview.png)
+
 Content Hub is available as part of Experience Manager Assets as a Cloud Service for democratizing access to on-brand content for organizations and their business partners. It focuses on distributing assets for activation at scale and creation of on-brand content variants for improved marketing agility.
 
 ## Why Content Hub?
@@ -53,23 +55,45 @@ To recommend any product-related improvements, click **[!UICONTROL Feedback]** n
 
 Specify a subject, a description of the recommendation, and attach files, if required. Click **[!UICONTROL Submit]** to submit the feedback to Adobe.
 
+## Setup Content Hub for your team {#setup-content-hub}
+
+Follow these steps to setup Content Hub for your team:
+
+1. [Enable Content Hub for Experience Manager Assets using Cloud Manager](deploy-content-hub.md#enable-content-hub).
+
+1. [Onboard Content Hub administrator](deploy-content-hub.md#onboard-content-hub-administrator).
+
+1. [Add key Content Hub users](deploy-content-hub.md##onboard-content-hub-consumer-users).
+
+1. DAM authors or administrators to approve assets using Experience Manager assets (Link TBD). 
+
+1. [Administrators can configure the Content Hub user interface for other users](configure-content-hub-ui-options.md).
+
+1. [Grant Content Hub access to more users from the team ](deploy-content-hub.md##onboard-content-hub-consumer-users).
+
+1. [Access Content Hub portal](#access-content-hub).
+
+1. [Provide Content Hub feedback](#provide-content-hub-feedback).
+
 
 ## Learn more on key capabilities {#key-capabilities-content-module}
 
 <table>
 <td>
-   <a href="/help/deploy-content-hub.md">
-   <img alt="Deploy Content Hub" src="./assets/deploy-content-hub.png" />
+   <a href="/help/assets/configure-content-hub-ui-options.md">
+   <img alt="Deploy Content Hub" src="./assets/configure-assets.png" />
    </a>
    <div>
-      <a href="/help/assets/deploy-content-hub.md">
-      <strong>Deploy Content Hub</strong>
+      <a href="/help/assets/configure-content-hub-ui-options.md">
+      <strong>Configure Content Hub user interface</strong>
       </a>
    </div>
    <p>
-      <em>Provide Content Hub access to users including the privilege variations </em>
+      <em>Learn how administrators can configure the Content Hub user interface. </em>
    </p>
 </td>
+
+
 <td>
    <a href="/help/assets-search.md">
    <img alt="Search assets available in Content Hub" src="./assets/search.png" />
@@ -84,6 +108,21 @@ Specify a subject, a description of the recommendation, and attach files, if req
    </p>
 </td>
 <td>
+   <a href="/help/assets/edit-images-content-hub.md">
+   <img alt="Edit images using Adobe Express" src="./assets/edit-images-content-hub.png" />
+   </a>
+   <div>
+      <a href="/help/assets-search.md">
+      <strong>Edit images using Adobe Express</strong>
+      </a>
+   </div>
+   <p>
+      <em>Learn how to create variants of images in Content Hub using Adobe Express</em>
+   </p>
+</td>
+</table>
+<table>
+<td>
    <a href="/help/share-assets-as-a-link.md">
    <img alt="Share assets available in Content Hub" src="./assets/share-assets-banner.png" />
    </a>
@@ -94,21 +133,6 @@ Specify a subject, a description of the recommendation, and attach files, if req
    </div>
    <p>
       <em>Learn how to share one or multiple assets as a link and then access them.</em>
-   </p>
-</td>
-</table>
-<table>
-<td>
-   <a href="/help/assets-download.md">
-   <img alt="Download assets available in Content Hub" src="./assets/download-asset-genstudio.jpeg" />
-   </a>
-   <div>
-      <a href="/help/assets-download.md">
-      <strong>Download assets available in Content Hub</strong>
-      </a>
-   </div>
-   <p>
-      <em>Learn the basics of downloading brand-approved assets and their renditions from Content Hub.</em>
    </p>
 </td>
 <td>
