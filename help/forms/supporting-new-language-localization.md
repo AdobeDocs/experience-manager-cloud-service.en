@@ -3,7 +3,7 @@ title: How do I add support for new locales to an Adaptive Form based on Foundat
 description: For Adaptive Forms, you can add locales for more languages apart from the one provided out of the box.
 feature: Adaptive Forms, Foundation Components
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-role: "User, Developer"
+role: User, Developer
 ---
 # Supporting new locales for Adaptive Forms localization {#supporting-new-locales-for-adaptive-forms-localization}
 

@@ -4,7 +4,7 @@ description: Create Adaptive Form templates based on core component to define th
 feature: Adaptive Forms, Core Components
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-role: "User, Developer"
+role: User, Developer
 ---
 # Create an Adaptive Form template based on Core Components {#adaptive-form-templates}
 

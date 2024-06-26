@@ -5,7 +5,7 @@ keywords: Azure Blob Storage integration with AEM Forms, Submitting data to Azur
 feature: Adaptive Forms, Core Components
 exl-id: 0c9f8f85-c4e9-4c79-bd0b-abdcac99a2d4
 title: "How to configure a Submit Action for an Adaptive Form?"
-role: "User, Developer"
+role: User, Developer
 ---
 # Submit an Adaptive Form to Azure Blob Storage 
 

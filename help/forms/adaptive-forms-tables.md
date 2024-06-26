@@ -4,7 +4,7 @@ description: Use the table component to add tables to an Adaptive Form. Along wi
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Foundation Components
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-role: "User, Developer"
+role: User, Developer
 ---
 # Tables in Adaptive Form {#tables-in-adaptive-forms}
 

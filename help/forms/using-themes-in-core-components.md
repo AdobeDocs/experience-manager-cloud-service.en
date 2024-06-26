@@ -4,7 +4,7 @@ description: You can use themes to style and provide a visual identity to an Ada
 keywords: adaptive forms styling Core Components. using theme in Core Components, styling adaptive form, customizing themes
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-role: "User, Developer"
+role: User, Developer
 ---
 
 # Use themes to style Core Components based Adaptive Forms{#themes-for-af-using-core-components}

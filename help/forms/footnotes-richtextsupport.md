@@ -3,7 +3,7 @@ title: How to add Footnote to an adaptive form?
 description: Use Rich Text editor (RTE) for footnotes in an Adaptive Form.
 feature: Adaptive Forms, Foundation Components
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-role: "User, Developer"
+role: User, Developer
 ---
 # Footnote Component {#footnotecomponent}
 

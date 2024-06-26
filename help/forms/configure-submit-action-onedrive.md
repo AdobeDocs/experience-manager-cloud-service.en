@@ -5,7 +5,7 @@ keywords: AEM Forms OneDrive Integration, Connect to Microsoft OneDrive, OneDriv
 feature: Adaptive Forms, Core Components
 exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
 title: "How to configure a Submit Action for an Adaptive Form?"
-role: "User, Developer"
+role: User, Developer
 ---
 # Submit an Adaptive Form to Microsoft® OneDrive 
 

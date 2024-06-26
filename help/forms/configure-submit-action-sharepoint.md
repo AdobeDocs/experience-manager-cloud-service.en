@@ -5,7 +5,7 @@ keywords: How to connect SharePoint list for an adpative form?, How to connnect 
 feature: Adaptive Forms, Core Components
 exl-id: e925a750-5fb5-4950-afd3-78551eec985d
 title: "How to configure a Submit Action for an Adaptive Form?"
-role: "User, Developer"
+role: User, Developer
 ---
 # Connect an Adaptive Form to Microsoft® SharePoint
 
