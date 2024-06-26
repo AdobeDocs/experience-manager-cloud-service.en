@@ -1,5 +1,5 @@
 ---
-title: Best practices in Dynamic Media
+title: Dynamic Media best practices
 description: Learn about best practices in Dynamic Media when it comes to working with images and video.
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
@@ -8,11 +8,9 @@ content-type: reference
 feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rulesets, Viewers, Smart Crop, SEO Optimization, Publishing, Video, Renditions, Asset Management
 role: User, Admin
 mini-toc-levels: 4
-hide: no
-hidefromtoc: no
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
 ---
-# About best practices in Dynamic Media{#about-dm-best-practices}
+# Dynamic Media best practices{#about-dm-best-practices}
 
 <!--**Organizations today must connect with their customers through an ever-growing array of channels and devices.** The customer experience spans physical stores, websites, mobile apps, social media, email, and e-commerce platforms. This diversity requires organizations to create many more versions of each piece of content. Personalization adds complexity by increasing the number of variations needed for each item. Despite budget constraints for content creation, there's still a need to produce more campaigns in the same timeframe, on a global scale. AEM Dynamic Media offers a comprehensive set of tools to meet these challenges, providing consistent, personalized, high-performance, and optimized brand experiences across all channels and devices. 
 

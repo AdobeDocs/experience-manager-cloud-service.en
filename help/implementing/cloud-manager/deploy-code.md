@@ -84,7 +84,7 @@ The **Stage testing** phase involves these steps.
 
 ![Stage Testing](assets/stage-testing.png)
 
-## Production Deployment Phase {#deployment-production}
+## Production Deployment Phase {#production-deployment}
 
 The process for deploying to production topologies differs slightly to minimize impact visitors to an AEM site.
 
