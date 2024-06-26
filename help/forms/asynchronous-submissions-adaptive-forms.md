@@ -2,7 +2,7 @@
 title: How to configure Asynchronous Submission for AEM Adaptive Forms?
 description: Learn how to configure the asynchronous submission for Adaptive Forms. Dig deeper on how asynchronous submission works for Adaptive Forms.
 feature: Adaptive Forms, Foundation Components
-role: "User, Developer"
+role: User, Developer
 level: Intermediate
 exl-id: 026f4920-f8f9-4b08-b1b0-af50229633d7
 ---

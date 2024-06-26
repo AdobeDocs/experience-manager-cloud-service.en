@@ -3,7 +3,7 @@ title: How can we manage metadata for AEM Forms?
 description: Metadata allows for easier categorization and organization of assets and helps users who are looking for a specific asset.
 feature: Adaptive Forms, Foundation Components
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-role: "User, Developer"
+role: User, Developer
 ---
 # Add, remove, or edit metadata of an Adaptive Form {#manage-form-metadata}
 

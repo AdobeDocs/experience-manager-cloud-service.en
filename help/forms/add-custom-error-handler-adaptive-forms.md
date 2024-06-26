@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
-role: "User, Developer"
+role: User, Developer
 ---
 # Add Custom Error Handlers in AEM Adaptive Forms {#error-handlers-in-adaptive-form}
 

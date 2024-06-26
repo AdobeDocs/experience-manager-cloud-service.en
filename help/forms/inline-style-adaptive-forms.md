@@ -2,7 +2,7 @@
 title: How to Apply Inline Styles to Adaptive Form Components?
 description: Learn to apply custom styles on an Adaptive Form, you can also apply inline CSS properties on individual components of an Adaptive Form.
 feature: Adaptive Forms, Foundation Components
-role: "User, Developer"
+role: User, Developer
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
 ---

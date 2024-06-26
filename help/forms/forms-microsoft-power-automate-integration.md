@@ -4,7 +4,7 @@ description: Integrate an Adaptive Form with Microsoft® Power Automate.
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: connect AEM formns to power automate, Power automate automation AEM Forms, Integrate power automate to Adaptive Forms, send data from Adaptive Forms to Power Automate
 feature: Adaptive Forms
-role: "Admin, User, Developer"
+role: Admin, User, Developer
 ---
 
 # Connect an Adaptive Form with Microsoft&reg; Power Automate {#connect-adaptive-form-with-power-automate}

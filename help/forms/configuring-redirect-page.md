@@ -2,7 +2,7 @@
 title: How to Configure a Redirect Page?
 description: Learn how users can be redirected to a webpage that form authors can configure while creating the form.
 feature: Adaptive Forms, Foundation Components
-role: "User, Developer"
+role: User, Developer
 level: Intermediate
 exl-id: e4dc01d2-7c89-4bd8-af0a-1d2df4676a9a
 ---

@@ -7,7 +7,7 @@ feature: Adaptive Forms, Foundation Components
 hide: yes
 hidefromtoc: yes
 exl-id: dc7ca723-1008-472a-b6eb-8e9ed6332a16
-role: "User, Developer"
+role: User, Developer
 ---
 # Connect your AEM Forms environment with hCaptcha&reg; {#connect-your-forms-environment-with-hcaptcha-service}
 
