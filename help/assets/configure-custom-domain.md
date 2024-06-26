@@ -1,7 +1,6 @@
 ---
 title: Configure custom domain for publish tier
 description: Learn how to configure custom domain for publish tier in Adobe Cloud Manager. 
-role:
 ---
 
 # Configure custom domain for publish tier{#configure-custom-domain}
