@@ -4,6 +4,8 @@ Description: Explore the process of automated workflow initiation with AEM Forms
 keywords: AEM Workflow, Integrate Adaptive Form with AEM workflow, Invoke AEM workflow Submit Action
 feature: Adaptive Forms, Core Components
 exl-id: b7788e3d-acd8-4867-b232-f9767cf6b2f5
+title: "How to configure a Submit Action for an Adaptive Form?"
+role: "User, Developer"
 ---
 # Integrate AEM Adaptive Form with AEM Workflow: Streamlining Business Processes
 

@@ -3,6 +3,8 @@ title: How to integrate AEM Forms with Adobe Analytics?
 seo-title: Learn how to integrate AEM Forms with Adobe Analytics.
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
 hidefromtoc: yes
+feature: "Adaptive Forms, Acrobat Sign"
+role: "User, Developer"
 ---
 # Integrate AEM Forms with [!DNL Adobe Analytics] {#integrate-aem-forms-with-adobe-analytics}
 

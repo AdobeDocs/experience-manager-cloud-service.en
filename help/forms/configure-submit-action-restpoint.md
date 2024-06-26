@@ -4,6 +4,8 @@ Description: Discover the steps to set up Rest Endpoint when submitting an Adapt
 keywords: AEM Forms REST Endpoint, Submit to REST Endpoint, Post Data to REST URL, Configure REST Endpoint Action
 feature: Adaptive Forms, Core Components
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
+title: "How to configure a Submit Action for an Adaptive Form?"
+role: "User, Developer"
 ---
 # Configure an Adaptive Form for REST Endpoint submit action
 

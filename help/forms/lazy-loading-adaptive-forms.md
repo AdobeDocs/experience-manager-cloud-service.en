@@ -2,7 +2,7 @@
 title: How can we improve the performance of large forms with lazy loading?
 description: Learn about how to improve performance of large forms with lazy loading. Lazy loading significantly improves the performance of large and complex Adaptive Forms by deferring initialization and loading of form fragments until they are visible.
 feature: Adaptive Forms, Foundation Components
-role: User
+role: "User, Developer"
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
 ---

@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/FORMS
 topic-tags: author
 feature: Adaptive Forms, Foundation Components
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
+role: "User, Developer"
 ---
 # E-sign a form using scribble signatures{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 

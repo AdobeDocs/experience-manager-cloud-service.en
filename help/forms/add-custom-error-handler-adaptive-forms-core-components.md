@@ -6,6 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
+role: "User, Developer"
 ---
 # Error Handlers for Adaptive Form based on Core Components {#error-handlers-in-adaptive-form}
 

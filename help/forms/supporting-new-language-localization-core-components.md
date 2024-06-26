@@ -4,6 +4,7 @@ description: Learn to add new locales for an Adaptive Form.
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
+role: "User, Developer"
 ---
 # Add a locale for Adaptive Forms based on Core Components {#supporting-new-locales-for-adaptive-forms-localization}
 

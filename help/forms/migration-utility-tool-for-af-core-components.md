@@ -7,6 +7,7 @@ features: core components
 hide: yes
 hidefromtoc: yes
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
+feature: "Adaptive Forms, Core Components"
 ---
 # Introduction 
 
