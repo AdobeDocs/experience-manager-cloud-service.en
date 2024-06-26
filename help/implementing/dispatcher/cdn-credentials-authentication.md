@@ -25,7 +25,7 @@ As described in the [CDN in AEM as a Cloud Service](/help/implementing/dispatche
 
 As part of the setup, the Adobe CDN and the Customer CDN must agree on a value of the `X-AEM-Edge-Key` HTTP Header. This value is set on each request, at the Customer CDN, before it is routed to the Adobe CDN, which then validates that the value is as expected, so it can trust other HTTP headers, including those that help route the request to the appropriate AEM origin.  
 
-The `X-AEM-Edge-Key` value is declared with the syntax below. See the [Common Setup](#common-setup) section to learn how to deploy it.
+The `X-AEM-Edge-Key` value is declared with the syntax below, with the actual value(s) referenced by the edgeKey1 and edgeKey2 properties. See the [Common Setup](#common-setup) section to learn how to deploy the configuration.
 
 ```
 kind: "CDN"
@@ -56,8 +56,8 @@ The syntax for the `X-AEM-Edge-Key` value includes:
 * Authenticators: Lets you declare a type of token or credential, which in this case is an edge key. It includes the following properties:
    * name - a descriptive string.
    * type - must be edge.
-   * edgeKey1 - its value must reference a secret token, which should not be stored in git, but rather declared as a [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md) of type secret. For the Service Applied field, select All. It is recommended that the value (for example,`${{CDN_EDGEKEY_052824}}`) reflects the day it was added.
-   * edgeKey2 - used for the rotation of secrets, which is described in the [rotating secrets section](#rotating-secrets) below. At least one of `edgeKey1` and `edgeKey2` must be declared.
+   * edgeKey1 - the value of the X-AEM-Edge-Key, which must reference a secret token, which should not be stored in git, but rather declared as a [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md) of type secret. For the Service Applied field, select All. It is recommended that the value (for example,`${{CDN_EDGEKEY_052824}}`) reflects the day it was added.
+   * edgeKey2 - used for the rotation of secrets, which is described in the [rotating secrets section](#rotating-secrets) below. Define it similarly to edgeKey1. At least one of `edgeKey1` and `edgeKey2` must be declared.
 <!--   * OnFailure - defines the action, either `log` or `block`, when a request doesn't match either `edgeKey1` or `edgeKey2`. For `log`, request processing will continue, while `block` will serve a 403 error. The `log` value is useful when testing a new token on a live site since you can first confirm that the CDN is correctly accepting the new token before changing to `block` mode; it also reduces the chance of lost connectivity between the customer CDN and the Adobe CDN, as a result of an incorrect configuration. -->
 * Rules: Lets you declare which of the authenticators should be used, and whether it's for the publish and/or preview tier.  It includes:
    * name - a descriptive string.
@@ -65,7 +65,7 @@ The syntax for the `X-AEM-Edge-Key` value includes:
    * action - must specify "authenticate", with the intended authenticator referenced.
 
 >[!NOTE]
->The Edge Key must be configured as a [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md) variable of type `secret`, before the configuration referencing it is deployed.
+>The Edge Key must be configured as a [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md) variable of type `secret` (with *All* selected for Service Applied), before the configuration referencing it is deployed.
 
 ## Purge API Token {#purge-API-token}
 
@@ -134,11 +134,11 @@ data:
     authenticators:
        - name: my-basic-authenticator
          type: basic
-         credentials
+         credentials:
            - user: johndoe
-             password: ${{JOHNDOE_PASSWORD}}
+             password: ${{JOHN_DOE_PASSWORD}}
            - user: janedoe
-             password: ${{JANEDOE_PASSWORD}}
+             password: ${{JANE_DOE_PASSWORD}}
     rules:
        - name: basic-auth-rule
          when: { reqProperty: path, like: "/summercampaign" }
