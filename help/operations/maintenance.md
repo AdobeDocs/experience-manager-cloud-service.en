@@ -311,7 +311,7 @@ The columns indicating *default* indicate the default values in the future, when
 | paths | ["/content"] | ["/content"] | Yes | array of strings | Specifies under which paths to purge versions when new versions are created.  Customers must declare this property, but the only allowable value is "/content". |
 | maximumAgeDays | 30 | 2557 (7 years + 2 leap days) | Yes | Integer | Any version older than the configured value is removed. If the value is 0, purging is not performed based on the age of the version. |
 | maximumVersions | 5 | 0 (no limit) | Yes | Integer | Any version older than the n-th newest version is removed. If the value is 0, purging is not performed based on the number of versions.|
-| minimumVersions | 1 | 1 | Yes | Integer | The minimum number of versions that are kept regardless of the age. If the value is set to a value less than 1, no minimum number of versions is retained. |
+| minimumVersions | 1 | 1 | Yes | Integer | The minimum number of versions that are kept regardless of the age. Note that at least 1 version is always kept, even if the value is set to 0.|
 | retainLabelledVersioned | false | false | Yes | boolean | Determines whether explicitly labelled versions will be excluded from the purge. For better repository optimization, it is recommended to set this value to false. |
 
 
@@ -345,7 +345,7 @@ minimumVersions = 0
 
 No versions newer than 30 days will be purged since the `maximumVersions` property is set to 0.
 
-All versions older than 30 days will be purged since `minimumVersions` is  zero.
+One version older than 30 days will be kept, even though `minimumVersions` is set to zero.
 
 ### Audit Log Purge {#audit-purge}
 
