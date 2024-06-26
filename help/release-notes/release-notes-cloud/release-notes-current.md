@@ -161,7 +161,7 @@ Email **<aemcs-cdn-config-adopter@adobe.com>**, indicating which of the early ad
 
 #### Basic authentication at the CDN (Early Adopter Program) {#basicauth-cdn}
 
-Protect certain content resources by popping up a basic auth dialog requiring a username and password. This feature is primarily intended for light authentication use cases such as business stakeholder review of content, rather than as a full-fledged solution for end-user access rights. The list of username and passwords in managed through a configuration file in git that is deployed via Configuration Pipeline, with a reference to secret-type Cloud Manager environment variables.
+Protect certain content resources by popping up a basic auth dialog requiring a username and password. This feature is primarily intended for light authentication use cases such as business stakeholder review of content, rather than as a full-fledged solution for end-user access rights. The list of username and passwords in managed through a configuration file in git that is deployed via Configuration Pipeline, with a reference to secret-type Cloud Manager environment variables. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
 
 #### Purge content at the CDN with a self-serve API key (Early Adopter Program) {#purge-cdn}
 
