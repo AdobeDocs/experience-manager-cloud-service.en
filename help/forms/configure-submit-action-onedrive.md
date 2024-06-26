@@ -4,6 +4,8 @@ Description: Explore the streamlined process of connecting AEM Forms with Micros
 keywords: AEM Forms OneDrive Integration, Connect to Microsoft OneDrive, OneDrive Configuration Setup with AEM forms
 feature: Adaptive Forms, Core Components
 exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
+title: "How to configure a Submit Action for an Adaptive Form?"
+role: User, Developer
 ---
 # Submit an Adaptive Form to Microsoft® OneDrive 
 
