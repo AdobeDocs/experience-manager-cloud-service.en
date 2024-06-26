@@ -1,7 +1,6 @@
 ---
 title: Integrate remote AEM Assets with AEM Sites
 description: Learn how to configure and connect AEM sites  with Approved AEM Assets in Creative Cloud. 
-role:
 ---
 
 # Integrate remote AEM Assets with AEM Sites  {#integrate-approved-assets}
