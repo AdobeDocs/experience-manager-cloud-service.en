@@ -6,7 +6,7 @@ description: Edit images in Content Hub using Adobe Express
 
 ![Edit images in Content Hub using Adobe Express](assets/edit-images-content-hub.png)
 
-Content Hub allows you to integrate with Adobe Express and modify assets of image format type to enable various options and techniques aimed at enhancing the visual appeal, correct flaws, or create artistic compositions. You can use pre-defined elements to make your asset look stunning or perform quick actions to edit your image with just a few clicks.
+Content Hub allows you to create new content with Adobe Express. You can edit existing content with easy to use tools, produce on-brand variations with templates and brand elements, and create new content with the latest GenAI capabilities from Adobe Firefly.
 
 ## Prerequisites {#prereqs-edit-image-content-hub}
 
@@ -20,7 +20,7 @@ Entitlements to access Adobe Express and [Content Hub asset consumer users with 
 
 To edit images using Content Hub:
 
-1. Click **[!DNL Open in Adobe Express]** available on the asset card of the image that you need to edit. Alternatively, click the image to open its details and then click the [!DNL Adobe Express] logo. The embedded editor for Adobe Express displays.
+1. Click **[!DNL Open in Adobe Express]** available on the asset card of the image that you need to edit. Alternatively, click the image to open its details and then click the [!DNL Adobe Express] logo. The embedded editor for Adobe Express then loads without ever leaving Content Hub.
 
    You can leverage the [!DNL Adobe Express] functionality to perform all image-editing related actions, such as [resize image](https://helpx.adobe.com/express/using/resize-image.html), [remove or change background color](https://helpx.adobe.com/express/using/remove-background.html), [crop image](https://helpx.adobe.com/express/using/crop-image.html), combine the image with AI generated image or text, and much more.
 
