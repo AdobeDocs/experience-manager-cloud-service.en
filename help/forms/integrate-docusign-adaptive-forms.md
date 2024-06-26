@@ -2,6 +2,8 @@
 title: How to integrate DocuSign with an Adaptive Form?
 description: Learn how to use DocuSign with an adaptive form to collect e-signatures.
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
+feature: Adaptive Forms, Acrobat Sign
+role: User, Developer
 ---
 # Using DocuSign with an adaptive form {#integrate-aem-forms-with-DocuSign}
 
