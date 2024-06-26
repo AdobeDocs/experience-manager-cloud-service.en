@@ -3,9 +3,9 @@ title: Integrate AEM Assets with downstream applications
 description: Integrate AEM Assets with downstream applications
 role: User
 ---
-# Integrate AEM Assets with downstream applications {#integrate-new-dynamic-media-apis}
+# Integrate AEM Assets with downstream applications {#integrate-dynamic-media-open-apis}
 
-All [approved assets](approved-assets.md) available in Experience Manager assets repository are available for delivery to downstream applications.
+All [approved assets](approve-assets.md) available in Experience Manager assets repository are available for delivery to downstream applications.
 
 You can either integrate your own custom user interface with the Experience Manager Assets repository using the Search and Delivery APIs or use Adobe's Micro-Frontend Asset Selector.
 
