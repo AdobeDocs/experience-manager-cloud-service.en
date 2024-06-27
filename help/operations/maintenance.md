@@ -190,7 +190,7 @@ Code sample 3 (monthly)
 
 Purging versions and the audit log reduces the size of the repository, and in some scenarios, can improve performance.
 
-[!NOTE] AEM Guides customers should not configure Version Purge.
+<!-- [!NOTE] AEM Guides customers should not configure Version Purge. --> Alexandru: drafting for now.
 
 ### Defaults {#defaults}
 
@@ -208,7 +208,7 @@ The default purge values can be overridden by declaring a configuration file and
 Declare a configuration file and deploy it as described in the following steps.
 
 >[!NOTE]
-> Once you deploy the version purge node in the configuration file, you must keep it declared and not remove it. The configuration pipeline will fail if you attempt to do so. 
+>Once you deploy the version purge node in the configuration file, you must keep it declared and not remove it. The configuration pipeline will fail if you attempt to do so. 
 > 
 >Similarly, once you deploy the audit log purge node in the configuration file, you must keep it declared and not remove it.
 
