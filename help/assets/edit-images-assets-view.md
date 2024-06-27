@@ -87,7 +87,7 @@ To edit images using [!DNL Adobe Express] embedded editor, follow the steps belo
 1. Click **Open in Adobe Express**. The image opens on an express canvas.
 1. Make the required edits to the image. 
 1. If your project requires you to add more pages, click **Add**, select Assets, enter a folder, select an image to bring onto the canvas page, and then perform the required edits to the image. 
-1. To save the image(s), click **Save**. The save dialogue box displays. 
+1. To save the image(s), click **Save**. The save dialog box displays. 
 
    >[!NOTE]
    >
@@ -99,9 +99,9 @@ To edit images using [!DNL Adobe Express] embedded editor, follow the steps belo
    > **2. For Multi Page**  
    >
    > **Save as Version:** This feature supports saving a single asset only. If you want to save a single page from multiple pages, select this option to save the asset in its original format and location.  
-   > **Save as New Asset:** With this option, you export either multiple assets or a single asset to any folder and save them as new asset(s) with their file format as original or different. 
+   > **Save as New Asset:** With this option, you export either multiple assets or a single asset to any folder and save them as new asset(s) with their file format as original or different.
 
-1. In the Save dialogue box:  
+1. In the Save dialog box:  
    1. Enter a name for the file in the **Save As** field. 
    1. Select a destination folder. 
    1. Optional: Provide details such as Project or Campaign name, Keywords, Channels, Time frame, and Region. 
@@ -112,7 +112,7 @@ To edit images using [!DNL Adobe Express] embedded editor, follow the steps belo
  * Supported file type: JPEG or PNG. 
  * Maximum file size supported: 40 MB. 
  * Supported width and height range: Between 50 to 8000 pixels.
- * Relode the page to see the latest saved new asset in the source folder.
+ * Reload the page to see the latest saved new asset in the source folder.
 
 ### Create new assets using Adobe Express {#create-new-embedded-editor}
 
@@ -189,7 +189,7 @@ TBD: Insert a video of the available social media options.
 
 ### Next Steps {#next-steps}
 
-* Provide product feedback using the [!UICONTROL Feedback] option available on the Assets view user interface
+* Provide product feedback using the [!UICONTROL Feedback] option available on the Assets view user interface.
 
 * Provide documentation feedback using [!UICONTROL Edit this page] ![edit the page](assets/do-not-localize/edit-page.png) or [!UICONTROL Log an issue] ![create a GitHub issue](assets/do-not-localize/github-issue.png) available on the right sidebar
 
