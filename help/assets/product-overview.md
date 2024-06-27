@@ -1,6 +1,6 @@
 ---
 title: Content Hub Overview
-description: Learn more about Content Hub, its key benefits, how to access it, and how to provide feedback around the optiona available in Content Hub. 
+description: Learn more about Content Hub, its key benefits, how to access it, and how to provide feedback around the options available in Content Hub. 
 ---
 
 # Content Hub Overview {#overview-content-hub}
