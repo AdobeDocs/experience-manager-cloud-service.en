@@ -57,19 +57,18 @@ Summarized below are the continuous improvements for maintenance release X, whic
 * SITES-22343: Semantic type "enumeration" is broken
 * SITES-22194: After setting the redirect, model.json doesn't work anymore
 * SITES-21953: [Open API] Etag gets changed based on ordering of the validationStatus
-* SITES-21949: Search APIs invalid cursor returns 500
 * SITES-21894: [Open API] Enhance parent path validation when creating CFs
 * SITES-21887: [Open API] Invalid ETag returned by POST variations endpoint
 * SITES-21657: [Open API] Improve validation on CF Search Path property
+* SITES-21949: Search APIs invalid cursor returns 500
 * SITES-20927: Search APIs return a 500 when the query is missing
 * SITES-20544: [Open API] Change the generation of publish package names in order to avoid oak conflicts
 * SITES-19710: CVE-2022-47937 - Remove all usages of org.apache.sling.commons.json from Page Editor
 * SITES-11992: [Accessibility] Annotation swatch selector button missing an accessible name
-* SITES-10979: Label is not persistent.
-* SITES-10962: Button: Button does not have a role.
-* SITES-10906: State of active component lacks 3 to 1 contrast ratio.
-* SITES-10905: State of active component lacks 3 to 1 contrast ratio.
-* SITES-2974: Accessibility - Horizontal scrolling at 320px width.
+* SITES-10979: [Accessibility] Label is not persistent.
+* SITES-10962: [Accessibility] Button: Button does not have a role.
+* SITES-10905: [Accessibility] State of active component lacks 3 to 1 contrast ratio.
+* SITES-2974:  [Accessibility] - Horizontal scrolling at 320px width.
 * SITES-22026: Unable to Move Experience Fragments Between Folders in AEM
 * SITES-22106: Language Switch Functionality Issue in New Content Fragment Editor
 * SITES-21980: Inconsistent handling for UUID-based reference types
