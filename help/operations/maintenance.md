@@ -40,14 +40,14 @@ The following table illustrates the maintenance tasks that are available.
   <tr>
     <td>Version Purge</td>
     <td>Customer</td>
-    <td>Version purge is currently disabled by default, but the policy can be configured, as described in the <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Version Purge and Audit Log Purge Maintenance Tasks</a> section.<br/><br/>Purging will soon be enabled by default, with those values overrideable.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+    <td>Version purge is currently disabled by default, but the policy can be configured, as described in the <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Version Purge and Audit Log Purge Maintenance Tasks</a> section.<br/><br/>Purging will soon be enabled by default, with those values overrideable.<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>Audit Log Purge</td>
     <td>Customer</td>
-    <td>Audit log purge is currently disabled by default, but the policy can be configured, as described in the <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Version Purge and Audit Log Purge Maintenance Tasks</a> section.<br/><br/>Purging will soon be enabled by default, with those values overrideable.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+    <td>Audit log purge is currently disabled by default, but the policy can be configured, as described in the <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Version Purge and Audit Log Purge Maintenance Tasks</a> section.<br/><br/>Purging will soon be enabled by default, with those values overrideable.<br>
    </td>
    </td>
   </tr>
@@ -194,7 +194,7 @@ Purging versions and the audit log reduces the size of the repository, and in so
 
 >[!NOTE] 
 >
->Adobe recommends customers should not configure Version Purge.
+>AEM Guides customers should not configure Version Purge.
 
 ### Defaults {#defaults}
 
@@ -284,7 +284,7 @@ See [configuring production pipelines](/help/implementing/cloud-manager/configur
 
 >[!NOTE]
 >
->Adobe recommends customers should not configure Version Purge.
+>AEM Guides customers should not configure Version Purge.
 
 #### Version Purge Defaults {#version-purge-defaults}
 
