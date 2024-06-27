@@ -36,12 +36,6 @@ Have a look at the June 2024 Release Overview video for a summary of the feature
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### New features in Sites {#sites-new-features}
-
-**AEM Authoring for Edge Delivery Services**
-
-Enhanced stability and various improvements for a better authoring experience.
-
 ### Early Adopter Program {#sites-early-adopter}
 
 **Generate Variations**
@@ -139,31 +133,31 @@ Forms service generates interactive PDF forms for data capture. It can also be u
      
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Content health-related Actions Center notifications Early Adopter Program {#actions-center-notifications}
+### Content Health-Related Actions Center Notifications Early Adopter Program {#actions-center-notifications}
 
 [Actions Center](/help/operations/actions-center.md) sends email notifications when important incidents happen, or if we notice something about your code or configuration where you should take proactive action. We have now introduced several new types of notifications associated with your content health. This is available through an early adopter program. To participate, please reach out to Adobe Customer Care.
 
-#### Pages contain a large number of nodes {#page-nodes}
+#### Pages Contain a Large Number of Nodes {#page-nodes}
 
 A large number of nodes can degrade rendering performance and reduce page load times. Receive a proactive notification through Actions Center when a large number of nodes is detected on a page, allowing you to take the necessary steps to reduce the total number of nodes withing a page.
 
-#### Large number of running workflow instances {#running-workflows}
+#### Large Number of Running Workflow Instances {#running-workflows}
 
 The worfklow engine performance is impacted when there is a large number of running workflows on the author environment. Receive a proactive notification through Actions Center when a large number of running workflow instances are detected, allowing you to configure a purge job to terminate running workflows that are not required. 
 
-#### Users added directly to custom groups {#users-customgroups}
+#### Users Added Directly to Custom Groups {#users-customgroups}
 
 Receive a proactive notification through Actions Center when users are added directly to custom groups, allowing you to follow IMS best practices to add users to relevant IMS Groups and then add the IMS groups as members of AEM groups.
 
-#### Missing JCR content {#jcr-content}
+#### Missing JCR Content {#jcr-content}
 
 Receive a proactive notification through Actions Center when missing JCR content is detected, allowing you to add the missing JCR content and avoid failure of certain AEM Assets features.
 
-#### Completed workflows not purged {#workflows}
+#### Completed Workflows Not Purged {#workflows}
 
 Receive a proactive notification through Actions Center when completed workflows over 90 days have not been purged, allowing you to improve the performance of your workflow engine by minimizing the number of workflows instances. 
 
-#### Missing Sling resource {#sling-resource}
+#### Missing Sling Resource {#sling-resource}
 
 Receive a proactive notification through Actions Center when a missing Sling resource is detected, allowing you to add the missing Sling resource and avoid failure of certain AEM Assets features.
 
@@ -171,23 +165,23 @@ Receive a proactive notification through Actions Center when a missing Sling res
 
 Email **<aemcs-cdn-config-adopter@adobe.com>**, indicating which of the early adopter programs below you are interested in.
 
-#### Basic authentication at the CDN (Early Adopter Program) {#basicauth-cdn}
+#### Basic Authentication at the CDN (Early Adopter Program) {#basicauth-cdn}
 
 Protect certain content resources by popping up a basic auth dialog requiring a username and password. This feature is primarily intended for light authentication use cases such as business stakeholder review of content, rather than as a full-fledged solution for end-user access rights. The list of username and passwords in managed through a configuration file in git that is deployed via Configuration Pipeline, with a reference to secret-type Cloud Manager environment variables. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
 
-#### Purge content at the CDN with a self-serve API key (Early Adopter Program) {#purge-cdn}
+#### Purge Content at the CDN With a Self-Serve API Key (Early Adopter Program) {#purge-cdn}
 
 Register a CDN purge API key in a self-service way, and use it to invalidate content at the CDN, either globally, or for one or more resources. [Learn more](/help/implementing/dispatcher/cdn-cache-purge.md).  
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
-#### Self-serve creation of X-AEM-Edge-Key for customer-managed CDN (BYOCDN) (Early Adopter Program) {#byocdn-keys}
+#### Self-Serve Creation of X-AEM-Edge-Key for Customer-Managed CDN (BYOCDN) (Early Adopter Program) {#byocdn-keys}
 
 Previously, a support ticket was needed to generate the X-AEM-Edge-Key required for configuration of a customer-managed CDN. This can now be accomplished in a self-serve way through a configuration file that is deployed using the Configuration Pipeline, removing any delay in onboarding a new environment. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
-#### Client-side redirects (Early Adopter Program) {#client-side-redirects-early-adopter}
+#### Client-Side Redirects (Early Adopter Program) {#client-side-redirects-early-adopter}
 
 Configure 301/302 client-side redirects in source control, and deploy to the CDN. [Learn more](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Note that there are several other features already available related to [CDN configuration](/help/implementing/dispatcher/cdn-configuring-traffic.md), including request and response transformations, and routing traffic to off-AEM sites.
 
@@ -197,7 +191,7 @@ The recently released [Traffic Filter Rules](/help/security/traffic-filter-rules
 
 Join the early adopter program so you can be alerted whenever your traffic filter rules are triggered. Actions Center email notifications will keep you informed when certain traffic conditions occur so you can take appropriate measures. 
 
-#### Business users can declare redirects outside of Git (Early Adopter Program) {#apache-rewritemaps-early-adopter}
+#### Business Users Can Declare Redirects Outside of Git (Early Adopter Program) {#apache-rewritemaps-early-adopter}
 
 Similar to AEM 6.5, Apache/dispatcher will ingest rewrite maps placed in a specific location in the publish repository, and load them, without requiring a web tier pipeline execution. This opens up opportunities for a business user to declare redirects using either a spreadsheet or a UI, such as that offered by ACS Commons Redirect Map Manager or created as part of a customer application. <!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
 
@@ -214,7 +208,7 @@ Real User Monitoring (RUM) Data Service offers a more precise reflection of user
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-You can find a complete list of new and enhanced features of the latest release of Adobe Experience Manager Guides [here](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0).
+You can find a complete list of new and enhanced features of the latest release of Adobe Experience Manager Guides [here](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0).
 
 ## Cloud Manager {#cloud-manager}
 
