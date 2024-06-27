@@ -56,7 +56,7 @@ Summarized below are the continuous improvements for maintenance release 16799, 
 
 #### Forms
 
-1.	If a user downloads the latest AEM Forms SDK (`AEM Forms add-on v2024.05.04.00-240400`), the batch file fails to start the Docker service. To resolve this issue:
+1.	If a user downloads the AEM Forms SDK version greater than `AEM Forms add-on v2024.05.04.00-240400`, the batch file fails to start the Docker service. To resolve this issue:
     1. Download the [folder](/help/forms/assets/sdk_hotfix.zip).
     1. Extract the contents from the downloaded folder and copy the `sdk.sh` and `sdk.bat` files.
     1.	Replace the existing `sdk.sh` and `sdk.bat` files in your AEM Forms SDK with the new files.
