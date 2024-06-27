@@ -60,9 +60,9 @@ Summarized below are the continuous improvements for maintenance release X, whic
 * SITES-15914: [Best Buy] Preview and compare version doesn't work after moving experience fragments
 * SITES-21617: [Xwalk] Make Page Properties/Metadata editable within UE
 * SITES-19614: [Xwalk] Spreadsheet editor pagination and infinite scroll
-* SITES-22163: [Xwalk] improved support for content served from publish tier for edge delivery sites
-* SITES-22109: [Xwalk] improved handling of richtext markup post processing
-* SITES-22035: [Xwalk] improved handling of MSM and Launches
+* SITES-22163: [Xwalk] Improved support for content served from publish tier for Edge Delivery Sites
+* SITES-22109: [Xwalk] Improved handling of richtext markup post processing
+* SITES-22035: [Xwalk] Improved handling of MSM and Launches
 * SITES-21839: [Xwalk] Improved path mapping and sanitisation for content not served by Edge Delivery
 
 ### Fixed Issues {#fixed-issues-X}
