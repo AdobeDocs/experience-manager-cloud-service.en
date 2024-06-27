@@ -30,7 +30,6 @@ Summarized below are the continuous improvements for maintenance release X, whic
 * SITES-21415: CF Editor - support UUID references
 * SITES-21326: [Open API] Provide information about presence of references for a Content Fragment
 * SITES-21310: [Open API] Add id of Content Fragment in translations API response
-* SITES-21040: [MSM][Async] Implement the code in WCM to use the newly refactored methods from granite async jobs
 * SITES-20859: CF Open API - Return references when retrieving a fragment by path
 * SITES-20687: [Open API] Endpoint for batch processing status retrieval
 * SITES-20657: [Open API] Provide option to match whole word when replacing a string using `FindAndReplace` endpoint
@@ -53,11 +52,10 @@ Summarized below are the continuous improvements for maintenance release X, whic
 ### Fixed Issues {#fixed-issues-X}
 
 * SITES-22457: Promoting a launch which is not deep is not updating source content.
-* SITES-22981: [Launch] Promoting a nested launch which is not deep is not publishing
 * SITES-22748: Enhance error handling for Content Fragment Update Job
 * SITES-22349: ContentType for empty multiline cf-elements cannot be changed
 * SITES-22343: Semantic type "enumeration" is broken
-* SITES-22194: [RELEASE BLOCKER] After setting the redirect, model.json doesn't work anymore
+* SITES-22194: After setting the redirect, model.json doesn't work anymore
 * SITES-21953: [Open API] Etag gets changed based on ordering of the validationStatus
 * SITES-21949: Search APIs invalid cursor returns 500
 * SITES-21894: [Open API] Enhance parent path validation when creating CFs
