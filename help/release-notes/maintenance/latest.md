@@ -37,7 +37,7 @@ Summarized below are the continuous improvements for maintenance release X, whic
 * SITES-20584: [Open API] Optimise reference retrieval
 * SITES-20308: [Open API] Enable batch processing on API
 * SITES-19976: [Open API] Generic UI schema for conditional fields
-* SITES-19556: Update uiSchema if exists when model is edited
+* SITES-19556: [Content Fragments] Update uiSchema if exists when model is edited
 * SITES-18056: [Open API] When publishing a content fragment to Preview, include references
 * SITES-16898: [Schema] OpenAPI endpoint to migrate content fragment(s) from one model to the other
 * SITES-16609: List Launches endpoint
