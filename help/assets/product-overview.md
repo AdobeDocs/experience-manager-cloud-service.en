@@ -35,7 +35,7 @@ Content Hub requires a production author environment of Experience Manager as a 
 
 ## How to access Content Hub? {#access-content-hub}
 
-After setting up Content Hub [#setup-content-hub] and adding a user to the [Content Hub product profile](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), Content Hub can be accessed using the following ways:
+[After setting up Content Hub](#deploy-content-hub) and adding a user to the [Content Hub product profile](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), Content Hub can be accessed using the following ways:
 
 * Access Content Hub using the following link:
 
