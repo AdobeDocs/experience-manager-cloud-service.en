@@ -31,7 +31,7 @@ Content Hub integrates with Adobe Express (if you have Adobe Express entitlement
 
 ## Prerequisites {#prerequisites-content-hub}
 
-Greg to share this on how to mention Assets CS June release here
+Experience Manager as a Cloud Service June release
 
 ## How to access Content Hub? {#access-content-hub}
 
@@ -65,7 +65,7 @@ Follow these steps to setup Content Hub for your team:
 
 1. [Add key Content Hub users](deploy-content-hub.md##onboard-content-hub-consumer-users).
 
-1. DAM authors or administrators to approve assets using Experience Manager assets (Link TBD). 
+1. [DAM authors or administrators to approve assets using Experience Manager assets](approve-assets.md). 
 
 1. [Administrators can configure the Content Hub user interface for other users](configure-content-hub-ui-options.md).
 

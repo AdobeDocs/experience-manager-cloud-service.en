@@ -43,7 +43,9 @@ Choose the collection where you need to add the asset. You can also search the e
 
 ## View collections{#view-collections}
 
-Navigate to the **[!UICONTROL Collections]** tab. To view the list of assets available in a collection, click the collection name. <br> Click the asset that you need to view within a collection. [!DNL Content Hub] displays the detailed view for the asset. [See asset details](asset-properties-content-hub.md).
+Navigate to the **[!UICONTROL Collections]** tab and search for the collection name. To view the list of assets available in a collection, click the collection name. You can also apply filters within a collection to narrow down the asset results.
+
+Click the asset that you need to view within a collection. [!DNL Content Hub] displays the detailed view for the asset. [See asset details](asset-properties-content-hub.md).
 
 <!--
 ![Asset details](assets/view-collection.jpg)
