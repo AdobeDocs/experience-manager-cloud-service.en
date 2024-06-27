@@ -3,6 +3,7 @@ title: How can we create an Adaptive Form template?
 description: Create Adaptive Form templates to define the basic structure and initial content using the Template Editor.
 feature: Adaptive Forms, Foundation Components
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
+role: User, Developer, Admin
 ---
 # Create an Adaptive Form template {#adaptive-form-templates}
 

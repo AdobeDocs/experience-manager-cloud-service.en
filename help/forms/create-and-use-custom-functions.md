@@ -6,6 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
+role: User, Developer
 ---
 
 # Custom functions in Adaptive Forms (Core Components)
