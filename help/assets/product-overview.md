@@ -95,11 +95,11 @@ Follow these steps to setup Content Hub for your team:
 
 
 <td>
-   <a href="/help/assets-search.md">
+   <a href="/help/assets/search-assets-content-hub.md">
    <img alt="Search assets available in Content Hub" src="./assets/search.png" />
    </a>
    <div>
-      <a href="/help/assets-search.md">
+      <a href="/help/assets/search-assets-content-hub.md">
       <strong>Search assets available in Content Hub</strong>
       </a>
    </div>
@@ -112,7 +112,7 @@ Follow these steps to setup Content Hub for your team:
    <img alt="Edit images using Adobe Express" src="./assets/edit-images-content-hub.png" />
    </a>
    <div>
-      <a href="/help/assets-search.md">
+      <a href="/help/assets/edit-images-content-hub.md">
       <strong>Edit images using Adobe Express</strong>
       </a>
    </div>
@@ -123,11 +123,11 @@ Follow these steps to setup Content Hub for your team:
 </table>
 <table>
 <td>
-   <a href="/help/share-assets-as-a-link.md">
+   <a href="/help/assets/share-assets-content-hub.md">
    <img alt="Share assets available in Content Hub" src="./assets/share-assets-banner.png" />
    </a>
    <div>
-      <a href="/help/share-assets-as-a-link.md">
+      <a href="/help/assets/share-assets-content-hub.md">
       <strong>Share assets available in Content Hub</strong>
       </a>
    </div>
@@ -136,11 +136,11 @@ Follow these steps to setup Content Hub for your team:
    </p>
 </td>
 <td>
-   <a href="/help/collections.md">
+   <a href="/help/assets/collections-content-hub.md">
    <img alt="Manage collections in Content Hub" src="./assets/manage-collection.png" />
    </a>
    <div>
-      <a href="/help/collections.md">
+      <a href="/help/assets/collections-content-hub.md">
       <strong>Manage collections in Content Hub</strong>
       </a>
    </div>
@@ -149,11 +149,11 @@ Follow these steps to setup Content Hub for your team:
    </p>
 </td>
 <td>
-   <a href="/help/insights.md">
+   <a href="/help/assets/insights-content-hub.md">
    <img alt="Share assets available in Content Hub" src="./assets/asset-insights-banner.jpg" />
    </a>
    <div>
-      <a href="/help/insights.md">
+      <a href="/help/assets/insights-content-hub.md">
       <strong>View asset insights in Content Hub</strong>
       </a>
    </div>
