@@ -553,6 +553,16 @@ user-guide-title: AEM as a Cloud Service
     + [HTTP2 Delivery of Content FAQ](/help/assets/dynamic-media/http2faq.md)
     + [Flash Viewers End-of-Life](/help/assets/dynamic-media/flash-viewers-eol.md)
     + [DHTML Viewers End-of-Life](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
+    + Dynamic Media with OpenAPI capabilities {#dynamic-media-open-apis}
+       + [Overview](/help/assets/dynamic-media-open-apis-overview.md)
+       + [Approve assets](/help/assets/approve-assets.md)
+       + [Integration with downstream applications](/help/assets/integrate-dynamic-media-open-apis.md)
+       + [Search assets API](/help/assets/search-assets-api.md)
+       + [Delivery APIs](/help/assets/deliver-assets-apis.md)
+       + [Restrict assets delivery](/help/assets/restrict-assets-delivery.md)
+       + [Integrate remote AEM Assets with AEM Sites](/help/assets/integrate-remote-approved-assets-with-sites.md)
+       + [Frequently asked questions](/help/assets/dynamic-media-open-apis-faqs.md)
+       + [Configure custom domain](/help/assets/configure-custom-domain.md)
   + Working with Assets view {#assets-view}
     + [Introduction](/help/assets/assets-view-introduction.md)
     + [Getting started](/help/assets/get-started-assets-view.md)

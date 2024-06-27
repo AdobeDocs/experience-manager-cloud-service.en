@@ -1,7 +1,7 @@
 ---
 title: How to troubleshoot failures of forms creation?
 description: Troubleshooting failures of forms creation on AEM Forms as a Cloud Service environment.
-feature: Adaptive Forms, Troubleshooting
+feature: Adaptive Forms
 role: User
 exl-id: 169ea727-0941-4a1d-bc33-d9fe208b27ab
 ---

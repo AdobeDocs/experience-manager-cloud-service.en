@@ -1,12 +1,11 @@
 ---
 title: Integrate remote AEM Assets with AEM Sites
 description: Learn how to configure and connect AEM sites  with Approved AEM Assets in Creative Cloud. 
-role:
 ---
 
 # Integrate remote AEM Assets with AEM Sites  {#integrate-approved-assets}
 
-Effectively managing digital assets is crucial for delivering engaging and consistent brand experiences across various online platforms. Dynamic Media with OpenAPI capabilities enhances digital asset management by enabling seamless integration between AEM Sites and remote AEM Assets. This innovative feature allows you to easily share and manage different types of approved digital assets across multiple AEM environments, streamlining workflows for sites authors and content editors.
+Effectively managing digital assets is crucial for delivering engaging and consistent brand experiences across various online platforms. Dynamic Media with OpenAPI capabilities enhances digital asset management by enabling seamless integration between AEM Sites and AEM Assets as a Cloud Service. This innovative feature allows you to easily share and manage different types of approved digital assets across multiple AEM environments, streamlining workflows for sites authors and content editors.
 
 Dynamic Media with OpenAPI capabilities allows sites authors to use assets from remote DAM directly within the AEM Page Editor and [Content Fragment](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments.html), simplifying content creation and management processes.
 
@@ -16,9 +15,9 @@ Users can connect multiple AEM Sites instances, without any restrictions on the 
 
 After the initial setup, users can create pages on the AEM Sites instance and add assets as needed. When adding assets, they can either select assets stored in their local DAM or browse and use the assets available in the remote DAM.
 
-Dynamic Media with OpenAPI capabilities offers several other benefits such as accessing and using remote assets in Content Fragment, fetching metadata of the remote assets and much more. Know more about the other [benefits of Dynamic Media with OpenAPI capabilities over Connected Assets](/help/assets/new-dynamic-media-apis-faqs.md). 
+Dynamic Media with OpenAPI capabilities offers several other benefits such as accessing and using remote assets in Content Fragment, fetching metadata of the remote assets and much more. Know more about the other [benefits of Dynamic Media with OpenAPI capabilities over Connected Assets](/help/assets/dynamic-media-open-apis-faqs.md). 
 
-## Before you begin
+## Before you begin {#pre-requisits-sites-integration}
 
 * Set up the following [environment variables](/help/implementing/cloud-manager/environment-variables.md#add-variables) for AEM as a Cloud Service:
 
@@ -48,7 +47,7 @@ Dynamic Media with OpenAPI capabilities allows you to access assets available in
 
 ![image](/help/assets/assets/open-APIs.png)
 
-### Access remote assets in AEM Page Editor
+### Access remote assets in AEM Page Editor {#access-assets-page-editor}
 
 Follow the below steps to use remote assets within AEM Page Editor on your AEM Sites instance. You can do this integration in AEM as a Cloud Service and AEM 6.5.
 
@@ -66,11 +65,13 @@ Follow the below steps to use remote assets within AEM Page Editor on your AEM S
 1. Add an Alternative text and click **[!UICONTROL Done]**.
 <br> The remote asset appears in the image component. You can also verify the delivery URL of the asset when it loads on the page or by using the 'Preview' tab. The delivery URL indicates that the asset is being accessed remotely.
 
+You can access remote assets in AEM page editor out-of-the-box only for Image Core Component v3 and Teaser Core Component v2. For other components including custom components, customizations are required to integrate Asset Selector with those components.
+
 #### Video: Access remote assets in AEM Page Editor
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427666)
 
-### Access remote assets in AEM Content Fragment
+### Access remote assets in AEM Content Fragment {#access-assets-content-fragment}
 
 Follow the below steps to use Remote assets within AEM Content Fragment on your AEM Sites instance. You can do this integration in AEM 6.5 and not on AEM as a Cloud Service.
 
@@ -94,3 +95,7 @@ You can either choose **[!UICONTROL Local]** or **[!UICONTROL Remote]** DAM repo
 #### Video: Access remote assets in AEM Content Fragment
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427667)
+
+### Access remote assets in Edge Delivery Services {#access-assets-eds}
+
+You can also access remote assets in Edge Delivery Services. For more information, see [Utilizing assets from Assets as a Cloud Service delivered using Dynamic Media with OpenAPI capabilities](https://www.aem.live/docs/aem-assets-sidekick-plugin#utilizing-assets-from-assets-cloud-services-delivered-via-dynamic-media-with-openapi).
