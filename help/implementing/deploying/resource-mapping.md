@@ -6,6 +6,7 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 1a1bb23c-d1d1-4e2b-811b-753e6a90a01b
+role: Admin
 ---
 # Resource Mapping{#resource-mapping}
 

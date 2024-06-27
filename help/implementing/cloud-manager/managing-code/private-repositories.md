@@ -1,8 +1,10 @@
 ---
 title: Adding Private Repositories in Cloud Manager
 description: Learn how to set up Cloud Manager to work with your own private GitHub repositories.
+exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
-
 # Adding Private Repositories in Cloud Manager {#private-repositories}
 
 By configuring Cloud Manager to work with your own private GitHub repositories, you can validate your code directly within your GitHub repository through Cloud Manager, eliminating the need to consistently sync your code with the Adobe repository.
@@ -112,7 +114,6 @@ Validated private repositories can be associated with [full-stack and frontend p
 
 Certain limitations apply when using private repositories with Cloud Manager.
 
-* You cannot use private repositories as the direct repository source for the pipelines you manage.
 * You cannot pause the pull request validation using the GitHub check from Cloud Manager.
   * If the GitHub repository is validated in Cloud Manager, Cloud Manager will always try to validate the pull requests created for that repository.
 * If the Adobe GitHub app is removed from your GitHb organization, this will remove the pull requests validation feature for all repositories.

@@ -3,7 +3,7 @@ title: Configure Translation Rules for Headless Content
 description: Learn how to define translation rules to identify content for translation.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 solution: Experience Manager
-feature: Headless
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 ---
 # Configure Translation Rules {#configure-translation-rules}

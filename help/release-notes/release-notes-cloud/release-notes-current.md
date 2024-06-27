@@ -116,12 +116,12 @@ This release brings a significant upgrade to the visual rule editor for adaptive
 
  
 
-### Early Adopter features in AEM Forms {#forms-new-early-adopter-features} 
+### Early Access features in AEM Forms {#forms-new-access-adopter-features} 
 
-The AEM Forms Early Adopter Program program offers a unique opportunity to you to get exclusive access to cutting-edge innovations before anyone else, and help shape their development. 
+The AEM Forms Early Access Program program offers a unique opportunity to you to get exclusive access to cutting-edge innovations before anyone else, and help shape their development. 
 The program offers access to multiple innovations. 
 
-This release notes lists the innovations delivered in current release. For the complete list of innovations available under the Early Adopter Program, see [AEM Forms Early Adopter Program documentation](/help/forms/early-adopter-ea-features.md). 
+This release notes lists the innovations delivered in current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
 
 #### Enhanced bot protection methods
 
@@ -146,7 +146,7 @@ Forms service generates interactive PDF forms for data capture. It can also be u
 
 >[!IMPORTANT] 
 >
-> If you're interested in joining our Early Adopter program for any early adopter innovation, simply send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) to request access. You can request access to all or any specific innovation.  
+> If you're interested in joining our Early Access program for any early access innovation, simply send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) to request access. You can request access to all or any specific innovation.  
 
      
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
@@ -168,7 +168,7 @@ Adobe Developer Console is used to generate credentials to access various APIs. 
 
 #### RDE support for front-end code using Site Themes and Site Templates {#rde-frontend}
 
-[RDEs now support front-end code](/help/implementing/developing/introduction/rapid-development-environments.md#deploying-themes-to-rde) based on [site themes](/help/sites-cloud/administering/site-creation/site-themes.md) and [site templates](/help/sites-cloud/administering/site-creation/site-templates.md), for early adopters. With RDEs, this is done using a command line directive, rather than a [front-end pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
+[RDEs now support front-end code](/help/implementing/developing/introduction/rapid-development-environments.md#deploying-themes-to-rde) based on [site themes](/help/sites-cloud/administering/site-creation/site-themes.md) and [site templates](/help/sites-cloud/administering/site-creation/site-templates.md), for early adopter. With RDEs, this is done using a command line directive, rather than a [front-end pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
 
 #### Enhanced logging for RDEs {#rde-logging}
 

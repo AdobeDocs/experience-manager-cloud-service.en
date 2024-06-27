@@ -10,6 +10,7 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7
+role: Admin
 ---
 # Advanced URL Configurations {#url}
 

@@ -3,6 +3,7 @@ title: Getting Started with AEM Forms Edge Delivery Service. Create a form.
 description: Craft perfect forms, fast! ⚡ AEM Forms Edge Delivery doc-based authoring = blazing speed & SEO-friendly forms for happier users & search engines.
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
+role: Admin, Architect, Developer
 ---
 # Create a form using Adaptive Forms Block
 
@@ -12,7 +13,7 @@ AEM Forms Edge Delivery provides a block, known as Adaptive Forms Block, to help
 
 These forms submit data directly to a Microsoft Excel or Google Sheets file, enabling you to use vibrant ecosystem and robust APIs of Google Sheets, Microsoft Excel, and Microsoft SharePoint to easily process submitted data or to initiate an existing business workflow.
 
-![Document-based Authoring  ecosystem](/help/edge/assets/document-based-authoring-workflow-create-form.png)
+![Document-based Authoring ecosystem](/help/edge/assets/document-based-authoring-workflow-create-form.png)
 
 
 ## Prerequisites
