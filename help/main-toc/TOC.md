@@ -583,6 +583,19 @@ user-guide-title: AEM as a Cloud Service
     + [Manage reports](/help/assets/manage-reports-assets-view.md)
     + [Manage tags](/help/assets/tagging-management-assets-view.md)
     + [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
+  + Manage Content Hub {#content-hub}
+    + [Overview](/help/assets/product-overview.md)
+    + [Deploy Content Hub](/help/assets/deploy-content-hub.md)
+    + [Configure Content Hub user interface](/help/assets/configure-content-hub-ui-options.md)
+    + [Upload or Import brand-approved assets to Content Hub](/help/assets/upload-brand-approved-assets.md)
+    + [Search assets in Content Hub](/help/assets/search-assets-content-hub.md)
+    + [Asset properties](/help/assets/asset-properties-content-hub.md)
+    + [Share assets in Content Hub](/help/assets/share-assets-content-hub.md)
+    + [Download assets using Content Hub](/help/assets/download-assets-content-hub.md)
+    + [Manage collections in Content Hub](/help/assets/collections-content-hub.md)
+    + [Edit images using Adobe Express in Content Hub](/help/assets/edit-images-content-hub.md)
+    + [Asset Insights in Content Hub](/help/assets/insights-content-hub.md)    
   + Best practices{#best-practices}
     + [Search best practices](/help/assets/search-best-practices.md)
     + [Metadata management and best practices](/help/assets/metadata-best-practices.md)
