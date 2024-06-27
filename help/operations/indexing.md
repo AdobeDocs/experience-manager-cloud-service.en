@@ -2,6 +2,8 @@
 title: Content Search and Indexing
 description: Learn about Content Search and Indexing in AEM as a Cloud Service.
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
+feature: Operations
+role: Admin
 ---
 # Content Search and Indexing {#indexing}
 
@@ -77,7 +79,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 >[!NOTE]
 >
->Any content package containing index definitions should have the following properties set in in the properties file of the content package, located at `<package_name>/META-INF/vault/properties.xml`:
+>Any content package containing index definitions should have the following properties set in the `properties.xml` file of the content package. `properties.xml` is created by default in a new package, and located at `<package_name>/META-INF/vault/properties.xml`:
 >
 > * `noIntermediateSaves=true`
 >

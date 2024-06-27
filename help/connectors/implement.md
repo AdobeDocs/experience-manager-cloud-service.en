@@ -2,6 +2,8 @@
 title: Implementing an AEM Connector
 description: Learn about Connectors, what they can do, and how to implement these valuable tools in Experience Manager.
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
+feature: Operations
+role: Admin
 ---
 
 Implementing an AEM Connector

@@ -4,6 +4,7 @@ description: Use adaptive form core components to add comments, annotations, and
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
 exl-id: 84b95a19-c804-41ad-8f4b-5868c8444cc0
+role: User, Developer, Admin
 ---
 # Versioning, reviewing and commenting on an Adaptive Form
 

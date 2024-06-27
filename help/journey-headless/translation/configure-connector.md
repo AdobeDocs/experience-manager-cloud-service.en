@@ -3,7 +3,7 @@ title: Configure the Translation Integration for Headless Content
 description: Learn how to connect AEM to a translation service.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
 solution: Experience Manager
-feature: Headless
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 ---
 # Configure the Translation Integration {#configure-integration}

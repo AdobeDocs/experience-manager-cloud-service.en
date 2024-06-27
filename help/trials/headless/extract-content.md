@@ -4,7 +4,7 @@ description: Learn how to use Content Fragments and the GraphQL API as a headles
 hidefromtoc: yes
 index: no
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-feature: Onboarding
+feature: Headless
 role: Admin, User, Developer
 ---
 
