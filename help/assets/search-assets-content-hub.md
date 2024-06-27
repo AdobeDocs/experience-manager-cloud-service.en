@@ -142,4 +142,4 @@ The default filters include file format, approved by, date approved, expired and
 
 ## Do more with search {#do-more-with-search}
 
-[!DNL The Content Hub] is not limited to search, instead it allows you to perform additional actions, such as [download](assets-download.md), [share](share-assets-as-a-link.md), [add assets to collection](collections.md), [configure search filters](configure.md#filters), and [configure add or edit metadata](configure.md#search) right from the search or preview interface. Select the assets on the search results page to view these options. 
+[!DNL The Content Hub] is not limited to search, instead it allows you to perform additional actions, such as [download](download-assets-content-hub.md), [share](share-assets-content-hub.md), and [add assets to collection](collections-content-hub.md), right from the search or preview interface. Select the assets on the search results page to view these options. 
