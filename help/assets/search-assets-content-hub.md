@@ -18,7 +18,7 @@ The [!DNL Content Hub] search provides results based on:
 
 * **Matching context:** [!DNL Content Hub] search results list contains proximate results of assets that you get based on the matching context. For example, if you type `cool` in the search bar, the assets related to `winter`, `snow`, `cold surroundings`, display in the search list. 
 
-* **Asset information (title, tags, or smart tags):** [!DNL Content Hub] uses smart search algorithm to rank search results accurately and as relevant as possible. [Metadata](#asset-properties.md) is the collection of all the data available for an asset, but it may not necessarily be contained in that asset. It helps you further categorize assets and is helpful as the amount of digital information grows. 
+* **Asset information (title, tags, or smart tags):** [!DNL Content Hub] uses smart search algorithm to rank search results accurately and as relevant as possible. [Metadata](#asset-properties.md) is the collection of all the data available for an asset, but it may not necessarily be contained in that asset. [It helps you further categorize assets and is helpful as the amount of digital information grows](/help/assets/configure-content-hub-ui-options.md##configure-metadata-search-content-hub). 
 
 * **Last modified date:** The assets that were modified recently appear on the top of search results list. You can also filter the date range as per your requirement. 
 
@@ -44,7 +44,7 @@ For example, search for all the **[!UICONTROL JPEG]** images with keyword `archi
 
 ## Narrow your search results using filters {#narrow-down-search-results}
 
-Use the Filters panel to search for assets based on metadata. You can filter search results based on various search predicates, such as [!UICONTROL tags], [!UICONTROL subject], [!UICONTROL format], [!UICONTROL last modified date], and so on. The filters have mixed-state checkboxes. You can select all the required predicates to minimize your search results.
+Use the Filters panel to search for assets based on metadata. You can filter search results based on various search predicates. You can select all the appropriate predicates to minimize or narrow down your search results. When you select multiple options within a filter, Content Hub displays the assets that match any of the options selected within a filter. However, when you select multiple options across filters, Content Hub only displays the assets that match all options selected across filters to narrow down your search results. 
 
 Administrators can also configure the filters that display in the list of filters. For more information, see [Configure Content Hub user interface](configure-content-hub-ui-options.md#configure-filters-content-hub).
 
