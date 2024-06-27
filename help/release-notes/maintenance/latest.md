@@ -52,7 +52,7 @@ Summarized below are the continuous improvements for maintenance release X, whic
 ### Fixed Issues {#fixed-issues-X}
 
 * SITES-22457: Promoting a launch which is not deep is not updating source content.
-* SITES-22748: Enhance error handling for Content Fragment Update Job
+* SITES-22748: [Content Fragments] Enhance error handling for Content Fragment Update Job
 * SITES-22349: ContentType for empty multiline cf-elements cannot be changed
 * SITES-22343: Semantic type "enumeration" is broken
 * SITES-22194: After setting the redirect, model.json doesn't work anymore
