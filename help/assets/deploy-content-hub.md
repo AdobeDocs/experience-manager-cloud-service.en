@@ -102,10 +102,6 @@ After adding the appropriate users using Admin Console, the users can access Con
 
 `https://experience.adobe.com/#/assets/contenthub`
 
->[!NOTE]
->
->You can add 250 asset consumer users for AEM as a Cloud Service Assets license.
-
 ### Disable email notifications to users {#disable-email-notifications}
 
 If administrators need to disable email notifications sent to users when they are added to the Content Hub product profile:
