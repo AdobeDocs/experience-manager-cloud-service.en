@@ -4,6 +4,7 @@ description: An Adaptive Form provides multiple Submit Actions. A Submit Action 
 keywords: how to select submit action for an adpative form, connect an adaptive form to sharepoint list, connect an adaptive form to sharepoint document library, connect an adaptive form to form data model (FDM) 
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
+role: User, Developer
 ---
 
 # Adaptive Form Submit Action {#configuring-the-submit-action}
