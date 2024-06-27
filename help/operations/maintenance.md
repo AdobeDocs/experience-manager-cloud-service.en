@@ -192,7 +192,9 @@ Code sample 3 (monthly)
 
 Purging versions and the audit log reduces the size of the repository, and in some scenarios, can improve performance.
 
-<!-- [!NOTE] AEM Guides customers should not configure Version Purge. --> Alexandru: drafting for now.
+>[!NOTE] 
+>
+>Adobe recommends customers should not configure Version Purge.
 
 ### Defaults {#defaults}
 
@@ -280,7 +282,9 @@ See [configuring production pipelines](/help/implementing/cloud-manager/configur
 
 ### Version Purge {#version-purge}
 
-[!NOTE] AEM Guides customers should not configure Version Purge.
+>[!NOTE]
+>
+>Adobe recommends customers should not configure Version Purge.
 
 #### Version Purge Defaults {#version-purge-defaults}
 
