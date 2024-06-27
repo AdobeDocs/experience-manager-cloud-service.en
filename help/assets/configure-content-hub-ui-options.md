@@ -67,7 +67,7 @@ You can configure the metadata fields that display to the users while uploading 
 
 1. Click **[!UICONTROL Save]** to apply the changes.
 
-Similarly, you can click ![Edit icon](assets/do-not-localize/Edit_icon.svg), available next to each available property, to edit the labels, make these fields mandatory or non-mandatory to users while uploading assets using the **[!UICONTROL Required field]** toggle, or click the Delete icon to delete any metadata property. 
+Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each available property, to edit the labels, make these fields mandatory or non-mandatory to users while uploading assets using the **[!UICONTROL Required field]** toggle, or click the Delete icon to delete any metadata property. 
 
 Click the **[!UICONTROL Auto-approval]** toggle if you need all assets that you add to the Experience Manager Assets repository to be auto-approved so that they are available in Content Hub immediately. Else, DAM authors or administrators need to manually approve the assets to make them available on Content Hub. The toggle is set to Off state by default.
 
@@ -92,7 +92,7 @@ Content Hub allows administrators to configure filters that display while search
 
 1. Click **[!UICONTROL Save]** to apply the changes so that the new filter gets displayed on the Search page while filtering assets.
 
-Similarly, you can click ![Edit icon](assets/do-not-localize/Edit_icon.svg), available next to each available filter, to edit the labels or click the delete icon to delete any existing filter. Click **[!UICONTROL Save]** after making all modifications to apply the changes.
+Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each available filter, to edit the labels or click the delete icon to delete any existing filter. Click **[!UICONTROL Save]** after making all modifications to apply the changes.
 
    ![Configuration UI filters on Content Hub](assets/configuration-ui-filters.png)
 
@@ -114,7 +114,7 @@ You can also configure the asset properties that display for each asset, such as
 
 1. Click **[!UICONTROL Save]** to apply the changes so that the new property gets displayed on the asset details page.
 
-Similarly, you can click ![Edit icon](assets/do-not-localize/Edit_icon.svg), available next to each available property, to edit the labels or click the delete icon to delete any existing asset detail. Click **[!UICONTROL Save]** after making all modifications to apply the changes.
+Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each available property, to edit the labels or click the delete icon to delete any existing asset detail. Click **[!UICONTROL Save]** after making all modifications to apply the changes.
 
    ![Configuration UI asset details on Content Hub](assets/configuration-ui-asset-details.png)
 
@@ -132,7 +132,7 @@ Administrators can define the metadata fields that are searched when a user spec
 
 1. Click **[!UICONTROL Save]** to apply the changes so that the new metadata property gets displayed in the list of metadata fields.
 
-Similarly, you can click ![Edit icon](assets/do-not-localize/Edit_icon.svg), available next to each available metadata property, to edit the property or click the delete icon to delete any existing property. Click **[!UICONTROL Save]** after making all modifications to apply the changes.
+Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each available metadata property, to edit the property or click the delete icon to delete any existing property. Click **[!UICONTROL Save]** after making all modifications to apply the changes.
 
 ![Configuration UI Search on Content Hub](assets/configuration-ui-metadata-search.png)
 
@@ -167,7 +167,7 @@ You can also add custom tabs in addition to standard **[!UICONTROL All Assets]**
 
 1. Click **[!UICONTROL Save]** to apply the changes.
 
-Similarly, you can click ![Edit icon](assets/do-not-localize/Edit_icon.svg), available next to each URL, to edit the links or click the delete icon to delete any existing URL. Click **[!UICONTROL Save]** after making all modifications to apply the changes.
+Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each URL, to edit the links or click the delete icon to delete any existing URL. Click **[!UICONTROL Save]** after making all modifications to apply the changes.
 
    ![Configuration UI Custom Links on Content Hub](assets/configuration-ui-custom-links.png)
 
