@@ -18,7 +18,7 @@ Summarized below are the continuous improvements for maintenance release X, whic
 ### Enhancements {#enhancements-X}
 
 * SITES-22948: Remove commerce references in foundation content for AEM CS
-* SITES-22141: SNFE from CFM ModelChangeRepositoryImpl after OnRC
+* SITES-22141: [Content Fragments] SegmentNotFoundException from CFM ModelChangeRepositoryImpl after OnRC
 * SITES-21893: Image Cropping Issue on Author Instance
 * SITES-21788: Display NOTE in CF and CF model editor when uiSchema is enabled for the model
 * SITES-21688: MSM rollout does not update experience fragment (XF) path on live copy pages
