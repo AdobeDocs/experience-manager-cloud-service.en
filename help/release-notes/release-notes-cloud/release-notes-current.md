@@ -91,7 +91,7 @@ When looking at the asset details, any image with content credentials added, suc
 
 This release brings a significant upgrade to the visual rule editor for adaptive forms based on core components. You can now: 
 
-   * Create rules in Visual Rule editor to [override default form submission success/failure messages](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers). 
+   * Create rules in Visual Rule editor to [override the default form submission success/failure messages](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers). 
 
    * In the Adaptive Forms Rule Editor, added the ability to [select different types of fields for the WHEN operation](/help/forms/rule-editor-core-components.md#allowed-multiple-fields-in-when).
 
@@ -103,7 +103,7 @@ This release brings a significant upgrade to the visual rule editor for adaptive
 
 The AEM Forms Early Access Program program offers a unique opportunity to you to get exclusive access to cutting-edge innovations before anyone else, and help shape their development. The program offers access to multiple innovations. 
 
-This release notes lists the innovations delivered in current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
+This release notes lists the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
 
 #### Enhanced bot protection methods
 
@@ -120,15 +120,15 @@ Ready to integrate any of these CAPTCHA solution with your Adaptive Forms? Our d
 
 ### Forms Service
 
-Forms service generates interactive PDF forms for data capture. It can also be used to importor  export data to and from an existing interactive PDF form and validate submitted data. Here's a breakdown of its functionalities: 
+Forms service generates interactive PDF forms for data capture. It can also be used to import or  export data to and from an existing interactive PDF form and validate submitted data. Here's a breakdown of its functionalities: 
 
 * **Rendering Forms**: Generate an interactive PDF form from a template created using AEM Forms Designer and, optionally, XML data. This essentially produces a fillable PDF form optionally pre-filled with data.
 * **Data Extraction and Import**: Import data into an existing PDF form as well as extract data from a filled PDF form. Both XDP and XML data formats are supported, and importing to non-XFA PDF forms (also known as AcroForms) additionally supports FDF and XFDF data.
-* **Data Validation**: : Validate submitted data, in XDP or XML format, against a template created using AEM Forms Designer.
+* **Data Validation**: Validate submitted data, in XDP or XML format, against a template created using AEM Forms Designer.
 
 >[!IMPORTANT] 
 >
-> If you're interested in joining our Early Access program for any early access innovation, simply send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) to request access. You can request access to all or any specific innovation.  
+> If you're interested in joining our Early Access Program for any early access innovation, simply send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) to request access. You can request access to all or any specific innovation.  
 
      
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
@@ -139,15 +139,15 @@ Forms service generates interactive PDF forms for data capture. It can also be u
 
 #### Pages Contain a Large Number of Nodes {#page-nodes}
 
-A large number of nodes can degrade rendering performance and reduce page load times. Receive a proactive notification through Actions Center when a large number of nodes is detected on a page, allowing you to take the necessary steps to reduce the total number of nodes withing a page.
+A large number of nodes can degrade rendering performance and reduce page load times. Receive a proactive notification through Actions Center when a large number of nodes is detected on a page, allowing you to take the necessary steps to reduce the total number of nodes within a page.
 
 #### Large Number of Running Workflow Instances {#running-workflows}
 
-The worfklow engine performance is impacted when there is a large number of running workflows on the author environment. Receive a proactive notification through Actions Center when a large number of running workflow instances are detected, allowing you to configure a purge job to terminate running workflows that are not required. 
+The workflow engine performance is impacted when there is a large number of running workflows in the author environment. Receive a proactive notification through Actions Center when a large number of running workflow instances are detected, allowing you to configure a purge job to terminate running workflows that are not required. 
 
 #### Users Added Directly to Custom Groups {#users-customgroups}
 
-Receive a proactive notification through Actions Center when users are added directly to custom groups, allowing you to follow IMS best practices to add users to relevant IMS Groups and then add the IMS groups as members of AEM groups.
+Receive a proactive notification through Actions Center when users are added directly to custom groups, allowing you to follow IMS best practices to add users to relevant IMS groups and then add the IMS groups as members of AEM groups.
 
 #### Missing JCR Content {#jcr-content}
 
