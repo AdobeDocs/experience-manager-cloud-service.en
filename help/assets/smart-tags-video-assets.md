@@ -1,8 +1,8 @@
 ---
 title: Smart tag your video assets
 description: Experience Manager automatically adds contextual and descriptive Smart Tags to videos using [!DNL Adobe Sensei].
-feature: Smart Tags,Tagging
-role: Admin,User
+feature: Smart Tags
+role: Admin, User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
 ---
 # Smart tag your video assets {#video-smart-tags}

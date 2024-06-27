@@ -4,6 +4,7 @@ description: Understand how the Content Fragment editor uses markdown syntax to 
 feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
+solution: Experience Manager Sites
 ---
 # Markdown {#markdown}
 

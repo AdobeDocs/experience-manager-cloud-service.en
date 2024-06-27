@@ -2,6 +2,8 @@
 title: JWT Credentials Deprecation in Adobe Developer Console
 description: Learn about the impact of JWT credentials deprecation in Adobe Developer Console on AEM.
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
+feature: Security
+role: Admin
 ---
 # JWT Credentials Deprecation in Adobe Developer Console {#jwt-credentials-deprecation-in-adobe-developer-console}
 
@@ -13,7 +15,7 @@ Adobe customers use [Adobe Developer Console](https://developer.adobe.com/consol
 
 This article provides some additional context about how AEM as a Cloud Service should handle the deprecation.
 
-The main takeaway is that AEM now supports the new OAuth Server-to-Server credentials for AEM as a Cloud Service. You may have received an email with instructions to migrate your JWT credentials, this migration can now be done.
+The main takeaway is that AEM now supports the new OAuth Server-to-Server credentials for AEM as a Cloud Service. You may have received an email with instructions to migrate your JWT credentials, and this migration can now be done.
 
 The sections below list the scenarios where customers must (or in some cases must not) replace their Service Account (JWT) credentials with OAuth Server-to-Server credentials, now that AEM supports them. [Read how](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) to migrate the credentials.
 
@@ -36,7 +38,7 @@ See [Setting Up IMS Integrations for AEM as a Cloud Service](/help/security/sett
 
 ## Cloud Manager APIs {#cloud-manager-apis}
 
-**Action**: Confirm when these can be migrated from JWT to OAuth credentials.
+**Action**: Migrate your JWT credentials to OAuth credentials, which Cloud Manager now supports.
 
 **Relevant AEM versions**: AEM as a Cloud Service
 

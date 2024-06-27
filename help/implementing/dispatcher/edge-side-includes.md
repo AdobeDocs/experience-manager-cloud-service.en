@@ -2,6 +2,8 @@
 title: Edge Side Includes
 description: The Adobe Managed CDN now supports Edge Side Includes (ESI), a markup language for edge level dynamic web content assembly.
 feature: Dispatcher
+exl-id: 35093477-2788-4f69-80a9-899f43567cae
+role: Admin
 ---
 # Edge Side Includes {#edge-side-includes}
 

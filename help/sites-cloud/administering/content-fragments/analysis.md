@@ -4,6 +4,7 @@ description: Understand the structure of your Content Fragments. This provides i
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: d9268c1a-bfe6-4df7-bad9-6007dd79e0aa
+solution: Experience Manager Sites
 ---
 # Analyzing Content Fragment Structure {#analyzing-content-fragments-structure}
 

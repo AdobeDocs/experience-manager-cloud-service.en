@@ -2,6 +2,8 @@
 title: Responsive Design
 description: With responsive design, the same experiences can be effectively displayed on multiple devices in multiple orientations.
 exl-id: be645062-d6d6-45a2-97dc-d8aa235539b8
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Responsive Design {#responsive-design}
 

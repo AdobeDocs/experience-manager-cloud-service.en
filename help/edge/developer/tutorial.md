@@ -3,6 +3,7 @@ description: This tutorial will get you up-and-running with a new Adobe Experien
 title: Getting Started - Developer Tutorial
 feature: Edge Delivery Services
 exl-id: f84a9584-0962-4d70-aedc-f7a130fd489b
+role: Admin, Architect, Developer
 ---
 # Getting Started - Developer Tutorial
 

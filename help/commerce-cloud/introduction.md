@@ -3,6 +3,8 @@ title: Introduction and overview
 description: Understand how to use and administer Experience Manager Content and Commerce as a Cloud Service.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
+feature: Commerce Integration Framework
+role: Admin
 ---
 
 # Content and Commerce {#content-commerce}

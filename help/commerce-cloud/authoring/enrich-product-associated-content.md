@@ -10,6 +10,7 @@ feature: Commerce Integration Framework
 kt: 7065
 thumbnail: 333205.jpg
 exl-id: d0062779-7e90-4f09-8878-eded877580ef
+role: Admin
 ---
 # Enrich Product Data with Associated AEM Content
 

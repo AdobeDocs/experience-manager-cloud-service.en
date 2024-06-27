@@ -2,6 +2,9 @@
 title: Editing Launches
 description: After creating a launch for your page (or set of pages) you can edit the content in the launch copy of the pages.
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
+solution: Experience Manager Sites
+feature: Authoring, Launches
+role: User
 ---
 # Editing Launches {#editing-launches}
 
