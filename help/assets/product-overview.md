@@ -23,7 +23,7 @@ AEM Assets serves as a single source of truth and all approved assets are automa
 
 **Empower non-creatives to edit and remix content while staying on brand**
 
-Content Hub integrates with Adobe Express (if you have Adobe Express entitlements) to edit images using the embedded Express editor to create stunning image variants while staying on brand.
+Content Hub allows you to create new content with Adobe Express (if you have Adobe Express entitlements). You can edit existing content with easy to use tools, produce on-brand variations with templates and brand elements, and create new content with the latest GenAI capabilities from Adobe Firefly.
 
 **Gain insights on how content is used across teams**
 
@@ -31,11 +31,11 @@ Content Hub integrates with Adobe Express (if you have Adobe Express entitlement
 
 ## Prerequisites {#prerequisites-content-hub}
 
-Experience Manager as a Cloud Service June release
+Content Hub requires a production author environment of Experience Manager as a Cloud Service, 2024.6 release or newer (minimum version is 2024.6.16799).
 
 ## How to access Content Hub? {#access-content-hub}
 
-After adding a user to the [Content Hub product profile](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), Content Hub can be accessed using the following ways:
+[After setting up Content Hub](#deploy-content-hub) and adding a user to the [Content Hub product profile](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), Content Hub can be accessed using the following ways:
 
 * Access Content Hub using the following link:
 
@@ -55,6 +55,8 @@ To recommend any product-related improvements, click **[!UICONTROL Feedback]** n
 
 Specify a subject, a description of the recommendation, and attach files, if required. Click **[!UICONTROL Submit]** to submit the feedback to Adobe.
 
+![Content Hub feedback](assets/content-hub-feedback.png)
+
 ## Setup Content Hub for your team {#setup-content-hub}
 
 Follow these steps to setup Content Hub for your team:
@@ -63,13 +65,13 @@ Follow these steps to setup Content Hub for your team:
 
 1. [Onboard Content Hub administrator](deploy-content-hub.md#onboard-content-hub-administrator).
 
-1. [Add key Content Hub users](deploy-content-hub.md##onboard-content-hub-consumer-users).
+1. [Add key Content Hub users](deploy-content-hub.md#onboard-content-hub-consumer-users).
 
 1. [DAM authors or administrators to approve assets using Experience Manager assets](approve-assets.md). 
 
 1. [Administrators can configure the Content Hub user interface for other users](configure-content-hub-ui-options.md).
 
-1. [Grant Content Hub access to more users from the team ](deploy-content-hub.md##onboard-content-hub-consumer-users).
+1. [Grant Content Hub access to more users from the team ](deploy-content-hub.md#onboard-content-hub-consumer-users).
 
 1. [Access Content Hub portal](#access-content-hub).
 
