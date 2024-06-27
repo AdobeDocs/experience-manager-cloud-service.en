@@ -31,11 +31,11 @@ Content Hub allows you to create new content with Adobe Express (if you have Ado
 
 ## Prerequisites {#prerequisites-content-hub}
 
-Experience Manager as a Cloud Service June release
+Content Hub requires a production author environment of Experience Manager as a Cloud Service, 2024.6 release or newer (minimum version is 2024.6.16799).
 
 ## How to access Content Hub? {#access-content-hub}
 
-After adding a user to the [Content Hub product profile](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), Content Hub can be accessed using the following ways:
+[After setting up Content Hub](#deploy-content-hub) and adding a user to the [Content Hub product profile](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), Content Hub can be accessed using the following ways:
 
 * Access Content Hub using the following link:
 
