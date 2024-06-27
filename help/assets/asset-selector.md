@@ -44,6 +44,8 @@ You must ensure the following communication methods:
 * The URL of the application in the IMS client's allowed list of redirect URLs.
 * The IMS login flow is configured and rendered using a popup on the web browser. Therefore, popups should be enabled or allowed on the target browser.
 
+Use the above prerequisites if you require IMS authentication workflow of Asset Selector. Alternatively, if you are already authenticated with the IMS workflow, you can add the IMS information instead. 
+
 >[!IMPORTANT]
 >
 > This repository is intended to serve as a supplemental documentation describing the available APIs and usage examples for integrating Asset Selector. Before attempting to install or use the Asset Selector, ensure that your organization has been provisioned the access to Asset Selector as part of the Experience Manager Assets as a Cloud Service profile. If you have not been provisioned, you cannot integrate or use these components. To request provisioning, your program admin should raise a support ticket marked as P2 from Admin Console and include the following information:
@@ -584,6 +586,11 @@ You can use the Asset Selector properties to customize the way the Asset Selecto
 | *selectionType* | string | No | single | Configuration for `single` or `multiple` selection of assets at a time. |
 | *dragOptions.allowList* | boolean | No | | The property is used to allow or deny the dragging of assets that are not selectable. |
 | *aemTierType* | string | No | | It allows you to select whether you want to show assets from delivery tier, author tier, or both. <br><br> Syntax: `aemTierType:[0: "author" 1: "delivery"` <br><br> For example, if both `["author","delivery"]` are used, then the repository switcher displays options for both author and delivery. <br> Additionally, use `["delivery"]` for the delivery-related assets in the Dynamic Media with OpenAPI capabilities. |
+| *handleNavigateToAsset* | Function | No | | It is a Callback function to handle selection of an asset. |
+| *noWrap* | boolean | No | | The *noWrap* property helps rendering Asset Selector in the side rail panel. If this property is not mentioned, it renders the *Dialog view* by default. | 
+| *dialogSize* | small, medium, large, fullscreen, or fullscreen takeover | String | Optional | You can control the layout by specifying its size using the given options. |
+| *colorScheme* | light or dark | No | | This property is used to set the theme of an Asset Selector application. You can choose between light or dark theme. |
+| *filterRepoList* | Function | No |  | You can use `filterRepoList` callback function that calls Experience Manager repository and returns a filtered list of repositories. |
 
 <!--| *rootPath* | string | No | /content/dam/ | Folder path from which Asset Selector displays your assets. `rootPath` can also be used in the form of encapsulation. For example, given the following path, `/content/dam/marketing/subfolder/`, Asset Selector does not allow you to traverse through any parent folder, but only displays the children folders. |
 | *path* | string | No | | Path that is used to navigate to a specific directory of assets when the Asset Selector is rendered. |-->
