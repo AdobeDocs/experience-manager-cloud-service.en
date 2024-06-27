@@ -58,18 +58,30 @@ Interested in trying out the feature and sharing feedback? Send an email to aemc
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New features in Admin view {#admin-view-new-features}
+### New features in Experience Manager Assets {#new-features-assets}
 
-* WebM is now a supported output file in processing profile for video.
-* MP4 is now supported in the native integration of AEM in Express (import and export).
+**Content Hub**
+
+Content Hub is available as part of Experience Manager Assets as a Cloud Service for democratizing access to on-brand content for organizations and their business partners. With Content Hub, you can easily find and distribute assets, reuse and create new on-brand variations, and accelerate activation at scale.
+
+![Content Hub user interface](/help/release-notes/assets/content-hub-ui.png)
+
+**Dynamic Media with OpenAPI Capabilities**
+
+Dynamic Media with OpenAPI capabilities extends the DAM across Adobe and 3rd party applications, enabling access to on brand approved digital assets, in any channel, via Asset Selector or OpenAPI stack. Key tenets - no binary copies, assets are optimized and transformed at the edge for fast performance, deliver assets public or secure.
+
+![New Dynamic Media data flow diagram](/help/assets/assets/dm-openapi-dfd.png)
+
 
 ### New features in Assets view {#assets-view-new-features}
 
-**Publish assets to AEM and Dynamic Media**
+**Content Credentials**
 
-Experience Manager Assets now enables you to quickly [publish assets to Experience Manager and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md) using the Assets view without switching to the Admin view. You can publish assets while uploading, browsing, and searching assets.
+Content Credentials feature in Assets view now provides detailed asset provenance data adhered to an asset. This helps to trace the enroute edits along the asset's lifecycle to prevent users from deception through deliberately tempered assets. This ensures content authenticity among users and fosters trust through transparency.
 
-![check publish status1](/help/assets/assets/check-publish-status1.png)
+When looking at the asset details, any image with content credentials added, such as those created with GenAI, displays the manifest details in a dedicated panel. If the asset is downloaded, published, or shared, the credentials remain intact with the asset.
+
+![check publish status1](/help/release-notes/assets/content-credentials.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
