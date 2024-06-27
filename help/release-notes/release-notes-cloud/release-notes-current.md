@@ -69,6 +69,13 @@ Dynamic Media with OpenAPI capabilities extends the DAM across Adobe and 3rd par
 
 ### New features in Assets view {#assets-view-new-features}
 
+**More options available in Assets Insights dashboard**
+
+Asset Count by Asset Type and Size are now available in Assets Insights dashboard. These options provide real-time data in your Assets view environment about the count and percentage of assets by size range and asset type.
+
+<!--
+
+
 **Content Credentials**
 
 Content Credentials feature in Assets view now provides detailed asset provenance data adhered to an asset. This helps to trace the enroute edits along the asset's lifecycle to prevent users from deception through deliberately tempered assets. This ensures content authenticity among users and fosters trust through transparency.
@@ -76,6 +83,8 @@ Content Credentials feature in Assets view now provides detailed asset provenanc
 When looking at the asset details, any image with content credentials added, such as those created with GenAI, displays the manifest details in a dedicated panel. If the asset is downloaded, published, or shared, the credentials remain intact with the asset.
 
 ![check publish status1](/help/release-notes/assets/content-credentials.png)
+
+-->
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
