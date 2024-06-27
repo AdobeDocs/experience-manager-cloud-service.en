@@ -2,6 +2,8 @@
 title: Authoring Commerce Experiences
 description: Learn how to author and build commerce-related experiences efficiently by getting access to product data and content without leaving the context.
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
+feature: Commerce Integration Framework
+role: Admin
 ---
 # Authoring Commerce Experiences {#authoring-commerce-experiences}
 

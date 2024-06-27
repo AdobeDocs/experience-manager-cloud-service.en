@@ -3,6 +3,7 @@ title: Configuring CDN Credentials and Authentication
 description: Learn how to configure CDN credentials and authentication by declaring rules in a configuration file that is then deployed by using the Cloud Manager Configuration Pipeline.
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
+role: Admin
 ---
 # Configuring CDN Credentials and Authentication {#cdn-credentials-authentication}
 
@@ -13,6 +14,8 @@ The Adobe-provided CDN has several features and services, some of which rely on 
 
 * The HTTP header value used by the Adobe CDN to validate requests coming from a Customer-managed CDN.
 * The API token used to purge resources in the CDN cache.
+* A list of username/password combinations that can access restricted content, by submitting a Basic Authentication form.
+
 
 Each of these, including the configuration syntax, is described in its own section below. The [Common Setup](#common-setup) section illustrates the setup common to both, as well as deployment. Finally, there is a section on how to [rotate keys](#rotating-secrets), which is considered a good security practice.
 
@@ -22,7 +25,7 @@ As described in the [CDN in AEM as a Cloud Service](/help/implementing/dispatche
 
 As part of the setup, the Adobe CDN and the Customer CDN must agree on a value of the `X-AEM-Edge-Key` HTTP Header. This value is set on each request, at the Customer CDN, before it is routed to the Adobe CDN, which then validates that the value is as expected, so it can trust other HTTP headers, including those that help route the request to the appropriate AEM origin.  
 
-The `X-AEM-Edge-Key` value is declared with the syntax below. See the [Common Setup](#common-setup) section to learn how to deploy it.
+The `X-AEM-Edge-Key` value is declared with the syntax below, with the actual value(s) referenced by the edgeKey1 and edgeKey2 properties. See the [Common Setup](#common-setup) section to learn how to deploy the configuration.
 
 ```
 kind: "CDN"
@@ -36,7 +39,6 @@ data:
         type: edge
         edgeKey1: ${{CDN_EDGEKEY_052824}}
         edgeKey2: ${{CDN_EDGEKEY_041425}}
-        onFailure: log # optional, default: log, enum: log/block
     rules:
       - name: edge-auth-rule
         when: { reqProperty: tier, equals: "publish" }
@@ -50,24 +52,24 @@ The syntax for the `X-AEM-Edge-Key` value includes:
 
 * Kind, version, and metadata.
 * Data node that contains a child `experimental_authentication` node (the experimental prefix will be removed when the feature is released).
-* Under experimental_authentication, with one authenticator node and one rules node, both of which are arrays.
+* Under `experimental_authentication`, one `authenticators` node and one `rules` node, both of which are arrays.
 * Authenticators: Lets you declare a type of token or credential, which in this case is an edge key. It includes the following properties:
    * name - a descriptive string.
-   * type - must be edge.
-   * edgeKey1 - its value must reference a secret token, which should not be stored in git, but rather declared as a [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md) of type secret. For the Service Applied field, select All. It is recommended that the value (for example,`${{CDN_EDGEKEY_052824}}`) reflects the day it was added.
-   * edgeKey2 - used for the rotation of secrets, which is described in the [rotating secrets section](#rotating-secrets) below. At least one of `edgeKey1` and `edgeKey2` must be declared.
-   * OnFailure - defines the action, either `log` or `block`, when a request doesn't match either `edgeKey1` or `edgeKey2`. For `log`, request processing will continue, while `block` will serve a 403 error. The `log` value is useful when testing a new token on a live site since you can first confirm that the CDN is correctly accepting the new token before changing to `block` mode; it also reduces the chance of lost connectivity between the customer CDN and the Adobe CDN, as a result of an incorrect configuration.
+   * type - must be `edge`.
+   * edgeKey1 - the value of the *X-AEM-Edge-Key*, which must reference a secret token, which should not be stored in git, but rather declared as a [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md) of type secret. For the Service Applied field, select All. It is recommended that the value (for example,`${{CDN_EDGEKEY_052824}}`) reflects the day it was added.
+   * edgeKey2 - used for the rotation of secrets, which is described in the [rotating secrets section](#rotating-secrets) below. Define it similarly to edgeKey1. At least one of `edgeKey1` and `edgeKey2` must be declared.
+<!--   * OnFailure - defines the action, either `log` or `block`, when a request doesn't match either `edgeKey1` or `edgeKey2`. For `log`, request processing will continue, while `block` will serve a 403 error. The `log` value is useful when testing a new token on a live site since you can first confirm that the CDN is correctly accepting the new token before changing to `block` mode; it also reduces the chance of lost connectivity between the customer CDN and the Adobe CDN, as a result of an incorrect configuration. -->
 * Rules: Lets you declare which of the authenticators should be used, and whether it's for the publish and/or preview tier.  It includes:
    * name - a descriptive string.
    * when - a condition that determines when the rule should be evaluated, according to the syntax in the [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md) article. Typically, it will include a comparison of the current tier (for example., publish) so all live traffic is validated as routing through the customer CDN.
    * action - must specify "authenticate", with the intended authenticator referenced.
 
 >[!NOTE]
->The Edge Key must be configured as a [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md) variable of type `secret`, before the configuration referencing it is deployed.
+>The Edge Key must be configured as a [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md) variable of type `secret` (with *All* selected for Service Applied), before the configuration referencing it is deployed.
 
 ## Purge API Token {#purge-API-token}
 
-Customers can purge the CDN cache by using a declared Purge API token. The token is declared with the syntax below.  See the [Common Setup](#common-setup) section to learn how to deploy it.
+Customers can [purge the CDN cache](/help/implementing/dispatcher/cdn-cache-purge.md) by using a declared Purge API token. The token is declared with the syntax below.  See the [Common Setup](#common-setup) section to learn how to deploy it.
 
 ```
 
@@ -83,11 +85,11 @@ data:
          purgeKey1: ${{CDN_PURGEKEY_031224}}
          purgeKey2: ${{CDN_PURGEKEY_021225}}
     rules:
-     - name: purge-auth-rule
-       when: { reqProperty: tier, equals: "publish" }
-       action:
-         type: authenticate
-         authenticator: purge-auth
+       - name: purge-auth-rule
+         when: { reqProperty: tier, equals: "publish" }
+         action:
+           type: authenticate
+           authenticator: purge-auth
 
 ```
 
@@ -95,8 +97,8 @@ The syntax includes:
 
 * kind, version, and metadata.
 * data node that contains a child `experimental_authentication` node (the experimental prefix will be removed when the feature is released).
-* Under `experimental_authentication`, with a single one authenticators node.
-* Authenticators: Lets you declare a type of token or credential, which in this case is an purge key. It includes the following properties::
+* Under `experimental_authentication`, one `authenticators` node and one `rules` node, both of which are arrays.
+* Authenticators: Lets you declare a type of token or credential, which in this case is an purge key. It includes the following properties:
   * name - a descriptive string.
   * type - must be purge.
   * purgeKey1 - its value must reference a secret token, which should not be stored in git, but rather declared as [Cloud Manager Environment Variables](/help/implementing/cloud-manager/environment-variables.md) of type `secret`.
@@ -106,6 +108,61 @@ The syntax includes:
   * name - a descriptive string
   * when - a condition that determines when the rule should be evaluated, according to the syntax in the [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md) article. Typically, it will include a comparison of the current tier (for example., publish).
   * action - must specify "authenticate", with the intended authenticator referenced.
+
+>[!NOTE]
+>The Edge Key must be configured as a [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md) variable of type `secret`, before the configuration referencing it is deployed.
+
+## Basic Authentication {#basic-auth}
+
+Protect certain content resources by popping up a basic auth dialog requiring a username and password. This feature is primarily intended for light authentication use cases such as business stakeholder review of content, rather than as a full-fledged solution for end-user access rights.
+
+The end user will experience a basic auth dialog popping up like the following:
+
+ ![basicauth-dialog](/help/implementing/dispatcher/assets/basic-auth-dialog.png)
+
+
+The syntax is declared as described below. See the [Common Setup](#common-setup) section below for infromation about how to deploy it.
+
+```
+
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  experimental_authentication:
+    authenticators:
+       - name: my-basic-authenticator
+         type: basic
+         credentials:
+           - user: johndoe
+             password: ${{JOHN_DOE_PASSWORD}}
+           - user: janedoe
+             password: ${{JANE_DOE_PASSWORD}}
+    rules:
+       - name: basic-auth-rule
+         when: { reqProperty: path, like: "/summercampaign" }
+         action:
+           type: authenticate
+           authenticator: my-basic-authenticator
+
+```
+
+The syntax includes:
+
+* kind, version, and metadata.
+* a data node that contains an `experimental_authentication` node (the experimental prefix will be removed when the feature is released).
+* Under `experimental_authentication`, one `authenticators` node and one `rules` node, both of which are arrays.
+* Authenticators: in this scenario declare a basic authenticator, which has the following structure:
+  * name - a descriptive string
+  * type - must be `basic`
+  * an array of credentials, each of which includes the following name/value pairs, which end-users can enter in the basic auth dialog:
+    * user - the name of user
+    * password - its value must reference a secret token, which should not be stored in git, but rather declared as Cloud Manager Environment Variables of type secret (with **All** selected as the service field)
+* Rules: Lets you declare which of the authenticators should be used, and which resources should be protected. Each rule includes:
+  * name - a descriptive string
+  * when - a condition that determines when the rule should be evaluated, according to the syntax in the [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md) article. Typically, it will include a comparison of the publish tier or specific paths. 
+  * action - must specify "authenticate", with the intended authenticator referenced, which is basic-auth for this scenario
 
 >[!NOTE]
 >The Edge Key must be configured as a [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md) variable of type `secret`, before the configuration referencing it is deployed.

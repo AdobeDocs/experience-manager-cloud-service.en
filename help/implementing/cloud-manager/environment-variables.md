@@ -44,7 +44,7 @@ Typical use cases for using environment variables include:
 1. Enter the variable details.
    * **Name**
    * **Value**
-   * **Service Appplied** - Defines for which service (Author/Publish/Preview) the variable applies or if it applies to all services
+   * **Service Applied** - Defines for which service (Author/Publish/Preview) the variable applies or if it applies to all services
    * **Type** - Defines if the variable is normal variable or a secret
 
    ![Adding a variable](assets/add-variable.png)

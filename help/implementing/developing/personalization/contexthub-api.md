@@ -2,7 +2,7 @@
 title: ContextHub JavaScript API Reference
 description: The ContextHub JavaScript API is available to your scripts when the ContextHub component has been added to the page
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-feature: Developing
+feature: Developing, Personalization
 role: Admin, Architect, Developer
 ---
 # ContextHub JavaScript API Reference {#contexthub-javascript-api-reference}

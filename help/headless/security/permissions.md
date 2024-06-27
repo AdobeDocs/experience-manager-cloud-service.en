@@ -1,8 +1,9 @@
 ---
 title: Permission considerations for headless content
 description: Learn about different permission and ACL considerations for a headless implementation with Adobe Experience Manager. Understand the different personas and potential permission levels needed for both Author and Publish environments.
-feature: Content Fragments,GraphQL API
+feature: Headless, Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
+role: Admin, Developer
 ---
 # Permission considerations for headless content
 
