@@ -3,6 +3,7 @@ title: Add repeatable sections to a form
 description: Add repeatable sections to an EDS form
 feature: Edge Delivery Services
 exl-id: 062d5a88-48ca-421f-bf0d-1483e3cfee28
+role: Admin, Architect, Developer
 ---
 # Add repeatable sections to a form
 

@@ -27,15 +27,13 @@ Accessible from the [AEM as a Cloud Service Developer Console](/help/implementin
 
 These following conditions must be met to access the AEM as a Cloud Service Developer Console or the Repository browser
 
-To access the AEM as a Cloud Service Developer Console:
+To access the AEM as a Cloud Service Developer Console, see [Developer Console access](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
 
-* For Production programs, users must have the **Cloud Manager - Developer Role** in the Adobe Admin Console
-* For sandbox programs, it is available to any user with a product profile giving them access to AEM as a Cloud Service.
+To access the Repository Browser, the requisites are the same as for the AEM as a Cloud Service Developer Console (specified above). To view the Repository Browser content for a particular instance:
 
-To access the Repository Browser:
+* Author instances: Users with the AEM Users Product Profile for the **Author instance** can view the repository browser with minimal read access; the user's permissions are respected when browsing the repository. Users with the AEM Administrators Product Profile can view the repository browser with full read access.
 
-* Users must have the **Cloud Manager - Developer** Role in the AEM as a Cloud Service Developer Console to view Author and Publish instances.
-* In addition, for author, users with the AEM Users Product Profile can view the repository browser with minimal read access; the user's permissions are respected when browsing the repository. Users with the AEM Administrators Product Profile can view the repository browser with full read access.
+* Publish instances: Users with the AEM Users Product Profile for the **Publish instance** can view the repository browser with minimal read access. Without that product profile set, users will navigate as an anonymous user, and some paths will not appear due to limited permissions.
 
 For more information about setting up user permissions, see the [Cloud Manager Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).
 

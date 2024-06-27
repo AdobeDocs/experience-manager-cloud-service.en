@@ -3,6 +3,8 @@ title: Query and Indexing Best Practices
 description: Learn how to optimize your indexes and queries based on Adobe's best practice guidelines.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
+feature: Operations
+role: Admin
 ---
 # Query and Indexing Best Practices {#query-and-indexing-best-practices}
 
