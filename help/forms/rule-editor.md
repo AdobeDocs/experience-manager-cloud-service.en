@@ -2,7 +2,7 @@
 title: How to use the rule editor to add rules to form fields to add dynamic behavior and build complex logic to an adaptive form?
 description: Adaptive Forms rule editor allows you to add dynamic behavior and build complex logic into forms without coding or scripting.
 feature: Adaptive Forms, Foundation Components
-role: User
+role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
 ---
@@ -12,8 +12,9 @@ exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
 
 | Version | Article link |
 | -------- | ---------------------------- |
+| AEM as a Cloud Service (Foundation Components)    | This article         |
+| AEM as a Cloud Service (Core Components)    | [Click here](/help/forms/rule-editor-core-components.md)       |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html)                  |
-| AEM as a Cloud Service     | This article         |
 
 ## Overview {#overview}
 
@@ -32,6 +33,10 @@ The rule editor provides an intuitive and simplified user interface to write rul
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
 
 Users added to the forms-power-users group can create scripts and edit existing ones. Users in the [!DNL forms-users] group can use the scripts but not create or edit scripts.
+
+## Difference between Rule editor in Core Components and Rule Editor in Foundation Components
+
+{{rule-editor-diff}}
 
 ## Understanding a rule {#understanding-a-rule}
 

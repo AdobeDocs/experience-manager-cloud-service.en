@@ -3,6 +3,7 @@ title: Edit videos
 description: Edit videos using [!DNL Adobe Express] powered options and save updated videos as versions.
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
+feature: Best Practices, Video, Interactive Videos
 ---
 # Edit videos in [!DNL Assets view] {#edit-videos}
 
@@ -87,11 +88,11 @@ Your video is available in GIF format for download. You can either save the edit
 
 ### Next Steps {#next-steps}
 
-* Provide product feedback using the [!UICONTROL Feedback] option available on the Assets view user interface
+* Provide product feedback using the [!UICONTROL Feedback] option available on the Assets view user interface.
 
-* Provide documentation feedback using [!UICONTROL Edit this page] ![edit the page](assets/do-not-localize/edit-page.png) or [!UICONTROL Log an issue] ![create a GitHub issue](assets/do-not-localize/github-issue.png) available on the right sidebar
+* Provide documentation feedback using [!UICONTROL Edit this page] ![edit the page](assets/do-not-localize/edit-page.png) or [!UICONTROL Log an issue] ![create a GitHub issue](assets/do-not-localize/github-issue.png) available on the right sidebar.
 
-* Contact [Customer Care](https://experienceleague.adobe.com/?support-solution=General#support)
+* Contact [Customer Care](https://experienceleague.adobe.com/?support-solution=General#support).
 
 >[!MORELIKETHIS]
 >

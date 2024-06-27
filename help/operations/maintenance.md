@@ -2,6 +2,8 @@
 title: Maintenance Tasks in AEM as a Cloud Service
 description: Learn about maintenance tasks in AEM as a Cloud Service and how to configure them.
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
+feature: Operations
+role: Admin
 ---
 # Maintenance Tasks in AEM as a Cloud Service {#maintenance-tasks-in-aem-as-a-cloud-service}
 

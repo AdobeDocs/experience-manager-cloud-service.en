@@ -3,6 +3,7 @@ title: Configuring CDN Error Pages
 description: Learn how to override the default error page by hosting static files in self-hosted storage such as Amazon S3 or Azure Blob Storage, and referencing them in a configuration file that is deployed using the Cloud Manager Configuration Pipeline.
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
+role: Admin
 ---
 # Configuring CDN Error Pages {#cdn-error-pages}
 

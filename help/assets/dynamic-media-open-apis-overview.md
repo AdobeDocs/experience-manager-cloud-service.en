@@ -9,29 +9,29 @@ In today's fast-paced digital world, unlocking the full potential of your brand'
 
 Dynamic Media with OpenAPI capabilities puts DAM at the core of an agile and efficient content supply chain ecosystem to ensure asset governance and delivery.
 
-## Why use Dynamic Media with OpenAPI capabilities? {#new-dynamic-media-api-features}
+## Why use Dynamic Media with OpenAPI capabilities? {#dynamic-media-open-api-features}
 
 Dynamic Media with OpenAPI capabilities provides the following key benefits:
 
-* **Seamless integrations**: Dynamic Media with OpenAPI capabilities offers a comprehensive set of search and delivery APIs. It allows your developers to easily [integrate delivery of assets with their applications](/help/assets/integrate-new-dynamic-media-apis.md). The applications include Adobe as well as third-party applications. In addition, it provides a [Micro Frontend assets selector user interface](/help/assets/asset-selector.md) to search and select approved assets. The selector can be effortlessly integrated with any application based on JavaScript frameworks such as React JS, Angular JS, and Vanilla JS.
+* **Seamless integrations**: Dynamic Media with OpenAPI capabilities offers a comprehensive set of search and delivery APIs. It allows your developers to easily [integrate delivery of assets with their applications](/help/assets/integrate-dynamic-media-open-apis.md). The applications include Adobe as well as third-party applications. It provides a [Micro Frontend assets selector user interface](/help/assets/asset-selector.md) to search and select approved assets. The selector can be effortlessly integrated with any application based on JavaScript frameworks such as React JS, Angular JS, and Vanilla JS.
 
 * **Centralized management of digital assets**: DAM is the single source of truth for all digital assets. Your digital assets are managed centrally in AEM Assets and delivered to consuming applications by reference using delivery URLs, without copying asset binaries. 
 
 * **Real-time updates**: Any changes made to approved assets in DAM, including version updates and metadata modifications, are automatically reflected in the delivery URLs. With a short Time-to-Live (TTL) value of 10 minutes configured for Dynamic Media with OpenAPI capabilities via CDN, updates become visible across all authoring and published interfaces in under 10 minutes. 
 
-* **Brand consistency**: Only [brand-approved assets](/help/assets/approved-assets.md) are exposed to downstream applications. [Brand Managers and Marketers maintain strict control over brand assets](/help/assets/restrict-assets-delivery.md). Only approved and latest version of the asset is available for use, ensuring brand consistency across all channels and applications.
+* **Brand consistency**: Only [brand-approved assets](/help/assets/approve-assets.md) are exposed to downstream applications. [Brand Managers and Marketers maintain strict control over brand assets](/help/assets/restrict-assets-delivery.md). Only approved and latest version of the asset is available for use, ensuring brand consistency across all channels and applications.
 
 * **Web-optimized delivery**: Digital assets are delivered in web-optimized formats to enhance your digital experiences' Core Web Vitals. This includes support for WebP renditions for images, adaptive streaming through HLS or DASH protocols for videos, and original renditions for documents.
 
-* **Dynamic asset transformation**: Our system allows for on-the-fly image transformation using URL parameters known as image modifiers. [For example, width, height, rotate, flip, quality, crop, and format](/help/assets/deliver-assets-apis.md). Dynamic Media with OpenAPI capabilities also supports image smart crop capabilities. Transformed renditions are generated dynamically and delivered seamlessly via the CDN.
+* **Dynamic asset transformation**: Our system allows for on-the-fly image transformation using URL parameters known as image modifiers. [For example, width, height, rotate, flip, quality, crop, format, and smart crop](/help/assets/deliver-assets-apis.md). Transformed renditions are generated dynamically and delivered seamlessly via the CDN.
 
 * **Secure delivery of assets**: Dynamic Media with OpenAPI capabilities provides a mechanism for control over access to your digital assets. You can specify user roles or groups as metadata for to-be-secured assets and set a predefined timeframe during which [only authorized users can access these assets](/help/assets/restrict-assets-delivery.md). The delivery URLs for secured assets do not resolve for unauthorized users during the restricted period.
 
-* **Data insights to take informed decisions**: Beyond asset management and delivery, it captures delivery data insights into asset deliveries at CDN allowing Brand managers to track delivery metrics across channels. It enables them to take data-driven decisions for continuous optimization of asset governance and delivery strategies.
+* **Data insights to take informed decisions (upcoming)**: Beyond asset management and delivery, it captures delivery data insights into asset deliveries at CDN allowing Brand managers to track delivery metrics across channels. It enables them to take data-driven decisions for continuous optimization of asset governance and delivery strategies.
 
-![New Dynamic Media data flow diagram](assets/dm-openapi-dfd.png)
+![Dynamic Media Open API data flow diagram](assets/dm-openapi-dfd.png)
 
-## Prerequisites to access Dynamic Media with OpenAPI capabilities {#prerequisites-new-dynaminc-media-apis}
+## Prerequisites to access Dynamic Media with OpenAPI capabilities {#prerequisites-dynaminc-media-open-apis}
 
 To access Dynamic Media with OpenAPI capabilities, you must have licences for:
 
@@ -39,9 +39,11 @@ To access Dynamic Media with OpenAPI capabilities, you must have licences for:
 
 * AEM Dynamic Media
 
-## How to enable the Dynamic Media with OpenAPI capabilities? {#enable-new-dynamic-media-apis}
+## How to enable the Dynamic Media with OpenAPI capabilities? {#enable-dynamic-media-open-apis}
 
-Before submitting a request to enable Dynamic Media with OpenAPI capabilities on AEM as a Cloud Service, ensure that it is not already enabled.
+Before submitting a request to enable Dynamic Media with OpenAPI capabilities on AEM as a Cloud Service, ensure that it is not already enabled. 
+
+Once the [Prerequisites](#prerequisites-dynaminc-media-open-apis) are met and if Dynamic Media with OpenAPI capabilities is enabled on your AEM as a Cloud Service instance, there is a Delivery URL available for each approved asset in the repository. For information on how to copy delivery URL, see [Copy delivery URL for approved assets](approve-assets.md#copy-delivery-url-approved-assets) . Adobe recommends using this method to verify that Dynamic Media with OpenAPI capabilities is enabled on AEM as a Cloud Service before submitting a support ticket to enable it.
 
 To enable Dynamic Media with OpenAPI capabilities on AEM as a Cloud Service, submit an Adobe Support ticket with the following details:
 
@@ -57,17 +59,23 @@ To enable Dynamic Media with OpenAPI capabilities on AEM as a Cloud Service, sub
 
 * Details of key customer contacts involved in integration project.
 
+* List of key Adobe account team members (email).
+
 Once you submit the support ticket, Adobe enables Dynamic Media with OpenAPI capabilities on your Cloud Services environment and share the details, such as IMS Client ID, for you to proceed with the integration.
+
+>[!NOTE]
+>
+>Exclude `/conf/global/settings/dam/assets-configurations/assetdelivery` from any content package, to avoid deactivation of Dynamic Media with OpenAPI capabiities.
 
 ## Dive more into key capabilities {#learn-more-key-capabilities}
 
 <table>
 <td>
-   <a href="/help/assets/approved-assets.md">
+   <a href="/help/assets/approve-assets.md">
    <img alt="Approve assets in Experience Manager Assets" src="./assets/approved-assets.jpeg" />
    </a>
    <div>
-      <a href="/help/assets/approved-assets.md">
+      <a href="/help/assets/approve-assets.md">
       <strong>Approve assets in Experience Manager Assets</strong>
       </a>
    </div>
@@ -76,11 +84,11 @@ Once you submit the support ticket, Adobe enables Dynamic Media with OpenAPI cap
    </p>
 </td>
 <td>
-   <a href="/help/assets/integrate-new-dynamic-media-apis.md">
+   <a href="/help/assets/integrate-dynamic-media-open-apis.md">
    <img alt="Integrate AEM Assets with downstream applications" src="./assets/asset-selector-integration.png" />
    </a>
    <div>
-      <a href="/help/assets/integrate-new-dynamic-media-apis.md">
+      <a href="/help/assets/integrate-dynamic-media-open-apis.md">
       <strong>Integrate AEM Assets with downstream applications</strong>
       </a>
    </div>

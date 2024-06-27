@@ -4,6 +4,7 @@ description: Get an introduction to reusing content with AEM's powerful Live Cop
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
+solution: Experience Manager Sites
 ---
 # Reusing Content: Multi Site Manager and Live Copy {#multi-site-manager-and-live-copy}
 

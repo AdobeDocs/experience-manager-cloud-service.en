@@ -26,6 +26,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2024 {#2024}
+      + [Release Notes for 2024.4.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-4-0.md)
       + [Release Notes for 2024.3.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-3-0.md)
       + [Release Notes for 2024.1.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-1-0.md)
     + 2023 {#2023}
@@ -75,6 +76,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2024 {#2024}
+      + [Maintenance Release Notes for 2024.6.0](/help/release-notes/maintenance/2024/2024-6-0.md)
       + [Maintenance Release Notes for 2024.5.0](/help/release-notes/maintenance/2024/2024-5-0.md)
       + [Maintenance Release Notes for 2024.4.0](/help/release-notes/maintenance/2024/2024-4-0.md)
       + [Maintenance Release Notes for 2024.3.0](/help/release-notes/maintenance/2024/2024-3-0.md) 
@@ -92,6 +94,7 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
     + 2024 {#2024}
+      + [Release Notes for 2024.5.0](/help/implementing/cloud-manager/release-notes/2024/2024-5-0.md)
       + [Release Notes for 2024.4.0](/help/implementing/cloud-manager/release-notes/2024/2024-4-0.md)
       + [Release Notes for 2024.3.0](/help/implementing/cloud-manager/release-notes/2024/2024-3-0.md)
       + [Release Notes for 2024.2.0](/help/implementing/cloud-manager/release-notes/2024/2024-2-0.md)
@@ -417,6 +420,7 @@ user-guide-title: AEM as a Cloud Service
     + [Exporting Content Fragments to Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
     + [Exporting Experience Fragments to Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
     + [Integrating with Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
+  + [Real Use Monitoring for AEM as a Cloud Service](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
   + [Overview and what's new](/help/assets/overview.md)
   + [Notable Changes to [!DNL Assets] as a [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
@@ -498,6 +502,7 @@ user-guide-title: AEM as a Cloud Service
     + Dynamic Media Journey: The Basics {#dm-journey}
       + [Part I: What is Dynamic Media - Use cases - How an asset flows through the system](/help/assets/dynamic-media/dm-journey-part1.md)
       + [Part II: Anatomy of a Dynamic Media URL - Fundamentals of image presets - About Image sets, Spin sets, and Mixed Media sets](/help/assets/dynamic-media/dm-journey-part2.md)
+      + [Dynamic Media best practices](/help/assets/dynamic-media/dm-best-practices.md)
     + [Dynamic Media newsletter archive by Experience League](/help/assets/dynamic-media/dynamic-media-newsletter.md)
     + [Set up Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
     + [Work with Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
@@ -548,6 +553,16 @@ user-guide-title: AEM as a Cloud Service
     + [HTTP2 Delivery of Content FAQ](/help/assets/dynamic-media/http2faq.md)
     + [Flash Viewers End-of-Life](/help/assets/dynamic-media/flash-viewers-eol.md)
     + [DHTML Viewers End-of-Life](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
+    + Dynamic Media with OpenAPI capabilities {#dynamic-media-open-apis}
+       + [Overview](/help/assets/dynamic-media-open-apis-overview.md)
+       + [Approve assets](/help/assets/approve-assets.md)
+       + [Integration with downstream applications](/help/assets/integrate-dynamic-media-open-apis.md)
+       + [Search assets API](/help/assets/search-assets-api.md)
+       + [Delivery APIs](/help/assets/deliver-assets-apis.md)
+       + [Restrict assets delivery](/help/assets/restrict-assets-delivery.md)
+       + [Integrate remote AEM Assets with AEM Sites](/help/assets/integrate-remote-approved-assets-with-sites.md)
+       + [Frequently asked questions](/help/assets/dynamic-media-open-apis-faqs.md)
+       + [Configure custom domain](/help/assets/configure-custom-domain.md)
   + Working with Assets view {#assets-view}
     + [Introduction](/help/assets/assets-view-introduction.md)
     + [Getting started](/help/assets/get-started-assets-view.md)
@@ -568,6 +583,19 @@ user-guide-title: AEM as a Cloud Service
     + [Manage reports](/help/assets/manage-reports-assets-view.md)
     + [Manage tags](/help/assets/tagging-management-assets-view.md)
     + [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
+  + Manage Content Hub {#content-hub}
+    + [Overview](/help/assets/product-overview.md)
+    + [Deploy Content Hub](/help/assets/deploy-content-hub.md)
+    + [Configure Content Hub user interface](/help/assets/configure-content-hub-ui-options.md)
+    + [Upload or Import brand-approved assets to Content Hub](/help/assets/upload-brand-approved-assets.md)
+    + [Search assets in Content Hub](/help/assets/search-assets-content-hub.md)
+    + [Asset properties](/help/assets/asset-properties-content-hub.md)
+    + [Share assets in Content Hub](/help/assets/share-assets-content-hub.md)
+    + [Download assets using Content Hub](/help/assets/download-assets-content-hub.md)
+    + [Manage collections in Content Hub](/help/assets/collections-content-hub.md)
+    + [Edit images using Adobe Express in Content Hub](/help/assets/edit-images-content-hub.md)
+    + [Asset Insights in Content Hub](/help/assets/insights-content-hub.md)    
   + Best practices{#best-practices}
     + [Search best practices](/help/assets/search-best-practices.md)
     + [Metadata management and best practices](/help/assets/metadata-best-practices.md)
@@ -589,6 +617,7 @@ user-guide-title: AEM as a Cloud Service
   + Overview {#forms-overview}
     + [Introduction](/help/forms/home.md)
     + [Top Adobe Experience Manager Forms innovations](/help/forms/latest-innovations.md)
+    + [Early Access (EA) capabilities](/help/forms/early-access-ea-features.md)
     + [Notable changes](/help/forms/notable-changes.md)
     + [Architecture](/help/forms/aem-forms-cloud-service-architecture.md)
     + [Frequently asked questions](/help/forms/faq.md)
@@ -656,7 +685,9 @@ user-guide-title: AEM as a Cloud Service
         +  [Add rules to an Adaptive Form based on Core Components](/help/forms/rule-editor-core-components.md)
         +  [Design JSON Schema for an Adaptive Form (Core Components)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
         +  [Add versionings, comments, and annotations to an Adaptive Form](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
-        +  [Compare Adaptive Forms](/help/forms/compare-forms.md)  
+        +  [Compare Adaptive Forms](/help/forms/compare-forms.md) 
+        +  [Converting Adaptive Forms based on foundation components to Core Component-based forms using migration utility tool](/help/forms/migration-utility-tool-for-af-core-components.md)
+        +  [Save an Adaptive Form as a Draft](/help/forms/save-core-component-based-form-as-draft.md)
     + Foundation Components {#authoring-adaptive-forms-foundation-components}
       + Convert your PDF forms to Adaptive Forms {#afcs}
         + [Introduction to Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
@@ -731,6 +762,7 @@ user-guide-title: AEM as a Cloud Service
     + [Installation and configuration](/help/forms/troubleshooting-installation-and-configuration.md)
     + [Dispatcher and CDN caching](/help/forms/troubleshooting-caching-performance.md)
     + [Restarting AEM SDK](/help/forms/restart-aem-sdk.md)
+    + [Resolving Forms creation failures](/help/forms/form-creation-failing.md)
 + Screens {#screens-as-cloud-service}
   + Overview to Screens as a Cloud Service {#overview}
     + [Introduction](/help/screens-cloud/introduction/introduction.md)
@@ -809,14 +841,14 @@ user-guide-title: AEM as a Cloud Service
 + Edge Delivery Services {#edge-delivery}
   + [Edge Delivery Services Overview](/help/edge/overview.md)
   + [Using Edge Delivery Services with AEM](/help/edge/using.md)
-  + AEM-Based Authoring {#aem-authoring}
-    + [Authoring Content for Edge Delivery](/help/edge/aem-authoring/authoring.md)
-    + [Publishing Content for Edge Delivery](/help/edge/aem-authoring/publishing.md)
-    + [Developer Getting Started Guide](/help/edge/aem-authoring/edge-dev-getting-started.md)
-    + [Creating Blocks](/help/edge/aem-authoring/create-block.md)
-    + [Content Modeling](/help/edge/aem-authoring/content-modeling.md)
-    + [Tabular Data and Spreadheets](/help/edge/aem-authoring/tabular-data.md)
-    + [Existing Projects and Edge Delivery](/help/edge/aem-authoring/existing-projects.md)
+  + WYSIWYG Authoring {#wysiwyg-authoring}
+    + [Authoring Content for Edge Delivery](/help/edge/wysiwyg-authoring/authoring.md)
+    + [Publishing Content for Edge Delivery](/help/edge/wysiwyg-authoring/publishing.md)
+    + [Developer Getting Started Guide](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
+    + [Creating Blocks](/help/edge/wysiwyg-authoring/create-block.md)
+    + [Content Modeling](/help/edge/wysiwyg-authoring/content-modeling.md)
+    + [Tabular Data and Spreadheets](/help/edge/wysiwyg-authoring/tabular-data.md)
+    + [Existing Projects and Edge Delivery](/help/edge/wysiwyg-authoring/existing-projects.md)
   + Document-Based Authoring {#document-authoring}
     + [Authoring](/help/edge/docs/authoring.md)
     + [Bulk Metadata](/help/edge/docs/bulk-metadata.md)
@@ -964,6 +996,7 @@ user-guide-title: AEM as a Cloud Service
       + [Creating Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
       + [Editing Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
       + [Hibernating Environments](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
+      + [Edge Delivery Services Support](/help/implementing/cloud-manager/edge-delivery-services.md)
     + Creating an AEM Application Project {#create-application-project}
       + [Project Creation Wizard](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
       + [Project Setup](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
@@ -971,12 +1004,16 @@ user-guide-title: AEM as a Cloud Service
     + [Managing Environments](/help/implementing/cloud-manager/manage-environments.md)
     + Managing your Code {#managing-code}
       + [Maven Project Version Handling](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
-      + [Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
+      + [Managing Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
+      + [Adding Adobe Repositories](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+      + [Adding Private Repositories](/help/implementing/cloud-manager/managing-code/private-repositories.md)
       + [Accessing Repositories](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+      + [Git Submodule Support](/help/implementing/cloud-manager/managing-code/git-submodules.md)
       + [Using git with Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
       + [Using Multiple Repositories](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
       + [Enterprise Development Team Setup](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
-      + [Working with Your Own GitHub Repositories](/help/implementing/cloud-manager/managing-code/byo-github.md)
+      + [GitHub Check Configuration](/help/implementing/cloud-manager/managing-code/github-check-config.md)
+      + [GitHub Check Annotations](/help/implementing/cloud-manager/managing-code/github-annotations.md)
     + [Environment Variables](/help/implementing/cloud-manager/environment-variables.md)
     + Cloud Manager CI-CD Pipelines {#cicd-pipelines}
       + [Introduction](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
@@ -1014,6 +1051,7 @@ user-guide-title: AEM as a Cloud Service
       + [Configuring DNS Settings](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
       + [Checking DNS Record Status](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
       + [Managing Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
+      + [Domain Validated (DV) Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)
     + IP Allow Lists {#ip-allow-lists}
       + [Introduction](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
       + [Adding an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
@@ -1030,6 +1068,7 @@ user-guide-title: AEM as a Cloud Service
     + [AEM Rapid Development Environments](/help/implementing/developing/introduction/rapid-development-environments.md)
     + [AEM as a Cloud Service Development Guidelines](/help/implementing/developing/introduction/development-guidelines.md)
     + [Logging](/help/implementing/developing/introduction/logging.md)
+    + [Log Forwarding](/help/implementing/developing/introduction/log-forwarding.md)
     + [Configurations and the Configuration Browser](/help/implementing/developing/introduction/configurations.md)
     + [AEM Technical Foundations](/help/implementing/developing/introduction/aem-technologies.md)
     + [API Reference Materials](/help/implementing/developing/reference-materials.md)
@@ -1071,18 +1110,19 @@ user-guide-title: AEM as a Cloud Service
       + [Custom Error Pages](/help/implementing/developing/introduction/custom-error-page.md)
       + [AEM Node Types](/help/implementing/developing/introduction/node-types.md)
     + Universal Editor {#universal-editor}
-      + [Universal Editor Introduction](/help/implementing/universal-editor/introduction.md)
-      + [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md)
-      + [SecurBank Sample App](/help/implementing/universal-editor/securbank.md)
-      + [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md)
-      + [Universal Editor Developer Overview](/help/implementing/universal-editor/developer-overview.md)
+      + [Introduction](/help/implementing/universal-editor/introduction.md)
+      + [Use Cases](/help/implementing/universal-editor/use-cases.md)
       + [Attributes and Item Types](/help/implementing/universal-editor/attributes-types.md)
       + [Model Definitions, Fields, and Component Types](/help/implementing/universal-editor/field-types.md)
-      + [Universal Editor Authentication](/help/implementing/universal-editor/authentication.md)
-      + [Local AEM Development with the Universal Editor](/help/implementing/universal-editor/local-dev.md)
-      + [Universal Editor Calls](/help/implementing/universal-editor/calls.md)
+      + [SecurBank Sample App](/help/implementing/universal-editor/securbank.md)
       + [Events](/help/implementing/universal-editor/events.md)
-      + [Customizing the Universal Editor](/help/implementing/universal-editor/customizing.md)
+      + [Customizing](/help/implementing/universal-editor/customizing.md)     
+      + [Architecture](/help/implementing/universal-editor/architecture.md)
+      + [Authentication](/help/implementing/universal-editor/authentication.md)
+      + [Getting Started](/help/implementing/universal-editor/getting-started.md)
+      + [Developer Overview](/help/implementing/universal-editor/developer-overview.md)
+      + [Local AEM Development](/help/implementing/universal-editor/local-dev.md)
+      + [Calls](/help/implementing/universal-editor/calls.md) 
     + [Headless Experience Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
     + Hybrid and SPA Development {#hybrid}
       + [Hybrid and SPA with AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
@@ -1172,7 +1212,9 @@ user-guide-title: AEM as a Cloud Service
     + [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
     + [Configuring Traffic at the CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md)
     + [Edge Side Includes](/help/implementing/dispatcher/edge-side-includes.md)
+    + [Configuring CDN Credentials and Authentication](/help/implementing/dispatcher/cdn-credentials-authentication.md)
     + [Configuring CDN error pages](/help/implementing/dispatcher/cdn-error-pages.md)
+    + [Purging the CDN cache](/help/implementing/dispatcher/cdn-cache-purge.md)
     + [Caching in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md)
 + Connectors {#connectors}
   + [Implementing an AEM Connector](/help/connectors/implement.md)
@@ -1186,7 +1228,6 @@ user-guide-title: AEM as a Cloud Service
   + [Additional Publish Regions](/help/operations/additional-publish-regions.md)
   + [Infrastructure and Service Monitoring in AEM as a Cloud Service](/help/operations/monitoring.md)
   + [Maintenance Tasks](/help/operations/maintenance.md)
-  + [Backup and Restore](/help/operations/backup.md)
   + [Self-Service Restore](/help/operations/restore.md)
   + [Asynchronous Jobs](/help/operations/asynchronous-jobs.md)
   + [Removal of the generic lucene index](/help/operations/removal-generic-lucene-index.md)

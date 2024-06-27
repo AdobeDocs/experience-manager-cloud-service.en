@@ -2,6 +2,8 @@
 title: ContextHub
 description: ContextHub is a framework for storing, manipulating, and presenting context data
 exl-id: 604477c6-d96a-441f-b5fc-5def93832478
+feature: Developing, Personalization
+role: Admin, Architect, Developer
 ---
 # ContextHub {#contexthub}
 

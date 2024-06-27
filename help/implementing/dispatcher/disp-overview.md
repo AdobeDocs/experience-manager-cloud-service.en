@@ -3,6 +3,7 @@ title: Dispatcher in the Cloud
 description: Learn about Dispatcher tools, the supported Apache modules and the legacy and flexible modes.
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
+role: Admin
 ---
 # Dispatcher in the Cloud {#Dispatcher-in-the-cloud}
 

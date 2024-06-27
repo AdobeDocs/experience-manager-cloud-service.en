@@ -2,6 +2,9 @@
 title: Creating Sandbox Programs 
 description: Learn how to use Cloud Manager to create your own sandbox program for training, demo, POC, or other non-production purposes.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 # Creating Sandbox Programs {#create-sandbox-program}
 

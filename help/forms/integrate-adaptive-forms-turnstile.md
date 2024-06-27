@@ -5,6 +5,8 @@ topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Foundation Components
 hide: yes
 hidefromtoc: yes
+exl-id: 644c351b-a167-4d18-8b99-b7cae6be48d5
+role: User, Developer
 ---
 <span class="preview"> This feature is under Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
 
