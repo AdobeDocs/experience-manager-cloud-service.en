@@ -46,7 +46,9 @@ For example, search for all the **[!UICONTROL JPEG]** images with keyword `archi
 
 Use the Filters panel to search for assets based on metadata. You can filter search results based on various search predicates. You can select all the appropriate predicates to minimize or narrow down your search results. When you select multiple options within a filter, Content Hub displays the assets that match any of the options selected within a filter. However, when you select multiple options across filters, Content Hub only displays the assets that match all options selected across filters to narrow down your search results. 
 
-Administrators can also configure the filters that display in the list of filters. For more information, see [Configure Content Hub user interface](configure-content-hub-ui-options.md#configure-filters-content-hub).
+The default filters include file format, approved by, date approved, expired and not expired assets, and expiration date. Administrators can also configure the filters that display in the list of filters. For more information, see [Configure Content Hub user interface](configure-content-hub-ui-options.md#configure-filters-content-hub).
+
+<!--
 
 <table>
     <tbody>
@@ -113,8 +115,7 @@ Administrators can also configure the filters that display in the list of filter
       <td>Classification of assets based on their theme. For example, colorful, hiking, outdoors.</td>
       <td>NA</td>
      </tr>
-     -->
-     <tr>
+          <tr>
       <td>Last modified</td>
       <td>Search assets based on their last modification. Specify the date range using the Start date and End date fields.</td>
       <td>
@@ -129,7 +130,6 @@ Administrators can also configure the filters that display in the list of filter
       <td>Unique number that identifies the asset.</td>
       <td>NA</td>
      </tr>
-     -->
      <tr>
       <td> Colors </td>
       <td> Helps you search assets using colors that are automatically identified in an asset using Adobe's Sensei AI capabilities.</td>
@@ -137,6 +137,8 @@ Administrators can also configure the filters that display in the list of filter
      </tr>  
     </tbody>
    </table>
+
+-->
 
 ## Do more with search {#do-more-with-search}
 
