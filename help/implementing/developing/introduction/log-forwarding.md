@@ -222,7 +222,7 @@ Considerations:
          host: "example.com"
          user: "${{ELASTICSEARCH_USER}}"
          password: "${{ELASTICSEARCH_PASSWORD}}"
-         pipeline: "ingestion pipeline name"
+         pipeline: "ingest pipeline name"
    
    ```
 
@@ -232,7 +232,7 @@ Considerations:
 
 ![Elastic deployment credentials](/help/implementing/developing/introduction/assets/ec-creds.png)
 
-* The optional pipeline property should be set to the name of the Elasticsearch or OpenSearch ingestion pipeline, which can be configured to route the log entry to the appropriate index. The pipeline's Processor type must be set to *script* and the script language should be set to *painless*. Here is a sample script snippet to route log entries into an index such as aemaccess_dev_26_06_2024:
+* The optional pipeline property should be set to the name of the Elasticsearch or OpenSearch ingest pipeline, which can be configured to route the log entry to the appropriate index. The pipeline's Processor type must be set to *script* and the script language should be set to *painless*. Here is a sample script snippet to route log entries into an index such as aemaccess_dev_26_06_2024:
 
 ```
 def envType = ctx.aem_env_type != null ? ctx.aem_env_type : 'unknown';
