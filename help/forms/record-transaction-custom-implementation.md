@@ -3,6 +3,7 @@ title: Record a transaction for custom implementations
 description: Use the TransactionRecorder API to record actions which are not accounted as transactions automatically
 feature: Adaptive Forms, Foundation Components
 exl-id: cb584f78-30af-4a58-be99-843352e8249c
+role: Admin, Developer, User
 ---
 # Record a transaction for custom implementations {#record-a-transaction-for-custom-implementations}
 
