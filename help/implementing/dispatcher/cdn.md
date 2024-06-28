@@ -134,6 +134,10 @@ A common cause for this is when a rule has been created but is not matching the 
 
 This problem can be triaged by checking your AEM as a Cloud Service CDN logs and verifying the needed request headers.
 
+**Too Many Redirects Loop**
+
+When a page gets a "Too Many Redirect" loop, this is often caused by a combination of the headers being sent and the rewrite rules. For example, if a customer's managed CDN host header is set to mysite.com, and a CDN rule always sets a rule to include mysite.com in the host header, then a loop can be initiated.
+
 ## Geolocation Headers {#geo-headers}
 
 The AEM-managed CDN adds headers to each request with:
