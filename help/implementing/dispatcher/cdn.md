@@ -139,7 +139,7 @@ When a page gets a "Too Many Redirect" loop, some request header is being added 
 2. A request for an apex domain matches this CDN rule, which adds the apex domain as the X-Forwarded-Host header.
 2. A request is sent to the origin where a redirect matches the host header explicitly for the apex domain (e.g, ^example.com).
 3. A rewrite rule is triggered, which rewrites the request for the apex domain to https with the www subdomain.
-4. That redirect is then sent to the customer's edge, where the CDN rule is re-triggered, and the process starts over until the request is blocked.
+4. That redirect is then sent to the customer's edge, where the CDN rule is re-triggered re-adding the X-Forwarded-Host header for the apex domain not the www subdomain. Then the process starts over until the request fails.
 
 To resolve this problem, assess your SSL redirect strategy, CDN rules, and redirect and rewrite rule combinations.
 
