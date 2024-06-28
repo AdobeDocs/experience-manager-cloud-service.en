@@ -130,6 +130,8 @@ Presented below are several configuration examples from several leading CDN vend
 
 When a request from a customer-managed CDN to the publish service endpoint receives a 403 forbidden response the request is missing required headers. The sample configurations provided show the base settings needed, but a customer configuration may have other impacting rules that remove, modify, or re-arrange the headers needed for AEM as a Cloud Service to serve the traffic.
 
+A common cause for this is when a rule has been created but is not matching the traffic. For example, if a rule is set to match on the apex domain (mysite.com), but not the www domain (www.mysite.com), the rule would not be applied on any of the www domain traffic.
+
 This problem can be triaged by checking your AEM as a Cloud Service CDN logs and verifying the needed request headers.
 
 ## Geolocation Headers {#geo-headers}
