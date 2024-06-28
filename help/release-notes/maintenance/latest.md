@@ -73,6 +73,12 @@ Summarized below are the continuous improvements for maintenance release X, whic
 * SITES-22106: Language Switch Functionality Issue in New Content Fragment Editor
 * SITES-21980: Inconsistent handling for UUID-based reference types
 * SITES-7257: NPE in ThumbnailServlet
+* FORMS-14844: Adaptive Forms allow form submission despite failing reCAPTCHA verification.
+* FORMS-14984: Forms with CAPTCHA skip validation if "submitMetaData" is absent in submitted data.
+* FORMS-14477: The "Is After" and "Is Before" options in the rules editor malfunction in Date Picker validation.
+* FORMS-14019: Rule editor's "Invoke Service" functionality is not working in Universal Editor.
+* FORMS-14336: When no form field is selected, editor should open with focus on the entire form element.
+* FORMS-15061: Loader circle persists indefinitely upon using invoke service option in the rule editor.
 
 ### Known Issues {#known-issues-X}
 
