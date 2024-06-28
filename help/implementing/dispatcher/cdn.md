@@ -136,7 +136,7 @@ This problem can be triaged by checking your AEM as a Cloud Service CDN logs and
 
 **Too Many Redirects Loop**
 
-When a page gets a "Too Many Redirect" loop, this is often caused by a combination of the headers being sent and the rewrite rules. For example, if a customer's managed CDN host header is set to mysite.com, and a CDN rule always sets a rule to include mysite.com in the host header, then a loop can be initiated.
+When a page gets a "Too Many Redirect" loop, this is often caused by a combination of the headers being sent and the rewrite rules. As an example, if a redirect rule is set to "RewriteCond %{HTTP_HOST} ^mysite.com [NC]", and the CDN always sets the header to "mysite.com", instead of "www.mysite.com", then the redirect will be forced into a loop. This specific scenario would be resolved by setting the CDN to set the host header to www.mysite.com instead of the apex domain. However, a variation of this problem may occur.
 
 ## Geolocation Headers {#geo-headers}
 
