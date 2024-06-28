@@ -124,6 +124,14 @@ Presented below are several configuration examples from several leading CDN vend
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
 
+### Common Errors
+
+**Redirection to the Publish Service Endpoint**
+
+When a request from a customer-managed CDN to the publish service endpoint receives a 403 forbidden response the request is missing required headers. The sample configurations provided show the base settings needed, but a customer configuration may have other impacting rules that remove, modify, or re-arrange the headers needed for AEM as a Cloud Service to serve the traffic.
+
+This problem can be triaged by checking your AEM as a Cloud Service CDN logs and verifying the needed request headers.
+
 ## Geolocation Headers {#geo-headers}
 
 The AEM-managed CDN adds headers to each request with:
