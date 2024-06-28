@@ -128,15 +128,23 @@ Presented below are several configuration examples from several leading CDN vend
 
 **Redirection to the Publish Service Endpoint**
 
-When a request from a customer-managed CDN to the publish service endpoint receives a 403 forbidden response the request is missing required headers. The sample configurations provided show the base settings needed, but a customer configuration may have other impacting rules that remove, modify, or re-arrange the headers needed for AEM as a Cloud Service to serve the traffic.
+When a request receives a 403 forbidden response the cause is that the request is missing some required headers. The sample configurations provided show the base settings needed, but a customer configuration may have other impacting rules that remove, modify, or re-arrange the headers needed for AEM as a Cloud Service to serve the traffic.
 
-A common cause for this is when a rule has been created but is not matching the traffic. For example, if a rule is set to match on the apex domain (mysite.com), but not the www domain (www.mysite.com), the rule would not be applied on any of the www domain traffic.
+A common cause for this is when a rule has been created but is not matching the traffic, or applying the correct headers. For example, if a rule is set to match on the apex domain, but not the www domain, the rule would not be applied on any of the www domain traffic.
 
 This problem can be triaged by checking your AEM as a Cloud Service CDN logs and verifying the needed request headers.
 
 **Too Many Redirects Loop**
 
-When a page gets a "Too Many Redirect" loop, this is often caused by a combination of the headers being sent and the rewrite rules. As an example, if a redirect rule is set to "RewriteCond %{HTTP_HOST} ^mysite.com [NC]", and the CDN always sets the header to "mysite.com", instead of "www.mysite.com", then the redirect will be forced into a loop. This specific scenario would be resolved by setting the CDN to set the host header to www.mysite.com instead of the apex domain. However, a variation of this problem may occur.
+When a page gets a "Too Many Redirect" loop, some request header is being added at the CDN that matches a redirect that forces it back to itself. As an example:
+
+1. A CDN rule is created to match either the apex domain or the www domain, and add the X-Forwarded-Host header of the apex domain only.
+2. A request for an apex domain matches this CDN rule, which adds the apex domain as the X-Forwarded-Host header.
+2. A request is sent to the origin where a redirect matches the host header explicitly for the apex domain (e.g, ^example.com).
+3. A rewrite rule is triggered, which rewrites the request for the apex domain to https with the www subdomain.
+4. That redirect is then sent to the customer's edge, where the CDN rule is re-triggered, and the process starts over until the request is blocked.
+
+To resolve this problem, assess your SSL redirect strategy, CDN rules, and redirect and rewrite rule combinations.
 
 ## Geolocation Headers {#geo-headers}
 
