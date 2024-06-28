@@ -7,7 +7,7 @@ feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
 ---
 # Edit images in [!DNL Assets view] {#edit-images-in-assets-view}
 
-The Asset View enables basic image editing, including resizing, background removal, cropping, and converting between JPEG and PNG formats. Additionally, it allows advanced editing through integration with Adobe Express. After editing an image, you can save the new image as a new version. Versioning helps you to revert to the original asset later if needed. To edit an image, [open its preview](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) and click **Edit Image**. 
+The Assets View enables basic image editing, including resizing, background removal, cropping, and converting between JPEG and PNG formats. Additionally, it allows advanced editing through integration with Adobe Express. After editing an image, you can save the new image as a new version. Versioning helps you to revert to the original asset later if needed. To edit an image, [open its preview](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) and click **Edit Image**. 
 
 >[!NOTE]
 >
@@ -17,7 +17,7 @@ The Asset View enables basic image editing, including resizing, background remov
 
 ## Edit image {#edit-image}
 
-Land on Asset View, using the link - [Asset View](https://experience.adobe.com/#/assets) and selecting the right repository. To receive access, contact your organization's administrator.
+Land on Assets View, using the link - [Assets View](https://experience.adobe.com/#/assets) and selecting the right repository. To receive access, contact your organization's administrator.
 For any additional reference information refer - [Get started using Adobe Experience Manager Assets View](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Understand the Assets view user interface](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation), and [Assets View use cases](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
 <!--
 >[!CONTEXTUALHELP]
@@ -82,11 +82,11 @@ Users with Express entitlement can use the embedded Express editor from within t
 ![express in essentials UI](/help/assets/assets/express-in-essentials-ui.jpg)
 To edit images using [!DNL Adobe Express] embedded editor, follow the steps below:
 
-1. Land on to AEM Assets View using the link - [AEM Asset View](https://experience.adobe.com/#/assets) and select the right repository. 
+1. Land on to AEM Assets View using the link - [AEM Assets View](https://experience.adobe.com/#/assets) and select the right repository. 
 1. Click **Assets**, enter a folder, and select an image. 
 1. Click **Open in Adobe Express**. The image opens on an express canvas.
 1. Make the required edits to the image. 
-1. If your project requires you to add more pages, click **Add**, select Assets, enter a folder, select an image to bring onto the canvas page, and then perform the required edits to the image. 
+1. If your project requires you to add more pages, click **Add**, select assets, enter a folder, select an image to bring onto the canvas page, and then perform the required edits to the image. 
 1. To save the image(s), click **Save**. The save dialog box displays. 
 
    >[!NOTE]
