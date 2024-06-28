@@ -43,6 +43,11 @@ To access the Content Hub portal, administrators first need to enable Content Hu
 
 Content Hub is now enabled for Experience Manager Assets as a Cloud Service. 
 
+>[!NOTE]
+>
+>You can access and use Content Hub with up to 250 Content Hub users. Please contact your Adobe representative if you have additional questions. 
+
+
 If you are new to Experience Manager Assets, click **[!UICONTROL Add Program]** and then provide program details (Program Name, set up for Production) and click **[!UICONTROL Continue]**. You can then select **[!UICONTROL Assets]** and **[!UICONTROL Content Hub]** in the **[!UICONTROL Solutions & Add-ons]** tab.
 
 ### Content Hub instance and product profile on Admin Console{#content-hub-instance-product-profile}
