@@ -81,6 +81,14 @@ Dynamic Media with OpenAPI capabilities extends the DAM across Adobe and third-p
 
 Asset Count by asset type and size are now available in the Assets Insights dashboard. These options deliver real-time data in your Assets view environment. They detail the count and percentage of assets by size range and asset type.
 
+**Updates to embedded Adobe Express editor**
+
+* Improved User Experience for saving as a new asset versus saving as a new version.
+
+* Export of multipage Express documents (previously only single page was supported) in both multipage PDF and image formats. Selecting image formats saves each page as a distinct asset in the DAM for downstream distribution.
+
+* Support for adding metadata in the Save dialog while saving an asset.
+
 <!--
 
 
