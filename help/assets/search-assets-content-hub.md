@@ -10,6 +10,10 @@ role: User
 
 When you have a large number of assets in your repository, searching for the right asset is time-consuming. [!DNL The Content Hub] search provides you with the capability to look for the approved assets so that you can perform additional actions on them, such as download, share, or create collections. You can utilize various capabilities to narrow down your search results, such as, performing text-based search, using filters, performing tags or smart tags-specific search, searching for a particular file format, and so on.
 
+## Prerequisites {#prerequisites}
+
+[Content Hub users](deploy-content-hub.md#onboard-content-hub-users) can perform actions mentioned in this article.
+
 ## What you can search for  {#what-you-can-search}
 
 The [!DNL Content Hub] search provides results based on: 
