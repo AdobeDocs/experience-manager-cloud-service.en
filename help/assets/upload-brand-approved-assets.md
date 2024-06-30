@@ -22,7 +22,7 @@ Ensure that you only upload your [brand approved assets to the Content Hub](/hel
 
 ## Prerequisites {#prerequisites-add-assets}
 
-[Content Hub asset consumer users with submission permissions ](/help/assets/deploy-content-hub.md#onboard-content-hub-consumer-users-submission-rights) can upload assets to Content Hub.
+[Content Hub users with rights to add assets](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) can upload assets to Content Hub.
 
 ## Add assets to Content Hub from local file system {#add-assets-local-file-system}
 

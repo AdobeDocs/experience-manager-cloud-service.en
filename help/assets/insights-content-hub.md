@@ -9,6 +9,10 @@ role: User
 
 [!DNL Content Hub] provides valuable insights into assets, addressing a common challenge that marketing stakeholders often encounter - asset usage statistics used in marketing campaigns, channels, and different regions. By gaining a clear understanding of the performance and popularity of the assets, it delivers actionable insights essential for enhancing user experience.
 
+## Prerequisites {#prerequisites}
+
+[Content Hub users](deploy-content-hub.md#onboard-content-hub-users) can perform actions mentioned in this article.
+
 ## View statistics for uploaded assets{#view-statistics-for-uploaded-assets}
 
 You can view statistics of the uploaded assets and collections by navigating to the **[!UICONTROL Insights]** tab. Track the upload history of your assets with the yearly, monthly, and daily asset uploads view.
