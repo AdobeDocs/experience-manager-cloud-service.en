@@ -11,7 +11,7 @@ AEM Forms Edge Delivery Services is a composable set of services that enables a 
 
 These services enable you to:
 
-* **Create enrolment experiences with tools of your choice:** Increase authoring efficiency by decoupling content sources. Out of the box you can use both Document-based Authoring (Microsoft SharePoint or Google Drive) and WYSIWYG Authoring (Adaptive Forms Editor). You can work with multiple content sources on the same forms site and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, or Adaptive Forms Editor.
+* **Create enrolment experiences with tools of your choice:** Increase authoring efficiency by decoupling content sources. Out of the box you can use Document-based Authoring (Microsoft SharePoint or Google Drive), WYSIWYG Authoring (Universal Editor or Adaptive Forms Editor). You can work with multiple content sources on the same forms site and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, Universal Editor, or Adaptive Forms Editor.
 
 * **Deliver exceptional Digital Enrolment experiences:** Deliver Digital Enrolment experiences that load and render quickly and continuously monitor your forms performance through real use monitoring (RUM). Faster loading times and optimized user experience contribute to higher form completion and conversion rates. 
 
@@ -23,7 +23,7 @@ AEM Forms Edge Delivery services  allows for a high degree of flexibility in how
 
 For example, you author forms directly in Microsoft Excel or Google Sheets and these spreadsheets are transformed into forms for your website. Any new form or form content, such as a new form field, is instantly available on your website without requiring a rebuild process.
 
-The following diagram illustrates how you can edit forms in Microsoft Excel or Google Sheets (Document-based Authoring) and publish to Edge Delivery Services. It also shows the AEM publishing method using the Adaptive Forms Editor (WYSIWYG Authoring).
+The following diagram illustrates how you can edit forms in Microsoft Excel or Google Sheets (Document-based Authoring) and publish to Edge Delivery Services. It also shows the AEM publishing method using the WYSIWYG Authoring (Universal Editor or Adaptive Forms Editor).
 
 ![Publish to Edge Delivery Services and AEM](/help/edge/docs/forms/assets/AEM-forms-with-EDS-publishing.png)
 
@@ -42,7 +42,7 @@ The choice between the [Document-based Authoring ](#document-based-authoring-fea
 
 ### Key Features of Document-based Authoring and WYSIWYG Authoring
 
-Document-based Authoring  offers a basic set of features and WYSIWYG Authoring unlocks additional capabilities beyond the Document-based Authoring , empowering you to build more complex and interactive forms. The key features of both Document-based Authoring and WYSIWYG Authoring are:
+Document-based Authoring offers a basic set of features and WYSIWYG Authoring unlocks additional capabilities beyond the Document-based Authoring, empowering you to build more complex and interactive forms. The key features of both Document-based Authoring and WYSIWYG Authoring are:
 
 #### Document-based Authoring features
 
@@ -59,7 +59,7 @@ Document-based Authoring  allows you to create forms using familiar tools like M
 
 #### WYSIWYG Authoring features
 
-WYSIWYG Authoring provides a WYSIWYG interface (Adaptive Forms Editor) for building forms and offers all the capabilities of Document-based Authoring, plus a wide range of additional features:
+WYSIWYG Authoring provides WYSIWYG interfaces (Universal Editor and Adaptive Forms Editor) for building forms and offers all the capabilities of Document-based Authoring, plus a wide range of additional features:
 
 * Advanced rules editor for creating complex logic.
 * Server-side extensibility for custom functionalities.
@@ -71,7 +71,9 @@ WYSIWYG Authoring provides a WYSIWYG interface (Adaptive Forms Editor) for build
 * Form Data Model (FDM) for defining data structure and interactions with various data sources.
 * Ability to choose from multiple submit actions for handling form submissions, including submitting data to Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics, many more data sources.
 
-In essence, [WYSIWYG Authoring](/help/forms/creating-adaptive-form-core-components.md) builds upon the foundation of [Document-based Authoring](/help/edge/docs/forms/create-forms.md), providing a more advanced toolkit for creating and managing complex forms. 
+The all above features are also available via Adaptive Forms Editor. 
+
+In essence, WYSIWYG Authoring (Universal Editor and [Adaptive Forms Editor](/help/forms/creating-adaptive-form-core-components.md)) builds upon the foundation of [Document-based Authoring](/help/edge/docs/forms/create-forms.md), providing a more advanced toolkit for creating and managing complex forms. 
 
 >[!NOTE]
 >

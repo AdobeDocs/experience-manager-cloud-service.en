@@ -3,7 +3,7 @@ title: Launches
 description: Launches enable you to efficiently develop content for a future release. They allow you to make changes ready for future publication, while maintaining your current pages
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
-feature: Authoring
+feature: Authoring, Launches
 role: User
 ---
 # Launches {#launches}

@@ -4,6 +4,7 @@ description: Learn how Content Fragments in AEM as a Cloud Service allow you to 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
+solution: Experience Manager Sites
 ---
 # An overview of working with Content Fragments {#overview-working-with-content-fragments}
 

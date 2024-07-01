@@ -3,7 +3,7 @@ title: Managing Pages in your Launch
 description: You can create new pages within your Launch. You can also delete unwanted pages.
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
 solution: Experience Manager Sites
-feature: Authoring
+feature: Authoring, Launches
 role: User
 ---
 # Managing Pages within your Launch {#managing-pages-in-launch}

@@ -217,11 +217,6 @@ However, with careful coordination, it is possible for more than one developer t
   
 ### Global flags {#global-flags}
 
->[!NOTE]
->
-> These global flags are not yet available. They will be rolled out sometime in June.
-> 
-
 * For a less verbose output, use the quiet flag:
 
   `aio aem rde <command> --quiet`
@@ -558,11 +553,6 @@ You can also reset the RDE using the ellipsis button directly from the **Environ
 For more information about how to use Cloud Manager to manage your environments, see [the Cloud Manager documentation](/help/implementing/cloud-manager/manage-environments.md).
 
 ## Commands that support JSON output {#json-commands}
-
->[!NOTE]
->
-> These commands are not yet available. They will be rolled out sometime in June.
-> 
 
 Most commands support the global ```--json``` flag which suppresses console output and returns valid json to be processed in scripts. Below are some supported commands, with examples of the json output.
 
