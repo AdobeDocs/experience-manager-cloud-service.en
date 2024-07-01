@@ -4,6 +4,7 @@ description: Learn how to use the Assets console to manage your AEM Content Frag
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
+solution: Experience Manager Sites
 ---
 # Managing Content Fragments {#managing-content-fragments}
 

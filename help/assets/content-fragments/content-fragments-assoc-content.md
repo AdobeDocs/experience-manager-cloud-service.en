@@ -4,6 +4,7 @@ description: Understand how the associated content feature for AEM Content Fragm
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
 feature: Content Fragments
 role: User
+solution: Experience Manager Sites
 ---
 # Associated Content{#associated-content}
 

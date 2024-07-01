@@ -3,7 +3,7 @@ title: Learn about defining Metadata and Tagging for Content Fragments
 description: Learn about defining Metadata and Tagging for Content Fragments
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
 solution: Experience Manager
-feature: Headless
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 ---
 # Learn about defining Metadata and Tagging for Content Fragments {#author-headless-metadata-tagging}

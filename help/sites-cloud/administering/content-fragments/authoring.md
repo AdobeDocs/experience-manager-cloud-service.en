@@ -4,6 +4,7 @@ description: Understand how to author content for your Content Fragments, and cr
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
+solution: Experience Manager Sites
 ---
 # Authoring Content Fragments {#authoring-content-fragments}
 

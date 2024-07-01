@@ -4,6 +4,7 @@ description: Learn about using the Live Copy functionality of MSM to use the sam
 exl-id: f050b2d1-856c-4cdb-ac74-bc78016f144a
 feature: Content Fragments
 role: User
+solution: Experience Manager Sites
 ---
 # Reuse Content Fragments using MSM {#reuse-content-fragments-using-msm}
 

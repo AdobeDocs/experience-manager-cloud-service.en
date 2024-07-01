@@ -1,25 +1,25 @@
 ---
-title: Current Early Adopter features of [!DNL Adobe Experience Manager Forms] as a Cloud Service.
-description: Current Early Adopter features of [!DNL Adobe Experience Manager Forms] as a Cloud Service.
+title: Current Early Access features of [!DNL Adobe Experience Manager Forms] as a Cloud Service.
+description: Current Early Access features of [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 Feature: Introduction
 Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
 ---
-# AEM Forms Early Adopter Program
+# AEM Forms Early Access Program
 
-The AEM Forms Early Adopter Program program offers a unique opportunity to you to get exclusive access to cutting-edge features before anyone else, and help shape their development. The program offers you to:
+The AEM Forms Early Access Program program offers a unique opportunity to you to get exclusive access to cutting-edge features before anyone else, and help shape their development. The program offers you to:
 
 * Be among the first to get access to cutting-edge technology before it hits the mainstream.
 * Co-innovate with the product team, shaping the future of the product together. Use your use cases to guide development, ensuring the innovation is mature and address your real-world challenges.
 * Provide feedback and help us squash issues before launch, leading to a smoother user experience upon full release. 
 
-## How to join the Early Adopter program? 
+## How to join the Early Access program? 
 
-If you're interested in joining our Early Adopter program for any early adopter innovation, simply send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  to request access. You can request access to all or any specific innovation.  
+If you're interested in joining our Early Access program for any Early Access innovation, simply send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  to request access. You can request access to all or any specific innovation.  
 
-## Early Adopter Innovations 
+## Early Access Innovations 
 
 ### AEM Forms Generative AI (Gen AI)
 
@@ -69,9 +69,9 @@ Here's what more Conversational Forms bring:
 Conversational Forms are more than just a new look – they're a game-changer for user experience.  Boost engagement, reduce form abandonment, and make interacting with your website a more enjoyable experience for everyone.
 
 
-### AEM-based Authoring for Edge Delivery Services
+### WYSIWYG Authoring for Edge Delivery Services
 
-AEM-based Authoring provides a WYSIWYG interface (Adaptive Forms Editor) to build and publish these forms to Edge Delivery Services. AEM-based Authoring offers all the capabilities of [Document-based Authoring](/help/edge/docs/forms/overview.md#document-based-authoring-features), plus a wide range of additional features:
+WYSIWYG Authoring provides WYSIWYG interfaces (Universal Editor and Adaptive Forms Editor) to build and publish adaptive forms to Edge Delivery Services. WYSIWYG Authoring offers all the capabilities of [Document-based Authoring](/help/edge/docs/forms/overview.md#document-based-authoring-features), plus a wide range of additional features:
 
 * Advanced rules editor for creating complex logic.
 * Server-side extensibility for custom functionalities.
@@ -96,7 +96,7 @@ By streamlining the data transfer process, the connector can help you improve yo
 In essence, AEM Forms to Marketo Connector helps you leverage the strengths of both platforms to create a more efficient and effective marketing funnel.
 
 
-## Additional Early Adopter Innovations
+## Additional Early Access Innovations
 
 ### Right-to-left (RTL) languages support
 
