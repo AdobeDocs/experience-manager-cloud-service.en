@@ -9,13 +9,13 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release X {#release-X}
+## Release 16971 {#release-16971}
 
-Summarized below are the continuous improvements for maintenance release X, which was publicly released on July X, 2024. The previous maintenance release was release 16799.
+Summarized below are the continuous improvements for maintenance release 16971, which was publicly released on July 3, 2024. The previous maintenance release was release 16799.
 
 2024.7.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-X}
+### Enhancements {#enhancements-16971}
 
 * SITES-22948: Remove commerce references in foundation content for AEM CS
 * SITES-22141: [Content Fragments] SegmentNotFoundException from CFM ModelChangeRepositoryImpl after OnRC
@@ -49,7 +49,7 @@ Summarized below are the continuous improvements for maintenance release X, whic
 * SITES-22035: [Xwalk] Improved handling of MSM and Launches
 * SITES-21839: [Xwalk] Improved path mapping and sanitisation for content not served by Edge Delivery
 
-### Fixed Issues {#fixed-issues-X}
+### Fixed Issues {#fixed-issues-16971}
 
 * CQ-4356898: [Translation] outOfMemory error for CF which contains an unusually large number of links.
 * CQ-4357055: [Translation] Auto translation not working using Rest API.
@@ -84,19 +84,19 @@ Summarized below are the continuous improvements for maintenance release X, whic
 * SITES-21980: Inconsistent handling for UUID-based reference types
 * SITES-7257: NPE in ThumbnailServlet
 
-### Known Issues {#known-issues-X}
+### Known Issues {#known-issues-16971}
 
 None.
 
-### Change Notice {#change-notice-X}
+### Change Notice {#change-notice-16971}
 
 * Starting in September 2024, AEM as a Cloud Service will disable the serialization of Resource Resolvers via the Sling Model Exporter framework. See [the documentation](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) for more details.
 
-### Deprecated Features and APIs {#deprecated-X}
+### Deprecated Features and APIs {#deprecated-16971}
 
 To know what is deprecated or removed in AEM as a Cloud Service, see [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md).
 
-### Embedded Technologies {#embedded-tech-X}
+### Embedded Technologies {#embedded-tech-16971}
 
 |Technology|Version|Link|
 |---|---|---|
