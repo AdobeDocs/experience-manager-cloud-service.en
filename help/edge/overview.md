@@ -16,7 +16,29 @@ By using Edge Delivery Services, you can:
 * Increase authoring efficiency by decoupling content sources. Out of the box you can use both WYSIWYG and Document-based Authoring . As such, you can work with multiple content sources on the same website.
 * Use a built-in experimentation framework that allows quick test creation, execution without performance impact and fast release to production of a test winner.
 
-## Overview {#overview}
+## Agile Reaction to Business Needs {#agile-reaction}
+
+As a longstanding industry leader, Adobe knows how important it is to be able to quickly create and publish new, meaningful content for your customers. Common challenges in scaling content creation have been made clear by the market, including:
+
+1. **Demand for content continues to grow.**
+   * There is a need to unlock new content authors to meet this demand.
+   * Content creation process must scale effectively across the business.
+   * Authors must be able to react quickly to changing trends.
+1. **There is a need for omni-channel content.**
+   * Layout control is needed irrespective of content delivery.
+   * Authors need to be empowered to change content layout directly.
+1. **Pressure grows to drive ROI on content.**
+   * Authors themselves need the ability to optimize the content that they create.
+
+These trends have proved themselves consistent across the industry. However individual requirements inevitably vary project to project. The goal of any Edge Delivery Services project is focused on finding the solution that works for your users.
+
+1. **Focus on value instead of features.** - Determine the most optimized workflow to serve your authors rather than getting lost in AEM's expansive feature set.
+1. **Take advantage of AEM's flexibility.** - AEM features don't need to be used in a vacuum. Use those features that you need per use case.
+1. **Leverage your author's expertise.** - Involve real content authors in the project from the beginning to ensure you are delivering the value they need by implementing the features that make sense.
+
+By focusing on value for your authors, your Edge Delivery Services project can meet the modern industry demands facing your content creators and provide content quickly to delight your customers.
+
+## Flexible Authoring Tools for Your Content Creators {#overview}
 
 Edge Delivery Services is a composable set of services that allows for a high degree of flexibility in how you author content on your website. You can use both [AEM content management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) and WYSIWYG authoring using the [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) as well as [document-based authoring.](https://www.aem.live/docs/authoring)
 
@@ -24,7 +46,33 @@ The following diagram illustrates how you can edit content in Microsoft Word (do
 
 ![Edge Delivery Architecture](assets/AEM-with-EDS-publishing-simple2.png)
 
-You can use content directly from Microsoft Word or Google Docs such that those sources become pages on your website. Furthermore, headings, lists, images, font elements can all be transferred from the initial source into the website. The new content is added instantly without a rebuild process.
+Edge Delivery Services uses GitHub so you can manage and deploy code directly from your GitHub repository. New content is added instantly without a rebuild process.
+
+### Document-Based Authoring {#document-based}
+
+With document-based authoring, you can use content directly from Microsoft Word or Google Docs such that those sources become pages on your website. Headings, lists, images, font elements can all be transferred from the initial source into the website.
+
+* With document-based authoring, every marketer is enabled to create content quickly with known authoring tools (Microsoft Word, Google Docs, etc.).
+* Content creation is streamlined by allowing authoring, review, and publishing directly within the source documents.
+* Because known tools are used, zero onboarding is required for content authors, increasing content velocity.
+
+![Document-based authoring](assets/document-based-authoring.png)
+
+### WYSIWYG Authoring {#wysiwyg-authoring}
+
+What-you-see-is-what-you-get (WYSIWYG) authoring leverages the Universal Editor, a customizable, one-stop place to edit content live and in-context with a visual preview.
+
+* With WYSIWYG authoring, you increase author efficiency whether headless or headful.
+* You can take advantage of AEM's comprehensive content-management capabilities including workflow and governance.
+* Leverage numerous extension points to support your own processes and integrations.
+
+![WYSIWYG authoring](assets/wysiwyg-authoring.png)
+
+### Deciding on Your Authoring Method {#authoring-method}
+
+
+
+
 
 Edge Delivery Services uses GitHub so you can manage and deploy code directly from your GitHub repository. For example, you write content in either Google Docs or Microsoft Word and the functionality of your site can be developed by using CSS and JavaScript in GitHub. When you are ready, you use the Sidekick browser extension to preview and publish content updates.
 
