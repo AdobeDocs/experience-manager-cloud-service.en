@@ -16,6 +16,10 @@ Viewing asset properties help you further categorize assets and is helpful as th
 * Easier to manage - you can find assets with the same set of properties easily and apply changes to them.
 * Complete - asset carries more information and context.
 
+## Prerequisites {#prerequisites}
+
+[Content Hub users](deploy-content-hub.md#onboard-content-hub-users) can perform actions mentioned in this article.
+
 ## View properties of an asset {#properties-ui}
 
 Before you use, share, or download an asset, you can view it more closely. The preview feature lets you view not just the images but a few other supported asset types as well. You can not only view the asset but also view its detailed information and take other actions. To view information of an asset, navigate to the asset or [search](search-assets.md) the asset and then click the asset to open its properties. The following figure demonstrates the fields available on an asset properties page: 

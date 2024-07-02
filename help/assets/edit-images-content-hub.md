@@ -10,7 +10,7 @@ Content Hub allows you to create new content with Adobe Express. You can edit ex
 
 ## Prerequisites {#prereqs-edit-image-content-hub}
 
-Entitlements to access Adobe Express and [Content Hub asset consumer users with submission permissions ](/help/assets/deploy-content-hub.md#onboard-content-hub-consumer-users-submission-rights) can edit images using Content Hub.
+Entitlements to access Adobe Express and [Content Hub users with rights to remix assets to new variations](/help/assets/deploy-content-hub.md#onboard-content-hub-users-remix-assets) can edit images using Content Hub.
 
 >[!NOTE]
 >
