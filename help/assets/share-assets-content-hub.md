@@ -10,6 +10,10 @@ role: User
 
 Sharing assets through a link is a convenient way of making the resources available to [!DNL the Content Hub] users. The functionality allows authorized users to access and download the assets shared with them. When downloading assets from a shared link, [!DNL the Content Hub] uses an asynchronous service that offers faster and uninterrupted download.
 
+## Prerequisites {#prerequisites}
+
+[Content Hub users](deploy-content-hub.md#onboard-content-hub-users) can perform actions mentioned in this article.
+
 ## Share a single asset {#share-a-single-asset}
 
 You can share a single asset by executing the following steps: 
