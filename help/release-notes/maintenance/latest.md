@@ -46,6 +46,15 @@ Summarized below are the continuous improvements for maintenance release 16799, 
 * SCRNS-4194: Remove dependency on Google Guava APIs.
 * SCRNS-4360: Missing Manage Publication & Quick Publish Button for non-admin users in Content Provider for Channels.
 * SCRNS-4323: Hide/Disable launches from screens.html.
+
+#### Forms
+
+* FORMS-14844: Adaptive Forms allow form submission despite failing reCAPTCHA verification.
+* FORMS-14984: Forms with CAPTCHA skip validation if "submitMetaData" is absent in submitted data.
+* FORMS-14477: The "Is After" and "Is Before" options in the rules editor malfunction in Date Picker validation.
+* FORMS-14019: Rule editor's "Invoke Service" functionality is not working in Universal Editor.
+* FORMS-14336: When no form field is selected, editor should open with focus on the entire form element.
+* FORMS-15061: Loader circle persists indefinitely upon using invoke service option in the rule editor.
   
 ### Known Issues {#known-issues-16799}
 
