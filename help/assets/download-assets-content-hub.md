@@ -12,6 +12,10 @@ The Content Hub lets you download and share your assets. These assets may includ
 
 You can download single asset or multiple assets using the Content Hub. The original versions of the asset are downloaded.
 
+## Prerequisites {#prerequisites}
+
+[Content Hub users](deploy-content-hub.md#onboard-content-hub-users) can perform actions mentioned in this article.
+
 ## Download asset {#download-single-asset} 
 
 1. Select the asset (s) you need to download.
