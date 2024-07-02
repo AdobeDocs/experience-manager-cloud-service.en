@@ -55,8 +55,15 @@ With document-based authoring, you can use content directly from Microsoft Word 
 * With document-based authoring, every marketer is enabled to create content quickly with known authoring tools (Microsoft Word, Google Docs, etc.).
 * Content creation is streamlined by allowing authoring, review, and publishing directly within the source documents.
 * Because known tools are used, zero onboarding is required for content authors, increasing content velocity.
+* The functionality of your site can be developed by using CSS and JavaScript in GitHub.
 
 ![Document-based authoring](assets/document-based-authoring.png)
+
+Further reading in the document-based authoring documentation:
+
+* For details on how to get started with Edge Delivery see the [Build section.](https://www.aem.live/docs/#build)
+* To understand how to author and publish content by using Edge Delivery see the [Publish section.](https://www.aem.live/docs/authoring)
+* To understand how to properly launch your website project see the [Launch section.](https://www.aem.live/docs/#launch)
 
 ### WYSIWYG Authoring {#wysiwyg-authoring}
 
@@ -65,22 +72,25 @@ What-you-see-is-what-you-get (WYSIWYG) authoring leverages the Universal Editor,
 * With WYSIWYG authoring, you increase author efficiency whether headless or headful.
 * You can take advantage of AEM's comprehensive content-management capabilities including workflow and governance.
 * Leverage numerous extension points to support your own processes and integrations.
+* The functionality of your site can be developed by using CSS and JavaScript in GitHub.
 
 ![WYSIWYG authoring](assets/wysiwyg-authoring.png)
 
+Further reading in the WYSIWYG authoring documentation:
+
+* For an overview of the Universal Editor and WYSIWYG authoring see the document [WYSIWYG Content Authoring for Edge Delivery Services.](/help/edge/wysiwyg-authoring/authoring.md)
+* For a developer overview see the document [Developer Getting Started Guide for WYSIWYG Authoring with Edge Delivery Services.](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
+
 ### Deciding on Your Authoring Method {#authoring-method}
 
+AEM's flexibility ensures that your authoring needs are covered. Adobe can help you determine what method (or methods) best fit your requirements.
 
+* Always involve your content authors in the decision.
+* Multiple authoring methods can be implemented.
+* You can always change your authoring method after-the-fact.
+* You mustn't decide before the implementation, but rather as part of the implementation.
 
-
-
-Edge Delivery Services uses GitHub so you can manage and deploy code directly from your GitHub repository. For example, you write content in either Google Docs or Microsoft Word and the functionality of your site can be developed by using CSS and JavaScript in GitHub. When you are ready, you use the Sidekick browser extension to preview and publish content updates.
-
-Further reading in the Edge Delivery Services documentation:
-
-* For details on how to get started with Edge Delivery see the [Build section.](https://www.aem.live/docs/#build)
-* To understand how to author and publish content by using Edge Delivery see the [Publish section.](https://www.aem.live/docs/authoring)
-* To understand how to properly launch your website project see the [Launch section.](https://www.aem.live/docs/#launch)
+Please see the document [Choosing an Authoring Method](authoring-methods.md) for more information.
 
 ## Edge Delivery Services and Other Adobe Experience Cloud Products {#edge-other-products}
 
