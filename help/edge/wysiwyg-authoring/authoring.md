@@ -1,12 +1,12 @@
 ---
-title: Authoring Content for Edge Delivery Services
+title: WYSIWYG Content Authoring for Edge Delivery Services
 description: Learn how content authoring works with Edge Delivery Services and how to author AEM content with Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
 ---
 
-# Authoring Content for Edge Delivery Services {#authoring-edge}
+# WYSIWYG Content Authoring for Edge Delivery Services {#authoring-edge}
 
 With Edge Delivery Services, authoring is easy, fast, and flexible. You have two options to author content for Edge Delivery Services:
 
@@ -19,7 +19,7 @@ When using Edge Delivery Services with AEM as a Cloud Service, the most fundamen
 
 ![How WYSIWYG Authoring works with Edge Delivery Services](assets/how-aem-edge-works.png)
 
-1. [The WYSIWYG Authoring environment](/help/sites-cloud/authoring/quick-start.md) is used for content management such as creating new pages, Experience Fragments, Content Fragments, etc.
+1. [The AEM Sites environment](/help/sites-cloud/authoring/quick-start.md) is used for content management such as creating new pages, Experience Fragments, Content Fragments, etc.
    * All features of AEM are available such as workflows, MSM, translation, Launches, etc.
 1. [The Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) is used to author the content managed in AEM.
    * The Universal Editor offers a new and modern UI for content authoring.
