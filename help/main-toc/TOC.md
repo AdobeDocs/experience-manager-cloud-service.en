@@ -176,7 +176,9 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Workfront for Experience Manager enhanced connector{#workfront}
     + [Current Release Notes for Workfront for Experience Manager enhanced connector](/help/assets/release-notes-enhanced-connector-workfront.md)  
   + Release Notes for Generate Variations {#generate-variations}
-    + [Current Release Notes for Generate Variations](/help/generative-ai/release-notes-generate-variations.md)  
+    + [Current Release Notes for Generate Variations](/help/generative-ai/release-notes-generate-variations.md)
+  + Release Notes for Universal Editor {#univeral-editor}
+    + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
   + [What is New?](/help/release-notes/what-is-new.md)
   + [Notable Changes in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
   + [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md)
@@ -585,7 +587,7 @@ user-guide-title: AEM as a Cloud Service
     + [Manage tags](/help/assets/tagging-management-assets-view.md)
     + [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
-  + Manage Content Hub {#content-hub}
+  + Content Hub {#content-hub}
     + [Overview](/help/assets/product-overview.md)
     + [Deploy Content Hub](/help/assets/deploy-content-hub.md)
     + [Configure Content Hub user interface](/help/assets/configure-content-hub-ui-options.md)
@@ -886,7 +888,7 @@ user-guide-title: AEM as a Cloud Service
       + [Add validations to form fields](/help/edge/docs/forms/validate-forms.md)
       + [Load options from URL to a form](/help/edge/docs/forms/load-options-from-url.md)
       + [Customize the look of your forms​](/help/edge/docs/forms/style-theme-forms.md)
-      + [Use rules to add dynamic behaviour to a form](/help/edge/docs/forms/rules-forms.md)
+      + [Use rules to add dynamic behavior to a form](/help/edge/docs/forms/rules-forms.md)
       + [Show a custom thank you message after form submission](/help/edge/docs/forms/thank-you-page-form.md)
     + Capabilities {#advanced-features-edge-delivery-services-forms}
       + [Use Form fragments](/help/edge/docs/forms/form-fragments.md)
