@@ -90,7 +90,7 @@ As a best practice, always rely on the idP (Identity Provider) as a single point
 
 ### Sticky sessions and Encapsulated Tokens {#sticky-sessions-and-encapsulated-tokens}
 
-AEM as a Cloud Service has cookie-based sticky sessions enabled, which ensures that an end-user is routed to the same publish node on each request. To increase performance, the encapsulated token feature is required so the user record in the repository does not need to be referenced on each request. If the publish node which an end-user has an affinity to is replaced, their user id record is available on the new publish node, as described in the [data synchronization](#data-synchronization-data-synchronization) section below.
+AEM as a Cloud Service enables cookie-based sticky sessions, ensuring an end-user is routed to the same publish node on each request. In particular cases, such as user traffic spikes, the encapsulated token feature might increase performance so the user record in the repository does not need to be referenced on each request. If the publish node to which an end-user has an affinity is replaced, their user ID record is available on the new publish node, as described in the [data synchronization](#data-synchronization-data-synchronization) section below.
 
 To leverage the encapsulated token feature, please submit a request to Customer Support indicating the appropriate program and environments. More importantly, the encapsulated token can not be enabled without [data synchronization](#data-synchronization-data-synchronization) and must be enabled together. Therefore, carefully review the use case before enabling and ensure the feature is essential.
 
@@ -104,6 +104,11 @@ User profile information can be written and read in two ways:
 
 * Server-side use with the `com.adobe.granite.security.user` Interface UserPropertiesManager interface, which will place data under the user's node in `/home/users`. Make sure that pages that are unique per user are not cached. 
 * Client-side using ContextHub, as described by [the documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html#personalization).
+
+**Prerequisite:**
+
+For the server-side user profile persistence logic to function correctly, please enable [data synchronization](#data-synchronization-data-synchronization) by submitting
+a request to Customer Support indicating the appropriate program and environments.
 
 ### Third-party data stores {#third-party-data-stores}
 
