@@ -14,15 +14,15 @@ Learn important considerations when deciding on how you author your content in A
 AEM's flexibility ensures that your authoring needs are covered regardless of if you choose document-based authoring or WYSIWYG authoring. Keep the following facts in mind as you begin your considerations.
 
 * **Always involve your content authors in the decision.** - Your content authors are your experts and their insight is vital.
-* **Multiple authoring methods can be implemented.** - Although Adobe recommends starting simple and layering on complexity as the need arises, multiple authoring methods can worth together in one project.
-* **You can always change your authoring method after-the-fact.** - Whatever you decide you are not locked in. Changing from one method to another is straight-forward.
-* **You mustn't decide before the implementation, but rather as part of the implementation.** - AEM is one unified product, so this important decision doesn't have to be part of contract negotiations, rather as a decision during implementation.
+* **Multiple authoring methods can be implemented.** - Although Adobe recommends starting simple and layering on complexity as the need arises, multiple authoring methods can work together in one project.
+* **You can always change your authoring method after-the-fact.** - Whatever you decide you are not locked in. Changing from one method to another is straight-forward with the assistance of Adobe's automated migration tools.
+* **You mustn't decide before the implementation, but rather as part of the implementation.** - AEM is one unified product, so this important decision doesn't have to be part of contract negotiations. When you buy AEM, you get all of them. Rather this is a decision during implementation.
 
 Adobe can help you determine what method (or methods) best fit your requirements as part of the implementation.
 
 ## One Size Doesn't Fit All {#one-size}
 
-Every implementation of AEM has its own workflows and goals.
+Every implementation of AEM has its own workflows and goals. One project may involve a simply authoring model with authors responsible for their own publications. Whereas another might have a complex network of contributors and approvals.
 
 ![Different authoring workflows](assets/authoring-workflows.png)
 
@@ -30,14 +30,14 @@ Different projects may have different (and multiple) use cases.
 
 ![Use cases](assets/use-cases.png)
 
-Because of this, AEM is the one solution, but does not offer a one-size-fits-all approach. AEM offers different solutions for content delivery as well as content creation to best fit your needs.
+Because of this, AEM is your single solution, but does not offer a one-size-fits-all approach. AEM offers different approaches for content delivery as well as content creation to best fit your needs.
 
 To determine the best approach, you need to consider four items.
 
-1. Do you have a content delivery preference?
-1. Do you have a content authoring preference?
-1. What is your project goal?
-1. What authoring challenges are you facing today?
+1. [Do you have a content delivery preference?](#content-delivery)
+1. [Do you have a content authoring preference?](#content-authoring)
+1. [What is your project goal?](#project-goals)
+1. [What authoring challenges are you facing today?](#authoring-challenges)
 
 ## Content Delivery Preferences {#content-delivery}
 
@@ -47,7 +47,7 @@ Your first consideration should be how you want to deliver your content. Edge De
 
 This can help you decide if you need:
 
-* [AEM as a headless CMS](/help/headless/introduction.md) using the Content Fragment Editor and/or Universal Editor
+* [AEM as a headless CMS](/help/headless/introduction.md) using the Content Fragment Editor and/or Universal Editor.
 * AEM Edge Delivery Services using the [document-based editing](/help/edge/docs/authoring.md) or [WYSIWYG authoring with the Universal Editor.](/help/edge/wysiwyg-authoring/authoring.md)
 
 ## Content Authoring Preferences {#content-authoring}
@@ -58,14 +58,14 @@ Your next consideration should be how you want to author your content. The follo
 
 This can help you decide if you need:
 
-* AEM Edge Delivery Services using the [document-based editing](/help/edge/docs/authoring.md)
+* AEM Edge Delivery Services using the [document-based editing.](/help/edge/docs/authoring.md)
 * [WYSIWYG authoring with the Universal Editor.](/help/edge/wysiwyg-authoring/authoring.md)
 
 ## Project Goals {#project-goals}
 
 What does authoring success look like to you? How do you define success for your project?
 
-* Maybe you need to enable more people to create content, but want to avoid training on a new toolset. (Think document-based authoring.)
+* Maybe you need to enable more people to create content, but want to avoid training on a new tool set. (Think document-based authoring.)
 * Maybe you need to increase the amount of content you generate. (Think document-based authoring.)
 * Maybe you need to focus on visual content layout, but minimize the need for coding knowledge. (Think WYSIWYG authoring.)
 

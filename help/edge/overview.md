@@ -13,16 +13,16 @@ With Edge Delivery Services, AEM delivers exceptional experiences that drive eng
 By using Edge Delivery Services, you can:
 
 * Create fast sites with a perfect Lighthouse Score and continuously monitor your site performance through real use monitoring (RUM).
-* Increase authoring efficiency by decoupling content sources. Out of the box you can use both WYSIWYG and Document-based Authoring . As such, you can work with multiple content sources on the same website.
+* Increase authoring efficiency by decoupling content sources. Out of the box you can use both WYSIWYG and document-based authoring. As such, you can work with multiple content sources on the same website.
 * Use a built-in experimentation framework that allows quick test creation, execution without performance impact and fast release to production of a test winner.
 
 ## Agile Reaction to Business Needs {#agile-reaction}
 
-As a longstanding industry leader, Adobe knows how important it is to be able to quickly create and publish new, meaningful content for your customers. Common challenges in scaling content creation have been made clear by the market, including:
+As a longstanding recognized industry leader, Adobe knows how important it is to be able to quickly create and publish new, meaningful content for your customers. Common challenges in scaling content creation have been made clear by the market, including:
 
 1. **Demand for content continues to grow.**
    * There is a need to unlock new content authors to meet this demand.
-   * Content creation process must scale effectively across the business.
+   * The content creation process must scale effectively across the business.
    * Authors must be able to react quickly to changing trends.
 1. **There is a need for omni-channel content.**
    * Layout control is needed irrespective of content delivery.
