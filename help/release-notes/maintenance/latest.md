@@ -51,6 +51,16 @@ Summarized below are the continuous improvements for maintenance release X, whic
 
 ### Fixed Issues {#fixed-issues-X}
 
+* CQ-4356898: [Translation] outOfMemory error for CF which contains an unusually large number of links.
+* CQ-4357055: [Translation] Auto translation not working using Rest API.
+* CQ-4353931: [Translation] Add jcr:uuid in translation source page/xf/asset when it is missing.
+* CQ-4357591: [Translation] Modify “Associate JCR:UUID” workflow to work for Pages/XF.
+* FORMS-14844: Adaptive Forms allow form submission despite failing reCAPTCHA verification.
+* FORMS-14984: Forms with CAPTCHA skip validation if "submitMetaData" is absent in submitted data.
+* FORMS-14477: The "Is After" and "Is Before" options in the rules editor malfunction in Date Picker validation.
+* FORMS-14019: Rule editor's "Invoke Service" functionality is not working in Universal Editor.
+* FORMS-14336: When no form field is selected, editor should open with focus on the entire form element.
+* FORMS-15061: Loader circle persists indefinitely upon using invoke service option in the rule editor.
 * SITES-22457: Promoting a launch which is not deep is not updating source content.
 * SITES-22748: [Content Fragments] Enhance error handling for Content Fragment Update Job
 * SITES-22349: [Content Fragments] ContentType for empty multiline cf-elements cannot be changed
@@ -73,16 +83,6 @@ Summarized below are the continuous improvements for maintenance release X, whic
 * SITES-22106: Language Switch Functionality Issue in New Content Fragment Editor
 * SITES-21980: Inconsistent handling for UUID-based reference types
 * SITES-7257: NPE in ThumbnailServlet
-* FORMS-14844: Adaptive Forms allow form submission despite failing reCAPTCHA verification.
-* FORMS-14984: Forms with CAPTCHA skip validation if "submitMetaData" is absent in submitted data.
-* FORMS-14477: The "Is After" and "Is Before" options in the rules editor malfunction in Date Picker validation.
-* FORMS-14019: Rule editor's "Invoke Service" functionality is not working in Universal Editor.
-* FORMS-14336: When no form field is selected, editor should open with focus on the entire form element.
-* FORMS-15061: Loader circle persists indefinitely upon using invoke service option in the rule editor.
-* CQ-4356898: [Translation] outOfMemory error for CF which contains an unusually large number of links.
-* CQ-4357055: [Translation] Auto translation not working using Rest API.
-* CQ-4353931: [Translation] Add jcr:uuid in translation source page/xf/asset when it is missing.
-* CQ-4357591: [Translation] Modify “Associate JCR:UUID” workflow to work for Pages/XF.
 
 ### Known Issues {#known-issues-X}
 
