@@ -196,12 +196,16 @@ See the log entry formats in the [logging article](/help/implementing/developing
          enabled: true       
          host: "http-intake.logs.datadoghq.eu"
          token: "${{DATADOG_API_KEY}}"
+         tags:
+            tag1: value1
+            tag2: value2
          
    ```
    
 Considerations:
 
 * Create an API Key, without any integration with a specific cloud provider.
+* the tags property is optional
    
 
 ### Elasticsearch and OpenSearch {#elastic}
@@ -218,6 +222,7 @@ Considerations:
          host: "example.com"
          user: "${{ELASTICSEARCH_USER}}"
          password: "${{ELASTICSEARCH_PASSWORD}}"
+         pipeline: "ingest pipeline name"
    
    ```
 
@@ -226,6 +231,16 @@ Considerations:
 * For credentials, make sure to use use deployment credentials, rather than account credentials. These are the credentials that are generated in a screen that may resemble this image:
 
 ![Elastic deployment credentials](/help/implementing/developing/introduction/assets/ec-creds.png)
+
+* The optional pipeline property should be set to the name of the Elasticsearch or OpenSearch ingest pipeline, which can be configured to route the log entry to the appropriate index. The pipeline's Processor type must be set to *script* and the script language should be set to *painless*. Here is a sample script snippet to route log entries into an index such as aemaccess_dev_26_06_2024:
+
+```
+def envType = ctx.aem_env_type != null ? ctx.aem_env_type : 'unknown';
+def sourceType = ctx._index;
+def date = new SimpleDateFormat('dd_MM_yyyy').format(new Date());
+ctx._index = sourceType + "_" + envType + "_" + date;
+
+```
 
 ### HTTPS {#https}
 
