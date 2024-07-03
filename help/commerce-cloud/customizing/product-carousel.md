@@ -66,18 +66,18 @@ To further customize the markup:
 
 1. Edit `productcard.html` to call the custom attribute, which is mentioned in the implementation class:
 
-
-    ```
-    
-    data-product-sku="${product.commerceIdentifier.value}"
-    data-product-base-sku="${product.combinedSku.baseSku}"
-    id="${product.id}"
-    data-cmp-data-layer="${product.data.json}"
-    class="card product__card">
-    <span>${product.product.responseData['accessory_gemstone_addon']}</span>
-    <a href="${product.URL}"
-    target="${productCarousel.linkTarget}"
-    
+    ```xml
+    ..
+    <div
+        data-product-sku="${product.commerceIdentifier.value}"
+        data-product-base-sku="${product.combinedSku.baseSku}"
+        id="${product.id}"
+        data-cmp-data-layer="${product.data.json}"
+        class="card product__card">
+        <span>${product.product.responseData['accessory_gemstone_addon']}</span>
+        <a href="${product.URL}"
+            target="${productCarousel.linkTarget}"
+    ..
     ```
 
 1. Save the changes and deploy the updates to AEM using your Maven command, from a command-line terminal. You will be able to see the custom attribute `accessory_gemstone_addon` value for the selected products on the page.
