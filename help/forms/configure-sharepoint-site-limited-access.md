@@ -6,6 +6,8 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 ---
 
+<span class="preview"> The feature is available under early adopter program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+
 # Configure SharePoint Site with limited access using authorization scope
 
 The purpose of limited access is to enhance security management by allowing administrators to control user access within a Microsoft SharePoint Site. The permission level is useful when you need to grant a user or group access to specific content within a site or library, without allowing them to open or edit any other items. 
