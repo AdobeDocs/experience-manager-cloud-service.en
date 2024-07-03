@@ -74,6 +74,7 @@ To further customize the markup:
         <a href="${product.URL}"
             target="${productCarousel.linkTarget}"
     ..
+    ```
 
 1. Save the changes and deploy the updates to AEM using your Maven command, from a command-line terminal. You will be able to see the custom attribute `accessory_gemstone_addon` value for the selected products on the page.
 
