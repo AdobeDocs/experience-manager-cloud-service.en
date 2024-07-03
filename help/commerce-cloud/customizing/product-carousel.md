@@ -65,7 +65,7 @@ To further customize the markup:
 
 1. Edit `productcard.html` to call the custom attribute, which is mentioned in the implementation class:
 
-    ```
+    ```xml
     <div
     data-product-sku="${product.commerceIdentifier.value}"
     data-product-base-sku="${product.combinedSku.baseSku}"
