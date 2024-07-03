@@ -55,6 +55,7 @@ To add or edit an environment, a user must be a member of the **Business Owner**
    * Select an [**environment type**.](#environment-types)
      * The number of available/used environments is displayed in parentheses behind the environment type name.
    * Provide an environment **Name**.
+     * The environment name can not be changed once the environment is created.
    * Provide an environment **Description**.
    * If you are adding a **Production + Stage** environment, you must provide an environment name and description for both your production and staging environments.
    * Select a **Primary region** from the drop-down.
