@@ -25,7 +25,7 @@ The Product Carousel component is extended throughout this tutorial. As a first 
 You can extend the business logic of the Product Carousel by implementing a Sling Model:
 
 1. In your IDE, navigate under the core module to `core/src/main/java/com/venia/core/models/commerce` and create a CustomCarousel Interface that extends the CIF ProductCarousel interface:
-
+    
     ```
     package com.venia.core.models.commerce;
     import com.adobe.cq.commerce.core.components.models.productcarousel.ProductCarousel;
@@ -65,7 +65,7 @@ To further customize the markup:
 1. Create a copy of `productcard.html` from `/apps/core/cif/components/commerce/productcarousel/v1/productcarousel` (the core component crxde path) to ui.apps module `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productcarousel/productcard.html`. 
 
 1. Edit `productcard.html` to call the custom attribute, which is mentioned in the implementation class:
-
+    
     ```xml
     data-product-sku="${product.commerceIdentifier.value}"
     data-product-base-sku="${product.combinedSku.baseSku}"
