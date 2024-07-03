@@ -46,9 +46,6 @@ Summarized below are the continuous improvements for maintenance release 16799, 
 * SCRNS-4194: Remove dependency on Google Guava APIs.
 * SCRNS-4360: Missing Manage Publication & Quick Publish Button for non-admin users in Content Provider for Channels.
 * SCRNS-4323: Hide/Disable launches from screens.html.
-
-#### Forms
-
 * FORMS-14844: Adaptive Forms allow form submission despite failing reCAPTCHA verification.
 * FORMS-14984: Forms with CAPTCHA skip validation if "submitMetaData" is absent in submitted data.
 * FORMS-14477: The "Is After" and "Is Before" options in the rules editor malfunction in Date Picker validation.
