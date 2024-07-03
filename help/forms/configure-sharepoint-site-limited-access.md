@@ -13,6 +13,7 @@ role: User, Developer
 The purpose of limited access is to enhance security management by allowing administrators to control user access within a Microsoft SharePoint Site. The permission level is useful when you need to grant a user or group access to specific content within a site or library, without allowing them to open or edit any other items. 
 
 ## Advantages to configure SharePoint Site with limited access 
+
 Advantages to provide limited access to SharePoint Site:
 
 * **Enhanced security**: By limiting access, you can ensure that only authorized personnel have the ability to view or manipulate sensitive information, reducing the risk of unauthorized access.
