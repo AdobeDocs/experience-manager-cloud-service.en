@@ -65,14 +65,14 @@ To further customize the markup:
     ```
     ..
     <div
-       data-product-sku="${product.commerceIdentifier.value}"
-       data-product-base-sku="${product.combinedSku.baseSku}"
-       id="${product.id}"
-       data-cmp-data-layer="${product.data.json}"
-       class="card product__card">
-       <span>${product.product.responseData['accessory_gemstone_addon']}</span>
-       <a href="${product.URL}"
-          target="${productCarousel.linkTarget}"
+      data-product-sku="${product.commerceIdentifier.value}"
+      data-product-base-sku="${product.combinedSku.baseSku}"
+      id="${product.id}"
+      data-cmp-data-layer="${product.data.json}"
+      class="card product__card">
+      <span>${product.product.responseData['accessory_gemstone_addon']}</span>
+      <a href="${product.URL}"
+        target="${productCarousel.linkTarget}"
     ..
     ```
 
