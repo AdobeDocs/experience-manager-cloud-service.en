@@ -27,8 +27,6 @@ Real Use Monitoring service is beneficial for all customers. It offers a represe
 
 For all Adobe customers, this service provides valuable insights into user interactions. Customers employing their own CDN can benefit from simplified traffic reporting, as Adobe now directly integrates the data collection, eliminating the need for separate reports during renewal cycles. 
 
-Would you like to unlock the full potential of your website, using Adobe's Early Adopter RUM Explorer visualization tool to gain useful insights into your website engagement? This tool can provide insights into your page performance, including metrics on the number of clicks, Core Web Vitals (CWV), conversions, and customer journey maps. By using these powerful insights, you can fine-tune your digital experiences to meet your users' needs more effectively. If you wish to learn more and get access, email us at `rum-explorer@adobe.com`.
-
 ## Understand how the Real Use Monitoring Service Works {#understand-how-the-rum-service-works}
 
 Adobe Experience Manager (AEM) uses Real Use Monitoring (RUM) to help customers and Adobe understand how visitors interact with AEM sites. It helps them diagnose performance issues, and measure the effectiveness of experiments. RUM preserves the privacy of visitors through sampling - only a small portion of all page views is monitored - and no personally identifiable information (PII) is collected. 

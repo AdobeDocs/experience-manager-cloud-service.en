@@ -26,6 +26,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2024 {#2024}
+      + [Release Notes for 2024.5.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-5-0.md)
       + [Release Notes for 2024.4.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-4-0.md)
       + [Release Notes for 2024.3.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-3-0.md)
       + [Release Notes for 2024.1.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-1-0.md)
@@ -175,7 +176,9 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Workfront for Experience Manager enhanced connector{#workfront}
     + [Current Release Notes for Workfront for Experience Manager enhanced connector](/help/assets/release-notes-enhanced-connector-workfront.md)  
   + Release Notes for Generate Variations {#generate-variations}
-    + [Current Release Notes for Generate Variations](/help/generative-ai/release-notes-generate-variations.md)  
+    + [Current Release Notes for Generate Variations](/help/generative-ai/release-notes-generate-variations.md)
+  + Release Notes for Universal Editor {#univeral-editor}
+    + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
   + [What is New?](/help/release-notes/what-is-new.md)
   + [Notable Changes in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
   + [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md)
@@ -583,6 +586,19 @@ user-guide-title: AEM as a Cloud Service
     + [Manage reports](/help/assets/manage-reports-assets-view.md)
     + [Manage tags](/help/assets/tagging-management-assets-view.md)
     + [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
+  + Content Hub {#content-hub}
+    + [Overview](/help/assets/product-overview.md)
+    + [Deploy Content Hub](/help/assets/deploy-content-hub.md)
+    + [Configure Content Hub user interface](/help/assets/configure-content-hub-ui-options.md)
+    + [Upload or Import brand-approved assets to Content Hub](/help/assets/upload-brand-approved-assets.md)
+    + [Search assets in Content Hub](/help/assets/search-assets-content-hub.md)
+    + [Asset properties](/help/assets/asset-properties-content-hub.md)
+    + [Share assets in Content Hub](/help/assets/share-assets-content-hub.md)
+    + [Download assets using Content Hub](/help/assets/download-assets-content-hub.md)
+    + [Manage collections in Content Hub](/help/assets/collections-content-hub.md)
+    + [Edit images using Adobe Express in Content Hub](/help/assets/edit-images-content-hub.md)
+    + [Asset Insights in Content Hub](/help/assets/insights-content-hub.md)    
   + Best practices{#best-practices}
     + [Search best practices](/help/assets/search-best-practices.md)
     + [Metadata management and best practices](/help/assets/metadata-best-practices.md)
@@ -873,7 +889,7 @@ user-guide-title: AEM as a Cloud Service
       + [Add validations to form fields](/help/edge/docs/forms/validate-forms.md)
       + [Load options from URL to a form](/help/edge/docs/forms/load-options-from-url.md)
       + [Customize the look of your forms​](/help/edge/docs/forms/style-theme-forms.md)
-      + [Use rules to add dynamic behaviour to a form](/help/edge/docs/forms/rules-forms.md)
+      + [Use rules to add dynamic behavior to a form](/help/edge/docs/forms/rules-forms.md)
       + [Show a custom thank you message after form submission](/help/edge/docs/forms/thank-you-page-form.md)
     + Capabilities {#advanced-features-edge-delivery-services-forms}
       + [Use Form fragments](/help/edge/docs/forms/form-fragments.md)
