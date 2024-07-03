@@ -26,7 +26,8 @@ You can extend the business logic of the Product Carousel by implementing a Slin
 
 1. In your IDE, navigate under the core module to `core/src/main/java/com/venia/core/models/commerce` and create a CustomCarousel Interface that extends the CIF ProductCarousel interface:
 
-    ```package com.venia.core.models.commerce;
+    ```
+    package com.venia.core.models.commerce;
     import com.adobe.cq.commerce.core.components.models.productcarousel.ProductCarousel;
     public interface CustomCarousel extends ProductCarousel {
     }
@@ -34,13 +35,15 @@ You can extend the business logic of the Product Carousel by implementing a Slin
 1. Next, create an implementation class `CustomCarouselImpl.java` at `core/src/main/java/com/venia/core/models/commerce/CustomCarouselImpl.java`.
    The delegation pattern for Sling Models allows `CustomCarouselImpl` to reference `ProductCarousel` model via the `sling:resourceSuperType` property:
 
-    ```@Self
+    ```
+    @Self
     @Via(type = ResourceSuperType.class)
     private ProductCarousel productCarousel;
     ```
 1. The @PostConstruct annotation ensures that this method is called when the Sling Model is initialized. The product GraphQL query has already been extended using the extendProductQueryWith method to retrieve attributes. Update the GraphQL query to include the  attribute in the partial query:
 
-    ```@PostConstruct
+    ```
+    @PostConstruct
     private void initModel() {
     productsRetriever = productCarousel.getProductsRetriever();
     
