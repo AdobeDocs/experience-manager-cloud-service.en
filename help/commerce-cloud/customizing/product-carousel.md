@@ -40,6 +40,7 @@ You can extend the business logic of the Product Carousel by implementing a Slin
     @Via(type = ResourceSuperType.class)
     private ProductCarousel productCarousel;
     ```
+
 1. The @PostConstruct annotation ensures that this method is called when the Sling Model is initialized. The product GraphQL query has already been extended using the extendProductQueryWith method to retrieve attributes. Update the GraphQL query to include the  attribute in the partial query:
 
     ```
@@ -65,8 +66,7 @@ To further customize the markup:
 
 1. Edit `productcard.html` to call the custom attribute, which is mentioned in the implementation class:
 
-    ```xml
-    <div
+    ```
     data-product-sku="${product.commerceIdentifier.value}"
     data-product-base-sku="${product.combinedSku.baseSku}"
     id="${product.id}"
