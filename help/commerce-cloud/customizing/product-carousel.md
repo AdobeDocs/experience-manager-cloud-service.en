@@ -62,15 +62,14 @@ To further customize the markup:
 
 1. Edit `productcard.html` to call the custom attribute, which we have mentioned in the implementation class:
 
-    ```
-    <div
-        data-product-sku="${product.commerceIdentifier.value}"
-        data-product-base-sku="${product.combinedSku.baseSku}"
-        id="${product.id}"
-        data-cmp-data-layer="${product.data.json}"
-        class="card product__card">
-        <span>${product.product.responseData['accessory_gemstone_addon']}</span>
-        <a href="${product.URL}"
+    ```<div
+         data-product-sku="${product.commerceIdentifier.value}"
+         data-product-base-sku="${product.combinedSku.baseSku}"
+         id="${product.id}"
+         data-cmp-data-layer="${product.data.json}"
+         class="card product__card">
+         <span>${product.product.responseData['accessory_gemstone_addon']}</span>
+         <a href="${product.URL}"
             target="${productCarousel.linkTarget}"
     ```
 
