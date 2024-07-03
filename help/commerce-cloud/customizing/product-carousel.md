@@ -1,6 +1,6 @@
 ---
 title: Custom Attributes to CIF Product Carousel
-description: Learn how to extend the AEM CIF Product Carousel component by updating the Sling model and customizing the markup.
+description: Learn how to extend the AEM CIF Product Carousel component by updating the Sling Model and customizing the markup.
 feature: Commerce Integration Framework
 role: Admin, Developer
 ---
@@ -8,11 +8,11 @@ role: Admin, Developer
 
 ## Introduction {#intro}
 
-The Product Carousel Component is extended throughout this tutorial. As a first step, add an instance of the Product Carousel to the Home page to understand the baseline functionality:
+The Product Carousel component is extended throughout this tutorial. As a first step, add an instance of the Product Carousel to the Home page to understand the baseline functionality:
 
-1. Navigate to the Home Page of the site, for example  [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
-1. Insert a new Product Carousel Component into the main layout container on the page.
-    ![Product Carousel Component](/help/commerce-cloud/assets/product-carousel-component.png)
+1. Navigate to the Home Page of the site, for example [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
+1. Insert a new Product Carousel component into the main layout container on the page.
+    ![Product Carousel component](/help/commerce-cloud/assets/product-carousel-component.png)
 1. Expand the Side Panel (if not already toggled) and switch the asset finder dropdown to **Products**.
      ![Carousel Products](/help/commerce-cloud/assets/carousel-products.png)    
 1. This should display a list of available products from a connected Adobe Commerce instance.
@@ -32,8 +32,7 @@ You can extend the business logic of the Product Carousel by implementing a Slin
     }
     ```
 1. Next, create an implementation class `CustomCarouselImpl.java` at `core/src/main/java/com/venia/core/models/commerce/CustomCarouselImpl.java`.
-
-The delegation pattern for Sling Models allows `CustomCarouselImpl` to reference `ProductCarousel` model via the `sling:resourceSuperType` property:
+   The delegation pattern for Sling Models allows `CustomCarouselImpl` to reference `ProductCarousel` model via the `sling:resourceSuperType` property:
 
     ```@Self
     @Via(type = ResourceSuperType.class)
@@ -59,9 +58,9 @@ The delegation pattern for Sling Models allows `CustomCarouselImpl` to reference
 
 To further customize the markup:
 
-1. Create a copy of `productcard.html` from `/apps/core/cif/components/commerce/productcarousel/v1/productcarousel` ( the core component crxde path) to ui.apps module `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productcarousel/productcard.html`. 
+1. Create a copy of `productcard.html` from `/apps/core/cif/components/commerce/productcarousel/v1/productcarousel` (the core component crxde path) to ui.apps module `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productcarousel/productcard.html`. 
 
-1. Edit `productcard.html` to call the custom attribute which we have mentioned in the implementation class:
+1. Edit `productcard.html` to call the custom attribute, which we have mentioned in the implementation class:
 
     ```
     ..
