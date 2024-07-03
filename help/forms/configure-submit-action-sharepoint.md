@@ -52,14 +52,16 @@ To connect AEM Forms to your Microsoft&reg; Sharepoint Document Library storage:
     >
     > The **client secret** field is mandatory or optional depends upon your Azure Active Directory application configuration. If your application is configured to use a client secret, it is mandatory to provide the client secret.
     
-1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears. 
+2. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears. 
 
-1. Now, select **SharePoint Site** > **Document Library** > **SharePoint Folder**, to save the data.
+3. Now, select **SharePoint Site** > **Document Library** > **SharePoint Folder**, to save the data.
 
     >[!NOTE]
     >
     >* By default, `forms-ootb-storage-adaptive-forms-submission` is present at selected SharePoint Site.
     >* Create a folder as `forms-ootb-storage-adaptive-forms-submission`, if not already present in the `Documents` library of the selected SharePoint Site by clicking **Create Folder**.
+
+You can also [configure the SharePoint Sites with limited access](/help/forms/configure-sharepoint-site-limited-access.md).
 
 Now, you can use this SharePoint Sites configuration for the submit action in an Adaptive Form. 
 
