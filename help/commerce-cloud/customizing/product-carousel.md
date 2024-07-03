@@ -17,7 +17,7 @@ The Product Carousel component is extended throughout this tutorial. As a first 
      ![Carousel Products](/help/commerce-cloud/assets/carousel-products.png)    
 1. This should display a list of available products from a connected Adobe Commerce instance.
     ![Connected Instance](/help/commerce-cloud/assets/connected-instance.png)
-1. Products will be shown like below with default properties 
+1. Products will be shown like below with default properties:
     ![Product Shown with Properties](/help/commerce-cloud/assets/discount.png)
     
 ## Update the Sling Model {#update-sling-model}
