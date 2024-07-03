@@ -9,79 +9,94 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 16799 {#release-16799}
+## Release 16971 {#release-16971}
 
-Summarized below are the continuous improvements for maintenance release 16799, which was publicly released on June 18, 2024. The previous maintenance release was release 16544.
+Summarized below are the continuous improvements for maintenance release 16971, which was publicly released on July 3, 2024. The previous maintenance release was release 16799.
 
-2024.6.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
+2024.7.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-16799}
+### Enhancements {#enhancements-16971}
 
-* ASSETS-31977: Enhanced Asset Move, Copy and Delete operations.
-* ASSETS-33618: Auto-transcription and translation capability for Videos in Dynamic Media.
-* ASSETS-35185: Approval Action for ContentHub and DM and add properties to damAssetLucene properties.
-* ASSETS-35533: Add DRM and CAI properties to damAssetLucene index.
-* ASSETS-37280: Sequential job handling for translation when source subtitle (vtt) is still processing.
-* ASSETS-37559: Improved asset deleted event.
-* ASSETS-37723: Implement asset published event.
-* ASSETS-37724: Implement asset unpublished event.
-* ASSETS-38614: Share Link UI enhancements.
-* ASSETS-39601: Apply validation regex automatically to Asset Livecopy name.
-* ASSETS-39454: Upgrade to viewers 2024.5.0 in Quickstart.
-* CNTBF-184: Support paths beneath `/conf` in Content Backflow.
+* SITES-22948: Remove commerce references in foundation content for AEM CS.
+* SITES-22141: [Content Fragments] SegmentNotFoundException from CFM ModelChangeRepositoryImpl after OnRC.
+* SITES-21893: Image Cropping Issue on Author Instance.
+* SITES-21788: [Content Fragments] Display NOTE in CF and CF model editor when uiSchema is enabled for the model.
+* SITES-21688: MSM rollout does not update experience fragment (XF) path on live copy pages.
+* SITES-21659: Return full name of the user creating/modifying/replicating a Model resource.
+* SITES-21609: OpenAPI endpoint to migrate content fragments from one model to the other.
+* SITES-21598: [Open API] Create CFM - return error if the given Configuration Path doesn't exist.
+* SITES-21491: [Open API] CF PATCH endpoint should respect live relationships at field level.
+* SITES-21434: [Open API] CF GET endpoint should respect live relationships at field level.
+* SITES-21415: CF Editor - support UUID references.
+* SITES-21326: [Open API] Provide information about the presence of references for a Content Fragment.
+* SITES-21310: [Open API] Add id of Content Fragment in translations API response.
+* SITES-20859: CF Open API - Return references when retrieving a fragment by path.
+* SITES-20687: [Open API] Endpoint for batch processing status retrieval.
+* SITES-20657: [Open API] Provide option to match whole word when replacing a string using `FindAndReplace` endpoint.
+* SITES-20587: [Open API] Create `COPY` endpoint for Content Fragments.
+* SITES-20584: [Open API] Optimize reference retrieval.
+* SITES-20308: [Open API] Enable batch processing on API.
+* SITES-19976: [Open API] Generic UI schema for conditional fields.
+* SITES-19556: [Content Fragments] Update uiSchema if it exists when model is edited.
+* SITES-18056: [Open API] When publishing a content fragment to Preview, include references.
+* SITES-16898: [Schema] OpenAPI endpoint to migrate content fragments from one model to the other.
+* SITES-16609: List Launches endpoint.
+* SITES-16606: Create Launch Endpoint.
+* SITES-21617: [Xwalk] Make Page Properties/Metadata editable within UE.
+* SITES-19614: [Xwalk] Spreadsheet editor pagination and infinite scroll.
+* SITES-22163: [Xwalk] Improved support for content served from publish tier for Edge Delivery Sites.
+* SITES-22109: [Xwalk] Improved handling of richtext markup post processing.
+* SITES-22035: [Xwalk] Improved handling of MSM and Launches.
+* SITES-21839: [Xwalk] Improved path mapping and sanitization for content not served by Edge Delivery.
 
-### Fixed Issues {#fixed-issues-16799}
+### Fixed Issues {#fixed-issues-16971}
 
-* ASSETS-37335: Editing Search Panel In Filter Unchecks All Boxes.
-* ASSETS-38069: AEM DAM PDF Preview Issue on Timeline Filter Selection.
-* ASSETS-38215: Adobe Stock license button grayed out in AEM as a Cloud Service for enterprise subscription.
-* ASSETS-38578: Incorrect Hyperlinks in Assets Link Share Report.
-* ASSETS-38678: View settings broken in Collection Details.
-* ASSETS-39071: Web optimized delivery may throw an exception if the original rendition mimetype is null.
-* ASSETS-39316: Sorting by name not working in Collections.
-* ASSETS-39377: Bulk import from OneDrive might fail when receiving backpressure from remote API.
-* ASSETS-39428: Rendering issues in Copyright Management UI.
-* CQ-4357150: Guava in cq-content-sync bundle.
-* GRANITE-52573: Requests containing a double slash `//` are rejected with status code 400.
-* SCRNS-4194: Remove dependency on Google Guava APIs.
-* SCRNS-4360: Missing Manage Publication & Quick Publish Button for non-admin users in Content Provider for Channels.
-* SCRNS-4323: Hide/Disable launches from screens.html.
+* CQ-4356898: [Translation] outOfMemory error for CF which contains an unusually large number of links.
+* CQ-4357055: [Translation] Auto translation not working using Rest API.
+* CQ-4353931: [Translation] Add jcr:uuid in translation source page/xf/asset when it is missing.
+* CQ-4357591: [Translation] Modify “Associate JCR:UUID” workflow to work for Pages/XF.
 * FORMS-14844: Adaptive Forms allow form submission despite failing reCAPTCHA verification.
 * FORMS-14984: Forms with CAPTCHA skip validation if "submitMetaData" is absent in submitted data.
 * FORMS-14477: The "Is After" and "Is Before" options in the rules editor malfunction in Date Picker validation.
 * FORMS-14019: Rule editor's "Invoke Service" functionality is not working in Universal Editor.
-* FORMS-14336: When no form field is selected, editor should open with focus on the entire form element.
-* FORMS-15061: Loader circle persists indefinitely upon using invoke service option in the rule editor.
-  
-### Known Issues {#known-issues-16799}
+* FORMS-14336: When no form field is selected, the editor should open with focus on the entire form element.
+* FORMS-15061: Loader circle persists indefinitely upon using invoke the service option in the rule editor.
+* SITES-22457: Promoting a launch that is not deep is not updating source content.
+* SITES-22748: [Content Fragments] Enhance error handling for Content Fragment Update Job
+* SITES-22349: [Content Fragments] ContentType for empty multiline cf-elements cannot be changed.
+* SITES-22343: [Content Fragments] Semantic type "enumeration" is broken.
+* SITES-22194: After setting the redirect, model.json doesn't work anymore.
+* SITES-21953: [Open API] Etag gets changed based on the ordering of the validationStatus.
+* SITES-21894: [Open API] Enhance parent path validation when creating CFs.
+* SITES-21887: [Open API] Invalid ETag returned by POST variations endpoint.
+* SITES-21657: [Open API] Improve validation on CF Search Path property.
+* SITES-21949: Search APIs invalid cursor returns 500.
+* SITES-20927: Search APIs return a 500 when the query is missing.
+* SITES-20544: [Open API] Change the generation of publish package names in order to avoid oak conflicts.
+* SITES-19710: CVE-2022-47937 - Remove all usages of org.apache.sling.commons.json from Page Editor.
+* SITES-11992: [Accessibility] Annotation swatch selector button missing an accessible name.
+* SITES-10979: [Accessibility] Label is not persistent.
+* SITES-10962: [Accessibility] Button: Button does not have a role.
+* SITES-10905: [Accessibility] State of active component lacks a 3 to 1 contrast ratio.
+* SITES-2974:  [Accessibility] - Horizontal scrolling at 320px width.
+* SITES-22026: Unable to Move Experience Fragments Between Folders in AEM
+* SITES-22106: Language Switch Functionality Issue in New Content Fragment Editor
+* SITES-21980: Inconsistent handling for UUID-based reference types.
+* SITES-7257: NPE in ThumbnailServlet.
 
->[!NOTE]
-> AEM Engineering has identified a regression for Launches functionality which is affecting current AEM releases starting with 16461. Because of this regression, new Launches (created after new releases have been applied) that include non-deep pages will not be properly promoted due to missing configurations.
-> In case your environments are affected, a shell script to identify and update missing configurations is available through customer support (internal reference SITES-22457).
-> A longer term fix will be made available that will ensure new Launches are created with all the right configurations. Until then, an internal patch release is also available on demand.
+### Known Issues {#known-issues-16971}
 
-#### Forms
+None.
 
-* When you install the AEM SDK and add `AEM Forms add-on v2024.05.04.00-240400`, the Docker service fails to start. The docker service is required to generate Document of Record on a local development environment. To fix the issue:
-  1. Download the [hotfix](/help/forms/assets/sdk_hotfix.zip). When you download the hotfix, a `.zip` folder is downloaded.
-  1. Extract the downloaded hotfix to a folder.
-  1. Replace the older `sdk.sh` and `sdk.bat` files with newer files in the folder extracted in Step 2.
-
-### Change Notice {#change-notice-16799}
-
-* This release contains the following new product index versions:
-  * **damAssetLucene-11**
-  * **fragments-11**
-
-  Custom versions of the previous index versions will be automatically merged with the new product index version. Please apply further custom updates to the merged version.
+### Change Notice {#change-notice-16971}
 
 * Starting in September 2024, AEM as a Cloud Service will disable the serialization of Resource Resolvers via the Sling Model Exporter framework. See [the documentation](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) for more details.
 
-### Deprecated Features and APIs {#deprecated-16799}
+### Deprecated Features and APIs {#deprecated-16971}
 
 To know what is deprecated or removed in AEM as a Cloud Service, see [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md).
 
-### Embedded Technologies {#embedded-tech-16799}
+### Embedded Technologies {#embedded-tech-16971}
 
 |Technology|Version|Link|
 |---|---|---|
