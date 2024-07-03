@@ -22,24 +22,24 @@ Summarized below are the continuous improvements for maintenance release 16971, 
 * SITES-21893: Image Cropping Issue on Author Instance.
 * SITES-21788: [Content Fragments] Display NOTE in CF and CF model editor when uiSchema is enabled for the model.
 * SITES-21688: MSM rollout does not update experience fragment (XF) path on live copy pages.
-* SITES-21659: Return full name of user creating/modifying/replicating a Model resource.
-* SITES-21609: OpenAPI endpoint to migrate content fragment(s) from one model to the other.
+* SITES-21659: Return full name of the user creating/modifying/replicating a Model resource.
+* SITES-21609: OpenAPI endpoint to migrate content fragments from one model to the other.
 * SITES-21598: [Open API] Create CFM - return error if the given Configuration Path doesn't exist.
 * SITES-21491: [Open API] CF PATCH endpoint should respect live relationships at field level.
 * SITES-21434: [Open API] CF GET endpoint should respect live relationships at field level.
 * SITES-21415: CF Editor - support UUID references.
-* SITES-21326: [Open API] Provide information about presence of references for a Content Fragment.
+* SITES-21326: [Open API] Provide information about the presence of references for a Content Fragment.
 * SITES-21310: [Open API] Add id of Content Fragment in translations API response.
 * SITES-20859: CF Open API - Return references when retrieving a fragment by path.
 * SITES-20687: [Open API] Endpoint for batch processing status retrieval.
 * SITES-20657: [Open API] Provide option to match whole word when replacing a string using `FindAndReplace` endpoint.
 * SITES-20587: [Open API] Create `COPY` endpoint for Content Fragments.
-* SITES-20584: [Open API] Optimise reference retrieval.
+* SITES-20584: [Open API] Optimize reference retrieval.
 * SITES-20308: [Open API] Enable batch processing on API.
 * SITES-19976: [Open API] Generic UI schema for conditional fields.
-* SITES-19556: [Content Fragments] Update uiSchema if exists when model is edited.
+* SITES-19556: [Content Fragments] Update uiSchema if it exists when model is edited.
 * SITES-18056: [Open API] When publishing a content fragment to Preview, include references.
-* SITES-16898: [Schema] OpenAPI endpoint to migrate content fragment(s) from one model to the other.
+* SITES-16898: [Schema] OpenAPI endpoint to migrate content fragments from one model to the other.
 * SITES-16609: List Launches endpoint.
 * SITES-16606: Create Launch Endpoint.
 * SITES-21617: [Xwalk] Make Page Properties/Metadata editable within UE.
@@ -47,7 +47,7 @@ Summarized below are the continuous improvements for maintenance release 16971, 
 * SITES-22163: [Xwalk] Improved support for content served from publish tier for Edge Delivery Sites.
 * SITES-22109: [Xwalk] Improved handling of richtext markup post processing.
 * SITES-22035: [Xwalk] Improved handling of MSM and Launches.
-* SITES-21839: [Xwalk] Improved path mapping and sanitisation for content not served by Edge Delivery.
+* SITES-21839: [Xwalk] Improved path mapping and sanitization for content not served by Edge Delivery.
 
 ### Fixed Issues {#fixed-issues-16971}
 
@@ -59,14 +59,14 @@ Summarized below are the continuous improvements for maintenance release 16971, 
 * FORMS-14984: Forms with CAPTCHA skip validation if "submitMetaData" is absent in submitted data.
 * FORMS-14477: The "Is After" and "Is Before" options in the rules editor malfunction in Date Picker validation.
 * FORMS-14019: Rule editor's "Invoke Service" functionality is not working in Universal Editor.
-* FORMS-14336: When no form field is selected, editor should open with focus on the entire form element.
-* FORMS-15061: Loader circle persists indefinitely upon using invoke service option in the rule editor.
-* SITES-22457: Promoting a launch which is not deep is not updating source content.
+* FORMS-14336: When no form field is selected, the editor should open with focus on the entire form element.
+* FORMS-15061: Loader circle persists indefinitely upon using invoke the service option in the rule editor.
+* SITES-22457: Promoting a launch that is not deep is not updating source content.
 * SITES-22748: [Content Fragments] Enhance error handling for Content Fragment Update Job
 * SITES-22349: [Content Fragments] ContentType for empty multiline cf-elements cannot be changed.
 * SITES-22343: [Content Fragments] Semantic type "enumeration" is broken.
 * SITES-22194: After setting the redirect, model.json doesn't work anymore.
-* SITES-21953: [Open API] Etag gets changed based on ordering of the validationStatus.
+* SITES-21953: [Open API] Etag gets changed based on the ordering of the validationStatus.
 * SITES-21894: [Open API] Enhance parent path validation when creating CFs.
 * SITES-21887: [Open API] Invalid ETag returned by POST variations endpoint.
 * SITES-21657: [Open API] Improve validation on CF Search Path property.
@@ -77,7 +77,7 @@ Summarized below are the continuous improvements for maintenance release 16971, 
 * SITES-11992: [Accessibility] Annotation swatch selector button missing an accessible name.
 * SITES-10979: [Accessibility] Label is not persistent.
 * SITES-10962: [Accessibility] Button: Button does not have a role.
-* SITES-10905: [Accessibility] State of active component lacks 3 to 1 contrast ratio.
+* SITES-10905: [Accessibility] State of active component lacks a 3 to 1 contrast ratio.
 * SITES-2974:  [Accessibility] - Horizontal scrolling at 320px width.
 * SITES-22026: Unable to Move Experience Fragments Between Folders in AEM
 * SITES-22106: Language Switch Functionality Issue in New Content Fragment Editor
