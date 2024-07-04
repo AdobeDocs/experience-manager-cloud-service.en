@@ -30,11 +30,11 @@ To download forms or related assets:
 
    ![Download Forms](/help/forms/assets/download-form.png)
 
-   When you download the form, the **[!UICONTROL Download Asset(s)]** dialog box appears on the screen.
+   When you download the form, the **[!UICONTROL Download Asset(s)]** dialog box appears.
 
    ![Download forms assets](/help/forms/assets/download-form-assets.png)
 
-1. Click **[!UICONTROL Download]**.
+2. Click **[!UICONTROL Download]**.
 
 The selected assets are downloaded as an archive (.zip file).
 
@@ -60,7 +60,7 @@ To upload a form or a related asset:
 
    >[!NOTE]
    >
-   > * When a name conflict with different resource types, uploading a package does not replace the existing folder hierarchy. For example, If you have an Adaptive Form named 'Training' at location `/content/dam/formsanddocuments` on one server. You can download the Adaptive Form and upload the form on another server. The second server also has a folder with the name 'Training' at the same location `/content/dam/formsanddocuments`. The upload fails.
+   > When a name conflict with different resource types, uploading a package does not replace the existing folder hierarchy. For example, If you have an Adaptive Form named 'Training' at location `/content/dam/formsanddocuments` on one server. You can download the Adaptive Form and upload the form on another server. The second server also has a folder with the name 'Training' at the same location `/content/dam/formsanddocuments`. The upload fails.
    
 ## Download a theme 
 
@@ -76,11 +76,11 @@ To download a theme:
 
    ![Download Theme](/help/forms/assets/download-theme.png)
 
-   When you download the theme, the **[!UICONTROL Download Asset(s)]** dialog box appears on the screen.
+   When you download the theme, the **[!UICONTROL Download Asset(s)]** dialog box appears.
 
    ![Download theme assets](/help/forms/assets/download-theme-asset.png)
 
-1. Click **[!UICONTROL Download]**.
+2. Click **[!UICONTROL Download]**.
 
 The selected assets are downloaded as an archive (.zip file).
 
@@ -179,6 +179,7 @@ To search the asset:
 
 For more information and instructions on using search, see [Search](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html). 
 
+<!--
 ## Export or create a package {#export-a-workflow-application}
 
 You can use packages to install new content, install new functionality, transfer content between instances, and back up content.
@@ -237,7 +238,7 @@ To export or create a package:
 
    Once a package is uploaded to AEM, you can modify its settings. You can also download or delete the package.
 
-<!-- ## Import and export assets in Correspondence Management {#import-and-export-assets-in-correspondence-management}
+## Import and export assets in Correspondence Management {#import-and-export-assets-in-correspondence-management}
 
 To share assets, such as data dictionaries, letters, and document fragments, between two different implementations of Correspondence Management, you can create and share .cmp files. A .cmp file can include one or more data dictionaries, letters, document fragments, and forms.
 
