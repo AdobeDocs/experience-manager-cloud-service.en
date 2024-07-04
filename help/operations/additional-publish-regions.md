@@ -5,6 +5,7 @@ exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
 feature: Operations
 role: Admin
 ---
+
 # Additional Publish Regions {#additional-publish-regions}
 
 Additional publish regions can be licensed and enabled on programs set up with AEM Sites. When configured, traffic on stage and production environments is routed to multiple publish farms, which has the following benefits:
@@ -16,7 +17,9 @@ Organizations may license up to three additional publish regions.
 
 >[!NOTE]
 >
->This feature is currently only available for AEM Sites. It also cannot be applied to sandbox programs. Also, additional publish regions feature requires your program to be updated to AEM release version 12142 or higher.
+>* This feature is available for the Sites and Forms solutions.
+>* This feature cannot be applied to [sandbox programs.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+>* This feature requires your program to be updated to AEM release version 12142 or higher.
 
 ## Use Cases {#use-cases}
 
