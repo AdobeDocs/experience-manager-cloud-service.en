@@ -40,7 +40,7 @@ Have a look at the June 2024 Release Overview video for a summary of the feature
 
 **Real Use Monitoring (RUM) Data Service** {#real-use-monitoring}
 
-The [Real Use Monitoring (RUM) Data Service](https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en/blob/shwetad-patch-1/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service) is now generally available, enabling client-side data collection for AEM as a Cloud Service. This service provides a more accurate reflection of user interactions, ensuring a reliable measure of website engagement. It offers customers advanced insights into their page traffic and performance, presenting a valuable opportunity to understand and enhance page performance.
+The Real Use Monitoring (RUM) Data Service is now generally available, enabling client-side data collection for AEM as a Cloud Service. This service provides a more accurate reflection of user interactions, ensuring a reliable measure of website engagement. It offers customers advanced insights into their page traffic and performance, presenting a valuable opportunity to understand and enhance page performance.
 
 ### Early Adopter Program {#sites-early-adopter}
 
