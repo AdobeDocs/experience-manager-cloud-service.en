@@ -17,7 +17,7 @@ exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
 
 You can move Adaptive Forms and related assets such as Adaptive Form themes, Form Data Model (FDM), Adaptive Form templates, Fragments, and PDF forms between [!DNL AEM Forms] instances.
 
-## Download Adaptive Forms, PDF forms, or  related assets {#download-forms-amp-documents-assets}
+## Download Adaptive Forms, PDF forms, or related assets {#download-forms-amp-documents-assets}
 
 To download forms or related assets:
 
@@ -26,7 +26,7 @@ To download forms or related assets:
 
    ![Select Forms](/help/forms/assets/select-forms.png)
 
-1. Select the assets, and then click the **[!UICONTROL Download]** icon from the upper rail.
+1. Select the assets, and click the **[!UICONTROL Download]** icon from the upper rail.
 
    ![Download Forms](/help/forms/assets/download-form.png)
 
@@ -38,7 +38,7 @@ To download forms or related assets:
 
 The selected assets are downloaded as an archive (.zip file).
 
-## Upload Adaptive Forms, PDF forms, or  related assets {#upload-forms-amp-documents-assets}
+## Upload Adaptive Forms, PDF forms, or related assets {#upload-forms-amp-documents-assets}
 
 You can upload the supported asset types individually or as a ZIP archive. For a ZIP file, the relative paths of all the supported assets are displayed. Unsupported assets inside the ZIP are ignored and not listed. However, if the ZIP archive contains only the unsupported assets, an error message is displayed instead of the pop-up dialog.
 To upload a form or a related asset:
@@ -60,7 +60,7 @@ To upload a form or a related asset:
 
    >[!NOTE]
    >
-   > * When a name conflict with different resource types, uploading a package does not replace the existing folder hierarchy. For example, If you have an Adaptive Form named 'Training' at location `/content/dam/formsanddocuments` on one server. You download the Adaptive Form and upload the form on another server. The second server also has a folder with the name 'Training' at the same location `/content/dam/formsanddocuments`. The upload fails.
+   > * When a name conflict with different resource types, uploading a package does not replace the existing folder hierarchy. For example, If you have an Adaptive Form named 'Training' at location `/content/dam/formsanddocuments` on one server. You can download the Adaptive Form and upload the form on another server. The second server also has a folder with the name 'Training' at the same location `/content/dam/formsanddocuments`. The upload fails.
    
    
    > * Only a member of the `form-user` group can upload XDP files.
@@ -75,7 +75,7 @@ To download a theme:
 
    ![Select Theme](/help/forms/assets/select-theme.png)
 
-1. On the Themes page, select the theme and then click the **[!UICONTROL Download]** icon from the upper rail. 
+1. On the Themes page, select the theme and click the **[!UICONTROL Download]** icon from the upper rail. 
 
    ![Download Theme](/help/forms/assets/download-theme.png)
 
@@ -83,7 +83,7 @@ To download a theme:
 
    ![Download theme assets](/help/forms/assets/download-theme-asset.png)
 
-2. Click **[!UICONTROL Download]**.
+1. Click **[!UICONTROL Download]**.
 
 The selected assets are downloaded as an archive (.zip file).
 
@@ -102,6 +102,143 @@ To upload a theme:
    ![Upload Theme](/help/forms/assets/theme-upload.png)
 
 1. Browse and select a theme package on your computer and click **[!UICONTROL Upload]**. The uploaded theme becomes available on the Themes page.
+
+## Use folders to organize Adaptive Forms, PDF forms, and related assets  {#folders-and-organizing-assets}
+
+You can uses folders to arrange and organize assets. Organizing documents and assets in a folder allow you to group the files for easy management. You can select a folder and choose to download or delete it. 
+
+### Create a folder {#create-a-folder}
+
+To create a folder:
+
+1. Log in to your [!DNL Experience Manager Forms] instance.
+1. Select **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
+
+   ![Select Form](/help/forms/assets/select-forms.png)
+
+1. Select **[!UICONTROL Create]** &gt; **[!UICONTROL Folder]**.
+
+   ![Create Folder](/help/forms/assets/create-folder.png)
+
+   The **[!UICONTROL Add Folder]** dialog box appears.
+1. Enter the **[!UICONTROL Title]**. The **[!UICONTROL Name]** automatically populates as you type the **[!UICONTROL Title]**.
+
+   ![Add Folder](/help/forms/assets/add-folder.png)
+
+1. Click **[!UICONTROL Create]**.
+
+   >[!NOTE]
+   >
+   >By default, the value of the name field is automatically populated from the title. The name can only contain alphanumeric characters, or the hyphen (-) and underscore (_) special characters. Any other special characters entered in the title are automatically replaced with a hyphen and you are prompted to confirm the new name. You can choose to continue with the suggested name or edit it further.
+
+A new folder with the title you defined is displayed at the current location in the asset listing.
+
+If a folder exists with the name specified, the submission fails with an error. You can view the error message by hovering over the error ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) icon that appears beside the name field.
+
+You can select the created folder to go inside the folder and create assets or folders within the folder. Further, you can select a folder and choose to queue it for download, delete it, or edit its name.
+
+### Create copies of one or more assets {#create-copies-of-one-or-more-assets-or-letters}
+
+You can use an existing assets to quickly create an asset with similar properties, content, and inherited assets.
+
+To create copies of assets:
+
+1. Log in to your [!DNL Experience Manager Forms] instance.
+1. On the relevant assets page, select one or more assets. The UI displays the **[!UICONTROL Copy]** icon.
+1. Select **[!UICONTROL Copy]**. The UI displays the ![Paste icon](/help/forms/assets/Smock_Paste_18_N.svg) icon. 
+
+   ![Copy asset](/help/forms/assets/copy-asset.png)
+
+   You can also choose to go/navigate inside a folder before you paste. Different folders can contain assets with the same names. For more information on folders, see [Folders and organizing assets](#folders-and-organizing-assets).
+1. Select **[!UICONTROL Paste]**. 
+   
+     ![Paste asset](/help/forms/assets/paste-asset.png)
+   
+1. The **[!UICONTROL Paste]** dialog appears. The system auto generates names and titles to the new copies of assets, but you can edit the titles and names of the assets.
+
+   If you are copying and pasting the assets at the same place, a suffix "-CopyXX" gets added to the existing name of the `asset`. If no title existed for the copied asset, the auto generated title field remains blank.
+
+      ![Paste asset at new location](/help/forms/assets/paste-click-asset.png)
+
+   If necessary, edit the **[!UICONTROL Title]** with which you want to save the copy of the asset. The **[!UICONTROL Name]** automatically populates as you type the **[!UICONTROL Title]**.
+1. Select **[!UICONTROL Paste]**. New copies of the copied assets are created. 
+
+## Search {#search-forms}
+
+When you have a large number of assets, searching for the right asset is time-consuming. You can perform a text-based search for a specific asset on the asset page.
+
+To search the asset:
+
+1. Log in to your [!DNL Experience Manager Forms] instance.
+1. Click the ![search icon](assets/folder-search-icon.svg) search icon.
+
+   ![Search Form](/help/forms/assets/search-form.png)
+
+1. Enter the name of the asset you wish to search for in the search bar.
+
+1. A list of related assets appears. Select the desired asset from the displayed asset list.
+
+   ![Search assets](/help/forms/assets/search-bar.png) 
+
+For more information and instructions on using search, see [Search](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html). 
+
+## Export or create a package {#export-a-workflow-application}
+
+You can use packages to install new content, install new functionality, transfer content between instances, and back up content.
+To export or create a package:
+
+1. Log in to your [!DNL Experience Manager Forms] instance.
+1. Navigate to **[!UICONTROL Tools]** ![hammer](assets/hammer.png) &gt; **[!UICONTROL Deployment]** &gt; **[!UICONTROL Packages]**.
+
+   ![Package Manager](/help/forms/assets/package-manager.png)
+
+1. Click **[!UICONTROL Create Package]**.
+
+   ![Create package](/help/forms/assets/create-package.png)   
+   
+   When **[!UICONTROL Create Package]** is clicked, the **[!UICONTROL New Package]** dialog box appears.
+1. Specify the package name, version, and group for the package. 
+   
+   ![New package](/help/forms/assets/new-package.png)  
+
+   * **Package Name** - Select a descriptive name to help you identify the contents of the package.
+
+   * **Version** - It is a textual field to indicate a version. This is appended to the package name to form the name of the zip file.
+
+   * **Group** - This is the target group (or folder) name. Groups help you organize your packages. A folder is created for the group if it does not already exist. If you leave the group name blank, it creates the package in the main package list.
+
+1. Click **[!UICONTROL OK]**.
+
+   Once the package is created, it appears at the top of the list of packages.
+
+1. Click **[!UICONTROL Edit]**.
+   
+   ![Edit Package](/help/forms/assets/edit-package.png)
+    
+1. Open the **[!UICONTROL Filters]** tab.
+   
+   ![Open filter tab](/help/forms/assets/add-filter-package.png)
+   
+1.  Click **[!UICONTROL Add Filter]**. 
+   
+      ![Add filter](/help/forms/assets/add-filter.png)
+
+      You can specify the path of the package. You can also add rules and other validations for the package.
+
+      ![Add path](/help/forms/assets/add-path.png)
+
+1. Click **[!UICONTROL Save]** after you are finished editing the settings.
+1. Click **[!UICONTROL Build]** to create the package.
+    
+     ![Build path](/help/forms/assets/build-package.png)
+
+   After the package is built, you can download the package and import it to the other server. The workflow application appears on the server where the package is uploaded.
+
+   >[!NOTE]
+   >
+   >For the workflow application to work properly, also export the corresponding Adaptive Form and workflow model with the work application.
+
+   Once a package is uploaded to AEM, you can modify its settings. You can also download or delete the package.
 
 <!-- ## Import and export assets in Correspondence Management {#import-and-export-assets-in-correspondence-management}
 
@@ -173,94 +310,6 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
    >
    >For you to be able to upload XDPs (as part of the cmp file or otherwise), you need to be a part of forms-power-users group. For access rights, contact the administrator. --> 
 
-## Use folders to organize Adaptive Forms, PDF forms, and related assets  {#folders-and-organizing-assets}
+## See Also {#see-also}
 
-You can uses folders to arrange and organize assets. Organizing documents and assets in a folder allow you to group the files for easy management. You can select a folder and choose to download or delete it. 
-
-### Create a folder {#create-a-folder}
-
-To create a folder:
-
-1. Log in to your [!DNL Experience Manager Forms] instance.
-1. Select **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
-
-   ![Select Form](/help/forms/assets/select-forms.png)
-
-1. Select **[!UICONTROL Create]** &gt; **[!UICONTROL Folder]**.
-
-   ![Create Folder](/help/forms/assets/create-folder.png)
-
-   The **[!UICONTROL Add Folder]** dialog box appears.
-1. Enter the **[!UICONTROL Title]**. The **[!UICONTROL Name]** automatically populates as you type the **[!UICONTROL Title]**.
-
-   ![Add Folder](/help/forms/assets/add-folder.png)
-
-1. Click **[!UICONTROL Create]**.
-
-   >[!NOTE]
-   >
-   >By default, the value of the name field is automatically populated from the title. The name can only contain alphanumeric characters, or the hyphen (-) and underscore (_) special characters. Any other special characters entered in the title are automatically replaced with a hyphen and you are prompted to confirm the new name. You can choose to continue with the suggested name or edit it further.
-
-A new folder with the title you defined is displayed at the current location in the asset listing.
-
-If a folder exists with the name specified, the submission fails with an error. You can view the error message by hovering over the error ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) icon that appears beside the name field.
-
-You can select the created folder to go inside the folder and create assets or folders within the folder. Further, you can select a folder and choose to queue it for download, delete it, or edit its name.
-
-## Search {#search-forms}
-
-You can search the assets using the ![search icon](assets/folder-search-icon.svg) search icon in the asset listing.
-
-To search the asset:
-
-1. Log in to your [!DNL Experience Manager Forms] instance.
-2. Click the ![search icon](assets/folder-search-icon.svg) search icon.
-
-   ![Search Form](/help/forms/assets/search-form.png)
-
-3. Enter the name of the asset you wish to search for in the search bar.
-
-4. A list of related assets appears. Select the desired asset from the displayed asset list.
-
-![Search assets](/help/forms/assets/search-bar.png) 
-
-For more information and instructions on using search, filters, saved search, and side panel, see [Search](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html). 
-
-## Export a workflow application {#export-a-workflow-application}
-
-You can use the package manager to export workflow applications. The procedure is as listed below:
-
-1. Log in to your [!DNL Experience Manager Forms] instance.
-1. Open [!DNL AEM Forms] package manager. URL of package manager is `https://[server]:[port]/crx/packmgr`.
-1. Click **[!UICONTROL Create Package]**. The **[!UICONTROL New Package]** dialog box appears.
-1. Specify the name, version, and group for the package. Click **[!UICONTROL OK]**.
-1. Click **[!UICONTROL Edit]** and open the **[!UICONTROL Filters]** tab. Click **[!UICONTROL Add Filter]**. Specify the path of the workflow application. For example, /etc/fd/dashboard/startpoints/homemortgage. Click **[!UICONTROL Add rule]**.
-
-1. Open the **[!UICONTROL Advanced]** tab. Select **[!UICONTROL Merge]** or **[!UICONTROL Overwrite]** in ACL Handling field. Click **[!UICONTROL Save]**.
-1. Click **[!UICONTROL Build]** to create the package.
-
-   After the package is built, you can download the package and import it to the other server. The workflow application appears on the server where the package is uploaded.
-
-   >[!NOTE]
-   >
-   >For the workflow application to work properly, also export the corresponding Adaptive Form and workflow model with the work application.
-
-<!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}
-
-You can use an existing assets to quickly create an asset with similar properties, content, and inherited assets.
-
-Complete the following steps to create copies of assets and letters:
-
-1. On the relevant assets page, select one or more assets. The UI displays the Copy icon.
-2. Select **[!UICONTROL Copy]**. The UI displays the **[!UICONTROL Paste]** icon. You can also choose to go/navigate inside a folder before you paste. Different folders can contain assets with same names. For more information on folders, see [Folders and organizing assets](#folders-and-organizing-assets).
-3. Select **[!UICONTROL Paste]**. The **[!UICONTROL Paste]** dialog appears. The system auto generates names and titles to the new copies of assets/letters, but you can edit the titles and names of the assets/letters.
-
-   If you are copying and pasting the assets/letters at the same place, a suffix "-CopyXX" gets added to the existing name of the asset/letter. If no title existed for the copied asset/letter, the auto generated title field remains blank.
-
-4. If necessary, edit the Title and Name with which you want to save the copy of the asset/letter.
-5. Select **[!UICONTROL Paste]**. New copies of the copied assets are created. -->
-
-
->[!MORELIKETHIS]
->
->* [Use themes in Adaptive Form Core Components ](/help/forms/using-themes-in-core-components.md)
+{{see-also}}
