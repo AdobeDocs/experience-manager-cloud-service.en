@@ -62,9 +62,6 @@ To upload a form or a related asset:
    >
    > * When a name conflict with different resource types, uploading a package does not replace the existing folder hierarchy. For example, If you have an Adaptive Form named 'Training' at location `/content/dam/formsanddocuments` on one server. You can download the Adaptive Form and upload the form on another server. The second server also has a folder with the name 'Training' at the same location `/content/dam/formsanddocuments`. The upload fails.
    
-   
-   > * Only a member of the `form-user` group can upload XDP files.
-
 ## Download a theme {#downloading-a-theme}
 
 You can export themes in [!DNL AEM Forms] that you can use in other projects or instances. AEM lets you download themes as a zip file, that you can upload on the instance.
