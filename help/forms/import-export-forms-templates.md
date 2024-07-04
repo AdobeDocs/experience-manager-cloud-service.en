@@ -34,7 +34,7 @@ To download forms or related assets:
 
    ![Download forms assets](/help/forms/assets/download-form-assets.png)
 
-2. Click **[!UICONTROL Download]**.
+1. Click **[!UICONTROL Download]**.
 
 The selected assets are downloaded as an archive (.zip file).
 
@@ -80,7 +80,7 @@ To download a theme:
 
    ![Download theme assets](/help/forms/assets/download-theme-asset.png)
 
-2. Click **[!UICONTROL Download]**.
+1. Click **[!UICONTROL Download]**.
 
 The selected assets are downloaded as an archive (.zip file).
 
