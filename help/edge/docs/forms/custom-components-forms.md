@@ -19,7 +19,7 @@ Let us take an example of a `range` component that displays the `Estimated trip 
 
 ![Native Range component](/help/edge/assets/native-range-component.png)
 
-Let's start customizing the `range` field to show the minimum, maximum, and selected values on the line by adding style using CSS and adding a custom function. 
+Let's start customizing the `range` field to show the minimum, maximum, and selected values on the line by adding style using CSS and adding a custom function to decorate a component. 
 
 ![Custom Range component](/help/edge/assets/custom-range-component.png)
 
