@@ -29,19 +29,19 @@ By the end of this article, you learn to create custom components by adding styl
 
 Before you start creating your custom component, you should:
 
-* Have a basic knowldge of [native HTML components](/help/edge/docs/forms/form-components.md).
+* Have a basic knowledge of [native HTML components](/help/edge/docs/forms/form-components.md).
 * Know how to [style form fields based on field type using the CSS selectors](/help/edge/docs/forms/style-theme-forms.md)
 
 
-## Create custom component
+## Create a custom component
 
 Refer to the [enquiry spreadsheet](/help/edge/docs/forms/assets/enquiry-custom-component.xlsx) to customize the `range` component, by following the steps as explained below.
 
-To create custom component:
+To create a custom component:
 
 1. Add a custom function to decorate the component.
 1. Inject the decorator in the Form Block.
-1. Add style for the component in the CSS file.
+1. Add the style for the component in the CSS file.
 1. Deploy the files and build the project.
 1. Preview the form using the AEM sidekick.
 
@@ -50,7 +50,7 @@ To create custom component:
 The custom function added in `[../Form Block/components]` consists of:
 
 * **Function declaration**: Define the function name and its parameters.
-* **Logic implementation**: Write the logic to add the custom behaviour for the component.
+* **Logic implementation**: Write the logic to add the custom behavior for the component.
 * **Function export**: Make the function accessible in `[Form Block]`.
   
 Let us create a JavaScript file named `range.js` to style the range component. To add a custom function:
@@ -129,10 +129,14 @@ To inject the decorator in the Form Block:
 1. Add the following line of code:
 
     ```javascript
-
+    export default async function componentDecorator(fd) {
+    const { ':type': type = '', fieldType } = fd;
+    .... existing code ....
     if (fieldType === 'range') {
     const module = await import('./components/range.js');
     return module.default;
+    }
+     return null; // null should be returned to use the original markup
     }
     ```
 
@@ -140,11 +144,11 @@ To inject the decorator in the Form Block:
 
 ### Add style for the component in the CSS file
 
-You can change the appearance of form fields based on field type and field names using CSS selectors, allowing for consistent or unique styling based on requirements. To style the component add code in the `form.css` file to modify the look and feel of the form's component. 
+You can change the appearance of form fields based on field type and field names using CSS selectors, allowing for consistent or unique styling based on requirements. To style the component, add code in the `form.css` file to modify the look and feel of the form's component. 
 
 To customize the style for the `range` component, include a CSS code snippet that styles a `range` input element and its associated components within a form. This assumes a structured HTML layout with classes such as `.form` and `.range-wrapper`.
 
-To add style for component in the CSS file:
+To add style for a component in the CSS file:
 1. Go to  `[../Form Block/]` and open `form.css`.
 1. Add the following line of code:
 
@@ -212,7 +216,7 @@ Deploy the updated `range.js`, `mapping.css` and `form.css` files to your GitHub
 
 Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview your form with the newly implemented function that styles the range component. The new styling shows the minimum, maximum, and selected values on the line by adding styles using CSS and the custom function.
 
-
+![Custom component form](/help/edge/assets/custom-componet-form.png)
 
 
 
