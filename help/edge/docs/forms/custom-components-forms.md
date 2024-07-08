@@ -35,15 +35,12 @@ Before you start creating your custom component, you should:
 
 ## Create a custom component
 
+
+![steps to create custom component](/help/edge/docs/forms/assets/steps-to-create-custom-component.png)
+
+Let's now understand each step in detail.
+
 Refer to the [enquiry spreadsheet](/help/edge/docs/forms/assets/enquiry-custom-component.xlsx) to customize the `range` component, by following the steps as explained below.
-
-To create a custom component:
-
-1. Add a custom function to decorate the component.
-1. Inject the decorator in the Form Block.
-1. Add the style for the component in the CSS file.
-1. Deploy the files and build the project.
-1. Preview the form using the AEM sidekick.
 
 ### Add a custom function to decorate the component 
 
