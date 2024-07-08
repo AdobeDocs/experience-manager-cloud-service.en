@@ -19,7 +19,7 @@ Let us take an example of a `range` component that displays the `Estimated trip 
 
 ![Native Range component](/help/edge/assets/native-range-component.png)
 
-Let's start customizing the `range` field to show the minimum, maximum, and selected values on the line by adding style using the CSS and the custom function. 
+Let's start customizing the `range` field to show the minimum, maximum, and selected values on the line by adding style using CSS and adding a custom function. 
 
 ![Custom Range component](/help/edge/assets/custom-range-component.png)
 
@@ -211,10 +211,16 @@ Deploy the updated `range.js`, `mapping.css` and `form.css` files to your GitHub
 
 ### Preview the form using the AEM sidekick
 
-Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview your form with the newly implemented function that styles the range component. The new styling shows the minimum, maximum, and selected values on the line by adding styles using CSS and the custom function.
+Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview your form with the newly implemented function that styles the `range` component.
 
 ![Custom component form](/help/edge/assets/custom-componet-form.png)
 
+The new styling for the `range` component shows the minimum, maximum, and selected values on the line by adding styles using CSS and a custom function that includes a decorator for the component.
+
+
+## See also
+
+{{see-more-forms-eds}}
 
 
 
