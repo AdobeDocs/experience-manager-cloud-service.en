@@ -59,7 +59,7 @@ To connect AEM Forms to your Microsoft&reg; Sharepoint Document Library storage:
     
 1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears. 
 
-2. Now, select **SharePoint Site** > **Document Library** > **SharePoint Folder**, to save the data.
+1. Now, select **SharePoint Site** > **Document Library** > **SharePoint Folder**, to save the data.
 
     >[!NOTE]
     >
