@@ -9,7 +9,7 @@ role: Admin
 
 >[!NOTE]
 >
->Adobe is excited to announce the [GA rollout](/help/release-notes/release-notes-cloud/release-notes-current.md#real-use-monitoring) for Real Use Monitoring service, the client-side collection of data. It is an automated service and there is no customer setup required.
+>Real Use Monitoring service, the client-side collection of data, is an automated service. No customer setup is required.
 
 >[!INFO]
 >
@@ -17,9 +17,13 @@ role: Admin
 
 ## Overview {#overview}
 
-The Real Use Monitoring (RUM) service is a performance monitoring technology that captures and analyzes the digital user experiences of a website or application in real-time. It provides visibility into the real-time performance of a web application and provides deeper insight into the end-user experience. "Real User Monitoring" has been rebranded to "Real Use Monitoring" because it better reflects the true essence of the service. The service focuses on optimizing performance by monitoring website engagements, rather than the users themselves.
+The Real Use Monitoring (RUM) service is a performance monitoring technology that captures and analyzes the digital user experiences of a website or application in real-time. It provides visibility into the real-time performance of a web application and provides deeper insight into the end-user experience. The service focuses on optimizing performance by monitoring website engagements, rather than the users themselves.
 
 With RUM, key performance metrics are tracked right from the initiation of the URL until the request is served back to the browser. It helps developers enhance the application to make it easy to use for the end users. 
+
+>[!INFO]
+>
+>"Real User Monitoring" has been rebranded to "Real Use Monitoring" as it better reflects the true essence of the service. 
 
 ## Who Can Benefit From a Real Use Monitoring Service? {#who-can-benefit-from-rum-service}
 
