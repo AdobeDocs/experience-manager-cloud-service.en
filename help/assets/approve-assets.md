@@ -15,13 +15,14 @@ You must have access to AEM Assets as a Cloud Service and permissions to edit th
 
 ## Configuration 
 
-You need to make a one-time update to the applicable metadata schema in the [!DNL Experience Manager] before you can approve an asset. You can skip this configuration for [!DNL Experience Manager Assets]. Follow these steps to configure the metadata schema:
+You need to make a one-time update to the applicable metadata schema in Admin view before you can approve an asset. You can skip this configuration for Assets view. Follow these steps to configure the metadata schema:
 
 1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
 1. Select the applicable metadata schema and click **[!UICONTROL Edit]**. <br>The **[!UICONTROL Metadata Schema Form Editor]** opens with the **[!UICONTROL Basic]** tab highlighted. 
 1. Scroll down and click **[!UICONTROL Review Status]**.
 1. Click the **[!UICONTROL Rules]** tab on right side panel.
 1. Uncheck **[!UICONTROL Disable edit]** and click **[!UICONTROL Save]**.
+  If you need to view the property that the **[!UICONTROL Review Status]** field is mapped to, navigate to **[!UICONTROL Settings]** tab and view the `./jcr:content/metadata/dam:status` value in the **[!UICONTROL Map to property]** field.
 
   >[!NOTE]
   >
@@ -39,7 +40,7 @@ You can approve assets in both [!DNL Experience Manager] and [!DNL Experience Ma
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427430)
 
-   Similarly, you can approve assets using the [new Assets view](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-organize.html?lang=en#manage-asset-status).
+   Similarly, you can approve assets using the [new Assets view](/help/assets/manage-organize-assets-view.md).
 
 ## Bulk approve assets {#bulk-approve-assets}
 
@@ -68,3 +69,31 @@ Streamline your workflow by quickly approving multiple assets at once. You can b
 >[!NOTE]
 > 
 >This approach approves the newly created assets in the folder. For existing assets in the folder, you need to manually select and approve them. <br> Alternatively, you can use the **[!UICONTROL Reprocess]** option to apply the changes from the metadata profile to older assets.
+
+Similarly, to bulk approve assets within a folder in Assets view:
+
+1. Select the asset(s) and click **[!UICONTROL Bulk Metadata Edit]**.
+
+1. Select **[!UICONTROL Approved]** in the **[!UICONTROL Status]** field available in the [!UICONTROL Properties] section in the right pane.
+
+1. Click **[!UICONTROL Save]**.
+
+## Copy delivery URL for approved assets {#copy-delivery-url-approved-assets}
+
+The delivery URL for all approved assets in the repository is available if you have [!UICONTROL Dynamic Media with OpenAPI capabilities] enabled on your AEM as a Cloud Service instance.
+
+To copy delivery URL for an approved asset within the repository:
+
+1. Select the asset and click **[!UICONTROL Details]**.
+
+1. Click the Renditions icon available in the right pane.
+
+1. Select **[!UICONTROL Dynamic Media with OpenAPI]** available in the **[!UICONTROL Dynamic]** section.
+
+1. Click **[!UICONTROL Copy URL]** to copy the delivery URL of the asset.
+   ![copy delivery URL](/help/assets/assets/copy-delivery-url.png)
+
+   >[!NOTE]
+   >
+   >The option to copy delivery URL for approved assets is just available in Assets view.
+   
