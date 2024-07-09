@@ -22,7 +22,7 @@ Adobe can help you determine what method (or methods) best fit your requirements
 
 ## One Size Doesn't Fit All {#one-size}
 
-Every implementation of AEM has its own workflows and goals. One project may involve a simply authoring model with authors responsible for their own publications. Whereas another might have a complex network of contributors and approvals.
+Every implementation of AEM has its own workflows and goals. One project may involve a simple authoring model with content authors responsible for their own publications. Whereas another might have a complex network of contributors and approvals.
 
 ![Different authoring workflows](assets/authoring-workflows.png)
 
@@ -30,7 +30,7 @@ Different projects may have different (and multiple) use cases.
 
 ![Use cases](assets/use-cases.png)
 
-Because of this, AEM is your single solution, but does not offer a one-size-fits-all approach. AEM offers different approaches for content delivery as well as content creation to best fit your needs.
+Adobe understands this and therefore does not offer a one-size-fits-all approach. AEM is your single solution that offers different approaches for content delivery as well as content creation to best fit your needs.
 
 To determine the best approach, you need to consider four items.
 
