@@ -890,7 +890,7 @@ The original audio track extracted from a primary file cannot be downloaded.
 1. Select **[!UICONTROL Download]**.
 1. Publish the video. See [Publish assets](publishing-dynamicmedia-assets.md).
 
-## About AI-generated captions for videos in Dynamic Media
+<!-- ## About AI-generated captions for videos in Dynamic Media
 
 AI-powered captions in Dynamic Media are designed to enhance video accessibility and engagement by automatically generating accurate and synchronized subtitles. This technology uses advanced AI algorithms to transcribe spoken content into text, which is then displayed as captions on the video. Here are some key features.
 
@@ -899,20 +899,7 @@ AI-powered captions in Dynamic Media are designed to enhance video accessibility
 * **Enhanced Accessibility:** By providing captions, videos become more accessible to viewers who are deaf or hard of hearing, as well as those who prefer to watch videos with the sound off.
 * **Improved Engagement:** Captions can help retain viewer attention and improve comprehension, especially in noisy environments or when the viewer's native language is different from the video's language.
 
-These features in Dynamic Media make AI-powered video aptions a valuable tool for content creators looking to enhance their video content's accessibility and engagement.
-
->[!IMPORTANT]
->
->The Dynamic Media best practices in this article may evolve over time as new technologies in Dynamic Media emerge. The information below is current for the latest version of Dynamic Media.
-
-### Add AI-generated captions to your video
-
-Before you add multiple AI-generated captions to your video, be sure you already have the following in-place:
-
-* Dynamic Media is set up in an AEM as a Cloud Service environment.
-* A Dynamic Media Video profile is applied to the folder where your 
-
-1. 
+These features in Dynamic Media make AI-powered video aptions a valuable tool for content creators looking to enhance their video content's accessibility and engagement. -->
 
 
 ## Add closed captions to video {#adding-captions-to-video}
