@@ -187,6 +187,11 @@ There are prerequisites for this task:
 
    After the update procedure has run, reset the cloud environment variable `CF_MIGRATION_ENABLED` to '0', to trigger the recycling of all pods.
 
+   | |Name |Value |Default Value |Service |Applied |Type |Notes |
+   |---|---|---|---|---|---|---|---|
+   | |`CF_MIGRATION_ENABLED` |`0` |`0` |All | |Variable |Disables(0) (or Enables(!=0)) triggering of Content Fragment migration job.  |
+
+   <!--
    <table style="table-layout:auto">
     <tbody>
      <tr>
@@ -211,7 +216,8 @@ There are prerequisites for this task:
      </tr>
     </tbody>
    </table>
-
+   -->
+   
    >[!NOTE]
    >
    >This is important for the publish tier, as the content update is only done on golden-publish, and when recycling of pods, all normal publish pods are based on the golden-publish.
