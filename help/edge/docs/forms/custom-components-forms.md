@@ -40,7 +40,7 @@ Before you start creating your custom component, you should:
 
 Let's now understand each step in detail.
 
-Refer to the [enquiry spreadsheet](/help/edge/docs/forms/assets/enquiry-custom-component.xlsx) to customize the `range` component, by following the steps as explained below.
+Refer to the [enquiry spreadsheet](/help/edge/docs/forms/assets/enquiry.xlsx) to customize the `range` component, by following the steps as explained below.
 
 ### Add a custom function to decorate the component 
 
