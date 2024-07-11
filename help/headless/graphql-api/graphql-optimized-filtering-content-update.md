@@ -32,6 +32,15 @@ There are prerequisites for this task:
 
    The available variables are:
 
+   | |Name |Value |Default Value |Service |Applied |Type |Notes |
+   |---|---|---|---|---|---|---|---|
+   |1 |`CF_MIGRATION_ENABLED` |`1` |`0` |All | |Variable |Enables(!=0) or disables(0) triggering of Content Fragment migration job. |
+   |2 |`CF_MIGRATION_ENFORCE` |`1` |`0` |All | |Variable |Enforce (!=0) remigration of Content Fragments. Setting this flag to 0 does an incremental migration of CFs. This means, if the job is terminated for any reason, then the next run of the job starts migration from the point where it got terminated. The first migration is recommended for enforcement (value=1). |
+   |3 |`CF_MIGRATION_BATCH` |`50` |`50` |All | |Variable |Size of the batch for saving the number of Content Fragments after migration. This is relevant to how many CFs are saved to the repository in one batch, and can be used to optimize the number of writes to the repository. |
+   |4 |`CF_MIGRATION_LIMIT` |`1000` |`1000` |All | |Variable |Max number of Content Fragments to process at a time. See also notes for `CF_MIGRATION_INTERVAL`. |
+   |5 |`CF_MIGRATION_INTERVAL` |`60` |`600` |All | |Variable |Interval (seconds) to process the remaining Content Fragments up until the next Limit. This interval is also considered as both a wait-time before starting the job, and a delay between processing of each subsequent CF_MIGRATION_LIMIT number of CFs. (*) |
+
+   <!--
    <table style="table-layout:auto">
     <tbody>
      <tr>
@@ -97,6 +106,7 @@ There are prerequisites for this task:
      </tr>
     </tbody>
    </table>
+   -->
 
    >[!NOTE]  
    >
@@ -187,6 +197,11 @@ There are prerequisites for this task:
 
    After the update procedure has run, reset the cloud environment variable `CF_MIGRATION_ENABLED` to '0', to trigger the recycling of all pods.
 
+   | |Name |Value |Default Value |Service |Applied |Type |Notes |
+   |---|---|---|---|---|---|---|---|
+   | |`CF_MIGRATION_ENABLED` |`0` |`0` |All | |Variable |Disables(0) (or Enables(!=0)) triggering of Content Fragment migration job.  |
+
+   <!--
    <table style="table-layout:auto">
     <tbody>
      <tr>
@@ -211,6 +226,7 @@ There are prerequisites for this task:
      </tr>
     </tbody>
    </table>
+   -->
 
    >[!NOTE]
    >
