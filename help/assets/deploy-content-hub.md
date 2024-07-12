@@ -41,6 +41,10 @@ To access the Content Hub portal, administrators first need to enable Content Hu
 1. Expand **[!UICONTROL Assets]** and select **[!UICONTROL Content Hub]**.
    ![Select Content Hub in Cloud Manager](assets/edit-program-cloud-manager-content-hub.png)
 
+   >[!NOTE]
+   >
+   >If **[!UICONTROL Update]** is not enabled for you after selecting Content Hub, ensure that you have specified Go-Live settings for the program.
+
 1. Click **[!UICONTROL Update]**.
 
 Content Hub is now enabled for Experience Manager Assets as a Cloud Service. 
@@ -105,9 +109,19 @@ These users can now access the assets available on the Content Hub portal.
 >
 >You can use all the advanced enterprise features like synchronization with external Identity Providers.
 
-After adding the appropriate users using Admin Console, the users can access Content Hub using the following link:
+### How to access Content Hub? {#access-content-hub}
 
-`https://experience.adobe.com/#/assets/contenthub`
+Content Hub can be accessed using the following ways:
+
+* Access Content Hub using the following link:
+
+   `https://experience.adobe.com/#/assets/contenthub`
+
+* Log on to `experience.adobe com` and click **[!UICONTROL Experience Manager Assets Content Hub]** available in the **[!UICONTROL Quick access]** section:
+   ![Content Hub Access](assets/access-content-hub.png)
+
+* Log on to `experience.adobe com` and click **[!UICONTROL Experience Manager Assets Content Hub]** available in the product switcher:
+   ![Content Hub Access method 3](assets/access-content-hub-alternate.png)
 
 ### Disable email notifications to users {#disable-email-notifications}
 
