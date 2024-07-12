@@ -55,8 +55,7 @@ The Site Secret for domain registered with Google reCAPTCHA is added to project 
     >[!NOTE]
     >
     >  * You can retrieve the reCAPTCHA keys from the [Google reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin).
-    >  *  You must specify the value of **captcha.type** `config` file as **reCAPTCHA v2**.
-
+    >  *  You must specify the value of **captcha.type** in the `config` file as **reCAPTCHA v2**.
 
    Refer to the image for an illustration of a project configuration file:
 
