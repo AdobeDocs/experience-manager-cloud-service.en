@@ -294,13 +294,7 @@ Explained in the table below is the available action.
 | Name      | Properties               | Meaning     |
 |-----------|--------------------------|-------------|
 |**selectOrigin** |originName|Name of one of the defined origins.|
-|     |skipCache (optional, default is false)| Flag whether to use caching for requests matching this rule. By default, responses will be cached according to the response caching header (e.g., Cache-Control or Expires)
-
-
-
-
-
-|
+|     |skipCache (optional, default is false)| Flag whether to use caching for requests matching this rule. By default, responses will be cached according to the response caching header (e.g., Cache-Control or Expires) |
 
 **Origins**
 
