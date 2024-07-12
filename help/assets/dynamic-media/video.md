@@ -613,7 +613,8 @@ Added captions are supported with WebVTT and Adobe VTT formats. And, added audio
    >
    >When you have completed either one of the above tasks, return to these steps.
   
-   ![Captions and Audio Tracks tab on the Properties page.](/help/assets/dynamic-media/assets/msma-audiotracks.png)*Captions and audio tracks tab on the video's Properties page.*
+   ![Captions and Audio Tracks tab on the Properties page.](/help/assets/dynamic-media/assets/msma-audiotracks.png)
+   *Captions and audio tracks tab on the video's Properties page.*
 
 1. To add one or more audio tracks to a video, do the following:
    1. Select **[!UICONTROL Upload Audio Tracks]**.
@@ -642,7 +643,8 @@ Added captions are supported with WebVTT and Adobe VTT formats. And, added audio
    | **Option 2** | I want AI to generate my caption files in multiple languages.<br>See **Option 2** below. | **[!UICONTROL Convert audio tracks]** |
    | **Option 3** | Text in a caption file (`.vtt`) needs to be corrected, reuploaded to replace the old `.vtt` file, then have AI translate the corrected file.<br>See **Option 3** below. | **[!UICONTROL Translate caption]** |
 
-    ![Create Captions options.](/help/assets/dynamic-media/assets/msma-createcaption.png)*The Create Captions drop-down menu gives you three options: Upload Files, Convert audio tracks, and Translate caption.*
+    ![Create Captions options.](/help/assets/dynamic-media/assets/msma-createcaption.png)
+    *The Create Captions drop-down menu gives you three options: Upload Files, Convert audio tracks, and Translate caption.*
 
     +++**Option 1:** *I have my own pre-existing caption files that are in the languages that I want to use* (**[!UICONTROL Upload Files]** option)
 
@@ -674,7 +676,8 @@ Added captions are supported with WebVTT and Adobe VTT formats. And, added audio
 
     1. Near the upper-right corner of the page, click **[!UICONTROL Create Caption]** > **[!UICONTROL Convert audio tracks]**.
 
-        ![Convert audio tracks dialog box.](/help/assets/dynamic-media/assets/msma-convertaudiotracks.png)*The Convert Audio Tracks dialog box uses AI to generate caption files in multiple languages.*
+        ![Convert audio tracks dialog box.](/help/assets/dynamic-media/assets/msma-convertaudiotracks.png)
+        *The Convert Audio Tracks dialog box uses AI to generate caption files in multiple languages.*
 
     1. In the **Convert Audio Tracks** dialog box, set the following options:
     
@@ -707,7 +710,8 @@ Added captions are supported with WebVTT and Adobe VTT formats. And, added audio
 
     1. Click **[!UICONTROL Create Caption]** > **[!UICONTROL Translate captions]**. This option is available if one or more caption files were already added and processed.
 
-        ![Translate Captions dialog box.](/help/assets/dynamic-media/assets/msma-translate-captions.png)*The Translate Captions dialog box lets you use an existing caption file to have AI generate new caption files in multiple languages.*
+        ![Translate Captions dialog box.](/help/assets/dynamic-media/assets/msma-translate-captions.png)
+        *The Translate Captions dialog box lets you use an existing caption file to have AI generate new caption files in multiple languages.*
 
     1. In the **Translate caption** dialog box, set the following options:
 
