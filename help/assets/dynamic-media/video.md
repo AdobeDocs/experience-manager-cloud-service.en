@@ -901,7 +901,6 @@ AI-powered captions in Dynamic Media are designed to enhance video accessibility
 
 These features in Dynamic Media make AI-powered video aptions a valuable tool for content creators looking to enhance their video content's accessibility and engagement. -->
 
-
 ## Add closed captions to video {#adding-captions-to-video}
 
 >[!IMPORTANT]
