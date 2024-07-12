@@ -41,13 +41,13 @@ To start configuring reCaptcha in Edge Delivery Services Forms, refer to the fol
 The Site Secret for domain registered with Google reCAPTCHA is added to project the configuration file (`.helix/config`) in your AEM Project folder at Microsoft SharePoint or Google Drive. To add the Site Secret to the config file:
 
 1. Go to your AEM Project folder on Microsoft® SharePoint or Google Drive. 
-2. Create the `.helix/config.xlsx` file in your AEM Project folder in Microsoft SharePoint Site or the `.helix/config` file in AEM Project folder within your Google Drive. 
+1. Create the `.helix/config.xlsx` file in your AEM Project folder in Microsoft SharePoint Site or the `.helix/config` file in AEM Project folder within your Google Drive. 
 
     >[!NOTE]
     >
     > The [project configuration file](https://www.aem.live/docs/configuration) is a spreadsheet located at `/.helix/config`. If the file does not exist, create it.
 
-3. Open the `config` file and add the following key and value pairs:
+1. Open the `config` file and add the following key and value pairs:
 
     * **captcha.secret**: Google reCAPTCHA secret key value
     * **captcha.type**: reCAPTCHA v2
