@@ -866,19 +866,19 @@ The original audio track extracted from a primary video cannot be deleted.
 1. On the Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab.
 1. Do either one of the following:
 
-   * Captions - Under the **Captions** heading, select one or more caption files that you want to delete from the video, then select **[!UICONTROL Delete]**.
-   * Audio Tracks - Under the **Audio Tracks** heading, select one or more audio track files that you want to delete from the video, then select **[!UICONTROL Delete]**.
+   * Captions - Under the **Captions** heading, select one or more caption files that you want to delete from the video, then click **[!UICONTROL Delete]**.
+   * Audio Tracks - Under the **Audio Tracks** heading, select one or more audio track files that you want to delete from the video, then click **[!UICONTROL Delete]**.
 
-1. In the Delete dialog box, select **[!UICONTROL OK]**.
+1. In the Delete dialog box, click **[!UICONTROL OK]**.
 1. Publish the video.
 
 ### Download caption or audio track files that were uploaded to a video
 
-You can download any caption or audio track files you have uploaded for a video. You have the option of either downloading all selected files as a .zip, or creating a separate download folder for each file.
+You can download any caption or audio track files you have uploaded for a video. You have the option of either downloading all selected files as a `.zip`, or creating a separate download folder for each file.
 
 The original audio track extracted from a primary video file cannot be downloaded.
 
-**Use case:** Downloading a caption file might be necessary if you find an error in the .vtt file. Simply download the incorrect .vtt file, open it in a plain text editor, and make your corrections. After saving the .vtt file, upload it again. Then, use the **[!UICONTROL Translate Captions]** option to re-translate the corrected .vtt file.
+**Use case:** Downloading a caption file might be necessary if you find an error in a `.vtt` file. Simply download the incorrect `.vtt` file, open it in a plain text editor, and make your corrections. After saving the `.vtt` file, upload it again. Then, use the **[!UICONTROL Translate Captions]** option to re-translate the corrected `.vtt` file.
 
 **To download caption or audio track files from a video:**
 
