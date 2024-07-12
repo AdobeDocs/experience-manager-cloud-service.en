@@ -566,7 +566,7 @@ With multiple caption and audio track capability in Dynamic Media, you can easil
 
 These features make AI-powered captions a valuable tool for content creators looking to enhance their video content's accessibility and engagement. 
 
-![Captions and audio tracks tab in Dynamic Media along with a table showing uploaded .VTT caption files and uploaded .MP3 audio track files for a video.](/help/assets/dynamic-media/assets/msma-subtitle-audiotracks-tab2.png)
+![Captions and audio tracks tab in Dynamic Media along with a table showing uploaded .VTT caption files and uploaded .MP3 audio track files for a video.](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
 
 Some of the use cases to consider for adding multiple captions and audio tracks to your primary video include the following:
 
@@ -598,10 +598,10 @@ Added captions are supported with WebVTT and Adobe VTT formats. And, added audio
 
 **To add multiple captions and audio tracks to your video:**
 
-1. [Upload your primary video to a folder](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) that already has a video profile assigned to it. You do not need to publish the video until later in these steps.
+1. [Upload your primary video to a folder](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) that already has a video profile assigned to it.
 1. Navigate to the uploaded video asset that you want to add multiple caption and audio tracks.
 1. In asset selection mode, either from the List View or the Card View, select the video asset.
-1. On the toolbar, select the Properties icon (a circle with an "i" in it).
+1. On the toolbar, click the Properties icon (a circle with an "i" in it).
 ![Selected video asset with checkmark over video thumbnail image and View Properties highlighted on the toolbar.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Selected video asset in Card View.*
 1. On the video's Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab.
 
@@ -613,7 +613,7 @@ Added captions are supported with WebVTT and Adobe VTT formats. And, added audio
    >
    >When you have completed either one of the above tasks, return to these steps.
   
-   ![Captions and Audio Tracks tab on the Properties page.](/help/assets/dynamic-media/assets/msma-audiotracks2.png)*Captions and audio tracks tab on the video's Properties page.*
+   ![Captions and Audio Tracks tab on the Properties page.](/help/assets/dynamic-media/assets/msma-audiotracks.png)*Captions and audio tracks tab on the video's Properties page.*
 
 1. To add one or more audio tracks to a video, do the following:
    1. Select **[!UICONTROL Upload Audio Tracks]**.
@@ -641,6 +641,8 @@ Added captions are supported with WebVTT and Adobe VTT formats. And, added audio
    | **Option 1** | I have my own pre-existing caption files that are in the languages that I want to use.<br>See **Option 1** below. | **[!UICONTROL Upload Files]** |
    | **Option 2** | I want AI to generate my caption files in multiple languages.<br>See **Option 2** below. | **[!UICONTROL Convert audio tracks]** |
    | **Option 3** | Text in a caption file (`.vtt`) needs to be corrected, reuploaded to replace the old `.vtt` file, then have AI translate the corrected file.<br>See **Option 3** below. | **[!UICONTROL Translate caption]** |
+
+    ![Create Captions options.](/help/assets/dynamic-media/assets/msma-createcaption.png)*The Create Captions drop-down menu gives you three options: Upload Files, Convert audio tracks, and Translate caption.*
 
     +++**Option 1:** *I have my own pre-existing caption files that are in the languages that I want to use* (**[!UICONTROL Upload Files]** option)
 
@@ -671,6 +673,9 @@ Added captions are supported with WebVTT and Adobe VTT formats. And, added audio
     +++**Option 2:** *I want AI to generate my caption files in multiple languages* (**[!UICONTROL Convert audio tracks]** option)
 
     1. Near the upper-right corner of the page, click **[!UICONTROL Create Caption]** > **[!UICONTROL Convert audio tracks]**.
+
+        ![Convert audio tracks dialog box.](/help/assets/dynamic-media/assets/msma-convertaudiotracks.png)*The Convert Audio Tracks dialog box uses AI to generate caption files in multiple languages.*
+
     1. In the **Convert Audio Tracks** dialog box, set the following options:
     
         | Option | Description |
@@ -679,7 +684,8 @@ Added captions are supported with WebVTT and Adobe VTT formats. And, added audio
         | Output languages | In the drop-down list, select one or more languages in which you want the caption file to appear.<br>To remove a selected language, click **X**.<br>During video playback, the list of languages appears in the media player in the order that you select them here. |
 
     1. Click **[!UICONTROL Done]**.
-    1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**. One or more caption files are created and processing begins, as seen in the **Status** column of the interface. See also [View the lifecycle status of uploaded caption and audio track files](#lifecycle-status-video).
+    1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**. 
+    1. Click the **[!UICONTROL Captions & Audio tracks]** tab again. One or more caption files are created and processing begins, as seen in the **Status** column of the interface. See also [View the lifecycle status of uploaded caption and audio track files](#lifecycle-status-video).
 
         >[!NOTE]
         >
@@ -699,7 +705,10 @@ Added captions are supported with WebVTT and Adobe VTT formats. And, added audio
 
     +++**Option 3:** *Text in a caption file (`.vtt`) needs to be corrected, reuploaded to replace the old `.vtt` file, then have AI translate the corrected file* (**[!UICONTROL Translate captions]** option)
 
-    1. Click **[!UICONTROL Create Caption]** > **[!UICONTROL Translate captions]**.
+    1. Click **[!UICONTROL Create Caption]** > **[!UICONTROL Translate captions]**. This option is available if one or more caption files were already added and processed.
+
+        ![Translate Captions dialog box.](/help/assets/dynamic-media/assets/msma-translate-captions.png)*The Translate Captions dialog box lets you use an existing caption file to have AI generate new caption files in multiple languages.*
+
     1. In the **Translate caption** dialog box, set the following options:
 
         | Option | Description |
@@ -708,7 +717,8 @@ Added captions are supported with WebVTT and Adobe VTT formats. And, added audio
         | Output languages | In the drop-down list, select one or more languages in which you want the caption file to appear.<br>To remove a selected language, click **X**.<br>During video playback, the list of languages appears in the media player in the order that you select them here. |
 
     1. Click **[!UICONTROL Done]**.
-    1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**. One or more caption files are created and processing begins, as seen in the **Status** column of the interface. See also [View the lifecycle status of uploaded caption and audio track files](#lifecycle-status-video).
+    1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**. 
+    1. Click the **[!UICONTROL Captions & Audio tracks]** tab again. One or more caption files are created and processing begins, as seen in the **Status** column of the interface. See also [View the lifecycle status of uploaded caption and audio track files](#lifecycle-status-video).
 
         >[!NOTE]
         >
@@ -778,7 +788,7 @@ You can observe the lifecycle status of any caption or audio track file uploaded
 | Failed | A "Failed" state means that processing of a caption or audio track file did not complete. Delete the caption or audio track file and upload again. |
 | Unpublished | When a published primary video is unpublished explicitly, any caption or audio track files that you added to the video, are also unpublished. |   
 
-![Status column highlighted for Captions and Audio Tracks fields.](/help/assets/dynamic-media/assets/msma-lifecycle-status2.png)*Lifecycle status of each uploaded caption and audio track file.*
+![Status column highlighted for Captions and Audio Tracks fields.](/help/assets/dynamic-media/assets/msma-lifecycle-status.png)*Lifecycle status of each uploaded caption and audio track file.*
 
 ### Set the default audio for a video that has multiple audio tracks
 
@@ -803,7 +813,7 @@ However, any uploaded audio track files can be set as the default audio to play 
 1. Select **[!UICONTROL Set as default]**.
 In the **Set as default** dialog box, select **[!UICONTROL Replace]**.
 
-   ![The Audio Tracks heading with a selected audio track file name and highlighted "Set as default" button.](/help/assets/dynamic-media/assets/msma-defaultaudiotrack2.png)*Setting the default audio track for a video.*
+   ![The Audio Tracks heading with a selected audio track file name and highlighted "Set as default" button.](/help/assets/dynamic-media/assets/msma-defaultaudiotrack.png)*Setting the default audio track for a video.*
 
 1. In the upper-right corner, select **[!UICONTROL Save & Close]**.
 1. Publish the video. See [Publish assets](publishing-dynamicmedia-assets.md).
@@ -864,9 +874,11 @@ The original audio track extracted from a primary video cannot be deleted.
 
 ### Download caption or audio track files that were uploaded to a video
 
-You can download one or more caption or audio track files that you uploaded for use with a video. You have the option of either downloading all selected files as a .zip, or creating a separate download folder for each file.
+You can download any caption or audio track files you have uploaded for a video. You have the option of either downloading all selected files as a .zip, or creating a separate download folder for each file.
 
-The original audio track extracted from a primary file cannot be downloaded.
+The original audio track extracted from a primary video file cannot be downloaded.
+
+**Use case:** Downloading a caption file might be necessary if you find an error in the .vtt file. Simply download the incorrect .vtt file, open it in a plain text editor, and make your corrections. After saving the .vtt file, upload it again. Then, use the **[!UICONTROL Translate Captions]** option to re-translate the corrected .vtt file.
 
 **To download caption or audio track files from a video:**
 
