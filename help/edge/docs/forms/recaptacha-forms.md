@@ -57,7 +57,7 @@ The Site Secret for domain registered with Google reCAPTCHA is added to project 
     >  * You can retrieve the reCAPTCHA keys from the [Google reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin).
     >  *  You must specify the value of **captcha.type** in the `config` file as **reCAPTCHA v2**.
 
-   Refer to the image for an illustration of a project configuration file:
+   Refer to the screenshot of a project configuration file below:
 
     ![Project configuration file](/help/forms/assets/recaptcha-config-file.png)
 
@@ -74,7 +74,7 @@ The Site Key for a domain registered with Google reCAPTCHA is added to the sprea
     * **type**: captcha
     * **value**: Google reCAPTCHA site key value
   
-    Refer to the illustration below, depicting the spreadsheet with the new row type as CAPTCHA:
+    Refer to the screenshot below, depicting the spreadsheet with the new row type as CAPTCHA:
   
    ![Recaptcha spreadsheet](/help/edge/docs/forms/assets/recaptcha-spreadsheet.png)
    
@@ -101,7 +101,7 @@ To apply Google reCAPTCHA to all the forms on your Site that use Adaptive Forms 
 
 1. Open the corresponding GitHub repository on your local machine. 
 1. Navigate to `[../Form Block/integrations]` folder and open the `recaptcha.js` file.
-1. Replace the `siteKey` with Google reCAPTCHA site key value.
+1. Replace the `siteKey` with Google reCAPTCHA Site key value.
 
     ![Recaptcha apply to all forms](/help/forms/assets/recaptcha-apply-to-all-forms.png)
 
