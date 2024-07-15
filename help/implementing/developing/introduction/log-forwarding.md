@@ -191,7 +191,7 @@ See the log entry formats in the [logging article](/help/implementing/developing
    metadata:
      envTypes: ["dev"]
    data:
-     dataDog:
+     datadog:
        default:
          enabled: true       
          host: "http-intake.logs.datadoghq.eu"
