@@ -13,9 +13,12 @@ role: Admin, Architect, Developer
 reCAPTCHA is a popular tool used to protect websites from fraudulent activities, spam, and misuse. In Edge Delivery Services, the Adaptive Forms Block provides the capability to add Google reCAPTCHA to distinguish between humans and bots. This feature allows users to protect their website from spam and misuse. 
 For example, consider an enquiry form that collects data such as start and end trip dates, room budget, estimated trip cost, and traveler information. In such cases, there is a risk of malicious users exploiting the form for purposes like sending phishing emails or flooding it with irrelevant or harmful content using spambots. Integrating reCAPTCHA offers added security by verifying that submissions are from genuine users, effectively minimizing spam entries.
 
+![Recaptcha Image](/help/edge/docs/forms/assets/recaptcha-image.png){width="300" align="center"}
+
 Edge Delivery Services only supports the **Score based(v3)-reCAPTCHA** for the Adaptive Form Block.
 
-![Recaptcha V2](/help/forms/assets/recaptcha-v2-invisible.png)
+![Recaptcha V2](/help/forms/assets/recaptcha-v2-invisible.png){width="300" align="center"}
+
 
 By the end of this article, you learn to:
   * [Enable Google reCAPTCHA for a single form](#enable-google-recaptchas-for-a-single-form)
