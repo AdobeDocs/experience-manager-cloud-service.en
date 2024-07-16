@@ -252,6 +252,7 @@ ctx._index = sourceType + "_" + envType + "_" + date;
    data:
      https:
        default:
+         enabled: true
          url: "https://example.com/aem_logs/aem"
          authHeaderName: "X-AEMaaCS-Log-Forwarding-Token"
          authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
