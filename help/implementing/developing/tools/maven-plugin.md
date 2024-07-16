@@ -21,10 +21,13 @@ This document details how to use the Maven to manage these tasks. However it is 
 
 >[!NOTE]
 >
+>Please always use the latest available versions of these plugins.
+
+>[!NOTE]
+>
 >Package **creation** is now owned by the [Apache Jackrabbit FileVault Package Maven plugin.](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
 >
->* The `content-package-maven-plugin` no longer supports packaging from release 1.0.2.
->* This article describes the **deployment** of the constructed packages to AEM is performed by the Adobe Content Package Maven plugin.
+>This article describes the **deployment** of the constructed packages to AEM as performed by the Adobe Content Package Maven plugin.
 
 ## Packages and the AEM Project Structure {#aem-project-structure}
 
@@ -154,64 +157,6 @@ Uninstalls a package. The package remains on the server in the uninstalled state
 
 All parameters of the uninstall goal are described in the [Common Parameters](#common-parameters) section.
 
-### package {#package}
-
-Creates a content package. The default configuration of the package goal includes the contents of the directory where compiled files are saved. The execution of the package goal requires that the compile build phase has completed. The package goal is bound to the package phase of the Maven build lifecycle.
-
-#### Parameters {#parameters-5}
-
-In addition to the following parameters, see the description of the `name` parameter in the [Common Parameters](#common-parameters) section.
-
-|Name|Type|Required|Default Value|Description|
-|---|---|---|---|---|
-|`archive`|`org.apache.maven.archiver.MavenArchiveConfiguration`|No|None|The archive configuration to use|
-|`builtContentDirectory`|`java.io.File`|Yes|The value of the output directory of the Maven build|The directory that contains the content to include in package|
-|`dependencies`|`java.util.List`|No|None||
-|`embeddedTarget`|`java.lang.String`|No|None||
-|`embeddeds`|`java.util.List`|No|None||
-|`failOnMissingEmbed`|`boolean`|Yes|`false`|A value of `true` causes the build to fail when an embedded artifact is not found in the project dependencies. A value of `false` causes the build to ignore such errors.|
-|`filterSource`|`java.io.File`|No|None|This parameter defines a file that specifies the source of the workspace filter. The filters specified in the configuration and injected via emebeds or subpackages are merged with the file content.|
-|`filters`|`com.day.jcr.vault.maven.pack.impl.DefaultWorkspaceFilter`|No|None|This parameter contains filter elements that define the package content. When executed, the filters are included in the `filter.xml` file. See the [Using Filters](#using-filters) section below.|
-|`finalName`|`java.lang.String`|Yes|The `finalName` defined in the Maven project (build phase)|The name of the generated package ZIP file, without the `.zip` file extension|
-|`group`|`java.lang.String`|Yes|The `groupID` defined in the Maven project|The `groupId` of the generated content package which is part of the target installation path for the content package|
-|`outputDirectory`|`java.io.File`|Yes|The build directory defined in the Maven project|The local directory where the content package is saved|
-|`prefix`|`java.lang.String`|No|None||
-|`project`|`org.apache.maven.project.MavenProject`|Yes|None|The Maven project|
-|`properties`|`java.util.Map`|No|None|These parameters define additional properties that you can set in the `properties.xml` file. These properties cannot overwrite the following predefined properties: `group` (use `group` parameter to set), `name` (use `name` parameter to set), `version` (use `version` parameter to set), `description` (set from the project description), `groupId` (`groupId` of the Maven project descriptor), `artifactId` (`artifactId` of the Maven project descriptor), `dependencies` (use `dependencies` parameter to set), `createdBy` (the value of the `user.name` system property), `created` (the current system time), `requiresRoot` (use `requiresRoot` parameter to set), `packagePath` (automatically generated from the group and package name)|
-|`requiresRoot`|`boolean`|Yes|false|Defines whether the package requires root. Becomes the `requiresRoot` property of the `properties.xml` file.|
-|`subPackages`|`java.util.List`|No|None||
-|`version`|`java.lang.String`|Yes|The version defined in the Maven project|The version of the content package|
-|`workDirectory`|`java.io.File`|Yes|The directory defined in the Maven project (build phase)|The directory that contains the content to include in the package|
-
-#### Using filters {#using-filters}
-
-Use the filters element to define the package content. The filters are added to the `workspaceFilter` element in the `META-INF/vault/filter.xml` file of the package.
-
-The following filter example shows the XML structure to use:
-
-```xml
-<filter>
-   <root>/apps/myapp</root>
-   <mode>merge</mode>
-       <includes>
-              <include>/apps/myapp/install/</include>
-              <include>/apps/myapp/components</include>
-       </includes>
-       <excludes>
-              <exclude>/apps/myapp/config/*</exclude>
-       </excludes>
-</filter>
-```
-
-##### Import Mode {#import-mode}
-
-The `mode` element defines how content is the repository is affected when the package is imported. The following values can be used:
-
-* **Merge:** Content in the package that is not already in the repository is added. Content that is in both the package and the repository is unchanged. No content is removed from the repository.
-* **Replace:** Content in the package that is not in the repository is added to the repository. Content in the repository is replaced with matching content in the package. Content is removed from the repository when it does not exist in the package.
-* **Update:** Content in the package that is not in the repository is added to the repository. Content in the repository is replaced with matching content in the package. 
-
-When the filter contains no `mode` element, the default value of `replace` is used.
 
 ### help {#help}
 
