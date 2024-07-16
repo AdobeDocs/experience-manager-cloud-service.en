@@ -111,6 +111,10 @@ Once you submit the support ticket, Adobe enables Dynamic Media with OpenAPI cap
 </td>
 </table>
 <table>
+
+
+
+<table>
 <td>
    <a href="/help/assets/search-assets-api.md">
    <img alt="Search assets Experience Manager Assets repository" src="./assets/search-assets-api-overview.png" />
@@ -150,5 +154,35 @@ Once you submit the support ticket, Adobe enables Dynamic Media with OpenAPI cap
       <em> DAM Admin or Brand Managers restrict the access by configuring roles for approved assets on the AEM as a Cloud Service author instance.</em>
    </p>
 </td>
+
+</table>
+<table>
+<td>
+   <a href="/help/assets/integrate-remote-approved-assets-with-sites.md">
+   <img alt="Integrate remote AEM Assets with AEM Sites" src="./assets/connected-assets-rdam.png" />
+   </a>
+   <div>
+      <a href="/help/assets/integrate-remote-approved-assets-with-sites.md">
+      <strong>Integrate remote AEM Assets with AEM Sites</strong>
+      </a>
+   </div>
+   <p>
+      <em>Learn how to integrate remote AEM Assets with AEM Sites environment. </em>
+   </p>
+</td>
+<td>
+   <a href="/help/assets/dynamic-media-open-apis-faqs.md">
+   <img alt="Dynamic Media with OpenAPI capabilities frequently asked questions" src="./assets/dynamic-media-faqs.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/dynamic-media-open-apis-faqs.md">
+      <strong>Dynamic Media with OpenAPI capabilities frequently asked questions</strong>
+      </a>
+   </div>
+   <p>
+      <em>Get a response to the most asked Dynamic Media with OpenAPI capabilities frequently asked questions.</em>
+   </p>
+</td>
+
 </table>
 
