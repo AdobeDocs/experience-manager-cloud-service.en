@@ -183,6 +183,19 @@ Once you submit the support ticket, Adobe enables Dynamic Media with OpenAPI cap
       <em>Get a response to the most asked Dynamic Media with OpenAPI capabilities frequently asked questions.</em>
    </p>
 </td>
+<td>
+   <a href="/help/assets/configure-custom-domain.md">
+   <img alt="Configure custom domain" src="./assets/configure-custom-domain.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/configure-custom-domain.md">
+      <strong>Configure custom domain</strong>
+      </a>
+   </div>
+   <p>
+      <em>While AEM as a Cloud Service comes with a default domain, you can customize it as per your needs.</em>
+   </p>
+</td>
 
 </table>
 
