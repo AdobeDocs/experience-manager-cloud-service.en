@@ -839,6 +839,7 @@ user-guide-title: AEM as a Cloud Service
       + [Styling CIF Components](/help/commerce-cloud/customizing/style-cif-component.md)
       + [Customizing CIF Components](/help/commerce-cloud/customizing/customize-cif-components.md)
       + [Using CIF Catalog Pickers](/help/commerce-cloud/customizing/use-cif-pickers.md)
+      + [Custom Attributes to CIF Product Carousel](/help/commerce-cloud/customizing/product-carousel.md)
   + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
   + [Migration](/help/commerce-cloud/migration.md)
   + [FAQ](/help/commerce-cloud/faq.md)
