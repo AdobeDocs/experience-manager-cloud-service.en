@@ -253,12 +253,16 @@ ctx._index = sourceType + "_" + envType + "_" + date;
      https:
        default:
          enabled: true
-         url: "https://example.com/aem_logs/aem"
+         url: "https://example.com:443/aem_logs/aem"
          authHeaderName: "X-AEMaaCS-Log-Forwarding-Token"
          authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
    
    ```
-   
+
+Considerations:
+
+* The url should include "443" between the domain and the path, as illustated in the snippet above.
+
 #### HTTPS CDN logs {#https-cdn}
 
 Web requests (POSTs) will be sent continuously, with a json payload that is an array of log entries, with the log entry format described in the [logging article](/help/implementing/developing/introduction/logging.md#cdn-log). Additional properties are mentioned in the [Log Entry Formats](#log-formats) section below.
@@ -267,8 +271,7 @@ There is also be a property named `sourcetype`, which is set to the value `aemcd
 
 >[!NOTE]
 >
-> Before the first CDN log entry is sent, your HTTP server must successfully complete a one-time challenge: a request sent to the path ``wellknownpath`` must respond with ``*``.
-
+> Before the first CDN log entry is sent, your HTTP server must successfully complete a one-time challenge: a request sent to the path ``/.well-known/fastly/logging/challenge`` must respond with an asterisk ``*`` in the body and 200 status code.
 
 #### HTTPS AEM logs {#https-aem}
 
