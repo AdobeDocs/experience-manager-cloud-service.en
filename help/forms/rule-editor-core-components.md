@@ -895,6 +895,14 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 
 ## Example rules {#example}
 
+### Use built-in functions for fields within the repeatable panel
+
+You can use out-of-the-box functions such as Sum, Min, Max, and Join on the fields within the repeatable fields in the rule editor to implement complex business logic.
+
+Consider a form that includes a repeatable panel. You can apply built-in functions such as Sum, Min, and Max, within the repeatable panel. In the screenshot below, the number input field is inside a panel, and you can see that the `Sum` function has been applied to it.
+
+![Support for repeatable panel fields in OOTB functions](/help/forms/assets/ootb-function-support-repeatable-panel.png)
+
 ### Invoke Form Data Model service {#invoke}
 
 Consider a web service `GetInterestRates` that takes loan amount, tenure, and applicant's credit score as input and returns a loan plan including EMI amount and rate of interest. You create a Form Data Model (FDM) using the web service as a data source. You add data model objects and a `get` service to the form model. The service appears in the Services tab of the form data model (FDM). Then, create an Adaptive Form that includes fields from data model objects to capture user inputs for loan amount, tenure, and credit score. Add a button that triggers the web service to fetch plan details. The output is populated in appropriate fields.
