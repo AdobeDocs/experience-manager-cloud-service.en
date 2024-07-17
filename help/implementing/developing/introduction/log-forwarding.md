@@ -104,7 +104,7 @@ This article is organized in the following way:
             enabled: false
    ```
    
-1. For environment types other than RDE (which is not currently supported), create a targeted deployment config pipeline in Cloud Manager; note that a Full Stack pipeline does not deploy the configuration file.
+1. For environment types other than RDE (which is not currently supported), create a targeted deployment config pipeline in Cloud Manager; note that a Full Stack pipeline or a Web Tier pipeline does not deploy the configuration file.
 
    * [See configuring production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
    * [See configuring non-production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
@@ -253,7 +253,7 @@ ctx._index = sourceType + "_" + envType + "_" + date;
      https:
        default:
          enabled: true
-         url: "https://example.com:443/aem_logs/aem"
+         url: "https://example.com:8443/aem_logs/aem"
          authHeaderName: "X-AEMaaCS-Log-Forwarding-Token"
          authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
    
@@ -261,7 +261,7 @@ ctx._index = sourceType + "_" + envType + "_" + date;
 
 Considerations:
 
-* The url should include "443" between the domain and the path, as illustated in the snippet above.
+* If the port is different than 443 (the default HTTPS port), please include it in the URL using the `<host>:<port>/<path>` scheme.
 
 #### HTTPS CDN logs {#https-cdn}
 
