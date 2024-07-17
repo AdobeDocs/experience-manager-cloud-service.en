@@ -895,13 +895,14 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 
 ## Example rules {#example}
 
-### Use built-in functions for fields within the repeatable panel
+### Streamline complex calculations in repeatable panels with built-in functions
 
-You can use out-of-the-box functions such as Sum, Min, Max, and Join on the fields within the repeatable fields in the rule editor to implement complex business logic.
-
-Consider a form that includes a repeatable panel. You can apply built-in functions such as Sum, Min, and Max, within the repeatable panel. In the screenshot below, the number input field is inside a panel, and you can see that the `Sum` function has been applied to it.
+The rule editor allows you to use out-of-the-box functions like Sum, Min, Max, and Join directly on fields within repeatable panels. This unlocks powerful automation, allowing you to implement complex business logic without custom code.
+Imagine a form with a repeatable panel. Each panel instance might collect data like product quantities. You can use the Sum function to automatically calculate the total quantity across all panels, eliminating manual calculations and potential errors.
 
 ![Support for repeatable panel fields in OOTB functions](/help/forms/assets/ootb-function-support-repeatable-panel.png)
+
+This is just one example! Explore the available [functions](#b-form-objects-and-functions-br) to simplify workflows and enhance data accuracy within your forms.
 
 ### Invoke Form Data Model service {#invoke}
 
