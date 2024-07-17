@@ -62,7 +62,7 @@ In the ingestion phase, to apply the delta content on top of the current content
 >title="Expiration of a Migration Set"
 >abstract="Learn about the expiry of a migration set."
 
-All migration sets will eventually expire after a prolonged period of inactivity of approximately 90 days. After indicators are displayed on the project card and the migration job table rows for a period of time, the migration set will expire and its data will no longer be available. The expiry time can easily be extended by acting upon the migration set by:
+All migration sets will eventually expire after a prolonged period of inactivity of approximately 45 days. After indicators are displayed on the project card and the migration job table rows for a period of time, the migration set will expire and its data will no longer be available. The expiry time can easily be extended by acting upon the migration set by:
 
 * editing its description
 * getting its extraction key
