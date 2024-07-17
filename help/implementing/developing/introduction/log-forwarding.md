@@ -104,7 +104,7 @@ This article is organized in the following way:
             enabled: false
    ```
    
-1. For environment types other than RDE (which is not currently supported), create a targeted deployment config pipeline in Cloud Manager; note that Full Stack pipelines and Web Tier pipeline do not deploy the configuration file.
+1. For environment types other than RDE (which is not currently supported), create a targeted deployment config pipeline in Cloud Manager; note that Full Stack pipelines and Web Tier pipelines do not deploy the configuration file.
 
    * [See configuring production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
    * [See configuring non-production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
