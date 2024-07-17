@@ -104,7 +104,7 @@ This article is organized in the following way:
             enabled: false
    ```
    
-1. For environment types other than RDE (which is not currently supported), create a targeted deployment config pipeline in Cloud Manager; note that a Full Stack pipeline or a Web Tier pipeline does not deploy the configuration file.
+1. For environment types other than RDE (which is not currently supported), create a targeted deployment config pipeline in Cloud Manager; note that Full Stack pipelines and Web Tier pipeline do not deploy the configuration file.
 
    * [See configuring production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
    * [See configuring non-production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
@@ -261,7 +261,8 @@ ctx._index = sourceType + "_" + envType + "_" + date;
 
 Considerations:
 
-* If the port is different than 443 (the default HTTPS port), please include it in the URL using the `<host>:<port>/<path>` scheme.
+* The url string must include **https://** or validation will fail. If no port is included in the url string, port 443 (the default HTTPS port) is assumed.
+* If you would like to use a port different than 443, please provide it as part of the URL.
 
 #### HTTPS CDN logs {#https-cdn}
 
