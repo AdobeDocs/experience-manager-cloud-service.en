@@ -7,13 +7,13 @@ level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
 ---
 
+# Add rules to an Adaptive Form (Core Components) {#adaptive-forms-rule-editor}
+
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service (Core Components)    | This article         |
 | AEM as a Cloud Service (Foundation Components)    | [Click here](/help/forms/rule-editor.md)       |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html)                  |
-
-# Add rules to an Adaptive Form (Core Components) {#adaptive-forms-rule-editor}
 
 The rule editor feature empowers forms business users and developers to write rules on Adaptive Form objects. These rules define actions to trigger on form objects based on preset conditions, user inputs, and user actions on the form. It helps further streamline the form filling experience ensuring accuracy and speed.
 
@@ -894,6 +894,15 @@ In [!DNL Experience Manager Forms] versions prior to [!DNL Experience Manager 6.
 Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor. -->
 
 ## Example rules {#example}
+
+### Streamline complex calculations in repeatable panels with built-in functions
+
+The rule editor allows you to use out-of-the-box functions like Sum, Min, Max, and Join directly on fields within repeatable panels. This unlocks powerful automation, allowing you to implement complex business logic without custom code.
+Imagine a form with a repeatable panel. Each panel instance might collect data like product quantities. You can use the Sum function to automatically calculate the total quantity across all panels, eliminating manual calculations and potential errors.
+
+![Support for repeatable panel fields in OOTB functions](/help/forms/assets/ootb-function-support-repeatable-panel.png)
+
+This is just one example! Explore the available [functions](#b-form-objects-and-functions-br) to simplify workflows and enhance data accuracy within your forms.
 
 ### Invoke Form Data Model service {#invoke}
 
