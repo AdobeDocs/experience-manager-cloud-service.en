@@ -106,7 +106,7 @@ In addition to the summary presented in the details of a pipeline run, you can a
 
 Tapping or clicking **View slowest pages** opens the **Slowest 5 pages** dialog, showing the five lowest-performing pages that you [configured to audit.](#configuration)
 
-![Slowest five](assets/experience-audit-slowest-five.jpg)
+![Slowest five](assets/experience-audit-slowest-five.png)
 
 The scores are broken down by **Performance**, **Accessibility**, **Best Practices**, and **SEO** along with the deviation of each metric from the last audit.
 
@@ -160,7 +160,7 @@ The **Recommendations** section shows an aggregate set of insights. By default, 
 
 Tap or click the chevron for any recommendation to reveal details about it.
 
-![Recommendation details](assets/experience-audit-recommendation-details.png)
+![Recommendation details](assets/experience-audit-recommendations-details.png)
 
 When available, the expanded recommendation details also contain the percentage of the recommendations impact, to help focus on the most impactful changes.
 
@@ -178,7 +178,7 @@ Tapping or clicking the link of a particular page updates the **Select** filter 
 
 ![Page results](assets/experience-audit-page-results.png)
 
-The **Raw reports** tab gives you scores for every audit of the page. Tap or click the **Download** icon to retrieve a JSON file of the raw data.
+The **Raw reports** tab gives you scores for every audit of the page. Tap or click the report date in the **Lighthouse Report** column to retrieve a JSON file of the raw data.
 
 ![Raw report](assets/experience-audit-raw-reports.png)
 
@@ -194,6 +194,10 @@ To run an on-demand scan, navigate to the  **Reports** tab to see the complete a
 
 ![On-demand scanning](assets/experience-audit-on-demand.png)
 
+The **Run scan** button becomes unavailable and is badged with a clock icon when an on-demand scan is already running.
+
+![On-demand scan running](assets/experience-audit-on-demand-running.png)
+
 On-demand scans trigger an Experience Audit for the latest 25 [configured pages](#configuration) and typically finish in a few minutes.
 
 Upon completion, the scores chart will be automatically updated, and you can inspect the results exactly as for a pipeline execution scan.
@@ -208,15 +212,15 @@ You can filter the scores chart based on the trigger type by using the **Trigger
 
 ## Experience Audit Encounters Issues {#issues}
 
-If [pages you configured](#configuration) to be audited were not available, Experience Audit reflects this.
+If [pages you configured](#configuration) to be audited were not available or there were other errors in the audit, Experience Audit reflects this.
 
 The pipeline shows an expandable error section to view the relative URL paths it could not access.
 
 ![Issues encountered by Experience Audit](assets/experience-audit-issues.jpg)
 
-If viewing the full report, details are shown in the **[Experience audit scan results](#results)** section.
+If viewing the full report, details are shown in the **[Experience audit scan results](#results)** section, which is also expandable.
 
-![Full report issues](assets/experience-audit-issues-reports.jpeg)
+![Full report issues](assets/experience-audit-issues-report.png)
 
 Some reasons that the pages might not be available are that:
 
@@ -247,8 +251,7 @@ These can be improved by:
 
 The following details provide additional information on how the Experience Audit evaluates your site. They are not necessary for general usage of the feature and are provided here for completeness.
 
-* Although the [configured Experience Audit page paths](#configuration) show the `.com` domain of the publisher, the audit scans the origin (`.net`) domain, to ensure issues introduced during development are detected.
-  * The `.com` domain uses a CDN and could yield better scores or contain cached results.
+* The audit scans the origin (`.com`) domain as defined in the [configured Experience Audit page paths](#configuration) of the publisher to simulate real user experiences more accurately and helps you make more informed decisions about managing and optimizing your websites.
 * In production full-stack pipelines, the staging environment is scanned.
   * To ensure the audit provides relevant details during auditing, the staging environment's content should be as close as possible to the production environment.
 * The pages displayed in the **Select** dropdown in the [**Page scores - trend** section](#trend) are all known pages that were scanned in the past by the Experience Audit.
