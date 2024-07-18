@@ -154,3 +154,10 @@ To learn more about the technical details of the Universal Editor, please see th
 * [Attributes and Types](/help/implementing/universal-editor/attributes-types.md) - Learn about the data attributes and types that the Universal Editor requires.
 * [Universal Editor Authentication](/help/implementing/universal-editor/authentication.md) - Learn how the Universal Editor authenticates.
 
+## Editing Component Inheritance {#inheritance}
+
+Inheritance is the mechanism where content can be linked such that changing one automatically changes the other.
+
+Using the Universal Editor, you can cancel inheritance for content by simply updating the content. The editor automatically disables inheritance for all changes made by authors on that page, ensuring that modified content is retained when updates are synchronized from the blueprint.
+
+For more details on how inheritance works using the Universal Editor, please see the document [Content Inheritance in the Universal Editor.](/help/sites-cloud/authoring/universal-editor/inheritance.md)

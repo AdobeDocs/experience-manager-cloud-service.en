@@ -326,6 +326,7 @@ user-guide-title: AEM as a Cloud Service
       + [Navigating the Universal Editor](/help/sites-cloud/authoring/universal-editor/navigation.md)
       + [Authoring Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
       + [Publishing Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
+      + [Content Inheritance in the Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md)
     + Fragments {#fragments}
       + [Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md)
       + [Experience Fragments](/help/sites-cloud/authoring/fragments/experience-fragments.md)
