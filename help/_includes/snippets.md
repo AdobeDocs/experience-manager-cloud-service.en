@@ -80,8 +80,8 @@ The following table demonstrates the difference between the features available i
      </tr>
    <tr>
     <td>Perform mathematical operations on the repeatable panel field </td>
-    <td>OOTB Math functions can be applied on repeatable panel fields to perform functions like sum, average. </td>
-    <td>Mathematical operations on the repeatable panel field can be performed using the custom functions.
+    <td>OOTB Math functions can be applied on repeatable panel fields to perform functions like sum, average using rule editor. Two arguments need to be provided: the first specifies the repeatable panel containing the field, while the second specifies the field within the corresponding repeatable panel. </td>
+    <td>Mathematical operations on the repeatable panel field can be performed using the custom functions. You can also apply the mathematical functions directly to the fields of the repeatable panel using the rule editor.
    </td>
    </tr>
       <tr>
