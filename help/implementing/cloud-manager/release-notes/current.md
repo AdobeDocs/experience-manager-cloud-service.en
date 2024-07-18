@@ -20,6 +20,20 @@ The release date for Cloud Manager release 2024.7.0 in AEM as a Cloud Service is
 
 ## What's New {#what-is-new}
 
+* The [production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline) and [non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline) trigger **On Git Changes** to start the pipeline on a commit t is now available for private repositories.
+  * This will be rolled out in a phased manner with completion by mid-August.
+* When adding an [Adobe-managed DV certificate,](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) you can now add a single certificate that covers multiple domains instead of creating a certificate for each domain.
+* Solutions that do not have [additional publish regions](/help/operations/additional-publish-regions.md) can now be added to a program as long as the program has at least a Sites or Forms solution applies to it.
+* Solutions that do not have [99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) can now be added to a program as long as the program has at least a Sites or Forms solution applies to it.
+* The [Experience Audit Dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md) has been enhanced in a number of ways.
+  * Audits now run against `.com` endpoints via CDN, replacing the previous `.net` approach.
+    * This change simulates real user experiences more accurately and helps you make more informed decisions about managing and optimizing your website.
+  * Multiple enhancements were made to the Experience Audit UI including:
+    * A trended view of performance, best practices, SEO, and accessibility was added.
+    * The Lighthouse raw report link is now visible in a more intuitive way, directly in the scan snapshot details panel.
+    * The Lighthouse recommendations section was enhanced.
+  * The PWA metric was removed in accordance with Lighthouse version 12.0.0, which eliminated this metric.
+
 ## Early Adoption Program {#early-adoption}
 
 For a chance to test some upcoming features, be a part of Adobe's early adoption program.
