@@ -31,7 +31,7 @@ MSM and Launches are powerful tools to help you reuse your content. Pages can be
 
 To modify some content of the copies, authors break the inheritance on the affected components to ensure their local changes are not overwritten when the copies are synchronized from the blueprint.
 
-## Content Inheritance and the Universal Editor {#inheritance}
+## Content Inheritance and the Universal Editor {#universal-editor}
 
 When a page is part of MSM or a Launch and content is edited with the Universal Editor, the editor automatically disables inheritance for all changes made by authors on that page, ensuring that modified content is retained when updates are synchronized from the blueprint.
 
