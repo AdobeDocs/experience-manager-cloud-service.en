@@ -282,7 +282,7 @@ Tapping or clicking the delete button [deletes the component.](#deleting-compone
 >
 >Use the hot key `Shift+Backspace` to delete a selected component from a container.
 
-#### Additional Buttons {#additional-toolbar-buttons}
+#### Additional Buttons {#additional-properties-rail-buttons}
 
 The Universal Editor offers a customizable and extensible authoring experience. If you see additional buttons in the properties rail, your Universal Editor has been extended.
 
