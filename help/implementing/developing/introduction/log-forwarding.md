@@ -191,7 +191,7 @@ See the log entry formats in the [logging article](/help/implementing/developing
    metadata:
      envTypes: ["dev"]
    data:
-     dataDog:
+     datadog:
        default:
          enabled: true       
          host: "http-intake.logs.datadoghq.eu"
@@ -252,6 +252,7 @@ ctx._index = sourceType + "_" + envType + "_" + date;
    data:
      https:
        default:
+         enabled: true
          url: "https://example.com/aem_logs/aem"
          authHeaderName: "X-AEMaaCS-Log-Forwarding-Token"
          authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"

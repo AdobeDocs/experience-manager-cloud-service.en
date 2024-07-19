@@ -521,11 +521,11 @@ data:
 >
 >This feature is being gradually rolled out.
 
-An [Actions Center](/help/operations/actions-center.md) email notification will be sent when there is a significant amount of traffic sent to the origin, where a high threshold of requests are coming from the same IP address, thus suggestive of a DDoS attack. 
+An [Actions Center](/help/operations/actions-center.md) email notification will be sent when there is a significant amount of traffic sent to the origin, where a high threshold of requests are coming from the same IP address, thus suggestive of a DDoS attack.
 
 If this theshold is met, Adobe will block traffic from that IP address, but it is recommended to take additional measures to protect your origin, including configuring rate limit traffic filter rules to block traffic spikes at lower thresholds. See the [Blocking DoS and DDoS attacks using traffic rules tutorial](#tutorial-blocking-DDoS-with-rules) for a guided walk-through.
 
-This alert is enabled by default, but it can be disabled using the *enable_ddos_alerts* property, set to false. Once the alert is triggered, it will not fire off again until the next day (UTC).
+This alert is enabled by default, but it can be disabled using the *defaultTrafficAlerts* property, set to false. Once the alert is triggered, it will not fire off again until the next day (UTC).
 
    ```
    kind: "CDN"
@@ -534,7 +534,7 @@ This alert is enabled by default, but it can be disabled using the *enable_ddos_
      envTypes: ["dev"]
    data:
      trafficFilters:
-       enable_ddos_alerts: false
+      defaultTrafficAlerts: false
    ```
 
 ## CDN Logs {#cdn-logs}
