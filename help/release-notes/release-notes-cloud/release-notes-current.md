@@ -158,6 +158,22 @@ Forms service generates interactive PDF forms for data capture. It can also be u
      
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
+### Purge Content at the CDN with a Self-Serve API Key {#purge-cdn}
+
+Relying on cache headers is a solid approach to balance content delivery performance and freshness, however purging the CDN is beneficial when it is critical to immediately serve updated  content. 
+
+[Learn how](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) to self-serve configure a purge API token using the Cloud Manager configuration pipeline, so you can [invoke the purge APIs](/help/implementing/dispatcher/cdn-cache-purge.md), with any of these variations:
+* Single URL
+* Multiple URLs using a tag
+* Full CDN cache purge
+
+### Self-Serve Creation of X-AEM-Edge-Key for Customer-Managed CDN (BYOCDN) {#byocdn-keys}
+
+Previously, a support ticket was needed to generate the X-AEM-Edge-Key required for configuration of a customer-managed CDN. This outcome can now be accomplished in a self-serve way through a configuration file that is deployed using the Configuration Pipeline, removing any delay in onboarding a new environment. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
+
+<!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
+
+
 ### Content Health-Related Actions Center Notifications Early Adopter Program {#actions-center-notifications}
 
 [Actions Center](/help/operations/actions-center.md) sends email notifications when important incidents happen, or if something is noticed about your code or configuration where you should take proactive action. Adobe has now introduced several new types of notifications associated with your content health. This feature is available through an early adopter program. To participate, please reach out to Adobe Customer Care.
@@ -193,18 +209,6 @@ Email **<aemcs-cdn-config-adopter@adobe.com>**, indicating which of the early ad
 #### Basic Authentication at the CDN (Early Adopter Program) {#basicauth-cdn}
 
 Protect certain content resources by popping up a basic auth dialog requiring a username and password. This feature primarily targets light authentication use cases, like business stakeholders reviewing content, rather than serving as a comprehensive solution for end-user access rights. The list of username and passwords in managed through a configuration file in git that is deployed via Configuration Pipeline, with a reference to secret-type Cloud Manager environment variables. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
-
-#### Purge Content at the CDN With a Self-Serve API Key (Early Adopter Program) {#purge-cdn}
-
-Register a CDN purge API key in a self-service way, and use it to invalidate content at the CDN, either globally, or for one or more resources. [Learn more](/help/implementing/dispatcher/cdn-cache-purge.md).  
-
-<!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
-
-#### Self-Serve Creation of X-AEM-Edge-Key for Customer-Managed CDN (BYOCDN) (Early Adopter Program) {#byocdn-keys}
-
-Previously, a support ticket was needed to generate the X-AEM-Edge-Key required for configuration of a customer-managed CDN. This outcome can now be accomplished in a self-serve way through a configuration file that is deployed using the Configuration Pipeline, removing any delay in onboarding a new environment. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
-
-<!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
 #### Client-Side Redirects (Early Adopter Program) {#client-side-redirects-early-adopter}
 
