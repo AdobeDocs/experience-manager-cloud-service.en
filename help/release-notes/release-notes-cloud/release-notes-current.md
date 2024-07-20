@@ -173,7 +173,7 @@ Previously, a support ticket was needed to generate the X-AEM-Edge-Key required 
 
 ### Traffic Filter Rules Alerts {#traffic-filter-rules-alerts}
 
-Traffic Filter Rules, which include the optionally licensable Web Application Firewall (WAF) rules, lets you configure what traffic should be allowed or denied. 
+Traffic Filter Rules, which include the optionally licensable Web Application Firewall (WAF) rules, lets you configure what traffic should be blocked. 
 
 Now you can [subscribe to alerts](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts) whenever your traffic filter rules are triggered. Actions Center email notifications keep you informed when certain traffic conditions occur so you can take appropriate measures. 
 
