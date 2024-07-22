@@ -8,8 +8,9 @@ level: Beginner, Intermediate
 
 # Examples for a Rule Editor for an Adaptive Form Based on Core Components
 
-This article provides detailed examples of a Rule Editor for an Adaptive Form based on core components, providing insights into its proper implementation for different scenarios. The rule editor allows developers to define and manage the logic controlling the behavior of forms. 
+The article provides detailed examples of a Rule Editor for an Adaptive Form based on core components, providing insights into its proper implementation for different scenarios. The rule editor allows developers to define and manage the logic controlling the behavior of forms. 
 Now, let us discuss the different implementations for a rule editor.
+
 
 ## Streamline complex calculations in repeatable panels with built-in functions
 
