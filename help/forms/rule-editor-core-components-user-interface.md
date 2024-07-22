@@ -470,9 +470,9 @@ To copy-paste rules, do the following:
 
 1. Select **[!UICONTROL Done]** to save the rule.
 
+## Next Step
+
 Let us now understand various [examples for a Rule Editor for an Adaptive Form based on Core Components](/help/forms/rule-editor-core-components-usecases.md).
-
-
 
 ## See Also
 

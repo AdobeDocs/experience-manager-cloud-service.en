@@ -296,8 +296,6 @@ Adaptive Forms implement caching for custom functions to enhance response time w
 
 In case the custom functions are modified, the caching becomes invalidated, and it is parsed.  
 
-Let us now see various [examples of custom functions for an Adaptive Form based on Core Components](/help/forms/custom-function-core-components-use-cases.md).
-
 ## Troubleshooting
 
 * If the JavaScript file containing code for custom functions has an error, the custom functions are not listed in the rule editor of an Adaptive Form. To check the custom function list, you can navigate to the `error.log` file for the error. In case of an error, the custom function list appears empty:
@@ -307,6 +305,10 @@ Let us now see various [examples of custom functions for an Adaptive Form based 
     In case of there is no error, the custom function are fetched and appear in the `error.log` file. A message as `Fetched following custom functions list` appears in the `error.log` file: 
 
     ![error log file with proper custom function](/help/forms/assets/custom-function-list-fetched-in-error.png)
+
+## Next Step
+
+Let us now see various [examples of custom functions for an Adaptive Form based on Core Components](/help/forms/custom-function-core-components-use-cases.md).
 
 ## See Also
 
