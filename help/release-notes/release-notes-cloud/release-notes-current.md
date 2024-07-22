@@ -167,7 +167,7 @@ Setting TTL using the HTTP Cache-Control header is an effective approach to bala
 * Multiple URLs using a tag
 * Full CDN cache purge
 
-### Self-Serve Configuration of X-AEM-Edge-Key for Customer-Managed CDN {#byocdn-keys}
+### Self-Serve Configuration of X-AEM-Edge-Key for Customer-Managed CDN {#customermanaged-keys}
 
 Previously, a support ticket was needed to generate the X-AEM-Edge-Key required for configuration of a customer-managed CDN. This is now self-service by declaring the key value in a configuration file that is deployed using the Configuration Pipeline, removing any delay in onboarding a new environment. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
