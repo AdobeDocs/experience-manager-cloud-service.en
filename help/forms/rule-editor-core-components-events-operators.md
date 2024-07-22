@@ -44,7 +44,7 @@ The rule editor provides a set of predefined rule types that you can use to writ
 
 #### [!UICONTROL When] {#whenruletype}
 
-The **[!UICONTROL When]** rule type follows the **condition-action-alternate action** rule construct, or sometimes, just the **condition-action** construct. In this rule type, you first specify a condition for evaluation followed by an action to trigger if the condition is satisfied ( `True`). While using the When rule type, you can use multiple AND and OR operators to create [nested expressions](/help/forms/rule-editor-core-components-usecases.md#nestedexpressions).
+The **[!UICONTROL When]** rule type follows the **condition-action-alternate action** rule construct, or sometimes, just the **condition-action** construct. In this rule type, you first specify a condition for evaluation followed by an action to trigger if the condition is satisfied ( `True`). While using the When rule type, you can use multiple AND and OR operators to create [nested expressions](/help/forms/rule-editor-core-components-usecases.md#nested-expressions).
 
 Using the When rule type, you can evaluate a condition on a form object and perform actions on one or more objects.
 
