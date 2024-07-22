@@ -209,6 +209,8 @@ To list custom functions in the rule editor of an Adaptive Form, create custom f
 
 If the user does not add any JavaScript annotations to the custom function, the custom function is not listed in the rule editor of an Adaptive Form.
 
+## Next Step
+
 To create and use a custom function in your Adaptive Form, refer to the [Create a Custom Function for an Adaptive Form Based on Core Components](/help/forms/custom-function-core-component-create-function.md) article.
 
 ## See Also
