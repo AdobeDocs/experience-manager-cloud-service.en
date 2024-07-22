@@ -21,7 +21,7 @@ role: Admin
 
 -->
 
-The Content Transfer Tool integrates the content transfer process with Cloud Acceleration Manager. It is required recommended to this version to gain all the benefits it provides:
+The Content Transfer Tool integrates the content transfer process with Cloud Acceleration Manager. It is required to use this version (2.0 or later, but version 3.0 is now recommended) to gain all the benefits it provides:
 
 * Self-service way to extract a migration set once and ingest it into multiple environments in parallel
 * Improved user experience by way of better loading states, guardrails, and error handling 

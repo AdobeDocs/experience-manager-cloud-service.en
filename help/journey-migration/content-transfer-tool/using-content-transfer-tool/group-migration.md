@@ -33,8 +33,9 @@ The Content Transfer Tool and Cloud Acceleration Manager will migrate any groups
 * There are a number of groups that are built-in, and already present on the target cloud system; these are never migrated.
 * Direct member groups of any built-in group directly or indirectly referred to in an ACL or CUG policy of migrated content will be migrated, to ensure users that are direct or indirect members of such groups maintain their access to the migrated content.
 * If a group is on an ACL or CUG policy of migrated content, that group will be migrated.
-* Other groups, such as those not found on an ACL or CUG policy, those already on the destination system, and those with any uniqueness-constrained data already on the target system, will not be migrated.
-* The path logged/reported is only the first path that triggered that group to be migrated, and that group could also be on other paths.
+* Other groups, such as those not found on an ACL or CUG policy, those already on the destination system, and those with any uniqueness-constrained data already on the target system, will not be migrated. 
+
+Note that the path logged/reported for a group is only the first path that triggered that group to be migrated, and that group could also be on other content paths.
 
 Most groups migrated are configured to be managed by IMS.  This means that a group in IMS with the same name will be linked to the group in AEM, and any IMS users in the IMS group will become AEM users and members of the group in AEM.  This allows those users to have access to the content according to ACLs or CUGs policies for the group.
 
@@ -46,9 +47,9 @@ During migration users are not migrated, but the user-group relationships on the
 
 In the case of a wipe and then a non-wipe ingestion, the groups in a user's list will include those groups migrated in either phase.
 
-In addition to the groups for each user, there is a field in the report where two notes may be added for the user (and a detailed description of the note's meaning is also in the report):
+In addition to the groups for each user, there is a field in the report where notes may be added for the user (and a detailed description of the note's meaning is also in the report).  Possilble notes are:
 * Users which are referenced directly in an ACL will have *Note-A* in their notes section, as this is not a recommended use case or best practice.
-* Users which are direct members of a built-in group will have *Note-B* in their notes section, as this is not a recommended use case or best practice.
+* Users which are direct members of a built-in group will have *Note-B* in their notes section, as this is also not a recommended use case or best practice.
 
 These cases can occur simultaneously, and also at the same time as the earlier cases.
 
@@ -56,8 +57,8 @@ The User Report is added onto the end of (and is therefore part of) the Principa
 
 ## Additional Considerations {#additional-considerations}
 
-* If the setting **Wipe existing content on Cloud instance before ingestion** is set, groups previously transferred to the Cloud Service instance are deleted along with the entire existing repository; a new repository is created into which content is ingested. This process also resets all settings including permissions on the target Cloud Service instance and is true for an admin user added to the **administrators** group. The admin user must be re-added to the **administrators** group to retrieve the access token for CTT/CAM Ingestion.
-* When non-wipe ingestions are performed (**Wipe existing content** is unset), if content is not transferred because it has not changed since the previous transfer, groups associated with that content are not transferred either. This rule is true even if the groups have changed on the source system. This is because groups are only migrated along with the content they are associated with. Because of this, in this case any groups which are members of a group on the source system will not be migrated unless they are part of a different group that is being migrated, or in the ACL of different content being migrated. To migrate these groups afterwards, consider using packages, deleting groups from the target and re-migrating the relevant content. or re-migrating using a wipe ingestion.
+* If the setting **Wipe existing content on Cloud instance before ingestion** is set, groups previously transferred to the Cloud Service instance are deleted along with the entire existing repository; a new repository is created into which content is ingested. This process also resets all settings including permissions on the target Cloud Service instance and is true for any user added to the **administrators** group. The admin user must be re-added to the **administrators** group to retrieve the access token for CTT/CAM Ingestion.
+* When non-wipe ingestions are performed (**Wipe existing content** is unset), if content is not transferred because it has not changed since the previous transfer, groups associated with that content are not transferred either. This rule is true even if the groups have changed on the source system. This is because groups are only migrated along with the content they are associated with. Because of this, in this case any groups which are members of a group on the source system will not be migrated unless they are part of a different group that is being migrated, or in the ACL of different content being migrated. To migrate these groups afterwards, consider using packages, deleting groups from the target and re-migrating the relevant content, or re-migrating using a wipe ingestion.
 * During a non-wipe ingestion, if a group exists with any of the same uniqueness-constrained data (rep:principalName, rep:authorizableId, jcr:uuid or rep:externalId) on both the source AEM instance and the target AEM Cloud Service instance, the group in question is _not_ migrated and the previously existing group on the cloud system remains unchanged. This is logged in the Principal Migration Report.
 * See [Migrating Closed User Groups](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) for extra considerations for groups used in a Closed User Group (CUG) policy.
 
