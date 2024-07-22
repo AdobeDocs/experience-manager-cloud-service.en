@@ -129,9 +129,9 @@ In addition to being included in the ingestion log, the validation report can al
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
 
-## How to Validate the Principal Migration {#how-to-validate-principal-migration}
+## How to Validate the Principal Migration {#how-to-validate-group-migration}
 
-See [Group Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) to read the principal migrations details and why it is necessary.
+See [Group Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) to read the principal migration details and why it is necessary.
 
 After the extraction and ingestion are successfully completed, a summary and report of the principal migration is available. This information can be used to validate which groups were migrated successfully, and, perhaps, to determine why some were not.
 
@@ -139,10 +139,18 @@ To view this information, go to Cloud Acceleration Manager. Click your project c
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-You see a dialog with the summary information. Use the help icons to read a more full description. Click the **Download report** button to download the full comma-separated (CSV) report.
+You see a dialog with the summary information. Use the help icons to read a more full description. Click the **Download report** button to download the full comma-separated (CSV) report.  Also note that at the end of this report is the User Report, which can be used for post-migration user management.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 
+The Principal Migration report will report:
+
+* Each group migrated and the first content path that triggered that group to be migrated; the group could also be on other paths, but only the first one found for a given group is reported. It also reports whether it was found in an ACL or a CUG policy.
+* Each group not migrated, and the reason it was not migrated.  Typically it will be one of these reasons:
+    * It is a built-in group
+    * It is already on the target system
+    * It is not in an ACL or CUG policy on the content being migrated
+    * It has a duplicate unique field (one of rep:principalName, rep:authorizableId, jcr:uuid or rep:externalId is already on the destination, but these all must be unique)
 
 ## Troubleshooting {#troubleshooting}
 
@@ -158,6 +166,6 @@ Some paths from the extraction and ingestion digests are excluded purposefully t
 
 The paths we currently exclude from the digests include: `cqdam.text.txt` renditions, nodes within `/home`, and nodes within `/jcr:system`.
 
-### Closed User Groups are not functioning {#validating-cugs}
+### Closed User Groups {#validating-cugs}
 
 See [Migrating Closed User Groups](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) for extra considerations when using a Closed User Group (CUG) policy.

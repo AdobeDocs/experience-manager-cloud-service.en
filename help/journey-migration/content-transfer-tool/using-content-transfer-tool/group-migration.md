@@ -25,11 +25,34 @@ exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
 >
 As part of the transition journey to Adobe Experience Manager (AEM) as a Cloud Service, groups must be migrated from existing AEM systems to AEM as a Cloud Service. This task is done by the Content Transfer Tool.
 
-A major change to AEM as a Cloud Service is the fully integrated use of Adobe IDs for accessing the author tier. This process requires use of the [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html) for managing users and user groups. The user profile information is centralized in the Adobe Identity Management System (IMS) that provides single sign-on across all Adobe cloud applications. For more details, see [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management). Because of this change, users on are automatically created on AEM when they first log into it via IMS.  Thus, CTT does not migrate the users to the cloud system.  IMS users must be placed in IMS groups, which in turn must be placed in the AEM groups that have been given permission to access the AEM content being migrated.  In this way, users on the cloud system will have the same access they had on their source AEM system.
+A major change to AEM as a Cloud Service is the fully integrated use of Adobe IDs for accessing the author tier. This process requires use of the [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html) for managing users and user groups. The user profile information is centralized in the Adobe Identity Management System (IMS) that provides single sign-on across all Adobe cloud applications. For more details, see [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management). Because of this change, users on are automatically created on AEM when they first log into it via IMS.  Thus, CTT does not migrate the users to the cloud system.  IMS users must be placed into IMS groups, which can be migrated groups or new groups placed in the AEM groups that have been given permission to access the AEM content being migrated.  In this way, users on the cloud system will have the same access they had on their source AEM system.
 
 ## Group Migration Details {#group-migration-detail}
 
-The Content Transfer Tool and Cloud Acceleration Manager will migrate any groups associated with the content being migrated to the cloud system. The Content Transfer Tool does this by copying all groups from the source AEM system during the extraction process. CAM Ingestion then selects and migrates only those groups associated with the content being ingested. If a group is on an ACL or CUG policy of migrated content, that group, all groups it is in, and their ancestor (parent) groups will all be migrated. Further, all its descendent (child) groups will also be migrated.
+The Content Transfer Tool and Cloud Acceleration Manager will migrate any groups associated with the content being migrated to the cloud system. The Content Transfer Tool does this by copying all groups from the source AEM system during the extraction process. CAM Ingestion then selects and migrates only certain groups:
+* There are a number of groups that are built-in, and already present on the target cloud system; these are never migrated.
+* Direct member groups of any built-in group directly or indirectly referred to in an ACL or CUG policy of migrated content will be migrated, to ensure users that are direct or indirect members of such groups maintain their access to the migrated content.
+* If a group is on an ACL or CUG policy of migrated content, that group will be migrated.
+* Other groups, such as those not found on an ACL or CUG policy, those already on the destination system, and those with any uniqueness-constrained data already on the target system, will not be migrated.
+* The path logged/reported is only the first path that triggered that group to be migrated, and that group could also be on other paths.
+
+Most groups migrated are configured to be managed by IMS.  This means that a group in IMS with the same name will be linked to the group in AEM, and any IMS users in the IMS group will become AEM users and members of the group in AEM.  This allows those users to have access to the content according to ACLs or CUGs policies for the group.
+
+The exception to this IMS configuration is with groups created by Assets Collections. When a collection is created on AEM, groups are created for access to that collection; such groups are migrated to the cloud system, but they are not configured to be managed by IMS.  In order to add IMS users to these groups, they must be added in the Group Properties page in the Assets UI, either individually or collectively as part of another IMS group.
+
+## User Report {#user-report}
+
+During migration users are not migrated, but the user-group relationships on the source system are lost unless they are somehow captured.  The User Report captures some of this information in text format in a User Report. In it, each user is reported (one per line) along with a list of groups it is a member of (but groups not migrated are not put in this list), unless its list of groups is empty, in which case the user does not appear. The groups reported along with each user are those the user is a member of directly or indirectly in the source system; since groups in the source system may be nested while in the target system they are not, this list of groups supports the new flattened group structure in IMS.
+
+In the case of a wipe and then a non-wipe ingestion, the groups in a user's list will include those groups migrated in either phase.
+
+In addition to the groups for each user, there is a field in the report where two notes may be added for the user (and a detailed description of the note's meaning is also in the report):
+* Users which are referenced directly in an ACL will have *Note-A* in their notes section, as this is not a recommended use case or best practice.
+* Users which are direct members of a built-in group will have *Note-B* in their notes section, as this is not a recommended use case or best practice.
+
+These cases can occur simultaneously, and also at the same time as the earlier cases.
+
+The User Report is added onto the end of (and is therefore part of) the Principal Migration Report (see [Final Summary and Report](#final-summary-and-report) below).
 
 ## Additional Considerations {#additional-considerations}
 
@@ -38,6 +61,6 @@ The Content Transfer Tool and Cloud Acceleration Manager will migrate any groups
 * During a non-wipe ingestion, if a group exists with any of the same uniqueness-constrained data (rep:principalName, rep:authorizableId, jcr:uuid or rep:externalId) on both the source AEM instance and the target AEM Cloud Service instance, the group in question is _not_ migrated and the previously existing group on the cloud system remains unchanged. This is logged in the Principal Migration Report.
 * See [Migrating Closed User Groups](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) for extra considerations for groups used in a Closed User Group (CUG) policy.
 
-## Final Summary and Report {#final-report}
+## Final Summary and Report
 
 Once the extraction and ingestion have completed successfully, a report is generated showing the group migration details. See [How to Validate the Group Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md#how-to-validate-group-migration) for the details.
