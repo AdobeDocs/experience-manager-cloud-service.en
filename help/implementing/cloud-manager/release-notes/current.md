@@ -33,7 +33,7 @@ The release date for Cloud Manager release 2024.7.0 in AEM as a Cloud Service is
     * The Lighthouse raw report link is now visible in a more intuitive way, directly in the scan snapshot details panel.
     * The Lighthouse recommendations section was enhanced.
   * The PWA metric was removed in accordance with Lighthouse version 12.0.0, which eliminated this metric.
-* [The AEM Project Archetype,](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview) used in program creation, has been updated to [version 49.](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)
+* [The AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) has been updated to [version 49.](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)
 
 ## Early Adoption Program {#early-adoption}
 
