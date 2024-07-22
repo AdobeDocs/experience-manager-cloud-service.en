@@ -78,7 +78,7 @@ The following table illustrates the maintenance tasks that are available.
     <td>Customer</td>
     <td>
     <p>Must be done in git. Override the out-of-the-box Maintenance window configuration node under <code>/libs</code> by creating properties under the folder <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> or <code>granite_monthly</code>. See the Maintenance Window table below for additional configuration details.</p>
-    <p>Enable the maintenance task by adding another node under the node above (name it <code>granite_ProjectPurgeTask</code>) with the appropriate properties. See the list of [OSGI properties](/help/implementing/deploying/configuring-osgi.md) under **Adobe Projects Purge Configuration** .</p>
+    <p>Enable the maintenance task by adding another node under the node above (name it <code>granite_ProjectPurgeTask</code>) with the appropriate properties. See the list of <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">OSGi Properties</a> for <b>Adobe Projects Purge Configuration</b> .</p>
   </td>
   </tr>
   </tbody>
