@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
 ---
 
-# Add rules to an Adaptive Form (Core Components) {#adaptive-forms-rule-editor}
+# Rule Editor in Adaptive Form based on Core Components
 
 | Version | Article link |
 | -------- | ---------------------------- |

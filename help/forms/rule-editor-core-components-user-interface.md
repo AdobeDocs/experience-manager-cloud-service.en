@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 ---
 
-# Rule Editor user interface for Adaptive Forms based on Core Components
+# Understanding the Rule Editor user interface
 
 The Rule Editor user interface for Adaptive Forms based on Core Components enhances the form creation process within Adobe Experience Manager (AEM). It empowers both business users and developers to implement dynamic behavior and complex logic into forms by writing rules that trigger actions based on predefined conditions, user inputs, and interactions. This feature supports modern JavaScript functionalities, including ES10 features, and offers an intuitive visual editor that simplifies the rule-writing process. 
 The Rule Editor is instrumental in streamlining the form-filling experience, ensuring both accuracy and efficiency. It allows for the validation or resetting of panels and forms, and the execution of custom functions to compute values of form objects. With its support for nested conditions and the ability to invoke Form Data Model services, the Rule Editor User Interface is a pivotal component for creating responsive, user-friendly, and adaptive forms.

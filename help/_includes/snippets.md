@@ -112,11 +112,11 @@ The following table demonstrates the difference between the features available i
 
 ## Rule Editor See Also {#see-also-rule-editor}
 
-* [Add rules to an Adaptive Form (Core Components)](/help/forms/rule-editor-core-components.md)
+* [Rule Editor in Adaptive Form based on Core Components](/help/forms/rule-editor-core-components.md)
 * [Operator types and events in rule editor of an Adaptive Form based on Core Components](/help/forms/rule-editor-core-components-events-operators.md)
 * [Rule Editor User Interface for Adaptive Forms based on Core Components](/help/forms/rule-editor-core-components-user-interface.md)
-* [Examples for a Rule Editor for an Adaptive Form Based on Core Components](/help/forms/rule-editor-core-components-user-interface.md)
-* [Difference between Foundation Rule Editor and Core Component Rule Editor](/help/forms/rule-editor-core-components-difference-tables.md)
-* [Custom functions in Adaptive Forms based on Core Components](/help/forms/create-and-use-custom-functions.md)
+* [Different use cases of Rule Editor for an Adaptive Form Based on Core Components](/help/forms/rule-editor-core-components-user-interface.md)
+* [Difference in various editions of Rule editor](/help/forms/rule-editor-core-components-difference-tables.md)
+* [Introduction to Custom functions in Adaptive Forms based on Core Components](/help/forms/create-and-use-custom-functions.md)
 * [Create a Custom Function for an Adaptive Form based on Core Components](/help/forms/custom-function-core-component-create-function.md)
-* [Examples of Custom Functions for an Adaptive Form Based on Core Components](/help/forms/custom-function-core-components-use-cases.md)
+* [Examples of developing and using custom function](/help/forms/custom-function-core-components-use-cases.md)
