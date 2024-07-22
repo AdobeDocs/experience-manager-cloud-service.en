@@ -46,11 +46,9 @@ Follow the steps below to set up Screens Services Provider:
 The IPs which need to whitelisted also need to moved to the configuration file and need to be [unapplied](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list) from the Cloud Manager settings.
 
    ![image](/help/screens-cloud/assets/configure/configure-screens20.png)
-
 The same key needs to be configured at  AEM CDN configuration.  It is recommended to not put the header value directly in GITHub and use a [secret reference](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication#rotating-secrets).
 A sample [CDN config](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf) is given below:
-
-    kind: "CDN"
+kind: "CDN"
     version: "1"
     metadata:
       envTypes: ["dev", "stage", "prod"]
@@ -85,6 +83,10 @@ A sample [CDN config](https://experienceleague.adobe.com/en/docs/experience-mana
 1. Screens Content Provider opens in another tab that lets you create your content.
 
    ![image](/help/screens-cloud/assets/configure/configure-screens2.png)
+
+
+
+    
 
 ## What's Next {#whats-next}
 
