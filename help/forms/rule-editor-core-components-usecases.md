@@ -128,4 +128,4 @@ In the purchase order form explained in the previous example, you want to restri
 
 ## See Also
 
-{{#see-also-rule-editor}}
+{{see-also-rule-editor}}
