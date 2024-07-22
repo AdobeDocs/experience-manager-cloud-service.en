@@ -20,7 +20,7 @@ Currently, Closed User Groups (CUG) need some additional steps to be functional 
 
 ## Migration of Closed User Groups (CUGs)
 
-Groups are automatically included in a CTT/CAM migration to Adobe Experience Manager as a Cloud Service if they are associated to the migrated content via that content's ACL or its CUG policy node. Verifying the group and its members exist should be done before going live. Groups referenced on a CUG policy are referred to here as "CUGs groups."
+Groups are automatically included in a CTT/CAM migration to Adobe Experience Manager as a Cloud Service if they are associated to the migrated content via that content's ACL or its CUG policy node. Verifying that the group and its members exist should be done before going live. Groups referenced on a CUG policy are referred to here as "CUGs groups."
 
 To use CUGs in AEM as a Cloud Service, users must be present on the Author instance and be members of the relevant CUGs groups.  This can be accomplished using packages, or if the CUGs users are IMS users, they may already be present.  CUGs users must then be made members of the AEM CUGs groups.
 
