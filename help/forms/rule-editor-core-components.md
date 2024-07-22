@@ -90,4 +90,4 @@ To understand the various operator types and events in the rule editor of an Ada
 
 ## See Also
 
-{{#see-also-rule-editor}}
+{{see-also-rule-editor}}

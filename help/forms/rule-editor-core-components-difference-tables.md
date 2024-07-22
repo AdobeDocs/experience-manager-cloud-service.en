@@ -17,4 +17,4 @@ level: Beginner, Intermediate
 
 ## See Also
 
-{{#see-also-rule-editor}}
+{{see-also-rule-editor}}
