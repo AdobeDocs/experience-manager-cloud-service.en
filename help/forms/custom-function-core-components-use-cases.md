@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 ---
 
-# Examples of Custom Functions for an Adaptive Form Based on Core Components
+# Examples of developing and using custom function
 
 The article provides the detailed examples of custom functions for an Adaptive Form based on core components, offering valuable insights into their effective implementation across various scenarios. Custom functions are used in the rule editor of an AEM Forms, enable developers to define and control the logic that governs form behavior. 
 This article explores different implementations of custom functions, showcasing how they can be used to tailor forms to meet specific requirements and enhance overall functionality.

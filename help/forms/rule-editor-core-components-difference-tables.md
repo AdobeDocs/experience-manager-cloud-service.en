@@ -5,8 +5,11 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 ---
+# Difference in various editions of Rule editor 
 
-# Difference between Foundation Rule Editor and Core Component Rule Editor
+This article provides a comprehensive comparison of the different editions, highlighting their distinctive functionalities, strengths, and potential limitations. By examining these differences, users can make informed decisions about which edition best suits their specific needs and requirements, ensuring they leverage the full potential of the Rule Editor. 
+
+## Difference between Foundation Rule Editor and Core Component Rule Editor
 
 {{rule-editor-diff}}
 
