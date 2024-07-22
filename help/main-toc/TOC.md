@@ -692,7 +692,7 @@ user-guide-title: AEM as a Cloud Service
         +  [Compare Adaptive Forms](/help/forms/compare-forms.md) 
         +  [Converting Adaptive Forms based on foundation components to Core Component-based forms using migration utility tool](/help/forms/migration-utility-tool-for-af-core-components.md)
         +  [Save an Adaptive Form as a Draft](/help/forms/save-core-component-based-form-as-draft.md)
-        +  Rule Editor for an Adaptive Form based on Core Components
+        +  Rule Editor for an Adaptive Form based on Core Components {#rule-editor-core-components}
            +  [Rule Editor for an Adaptive Form based on Core Components](/help/forms/rule-editor-core-components.md)
            +  [Difference between Foundation Rule Editor and Core Component Rule Editor](/help/forms/rule-editor-core-components-difference-tables.md)
            +  [Operator types and events in rule editor of an Adaptive Form based on Core Components](/help/forms/rule-editor-core-components-events-operators.md)
