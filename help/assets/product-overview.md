@@ -1,8 +1,8 @@
 ---
 title: Content Hub Overview
-description: Learn more about Content Hub, its key benefits, how to access it, and how to provide feedback around the options available in Content Hub. 
+description: Learn more about Content Hub, its key benefits, how to access it, and how to provide feedback around the options available in Content Hub.
+exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
 ---
-
 # Content Hub Overview {#overview-content-hub}
 
 ![Content Hub overview](assets/content-hub-overview.png)
@@ -35,7 +35,7 @@ Content Hub requires a production author environment of Experience Manager as a 
 
 ## How to access Content Hub? {#access-content-hub}
 
-[After setting up Content Hub](#deploy-content-hub) and adding a user to the [Content Hub product profile](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), Content Hub can be accessed using the following ways:
+[After setting up Content Hub](/help/assets/deploy-content-hub.md) and adding a user to the [Content Hub product profile](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), Content Hub can be accessed using the following ways:
 
 * Access Content Hub using the following link:
 

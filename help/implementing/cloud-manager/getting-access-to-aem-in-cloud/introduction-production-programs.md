@@ -30,4 +30,4 @@ The following table describes common scenarios of available solutions and the ty
 
 >[!NOTE]
 >
->Production programs [can be edited not be deleted.](editing-programs.md)
+>Production programs [can be edited but not be deleted.](editing-programs.md)
