@@ -518,7 +518,7 @@ Refer to the gif below, which demonstrates that when the `Delete Traveler` butto
 ![Delete Panel](/help/forms/assets/custom-function-delete-panel.gif)
 
 
-## Troubleshooting {#troubleshooting}
+## Troubleshooting
 
 * If the custom submission handler fails to perform as expected in existing AEM Projects or forms, perform the following steps:
   * Ensure that the [core components version is updated to 3.0.18 and later](https://github.com/adobe/aem-core-forms-components). However, for existing AEM Projects and forms, there are additional steps to follow:
