@@ -35,10 +35,9 @@ The Generative AI capabilities on offer are:
 
 * **Panel Generation for Forms**: Let AI do the heavy lifting. Generate pre-built form panels tailored to specific data collection needs. For example, generate sections for collecting payment information, customer preferences, or travel details. Save time and ensure consistency with pre-defined layouts and functionalities.
 
-
 * **Changing Form Layouts**: Experiment with different layouts and designs using Generative AI Prompts. Try out different layouts like wizard or tabbed views to find the perfect fit for your form. Use Generative AI Prompts to optimize your forms for mobile responsiveness and create visually engaging forms that users love.
 
-* **Create Form Rules with Generative AI Prompts**: Use Generative AI prompts to get help in creating smart rules that react to user input. Our Generative AI can suggest and even generate conditional rules based on your form's purpose. 
+* **Configure Submit Action**: Use Generative AI prompts to effortlessly configure a submit action for your form. Choose from a library of pre-built submit actions or from a list of custom submit actions, created and deployed by your own development team.
 
 
 ### AEM Forms Workfront Fusion Connector 
@@ -167,3 +166,4 @@ Forms service generates interactive PDF forms for data capture. It can also be u
 * [Capabilities of AEM Forms as a Cloud Services](/help/forms/home.md)
 
 * [Difference between AEM 6.5 Forms (AMS and on-prem) and AEM Forms as a Cloud Services (AEM CS Forms)](/help/forms/notable-changes.md)
+

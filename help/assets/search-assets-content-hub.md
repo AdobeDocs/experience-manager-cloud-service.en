@@ -2,8 +2,8 @@
 title: Search assets in Content Hub
 description: Learn how to search assets in [!DNL Content Hub]
 role: User
+exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
 ---
-
 # Search Assets in [!DNL Content Hub] {#search-assets}
 
 ![Share assets banner image](assets/search.png)
@@ -146,4 +146,4 @@ The default filters include file format, approved by, date approved, expired and
 
 ## Do more with search {#do-more-with-search}
 
-[!DNL The Content Hub] is not limited to search, instead it allows you to perform additional actions, such as [download](download-assets-content-hub.md), [share](share-assets-content-hub.md), and [add assets to collection](collections-content-hub.md), right from the search or preview interface. Select the assets on the search results page to view these options. 
+[!DNL The Content Hub] is not limited to search, instead it allows you to perform additional actions, such as [download](download-assets-content-hub.md), [share](share-assets-content-hub.md), and [add assets to collection](collections-content-hub.md), right from the search or preview interface. Select the assets on the search results page to view these options.

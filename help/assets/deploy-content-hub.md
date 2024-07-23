@@ -2,8 +2,8 @@
 title: Deploy [!DNL Content Hub]
 description: Learn how to deploy and activate Content Hub and provide access to users with different types of privileges (upload assets, Adobe Express users) and how to provide administrator privileges to users.
 role: Admin
+exl-id: 58194858-6e1c-460b-bab3-3496176b2851
 ---
-
 # Deploy Content Hub {#deploy-content-hub}
 
 ![Deploy Content Hub](assets/deploy-content-hub.png)
@@ -41,9 +41,18 @@ To access the Content Hub portal, administrators first need to enable Content Hu
 1. Expand **[!UICONTROL Assets]** and select **[!UICONTROL Content Hub]**.
    ![Select Content Hub in Cloud Manager](assets/edit-program-cloud-manager-content-hub.png)
 
+   >[!NOTE]
+   >
+   >If **[!UICONTROL Update]** is not enabled for you after selecting Content Hub, ensure that you have specified Go-Live settings for the program.
+
 1. Click **[!UICONTROL Update]**.
 
 Content Hub is now enabled for Experience Manager Assets as a Cloud Service. 
+
+>[!NOTE]
+>
+>You can access and use Content Hub with up to 250 Content Hub users. Please contact your Adobe representative if you have additional questions. 
+
 
 If you are new to Experience Manager Assets, click **[!UICONTROL Add Program]** and then provide program details (Program Name, set up for Production) and click **[!UICONTROL Continue]**. You can then select **[!UICONTROL Assets]** and **[!UICONTROL Content Hub]** in the **[!UICONTROL Solutions & Add-ons]** tab.
 
@@ -100,9 +109,19 @@ These users can now access the assets available on the Content Hub portal.
 >
 >You can use all the advanced enterprise features like synchronization with external Identity Providers.
 
-After adding the appropriate users using Admin Console, the users can access Content Hub using the following link:
+### How to access Content Hub? {#access-content-hub}
 
-`https://experience.adobe.com/#/assets/contenthub`
+Content Hub can be accessed using the following ways:
+
+* Access Content Hub using the following link:
+
+   `https://experience.adobe.com/#/assets/contenthub`
+
+* Log on to `experience.adobe com` and click **[!UICONTROL Experience Manager Assets Content Hub]** available in the **[!UICONTROL Quick access]** section:
+   ![Content Hub Access](assets/access-content-hub.png)
+
+* Log on to `experience.adobe com` and click **[!UICONTROL Experience Manager Assets Content Hub]** available in the product switcher:
+   ![Content Hub Access method 3](assets/access-content-hub-alternate.png)
 
 ### Disable email notifications to users {#disable-email-notifications}
 
@@ -167,6 +186,3 @@ To configure Experience Manager Assets users:
    >[!NOTE]
    >
    > You do not need to be added to the [Content Hub product profile](#onboard-content-hub-users) for the Experience Manager Assets users.
-
-
-

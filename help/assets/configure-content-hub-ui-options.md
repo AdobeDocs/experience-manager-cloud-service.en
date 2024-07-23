@@ -1,6 +1,7 @@
 ---
 title: Configure Content Hub user interface
 description: Configure Content Hub user interface
+exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
 ---
 # Configure Content Hub user interface {#configure-content-hub-user-interface}
 
@@ -92,6 +93,10 @@ Content Hub allows administrators to configure filters that display while search
 
 1. Click **[!UICONTROL Save]** to apply the changes so that the new filter gets displayed on the Search page while filtering assets.
 
+   >[!NOTE]
+   >
+   >The new filter gets displayed on the Search page only if there is alteast one asset in the repository matching the filter criteria.
+
 Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each available filter, to edit the labels or click the delete icon to delete any existing filter. Click **[!UICONTROL Save]** after making all modifications to apply the changes.
 
    ![Configuration UI filters on Content Hub](assets/configuration-ui-filters.png)
@@ -174,5 +179,3 @@ Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), ava
    The custom link display as a new tab next to Insights tab on the Content Hub home page.
 
    ![Configuration UI Custom Links tabs on Content Hub](assets/configuration-ui-custom-link-tab.png)
-
-
