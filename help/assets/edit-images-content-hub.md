@@ -1,6 +1,7 @@
 ---
 title: Edit images in Content Hub using Adobe Express
 description: Edit images in Content Hub using Adobe Express
+exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
 ---
 # Edit images in Content Hub {#edit-images-content-hub}
 
@@ -43,5 +44,3 @@ To edit images using Content Hub:
 1. Click **[!UICONTROL Save as new asset]** to save the asset.
 
 Administrators can also configure the mandatory and optional fields that display while adding assets to Content Hub, such as Campaign name, Keywords, Channels, and so on. For more information, see [Configure the Content Hub user interface](configure-content-hub-ui-options.md#configure-upload-options-content-hub).
-
-   
