@@ -691,14 +691,14 @@ user-guide-title: AEM as a Cloud Service
         +  [Compare Adaptive Forms](/help/forms/compare-forms.md) 
         +  [Converting Adaptive Forms based on foundation components to Core Component-based forms using migration utility tool](/help/forms/migration-utility-tool-for-af-core-components.md)
         +  [Save an Adaptive Form as a Draft](/help/forms/save-core-component-based-form-as-draft.md)
-        +  Rule Editor for an Adaptive Form based on Core Components {#rule-editor-core-components}
-           +  [Rule Editor for an Adaptive Form based on Core Components](/help/forms/rule-editor-core-components.md)
-           +  [Difference between Foundation Rule Editor and Core Component Rule Editor](/help/forms/rule-editor-core-components-difference-tables.md)
-           +  [Operator types and events in rule editor of an Adaptive Form based on Core Components](/help/forms/rule-editor-core-components-events-operators.md)
-           +  [Rule Editor user interface for Adaptive Forms based on Core Components](/help/forms/rule-editor-core-components-user-interface.md)
-           +  [Examples for a Rule Editor for an Adaptive Form Based on Core Components](/help/forms/rule-editor-core-components-usecases.md)
-        +  Create and use Custom Function in an Adaptive Form based on Core Components {#create-and-use-custom-function-core-component}
-           +  [Custom functions in Adaptive Forms based on Core Components](/help/forms/create-and-use-custom-functions.md)
+        +  Introduction to Rule Editor for Adaptive Forms based on Core Components{#rule-editor-core-components}
+             +  [Introduction to Rule Editor for Adaptive Forms based on Core Components](/help/forms/rule-editor-core-components.md)
+             +  [Rule Editor user interface for Adaptive Forms based on Core Components](/help/forms/rule-editor-core-components-user-interface.md)
+              +  [Difference between Foundation Rule Editor and Core Component Rule Editor](/help/forms/rule-editor-core-components-difference-tables.md)
+              +  [Operator types and events in rule editor of an Adaptive Form based on Core Components](/help/forms/rule-editor-core-components-events-operators.md)
+              +  [Examples for a Rule Editor for an Adaptive Form Based on Core Components](/help/forms/rule-editor-core-components-usecases.md)
+        +  Introduction to Custom Functions for Adaptive Forms based on Core Components{#create-and-use-custom-function-core-component}
+           +  [Introduction to Custom Functions for Adaptive Forms based on Core Components](/help/forms/create-and-use-custom-functions.md)
            +  [Create a Custom Function for an Adaptive Form based on Core Components](/help/forms/custom-function-core-component-create-function.md)
            +  [Examples of Custom Functions for an Adaptive Form Based on Core Components](/help/forms/custom-function-core-components-use-cases.md)
     + Foundation Components {#authoring-adaptive-forms-foundation-components}

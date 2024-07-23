@@ -9,7 +9,7 @@ exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
 ---
 
-# Introduction to Custom functions in Adaptive Forms (Core Components)
+# Introduction to Custom Functions for Adaptive Forms based on Core Components
 
 | Version | Article link |
 | -------- | ---------------------------- |
