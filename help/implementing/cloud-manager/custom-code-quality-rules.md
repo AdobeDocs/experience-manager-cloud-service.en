@@ -1262,3 +1262,12 @@ AEM Cloud Service prohibits creation of tokenizers with incorrect names in analy
 >[!WARNING]
 >
 >You are urged to address this as soon as possible since it will cause pipelines to fail starting with the [Cloud Manager August 2024 release.](/help/implementing/cloud-manager/release-notes/current.md)
+
+### Configuration Of Indexing Definitions Should Not Contain Spaces {#oakpal-indexing-definitions-spaces}
+
+* **Key**: PathSpacesCheck
+* **Type**: Improvement
+* **Severity**: Minor
+* **Since**: Version 2024.7.0
+
+AEM Cloud Service prohibits creation of indexing definitions which contain properties with spaces.

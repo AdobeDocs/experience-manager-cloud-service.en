@@ -275,7 +275,7 @@ data:
         action:
           type: selectOrigin
           originName: example-com
-          # useCache: false
+          # skpCache: true
     origins:
       - name: example-com
         domain: www.example.com
@@ -294,7 +294,7 @@ Explained in the table below is the available action.
 | Name      | Properties               | Meaning     |
 |-----------|--------------------------|-------------|
 |**selectOrigin** |originName|Name of one of the defined origins.|
-|     |useCache (optional, default is true)|Flag whether to use caching for requests matching this rule.|
+|     |skipCache (optional, default is false)| Flag whether to use caching for requests matching this rule. By default, responses will be cached according to the response caching header (e.g., Cache-Control or Expires) |
 
 **Origins**
 
