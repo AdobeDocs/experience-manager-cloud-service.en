@@ -1,8 +1,8 @@
 ---
 title: Integrate remote AEM Assets with AEM Sites
-description: Learn how to configure and connect AEM sites  with Approved AEM Assets in Creative Cloud. 
+description: Learn how to configure and connect AEM sites  with Approved AEM Assets in Creative Cloud.
+exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
 ---
-
 # Integrate remote AEM Assets with AEM Sites  {#integrate-approved-assets}
 
 Effectively managing digital assets is crucial for delivering engaging and consistent brand experiences across various online platforms. Dynamic Media with OpenAPI capabilities enhances digital asset management by enabling seamless integration between AEM Sites and AEM Assets as a Cloud Service. This innovative feature allows you to easily share and manage different types of approved digital assets across multiple AEM environments, streamlining workflows for sites authors and content editors.

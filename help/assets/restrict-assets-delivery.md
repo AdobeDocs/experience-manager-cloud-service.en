@@ -2,6 +2,7 @@
 title: Restrict delivery of assets in Experience Manager
 description: Learn how to restrict the assets delivery in [!DNL Experience Manager].
 role: User
+exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
 ---
 # Restrict access to assets in [!DNL Experience Manager] {#restrict-access-to-assets}
 
