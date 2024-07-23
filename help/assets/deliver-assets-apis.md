@@ -2,6 +2,7 @@
 title: Delivery APIs
 description: Learn how to use the Delivery APIs.
 role: User
+exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
 ---
 # Delivery  APIs {#delivery-apis}
 
