@@ -4,9 +4,8 @@ description: Use Asset selector to search, find, and retrieve assets' metadata a
 contentOwner: KK
 role: Admin,User
 feature: Selectors
-exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
+exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
 ---
-
 # Micro-Frontend Asset Selector {#Overview}
 
 Micro-Frontend Asset Selector provides a user interface that easily integrates with the [!DNL Experience Manager Assets] repository so that you can browse or search digital assets available in the repository and use them in your application authoring experience.
@@ -810,6 +809,60 @@ The following table describes some of the important properties of the Selected A
 | *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].height>* | number | The rendition's height. |
 
 For a complete list of properties and detailed example, visit [Asset Selector Code Example](https://github.com/adobe/aem-assets-selectors-mfe-examples).
+
+### Contextual invocation filter{#contextual-invocation-filter}
+
+Asset Selector allows you to add a tag picker filter. It supports a tag group which combines all the relevant tags to a particular tagging group. Additionally, it allows you to select additional tags corresponding to the asset that you are looking for. Moreover, you can also set the default tag groups under the contextual invocation filter that are mostly used by you so that they are accessible to you on the go.
+
+> ![NOTE]
+>
+> * You need to add contextual invocation code snippet to enable tagging filter in the search.
+> * It is mandatory to use name property corresponding to the tag group type `(property=xcm:keywords.id=)`. 
+
+Syntax:
+
+```
+const filterSchema=useMemo(() => {
+    return: [
+        {
+            element: 'taggroup',
+            name: 'property=xcm:keywords.id='
+        },
+    ];
+}, []);
+```
+
+To add tag groups in the filters panel, it is mandatory to add at least one tag group as default. Additionally, use the below code snippet to add the default tags that are pre-selected from the tag group.
+
+```
+export const WithAssetTags = (props) = {
+const [selectedTags, setSelectedTags] = useState (
+new Set(['orientation', 'color', 'facebook', 'experience-fragments:', 'dam', 'monochrome'])
+const handleSelectTags = (selected) => {
+setSelectedTags (new Set (selected)) ;
+};
+const filterSchema = useMemo ((); => {
+    return {
+        schema: [
+            ｛
+                fields: [
+                    {
+                    element: 'checkbox', 
+                    name: 'property=xcm:keywords=', 
+                    defaultValue: Array. from(selectedTags), 
+                    options: assetTags, 
+                    orientation: 'vertical',
+                    },
+                ],
+    header: 'Asset Tags', 
+    groupkey: 'AssetTagsGroup',
+        ],
+    },
+｝；
+}, [selectedTags]);
+```
+
+![tag group filter](assets/tag-group.gif)
 
 ## Handling selection of Assets using Object Schema {#handling-selection}
 
