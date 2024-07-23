@@ -16,7 +16,11 @@ You can add a custom domain name from two locations in Cloud Manager:
 
 >[!NOTE]
 >
->A user must have the **Business Owner** or **Deployment Manager** role to add a custom domain name in Cloud Manager, and you must be using the Fastly CDN. 
+>A user must have the **Business Owner** or **Deployment Manager** role to add a custom domain name in Cloud Manager, and you must be using the Fastly CDN.
+
+## Prerequisite {#prerequisite}
+
+You must add a domain SSL certificate for the domain you wish to add before adding a custom domain name. See the document [Adding an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) for more information.
 
 ## Adding a Custom Domain Name from the Domain Settings Page {#adding-cdn-settings}
 
@@ -36,7 +40,7 @@ Follow these steps to add a custom domain name from the **Domain Settings** page
 
    ![Add Domain dialog](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)
 
-1. Enter the custom domain name in the **Domain Name** field. 
+1. On the **Domain Name** tab, enter the custom domain name in the **Domain Name** field. 
 
    >[!NOTE] 
    >
@@ -48,21 +52,24 @@ Follow these steps to add a custom domain name from the **Domain Settings** page
 
 1. Select the **Domain SSL Certificate** associated with the domain name from the drop-down and select **Continue**.
 
-1. The **Add Domain Name** dialog box appears and will take you to the domain name verification process. Follow the instructions provided to prove domain ownership for your environment. Click **Create**.
+1. The **Verification** tab appears. appears and will take you to  Click **Create**.
 
    ![Domain name verification](/help/implementing/cloud-manager/assets/cdn/cdn-create6.png)
 
-CDN deployment requires a valid SSL certificate and successful TXT verification. This is indicated by status **Verified and Deployed**.
+   * The **Verification** tab describes the domain name verification process of creating a necessary TXT record. Follow the instructions provided to prove domain ownership for your environment.
+   * See the document [Adding a TXT Record](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) for more information.
+
+1. Tap or click **Create** to save the custom domain name in Cloud Manager.
+
+You can save the custom domain name without preforming the verification and TXT entry. However the name will not be active until those steps are complete. See [Adding a TXT Record](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) to learn more about TXT records.
+
+Successful TXT verification is indicated by the status **Verified and Deployed**.
 
 See [Checking Custom Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) to learn more about various statuses and how to address potential issues.
 
 >[!TIP]
 >
 >Review the following article about the need to [Add a CNAME or A Record next](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) to avoid doubling effort when adding DNS-records to your custom-domain. The TXT entry and the CNAME or A Record can be set simultaneously on the governing DNS Server.
-
->[!TIP]
->
->See [Adding a TXT Record](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) to learn more about TXT records.
 
 >[!NOTE]
 >
