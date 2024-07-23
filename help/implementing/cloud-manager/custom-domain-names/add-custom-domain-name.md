@@ -79,7 +79,7 @@ See [Checking Custom Domain Name Status](/help/implementing/cloud-manager/custom
 
 ## Adding a Custom Domain Name from the Environments Page {#adding-cdn-environments}
 
-Follow these steps to add a custom domain name from the **Environments** page.
+The steps for adding a custom domain name from the **Environments** page are the same as when [adding a custom domain name from the Domain Settings page,](#adding-cdn-settings) but the entry point differs. Follow these steps to add a custom domain name from the **Environments** page.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
@@ -95,28 +95,4 @@ Follow these steps to add a custom domain name from the **Environments** page.
 
    ![Add Custom Domain Name](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 
-1. Check the values selected in the **Add Domain Name** dialog box and click **Continue**.
-
-   ![Domain Name Window](/help/implementing/cloud-manager/assets/cdn/cdn-create5.png)
-
-   >[!NOTE]
-   >
-   >Do not include `http://`, `https://`, or spaces when entering in the domain name.
-
-1. The **Add Domain Name** dialog box appears and will take you to the domain name verification process. Follow the instructions provided to prove domain ownership for your environment. Click **Create**.
-
-   ![Domain name verification](/help/implementing/cloud-manager/assets/cdn/cdn-create6.png)
-
-CDN deployment requires a valid SSL certificate and successful TXT verification. This is indicated by status **Verified and Deployed**.
-
-See [Checking Custom Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) to learn more about various statuses and how to address potential issues.
-
->[!NOTE]
->
->DNS verification can take a few hours to process because of DNS propagation delays.
->
->Cloud Manager will verify ownership and update the status which can be seen in the Domain Settings Table. See [Checking Custom Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) for more details.
-
->[!TIP]
->
->See [Adding a TXT Record](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) to learn more about TXT records.
+1. The **Add Domain Name** dialog box opens to the **Domain Name** tab. Continue as you would for [adding a custom domain name from the Domain Settings page.](#adding-cdn-settings)
