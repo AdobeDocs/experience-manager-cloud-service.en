@@ -74,14 +74,7 @@ The following is a high-level recommended end-to-end process for coming up with 
 
 ## Setup {#setup}
 
-1. First, create the following folder and file structure the top-level folder in your project in Git:
-
-   ```
-   config/
-        cdn.yaml
-   ```
-
-1. `cdn.yaml` should contain metadata and a list of traffic filters rules and WAF rules.
+1. Create a file `cdn.yaml` with metadata and a list of traffic filters rules and WAF rules.
 
    ```
    kind: "CDN"
@@ -102,10 +95,8 @@ The following is a high-level recommended end-to-end process for coming up with 
          action: block
    ```
 
-  The `kind` parameter should be set to `CDN` and the version should be set to the schema version, which is `1`. See the following examples.
+  See the [Configuration Pipeline article](/help/operations/configuration-pipeline.md#common-syntax) for a description of the properties above the data node. The kind property value should be *CDN* and the version should be set to `1`.
 
-
-   <!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (for example, "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
 
 1. If WAF rules are licensed, you should enable the feature in Cloud Manager, as described below for both the new and existing program scenarios.
 
@@ -113,16 +104,7 @@ The following is a high-level recommended end-to-end process for coming up with 
 
    1. To configure WAF on an existing program, [editing your program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) and on the **Security** tab uncheck or check the **WAF-DDOS** option at any time.
 
-1. For environment types other than RDE, create a targeted deployment config pipeline in Cloud Manager.
-
-   * [See configuring production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
-   * [See configuring non-production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
-
-For RDEs, the command line is used, but RDE is not currently supported.
-
-**Notes**
-
-* You can use `yq` to validate locally the YAML formatting of your configuration file (for example, `yq cdn.yaml`).
+1. Declare a configuration pipeline in Cloud Manager, as described in [Configuration Pipeline article](/help/operations/configuration-pipeline.md#managing-in-cloud-manager). The pipeline will reference a top level `config` folder with the cdn.yaml file placed somewhere below. 
 
 ## Traffic Filter Rules Syntax {#rules-syntax}
 

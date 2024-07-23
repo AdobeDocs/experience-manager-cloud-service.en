@@ -18,7 +18,7 @@ Also configurable at the CDN are Traffic Filter Rules (including WAF), which con
 
 Additionally, if the CDN cannot contact its origin, you can write a rule that references a self-hosted custom error page (which is then rendered). Learn more about this by reading the [Configuring CDN error pages](/help/implementing/dispatcher/cdn-error-pages.md) article.
 
-All these rules, declared in a configuration file in source control, are deployed by using [Cloud Manager's Configuration Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Be aware that the cumulative size of the configuration file, including traffic filter rules, cannot exceed 100KB.
+All these rules, declared in a configuration file in source control, are deployed by using [Cloud Manager's Configuration Pipeline](/help/operations/configuration-pipeline.md). Be aware that the cumulative size of the configuration file, including traffic filter rules, cannot exceed 100KB.
 
 ## Order of Evaluation {#order-of-evaluation}
 
@@ -30,21 +30,22 @@ Functionally, the various features mentioned previously are evaluated in the fol
 
 Before you can configure traffic at the CDN you need to do the following:
 
-* Create this folder and file structure in the top-level folder of your Git project:
+1. Create a file `cdn.yaml` with the following properties. Rules will later be added under the data node.
 
-```
-config/
-     cdn.yaml
-```
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     # add rules
+   ```
 
-* The `cdn.yaml` configuration file should contain both metadata and the rules described in examples below. The `kind` parameter should be set to `CDN` and the version should be set to the schema version, which is currently `1`.
+  See the [Configuration Pipeline article](/help/operations/configuration-pipeline.md#common-syntax) for a description of the properties above the data node. The kind property value should be *CDN* and the version should be set to `1`.
 
-* Create a targeted deployment config pipeline in Cloud Manager. See [configuring production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) and [configuring non-production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). 
+1. Add rules under the data node, as described in this article.
 
-**Notes**
-
-* RDEs do not currently support the configuration pipeline.
-* You can use `yq` to validate locally the YAML formatting of your configuration file (for example, `yq cdn.yaml`).
+1. Declare a configuration pipeline in Cloud Manager, as described in [Configuration Pipeline article](/help/operations/configuration-pipeline.md#managing-in-cloud-manager). The pipeline will reference a top level `config` folder with the cdn.yaml file placed somewhere below. 
 
 ## Syntax {#configuration-syntax}
 

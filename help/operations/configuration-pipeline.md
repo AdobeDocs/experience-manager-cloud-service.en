@@ -29,6 +29,8 @@ This article describes concepts shared across either all or a subset of the feat
 
 It should be pointed out that each feature has its own dedicated article or section of an article detailing its unique syntax; when appropriate, this shared article is referenced. 
 
+Configuration Pipleines can be deployed via Cloud Manager to dev, stage, and production environment types in production (non-sandbox) programs. RDEs are not currently supported.
+
 ## Common syntax {#common-syntax}
 
 All configuration files begin with properties resembling the following example snippet:
@@ -43,10 +45,10 @@ All configuration files begin with properties resembling the following example s
 | **Property**  | **Description**  | **Default**  |
 |---|---|---|
 |  **kind** | A string that determines which type of configuration. For example, log forwarding, traffic filter rules, or request transformations. | Required, no default |
-|  **version** | A string representing the version of the syntax. | Required, no default |
+|  **version** | A string representing the schema version. | Required, no default |
 |  **envTypes** | This array of strings is a child property of the **metadata** node. Possible values are dev, stage, prod, and it determines for which environment types the configuration will be processed. For example, if the array only includes "dev", the configuration will not be loaded on stage or prod environments, even if the configuration is deployed to there. | All environment types, no default |
 
-
+You can use `yq` to validate locally the YAML formatting of your configuration file (for example, `yq cdn.yaml`).
 
 ## Creating and managing the Configuration Pipeline in Cloud Manager #{managing-in-cloud-manager}
 
