@@ -58,6 +58,10 @@ Interested in trying out the feature and sharing feedback? Send an email to aemc
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
+**Upload assets using Asset Selector**
+
+Asset Selector now offers ability for content authors to upload final assets directly from the selector, by either dragging or by browsing from the local file system. This allows final assets to be uploaded to the DAM from the application of your choice.
+
 ### New features in Assets view {#assets-view-new-features}
 
 **Content credentials integration**
@@ -69,15 +73,6 @@ Experience Manager Assets now preserves and displays content credentials for all
 **Visual previews of folder contents**
 
 Experience Manager Assets now displays visual previews of folder contents on the folder thumbnail when browsing or searching for content, which improves the discoverability of assets available within AEM Assets repository.
-
-
-**Updates to embedded Adobe Express editor**
-
-* Improved User Experience for saving as a new asset versus saving as a new version.
-
-* Export of multipage Express documents (previously only single page was supported) in both multipage PDF and image formats. Selecting image formats saves each page as a distinct asset in the DAM for downstream distribution.
-
-* Support for adding metadata in the Save dialog while saving an asset.
 
 <!--
 
