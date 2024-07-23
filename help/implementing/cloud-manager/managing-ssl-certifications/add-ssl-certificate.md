@@ -6,13 +6,14 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 ---
+
 # Adding an SSL Certificate {#adding-an-ssl-certificate}
 
 Learn how to add your own SSL certificate using Cloud Manager's self-service tools.
 
 >[!TIP]
 >
->A certificate can take a few days to provision. Adobe therefore recommends that the certificate is provisioned well in advance.
+>A certificate can take a few days to provision. Adobe therefore recommends that the certificate is provisioned well in advance of any deadline or go-live date.
 
 ## Certificate Requirements {#certificate-requirements}
 
@@ -36,7 +37,8 @@ Follow these steps to add a certificate using Cloud Manager.
 
    * Enter a name for your certificate in **Certificate Name**.
      * This is for informational purposes only and can be any name that helps you reference your certificate easily.
-   * Paste the **Certificate**, **Private key**, and **Certificate chain** values into their respective fields. All three fields are mandatory.
+   * Paste the **Certificate**, **Private key**, and **Certificate chain** values into their respective fields.
+     * All three fields are mandatory.
 
    ![Add SSL Certificate dialog](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
   
@@ -57,6 +59,32 @@ Once saved, you see your certificate displayed as a new row in the table.
 ## Certificate Errors {#certificate-errors}
 
 Certain errors may arise if a certificate is not installed properly or meet the requirements of Cloud Manager.
+
+### Correct Certificate Order {#correct-certificate-order}
+
+The most common reason for a certificate deployment to fail is that the intermediate or chain certificates are not in the correct order.
+
+Intermediate certificate files must end with the root certificate or the certificate most proximate to the root. They must be in descending order from the `main/server` certificate to the root. 
+
+You can determine the order of your intermediate files using the following command.
+
+```shell
+openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout
+```
+
+You can verify that the private key and `main/server` certificate match using the following commands.
+
+```shell
+openssl x509 -noout -modulus -in certificate.pem | openssl md5
+```
+
+```shell
+openssl rsa -noout -modulus -in ssl.key | openssl md5
+```
+
+>[!NOTE]
+>
+>The output of these two commands must be exactly the same. If you cannot locate a matching private key for your `main/server` certificate, you are required to re-key the certificate by generating a new CSR and/or requesting an updated certificate from your SSL vendor.
 
 ### Remove Client Certificates {#client-certificates}
 
@@ -117,32 +145,6 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
 # "DV Policy - Not Accepted"
 openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 ```
-
-### Correct Certificate Order {#correct-certificate-order}
-
-The most common reason for a certificate deployment to fail is that the intermediate or chain certificates are not in the correct order.
-
-Intermediate certificate files must end with the root certificate or the certificate most proximate to the root. They must be in descending order from the `main/server` certificate to the root. 
-
-You can determine the order of your intermediate files using the following command.
-
-```shell
-openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout
-```
-
-You can verify that the private key and `main/server` certificate match using the following commands.
-
-```shell
-openssl x509 -noout -modulus -in certificate.pem | openssl md5
-```
-
-```shell
-openssl rsa -noout -modulus -in ssl.key | openssl md5
-```
-
->[!NOTE]
->
->The output of these two commands must be exactly the same. If you cannot locate a matching private key for your `main/server` certificate, you are required to re-key the certificate by generating a new CSR and/or requesting an updated certificate from your SSL vendor.
 
 ### Certificate Validity Dates {#certificate-validity-dates}
 
