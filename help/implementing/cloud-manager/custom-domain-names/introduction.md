@@ -43,13 +43,13 @@ In one environment you can have both domains installed in the AEM-managed CDN an
 
 ## Workflow {#workflow}
 
-Adding a custom domain name requires interaction between the DNS service and Cloud Manager. Because of this there are several steps required to install, configure,and verify custom domain names. The following table gives an overview of the steps required, including links to documentation resources to complete those steps.
+Adding a custom domain name requires interaction between the DNS service and Cloud Manager. Because of this there are several steps required to install, configure, and verify custom domain names. The following table gives an overview of the steps required, including links to documentation resources to complete those steps.
 
-|Step|Description|Responsibility|Learn More|
-|---|---|---|---|
-|1|Add SSL certificate to Cloud Manager|Customer|[Adding an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)|
-|2|Add custom domain to Cloud Manager|Customer|[Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)|
-|2|Add TXT record to verify domain|Customer|[Adding a TXT Record](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)|
+|Step|Description|Documentation|
+|---|---|---|
+|1|Add SSL certificate to Cloud Manager|[Adding an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)|
+|2|Add custom domain to Cloud Manager|[Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)|
+|3|Add TXT record to verify domain|[Adding a TXT Record](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)|
 |3|Review domain verification status|Customer|[Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)|
 |3a|If domain verification fails with the status `Domain Verification Failure`|Customer|[Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)|
 |3b|If domain verification fails with the status `Verified, Deployment Failed`, contact Adobe|Adobe Customer Care|[Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)|
