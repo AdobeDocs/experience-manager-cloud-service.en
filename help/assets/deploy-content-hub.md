@@ -2,8 +2,8 @@
 title: Deploy [!DNL Content Hub]
 description: Learn how to deploy and activate Content Hub and provide access to users with different types of privileges (upload assets, Adobe Express users) and how to provide administrator privileges to users.
 role: Admin
+exl-id: 58194858-6e1c-460b-bab3-3496176b2851
 ---
-
 # Deploy Content Hub {#deploy-content-hub}
 
 ![Deploy Content Hub](assets/deploy-content-hub.png)
@@ -186,6 +186,3 @@ To configure Experience Manager Assets users:
    >[!NOTE]
    >
    > You do not need to be added to the [Content Hub product profile](#onboard-content-hub-users) for the Experience Manager Assets users.
-
-
-

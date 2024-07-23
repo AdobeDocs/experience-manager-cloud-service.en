@@ -1,8 +1,8 @@
 ---
 title: Content Hub Overview
-description: Learn more about Content Hub, its key benefits, how to access it, and how to provide feedback around the options available in Content Hub. 
+description: Learn more about Content Hub, its key benefits, how to access it, and how to provide feedback around the options available in Content Hub.
+exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
 ---
-
 # Content Hub Overview {#overview-content-hub}
 
 ![Content Hub overview](assets/content-hub-overview.png)
