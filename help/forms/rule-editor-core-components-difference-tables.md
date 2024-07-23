@@ -15,7 +15,7 @@ This article provides a comprehensive comparison of the different editions, high
 
 >[!NOTE]
 >
-> To see how to create and use custom functions in detail, refer to [Custom functions in Adaptive Forms (Core Components)](/help/forms/create-and-use-custom-functions.md) article.
+> To learn how to create and use custom functions in detail, refer to [Custom functions in Adaptive Forms (Core Components)](/help/forms/create-and-use-custom-functions.md) article.
 
 
 ## See Also

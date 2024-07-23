@@ -326,7 +326,7 @@ To define a rule based on a form data model:
 
 ## Next Step
 
-To understand how to use the user interface for writing and managing rules in a Rule Editor, please refer to the [Rule Editor User Interface for Adaptive Forms based on Core Components](/help/forms/rule-editor-core-components-user-interface.md) article.
+Let us now understand various [examples for a Rule Editor for an Adaptive Form based on Core Components](/help/forms/rule-editor-core-components-usecases.md).
 
 ## See Also
 
