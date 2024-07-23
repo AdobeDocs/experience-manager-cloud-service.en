@@ -10,7 +10,7 @@ role: User, Developer
 
 # Configure SharePoint Site with limited access using authorization scope
 
-The purpose of limited or restricted access is to enhance security management by allowing administrators to control user access within a Microsoft SharePoint Site. The permission level is useful when you need to grant a user or group access to specific content within a site or library, without allowing them to open or edit any other items.
+The purpose of limited or restricted access is to enhance security management by allowing administrators to control user access to a particular SharePoint Site or to a group of SharePoint Sites. The permission level is useful when you need to grant a user or group access to a specific site, without allowing them to peek into any other non-allowed group of Sites.
 
 ## Advantages to configure SharePoint Site with the limited access 
 
