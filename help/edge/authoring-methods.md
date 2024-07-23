@@ -3,8 +3,8 @@ title: Choosing an Authoring Method
 description: Learn important considerations when deciding on how you author your content in AEM to help you make the best decision for your content authors.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
+exl-id: a75e7051-e5ec-4d2a-848a-a66989e2f30b
 ---
-
 # Choosing an Authoring Method {#authoring-methods}
 
 Learn important considerations when deciding on how you author your content in AEM to help you make the best decision for your content authors.
