@@ -14,7 +14,7 @@ Users [searching](search-assets-api.md) or utilizing [delivery URLs](deliver-ass
 
 ## Restricted delivery using an IMS token {#restrict-delivery-ims-token}
 
-In Experience Manager, restricted delivery via IMS involves two key stages: 
+In Experience Manager Assets, restricted delivery via IMS involves two key stages: 
 
 * Authoring 
 * Delivery
@@ -38,7 +38,7 @@ If the field is not available, use the following steps to add the field:
       1. Update the **[!UICONTROL Map to property]** to _./jcr:content/metadata/dam:roles_.
 
 1. Obtain the IMS groups to be added in the Roles metadata of the asset. To fetch the IMS groups, follow these steps:
-   1. Sign in at https://adminconsole.adobe.com/.
+   1. Sign in at `https://adminconsole.adobe.com/.`
    1. Go to your respective organization and navigate to **[!UICONTROL User Groups]**.
    1. Select the **[!UICONTROL User Group]** you need to add, and extract the **[!UICONTROL orgID]** and **[!UICONTROL userGroupID]** from the URL or use your Org Id such as `{orgID}@AdobeOrg:{usergroupID}`.
 
