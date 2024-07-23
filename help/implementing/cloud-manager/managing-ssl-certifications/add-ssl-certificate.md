@@ -37,7 +37,6 @@ Follow these steps to add a certificate using Cloud Manager.
    * Enter a name for your certificate in **Certificate Name**.
      * This is for informational purposes only and can be any name that helps you reference your certificate easily.
    * Paste the **Certificate**, **Private key**, and **Certificate chain** values into their respective fields. All three fields are mandatory.
-   * In some cases, the end-user certificate may be included in the chain and must be stripped before pasting the chain into the field.
 
    ![Add SSL Certificate dialog](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
   
@@ -55,13 +54,19 @@ Once saved, you see your certificate displayed as a new row in the table.
 >
 >A user must be a member of the **Business Owner** or **Deployment Manager** role to install an SSL certificate in Cloud Manager.
 
->[!NOTE]
->
->If you receive an error similar to `The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.`, you likely included the client certificate in the certificate chain. Please make sure that the chain does not include the client certificate and try again.
-
 ## Certificate Errors {#certificate-errors}
 
 Certain errors may arise if a certificate is not installed properly or meet the requirements of Cloud Manager.
+
+### Remove Client Certificates {#client-certificates}
+
+When adding a certificate, if you receive an error similar to the following:
+
+```text
+The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.
+```
+
+You likely included the client certificate in the certificate chain. Please make sure that the chain does not include the client certificate and try again.
 
 ### Certificate Policy {#certificate-policy}
 
