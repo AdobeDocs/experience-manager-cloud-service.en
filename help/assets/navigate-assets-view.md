@@ -25,7 +25,8 @@ When you log into [!DNL Assets view], you see the following interface.
 
 ## Browse and view assets and folders {#browse-repository}
 
-You can browse the folders from the main user interface or from the left sidebar. When browsing, you can use the interface to view asset thumbnails to visually browse the repository or view asset details to quickly find the asset you want. The options available in the left sidebar are:
+You can browse the folders from the main user interface or from the left sidebar. While navigating folders from the main user interface, notice the folder thumbnail to quickly preview the folder content. This saves your time spent on searching specific assets located into a folder within such an extensive AEM Assets repository.
+When browsing through assets into a folder, you can use the interface to view asset thumbnails to visually browse the repository or view asset details to quickly find the asset you want. The options available in the left sidebar are:
 
 * [My Workspace](/help/assets/my-workspace-assets-view.md): Assets now includes a customizable workspace that provides widgets for convenient access to key areas of the Assets user interface and information that is most relevant to you. This page serves as a one-stop solution to provide an overview of your work items and to give quick access to key workflows. More convenient access to these options increases your efficiency and content velocity.
 * [Tasks](/help/assets/my-workspace-assets-view.md): You can view the tasks assigned to you under **My tasks** tab. Whereas, the tasks that are created by you can be viewed under **Assigned tasks** tab. Also, the tasks that you complete are located under **Completed tasks** tab.
