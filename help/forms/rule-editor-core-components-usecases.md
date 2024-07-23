@@ -4,8 +4,8 @@ description: The article outlines various use cases for a rule editor in an Adap
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
 ---
-
 # Different use cases of Rule Editor
 
 The article provides detailed examples of a Rule Editor for an Adaptive Form based on core components, providing insights into its proper implementation for different scenarios. The rule editor allows developers to define and manage the logic controlling the behavior of forms. 
