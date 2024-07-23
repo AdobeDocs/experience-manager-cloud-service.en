@@ -1,6 +1,7 @@
 ---
 title: Configure Content Hub user interface
 description: Configure Content Hub user interface
+exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
 ---
 # Configure Content Hub user interface {#configure-content-hub-user-interface}
 
@@ -178,5 +179,3 @@ Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), ava
    The custom link display as a new tab next to Insights tab on the Content Hub home page.
 
    ![Configuration UI Custom Links tabs on Content Hub](assets/configuration-ui-custom-link-tab.png)
-
-
