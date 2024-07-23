@@ -695,11 +695,11 @@ user-guide-title: AEM as a Cloud Service
              +  [Introduction to Rule Editor for Adaptive Forms based on Core Components](/help/forms/rule-editor-core-components.md)
              +  [Rule Editor user interface for Adaptive Forms based on Core Components](/help/forms/rule-editor-core-components-user-interface.md)
               +  [Difference between Foundation Rule Editor and Core Component Rule Editor](/help/forms/rule-editor-core-components-difference-tables.md)
-              +  [Operator types and events in rule editor of an Adaptive Form based on Core Components](/help/forms/rule-editor-core-components-events-operators.md)
+              +  [Operator and events types available in rule editor for an Adaptive Form based on Core Components](/help/forms/rule-editor-core-components-events-operators.md)
               +  [Examples for a Rule Editor for an Adaptive Form Based on Core Components](/help/forms/rule-editor-core-components-usecases.md)
         +  Introduction to Custom Functions for Adaptive Forms based on Core Components{#create-and-use-custom-function-core-component}
            +  [Introduction to Custom Functions for Adaptive Forms based on Core Components](/help/forms/create-and-use-custom-functions.md)
-           +  [Create a Custom Function for an Adaptive Form based on Core Components](/help/forms/custom-function-core-component-create-function.md)
+           +  [Create and use a Custom Function for an Adaptive Form based on Core Components](/help/forms/custom-function-core-component-create-function.md)
            +  [Examples of Custom Functions for an Adaptive Form Based on Core Components](/help/forms/custom-function-core-components-use-cases.md)
     + Foundation Components {#authoring-adaptive-forms-foundation-components}
       + Convert your PDF forms to Adaptive Forms {#afcs}
