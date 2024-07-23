@@ -42,13 +42,14 @@ Follow the steps below to set up Screens Services Provider:
 
 1.  Click **Save** to connect to Screens content provider.
 
-1. In you have configured the AEM publish instance to allow access only to trusted IP addresses by Cloud Manager's IP Allowlist feature, you need to configure a header with a key value in the settings dialog as shown below.
+1. In case you have configured the AEM publish instance to allow access only to trusted IP addresses by Cloud Manager's IP Allowlist feature, you need to configure a header with a key value in the settings dialog as shown below.
 The IPs which need to whitelisted also need to moved to the configuration file and need to be [unapplied](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list) from the Cloud Manager settings.
 
-   ![image](/help/screens-cloud/assets/configure/configure-screens20.png)
+   ![image](/help/screens-cloud/assets/configure/configure-screens20b.png)
 The same key needs to be configured at  AEM CDN configuration.  It is recommended to not put the header value directly in GITHub and use a [secret reference](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication#rotating-secrets).
 A sample [CDN config](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf) is given below:
-    kind: "CDN"
+
+    ```kind: "CDN"
         version: "1"
         metadata:
           envTypes: ["dev", "stage", "prod"]
@@ -75,6 +76,7 @@ A sample [CDN config](https://experienceleague.adobe.com/en/docs/experience-mana
         {CDN_HEADER_KEY}
                 action:
                   type: allow
+    ```
 
 1. Select **Channels** from the left navigation bar and click **open in content provider**. 
 
