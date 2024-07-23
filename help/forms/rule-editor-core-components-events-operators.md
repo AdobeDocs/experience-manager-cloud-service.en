@@ -4,8 +4,8 @@ description: Adaptive Forms rule editor supports various operators types and eve
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
 ---
-
 # Operator types and events in rule editor of an Adaptive Form based on Core Components
 
 In AEM Forms as a Cloud, the rule editor includes various operator types and events that enable you to define and execute complex conditions and actions with ease.
