@@ -104,25 +104,11 @@ When looking at the asset details, any image with content credentials added, suc
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-<!-- 
-
-* **Configure a shard for Adobe Sign for AEM Forms**: Adobe distributes Acrobat Sign API around the globe in many deployment units called "shards." Each shard serves a customer's account, such as NA1, NA2, NA3, EU1, JP1, AU1, IN1, and others. The shard names correspond to geographic locations. You can now use more than one shard while using Adobe Sign integration with AEM Forms. 
-
---> 
-
 ### New features in AEM Forms {#forms-new-prerelease-features}
 
 #### Enhanced Visual Rule Editor for Core Component Based Adaptive Forms
 
-This release brings a significant upgrade to the Visual Rule Editor for adaptive forms based on core components. You can now: 
-
-   * Create rules in the Visual Rule Editor to [override the default form submission success/failure messages](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers). 
-
-   * In the Adaptive Forms Rule Editor, added the ability to [select different types of fields for the WHEN operation](/help/forms/rule-editor-core-components.md#allowed-multiple-fields-in-when).
-
-   * A form author can now apply custom functions to [preprocess data before submission](/help/forms/create-and-use-custom-functions.md#use-case-submit-altered-data-to-the-server). 
-
-   * Use the [**Save as Draft**](/help/forms/save-core-component-based-form-as-draft.md) functionality to save partially completed forms for later submission. This functionality is useful in scenarios where users need to interrupt filling out a form and come back to it later.
+Adaptive form authors can use repeatable form fields in out of the box functions available in visual rule editor for core components to build complex business logic in the forms, without requiring customization or development team's assistance.
  
 ### Early Access features in AEM Forms {#forms-new-early-access-features}
 
@@ -130,26 +116,9 @@ The AEM Forms Early Access Program program offers a unique opportunity to you to
 
 This release notes lists the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
 
-#### Enhanced bot protection methods
+#### Author adaptive forms using Universal Editor
 
-AEM Forms has enhanced its security features by adding support for two popular CAPTCHA solutions: Cloudflare Turnstile and hCaptcha. This functionality complements the existing Google reCAPTCHA, offering users additional options. It enhances flexibility in safeguarding their forms from bots and spam submissions.
-
-* **Cloudflare Turnstile**: This frictionless CAPTCHA verifies users through a simple challenge that does not require explicit interaction. It seamlessly integrates into your forms, improving the user experience.
-* **hCaptcha**: This privacy-focused CAPTCHA offers a user-friendly alternative with a focus on data privacy. It aims to strike a balance between security and user experience.
-* **Google reCAPTCHA**: AEM Forms continue to support both reCAPTCHA v2 and reCAPTCHA Enterprise, offering a reliable and well-established solution.
-
-By offering multiple CAPTCHA options, AEM Forms have empowered you to select the solution that best aligns with your specific needs. 
-
-Ready to integrate any of these CAPTCHA solutions with your Adaptive Forms? Adobe's documentation provides detailed instructions for each: [Cloudflare Turnstile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), and [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
-
-
-### Forms Service
-
-Forms service generates interactive PDF forms for data capture. It can also be used to import or export data to and from an existing interactive PDF form and validate submitted data. Here's a breakdown of its functionalities: 
-
-* **Rendering Forms**: Generate an interactive PDF form from a template created using AEM Forms Designer and, optionally, XML data. This functionality produces a fillable PDF form optionally pre-filled with data.
-* **Data Extraction and Import**: Import data into an existing PDF form as well as extract data from a filled PDF form. Both XDP and XML data formats are supported, and importing to non-XFA PDF forms (also known as AcroForms) additionally supports FDF and XFDF data.
-* **Data Validation**: Validate submitted data, in XDP or XML format, against a template created using AEM Forms Designer.
+Leverage the Adobe Experience Manager [Universal Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) to create adaptive forms using WYSIWYG drag-drop authoring, for both headless and headful enrollment experiences, delivered via Edge Delivery Service. Adaptive form authors can easily create and launch experiments for variations of the forms in the web pages and determine the best performing experiences for end users.
 
 >[!IMPORTANT] 
 >
