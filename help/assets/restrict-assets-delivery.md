@@ -13,7 +13,7 @@ Users [searching](search-assets-api.md) or utilizing [delivery URLs](deliver-ass
 
 ## Restricted delivery using an IMS token {#restrict-delivery-ims-token}
 
-In Experience Manager, restricted delivery via IMS involves two key stages: 
+In Experience Manager Assets, restricted delivery via IMS involves two key stages: 
 
 * Authoring 
 * Delivery
