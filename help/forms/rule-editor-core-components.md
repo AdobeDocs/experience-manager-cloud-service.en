@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
 ---
 
-# Rule Editor in Adaptive Form based on Core Components
+# Introduction to Rule Editor for Adaptive Form based on Core Components
 
 | Version | Article link |
 | -------- | ---------------------------- |
@@ -88,7 +88,7 @@ While you can achieve most of the use cases by using any rule construct, here ar
 
 ## Next Step
 
-To understand the various operator types and events in the rule editor of an Adaptive Form, refer to the [Available Operator Types and Events in Rule Editor of an Adaptive Form](/help/forms/rule-editor-core-components-events-operators.md) article.  
+To understand how to use the user interface for writing and managing rules in a Rule Editor,  refer to the [Rule Editor User Interface for Adaptive Forms based on Core Components](/help/forms/rule-editor-core-components-user-interface.md) article.
 
 ## See Also
 

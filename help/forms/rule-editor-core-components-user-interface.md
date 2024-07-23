@@ -472,7 +472,8 @@ To copy-paste rules, do the following:
 
 ## Next Step
 
-Let us now understand various [examples for a Rule Editor for an Adaptive Form based on Core Components](/help/forms/rule-editor-core-components-usecases.md).
+To understand the various operator types and events in the rule editor of an Adaptive Form, refer to the [Available Operator Types and Events in Rule Editor of an Adaptive Form](/help/forms/rule-editor-core-components-events-operators.md) article.  
+
 
 ## See Also
 
