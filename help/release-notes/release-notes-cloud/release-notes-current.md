@@ -58,28 +58,18 @@ Interested in trying out the feature and sharing feedback? Send an email to aemc
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New features in Experience Manager Assets {#new-features-assets}
-
-
-
-**Content Hub**
-
-Content Hub is available as part of Experience Manager Assets as a Cloud Service for democratizing access to on-brand content for organizations and their business partners. With Content Hub, you can easily find and distribute assets, reuse and create new on-brand variations, and accelerate activation at scale.
-
-![Content Hub user interface](/help/release-notes/assets/content-hub-ui.png)
-
-**Dynamic Media with OpenAPI Capabilities**
-
-Dynamic Media with OpenAPI capabilities extends the DAM across Adobe and third-party applications, enabling access to on brand approved digital assets, in any channel, via Asset Selector or OpenAPI stack. Key tenets - no binary copies, assets are optimized and transformed at the edge for fast performance, deliver assets public or secure.
-
-![New Dynamic Media data flow diagram](/help/assets/assets/dm-openapi-dfd.png)
-
-
 ### New features in Assets view {#assets-view-new-features}
 
-**More options are available in the Assets Insights dashboard**
+**Content credentials integration**
 
-Asset Count by asset type and size are now available in the Assets Insights dashboard. These options deliver real-time data in your Assets view environment. They detail the count and percentage of assets by size range and asset type.
+Experience Manager Assets now preserves and displays content credentials for all supported image format types, which identifies the content created or modified using GenAI and the tools used.
+
+![Content credentials](/help/assets/assets/content-credentials.png)
+
+**Visual previews of folder contents**
+
+Experience Manager Assets now displays visual previews of folder contents on the folder thumbnail when browsing or searching for content, which improves the discoverability of assets available within AEM Assets repository.
+
 
 **Updates to embedded Adobe Express editor**
 
