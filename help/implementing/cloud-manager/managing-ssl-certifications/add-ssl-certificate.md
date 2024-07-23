@@ -58,14 +58,6 @@ Once saved, you see your certificate displayed as a new row in the table.
 
 Certain errors may arise if a certificate is not installed properly or meet the requirements of Cloud Manager.
 
-### Ensure Proper Line Formatting {#line-formatting}
-
-When pasting values for **Certificate**, **Private key**, and **Certificate chain**, new lines should only be after BEGIN CERTIFICATE and before END CERTIFICATE. I.e. the pasted values should be constructed as follows:
-
-* `-----BEGIN CERTIFICATE-----` must appear on its own line.
-* `-----END CERTIFICATE-----` must appear on its own line.
-* The certificate content must appear on its own line as one long string **without any new lines** in between `-----BEGIN CERTIFICATE-----` and `-----END CERTIFICATE-----`.
-
 ### Remove Client Certificates {#client-certificates}
 
 When adding a certificate, if you receive an error similar to the following:
