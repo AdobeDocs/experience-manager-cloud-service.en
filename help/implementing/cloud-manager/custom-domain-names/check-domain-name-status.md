@@ -39,7 +39,7 @@ The status detail is shown. Your custom domain is ready to be used when the stat
 
 ## Understanding Verification Statuses {#statuses}
 
-Cloud Manager will verify domain ownership via the [TXT value](help/implementing/cloud-manager/custom-domain-names/add-text-record.md) and displays one of the following status messages.
+Cloud Manager will verify domain ownership via the [TXT value](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) and displays one of the following status messages.
 
 * **Domain Verification Failed** - The TXT value is either missing or is detected with errors.
 
