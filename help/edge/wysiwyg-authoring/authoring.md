@@ -1,12 +1,12 @@
 ---
-title: Authoring Content for Edge Delivery Services
+title: WYSIWYG Content Authoring for Edge Delivery Services
 description: Learn how content authoring works with Edge Delivery Services and how to author AEM content with Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
 ---
 
-# Authoring Content for Edge Delivery Services {#authoring-edge}
+# WYSIWYG Content Authoring for Edge Delivery Services {#authoring-edge}
 
 With Edge Delivery Services, authoring is easy, fast, and flexible. You have two options to author content for Edge Delivery Services:
 
@@ -19,7 +19,7 @@ When using Edge Delivery Services with AEM as a Cloud Service, the most fundamen
 
 ![How WYSIWYG Authoring works with Edge Delivery Services](assets/how-aem-edge-works.png)
 
-1. [The WYSIWYG Authoring environment](/help/sites-cloud/authoring/quick-start.md) is used for content management such as creating new pages, Experience Fragments, Content Fragments, etc.
+1. [The AEM Sites environment](/help/sites-cloud/authoring/quick-start.md) is used for content management such as creating new pages, Experience Fragments, Content Fragments, etc.
    * All features of AEM are available such as workflows, MSM, translation, Launches, etc.
 1. [The Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) is used to author the content managed in AEM.
    * The Universal Editor offers a new and modern UI for content authoring.
@@ -46,9 +46,8 @@ For details on how to author using the Universal Editor, please see the document
 
 Please see the [Developer Getting Started Guide for WYSIWYG Authoring with Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) to learn how to start your own project to author with AEM and Edge Delivery Services.
 
-## Document-Based Authoring  {#document-based}
+## Additional Authoring Methods  {#authoring-methods}
 
-When using document-based authoring, you can work with a variety of sources such as Microsoft Word and Google Docs documents. Documents from these sources become pages on your website. Headings, lists, images, font elements, videos can all be transferred from the initial source into your website. You can add metadata for SEO purposes or use blocks to work with structured content and add functionality.
+WYSIWYG authoring is a powerful and intuitive tools for content authors. However, there are many different authroing use cases, which is why AEM offers additional authoring solutions.
 
-For further details on document-based authoring, please refer to [this document in the Edge Delivery Services documentation.](/help/edge/docs/authoring.md)
-
+Please see the document [Choosing an Authoring Method](/help/edge/authoring-methods.md) to learn more about the authoring solutions AEM offers including document-based authoring and headless.

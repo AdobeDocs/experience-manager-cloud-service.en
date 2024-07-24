@@ -43,7 +43,7 @@ There are two phases associated with content transfer:
  
 A migration set has the following attributes:
 
-* With the new version, you can create a maximum of twenty migration sets within a project created in Cloud Acceleration Manager.
+* With the new version, you can create a maximum of ten migration sets within a project created in Cloud Acceleration Manager.
 * Each migration set should have a unique name. 
 
 The Content Transfer Tool has a feature that supports differential content top-up where it is possible to transfer only changes made since the previous content transfer activity. 
