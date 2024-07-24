@@ -79,7 +79,7 @@ Similarly, to bulk approve assets within a folder in Assets view:
 
    If you select the status as `Approved`, and if [Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md) or [Content Hub](/help/assets/product-overview.md), or both are enabled for your Experience Manager Assets, you can view `Delivery` and `Content Hub` options available in the **[!UICONTROL Approval Target]** field. 
    
-   * Select **[!UICONTROL Delivery]** to make the assets available to both Dynamic Media with OpenAPI capabilities and Content Hub. 
+   * Select **[!UICONTROL Delivery]** to make the assets available to both Dynamic Media with OpenAPI capabilities and Content Hub. If you do not have Content Hub enabled, selecting this option makes the assets available to Dynamic Media with OpenAPI capabilities only.
    * Select **[!UICONTROL Content Hub]** to make the assets available to Content Hub.
 
     ![Approval status](/help/assets/assets/approval-status-delivery.png)
