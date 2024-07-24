@@ -4,6 +4,7 @@ description: This article explains the difference between the Foundation and Cor
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+exl-id: 0feef02c-6186-45f2-9929-07120126c596
 ---
 # Difference in various editions of Rule editor 
 

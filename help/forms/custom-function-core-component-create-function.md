@@ -4,8 +4,8 @@ description: AEM Forms support custom functions, which allow users to create and
 keywords: Add a custom function, use a custom function, create a custom function, use custom function in rule editor.
 feature: Adaptive Forms, Core Components
 role: User, Developer
+exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
 ---
-
 # Create a Custom Function for an Adaptive Form based on Core Components
 
 Adaptive Forms based on Core Components offer dynamic user experiences by adjusting content and behavior based on user input. Custom functions allow developers to extend functionality, ensuring that forms can meet specific requirements. By integrating custom functions, developers can implement complex logic, automate processes, and introduce unique interactions that align with specific business requirements or user expectations. It ensures that the forms not only adapt to varying conditions but also provide a more precise and effective solution for diverse use cases.
