@@ -3,6 +3,7 @@ title: Release Notes for 2024.5.0 release of [!DNL Adobe Experience Manager] as 
 description: Release Notes for 2024.5.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
+exl-id: 7b7a27f9-ba57-4eb2-9fcb-653b5213af04
 ---
 # 2024.5.0 Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -245,4 +246,4 @@ You can find a complete list of Migration Tools releases [here](/help/journey-mi
 ## Experience Cloud Release Notes {#experience-cloud}
 
 You can find information about releases of other Experience Cloud applications [here](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current).
-To receive a monthly email notification about updates to Experience Cloud release notes, subscribe to the [Adobe Priority Product Update](https://www.adobe.com/subscription/priority-product-update.html). 
+To receive a monthly email notification about updates to Experience Cloud release notes, subscribe to the [Adobe Priority Product Update](https://www.adobe.com/subscription/priority-product-update.html).

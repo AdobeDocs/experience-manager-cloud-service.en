@@ -2,8 +2,8 @@
 title: Asset properties in [!DNL the Content Hub]
 description: Learn how to view and manage asset properties in [!DNL Content Hub]
 role: User
+exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
 ---
-
 # Manage asset properties in Content Hub {#asset-properties}
 
 ![Metadata banner image](assets/metadata-banner-image.png)
@@ -120,4 +120,3 @@ Administrators can also configure the properties that display for each asset. Fo
 The date range allows you to select dates you want to see the assets. You can customize date range by choosing the start and end dates. 
 
 -->
-
