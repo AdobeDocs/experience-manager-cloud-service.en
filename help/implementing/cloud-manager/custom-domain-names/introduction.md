@@ -73,4 +73,5 @@ There are several limitations to using custom domain names with AEMaaCS.
 
 ## Get Started! {#get-started}
 
-Get started configuring a custom domain name for your project by [adding an SSL certificate.](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+* Get started configuring a new custom domain name for your project by [adding an SSL certificate.](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+* Manage your existing domain names by reviewing the document [Managing Custom Domain Names.](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
