@@ -9,6 +9,10 @@ role: Admin, Architect, Developer
 
 # Checking Domain Name Status {#check-status}
 
+Learn how to determine whether your custom domain name has been verified successfully by Cloud Manager.
+
+## How to Check the Status of Your Custom Domain Name {#how-to}
+
 You can determine status of your custom domain name within Cloud Manager.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
@@ -21,16 +25,25 @@ You can determine status of your custom domain name within Cloud Manager.
 
 1. Click the **Status** icon for the domain name.
 
-Cloud Manager will verify domain ownership via the TXT value and displays one of the following status messages.
+The status detail is shown. Your custom domain is ready to be used when the status **Domain Verified & Deployed** is shown. See the [next section](#statuses) for details on the different statuses and what they mean.
+
+>[!NOTE]
+>
+>Cloud Manager will automatically trigger verification when you select **Create** on the verification step of the **Add Custom Domain** wizard when [adding a new custom domain name to Cloud Manager.](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) For subsequent verifications, you must actively select the verify again icon next to the status.
+
+## Understanding Verification Statuses {#statuses}
+
+Cloud Manager will verify domain ownership via the [TXT value](help/implementing/cloud-manager/custom-domain-names/add-text-record.md) and displays one of the following status messages.
 
 * **Domain Verification Failed** - The TXT value is either missing or is detected with errors.
 
-  * Follow the instructions provided to resolve the issue.
+  * Follow the instructions provided in the status message to resolve the issue.
   * When ready, you must select the **Verify Again** icon next to the status.
 
 * **Domain Verification In Progress** - Verification is in progress.
 
   * This status is typically seen after you select the **Verify Again** icon next to the status.
+  * DNS verification can take a few hours to process because of DNS propagation delays.
 
 * **Verified, Deployment Failed** - The TXT verification was successful, but the CDN deployment failed. 
 
@@ -47,15 +60,13 @@ Cloud Manager will verify domain ownership via the TXT value and displays one of
 
   * See [Managing Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) to learn more.
 
-Cloud Manager will automatically trigger a TXT verification when you select **Save** on the verification step of the **Add Custom Domain** wizard. For subsequent verifications, you must actively select the verify again icon next to the status.
-
 ## Domain Name Errors {#domain-error}
 
-The following are some common domain name errors and their typical resolutions.
+The following are some common domain name verification errors and their typical resolutions.
 
 ### Domain Not Installed Error {#domain-not-installed}
 
- This error may occur during domain validation of the TXT record even after you have checked that the record has been updated appropriately.
+This error may occur during domain validation of the TXT record even after you have checked that the record has been updated appropriately.
 
 #### Error Cause {#cause}
 
