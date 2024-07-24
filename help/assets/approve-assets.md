@@ -2,6 +2,7 @@
 title: Approve assets in Experience Manager
 description: Learn how to approve assets in [!DNL Experience Manager].
 role: User
+exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
 ---
 # Approve assets in [!DNL Experience Manager]
 
@@ -96,4 +97,3 @@ To copy delivery URL for an approved asset within the repository:
    >[!NOTE]
    >
    >The option to copy delivery URL for approved assets is just available in Assets view.
-   
