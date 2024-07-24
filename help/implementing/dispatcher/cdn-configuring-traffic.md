@@ -30,24 +30,23 @@ Functionally, the various features mentioned previously are evaluated in the fol
 
 Before you can configure traffic at the CDN you need to do the following:
 
-1. Create a file `cdn.yaml` with the following properties. Rules will later be added under the data node.
+1. Create a file named `cdn.yaml` or similar, referencing the various configuration snippets in the sections below. 
 
-   ```
-   kind: "CDN"
-   version: "1"
-   metadata:
-     envTypes: ["dev"]
-   data:
-     # add rules
-   ```
+    All snippets have these common properties, which are described in  the [Configuration Pipeline article](/help/operations/configuration-pipeline.md#common-syntax). The `kind` property value should be *CDN* and the version should be set to `1`.
+    ```
+    kind: "CDN"
+    version: "1"
+    metadata:
+      envTypes: ["dev"]
+    ```
 
-  See the [Configuration Pipeline article](/help/operations/configuration-pipeline.md#common-syntax) for a description of the properties above the data node. The kind property value should be *CDN* and the version should be set to `1`.
+1. Place the file somewhere under a top level `config` folder, as described in [Configuration Pipeline article](/help/operations/configuration-pipeline.md#managing-in-cloud-manager).
 
-1. Add rules under the data node, as described in this article.
+1. Create a configuration pipeline in Cloud Manager, as described in the [Configuration Pipeline article](/help/operations/configuration-pipeline.md#managing-in-cloud-manager). 
 
-1. Declare a configuration pipeline in Cloud Manager, as described in [Configuration Pipeline article](/help/operations/configuration-pipeline.md#managing-in-cloud-manager). The pipeline will reference a top level `config` folder with the cdn.yaml file placed somewhere below. 
+1. Deploy the configuration.
 
-## Syntax {#configuration-syntax}
+## Rules Syntax {#configuration-syntax}
 
 The rule types in the sections below share a common syntax.
 

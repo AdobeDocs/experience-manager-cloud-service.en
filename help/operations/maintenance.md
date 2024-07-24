@@ -216,25 +216,19 @@ Declare a configuration file and deploy it as described in the following steps.
 > 
 >Similarly, once you deploy the audit log purge node in the configuration file, you must keep it declared and not remove it.
 
-**1** - create the following folder and file structure in the top-level folder of your project in Git:
+**1** Create a file named `mt.yaml` or similar.
+  
+**2** Place the file somewhere under a top level `config` folder, as described in the [Configuration Pipeline article](/help/operations/configuration-pipeline.md#managing-in-cloud-manager).
 
-```
+**3** - Declare properties in the configuration file, which include:
 
-config/
-     mt.yaml
+* a few properties above the data node -- see the [Configuration Pipeline article](/help/operations/configuration-pipeline.md#common-syntax) for a description. The `kind` property value should be *MaintenanceTasks* and the version should be set to *1*.
 
-```
-
-**2** - Declare properties in the configuration file, which include:
-
-* a "kind" property with the value "MaintenanceTasks".
-* a "version" property (currently we are at version 1).
-* an optional "metadata" object with the property `envTypes` with a comma separated list of the environment type (dev, stage, prod) for which this configuration is valid. If no metadata object is declared, the configuration is valid for all environment types.
 * a data object with both `versionPurge` and `auditLogPurge` objects.
 
 See the definitions and syntax of the `versionPurge` and `auditLogPurge` objects below.
 
-You should structure the configuration similar to the following example:
+Structure the configuration similar to the following example:
 
 ```
 
@@ -271,14 +265,7 @@ Keep in mind that in order for the configuration to be valid:
 * all properties must be defined. There are no inherited defaults.
 * the types (integers, strings, booleans, etc) in the property tables below must be respected.
 
->[!NOTE]
->You can use `yq` to locally validate the YAML formatting of your configuration file (for example, `yq mt.yaml`).
-
-**3** - Configure the non-production and production configuration pipelines.
-
-Rapid development environments (RDEs) do not support purging. For other environment types in production (non-sandbox) programs, create a targeted deployment config pipeline in Cloud Manager.
-
-See [configuring production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) and [configuring non-production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) for more details.
+**4** - Create a configuration pipeline in Cloud Manager, as described in the [Configuration Pipeline article](/help/operations/configuration-pipeline.md#managing-in-cloud-manager). Sandboxes and rapid development environments (RDEs) do not support purging.  
 
 ### Version Purge {#version-purge}
 
