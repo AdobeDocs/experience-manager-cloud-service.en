@@ -75,3 +75,13 @@ dig TXT _aemverification.example.com -t txt
 >DNS verification can take a few hours to process because of DNS propagation delays.
 >
 >Cloud Manager will verify ownership and update the status which can be seen in the Domain Settings Table. See [Checking Custom Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) for more details.
+
+## Next Steps {#next-steps}
+
+Now that you created your TXT entry, you can verify your domain name status. Proceed to the document [Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) to continue setting up your custom domain name.
+
+>[!TIP]
+>
+>The TXT entry and the CNAME or A Record can be set simultaneously on the governing DNS Server, thus saving time.
+>
+>If you wish to do this, first review the entire process of setting up a custom domain name as detailed in the document [Introduction to Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/introduction.md) taking special note of the document [help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) and update your DNS settings appropriately.

@@ -11,6 +11,12 @@ role: Admin, Architect, Developer
 
 Learn how to determine whether your custom domain name has been verified successfully by Cloud Manager.
 
+## Requirements {#requirements}
+
+You must fulfill these requirements before checking your domain name status in Cloud Manager.
+
+* You must first add a TXT record for your custom domain as described in the document [Adding a TXT Record.](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
+
 ## How to Check the Status of Your Custom Domain Name {#how-to}
 
 You can determine status of your custom domain name within Cloud Manager.
@@ -97,3 +103,7 @@ If you have a pre-existing CDN configuration for your custom domain names, there
 The message disappears once all pre-existing environment configurations are migrated using the UI. It may take 1-2 business days for the message to disappear.
 
 See [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) for more details.
+
+## Next Steps {#next-steps}
+
+Once you have verified your domain status in Cloud Manager, you will need to configure DNS settings by adding DNS CNAME or APEX records that point to AEM as a Cloud Service. Proceed to the document [Configuring DNS Settings](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) to continue setting up your custom domain name.

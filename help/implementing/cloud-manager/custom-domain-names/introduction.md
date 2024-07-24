@@ -50,11 +50,9 @@ Adding a custom domain name requires interaction between the DNS service and Clo
 |1|Add SSL certificate to Cloud Manager|[Adding an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)|
 |2|Add custom domain to Cloud Manager|[Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)|
 |3|Add TXT record to verify domain|[Adding a TXT Record](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)|
-|4|Review domain verification status|Customer|[Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)|
-|5|Configure DNS settings by adding DNS CNAME or APEX records that point to AEM as a Cloud Service|Customer|[Configuring DNS Settings](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)|
-|5|Check DNS record status|Customer|[Checking DNS Record Status](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)|
-|5a|If DNS record status fails with `DNS status not detected`|Customer|[Checking DNS Record Status](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)|
-|5b|If DNS record status fails with `DNS resolves incorrectly`|Customer|[Checking DNS Record Status](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)|
+|4|Review domain verification status|[Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)|
+|5|Configure DNS settings by adding DNS CNAME or APEX records that point to AEM as a Cloud Service|[Configuring DNS Settings](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)|
+|6|Check DNS record status|[Checking DNS Record Status](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)|
 
 >[!TIP]
 >
@@ -72,4 +70,7 @@ There are several limitations to using custom domain names with AEMaaCS.
 * Only one domain name can be added at a time.
 * AEM as a Cloud Service does not support wildcard domains such as `*.example.com`.
 * Before adding a custom domain name, a valid SSL certificate that contains the custom domain name (wildcard certificates are valid) must be installed for your program.
-  * See [Adding an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) to learn more.
+
+## Get Started! {#get-started}
+
+Get started configuring a custom domain name for your project by [adding an SSL certificate.](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)

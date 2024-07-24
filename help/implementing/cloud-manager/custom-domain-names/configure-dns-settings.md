@@ -19,7 +19,7 @@ To configure these settings, you need to determine if a `CNAME` or apex record m
 
 ## Requirements {#requirements}
 
-You must fulfill these requirements before adding a TXT record.
+You must fulfill these requirements before configuring your DNS records.
 
 * You must identify your domain host or registrar if you do not know it already.
 * You must be able to edit the DNS records for your organization's domain, or contact the appropriate person who can.
@@ -50,3 +50,7 @@ Add the following `A` records to your domain's DNS settings by way of your domai
 * `A record for domain @ pointing to IP 151.101.131.10`
 
 * `A record for domain @ pointing to IP 151.101.195.10`
+
+## Next Steps {#next-steps}
+
+Once you have configured your DNS records for your custom domain name, you will need to verify those settings in Cloud Manager. Proceed to the document [Checking DNS Record Status](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) to finalize your custom domain name.
