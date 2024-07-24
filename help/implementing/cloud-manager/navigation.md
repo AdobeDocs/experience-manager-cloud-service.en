@@ -29,9 +29,12 @@ When you log into Cloud Manager at at [my.cloudmanager.adobe.com](https://my.clo
 The My Programs console provides an overview of all programs to which you have access in the selected organization. It is made up of several parts.
 
 1. [Toolbars](#toolbars-my-programs-toolbars) for organization selection, alerts, and account settings
-1. [Tabs] that default on the home view with an overview of all programs and giving access to your [License Dashboard.](/help/implementing/cloud-manager/license-dashboard.md)
+1. Tabs that allow you to toggle the current view of your programs.
+   * **Home** view (default) that selects the **My Programs** view with an overview of all programs
+   * **License** that accesses the [License Dashboard.](/help/implementing/cloud-manager/license-dashboard.md)
    * Note that the tabs default to closed and can be revealed using the hamburger menu in the [Cloud Manager header.](#cloud-manager-header)
 1. [Statistics and call-to-action](#statistics) for an overview of your recent activity
+1. [**My Programs** section](#my-programs-section) with an overview of all your programs
 1. [Quick links](#quick-links-section) to easily access related resources
 
 >[!TIP]
