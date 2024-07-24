@@ -2,6 +2,7 @@
 title: Dynamic Media with OpenAPI capabilities
 description: Learn key concepts such as why use Dynamic Media with OpenAPI capabilities and how to enable it.
 role: User
+exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
 ---
 # Dynamic Media with OpenAPI capabilities {#new-dynaminc-media-apis-overview}
 
@@ -198,4 +199,3 @@ Once you submit the support ticket, Adobe enables Dynamic Media with OpenAPI cap
 </td>
 
 </table>
-
