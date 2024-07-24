@@ -855,7 +855,7 @@ user-guide-title: AEM as a Cloud Service
 + Edge Delivery Services {#edge-delivery}
   + [Edge Delivery Services Overview](/help/edge/overview.md)
   + [Using Edge Delivery Services with AEM](/help/edge/using.md)
-  + [Choosing and Authoring Method](/help/edge/authoring-methods.md)
+  + [Choosing an Authoring Method](/help/edge/authoring-methods.md)
   + WYSIWYG Authoring {#wysiwyg-authoring}
     + [WYSIWYG Content Authoring for Edge Delivery](/help/edge/wysiwyg-authoring/authoring.md)
     + [Publishing Content for Edge Delivery](/help/edge/wysiwyg-authoring/publishing.md)
