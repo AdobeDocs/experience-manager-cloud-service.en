@@ -66,7 +66,7 @@ Asset Selector now offers ability for content authors to upload final assets dir
 
 **Content credentials integration**
 
-Experience Manager Assets now preserves and displays content credentials for all supported image format types, which identifies the content created or modified using GenAI and the tools used.
+Experience Manager Assets now supports content credentials for supported image formats. This provides information on the lineage of the asset and how it was created, including if it was modified using GenAI.
 
 ![Content credentials](/help/assets/assets/content-credentials.png)
 
