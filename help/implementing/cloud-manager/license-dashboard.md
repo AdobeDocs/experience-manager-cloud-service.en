@@ -11,6 +11,10 @@ role: Admin, Architect, Developer
 
 Cloud Manager provides a dashboard for easy viewing of AEMaaCS product entitlements available to your organization or tenant.
 
+>[!IMPORTANT]
+>
+>If you have AMS programs in addition to AEM as a Cloud Service programs, the license dashboard only applies to the AEM as a Cloud Service programs.
+
 ## Overview {#overview}
 
 The Cloud Manager License Dashboard provides easy access to the following information:
@@ -57,7 +61,35 @@ The **View usage details** button gives access to the chosen solution's **Usage 
 
 ### Sites Usage Details {#sites-usage-details}
 
+The **Sites usage details** window, presents graphs giving an overview of the usage of your Sites licenses based on [content requests.](#what-is-a-content-request)
+
+![Sites usage details window](assets/site-usage-details.png)
+
+The left side of the window presents a pie chart showing the contract breakdown.
+
+The right side of the window presents an area chart showing the usage broken down by program over time. A hover reveals a popup with details per program for the selected point in time.
+
 ### Assets Usage Details {#assets-usage-details}
+
+The **Assets usage details** window, presents graphs giving an overview of the usage of your Assets licenses based on [storage](#storage) and [standard users.](#standard-users) Select the appropriate tab to toggle between the views.
+
+For both storage and standard users views, you can use the **Environment Type** dropdown to toggle the view between production, stage, and development environments.
+
+#### Storage {#storage}
+
+![Assets usage details window for storage](assets/site-usage-details.png)
+
+The left side of the window presents a pie chart showing the contract breakdown.
+
+The right side of the window presents an area chart showing the usage broken down by program over time. A hover reveals a popup with details per program for the selected point in time.
+
+#### Standard Users {#standard-users}
+
+![Assets usage details window for standard-users](assets/site-usage-details.png)
+
+The left side of the window presents a pie chart showing the contract breakdown.
+
+The right side of the window presents an area chart showing the usage broken down by program over time. A hover reveals a popup with details per program for the selected point in time.
 
 ## Frequently Asked Questions {#faq}
 
