@@ -9,9 +9,9 @@ role: Admin
 
 The Adobe-provided CDN has several features and services, some of which rely on credentials and authentication in order to ensure an appropriate level of enterprise security. By declaring rules in a configuration file deployed by using the [Cloud Manager Configuration Pipeline](/help/operations/configuration-pipeline.md), customers can configure, in a self-service way, the following:
 
-* [The X-AEM-Edge-Key HTTP header](#CDN-HTTP-value) value used by the Adobe CDN to validate requests coming from a Customer-managed CDN.
-* [The API token used to purge resources](#purge-API-token) in the CDN cache.
-* A list of username/password combinations that can access restricted content, by submitting a [Basic Authentication](#basic-auth) form. This feature is available to early adopters.
+* The X-AEM-Edge-Key HTTP header value used by the Adobe CDN to validate requests coming from a Customer-managed CDN.
+* The API token used to purge resources in the CDN cache.
+* A list of username/password combinations that can access restricted content, by submitting a Basic Authentication form. This feature is available to early adopters.
 
 Each of these, including the configuration syntax, is described in its own section below. 
 
@@ -33,7 +33,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  experimental_authentication:
+  authentication:
     authenticators:
       - name: edge-auth
         type: edge
@@ -52,8 +52,8 @@ See the [Configuration Pipeline article](/help/operations/configuration-pipeline
 
 Additional properties include:
 
-* Data node that contains a child `experimental_authentication` node (the experimental prefix will be removed when the feature is released).
-* Under `experimental_authentication`, one `authenticators` node and one `rules` node, both of which are arrays.
+* Data node that contains a child `authentication` node.
+* Under `authentication`, one `authenticators` node and one `rules` node, both of which are arrays.
 * Authenticators: Lets you declare a type of token or credential, which in this case is an edge key. It includes the following properties:
    * name - a descriptive string.
    * type - must be `edge`.
@@ -66,7 +66,7 @@ Additional properties include:
    * action - must specify "authenticate", with the intended authenticator referenced.
 
 >[!NOTE]
->The Edge Key must be configured as a [`secret` type Cloud Manager Environment Variable](/help/operations/configuration-pipeline.md#secret-env-vars), before the configuration referencing it is deployed.
+>The Edge Key must be configured as a [secret type Cloud Manager Environment Variable](/help/operations/configuration-pipeline.md#secret-env-vars), before the configuration referencing it is deployed.
 
 ## Purge API Token {#purge-API-token}
 
@@ -80,7 +80,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  experimental_authentication:
+  authentication:
     authenticators:
        - name: purge-auth
          type: purge
@@ -99,8 +99,8 @@ See the [Configuration Pipeline article](/help/operations/configuration-pipeline
 
 Additional properties include:
 
-* data node that contains a child `experimental_authentication` node (the experimental prefix will be removed when the feature is released).
-* Under `experimental_authentication`, one `authenticators` node and one `rules` node, both of which are arrays.
+* data node that contains a child `authentication` node.
+* Under `authentication`, one `authenticators` node and one `rules` node, both of which are arrays.
 * Authenticators: Lets you declare a type of token or credential, which in this case is an purge key. It includes the following properties:
   * name - a descriptive string.
   * type - must be purge.
@@ -112,7 +112,7 @@ Additional properties include:
   * action - must specify "authenticate", with the intended authenticator referenced.
 
 >[!NOTE]
->The Purge Key must be configured as a [`secret` type Cloud Manager Environment Variable](/help/operations/configuration-pipeline.md#secret-env-vars), before the configuration referencing it is deployed.
+>The Purge Key must be configured as a [secret type Cloud Manager Environment Variable](/help/operations/configuration-pipeline.md#secret-env-vars), before the configuration referencing it is deployed.
 
 ## Basic Authentication {#basic-auth}
 
@@ -171,7 +171,7 @@ In addition, the syntax includes:
   * action - must specify "authenticate", with the intended authenticator referenced, which is basic-auth for this scenario
 
 >[!NOTE]
->The passwords must be configured as [`secret` type Cloud Manager Environment Variables](/help/operations/configuration-pipeline.md#secret-env-vars), before the configuration referencing it is deployed.
+>The passwords must be configured as [`secret type Cloud Manager Environment Variables](/help/operations/configuration-pipeline.md#secret-env-vars), before the configuration referencing it is deployed.
 
 ## Rotating secrets {#rotating-secrets}
 
