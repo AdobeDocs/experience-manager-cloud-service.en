@@ -50,10 +50,8 @@ Adding a custom domain name requires interaction between the DNS service and Clo
 |1|Add SSL certificate to Cloud Manager|[Adding an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)|
 |2|Add custom domain to Cloud Manager|[Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)|
 |3|Add TXT record to verify domain|[Adding a TXT Record](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)|
-|3|Review domain verification status|Customer|[Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)|
-|3a|If domain verification fails with the status `Domain Verification Failure`|Customer|[Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)|
-|3b|If domain verification fails with the status `Verified, Deployment Failed`, contact Adobe|Adobe Customer Care|[Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)|
-|4|Configure DNS settings by adding DNS CNAME or APEX records that point to AEM as a Cloud Service|Customer|[Configuring DNS Settings](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)|
+|4|Review domain verification status|Customer|[Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)|
+|5|Configure DNS settings by adding DNS CNAME or APEX records that point to AEM as a Cloud Service|Customer|[Configuring DNS Settings](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)|
 |5|Check DNS record status|Customer|[Checking DNS Record Status](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)|
 |5a|If DNS record status fails with `DNS status not detected`|Customer|[Checking DNS Record Status](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)|
 |5b|If DNS record status fails with `DNS resolves incorrectly`|Customer|[Checking DNS Record Status](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)|
