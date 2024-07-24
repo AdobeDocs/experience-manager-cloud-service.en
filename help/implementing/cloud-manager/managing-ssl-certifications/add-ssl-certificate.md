@@ -149,3 +149,10 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 ### Certificate Validity Dates {#certificate-validity-dates}
 
 Cloud Manager expects the SSL certificate to be valid for at least 90 days from the current date. You should check the validity of the certificate chain.
+
+## Next Steps {#next-steps}
+
+Congratulations! You now have a working SSL certificate for your project. This is often a first step to setting up a custom domain name.
+
+* See the document [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) to continue setting up a custom domain name.
+* See the document [Managing SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md) to learn about updating and managing your SSL certificates in Cloud Manager.

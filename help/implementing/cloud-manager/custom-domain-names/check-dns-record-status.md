@@ -55,3 +55,7 @@ A custom domain can have one of the following statuses in Cloud Manager.
 * **DNS Resolves Correctly** - Your DNS settings are properly configured.
 
   * Your site is serving visitors.
+
+## Next Steps {#next-steps}
+
+Congratulations! You have successfully configured your custom domain for use with Cloud Manager. Please see the document [Managing Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) for details on how to manage your custom domain names using Cloud Manager.
