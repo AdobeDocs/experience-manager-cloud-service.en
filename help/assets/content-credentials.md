@@ -1,25 +1,26 @@
 ---
 title: Content Credentials integration
-description: Content Credentials, integrated into AEM Assets and featured within the AEM Assets View, prevent misinformation by maintaining content traceability throughout its lifecycle. This enhances content authenticity, reliability, and trust among users.
+description: Content Credentials, integrated into AEM Assets and featured within the Assets View, can offer context into the history of an asset, including how it was made and who was involved in creating it. Like a nutrition label for digital content, Content Credentials can help increase transparency and build trust with audiences.
 role: User
 ---
 
 # Content Credentials {#content-credentials}
 
-Brands are more concerned than ever about misinformation, maintaining content traceability, and preventing the tampering of assets. This highlights the need to understand the lineage of content and ensure the integrity of brand assets. The [Coalition for Content Provenance and Authenticity](https://c2pa.org/specifications/specifications/1.1/specs/C2PA_Specification.html#_trust_model) (C2PA) introduces the concept of Content Credentials to address these concerns. Content Credentials are detailed provenance data that provide a set of assertions about a digital asset.
+Brands are more concerned than ever about content transparency, AI disclosure, and preventing the tampering of assets. The Content Authenticity Initiative (CAI) at Adobe builds tools compliant with the [Coalition for Content Provenance and Authenticity](https://c2pa.org/specifications/specifications/1.1/specs/C2PA_Specification.html#_trust_model) (C2PA) technical standard. Content Credentials, which are a new kind of encrypted, tamper-evident metadata can help viewers understand the lineage of content and ensure the integrity of brand assets. They can include a wide range of provenance data that offer insight into the history of a digital asset.
 
-This information includes: 
+This information may include: 
 
-* **Asset Creation:** Details about when the asset was created. 
-* **Authorship:** Information about the creator or author of the asset. 
-* **En-route Edits:** Records of any edits or modifications made to the asset by various actors using different software along its lifecycle. 
-* **Device Details:** Information about the devices used to capture or create the asset (such as images and videos). 
-* **Issuer or Signer:** Information about the entity or company that certifies or signs the asset. 
-* **Other Pertinent Information:** Additional data that helps establish the authenticity and integrity of the asset. 
+* **Issuer or Signer:** Information about the entity or company that issued the digital signature to certify the certifies or signs the asset.
+* **Issue Date:** The date on which the Content Credential was applied to the asset. 
+* **Credit and Usage:**  Information about the producer of the asset, including name, social media handles, or other identity-related information. 
+* **Process:** Records of any edits or modifications made to the asset. 
+* **Device Details:** Information about the app or device used to create or edit the asset.
+* **AI Tool Used:** If generative AI was used to edit or create the asset, the name of the model used may be included. 
+* **Other Pertinent Information:** Additional data may also be included to help offer more context about the history of an asset. 
 
-These credentials verify the origin and edit history of the content, ensuring transparency and authenticity through proper attribution. This enhances trust among creators, editors, publishers, media platforms, and consumers by providing verifiable evidence of the asset's provenance. These assertions further support [Digital Rights Management](https://www.fortinet.com/resources/cyberglossary/digital-rights-management-drm) (DRM) by enabling users to understand the provenance of an asset. Adoption of these standards are being driven by the [Content Authenticity Initiative](https://opensource.contentauthenticity.org/docs/getting-started/) (CAI) and Project Origin Alliance to protect copyright and foster trust through transparency.
+For a complete view, [Verify](https://contentcredentials.org/verify) can offer a more comprehensive insight into asset history.
  
-Adobe Experience Manager Assets now supports Content Credentials, enabling users to see Content Credentials directly within the Assets view of AEM. When looking at the asset details, any image with Content Credentials (such as those created with GenAI services) shows the manifest details in a dedicated panel. If the asset is downloaded, published, or shared, the credentials remain intact with the asset.
+Adobe Experience Manager Assets now supports Content Credentials, enabling users to see Content Credentials directly within the Assets view of AEM. When looking at the asset details, any image with Content Credentials (such as those created with GenAI services) shows the manifest details in a dedicated panel. If the asset is downloaded, published, or shared, the Content Credentials remain intact with the asset.
 
 ![assets](/help/assets/assets/content-credentials.png)
 
@@ -28,10 +29,10 @@ Adobe Experience Manager Assets now supports Content Credentials, enabling users
 1. Land on Assets View, using the link - [Assets View](https://experience.adobe.com/#/assets) and selecting the right repository. 
 1. Click **Assets**, enter a folder, and select the desired asset. 
 1. Click **Details** and select `Cr pin` from the rightmost pane. The Content Credentials tab displays the following information about the asset.  
-    1. **Generated Image:** Date and time of asset creation. 
-    1. **Content Summary:** Indicates whether the asset is partially or completely generated by AI.
+    1. **Generated Image:** Date and time in which Content Credentials was applied. 
+    1. **Content Summary:** Indicates whether the asset is partially or completely generated by AI, or how it was edited.
     ![content credentials](/help/assets/assets/content-credentials1.png)
-    1. **Process:** Details the application, device, and AI tool (such as Adobe Firefly) used to generate the asset, as well as any changes made postgeneration.
+    1. **Process:** Details the application, device, and AI tool (such as Adobe Firefly) used to generate the asset, as well as changes made subsequently.
     ![process](/help/assets/assets/CR-Process.png)
     1. **About this Content Credentials:** Name of the issuer along with the date and time of issuance. 
     ![issuer](/help/assets/assets/CR-issuer.png)
