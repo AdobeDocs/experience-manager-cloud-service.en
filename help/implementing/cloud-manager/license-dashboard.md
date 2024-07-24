@@ -6,6 +6,7 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 ---
+
 # License Dashboard {#license-dashboard}
 
 Cloud Manager provides a dashboard for easy viewing of AEMaaCS product entitlements available to your organization or tenant.
@@ -26,8 +27,8 @@ To access your license dashboard, follow these steps.
 >A user in the **Business Owner** role must be logged in to view the License Dashboard.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
-
-1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, switch to the **License** tab.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, tap or click the hamburger menu button on the [Cloud Manager Header.](/help/implementing/cloud-manager/navigation.md#cloud-manager-header) This reveals the tabs.
+1. Tap or click the **License** option in the tab.
 
 ![License Dashboard](assets/license-dashboard.png)
 
@@ -35,18 +36,28 @@ The dashboard is divided into three sections showing you:
 
 * **Solutions** - This section summarizes which solutions that you have licensed such as Sites or Assets.
 * **Add-ons** - This section summarizes which add-ons to your licensed solutions that you have available.
-* **Sandbox &amp; Development Environments** - This section summarizes what environments that you have available.
+* **Other Entitlements** - This section summarizes what sandbox and dev environment as well as other entitlements that can be consumed within your tenant.
 
-Each section summarizes what is available and how it is used, if at all. Currently only Sites solutions are displayed even if other solutions exist in the tenant.
+Each section summarizes what is available and how it is used, if at all. Currently only Sites and Assets solutions are displayed even if other solutions exist in the tenant.
 
 * The **Status** column displays the number of entitlements unused versus the total available for the tenant.
 * The **Configured on** column indicates the programs on which the solution entitlement has been applied.
-  * An entitlement is considered as used only when a production environment has been created or if one exists, if an update pipeline has been run on it. 
-* The **Usage** column displays the content requests consumed in the past 12 months as a graph when clicked.
+  * An entitlement is considered as used only when a production environment has been created or if one exists, if an update pipeline has been run on it.
+  * Only a limited number of programs are listed individually in the column with the remainder represented by a `+x` entry.
+  * Hover over the `+x` entry for a pop-up with the details of all programs.
+* The **Usage** column displays a **[View usage details](#view-usage-details)** button to show usage statistics for the solution.
 
 >[!TIP]
 >
 >To learn how to manage your Adobe entitlements across your entire organization from Admin Console, see the [Admin Console overview](https://helpx.adobe.com/enterprise/using/admin-console.html).
+
+## View Usage Details {#view-usage-details}
+
+The **View usage details** button gives access to the chosen solution's **Usage Details** window. This window gives a detailed breakdown including charts to show your solution's usage.
+
+### Sites Usage Details {#sites-usage-details}
+
+### Assets Usage Details {#assets-usage-details}
 
 ## Frequently Asked Questions {#faq}
 
