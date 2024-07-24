@@ -13,7 +13,7 @@ Cloud Manager provides a dashboard for easy viewing of AEMaaCS product entitleme
 
 >[!IMPORTANT]
 >
->If you have AMS programs in addition to AEM as a Cloud Service programs, the license dashboard only applies to the AEM as a Cloud Service programs.
+>The license dashboard only applies to the AEM as a Cloud Service programs. [AMS programs](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) are not included in the license dashboard.
 
 ## Overview {#overview}
 

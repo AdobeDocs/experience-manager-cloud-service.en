@@ -105,8 +105,12 @@ Every program is represented by a card (or row in a table), providing an overvie
 
 * Program image (if configured)
 * Program name
-* Service type: **Experience Manager Cloud** for AEM as a * Cloud Service programs or [**Experience Manager** for AMS programs](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
-* [Program type](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md): Sandbox or production
+* Service type:
+  * **Experience Manager Cloud** for AEM as a Cloud Service programs 
+  * **Experience Manager** for [AMS programs](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
+* [Program type](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md):
+  * Sandbox
+  * Production
 * Status
 * Configured solutions
 * Creation date
