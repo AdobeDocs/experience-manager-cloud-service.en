@@ -1,6 +1,6 @@
 ---
 title: Configuring Traffic at the CDN
-description: Learn how to configure CDN traffic by declaring rules and filters in a configuration file and deploying them to the CDN by using the Cloud Manager Configuration Pipeline.
+description: Learn how to configure CDN traffic by declaring rules and filters in a configuration file and deploying them to the CDN by using the Cloud Manager Config Pipeline.
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
@@ -18,7 +18,7 @@ Also configurable at the CDN are Traffic Filter Rules (including WAF), which con
 
 Additionally, if the CDN cannot contact its origin, you can write a rule that references a self-hosted custom error page (which is then rendered). Learn more about this by reading the [Configuring CDN error pages](/help/implementing/dispatcher/cdn-error-pages.md) article.
 
-All these rules, declared in a configuration file in source control, are deployed by using [Cloud Manager's Config Pipeline](/help/operations/config-pipeline.md). Be aware that the cumulative size of the configuration file, including traffic filter rules, cannot exceed 100KB.
+All these rules, declared in a configuration file in source control, are deployed by using the Cloud Manager [Config Pipeline](/help/operations/config-pipeline.md). Be aware that the cumulative size of the configuration file, including traffic filter rules, cannot exceed 100KB.
 
 ## Order of Evaluation {#order-of-evaluation}
 
@@ -32,7 +32,7 @@ Before you can configure traffic at the CDN you need to do the following:
 
 1. Create a file named `cdn.yaml` or similar, referencing the various configuration snippets in the sections below. 
 
-    All snippets have these common properties, which are described in  the [Config Pipeline article](/help/operations/config-pipeline.md#common-syntax). The `kind` property value should be *CDN* and the version should be set to `1`.
+    All snippets have these common properties, which are described in  the [Config Pipeline article](/help/operations/config-pipeline.md#common-syntax). The `kind` property value should be *CDN* and the `version` property should be set to *1*.
     ```
     kind: "CDN"
     version: "1"
@@ -40,7 +40,7 @@ Before you can configure traffic at the CDN you need to do the following:
       envTypes: ["dev"]
     ```
 
-1. Place the file somewhere under a top level `config` folder, as described in [Config Pipeline article](/help/operations/config-pipeline.md#folder-structure).
+1. Place the file somewhere under a top level folder named *config* or similar, as described in [Config Pipeline article](/help/operations/config-pipeline.md#folder-structure).
 
 1. Create a Config Pipeline in Cloud Manager, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#managing-in-cloud-manager). 
 

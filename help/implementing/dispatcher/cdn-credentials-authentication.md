@@ -1,13 +1,13 @@
 ---
 title: Configuring CDN Credentials and Authentication
-description: Learn how to configure CDN credentials and authentication by declaring rules in a configuration file that is then deployed by using the Cloud Manager Configuration Pipeline.
+description: Learn how to configure CDN credentials and authentication by declaring rules in a configuration file that is then deployed by using the Cloud Manager Config Pipeline.
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
 ---
 # Configuring CDN Credentials and Authentication {#cdn-credentials-authentication}
 
-The Adobe-provided CDN has several features and services, some of which rely on credentials and authentication in order to ensure an appropriate level of enterprise security. By declaring rules in a configuration file deployed by using the [Cloud Manager Configuration Pipeline](/help/operations/config-pipeline.md), customers can configure, in a self-service way, the following:
+The Adobe-provided CDN has several features and services, some of which rely on credentials and authentication in order to ensure an appropriate level of enterprise security. By declaring rules in a configuration file deployed by using the Cloud Manager [Config Pipeline](/help/operations/config-pipeline.md), customers can configure, in a self-service way, the following:
 
 * The X-AEM-Edge-Key HTTP header value used by the Adobe CDN to validate requests coming from a Customer-managed CDN.
 * The API token used to purge resources in the CDN cache.
@@ -23,7 +23,7 @@ As described in the [CDN in AEM as a Cloud Service](/help/implementing/dispatche
 
 As part of the setup, the Adobe CDN and the Customer CDN must agree on a value of the `X-AEM-Edge-Key` HTTP Header. This value is set on each request, at the Customer CDN, before it is routed to the Adobe CDN, which then validates that the value is as expected, so it can trust other HTTP headers, including those that help route the request to the appropriate AEM origin.  
 
-The `X-AEM-Edge-Key` value is referenced by the edgeKey1 and edgeKey2 properties in a file named `cdn.yaml` or similar, somewhere under a top-level `config` folder. Read the [Configuration Pipeline article](/help/operations/config-pipeline.md#folder-structure) for details about the folder structure and how to deploy the configuration. 
+The *X-AEM-Edge-Key* value is referenced by the `edgeKey1` and `edgeKey2` properties in a file named `cdn.yaml` or similar, somewhere under a top-level `config` folder. Read the [Config Pipeline article](/help/operations/config-pipeline.md#folder-structure) for details about the folder structure and how to deploy the configuration. 
 
 The syntax is described below:
 
@@ -48,11 +48,11 @@ data:
 
 ```
 
-See the [Configuration Pipeline article](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the data node. The `kind` property value should be *CDN* and the version should be set to `1`.
+See the [Config Pipeline article](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the `data` node. The `kind` property value should be *CDN* and the `version` property should be set to `1`.
 
 Additional properties include:
 
-* Data node that contains a child `authentication` node.
+* `Data` node that contains a child `authentication` node.
 * Under `authentication`, one `authenticators` node and one `rules` node, both of which are arrays.
 * Authenticators: Lets you declare a type of token or credential, which in this case is an edge key. It includes the following properties:
    * name - a descriptive string.
@@ -95,11 +95,11 @@ data:
 
 ```
 
-See the [Configuration Pipeline article](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the data node. The kind property value should be *CDN* and the version should be set to `1`.
+See the [Config Pipeline article](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the `data` node. The `kind` property value should be *CDN* and the `version` property should be set to `1`.
 
 Additional properties include:
 
-* data node that contains a child `authentication` node.
+* `data` node that contains a child `authentication` node.
 * Under `authentication`, one `authenticators` node and one `rules` node, both of which are arrays.
 * Authenticators: Lets you declare a type of token or credential, which in this case is an purge key. It includes the following properties:
   * name - a descriptive string.
@@ -153,11 +153,11 @@ data:
 
 ```
 
-See the [Configuration Pipeline article](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the data node. The kind property value should be *CDN* and the version should be set to `1`.
+See the [Config Pipeline article](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the `data` node. The `kind` property value should be *CDN* and the `version` property should be set to `1`.
 
 In addition, the syntax includes:
 
-* a data node that contains an `experimental_authentication` node (the experimental prefix will be removed when the feature is released).
+* a `data` node that contains an `experimental_authentication` node (the experimental prefix will be removed when the feature is released).
 * Under `experimental_authentication`, one `authenticators` node and one `rules` node, both of which are arrays.
 * Authenticators: in this scenario declare a basic authenticator, which has the following structure:
   * name - a descriptive string
@@ -171,7 +171,7 @@ In addition, the syntax includes:
   * action - must specify "authenticate", with the intended authenticator referenced, which is basic-auth for this scenario
 
 >[!NOTE]
->The passwords must be configured as [`secret type Cloud Manager Environment Variables](/help/operations/config-pipeline.md#secret-env-vars), before the configuration referencing it is deployed.
+>The passwords must be configured as [secret type Cloud Manager Environment Variables](/help/operations/config-pipeline.md#secret-env-vars), before the configuration referencing it is deployed.
 
 ## Rotating secrets {#rotating-secrets}
 

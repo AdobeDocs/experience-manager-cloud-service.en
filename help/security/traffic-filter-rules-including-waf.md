@@ -58,7 +58,7 @@ Customers may take proactive measures to mitigate application layer attacks (lay
 
 For example, at the Apache layer, customers may configure either the [Dispatcher module](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) or [ModSecurity](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) to limit access to certain content.
 
-As this article describes, traffic filter rules may be deployed to the Adobe Managed CDN, using Cloud Manager's Config Pipeline. In addition to traffic filter rules based on properties like IP address, path, and headers, or rules based on setting rate limits, customers may also license a powerful subcategory of traffic filter rules called WAF rules.
+As this article describes, traffic filter rules may be deployed to the Adobe Managed CDN, using Cloud Manager's [Config Pipeline](/help/operations/config-pipeline.md). In addition to traffic filter rules based on properties like IP address, path, and headers, or rules based on setting rate limits, customers may also license a powerful subcategory of traffic filter rules called WAF rules.
 
 ## Suggested Process {#suggested-process}
 
@@ -74,7 +74,7 @@ The following is a high-level recommended end-to-end process for coming up with 
 
 ## Setup {#setup}
 
-1. Create a file `cdn.yaml` with metadata and a list of traffic filters rules and WAF rules.
+1. Create a file `cdn.yaml` with a set of traffic filter rules, including WAF rules.
 
    ```
    kind: "CDN"
@@ -95,22 +95,22 @@ The following is a high-level recommended end-to-end process for coming up with 
          action: block
    ```
 
-    See the [Config Pipeline article](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the data node. The kind property value should be *CDN* and the version should be set to `1`.
+    See the [Config Pipeline article](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the `data` node. The `kind` property value should be set to *CDN* and the version should be set to `1`.
 
 
 1. If WAF rules are licensed, you should enable the feature in Cloud Manager, as described below for both the new and existing program scenarios.
 
    1. To configure WAF on a new program, check the **WAF-DDOS Protection** check-box on the **Security** tab when you [add a production program.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
 
-   1. To configure WAF on an existing program, [editing your program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) and on the **Security** tab uncheck or check the **WAF-DDOS** option at any time.
+   1. To configure WAF on an existing program, [edit your program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) and on the **Security** tab uncheck or check the **WAF-DDOS** option at any time.
 
-1. Declare a Config Pipeline in Cloud Manager, as described in [Config Pipeline article](/help/operations/config-pipeline.md#managing-in-cloud-manager). The pipeline will reference a top level `config` folder with the cdn.yaml file placed somewhere below, as [described here](/help/operations/config-pipeline.md#folder-structure).
+1. Declare a Config Pipeline in Cloud Manager, as described in [Config Pipeline article](/help/operations/config-pipeline.md#managing-in-cloud-manager). The pipeline will reference a top level `config` folder with the `cdn.yaml` file placed somewhere below, as [described here](/help/operations/config-pipeline.md#folder-structure).
 
 ## Traffic Filter Rules Syntax {#rules-syntax}
 
-You can configure `traffic filter rules` to match on patterns such as IPs, user agent, request headers, hostname, geo, and url.
+You can configure *traffic filter rules* to match on patterns such as IPs, user agent, request headers, hostname, geo, and url.
 
-Customers who license the Enhanced Security or WAF-DDoS Protection Security offering can also configure a special category of traffic filter rules called `WAF traffic filter rules` (or WAF rules for short) that reference one or more [WAF flags](#waf-flags-list).
+Customers who license the Enhanced Security or WAF-DDoS Protection Security offering can also configure a special category of traffic filter rules called *WAF traffic filter rules* (or WAF rules for short) that reference one or more [WAF flags](#waf-flags-list).
 
 Here's an example of a set of traffic filter rules, which also includes a WAF rule.
 
@@ -256,6 +256,8 @@ The `wafFlags` property, which can be used in the licensable WAF traffic filter 
 | SCANNER  |  Scanner | Identifies popular scanning services and tools  |
 | RESPONSESPLIT  | HTTP Response Splitting  | Identifies when CRLF characters are submitted as input to the application to inject headers into the HTTP response  |
 | XML-ERROR  | XML Encoding Error  | A POST, PUT, or PATCH request body that is specified as containing XML within the "Content-Type" request header but contains XML parsing errors. This is often related to a programming error or an automated or malicious request.  |
+| DATACENTER  | Datacenter | Identifies the request as coming from a known hosting provider. This type of traffic is not commonly associated with a real end user. |
+
 
 ## Considerations {#considerations}
 
