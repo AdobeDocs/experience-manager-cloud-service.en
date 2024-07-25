@@ -584,6 +584,7 @@ user-guide-title: AEM as a Cloud Service
     + [Manage reports](/help/assets/manage-reports-assets-view.md)
     + [Manage tags](/help/assets/tagging-management-assets-view.md)
     + [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+    + [Content Credentials](/help/assets/content-credentials.md)
 
   + Manage Content Hub {#content-hub}
     + [Overview](/help/assets/product-overview.md)
