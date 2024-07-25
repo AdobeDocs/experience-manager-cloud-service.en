@@ -897,7 +897,7 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 
 ### Streamline complex calculations in repeatable panels with built-in functions
 
-The rule editor allows you to use out-of-the-box functions like Sum, Min, Max, and Join directly on fields within repeatable panels. This unlocks powerful automation, allowing you to implement complex business logic without custom code.
+The rule editor allows you to use out-of-the-box functions like Sum, Min, Max, and Join directly on fields within repeatable panels. You can also pass a repeatable panel object to the function that accepts arrays, lists, or numbers as input. This unlocks powerful automation, allowing you to implement complex business logic without custom code.
 Imagine a form with a repeatable panel, where each panel instance collects information about the declared value of assets. 
 
 ![Repeatable form](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
