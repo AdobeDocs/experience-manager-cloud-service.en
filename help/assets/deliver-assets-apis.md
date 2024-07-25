@@ -2,6 +2,7 @@
 title: Delivery APIs
 description: Learn how to use the Delivery APIs.
 role: User
+exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
 ---
 # Delivery  APIs {#delivery-apis}
 
@@ -17,7 +18,7 @@ The following table illustrates the usage of the various available Delivery APIs
 
 |Delivery API | Description |
 |---|---|
-| [Web-optimized binary representation of the asset in requested output format](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) |Returns the web-optimized binary representation of the asset in requested output format based on the asset ID sent in the request. In addition, you can define various image modifiers such as, width, height, rotate, flip, quality, crop, format, and [smart crop](/help/assets/dynamic-media/image-profiles.md). See the [API details](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/getAssetSeoFormat) for supported formats and image modifiers.<br>Adobe recommends using this API for all image format types.|
+| [Web-optimized binary representation of the asset in requested output format](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) |Returns the web-optimized binary representation of the asset in requested output format based on the asset ID sent in the request. In addition, you can define various image modifiers such as, width, height, rotate, flip, quality, crop, format, and [smart crop](/help/assets/dynamic-media/image-profiles.md). See the [API details](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) for supported formats and image modifiers.<br>Adobe recommends using this API for all image format types.|
 | [Web-optimized binary representation of the asset](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAsset) |Convenience API that applies defaults to web-optimized binary representation of the asset returned in the response. The defaults include a standard JPEG/WEBP format, quality => 65, and width => 1024. |
 |[Original uploaded binary of the asset](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetOriginal) |Returns the originally uploaded binaries for the asset. Adobe recommends using this API for document format types and SVG images. |
 |[Pre-generated rendition of the asset available on AEM Assets authoring environment](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetRendition) |Returns the asset rendition's bitstream available on AEM Assets authoring environment based on asset ID and rendition name sent in the request. |

@@ -2,6 +2,7 @@
 title: Search Assets API
 description: Learn how to use the Search Assets API.
 role: User
+exl-id: 0c52e793-4c33-4230-b4f2-27296dd9e4b3
 ---
 # Search Assets API {#search-assets-api}
 
