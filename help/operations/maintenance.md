@@ -218,7 +218,7 @@ Declare a configuration file and deploy it as described in the following steps.
 
 **1** Create a file named `mt.yaml` or similar.
   
-**2** Place the file somewhere under a top level `config` folder, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#folder-structure).
+**2** Place the file somewhere under a top level folder named `config` or similar, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#folder-structure).
 
 **3** - Declare properties in the configuration file, which include:
 
