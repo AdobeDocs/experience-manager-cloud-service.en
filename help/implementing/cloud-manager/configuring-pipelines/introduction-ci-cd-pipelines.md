@@ -109,7 +109,7 @@ To learn how to configure full-stack pipelines, see the following documents:
 
 ## Config Pipelines {#config-deployment-pipeline}
 
-With a config pipeline you can quickly deploy configurations for log forwarding, purge-related maintenance tasks, and various CDN configurations such as traffic filter rules (including WAF rules), request and response transformations, origin selectors, client-side redirects, error pages, customer-managed CDN keys, purge API keys, and basic auth)
+With a config pipeline you can quickly deploy configurations for log forwarding, purge-related maintenance tasks, and various CDN configurations such as traffic filter rules (including WAF rules), request and response transformations, origin selectors, client-side redirects, error pages, customer-managed CDN keys, purge API keys, and basic auth).
 
 See the [Config Pipeline article](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) for a comprehensive list of supported features and to  learn how to manage the configurations in your repository so they are deployed properly.
 
