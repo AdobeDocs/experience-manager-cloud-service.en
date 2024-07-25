@@ -2,12 +2,17 @@
 title: View assets insights in Content Hub
 description: Learn how to view assets insights in [!DNL Content Hub]
 role: User
+exl-id: 29cbe017-856d-486b-acf3-aa47dbd90f3f
 ---
 # Assets Insights in [!DNL Content Hub] {#assets-insights}
 
  ![Assets insights](assets/asset-insights-banner.jpg)
 
 [!DNL Content Hub] provides valuable insights into assets, addressing a common challenge that marketing stakeholders often encounter - asset usage statistics used in marketing campaigns, channels, and different regions. By gaining a clear understanding of the performance and popularity of the assets, it delivers actionable insights essential for enhancing user experience.
+
+## Prerequisites {#prerequisites}
+
+[Content Hub users](deploy-content-hub.md#onboard-content-hub-users) can perform actions mentioned in this article.
 
 ## View statistics for uploaded assets{#view-statistics-for-uploaded-assets}
 
@@ -39,4 +44,3 @@ You can also view:
 * **[!UICONTROL Assets by Campaigns]**: Asset count and respective percentage based on campaigns.
 * **[!UICONTROL Assets by Channels]**: Asset count and respective percentage based on channels used.
 * **[!UICONTROL Assets by Regions]**: Asset count and respective percentage based on regions of asset usage.
-

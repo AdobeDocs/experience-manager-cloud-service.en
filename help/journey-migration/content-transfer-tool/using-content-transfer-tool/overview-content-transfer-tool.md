@@ -43,7 +43,7 @@ There are two phases associated with content transfer:
  
 A migration set has the following attributes:
 
-* With the new version, you can create a maximum of twenty migration sets within a project created in Cloud Acceleration Manager.
+* With the new version, you can create a maximum of ten migration sets within a project created in Cloud Acceleration Manager.
 * Each migration set should have a unique name. 
 
 The Content Transfer Tool has a feature that supports differential content top-up where it is possible to transfer only changes made since the previous content transfer activity. 
@@ -62,7 +62,7 @@ In the ingestion phase, to apply the delta content on top of the current content
 >title="Expiration of a Migration Set"
 >abstract="Learn about the expiry of a migration set."
 
-All migration sets will eventually expire after a prolonged period of inactivity of approximately 90 days. After indicators are displayed on the project card and the migration job table rows for a period of time, the migration set will expire and its data will no longer be available. The expiry time can easily be extended by acting upon the migration set by:
+All migration sets will eventually expire after a prolonged period of inactivity of approximately 45 days. After indicators are displayed on the project card and the migration job table rows for a period of time, the migration set will expire and its data will no longer be available. The expiry time can easily be extended by acting upon the migration set by:
 
 * editing its description
 * getting its extraction key
