@@ -102,6 +102,8 @@ Use the sorting options to better find the program you need.
 * Grid View (default)
 * List View
 
+#### Program Cards {#program-cards}
+
 Every program is represented by a card (or row in a table), providing an overview of the program and quick links to take action.
 
 ![Program card](assets/program-card.png)
