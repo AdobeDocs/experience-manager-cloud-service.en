@@ -1,17 +1,18 @@
 ---
 title: Configuring CDN Credentials and Authentication
-description: Learn how to configure CDN credentials and authentication by declaring rules in a configuration file that is then deployed by using the Cloud Manager Config Pipeline.
+description: Learn how to configure CDN credentials and authentication by declaring rules in a configuration file that is then deployed by using the Cloud Manager config pipeline.
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
 ---
+
 # Configuring CDN Credentials and Authentication {#cdn-credentials-authentication}
 
-The Adobe-provided CDN has several features and services, some of which rely on credentials and authentication in order to ensure an appropriate level of enterprise security. By declaring rules in a configuration file deployed by using the Cloud Manager [Config Pipeline](/help/operations/config-pipeline.md), customers can configure, in a self-service way, the following:
+The Adobe-provided CDN has several features and services, some of which rely on credentials and authentication in order to ensure an appropriate level of enterprise security. By declaring rules in a configuration file deployed by using the Cloud Manager [config pipeline,](/help/operations/config-pipeline.md) customers can configure, in a self-service way, the following:
 
 * The X-AEM-Edge-Key HTTP header value used by the Adobe CDN to validate requests coming from a Customer-managed CDN.
 * The API token used to purge resources in the CDN cache.
-* A list of username/password combinations that can access restricted content, by submitting a Basic Authentication form. This feature is available to early adopters.
+* A list of username/password combinations that can access restricted content, by submitting a Basic Authentication form. [This feature is available to early adopters.](/help/release-notes/release-notes-cloud/release-notes-current.md#foundation-early-adopter)
 
 Each of these, including the configuration syntax, is described in its own section below. 
 
@@ -57,7 +58,7 @@ Additional properties include:
 * Authenticators: Lets you declare a type of token or credential, which in this case is an edge key. It includes the following properties:
    * name - a descriptive string.
    * type - must be `edge`.
-   * edgeKey1 - the value of the *X-AEM-Edge-Key*, which must reference a [Cloud Manager secret-type Environment Variable](/help/operations/config-pipeline.md#secret-env-vars). For the Service Applied field, select All. It is recommended that the value (for example,`${{CDN_EDGEKEY_052824}}`) reflects the day it was added.
+   * edgeKey1 - the value of the *X-AEM-Edge-Key*, which must reference a [Cloud Manager secret-type environment variable](/help/operations/config-pipeline.md#secret-env-vars). For the Service Applied field, select All. It is recommended that the value (for example,`${{CDN_EDGEKEY_052824}}`) reflects the day it was added.
    * edgeKey2 - used for the rotation of secrets, which is described in the [rotating secrets section](#rotating-secrets) below. Define it similarly to edgeKey1. At least one of `edgeKey1` and `edgeKey2` must be declared.
 <!--   * OnFailure - defines the action, either `log` or `block`, when a request doesn't match either `edgeKey1` or `edgeKey2`. For `log`, request processing will continue, while `block` will serve a 403 error. The `log` value is useful when testing a new token on a live site since you can first confirm that the CDN is correctly accepting the new token before changing to `block` mode; it also reduces the chance of lost connectivity between the customer CDN and the Adobe CDN, as a result of an incorrect configuration. -->
 * Rules: Lets you declare which of the authenticators should be used, and whether it's for the publish and/or preview tier.  It includes:
@@ -66,11 +67,11 @@ Additional properties include:
    * action - must specify "authenticate", with the intended authenticator referenced.
 
 >[!NOTE]
->The Edge Key must be configured as a [secret type Cloud Manager Environment Variable](/help/operations/config-pipeline.md#secret-env-vars), before the configuration referencing it is deployed.
+>The Edge Key must be configured as a [secret type Cloud Manager environment variable](/help/operations/config-pipeline.md#secret-env-vars), before the configuration referencing it is deployed.
 
 ## Purge API Token {#purge-API-token}
 
-Customers can [purge the CDN cache](/help/implementing/dispatcher/cdn-cache-purge.md) by using a declared Purge API token. The token is declared in a file named `cdn.yaml` or similar, somewhere under a top-level `config` folder. Read the [Config Pipeline article](/help/operations/config-pipeline.md#folder-structure) for details about the folder structure and how to deploy the configuration. 
+Customers can [purge the CDN cache](/help/implementing/dispatcher/cdn-cache-purge.md) by using a declared Purge API token. The token is declared in a file named `cdn.yaml` or similar, somewhere under a top-level `config` folder. Read the [config pipeline article](/help/operations/config-pipeline.md#folder-structure) for details about the folder structure and how to deploy the configuration. 
 
 The syntax is described below:
 
@@ -95,7 +96,7 @@ data:
 
 ```
 
-See the [Config Pipeline article](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the `data` node. The `kind` property value should be *CDN* and the `version` property should be set to `1`.
+See the [config pipeline article](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the `data` node. The `kind` property value should be *CDN* and the `version` property should be set to `1`.
 
 Additional properties include:
 
@@ -153,7 +154,7 @@ data:
 
 ```
 
-See the [Config Pipeline article](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the `data` node. The `kind` property value should be *CDN* and the `version` property should be set to `1`.
+See the [config pipeline article](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the `data` node. The `kind` property value should be *CDN* and the `version` property should be set to `1`.
 
 In addition, the syntax includes:
 
@@ -164,14 +165,14 @@ In addition, the syntax includes:
   * type - must be `basic`
   * an array of credentials, each of which includes the following name/value pairs, which end-users can enter in the basic auth dialog:
     * user - the name of user
-    * password - its value must reference a [Cloud Manager secret-type Environment Variable](/help/operations/config-pipeline.md#secret-env-vars), with **All** selected as the service field.
+    * password - its value must reference a [Cloud Manager secret-type environment variable](/help/operations/config-pipeline.md#secret-env-vars), with **All** selected as the service field.
 * Rules: Lets you declare which of the authenticators should be used, and which resources should be protected. Each rule includes:
   * name - a descriptive string
   * when - a condition that determines when the rule should be evaluated, according to the syntax in the [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md) article. Typically, it will include a comparison of the publish tier or specific paths. 
   * action - must specify "authenticate", with the intended authenticator referenced, which is basic-auth for this scenario
 
 >[!NOTE]
->The passwords must be configured as [secret type Cloud Manager Environment Variables](/help/operations/config-pipeline.md#secret-env-vars), before the configuration referencing it is deployed.
+>The passwords must be configured as [secret type Cloud Manager environment variables](/help/operations/config-pipeline.md#secret-env-vars), before the configuration referencing it is deployed.
 
 ## Rotating secrets {#rotating-secrets}
 
