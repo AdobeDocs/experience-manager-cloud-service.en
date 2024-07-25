@@ -51,7 +51,7 @@ In addition to production and non-production, pipelines can be differentiated by
 
 * **[Full Stack Pipelines](#full-stack-pipeline)** - Simultaneously deploy back-end and front-end code builds containing one or more AEM server applications along with HTTPD/Dispatcher configurations
 * **[Config Pipelines](#config-deployment-pipeline)** - Quickly deploy configurations for features such as log forwarding, purge-related maintenance tasks, and various CDN configurations such as traffic filter rules (including WAF rules), request and response transformations, origin selectors, client-side redirects, error pages, customer-managed CDN keys, purge API keys, and basic auth.
-  * Please see the document [Using Config Pipelines](help/operations/config-pipeline.md) for details.
+  * Please see the document [Using Config Pipelines](/help/operations/config-pipeline.md) for details.
 * **[Front-End Pipelines](#front-end)** - Deploy front-end code builds containing one or more client-side UI applications 
 * **[Web Tier Config Pipelines](#web-tier-config-pipelines)** - Deploys HTTPD/Dispatcher configurations
 
