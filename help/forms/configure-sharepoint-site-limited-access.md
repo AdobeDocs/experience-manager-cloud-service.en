@@ -30,9 +30,8 @@ Advantages to provide limited access to SharePoint Site:
 
 Follow the steps below to configure SharePoint Sites with limited access using authorization scopes:
 
-1. Create an application with the `Sites.Selected` permission scope in Azure portal
-1. Set the authorization scope at AEM instance
-
+1. [Create an application with the `Sites.Selected` permission scope in Azure portal](#create-an-application-with-the-limited-permission-in-the-azure-portal)
+1. [Set the authorization scope at AEM instance](#set-the-authorization-scope-at-aem-instance)
 
 ### Create an application with the limited permission in the Azure portal
 
@@ -70,7 +69,7 @@ To provide limited access to a Microsoft SharePoint Site, it is essential to set
 
 1. Add the `offline_access Sites.Selected` in the `Authorization Scope` field. When you add the `offline_access Sites.Selected` scope in the `Authorization Scope` textbox field, the `SharePoint Site ID` textbox becomes visible on the screen. 
 
-1. Specify the SharePoint Site ID. To learn how to retrieve the SharePoint Site ID, refer to [Extra Bytes](#extra-bytes) section.
+1. Specify the SharePoint Site ID. To learn how to retrieve the SharePoint Site ID, refer to the [Extra Bytes](#extra-bytes) section.
 
 1. Click **[!UICONTROL Check Site Connection]**. On a successful connection, the `Connection Successful` message appears. 
 
