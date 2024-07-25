@@ -38,10 +38,6 @@ Have a look at the July 2024 Release Overview video for a summary of the feature
 
 ### New feature in Experience Manager Sites {#new-feature-sites}
 
-**Real Use Monitoring (RUM) Data Service** {#real-use-monitoring}
-
-The [Real Use Monitoring (RUM) Data Service](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) is now generally available, enabling client-side data collection for AEM as a Cloud Service. This service provides a more accurate reflection of user interactions, ensuring a reliable measure of website engagement. It offers customers advanced insights into their page traffic and performance, presenting a valuable opportunity to understand and enhance page performance.
-
 ### Early Adopter Program {#sites-early-adopter}
 
 **Generate Variations**
@@ -109,7 +105,6 @@ Leverage the Adobe Experience Manager [Universal Editor](https://experienceleagu
 >
 > If you are interested in joining Adobe's Early Access Program for any early access innovation, simply send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) to request access. You can request access to all or any specific innovation.  
 
-     
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### Purge Content at the CDN with a Self-Serve API Key {#purge-cdn}
