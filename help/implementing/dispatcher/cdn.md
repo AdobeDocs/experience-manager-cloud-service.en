@@ -37,7 +37,7 @@ See [Managing IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/in
 
 ### Configuring Traffic at the CDN {#cdn-configuring-cloud}
 
-Rules to configure CDN traffic and filters can be declared in a configuration file and deployed to the CDN, by using the [Cloud Manager's Configuration Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). For more details, see [Configuring Traffic at the CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md) and [Traffic Filter rules including WAF rules](/help/security/traffic-filter-rules-including-waf.md).
+Rules to configure CDN traffic and filters can be declared in a configuration file and deployed to the CDN, by using the [Cloud Manager's Config Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). For more details, see [Configuring Traffic at the CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md) and [Traffic Filter rules including WAF rules](/help/security/traffic-filter-rules-including-waf.md).
 
 ### Configuring CDN Error Pages {#cdn-error-pages}
 

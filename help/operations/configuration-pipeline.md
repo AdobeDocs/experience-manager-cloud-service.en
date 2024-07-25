@@ -6,9 +6,7 @@ role: Admin
 ---
 # Config Pipeline in AEM as a Cloud Service {#config-pipeline-in-aem-as-a-cloud-service}
 
-The Cloud Manager Config Pipeline deploys one or more configuration (yaml) files to a target environment.
-
-Config Pipeline supports configuration of the following features:
+A Cloud Manager Config Pipeline deploys configuration (yaml) files to a target environment. Several features rely on being configured in this way, including log forwarding, purge-related maintenance tasks, and several CDN features. See the table below for a comprehensive list, each row with a link to a dedicated article (or section of an article) describing its configuration syntax and other information. 
 
 | **Type**   | **"kind" value in yaml** | **Description**  |
 |---|---|---|
@@ -25,12 +23,9 @@ Config Pipeline supports configuration of the following features:
 | [Audit log Purge Maintenance Task](/help/operations/maintenance.md#purge-tasks) | MaintenanceTasks | Optimize the AEM audit log for increased performance by declaring rules around when logs should be purged. |
 | [Log forwarding](/help/implementing/developing/introduction/log-forwarding.md) | LogForwarding | Configure the endpoints and credentials for forwarding logs to various destinations (e.g., Splunk, Datadog, HTTPS). This feature is not yet available. |
 
+The rest of this article describes general concepts shared across either all or a subset of the features supported by Config Pipelines.
 
-This article describes concepts shared across either all or a subset of the features supported by Config Pipelines.
-
-It should be pointed out that each feature has its own dedicated article or section of an article detailing its unique syntax; when appropriate, this shared article is referenced. 
-
-Configuration Pipleines can be deployed via Cloud Manager to dev, stage, and production environment types in production (non-sandbox) programs. RDEs are not currently supported.
+Configuration Pipelines can be deployed via Cloud Manager to dev, stage, and production environment types in production (non-sandbox) programs. RDEs are not currently supported.
 
 ## Common syntax {#common-syntax}
 
@@ -47,15 +42,17 @@ All configuration files begin with properties resembling the following example s
 |---|---|---|
 |  **kind** | A string that determines which type of configuration. For example, log forwarding, traffic filter rules, or request transformations. | Required, no default |
 |  **version** | A string representing the schema version. | Required, no default |
-|  **envTypes** | This array of strings is a child property of the **metadata** node. Possible values are dev, stage, prod, and it determines for which environment types the configuration will be processed. For example, if the array only includes "dev", the configuration will not be loaded on stage or prod environments, even if the configuration is deployed to there. | All environment types, no default |
+|  **envTypes** | This array of strings is a child property of the **metadata** node. Possible values are dev, stage, prod, and it determines for which environment types the configuration will be processed. For example, if the array only includes "dev", the configuration will not be loaded on stage or prod environments, even if the configuration is deployed to there. | All environment types (dev, stage, prod)|
 
-You can use `yq` to validate locally the YAML formatting of your configuration file (for example, `yq cdn.yaml`).
+You can use the `yq` utility to validate locally the YAML formatting of your configuration file (for example, `yq cdn.yaml`).
 
 ## Creating and managing the Config Pipeline in Cloud Manager{#managing-in-cloud-manager}
 
-Review the Cloud Manager article for instructions around creating a [production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) or [non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). When creating a Config Pipeline, make sure to select a Targeted Deployment rather than Full Stack Code, and choose **Config**.
+Review the Cloud Manager article for instructions around creating [Config Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). When creating a Config Pipeline, be sure to select a Targeted Deployment rather than Full Stack Code, and choose **Config**.
 
-A folder `/config` should be at the top of the tree, with one more yaml files somewhere in a tree below it.
+## Folder structure {#folder-structure}
+
+A folder named `/config` or similar should be at the top of the tree, with one more yaml files somewhere in a tree below it.
 
 For example:
 
@@ -72,11 +69,11 @@ or
     cdn.yaml
 ```
 
-Below `/config`, the folder names and filenames are arbitrary; the yaml file, however, must include a known `kind` property value.
+The folder names and filenames below `/config` are arbitrary; the yaml file, however, must include a valid `kind` property value.
 
-Typically, you will want to deploy configurations to all environments. If all the property values are identical for each environment, a single yaml file will suffice. However, it is common for property values to differ between environments; for example, while testing a lower environment.
+Typically, configurations are deployed to all environments. If all the property values are identical for each environment, a single yaml file will suffice. However, it is common for property values to differ between environments; for example, while testing a lower environment.
 
-Here are some strategies, with the example file structures that include two configuration types.
+Here are some strategies:
 
 ### A single config file for all environments {#single-file}
 
@@ -88,7 +85,7 @@ The file structure will resemble:
   logForwarding.yaml
 ```
 
-Use when the same configuration is sufficient for all environments, for all types of configuration (CDN, log forwarding, etc)
+Use when the same configuration is sufficient for all environments, for all types of configuration (CDN, log forwarding, etc). In this scenario, the `envTypes` array property would include all environment types:
 ```
    kind: "cdn"
    version: "1"
@@ -126,7 +123,7 @@ The file structure will resemble:
   logForwarding-prod.yaml
 ```
 
-Use this structure when there may be differences in property values. One would expect `cdn-dev.yaml` to have an envTypes array of ``dev``, `cdn-stage.yaml` to have an array of ``stage``, etc.
+Use this structure when there may be differences in property values. One would expect `cdn-dev.yaml` to have an envTypes array of `dev`, `cdn-stage.yaml` to have an array of `stage`, etc.
 
 ### A folder per environment {#folder-per-env}
 
