@@ -2,13 +2,17 @@
 title: Share Assets in [!DNL the Content Hub]
 description: Share Assets in [!DNL the Content Hub]
 role: User
+exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
 ---
-
 # Share assets in Content Hub {#search-assets-as-a-link}
 
 ![Share assets banner image](assets/share-assets-banner.png)
 
 Sharing assets through a link is a convenient way of making the resources available to [!DNL the Content Hub] users. The functionality allows authorized users to access and download the assets shared with them. When downloading assets from a shared link, [!DNL the Content Hub] uses an asynchronous service that offers faster and uninterrupted download.
+
+## Prerequisites {#prerequisites}
+
+[Content Hub users](deploy-content-hub.md#onboard-content-hub-users) can perform actions mentioned in this article.
 
 ## Share a single asset {#share-a-single-asset}
 
@@ -51,7 +55,3 @@ After sharing the link for assets, the authorized recipients can click the link 
 Click the shared link and click the download icon available on the asset card to download an asset.  You can also select multiple assets and click **[!UICONTROL Download]**. <!--You can either download original assets or Original+Renditions of an asset.--> [!DNL The Content Hub] downloads each asset one-by-one to the local file system.
 
 ![Access Shared Links](assets/content-hub-access-shared-links.png)
-
- 
-
-

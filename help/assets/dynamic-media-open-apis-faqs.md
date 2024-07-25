@@ -2,6 +2,7 @@
 title: Dynamic Media with OpenAPI capabilities frequently asked questions
 description: Dynamic Media with OpenAPI capabilities frequently asked questions
 role: User
+exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
 ---
 # Dynamic Media with OpenAPI capabilities frequently asked questions {#new-dynaminc-media-apis-frequently-asked-questions}
 
@@ -129,6 +130,3 @@ The table below outlines the key differences between the two solutions:
 | Asset metadata on remote DAM is available on AEM Sites instance as well.  |Asset metadata on remote DAM is not available on AEM Sites instance.  |
 
 +++
-
-
-

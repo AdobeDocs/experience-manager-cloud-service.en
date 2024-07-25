@@ -2,6 +2,7 @@
 title: Download assets from Content Hub
 description: Learn how to download assets from the Content Hub portal
 role: User
+exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
 ---
 # Download assets from the Content Hub {#download-assets}
 
@@ -11,6 +12,10 @@ role: User
 The Content Hub lets you download and share your assets. These assets may include images, videos, or any other digital content. The Content Hub enhances accessibility and adaptability for effective asset distribution.  
 
 You can download single asset or multiple assets using the Content Hub. The original versions of the asset are downloaded.
+
+## Prerequisites {#prerequisites}
+
+[Content Hub users](deploy-content-hub.md#onboard-content-hub-users) can perform actions mentioned in this article.
 
 ## Download asset {#download-single-asset} 
 

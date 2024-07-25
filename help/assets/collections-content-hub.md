@@ -2,6 +2,7 @@
 title: Manage Collections in Content Hub
 description: Learn how to manage collections in Content Hub
 role: User
+exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
 ---
 # Manage collections in [!DNL Content Hub] {#manage-collections}
 
@@ -19,7 +20,11 @@ A collection refers to a set of assets that can be shared among users. A collect
 * **Remove**: Remove specific assets from a collection. 
 * **Delete**: Delete the entire collection. 
 
-It helps users to easily access and manage the diverse assets available within [!DNL Content Hub]. 
+It helps users to easily access and manage the diverse assets available within [!DNL Content Hub].
+
+## Prerequisites {#prerequisites}
+
+[Content Hub users](deploy-content-hub.md#onboard-content-hub-users) can perform actions mentioned in this article.
 
 ## Create collections{#create-collections}
 
