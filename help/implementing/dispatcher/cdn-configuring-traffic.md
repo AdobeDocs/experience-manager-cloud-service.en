@@ -18,7 +18,7 @@ Also configurable at the CDN are Traffic Filter Rules (including WAF), which con
 
 Additionally, if the CDN cannot contact its origin, you can write a rule that references a self-hosted custom error page (which is then rendered). Learn more about this by reading the [Configuring CDN error pages](/help/implementing/dispatcher/cdn-error-pages.md) article.
 
-All these rules, declared in a configuration file in source control, are deployed by using [Cloud Manager's Configuration Pipeline](/help/operations/configuration-pipeline.md). Be aware that the cumulative size of the configuration file, including traffic filter rules, cannot exceed 100KB.
+All these rules, declared in a configuration file in source control, are deployed by using [Cloud Manager's Config Pipeline](/help/operations/configuration-pipeline.md). Be aware that the cumulative size of the configuration file, including traffic filter rules, cannot exceed 100KB.
 
 ## Order of Evaluation {#order-of-evaluation}
 
@@ -32,7 +32,7 @@ Before you can configure traffic at the CDN you need to do the following:
 
 1. Create a file named `cdn.yaml` or similar, referencing the various configuration snippets in the sections below. 
 
-    All snippets have these common properties, which are described in  the [Configuration Pipeline article](/help/operations/configuration-pipeline.md#common-syntax). The `kind` property value should be *CDN* and the version should be set to `1`.
+    All snippets have these common properties, which are described in  the [Config Pipeline article](/help/operations/configuration-pipeline.md#common-syntax). The `kind` property value should be *CDN* and the version should be set to `1`.
     ```
     kind: "CDN"
     version: "1"
@@ -40,9 +40,9 @@ Before you can configure traffic at the CDN you need to do the following:
       envTypes: ["dev"]
     ```
 
-1. Place the file somewhere under a top level `config` folder, as described in [Configuration Pipeline article](/help/operations/configuration-pipeline.md#managing-in-cloud-manager).
+1. Place the file somewhere under a top level `config` folder, as described in [Config Pipeline article](/help/operations/configuration-pipeline.md#folder-structure).
 
-1. Create a configuration pipeline in Cloud Manager, as described in the [Configuration Pipeline article](/help/operations/configuration-pipeline.md#managing-in-cloud-manager). 
+1. Create a Config Pipeline in Cloud Manager, as described in the [Config Pipeline article](/help/operations/configuration-pipeline.md#managing-in-cloud-manager). 
 
 1. Deploy the configuration.
 
@@ -315,7 +315,7 @@ Connections to origins are SSL only and use port 443.
 There are scenarios where origin selectors should be used to route traffic through AEM Publish to AEM Edge Delivery Services:
 
 * Some content is delivered by a domain managed by AEM Publish, while other content from the same domain is delivered by Edge Delivery Services 
-* Content delivered by Edge Delivery Services would benefit from rules deployed via Configuration Pipeline, including traffic filter rules or request/response transformations
+* Content delivered by Edge Delivery Services would benefit from rules deployed via Config Pipeline, including traffic filter rules or request/response transformations
 
 Here is an example of an origin selector rule that can accomplish this:
 

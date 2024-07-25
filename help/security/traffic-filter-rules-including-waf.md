@@ -95,7 +95,7 @@ The following is a high-level recommended end-to-end process for coming up with 
          action: block
    ```
 
-  See the [Config Pipeline article](/help/operations/configuration-pipeline.md#common-syntax) for a description of the properties above the data node. The kind property value should be *CDN* and the version should be set to `1`.
+    See the [Config Pipeline article](/help/operations/configuration-pipeline.md#common-syntax) for a description of the properties above the data node. The kind property value should be *CDN* and the version should be set to `1`.
 
 
 1. If WAF rules are licensed, you should enable the feature in Cloud Manager, as described below for both the new and existing program scenarios.
@@ -104,7 +104,7 @@ The following is a high-level recommended end-to-end process for coming up with 
 
    1. To configure WAF on an existing program, [editing your program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) and on the **Security** tab uncheck or check the **WAF-DDOS** option at any time.
 
-1. Declare a Config Pipeline in Cloud Manager, as described in [Config Pipeline article](/help/operations/configuration-pipeline.md#managing-in-cloud-manager). The pipeline will reference a top level `config` folder with the cdn.yaml file placed somewhere below. 
+1. Declare a Config Pipeline in Cloud Manager, as described in [Config Pipeline article](/help/operations/configuration-pipeline.md#managing-in-cloud-manager). The pipeline will reference a top level `config` folder with the cdn.yaml file placed somewhere below, as [described here](/help/operations/configuration-pipeline.md#folder-structure).
 
 ## Traffic Filter Rules Syntax {#rules-syntax}
 

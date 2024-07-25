@@ -7,7 +7,7 @@ role: Admin
 ---
 # Configuring CDN Error Pages {#cdn-error-pages}
 
-In the unlikely event that the [Adobe-managed CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) cannot reach the AEM origin, the CDN by default serves an unbranded, generic error page which indicates that the server cannot be reached. You can override the default error page by hosting static files in self-hosted storage such as Amazon S3 or Azure Blob Storage, and referencing them in a configuration file that is deployed by using the [Cloud Manager Configuration Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
+In the unlikely event that the [Adobe-managed CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) cannot reach the AEM origin, the CDN by default serves an unbranded, generic error page which indicates that the server cannot be reached. You can override the default error page by hosting static files in self-hosted storage such as Amazon S3 or Azure Blob Storage, and referencing them in a configuration file that is deployed by using the [Cloud Manager Config Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
 
 ## Setup {#setup}
 
@@ -15,7 +15,7 @@ Before you can override the default error page you need to do the following:
 
 1. Create a file named `cdn.yaml` or similar, referencing the syntax section below. 
 
-1. Place the file somewhere under a top level `config` folder, as described in [Configuration Pipeline article](/help/operations/configuration-pipeline.md#managing-in-cloud-manager).
+1. Place the file somewhere under a top level `config` folder, as described in [Config Pipeline article](/help/operations/configuration-pipeline.md#folder-structure).
 
 1. Create a configuration pipeline in Cloud Manager, as described in the [Configuration Pipeline article](/help/operations/configuration-pipeline.md#managing-in-cloud-manager). 
 
@@ -28,7 +28,6 @@ The error page is implemented as a single page application (SPA), and references
 Configuration example:
 
 ```
-
 kind: "CDN"
 version: "1"
 metadata:
@@ -40,8 +39,9 @@ data:
       icoUrl: https://www.example.com/error.ico
       cssUrl: https://www.example.com/error.css
       jsUrl: https://www.example.com/error.js
-
 ```
+See the [Configuration Pipeline article](/help/operations/configuration-pipeline.md#common-syntax) for a description of the properties above the data node. The kind property value should be *CDN* and the version should be set to `1`.
+
 
 | Name      | Allowed Properties               | Meaning     |
 |-----------|--------------------------|-------------|
