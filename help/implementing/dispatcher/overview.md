@@ -2,6 +2,8 @@
 title: Content Delivery Flow Overview
 description: Learn more about the content delivery data flow and how to publish your content
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
+feature: Dispatcher
+role: Admin
 ---
 # Content Delivery Flow {#content-delivery}
 

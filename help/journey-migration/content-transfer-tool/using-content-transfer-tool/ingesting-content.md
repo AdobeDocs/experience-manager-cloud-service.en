@@ -2,6 +2,8 @@
 title: Ingesting Content into Cloud Service
 description: Learn how to use the Cloud Acceleration Manager to ingest content from your migration set into a destination Cloud Service instance.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
+feature: Migration
+role: Admin
 ---
 # Ingesting Content into Cloud Service {#ingesting-content}
 

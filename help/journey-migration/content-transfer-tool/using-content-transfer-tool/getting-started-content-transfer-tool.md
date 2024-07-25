@@ -2,6 +2,8 @@
 title: Getting Started with Content Transfer Tool
 description: Learn how to get started with Content Transfer Tool
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
+feature: Migration
+role: Admin
 ---
 # Getting Started with Content Transfer Tool {#getting-started-content-transfer-tool}
 
@@ -80,7 +82,7 @@ The following section applies to the new version of the Content Transfer Tool. F
 
    >[!NOTE]
    >
-   >A maximum of 20 migration sets, including expired sets, can be created per project in Cloud Acceleration Manager.
+   >A maximum of 10 migration sets, including expired sets, can be created per project in Cloud Acceleration Manager.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 

@@ -2,6 +2,8 @@
 title: Infrastructure and Service Monitoring in AEM as a Cloud Service
 description: Infrastructure and Service Monitoring in AEM as a Cloud Service
 exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
+feature: Operations
+role: Admin
 ---
 # Infrastructure and Service Monitoring in AEM as a Cloud Service {#monitoring-in-aem-as-a-cloud-service}
 

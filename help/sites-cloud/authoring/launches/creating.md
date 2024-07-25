@@ -2,6 +2,9 @@
 title: Creating Launches
 description: You can create a launch to enable the updating of a new version of existing web pages for future activation.
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
+solution: Experience Manager Sites
+feature: Authoring, Launches
+role: User
 ---
 # Creating Launches {#creating-launches}
 

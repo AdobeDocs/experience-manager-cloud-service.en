@@ -2,6 +2,8 @@
 title: Traffic Filter Rules including WAF Rules
 description: Configuring Traffic Filter Rules including Web Application Firewall (WAF) Rules.
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
+feature: Security
+role: Admin
 ---
 
 # Traffic Filter Rules Including WAF Rules {#traffic-filter-rules-including-waf-rules}
@@ -238,9 +240,9 @@ Actions are prioritized according to their types in the following table, which i
 
 | **Name**  | **Allowed Properties**  | **Meaning**  |
 |---|---|---|
-|  **allow** | `wafFlags` (optional), `alert` (optional, not yet released)  | if wafFlags is not present, stops further rule processing and proceeds to serving response. If wafFlags is present, it disables specified WAF protections and proceeds to further rule processing. <br>If alert is specified, an Actions Center notification is sent if the rule is triggered 10 times in a 5-minute window. This feature is not yet released; see the [Traffic Filter Rules Alerts](#traffic-filter-rules-alerts) section for information on how to join the early adopter program. |
-|  **block** | `status, wafFlags` (optional and mutually exclusive), `alert` (optional, not yet released)  | if wafFlags is not present, returns HTTP error bypassing all other properties, error code is defined by status property or defaults to 406. If wafFlags is present, it enables specified WAF protections and proceeds to further rule processing. <br>If alert is specified, an Actions Center notification is sent if the rule is triggered 10 times in a 5-minute window. This feature is not yet released; see the [Traffic Filter Rules Alerts](#traffic-filter-rules-alerts) section for information on how to join the early adopter program. |
-| **log**  | `wafFlags` (optional), `alert` (optional, not yet released)  | logs the fact that the rule was triggered, otherwise does not affect the processing. wafFlags has no effect. <br>If alert is specified, an Actions Center notification is sent if the rule is triggered 10 times in a 5-minute window. This feature is not yet released; see the [Traffic Filter Rules Alerts](#traffic-filter-rules-alerts) section for information on how to join the early adopter program. |
+|  **allow** | `wafFlags` (optional), `alert` (optional)  | if wafFlags is not present, stops further rule processing and proceeds to serving response. If wafFlags is present, it disables specified WAF protections and proceeds to further rule processing. <br>If alert is specified, an Actions Center notification is sent if the rule is triggered 10 times in a 5-minute window. Once an alert is triggered for a particular rule, it will not fire off again until the next day (UTC). |
+|  **block** | `status, wafFlags` (optional and mutually exclusive), `alert` (optional)  | if wafFlags is not present, returns HTTP error bypassing all other properties, error code is defined by status property or defaults to 406. If wafFlags is present, it enables specified WAF protections and proceeds to further rule processing. <br>If alert is specified, an Actions Center notification is sent if the rule is triggered 10 times in a 5-minute window. Once an alert is triggered for a particular rule, it will not fire off again until the next day (UTC). |
+| **log**  | `wafFlags` (optional), `alert` (optional)  | logs the fact that the rule was triggered, otherwise does not affect the processing. wafFlags has no effect. <br>If alert is specified, an Actions Center notification is sent if the rule is triggered 10 times in a 5-minute window. Once an alert is triggered for a particular rule, it will not fire off again until the next day (UTC). |
 
 ### WAF Flags List {#waf-flags-list}
 
@@ -486,16 +488,14 @@ data:
 
 ## Traffic Filter Rules Alerts {#traffic-filter-rules-alerts}
 
->[!NOTE]
->
->This feature is not yet released. To gain access through the early adopter program, email **aemcs-waf-adopter@adobe.com**.
+A rule can be configured to send an Actions Center notification if it is triggered ten times within a 5-minute window. Such a rule alerts you when certain traffic patterns occur so that you can take any necessary measures. Once an alert is triggered for a particular rule, it will not fire off again until the next day (UTC).
 
-A rule can be configured to send an Actions Center notification if it is triggered ten times within a 5-minute window. Such a rule alerts you when certain traffic patterns occur so that you can take any necessary measures. Learn more about [Actions Center](/help/operations/actions-center.md), including how to set up the required Notification Profiles to receive emails.
+Learn more about [Actions Center](/help/operations/actions-center.md), including how to set up the required Notification Profiles to receive emails.
 
 ![Actions Center Notification](/help/security/assets/traffic-filter-rules-actions-center-alert.png)
 
 
-The alert property (currently prefixed with *experimental* since the feature is not yet released) can be applied to the action node for all action types (allow, block, log).
+The alert property can be applied to the action node for all action types (allow, block, log).
 
 ```
 kind: "CDN"
@@ -512,7 +512,7 @@ data:
             - { reqProperty: tier, equals: publish }
         action:
           type: block
-          experimental_alert: true
+          alert: true
 ```
 
 ## Default Traffic Spike at Origin Alert {#traffic-spike-at-origin-alert}
@@ -521,11 +521,11 @@ data:
 >
 >This feature is being gradually rolled out.
 
-An [Actions Center](/help/operations/actions-center.md) email notification will be sent when there is a significant amount of traffic sent to the origin, where a high threshold of requests are coming from the same IP address, thus suggestive of a DDoS attack. 
+An [Actions Center](/help/operations/actions-center.md) email notification will be sent when there is a significant amount of traffic sent to the origin, where a high threshold of requests are coming from the same IP address, thus suggestive of a DDoS attack.
 
 If this theshold is met, Adobe will block traffic from that IP address, but it is recommended to take additional measures to protect your origin, including configuring rate limit traffic filter rules to block traffic spikes at lower thresholds. See the [Blocking DoS and DDoS attacks using traffic rules tutorial](#tutorial-blocking-DDoS-with-rules) for a guided walk-through.
 
-This alert is enabled by default, but it can be disabled using the *enable_ddos_alerts* property, set to false.
+This alert is enabled by default, but it can be disabled using the *defaultTrafficAlerts* property, set to false. Once the alert is triggered, it will not fire off again until the next day (UTC).
 
    ```
    kind: "CDN"
@@ -534,7 +534,7 @@ This alert is enabled by default, but it can be disabled using the *enable_ddos_
      envTypes: ["dev"]
    data:
      trafficFilters:
-       enable_ddos_alerts: false
+      defaultTrafficAlerts: false
    ```
 
 ## CDN Logs {#cdn-logs}

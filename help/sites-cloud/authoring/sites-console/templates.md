@@ -2,6 +2,9 @@
 title: Creating Page Templates
 description: The template defines the structure of the resultant page and with the template editor, creating and maintaining templates is no longer a developer-only task
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Creating Page Templates {#creating-page-templates}
 

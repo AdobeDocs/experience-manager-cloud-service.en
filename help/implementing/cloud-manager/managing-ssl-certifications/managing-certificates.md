@@ -2,6 +2,9 @@
 title: Managing SSL Certificates
 description: Learn how to use Cloud Manager to check the status of your SSL certificates and how to edit, replace, update, and delete them.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 
 # Managing SSL Certificates {#managing-ssl-certificates}
@@ -30,7 +33,9 @@ When a certificate expires any domains that are in use with the expired certific
 1. Navigate to the **SSL Certificates** screen from the **Environments** screen.
 1. You can see a table with a row for each SSL certificate that has been successfully installed in your program. Click the ellipsis button at the far right in the row of the certificate you want to update and select **View &amp; Update**.
 1. The certificate details are displayed and can be updated.
-1. Run the pipeline to deploy the updated certificate.
+1. Save your changes.
+
+Once you save your changes, they are applied automatically.
 
 >[!NOTE]
 >

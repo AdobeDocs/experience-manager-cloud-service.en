@@ -5,6 +5,8 @@ topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
 hide: yes
 hidefromtoc: yes
+exl-id: e9c13228-0857-4936-9c39-12ed2bddf429
+role: User, Developer
 ---
 # Connect your AEM Forms environment with Turnstile {#connect-your-forms-environment-with-turnstile-service}
 

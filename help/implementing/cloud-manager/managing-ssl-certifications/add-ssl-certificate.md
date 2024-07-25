@@ -2,14 +2,18 @@
 title: Adding an SSL Certificate
 description: Learn how to add your own SSL certificate using Cloud Manager's self-service tools.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
+
 # Adding an SSL Certificate {#adding-an-ssl-certificate}
 
 Learn how to add your own SSL certificate using Cloud Manager's self-service tools.
 
 >[!TIP]
 >
->A certificate can take a few days to provision. Adobe therefore recommends that the certificate is provisioned well in advance.
+>A certificate can take a few days to provision. Adobe therefore recommends that the certificate is provisioned well in advance of any deadline or go-live date.
 
 ## Certificate Requirements {#certificate-requirements}
 
@@ -33,8 +37,8 @@ Follow these steps to add a certificate using Cloud Manager.
 
    * Enter a name for your certificate in **Certificate Name**.
      * This is for informational purposes only and can be any name that helps you reference your certificate easily.
-   * Paste the **Certificate**, **Private key**, and **Certificate chain** values into their respective fields. All three fields are mandatory.
-   * In some cases, the end-user certificate may be included in the chain and must be stripped before pasting the chain into the field.
+   * Paste the **Certificate**, **Private key**, and **Certificate chain** values into their respective fields.
+     * All three fields are mandatory.
 
    ![Add SSL Certificate dialog](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
   
@@ -52,13 +56,45 @@ Once saved, you see your certificate displayed as a new row in the table.
 >
 >A user must be a member of the **Business Owner** or **Deployment Manager** role to install an SSL certificate in Cloud Manager.
 
->[!NOTE]
->
->If you receive an error similar to `The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.`, you likely included the client certificate in the certificate chain. Please make sure that the chain does not include the client certificate and try again.
-
 ## Certificate Errors {#certificate-errors}
 
 Certain errors may arise if a certificate is not installed properly or meet the requirements of Cloud Manager.
+
+### Correct Certificate Order {#correct-certificate-order}
+
+The most common reason for a certificate deployment to fail is that the intermediate or chain certificates are not in the correct order.
+
+Intermediate certificate files must end with the root certificate or the certificate most proximate to the root. They must be in descending order from the `main/server` certificate to the root. 
+
+You can determine the order of your intermediate files using the following command.
+
+```shell
+openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout
+```
+
+You can verify that the private key and `main/server` certificate match using the following commands.
+
+```shell
+openssl x509 -noout -modulus -in certificate.pem | openssl md5
+```
+
+```shell
+openssl rsa -noout -modulus -in ssl.key | openssl md5
+```
+
+>[!NOTE]
+>
+>The output of these two commands must be exactly the same. If you cannot locate a matching private key for your `main/server` certificate, you are required to re-key the certificate by generating a new CSR and/or requesting an updated certificate from your SSL vendor.
+
+### Remove Client Certificates {#client-certificates}
+
+When adding a certificate, if you receive an error similar to the following:
+
+```text
+The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.
+```
+
+You likely included the client certificate in the certificate chain. Please make sure that the chain does not include the client certificate and try again.
 
 ### Certificate Policy {#certificate-policy}
 
@@ -110,32 +146,13 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
 openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 ```
 
-### Correct Certificate Order {#correct-certificate-order}
-
-The most common reason for a certificate deployment to fail is that the intermediate or chain certificates are not in the correct order.
-
-Intermediate certificate files must end with the root certificate or the certificate most proximate to the root. They must be in descending order from the `main/server` certificate to the root. 
-
-You can determine the order of your intermediate files using the following command.
-
-```shell
-openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout
-```
-
-You can verify that the private key and `main/server` certificate match using the following commands.
-
-```shell
-openssl x509 -noout -modulus -in certificate.pem | openssl md5
-```
-
-```shell
-openssl rsa -noout -modulus -in ssl.key | openssl md5
-```
-
->[!NOTE]
->
->The output of these two commands must be exactly the same. If you cannot locate a matching private key for your `main/server` certificate, you are required to re-key the certificate by generating a new CSR and/or requesting an updated certificate from your SSL vendor.
-
 ### Certificate Validity Dates {#certificate-validity-dates}
 
 Cloud Manager expects the SSL certificate to be valid for at least 90 days from the current date. You should check the validity of the certificate chain.
+
+## Next Steps {#next-steps}
+
+Congratulations! You now have a working SSL certificate for your project. This is often a first step to setting up a custom domain name.
+
+* See the document [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) to continue setting up a custom domain name.
+* See the document [Managing SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md) to learn about updating and managing your SSL certificates in Cloud Manager.

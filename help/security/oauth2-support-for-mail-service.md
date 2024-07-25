@@ -2,6 +2,8 @@
 title: OAuth2 Support for the Mail Service
 description: OAuth2 Support for the Mail Service in Adobe Experience Manager as a Cloud.Service.
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
+feature: Security
+role: Admin
 ---
 
 # OAuth2 Support for the Mail Service {#oauth2-support-for-the-mail-service}

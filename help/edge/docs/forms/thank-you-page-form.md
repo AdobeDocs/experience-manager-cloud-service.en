@@ -3,6 +3,7 @@ title: Show a custom thank you message after form submission
 description: Learn how to configure thank you pages and redirection for Forms Block to optimize user experience and streamline user journeys.
 feature: Edge Delivery Services
 exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
+role: Admin, Architect, Developer
 ---
 # Show a custom thank you message after form submission
 

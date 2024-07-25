@@ -4,6 +4,7 @@ description: Learn to add new locales for an Adaptive Form.
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
+role: User, Developer
 ---
 # Add a locale for Adaptive Forms based on Core Components {#supporting-new-locales-for-adaptive-forms-localization}
 
@@ -389,6 +390,7 @@ These steps guide you through previewing an Adaptive Form with the newly added l
 ## Best Practices to support for new localization {#best-practices}
 
 * Adobe recommends creating a translation project after creating an Adaptive Form. This streamlines the localization process.
+* When Numeric Box and Date Picker components are translated into a specific locale, formatting issues may arise. To mitigate this, a **Language** option has been incorporated into the Configure dialog of [Date picker component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) and [Numeric Box component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
 
 
 * Handling New Fields:
