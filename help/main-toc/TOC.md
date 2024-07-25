@@ -679,6 +679,7 @@ user-guide-title: AEM as a Cloud Service
         + [Submit an Adaptive Form to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
         + [Submit an Adaptive Form to Microsoft&reg; OneDrive](/help/forms/configure-submit-action-onedrive.md)
         + [Connect an Adaptive Form to Microsoft&reg; SharePoint](/help/forms/configure-submit-action-sharepoint.md)
+        + [Configure SharePoint Site with limited access using authorization scope](/help/forms/configure-sharepoint-site-limited-access.md)
         + [Integrate AEM Adaptive Form with AEM Workflow](/help/forms/configure-submit-action-workflow.md)
         + [Configure Submit to REST Endpoint submit action for Adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
         + [Configure the Send Email submit action for an Adaptive Form](/help/forms/configure-submit-action-send-email.md)
@@ -856,8 +857,9 @@ user-guide-title: AEM as a Cloud Service
 + Edge Delivery Services {#edge-delivery}
   + [Edge Delivery Services Overview](/help/edge/overview.md)
   + [Using Edge Delivery Services with AEM](/help/edge/using.md)
+  + [Choosing an Authoring Method](/help/edge/authoring-methods.md)
   + WYSIWYG Authoring {#wysiwyg-authoring}
-    + [Authoring Content for Edge Delivery](/help/edge/wysiwyg-authoring/authoring.md)
+    + [WYSIWYG Content Authoring for Edge Delivery](/help/edge/wysiwyg-authoring/authoring.md)
     + [Publishing Content for Edge Delivery](/help/edge/wysiwyg-authoring/publishing.md)
     + [Developer Getting Started Guide](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
     + [Creating Blocks](/help/edge/wysiwyg-authoring/create-block.md)
@@ -1245,6 +1247,7 @@ user-guide-title: AEM as a Cloud Service
   + [Maintenance Tasks](/help/operations/maintenance.md)
   + [Self-Service Restore](/help/operations/restore.md)
   + [Asynchronous Jobs](/help/operations/asynchronous-jobs.md)
+  + [Using Config Pipelines](/help/operations/config-pipeline.md)
   + [Removal of the generic lucene index](/help/operations/removal-generic-lucene-index.md)
   + [Query and Indexing Best Practices](/help/operations/query-and-indexing-best-practices.md)  
 + Compliance {#compliance}
