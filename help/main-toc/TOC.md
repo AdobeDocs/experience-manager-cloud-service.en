@@ -855,8 +855,9 @@ user-guide-title: AEM as a Cloud Service
 + Edge Delivery Services {#edge-delivery}
   + [Edge Delivery Services Overview](/help/edge/overview.md)
   + [Using Edge Delivery Services with AEM](/help/edge/using.md)
+  + [Choosing an Authoring Method](/help/edge/authoring-methods.md)
   + WYSIWYG Authoring {#wysiwyg-authoring}
-    + [Authoring Content for Edge Delivery](/help/edge/wysiwyg-authoring/authoring.md)
+    + [WYSIWYG Content Authoring for Edge Delivery](/help/edge/wysiwyg-authoring/authoring.md)
     + [Publishing Content for Edge Delivery](/help/edge/wysiwyg-authoring/publishing.md)
     + [Developer Getting Started Guide](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
     + [Creating Blocks](/help/edge/wysiwyg-authoring/create-block.md)
@@ -1244,6 +1245,7 @@ user-guide-title: AEM as a Cloud Service
   + [Maintenance Tasks](/help/operations/maintenance.md)
   + [Self-Service Restore](/help/operations/restore.md)
   + [Asynchronous Jobs](/help/operations/asynchronous-jobs.md)
+  + [Using Config Pipelines](/help/operations/config-pipeline.md)
   + [Removal of the generic lucene index](/help/operations/removal-generic-lucene-index.md)
   + [Query and Indexing Best Practices](/help/operations/query-and-indexing-best-practices.md)  
 + Compliance {#compliance}
