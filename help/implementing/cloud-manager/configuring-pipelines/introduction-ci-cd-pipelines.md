@@ -50,7 +50,7 @@ A non-production pipeline mainly serves to run code quality scans or to deploy s
 In addition to production and non-production, pipelines can be differentiated by the type of code they deploy.
 
 * **[Full Stack Pipelines](#full-stack-pipeline)** - Simultaneously deploy back-end and front-end code builds containing one or more AEM server applications along with HTTPD/Dispatcher configurations
-* **[Config Pipelines](#config-deployment-pipeline)** - Quickly deploy configurations for [these features](/help/operations/configuration-pipeline.md), notably log forwarding, purge-related maintenance tasks, and various CDN configurations -- traffic filter rules (including WAF rules), request and response transformations, origin selectors, client-side redirects, error pages, customer-managed CDN keys, purge API keys, and basic auth).
+* **[Config Pipelines](#config-deployment-pipeline)** - Quickly deploy configurations for [these features](/help/operations/config-pipeline.md), notably log forwarding, purge-related maintenance tasks, and various CDN configurations such as traffic filter rules (including WAF rules), request and response transformations, origin selectors, client-side redirects, error pages, customer-managed CDN keys, purge API keys, and basic auth).
 * **[Front-End Pipelines](#front-end)** - Deploy front-end code builds containing one or more client-side UI applications 
 * **[Web Tier Config Pipelines](#web-tier-config-pipelines)** - Deploys HTTPD/Dispatcher configurations
 
@@ -65,7 +65,7 @@ The following table summarizes the pipelines available in Cloud Manager and thei
 |Production or Non-Production|Deployment|Full-Stack|Simultaneously deploys back-end and front-end code builds along with HTTPD/Dispatcher configurations|When front-end code must be deployed simultaneously with AEM server code.<br>When front-end pipelines or web tier config pipelines have not yet been adopted.|
 |Production or Non-Production|Deployment|Front-End|Deploys front-end code build containing one or more client-side UI application|Supports multiple, concurrent front-end pipelines<br>Much faster than full-stack deployments|
 |Production or Non-Production|Deployment|Web Tier Config|Deploys HTTPD/Dispatcher configurations|Deploys in minutes|
-|Production or Non-Production|Deployment|Config|Deploys configuration for [several features](/help/operations/configuration-pipeline.md) related to CDN, log forwarding, and purge maintenance tasks |Deploys in minutes|
+|Production or Non-Production|Deployment|Config|Deploys configuration for [several features](/help/operations/config-pipeline.md) related to CDN, log forwarding, and purge maintenance tasks |Deploys in minutes|
 |Non-Production|Code Quality|Full-Stack|Runs code quality scans on full-stack code without a deployment|Supports multiple pipelines|
 |Non-Production|Code Quality|Front-End|Runs code quality scans on front-end code without a deployment|Supports multiple pipelines|
 |Non-Production|Code Quality|Web Tier Config|Runs code quality scans on dispatcher configurations without a deployment|Supports multiple pipelines|
