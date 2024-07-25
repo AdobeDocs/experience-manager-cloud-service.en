@@ -2,6 +2,8 @@
 title: Release Notes for Generate Variations
 description: Release Notes for Generate Variations, accessible from AEM as a Cloud Service and the Sidekick of Edge Delivery Services
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
+feature: Release Information
+role: Admin
 ---
 # Release Notes for Generate Variations {#release-notes-generate-variations}
 

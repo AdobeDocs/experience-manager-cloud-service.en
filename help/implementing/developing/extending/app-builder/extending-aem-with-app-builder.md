@@ -2,6 +2,8 @@
 title: Extending [!DNL Adobe Experience Manager] as a Cloud Service using Adobe Developer App Builder.
 description: Extending [!DNL Adobe Experience Manager] as a Cloud Service using Adobe Developer App Builder.
 exl-id: 50d82745-5deb-4bfa-961b-714842403601
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Extending [!DNL Adobe Experience Manager] as a Cloud Service using Adobe Developer App Builder {#extend-using-app-builder}
 

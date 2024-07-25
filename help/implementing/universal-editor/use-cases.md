@@ -1,8 +1,10 @@
 ---
 title: Universal Editor Use Cases and Learning Paths
 description: Learn about the main use cases of the Universal Editor and how best to learn about its use and how to implement it on your own projects.
+exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
+feature: Developing
+role: Admin, Architect, Developer
 ---
-
 # Universal Editor Use Cases and Learning Paths {#use-cases-learning-paths}
 
 Learn about the main use cases of the Universal Editor and how best to learn more about its use and how to implement it on your own projects.
@@ -21,10 +23,10 @@ This document explains these two use cases in detail and shows you how you can l
 
 The Universal Editor presents a convenient, intuitive visual editor to your content authors no matter what kind of content they are creating. The two main use cases are:
 
-* [AEM-Based Authoring](#aem-authoring) - Use the AEM Sites console to manage your content and author pages within AEM using the Universal Editor
+* [WYSIWYG Authoring](#wysiwyg-authoring) - Use the AEM Sites console to manage your content and author pages within AEM using the Universal Editor
 * [Headless Authoring](#headless-authoring) - Author content in your own custom headless application using the Universal Editor.
 
-### AEM-Based Authoring {#aem-authoring}
+### WYSIWYG Authoring {#wysiwyg-authoring}
 
 If you are already familiar with AEM, you can use the Sites console to create and manage your pages and then edit them with the Universal Editor.
 
@@ -32,9 +34,9 @@ In this way you can benefit from the tools available in the Sites console such a
 
 If this is your use case, as an immediate next step, please see the following documents for a complete overview of how to get up-and-running with the Universal Editor in AEM.
 
-1. [Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/aem-authoring/edge-dev-getting-started.md) - Get started with your first Universal Editor project in AEM
-1. [Creating Blocks Instrumented for use with the Universal Editor](/help/edge/aem-authoring/create-block.md) - Learn how to instrument blocks to make your content editable in the Universal Editor
-1. [Content Modeling for AEM Authoring with Edge Delivery Services Projects](/help/edge/aem-authoring/content-modeling.md) - Learn the details of how blocks are structured to effectively model your content for use with the Universal Editor.
+1. [Developer Getting Started Guide for WYSIWYG authoring with Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) - Get started with your first Universal Editor project in AEM
+1. [Creating Blocks Instrumented for use with the Universal Editor](/help/edge/wysiwyg-authoring/create-block.md) - Learn how to instrument blocks to make your content editable in the Universal Editor
+1. [Content Modeling for WYSIWYG authoring with Edge Delivery Services Projects](/help/edge/wysiwyg-authoring/content-modeling.md) - Learn the details of how blocks are structured to effectively model your content for use with the Universal Editor.
 
 Once you have read those documents, you can return to this page to learn about the headless authoring use case and how the Universal Editor works in general.
 
@@ -46,7 +48,7 @@ If this is your use case, as an immediate next step, please see the following do
 
 * [SecurBank Sample App for the Universal Editor](/help/implementing/universal-editor/securbank.md)
 
-Once you have read that document, you can return to this page to learn about the AEM authoring use case and how the Universal Editor works in general.
+Once you have read that document, you can return to this page to learn about the WYSIWYG authoring use case and how the Universal Editor works in general.
 
 ## How the Universal Editor Works {#how-ue-works}
 
@@ -55,7 +57,7 @@ The power of the Universal Editor is its ability to author any content in-place,
 The Universal Editor works in the following way.
 
 1. A developer instruments the app or page to use the Universal Editor. This instrumentation tells the editor what content is editable and how to persist it.
-   * For AEM-based authoring, pages created using the boilerplate template are automatically instrumented.
+   * For WYSIWYG authoring, pages created using the boilerplate template are automatically instrumented.
    * For headless authoring, your app can be easily instrumented.
 1. The content author load the Universal Editor, which in turn loads your page for editing. Because it is instrumented, it knows which content is editable and how it is to be represented and persisted.
 1. The content author edits the page content in an intuitive WYSIWYG interface, editing in-place.

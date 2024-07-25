@@ -4,6 +4,7 @@ description: Learn about the basics of the Live Copy Overview Console to quickly
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
+solution: Experience Manager Sites
 ---
 # Live Copy Overview Console {#live-copy-overview-console}
 

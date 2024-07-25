@@ -1,8 +1,9 @@
 ---
 title: Learning to use GraphQL with AEM - Sample Content and Queries
 description: Learn to use GraphQL with AEM so you can serve content headlessly by exploring sample content and queries.
-feature: Content Fragments,GraphQL API
+feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
+role: Admin, Developer
 ---
 # Learning to use GraphQL with AEM - Sample Content and Queries {#learn-graphql-with-aem-sample-content-queries}
 
@@ -1788,6 +1789,20 @@ This query interrogates:
   }
 } 
 ```
+
+## Sample Queries for Delivery of DAM and Dynamic Media Assets {#sample-queries-delivery-DAM-DM}
+
+For web-optimized image delivery (of DAM assets):
+
+* [Sample Query for web-optimized image delivery with full parameters](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-full-parameters)
+
+* [Sample Query for web-optimized image delivery with a single specified parameter](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-single-query-variable)
+
+For the delivery of the URL to a Dynamic Media asset
+
+* See [Sample query for Dynamic Media asset delivery by URL - Image Reference](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+
+* See [Sample query for Dynamic Media asset delivery by URL - Multiple References](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
 ## The Sample Content Fragment Structure (used with GraphQL) {#content-fragment-structure-graphql}
 

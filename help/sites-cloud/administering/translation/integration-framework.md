@@ -4,6 +4,7 @@ description: Learn how to configure the Translation Integration Framework to int
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
+solution: Experience Manager Sites
 ---
 # Configuring the Translation Integration Framework {#configuring-the-translation-integration-framework}
 

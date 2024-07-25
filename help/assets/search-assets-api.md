@@ -2,10 +2,11 @@
 title: Search Assets API
 description: Learn how to use the Search Assets API.
 role: User
+exl-id: 0c52e793-4c33-4230-b4f2-27296dd9e4b3
 ---
 # Search Assets API {#search-assets-api}
 
-All [approved assets](approved-assets.md) available in Experience Manager assets repository can be searched and then delivered to integrated downstream applications using a Delivery URL.
+All [approved assets](approve-assets.md) available in Experience Manager assets repository can be searched and then delivered to integrated downstream applications using a Delivery URL.
 
 Searching the right approved assets from the Experience Manager repository is the first step towards delivering assets using the delivery URL. The response to the search request comprises an array of JSON documents corresponding to the assets that met the search criteria. Each JSON document is identified using an `id` field, which is used to compose the asset delivery request.
 
@@ -52,4 +53,3 @@ headers: {
 To invoke the Search API, an IMS token is required to define in the `Authorization` details. The IMS token is fetched from a technical account. See [Fetch the AEM as a Cloud Service Credentials](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#fetch-the-aem-as-a-cloud-service-credentials) to create a new technical account. See [Generating the access token](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token) to generate the IMS token and use it appropriately in the Search assets API request header.
 
 To view request samples, response samples, and response codes, see [Search Assets API](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search).
-

@@ -2,6 +2,8 @@
 title: Manage staged product catalog experiences
 description: Learn how to manage staged product catalog experiences.
 exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
+feature: Commerce Integration Framework
+role: Admin
 ---
 # Building Staged Product Catalog Experiences {#building-experiences}
 

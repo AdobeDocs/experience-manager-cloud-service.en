@@ -4,6 +4,7 @@ description: Understand how to author content for your Content Fragments, and cr
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
+solution: Experience Manager Sites
 ---
 # Authoring Content Fragments {#authoring-content-fragments}
 
@@ -347,13 +348,20 @@ To add an asset, you can either:
 
 #### Reference Pages {#reference-pages}
 
-To add references to AEM pages, Experience Fragments, or other content types:
+To add references to AEM pages, Experience Fragments, or other such content types:
 
 1. Select **Add content path**.
 
 1. Add the required path in the input field.
 
 1. Confirm with **Add**.
+
+>[!NOTE]
+>
+>This should not be used for references to:
+>
+>* Content Fragments - use a [Fragment Reference](#fragment-references)
+>* Images - use [Reference Images](#reference-images)
 
 ### View Parent References {#view-parent-references}
 
