@@ -12,9 +12,10 @@ The article provides detailed examples of a Rule Editor for an Adaptive Form bas
 Now, let us discuss the different implementations for a rule editor.
 
 
-## Streamline complex calculations in repeatable panels with built-in functions
+## Streamline complex calculations in repeatable panels with functions
 
-The rule editor allows you to use out-of-the-box functions like Sum, Min, Max, and Join directly on fields within repeatable panels. This unlocks powerful automation, allowing you to implement complex business logic without custom code.
+The rule editor allows you to use out-of-the-box functions like Sum, Min, Max, and Join directly on fields within repeatable panels. You can also pass a repeatable panel field value to the function that accepts number array, string array, boolean array etc. This unlocks powerful automation, allowing you to implement complex business logic without custom code.
+
 Imagine a form with a repeatable panel, where each panel instance collects information about the declared value of assets. 
 
 ![Repeatable form](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
@@ -26,6 +27,10 @@ You can use the `Sum` function to automatically calculate the total assets value
 When you fill out a form, adding instances to declare the asset values, the `Calculate Asset Value` button computes the total sum of all declared asset values and displays the result in the total in `assetvalue` textbox.
 
 ![Support for repeatable panel fields in OOTB functions](/help/forms/assets/ootb-function-support-repeatable-panel-form-preview.png)
+
+>[!NOTE]
+>
+> In case the value of the repeatable panel field is passed to a function that does not accept an array, the field value from the last instance of the repeatable panel is passed to the function.
 
 This is just one example! Explore the available [functions](#b-form-objects-and-functions-br) to simplify workflows and enhance data accuracy within your forms.
 
