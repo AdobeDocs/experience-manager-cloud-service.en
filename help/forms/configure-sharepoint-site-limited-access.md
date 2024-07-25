@@ -70,12 +70,7 @@ To provide limited access to a Microsoft SharePoint Site, it is essential to set
 
 1. Add the `offline_access Sites.Selected` in the `Authorization Scope` field. When you add the `offline_access Sites.Selected` scope in the `Authorization Scope` textbox field, the `SharePoint Site ID` textbox becomes visible on the screen. 
 
-
-    To retrieve the value of the `SharePoint Site ID`, go to the [Microsoft Graph Explorer APIs](https://developer.microsoft.com/en-us/graph/graph-explorer) and replace the placeholder `contoso` with the actual name of your SharePoint Site to fetch the corresponding Site ID.
-
-    ![SharePoint Document Library ID](/help/forms/assets/sharepoint-site-id.png)
-
-1. Specify the SharePoint Site ID. 
+1. Specify the SharePoint Site ID. To learn how to retrieve the SharePoint Site ID, refer to [Extra Bytes](#extra-bytes) section.
 
 1. Click **[!UICONTROL Check Site Connection]**. On a successful connection, the `Connection Successful` message appears. 
 
@@ -87,3 +82,14 @@ To provide limited access to a Microsoft SharePoint Site, it is essential to set
     >* Create a folder as `forms-ootb-storage-adaptive-forms-submission`, if not already present in the `Documents` library of the selected SharePoint Site by clicking **Create Folder**.
 
 Now, you can use this [SharePoint Sites configuration for the submit action in an Adaptive Form](/help/forms/configure-submit-action-sharepoint.md#use-sharepoint-document-library-configuration-in-an-adaptive-form-use-sharepoint-configuartion-in-af). 
+
+## Extra Bytes
+
+To retrieve the value of the `SharePoint Site ID`:
+1. Go to the [Microsoft Graph Explorer APIs](https://developer.microsoft.com/en-us/graph/graph-explorer).
+1. In the left pane, under the `SharePoint Sites` APIs, click `Search for a SharePoint site by keyword`.
+1. Replace the placeholder `contoso` with the actual name of your SharePoint Site to fetch the corresponding Site ID.
+
+    ![SharePoint Document Library ID](/help/forms/assets/sharepoint-site-id.png)
+
+Upon clicking the `Run Query` button, the Site ID is displayed on the screen.
