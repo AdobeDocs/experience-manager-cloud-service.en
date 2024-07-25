@@ -1245,6 +1245,7 @@ user-guide-title: AEM as a Cloud Service
   + [Maintenance Tasks](/help/operations/maintenance.md)
   + [Self-Service Restore](/help/operations/restore.md)
   + [Asynchronous Jobs](/help/operations/asynchronous-jobs.md)
+  + [Using Config Pipelines](/help/operations/config-pipeline.md)
   + [Removal of the generic lucene index](/help/operations/removal-generic-lucene-index.md)
   + [Query and Indexing Best Practices](/help/operations/query-and-indexing-best-practices.md)  
 + Compliance {#compliance}

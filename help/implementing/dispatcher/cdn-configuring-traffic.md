@@ -1,10 +1,11 @@
 ---
 title: Configuring Traffic at the CDN
-description: Learn how to configure CDN traffic by declaring rules and filters in a configuration file and deploying them to the CDN by using the Cloud Manager Config Pipeline.
+description: Learn how to configure CDN traffic by declaring rules and filters in a configuration file and deploying them to the CDN by using a Cloud Manager config pipeline.
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
 ---
+
 # Configuring Traffic at the CDN {#cdn-configuring-cloud}
 
 AEM as a Cloud Service offers a collection of features configurable at the [Adobe-managed CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) layer that modify the nature of either incoming requests or outgoing responses. The following rules, described in detail in this page, can be declared to achieve the following behavior:
@@ -18,7 +19,7 @@ Also configurable at the CDN are Traffic Filter Rules (including WAF), which con
 
 Additionally, if the CDN cannot contact its origin, you can write a rule that references a self-hosted custom error page (which is then rendered). Learn more about this by reading the [Configuring CDN error pages](/help/implementing/dispatcher/cdn-error-pages.md) article.
 
-All these rules, declared in a configuration file in source control, are deployed by using the Cloud Manager [Config Pipeline](/help/operations/config-pipeline.md). Be aware that the cumulative size of the configuration file, including traffic filter rules, cannot exceed 100KB.
+All these rules, declared in a configuration file in source control, are deployed by using the Cloud Manager [config pipeline.](/help/operations/config-pipeline.md) Be aware that the cumulative size of the configuration file, including traffic filter rules, cannot exceed 100KB.
 
 ## Order of Evaluation {#order-of-evaluation}
 
@@ -315,7 +316,7 @@ Connections to origins are SSL only and use port 443.
 There are scenarios where origin selectors should be used to route traffic through AEM Publish to AEM Edge Delivery Services:
 
 * Some content is delivered by a domain managed by AEM Publish, while other content from the same domain is delivered by Edge Delivery Services 
-* Content delivered by Edge Delivery Services would benefit from rules deployed via Config Pipeline, including traffic filter rules or request/response transformations
+* Content delivered by Edge Delivery Services would benefit from rules deployed via config pipeline, including traffic filter rules or request/response transformations
 
 Here is an example of an origin selector rule that can accomplish this:
 

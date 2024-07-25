@@ -5,6 +5,7 @@ exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
 ---
+
 # Maintenance Tasks in AEM as a Cloud Service {#maintenance-tasks-in-aem-as-a-cloud-service}
 
 >[!CONTEXTUALHELP]
@@ -212,17 +213,17 @@ The default purge values can be overridden by declaring a configuration file and
 Declare a configuration file and deploy it as described in the following steps.
 
 >[!NOTE]
->Once you deploy the version purge node in the configuration file, you must keep it declared and not remove it. The Config Pipeline will fail if you attempt to do so. 
+>Once you deploy the version purge node in the configuration file, you must keep it declared and not remove it. The config pipeline will fail if you attempt to do so. 
 > 
 >Similarly, once you deploy the audit log purge node in the configuration file, you must keep it declared and not remove it.
 
 **1** Create a file named `mt.yaml` or similar.
   
-**2** Place the file somewhere under a top level folder named `config` or similar, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#folder-structure).
+**2** Place the file somewhere under a top level folder named `config` or similar, as described in the [config pipeline article.](/help/operations/config-pipeline.md#folder-structure)
 
 **3** - Declare properties in the configuration file, which include:
 
-* a few properties above the data node -- see the [Config Pipeline article](/help/operations/config-pipeline.md#common-syntax) for a description. The `kind` property value should be *MaintenanceTasks* and the version should be set to *1*.
+* a few properties above the data node -- see the [config pipeline article](/help/operations/config-pipeline.md#common-syntax) for a description. The `kind` property value should be *MaintenanceTasks* and the version should be set to *1*.
 
 * a data object with both `versionPurge` and `auditLogPurge` objects.
 
@@ -265,7 +266,7 @@ Keep in mind that in order for the configuration to be valid:
 * all properties must be defined. There are no inherited defaults.
 * the types (integers, strings, booleans, etc) in the property tables below must be respected.
 
-**4** - Create a config pipeline in Cloud Manager, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#managing-in-cloud-manager). Sandboxes and rapid development environments (RDEs) do not support purging.  
+**4** - Create a config pipeline in Cloud Manager, as described in the [config pipeline article.](/help/operations/config-pipeline.md#managing-in-cloud-manager) Sandboxes and rapid development environments (RDEs) do not support purging.  
 
 ### Version Purge {#version-purge}
 
