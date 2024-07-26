@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media best practices
-description: Learn about best practices in Dynamic Media when it comes to working with images and video.
+description: Learn about best practices in Dynamic Media when it comes to working with images and video and best practices for Dynamic Media Viewers.
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
@@ -62,6 +62,23 @@ After syncing your assets, Selective Publish gives you control over which assets
 These two best practices help you achieve better control, governance, and productivity over your rich-media content. 
 
 Want to learn more? Go to [Configure Selective Publish at the folder level in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
+
+
+## Dynamic Media Viewers
+
+Dynamic Media best practices are essential guidelines designed to optimize the performance, functionality, and user experience of Dynamic Media assets within Adobe Experience Manager as a Cloud Service. These practices ensure that assets are properly synchronized, published, and configured to use the full capabilities of Dynamic Media. 
+
+By following these best practices, you can achieve seamless integration, efficient asset management, and enhanced viewer interactions. Synchronizing assets, using smart cropping, and adhering to JavaScript file inclusion guidelines are all important practices. These recommendations help maintain the integrity and reliability of media delivery across various platforms and devices.
+
+* **Synchronize Viewer Assets:** Ensure that all viewer assets are synchronized with Dynamic Media before using the player. For troubleshooting viewer, go to the [Troubleshoot Dynamic Media Viewers](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) article.
+* **Sample Manager Page:** Access the sample manager page at `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`.
+* **Publish Assets:** Make sure that assets are published before viewing them in delivery viewers.
+* **Autoplay Videos Muted:** For autoplay functionality in videos, use muted video settings because browsers restrict playing videos with volume.
+* **Smart Cropping:** Use the Image v3 component for smart cropping to enhance image asset presentation.
+* **JavaScript File Inclusion:** Only include the primary viewer JavaScript file on your page. Avoid referencing additional JavaScript files that the viewer's runtime logic may download. Specifically, do not directly link to the HTML5 SDK `Utils.js` library from the `/s7viewers` context path (known as consolidated SDK include). The viewer's logic manages the location of `Utils.js` or similar runtime viewer libraries, which can change between releases. Adobe does not retain older versions of secondary viewer includes on the server, so directly referencing them can break viewer functionality in future updates.
+* **Embedding Guidelines:** Use the documentation for embedding guidelines that are specific to each viewer. 
+Want to learn more? Go to [Viewers for AEM Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers).
+* **SDK Tutorial and Examples:** Review the [Viewer SDK Tutorial](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) and [HTML5 SDK application examples](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) for a thorough understanding of SDK component APIs.
 
 
 ## Prepare assets for delivery
@@ -150,7 +167,6 @@ Remember, these best practices align well with Google's image SEO best practices
 
 Want to learn more? Go to [URL structure best practices for Google](https://developers.google.com/search/docs/crawling-indexing/url-structure) and [Google image SEO best practices](https://developers.google.com/search/docs/appearance/google-images)
 
-
 ### Dynamically enhance images and create visual effects using commands
 
 **Business case:** *Apply rich visual effects to images.*
@@ -185,7 +201,7 @@ If you are looking to superimpose a logo or icon on an existing image, Dynamic M
 | --- | --- |
 | **Upload and publish the base image** | First, upload and publish the base image on which you want to superimpose the logo or icon. You can use any image as your base.<br>For example, here is a base image:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa). | 
 | **Upload and publish the logo or icon image** | Next, upload and publish the image that you want to superimpose over the base image. This image should be a transparent PNG with the logo or icon you want to overlay.<br>Here is the transparent PNG image of a star object with transparency effects that is going to be superimposed:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
-| **Apply the Dynamic Media URL** | Now, create a Dynamic Media URL that combines the base image and the logo or icon image. You can use URL commands to achieve this effect.<br>The URL structure looks something like this:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png)<br>where<br>&bull; `hotspotRetailBaseImage` is the base image.<br>&bull; `starxp` is the logo/icon image.<br>&bull; `layer=1` specifies that the logo or icon should be layered over the base image.<br>&bull; `scale=1.25` adjusts the size of the logo/icon.<br>&bull; `posN=0.33,-.25` determines the position of the logo/icon relative to the base image.<br>&bull; `fmt=png` ensures that the output is in PNG format. |
+| **Apply the Dynamic Media URL** | Now, create a Dynamic Media URL that combines the base image and the logo or icon image. You can use URL commands to achieve this effect.<br>The URL structure looks something like this:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png)<br>where the asset<br>&bull; `hotspotRetailBaseImage` is the base image.<br>&bull; `starxp` is the logo/icon image.<br>&bull; `layer=1` specifies that the logo or icon should be layered over the base image.<br>&bull; `scale=1.25` adjusts the size of the logo/icon.<br>&bull; `posN=0.33,-.25` determines the position of the logo/icon relative to the base image.<br>&bull; `fmt=png` ensures that the output is in PNG format. |
 
 What to learn more? Go to [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) for more details on the `src` command and other Dynamic Media URL commands.
 
@@ -240,6 +256,28 @@ Let's explore a use case that involves the following living room image:
 
 Feel free to explore these variations for your specific needs.
 Want to learn more about the commands available within a URL? Go to [Command reference](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference).
+
+### Deliver GIF images
+
+**Business case:** *Stream GIFs using Dynamic Media*
+
+You can upload and deliver GIFs through Dynamic Media. To render an animated GIF, replace `is/image` with `is/content` in the URL. For example, if you uploaded `abc.gif`, use the following:
+
+* This URL path renders a static view of the GIF:
+
+  ```
+  https://your.domain.com/is/image/yourfolder/abc
+  ```
+
+* This URL path renders the animation view of the GIF:
+
+  ```
+  https://your.domain.com/is/content/yourfolder/abc
+  ```
+
+>[!NOTE]
+>
+>When using `is/content` in the URL path, image transformation commands are not applied to the asset.
 
 ### Publish a video for my website
 
@@ -343,3 +381,11 @@ Adobe recommends that you use Smart Imaging's capabilities rather than manually 
 By relying on Smart Imaging, you can ensure that your images are delivered in the most efficient manner possible, tailored to each user's browsing environment. This approach simplifies the process and can lead to improved performance in terms of image loading times and overall user experience.
 
 Want to learn more? Go to [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md).
+
+### Post delivery of assets to customers
+
+**Business case:** *After publishing new content or overwriting existing content, how can it be ensured that the changes appear immediately on the CDN?*
+
+The CDN (Content Delivery Network) caches Dynamic Media assets for quick delivery to customers. When updates are made to these assets, it is important for the changes to take effect immediately on the website. By purging or invalidating the CDN cache, assets delivered by Dynamic Media can be updated quickly. This approach eliminates the need to wait for the cache to expire based on the TTL (Time To Live) value, which is typically set to ten hours. Instead, a request can be sent from within the Dynamic Media user interface to expire the cache within minutes.
+
+Want to learn more? Go to [Invalidate the CDN cache by way of Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
