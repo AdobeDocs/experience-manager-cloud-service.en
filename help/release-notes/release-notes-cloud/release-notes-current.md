@@ -3,6 +3,8 @@ title: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Serv
 description: Current release notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+feature: Release Information
+role: Admin
 ---
 # Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -16,31 +18,25 @@ The following section outlines the feature release notes for the current (latest
 
 >[!NOTE]
 >
->See [Recent Documentation Updates](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates) for details of documentation updates not directly related to a release.
+>To receive a monthly email notification about updates to Experience Cloud release notes, subscribe to the [Adobe Priority Product Update](https://www.adobe.com/subscription/priority-product-update.html).
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2024.6.0) is June 27, 2024. The next feature release (2024.7.0) is planned for July 25, 2024.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2024.7.0) is July 25, 2024. The next feature release (2024.8.0) is planned for August 29, 2024.
 
 ## Maintenance Release Notes {#maintenance}
 
 You can find the latest maintenance release notes [here](/help/release-notes/maintenance/latest.md).
 
-<!--  ## Release Video {#release-video}
+## Release Video {#release-video}
 
-Have a look at the June 2024 Release Overview video for a summary of the features added in the 2024.6.0 release:
+Have a look at the July 2024 Release Overview video for a summary of the features added in the 2024.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3429503?quality=12)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3431707?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### New feature in Experience Manager Sites {#new-feature-sites}
-
-**Real Use Monitoring (RUM) Data Service** {#real-use-monitoring}
-
-The [Real Use Monitoring (RUM) Data Service](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) is now generally available, enabling client-side data collection for AEM as a Cloud Service. This service provides a more accurate reflection of user interactions, ensuring a reliable measure of website engagement. It offers customers advanced insights into their page traffic and performance, presenting a valuable opportunity to understand and enhance page performance.
 
 ### Early Adopter Program {#sites-early-adopter}
 
@@ -58,36 +54,21 @@ Interested in trying out the feature and sharing feedback? Send an email to aemc
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New features in Experience Manager Assets {#new-features-assets}
+**Upload assets using Asset Selector**
 
-
-
-**Content Hub**
-
-Content Hub is available as part of Experience Manager Assets as a Cloud Service for democratizing access to on-brand content for organizations and their business partners. With Content Hub, you can easily find and distribute assets, reuse and create new on-brand variations, and accelerate activation at scale.
-
-![Content Hub user interface](/help/release-notes/assets/content-hub-ui.png)
-
-**Dynamic Media with OpenAPI Capabilities**
-
-Dynamic Media with OpenAPI capabilities extends the DAM across Adobe and third-party applications, enabling access to on brand approved digital assets, in any channel, via Asset Selector or OpenAPI stack. Key tenets - no binary copies, assets are optimized and transformed at the edge for fast performance, deliver assets public or secure.
-
-![New Dynamic Media data flow diagram](/help/assets/assets/dm-openapi-dfd.png)
-
+Asset Selector now offers ability for content authors to upload final assets directly from the selector, by either dragging or by browsing from the local file system. This allows final assets to be uploaded to the DAM from the application of your choice.
 
 ### New features in Assets view {#assets-view-new-features}
 
-**More options are available in the Assets Insights dashboard**
+**Content credentials integration**
 
-Asset Count by asset type and size are now available in the Assets Insights dashboard. These options deliver real-time data in your Assets view environment. They detail the count and percentage of assets by size range and asset type.
+Experience Manager Assets now supports content credentials for supported image formats. This provides information on the lineage of the asset and how it was created, including if it was modified using GenAI.
 
-**Updates to embedded Adobe Express editor**
+![Content credentials](/help/assets/assets/content-credentials.png)
 
-* Improved User Experience for saving as a new asset versus saving as a new version.
+**Visual previews of folder contents**
 
-* Export of multipage Express documents (previously only single page was supported) in both multipage PDF and image formats. Selecting image formats saves each page as a distinct asset in the DAM for downstream distribution.
-
-* Support for adding metadata in the Save dialog while saving an asset.
+Experience Manager Assets now displays visual previews of folder contents on the folder thumbnail when browsing or searching for content, which improves the discoverability of assets available within AEM Assets repository.
 
 <!--
 
@@ -104,25 +85,11 @@ When looking at the asset details, any image with content credentials added, suc
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-<!-- 
-
-* **Configure a shard for Adobe Sign for AEM Forms**: Adobe distributes Acrobat Sign API around the globe in many deployment units called "shards." Each shard serves a customer's account, such as NA1, NA2, NA3, EU1, JP1, AU1, IN1, and others. The shard names correspond to geographic locations. You can now use more than one shard while using Adobe Sign integration with AEM Forms. 
-
---> 
-
 ### New features in AEM Forms {#forms-new-prerelease-features}
 
 #### Enhanced Visual Rule Editor for Core Component Based Adaptive Forms
 
-This release brings a significant upgrade to the Visual Rule Editor for adaptive forms based on core components. You can now: 
-
-   * Create rules in the Visual Rule Editor to [override the default form submission success/failure messages](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers). 
-
-   * In the Adaptive Forms Rule Editor, added the ability to [select different types of fields for the WHEN operation](/help/forms/rule-editor-core-components.md#allowed-multiple-fields-in-when).
-
-   * A form author can now apply custom functions to [preprocess data before submission](/help/forms/create-and-use-custom-functions.md#use-case-submit-altered-data-to-the-server). 
-
-   * Use the [**Save as Draft**](/help/forms/save-core-component-based-form-as-draft.md) functionality to save partially completed forms for later submission. This functionality is useful in scenarios where users need to interrupt filling out a form and come back to it later.
+Adaptive form authors can use repeatable form fields in out of the box functions available in visual rule editor for core components to build complex business logic in the forms, without requiring customization or development team's assistance.
  
 ### Early Access features in AEM Forms {#forms-new-early-access-features}
 
@@ -130,33 +97,54 @@ The AEM Forms Early Access Program program offers a unique opportunity to you to
 
 This release notes lists the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
 
-#### Enhanced bot protection methods
+#### Author adaptive forms using Universal Editor
 
-AEM Forms has enhanced its security features by adding support for two popular CAPTCHA solutions: Cloudflare Turnstile and hCaptcha. This functionality complements the existing Google reCAPTCHA, offering users additional options. It enhances flexibility in safeguarding their forms from bots and spam submissions.
-
-* **Cloudflare Turnstile**: This frictionless CAPTCHA verifies users through a simple challenge that does not require explicit interaction. It seamlessly integrates into your forms, improving the user experience.
-* **hCaptcha**: This privacy-focused CAPTCHA offers a user-friendly alternative with a focus on data privacy. It aims to strike a balance between security and user experience.
-* **Google reCAPTCHA**: AEM Forms continue to support both reCAPTCHA v2 and reCAPTCHA Enterprise, offering a reliable and well-established solution.
-
-By offering multiple CAPTCHA options, AEM Forms have empowered you to select the solution that best aligns with your specific needs. 
-
-Ready to integrate any of these CAPTCHA solutions with your Adaptive Forms? Adobe's documentation provides detailed instructions for each: [Cloudflare Turnstile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), and [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
-
-
-### Forms Service
-
-Forms service generates interactive PDF forms for data capture. It can also be used to import or export data to and from an existing interactive PDF form and validate submitted data. Here's a breakdown of its functionalities: 
-
-* **Rendering Forms**: Generate an interactive PDF form from a template created using AEM Forms Designer and, optionally, XML data. This functionality produces a fillable PDF form optionally pre-filled with data.
-* **Data Extraction and Import**: Import data into an existing PDF form as well as extract data from a filled PDF form. Both XDP and XML data formats are supported, and importing to non-XFA PDF forms (also known as AcroForms) additionally supports FDF and XFDF data.
-* **Data Validation**: Validate submitted data, in XDP or XML format, against a template created using AEM Forms Designer.
+Leverage the Adobe Experience Manager [Universal Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) to create adaptive forms using WYSIWYG drag-drop authoring, for both headless and headful enrollment experiences, delivered via Edge Delivery Service. Adaptive form authors can easily create and launch experiments for variations of the forms in the web pages and determine the best performing experiences for end users.
 
 >[!IMPORTANT] 
 >
 > If you are interested in joining Adobe's Early Access Program for any early access innovation, simply send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) to request access. You can request access to all or any specific innovation.  
 
-     
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+
+### Purge Content at the CDN with a Self-Serve API Key {#purge-cdn}
+
+Setting TTL using the HTTP Cache-Control header is an effective approach to balance content delivery performance and content freshness. However, in scenarios where it is critical to immediately serve updated content, it may be beneficial to directly purge the CDN cache .
+
+[Learn how](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) to self-serve configure a purge API token using the Cloud Manager configuration pipeline, so you can [invoke the purge APIs](/help/implementing/dispatcher/cdn-cache-purge.md), with any of these variations:
+* Single URL
+* Multiple URLs using a tag
+* Full CDN cache purge
+
+### Self-Serve Configuration of X-AEM-Edge-Key for Customer-Managed CDN {#customermanaged-keys}
+
+Previously, a support ticket was needed to generate the X-AEM-Edge-Key required for configuration of a customer-managed CDN. This is now self-service by declaring the key value in a configuration file that is deployed using the Configuration Pipeline, removing any delay in onboarding a new environment. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
+
+### Traffic Filter Rules Alerts {#traffic-filter-rules-alerts}
+
+Traffic Filter Rules, which include the optionally licensable Web Application Firewall (WAF) rules, lets you configure what traffic should be blocked. 
+
+Now you can [subscribe to alerts](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts) whenever your traffic filter rules are triggered. Actions Center email notifications keep you informed when certain traffic conditions occur so you can take appropriate measures. 
+
+### Content Delivery-related Early Adopter Programs {#foundation-early-adopter}
+
+Email **<aemcs-cdn-config-adopter@adobe.com>**, indicating which of the early adopter programs below you are interested in.
+
+#### Basic Authentication at the CDN (Early Adopter Program) {#basicauth-cdn}
+
+Protect certain content resources by popping up a basic auth dialog requiring a username and password. This feature primarily targets light authentication use cases, like business stakeholders reviewing content, rather than serving as a comprehensive solution for end-user access rights. The list of username and passwords in managed through a configuration file in git that is deployed via Configuration Pipeline, with a reference to secret-type Cloud Manager environment variables. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
+
+#### Client-Side Redirects (Early Adopter Program) {#client-side-redirects-early-adopter}
+
+Configure 301/302 client-side redirects in source control, and deploy to the CDN. [Learn more](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Note that there are several other features already available related to [CDN configuration](/help/implementing/dispatcher/cdn-configuring-traffic.md), including request and response transformations, and routing traffic to off-AEM sites.
+
+#### Business Users Can Declare Redirects Outside of Git (Early Adopter Program) {#apache-rewritemaps-early-adopter}
+
+Similar to AEM 6.5, Apache/dispatcher ingest rewrite maps placed in a specific location in the publish repository, and load them, without requiring a web tier pipeline execution. This approach let business users declare redirects using a spreadsheet or a UI, like ACS Commons Redirect Map Manager or a custom application. <!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
+
+#### Edge Side Includes (ESI) for Loading Dynamic Content (Early Adopter Program) {#esi-early-adopter}
+
+The Adobe Managed CDN now supports [Edge Side Includes (ESI)](/help/implementing/dispatcher/edge-side-includes.md), a markup language for edge level dynamic web content assembly. By including ESI snippets, you can cache the overall HTML page at the CDN with higher TTLs, while more frequently fetching from origin those smaller sections that require higher cadence updates (lower TTLs). <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
 ### Content Health-Related Actions Center Notifications Early Adopter Program {#actions-center-notifications}
 
@@ -186,44 +174,6 @@ Actions Center proactively notifies you when completed workflows over 90 days ol
 
 Actions Center proactively notifies you when a missing Sling resource is detected. This approach lets you add the missing resource and prevent the failure of certain AEM Assets features.
 
-### Content Delivery-related Early Adopter Programs {#foundation-early-adopter}
-
-Email **<aemcs-cdn-config-adopter@adobe.com>**, indicating which of the early adopter programs below you are interested in.
-
-#### Basic Authentication at the CDN (Early Adopter Program) {#basicauth-cdn}
-
-Protect certain content resources by popping up a basic auth dialog requiring a username and password. This feature primarily targets light authentication use cases, like business stakeholders reviewing content, rather than serving as a comprehensive solution for end-user access rights. The list of username and passwords in managed through a configuration file in git that is deployed via Configuration Pipeline, with a reference to secret-type Cloud Manager environment variables. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
-
-#### Purge Content at the CDN With a Self-Serve API Key (Early Adopter Program) {#purge-cdn}
-
-Register a CDN purge API key in a self-service way, and use it to invalidate content at the CDN, either globally, or for one or more resources. [Learn more](/help/implementing/dispatcher/cdn-cache-purge.md).  
-
-<!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
-
-#### Self-Serve Creation of X-AEM-Edge-Key for Customer-Managed CDN (BYOCDN) (Early Adopter Program) {#byocdn-keys}
-
-Previously, a support ticket was needed to generate the X-AEM-Edge-Key required for configuration of a customer-managed CDN. This outcome can now be accomplished in a self-serve way through a configuration file that is deployed using the Configuration Pipeline, removing any delay in onboarding a new environment. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
-
-<!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
-
-#### Client-Side Redirects (Early Adopter Program) {#client-side-redirects-early-adopter}
-
-Configure 301/302 client-side redirects in source control, and deploy to the CDN. [Learn more](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Note that there are several other features already available related to [CDN configuration](/help/implementing/dispatcher/cdn-configuring-traffic.md), including request and response transformations, and routing traffic to off-AEM sites.
-
-#### Traffic Filter Rules Alerts (Early Adopter Program) {#traffic-filter-rules-alerts-early-adopter}
-
-The recently released [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md), which include the optionally licensable Web Application Firewall (WAF) rules, lets you configure what traffic should be allowed or denied. 
-
-Join the early adopter program so you can be alerted whenever your traffic filter rules are triggered. Actions Center email notifications keep you informed when certain traffic conditions occur so you can take appropriate measures. 
-
-#### Business Users Can Declare Redirects Outside of Git (Early Adopter Program) {#apache-rewritemaps-early-adopter}
-
-Similar to AEM 6.5, Apache/dispatcher ingest rewrite maps placed in a specific location in the publish repository, and load them, without requiring a web tier pipeline execution. This approach let business users declare redirects using a spreadsheet or a UI, like ACS Commons Redirect Map Manager or a custom application. <!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
-
-#### Edge Side Includes (ESI) for Loading Dynamic Content (Early Adopter Program) {#esi-early-adopter}
-
-The Adobe Managed CDN now supports [Edge Side Includes (ESI)](/help/implementing/dispatcher/edge-side-includes.md), a markup language for edge level dynamic web content assembly. By including ESI snippets, you can cache the overall HTML page at the CDN with higher TTLs, while more frequently fetching from origin those smaller sections that require higher cadence updates (lower TTLs). <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
-
 ## [!DNL Experience Manager] Guides {#guides}
 
 You can find a complete list of new and enhanced features of the latest release of Adobe Experience Manager Guides [here](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0).
@@ -247,4 +197,3 @@ You can find a complete list of Generate Variations releases [here](/help/genera
 ## Experience Cloud Release Notes {#experience-cloud}
 
 You can find information about releases of other Experience Cloud applications [here](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current).
-To receive a monthly email notification about updates to Experience Cloud release notes, subscribe to the [Adobe Priority Product Update](https://www.adobe.com/subscription/priority-product-update.html). 

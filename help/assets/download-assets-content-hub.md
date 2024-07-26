@@ -2,6 +2,7 @@
 title: Download assets from Content Hub
 description: Learn how to download assets from the Content Hub portal
 role: User
+exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
 ---
 # Download assets from the Content Hub {#download-assets}
 
