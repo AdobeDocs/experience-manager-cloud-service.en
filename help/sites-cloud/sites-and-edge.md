@@ -33,7 +33,7 @@ A core philosophy of Edge Delivery Services is *velocity*. This starts with the 
 
 They can get up-and-running customizing their own project and components for Edge Delivery Services in less than thirty minutes. Start by cloning our boilerplate project on GitHub and then just commit your changes. Your customization are instantly live!
 
-Please see the document [Developing for Edge Delivery Services](/help/edge/developing.md) to learn more about developing for Edge Delivery Services.
+Please see the document [Getting Started - Developer Tutorial](https://www.aem.live/developer/tutorial) to learn more about developing for Edge Delivery Services.
 
 ## A New Publish Tier {#publish-tier}
 
