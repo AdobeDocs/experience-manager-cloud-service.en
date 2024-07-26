@@ -26,6 +26,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2024 {#2024}
+      + [Release Notes for 2024.6.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-6-0.md)
       + [Release Notes for 2024.5.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-5-0.md)
       + [Release Notes for 2024.4.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-4-0.md)
       + [Release Notes for 2024.3.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-3-0.md)
@@ -324,8 +325,10 @@ user-guide-title: AEM as a Cloud Service
       + [Style System](/help/sites-cloud/authoring/page-editor/style-system.md)
       + [Undo Redo Limitations](/help/sites-cloud/authoring/page-editor/undo-redo.md)
     + Universal Editor {#universal-editor}
+      + [Navigating the Universal Editor](/help/sites-cloud/authoring/universal-editor/navigation.md)
       + [Authoring Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
       + [Publishing Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
+      + [Content Inheritance in the Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md)
     + Fragments {#fragments}
       + [Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md)
       + [Experience Fragments](/help/sites-cloud/authoring/fragments/experience-fragments.md)
@@ -678,6 +681,7 @@ user-guide-title: AEM as a Cloud Service
         + [Submit an Adaptive Form to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
         + [Submit an Adaptive Form to Microsoft&reg; OneDrive](/help/forms/configure-submit-action-onedrive.md)
         + [Connect an Adaptive Form to Microsoft&reg; SharePoint](/help/forms/configure-submit-action-sharepoint.md)
+        + [Configure SharePoint Site with limited access using authorization scope](/help/forms/configure-sharepoint-site-limited-access.md)
         + [Integrate AEM Adaptive Form with AEM Workflow](/help/forms/configure-submit-action-workflow.md)
         + [Configure Submit to REST Endpoint submit action for Adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
         + [Configure the Send Email submit action for an Adaptive Form](/help/forms/configure-submit-action-send-email.md)
@@ -1245,6 +1249,7 @@ user-guide-title: AEM as a Cloud Service
   + [Maintenance Tasks](/help/operations/maintenance.md)
   + [Self-Service Restore](/help/operations/restore.md)
   + [Asynchronous Jobs](/help/operations/asynchronous-jobs.md)
+  + [Using Config Pipelines](/help/operations/config-pipeline.md)
   + [Removal of the generic lucene index](/help/operations/removal-generic-lucene-index.md)
   + [Query and Indexing Best Practices](/help/operations/query-and-indexing-best-practices.md)  
 + Compliance {#compliance}
