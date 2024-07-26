@@ -5,6 +5,7 @@ feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
 ---
+
 # CDN in AEM as a Cloud Service {#cdn}
 
 >[!CONTEXTUALHELP]
@@ -37,7 +38,7 @@ See [Managing IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/in
 
 ### Configuring Traffic at the CDN {#cdn-configuring-cloud}
 
-Rules to configure CDN traffic and filters can be declared in a configuration file and deployed to the CDN, by using the [Cloud Manager's Configuration Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). For more details, see [Configuring Traffic at the CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md) and [Traffic Filter rules including WAF rules](/help/security/traffic-filter-rules-including-waf.md).
+Rules to configure CDN traffic and filters can be declared in a configuration file and deployed to the CDN, by using the [Cloud Manager's config pipelines.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline) For more details, see [Configuring Traffic at the CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md) and [Traffic Filter rules including WAF rules](/help/security/traffic-filter-rules-including-waf.md).
 
 ### Configuring CDN Error Pages {#cdn-error-pages}
 
@@ -64,7 +65,7 @@ Configuration instructions:
 1. Set SNI to the Adobe CDN's ingress.
 1. Set the Host header to the origin domain. For example: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Set the `X-Forwarded-Host` header with the domain name so AEM can determine the host header. For example: `X-Forwarded-Host:example.com`.
-1. Set `X-AEM-Edge-Key`. The value should come from Adobe.
+1. Set `X-AEM-Edge-Key`. The value should be configured using a Cloud Manager config pipeline, as described in [this article.](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value)
 
    * Needed so that the Adobe CDN can validate the source of the requests and pass the `X-Forwarded-*` headers to the AEM application. For example,`X-Forwarded-For` is used to determine the client IP. So, it becomes the responsibility of the trusted caller (that is, the customer-managed CDN) to ensure the correctness of the `X-Forwarded-*` headers (see the note below).
    * Optionally, access to Adobe CDN's ingress can be blocked when an `X-AEM-Edge-Key` is not present. Inform Adobe if you need direct access to Adobe CDN's ingress (to be blocked).
@@ -73,7 +74,7 @@ See the [Sample CDN vendor configurations](#sample-configurations) section for c
 
 Before accepting live traffic, you should validate with Adobe's customer support that the end-to-end traffic routing is functioning correctly.
 
-After obtaining the `X-AEM-Edge-Key`, you can test that the request is routed correctly as follows.
+After setting the `X-AEM-Edge-Key`, you can test that the request is routed correctly as follows.
 
 In Linux&reg;:
 

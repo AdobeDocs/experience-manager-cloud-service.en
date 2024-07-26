@@ -18,7 +18,7 @@ Most of these traffic filter rules are available to all AEM as a Cloud Service S
 
 A subcategory of traffic filter rules requires either an Enhanced Security license or WAF-DDoS Protection license. These powerful rules are known as WAF (Web Application Firewall) traffic filter rules (or WAF rules for short) and have access to the [WAF Flags](#waf-flags-list) described later in this article.
 
-Traffic filter rules can be deployed via Cloud Manager configuration pipelines to dev, stage, and production environment types in production (non-sandbox) programs. Support for RDEs will come in the future.
+Traffic filter rules can be deployed via Cloud Manager config pipelines to dev, stage, and production environment types in production (non-sandbox) programs. Support for RDEs will come in the future.
 
 [Follow through a tutorial](#tutorial) to quickly build concrete expertise on this feature.
 
@@ -58,13 +58,13 @@ Customers may take proactive measures to mitigate application layer attacks (lay
 
 For example, at the Apache layer, customers may configure either the [Dispatcher module](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) or [ModSecurity](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) to limit access to certain content.
 
-As this article describes, traffic filter rules may be deployed to the Adobe Managed CDN, using Cloud Manager's configuration pipeline. In addition to traffic filter rules based on properties like IP address, path, and headers, or rules based on setting rate limits, customers may also license a powerful subcategory of traffic filter rules called WAF rules.
+As this article describes, traffic filter rules may be deployed to the Adobe Managed CDN, using Cloud Manager's [config pipelines.](/help/operations/config-pipeline.md) In addition to traffic filter rules based on properties like IP address, path, and headers, or rules based on setting rate limits, customers may also license a powerful subcategory of traffic filter rules called WAF rules.
 
 ## Suggested Process {#suggested-process}
 
 The following is a high-level recommended end-to-end process for coming up with the right traffic filter rules:
 
-1. Configure non-production and production configuration pipelines, as described in the [Setup](#setup) section.
+1. Configure non-production and production config pipelines, as described in the [Setup](#setup) section.
 1. Customers who have licensed the subcategory of WAF traffic filter rules should enable them in Cloud Manager.
 1. Read and try out the tutorial to concretely understand how to use traffic filter rules, including WAF rules if they've been licensed. The tutorial walks you through deploying rules to a dev environment, simulating malicious traffic, downloading the [CDN logs](#cdn-logs), and analyzing them in [dashboard tooling](#dashboard-tooling).
 1. Copy the recommended starter rules to `cdn.yaml` and deploy the configuration to the production environment in log mode.
@@ -74,14 +74,7 @@ The following is a high-level recommended end-to-end process for coming up with 
 
 ## Setup {#setup}
 
-1. First, create the following folder and file structure the top-level folder in your project in Git:
-
-   ```
-   config/
-        cdn.yaml
-   ```
-
-1. `cdn.yaml` should contain metadata and a list of traffic filters rules and WAF rules.
+1. Create a file `cdn.yaml` with a set of traffic filter rules, including WAF rules.
 
    ```
    kind: "CDN"
@@ -102,33 +95,22 @@ The following is a high-level recommended end-to-end process for coming up with 
          action: block
    ```
 
-  The `kind` parameter should be set to `CDN` and the version should be set to the schema version, which is `1`. See the following examples.
+    See the [config pipeline article](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the `data` node. The `kind` property value should be set to *CDN* and the version should be set to `1`.
 
-
-   <!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (for example, "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
 
 1. If WAF rules are licensed, you should enable the feature in Cloud Manager, as described below for both the new and existing program scenarios.
 
    1. To configure WAF on a new program, check the **WAF-DDOS Protection** check-box on the **Security** tab when you [add a production program.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
 
-   1. To configure WAF on an existing program, [editing your program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) and on the **Security** tab uncheck or check the **WAF-DDOS** option at any time.
+   1. To configure WAF on an existing program, [edit your program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) and on the **Security** tab uncheck or check the **WAF-DDOS** option at any time.
 
-1. For environment types other than RDE, create a targeted deployment config pipeline in Cloud Manager.
-
-   * [See configuring production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
-   * [See configuring non-production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
-
-For RDEs, the command line is used, but RDE is not currently supported.
-
-**Notes**
-
-* You can use `yq` to validate locally the YAML formatting of your configuration file (for example, `yq cdn.yaml`).
+1. Create a config pipeline in Cloud Manager, as described in [config pipeline article.](/help/operations/config-pipeline.md#managing-in-cloud-manager) The pipeline will reference a top level `config` folder with the `cdn.yaml` file placed somewhere below, as [described here](/help/operations/config-pipeline.md#folder-structure).
 
 ## Traffic Filter Rules Syntax {#rules-syntax}
 
-You can configure `traffic filter rules` to match on patterns such as IPs, user agent, request headers, hostname, geo, and url.
+You can configure *traffic filter rules* to match on patterns such as IPs, user agent, request headers, hostname, geo, and url.
 
-Customers who license the Enhanced Security or WAF-DDoS Protection Security offering can also configure a special category of traffic filter rules called `WAF traffic filter rules` (or WAF rules for short) that reference one or more [WAF flags](#waf-flags-list).
+Customers who license the Enhanced Security or WAF-DDoS Protection Security offering can also configure a special category of traffic filter rules called *WAF traffic filter rules* (or WAF rules for short) that reference one or more [WAF flags](#waf-flags-list).
 
 Here's an example of a set of traffic filter rules, which also includes a WAF rule.
 
@@ -240,9 +222,9 @@ Actions are prioritized according to their types in the following table, which i
 
 | **Name**  | **Allowed Properties**  | **Meaning**  |
 |---|---|---|
-|  **allow** | `wafFlags` (optional), `alert` (optional, not yet released)  | if wafFlags is not present, stops further rule processing and proceeds to serving response. If wafFlags is present, it disables specified WAF protections and proceeds to further rule processing. <br>If alert is specified, an Actions Center notification is sent if the rule is triggered 10 times in a 5-minute window. This feature is not yet released; see the [Traffic Filter Rules Alerts](#traffic-filter-rules-alerts) section for information on how to join the early adopter program. |
-|  **block** | `status, wafFlags` (optional and mutually exclusive), `alert` (optional, not yet released)  | if wafFlags is not present, returns HTTP error bypassing all other properties, error code is defined by status property or defaults to 406. If wafFlags is present, it enables specified WAF protections and proceeds to further rule processing. <br>If alert is specified, an Actions Center notification is sent if the rule is triggered 10 times in a 5-minute window. This feature is not yet released; see the [Traffic Filter Rules Alerts](#traffic-filter-rules-alerts) section for information on how to join the early adopter program. |
-| **log**  | `wafFlags` (optional), `alert` (optional, not yet released)  | logs the fact that the rule was triggered, otherwise does not affect the processing. wafFlags has no effect. <br>If alert is specified, an Actions Center notification is sent if the rule is triggered 10 times in a 5-minute window. This feature is not yet released; see the [Traffic Filter Rules Alerts](#traffic-filter-rules-alerts) section for information on how to join the early adopter program. |
+|  **allow** | `wafFlags` (optional), `alert` (optional)  | if wafFlags is not present, stops further rule processing and proceeds to serving response. If wafFlags is present, it disables specified WAF protections and proceeds to further rule processing. <br>If alert is specified, an Actions Center notification is sent if the rule is triggered 10 times in a 5-minute window. Once an alert is triggered for a particular rule, it will not fire off again until the next day (UTC). |
+|  **block** | `status, wafFlags` (optional and mutually exclusive), `alert` (optional)  | if wafFlags is not present, returns HTTP error bypassing all other properties, error code is defined by status property or defaults to 406. If wafFlags is present, it enables specified WAF protections and proceeds to further rule processing. <br>If alert is specified, an Actions Center notification is sent if the rule is triggered 10 times in a 5-minute window. Once an alert is triggered for a particular rule, it will not fire off again until the next day (UTC). |
+| **log**  | `wafFlags` (optional), `alert` (optional)  | logs the fact that the rule was triggered, otherwise does not affect the processing. wafFlags has no effect. <br>If alert is specified, an Actions Center notification is sent if the rule is triggered 10 times in a 5-minute window. Once an alert is triggered for a particular rule, it will not fire off again until the next day (UTC). |
 
 ### WAF Flags List {#waf-flags-list}
 
@@ -274,6 +256,8 @@ The `wafFlags` property, which can be used in the licensable WAF traffic filter 
 | SCANNER  |  Scanner | Identifies popular scanning services and tools  |
 | RESPONSESPLIT  | HTTP Response Splitting  | Identifies when CRLF characters are submitted as input to the application to inject headers into the HTTP response  |
 | XML-ERROR  | XML Encoding Error  | A POST, PUT, or PATCH request body that is specified as containing XML within the "Content-Type" request header but contains XML parsing errors. This is often related to a programming error or an automated or malicious request.  |
+| DATACENTER  | Datacenter | Identifies the request as coming from a known hosting provider. This type of traffic is not commonly associated with a real end user. |
+
 
 ## Considerations {#considerations}
 
@@ -488,16 +472,14 @@ data:
 
 ## Traffic Filter Rules Alerts {#traffic-filter-rules-alerts}
 
->[!NOTE]
->
->This feature is not yet released. To gain access through the early adopter program, email **aemcs-waf-adopter@adobe.com**.
+A rule can be configured to send an Actions Center notification if it is triggered ten times within a 5-minute window. Such a rule alerts you when certain traffic patterns occur so that you can take any necessary measures. Once an alert is triggered for a particular rule, it will not fire off again until the next day (UTC).
 
-A rule can be configured to send an Actions Center notification if it is triggered ten times within a 5-minute window. Such a rule alerts you when certain traffic patterns occur so that you can take any necessary measures. Learn more about [Actions Center](/help/operations/actions-center.md), including how to set up the required Notification Profiles to receive emails.
+Learn more about [Actions Center](/help/operations/actions-center.md), including how to set up the required Notification Profiles to receive emails.
 
 ![Actions Center Notification](/help/security/assets/traffic-filter-rules-actions-center-alert.png)
 
 
-The alert property (currently prefixed with *experimental* since the feature is not yet released) can be applied to the action node for all action types (allow, block, log).
+The alert property can be applied to the action node for all action types (allow, block, log).
 
 ```
 kind: "CDN"
@@ -514,7 +496,7 @@ data:
             - { reqProperty: tier, equals: publish }
         action:
           type: block
-          experimental_alert: true
+          alert: true
 ```
 
 ## Default Traffic Spike at Origin Alert {#traffic-spike-at-origin-alert}
@@ -523,11 +505,11 @@ data:
 >
 >This feature is being gradually rolled out.
 
-An [Actions Center](/help/operations/actions-center.md) email notification will be sent when there is a significant amount of traffic sent to the origin, where a high threshold of requests are coming from the same IP address, thus suggestive of a DDoS attack. 
+An [Actions Center](/help/operations/actions-center.md) email notification will be sent when there is a significant amount of traffic sent to the origin, where a high threshold of requests are coming from the same IP address, thus suggestive of a DDoS attack.
 
 If this theshold is met, Adobe will block traffic from that IP address, but it is recommended to take additional measures to protect your origin, including configuring rate limit traffic filter rules to block traffic spikes at lower thresholds. See the [Blocking DoS and DDoS attacks using traffic rules tutorial](#tutorial-blocking-DDoS-with-rules) for a guided walk-through.
 
-This alert is enabled by default, but it can be disabled using the *enable_ddos_alerts* property, set to false.
+This alert is enabled by default, but it can be disabled using the *defaultTrafficAlerts* property, set to false. Once the alert is triggered, it will not fire off again until the next day (UTC).
 
    ```
    kind: "CDN"
@@ -536,7 +518,7 @@ This alert is enabled by default, but it can be disabled using the *enable_ddos_
      envTypes: ["dev"]
    data:
      trafficFilters:
-       enable_ddos_alerts: false
+      defaultTrafficAlerts: false
    ```
 
 ## CDN Logs {#cdn-logs}
@@ -749,7 +731,7 @@ Two tutorials are available.
 
 The tutorial walks you through:
 
-* Setting up the Cloud Manager configuration pipeline
+* Setting up the Cloud Manager config pipeline
 * Using tools to simulate malicious traffic
 * Declaring traffic filter rules, including WAF rules
 * Analyzing results with dashboard tooling

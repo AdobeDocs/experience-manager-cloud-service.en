@@ -1,10 +1,11 @@
 ---
 title: Configuring Traffic at the CDN
-description: Learn how to configure CDN traffic by declaring rules and filters in a configuration file and deploying them to the CDN by using the Cloud Manager Configuration Pipeline.
+description: Learn how to configure CDN traffic by declaring rules and filters in a configuration file and deploying them to the CDN by using a Cloud Manager config pipeline.
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
 ---
+
 # Configuring Traffic at the CDN {#cdn-configuring-cloud}
 
 AEM as a Cloud Service offers a collection of features configurable at the [Adobe-managed CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) layer that modify the nature of either incoming requests or outgoing responses. The following rules, described in detail in this page, can be declared to achieve the following behavior:
@@ -18,7 +19,7 @@ Also configurable at the CDN are Traffic Filter Rules (including WAF), which con
 
 Additionally, if the CDN cannot contact its origin, you can write a rule that references a self-hosted custom error page (which is then rendered). Learn more about this by reading the [Configuring CDN error pages](/help/implementing/dispatcher/cdn-error-pages.md) article.
 
-All these rules, declared in a configuration file in source control, are deployed by using [Cloud Manager's Configuration Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Be aware that the cumulative size of the configuration file, including traffic filter rules, cannot exceed 100KB.
+All these rules, declared in a configuration file in source control, are deployed by using the Cloud Manager [config pipeline.](/help/operations/config-pipeline.md) Be aware that the cumulative size of the configuration file, including traffic filter rules, cannot exceed 100KB.
 
 ## Order of Evaluation {#order-of-evaluation}
 
@@ -30,23 +31,23 @@ Functionally, the various features mentioned previously are evaluated in the fol
 
 Before you can configure traffic at the CDN you need to do the following:
 
-* Create this folder and file structure in the top-level folder of your Git project:
+1. Create a file named `cdn.yaml` or similar, referencing the various configuration snippets in the sections below. 
 
-```
-config/
-     cdn.yaml
-```
+    All snippets have these common properties, which are described in  the [Config Pipeline article](/help/operations/config-pipeline.md#common-syntax). The `kind` property value should be *CDN* and the `version` property should be set to *1*.
+    ```
+    kind: "CDN"
+    version: "1"
+    metadata:
+      envTypes: ["dev"]
+    ```
 
-* The `cdn.yaml` configuration file should contain both metadata and the rules described in examples below. The `kind` parameter should be set to `CDN` and the version should be set to the schema version, which is currently `1`.
+1. Place the file somewhere under a top level folder named *config* or similar, as described in [Config Pipeline article](/help/operations/config-pipeline.md#folder-structure).
 
-* Create a targeted deployment config pipeline in Cloud Manager. See [configuring production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) and [configuring non-production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). 
+1. Create a Config Pipeline in Cloud Manager, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#managing-in-cloud-manager). 
 
-**Notes**
+1. Deploy the configuration.
 
-* RDEs do not currently support the configuration pipeline.
-* You can use `yq` to validate locally the YAML formatting of your configuration file (for example, `yq cdn.yaml`).
-
-## Syntax {#configuration-syntax}
+## Rules Syntax {#configuration-syntax}
 
 The rule types in the sections below share a common syntax.
 
@@ -275,7 +276,7 @@ data:
         action:
           type: selectOrigin
           originName: example-com
-          # useCache: false
+          # skpCache: true
     origins:
       - name: example-com
         domain: www.example.com
@@ -294,7 +295,7 @@ Explained in the table below is the available action.
 | Name      | Properties               | Meaning     |
 |-----------|--------------------------|-------------|
 |**selectOrigin** |originName|Name of one of the defined origins.|
-|     |useCache (optional, default is true)|Flag whether to use caching for requests matching this rule.|
+|     |skipCache (optional, default is false)| Flag whether to use caching for requests matching this rule. By default, responses will be cached according to the response caching header (e.g., Cache-Control or Expires) |
 
 **Origins**
 
@@ -315,7 +316,7 @@ Connections to origins are SSL only and use port 443.
 There are scenarios where origin selectors should be used to route traffic through AEM Publish to AEM Edge Delivery Services:
 
 * Some content is delivered by a domain managed by AEM Publish, while other content from the same domain is delivered by Edge Delivery Services 
-* Content delivered by Edge Delivery Services would benefit from rules deployed via Configuration Pipeline, including traffic filter rules or request/response transformations
+* Content delivered by Edge Delivery Services would benefit from rules deployed via config pipeline, including traffic filter rules or request/response transformations
 
 Here is an example of an origin selector rule that can accomplish this:
 
