@@ -66,7 +66,7 @@ Want to learn more? Go to [Configure Selective Publish at the folder level in Dy
 
 ## Dynamic Media Viewers
 
-Dynamic Media best practices are essential guidelines designed to optimize the performance, functionality, and user experience of Dynamic Media assets within Adobe Experience Manager as a Cloud Service. These practices ensure that assets are properly synchronized, published, and configured to use the full capabilities of Dynamic Media. 
+Dynamic Media Viewer best practices are essential guidelines designed to optimize the performance, functionality, and user experience of Dynamic Media assets on AEM. These practices ensure that assets are properly synchronized, published, and configured to use the full capabilities of Dynamic Media. 
 
 By following these best practices, you can achieve seamless integration, efficient asset management, and enhanced viewer interactions. Synchronizing assets, using smart cropping, and adhering to JavaScript file inclusion guidelines are all important practices. These recommendations help maintain the integrity and reliability of media delivery across various platforms and devices.
 
