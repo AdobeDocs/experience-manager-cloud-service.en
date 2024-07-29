@@ -10,33 +10,39 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release X {#release-X}
+## Release 17258 {#release-17258}
 
-Summarized below are the continuous improvements for maintenance release X, which was publicly released on July 30, 2024. The previous maintenance release was release 17098.
+Summarized below are the continuous improvements for maintenance release 17258, which was publicly released on July 30, 2024. The previous maintenance release was release 17098.
 
 The 2024.8.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-X}
+### Enhancements {#enhancements-17258}
+
+* ASSETS-40873 - Allow metadata export max rows to be set via OSGI config
+* ASSETS-40399 - Updated DM Auto transcribe queue settings
+* ASSETS-31445 - Initial Dynamic Media templating features
+
+### Fixed Issues {#fixed-issues-17258}
+
+* ASSETS-39598 - Bulk Import not able to delete assets with special characters in name from S3 backend
+* ASSETS-31882 - Accessing streaming manifest file in author is forbidden
+* ASSETS-30613 - Replace asset doesn't delete and add asset in new Delivery tier
+* SITES-22940 - Unable to view content fragment as workflow payload
+* CNTBF-209 -  Backflow jobs cancellation improvements
+
+### Known Issues {#known-issues-17258}
 
 None.
 
-### Fixed Issues {#fixed-issues-X}
-
-None.
-
-### Known Issues {#known-issues-X}
-
-None.
-
-### Change Notice {#change-notice-X}
+### Change Notice {#change-notice-17258}
 
 * Starting in September 2024, AEM as a Cloud Service will disable the serialization of Resource Resolvers via the Sling Model Exporter framework. See [the documentation](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) for more details.
 
-### Deprecated Features and APIs {#deprecated-X}
+### Deprecated Features and APIs {#deprecated-17258}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Embedded Technologies {#embedded-tech-X}
+### Embedded Technologies {#embedded-tech-17258}
 
 |Technology|Version|Link|
 |---|---|---|
