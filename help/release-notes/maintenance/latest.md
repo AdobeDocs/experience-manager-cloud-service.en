@@ -29,6 +29,8 @@ The 2024.8.0 feature activation will provide the full feature set for this maint
 * ASSETS-30613 - Replace asset doesn't delete and add asset in new Delivery tier
 * SITES-22940 - Unable to view content fragment as workflow payload
 * CNTBF-209 -  Backflow jobs cancellation improvements
+* SCRNS-3762 - Improve playerLogger in Sequence channel to put logs on console when previewing channel on browser
+* SCRNS-4455 - Missing “Manage Publication” & "Quick Publish" Button for NON-ADMIN users in Content Provider for Channels
 
 ### Known Issues {#known-issues-17258}
 
