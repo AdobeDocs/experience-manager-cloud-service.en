@@ -18,23 +18,23 @@ The 2024.8.0 feature activation will provide the full feature set for this maint
 
 ### Enhancements {#enhancements-17258}
 
-* ASSETS-40873 - Allow metadata export max rows to be set via OSGI config
-* ASSETS-40399 - Updated DM Auto transcribe queue settings
 * ASSETS-31445 - Initial Dynamic Media templating features
+* ASSETS-40399 - Updated DM Auto transcribe queue settings
+* ASSETS-40873 - Allow metadata export max rows to be set via OSGI config
 
 ### Fixed Issues {#fixed-issues-17258}
 
-* ASSETS-39598 - Bulk Import not able to delete assets with special characters in name from S3 backend
-* ASSETS-31882 - Accessing streaming manifest file in author is forbidden
 * ASSETS-30613 - Replace asset doesn't delete and add asset in new Delivery tier
-* SITES-22940 - Unable to view content fragment as workflow payload
+* ASSETS-31882 - Accessing streaming manifest file in author is forbidden
+* ASSETS-39598 - Bulk Import not able to delete assets with special characters in name from S3 backend
 * CNTBF-209 -  Backflow jobs cancellation improvements
 * SCRNS-3762 - Improve playerLogger in Sequence channel to put logs on console when previewing channel on browser
 * SCRNS-4455 - Missing “Manage Publication” & "Quick Publish" Button for NON-ADMIN users in Content Provider for Channels
+* SITES-22940 - Unable to view content fragment as workflow payload
 
 ### Known Issues {#known-issues-17258}
 
-None.
+None
 
 ### Change Notice {#change-notice-17258}
 
