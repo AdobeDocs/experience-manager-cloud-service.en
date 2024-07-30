@@ -44,7 +44,7 @@ Configure traffic at the CDN in various ways, including:
 * applying 301/302 [client-side redirects](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)
 * declaring [origin selectors](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) to reverse proxy a request to non-AEM backends
 
-Learn how to configure these features using YAML files in git and deploy them using the Cloud Manager [Config Pipeline](help/implementing/dispatcher/cdn-configuring-traffic.md). 
+Learn how to configure these features by using YAML files in git and deploying them by using the Cloud Manager [Config Pipeline](/help/implementing/dispatcher/cdn-configuring-traffic.md).
 
 ### Configuring CDN Error Pages {#cdn-error-pages}
 
