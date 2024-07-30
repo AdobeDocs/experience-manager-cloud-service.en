@@ -129,7 +129,7 @@ The sample configurations provided show the base settings needed, but a customer
 
 **Redirection to the Publish Service Endpoint**
 
-When a request receives a 403 forbidden response the cause is that the request is missing some required headers. A common cause for this is when a CDN is managing both apex and www domain traffic, but is not adding the correct header for the www domain. This problem can be triaged by checking your AEM as a Cloud Service CDN logs and verifying the needed request headers. 
+When a request receives a 403 forbidden response, the cause is that the request is missing some required headers. A common cause for this is when a CDN is managing both apex and www domain traffic, but is not adding the correct header for the www domain. This problem can be triaged by checking your AEM as a Cloud Service CDN logs and verifying the needed request headers. 
 
 **Too Many Redirects Loop**
 
