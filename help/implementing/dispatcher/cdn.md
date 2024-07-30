@@ -38,7 +38,8 @@ See [Managing IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/in
 
 ### Configuring Traffic at the CDN {#cdn-configuring-cloud}
 
-Configure traffic at the CDN in various ways, including:
+You can configure traffic at the CDN in various ways, including:
+
 * blocking malicious traffic with [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md) (including optionally licensable advanced WAF rules)
 * modifying the nature of the [request and response](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)
 * applying 301/302 [client-side redirects](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)
@@ -58,7 +59,7 @@ Read about [configuring a purge API token](/help/implementing/dispatcher/cdn-cre
 
 ### Basic Authentication at the CDN {#basic-auth}
 
-For light authentication use cases including business stakeholders reviewing content, protect content by popping up a basic auth dialog requiring a username and password. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md) and join the early adopter program.
+For light authentication use cases including business stakeholders reviewing content, protect content by displaying a basic auth dialog requiring a username and password. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md) and join the early adopter program.
 
 ## Customer CDN Points to AEM-managed CDN {#point-to-point-CDN}
 
@@ -148,19 +149,19 @@ The sample configurations provided show the base settings needed, but a customer
 
 **Redirection to the Publish Service Endpoint**
 
-When a request receives a 403 forbidden response, the cause is that the request is missing some required headers. A common cause for this is when a CDN is managing both apex and www domain traffic, but is not adding the correct header for the www domain. This problem can be triaged by checking your AEM as a Cloud Service CDN logs and verifying the needed request headers. 
+When a request receives a 403 forbidden response, it means that the request is missing some required headers. A common cause for this is that the CDN is managing both apex and `www` domain traffic, but is not adding the correct header for the `www` domain. This problem can be triaged by checking your AEM as a Cloud Service CDN logs and verifying the needed request headers.
 
 **Too Many Redirects Loop**
 
 When a page gets a "Too Many Redirect" loop, some request header is being added at the CDN that matches a redirect that forces it back to itself. As an example:
 
-* A CDN rule is created to match either the apex domain or the www domain, and add the X-Forwarded-Host header of the apex domain only.
+* A CDN rule is created to match either the apex domain or the www domain, and adds the X-Forwarded-Host header of the apex domain only.
 * A request for an apex domain matches this CDN rule, which adds the apex domain as the X-Forwarded-Host header.
-* A request is sent to the origin where a redirect matches the host header explicitly for the apex domain (e.g, ^example.com).
+* A request is sent to the origin where a redirect matches the host header explicitly for the apex domain (for example, ^example.com).
 * A rewrite rule is triggered, which rewrites the request for the apex domain to https with the www subdomain.
 * That redirect is then sent to the customer's edge, where the CDN rule is re-triggered re-adding the X-Forwarded-Host header for the apex domain not the www subdomain. Then the process starts over until the request fails.
 
-To resolve this problem, assess your SSL redirect strategy, CDN rules, and redirect and rewrite rule combinations.
+To resolve this problem, assess your SSL redirect strategy, CDN rules, redirect and rewrite rule combinations.
 
 ## Geolocation Headers {#geo-headers}
 
