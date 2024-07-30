@@ -1,24 +1,29 @@
 ---
 title: Configuring DNS Settings 
-description: Learn how to configuring DNS settings for your custom domain names.
+description: Learn how to configuring DNS settings for your custom domain names enables your site to serve visitors.
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 ---
+
 # Configuring DNS Settings {#configure-dns}
 
-After your custom domain name is successfully verified and deployed, you are ready to update the DNS records for your custom domain name with your DNS provider. Doing so enables your site to serve visitors. This activity is therefore typically done before going live.
+After your custom domain name is successfully [verified and deployed,](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) you are ready to update the DNS records for your custom domain name with your DNS provider. Doing so enables your site to serve visitors. This activity is therefore typically done before going live.
 
 ## What are DNS Settings? {#dns-settings}
 
-A `CNAME` or A record, once provisioned will route all internet traffic for the domain to wherever it is pointing. If that location is not provisioned to serve the traffic, there is an outage. If it has not been tested, there may be errors in the content. This is why this step is always done after testing is complete and you are ready to go live.
+A `CNAME` or A record, once provisioned, will route all internet traffic for the domain to wherever it is pointing. If that location is not provisioned to serve the traffic, there is an outage. If it has not been tested, there may be errors in the content. This is why this step is always done after testing is complete and you are ready to go live.
 
-To configure these settings, you need to determine if a `CNAME` or Apex record must be configured to point your custom domain name to the Cloud Manager domain name. The following sections will help you determine which type of record is appropriate for your DNS configuration.
+To configure these settings, you need to determine if a `CNAME` or apex record must be configured to point your custom domain name to the Cloud Manager domain name. The following sections of this document will help you determine which type of record is appropriate for your DNS configuration.
 
->[!NOTE]
->
->You or the appropriate individual in your organization must be able to login or contact your DNS provider (the company from whom you purchased the domain) and make updates in your DNS settings.
+## Requirements {#requirements}
+
+You must fulfill these requirements before configuring your DNS records.
+
+* You must identify your domain host or registrar if you do not know it already.
+* You must be able to edit the DNS records for your organization's domain, or contact the appropriate person who can.
+* You must have already verified your configured custom domain name as described in the document [Checking Domain Name Status.](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
 
 ## CNAME Record {#cname-record}
 
@@ -45,3 +50,7 @@ Add the following `A` records to your domain's DNS settings by way of your domai
 * `A record for domain @ pointing to IP 151.101.131.10`
 
 * `A record for domain @ pointing to IP 151.101.195.10`
+
+## Next Steps {#next-steps}
+
+Once you have configured your DNS records for your custom domain name, you will need to verify those settings in Cloud Manager. Proceed to the document [Checking DNS Record Status](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) to finalize your custom domain name.
