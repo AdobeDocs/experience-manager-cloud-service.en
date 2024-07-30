@@ -1,8 +1,9 @@
 ---
 title: Authentication for Remote AEM GraphQL Queries on Content Fragments
 description: Understand the authentication required for Remote Adobe Experience Manager GraphQL queries to secure your headless content delivery.
-feature: Content Fragments,GraphQL API
+feature: Headless, Content Fragments,GraphQL API
 exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
+role: Admin, Developer
 ---
 # Authentication for Remote AEM GraphQL Queries on Content Fragments {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 

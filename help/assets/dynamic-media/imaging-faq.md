@@ -2,7 +2,7 @@
 title: Smart Imaging
 description: Learn how Smart Imaging with Adobe Sensei AI applies each user's unique viewing characteristics to automatically serve the right images optimized for their experience, resulting in better performance and engagement.
 contentOwner: Rick Brough
-feature: Asset Management,Renditions
+feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3

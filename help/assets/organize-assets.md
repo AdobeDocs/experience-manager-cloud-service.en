@@ -2,7 +2,7 @@
 title: Organize your digital assets
 description: Organize your digital assets, images, files, folders, and so on, using Experience Manager.
 contentOwner: AG
-feature: Asset Management, Search
+feature: Asset Management, Best Practices
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
 ---

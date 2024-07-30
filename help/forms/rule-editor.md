@@ -2,7 +2,7 @@
 title: How to use the rule editor to add rules to form fields to add dynamic behavior and build complex logic to an adaptive form?
 description: Adaptive Forms rule editor allows you to add dynamic behavior and build complex logic into forms without coding or scripting.
 feature: Adaptive Forms, Foundation Components
-role: User
+role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
 ---
@@ -555,7 +555,7 @@ Accompanying `jsdoc` is required:
 * If you want custom configuration and description
 * Because there are multiple ways to declare a function in `JavaScript,` and comments let you keep a track of the functions.
 
-Rule editor supports JavaScript ES2015 syntax for scripts and custom functions.
+Rule editor supports JavaScript ES5 syntax for scripts and custom functions.
 For more information, see [jsdoc.app](https://jsdoc.app/).
 
 Supported `jsdoc` tags:

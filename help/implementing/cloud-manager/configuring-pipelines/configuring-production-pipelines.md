@@ -80,7 +80,7 @@ To finish the configuration of the full-stack code production pipeline, follow t
 
    >[!TIP]
    > 
-   >See the document [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) to learn how to add and manage repositories in Cloud Manager.
+   >See the document [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/managing-repositories.md) to learn how to add and manage repositories in Cloud Manager.
 
    * **Git Branch** - This option defines from which branch in the selected the pipeline should retrieve the code.
      * Enter the first few characters of the branch name and the auto-complete feature of this field will find the matching branches to help you select.
@@ -108,9 +108,9 @@ The pipeline is saved and you can now [manage your pipelines](managing-pipelines
 
 A targeted deployment deploys code only for selected parts of your AEM application. In such a deployment you can choose to **Include** one of the following types of code:
 
-* **Config** - Configure settings for traffic filter rules on your AEM environment.
-  * See the document [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md) to learn how to manage the configurations in your repository so they are deployed properly.
-  * When running a targeted deployment pipeline, [WAF configurations](/help/security/traffic-filter-rules-including-waf.md) will be deployed, provided they are saved to environment, repository, and branch you defined in the pipeline.
+* **Config** - Configure settings for various features on your AEM environment.
+  * See the [Using Config Pipelines article](/help/operations/config-pipeline.md) for a list of supported configurations, which includes log forwarding, purge-related maintenance tasks, and various CDN configurations, and to manage them in your repository so they are deployed properly.
+  * When running a targeted deployment pipeline, configurations will be deployed, provided they are saved to environment, repository, and branch you defined in the pipeline.
   * At any time, there can only be one config pipeline per environment. 
 * **Front End Code** - Configure JavaScript and CSS for the front end of your AEM application.
   * With front-end pipelines, more independence is given to front-end developers and the development process can be accelerated.
@@ -119,6 +119,10 @@ A targeted deployment deploys code only for selected parts of your AEM applicati
   * See the document [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) for more details.
   * If a web-tier code pipeline exists for the selected environment, this selection is disabled.
   * If you have an existing full-stack pipeline deploying to an environment, creating a web tier config pipeline for the same environment will case the existing web tier configuration in the full-stack pipeline to be ignored.
+
+>[!NOTE]
+>
+>Web tier and config pipelines are not supported with private repositories. Please see the document [Adding Private Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) for details and the full list of limitations.
 
 The steps to complete the creation of your production, targeted deployment pipeline are the same once you choose a deployment type.
 
@@ -136,7 +140,7 @@ The steps to complete the creation of your production, targeted deployment pipel
 
    >[!TIP]
    > 
-   >See [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) so you can learn how to add and manage repositories in Cloud Manager.
+   >See [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/managing-repositories.md) so you can learn how to add and manage repositories in Cloud Manager.
 
    * **Git Branch** - This option defines from which branch in the selected pipeline should retrieve the code.
      * Enter the first few characters of the branch name and the auto-complete feature of this field. It finds the matching branches that you can select.

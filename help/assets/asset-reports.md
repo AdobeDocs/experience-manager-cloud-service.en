@@ -2,8 +2,8 @@
 title: Reports about usage and sharing
 description: Reports about your assets in [!DNL Adobe Experience Manager Assets] that help you understand usage, activity, and sharing of your digital assets.
 contentOwner: AG
-feature: Asset Reports,Asset Management
-role: Admin,User
+feature: Asset Reports, Asset Management
+role: Admin, User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
 ---
 # Asset reports {#asset-reports}

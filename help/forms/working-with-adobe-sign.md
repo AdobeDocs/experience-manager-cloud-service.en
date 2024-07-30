@@ -3,7 +3,7 @@ title: How can we use Adobe Sign in an Adaptive Form?
 description: Use Adobe Sign in an Adaptive Form to allow form recipients to e-sign a form from device and place of their choice.
 topic-tags: develop
 feature: Adaptive Forms, Foundation Components
-role: User
+role: User, Developer
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
 ---

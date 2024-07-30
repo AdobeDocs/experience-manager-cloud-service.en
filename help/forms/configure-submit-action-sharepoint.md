@@ -4,6 +4,8 @@ Description: Learn how to send data from your Adaptive Form to a SharePoint stor
 keywords: How to connect SharePoint list for an adpative form?, How to connnect SharePoint document library for an adpative form, Submit to SharePoint, Create a SharePoint Document Library Configuration, Use the Submit to SharePoint submit action in an Adaptive Form, Connect an Adaptive Form to Microsoft&reg; SharePoint List.
 feature: Adaptive Forms, Core Components
 exl-id: e925a750-5fb5-4950-afd3-78551eec985d
+title: "How to configure a Submit Action for an Adaptive Form?"
+role: User, Developer
 ---
 # Connect an Adaptive Form to Microsoft® SharePoint
 
@@ -43,7 +45,12 @@ To connect AEM Forms to your Microsoft&reg; Sharepoint Document Library storage:
 1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** and **[!UICONTROL OAuth URL]**. For information on how to retrieve Client ID, Client Secret, Tenant ID for OAuth URL, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
     * You can retrieve the `Client ID` and `Client Secret` of your app from the Microsoft&reg; Azure portal.
     * In the Microsoft&reg; Azure portal, add the Redirect URI as `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Replace `[author-instance]` with the URL of your Author instance.
-    * Add the API permissions `offline_access` and `Sites.Manage.All` to provide read/write permissions.
+    * Add the API permissions `offline_access` and `Sites.Manage.All` to provide read/write permissions.The `Sites.Manage.All` is a permission scope in Microsoft's Graph API that grants an application the ability to manage all aspects of SharePoint Sites such as deleting or modifying Sites.  
+     
+        >[!NOTE]
+        >
+        > You can also [configure the SharePoint Sites with limited access](/help/forms/configure-sharepoint-site-limited-access.md) by using the `Sites.Selected` permission scope in Microsoft's Graph API. The `Sites.Selected` is a permission scope in Microsoft's Graph API that allows more granular and restricted access to SharePoint sites. 
+
     * Use OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` with the `tenant-id` of your app from the Microsoft&reg; Azure portal.
 
     >[!NOTE]
