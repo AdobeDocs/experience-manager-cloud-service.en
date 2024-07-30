@@ -24,11 +24,12 @@ And now, get a better Google Core Web Vital score for LCP (Largest Contentful Pa
 >Try out and discover the benefits of Dynamic Media image modifiers and Smart Imaging, using Dynamic Media [_Snapshot_](https://snapshot.scene7.com/).
 >
 > Snapshot is a visual demonstration tool, designed to illustrate the power of Dynamic Media for optimized and dynamic image delivery. Experiment with test images or Dynamic Media URLs, to visually observe the output of various Dynamic Media image modifiers, and Smart Imaging optimizations for the following:
+>
 >* File size (with WebP and AVIF delivery)
 >* Network bandwidth
 >* DPR (Device Pixel Ratio) 
 >
->To learn how easy it is to use Snapshot, play the [Snapshot training video](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html?lang=en ) (3 minutes and 17 seconds).
+>To learn how easy it is to use Snapshot, play the [Snapshot training video](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html?lang=en) (3 minutes and 17 seconds).
 
 Smart Imaging benefits from the added performance boost of being fully integrated with Adobe's best-in-class premium CDN (Content Delivery Network) service. This service finds the optimal Internet route between servers, networks, and peering points. It finds a route that has the lowest latency and lowest packet loss rate instead of using the default route on the Internet.
 
@@ -127,13 +128,15 @@ When an image is requested by a consumer, Smart Imaging checks the user characte
 * Automatically convert to AVIF if browser supports the format
 * Automatically convert to WebP if AVIF conversion was not beneficial or browser does not support AVIF
 * Automatically convert to JPEG2000 if Safari does not support WebP
-* Automatically convert to JPEGXR for IE 9+ or if Edge does not support WebP  
-    | Image format | Supported browsers |
-    |---|---|
-    | AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) |
-    | WebP | [https://caniuse.com/webp](https://caniuse.com/webp) |
-    | JPEG 2000 | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) |
-    | JPEGXR | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
+* Automatically convert to JPEGXR for IE 9+ or if Edge does not support WebP
+
+  | Image format | Supported browsers |
+  |---|---|
+  | AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) |
+  | WebP | [https://caniuse.com/webp](https://caniuse.com/webp) |
+  | JPEG 2000 | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) |
+  | JPEGXR | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
+
 * For browsers that do not support these formats, the originally requested image format is served. 
 
 If the original image size is smaller than what Smart Imaging produces, then the original image is served.
@@ -471,5 +474,5 @@ See also [When working with images](/help/assets/dynamic-media/adding-dynamic-me
 
 >[!MORELIKETHIS]
 >
->* [Image optimization with next generation image formats WebP and AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4) -->
->
+>* [Image optimization with next generation image formats WebP and AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4) 
+-->
