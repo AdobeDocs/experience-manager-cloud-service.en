@@ -1149,6 +1149,14 @@ To access the GraphQL endpoint from an external website you need to configure th
 
 See [Authentication for Remote AEM GraphQL Queries on Content Fragments](/help/headless/security/authentication.md).
 
+## Automated Testing {#automated-testing}
+
+When running a deployment pipeline in AEM Cloud Manager, automated tests are run during pipeline execution. 
+
+To provide accurate results, your AEM as a Cloud Service **Stage** environment should mirror your **Production** environment as closely as possible. This is especially important for content.
+
+You can achieve this by using the AEM as a Cloud Service [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) to copy your Production content to the Stage environment.
+
 ## Limitations {#limitations}
 
 To protect against potential problems there are default limitations imposed on your queries:
