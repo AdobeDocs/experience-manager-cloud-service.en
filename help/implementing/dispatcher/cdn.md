@@ -142,7 +142,8 @@ Presented below are several configuration examples from several leading CDN vend
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
 
-### Common Errors
+### Common Errors {#common-errors}
+
 The sample configurations provided show the base settings needed, but a customer configuration may have other impacting rules that remove, modify, or re-arrange the headers needed for AEM as a Cloud Service to serve the traffic. Below are common errors that occur when configuring a customer managed CDN to point to AEM as a Cloud Service.
 
 **Redirection to the Publish Service Endpoint**
@@ -153,11 +154,11 @@ When a request receives a 403 forbidden response, the cause is that the request 
 
 When a page gets a "Too Many Redirect" loop, some request header is being added at the CDN that matches a redirect that forces it back to itself. As an example:
 
-1. A CDN rule is created to match either the apex domain or the www domain, and add the X-Forwarded-Host header of the apex domain only.
-2. A request for an apex domain matches this CDN rule, which adds the apex domain as the X-Forwarded-Host header.
-2. A request is sent to the origin where a redirect matches the host header explicitly for the apex domain (e.g, ^example.com).
-3. A rewrite rule is triggered, which rewrites the request for the apex domain to https with the www subdomain.
-4. That redirect is then sent to the customer's edge, where the CDN rule is re-triggered re-adding the X-Forwarded-Host header for the apex domain not the www subdomain. Then the process starts over until the request fails.
+* A CDN rule is created to match either the apex domain or the www domain, and add the X-Forwarded-Host header of the apex domain only.
+* A request for an apex domain matches this CDN rule, which adds the apex domain as the X-Forwarded-Host header.
+* A request is sent to the origin where a redirect matches the host header explicitly for the apex domain (e.g, ^example.com).
+* A rewrite rule is triggered, which rewrites the request for the apex domain to https with the www subdomain.
+* That redirect is then sent to the customer's edge, where the CDN rule is re-triggered re-adding the X-Forwarded-Host header for the apex domain not the www subdomain. Then the process starts over until the request fails.
 
 To resolve this problem, assess your SSL redirect strategy, CDN rules, and redirect and rewrite rule combinations.
 
