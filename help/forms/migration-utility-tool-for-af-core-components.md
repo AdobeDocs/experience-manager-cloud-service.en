@@ -7,8 +7,11 @@ features: core components
 hide: yes
 hidefromtoc: yes
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
+feature: Adaptive Forms, Core Components
 ---
 # Introduction 
+
+<span class="preview"> The feature is available under early adopter program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
 
 The Forms Conversion Utility, part of [AEM Modernize Tool](https://opensource.adobe.com/aem-modernize-Tools/) suite, helps you easily convert Adaptive Forms built with legacy Foundation Components to forms that leverage the modern, supported capabilities of Core Components.
 

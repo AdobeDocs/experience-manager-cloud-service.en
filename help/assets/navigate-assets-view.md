@@ -3,6 +3,7 @@ title: '[!DNL Assets view] user interface'
 description: Understand user interface of and navigation in [!DNL Assets view].
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
+feature: Asset Management, Publishing, Collaboration, Asset Processing
 ---
 # Navigate to files and folders and view assets {#view-assets-and-details}
 
@@ -24,7 +25,8 @@ When you log into [!DNL Assets view], you see the following interface.
 
 ## Browse and view assets and folders {#browse-repository}
 
-You can browse the folders from the main user interface or from the left sidebar. When browsing, you can use the interface to view asset thumbnails to visually browse the repository or view asset details to quickly find the asset you want. The options available in the left sidebar are:
+You can browse the folders from the main user interface or from the left sidebar. Experience Manager Assets now displays visual previews of folder contents on the folder thumbnail when browsing or searching for content, which improves the discoverability of assets available within AEM Assets repository. This folder thumbnail saves your time spent on searching specific assets within a folder in AEM Assets repository.
+When browsing through assets in a folder, you can use the interface to view asset thumbnails to visually browse the repository or view asset details to quickly find the asset you want. The options available in the left sidebar are:
 
 * [My Workspace](/help/assets/my-workspace-assets-view.md): Assets now includes a customizable workspace that provides widgets for convenient access to key areas of the Assets user interface and information that is most relevant to you. This page serves as a one-stop solution to provide an overview of your work items and to give quick access to key workflows. More convenient access to these options increases your efficiency and content velocity.
 * [Tasks](/help/assets/my-workspace-assets-view.md): You can view the tasks assigned to you under **My tasks** tab. Whereas, the tasks that are created by you can be viewed under **Assigned tasks** tab. Also, the tasks that you complete are located under **Completed tasks** tab.
@@ -54,7 +56,7 @@ In [!DNL Assets view], you can view assets, folders, and search results in four 
 
 To locate an asset, you can sort the assets in ascending or descending order of `Name`, `Relevancy`, `Size`, `Modified`, and `Created`.
 
-To navigate into a folder, double-click the folder's thumbnails or select the folder from the left sidebar. To view details of a folder, select it and click Details from the toolbar at the top. To navigate up and down the hierarchy, either use the left sidebar or use the breadcrumbs at the top.
+To navigate in a folder, double-click the folder's thumbnails or select the folder from the left sidebar. To view details of a folder, select it and click Details from the toolbar at the top. To navigate up and down the hierarchy, either use the left sidebar or use the breadcrumbs at the top.
 
 ![Browse folders](assets/browsing-folders.png)
 

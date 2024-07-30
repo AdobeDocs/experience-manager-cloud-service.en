@@ -2,8 +2,8 @@
 title: Configure and use asset microservices
 description: Configure and use the cloud-native asset microservices to process assets at scale.
 contentOwner: AG
-feature: Asset Compute Microservices,Workflow,Asset Processing
-role: Architect,Admin
+feature: Asset Compute Microservices, Asset Processing, Asset Management
+role: Architect, Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
 ---
 # Use asset microservices and processing profiles {#get-started-using-asset-microservices}

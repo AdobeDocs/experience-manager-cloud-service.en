@@ -2,7 +2,7 @@
 title: Distribute and share assets, folders, and collections
 description: Distribute your digital assets using methods like share as a link, downloading, and via [!DNL Brand Portal], [!DNL desktop app], and [!DNL Asset Link].
 feature: Asset Management, Collaboration, Asset Distribution
-role: User, Admin
+role: Admin, User
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
 ---
 # Share and distribute assets managed in [!DNL Experience Manager] {#share-assets-from-aem}
@@ -115,7 +115,7 @@ The email template can be customized using plain text or HTML. The default edita
 | `${emailMessage}` | Email body |
 | `${pagePath}` | URL of the shared link |
 | `${linkExpiry}` | Shared link expiry date |
-| `${host.prefix}` | Origin of the [!DNL Experience Manager] instance, for example `http://www.adobe.com"` |
+<!--| `${host.prefix}` | Origin of the [!DNL Experience Manager] instance, for example `http://www.adobe.com"` |--> 
 
 #### Customized email template example {#custom-email-template-example}
 
@@ -131,10 +131,10 @@ subject: ${emailSubject}
     <a href="${pagePath}" target="_blank"><strong>Open</strong></a>
 </p>
 
-Sent from instance: ${host.prefix}
-
 </body></html>
 ```
+
+<!--Sent from instance: ${host.prefix}-->
 
 ### Download assets using the asset link {#download-assets-using-asset-link}
 
