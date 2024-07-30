@@ -276,7 +276,7 @@ data:
         action:
           type: selectOrigin
           originName: example-com
-          # skpCache: true
+          # skipCache: true
     origins:
       - name: example-com
         domain: www.example.com
