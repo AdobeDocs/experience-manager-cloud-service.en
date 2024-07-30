@@ -8,7 +8,7 @@ role: Admin
 # Purging the CDN cache {#cdn-purge-cache}
 
 Purging removes an object from the Adobe CDN cache, resulting in future requests proceeding to the origin as a cache miss, rather than being served from cache.
-AEM as a Cloud Service allows you to configure a Purge API Token, which can then be used in API calls. Read the [Configuring CDN Credentials and Authentication article](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) to learn how to configure this token using the Cloud Manager Configuration Pipeline Authentication directives.
+AEM as a Cloud Service allows you to configure a Purge API Token, which can then be used in Purge API calls. Read the [Configuring CDN Credentials and Authentication article](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) to learn how to configure this token using the Cloud Manager Config Pipeline Authentication directives.
 
 There are three supported purging variations:
 
