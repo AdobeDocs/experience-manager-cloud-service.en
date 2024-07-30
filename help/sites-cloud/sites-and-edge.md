@@ -55,8 +55,16 @@ Document-based authoring allows anyone to create content without any training by
 
 Please see the document [Authoring and Publishing Content](https://www.aem.live/docs/authoring) to learn more about using document-based authoring.
 
+## What About Edge Delivery and Headless? (#headless)
+
+Edge Delivery is a performance-first head that is decoupled from the backend. If you have a custom head such as React SPA, Adobe recommends the AEM headless integration pattern. Please see the [AEM headless documentation](/help/headless/introduction.md) for more information.
+
+However, Adobe generally recommends using Edge Delivery as the default head to benefit from its speed and performance and integrate the headless portion of the your project (usually the business application) via a headless approach (e.g. React or SPA).
+
 ## Is Edge Right for You? {#decision}
 
-Adobe has seen its customers benefit from the increased content velocity brought by Edge Delivery Services across projects of all sizes. For this reason, Adobe recommends leveraging Edge Delivery Services as the starting point for any new project.
+Adobe has seen its customers and their involved stakeholders benefit massively from Edge Delivery Services across projects of all sizes. For this reason, Adobe recommends leveraging Edge Delivery Services as the starting point for any new project.
 
-However there are some cases when additional, complementary features may be needed alongside those brought by Edge Delivery Services. The following decision tree illustrates questions to consider when deciding if Edge Delivery Services are right for you.
+It is also possible to deploy a subset of sites or pages on Edge Delivery while keeping the rest on the current stack. This is recommended whenever improvements in performance, organic traffic, customer engagement, developer, or content velocity is required.
+
+Please reach out to your Adobe representative if you are not sure if Edge Delivery is right for you.
