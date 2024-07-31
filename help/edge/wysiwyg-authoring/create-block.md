@@ -90,14 +90,14 @@ The following quote block example follows this approach.
   "id": "quote",
   "fields": [
      {
-       "component": "text-area",
+       "component": "richtext",
        "name": "quote",
        "value": "",
        "label": "Quote",
        "valueType": "string"
      },
      {
-       "component": "text-input",
+       "component": "text",
        "valueType": "string",
        "name": "author",
        "label": "Author",
