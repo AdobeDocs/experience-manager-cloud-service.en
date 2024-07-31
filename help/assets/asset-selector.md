@@ -588,6 +588,7 @@ You can use the Asset Selector properties to customize the way the Asset Selecto
 | *filterRepoList* | Function | No |  | You can use `filterRepoList` callback function that calls Experience Manager repository and returns a filtered list of repositories. |
 | *expiryOptions* | Function | | | You can use between the following two properties: **getExpiryStatus** which provides status of an expired asset. The function returns `EXPIRED`, `EXPIRING_SOON` or `NOT_EXPIRED` based on the expiry date of an asset that you provide. See [customize expired assets](#customize-expired-assets). Additionally, you can use **allowSelectionAndDrag** in which the value of the function can either be `true` or `false`. When the value is set to `false`, the expired asset cannot be selected or dragged on the canvas. | 
 | *showToast* | | No | | It allows Asset Selector to show a customized toast message for the expired asset. |
+
 <!--
 | *rootPath* | String | No | /content/dam/ | Folder path from which Asset Selector displays your assets. `rootPath` can also be used in the form of encapsulation. For example, given the following path, `/content/dam/marketing/subfolder/`, Asset Selector does not allow you to traverse through any parent folder, but only displays the children folders. |
 | *path* | String | No | | Path that is used to navigate to a specific directory of assets when the Asset Selector is rendered. |
