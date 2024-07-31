@@ -70,15 +70,23 @@ Dynamic Media Viewer best practices are essential guidelines designed to optimiz
 
 By following these best practices, you can achieve seamless integration, efficient asset management, and enhanced viewer interactions. Synchronizing assets, using smart cropping, and adhering to JavaScript file inclusion guidelines are all important practices. These recommendations help maintain the integrity and reliability of media delivery across various platforms and devices.
 
-* **Synchronize Viewer Assets:** Ensure that all viewer assets are synchronized with Dynamic Media before using the player. For troubleshooting viewer, go to the [Troubleshoot Dynamic Media Viewers](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) article.
-* **Sample Manager Page:** Access the sample manager page at `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`.
-* **Publish Assets:** Make sure that assets are published before viewing them in delivery viewers.
-* **Autoplay Videos Muted:** For autoplay functionality in videos, use muted video settings because browsers restrict playing videos with volume.
-* **Smart Cropping:** Use the Image v3 component for smart cropping to enhance image asset presentation.
-* **JavaScript File Inclusion:** Only include the primary viewer JavaScript file on your page. Avoid referencing additional JavaScript files that the viewer's runtime logic may download. Specifically, do not directly link to the HTML5 SDK `Utils.js` library from the `/s7viewers` context path (known as consolidated SDK include). The viewer's logic manages the location of `Utils.js` or similar runtime viewer libraries, which can change between releases. Adobe does not retain older versions of secondary viewer includes on the server, so directly referencing them can break viewer functionality in future updates.
-* **Embedding Guidelines:** Use the documentation for embedding guidelines that are specific to each viewer. 
+* **Synchronize Viewer Assets:**
+Ensure that all viewer assets are synchronized with Dynamic Media before using the player. For troubleshooting viewer, go to the [Troubleshoot Dynamic Media Viewers](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) article.
+* **Sample Manager Page:**
+Access the sample manager page at `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`.
+* **Publish Assets:**
+Make sure that assets are published before viewing them in delivery viewers.
+* **Autoplay Videos Muted:**
+For autoplay functionality in videos, use muted video settings because browsers restrict playing videos with volume.
+* **Smart Cropping:**
+Use the Image v3 component for smart cropping to enhance image asset presentation.
+* **JavaScript File Inclusion:**
+Only include the primary viewer JavaScript file on your page. Avoid referencing additional JavaScript files that the viewer's runtime logic may download. Specifically, do not directly link to the HTML5 SDK `Utils.js` library from the `/s7viewers` context path (known as consolidated SDK include). The viewer's logic manages the location of `Utils.js` or similar runtime viewer libraries, which can change between releases. Adobe does not retain older versions of secondary viewer includes on the server, so directly referencing them can break viewer functionality in future updates.
+* **Embedding Guidelines:**
+Use the documentation for embedding guidelines that are specific to each viewer. 
 Want to learn more? Go to [Viewers for AEM Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers).
-* **SDK Tutorial and Examples:** Review the [Viewer SDK Tutorial](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) and [HTML5 SDK application examples](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) for a thorough understanding of SDK component APIs.
+* **SDK Tutorial and Examples:**
+Review the [Viewer SDK Tutorial](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) and [HTML5 SDK application examples](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) for a thorough understanding of SDK component APIs.
 
 
 ## Prepare assets for delivery
