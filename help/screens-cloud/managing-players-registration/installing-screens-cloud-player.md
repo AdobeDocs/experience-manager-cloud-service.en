@@ -65,7 +65,9 @@ The following properties are included in each `ping`:
 |lastContentChange {string}|timestamp of the last content change|
 
 >[!NOTE]
+>
 >Optionally, you can enable a more advanced property from the player preferences (Enable Playback Monitoring):
+>
 >|Property|Description|
 >|---|---|
 >|isContentRendering {boolean}|true if the GPU can confirm it is playing actual content (based on pixel analysis)|
