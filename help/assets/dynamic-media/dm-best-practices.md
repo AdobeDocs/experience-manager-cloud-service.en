@@ -71,9 +71,11 @@ Dynamic Media Viewer best practices are essential guidelines designed to optimiz
 By following these best practices, you can achieve seamless integration, efficient asset management, and enhanced viewer interactions. Synchronizing assets, using smart cropping, and adhering to JavaScript file inclusion guidelines are all important practices. These recommendations help maintain the integrity and reliability of media delivery across various platforms and devices.
 
 * **Synchronize Viewer Assets:**
-Ensure that all viewer assets are synchronized with Dynamic Media before using the player. For troubleshooting viewer, go to the [Troubleshoot Dynamic Media Viewers](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) article.
-* **Sample Manager Page:**
-Access the sample manager page at `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`.
+Ensure that all viewer assets are synchronized with Dynamic Media before using the player. 
+
+  * Access the sample manager page at `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`. This page lets you resynchronize a viewer's assets, including out-of-the-box icons, CSS files, and presets.
+  * If you encounter any viewer issues, go to the [Troubleshoot Dynamic Media Viewers](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) article. 
+
 * **Publish Assets:**
 Make sure that assets are published before viewing them in delivery viewers.
 * **Autoplay Videos Muted:**
@@ -394,6 +396,7 @@ Want to learn more? Go to [Smart Imaging](/help/assets/dynamic-media/imaging-faq
 
 **Business case:** *After publishing new content or overwriting existing content, how can it be ensured that the changes appear immediately on the CDN?*
 
-The CDN (Content Delivery Network) caches Dynamic Media assets for quick delivery to customers. When updates are made to these assets, it is important for the changes to take effect immediately on the website. By purging or invalidating the CDN cache, assets delivered by Dynamic Media can be updated quickly. This approach eliminates the need to wait for the cache to expire based on the TTL (Time To Live) value, which is typically set to ten hours. Instead, a request can be sent from within the Dynamic Media user interface to expire the cache within minutes.
+The CDN (Content Delivery Network) caches Dynamic Media assets for quick delivery to customers. When updates are made to these assets, it is important for the changes to take effect immediately on the website. By purging or invalidating the CDN cache, assets delivered by Dynamic Media can be updated quickly. This approach eliminates the need to wait for the cache to expire based on the TTL (Time To Live) value, which is typically set to ten hours. 
+Depending on your specific use case, you can update the CDN TTL (Time to Live) settings accordingly.
 
 Want to learn more? Go to [Invalidate the CDN cache by way of Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
