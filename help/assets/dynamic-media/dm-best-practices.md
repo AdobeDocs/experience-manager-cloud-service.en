@@ -155,15 +155,18 @@ Want to learn more? Watch [Using Smart Crop with AEM Assets Dynamic Media](https
 Use the following recommendations regularly to ensure that your images contribute effectively to your overall SEO strategy.
 
 * **Meaningful image file names:**
-Use descriptive file names that reflect the image content. For example, 
+Use descriptive file names that reflect the image content. For example,
+
   * use `myCompany-Silver-Wrist-Watch`
   * *avoid* `myCompany_Silver_Wrist_Watch` or `myCompanySilverWristWatch`
 
   Doing so helps search engines understand the image context and improves SEO. Google prefers hyphens over underscores or spaces in a file name. Also, avoid concatenating words in a file name.
 * **Custom domain:** 
 Implement a custom domain that includes your company or brand name to reinforce brand recognition and trust. For example,
+
   * use `http://images.mycompany.com/is/image/companyname/`
   * *avoid* `https://s7d1.scene7.com/is/image/folder/AdobeStock_28563982`
+
 * **SEO-friendly folder structure:**
 Organize your images in a folder structure that includes your company name or brand for better indexing, like `http://images.mycompany.com/is/image/companyname/`.
 * **Dynamic Media rule sets:**
@@ -303,6 +306,7 @@ You can upload and deliver GIFs through Dynamic Media. To render an animated GIF
   Preview the video so you can ensure that everything looks as expected. Once satisfied, go ahead and publish it. This step makes the video accessible to your audience.
 * **Link or embed:**
   After publishing, you have two options.
+
     * **Link directly:**
     Use the provided URL to link directly to the video. Hyperlink it appropriately on your marketing site.
     * **Embed the video:**
