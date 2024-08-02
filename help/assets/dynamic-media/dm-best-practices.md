@@ -400,7 +400,6 @@ Want to learn more? Go to [Smart Imaging](/help/assets/dynamic-media/imaging-faq
 
 **Business case:** *After publishing new content or overwriting existing content, how can it be ensured that the changes appear immediately on the CDN?*
 
-The CDN (Content Delivery Network) caches Dynamic Media assets for quick delivery to customers. When updates are made to these assets, it is important for the changes to take effect immediately on the website. By purging or invalidating the CDN cache, assets delivered by Dynamic Media can be updated quickly. This approach eliminates the need to wait for the cache to expire based on the TTL (Time To Live) value, which is typically set to ten hours. 
-Depending on your specific use case, you can update the CDN TTL (Time to Live) settings accordingly.
+The CDN (Content Delivery Network) caches Dynamic Media assets for quick delivery to customers. When updates are made to these assets, it is important for the changes to take effect immediately on the website. By purging or invalidating the CDN cache, assets delivered by Dynamic Media can be updated quickly. This approach eliminates the need to wait for the cache to expire based on the TTL (Time To Live) value, which is typically set to ten hours. Depending on your specific use case, you can update the CDN TTL (Time to Live) settings accordingly.
 
 Want to learn more? Go to [Invalidate the CDN cache by way of Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
