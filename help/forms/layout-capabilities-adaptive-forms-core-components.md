@@ -22,19 +22,19 @@ role: User, Developer, Admin
 
 Before learning the different layout capabilities of Adaptive Forms, it is important to be familiar with
 
-- [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 
-- [Create an Adaptive Form based on Core Components](/help/forms/creating-adaptive-form-core-components.md)
-- [Create and use Adaptive Form themes](/help/forms/using-themes-in-core-components.md)
+* [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 
+* [Create an Adaptive Form based on Core Components](/help/forms/creating-adaptive-form-core-components.md)
+* [Create and use Adaptive Form themes](/help/forms/using-themes-in-core-components.md)
 
 ## Types of AEM Forms layouts {#types-of-layouts}
 
 An Adaptive Form based on Core Components provides you with the following types of layouts:
-- **Panel layout**
-- **Wizard layout**
-- **Vertical layout**
-- **Horizontal layout**
-- **Accordion layout**
-  
+* **Panel layout**
+* **Wizard layout**
+* **Vertical layout**
+* **Horizontal layout**
+* **Accordion layout**
+
 
 >[!BEGINTABS]
 
