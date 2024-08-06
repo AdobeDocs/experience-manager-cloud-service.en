@@ -80,6 +80,7 @@ You can quickly convert between JPEG and PNG image formats using Adobe Express. 
 ### Edit images in Adobe Express embedded editor {#edit-images-in-adobe-express-embedded-editor}
 
 Users with Express entitlement can use the embedded Express editor from within the Assets View to easily edit content and create new content with GenAI from Adobe Firefly. This feature improves content reuse and accelerates content velocity. You can also use pre-defined elements to make your asset look stunning or perform quick actions to edit your image with just a few clicks. 
+
 ![express in essentials UI](/help/assets/assets/express-in-essentials-ui.jpg)
 To edit images using [!DNL Adobe Express] embedded editor, follow the steps below:
 
