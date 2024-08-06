@@ -673,6 +673,7 @@ user-guide-title: AEM as a Cloud Service
     + Core Components {#authoring-adaptive-forms-core-components}
       + Create an Adaptive Form {#create-an-adaptive-form-on-forms-cs}
         + [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
+        +  [Set layout of an Adaptive Form based on Core Components](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
         + [Create an Adaptive Form fragment](/help/forms/adaptive-form-fragments-core-components.md)
         + [Create themes for an Adaptive Form - Core Components](/help/forms/using-themes-in-core-components.md)
         + [Create an Adaptive Form template based on Core Components](/help/forms/template-editor-core-components.md)
