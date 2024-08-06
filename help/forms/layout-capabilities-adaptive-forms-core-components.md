@@ -6,7 +6,7 @@ keywords: Layout of Adaptive Form based on core components, Different layouts fo
 role: User, Developer, Admin
 ---
 
-# Layout capabilities of Adaptive Forms based on Core Components{#layout-capabilities-of-adaptive-forms}
+# AEM Layouts for Adaptive Forms to create dynamic forms 
 
 
 | Version | Article link |
