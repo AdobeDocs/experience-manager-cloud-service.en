@@ -11,6 +11,8 @@ feature: Adaptive Forms, Core Components
 ---
 # Introduction 
 
+<span class="preview"> The feature is available under early adopter program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+
 The Forms Conversion Utility, part of [AEM Modernize Tool](https://opensource.adobe.com/aem-modernize-Tools/) suite, helps you easily convert Adaptive Forms built with legacy Foundation Components to forms that leverage the modern, supported capabilities of Core Components.
 
 ## What is AEM Modernize Tools?
