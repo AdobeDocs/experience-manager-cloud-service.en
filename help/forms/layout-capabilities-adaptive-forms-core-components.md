@@ -92,7 +92,7 @@ To learn about the different properties available in the Configure Dialog, refer
 
 Let us understand difference between various layouts in the next section.
 
-### Difference between different Adaptive Form layouts
+### Difference between various Adaptive Form layouts
 
 The table below highlights the differences between various layouts, comparing features such as purpose, navigation, structure and many more:
 
