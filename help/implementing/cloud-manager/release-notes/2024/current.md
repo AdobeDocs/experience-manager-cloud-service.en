@@ -3,7 +3,7 @@ title: Release Notes for Cloud Manager 2024.8.0 in Adobe Experience Manager as a
 description: Learn about the release notes for Cloud Manager 2024.8.0 in AEM as a Cloud Service.
 feature: Release Information
 role: Admin
-exl-id: 
+
 ---
 
 # Release notes for Cloud Manager 2024.8.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
