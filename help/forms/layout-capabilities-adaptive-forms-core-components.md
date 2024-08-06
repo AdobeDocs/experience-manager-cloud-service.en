@@ -162,12 +162,13 @@ You can change the layout of an Adaptive Form that involves modifying how compon
 Perform the following steps to change the layout of a form:
 
 1. Open an Adaptive Form for editing 
-2. Click on the properties icon of the layout.
+1. Click on the properties icon of the layout.
 1. Click the Replace icon and the **[!UICONTROL Replace Component]** dialog box appears.
 
     ![Replace Layout](/help/forms/assets/replace-layout.png)
 
-1. Select the desired layout from the **[!UICONTROL Replace Component]** dialog box.  
+1. Select the desired layout from the **[!UICONTROL Replace Component]** dialog box.
+     
    ![Replace Component dialog box](/help/forms/assets/replace-component.png)
 
 After selecting the layout, the arrangement of the components within the layout changes accordingly.
