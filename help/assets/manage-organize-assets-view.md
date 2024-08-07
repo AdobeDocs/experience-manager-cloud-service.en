@@ -132,6 +132,10 @@ To set asset status:
 
      ![Approval status](/help/assets/assets/approval-status-delivery.png)
 
+     >[!NOTE]
+     >
+     > If you do not have Dynamic Media with OpenAPI capabilities and Content Hub enabled for Experience Manager Assets, the **[!UICONTROL Approval Target]** field is not displayed.
+
    If you are not using the default metadata form and cannot view the **[!UICONTROL Approval Target]** field, [edit your metadata form](/help/assets/metadata-assets-view.md#metadata-forms) to drag the **[!UICONTROL Approval for]** field from the available components to your metadata form and click **[!UICONTROL Save]**.
 
    >[!NOTE]
