@@ -26,6 +26,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2024 {#2024}
+      + [Release Notes for 2024.6.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-6-0.md)
       + [Release Notes for 2024.5.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-5-0.md)
       + [Release Notes for 2024.4.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-4-0.md)
       + [Release Notes for 2024.3.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-3-0.md)
@@ -155,6 +156,9 @@ user-guide-title: AEM as a Cloud Service
       + [Release Notes for 2020.2.0](/help/implementing/cloud-manager/release-notes/2020/2020-2-0.md)
   + Release Notes for Migration Tools {#migration-tools}
     + [Current Release Notes](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+    + 2024 {#2024}
+      + [Release Notes for 2024.01.0](/help/journey-migration/release-notes/release-notes-migration-tools-2024-01-0.md)
+      + [Release Notes for 2024.05.0](/help/journey-migration/release-notes/release-notes-migration-tools-2024-05-0.md)
     + 2023 {#2023}
       + [Release Notes for 2023.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-10-0.md)
       + [Release Notes for 2023.9.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-09-0.md)
@@ -282,6 +286,7 @@ user-guide-title: AEM as a Cloud Service
     + [AEM Modernization Tools](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 + Sites {#sites}
   + [Notable Changes to AEM Sites in AEM Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+  + [Sites and Edge Delivery Services](/help/sites-cloud/sites-and-edge.md)
   + Authoring {#authoring}
     + [Quick Start Guide to Authoring Pages](/help/sites-cloud/authoring/quick-start.md)
     + [Basic Handling](/help/sites-cloud/authoring/basic-handling.md)
@@ -324,8 +329,10 @@ user-guide-title: AEM as a Cloud Service
       + [Style System](/help/sites-cloud/authoring/page-editor/style-system.md)
       + [Undo Redo Limitations](/help/sites-cloud/authoring/page-editor/undo-redo.md)
     + Universal Editor {#universal-editor}
+      + [Navigating the Universal Editor](/help/sites-cloud/authoring/universal-editor/navigation.md)
       + [Authoring Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
       + [Publishing Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
+      + [Content Inheritance in the Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md)
     + Fragments {#fragments}
       + [Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md)
       + [Experience Fragments](/help/sites-cloud/authoring/fragments/experience-fragments.md)
@@ -587,7 +594,9 @@ user-guide-title: AEM as a Cloud Service
     + [Watch asset, folders, and collections](/help/assets/manage-notifications-assets-view.md)
     + [Manage reports](/help/assets/manage-reports-assets-view.md)
     + [Manage tags](/help/assets/tagging-management-assets-view.md)
+    + [Content Credentials](/help/assets/content-credentials.md)
     + [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+   
 
   + Content Hub {#content-hub}
     + [Overview](/help/assets/product-overview.md)
@@ -678,6 +687,7 @@ user-guide-title: AEM as a Cloud Service
         + [Submit an Adaptive Form to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
         + [Submit an Adaptive Form to Microsoft&reg; OneDrive](/help/forms/configure-submit-action-onedrive.md)
         + [Connect an Adaptive Form to Microsoft&reg; SharePoint](/help/forms/configure-submit-action-sharepoint.md)
+        + [Configure SharePoint Site with limited access using authorization scope](/help/forms/configure-sharepoint-site-limited-access.md)
         + [Integrate AEM Adaptive Form with AEM Workflow](/help/forms/configure-submit-action-workflow.md)
         + [Configure Submit to REST Endpoint submit action for Adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
         + [Configure the Send Email submit action for an Adaptive Form](/help/forms/configure-submit-action-send-email.md)
@@ -1245,6 +1255,7 @@ user-guide-title: AEM as a Cloud Service
   + [Maintenance Tasks](/help/operations/maintenance.md)
   + [Self-Service Restore](/help/operations/restore.md)
   + [Asynchronous Jobs](/help/operations/asynchronous-jobs.md)
+  + [Using Config Pipelines](/help/operations/config-pipeline.md)
   + [Removal of the generic lucene index](/help/operations/removal-generic-lucene-index.md)
   + [Query and Indexing Best Practices](/help/operations/query-and-indexing-best-practices.md)  
 + Compliance {#compliance}

@@ -50,7 +50,8 @@ A non-production pipeline mainly serves to run code quality scans or to deploy s
 In addition to production and non-production, pipelines can be differentiated by the type of code they deploy.
 
 * **[Full Stack Pipelines](#full-stack-pipeline)** - Simultaneously deploy back-end and front-end code builds containing one or more AEM server applications along with HTTPD/Dispatcher configurations
-* **[Config Pipelines](#config-deployment-pipeline)** - Configure and deploy traffic filter rules, including WAF rules, within minutes
+* **[Config Pipelines](#config-deployment-pipeline)** - Quickly deploy configurations for features such as log forwarding, purge-related maintenance tasks, and various CDN configurations such as traffic filter rules (including WAF rules), request and response transformations, origin selectors, client-side redirects, error pages, customer-managed CDN keys, purge API keys, and basic auth.
+  * Please see the document [Using Config Pipelines](/help/operations/config-pipeline.md) for details.
 * **[Front-End Pipelines](#front-end)** - Deploy front-end code builds containing one or more client-side UI applications 
 * **[Web Tier Config Pipelines](#web-tier-config-pipelines)** - Deploys HTTPD/Dispatcher configurations
 
@@ -65,11 +66,10 @@ The following table summarizes the pipelines available in Cloud Manager and thei
 |Production or Non-Production|Deployment|Full-Stack|Simultaneously deploys back-end and front-end code builds along with HTTPD/Dispatcher configurations|When front-end code must be deployed simultaneously with AEM server code.<br>When front-end pipelines or web tier config pipelines have not yet been adopted.|
 |Production or Non-Production|Deployment|Front-End|Deploys front-end code build containing one or more client-side UI application|Supports multiple, concurrent front-end pipelines<br>Much faster than full-stack deployments|
 |Production or Non-Production|Deployment|Web Tier Config|Deploys HTTPD/Dispatcher configurations|Deploys in minutes|
-|Production or Non-Production|Deployment|Config|Deploys traffic filtering rules|Deploys in minutes|
+|Production or Non-Production|Deployment|Config|Deploys [configuration for a number of features](/help/operations/config-pipeline.md) related to CDN, log forwarding, and purge maintenance tasks |Deploys in minutes|
 |Non-Production|Code Quality|Full-Stack|Runs code quality scans on full-stack code without a deployment|Supports multiple pipelines|
 |Non-Production|Code Quality|Front-End|Runs code quality scans on front-end code without a deployment|Supports multiple pipelines|
 |Non-Production|Code Quality|Web Tier Config|Runs code quality scans on dispatcher configurations without a deployment|Supports multiple pipelines|
-|Non-Production|Code Quality|Config|Deploys traffic filtering rules||
 
 The following diagram illustrates Cloud Manager's pipeline configurations with traditional, single front-end repository, or independent front-end repository setups.
 
@@ -110,9 +110,9 @@ To learn how to configure full-stack pipelines, see the following documents:
 
 ## Config Pipelines {#config-deployment-pipeline}
 
-With a config pipeline you can configure and deploy traffic filter rules, including WAF rules, within minutes.
+With a config pipeline you can quickly deploy configurations for log forwarding, purge-related maintenance tasks, and various CDN configurations such as traffic filter rules (including WAF rules), request and response transformations, origin selectors, client-side redirects, error pages, customer-managed CDN keys, purge API keys, and basic auth.
 
-See [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md) to learn how to manage the configurations in your repository so they are deployed properly.
+Please see the document [Using Config Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) for a comprehensive list of supported features and to  learn how to manage the configurations in your repository so they are deployed properly.
 
 ### Configuring Config Pipelines {#configure-config-deployment}
 
