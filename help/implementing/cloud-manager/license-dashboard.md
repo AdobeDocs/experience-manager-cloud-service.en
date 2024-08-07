@@ -6,9 +6,16 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 ---
+
 # License Dashboard {#license-dashboard}
 
 Cloud Manager provides a dashboard for easy viewing of AEMaaCS product entitlements available to your organization or tenant.
+
+>[!IMPORTANT]
+>
+>The license dashboard only applies to the AEM as a Cloud Service programs. [AMS programs](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) are not included in the license dashboard.
+>
+>To determine the type of service your program has (AMS or AEMaaCS), please see the document [Navigating the Cloud Manager UI.](/help/implementing/cloud-manager/navigation.md#program-cards)
 
 ## Overview {#overview}
 
@@ -26,8 +33,8 @@ To access your license dashboard, follow these steps.
 >A user in the **Business Owner** role must be logged in to view the License Dashboard.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
-
-1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, switch to the **License** tab.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, tap or click the hamburger menu button on the [Cloud Manager Header.](/help/implementing/cloud-manager/navigation.md#cloud-manager-header) This reveals the tabs.
+1. Tap or click the **License** option in the tab.
 
 ![License Dashboard](assets/license-dashboard.png)
 
@@ -35,18 +42,56 @@ The dashboard is divided into three sections showing you:
 
 * **Solutions** - This section summarizes which solutions that you have licensed such as Sites or Assets.
 * **Add-ons** - This section summarizes which add-ons to your licensed solutions that you have available.
-* **Sandbox &amp; Development Environments** - This section summarizes what environments that you have available.
+* **Other Entitlements** - This section summarizes what sandbox and dev environment as well as other entitlements that can be consumed within your tenant.
 
-Each section summarizes what is available and how it is used, if at all. Currently only Sites solutions are displayed even if other solutions exist in the tenant.
+Each section summarizes what is available and how it is used, if at all. Currently only Sites and Assets solutions are displayed even if other solutions exist in the tenant.
 
 * The **Status** column displays the number of entitlements unused versus the total available for the tenant.
 * The **Configured on** column indicates the programs on which the solution entitlement has been applied.
-  * An entitlement is considered as used only when a production environment has been created or if one exists, if an update pipeline has been run on it. 
-* The **Usage** column displays the content requests consumed in the past 12 months as a graph when clicked.
+  * An entitlement is considered as used only when a production environment has been created or if one exists, if an update pipeline has been run on it.
+  * Only a limited number of programs are listed individually in the column with the remainder represented by a `+x` entry.
+  * Hover over the `+x` entry for a pop-up with the details of all programs.
+* The **Usage** column displays a **[View usage details](#view-usage-details)** button to show usage statistics for the solution.
 
 >[!TIP]
 >
 >To learn how to manage your Adobe entitlements across your entire organization from Admin Console, see the [Admin Console overview](https://helpx.adobe.com/enterprise/using/admin-console.html).
+
+## View Usage Details {#view-usage-details}
+
+The **View usage details** button gives access to the chosen solution's **Usage Details** window. This window gives a detailed breakdown including charts to show your solution's usage. How that usage is measured depends on the chosen solution.
+
+### Sites Usage Details {#sites-usage-details}
+
+The **Sites usage details** window, presents graphs giving an overview of the usage of your Sites licenses based on [content requests.](#what-is-a-content-request)
+
+![Sites usage details window](assets/sites-usage-details.png)
+
+The left side of the window presents a pie chart showing the contract breakdown for the contract year selected in the **View contract year** dropdown.
+
+The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time.
+
+### Assets Usage Details {#assets-usage-details}
+
+The **Assets usage details** window, presents graphs giving an overview of the usage of your Assets licenses based on [storage](#storage) and [standard users.](#standard-users) Select the appropriate tab to toggle between the views.
+
+For both storage and standard users views, you can use the **Environment Type** dropdown to toggle the view between production, stage, and development environments.
+
+#### Storage {#storage}
+
+![Assets usage details window for storage](assets/assets-usage-details-storage.png)
+
+The left side of the window presents a pie chart showing the contract breakdown for the contract year selected in the **View contract year** dropdown.
+
+The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time.
+
+#### Standard Users {#standard-users}
+
+![Assets usage details window for standard-users](assets/assets-usage-details-standard-users.png)
+
+The left side of the window presents a pie chart showing the contract breakdown for the contract year selected in the **View contract year** dropdown.
+
+The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time.
 
 ## Frequently Asked Questions {#faq}
 
