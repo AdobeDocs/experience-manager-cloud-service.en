@@ -59,17 +59,17 @@ Each section summarizes what is available and how it is used, if at all. Current
 
 ## View Usage Details {#view-usage-details}
 
-The **View usage details** button gives access to the chosen solution's **Usage Details** window. This window gives a detailed breakdown including charts to show your solution's usage.
+The **View usage details** button gives access to the chosen solution's **Usage Details** window. This window gives a detailed breakdown including charts to show your solution's usage. How that usage is measured depends on the chosen solution.
 
 ### Sites Usage Details {#sites-usage-details}
 
 The **Sites usage details** window, presents graphs giving an overview of the usage of your Sites licenses based on [content requests.](#what-is-a-content-request)
 
-![Sites usage details window](assets/site-usage-details.png)
+![Sites usage details window](assets/sites-usage-details.png)
 
-The left side of the window presents a pie chart showing the contract breakdown.
+The left side of the window presents a pie chart showing the contract breakdown for the contract year selected in the **View contract year** dropdown.
 
-The right side of the window presents an area chart showing the usage broken down by program over time. A hover reveals a popup with details per program for the selected point in time.
+The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time.
 
 ### Assets Usage Details {#assets-usage-details}
 
@@ -79,19 +79,19 @@ For both storage and standard users views, you can use the **Environment Type** 
 
 #### Storage {#storage}
 
-![Assets usage details window for storage](assets/site-usage-details.png)
+![Assets usage details window for storage](assets/assets-usage-details-storage.png)
 
-The left side of the window presents a pie chart showing the contract breakdown.
+The left side of the window presents a pie chart showing the contract breakdown for the contract year selected in the **View contract year** dropdown.
 
-The right side of the window presents an area chart showing the usage broken down by program over time. A hover reveals a popup with details per program for the selected point in time.
+The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time.
 
 #### Standard Users {#standard-users}
 
-![Assets usage details window for standard-users](assets/site-usage-details.png)
+![Assets usage details window for standard-users](assets/assets-usage-details-standard-users.png)
 
-The left side of the window presents a pie chart showing the contract breakdown.
+The left side of the window presents a pie chart showing the contract breakdown for the contract year selected in the **View contract year** dropdown.
 
-The right side of the window presents an area chart showing the usage broken down by program over time. A hover reveals a popup with details per program for the selected point in time.
+The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time.
 
 ## Frequently Asked Questions {#faq}
 
