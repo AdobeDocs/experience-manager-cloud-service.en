@@ -6,7 +6,7 @@ keywords: Layout of Adaptive Form based on core components, Different layouts fo
 role: User, Developer, Admin
 ---
 
-# AEM Layouts for Adaptive Forms to create dynamic forms 
+# Layout capabilities of Adaptive Forms based on Core Components 
 
 
 | Version | Article link |
@@ -15,19 +15,15 @@ role: User, Developer, Admin
 | AEM as a Cloud Service (Foundation Components)    | [Click here](/help/forms/layout-capabilities-adaptive-forms.md)        |
 | AEM as a Cloud Service (Core Components)    | This article         |
 
-[!DNL Adobe Experience Manager] Forms layout lets you create easy-to-use Adaptive Forms that offer dynamic experiences to end users. AEM Cloud Service form layout controls how items or components are displayed in an Adaptive Form. The dynamic form layouts are the first-class components that are used to structure and design AEM forms effectively. 
+[!DNL Adobe Experience Manager] forms provide layouts as first-class components to structure and design the forms effectively. The layout controls how components are displayed in a form. Adaptive Forms support various layouts: panel, wizard, accordion, tabs on top, and tabs on the left.
 
-## Prerequisite knowledge 
+## Pre-requisite
 
-Before learning the different layout capabilities of Adaptive Forms, it is important to be familiar with:
+Before exploring the various capabilities of a layout, ensure that core components are enabled for your environment. For detailed instructions on how to enable core components for your environment, [click here](/help/forms/enable-adaptive-forms-core-components.md).
 
-* [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 
-* [Create an Adaptive Form based on Core Components](/help/forms/creating-adaptive-form-core-components.md)
-* [Create and use Adaptive Form themes](/help/forms/using-themes-in-core-components.md)
+##  Adaptive Forms layout types
 
-## AEM Forms layout types
-
-An Adaptive Form based on Core Components provides you with the following types of layouts:
+Adaptive Form based on Core Components supports the following types of layouts:
 * **Panel layout**
 * **Wizard layout**
 * **Vertical layout**
@@ -38,42 +34,46 @@ An Adaptive Form based on Core Components provides you with the following types 
 
 >[!TAB Panel Layout]
 
-A Panel form layout arranges components/items within distinct, often collapsible, sections or panels in an Adaptive Form. Panel layouts are useful for organizing large amounts of information in a way that makes it easier to navigate and find specific content.
+Panel layouts are useful for organizing large amounts of information in a way that makes it easier to navigate and find specific content. The panel layout arranges form components within distinct, sections or panels in an Adaptive Form. 
 
 ![Panel Layout](/help/forms/assets/panel-layout.png){width="250" align="center"}
 
 Panel Layout
 
-To learn about the different properties available in the Configure Dialog, refer to the [Panel Layout](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) article.
+You can use the [panel component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) to add the panel layout in a form. For detailed instructions on how to configure the properties available in the **Configure Dialog** of the panel component, refer to the [panel component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) article.
 
 >[!TAB Wizard Layout]
 
-A Wizard layout for forms guides users through a multi-step process. Each step represents a different part of the process, and users navigate through the steps sequentially, often with **Next** and **Previous** buttons. This layout simplifies complex processes by breaking them into manageable steps.
+The wizard layout simplifies complex processes by breaking them into manageable steps. Each step represents a different part of the process, and users navigate through the steps sequentially, often with **Next** and **Previous** buttons. It helps the users to create forms that require multiple steps.
 
 ![Wizard Layout](/help/forms/assets/wizard-layout-compare.gif){width="250" align="center"}
 
 Wizard Layout
 
+You can use the [wizard component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) to add the wizard layout in a form. For detailed instructions on how to configure the properties available in the **Configure Dialog** of the wizard component, refer to the [wizard component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) article.
+
 >[!TAB Vertical Tabs Layout]
 
-A Vertical form layout arranges components/items one below the other in a column in a form. It is a common layout for webpages, forms, and lists, where content is stacked vertically for easy reading and navigation.
+The vertical tabs layout is also known as Tabs on the left layout. The vertical tabs layout organizes panels or sections along the left side of a form, with the panel headings as the names for each section. It is a common layout for forms where panels/sections is stacked vertically for easy reading and navigation.
 
 ![Vertical Layout](/help/forms/assets/vertical-tab.gif){width="250" align="center"}
 
 Vertical Tabs Layout
 
-To learn about the different properties available in the Configure Dialog, refer to the [Vertical Tabs Layout](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tab) article.
+You can use the [vertical tabs component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) to add the vertical tabs layout in a form. For detailed instructions on how to configure the properties available in the **Configure Dialog** of the vertical tabs component, refer to the [vertical tabs component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) article.
 
 
 >[!TAB Horizontal Tabs Layout]
 
-In a Horizontal/Tabs on top layout for forms, components/items are arranged side-by-side in a row. This layout is used for navigation menus, toolbars, or any content that should be presented in a linear manner across the width of the container.
+The horizontal tabs layout is also known as Tabs on the top layout. The horizontal tabs layout arranges panels or sections side-by-side in a row, with the panel headings as the names for each section. This layout is used for navigation menus, toolbars, or any content that should be presented in a linear manner across the width of the form or panel.
+
 
 ![Horizontal Layout](/help/forms/assets/horizontal-layout.gif){width="250" align="center"}
 
 Horizontal Tabs Layout
 
-To learn about the different properties available in the Configure Dialog, refer to the [Horizontal Tabs Layout](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) article.
+You can use the [horizontal tabs component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) to add the horizontal tabs layout in a form. For detailed instructions on how to configure the properties available in the **Configure Dialog** of the horizontal tabs component, refer to the [horizontal tabs component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) article.
+
 
 >[!TAB Accordion Layout]
 
@@ -83,17 +83,13 @@ An Accordion layout displays content in collapsible sections or panels in an Ada
 
 Accordion Layout
 
-To learn about the different properties available in the Configure Dialog, refer to the [Accordion Layout](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) article.
+You can use the [accordion component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) to add the accordion layout in a form. For detailed instructions on how to configure the properties available in the **Configure Dialog** of the accordion component, refer to the [accordion component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) article.
 
 >[!ENDTABS]
 
-To learn about the different properties available in the Configure Dialog, refer to the [Wizard Layout](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) article.
+### How to choose the right Adaptive Form layout?
 
-Let us understand the difference between various layouts in the next section.
-
-### Difference between various Adaptive Form layout
-
-The table below highlights the differences between various layouts, comparing features such as purpose, navigation, structure and many more:
+It is important to select the right Adaptive Form layout to optimize user experience and form functionality. The table helps you to understand the different layout options available and guides you in selecting the most suitable layout based on your specific needs and use cases:
 
 | Feature                  | Panel Layout | Wizard Layout                                      | Tabs on the Top/Vertical Tabs Layout                             | Tabs on the Left/Horizontal Tabs Layout                             | Accordion Layout                                      |
 |--------------------------|-----------------------------------------------------|----------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------|--------|
@@ -103,72 +99,189 @@ The table below highlights the differences between various layouts, comparing fe
 | **User Experience**     | Organizes large amounts of content in a manageable way | Step-by-step guidance, reducing overwhelm          | Clear, accessible switching between views          | Efficient use of vertical space, always visible tabs| Compact view with expanded/collapsed sections         |
 | **Use Case**            |Complex forms with categorized sections | Setup processes, complex forms                     | Organizing settings or content categories          | Dashboards, complex data views                      | FAQs, settings menus, detailed content sections       |
 
-## Add form components to layouts
 
-You can add [Adaptive Form components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction) to different layouts for an Adaptive Form based on Core Components in two ways:
-    - [Drag and drop the Adaptive Forms Core components into the layout using the Content tree](#drag-and-drop-the-adaptive-forms-core-components-into-the-layout-using-the-content-tree)
-    - [Insert the Adaptive Forms Core components into the layout using the Add icon.](#insert-the-adaptive-forms-core-components-into-the-layout-using-the-add-icon)
+## How to insert a layout and add form components to it?
 
-### Drag and drop the Adaptive Forms Core components into the layout using the Content tree
+Consider the **IT Request Form** shown in the [Adaptive Forms Layout Types](#adaptive-forms-layout-types) section. The form is divided into three panels: Employee Detail, Problem Detail, and Attachment. 
+Let's explore the step-by-step process for inserting a layout (In our example, a horizontal tabs layout is inserted into a form) and adding components to it. 
 
-You can drag and drop the [Adaptive Form components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction) into the layout using the content tree. It allows you to position and arrange components visually within your layout, offering a straightforward way to build and customize your Adaptive Forms.
+### Open an Adaptive Form
 
-Perform the following steps to drag and drop the form components into the layout:
+1. Log in to your [!DNL Experience Manager Forms] instance. 
+1. In the upper-left corner, select **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
+1. Open an existing Adaptive Form in an edit mode if it has already been created. 
 
-To add Adaptive Forms Core components to your layout using the Content tree, follow these steps:
+    ![Open an Adaptive Form](/help/forms/assets/insert-layout.png){width="250" align="center"}
 
-1. Open the Adaptive Form for editing.
-1. Navigate to the content tree panel within your authoring environment. It displays the hierarchical structure of your form components.
+Alternatively, you can also [create new Adaptive Form](/help/forms/creating-adaptive-form-core-components.md).
 
-    ![Content Tree Panel](/help/forms/assets/content-tree-view.png){width="200" align="center"}
+### Insert a layout
 
+1. Locate the section within the form editor that allows you to add a layout. 
 
-1. Browse through the content tree to find the component and select the desired component, which can be a specific form field, button, or other component.
+    ![Form editor](/help/forms/assets/form-editor.png){width="200" align="center"}
+1. Click the **Add** icon. The icon is typically represented by a plus sign (+) that signifies the option to add new components.
 
-1. Drag the component by clicking and holding the selected component, then drag it over to the layout area to place it.
+    ![Insert layout](/help/forms/assets/insert-layout-add-icon.png){width="200" align="center"}
+    
+    Clicking the **Add** icon displays an **Insert New Component** dialog box that displays various components for insertion.
 
-1. Drop the component into the layout by releasing the mouse. 
+1. Browse the available components in the dialog box that appears and select Horizontal Tabs component to insert horizontal tabs layout.
 
-The component is added to your layout, and you can adjust its properties and settings as required.
+    ![Select horizontal tabs](/help/forms/assets/select-horizontal-tab.png){width="200" align="center"}
 
-### Insert the Adaptive Forms Core components into the layout using the Add icon.
+    When you add the horizontal tabs component to your form, it initially consists of two empty panels, named Item1 and Item2, by default. You need to manually add form components to these panels. 
 
-You can insert the components in the layout using the **Add** icon in the form editor. It allows you to easily access a list of available components and insert them into your layout by selecting the desired element.
+    ![Horizontal tabs](/help/forms/assets/insert-tabs-on-top.png){width="200" align="center"}
 
-Perform the following steps to insert Adaptive Forms Core components into your layout using the Add icon:
+1. Open the properties of the horizontal tabs component and specify the name for the component.
 
-1. Open an Adaptive Form for editing to modify the structure of your form.
-1. To add the component, click the **Add** icon within the form editor. The icon is typically represented by a plus sign (+) that signifies the option to add new components.
+    ![Add name for Horizontal tabs](/help/forms/assets/change-name-of-horizontal-tabs.png){width="200" align="center"}
 
-    ![Add Component](/help/forms/assets/add-component.png){width="200" align="center"}
+1. Click **Done**.
+
+    ![Horizontal tabs](/help/forms/assets/tabs-on-top-rename-component.png){width="200" align="center"}
+
+Once the layout component is added in the form, modify the number of panels according to the requirements. As the IT Request Form consists of three panels, let's go over the steps to add new panel to the horizontal tabs component.  
+
+### Add new panel in the horizontal tabs component
+
+1. Open the horizontal tabs component properties and click the **Items** tab.
+
+    ![Item tab for Horizontal tabs](/help/forms/assets/tabs-on-top-items-tab.png){width="200" align="center"}
+
+1. Click the **Add** icon to add new panel.
+
+    ![Add new panel](/help/forms/assets/tabs-on-top-add-panel.png){width="200" align="center"}
+
+    When you click the **Add** icon, the **Insert New Component** dialog box appears.
+
+1. Select the panel component.
+
+     ![Add new panel](/help/forms/assets/tabs-on-top-new-panel.png){width="200" align="center"}
+
+    When you select the panel component, the new panel is added in the horizontal layout.
+    
+    ![Add new panel](/help/forms/assets/tabs-on-top-add-new-panel.png){width="200" align="center"}
+
+    You must provide a name for the new panel; otherwise, you cannot save the properties of the horizontal tabs component.
+
+1. Specify the names of the panels as shown in the figure below:
+
+    ![Panel names](/help/forms/assets/tabs-on-tops-panel-name.png){width="200" align="center"}
+
+1. Click **Done**.
+
+    Once you click **Done**, the three panels appear side-by-side in a row. The panel names are displayed as headings for each panel, and you can add form components to each panel.
+
+    ![Panel names](/help/forms/assets/tabs-on-top-initial-view.png){width="200" align="center"}
+
+As the IT Request Form does not include panel titles, here are the steps to hide the panel title.
+
+### Hide the title of the panels
+
+1. Open the Configuration Dialog for the first panel.
+
+    ![Panel 1 Properties](/help/forms/assets/tabs-on-tops-panel1-properties.png){width="200" align="center"}
+
+1. Select the **Hide title** checkbox from the **Basic** tab.
+    
+     ![Hide title](/help/forms/assets/tabs-on-top-hide-panel.png){width="200" align="center"}
+
+1. Click **Done**.
+
+Similarly, you can hide titles for the other two panels also. Once done, you can proceed with adding form components to each panel.
+
+### Add form components to each panel
+
+You can employ one of the following method to add form components to the panel:
+  - [Add components to a layout's panel using the Add icon](#add-components-to-a-layouts-panel-using-the-add-icon)
+  - [Drag and drop components into a layout's panel](#drag-and-drop-components-into-a-layouts-panel)
+
+#### Add components to a layout's panel using the Add icon
+
+1. Locate the section within the panel that allows you to add components. 
+1. Click the **Add** icon. The icon is typically represented by a plus sign (+) that signifies the option to add new components.
+  ![Insert layout](/help/forms/assets/tabs-on-top-add-component.png){width="200" align="center"}
 
     Clicking the **Add** icon displays an **Insert New Component** dialog box that displays various components for insertion.
-1. Browse the available components in the dialog box that appears.
-1. Select the desired Adaptive Forms Core component to your layout, which can be a specific form field, button, or other essential form element.
 
     ![Insert New Component Dialog Box](/help/forms/assets/insert-new-component.png){width="200" align="center"}
 
-Once selected, the component is inserted into your layout at the position indicated by your cursor or based on the default insertion point.
+1. Browse the available components in the dialog box that appears and select Text Box component.
+1. Specify the name of the text box component as Name.
+    ![Insert layout](/help/forms/assets/tabs-on-top-textbox-component.png){width="200" align="center"}
+1. Similarly, add two more text boxes and name the components as Email ID and Department.   
+    ![First Panel](/help/forms/assets/tabs-on-tops-first-panel.png){width="200" align="center"}
 
-The **Add** icon provides a streamlined way to integrate components into your layout by offering a straightforward selection and insertion process.
+    Now that the components in the first panel have been added, you can proceed with adding the components to the second panel. 
 
-## Change the layout
+1. To switch the panel, click **Select Panel** from the toolbar. 
 
-You can change the layout of an Adaptive Form that involves modifying how components are arranged and displayed within the form. 
+    ![Switch Panel](/help/forms/assets/tabs-on-top-select-panel.png){width="200" align="center"}
 
-Perform the following steps to change the layout of a form:
+    When you click the **Select Panel**, the list of the added panels in the horizontal tabs component appears.
+
+    ![Switch Panel](/help/forms/assets/tabs-on-tops-panel2.png){width="200" align="center"}
+
+1. Select **2 Panel** from the panel list and the view changes from the first panel to the second panel.
+
+    ![Second Panel](/help/forms/assets/tabs-on-top-panel2-component.png){width="200" align="center"}
+
+1. Repeat the steps outlined from Step 2 to Step 5 for adding the desired components in panel 2 as shown in the below figure:   
+
+     ![Second Panel components](/help/forms/assets/panel-2-components.png){width="200" align="center"}
+
+1. Similarly, repeat the steps outlined from Step 2 to Step 5 for adding the desired component in panel 3:
+
+    ![Third Panel components](/help/forms/assets/panel-3-component.png){width="200" align="center"}
+
+#### Drag and drop components into a layout's panel
+
+1. Open the Adaptive Form for editing.
+1. Navigate to the left panel within your authoring environment and click **Components**.
+
+    ![Component Panel](/help/forms/assets/add-new-component.png){width="200" align="center"}
+
+    When you click the **Components** option from the left panel, the list of the components appears.   
+
+1. Browse through the components and select the desired component.
+
+    ![Component Panel](/help/forms/assets/add-new-component2.png){width="200" align="center"}
+
+1. Drag the component by clicking and holding the selected component, then drag it over to the panel area to place it.
+
+1. Drop the component into a desired panel by releasing the mouse. 
+
+You can also delete form component from the panel using the ![Delete icon](/help/forms/assets/Smock_Delete_18_N.svg) icon. 
+
+![Deleting a component](/help/forms/assets/delete-component.png){width="200" align="center"}
+
+## How to replace an existing layout with a new layout?
+
+You can replace a layout of a form with a new layout which involves modifying how components are arranged and displayed within a form. 
+
+Perform the following steps to replace the existing layout of a form:
 
 1. Open an Adaptive Form for editing 
-1. Click on the properties icon of the layout.
-1. Click the Replace icon and the **[!UICONTROL Replace Component]** dialog box appears.
+2. Click on the properties icon of the layout.
+3. Click the Replace icon and the **[!UICONTROL Replace Component]** dialog box appears.
 
     ![Replace Layout](/help/forms/assets/replace-layout.png){width="200" align="center"}
 
-1. Select the desired layout from the **[!UICONTROL Replace Component]** dialog box.
+4. Select the desired layout from the **[!UICONTROL Replace Component]** dialog box.
      
    ![Replace Component dialog box](/help/forms/assets/replace-component.png){width="200" align="center"}
 
 After selecting the layout, the arrangement of the components within the layout changes accordingly.
+
+## Next Steps
+ 
+Once you are familiar with the various layout capabilities for an Adaptive Form based on Core Components, you can move on to the next steps:
+
+* [Create your first Adaptive Form based on Core Components](/help/forms/creating-adaptive-form-core-components.md)
+* [Create and use Adaptive Form themes](/help/forms/using-themes-in-core-components.md)
+
 
 
 ## See Also
