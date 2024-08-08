@@ -295,10 +295,11 @@ You can also drag-and-drop the components to add the form components to each pan
 
     ![Third Panel components](/help/forms/assets/panel-3-component.png){width="200" align="center"}
 
-    >[!NOTE]
-    > You can also delete form component from the panel using the ![Delete icon](/help/forms/assets/Smock_Delete_18_N.svg) icon. 
-    > 
-    > ![Deleting a component](/help/forms/assets/delete-component.png){width="200" align="center"}
+
+>[!NOTE]
+> You can also delete form component from the panel using the ![Delete icon](/help/forms/assets/Smock_Delete_18_N.svg) icon. 
+> 
+> ![Deleting a component](/help/forms/assets/delete-component.png){width="200" align="center"}
 
 ### Preview the form
 
