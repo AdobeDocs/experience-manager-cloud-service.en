@@ -20,20 +20,24 @@ The release date for Cloud Manager release 2024.8.0 in AEM as a Cloud Service is
 
 ## What's new {#what-is-new}
 
-* The `sonar-maven-plugin` is now upgraded to work with Java 17 to Java 21. The plug-in is used to integrate SonarQube, a tool for continuous inspection of code quality, into the build process.
-* [Additional publish regions](/help/operations/additional-publish-regions.md) and a [99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) (Service Level Agreement) are now available for AEM Forms as a Cloud Service. This enhancement lets AEM as a Cloud Service customers achieve higher SLAs with increased uptime and lower latency, ensuring best-in-class experiences for their globally distributed users.
+* [Additional publish regions](/help/operations/additional-publish-regions.md) and a [99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) (Service Level Agreement) are now available for AEM Forms as a Cloud Service.
+  * This enhancement lets you achieve higher SLAs with increased uptime and lower latency, ensuring best-in-class experiences for your globally distributed users.
 
 ## Early adoption program {#early-adoption}
 
 For a chance to test some upcoming features, be a part of Adobe's early adoption program.
+
+### Staging-Only and Production-Only Pipelines {#stage-prod-only-pipelines}
+
+Support for [staging-only and production-only pipelines](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-pipelines-only.md) has been introduced, enabling you to split full-stack production deployment pipelines into smaller, specialized deployments.
+
+If you are interested in testing this new feature and sharing your feedback, please send an email to `Grp-cloudmanager_splitpipelines@adobe.com` from your email address associated with your Adobe ID.
 
 ### Edge Delivery Services support in Cloud Manager {#edge-delivery-services}
 
 If you have licensed Edge Delivery Services as part of AEM Sites, [you can now onboard your site with Edge Delivery Services directly in Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md) and go live using a guided, self-service experience.
 
 This capability provides a unified experience for all your AEM properties. It ensures consistency across critical workflows such as domain name management, SSL certificate management, and CDN mappings.
-
-Does this look good to you?
 
 If you are interested in testing this new feature and sharing your feedback, send an email to `aemcs-cmedgedelsvs-program-adopter@adobe.com` from the email address associated with your Adobe ID. 
 
@@ -53,4 +57,5 @@ Curious about trying out the new dashboard? To begin, send an email to `aem-ligh
 
 ## Bug fix
 
-* In rare cases, the Configuration pipeline was incorrectly shown with a status of `Failed`.
+* A rare issue was corrected where pipeline steps were found to be running after the pipeline was deleted.
+* A problem with configuration pipelines incorrectly showing a `FAILED` status in rare cases has been fixed.
