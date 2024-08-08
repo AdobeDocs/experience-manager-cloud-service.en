@@ -110,7 +110,7 @@ Consider the **IT Request Form** shown in the [Adaptive Forms Layout Types](#ada
 
 * **Problem Detail**: The panel captures details about the issue. It includes a checkbox for the problem category with three options: Network, Computer, or Other. It also features two textboxes labeled Please Specify and Comments.
 
-* **Attachment**: The panel allows for the upload of supporting documents related to the problem. 
+* **Attachment**: The panel allows to upload supporting documents related to the problem. 
 
 Let's explore the step-by-step process for inserting a layout and adding components to it. In this example, a horizontal tabs layout is inserted to a form.
 
