@@ -204,8 +204,8 @@ Similarly, you can hide titles for the other two panels also. Once done, you can
 ### Add form components to each panel
 
 You can employ one of the following method to add form components to the panel:
-- [Add components to a layout's panel using the Add icon](#add-components-to-a-layouts-panel-using-the-add-icon)
-- [Drag and drop components into a layout's panel](#drag-and-drop-components-into-a-layouts-panel)
+* [Add components to a layout's panel using the Add icon](#add-components-to-a-layouts-panel-using-the-add-icon)
+* [Drag and drop components into a layout's panel](#drag-and-drop-components-into-a-layouts-panel)
 
 #### Add components to a layout's panel using the Add icon
 
