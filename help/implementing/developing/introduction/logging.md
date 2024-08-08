@@ -610,6 +610,12 @@ The network bandwidth associated with logs sent to Splunk are considered part of
 
 CDN logs will be forwarded to Splunk for new support ticket requests; customers who already have Splunk forwarding enabled will be able to add CDN logs in the future.
 
+>[!NOTE]
+>
+>*Specific* logs, and *specific* User logs, cannot be forwarded to Splunk. 
+>
+>**All** logs will be forwarded to Splunk, where any further filtering can be done by the customer based on their requirements.
+
 ### Enabling Splunk Forwarding {#enabling-splunk-forwarding}
 
 In the support request, customers should indicate:
