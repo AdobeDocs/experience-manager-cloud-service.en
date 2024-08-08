@@ -93,7 +93,8 @@ The various file types have different degrees of support for the use cases and f
 | Videos        | &#10003; | &minus;    | &#10003; | &#10003; | &#10003; |
 | CC Libraries  | &#10003; | &minus;    | &minus;  | &minus;  | &minus;  |
 | PDF           | &#10003; | &minus;    | &#10003; | &#10003; | &#10003; |
-| PSD, PSB, AI, and INDD           | &#10003; | &minus;    | &#10003; | &#10003; | &#10003; |
+| AI and INDD           | &#10003; | &minus;    | &#10003; | &#10003; | &#10003; |
+| PSD and PSB           | &#10003; | &#10003;    | &#10003; | &#10003; | &#10003; |
 | Other binary files          | &#10003; | &minus;    |&#10003; | &#10003; | &#10003; |
 
 Users of [!DNL Adobe Asset Link] can upload and check-in (upload a new version) files into the [!DNL Assets view] repository from the supported [!DNL Adobe Creative Cloud] desktop applications.
