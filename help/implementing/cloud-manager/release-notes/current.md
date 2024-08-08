@@ -29,7 +29,7 @@ For a chance to test some upcoming features, be a part of Adobe's early adoption
 
 ### Staging-Only and Production-Only Pipelines {#stage-prod-only-pipelines}
 
-Support for [staging-only and production-only pipelines](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-pipelines-only.md) has been introduced, enabling you to split full-stack production deployment pipelines into smaller, specialized deployments.
+Support for [staging-only and production-only pipelines](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md) has been introduced, enabling you to split full-stack production deployment pipelines into smaller, specialized deployments.
 
 If you are interested in testing this new feature and sharing your feedback, please send an email to `Grp-cloudmanager_splitpipelines@adobe.com` from your email address associated with your Adobe ID.
 
