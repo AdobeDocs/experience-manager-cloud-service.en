@@ -9,7 +9,7 @@ Learn how you can split staging and production deployments using dedicated pipel
 
 >[!NOTE]
 >
->This feature is only available to [the early adopter program.](/help/release-notes/current.md#early-adoption)
+>This feature is only available to [the early adopter program.](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
 
 ## Overview {#overview}
 
@@ -17,7 +17,7 @@ Staging and production environments are tightly coupled. By default, deployments
 
 * If you wish to deploy to stage-only, you can only do this by rejecting the **Promote to Prod** step in the pipeline. However the execution will be marked as cancelled.
 * If you wish to deploy the latest code in a staging environment to production, you need to redeploy the entire pipeline including the staging deployment even though no code was changed there. 
-* Since environments can not be updated during deployments, if you want to pause and test in the staging environment for multiple days before promoting to production, the production environment can not be updated. This makes non-dependent tasks such as updating [environment variables](/help/getting-started/build-environment.md#environment-variables) impossible.
+* Since environments can not be updated during deployments, if you want to pause and test in the staging environment for multiple days before promoting to production, the production environment can not be updated. This makes non-dependent tasks such as updating [environment variables](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#environment-variables) impossible.
 
 Stage-only and prod-only pipelines offer solutions to these use-cases by providing dedicated deployment options.
 
@@ -40,7 +40,7 @@ These dedicated pipelines offer more flexibility, but please note the following 
 
 ## Pipeline Creation {#pipeline-creation}
 
-Prod-only and stage-only pipelines are created in a similar fashion to the standard coupled [production pipelines](/help/using/production-pipelines.md) and [non-production pipelines.](/help/using/non-production-pipelines.md) Please see those documents for details.
+Prod-only and stage-only pipelines are created in a similar fashion to the standard coupled [production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) and [non-production pipelines.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) Please see those documents for details.
 
 1. In the **Pipelines** window, tap or click **Add Pipeline**.
 
@@ -73,7 +73,7 @@ Prod-only and stage-only pipelines are created in a similar fashion to the stand
 
 ## Running Prod-Only and Stage-Only Pipelines {#running}
 
-Prod-only and stage-only pipelines are run in the same way as [all other pipelines are run.](/help/using/managing-pipelines.md#running-pipelines) Please see that documentation for details.
+Prod-only and stage-only pipelines are run in the same way as [all other pipelines are run.](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) Please see that documentation for details.
 
 In addition, a prod-only pipeline run can be triggered directly from the execution details of a stage-only pipeline.
 
