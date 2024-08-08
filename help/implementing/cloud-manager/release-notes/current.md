@@ -27,12 +27,6 @@ The release date for Cloud Manager release 2024.8.0 in AEM as a Cloud Service is
 
 For a chance to test some upcoming features, be a part of Adobe's early adoption program.
 
-### Staging-Only and Production-Only Pipelines {#stage-prod-only-pipelines}
-
-Support for [staging-only and production-only pipelines](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md) has been introduced, enabling you to split full-stack production deployment pipelines into smaller, specialized deployments.
-
-If you are interested in testing this new feature and sharing your feedback, please send an email to `Grp-cloudmanager_splitpipelines@adobe.com` from your email address associated with your Adobe ID.
-
 ### Edge Delivery Services support in Cloud Manager {#edge-delivery-services}
 
 If you have licensed Edge Delivery Services as part of AEM Sites, [you can now onboard your site with Edge Delivery Services directly in Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md) and go live using a guided, self-service experience.
