@@ -300,7 +300,7 @@ You can also drag-and-drop the components to add the form components to each pan
     > 
     > ![Deleting a component](/help/forms/assets/delete-component.png){width="200" align="center"}
 
-### Preview the Form
+### Preview the form
 
 1. Click **[!UICONTROL Preview]** in the top-right corner of your authoring environment.
 
