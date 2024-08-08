@@ -15,7 +15,7 @@ role: User, Developer, Admin
 | AEM as a Cloud Service (Foundation Components)    | [Click here](/help/forms/layout-capabilities-adaptive-forms.md)        |
 | AEM as a Cloud Service (Core Components)    | This article         |
 
-[!DNL Adobe Experience Manager] forms provide layouts as first-class components to structure and design the forms effectively. The layout controls how components are displayed in a form. Adaptive Forms support various layouts: panel, wizard, accordion, tabs on top, and tabs on the left.
+[!DNL Adobe Experience Manager] Forms provide layouts as first-class components to structure and design the forms effectively. The layout controls how components are displayed in a form. Adaptive Forms support various layouts: panel, wizard, accordion, tabs on top, and tabs on the left.
 
 ## Pre-requisite
 
@@ -87,7 +87,7 @@ You can use the [accordion component](https://experienceleague.adobe.com/en/docs
 
 >[!ENDTABS]
 
-To learn how to insert a layout and add form components to it, refer to the section titled [How to insert a layout and add form components to it?](#how-to-insert-a-layout-and-add-form-components-to-it).
+To learn how to insert a layout and add form components to it, refer to the section titled [How to insert a layout and add form components to it?](#how-to-insert-a-layout-and-add-form-components-to-it)
 
 ### How to choose the right Adaptive Form layout?
 
@@ -97,7 +97,7 @@ It is important to select the right Adaptive Form layout to optimize user experi
 |--------------------------|-----------------------------------------------------|----------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------|--------|
 | **Purpose**             | Groups related content into distinct sections | Guides users through a multi-step process or form | Allows switching between sections/views on the same page | Similar to top tabs but arranged vertically on the left | Organizes content into collapsible sections           |
 | **Structure**         |  Distinct sections   | Sequential steps/pages                             | Horizontal tabs at the top                         | Vertical tabs on the left                           | Collapsible panels/sections                            |
-| **Navigation**        |  Click on panel headers to navigate| - Forward: “Next” button<br>- Backward: “Back” button<br>- Optional skipping steps |  Click on tabs to switch sections                  |  Click on tabs to switch sections                   |  Click headers to expand/collapse sections           |
+| **Navigation**        |  Click on the panel headers to navigate| - Forward: “Next” button<br>- Backward: “Back” button<br>- Optional skipping steps |  Click on tabs to switch sections                  |  Click on tabs to switch sections                   |  Click headers to expand/collapse sections           |
 | **User Experience**     | Organizes large amounts of content in a manageable way | Step-by-step guidance, reducing overwhelm          | Clear, accessible switching between views          | Efficient use of vertical space, always visible tabs| Compact view with expanded/collapsed sections         |
 | **Use Case**            |Complex forms with categorized sections | Setup processes, complex forms                     | Organizing settings or content categories          | Dashboards, complex data views                      | FAQs, settings menus, detailed content sections       |
 
@@ -110,7 +110,7 @@ Consider the **IT Request Form** shown in the [Adaptive Forms Layout Types](#ada
 
 * **Problem Detail**: The panel captures details about the issue. It includes a checkbox for the problem category with three options: Network, Computer, or Other. It also features two textboxes labeled Please Specify and Comments.
 
-* **Attachment**: The panel allows to upload supporting documents related to the problem. 
+* **Attachment**: The panel allows users to upload supporting documents related to the problem. 
 
 Let's explore the step-by-step process for inserting a layout and adding components to it. In this example, a horizontal tabs layout is inserted to a form.
 
@@ -129,13 +129,13 @@ Alternatively, you can also [create new Adaptive Form](/help/forms/creating-adap
 1. Locate the section within the form editor that allows you to add a layout. 
 
     ![Form editor](/help/forms/assets/form-editor.png){width="200" align="center"}
-1. Click the **Add** icon. The icon is typically represented by a plus sign (+) that signifies the option to add new components.
+2. Click the **Add** icon. The icon is a plus sign (+) that signifies the option to add new components.
 
     ![Insert layout](/help/forms/assets/insert-layout-add-icon.png){width="200" align="center"}
     
     Clicking the **Add** icon displays an **Insert New Component** dialog box that displays various components for insertion.
 
-1. Browse the available components in the dialog box that appears and select Horizontal Tabs component to insert horizontal tabs layout.
+3. Browse the available components in the dialog box that appears and select the Horizontal Tabs component to insert the horizontal tabs layout.
 
     ![Select horizontal tabs](/help/forms/assets/select-horizontal-tab.png){width="200" align="center"}
 
@@ -143,11 +143,11 @@ Alternatively, you can also [create new Adaptive Form](/help/forms/creating-adap
 
     ![Horizontal tabs](/help/forms/assets/insert-tabs-on-top.png){width="200" align="center"}
 
-1. Open the properties of the horizontal tabs component and specify the name for the component.
+4. Open the properties of the horizontal tabs component and specify the name for the component.
 
     ![Add name for Horizontal tabs](/help/forms/assets/change-name-of-horizontal-tabs.png){width="200" align="center"}
 
-1. Click **Done**.
+5. Click **Done**.
 
     ![Horizontal tabs](/help/forms/assets/tabs-on-top-rename-component.png){width="200" align="center"}
 
@@ -173,7 +173,7 @@ Once the layout component is added in the form, modify the number of panels acco
     
     ![Add new panel](/help/forms/assets/tabs-on-top-add-new-panel.png){width="200" align="center"}
 
-    You must provide a name for the new panel; otherwise, you cannot save the properties of the horizontal tabs component.
+    Provide a name for the new panel; otherwise, you cannot save the properties of the horizontal tabs component.
 
 1. Specify the names of the panels as shown in the figure below:
 
@@ -210,22 +210,22 @@ You can employ one of the following method to add form components to the panel:
 #### Add components to a layout's panel using the Add icon
 
 1. Locate the section within the panel that allows you to add components. 
-1. Click the **Add** icon. The icon is typically represented by a plus sign (+) that signifies the option to add new components.
+2. Click the **Add** icon. The icon is a plus sign (+) that signifies the option to add new components.
   ![Insert layout](/help/forms/assets/tabs-on-top-add-component.png){width="200" align="center"}
 
     Clicking the **Add** icon displays an **Insert New Component** dialog box that displays various components for insertion.
 
     ![Insert New Component Dialog Box](/help/forms/assets/insert-new-component.png){width="200" align="center"}
 
-1. Browse the available components in the dialog box that appears and select Text Box component.
-1. Open the properties of the added Text Box component and specify its name as Name.
+1. Browse the available components in the dialog box that appears and select the Text Box component.
+2. Open the properties of the added Text Box component and specify its name as Name.
     ![Insert layout](/help/forms/assets/tabs-on-top-textbox-component.png){width="200" align="center"}
-1. Similarly, add two more Text Box components and name added the components as Email ID and Department.   
+3. Similarly, add two more Text Box components and name added the components as Email ID and Department.   
     ![First Panel](/help/forms/assets/tabs-on-tops-first-panel.png){width="200" align="center"}
 
     Now that the components in the first panel have been added, you can proceed with adding the components to the second panel. 
 
-1. To switch the panel, click **Select Panel** from the toolbar. 
+4. To switch the panel, click **Select Panel** from the toolbar. 
 
     ![Switch Panel](/help/forms/assets/tabs-on-top-select-panel.png){width="200" align="center"}
 
@@ -233,17 +233,17 @@ You can employ one of the following method to add form components to the panel:
 
     ![Switch Panel](/help/forms/assets/tabs-on-tops-panel2.png){width="200" align="center"}
 
-1. Select **2 Panel** from the panel list and the view changes from the first panel to the second panel.
+5. Select **2 Panel** from the panel list and the view changes from the first panel to the second panel.
 
     ![Second Panel](/help/forms/assets/tabs-on-top-panel2-component.png){width="200" align="center"}
 
-1. Repeat the steps outlined from Step 2 to Step 4 for adding the desired components in panel 2 as shown in the below figure:   
+6. Repeat the steps outlined from Step 2 to Step 4 for adding the desired components in panel 2 as shown in the below figure:   
 
      ![Second Panel components](/help/forms/assets/panel-2-components.png){width="200" align="center"}
 
-1. Switch to the **3 Panel** by following the steps outlined in Step 6 and Step 7.
+7. Switch to the **3 Panel** by following the steps outlined in Step 6 and Step 7.
 
-1. Repeat the steps outlined from Step 2 to Step 4 for adding the desired component in panel 3:
+8. Repeat the steps outlined from Step 2 to Step 4 for adding the desired component in panel 3:
 
     ![Third Panel components](/help/forms/assets/panel-3-component.png){width="200" align="center"}
 
@@ -260,7 +260,7 @@ You can also drag-and-drop the components to add the form components to each pan
 
     ![Component Panel](/help/forms/assets/add-new-component2.png){width="200" align="center"}
 
-1. Browse the available components and select Text Box component.
+1. Browse the available components and select the Text Box component.
 
 1. Drag the component by clicking and holding the selected component, then drag it over to the panel area to place it.
 
@@ -311,7 +311,7 @@ You can add the required validations for
 
 ## How to replace an existing layout with a new layout?
 
-You can replace a layout of a form with a new layout which involves modifying how components are arranged and displayed within a form. 
+You can replace a layout of a form with a new layout, which involves modifying how components are arranged and displayed within a form. 
 
 Perform the following steps to replace the existing layout of a form:
 
