@@ -225,7 +225,7 @@ You can employ one of the following method to add form components to the panel:
 
     Now that the components in the first panel have been added, you can proceed with adding the components to the second panel. 
 
-4. To switch the panel, click **Select Panel** from the toolbar. 
+1. To switch the panel, click **Select Panel** from the toolbar. 
 
     ![Switch Panel](/help/forms/assets/tabs-on-top-select-panel.png){width="200" align="center"}
 
@@ -233,15 +233,17 @@ You can employ one of the following method to add form components to the panel:
 
     ![Switch Panel](/help/forms/assets/tabs-on-tops-panel2.png){width="200" align="center"}
 
-5. Select **2 Panel** from the panel list and the view changes from the first panel to the second panel.
+1. Select **2 Panel** from the panel list and the view changes from the first panel to the second panel.
 
     ![Second Panel](/help/forms/assets/tabs-on-top-panel2-component.png){width="200" align="center"}
 
-6. Repeat the steps outlined from Step 2 to Step 5 for adding the desired components in panel 2 as shown in the below figure:   
+1. Repeat the steps outlined from Step 2 to Step 4 for adding the desired components in panel 2 as shown in the below figure:   
 
      ![Second Panel components](/help/forms/assets/panel-2-components.png){width="200" align="center"}
 
-7. Similarly, repeat the steps outlined from Step 2 to Step 5 for adding the desired component in panel 3:
+1. Switch to the **3 Panel** by following the steps outlined in Step 6 and Step 7.
+
+1. Repeat the steps outlined from Step 2 to Step 4 for adding the desired component in panel 3:
 
     ![Third Panel components](/help/forms/assets/panel-3-component.png){width="200" align="center"}
 
@@ -258,20 +260,20 @@ You can also drag-and-drop the components to add the form components to each pan
 
     ![Component Panel](/help/forms/assets/add-new-component2.png){width="200" align="center"}
 
-2. Browse the available components and select Text Box component.
+1. Browse the available components and select Text Box component.
 
-3. Drag the component by clicking and holding the selected component, then drag it over to the panel area to place it.
+1. Drag the component by clicking and holding the selected component, then drag it over to the panel area to place it.
 
-4. Drop the component into the panel by releasing the mouse. 
+1. Drop the component into the panel by releasing the mouse. 
 
-5. Open the properties of the added Text Box component and specify its name as Name.
+1. Open the properties of the added Text Box component and specify its name as Name.
     ![Insert layout](/help/forms/assets/tabs-on-top-textbox-component.png){width="200" align="center"}
-6. Similarly, add two more Text Box components and name added the components as Email ID and Department.   
+1. Similarly, add two more Text Box components and name added the components as Email ID and Department.   
     ![First Panel](/help/forms/assets/tabs-on-tops-first-panel.png){width="200" align="center"}
 
     Now that the components in the first panel have been added, you can proceed with adding the components to the second panel. 
 
-7. To switch the panel, click **Select Panel** from the toolbar. 
+1. To switch the panel, click **Select Panel** from the toolbar. 
 
     ![Switch Panel](/help/forms/assets/tabs-on-top-select-panel.png){width="200" align="center"}
 
@@ -279,15 +281,17 @@ You can also drag-and-drop the components to add the form components to each pan
 
     ![Switch Panel](/help/forms/assets/tabs-on-tops-panel2.png){width="200" align="center"}
 
-8. Select **2 Panel** from the panel list and the view changes from the first panel to the second panel.
+1. Select **2 Panel** from the panel list and the view changes from the first panel to the second panel.
 
     ![Second Panel](/help/forms/assets/tabs-on-top-panel2-component.png){width="200" align="center"}
 
-9. Repeat the steps outlined from Step 2 to Step 6 for adding the desired components in panel 2 as shown in the below figure:   
+1. Repeat the steps outlined from Step 2 to Step 6 for adding the desired components in panel 2 as shown in the below figure:   
 
      ![Second Panel components](/help/forms/assets/panel-2-components.png){width="200" align="center"}
 
-10. Similarly, repeat the steps outlined from Step 2 to Step 6 for adding the desired component in panel 3:
+1. Switch to the **3 Panel** by following the steps outlined in Step 8 and Step 9.
+
+1. Repeat the steps outlined from Step 2 to Step 6 for adding the desired component in panel 3:
 
     ![Third Panel components](/help/forms/assets/panel-3-component.png){width="200" align="center"}
 
