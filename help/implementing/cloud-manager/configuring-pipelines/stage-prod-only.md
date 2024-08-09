@@ -30,13 +30,21 @@ Neither stage-only nor prod-only pipelines will be executed while a full-stack p
 
 These dedicated pipelines offer more flexibility, but please note the following details of operation and recommendations.
 
->[!NOTE]
->
->Prod-only pipelines will always use the artifacts from the stage-only pipeline, regardless of what may have been deployed on stage via the standard coupled production pipeline in the meantime.
->
->* This could lead to unwanted code rollbacks.
->* Adobe recommends to stop using the standard coupled production pipeline once you start using the prod-only and stage-only pipelines.
->* If you still decide to run both the standard coupled pipelines and stage/prod-only pipelines, keep in mind the reuse of artifacts to avoid code rollbacks.
+## Limitations {#limitations}
+
+Prod-only pipelines will always use the artifacts from the stage-only pipeline, regardless of what may have been deployed on stage via the standard coupled production pipeline in the meantime.
+
+* This could lead to unwanted code rollbacks.
+* Adobe recommends to stop using the standard coupled production pipeline once you start using the prod-only and stage-only pipelines.
+* If you still decide to run both the standard coupled pipelines and stage/prod-only pipelines, keep in mind the reuse of artifacts to avoid code rollbacks.
+
+## Known Issues {#known-issues}
+
+Please also note the following known issues before you begin testing this feature.
+
+* Once you use production-only pipelines, you may not benefit from the latest AEM updates
+  * In some cases, the AEM update process may revert your code back to the code that was last deployed via the full stack pipeline.
+* You will not be able to request an [environment restore](/help/operations/restore.md#offsite-backup) if you use production-only or staging-only pipelines.
 
 ## Pipeline Creation {#pipeline-creation}
 
