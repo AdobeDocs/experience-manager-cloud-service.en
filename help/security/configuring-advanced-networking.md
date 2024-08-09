@@ -580,11 +580,6 @@ The diagram below provides a visual representation of a set of domains and assoc
     <td>N/A</td>
     <td>The IP of the VPN gateway on the AEM side. Your network engineering team can use this to allow only VPN connections to your VPN gateway from a specific IP address. </td>
   </tr>
-  <tr>
-    <td><code>p{PROGRAM_ID}.{REGION}.inner.adobeaemcloud.net</code></td>
-    <td>The IP of traffic coming from the AEM side of the VPN to your side. This can be allowlisted in your configuration to ensure that the connections are only made from AEM.</td>
-    <td>If you want to allow VPN access to AEM, you should configure CNAME DNS entries to map your custom domain and/or <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> and/or <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> to this.</td>
-  </tr>
 </tbody>
 </table>
 
