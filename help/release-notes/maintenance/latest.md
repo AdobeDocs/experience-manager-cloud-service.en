@@ -33,16 +33,16 @@ The 2024.8.0 feature activation will provide the full feature set for this maint
 * FORMS-14275 - Overriding Thank you page and Thank you Message in Embed Container.
 * FORMS-13623 - Enable auto save time based functionality for V2.
 * FORMS-8651 - Warning dialog on changing data model configuration on form properties page.
-* SITES-23310 - Prevent Circular Dependencies in Nested References for Content Fragments.
-* SITES-23285 - Create endpoint to list all available Languages.
-* SITES-23093 - CFM events - add tags to payloads.
-* SITES-23092 - CF events - add tags to payloads.
-* SITES-22857 - Checkbox enum fields should not allow multiple property set to false.
-* SITES-22813 - Define min/max properties for enumeration fields.
-* SITES-22447 - Add XF properties inheritance support to the Basic properties tab.
-* SITES-22207 - Model duplicated on Content Fragment creation.
-* SITES-22031 - Get allowed content fragment models for a Fragment's folder.
-* SITES-17640 - CF Publish operation validation.
+* SITES-23310 - Content Fragments REST API: Prevent Circular Dependencies in Nested References for Content Fragments.
+* SITES-23285 - Content Fragments REST API: Create endpoint to list all available Languages.
+* SITES-22857 - Content Fragments REST API: Checkbox enumeration fields should not allow multiple property set to false.
+* SITES-22813 - Content Fragments REST API: Define min/max properties for enumeration fields.
+* SITES-22207 - Content Fragments REST API: Model duplicated on Content Fragment creation.
+* SITES-22031 - Content Fragments REST API: Get allowed content fragment models for a Fragment's folder.
+* SITES-17640 - Content Fragments REST API: Content Fragment Publish operation validation.
+* SITES-23093 - Eventing: add tags to payloads for Content Fragment Model events.
+* SITES-23092 - Eventing: add tags to payloads for Content Fragment events.
+* SITES-22447 - Add Experience Fragment properties inheritance support to the Basic properties tab.
 * SITES-12209 - Improve Policy Editor performance by adding cq:policy to index.
 
 ### Fixed Issues {#fixed-issues-17349}
@@ -62,23 +62,23 @@ The 2024.8.0 feature activation will provide the full feature set for this maint
 * FORMS-7475 - Sorting is not working on Adaptive Form creation page.
 * FORMS-3309 - If multiple options are selected when submitting a form, then in a generated DoR only one option is displaying.
 * SITES-23646 - GraphQL models endpoint fails for models created with OpenAPI if fields contain unique.
-* SITES-23637 - OpenAPI doesn't use the correct value type for enums.
-* SITES-23573 - Live relationships are not respected on GET CF by uuid.
-* SITES-23535 - CF Model enumeration multi-fields have empty values.
-* SITES-23534 - CF Validation ClassCastException.
+* SITES-23637 - Content Fragments REST API: OpenAPI doesn't use the correct value type for enums.
+* SITES-23573 - Content Fragments REST API: Live relationships are not respected on GET Content Fragments by uuid.
+* SITES-23535 - Content Fragments REST API: Content Fragment Model enumeration multi-fields have empty values.
+* SITES-23534 - Content Fragments REST API: Content Fragment Validation ClassCastException.
 * SITES-23524 - Adapt GraphQL BFF models endpoint to support multi-field enumeration fields.
-* SITES-23467 - Search Models fails due to cursor issue.
+* SITES-23467 - Content Fragments REST API: Search Models fails due to cursor issue.
 * SITES-23327 - ArrayIndexOutOfBoundsException in AuditLogTimelineEventProvider during Timeline Event Processing Description.
-* SITES-23277 - CF Field live relationship check should only be done for live copies.
+* SITES-23277 - Content Fragments REST API: Content Fragment Field live relationship check should only be done for live copies.
 * SITES-23232 - Custom validation does not work in new CF Editor UI.
-* SITES-23090 - Cannot update title of a locked CF.
+* SITES-23090 - Content Fragments REST API: Cannot update title of a locked Content Fragment.
 * SITES-22981 - Promoting a nested launch which is not deep is not publishing.
 * SITES-22870 - PathAttributesHandler.processSrcAttr ArrayIndexOutOfBoundsException - Telefonica Germany.
-* SITES-22814 - Checkbox Enumeration fragment fields values should be ordered by the keys defined in the model.
+* SITES-22814 - Content Fragments REST API: Checkbox Enumeration fragment fields values should be ordered by the keys defined in the model.
 * SITES-22716 - Issue with OOTB components live usage List.
 * SITES-22457 - Promoting a launch which is not deep is not updating source content.
 * SITES-22449 - Unable to save changes in content fragments after AEM P20 upgrade.
-* SITES-22279 - Content Fragment is missing the unique attribute for Enumeration types.
+* SITES-22279 - Content Fragments REST API: Content Fragment is missing the unique attribute for Enumeration types.
 * SITES-22203 - Align Management APIs to respond the same for the same situation.
 * SITES-21973 - Model is missing the unique attribute for Enumeration types.
 * SITES-20364 - 302 Redirects Not Working with Selector in URL.
