@@ -37,9 +37,10 @@ The 2024.8.0 feature activation will provide the full feature set for this maint
 * SITES-23285 - Content Fragments REST API: Create endpoint to list all available Languages.
 * SITES-22857 - Content Fragments REST API: Checkbox enumeration fields should not allow multiple property set to false.
 * SITES-22813 - Content Fragments REST API: Define min/max properties for enumeration fields.
-* SITES-22207 - Content Fragments REST API: Model duplicated on Content Fragment creation.
 * SITES-22031 - Content Fragments REST API: Get allowed content fragment models for a Fragment's folder.
 * SITES-17640 - Content Fragments REST API: Content Fragment Publish operation validation.
+* SITES-22677 - Content Fragments REST API: Retrieve a flat list of descendent references
+* SITES-22207 - Model duplicated on Content Fragment creation.
 * SITES-23093 - Eventing: add tags to payloads for Content Fragment Model events.
 * SITES-23092 - Eventing: add tags to payloads for Content Fragment events.
 * SITES-22447 - Add Experience Fragment properties inheritance support to the Basic properties tab.
@@ -73,15 +74,17 @@ The 2024.8.0 feature activation will provide the full feature set for this maint
 * SITES-23232 - Custom validation does not work in new CF Editor UI.
 * SITES-23090 - Content Fragments REST API: Cannot update title of a locked Content Fragment.
 * SITES-22981 - Promoting a nested launch which is not deep is not publishing.
-* SITES-22870 - PathAttributesHandler.processSrcAttr ArrayIndexOutOfBoundsException - Telefonica Germany.
+* SITES-22870 - PathAttributesHandler.processSrcAttr ArrayIndexOutOfBoundsException.
 * SITES-22814 - Content Fragments REST API: Checkbox Enumeration fragment fields values should be ordered by the keys defined in the model.
 * SITES-22716 - Issue with OOTB components live usage List.
 * SITES-22457 - Promoting a launch which is not deep is not updating source content.
 * SITES-22449 - Unable to save changes in content fragments after AEM P20 upgrade.
 * SITES-22279 - Content Fragments REST API: Content Fragment is missing the unique attribute for Enumeration types.
-* SITES-22203 - Align Management APIs to respond the same for the same situation.
-* SITES-21973 - Model is missing the unique attribute for Enumeration types.
+* SITES-22203 - Content Fragments REST API: Align Management APIs to respond the same for the same situation.
+* SITES-21973 - Content Fragments REST API: Model is missing the unique attribute for Enumeration types.
 * SITES-20364 - 302 Redirects Not Working with Selector in URL.
+* SITES-21198 - VersionPreviewServlet: Cleanup runs concurrently on all cluster nodes causing merge conflicts and blocks commits
+* GRANITE-53094 - Repository-based JS Use objects cannot be located when using relative paths.
 
 ### Known Issues {#known-issues-17349}
 
