@@ -11,12 +11,6 @@ role: Admin, Architect, Developer
 
 Learn how Experience Audit validates your deployment process and helps ensure that changes deployed meet baseline standards for performance, accessibility, best practices, and SEO through a clear, informative dashboard interface.
 
->[!NOTE]
->
->This feature is only available to [the early adopter program.](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
->
->For details on the existing Experience Audit feature for AEM as a Cloud Service, please see the document [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md)
-
 ## Overview {#overview}
 
 Experience Audit validates the deployment process and helps ensure that the changes deployed:
