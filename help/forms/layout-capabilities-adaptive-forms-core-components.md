@@ -333,9 +333,9 @@ Perform the following steps to replace the existing layout of a form:
      
    ![Replace Component dialog box](/help/forms/assets/replace-component.png){width="200" align="center"}
 
-After selecting the layout, the arrangement of the components within the layout changes accordingly. For example, select the vertical tabs component from the **[!UICONTROL Replace Component]** dialog box; the arrangement of the panel changes to tabs on left:
+    After selecting the layout, the arrangement of the components within the layout changes accordingly. For example, select the vertical tabs component from the **[!UICONTROL Replace Component]** dialog box; the arrangement of the panel changes to tabs on left:
 
-![Vertical Layout](/help/forms/assets/vertical-tab.gif){width="250" align="center"}
+    ![Vertical Layout](/help/forms/assets/vertical-tab.gif){width="250" align="center"}
 
 ## Extra Bytes
 
