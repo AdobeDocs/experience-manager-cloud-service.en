@@ -21,7 +21,7 @@ Learn how Experience Audit validates your deployment process and helps ensure th
 
 Experience Audit validates the deployment process and helps ensure that the changes deployed:
 
-1. Meet baseline standards for performance, accessibility, best practices, SEO (Search Engine Optimization), and PWA (Progressive Web App).
+1. Meet baseline standards for performance, accessibility, best practices, and SEO (Search Engine Optimization).
 
 1. Do not introduce regressions.
 
@@ -82,6 +82,7 @@ Experience Audit is available by default for production pipelines. It can be be 
 
 The results of the Experience Audit are presented in the **Stage testing** phase of the production pipeline via the [production pipeline execution page.](/help/implementing/cloud-manager/deploy-code.md)
 
+TODO: Update the image below with the new design (remove PWA)
 ![Dashboard in the pipeline](assets/experience-audit-dashboard.jpg)
 
 Experience Audit provides the median Google Lighthouse scores for the [configured pages](#configuration) and the difference in score to the previous scan.
@@ -124,6 +125,7 @@ You can view the full Experience Audit report by:
 
 The **Reports** tab of Cloud Manager is opened, showing the **Experience audit**.
 
+TODO: Update the image below with the new design (new layout, remove PWA, side nav)
 ![Experience audit reports](assets/experience-audit-reports.png)
 
 The report is split into two areas:
@@ -133,16 +135,22 @@ The report is split into two areas:
 
 #### Page scores - trend {#trend}
 
-By default, the selected view for **Page scores - trend** is **median scores** for the **Last 6 months**.
+By default, the selected view for **Page scores - trend** is **median scores** for the **Last year**.
 
-Use the **Select** and **View** drop-downs at the top and bottom of the chart button to select page-specific details and different time frames, respectively. Tap or click the and the **update trend** button at the top of the chart to apply the selections and refresh the chart.
+TODO: Add text for selecting categories
+
+Use the **Select** drop-down at the top of the chart to select page-specific details, and the **View** and **Trigger** drop-downs at the bottom to choose different time frames and the trigger type, respectively.
+
+TODO: Add text (& image) for the calendar date picker
 
 When moving the mouse over the chart, a tooltip displays the values for the Google Lighthouse categories at specific points in time.
 
+TODO: Update the image below with the new design (remove PWA, no dots)
 ![Trend details](assets/experience-audit-trend-details.png)
 
 If you tap or click on the chart at a point in time, a popover opens with detail of that scan. Tap or click the **open experience audit scan** to load that scan results into the **[Experience audit scan results](#scan-results)** section.
 
+TODO: Update the image below with the new design (SEO bar color, no dots)
 ![Select different scan](assets/experience-audit-open-scan.png)
 
 #### Experience Audit Scan Results {#scan-results}
@@ -158,13 +166,15 @@ The **Recommendations** section shows an aggregate set of insights. By default, 
 
 ![Recommendations](assets/experience-audit-recommendations.png)
 
-Tap or click the chevron for any recommendation to reveal details about it.
+Tap or click any recommendation to reveal details about it.
+
+TODO: Add image for the AEM documentation recommendations
 
 ![Recommendation details](assets/experience-audit-recommendations-details.png)
 
 When available, the expanded recommendation details also contain the percentage of the recommendations impact, to help focus on the most impactful changes.
 
-Tap or click the **view pages** link in the details view to see the pages to which the recommendation applies.
+Tap or click the **see pages** link in the details view to see the pages to which the recommendation applies.
 
 ![Pages for the recommendation details](assets/experience-audit-details-pages.png)
 
@@ -176,6 +186,7 @@ The **Scanned pages** section gives details scores on all scanned pages. You can
 
 Tapping or clicking the link of a particular page updates the **Select** filter of the [**Page scores - trend** section](#trend) and shows the **Scores &amp; recommendations** tab for the selected page.
 
+TODO: Update the image below with the new design (remove PWA)
 ![Page results](assets/experience-audit-page-results.png)
 
 The **Raw reports** tab gives you scores for every audit of the page. Tap or click the report date in the **Lighthouse Report** column to retrieve a JSON file of the raw data.
@@ -192,6 +203,7 @@ In addition to being run during pipeline execution, Experience Audit reports can
 
 To run an on-demand scan, navigate to the  **Reports** tab to see the complete audit report and then tap or click the **Run scan** button. 
 
+TODO: Update the image below with the new design
 ![On-demand scanning](assets/experience-audit-on-demand.png)
 
 The **Run scan** button becomes unavailable and is badged with a clock icon when an on-demand scan is already running.
@@ -204,6 +216,7 @@ Upon completion, the scores chart will be automatically updated, and you can ins
 
 You can filter the scores chart based on the trigger type by using the **Trigger** selector. 
 
+TODO: Update the image below with the new design (no pwa, no dashed trend line)
 ![Trigger filter](assets/experience-audit-on-demand-trigger.png)
 
 >[!NOTE]
@@ -216,10 +229,12 @@ If [pages you configured](#configuration) to be audited were not available or th
 
 The pipeline shows an expandable error section to view the relative URL paths it could not access.
 
+TODO: Update the image below with the new design
 ![Issues encountered by Experience Audit](assets/experience-audit-issues.jpg)
 
 If viewing the full report, details are shown in the **[Experience audit scan results](#results)** section, which is also expandable.
 
+TODO: Update the image below with the new design
 ![Full report issues](assets/experience-audit-issues-report.png)
 
 Some reasons that the pages might not be available are that:
