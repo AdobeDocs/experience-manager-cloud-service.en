@@ -38,6 +38,14 @@ The following translation vendors provide an implementation of the AEM API for t
 * [Smartling](https://www.smartling.com/software/integrations/adobe-experience-manager/)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
 
+>[!NOTE]
+>
+>To find the latest list of human and machine translation providers, have a look at these pages:
+>
+>* [AEM Human Translation](https://exchange.adobe.com/apps/browse/ec?page=1&partnerLevel=All&product=AEM&q=aem+human+translation&sort=RELEVANCE)
+>* [AEM Machine Translation](https://exchange.adobe.com/apps/browse/ec?q=AEM+machine+translation&product=All&partnerLevel=All&sort=RELEVANCE)
+>
+
 After you install a connector package, you can create a cloud configuration for the connector. Typically, you must provide your credentials for authenticating with the translation service. For information about adding a cloud configuration for the Microsoft&reg; Translator connector, see [Integrating with Microsoft&reg; Translator](connect-ms-translator.md).
 
 You can create multiple cloud configurations for the same connector if necessary. For example, create one configuration for each of the accounts or projects that you have with the same vendor.
