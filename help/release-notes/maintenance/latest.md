@@ -10,13 +10,13 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 17349 {#release-17349}
+## Release 17393 {#release-17393}
 
-Summarized below are the continuous improvements for maintenance release 17349, which was publicly released on August 13, 2024. The previous maintenance release was release 17258.
+Summarized below are the continuous improvements for maintenance release 17393, which was publicly released on August 13, 2024. The previous maintenance release was release 17258.
 
 The 2024.8.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-17349}
+### Enhancements {#enhancements-17393}
 
 * FORMS-15436 - Gracefully handle exception in Adobe Sign Status scheduler.
 * FORMS-15362 - Add configuration for forms-foundation in aemds to enable login.
@@ -46,7 +46,7 @@ The 2024.8.0 feature activation will provide the full feature set for this maint
 * SITES-22447 - Add Experience Fragment properties inheritance support to the Basic properties tab.
 * SITES-12209 - Improve Policy Editor performance by adding cq:policy to index.
 
-### Fixed Issues {#fixed-issues-17349}
+### Fixed Issues {#fixed-issues-17393}
 
 * CQ-4358028 - Failed to create project if thumbnail is uploaded.
 * CQ-4357891 - Sequence Issue of Exported XLIFF.
@@ -86,19 +86,19 @@ The 2024.8.0 feature activation will provide the full feature set for this maint
 * SITES-21198 - VersionPreviewServlet: Cleanup runs concurrently on all cluster nodes causing merge conflicts and blocks commits
 * GRANITE-53094 - Repository-based JS Use objects cannot be located when using relative paths.
 
-### Known Issues {#known-issues-17349}
+### Known Issues {#known-issues-17393}
 
 None.
 
-### Change Notice {#change-notice-17349}
+### Change Notice {#change-notice-17393}
 
 * Starting in September 2024, AEM as a Cloud Service will disable the serialization of Resource Resolvers via the Sling Model Exporter framework. See [the documentation](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) for more details.
 
-### Deprecated Features and APIs {#deprecated-17349}
+### Deprecated Features and APIs {#deprecated-17393}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Embedded Technologies {#embedded-tech-17349}
+### Embedded Technologies {#embedded-tech-17393}
 
 |Technology|Version|Link|
 |---|---|---|
