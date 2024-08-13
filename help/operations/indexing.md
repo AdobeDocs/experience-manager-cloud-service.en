@@ -302,6 +302,15 @@ After Adobe changes an out-of-the-box index like "damAssetLucene" or "cqPageLuce
 | /oak:index/cqPageLucene  | Yes  | Yes  | No  |
 | /oak:index/cqPageLucene-2  | Yes  | No  | Yes  |
 
+It is important to note that environments might be on different AEM versions. E.g: `dev` environment is on release `X+1` while stage and prod are still on release `X` and are waiting to be upgraded to release `X+1` after required tests on `dev` have been performed. If release `X+1` comes with a newer version of a product index that has been customized and a new customization of that index is required then the following table will explain what versions need to be set on environments based on the AEM release:
+
+| Environment (AEM Release Version) | Product index version | Existing custom index version | New custom index version   |
+|-----------------------------------|-----------------------|-------------------------------|----------------------------|
+| Dev (X+1)                         | damAssetLucene-11     | damAssetLucene-11-custom-1    | damAssetLucene-11-custom-2 |
+| Stage (X)                         | damAssetLucene-10     | damAssetLucene-10-custom-1    | damAssetLucene-10-custom-2 |
+| Prod (X)                          | damAssetLucene-10     | damAssetLucene-10-custom-1    | damAssetLucene-10-custom-2 |
+
+
 ### Current Limitations {#current-limitations}
 
 Index management is only supported for indexes of type `lucene`, with `compatVersion` set to `2`. Internally, other indexes might be configured and used for queries, for example, Elasticsearch indexes. Queries that are written against the `damAssetLucene` index might, on AEM as a Cloud Service, in fact be run against an Elasticsearch version of this index. This difference is invisible to the application user, however certain tools such as the `explain` feature reports a different index. For differences between Lucene and Elasticsearch indexes, see [the Elasticsearch documentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Customers cannot and do not need to configure Elasticsearch indexes directly.
@@ -344,30 +353,7 @@ At times, it becomes necessary to undo a modification in an index definition. Th
 
 The following only applies to custom indexes. Product indexes may not be removed as they are used by AEM.
 
-If an index is removed in a later version of the application, you can define an empty index (an empty index that is never used, and does not contain any data), with a new name. For this example, you can name it `/oak:index/acme.product-custom-3`. This name replaces the index `/oak:index/acme.product-custom-2`. After `/oak:index/acme.product-custom-2` is removed by the system, the empty index `/oak:index/acme.product-custom-3` can then be removed. An example of such an empty index is:
-
-```xml
-<acme.product-custom-3
-        jcr:primaryType="oak:QueryIndexDefinition"
-        async="async"
-        compatVersion="2"
-        includedPaths="/dummy"
-        queryPaths="/dummy"
-        type="lucene">
-        <indexRules jcr:primaryType="nt:unstructured">
-            <rep:root jcr:primaryType="nt:unstructured">
-                <properties jcr:primaryType="nt:unstructured">
-                    <dummy
-                        jcr:primaryType="nt:unstructured"
-                        name="dummy"
-                        propertyIndex="{Boolean}true"/>
-                </properties>
-            </rep:root>
-        </indexRules>
-</acme.product-custom-3>
-```
-
-If it is no longer needed to have a customization of an out-of-the-box index, then you must copy the out-of-the-box index definition. For example, if you have already deployed `damAssetLucene-8-custom-3`, but no longer need the customizations and want to switch back to the default `damAssetLucene-8` index, then you must add an index `damAssetLucene-8-custom-4` that contains the index definition of `damAssetLucene-8`.
+A customised index may be removed in a later version of the customer application, by removing it from the customer repository. An index which is removed from the repository is not ued for queries in AEM although it might still be present on the instances for a while. There is a clean-up mechanism in place that runs periodically which cleans up older versions of indexes from the instances.
 
 ## Index and Query Optimizations {#index-query-optimizations}
 
