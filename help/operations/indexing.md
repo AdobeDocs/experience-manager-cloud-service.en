@@ -355,7 +355,7 @@ At times, it becomes necessary to undo a modification in an index definition. Th
 
 The following only applies to custom indexes. Product indexes may not be removed as they are used by AEM.
 
-A customised index may be removed in a later version of the customer application, by removing it from the customer repository. An index which is removed from the repository is not ued for queries in AEM although it might still be present on the instances for a while. There is a clean-up mechanism in place that runs periodically which cleans up older versions of indexes from the instances.
+A customised index may be removed in a later version of the customer application, by removing it from the customer repository. An index which is removed from the repository is not used for queries in AEM although it might still be present in the instances for a while. There is a clean-up mechanism in place that runs periodically which cleans up older versions of indexes from the instances.
 
 ## Index and Query Optimizations {#index-query-optimizations}
 
