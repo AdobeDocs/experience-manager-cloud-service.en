@@ -58,7 +58,7 @@ If you are new to Experience Manager Assets, click **[!UICONTROL Add Program]** 
 
 ### Content Hub instance and product profile on Admin Console{#content-hub-instance-product-profile}
 
-After [enabling Content Hub for Assets as a Cloud Service using Cloud Manager](#enable-content-hub), there is a new instance created within AEM Assets as a Cloud Service on Admin Console with `deliver` as the suffix:
+After [enabling Content Hub for Assets as a Cloud Service using Cloud Manager](#enable-content-hub), there is a new instance created within AEM Assets as a Cloud Service on Admin Console with `delivery` as the suffix:
 
 ![New instance for Content Hub](assets/new-instance-content-hub.png)
 
