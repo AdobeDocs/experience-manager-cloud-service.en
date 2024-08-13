@@ -164,19 +164,19 @@ Once the layout component is added in the form, modify the number of panels acco
 
 ### 2. Add panels to the layout
 
-As the IT Request Form consists of three panels, let's go over the steps to add new panel to the horizontal tabs component.  
+Add new panel to the horizontal tabs component:  
 
 1. Open the horizontal tabs component properties and click the **Items** tab.
 
     ![Item tab for Horizontal tabs](/help/forms/assets/tabs-on-top-items-tab.png){width="200" align="center"}
 
-1. Click the **Add** icon to add new panel.
+2. Click the **Add** icon to add new panel.
 
     ![Add new panel](/help/forms/assets/tabs-on-top-add-panel.png){width="200" align="center"}
 
     When you click the **Add** icon, the **Insert New Component** dialog box appears.
 
-1. Select the panel component.
+3. Select the panel component.
 
      ![Add new panel](/help/forms/assets/tabs-on-top-new-panel.png){width="200" align="center"}
 
@@ -186,27 +186,27 @@ As the IT Request Form consists of three panels, let's go over the steps to add 
 
     Provide a name for the new panel; otherwise, you cannot save the properties of the horizontal tabs component.
 
-1. Specify the names of the panels as shown in the figure below:
+4. Specify the names of the panels as shown in the figure below:
 
     ![Panel names](/help/forms/assets/tabs-on-tops-panel-name.png){width="200" align="center"}
 
-1. Click **Done**.
+5. Click **Done**.
 
     Once you click **Done**, the three panels appear side-by-side in a row. The panel names are displayed as headings for each panel, and you can add form components to each panel.
 
     ![Panel names](/help/forms/assets/tabs-on-top-initial-view.png){width="200" align="center"}
 
-    As the IT Request Form does not include panel titles, here are the steps to configure properties of panel component.
+    You can configure the properties of panel component. For example, the IT Request Form does not include panel titles, here are the steps to configure properties of panel component.
 
-1. Open the properties of the first panel.
+6. Open the properties of the first panel.
 
     ![Panel 1 Properties](/help/forms/assets/tabs-on-tops-panel1-properties.png){width="200" align="center"}
 
-1. Select the **Hide title** checkbox from the **Basic** tab.
+7. Select the **Hide title** checkbox from the **Basic** tab.
     
      ![Hide title](/help/forms/assets/tabs-on-top-hide-panel.png){width="200" align="center"}
 
-1. Click **Done**.
+8. Click **Done**.
 
 Similarly, you can hide titles for the other two panels also. Once done, you can proceed with adding form components to each panel.
 
