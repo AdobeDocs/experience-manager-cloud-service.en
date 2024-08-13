@@ -317,7 +317,7 @@ Index management is only supported for indexes of type `lucene`, with `compatVer
 
 Only built-in analyzers are supported (that is, those analyzers that are shipped with the product). Custom analyzers are not supported.
 
-Currently, it is not possible to define lucene indexes based on the contents of `/oak:index` path as it may contain many hidden nodes there which could potentially slow down the indexing process. 
+Currently, it is advised against defining lucene indexes based on the contents of `/oak:index` path as it may contain many hidden nodes there which could potentially slow down the indexing process. 
 
 For best operational performance, indexes should not be excessively large. The total size of all indexes can be used as a guide. If this size increases by more than 100% after custom indexes have been added, and standard indices have been adjusted on a development environment, custom index definitions should be adjusted. AEM as a Cloud Service can prevent the deployment of indexes that would negatively impact system stability and performance. 
 
