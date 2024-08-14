@@ -1,62 +1,55 @@
 ---
-title: Release Notes for Cloud Manager 2024.7.0 in Adobe Experience Manager as a Cloud Service
-description: These are the release notes for Cloud Manager 2024.7.0 in AEM as a Cloud Service.
+title: Release Notes for Cloud Manager 2024.8.0 in Adobe Experience Manager as a Cloud Service
+description: Learn about the release notes for Cloud Manager 2024.8.0 in AEM as a Cloud Service.
 feature: Release Information
-exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
+
 ---
 
-# Release Notes for Cloud Manager 2024.7.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Release notes for Cloud Manager 2024.8.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-This page documents the release notes for Cloud Manager release 2024.7.0 in AEM as a Cloud Service.
+This page documents the release notes for Cloud Manager release 2024.8.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
 >See [this page](/help/release-notes/release-notes-cloud/release-notes-current.md) for the current release notes for Adobe Experience Manager as a Cloud Service.
 
-## Release Date {#release-date}
+## Release date {#release-date}
 
-The release date for Cloud Manager release 2024.7.0 in AEM as a Cloud Service is 18 July 2024. The next release is planned for 12 August 2024.
+The release date for Cloud Manager release 2024.8.0 in AEM as a Cloud Service is August 12, 2024. The next release is planned for September 14, 2024.
 
-## What's New {#what-is-new}
+## What's new {#what-is-new}
 
-* The [production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline) and [non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline) trigger **On Git Changes** to start the pipeline on a commit is now available for [private repositories.](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-  * This will be rolled out in a phased manner with completion by mid-August.
-* When adding an [Adobe-managed DV certificate,](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) you can now add a single certificate that covers multiple domains instead of creating a certificate for each domain.
-* Solutions that do not have [additional publish regions](/help/operations/additional-publish-regions.md) can now be added to a program as long as the program has at least a Sites or Forms solution applies to it.
-* Solutions that do not have [99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) can now be added to a program as long as the program has at least a Sites or Forms solution applies to it.
-* The [Experience Audit Dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md) has been enhanced in a number of ways.
-  * Audits now run against `.com` endpoints via CDN, replacing the previous `.net` approach.
-    * This change simulates real user experiences more accurately and helps you make more informed decisions about managing and optimizing your website.
-  * Multiple enhancements were made to the Experience Audit UI including:
-    * A trended view of performance, best practices, SEO, and accessibility was added.
-    * The Lighthouse raw report link is now visible in a more intuitive way, directly in the scan snapshot details panel.
-    * The Lighthouse recommendations section was enhanced.
-  * The PWA metric was removed in accordance with Lighthouse version 12.0.0, which eliminated this metric.
-* [The AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) has been updated to [version 49.](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)
+* [Additional publish regions](/help/operations/additional-publish-regions.md) and a [99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) (Service Level Agreement) are now available for AEM Forms as a Cloud Service.
+  * This enhancement lets you achieve higher SLAs with increased uptime and lower latency, ensuring best-in-class experiences for your globally distributed users.
 
-## Early Adoption Program {#early-adoption}
+## Early adoption program {#early-adoption}
 
 For a chance to test some upcoming features, be a part of Adobe's early adoption program.
 
-### Edge Delivery Services Support in Cloud Manager {#edge-delivery-services}
+### Edge Delivery Services support in Cloud Manager {#edge-delivery-services}
 
-If you have licensed Edge Delivery Services as part of Adobe Experience Manager Sites, [you can now onboard your site with Edge Delivery Services directly in Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md) and go live using a guided, self-service experience.
+If you have licensed Edge Delivery Services as part of AEM Sites, [you can now onboard your site with Edge Delivery Services directly in Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md) and go live using a guided, self-service experience.
 
-This enables a unified experience for all of your AEM properties, ensuring consistency with all critical workflows including domain name management, SSL certificate management, and CDN mappings.
+This capability provides a unified experience for all your AEM properties. It ensures consistency across critical workflows such as domain name management, SSL certificate management, and CDN mappings.
 
-If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-cmedgedelsvs-program-adopter@adobe.com` from the email address associated with your Adobe ID. 
+If you are interested in testing this new feature and sharing your feedback, send an email to `aemcs-cmedgedelsvs-program-adopter@adobe.com` from the email address associated with your Adobe ID. 
 
-### Domain Validated (DV) Certificates
+### Domain Validated (DV) certificates
 
-Cloud Manager now allows you to [self-service generate and manage domain validated (DV) SSL certificates.](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) This gives you the fastest, easiest, and most cost-effective solution to create a secure website for your online business.
+With Cloud Manager, you are now able to [self-service generate and manage domain validated (DV) SSL certificates](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md). This capability gives you the fastest, easiest, and most cost-effective solution to create a secure website for your online business.
 
-If you are interested in testing this new feature and sharing your feedback, please send an email to `Grp-aemcs-dv-dert-adopter@adobe.com` from the email address associated with your Adobe ID.
+If you would like to test this new feature and provide your feedback, send an email to `Grp-aemcs-dv-dert-adopter@adobe.com` using the email address linked to your Adobe ID.
 
 ### Experience Audit Dashboard {#experience-audit-dashboard}
 
 [The Cloud Manager Experience Audit dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md) includes a trended view of your page performance scores along with insights and recommendations to help you improve them. Experience Audit is included as a step in the Cloud Manager production pipeline.
 
-The dashboard uses Google Lighthouse, an open-source, automated tool for improving the quality of your web apps. You can run it against any web page, public, or requiring authentication. It has audits for performance, accessibility, progressive web apps, SEO, and more.
+The dashboard uses Google Lighthouse, an open-source, automated tool for improving the quality of your web apps. You can use it to audit any web page, whether public or requiring authentication. It provides assessments for performance, accessibility, progressive web apps, SEO, and more.
 
-Interested in test-driving the new dashboard? To get started, send an email to `aem-lighthouse-pilot@adobe.com` from your email associated with your Adobe ID.
+Curious about trying out the new dashboard? To begin, send an email to `aem-lighthouse-pilot@adobe.com` using the email linked to your Adobe ID.
+
+## Bug fix
+
+* A rare issue was corrected where pipeline steps were found to be running after the pipeline was deleted.
+* A problem with configuration pipelines incorrectly showing a `FAILED` status in rare cases has been fixed.
