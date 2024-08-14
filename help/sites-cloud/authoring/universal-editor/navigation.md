@@ -181,6 +181,10 @@ Select the open app preview icon to open the page you are currently editing in i
 >
 >Use the hot key `O` (the letter O) to open the app preview.
 
+>[!TIP]
+>
+>The preview URL for your app [can be customized.](/help/implementing/universal-editor/customizing.md#custom-preview-urls)
+
 #### Publish {#publish}
 
 Select the publish button so you can publish the changes to the content live for consumption by your readers.
