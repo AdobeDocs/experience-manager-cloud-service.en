@@ -14,17 +14,21 @@ These are the release notes for the 13 August 2024 release of the Universal Edit
 >
 >For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
-## What's New {#what-is-new}
+## What’s New {#what-is-new}
 
-* Extensions with custom data types are now possible.
-* Move across containers has been enabled.
-* github.com responses are now cached.
-* IMS token validation is now disabled.
-* Splunk logging has been enabled for Express.
-* You can now set the log level for Express.
+* **Custom Data Types**: Tailor the editor to your unique data needs with the ability to create custom fields within the properties panel.
+  * Whether you’re developing a custom product picker for commerce use-cases or populating a drop-down list with values from your backends, this feature gives you the control you need over the data that authors use to compose content.
+* **Cross-Container Drag &amp; Drop**: Enjoy greater flexibility in layout composition with the ability to move components across different containers via drag and drop within the [Content Tree panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
+* **Optimized GitHub Integration**: Caching for GitHub responses have been introduced, significantly speeding up the retrieval of tags and the `universal-editor-cors-library`, resulting in a faster and smoother user experience.
+* **Managed Services RPM Package**: Adobe now offers an RPM package to streamline the deployment and management of the Universal Editor Service, simplifying maintenance and reducing operational overhead for managed services.
+* **Configurable IMS Token Validation**: To increase flexibility in token management, IMS token validation is now optional.
+  * This configuration option allows you to disable validation as needed, simplifying your cloud gateway setups.
+* **Splunk Integration**: Splunk logging has been integrated into Universal Editor Service Express, enhancing monitoring and diagnostics.
+  * This integration ensures efficient log tracking, smoother operations, and quicker troubleshooting.
 
 ## Bug Fixes {#bug-fixes}
 
-* Incorrect URL decoding/encoding while calculating references was corrected.
-* Float numbers are now stored as decimal instead of integer.
-* Publish actions with 403 response no longer report as failures.
+* **Enhanced Publishing Feedback**: If publication fails due to insufficient permissions, feedback to the user during publishing has been improved to display a clear warning instead of simply indicating a failure.
+* **Improved URL Handling**: Issues with incorrect URL encoding/decoding that were causing publishing failures were fixed.
+* **Accurate Data Handling**: An issue where float numbers were incorrectly stored as integers has been addressed, ensuring precise data handling across your content.
+* **Security and Stability**: Security vulnerabilities in the Docker images have been fixed and test coverage for critical components like the Component Picker and Breadcrumbs have been implemented, leading to a more secure, stable, and reliable editor experience.
