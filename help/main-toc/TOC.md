@@ -185,6 +185,9 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Generate Variations](/help/generative-ai/release-notes-generate-variations.md)
   + Release Notes for Universal Editor {#univeral-editor}
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
+    + 2024 {#2024}
+      + [2024.07.28 Release Notes](/help/release-notes/universal-editor/2024/2024-07-28.md)
+      + [2024.06.28 Release Notes](/help/release-notes/universal-editor/2024/2024-06-28.md)
   + [What is New?](/help/release-notes/what-is-new.md)
   + [Notable Changes in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
   + [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md)
