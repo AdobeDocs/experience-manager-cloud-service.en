@@ -856,6 +856,7 @@ user-guide-title: AEM as a Cloud Service
       + [Configuring URLs for SEO](/help/commerce-cloud/configuring/advanced-url-configuration.md)
       + [Caching Options](/help/commerce-cloud/configuring/caching.md)
       + [Custom HTTP Headers](/help/commerce-cloud/configuring/custom-http-headers.md)
+      + [Shopping Cart and Dispatcher Setup](/help/commerce-cloud/configuring/shopping-cart-dispatcher.md)
     + Developing {#developing}
       + [Developing with AEM Cloud Service SDK](/help/commerce-cloud/develop.md)
       + [Styling CIF Components](/help/commerce-cloud/customizing/style-cif-component.md)
