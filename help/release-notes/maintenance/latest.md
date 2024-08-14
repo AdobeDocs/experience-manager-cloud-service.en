@@ -87,7 +87,7 @@ The 2024.8.0 feature activation will provide the full feature set for this maint
 
 ### Known Issues {#known-issues-17465}
 
-* ASSETS-40875 - NullPointerException in AssetDeleteHandler and Handler is getting triggered for pages.
+* ASSETS-40875 - The AssetDeleteHandler class listens for asset delete events and performs specific actions based on the type of delete event (PRE_DELETE or POST_DELETE). In certain scenarios, the POST_DELETE type of event causes a NullPointerException.
 * FORMS-14340 - Error in instantiation of FormsAndDocumentOmniSearchHandler and CloudStorageSubmitActionInserter. These are harmless log statements.
 * FORMS-15818 - Component descriptor entry 'OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml' not found statements in server logs. These are harmless log statements.
 * * SITES-23662 - User that triggers a publish cannot be extracted from JCR log statements in server logs. This is for a feature under development that might cause intermitent and harmless "Cannot find a valid user id in the batch of OSGI events" errors in the log.
