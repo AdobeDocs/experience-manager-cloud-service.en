@@ -93,6 +93,12 @@ If you want to edit your Content Fragment in the [Content Fragment editor](/help
 
 Depending on the needs of your workflow, you may want to edit the Content Fragment in the Universal Editor or directly in the Content Fragment editor.
 
+>[!NOTE]
+>
+>The Universal Editor [validates Content Fragment fields based on their models](/help/assets/content-fragments/content-fragments-models.md#validation) allowing you to enforce data integrity rules such as regex patterns and uniqueness constraints.
+>
+>This ensures that your content meets specific business requirements before it's published.
+
 ### Adding Components to Containers {#adding-components}
 
 1. Select a container component in the [content tree](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) or in the editor.
