@@ -87,7 +87,7 @@ The 2024.8.0 feature activation will provide the full feature set for this maint
 
 ### Known Issues {#known-issues-17465}
 
-* SITES-23662 - User that triggers a publish cannot be extracted from JCR log statements in server logs. 
+* SITES-23662 - User that triggers a publish cannot be extracted from JCR log statements in server logs. This is for a feature under development that might cause intermitent and harmless "Cannot find a valid user id in the batch of OSGI events" errors in the log.
 * ASSETS-40875 - NullPointerException in AssetDeleteHandler and Handler is getting triggered for pages.
 * FORMS-14340 - Error in instantiation of FormsAndDocumentOmniSearchHandler and CloudStorageSubmitActionInserter.
 * FORMS-15818 - Component descriptor entry 'OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml' not found statements in server logs.
