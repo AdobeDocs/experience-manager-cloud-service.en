@@ -23,7 +23,7 @@ These are the release notes for the 13 August 2024 release of the Universal Edit
 * **Managed Services RPM Package**: Adobe now offers an RPM package to streamline the deployment and management of the Universal Editor Service, simplifying maintenance and reducing operational overhead for managed services.
 * **Configurable IMS Token Validation**: To increase flexibility in token management, IMS token validation is now optional.
   * This configuration option allows you to disable validation as needed, simplifying your cloud gateway setups.
-* **Splunk Integration**: Splunk logging has been integrated into Universal Editor Service Express, enhancing monitoring and diagnostics.
+* **Splunk Integration**: Splunk logging has been integrated into the [Universal Editor Service for local development,](/help/implementing/universal-editor/local-dev.md) enhancing monitoring and diagnostics.
   * This integration ensures efficient log tracking, smoother operations, and quicker troubleshooting.
 
 ## Bug Fixes {#bug-fixes}
