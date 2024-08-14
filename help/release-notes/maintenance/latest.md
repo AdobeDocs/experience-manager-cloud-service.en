@@ -39,7 +39,7 @@ The 2024.8.0 feature activation will provide the full feature set for this maint
 * SITES-22813 - Content Fragments REST API: Define min/max properties for enumeration fields.
 * SITES-22031 - Content Fragments REST API: Get allowed content fragment models for a Fragment's folder.
 * SITES-17640 - Content Fragments REST API: Content Fragment Publish operation validation.
-* SITES-22677 - Content Fragments REST API: Retrieve a flat list of descendent references
+* SITES-22677 - Content Fragments REST API: Retrieve a flat list of descendent references.
 * SITES-22207 - Model duplicated on Content Fragment creation.
 * SITES-23093 - Eventing: add tags to payloads for Content Fragment Model events.
 * SITES-23092 - Eventing: add tags to payloads for Content Fragment events.
@@ -83,14 +83,14 @@ The 2024.8.0 feature activation will provide the full feature set for this maint
 * SITES-22203 - Content Fragments REST API: Align Management APIs to respond the same for the same situation.
 * SITES-21973 - Content Fragments REST API: Model is missing the unique attribute for Enumeration types.
 * SITES-20364 - 302 Redirects Not Working with Selector in URL.
-* SITES-21198 - VersionPreviewServlet: Cleanup runs concurrently on all cluster nodes causing merge conflicts and blocks commits
+* SITES-21198 - VersionPreviewServlet: Cleanup runs concurrently on all cluster nodes causing merge conflicts and blocks commits.
 
 ### Known Issues {#known-issues-17465}
 
-* SITES-23662 - User that triggers a publish cannot be extracted from JCR log statements in server logs. This is for a feature under development that might cause intermitent and harmless "Cannot find a valid user id in the batch of OSGI events" errors in the log.
 * ASSETS-40875 - NullPointerException in AssetDeleteHandler and Handler is getting triggered for pages.
 * FORMS-14340 - Error in instantiation of FormsAndDocumentOmniSearchHandler and CloudStorageSubmitActionInserter. These are harmless log statements.
 * FORMS-15818 - Component descriptor entry 'OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml' not found statements in server logs. These are harmless log statements.
+* * SITES-23662 - User that triggers a publish cannot be extracted from JCR log statements in server logs. This is for a feature under development that might cause intermitent and harmless "Cannot find a valid user id in the batch of OSGI events" errors in the log.
 
 ### Change Notice {#change-notice-17465}
 
