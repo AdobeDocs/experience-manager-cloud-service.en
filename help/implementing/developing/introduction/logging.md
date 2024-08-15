@@ -623,7 +623,7 @@ In the support request, customers should indicate:
 * Splunk HEC endpoint address. This endpoint must have a valid SSL certificate and be publicly accessible.
 * The Splunk index
 * The Splunk port 
-* The Splunk HEC token. See [this page](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) for more information.
+* The Splunk HEC token. See [HTTP Event Collector examples](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) for more information.
 
 The properties above should be specified for each relevant program/environment type combination. For example, if a customer wanted dev, staging, and production environments, they should provide three sets of information, as indicated below. 
 
