@@ -316,7 +316,7 @@ If an OSGi property requires different values for author versus publish:
 * Separate `config.author` and `config.publish` OSGi folders must be used, as described in the [Runmode Resolution section](#runmode-resolution).
 * There are two options of creating the independent variable names that should be used:
   * the first option, which is recommended: in all OSGi folders (like `config.author` and `config.publish`) declared to define different values, use the same variable name. For example
-  `$[env:ENV_VAR_NAME;default=<value>]`, where the default corresponds to the default value for that tier (author or publish). When setting the environment variable via [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) or via a client, differentiate between the tiers using the "service" parameter as described in this [API reference documentation](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/). The "service" parameter will bind the variable's value to the appropriate OSGi tier. It can be "author" or "publish" or "preview".
+  `$[env:ENV_VAR_NAME;default=<value>]`, where the default corresponds to the default value for that tier (author or publish). When setting the environment variable via [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) or via a client, differentiate between the tiers using the "service" parameter as described in the [Cloud Manager API reference documentation](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/). The "service" parameter will bind the variable's value to the appropriate OSGi tier. It can be "author" or "publish" or "preview".
   * the second option, which is to declare distinct variables using a prefix such as `author_<samevariablename>` and `publish_<samevariablename>`
 
 ### Configuration Examples {#configuration-examples}
@@ -509,14 +509,15 @@ config.dev
 
 ## Cloud Manager API Format for Setting Properties {#cloud-manager-api-format-for-setting-properties}
 
-See [this page](https://developer.adobe.com/experience-cloud/cloud-manager/docs/) about how the API has to be configured. 
+See [Adobe Cloud Manager on the Adobe Developer Website](https://developer.adobe.com/experience-cloud/cloud-manager/docs/) for information about the Cloud Manager API, and how it should be configured. 
+
 >[!NOTE]
 >
 >Ensure that the used Cloud Manager API has assigned the role "Deployment Manager - Cloud Service". Other roles are not able to execute all below commands.
 
 >[!TIP]
 >
->You can also use Cloud Manager to configure environment variables. For more information, consult the documentation [here.](/help/implementing/cloud-manager/environment-variables.md)
+>You can also use Cloud Manager to configure environment variables. For more information, consult [Cloud Manager Environment Variables](/help/implementing/cloud-manager/environment-variables.md).
 
 ### Setting Values via API {#setting-values-via-api}
 
@@ -544,7 +545,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 >[!NOTE]
 >Default variables are not set via API, but rather in the OSGi property itself.
 >
->See [this page](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/) for more information.
+>See [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) for more information.
 
 ### Getting values via API {#getting-values-via-api}
 
@@ -552,7 +553,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 GET /program/{programId}/environment/{environmentId}/variables
 ```
 
-See [this page](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/) for more information.
+See [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) for more information.
 
 ### Deleting values via API {#deleting-values-via-api}
 
@@ -562,7 +563,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 
 To delete a variable, include it with an empty value.
 
-See [this page](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/) for more information.
+See [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) for more information.
 
 ### Getting Values via the Command Line {#getting-values-via-cli}
 
@@ -588,7 +589,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 >[!NOTE]
 >
->See [this page](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) for more information on how to configure values using the Cloud Manager plugin for Adobe I/O CLI.
+>See [the aio-cli-plugin-cloudmanager on GitHub](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) for more information on how to configure values using the Cloud Manager plugin for Adobe I/O CLI.
 
 ### Number of Variables {#number-of-variables}
 
