@@ -50,7 +50,8 @@ The following video provides a high-level overview on how to deploy code to AEM 
 
 ![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8) -->
 
-Customers deploy custom code to cloud environments through Cloud Manager. Cloud Manager transforms locally assembled content packages into an artifact conforming to the Sling Feature Model, which is how an application on AEM as a Cloud Service is described when running in a cloud environment. As a result, when looking at the packages in [Package Manager](/help/implementing/developing/tools/package-manager.md) on Cloud environments, the name includes "cp2fm" and the transformed packages have all metadata removed. They cannot be interacted with, meaning they cannot be downloaded, replicated, or opened. Detailed documentation about the converter can be [found here](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
+Customers deploy custom code to cloud environments through Cloud Manager. Cloud Manager transforms locally assembled content packages into an artifact conforming to the Sling Feature Model, which is how an application on AEM as a Cloud Service is described when running in a cloud environment. As a result, when looking at the packages in [Package Manager](/help/implementing/developing/tools/package-manager.md) on Cloud environments, the name includes "cp2fm" and the transformed packages have all metadata removed. They cannot be interacted with, meaning they cannot be downloaded, replicated, or opened. For detailed documentation about the converter see [
+sling-org-apache-sling-feature-cpconverter on GitHub](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
 Content packages written for applications on AEM as a Cloud Service must have a clean separation between immutable and mutable content and Cloud Manager only installs the mutable content, also outputting a message like the following:
 
