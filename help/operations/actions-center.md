@@ -24,7 +24,7 @@ From the Actions Center, you can select a specific program and environment, whic
 
 ## Configuration {#configuration}
 
-To configure receiving Actions Center email notifications, create the Product Profiles described [in this article](/help/journey-onboarding/notification-profiles.md), namely Incident Notification - Cloud Service and Proactive Notification - Cloud Service. Also assign the appropriate Adobe IDs from your organization to those profiles. This allows an administrator to determine which users qualify to receive these email notifications.
+To configure receiving Actions Center email notifications, create the Product Profiles as described under [Notification Profiles](/help/journey-onboarding/notification-profiles.md), namely Incident Notification - Cloud Service and Proactive Notification - Cloud Service. Also assign the appropriate Adobe IDs from your organization to those profiles. This allows an administrator to determine which users qualify to receive these email notifications.
 
 >[!NOTE]
 >Actions Center email notifications function at the organization level so subscribers will receive notifications for all programs and environments within those programs.

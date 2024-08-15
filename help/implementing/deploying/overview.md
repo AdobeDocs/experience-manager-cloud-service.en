@@ -246,7 +246,7 @@ Like AEM updates, customer releases are deployed using a rolling deployment stra
 
 ## Indexes {#indexes}
 
-New or modified indexes cause an extra indexing or reindexing step before the new version can take on traffic. Details about index management in AEM as a Cloud Service can be found in [this article](/help/operations/indexing.md). You can check the indexing status of build pages on Cloud Manager, and receive a notification when the new version is ready to take traffic.
+New or modified indexes cause an extra indexing or reindexing step before the new version can take on traffic. Details about index management in AEM as a Cloud Service can be found under [Content Search and Indexing](/help/operations/indexing.md). You can check the indexing status of build pages on Cloud Manager, and receive a notification when the new version is ready to take traffic.
 
 >[!NOTE]
 >
@@ -272,7 +272,7 @@ Changing service users, or ACLs that access content or code, could lead to error
 
 ### Index Changes {#index-changes}
 
-If changes to indexes are made, it is important that the new version continues to use its indexes until it is terminated, while the old version uses its own modified set of indexes. The developer should follow the index management techniques described [in this article](/help/operations/indexing.md).
+If changes to indexes are made, it is important that the new version continues to use its indexes until it is terminated, while the old version uses its own modified set of indexes. The developer should follow the index management techniques described under [Content Search and Indexing](/help/operations/indexing.md).
 
 ### Conservative Coding for Rollbacks {#conservative-coding-for-rollbacks}
 
@@ -327,4 +327,4 @@ Developers want to ensure that their custom code is performing well. For Cloud e
 
 ## Maintenance Tasks Configuration in Source Control {#maintenance-tasks-configuration-in-source-control}
 
-Maintenance Task configurations must be persisted in source control because the **Tools > Operations** screen is not available in Cloud environments. This benefit ensures that changes are intentionally persisted rather than reactively applied and forgotten. See [Maintenance Task article](/help/operations/maintenance.md) for additional information.
+Maintenance Task configurations must be persisted in source control because the **Tools > Operations** screen is not available in Cloud environments. This benefit ensures that changes are intentionally persisted rather than reactively applied and forgotten. See [Maintenance Tasks in AEM as a Cloud Service](/help/operations/maintenance.md) for additional information.

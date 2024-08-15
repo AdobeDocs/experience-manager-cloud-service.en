@@ -54,7 +54,7 @@ To support rolling deployments, AEM as a Cloud Service packages, of which connec
 * `/apps`
 * `/content` and `/conf`
 
-Connectors should adhere to these packaging guidelines, which are described in [this article](/help/implementing/developing/introduction/aem-project-content-package-structure.md). Existing connectors should be refactored to conform, as well.
+Connectors should adhere to these packaging guidelines, which are described under [AEM Project Structure](/help/implementing/developing/introduction/aem-project-content-package-structure.md). Existing connectors should be refactored to conform, as well.
 
 In addition, only Adobe should write code into `/libs`, with customers and partners writing into `/apps`.
 
