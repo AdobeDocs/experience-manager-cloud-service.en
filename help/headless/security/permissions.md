@@ -31,7 +31,7 @@ At a high level, the process is:
 
 >[!TIP]
 >
-> A detailed video walkthrough of managing IMS and AEM users and groups can be found [here](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html).
+>For a detailed video walkthrough of managing IMS and AEM users and groups see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html).
 
 To manage **groups** in AEM, navigate to **Tools** > **Security** > **Groups**.
 
