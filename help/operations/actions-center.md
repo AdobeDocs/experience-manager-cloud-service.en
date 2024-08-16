@@ -24,7 +24,7 @@ From the Actions Center, you can select a specific program and environment, whic
 
 ## Configuration {#configuration}
 
-To configure receiving Actions Center email notifications, create the Product Profiles described [in this article](/help/journey-onboarding/notification-profiles.md), namely Incident Notification - Cloud Service and Proactive Notification - Cloud Service. Also assign the appropriate Adobe IDs from your organization to those profiles. This allows an administrator to determine which users qualify to receive these email notifications.
+To configure receiving Actions Center email notifications, create the Product Profiles as described under [Notification Profiles](/help/journey-onboarding/notification-profiles.md), namely Incident Notification - Cloud Service and Proactive Notification - Cloud Service. Also assign the appropriate Adobe IDs from your organization to those profiles. This allows an administrator to determine which users qualify to receive these email notifications.
 
 >[!NOTE]
 >Actions Center email notifications function at the organization level so subscribers will receive notifications for all programs and environments within those programs.
@@ -59,7 +59,7 @@ AEM as a Cloud Service has several types of notifications, but only a subset app
 |---------------------------------|-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
 | Operational incidents           | Critical incidents requiring immediate action | User assigned to "Incident Notification - Cloud Service" product profile                                                                                                                                                                                | X                         |
 | Proactive recommendations       | Optimizations that should be planned          | User assigned to "Proactive Notification - Cloud Service" product profile                                                                                                                                                                               | X                         |
-| Cloud Manager pipeline statuses | Information about the state of your pipelines | User with Business Owner, Program Manager, or Deployment Manager roles, "Others" checkbox selected in [Experience Cloud Preferences](https://experience.adobe.com/preferences), as [described here](/help/implementing/cloud-manager/notifications.md). |                           |
+| Cloud Manager pipeline statuses | Information about the state of your pipelines | User with Business Owner, Program Manager, or Deployment Manager roles, "Others" checkbox selected in [Experience Cloud Preferences](https://experience.adobe.com/preferences), see [Notifications](/help/implementing/cloud-manager/notifications.md). |                           |
 
 ## Supported Notification Types {#supported-notification-types}
 
