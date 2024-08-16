@@ -126,4 +126,4 @@ Both regular environment variables and secrets can be used in [OSGi configuratio
 
 ### Pipeline Variables {#pipeline}
 
-In addition to environment variables, there are also pipeline variables, which are exposed during the build phase. [Learn more about pipeline variables here](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables).
+In addition to environment variables, there are also pipeline variables, which are exposed during the build phase. Learn more about pipeline variables under [Build Environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables).

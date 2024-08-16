@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 
 >[!NOTE]
 >
->This feature is not yet released, and some logging destinations may not be available at the time of release. In the meantime, you can open a support ticket to forward logs to **Splunk**, as described in the [logging article](/help/implementing/developing/introduction/logging.md).
+>This feature is not yet released, and some logging destinations may not be available at the time of release. In the meantime, you can open a support ticket to forward logs to **Splunk**, as described under [Logging for AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md).
 
 Customers who have a license for a logging vendor or host a logging product can have AEM logs (including Apache/Dispatcher) and CDN logs forwarded to the associated logging destinations. AEM as a Cloud Service supports the following logging destinations: 
 
@@ -166,7 +166,7 @@ aemcdn/
 
 ```
 
-Each file contains multiple json log entries, each on a separate line. The log entry formats are described in the [logging article](/help/implementing/developing/introduction/logging.md), and each log entry also includes the additional properties mentioned in the [Log Entry Formats](#log-format) section below.
+Each file contains multiple json log entries, each on a separate line. The log entry formats are described under [Logging for AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md), and each log entry also includes the additional properties mentioned in the [Log Entry Formats](#log-format) section below.
 
 #### Azure Blob Storage AEM logs {#azureblob-aem}
 
@@ -180,7 +180,7 @@ AEM logs (including Apache/Dispatcher) appear below a folder with the following 
 
 Under each folder, a single file will be created and appended to. Customers are responsible for processing and managing this file so it does not grow too large.
 
-See the log entry formats in the [logging article](/help/implementing/developing/introduction/logging.md). The log entries will also include the additional properties mentioned in the [Log Entry Formats](#log-formats) section below.
+See the log entry formats under [Logging for AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md). The log entries will also include the additional properties mentioned in the [Log Entry Formats](#log-formats) section below.
 
    
 ### Datadog {#datadog}
@@ -266,7 +266,7 @@ Considerations:
 
 #### HTTPS CDN logs {#https-cdn}
 
-Web requests (POSTs) will be sent continuously, with a json payload that is an array of log entries, with the log entry format described in the [logging article](/help/implementing/developing/introduction/logging.md#cdn-log). Additional properties are mentioned in the [Log Entry Formats](#log-formats) section below.
+Web requests (POSTs) will be sent continuously, with a json payload that is an array of log entries, with the log entry format described under [Logging for AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md#cdn-log). Additional properties are mentioned in the [Log Entry Formats](#log-formats) section below.
 
 There is also be a property named `sourcetype`, which is set to the value `aemcdn`.
 
@@ -276,7 +276,7 @@ There is also be a property named `sourcetype`, which is set to the value `aemcd
 
 #### HTTPS AEM logs {#https-aem}
 
-For AEM logs (including apache/dispacher), web requests (POSTs) will be sent continuously, with a json payload that is an array of log entries, with the various log entry formats as described in the [logging article](/help/implementing/developing/introduction/logging.md). Additional properties are mentioned in the [Log Entry Formats](#log-format) section below.
+For AEM logs (including apache/dispacher), web requests (POSTs) will be sent continuously, with a json payload that is an array of log entries, with the various log entry formats as described under [Logging for AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md). Additional properties are mentioned in the [Log Entry Formats](#log-format) section below.
 
 There is also be a property named `sourcetype`, which is set to one of these values:
 
@@ -324,7 +324,7 @@ There is also be a property named `sourcetype`, which is set to one of these val
 
 ## Log Entry Formats {#log-formats}
 
-See the general [logging article](/help/implementing/developing/introduction/logging.md) for the format of each respective log type (CDN logs, and AEM logs including Apache/Dispatcher).
+See [Logging for AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md) for the format of each respective log type (CDN logs, and AEM logs including Apache/Dispatcher).
 
 Since logs from multiple programs and environments may be forwarded to the same logging destination, in addition to the output described in the logging article, the following properties will be included in each log entry:
 
@@ -352,7 +352,7 @@ aem_tier: author
 
 Some organizations choose to restrict which traffic can be received by the logging destinations.
 
-For the CDN log, you can allow-list the IP addresses, as described in [this article](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). If that list of shared IP addresses is too large, consider sending traffic to a (non-Adobe) Azure Blob Store where logic can be written to send the logs out of a dedicated IP to their ultimate destination. 
+For the CDN log, you can allow-list the IP addresses, as described in [fastly documentation - Public IP List](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). If that list of shared IP addresses is too large, consider sending traffic to a (non-Adobe) Azure Blob Store where logic can be written to send the logs out of a dedicated IP to their ultimate destination. 
 
 For AEM logs (including Apache/Dispatcher), you can configure log forwarding to go through [advanced networking](/help/security/configuring-advanced-networking.md). See the patterns for the three advanced networking types below, which make use of an optional `port` parameter, along with the `host` parameter.
 
