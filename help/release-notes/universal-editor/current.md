@@ -18,12 +18,12 @@ These are the release notes for the 13 August 2024 release of the Universal Edit
 
 * **Custom Data Types**: Tailor the editor to your unique data needs with the ability to create custom fields within the properties panel.
   * Whether you’re developing a custom product picker for commerce use-cases or populating a drop-down list with values from your backends, this feature gives you the control you need over the data that authors use to compose content.
-* **Cross-Container Drag &amp; Drop**: Enjoy greater flexibility in layout composition with the ability to move components across different containers via drag and drop within the [Content Tree panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
+* **Cross-Container Drag &amp; Drop**: Enjoy greater flexibility in layout composition with the ability to [move components across different containers via drag and drop](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) within the [Content Tree panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
 * **Optimized GitHub Integration**: Caching for GitHub responses have been introduced, significantly speeding up the retrieval of tags and the `universal-editor-cors-library`, resulting in a faster and smoother user experience.
 * **Managed Services RPM Package**: Adobe now offers an RPM package to streamline the deployment and management of the Universal Editor Service, simplifying maintenance and reducing operational overhead for managed services.
 * **Configurable IMS Token Validation**: To increase flexibility in token management, IMS token validation is now optional.
   * This configuration option allows you to disable validation as needed, simplifying your cloud gateway setups.
-* **Splunk Integration**: Splunk logging has been integrated into Universal Editor Service Express, enhancing monitoring and diagnostics.
+* **Splunk Integration**: Splunk logging has been integrated into the [Universal Editor Service for local development,](/help/implementing/universal-editor/local-dev.md) enhancing monitoring and diagnostics.
   * This integration ensures efficient log tracking, smoother operations, and quicker troubleshooting.
 
 ## Bug Fixes {#bug-fixes}

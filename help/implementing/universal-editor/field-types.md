@@ -297,6 +297,12 @@ The Content Fragment picker can be used to select a [Content Fragment](/help/sit
 |---|---|---|---|
 |`variationName`|`string`|Variable name to store the selected variation. If undefined, no variation picker is displayed|No|
 
+>[!NOTE]
+>
+>The Universal Editor [validates Content Fragment fields based on their models](/help/assets/content-fragments/content-fragments-models.md#validation) allowing you to enforce data integrity rules such as regex patterns and uniqueness constraints.
+>
+>This ensures that your content meets specific business requirements before it's published.
+
 >[!BEGINTABS]
 
 >[!TAB Sample 1]
