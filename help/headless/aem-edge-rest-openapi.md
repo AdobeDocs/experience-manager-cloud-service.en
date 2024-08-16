@@ -28,7 +28,7 @@ The API used is a choice for developers. AEM supports both. Many comparisons are
 
   * Developers are familiar with HTTP and REST. According to the [Postman State of the APIs report](https://www.postman.com/state-of-api/), a high percentage of developers use REST. 
 
-  * With simplicity comes familiarity. With REST there is no organizational question of who owns the queries vs who owns the app, whereas this can occur with GraphQL. 
+  * With simplicity comes familiarity. With REST there is no organizational question of who owns the queries vs who owns the app, whereas this can arise with GraphQL. 
 
   * With familiarity (typically) comes a broad community and tooling landscape. Not an inherent disadvantage of GraphQL, but likely broader and deeper for REST. 
 
@@ -40,12 +40,12 @@ The API used is a choice for developers. AEM supports both. Many comparisons are
 
 * Caching
 
-  * JSON responses to REST `GET` requests are inherently cacheable. GraphQL `POST` requests are not cacheable, unless they are made so; for example, by using AEM Persisted Queries which are stored on the server and requested with REST-like `GET`requests. 
+  * JSON responses to REST `GET` requests are inherently cacheable. GraphQL `POST` requests are not cacheable, unless they are made so; for example, by using AEM Persisted Queries that are stored on the server and requested with REST-like `GET`requests. 
 
 * Efficiency of content delivery. 
 
   * Focus
-    With GraphQL client applications can request the exact content they need for rendering, and no more. This prevents content over-delivery, with excessive content payloads, and unnecessary bandwidth consumption.
+    With GraphQL client applications can request the exact content that they need for rendering - and no more. This approach prevents content over-delivery, with excessive content payloads, and unnecessary bandwidth consumption.
 
   * Single endpoint
   While in REST every API request is an endpoint, in GraphQL there is only one common endpoint, and different content requests are expressed as queries using that common endpoint. 
@@ -57,5 +57,5 @@ The API used is a choice for developers. AEM supports both. Many comparisons are
   1. Fetch content with API.
   2. In the JSON response, determine what to use for rendering in the client app. 
 
-  With GraphQL this is a one-step process, brought together in the GraphQL query. This can make prototyping easier. 
+  With GraphQL this is a one-step process, brought together in the GraphQL query, and can make prototyping easier. 
 
