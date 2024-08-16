@@ -33,7 +33,7 @@ Before you can configure traffic at the CDN you need to do the following:
 
 1. Create a file named `cdn.yaml` or similar, referencing the various configuration snippets in the sections below. 
 
-    All snippets have these common properties, which are described in  the [Config Pipeline article](/help/operations/config-pipeline.md#common-syntax). The `kind` property value should be *CDN* and the `version` property should be set to *1*.
+    All snippets have these common properties, which are described under [Config Pipeline](/help/operations/config-pipeline.md#common-syntax). The `kind` property value should be *CDN* and the `version` property should be set to *1*.
     ```
     kind: "CDN"
     version: "1"
@@ -41,9 +41,9 @@ Before you can configure traffic at the CDN you need to do the following:
       envTypes: ["dev"]
     ```
 
-1. Place the file somewhere under a top level folder named *config* or similar, as described in [Config Pipeline article](/help/operations/config-pipeline.md#folder-structure).
+1. Place the file somewhere under a top level folder named *config* or similar, as described under [Config Pipeline](/help/operations/config-pipeline.md#folder-structure).
 
-1. Create a Config Pipeline in Cloud Manager, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#managing-in-cloud-manager). 
+1. Create a Config Pipeline in Cloud Manager, as described under [Config Pipeline](/help/operations/config-pipeline.md#managing-in-cloud-manager). 
 
 1. Deploy the configuration.
 

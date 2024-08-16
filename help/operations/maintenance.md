@@ -219,11 +219,11 @@ Declare a configuration file and deploy it as described in the following steps.
 
 **1** Create a file named `mt.yaml` or similar.
   
-**2** Place the file somewhere under a top level folder named `config` or similar, as described in the [config pipeline article.](/help/operations/config-pipeline.md#folder-structure)
+**2** Place the file somewhere under a top level folder named `config` or similar, as described under [Using Config Pipelines](/help/operations/config-pipeline.md#folder-structure).
 
 **3** - Declare properties in the configuration file, which include:
 
-* a few properties above the data node -- see the [config pipeline article](/help/operations/config-pipeline.md#common-syntax) for a description. The `kind` property value should be *MaintenanceTasks* and the version should be set to *1*.
+* a few properties above the data node -- see [Using Config Pipelines](/help/operations/config-pipeline.md#common-syntax) for a description. The `kind` property value should be *MaintenanceTasks* and the version should be set to *1*.
 
 * a data object with both `versionPurge` and `auditLogPurge` objects.
 
