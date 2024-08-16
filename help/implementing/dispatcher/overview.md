@@ -30,4 +30,4 @@ The following sections provide greater detail about content delivery:
 * [Caching](/help/implementing/dispatcher/caching.md)
 
 
-Information about replication from the author service to the publish service is available [here](/help/operations/replication.md).
+For information about replication from the author service to the publish service see [Replication](/help/operations/replication.md).
