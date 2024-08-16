@@ -146,7 +146,7 @@ For environments where no user can interactively run the setup command as descri
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   * Your own organization ID can be looked up using the method [documented here.](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255)
+   * Your own organization ID can be looked up using the method documented under [View your organization ID](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
 
 1. Next, configure your program ID:
 
@@ -160,7 +160,7 @@ For environments where no user can interactively run the setup command as descri
 
    `aio login`
 
-   These steps require you to be a member of the Cloud Manager **Developer - Cloud Service** Product Profile. See [this page](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) for more details.
+   These steps require you to be a member of the Cloud Manager **Developer - Cloud Service** Product Profile. See [Assign Team Members to Cloud Manager Product Profiles - Assign the Developer Product Profile](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) for more details.
 
 For more information and demonstration, watch the video tutorial [how to set up an RDE (06:24)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html).
 </details>
@@ -990,7 +990,7 @@ Upon creation, RDEs are set to the most recently available Adobe Experience Mana
 
 ### Errors regarding insufficient permissions {#insufficient-permissions}
 
-To use the RDE plugin, it requires you to be a member of the Cloud Manager **Developer - Cloud Service** Product Profile. See [this page](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) for more details.
+To use the RDE plugin, it requires you to be a member of the Cloud Manager **Developer - Cloud Service** Product Profile. See [Assign Team Members to Cloud Manager Product Profiles - Assign the Developer Product Profile](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) for more details.
 
 Alternatively, you can confirm that you have this developer role if you can log in to the developer console by running this command:
 

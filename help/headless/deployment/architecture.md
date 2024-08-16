@@ -17,7 +17,7 @@ A typical AEM environment is made up of an Author Service, Publish Service and a
 
 * **The Dispatcher** is a static web server augmented with the AEM dispatcher module. It provides caching capabilities and another layer of security. The **Dispatcher** sits in front of the **Publish** and **Preview** services.
 
-Within an AEM as a Cloud Service Program you can have multiple environments, Dev, Stage and Prod. Each environment would have its own unique **Author**, **Publish**, and **Preview** services. You can learn more about managing [environments here](/help/implementing/cloud-manager/manage-environments.md)
+Within an AEM as a Cloud Service Program you can have multiple environments, Dev, Stage and Prod. Each environment would have its own unique **Author**, **Publish**, and **Preview** services. See [Managing Environments](/help/implementing/cloud-manager/manage-environments.md) to learn more.
 
 ## Author Publish Model
 

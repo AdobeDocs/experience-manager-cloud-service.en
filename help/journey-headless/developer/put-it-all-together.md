@@ -37,7 +37,7 @@ The AEM SDK is used to build and deploy custom code. It is the main tool that yo
 
 Different from the AEM SDK, the AEM **Headless SDK** is set of libraries that can be used by clients to quickly and easily interact with AEM Headless APIs over HTTP.
 
-For more information on the AEM Headless SDK, see the [documentation here](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html).
+For more information see [AEM Headless SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html).
 
 ## Additional Development Tools {#additional-development-tools}
 
