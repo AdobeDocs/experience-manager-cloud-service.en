@@ -57,7 +57,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 **Benefits of Smart Imaging**
 
-Smart Imaging provides better image delivery performance by automatically optimizing image file size based on client browser in use, the device display & network conditions. Because images constitute most of a page's load time, any performance improvement can have a profound impact on business KPIs such as higher conversion rates, time spent on a site, and lower site bounce rates.
+Smart Imaging provides better image delivery performance by automatically optimizing image file size based on client browser in use, the device display, and network conditions. Because images constitute most of a page's load time, any performance improvement can have a profound impact on business KPIs such as higher conversion rates, time spent on a site, and lower site bounce rates.
 
 The newest key benefits of the latest Smart Imaging include the following:
 
@@ -67,7 +67,7 @@ The newest key benefits of the latest Smart Imaging include the following:
 * [Device Pixel Ratio](#dpr)
 * [Network bandwidth](#bandwidth)
 
-### About Browser Format Conversion {#bfc}
+### About browser format Conversion {#bfc}
 
 Turning on Browser Format Conversion by appending `bfc=on` to the image URL automatically converts JPEG and PNG to lossy AVIF, lossy WebP, lossy JPEGXR, lossy JPEG2000 for different browsers. For browsers that do not support those formats, Smart Imaging continues to serve the JPEG or PNG. Along with the format, the quality of the new format is recalculated by Smart Imaging.
 
@@ -75,7 +75,7 @@ Smart Imaging can also be turned off by appending `bfc=off` to the image's URL.
 
 See also [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=en) in the Dynamic Media Image Serving and Rendering API.
 
-### About Device Pixel Ratio optimization {#dpr}
+### About device pixel ratio optimization {#dpr}
 
 Device Pixel Ratio (DPR) &ndash; also known as CSS pixel ratio &ndash; is the relation between a device's physical pixels and logical pixels. Especially with the advent of retina screens, the pixel resolution of modern mobile devices is growing at a fast rate.
 
@@ -100,7 +100,7 @@ Currently, the pixel density of the display comes from Akamai CDN header values.
 
 See also [When working with images](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) and [When working with Smart Crop](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
 
-### About Network Bandwidth optimization {#bandwidth}
+### About network bandwidth optimization {#bandwidth}
 
 Turning on Network Bandwidth automatically adjusts the image quality that is served based on actual network bandwidth. For poor network bandwidth, DPR (Device Pixel Ratio) optimization is automatically turned off, even if it is already on.
 
@@ -156,7 +156,7 @@ For image file formats that support transparency like PNG, you can configure Sma
 
 The Image Serving commands `fmt` and `qlt` are not supported; all remaining commands are supported.
 
-## Frequently Asked Questions about Smart Imaging{#smart-imaging-faq}
+## Frequently asked questions about Smart Imaging{#smart-imaging-faq}
 
 +++**Are there licensing costs associated with Smart Imaging?**
 
