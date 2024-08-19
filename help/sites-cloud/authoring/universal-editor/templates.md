@@ -64,9 +64,9 @@ Creating a page from a template for use with the Universal Editor is the same wo
 
 Complete the wizard as you would for any other page and you have created your new page based on the selected template.
 
-## Limitations {#limitations}
+## Universal Editor and the Page Editor {#page-vs-universal}
 
-Page templates for the Universal Editor solve the same problem as [page templates for the AEM Page Editor:](/help/sites-cloud/authoring/sites-console/templates.md) to be able to reuse content to create pages quickly based on a set of pre-defined layouts. However they solve the problem in very different ways.
+Page templates for the Universal Editor solve the same problem as [page templates for the AEM Page Editor:](/help/sites-cloud/authoring/sites-console/templates.md) to be able to reuse content to create pages quickly based on a set of pre-defined layouts. However they solve the problem in very different ways. If you are a user of the Page Editor, please be aware of these differences.
 
 * Pages created from pages templates for the Universal Editor are independent copies of the template.
 * Therefore if the template changes, the resulting pages do not change.
