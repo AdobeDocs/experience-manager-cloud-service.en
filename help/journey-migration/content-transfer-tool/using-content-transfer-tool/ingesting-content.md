@@ -208,11 +208,18 @@ Best practices indicate that if a **Non-Wipe** ingestion must be run using a mig
 >abstract="A common cause of an ingestion failure is exceeding the maximum size of node property values. Follow the documentation, including those related to the BPA report, to remedy this situation."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html" text="Migration Prerequisites"
 
-Node property values stored in MongoDB cannot exceed 16 MB. If a node value exceeds the supported size, the ingestion fails and the log will contain a `BSONObjectTooLarge` error and specify which node exceeded the maximum. This is a MongoDB restriction.
+Node property values stored in MongoDB cannot exceed 16 MB. If a node value exceeds the supported size, the ingestion fails and the log will contain either:
+
+* a `BSONObjectTooLarge` error and specify which node exceeded the maximum, or 
+* a `BsonMaximumSizeExceededException` error, which indicates there is a node likely containing unicode characters that is exceeding the maximum size **
+
+This is a MongoDB restriction.
 
 See the `Node property value in MongoDB` note in [Prerequisites for Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) for more information and a link to an Oak tool that could help find all the large nodes. Once all nodes with large sizes are remedied, run the extraction and ingestion again.
 
 To possibly avoid this restriction, run the [Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) on the source AEM instance and review the findings it presents, particularly the ["Unsupported Repository Structure" (URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs) pattern.
+
+**Note: [Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) version 2.1.50+ will report on large nodes containing unicode characters that exceed the maximum size. Please ensure you are running the latest version. BPA versions prior to 2.1.50 will not identify and report on these large nodes and they will need to be discovered separately using the prerequisite Oak tool mentioned above.
 
 ### Ingestion Rescinded {#ingestion-rescinded}
 
