@@ -42,6 +42,9 @@ The Universal Editor does not affect the underlying mechanism of inheritance. Fo
 ## Limitations {#limitations}
 
 * Authors can not revert inheritance for single components.
-  * Inheritance can only be reverted for the entire page via the [Live Copy Overview Console](/help/sites-cloud/administering/msm/live-copy-overview.md) or the [Launches Console.](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
+  * Inheritance can only be reverted for the entire page via the
+    * [Live Copy Overview Console](/help/sites-cloud/administering/msm/live-copy-overview.md) 
+    * [Launches Console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
+    * Using the **Reset** button on the **Live Copy** tab of the [page properties window.](/help/sites-cloud/authoring/sites-console/page-properties.md)
 * Authors do not have visual feedback to see which components have their inheritance disabled and which still have it preserved.
 * These features are currently limited to components in pages and do not yet apply to [Content Fragments,](/help/sites-cloud/administering/content-fragments/overview.md) despite those also having MSM and Launch capabilities.
