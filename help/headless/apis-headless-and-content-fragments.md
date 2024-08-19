@@ -7,16 +7,7 @@ role: Admin, Developer
 
 # AEM APIs for Headless Content Delivery and Content Fragments {#aem-apis-headless-content-delivery-and-content-fragments}
 
-In Adobe Experience Manager (AEM) as a Cloud Service, there are several APIs available for use with Headless Content Delivery and Content Fragments:
-
-* AEM Edge Delivery Services REST OpenAPI
-* AEM GraphQL API for use with Content Fragments
-* Content Fragments and Content Fragment Models OpenAPIs
-* Content Fragments Support in the AEM Assets HTTP API
-
-## Overview {#overview}
-
-The following list provides a very short overview of the APIs available. See the individual pages for further details of the specific APIs.
+In Adobe Experience Manager (AEM) as a Cloud Service, there are several APIs available for use with Headless Content Delivery and Content Fragments. See the individual pages for further details of the specific APIs.
 
 * [AEM Edge Delivery Services REST OpenAPI](/help/headless/aem-edge-rest-openapi.md)
   * This API creates JSON responses specifically for Content Fragments (structured content) in AEM. It requires a path to a content fragment as an endpoint. 
