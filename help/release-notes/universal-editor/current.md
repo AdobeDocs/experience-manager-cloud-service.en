@@ -21,9 +21,9 @@ These are the release notes for the 13 August 2024 release of the Universal Edit
 * **Cross-Container Drag &amp; Drop**: Enjoy greater flexibility in layout composition with the ability to [move components across different containers via drag and drop](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) within the [Content Tree panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
 * **Optimized GitHub Integration**: Caching for GitHub responses have been introduced, significantly speeding up the retrieval of tags and the `universal-editor-cors-library`, resulting in a faster and smoother user experience.
 * **Managed Services RPM Package**: Adobe now offers an RPM package to streamline the deployment and management of the Universal Editor Service, simplifying maintenance and reducing operational overhead for managed services.
-* **Configurable IMS Token Validation**: To increase flexibility in token management, IMS token validation is now optional.
+* **Configurable IMS Token Validation**: To increase flexibility in token management, [IMS token validation is now optional.](/help/implementing/universal-editor/local-dev.md#setting-up-service)
   * This configuration option allows you to disable validation as needed, simplifying your cloud gateway setups.
-* **Splunk Integration**: Splunk logging has been integrated into the [Universal Editor Service for local development,](/help/implementing/universal-editor/local-dev.md) enhancing monitoring and diagnostics.
+* **Splunk Integration**: Splunk logging has been integrated into the [Universal Editor Service for local development,](/help/implementing/universal-editor/local-dev.md#setting-up-service) enhancing monitoring and diagnostics.
   * This integration ensures efficient log tracking, smoother operations, and quicker troubleshooting.
 
 ## Bug Fixes {#bug-fixes}
