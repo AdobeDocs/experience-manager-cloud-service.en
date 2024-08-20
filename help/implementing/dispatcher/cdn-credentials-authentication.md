@@ -24,7 +24,7 @@ As described in the [CDN in AEM as a Cloud Service](/help/implementing/dispatche
 
 As part of the setup, the Adobe CDN and the Customer CDN must agree on a value of the `X-AEM-Edge-Key` HTTP Header. This value is set on each request, at the Customer CDN, before it is routed to the Adobe CDN, which then validates that the value is as expected, so it can trust other HTTP headers, including those that help route the request to the appropriate AEM origin.  
 
-The *X-AEM-Edge-Key* value is referenced by the `edgeKey1` and `edgeKey2` properties in a file named `cdn.yaml` or similar, somewhere under a top-level `config` folder. Read the [Config Pipeline article](/help/operations/config-pipeline.md#folder-structure) for details about the folder structure and how to deploy the configuration. 
+The *X-AEM-Edge-Key* value is referenced by the `edgeKey1` and `edgeKey2` properties in a file named `cdn.yaml` or similar, somewhere under a top-level `config` folder. Read [Using Config Pipelines](/help/operations/config-pipeline.md#folder-structure) for details about the folder structure and how to deploy the configuration. 
 
 The syntax is described below:
 
@@ -49,7 +49,7 @@ data:
 
 ```
 
-See the [Config Pipeline article](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the `data` node. The `kind` property value should be *CDN* and the `version` property should be set to `1`.
+See [Using Config Pipelines](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the `data` node. The `kind` property value should be *CDN* and the `version` property should be set to `1`.
 
 Additional properties include:
 
@@ -71,7 +71,7 @@ Additional properties include:
 
 ## Purge API Token {#purge-API-token}
 
-Customers can [purge the CDN cache](/help/implementing/dispatcher/cdn-cache-purge.md) by using a declared Purge API token. The token is declared in a file named `cdn.yaml` or similar, somewhere under a top-level `config` folder. Read the [config pipeline article](/help/operations/config-pipeline.md#folder-structure) for details about the folder structure and how to deploy the configuration. 
+Customers can [purge the CDN cache](/help/implementing/dispatcher/cdn-cache-purge.md) by using a declared Purge API token. The token is declared in a file named `cdn.yaml` or similar, somewhere under a top-level `config` folder. Read [Using Config Pipelines](/help/operations/config-pipeline.md#folder-structure) for details about the folder structure and how to deploy the configuration. 
 
 The syntax is described below:
 
@@ -96,7 +96,7 @@ data:
 
 ```
 
-See the [config pipeline article](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the `data` node. The `kind` property value should be *CDN* and the `version` property should be set to `1`.
+See [Using Config Pipelines](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the `data` node. The `kind` property value should be *CDN* and the `version` property should be set to `1`.
 
 Additional properties include:
 
@@ -154,7 +154,7 @@ data:
 
 ```
 
-See the [config pipeline article](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the `data` node. The `kind` property value should be *CDN* and the `version` property should be set to `1`.
+See [Using Config Pipelines](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the `data` node. The `kind` property value should be *CDN* and the `version` property should be set to `1`.
 
 In addition, the syntax includes:
 

@@ -81,7 +81,7 @@ As of August 2023, Experience Manager Assets includes a new version 9 of `damAss
 
 If you need to switch to the previous behavior (`statistical` mode), see [Content Search and Indexing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html) to create a custom version of the `damAssetLucene-9` index. Adobe does not recommend switching to the `secure` mode due to the impact on search response times with large result sets.
 
-For more information on Oak's facet capabilities, including a detailed description of these modes, see [this article](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets).
+For more information on Oak's facet capabilities, including a detailed description of these modes, see [Facets - Oak Documentation - Lucene Index](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets).
 
 ## Search suggestions as you type {#searchsuggestions}
 
