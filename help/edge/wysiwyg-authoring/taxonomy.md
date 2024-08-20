@@ -1,7 +1,6 @@
 ---
 title: Managing Taxonomy Data
 description: Learn how to manage taxonomy data for using tags with your AEM with Edge Delivery Services sites.
-exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
 ---
 
