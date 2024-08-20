@@ -38,6 +38,10 @@ Have a look at the August 2024 Release Overview video for a summary of the featu
 
 ### New feature in Experience Manager Sites {#new-feature-sites}
 
+**AEM Authoring for Edge Delivery Services**
+
+Existing Sites functionality [AEM Launches](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/launches/overview) and [MSM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm/overview) (on page level) are now supported. [AEM Tags](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/tags) can be exported to Edge Delivery Services.
+
 ### Early Adopter Program {#sites-early-adopter}
 
 **Generate Variations**
