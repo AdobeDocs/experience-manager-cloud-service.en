@@ -10,6 +10,10 @@ role: User
 
 Learn how to create and use page templates with the Universal Editor.
 
+>[!NOTE]
+>
+>This feature will be available in an upcoming release of AEM as a Cloud Service.
+
 ## What are Page Templates? {#what-are}
 
 Branding and marketing guidelines often dictate particular layouts for your content pages. It is also often a practical reality that many of your pages will share the same structure and layout. To save your content authors time, pages can be created from templates.
