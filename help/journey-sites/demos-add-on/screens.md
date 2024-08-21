@@ -11,7 +11,7 @@ Learn the steps enabling the full AEM Screens as a Cloud Service experience on y
 
 >[!NOTE]
 >
->AEM Screens Demo requires Screens Add-on to be added to Cloud Manager Program. Learn [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/adding-screens-addon/add-on-new-program-screens-cloud.html) how to add it.
+>AEM Screens Demo requires Screens Add-on to be added to Cloud Manager Program. Learn how with [Adding Screens as an Add-on to a New Program in Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md) how to add it.
 
 ## The Story So Far {#story-so-far}
 
