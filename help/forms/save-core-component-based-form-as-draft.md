@@ -8,8 +8,7 @@ role: User, Developer, Admin
 
 # Save form as a draft 
 
-
-The Forms portal components provides accessibility with security and improves the overall user experience by integrating form management directly into the AEM sites page. The **Drafts & Submissions** Forms portal component allows users to edit drafts or submit forms by the authenticated users. This functionality allows users to save the progress and return to complete the tasks later without losing any entered information. Providing the  `save-as-draft` option ensures flexibility in managing time, reduces the risk of data loss, and maintains the precision of submissions. You can save forms as drafts to complete them later. 
+The Forms portal component provides accessibility with security and improves the overall user experience by integrating form management directly into the AEM sites page. The **Drafts & Submissions** Forms portal component allows users to edit drafts or submit forms by the authenticated users. This functionality allows users to save the progress and return to complete the tasks later without losing any entered information. Providing the  `save-as-draft` option ensures flexibility in managing time, reduces the risk of data loss, and maintains the precision of submissions. You can save forms as drafts to complete them later. 
 
 ## Pre-requisites
 
@@ -117,16 +116,16 @@ When you preview an Adaptive Form, fill it out, and click the **Save Form** butt
 
 ### Auto save
 
-You can also configure an Adaptive Form to save automatically based on a time-based event, ensuring the form is saved after the specified duration. When you [enable Forms portal components for your environment](/help/forms/list-forms-on-sites-page.md#enable-forms-portal-components-for-your-existing-environment), the Auto Save option begins to appear in the Forms container properties. You can configure the auto-save feature for an Adaptive Form as follows:
+You can also configure an Adaptive Form to save automatically based on a time-based event, ensuring the form is saved after the specified duration. When you [enable Forms portal components for your environment](/help/forms/list-forms-on-sites-page.md#enable-forms-portal-components-for-your-existing-environment), the Auto Save option appears in the Forms container properties. You can configure the auto-save feature for an Adaptive Form as follows:
 
 1. In the author instance, open an Adaptive Form in an edit mode.
-1. Open the Content browser, and select the **[!UICONTROL Guide Container]** component of your Adaptive Form. 
-1. Click the Guide Container properties ![Guide properties](/help/forms/assets/configure-icon.svg) icon and open the [!UICONTROL AUTO-SAVE] option.
-1. Select the **[!UICONTROL Enable]** check box to enable auto-save of the form. You can configure the following:
+2. Open the Content browser, and select the **[!UICONTROL Guide Container]** component of your Adaptive Form. 
+3. Click the Guide Container properties ![Guide properties](/help/forms/assets/configure-icon.svg) icon and open the [!UICONTROL Auto-Save] tab.
+4. Select the **[!UICONTROL Enable]** check box to enable auto-save of the form. You can configure the following:
    * By default, the **[!UICONTROL Adaptive Form Event]** is set to "true", which implies that the form is auto-saved after every event.
    * In [!UICONTROL Trigger], configure to trigger auto-save based on the occurrence of an event or after a specific interval of time.
 
-1. Click **[!UICONTROL Save]**.
+5. Click **[!UICONTROL Save]**.
  
 ## View drafts and submitted forms on AEM sites page
 
