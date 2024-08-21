@@ -89,7 +89,7 @@ The **Drafts & Submissions** component displays forms that are saved as draft fo
 1. Click the ![Configure icon](assets/configure_icon.png) and the dialog box appears. 
 1. In the **[!UICONTROL Drafts and Submissions]** dialog, specify the following:
    * **Title** To identify a component in a Sites page and by default, the title appears on top of the component.
-   * **Type**: To indicate the form listing as draft or submitted forms.
+   * **Select Type**: To indicate the form listing as draft or submitted forms.
    *  **Layout**: To display list draft forms or submitted forms in card or list format.
  
     ![Draft and Submission Component proeprties](/help/forms/assets/save-form-as-draft-dns-properties.png)
@@ -127,16 +127,16 @@ You can also configure an Adaptive Form to save automatically based on a time-ba
 
 5. Click **[!UICONTROL Save]**.
  
-## View drafts and submitted forms on AEM sites page
+## View drafts or submitted forms on AEM sites page
 
-Now, preview the AEM sites page. When **[!UICONTROL Select Type]** is selected as **Draft Forms**, the forms saved as drafts appear on sites page:
+Now, preview the AEM sites page. When **[!UICONTROL Select Type]** is selected as **Draft Forms** in the **Drafts & Submissions** component, the forms saved as drafts appear on sites page:
 ![Drafts icon](assets/drafts-component.png)
 
 When **[!UICONTROL Select Type]** is selected as **Submitted Forms**, the submitted forms appear:
 
 ![Submissions icon](assets/submission-listing.png)
 
-You can open or discard the form by clicking on the respective form.
+You can open or discard the form by clicking on the ellipsis that appears in the bottom-right corner of the form.
 
 ## See Also {#see-also}
 
