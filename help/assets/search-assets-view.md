@@ -129,26 +129,25 @@ To generate new assets using [!DNL Adobe Firefly]:
 
 1. Navigate to the [!DNL AEM Assets] workspace.
 
-1. Enter the asset name in the search bar at the top of the page.
-For instance, you can search an asset using the keyword `Bugatti Type 57`. When searching for an asset, no results are found because the asset is not present in any of the asset folders.
-
-1. Type the asset name in the search bar in the middle of the page and click **[!UICONTROL Generate with Firefly]**. The [!DNL Adobe Firefly] screen appears.
+1. Type the asset name in the search bar and click **[!UICONTROL Generate with Firefly]**. The [!DNL Adobe Firefly] screen appears.
 
    ![Firefly integration](assets/firefly-integration.png)
-      *Figure: No results found for Bugatti Type 57 in the asset folder.*<br>
 
-   The new assets are successfully generated.<br>
+   The new assets are successfully generated. Additionally, you can change the image description by typing the new text prompt in the description box. [Learn how to write a good AI prompt to generate extraordinary and relevant content.](https://helpx.adobe.com/in/firefly/using/tips-and-tricks.html) Alternatively, you can [edit image with various other features like changing style, image dimensions, and more.](https://helpx.adobe.com/in/firefly/using/text-to-image.html)
 
    ![Firefly integration](assets/bugatti-type-57.png)
-   *Figure: Reference assets searched using [!DNL Adobe Firefly] asset search feature.* <br>
 
-1. Select an image that you want to save. Click **[!UICONTROL Save]** to save the assets in your Assets to your preferred folder for easy access.
+1. Select an image that you want to save. Click **[!UICONTROL Save]** to save the assets in your preferred folder for easy access.
 
-1. Save asset form appears. 
+1. Save asset form appears. Specify the following fields:
+
+   * Enter a name for the file in the **Save As** field.
+   * Select a destination folder. 
+   * Provide details such as Project or Campaign name, Keywords, Channels, Time frame, and Region. 
 
    ![Firefly integration](assets/save-generated-asset.png)
 
-Fill up the form and click **[!UICONTROL Save as a new asset]**. It saves the generated asset as a new version under the name that you have specified in the [!UICONTROL Save as] field.
+1. Click **Save as new asset** to save the asset(s).
 
 ### Upload assets {#upload-assets-firefly}
 
@@ -157,7 +156,6 @@ To upload the generated asset to the assets repository:
 1. Click **[!UICONTROL Upload]**.
 1. Select the asset folder to which you need to upload the asset and click **[!UICONTROL Select Folder]**.
  ![Upload asset](assets/upload-asset-firefly.jpg)
- *Figure: Select the folder to upload asset.*
 
 ## Saved searches {#saved-search}
 
