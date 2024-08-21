@@ -16,9 +16,9 @@ Before you can override the default error page you need to do the following:
 
 1. Create a file named `cdn.yaml` or similar, referencing the syntax section below. 
 
-1. Place the file somewhere under a top level folder named *config* or similar, as described in [config pipeline article](/help/operations/config-pipeline.md#folder-structure).
+1. Place the file somewhere under a top level folder named *config* or similar, as described in [Using Config Pipelines](/help/operations/config-pipeline.md#folder-structure).
 
-1. Create a configuration pipeline in Cloud Manager, as described in the [config pipeline article](/help/operations/config-pipeline.md#managing-in-cloud-manager). 
+1. Create a configuration pipeline in Cloud Manager, as described in the [Using Config Pipelines](/help/operations/config-pipeline.md#managing-in-cloud-manager). 
 
 1. Deploy the configuration.
 
@@ -41,7 +41,7 @@ data:
       cssUrl: https://www.example.com/error.css
       jsUrl: https://www.example.com/error.js
 ```
-See the [config pipeline article](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the data node. The kind property value should be *CDN* and the `version` property should be set to *1*.
+See [Using Config Pipelines](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the data node. The kind property value should be *CDN* and the `version` property should be set to *1*.
 
 
 | Name      | Allowed Properties               | Meaning     |

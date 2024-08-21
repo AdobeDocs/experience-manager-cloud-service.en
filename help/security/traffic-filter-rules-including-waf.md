@@ -95,7 +95,7 @@ The following is a high-level recommended end-to-end process for coming up with 
          action: block
    ```
 
-    See the [config pipeline article](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the `data` node. The `kind` property value should be set to *CDN* and the version should be set to `1`.
+    See [Using Config Pipelines](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the `data` node. The `kind` property value should be set to *CDN* and the version should be set to `1`.
 
 
 1. If WAF rules are licensed, you should enable the feature in Cloud Manager, as described below for both the new and existing program scenarios.
@@ -104,7 +104,7 @@ The following is a high-level recommended end-to-end process for coming up with 
 
    1. To configure WAF on an existing program, [edit your program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) and on the **Security** tab uncheck or check the **WAF-DDOS** option at any time.
 
-1. Create a config pipeline in Cloud Manager, as described in [config pipeline article.](/help/operations/config-pipeline.md#managing-in-cloud-manager) The pipeline will reference a top level `config` folder with the `cdn.yaml` file placed somewhere below, as [described here](/help/operations/config-pipeline.md#folder-structure).
+1. Create a config pipeline in Cloud Manager, as described in [config pipeline article.](/help/operations/config-pipeline.md#managing-in-cloud-manager) The pipeline will reference a top level `config` folder with the `cdn.yaml` file placed somewhere below, see [Using Config Pipelines](/help/operations/config-pipeline.md#folder-structure).
 
 ## Traffic Filter Rules Syntax {#rules-syntax}
 
@@ -209,7 +209,7 @@ when:
   in: [ "192.168.0.0/24" ]
 ```
 
-* Adobe recommends the use of [regex101](https://regex101.com/) and [Fastly Fiddle](https://fiddle.fastly.dev/) when working with regex. You can also learn more about how Fastly handles regex in this [article](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes).
+* Adobe recommends the use of [regex101](https://regex101.com/) and [Fastly Fiddle](https://fiddle.fastly.dev/) when working with regex. You can also learn more about how Fastly handles regex from [fastly documentation - Regular expressions in Fastly VCL](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes).
 
 
 ### Action Structure {#action-structure}

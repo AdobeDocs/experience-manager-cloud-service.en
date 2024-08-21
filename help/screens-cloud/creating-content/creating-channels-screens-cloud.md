@@ -89,7 +89,7 @@ The following templates are available while using the **Create** channel wizard:
 
 This capability lets you define a default activation schedule for a channel, and use it by default for every assignment for a display. This provides a method so that the cumbersome schedule definition does not need to be repeated.
 
-1. Navigate to Screens Services Provider from [here](https://experience.adobe.com/screens).
+1. Navigate to the [Screens Services Provider](https://experience.adobe.com/screens).
 
 ### Create default assignment details for a channel {#create-default}
 
