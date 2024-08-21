@@ -14,6 +14,13 @@ However, you can also view, and manage, all other sorts of **Assets** in this **
 
 >[!NOTE]
 >
+>This page covers the section of the console that (only) displays Assets. For other panels see:
+>
+>* [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md)
+>* [Managing Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) 
+
+>[!NOTE]
+>
 >Content Fragments can also be accessed from the **[Assets](/help/assets/overview.md)** console.
 
 ## Viewing Assets {#viewing-assets}

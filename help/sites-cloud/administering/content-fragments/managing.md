@@ -33,9 +33,16 @@ After defining your [Content Fragment Models](#creating-a-content-model) you can
 >
 >Content Fragments are stored as **Assets**. They are primarily managed from the **Content Fragments** console, but can also be managed from the [Assets](/help/assets/content-fragments/content-fragments-managing.md) console.
 
-## The Content Fragments Console {#content-fragments-console}
+## The Content Fragments Console - Content Fragments {#content-fragments-console}
 
-The Content Fragments console is dedicated to managing, searching for, and creating Content Fragments. It has been optimized for use in a Headless context, but is also used when creating Content Fragments for use in page authoring.
+The Content Fragments console is dedicated to managing, searching for, and creating Content Fragments, [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) and [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md). It has been optimized for use in a Headless context, but is also used when creating Content Fragments and Content Fragment Models for use in page authoring.
+
+>[!NOTE]
+>
+>This page covers the section of the console that (only) displays Content Fragments. For other panels see:
+>
+>* [Managing Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) 
+>* [Viewing and Managing Assets in the Content Fragments Console](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 
 The Content Fragments console provides direct access to your fragments, and related tasks. The console can be directly accessed from the top level of the Global Navigation.
 
@@ -43,7 +50,7 @@ The Content Fragments console provides direct access to your fragments, and rela
 
 For detailed further information see:
 
-* [Basic Structure and Handling of the Content Fragments Console](#basic-structure-handling-content-fragments-console)
+* [Basic Structure and Handling of Content Fragments in the Content Fragments Console](#basic-structure-handling-content-fragments-console)
 
 * [The Information provided about your Content Fragments](#information-content-fragments)
 
@@ -51,23 +58,17 @@ For detailed further information see:
 
 * [Select columns shown in the console](#select-columns-console)
 
-* [Search and Filter in the Content Fragments Console](#filtering-fragments)
+* [Search and Filter Content Fragments](#filtering-fragments)
 
 * A selection of [keyboard shortcuts](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) are available for use in this console
-
->[!NOTE]
->
->This console only displays Content Fragments. It does not display other asset types such as images and videos. 
 
 >[!CAUTION]
 >
 >This console is *only* available in the online Adobe Experience Manager (AEM) as a Cloud Service.
 
-### Basic Structure and Handling of the Console {#basic-structure-handling-content-fragments-console}
+### Basic Structure and Handling of Content Fragments in the Console {#basic-structure-handling-content-fragments-console}
 
 Selecting **Content Fragments** opens the console in a new tab. 
-
-<!-- CQDOC-21349: screenshot -->
 
 ![Content Fragments console - Overview](assets/cf-managing-console-overview.png)
 
@@ -78,10 +79,11 @@ Here you can see that there are three main areas:
   * Also shows your IMS organization
   * Provides various [actions](#actions-unselected)
 * The left panel
+  * Here you can compress, or expand, links to the panels
   * Here you can hide, or reveal, the folder tree
   * You can select a specific branch of the tree
   * This can be resized to show nested folders
-  * You can select between viewing Content Fragments or [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+  * As well as Content Fragments, you can view [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) or [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md); you can also compress, or expand, links to the panels
 * The main/right panel - from here you can:
   * See the list of all Content Fragments in the selected branch of the tree:
     * Content Fragments from the selected folder, and all child folders will be shown:
@@ -93,7 +95,7 @@ Here you can see that there are three main areas:
       * Show information about references
       * Show information about language versions of the fragment
     * [Certain other fields of information](#information-content-fragments) about a Content Fragment can be used for [Fast Filtering](#fast-filtering):
-      * Select a value in the column and is immediately applied as a filter
+      * Select a value in the column and it is immediately applied as a filter
       * Fast filtering is supported for the **Model**, **Status**, **Modified By**, **Tags** and **Published By** columns.
     * By using mouse-over on the column headers a drop-down action selector, and width sliders, will be shown. These allow you to:
       * Sort - select the appropriate action for either ascending or descending
@@ -130,8 +132,6 @@ Certain actions are available from the console - without selecting a specific Co
 #### Actions for a (selected) Content Fragment {#actions-selected-content-fragment}
 
 Selecting a specific fragment opens a toolbar focused on the actions available for that fragment. You can also select multiple fragments - the selection of actions will be adjusted accordingly.
-
-<!-- CQDOC-21349: screenshot -->
 
 ![Content Fragments console - toolbar for a selected fragment](assets/cf-managing-console-fragment-toolbar.png)
 
@@ -369,8 +369,6 @@ When the relevant dialog opens you can select the appropriate service:
 
 ## Find and Replace {#find-and-replace}
 
-<!-- CQDOC-21349: screenshot -->
-
 The **Replace** action is available (in the top toolbar) to find, and replace, specified text in your selected Content Fragments. 
 
 ![Find and Replace](assets/cf-managing-find-replace.png)
@@ -382,8 +380,6 @@ Before replacement, validation criteria are checked and you are informed of any 
 >The find and replace action can only be performed on a maximum of 20 selected Content Fragments (at a time). 
 >
 >If you select more than 20 Content Fragments, you will see the message **Unable to find and replace**.
-
-<!-- CQDOC-21349: screenshot -->
 
 ![Confirm Replace](assets/cf-managing-confirm-replace.png)
 
@@ -451,8 +447,6 @@ The Filter panel offers:
 
  Once selected, the **Filtering by** options are shown (under the Search box). They can be deselected from there. For example:
 
-<!-- CQDOC-21349: screenshot -->
-
 ![Content Fragments console - Filtering](assets/cf-managing-console-filter.png)
 
 ### Fast Filtering {#fast-filtering}
@@ -475,13 +469,9 @@ Once selected, this will be shown as a filter predicate, and the list will be fi
 
 The search box supports full-text search. Entering your search terms in the search box:
 
-<!-- CQDOC-21349: screenshot -->
-
 ![Content Fragments console - Searching](assets/cf-managing-console-search-specification.png)
 
 Will provide the selected results:
-
-<!-- CQDOC-21349: screenshot -->
 
 ![Content Fragments console - Search Results](assets/cf-managing-console-search-results.png)
 
