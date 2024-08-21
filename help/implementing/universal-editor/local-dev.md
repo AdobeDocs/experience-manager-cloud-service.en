@@ -77,7 +77,7 @@ These are the minimum values required for local development in our example. The 
 |`UES_SPLUNK_HEC_URL`|Yes|None|HEC URL to Splunk endpoint|
 |`UES_SPLUNK_TOKEN`|Yes|None|Splunk token|
 |`UES_SPLUNK_INDEX`|Yes|None|Index to write logs to|
-|`UES_SPLUNK_SOURCE`|Yes|`universal-editor-service`|Name of the source in the splunk logs
+|`UES_SPLUNK_SOURCE`|Yes|`universal-editor-service`|Name of the source in the splunk logs|
 
 >[!NOTE]
 >
