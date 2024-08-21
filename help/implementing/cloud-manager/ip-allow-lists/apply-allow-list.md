@@ -11,6 +11,8 @@ role: Admin, Architect, Developer
 
 When applying IP Allow Lists, all IP ranges included in the list's definition are associated with an author or publish service within an environment. Unapplying a list is the inverse to this process.
 
+{{allowlist-frontend-pipeline}}
+
 ## Apply IP Allow Lists {#applying}
 
 A user in the **Business Owner** or **Deployment Manager** role can follow these steps to apply an IP Allow List.
@@ -20,8 +22,8 @@ A user in the **Business Owner** or **Deployment Manager** role can follow these
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 1. Select the appropriate organization.
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
-1. Navigate to the **Environments** screen from the **Overview** page.
-1. Navigate to the specific environment details page on the **Environments** screen.
+1. From the **Overview** page, navigate to the **Environments** screen.
+1. On the **Environments** screen, navigate to the specific environment details page.
 1. Navigate to the **IP Allow List** table.
 1. Use the input fields at the top of the table so you can select the IP Allow List and the author or publish service to which you to apply it. 
 The IP Allow List must already exist in Cloud Manager to apply it. See [Add IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md).
