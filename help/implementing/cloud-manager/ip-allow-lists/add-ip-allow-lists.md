@@ -63,7 +63,7 @@ To avoid disruption of running the front-end pipeline, ensure that this Cloud Ma
 
 1. Click **Save**.
 
-Now, apply the Cloud Manager IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) to your program environments. 
+Now, [apply the Cloud Manager IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) to your program environments. 
 
 
 
