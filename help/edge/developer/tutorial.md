@@ -4,14 +4,7 @@ title: Getting Started - Developer Tutorial
 feature: Edge Delivery Services
 exl-id: f84a9584-0962-4d70-aedc-f7a130fd489b
 role: Admin, Architect, Developer
-hide: yes
-hidefromtoc: yes
-index: no
 ---
 # Getting Started - Developer Tutorial
 
-<!--
-
 {{$include ce606942-ca03-4bcc-82a0-8b14333c9434}}
-
->
