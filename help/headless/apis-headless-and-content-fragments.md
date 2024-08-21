@@ -9,20 +9,20 @@ role: Admin, Developer
 
 In Adobe Experience Manager (AEM) as a Cloud Service, there are several APIs available for use with Headless Content Delivery and Content Fragments. See the individual pages for further details of the specific APIs.
 
-* [AEM Edge Delivery Services REST OpenAPI](/help/headless/aem-edge-rest-openapi.md)
-  * This API creates JSON responses specifically for the structured content provided by Content Fragments in AEM. 
+* [AEM Edge Delivery Services REST OpenAPI for Content Fragment delivery](/help/headless/aem-edge-rest-openapi.md)
+  * This API creates JSON responses specifically for delivering the structured content provided by Content Fragments in AEM. 
   * It requires a path to a content fragment as an endpoint. 
   * This API is REST based.
-* [AEM GraphQL API for use with Content Fragments](/help/headless/graphql-api/content-fragments.md)
+* [AEM GraphQL API for Content Fragment delivery](/help/headless/graphql-api/content-fragments.md)
   * This API is schema-based. The schemas are represented by Content Fragment Models, which define the content structure.
   * This API is GraphQL based.
 * [Content Fragments and Content Fragment Models OpenAPIs](/help/headless/content-fragment-openapis.md)
   * These APIs are used for managing the Content Fragments and Content Fragment Models (CRUD), rather than for content delivery.
   * This API is AEM specific. 
 * [Content Fragments Support in the AEM Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)
-  * The original API for the JSON output of structured Content Fragments in AEM. 
-  * While robust and proven, this API does not deliver *fully hydrated* JSON output. This means that references are only output as paths, requiring secondary API requests for retrieving further content.
-  * The Assets HTTP API can also be used for CRUD operations.
+  * The original API for the JSON output for delivering the content of structured Content Fragments in AEM. 
+    * While robust and proven, this API does not deliver *fully hydrated* JSON output. This means that references are only output as paths, requiring secondary API requests for retrieving further content.
+  * The Assets HTTP API can also be used for managing the Content Fragments and Content Fragment Models (CRUD).
   * This API is REST based.
   * The API will be deprecated in the future as it is being succeeded by the Edge Delivery Services JSON REST API. The timescale is not yet known.
 
