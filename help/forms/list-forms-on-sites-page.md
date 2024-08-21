@@ -17,6 +17,7 @@ The **Search & Lister** component also allows anonymous or non-logged-in users t
 
 Before exploring the various capabilities of a Forms portal component, ensure that core components are enabled for your environment. For detailed instructions on how to enable core components for your environment, [click here](/help/forms/enable-adaptive-forms-core-components.md).
 
+<!--
 ## Enable Forms Portal components for your existing environment
 
 To enable out-of-the-box Forms Portal components on existing AEM Forms as a Cloud Service, perform the following steps:
@@ -41,9 +42,9 @@ To enable out-of-the-box Forms Portal components on existing AEM Forms as a Clou
 
     For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing)
 
-1. [Deploy the archetype to your [!DNL AEM Forms] as a Cloud Service environment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#embeddeds).
+1. [Deploy the archetype to your [!DNL AEM Forms] as a Cloud Service environment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#embeddeds). -->
 
-Once the archetype is deployed successfully, the Forms portal components become available in your authoring environment.
+After deploying the latest core components to your environment, the Forms portal components becomes accessible in your authoring environment.
 
 ## Add Search & Lister component to your sites page
 
@@ -55,9 +56,9 @@ To add **Search & Lister** portal component to your sites page, perform the foll
 
     Alternatively, you can also [create new Adaptive Form](/help/forms/creating-adaptive-form-core-components.md).
 
-2. Locate the section within the form editor that allows you to add the Forms portal component. 
+1. Locate the section within the form editor that allows you to add the Forms portal component. 
 
-3. Click the **Add** icon. The icon is a plus sign (+) that signifies the option to add new components.
+1. Click the **Add** icon. The icon is a plus sign (+) that signifies the option to add new components.
     
     Clicking the **Add** icon displays an **Insert New Component** dialog box that displays various components for insertion.
 
@@ -65,11 +66,11 @@ To add **Search & Lister** portal component to your sites page, perform the foll
     >
     > Alternatively, you can also drag and drop the component.
 
-4. Browse the available components in the dialog box and select the desrired layout from the list. For example, select the **searchlister** component from the list to add the **Search & Lister** Forms portal component. 
+1. Browse the available components in the dialog box and select the desrired layout from the list. For example, select the **searchlister** component from the list to add the **Search & Lister** Forms portal component. 
 
 ## Understand properties of the searchlister component
 
-You can easily customize **searchlister** component properties using the Configure Dialog for a seamless user experience. 
+You can easily customize **Search and Lister** component properties using the Configure Dialog for a seamless user experience. 
 To configure, select the component and then select the ![Configure icon](assets/configure_icon.png). The **[!UICONTROL Search and Lister]** dialog opens.
 
 ### Display tab
