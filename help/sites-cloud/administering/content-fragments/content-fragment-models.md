@@ -13,31 +13,11 @@ Content Fragment Models in Adobe Experience Manager (AEM) as a Cloud Service def
 To use Content Fragment Models you:
 
 1. [Enable Content Fragment Model functionality for your instance](/help/sites-cloud/administering/content-fragments/setup.md)
-1. [Create](#creating-a-content-fragment-model), and [configure](#defining-your-content-fragment-model), your Content Fragment Models
-1. [Enable your Content Fragment Models](#enabling-disabling-a-content-fragment-model) for use when creating Content Fragments 
+1. [Create](help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model) your Content Fragment Model. 
+   * At this point you can also **Enable** the model (for use when creating Content Fragments).
+1. [Define](#defining-your-content-fragment-model) the structure of your model.
+1. [Enable your Content Fragment Model](help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#enabling-disabling-a-content-fragment-model), if not already done.
 1. [Allow your Content Fragment Models on the required Assets folders](#allowing-content-fragment-models-assets-folder) by configuring **Policies**.
-
-## Creating a Content Fragment Model {#creating-a-content-fragment-model}
-
-1. Navigate to **Tools**, **General**, then open **Content Fragment Models**.
-1. Navigate to the folder appropriate to your [configuration, or subconfiguration](/help/sites-cloud/administering/content-fragments/setup.md).
-1. Use **Create** to open the wizard.
-
-   >[!CAUTION]
-   >
-   >If the [use of Content Fragment models have not been enabled](/help/sites-cloud/administering/content-fragments/setup.md), the **Create** option will not be available.
-
-1. Specify the **Model Title**. 
-   You can also define various properties; for example, add **Tags**, a **Description**, select **Enable model** to [enable the model](#enabling-disabling-a-content-fragment-model) if require and define the
-    **Default Preview URL Pattern**.
-
-    >[!NOTE]
-    >
-    >See [Content Fragment Model - Properties](#content-fragment-model-properties) for full details.
-
-   ![Title and description](assets/cf-cfmodels-create.png)
-
-1. Use **Create** to save the empty model. A message indicates the success of the action, you can select **Open** to immediately edit the model, or **Done** to return to the console.
 
 >[!CAUTION]
 >
@@ -105,7 +85,7 @@ The Content Fragment Model effectively defines the structure of the resulting Co
    >
    >When a field is defined as **Required**, the **Label** indicated in the left pane is marked with an asterix (**&#42;**).
 
-  ![Properties](assets/cf-cfmodels-empty-model.png)
+   ![Properties](assets/cf-cfmodels-empty-model.png)
 
 1. **To Add a Field**
 
@@ -381,47 +361,6 @@ In addition to standard properties you can define:
 >A recurrence protection mechanism is in place. It prohibits the user from selecting the current Content Fragment in the Fragment Reference, and may lead to an empty Fragment Reference picker dialog.
 >
 >There is also recurrence protection for Fragment References in GraphQL. If you create a deep query across two Content Fragments that reference each other, it returns null.
-
-## Enabling or Disabling a Content Fragment Model {#enabling-disabling-a-content-fragment-model}
-
-You can either **Enable** or **Disable** your Content Fragment Models, for full control over their use.
-
-### Enabling a Content Fragment Model {#enabling-a-content-fragment-model}
-
-Once a model has been created it must be enabled so that it:
-
-* Is available for selection when creating a Content Fragment.
-* Can be referenced from within a Content Fragment Model.
-* Is available to GraphQL; so the schema is generated.
-
-To enable a Model that is flagged as either:
-
-* **Draft** : new (never enabled).
-* **Disabled** : has been specifically disabled.
-
-You use the **Enable** option from either:
-
-* The top toolbar, when the required Model is selected.
-* The corresponding Quick Action (mouse-over the required Model).
-
-![Enable a Draft or Disabled Model](assets/cf-cfmodels-status-enable.png)
-
-### Disabling a Content Fragment Model {#disabling-a-content-fragment-model}
-
-A model can also be disabled so that:
-
-* The model is no longer available as a basis for creating *new* Content Fragments.
-* However:
-  * The GraphQL schema keeps being generated and is still queryable (to avoid impacting JSON API).
-  * Any Content Fragments based of the model can still be queried and returned from the GraphQL endpoint.
-* The model cannot be referenced anymore, but existing references are kept untouched, and can still be queried and returned from the GraphQL endpoint.
-
-To disable a Model that is flagged as **Enabled**, you use the **Disable** option from either:
-
-* The top toolbar, when the required Model is selected.
-* The corresponding Quick Action (mouse-over the required Model).
-
-![Disable an Enabled Model](assets/cf-cfmodels-status-disable.png)
 
 ## Allowing Content Fragment Models on your Assets Folder {#allowing-content-fragment-models-assets-folder}
 
