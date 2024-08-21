@@ -73,7 +73,7 @@ The following table demonstrates the difference between the features available i
   </tr>
   <tr>
     <td>Set the dropdown list options </td>
-    <td>The dropdown list options are set using the Rule Editor’s <b>Set Options of</b> property.</td>
+    <td>The dropdown list options are set using the Rule Editor's <b>Set Options of</b> property.</td>
     <td>The dropdown options are set using the custom functions. 
    </td>
    </tr>
@@ -85,7 +85,7 @@ The following table demonstrates the difference between the features available i
    </td>
    </tr>
       <tr>
-    <td>Validate/Reset field/panel/form rule in ‘Then’ </td>
+    <td>Validate/Reset field/panel/form rule in 'Then' </td>
     <td>Validate and Reset functions only supports form object in Rule Editor. 
    </td>
     <td>Validate and Reset functions supports form/panel/field object in Rule Editor. 
@@ -120,3 +120,10 @@ The following table demonstrates the difference between the features available i
 * [Introduction to Custom Functions for Adaptive Forms based on Core Components](/help/forms/create-and-use-custom-functions.md)
 * [Create a Custom Function for an Adaptive Form based on Core Components](/help/forms/custom-function-core-component-create-function.md)
 * [Examples of developing and using custom function](/help/forms/custom-function-core-components-use-cases.md)
+
+
+## IP Allow Lists {#ip-allow-list}
+
+>[!IMPORTANT]
+>
+>Add the important note here.
