@@ -34,15 +34,10 @@ The front-end pipeline requires that the following Cloud Manager IP Allow List b
 
 >52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
 
-To avoid disruption of running the front-end pipleline, ensure that this Cloud Manager IP Allow List is added and then applied to the author environment *before* you enable the pipleline.
+To avoid disruption of running the front-end pipeline, ensure that this Cloud Manager IP Allow List is added and then applied to the author environment *before* you enable the pipeline.
 
 See [Add the Cloud Manager IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md#add-cm-allowlist).
 See [Enable front-end pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
-
-
-
-
-
 
 
 ## Limitations {#limitations}
