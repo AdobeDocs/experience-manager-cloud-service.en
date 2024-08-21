@@ -120,3 +120,10 @@ The following table demonstrates the difference between the features available i
 * [Introduction to Custom Functions for Adaptive Forms based on Core Components](/help/forms/create-and-use-custom-functions.md)
 * [Create a Custom Function for an Adaptive Form based on Core Components](/help/forms/custom-function-core-component-create-function.md)
 * [Examples of developing and using custom function](/help/forms/custom-function-core-components-use-cases.md)
+
+
+## Forms Portal{#forms-portal-see-also}
+
+* [Introduction to Forms Portal components](/help/forms/configure-forms-portal.md)
+* [List your forms on sites page](/help/forms/list-forms-on-sites-page.md)
+* [Save your forms as drafts](/help/forms/save-core-component-based-form-as-draft.md)

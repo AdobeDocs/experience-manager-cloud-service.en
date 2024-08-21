@@ -7,15 +7,15 @@ role: User, Developer
 
 # List Adaptive Forms on a AEM Sites page
 
-In Adobe Experience Manager, the **Search & Lister** component of the Forms Portal enables you to display and manage forms on sites page. It allows to configure and present a comprehensive list of forms based on specific criteria to match user needs or organizational requirements. The listed forms can be sorted in ascending or descending order using the Sort By drop-down option available on the right-upper corner of the screen.
+In Adobe Experience Manager, the **Search & Lister** component of the Forms Portal enables you to display and manage forms on the Sites page. It allows you to configure and display a comprehensive list of forms based on specific criteria to meet user needs or organizational requirements. The listed forms can be sorted in ascending or descending order using the **Sort By** drop-down option available in the upper-right corner of the screen.
 
 ![Search and Lister icon](assets/search-and-lister-component.png)
 
-The **Search & Lister** component also allows anonymous or non-logged-in users to visit the sites page and view and browse the list of available forms. These users can search for forms based on the provided criteria and access details about each form. This feature ensures that forms are readily accessible to all users, enhancing engagement and making it easier for visitors to find and interact with the forms they need, regardless of their login status.
+The **Search & Lister** component allows anonymous or non-logged-in users to visit the Sites page and view and browse the list of available forms. The users can search for forms based on the provided criteria and access details about each form. This feature ensures that forms are readily accessible to all users, enhancing engagement and making it easier for visitors to find and interact with the forms they need, regardless of their login status.
 
 ## Pre-requisite
 
-Before exploring the various capabilities of a Forms portal component, ensure that core components are enabled for your environment. For detailed instructions on how to enable core components for your environment, [click here](/help/forms/enable-adaptive-forms-core-components.md).
+Before exploring the various capabilities of a Forms Portal component, ensure that Core Components are enabled for your environment. For detailed instructions on how to enable Core Components for your environment, [click here](/help/forms/enable-adaptive-forms-core-components.md).
 
 <!--
 ## Enable Forms Portal components for your existing environment
@@ -44,11 +44,11 @@ To enable out-of-the-box Forms Portal components on existing AEM Forms as a Clou
 
 1. [Deploy the archetype to your [!DNL AEM Forms] as a Cloud Service environment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#embeddeds). -->
 
-After deploying the latest core components to your environment, the Forms portal components becomes accessible in your authoring environment.
+After deploying the latest Core Components to your environment, the Forms Portal components become accessible in your authoring environment.
 
-## Add Search & Lister component to your sites page
+## Add the Search & Lister component to your Sites page
 
-To add **Search & Lister** portal component to your sites page, perform the following steps:
+To add the **Search & Lister** portal component to your Sites page, perform the following steps:
 
 1. Log in to your [!DNL Experience Manager Forms] instance. 
 1. In the upper-left corner, select **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
@@ -56,7 +56,7 @@ To add **Search & Lister** portal component to your sites page, perform the foll
 
     Alternatively, you can also [create new Adaptive Form](/help/forms/creating-adaptive-form-core-components.md).
 
-1. Locate the section within the form editor that allows you to add the Forms portal component. 
+1. Locate the section within the form editor that allows you to add the Forms Portal component. 
 
 1. Click the **Add** icon. The icon is a plus sign (+) that signifies the option to add new components.
     
@@ -66,19 +66,18 @@ To add **Search & Lister** portal component to your sites page, perform the foll
     >
     > Alternatively, you can also drag and drop the component.
 
-1. Browse the available components in the dialog box and select the desrired layout from the list. For example, select the **searchlister** component from the list to add the **Search & Lister** Forms portal component. 
+1. Browse the available components in the dialog box and select the desired component from the list. For example, select the **searchlister** component from the list to add the **Search & Lister** Forms Portal component. 
 
-## Understand properties of the searchlister component
+## Understand the properties of the searchlister component
 
-You can easily customize **Search and Lister** component properties using the Configure Dialog for a seamless user experience. 
-To configure, select the component and then select the ![Configure icon](assets/configure_icon.png). The **[!UICONTROL Search and Lister]** dialog opens.
+You can easily customize **Search and Lister** component properties using the Configure Dialog for a seamless user experience. To configure, select the component and then select the ![Configure icon](assets/configure_icon.png). The **[!UICONTROL Search and Lister]** dialog opens.
 
 ### Display tab
 
 ![Display Tab](/help/forms/assets/search-and-lister-display-tab.png)
 
-1. In **[!UICONTROL Title]**, specify the title for the Search & Lister component. An indicative title enables the users perform quick search across the list of forms.
-1. From the **[!UICONTROL Layout]** list, select the layout to represent the forms in card or list format.
+1. In **[!UICONTROL Title]**, specify the title for the Search & Lister component. An indicative title enables the users to perform a quick search across the list of forms.
+1. From the **[!UICONTROL Layout]** list, select the layout to represent the forms in the card or list format.
 1. Select **[!UICONTROL Hide Search]** and **[!UICONTROL Hide Sorting]** to hide the search and sort by features.
 1. In **[!UICONTROL Tooltip]**, provide the tooltip that appears when you hover over the component. 
 
@@ -93,7 +92,7 @@ To configure, select the component and then select the ![Configure icon](assets/
 
 ![Display Tab](/help/forms/assets/search-and-lister-result-tab.png)
 
-* In the **[!UICONTROL Results]** tab, configure the maximum number of forms to display per page. The default is eight forms per page.
+In the **[!UICONTROL Results]** tab, configure the maximum number of forms to display per page. The default is eight forms per page.
 
 <!--
 ## Configure Azure Storage for Adaptive Forms {#configure-azure-storage-adaptive-forms}
@@ -204,7 +203,11 @@ You can configure the auto-save feature for an adaptive form as follows:
 
 ## Next Steps
 
-In the next article, let us learn how to save Adaptive Forms as drafts and list them on a AEM Sites page using the **Drafts & Submissions** Forms portal component.
+In the next article, let us learn [how to save Adaptive Forms as drafts and list them on a AEM Sites page using the Drafts & Submissions Forms Portal component](/help/forms/save-core-component-based-form-as-draft.md).
+
+## Related articles
+
+{{forms-portal-see-also}}
 
 ## See Also {#see-also}
 
