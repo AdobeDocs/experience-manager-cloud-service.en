@@ -16,7 +16,7 @@ These are the release notes for the 13 August 2024 release of the Universal Edit
 
 ## What’s New {#what-is-new}
 
-* **Custom Data Types**: Tailor the editor to your unique data needs with the ability to create custom fields within the properties panel.
+* **Custom Data Types**: Tailor the editor to your unique data needs with the ability to [create custom fields within the properties panel.](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/item-types-renderers/)
   * Whether you’re developing a custom product picker for commerce use-cases or populating a drop-down list with values from your backends, this feature gives you the control you need over the data that authors use to compose content.
 * **Cross-Container Drag &amp; Drop**: Enjoy greater flexibility in layout composition with the ability to [move components across different containers via drag and drop](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) within the [Content Tree panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
 * **Optimized GitHub Integration**: Caching for GitHub responses have been introduced, significantly speeding up the retrieval of tags and the `universal-editor-cors-library`, resulting in a faster and smoother user experience.
