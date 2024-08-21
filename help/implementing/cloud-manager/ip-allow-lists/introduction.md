@@ -18,13 +18,32 @@ role: Admin, Architect, Developer
 
 AEM as a cloud service is by default accessible by way of the Internet. While security is handled through user authentication and authorization, IP allow-listing is a way to limit access only to trusted IP addresses.
 
-Cloud Manager's IP Allow Lists can be used to limit and control access only to such trusted IP addresses. Cloud Manager users with appropriate permissions can [create IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) of trusted IP addresses from which their site's users can access their AEM domains.
+Cloud Manager's IP Allow Lists can be used to limit and control access only to such trusted IP addresses. Cloud Manager users with appropriate permissions can [create and add IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) of trusted IP addresses from which their site's users can access their AEM domains.
 
 After adding, [IP Allow Lists can be applied or unapplied](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) multiple times as a unit or entity to an author service, or a publisher service, or both, in an environment.
 
 >[!NOTE]
 >
 >If no IP Allow List is applied, by default all IP addresses are allowed. When an IP Allow List is applied, no IP addresses are allowed except for addresses on the IP Allow List.
+
+## Use of the Cloud Manager IP Allow List with the front-end pipeline {#allowlists-frontend-pipeline}
+
+The front-end pipeline requires that the following Cloud Manager IP Allow List be added beforehand.
+
+**Cloud Manager IP Allow List**
+
+>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
+
+To avoid disruption of running the front-end pipleline, ensure that this Cloud Manager IP Allow List is added and then applied to the author environment *before* you enable the pipleline.
+
+See [Add the Cloud Manager IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md#add-cm-allowlist).
+See [Enable front-end pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
+
+
+
+
+
+
 
 ## Limitations {#limitations}
 
