@@ -129,7 +129,7 @@ To generate new assets using [!DNL Adobe Firefly]:
 
 1. Navigate to the [!DNL AEM Assets] workspace.
 
-1. Type the asset name in the search bar and click **[!UICONTROL Generate with Firefly]**. The [!DNL Adobe Firefly] screen appears. For example, you can search an asset using the keyword `Bugatti Type 57`. When searching for the asset, no results are found because the asset is not present in any of the asset folders.
+1. Type the asset name in the search bar. For example, you can search an asset using the keyword `Bugatti Type 57`. When searching for the asset, no results are found because the asset is not present in any of the asset folders. To generate assets using AI, click **[!UICONTROL Generate with Firefly]**. The [!DNL Adobe Firefly] screen appears. 
 
    ![Firefly integration](assets/firefly-integration.png)
 
