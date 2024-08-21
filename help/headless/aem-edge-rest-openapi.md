@@ -1,6 +1,6 @@
 ---
-title: AEM Edge Delivery Services REST OpenAPI
-description: Learn about the AEM Edge Delivery Services REST OpenAPI
+title: AEM Edge Delivery Services REST OpenAPI for Content Fragment Delivery
+description: Learn about the AEM Edge Delivery Services REST OpenAPI for Content Fragment Delivery
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 ---
