@@ -47,7 +47,7 @@ To access the Content Hub portal, administrators first need to enable Content Hu
 
 1. Click **[!UICONTROL Update]**.
 
-Content Hub is now enabled for Experience Manager Assets as a Cloud Service. 
+Content Hub is now enabled for Experience Manager Assets as a Cloud Service.
 
 >[!NOTE]
 >
@@ -62,11 +62,19 @@ After [enabling Content Hub for Assets as a Cloud Service using Cloud Manager](#
 
 ![New instance for Content Hub](assets/new-instance-content-hub.png)
 
+>[!NOTE]
+>
+>If you have provisioned Content Hub before August 14, 2024, the new instance is created with `contenthub` as the suffix.
+
 Note that there is no `author` or `publish` in the instance name for Content Hub.
 
 Click the instance name to view the Content Hub product profile.
 
 ![Content Hub product profile](assets/content-hub-product-profile.png)
+
+>[!NOTE]
+>
+>If you have provisioned Content Hub before August 14, 2024, the Content Hub product profile has `contenthub` mentioned after `Limited Users` instead of `delivery`.
 
 ## Step 2: Onboard Content Hub administrator {#onboard-content-hub-administrator}
 
