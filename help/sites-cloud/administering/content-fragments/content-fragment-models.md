@@ -1,12 +1,12 @@
 ---
-title: Content Fragment Models
+title: Defining Content Fragment Models
 description: Learn how Content Fragment Models serve as a foundation for your Content Fragments in AEM, allowing you to create structured content for use in headless delivery, or page authoring.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
 ---
-# Content Fragment Models {#content-fragment-models}
+# Defining Content Fragment Models {#defining-content-fragment-models}
 
 Content Fragment Models in Adobe Experience Manager (AEM) as a Cloud Service define the structure for the content of your [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md). These fragments can then be used for page authoring, or as a foundation for your headless content.
 
