@@ -7,37 +7,24 @@ role: Admin, Developer
 
 # AEM Edge Delivery Services REST OpenAPI {#aem-edge-delivery-services-rest-openapi}
 
-In Adobe Experience Manager (AEM) as a Cloud Service, the AEM Edge Delivery Services REST OpenAPI:
+In Adobe Experience Manager (AEM) as a Cloud Service, the AEM Edge Delivery Services REST OpenAPI for Content Fragment delivery:
 
-* is a HTTP REST API on [AEM Edge Delivery Services](/help/edge/overview.md), designed to deliver structured content in JSON format
+* is a HTTP REST API on [AEM Edge Delivery Services](/help/edge/overview.md), designed to deliver structured content from Content Fragments in JSON format
 * uses the infrastructure of Edge Delivery Services, including CDN integration that allows active invalidation 
 * focuses on content delivery (performance, scalability, CDN integration, optimized JSON control and output) 
 * includes the ability to hydrate JSON for referenced fragments and assets
 
 This API:
 
-<!-- Question -->
-<!-- is it equivalent to the CF and CFM OpenAPI? -->
-<!-- Thought that was for internal management of CFs/CFMs -->
-<!-- now with focus on content delivery (performance, scalability, CDN integration, optimized JSON control and output)  -->
-
 * is the successor to [Content Fragments Support in the AEM Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)
 
-<!--
-* is equivalent to the [Content Fragments and Content Fragment Models OpenAPIs](/help/headless/content-fragment-openapis.md)
--->
+* supplements the [Content Fragments and Content Fragment Models OpenAPIs](/help/headless/content-fragment-openapis.md), that allow you to manage the Content Fragments and Content Fragment Models (CRUD)
 
 * is a HTTP REST alternative to the [AEM GraphQL API for use with Content Fragments](/help/headless/graphql-api/content-fragments.md) 
 
 ## Authentication {#authentication}
 
-<!-- Question -->
-<!-- which API is meant by the CF Management API? 
-<!-- The Content Fragments and Content Fragment Models OpenAPIs?-->
-<!-- Though the existing documentation is for the GraphQL API; see: -->
-<!-- https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/security/authentication -->
-
-Requests made on the author tier must be authenticated, similar to any other request to the Content Fragment Management API. This means that an access token must be provided as part of the Authorization header of the HTTP request. 
+Requests made on the author tier must be authenticated, similar to any other request to the [Content Fragment Management API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/). This means that an access token must be provided as part of the Authorization header of the HTTP request. 
 
 The concept is the same as for [AEM GraphQL authenticated queries](/help/headless/security/authentication.md).
 
