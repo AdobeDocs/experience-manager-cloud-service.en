@@ -44,7 +44,7 @@ For detailed further information see:
 >
 >This console is *only* available in the online Adobe Experience Manager (AEM) as a Cloud Service.
 
-## Basic Structure and Handling of Content Fragment Models in the Content Fragments Console {#basic-structure-handling-content-fragment-models-console}
+### Basic Structure and Handling of Content Fragment Models in the Console {#basic-structure-handling-content-fragment-models-console}
 
 ![Content Fragments console - Managing Content Fragment Models](assets/cf-managing-content-fragment-models.png)
 
@@ -79,7 +79,7 @@ Here you can see that there are three main areas:
     * Select one, or more, models for further [action](#actions-selected-content-fragment-models)
   * Open the [Filter panel](#filter-fragment-models)
 
-## The Information provided about your Content Fragment Models {#information-content-fragment-models}
+### The Information provided about your Content Fragment Models {#information-content-fragment-models}
 
 The main/right panel (table view) of the console provides a range of information about your Content Fragments. Some items also provide direct links to further actions and/or information:
 
@@ -108,18 +108,42 @@ The main/right panel (table view) of the console provides a range of information
   * Information only.
   * Can be used for [Fast Filtering](#fast-filtering).
 
-When you select a specific model, additional information is shown, and some items can be updated is the model is not **Locked**:
+#### Additional information {#additional-information}
+
+When you select a specific model, additional information is shown. If the model is not **Locked**, then some items can be updated. You can also use the information icon (next to the model **Title**) to open and close this information panel.
 
 ![Content Fragments console - Information for a selected Content Fragment Model](assets/cf-managing-content-fragment-models-selected.png)
 
-* **Configuration**
-* **Status**
+* **[Configuration](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)**
+* **[Status](#enabling-a-content-fragment-model)**
 * **Title**
 * **Tags**
 * **Description**
 * **Preview URL pattern**
 
-## Actions for a Content Fragment Model in the Content Fragments Console {#actions-selected-content-fragment-models}
+### Actions {#actions}
+
+Once you have selected a configuration (in the left panel) there is a range of actions that you can use, either directly, or after selecting a specific model:
+
+* Various actions are directly [available from the console](#actions-unselected)
+* You can [select one, or more, Content Fragment Models to show appropriate actions](#actions-selected-content-fragment)
+
+#### Actions (unselected) {#actions-unselected}
+
+Certain actions are available from the console - after selecting a configuration, but without selecting a specific Content Fragment Model:
+
+* **[Create](#creating-a-content-fragment-model)** a new (empty) model
+
+#### Actions for a Content Fragment Model in the Content Fragments Console {#actions-selected-content-fragment-models}
+
+Selecting a specific model opens a toolbar focused on the actions available for that model. You can also select multiple models - the actions available will be adjusted accordingly.
+
+* **[Edit](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)** to define your Content Fragment Model
+* **Publish**
+* **Lock**/**Unlock**
+* **[Enable](#enabling-a-content-fragment-model)**/**[Disable](#disabling-a-content-fragment-model)** to control whether it is available for use
+
+Selecting a single model also shows [additional information](#additional-information) in the right panel. 
 
 ## Select columns shown in the console {#select-columns-console}
 
@@ -133,6 +157,86 @@ This will present a list of columns that you can hide or show:
 
 ## Filter Content Fragment Models {#filter-fragment-models}
 
+The Filter panel offers:
+
+* a selection of predicates; 
+  * including status fields, tags, users, among others
+  * one, or more, predicates can be selected and combined to create the filter
+
+<!--
+* the opportunity to **Save** your configuration
+* the option to retrieve a saved search filter for reuse
+-->
+
+ Once selected, the **Filtering by** options are shown (at the top of the main panel). They can be deselected from there. For example:
+
 ![Content Fragments console - Filtering Content Fragment Models](assets/cf-managing-content-fragment-models-filter.png)
 
 ### Fast Filtering {#fast-filtering}
+
+You can also select a predicate by clicking on a specific column value in the list. You can select one, or more, values to combine predicates. 
+
+For example, select **Enabled** in the **Status** column. Once selected, this will be shown as a filter predicate, and the list will be filtered accordingly.
+
+>[!NOTE]
+>
+>Fast filtering is only supported for the **Status**, **Modified By**, **Tags**, and **Published By** columns.
+
+>[!NOTE]
+>
+>Fast Filtering operates in the same way as for [Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md#fast-filtering) in the console.
+
+## Creating a Content Fragment Model {#creating-a-content-fragment-model}
+
+1. Navigate to the folder appropriate to your [configuration, or subconfiguration](/help/sites-cloud/administering/content-fragments/setup.md).
+1. Use **Create** to open the dialog.
+
+   >[!CAUTION]
+   >
+   >If the [use of Content Fragment models have not been enabled](/help/sites-cloud/administering/content-fragments/setup.md), the **Create** option will not be available.
+
+1. Select the **Configuration** and specify the **Name**.
+
+   You can also define various properties:
+
+   * **Title**
+     If you enter the **Title** first, the **Name** will be generated from that.
+   * a **Description** 
+   * **Enable model** to [enable the model](#enabling-disabling-a-content-fragment-model) 
+
+    >[!NOTE]
+    >
+    >See [Content Fragment Model - Properties](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties) for full details.
+
+   ![Title and description](assets/cf-managing-content-fragment-models-create.png)
+
+1. Use **Create** to save the empty model, or **Create and open**.
+
+### Enabling a Content Fragment Model {#enabling-a-content-fragment-model}
+
+Once a model has been created it must be enabled so that it:
+
+* Is available for selection when creating a Content Fragment.
+* Can be referenced from within a Content Fragment Model.
+* Is available to GraphQL; so the schema is generated.
+
+You can **Enable** a model:
+
+* When creating a new model
+  * An option is presented in the dialog.
+* When a model has been specifically **Disabled**
+  * When the required Model is selected, the **Enable** action is available in the top toolbar.
+
+### Disabling a Content Fragment Model {#disabling-a-content-fragment-model}
+
+A model can also be disabled so that:
+
+* The model is no longer available as a basis for creating *new* Content Fragments.
+* However:
+  * The GraphQL schema keeps being generated and is still queryable (to avoid impacting JSON API).
+  * Any Content Fragments based of the model can still be queried and returned from the GraphQL endpoint.
+* The model cannot be referenced anymore, but existing references are kept untouched, and can still be queried and returned from the GraphQL endpoint.
+
+To disable a Model that is flagged as **Enabled**, you use the **Disable** option from either:
+
+* The top toolbar, when the required Model is selected.

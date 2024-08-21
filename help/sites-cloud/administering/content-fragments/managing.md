@@ -105,54 +105,6 @@ Here you can see that there are three main areas:
   * Use the [Search](#searching-fragments) box
   * Open the [Filter panel](#filtering-fragments)
 
-### Actions {#actions}
-
-Within the console there is a range of actions that you can use, either directly, or after selecting a specific fragment:
-
-* Various actions are directly [available from the console](#actions-unselected)
-* You can [select one, or more, Content Fragments to show appropriate actions](#actions-selected-content-fragment)
-
-#### Actions (unselected) {#actions-unselected}
-
-Certain actions are available from the console - without selecting a specific Content Fragment:
-
-* **[Create](#creating-a-content-fragment)** a new Content Fragment
-* [Filter](#filtering-fragments) the Content Fragments according to a selection of predicates, and save the filter for future use
-* [Search](#searching-fragments) the Content Fragments 
-* [Customize the table view to show selected columns of information](#select-columns-console)
-* Use **Open in Assets** to directly open the current location in the **Assets** console
-
-  >[!NOTE]
-  >
-  >The **Assets** console is used to access assets, such as images, videos, and so on.  This console can be accessed:
-  >
-  >* using the **Open in Assets** link (in the Content Fragments console)
-  >* directly from the global **Navigation** pane
-
-#### Actions for a (selected) Content Fragment {#actions-selected-content-fragment}
-
-Selecting a specific fragment opens a toolbar focused on the actions available for that fragment. You can also select multiple fragments - the selection of actions will be adjusted accordingly.
-
-![Content Fragments console - toolbar for a selected fragment](assets/cf-managing-console-fragment-toolbar.png)
-
-* **[Open in new Editor](#editing-the-content-of-your-fragment)**
-* **[Open](/help/assets/content-fragments/content-fragments-variations.md)** (in original editor)
-* **[Publish](#publishing-and-previewing-a-fragment)** (and **[Unpublish](#unpublishing-a-fragment)**)
-* **[Manage Tags](#manage-tags)**
-* **[Copy](/help/assets/manage-digital-assets.md)**
-* **[Move](/help/assets/manage-digital-assets.md)**
-* **[Rename](/help/assets/manage-digital-assets.md)**
-* **[Delete](#deleting-a-fragment)**
-* **[Replace](#find-and-replace)**
-
->[!NOTE]
->
->Use **Open** to open the selected fragment in the *original* editor.
-
->[!NOTE]
->
->Actions such as Publish, Unpublish, Delete, Move, Rename, and Copy each trigger an asynchronous job. The progress of that job can be monitored via the AEM Async Jobs UI.
-
 ### The Information provided about your Content Fragments {#information-content-fragments}
 
 The main/right panel (table view) of the console provides a range of information about your Content Fragments. Some items also provide direct links to further actions and/or information:
@@ -202,6 +154,53 @@ The main/right panel (table view) of the console provides a range of information
 
     ![Content Fragments console - Language dialog](assets/cf-managing-console-languages-dialog.png)
 
+### Actions {#actions}
+
+Within the console there is a range of actions that you can use, either directly, or after selecting a specific fragment:
+
+* Various actions are directly [available from the console](#actions-unselected)
+* You can [select one, or more, Content Fragments to show appropriate actions](#actions-selected-content-fragment)
+
+#### Actions (unselected) {#actions-unselected}
+
+Certain actions are available from the console - without selecting a specific Content Fragment:
+
+* **[Create](#creating-a-content-fragment)** a new Content Fragment
+* [Filter](#filtering-fragments) the Content Fragments according to a selection of predicates, and save the filter for future use
+* [Search](#searching-fragments) the Content Fragments 
+* [Customize the table view to show selected columns of information](#select-columns-console)
+* Use **Open in Assets** to directly open the current location in the **Assets** console
+
+  >[!NOTE]
+  >
+  >The **Assets** console is used to access assets, such as images, videos, and so on.  This console can be accessed:
+  >
+  >* using the **Open in Assets** link (in the Content Fragments console)
+  >* directly from the global **Navigation** pane
+
+#### Actions for a (selected) Content Fragment {#actions-selected-content-fragment}
+
+Selecting a specific fragment opens a toolbar focused on the actions available for that fragment. You can also select multiple fragments - the selection of actions will be adjusted accordingly.
+
+![Content Fragments console - toolbar for a selected fragment](assets/cf-managing-console-fragment-toolbar.png)
+
+* **[Open in new Editor](#editing-the-content-of-your-fragment)**
+* **[Open](/help/assets/content-fragments/content-fragments-variations.md)** (in original editor)
+* **[Publish](#publishing-and-previewing-a-fragment)** (and **[Unpublish](#unpublishing-a-fragment)**)
+* **[Manage Tags](#manage-tags)**
+* **[Copy](/help/assets/manage-digital-assets.md)**
+* **[Move](/help/assets/manage-digital-assets.md)**
+* **[Rename](/help/assets/manage-digital-assets.md)**
+* **[Delete](#deleting-a-fragment)**
+* **[Replace](#find-and-replace)**
+
+>[!NOTE]
+>
+>Use **Open** to open the selected fragment in the *original* editor.
+
+>[!NOTE]
+>
+>Actions such as Publish, Unpublish, Delete, Move, Rename, and Copy each trigger an asynchronous job. The progress of that job can be monitored via the AEM Async Jobs UI.
 
 ## Creating Content Fragments {#creating-content-fragments}
 
