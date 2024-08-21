@@ -122,7 +122,7 @@ The following table demonstrates the difference between the features available i
 * [Examples of developing and using custom function](/help/forms/custom-function-core-components-use-cases.md)
 
 
-## IP Allow Lists {#ip-allow-list}
+## IP Allow Lists and front-end pipelines {#allowlist-frontend-pipeline}
 
 >[!IMPORTANT]
 >
