@@ -13,10 +13,10 @@ Content Fragment Models in Adobe Experience Manager (AEM) as a Cloud Service def
 To use Content Fragment Models you:
 
 1. [Enable Content Fragment Model functionality for your instance](/help/sites-cloud/administering/content-fragments/setup.md)
-1. [Create](help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model) your Content Fragment Model. 
+1. [Create](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model) your Content Fragment Model. 
    * At this point you can also **Enable** the model (for use when creating Content Fragments).
 1. [Define](#defining-your-content-fragment-model) the structure of your model.
-1. [Enable your Content Fragment Model](help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#enabling-disabling-a-content-fragment-model), if not already done.
+1. [Enable your Content Fragment Model](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#enabling-disabling-a-content-fragment-model), if not already done.
 1. [Allow your Content Fragment Models on the required Assets folders](#allowing-content-fragment-models-assets-folder) by configuring **Policies**.
 
 >[!CAUTION]
