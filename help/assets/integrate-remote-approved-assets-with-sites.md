@@ -19,7 +19,7 @@ Dynamic Media with OpenAPI capabilities offers several other benefits such as ac
 
 ## Before you begin {#pre-requisits-sites-integration}
 
-Support for remote assets using Dynamic Media with OpenAPI requires:
+Support for remote assets using Dynamic Media with OpenAPI capabilities requires:
 
 * AEM 6.5 SP 18+ or AEM as a Cloud Service
 
