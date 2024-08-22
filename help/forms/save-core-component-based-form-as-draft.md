@@ -92,7 +92,7 @@ The **Drafts & Submissions** component displays forms that are saved as draft fo
  
     ![Draft and Submission Component proeprties](/help/forms/assets/save-form-as-draft-dns-properties.png)
 
-## Save forms as drafts
+## Configure forms to save as drafts
 
 You can configure Adaptive Forms in the following two ways to save them as drafts for the later use:
 * [User action](#user-action)
@@ -103,10 +103,10 @@ You can configure Adaptive Forms in the following two ways to save them as draft
 To save a form as a Draft, create a **Save Form** rule on a form component, such as a button. When the button is clicked, the rule triggers, and the form is saved as a draft. Perform the following steps to create a **Save Form** rule on a button component:
 
 1. Open an Adaptive Form in an edit mode.
-1. Select the **[!UICONTROL Edit Rules]** icon to open the Rule Editor for the **Button** component. For example, let us say a button labeled **Save Form** is added to a form.
-1. Select **[!UICONTROL Create]** to configure and create the rule for button.
-1. In the **[!UICONTROL When]** section, select **is clicked** and in the **[!UICONTROL Then]** section, select the **Save Form** option.
-1. Select **[!UICONTROL Done]** to save the rule.
+2. Select the **[!UICONTROL Edit Rules]** icon to open the Rule Editor for the **Button** component. 
+3. Select **[!UICONTROL Create]** to configure and create the rule for button.
+4. In the **[!UICONTROL When]** section, select **is clicked** and in the **[!UICONTROL Then]** section, select the **Save Form** option.
+5. Select **[!UICONTROL Done]** to save the rule.
 
     ![Create rule for button](/help/forms/assets/save-form-as-drfat-create-rule.png)
 
