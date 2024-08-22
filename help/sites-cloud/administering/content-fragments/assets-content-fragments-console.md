@@ -8,7 +8,7 @@ solution: Experience Manager Sites
 ---
 # Viewing and Managing Assets in the Content Fragments Console {#viewing-managing-assets-content-fragments-console}
 
-By default, the [Content Fragments console](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) of Adobe Experience Manager as a Cloud Service presents your [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md). 
+By default, the [Content Fragments console](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) of Adobe Experience Manager as a Cloud Service presents your [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md). 
 
 However, you can also view, and manage, all other sorts of **Assets** in this **Content Fragments Console**.
 
@@ -43,6 +43,7 @@ From the **Assets** view of the Content Fragments console you can:
 * [Create a folder](/help/assets/manage-digital-assets.md#creating-folders)
 * [Upload Assets](/help/assets/add-delete-assets-view.md)
 * Configure the view type (List, Grid, Gallery, Waterfall); and when appropriate the columns visible
+* A selection of [keyboard shortcuts](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) are available for use in this console
 
 You can also take actions on one, or more, selected Assets:
 

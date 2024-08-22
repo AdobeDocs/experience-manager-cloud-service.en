@@ -164,7 +164,7 @@ Content fragments are:
 
 * Stored as **Assets**:
 
-  * Content fragments (and their variations) can be created and maintained from the [Content Fragments console](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
+  * Content fragments (and their variations) can be created and maintained from the [Content Fragments console](#content-fragments-console).
   * Authored and edited in the [Content Fragment Editor](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 * Accessible for content delivery using the [AEM GraphQL API](/help/headless/graphql-api/content-fragments.md).
@@ -259,6 +259,34 @@ To use your Content Fragments for page authoring you also need:
   * Fragments need one or more dedicated components to define layout and deliver some or all elements/variations and associated content.
   * Dragging a fragment onto a page in authoring automatically associates the required component.
   * See the [Content Fragment Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html).
+
+## The Content Fragments Console {#content-fragments-console}
+
+The Content Fragments console is dedicated to managing, searching for, and creating [Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md), [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) and [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md). It has been optimized for use in a Headless context, but is also used when creating Content Fragments and Content Fragment Models for use in page authoring.
+
+The console can be directly accessed from the top level of the Global Navigation.
+
+![Global Navigation - Content Fragments console](assets/cf-managing-global-navigation.png)
+
+You can use the far left panel to select the resource type to view, browse and manage:
+
+![Content Fragments console - navigation](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
+
+For detailed information see:
+
+* [Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md)
+* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
+* [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+
+* A selection of [keyboard shortcuts](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) are available for use in this console
+
+>[!CAUTION]
+>
+>This console is *only* available in the online Adobe Experience Manager (AEM) as a Cloud Service.
+
+>[!NOTE]
+>
+>Your project team can customize the console and editor if necessary. See [Customizing the Content Fragment Console and Editor](/help/implementing/developing/extending/content-fragments-console-and-editor.md) for further details.
 
 ## Example Usage {#example-usage}
 

@@ -15,7 +15,7 @@ Together with the updated JSON exporter, structured content fragments can also b
 >
 >Content Fragments are a **Sites** feature, but are stored as **Assets**. 
 >
->They are now primarily managed with the **[Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** console, though they can still be managed from the **[Assets](/help/assets/content-fragments/content-fragments-managing.md)** console.
+>They are now primarily managed with the **[Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** console, though they can still be managed from the **[Assets](/help/assets/content-fragments/content-fragments-managing.md)** console.
 >
 >There are two editors for authoring Content Fragments:
 >

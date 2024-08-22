@@ -16,46 +16,6 @@ Content Fragment Models in Adobe Experience Manager (AEM) as a Cloud Service def
 >
 >For further details see [AEM GraphQL API for use with Content Fragments - Limitations](/help/headless/graphql-api/content-fragments.md#limitations)
 
-<!--
-## Content Fragment Model - Properties {#content-fragment-model-properties}
-
-These properties are defined when you create a model, and can be edited later with the **Properties** option for the Content Fragment Model:
-
-* **Basic**
-  * **Model Title**
-  * **Tags**
-  * **Description**
-  * **Enable model**
-  * **Default Preview URL Pattern**
-    The Content Fragment editor allows authors to **Preview** their content in an external frontend application. Once the **Preview Service** is configured, add the URL for the frontend application.
-
-    The preview URL should follow this pattern:
-    &nbsp;&nbsp;&nbsp;&nbsp;`https://<preview_url>?param=${expression}`
-
-    Available expressions are:
-
-    * `${contentFragment.path}`
-    * `${contentFragment.model.path}`
-    * `${contentFragment.model.name}`
-    * `${contentFragment.variation}`
-    * `${contentFragment.id}`
-
-  * **Upload Image**
--->
-
-<!-- CHECK: currently under FT -->
-<!--
-* **GraphQL**
-  Define names relevant for GraphQL.
-  Changing the GraphQL API Name, or Query field names will impact client applications.
-  * **API Name**
-    Represents the GraphQL type and query field names in the GraphQL schema.
-  * **Single Query Field Name**
-    Represents the GraphQL single query field name in the GraphQL schema.
-  * **Multiple Query Field Name**
-    Represents the GraphQL multiple query field name in the GraphQL schema.
--->
-
 ## Defining your Content Fragment Model {#defining-your-content-fragment-model}
 
 The Content Fragment Model effectively defines the structure of the resulting Content Fragments using a selection of **[Data Types](#data-types)**. Using the model editor you can add instances of the data types, then configure them to create the required fields:
@@ -64,9 +24,12 @@ The Content Fragment Model effectively defines the structure of the resulting Co
 >
 >Editing a model that is already used by existing Content Fragments can impact those dependent fragments.
 
-1. Navigate to **Tools**, **General**, then open **Content Fragment Models**.
+1. In the Content Fragment Console, select the panel for [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#basic-structure-handling-content-fragment-models-console) and navigate to the folder holding your Content Fragment model.
 
-1. Navigate to the folder holding your Content Fragment model.
+   >[!NOTE]
+   >
+   >You can also open a model directly after [creating it](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model).
+
 1. Open the required model for **Edit**; use either the quick action, or select the model and then the action from the toolbar.
 
    Once open the model editor shows:
@@ -88,7 +51,7 @@ The Content Fragment Model effectively defines the structure of the resulting Co
 
    * Once a field has been added to the model, the right panel shows the **Properties** that can be defined for that particular data type. Here you can define what is required for that field. 
 
-     * Many properties are self-explanatory, for additional details see [Properties](#properties).
+     * Many properties are self-explanatory, for additional details see [Properties (Data Types)](#properties).
      * Typing a **Field Label** auto-completes the **Property Name**  - if empty, and it can be manually updated afterwards.
 
        >[!CAUTION]
