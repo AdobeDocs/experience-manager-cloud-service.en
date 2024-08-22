@@ -107,9 +107,7 @@ The overall flow is simple and intuitive even if you do not yet have extensive e
 
 The major advantage of using the Quick Site Creation tool is that the pure front-end developer is only responsible the actual customization. The front-end developer has no interaction with AEM or needs any knowledge of AEM.
 
->[!IMPORTANT]
->
->To avoid disruption of running the front-end pipeline, ensure that the [Cloud Manager IP Allow List is added](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md), and then [applied to the Author service of the environment](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) *before* you [enable the pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md##enabling).
+{{add-cm-allowlist-frontend-pipeline}}
 
 ## What's Next {#what-is-next}
 
