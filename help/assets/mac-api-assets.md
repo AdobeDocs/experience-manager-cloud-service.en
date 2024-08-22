@@ -2,8 +2,8 @@
 title: Assets HTTP API
 description: Create, read, update, delete, manage digital assets using HTTP API in [!DNL Experience Manager Assets].
 contentOwner: AG
-feature: Assets HTTP API,APIs
-role: Developer,Architect,Admin
+feature: Assets HTTP API
+role: Developer, Architect, Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
 ---
 # [!DNL Adobe Experience Manager Assets] HTTP API {#assets-http-api}
@@ -16,6 +16,10 @@ exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
 ## Overview {#overview}
 
 The [!DNL Assets] HTTP API allows for create-read-update-delete (CRUD) operations on digital assets, including on metadata, on renditions, and on comments, together with structured content using [!DNL Experience Manager] Content Fragments. It is exposed at `/api/assets` and is implemented as REST API. It includes [support for Content Fragments](/help/assets/content-fragments/assets-api-content-fragments.md).
+
+>[!NOTE]
+>
+> A modernized OpenAPI implementation of the Content Fragment Management API is available. For full documentation see [Content Fragment Management API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/). It is recommended to use the new OpenAPI implementation. The existing usage of Assets HTTP API for Content Fragments should be migrated to the new Content Fragment Management OpenAPI.
 
 To access the API:
 
@@ -34,9 +38,17 @@ A [Content Fragment](/help/assets/content-fragments/content-fragments.md) is a s
 
 For more information, see [Content Fragments support in the [!DNL Experience Manager Assets] HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md).
 
+>[!NOTE]
+>
+>The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) are also available.
+
 ## Data model {#data-model}
 
 The [!DNL Assets] HTTP API exposes two major elements, folders and assets (for standard assets). Also, it exposes more detailed elements for the custom data models that describe structured content in Content Fragments. See [Content Fragment data models](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) for further information.
+
+>[!NOTE]
+>
+>The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) are also available.
 
 ### Folders {#folders}
 
@@ -69,6 +81,10 @@ In [!DNL Experience Manager] an asset contains the following elements:
 * Optional comments.
 
 For information about elements in Content Fragments see [Content Fragments Support in Experience Manager Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md).
+
+>[!NOTE]
+>
+>The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) are also available.
 
 In [!DNL Experience Manager] a folder has the following components:
 
@@ -284,6 +300,7 @@ Deletes a resource (-tree) at the provided path.
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

@@ -2,6 +2,8 @@
 title: AEM - Commerce Integration using Commerce Integration Framework FAQ
 description: AEM - Commerce Integration using Commerce Integration Framework FAQ
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
+feature: Commerce Integration Framework
+role: Admin, Architect, User
 ---
 # AEM - Commerce Integration using Commerce Integration Framework FAQ
 
@@ -69,4 +71,4 @@ Yes, Self-Assessment Questionnaire D and Attestation of Compliance are available
 
 ## 16. How can I request for an I/O Runtime trial license?
 
-You can request for a trial license to use I/O Runtime [here](https://developer.adobe.com/app-builder/trial/).
+See [Getting Access](https://developer.adobe.com/runtime/docs/guides/overview/getting_access/) for details of requesting a trial license to use I/O Runtime.

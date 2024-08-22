@@ -1,10 +1,12 @@
 ---
 Title: How to integrate AEM workflow with an Adaptive Form?
-Description: Explore the process of automated workflow initiation with AEM Forms Submit Action. 
+Description: Explore the process of automated workflow initiation with AEM Forms Submit Action.
 keywords: AEM Workflow, Integrate Adaptive Form with AEM workflow, Invoke AEM workflow Submit Action
 feature: Adaptive Forms, Core Components
+exl-id: b7788e3d-acd8-4867-b232-f9767cf6b2f5
+title: "How to configure a Submit Action for an Adaptive Form?"
+role: User, Developer
 ---
-
 # Integrate AEM Adaptive Form with AEM Workflow: Streamlining Business Processes
 
 The **[!UICONTROL Invoke an AEM Workflow]** Submit Action associates an Adaptive Form with an AEM Workflow. When a form is submitted, the associated workflow starts automatically on the Author instance. You can save the data files, attachments, and Document of Record to the payload location of the workflow or to a variable. If the workflow is marked for external data storage and configured for an external data storage, then only the variable option is available. You can select from the list of variables available for the workflow model. If the workflow is marked for external data storage at a later stage and not at the time of workflow creation, then ensure that the required variable configurations are in place.

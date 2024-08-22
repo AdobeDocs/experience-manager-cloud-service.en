@@ -2,6 +2,9 @@
 title: Introduction to Sandbox Programs 
 description: Learn what sandbox programs are how they differ from production programs.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 
 # Introduction to Sandbox Programs {#sandbox-programs}
@@ -39,7 +42,15 @@ Environments created in a sandbox program are not configured for auto-scaling. T
 
 ### No Custom Domains or IP Allow Lists {#ip-allow}
 
-Custom domains and IP allow lists are not available in sandbox programs.
+[Custom domains](/help/implementing/cloud-manager/custom-domain-names/introduction.md) and [IP allow lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) are not available in sandbox programs.
+
+### No Additional Publish Regions {#additional-publish-regions}
+
+[Additional publish regions](/help/operations/additional-publish-regions.md) are not available in sandbox programs.
+
+### No 99.99% SLA {#999-sla}
+
+[99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) does not apply to sandbox programs.
 
 ### No Advanced Networking {#advanced-networking}
 

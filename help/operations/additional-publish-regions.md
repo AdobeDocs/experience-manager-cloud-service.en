@@ -2,7 +2,10 @@
 title: Additional Publish Regions
 description: Learn how AEM as a Cloud Service supports additional publish regions for increased availability and reduced latency.
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
+feature: Operations
+role: Admin
 ---
+
 # Additional Publish Regions {#additional-publish-regions}
 
 Additional publish regions can be licensed and enabled on programs set up with AEM Sites. When configured, traffic on stage and production environments is routed to multiple publish farms, which has the following benefits:
@@ -14,7 +17,9 @@ Organizations may license up to three additional publish regions.
 
 >[!NOTE]
 >
->This feature is currently only available for AEM Sites. It also cannot be applied to sandbox programs. Also, additional publish regions feature requires your program to be updated to AEM release version 12142 or higher.
+>* This feature is available for the Sites and Forms solutions.
+>* This feature cannot be applied to [sandbox programs.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+>* This feature requires your program to be updated to AEM release version 12142 or higher.
 
 ## Use Cases {#use-cases}
 
@@ -49,7 +54,9 @@ If additional publish regions are enabled, separate logs for each region will be
 
 Keep in mind the following limitations when considering using additional publish regions.
 
-* Additional publish regions may only be added to AEM Sites. Additional publish regions do not extend to other AEM solutions or related functionality deployed in the same program (for example, AEM Forms or Adobe Learning Manager).
+* Additional publish regions may only be added to AEM Sites or AEM Forms.
+  * Additional publish regions do not extend to other AEM solutions or related functionality deployed in the same program (for example, AEM Assets or Adobe Learning Manager).
+  * However these solutions can be added to a program as long as it has at least one Sites or Forms solution applies to it.
 * Additional regions can only be added if associated entitlements are available and unused in the tenant.
 * A maximum of three additional publish regions can be added to any individual environment.
 * Additional regions are available on production programs only. The feature is not available in sandbox programs.

@@ -2,6 +2,8 @@
 title: Adding ContextHub to Pages and Accessing Stores
 description: Add ContextHub to your pages to enable the ContextHub features and to link to the ContextHub JavaScript libraries
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
+feature: Developing, Personalization
+role: Admin, Architect, Developer
 ---
 # Adding ContextHub to Pages and Accessing Stores {#adding-contexthub-to-pages-and-accessing-stores}
 
@@ -103,7 +105,7 @@ Custom store candidates can define additional functions that provide access to s
 >
 >ContextHub is not by default aware of the currently logged in used on publish servers and such users are regarded by ContextHub as "Anonymous."
 >
->You can make ContextHub aware of logged in users by loading the profile store. See [sample code on GitHub here](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
+>You can make ContextHub aware of logged in users by loading the profile store. See the sample code: [aem-sample-we-retail on GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
 
 ### ContextHub Eventing {#contexthub-eventing}
 

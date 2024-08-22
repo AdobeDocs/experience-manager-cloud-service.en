@@ -2,6 +2,9 @@
 title: Deploying Your Code
 description: Learn how to deploy your code using Cloud Manager pipelines in AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 
 # Deploying Your Code {#deploy-your-code} 
@@ -25,7 +28,7 @@ Once you have [configured your production Pipeline](/help/implementing/cloud-man
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, tap or click the program for which you want to deploy code.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, tap or click the program for which you want to deploy code.
 
 1. Click **Deploy** from the call-to-action on the **Overview** screen to start the deployment process.
 
@@ -81,7 +84,7 @@ The **Stage testing** phase involves these steps.
 
 ![Stage Testing](assets/stage-testing.png)
 
-## Production Deployment Phase {#deployment-production}
+## Production Deployment Phase {#production-deployment}
 
 The process for deploying to production topologies differs slightly to minimize impact visitors to an AEM site.
 

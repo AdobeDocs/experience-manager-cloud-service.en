@@ -1,8 +1,9 @@
 ---
 title: Persisted GraphQL queries
 description: Learn how to persist GraphQL queries in Adobe Experience Manager as a Cloud Service to optimize performance. Persisted queries can be requested by client applications using HTTP GET method and the response can be cached at the dispatcher and CDN layers, ultimately improving the performance of the client applications.
-feature: Content Fragments,GraphQL API
+feature: Headless, Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
+role: Admin, Developer
 ---
 # Persisted GraphQL queries {#persisted-graphql-queries}
 
@@ -253,6 +254,36 @@ This query can be persisted under a path `wknd/adventures-by-activity`. To call 
 
 The UTF-8 encoding `%3B` is for `;` and `%3D` is the encoding for `=`. The query variables and any special characters must be [encoded properly](#encoding-query-url) for the Persisted query to execute.
 
+### Using query variables - Best Practices {#query-variables-best-practices}
+
+When using variables in your queries there are a few best practices that should be followed:
+
+* Encoding
+  As a general approach, it is always recommended to encode all special characters; for example, `;`, `=`, `?`, `&`, among others.
+
+* Semicolon
+  Persisted queries that use multiple variables (that are separated by semicolons) need to have either:
+  * the semicolons encoded (`%3B`); encoding the URL will also achieve this
+  * or a trailing semicolon added to the end of the query
+
+* `CACHE_GRAPHQL_PERSISTED_QUERIES`
+  When `CACHE_GRAPHQL_PERSISTED_QUERIES` is enabled for the Dispatcher, then parameters that contain the `/` or `\` characters in their value, are encoded twice at the Dispatcher level. 
+  To avoid this situation:
+
+  * Enable `DispatcherNoCanonURL` on the Dispatcher.
+    This will instruct the Dispatcher to forward the original URL to AEM, so preventing duplicated encodings. 
+    However this setting currently only works on the `vhost` level, so if you already have Dispatcher configurations to rewrite URLs (e.g. when using shortened URLs) you might need a separate `vhost` for persisted query URLs.
+
+  * Send `/` or `\` characters unencoded.
+    When calling the persisted query URL ensure that all `/` or `\` characters remain unencoded in the value of persisted query variables.
+    >[!NOTE]
+    >
+    >This option is only recommended for when the `DispatcherNoCanonURL` solution cannot be implemented for any reason.
+
+* `CACHE_GRAPHQL_PERSISTED_QUERIES`
+
+   When `CACHE_GRAPHQL_PERSISTED_QUERIES` is enabled for the Dispatcher, then the `;` character cannot be used in the value of a variable.
+
 ## Caching your persisted queries {#caching-persisted-queries}
 
 Persisted queries are recommended as they can be cached at the [Dispatcher](/help/headless/deployment/dispatcher.md) and Content Delivery Network (CDN) layers, ultimately improving the performance of the requesting client application.
@@ -374,7 +405,7 @@ The default OSGi configuration for publish instances:
 
 By default the `PersistedQueryServlet` sends a `200` response when it executes a query, regardless of the actual result.
 
-You can [configure the OSGi settings](/help/implementing/deploying/configuring-osgi.md) for the **Persisted Query Service Configuration** to control which status code is returned by the `/execute.json/persisted-query` endpoint, when there is an error in the persisted query.
+You can [configure the OSGi settings](/help/implementing/deploying/configuring-osgi.md) for the **Persisted Query Service Configuration** to control whether more detailed status codes are returned by the `/execute.json/persisted-query` endpoint, when there is an error in the persisted query.
 
 >[!NOTE]
 >
@@ -383,14 +414,21 @@ You can [configure the OSGi settings](/help/implementing/deploying/configuring-o
 The field `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) can be defined as required:
 
 * `false` (default value):
-  It does not matter whether the persisted query is successful or not. The `/execute.json/persisted-query` returns the status code `200` and the `Content-Type` header returned is `application/json`.
+  It does not matter whether the persisted query is successful or not. The `Content-Type` header returned is `application/json`, and the `/execute.json/persisted-query` *always* returns the status code `200`.
 
 * `true`:
-  The endpoint will return `400` or `500` as appropriate when there is any form of error upon running the persisted query. Also, the returned `Content-Type` is `application/graphql-response+json`.
+  The returned `Content-Type` is `application/graphql-response+json`, and the endpoint will return the appropriate response code when there is any form of error upon running the persisted query: 
+
+  | Code | Description |
+  |--- |--- |
+  | 200 | Successful response |
+  | 400 | Indicates that there are missing headers, or an issue with the persisted query path. For example, configuration name not specified, suffix is not specified, and others.<br>See [Troubleshooting - GraphQL endpoint not configured](/help/headless/graphql-api/persisted-queries-troubleshoot.md#missing-path-query-url). |
+  | 404 | The requested resource cannot be found. For example, the Graphql endpoint is not available on the server.<br>See [Troubleshooting - Missing path in the GraphQL persisted query URL](/help/headless/graphql-api/persisted-queries-troubleshoot.md#graphql-endpoint-not-configured). |
+  | 500 | Internal server error. For example, validation errors, persistence error, and others. |
 
   >[!NOTE]
   >
-  >See https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
+  >See also https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
 
 ## Encoding the query URL for use by an app {#encoding-query-url}
 

@@ -4,6 +4,7 @@ description: Find out how to troubleshoot the most common MSM-related issues and
 feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
+solution: Experience Manager Sites
 ---
 # Troubleshooting MSM Issues and FAQ {#troubleshooting-msm}
 
@@ -12,7 +13,7 @@ exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
 If you are experiencing what you think is incorrect behavior or an error in MSM, before beginning and detailed troubleshooting be sure to:
 
 * Check the [MSM FAQ](#faq) because your problems or questions may already be addressed there.
-* Check the [MSM best practices article](best-practices.md) as several tips are offered there along with clarifications of some misconceptions.
+* Check [MSM best practices](best-practices.md) for several tips, together with clarification of certain misconceptions.
 
 ## Finding advanced information about your blueprint and Live Copy status {#advanced-info}
 
@@ -61,7 +62,7 @@ Here are some frequently asked questions related to MSM and Live Copy.
 
 MSM sync actions are highly configurable. Which properties or components are modified during rollouts directly depends on the properties of those configurations.
 
-See [this article](best-practices.md) for more information on this topic.
+See [MSM Best Practices](best-practices.md) for more information on this topic.
 
 ### How can I remove rollout permissions for a group of authors? {#remove-rollout-permissions}
 

@@ -2,6 +2,9 @@
 title: Reprocessing digital assets
 description: Learn about various methods of reprocessing digital assets
 contentOwner: KK
+exl-id: 4759fa8c-10c7-4446-a135-3104b9beaee8
+feature: Asset Processing
+role: User, Leader, Developer
 ---
 # Reprocessing digital assets {#reprocessing-digital-assets}
 
@@ -85,4 +88,3 @@ You can reprocess assets in a folder that already has an existing Dynamic Media 
 ### Workflows
 
 Read more about [processing profiles and post-processing workflows](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en).
-

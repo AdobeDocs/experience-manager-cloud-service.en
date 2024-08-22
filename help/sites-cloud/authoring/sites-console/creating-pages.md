@@ -1,8 +1,11 @@
 ---
 title: Creating Pages
 description: Learn how to create new pages for your website using the Sites console.
+exl-id: 77264562-e76a-40c8-9878-847a8878fb8e
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
-
 # Creating Pages {#creating-pages}
 
 Learn how to create new pages for your website using the **Sites** console.

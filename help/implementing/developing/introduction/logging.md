@@ -2,6 +2,8 @@
 title: Logging for AEM as a Cloud Service
 description: Learn how to use Logging for AEM as a Cloud Service to configure global parameters for the central logging service, specific settings for the individual services or how to request data logging.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
+feature: Log Files, Developing
+role: Admin, Architect, Developer
 ---
 # Logging for AEM as a Cloud Service {#logging-for-aem-as-a-cloud-service}
 
@@ -498,7 +500,7 @@ Define DISP_LOG_LEVEL debug
 
 AEM as a Cloud Service provides access to CDN logs, which are useful for use cases including cache hit ratio optimization. The CDN log format cannot be customized and there is no concept of setting it to different modes such as info, warn, or error.
 
-The Splunk forwarding feature does not yet support CDN logs.
+CDN logs will be forwarded to Splunk for new Splunk forwarding support ticket requests; customers who already have Splunk forwarding enabled will be able to add CDN logs in the future.
 
  **Example**
 
@@ -553,9 +555,9 @@ AEM as a Cloud Service logs for cloud services can be accessed either by downloa
 
 ### Logs for Additional Publish Regions {#logs-for-additional-publish-regions}
 
-If Additional Publish Regions are enabled for a particular environment, logs for each region will be available to download from Cloud Manager, as mentioned above.
+If additional publish regions are enabled for a particular environment, logs for each region will be available to download from Cloud Manager, as mentioned above.
 
-The AEM logs and the dispatcher logs for the Additional Publish Regions will specify the region in the first 3 letters after the environment id, as exemplified by **nld2** in the sample below, which refers to an additional AEM publish instance located in the Netherlands:
+The AEM logs and the dispatcher logs for the additional publish regions will specify the region in the first 3 letters after the environment id, as exemplified by **nld2** in the sample below, which refers to an additional AEM publish instance located in the Netherlands:
 
 ```
 cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:11 +0000 "HEAD /libs/granite/security/currentuser.json HTTP/1.1" 200 - "-" "Java/11.0.19"
@@ -608,6 +610,12 @@ The network bandwidth associated with logs sent to Splunk are considered part of
 
 CDN logs will be forwarded to Splunk for new support ticket requests; customers who already have Splunk forwarding enabled will be able to add CDN logs in the future.
 
+>[!NOTE]
+>
+>*Specific* logs, and *specific* User logs, cannot be forwarded to Splunk. 
+>
+>**All** logs will be forwarded to Splunk, where any further filtering can be done by the customer based on their requirements.
+
 ### Enabling Splunk Forwarding {#enabling-splunk-forwarding}
 
 In the support request, customers should indicate:
@@ -615,7 +623,7 @@ In the support request, customers should indicate:
 * Splunk HEC endpoint address. This endpoint must have a valid SSL certificate and be publicly accessible.
 * The Splunk index
 * The Splunk port 
-* The Splunk HEC token. See [this page](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) for more information.
+* The Splunk HEC token. See [HTTP Event Collector examples](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) for more information.
 
 The properties above should be specified for each relevant program/environment type combination. For example, if a customer wanted dev, staging, and production environments, they should provide three sets of information, as indicated below. 
 

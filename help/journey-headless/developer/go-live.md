@@ -2,6 +2,9 @@
 title: How to Go Live with Your Headless Application
 description: In this part of the AEM Headless Developer Journey, learn how to deploy a headless application live by taking your local code in Git and moving it to Cloud Manager Git for the CI/CD pipeline.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
+solution: Experience Manager
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Architect, Developer
 ---
 # How to Go Live with Your Headless Application {#go-live}
 
@@ -61,7 +64,7 @@ Once you make sure that everything has been tested and is working properly, you 
 
 After the updates have been uploaded to Cloud Manager, they can be deployed to AEM as a Cloud Service using [Cloud Manager's CI/CD pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html).
 
-You can start deploying your code by using the Cloud Manager CI/CD pipeline, which is covered extensively [here](/help/implementing/deploying/overview.md).
+You can start deploying your code by using the Cloud Manager CI/CD pipeline, which is covered extensively under [Deploying Content Packages by way of Cloud Manager and Package Manager ](/help/implementing/deploying/overview.md).
 
 ## Performance Monitoring {#performance-monitoring}
 

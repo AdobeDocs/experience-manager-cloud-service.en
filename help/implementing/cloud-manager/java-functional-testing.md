@@ -2,6 +2,9 @@
 title: Java&trade; Functional Tests
 description: Learn how to write Java&trade; functional tests for AEM as a Cloud Service
 exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 # Java&trade; Functional Testing
 
@@ -104,7 +107,26 @@ See [`aem-testing-clients` GitHub repo](https://github.com/adobe/aem-testing-cli
 >[!NOTE]
 >
 > Should you need more resources, create a Customer Care case, and describe your use-case. Adobe's team reviews your request and provides appropriate assistance.
-    
+
+#### Dependencies
+
+* aem-cloud-testing-clients:
+
+Upcoming changes in the containerized infrastructure used to execute functional tests, will require the library [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) used in your custom functional test to be updated to at least version **1.2.1**
+Make sure that your dependency in `it.tests/pom.xml` has been updated.
+
+```
+<dependency>
+   <groupId>com.adobe.cq</groupId>
+   <artifactId>aem-cloud-testing-clients</artifactId>
+   <version>1.2.1</version>
+</dependency>
+```
+
+>[!NOTE]
+>
+>This change needs to be performed before April 6, 2024. 
+>Failing to update the dependency library will result in pipeline failures at the "Custom Functional Testing" step.
 
 ### Local Test Execution {#local-test-execution}
 
@@ -147,3 +169,4 @@ mvn verify -Plocal \
     -Dit.publish.user=<user> \
     -Dit.publish.password=<password>
 ```
+

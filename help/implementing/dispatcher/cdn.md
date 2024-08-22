@@ -3,7 +3,9 @@ title: CDN in AEM as a Cloud Service
 description: Learn how to use the AEM-managed CDN and how to point your own CDN to the AEM-managed CDN.
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
+role: Admin
 ---
+
 # CDN in AEM as a Cloud Service {#cdn}
 
 >[!CONTEXTUALHELP]
@@ -34,7 +36,32 @@ See [Managing IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/in
 >
 >Only requests from the allowed IPs are served by AEM's managed CDN. If you point your own CDN to the AEM-managed CDN, then make sure the IPs of your CDN are included in the allowlist.
 
-## Customer CDN points to AEM-managed CDN {#point-to-point-CDN}
+### Configuring Traffic at the CDN {#cdn-configuring-cloud}
+
+You can configure traffic at the CDN in various ways, including:
+
+* blocking malicious traffic with [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md) (including optionally licensable advanced WAF rules)
+* modifying the nature of the [request and response](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)
+* applying 301/302 [client-side redirects](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)
+* declaring [origin selectors](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) to reverse proxy a request to non-AEM backends
+
+Learn how to configure these features by using YAML files in git and deploying them by using the Cloud Manager [Config Pipeline](/help/implementing/dispatcher/cdn-configuring-traffic.md).
+
+### Configuring CDN Error Pages {#cdn-error-pages}
+
+A CDN error page can be configured to override the default, unbranded page that is served to the browser in the rare event that AEM cannot be reached. For more details, see [Configuring CDN error pages](/help/implementing/dispatcher/cdn-error-pages.md).
+
+### Purge Cached Content at the CDN {#purge-cdn}
+
+Setting TTL using the HTTP Cache-Control header is an effective approach to balance content delivery performance and content freshness. However, in scenarios where it is critical to immediately serve updated content, it may be beneficial to directly purge the CDN cache.
+
+Read about [configuring a purge API token](/help/implementing/dispatcher/cdn-credentials-authentication.md/#purge-API-token) and [purging cached CDN content](/help/implementing/dispatcher/cdn-cache-purge.md).
+
+### Basic Authentication at the CDN {#basic-auth}
+
+For light authentication use cases including business stakeholders reviewing content, protect content by displaying a basic auth dialog requiring a username and password. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md) and join the early adopter program.
+
+## Customer CDN Points to AEM-managed CDN {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
@@ -55,7 +82,7 @@ Configuration instructions:
 1. Set SNI to the Adobe CDN's ingress.
 1. Set the Host header to the origin domain. For example: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Set the `X-Forwarded-Host` header with the domain name so AEM can determine the host header. For example: `X-Forwarded-Host:example.com`.
-1. Set `X-AEM-Edge-Key`. The value should come from Adobe.
+1. Set `X-AEM-Edge-Key`. The value should be configured using a Cloud Manager config pipeline, as described in [this article.](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)
 
    * Needed so that the Adobe CDN can validate the source of the requests and pass the `X-Forwarded-*` headers to the AEM application. For example,`X-Forwarded-For` is used to determine the client IP. So, it becomes the responsibility of the trusted caller (that is, the customer-managed CDN) to ensure the correctness of the `X-Forwarded-*` headers (see the note below).
    * Optionally, access to Adobe CDN's ingress can be blocked when an `X-AEM-Edge-Key` is not present. Inform Adobe if you need direct access to Adobe CDN's ingress (to be blocked).
@@ -64,7 +91,7 @@ See the [Sample CDN vendor configurations](#sample-configurations) section for c
 
 Before accepting live traffic, you should validate with Adobe's customer support that the end-to-end traffic routing is functioning correctly.
 
-After obtaining the `X-AEM-Edge-Key`, you can test that the request is routed correctly as follows.
+After setting the `X-AEM-Edge-Key`, you can test that the request is routed correctly as follows.
 
 In Linux&reg;:
 
@@ -116,6 +143,26 @@ Presented below are several configuration examples from several leading CDN vend
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
 
+### Common Errors {#common-errors}
+
+The sample configurations provided show the base settings needed, but a customer configuration may have other impacting rules that remove, modify, or re-arrange the headers needed for AEM as a Cloud Service to serve the traffic. Below are common errors that occur when configuring a customer managed CDN to point to AEM as a Cloud Service.
+
+**Redirection to the Publish Service Endpoint**
+
+When a request receives a 403 forbidden response, it means that the request is missing some required headers. A common cause for this is that the CDN is managing both apex and `www` domain traffic, but is not adding the correct header for the `www` domain. This problem can be triaged by checking your AEM as a Cloud Service CDN logs and verifying the needed request headers.
+
+**Too Many Redirects Loop**
+
+When a page gets a "Too Many Redirect" loop, some request header is being added at the CDN that matches a redirect that forces it back to itself. As an example:
+
+* A CDN rule is created to match either the apex domain or the www domain, and adds the X-Forwarded-Host header of the apex domain only.
+* A request for an apex domain matches this CDN rule, which adds the apex domain as the X-Forwarded-Host header.
+* A request is sent to the origin where a redirect matches the host header explicitly for the apex domain (for example, ^example.com).
+* A rewrite rule is triggered, which rewrites the request for the apex domain to https with the www subdomain.
+* That redirect is then sent to the customer's edge, where the CDN rule is re-triggered re-adding the X-Forwarded-Host header for the apex domain not the www subdomain. Then the process starts over until the request fails.
+
+To resolve this problem, assess your SSL redirect strategy, CDN rules, redirect and rewrite rule combinations.
+
 ## Geolocation Headers {#geo-headers}
 
 The AEM-managed CDN adds headers to each request with:
@@ -127,7 +174,7 @@ The AEM-managed CDN adds headers to each request with:
 >
 >If there is a customer-managed CDN, these headers reflect the location of the customers CDN proxy server rather than the actual client. Therefore, for customer-managed CDN, geolocation headers should be managed by the customers CDN.  
 
-The values for the country codes are the Alpha-2 codes described [here](https://en.wikipedia.org/wiki/ISO_3166-1).
+The values for the country codes are the Alpha-2 codes described under [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1).
 
 The values for the continent codes are:
 

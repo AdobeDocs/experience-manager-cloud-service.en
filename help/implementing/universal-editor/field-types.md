@@ -2,13 +2,13 @@
 title: Model Definitions, Fields, and Component Types
 description: Learn about fields and the component types that the Universal Editor can edit in the properties rail with examples. Understand how you can instrument your own app by creating a model definition and linking to the component.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
+feature: Developing
+role: Admin, Architect, Developer
 ---
 
 # Model Definitions, Fields, and Component Types {#field-types}
 
 Learn about fields and the component types that the Universal Editor can edit in the properties rail with examples. Understand how you can instrument your own app by creating a model definition and linking to the component.
-
-{{universal-editor-status}}
 
 ## Overview {#overview}
 
@@ -91,12 +91,13 @@ The following are the component types that are possible to use for rendering fie
 |[Boolean](#boolean)|`boolean`|
 |[Checkbox Group](#checkbox-group)|`checkbox-group`|
 |[Container](#container)|`container`|
+|[Content Fragment](#content-fragment)|`aem-content-fragment`|
 |[Date Time](#date-time)|`date-time`|
 |[Multiselect](#multiselect)|`multiselect`|
 |[Number](#number)|`number`|
 |[Radio Group](#radio-group)|`radio-group`|
 |[Reference](#reference)|`reference`|
-|[Rich Text](#rich-text)|`rich-text`|
+|[Rich Text](#rich-text)|`richtext`|
 |[Select](#select)|`select`|
 |[Tab](#tab)|`tab`|
 |[Text](#text)|`text`|
@@ -286,6 +287,8 @@ A container component type allows the grouping of components. It offers an addit
 
 ![Screenshot of container component type](assets/component-types/container.png)
 
+>[!ENDTABS]
+
 #### Content Fragment {#content-fragment}
 
 The Content Fragment picker can be used to select a [Content Fragment](/help/sites-cloud/authoring/fragments/content-fragments.md) and its variations (if required). It offers an additional configuration.
@@ -293,6 +296,12 @@ The Content Fragment picker can be used to select a [Content Fragment](/help/sit
 |Configuration|Value Type|Description|Required|
 |---|---|---|---|
 |`variationName`|`string`|Variable name to store the selected variation. If undefined, no variation picker is displayed|No|
+
+>[!NOTE]
+>
+>The Universal Editor [validates Content Fragment fields based on their models](/help/assets/content-fragments/content-fragments-models.md#validation) allowing you to enforce data integrity rules such as regex patterns and uniqueness constraints.
+>
+>This ensures that your content meets specific business requirements before it's published.
 
 >[!BEGINTABS]
 

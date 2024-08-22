@@ -3,7 +3,7 @@ title: Cascading metadata
 description: This article describes how to define cascading metadata for assets.
 contentOwner: AG
 feature: Metadata
-role: User,Admin
+role: Admin, User
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
 ---
 # Cascading Metadata {#cascading-metadata}
@@ -122,3 +122,4 @@ Irrespective of the asset type chosen, display the copyright information as a re
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

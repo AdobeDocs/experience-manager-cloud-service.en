@@ -2,6 +2,8 @@
 title: Introduction to the Architecture of Adobe Experience Manager as a Cloud Service
 description: Introduction to the Architecture of Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
+feature: Release Information
+role: Admin
 ---
 # An Introduction to the Architecture of Adobe Experience Manager as a Cloud Service {#an-introduction-to-the-architecture-adobe-experience-manager-as-a-cloud-service}
 
@@ -76,7 +78,7 @@ For content management, there are two main sets of services for the authoring of
   Provides a web-based interface (with associated APIs) for the management of Web content. This operates for both approaches:
   * Headful - via the Page editor and the Universal Editor
   * Headless - via the Content Fragment editor
-* The Document-based authoring tier:
+* The Document-based Authoring  tier:
   Allows you to author content using standard applications, such as:
   * Microsoft Word and Excel - via SharePoint
   * Google Docs and Sheets - via Google Drive
@@ -87,7 +89,7 @@ For experience delivery, when using AEM Sites or AEM Forms, there are also two m
   * Runs a farm of standard AEM publishers and dispatchers, allowing for the dynamic rendering of web pages and API content (for example, GraphQL) assembled with published content.
   * Is primarily based on server-side application logic.
 * The Edge Delivery Publish tier:
-  * Allows for the dynamic rendering of web pages and API content from various content sources such as the AEM Author tier or the Document-based authoring tier.
+  * Allows for the dynamic rendering of web pages and API content from various content sources such as the AEM Author tier or the Document-based Authoring  tier.
   * Is based on client-side application logic and designed for maximum performance.
 
 There are also the key adjacent services:
@@ -154,9 +156,9 @@ The AEM Preview tier is comprised of a single AEM node. This is used for quality
 
 The Edge Delivery Services are operated on top of a CDN and serverless infrastructure for assembling the pages in the most performant way. When a resource is requested, the serverless infrastructure is responsible for converting the published content into semantic HTML and serves as the origin to the CDN.
 
-The conversion to semantic HTML happens from the published content served from the AEM author tier or the document-based authoring environment.
+The conversion to semantic HTML happens from the published content served from the AEM author tier or the Document-based Authoring  environment.
 
-The following diagram illustrates how you can edit Sites content in Microsoft Word (document-based authoring) and publish to Edge Delivery. It also shows the traditional AEM publishing method using the various editors.
+The following diagram illustrates how you can edit Sites content in Microsoft Word (Document-based Authoring ) and publish to Edge Delivery. It also shows the traditional AEM publishing method using the various editors.
 
 ![AEM Sites as a Cloud Service - with Edge Delivery Services](assets/architecture-aem-edge-author-publish.png "AEM Sites as a Cloud Service - with Edge Delivery Services")
 
@@ -225,7 +227,7 @@ The latest architecture for AEM as a Cloud Service introduces some fundamental c
   * [Onboarding Journey](/help/journey-onboarding/overview.md)
   * [Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 * Development Architecture
-  * [Cloud Manager Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
+  * [Cloud Manager Repositories](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
   * [CI/CD Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
   * [Code Quality Testing](/help/implementing/cloud-manager/code-quality-testing.md)
 * Edge Delivery Services:

@@ -4,6 +4,8 @@ description: Learn how to use AEM's Content Fragment models to create your conte
 hidefromtoc: yes
 index: no
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
+feature: Headless
+role: Admin, User, Developer
 ---
 
 # Create the Content Structure for Your App {#content-structure}
@@ -74,7 +76,7 @@ You already have a field for the title of the adventure. Now you must add fields
 
 >[!TIP]
 >
->The **Adventure** model is based on the WKND sample site for AEM. You can [visit the site here](https://wknd.site/us/en/adventures/yosemite-backpacking.html) to see content that uses the **Adventure** model.
+>The **Adventure** model is based on the WKND sample site for AEM. You can [visit the WKND site here](https://wknd.site/us/en/adventures/yosemite-backpacking.html) to see content that uses the **Adventure** model.
 
 Follow the same steps as above to add these additional fields. The only difference is the properties that you must set.
 

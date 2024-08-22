@@ -2,6 +2,9 @@
 title: Participating in Workflows
 description: Workflows typically include steps that require a person to perform an activity on a page or asset.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Participating in Workflows {#participating-in-workflows}
 

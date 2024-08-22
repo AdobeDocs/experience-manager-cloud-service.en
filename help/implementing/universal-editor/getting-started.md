@@ -2,6 +2,8 @@
 title: Getting Started with the Universal Editor in AEM
 description: Learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
+feature: Developing
+role: Admin, Architect, Developer
 ---
 
 # Getting Started with the Universal Editor in AEM {#getting-started}
@@ -12,30 +14,17 @@ Learn how to get access to the Universal Editor and how to start instrumenting y
 >
 >If you would prefer to dive right into an example, you can review the [Universal Editor Sample App on GitHub.](https://github.com/adobe/universal-editor-sample-editable-app)
 
-{{universal-editor-status}}
-
 ## Onboarding Steps {#onboarding}
 
 Although the Universal Editor can edit content from any source, this document will use an AEM app as an example.
 
 There are several steps to onboarding your AEM app and instrumenting it to use the Universal Editor.
 
-1. [Request access to the Universal Editor.](#request-access)
 1. [Include the Universal Editor core library.](#core-library)
 1. [Add the necessary OSGi configuration.](#osgi-configurations)
 1. [Instrument the page.](#instrument-page)
 
 This document will guide you through these steps.
-
-## Request Access to the Universal Editor {#request-access}
-
-You first need to request access to the Universal Editor. Open [`https://experience.adobe.com/#/aem/editor``](https://experience.adobe.com/#/aem/editor), sign in, and validate if you have access to the Universal Editor.
-
-In case you do not have access, it can be requested via a form linked on the same page.
-
-![Request access to the Universal Editor](assets/request-access.png)
-
-Click **Request access** and fill out the form as directed to request access. An Adobe representative will review your request and reach out to discuss your use case.
 
 ## Include the Universal Editor Core Library {#core-library}
 
@@ -149,7 +138,7 @@ data-aue-resource="urn:<referenceName>:<resource>"
 <body>
         <aside>
           <ul data-aue-resource="urn:aemconnection:/content/example/list" data-aue-type="container">
-            <li data-aue-resource="urn:aemconnection/content/example/listitem" data-aue-type="component">
+            <li data-aue-resource="urn:aemconnection:/content/example/listitem" data-aue-type="component">
               <p data-aue-prop="name" data-aue-type="text">Jane Doe</p>
               <p data-aue-prop="title" data-aue-type="text">Journalist</p>
               <img data-aue-prop="avatar" src="https://www.adobe.com/content/dam/cc/icons/Adobe_Corporate_Horizontal_Red_HEX.svg" data-aue-type="image" alt="avatar"/>
@@ -159,7 +148,7 @@ data-aue-resource="urn:<referenceName>:<resource>"
 
             <li data-aue-resource="urn:fcsconnection:/documents/mytext" data-aue-type="component">
               <p data-aue-prop="name" data-aue-type="text">John Smith</p>
-              <p data-aue-resource="urn:aemconnection/content/example/another-source" data-aue-prop="title" data-aue-type="text">Photographer</p>
+              <p data-aue-resource="urn:aemconnection:/content/example/another-source" data-aue-prop="title" data-aue-type="text">Photographer</p>
               <img data-aue-prop="avatar" src="https://www.adobe.com/content/dam/cc/icons/Adobe_Corporate_Horizontal_Red_HEX.svg" data-aue-type="image" alt="avatar"/>
             </li>
           </ul>
@@ -206,3 +195,4 @@ To learn more about the Universal Editor, see these documents.
 * [Universal Editor Architecture](architecture.md) - Learn about the architecture of the Universal Editor and how data flows between its services and layers.
 * [Attributes and Types](attributes-types.md) - Learn about the data attributes and types that the Universal Editor requires.
 * [Universal Editor Authentication](authentication.md) - Learn how the Universal Editor authenticates.
+

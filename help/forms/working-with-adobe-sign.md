@@ -3,7 +3,7 @@ title: How can we use Adobe Sign in an Adaptive Form?
 description: Use Adobe Sign in an Adaptive Form to allow form recipients to e-sign a form from device and place of their choice.
 topic-tags: develop
 feature: Adaptive Forms, Foundation Components
-role: User
+role: User, Developer
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
 ---
@@ -178,7 +178,7 @@ To select a Cloud Service and order of signing:
 
    >[!NOTE]
    >
-   > If an Adaptive Form is created using a Form Data Model, the Agreement ID field becomes visible in the dialog box.
+   > If an Adaptive Form is created using a Form Data Model(FDM), the Agreement ID field becomes visible in the dialog box.
 
 1. [Add recipients to an Adaptive Form](working-with-adobe-sign.md#addsignerstoanadaptiveform) and select the Done ![Save](assets/save_icon.svg) icon to save the changes.
 

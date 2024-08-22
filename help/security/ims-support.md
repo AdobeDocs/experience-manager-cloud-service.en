@@ -1,7 +1,9 @@
 ---
 title: IMS Support for Adobe Experience Manager as a Cloud Service
-description: Image Management System support for Adobe Experience Manager as a Cloud Service
+description: Image Management System support for Adobe Experience Manager as a Cloud Service.
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
+feature: Security
+role: Admin
 ---
 # IMS Support for Adobe Experience Manager as a Cloud Service {#ims-support-for-aem-as-a-cloud-service}
 
@@ -38,23 +40,23 @@ The user logon flow is shown below, the user is redirected to IMS and optionally
 
 The customer onboarding to Adobe Admin Console is a prerequisite to using Adobe IMS for AEM authentication.
 
-As the first step, customers must have an Organization provisioned in Adobe IMS. Adobe Enterprise customers are represented as IMS Organizations in the [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html). This area is the portal used by Adobe customers to manage their product entitlements for their users and groups.
+As the first step, customers must have an Organization that is provisioned in Adobe IMS. Adobe Enterprise customers are represented as IMS Organizations in the [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html). This area is the portal used by Adobe customers to manage their product entitlements for their users and groups.
 
-AEM customers should already have an Organization provisioned, and as part of the IMS provisioning, the customer instances are made available in Admin Console for managing user entitlements and access.
+AEM customers should already have an Organization that is provisioned, and as part of the IMS provisioning, the customer instances are made available in Admin Console for managing user entitlements and access.
 
 After a customer exists as an IMS Organization, they have to configure their system as summarized in the following:
 
 ![IMS Onboarding](/help/security/assets/ims2.png)
 
-1. The designated System Administrator receives an invite to log in to Cloud Manager. After logging into Cloud manager, the System Administrators can choose to provision AEM programs and environments or navigate to Admin Console for Administrative tasks.
+1. The designated System Administrator receives an invitation to log in to Cloud Manager. After logging into Cloud manager, the System Administrators can choose to provision AEM programs, and environments, or navigate to Admin Console for Administrative tasks.
 1. The System Administrator claims a domain to confirm the ownership of the respective domain (for example, acme.com)
 1. The System Administrator sets up User Directories
-1. The System Administrator does IDP configuration in Admin Console to set up Single Sign On.
+1. The System Administrator does IDP configuration in Admin Console to set up Single Sign-On.
 1. The AEM Administrator manages the local groups and permissions and privileges as usual.
 
-The Adobe Identity Management basics including IDP configuration are covered [here](https://helpx.adobe.com/enterprise/using/set-up-identity.html).
+The Adobe Identity Management basics including IDP configuration are covered under [Set up identity and Single Sign-On](https://helpx.adobe.com/enterprise/using/set-up-identity.html).
 
-Enterprise Administration and Admin Console usage is covered [here](https://helpx.adobe.com/enterprise/admin-guide.html).
+Enterprise Administration and Admin Console usage are covered under [Welcome to the enterprise and teams admin guide](https://helpx.adobe.com/enterprise/admin-guide.html).
 
 ### Onboarding Users in Admin Console {#onboarding-users-in-admin-console}
 
@@ -88,27 +90,29 @@ User Sync Tool is distributed through the Adobe GitHub repository [at this locat
 
 >[!NOTE]
 >
->A prerelease version **2.4RC1** is available with dynamic group creation support and can be found [here](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1).
+>A prerelease version **2.4RC1** is available with dynamic group creation support under [User Sync Tool v2.4rc1 on GitHub](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1).
 
 The major features for this release are the ability to dynamically map new LDAP groups for user membership in the Admin Console, and dynamic user group creation.
 
-More information about the new group features can be found [at this location](https://adobe-apiplatform.github.io/user-sync.py/en/user-manual/advanced_configuration.html#additional-group-options).
+More information about the new group features can be found at [Adobe User Sync Tool - Additional Group Options](https://adobe-apiplatform.github.io/user-sync.py/en/user-manual/advanced_configuration.html#additional-group-options).
 
 **User Sync Documentation**
 
-See [UST documentation](https://adobe-apiplatform.github.io/user-sync.py/en/) for more details.
+See:
 
-The User Sync Tool must register as an Adobe Developer client UMAPI using the procedure [here](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
+* [UST documentation](https://adobe-apiplatform.github.io/user-sync.py/en/) 
 
-Adobe Developer Console Documentation can be found [here](https://developer.adobe.com/developer-console/).
+* the User Sync Tool must register as an Adobe Developer client UMAPI using the procedure from [Authentication for API Access](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html)
 
-The User Management API that is used by the User Sync Tool is covered [here](https://adobe-apiplatform.github.io/user-sync.py/en/).
+* the [Adobe Developer Console Documentation](https://developer.adobe.com/developer-console/)
+
+* the [User Management API that is used by the User Sync Tool](https://adobe-apiplatform.github.io/user-sync.py/en/)
 
 ## Adobe Experience as a Cloud Service Configuration {#aem-configuration}
 
 >[!NOTE]
 >
->The AEM IMS configuration required is automatically configured when the AEM environments and instances are provisioned. However, the administrator may modify it as per their requirements using the method described [here](/help/implementing/deploying/overview.md).
+>The AEM IMS configuration required is automatically configured when the AEM environments and instances are provisioned. However, the administrator may modify it as per their requirements, see [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md).
 
 The AEM IMS configuration required is auto-configured when the AEM environments and instances are provisioned. Customer administrators may modify part of the configuration as per their requirements
 
@@ -152,7 +156,7 @@ AEM can continue to support local logins for Admin users. The logon screen lets 
 
 <!-- the above image must be updated for skyline -->
 
-**IMS Based Login**
+**IMS-Based Login**
 
 For other users, the IMS-based logon is used after IMS is configured on the instance. The user clicks the Sign-in with Adobe button as shown below:
 
@@ -204,10 +208,10 @@ As shown below, the group **AEM-GRP_008** inherits the permissions and privilege
 
 To be able to access Cloud Manager or to environments on AEM as a Cloud Service, you must be assigned to Profiles of the Cloud Manager Product.
 
-See Role Definitions to learn more about roles for users which govern the availability of specific features in Cloud Manager.
+See Role Definitions if you want to learn more about roles for users which govern the availability of specific features in Cloud Manager.
 
 >[!NOTE]
->Cloud Manager has pre-configured roles with appropriate permissions. To learn about each of the roles with specific permissions, pre-configured tasks, or permissions, associated with each role, see [Role-Based Permissions](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html).
+>Cloud Manager has pre-configured roles with appropriate permissions. To learn about each of the roles with specific permissions, pre-configured tasks, or permissions, associated with each role, see [Role-Based Permissions](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions).
 
 **Steps for Adding a User**
 

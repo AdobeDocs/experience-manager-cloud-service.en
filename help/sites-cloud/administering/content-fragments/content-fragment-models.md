@@ -4,6 +4,7 @@ description: Learn how Content Fragment Models serve as a foundation for your Co
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
+solution: Experience Manager Sites
 ---
 # Content Fragment Models {#content-fragment-models}
 

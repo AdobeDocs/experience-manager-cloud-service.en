@@ -2,6 +2,9 @@
 title: Experience Audit Testing
 description: Learn how Experience Audit validates your deployment process and helps ensure that changes deployed meet baseline standards for performance, accessibility, best practices, and SEO.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 
 # Experience Audit Testing {#experience-audit-testing}
@@ -25,15 +28,57 @@ Experience Audit in Cloud Manager ensures that the user's experience on the site
 
 The audit results are informational and allow the deployment manager to see the scores and the change between the current and previous scores. This insight is valuable to determine if there is a regression that was introduced with the current deployment.
 
-Experience Audit is powered by Google Lighthouse, an open source tool from Google and is enabled in all Cloud Manager production pipelines.
+Experience Audit is powered by Google Lighthouse, an open source tool from Google.
 
 >[!INFO]
 >
 >Effective August 31st, 2023, Experience Audit will transition to showcasing results specific to the mobile platform. Mobile performance metrics typically register lower than those of desktop, so you should anticipate a shift in the reported performance following this change.
 
->[!TIP]
->
->You configure what pages are included in the Experience Audit when you [set up your pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code).
+## Availability {#availability}
+
+Experience Audit is available for Cloud Manager:
+
+* Sites production pipelines, by default.
+* Front-end development pipelines, optionally.
+
+See the [Configuration section](#configuration) for more information on how to configure the audit for the optional environments.
+
+## Configuration {#configuration}
+
+Experience Audit is available by default for production pipelines. It can be be optionally enabled for front-end development pipelines. In all cases, you need to define which content paths are evaluated during pipeline execution.
+
+You configure what pages are included in the Experience Audit when you set up your pipeline.
+
+1. Depending on the type of pipeline you wish to configure, follow the directions to:
+
+   * Add a new [production pipeline,](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) if you wish to define the paths to be evaluated by the audit.
+   * Add a new [non-production pipeline,](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) if you wish to enable the audit on a front-end or development full-stack pipeline.
+   * Or you can [edit an existing pipeline,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) and update the existing options.
+
+1. If you are adding or editing a non-production pipeline for which you want to use Experience Audit, you must select the **Experience Audit** checkbox on the **Source Code** tab.
+
+   ![Enabling Experience Audit](assets/experience-audit-enable.jpg)
+
+   * This is only necessary for non-production pipelines.
+   * The **Experience Audit** tab appears when the checkbox is selected.
+
+1. For both production and non-production pipelines, you define the paths that should be included in the Experience Audit on the **Experience Audit** tab.
+
+   * Page paths must start with `/` and are relative to your site.
+   * For example, if your site is `wknd.site` and would like to include `https://wknd.site/us/en/about-us.html` in the Experience Audit, enter the path `/us/en/about-us.html`.
+
+   ![Defining a path for the Experience Audit](assets/experience-audit-add-page.png)
+
+1. Tap or click **Add Page** and the path is auto-completed with the address of your environment and added to the table of paths.
+
+   ![Saving path to the table](assets/experience-audit-page-added.png)
+
+1. Continue to add paths as necessary by repeating the previous two steps.
+
+   * You can add a maximum of 25 paths.
+   * If you do not define any paths, the homepage of the site is included in the Experience Audit by default.
+
+1. Click **Save** to save your pipeline.
 
 ## Understanding Experience Audit Results {#understanding-experience-audit-results}
 

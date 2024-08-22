@@ -4,6 +4,7 @@ description: Get an introduction to reusing content with AEM's powerful Live Cop
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
+solution: Experience Manager Sites
 ---
 # Reusing Content: Multi Site Manager and Live Copy {#multi-site-manager-and-live-copy}
 
@@ -135,6 +136,10 @@ MSM is directly accessible in the UI using various options from the appropriate 
 * **Blueprints** (**Tools** - **Sites**)
 
   * This console lets you [create and manage your blueprint configurations.](creating-live-copies.md#creating-a-blueprint-configuration)
+
+>[!NOTE]
+>
+>MSM can be used with both pages and [Experience Fragments](/help/sites-cloud/authoring/fragments/experience-fragments.md) as these fragments are part of an experience (page).
 
 >[!NOTE]
 >

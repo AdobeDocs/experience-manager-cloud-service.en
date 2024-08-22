@@ -2,6 +2,8 @@
 title: Readiness Phase
 description: Learn about the steps that you must take so you can make sure that your AEM installation is ready to be moved to the cloud.
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
+feature: Migration
+role: Admin
 ---
 # Readiness Phase {#readiness-phase}
 
@@ -30,7 +32,7 @@ AEM as a Cloud Service brings many new features and possibilities for managing y
 
 Along with these improvements, several differences have been introduced between on-premise installations of AEM and Adobe Managed Services, compared to AEM as a Cloud Service.
 
-The list of items in the below table is the subset of the changes most relevant for a migration to AEM as a Cloud Service. You can consult the full list of notable changes [here](/help/release-notes/aem-cloud-changes.md).
+The list of items in the below table is the subset of the changes most relevant for a migration to AEM as a Cloud Service. You can consult the full list of [Notable Changes to Adobe Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
 
 <table>
 <thead>

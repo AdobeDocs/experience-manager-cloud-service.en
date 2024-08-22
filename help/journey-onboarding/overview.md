@@ -3,6 +3,8 @@ title: AEM as a Cloud Service Onboarding Journey Introduction
 description: Start here for an overview of the guided journey through the onboarding process to AEM as a Cloud Service.
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 recommendations: noDisplay
+feature: Onboarding
+role: Admin, User, Developer
 ---
 
 # Onboarding Journey {#onboarding-journey}
@@ -11,7 +13,7 @@ Congratulations on choosing AEM as a Cloud Service! This document is your starti
 
 ## Introduction {#introduction}
 
-Adobe Experience Manager is a powerful suite of composable content services that rapidly deliver highly impactful, personalized experiences across any channel, unlocking content from all for all. **Edge Delivery Services** is the latest innovation in Adobe Experience Manager that enables extreme content velocity and delivers exceptional experiences. Learn how to get started with Edge Delivery Services, by visiting [this page](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html). To understand how to use Edge Delivery Services, see the [Developer Tutorial](https://www.hlx.live/developer/tutorial) page.
+Adobe Experience Manager is a powerful suite of composable content services that rapidly deliver highly impactful, personalized experiences across any channel, unlocking content from all for all. **Edge Delivery Services** is the latest innovation in Adobe Experience Manager that enables extreme content velocity and delivers exceptional experiences. Learn how to get started with Edge Delivery Services, by consulting [Edge Delivery Services Overview](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html). To understand how to use Edge Delivery Services, see the [Developer Tutorial](https://www.hlx.live/developer/tutorial) page.
 
 Onboarding is the process during which a designated system administrator sets up AEM as a Cloud Service for your organization. This process includes the initial provisioning of cloud resources and assigning users to roles based on their job responsibilities. As a result, each member is able to log on and access their resource on AEM as a Cloud Service.
 

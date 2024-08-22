@@ -1,8 +1,11 @@
 ---
 title: Undo and Redo Limitations
 description: Learn about the limitations of the undo and redo options in the AEM page editor.
+exl-id: 87773f47-5116-4966-9ba4-5deedb7c4fa6
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
-
 # Undo and Redo Limitations {#undo-redo}
 
 AEM stores a history of actions that you perform and the sequence in which you performed them so that you can undo multiple actions in the order that you performed them and redo them to re-apply one or more of the actions if necessary.

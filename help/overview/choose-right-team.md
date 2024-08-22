@@ -2,6 +2,8 @@
 title: Right People, right roles
 description: Learn how to choose the right people, and assign them to the right roles, for your project.
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
+feature: Release Information
+role: Admin
 ---
 # First, get the right people in the right roles {#get-the-right-people-in-the-right-roles}
 

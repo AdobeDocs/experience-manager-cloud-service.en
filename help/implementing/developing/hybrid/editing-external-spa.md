@@ -2,6 +2,8 @@
 title: Editing an External SPA within AEM
 description: This document describes the recommended steps to upload a standalone SPA to an AEM instance, add editable sections of content, and enable authoring.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Editing an External SPA within AEM {#editing-external-spa-within-aem}
 
@@ -354,7 +356,7 @@ To enable editing within AEM for this example SPA, the following steps are requi
 
 ## Framework Limitations {#framework-limitations}
 
-The RemotePage component expects that the implementation provides an asset-manifest like the one [found here](https://github.com/shellscape/webpack-manifest-plugin). The RemotePage component, however, has only been tested to work with the React framework (and Next.js via the remote-page-next component), and therefore does not support remotely loading applications from other frameworks, such as Angular.
+The RemotePage component expects that the implementation provides an asset-manifest like the [webpack-manifest-plugin on GitHub](https://github.com/shellscape/webpack-manifest-plugin). The RemotePage component, however, has only been tested to work with the React framework (and Next.js via the remote-page-next component), and therefore does not support remotely loading applications from other frameworks, such as Angular.
 
 ## Additional Resources {#additional-resources}
 

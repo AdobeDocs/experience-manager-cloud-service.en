@@ -4,6 +4,7 @@ description: Learn how Content Fragments in AEM as a Cloud Service allow you to 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
+solution: Experience Manager Sites
 ---
 # An overview of working with Content Fragments {#overview-working-with-content-fragments}
 
@@ -99,6 +100,8 @@ After the fragments have been created, you can:
 >* [Content Fragments Support in AEM Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [AEM GraphQL API for use with Content Fragments](/help/headless/graphql-api/content-fragments.md)
 >* [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md).
+>* The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) are also available.
+
 
 ## Main and Variations {#main-and-variations}
 

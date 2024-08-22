@@ -2,7 +2,7 @@
 title: How to Create a Custom Submit Action for an Adaptive Form?
 description: Learn how to create a custom Submit Action for an Adaptive Forms to delay submission and process data before submitting it to a rest endpoint, saving to a data store, and perform other custom functions.
 feature: Adaptive Forms, Foundation Components
-role: User
+role: User, Developer
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
 ---
@@ -91,7 +91,7 @@ A Submit Action is a sling:Folder that includes the following:
 
 * **addfields.jsp**: This script provides the action fields that are added to the HTML file during rendition. Use this script to add hidden input parameters required during submission in the post.POST.jsp script.
 * **dialog.xml**: This script is similar to the CQ Component dialog. It provides configuration information that the author customizes. The fields are displayed in the Submit Actions Tab in the Adaptive Form Edit dialog when you select the Submit Action.
-* **post.POST.jsp**: The Submit servlet calls this script with the data that you submit and the additional data in the previous sections. Any mention of running an action in this page implies running the post.POST.jsp script. To register the Submit Action with the Adaptive Forms to display in the Adaptive Form Edit dialog, add these properties to the sling:Folder:
+* **post.POST.jsp**: The Submit servlet calls this script with the data that you submit and the additional data in the previous sections. Any mention of running an action in this page implies running the post.POST.jsp script. To register the Submit Action with the Adaptive Forms to display in the Adaptive Form Edit dialog, add these properties to the `sling:Folder`:
 
     * **guideComponentType** of type String and value **fd/af/components/guidesubmittype**
     * **guideDataModel** of type String that specifies the type of Adaptive Form for which the Submit Action is applicable. <!--**xfa** is supported for XFA-based Adaptive Forms while -->**xsd** is supported for XSD-based Adaptive Forms. **basic** is supported for Adaptive Forms that do not use XDP or XSD. To display the action on multiple types of Adaptive Forms, add the corresponding strings. Separate each string by a comma. For example, to make an action visible on <!--XFA- and -->XSD-based Adaptive Forms, specify the value as <!--**xfa** and--> **xsd**.

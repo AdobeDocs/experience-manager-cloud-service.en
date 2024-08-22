@@ -1,8 +1,9 @@
 ---
 title: Permission considerations for headless content
 description: Learn about different permission and ACL considerations for a headless implementation with Adobe Experience Manager. Understand the different personas and potential permission levels needed for both Author and Publish environments.
-feature: Content Fragments,GraphQL API
+feature: Headless, Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
+role: Admin, Developer
 ---
 # Permission considerations for headless content
 
@@ -30,7 +31,7 @@ At a high level, the process is:
 
 >[!TIP]
 >
-> A detailed video walkthrough of managing IMS and AEM users and groups can be found [here](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html).
+>For a detailed video walkthrough of managing IMS and AEM users and groups see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html).
 
 To manage **groups** in AEM, navigate to **Tools** > **Security** > **Groups**.
 

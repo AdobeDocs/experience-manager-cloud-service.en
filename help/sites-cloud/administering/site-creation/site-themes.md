@@ -4,6 +4,7 @@ description: Learn how AEM site themes can be used to customize the style and de
 feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
+solution: Experience Manager Sites
 ---
 # Site Themes {#site-themes}
 

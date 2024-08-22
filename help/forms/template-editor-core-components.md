@@ -4,6 +4,7 @@ description: Create Adaptive Form templates based on core component to define th
 feature: Adaptive Forms, Core Components
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
+role: User, Developer
 ---
 # Create an Adaptive Form template based on Core Components {#adaptive-form-templates}
 
@@ -158,7 +159,7 @@ Authors can associate a [!UICONTROL Form Data Model Schema] to an Adaptive Form 
 1. Select **[!UICONTROL Content Browser]** located on the left-hand side.
 1. Go to the form container **[!UICONTROL Setting]**.
 1. Select **[!UICONTROL Data Model]**. 
-1. Choose your form data model through **[!UICONTROL Select Form Data Model]** and save the configuration.
+1. Choose your form data model (FDM) through **[!UICONTROL Select Form Data Model]** and save the configuration.
 
 ![Form-Data-Model-Association-in-Forms](/help/forms/assets/select-form-data-model-img-core-component.png)
 

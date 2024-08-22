@@ -2,6 +2,9 @@
 title: Managing Projects
 description: Projects lets you organize your project by grouping resources into one entity which can be accessed and managed in the Projects console
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Managing Projects {#managing-projects}
 
@@ -83,7 +86,7 @@ To add items to a Tile:
 
    ![Add item to a tile](/help/sites-cloud/authoring/assets/project-workflows.png)
 
-1. Add an item to the tile as you would when creating a tile. Project tiles are described [here](/help/sites-cloud/authoring/projects/overview.md#project-tiles). In this example, another workflow was added.
+1. Add an item to the tile as you would when creating a tile. See [Project tiles](/help/sites-cloud/authoring/projects/overview.md#project-tiles) for more details. In this example, another workflow was added.
 
 ### Opening a Tile {#opening-a-tile}
 

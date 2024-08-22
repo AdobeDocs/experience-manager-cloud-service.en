@@ -3,8 +3,10 @@ Title: How to send an email on submission of an Adaptive Form?
 Description: Explore the process to set up email notifications when submitting an Adaptive Form.
 keywords: how to send an email for an adpative form, Email Submit Action, Adaptive Form Email, Form Submission Email, Send Email Guide
 feature: Adaptive Forms, Core Components
+exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
+title: "How to configure a Submit Action for an Adaptive Form?"
+role: User, Developer
 ---
-
 # Configure the Send Email submit action for an Adaptive Form
 
 The **[!UICONTROL Send Email]** Submit Action enables you to send an email to one or more recipients upon successful submission of the form. This Submit Action enables you to create an email that can include form data in a predefined format. For instance, consider the following template where customer name, shipping address, state name, and ZIP code are retrieved from the submitted form data:
@@ -63,5 +65,3 @@ To configure the Submit Action:
 ## Related Articles
 
 {{af-submit-action}}
-
-

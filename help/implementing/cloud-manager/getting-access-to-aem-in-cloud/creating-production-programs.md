@@ -2,6 +2,9 @@
 title: Creating Production Programs 
 description: Learn how to use Cloud Manager to create your own production program to host live traffic.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 
 # Creating Production Programs {#create-production-program}
@@ -16,7 +19,7 @@ Follow these steps to create a production program. Note that depending on your o
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, tap or click **Add Program** in the top-right corner of the screen.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, tap or click **Add Program** in the top-right corner of the screen.
 
    ![Cloud manager landing page](assets/log-in.png) 
 
@@ -42,7 +45,7 @@ Follow these steps to create a production program. Note that depending on your o
 
 1. On the **Go-Live Date** tab, enter the date you plan your production program to go live.
 
-   ![Define planned go-live date](assets/setup-go-live.png)
+   ![Define planned go-live date](assets/set-up-go-live.png)
 
    * This date can be edited at any time.
    * This date is for informational use only and triggers the Go Live widget on the [**Program Overview** page](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview) to provide in-product links to AEM as a Cloud Service best practice documentation in a timely manner to align with your journey culminating in a successful and smooth Go Live experience.
@@ -78,7 +81,7 @@ Adobe HIPAA Compliant and Web Application Firewall (WAF) facilitates cloud-based
 
 If you have the necessary entitlements, the **SLA** tab will be shown as the second or third tab in the **Set up for Production** dialog.
 
-AEM Sites offers a standard 99.9% service level agreement (SLA). The **99.99% Service Level Agreement** option enables a 99.99% minimum uptime percentage for your production environments.
+AEM Sites and Forms offer a standard 99.9% service level agreement (SLA). The **99.99% Service Level Agreement** option enables a 99.99% minimum uptime percentage for your production environments for Sites and/or Forms.
 
 99.99% SLA offers benefits including higher availability and lower latency, and requires an [additional publish region](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) to be applied to the production environment in the program.
 
@@ -96,8 +99,8 @@ Beyond the required entitlements, 99.99% SLA has additional requirements for use
 * In order for the 99.99% SLA and reporting to be activated, the [production/stage environment](/help/implementing/cloud-manager/manage-environments.md#adding-environments) must have been created and at least one additional publish region must have been applied on the production/stage environment.
   * If using [advanced networking,](/help/security/configuring-advanced-networking.md) make sure to check the [Adding Multiple Publish Regions to a New Environment](/help/implementing/cloud-manager/manage-environments.md#adding-regions) document for recommendations so that connectivity is maintained in the event of regional failure.
 * At least one additional publish region must remain in your 99.99% SLA program. Users are disallowed from deleting the last additional publish region from your 99.99% SLA program.
-* 99.99% SLA is supported for production programs that have the Sites solution enabled.
-* You must run a [full stack pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) in order to activate (or, when editing a program, deactive) the 99.99% SLA.
+* 99.99% SLA is supported for production programs that have the Sites or Forms solution enabled.
+* You must run a [full stack pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) in order to activate (or, when editing a program, deactivate) the 99.99% SLA.
 
 ## Access Your Program {#accessing}
 
@@ -111,9 +114,9 @@ Beyond the required entitlements, 99.99% SLA has additional requirements for use
 
    ![Program overview](assets/set-up-prod5.png)
 
-If at any time you need to switch to another program or return to the overview page to create another program, click your program name in the top-left of the screen to reveal the **Navigate to** option.
-
-![Navigate to](assets/create-program-a1.png)
+>[!TIP]
+>
+>Please see the document [Navigating the Cloud Manager UI](/help/implementing/cloud-manager/navigation.md) for details on how to navigate Cloud Manager and understanding the **My Programs** console.
 
 >[!NOTE]
 >

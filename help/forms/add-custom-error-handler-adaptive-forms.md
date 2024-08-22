@@ -6,6 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
+role: User, Developer
 ---
 # Add Custom Error Handlers in AEM Adaptive Forms {#error-handlers-in-adaptive-form}
 
@@ -173,7 +174,7 @@ Using the [Rule Editor's Invoke Service](https://experienceleague.adobe.com/docs
 
 >[!NOTE]
 >
-> * To use error handlers with the Rule Editor's Invoke service action, configure Adaptive Forms with a form data model. 
+> * To use error handlers with the Rule Editor's Invoke service action, configure Adaptive Forms with a form data model (FDM). 
 > * A default error handler is provided to display error messages on fields if the error response is in the standard schema. You can also call the default error handler from the custom error handler function. 
 
 Using Rule Editor, you can:
@@ -333,7 +334,7 @@ Before adding custom handler, you must configure the adaptive form for asynchron
 1. Select **[!UICONTROL Revalidate on server]** to validate the input field values on server before submission.
 1. Select the Submit Action:
 
-    * Select **[!UICONTROL Submit using Form Data Model]** and select the appropriate data model, if you are using RESTful web service based [form data model](work-with-form-data-model.md) as the data source.
+    * Select **[!UICONTROL Submit using Form Data Model (FDM)]** and select the appropriate data model, if you are using RESTful web service based [form data model (FDM)](work-with-form-data-model.md) as the data source.
     * Select **[!UICONTROL Submit to REST Service endpoint]** and specify the **[!UICONTROL Redirect URL/Path]**, if you are using RESTful web services as the data source.
 
     ![adaptive form submission properties](assets/af_submission_properties.png)
@@ -374,7 +375,7 @@ if (data) {
         }
 
         if (errorData) {
-            Object.keys(errorData).forEach(function(key) {
+            Object.keys (errorData).forEach(function(key) {
                 var som_key = som_map[key];
                 if (som_key) {
                     var error = {};

@@ -3,6 +3,7 @@ title: Access Cloud Manager
 description: Learn how to access Cloud Manager so that you can set up your project resources.
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
+feature: Onboarding
 ---
 # Access Cloud Manager {#cloud-resources}
 
@@ -103,8 +104,6 @@ If programs exist in your organization and you are a system administrator, then 
 Once you have successfully logged into Cloud Manager, you can verify that you have been assigned the **Business Owner** product profile.
 
 1. Select your profile from the top right of the window.
-
-   ![User profile](/help/journey-onboarding/assets/setup-resources5.png)
 
 1. To display the roles assigned to your user, select **User Roles**.
 

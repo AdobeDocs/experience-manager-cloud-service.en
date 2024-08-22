@@ -1,8 +1,10 @@
 ---
 title: Universal Editor Events
 description: Learn about the different events that the Universal Editor sends that you can use to react to content or UI changes in your remote app.
+exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
+feature: Developing
+role: Admin, Architect, Developer
 ---
-
 # Universal Editor Events {#events}
 
 Learn about the different events that the Universal Editor sends that you can use to react to content or UI changes in your remote app.
@@ -271,3 +273,4 @@ The payload is empty for this event.
 ## Additional Resources {#additional-resources}
 
 * [Universal Editor Calls](/help/implementing/universal-editor/calls.md)
+

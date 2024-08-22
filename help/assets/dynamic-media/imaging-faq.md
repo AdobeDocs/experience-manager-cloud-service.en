@@ -2,7 +2,7 @@
 title: Smart Imaging
 description: Learn how Smart Imaging with Adobe Sensei AI applies each user's unique viewing characteristics to automatically serve the right images optimized for their experience, resulting in better performance and engagement.
 contentOwner: Rick Brough
-feature: Asset Management,Renditions
+feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
@@ -24,11 +24,12 @@ And now, get a better Google Core Web Vital score for LCP (Largest Contentful Pa
 >Try out and discover the benefits of Dynamic Media image modifiers and Smart Imaging, using Dynamic Media [_Snapshot_](https://snapshot.scene7.com/).
 >
 > Snapshot is a visual demonstration tool, designed to illustrate the power of Dynamic Media for optimized and dynamic image delivery. Experiment with test images or Dynamic Media URLs, to visually observe the output of various Dynamic Media image modifiers, and Smart Imaging optimizations for the following:
+>
 >* File size (with WebP and AVIF delivery)
 >* Network bandwidth
 >* DPR (Device Pixel Ratio) 
 >
->To learn how easy it is to use Snapshot, play the [Snapshot training video](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html?lang=en ) (3 minutes and 17 seconds).
+>To learn how easy it is to use Snapshot, play the [Snapshot training video](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html?lang=en) (3 minutes and 17 seconds).
 
 Smart Imaging benefits from the added performance boost of being fully integrated with Adobe's best-in-class premium CDN (Content Delivery Network) service. This service finds the optimal Internet route between servers, networks, and peering points. It finds a route that has the lowest latency and lowest packet loss rate instead of using the default route on the Internet.
 
@@ -56,7 +57,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 **Benefits of Smart Imaging**
 
-Smart Imaging provides better image delivery performance by automatically optimizing image file size based on client browser in use, the device display & network conditions. Because images constitute most of a page's load time, any performance improvement can have a profound impact on business KPIs such as higher conversion rates, time spent on a site, and lower site bounce rates.
+Smart Imaging provides better image delivery performance by automatically optimizing image file size based on client browser in use, the device display, and network conditions. Because images constitute most of a page's load time, any performance improvement can have a profound impact on business KPIs such as higher conversion rates, time spent on a site, and lower site bounce rates.
 
 The newest key benefits of the latest Smart Imaging include the following:
 
@@ -66,7 +67,7 @@ The newest key benefits of the latest Smart Imaging include the following:
 * [Device Pixel Ratio](#dpr)
 * [Network bandwidth](#bandwidth)
 
-### About Browser Format Conversion {#bfc}
+### About browser format Conversion {#bfc}
 
 Turning on Browser Format Conversion by appending `bfc=on` to the image URL automatically converts JPEG and PNG to lossy AVIF, lossy WebP, lossy JPEGXR, lossy JPEG2000 for different browsers. For browsers that do not support those formats, Smart Imaging continues to serve the JPEG or PNG. Along with the format, the quality of the new format is recalculated by Smart Imaging.
 
@@ -74,7 +75,7 @@ Smart Imaging can also be turned off by appending `bfc=off` to the image's URL.
 
 See also [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=en) in the Dynamic Media Image Serving and Rendering API.
 
-### About Device Pixel Ratio optimization {#dpr}
+### About device pixel ratio optimization {#dpr}
 
 Device Pixel Ratio (DPR) &ndash; also known as CSS pixel ratio &ndash; is the relation between a device's physical pixels and logical pixels. Especially with the advent of retina screens, the pixel resolution of modern mobile devices is growing at a fast rate.
 
@@ -99,7 +100,7 @@ Currently, the pixel density of the display comes from Akamai CDN header values.
 
 See also [When working with images](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) and [When working with Smart Crop](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
 
-### About Network Bandwidth optimization {#bandwidth}
+### About network bandwidth optimization {#bandwidth}
 
 Turning on Network Bandwidth automatically adjusts the image quality that is served based on actual network bandwidth. For poor network bandwidth, DPR (Device Pixel Ratio) optimization is automatically turned off, even if it is already on.
 
@@ -127,13 +128,15 @@ When an image is requested by a consumer, Smart Imaging checks the user characte
 * Automatically convert to AVIF if browser supports the format
 * Automatically convert to WebP if AVIF conversion was not beneficial or browser does not support AVIF
 * Automatically convert to JPEG2000 if Safari does not support WebP
-* Automatically convert to JPEGXR for IE 9+ or if Edge does not support WebP  
-    | Image format | Supported browsers |
-    |---|---|
-    | AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) |
-    | WebP | [https://caniuse.com/webp](https://caniuse.com/webp) |
-    | JPEG 2000 | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) |
-    | JPEGXR | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
+* Automatically convert to JPEGXR for IE 9+ or if Edge does not support WebP
+
+  | Image format | Supported browsers |
+  |---|---|
+  | AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) |
+  | WebP | [https://caniuse.com/webp](https://caniuse.com/webp) |
+  | JPEG 2000 | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) |
+  | JPEGXR | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
+
 * For browsers that do not support these formats, the originally requested image format is served. 
 
 If the original image size is smaller than what Smart Imaging produces, then the original image is served.
@@ -153,7 +156,7 @@ For image file formats that support transparency like PNG, you can configure Sma
 
 The Image Serving commands `fmt` and `qlt` are not supported; all remaining commands are supported.
 
-## Frequently Asked Questions about Smart Imaging{#smart-imaging-faq}
+## Frequently asked questions about Smart Imaging{#smart-imaging-faq}
 
 +++**Are there licensing costs associated with Smart Imaging?**
 
@@ -471,5 +474,5 @@ See also [When working with images](/help/assets/dynamic-media/adding-dynamic-me
 
 >[!MORELIKETHIS]
 >
->* [Image optimization with next generation image formats WebP and AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4) -->
->
+>* [Image optimization with next generation image formats WebP and AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4) 
+-->

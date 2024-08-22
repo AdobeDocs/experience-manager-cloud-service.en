@@ -1,61 +1,95 @@
 ---
-title: Adding an SSL Certificate
+title: Add an SSL Certificate
 description: Learn how to add your own SSL certificate using Cloud Manager's self-service tools.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
-# Adding an SSL Certificate {#adding-an-ssl-certificate}
+
+# Add an SSL certificate {#adding-an-ssl-certificate}
 
 Learn how to add your own SSL certificate using Cloud Manager's self-service tools.
 
 >[!TIP]
 >
->A certificate can take a few days to provision. Adobe therefore recommends that the certificate is provisioned well in advance.
+>A certificate can take a few days to provision. Adobe therefore recommends that the certificate be provisioned well in advance of any deadline or go-live date.
 
-## Certificate Requirements {#certificate-requirements}
+## Certificate requirements {#certificate-requirements}
 
-Review the section **Certificate Requirements** of the document [Introduction to Managing SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) to ensure that the certificate you want to add is supported by AEM as a Cloud Service.
+Review **Certificate Requirements** in [Introduction to Managing SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) to make sure AEM as a Cloud Service supports the certificate that you want to add.
 
-## Adding a Certificate {#adding-a-cert}
-
-Follow these steps to add a certificate using Cloud Manager.
+## Add a certificate {#adding-a-cert}
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization 
 
-1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, select the program.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
 
-1. Navigate to **Environments** screen from the **Overview** page.
+1. Navigate to the **Environments** screen from the **Overview** page.
 
-1. Click **SSL Certificates** from the left navigation panel. A table with details of any existing SSL certificates are displayed on the main screen.
+1. From the left navigation panel, under **Services**, click **SSL Certificates**. (In necessary, you may need to click the hamburger icon in the upper-left corner to need the navigation panel. A table with details of any existing SSL certificates is displayed.
 
-   ![Adding an SSL cert](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
+   ![Adding a SSL cert](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
-1. Click **Add SSL Certificate** to open **Add SSL Certificate** dialog box.
+1. Click **Add SSL Certificate** to open the **Add SSL Certificate** dialog box.
 
-   * Enter a name for your certificate in **Certificate Name**.
-     * This is for informational purposes only and can be any name that helps you reference your certificate easily.
-   * Paste the **Certificate**, **Private key**, and **Certificate chain** values into their respective fields. All three fields are mandatory.
+   * Enter a name for your certificate in **Certificate Name**. This field is for informational purposes only and can be any name that helps you reference your certificate easily.
+   * Paste the **Certificate**, **Private key**, and **Certificate chain** values into their respective fields. All three fields are required.
 
-   ![Add SSL Certificate dialog](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
+   ![Add SSL Certificate dialog box](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
   
-   * Any errors detected are displayed.
-     * You must address all errors before your certificate can be saved.
-     * See [Certificate Errors](#certificate-errors) section to learn more about addressing common errors.
+   * Any detected errors in values are displayed. Before you can save your certificate, you must address all errors.
+     See [Certificate errors](#certificate-errors) to learn more about addressing common errors.
 
-1. Click **Save** to save your certificate.
+1. Click **Save**.
 
-Once saved, you see your certificate displayed as a new row in the table.
-
-![Saved SSL certificate](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
+![Saved SSL certificate](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)Your certificate is now displayed as a new row in the table, similar to the image above.
 
 >[!NOTE]
 >
 >A user must be a member of the **Business Owner** or **Deployment Manager** role to install an SSL certificate in Cloud Manager.
 
-## Certificate Errors {#certificate-errors}
+## Certificate errors {#certificate-errors}
 
 Certain errors may arise if a certificate is not installed properly or meet the requirements of Cloud Manager.
 
-### Certificate Policy {#certificate-policy}
+### Correct certificate order {#correct-certificate-order}
+
+The most common reason for a certificate deployment to fail is that the intermediate or chain certificates are not in the correct order.
+
+Intermediate certificate files must end with the root certificate or the certificate most proximate to the root. They must be in descending order from the `main/server` certificate to the root. 
+
+You can determine the order of your intermediate files using the following command.
+
+```shell
+openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout
+```
+
+You can verify that the private key and `main/server` certificate match using the following commands.
+
+```shell
+openssl x509 -noout -modulus -in certificate.pem | openssl md5
+```
+
+```shell
+openssl rsa -noout -modulus -in ssl.key | openssl md5
+```
+
+>[!NOTE]
+>
+>The output of these two commands must be exactly the same. If you cannot locate a matching private key for your `main/server` certificate, you are required to re-key the certificate by generating a new CSR and/or requesting an updated certificate from your SSL vendor.
+
+### Remove client certificates {#client-certificates}
+
+When adding a certificate, if you receive an error similar to the following:
+
+```text
+The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.
+```
+
+You likely included the client certificate in the certificate chain. Make sure that the chain does not include the client certificate and try again.
+
+### Certificate policy {#certificate-policy}
 
 If you see the following error, check the policy of your certificate.
 
@@ -63,7 +97,7 @@ If you see the following error, check the policy of your certificate.
 Certificate policy must conform with EV or OV, and not DV policy.
 ```
 
-Normally certificate policies are identified by embedded OID values. Outputting a certificate to text and searching for the OID will reveal the certificate's policy.
+Embedded OID values normally identify certificate policies. Outputting a certificate to text and searching for the OID reveals the certificate's policy.
 
 You can output your certificate detail as text using the following example as a guide.
 
@@ -105,32 +139,13 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
 openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 ```
 
-### Correct Certificate Order {#correct-certificate-order}
+### Certificate validity dates {#certificate-validity-dates}
 
-The most common reason for a certificate deployment to fail is that the intermediate or chain certificates are not in the correct order.
+Cloud Manager expects the SSL certificate to be valid for at least 90 days from the current date. Check the validity of the certificate chain.
 
-Intermediate certificate files must end with the root certificate or the certificate most proximate to the root. They must be in descending order from the `main/server` certificate to the root. 
+## Next steps {#next-steps}
 
-You can determine the order of your intermediate files using the following command.
+Congratulations! You now have a working SSL certificate for your project. This step is often the first to set up a custom domain name.
 
-```shell
-openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout
-```
-
-You can verify that the private key and `main/server` certificate match using the following commands.
-
-```shell
-openssl x509 -noout -modulus -in certificate.pem | openssl md5
-```
-
-```shell
-openssl rsa -noout -modulus -in ssl.key | openssl md5
-```
-
->[!NOTE]
->
->The output of these two commands must be exactly the same. If you cannot locate a matching private key for your `main/server` certificate, you are required to re-key the certificate by generating a new CSR and/or requesting an updated certificate from your SSL vendor.
-
-### Certificate Validity Dates {#certificate-validity-dates}
-
-Cloud Manager expects the SSL certificate to be valid for at least 90 days from the current date. You should check the validity of the certificate chain.
+* To set up a custom domain name, see [Add a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+* To learn about updating and managing your SSL certificates in Cloud Manager, see [Manage SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md).

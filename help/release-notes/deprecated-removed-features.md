@@ -2,6 +2,8 @@
 title: Deprecated and Removed Features
 description: Release notes specific to deprecated and removed features in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
+feature: Release Information
+role: Admin
 ---
 # Deprecated and Removed Features and APIs {#deprecated-and-removed-features-apis}
 
@@ -36,6 +38,7 @@ Customers are advised to review if they use the feature/capability in their curr
 | [!DNL Assets]       | FFmpeg transcoding of videos. | For FFmpeg thumbnail generation, use [Asset microservices](/help/assets/asset-microservices-overview.md). For FFmpeg transcoding, use [Dynamic Media](/help/assets/manage-video-assets.md). |
 | [!DNL Foundation]       | Tree replication UI under the replication agent's "Distribute" tab (removal after September 30, 2021) | [Manage publication](/help/operations/replication.md#manage-publication) or [publish content tree workflow](/help/operations/replication.md#publish-content-tree-workflow) approaches |
 | [!DNL Foundation]       | Neither the replication agent admin screen's Distribute tab nor the Replication API can be used to replicate content packages over 10MB. Instead, use either [Manage publication](/help/operations/replication.md#manage-publication) or [publish content tree workflow](/help/operations/replication.md#publish-content-tree-workflow) |
+| [!DNL Foundation]       | Integrations using credentials generated from Adobe Developer Console projects will gradually lose support for Service Account (JWT) credentials. New Service Account (JWT) credentials cannot be created in Adobe Developer Console on or after May 1, 2024, although existing Service Account (JWT) credentials can still be used for already-configured integrations until January 1, 2025, at which time existing Service Account (JWT) credentials will no longer work, and customers must migrate to OAuth Server-to-Server credentials. [Learn more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console).| [Migrate](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) to OAuth Server-to-Server credentials. |
 
 ## Removed Features {#removed-features}
 
@@ -52,6 +55,8 @@ This section lists features and capabilities that have been removed from [!DNL E
 | [!DNL Foundation]       | Suppport for JST scripting templates (OSGi bundle org.apache.sling.scripting.jst) | N/A | Removed |
 | [!DNL Foundation]       | Support for the Apache Felix Http Whiteboard | OSGi Http Whiteboard | March 2022 |
 | [!DNL Foundation]       | Support for com.adobe.granite.oauth.server | Adobe IMS Integration | March 2023 |
+| [!DNL Foundation]       | Support for org.apache.sling.serviceusermapping feature to [get the service user id](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | N/A | 8/30/24 |
+
 
 ## AEM APIs {#aem-apis}
 
@@ -261,6 +266,17 @@ Below is an extensive list of deprecated AEM APIs and their expected removal dat
     <td>5/15/2023</td>
     <td>6/15/2023</td>
   </tr>
+  <tr>
+    <td>org.slf4j.event	</td>
+    <td>This internal slf4j API is not supported by AEM as a Cloud Service</td>
+    <td>4/11/2022</td>
+    <td>8/30/2024</td>
+  </tr>
+    <td>org.apache.sling.repoinit.jcr<br>org.apache.sling.repoinit.parser.operations</td>
+    <td>Usage of this API is not supported in AEM as a Cloud Service.</td>
+    <td>5/17/2024</td>
+    <td>6/30/2024</td>
+  </tr>  
 </tbody>
 </table>
 </details>

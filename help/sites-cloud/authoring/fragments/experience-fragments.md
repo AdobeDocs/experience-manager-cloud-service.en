@@ -1,7 +1,10 @@
 ---
 title: Experience Fragments
-description: Use Adobe Experience Manager as a Cloud Service Experience Fragments to make your experiences reusable and flexible.
+description: Use Experience Fragments in Adobe Experience Manager as a Cloud Service to make your experiences reusable and flexible.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
+solution: Experience Manager Sites
+feature: Authoring, Experience Fragments
+role: User
 ---
 # Experience Fragments {#experience-fragments}
 
@@ -15,7 +18,7 @@ Within Adobe Experience Manager as a Cloud Service, an Experience Fragment:
 An Experience Fragment:
 
 * Is a part of an experience (page).
-* Can be used across multiple pages.
+* Can be used across multiple pages (that are based on editable templates).
 * Is based on a template (editable only) to define structure and components.
 * This template is used to create the *root page* of the Experience Fragment. 
 * Is made up of one or more components, with layout, in a paragraph system.
@@ -32,6 +35,7 @@ You can use Experience Fragments:
   Experience Fragments eliminate the need for copy/paste.
 * To support the headless CMS use-case. 
   Authors want to use AEM only for authoring but not for delivering to the customer. A third-party system/touchpoint would consume that experience and then deliver to the user.
+* With [Multi Site Management (MSM)](/help/sites-cloud/administering/msm/overview.md); as an Experience Fragment is part of a page. This applies to both the individual fragments and the folders they reside in.
 
 >[!NOTE]
 >
@@ -231,6 +235,10 @@ You can create variations of your Experience Fragment, depending on your needs:
     * **Variation**
     * **Variation as live-copy**.
 
+      >[!NOTE]
+      >
+      >Creating an initial Variation as Live Copy will inherit the title by using the Live Copy Source as the Master Variation.
+
 1. Define the required properties:
 
     * **Template**
@@ -251,6 +259,10 @@ You can create variations of your Experience Fragment, depending on your needs:
 You can now use your Experience Fragment when authoring your pages:
 
 1. Open any page for editing.
+
+   >[!NOTE]
+   >
+   >The page must be based on an editable template.
 
 1. Create an instance of the Experience Fragment component, within the page paragraph system:
 
