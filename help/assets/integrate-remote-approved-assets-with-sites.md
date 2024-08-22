@@ -1,6 +1,6 @@
 ---
 title: Integrate remote AEM Assets with AEM Sites
-description: Learn how to configure and connect AEM sites  with Approved AEM Assets in Creative Cloud.
+description: Learn how to configure and connect AEM sites  with Approved AEM Assets.
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
 ---
 # Integrate remote AEM Assets with AEM Sites  {#integrate-approved-assets}
@@ -17,7 +17,7 @@ After the initial setup, users can create pages on the AEM Sites instance and ad
 
 Dynamic Media with OpenAPI capabilities offers several other benefits such as accessing and using remote assets in Content Fragment, fetching metadata of the remote assets and much more. Know more about the other [benefits of Dynamic Media with OpenAPI capabilities over Connected Assets](/help/assets/dynamic-media-open-apis-faqs.md). 
 
-## Before you begin {#pre-requisits-sites-integration}
+## Before you begin {#pre-requisites-sites-integration}
 
 Support for remote assets using Dynamic Media with OpenAPI capabilities requires:
 
@@ -31,21 +31,28 @@ Support for remote assets using Dynamic Media with OpenAPI capabilities requires
     `pXXXX` refers to the program ID <br>
     `eYYYY` refers to the environment ID
 
-    * ASSET_DELIVERY_IMS_CLIENT= [IMSClientId]
+    These variables are set using Cloud Manager user interface of the AEM as a Cloud Service environment acting as your local Sites instance. 
 
-    or configure the [OSGi settings](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html) for AEM 6.5 in the AEM Sites instance by following these steps:
+    * ASSET_DELIVERY_IMS_CLIENT= [IMSClientId]: You need to submit an Adobe support ticket to get the IMS Client ID.
+
+      or configure the [OSGi settings](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html) for AEM 6.5 in the AEM Sites instance by following these steps:
     
     1. Sign in to the console and click **[!UICONTROL OSGi] >** or
-    use the direct URL; for example: `http://localhost:4502/system/console/configMgr`
+    use the direct URL; for example: `https://localhost:4502/system/console/configMgr`
 
     1. Configure the **Next Generation Dynamic Media Config** (`NextGenDynamicMediaConfigImpl`) OSGi configuration as follows, replacing the values with those of your remote assets environment.
 
        ```text
-         imsClient="<ims-client-name>"
+         imsClient="<ims-client-ID>"
          enabled=B"true"
          imsOrg="<ims-org>@AdobeOrg"
          repositoryId="<repo-id>.adobeaemcloud.com"
        ```
+
+       `imsOrg` is not a manadatory input.
+       `repositoryId` = "delivery-pxxxxx-eyyyyyy.adobeaemcloud.com" 
+        where `pXXXX` refers to the program ID 
+        `eYYYY` refers to the environment ID
 
        ![The Next Generation Dynamic Media Config OSGi configuration window](/help/assets/assets/remote-assets-osgi.png)
 
@@ -56,7 +63,7 @@ Support for remote assets using Dynamic Media with OpenAPI capabilities requires
    * [Configuring OSGi for Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html) for AEM as a Cloud Service
    * [Configuring OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html) for AEM 6.5
 
-* IMS access to sign into remote DAM AEM as a Cloud Service instance.
+* IMS access to sign into remote DAM AEM as a Cloud Service instance. It refers to the Sites author that has IMS access to the remote DAM environment.
 
 * Configure the Image v3 component in the AEM Sites instance. If the component is not present, download and install the [content package](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.23.0).
 
@@ -77,7 +84,6 @@ Dynamic Media with OpenAPI capabilities allows you to access assets available in
 Follow the below steps to use remote assets within AEM Page Editor on your AEM Sites instance. You can do this integration in AEM as a Cloud Service and AEM 6.5.
 
 1. Go to **[!UICONTROL Sites]** > _your website_ where the AEM **[!UICONTROL Page]** is present within which you need to add the remote asset.
-1. Navigate to the specific AEM **[!UICONTROL Page]** within your website under the **[!UICONTROL Sites]** section where you intend to add the remote asset.
 1. Select the page and click **[!UICONTROL Edit (_e_)]**. The AEM **[!UICONTROL Page Editor]** opens.
 1. Click the Layout Container and add an **[!UICONTROL Image]** component.   
 1. Click the **[!UICONTROL Image]** component and click ![settings icon](/help/assets/assets/do-not-localize/settings-icon.svg) icon.
