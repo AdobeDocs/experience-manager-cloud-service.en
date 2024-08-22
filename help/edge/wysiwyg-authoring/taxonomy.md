@@ -85,3 +85,4 @@ You must republish your taxonomy page every time you:
 
 Once your taxonomy is published, its information can be leveraged by the Universal Editor and made visible to your users.
 
+[If you maintain tags in multiple languages,](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages) you can access those languages by passing in the ISO2 language code as the value of a `sheet=` parameter.
