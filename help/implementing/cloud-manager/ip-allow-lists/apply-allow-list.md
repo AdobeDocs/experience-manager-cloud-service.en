@@ -11,9 +11,7 @@ role: Admin, Architect, Developer
 
 When applying IP Allow Lists, all IP ranges included in the list's definition are associated with an author or publish service within an environment. Unapplying a list is the inverse to this process.
 
->[!IMPORTANT]
->
->To avoid disruption of running the front-end pipeline, ensure that the [Cloud Manager IP Allow List is added](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md), and then applied to the Author service of the environment *before* you [enable the pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md##enabling).
+{{add-cm-allowlist-frontend-pipeline}}
 
 ## Apply IP Allow Lists {#applying}
 

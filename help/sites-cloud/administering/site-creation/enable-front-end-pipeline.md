@@ -42,9 +42,7 @@ AEM can automatically adapt your existing site to use the front-end pipeline. To
 
 ## Enabling Front-End Pipeline {#enabling}
 
->[!IMPORTANT]
->
->To avoid disruption of running the front-end pipeline, ensure that the [Cloud Manager IP Allow List is added](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md), and then [applied to the Author service of the environment](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) *before* you enable the pipeline.
+{{add-cm-allowlist-frontend-pipeline}}
 
 Enabling your site is done from the Sites console using the [Site rail.](site-rail.md)
 
