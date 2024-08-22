@@ -11,6 +11,13 @@ From the Content Fragment console you can manage your Content Fragment Models, t
 
 Content Fragment Models in Adobe Experience Manager (AEM) as a Cloud Service define the structure for the content of your [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md). These fragments can then be used as a foundation for your headless content, or for page authoring. 
 
+>[!NOTE]
+>
+>This page covers the section of the console that (only) displays Content Fragment Models. For other panels see:
+>
+>* [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md) 
+>* [Viewing and Managing Assets in the Content Fragments Console](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+
 ## Working with Content Fragment Models {#working-with-content-fragment-models}
 
 As a very quick overview, to work with Content Fragment Models you:
@@ -22,40 +29,13 @@ As a very quick overview, to work with Content Fragment Models you:
 1. [Enable your Content Fragment Model](#enabling-a-content-fragment-model), if not already done.
 1. [Allow your Content Fragment Models on the required Assets folders](#allowing-content-fragment-models-assets-folder) by configuring **Policies**.
 
-## The Content Fragments Console {#content-fragments-console}
+## Basic Structure and Handling of Content Fragment Models in the Console {#basic-structure-handling-content-fragment-models-console}
 
-The Content Fragments console is dedicated to managing, searching for, and creating [Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md), Content Fragment Models and [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md). It has been optimized for use in a Headless context, but is also used when creating Content Fragments and Content Fragment Models for use in page authoring.
+You can use the far left panel of the [Content Fragments console](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) to select  **Content Fragment Models** as the resource type to view, browse and manage:
 
->[!NOTE]
->
->This page covers the section of the console that (only) displays Content Fragment Models. For other panels see:
->
->* [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md)
->* [Viewing and Managing Assets in the Content Fragments Console](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+![Content Fragments console - navigation](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
 
-The Content Fragments console provides direct access to your fragment models, and related tasks. The console can be directly accessed from the top level of the Global Navigation.
-
-![Global Navigation - Content Fragments console](assets/cf-managing-global-navigation.png)
-
-For detailed further information see:
-
-* [Basic Structure and Handling of Content Fragment Models in the Content Fragments Console](#basic-structure-handling-content-fragment-models-console)
-
-* [The Information provided about your Content Fragment Models](#information-content-fragment-models)
-
-* [Actions for a Content Fragment Model in the Content Fragments Console](#actions-selected-content-fragment-models)
-
-* [Select columns shown in the console](#select-columns-console)
-
-* [Search and Filter Content Fragment Models in the Content Fragments Console](#filtering-fragment-models)
-
-* A selection of [keyboard shortcuts](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) are available for use in this console
-
->[!CAUTION]
->
->This console is *only* available in the online Adobe Experience Manager (AEM) as a Cloud Service.
-
-### Basic Structure and Handling of Content Fragment Models in the Console {#basic-structure-handling-content-fragment-models-console}
+This will open the view for Content Fragment Models:
 
 ![Content Fragments console - Managing Content Fragment Models](assets/cf-managing-content-fragment-models.png)
 
@@ -90,8 +70,9 @@ Here you can see that there are three main areas:
       * Resize the column - using either the action, or width sliders
     * Select one, or more, models for further [action](#actions-selected-content-fragment-models)
   * Open the [Filter panel](#filter-content-fragment-models)
+  * A selection of [keyboard shortcuts](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) are available for use in this console
 
-### The Information provided about your Content Fragment Models {#information-content-fragment-models}
+## The Information provided about your Content Fragment Models {#information-content-fragment-models}
 
 The main/right panel (table view) of the console provides a range of information about your Content Fragments. Some items also provide direct links to further actions and/or information:
 
@@ -120,9 +101,9 @@ The main/right panel (table view) of the console provides a range of information
   * Information only.
   * Can be used for [Fast Filtering](#fast-filtering).
 
-### Properties {#properties}
+## Model Properties {#model-properties}
 
-When you select a specific model, the properties of that model are shown. If the model is not **Locked**, then some items can be updated. You can also use the information icon (next to the model **Title**) to open and close this information panel.
+When you select a specific model, the properties of that model are shown (as defined when [creating the model](#creating-a-content-fragment-model)). If the model is not **Locked**, then some items can be updated. You can also use the information icon (next to the model **Title**) to open and close this information panel.
 
 ![Content Fragments console - Information for a selected Content Fragment Model](assets/cf-managing-content-fragment-models-selected.png)
 
@@ -146,20 +127,33 @@ When you select a specific model, the properties of that model are shown. If the
   * `${contentFragment.variation}`
   * `${contentFragment.id}`
 
-### Actions {#actions}
+<!-- CHECK: currently under FT -->
+<!--
+* **GraphQL**
+  Define names relevant for GraphQL.
+  Changing the GraphQL API Name, or Query field names will impact client applications.
+  * **API Name**
+    Represents the GraphQL type and query field names in the GraphQL schema.
+  * **Single Query Field Name**
+    Represents the GraphQL single query field name in the GraphQL schema.
+  * **Multiple Query Field Name**
+    Represents the GraphQL multiple query field name in the GraphQL schema.
+-->
+
+## Actions {#actions}
 
 Once you have selected a folder (in the left panel) there is a range of actions that you can use, either directly, or after selecting a specific model:
 
 * Various actions are directly [available from the console](#actions-unselected)
 * You can [select one, or more, Content Fragment Models to show appropriate actions](#actions-selected-content-fragment)
 
-#### Actions (unselected) {#actions-unselected}
+### Actions (unselected) {#actions-unselected}
 
 Certain actions are available from the console - after selecting a folder, but without selecting a specific Content Fragment Model:
 
 * **[Create](#creating-a-content-fragment-model)** a new (empty) model
 
-#### Actions for a Content Fragment Model in the Content Fragments Console {#actions-selected-content-fragment-models}
+### Actions for a Content Fragment Model in the Content Fragments Console {#actions-selected-content-fragment-models}
 
 Selecting a specific model opens a toolbar focused on the actions available for that model. You can also select multiple models - the actions available will be adjusted accordingly.
 
@@ -168,7 +162,7 @@ Selecting a specific model opens a toolbar focused on the actions available for 
 * **Lock**/**Unlock** to control whether a user is allowed to modify the Model.
 * **[Enable](#enabling-a-content-fragment-model)**/**[Disable](#disabling-a-content-fragment-model)** to control whether a user is allowed to create Content Fragments based on this model.
 
-Selecting a single model also shows the [properties](#properties) in the right panel. 
+Selecting a single model also shows the [model properties](#properties) in the right panel. 
 
 ## Select columns shown in the console {#select-columns-console}
 
@@ -218,7 +212,7 @@ For example, select **Enabled** in the **Status** column. Once selected, this wi
 
    >[!CAUTION]
    >
-   >Tthe **Create** option will only be available:
+   >The **Create** option will only be available:
    >
    >* If the [use of Content Fragment models has been enabled](/help/sites-cloud/administering/content-fragments/setup.md)
    >* when you have selected the folder where you want to create the model.
@@ -240,7 +234,7 @@ For example, select **Enabled** in the **Status** column. Once selected, this wi
 
     >[!NOTE]
     >
-    >See [Content Fragment Model - Properties](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#properties) for full details.
+    >See [Content Fragment Model - Properties](#model-properties) for full details.
 
    ![Title and description](assets/cf-managing-content-fragment-models-create.png)
 
