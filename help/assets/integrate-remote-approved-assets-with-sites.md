@@ -19,6 +19,12 @@ Dynamic Media with OpenAPI capabilities offers several other benefits such as ac
 
 ## Before you begin {#pre-requisits-sites-integration}
 
+Support for remote assets using Dynamic Media with OpenAPI requires:
+
+* AEM 6.5 SP 18+ or AEM as a Cloud Service
+
+* Core Components release 2.23.2 or later
+
 * Set up the following [environment variables](/help/implementing/cloud-manager/environment-variables.md#add-variables) for AEM as a Cloud Service:
 
     * ASSET_DELIVERY_REPOSITORY_ID= "delivery-pxxxxx-eyyyyyy.adobeaemcloud.com" <br>
@@ -32,14 +38,33 @@ Dynamic Media with OpenAPI capabilities offers several other benefits such as ac
     1. Sign in to the console and click **[!UICONTROL OSGi] >** or
     use the direct URL; for example: `http://localhost:4502/system/console/configMgr`
 
-    1. Add the **[!UICONTROL repositoryID]**= "delivery-pxxxxx-eyyyyyy.adobeaemcloud.com" and **[!UICONTROL imsClient]**= [IMSClientId]
+    1. Configure the **Next Generation Dynamic Media Config** (`NextGenDynamicMediaConfigImpl`) OSGi configuration as follows, replacing the values with those of your remote assets environment.
+
+       ```text
+         imsClient="<ims-client-name>"
+         enabled=B"true"
+         imsOrg="<ims-org>@AdobeOrg"
+         repositoryId="<repo-id>.adobeaemcloud.com"
+       ```
+
+       ![The Next Generation Dynamic Media Config OSGi configuration window](/help/assets/assets/remote-assets-osgi.png)
+
     Learn more about [IMS authentication](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html).
+
+    For details on how to configure OSGi, please see the following documents:
+
+   * [Configuring OSGi for Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html) for AEM as a Cloud Service
+   * [Configuring OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html) for AEM 6.5
 
 * IMS access to sign into remote DAM AEM as a Cloud Service instance.
 
-* Turn on the Dynamic Media with OpenAPI capabilities toggle in the remote DAM.
-
 * Configure the Image v3 component in the AEM Sites instance. If the component is not present, download and install the [content package](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.23.0).
+
+## Configure HTTPS {#https}
+
+It is generally recommended to run all of your production AEM instances using HTTPs. However your local development environments may not be set up as such. However, remote assets using Dynamic Media with OpenAPI requires HTTPS in order to function.
+
+[Use this guide](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html) to configure HTTPS wherever you wish to use remote assets, including development environments.
 
 ## Access assets from Remote DAM {#fetch-assets}
 
