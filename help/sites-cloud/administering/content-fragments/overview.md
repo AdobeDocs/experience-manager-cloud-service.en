@@ -27,7 +27,7 @@ With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow 
 
 Content fragments contain structured content:
 
-* Each fragment is based on a [Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md).
+* Each fragment is based on a [Content Fragment Model](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md).
   * The Content Fragment Model defines the structure of the resulting fragment.
 * Every fragment consists of:
   * **[Main](#main-and-variations)** - an integral part of the fragment that holds the core content; always exists, cannot be deleted
@@ -80,7 +80,7 @@ These Content Fragments can then be assembled to provide experiences over a vari
 This and the following pages cover the tasks for creating, configuring, maintaining, and using your Content Fragments:
 
 * [Enable Content Fragment functionality for your instance](/help/sites-cloud/administering/content-fragments/setup.md)
-* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - enabling, creating, and defining your models
+* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) - enabling, creating, and defining your models
 * [Create your Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment) (using the Content Fragment Console)
 
 After the fragments have been created, you can:
@@ -196,7 +196,7 @@ The Content Fragment assets are made up of the following parts (either directly 
 * **Fragment Elements**
 
   * Elements correlate to the data fields holding content.
-  * You use a [Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) to create the Content fragment. The elements (fields) specified in the model define the structure of the fragment. These elements (fields) can be of a variety of data-types.
+  * You use a [Content Fragment Model](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) to create the Content fragment. The elements (fields) specified in the model define the structure of the fragment. These elements (fields) can be of a variety of data-types.
 
 * **Fragment Paragraphs**
 
@@ -232,7 +232,7 @@ To create Content Fragments you need:
 * **Content Model**
 
   * Are [enabled using the Configuration Browser](/help/sites-cloud/administering/content-fragments/setup.md).
-  * Are [created using Tools](/help/sites-cloud/administering/content-fragments/content-fragment-models.md).
+  * Are [created using the Content Fragment Console](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md).
   * Required to [create a fragment](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments).
   * Defines the structure of a fragment (title, content elements, tag definitions).
   * Content Fragment Model definitions require a title and one data element; everything else is optional. 

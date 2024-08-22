@@ -8,16 +8,7 @@ solution: Experience Manager Sites
 ---
 # Defining Content Fragment Models {#defining-content-fragment-models}
 
-Content Fragment Models in Adobe Experience Manager (AEM) as a Cloud Service define the structure for the content of your [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md). These fragments can then be used for page authoring, or as a foundation for your headless content.
-
-To use Content Fragment Models you:
-
-1. [Enable Content Fragment Model functionality for your instance](/help/sites-cloud/administering/content-fragments/setup.md)
-1. [Create](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model) your Content Fragment Model. 
-   * At this point you can also **Enable** the model (for use when creating Content Fragments).
-1. [Define](#defining-your-content-fragment-model) the structure of your model.
-1. [Enable your Content Fragment Model](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#enabling-disabling-a-content-fragment-model), if not already done.
-1. [Allow your Content Fragment Models on the required Assets folders](#allowing-content-fragment-models-assets-folder) by configuring **Policies**.
+Content Fragment Models in Adobe Experience Manager (AEM) as a Cloud Service define the structure for the content of your [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md). These fragments can then be used as a foundation for your headless content, or for page authoring.
 
 >[!CAUTION]
 >
@@ -25,7 +16,8 @@ To use Content Fragment Models you:
 >
 >For further details see [AEM GraphQL API for use with Content Fragments - Limitations](/help/headless/graphql-api/content-fragments.md#limitations)
 
-### Content Fragment Model - Properties {#content-fragment-model-properties}
+<!--
+## Content Fragment Model - Properties {#content-fragment-model-properties}
 
 These properties are defined when you create a model, and can be edited later with the **Properties** option for the Content Fragment Model:
 
@@ -49,6 +41,7 @@ These properties are defined when you create a model, and can be edited later wi
     * `${contentFragment.id}`
 
   * **Upload Image**
+-->
 
 <!-- CHECK: currently under FT -->
 <!--
@@ -162,12 +155,12 @@ A selection of data types is available for defining your model:
   * Allows the introduction of tabs for use when editing the Content Fragment content.
     * These are shown as dividers in the model editor, separating sections of the list of content data types. Each instance represents the start of a new tab.
     * In the fragment editor each instance appears as a tab.
-    
+
     >[!NOTE]
     >
     >This data type is purely used for formatting, it is ignored by the AEM GraphQL schema.
 
-## Properties {#properties}
+## Properties (Data Types) {#properties}
 
 Many properties are self-explanatory, for certain properties additional details are below:
 
@@ -361,162 +354,3 @@ In addition to standard properties you can define:
 >A recurrence protection mechanism is in place. It prohibits the user from selecting the current Content Fragment in the Fragment Reference, and may lead to an empty Fragment Reference picker dialog.
 >
 >There is also recurrence protection for Fragment References in GraphQL. If you create a deep query across two Content Fragments that reference each other, it returns null.
-
-## Allowing Content Fragment Models on your Assets Folder {#allowing-content-fragment-models-assets-folder}
-
-To implement content governance, you can configure **Policies** on Assets folder to control which Content Fragment Models are allowed for Fragment creation in that folder. 
-
->[!NOTE]
->
->The mechanism is similar to [allowing page templates](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author) for a page, and its children, in advanced properties of a page. 
-
-To configure the **Policies** for **Allowed Content Fragment Models**:
-
-1. Navigate and open **Properties** for the required Assets folder.
-
-1. Open the **Policies** tab, where you can configure:
-
-   * **Inherited from `<folder>`**
-
-     Policies are automatically inherited when creating new child folders; the policy can be reconfigured (and the inheritance broken) if subfolders need to allow models different to the parent folder. 
-
-   * **Allowed Content Fragment Models by Path**
-
-     Multiple models can be allowed.
-
-   * **Allowed Content Fragment Models by Tag**
-
-     Multiple models can be allowed.
-
-   ![Content Fragment Model Policy](assets/cf-cfmodels-policy-assets-folder.png)
-
-1. **Save** any changes.
-
-The Content Fragment Models allowed for a folder are resolved as follows:
-* The **Policies** for **Allowed Content Fragment Models**.
-* If empty, then try to determine the policy using the inheritance rules.
-* If the inheritance chain does not deliver a result, then look at the **Cloud Services** configuration for that folder (also first directly and then via inheritance).
-* If none of the above deliver any results, then there are no allowed models for that folder.
-
-## Deleting a Content Fragment Model {#deleting-a-content-fragment-model}
-
->[!CAUTION]
->
->Deleting a Content Fragment model can impact dependent fragments.
-
-To delete a Content Fragment model:
-
-1. Navigate to **Tools**, **General**, then open **Content Fragment Models**.
-
-1. Navigate to the folder holding your Content Fragment model.
-1. Select your model, followed by **Delete** from the toolbar.
-
-   >[!NOTE]
-   >
-   >If the model is referenced a warning is given, so that you can take appropriate action.
-
-## Publishing a Content Fragment Model {#publishing-a-content-fragment-model}
-
-Content Fragment Models need to be published when/before any dependent Content Fragments are published.
-
-To publish a Content Fragment model:
-
-1. Navigate to **Tools**, **General**, then open **Content Fragment Models**.
-
-1. Navigate to the folder holding your Content Fragment model.
-1. Select your model, followed by **Publish** from the toolbar.
-   The published status is shown in the console. 
-
-   >[!NOTE]
-   >
-   >If you publish a Content Fragment for which the model has not yet been published, a selection list will indicate this and the model will be published with the fragment.
-
-## Unpublishing a Content Fragment Model {#unpublishing-a-content-fragment-model}
-
-Content Fragment Models can be unpublished if they are not referenced by any fragments.
-
-To unpublish a Content Fragment Model:
-
-1. Navigate to **Tools**, **General**, then open **Content Fragment Models**.
-
-1. Navigate to the folder holding your Content Fragment Model.
-1. Select your model, followed by **Unpublish** from the toolbar.
-   The published status is indicated in the console. 
-
-If you try to unpublish a model that is currently used by one or more fragments, then an error warning is shown. For example: 
-
-![Content Fragment Model error message when unpublishing a model that is in use](assets/cf-cfmodels-unpublish-error.png)
-
-The message suggests that you check the [References](/help/sites-cloud/authoring/basic-handling.md#references) panel to investigate further:
-
-![Content Fragment Model in References](assets/cf-cfmodels-references.png)
-
-## Locked (Published) Content Fragment Models {#locked-published-content-fragment-models}
-
-This feature provides governance for Content Fragment Models that have been published. 
-
-### The Challenge {#the-challenge}
-
-* Content Fragment Models determine the schema for GraphQL queries in AEM. 
-
-  * AEM GraphQL schemas are created as soon as a Content Fragment Model is created, and they can exist on both author and publish environments. 
-
-  * Schemas on publish are the most critical as they provide the foundation for live delivery of Content Fragment content in JSON format.  
-
-* Problems can occur when Content Fragment Models are modified, or in other words edited. This means that the schema changes, which in turn may affect existing GraphQL queries. 
-
-* Adding new fields to a Content Fragment Model should (typically) not have any detrimental effects. However, modifying existing data fields (for example, their name) or deleting field definitions, will break existing GraphQL queries when they are requesting these fields. 
-
-### The Requirements {#the-requirements}
-
-* To make users aware of the risks when editing models that are already used for live content delivery - in other words, models that have been published). 
-
-* Also, to avoid unintended changes. 
-
-Either of these criteria might break queries if the modified models are republished. 
-
-### The Solution {#the-solution}
-
-To address these issues, Content Fragment Models are *locked* into a READ-ONLY mode on author - as soon as they have been published. This status is indicated by **Locked**: 
-
-  ![Card of locked Content Fragment Model](assets/cf-cfmodels-locked.png)
-
-When the model is **Locked** (in READ-ONLY mode), you can see the contents and structure of models but you cannot edit them. 
-
-You can manage **Locked** models from either the console, or the model editor:
-
-* Console
-
-  From the console, you can manage the READ-ONLY mode with the **Unlock** and **Lock** actions in the toolbar: 
-
-  ![Toolbar of locked Content Fragment Model](assets/cf-cfmodels-locked.png)
-
-  * You can **Unlock** a model to enable edits.
-  
-    If you select **Unlock** a warning is shown, and you must confirm the **Unlock** action:
-    ![Message when unlocking Content Fragment Model](assets/cf-cfmodels-unlock-message.png)
-
-    You can then open the model for editing.
-    
-  * You can also **Lock** the model afterwards.
-  * Republishing the model immediately returns it to **Locked** (READ-ONLY) mode.
-
-* Model Editor
-
-  * When you open a model that is locked you will be warned, and presented with three actions: **Cancel**, **View Read Only**, **Edit**:
-
-    ![Message when viewing a locked Content Fragment Model](assets/cf-cfmodels-editor-lock-message.png)
-
-  * If you select **View Read Only**, you can see the content and structure of the model:
-
-    ![View Read Only - locked Content Fragment Model](assets/cf-cfmodels-editor-locked-view-only.png)
-
-  * If you select **Edit**, you can edit and save your updates: 
-  
-    ![Edit - locked Content Fragment Model](assets/cf-cfmodels-editor-locked-edit.png)
-
-    >[!NOTE]
-    >
-    >There may still a warning at the top, but that is when the model is already in use by existing Content Fragments. 
-
-  * **Cancel** returns you to the console.

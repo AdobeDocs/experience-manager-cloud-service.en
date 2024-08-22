@@ -113,7 +113,7 @@ Now that you have learned about references and structure in Content Fragments, t
   
   * [Authoring Content Fragments](/help/sites-cloud/administering/content-fragments/authoring.md)
 
-  * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+  * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 
     * [Content Fragment Models - Data Types](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
   

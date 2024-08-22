@@ -289,7 +289,7 @@ While it is recommended that you move on to the next part of the headless develo
 * [Multi Site Manager and Translation](/help/sites-cloud/administering/msm-and-translation.md) - Technical documentation on AEM's powerful translation features
 * [AEM workflows](/help/sites-cloud/authoring/workflows/overview.md) - Technical documentation on how to automate workflows in AEM
 * [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md) - Technical documentation for Content Fragments.
-* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - Technical documentation for Content Fragment Models.
+* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) - Technical documentation for Content Fragment Models.
 * [GraphQL Technical Documentation](https://graphql.org) - The GraphQL definition (external link)
 * [GraphQL API](/help/headless/graphql-api/content-fragments.md) - Technical documentation that explains how to create requests to access and deliver Content Fragments
 * [Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md) - Technical documentation that explains how to create and modify Content Fragments (and other assets)

@@ -208,7 +208,7 @@ Before creating your Content Fragment, the underlying Content Fragment Model mus
 
 ### Creating a Content Model {#creating-a-content-model}
 
-[Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) must be enabled and created, prior to creating content fragments with structured content.
+[Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) must be enabled and created, prior to creating content fragments with structured content.
 
 ### Creating a Content Fragment {#creating-a-content-fragment}
 
@@ -305,7 +305,7 @@ You can publish your Content Fragments to:
 
 >[!CAUTION]
 >
->If your fragment is based on a model, then you should ensure that the [model has been published](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#publishing-a-content-fragment-model).
+>If your fragment is based on a model, then you should ensure that the [model has been published](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model).
 >
 >If you publish a content fragment for which the model has not yet been published, a selection list will indicate this and the model will be published with the fragment.
 
