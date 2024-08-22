@@ -18,6 +18,10 @@ Content Fragment Models in Adobe Experience Manager (AEM) as a Cloud Service def
 >* [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md) 
 >* [Viewing and Managing Assets in the Content Fragments Console](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 
+>[!NOTE]
+>
+>Content Fragments are stored as **Assets**. Content Fragment Models are primarily managed from the **Content Fragments** console, but can also be managed from the [Assets](/help/assets/content-fragments/content-fragments-managing.md) console and the option [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) that is available from **Tools** - **General**.
+
 ## How to work with Content Fragment Models {#how-to-work-with-content-fragment-models}
 
 As a very quick overview, to work with Content Fragment Models you:
