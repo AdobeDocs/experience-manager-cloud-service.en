@@ -2,6 +2,8 @@
 title: Create an API Request - Headless Setup
 description: Learn how to use the GraphQL API for headless delivery of Content Fragment content and AEM's Assets REST API to manage Content Fragments.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Developer
 ---
 # Create an API Request - Headless Setup {#accessing-delivering-content-fragments}
 
@@ -14,6 +16,10 @@ Learn how to use the GraphQL API for headless delivery of Content Fragment conte
 * [The GraphQL API](/help/headless/graphql-api/content-fragments.md) lets you create requests to access and deliver Content Fragments. This API offers the most robust set of capabilities for querying and consuming Content Fragment content.
    * To use the API, [define and enable endpoints in AEM](/help/headless/graphql-api/graphql-endpoint.md), and if necessary, the [GraphiQL interface installed](/help/headless/graphql-api/graphiql-ide.md).
 * [The Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md) lets you create and modify Content Fragments (and other assets).
+
+>[!NOTE]
+>
+>The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) are also available.
 
 The remainder of this guide focuses on GraphQL access and Content Fragment delivery.
 
@@ -33,7 +39,7 @@ Before the GraphQL APIs can be used, a GraphQL endpoint must be created.
     /content/cq:graphql/<configuration-name>/endpoint
     ```
 
-More details about enabling [GraphQL endpoints can be found here](/help/headless/graphql-api/graphql-endpoint.md).
+For more details about enabling GraphQL endpoints see [Manage GraphQL endpoints in AEM](/help/headless/graphql-api/graphql-endpoint.md).
 
 ## Query content using GraphQL with GraphiQL
 
@@ -93,3 +99,7 @@ That's it! You now have a basic understanding of headless content management in 
 * **[Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md)** - For details about creating and managing Content Fragments
 * **[Content Fragments Support in AEM Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)** - For details on accessing AEM content directly over the HTTP API, via CRUD operations (Create, Read, Update, Delete)
 * **[GraphQL API](/help/headless/graphql-api/content-fragments.md)** - For details on how to deliver Content Fragments headlessly
+
+>[!NOTE]
+>
+>The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) are also available.

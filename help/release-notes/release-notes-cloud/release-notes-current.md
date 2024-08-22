@@ -1,8 +1,10 @@
 ---
 title: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Current release notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+feature: Release Information
+role: Admin
 ---
 # Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -10,17 +12,17 @@ The following section outlines the feature release notes for the current (latest
 
 >[!NOTE]
 >
->From here, you can navigate to release notes of previous versions such as 2021 or 2022.
+>From here, you can navigate to release notes of previous versions such as 2022 or 2023.
 >
->Have a look at the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) to learn about the upcoming feature activations for [!DNL Experience Manager] as a Cloud Service. 
+>Have a look at the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) to learn about the upcoming feature activations for [!DNL Experience Manager] as a Cloud Service. 
 
 >[!NOTE]
 >
->See [Recent Documentation Updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) for details of documentation updates not directly related to a release.
+>To receive a monthly email notification about updates to Experience Cloud release notes, subscribe to the [Adobe Priority Product Update](https://www.adobe.com/subscription/priority-product-update.html).
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2024.1.0) is January 25, 2024. The next feature release (2024.3.0) is planned for April 4, 2024.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2024.7.0) is July 25, 2024. The next feature release (2024.8.0) is planned for August 29, 2024.
 
 ## Maintenance Release Notes {#maintenance}
 
@@ -28,80 +30,153 @@ You can find the latest maintenance release notes [here](/help/release-notes/mai
 
 ## Release Video {#release-video}
 
-Have a look at the January 2024 Release Overview video for a summary of the features added in the 2024.1.0 release:
+Have a look at the July 2024 Release Overview video for a summary of the features added in the 2024.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3427041?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3431707?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Extension Manager in AEM Sites {#sites-extension-manager}
+### New feature in Experience Manager Sites {#new-feature-sites}
 
-**Explore the new [Extension Manager in AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/)** to personalize your AEM setup by configuring UI extensions.
+### Early Adopter Program {#sites-early-adopter}
 
-![Extension Manager in AEM Sites](/help/assets/sites/extension-manager/homepage.png)
+**Generate Variations**
 
-The Extension Manager in AEM Sites enables developers and practitioners to access, manage, and customize [UI extensions](https://developer.adobe.com/uix/docs/) built with [Adobe App Builder](https://developer.adobe.com/app-builder/) to enhance the functionality of AEM Sites.
-With the Extension Manager, you can:
+Leverage GenAI through AEM's new feature, [generate variations](/help/generative-ai/generate-variations.md), accessible now in Cloud Service. Generate variations helps you generate and scale content creation through the use of generative AI. Reach out to your Adobe account team for consideration in the program.
 
-* Enable or disable extensions on a per-instance basis;
-* Configure extension parameters;
-* Preview extensions and generate a shareable preview link;
-* Discover UI extensibility features via interactive demos;
-* Access Adobe's experimental features through first-party extensions.
+**Asset browsing in Content Fragment Console**
 
-We are actively seeking feedback and new use cases for UI extensions. If you would like to connect, please send an email to `uix@adobe.com`.
+Content authors can now browse, view, and take actions on images, and other assets without having to leave the Content Fragment Console. 
+
+ ![Asset Browsing](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-browse.png)
+
+Interested in trying out the feature and sharing feedback? Send an email to aemcs-headless-adopter@adobe.com from your official email ID to learn more about the early adopter program.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Admin view prerelease features {#admin-view-prerelease}
+**Upload assets using Asset Selector**
 
-**Preview renditions for all supported video types**
+Asset Selector now offers ability for content authors to upload final assets directly from the selector, by either dragging or by browsing from the local file system. This allows final assets to be uploaded to the DAM from the application of your choice.
 
-Experience Manager Assets now generates preview renditions of all supported video types by default without requiring a processing profile configuration
+### New features in Assets view {#assets-view-new-features}
 
-### Assets view {#assets-view-features}
+**Content credentials integration**
 
-**Smart tags blocklist** 
+Experience Manager Assets now supports content credentials for supported image formats. This provides information on the lineage of the asset and how it was created, including if it was modified using GenAI.
 
-Assets Essentials now enables you to define blocklist that comprises words that should not be added as Smart Tags to assets when they are uploaded to the repository. This capability helps you to maintain brand compliance and reduces effort to moderate Smart Tags.
+![Content credentials](/help/assets/assets/content-credentials.png)
 
-  ![Smart Tags blocklist](/help/assets/assets/block-tags.png)
+**Visual previews of folder contents**
 
+Experience Manager Assets now displays visual previews of folder contents on the folder thumbnail when browsing or searching for content, which improves the discoverability of assets available within AEM Assets repository.
+
+<!--
+
+
+**Content Credentials**
+
+Content Credentials feature in Assets view now provides detailed asset provenance data adhered to an asset. This helps to trace the enroute edits along the asset's lifecycle to prevent users from deception through deliberately tempered assets. This ensures content authenticity among users and fosters trust through transparency.
+
+When looking at the asset details, any image with content credentials added, such as those created with GenAI, displays the manifest details in a dedicated panel. If the asset is downloaded, published, or shared, the credentials remain intact with the asset.
+
+![check publish status1](/help/release-notes/assets/content-credentials.png)
+
+-->
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-<!-- 
+### New features in AEM Forms {#forms-new-prerelease-features}
 
-* **Configure a shard for Adobe Sign for AEM Forms**: Adobe distributes Acrobat Sign API around the globe in many deployment units called "shards." Each shard serves a customer's account, such as NA1, NA2, NA3, EU1, JP1, AU1, IN1, and others. The shard names correspond to geographic locations. You can now use more than one shard while using Adobe Sign integration with AEM Forms. 
+#### Enhanced Visual Rule Editor for Core Component Based Adaptive Forms
 
---> 
+Adaptive form authors can use repeatable form fields in out of the box functions available in visual rule editor for core components to build complex business logic in the forms, without requiring customization or development team's assistance.
+ 
+### Early Access features in AEM Forms {#forms-new-early-access-features}
 
-### Early Adopter Program {#forms-early-adopter}
+The AEM Forms Early Access Program program offers a unique opportunity to you to get exclusive access to cutting-edge innovations before anyone else, and help shape their development. The program offers access to multiple innovations. 
 
-* **[Submit an Adaptive Form to Adobe Workfront Fusion Scenario](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**: Forms as a Cloud Service offers an out-of-the-box options to effortlessly connect an Adaptive Form with Adobe Workfront. This simplifies the process of submitting an Adaptive Form to an Adobe Workfront scenario, allowing you trigger a Workfront Fusion scenario on submission of an Adaptive Form. 
+This release notes lists the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
 
-* **[Right to left languages support](/help/forms/supporting-new-language-localization-core-components.md)**: Adaptive Forms built on Core Components can now be presented in a Right-to-Left (RTL) language like Arabic, Persian, and Urdu. The RTL languages are spoken by over 2 billion people globally. Using a form in RTL language allows you to extend the reach of your adaptive forms to cater to these diverse audiences and select into RTL markets. In certain regions, it's also a legal mandate to provide forms in the local language. By accommodating local languages, you not only open doors to a broader audience but also ensure compliance with relevant laws and regulations. 
+#### Author adaptive forms using Universal Editor
 
-  ![Right to left language support](/help/forms/assets/right-to-left-language-support.png)
+Leverage the Adobe Experience Manager [Universal Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) to create adaptive forms using WYSIWYG drag-drop authoring, for both headless and headful enrollment experiences, delivered via Edge Delivery Service. Adaptive form authors can easily create and launch experiments for variations of the forms in the web pages and determine the best performing experiences for end users.
 
-* **[Protect your documents with DocAssurance APIs (Part of Communication APIs)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: The DocAssurance APIs empower you to safeguard sensitive information by signing and encrypting the documents. Through encryption, the contents of a document are transformed into an unreadable format, ensuring that only authorized users can gain access. This fortified layer of protection not only shields valuable data from unauthorized eyes but also provides peace of mind. The Signature APIs let your organization protect the security and privacy of Adobe PDF documents that it distributes and receives. This service uses digital signatures and certification to ensure that only intended recipients can alter documents. 
+>[!IMPORTANT] 
+>
+> If you are interested in joining Adobe's Early Access Program for any early access innovation, simply send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) to request access. You can request access to all or any specific innovation.  
 
-     You can write to `aem-forms-early-adopter-program@adobe.com` from your official email id to join the early adopter program and request access to the capability.
-
-* **[You can leverage the Real User Monitoring (RUM) Data Service](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** to enable client-side collection for AEM as a Cloud Service.
-Real User Monitoring (RUM) Data Service offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. It is a great opportunity to gain advanced insights into your page performance. While this is beneficial for customers who use either Adobe-managed CDN or non-Adobe-managed CDN. Additionally, for customers using a non-Adobe managed CDN, automated traffic reporting can now be enabled for them, thus removing the need to share any traffic report with Adobe.
-
-   If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-rum-adopter@adobe.com`, along with your domain name for each of the environments that you would like to enable RUM for from your email address associated with your Adobe ID. Adobe's product team will then enable the Real User Monitoring (RUM) Data Service for you.
-     
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Support for Dynatrace {#dynatrace}
+### Purge Content at the CDN with a Self-Serve API Key {#purge-cdn}
 
-Dynatrace customers may monitor their AEM usage. [Read how](/help/implementing/cloud-manager/dynatrace.md) to request connectivity with your Dynatrace environment for application performance monitoring. Note that New Relic APM, which is available to all customers, will stop collecting data if Dynatrace is enabled.
+Setting TTL using the HTTP Cache-Control header is an effective approach to balance content delivery performance and content freshness. However, in scenarios where it is critical to immediately serve updated content, it may be beneficial to directly purge the CDN cache .
 
-### RDE Support for Front-End Code using Site Themes and Site Templates: Early Adopter Program {#rde-frontend-early-adopter}
+[Learn how](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) to self-serve configure a purge API token using the Cloud Manager configuration pipeline, so you can [invoke the purge APIs](/help/implementing/dispatcher/cdn-cache-purge.md), with any of these variations:
+* Single URL
+* Multiple URLs using a tag
+* Full CDN cache purge
 
-[Rapid Development Environments (RDEs)](/help/implementing/developing/introduction/rapid-development-environments.md) now support front-end code based on [site themes](/help/sites-cloud/administering/site-creation/site-themes.md) and [site templates](/help/sites-cloud/administering/site-creation/site-templates.md), for early adopters. With RDEs, this is done using a command line directive, rather than a [front-end pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Please reach out to **aemcs-rde-support@adobe.com** to try it out and provide feedback.
+### Self-Serve Configuration of X-AEM-Edge-Key for Customer-Managed CDN {#customermanaged-keys}
+
+Previously, a support ticket was needed to generate the X-AEM-Edge-Key required for configuration of a customer-managed CDN. This is now self-service by declaring the key value in a configuration file that is deployed using the Configuration Pipeline, removing any delay in onboarding a new environment. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
+
+### Traffic Filter Rules Alerts {#traffic-filter-rules-alerts}
+
+Traffic Filter Rules, which include the optionally licensable Web Application Firewall (WAF) rules, lets you configure what traffic should be blocked. 
+
+Now you can [subscribe to alerts](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts) whenever your traffic filter rules are triggered. Actions Center email notifications keep you informed when certain traffic conditions occur so you can take appropriate measures. 
+
+### Content Delivery-related Early Adopter Programs {#foundation-early-adopter}
+
+Email **<aemcs-cdn-config-adopter@adobe.com>**, indicating which of the early adopter programs below you are interested in.
+
+#### Basic Authentication at the CDN (Early Adopter Program) {#basicauth-cdn}
+
+Protect certain content resources by popping up a basic auth dialog requiring a username and password. This feature primarily targets light authentication use cases, like business stakeholders reviewing content, rather than serving as a comprehensive solution for end-user access rights. The list of username and passwords in managed through a configuration file in git that is deployed via Configuration Pipeline, with a reference to secret-type Cloud Manager environment variables. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
+
+#### Client-Side Redirects (Early Adopter Program) {#client-side-redirects-early-adopter}
+
+Configure 301/302 client-side redirects in source control, and deploy to the CDN. [Learn more](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Note that there are several other features already available related to [CDN configuration](/help/implementing/dispatcher/cdn-configuring-traffic.md), including request and response transformations, and routing traffic to off-AEM sites.
+
+#### Business Users Can Declare Redirects Outside of Git (Early Adopter Program) {#apache-rewritemaps-early-adopter}
+
+Similar to AEM 6.5, Apache/dispatcher ingest rewrite maps placed in a specific location in the publish repository, and load them, without requiring a web tier pipeline execution. This approach let business users declare redirects using a spreadsheet or a UI, like ACS Commons Redirect Map Manager or a custom application. <!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
+
+#### Edge Side Includes (ESI) for Loading Dynamic Content (Early Adopter Program) {#esi-early-adopter}
+
+The Adobe Managed CDN now supports [Edge Side Includes (ESI)](/help/implementing/dispatcher/edge-side-includes.md), a markup language for edge level dynamic web content assembly. By including ESI snippets, you can cache the overall HTML page at the CDN with higher TTLs, while more frequently fetching from origin those smaller sections that require higher cadence updates (lower TTLs). <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
+
+### Content Health-Related Actions Center Notifications Early Adopter Program {#actions-center-notifications}
+
+[Actions Center](/help/operations/actions-center.md) sends email notifications when important incidents happen, or if something is noticed about your code or configuration where you should take proactive action. Adobe has now introduced several new types of notifications associated with your content health. This feature is available through an early adopter program. To participate, please reach out to Adobe Customer Care.
+
+#### Pages Contain a Large Number of Nodes {#page-nodes}
+
+A large number of nodes can degrade rendering performance and reduce page load times. Receive a proactive notification through Actions Center when a large number of nodes are detected on a page, allowing you to take the necessary steps to reduce the total number of nodes within a page.
+
+#### Large Number of Running Workflow Instances {#running-workflows}
+
+The workflow engine performance is impacted when there is a large number of running workflows in the author environment. You receive a proactive notification through Actions Center when a large number of running workflow instances are detected. This process lets you configure a purge job to terminate unnecessary running workflows.
+
+#### Users Added Directly to Custom Groups {#users-customgroups}
+
+You receive a proactive notification through Actions Center when users are added directly to custom groups. This process lets you follow IMS best practices by adding users to relevant IMS groups and then including those IMS groups as members of AEM groups.
+
+#### Missing JCR Content {#jcr-content}
+
+Actions Center proactively notifies you when missing JCR content is detected. This approach lets you add the missing content and prevent the failure of certain AEM Assets features.
+
+#### Completed Workflows Not Purged {#workflows}
+
+Actions Center proactively notifies you when completed workflows over 90 days old have not been purged. This approach helps improve the performance of your workflow engine by reducing the number of workflow instances.
+
+#### Missing Sling Resource {#sling-resource}
+
+Actions Center proactively notifies you when a missing Sling resource is detected. This approach lets you add the missing resource and prevent the failure of certain AEM Assets features.
+
+## [!DNL Experience Manager] Guides {#guides}
+
+You can find a complete list of new and enhanced features of the latest release of Adobe Experience Manager Guides [here](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0).
 
 ## Cloud Manager {#cloud-manager}
 
@@ -111,3 +186,14 @@ You can find a complete list of Cloud Manager monthly releases [here](/help/impl
 
 You can find a complete list of Migration Tools releases [here](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
 
+## Universal Editor {#universal-editor}
+
+You can find a complete list of Universal Editor releases [here](/help/release-notes/universal-editor/current.md).
+
+## Generate Variations {#generate-variations}
+
+You can find a complete list of Generate Variations releases [here](/help/generative-ai/release-notes-generate-variations.md).
+
+## Experience Cloud Release Notes {#experience-cloud}
+
+You can find information about releases of other Experience Cloud applications [here](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current).

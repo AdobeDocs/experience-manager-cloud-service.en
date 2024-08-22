@@ -1,8 +1,11 @@
 ---
 title: Managing Pages
 description: Learn how to manage the pages of your website in AEM including moving, copying, and deleting.
+exl-id: 355b60c5-a82e-4bbb-98ea-bfcc0126b7fd
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
-
 # Managing Pages {#managing-pages}
 
 Learn how to manage the pages of your website in AEM including moving, copying, and deleting.

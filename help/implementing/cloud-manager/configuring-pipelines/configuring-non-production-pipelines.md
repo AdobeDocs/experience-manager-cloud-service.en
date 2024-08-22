@@ -3,6 +3,9 @@ title: Configuring Non-Production Pipelines
 description: Learn how to configure non-production pipelines to test the quality of your code before deploying to production environments.
 index: yes
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 
 # Configuring Non-Production Pipelines {#configuring-non-production-pipelines}
@@ -30,7 +33,7 @@ Once you have set up your program and have at least one environment using the Cl
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, select the program.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
 
 1. Access the **Pipelines** card from the Cloud Manager home screen. Click **+Add** and select **Add Non-Production Pipeline**. 
 
@@ -84,7 +87,7 @@ To finish the configuration of the full-stack code non-production pipeline, foll
 
    >[!TIP]
    > 
-   >See [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) so you can learn how to add and manage repositories in Cloud Manager.
+   >See [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/managing-repositories.md) so you can learn how to add and manage repositories in Cloud Manager.
 
    * **Git Branch** - This option defines from which branch in the selected pipeline should retrieve the code.
      * Enter the first few characters of the branch name and the auto-complete feature of this field. It helps you find the matching branches that you can select.
@@ -106,9 +109,9 @@ The pipeline is saved and you can now [manage your pipelines](managing-pipelines
 
 A targeted deployment deploys code only for selected parts of your AEM application. In such a deployment you can choose to **Include** one of the following types of code:
 
-* **Config** - Configure settings for traffic filter rules on your AEM environment.
-  * See the document [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md) to learn how to manage traffic filter rules in your repository so they are deployed properly.
-  * When running a targeted deployment pipeline, configurations [such as WAF configurations](/help/security/traffic-filter-rules-including-waf.md) will be deployed, provided they are saved to environment, repository, and branch you defined in the pipeline.
+* **Config** - Configure settings for various features on your AEM environment.
+  * See [Using Config Pipelines](/help/operations/config-pipeline.md) for a list of supported configurations, which includes log forwarding, purge-related maintenance tasks, and various CDN configurations, and to manage them in your repository so they are deployed properly.
+  * When running a targeted deployment pipeline, configurations will be deployed, provided they are saved to environment, repository, and branch you defined in the pipeline.
   * At any time, there can only be one config pipeline per environment. 
 * **Front End Code** - Configure JavaScript and CSS for the front end of your AEM application.
   * With front-end pipelines, more independence is given to front-end developers and the development process can be accelerated.
@@ -117,6 +120,10 @@ A targeted deployment deploys code only for selected parts of your AEM applicati
   * See the document [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) for more details.
   * If a web-tier code pipeline exists for the selected environment, this selection is disabled.
   * If you have an existing full-stack pipeline deploying to an environment, creating a web tier config pipeline for the same environment will case the existing web tier configuration in the full-stack pipeline to be ignored.
+
+>[!NOTE]
+>
+>Web tier and config pipelines are not supported with private repositories. Please see the document [Adding Private Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) for details and the full list of limitations.
 
 The steps to complete the creation of your non-production, targeted deployment pipeline are the same once you choose a deployment type.
 
@@ -134,15 +141,21 @@ The steps to complete the creation of your non-production, targeted deployment p
 
    >[!TIP]
    > 
-   >See [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) so you can learn how to add and manage repositories in Cloud Manager.
+   >See [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/managing-repositories.md) so you can learn how to add and manage repositories in Cloud Manager.
 
    * **Git Branch** - This option defines from which branch in the selected pipeline should retrieve the code.
      * Enter the first few characters of the branch name and the auto-complete feature of this field. It finds the matching branches that you can select.
    * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
+   * **Pipeline** - For front-end non-production pipelines, you have the option to enable **[Experience Audit.](/help/implementing/cloud-manager/experience-audit-testing.md)**
    
-   ![Config pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment.png)
+   ![Config pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
-1. Click **Save**.
+1. If you enabled Experience Audit, tap or click **Continue** to advance to the **Experience Audit** tab where you can define the paths that should always be included in the Experience Audit.
+
+   * If you enabled **Experience Audit**, please see the document [Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) for details on how to configure.
+   * If you did not, skip this step.
+
+1. Tap or click **Save** to save the pipeline.
 
 The pipeline is saved and you can now [manage your pipelines](managing-pipelines.md) on the **Pipelines** card on the **Program Overview** page.
 

@@ -3,8 +3,8 @@ title: How to search assets in AEM?
 description: Learn how to search assets in AEM by using Filters panel, and how to use the results that show up in asset search.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Search,Metadata,Asset Distribution
-role: User,Admin
+feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
+role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
 ---
 # Search assets in AEM {#search-assets-in-aem}
@@ -81,7 +81,7 @@ As of August 2023, Experience Manager Assets includes a new version 9 of `damAss
 
 If you need to switch to the previous behavior (`statistical` mode), see [Content Search and Indexing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html) to create a custom version of the `damAssetLucene-9` index. Adobe does not recommend switching to the `secure` mode due to the impact on search response times with large result sets.
 
-For more information on Oak's facet capabilities, including a detailed description of these modes, see [this article](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets).
+For more information on Oak's facet capabilities, including a detailed description of these modes, see [Facets - Oak Documentation - Lucene Index](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets).
 
 ## Search suggestions as you type {#searchsuggestions}
 
@@ -545,6 +545,7 @@ Navigate to the folder location for assets displayed in the search results. Sele
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

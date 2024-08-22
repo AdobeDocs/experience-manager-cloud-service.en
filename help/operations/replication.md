@@ -2,6 +2,8 @@
 title: Replication
 description: Learn about distribution and troubleshooting replication in AEM as a Cloud Service.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
+feature: Operations
+role: Admin
 ---
 # Replication {#replication}
 
@@ -190,14 +192,17 @@ The size of the content transmitted per replication call must not exceed `10 MB`
 
 To troubleshoot replication, navigate to the Replication Queues in the AEM Author Service Web UI:
 
-1. From the AEM Start Menu, navigate to **Tools > Deployment > Distribution**
-2. Select the card **publish**
-![Status](assets/publish-status.png "Status")
-3. Check the queue status which should be green
-4. You can test the connection to the replication service
-5. Select the **Logs** tab which shows the history of content publications
+1. From the AEM Start Menu, navigate to **Tools** > **Deployment** > **Distribution**
+1. Select the card **publish**
+
+   ![Status](assets/publish-status.png "Status")
+
+1. Check the queue status which should be green
+1. You can test the connection to the replication service
+1. Select the **Logs** tab which shows the history of content publications
 
 ![Logs](assets/publish-logs.png "Logs")
 
 If the content couldn't be published, the whole publication is reverted from the AEM Publish Service.
+
 In that case, the main, editable queue shows a red status and should be reviewed to identify which items caused the cancelation of the publication. By clicking that queue, its pending items show up, from which a single item or all items can be cleared if needed.

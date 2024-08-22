@@ -2,6 +2,8 @@
 title: Creating and Managing Channels in Screens as a Cloud Service
 description: This page describes how to create and manage channels in Screens as a Cloud Service.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
+feature: Authoring Screens
+role: Admin, Developer, User
 ---
 # Creating and Managing a Channel in Screens as a Cloud Service {#creating-channels-screens-cloud}
 
@@ -87,7 +89,7 @@ The following templates are available while using the **Create** channel wizard:
 
 This capability lets you define a default activation schedule for a channel, and use it by default for every assignment for a display. This provides a method so that the cumbersome schedule definition does not need to be repeated.
 
-1. Navigate to Screens Services Provider from [here](https://experience.adobe.com/screens).
+1. Navigate to the [Screens Services Provider](https://experience.adobe.com/screens).
 
 ### Create default assignment details for a channel {#create-default}
 

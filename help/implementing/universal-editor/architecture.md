@@ -2,13 +2,13 @@
 title: Universal Editor Architecture
 description: Learn about the architecture of the Universal Editor and how data flows between its services and layers.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
+feature: Developing
+role: Admin, Architect, Developer
 ---
 
 # Universal Editor Architecture {#architecture}
 
 Learn about the architecture of the Universal Editor and how data flows between its services and layers.
-
-{{universal-editor-status}}
 
 ## Architecture Building Blocks {#building-blocks}
 
@@ -69,14 +69,3 @@ The Universal Editor dispatches all content changes to a centralized service cal
 ### Client Side Rendering {#client-side}
 
 ![Client side rendering](assets/client-side.png)
-
-## Additional Resources {#additional-resources}
-
-To learn more about the Universal Editor, see these documents.
-
-* [Universal Editor Introduction](introduction.md) - Learn how the Universal Editor enables editing any aspect of any content in any implementation so you can deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.
-* [Authoring Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) - Learn how easy and intuitive it is for content authors to create content using the Universal Editor.
-* [Publishing Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md) - Learn how the Universal Editor publishes content and how your apps can handle the published content.
-* [Getting Started with the Universal Editor in AEM](getting-started.md) - Learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
-* [Attributes and Types](attributes-types.md) - Learn about the data attributes and types that the Universal Editor requires.
-* [Universal Editor Authentication](authentication.md) - Learn how the Universal Editor authenticates.

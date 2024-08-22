@@ -2,6 +2,8 @@
 title: Asynchronous Jobs
 description: Adobe Experience Manager optimizes performance by asynchronously completing some resource-intensive tasks as background operations.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
+feature: Operations
+role: Admin
 ---
 # Asynchronous Operations {#asynchronous-operations}
 

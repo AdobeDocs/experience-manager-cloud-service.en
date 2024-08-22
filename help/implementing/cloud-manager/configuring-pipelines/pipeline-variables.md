@@ -1,8 +1,11 @@
 ---
 title: Configuring Pipeline Variables
 description: Learn how you can use pipeline variables in Cloud Manager to manage specific configuration variables for your build.
+exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
-
 # Configuring Pipeline Variables {#configuring-pipeline-variables}
 
 Your build process may depend upon specific configuration variables which would be inappropriate to place in the git repository or you may need to vary them between pipeline executions using the same branch. Cloud Manager allows you to manage these data as pipeline variables.

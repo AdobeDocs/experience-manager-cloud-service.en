@@ -1,8 +1,11 @@
 ---
 title: Page Editor Side Panel
 description: Learn how to use the side panel in the AEM sites editor to add components and assets to your page.
+exl-id: 5f025828-f2ca-4cbb-9cdf-a199e9e90cc7
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
-
 # Page Editor Side Panel {#side-panel}
 
 Learn how to use the side panel in the AEM sites editor to add components and assets to your page.

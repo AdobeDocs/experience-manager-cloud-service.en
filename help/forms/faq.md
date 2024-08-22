@@ -3,7 +3,7 @@ title: Frequently asked questions for AEM Forms as a Cloud Service
 description: Forms as a Cloud Service frequently asked questions
 contentOwner: khsingh
 role: User
-feature: Adaptive Forms, FAQ
+feature: Adaptive Forms
 index: no
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
 ---
@@ -73,12 +73,12 @@ Yes, you can add charts to Adaptive Forms. Adaptive Forms provides a chart compo
 * **Can I connect a Form Data Model to a relational database model?**
 You can connect a Form Data Model to [!DNL RESTful web services], [!DNL SOAP-based web services], [!DNL OData services], and Experience Manager user profile as data sources. <!--Support to connect a Form Data Model with a relational database is not available.-->  
 
-* **Can I use custom certificates with Form Data Model for authentication?**
-Form Data Model does not provide a method to use custom certificates for authentication. So, the custom certificates like x509 and 2-way SSL are not supported.  
+* **Can I use custom certificates with Form Data Model (FDM) for authentication?**
+Form Data Model (FDM) does not provide a method to use custom certificates for authentication. So, the custom certificates like x509 and 2-way SSL are not supported.  
 
 * **Can I use Forms Portal submit action Adaptive Forms?**
 
-  You can modify your existing Adaptive Forms to use [Submit to REST endpoint](configuring-submit-actions.md#submit-to-rest-endpoint), [Send email](configuring-submit-actions.md#send-email), [Submit using Form Data Model](configuring-submit-actions.md#submit-using-form-data-model), and [Invoke an AEM Workflow](configuring-submit-actions.md#invoke-an-aem-workflow) Submit actions. Forms Portal and Forms Portal submit action are not available yet. Keep an eye on monthly release notes for the availability of the features.
+  You can modify your existing Adaptive Forms to use [Submit to REST endpoint](configuring-submit-actions.md#submit-to-rest-endpoint), [Send email](configuring-submit-actions.md#send-email), [Submit using Form Data Model (FDM)](configuring-submit-actions.md#submit-using-form-data-model), and [Invoke an AEM Workflow](configuring-submit-actions.md#invoke-an-aem-workflow) Submit actions. Forms Portal and Forms Portal submit action are not available yet. Keep an eye on monthly release notes for the availability of the features.
 
 * **Can I use [!DNL AEM Forms] app with [!DNL AEM Forms] as a Cloud Service?**
 

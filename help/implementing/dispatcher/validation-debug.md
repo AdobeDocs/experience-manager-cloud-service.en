@@ -4,6 +4,7 @@ description: Learn about local validation, debugging, the flexible mode file str
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
 
+role: Admin
 ---
 # Validating and Debugging using Dispatcher Tools {#Dispatcher-in-the-cloud}
 

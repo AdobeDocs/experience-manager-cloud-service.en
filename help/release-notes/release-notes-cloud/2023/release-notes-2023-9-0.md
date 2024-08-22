@@ -2,6 +2,8 @@
 title: Release Notes for 2023.9.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Release Notes for 2023.9.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
+feature: Release Information
+role: Admin
 ---
 
 # 2023.9.0 Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
@@ -50,7 +52,7 @@ You can now assign metadata form to a specific folder within your deployment. Al
 
 ### New features in Admin view {#admin-view-features}
 
-* **Integrate AEM Assets as a Cloud Service with document-based authoring for Edge Delivery Services**: Integrate AEM Assets with document-based authoring for Edge Delivery Services to enable website authors to [use images available in AEM Assets repositories while authoring documents in Microsoft Word or Google Docs](/help/edge/using.md#integrate-assets-edge).
+* **Integrate AEM Assets as a Cloud Service with Document-based Authoring  for Edge Delivery Services**: Integrate AEM Assets with Document-based Authoring  for Edge Delivery Services to enable website authors to [use images available in AEM Assets repositories while authoring documents in Microsoft Word or Google Docs](/help/edge/using.md#integrate-assets-edge).
 
 * **Extract ZIP archives**: Ability to select ZIP archives that are managed in Experience Manager and [extracting the files directly into Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) without downloading them.
 
@@ -58,9 +60,9 @@ You can now assign metadata form to a specific folder within your deployment. Al
 
 ### Pre-release features available in [!DNL Experience Manager Assets] {#prerelease-features-assets}
 
-* **Dynamic Media**: [Multi-subtitle and multi-audio track support for videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma)&mdash;You can now easily add multiple subtitles and multiple audio tracks to a primary video. This capability means that your videos are accessible across a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the subtitles and audio tracks from a single tab in the user interface.
+* **Dynamic Media**: [Multi-caption and multi-audio track support for videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma)&mdash;You can now easily add multiple captions and multiple audio tracks to a primary video. This capability means that your videos are accessible across a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the captions and audio tracks from a single tab in the user interface.
 
-  ![Subtitles and Audio tracks tab on the Properties page of a selected video asset.](/help/release-notes/assets/msma-aem-cs.png)*Subtitles and Audio tracks tab on the Properties page of a selected video asset.*
+  ![Captions and Audio tracks tab on the Properties page of a selected video asset.](/help/release-notes/assets/msma-aem-cs.png)*Captions and Audio tracks tab on the Properties page of a selected video asset.*
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -95,7 +97,7 @@ You can now assign metadata form to a specific folder within your deployment. Al
 
 * **[Protect your documents with DocAssurance APIs (Part of Communication APIs)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: The DocAssurance APIs empower you to safeguard sensitive information by signing and encrypting the documents. Through encryption, the contents of a document are transformed into an unreadable format, ensuring that only authorized users can gain access. This fortified layer of protection not only shields valuable data from unauthorized eyes but also provides peace of mind. The Signature APIs let your organization protect the security and privacy of Adobe PDF documents that it distributes and receives. This service uses digital signatures and certification to ensure that only intended recipients can alter documents. 
 
-     You can write to `aem-forms-early-adopter-program@adobe.com` from your official email id to join the early adopter program and request access to the capability.
+     You can write to `aem-forms-ea@adobe.com` from your official email id to join the early adopter program and request access to the capability.
 
 * **[Headless Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)**: Use Headless Adaptive Forms to enable your developers to create, publish, and manage interactive forms that can be accessed and interacted with through APIs, rather than through a traditional graphical user interface. Headless adaptive forms help you: 
 

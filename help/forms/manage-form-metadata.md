@@ -3,6 +3,7 @@ title: How can we manage metadata for AEM Forms?
 description: Metadata allows for easier categorization and organization of assets and helps users who are looking for a specific asset.
 feature: Adaptive Forms, Foundation Components
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
+role: User, Developer
 ---
 # Add, remove, or edit metadata of an Adaptive Form {#manage-form-metadata}
 
@@ -65,7 +66,7 @@ The following is an extensive list of metadata properties supported in [!DNL AEM
      <li>PDF form, PDF form (Acroform), or PDF form (Signed)</li> 
      <li>Document, Document (Signed)</li> 
      <li>Adaptive Form</li> 
-     <li>Form Data Model</li>
+     <li>Form Data Model (FDM)</li>
      <li>Resource</li> 
     </ul> </td> 
   </tr> 
@@ -156,7 +157,7 @@ The following is an extensive list of metadata properties supported in [!DNL AEM
    <td>Adaptive Form</td> 
    <td><p>Specifies which form model is used while authoring the Adaptive Form. This property can have following values:</p> 
     <ul> 
-      <li>Form Data Model </li>
+      <li>Form Data Model (FDM)</li>
       <li>Schema: An XML of JSON schema</li>
      <!-- <li>Form template: A form template is selected from the ones existing in the repository. This value can be updated.</li> 
      <li>XML schema: An XSD file is uploaded. This value can be updated.</li> -->

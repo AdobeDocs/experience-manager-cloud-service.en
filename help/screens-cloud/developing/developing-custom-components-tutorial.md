@@ -2,6 +2,8 @@
 title: Developing a Custom Component for Screens as a Cloud Service
 description: The following tutorial walks through the steps to create a custom component for AEM Screens. AEM Screens reuses many existing design patterns and technologies of other AEM products. The tutorial highlights differences and special considerations when developing for AEM Screens.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
+feature: Developing Screens
+role: Admin, Developer, User
 ---
 # Developing a Custom Component for AEM Screens as a Cloud Service{#developing-a-custom-component-for-aem-screens}
 
@@ -27,7 +29,7 @@ The tutorial steps and screenshots are performed using **CRXDE Lite**. IDEs can 
 
 ## Project Setup {#project-setup}
 
-A Screens project's source code is typically managed as a multi-module Maven project. To expedite the tutorial, a project was pre-generated using the [AEM Project Archetype 13](https://github.com/adobe/aem-project-archetype). More details on [creating a project with Maven AEM Project Archetype can be found here](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html).
+A Screens project's source code is typically managed as a multi-module Maven project. To expedite the tutorial, a project was pre-generated using the [AEM Project Archetype 13](https://github.com/adobe/aem-project-archetype). See [Project Setup](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html) for more details on creating a project with Maven AEM Project Archetype.
 
 1. Download and install the following packages using [CRX Package Manager](http://localhost:4502/crx/packmgr/index.jsp):
 

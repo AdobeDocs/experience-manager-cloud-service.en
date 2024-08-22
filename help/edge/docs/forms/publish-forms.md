@@ -2,21 +2,21 @@
 title: Publish an AEM Forms Edge Delivery Services Form
 description: Publish an AEM Forms Edge Delivery Services Form
 feature: Edge Delivery Services
-hide: yes
-hidefromtoc: yes
+exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
+role: Admin, Architect, Developer
 ---
-
-# Publish your form
+# Publish your form and start collecting data
 
 Once you are ready to share your form with your customers for data collection or submission, you can simply publish it, making the form readily available for your customers to use.
 
-![Document-based authoring ecosystem](/help/edge/assets/document-based-authoring-workflow-publish-form.png)
+![Document-based Authoring  ecosystem](/help/edge/assets/document-based-authoring-workflow-publish-form.png)
 
 ## Pre-requisites
 
-* The [Adaptive Form Block is enabled for your EDS project on GitHub](/help/edge/docs/forms/create-forms.md).
+* You have an AEM Project based on [AEM Forms boilerplate](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) or [added Adaptive Forms Block to your existing AEM Project](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) 
 * Your form is full tested and ready to use. 
 * Your [spreadsheet is configured](/help/edge/docs/forms/submit-forms.md) to accept data.
+
 
 ## Publish your form  
 
@@ -70,7 +70,9 @@ To add the form to your webpage:
 
     | Form  |
     |---|
-    | [https://main--portal--wkndforms.hlx.live/enquiry.json ](https://main--portal--wkndforms.hlx.live/enquiry.json)  |
+    | [https://main--wefinance--wkndforms.hlx.live/enquiry.json ](https://main--wefinance--wkndforms.hlx.live/enquiry.json)  |
+
+    ![Add a block named 'Form' to the file](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
     This block serves as a placeholder where the form is embedded. In the second row of the block, add the URL of your `<form>.json` file as a hyperlink. 
     
@@ -82,20 +84,22 @@ To add the form to your webpage:
     Use the preview URL (.page URL) for developmental or testing purposes, or the publish URL (.live) for production. Here's are examples with preview and publish URL: 
 
     **Preview URL**
+
     | Form  |
     |---|
-    | [https://main--portal--wkndforms.hlx.page/enquiry.json ](https://main--portal--wkndforms.hlx.page/enquiry.json)  |
+    | [https://main--wefinance--wkndforms.hlx.page/enquiry.json ](https://main--wefinance--wkndforms.hlx.page/enquiry.json)  |
 
 
-     **Publish URL**
+    **Publish URL**
+
     | Form  |
     |---|
-    | [https://main--portal--wkndforms.hlx.live/enquiry.json ](https://main--portal--wkndforms.hlx.live/enquiry.json)  |
+    | [https://main--wefinance--wkndforms.hlx.live/enquiry.json ](https://main--wefinance--wkndforms.hlx.live/enquiry.json)  |
 
 1. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview the webpage. The page now displays the form. For example, here is the form based on the [enquiry spreadsheet](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0): 
 
 
-    [![A sample EDS form](/help/edge/assets/eds-form.png)](https://main--portal--wkndforms.hlx.live/)
+    ![A sample EDS form](/help/edge/assets/eds-form.png)
 
 1. Use AEM Sidekick to publish the form. Now, your customers can fill out the form and submit it. 
 
@@ -112,10 +116,6 @@ If you encounter an error resembling the following message, it indicates that th
 +++
 
 
-## See more
+## See also
 
-* [Create and preview a form](/help/edge/docs/forms/create-forms.md)
-* [Enable form to send data](/help/edge/docs/forms/submit-forms.md)
-* [Publish a form to sites page](/help/edge/docs/forms/publish-forms.md)
-* [Add validations to form fields](/help/edge/docs/forms/validate-forms.md)
-* [Change themes and style of form](/help/edge/docs/forms/style-theme-forms.md)
+{{see-more-forms-eds}}

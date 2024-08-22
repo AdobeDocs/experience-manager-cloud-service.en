@@ -2,6 +2,9 @@
 title: Custom Code Quality Rules
 description: This page describes the custom code quality rules executed by Cloud Manager as part of code quality testing. They are based on best practices from Adobe Experience Manager Engineering.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 # Custom code quality rules {#custom-code-quality-rules} 
 
@@ -156,7 +159,7 @@ public void doThis() {
   // do something with the client
 }
 
-public void orDoThis() {
+public void orDoThis () {
   URL url = new URL("http://www.google.com");
   URLConnection urlConnection = url.openConnection();
   urlConnection.setConnectTimeout(5000);
@@ -1127,7 +1130,6 @@ Overriding the default value can lead to very slow page reads, particularly when
 
 The expected pattern for fully custom index names is: `[prefix].[indexName]-custom-[version]`. More information can be found in the document [Content Search and Indexing](/help/operations/indexing.md).
 
-
 ### Same property with different analyzed values in the same index definition {#oakpal-same-property-different-analyzed-values}
 
 #### Non-compliant code {#non-compliant-code-same-property-different-analyzed-values}
@@ -1180,7 +1182,7 @@ Example:
 
 If the analyzed property has not been explicitly set, its default value will be false. 
 
-### Tags property
+### Tags property {#tags-property}
 
 * **Key**: IndexHasValidTagsProperty
 * **Type**: Code Smell
@@ -1188,3 +1190,84 @@ If the analyzed property has not been explicitly set, its default value will be 
 * **Since**: Version 2023.1.0
 
 For specific indexes, ensure you retain the tags property and its current values. While adding new values to the tags property is permissible, deleting any existing ones (or the property altogether) can lead to unexpected results.
+
+### Index Definition Nodes Must Not Be deployed in UI Content package {#oakpal-ui-content-package}
+
+* **Key**: IndexNotUnderUIContent
+* **Type**: Improvement
+* **Severity**: Minor
+* **Since**: Version 2024.6.0
+
+AEM Cloud Service prohibits custom search index definitions (nodes of type `oak:QueryIndexDefinition`) from being deployed in the UI Content package.
+
+>[!WARNING]
+>
+>You are urged to address this as soon as possible since it will cause pipelines to fail starting with the [Cloud Manager August 2024 release.](/help/implementing/cloud-manager/release-notes/current.md)
+
+### Custom full-text Index Definition Of Type damAssetLucene Must Be Correctly Prefixed With 'damAssetLucene' {#oakpal-dam-asset-lucene}
+
+* **Key**: CustomFulltextIndexesOfTheDamAssetCheck
+* **Type**: Improvement
+* **Severity**: Minor
+* **Since**: Version 2024.6.0
+
+AEM Cloud Service prohibits custom full-text index definitions of type `damAssetLucene` from being prefixed with anything other than `damAssetLucene`.
+
+>[!WARNING]
+>
+>You are urged to address this as soon as possible since it will cause pipelines to fail starting with the [Cloud Manager August 2024 release.](/help/implementing/cloud-manager/release-notes/current.md)
+
+### Index Definition Nodes Must Not Contain Properties With Same Name {#oakpal-index-property-name}
+
+* **Key**: DuplicateNameProperty
+* **Type**: Improvement
+* **Severity**: Minor
+* **Since**: Version 2024.6.0
+
+AEM Cloud Service prohibits custom search index definitions (that is, nodes of type `oak:QueryIndexDefinition`) from containing properties with the same name
+
+>[!WARNING]
+>
+>You are urged to address this as soon as possible since it will cause pipelines to fail starting with the [Cloud Manager August 2024 release.](/help/implementing/cloud-manager/release-notes/current.md)
+
+### Customizing Of Certain OOTB Index Definitions is Prohibited {#oakpal-customizing-ootb-index}
+
+* **Key**: RestrictIndexCustomization
+* **Type**: Improvement
+* **Severity**: Minor
+* **Since**: Version 2024.6.0
+
+AEM Cloud Service prohibits unauthorized modifications of the following OOTB indexes:
+
+* `nodetypeLucene`
+* `slingResourceResolver`
+* `socialLucene`
+* `appsLibsLucene`
+* `authorizables`
+* `pathReference`
+
+>[!WARNING]
+>
+>You are urged to address this as soon as possible since it will cause pipelines to fail starting with the [Cloud Manager August 2024 release.](/help/implementing/cloud-manager/release-notes/current.md)
+
+### Configuration Of The Tokenizers In Analyzers Should Be Created With The Name 'tokenizer' {#oakpal-tokenizer}
+
+* **Key**: AnalyzerTokenizerConfigCheck
+* **Type**: Improvement
+* **Severity**: Minor
+* **Since**: Version 2024.6.0
+
+AEM Cloud Service prohibits creation of tokenizers with incorrect names in analyzers. Tokenizers should always be defined as `tokenizer`.
+
+>[!WARNING]
+>
+>You are urged to address this as soon as possible since it will cause pipelines to fail starting with the [Cloud Manager August 2024 release.](/help/implementing/cloud-manager/release-notes/current.md)
+
+### Configuration Of Indexing Definitions Should Not Contain Spaces {#oakpal-indexing-definitions-spaces}
+
+* **Key**: PathSpacesCheck
+* **Type**: Improvement
+* **Severity**: Minor
+* **Since**: Version 2024.7.0
+
+AEM Cloud Service prohibits creation of indexing definitions which contain properties with spaces.

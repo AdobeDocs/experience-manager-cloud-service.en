@@ -2,6 +2,9 @@
 title: How to Update Your Content via AEM Assets APIs
 description: In this part of the AEM Headless Developer Journey, learn how to use the REST API to access and update the content of your Content Fragments.
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
+solution: Experience Manager
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Architect, Developer
 ---
 # How to Update Your Content via AEM Assets APIs {#update-your-content}
 
@@ -249,6 +252,8 @@ Usage can differ depending on whether you are using an AEM author or publish env
 >[!NOTE]
 >
 >See the API Reference [Adobe Experience Manager Assets API - Content Fragments](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
+>
+>The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) are also available.
 
 ### Read/Delivery {#read-delivery}
 
@@ -327,3 +332,4 @@ You should continue your AEM headless journey by next reviewing the document [Ho
 * [Introduction to AEM as a Headless CMS](/help/headless/introduction.md)
 * [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 * [Tutorials for Headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) 
+* The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) are also available.

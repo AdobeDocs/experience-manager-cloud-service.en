@@ -2,6 +2,8 @@
 title: Content Delivery Flow Overview
 description: Learn more about the content delivery data flow and how to publish your content
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
+feature: Dispatcher
+role: Admin
 ---
 # Content Delivery Flow {#content-delivery}
 
@@ -28,4 +30,4 @@ The following sections provide greater detail about content delivery:
 * [Caching](/help/implementing/dispatcher/caching.md)
 
 
-Information about replication from the author service to the publish service is available [here](/help/operations/replication.md).
+For information about replication from the author service to the publish service see [Replication](/help/operations/replication.md).

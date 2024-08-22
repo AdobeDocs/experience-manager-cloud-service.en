@@ -1,8 +1,9 @@
 ---
 title: GraphQL Persisted Queries - enabling caching in the Dispatcher
 description: The Dispatcher is a caching and security layer in front of Adobe Experience Manager Publish environments. You can enable caching for Persisted Queries in AEM Headless.
-feature: Dispatcher, GraphQL API
+feature: Headless, Dispatcher, GraphQL API
 exl-id: 30a97e56-6699-41c4-a4eb-fc6236667f8f
+role: Admin, Developer
 ---
 # GraphQL Persisted Queries - enabling caching in the Dispatcher {#graphql-persisted-queries-enabling-caching-dispatcher}
 
@@ -34,17 +35,7 @@ To enable the caching of persisted queries, define the Dispatcher variable `CACH
 
 >[!NOTE]
 >
->When Dispatcher caching is enabled for persisted queries by using `Define CACHE_GRAPHQL_PERSISTED_QUERIES` an `ETag` header is added to the response by the Dispatcher.
->
->By default the `ETag` header is configured with the following directive:
->
->```
->FileETag MTime Size 
->```
->
->However, this setting can cause issues when used on the persisted query responses, because it does not account for small changes in the response.
->
->To achieve individual `ETag` calculations on *each* response that is unique the `FileETag Digest` setting has to be used in the dispatcher configuration:
+>To achieve individual `ETag` header computation on the cached persisted queries (for *each* response that is unique) the `FileETag Digest` setting has to be used in the dispatcher configuration virtual host configuration (if it does not already exist):
 >
 >```xml
 ><Directory />    

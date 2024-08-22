@@ -2,6 +2,9 @@
 title: Introduction to Production Programs 
 description: Learn what production programs are and suggestions for how to set up yours.
 exl-id: bb8d4a5a-b26a-4718-9327-149fedb87e6a
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 
 # Introduction to Production Programs {#production-programs}
@@ -27,4 +30,4 @@ The following table describes common scenarios of available solutions and the ty
 
 >[!NOTE]
 >
->Production programs [can be edited not be deleted.](editing-programs.md)
+>Production programs [can be edited but not be deleted.](editing-programs.md)

@@ -2,6 +2,8 @@
 title: Generating Access Tokens for Server-Side APIs
 description: Learn how to facilitate communication between a third-party server and AEM as a Cloud Service by generating a secure JWT Token
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Generating Access Tokens for Server-Side APIs {#generating-access-tokens-for-server-side-apis}
 
@@ -17,7 +19,7 @@ The server-to-server flow is described below, along with a simplified flow for d
 
 ## The Server-to-server Flow {#the-server-to-server-flow}
 
-Users with an IMS org administrator role, and who are a member of the AEM Users or AEM Administrators Product Profile on AEM Author, can generate a set of credentials from AEM as a Cloud Service. Each credential is a JSON payload that includes a certificate (the public key), a private key, and a technical account consisting of a `clientId` and `clientSecret`. Those credentials can later be retrieved by a user with the AEM as a Cloud Service Environment administrator role and should be installed on a non-AEM server and treated carefully as a secret key. This JSON format file contains all the data required to integrate with an AEM as a Cloud Service API. The data is used to create a signed JWT token, which is exchanged with the Adobe Identity Management Services (IMS) for an IMS access token. This access token can then be used as a Bearer authentication token to make requests to AEM as a Cloud Service. The certificate in the credentials expires after one year by default, but they can be refreshed when needed, as described [here](#refresh-credentials).
+Users with an IMS org administrator role, and who are a member of the AEM Users or AEM Administrators Product Profile on AEM Author, can generate a set of credentials from AEM as a Cloud Service. Each credential is a JSON payload that includes a certificate (the public key), a private key, and a technical account consisting of a `clientId` and `clientSecret`. Those credentials can later be retrieved by a user with the AEM as a Cloud Service Environment administrator role and should be installed on a non-AEM server and treated carefully as a secret key. This JSON format file contains all the data required to integrate with an AEM as a Cloud Service API. The data is used to create a signed JWT token, which is exchanged with the Adobe Identity Management Services (IMS) for an IMS access token. This access token can then be used as a Bearer authentication token to make requests to AEM as a Cloud Service. The certificate in the credentials expires after one year by default, but they can be refreshed when needed, see [Refresh Credentials](#refresh-credentials).
 
 The server-to-server flow involves the following steps:
 

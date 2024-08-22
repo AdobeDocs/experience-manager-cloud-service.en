@@ -2,6 +2,8 @@
 title: Validating Content Transfers
 description: Use the Content Transfer Tool to validate content transfers
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
+feature: Migration
+role: Admin
 ---
 # Validating Content Transfers {#validating-content-transfers}
 
@@ -11,7 +13,7 @@ Users can reliably determine if all the content that was extracted by the Conten
 
 >[!INFO]
 >
->This feature will be available as of the Content Transfer Tool (CTT) version 1.8.x release. The AEM Cloud Service target environment must be running at least version 6158 or greater. It also requires the source environment to be setup to run [pre-copy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). The validation feature looks for the azcopy.config file on the source. If it fails to find this file, validation will not run. To learn more about how to configure an azcopy.config file, see [this page](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
+>This feature will be available as of the Content Transfer Tool (CTT) version 1.8.x release. The AEM Cloud Service target environment must be running at least version 6158 or greater. It also requires the source environment to be setup to run [pre-copy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). The validation feature looks for the azcopy.config file on the source. If it fails to find this file, validation will not run. To learn more about how to configure an azcopy.config file, see [Handling Large Content Repositories - Configure an azcopy.config file](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
 
 Validating a content transfer is an optional feature. Enabling this feature will increase both the time it takes to perform an extraction and an ingestion. To use the feature, enable it in the System Console of the source AEM environment by following these steps:
 

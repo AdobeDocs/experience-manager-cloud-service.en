@@ -1,7 +1,9 @@
 ---
 title: AEM Developer Tools for Eclipse
-description: Learn how to use the AEM Developer Tools for Eclipse, an Eclipse plugin based on the Eclipse plugin for Apache Sling.
+description: Learn how to use the AEM Developer Tools for Eclipse, an Eclipse plug-in based on the Eclipse plug-in for Apache Sling.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # AEM Developer Tools for Eclipse{#aem-developer-tools-for-eclipse}
 
@@ -216,6 +218,6 @@ The official Apache Sling IDE tooling for Eclipse website provides you with usef
 
 The following official [Eclipse](https://www.eclipse.org/) documentation can help to set up your environment:
 
-* [Getting Started with Eclipse](https://www.eclipse.org/getting-started/)
+* [Getting Started with Eclipse](https://eclipseide.org/getting-started/)
 * [Eclipse Luna Help System](https://help.eclipse.org/latest/index.jsp)
 * [Maven Integration (m2eclipse)](https://www.eclipse.org/m2e/)

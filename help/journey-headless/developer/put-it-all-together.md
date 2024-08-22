@@ -2,6 +2,9 @@
 title: How to Put It All Together - Your App and Your Content in AEM Headless
 description: In this part of the AEM Headless Developer Journey, learn how to take your AEM Project including Content Fragments, your GraphQL calls, your REST API calls, and your application, and prepare it for going live.
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
+solution: Experience Manager
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Architect, Developer
 ---
 # How to Put It All Together - Your App and Your Content in AEM Headless {#put-it-all-together}
 
@@ -34,7 +37,7 @@ The AEM SDK is used to build and deploy custom code. It is the main tool that yo
 
 Different from the AEM SDK, the AEM **Headless SDK** is set of libraries that can be used by clients to quickly and easily interact with AEM Headless APIs over HTTP.
 
-For more information on the AEM Headless SDK, see the [documentation here](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html).
+For more information see [AEM Headless SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html).
 
 ## Additional Development Tools {#additional-development-tools}
 

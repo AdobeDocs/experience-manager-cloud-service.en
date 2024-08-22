@@ -1,44 +1,48 @@
 ---
-title: Getting Started with AEM Forms Edge Delivery Service. Create a form. 
+title: Getting Started with AEM Forms Edge Delivery Service. Create a form.
 description: Craft perfect forms, fast! ⚡ AEM Forms Edge Delivery doc-based authoring = blazing speed & SEO-friendly forms for happier users & search engines.
 feature: Edge Delivery Services
-hide: yes
-hidefromtoc: yes
+exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
+role: Admin, Architect, Developer
 ---
+# Create a form using Adaptive Forms Block
 
-# Create a form using Adaptive Form Block
+>[!VIDEO](https://video.tv.adobe.com/v/3427881?quality=12&learn=on)
 
-In today's digital age, creating user-friendly forms is essential for any organization. AEM Forms Edge Delivery's lets you create forms using familiar tools like Word or Google Docs. 
+AEM Forms Edge Delivery provides a block, known as Adaptive Forms Block, to help you easily create forms to capture and store captured data. You can [create a new AEM project pre-configured with Adaptive Forms Block](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) or [add the Adaptive Forms Block to an existing AEM project](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project).  
 
-These forms submit data directly to a Microsoft Excel or Google Sheets file, enabling you to use vibrant ecosystem and robust APIs of Google Sheets, Microsoft Excel, and Microsoft Sharepoint to easily process submitted data or to initiate an existing business workflow.
+These forms submit data directly to a Microsoft Excel or Google Sheets file, enabling you to use vibrant ecosystem and robust APIs of Google Sheets, Microsoft Excel, and Microsoft SharePoint to easily process submitted data or to initiate an existing business workflow.
 
-![Document-based authoring ecosystem](/help/edge/assets/document-based-authoring-workflow-create-form.png)
-
-AEM Forms Edge Delivery provides a block, known as Adaptive Form Block, to help you easily create forms to capture and store captured data. You can include the Adaptive Form Block in your AEM EDS project to start creating a form. Let's start: 
+![Document-based Authoring ecosystem](/help/edge/assets/document-based-authoring-workflow-create-form.png)
 
 
 ## Prerequisites
 
 Before you start, ensure that you have completed the following steps:
 
-* Set up Edge Delivery Service (EDS) GitHub project using AEM boilerplate and clone the corresponding GitHub repository on your local machine. See [developer tutorial](https://www.aem.live/developer/tutorial) for details. In this document, the local folder of your Edge Delivery Service (EDS) project is referred as `[EDS Project repository]` .  
-* Ensure that you have access to Google Sheets or Microsoft SharePoint. To set up Microsoft SharePoint as your content source, see [How to use Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint)
+* Set up an [AEM project using AEM Forms boilerplate](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) or [added Adaptive Forms Block to your existing AEM Project](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) and clone the corresponding GitHub repository on your local machine. 
+In this document, the local folder of your Edge Delivery Services (EDS) project is referred as `[EDS Project repository]`.  
+* Ensure that you have access to Google Sheets or Microsoft SharePoint. To set up Microsoft SharePoint as your content source, see [How to use SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
 
 ## Create a form
 
-+++ Step 1: Add the Adaptive Form Block to your Edge Delivery Service (EDS) project.
+<!-- 
 
-The Adaptive  empowers users to create forms for an Edge Delivery Service Site. However, this block isn't included in the default AEM boilerplate (used to create an Edge Delivery Service project). To seamlessly integrate the Adaptive Form Block into your Edge Delivery Service project:
++++ Step 1: Add the Adaptive Forms Block to your Edge Delivery Services (EDS) project.
 
-1. **Clone the Adaptive Form Block repository**: Clone the [Adaptive Form Block repository](https://github.com/adobe/afb) on your local machine. It contains the code to render the form on an EDS webpage. In this document, the local folder of your Forms Block repository is referred as `[Adaptive Form Block repository]`.
-1. **Locate the Adaptive Form Block Repository:** Access the [Adaptive Form Block repository]/blocks folder on your local machine and copy the `form` folder. 
-1. **Paste the Adaptive Form Block into your EDS Project:**
-Navigate to the [EDS Project repository]/blocks/ folder on your local machine and paste the form folder.
-1. **Commit Changes to GitHub:** Check in the form folder and its underlying files to your Edge Delivery Service project on GitHub.
+The Adaptive  empowers users to create forms for an Edge Delivery Service Site. However, this block isn't included in the default AEM boilerplate (used to create an Edge Delivery Services project). To seamlessly integrate the Adaptive Forms Block into your Edge Delivery Services project:
 
-After completing these steps, the Adaptive Form Block is successfully added to your Edge Delivery Service(EDS) project repository on GitHub. You can now create and add forms to a EDS Sites page.
+1. **Clone the Adaptive Forms Block repository**: Clone the [Adaptive Forms Block repository](https://github.com/adobe-rnd/form-block) on your local machine. It contains the code to render the form on an EDS webpage. In this document, the local folder of your Forms Block repository is referred as `[Adaptive Forms Block repository]`.
+1. **Locate the Adaptive Forms Block Repository:** Access the [Adaptive Forms Block repository]/blocks/src folder and copy its content. 
+
+1. on your local machine and copy the `form` folder. 
+1. **Paste the Adaptive Forms Block's code into your EDS Project:**
+Navigate to the [EDS Project repository]/blocks/ folder on your local machine and create a 'form' folder. Paste the `[Adaptive Forms Block repository]/blocks/src content`, copied in perevious step to the `[EDS Project repository]/blocks/form` folder.
+1. **Commit Changes to GitHub:** Check in the `[EDS Project repository]/blocks/form` folder and its underlying files to your Edge Delivery Services project on GitHub.
+
+After completing these steps, the Adaptive Forms Block is successfully added to your Edge Delivery Services (EDS) project repository on GitHub. You can now create and add forms to a EDS Sites page.
  
 
 **Troubleshooting GitHub build issues**
@@ -51,13 +55,13 @@ Ensure a smooth GitHub build process by addressing potential issues:
 * **Handle Linting Errors:**
     Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project.
 
-    
-
 +++
 
-+++ Step 2: Author a form using Microsoft Excel or Google Sheet.
+-->
 
-Instead of navigating through complex processes, crafting a form can be effortlessly achieved using a spreadsheet. You can start by adding the rows and column headers to a spreadsheet, where each row represents a form field, while each column header defines the properties of the corresponding field.
++++ Step 1: Author a form using Microsoft Excel or Google Sheet.
+
+Instead of navigating through complex processes, crafting a form can be effortlessly achieved using a spreadsheet. You can define the rows and columns that will make up the form structure. Each row represents an individual [form field](/help/edge/docs/forms/form-components.md#available-components) and the column headers define the corresponding [field properties](/help/edge/docs/forms/form-components.md#components-properties).  
 
 For instance, consider the following spreadsheet where rows outline fields for a `enquiry` form and column headers define their properties:
 
@@ -69,6 +73,8 @@ To proceed with form creation:
 
 1. Create a Microsoft Excel Workbook or Google Sheet anywhere within your AEM Edge Delivery project directory. For example, create a spreadsheet named `enquiry` on AEM Edge Delivery project directory on Google Drive. 
 
+    ![Sample Content on Google Drive](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
+
 1. Ensure that the sheet is shared with the appropriate AEM user (for example `helix@adobe.com`) [as per the configurations specified for your project](https://www.aem.live/docs/setup-customer-sharepoint). Grant the user editing permission for the sheet. 
 
 1. Open the created spreadsheet and rename the default sheet to "shared-default". 
@@ -76,6 +82,7 @@ To proceed with form creation:
     ![rename default sheet to "shared-default"](/help/edge/assets/rename-sheet-to-shared-default.png)
 
 1. To add the form fields, insert rows and column headers into the 'shared-default' sheet. Each row should represent a [form field](/help/edge/docs/forms/form-components.md#available-components), with column headers defining the corresponding field [properties](/help/edge/docs/forms/form-components.md#components-properties).
+
 
     For a swift start, consider copying the contents of the [Enquiry spreadsheet](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) into your spreadsheet. After copying the content, save your spreadsheet. 
 
@@ -91,7 +98,7 @@ To proceed with form creation:
 
     ```JSON
 
-        https://<branch>--<repository>--<owner>.hlx.live/<form>.json
+        https://<branch>--<repository>--<owner>.hlx.live/<form-path>/<form-file-name>.json
        
     ```
 
@@ -106,22 +113,27 @@ To proceed with form creation:
 
 +++
 
-+++ Step 3: Preview the form using your Edge Delivery Service (EDS) page.
++++ Step 2: Preview the form using your Edge Delivery Services (EDS) page.
 
 
-Till now, you have added the Adaptive Form Block to your EDS project and prepared the structure of the form. Now, to preview the form:
+Till now, you have prepared the structure of the form. Now, to preview the form:
 
-1. **Access Your Project Directory:** Open your Microsoft SharePoint or Google Drive account and navigate to your AEM Edge Delivery project directory.
+1. Open your Microsoft SharePoint or Google Drive account and navigate to your AEM Edge Delivery project directory.
 
-1. **Embed the Form into a Document:** Open a document file (For example, index file) to embed the form. Alternatively, you can create a new document.
 
-1. **Navigate to the Desired Location:** Move to the desired location within the document where you intend to add the form.
 
-1. **Add the Adaptive Form Block:** Insert a block named 'Form' into the file, as illustrated below:
+1. Open a document file (For example, index file) to embed the form. Alternatively, you can create a new document.
+
+1. Move to the desired location within the document where you intend to add the form.
+
+1. To create a form block to render the form. Select Insert > Table, and create a one column, two row table. Name the table "Form" and paste the preview URL in the second row. Make sure the URL is formatted as a hyperlink, not plain text, as illustrated below:
 
     | Form  |
     |---|
-    | [https://main--portal--wkndforms.hlx.live/enquiry.json ](https://main--portal--wkndforms.hlx.live/enquiry.json)  |
+    | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json)  |
+
+
+    ![Add Adaptive Forms Block to your webpage](/help/edge/assets/add-adaptive-forms-block.png)
 
     This block serves as a placeholder where the form is embedded. In the second row of the block, add the preview URL of your `<form>.json` file as a hyperlink. 
     
@@ -148,13 +160,6 @@ Till now, you have added the Adaptive Form Block to your EDS project and prepare
 [Prepare your spreadsheet](/help/edge/docs/forms/submit-forms.md) to begin accepting data upon form submission.
 
 
+## See also
 
-## See more
-
-* [Form Components](/help/edge/docs/forms/form-components.md)
-* [Form Field Properties](/help/edge/docs/forms/eds-form-field-properties)
-* [Create and preview a form](/help/edge/docs/forms/create-forms.md)
-* [Enable form to send data](/help/edge/docs/forms/submit-forms.md)
-* [Publish a form to sites page](/help/edge/docs/forms/publish-forms.md)
-* [Add validations to form fields](/help/edge/docs/forms/validate-forms.md)
-* [Change themes and style of form](/help/edge/docs/forms/style-theme-forms.md)
+{{see-more-forms-eds}}

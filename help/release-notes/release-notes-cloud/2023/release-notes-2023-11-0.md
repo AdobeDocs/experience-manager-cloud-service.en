@@ -2,6 +2,8 @@
 title: Release Notes for 2023.11.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Release Notes for 2023.11.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 19cff082-80aa-445c-9462-5e319b7fe0e9
+feature: Release Information
+role: Admin
 ---
 # 2023.11.0 Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -104,7 +106,7 @@ Interested in trying out the feature and sharing feedback? Send an email to **ae
 
 * **[Protect your documents with DocAssurance APIs (Part of Communication APIs)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: The DocAssurance APIs empower you to safeguard sensitive information by signing and encrypting the documents. Through encryption, the contents of a document are transformed into an unreadable format, ensuring that only authorized users can gain access. This fortified layer of protection not only shields valuable data from unauthorized eyes but also provides peace of mind. The Signature APIs let your organization protect the security and privacy of Adobe PDF documents that it distributes and receives. This service uses digital signatures and certification to ensure that only intended recipients can alter documents. 
 
-     You can write to `aem-forms-early-adopter-program@adobe.com` from your official email id to join the early adopter program and request access to the capability.
+     You can write to `aem-forms-ea@adobe.com` from your official email id to join the early adopter program and request access to the capability.
      
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 

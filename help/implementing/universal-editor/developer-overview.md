@@ -2,13 +2,13 @@
 title: Universal Editor Overview for AEM Developers
 description: If you are an AEM developer interested in how the Universal Editor works and how to use it in your project, this document gives you an end-to-end introduction by leading you through instrumenting the WKND project to work with the Universal Editor.
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
+feature: Developing
+role: Admin, Architect, Developer
 ---
 
 # Universal Editor Overview for AEM Developers {#developer-overview}
 
 If you are an AEM developer interested in how the Universal Editor works and how to use it in your project, this document gives you an end-to-end introduction by leading you through instrumenting the WKND project to work with the Universal Editor.
-
-{{universal-editor-status}}
 
 ## Purpose {#purpose}
 
@@ -589,3 +589,4 @@ Have a look at the following documents for more information and details on the U
 * See the document [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md#service) for more details on the structure of the Universal Editor.
 * See the document [Local AEM Development with the Universal Editor](/help/implementing/universal-editor/local-dev.md) for more details on how to connect to a self-hosted version of the Universal Editor.
 * See the document [Using the Sling Resource Merger in Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/sling-resource-merger.md) for more details on overlaying nodes.
+

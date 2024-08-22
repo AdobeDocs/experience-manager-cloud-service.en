@@ -2,6 +2,8 @@
 title: Configure asset upload restrictions
 description: Configure Adobe Experience Manager Assets to restrict the type of assets that users can upload based on the MIME type. It helps prevent accidental uploads of undesired format and malicious files.
 exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
+feature: Upload, Asset Ingestion
+role: User, Admin, Developer
 ---
 # Configure asset upload restrictions {#configure-asset-upload-restrictions}
 
@@ -65,3 +67,4 @@ Based on the settings depicted in the image, you can upload images in .JPG, .PNG
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

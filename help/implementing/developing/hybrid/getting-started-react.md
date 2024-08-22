@@ -2,6 +2,8 @@
 title: Getting Started with SPAs in AEM Using React
 description: This article presents a sample SPA application, explains how it is put together, and lets you get up-and-running with your own SPA quickly using the React framework.
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Getting Started with SPAs in AEM Using React {#getting-started-with-spas-in-aem-using-react}
 
@@ -58,7 +60,7 @@ The `aem-clientlib-generator` is used to make the creation of client libraries a
 
 `"aem-clientlib-generator": "^1.4.1",`
 
-Further details about it can be found [on GitHub here](https://github.com/wcm-io-frontend/aem-clientlib-generator).
+For further details see [aem-clientlib-generator on GitHub](https://github.com/wcm-io-frontend/aem-clientlib-generator).
 
 The `aem-clientlib-generator` is configured in the `clientlib.config.js` file as follows.
 

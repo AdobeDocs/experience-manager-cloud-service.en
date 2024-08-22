@@ -1,8 +1,11 @@
 ---
 title: Configuring the Layout Container and Layout Mode
 description: Learn how to configure layout container and layout mode to enable responsive layouts for your content authors.
+exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
+solution: Experience Manager Sites
+feature: Administering
+role: Admin
 ---
-
 # Configuring the Layout Container and Layout Mode {#configuring-layout-container-and-layout-mode}
 
 [Responsive Layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md) is a mechanism for realizing [responsive web design.](https://en.wikipedia.org/wiki/Responsive_web_design) This allows the content author to create web pages that have a layout and dimensions dependent on the devices their users use.

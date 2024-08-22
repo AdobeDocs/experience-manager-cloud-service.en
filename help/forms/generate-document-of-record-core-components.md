@@ -3,6 +3,7 @@ title: How to generate document of record for Adaptive Forms?
 description: Learn to generate a template for a Document of Record (DoR) for Adaptive Forms Core Components.
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
+role: User, Developer
 ---
 # Generate Document of Record for Adaptive Forms (Core Components)
 
@@ -321,6 +322,10 @@ To localize the branding information that you enter in the Document of Record ta
         * **Template**:  If you want to select a custom template, browse and select an XDP on your [!DNL AEM Forms] server. If you want to use a template that is not available on your [!DNL AEM Forms] server, you should first upload the XDP to your [!DNL AEM Forms] server.
          * **Accent Color**: The color in which header text and separator lines are rendered in the document of record PDF.
          * **Font Family**: Font family of the text in the Document of Record PDF.
+
+            >[!NOTE]
+            >
+            > AEM Forms offers a variety of built-in fonts that seamlessly integrate with PDF files. To see the list of supported fonts, [click here](/help/forms/supported-out-of-the-box-fonts.md).
 
           * **Include form objects that are not bound to data model**: Setting the property includes unbound fields from Schema based Adaptive Form in the Document of Record.
 

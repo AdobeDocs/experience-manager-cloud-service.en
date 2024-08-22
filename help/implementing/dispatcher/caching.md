@@ -3,6 +3,7 @@ title: Caching in AEM as a Cloud Service
 description: Learn about the basics of Caching in AEM as a Cloud Service 
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
+role: Admin
 ---
 # Introduction {#intro}
 
@@ -245,7 +246,7 @@ For environments created in October 2023 or later, to better cache requests, the
  
 Submit a support ticket if you want this behavior to be disabled.
 
-For environments created before October 2023, it is recommended to configure the Dispatcher configuration's `ignoreUrlParams` property as [documented here](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
+For environments created before October 2023, it is recommended to configure the Dispatcher configuration's `ignoreUrlParams` property; see [Configuring Dispatcher - Ignoring URL Parameters](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
 
 There are two possibilities to ignore marketing parameters. (Where the first one is preferred to ignore cache busting via query parameters):
 
@@ -278,7 +279,7 @@ In general, it is not necessary to invalidate the Dispatcher cache. Instead, you
 Like previous versions of AEM, publishing or unpublishing pages clears the content from the Dispatcher cache. If a caching issue is suspected, you should republish the pages in question and ensure that a virtual host is available that matches the `ServerAlias` localhost, which is required for Dispatcher cache invalidation.
 
 >[!NOTE]
->For proper Dispatcher invalidation, make sure that requests from "127.0.0.1", "localhost", ".local", ".adobeaemcloud.com", and ".adobeaemcloud.net" are all matched and handled by a vhost configuration so the request can be served. You can do this task by global matching "*" in a catch-all vhost configuration following the pattern in the reference [AEM archetype](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost). Or, you can ensure that the previously mentioned list is caught by one of the vhosts.
+>For proper Dispatcher invalidation, make sure that requests from "127.0.0.1", "localhost", "\*.local", "\*.adobeaemcloud.com", and "\*.adobeaemcloud.net" are all matched and handled by a vhost configuration so the request can be served. You can do this task by global matching "*" in a catch-all vhost configuration following the pattern in the reference [AEM archetype](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost). Or, you can ensure that the previously mentioned list is caught by one of the vhosts.
 
 When the publish instance receives a new version of a page or asset from the author, it uses the flush agent to invalidate appropriate paths on its Dispatcher. The updated path is removed from the Dispatcher cache, together with its parents, up to a level (you can configure this level with the [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
 

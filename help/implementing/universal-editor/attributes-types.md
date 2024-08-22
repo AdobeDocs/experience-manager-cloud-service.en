@@ -2,13 +2,13 @@
 title: Attributes and Item Types
 description: Learn about the data attributes and item types that the Universal Editor requires.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
+feature: Developing
+role: Admin, Architect, Developer
 ---
 
 # Attributes and Types {#attributes-types}
 
 Learn about the data attributes and item types that the Universal Editor requires.
-
-{{universal-editor-status}}
 
 ## Introduction {#introduction}
 
@@ -26,9 +26,9 @@ In order for an app to be editable by the Universal Editor, it must be properly 
 |`data-aue-prop`|Attribute of the resource, see the section [Instrument the Page of the document Getting Started with the Universal Editor in AEM](getting-started.md#instrument-thepage)|
 |`data-aue-type`|[Type of the editable item](#item-types) (for example, text, image, and reference)|
 |`data-aue-filter`|Defines which references can be used|
-|`data-aue-label`|Defines a custom label for a selectable item which is displayed in the editor <br>In case `itemmodel` is set, the label is retrieved by way of the model|
+|`data-aue-label`|Defines a custom label for a selectable item which is displayed in the editor <br>In case `data-aue-model` is set, the label is retrieved by way of the model|
 |`data-aue-model`|Defines a model which is used for form-based editing in the properties rail|
-|`data-aue-behavior`|Defines the [behavior of an instrumentation,](#behaviors) for example, stand alone text or image can also mimic a component to make it moveable or deletable|
+|`data-aue-behavior`|Defines the [behavior of an instrumentation](#behaviors), for example, stand alone text or image can also mimic a component to make it moveable or deletable|
 
 ## Item Types {#item-types}
 
@@ -52,14 +52,3 @@ Depending on the use case `data-aue-prop` or `data-aue-resource` may or may not 
 |---|---|
 |`component`|Used to allow standalone text, richtext, and media mimic components so they are also moveable and deletable on the page|
 |`container`|Used to allow containers to be treated as their own components so they are movable and deletable on the page|
-
-## Additional Resources {#additional-resources}
-
-To learn more about the Universal Editor, see these documents.
-
-* [Universal Editor Introduction](introduction.md) - Learn how the Universal Editor enables editing any aspect of any content in any implementation so you can deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.
-* [Authoring Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) - Learn how easy and intuitive it is for content authors to create content using the Universal Editor.
-* [Publishing Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md) - Learn how the Universal Editor publishes content and how your apps can handle the published content.
-* [Getting Started with the Universal Editor in AEM](getting-started.md) - Learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
-* [Universal Editor Architecture](architecture.md) - Learn about the architecture of the Universal Editor and how data flows between its services and layers.
-* [Universal Editor Authentication](authentication.md) - Learn how the Universal Editor authenticates.

@@ -2,6 +2,8 @@
 title: Installing and Configuring Players in Screens as a Cloud Service
 description: This page describes how to install and configure players in Screens as a Cloud Service.
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
+feature: Developing Screens
+role: Admin, Developer, User
 ---
 # Installing and Configuring Players in Screens as a Cloud Service {#installing-players-screens-cloud}
 
@@ -63,7 +65,9 @@ The following properties are included in each `ping`:
 |lastContentChange {string}|timestamp of the last content change|
 
 >[!NOTE]
+>
 >Optionally, you can enable a more advanced property from the player preferences (Enable Playback Monitoring):
+>
 >|Property|Description|
 >|---|---|
 >|isContentRendering {boolean}|true if the GPU can confirm it is playing actual content (based on pixel analysis)|

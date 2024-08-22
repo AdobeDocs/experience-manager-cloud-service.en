@@ -2,7 +2,7 @@
 title: Review assets in folders and collections
 description: Set up review workflows for assets within a folder or a collection and share it with reviewers or creative partners to seek feedback.
 contentOwner: AG
-feature: Collections,Collaboration
+feature: Collections, Collaboration
 role: User
 exl-id: 1e5bdd66-2707-4584-87ed-a0ff1bde3718
 ---
@@ -122,3 +122,4 @@ After the reviewer completes the review (approves or rejects assets), you receiv
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

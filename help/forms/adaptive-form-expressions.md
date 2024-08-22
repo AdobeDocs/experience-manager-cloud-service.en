@@ -210,7 +210,7 @@ GuideBridge is collection of APIs' that can be used to interact with Adaptive Fo
 
 * To reset form fields, you can trigger `guideBridge.reset()` API on the click expression of a button. Similarly there is a submit API which can be called as a click expression `guideBridge.submit()`**.**
 
-* You can use the `setFocus()` API to set focus across various fields or panels (for panel focus is set to the first field automatically). `setFocus()`provides a wide range of options to navigate such as navigation across panels, previous/next traversal, setting focus to a particular field, and many more. For example, to move to the next panel, you can use: `guideBridge.setFocus(this.panel.somExpression, 'nextItem').`
+* You can use the `setFocus()` API to set focus across various fields or panels (for panel focus is set to the first field automatically). `setFocus()`provides a wide range of options to navigate such as navigation across panels, previous/next traversal, setting focus to a particular field, and many more. For example, to move to the next panel, you can use: `guideBridge.setFocus(this.panel.somExpression, 'nextItem').
 
 * To validate an Adaptive Form or its specific panels, use `guideBridge.validate(errorList, somExpression).`
 

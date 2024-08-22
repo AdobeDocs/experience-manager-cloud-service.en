@@ -11,6 +11,7 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
+role: Admin
 ---
 # Style AEM CIF Core Components {#style-aem-cif-core-components}
 
@@ -429,7 +430,7 @@ Return to the IDE and the generated project.
 
     ![Webpack Dev Server teaser changes](../assets/style-cif-component/webpack-dev-server-teaser-changes.png)
 
-    However, the changes have not been deployed to AEM yet. You can download the [solution file here](../assets/style-cif-component/_productteaser.scss).
+    However, the changes have not been deployed to AEM yet. You can [download the solution file here](../assets/style-cif-component/_productteaser.scss).
 
 1. Deploy the updates to AEM using your Maven skills, from a command-line terminal:
 

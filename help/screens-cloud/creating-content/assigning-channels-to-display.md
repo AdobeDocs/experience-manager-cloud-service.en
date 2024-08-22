@@ -2,6 +2,8 @@
 title: Assigning Channel to a Display in Screens as a Cloud Service
 description: This page describes how to assign a channel to a display in Screens as a Cloud Service.
 exl-id: ba001c18-7b05-4ae2-aa7f-9ebb320fedd0
+feature: Authoring Screens
+role: Admin, Developer, User
 ---
 # Assigning Channel to a Display in Screens as a Cloud Service {#assign-channel-displays-screens-cloud}
 

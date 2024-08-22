@@ -1,37 +1,34 @@
 ---
-title: Adding IP Allow Lists
-description: Learn how to add your own IP allowlist using Cloud Manager.
+title: Add IP Allow Lists
+description: Learn how to add your own IP Allow Lists using Cloud Manager.
 exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 
-# Adding an IP Allow List {#add-ip-allow-list}
+# Add an IP Allow List {#add-ip-allow-list}
 
-Learn how to add your own IP allowlist using Cloud Manager.
+Learn how to add your own IP Allow List using Cloud Manager.
 
-A user in the **Business Owner** or **Deployment Manager** role can follow these steps to add an IP allowlist.
+A user in the **Business Owner** or **Deployment Manager** role can follow these steps to add an IP Allow List.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, select the program.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
 
-1. From the **Overview** page, navigate to the **Environments** screen.
+1. From the **Program Overview** page, using the side panel on the left side (you may need to click the hamburger icon in the upper-left corner to see the panel), click **IP Allow Lists**.
 
-1. From the **Environments** screen, navigate to the **IP Allow Lists** page.
+   ![IP Allow Lists option in the side panel](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 
-   ![IP allow lists option in the side panel](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
-
-1. Click **Add IP Allow List**.
+1. Near the upper-right corner of the IP Allow Lists page, click **Add IP Allow List**.
 
    ![The Add IP Allow List dialog box](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create02.png)
 
-1. In the **Add IP Allow List** dialog box, enter a name that you want to use to reference the allowlist in the **IP Allow List name** field.
+1. In the **Add IP Allow List** dialog box, in the **IP Allow List name** field, enter a name that you want to use to reference the IP Allow List. This name is informational only. Be sure it is descriptive enough to help you identify the list.
 
-   * This name is informational only and should be descriptive to help you identify the list.
-
-1. Enter an IP or IP CIDR block in the **IP address/CIDR** field.
-
-   * Multiple blocks can be separated by a comma or a tab.
+1. In the **IP address / CIDR** field, enter an IP or IP CIDR block. Separate multiple blocks with a comma or a tab.
 
 1. Click **Save**.
 
-After saving, the newly created IP allowlist appears as a row in the table in the **IP Allow Lists** page.
+After saving, the newly created IP Allow List appears as a row in the table in the **IP Allow Lists** page.
