@@ -18,7 +18,7 @@ Content Fragment Models in Adobe Experience Manager (AEM) as a Cloud Service def
 >* [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md) 
 >* [Viewing and Managing Assets in the Content Fragments Console](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 
-## Working with Content Fragment Models {#working-with-content-fragment-models}
+## How to work with Content Fragment Models {#how-to-work-with-content-fragment-models}
 
 As a very quick overview, to work with Content Fragment Models you:
 
@@ -57,7 +57,7 @@ Here you can see that there are three main areas:
       * The location is indicated by the breadcrumbs; these can also be used to change the location:
     * [Information is shown about each model](#information-content-fragment-models)
       * [You can select which columns to show](#select-columns-console)
-    * [Various fields of information](#information-content-fragment-models) about a Content Fragment provide links; depending on the field, these can:
+    * [Various fields of information](#information-content-fragment-models) about a Content Fragment Model provide links; depending on the field, these can:
       * Open the appropriate model in the editor
       * Show information about the configuration
       * Show information about the status of the model
@@ -74,10 +74,10 @@ Here you can see that there are three main areas:
 
 ## The Information provided about your Content Fragment Models {#information-content-fragment-models}
 
-The main/right panel (table view) of the console provides a range of information about your Content Fragments. Some items also provide direct links to further actions and/or information:
+The main/right panel (table view) of the console provides a range of information about your Content Fragment Models. Some items also provide direct links to further actions and/or information:
 
 * **Name**
-  * Provides a link to open the fragment in the editor.
+  * Provides a link to open the model in the editor.
 * Locked
   * When the model is locked, this is indicated with a padlock icon.
 * **Configuration**
@@ -93,7 +93,7 @@ The main/right panel (table view) of the console provides a range of information
   * Can be used for [Fast Filtering](#fast-filtering).
 * **Tags**
   * Information only.
-  * Shows all tags related to the Content Fragment; both Main and any variations.
+  * Shows all tags related to the model.
   * Can be used for [Fast Filtering](#fast-filtering).
 * **Published At**
   * Information only.
@@ -114,7 +114,7 @@ When you select a specific model, the properties of that model are shown (as def
 * **Description**
 * **Preview URL pattern**
 
-  The Content Fragment editor allows authors to **Preview** their content in an external frontend application. Once the **Preview Service** is configured, add the URL for the frontend application.
+  Content Fragment Models allow authors to **Preview** their content in an external frontend application. Once the **Preview Service** is configured, add the URL for the frontend application.
 
   The preview URL should follow this pattern:
   &nbsp;&nbsp;&nbsp;&nbsp;`https://<preview_url>?param=${expression}`
@@ -214,7 +214,7 @@ For example, select **Enabled** in the **Status** column. Once selected, this wi
    >
    >The **Create** option will only be available:
    >
-   >* If the [use of Content Fragment models has been enabled](/help/sites-cloud/administering/content-fragments/setup.md)
+   >* If the [use of Content Fragment Models has been enabled](/help/sites-cloud/administering/content-fragments/setup.md)
    >* when you have selected the folder where you want to create the model.
 
 1. Select the **Configuration** and specify the **Name**.
@@ -328,7 +328,7 @@ To delete a Content Fragment model:
 
 Content Fragment Models need to be published when/before any dependent Content Fragments are published.
 
-To publish a Content Fragment model:
+To publish a Content Fragment Model:
 
 1. Navigate to, and select your Content Fragment Model. You can select multiple models.
 
