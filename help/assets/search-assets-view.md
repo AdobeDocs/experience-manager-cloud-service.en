@@ -143,7 +143,7 @@ To generate new assets using [!DNL Adobe Firefly]:
 
    * Enter a name for the file in the **Save As** field.
    * Select a destination folder. 
-   * Provide details such as Project or Campaign name, Keywords, Channels, Time frame, and Region. 
+   * Enter details such as Project or Campaign name, Keywords, Channels, Time frame, and Region. 
 
    ![Firefly integration](assets/save-generated-asset.png)
 
