@@ -338,7 +338,7 @@ user-guide-title: AEM as a Cloud Service
       + [Authoring Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
       + [Publishing Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
       + [Content Inheritance in the Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md)
-      + [Page Templates](/help/sites-cloud/authoring/universal-editor/templates.md)
+      + [Page Templates](/help/edge/wysiwyg-authoring/templates.md)
     + Fragments {#fragments}
       + [Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md)
       + [Experience Fragments](/help/sites-cloud/authoring/fragments/experience-fragments.md)

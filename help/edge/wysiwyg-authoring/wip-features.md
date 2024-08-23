@@ -26,7 +26,7 @@ However, some features are a work-in-progress and may be presented differently. 
 |[Language Copy](/help/sites-cloud/administering/translation/overview.md)|[Content Inheritance in the Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md)|Language Copies work the same at the page level.||
 |[Multi Site Management](/help/sites-cloud/administering/msm/overview.md)|[Content Inheritance in the Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md)|MSM works the same at the page level.||
 |[Launches](/help/sites-cloud/authoring/launches/overview.md)|[Content Inheritance in the Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md)|Launches work the same at the page level.||
-|[Page Templates](/help/sites-cloud/authoring/page-editor/templates.md)|[Using Page Templates with the Universal Editor](/help/sites-cloud/authoring/universal-editor/templates.md)|Pages created from templates are independent copies of the original template.|Coming soon!|
+|[Page Templates](/help/sites-cloud/authoring/page-editor/templates.md)|[Using Page Templates with the Universal Editor](/help/edge/wysiwyg-authoring/templates.md)|Pages created from templates are independent copies of the original template.|Coming soon!|
 |[Context Hub and Targeting](/help/sites-cloud/authoring/personalization/overview.md)|None|Not supported||
 |[Timewarp](/help/sites-cloud/authoring/launches/preview.md)|None|Not supported||
 |[Associated Content](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#associated-content-browser)|None|Not supported||
