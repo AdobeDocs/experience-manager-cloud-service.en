@@ -22,6 +22,10 @@ This API:
 
 * is a HTTP REST alternative to the [AEM GraphQL API for use with Content Fragments](/help/headless/graphql-api/content-fragments.md) 
 
+>[!NOTE]
+>
+>See [AEM APIs for Headless Content Delivery and Content Fragments](/help/headless/apis-headless-and-content-fragments.md) for an overview of the various APIs available and comparison of some of the concepts involved.
+
 ## Authentication {#authentication}
 
 Requests made on the author tier must be authenticated, similar to any other request to the [Content Fragment Management API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/). This means that an access token must be provided as part of the Authorization header of the HTTP request. 
