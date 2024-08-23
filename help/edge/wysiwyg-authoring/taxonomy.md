@@ -32,7 +32,7 @@ A taxonomy is created like [any other page in AEM.](/help/sites-cloud/authoring/
 
    ![Taxonomy template](assets/taxonomy/taxonomy-template.png)
 
-1. On the **Properties** tab of the **Create Page** wizard, provide a descriptive name for the page and [use the tag picker](/help/sites-cloud/authoring/sites-console/tags.md) to select the tag(s) or namespace(s) you wish to include in your taxonomy.
+1. On the **Properties** tab of the **Create Page** wizard, title the page `Taxonomy` and [use the tag picker](/help/sites-cloud/authoring/sites-console/tags.md) to select the tag(s) or namespace(s) you wish to include in your taxonomy.
 
    ![Taxonomy properties](assets/taxonomy/create-page-wizard-properties.png)
 
@@ -70,6 +70,35 @@ The page displayed in the Page Editor is read-only because the content of the ta
 
 AEM automatically updates the content of the taxonomy page when you update the underlying tag(s) and namespace(s). However you must [republish the taxonomy](#publishing) after any change to make those changes available to your users.
 
+## Update paths.json for Taxonomy Publication {#paths-json}
+
+Like when [managing and publishing tabular data for your Edge Delivery Services site,](/help/edge/wysiwyg-authoring/tabular-data.md) you need to update your `paths.json` file of your project to allow publication of your taxonomy data.
+
+1. Open the root of your project in GitHub.
+
+1. Tap or click the `paths.json` file to open its details and then the **Edit** icon.
+
+   ![paths.json file](assets/taxonomy/paths-json.png)
+
+1. Add a line to map your new taxonomy page to a `.json` resource.
+
+   ```json
+   {
+     "mappings": [
+      "/content/<site-name>/:/",
+      "/content/<site-name>/taxonomy:/<taxonomy-name>.json"
+     ]
+   }
+   ```
+
+   * `<taxonomy-name>` can be any valid name you choose.
+
+1. Click **Commit changes...** to save the changes to `main`.
+
+   * Either commit to `main` or create a pull request as per your process.
+
+This process only needs to be done once per taxonomy page. Once done, you can publish your taxonomy.
+
 ## Publishing a Taxonomy {#publishing}
 
 A taxonomy is not available to the Universal Editor or your users until it is published.
@@ -81,8 +110,41 @@ You must republish your taxonomy page every time you:
 * Edit the taxonomy page.
 * Edit or add to the tag(s) and namespace(s) included in your taxonomy page.
 
+If you create a new taxonomy page you must first [add a mapping to it to the `paths.json` file in your project.](#paths-json)
+
 ## Accessing Taxonomy Information {#accessing}
 
 Once your taxonomy is published, its information can be leveraged by the Universal Editor and made visible to your users.
+
+You can access the taxonomy as JSON data at the following address.
+
+`https://<branch>--<repository>--<owner>.hlx.page/<taxonomy-name>.json`
+
+Use the `<taxonomy-name>` that you defined when [mapping your taxonomy to the `paths.json` file in your project.](#paths-json)
+
+```json
+{
+  "total": 3,
+  "offset": 0,
+  "limit": 3,
+  "data": [
+    {
+      "tag": "default:",
+      "title": "Standard Tags"
+    },
+    {
+      "tag": "do-not-translate",
+      "title": "Do Not Translate"
+    },
+    {
+      "tag": "translate",
+      "title": "Translate"
+    }
+  ],
+  ":type": "sheet"
+}
+```
+
+This JSON data will automatically update as you update the taxonomy and republish it. Your app can programmatically access this information for your users.
 
 [If you maintain tags in multiple languages,](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages) you can access those languages by passing in the ISO2 language code as the value of a `sheet=` parameter.
