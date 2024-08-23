@@ -217,9 +217,9 @@ For effective responsive layout, the content author must be able to drag instanc
 
 To allow authors to add further responsive grids to the content pages you need to enable the Layout Container component for your page. You can do this using either:
 
-* **Via the Author Environment** - [Edit your page templates](/help/sites-cloud/authoring/sites-console/templates.md) to enable the Layout Container for a page.
+* **Via the Author Environment** - [Edit your page templates](/help/sites-cloud/authoring/page-editor/templates.md) to enable the Layout Container for a page.
 * **Component Definition** - Use `allowedComponent` or a static include when defining the component.
 
 ### Configure the Grid of the Layout Container {#configure-the-grid-of-the-layout-container}
 
-You can configure the number of columns available for each specific instance of layout container [by editing your page templates.](/help/sites-cloud/authoring/sites-console/templates.md)
+You can configure the number of columns available for each specific instance of layout container [by editing your page templates.](/help/sites-cloud/authoring/page-editor/templates.md)
