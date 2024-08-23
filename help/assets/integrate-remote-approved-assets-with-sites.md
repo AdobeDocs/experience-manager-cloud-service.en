@@ -49,7 +49,7 @@ Support for remote assets using Dynamic Media with OpenAPI capabilities requires
          repositoryId="<repo-id>.adobeaemcloud.com"
        ```
 
-       `imsOrg` is not a manadatory input.
+       `imsOrg` is not a mandatory input.
        `repositoryId` = "delivery-pxxxxx-eyyyyyy.adobeaemcloud.com" 
         where `pXXXX` refers to the program ID 
         `eYYYY` refers to the environment ID
