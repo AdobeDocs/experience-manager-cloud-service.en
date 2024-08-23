@@ -190,13 +190,13 @@ You can select the assets that display in the search results and do the followin
 
 * **Add to Collection**: Add the selected asset to a collection.
 
-* **Pin to Quick Access**: [Pin an asset](my-workspace.md) for faster access when you need it later. All pinned items display in the **Quick access** section of My Workspace.
+* **Pin to Quick Access**: [Pin an asset](my-workspace-assets-view.md) for faster access when you need it later. All pinned items display in the **Quick access** section of My Workspace.
 
 * **Open in Adobe Express**: Edit an image in the integrated Adobe Express from the Experience Manager Assets screen.
 
 * **Edit**: Edit the image using Adobe Express. 
 
-* **Share Link**: [Share links](share-links-for-assets.md) for an asset with other users so that they can access and download it.
+* **Share Link**: [Share links](share-links-for-assets-view.md) for an asset with other users so that they can access and download it.
 
 * **Delete**: Delete an asset.
 
