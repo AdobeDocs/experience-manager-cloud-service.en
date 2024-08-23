@@ -38,7 +38,7 @@ Because Edge Delivery Services are built on an entirely new and modern technolog
 
 |Sites Use Case|Details|
 |---|---|
-|Server-side logic to render pages||
+|Server-side logic to render pages|Using AEM's runtime as app server|
 |Dynamic pages|SSI or any dynamic includes technique|
 |User management|Using AEM as IdP|
 |Authentication|Using AEM for secure content|
