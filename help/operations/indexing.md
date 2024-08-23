@@ -9,14 +9,14 @@ role: Admin
 
 ## Changes in AEM as a Cloud Service {#changes-in-aem-as-a-cloud-service}
 
-With AEM as a Cloud Service, Adobe is moving away from an AEM instance-centric model to a service-based view with n-x AEM Containers, driven by CI/CD pipelines in the Cloud Manager. Instead of configuring and maintaining Indexes on single AEM instances, the Index configuration has to be specified before a deployment. Configuration changes in production are clearly breaking CI/CD policies. The same holds true for index changes since it can impact system stability and performance if not specified tested and reindexed before bringing them into production.
+With AEM as a Cloud Service, Adobe is moving away from an AEM instance-centric model to a service-based view with n-x AEM Containers, driven by CI/CD pipelines in the Cloud Manager. Instead of configuring and maintaining Indexes on single AEM instances, the Index configuration has to be specified before a deployment. Configuration changes in production are clearly breaking CI/CD policies. The same holds true for index changes since it can impact system stability and performance if not specified, tested and reindexed before bringing them into production.
 
 Below is a list of the main changes compared to AEM 6.5 and earlier versions:
 
 1. Users do not have access to the Index Manager of a single AEM Instance to debug, configure, or maintain indexing anymore. It is only used for local development and on-prem deployments.
 1. Users do not change Indexes on a single AEM Instance nor do they have to worry about consistency checks or reindexing anymore.
 1. In general, index changes are initiated before going to production to not circumvent quality gateways in the Cloud Manager CI/CD pipelines and not impact Business KPIs in production.
-1. All related metrics, including search performance in production, is available for customers at runtime to provide the holistic view on the topics of Search and Indexing.
+1. All related metrics, including search performance in production, are available for customers at runtime to provide the holistic view on the topics of Search and Indexing.
 1. Customers are able to set up alerts according to their needs.
 1. SREs are monitoring system health 24/7 and action is taken as early as possible.
 1. Index configuration is changed via deployments. Index definition changes are configured like other content changes.
@@ -65,11 +65,11 @@ An index definition can fall into one of the following categories:
 >
 >If customizing an out-of-the-box index, for example, `damAssetLucene-8`, copy the latest out-of-the-box index definition from a *Cloud Service environment* using the CRX DE Package Manager (`/crx/packmgr/`) . Rename it to `damAssetLucene-8-custom-1` (or higher), and add your customizations inside the XML file. This ensures that the required configurations are not being removed inadvertently. For example, the `tika` node under `/oak:index/damAssetLucene-8/tika` is required in the customized index deployed to an AEM Cloud Service environment but doesn't exist on the local AEM SDK.
 
-For customizations of an OOTB index prepare a new package that contains the actual index definition that follows this naming pattern:
+For customizations of an OOTB index, prepare a new package that contains the actual index definition that follows this naming pattern:
 
 `<indexName>-<productVersion>-custom-<customVersion>`
 
-For a fully customizsed index, prepare a new index definition package that contains the  index definition that follows this naming pattern:
+For a fully customized index, prepare a new index definition package that contains the index definition that follows this naming pattern:
 
 `<prefix>.<indexName>-<productVersion>-custom-<customVersion>`
 
@@ -159,7 +159,7 @@ To illustrate the deployment of a customized version of the out-of-the-box index
 
 ## Project Configuration
 
-We strongly recommend to use version >= `1.3.2` of the Jackrabbit `filevault-package-maven-plugin`. The steps to incorporate it into your project are as follows: 
+We strongly recommend using version >= `1.3.2` of the Jackrabbit `filevault-package-maven-plugin`. The steps to incorporate it into your project are as follows: 
 
 1. Update the version in the top-level `pom.xml`:
 
@@ -206,7 +206,7 @@ We strongly recommend to use version >= `1.3.2` of the Jackrabbit `filevault-pac
     </plugin>
     ```
 
-3. In `ui.apps/pom.xml` and `ui.apps.structure/pom.xml` it is necessary to enable the `allowIndexDefinitions` and `noIntermediateSaves` options in the `filevault-package-maven-plugin`. Enabling `allowIndexDefinitions` allows for custom index definitions, while `noIntermediateSaves` ensures that the configurations are added atomically. 
+3. In `ui.apps/pom.xml` and `ui.apps.structure/pom.xml`, it is necessary to enable the `allowIndexDefinitions` and `noIntermediateSaves` options in the `filevault-package-maven-plugin`. Enabling `allowIndexDefinitions` allows for custom index definitions, while `noIntermediateSaves` ensures that the configurations are added atomically. 
 
     Filenames: `ui.apps/pom.xml` and `ui.apps.structure/pom.xml`
 
@@ -302,11 +302,22 @@ After Adobe changes an out-of-the-box index like "damAssetLucene" or "cqPageLuce
 | /oak:index/cqPageLucene  | Yes  | Yes  | No  |
 | /oak:index/cqPageLucene-2  | Yes  | No  | Yes  |
 
+It is important to note that environments might be on different AEM versions. For example: `dev` environment is on release `X+1` while stage and prod are still on release `X` and are waiting to be upgraded to release `X+1` after required tests on `dev` have been performed. If release `X+1` comes with a newer version of a product index that has been customized and a new customization of that index is required, then the following table will explain what versions need to be set on environments based on the AEM release:
+
+| Environment (AEM Release Version) | Product index version | Existing custom index version | New custom index version   |
+|-----------------------------------|-----------------------|-------------------------------|----------------------------|
+| Dev (X+1)                         | damAssetLucene-11     | damAssetLucene-11-custom-1    | damAssetLucene-11-custom-2 |
+| Stage (X)                         | damAssetLucene-10     | damAssetLucene-10-custom-1    | damAssetLucene-10-custom-2 |
+| Prod (X)                          | damAssetLucene-10     | damAssetLucene-10-custom-1    | damAssetLucene-10-custom-2 |
+
+
 ### Current Limitations {#current-limitations}
 
 Index management is only supported for indexes of type `lucene`, with `compatVersion` set to `2`. Internally, other indexes might be configured and used for queries, for example, Elasticsearch indexes. Queries that are written against the `damAssetLucene` index might, on AEM as a Cloud Service, in fact be run against an Elasticsearch version of this index. This difference is invisible to the application user, however certain tools such as the `explain` feature reports a different index. For differences between Lucene and Elasticsearch indexes, see [the Elasticsearch documentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Customers cannot and do not need to configure Elasticsearch indexes directly.
 
 Only built-in analyzers are supported (that is, those analyzers that are shipped with the product). Custom analyzers are not supported.
+
+Currently, indexing the contents of `/oak:index` is not supported. 
 
 For best operational performance, indexes should not be excessively large. The total size of all indexes can be used as a guide. If this size increases by more than 100% after custom indexes have been added, and standard indices have been adjusted on a development environment, custom index definitions should be adjusted. AEM as a Cloud Service can prevent the deployment of indexes that would negatively impact system stability and performance. 
 
@@ -344,30 +355,7 @@ At times, it becomes necessary to undo a modification in an index definition. Th
 
 The following only applies to custom indexes. Product indexes may not be removed as they are used by AEM.
 
-If an index is removed in a later version of the application, you can define an empty index (an empty index that is never used, and does not contain any data), with a new name. For this example, you can name it `/oak:index/acme.product-custom-3`. This name replaces the index `/oak:index/acme.product-custom-2`. After `/oak:index/acme.product-custom-2` is removed by the system, the empty index `/oak:index/acme.product-custom-3` can then be removed. An example of such an empty index is:
-
-```xml
-<acme.product-custom-3
-        jcr:primaryType="oak:QueryIndexDefinition"
-        async="async"
-        compatVersion="2"
-        includedPaths="/dummy"
-        queryPaths="/dummy"
-        type="lucene">
-        <indexRules jcr:primaryType="nt:unstructured">
-            <rep:root jcr:primaryType="nt:unstructured">
-                <properties jcr:primaryType="nt:unstructured">
-                    <dummy
-                        jcr:primaryType="nt:unstructured"
-                        name="dummy"
-                        propertyIndex="{Boolean}true"/>
-                </properties>
-            </rep:root>
-        </indexRules>
-</acme.product-custom-3>
-```
-
-If it is no longer needed to have a customization of an out-of-the-box index, then you must copy the out-of-the-box index definition. For example, if you have already deployed `damAssetLucene-8-custom-3`, but no longer need the customizations and want to switch back to the default `damAssetLucene-8` index, then you must add an index `damAssetLucene-8-custom-4` that contains the index definition of `damAssetLucene-8`.
+A customized index may be removed in a later version of the customer application, by removing it from the customer repository. An index which is removed from the repository is not used for queries in AEM although it might still be present in the instances for a while. There is a clean-up mechanism in place that runs periodically which cleans up older versions of indexes from the instances.
 
 ## Index and Query Optimizations {#index-query-optimizations}
 
