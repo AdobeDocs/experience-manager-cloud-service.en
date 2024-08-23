@@ -1,28 +1,34 @@
 ---
-title: Release Notes for Migration Tools in AEM as a Cloud Service Release 2024.05.0
-description: Release Notes for Migration Tools in AEM as a Cloud Service Release 2024.05.0
+title: Release Notes for Migration Tools in AEM as a Cloud Service Release 2024.07
+description: Release Notes for Migration Tools in AEM as a Cloud Service Release 2024.07.0
 feature: Release Information
 exl-id: 52709511-eab2-47a7-8bea-1b707cd568a1
 role: Admin
 ---
-# Release Notes for Migration Tools in AEM as a Cloud Service Release 2024.05.0 {#release-notes}
+# Release Notes for Migration Tools in AEM as a Cloud Service Release 2024.07.0 {#release-notes}
 
-This page outlines the Release Notes for Migration Tools in AEM as a Cloud Service 2024.05.0.
+This page outlines the Release Notes for Migration Tools in AEM as a Cloud Service 2024.07.0.
+
+## Content Transfer Tool {#ctt-release}
+
+### Release Date {#release-date-ctt}
+
+The Release Date for Content Transfer Tool v3.0.16 is July, 2024.
+
+### What's New {#what-is-new-ctt}
+
+* Automatic upload of CTT extraction logs in case of failures.
+* Users can now successfully perform ingestion upon renewal of the extraction key.
+* Added support for performing CTT extractions using an Azure access key and secret key with AzureDataStore.
+* Users will now receive the correct error message when an invalid key is used to create a migration set.
 
 ## Best Practices Analyzer {#bpa-release}
 
 ### Release Date {#release-date-bpa}
 
-The Release Date for Best Practices Analyzer v2.1.48 is May 09, 2024.
+The Release Date for Best Practices Analyzer v2.1.50 is May, 2024.
 
-### What's New {#what-is-new-bpa}
+### Bug fixes {#bug-fixes-bpa}
 
-* The Best Practices Analyzer (BPA) now supports automatic uploading of BPA generated reports directly to Cloud Acceleration Manager (CAM). Users will no longer need to manually download the report and upload it to CAM. Learn more [here](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer)
-
-## Cloud Acceleration Manager {#cam-release}
-
-### What's New {#what-is-new-cam}
-
-* Cloud Acceleration Manager (CAM) now supports automatic upload of BPA generated reports directly to CAM. Learn more [here](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase#best-practices-analysis)
-
-* Cloud Acceleration Manager now provides an estimate of how long an ingestion may take, given factors such as node count, data store size, etc. Learn more [here](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content)
+* The Best Practices Analyzer now detects all nodes larger than 16MB
+* Race condition causing sproradic occurrences of NCC findings fixed.

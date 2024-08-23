@@ -73,7 +73,7 @@ The following table demonstrates the difference between the features available i
   </tr>
   <tr>
     <td>Set the dropdown list options </td>
-    <td>The dropdown list options are set using the Rule Editor’s <b>Set Options of</b> property.</td>
+    <td>The dropdown list options are set using the Rule Editor's <b>Set Options of</b> property.</td>
     <td>The dropdown options are set using the custom functions. 
    </td>
    </tr>
@@ -85,7 +85,7 @@ The following table demonstrates the difference between the features available i
    </td>
    </tr>
       <tr>
-    <td>Validate/Reset field/panel/form rule in ‘Then’ </td>
+    <td>Validate/Reset field/panel/form rule in 'Then' </td>
     <td>Validate and Reset functions only supports form object in Rule Editor. 
    </td>
     <td>Validate and Reset functions supports form/panel/field object in Rule Editor. 
@@ -115,8 +115,21 @@ The following table demonstrates the difference between the features available i
 * [Introduction to Rule Editor for Adaptive Forms based on Core Components](/help/forms/rule-editor-core-components.md)
 * [Operator types and events in rule editor of an Adaptive Form based on Core Components](/help/forms/rule-editor-core-components-events-operators.md)
 * [Rule Editor User Interface for Adaptive Forms based on Core Components](/help/forms/rule-editor-core-components-user-interface.md)
-* [Different use cases of Rule Editor for an Adaptive Form Based on Core Components](/help/forms/rule-editor-core-components-user-interface.md)
+* [Different use cases of Rule Editor for an Adaptive Form Based on Core Components](/help/forms/rule-editor-core-components-usecases.md)
 * [Difference in various editions of Rule editor](/help/forms/rule-editor-core-components-difference-tables.md)
 * [Introduction to Custom Functions for Adaptive Forms based on Core Components](/help/forms/create-and-use-custom-functions.md)
 * [Create a Custom Function for an Adaptive Form based on Core Components](/help/forms/custom-function-core-component-create-function.md)
 * [Examples of developing and using custom function](/help/forms/custom-function-core-components-use-cases.md)
+
+
+## Cloud Manager IP Allow List and front-end pipelines {#allowlist-frontend-pipeline}
+
+>[!IMPORTANT]
+>
+>The front-end pipeline requires that the following IP Allow List be added to Cloud Manager beforehand.
+>If needed, [add the IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) by copying the block of addresses below. Each address is separated by a comma. Paste the block into the **IP address / CIDR** field of the **Add IP Allow List** dialog box. Place the cursor just after the first comma in the address list and press **Enter**. Save the list. 
+>To avoid disruption of running the front-end pipleline, ensure that this IP Allow List is added to Cloud Manager *before* you enable the pipleline.
+>
+>**Cloud Manager IP Allow List**
+>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
+>   
