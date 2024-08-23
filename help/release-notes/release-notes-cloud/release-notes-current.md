@@ -40,7 +40,15 @@ Have a look at the August 2024 Release Overview video for a summary of the featu
 
 **AEM Authoring for Edge Delivery Services**
 
-Existing Sites functionality [AEM Launches](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/launches/overview) and [MSM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm/overview) (on page level) are now supported. [AEM Tags](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/tags) can be exported to Edge Delivery Services.
+Existing Sites [inheritance](/help/sites-cloud/authoring/universal-editor/inheritance.md) functionality is now supported including:
+
+* [AEM Launches](/help/sites-cloud/authoring/launches/overview.md)
+* [MSM](/help/sites-cloud/administering/msm/overview.md) at the page level
+
+In addition, the following page management features are now supported:
+
+* [AEM Tags](/help/sites-cloud/authoring/sites-console/tags.md) can be exported as a [taxonomy](/help/edge/wysiwyg-authoring/taxonomy.md) to Edge Delivery Services.
+* [Templates](/help/edge/wysiwyg-authoring/templates.md) for Edge Delivery Services are coming soon!
 
 ### Early Adopter Program {#sites-early-adopter}
 
