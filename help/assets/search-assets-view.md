@@ -243,7 +243,7 @@ You can preview to check the layout and formatting of the search first homepage.
 1. Navigate to **[!UICONTROL Customize search first homepage]** and click **[!UICONTROL Preview]**. Toggle through the **[!UICONTROL Dark theme]** button to preview the homepage in dark or light theme.
 1. Click **[!UICONTROL Close]** to close the preview screen.
 
-   ![Search first homepage preview](assets/search-first-preview.gif)
+   ![Search first homepage preview](/help/assets/assets/search-first-preview.gif)
 
 ## Contextual Search {#contextual-search}
 
@@ -259,7 +259,7 @@ To access Contextual Search in Experience Manager Assets:
 
 1. Define the text prompt in the Search text box and click **[!UICONTROL Contextual Search]**.
 
-   ![Contextual Search text prompt](assets/contextual-search-text-prompt.png)
+   ![Contextual Search text prompt](/help/assets/assets/wknd-contextual-search.png)
 
    [!DNL Experience Manager Assets] displays the search results.
 
