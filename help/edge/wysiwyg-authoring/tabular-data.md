@@ -133,13 +133,9 @@ For [Configuration](https://www.aem.live/docs/configuration), [Headers](https://
 * Configuration: `/.helix/config.json`
 * Headers: `/.helix/headers.json`
 * Metadata: `/metadata.json`
-* Taxonomy: `/taxonomy.json`
+* Taxonomy: Please see the document [Managing Taxonomy Data](/help/edge/wysiwyg-authoring/taxonomy.md) for more information.
 
 Additionally, you can [create your own spreadsheet](#own-spreadsheet) with arbitrary columns for your own use.
-
->[!TIP]
->
->Taxonomy data is also managed as tabular data, but has additional requirements and handling. Please see the document [Managing Taxonomy Data](/help/edge/wysiwyg-authoring/taxonomy.md) for more information.
 
 >[!NOTE]
 >
