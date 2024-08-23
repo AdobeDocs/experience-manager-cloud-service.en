@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 ---
 
-# List Adaptive Forms on the Sites page
+# List forms on the Sites page
 
 Continuing with the bank website scenario, where the goal is to streamline form management and improve user experience, the **Search & Lister** Forms Portal component proves to be crucial. For instance, consider a user visiting the bank’s website looking for an account opening form. They can use the **Search & Lister** component to quickly find the form by entering specific keywords or filtering by categories such as "New Accounts" or "Personal Banking." This functionality enables users to locate the desired form efficiently, bypassing the need to scroll through extensive lists. By integrating the **Search & Lister** component, the bank enhances website usability, making it easier for users to navigate and manage forms while ensuring that features like form submission and draft saving are securely available only to logged-in users.
 

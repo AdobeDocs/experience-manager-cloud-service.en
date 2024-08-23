@@ -6,7 +6,7 @@ exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer, Admin
 ---
 
-# Save and list forms as drafts
+# Save and list forms as drafts on Sites page
 
 In the context of the bank website scenario aimed at optimizing form management and enhancing user experience, the **Drafts & Submissions** component is pivotal. For instance, consider a user who begins filling out a loan application form but needs to pause and return later. The **Drafts & Submissions** component allows this user to save their progress as a draft and easily resume the application later. Additionally, it enables authenticated users to manage their submissions, review previously submitted forms, and track application statuses. By integrating the **Drafts & Submissions** component, the bank provides a robust solution for users to efficiently handle their forms, securely save drafts, and manage submissions, all while ensuring a seamless and user-friendly experience.
 
