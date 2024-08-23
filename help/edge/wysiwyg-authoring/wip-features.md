@@ -18,19 +18,22 @@ Learn which AEM Sites features and use cases are a work-in-progress and discover
 
 When using Edge Delivery Services with AEM Sites, most Sites features are available. For example, nearly any action available in the [Sites Console](/help/sites-cloud/authoring/sites-console/introduction.md) is applicable to Edge Delivery Services.
 
-However, some features are a work-in-progress and may be presented differently. The following list presents such WIP features and alternate solutions. If your project requires a WIP feature, please review the alternatives suggested below and reach out to Adobe to work together to understand your use case.
+However, some features are a work-in-progress (WIP). WIP features are features of the Sites console which either are not yet available for Edge Delivery Services with AEM Sites or are only partially available. For this reason, WIP features may be presented differently than their Sites counterparts or there may be alternative solutions for the use case.
 
-|Sites Feature|Edge Documentation|Description|Note|
+The following list presents such WIP features and alternate solutions. If your project requires a WIP feature, please review the alternatives suggested below and reach out to Adobe to work together to understand your use case.
+
+|Sites Feature|Status on Edge|Notes|Edge Documentation|
 |---|---|---|---|
-|[Inheritance](/help/sites-cloud/administering/msm-and-translation.md)|[Content Inheritance in the Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md)|Content can be inherited at the page and component levels, but inheritance can only be reinstated at the page level.||
-|[Language Copy](/help/sites-cloud/administering/translation/overview.md)|[Content Inheritance in the Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md)|Language Copies work the same at the page level.||
-|[Multi Site Management](/help/sites-cloud/administering/msm/overview.md)|[Content Inheritance in the Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md)|MSM works the same at the page level.||
-|[Launches](/help/sites-cloud/authoring/launches/overview.md)|[Content Inheritance in the Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md)|Launches work the same at the page level.||
-|[Page Templates](/help/sites-cloud/authoring/page-editor/templates.md)|[Using Page Templates with the Universal Editor](/help/edge/wysiwyg-authoring/templates.md)|Pages created from templates are independent copies of the original template.|Coming soon!|
-|[Context Hub and Targeting](/help/sites-cloud/authoring/personalization/overview.md)|None|Not supported||
-|[Timewarp](/help/sites-cloud/authoring/launches/preview.md)|None|Not supported||
-|[Associated Content](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#associated-content-browser)|None|Not supported||
-|[Experience Fragments](/help/sites-cloud/authoring/fragments/experience-fragments.md)|None|Not supported||
+|[Page Inheritance](/help/sites-cloud/administering/msm-and-translation.md)|Available||[Content Inheritance in the Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md)|
+|[Component Inheritance](/help/sites-cloud/administering/msm-and-translation.md)|Partially Available|Components inherit content, but inheritance can only be reverted at the page level|[Content Inheritance in the Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md)|
+|[Language Copy](/help/sites-cloud/administering/translation/overview.md)|Partially available|Components inherit content, but inheritance can only be reverted at the page level|[Content Inheritance in the Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md)|
+|[Multi Site Management](/help/sites-cloud/administering/msm/overview.md)|Partially available|Components inherit content, but inheritance can only be reverted at the page level|[Content Inheritance in the Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md)|
+|[Launches](/help/sites-cloud/authoring/launches/overview.md)|Partially Available|Components inherit content, but inheritance can only be reverted at the page level|[Content Inheritance in the Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md)|
+|[Page Templates](/help/sites-cloud/authoring/page-editor/templates.md)|Coming soon!|Pages created from templates are independent copies of the original template.|[Using Page Templates with the Universal Editor](/help/edge/wysiwyg-authoring/templates.md)|
+|[Context Hub and Targeting](/help/sites-cloud/authoring/personalization/overview.md)|Not available|||
+|[Timewarp](/help/sites-cloud/authoring/launches/preview.md)|Not available|||
+|[Associated Content](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#associated-content-browser)|Not available|||
+|[Experience Fragments](/help/sites-cloud/authoring/fragments/experience-fragments.md)|Alternative|Create a page and use a fragment component||
 
 ## Work-In-Progress Use Cases {#wip-use-cases}
 
