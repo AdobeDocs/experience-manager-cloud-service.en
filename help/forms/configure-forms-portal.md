@@ -30,17 +30,22 @@ The Form Portal components allow you to add the following functionality:
 
 ## Components of a Forms Portal 
 
+![Components of Forms Portal](/help/forms/assets/forms-portal.png)
+
 AEM Forms provide the following portal components out of the box:
 
-* **Search & Lister**: It lists forms on Sites page and offers configuration options to filter forms based on specified criteria.
-* **Drafts & Submissions**: It displays forms that are saved as draft for completing later and submitted forms. It shows both forms saved as drafts for later completion and forms that have been submitted. It provides a personalized experience for any logged-in user.
+* **Search & Lister**: It lists forms on the Sites page and offers configuration options to filter forms based on specified criteria.
+* **Drafts & Submissions**: It displays forms that are saved as draft for completing later and submitted forms. It shows both forms saved as drafts for later completion and forms that have been submitted. It provides a personalized experience for any logged-in user. 
+The **Drafts & Submissions** component needs a storage setup for saving drafts. The Unified Storage Connector offers a framework to link the AEM instance with external storage.
 * **Link**: It creates a link to a form anywhere on the page.
 
-Consider a scenario where an organization needs to manage and display multiple Adaptive Forms on the AEM Sites page. The developer creates and organizes these forms—such as applications, surveys, and feedback forms—in the AEM Forms repository. To manage these forms, the developer uses the Forms Portal component, which dynamically lists all forms on the Sites page. The **Search & Lister** component allows users to search and filter the forms. Anonymous or non-logged-in users can view and browse the list of available forms, but to access draft versions or submit completed forms, they must log in. The **Drafts & Submissions** component allows users to edit drafts or view submitted forms by the authenticated users. The Forms Portal components provide accessibility with security and improves the overall user experience by integrating form management directly into the AEM Sites page. On an AEM Sites page, you can also use the **Link** component to place a reference to a form at any location on the page.
+Consider a scenario where a bank needs to manage and display various forms on its website. The developer creates and organizes these forms such as loan applications, account opening forms, and feedback surveys on the website. To manage and display these forms, the developer uses the Forms Portal component, which dynamically lists all forms on the website. The Forms Portal components enhance accessibility and security while integrating form management seamlessly into the bank’s website.
+
+The **Search & Lister** component enables users to search and filter through the forms. Non-logged-in users can view and browse the list of available forms, but to access draft versions or submit completed forms, they need to be logged in. The **Drafts & Submissions** component allows authenticated users to save draft versions of forms and manage their submissions. Additionally, the **Link** component is used to reference specific forms from any location on the page, providing convenient access to users. Form references are controlled based on user permissions. For instance, non-logged-in users can view the Contact Us or Account Opening forms, while only logged-in users can access the Loan Application or Investment forms.  
 
 ## Next Steps
 
-In the next article, let us learn [how to list Adaptive Forms on a AEM Sites page using the Search & Lister Forms Portal component](/help/forms/list-forms-on-sites-page.md).
+In the next article, let us learn [how to list forms on the Sites page using the Search & Lister Forms Portal component](/help/forms/list-forms-on-sites-page.md).
 
 ## Related articles
 

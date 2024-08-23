@@ -127,3 +127,4 @@ The following table demonstrates the difference between the features available i
 * [Introduction to Forms Portal components](/help/forms/configure-forms-portal.md)
 * [List your forms on sites page](/help/forms/list-forms-on-sites-page.md)
 * [Save your forms as drafts](/help/forms/save-core-component-based-form-as-draft.md)
+* [Add form links to an Sites page](/help/forms/add-form-link-to-aem-sites-page.md)
