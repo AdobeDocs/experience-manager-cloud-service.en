@@ -42,7 +42,7 @@ Once the app is instrumented to work with the Universal Editor, the Universal Ed
 
 >[!NOTE]
 >
->When editing a page in the [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) the console will open the editor appropriate to the page's [template:](/help/sites-cloud/authoring/sites-console/templates.md) either the Universal Editor described in this document, or the [page editor.](/help/sites-cloud/authoring/page-editor/introduction.md)
+>When editing a page in the [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) the console will open the editor appropriate to the page's [template:](/help/sites-cloud/authoring/page-editor/templates.md) either the Universal Editor described in this document, or the [page editor.](/help/sites-cloud/authoring/page-editor/introduction.md)
 
 ### Accessing Directly {#accessing-directly}
 
@@ -131,7 +131,7 @@ The location bar shows you the address of the page you are editing. Select to en
 
 >[!TIP]
 >
->Use the hot key `L` to open the address bar.
+>Use the hot key `l` (the letter l) to open the address bar.
 
 >[!NOTE]
 >
@@ -169,7 +169,7 @@ In preview mode, the page rendered in the editor as it would be seen on your pub
 
 >[!TIP]
 >
->Use the hot key `P` to toggle to and from preview mode.
+>Use the hot key `p` to toggle to and from preview mode.
 
 #### Open App Preview {#open-app-preview}
 
@@ -179,7 +179,11 @@ Select the open app preview icon to open the page you are currently editing in i
 
 >[!TIP]
 >
->Use the hot key `O` (the letter O) to open the app preview.
+>Use the hot key `o` (the letter o) to open the app preview.
+
+>[!TIP]
+>
+>The preview URL for your app [can be customized.](/help/implementing/universal-editor/customizing.md#custom-preview-urls)
 
 #### Publish {#publish}
 
@@ -190,6 +194,14 @@ Select the publish button so you can publish the changes to the content live for
 >[!TIP]
 >
 >See the document [Publishing Content with the Universal Editor](publishing.md) for more information on publishing with the Universal Editor.
+
+#### Ellipsis {#ellipsis}
+
+Additional, standard options are accessible using the ellipsis button.
+
+![Ellipsis button](assets/ellipsis.png)
+
+For example, the ability to unpublish a page (i.e. reverse the action of the [**Publish** button](#publish)) is accessible via the ellipsis button.
 
 #### Additional Buttons {#additional-toolbar-buttons}
 
@@ -210,7 +222,7 @@ If the editor is in [preview mode,](#preview-mode) the content will be navigable
 
 The properties rail is always present along the right side of the editor. Depending on its mode, it can show details for a component selected in the content or the hierarchy of the page contents.
 
-![The properties rail](assets/component-rail.png)
+![The properties rail](assets/properties-rail.png)
 
 #### Properties Mode {#properties-mode}
 
@@ -226,7 +238,7 @@ Not all components have details that can be shown and/or edited.
 
 >[!TIP]
 >
->Use the hot key `D` to switch to properties mode.
+>Use the hot key `d` to switch to properties mode.
 
 #### Content Tree Mode {#content-tree-mode}
 
@@ -240,21 +252,21 @@ When selecting an item in the content tree, the editor scrolls to that content a
 
 >[!TIP]
 >
->Use the hot key `F` to switch to content tree mode.
+>Use the hot key `f` to switch to content tree mode.
 
-##### Edit {#edit}
+##### Open in CF Editor {#edit}
 
-When editing, the options for the selected component appear in the properties rail, where you can edit the selected component. If the selected component is a Content Fragment, you can also select the edit button.
+When editing, the options for the selected component appear in the properties rail, where you can edit the selected component. If the selected component is a Content Fragment, you can also select the **Open in CF Editor** button.
 
-![Edit icon](assets/edit.png)
+![Open in CF Editor icon](assets/open-in-cf-editor.png)
 
-Tapping or clicking the edit button opens the [Content Fragment editor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in a new tab. This allows you access to the full power of the Content Fragment Editor to edit the associated Content Fragment.
+Tapping or clicking the **Open in CF Editor** button opens the [Content Fragment editor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in a new tab. This allows you access to the full power of the Content Fragment editor to edit the associated Content Fragment.
 
 Depending on the needs of your workflow, you may want to edit the Content Fragment in the Universal Editor or directly in the Content Fragment editor.
 
 >[!TIP]
 >
->Use the hot key `E` to edit a selected component.
+>Use the hot key `e` to open a selected Content Fragment in the Content Fragment editor.
 
 ##### Add {#add}
 
@@ -268,7 +280,7 @@ Tapping or clicking the add button opens a drop-down menu of components that are
 
 >[!TIP]
 >
->Use the hot key `A` to add a component to a selected container component.
+>Use the hot key `a` to add a component to a selected container component.
 
 ##### Delete {#delete}
 

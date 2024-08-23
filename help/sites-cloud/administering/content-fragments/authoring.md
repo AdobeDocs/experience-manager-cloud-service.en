@@ -191,7 +191,7 @@ To use the Generative Variations in the Content Fragment Editor:
 
     ![View Generate Variations in Content Fragment](assets/cfm-generate-variations5.png)
 
-You can learn more about Generate Variations [here](/help/generative-ai/generate-variations.md).    
+See [Generate Variations](/help/generative-ai/generate-variations.md) to learn more.
 
 ### Delete a variation {#delete-variation}
 

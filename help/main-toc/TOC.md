@@ -79,6 +79,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2024 {#2024}
+      + [Maintenance Release Notes for 2024.8.0](/help/release-notes/maintenance/2024/2024-8-0.md)
       + [Maintenance Release Notes for 2024.7.0](/help/release-notes/maintenance/2024/2024-7-0.md)
       + [Maintenance Release Notes for 2024.6.0](/help/release-notes/maintenance/2024/2024-6-0.md)
       + [Maintenance Release Notes for 2024.5.0](/help/release-notes/maintenance/2024/2024-5-0.md)
@@ -98,6 +99,7 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
     + 2024 {#2024}
+      + [Release Notes for 2024.7.0](/help/implementing/cloud-manager/release-notes/2024/2024-7-0.md)
       + [Release Notes for 2024.6.0](/help/implementing/cloud-manager/release-notes/2024/2024-6-0.md)
       + [Release Notes for 2024.5.0](/help/implementing/cloud-manager/release-notes/2024/2024-5-0.md)
       + [Release Notes for 2024.4.0](/help/implementing/cloud-manager/release-notes/2024/2024-4-0.md)
@@ -157,6 +159,9 @@ user-guide-title: AEM as a Cloud Service
       + [Release Notes for 2020.2.0](/help/implementing/cloud-manager/release-notes/2020/2020-2-0.md)
   + Release Notes for Migration Tools {#migration-tools}
     + [Current Release Notes](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+    + 2024 {#2024}
+      + [Release Notes for 2024.01.0](/help/journey-migration/release-notes/release-notes-migration-tools-2024-01-0.md)
+      + [Release Notes for 2024.05.0](/help/journey-migration/release-notes/release-notes-migration-tools-2024-05-0.md)
     + 2023 {#2023}
       + [Release Notes for 2023.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-10-0.md)
       + [Release Notes for 2023.9.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-09-0.md)
@@ -183,6 +188,9 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Generate Variations](/help/generative-ai/release-notes-generate-variations.md)
   + Release Notes for Universal Editor {#univeral-editor}
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
+    + 2024 {#2024}
+      + [2024.07.28 Release Notes](/help/release-notes/universal-editor/2024/2024-07-28.md)
+      + [2024.06.28 Release Notes](/help/release-notes/universal-editor/2024/2024-06-28.md)
   + [What is New?](/help/release-notes/what-is-new.md)
   + [Notable Changes in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
   + [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md)
@@ -284,6 +292,7 @@ user-guide-title: AEM as a Cloud Service
     + [AEM Modernization Tools](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 + Sites {#sites}
   + [Notable Changes to AEM Sites in AEM Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+  + [Sites and Edge Delivery Services](/help/sites-cloud/sites-and-edge.md)
   + Authoring {#authoring}
     + [Quick Start Guide to Authoring Pages](/help/sites-cloud/authoring/quick-start.md)
     + [Basic Handling](/help/sites-cloud/authoring/basic-handling.md)
@@ -305,7 +314,6 @@ user-guide-title: AEM as a Cloud Service
       + [Page Properties](/help/sites-cloud/authoring/sites-console/page-properties.md)
       + [Previewing Pages](/help/sites-cloud/authoring/sites-console/previewing-content.md)
       + [Publishing Pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
-      + [Page Templates](/help/sites-cloud/authoring/sites-console/templates.md)
       + [Page Versions](/help/sites-cloud/authoring/sites-console/page-versions.md)
       + [Page Diff](/help/sites-cloud/authoring/sites-console/page-diff.md)
       + [Using Tags](/help/sites-cloud/authoring/sites-console/tags.md)
@@ -316,6 +324,7 @@ user-guide-title: AEM as a Cloud Service
       + [The Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md)
       + [Editor Side Panel](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)
       + [Editing Pages](/help/sites-cloud/authoring/page-editor/edit-content.md)
+      + [Page Templates](/help/sites-cloud/authoring/page-editor/templates.md)
       + [Adding Page Annotations](/help/sites-cloud/authoring/page-editor/annotations.md)
       + [The Rich Text Editor](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)
       + [Responsive Layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
@@ -330,6 +339,7 @@ user-guide-title: AEM as a Cloud Service
       + [Authoring Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
       + [Publishing Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
       + [Content Inheritance in the Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+      + [Page Templates](/help/edge/wysiwyg-authoring/templates.md)
     + Fragments {#fragments}
       + [Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md)
       + [Experience Fragments](/help/sites-cloud/authoring/fragments/experience-fragments.md)
@@ -591,7 +601,9 @@ user-guide-title: AEM as a Cloud Service
     + [Watch asset, folders, and collections](/help/assets/manage-notifications-assets-view.md)
     + [Manage reports](/help/assets/manage-reports-assets-view.md)
     + [Manage tags](/help/assets/tagging-management-assets-view.md)
+    + [Content Credentials](/help/assets/content-credentials.md)
     + [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+   
 
   + Content Hub {#content-hub}
     + [Overview](/help/assets/product-overview.md)
@@ -848,6 +860,7 @@ user-guide-title: AEM as a Cloud Service
       + [Configuring URLs for SEO](/help/commerce-cloud/configuring/advanced-url-configuration.md)
       + [Caching Options](/help/commerce-cloud/configuring/caching.md)
       + [Custom HTTP Headers](/help/commerce-cloud/configuring/custom-http-headers.md)
+      + [Shopping Cart and Dispatcher Setup](/help/commerce-cloud/configuring/shopping-cart-dispatcher.md)
     + Developing {#developing}
       + [Developing with AEM Cloud Service SDK](/help/commerce-cloud/develop.md)
       + [Styling CIF Components](/help/commerce-cloud/customizing/style-cif-component.md)
@@ -869,6 +882,8 @@ user-guide-title: AEM as a Cloud Service
     + [Content Modeling](/help/edge/wysiwyg-authoring/content-modeling.md)
     + [Tabular Data and Spreadheets](/help/edge/wysiwyg-authoring/tabular-data.md)
     + [Existing Projects and Edge Delivery](/help/edge/wysiwyg-authoring/existing-projects.md)
+    + [Managing Taxonomy Data](/help/edge/wysiwyg-authoring/taxonomy.md)
+    + [WIP Sites Features](/help/edge/wysiwyg-authoring/wip-features.md)
   + Document-Based Authoring {#document-authoring}
     + [Authoring](/help/edge/docs/authoring.md)
     + [Bulk Metadata](/help/edge/docs/bulk-metadata.md)
