@@ -10,6 +10,10 @@ role: User
 
 Learn how the Universal Editor supports content inheritance for Multi Site Management and Launches to support content reuse and localization.
 
+>[!NOTE]
+>
+>This feature is only available for content stored in the AEM repository.
+
 ## Use Case {#use-case}
 
 For many users of AEM, creating a page is just the beginning. To scale content effectively, the following steps are typically involved after page creation:
