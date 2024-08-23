@@ -32,7 +32,7 @@ A taxonomy is created like [any other page in AEM.](/help/sites-cloud/authoring/
 
    ![Taxonomy template](assets/taxonomy/taxonomy-template.png)
 
-1. On the **Properties** tab of the **Create Page** wizard, title the page `Taxonomy` and [use the tag picker](/help/sites-cloud/authoring/sites-console/tags.md) to select the tag(s) or namespace(s) you wish to include in your taxonomy.
+1. On the **Properties** tab of the **Create Page** wizard, provide a meaningful **Title** for the page and in the **Tags** field, [use the tag picker](/help/sites-cloud/authoring/sites-console/tags.md) to select the tag(s) or namespace(s) you wish to include in your taxonomy.
 
    ![Taxonomy properties](assets/taxonomy/create-page-wizard-properties.png)
 
@@ -40,9 +40,11 @@ A taxonomy is created like [any other page in AEM.](/help/sites-cloud/authoring/
 
 The taxonomy page is created. In the **Success** dialog, you can tap or click **Done** dialog to dismiss the message or **Open** to edit the page in the [Page Editor.](/help/sites-cloud/authoring/page-editor/introduction.md)
 
+Take note of the resulting page name of the taxonomy page for use in the following steps.
+
 ## Editing a Taxonomy Page {#editing}
 
-A taxonomy is edited like any other page in AEM.
+You start editing a taxonomy page like any other page in AEM.
 
 1. Navigate to the [**Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
 
@@ -52,7 +54,7 @@ A taxonomy is edited like any other page in AEM.
 
 1. The Page Editor opens, showing the taxonomy.
 
-   * The view in the Page Editor is view only.
+   * The taxonomy page is read-only in the Page Editor.
 
    ![Edit taxonomy](assets/taxonomy/edit-page.png)
 
@@ -66,7 +68,7 @@ A taxonomy is edited like any other page in AEM.
 
 1. Tap or click **Save &amp; Close**.
 
-The page displayed in the Page Editor is read-only because the content of the taxonomy is generated automatically from the selected tag(s) and namespace(s). They act as a kind of filter for the content of the taxonomy.
+The page displayed in the Page Editor is read-only because the content of the taxonomy is generated automatically from the selected tag(s) and namespace(s). They act as a kind of filter for automatically generating the content of the taxonomy. Therefore there is no reason to directly edit the page in the editor.
 
 AEM automatically updates the content of the taxonomy page when you update the underlying tag(s) and namespace(s). However you must [republish the taxonomy](#publishing) after any change to make those changes available to your users.
 
@@ -86,12 +88,13 @@ Like when [managing and publishing tabular data for your Edge Delivery Services 
    {
      "mappings": [
       "/content/<site-name>/:/",
-      "/content/<site-name>/taxonomy:/<taxonomy-name>.json"
+      "/content/<site-name>/<taxonomy-page-name>:/<taxonomy-json-name>.json"
      ]
    }
    ```
 
-   * `<taxonomy-name>` can be any valid name you choose.
+   * `<taxonomy-page-name>` must match the name of the [taxonomy page you created.](#creating)
+   * `<taxonomy-json-name>` can be any valid name you choose.
 
 1. Click **Commit changes...** to save the changes to `main`.
 
@@ -118,9 +121,9 @@ Once your taxonomy is published, its information can be leveraged by the Univers
 
 You can access the taxonomy as JSON data at the following address.
 
-`https://<branch>--<repository>--<owner>.hlx.page/<taxonomy-name>.json`
+`https://<branch>--<repository>--<owner>.hlx.page/<taxonomy-json-name>.json`
 
-Use the `<taxonomy-name>` that you defined when [mapping your taxonomy to the `paths.json` file in your project.](#paths-json)
+Use the `<taxonomy-json-name>` that you defined when [mapping your taxonomy to the `paths.json` file in your project.](#paths-json) The taxonomy data is returned as JSON data like in the following example.
 
 ```json
 {
