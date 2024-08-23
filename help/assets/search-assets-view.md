@@ -243,7 +243,7 @@ You can preview to check the layout and formatting of the search first homepage.
 1. Navigate to **[!UICONTROL Customize search first homepage]** and click **[!UICONTROL Preview]**. Toggle through the **[!UICONTROL Dark theme]** button to preview the homepage in dark or light theme.
 1. Click **[!UICONTROL Close]** to close the preview screen.
 
-   ![Search first homepage preview]
+   ![Search first homepage preview](/help/assets/assets/search-first-preview.gif)
 
 ## Contextual Search {#contextual-search}
 
