@@ -78,6 +78,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2024 {#2024}
+      + [Maintenance Release Notes for 2024.8.0](/help/release-notes/maintenance/2024/2024-8-0.md)
       + [Maintenance Release Notes for 2024.7.0](/help/release-notes/maintenance/2024/2024-7-0.md)
       + [Maintenance Release Notes for 2024.6.0](/help/release-notes/maintenance/2024/2024-6-0.md)
       + [Maintenance Release Notes for 2024.5.0](/help/release-notes/maintenance/2024/2024-5-0.md)
@@ -97,6 +98,7 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
     + 2024 {#2024}
+      + [Release Notes for 2024.7.0](/help/implementing/cloud-manager/release-notes/2024/2024-7-0.md)
       + [Release Notes for 2024.6.0](/help/implementing/cloud-manager/release-notes/2024/2024-6-0.md)
       + [Release Notes for 2024.5.0](/help/implementing/cloud-manager/release-notes/2024/2024-5-0.md)
       + [Release Notes for 2024.4.0](/help/implementing/cloud-manager/release-notes/2024/2024-4-0.md)
@@ -185,6 +187,9 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Generate Variations](/help/generative-ai/release-notes-generate-variations.md)
   + Release Notes for Universal Editor {#univeral-editor}
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
+    + 2024 {#2024}
+      + [2024.07.28 Release Notes](/help/release-notes/universal-editor/2024/2024-07-28.md)
+      + [2024.06.28 Release Notes](/help/release-notes/universal-editor/2024/2024-06-28.md)
   + [What is New?](/help/release-notes/what-is-new.md)
   + [Notable Changes in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
   + [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md)
@@ -854,6 +859,7 @@ user-guide-title: AEM as a Cloud Service
       + [Configuring URLs for SEO](/help/commerce-cloud/configuring/advanced-url-configuration.md)
       + [Caching Options](/help/commerce-cloud/configuring/caching.md)
       + [Custom HTTP Headers](/help/commerce-cloud/configuring/custom-http-headers.md)
+      + [Shopping Cart and Dispatcher Setup](/help/commerce-cloud/configuring/shopping-cart-dispatcher.md)
     + Developing {#developing}
       + [Developing with AEM Cloud Service SDK](/help/commerce-cloud/develop.md)
       + [Styling CIF Components](/help/commerce-cloud/customizing/style-cif-component.md)
