@@ -31,7 +31,7 @@ You need to make a one-time update to the applicable metadata schema in Admin vi
   
 ## Approve assets {#approve-assets}
 
-You can approve assets in both [!DNL Experience Manager] and [!DNL Experience Manager Assets]. To approve assets in [!DNL Experience Manager], follow these steps:
+To approve assets in [!DNL Experience Manager Admin view], follow these steps:
 
 1. Select the asset (s) and click **[!UICONTROL Properties]** in the top pane.
 1. In the **[!UICONTROL Basic]** tab, scroll down to **[!UICONTROL Review Status]**.
@@ -46,7 +46,7 @@ You can approve assets in both [!DNL Experience Manager] and [!DNL Experience Ma
 ## Bulk approve assets {#bulk-approve-assets}
 
 Streamline your workflow by quickly approving multiple assets at once. You can bulk approve assets to expedite the approval process, saving time and enhancing productivity.
-<br>Follow these steps to approve bulk assets in [!DNL Experience Manager]:
+<br>Follow these steps to approve bulk assets in [!DNL Experience Manager Admin view]:
 
 1. Create a folder in the author environment (https://author-pXXX-eYYY.adobeaemcloud.com). Replace _XXX_ with your program ID and _YYY_ with the environment ID from the Experience Manager.
 1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]**.
