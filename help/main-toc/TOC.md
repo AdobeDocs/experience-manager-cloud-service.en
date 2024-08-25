@@ -313,7 +313,6 @@ user-guide-title: AEM as a Cloud Service
       + [Page Properties](/help/sites-cloud/authoring/sites-console/page-properties.md)
       + [Previewing Pages](/help/sites-cloud/authoring/sites-console/previewing-content.md)
       + [Publishing Pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
-      + [Page Templates](/help/sites-cloud/authoring/sites-console/templates.md)
       + [Page Versions](/help/sites-cloud/authoring/sites-console/page-versions.md)
       + [Page Diff](/help/sites-cloud/authoring/sites-console/page-diff.md)
       + [Using Tags](/help/sites-cloud/authoring/sites-console/tags.md)
@@ -324,6 +323,7 @@ user-guide-title: AEM as a Cloud Service
       + [The Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md)
       + [Editor Side Panel](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)
       + [Editing Pages](/help/sites-cloud/authoring/page-editor/edit-content.md)
+      + [Page Templates](/help/sites-cloud/authoring/page-editor/templates.md)
       + [Adding Page Annotations](/help/sites-cloud/authoring/page-editor/annotations.md)
       + [The Rich Text Editor](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)
       + [Responsive Layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
@@ -338,6 +338,7 @@ user-guide-title: AEM as a Cloud Service
       + [Authoring Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
       + [Publishing Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
       + [Content Inheritance in the Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+      + [Page Templates](/help/edge/wysiwyg-authoring/templates.md)
     + Fragments {#fragments}
       + [Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md)
       + [Experience Fragments](/help/sites-cloud/authoring/fragments/experience-fragments.md)
@@ -880,6 +881,8 @@ user-guide-title: AEM as a Cloud Service
     + [Content Modeling](/help/edge/wysiwyg-authoring/content-modeling.md)
     + [Tabular Data and Spreadheets](/help/edge/wysiwyg-authoring/tabular-data.md)
     + [Existing Projects and Edge Delivery](/help/edge/wysiwyg-authoring/existing-projects.md)
+    + [Managing Taxonomy Data](/help/edge/wysiwyg-authoring/taxonomy.md)
+    + [WIP Sites Features](/help/edge/wysiwyg-authoring/wip-features.md)
   + Document-Based Authoring {#document-authoring}
     + [Authoring](/help/edge/docs/authoring.md)
     + [Bulk Metadata](/help/edge/docs/bulk-metadata.md)
