@@ -7,7 +7,7 @@ exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 
 When creating a page, you must select a template, which is used as the basis for creating the new page. The template defines the structure of the resultant page, any initial content, and the components that can be used.
 
-With the **Template Editor**, creating and maintaining templates is no longer a developer-only task. A type of power-user, who is called a **template author**, can be involved too. Developers are still required to setup the environment, create client libraries, and create the components to be used, but once these basics are in place the **template author** has the flexibility to create and configure templates without a development project.
+With the **Template Editor**, creating and maintaining templates is not a developer-only task. A type of power-user, who is called a **template author**, can be involved too. Developers are still required to setup the environment, create client libraries, and create the components to be used, but once these basics are in place the **template author** has the flexibility to create and configure templates without a development project.
 
 The **Templates Console** allows template authors to:
 
