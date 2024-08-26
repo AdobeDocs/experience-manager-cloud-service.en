@@ -135,7 +135,9 @@ You can choose to view the trends for specific Lighthouse categories by clicking
 
 Use the **Select** drop-down at the top of the chart to select page-specific details, and the **View** and **Trigger** drop-downs at the bottom to choose different time frames and the trigger type, respectively.
 
-TODO: Add text (& image) for the calendar date picker
+The **View** drop-down offers the possibility to select a preset time frame, or a custom interval for a more specific view.
+
+![Trend View](assets/experience-audit-trend-view.png)
 
 When moving the mouse over the chart, a tooltip displays the values for the Google Lighthouse categories at specific points in time.
 
@@ -160,10 +162,9 @@ The **Recommendations** section shows an aggregate set of insights. By default, 
 
 Click any recommendation to reveal details about it.
 
-TODO: Add image for the AEM documentation recommendations
 ![Recommendation details](assets/experience-audit-recommendations-details.png)
 
-When available, the expanded recommendation details also contain the percentage of the recommendations impact, to help focus on the most impactful changes.
+When available, the expanded recommendation details also contain the percentage of the recommendations impact, to help focus on the most impactful changes. In addition to this, expanded recommendations may include relevant AEM documentation links and tips that can guide you through implementing the suggested fixes.
 
 Click the **see pages** link in the details view to see the pages to which the recommendation applies.
 
