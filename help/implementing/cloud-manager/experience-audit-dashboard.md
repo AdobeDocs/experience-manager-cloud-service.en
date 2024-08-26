@@ -118,7 +118,6 @@ You can view the full Experience Audit report by doing the following:
 
 The **Reports** tab of Cloud Manager is opened, showing the **Experience Audit**.
 
-TODO: Update the image below with the new design (new layout, remove PWA, side nav)
 ![Experience Audit reports](assets/experience-audit-reports.png)
 
 The report is split into two areas:
@@ -129,6 +128,8 @@ The report is split into two areas:
 #### Page scores &mdash; trend {#trend}
 
 By default, the selected view for **Page scores &mdash; trend** is **median scores** for the **Last year**.
+
+You can choose to view the trends for specific Lighthouse categories by clicking the category name in the legend.
 
 ![Trend Selectable](assets/experience-audit-trend-selectable.png)
 
@@ -192,12 +193,10 @@ Besides being run during pipeline execution, Experience Audit reports can also b
 
 To run an on-demand scan, navigate to the **Reports** tab to see the complete audit report and then click the **Run scan** button. 
 
-TODO: Update the image below with the new design
 ![On-demand scanning](assets/experience-audit-on-demand.png)
 
 The **Run scan** button becomes unavailable and is badged with a clock icon when an on-demand scan is already running.
 
-TODO: Update the image below with the new design
 ![On-demand scan running](assets/experience-audit-on-demand-running.png)
 
 On-demand scans trigger an Experience Audit for the latest 25 [configured pages](#configuration) and typically finish in a few minutes.
