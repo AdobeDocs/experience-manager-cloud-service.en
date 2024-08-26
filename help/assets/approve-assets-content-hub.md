@@ -1,8 +1,10 @@
 ---
-title: Approve assets in Content Hub
-description: Approve assets in Content Hub
+title: Approve assets for Content Hub
+description: Learn how to approve assets in Assets as a Cloud Service to make them available in Content Hub.
 ---
 # Approve assets for Content Hub {#approve-assets-content-hub}
+
+![Approve assets for Content Hub](assets/content-hub-approve-assets.png)
 
 Brand Managers and Marketers maintain strict control over brand assets. Only approved and latest version of the asset is available for use within Content Hub, ensuring brand consistency across all channels and applications. 
 
@@ -12,7 +14,7 @@ You can approve assets using AEM Assets as a Cloud Service to streamline asset m
 
 * Access to AEM Assets as a Cloud Service
 
-* Role so that you have permissions to edit the **[!UICONTROL Status]** field available in [asset properties](/help/assets/manage-organize-assets-view.md##manage-asset-status) for an asset.
+* Write permissions to edit asset metadata to be able to edit the **[!UICONTROL Status]** field available in [asset properties](/help/assets/manage-organize-assets-view.md##manage-asset-status) for an asset.
 
 ## Approve assets for Content Hub {#approve-assets-for-content-hub}
 
@@ -30,9 +32,6 @@ If you need to approve assets using Admin view, see [Approve assets using Admin 
 
 ## Bulk Approve assets for Content Hub using Assets view {#bulk-approve-assets-content-hub}
 
-Streamline your workflow by quickly approving multiple assets at once. You can bulk approve assets to expedite the approval process, saving time and enhancing productivity.
-
-
 Bulk approve assets using Assets view for AEM Assets as a Cloud Service. All assets, approved in bulk, then become available in Content Hub.
 
 To bulk approve assets within a folder in Assets view:
@@ -45,7 +44,7 @@ To bulk approve assets within a folder in Assets view:
 
 ## How to switch between Assets and Admin views? {#access-assets-view-admin-view}
 
-You can switch between Admin and Assets views in the following ways:
+If you need to bulk approve assets using the Admin view, you can switch between Admin and Assets views in the following ways:
 ![My Workspace overview](assets/assets-view.png)
 
 ## Bulk Approve assets for Content Hub using Admin view {#bulk-approve-assets-content-hub-admin-view}
@@ -79,11 +78,13 @@ Follow these steps to approve bulk assets in [!DNL Experience Manager Admin view
 
 [Content Hub users with rights to add assets](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) can [add assets to the Content Hub](/help/assets/upload-brand-approved-assets.md) either from local file system or import assets from OneDrive or Dropbox data sources. All assets display at the top-level in Content Hub irrespective of the folder structure available on your local file system or OneDrive and Dropbox data sources to enhance the search capabilities.
 
-The display of assets in Content Hub depends on if you have [enabled the **[!UICONTROL Auto-approval]** toggle](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub).
+The display of assets uploaded using Content Hub depends on if you have [enabled the Auto-approval toggle](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub):
 
-* If the **[!UICONTROL Auto-approval]** toggle is enabled, the assets that you uplaod using Content Hub are automatically available.
+* If the **[!UICONTROL Auto-approval]** toggle is enabled, the assets that you upload using Content Hub are automatically available.
 
 * If the **[!UICONTROL Auto-approval]** toggle is disabled, the assets that you upload using Content Hub do not display automatically. The assets are available in the `hydrated-assets` folder of your Assets as a Cloud Service environment. Navigate to the folder and [bulk edit](#bulk-approve-assets-content-hub) the status of those assets to `Approved` for those assets to display in Content Hub.
+
+![Content Hub approval process](/help/assets/assets/content-hub-approval.png)
 
 
 
