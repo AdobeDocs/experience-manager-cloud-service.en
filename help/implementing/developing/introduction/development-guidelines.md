@@ -178,7 +178,7 @@ On local development (using the SDK), `/apps` and `/libs` can be written to dire
 
 Customers can access CRXDE lite on the author tier's development environment but not stage or production. The immutable repository (`/libs`, `/apps`) cannot be written to at runtime so attempting to do so will result in errors.
 
-Instead, the Repository Browser can be launched from the AEM as a Cloud Service Developer Console, providing a read-only view into the repository for all environments on author, publish, and preview tiers. Read more about the Repository Browser [here](/help/implementing/developing/tools/repository-browser.md).
+Instead, the Repository Browser can be launched from the AEM as a Cloud Service Developer Console, providing a read-only view into the repository for all environments on author, publish, and preview tiers. For more information see the [Repository Browser](/help/implementing/developing/tools/repository-browser.md).
 
 A set of tools for debugging AEM as a Cloud Service developer environments are available in the AEM as a Cloud Service Developer Console for RDE, dev, stage, and production environments. The url can be determined by adjusting the Author or Publish service urls as follows:
 
@@ -188,7 +188,7 @@ As a shortcut, the following Cloud Manager CLI command can be used to launch the
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
-See [this page](/help/release-notes/home.md) for more information.
+See [Release Information](/help/release-notes/home.md) for more information.
 
 Developers can generate status information, and resolve various resources.
 
