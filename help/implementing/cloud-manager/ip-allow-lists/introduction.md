@@ -28,7 +28,7 @@ After adding, [IP Allow Lists can be applied or unapplied](/help/implementing/cl
 
 ## Use of the Cloud Manager IP Allow List with the front-end pipeline {#allowlists-frontend-pipeline}
 
-If you use&mdash;or intended to use&mdash;the [front-end pipeline to develop sites](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md), the following Cloud Manager IP Allow List must be added beforehand. 
+If you use&mdash;or intend to use&mdash;the [front-end pipeline to develop sites](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md), the following Cloud Manager IP Allow List must be added beforehand. 
 
 When you [add the IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md#add-cm-allowlist), name it *`Cloud Manager`*, then copy the list of addresses below and paste them into the IP Allow List dialog box.
 
