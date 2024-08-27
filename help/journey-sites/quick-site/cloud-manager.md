@@ -107,6 +107,8 @@ The overall flow is simple and intuitive even if you do not yet have extensive e
 
 The major advantage of using the Quick Site Creation tool is that the pure front-end developer is only responsible the actual customization. The front-end developer has no interaction with AEM or needs any knowledge of AEM.
 
+{{add-cm-allowlist-frontend-pipeline}}
+
 ## What's Next {#what-is-next}
 
 Now that you have completed this part of the AEM Quick Site Creation journey you should:

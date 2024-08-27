@@ -93,6 +93,7 @@ The following are the component types that are possible to use for rendering fie
 |[Container](#container)|`container`|
 |[Content Fragment](#content-fragment)|`aem-content-fragment`|
 |[Date Time](#date-time)|`date-time`|
+|[Experience Fragment](#experience-fragment)|`aem-experience-fragment`|
 |[Multiselect](#multiselect)|`multiselect`|
 |[Number](#number)|`number`|
 |[Radio Group](#radio-group)|`radio-group`|
