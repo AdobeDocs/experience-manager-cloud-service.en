@@ -10,6 +10,8 @@ solution: Experience Manager Sites
 
 Content Fragment Models in Adobe Experience Manager (AEM) as a Cloud Service define the structure for the content of your [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md). These fragments can then be used as a foundation for your headless content, or for page authoring.
 
+This page covers how to define your content fragment model, using the dedicated editor. See [Managing your Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) for further tasks and options available once your fragments are created, including [actions available from the Content Fragments Console](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#actions), [allowing the model on your folder](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder) and [publishing your model](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model).
+
 >[!CAUTION]
 >
 >If you will be querying against multiple referenced fragments, then it is not recommended that the various fragment models have field names with the same name, but different types.
