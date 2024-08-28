@@ -4,8 +4,8 @@ description: Understand how Edge Delivery Services expands the authoring and pub
 solution: Experience Manager Sites
 feature: Authoring
 role: User
+exl-id: 7747d6f7-18e4-4713-baea-bcfa94f54934
 ---
-
 # AEM Sites and Edge Delivery Services {#sites-and-edge}
 
 Understand how Edge Delivery Services expands the authoring and publishing possibilities for AEM Sites in order to accelerate content creation and deliver sites with 100% performance.
