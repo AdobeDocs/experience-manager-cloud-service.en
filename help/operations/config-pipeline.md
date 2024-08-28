@@ -3,8 +3,8 @@ title: Using Config Pipelines
 description: Learn how you can use config pipelines to deploy different configurations AEM as a Cloud Service such as log forwarding settings, purge-related maintenance tasks, and various CDN configurations.
 feature: Operations
 role: Admin
+exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
 ---
-
 # Using Config Pipelines {#config-pipelines}
 
 Learn how you can use config pipelines to deploy different configurations AEM as a Cloud Service such as log forwarding settings, purge-related maintenance tasks, and various CDN configurations.
