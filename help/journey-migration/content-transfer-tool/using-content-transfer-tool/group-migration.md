@@ -30,6 +30,7 @@ A major change to AEM as a Cloud Service is the fully integrated use of Adobe ID
 ## Group Migration Details {#group-migration-detail}
 
 The Content Transfer Tool and Cloud Acceleration Manager will migrate any groups associated with the content being migrated to the cloud system. The Content Transfer Tool does this by copying all groups from the source AEM system during the extraction process. CAM Ingestion then selects and migrates only certain groups:
+
 * There are a number of groups that are built-in, and already present on the target cloud system; these are never migrated.
 * Direct member groups of any built-in group directly or indirectly referred to in an ACL or CUG policy of migrated content will be migrated, to ensure users that are direct or indirect members of such groups maintain their access to the migrated content.
 * If a group is on an ACL or CUG policy of migrated content, that group will be migrated.
@@ -45,10 +46,11 @@ The exception to this IMS configuration is with groups created by Assets Collect
 ## Opt Out of Group Migration {#group-migration-option}
 
 CTT version 3.0.20 and later includes an option to disable the migration of groups.  This is configured in the OSGI console as follows: 
-- Open the OSGI Configuration `(http://<server> /system/console/configMgr)`
-- Click on the configuration called **Content Transfer Tool Extraction Service Configuration**
-- Uncheck **Include Groups in migration** to disable group migrations
-- Click **Save** to ensure the configuration is saved and active on the server
+
+* Open the OSGI Configuration `(http://<server> /system/console/configMgr)`
+* Click on the configuration called **Content Transfer Tool Extraction Service Configuration**
+* Uncheck **Include Groups in migration** to disable group migrations
+* Click **Save** to ensure the configuration is saved and active on the server
 
 With this setting disabled, groups will not be migrated, and there will be no Principal Migration report or User Report.
 
@@ -59,6 +61,7 @@ During migration users are not migrated, but the user-group relationships on the
 In the case of a wipe and then a non-wipe ingestion, the groups in a user's list will include those groups migrated in either phase.
 
 In addition to the groups for each user, there is a field in the report where notes may be added for the user (and a detailed description of the note's meaning is also in the report).  Possilble notes are:
+
 * Users which are referenced directly in an ACL will have *Note-A* in their notes section, as this is not a recommended use case or best practice.
 * Users which are direct members of a built-in group will have *Note-B* in their notes section, as this is also not a recommended use case or best practice.
 

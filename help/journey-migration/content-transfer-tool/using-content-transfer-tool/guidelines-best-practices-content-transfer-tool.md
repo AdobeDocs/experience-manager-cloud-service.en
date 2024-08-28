@@ -42,9 +42,9 @@ The following Guidelines and Best Practices apply to the new version of the Cont
    The general formula to calculate the required free disk space is as follows:
    `data store size + node store size * 1.5`
 
-     * *data store size*: the Content Transfer Tool uses 64 GB, even if the actual data store is larger.
-     * *node store size*: segment store directory size or the MongoDB database size.
-  Hence, for a segment store size of 20 GB, the required free disk space would be 94 GB.
+* *data store size*: the Content Transfer Tool uses 64 GB, even if the actual data store is larger.
+* *node store size*: segment store directory size or the MongoDB database size.
+Hence, for a segment store size of 20 GB, the required free disk space would be 94 GB.
   
 * A migration set must be maintained throughout the content transfer activity to support content top-ups. A maximum of 20 migration sets per project in Cloud Acceleration Manager can be created and maintained at a time during the content transfer activity. If more than 20 migration sets are needed, create a second project in Cloud Acceleration Manager. However, this requires additional project management and out-of-product governance to avoid overwriting content on the target by multiple users.
 

@@ -1,4 +1,4 @@
-e ---
+---
 title: Using User Mapping Tool (Legacy)
 description: Using User Mapping Tool (Legacy)
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
@@ -7,6 +7,7 @@ hidefromtoc: yes
 feature: Migration
 role: Admin
 ---
+
 # Using the User Mapping Tool (Legacy) {#using-user-mapping-tool}
 
 >[!INFO]
