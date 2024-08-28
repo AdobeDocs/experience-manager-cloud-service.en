@@ -2,7 +2,7 @@
 title: How to customize appearance of adaptive forms?
 description: Use LESS framework for Adaptive Forms to customize appearance of Adaptive Forms.
 feature: Adaptive Forms, Foundation Components
-role: author, developer, admin
+role: user
 ---
 
 # Styling constructs for Adaptive Forms{#styling-constructs-for-adaptive-forms}
