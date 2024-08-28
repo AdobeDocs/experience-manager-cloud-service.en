@@ -4,6 +4,8 @@ description: Lists supported XFA events, properties, scripts, and validation in 
 uuid: 75d3c292-cfed-438f-afdb-4071d95a08b7
 topic-tags: develop
 discoiquuid: 05303b29-9058-4723-b134-4ba605fe40c7
+feature: Adaptive Forms
+role: user
 
 ---
 

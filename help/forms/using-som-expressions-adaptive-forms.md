@@ -1,6 +1,8 @@
 ---
 title: How can we use SOM expressions in Adaptive Forms?
 description: Learn how to extract SOM expressions of a panel in Adaptive Forms.
+feature: Adaptive Forms, Foundation Components
+role: author, developer, admin
 ---
 
 # Using SOM expressions in Adaptive Forms{#using-som-expressions-in-adaptive-forms}
