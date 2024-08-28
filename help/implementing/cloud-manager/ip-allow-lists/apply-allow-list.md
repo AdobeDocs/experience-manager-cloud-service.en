@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 
 # Apply and unapply IP Allow Lists {#apply-allow-list}
 
-When applying IP Allow Lists, all IP ranges included in the list's definition are associated with an author or publish service within an environment. Unapplying a list is the inverse to this process.
+When applying IP Allow Lists, all IP ranges included in the list's definition are associated with an author or publish service within an environment. Unapplying a list is the inverse to this process. 
 
 {{add-cm-allowlist-frontend-pipeline}}
 
