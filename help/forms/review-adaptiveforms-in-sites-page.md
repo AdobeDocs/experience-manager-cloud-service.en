@@ -4,6 +4,7 @@ description: Review is a mechanism that allows reviewer to perform different tas
 feature: Adaptive Forms
 hide: yes
 hidefromtoc: yes
+role: User
 ---
 
 # Create and manage reviews for an Adaptive Form {#review-step-forms-aem-sites-page}

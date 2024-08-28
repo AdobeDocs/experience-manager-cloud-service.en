@@ -1,7 +1,10 @@
 ---
 title: What are Adaptive Form Expressions?
 description: Use Adaptive Forms expressions to add automatic validation, calculation, and turn visibility of a section on or off.
-
+feature: Adaptive Forms, Foundation Components
+role: User
+hide: yes
+hidefromtoc: yes
 ---
 
 # Adaptive Form Expressions {#adaptive-form-expressions}
