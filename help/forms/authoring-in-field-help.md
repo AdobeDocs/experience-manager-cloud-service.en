@@ -61,8 +61,3 @@ In addition to the in-context help for form fields, you can specify help at a pa
 Adding help for panel displays a **?** icon next to the panel description. Clicking the icon displays the content added in the Help Content section of the panel edit dialog.
 
 ![Example of in-context help at form panel level](assets/photoshop-1.png)
-
->[!MORELIKETHIS]
->
->* [Add placeholder text to form fields](/help/forms/placeholder-text-in-aem-forms.md)
->* [Add Footnote to an adaptive form for rich text](/help/forms/footnotes-richtextsupport.md)
