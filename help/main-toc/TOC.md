@@ -742,10 +742,13 @@ user-guide-title: AEM as a Cloud Service
         + [Set layout of an Adaptive Form](/help/forms/layout-capabilities-adaptive-forms.md)
         + [Use Layout mode to resize components](/help/forms/resize-using-layout-mode.md)
         + [Create multi-step data capture experience](/help/forms/introduction-form-sequence.md)
+        + [Styling constructs for Adaptive Forms](/help/forms/styling-constructs-adaptive-forms.md)
         + [Apply inline CSS styles to individual Adaptive Form components](/help/forms/inline-style-adaptive-forms.md)
+        + [How to use Separator component in Adaptive Forms?](/help/forms/separator-component-in-adaptive-forms.md)
       + Add rules and use expressions in an Adaptive Form {#add-rules-and-use-expressions-in-an-adaptive-form}
         + [Add rules to an Adaptive Form](/help/forms/rule-editor.md)
         + [Add custom error handler using Rule Editor's Invoke service](/help/forms/add-custom-error-handler-adaptive-forms.md)
+        +  [Using SOM expressions in Adaptive Forms](/help/forms/using-som-expressions-adaptive-forms.md)
       + Use [!DNL Adobe Sign] {#use-adobe-sign}
         + [Use Adobe Sign to e-sign an Adaptive Form](/help/forms/working-with-adobe-sign.md)
       + Configure Submit Actions and metadata submission {#configure-submit-actions-and-metadata-submission}
@@ -763,7 +766,6 @@ user-guide-title: AEM as a Cloud Service
         + [Create an accessible Adaptive Form](/help/forms/creating-accessible-adaptive-forms.md)
       + [Configure Forms Portal](/help/forms/configure-forms-portal.md)
       + [Create and manage reviews](/help/forms/create-reviews-forms.md)
-      + [Using SOM expressions in Adaptive Forms](/help/forms/using-som-expressions-adaptive-forms.md)
     + [Adaptive forms keywords](/help/forms/adaptive-forms-keywords.md)
     + [Previewing a form](/help/forms/previewing-forms.md)
   + Forms Centric Workflows {#create-form-centric-workflows}
@@ -776,6 +778,7 @@ user-guide-title: AEM as a Cloud Service
     + [Communications APIs - Batch processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
     + [Install and configure Forms Designer](/help/forms/installing-configuring-designer.md)
     + [Use Forms Designer to create templates](/help/forms/use-forms-designer.md)
+    + [Changing Page Zero content in Designer](/help/forms/changing-page-zero-content-designer.md)
     + [Using custom fonts in PDF documents](/help/forms/use-custom-fonts.md)
     + [List of supported fonts in PDF documents](/help/forms/supported-out-of-the-box-fonts.md)
     + [Known issues, best practices, and frequently asked questions](/help/forms/communications-known-issues-limitations.md)

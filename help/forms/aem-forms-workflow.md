@@ -4,6 +4,8 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: Use AEM Forms Workflow to automate and rapidly build business process workflows. For example, review and approval, PDF Generation, Adobe Sign workflows.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
+feature: Adaptive Forms
+role: User, Developer
 ---
 
 # Forms-centric workflow on OSGi {#forms-centric-workflow-on-osgi}
