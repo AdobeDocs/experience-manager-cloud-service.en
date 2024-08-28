@@ -12,6 +12,12 @@ By default, the [Content Fragments console](/help/sites-cloud/administering/cont
 
 However, you can also view, and manage, all other sorts of **Assets** in this **Content Fragments Console**.
 
+>[!IMPORTANT]
+>
+>Various features of the Content Fragment Console are availlable through the Early Adopter Program.
+>
+>To see the status, and how to apply if you are interested, check the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md).
+
 >[!NOTE]
 >
 >This page covers the section of the console that (only) displays Assets. For other panels see:
