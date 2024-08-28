@@ -21,22 +21,16 @@ The 2024.9.0 feature activation will provide the full feature set for this maint
 * CQ-4353778: Translation Process Events.
 * CQ-4354583: Send translation process events via Adobe Pipeline.
 * CQ-4356479: Allow only Adobe code to use the /adobe servlet context.
-* CQ-4358133: optimize Jenkins worker usage.
 * CQ-4358226: Save Translation keyword functionality doesn't work for particular String format.
 * CQ-4358270: AEM Translation Kit: August 08.
 * CQ-4358310: Add oak-compat-query-spi-1.2 to quickstart.
-* GRANITE-36205: Automated update for internal oak release in QS.
 * GRANITE-49833: Batching support for event sender and proxy.
 * GRANITE-52053: Remove usages of Commons Collections 3: Platform others.
 * GRANITE-52492: Elastic async catchup in case of PIT restore.
-* GRANITE-53086: Update jacoco plugin version to 0.8.12 in AEMaaCS.
 * GRANITE-53099: Update to Apache Felix Http Jetty 5.1.24.
 * GRANITE-53125: Add classification to CloudEvent.
 * GRANITE-53328: Update Filevault to 3.8.0-T20240726111512-3cc11d50 containing stashing logging improvements.
-* GRANITE-53340: AEM660: Proper Versioning and branching for 660 CQ/Platform.
-* GRANITE-53341: Dont warn on usage of ACS Commons 6.
 * GRANITE-53453: update commons-lang to 3.15.0.
-* GRANITE-53473: Undeprecate Sling Settings.
 * GRANITE-53478: Update Filevault to version 3.8.0.
 * GRANITE-53505: Update QS to commons-collections-3.2.2-adobe-2.
 * GRANITE-53528: Update version of platform artifacts .
@@ -65,7 +59,10 @@ The 2024.9.0 feature activation will provide the full feature set for this maint
 
 ### Known Issues {#known-issues-17569}
 
-None.
+* ASSETS-40875 - The AssetDeleteHandler class listens for asset delete events and performs specific actions based on the type of delete event (PRE_DELETE or POST_DELETE). In certain scenarios, the POST_DELETE type of event causes a NullPointerException.
+* FORMS-14340 - Error in instantiation of FormsAndDocumentOmniSearchHandler and CloudStorageSubmitActionInserter. These are harmless log statements.
+* FORMS-15818 - Component descriptor entry 'OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml' not found statements in server logs. These are harmless log statements.
+* SITES-23662 - User that triggers a publish cannot be extracted from JCR log statements in server logs. This is for a feature under development that might cause intermitent and harmless "Cannot find a valid user id in the batch of OSGI events" errors in the log.
 
 ### Change Notice {#change-notice-17569}
 

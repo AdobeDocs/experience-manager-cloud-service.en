@@ -4,8 +4,8 @@ description: Learn the basics of accessing and navigating the Universal Editor.
 solution: Experience Manager Sites
 feature: Authoring
 role: User
+exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
 ---
-
 # Accessing and Navigating the Universal Editor {#navigating}
 
 Learn the basics of accessing and navigating the Universal Editor.

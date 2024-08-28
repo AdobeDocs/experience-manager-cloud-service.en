@@ -5,6 +5,8 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
+hide: yes
+hidefromtoc: yes
 ---
 # Design XML Schema for an Adaptive Form {#creating-adaptive-forms-using-xml-schema}
 

@@ -4,8 +4,8 @@ Description: Learn how to configure SharePoint Site with limited access using th
 keywords: How to configure SharePoint Site with limited access?, Configure SharePoint with limited access, Using authorization scope to limit access for SharePoint Site.
 feature: Adaptive Forms, Core Components
 role: User, Developer
+exl-id: 3230bab2-c1aa-409d-9f01-c42cf88b1135
 ---
-
 <span class="preview"> The feature is available under the early adopter program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
 
 # Configure SharePoint Site with limited access using authorization scope
