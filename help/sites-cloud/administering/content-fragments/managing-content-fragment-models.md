@@ -11,6 +11,12 @@ From the Content Fragment console you can manage your Content Fragment Models, t
 
 Content Fragment Models in Adobe Experience Manager (AEM) as a Cloud Service define the structure for the content of your [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md). These fragments can then be used as a foundation for your headless content, or for page authoring. 
 
+>[!IMPORTANT]
+>
+>Various features of the Content Fragment Console are availlable through the Early Adopter Program.
+>
+>To see the status, and how to apply if you are interested, check the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md).
+
 >[!NOTE]
 >
 >This page covers the section of the console that (only) displays Content Fragment Models. For other panels see:
