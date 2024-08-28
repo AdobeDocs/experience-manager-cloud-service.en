@@ -22,7 +22,7 @@ Cloud Manager offers self-service tools to install and manage SSL certificates, 
 <!-- CQDOC-21758, #1 -->
 
 * **Use case 1:** Cloud Manager uses a platform TLS service to manage customer-owned SSL certificates and private keys from third-party Certificate Authorities, such as *Let's Encrypt*.
-* **Use case 2:** Cloud Manager lets users configure a DV (Domain Validation) certificate from Adobe for quick domain setup. DV certificates are the most basic level of SSL certification and are often used for testing purposes or for securing websites with basic encryption.
+* **Use case 2:** Cloud Manager lets users configure a DV (Domain Validation) certificate from Adobe for quick domain setup. DV certificates are the most basic level of SSL certification and are often used for testing purposes or for securing websites with basic encryption. DV certificates are available to both [production and sandbox programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md). 
 
 
 ## Introduction to certificates {#certificates}
@@ -33,7 +33,7 @@ When an entity, such as an organization or business, requests a certificate from
 
 >[!IMPORTANT]
 >
->Cloud Manager does not provide SSL certificates or private keys. These things must be obtained from a Certification Authority, a trusted third-party organization. Some well-known Certificate Authorities include *DigiCert*, *Let's Encrypt*, *GlobalSign*, and *Entrust*.
+>Cloud Manager does not provide SSL certificates or private keys. These things must be obtained from a Certification Authority, a trusted third-party organization. Some well-known Certificate Authorities include *DigiCert*, *Let's Encrypt*, *GlobalSign*, *Entrust*, and *Verisign*.
 
 ## Cloud Manager SSL management features {#features}
 
