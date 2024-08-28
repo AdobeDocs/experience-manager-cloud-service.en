@@ -36,7 +36,7 @@ See [Managing IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/in
 >
 >Only requests from the allowed IPs are served by AEM's managed CDN. If you point your own CDN to the AEM-managed CDN, then make sure the IPs of your CDN are included in the allowlist.
 
-### Configuring Traffic at the CDN {#cdn-configuring-cloud}
+### Configure traffic at the CDN {#cdn-configuring-cloud}
 
 You can configure traffic at the CDN in various ways, including:
 
@@ -47,21 +47,21 @@ You can configure traffic at the CDN in various ways, including:
 
 Learn how to configure these features by using YAML files in git and deploying them by using the Cloud Manager [Config Pipeline](/help/implementing/dispatcher/cdn-configuring-traffic.md).
 
-### Configuring CDN Error Pages {#cdn-error-pages}
+### Configure CDN error pages {#cdn-error-pages}
 
 A CDN error page can be configured to override the default, unbranded page that is served to the browser in the rare event that AEM cannot be reached. For more details, see [Configuring CDN error pages](/help/implementing/dispatcher/cdn-error-pages.md).
 
-### Purge Cached Content at the CDN {#purge-cdn}
+### Purge cached content at the CDN {#purge-cdn}
 
 Setting TTL using the HTTP Cache-Control header is an effective approach to balance content delivery performance and content freshness. However, in scenarios where it is critical to immediately serve updated content, it may be beneficial to directly purge the CDN cache.
 
 Read about [configuring a purge API token](/help/implementing/dispatcher/cdn-credentials-authentication.md/#purge-API-token) and [purging cached CDN content](/help/implementing/dispatcher/cdn-cache-purge.md).
 
-### Basic Authentication at the CDN {#basic-auth}
+### Basic authentication at the CDN {#basic-auth}
 
 For light authentication use cases including business stakeholders reviewing content, protect content by displaying a basic auth dialog requiring a username and password. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md) and join the early adopter program.
 
-## Customer CDN Points to AEM-managed CDN {#point-to-point-CDN}
+## Customer CDN points to AEM-managed CDN {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
@@ -143,15 +143,15 @@ Presented below are several configuration examples from several leading CDN vend
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
 
-### Common Errors {#common-errors}
+### Common errors {#common-errors}
 
 The sample configurations provided show the base settings needed, but a customer configuration may have other impacting rules that remove, modify, or re-arrange the headers needed for AEM as a Cloud Service to serve the traffic. Below are common errors that occur when configuring a customer managed CDN to point to AEM as a Cloud Service.
 
-**Redirection to the Publish Service Endpoint**
+**Redirection to the publish service endpoint**
 
 When a request receives a 403 forbidden response, it means that the request is missing some required headers. A common cause for this is that the CDN is managing both apex and `www` domain traffic, but is not adding the correct header for the `www` domain. This problem can be triaged by checking your AEM as a Cloud Service CDN logs and verifying the needed request headers.
 
-**Too Many Redirects Loop**
+**Too many redirects Loop**
 
 When a page gets a "Too Many Redirect" loop, some request header is being added at the CDN that matches a redirect that forces it back to itself. As an example:
 
@@ -163,7 +163,7 @@ When a page gets a "Too Many Redirect" loop, some request header is being added 
 
 To resolve this problem, assess your SSL redirect strategy, CDN rules, redirect and rewrite rule combinations.
 
-## Geolocation Headers {#geo-headers}
+## Geolocation headers {#geo-headers}
 
 The AEM-managed CDN adds headers to each request with:
 
