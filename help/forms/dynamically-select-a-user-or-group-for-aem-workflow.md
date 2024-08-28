@@ -4,7 +4,9 @@ description: Learn how to select a user or group for an [!DNL AEM Forms] workflo
 content-type: troubleshooting
 topic-tags: publish
 feature: Adaptive Forms
-role: author, developer, admin
+role: User
+hide: yes
+hidefromtoc: yes
 ---
 
 # Dynamic User or Group Selection in AEM Workflow {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}

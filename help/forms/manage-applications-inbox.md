@@ -7,6 +7,8 @@ topic-tags: document_services, publish
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 feature: Adaptive Forms
 role: User
+hide: yes
+hidefromtoc: yes
 ---
 
 # Manage Forms applications and tasks in AEM Inbox{#manage-forms-applications-and-tasks-in-aem-inbox}

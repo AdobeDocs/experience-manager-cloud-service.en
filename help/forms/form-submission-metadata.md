@@ -4,6 +4,8 @@ description: Learn how to add information to metadata of a submitted form with u
 feature: Adaptive Forms
 role: User
 level: Intermediate
+hide: yes
+hidefromtoc: yes
 ---
 
 # Add information from user data to form submission metadata {#adding-information-from-user-data-to-form-submission-metadata}
