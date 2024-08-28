@@ -66,34 +66,17 @@ Interested in trying out the feature and sharing feedback? Send an email to aemc
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**Upload assets using Asset Selector**
-
-Asset Selector now offers ability for content authors to upload final assets directly from the selector, by either dragging or by browsing from the local file system. This allows final assets to be uploaded to the DAM from the application of your choice.
-
 ### New features in Assets view {#assets-view-new-features}
 
-**Content credentials integration**
+**Updated Adobe Firefly Image Generation**
 
-Experience Manager Assets now supports content credentials for supported image formats. This provides information on the lineage of the asset and how it was created, including if it was modified using GenAI.
+Assets as a Cloud Service now uses the latest widget from Firefly that allows you to generate images in different styles using Adobe Firefly. By defining its style, composition, dimensions, and more, using the in-built Firefly editor, you can quickly create & save the assets you need directly within the AEM Assets repository for immediate use.
 
-![Content credentials](/help/assets/assets/content-credentials.png)
+![Adobe Firefly image generation](/help/assets/assets/bugatti-type-57.png)
 
-**Visual previews of folder contents**
+**PSB file support**
 
-Experience Manager Assets now displays visual previews of folder contents on the folder thumbnail when browsing or searching for content, which improves the discoverability of assets available within AEM Assets repository.
-
-<!--
-
-
-**Content Credentials**
-
-Content Credentials feature in Assets view now provides detailed asset provenance data adhered to an asset. This helps to trace the enroute edits along the asset's lifecycle to prevent users from deception through deliberately tempered assets. This ensures content authenticity among users and fosters trust through transparency.
-
-When looking at the asset details, any image with content credentials added, such as those created with GenAI, displays the manifest details in a dedicated panel. If the asset is downloaded, published, or shared, the credentials remain intact with the asset.
-
-![check publish status1](/help/release-notes/assets/content-credentials.png)
-
--->
+Assets as a Cloud Service now supports Photoshop large documents (PSB files) in addition to the existing PSD file support.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
