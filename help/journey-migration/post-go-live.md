@@ -10,7 +10,7 @@ role: Admin
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
 >title="Troubleshooting AEM"
->abstract="Review best practices for continous development and manage logs along with tools like Developer console & CRXDE Lite to help with troubleshooting issues with AEM"
+>abstract="Review best practices for continuous development and manage logs along with tools like Developer console & CRXDE Lite to help with troubleshooting issues with AEM"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html" text="Accessing and Managing Logs"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service Development tools"
 
