@@ -8,8 +8,8 @@ feature: Adaptive Forms
 role: User
 hide: yes
 hidefromtoc: yes
+exl-id: 59ae0eed-d832-4f46-9f99-7bcca9f82306
 ---
-
 # XFA support in XDP-based Adaptive Forms{#xfa-support-in-xdp-based-adaptive-forms}
 
 ## Introduction {#introduction}
@@ -261,4 +261,3 @@ The following table captures how XFA validations map to validations in Adaptive 
 >[!NOTE]
 >
 >You cannot override mandatory property for Adaptive Form radio button and check box group that are bound to XFA check buttons.
-

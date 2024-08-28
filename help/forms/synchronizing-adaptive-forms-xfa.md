@@ -9,8 +9,8 @@ feature: Adaptive Forms
 role: User
 hide: yes
 hidefromtoc: yes
+exl-id: f19b7e4f-d4aa-45da-b0dd-7ae8d119da74
 ---
-
 # Synchronizing Adaptive Forms with XFA Form Templates{#synchronizing-adaptive-forms-with-xfa-form-templates}
 
 ## Introduction {#introduction}

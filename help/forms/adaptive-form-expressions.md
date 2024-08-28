@@ -5,8 +5,8 @@ feature: Adaptive Forms, Foundation Components
 role: User
 hide: yes
 hidefromtoc: yes
+exl-id: e5b77cc1-5fb1-4f73-afe6-64f1c407e42b
 ---
-
 # Adaptive Form Expressions {#adaptive-form-expressions}
 
 Adaptive Forms provide optimized and simplified form filling experience for end users with dynamic scripting capabilities. It lets you write expressions to add various behaviors such as dynamic show/hide fields and panels. It also lets you add calculated fields, make fields read-only, add validation logic, and many more. The dynamic behavior is based on the user input or prefilled data.
@@ -278,4 +278,3 @@ Perform the following steps to create a custom pattern for a specific field type
    ![Creating custom patterns for fields in CrxDe](assets/creating-custom-patterns.png)
 
    Creating custom patterns
-
