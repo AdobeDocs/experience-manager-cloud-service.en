@@ -3,8 +3,8 @@ title: How to customize appearance of adaptive forms?
 description: Use LESS framework for Adaptive Forms to customize appearance of Adaptive Forms.
 feature: Adaptive Forms, Foundation Components
 role: User
+exl-id: efe59f3c-ca69-4bb5-a3ab-e7d8ea3c768e
 ---
-
 # Styling constructs for Adaptive Forms{#styling-constructs-for-adaptive-forms}
 
 ## Prerequisites {#prerequisites}
@@ -1118,4 +1118,3 @@ The **Simple enrollment** theme at /etc/clientlibs/fd/af/guidetheme/simpleEnroll
   </tr>
  </tbody>
 </table>
-

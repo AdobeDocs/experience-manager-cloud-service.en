@@ -8,9 +8,8 @@ feature: Adaptive Forms
 role: User, Developer
 hide: yes
 hidefromtoc: yes
-
+exl-id: f0fec4a9-b214-4931-bf09-5898b082481e
 ---
-
 # Forms-centric workflow on OSGi {#forms-centric-workflow-on-osgi}
 
  ![Hero Image](do-not-localize/header.png)

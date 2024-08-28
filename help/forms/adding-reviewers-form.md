@@ -9,8 +9,8 @@ feature: Adaptive Forms
 role: User, Developer
 hide: yes
 hidefromtoc: yes
+exl-id: 27c52969-1213-4fd3-8e16-988caafb4ad6
 ---
-
 # Associating submission reviewers with a form {#associating-submission-reviewers-with-a-form}
 
 When you create a form, you can specify users who review the submissions of the form via forms portal and provide feedback. Your organization can collect feedback and rework on the submitted forms.
