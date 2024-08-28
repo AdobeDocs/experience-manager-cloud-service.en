@@ -119,25 +119,6 @@ Leverage the Adobe Experience Manager [Universal Editor](https://experienceleagu
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Purge Content at the CDN with a Self-Serve API Key {#purge-cdn}
-
-Setting TTL using the HTTP Cache-Control header is an effective approach to balance content delivery performance and content freshness. However, in scenarios where it is critical to immediately serve updated content, it may be beneficial to directly purge the CDN cache .
-
-[Learn how](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) to self-serve configure a purge API token using the Cloud Manager configuration pipeline, so you can [invoke the purge APIs](/help/implementing/dispatcher/cdn-cache-purge.md), with any of these variations:
-* Single URL
-* Multiple URLs using a tag
-* Full CDN cache purge
-
-### Self-Serve Configuration of X-AEM-Edge-Key for Customer-Managed CDN {#customermanaged-keys}
-
-Previously, a support ticket was needed to generate the X-AEM-Edge-Key required for configuration of a customer-managed CDN. This is now self-service by declaring the key value in a configuration file that is deployed using the Configuration Pipeline, removing any delay in onboarding a new environment. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
-
-### Traffic Filter Rules Alerts {#traffic-filter-rules-alerts}
-
-Traffic Filter Rules, which include the optionally licensable Web Application Firewall (WAF) rules, lets you configure what traffic should be blocked. 
-
-Now you can [subscribe to alerts](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts) whenever your traffic filter rules are triggered. Actions Center email notifications keep you informed when certain traffic conditions occur so you can take appropriate measures. 
-
 ### Content Delivery-related Early Adopter Programs {#foundation-early-adopter}
 
 Email **<aemcs-cdn-config-adopter@adobe.com>**, indicating which of the early adopter programs below you are interested in.
