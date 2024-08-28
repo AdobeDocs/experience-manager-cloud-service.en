@@ -1,11 +1,8 @@
 ---
 title: What is separator component in Adaptive Forms?
 description: Separator component in Adaptive Forms help to visually segregate sections of a form.
-uuid: f8d2aed3-52aa-437f-bfe3-0c8779e7986c
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: author
-docset: aem65
-
+feature: Adaptive Forms, Foundation Components
+role: User
 ---
 
 # Separator component in Adaptive Forms{#separator-component-in-adaptive-forms}
