@@ -1,6 +1,9 @@
 ---
 title: Shopping Cart and Dispatcher Setup
 description: Shopping Cart and Dispatcher Setup
+
+feature: Commerce Integration Framework
+role: Admin
 ---
 
 # Shopping Cart and Dispatcher Setup
