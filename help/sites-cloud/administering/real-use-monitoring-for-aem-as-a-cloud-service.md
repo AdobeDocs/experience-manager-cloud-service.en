@@ -13,11 +13,11 @@ role: Admin
 
 >[!INFO]
 >
->Client-side monitoring only works for customers with AEM Cloud Service version **2024.5.16461** and above.
+>Client-side monitoring only works for customers with AEM (Adobe Experience Manager) Cloud Service version **2024.5.16461** and above.
 
 ## Overview {#overview}
 
-The Real Use Monitoring (RUM) service is a performance monitoring technology that captures and analyzes the digital user experiences of a website or application in real-time. It provides visibility into the real-time performance of a web application and provides deeper insight into the end-user experience. The service focuses on optimizing performance by monitoring website engagements, rather than the users themselves.
+The RUM (Real Use Monitoring) service is a performance monitoring technology that captures and analyzes the digital user experiences of a website or application in real-time. It provides visibility into the real-time performance of a web application and provides deeper insight into the end-user experience. The service focuses on optimizing performance by monitoring website engagements, rather than the users themselves.
 
 With RUM, key performance metrics are tracked right from the initiation of the URL until the request is served back to the browser. It helps developers enhance the application to make it easy to use for the end users. 
 
@@ -27,9 +27,8 @@ With RUM, key performance metrics are tracked right from the initiation of the U
 
 ## Who Can Benefit From a Real Use Monitoring Service? {#who-can-benefit-from-rum-service}
 
-The Real Use Monitoring service is beneficial for all customers. It offers a representative reflection of user interactions, ensuring a reliable measure of website engagement by capturing the number of client-side page views. 
+AEM has developed RUM to help customers and Adobe understand how visitors interact with AEM sites. RUM can be used to help diagnose performance issues, and measure the effectiveness of experiments. RUM preserves the privacy of visitors through sampling - only a small portion of all page views is monitored - and no personally identifiable information (PII) is collected.
 
-For all Adobe customers, this service provides valuable insights into user interactions. Customers employing their own CDN can benefit from simplified traffic reporting, as Adobe now directly integrates the data collection, eliminating the need for separate reports during renewal cycles. 
 
 ## Understand how the Real Use Monitoring Service Works {#understand-how-the-rum-service-works}
 
@@ -104,7 +103,7 @@ As you analyze RUM data, there may be variances in page views and other performa
    
 1. **The `/.rum` path is blocked on my site, how should I fix?**
 
-   The `/.rum` path is required for RUM collection to work. If you have a CDN in front of what Adobe provides as part of AEM as a Cloud Service, ensure that the `/.rum` path forwards to the same AEM origin as the rest of your AEM content. And, ensure that it is not adjusted in any way.
+   The `/.rum` path is required for RUM collection to work. If you use a CDN in front of Adobe's AEM as a Cloud Service, ensure that the `/.rum` path forwards to the same AEM origin as your other AEM content. And, ensure that it is not adjusted in any way.
    
 1. **Does RUM collection count toward content requests for contractual purposes?**
 
