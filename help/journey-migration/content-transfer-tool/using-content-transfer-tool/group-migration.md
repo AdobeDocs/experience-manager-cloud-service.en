@@ -41,6 +41,17 @@ Most groups migrated are configured to be managed by IMS.  This means that a gro
 
 The exception to this IMS configuration is with groups created by Assets Collections. When a collection is created on AEM, groups are created for access to that collection; such groups are migrated to the cloud system, but they are not configured to be managed by IMS.  In order to add IMS users to these groups, they must be added in the Group Properties page in the Assets UI, either individually or collectively as part of another IMS group.
 
+
+## Opt Out of Group Migration {#group-migration-option}
+
+CTT version 3.0.20 and later includes an option to disable the migration of groups.  This is configured in the OSGI console as follows: 
+- Open the OSGI Configuration `(http://<server> /system/console/configMgr)`
+- Click on the configuration called **Content Transfer Tool Extraction Service Configuration**
+- Uncheck **Include Groups in migration** to disable group migrations
+- Click **Save** to ensure the configuration is saved and active on the server
+
+With this setting disabled, groups will not be migrated, and there will be no Principal Migration report or User Report.
+
 ## User Report {#user-report}
 
 During migration users are not migrated, but the user-group relationships on the source system are lost unless they are somehow captured.  The User Report captures some of this information in text format in a User Report. In it, each user is reported (one per line) along with a list of groups it is a member of (but groups not migrated are not put in this list), unless its list of groups is empty, in which case the user does not appear. The groups reported along with each user are those the user is a member of directly or indirectly in the source system; since groups in the source system may be nested while in the target system they are not, this list of groups supports the new flattened group structure in IMS.
