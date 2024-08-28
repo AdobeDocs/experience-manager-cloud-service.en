@@ -4,7 +4,9 @@ description: AEM Forms lets you add in-context help to Adaptive Form fields and 
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 feature: Adaptive Forms, Foundation Components
-role: author, developer, admin
+role: User
+hide: yes
+hidefromtoc: yes
 ---
 
 # Authoring in-context help for form fields{#authoring-in-context-help-for-form-fields}

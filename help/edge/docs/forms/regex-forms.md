@@ -2,6 +2,7 @@
 title: AEM Forms Edge Delivery Servicescommonly used regex expressions for validating form fields
 description: AEM Forms Edge Delivery Servicescommonly used regex expressions for validating form fields
 feature: Edge Delivery Services
+role: User
 hide: yes
 hidefromtoc: yes
 ---

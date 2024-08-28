@@ -4,7 +4,7 @@ description: Change the message displayed on Page Zero of an XFA PDF for non-Ado
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 feature: Adaptive Forms
-role: user
+role: User
 ---
 
 # Changing Page Zero content in Designer {#changing-page-zero-content-in-designer}

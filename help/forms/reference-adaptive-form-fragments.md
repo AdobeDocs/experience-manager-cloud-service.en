@@ -7,6 +7,8 @@ topic-tags: author
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 feature: Adaptive Forms
 role: User
+hide: yes
+hidefromtoc: yes
 ---
 
 # Reference Adaptive Form Fragments {#reference-adaptive-form-fragments}

@@ -4,7 +4,10 @@ description: Schedule publishing and unpublishing of your Adaptive Forms. Publis
 content-type: reference
 topic-tags: publish
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
-
+feature: Adaptive Forms
+role: User
+hide: yes
+hidefromtoc: yes
 ---
 
 # Publishing and unpublishing forms and documents{#publishing-and-unpublishing-forms-and-documents}

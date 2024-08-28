@@ -7,6 +7,8 @@ topic-tags: author
 discoiquuid: 71d1aa10-d191-49bc-a50f-1098324f1cfe
 feature: Adaptive Forms
 role: User, Developer
+hide: yes
+hidefromtoc: yes
 ---
 
 # Associating submission reviewers with a form {#associating-submission-reviewers-with-a-form}
