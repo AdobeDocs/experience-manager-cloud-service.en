@@ -781,7 +781,6 @@ user-guide-title: AEM as a Cloud Service
         + [Reuse metadata properties of an Adaptive Form](/help/forms/reusing-adaptive-forms.md)
       + Improve accessibility of an Adaptive Form {#accessible-adaptive-forms}
         + [Create an accessible Adaptive Form](/help/forms/creating-accessible-adaptive-forms.md)
-      + [Configure Forms Portal](/help/forms/configure-forms-portal.md)
       + [Create and manage reviews](/help/forms/create-reviews-forms.md)
       + [Associate submission reviewers with a form](/help/forms/adding-reviewers-form.md)
       + [Create and manage reviews for an Adaptive Form](/help/forms/review-adaptiveforms-in-sites-page.md)
