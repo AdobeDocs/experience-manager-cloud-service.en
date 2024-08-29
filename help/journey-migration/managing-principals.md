@@ -1,8 +1,8 @@
 ---
 title: Managing Principals
 description: Managing Principals for Migration, using Admin Console
+exl-id: a75598d0-8f59-466b-984e-dfe527388c2a
 ---
-
 # Managing Principals {#managing-principals}
 
 >[!CONTEXTUALHELP]
