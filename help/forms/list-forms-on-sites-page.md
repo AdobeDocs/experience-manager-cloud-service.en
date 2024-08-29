@@ -11,7 +11,7 @@ Imagine a user visiting the bank’s website in search of an account opening for
 
 The **Search & Lister** component of the Forms Portal allows you to display and list forms on a Sites page. Users can configure and present a comprehensive list of forms based on specific criteria to meet organizational requirements. Anonymous users can visit the Sites page to view and browse the available forms. The listed forms can be sorted in ascending or descending order using the **Sort By** drop-down option located in the upper-right corner of the screen.
 
-![Search and Lister icon](assets/search-and-lister-component.png){width="200" align="center"}
+![Search and Lister icon](assets/search-and-lister-component.png){width="250" align="center"}
 
 ## Pre-requisite
 
@@ -52,11 +52,11 @@ To add the **Search & Lister** portal component to your Sites page, perform the 
 
 1. Open the AEM Sites page in an **Edit** mode. 
 1. Go to the **[!UICONTROL Page Information]** > **[!UICONTROL Edit Template]**
-    ![Edit template policy](/help/forms/assets/save-form-as-draft-edit-template.png){width="200" align="center"}
+    ![Edit template policy](/help/forms/assets/save-form-as-draft-edit-template.png){width="250" align="center"}
 
 1. Click the **[!UICONTROL Policy]** and select the **[!UICONTROL Search & Lister]**  checkbox under the **[AEM Archetype Project Name] - Forms and Communications Portal**.
 
-    ![Policy Selection](/help/forms/assets/search-lister-enable-policy.png){width="200" align="center"}
+    ![Policy Selection](/help/forms/assets/search-lister-enable-policy.png){width="250" align="center"}
 
 1. Click **[!UICONTROL Done]**.
 1. Now, re-open the AEM Sites page in the authoring mode.
@@ -72,7 +72,7 @@ To add the **Search & Lister** portal component to your Sites page, perform the 
 
 1. Browse the available components in the dialog box and select the desired component from the list. For example, select the **Search and Lister** component from the list to add the **Search & Lister** Forms Portal component. 
 
-    ![Search & Lister component](/help/forms/assets/add-search-lister.png){width="200" align="center"}
+    ![Search & Lister component](/help/forms/assets/add-search-lister.png){width="250" align="center"}
 
 Now, configure the properties of the **Search and Lister** component.
 
@@ -82,7 +82,7 @@ You can easily customize **Search and Lister** component properties using the Co
 
 ### Display tab
 
-![Display Tab](/help/forms/assets/search-and-lister-display-tab.png){width="200" align="center"}
+![Display Tab](/help/forms/assets/search-and-lister-display-tab.png){width="250" align="center"}
 
 1. In **[!UICONTROL Title]**, specify the title for the Search & Lister component. An indicative title enables the users to perform a quick search across the list of forms.
 1. From the **[!UICONTROL Layout]** list, select the layout to represent the forms in the card or list format.
@@ -91,22 +91,22 @@ You can easily customize **Search and Lister** component properties using the Co
 
 ### Asset tab
 
-![Asset tab](/help/forms/assets/search-and-lister-asset-tab.png){width="200" align="center"}
+![Asset tab](/help/forms/assets/search-and-lister-asset-tab.png){width="250" align="center"}
 
 1. In the **[!UICONTROL Asset Folder]** tab, specify the location from where the forms are pulled and listed on the page. 
 1. Using the **[!UICONTROL Add another location]**, you can configure multiple folder locations.
 
 ### Results tab
 
-![Display Tab](/help/forms/assets/search-and-lister-result-tab.png){width="200" align="center"}
+![Display Tab](/help/forms/assets/search-and-lister-result-tab.png){width="250" align="center"}
 
 In the **[!UICONTROL Results]** tab, configure the maximum number of forms to display per page. The default is eight forms per page.
 
 ## View forms on the Sites page using the Search & Lister component
 
-To view the list of forms, use the **Search & Lister** Forms Portal component. Preview the AEM Sites page to see the list of forms from the Assets folder displayed on the screen. You can also search for a specific form using the search bar.
+To view the list of forms, use the **Search & Lister** Forms Portal component. Preview the AEM Sites page to see the list of forms from the **Assets** folder displayed on the screen. You can also search for a specific form using the search bar.
 
-![Search and Lister icon](assets/search-and-lister-component.png){width="200" align="center"}
+![Search and Lister icon](assets/search-and-lister-component.png){width="250" align="center"}
 
 <!--
 ## Configure Azure Storage for Adaptive Forms {#configure-azure-storage-adaptive-forms}
