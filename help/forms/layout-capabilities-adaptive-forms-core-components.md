@@ -38,7 +38,7 @@ Adaptive Form based on Core Components supports the following types of layouts:
 
 Panel layout is useful for organizing related fields in a way that makes it easier to navigate and find corresponding content. The panel layout arranges form components within distinct, sections or panels in an Adaptive Form. 
 
-![Panel Layout](/help/forms/assets/panel-layout.png){width="250" align="center"}
+![Panel Layout](/help/forms/assets/panel-layout.png)
 
 Panel Layout
 
@@ -48,7 +48,7 @@ You can use the [panel component](https://experienceleague.adobe.com/en/docs/exp
 
 The wizard layout helps simplifying a complex form by breaking it into distinct steps. Each step represents a different part of the process, and users navigate through the steps sequentially, often with **Next** and **Previous** buttons. You can use the wizard layout to create a form that involves multiple sections or steps.
 
-![Wizard Layout](/help/forms/assets/wizard-layout-compare.gif){width="250" align="center"}
+![Wizard Layout](/help/forms/assets/wizard-layout-compare.gif)
 
 Wizard Layout
 
@@ -58,7 +58,7 @@ You can use the [wizard component](https://experienceleague.adobe.com/en/docs/ex
 
 The vertical tabs layout is also known as tabs on the left layout. The vertical tabs layout organizes panels or sections along the left side of a form. It is a common layout for forms where panels/sections is stacked vertically for easy reading and navigation.
 
-![Vertical Layout](/help/forms/assets/vertical-tab.gif){width="250" align="center"}
+![Vertical Layout](/help/forms/assets/vertical-tab.gif)
 
 Vertical Tabs Layout
 
@@ -70,7 +70,7 @@ You can use the [vertical tabs component](https://experienceleague.adobe.com/en/
 The horizontal tabs layout is also known as Tabs on the top layout. The horizontal tabs layout arranges panels or sections side-by-side in a row. This layout presents the form sections in a linear manner across the width of the form or panel.
 
 
-![Horizontal Layout](/help/forms/assets/horizontal-layout.gif){width="250" align="center"}
+![Horizontal Layout](/help/forms/assets/horizontal-layout.gif)
 
 Horizontal Tabs Layout
 
@@ -81,7 +81,7 @@ You can use the [horizontal tabs component](https://experienceleague.adobe.com/e
 
 The accordion layout displays content in collapsible sections or panels in an Adaptive Form. When a section is expanded, it displays the content within, while other sections remain collapsed. This layout is ideal for displaying large amounts of information in a compact form.
 
-![Accordion Layout](/help/forms/assets/accordion-layout-compare.gif){width="250" align="center"}
+![Accordion Layout](/help/forms/assets/accordion-layout-compare.gif)
 
 Accordion Layout
 
@@ -126,16 +126,16 @@ Let's explore the step-by-step process for inserting a layout and adding compone
 1. In the upper-left corner, select **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
 1. Open an existing Adaptive Form in an edit mode if it has already been created. 
 
-    ![Open an Adaptive Form](/help/forms/assets/insert-layout.png){width="250" align="center"}
+    ![Open an Adaptive Form](/help/forms/assets/insert-layout.png)
 
     Alternatively, you can also [create new Adaptive Form](/help/forms/creating-adaptive-form-core-components.md).
 
 1. Locate the section within the form editor that allows you to add a layout. 
 
-    ![Form editor](/help/forms/assets/form-editor.png){width="200" align="center"}
+    ![Form editor](/help/forms/assets/form-editor.png)
 1. Click the **Add** icon. The icon is a plus sign (+) that signifies the option to add new components.
 
-    ![Insert layout](/help/forms/assets/insert-layout-add-icon.png){width="200" align="center"}
+    ![Insert layout](/help/forms/assets/insert-layout-add-icon.png)
     
     Clicking the **Add** icon displays an **Insert New Component** dialog box that displays various components for insertion.
 
@@ -145,20 +145,20 @@ Let's explore the step-by-step process for inserting a layout and adding compone
 
 1. Browse the available components in the dialog box and select the desrired layout from the list. In our case, we select the Horizontal Tabs component to insert the horizontal tabs layout.
 
-    ![Select horizontal tabs](/help/forms/assets/select-horizontal-tab.png){width="200" align="center"}
+    ![Select horizontal tabs](/help/forms/assets/select-horizontal-tab.png)
 
     When you add the horizontal tabs component to your form, it initially consists of two empty panels, named Item1 and Item2, by default. You need to manually add form components to these panels. 
 
-    ![Horizontal tabs](/help/forms/assets/insert-tabs-on-top.png){width="200" align="center"}
+    ![Horizontal tabs](/help/forms/assets/insert-tabs-on-top.png)
 
 1. Open the properties of the horizontal tabs component and specify the name for the component.
  For example, in this case, we add the name of the horizontal tabs component as IT Request Form.
 
-    ![Add name for Horizontal tabs](/help/forms/assets/change-name-of-horizontal-tabs.png){width="200" align="center"}
+    ![Add name for Horizontal tabs](/help/forms/assets/change-name-of-horizontal-tabs.png)
 
 1. Click **Done**.
 
-    ![Horizontal tabs](/help/forms/assets/tabs-on-top-rename-component.png){width="200" align="center"}
+    ![Horizontal tabs](/help/forms/assets/tabs-on-top-rename-component.png)
 
 Once the layout component is added in the form, modify the number of panels according to the requirements.
 
@@ -168,45 +168,45 @@ Add new panel to the horizontal tabs component:
 
 1. Open the horizontal tabs component properties and click the **Items** tab.
 
-    ![Item tab for Horizontal tabs](/help/forms/assets/tabs-on-top-items-tab.png){width="200" align="center"}
+    ![Item tab for Horizontal tabs](/help/forms/assets/tabs-on-top-items-tab.png)
 
-2. Click the **Add** icon to add new panel.
+1. Click the **Add** icon to add new panel.
 
-    ![Add new panel](/help/forms/assets/tabs-on-top-add-panel.png){width="200" align="center"}
+    ![Add new panel](/help/forms/assets/tabs-on-top-add-panel.png)
 
     When you click the **Add** icon, the **Insert New Component** dialog box appears.
 
-3. Select the panel component.
+1. Select the panel component.
 
-     ![Add new panel](/help/forms/assets/tabs-on-top-new-panel.png){width="200" align="center"}
+     ![Add new panel](/help/forms/assets/tabs-on-top-new-panel.png)
 
     When you select the panel component, the new panel is added in the horizontal layout.
     
-    ![Add new panel](/help/forms/assets/tabs-on-top-add-new-panel.png){width="200" align="center"}
+    ![Add new panel](/help/forms/assets/tabs-on-top-add-new-panel.png)
 
     Provide a name for the new panel; otherwise, you cannot save the properties of the horizontal tabs component.
 
-4. Specify the names of the panels as shown in the figure below:
+1. Specify the names of the panels as shown in the figure below:
 
-    ![Panel names](/help/forms/assets/tabs-on-tops-panel-name.png){width="200" align="center"}
+    ![Panel names](/help/forms/assets/tabs-on-tops-panel-name.png)
 
-5. Click **Done**.
+1. Click **Done**.
 
     Once you click **Done**, the three panels appear side-by-side in a row. The panel names are displayed as headings for each panel, and you can add form components to each panel.
 
-    ![Panel names](/help/forms/assets/tabs-on-top-initial-view.png){width="200" align="center"}
+    ![Panel names](/help/forms/assets/tabs-on-top-initial-view.png)
 
     You can configure the properties of panel component. For example, the IT Request Form does not include panel titles, here are the steps to configure properties of panel component.
 
-6. Open the properties of the first panel.
+1. Open the properties of the first panel.
 
-    ![Panel 1 Properties](/help/forms/assets/tabs-on-tops-panel1-properties.png){width="200" align="center"}
+    ![Panel 1 Properties](/help/forms/assets/tabs-on-tops-panel1-properties.png)
 
-7. Select the **Hide title** checkbox from the **Basic** tab.
+1. Select the **Hide title** checkbox from the **Basic** tab.
     
-     ![Hide title](/help/forms/assets/tabs-on-top-hide-panel.png){width="200" align="center"}
+     ![Hide title](/help/forms/assets/tabs-on-top-hide-panel.png)
 
-8. Click **Done**.
+1. Click **Done**.
 
 Similarly, you can hide titles for the other two panels also. Once done, you can proceed with adding form components to each panel.
 
@@ -218,45 +218,45 @@ Similarly, you can hide titles for the other two panels also. Once done, you can
 
 1. Locate the section within the panel that allows you to add components. 
 1. Click the **Add** icon. The icon is a plus sign (+) that signifies the option to add new components.
-  ![Insert layout](/help/forms/assets/tabs-on-top-add-component.png){width="200" align="center"}
+  ![Insert layout](/help/forms/assets/tabs-on-top-add-component.png)
 
     Clicking the **Add** icon displays an **Insert New Component** dialog box that displays various components for insertion.
 
-    ![Insert New Component Dialog Box](/help/forms/assets/insert-new-component.png){width="200" align="center"}
+    ![Insert New Component Dialog Box](/help/forms/assets/insert-new-component.png)
 
 1. Browse the available components in the dialog box that appears and select the desired component. In our case, select the Text Box component.
 1. Open the properties of the added component and specify its name. Let edit the properties of the added Text Box component and specify its name. 
-    ![Insert layout](/help/forms/assets/tabs-on-top-textbox-component.png){width="200" align="center"}
+    ![Insert layout](/help/forms/assets/tabs-on-top-textbox-component.png)
 1. Similarly, add two more Text Box components and name added the components as Email ID and Department.   
-    ![First Panel](/help/forms/assets/tabs-on-tops-first-panel.png){width="200" align="center"}
+    ![First Panel](/help/forms/assets/tabs-on-tops-first-panel.png)
 
     Now that the components in the first panel have been added, you can proceed with adding the components to the second panel. 
 
 1. To switch the panel, click **Select Panel** from the toolbar. 
 
-    ![Switch Panel](/help/forms/assets/tabs-on-top-select-panel.png){width="200" align="center"}
+    ![Switch Panel](/help/forms/assets/tabs-on-top-select-panel.png)
 
     When you click the **Select Panel**, the list of the added panels in the Horizontal Tabs component appears.
 
-    ![Switch Panel](/help/forms/assets/tabs-on-tops-panel2.png){width="200" align="center"}
+    ![Switch Panel](/help/forms/assets/tabs-on-tops-panel2.png)
 
 1. Select **2 Panel** from the panel list and the view changes from the first panel to the second panel.
 
-    ![Second Panel](/help/forms/assets/tabs-on-top-panel2-component.png){width="200" align="center"}
+    ![Second Panel](/help/forms/assets/tabs-on-top-panel2-component.png)
 
 1. Repeat the steps outlined from Step 2 to Step 4 for adding the desired components in panel 2 as shown in the below figure:   
 
-     ![Second Panel components](/help/forms/assets/panel-2-components.png){width="200" align="center"}
+     ![Second Panel components](/help/forms/assets/panel-2-components.png)
 
 1. Switch to the **3 Panel** by following the steps outlined in Step 6 and Step 7.
 
 1. Repeat the steps outlined from Step 2 to Step 4 for adding the desired component in panel 3:
 
-    ![Third Panel components](/help/forms/assets/panel-3-component.png){width="200" align="center"}
+    ![Third Panel components](/help/forms/assets/panel-3-component.png)
 
 1. Click **[!UICONTROL Preview]** in the top-right corner of your authoring environment.
 
-    ![Horizontal Layout](/help/forms/assets/horizontal-layout.gif){width="250" align="center"}
+    ![Horizontal Layout](/help/forms/assets/horizontal-layout.gif)
 
 You can also [drag-and-drop the components](#extra-bytes) to add the form components to each panel. 
 
@@ -313,7 +313,7 @@ You can also [drag-and-drop the components](#extra-bytes) to add the form compon
 
 You can also delete form component from the panel using the ![Delete icon](/help/forms/assets/Smock_Delete_18_N.svg) icon. 
 
-![Deleting a component](/help/forms/assets/delete-component.png){width="200" align="center"}
+![Deleting a component](/help/forms/assets/delete-component.png)
 
 You can also add the required validations for the components as required. 
 
@@ -327,15 +327,15 @@ Perform the following steps to replace the existing layout of a form:
 
 1. Click the Replace icon from the toolbar of the layout component and the **[!UICONTROL Replace Component]** dialog box appears.
 
-    ![Replace Layout](/help/forms/assets/replace-layout.png){width="200" align="center"}
+    ![Replace Layout](/help/forms/assets/replace-layout.png)
 
 1. Select the desired layout from the **[!UICONTROL Replace Component]** dialog box.
      
-   ![Replace Component dialog box](/help/forms/assets/replace-component.png){width="200" align="center"}
+   ![Replace Component dialog box](/help/forms/assets/replace-component.png)
 
     After selecting the layout, the arrangement of the components within the layout changes accordingly. For example, select the vertical tabs component from the **[!UICONTROL Replace Component]** dialog box; the arrangement of the panel changes to tabs on left:
 
-    ![Vertical Layout](/help/forms/assets/vertical-tab.gif){width="250" align="center"}
+    ![Vertical Layout](/help/forms/assets/vertical-tab.gif)
 
 ## Extra Bytes
 
@@ -344,11 +344,11 @@ To drag and drop components into the form editor, perform the following steps:
 1. Locate the section that allows you to add components. 
 1. Navigate to the left panel within your authoring environment and click **Components**.
 
-    ![Component Panel](/help/forms/assets/add-new-component.png){width="200" align="center"}
+    ![Component Panel](/help/forms/assets/add-new-component.png)
 
     When you click the **Components** option, the list of the available components appears.   
 
-    ![Component Panel](/help/forms/assets/add-new-component2.png){width="200" align="center"}
+    ![Component Panel](/help/forms/assets/add-new-component2.png)
 
 1. Browse the available components and select the desired component.
 

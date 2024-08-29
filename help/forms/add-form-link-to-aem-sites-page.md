@@ -9,7 +9,7 @@ role: User, Developer, Admin
 
 In the bank website scenario, the **Link** Forms Portal component enhances navigation by guiding users to specific forms across various sections of the site. It provides direct references to forms such as loan applications, account opening forms, or feedback surveys, strategically placed throughout the website. The **Link** component inserts links that direct users to specific Adaptive Forms within the Sites page. For example, on the bank's website, anonymous users can access a general inquiry form, while logged-in users can directly access more secure forms, such as loan applications or transaction authorization forms.
 
-![Link icon](/help/forms/assets/link-forms.png){width="250" align="center"}
+![Link icon](/help/forms/assets/link-forms.png)
 
 ## Pre-requisite
 
@@ -23,11 +23,11 @@ To add the **Link** portal component to your Sites page, perform the following s
 
 1. Open the AEM Sites page in an **Edit** mode. 
 1. Go to the **[!UICONTROL Page Information]** > **[!UICONTROL Edit Template]**
-    ![Edit template policy](/help/forms/assets/save-form-as-draft-edit-template.png){width="250" align="center"}
+    ![Edit template policy](/help/forms/assets/save-form-as-draft-edit-template.png)
 
 1. Click the **[!UICONTROL Policy]** and select the **[!UICONTROL Link]**  checkbox under the **[AEM Archetype Project Name] - Forms and Communications Portal**.
 
-    ![Policy Selection](/help/forms/assets/add-link.png){width="250" align="center"}
+    ![Policy Selection](/help/forms/assets/add-link.png)
 
 1. Click **[!UICONTROL Done]**.
 1. Now, re-open the AEM Sites page in the authoring mode.
@@ -43,7 +43,7 @@ To add the **Link** portal component to your Sites page, perform the following s
 
 1. Browse the available components in the dialog box and select the desired component from the list. For example, select the **Link** component from the list to add the **Link** Forms Portal component. 
 
-    ![Link component](/help/forms/assets/add-link-in-sites.png){width="250" align="center"}
+    ![Link component](/help/forms/assets/add-link-in-sites.png)
 
 Now, configure the properties of the **Link** component.
 
@@ -53,19 +53,19 @@ You can easily customize **Link** component properties using the Configure Dialo
 
 ### Display Tab
 
-![Display Tab](/help/forms/assets/link-asset-tab.png){width="250" align="center"}
+![Display Tab](/help/forms/assets/link-asset-tab.png)
 
 In the **[!UICONTROL Display]** tab, provide the link caption and tooltip to ease identification of the forms represented by the link.
 
 ### Asset Info tab
 
-![Assets Info Tab](/help/forms/assets/link-asset-info.png){width="250" align="center"}
+![Assets Info Tab](/help/forms/assets/link-asset-info.png)
 
 In the **[!UICONTROL Asset Info]** tab, specify the repository path where the asset is stored. 
 
 ### Query Params tab
 
-![Query Params Tab](/help/forms/assets/link-query-tab.png){width="250" align="center"}
+![Query Params Tab](/help/forms/assets/link-query-tab.png)
 
 In the **[!UICONTROL Query Params]** tab, specify the additional parameters in the key-value pair format. When the link is clicked, these additional parameters and passed along with the form.
 
@@ -73,7 +73,7 @@ In the **[!UICONTROL Query Params]** tab, specify the additional parameters in t
 
 Preview the Sites page to view the link to an Adaptive Form, which is specified in the **Assets Info** properties tab of the **Link** component. Clicking the link displays the form on the screen for users, who can then access it based on the permissions. 
 
-![Query Params Tab](/help/forms/assets/link-forms.png){width="250" align="center"}
+![Query Params Tab](/help/forms/assets/link-forms.png)
 
 ## Related articles
 
