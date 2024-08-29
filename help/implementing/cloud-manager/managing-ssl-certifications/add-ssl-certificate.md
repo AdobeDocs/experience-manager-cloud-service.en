@@ -1,5 +1,5 @@
 ---
-title: Add an SSL Certificate or DV Certificate
+title: Add an SSL Certificate
 description: Learn how to add your own SSL certificate or Domain Validation certificate using Cloud Manager's self-service tools.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
@@ -7,12 +7,12 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 ---
 
-# Add an SSL certificate or a DV certificate
+# About an SSL certificate or a DV certificate
 
 Learn how to add your own SSL certificate or DV (Domain Validation) certificate using Cloud Manager's self-service tools.
 
 See [Add an SSL certificate](#adding-an-ssl-certificate)
-See [Add a DV certificate]()
+
 
 
 ## Add an SSL certificate {#adding-an-ssl-certificate}
