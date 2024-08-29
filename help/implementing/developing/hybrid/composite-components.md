@@ -152,7 +152,7 @@ You can then add it to your SPA and retrieve its content.
     itemPath='root/responsivegrid' />
    ```
 
-1. Add the created `wknd-spa/components/imagecard` component to the allowed components for the container component [in the page template](/help/sites-cloud/authoring/sites-console/templates.md).
+1. Add the created `wknd-spa/components/imagecard` component to the allowed components for the container component [in the page template](/help/sites-cloud/authoring/page-editor/templates.md).
 
 Now the `imagecard` component can be directly added to the container in the AEM editor.
 

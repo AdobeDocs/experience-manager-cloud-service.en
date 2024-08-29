@@ -4,8 +4,8 @@ description: Learn the basics of accessing and navigating the Universal Editor.
 solution: Experience Manager Sites
 feature: Authoring
 role: User
+exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
 ---
-
 # Accessing and Navigating the Universal Editor {#navigating}
 
 Learn the basics of accessing and navigating the Universal Editor.
@@ -42,7 +42,7 @@ Once the app is instrumented to work with the Universal Editor, the Universal Ed
 
 >[!NOTE]
 >
->When editing a page in the [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) the console will open the editor appropriate to the page's [template:](/help/sites-cloud/authoring/sites-console/templates.md) either the Universal Editor described in this document, or the [page editor.](/help/sites-cloud/authoring/page-editor/introduction.md)
+>When editing a page in the [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) the console will open the editor appropriate to the page's [template:](/help/sites-cloud/authoring/page-editor/templates.md) either the Universal Editor described in this document, or the [page editor.](/help/sites-cloud/authoring/page-editor/introduction.md)
 
 ### Accessing Directly {#accessing-directly}
 
