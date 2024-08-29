@@ -13,15 +13,21 @@ role: Admin
 >title="CDN in AEM as a Cloud Service"
 >abstract="AEM as Cloud Service is shipped with a built-in CDN. Its main purpose is to reduce latency by delivering cacheable content from the CDN nodes at the edge, near the browser. It is fully managed and configured for optimal performance of AEM applications."
 
-AEM as Cloud Service is shipped with a built-in CDN. Its main purpose is to reduce latency by delivering cacheable content from the CDN nodes at the edge, near the browser. It is fully managed and configured for optimal performance of AEM applications.
 
-The AEM-managed CDN satisfies most customer's performance and security requirements. For the publish tier, customers can optionally point to it from their own CDN, which they must manage. This scenario is allowed on a case-by-case basis, based on meeting certain pre-requisites including, but not limited to, the customer having a legacy integration with their CDN vendor that is difficult to abandon.
+AEM as a Cloud Service comes with an integrated CDN, designed to reduce latency by delivering cacheable content from edge nodes close to the user's browser. This fully managed CDN is optimized for AEM application performance.
+
+The AEM-managed CDN meets most customers' performance and security needs. For the publish tier, customers can choose to route traffic through their own CDN, which they must manage. This option is available on a case-by-case basis, particularly when customers have existing legacy integrations with a CDN provider that are hard to replace.
+
+Customers looking to publish to the Edge Delivery Services tier can take advantage of Adobe's managed CDN. See [Adobe-managed CDN](#aem-managed-cdn). <!-- CQDOC-21758, 5b -->
+
 
 <!-- ERROR: NEITHER URL IS FOUND (HTTP ERROR 404) Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) and [Cloud 5 AEM CDN Part 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) for additional information about CDN in AEM as a Cloud Service. -->
 
-## AEM-managed CDN  {#aem-managed-cdn}
+## Adobe-managed CDN {#aem-managed-cdn}
 
-Follow the sections below to use Cloud Manager self-service UI to prepare for content delivery by using AEM's out-of-the-box CDN:
+<!-- CQDOC-21758, 5a -->
+
+To use Cloud Manager self-service UI to prepare for content delivery using AEM's out-of-the-box CD, see the following:
 
 1. [Managing SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [Managing Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
@@ -34,7 +40,7 @@ See [Managing IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/in
 
 >[!CAUTION]
 >
->Only requests from the allowed IPs are served by AEM's managed CDN. If you point your own CDN to the AEM-managed CDN, then make sure the IPs of your CDN are included in the allowlist.
+>AEM's managed CDN serves requests only from allowed IPs. If you point your own CDN to the AEM-managed CDN, then make sure the IPs of your CDN are included in the IP Allow List.
 
 ### Configure traffic at the CDN {#cdn-configuring-cloud}
 
@@ -45,15 +51,15 @@ You can configure traffic at the CDN in various ways, including:
 * applying 301/302 [client-side redirects](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)
 * declaring [origin selectors](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) to reverse proxy a request to non-AEM backends
 
-Learn how to configure these features by using YAML files in git and deploying them by using the Cloud Manager [Config Pipeline](/help/implementing/dispatcher/cdn-configuring-traffic.md).
+Use YAML files in Git to configure these features. And, use the Cloud Manager [Config Pipeline](/help/implementing/dispatcher/cdn-configuring-traffic.md) to deploy them.
 
 ### Configure CDN error pages {#cdn-error-pages}
 
-A CDN error page can be configured to override the default, unbranded page that is served to the browser in the rare event that AEM cannot be reached. For more details, see [Configuring CDN error pages](/help/implementing/dispatcher/cdn-error-pages.md).
+You can configure a CDN error page to replace the default, unbranded page. This custom page is displayed in the rare event that AEM is unavailable. For more details, see [Configuring CDN error pages](/help/implementing/dispatcher/cdn-error-pages.md).
 
 ### Purge cached content at the CDN {#purge-cdn}
 
-Setting TTL using the HTTP Cache-Control header is an effective approach to balance content delivery performance and content freshness. However, in scenarios where it is critical to immediately serve updated content, it may be beneficial to directly purge the CDN cache.
+Setting TTL using the HTTP Cache-Control header is an effective approach to balance content delivery performance and content freshness. However, in scenarios where it is critical to serve updated content immediately, it may be beneficial to purge the CDN cache directly.
 
 Read about [configuring a purge API token](/help/implementing/dispatcher/cdn-credentials-authentication.md/#purge-API-token) and [purging cached CDN content](/help/implementing/dispatcher/cdn-cache-purge.md).
 
@@ -61,20 +67,20 @@ Read about [configuring a purge API token](/help/implementing/dispatcher/cdn-cre
 
 For light authentication use cases including business stakeholders reviewing content, protect content by displaying a basic auth dialog requiring a username and password. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md) and join the early adopter program.
 
-## Customer CDN points to AEM-managed CDN {#point-to-point-CDN}
+## Customer-managed CDN points to AEM-managed CDN {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
 >title="Customer CDN points to AEM Managed CDN"
 >abstract="AEM as Cloud Service offers an option for customers to use its existing CDN. For the publish tier, customers can optionally point to it from their own CDN, which they must manage. This scenario is allowed on a case-by-case basis, based on meeting certain pre-requisites including, but not limited to, the customer having a legacy integration with their CDN vendor that is difficult to abandon."
 
-If a customer must use its existing CDN, they may manage it and point it to the AEM-managed CDN, providing the following are satisfied:
+If a customer must use its existing CDN, they can manage it and point it to the AEM-managed CDN, providing the following are satisfied:
 
-* Customer must have an existing CDN that would be onerous to replace.
-* Customer must manage it.
-* Customer must be able to configure the CDN to work with AEM as a Cloud Service - see the configuration instructions presented below.
-* Customer must have engineering CDN experts that are on call in case-related issues arise.
-* Customer must perform and successfully pass a load test before going to production.
+* The customer must have an existing CDN that would be onerous to replace.
+* The customer must manage it.
+* The customer must be able to configure the CDN to work with AEM as a Cloud Service - see the configuration instructions presented below.
+* The customer must have engineering CDN experts that are on call in case-related issues arise.
+* The customer must perform and successfully pass a load test before going to production.
 
 Configuration instructions:
 
@@ -109,8 +115,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->When using your own CDN, you do not need to install domains and certificates in Cloud Manager. The routing in the Adobe CDN is done by using the default domain `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com` which should be sent in the request `Host` header. Overwriting the request `Host` header with a custom domain name can cause the request to be incorrectly routed by the Adobe CDN.
-
+>When using your own CDN, you do not need to install domains and certificates in Cloud Manager. The routing in the Adobe CDN is done by using the default domain `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`, which should be sent in the request `Host` header. Overwriting the request `Host` header with a custom domain name may route the request incorrectly through the Adobe CDN.
 
 >[!NOTE]
 >
@@ -145,7 +150,7 @@ Presented below are several configuration examples from several leading CDN vend
 
 ### Common errors {#common-errors}
 
-The sample configurations provided show the base settings needed, but a customer configuration may have other impacting rules that remove, modify, or re-arrange the headers needed for AEM as a Cloud Service to serve the traffic. Below are common errors that occur when configuring a customer managed CDN to point to AEM as a Cloud Service.
+The sample configurations provided show the base settings needed. However, a customer configuration may have other impacting rules that remove, edit, or re-arrange the headers needed for AEM as a Cloud Service to serve the traffic. Below are common errors that occur when configuring a customer managed CDN to point to AEM as a Cloud Service.
 
 **Redirection to the publish service endpoint**
 
@@ -172,7 +177,7 @@ The AEM-managed CDN adds headers to each request with:
 
 >[!NOTE]
 >
->If there is a customer-managed CDN, these headers reflect the location of the customers CDN proxy server rather than the actual client. Therefore, for customer-managed CDN, geolocation headers should be managed by the customers CDN.  
+>If there is a customer-managed CDN, these headers reflect the location of the customer's CDN proxy server rather than the actual client. Customers should manage geolocation headers through their own CDN when using a customer-managed CDN.  
 
 The values for the country codes are the Alpha-2 codes described under [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1).
 
@@ -186,4 +191,4 @@ The values for the continent codes are:
 * OC Oceania
 * SA South America
 
-This information may be useful for use cases such as redirecting to a different url based on the origin (country) of the request. Use the Vary header for caching responses that depend on geo information. For example, redirects to a specific country landing page should always contain `Vary: x-aem-client-country`. If needed, you can use `Cache-Control: private` to prevent caching. See also [Caching](/help/implementing/dispatcher/caching.md#html-text).
+This information is useful for redirecting to a different URL based on the request's origin country. Use the Vary header for caching responses that depend on geo information. For example, redirects to a specific country landing page should always contain `Vary: x-aem-client-country`. If needed, you can use `Cache-Control: private` to prevent caching. See also [Caching](/help/implementing/dispatcher/caching.md#html-text).
