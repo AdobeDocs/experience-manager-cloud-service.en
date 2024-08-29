@@ -49,14 +49,12 @@ To bulk approve assets within a folder in Assets view:
 
 1. Click **[!UICONTROL Save]**.
 
-## How to switch between Assets and Admin views? {#access-assets-view-admin-view}
-
-If you need to bulk approve assets using the Admin view, you can switch between Admin and Assets views in the following ways:
-![My Workspace overview](assets/assets-view.png)
-
 ## Automate approval for newly ingested assets in Admin view {#automate-approval-newly-ingested-assets}
 
 After switching from Assets view to Admin view, you can set up folder settings so that all new assets added to the folder get approved automatically.
+
+You can switch between Admin and Assets views in the following ways:
+![My Workspace overview](assets/assets-view.png)
 
 Follow these steps to automate approval for newly ingested assets in [!DNL Experience Manager Admin view]:
 
