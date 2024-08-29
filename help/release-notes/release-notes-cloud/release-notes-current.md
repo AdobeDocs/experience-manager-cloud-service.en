@@ -71,6 +71,16 @@ Assets as a Cloud Service now uses the latest widget from Firefly that allows yo
 
 Assets as a Cloud Service now supports Photoshop large documents (PSB files) in addition to the existing PSD file support.
 
+### New features in Content Hub {#content-hub-new-features}
+
+* Better handling of long filenames, easy expansion of complete name via tooltip.
+* Improved thumbnails to better fit content aspect ratio and cover larger area of content.
+* Custom thumbnail experience from AEM supported with content hub.
+* Improvements in colour search.
+* Improvements in configurations save experience.
+* Improved info page of collections to reflect creator name.
+
+
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### New features in AEM Forms {#forms-new-prerelease-features}
