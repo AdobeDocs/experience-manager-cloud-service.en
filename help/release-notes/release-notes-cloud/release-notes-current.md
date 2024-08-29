@@ -71,7 +71,7 @@ Assets as a Cloud Service now uses the latest widget from Firefly that allows yo
 
 Assets as a Cloud Service now supports Photoshop large documents (PSB files) in addition to the existing PSD file support.
 
-### New features in Content Hub {#content-hub-new-features}
+### New enhancements in Content Hub {#content-hub-new-enhancements}
 
 * Better handling of long filenames, easy expansion of complete name via tooltip.
 * Improved thumbnails to better fit content aspect ratio and cover larger area of content.
