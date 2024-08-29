@@ -5,7 +5,6 @@ content-type: reference
 topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
-docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
 role: User, Developer
 ---
