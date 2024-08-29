@@ -25,15 +25,15 @@ To add the **Link** portal component to your Sites page, perform the following s
 1. Go to the **[!UICONTROL Page Information]** > **[!UICONTROL Edit Template]**
     ![Edit template policy](/help/forms/assets/save-form-as-draft-edit-template.png)
 
-2. Click the **[!UICONTROL Policy]** and select the **[!UICONTROL Link]**  checkbox under the **[AEM Archetype Project Name] - Forms and Communications Portal**.
+1. Click the **[!UICONTROL Policy]** and select the **[!UICONTROL Link]**  checkbox under the **[AEM Archetype Project Name] - Forms and Communications Portal**.
 
     ![Policy Selection](/help/forms/assets/add-link.png)
 
-3. Click **[!UICONTROL Done]**.
-4. Now, re-open the AEM Sites page in the authoring mode.
-5. Locate the section within the page editor that allows you to add the Forms Portal component. 
+1. Click **[!UICONTROL Done]**.
+1. Now, re-open the AEM Sites page in the authoring mode.
+1. Locate the section within the page editor that allows you to add the Forms Portal component. 
 
-6. Click the **Add** icon. The icon is a plus sign (+) that signifies the option to add new components.
+1. Click the **Add** icon. The icon is a plus sign (+) that signifies the option to add new components.
     
     Clicking the **Add** icon displays an **Insert New Component** dialog box that displays various components for insertion.
 
@@ -41,7 +41,7 @@ To add the **Link** portal component to your Sites page, perform the following s
     >
     > Alternatively, you can also drag and drop the component.
 
-7. Browse the available components in the dialog box and select the desired component from the list. For example, select the **Link** component from the list to add the **Link** Forms Portal component. 
+1. Browse the available components in the dialog box and select the desired component from the list. For example, select the **Link** component from the list to add the **Link** Forms Portal component. 
 
     ![Link component](/help/forms/assets/add-link-in-sites.png)
 
