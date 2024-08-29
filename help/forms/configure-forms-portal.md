@@ -19,12 +19,10 @@ For example, consider a scenario where a bank needs to display various forms on 
 
 The Form Portal components provides the following functionality:
 
-* List forms in customized layouts. Out of the box, List view and Card view layouts are provided. You can create your own custom layouts.
+* List forms in customized layouts. Out of the box, List view and Card view layouts are provided. 
 * Enable searching of forms based on title and description.
 * Create links to forms for easy access and sharing.
 * Lists drafts and submissions created by the user.
-* Enables you to display custom metadata and custom actions while listing them.
-* Use custom CSS to customize the look and feel of the portal.
 
 ## Components of a Forms Portal 
 
