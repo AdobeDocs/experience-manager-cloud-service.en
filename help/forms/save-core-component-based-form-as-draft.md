@@ -77,7 +77,7 @@ You can use out-of-the-box Forms Portal components to list drafts and submission
     ![Policy Selection](/help/forms/assets/save-form-as-draft-enable-policy.png)
 
 1. Click **[!UICONTROL Done]**.
-1. Now, re-open the AEM Sites page in the authoring mode.
+1. Now re-open the AEM Sites page in the authoring mode.
 1. Locate the section within the page editor that allows you to add the Forms Portal component. 
 1. Click the **Add** icon. The icon is a plus sign (+) that signifies the option to add new components.
     
