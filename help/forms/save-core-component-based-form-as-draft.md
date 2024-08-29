@@ -6,7 +6,7 @@ exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer, Admin
 ---
 
-# Save and list forms as drafts on Sites page
+# Save forms as Drafts and list them on Sites page
 
 <span class="preview"> This article contains content about the **Auto Save** feature, a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
 
