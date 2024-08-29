@@ -6,11 +6,13 @@ exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer, Admin
 ---
 
-# Save and list forms as drafts on Sites page
+# Save forms as Drafts and list them on Sites page
+
+<span class="preview"> This article contains content about the **Auto Save** feature, a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
 
 Consider a user who begins filling out a form but needs to pause and return later. AEM offers a `save-as-draft` option, allowing the user to save the form as a draft for future completion. To facilitate this, AEM provides the **Drafts & Submissions** Forsm Portal component out of the box, which displays drafts and submissions on AEM Sites pages. The component lists forms that have been saved as drafts for later completion, as well as those that have been submitted. Only logged-in users can edit their drafts or view their submitted forms. However, if an anonymous user navigates through the list of forms using the **Search & Lister** component and saves a form as a draft, that draft is not listed by the **Drafts & Submissions** component. To view drafts and submissions, users must be logged in at the time of form submission.
 
-![Drafts icon](assets/drafts-component.png){width="250" align="center"}
+![Drafts icon](assets/drafts-component.png)
 
 ## Pre-requisites
 
@@ -26,16 +28,16 @@ The **Drafts & Submissions** component needs a storage setup for saving and list
 
 1. Navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Cloud Services]** &gt; **[!UICONTROL Azure Storage]**.
 
-    ![Azure Storage Card selection](/help/forms/assets/save-form-as-draft-azure-card.png){width="250" align="center"}
+    ![Azure Storage Card selection](/help/forms/assets/save-form-as-draft-azure-card.png)
 
 1. Select a configuration folder to create the configuration and select **[!UICONTROL Create]**.
 
-     ![Select Azure Storage Configuration Folder](/help/forms/assets/save-form-as-draft-select-config-folder.png){width="250" align="center"}
+     ![Select Azure Storage Configuration Folder](/help/forms/assets/save-form-as-draft-select-config-folder.png)
 
 1. Specify a title for the configuration in the **[!UICONTROL Title]** field.
 1. Specify the name of the [!DNL Azure] storage account in the **[!UICONTROL Azure Storage Account]** and **[!UICONTROL Azure Access Key]** fields.
 
-    ![Azure Storage Configuration](/help/forms/assets/save-form-as-draft-azure-storage.png){width="250" align="center"}
+    ![Azure Storage Configuration](/help/forms/assets/save-form-as-draft-azure-storage.png)
 
 1. Click **Save**.
 
@@ -47,12 +49,12 @@ The **Drafts & Submissions** component needs a storage setup for saving and list
 
 1. Navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Unified Storage Connector]**.
 
-    ![Unified connector Storage](/help/forms/assets/save-form-as-draft-unified-connector.png){width="250" align="center"}
+    ![Unified connector Storage](/help/forms/assets/save-form-as-draft-unified-connector.png)
 
 1. In the **[!UICONTROL Forms Portal]** section, select **[!UICONTROL Azure]** from the **[!UICONTROL Storage]** drop-down list.
 1. Specify the configuration path for the Azure storage configuration in the **[!UICONTROL Storage Configuration Path]** field.
 
-    ![Unified connector Storage setting](/help/forms/assets/save-form-as-draft-unified-connector-storage.png){width="250" align="center"}
+    ![Unified connector Storage setting](/help/forms/assets/save-form-as-draft-unified-connector-storage.png)
 
 1. Select **[!UICONTROL Save]**.
 
@@ -68,11 +70,11 @@ You can use out-of-the-box Forms Portal components to list drafts and submission
 
 1. Open the AEM Sites page in an **Edit** mode. 
 1. Go to the **[!UICONTROL Page Information]** > **[!UICONTROL Edit Template]**
-    ![Edit template policy](/help/forms/assets/save-form-as-draft-edit-template.png){width="250" align="center"}
+    ![Edit template policy](/help/forms/assets/save-form-as-draft-edit-template.png)
 
 1. Click the **[!UICONTROL Policy]** and select the **[!UICONTROL Drafts & Submissions]**  checkbox under the **[AEM Archetype Project Name] - Forms and Communications Portal**.
 
-    ![Policy Selection](/help/forms/assets/save-form-as-draft-enable-policy.png){width="250" align="center"}
+    ![Policy Selection](/help/forms/assets/save-form-as-draft-enable-policy.png)
 
 1. Click **[!UICONTROL Done]**.
 1. Now, re-open the AEM Sites page in the authoring mode.
@@ -87,7 +89,7 @@ You can use out-of-the-box Forms Portal components to list drafts and submission
 
 1. Browse the available components in the dialog box and select the desired component from the list. For example, select the **Drafts & Submissions** component from the list to add the **Drafts & Submissions** Forms Portal component. 
 
-    ![Add Draft and Submission Component](/help/forms/assets/save-form-as-draft-add-dns.png){width="250" align="center"}
+    ![Add Draft and Submission Component](/help/forms/assets/save-form-as-draft-add-dns.png)
 
 Now, configure the properties of the **Drafts and Submissions** component according to the requirements.
 
@@ -101,7 +103,7 @@ You can configure the properties of the **Drafts & Submissions**:
    * **Select Type**: To indicate the form listing as draft or submitted forms. If you choose **Draft Forms**, the forms saved as drafts are displayed. Alternatively, selecting **Submitted Forms** shows the forms submitted by logged-in users.
    *  **Layout**: To display list draft forms or submitted forms in the card or list format.
  
-    ![Draft and Submission Component proeprties](/help/forms/assets/save-form-as-draft-dns-properties.png){width="250" align="center"}
+    ![Draft and Submission Component proeprties](/help/forms/assets/save-form-as-draft-dns-properties.png)
 
 ## Configure forms to save as drafts
 
@@ -123,13 +125,11 @@ To save a form as a Draft, create a **Save Form** rule on a form component, such
 1. In the **[!UICONTROL When]** section, select **is clicked** and in the **[!UICONTROL Then]** section, select the **Save Form** option.
 1. Select **[!UICONTROL Done]** to save the rule.
 
-    ![Create rule for button](/help/forms/assets/save-form-as-drfat-create-rule.png){width="250" align="center"}
+    ![Create rule for button](/help/forms/assets/save-form-as-drfat-create-rule.png)
 
 When you preview an Adaptive Form, fill it out, and click the **Save Form** button, the form is saved as a draft.
 
 ### Auto save
-
-<span class="preview"> This article contains content about the **Auto Save** feature, a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
 
 >[!NOTE]
 >
@@ -141,7 +141,7 @@ You can also configure an Adaptive Form to save automatically based on a time-ba
 1. Open the Content browser, and select the **[!UICONTROL Guide Container]** component of your Adaptive Form. 
 1. Click the Guide Container properties ![Guide properties](/help/forms/assets/configure-icon.svg) icon and open the **[!UICONTROL Auto-Save]** tab.
 
-    ![Auto-save](/help/forms/assets/auto-save.png){width="250" align="center"}
+    ![Auto-save](/help/forms/assets/auto-save.png)
 
 1. Select the **[!UICONTROL Enable]** check box to enable auto-save of the form.
 1. Configure **[!UICONTROL Trigger]** as **Time based**, to auto-save the form <!--based on the occurrence of an event or--> after a specific interval of time.
@@ -153,11 +153,11 @@ You can also configure an Adaptive Form to save automatically based on a time-ba
 To view saved drafts or submitted forms, use the **Drafts & Submissions** Forms Portal component. 
 When **[!UICONTROL Select Type]** is selected as **Draft Forms** in the [configure dialog of the Drafts & Submissions component](#configure-properties-of-the-drafts--submissions-component), the forms saved as drafts appear on the Sites page. You can open the drafts by clicking on the ellipsis (...) to complete the form.
 
-![Drafts icon](assets/drafts-component.png){width="250" align="center"}
+![Drafts icon](assets/drafts-component.png)
 
 When **[!UICONTROL Select Type]** is selected as **Submitted Forms** in the [configure dialog of the Drafts & Submissions component](#configure-properties-of-the-drafts--submissions-component), the submitted forms appear. You can view the submitted forms but cannot edit them.
 
-![Submissions icon](assets/submission-listing.png){width="250" align="center"}
+![Submissions icon](assets/submission-listing.png)
 
 You can also discard the forms by clicking on the ellipsis (...) that appears in the bottom-right corner of the form.
 
