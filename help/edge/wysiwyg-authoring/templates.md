@@ -4,8 +4,8 @@ description: Learn how to create and use page templates with the Universal Edito
 solution: Experience Manager Sites
 feature: Authoring
 role: User
+exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
 ---
-
 # Using Page Templates with the Universal Editor {#page-templates}
 
 Learn how to create and use page templates with the Universal Editor.
