@@ -17,12 +17,12 @@ role: Admin, Architect, Developer
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Check Status of an SSL Certificate"
 
 
-Cloud Manager offers self-service tools to install and manage SSL certificates, ensuring site security for your users. The following two use cases are supported:
+Cloud Manager offers self-service tools to install and manage SSL (Secure Socket Layer) certificates, ensuring site security for your users. The following two use cases are supported:
 
 <!-- CQDOC-21758, #1 -->
 
-* **Use case 1:** Cloud Manager uses a platform TLS service to manage customer-owned SSL certificates and private keys from third-party Certificate Authorities, such as *Let's Encrypt*.
-* **Use case 2:** Cloud Manager lets users configure a DV (Domain Validation) certificate from Adobe for quick domain setup. DV certificates are the most basic level of SSL certification and are often used for testing purposes or for securing websites with basic encryption. DV certificates are available to both [production and sandbox programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md). 
+* **Use case 1:** Cloud Manager uses a platform TLS (Transport Layer Security) service to manage customer-owned SSL certificates and private keys from third-party Certificate Authorities, such as *Let's Encrypt*.
+* **Use case 2:** Cloud Manager lets users configure a DV (Domain Validation) certificate that comes from Adobe for quick domain setup. DV certificates are the most basic level of SSL certification and are often used for testing purposes or for securing websites with basic encryption. DV certificates are available to both [production and sandbox programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md). 
 
 
 ## Introduction to certificates {#certificates}
@@ -99,6 +99,6 @@ If you have reached the limit, review your certificates and consider:
 
 A user with the necessary permissions can use Cloud Manager to manage SSL certificates for a program. See the following documents for more details on using these features.
 
-* [Adding an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-* [Viewing, Updating or Replacing an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-* [Deleting an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
+* [Add an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+* [View, update, or replace an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
+* [Delete an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
