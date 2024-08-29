@@ -61,7 +61,8 @@ AEM as a Cloud Service only supports secure `https` sites.
 
 OV and EV certificates offer CA-validated information. Such information helps users assess whether the website owner, email sender, or digital signatory of code or PDF documents can be trusted. DV certificates do not allow such ownership verification.
 
-### Customer managed certificate format {#certificate-format} 
+### Customer managed certificate format {#certificate-format}
+
 <!-- CQDOC-21758, #3 -->
 
 SSL certificate files must be in PEM format to be installed with Cloud Manager. Common file extensions of the PEM format include `.pem,`. `crt`, `.cer`, and `.cert`. 
@@ -99,6 +100,6 @@ If you have reached the limit, review your certificates and consider:
 
 A user with the necessary permissions can use Cloud Manager to manage SSL certificates for a program. See the following documents for more details on using these features.
 
-* [Add an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-* [View, update, or replace an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-* [Delete an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
+* [Add an SSL or DV certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+* [Update an expired, customer managed SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#update-ssl-certificate)
+* [Delete an SSL or DV certificate](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
