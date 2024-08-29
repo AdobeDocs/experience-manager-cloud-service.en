@@ -1,8 +1,8 @@
 ---
 title: Managing Principals after Migration
 description: Learn how to set up users and groups in IMS and AEM
+exl-id: 46c4abfb-7e28-4f18-a6d4-f729dd42ea7b
 ---
-
 # Managing Principals after Migration {#managing-principals-after-migration}
 
 >[!CONTEXTUALHELP]
@@ -50,5 +50,3 @@ Since these groups are not in IMS, the bulk upload tool cannot be used to create
 * When the user logs in for the first time, their IMS user will be created in AEM and they should have access to the new group(s) and thereby the original collection groups.
 
 Note: For bulk assigning of users, the above steps must be used to create the users in IMS; users that already exist in IMS cannot be created again via bulk uploaded.
-
-
