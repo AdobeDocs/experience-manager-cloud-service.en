@@ -685,6 +685,7 @@ user-guide-title: AEM as a Cloud Service
     + Core Components {#authoring-adaptive-forms-core-components}
       + Create an Adaptive Form {#create-an-adaptive-form-on-forms-cs}
         + [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
+        +  [Set layout of an Adaptive Form based on Core Components](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
         + [Create an Adaptive Form fragment](/help/forms/adaptive-form-fragments-core-components.md)
         + [Create themes for an Adaptive Form - Core Components](/help/forms/using-themes-in-core-components.md)
         + [Create an Adaptive Form template based on Core Components](/help/forms/template-editor-core-components.md)
@@ -709,7 +710,6 @@ user-guide-title: AEM as a Cloud Service
         +  [Add versionings, comments, and annotations to an Adaptive Form](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
         +  [Compare Adaptive Forms](/help/forms/compare-forms.md) 
         +  [Converting Adaptive Forms based on foundation components to Core Component-based forms using migration utility tool](/help/forms/migration-utility-tool-for-af-core-components.md)
-        +  [Save an Adaptive Form as a Draft](/help/forms/save-core-component-based-form-as-draft.md)
         +  Introduction to Rule Editor for Adaptive Forms based on Core Components{#rule-editor-core-components}
              +  [Introduction to Rule Editor for Adaptive Forms based on Core Components](/help/forms/rule-editor-core-components.md)
              +  [Rule Editor user interface for Adaptive Forms based on Core Components](/help/forms/rule-editor-core-components-user-interface.md)
@@ -720,6 +720,11 @@ user-guide-title: AEM as a Cloud Service
            +  [Introduction to Custom Functions for Adaptive Forms based on Core Components](/help/forms/create-and-use-custom-functions.md)
            +  [Create and use a Custom Function for an Adaptive Form based on Core Components](/help/forms/custom-function-core-component-create-function.md)
            +  [Examples of Custom Functions for an Adaptive Form Based on Core Components](/help/forms/custom-function-core-components-use-cases.md)
+        + Introduction to Forms Portal and its components{#introduction-to-forms-portal}
+          + [Introduction to Forms Portal component](/help/forms/configure-forms-portal.md)
+          +  [List forms on the Sites page using the Search & Lister component](/help/forms/list-forms-on-sites-page.md)
+          +  [Save and list forms as drafts on Sites page using the Drafts & Submissions component](/help/forms/save-core-component-based-form-as-draft.md)
+          +  [Add form links to Sites page using the Link component](/help/forms/add-form-link-to-aem-sites-page.md)
     + Foundation Components {#authoring-adaptive-forms-foundation-components}
       + Convert your PDF forms to Adaptive Forms {#afcs}
         + [Introduction to Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
@@ -776,7 +781,6 @@ user-guide-title: AEM as a Cloud Service
         + [Reuse metadata properties of an Adaptive Form](/help/forms/reusing-adaptive-forms.md)
       + Improve accessibility of an Adaptive Form {#accessible-adaptive-forms}
         + [Create an accessible Adaptive Form](/help/forms/creating-accessible-adaptive-forms.md)
-      + [Configure Forms Portal](/help/forms/configure-forms-portal.md)
       + [Create and manage reviews](/help/forms/create-reviews-forms.md)
       + [Associate submission reviewers with a form](/help/forms/adding-reviewers-form.md)
       + [Create and manage reviews for an Adaptive Form](/help/forms/review-adaptiveforms-in-sites-page.md)
