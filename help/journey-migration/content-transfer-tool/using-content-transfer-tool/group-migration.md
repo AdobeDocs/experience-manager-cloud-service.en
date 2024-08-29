@@ -22,7 +22,7 @@ exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
 >abstract="The Content Transfer Tool no longer migrates users. Users should be managed in the Admin Console."
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/admin-console" text="AEM Admin Console documentation"
 >additional-url="https://adminconsole.adobe.com/" text="AEM Admin Console"
->
+
 As part of the transition journey to Adobe Experience Manager (AEM) as a Cloud Service, groups must be migrated from existing AEM systems to AEM as a Cloud Service. This task is done by the Content Transfer Tool.
 
 A major change to AEM as a Cloud Service is the fully integrated use of Adobe IDs for accessing the author tier. This process requires use of the [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html) for managing users and user groups. The user profile information is centralized in the Adobe Identity Management System (IMS) that provides single sign-on across all Adobe cloud applications. For more details, see [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management). Because of this change, users are automatically created on AEM when they first log into it via IMS.  Thus, CTT does not migrate the users to the cloud system.  IMS users must be placed into IMS groups, which can be migrated groups or new groups placed in the AEM groups that have been given permission to access the AEM content being migrated.  In this way, users on the cloud system will have the same access they had on their source AEM system.
