@@ -30,16 +30,16 @@ The **Drafts & Submissions** component needs a storage setup for saving and list
 
     ![Azure Storage Card selection](/help/forms/assets/save-form-as-draft-azure-card.png)
 
-2. Select a configuration folder to create the configuration and select **[!UICONTROL Create]**.
+1. Select a configuration folder to create the configuration and select **[!UICONTROL Create]**.
 
      ![Select Azure Storage Configuration Folder](/help/forms/assets/save-form-as-draft-select-config-folder.png)
 
-3. Specify a title for the configuration in the **[!UICONTROL Title]** field.
-4. Specify the name of the [!DNL Azure] storage account in the **[!UICONTROL Azure Storage Account]** and **[!UICONTROL Azure Access Key]** fields.
+1. Specify a title for the configuration in the **[!UICONTROL Title]** field.
+1. Specify the name of the [!DNL Azure] storage account in the **[!UICONTROL Azure Storage Account]** and **[!UICONTROL Azure Access Key]** fields.
 
     ![Azure Storage Configuration](/help/forms/assets/save-form-as-draft-azure-storage.png)
 
-5. Click **Save**.
+1. Click **Save**.
 
     >[!NOTE]
     >
@@ -47,16 +47,16 @@ The **Drafts & Submissions** component needs a storage setup for saving and list
 
     After, you have successfully created the Azure Storage Configuration, configure the Unified Storage Connector for Forms Portal, using the following steps:
 
-6. Navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Unified Storage Connector]**.
+1. Navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Unified Storage Connector]**.
 
     ![Unified connector Storage](/help/forms/assets/save-form-as-draft-unified-connector.png)
 
-7. In the **[!UICONTROL Forms Portal]** section, select **[!UICONTROL Azure]** from the **[!UICONTROL Storage]** drop-down list.
-8. Specify the configuration path for the Azure storage configuration in the **[!UICONTROL Storage Configuration Path]** field.
+1. In the **[!UICONTROL Forms Portal]** section, select **[!UICONTROL Azure]** from the **[!UICONTROL Storage]** drop-down list.
+1. Specify the configuration path for the Azure storage configuration in the **[!UICONTROL Storage Configuration Path]** field.
 
     ![Unified connector Storage setting](/help/forms/assets/save-form-as-draft-unified-connector-storage.png)
 
-9. Select **[!UICONTROL Save]**.
+1. Select **[!UICONTROL Save]**.
 
 >[!NOTE]
 >
@@ -72,14 +72,14 @@ You can use out-of-the-box Forms Portal components to list drafts and submission
 1. Go to the **[!UICONTROL Page Information]** > **[!UICONTROL Edit Template]**
     ![Edit template policy](/help/forms/assets/save-form-as-draft-edit-template.png)
 
-2. Click the **[!UICONTROL Policy]** and select the **[!UICONTROL Drafts & Submissions]**  checkbox under the **[AEM Archetype Project Name] - Forms and Communications Portal**.
+1. Click the **[!UICONTROL Policy]** and select the **[!UICONTROL Drafts & Submissions]**  checkbox under the **[AEM Archetype Project Name] - Forms and Communications Portal**.
 
     ![Policy Selection](/help/forms/assets/save-form-as-draft-enable-policy.png)
 
-3. Click **[!UICONTROL Done]**.
-4. Now, re-open the AEM Sites page in the authoring mode.
-5. Locate the section within the page editor that allows you to add the Forms Portal component. 
-6. Click the **Add** icon. The icon is a plus sign (+) that signifies the option to add new components.
+1. Click **[!UICONTROL Done]**.
+1. Now, re-open the AEM Sites page in the authoring mode.
+1. Locate the section within the page editor that allows you to add the Forms Portal component. 
+1. Click the **Add** icon. The icon is a plus sign (+) that signifies the option to add new components.
     
     Clicking the **Add** icon displays an **Insert New Component** dialog box that displays various components for insertion.
 
@@ -87,7 +87,7 @@ You can use out-of-the-box Forms Portal components to list drafts and submission
     >
     > Alternatively, you can also drag and drop the component.
 
-7. Browse the available components in the dialog box and select the desired component from the list. For example, select the **Drafts & Submissions** component from the list to add the **Drafts & Submissions** Forms Portal component. 
+1. Browse the available components in the dialog box and select the desired component from the list. For example, select the **Drafts & Submissions** component from the list to add the **Drafts & Submissions** Forms Portal component. 
 
     ![Add Draft and Submission Component](/help/forms/assets/save-form-as-draft-add-dns.png)
 
@@ -143,10 +143,10 @@ You can also configure an Adaptive Form to save automatically based on a time-ba
 
     ![Auto-save](/help/forms/assets/auto-save.png)
 
-2. Select the **[!UICONTROL Enable]** check box to enable auto-save of the form.
-3. Configure **[!UICONTROL Trigger]** as **Time based**, to auto-save the form <!--based on the occurrence of an event or--> after a specific interval of time.
-4. Specify the time interval in **[!UICONTROL Auto save on this interval (In seconds)]** to set the duration that triggers the automatic saving of the form at the defined interval.
-5. Click **[!UICONTROL Done]**.
+1. Select the **[!UICONTROL Enable]** check box to enable auto-save of the form.
+1. Configure **[!UICONTROL Trigger]** as **Time based**, to auto-save the form <!--based on the occurrence of an event or--> after a specific interval of time.
+1. Specify the time interval in **[!UICONTROL Auto save on this interval (In seconds)]** to set the duration that triggers the automatic saving of the form at the defined interval.
+1. Click **[!UICONTROL Done]**.
  
 ## View drafts/submitted forms on Sites page using the Drafts & Submissions component
 

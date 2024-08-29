@@ -130,10 +130,10 @@ Let's explore the step-by-step process for inserting a layout and adding compone
 
     Alternatively, you can also [create new Adaptive Form](/help/forms/creating-adaptive-form-core-components.md).
 
-2. Locate the section within the form editor that allows you to add a layout. 
+1. Locate the section within the form editor that allows you to add a layout. 
 
     ![Form editor](/help/forms/assets/form-editor.png){width="200" align="center"}
-3. Click the **Add** icon. The icon is a plus sign (+) that signifies the option to add new components.
+1. Click the **Add** icon. The icon is a plus sign (+) that signifies the option to add new components.
 
     ![Insert layout](/help/forms/assets/insert-layout-add-icon.png){width="200" align="center"}
     
@@ -143,7 +143,7 @@ Let's explore the step-by-step process for inserting a layout and adding compone
     >
     > Alternatively, you can also [drag and drop the layout component](#extra-bytes).
 
-4. Browse the available components in the dialog box and select the desrired layout from the list. In our case, we select the Horizontal Tabs component to insert the horizontal tabs layout.
+1. Browse the available components in the dialog box and select the desrired layout from the list. In our case, we select the Horizontal Tabs component to insert the horizontal tabs layout.
 
     ![Select horizontal tabs](/help/forms/assets/select-horizontal-tab.png){width="200" align="center"}
 
@@ -151,7 +151,7 @@ Let's explore the step-by-step process for inserting a layout and adding compone
 
     ![Horizontal tabs](/help/forms/assets/insert-tabs-on-top.png){width="200" align="center"}
 
-5. Open the properties of the horizontal tabs component and specify the name for the component.
+1. Open the properties of the horizontal tabs component and specify the name for the component.
  For example, in this case, we add the name of the horizontal tabs component as IT Request Form.
 
     ![Add name for Horizontal tabs](/help/forms/assets/change-name-of-horizontal-tabs.png){width="200" align="center"}
@@ -170,13 +170,13 @@ Add new panel to the horizontal tabs component:
 
     ![Item tab for Horizontal tabs](/help/forms/assets/tabs-on-top-items-tab.png){width="200" align="center"}
 
-2. Click the **Add** icon to add new panel.
+1. Click the **Add** icon to add new panel.
 
     ![Add new panel](/help/forms/assets/tabs-on-top-add-panel.png){width="200" align="center"}
 
     When you click the **Add** icon, the **Insert New Component** dialog box appears.
 
-3. Select the panel component.
+1. Select the panel component.
 
      ![Add new panel](/help/forms/assets/tabs-on-top-new-panel.png){width="200" align="center"}
 
@@ -186,11 +186,11 @@ Add new panel to the horizontal tabs component:
 
     Provide a name for the new panel; otherwise, you cannot save the properties of the horizontal tabs component.
 
-4. Specify the names of the panels as shown in the figure below:
+1. Specify the names of the panels as shown in the figure below:
 
     ![Panel names](/help/forms/assets/tabs-on-tops-panel-name.png){width="200" align="center"}
 
-5. Click **Done**.
+1. Click **Done**.
 
     Once you click **Done**, the three panels appear side-by-side in a row. The panel names are displayed as headings for each panel, and you can add form components to each panel.
 
@@ -198,15 +198,15 @@ Add new panel to the horizontal tabs component:
 
     You can configure the properties of panel component. For example, the IT Request Form does not include panel titles, here are the steps to configure properties of panel component.
 
-6. Open the properties of the first panel.
+1. Open the properties of the first panel.
 
     ![Panel 1 Properties](/help/forms/assets/tabs-on-tops-panel1-properties.png){width="200" align="center"}
 
-7. Select the **Hide title** checkbox from the **Basic** tab.
+1. Select the **Hide title** checkbox from the **Basic** tab.
     
      ![Hide title](/help/forms/assets/tabs-on-top-hide-panel.png){width="200" align="center"}
 
-8. Click **Done**.
+1. Click **Done**.
 
 Similarly, you can hide titles for the other two panels also. Once done, you can proceed with adding form components to each panel.
 
