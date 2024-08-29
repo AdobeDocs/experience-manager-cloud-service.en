@@ -38,7 +38,7 @@ Adaptive Form based on Core Components supports the following types of layouts:
 
 Panel layout is useful for organizing related fields in a way that makes it easier to navigate and find corresponding content. The panel layout arranges form components within distinct, sections or panels in an Adaptive Form. 
 
-![Panel Layout](/help/forms/assets/panel-layout.png){width="250" align="center"}
+![Panel Layout](/help/forms/assets/panel-layout.png)
 
 Panel Layout
 
@@ -48,7 +48,7 @@ You can use the [panel component](https://experienceleague.adobe.com/en/docs/exp
 
 The wizard layout helps simplifying a complex form by breaking it into distinct steps. Each step represents a different part of the process, and users navigate through the steps sequentially, often with **Next** and **Previous** buttons. You can use the wizard layout to create a form that involves multiple sections or steps.
 
-![Wizard Layout](/help/forms/assets/wizard-layout-compare.gif){width="250" align="center"}
+![Wizard Layout](/help/forms/assets/wizard-layout-compare.gif)
 
 Wizard Layout
 
@@ -58,7 +58,7 @@ You can use the [wizard component](https://experienceleague.adobe.com/en/docs/ex
 
 The vertical tabs layout is also known as tabs on the left layout. The vertical tabs layout organizes panels or sections along the left side of a form. It is a common layout for forms where panels/sections is stacked vertically for easy reading and navigation.
 
-![Vertical Layout](/help/forms/assets/vertical-tab.gif){width="250" align="center"}
+![Vertical Layout](/help/forms/assets/vertical-tab.gif)
 
 Vertical Tabs Layout
 
@@ -70,7 +70,7 @@ You can use the [vertical tabs component](https://experienceleague.adobe.com/en/
 The horizontal tabs layout is also known as Tabs on the top layout. The horizontal tabs layout arranges panels or sections side-by-side in a row. This layout presents the form sections in a linear manner across the width of the form or panel.
 
 
-![Horizontal Layout](/help/forms/assets/horizontal-layout.gif){width="250" align="center"}
+![Horizontal Layout](/help/forms/assets/horizontal-layout.gif)
 
 Horizontal Tabs Layout
 
@@ -81,7 +81,7 @@ You can use the [horizontal tabs component](https://experienceleague.adobe.com/e
 
 The accordion layout displays content in collapsible sections or panels in an Adaptive Form. When a section is expanded, it displays the content within, while other sections remain collapsed. This layout is ideal for displaying large amounts of information in a compact form.
 
-![Accordion Layout](/help/forms/assets/accordion-layout-compare.gif){width="250" align="center"}
+![Accordion Layout](/help/forms/assets/accordion-layout-compare.gif)
 
 Accordion Layout
 
@@ -126,14 +126,14 @@ Let's explore the step-by-step process for inserting a layout and adding compone
 1. In the upper-left corner, select **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
 1. Open an existing Adaptive Form in an edit mode if it has already been created. 
 
-    ![Open an Adaptive Form](/help/forms/assets/insert-layout.png){width="250" align="center"}
+    ![Open an Adaptive Form](/help/forms/assets/insert-layout.png)
 
     Alternatively, you can also [create new Adaptive Form](/help/forms/creating-adaptive-form-core-components.md).
 
-1. Locate the section within the form editor that allows you to add a layout. 
+2. Locate the section within the form editor that allows you to add a layout. 
 
     ![Form editor](/help/forms/assets/form-editor.png){width="200" align="center"}
-1. Click the **Add** icon. The icon is a plus sign (+) that signifies the option to add new components.
+3. Click the **Add** icon. The icon is a plus sign (+) that signifies the option to add new components.
 
     ![Insert layout](/help/forms/assets/insert-layout-add-icon.png){width="200" align="center"}
     
@@ -143,7 +143,7 @@ Let's explore the step-by-step process for inserting a layout and adding compone
     >
     > Alternatively, you can also [drag and drop the layout component](#extra-bytes).
 
-1. Browse the available components in the dialog box and select the desrired layout from the list. In our case, we select the Horizontal Tabs component to insert the horizontal tabs layout.
+4. Browse the available components in the dialog box and select the desrired layout from the list. In our case, we select the Horizontal Tabs component to insert the horizontal tabs layout.
 
     ![Select horizontal tabs](/help/forms/assets/select-horizontal-tab.png){width="200" align="center"}
 
@@ -151,7 +151,7 @@ Let's explore the step-by-step process for inserting a layout and adding compone
 
     ![Horizontal tabs](/help/forms/assets/insert-tabs-on-top.png){width="200" align="center"}
 
-1. Open the properties of the horizontal tabs component and specify the name for the component.
+5. Open the properties of the horizontal tabs component and specify the name for the component.
  For example, in this case, we add the name of the horizontal tabs component as IT Request Form.
 
     ![Add name for Horizontal tabs](/help/forms/assets/change-name-of-horizontal-tabs.png){width="200" align="center"}
@@ -256,7 +256,7 @@ Similarly, you can hide titles for the other two panels also. Once done, you can
 
 1. Click **[!UICONTROL Preview]** in the top-right corner of your authoring environment.
 
-    ![Horizontal Layout](/help/forms/assets/horizontal-layout.gif){width="250" align="center"}
+    ![Horizontal Layout](/help/forms/assets/horizontal-layout.gif)
 
 You can also [drag-and-drop the components](#extra-bytes) to add the form components to each panel. 
 
@@ -335,7 +335,7 @@ Perform the following steps to replace the existing layout of a form:
 
     After selecting the layout, the arrangement of the components within the layout changes accordingly. For example, select the vertical tabs component from the **[!UICONTROL Replace Component]** dialog box; the arrangement of the panel changes to tabs on left:
 
-    ![Vertical Layout](/help/forms/assets/vertical-tab.gif){width="250" align="center"}
+    ![Vertical Layout](/help/forms/assets/vertical-tab.gif)
 
 ## Extra Bytes
 
