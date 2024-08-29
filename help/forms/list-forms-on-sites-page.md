@@ -7,13 +7,11 @@ role: User, Developer
 
 # List forms on the Sites page
 
-Continuing with the bank website scenario, where the goal is to streamline form management and improve user experience, the **Search & Lister** Forms Portal component proves to be crucial. For instance, consider a user visiting the bank’s website looking for an account opening form. They can use the **Search & Lister** component to quickly find the form by entering specific keywords or filtering by categories such as "New Accounts" or "Personal Banking." This functionality enables users to locate the desired form efficiently, bypassing the need to scroll through extensive lists. By integrating the **Search & Lister** component, the bank enhances website usability, making it easier for users to navigate and manage forms while ensuring that features like form submission and draft saving are securely available only to logged-in users.
+Imagine a user visiting the bank’s website in search of an account opening form. The bank uses the Forms Portal component to help users quickly find the form by entering specific keywords or filtering by categories such as 'New Accounts' or 'Personal Banking' and allows users to easily locate the desired form without having to scroll through lengthy lists.
 
-In Adobe Experience Manager, the **Search & Lister** component of the Forms Portal enables you to display and manage forms on the Sites page. It allows you to configure and display a comprehensive list of forms based on specific criteria to meet user needs or organizational requirements. The listed forms can be sorted in ascending or descending order using the **Sort By** drop-down option available in the upper-right corner of the screen.
+The **Search & Lister** component of the Forms Portal allows you to display and list forms on a Sites page. Users can configure and present a comprehensive list of forms based on specific criteria to meet organizational requirements. Anonymous users can visit the Sites page to view and browse the available forms. The listed forms can be sorted in ascending or descending order using the **Sort By** drop-down option located in the upper-right corner of the screen.
 
 ![Search and Lister icon](assets/search-and-lister-component.png){width="200" align="center"}
-
-The **Search & Lister** component allows anonymous or non-logged-in users to visit the Sites page and view and browse the list of available forms. The users can search for forms based on the provided criteria and access details about each form. This feature ensures that forms are readily accessible to all users, enhancing engagement and making it easier for visitors to find and interact with the forms they need, regardless of their login status.
 
 ## Pre-requisite
 

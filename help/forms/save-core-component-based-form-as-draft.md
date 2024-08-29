@@ -8,9 +8,8 @@ role: User, Developer, Admin
 
 # Save and list forms as drafts on Sites page
 
-In the context of the bank website scenario aimed at optimizing form management and enhancing user experience, the **Drafts & Submissions** component is pivotal. For instance, consider a user who begins filling out a loan application form but needs to pause and return later. The **Drafts & Submissions** component allows this user to save their progress as a draft and easily resume the application later. Additionally, it enables authenticated users to manage their submissions, review previously submitted forms, and track application statuses. By integrating the **Drafts & Submissions** component, the bank provides a robust solution for users to efficiently handle their forms, securely save drafts, and manage submissions, all while ensuring a seamless and user-friendly experience.
-
-The **Drafts & Submissions** Forms Portal component allows users to edit drafts or view submitted forms by the authenticated users. This functionality allows users to save the progress and return to complete the tasks later without losing any entered information. Providing the  `save-as-draft` option ensures flexibility in managing time, reduces the risk of data loss, and maintains the precision of submissions. You can save forms as drafts to complete them later. 
+Consider a user who begins filling out a form but needs to pause and return later. The `save-as-draft` feature allows user to save the form as draft. Providing the  `save-as-draft` option ensures flexibility in managing time, reduces the risk of data loss, and maintains the precision of submissions. You can save forms as drafts to complete them later. 
+AEM provides the **Drafts & Submissions** component out of the box to display lists and submissions on Sites pages. The **Drafts & Submissions** component shows forms that are saved as drafts for later completion, as well as submitted forms. The **Drafts & Submissions** component enables only logged-in users to edit drafts or view their submitted forms. However, if an anonymous user navigates through the list of forms provided by the **Search & Lister** component and saves a form as a draft, that draft is not listed by the **Drafts & Submissions** component. To view drafts and submissions, users must be logged in at the time of form submission.
 
 ![Drafts icon](assets/drafts-component.png){width="200" align="center"}
 
@@ -28,7 +27,7 @@ The **Drafts & Submissions** Forms Portal component allows users to edit drafts 
 
 ### Configure Azure Storage and Unified Storage Connector for Drafts & Submissions Forms Portal component
 
-The **Drafts & Submissions** component needs a storage setup for saving drafts. The Unified Storage Connector offers a framework to link the AEM instance with external storage. To save the form as a draft, ensure that you have an Azure storage account and an access key to authorize access to the [!DNL Azure] storage account. Once, you have Azure storage account and the access key, perform the following steps to create an Azure Storage configuration:
+The **Drafts & Submissions** component needs a storage setup for saving and listing drafts on AEM Sites page. The Unified Storage Connector offers a framework to link AEM with external storage. To save the form as a draft, ensure that you have an Azure storage account and an access key to authorize access to the [!DNL Azure] storage account. Once, you have Azure storage account and the access key, perform the following steps to create an Azure Storage configuration:
 
 1. Navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Cloud Services]** &gt; **[!UICONTROL Azure Storage]**.
 
@@ -66,9 +65,7 @@ Once you have successfully configured Azure Storage and Unified Storage Connecto
 
 ## How to add the Drafts & Submissions component to an AEM Sites page?
 
-AEM provides the **Drafts & Submissions** component out of the box to display forms on AEM Sites pages. The **Drafts & Submissions** component shows forms that are saved as drafts for later completion, as well as submitted forms. This component provides a personalized experience for logged-in users by displaying the drafts and form submissions.
-
-You can use out-of-the-box Forms Portal components to list form on the Sites page. Perform the following steps to add the **Drafts & Submissions** portal component: 
+You can use out-of-the-box Forms Portal components to list drafts and submissions on the Sites page. Perform the following steps to add the **Drafts & Submissions** portal component: 
 
 1. Open the AEM Sites page in an **Edit** mode. 
 1. Go to the **[!UICONTROL Page Information]** > **[!UICONTROL Edit Template]**
@@ -97,7 +94,7 @@ Now, configure the properties of the **Drafts and Submissions** component accord
 
 ## Configure properties of the Drafts & Submissions Component 
 
-The **Drafts & Submissions** component displays forms that are saved as draft for completing later and submitted forms. You can configure the properties of the **Drafts & Submissions**:
+You can configure the properties of the **Drafts & Submissions**:
 1. Select the **Drafts & Submissions** component.
 1. Click the ![Configure icon](assets/configure_icon.png) and the dialog box appears. 
 1. In the **[!UICONTROL Drafts and Submissions]** dialog, specify the following:
