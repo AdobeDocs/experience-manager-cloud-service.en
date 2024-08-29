@@ -12,6 +12,8 @@ You can approve assets using AEM Assets as a Cloud Service to streamline asset m
 
 ## Before you begin {#pre-requisites}
 
+Before you begin, you should have:
+
 * Access to AEM Assets as a Cloud Service
 
 * Write permissions to edit asset metadata to be able to edit the **[!UICONTROL Status]** field available in [asset properties](/help/assets/manage-organize-assets-view.md##manage-asset-status) for an asset.
@@ -20,13 +22,18 @@ You can approve assets using AEM Assets as a Cloud Service to streamline asset m
 
 The assets marked as `approved` in Assets as a Cloud Service are automatically available in Content Hub.
 
+>[!NOTE]
+>
+>Assets as a Cloud Service and Content Hub must use the same organization for the assets to display in Content Hub.
+
 To set the asset status as `approved` using Assets view within AEM as a Cloud Service:
 
 1. Select the asset, and click **[!UICONTROL Details]** in the toolbar.
 
 1. In the **[!UICONTROL Basic]** tab, select the asset status as `approved` from the **[!UICONTROL Status]** drop-down list.
+1. Click **[!UICONTROL Save]**.
 
-   >[!VIDEO](https://video.tv.adobe.com/v/342495)
+   >[!VIDEO](https://video.tv.adobe.com/v/3433172)
 
 If you need to approve assets using Admin view, see [Approve assets using Admin view](/help/assets/approve-assets.md#approve-assets).
 
@@ -47,9 +54,11 @@ To bulk approve assets within a folder in Assets view:
 If you need to bulk approve assets using the Admin view, you can switch between Admin and Assets views in the following ways:
 ![My Workspace overview](assets/assets-view.png)
 
-## Bulk Approve assets for Content Hub using Admin view {#bulk-approve-assets-content-hub-admin-view}
+## Automate approval for newly ingested assets in Admin view {#automate-approval-newly-ingested-assets}
 
-Follow these steps to approve bulk assets in [!DNL Experience Manager Admin view]:
+After switching from Assets view to Admin view, you can set up folder settings so that all new assets added to the folder get approved automatically.
+
+Follow these steps to automate approval for newly ingested assets in [!DNL Experience Manager Admin view]:
 
 1. Create a folder in the author environment (https://author-pXXX-eYYY.adobeaemcloud.com). Replace _XXX_ with your program ID and _YYY_ with the environment ID from the Experience Manager.
 1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]**.
@@ -72,7 +81,7 @@ Follow these steps to approve bulk assets in [!DNL Experience Manager Admin view
 
 >[!NOTE]
 > 
->This approach approves the newly created assets in the folder. For existing assets in the folder, you need to manually select and approve them. <br> Alternatively, you can use the **[!UICONTROL Reprocess]** option to apply the changes from the metadata profile to older assets.
+>This approach approves the newly created assets in the folder. For existing assets in the folder, you need to manually select and approve them.
 
 ## Manage assets uploaded using Content Hub {#manage-assets-uploaded-using-content-hub}
 
