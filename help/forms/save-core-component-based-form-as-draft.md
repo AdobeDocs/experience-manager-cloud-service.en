@@ -39,6 +39,8 @@ The **Drafts & Submissions** component needs a storage setup for saving and list
 
     ![Azure Storage Configuration](/help/forms/assets/save-form-as-draft-azure-storage.png)
 
+    Enter `Connection String` in the `Azure Storage Account` textbox and  `Azure Key` in the `Azure Access key` textbox.
+
 1. Click **Save**.
 
     >[!NOTE]
