@@ -19,6 +19,12 @@ These are the release notes for the x September 2024 release of the Universal Ed
 * **`rootPath` now available for the content picker**: The content picker can now be provided with a `rootPath` to present the user with a targeted selection of content when using [AEM Content,](/help/implementing/universal-editor/field-types.md#aem-content) [Content Fragment,](/help/implementing/universal-editor/field-types.md#content-fragment) and [Experience Fragment](/help/implementing/universal-editor/field-types.md#experience-fragment) field types.
   * Content selection is thereby limited to content in the configured directory and any subdirectories.
 
+## Early Adoption Program for 6.5 Support {#early-adoption}
+
+The Universal Editor is now available for the headless use case when using AEM 6.5 as part of an early adopter program.
+
+If you are interested in testing this new feature and sharing your feedback, please send an email to your Adobe representative from the email address associated with your Adobe ID. 
+
 ## Bug Fixes {#bug-fixes}
 
 * **Cross-Container Drag &amp; Drop**: [Move components across different containers via drag and drop](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) now respects [component filters](/help/implementing/universal-editor/customizing.md#filtering-components) between the source and target.
