@@ -4,8 +4,8 @@ description: Learn how the Universal Editor supports content inheritance for Mul
 solution: Experience Manager Sites
 feature: Authoring
 role: User
+exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
 ---
-
 # Content Inheritance in the Universal Editor {#inheritance}
 
 Learn how the Universal Editor supports content inheritance for Multi Site Management and Launches to support content reuse and localization.

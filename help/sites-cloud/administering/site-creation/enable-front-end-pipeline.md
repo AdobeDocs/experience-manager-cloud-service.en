@@ -44,7 +44,7 @@ AEM can automatically adapt your existing site to use the front-end pipeline. To
 
 {{add-cm-allowlist-frontend-pipeline}}
 
-Enabling your site is done from the Sites console using the [Site rail.](site-rail.md)
+Enabling your site is done from the Sites console using the [Site rail](site-rail.md). 
 
 1. Log into AEM and navigate to your site via **Global Navigation** &gt; **Sites**.
 1. Select your site in the console. Select the root of the site and not any child pages.
