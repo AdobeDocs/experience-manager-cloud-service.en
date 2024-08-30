@@ -5,6 +5,7 @@ exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
 feature: Migration
 role: Admin
 ---
+
 # Prerequisites for Content Transfer Tool {#prerequisites}
 
 >[!CONTEXTUALHELP]
