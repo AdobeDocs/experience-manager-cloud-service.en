@@ -20,4 +20,4 @@ These are the release notes for the x September 2024 release of the Universal Ed
 
 ## Bug Fixes {#bug-fixes}
 
-* **Cross-Container Drag &amp; Drop**: [Move components across different containers via drag and drop](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) now respects component filters between the source and target.
+* **Cross-Container Drag &amp; Drop**: [Move components across different containers via drag and drop](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) now respects [component filters](/help/implementing/universal-editor/customizing.md#filtering-components) between the source and target.
