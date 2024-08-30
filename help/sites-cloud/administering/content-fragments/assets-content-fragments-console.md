@@ -1,6 +1,6 @@
 ---
 title: Viewing and Managing Assets in the Content Fragments Console
-description: Learn how to view, and manage, Assets in the **Content Fragments Console** of Adobe Experience Manager as a Cloud Service.
+description: Learn how to view, and manage, Assets in the Content Fragments Console of Adobe Experience Manager as a Cloud Service.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 865e1fa8-2956-45cf-9dd7-034d491808fe
