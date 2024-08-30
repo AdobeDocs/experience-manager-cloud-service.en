@@ -8,6 +8,8 @@ exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
 
 [Content Hub users with rights to add assets](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) can add assets to the Content Hub either from local file system or import assets from OneDrive or Dropbox data sources. All assets display at the top-level in Content Hub irrespective of the folder structure available on your local file system or OneDrive and Dropbox data sources to enhance the search capabilities.
 
+The assets marked as `Approved` in Assets as a Cloud Service are automatically available in Content Hub. For more information, see [Approve assets for Content Hub](/help/assets/approve-assets-content-hub.md).
+
 To further enhance asset search, Content Hub allows you to:
 
 * Define key details relevant to your asset upload, such as campaign name, keywords, channels, and so on. 
@@ -65,3 +67,15 @@ To add assets to Content Hub from OneDrive or Dropbox data sources:
    ![Upload assets to Content Hub from OneDrive or Dropbox](assets/add-assets-onedrive-dropbox.png)
 
 Administrators can also configure the mandatory and optional fields that display while uploading assets, such as Campaign name, Keywords, Channels, and so on. For more information, see [Configure the Content Hub user interface](configure-content-hub-ui-options.md#configure-upload-options-content-hub).
+
+## Manage assets uploaded using Content Hub {#manage-assets-uploaded-using-content-hub}
+
+[Content Hub users with rights to add assets](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) can [add assets to the Content Hub](/help/assets/upload-brand-approved-assets.md) either from local file system or import assets from OneDrive or Dropbox data sources. All assets display at the top-level in Content Hub irrespective of the folder structure available on your local file system or OneDrive and Dropbox data sources to enhance the search capabilities.
+
+The display of assets uploaded using Content Hub depends on if you have [enabled the Auto-approval toggle](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub):
+
+* If the **[!UICONTROL Auto-approval]** toggle is enabled, the assets that you upload using Content Hub are automatically available.
+
+* If the **[!UICONTROL Auto-approval]** toggle is disabled, the assets that you upload using Content Hub do not display automatically. The assets are available in the `hydrated-assets` folder of your Assets as a Cloud Service environment. Navigate to the folder and [bulk edit](#bulk-approve-assets-content-hub) the status of those assets to `Approved` for those assets to display in Content Hub.
+
+![Content Hub approval process](/help/assets/assets/content-hub-approval.png)
