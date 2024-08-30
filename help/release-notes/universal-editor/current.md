@@ -16,7 +16,8 @@ These are the release notes for the x September 2024 release of the Universal Ed
 
 ## What’s New {#what-is-new}
 
-* **`rootPath` now available for content picker**: The content picker can now be provided with a `rootPath` to present the user with a targeted selection of content when using [AEM Content,](/help/implementing/universal-editor/field-types.md#aem-content) [Content Fragment,](/help/implementing/universal-editor/field-types.md#content-fragment) and [Experience Fragment](/help/implementing/universal-editor/field-types.md#experience-fragment) field types.
+* **`rootPath` now available for the content picker**: The content picker can now be provided with a `rootPath` to present the user with a targeted selection of content when using [AEM Content,](/help/implementing/universal-editor/field-types.md#aem-content) [Content Fragment,](/help/implementing/universal-editor/field-types.md#content-fragment) and [Experience Fragment](/help/implementing/universal-editor/field-types.md#experience-fragment) field types.
+  * Content selection is thereby limited to content in the configured directory and any subdirectories.
 
 ## Bug Fixes {#bug-fixes}
 
