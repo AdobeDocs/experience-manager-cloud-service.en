@@ -17,6 +17,8 @@ role: User, Developer
 
 AEM Forms provide out of the box support for English (en), Spanish (es), French (fr), Italian (it), German (de), Japanese (ja), Portuguese-Brazilian (pt-BR), Chinese (zh-CN), Chinese-Taiwan (zh-TW), and Korean (ko-KR) locales. You can add support for more locales also, like Hindi(hi_IN). You can also present Adaptive Forms in a Right-to-Left (RTL) language like Arabic, Persian, and Urdu by adding these locales.  
 
+>[!VIDEO](https://video.tv.adobe.com/v/3433132/adaptive-forms-rtl--arabic-hebrew-farsi)
+
 ## How Does AEM Forms determine the locale for an Adaptive Form?
 
 Understanding how AEM Forms selects the locale for rendering an Adaptive Form is crucial for proper localization. Here's a breakdown of the selection process:

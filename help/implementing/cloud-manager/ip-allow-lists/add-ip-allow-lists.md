@@ -13,6 +13,8 @@ Learn how to add your own IP Allow List using Cloud Manager.
 
 A user in the **Business Owner** or **Deployment Manager** role can follow these steps to add an IP Allow List.
 
+{{add-cm-allowlist-frontend-pipeline}}
+
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
@@ -32,3 +34,4 @@ A user in the **Business Owner** or **Deployment Manager** role can follow these
 1. Click **Save**.
 
 After saving, the newly created IP Allow List appears as a row in the table in the **IP Allow Lists** page.
+
