@@ -219,7 +219,9 @@ See the `Node property value in MongoDB` note in [Prerequisites for Content Tran
 
 To possibly avoid this restriction, run the [Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) on the source AEM instance and review the findings it presents, particularly the ["Unsupported Repository Structure" (URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs) pattern.
 
-**Note: [Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) version 2.1.50+ will report on large nodes containing unicode characters that exceed the maximum size. Please ensure you are running the latest version. BPA versions prior to 2.1.50 will not identify and report on these large nodes and they will need to be discovered separately using the prerequisite Oak tool mentioned above.
+>[!NOTE]
+>
+>[Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) version 2.1.50+ will report on large nodes containing unicode characters that exceed the maximum size. Please ensure you are running the latest version. BPA versions prior to 2.1.50 will not identify and report on these large nodes and they will need to be discovered separately using the prerequisite Oak tool mentioned above.
 
 ### Ingestion Rescinded {#ingestion-rescinded}
 
