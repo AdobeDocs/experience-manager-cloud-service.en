@@ -133,7 +133,11 @@ An AEM tag component type enables an AEM tag picker, which can be used to attach
 
 #### AEM Content {#aem-content}
 
-An AEM content component type type enables an AEM content picker, which can be used to set content references.
+An AEM content component type type enables an AEM content picker, which can be used to set content references. It offers an additional validation type.
+
+|Validation Type|Value Type|Description|Required|
+|---|---|---|---|
+|`rootPath`|`string`|Path that the content picker will open for the user to select AEM content, limiting selection to that directory and subdirectories|No|
 
 >[!BEGINTABS]
 
@@ -292,11 +296,15 @@ A container component type allows the grouping of components. It offers an addit
 
 #### Content Fragment {#content-fragment}
 
-The Content Fragment picker can be used to select a [Content Fragment](/help/sites-cloud/authoring/fragments/content-fragments.md) and its variations (if required). It offers an additional configuration.
+The Content Fragment picker can be used to select a [Content Fragment](/help/sites-cloud/authoring/fragments/content-fragments.md) and its variations (if required). It offers an additional configuration and validation.
 
 |Configuration|Value Type|Description|Required|
 |---|---|---|---|
 |`variationName`|`string`|Variable name to store the selected variation. If undefined, no variation picker is displayed|No|
+
+|Validation Type|Value Type|Description|Required|
+|---|---|---|---|
+|`rootPath`|`string`|Path that the content picker will open for the user to select the Content Fragment, limiting selection to that directory and subdirectories|No|
 
 >[!NOTE]
 >
@@ -424,11 +432,15 @@ It also offers an additional validation type.
 
 #### Experience Fragment {#experience-fragment}
 
-The Experience Fragment picker can be used to select an [Experience Fragment](/help/sites-cloud/authoring/fragments/experience-fragments.md) and its variations (if required). It offers an additional configuration.
+The Experience Fragment picker can be used to select an [Experience Fragment](/help/sites-cloud/authoring/fragments/experience-fragments.md) and its variations (if required). It offers an additional configuration and validation.
 
 |Configuration|Value Type|Description|Required|
 |---|---|---|---|
 |`variationName`|`string`|Variable name to store the selected variation. If undefined, no variation picker is displayed|No|
+
+|Validation Type|Value Type|Description|Required|
+|---|---|---|---|
+|`rootPath`|`string`|Path that the content picker will open for the user to select the Experience Fragment, limiting selection to that directory and subdirectories|No|
 
 >[!BEGINTABS]
 
