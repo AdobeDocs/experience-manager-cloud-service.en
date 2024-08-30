@@ -4,8 +4,8 @@ description: Learn which AEM Sites features and use cases are a work-in-progress
 solution: Experience Manager Sites
 feature: Edge Delivery Services
 role: User
+exl-id: 21745f53-a7ef-4eec-9170-b267c2f4314e
 ---
-
 # Work-In-Progress Sites Features for Edge Delivery Services {#wip-sites-features}
 
 Learn which AEM Sites features and use cases are a work-in-progress and discover alternate solutions when using Edge Delivery Services.
