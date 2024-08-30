@@ -4,10 +4,12 @@ description: Schedule publishing and unpublishing of your Adaptive Forms. Publis
 content-type: reference
 topic-tags: publish
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
-docset: aem65s
-
+feature: Adaptive Forms
+role: User
+hide: yes
+hidefromtoc: yes
+exl-id: 9496e4f5-ed74-4b40-b8f9-17153170af66
 ---
-
 # Publishing and unpublishing forms and documents{#publishing-and-unpublishing-forms-and-documents}
 
 [!DNL AEM Forms] let you create, publish, and unpublish forms easily. The [!DNL AEM Forms] server provides two instances: Author and Publish. Author instance is for creating and managing form assets and resources. Publish instance is for keeping assets and related resources that are available for end users. 

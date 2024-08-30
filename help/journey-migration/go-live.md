@@ -95,7 +95,6 @@ Take into account that the entire ingestion fails if any of the following limita
 
 * A JCR Node that has a name longer than 150 characters
 * A JCR Node that is larger than 16 MB
-* Any User / Group with `rep:AuthorizableID` being ingested that is already present on AEM as a Cloud Service
 * If any asset that is extracted and ingested moves into a different path either on source or destination before the next iteration of the migration.
 
 ## Asset Health {#asset-health}
