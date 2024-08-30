@@ -3,6 +3,7 @@ title: Release Notes for Migration Tools in AEM as a Cloud Service Release 2024.
 description: Release Notes for Migration Tools in AEM as a Cloud Service Release 2024.05.0
 feature: Release Information
 role: Admin
+exl-id: f50a74fa-ad7d-4837-b0a1-9945c32af02f
 ---
 # Release Notes for Migration Tools in AEM as a Cloud Service Release 2024.05.0 {#release-notes}
 

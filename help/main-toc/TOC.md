@@ -26,6 +26,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2024 {#2024}
+      + [Release Notes for 2024.7.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-7-0.md)
       + [Release Notes for 2024.6.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-6-0.md)
       + [Release Notes for 2024.5.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-5-0.md)
       + [Release Notes for 2024.4.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-4-0.md)
@@ -218,6 +219,7 @@ user-guide-title: AEM as a Cloud Service
     + [Create Environments](/help/journey-onboarding/create-environments.md)
     + [Assigning AEM Product Profiles](/help/journey-onboarding/assign-profiles-aem.md)
     + [Developer and Deployment Manager Tasks](/help/journey-onboarding/developers.md)
+    + [Managing Principals](/help/journey-migration/managing-principals.md)
     + [AEM User Tasks](/help/journey-onboarding/aem-users.md)
     + [Go-Live Checklist](/help/journey-onboarding/go-live-checklist.md)
   + AEM Reference Demos Add-On Journey {#demo-add-on}
@@ -270,13 +272,14 @@ user-guide-title: AEM as a Cloud Service
       + [Validating Content Transfers](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
       + [Migrating Closed User Groups](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)
       + [Handling Large Content Repositories](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
-      + [User Mapping and Principal Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
+      + [Group Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)
       + [Extracting Content from Source](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
       + [Ingesting Content into Cloud Service](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
       + [Indexing after Migrating Content](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md)
       + [Viewing Logs for a Migration Set](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
       + [Deleting a Migration Set](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
       + [Running the Content Transfer Tool on a Publish Instance](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
+      + [Managing Principals After Migration](/help/journey-migration/managing-principals-after-migration.md)
       + [Troubleshooting Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
       + Legacy User Mapping Tool (Legacy){#legacy-user-mapping-tool}
         + [Overview](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
@@ -675,6 +678,7 @@ user-guide-title: AEM as a Cloud Service
       + [Create Form Data Model](/help/forms/create-form-data-models.md)
       + [Work with Form Data Model](/help/forms/work-with-form-data-model.md)
       + [Use Form Data Model](/help/forms/using-form-data-model.md)
+      + [Design XML Schema for an Adaptive Form](/help/forms/adaptive-form-xml-schema-form-model.md)
   + Adaptive Forms {#adaptive-forms-authoring}
     + [Create an Adaptive Form](/help/forms/create-an-adaptive-form.md)
     + [Create an Adaptive Form fragment](/help/forms/adaptive-form-fragments.md)
@@ -682,6 +686,7 @@ user-guide-title: AEM as a Cloud Service
     + Core Components {#authoring-adaptive-forms-core-components}
       + Create an Adaptive Form {#create-an-adaptive-form-on-forms-cs}
         + [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
+        +  [Set layout of an Adaptive Form based on Core Components](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
         + [Create an Adaptive Form fragment](/help/forms/adaptive-form-fragments-core-components.md)
         + [Create themes for an Adaptive Form - Core Components](/help/forms/using-themes-in-core-components.md)
         + [Create an Adaptive Form template based on Core Components](/help/forms/template-editor-core-components.md)
@@ -706,7 +711,6 @@ user-guide-title: AEM as a Cloud Service
         +  [Add versionings, comments, and annotations to an Adaptive Form](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
         +  [Compare Adaptive Forms](/help/forms/compare-forms.md) 
         +  [Converting Adaptive Forms based on foundation components to Core Component-based forms using migration utility tool](/help/forms/migration-utility-tool-for-af-core-components.md)
-        +  [Save an Adaptive Form as a Draft](/help/forms/save-core-component-based-form-as-draft.md)
         +  Introduction to Rule Editor for Adaptive Forms based on Core Components{#rule-editor-core-components}
              +  [Introduction to Rule Editor for Adaptive Forms based on Core Components](/help/forms/rule-editor-core-components.md)
              +  [Rule Editor user interface for Adaptive Forms based on Core Components](/help/forms/rule-editor-core-components-user-interface.md)
@@ -717,6 +721,11 @@ user-guide-title: AEM as a Cloud Service
            +  [Introduction to Custom Functions for Adaptive Forms based on Core Components](/help/forms/create-and-use-custom-functions.md)
            +  [Create and use a Custom Function for an Adaptive Form based on Core Components](/help/forms/custom-function-core-component-create-function.md)
            +  [Examples of Custom Functions for an Adaptive Form Based on Core Components](/help/forms/custom-function-core-components-use-cases.md)
+        + Introduction to Forms Portal and its components{#introduction-to-forms-portal}
+          + [Introduction to Forms Portal component](/help/forms/configure-forms-portal.md)
+          +  [List forms on the Sites page using the Search & Lister component](/help/forms/list-forms-on-sites-page.md)
+          +  [Save and list forms as drafts on Sites page using the Drafts & Submissions component](/help/forms/save-core-component-based-form-as-draft.md)
+          +  [Add form links to Sites page using the Link component](/help/forms/add-form-link-to-aem-sites-page.md)
     + Foundation Components {#authoring-adaptive-forms-foundation-components}
       + Convert your PDF forms to Adaptive Forms {#afcs}
         + [Introduction to Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
@@ -724,12 +733,17 @@ user-guide-title: AEM as a Cloud Service
         + [Review and correct converted forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html#welcome-to-review-and-correct-editor)
       + Create an Adaptive Form {#create-an-adaptive-form-on-forms-cs}
         + [Introduction to authoring of an Adaptive Forms](/help/forms/introduction-forms-authoring.md)
+        + [Authoring in-context help for form fields](/help/forms/authoring-in-field-help.md)
         + [Create an Adaptive Form](/help/forms/creating-adaptive-form.md)
         + [Reference themes, templates, and data models](/help/forms/reference-themes-templates-data-models.md)
         + [Create a template](/help/forms/template-editor.md)
         + [Create a theme](/help/forms/themes.md)
+        + [Reference Adaptive Form Fragments](/help/forms/reference-adaptive-form-fragments.md)
+        + [Synchronizing Adaptive Forms with XFA Form Templates](/help/forms/synchronizing-adaptive-forms-xfa.md)
+        + [XFA support in XDP-based Adaptive Forms](/help/forms/xfa-api-supported-in-adaptive-form.md)
         + [Design JSON Schema for an Adaptive Form](/help/forms/adaptive-form-json-schema-form-model.md)
         + [Improve performance of large forms with lazy loading](/help/forms/lazy-loading-adaptive-forms.md)
+        + [Publishing and unpublishing forms and documents](/help/forms/publishing-unpublishing-forms.md)
       + Add components to an Adaptive Form {#add-components-to-an-adaptive-form}
         + [Use CAPTCHA in an Adaptive Form](/help/forms/captcha-adaptive-forms.md)
         + [Use hCaptcha in an Adaptive Form](/help/forms/integrate-adaptive-forms-hcaptcha.md)
@@ -742,10 +756,15 @@ user-guide-title: AEM as a Cloud Service
         + [Set layout of an Adaptive Form](/help/forms/layout-capabilities-adaptive-forms.md)
         + [Use Layout mode to resize components](/help/forms/resize-using-layout-mode.md)
         + [Create multi-step data capture experience](/help/forms/introduction-form-sequence.md)
+        + [Styling constructs for Adaptive Forms](/help/forms/styling-constructs-adaptive-forms.md)
         + [Apply inline CSS styles to individual Adaptive Form components](/help/forms/inline-style-adaptive-forms.md)
+        + [How to use Separator component in Adaptive Forms?](/help/forms/separator-component-in-adaptive-forms.md)
       + Add rules and use expressions in an Adaptive Form {#add-rules-and-use-expressions-in-an-adaptive-form}
         + [Add rules to an Adaptive Form](/help/forms/rule-editor.md)
         + [Add custom error handler using Rule Editor's Invoke service](/help/forms/add-custom-error-handler-adaptive-forms.md)
+        + [Grant rule editor access to select user groups](/help/forms/rule-editor-access-user-groups.md)
+        +  [Using SOM expressions in Adaptive Forms](/help/forms/using-som-expressions-adaptive-forms.md)
+        +  [Adaptive Form Expressions](/help/forms/adaptive-form-expressions.md)
       + Use [!DNL Adobe Sign] {#use-adobe-sign}
         + [Use Adobe Sign to e-sign an Adaptive Form](/help/forms/working-with-adobe-sign.md)
       + Configure Submit Actions and metadata submission {#configure-submit-actions-and-metadata-submission}
@@ -753,6 +772,8 @@ user-guide-title: AEM as a Cloud Service
         + [Configure redirect page](/help/forms/configuring-redirect-page.md)
         + [Configure asynchronous submission for an Adaptive Form](/help/forms/asynchronous-submissions-adaptive-forms.md)
         + [Create a custom Submit Action](/help/forms/custom-submit-action-form.md)
+        + [Add information from user data to form submission metadata](/help/forms/form-submission-metadata.md)
+        + [API to invoke Form Data Model (FDM) service from Adaptive Forms](/help/forms/invoke-form-data-model-services.md)
       + [Prefill Adaptive Form fields](/help/forms/prepopulate-adaptive-form-fields.md)
       + [Generate Document of Record](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
       + [Add support for new locales to an adaptive form](/help/forms/supporting-new-language-localization.md)
@@ -761,13 +782,17 @@ user-guide-title: AEM as a Cloud Service
         + [Reuse metadata properties of an Adaptive Form](/help/forms/reusing-adaptive-forms.md)
       + Improve accessibility of an Adaptive Form {#accessible-adaptive-forms}
         + [Create an accessible Adaptive Form](/help/forms/creating-accessible-adaptive-forms.md)
-      + [Configure Forms Portal](/help/forms/configure-forms-portal.md)
       + [Create and manage reviews](/help/forms/create-reviews-forms.md)
+      + [Associate submission reviewers with a form](/help/forms/adding-reviewers-form.md)
+      + [Create and manage reviews for an Adaptive Form](/help/forms/review-adaptiveforms-in-sites-page.md)
     + [Adaptive forms keywords](/help/forms/adaptive-forms-keywords.md)
     + [Previewing a form](/help/forms/previewing-forms.md)
   + Forms Centric Workflows {#create-form-centric-workflows}
+    + [Introduction to Forms-centric workflow](/help/forms/aem-forms-workflow.md)
     + [Use Forms-centric steps in a workflow + step reference](/help/forms/aem-forms-workflow-step-reference.md)
     + [Use variables in a Forms-centric workflow](/help/forms/variable-in-aem-workflows.md)
+    + [Dynamic User or Group Selection in AEM Workflow](/help/forms/dynamically-select-a-user-or-group-for-aem-workflow.md)
+    + [Manage Forms applications and tasks in AEM Inbox](/help/forms/manage-applications-inbox.md)
     + [Use the Out of Office option](/help/forms/configure-out-of-office-settings.md)
   + Communications APIs {#using-communications}
     + [Introduction to Communications APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md)
@@ -775,6 +800,7 @@ user-guide-title: AEM as a Cloud Service
     + [Communications APIs - Batch processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
     + [Install and configure Forms Designer](/help/forms/installing-configuring-designer.md)
     + [Use Forms Designer to create templates](/help/forms/use-forms-designer.md)
+    + [Changing Page Zero content in Designer](/help/forms/changing-page-zero-content-designer.md)
     + [Using custom fonts in PDF documents](/help/forms/use-custom-fonts.md)
     + [List of supported fonts in PDF documents](/help/forms/supported-out-of-the-box-fonts.md)
     + [Known issues, best practices, and frequently asked questions](/help/forms/communications-known-issues-limitations.md)
@@ -920,6 +946,7 @@ user-guide-title: AEM as a Cloud Service
       + [Load options from URL to a form](/help/edge/docs/forms/load-options-from-url.md)
       + [Customize the look of your forms​](/help/edge/docs/forms/style-theme-forms.md)
       + [Use rules to add dynamic behavior to a form](/help/edge/docs/forms/rules-forms.md)
+      + [Regex expressions for validations](/help/edge/docs/forms/regex-forms.md)
       + [Show a custom thank you message after form submission](/help/edge/docs/forms/thank-you-page-form.md)
     + Capabilities {#advanced-features-edge-delivery-services-forms}
       + [Use Form fragments](/help/edge/docs/forms/form-fragments.md)
