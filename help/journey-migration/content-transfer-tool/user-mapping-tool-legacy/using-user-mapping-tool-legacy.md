@@ -7,11 +7,12 @@ hidefromtoc: yes
 feature: Migration
 role: Admin
 ---
+
 # Using the User Mapping Tool (Legacy) {#using-user-mapping-tool}
 
 >[!INFO]
 >
->This documentation refers to a deprecated version of the tool. For more information on the latest version, see [User Mapping and Principal Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
+>This documentation refers to a deprecated version of the tool. For more information on the latest version, see [Group Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md).
 
 The User Mapping Tool uses an API that allows it to look up Adobe Identity Management System (IMS) users by email and return their IMS IDs. This API requires the user to create a Client ID for their organization, a Client Secret, and an Access or Bearer Token.  
 
