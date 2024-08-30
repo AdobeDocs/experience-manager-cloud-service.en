@@ -1,14 +1,16 @@
 ---
 title: What are Reference Adaptive Form Fragments?
-description: AEM Forms provides Adaptive Form Fragments that you can use as assets to create forms quickly.  
+description: AEM Forms provides Adaptive Form Fragments that you can use as assets to create forms quickly.
 uuid: 85401274-6691-4726-8b70-b93fd46de053
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
-docset: aem65
-
+feature: Adaptive Forms
+role: User
+hide: yes
+hidefromtoc: yes
+exl-id: b01ca24b-aa39-4b30-9d55-224b103a1e83
 ---
-
 # Reference Adaptive Form Fragments {#reference-adaptive-form-fragments}
 
 Adaptive Form Fragment is a group of fields, or a panel containing a group of fields that you can use when you create a form. It lets you create a form easily and quickly. You can drag-drop an Adaptive Form Fragment into a form using the assets browser in the sidebar, and you can edit it in the form editor.
