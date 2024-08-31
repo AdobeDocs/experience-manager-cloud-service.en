@@ -3,10 +3,10 @@ title: How to save the Core Components based Adaptive Form as a draft and use th
 description: Learn how to save Core Components based Adaptive Form as a draft. Also understand how to use the Drafts and Submissions component to list drafts and submissions for logged-in users?
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
-role: User, Developer, Admin
+role: User, Developer
 ---
 
-# Save forms as Drafts and list them on Sites page
+# Save forms as drafts and list them on Sites page
 
 <span class="preview"> This article contains content about the **Auto Save** feature, a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
 
@@ -38,6 +38,8 @@ The **Drafts & Submissions** component needs a storage setup for saving and list
 1. Specify the name of the [!DNL Azure] storage account in the **[!UICONTROL Azure Storage Account]** and **[!UICONTROL Azure Access Key]** fields.
 
     ![Azure Storage Configuration](/help/forms/assets/save-form-as-draft-azure-storage.png)
+
+    Enter `Connection String` in the `Azure Storage Account` textbox and  `Azure Key` in the `Azure Access key` textbox.
 
 1. Click **Save**.
 
@@ -77,7 +79,7 @@ You can use out-of-the-box Forms Portal components to list drafts and submission
     ![Policy Selection](/help/forms/assets/save-form-as-draft-enable-policy.png)
 
 1. Click **[!UICONTROL Done]**.
-1. Now, re-open the AEM Sites page in the authoring mode.
+1. Now re-open the AEM Sites page in the authoring mode.
 1. Locate the section within the page editor that allows you to add the Forms Portal component. 
 1. Click the **Add** icon. The icon is a plus sign (+) that signifies the option to add new components.
     

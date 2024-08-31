@@ -138,6 +138,8 @@ Additional properties include:
 >[!NOTE]
 >The Purge Key must be configured as a [secret type Cloud Manager Environment Variable](/help/operations/config-pipeline.md#secret-env-vars), before the configuration referencing it is deployed.
 
+You may reference [a tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) focused on configuring purge keys and performing the CDN cache purge.
+
 ## Basic Authentication {#basic-auth}
 
 >[!NOTE]
