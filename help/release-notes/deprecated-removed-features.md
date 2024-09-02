@@ -12,8 +12,7 @@ role: Admin
 >title="Deprecated and Removed Features in AEM as a Cloud Service"
 >abstract="AEM as a Cloud Service has a cloud-native deployment model. Certain capabilities and features have been repalced by cloud-native counterparts and this tab shows those features." 
 
-
-Adobe constantly evaluates product capabilities, to over time reinvent or replace older features with more modern alternatives to improve overall customer value, always under careful consideration of backward compatibility. Also, as [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] provides a cloud-native deployment model, certain capabilities and features were replaced by cloud-native counterparts.
+Adobe constantly evaluates product capabilities to, over time, reinvent or replace older features with more modern alternatives to improve overall customer value, always under careful consideration of backward compatibility. Also, as [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] provides a cloud-native deployment model, certain capabilities and features were replaced by cloud-native counterparts.
 
 To communicate the impending removal/replacement of [!DNL Experience Manager] capabilities, the following rules apply:
 
