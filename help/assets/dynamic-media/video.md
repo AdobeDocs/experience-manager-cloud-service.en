@@ -137,7 +137,7 @@ OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that sup
 * Configure video players to meet your branding needs.
 * Integrate video to your website, mobile site, or mobile application with a simple URL or embed code.
 
-See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample.
+<!-- GIVES a 404 See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
 See also [Viewers for Experience Manager Assets and Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) and [Viewers for Experience Manager Assets only](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) in the [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources).
 
@@ -556,7 +556,7 @@ Enabling any of the above three capabilities, enables all of them. So, if you on
 
 ## About multiple caption and audio track support for videos in Dynamic Media{#about-msma}
 
-With multiple caption and audio track capability in Dynamic Media, you can easily add multiple captions and audio tracks to a primary video. This capability means that your videos are accessible across a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the captions and audio tracks from a single tab in the user interface.
+With multiple caption and audio track capability in Dynamic Media, you can easily add multiple captions and audio tracks to a primary video. This capability means that your videos are accessible to a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the captions and audio tracks from a single tab in the user interface.
 
    ![Captions and audio tracks tab in Dynamic Media along with a table showing uploaded .VTT caption files and uploaded .MP3 audio track files for a video.](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
 
@@ -595,7 +595,7 @@ Added captions and captions are supported with WebVTT and Adobe VTT formats. And
 1. In asset selection mode, either from the List View or the Card View, select the video asset.
 1. On the toolbar, select the Properties icon (a circle with an "i" in it). 
 
-   ![Asset properties button.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Selected video asset in Card view.*
+   ![Asset properties button.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Selected video asset in Card View.*
 
 1. On the video's Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab.
 
@@ -603,16 +603,16 @@ Added captions and captions are supported with WebVTT and Adobe VTT formats. And
    >[!TIP]
    >If you do not see the [!UICONTROL Captions & Audio Tracks] tab, it means either one of two things:
    >* The folder in which the selected video resides does not have a video profile assigned to it. In which case, see [Apply a video profile to the folder](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
-   >* Or, the video must be reprocessed by Dynamic Media. In which case, see [Reprocess Dynamic Media assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+   >* Or, Dynamic Media must reprocess the video. In which case, see [Reprocess Dynamic Media assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
     When you have completed either one of the above tasks, return to these steps.
 
-   ![Asset properties](/help/assets/dynamic-media/assets/msma-audiotracks.png)*Captions and Audio Tracks tab on the video's Properties page.*
+   ![Asset properties](/help/assets/dynamic-media/assets/msma-audiotracks.png)*Captions and audio tracks tab on the video's Properties page.*
 
 1. (Optional) To add one or more caption files to a video, do the following:
 
     * Select **[!UICONTROL Upload Captions]**.
-    * Navigate to, and select, one or more .vtt (Video Text Tracks) files and open them.
+    * Navigate to, and select, one or more `.vtt` (Video Text Tracks) files and open them.
     * For captions to be visible on the media player, you must add required details (metadata) about each caption file that you uploaded. Select the pencil icon to the right of a caption file name. In the Edit Caption dialog box, enter the following required details about the file, then select **[!UICONTROL Save]**. Repeat this process for each caption file that you uploaded:
 
 
@@ -620,7 +620,7 @@ Added captions and captions are supported with WebVTT and Adobe VTT formats. And
     | --- | --- | 
     Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional caption files and audio track files. |
     | Language | Select the language of the caption. |
-    | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text also includes background noises, speaker differentiation, and other relevant information, along with the translation or transcription of the dialogue, making the content more accessible for individuals who are deaf or hard of hearing. |
+    | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text includes background noises and speaker identification. It also includes other relevant details alongside the translation or transcription of dialogue. This functionality makes the content more accessible to individuals who are deaf or hard of hearing. |
     | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, English (CC). |
 
     You can change or edit caption metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
@@ -629,7 +629,7 @@ Added captions and captions are supported with WebVTT and Adobe VTT formats. And
 
     * Select **[!UICONTROL Upload Audio Tracks]**.
     * Navigate to, and select, one or more .mp3 files and open them.
-    * For audio tracks to be visible in the **[!UICONTROL Select audio or caption]** pop-up list on the media player, you must add required details about each audio track file that you added. Select the pencil icon to the right of an audio track file name. In the Edit Audio Track dialog box, enter the following required details, then select **[!UICONTROL Save]**. Repeat this process for each audio track file that you uploaded.
+    * To make audio tracks visible in the **[!UICONTROL Select audio or caption]** pop-up list on the media player, add the required details for each audio track file. Ensure you include all necessary information for proper display. Select the pencil icon to the right of an audio track file name. In the Edit Audio Track dialog box, enter the following required details, then select **[!UICONTROL Save]**. Repeat this process for each audio track file that you uploaded.
 
     | Audio Track metadata | Description |
     | --- | --- |
@@ -925,7 +925,7 @@ In the **Set as default** dialog box, select **[!UICONTROL Replace]**.
 1. In the upper-right corner, select **[!UICONTROL Save & Close]**.
 1. Publish the video. See [Publish assets](publishing-dynamicmedia-assets.md).
 
-### Preview a video that has multiple captions and audio tracks{#preview-video-audio-subtitle}
+### Preview a video that has multiple captions and audio tracks {#preview-video-audio-subtitle}
 
 After caption files and audio track files are uploaded to a video and processed, you can use the Dynamic Media video viewer to preview all the different tracks. Doing so helps you to see what your video looks and sounds like to customers and ensures that it is behaving as expected.
 
@@ -987,7 +987,7 @@ The original audio track extracted from a primary video file cannot be downloade
 
 **Use case:** Downloading a caption file might be necessary if you find an error in a `.vtt` file. Simply download the incorrect `.vtt` file, open it in a plain text editor, and make your corrections. After saving the `.vtt` file, upload it again. Then, use the **[!UICONTROL Translate Captions]** option to re-translate the corrected `.vtt` file.
 
-**To download caption or audio track files from a video:**
+**To download caption or audio track files that were uploaded to a video:**
 
 1. Navigate to the video asset whose default audio track you want to set.
 1. In asset selection mode, either from the List View or the Card View, select the video asset.
@@ -1176,7 +1176,7 @@ When the thumbnail is changed for a video, thumbnail generation by way of Asset 
 
 The ability to customize a video thumbnail is only available after you have applied a video profile to the folder where the video is located.
 
-### Adding a custom video thumbnail {#adding-a-custom-video-thumbnail}
+### Add a custom video thumbnail {#adding-a-custom-video-thumbnail}
 
 1. Be sure you have already done the following:
 
@@ -1343,8 +1343,8 @@ The API returns null if there are errors. Exceptions are logged in Experience Ma
     * The `onlyIfPublished` parameter is passed as true, but the video is not published. 
     * The video was not ingested using an Adaptive Video Set from Dynamic Media.
 
-*   `IOException` gets logged when there is an issue connecting to Dynamic Media. 
-*   `UnsupportedOperationException` gets logged when a `manifestType` parameter passed is `ManifestType.DASH`, while the video has not been processed using DASH format. 
+* `IOException` gets logged when there is an issue connecting to Dynamic Media. 
+* `UnsupportedOperationException` gets logged when a `manifestType` parameter passed is `ManifestType.DASH`, while the video has not been processed using DASH format. 
 
 <!-- THE REMAINING SECTION IS FOR 6.5 ONLY 
 
