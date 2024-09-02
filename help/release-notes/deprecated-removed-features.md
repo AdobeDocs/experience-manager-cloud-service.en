@@ -91,12 +91,6 @@ Below is an extensive list of deprecated AEM APIs and their expected removal dat
     <td>removed</td>
   </tr>
   <tr>
-    <td>org.apache.sling.settings</td>
-    <td>AEM as a Cloud Service does not support run modes or file system access at runtime. </td>
-    <td>10/5/20</td>
-    <td>End of 2021</td>
-  </tr>
-  <tr>
     <td>org.apache.fop.apps</td>
     <td></td>
     <td>3/1/21</td>
