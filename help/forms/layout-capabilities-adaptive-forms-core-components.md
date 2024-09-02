@@ -321,8 +321,6 @@ You can also add the required validations for the components as required.
 
 You can replace a layout of a form with a new layout, which involves modifying how components are arranged and displayed within a form. 
 
-
-
 Perform the following steps to replace the existing layout of a form:
 
 1. Click the Replace icon from the toolbar of the layout component and the **[!UICONTROL Replace Component]** dialog box appears.
