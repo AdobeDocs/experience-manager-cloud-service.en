@@ -25,6 +25,8 @@ All purge variations share the following:
 >[!CAUTION]
 >Purging the CDN cache, especially with the hard flag, will increase traffic at the origin and could lead to an outage when not executed properly.
 
+You may reference [a tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) focused on configuring purge keys and performing the CDN cache purge.
+
 ## Single URL purge {#single-purge}
 
 You can purge a single resource at a time as follows:

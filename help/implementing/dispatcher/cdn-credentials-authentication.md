@@ -69,6 +69,29 @@ Additional properties include:
 >[!NOTE]
 >The Edge Key must be configured as a [secret type Cloud Manager environment variable](/help/operations/config-pipeline.md#secret-env-vars), before the configuration referencing it is deployed.
 
+### Migrating safely to reduce the risk of blocked traffic {#migrating-safely}
+
+If your site is already live, exercise caution when migrating to customer-managed CDN since a misconfiguration can block public traffic; this is because only requests with the expected X-AEM-Edge-Key header value will be accepted by the Adobe CDN. An approach is recommended where an additional condition is temporarily included in the authentication rule, which causes it to only evaluate the request if a test header is included:
+
+```
+    - name: edge-auth-rule
+        when:
+          allOf:  
+            - { reqProperty: tier, equals: "publish" }
+            - { reqHeader: x-edge-test, equals: "test" }
+        action:
+          type: authenticate
+          authenticator: edge-auth
+```
+
+The following `curl` request pattern can be used:
+
+```
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <CONFIGURED_EDGE_KEY>" -H "x-edge-test: test"
+```
+
+After successfully testing, the additional condition can be removed and the configuration redeployed.
+
 ## Purge API Token {#purge-API-token}
 
 Customers can [purge the CDN cache](/help/implementing/dispatcher/cdn-cache-purge.md) by using a declared Purge API token. The token is declared in a file named `cdn.yaml` or similar, somewhere under a top-level `config` folder. Read [Using Config Pipelines](/help/operations/config-pipeline.md#folder-structure) for details about the folder structure and how to deploy the configuration. 
@@ -114,6 +137,8 @@ Additional properties include:
 
 >[!NOTE]
 >The Purge Key must be configured as a [secret type Cloud Manager Environment Variable](/help/operations/config-pipeline.md#secret-env-vars), before the configuration referencing it is deployed.
+
+You may reference [a tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) focused on configuring purge keys and performing the CDN cache purge.
 
 ## Basic Authentication {#basic-auth}
 
