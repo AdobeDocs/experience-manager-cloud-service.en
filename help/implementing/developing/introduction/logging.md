@@ -138,12 +138,13 @@ AEM Log levels are set per environment type via OSGi configuration, which in tur
 
 AEM Java logs are defined as OSGi configuration, and thus target specific AEM as a Cloud Service environments using run mode folders.
 
-Configure java logging for custom Java packages via OSGi configurations for the Sling LogManager factory. There are two supported configuration properties:
+Configure java logging for custom Java packages via OSGi configurations for the Sling LogManager factory. There are three supported configuration properties:
 
 | OSGi Configuration property  | Description  |
 |---|---|
-| org.apache.sling.commons.log.names | The Java packages for which to collect log statements.  |
-| org.apache.sling.commons.log.level | The log level at which to log the Java packages, specified by org.apache.sling.commons.log.names  |
+| `org.apache.sling.commons.log.names` | The Java packages for which to collect log statements.  |
+| `org.apache.sling.commons.log.level` | The log level at which to log the Java packages, specified by `org.apache.sling.commons.log.names`  |
+| `org.apache.sling.commons.log.file`| Specify the target for the output: `logs/error.log`|
 
 Changing other LogManager OSGi configuration properties may result in availability issues in AEM as a Cloud Service.
 
@@ -157,6 +158,7 @@ The following are examples of the recommended logging configurations (using the 
 {
     "org.apache.sling.commons.log.names": ["com.example"],
     "org.apache.sling.commons.log.level": "debug"
+    "org.apache.sling.commons.log.file": "logs/error.log"
 }
 ```
 
@@ -168,6 +170,7 @@ The following are examples of the recommended logging configurations (using the 
 {
     "org.apache.sling.commons.log.names": ["com.example"],
     "org.apache.sling.commons.log.level": "warn"
+    "org.apache.sling.commons.log.file": "logs/error.log"
 }
 ```
 
@@ -179,6 +182,7 @@ The following are examples of the recommended logging configurations (using the 
 {
     "org.apache.sling.commons.log.names": ["com.example"],
     "org.apache.sling.commons.log.level": "error"
+    "org.apache.sling.commons.log.file": "logs/error.log"
 }
 ```
 
