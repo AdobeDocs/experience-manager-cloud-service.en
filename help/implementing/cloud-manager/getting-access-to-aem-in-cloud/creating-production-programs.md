@@ -37,7 +37,7 @@ Depending on your organization's entitlements, you may see [additional options](
    * Click **Add a program image**, then select an image from a file browser.
    * Click the trash can icon to delete an image that you added.
    
-1. Click **Continue**.
+1. Click **Continue**. 
 
 1. In the **Solutions &amp; Add-ons** list box, select one or more solutions to include in the program.
 
