@@ -42,6 +42,10 @@ The following table summarizes the available Content Hub user types, the privile
 | Adobe Express| &minus;  | &minus; | &#10003;  |&minus;|
 | **More information**          | See [Content Hub users](#onboard-content-hub-users) |  See [Content Hub users with rights to add assets](#onboard-content-hub-users-add-assets) |   See [Content Hub users with rights to remix assets to new variations](#onboard-content-hub-users-remix-assets)    |See [Content Hub administrators](#onboard-content-hub-administrator)|
 
+>[!NOTE]
+>
+>[Experience Manager Assets users](#experience-manager-assets-users) have the ability to approve assets on Experience Manager Assets as a Cloud Service to make those assets available on Content Hub. These users must be added to AEM > Production Author instance > AEM Users product profile using Admin Console.
+
 ## Step 1: Enable Content Hub for Experience Manager Assets using Cloud Manager {#enable-content-hub}
 
 To access the Content Hub portal, administrators first need to enable Content Hub for Experience Manager Assets as a Cloud Service using Cloud Manager. Execute the following steps:
