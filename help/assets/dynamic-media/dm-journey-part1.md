@@ -14,6 +14,8 @@ exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
 ---
 # Dynamic Media Journey: The Basics, Part I {#dm-journey-part1}
 
+{{#work-with-dynamic-media}}
+
 Welcome to the Dynamic Media Journey.
 
 This journey covers the basics of Dynamic Media, how it works, what it can do for you, and what value it brings to your work and your customers.

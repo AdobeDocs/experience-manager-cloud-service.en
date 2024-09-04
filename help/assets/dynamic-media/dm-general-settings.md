@@ -15,6 +15,8 @@ exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
 <!-- hide: yes
 hidefromtoc: yes -->
 
+{{#work-with-dynamic-media}}
+
 Configuring **[!UICONTROL Dynamic Media General Settings]** is available only if:
 
 * You have an *existing* **[!UICONTROL Dynamic Media Configuration]** (in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager as a Cloud Service. See [Create a Dynamic Media Configuration in Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
@@ -64,7 +66,7 @@ On account creation, Adobe Dynamic Media automatically provides the assigned ser
 
 * **[!UICONTROL Overwrite Images]**
 
-    Adobe Dynamic Media does not allow two files to have the same name. Each item’s Adobe Dynamic Media ID (the image name minus the filename extension) must be unique. Because of this rule, **[!UICONTROL Upload to Application]** has an overwrite. The exact effect of this option depends on the specified Overwrite Images option you have chosen. These options specify how replacement images are uploaded: whether they replace the original images, or become duplicate images. Duplicate images are renamed with a `-1`. For example, `chair.tif` is renamed `chair-1.tif`. These options affect images uploaded to a different folder than the original or images with a different filename extension from the original, such as JPG, TIF, or PNG.
+    Adobe Dynamic Media does not allow two files to have the same name. Each item's Adobe Dynamic Media ID (the image name minus the filename extension) must be unique. Because of this rule, **[!UICONTROL Upload to Application]** has an overwrite. The exact effect of this option depends on the specified Overwrite Images option you have chosen. These options specify how replacement images are uploaded: whether they replace the original images, or become duplicate images. Duplicate images are renamed with a `-1`. For example, `chair.tif` is renamed `chair-1.tif`. These options affect images uploaded to a different folder than the original or images with a different filename extension from the original, such as JPG, TIF, or PNG.
 
     >[!NOTE]
     >
@@ -89,22 +91,22 @@ On account creation, Adobe Dynamic Media automatically provides the assigned ser
 
 This filter lets you fine-tune a sharpening filter effect on the final downsampled image. It helps you control the intensity of the effect, the radius of the effect (as measured in pixels), and a threshold of contrast that is ignored.
 
-The Unsharp Mask effect uses the same options as Photoshop’s Unsharp Mask filter. Contrary to what the name suggests, Unsharp Mask is a sharpening filter.
+The Unsharp Mask effect uses the same options as Photoshop's Unsharp Mask filter. Contrary to what the name suggests, Unsharp Mask is a sharpening filter.
 
 | Unsharp Mask options |Description |
 | --- | --- |
 | **[!UICONTROL Amount]** | Required.<br>Controls the amount of contrast that is applied to edge pixels.<br>Think of it as the intensity of the effect. The main difference between the amount values of Unsharp Mask in Adobe Dynamic Media and the amount values in Adobe Photoshop, is that Photoshop has an amount range of 1% to 500%. Whereas in Adobe Dynamic Media, the value range is `0.0` to `5.0`. A value of 5.0 in Adobe Dynamic Media is the rough equivalent of 500% in Photoshop; a value of 0.9 is the equivalent of 90%, and so on. |
 | **[!UICONTROL Radius]** | Required.<br>Controls the radius of the effect.<br>The value range is `0` to `250`. The effect is run on all pixels in an image and radiates out from all pixels in all directions. The radius is measured in pixels. For example, to get a similar sharpening effect for a 2000 x 2000 pixel image and 500 x 500 pixel image, you would set a radius of two pixels on the 2000 x 2000 pixel image. Then set a radius value of one pixel on the 500 x 500 pixel image. A larger value is used for an image that has more pixels. |
-| **[!UICONTROL Threshold]** | Required.<br>Threshold is a range of contrast that is ignored when the Unsharp Mask filter is applied. This effect is important so that no "noise" is introduced to an image when this filter is used. The value range is `0` - `255`, which is the number of brightness steps in a grayscale image. `0`=black, `128`=50% gray and `255`=white.<br>A threshold value of `12` ignores slight variations is skin tone brightness to avoid adding noise, but still add edge contrast to contrasty areas such as where eyelashes meet skin.<br>If you have a photo of someone’s face, the Unsharp Mask affects the contrasty parts of the image. For example, where eyelashes and skin meet to create an obvious area of contrast, and the smooth skin itself. Even the smoothest skin exhibits subtle changes in brightness values. If you do not use a threshold value, the filter accentuates these subtle changes in skin pixels. In turn, a noisy and undesirable effect is created while contrast on the eyelashes is increased, enhancing sharpness.<br>To avoid this issue, a threshold value is introduced that tells the filter to ignore pixels that do not change contrast dramatically, like smooth skin.<br>In the zipper graphic shown earlier, notice the texture next to the zippers. Image noise is exhibited because the threshold values were too low to suppress the noise. |
+| **[!UICONTROL Threshold]** | Required.<br>Threshold is a range of contrast that is ignored when the Unsharp Mask filter is applied. This effect is important so that no "noise" is introduced to an image when this filter is used. The value range is `0` - `255`, which is the number of brightness steps in a grayscale image. `0`=black, `128`=50% gray and `255`=white.<br>A threshold value of `12` ignores slight variations is skin tone brightness to avoid adding noise, but still add edge contrast to contrasty areas such as where eyelashes meet skin.<br>If you have a photo of someone's face, the Unsharp Mask affects the contrasty parts of the image. For example, where eyelashes and skin meet to create an obvious area of contrast, and the smooth skin itself. Even the smoothest skin exhibits subtle changes in brightness values. If you do not use a threshold value, the filter accentuates these subtle changes in skin pixels. In turn, a noisy and undesirable effect is created while contrast on the eyelashes is increased, enhancing sharpness.<br>To avoid this issue, a threshold value is introduced that tells the filter to ignore pixels that do not change contrast dramatically, like smooth skin.<br>In the zipper graphic shown earlier, notice the texture next to the zippers. Image noise is exhibited because the threshold values were too low to suppress the noise. |
 | **[!UICONTROL Monochrome]** | Select to unsharp-mask image brightness (intensity).<br>Deselect to unsharp-mask each color component separately. |
 
 See also [Sharpen images in Adobe Dynamic Media and on Image Server](https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf?lang=en).
 
 ### PostScript tab {#postscript-tab}
 
-You can rasterize Adobe PostScript® files, maintain transparent backgrounds, choose a resolution, and choose a color space.
+You can rasterize Adobe PostScript&reg; files, maintain transparent backgrounds, choose a resolution, and choose a color space.
 
-You can use Adobe PostScript® (EPS) files in Adobe Dynamic Media. Adobe Dynamic Media offers commands for configuring these files as you upload them.
+You can use Adobe PostScript&reg; (EPS) files in Adobe Dynamic Media. Adobe Dynamic Media offers commands for configuring these files as you upload them.
 
 When you upload PostScript (EPS) image files, you can format them in various ways. You can rasterize the files, maintain the transparent background, choose a resolution, and choose a color space.
 
@@ -117,7 +119,7 @@ When you upload PostScript (EPS) image files, you can format them in various way
 
 ### Photoshop tab {#photoshop-tab}
 
-You can create templates from Adobe® Photoshop® files, maintain layers, specify how layers are named, extract text, and specify how images are anchored into templates.
+You can create templates from Adobe&reg; Photoshop&reg; files, maintain layers, specify how layers are named, extract text, and specify how images are anchored into templates.
 
 | Photoshop option | Description |
 | --- | --- |
@@ -143,9 +145,9 @@ You can choose to rasterize the files, extract search words and links, set the r
 
 ### Illustrator tab {#illustrator-tab}
 
-You can rasterize Adobe Illustrator® files, maintain transparent backgrounds, choose a resolution, and choose a color space.
+You can rasterize Adobe Illustrator&reg; files, maintain transparent backgrounds, choose a resolution, and choose a color space.
 
-You can use Adobe® Illustrator® (AI) files in Adobe Dynamic Media. Adobe Dynamic Media offers commands for configuring these files as you upload them.
+You can use Adobe&reg; Illustrator&reg; (AI) files in Adobe Dynamic Media. Adobe Dynamic Media offers commands for configuring these files as you upload them.
 
 When you upload Illustrator (AI) image files, you can format them in various ways. You can rasterize the files, maintain the transparent background, choose a resolution, and choose a color space. Options for formatting PostScript and Illustrator files are available on the Upload screen under PostScript Options and Illustrator Options in the Upload Job Options box.
 

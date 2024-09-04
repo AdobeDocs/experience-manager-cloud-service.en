@@ -15,6 +15,8 @@ exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
 <!-- hide: yes
 hidefromtoc: yes -->
 
+{{#work-with-dynamic-media}}
+
 Configuring Dynamic Media Publish Setup is available only if:
 
 * You have an *existing* **[!UICONTROL Dynamic Media Configuration]** (in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager as a Cloud Service. See [Create a Dynamic Media Configuration in Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
