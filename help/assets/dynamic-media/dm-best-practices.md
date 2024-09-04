@@ -27,7 +27,7 @@ In the accompanying guide, you'll find a comprehensive list of best practices fo
 
 Stage Business Problem Best Practice Recommendation: This section will outline specific business challenges and provide targeted best practices and recommendations to address them effectively. -->
 
-{{#work-with-dynamic-media}}
+{{work-with-dynamic-media}}
 
 Organizations face an explosion of channels and devices for engaging with users. The customer journey spans physical stores, web, mobile, social media, emails, and commerce. To meet this demand, Dynamic Media on Adobe Experience Manager (AEM) offers a comprehensive solution. It optimizes asset delivery, handles personalization, and ensures consistent, performant, and brand-aligned experiences across channels and devices.
 

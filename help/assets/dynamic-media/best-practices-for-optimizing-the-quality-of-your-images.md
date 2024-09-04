@@ -8,7 +8,7 @@ exl-id: 2efc4a27-01d7-427f-9701-393497314402
 ---
 # Best practices for optimizing the quality of your images {#best-practices-for-optimizing-the-quality-of-your-images}
 
-{{#work-with-dynamic-media}}
+{{work-with-dynamic-media}}
 
 Optimizing image quality can be a time consuming process as many factors contribute to rendering acceptable results. The outcome is partly subjective because individuals perceive image quality differently. Structured experimentation is key.
 

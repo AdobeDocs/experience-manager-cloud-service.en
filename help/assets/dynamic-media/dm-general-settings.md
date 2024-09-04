@@ -15,7 +15,7 @@ exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
 <!-- hide: yes
 hidefromtoc: yes -->
 
-{{#work-with-dynamic-media}}
+{{work-with-dynamic-media}}
 
 Configuring **[!UICONTROL Dynamic Media General Settings]** is available only if:
 
