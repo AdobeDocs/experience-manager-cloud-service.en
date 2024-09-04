@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 ---
 # Create sandbox programs {#create-sandbox-program}
 
-A sandbox program is typically created to serve the purposes of training, running demos, enablement, POCs, or documentation, and is not meant to carry live traffic.
+A sandbox program is typically created to serve the purposes of training, running demos, enablement, POCs, or documentation, and is not meant to carry live traffic. See [Introduction to sandbox programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
 
 Learn more about program types in the document [Understanding Program and Program Types](program-types.md).
 
@@ -37,7 +37,7 @@ Learn more about program types in the document [Understanding Program and Progra
 1. In the **Solutions &amp; Add-ons** list box, select one or more solutions to include in the program.
    
    * Click the chevron to the left of a solution name to reveal any available optional add-ons that you want to include with a selected solution.
-   * The **Sites**, **Assets**, and **Edge Delivery** solutions are always selected by default when you create a sandbox program. You cannot de-select them.
+   * The **Sites**, **Assets**, and **Edge Deliver Servicesy** solutions are always selected by default when you create a sandbox program. You cannot de-select them.
 
    ![Select solutions and add-ons for a sandbox](assets/sandbox-solutions-add-ons.png)
 

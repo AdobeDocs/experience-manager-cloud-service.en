@@ -1,5 +1,5 @@
 ---
-title: Creating Production Programs 
+title: Create Production Programs
 description: Learn how to use Cloud Manager to create your own production program to host live traffic.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
@@ -43,7 +43,8 @@ Depending on your organization's entitlements, you may see [additional options](
 
    * If you are not sure if you need one or more programs for the various solutions you have available, select the one most of interest to you. You can activate additional solutions by [editing the program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) later. See the [Introduction to Production Programs document](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) for more program setup recommendations.
    * At least one solution is required for program creation.
-   * If you selected the **[Enable Enhanced Security](#security)** option, you are allowed to select only as many solutions for which HIPAA entitlements are available.
+   * Select **Edge Deliver Services** for a fully managed CDN solution that optimizes digital experiences. See [About using Edge Delivery Services to deliver your Cloud Manager project](#edge-overview)
+   * If you selected the **[Enable Enhanced Security](#security)** option, you can select only as many solutions for which HIPAA entitlements are available.
 
    ![Select solutions](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
 
@@ -124,8 +125,10 @@ Beyond the required entitlements, 99.99% SLA has additional requirements for use
 
 >[!TIP]
 >
->Please see the document [Navigating the Cloud Manager UI](/help/implementing/cloud-manager/navigation.md) for details on how to navigate Cloud Manager and understanding the **My Programs** console.
+>See [Navigate the Cloud Manager UI](/help/implementing/cloud-manager/navigation.md) for details on how to navigate Cloud Manager and understanding the **My Programs** console.
 
 >[!NOTE]
 >
 >Unlike a [sandbox program](introduction-sandbox-programs.md#auto-creation), a production program requires the user in the appropriate Cloud Manager role to create the project and add an environment through the self-service UI.
+
+
