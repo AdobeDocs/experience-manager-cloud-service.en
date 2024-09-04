@@ -48,13 +48,13 @@ The workflow is thus a standard git workflow.
 
 The only difference is that the remote git repository is part of Cloud Manager, which is transparent to the developer.
 
-## Program Types {#program-types}
+## Program types {#program-types}
 
 A user can create a **production** program or a **sandbox** program.
 
 * A **production program** is created to enable live traffic for your site.
   * See [Introduction to Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) for more details.
 * A **sandbox program** is typically created to serve the purposes of training, running demos, enablement, POCs, or documentation.
-  * A sandbox environment is not meant to carry live traffic and will have restrictions that a production program will not.
-  * It includes Sites and Assets and is delivered auto-populated with a git branch that includes sample code, a development environment, and a non-production pipeline.
+  * A sandbox environment is not meant to carry live traffic and has restrictions that a production program does not.
+  * It includes Sites, Assets, and Edge Delivery Services, and is delivered auto-populated with a git branch that includes sample code, a development environment, and a non-production pipeline.
   * See [Introduction to Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) for more details.
