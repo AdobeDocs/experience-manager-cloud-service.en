@@ -18,13 +18,33 @@ The variations of privileges on Content Hub include:
 
 * [Content Hub users](#onboard-content-hub-users): Access brand approved assets on the Content Hub portal.
 
-* [Content Hub Administrators](#onboard-content-hub-administrator): Access to the [Configuration User Interface](/help/assets/configure-content-hub-ui-options.md) on Content Hub in addition to accessing brand-approved assets, uploading assets to Content Hub, Adobe Express integration to edit images (if you have Adobe Express entitlements).
+* [Content Hub administrators](#onboard-content-hub-administrator): Access to the [Configuration User Interface](/help/assets/configure-content-hub-ui-options.md) on Content Hub in addition to accessing brand-approved assets, uploading assets to Content Hub, Adobe Express integration to edit images (if you have Adobe Express entitlements).
 
 * [Content Hub users with rights to add assets](#onboard-content-hub-users-add-assets): Ability to [upload assets to Content Hub](/help/assets/upload-brand-approved-assets.md) in addition to accessing brand approved assets on the Content Hub portal.
 
 * [Content Hub users with rights to remix assets to new variations](#onboard-content-hub-users-remix-assets): [Adobe Express Integration](/help/assets/edit-images-content-hub.md) (if you have Adobe Express entitlements) in addition to accessing brand approved assets on the Content Hub portal.
 
 * [Experience Manager Assets users](#experience-manager-assets-users): Ability to approve assets on Experience Manager Assets as a Cloud Service to make those assets available on Content Hub.
+
+The following table summarizes the available Content Hub user types, the privileges they have, and the product profiles that are required to get those privileges:
+
+| User Role    | Content Hub users | Content Hub users with rights to add assets  | Content Hub users with rights to remix assets | Content Hub administrators |
+|---------------|----------|----------|-------------------------|---|
+| **Capabilities**|
+| Access brand approved assets on the Content Hub portal |&#10003; | &#10003;|   &#10003;  |&#10003;|
+| Upload assets from Content Hub portal    | &minus; | &#10003; | &#10003;   |&#10003;|
+| Use Adobe Express integration to edit images     |  &minus; |  &minus; |     &#10003;   |&minus;|
+| Access the Content Hub configuration UI        | &minus; | &minus; |   &minus;   |&#10003;|
+| **User needs to be in these product profiles (Admin Console)**|
+| AEM > Delivery instance > AEM Assets Limited Users | &#10003;  | &#10003;  |   &#10003;     |&#10003;|
+| AEM > Production Author instance > AEM Users         | &minus; | &#10003; |   &#10003;    |&minus;|
+| AEM > Production Author instance > AEM Administrators |  &minus; | &minus; | &minus;  |&#10003;|
+| Adobe Express| &minus;  | &minus; | &#10003;  |&minus;|
+| **More information**          | See [Content Hub users](#onboard-content-hub-users) |  See [Content Hub users with rights to add assets](#onboard-content-hub-users-add-assets) |   See [Content Hub users with rights to remix assets to new variations](#onboard-content-hub-users-remix-assets)    |See [Content Hub administrators](#onboard-content-hub-administrator)|
+
+>[!NOTE]
+>
+>[Experience Manager Assets users](#experience-manager-assets-users) have the ability to approve assets on Experience Manager Assets as a Cloud Service to make those assets available on Content Hub. These users must be added to AEM > Production Author instance > AEM Users product profile using Admin Console.
 
 ## Step 1: Enable Content Hub for Experience Manager Assets using Cloud Manager {#enable-content-hub}
 
@@ -47,7 +67,7 @@ To access the Content Hub portal, administrators first need to enable Content Hu
 
 1. Click **[!UICONTROL Update]**.
 
-Content Hub is now enabled for Experience Manager Assets as a Cloud Service.
+Content Hub is now enabled for Experience Manager Assets as a Cloud Service. After enabling Content Hub on a Production environment, you cannot disable it in a self-service manner.
 
 >[!NOTE]
 >
