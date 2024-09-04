@@ -14,6 +14,8 @@ exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
 ---
 # Dynamic Media Journey: The Basics, part II  {#dm-journey-part2}
 
+{{work-with-dynamic-media}}
+
 Welcome to Dynamic Media Journey: The Basics, Part II where you can expect to learn the following:
 
 * Anatomy of a Dynamic Media URL and how Dynamic Media delivers content
