@@ -50,7 +50,7 @@ Depending on your use case, do one of the following:
 
 ## Recommended path for contracted customer {#recommended-path-eds}
 
-EDIT/REWRITE THIS SECTION
+EDIT/REWRITE THIS SECTION or MOVE TO CDN.MD ARTICLE?
 
     As a contracted customer you should ensure you get the benefits of your contract with Adobe by accessing and consuming your Edge Delivery Services license via Cloud Manager. This way you can leverage Adobe Managed CDN and reap benefits including the critical ones listed below.
     If for any reason (such as customer is not contracted with Adobe for an Edge Delivery Services license) and wishes to go direct and forgo the benefits that come with it (by not accessing and setting up via Cloud Manager), you can only take the path of using a customer managed CDN on aem.live.
