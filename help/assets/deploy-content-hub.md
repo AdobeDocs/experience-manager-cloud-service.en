@@ -44,7 +44,7 @@ The following table summarizes the available Content Hub user types, the privile
 
 >[!NOTE]
 >
->[Experience Manager Assets users](#experience-manager-assets-users) have the ability to approve assets on Experience Manager Assets as a Cloud Service to make those assets available on Content Hub. These users must be added to AEM > Production Author instance > AEM Users product profile using Admin Console.
+>[Experience Manager Assets users](#experience-manager-assets-users) have the ability to approve assets on an Experience Manager Assets as a Cloud Service environment to make those assets available on Content Hub. These users must be added to AEM > Production Author instance > AEM Users product profile using Admin Console.
 
 ## Step 1: Enable Content Hub for Experience Manager Assets using Cloud Manager {#enable-content-hub}
 
