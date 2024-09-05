@@ -91,7 +91,7 @@ As you analyze RUM data, there may be variances in page views and other performa
 1. **Can customers integrate the RUM service scripts with third-party systems like Dynatrace?**
 
    Yes.
--->
+--> 
 
 1. **Are "Interaction to next paint," "Time to first byte," and "First contentful paint" Web vitals Metrics being collected?**
 

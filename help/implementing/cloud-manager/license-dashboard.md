@@ -62,7 +62,7 @@ Each section summarizes what is available and how it is used, if at all. Current
 <!--
 The **View usage details** button gives access to the chosen solution's **Usage Details** window. This window gives a detailed breakdown including charts to show your solution's usage. How that usage is measured depends on the chosen solution. -->
 
-The **View usage details** button in the License area of Cloud Manager provides a detailed breakdown of your current resource usage. When clicked, it opens a report or dashboard that shows important metrics related to your license. <!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." --> This functionality helps you monitor and ensure that you are staying within the limits of your contract while offering insights for better resource planning and optimization.
+The **View usage details** button in the License area of Cloud Manager provides a detailed breakdown of your current resource usage. When clicked, it opens a report or dashboard that shows important metrics related to your license. <!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." --> This functionality helps you monitor and ensure that you are staying within the limits of your contract while offering insights for better resource planning and optimization. 
 
 ### Sites usage details {#sites-usage-details}
 
