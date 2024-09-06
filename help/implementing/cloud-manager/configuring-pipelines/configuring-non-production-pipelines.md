@@ -146,7 +146,7 @@ The steps to complete the creation of your non-production, targeted deployment p
    * **Git Branch** - This option defines from which branch in the selected pipeline should retrieve the code.
      * Enter the first few characters of the branch name and the auto-complete feature of this field. It finds the matching branches that you can select.
    * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
-   * **Pipeline** - For front-end non-production pipelines, you have the option to enable **[Experience Audit.](/help/implementing/cloud-manager/experience-audit-testing.md)**
+   * **Pipeline** - For front-end non-production pipelines, you have the option to enable **[Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md)**.
    
    ![Config pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 

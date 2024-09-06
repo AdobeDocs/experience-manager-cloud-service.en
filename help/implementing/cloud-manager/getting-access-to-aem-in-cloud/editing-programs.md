@@ -9,9 +9,9 @@ role: Admin, Architect, Developer
 
 # Edit programs {#editing-programs}
 
-To manage and edit programs, start at the [**My Programs** console.](/help/implementing/cloud-manager/navigation.md) The **My Programs** page provides an overview of all programs to which you have access. When selecting an individual program, the **Program Overview** page provides details of the program at a glance. 
+To manage and edit programs, start at the [**My Programs** console](/help/implementing/cloud-manager/navigation.md). The **My Programs** page provides an overview of all programs to which you have access. When selecting an individual program, the **Program Overview** page provides details of the program at a glance. 
 
-From the **Program Overview**, users with the requisite permissions can edit [production programs created in your organization](creating-production-programs.md) and [sandbox programs created in your organization.](creating-sandbox-programs.md) By editing a program, you can:
+From the **Program Overview**, users with the requisite permissions can edit [production programs created in your organization](creating-production-programs.md) and [sandbox programs created in your organization](creating-sandbox-programs.md). By editing a program, you can:
 
 * Add Sites solution to an existing program with Assets and conversely.
 * Remove Sites or Assets from an existing program with both Sites and Assets.
