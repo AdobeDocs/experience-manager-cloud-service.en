@@ -5,7 +5,7 @@ exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 ---
-# Edge Delivery Services Support in Cloud Manager {#edge-delivery-services}
+# Edge Delivery Services support in Cloud Manager {#edge-delivery-services}
 
 Learn how to use your Edge Delivery Services license to create an Edge Delivery Services site.
 
@@ -117,9 +117,11 @@ The **Edge Delivery to-do list** is an onboarding task checklist meant to guide 
 | 5 | Add SSL certificate | See [Add SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
 | 6 | Configure the CDN of your Edge Delivery site | See [Add a CDN configuration](#add-cdn). |
 
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on) (2 minutes, 13 seconds)
+
 ## Add a CDN configuration to your Edge Delivery site {#add-cdn}
 
-See [Add a CDN configuration](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-cdn).
+See [Add a CDN configuration](help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md).
 
 ## Delete an Edge Delivery site {#eds-site-delete}
 
