@@ -35,7 +35,7 @@ A user must be a member of the **Business Owner** or **Deployment Manager** role
 1. From the **Environments** screen, navigate to the **SSL Certificates** screen.
 1. In the row of the expired customer managed certificate that you want to update, click the ellipsis button at the far right, then select **View and Update**.
 
-   ![Updating an expired, customer managed SSL certification](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
+   ![Update an expired, customer managed SSL certification](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
 
 1. In the **View & Update SSL Certificate** dialog box, do the following:
 
@@ -50,7 +50,7 @@ A user must be a member of the **Business Owner** or **Deployment Manager** role
 
 Follow the same steps that are described in [Update an expired SSL Certificate](#update-ssl-certificate) to replace an expired, customer managed SSL certificate.
 
-## Delete an SSL or DV certificate {#deleting-an-ssl-certificate}
+## Delete an SSL certificate {#deleting-an-ssl-certificate}
 
 Deleting Adobe managed or customer managed SSL certificates from Cloud Manager is a permanent action that cannot be undone. As a best practice, Adobe recommends that you save SSL files locally before deleting them in Cloud Manager.
 

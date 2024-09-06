@@ -13,24 +13,24 @@ role: Admin
 >title="CDN in AEM as a Cloud Service"
 >abstract="AEM as Cloud Service is shipped with a built-in CDN. Its main purpose is to reduce latency by delivering cacheable content from the CDN nodes at the edge, near the browser. It is fully managed and configured for optimal performance of AEM applications."
 
-
 AEM as a Cloud Service comes with an integrated CDN, designed to reduce latency by delivering cacheable content from edge nodes close to the user's browser. This fully managed CDN is optimized for AEM application performance.
 
 The AEM-managed CDN meets most customers' performance and security needs. For the publish tier, customers can choose to route traffic through their own CDN, which they must manage. This option is available on a case-by-case basis, particularly when customers have existing legacy integrations with a CDN provider that are hard to replace.
 
-Customers looking to publish to the Edge Delivery Services tier can take advantage of Adobe's managed CDN. See [Adobe-managed CDN](#aem-managed-cdn). <!-- CQDOC-21758, 5b -->
+Customers looking to publish to the Edge Delivery Services tier can take advantage of Adobe's managed CDN. See [Adobe managed CDN](#aem-managed-cdn). <!-- CQDOC-21758, 5b -->
 
 
 <!-- ERROR: NEITHER URL IS FOUND (HTTP ERROR 404) Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) and [Cloud 5 AEM CDN Part 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) for additional information about CDN in AEM as a Cloud Service. -->
 
-## Adobe-managed CDN {#aem-managed-cdn}
+## Adobe managed CDN {#aem-managed-cdn}
 
 <!-- CQDOC-21758, 5a -->
 
-To use Cloud Manager self-service UI to prepare for content delivery using AEM's out-of-the-box CD, see the following:
+To prepare for content delivery using AEM's built-in CDN through Cloud Manager's self-service UI, you can take advantage of Adobe's managed CDN features. This functionality lets you handle self-service CDN management, including configuring and installing SSL certificates such as DV (Domain Validation) or EV/OV (Extended/Organization Validation) certificates. For more details on these methods, see the following:
 
-1. [Managing SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
-1. [Managing Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+* [Manage SSL certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+* [Manage custom domain names](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+* [Edge Delivery Services Support in Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md)
 
 **Restricting traffic**
 
@@ -67,7 +67,7 @@ Read about [configuring a purge API token](/help/implementing/dispatcher/cdn-cre
 
 For light authentication use cases including business stakeholders reviewing content, protect content by displaying a basic auth dialog requiring a username and password. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md) and join the early adopter program.
 
-## Customer-managed CDN points to AEM-managed CDN {#point-to-point-CDN}
+## Customer managed CDN points to AEM managed CDN {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
@@ -88,9 +88,9 @@ Configuration instructions:
 1. Set SNI to the Adobe CDN's ingress.
 1. Set the Host header to the origin domain. For example: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Set the `X-Forwarded-Host` header with the domain name so AEM can determine the host header. For example: `X-Forwarded-Host:example.com`.
-1. Set `X-AEM-Edge-Key`. The value should be configured using a Cloud Manager config pipeline, as described in [this article.](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)
+1. Set `X-AEM-Edge-Key`. The value should be configured using a Cloud Manager config pipeline, as described in [this article](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
-   * Needed so that the Adobe CDN can validate the source of the requests and pass the `X-Forwarded-*` headers to the AEM application. For example,`X-Forwarded-For` is used to determine the client IP. So, it becomes the responsibility of the trusted caller (that is, the customer-managed CDN) to ensure the correctness of the `X-Forwarded-*` headers (see the note below).
+   * Needed so that the Adobe CDN can validate the source of the requests and pass the `X-Forwarded-*` headers to the AEM application. For example,`X-Forwarded-For` is used to determine the client IP. So, it becomes the responsibility of the trusted caller (that is, the customer managed CDN) to ensure the correctness of the `X-Forwarded-*` headers (see the note below).
    * Optionally, access to Adobe CDN's ingress can be blocked when an `X-AEM-Edge-Key` is not present. Inform Adobe if you need direct access to Adobe CDN's ingress (to be blocked).
 
 See the [Sample CDN vendor configurations](#sample-configurations) section for configuration examples from leading CDN vendors.
@@ -123,7 +123,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->Sandbox program environments do not support a customer-provided CDN.
+>Sandbox program environments do not support a customer provided CDN.
 
 The extra hop between the customer CDN and the AEM CDN is only needed if there is a cache miss. By using the cache optimization strategies described in this article, the addition of a customer CDN should only introduce negligible latency.
 
@@ -170,14 +170,14 @@ To resolve this problem, assess your SSL redirect strategy, CDN rules, redirect 
 
 ## Geolocation headers {#geo-headers}
 
-The AEM-managed CDN adds headers to each request with:
+The AEM managed CDN adds headers to each request with:
 
 * country code: `x-aem-client-country`
 * continent code: `x-aem-client-continent`
 
 >[!NOTE]
 >
->If there is a customer-managed CDN, these headers reflect the location of the customer's CDN proxy server rather than the actual client. Customers should manage geolocation headers through their own CDN when using a customer-managed CDN.  
+>If there is a customer managed CDN, these headers reflect the location of the customer's CDN proxy server rather than the actual client. Customers should manage geolocation headers through their own CDN when using a customer managed CDN.  
 
 The values for the country codes are the Alpha-2 codes described under [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1).
 
