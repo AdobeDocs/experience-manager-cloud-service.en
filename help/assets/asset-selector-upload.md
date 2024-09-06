@@ -22,13 +22,13 @@ To add assets to Asset Selector, perform the following steps:
 
     You can also preview selected images using the thumbnails and click the X icon to remove any particular image from the list. The X icon displays only when you hover your mouse over the image name or size. You can also click **[!UICONTROL Remove all]** to delete all items from your upload list.
 
-1. To finish the upload process, click **[!UICONTROL Upload]**. Your uploaded assets appear. See [basic upload](asset-selector-customization.md#basic-upload) for the configurable code.
+1. To finish the upload process, click **[!UICONTROL Upload]**. Your uploaded assets appear. See [basic upload](/help/assets/asset-selector-customization.md#basic-upload) for the configurable code.
 
 ## Upload assets with metadata {#upload-assets-with-metadata}
 
-You can add metadata to the assets while uploading them immediately into your application. Metadata includes various fields such as business subject line, product details, campaign, and so on. To do this, `metadataSchema` property is used. Go to [asset selector properties](asset-selector-properties.md) to know more about `metadataSchema` property. 
+You can add metadata to the assets while uploading them immediately into your application. Metadata includes various fields such as business subject line, product details, campaign, and so on. To do this, `metadataSchema` property is used. Go to [asset selector properties](/help/assets/asset-selector-properties.md) to know more about `metadataSchema` property. 
 
-See [upload with metadata](#upload-with-metadata) for the code snippet required for the configuration.
+See [upload with metadata](/help/assets/asset-selector-customization.md#upload-with-metadata) for the code snippet required for the configuration.
 
 ![upload assets with metadata](assets/upload-with-metadata.png)
        
@@ -45,7 +45,7 @@ See [upload with metadata](#upload-with-metadata) for the code snippet required 
 
 ## Customized upload {#customize-upload}
 
-Asset Selector allows you to add a customized upload form. There are several customizations available. For example the [hideUploadButton](#asset-selector-properties.md) property allows you to hide the upload button that is shown by default in the application. Instead, you can customize it to render outside the MFE application as per the requirement. See [customized upload](#asset-selector-customization.md#customized-upload) for the configuration.
+Asset Selector allows you to add a customized upload form. There are several customizations available. For example the [hideUploadButton](/help/assets/asset-selector-properties.md) property allows you to hide the upload button that is shown by default in the application. Instead, you can customize it to render outside the MFE application as per the requirement. See [customized upload](/help/assets/asset-selector-customization.md#customized-upload) for the configuration.
 
 ![Customized upload](assets/customized-upload.png)
 

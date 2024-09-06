@@ -13,7 +13,7 @@ The Micro-Frontend user interface is made available in your application experien
 
 Asset Selector provides many benefits, such as:
 
-* Ease of integration with any of the [Adobe](#integrate-asset-selector-adobe-app.md) or [non-Adobe](#integrate-asset-selector.md) applications using the Vanilla JavaScript library.
+* Ease of integration with any of the [Adobe](/help/assets/integrate-asset-selector-adobe-app.md) or [non-Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md) applications using the Vanilla JavaScript library.
 * Easy to maintain as updates to the Assets Selector package are automatically deployed to the Asset Selector available for your application. There are no updates required within your application to load the latest modifications.
 * Ease of customization as there are properties available that control the Asset Selector display within your application.
 * Full-text search, out-of-the-box, and customized filters to quickly navigate to assets for use within the authoring experience.
@@ -45,8 +45,8 @@ Use the above prerequisites if you require the IMS authentication workflow of As
 
 **See more**
 
-* [Integrate Asset Selector with an Adobe app](#integrate-asset-selector-adobe-app.md)
-* [Integrate Asset Selector with a non-Adobe app](#integrate-asset-selector-non-adobe-app.md)
+* [Integrate Asset Selector with an Adobe app](/help/assets/integrate-asset-selector-adobe-app.md)
+* [Integrate Asset Selector with a non-Adobe app](/help/assets/integrate-asset-selector-non-adobe-app.md)
 * [Integrate Asset Selector dynamic media open APIs](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 
@@ -121,7 +121,7 @@ Asset Selector also provides out-of-the-box filter options to refine your search
 
 * **[!UICONTROL Status]:** includes the current state of asset among `all`, `approved`, `rejected`, or `no status`.
 * **[!UICONTROL File type]:** includes `folder`, `file`, `images`, `documents`, or `video`.
-* **[!UICONTROL Expiration status]:** mentions the assets based upon its expiration duration. You can either check the `[!UICONTROL Expired]` checkbox to filter assets that are expired; or set `[!UICONTROL Expiration Duration]` of an asset to display assets based on their expiry duration. When an asset is expired already or is near to expire, a badge appears to depict the same. Moreover, you can control whether you want to allow usage (or drag and drop) of an expired asset. See more about [customize expired assets](#asset-selector-customization.md#customize-expired-assets). By default, the **Expiring Soon** badge is displayed for assets that are expiring in the next 30 days. However, you can configure the expiration using `expirationDate` property.
+* **[!UICONTROL Expiration status]:** mentions the assets based upon its expiration duration. You can either check the `[!UICONTROL Expired]` checkbox to filter assets that are expired; or set `[!UICONTROL Expiration Duration]` of an asset to display assets based on their expiry duration. When an asset is expired already or is near to expire, a badge appears to depict the same. Moreover, you can control whether you want to allow usage (or drag and drop) of an expired asset. See more about [customize expired assets](/help/assets/asset-selector-customization.md#customize-expired-assets). By default, the **Expiring Soon** badge is displayed for assets that are expiring in the next 30 days. However, you can configure the expiration using `expirationDate` property.
 
     >[!TIP]
     >
