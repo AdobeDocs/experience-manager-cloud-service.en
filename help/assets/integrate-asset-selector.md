@@ -6,7 +6,7 @@ exl-id: 1c0051a3-549c-4783-9fc1-594f424a70c3
 ---
 # Integrate Asset Selector using Vanilla JS {#integration-using-vanilla-js}
 
-You can integrate any [!DNL Adobe] or non-Adobe application with [!DNL Experience Manager Assets] repository and select assets from within the application. See [Asset Selector Integration with various applications](#integrate-asset-selector.md).
+You can integrate any [!DNL Adobe] or non-Adobe application with [!DNL Experience Manager Assets] repository and select assets from within the application. See [Asset Selector Integration with various applications](#asset-selector-integration-with-apps).
 
 The integration is done by importing the Asset Selector package and connecting to the Assets as a Cloud Service using the Vanilla JavaScript library. Edit an `index.html` or any appropriate file within your application to:
 
