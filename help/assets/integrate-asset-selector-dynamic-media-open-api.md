@@ -2,6 +2,7 @@
 title: Asset Selector for [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Integrate Asset selector with various Adobe, non-Adobe, and third party applications.
 role: Admin, User
+exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
 ---
 # Integration for Dynamic Media with OpenAPI capabilities {#integrate-asset-selector-dynamic-media-open-apis}
 
