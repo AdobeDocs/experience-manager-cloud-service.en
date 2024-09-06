@@ -14,7 +14,7 @@ Cloud Manager is built around a hierarchy of entities. The details of this is no
 ![Cloud Manager hierarchy](assets/program-types1.png)
 
 * **TENANT** - This is the top of the hierarchy. Every customer is provisioned with a tenant.
-* **PROGRAMS** - Each tenant has one or more programs, [which often reflect the customer's licensed solutions.](introduction-production-programs.md)
+* **PROGRAMS** - Each tenant has one or more programs, [which often reflect the customer's licensed solutions](introduction-production-programs.md).
 * **ENVIRONMENTS** - Each program has multiple environments such as production for live content, one for staging, and one for development purposes.
   * Each program can have only one production environment, but multiple non-production environments.
 * **REPOSITORY** - Programs have git repositories where application and front-end code is maintained for the environments.

@@ -65,17 +65,17 @@ Cloud Manager supports both repositories managed by Adobe (**Adobe Repository**)
 
 ## Access Repo Info {#repo-info}
 
-When viewing your repositories in the **Repositories** window, you can view the details on how to access the Adobe-managed repositories programmatically by tapping or clicking the **Access Repo Info** button in the toolbar.
+When viewing your repositories in the **Repositories** window, you can view the details on how to access the Adobe-managed repositories programmatically by clicking the **Access Repo Info** button in the toolbar.
 
 ![Repository information](assets/repo-info.png)
 
-The **Repository Info** window opens with the details. For more information on accessing repository information, please see the document [Accessing Repository Information.](accessing-repos.md)
+The **Repository Info** window opens with the details. For more information on accessing repository information, see the document [Accessing Repository Information](accessing-repos.md).
 
 ## Check Branches / Create Project {#check-branches}
 
 The **Check Branches / Create Project** action performs two functions depending on the state of the repository.
 
-* If the repository is newly-created, the action creates a sample project based on [the AEM project archetype.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview)
+* If the repository is newly-created, the action creates a sample project based on [the AEM project archetype](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview).
 * If the repository already has had the sample project created, it checks the state of the repository and its branches and reports back if the sample project already exists.
 
 ![Check branches action](assets/check-branches.png)

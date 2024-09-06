@@ -34,7 +34,7 @@ At the bottom of the list of pipelines, you have general options.
 
 ## Pipelines Window {#pipelines}
 
-The **Pipelines** window shows a complete list of all pipelines for the selected program. This is useful as it presents more comprehensive information than what is available in the [Pipeline Card.](#pipeline-card)
+The **Pipelines** window shows a complete list of all pipelines for the selected program. This is useful as it presents more comprehensive information than what is available in the [Pipeline Card](#pipeline-card).
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
@@ -44,13 +44,13 @@ The **Pipelines** window shows a complete list of all pipelines for the selected
 
 1. Here you can see a list of all pipelines for the program and start and stop pipeline execution as you would in the **Pipelines Card**.
 
-If a pipeline is executing, tapping the information icon in the **Status** column will reveal details about the execution.
+If a pipeline is executing, clicking the information icon in the **Status** column reveals details about the execution.
 
 ![Pipeline execution details](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-status.png)
 
-Tapping or clicking **View details** will take you to the [details of the pipeline execution.](#view-details)
+Clicking **View details** takes you to the [details of the pipeline execution](#view-details).
 
-You can also tap or click the ellipsis button of the pipeline to take additional actions appropriate to the pipeline state such as [editing](#editing-pipelines) it or [cancelling execution.](#cancel)
+You can also click the ellipsis button of the pipeline to take additional actions appropriate to the pipeline state such as [editing](#editing-pipelines) it or [cancelling execution](#cancel).
 
 ![Pipeline actions](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-actions.png)
 
@@ -64,13 +64,13 @@ The **Activity** window shows a complete list of all pipelines executions for th
 
 1. Here you can see a list of all pipeline executions for the program including current and historical executions.
 
-If a pipeline is executing, tapping the information icon in the **Status** column will reveal details about the execution.
+If a pipeline is executing, clicking the information icon in the **Status** column will reveal details about the execution.
 
 ![Pipeline execution details](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-activity.png)
 
-Tapping or clicking the row representing the pipeline execution will take you to the [details of the pipeline execution.](#view-details)
+Tapping or clicking the row representing the pipeline execution takes you to the [details of the pipeline execution](#view-details).
 
-You can also tap or click the ellipsis button to take further action on the pipeline execution, such as view its details or download the log, which takes you to the [pipeline details page.](#view-details)
+You can also click the ellipsis button to take further action on the pipeline execution, such as view its details or download the log, which takes you to the [pipeline details page](#view-details).
 
 ![Pipeline execution actions](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-execution-actions.png)
 
@@ -82,7 +82,7 @@ You can also tap or click the ellipsis button to take further action on the pipe
 
 1. The pipeline run begins and is indicated by the **Status** column. 
 
-You can see the details of the run by clicking the ellipsis button again and selecting **[View details.](#view-details)**
+You can see the details of the run by clicking the ellipsis button again and selecting **[View details](#view-details)**.
 
 Depending on the type of pipeline, you may be able to cancel the run by clicking the ellipsis button again and selecting **Cancel**.
 
