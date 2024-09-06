@@ -23,13 +23,13 @@ You must fulfill these requirements before adding a TXT record.
 
 * You must identify your domain host or registrar if you do not know it already.
 * You must be able to edit the DNS records for your organization's domain, or contact the appropriate person who can.
-* You must first add a custom domain name as described in the document [Adding a Custom Domain Name.](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+* You must first add a custom domain name as described in the document [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
 ## Adding a TXT Record for Verification {#verification}
 
 A TXT record is added as part of the verification of a custom domain name to be used with Cloud Manager. 
 
-1. You must first add a custom domain name as described in the document [Adding a Custom Domain Name.](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+1. You must first add a custom domain name as described in the document [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
 1. When on the **Verification** tab of the **Add Domain Name** dialog, Cloud Manager displays the name and TXT value to use for verification. Copy this value.
 
@@ -39,7 +39,7 @@ A TXT record is added as part of the verification of a custom domain name to be 
 
 1. Add `_aemverification.[yourdomainname]` as the **Name** of the value and add the TXT value exactly as it appears in the **Add Domain Name** dialog.
 
-   * See the [examples in the following section.](#examples)
+   * See the [examples in the following section](#examples).
 
 1. Save the TXT record to your domain host.
 
