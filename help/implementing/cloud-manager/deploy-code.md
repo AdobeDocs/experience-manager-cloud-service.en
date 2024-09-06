@@ -80,7 +80,7 @@ The **Stage testing** phase involves these steps.
    * The pages that are configured are submitted to the service and evaluated. 
    * The results are informational and show the scores and the change between the current and previous scores.
    * This insight is valuable to determine if there is a regression that is introduced with the current deployment.
-   * See [Understanding Experience Audit results](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
+   * See [Understanding Experience Audit results](/help/implementing/cloud-manager/experience-audit-dashboard.md) for more details.
 
 ![Stage Testing](assets/stage-testing.png)
 

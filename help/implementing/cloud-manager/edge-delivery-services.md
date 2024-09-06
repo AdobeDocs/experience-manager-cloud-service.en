@@ -121,7 +121,7 @@ The **Edge Delivery to-do list** is an onboarding task checklist meant to guide 
 
 ## Add a CDN configuration to your Edge Delivery site {#add-cdn}
 
-See [Add a CDN configuration](help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md).
+See [Add a CDN configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md).
 
 ## Delete an Edge Delivery site {#eds-site-delete}
 

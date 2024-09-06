@@ -25,7 +25,7 @@ The release date for Cloud Manager release 2024.9.0 in AEM as a Cloud Service is
 
 * **Adobe generated and managed Domain Validation certificates:**
 
-    With Cloud Manager, you are now able to [self-service Adobe generated and managed DV (Domain Validation) SSL certificates](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md). This capability gives you the fastest, easiest, and most cost-effective solution to create a secure website for your online organization or business. <!-- CMGR-52403 -->
+    With Cloud Manager, you are now able to [self-service Adobe generated and managed DV (Domain Validation) SSL certificates](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). This capability gives you the fastest, easiest, and most cost-effective solution to create a secure website for your online organization or business. <!-- CMGR-52403 -->
 
 * **Edge Delivery Services support in Cloud Manager:**
 
