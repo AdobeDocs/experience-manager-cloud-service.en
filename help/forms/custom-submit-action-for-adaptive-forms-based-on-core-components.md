@@ -260,7 +260,7 @@ The below diagram depicts the steps to create a custom submit action for an Adap
 
     >[!NOTE]
     >
-    > To check the logs for the error logs on the AEM as a Cloud Service environment, you can use splunk. 
+    > To view error logs in the AEM as a Cloud Service environment, you can use Splunk. 
 
 <!--
 ## Best practices
