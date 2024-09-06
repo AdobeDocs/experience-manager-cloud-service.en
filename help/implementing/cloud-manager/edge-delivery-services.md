@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 ---
 # Edge Delivery Services Support in Cloud Manager {#edge-delivery-services}
 
-Learn how to deliver your Cloud Manager projects using Edge Delivery Services.
+Learn how to use your Edge Delivery Services license to create an Edge Delivery Services site.
 
 <!-- RELEASED TO GA SEPTEMBER 5, 2024
 >[!NOTE]
@@ -34,11 +34,12 @@ Cloud Manager in AEM as a Cloud Service lets you enable Edge Delivery Service fo
 
 If you have licensed Edge Delivery Services as part of Adobe Experience Manager Sites, you can onboard your site with Edge Delivery Services directly in Cloud Manager and go live [using a guided, self-service experience](/help/implementing/cloud-manager/managing-code/private-repositories.md).
 
-This functionality delivers a unified experience for managing all your AEM properties. It ensures consistency across key workflows. These include domain name management, SSL certificate management, and CDN mappings.
+Additionally, you can access a unified experience for managing all your AEM properties while ensuring consistency across key workflows. These include domain name management, SSL certificate management, and CDN mappings.
 
 ## Add Edge Delivery Services to a production or sandbox program
 
-To add or edit programs, you must be a member of the **Business Owner** role.
+To add or edit programs, you must be a member of the **Business Owner** role or be given permission to do so.
+Your organization must have an unused Edge Delivery Services license before it can be applied to a Production program.
 
 Depending on your use case, do one of the following:
 
@@ -60,11 +61,11 @@ If you are contracted with AEM as a Cloud Service Sites Edge Delivery Services l
 * Access SLA reporting (*coming soon*) <!-- ADD LINK TO IT WHEN FINALLY ADDED -->
 * Gain Adobe support. Make sure that your Edge Delivery Services sites are registered through a Production program in Cloud Manager for proper recognition and support from Adobe.
 
-## Add an Edge Delivery site {#eds-add-site}
+## Add an Edge Delivery Services site {#eds-add-site}
 
 After you add Edge Delivery Services to a production program, your Edge Delivery Services license is applied to it. 
 
-A new, clickable tab called **Edge Delivery** is added to the Overview page. Clicking the tab displays a table that lists each Edge Delivery site you have added. In the left navigation panel, under the **Services** grouping, **Edge Delivery Sites** is added.
+A new, clickable tab called **Edge Delivery** is seen on the Overview page. Clicking the tab displays a table that lists each Edge Delivery site you have added. In the left navigation panel, under the **Services** grouping, you will notice a menu option named **Edge Delivery Sites**.
 
 ![Overview page showing Edge Delivery Sites in left navigation panel and Edge Delivery tab to the right of the Publish Delivery tab](/help/implementing/cloud-manager/assets/cm-overview-eds.png)
 
@@ -105,11 +106,11 @@ A new, clickable tab called **Edge Delivery** is added to the Overview page. Cli
 
 ## About the Edge Delivery to-do list {#ed-todo-list}
 
-The **Edge Delivery to-do list** is an optional onboarding task checklist meant to guide you through activating and managing Edge Delivery all the way to [Go-Live](/help/journey-onboarding/go-live-checklist.md).
+The **Edge Delivery to-do list** is an onboarding task checklist meant to guide you through onboarding, managing your Edge Delivery site all the way to [Go-Live](/help/journey-onboarding/go-live-checklist.md).
 
 |  | Task | Description |
 | --- | --- | --- |
-| 1 | Join the product collaboration channel | Clicking **Submit request now** directs you to a form to open a Slack channel for your company. If the channel already exists, you are forwarded to your company's Slack channel. |
+| 1 | Join the product collaboration channel | Clicking **Submit request now** submits a request to Adobe to create a channel for your company. If the channel already exists, you are forwarded to your company's channel. |
 | 2 | Complete prerequisites | Clicking **View Getting Started tutorial**, directs you to the [Getting Started - Developer Tutorial](https://www.aem.live/developer/tutorial). |
 | 3 | Add Edge Delivery Site | See [Add an Edge Delivery site](#eds-add-site). |
 | 4 | Add domain | See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
@@ -124,7 +125,7 @@ See [Add a CDN configuration](/help/implementing/cloud-manager/managing-ssl-cert
 
 >[!IMPORTANT]
 >
->If you delete an Edge Delivery Services site, the associated CDN configurations are removed as well. This action disconnects the custom domains from the Edge Delivery Services site.
+> **NOTE:** If you delete an Edge Delivery Services site, the associated CDN configurations are removed as well. This action disconnects the custom domains from the Edge Delivery Services site.
 
 **To delete an Edge Delivery site:**
 
@@ -142,7 +143,7 @@ See [Add a CDN configuration](/help/implementing/cloud-manager/managing-ssl-cert
 
 
 <!--
-Edge Delivery Services can be enabled when adding a new program.
+Edge Delivery Services can be enabled when adding a new production program or editing an existing one.
 
 ![Add production program with Edge Delivery Services](assets/add-production-program-with-edge.png)
 
