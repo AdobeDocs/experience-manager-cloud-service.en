@@ -41,6 +41,10 @@ Additionally, you can access a unified experience for managing all your AEM prop
 To add or edit programs, you must be a member of the **Business Owner** role or be given permission to do so.
 Your organization must have an unused Edge Delivery Services license before it can be applied to a Production program.
 
+>[!NOTE]
+>
+>Once the Edge Delivery Services license is applied to or removed from a program, the change takes effect immediately without the need to run a pipeline. <!-- https://wiki.corp.adobe.com/display/DMSArchitecture/%5BKT%5D+Cloud+Manager+2024.9.0+Release -->
+
 Depending on your use case, do one of the following:
 
 | Use case | Description |
@@ -127,7 +131,7 @@ See [Add a CDN configuration](/help/implementing/cloud-manager/cdn-configuration
 
 >[!IMPORTANT]
 >
-> **NOTE:** If you delete an Edge Delivery Services site, the associated CDN configurations are removed as well. This action disconnects the custom domains from the Edge Delivery Services site.
+>If you delete an Edge Delivery Services site, any associated CDN configurations are removed as well. This action breaks the connection between custom domains and the site. For more details, see CDN configurations. <!-- https://wiki.corp.adobe.com/display/DMSArchitecture/%5BKT%5D+Cloud+Manager+2024.9.0+Release -->
 
 **To delete an Edge Delivery site:**
 
