@@ -1111,10 +1111,7 @@ user-guide-title: AEM as a Cloud Service
     + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
     + [Notifications](/help/implementing/cloud-manager/notifications.md)
     + [Advanced Networking](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
-    + SSL Certificates {#manage-ssl-certificates}
-      + [Introduction](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
-      + [Adding an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-      + [Managing SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
+
     + Custom Domain Names {#custom-domain-names}
       + [Introduction](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
       + [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
@@ -1124,6 +1121,10 @@ user-guide-title: AEM as a Cloud Service
       + [Checking DNS Record Status](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
       + [Managing Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
       + [Domain Validated (DV) Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)
+    + SSL Certificates {#manage-ssl-certificates}
+      + [Introduction](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+      + [Adding an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+      + [Managing SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
     + IP Allow Lists {#ip-allow-lists}
       + [Introduction](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
       + [Adding an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
