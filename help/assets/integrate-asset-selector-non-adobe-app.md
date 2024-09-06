@@ -136,9 +136,10 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 >
 >If you have integrated Asset Selector using Sign up Sign In workflow but still unable to access the delivery repository, ensure that browser cookies are cleaned up. Otherwise, you end up getting `invalid_credentials All session cookies are empty` error in the console.
 
+<!--
 >[!MORELIKETHIS]
 >
 >* [Integrate Asset Selector with various applications](/help/assets/integrate-asset-selector.md)
 >* [Asset Selector properties](/help/assets/asset-selector-properties.md)
 >* [Asset Selector customizations](/help/assets/asset-selector-customization.md)
-
+-->
