@@ -908,7 +908,6 @@ user-guide-title: AEM as a Cloud Service
     + [Creating Blocks](/help/edge/wysiwyg-authoring/create-block.md)
     + [Content Modeling](/help/edge/wysiwyg-authoring/content-modeling.md)
     + [Tabular Data and Spreadheets](/help/edge/wysiwyg-authoring/tabular-data.md)
-    + [Existing Projects and Edge Delivery](/help/edge/wysiwyg-authoring/existing-projects.md)
     + [Managing Taxonomy Data](/help/edge/wysiwyg-authoring/taxonomy.md)
     + [WIP Sites Features](/help/edge/wysiwyg-authoring/wip-features.md)
   + Document-Based Authoring {#document-authoring}
