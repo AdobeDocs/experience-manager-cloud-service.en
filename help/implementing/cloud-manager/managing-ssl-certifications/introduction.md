@@ -22,7 +22,11 @@ Cloud Manager offers self-service tools to install and manage SSL (Secure Socket
 <!-- CQDOC-21758, #1 -->
 
 * **Use case 1:** Cloud Manager uses a platform TLS (Transport Layer Security) service to manage customer-owned SSL certificates and private keys from third-party Certificate Authorities, such as *Let's Encrypt*.
-* **Use case 2:** Cloud Manager lets users configure a DV (Domain Validation) certificate that comes from Adobe for quick domain setup. DV certificates are the most basic level of SSL certification and are often used for testing purposes or for securing websites with basic encryption. DV certificates are available to both [production and sandbox programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md). 
+* **Use case 2:** Cloud Manager lets users configure a DV (Domain Validation) certificate that comes from Adobe for quick domain setup. DV certificates are the most basic level of SSL certification and are often used for testing purposes or for securing websites with basic encryption. DV certificates are available in both [production and sandbox programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
+
+  >![NOTE]
+  >
+  >Customers are not permitted to upload DV (Domain Validation) certificates.
 
 
 ## Introduction to certificates {#certificates}
@@ -100,6 +104,6 @@ If you have reached the limit, review your certificates and consider:
 
 A user with the necessary permissions can use Cloud Manager to manage SSL certificates for a program. See the following documents for more details on using these features.
 
-* [Add an SSL or DV certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-* [Update an expired, customer managed SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#update-ssl-certificate)
-* [Delete an SSL or DV certificate](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
+* [Add an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) <!--CQDOC-21758, #4 -->
+* [Manage SSL certificates](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md) <!--CQDOC-21758, #4 -->
+
