@@ -13,11 +13,11 @@ Asset Selector allows you to integrate using various Adobe applications to enabl
 
 Use the following prerequisites if you are integrating Asset Selector with Dynamic Media with OpenAPI capabilities:
 
-* [Communication methods](#overview-asset-selector.md#prereqs)
+* [Communication methods](/help/assets/overview-asset-selector.md#prereqs)
 * To access Dynamic Media with OpenAPI capabilities, you must have licenses for:
     * Assets repository (for example, Experience Manager Assets as a Cloud Service).
     * AEM Dynamic Media.
-* Only [approved assets](#approved-assets.md) are available for use ensuring brand consistency.
+* Only [approved assets](/help/assets/approve-assets.md) are available for use ensuring brand consistency.
 
 ## Integration for Dynamic Media with OpenAPI capabilities {#adobe-app-integration-polaris}
 
@@ -31,7 +31,7 @@ The `rootPath` and `path` properties should not be a part of the Dynamic Media w
 aemTierType:[1: "delivery"]
 ```
 
-This configuration allows you to view all the approved assets without folders or as a flat structure. For more information, navigate to `aemTierType` property under [Asset Selector properties](#asset-selector-properties.md).
+This configuration allows you to view all the approved assets without folders or as a flat structure. For more information, navigate to `aemTierType` property under [Asset Selector properties](/help/assets/asset-selector-properties.md).
 
 
 ### Create a Dynamic Delivery URL from approved assets {#create-dynamic-media-url}

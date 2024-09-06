@@ -6,7 +6,7 @@ exl-id: 7a393a96-f2a2-4a25-922c-577271cafc57
 ---
 # Examples to use Asset Selector properties {#usage-examples}
 
-You can define the Asset Selector [properties](#asset-selector-properties.md) in the `index.html` file to customize the Asset Selector display within your application.
+You can define the Asset Selector [properties](/help/assets/asset-selector-properties.md) in the **index.html** file to customize the Asset Selector display within your application.
 
 ## Example 1: Asset Selector in rail view
 
