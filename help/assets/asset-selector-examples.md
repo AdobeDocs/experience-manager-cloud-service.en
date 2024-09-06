@@ -2,8 +2,8 @@
 title: Asset Selector for [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Examples to use Asset Selector to customize as per requirement.
 role: Admin, User
+exl-id: 7a393a96-f2a2-4a25-922c-577271cafc57
 ---
-
 # Examples to use Asset Selector properties {#usage-examples}
 
 You can define the Asset Selector [properties](/help/assets/asset-selector-properties.md) in the **index.html** file to customize the Asset Selector display within your application.
@@ -49,4 +49,3 @@ Assets display panel shows the out of the box metadata that can be displayed in 
 >* [Asset Selector customization](/help/assets/asset-selector-customization.md)
 >* [Asset Selector properties](/help/assets/asset-selector-properties.md)
 >* [Integrate Asset Selector dynamic media open APIs](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
-

@@ -2,8 +2,8 @@
 title: Asset Selector for [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Integrate Asset selector with various Adobe, non-Adobe, and third party applications.
 role: Admin, User
+exl-id: 55848de0-aff2-42a0-b959-c771235d9425
 ---
-
 # Integration with a non-Adobe application {#integrate-asset-selector-non-adobe-app}
 
 Asset Selector allows you to integrate using various non-Adobe or third party applications to enable them to work together seamlessly.
@@ -136,10 +136,3 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 >
 >If you have integrated Asset Selector using Sign up Sign In workflow but still unable to access the delivery repository, ensure that browser cookies are cleaned up. Otherwise, you end up getting `invalid_credentials All session cookies are empty` error in the console.
 
-<!--
->[!MORELIKETHIS]
->
->* [Integrate Asset Selector with various applications](/help/assets/integrate-asset-selector.md)
->* [Asset Selector properties](/help/assets/asset-selector-properties.md)
->* [Asset Selector customizations](/help/assets/asset-selector-customization.md)
--->

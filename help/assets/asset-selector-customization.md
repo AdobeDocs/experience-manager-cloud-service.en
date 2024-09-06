@@ -2,8 +2,8 @@
 title: Asset Selector for [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Use functions to customize Asset selector within your application.
 role: Admin, User
+exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
 ---
-
 # Asset Selector customizations {#asset-selector-customization}
  
 Asset Selector allows you to customize various components according to preferences, requirements, or functional needs. You can customize the following components [Micro-Frontend Asset Selector](#overview-asset-selector.md):
