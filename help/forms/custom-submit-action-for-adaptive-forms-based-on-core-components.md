@@ -26,7 +26,7 @@ Before you begin creating your first custom submit action for Adaptive Forms, en
 
 The below diagram depicts the steps to create custom submit action for an Adaptive Form:
 
-![Custom submit action workflow](/help/forms/assets/custom-submit-action-workflow.gif)
+![Custom submit action workflow](/help/forms/assets/custom-submit-action-workflow.png)
 
 ### Clone AEM as a Cloud Service Git repository.
 
@@ -37,22 +37,15 @@ The below diagram depicts the steps to create custom submit action for an Adapti
     ```
     git clone https://git.cloudmanager.adobe.com/<organization-name>/<app-id>/
     ```
-
-    To clone your Git repository, you need some information:
-
-    * **Organization name**: This identifies your team or project within Adobe Experience Manager as a Cloud Service (AEM as a Cloud Service).
-
-    * **App ID**: This specifies the program associated with your repository.
-
-    * **Credentials**: You need a username and password (or a personal access token) to access the repository securely.
-
     **Where to find this information?**
 
     For step-by-step instructions on locating these details, refer to the Adobe Experience League article "[Accessing Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)".
 
     **Your project is ready!**
 
-    When the command completes successfully, you see a new folder created in your local directory. This folder is named after your program (for example, app-id). This folder contains all the files and code downloaded from your AEM as a Cloud Service Git repository.
+    When the command completes successfully, you see a new folder created in your local directory. This folder is named after your application (for example, app-id). This folder contains all the files and code downloaded from your AEM as a Cloud Service Git repository. You can find `<appid>` for your AEM Project in the `archetype.properties` file. 
+
+    ![Archetype Properties](/help/forms/assets/custom-submit-action-archetype-app-id.png)
 
     Throughout this guide, we refer to this folder as the `[AEMaaCS project directory]`.
 
@@ -69,10 +62,6 @@ The below diagram depicts the steps to create custom submit action for an Adapti
 
     ```
     **Important**: Replace `<app-id>` with your actual application ID.
-
-    Replace `<app-id>` with your project specific app ID. You can find `<appid>` for your AEM Project in the `archetype.properties` file. 
-
-    ![Archetype Properties](/help/forms/assets/custom-submit-action-archetype-app-id.png)
 
 1. Create new folder for your custom submit action and give it a name of your choice. For example, name the folder as `customsubmitaction`.
 
