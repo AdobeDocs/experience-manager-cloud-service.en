@@ -2,8 +2,8 @@
 title: Asset Selector for [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Use Asset selector to search, find, and retrieve assets' metadata and renditions within your application.
 role: Admin, User
+exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
 ---
-
 # Asset Selector properties {#asset-selector-properties}
 
 You can use the Asset Selector properties to customize the way the Asset Selector is rendered. The following table lists the properties that you can use to customize and use the Asset Selector.
@@ -59,6 +59,3 @@ You can use the Asset Selector properties to customize the way the Asset Selecto
 | *expirationDate* | Function | No | | This function is used to set the usability period of an asset. |
 | *disableDefaultBehaviour* | Boolean | No | False | It is a function that is used to enable or disable the selection of an expired asset. You can customize the default behavior of an asset that is set to expire. See [customize expired assets](#customize-expired-assets). |
 -->
-
-
-
