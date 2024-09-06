@@ -99,6 +99,7 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
     + 2024 {#2024}
+      + [Release Notes for 2024.8.0](/help/implementing/cloud-manager/release-notes/2024/2024-8-0.md)
       + [Release Notes for 2024.7.0](/help/implementing/cloud-manager/release-notes/2024/2024-7-0.md)
       + [Release Notes for 2024.6.0](/help/implementing/cloud-manager/release-notes/2024/2024-6-0.md)
       + [Release Notes for 2024.5.0](/help/implementing/cloud-manager/release-notes/2024/2024-5-0.md)
@@ -1067,7 +1068,6 @@ user-guide-title: AEM as a Cloud Service
       + [Creating Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
       + [Editing Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
       + [Hibernating Environments](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
-      + [Edge Delivery Services Support](/help/implementing/cloud-manager/edge-delivery-services.md)
     + Creating an AEM Application Project {#create-application-project}
       + [Project Creation Wizard](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
       + [Project Setup](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
@@ -1101,7 +1101,6 @@ user-guide-title: AEM as a Cloud Service
         + [Functional Testing Overview](/help/implementing/cloud-manager/functional-testing.md)
         + [Java Functional Testing](/help/implementing/cloud-manager/java-functional-testing.md)
         + [UI Testing](/help/implementing/cloud-manager/ui-testing.md)
-      + [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md)
       + [Experience Audit Dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md)
     + [Accessing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md)
     + [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md)
@@ -1110,11 +1109,9 @@ user-guide-title: AEM as a Cloud Service
     + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
     + [Notifications](/help/implementing/cloud-manager/notifications.md)
     + [Advanced Networking](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
-    + SSL Certificates {#manage-ssl-certificates}
-      + [Introduction](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
-      + [Adding an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-      + [Managing SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-    + Custom Domain Names {#custom-domain-names}
+    + Edge Delivery Sites {#edge-delivery-sites}
+      + [Edge Delivery Support in Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md)
+    + Domain Settings {#custom-domain-names}
       + [Introduction](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
       + [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
       + [Adding a TXT Record](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
@@ -1122,7 +1119,12 @@ user-guide-title: AEM as a Cloud Service
       + [Configuring DNS Settings](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
       + [Checking DNS Record Status](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
       + [Managing Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
-      + [Domain Validated (DV) Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)
+    + SSL Certificates {#manage-ssl-certificates}
+      + [Introduction](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+      + [Adding an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+      + [Managing SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
+    + CDN Configurations {#cdn-configurations}
+      + [Add a CDN configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
     + IP Allow Lists {#ip-allow-lists}
       + [Introduction](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
       + [Adding an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)

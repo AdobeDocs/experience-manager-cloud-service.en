@@ -23,7 +23,7 @@ You must fulfill these requirements before configuring your DNS records.
 
 * You must identify your domain host or registrar if you do not know it already.
 * You must be able to edit the DNS records for your organization's domain, or contact the appropriate person who can.
-* You must have already verified your configured custom domain name as described in the document [Checking Domain Name Status.](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
+* You must have already verified your configured custom domain name as described in the document [Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
 
 ## CNAME Record {#cname-record}
 
