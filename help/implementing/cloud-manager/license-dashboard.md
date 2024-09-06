@@ -57,11 +57,14 @@ Each section summarizes what is available and how it is used, if at all. Current
 >
 >To learn how to manage your Adobe entitlements across your entire organization from Admin Console, see the [Admin Console overview](https://helpx.adobe.com/enterprise/using/admin-console.html).
 
-## View Usage Details {#view-usage-details}
+## View usage details {#view-usage-details}
 
-The **View usage details** button gives access to the chosen solution's **Usage Details** window. This window gives a detailed breakdown including charts to show your solution's usage. How that usage is measured depends on the chosen solution.
+<!--
+The **View usage details** button gives access to the chosen solution's **Usage Details** window. This window gives a detailed breakdown including charts to show your solution's usage. How that usage is measured depends on the chosen solution. -->
 
-### Sites Usage Details {#sites-usage-details}
+The **View usage details** button in the License area of Cloud Manager provides a detailed breakdown of your current resource usage. When clicked, it opens a report or dashboard that shows important metrics related to your license. <!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." --> This functionality helps you monitor and ensure that you are staying within the limits of your contract while offering insights for better resource planning and optimization. 
+
+### Sites usage details {#sites-usage-details}
 
 The **Sites usage details** window, presents graphs giving an overview of the usage of your Sites licenses based on [content requests.](#what-is-a-content-request)
 
@@ -71,7 +74,8 @@ The left side of the window presents a pie chart showing the contract breakdown 
 
 The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time.
 
-### Assets Usage Details {#assets-usage-details}
+<!-- REMOVED AS PER CQDOC-21983
+### Assets usage details {#assets-usage-details}
 
 The **Assets usage details** window, presents graphs giving an overview of the usage of your Assets licenses based on [storage](#storage) and [standard users.](#standard-users) Select the appropriate tab to toggle between the views.
 
@@ -91,7 +95,7 @@ The right side of the window presents an area chart showing the usage broken dow
 
 The left side of the window presents a pie chart showing the contract breakdown for the contract year selected in the **View contract year** dropdown.
 
-The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time.
+The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time. -->
 
 ## Frequently Asked Questions {#faq}
 
