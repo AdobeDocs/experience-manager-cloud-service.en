@@ -1,12 +1,12 @@
 ---
 title: How to Create a Custom Submit Action for an Adaptive Form based on core components?
-description: Learn how to create a custom Submit Action for an Adaptive Forms to delay submission and process data before submitting it to a rest endpoint, saving to a data store, and perform other custom functions.
+description: Learn how to create a custom Submit Action for an Adaptive Forms to process data before submitting it using the customized submit action.
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Intermediate
 ---
 
-# Create a custom Submit Action for Adaptive Forms (Core Components)
+# Create a custom submit action for Adaptive Forms (Core Components)
 
 A submit action allows users to select the destination for the data captured from a form and to define additional functionality to be executed on form submission. AEM form supports multiple [submit actions out-of-the-box (OOTB)](/help/forms/configure-submit-actions-core-components.md), such as sending an email or saving data to SharePoint or OneDrive.
 
@@ -20,11 +20,11 @@ Before you begin creating your first custom submit action for Adaptive Forms, en
 
 * **Plain Text Editor (IDE)**: While any plain text editor can work, an Integrated Development Environment (IDE) like Microsoft Visual Studio Code offers advanced features for easier editing.
 
-* **Git**: This version control system is required for managing code changes. If you don't have it installed, download it from https://git-scm.com.
+* **Git**: This version control system is required for managing code changes. If you do not have it installed, download it from https://git-scm.com.
 
 ## Create your first custom submit action for form
 
-The below diagram depicts the steps to create custom submit action for an Adaptive Form:
+The below diagram depicts the steps to create a custom submit action for an Adaptive Form:
 
 ![Custom submit action workflow](/help/forms/assets/custom-submit-action-workflow.png)
 
@@ -183,7 +183,7 @@ The below diagram depicts the steps to create custom submit action for an Adapti
 
 * Deploy the AEM as a Cloud Service, `[AEMaaCS project directory]`, to your local development environment to try the new submit action on your local machine. To deploy to your local development environment:
 
-    1. Ensure that your local development environment is up and running. If you have not already set up a local development environment, refer to the guide on [Setup local development environment for AEM Forms](/help/forms/setup-local-development-environment.md).
+    1. Ensure that your local development environment is up and running. If you have not already set up a local development environment, refer to the guide on [Setup a local development environment for AEM Forms](/help/forms/setup-local-development-environment.md).
 
     1. Open the terminal window or command prompt.
 
@@ -196,17 +196,17 @@ The below diagram depicts the steps to create custom submit action for an Adapti
         ```
         ![Local Deployment](/help/forms/assets/custom-submit-action-local-deployment.png)
 
-**Deploy the code for Cloud Service environment**
+**Deploy the code for the Cloud Service environment**
 
 * Deploy the AEM as a Cloud Service, `[AEMaaCS project directory]`, to your Cloud Service environment. To deploy to your Cloud Service environment:
 
     1. Commit your changes:
 
-        After adding the new custom submit action configuration, commit your changes with a clear Git message . (For example, "Added new custom submit action"). 
+        After adding the new custom submit action configuration, commit your changes with a clear Git message. (For example, "Added new custom submit action"). 
 
     1. Deploy the updated code:
 
-        Trigger a deployment of your code through the [existing full-stack pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline). This automatically builds and deploys the updated code with the new locale support.
+        Trigger a deployment of your code through the [existing full-stack pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline). It automatically builds and deploys the updated code with the new custo m submit action support.
 
         If you haven't already set up a pipeline, refer to the guide on [how to set up a pipeline for AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
 
@@ -245,7 +245,7 @@ The below diagram depicts the steps to create custom submit action for an Adapti
     ![Thankyou message](/help/forms/assets/custom-submit-action-thankyou-msg.png)
 
     Once the form is submitted successfully, you can check the **Adobe Experience Manager Web Console Configuration** to verify the action of the custom submit action in the local development environment.
-1. Go to to `http://<host>:<port>/system/console/configMgr`.
+1. Go to `http://<host>:<port>/system/console/configMgr`.
 
 1. Navigate to the **Adobe Experience Manager Web Console Log Support** at `http://<host>:<port>/system/console/slinglog`.
 
@@ -257,6 +257,10 @@ The below diagram depicts the steps to create custom submit action for an Adapti
 1. Open the `error.log` file to see that the data has been appended to it.
 
     ![error.log file](/help/forms/assets/custom-submit-action-form-data-display.png)
+
+    >[!NOTE]
+    >
+    > To check the logs for the error logs on the AEM as a Cloud Service environment, you can use splunk. 
 
 <!--
 ## Best practices
