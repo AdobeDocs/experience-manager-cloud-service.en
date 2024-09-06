@@ -2,8 +2,8 @@
 title: Asset Selector for [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Integrate Asset selector with various Adobe, non-Adobe, and third party applications.
 role: Admin, User
+exl-id: 1c0051a3-549c-4783-9fc1-594f424a70c3
 ---
-
 # Integrate Asset Selector using Vanilla JS {#integration-using-vanilla-js}
 
 You can integrate any [!DNL Adobe] or non-Adobe application with [!DNL Experience Manager Assets] repository and select assets from within the application. See [Asset Selector Integration with various applications](#asset-selector-integration-with-apps).
@@ -33,4 +33,3 @@ You can integrate Asset Selector with various applications such as:
 >* [Asset Selector customization](/help/assets/asset-selector-customization.md)
 >* [Asset Selector properties](/help/assets/asset-selector-properties.md)
 >* [Integrate Asset Selector dynamic media open APIs](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
-
