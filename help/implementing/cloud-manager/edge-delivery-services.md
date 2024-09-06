@@ -131,11 +131,9 @@ See [Add a CDN configuration](/help/implementing/cloud-manager/managing-ssl-cert
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate program.
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program with Edge Delivery Services configured, where you want to add an Edge Delivery site.
 1. Do either one of the following:
-    * From the **Program Overview** page, click the **Edge Delivery** tab. In the Edge Delivery site table, click the ellipsis at the end of a row whose site you want to remove. Click **Delete**, then click Delete again to confirm the site's removal.
+    * From the **Program Overview** page, click the **Edge Delivery** tab. In the Edge Delivery site table, click the ellipsis at the end of a row whose site you want to remove. Click **Delete**, then click **Delete** again to confirm the site's removal.
 
         ![Add Edge Delivery Site from the Edge Delivery tab](/help/implementing/cloud-manager/assets/cm-eds-delete1.png)
-
-        The **Edge Delivery to-do list**, as seen in the image above, is an optional onboarding checklist guide meant to help you get started with using Edge Delivery. See [About the Edge Delivery to-do list](#ed-todo-list).
 
     * In the upper-left corner of the page, click the hamburger icon to reveal the left navigation menu. Under the **Services** heading, click **Edge Delivery Sites**. In the Edge Delivery site table, click the ellipsis at the end of a row whose site you want to remove. Click **Delete**, then click **Delete** again to confirm the site's removal.
 
