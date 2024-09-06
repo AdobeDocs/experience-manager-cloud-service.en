@@ -2,8 +2,8 @@
 title: Asset Selector for [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Use the Asset selector to search, find, and retrieve assets' metadata and renditions within your application.
 role: Admin,User
+exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
 ---
-
 # Upload files and folders to Asset Selector {#upload-files-folders}
 
 You can upload files or folders to Asset Selector from your local file system. To upload files using the local file system, you generally need to use an upload feature provided by an Asset Selector micro front-end application.
@@ -48,4 +48,3 @@ See [upload with metadata](/help/assets/asset-selector-customization.md#upload-w
 Asset Selector allows you to add a customized upload form. There are several customizations available. For example the [hideUploadButton](/help/assets/asset-selector-properties.md) property allows you to hide the upload button that is shown by default in the application. Instead, you can customize it to render outside the MFE application as per the requirement. See [customized upload](/help/assets/asset-selector-customization.md#customized-upload) for the configuration.
 
 ![Customized upload](assets/customized-upload.png)
-
