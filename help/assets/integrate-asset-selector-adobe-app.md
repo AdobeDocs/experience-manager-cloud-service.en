@@ -12,7 +12,7 @@ Asset Selector allows you to integrate using various Adobe applications to enabl
 
 Use the following prerequisites if you are integrating Asset Selector with an [!DNL Adobe] application:
 
-* [Communication methods](#overview-asset-selector.md#prereqs)
+* [Communication methods](/help/assets/overview-asset-selector.md#prereqs)
 * imsOrg
 * imsToken
 * apikey
@@ -21,7 +21,7 @@ Use the following prerequisites if you are integrating Asset Selector with an [!
 
 The following example demonstrates the usage of Asset Selector when running an [!DNL Adobe] application under Unified Shell or when you already have `imsToken` generated for authentication.
 
-Include the Asset Selector package in your code using the `script` tag, as shown in _lines 6&ndash;15_ of the example below. Once the script is loaded, the `PureJSSelectors` global variable is available for use. Define the Asset Selector [properties](#asset-selector-properties.md) as shown in _lines 16&ndash;23_. The `imsOrg` and `imsToken` properties are both required for authentication in Adobe application. The `handleSelection` property is used to handle the selected assets. To render the Asset Selector, call the `renderAssetSelector` function as mentioned in _line 17_. The Asset Selector is displayed in the `<div>` container element, as shown in _lines 21 and 22_.
+Include the Asset Selector package in your code using the `script` tag, as shown in _lines 6&ndash;15_ of the example below. Once the script is loaded, the `PureJSSelectors` global variable is available for use. Define the Asset Selector [properties](/help/assets/asset-selector-properties.md) as shown in _lines 16&ndash;23_. The `imsOrg` and `imsToken` properties are both required for authentication in Adobe application. The `handleSelection` property is used to handle the selected assets. To render the Asset Selector, call the `renderAssetSelector` function as mentioned in _line 17_. The Asset Selector is displayed in the `<div>` container element, as shown in _lines 21 and 22_.
 
 By following these steps, you can use Asset Selector with your [!DNL Adobe] application.
 

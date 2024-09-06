@@ -15,7 +15,7 @@ Asset Selector allows you to customize various components according to preferenc
 * [Customize expired assets](#customize-expired-assets)
 * [Contextual invocation filter](#contextual-invocation-filter)
 
-You need to define the prerequisites in the `index.html` file or a similar file within your application implementation to define the authentication details to access the [!DNL Experience Manager Assets] repository. Once done, you can add code snippets as per your requirement.
+You need to define the prerequisites in the **index.html** file or a similar file within your application implementation to define the authentication details to access the [!DNL Experience Manager Assets] repository. Once done, you can add code snippets as per your requirement.
 
 ## Customize filter panel {#customize-filter-panel}
 
@@ -180,12 +180,12 @@ The following table describes some of the important properties of the Selected A
 | *tiff:imageLength* | number | The height of an asset. |
 | *computedMetadata* | `Record<string, any>` | An object which represents a bucket for all the asset's metadata of all kinds (repository, application, or embedded metadata). |
 | *_links* | `Record<string, any>` | Hypermedia links for the associated asset. Includes links for resources such as metadata and renditions. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>`| Array of objects containing information about renditions of the asset. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].href>* | string | The URI to the rendition.|
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].type>* | string | The MIME type of the rendition.|
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].repo:size>'* | number | The size of the rendition in bytes.|
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].width>* | number | The rendition's width. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].height>* | number | The rendition's height. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition>`* | `Array<Object>`| Array of objects containing information about renditions of the asset. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].href>`* | string | The URI to the rendition.|
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].type>`* | string | The MIME type of the rendition.|
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].repo:size>`* | number | The size of the rendition in bytes.|
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].width>`* | number | The rendition's width. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].height>`* | number | The rendition's height. |
 
 ### Handling selection of Assets using Object Schema {#handling-selection}
 
