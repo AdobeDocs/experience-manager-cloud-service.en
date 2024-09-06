@@ -14,4 +14,4 @@ You can either integrate your own custom user interface with the Experience Mana
 
 The APIs enable you to search the approved assets from the AEM Assets repository and then deliver the assets to downstream applications using a delivery URL. For more information, see [Search](/help/assets/search-assets-api.md) and [Delivery](/help/assets/deliver-assets-apis.md) APIs.
 
-Adobe's Micro-Frontend Asset Selector provides a user interface that easily integrates with the [!DNL Experience Manager Assets as a Cloud Service] repository so that you can browse or search approved digital assets available in the repository and use them in your application authoring experience. For more information, see [Micro-Frontend Asset Selector](/help/assets/asset-selector.md).
+Adobe's Micro-Frontend Asset Selector provides a user interface that easily integrates with the [!DNL Experience Manager Assets as a Cloud Service] repository so that you can browse or search approved digital assets available in the repository and use them in your application authoring experience. For more information, see [Micro-Frontend Asset Selector](/help/assets/overview-asset-selector.md).
