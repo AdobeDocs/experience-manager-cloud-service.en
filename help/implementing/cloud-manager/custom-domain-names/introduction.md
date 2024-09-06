@@ -47,16 +47,16 @@ Adding a custom domain name requires interaction between the DNS service and Clo
 
 |Step|Description|Documentation|
 |---|---|---|
-|1|Add SSL certificate to Cloud Manager|[Add an SSL or Domain Validation certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)|
+|1|Add SSL certificate to Cloud Manager|[Add an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)|
 |2|Add custom domain to Cloud Manager|[Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)|
 |3|Add TXT record to verify domain|[Add a TXT record](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)|
 |4|Review domain verification status|[Check domain name status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)|
-|5|Configure DNS settings by adding DNS CNAME or APEX records that point to AEM as a Cloud Service|[Configuring DNS Settings](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)|
+|5|Configure DNS settings by adding DNS CNAME or APEX records that point to AEM as a Cloud Service|[Configure DNS settings](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)|
 |6|Check DNS record status|[Check DNS record status](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)|
 
 >[!TIP]
 >
->Setting up custom domain names with AEM as a Cloud service is typically a simple process. However, on occasion, domain delegation issues can occur which can take 1-2 business days to resolve. For this reason, it is highly recommended to install the domains well before their go live date. See the document [Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) for more information.
+>Setting up custom domain names with AEM as a Cloud service is typically a simple process. However, on occasion, domain delegation issues can occur which can take 1-2 business days to resolve. For this reason, it is highly recommended to install the domains well before their go live date. See the document [Check domain name status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) for more information.
 
 ## Limitations {#limitations}
 
@@ -74,4 +74,4 @@ There are several limitations to using custom domain names with AEMaaCS.
 ## Get started {#get-started}
 
 * Get started configuring a new custom domain name for your project by [adding an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
-* Manage your existing domain names by reviewing the document [Managing Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md).
+* Manage your existing domain names by reviewing the document [Manage custom domain names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md).
