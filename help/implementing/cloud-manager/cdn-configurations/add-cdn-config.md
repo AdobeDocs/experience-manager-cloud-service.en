@@ -4,9 +4,8 @@ description: Learn about how to add a CDN configuration for an Edge Delivery sit
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-
+exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
 ---
-
 # Add a CDN configuration {#add-cdn}
 
 Adding a CDN configuration must be completed to configure a domain with an SSL.
@@ -36,7 +35,3 @@ Adding a CDN configuration must be completed to configure a domain with an SSL.
    * Select the SSL certificate. Only required if you selected **Adobe managed CDN** as your CDN type.
 
 1. Click **Save**.
-
-
-
-
