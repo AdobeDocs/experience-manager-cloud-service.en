@@ -177,7 +177,7 @@ The program overview gives you access to all details of a Cloud Manager program.
 
 ### Toolbars {#program-overview-toolbar}
 
-The toolbars for the program overview are very similar to those of the [My Programs console.](#my-programs-toolbars) Only the differences are illustrated here.
+The toolbars for the program overview are similar to those of the [My Programs console](#my-programs-toolbars). Only the differences are illustrated here.
 
 #### Cloud Manager Header {#cloud-manager-header-2}
 

@@ -1,5 +1,5 @@
 ---
-title: Add an SSL Certificate or Domain Validation Certificate
+title: Add an SSL Certificate
 description: Learn how to add your own SSL certificate or DV (Domain Validation) certificate using Cloud Manager's self-service tools.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
@@ -7,7 +7,7 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 ---
 
-# Add an SSL certificate or Domain Validation certificate
+# Add an SSL certificate
 
 Learn how to add a customer managed SSL certificate or an Adobe generated and managed DV (Domain Validation) certificate using Cloud Manager's self-service tools.
 
@@ -30,7 +30,7 @@ A user must be a member of the **Business Owner** or **Deployment Manager** role
 
 1. From the left navigation panel, under **Services**, click **SSL Certificates**. If you do not see the left navigation panel as seen in the following image, you may need to click the hamburger icon in the upper-left corner.
 
-   ![Adding a SSL cert](/help/implementing/cloud-manager/assets/ssl/ssl-cert-add.png)
+   ![Adding an SSL certificate](/help/implementing/cloud-manager/assets/ssl/ssl-cert-add.png)
 
 1. Near the upper-right corner of the page, click **Add SSL Certificate**.
 
@@ -39,7 +39,7 @@ A user must be a member of the **Business Owner** or **Deployment Manager** role
     | Use case | Steps |
     | --- | --- |
     | **Add a customer managed SSL certificate** | **To add a customer managed SSL certificate:**<br>a. Select the certificate type **Customer managed (OV/EV)**.<br>b. In the **Certificate name** field, enter a name for your certificate. This field is for informational purposes only and can be any name that helps you reference your certificate easily.<br>c. In the **Certificate**, **Private key**, and **Certificate chain** fields, paste the required values into their respective fields.<br>![Add SSL certificate dialog box](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)<br>Any detected errors in values are displayed. Before you can save your certificate, you must address all errors. See [Certificate Errors](#certificate-errors) to learn more about troubleshooting common errors.<br>d. Continue to step 7. | 
-    | **Add an Adobe managed DV certificate** | **To add an Adobe managed DV certificate:**<br>a. Select the certificate type **Adobe managed (DV)**.<br>![Adding a DC certificate](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br>b. In the **Select domains** drop-down list, select one or more domains that you want associated with the DV certificate.<br>No domains to select? If so, it means that you must add a custom domain. See [Add a custom domain](#add-custom-domain). When you are finished adding a custom domain name, return to this topic and begin at step 1 again.<br>d. Continue to step 7. |
+    | **Add an Adobe managed DV certificate** | **To add an Adobe managed DV certificate:**<br>a. Select the certificate type **Adobe managed (DV)**.<br>![Add a DV certificate](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br>b. In the **Select domains** drop-down list, select one or more domains that you want associated with the DV certificate.<br>No domains to select? If so, it means that you must add a custom domain. See [Add a custom domain](#add-custom-domain). When you are finished adding a custom domain name, return to this topic and begin at step 1 again.<br>d. Continue to step 7. |
 
 <!--
     **Add an SSL certificate:**
@@ -84,7 +84,32 @@ Before you can add an Adobe generated and managed Domain Validated (DV) certific
 
 1. Resume the task [Add a DV certificate](#adding-an-ssl-certificate).
 
+## Add a CDN configuration {#add-cdn}
 
+This step must be completed to configure a domain with an SSL using Fastly CDN.
+
+>![NOTE]
+>
+>For Adobe-managed CDNs, when using DV certificates, only sites with ACME validation are permitted.
+
+**To add a CDN configuration:**
+
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+
+1. Click **CDN Configurations**.
+
+1. Near the upper-right corner of the CDN Configurations page, click **Add**. 
+
+1. In the **Configure CDN** dialog box, provide the necessary information.
+
+   * From the **Origin** drop-down list, do one of the following:
+     * **Sites:** Select an Edge Delivery Services site.
+     * **Environments:** Select a Cloud Service environment.
+   * Select your CDN type: **Adobe managed CDN** or **Other CDN provider**.
+   * Select the domain.
+   * Select the SSL certificate. Only required if you selected **Adobe managed CDN** as your CDN type.
+
+   ![Configure CDN dialog box](assets/configure-cdn-dialog.png)
 
 ### Troubleshooting certificate errors {#certificate-errors}
 
