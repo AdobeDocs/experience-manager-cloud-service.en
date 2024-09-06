@@ -98,7 +98,7 @@ Once you submit the support ticket, Adobe enables Dynamic Media with OpenAPI cap
    </p>
 </td>
 <td>
-   <a href="/help/overview-assets/asset-selector.md">
+   <a href="/help/overview-assets/overview-asset-selector.md">
    <img alt="Adobe's Asset Selector" src="./assets/asset-selector-prereqs.png" />
    </a>
    <div>
