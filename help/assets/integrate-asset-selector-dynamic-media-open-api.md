@@ -16,7 +16,7 @@ Use the following prerequisites if you are integrating Asset Selector with Dynam
 * To access Dynamic Media with OpenAPI capabilities, you must have licenses for:
     * Assets repository (for example, Experience Manager Assets as a Cloud Service).
     * AEM Dynamic Media.
-* Only [approved assets](/help/assets/approved-assets.md) are available for use ensuring brand consistency.
+* Only [approved assets](/help/assets/approve-assets.md) are available for use ensuring brand consistency.
 
 ## Integration for Dynamic Media with OpenAPI capabilities {#adobe-app-integration-polaris}
 
