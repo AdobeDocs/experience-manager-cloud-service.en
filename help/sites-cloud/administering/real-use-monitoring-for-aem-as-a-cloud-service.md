@@ -29,11 +29,6 @@ With RUM, key performance metrics are tracked right from the initiation of the U
 
 AEM has developed RUM to help customers and Adobe understand how visitors interact with AEM sites. RUM can be used to help diagnose performance issues, and measure the effectiveness of experiments. RUM preserves the privacy of visitors through sampling - only a small portion of all page views is monitored - and no personally identifiable information (PII) is collected.
 
-
-## Understand how the Real Use Monitoring service works {#understand-how-the-rum-service-works}
-
-AEM uses RUM to help customers and Adobe understand how visitors interact with AEM sites. It helps them diagnose performance issues, and measure the effectiveness of experiments. RUM preserves the privacy of visitors through sampling - only a small portion of all page views is monitored - and no personally identifiable information (PII) is collected. 
-
 ## Real Use Monitoring service and privacy {#rum-service-and-privacy}
 
 The Real Use Monitoring service in AEM is designed to preserve visitor privacy and minimize data collection. As a visitor, it means that the site you are visiting or made available to Adobe, does not collect any personal information. 
@@ -92,10 +87,11 @@ As you analyze RUM data, there may be variances in page views and other performa
 
 ## FAQ {#faq}
 
-
+<!-- REMOVED THIS FAQ AS PER EMAIL REQUEST FROM SHWETA DUA, SEPTEMBER 4, 2024 TO THE DL-AEM-DOCS GROUP 
 1. **Can customers integrate the RUM service scripts with third-party systems like Dynatrace?**
 
    Yes.
+--> 
 
 1. **Are "Interaction to next paint," "Time to first byte," and "First contentful paint" Web vitals Metrics being collected?**
 
