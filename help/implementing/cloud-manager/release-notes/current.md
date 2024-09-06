@@ -33,7 +33,7 @@ The release date for Cloud Manager release 2024.9.0 in AEM as a Cloud Service is
 
 * KEEP IN? Starting this release, customers using GitHub repositories can now create and use Web Tier Config pipelines. ( CMGR-59046 and Slack https://cq-dev.slack.com/archives/C07LFP5BZ2L/p1725407057847379 )
 
-* KEEP IN? SSL Certificates table in Cloud Manager now enables pagination in the user experience. ( https://jira.corp.adobe.com/browse/CMGR-61041 and Slack )
+* KEEP IN? SSL Certificates table in Cloud Manager now enables pagination in the user experience. ( https://jira.corp.adobe.com/browse/CMGR-61041 and Slack https://cq-dev.slack.com/archives/C07LFRE9QJU/p1725408553760009 )
 
 
 <!--
