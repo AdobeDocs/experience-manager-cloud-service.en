@@ -1,6 +1,7 @@
 ---
 title: Release Notes for [!DNL Workfront for Experience Manager enhanced connector]
 description: Release Notes for [!DNL Workfront for Experience Manager enhanced connector]
+exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
 ---
