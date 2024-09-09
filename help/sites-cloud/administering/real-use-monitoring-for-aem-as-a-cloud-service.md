@@ -17,7 +17,7 @@ role: Admin
 
 ## Overview {#overview}
 
-The RUM (Real Use Monitoring) service is a performance monitoring technology that monitors the client-side data on a website or application in real-time. The data collected by real-use monitoring can be utilised to provide visibility into the real-time performance of a web application, that can provide deeper insights into the end-user experience. This service focuses on collecting metrics and data that are key to optimize performance by monitoring website engagements, rather than the users themselves. With RUM, key performance metrics are tracked right from the initiation of the URL until the request is served back to the browser.
+The RUM (Real Use Monitoring) service is a performance monitoring technology that monitors the client-side traffic on a website or an application in real-time. This service focuses on collecting metrics and data that are key to optimize performance by monitoring website engagements, rather than the users themselves. With RUM, key performance metrics are tracked right from the initiation of the URL until the request is served back to the browser.
 
 ## Who can benefit from a Real Use Monitoring service? {#who-can-benefit-from-rum-service}
 
