@@ -53,7 +53,7 @@ The Real Use Monitoring service is designed to prevent the collection of persona
 
 ## How Real Use Monitoring works for a customer {#how-rum-works-for-a-customer}
 
-Real Use Monitoring automatically monitors client-side traffic automatically. As an Adobe customer, you do not need to take any additional steps, as this service is seamlessly integrated into your existing setup. With the General Availability (GA) rollout, you automatically benefit from this new feature.
+Real Use Monitoring automatically monitors client-side traffic automatically. As an Adobe customer, you do not need to take any additional steps, as this service is seamlessly integrated into your existing setup. With the General Availability (GA) rollout, you automatically benefit from this new feature. At present, the Real Use Monitoring service does not support the exposure of metrics via visualization tools. This functionality is still under development and in early stages. It will be available in future releases. We are actively working to ensure the integration meets our quality and performance standards. Updates regarding the availability of this feature will be communicated in upcoming releases. 
 
 <!-- Alexandru: hiding temporarily, until we figure out where this needs to be linked to 
 
@@ -61,7 +61,7 @@ If you wish to leverage more insights with this new feature to optimize your dig
 
 ## How Real Use Monitoring Service data would be beneficial {#how-rum-service-data-is-being-used}
 
-RUM data would be beneficial for the following purposes:
+Once Adobe supports the exposure of metrics, Real Use Monitoring data can be used for the following purposes:
 
 * To identify and fix performance bottlenecks for customer sites
 * To streamline automated traffic lookup that includes page views.
