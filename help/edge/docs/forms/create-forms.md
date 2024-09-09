@@ -1,5 +1,5 @@
 ---
-title: Getting Started with AEM Forms Edge Delivery Service. Create a form.
+title: Getting Started with Edge Delivery Services for AEM Forms. Create a form.
 description: Craft perfect forms, fast! ⚡ AEM Forms Edge Delivery doc-based authoring = blazing speed & SEO-friendly forms for happier users & search engines.
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
