@@ -218,7 +218,7 @@ Asset Selector lets you view the asset in four different views:
     </td>
     <td>
         <img src="assets/asset-selector-upload.gif" width="70px" height="70px" alt="Asset Selector upload graphic"><br/>
-        <a href="asset-selector-upload.md">Asset Selector Customizations</a>
+        <a href="asset-selector-upload.md">Asset Selector Upload</a>
         <p>
         <em>Learn how you can upload files or folders to Asset Selector from your local or third party file system. </em>
         </p>
