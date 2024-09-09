@@ -168,4 +168,4 @@ After integration with the Adobe's Micro-Frontend Asset Selector, you can see th
 >
 >* [Integrate Asset Selector with various applications](/help/assets/integrate-asset-selector.md)
 >* [Asset Selector properties](/help/assets/asset-selector-properties.md)
->* [Asset Selector customization](/help/assets/asset-selector-customization.md)
+>* [Asset Selector customizations](/help/assets/asset-selector-customization.md)
