@@ -24,6 +24,7 @@ The 2024.9.0 feature activation will provide the full feature set for this maint
 - ASSETS-38968: Improve representation of Content Fragments references
 - ASSETS-41787, ASSETS-41183: Improvements for Assets Bulk Operations framework
 - GRANITE-52917: Optimizations to improve content copy package installation times
+- SCRNS-3980: Detect Grey screen on players having subsequences with no asset scheduled.
 
 ### Fixed Issues {#fixed-issues-17689}
 - ASSETS-40875: Spurious NPE logged by AssetDeleteHandler
@@ -35,6 +36,10 @@ The 2024.9.0 feature activation will provide the full feature set for this maint
 - ASSETS-40815: Use preview PDF rendition for showing PPT file in Link Share UI 
 - ASSETS-37123: Cannot load Asset preview in Link Share Dialog
 - CQ-4358156: update backlinks of tag being deleted
+- SCRNS-4495: Fixed Paste button not functioning properly for different user groups
+- SCRNS-4512: Remove components related to device from AEMaaCS screens
+- SCRNS-4466: On Channel Dashboard, hide - View manifest, generate offline content, update manifest cache, display panel
+- SCRNS-4513: Add column headers for search results page in list view
 
 ### Known Issues {#known-issues-17689}
 
