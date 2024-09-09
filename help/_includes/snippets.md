@@ -49,7 +49,7 @@
 
 ## See also {#see-more-forms-eds}
 
-* [Get started with AEM Forms Edge Delivery Services](/help/edge/docs/forms/tutorial.md)
+* [Get started with Edge Delivery Services for AEM Forms](/help/edge/docs/forms/tutorial.md)
 * [Create a form using Google Sheets or Microsoft Excel](/help/edge/docs/forms/create-forms.md)
 * [Set up your Google Sheets or Microsoft Excel files to start accepting data​](/help/edge/docs/forms/submit-forms.md)
 * [Publish your form and start collecting data](/help/edge/docs/forms/publish-forms.md)
