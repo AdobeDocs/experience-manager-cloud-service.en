@@ -31,8 +31,8 @@ The My Programs console provides an overview of all programs to which you have a
 1. [Toolbars](#toolbars-my-programs-toolbars) for organization selection, alerts, and account settings
 1. Tabs that allow you to toggle the current view of your programs.
    * **Home** view (default) that selects the **My Programs** view with an overview of all programs
-   * **License** that accesses the [License Dashboard.](/help/implementing/cloud-manager/license-dashboard.md)
-   * Note that the tabs default to closed and can be revealed using the hamburger menu in the [Cloud Manager header.](#cloud-manager-header)
+   * **License** that accesses the [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md).
+   * Note that the tabs default to closed and can be revealed using the hamburger menu in the [Cloud Manager header](#cloud-manager-header).
 1. [Statistics and call-to-action](#statistics) for an overview of your recent activity
 1. [**My Programs** section](#my-programs-section) with an overview of all your programs
 1. [Quick links](#quick-links-section) to easily access related resources
@@ -57,7 +57,7 @@ The first is the Cloud Manager header, which is persistent as you navigate Cloud
 1. The organization selector displays the organization you are currently signed into (in this example, Foundation Internal). Tap or click to switch to another organization if your Adobe ID is associated with multiple.
 1. Tapping or clicking the solutions switcher lets you quickly jump to other Experience Cloud solutions.
 1. The help icon provides quick access to learning and support resources.
-1. The notifications icon is badged with the number of currently assigned incomplete [notifications.](/help/implementing/cloud-manager/notifications.md)
+1. The notifications icon is badged with the number of currently assigned incomplete [notifications](/help/implementing/cloud-manager/notifications.md).
 1. Select the icon representing your user to access your user settings. If you do not have a user picture configured, an icon is randomly assigned.
 
 #### Program Toolbar {#program-toolbar}
@@ -177,7 +177,7 @@ The program overview gives you access to all details of a Cloud Manager program.
 
 ### Toolbars {#program-overview-toolbar}
 
-The toolbars for the program overview are very similar to those of the [My Programs console.](#my-programs-toolbars) Only the differences are illustrated here.
+The toolbars for the program overview are similar to those of the [My Programs console](#my-programs-toolbars). Only the differences are illustrated here.
 
 #### Cloud Manager Header {#cloud-manager-header-2}
 
@@ -219,7 +219,7 @@ Use the hamburger menu in the [Cloud Manager header](#cloud-manager-header-2) to
 
 ### Call-to-Action {#cta}
 
-The call-to-action section will give you helpful information depending on the status of your program. For a new program you may see next steps offered as well as a reminder of a go-live date, [set during program creation.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+The call-to-action section will give you helpful information depending on the status of your program. For a new program you may see next steps offered as well as a reminder of a go-live date, [set during program creation](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
 
 ![Call-to-action for a new program](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
 
@@ -245,7 +245,7 @@ Please see the document [Managing Pipelines](/help/implementing/cloud-manager/co
 
 ### Performance Card {#performance}
 
-The **Performance** card gives an overview of the **[CDN Dashboard.](/help/implementing/cloud-manager/cdn-performance.md)**
+The **Performance** card gives an overview of the **[CDN Dashboard](/help/implementing/cloud-manager/cdn-performance.md)**.
 
 ![Performance card](/help/implementing/cloud-manager/assets/cdn-performance-dashboard.png)
 

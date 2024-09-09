@@ -91,7 +91,7 @@ The tests are packaged in a Docker image - designed to be as volatile as possibl
 >
 >Custom UI tests are executed in the production and non-production (opt-in) pipelines which are used by your AEM application changes deployments and AEM product push updates and are therefore a key contribution to help ensure proper functioning of your application and increase release safety. The customer UI tests are also executed in internal pre-release validation pipelines for each customer, which helps provide early feedback.
 >
->Non-Selenium containers should execute tests using an HTTP proxy based on the environment variables in the [UI Testing Section.](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
+>Non-Selenium containers should execute tests using an HTTP proxy based on the environment variables in the [UI Testing Section](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing).
 
 In order to keep pipeline executions efficient, we recommend focusing on key features and main user interaction flows. Full UI test suites that do not fit in this quality gate are recommended to be executed as part of general customer validation pipelines during customer's development flow.
 
@@ -105,7 +105,7 @@ The experience audit quality gate is performing [Google Lighthouse](https://deve
 
 This quality gate is provided by AEM out-of-the-box, but is not blocking the deployment pipelines. By default, an audit against the root page (`/`) of the publish instance is performed. You can contribute by configuring up to 25 custom paths that are considered for audits.
 
-See [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md) for more information.
+See [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-dashboard.md) for more information.
 
 ### Customer Validations
 

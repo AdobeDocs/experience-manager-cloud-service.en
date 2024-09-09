@@ -58,7 +58,7 @@ The **Stage Deployment** phase. involves these steps.
 * **Code Scanning** - This step evaluates the quality of your application code.
   * See [Code Quality Testing](/help/implementing/cloud-manager/code-quality-testing.md) for details on the testing process.
 * **Build Images** - This process is responsible for transforming the content and dispatcher packages produced by the build step into Docker images and Kubernetes configurations.
-* **Deploy to Stage** - The image is deployed to the staging environment in preparation for the [Stage testing stage.](#stage-testing)
+* **Deploy to Stage** - The image is deployed to the staging environment in preparation for the [Stage testing stage](#stage-testing).
 
 ![Stage Deployment](assets/stage-deployment.png)
 
@@ -80,7 +80,7 @@ The **Stage testing** phase involves these steps.
    * The pages that are configured are submitted to the service and evaluated. 
    * The results are informational and show the scores and the change between the current and previous scores.
    * This insight is valuable to determine if there is a regression that is introduced with the current deployment.
-   * See [Understanding Experience Audit results](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
+   * See [Understanding Experience Audit results](/help/implementing/cloud-manager/experience-audit-dashboard.md) for more details.
 
 ![Stage Testing](assets/stage-testing.png)
 
