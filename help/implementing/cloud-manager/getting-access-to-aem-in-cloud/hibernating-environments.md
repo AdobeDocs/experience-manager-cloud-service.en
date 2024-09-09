@@ -111,7 +111,7 @@ Hibernated environments still allow for deployments and manual AEM upgrades.
 
 * Environments in a sandbox program are automatically hibernated after eight hours of inactivity. 
   * Inactivity is defined as neither the author service nor preview or publish services receive requests.
-  * Once hibernated, they can be [manually de-hibernated.](#de-hibernation-introduction)
+  * Once hibernated, they can be [manually de-hibernated].(#de-hibernation-introduction)
 * Sandbox programs are deleted after six months of being in continuous hibernation mode, after which time, they can be recreated.
 
 >[!NOTE]
