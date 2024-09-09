@@ -121,7 +121,7 @@ The **Edge Delivery to-do list** is an onboarding task checklist meant to guide 
 | 5 | Add SSL certificate | See [Add SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
 | 6 | Configure the CDN of your Edge Delivery site | See [Add a CDN configuration](#add-cdn). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on) (2 minutes, 13 seconds)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Add a CDN configuration to your Edge Delivery site {#add-cdn}
 
