@@ -1,5 +1,5 @@
 ---
-title: Managing Environments
+title: Manage Environments
 description: Learn about the types of environments that you can create and how to create them for your Cloud Manager project.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
@@ -7,11 +7,11 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 ---
 
-# Managing Environments {#managing-environments} 
+# Manage Environments {#managing-environments} 
 
 Learn about the types of environments that you can create and how to create them for your Cloud Manager project.
 
-## Environment Types {#environment-types}
+## Environment types {#environment-types}
 
 A user with the requisite permissions can create the following environment types (within the bounds of what is available to the specific tenant).
 
@@ -32,13 +32,13 @@ The capabilities of individual environments depend upon the solutions enabled in
 >
 >Production and staging environments are only created as a pair. You cannot create only a staging or only a production environment.
 
-## Adding an Environment {#adding-environments}
+## Add an Environment {#adding-environments}
 
 To add or edit an environment, a user must be a member of the **Business Owner** role.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, tap or click the program for which you want to add an environment.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, click the program for which you want to add an environment.
 
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, click **Add Environment** on the **Environments** card to add an environment.
 
@@ -52,7 +52,7 @@ To add or edit an environment, a user must be a member of the **Business Owner**
    
 1. In the **Add environment** dialog that appears:
    
-   * Select an [**environment type**.](#environment-types)
+   * Select an [**environment type**](#environment-types).
      * The number of available/used environments is displayed in parentheses behind the environment type name.
    * Provide an environment **Name**.
      * The environment name can not be changed once the environment is created.
@@ -68,7 +68,7 @@ To add or edit an environment, a user must be a member of the **Business Owner**
 
 The **Overview** screen now displays your new environment in the **Environments** card. You can now set up pipelines for your new environment.
 
-## Multiple Publish Regions {#multiple-regions}
+## Multiple publish regions {#multiple-regions}
 
 A user with the **Business Owner** role can configure production and staging environments to include up to three additional publish regions in addition to the primary region. Additional publish regions can improve availability. See the [Additional Publish Regions documentation](/help/operations/additional-publish-regions.md) for more details.
 
@@ -76,7 +76,7 @@ A user with the **Business Owner** role can configure production and staging env
 >
 >You can use the [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) to query a current list of available regions.
 
-### Adding Multiple Publish Regions to a New Environment {#add-regions}
+### Add multiple publish regions to a new environment {#add-regions}
 
 When you add an environment, you can elect to configure additional regions in addition to the primary region.
 
@@ -93,11 +93,11 @@ When you add an environment, you can elect to configure additional regions in ad
 
 The selected regions apply to both production and staging environments.
 
-If you do not specify any additional regions, [you can do so later after the environments are created.](#edit-regions)
+If you do not specify any additional regions, [you can do so later after the environments are created](#edit-regions).
 
 If you want to provision [advanced networking](/help/security/configuring-advanced-networking.md) for the program, it is recommended that this provisioning is done before adding additional publish regions to the environments by using the Cloud Manager API. Otherwise, the additional publish regions' traffic goes through the primary region's proxy.
 
-### Editing Multiple Publish Regions {#edit-regions}
+### Edit multiple publish regions {#edit-regions}
 
 If you did not specify any additional regions initially, you can do so after the environments are created if you have the necessary entitlements.
 
@@ -119,7 +119,7 @@ Changes made to the production environment apply to both production and staging 
 
 If you want to provision [advanced networking](/help/security/configuring-advanced-networking.md) for the program, it is recommended that this provisioning is done before adding additional publish regions to the environments. Otherwise the additional publish regions' traffic goes through the primary region's proxy.
 
-## Environment Details {#viewing-environment}
+## Environment details {#viewing-environment}
 
 From the **Overview** page, you can access an environment's detail in two ways.
 
@@ -147,7 +147,7 @@ Alternatively, click the ellipsis button of the environment you want and then se
 >
 >The **Environments** card only lists three environments. Click **Show All** as described previously to see all environments of the program.
 
-### Accessing the Preview Service {#access-preview-service}
+### Access the preview service {#access-preview-service}
 
 Cloud Manager provides a preview service (delivered as an extra publish service) to each AEM as a Cloud Service environment.
 
@@ -173,7 +173,7 @@ Once activated, you can publish content to the preview service by using the Mana
 >
 >Your environment must be on AEM version `2021.05.5368.20210529T101701Z` or newer to use the preview service. Make sure that an update pipeline has successfully run on your environment so you can use the preview service.
 
-### Status of Additional Publish Regions {#additional-region-status}
+### Status of additional publish regions {#additional-region-status}
 
 If you have activated additional publish regions, you can check the status of these regions from the **Environments** card.
 
@@ -203,9 +203,9 @@ If there are any issues reported with additional publish regions:
 
 How long you wait for the system to recover on its own before taking additional action depends on the impact the failure of that region has to your systems.
 
-In any case, [traffic is always routed to the other closest region that is online.](/help/operations/additional-publish-regions.md) If you continue to see issues, contact Adobe Customer Care.
+In any case, [traffic is always routed to the other closest region that is online](/help/operations/additional-publish-regions.md). If you continue to see issues, contact Adobe Customer Care.
 
-## Updating Environments {#updating-dev-environment}
+## Update environments {#updating-dev-environment}
 
 As a cloud-native service, updates of your development, staging and production environments within production programs are automatically managed by Adobe. 
 
@@ -215,7 +215,7 @@ However, updates to environments in sandbox programs are managed within the prog
 
 ### Updates and Pipelines {#updates-pipelines}
 
-Pipelines are the only way to [deploy code to the environments of AEM as a Cloud Service.](deploy-code.md) For this reason, each pipeline is associated with a particular AEM version.
+Pipelines are the only way to [deploy code to the environments of AEM as a Cloud Service](deploy-code.md). For this reason, each pipeline is associated with a particular AEM version.
 
 If Cloud Manager detects that there is a newer version of AEM available than what was last deployed with the pipeline, it shows the **Update Available** status for the environment.
 
@@ -224,7 +224,7 @@ The process of updating is therefore a two-step process:
 1. Updating the pipeline with the latest AEM version
 1. Running the pipeline to deploy the new version of AEM to an environment
 
-### Updating Your Environments {#updating-your-environments}
+### Update your environments {#updating-your-environments}
 
 >[!NOTE]
 > As of 2024, development instances and some sandbox programs are already automatically updated so there is no need to manage updates for them manually. As a result of this transition, the option to Update environment manually for development instances might not be available to _some_ of your programs.
@@ -249,7 +249,7 @@ The **Update** option's behavior varies depending on the configuration and curre
 * If the pipeline is already being updated, the **Update** option informs the user that an update is already running.
 * If an appropriate pipeline does not exist, the **Update** option prompts the user to create one.
 
-## Deleting Development Environments {#deleting-environment}
+## Deleting development environments {#deleting-environment}
 
 A user with the **Deployment Manager** or **Business Owner** role is able to delete a development environment. 
 
@@ -266,7 +266,7 @@ The delete option is also available from the **Environments** tab of the **Overv
 >* Production and staging environments created in a production program cannot be deleted.
 >* Production and staging environments in a sandbox program can be deleted.
 
-## Managing Access {#managing-access}
+## Manage access {#managing-access}
 
 Select **Manage Access** from the ellipsis menu of the environment on the **Environments** card. You can navigate to the author instance directly and manage access for your environment.
 
@@ -276,7 +276,7 @@ Select **Manage Access** from the ellipsis menu of the environment on the **Envi
 >
 >See [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md) if you want to learn how AEM as a Cloud Service team and product profiles can grant and limit access to your licensed Adobe solutions.
 
-## Accessing the Developer Console {#accessing-developer-console}
+## Access the Developer console {#accessing-developer-console}
 
 Select **Developer Console** from the ellipsis menu of the environment on the **Environments** card. A new tab is opened in your browser with the log on page to the **Developer Console**. 
 
@@ -288,7 +288,7 @@ See [Hibernating and De-hibernating Sandbox Environments](https://experienceleag
 
 This option is also available from the **Environment** tab of the **Overview** window when clicking the ellipsis menu of an individual environment.
 
-## Login Locally {#login-locally}
+## Login locally {#login-locally}
 
 Select **Local Login** from the ellipsis menu of the environment in the **Environments** card to log on locally to Adobe Experience Manager. 
 
@@ -298,24 +298,24 @@ Also, you can log on locally from the **Environments** tab of the **Overview** p
 
 ![Login locally from Environments tab](assets/environ-login-locally-2.png)
 
-## Managing Custom Domain Names {#manage-cdn}
+## Manage custom domain names {#manage-cdn}
 
 Custom domain names are supported in Cloud Manager for Sites programs for both publish and preview services.
 
 >[!TIP]
 >
->For more information, please see the document [Introduction to Custom Domain Names.](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+>For more information, please see the document [Introduction to custom domain names](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
-## Managing IP Allow Lists {#manage-ip-allow-lists} 
+## Manage IP Allow Lists {#manage-ip-allow-lists} 
 
 IP allowlists are supported in Cloud Manager for author, publish, and preview services for Sites programs.
 
 To manage IP allowlists, navigate to the **Environments** tab of the **Overview** page of your program. Click an individual environment so you can manage its details.
 
-### Applying an IP Allow List {#apply-ip-allow-list}
+### Apply an IP Allow List {#apply-ip-allow-list}
 
 Applying an IP allowlist associates all IP ranges included in the definition of the allowlist with an author or publish service in an environment.
 
 >[!TIP]
 >
->For more information, please see the document [Introduction to IP Allow Lists.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+>For more information, please see the document [Introduction to IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).

@@ -14,7 +14,7 @@ Learn how AEM projects are built with Maven and the standards you must observe w
 
 To build and deploy successfully with Cloud Manager, AEM projects need to adhere to the following guidelines:
 
-* Projects must be built using [Apache Maven.](https://maven.apache.org)
+* Projects must be built using [Apache Maven](https://maven.apache.org).
 * There must be a `pom.xml` file in the root of the git repository. This `pom.xml` file can refer to as many sub-modules (which in turn may have other sub-modules, and so on) as necessary.
 * You can add references to additional Maven artifact repositories in your `pom.xml` files.
   * Access to [password-protected artifact repositories](#password-protected-maven-repositories) is supported when configured. However, access to network-protected artifact repositories is not supported.

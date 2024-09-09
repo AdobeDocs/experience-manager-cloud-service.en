@@ -19,7 +19,7 @@ A custom domain name can not serve live traffic until the DNS resolves correctly
 
 You must fulfill these requirements before checking a DNS record status using Cloud Manager.
 
-* You must have already configured the DNS settings for your custom domain name as described in the document [Configuring DNS Settings.](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
+* You must have already configured the DNS settings for your custom domain name as described in the document [Configuring DNS Settings](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md).
 
 ## How to Check DNS Record Status {#how-to}
 
@@ -31,7 +31,7 @@ You must fulfill these requirements before checking a DNS record status using Cl
 
 1. Click the **Status** icon for the domain name.
 
-Cloud Manager performs a DNS lookup for your domain name and displays it [current status.](#statuses)
+Cloud Manager performs a DNS lookup for your domain name and displays it [current status](#statuses).
 
 Cloud Manager will automatically trigger a DNS lookup when your custom domain name is first successfully verified and deployed. For subsequent attempts, you must actively select the **Resolve Again** icon next to the status.
 

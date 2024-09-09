@@ -93,7 +93,7 @@ The following restrictions apply.
 * A user must be logged with the **Deployment Manager** role to configure or run pipelines.
 * At any time, there can only be one full-stack pipeline per environment.
 
-In addition, be aware of how the full-stack pipeline behaves if you choose to introduce a [web tier config pipeline.](#web-tier-config-pipelines)
+In addition, be aware of how the full-stack pipeline behaves if you choose to introduce a [web tier config pipeline](#web-tier-config-pipelines).
 
 * The full-stack pipeline for an environment ignores the Dispatcher configuration if the corresponding web tier config pipeline exists.  
 * If the corresponding web tier config pipeline for the environment does not exist, the user can configure the full-stack pipeline include or ignore the Dispatcher configuration.
