@@ -38,12 +38,12 @@ A user must be a member of the **Business Owner** or **Deployment Manager** role
 
 1. Near the upper-right corner of the page, click **Add SSL Certificate**.
 
-1. In the **Add SSL certificate** dialog box, based on your particular use case, do one of the following:
+1. In the **Add SSL certificate** dialog box, based on [your particular use case](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md), do one of the following:
 
-    | Use case | Steps |
-    | --- | --- |
-    | **Add an Adobe managed certificate (DV)** | **To add an Adobe managed certificate (DV):**<br>a. Select the certificate type **Adobe managed (DV)**.<br>![Add a DV certificate](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br>b. In the **Select domains** drop-down list, select one or more domains that you want associated with the DV certificate.<br>No domains to select? If so, it means that you must add a custom domain. See [Add a custom domain](#add-custom-domain). When you are finished adding a custom domain name, return to this topic and begin at step 1 again.<br>d. Continue to step 7. |
-    | **Add a customer managed certificate (OV/EV)** | **To add a customer managed certificate (OV/EV):**<br>a. Select the certificate type **Customer managed (OV/EV)**.<br>b. In the **Certificate name** field, enter a name for your certificate. This field is for informational purposes only and can be any name that helps you reference your certificate easily.<br>c. In the **Certificate**, **Private key**, and **Certificate chain** fields, paste the required values into their respective fields.<br>![Add SSL certificate dialog box](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)<br>Any detected errors in values are displayed. Before you can save your certificate, you must address all errors. See [Certificate Errors](#certificate-errors) to learn more about troubleshooting common errors.<br>d. Continue to step 7. | 
+    | | Use case | Steps |
+    | --- | --- | --- |
+    | 1 | **Add an Adobe managed certificate (DV)** | **To add an Adobe managed certificate (DV):**<br>a. Select the certificate type **Adobe managed (DV)**.<br>![Add a DV certificate](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br>b. In the **Select domains** drop-down list, select one or more domains that you want associated with the DV certificate.<br>No domains to select? If so, it means that you must add a custom domain. See [Add a custom domain](#add-custom-domain). When you are finished adding a custom domain name, return to this topic and begin at step 1 again.<br>d. Continue to step 7. |
+    | 2 | **Add a customer managed certificate (OV/EV)** | **To add a customer managed certificate (OV/EV):**<br>a. Select the certificate type **Customer managed (OV/EV)**.<br>b. In the **Certificate name** field, enter a name for your certificate. This field is for informational purposes only and can be any name that helps you reference your certificate easily.<br>c. In the **Certificate**, **Private key**, and **Certificate chain** fields, paste the required values into their respective fields.<br>![Add SSL certificate dialog box](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)<br>Any detected errors in values are displayed. Before you can save your certificate, you must address all errors. See [Certificate Errors](#certificate-errors) to learn more about troubleshooting common errors.<br>d. Continue to step 7. | 
 
 <!--
     **Add an SSL certificate:**
@@ -92,9 +92,7 @@ Before you can add an Adobe generated and managed Domain Validated (DV) certific
 
 Certain errors may arise if a certificate is not installed properly or does not meet the requirements of Cloud Manager.
 
-+++
-
-* **Correct certificate order**
++++**Correct certificate order**
 
     The most common reason for a certificate deployment to fail is that the intermediate or chain certificates are not in the correct order.
 
@@ -122,9 +120,7 @@ Certain errors may arise if a certificate is not installed properly or does not 
 
 +++
 
-+++
-
-* **Remove client certificates**
++++**Remove client certificates**
 
     When adding a certificate, if you receive an error similar to the following:
 
@@ -136,9 +132,7 @@ Certain errors may arise if a certificate is not installed properly or does not 
 
 +++
 
-+++
-
-* **Certificate policy**
++++**Certificate policy**
 
     If you see the following error, check the policy of your certificate.
 
@@ -190,9 +184,7 @@ Certain errors may arise if a certificate is not installed properly or does not 
 
 +++
 
-+++
-
-* **Certificate validity dates**
++++**Certificate validity dates**
 
     Cloud Manager expects the SSL certificate to be valid for at least 90 days from the current date. Check the validity of the certificate chain.
 

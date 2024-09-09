@@ -20,11 +20,12 @@ role: Admin, Architect, Developer
 Cloud Manager offers self-service tools to install and manage SSL (Secure Socket Layer) certificates, ensuring site security for your users. The following two use cases are supported:
 
 <!-- CQDOC-21758, #1 -->
+| | Use case | Description |
+| --- | --- | --- |
+| 1 | **Adobe managed certificate (DV)** | Cloud Manager lets users configure a DV (Domain Validation) certificate that comes from Adobe for quick domain setup. DV certificates are the most basic level of SSL certification and are often used for testing purposes or for securing websites with basic encryption. DV certificates are available in both [production and sandbox programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md). |
+| 2 | **Customer managed certificate (OV/EV)** | Cloud Manager uses a platform TLS (Transport Layer Security) service to manage customer-owned SSL certificates and private keys from third-party Certificate Authorities, such as *Let's Encrypt*. |
 
-* **Use case 1:** Cloud Manager uses a platform TLS (Transport Layer Security) service to manage customer-owned SSL certificates and private keys from third-party Certificate Authorities, such as *Let's Encrypt*.
-* **Use case 2:** Cloud Manager lets users configure a DV (Domain Validation) certificate that comes from Adobe for quick domain setup. DV certificates are the most basic level of SSL certification and are often used for testing purposes or for securing websites with basic encryption. DV certificates are available in both [production and sandbox programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
-
-  >![NOTE]
+  >[!NOTE]
   >
   >Customers are not permitted to upload DV (Domain Validation) certificates.
 
