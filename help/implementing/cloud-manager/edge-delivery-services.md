@@ -69,7 +69,7 @@ If you are contracted with AEM as a Cloud Service Sites Edge Delivery Services l
 
 After you add Edge Delivery Services to a production program, your Edge Delivery Services license is applied to it. 
 
-A new, clickable tab called **Edge Delivery** is seen on the Overview page. Clicking the tab displays a table that lists each Edge Delivery site you have added. In the left navigation panel, under the **Services** grouping, you will notice a menu option named **Edge Delivery Sites**.
+A clickable tab called **Edge Delivery** is seen on the Overview page. Clicking the tab displays a table that lists each Edge Delivery site you have added. In the left navigation panel, under the **Services** grouping, notice the menu option named **Edge Delivery Sites**.
 
 ![Overview page showing Edge Delivery Sites in left navigation panel and Edge Delivery tab to the right of the Publish Delivery tab](/help/implementing/cloud-manager/assets/cm-overview-eds.png)
 
@@ -121,7 +121,7 @@ The **Edge Delivery to-do list** is an onboarding task checklist meant to guide 
 | 5 | Add SSL certificate | See [Add SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
 | 6 | Configure the CDN of your Edge Delivery site | See [Add a CDN configuration](#add-cdn). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on) (2 minutes, 13 seconds)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020) (2 minutes, 13 seconds)
 
 ## Add a CDN configuration to your Edge Delivery site {#add-cdn}
 
