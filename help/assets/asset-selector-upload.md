@@ -48,3 +48,9 @@ See [upload with metadata](/help/assets/asset-selector-customization.md#upload-w
 Asset Selector allows you to add a customized upload form. There are several customizations available. For example the [hideUploadButton](/help/assets/asset-selector-properties.md) property allows you to hide the upload button that is shown by default in the application. Instead, you can customize it to render outside the MFE application as per the requirement. See [customized upload](/help/assets/asset-selector-customization.md#customized-upload) for the configuration.
 
 ![Customized upload](assets/customized-upload.png)
+
+>[!MORELIKETHIS]
+>
+>* [Asset Selector examples](/help/assets/asset-selector-examples.md)
+>* [Integrate Asset Selector with various applications](/help/assets/integrate-asset-selector.md)
+>* [Asset Selector properties](/help/assets/asset-selector-properties.md)

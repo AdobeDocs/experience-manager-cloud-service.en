@@ -30,6 +30,6 @@ You can integrate Asset Selector with various applications such as:
 
 >[!MORELIKETHIS]
 >
->* [Asset Selector customization](/help/assets/asset-selector-customization.md)
+>* [Asset Selector customizations](/help/assets/asset-selector-customization.md)
 >* [Asset Selector properties](/help/assets/asset-selector-properties.md)
->* [Integrate Asset Selector dynamic media open APIs](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [Integrate Asset Selector with Dynamic Media with OpenAPI capabilities](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
