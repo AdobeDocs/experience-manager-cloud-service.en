@@ -260,8 +260,10 @@ The rendition above is live! [Try it](https://s7d1.scene7.com/s7viewers/html5/Zo
 
 ## Optional - Learn more
 
-Part I of this journey covered the basics of various Dynamic Media topics. If you want to learn more about what you read, use the materials below to explore concepts in greater detail. Otherwise, you can continue with Part II of your journey. See [What's next in this Dynamic Media Journey](#whats-next).  
+Part I of this journey covered the basics of various Dynamic Media topics. If you want to learn more about what you read, use the materials below to explore concepts in greater detail. Otherwise, you can continue with Part II of your journey. See [What's next in this Dynamic Media Journey](#whats-next). 
 
+{{see-also-dm}}
+<!--
 _Dynamic Media Help topics_
 
 * [Work with Dynamic Media in Experience Manager](/help/assets/dynamic-media/dynamic-media.md)
@@ -273,7 +275,7 @@ _Dynamic Media Help topics_
 * [How to preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
 * [How to deliver Dynamic Media Assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
 * [How to publish assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
-* [Work with Selective Publish in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md)
+* [Work with Selective Publish in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md) -->
 
 _Dynamic Media tutorials_
 
