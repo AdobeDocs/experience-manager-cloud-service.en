@@ -69,7 +69,7 @@ If you are contracted with AEM as a Cloud Service Sites Edge Delivery Services l
 
 After you add Edge Delivery Services to a production program, your Edge Delivery Services license is applied to it. 
 
-A new, clickable tab called **Edge Delivery** is seen on the Overview page. Clicking the tab displays a table that lists each Edge Delivery site you have added. In the left navigation panel, under the **Services** grouping, you will notice a menu option named **Edge Delivery Sites**.
+A clickable tab called **Edge Delivery** is seen on the Overview page. Clicking the tab displays a table that lists each Edge Delivery site you have added. In the left navigation panel, under the **Services** grouping, notice the menu option named **Edge Delivery Sites**.
 
 ![Overview page showing Edge Delivery Sites in left navigation panel and Edge Delivery tab to the right of the Publish Delivery tab](/help/implementing/cloud-manager/assets/cm-overview-eds.png)
 
