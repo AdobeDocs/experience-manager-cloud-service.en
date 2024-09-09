@@ -216,13 +216,19 @@ Asset Selector lets you view the asset in four different views:
         <em>Configure and customize various components of Asset Selector based upon your usability. </em>
         </p>
     </td>
-    <td></td>
+    <td>
+        <img src="assets/asset-selector-upload.gif" width="70px" height="70px" alt="Asset Selector upload graphic"><br/>
+        <a href="asset-selector-upload.md">Asset Selector Customizations</a>
+        <p>
+        <em>Learn how you can upload files or folders to Asset Selector from your local or third party file system. </em>
+        </p>
+    </td>
 </tr>
 </table>
 
 >[!MORELIKETHIS]
 >
->* [Asset Selector customization](/help/assets/asset-selector-customization.md)
+>* [Asset Selector customizations](/help/assets/asset-selector-customization.md)
 >* [Integrate Asset Selector with various applications](/help/assets/integrate-asset-selector.md)
 >* [Asset Selector properties](/help/assets/asset-selector-properties.md)
->* [Integrate Asset Selector dynamic media open APIs](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [Integrate Asset Selector with Dynamic Media with OpenAPI capabilities](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
