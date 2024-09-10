@@ -1,6 +1,6 @@
 ---
 title: Use reCAPTCHA with Edge Delivery Services for AEM Forms as a Cloud Service
-description: Use Google reCAPTCHA in an EDS Form
+description: Use Google reCAPTCHA in an form for Edge Delivery Services for AEM Forms 
 feature: Edge Delivery Services
 exl-id: ac104e23-f175-435f-8414-19847efa5825
 role: Admin, Architect, Developer
@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 
 # Use reCAPTCHA with Edge Delivery Services for AEM Forms as a Cloud Service
 
-<span>The **reCAPTCHA** feature is under the pre-release program. To request access to the **reCAPTCHA** feature for AEM Forms Edge Delivery Services, send an email from your work address to mailto:aem-forms-ea@adobe.com.</span>
+<span>The **reCAPTCHA** feature is under the pre-release program. To request access to the **reCAPTCHA** feature for Edge Delivery Services for AEM Forms, send an email from your work address to mailto:aem-forms-ea@adobe.com.</span>
 
 reCAPTCHA is a popular tool used to protect websites from fraudulent activities, spam, and misuse. In Edge Delivery Services, the Adaptive Forms Block provides the capability to add Google reCAPTCHA to distinguish between humans and bots. This feature allows users to protect their website from spam and misuse. 
 For example, consider an enquiry form that collects data such as start and end trip dates, room budget, estimated trip cost, and traveler information. In such cases, there is a risk of malicious users exploiting the form for purposes like sending phishing emails or flooding it with irrelevant or harmful content using spambots. Integrating reCAPTCHA offers added security by verifying that submissions are from genuine users, effectively minimizing spam entries.
@@ -43,7 +43,7 @@ To start configuring reCaptcha in Edge Delivery Services Forms, refer to the fol
 
 The Site Secret for domain registered with Google reCAPTCHA is added to project the configuration file (`.helix/config`) in your AEM Project folder at Microsoft SharePoint or Google Drive. To add the Site Secret to the config file:
 
-1. Go to your AEM Project folder on Microsoft® SharePoint or Google Drive. 
+1. Go to your AEM Project folder on Microsoft&reg; SharePoint or Google Drive. 
 1. Create the `.helix/config.xlsx` file in your AEM Project folder in Microsoft SharePoint Site or the `.helix/config` file in AEM Project folder within your Google Drive. 
 
     >[!NOTE]
@@ -72,7 +72,7 @@ The Site Secret for domain registered with Google reCAPTCHA is added to project 
 
 The Site Key for a domain registered with Google reCAPTCHA is added to the spreadsheet of the form that is to be protected. To add the Site key to a form:
 
-1. Go to your AEM Project folder on Microsoft® SharePoint or Google Drive and open your spreadsheet. You can also create new spreadsheet for a form.
+1. Go to your AEM Project folder on Microsoft&reg; SharePoint or Google Drive and open your spreadsheet. You can also create new spreadsheet for a form.
 1. Insert a row into the spreadsheet to add new field as CAPTCHA, including the following details:
     * **type**: captcha
     * **value**: Google reCAPTCHA site key value

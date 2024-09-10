@@ -15,7 +15,7 @@ Learn how to determine whether your custom domain name has been verified success
 
 You must fulfill these requirements before checking your domain name status in Cloud Manager.
 
-* You must first add a TXT record for your custom domain as described in the document [Adding a TXT Record.](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
+* You must first add a TXT record for your custom domain as described in the document [Adding a TXT Record](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md).
 
 ## How to Check the Status of Your Custom Domain Name {#how-to}
 
@@ -35,7 +35,7 @@ The status detail is shown. Your custom domain is ready to be used when the stat
 
 >[!NOTE]
 >
->Cloud Manager will automatically trigger verification when you select **Create** on the verification step of the **Add Custom Domain** wizard when [adding a new custom domain name to Cloud Manager.](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) For subsequent verifications, you must actively select the verify again icon next to the status.
+>Cloud Manager will automatically trigger verification when you select **Create** on the verification step of the **Add Custom Domain** wizard when [adding a new custom domain name to Cloud Manager](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). For subsequent verifications, you must actively select the verify again icon next to the status.
 
 ## Understanding Verification Statuses {#statuses}
 

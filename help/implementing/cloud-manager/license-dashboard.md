@@ -7,7 +7,7 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 ---
 
-# License Dashboard {#license-dashboard}
+# License dashboard {#license-dashboard}
 
 Cloud Manager provides a dashboard for easy viewing of AEMaaCS product entitlements available to your organization or tenant.
 
@@ -15,7 +15,7 @@ Cloud Manager provides a dashboard for easy viewing of AEMaaCS product entitleme
 >
 >The license dashboard only applies to the AEM as a Cloud Service programs. [AMS programs](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) are not included in the license dashboard.
 >
->To determine the type of service your program has (AMS or AEMaaCS), please see the document [Navigating the Cloud Manager UI.](/help/implementing/cloud-manager/navigation.md#program-cards)
+>To determine the type of service your program has (AMS or AEMaaCS), please see the document [Navigating the Cloud Manager UI](/help/implementing/cloud-manager/navigation.md#program-cards).
 
 ## Overview {#overview}
 
@@ -24,7 +24,7 @@ The Cloud Manager License Dashboard provides easy access to the following inform
 1. Solution entitlements are available to you across all of your programs, including what's used and what's available
 1. Content Request consumption metrics trended by month for the Sites solution
 
-## Using the License Dashboard {#using-dashboard}
+## Use the License dashboard {#using-dashboard}
 
 To access your license dashboard, follow these steps.
 
@@ -33,7 +33,7 @@ To access your license dashboard, follow these steps.
 >A user in the **Business Owner** role must be logged in to view the License Dashboard.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
-1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, tap or click the hamburger menu button on the [Cloud Manager Header.](/help/implementing/cloud-manager/navigation.md#cloud-manager-header) This reveals the tabs.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, click the hamburger menu button on the [Cloud Manager Header](/help/implementing/cloud-manager/navigation.md#cloud-manager-header). This reveals the tabs.
 1. Tap or click the **License** option in the tab.
 
 ![License Dashboard](assets/license-dashboard.png)
@@ -57,13 +57,16 @@ Each section summarizes what is available and how it is used, if at all. Current
 >
 >To learn how to manage your Adobe entitlements across your entire organization from Admin Console, see the [Admin Console overview](https://helpx.adobe.com/enterprise/using/admin-console.html).
 
-## View Usage Details {#view-usage-details}
+## View usage details {#view-usage-details}
 
-The **View usage details** button gives access to the chosen solution's **Usage Details** window. This window gives a detailed breakdown including charts to show your solution's usage. How that usage is measured depends on the chosen solution.
+<!--
+The **View usage details** button gives access to the chosen solution's **Usage Details** window. This window gives a detailed breakdown including charts to show your solution's usage. How that usage is measured depends on the chosen solution. -->
 
-### Sites Usage Details {#sites-usage-details}
+The **View usage details** button in the License area of Cloud Manager provides a detailed breakdown of your current resource usage. When clicked, it opens a report or dashboard that shows important metrics related to your license. <!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." --> This functionality helps you monitor and ensure that you are staying within the limits of your contract while offering insights for better resource planning and optimization. 
 
-The **Sites usage details** window, presents graphs giving an overview of the usage of your Sites licenses based on [content requests.](#what-is-a-content-request)
+### Sites usage details {#sites-usage-details}
+
+The **Sites usage details** window, presents graphs giving an overview of the usage of your Sites licenses based on [content requests](#what-is-a-content-request).
 
 ![Sites usage details window](assets/sites-usage-details.png)
 
@@ -71,9 +74,10 @@ The left side of the window presents a pie chart showing the contract breakdown 
 
 The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time.
 
-### Assets Usage Details {#assets-usage-details}
+<!-- REMOVED AS PER CQDOC-21983
+### Assets usage details {#assets-usage-details}
 
-The **Assets usage details** window, presents graphs giving an overview of the usage of your Assets licenses based on [storage](#storage) and [standard users.](#standard-users) Select the appropriate tab to toggle between the views.
+The **Assets usage details** window, presents graphs giving an overview of the usage of your Assets licenses based on [storage](#storage) and [standard users](#standard-users). Select the appropriate tab to toggle between the views.
 
 For both storage and standard users views, you can use the **Environment Type** dropdown to toggle the view between production, stage, and development environments.
 
@@ -91,7 +95,7 @@ The right side of the window presents an area chart showing the usage broken dow
 
 The left side of the window presents a pie chart showing the contract breakdown for the contract year selected in the **View contract year** dropdown.
 
-The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time.
+The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time. -->
 
 ## Frequently Asked Questions {#faq}
 
@@ -103,7 +107,7 @@ One content request is counted for each page view or for every five API calls, m
 
 Content Requests exclude requests or activities initiated by or on behalf of Adobe for the sole purpose of providing products and services. Adobe-identified user agent traffic from bots, crawlers, and spiders related to common search engines and social media services are also excluded.
 
-See also [Understanding Cloud Service Content Requests](/help/implementing/cloud-manager/content-requests.md).
+See also [Understand Cloud Service content requests](/help/implementing/cloud-manager/content-requests.md).
 
 ### How does Adobe Experience Manager measure content requests? {#how-are-content-requests-measured}
 

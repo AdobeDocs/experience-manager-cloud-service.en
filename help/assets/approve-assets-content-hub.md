@@ -1,6 +1,7 @@
 ---
 title: Approve assets for Content Hub
 description: Learn how to approve assets in Assets as a Cloud Service to make them available in Content Hub.
+exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
 ---
 # Approve assets for Content Hub {#approve-assets-content-hub}
 
@@ -92,6 +93,3 @@ The display of assets uploaded using Content Hub depends on if you have [enabled
 * If the **[!UICONTROL Auto-approval]** toggle is disabled, the assets that you upload using Content Hub do not display automatically. The assets are available in the `hydrated-assets` folder of your Assets as a Cloud Service environment. Navigate to the folder and [bulk edit](#bulk-approve-assets-content-hub) the status of those assets to `Approved` for those assets to display in Content Hub.
 
 ![Content Hub approval process](/help/assets/assets/content-hub-approval.png)
-
-
-
