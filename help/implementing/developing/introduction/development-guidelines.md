@@ -176,6 +176,9 @@ On local development (using the SDK), `/apps` and `/libs` can be written to dire
 >The AEM as a Cloud Service Developer Console should not be confused with the similarly named [*Adobe Developer Console*](https://developer.adobe.com/developer-console/).
 >
 
+>[!NOTE
+>Some customers will have the option to try out a revamped experience for the AEM Cloud Service Developer Console. See [this article](/help/implementing/developing/introduction/developer-console.md) for more information.]
+
 Customers can access CRXDE lite on the author tier's development environment but not stage or production. The immutable repository (`/libs`, `/apps`) cannot be written to at runtime so attempting to do so will result in errors.
 
 Instead, the Repository Browser can be launched from the AEM as a Cloud Service Developer Console, providing a read-only view into the repository for all environments on author, publish, and preview tiers. For more information see the [Repository Browser](/help/implementing/developing/tools/repository-browser.md).
