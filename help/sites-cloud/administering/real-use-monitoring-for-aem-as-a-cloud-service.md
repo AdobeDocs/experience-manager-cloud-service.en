@@ -21,11 +21,11 @@ The RUM (Real Use Monitoring) service is a performance monitoring technology tha
 
 ## Who can benefit from a Real Use Monitoring service? {#who-can-benefit-from-rum-service}
 
-AEM has developed Real Use Monitoring with an intention to help all customers and Adobe understand how end-users interact with AEM sites. Real Use Monitoring would allow customers to help diagnose performance issues, and measure the effectiveness of experiments. Real Use Monitoring preserves the privacy of visitors through sampling - only a small portion of all page views is monitored - and no personally identifiable information (PII) is collected.
+AEM has developed Real Use Monitoring helps customers and Adobe to understand how end-users interact with AEM sites. Real Use Monitoring diagnoses performance issues, and measure the effectiveness of experiments. Real Use Monitoring preserves the privacy of visitors through sampling - only a small portion of all page views is monitored - and no personally identifiable information (PII) is collected.
 
 ## Real Use Monitoring service and privacy {#rum-service-and-privacy}
 
-The Real Use Monitoring service in AEM is designed to preserve visitor privacy and minimize data collection. As a visitor, it means that the site you are visiting or made available to Adobe, does not collect any personal information. 
+The Real Use Monitoring service in AEM preserves visitor privacy and minimize data collection. As a visitor, it means that the site you are visiting or made available to Adobe, does not collect any personal information. 
 
 As a site operator, no additional opt-in is required to enable monitoring through this feature. There is no additional pop-up or consent form for the end users to accept for enabling RUM. 
 
@@ -53,20 +53,20 @@ The Real Use Monitoring service is designed to prevent the collection of persona
 
 ## How Real Use Monitoring works for a customer {#how-rum-works-for-a-customer}
 
-Real Use Monitoring automatically monitors client-side traffic automatically. As an Adobe customer, you do not need to take any additional steps, as this service is seamlessly integrated into your existing setup. With the General Availability (GA) rollout, you automatically benefit from this new feature. At present, the Real Use Monitoring service does not support the exposure of metrics via visualization tools. This functionality is still under development and in early stages. It will be available in future releases. We are actively working to ensure the integration meets our quality and performance standards. Updates regarding the availability of this feature will be communicated in upcoming releases. 
+Real Use Monitoring automatically monitors client-side traffic automatically. As an Adobe customer, you do not need to take any additional steps, as this service is seamlessly integrated into your existing setup. With the General Availability (GA) rollout, you automatically benefit from this new feature. At present, Real Use Monitoring service does not expose the metrics. This functionality is still under development and in early stages. It may become available in future releases.
 
 <!-- Alexandru: hiding temporarily, until we figure out where this needs to be linked to 
 
 If you wish to leverage more insights with this new feature to optimize your digital experiences effortlessly, please see here (link to Row 99). -->
 
-## How Real Use Monitoring Service data would be beneficial {#how-rum-service-data-is-being-used}
+## How Adobe uses Real Use Monitoring {#how-rum-data-is-being-used}
 
-Once Adobe supports the exposure of metrics, Real Use Monitoring data can be used for the following purposes:
+Real Use Monitoring data is used for the following purposes:
 
 * To identify and fix performance bottlenecks for customer sites
 * To streamline automated traffic lookup that includes page views.
 * To understand how AEM interacts with other scripts (such as analytics, targeting, or external libraries) on the same page, to increase compatibility.
-
+<!--
 ## Limitations and understanding variance in page views and performance metrics {#limitations-and-understanding-variance-in-page-views-and-performance-metrics}
 
 Here are key considerations for customers to keep in mind when interpreting their RUM data:
@@ -78,6 +78,7 @@ Here are key considerations for customers to keep in mind when interpreting thei
 1. **Limitations in capturing headless API/JSON calls**
 
    * RUM data service focuses on the client-side experience and doesn't capture the backend API or JSON calls made from a non-AEM headless app at this time. The exclusion of these calls from RUM service data creates variances from the content requests measured by CDN Analytics.
+-->
 
 ## FAQ {#faq}
 
@@ -87,7 +88,7 @@ Here are key considerations for customers to keep in mind when interpreting thei
    Yes.
 --> 
 
-1. **Are "Interaction to next paint," "Time to first byte," and "First contentful paint" Web vitals Metrics being collected?**
+1. **Are "Interaction to next paint," "Time to first byte," and "First contentful paint" metrics being collected?**
 
    Interaction to next paint (INP) and Time To First Byte (TTFB) are collected.  First contentful paint is not collected at this time.
    
