@@ -65,7 +65,7 @@ If you are contracted with AEM as a Cloud Service Sites Edge Delivery Services l
 * Access SLA reporting (*coming soon*) <!-- ADD LINK TO IT WHEN FINALLY ADDED -->
 * Gain Adobe support. Make sure that your Edge Delivery Services sites are registered through a Production program in Cloud Manager for proper recognition and support from Adobe.
 
-## Add an Edge Delivery Services site {#eds-add-site}
+## Add an Edge Delivery site {#eds-add-site}
 
 After you add Edge Delivery Services to a production program, your Edge Delivery Services license is applied to it. 
 
