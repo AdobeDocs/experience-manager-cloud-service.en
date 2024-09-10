@@ -18,15 +18,6 @@ Before beginning this guide, you should already be familiar with the basics of a
 * You have access to an [AEM Cloud Service sandbox.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
 * You have [enabled the Universal Editor on the same sandbox environment.](/help/implementing/universal-editor/getting-started.md)
 
-## Pick the Right Editor {#editor-choice}
-
-AEM offers two different content editors and the choice of which to use depends on your situation.
-
-* **Universal Editor** - This should be the default choice for new sites.
-* **AEM Page Editor** - This should be chosen for an existing AEM Sites migration to Edge Delivery Services.
-
-This guide focuses on AEM projects on Edge Delivery Services using the Universal Editor. See the document [Using Edge Delivery Services with AEM](/help/edge/using.md) for more details on choosing the right editor and the migration of existing AEM sites to Edge Delivery Services.
-
 ## Core Concepts when Developing for Edge Delivery Services {#core-concepts}
 
 Edge Delivery Services is based around the concept of blocks. AEM comes with a comprehensive library of predefined blocks, which can be extended to meet your project needs. Code for Edge Delivery Services projects is managed in GitHub.

@@ -11,17 +11,11 @@ role: Admin, Architect, Developer
 
 Discover how Experience Audit validates your deployment process, ensuring that changes meet baseline standards for performance, accessibility, best practices, and SEO. It provides a clear and informative dashboard interface to track these metrics.
 
->[!NOTE]
->
->This feature is only available to [the early adopter program](/help/implementing/cloud-manager/release-notes/current.md#early-adoption).
->
->For details on the existing Experience Audit feature for AEM as a Cloud Service, see [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md).
-
 ## Overview {#overview}
 
 Experience Audit validates the deployment process and helps ensure that the changes are deployed:
 
-1. Meet baseline standards for performance, accessibility, best practices, SEO (Search Engine Optimization), and PWA (Progressive Web App).
+1. Meet baseline standards for performance, accessibility, best practices, and SEO (Search Engine Optimization).
 
 1. Do not introduce regressions.
 
@@ -82,7 +76,7 @@ Experience Audit is available by default for production pipelines. It can be opt
 
 The results of the Experience Audit are presented in the **Stage testing** phase of the production pipeline via the [production pipeline execution page](/help/implementing/cloud-manager/deploy-code.md).
 
-![Dashboard in the pipeline](assets/experience-audit-dashboard.jpg)
+![Dashboard in the pipeline](assets/experience-audit-dashboard.png)
 
 Experience Audit provides the median Google Lighthouse scores for the [configured pages](#configuration) and the difference in score to the previous scan.
 
@@ -133,9 +127,17 @@ The report is split into two areas:
 
 #### Page scores &mdash; trend {#trend}
 
-By default, the selected view for **Page scores &mdash; trend** is **median scores** for the **Last 6 months**.
+By default, the selected view for **Page scores &mdash; trend** is **median scores** for the **Last year**.
 
-Use the **Select** and **View** drop-downs at the top and bottom of the chart button to select page-specific details and different time frames, respectively. Click **update trend** at the top of the chart to apply the selections and refresh the chart.
+You can choose to view the trends for specific Lighthouse categories by clicking the category name in the legend.
+
+![Trend Selectable](assets/experience-audit-trend-selectable.png)
+
+Use the **Select** drop-down at the top of the chart to select page-specific details, and the **View** and **Trigger** drop-downs at the bottom to choose different time frames and the trigger type, respectively.
+
+The **View** drop-down offers the possibility to select a preset time frame, or a custom interval for a more specific view.
+
+![Trend View](assets/experience-audit-trend-view.png)
 
 When moving the mouse over the chart, a tooltip displays the values for the Google Lighthouse categories at specific points in time.
 
@@ -158,13 +160,13 @@ The **Recommendations** section shows an aggregate set of insights. By default, 
 
 ![Recommendations](assets/experience-audit-recommendations.png)
 
-Click the chevron for any recommendation to reveal details about it.
+Click any recommendation to reveal details about it.
 
 ![Recommendation details](assets/experience-audit-recommendations-details.png)
 
-When available, the expanded recommendation details also contain the percentage of the recommendations impact, to help focus on the most impactful changes.
+When available, the expanded recommendation details also contain the percentage of the recommendations impact, to help focus on the most impactful changes. In addition to this, expanded recommendations may include relevant AEM documentation links and tips that can guide you through implementing the suggested fixes.
 
-Click the **view pages** link in the details view to see the pages to which the recommendation applies.
+Click the **see pages** link in the details view to see the pages to which the recommendation applies.
 
 ![Pages for the recommendation details](assets/experience-audit-details-pages.png)
 
@@ -216,7 +218,7 @@ If [pages you configured](#configuration) to be audited were not available or th
 
 The pipeline shows an expandable error section to view the relative URL paths it could not access.
 
-![Issues encountered by Experience Audit](assets/experience-audit-issues.jpg)
+![Issues encountered by Experience Audit](assets/experience-audit-issues.png)
 
 If viewing the full report, details are shown in the **[Experience Audit scan results](#results)** section, which is also expandable.
 

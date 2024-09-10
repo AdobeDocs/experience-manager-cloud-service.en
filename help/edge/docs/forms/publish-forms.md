@@ -1,6 +1,6 @@
 ---
-title: Publish an AEM Forms Edge Delivery Services Form
-description: Publish an AEM Forms Edge Delivery Services Form
+title: Publish an Edge Delivery Services for AEM Forms 
+description: Publish an Edge Delivery Services for AEM Forms 
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
 role: Admin, Architect, Developer
