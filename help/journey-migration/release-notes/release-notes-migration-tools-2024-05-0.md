@@ -13,6 +13,18 @@ This page outlines the Release Notes for Migration Tools in AEM as a Cloud Servi
 
 ### Release Date {#release-date-bpa}
 
+The Release Date for Best Practices Analyzer v2.1.50 is May, 2024.
+
+### Bug fixes {#bug-fixes-bpa}
+
+* The Best Practices Analyzer now detects all nodes larger than 16MB
+* Race condition causing sproradic occurrences of NCC findings fixed.
+
+
+## Best Practices Analyzer {#bpa-release}
+
+### Release Date {#release-date-bpa}
+
 The Release Date for Best Practices Analyzer v2.1.48 is May 09, 2024.
 
 ### What's New {#what-is-new-bpa}
