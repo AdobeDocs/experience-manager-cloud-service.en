@@ -1139,6 +1139,7 @@ user-guide-title: AEM as a Cloud Service
     + [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
     + [AEM Rapid Development Environments](/help/implementing/developing/introduction/rapid-development-environments.md)
     + [AEM as a Cloud Service Development Guidelines](/help/implementing/developing/introduction/development-guidelines.md)
+    + [AEM as a Cloud Service Developer Console (Beta)](/help/implementing/developing/introduction/developer-console.md)
     + [Logging](/help/implementing/developing/introduction/logging.md)
     + [Log Forwarding](/help/implementing/developing/introduction/log-forwarding.md)
     + [Configurations and the Configuration Browser](/help/implementing/developing/introduction/configurations.md)
