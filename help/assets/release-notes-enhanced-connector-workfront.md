@@ -9,13 +9,13 @@ role: Admin
 
 The following section outlines the general Release Notes for [!DNL Workfront for Experience Manager enhanced connector].
 
-The release date for the latest version 1.9.19 of [!DNL Workfront for Experience Manager enhanced connector] is April 12, 2024.
+The release date for the latest version 1.9.20 of [!DNL Workfront for Experience Manager enhanced connector] is September 06, 2024.
 
 ## Release highlights {#release-highlights}
 
 The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following bug fix:
 
-* Failure to close HTTP clients is causing out-of-memory issues.
+* MIME type is lost while uploading and creating a new version of an existing asset.
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 
 >[!IMPORTANT]
 >
->Adobe recommends you [upgrade to the latest 1.9.19 version](/help/assets/workfront-connector-install.md) of the [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe recommends you [upgrade to the latest 1.9.20 version](/help/assets/workfront-connector-install.md) of the [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Known Issues {#known-issues}
 
@@ -32,6 +32,11 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 * When you are using the classic Workfront experience, the **[!UICONTROL Send to]** option available in the **[!UICONTROL More]** drop-down list does not allow you to select the target destination within Experience Manager. The **[!UICONTROL Send to]** option works correctly using the **[!UICONTROL Document Actions]** drop-down list. The **[!UICONTROL Send to]** option works correctly for **[!UICONTROL More]** drop-down list and the **[!UICONTROL Document Actions]** drop-down list available in the new Workfront experience.
 
 ## Previous releases {#previous-releases}
+
+### April 2024 release {#april-2024-release}
+
+* Failure to close HTTP clients is causing out-of-memory issues.
+
 
 ### March 2024 release {#march-2024-release}
 
@@ -62,7 +67,7 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 
 * No request time processing for critical flows in linked folder, document update, and note update.
 
-### November 2023 release {#november-2023-release}
+### November 2023 release {#nov-2023-release}
 
 * While viewing the list of AEM folders, the dialog takes more than a minute to load.
 * Authorized [!DNL Workfront] users are consistently receiving authentication failure error logs.
