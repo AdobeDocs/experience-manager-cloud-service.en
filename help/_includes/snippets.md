@@ -173,3 +173,4 @@ The following table demonstrates the difference between the features available i
 >
 >* Deliver [interactive 3D-powered experience](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
 >* Other [Dynamic Media resource bank](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
+
