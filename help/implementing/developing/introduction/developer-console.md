@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 
 # AEM as a Cloud Service Developer Console (Beta) {#developer-console}
 
->![NOTE]
+>[!NOTE]
 >
 >This article describes a revamped experience for the AEM Cloud Service Developer Console, which is now in beta, and available to some customers by clicking a button at the top of the classic UI. We appreciate any feedback you can send to `aemcs-new-devconsole-ui-beta@adobe.com`. For information about the classic AEM Developer Console, see [this article](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console).
 
