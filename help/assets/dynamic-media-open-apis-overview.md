@@ -56,7 +56,7 @@ To enable Dynamic Media with OpenAPI capabilities on AEM as a Cloud Service, sub
 
    >[!NOTE]
    >
-   > To integrate with a non-Adobe application, provide domain names to whitelist where the application is hosted.
+   > To integrate with a non-Adobe application, provide domain names to allow list where the application is hosted.
 
 * Details of key customer contacts involved in integration project.
 
