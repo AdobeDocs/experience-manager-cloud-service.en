@@ -32,7 +32,7 @@ You can buy a domain name from a domain name registrar, a company or organizatio
 
 ## Custom domain names and bring your own CDNs {#byo-cdn}
 
-AEM as a Cloud Service offers a built-in content delivery network (CDN) service, but also lets you BYO (Bring Your Own) CDN to use with AEM. Custom domains can be installed either in the AEM-managed CDN or a CDN you manage.
+AEM as a Cloud Service offers a built-in CDN (Content Delivery Network) service, but also lets you BYO (Bring Your Own) CDN to use with AEM. Custom domains can be installed either in the AEM-managed CDN or a CDN you manage.
 
 * Cloud Manager manages custom domain names and certificates installed in the AEM-managed CDN.
 * Custom domain names and certificates installed in a BYO CDN are managed directly within that CDN. 
