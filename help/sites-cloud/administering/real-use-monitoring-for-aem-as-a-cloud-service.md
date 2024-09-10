@@ -102,6 +102,6 @@ Here are key considerations for customers to keep in mind when interpreting thei
    
 1. **How can I opt out?**
 
-   Adobe recommends using the Real Use Monitoring (RUM) due to its significant benefits and that it can allow you to optimize your digital experiences. It can offer valuable insights that can help improve website performance. The service is designed to be seamless and has no impact on your website's performance.
+   Adobe recommends using the Real Use Monitoring (RUM) due to its significant benefits and that it will allow Adobe to help you optimize your digital experiences by improving website performance. The service is designed to be seamless and has no impact on your website's performance.
 
-   Opting out means missing these insights. However, if you encounter any issues, contact Adobe Support.
+   Opting out may mean missing out a chance to improve traffic engagement on your website. However, if you encounter any issues, contact Adobe Support.
