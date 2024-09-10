@@ -1,17 +1,15 @@
 ---
-title: CRX/DE Lite and AEM as a Cloud Service Developer Console
+title: AEM as a Cloud Service Developer Console (Beta)
 description: Learn about CRX/DE Lite and AEM as a Cloud Service Developer Console
 feature: Developing
 role: Admin, Architect, Developer
 ---
 
-# CRX/DE Lite and AEM as a Cloud Service Developer Console {#crxde-lite-and-developer-console}
+# AEM as a Cloud Service Developer Console (Beta) {#developer-console}
 
-## Local Development {#local-development}
-
-For local development, Developers have full access to CRXDE Lite (`/crx/de`)  and the AEM Web Console (`/system/console`).
-
-On local development (using the SDK), `/apps` and `/libs` can be written to directly, which is different from Cloud environments where those top level folders are immutable.
+>![NOTE]
+>
+>This article describes a revamped experience for the AEM Cloud Service Developer Console, which is now in beta, and available to some customers by clicking a button at the top of the classic UI. We appreciate any feedback you can send to `aemcs-new-devconsole-ui-beta@adobe.com`. For information about the classic AEM Developer Console, see [this article](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console).
 
 ## AEM as a Cloud Service Development tools {#aem-as-a-cloud-service-development-tools}
 
@@ -100,7 +98,3 @@ As illustrated below, available statuses information include the state of bundle
 * **Example use case:** A developer wants to make sure that the configurations they specified are actually present on the environment. If the configuration is lacking, they can check the feature model or the configuration runmode or folder.
 
 For Production programs, access to the AEM as a Cloud Service Developer Console is defined by the "Cloud Manager - Developer Role" in the Adobe Admin Console, while for sandbox programs, the AEM as a Cloud Service Developer Console is available to any user with a product profile giving them access to AEM as a Cloud Service. For all programs, "Cloud Manager - Developer Role" is needed for status dumps and the repository browser and users must also be defined in the AEM Users or AEM Administrators Product Profile on both author and publish services to view data from both services. For more information about setting up user permissions, see [Cloud Manager Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
-
-## Performance Monitoring {#performance-monitoring}
-
-Adobe monitors application performance and takes measures to address if deterioration is observed. At this time, application metricscannot be obeserved.
