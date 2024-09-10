@@ -64,7 +64,6 @@ If you wish to leverage more insights with this new feature to optimize your dig
 Real Use Monitoring data is used for the following purposes:
 
 * To identify and fix performance bottlenecks for customer sites
-* To streamline automated traffic lookup that includes page views.
 * To understand how AEM interacts with other scripts (such as analytics, targeting, or external libraries) on the same page, to increase compatibility.
 <!--
 ## Limitations and understanding variance in page views and performance metrics {#limitations-and-understanding-variance-in-page-views-and-performance-metrics}
