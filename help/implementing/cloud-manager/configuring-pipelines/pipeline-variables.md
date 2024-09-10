@@ -45,7 +45,7 @@ If a pipeline is running, variable management is blocked.
 
 1. The **Variables Configuration** window opens. Enter the variable details in the first row of the table and tap or click **Add**.
 
-   * **Configuration Name** is a unique identifier for your variable, which must head [pipeline variable naming conventions.](#naming-conventions)
+   * **Configuration Name** is a unique identifier for your variable, which must head [pipeline variable naming conventions](#naming-conventions).
    * **Value** is the value that the variable holds.
    * **Step Applied** is the step in the pipeline to which the variable applies. It is required.
      * **Build**

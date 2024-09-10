@@ -8,6 +8,8 @@ exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
 ---
 # ![Dynamic Media Newsletter logo](/help/assets/dynamic-media/assets/dynamic-media-newsletter-logo.png)
 
+{{work-with-dynamic-media}}
+
 >[!NOTE]
 >
 >The monthly newsletter is now discontinued. However, you can still access the newsletter archives below.

@@ -1,59 +1,98 @@
 ---
 title: Add an SSL Certificate
-description: Learn how to add your own SSL certificate using Cloud Manager's self-service tools.
+description: Learn how to add your own SSL certificate or DV (Domain Validation) certificate using Cloud Manager's self-service tools.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 ---
 
-# Add an SSL certificate {#adding-an-ssl-certificate}
+# Add an SSL certificate
 
-Learn how to add your own SSL certificate using Cloud Manager's self-service tools.
+Learn how to add a customer managed SSL certificate or an Adobe generated and managed DV (Domain Validation) certificate using Cloud Manager's self-service tools.
 
->[!TIP]
->
->A certificate can take a few days to provision. Adobe therefore recommends that the certificate be provisioned well in advance of any deadline or go-live date.
 
-## Certificate requirements {#certificate-requirements}
+## Add an SSL or DV certificate {#adding-an-ssl-certificate}
 
-Review **Certificate Requirements** in [Introduction to Managing SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) to make sure AEM as a Cloud Service supports the certificate that you want to add.
+A certificate can take a few days to provision. As such, Adobe recommends that the certificate be provisioned well in advance of any deadline or go-live date.
 
-## Add a certificate {#adding-a-cert}
+Be sure you review **Certificate requirements** in [Introduction to Managing SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) to make sure AEM as a Cloud Service supports the certificate that you want to add.
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization 
-
-1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
-
-1. Navigate to the **Environments** screen from the **Overview** page.
-
-1. From the left navigation panel, under **Services**, click **SSL Certificates**. (In necessary, you may need to click the hamburger icon in the upper-left corner to need the navigation panel. A table with details of any existing SSL certificates is displayed.
-
-   ![Adding a SSL cert](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
-
-1. Click **Add SSL Certificate** to open the **Add SSL Certificate** dialog box.
-
-   * Enter a name for your certificate in **Certificate Name**. This field is for informational purposes only and can be any name that helps you reference your certificate easily.
-   * Paste the **Certificate**, **Private key**, and **Certificate chain** values into their respective fields. All three fields are required.
-
-   ![Add SSL Certificate dialog box](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
-  
-   * Any detected errors in values are displayed. Before you can save your certificate, you must address all errors.
-     See [Certificate errors](#certificate-errors) to learn more about addressing common errors.
-
-1. Click **Save**.
-
-![Saved SSL certificate](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)Your certificate is now displayed as a new row in the table, similar to the image above.
+A user must be a member of the **Business Owner** or **Deployment Manager** role to complete this task.
 
 >[!NOTE]
 >
->A user must be a member of the **Business Owner** or **Deployment Manager** role to install an SSL certificate in Cloud Manager.
+>Customers are not permitted to upload DV (Domain Validation) certificates.
 
-## Certificate errors {#certificate-errors}
+**To add an SSL or DV certificate:**
 
-Certain errors may arise if a certificate is not installed properly or meet the requirements of Cloud Manager.
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization. 
 
-### Correct certificate order {#correct-certificate-order}
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
+
+1. From the **Overview** page, navigate to the **Environments** screen.
+
+1. From the left navigation panel, under **Services**, click **SSL Certificates**. If you do not see the left navigation panel as seen in the following image, you may need to click the hamburger icon in the upper-left corner.
+
+   ![Adding an SSL certificate](/help/implementing/cloud-manager/assets/ssl/ssl-cert-add.png)
+
+1. Near the upper-right corner of the page, click **Add SSL Certificate**.
+
+1. In the **Add SSL certificate** dialog box, based on [your particular use case](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md), do one of the following:
+
+    | | Use case | Steps |
+    | --- | --- | --- |
+    | 1 | **Add an Adobe managed certificate (DV)** | **To add an Adobe managed certificate (DV):**<br>a. Select the certificate type **Adobe managed (DV)**.<br>![Add a DV certificate](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br>b. In the **Select domains** drop-down list, select one or more domains that you want associated with the DV certificate.<br>No domains to select? If so, it means that you must add a custom domain. See [Add a custom domain](#add-custom-domain). When you are finished adding a custom domain name, return to this topic and begin at step 1 again.<br>d. Continue to step 7. |
+    | 2 | **Add a customer managed certificate (OV/EV)** | **To add a customer managed certificate (OV/EV):**<br>a. Select the certificate type **Customer managed (OV/EV)**.<br>b. In the **Certificate name** field, enter a name for your certificate. This field is for informational purposes only and can be any name that helps you reference your certificate easily.<br>c. In the **Certificate**, **Private key**, and **Certificate chain** fields, paste the required values into their respective fields.<br>![Add SSL certificate dialog box](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)<br>Any detected errors in values are displayed. Before you can save your certificate, you must address all errors. See [Certificate Errors](#certificate-errors) to learn more about troubleshooting common errors.<br>d. Continue to step 7. | 
+
+<!--
+    **Add an SSL certificate:**
+    1. Select the certificate type **Customer managed (OV/EV)**.
+    1. In **Certificate name** field, enter a name for your certificate. This field is for informational purposes only and can be any name that helps you reference your certificate easily.
+    1. In the **Certificate**, **Private key**, and **Certificate chain** fields, paste the required values into their respective fields.
+
+        ![Add SSL certificate dialog box](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
+  
+    Any detected errors in values are displayed. Before you can save your certificate, you must address all errors. See [Certificate errors](#certificate-errors) to learn more about troubleshooting common errors.
+
+    **Add a DV certificate:**
+    1. Select the certificate type **Adobe managed (DV)**.
+
+        ![Adding a DC certificate](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)
+
+    1. In the **Select domains** drop-down list, select one or more domains that you want associated with the DV certificate.
+
+        No domains to select? If so, it means that you must add a custom domain. See [Add a custom domain](#add-custom-domain). When you are finished, resume the steps from the beginning again. -->
+
+1. In the lower-right corner of the dialog box, click **Save**.
+
+    After the certificate is successfully issued, it shows a green check mark, as seen in the image above
+
+    ![Issued DV cert](assets/issued-dv-certificate.png)
+
+### Add a custom domain {#add-custom-domain}
+
+Before you can add an Adobe generated and managed Domain Validated (DV) certificate, you must first add a custom domain. The process for doing so is nearly the same as detailed in [Introduction to custom domain names](/help/implementing/cloud-manager/custom-domain-names/introduction.md) and [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). However, that functionality is now slightly expanded, as described below.
+
+1. When adding a custom domain name, in the **Verify domain** dialog box, select an **Adobe managed certificate**.
+
+    ![Choose Adobe-managed](assets/verify-domain-dialog.png)
+
+1. In the **Verify domain** dialog box, add a CNAME verification record to your DNS.
+
+    ![Add CNAME entry](assets/verify-domain-dialog-adobe-managed.png)
+
+1. After the domain is created, click the ellipsis button in the list of domains and select **Verify** to verify the domain.
+
+    ![Verify domain](assets/verify-domain.png) 
+
+1. Resume the task [Add a DV certificate](#adding-an-ssl-certificate).
+
+### Troubleshooting certificate errors {#certificate-errors}
+
+Certain errors may arise if a certificate is not installed properly or does not meet the requirements of Cloud Manager.
+
++++**Correct certificate order**
 
 The most common reason for a certificate deployment to fail is that the intermediate or chain certificates are not in the correct order.
 
@@ -79,7 +118,9 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 >
 >The output of these two commands must be exactly the same. If you cannot locate a matching private key for your `main/server` certificate, you are required to re-key the certificate by generating a new CSR and/or requesting an updated certificate from your SSL vendor.
 
-### Remove client certificates {#client-certificates}
++++
+
++++**Remove client certificates**
 
 When adding a certificate, if you receive an error similar to the following:
 
@@ -89,7 +130,9 @@ The Subject of an intermediate certificate must match the issuer in the previous
 
 You likely included the client certificate in the certificate chain. Make sure that the chain does not include the client certificate and try again.
 
-### Certificate policy {#certificate-policy}
++++
+
++++**Certificate policy**
 
 If you see the following error, check the policy of your certificate.
 
@@ -139,13 +182,17 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
 openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 ```
 
-### Certificate validity dates {#certificate-validity-dates}
++++
+
++++**Certificate validity dates**
 
 Cloud Manager expects the SSL certificate to be valid for at least 90 days from the current date. Check the validity of the certificate chain.
 
++++
+
 ## Next steps {#next-steps}
 
-Congratulations! You now have a working SSL certificate for your project. This step is often the first to set up a custom domain name.
+You now have added a working SSL certificate for your project. This step is often the first to set up a custom domain name.
 
-* To set up a custom domain name, see [Add a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
-* To learn about updating and managing your SSL certificates in Cloud Manager, see [Manage SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md).
+* To set up a custom domain name, see [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+* To learn about updating and managing your SSL certificates in Cloud Manager, see [Manage SSL certificates](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md).

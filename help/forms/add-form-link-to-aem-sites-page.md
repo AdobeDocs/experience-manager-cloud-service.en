@@ -3,8 +3,8 @@ title: How to add forms links on the AEM Sites page using the Link Forms Portal 
 description: Learn how to add forms links to the AEM Sites page.
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
+exl-id: a55d0776-8827-46cc-9625-5d6f5f6bda3b
 ---
-
 # Add form links to Sites page
 
 In the bank website scenario, the **Link** Forms Portal component enhances navigation by guiding users to specific forms across various sections of the site. It provides direct references to forms such as loan applications, account opening forms, or feedback surveys, strategically placed throughout the website. The **Link** component inserts links that direct users to specific Adaptive Forms within the Sites page. For example, on the bank's website, anonymous users can access a general inquiry form, while logged-in users can directly access more secure forms, such as loan applications or transaction authorization forms.

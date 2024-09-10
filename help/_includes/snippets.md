@@ -49,7 +49,7 @@
 
 ## See also {#see-more-forms-eds}
 
-* [Get started with AEM Forms Edge Delivery Services](/help/edge/docs/forms/tutorial.md)
+* [Get started with Edge Delivery Services for AEM Forms](/help/edge/docs/forms/tutorial.md)
 * [Create a form using Google Sheets or Microsoft Excel](/help/edge/docs/forms/create-forms.md)
 * [Set up your Google Sheets or Microsoft Excel files to start accepting data​](/help/edge/docs/forms/submit-forms.md)
 * [Publish your form and start collecting data](/help/edge/docs/forms/publish-forms.md)
@@ -148,3 +148,29 @@ The following table demonstrates the difference between the features available i
 >
 >If you use&mdash;or intend to use&mdash;the front-end pipeline to develop sites, the Cloud Manager IP Allow List must be added beforehand. 
 >See [Use of the Cloud Manager IP Allow List with the front-end pipeline](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline). 
+
+## Work with Dynamic Media {#work-with-dynamic-media}
+
+>[!TIP]
+>
+>Are you new to Dynamic Media? For quick, high-level overview of Dynamic Media, see [Work with Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
+
+## See also for Dynamic Media {#see-also-dm}
+
+>[!NOTE]
+>
+>* Are you new to Dynamic Media? For quick, high-level overview of Dynamic Media, see [Work with Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
+>
+>* Follow [Dynamic Media Best Practices](/help/assets/dynamic-media/dm-best-practices.md) to get the most value.
+>
+>* Try out Dynamic Media image capabilities with [Snapshot tool](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
+>
+>* Ensure smooth video playback with [adaptive video](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash).
+>
+>* Automate cropping of [images with Smart Crop](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+>
+>* Automate cropping of [videos with Smart Crop](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video).
+>
+>* Deliver [interactive 3D-powered experience](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
+>* Other [Dynamic Media resource bank](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
+
