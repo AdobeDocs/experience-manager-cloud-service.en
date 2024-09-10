@@ -75,12 +75,10 @@ The below diagram depicts the steps to create a custom submit action for an Adap
 
     `Important`: Replace <app-id> with your actual application ID.
 
-1 Create new configuration file.
-
-    Within the `customsubmitaction` folder, create a new file named `.content.xml`. 
+1. Create new configuration file.
+   Within the `customsubmitaction` folder, create a new file named `.content.xml`. 
 
     ![Create Config File](/help/forms/assets/custom-submit-action-create-config-folder.png)
-
 
 1. Open this file and paste the following content, replacing `[customsubmitaction]` with the name of your submit action 
 
