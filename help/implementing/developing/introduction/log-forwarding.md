@@ -265,8 +265,8 @@ ctx._index = sourceType + "_" + envType + "_" + date;
 
 Considerations:
 
-* The url string must include **https://** or validation will fail. If no port is included in the url string (e.g., `https://example.com:8443/aem_logs/aem`), port 443 (the default HTTPS port) is assumed.
-* If you would like to use a port different than 443, please provide it as part of the URL.
+* The url string must include **https://** or validation will fail.
+* The url may include a port. For example, `https://example.com:8443/aem_logs/aem`. If no port is included in the url string, port 443 (the default HTTPS port) is assumed.
 
 #### HTTPS CDN logs {#https-cdn}
 
