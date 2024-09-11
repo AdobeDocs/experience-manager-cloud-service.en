@@ -55,15 +55,15 @@ You can quickly find assets uploaded using Content Hub on AEM as a Cloud Service
 
 1. Navigating to the `hydrated-assets` folder.
 
-1. Click **[!UICONTROL Filters]** and set **[!UICONTROL No Status]** in the **[!UICONTROL Asset Status]** field.
+1. Clicking **[!UICONTROL Filters]** and setting **[!UICONTROL No Status]** in the **[!UICONTROL Asset Status]** field.
 
-1. Sort the assets using the **[!UICONTROL Modified Date]** field.
+1. Sorting assets using the **[!UICONTROL Modified Date]** field.
 
 ## Why do not I view the edit using Adobe Express option on my asset card to be able to remix assets to create new variations? {#edit-using-express-not-available}
 
 To view the edit using Adobe Express option on the asset card, you must have Adobe Express entitlements in addition to privileges for [Content Hub users with rights to remix assets to new variations](#onboard-content-hub-users-add-assets).
 
-## How to setup Content Hub so that your organization's brand guidelines display as a link on the home page? {#content-hub-setup-brand-guidelines}
+## Can I setup Content Hub so that my organization's brand guidelines display as a link on the home page? {#content-hub-setup-brand-guidelines}
 
 You can add custom links as separate tabs in addition to the standard All Assets, Collections, and Insights tabs on the Content Hub home page. For information on how to set it up, see [Custom Links](/help/assets/configure-content-hub-ui-options.md#configure-custom-links-content-hub).
 
