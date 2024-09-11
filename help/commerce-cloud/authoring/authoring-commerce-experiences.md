@@ -65,9 +65,9 @@ CIF product catalog pages are virtual pages that get rendered on the fly. Thus, 
 
 ![RTE](../assets/authoring/RTE.png)
 
-    >[!NOTE]
-    >
-    > If both category and product gets selected, the product is taken.
+>[!NOTE]
+>
+> If both category and product gets selected, the product is taken.
 
 This creates a placeholder link that gets replaced with a real link when the page gets rendered.
 

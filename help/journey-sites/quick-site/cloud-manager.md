@@ -105,7 +105,9 @@ The overall flow is simple and intuitive even if you do not yet have extensive e
 
 ![Quick Site Creation flow](assets/qsc-flow.png)
 
-The major advantage of using the Quick Site Creation tool is that the pure front-end developer is only responsible the actual customization. The front-end developer has no interaction with AEM or needs any knowledge of AEM.
+The major advantage of using the Quick Site Creation tool is that the pure front-end developer is only responsible the actual customization. The front-end developer has no interaction with AEM or needs any knowledge of AEM. 
+
+{{add-cm-allowlist-frontend-pipeline}}
 
 ## What's Next {#what-is-next}
 

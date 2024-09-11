@@ -1,62 +1,55 @@
 ---
-title: Release Notes for Cloud Manager 2024.7.0 in Adobe Experience Manager as a Cloud Service
-description: These are the release notes for Cloud Manager 2024.7.0 in AEM as a Cloud Service.
+title: Release Notes for Cloud Manager 2024.9.0 in Adobe Experience Manager as a Cloud Service
+description: Learn about the release notes for Cloud Manager 2024.9.0 in AEM as a Cloud Service.
 feature: Release Information
-exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
+exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 ---
+# Release notes for Cloud Manager 2024.9.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-# Release Notes for Cloud Manager 2024.7.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
-
-This page documents the release notes for Cloud Manager release 2024.7.0 in AEM as a Cloud Service.
+This page documents the release notes for Cloud Manager release 2024.9.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
->See [this page](/help/release-notes/release-notes-cloud/release-notes-current.md) for the current release notes for Adobe Experience Manager as a Cloud Service.
+>See the [current release notes for Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-## Release Date {#release-date}
+## Release date {#release-date}
 
-The release date for Cloud Manager release 2024.7.0 in AEM as a Cloud Service is 18 July 2024. The next release is planned for 8 August 2024.
+The release date for Cloud Manager release 2024.9.0 in AEM as a Cloud Service is September 5, 2024. The next release is planned for October 3, 2024.
 
-## What's New {#what-is-new}
+## What's new {#what-is-new}
 
-* The [production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline) and [non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline) trigger **On Git Changes** to start the pipeline on a commit is now available for [private repositories.](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-  * This will be rolled out in a phased manner with completion by mid-August.
-* When adding an [Adobe-managed DV certificate,](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) you can now add a single certificate that covers multiple domains instead of creating a certificate for each domain.
-* Solutions that do not have [additional publish regions](/help/operations/additional-publish-regions.md) can now be added to a program as long as the program has at least a Sites or Forms solution applies to it.
-* Solutions that do not have [99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) can now be added to a program as long as the program has at least a Sites or Forms solution applies to it.
-* The [Experience Audit Dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md) has been enhanced in a number of ways.
-  * Audits now run against `.com` endpoints via CDN, replacing the previous `.net` approach.
-    * This change simulates real user experiences more accurately and helps you make more informed decisions about managing and optimizing your website.
-  * Multiple enhancements were made to the Experience Audit UI including:
-    * A trended view of performance, best practices, SEO, and accessibility was added.
-    * The Lighthouse raw report link is now visible in a more intuitive way, directly in the scan snapshot details panel.
-    * The Lighthouse recommendations section was enhanced.
-  * The PWA metric was removed in accordance with Lighthouse version 12.0.0, which eliminated this metric.
-* [The AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) has been updated to [version 49.](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)
+* **Experience Audit dashboard:**
 
-## Early Adoption Program {#early-adoption}
+    Adobe Cloud Manager's [enhanced Experience Audit dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md), powered by Google Lighthouse, provides insights into the quality and performance of AEM Sites by evaluating core web vitals, SEO, and accessibility metrics. It helps users identify areas for improvement by offering actionable recommendations, enabling teams to enhance user experience, page load times, and site compliance. This dashboard simplifies the monitoring of critical site metrics and ensures that AEM applications meet high performance and accessibility standards.
 
-For a chance to test some upcoming features, be a part of Adobe's early adoption program.
+* **Adobe generated and managed Domain Validation certificates:**
 
-### Edge Delivery Services Support in Cloud Manager {#edge-delivery-services}
+    With Cloud Manager, you are now able to [self-service Adobe generated and managed DV (Domain Validation) SSL certificates](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). This capability gives you the fastest, easiest, and most cost-effective solution to create a secure website for your online organization or business. <!-- CMGR-52403 -->
 
-If you have licensed Edge Delivery Services as part of Adobe Experience Manager Sites, [you can now onboard your site with Edge Delivery Services directly in Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md) and go live using a guided, self-service experience.
+    >[!NOTE]
+    >
+    >[Content Hub](/help/assets/product-overview.md) customers are planned to receive this feature in phases as part of a gradual roll-out.
 
-This enables a unified experience for all of your AEM properties, ensuring consistency with all critical workflows including domain name management, SSL certificate management, and CDN mappings.
+* **Edge Delivery Services support in Cloud Manager:**
 
-If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-cmedgedelsvs-program-adopter@adobe.com` from the email address associated with your Adobe ID. 
+    If you have an Edge Delivery Services license as part of AEM Sites, [you can now onboard your site with Edge Delivery Services directly through Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md). This feature enables a guided, self-service Go Live experience. It also unifies essential workflows like domain name management, SSL certificates, and CDN mappings across all your AEM properties, ensuring consistency and efficiency. <!-- CMGR-49859 -->
 
-### Domain Validated (DV) Certificates
+    >[!NOTE]
+    >
+    >[Content Hub](/help/assets/product-overview.md) customers are planned to receive this feature in phases as part of a gradual roll-out.
 
-Cloud Manager now allows you to [self-service generate and manage domain validated (DV) SSL certificates.](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) This gives you the fastest, easiest, and most cost-effective solution to create a secure website for your online business.
+* Customers who use GitHub repositories now have the ability to create and use Web Tier Config pipelines. <!--( KEEP IN? SP: YES CMGR-59046 and Slack https://cq-dev.slack.com/archives/C07LFP5BZ2L/p1725407057847379 ) --> 
 
-If you are interested in testing this new feature and sharing your feedback, please send an email to `Grp-aemcs-dv-dert-adopter@adobe.com` from the email address associated with your Adobe ID.
+<!--
+## Early adoption program {#early-adoption}
 
-### Experience Audit Dashboard {#experience-audit-dashboard}
+For a chance to test some upcoming features, be a part of Adobe's early adoption program. -->
 
-[The Cloud Manager Experience Audit dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md) includes a trended view of your page performance scores along with insights and recommendations to help you improve them. Experience Audit is included as a step in the Cloud Manager production pipeline.
 
-The dashboard uses Google Lighthouse, an open-source, automated tool for improving the quality of your web apps. You can run it against any web page, public, or requiring authentication. It has audits for performance, accessibility, progressive web apps, SEO, and more.
+## Bug fixes
 
-Interested in test-driving the new dashboard? To get started, send an email to `aem-lighthouse-pilot@adobe.com` from your email associated with your Adobe ID.
+* Pagination for SSL certificates table view now works as expected. <!-- (CMGR-60804 - [UI] Pagination doesn't work for ssl certificates) -->
+* The wrong artifact version got promoted when using the **Promote Build** button from an execution. <!-- ( KEEP IN? SP: YES CMGR-59519 and Slack https://cq-dev.slack.com/archives/C07LFPN2R08/p1725408253474129 ) -->
+
+<!-- * Slack message says next release? SP: REMOVE (Leave in for now) SSL Certificates table in Cloud Manager now enables pagination in the user experience. ( https://jira.corp.adobe.com/browse/CMGR-61041 and Slack https://cq-dev.slack.com/archives/C07LFRE9QJU/p1725408553760009 ) --<>
