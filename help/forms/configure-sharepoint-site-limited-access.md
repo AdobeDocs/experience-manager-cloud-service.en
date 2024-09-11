@@ -4,8 +4,8 @@ Description: Learn how to configure SharePoint Site with limited access using th
 keywords: How to configure SharePoint Site with limited access?, Configure SharePoint with limited access, Using authorization scope to limit access for SharePoint Site.
 feature: Adaptive Forms, Core Components
 role: User, Developer
+exl-id: 3230bab2-c1aa-409d-9f01-c42cf88b1135
 ---
-
 <span class="preview"> The feature is available under the early adopter program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
 
 # Configure SharePoint Site with limited access using authorization scope
@@ -46,7 +46,7 @@ For information on how to retrieve `Client ID`, `Client Secret` and `Tenant ID` 
 
 To use the `Sites.Selected` API permission requires an application registered in the Azure portal with the appropriate permissions set for SharePoint Online Sites. This setup ensures that the application has the necessary authorization to interact with the SharePoint Site within the defined scope, thereby providing the required limited access. 
     
-Refer to the [article](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476) for instructions on developing applications that use `Sites.Selected` permissions for SharePoint Online Sites.
+Refer to the [blog article - Develop Applications that use Sites.Selected permissions for SPO sites](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476) for instructions on developing applications that use `Sites.Selected` permissions for SharePoint Online Sites.
 
 ### Set the authorization scope at AEM instance
 

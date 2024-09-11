@@ -1,25 +1,25 @@
 ---
 title: Checking Domain Name Status
-description: Learn how to determine whether your custom domain name has been verified successfully by Cloud Manager.
+description: Learn how to verify that Cloud Manager has successfully confirmed your custom domain name.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 ---
 
-# Checking Domain Name Status {#check-status}
+# Check domain name status {#check-status}
 
-Learn how to determine whether your custom domain name has been verified successfully by Cloud Manager.
+Learn how to verify that Cloud Manager has successfully confirmed your custom domain name.
 
 ## Requirements {#requirements}
 
-You must fulfill these requirements before checking your domain name status in Cloud Manager.
+Fulfill these requirements before checking your domain name status in Cloud Manager.
 
-* You must first add a TXT record for your custom domain as described in the document [Adding a TXT Record.](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
+* First add a TXT record for your custom domain as described in the document [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
-## How to Check the Status of Your Custom Domain Name {#how-to}
+## Check the status of your custom domain name {#how-to}
 
-You can determine status of your custom domain name within Cloud Manager.
+You can determine the status of your custom domain name within Cloud Manager.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
@@ -35,50 +35,35 @@ The status detail is shown. Your custom domain is ready to be used when the stat
 
 >[!NOTE]
 >
->Cloud Manager will automatically trigger verification when you select **Create** on the verification step of the **Add Custom Domain** wizard when [adding a new custom domain name to Cloud Manager.](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) For subsequent verifications, you must actively select the verify again icon next to the status.
+>Cloud Manager automatically triggers verification when you select **Create** on the verification step of the **Add Custom Domain** wizard when [adding a new custom domain name to Cloud Manager](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). For subsequent verifications, you must actively select the verify again icon next to the status.
 
-## Understanding Verification Statuses {#statuses}
+## Verification statuses {#statuses}
 
-Cloud Manager will verify domain ownership via the [TXT value](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) and displays one of the following status messages.
+Cloud Manager verifies domain ownership through the [TXT value](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) and displays one of the following status messages.
 
-* **Domain Verification Failed** - The TXT value is either missing or is detected with errors.
+| Status | Description |
+| --- | --- |
+| Domain verification failed | The TXT value is either missing or is detected with errors.<br> Follow the instructions provided in the status message to resolve the issue. When ready, you must select the **Verify Again** icon next to the status.  |
+| Domain verification in progress | Verification is in progress.<br>This status is typically seen after you select the **Verify Again** icon next to the status. DNS verification can take a few hours to process because of DNS propagation delays.  |
+| Verified - deployment failed| The TXT verification was successful, but the CDN deployment failed.<br>In such cases, contact your Adobe representative. |
+| Domain verified & deployed | This status indicates that your custom domain name is ready to be used.<br>At this point, your custom domain name is ready for testing and to be pointed to the Cloud Manager domain name. See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) to learn more. |
+| Deleting | The deletion of a custom domain name is in progress. |
+| Deletion failed | The deletion of a custom domain name failed and must be retried.<br>See [Manage custom domain names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) to learn more. |
 
-  * Follow the instructions provided in the status message to resolve the issue.
-  * When ready, you must select the **Verify Again** icon next to the status.
 
-* **Domain Verification In Progress** - Verification is in progress.
-
-  * This status is typically seen after you select the **Verify Again** icon next to the status.
-  * DNS verification can take a few hours to process because of DNS propagation delays.
-
-* **Verified, Deployment Failed** - The TXT verification was successful, but the CDN deployment failed. 
-
-  * In such cases, contact your Adobe representative.
-
-* **Domain Verified & Deployed** - This status indicates that your custom domain name is ready to be used.
-
-  * At this point, your custom domain name is ready for testing and to be pointed to the Cloud Manager domain name.
-  * See [Configuring DNS Settings](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) to learn more.
-
-* **Deleting** - The deletion of a custom domain name is in progress.
-
-* **Deletion Failed** - The deletion of custom domain name failed and must be retried.
-
-  * See [Managing Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) to learn more.
-
-## Domain Name Errors {#domain-error}
+## Domain name errors {#domain-error}
 
 The following are some common domain name verification errors and their typical resolutions.
 
-### Domain Not Installed Error {#domain-not-installed}
+### Domain not installed error {#domain-not-installed}
 
 This error may occur during domain validation of the TXT record even after you have checked that the record has been updated appropriately.
 
-#### Error Cause {#cause}
+#### Error cause {#cause}
 
-Fastly locks a domain to the initial account that registered it and no other account can register a subdomain without asking for permission. Furthermore, Fastly only lets you assign an apex domain and associated subdomains to one Fastly service and account. If you have an existing Fastly account that links the same apex and subdomains used for your AEM Cloud Service domains you see this error.
+Fastly locks a domain to the account that first registers it, and other accounts must request permission to register a subdomain. Furthermore, Fastly only lets you assign an apex domain and associated subdomains to one Fastly service and account. If you have an existing Fastly account that links the same apex and subdomains used for your AEM Cloud Service domains you see this error.
 
-#### Error Resolution {#resolution}
+#### Error resolution {#resolution}
 
 The error is fixed as follows:
 
@@ -86,7 +71,7 @@ The error is fixed as follows:
 
 * Use this option to link the apex domain and all subdomains to the AEM as a Cloud Service Fastly account. See [Working with Domains in the Fastly documentation](https://docs.fastly.com/en/guides/working-with-domains) for additional details.
 
-* If your apex domain has multiple subdomains for AEM as a Cloud Service and non-AEM as a Cloud Service sites that you want to link to different Fastly accounts, then try to install the domain in Cloud Manager. If the domain installation fails, create a Customer Support ticket with Fastly so Adobe can followup with Fastly on your behalf.
+* If your apex domain has multiple subdomains for AEM as a Cloud Service and non-AEM sites that need to link to different Fastly accounts, attempt to install the domain in Cloud Manager. This process helps manage subdomain connections across different Fastly accounts. If the domain installation fails, create a Customer Support ticket with Fastly so Adobe can follow up with Fastly on your behalf.
 
 >[!TIP]
 >
@@ -96,14 +81,14 @@ The error is fixed as follows:
 >
 >Do not route the DNS of your site to AEM as a Cloud Service IPs if the domain was not installed successfully.
 
-## Pre-Existing CDN Configurations for Custom Domain Names {#pre-existing-cdn}
+## Pre-existing CDN configurations for custom domain names {#pre-existing-cdn}
 
-If you have a pre-existing CDN configuration for your custom domain names, there is an informative message on the **Custom Domain Names** and **Environment** pages, encouraging you to add these configurations via the UI so they are visible and configurable in Cloud Manager.
+If you already have a CDN configuration for your custom domain names, an informative message appears on the **Custom Domain Names** and **Environment** pages. It encourages you to add these configurations through the UI so they can be managed and viewed within Cloud Manager.
 
-The message disappears once all pre-existing environment configurations are migrated using the UI. It may take 1-2 business days for the message to disappear.
+The message disappears after all pre-existing environment configurations are migrated using the UI. It may take 1-2 business days for the message to disappear.
 
-See [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) for more details.
+See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) for more details.
 
-## Next Steps {#next-steps}
+## Next steps {#next-steps}
 
-Once you have verified your domain status in Cloud Manager, you will need to configure DNS settings by adding DNS CNAME or APEX records that point to AEM as a Cloud Service. Proceed to the document [Configuring DNS Settings](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) to continue setting up your custom domain name.
+After you have verified your domain status in Cloud Manager, configure DNS settings by adding DNS, CNAME, or APEX records that point to AEM as a Cloud Service. Proceed to the document [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) to continue setting up your custom domain name.

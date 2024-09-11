@@ -103,7 +103,7 @@ Follow these steps to activate your account as a New Relic user.
 
 1. New Relic will send you an email containing a link to confirm the account.
 
-If you do not receive a confirmation email from New Relic, see [troubleshooting section.](#troubshooting)
+If you do not receive a confirmation email from New Relic, see [troubleshooting section](#troubshooting).
 
 ## Accessing New Relic One {#accessing-new-relic}
 
@@ -153,7 +153,7 @@ If you were added as a New Relic One user as described in the section [Manage Ne
 
 1. New Relic will send you an email containing a link to confirm the account.
 
-If you complete the sign up process and are unable to log in to your account due to email or password error messages, log a support ticket by way of the [Admin Console.](https://adminconsole.adobe.com/)
+If you complete the sign up process and are unable to log in to your account due to email or password error messages, log a support ticket by way of the [Admin Console](https://adminconsole.adobe.com/).
 
 If you do not receive an email from New Relic:
 
@@ -166,7 +166,7 @@ If you do not receive an email from New Relic:
 The following limitations apply to adding users to New Relic One:
 
 * A maximum of 30 users can be added. If the maximum number of users has been reached, remove users to be able to add new users.
-* Users added to New Relic are of the type **Restricted**, see [the New Relic documentation for details.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&text=One%20or%20more%20individuals%20who,change)
+* Users added to New Relic are of the type **Restricted**, see [the New Relic documentation for details](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&text=One%20or%20more%20individuals%20who,change).
 * AEM as a Cloud Service only offers the New Relic One APM solution and does not provide support for alerting, logging, or API integrations.
 
 >[!NOTE]
@@ -175,7 +175,7 @@ The following limitations apply to adding users to New Relic One:
 >
 >Follow the same steps in the [Activate Your New Relic One Sub-Account](#activate-sub-account) section of this document to re-activate your New Relic One sub-account.
 
-For more help or additional guidance on New Relic One offerings for your AEM as a Cloud Service Program, open a support ticket via the [AEM Support Portal.](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)
+For more help or additional guidance on New Relic One offerings for your AEM as a Cloud Service Program, open a support ticket via the [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 ## Frequently Asked Questions About New Relic One {#faqs}
 
@@ -197,7 +197,7 @@ Note:
 
 ### Does Adobe send alert notifications from New Relic One? {#alerting-new-relic}
 
-Adobe provides New Relic One access for observability purposes only and does not utilize it for customer alerting or internal operational alerting. Notifications for any incidents are sent using [user notification profiles.](/help/journey-onboarding/notification-profiles.md)
+Adobe provides New Relic One access for observability purposes only and does not utilize it for customer alerting or internal operational alerting. Notifications for any incidents are sent using [user notification profiles](/help/journey-onboarding/notification-profiles.md).
 
 ### Who can access the New Relic One cloud service data? {#access-new-relic-cloud}
 

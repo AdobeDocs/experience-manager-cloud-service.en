@@ -11,7 +11,7 @@ solution: Experience Manager Sites
 Integrating Adobe Analytics and AEM as a Cloud Service lets you track your web page activity. The integration requires:
 
 * using the Touch UI to create an Analytics configuration in AEM as a Cloud Service. IMS authentication is required to integrate Adobe Analytics with AEM as a Cloud Service.
-* adding and configuring Adobe Analytics as an extension in [Adobe Launch](#analytics-launch). For more details about Adobe Launch, see [this page](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html).
+* adding and configuring Adobe Analytics as an extension in [Adobe Launch](#analytics-launch). For more details about Adobe Launch, you can start with the [Quickstart guide](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html).
 
 Compared to previous versions of AEM, framework support is not provided in the Analytics Configuration in AEM as a Cloud Service. Instead, it is now done through Adobe Launch, which is the defacto tool for instrumenting an AEM site with Analytics capabilities (JS libraries). In Adobe Launch, a property is created where the Adobe Analytics extension can be configured and rules are created to send data to Adobe Analytics. Adobe Launch has replaced the task of analytics provided by the sitecatalyst.
 
@@ -37,7 +37,7 @@ The fields present in the configuration window are as follows :
 |---|---|
 | Title | The configuration name |
 | IMS Configuration | Select the IMS configuration (see the chapter below) |
-| Segment | Option to use an Analytics segment defined in the current reporting suite. The Analytics reports are filtered based on the segment. See [this page](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html) for additional details. |
+| Segment | Option to use an Analytics segment defined in the current reporting suite. The Analytics reports are filtered based on the segment. See [About segments](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html) for additional details. |
 | Report Suites | A repository where you send data and pull reports. A report suite defines the complete, independent reporting on a chosen website, set of websites, or subset of website pages. You can view the reports fetched from a single report suite and can edit this field in a configuration anytime according to your requirements. |
 
 ### Adobe Analytics with IMS authentication {#configuration-parameters-ims}
@@ -62,7 +62,7 @@ Adobe Analytics can be added as an extension in the Launch Property. Rules can b
 
 * Watch [this video](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html) to learn how to configure the Analytics extension in Launch for a basic site.
 
-* See [this page](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html) for details on how to create rules and send data to Adobe Analytics.
+* See [Add Adobe Analytics](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html) for details on how to create rules and send data to Adobe Analytics.
 
 >[!NOTE]
 >

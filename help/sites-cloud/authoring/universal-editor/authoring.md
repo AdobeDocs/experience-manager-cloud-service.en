@@ -27,7 +27,7 @@ To do this, the Universal Editor provides content authors with an intuitive UI t
 
 ## Editing Content {#editing-content}
 
-Editing content is simple and intuitive. As you mouse over content in the editor, editable content is highlighted with a blue box.
+Editing content is simple and intuitive. As you mouse over content in the editor, editable content is highlighted with a thin blue outline.
 
 ![Editable content is highlighted by a blue box](assets/editable-content.png)
 
@@ -43,7 +43,7 @@ You can edit the text in place by double-clicking or double-tapping the componen
 
 ![Editing content](assets/editing-content.png)
 
-Press enter/return or select outside of the text box to save your changes.
+The thin blue outline turns to a heavy blue outline to indicate select and a cursor appears. Make your changes and then press enter/return or select outside of the text box to save your changes.
 
 When you select to select the text component, its details are shown in the [properties rail.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) You can also edit the text in the rail.
 
@@ -59,10 +59,21 @@ You can edit the text in place by double-clicking or double-tapping the componen
 
 For your convenience, formatting options and details on your text are available in two places.
 
-* The **context menu** opens above the rich text block and offers basic formatting options in context. Due to space limitations, some options may be hidden behind the ellipsis button.
-* The **[properties rail](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)** shows all formatting options available along with the text.
+#### The Context Menu {#context-menu}
+
+The context menu opens above the rich text block and offers basic formatting options in context. Due to space limitations, some options may be hidden behind the ellipsis button.
+
+![Rich text context menu](assets/rich-text-context-menu.png)
 
 Changes are automatically saved once focus leaves the edited field.
+
+#### The Properties Rail {#properties-rail}
+
+The [properties rail](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) shows an item for the selected text. Tap the entry to open a dialog presenting a larger canvas to edit the text.
+
+![Rich text editing dialog](assets/rich-text-canvas.png)
+
+Tap or click **Cancel** or **Done** to discard or save the changes, respectively.
 
 ### Editing Media {#edit-media}
 
@@ -71,7 +82,7 @@ You can view its details in the [properties rail.](/help/sites-cloud/authoring/u
 ![Editing media](assets/ue-edit-media.png)
 
 1. Tap or click the preview of the selected image in the properties rail.
-1. The [asset selector](/help/assets/asset-selector.md#using-asset-selector) window opens to allow you to select an asset.
+1. The [asset selector](/help/assets/overview-asset-selector.md#using-asset-selector) window opens to allow you to select an asset.
 1. Select to select a new asset.
 1. Select **Select** to return to the properties rail where the asset was replaced.
 
@@ -89,9 +100,19 @@ If you select a field that is related to a Content Fragment, the Content Fragmen
 
 Changes are automatically saved once focus leaves the edited field in the properties rail.
 
-If you want to edit your Content Fragment in the [Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md) instead, click the [edit button](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) in the properties rail.
+If you want to edit your Content Fragment in the [Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md) instead, tap or click the [**Open in CF Editor** button](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) in the properties rail.
+
+>[!TIP]
+>
+>Use the hot key `e` to edit the selected Content Fragment in the Content Fragment editor.
 
 Depending on the needs of your workflow, you may want to edit the Content Fragment in the Universal Editor or directly in the Content Fragment editor.
+
+>[!NOTE]
+>
+>The Universal Editor [validates Content Fragment fields based on their models](/help/assets/content-fragments/content-fragments-models.md#validation) allowing you to enforce data integrity rules such as regex patterns and uniqueness constraints.
+>
+>This ensures that your content meets specific business requirements before it's published.
 
 ### Adding Components to Containers {#adding-components}
 
@@ -104,7 +125,7 @@ The component is inserted into the container and can be edited in the editor.
 
 >[!TIP]
 >
->Use the hot key `A` to add a component to the selected container.
+>Use the hot key `a` to add a component to the selected container.
 
 ### Deleting Components from Containers {#deleting-components}
 

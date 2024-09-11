@@ -24,7 +24,7 @@ As described in the [CDN in AEM as a Cloud Service](/help/implementing/dispatche
 
 As part of the setup, the Adobe CDN and the Customer CDN must agree on a value of the `X-AEM-Edge-Key` HTTP Header. This value is set on each request, at the Customer CDN, before it is routed to the Adobe CDN, which then validates that the value is as expected, so it can trust other HTTP headers, including those that help route the request to the appropriate AEM origin.  
 
-The *X-AEM-Edge-Key* value is referenced by the `edgeKey1` and `edgeKey2` properties in a file named `cdn.yaml` or similar, somewhere under a top-level `config` folder. Read the [Config Pipeline article](/help/operations/config-pipeline.md#folder-structure) for details about the folder structure and how to deploy the configuration. 
+The *X-AEM-Edge-Key* value is referenced by the `edgeKey1` and `edgeKey2` properties in a file named `cdn.yaml` or similar, somewhere under a top-level `config` folder. Read [Using Config Pipelines](/help/operations/config-pipeline.md#folder-structure) for details about the folder structure and how to deploy the configuration. 
 
 The syntax is described below:
 
@@ -49,7 +49,7 @@ data:
 
 ```
 
-See the [Config Pipeline article](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the `data` node. The `kind` property value should be *CDN* and the `version` property should be set to `1`.
+See [Using Config Pipelines](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the `data` node. The `kind` property value should be *CDN* and the `version` property should be set to `1`.
 
 Additional properties include:
 
@@ -67,11 +67,34 @@ Additional properties include:
    * action - must specify "authenticate", with the intended authenticator referenced.
 
 >[!NOTE]
->The Edge Key must be configured as a [secret type Cloud Manager environment variable](/help/operations/config-pipeline.md#secret-env-vars), before the configuration referencing it is deployed.
+>The Edge Key must be configured as a [secret type Cloud Manager environment variable](/help/operations/config-pipeline.md#secret-env-vars), before the configuration referencing it is deployed. It is recommended to use a unique random key of minimum 32 bytes length; for example, the Open SSL cryptographic library can generate a random key by executing the command `openssl rand -hex 32`.
+
+### Migrating safely to reduce the risk of blocked traffic {#migrating-safely}
+
+If your site is already live, exercise caution when migrating to customer-managed CDN since a misconfiguration can block public traffic; this is because only requests with the expected X-AEM-Edge-Key header value will be accepted by the Adobe CDN. An approach is recommended where an additional condition is temporarily included in the authentication rule, which causes it to only evaluate the request if a test header is included:
+
+```
+    - name: edge-auth-rule
+        when:
+          allOf:  
+            - { reqProperty: tier, equals: "publish" }
+            - { reqHeader: x-edge-test, equals: "test" }
+        action:
+          type: authenticate
+          authenticator: edge-auth
+```
+
+The following `curl` request pattern can be used:
+
+```
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <CONFIGURED_EDGE_KEY>" -H "x-edge-test: test"
+```
+
+After successfully testing, the additional condition can be removed and the configuration redeployed.
 
 ## Purge API Token {#purge-API-token}
 
-Customers can [purge the CDN cache](/help/implementing/dispatcher/cdn-cache-purge.md) by using a declared Purge API token. The token is declared in a file named `cdn.yaml` or similar, somewhere under a top-level `config` folder. Read the [config pipeline article](/help/operations/config-pipeline.md#folder-structure) for details about the folder structure and how to deploy the configuration. 
+Customers can [purge the CDN cache](/help/implementing/dispatcher/cdn-cache-purge.md) by using a declared Purge API token. The token is declared in a file named `cdn.yaml` or similar, somewhere under a top-level `config` folder. Read [Using Config Pipelines](/help/operations/config-pipeline.md#folder-structure) for details about the folder structure and how to deploy the configuration. 
 
 The syntax is described below:
 
@@ -96,7 +119,7 @@ data:
 
 ```
 
-See the [config pipeline article](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the `data` node. The `kind` property value should be *CDN* and the `version` property should be set to `1`.
+See [Using Config Pipelines](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the `data` node. The `kind` property value should be *CDN* and the `version` property should be set to `1`.
 
 Additional properties include:
 
@@ -113,7 +136,9 @@ Additional properties include:
   * action - must specify "authenticate", with the intended authenticator referenced.
 
 >[!NOTE]
->The Purge Key must be configured as a [secret type Cloud Manager Environment Variable](/help/operations/config-pipeline.md#secret-env-vars), before the configuration referencing it is deployed.
+>The Purge Key must be configured as a [secret type Cloud Manager Environment Variable](/help/operations/config-pipeline.md#secret-env-vars), before the configuration referencing it is deployed. It is recommended to use a unique random key of minimum 32 bytes length; for example, the Open SSL cryptographic library can generate a random key by executing the command openssl rand -hex 32
+
+You may reference [a tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) focused on configuring purge keys and performing the CDN cache purge.
 
 ## Basic Authentication {#basic-auth}
 
@@ -154,7 +179,7 @@ data:
 
 ```
 
-See the [config pipeline article](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the `data` node. The `kind` property value should be *CDN* and the `version` property should be set to `1`.
+See [Using Config Pipelines](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the `data` node. The `kind` property value should be *CDN* and the `version` property should be set to `1`.
 
 In addition, the syntax includes:
 

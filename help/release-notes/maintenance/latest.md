@@ -10,45 +10,64 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 17258 {#release-17258}
+## Release 17689 {#release-17689}
 
-Summarized below are the continuous improvements for maintenance release 17258, which was publicly released on July 30, 2024. The previous maintenance release was release 17098.
+Summarized below are the continuous improvements for maintenance release 17689, which was publicly released on September 10, 2024. The previous maintenance release was release 17569.
 
-The 2024.8.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
+The 2024.9.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-17258}
+### Enhancements {#enhancements-17689}
 
-* ASSETS-31445 - Initial Dynamic Media templating features
-* ASSETS-40399 - Updated DM Auto transcribe queue settings
-* ASSETS-40873 - Allow metadata export max rows to be set via OSGI config
+* ASSETS-41404: Changes to support DRM improvements.
+* ASSETS-41621: Updated async Asset copy job.
+* ASSETS-32166: Updated async Asset move job.
+* ASSETS-41429: Image presets support in DM OpenAPI.
+* ASSETS-38968: Improve representation of Content Fragments references.
+* ASSETS-41787, ASSETS-41183: Improvements for Assets Bulk Operations framework.
+* GRANITE-52917: Optimizations to improve content copy package installation times.
+* SCRNS-3980: Detect Grey screen on players having subsequences with no asset scheduled.
 
-### Fixed Issues {#fixed-issues-17258}
+### Fixed Issues {#fixed-issues-17689}
 
-* ASSETS-30613 - Replace asset doesn't delete and add asset in new Delivery tier
-* ASSETS-31882 - Accessing streaming manifest file in author is forbidden
-* ASSETS-39598 - Bulk Import not able to delete assets with special characters in name from S3 backend
-* CNTBF-209 -  Backflow jobs cancellation improvements
-* SCRNS-3762 - Improve playerLogger in Sequence channel to put logs on console when previewing channel on browser
-* SCRNS-4455 - Missing “Manage Publication” & "Quick Publish" Button for NON-ADMIN users in Content Provider for Channels
-* SITES-22940 - Unable to view content fragment as workflow payload
+* ASSETS-40875: Spurious NPE logged by AssetDeleteHandler.
+* ASSETS-42422: Avoid triggering of async job for single Asset move.
+* ASSETS-41234: Unified Shell - Global nav might not work if opened when search bar is open.
+* ASSETS-42256: Unified Shell - Tag/Badge indicating environment only works intermittently.
+* ASSETS-41271: Prevent unnecessary republish of Assets during move operations.
+* ASSETS-38894: Limit Retries by processing watchdog.
+* ASSETS-40815: Use preview PDF rendition for showing PPT file in Link Share UI .
+* ASSETS-37123: Cannot load Asset preview in Link Share Dialog.
+* CQ-4358156: update backlinks of tag being deleted.
+* SCRNS-4495: Fixed Paste button not functioning properly for different user groups.
+* SCRNS-4512: Remove components related to device from AEMaaCS screens.
+* SCRNS-4466: On Channel Dashboard, hide - View manifest, generate offline content, update manifest cache, display panel.
+* SCRNS-4513: Add column headers for search results page in list view.
 
-### Known Issues {#known-issues-17258}
+### Known Issues {#known-issues-17689}
 
-None
+* FORMS-14340: Error in instantiation of FormsAndDocumentOmniSearchHandler and CloudStorageSubmitActionInserter. These are harmless log statements.
+* FORMS-15818: Component descriptor entry ‘OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml’ not found statements in server logs. These are harmless log statements.
+* SITES-23662: User that triggers a publish cannot be extracted from JCR log statements in server logs. This is for a feature under development that might cause intermitent and harmless “Cannot find a valid user id in the batch of OSGI events” errors in the log.
 
-### Change Notice {#change-notice-17258}
+### Change Notice {#change-notice-17689}
 
 * Starting in September 2024, AEM as a Cloud Service will disable the serialization of Resource Resolvers via the Sling Model Exporter framework. See [the documentation](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) for more details.
 
-### Deprecated Features and APIs {#deprecated-17258}
+### Deprecated Features and APIs {#deprecated-17689}
+
+Please note that we are in the proces of updating `com.day.cq.wcm.api` and with the current release, we have marked as `@Deprecated` a few of its methods and classes. These will be removed in future releases, so please consider switching to their suggested alternatives if you are using any of them.
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Embedded Technologies {#embedded-tech-17258}
+### Security Fixes {#security-17689}
+
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 4 identified vulnerabilities, reinforcing our commitment to robust system protection.
+
+### Embedded Technologies {#embedded-tech-17689}
 
 |Technology|Version|Link|
 |---|---|---|
-|AEM Oak | 1.66.0|[Oak API 1.66.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.66.0/index.html)| 
-|AEM SLING API | 2.27.2 |[Apache Sling API 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
+|AEM Oak | 1.68.0|[Oak API 1.68.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.68.0/index.html)| 
+|AEM SLING API | 2.27.6 |[Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL| 1.4.24-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
-|AEM Core Components| 2.25.4|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
+|AEM Core Components| 2.26.0|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|

@@ -39,7 +39,7 @@ Before the GraphQL APIs can be used, a GraphQL endpoint must be created.
     /content/cq:graphql/<configuration-name>/endpoint
     ```
 
-More details about enabling [GraphQL endpoints can be found here](/help/headless/graphql-api/graphql-endpoint.md).
+For more details about enabling GraphQL endpoints see [Manage GraphQL endpoints in AEM](/help/headless/graphql-api/graphql-endpoint.md).
 
 ## Query content using GraphQL with GraphiQL
 
