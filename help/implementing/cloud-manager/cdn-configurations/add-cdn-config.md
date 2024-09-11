@@ -12,7 +12,7 @@ Adding a CDN configuration must be completed to configure a domain with an SSL.
 
 >![NOTE]
 >
->For Adobe-managed CDNs, when using DV certificates, only sites with ACME validation are permitted.
+>For Adobe-managed CDNs, when using DV certificates, only sites with ACME validation are permitted. 
 
 **To add a CDN configuration:**
 
