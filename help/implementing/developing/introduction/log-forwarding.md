@@ -206,10 +206,9 @@ Considerations:
 
 * Create an API Key, without any integration with a specific cloud provider.
 * the tags property is optional
-* the Datadog service tag is set to `adobeaemcloud`
 * For AEM logs, the Datadog source tag is set to one of `aemaccess`, `aemerror`, `aemdispatcher`, `httpdaccess`, or `httpderror`
 * For CDN logs, the Datadog source tag is set to `aemcdn`
-* the Datadog service tag is set to adobeaemcloud, but you can overwrite it in the tags section
+* the Datadog service tag is set to `adobeaemcloud`, but you can overwrite it in the tags section
    
 
 ### Elasticsearch and OpenSearch {#elastic}
