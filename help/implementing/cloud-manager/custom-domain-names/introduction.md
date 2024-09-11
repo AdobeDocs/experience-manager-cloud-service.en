@@ -45,14 +45,13 @@ In one environment, you can have both domains installed in the AEM-managed CDN a
 
 Adding a custom domain name requires interaction between the DNS service and Cloud Manager. Because of this workflow, there are several steps required to install, configure, and verify custom domain names. The following table gives an overview of the steps required, including links to documentation resources to complete those steps.
 
-|Step|Description|Documentation|
-|---|---|---|
-|1|Add SSL certificate to Cloud Manager|[Add an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)|
-|2|Add custom domain to Cloud Manager|[Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)|
-|3|Add TXT record to verify domain|[Add a TXT record](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)|
-|4|Review domain verification status|[Check domain name status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)|
-|5|Configure DNS settings by adding DNS CNAME or APEX records that point to AEM as a Cloud Service|[Configure DNS settings](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)|
-|6|Check DNS record status|[Check DNS record status](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)|
+| Step | Description | Documentation |
+| --- | --- | --- |
+| 1 |Add SSL certificate to Cloud Manager | [Add an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
+| 2 | Add custom domain to Cloud Manager | [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
+| 3 | Configure DNS settings by adding DNS CNAME or APEX records that point to AEM as a Cloud Service | [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
+| 4 | Review domain verification status | [Check domain name status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
+| 5 | Check DNS record status | [Check DNS record status](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 
 >[!TIP]
 >
