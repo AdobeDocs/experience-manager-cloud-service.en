@@ -355,7 +355,7 @@ aem_tier: author
 
 Some organizations choose to restrict which traffic can be received by the logging destinations.
 
-For the CDN log, you can allow-list the IP addresses, as described in [fastly documentation - Public IP List](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). If that list of shared IP addresses is too large, consider sending traffic to an https server or (non-Adobe) Azure Blob Store where logic can be written to send the logs out of a dedicated IP to their ultimate destination. 
+For the CDN log, you can allow-list the IP addresses, as described in [fastly documentation - Public IP List](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). If that list of shared IP addresses is too large, consider sending traffic to an https server or (non-Adobe) Azure Blob Store where logic can be written to send the logs out of a known IP to their ultimate destination. 
 
 For AEM logs (including Apache/Dispatcher), if you have configured [advanced networking](/help/security/configuring-advanced-networking.md), you can use the advancedNetworking property to forward them from a dedicated egress IP address or over a VPN.
 
