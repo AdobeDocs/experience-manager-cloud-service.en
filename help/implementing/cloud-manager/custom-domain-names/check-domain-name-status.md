@@ -37,34 +37,19 @@ The status detail is shown. Your custom domain is ready to be used when the stat
 >
 >Cloud Manager automatically triggers verification when you select **Create** on the verification step of the **Add Custom Domain** wizard when [adding a new custom domain name to Cloud Manager](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). For subsequent verifications, you must actively select the verify again icon next to the status.
 
-## Understand verification statuses {#statuses}
+## Verification statuses {#statuses}
 
 Cloud Manager verifies domain ownership through the [TXT value](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) and displays one of the following status messages.
 
-* **Domain verification failed** - The TXT value is either missing or is detected with errors.
+| Status | Description |
+| --- | --- |
+| Domain verification failed | The TXT value is either missing or is detected with errors.<br> Follow the instructions provided in the status message to resolve the issue. When ready, you must select the **Verify Again** icon next to the status.  |
+| Domain verification in progress | Verification is in progress.<br>This status is typically seen after you select the **Verify Again** icon next to the status. DNS verification can take a few hours to process because of DNS propagation delays.  |
+| Verified - deployment failed| The TXT verification was successful, but the CDN deployment failed.<br>In such cases, contact your Adobe representative. |
+| Domain verified & deployed | This status indicates that your custom domain name is ready to be used.<br>At this point, your custom domain name is ready for testing and to be pointed to the Cloud Manager domain name. See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) to learn more. |
+| Deleting | The deletion of a custom domain name is in progress. |
+| Deletion failed | The deletion of a custom domain name failed and must be retried.<br>See [Manage custom domain names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) to learn more. |
 
-  * Follow the instructions provided in the status message to resolve the issue.
-  * When ready, you must select the **Verify Again** icon next to the status.
-
-* **Domain verification in progress** - Verification is in progress.
-
-  * This status is typically seen after you select the **Verify Again** icon next to the status.
-  * DNS verification can take a few hours to process because of DNS propagation delays.
-
-* **Verified - deployment failed** - The TXT verification was successful, but the CDN deployment failed. 
-
-  * In such cases, contact your Adobe representative.
-
-* **Domain verified & deployed** - This status indicates that your custom domain name is ready to be used.
-
-  * At this point, your custom domain name is ready for testing and to be pointed to the Cloud Manager domain name.
-  * See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) to learn more.
-
-* **Deleting** - The deletion of a custom domain name is in progress.
-
-* **Deletion failed** - The deletion of a custom domain name failed and must be retried.
-
-  * See [Manage custom domain names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) to learn more.
 
 ## Domain name errors {#domain-error}
 
