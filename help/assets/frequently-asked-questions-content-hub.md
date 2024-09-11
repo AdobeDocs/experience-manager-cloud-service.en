@@ -49,9 +49,27 @@ The display of assets uploaded using Content Hub depends on if you have enabled 
 
 * If the **Auto-approval** toggle is disabled, the assets that you upload using Content Hub do not display automatically. The assets are available in the `hydrated-assets` folder of your Assets as a Cloud Service environment. Navigate to the folder and [bulk edit](/help/assets/approve-assets-content-hub.md) the status of those assets to `Approved` for those assets to display in Content Hub.
 
+## How to quickly find assets uploaded using Content Hub on AEM as a Cloud Service environment? {#find-uploaded-assets-on-aem-cloud}
+
+You can quickly find assets uploaded using Content Hub on AEM as a Cloud Service environment by:
+
+1. Navigating to the `hydrated-assets` folder.
+
+1. Click **[!UICONTROL Filters]** and set **[!UICONTROL No Status]** in the **[!UICONTROL Asset Status]** field.
+
+1. Sort the assets using the **[!UICONTROL Modified Date]** field.
+
 ## Why do not I view the edit using Adobe Express option on my asset card to be able to remix assets to create new variations? {#edit-using-express-not-available}
 
 To view the edit using Adobe Express option on the asset card, you must have Adobe Express entitlements in addition to privileges for [Content Hub users with rights to remix assets to new variations](#onboard-content-hub-users-add-assets).
+
+## How to setup Content Hub so that your organization's brand guidelines display as a link on the home page? {#content-hub-setup-brand-guidelines}
+
+You can add custom links as separate tabs in addition to the standard All Assets, Collections, and Insights tabs on the Content Hub home page. For information on how to set it up, see [Custom Links](/help/assets/configure-content-hub-ui-options.md#configure-custom-links-content-hub).
+
+## Is there any plan on migrating existing Brand Portal and Asset Share commons customers to Content Hub? {#migration-brand-portal}
+
+Adobe provides migration support from Brand Portal and Asset Share commons to Content Hub that you can use by creating an Adobe support ticket.
 
 
 
