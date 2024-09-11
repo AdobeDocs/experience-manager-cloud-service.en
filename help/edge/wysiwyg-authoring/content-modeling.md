@@ -37,7 +37,7 @@ The model of these components is part of the [Boilerplate for WYSIWYG authoring 
 
 ## Blocks {#blocks}
 
-Blocks are used to create richer content with specific styles and functionality. In contrast to default content, blocks do require additional semantics. Blocks can be likened to [components in the AEM page editor.](/help/implementing/developing/components/overview.md)
+Blocks are used to create richer content with specific styles and functionality. In contrast to default content, blocks do require additional semantics. 
 
 Blocks are essentially pieces of content decorated by JavaScript and styled with a stylesheet.
 

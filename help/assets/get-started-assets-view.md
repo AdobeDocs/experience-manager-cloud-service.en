@@ -34,6 +34,10 @@ To change your [!UICONTROL Experience Cloud preferences], Click [!UICONTROL Pref
 
 ![Preference to switch dark and light theme](assets/theme-change.png)
 
+>[!NOTE]
+>
+>If you navigate to Assets view and see a `Network Error` message, ensure that you execute the instructions mentioned in [Cross-Origin Resource Sharing (CORS) configuration](/help/headless/deployment/cross-origin-resource-sharing.md) article.
+
 ## [!DNL Assets View] use cases {#use-cases}
 
 The various digital asset management (DAM) tasks that you can accomplish using [!DNL Assets View] are below.

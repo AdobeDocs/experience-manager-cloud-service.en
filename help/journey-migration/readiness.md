@@ -32,7 +32,7 @@ AEM as a Cloud Service brings many new features and possibilities for managing y
 
 Along with these improvements, several differences have been introduced between on-premise installations of AEM and Adobe Managed Services, compared to AEM as a Cloud Service.
 
-The list of items in the below table is the subset of the changes most relevant for a migration to AEM as a Cloud Service. You can consult the full list of notable changes [here](/help/release-notes/aem-cloud-changes.md).
+The list of items in the below table is the subset of the changes most relevant for a migration to AEM as a Cloud Service. You can consult the full list of [Notable Changes to Adobe Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
 
 <table>
 <thead>

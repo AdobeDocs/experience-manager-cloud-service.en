@@ -96,11 +96,11 @@ To finish the configuration of the full-stack code production pipeline, follow t
   
 1. Provide paths to be included in the Experience Audit.
 
-   * See the document [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) for details.
+   * See the document [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-dashboard.md#configuration) for details.
 
 1. Click **Save** to save your pipeline.
 
-Paths configured for the Experience Audit are submitted to the service and evaluated according to the performance, accessibility, SEO (Search Engine Optimization), best practice, and PWA (Progressive Web App) tests when the pipeline runs. See [Understanding Experience Audit Results](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
+Paths configured for the Experience Audit are submitted to the service and evaluated according to the performance, accessibility, SEO (Search Engine Optimization), best practice, and PWA (Progressive Web App) tests when the pipeline runs. See [Understanding Experience Audit Results](/help/implementing/cloud-manager/experience-audit-dashboard.md) for more details.
 
 The pipeline is saved and you can now [manage your pipelines](managing-pipelines.md) on the **Pipelines** card on the **Program Overview** page.
 
@@ -108,9 +108,9 @@ The pipeline is saved and you can now [manage your pipelines](managing-pipelines
 
 A targeted deployment deploys code only for selected parts of your AEM application. In such a deployment you can choose to **Include** one of the following types of code:
 
-* **Config** - Configure settings for traffic filter rules on your AEM environment.
-  * See the document [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md) to learn how to manage the configurations in your repository so they are deployed properly.
-  * When running a targeted deployment pipeline, [WAF configurations](/help/security/traffic-filter-rules-including-waf.md) will be deployed, provided they are saved to environment, repository, and branch you defined in the pipeline.
+* **Config** - Configure settings for various features on your AEM environment.
+  * See [Using Config Pipelines](/help/operations/config-pipeline.md) for a list of supported configurations, which includes log forwarding, purge-related maintenance tasks, and various CDN configurations, and to manage them in your repository so they are deployed properly.
+  * When running a targeted deployment pipeline, configurations will be deployed, provided they are saved to environment, repository, and branch you defined in the pipeline.
   * At any time, there can only be one config pipeline per environment. 
 * **Front End Code** - Configure JavaScript and CSS for the front end of your AEM application.
   * With front-end pipelines, more independence is given to front-end developers and the development process can be accelerated.
