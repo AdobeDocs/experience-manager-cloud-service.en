@@ -43,7 +43,7 @@ If the field is not available, use the following steps to add the field:
    1. Select the **[!UICONTROL User Group]** you need to add, and extract the **[!UICONTROL orgID]** and **[!UICONTROL userGroupID]** from the URL or use your Org Id such as `{orgID}@AdobeOrg:{usergroupID}`.
 
 1. Add the Group ID to the **[!UICONTROL Roles]** field of Asset properties. <br>
-   The Group IDs defined in the **[!UICONTROL Roles]** field are the only users who can access the asset. You can also add IMS client ID and IMS profile id in the **[!UICONTROL Roles]** field. For example, `{orgId}@AdobeOrg:{profileId}`.
+   The Group IDs defined in the **[!UICONTROL Roles]** field are the only users who can access the asset. Apart from IMS group ID, you can also add IMS user ID and IMS profile id in the **[!UICONTROL Roles]** field. For example, `{orgId}@AdobeOrg:{profileId}`.
 
    >[!NOTE]
    >

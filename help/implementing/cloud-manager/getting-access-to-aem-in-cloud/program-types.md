@@ -14,7 +14,7 @@ Cloud Manager is built around a hierarchy of entities. The details of this is no
 ![Cloud Manager hierarchy](assets/program-types1.png)
 
 * **TENANT** - This is the top of the hierarchy. Every customer is provisioned with a tenant.
-* **PROGRAMS** - Each tenant has one or more programs, [which often reflect the customer's licensed solutions.](introduction-production-programs.md)
+* **PROGRAMS** - Each tenant has one or more programs, [which often reflect the customer's licensed solutions](introduction-production-programs.md).
 * **ENVIRONMENTS** - Each program has multiple environments such as production for live content, one for staging, and one for development purposes.
   * Each program can have only one production environment, but multiple non-production environments.
 * **REPOSITORY** - Programs have git repositories where application and front-end code is maintained for the environments.
@@ -48,13 +48,13 @@ The workflow is thus a standard git workflow.
 
 The only difference is that the remote git repository is part of Cloud Manager, which is transparent to the developer.
 
-## Program Types {#program-types}
+## Program types {#program-types}
 
 A user can create a **production** program or a **sandbox** program.
 
 * A **production program** is created to enable live traffic for your site.
   * See [Introduction to Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) for more details.
 * A **sandbox program** is typically created to serve the purposes of training, running demos, enablement, POCs, or documentation.
-  * A sandbox environment is not meant to carry live traffic and will have restrictions that a production program will not.
-  * It includes Sites and Assets and is delivered auto-populated with a git branch that includes sample code, a development environment, and a non-production pipeline.
+  * A sandbox environment is not meant to carry live traffic and has restrictions that a production program does not.
+  * It includes Sites, Assets, and Edge Delivery Services, and is delivered auto-populated with a git branch that includes sample code, a development environment, and a non-production pipeline.
   * See [Introduction to Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) for more details.

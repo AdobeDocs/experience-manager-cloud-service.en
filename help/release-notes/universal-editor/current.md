@@ -1,32 +1,33 @@
 ---
-title: Universal Editor 2024.06.28 Release Notes
-description: These are the release notes for the 2024.06.28 release of the Universal Editor.
+title: Universal Editor 2024.08.13 Release Notes
+description: These are the release notes for the 2024.08.13 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
-# Universal Editor 2024.06.28 Release Notes {#release-notes}
 
-These are the release notes for the 28 June 2024 release of the Universal Editor.
+# Universal Editor 2024.08.13 Release Notes {#release-notes}
+
+These are the release notes for the 13 August 2024 release of the Universal Editor.
 
 >[!TIP]
 >
 >For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
-## What's New {#what-is-new}
+## What’s New {#what-is-new}
 
-* **Home**: The recent pages are displayed as a list, without preview images.
-* **Location Bar**: Enhanced URL validation was added, enforcing HTTPS URLs and supporting hashes in URLs to account for hash-routed applications.
-* **Keyboard Navigation**: The page overlay selection was decoupled from the properties rail focus to improve the keyboard navigation on the page without losing focus.
-* **Item Labels**: The fallback value for labels now uses `data-aue-prop` instead of `data-aue-type` for clearer identification in overlays and the content tree.
-* **RTE Modal**: A **Cancel** button was added to the rich text editor modal when opening it from the properties panel.
-* **UE Service on Node**: HTTP support for the Universal Editor Service was reintroduced, as all HTTPS connections are terminated at the Dispatcher level.
-* **Internal Copy API**: An API to the Universal Editor Service to copy components was added, allowing future introduction of toolbar options to copy and duplicate content.
+* **Custom Data Types**: Tailor the editor to your unique data needs with the ability to [create custom fields within the properties panel.](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/item-types-renderers/)
+  * Whether you’re developing a custom product picker for commerce use-cases or populating a drop-down list with values from your backends, this feature gives you the control you need over the data that authors use to compose content.
+* **Cross-Container Drag &amp; Drop**: Enjoy greater flexibility in layout composition with the ability to [move components across different containers via drag and drop](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) within the [Content Tree panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
+* **Optimized GitHub Integration**: Caching for GitHub responses have been introduced, significantly speeding up the retrieval of tags and the `universal-editor-cors-library`, resulting in a faster and smoother user experience.
+* **Configurable IMS Token Validation**: To increase flexibility in token management, [IMS token validation is now optional.](/help/implementing/universal-editor/local-dev.md#setting-up-service)
+  * This configuration option allows you to disable validation as needed, simplifying your cloud gateway setups.
+* **Splunk Integration**: Splunk logging has been integrated into the [Universal Editor Service for local development,](/help/implementing/universal-editor/local-dev.md#setting-up-service) enhancing monitoring and diagnostics.
+  * This integration ensures efficient log tracking, smoother operations, and quicker troubleshooting.
 
 ## Bug Fixes {#bug-fixes}
 
-* **Properties Panel Breadcrumb**: The breadcrumb menu in the properties panel for deeply nested items, which didn’t remain open, was fixed.
-* **Content Fragment Selector**: The Content Fragment selector was improved to ensure that it respects the rules defined in the Content Fragment model or in the `data-aue-filter`.
-* **Component Insertion**: The list to insert new components that didn’t update accurately after navigating to another page was corrected.
-* **Publication Status**: The handling of publication statuses was improved to function more consistently.
-* **Miscellaneous Fixes**: This release also contains various minor fixes, tech debt cleanup, security enhancements, and consolidated tests for overall stability and performance.
+* **Enhanced Publishing Feedback**: If publication fails due to insufficient permissions, feedback to the user during publishing has been improved to display a clear warning instead of simply indicating a failure.
+* **Improved URL Handling**: Issues with incorrect URL encoding/decoding that were causing publishing failures were fixed.
+* **Accurate Data Handling**: An issue where float numbers were incorrectly stored as integers has been addressed, ensuring precise data handling across your content.
+* **Security and Stability**: Security vulnerabilities in the Docker images have been fixed and test coverage for critical components like the Component Picker and Breadcrumbs have been implemented, leading to a more secure, stable, and reliable editor experience.

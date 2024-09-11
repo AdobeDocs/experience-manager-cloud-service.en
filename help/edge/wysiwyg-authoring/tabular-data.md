@@ -124,6 +124,7 @@ Now that you know how to create a redirects spreadsheet, you can create any othe
 * Metadata
 * Headers
 * Configuration
+* [Taxonomy](/help/edge/wysiwyg-authoring/taxonomy.md)
 
 Simply follow the same steps in the sections [Create Spreadsheet](#spreadsheet) and [Update paths.json](#paths-json) and choose the appropriate template and update the `paths.json` file appropriately.
 
@@ -132,6 +133,7 @@ For [Configuration](https://www.aem.live/docs/configuration), [Headers](https://
 * Configuration: `/.helix/config.json`
 * Headers: `/.helix/headers.json`
 * Metadata: `/metadata.json`
+* Taxonomy: Please see the document [Managing Taxonomy Data](/help/edge/wysiwyg-authoring/taxonomy.md) for more information.
 
 Additionally, you can [create your own spreadsheet](#own-spreadsheet) with arbitrary columns for your own use.
 
