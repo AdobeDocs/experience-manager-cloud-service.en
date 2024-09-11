@@ -12,8 +12,7 @@ role: Admin
 >title="Deprecated and Removed Features in AEM as a Cloud Service"
 >abstract="AEM as a Cloud Service has a cloud-native deployment model. Certain capabilities and features have been repalced by cloud-native counterparts and this tab shows those features." 
 
-
-Adobe constantly evaluates product capabilities, to over time reinvent or replace older features with more modern alternatives to improve overall customer value, always under careful consideration of backward compatibility. Also, as [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] provides a cloud-native deployment model, certain capabilities and features were replaced by cloud-native counterparts.
+Adobe constantly evaluates product capabilities to, over time, reinvent or replace older features with more modern alternatives to improve overall customer value, always under careful consideration of backward compatibility. Also, as [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] provides a cloud-native deployment model, certain capabilities and features were replaced by cloud-native counterparts.
 
 To communicate the impending removal/replacement of [!DNL Experience Manager] capabilities, the following rules apply:
 
@@ -89,12 +88,6 @@ Below is an extensive list of deprecated AEM APIs and their expected removal dat
     <td>Use Sling's Discovery API as an alternative</td>
     <td>2015</td>
     <td>removed</td>
-  </tr>
-  <tr>
-    <td>org.apache.sling.settings</td>
-    <td>AEM as a Cloud Service does not support run modes or file system access at runtime. </td>
-    <td>10/5/20</td>
-    <td>End of 2021</td>
   </tr>
   <tr>
     <td>org.apache.fop.apps</td>
