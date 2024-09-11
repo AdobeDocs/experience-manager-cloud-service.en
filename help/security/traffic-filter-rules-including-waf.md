@@ -95,7 +95,7 @@ The following is a high-level recommended end-to-end process for coming up with 
          action: block
    ```
 
-    See the [config pipeline article](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the `data` node. The `kind` property value should be set to *CDN* and the version should be set to `1`.
+    See [Using Config Pipelines](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the `data` node. The `kind` property value should be set to *CDN* and the version should be set to `1`.
 
 
 1. If WAF rules are licensed, you should enable the feature in Cloud Manager, as described below for both the new and existing program scenarios.
@@ -104,7 +104,7 @@ The following is a high-level recommended end-to-end process for coming up with 
 
    1. To configure WAF on an existing program, [edit your program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) and on the **Security** tab uncheck or check the **WAF-DDOS** option at any time.
 
-1. Create a config pipeline in Cloud Manager, as described in [config pipeline article.](/help/operations/config-pipeline.md#managing-in-cloud-manager) The pipeline will reference a top level `config` folder with the `cdn.yaml` file placed somewhere below, as [described here](/help/operations/config-pipeline.md#folder-structure).
+1. Create a config pipeline in Cloud Manager, as described in [config pipeline article.](/help/operations/config-pipeline.md#managing-in-cloud-manager) The pipeline will reference a top level `config` folder with the `cdn.yaml` file placed somewhere below, see [Using Config Pipelines](/help/operations/config-pipeline.md#folder-structure).
 
 ## Traffic Filter Rules Syntax {#rules-syntax}
 
@@ -209,7 +209,7 @@ when:
   in: [ "192.168.0.0/24" ]
 ```
 
-* Adobe recommends the use of [regex101](https://regex101.com/) and [Fastly Fiddle](https://fiddle.fastly.dev/) when working with regex. You can also learn more about how Fastly handles regex in this [article](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes).
+* Adobe recommends the use of [regex101](https://regex101.com/) and [Fastly Fiddle](https://fiddle.fastly.dev/) when working with regex. You can also learn more about how Fastly handles regex from [fastly documentation - Regular expressions in Fastly VCL](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes).
 
 
 ### Action Structure {#action-structure}
@@ -249,7 +249,7 @@ The `wafFlags` property, which can be used in the licensable WAF traffic filter 
 | MALFORMED-DATA  | Malformed Data in the request body  | A POST, PUT, or PATCH request body that is malformed according to the "Content-Type" request header. For example, if a "Content-Type: application/x-www-form-urlencoded" request header is specified and contains a POST body that is json. This is often a programming error, automated or malicious request. Requires agent 3.2 or higher.  |
 | SANS  | Malicious IP Traffic  | [SANS Internet Storm Center](https://isc.sans.edu/) list of reported IP addresses that engaged in malicious activity.  |
 | NO-CONTENT-TYPE  | Missing "Content-Type" request header  | A POST, PUT, or PATCH request that does not have a "Content-Type" request header. By default application servers should assume "Content-Type: text/plain; charset=us-ascii" in this case. Many automated and malicious requests may be missing "Content Type".  |
-| NOUA  | No User Agent  | Many automated and malicious requests use fake or missing User-Agents to make it difficult to identify the type of device making the requests.  |
+| NOUA  | No User Agent  | Indicates a request contained no "User-Agent" header or the header value was not set.  |
 | TORNODE  |  Tor Traffic | Tor is software that conceals a user's identity. A spike in Tor traffic can indicate an attacker trying to mask their location.  |
 | NULLBYTE  | Null Byte | Null bytes do not normally appear in a request and indicate that the request is malformed and potentially malicious. |
 | PRIVATEFILE  | Private files  | Private files are confidential in nature, such as an Apache `.htaccess` file, or a configuration file which could leak sensitive information  |

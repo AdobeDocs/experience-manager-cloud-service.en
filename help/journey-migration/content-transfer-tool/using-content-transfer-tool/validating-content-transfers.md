@@ -5,6 +5,7 @@ exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 feature: Migration
 role: Admin
 ---
+
 # Validating Content Transfers {#validating-content-transfers}
 
 ## Getting Started {#getting-started}
@@ -13,7 +14,7 @@ Users can reliably determine if all the content that was extracted by the Conten
 
 >[!INFO]
 >
->This feature will be available as of the Content Transfer Tool (CTT) version 1.8.x release. The AEM Cloud Service target environment must be running at least version 6158 or greater. It also requires the source environment to be setup to run [pre-copy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). The validation feature looks for the azcopy.config file on the source. If it fails to find this file, validation will not run. To learn more about how to configure an azcopy.config file, see [this page](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
+>This feature will be available as of the Content Transfer Tool (CTT) version 1.8.x release. The AEM Cloud Service target environment must be running at least version 6158 or greater. It also requires the source environment to be setup to run [pre-copy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). The validation feature looks for the azcopy.config file on the source. If it fails to find this file, validation will not run. To learn more about how to configure an azcopy.config file, see [Handling Large Content Repositories - Configure an azcopy.config file](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
 
 Validating a content transfer is an optional feature. Enabling this feature will increase both the time it takes to perform an extraction and an ingestion. To use the feature, enable it in the System Console of the source AEM environment by following these steps:
 
@@ -128,23 +129,28 @@ In addition to being included in the ingestion log, the validation report can al
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
 
-## How to Validate the Principal Migration {#how-to-validate-principal-migration}
+## How to Validate the Principal Migration {#how-to-validate-group-migration}
 
-See [User Mapping and Principal Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) to read the principal migrations details and why it is necessary.
+See [Group Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) to read the principal migration details and why it is necessary.
 
-After the extraction and ingestion are successfully completed, a summary and report of the principal migration is available. This information can be used to validate which users and groups were migrated successfully, and, perhaps, to determine why some were not.
+After the extraction and ingestion are successfully completed, a summary and report of the principal migration is available. This information can be used to validate which groups were migrated successfully, and, perhaps, to determine why some were not.
 
 To view this information, go to Cloud Acceleration Manager. Click your project card and click the Content Transfer card. Navigate to **Ingestion Jobs** and locate the ingestion that you want to verify. Click the three dots (**...**) for that ingestion, then click **View principal summary** in the drop-down.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-You see a dialog with the summary information. Use the help icons to read a more full description. Click the **Download report** button to download the full comma-separated (CSV) report.
+You see a dialog with the summary information. Use the help icons to read a more full description. Click the **Download report** button to download the full comma-separated (CSV) report.  Also note that at the end of this report is the User Report, which can be used for post-migration user management.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 
->[!NOTE]
->
->If user mapping is disabled, another variant of this dialog box is shown. It will indicate that user mapping was disabled, and will not show the 3 fields giving user mapping values.
+The Principal Migration report will report:
+
+* Each group migrated and the first content path that triggered that group to be migrated; the group could also be on other paths, but only the first one found for a given group is reported. It also reports whether it was found in an ACL or a CUG policy.
+* Each group not migrated, and the reason it was not migrated.  Typically it will be one of these reasons:
+    * It is a built-in group
+    * It is already on the target system
+    * It is not in an ACL or CUG policy on the content being migrated
+    * It has a duplicate unique field (one of rep:principalName, rep:authorizableId, jcr:uuid or rep:externalId is already on the destination, but these all must be unique)
 
 ## Troubleshooting {#troubleshooting}
 
@@ -160,6 +166,6 @@ Some paths from the extraction and ingestion digests are excluded purposefully t
 
 The paths we currently exclude from the digests include: `cqdam.text.txt` renditions, nodes within `/home`, and nodes within `/jcr:system`.
 
-### Closed User Groups are not functioning {#validating-cugs}
+### Closed User Groups {#validating-cugs}
 
 See [Migrating Closed User Groups](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) for extra considerations when using a Closed User Group (CUG) policy.
