@@ -18,9 +18,9 @@ exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
 
 Welcome to Dynamic Media Journey: The Basics, Part II where you can expect to learn the following:
 
-* Anatomy of a Dynamic Media URL and how Dynamic Media delivers content
-* Fundamentals of creating image presets to render assets
-* Image sets, spin sets, and mixed media sets
+* Anatomy of a Dynamic Media URL and how Dynamic Media delivers content.
+* Fundamentals of creating image presets to render assets.
+* Image sets, spin sets, and mixed media sets.
 
 See also [Dynamic Media Journey; The Basics, Part I](/help/assets/dynamic-media/dm-journey-part1.md).
 
