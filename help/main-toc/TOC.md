@@ -1062,6 +1062,7 @@ user-guide-title: AEM as a Cloud Service
   + [Implementing Applications for AEM as a Cloud Service](/help/implementing/home.md)
 
 
+
   + Using Cloud Manager {#using-cloud-manager}
     + [Navigation](/help/implementing/cloud-manager/navigation.md)
     + Programs {#programs}
@@ -1128,8 +1129,8 @@ user-guide-title: AEM as a Cloud Service
       + [Manage SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
     + CDN Configurations {#cdn-configurations}
       + [Add a CDN Configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-      + [Edit a CDN Configuration](help/implementing/cloud-manager/cdn-configurations/delete-cdn-config.md)
-      + [Delete a CDN Configuration](/help/implementing/cloud-manager/cdn-configurations/edit-cdn-config.md)
+      + [Edit a CDN Configuration](help/implementing/cloud-manager/cdn-configurations/edit-cdn-config.md)
+      + [Delete a CDN Configuration](/help/implementing/cloud-manager/cdn-configurations/delete-cdn-config.md)
     + IP Allow Lists {#ip-allow-lists}
       + [Introduction](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
       + [Add an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
@@ -1141,6 +1142,7 @@ user-guide-title: AEM as a Cloud Service
     + [Cloud Manager FAQs](/help/implementing/cloud-manager/faqs.md)
 
   
+
   + Developing for AEM as a Cloud Service {#developing}
     + [AEM Project Structure](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
     + [AEM Project Repository Structure Package](/help/implementing/developing/introduction/repository-structure-package.md)
