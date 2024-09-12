@@ -1,5 +1,5 @@
 ---
-title: Manage SSL certificates
+title: Manage SSL Certificates
 description: Learn how to use Cloud Manager to check the status of your SSL certificates and how to edit, replace, update, and delete them.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
@@ -19,15 +19,15 @@ The status of your SSL certificates can be understood at a glance from the **SSL
 | --- | --- |
 | Green  | The certificate is valid for at least 14 days from the current date.  |
 | Orange  | The certificate is due to expire in less than 14 days.<br>&bull; Ensure that you have a plan to renew your certificate and replace it by way of the Cloud Manager user interface to avoid possible site access or outages.<br>&bull; Cloud Manager sends regular notifications in the UI to alert you of an impending certificate expiration. |
-| Red | The SSL certificate is expired.<br>See [Update an expired, customer managed SSL certificate](#update-ssl-certificate) or [Delete an SSL certificate](#deleting-an-ssl-certificate). |
+| Red | The SSL certificate is expired.<br>See [Update an expired customer managed SSL certificate](#update-ssl-certificate) or [Delete an SSL certificate](#deleting-an-ssl-certificate). |
 
-## Update an expired, customer managed SSL certificate {#update-ssl-certificate}
+## Update an expired customer managed SSL certificate {#update-ssl-certificate}
 
 When a customer managed certificate expires any domains that are in use with the expired certificate no longer work. Updating your certificates ensures that your domain continues to work as desired.
 
 A user must be a member of the **Business Owner** or **Deployment Manager** role to complete this task.
 
-**To update an expired, customer managed SSL certificate:**
+**To update an expired customer managed SSL certificate:**
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
@@ -46,7 +46,7 @@ A user must be a member of the **Business Owner** or **Deployment Manager** role
 
 1. Click **Update** to save your changes and have them applied automatically.
 
-## Replace an expired, customer managed SSL certificate {#replace-ssl-certificate}
+## Replace an expired customer managed SSL certificate {#replace-ssl-certificate}
 
 Follow the same steps that are described in [Update an expired SSL Certificate](#update-ssl-certificate) to replace an expired, customer managed SSL certificate.
 
@@ -79,6 +79,6 @@ If you already have a CDN configuration for your SSL certificate, the **SSL Cert
 
 The message disappears after all pre-existing environment configurations are migrated using the UI. It may take 1-2 business days for the message to disappear.
 
-See [Add an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) for more details.
+See [Add an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) for more details.
 
 A similar message is also provided on the **IP Allow List** and the **Environments** pages for environments that have pre-existing CDN configurations for IP allow lists or custom domain names.
