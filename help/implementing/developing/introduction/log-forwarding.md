@@ -174,9 +174,10 @@ AEM logs (including Apache/Dispatcher) appear below a folder with the following 
 
 * aemaccess
 * aemerror
+* aemrequest
 * aemdispatcher 
-* httpdaccess
-* httpderror
+* aemhttpdaccess
+* aemhttpderror
 
 Under each folder, a single file will be created and appended to. Customers are responsible for processing and managing this file so it does not grow too large.
 
@@ -206,7 +207,7 @@ Considerations:
 
 * Create an API Key, without any integration with a specific cloud provider.
 * the tags property is optional
-* For AEM logs, the Datadog source tag is set to one of `aemaccess`, `aemerror`, `aemdispatcher`, `httpdaccess`, or `httpderror`
+* For AEM logs, the Datadog source tag is set to one of `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess`, or `aemhttpderror`
 * For CDN logs, the Datadog source tag is set to `aemcdn`
 * the Datadog service tag is set to `adobeaemcloud`, but you can overwrite it in the tags section
    
@@ -236,6 +237,7 @@ Considerations:
 
 ![Elastic deployment credentials](/help/implementing/developing/introduction/assets/ec-creds.png)
 
+* For AEM logs, the index variable is set to one of `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess`, or `aemhttpderror`
 * The optional pipeline property should be set to the name of the Elasticsearch or OpenSearch ingest pipeline, which can be configured to route the log entry to the appropriate index. The pipeline's Processor type must be set to *script* and the script language should be set to *painless*. Here is a sample script snippet to route log entries into an index such as aemaccess_dev_26_06_2024:
 
 ```
@@ -286,9 +288,10 @@ There is also be a property named `sourcetype`, which is set to one of these val
 
 * aemaccess
 * aemerror
+* aemrequest
 * aemdispatcher 
-* httpdaccess
-* httpderror
+* aemhttpdaccess
+* aemhttpderror
 
 ### Splunk {#splunk}
 
@@ -308,7 +311,7 @@ There is also be a property named `sourcetype`, which is set to one of these val
    
 Considerations:
 
-* by default, the port is 443. It can optionally be overridden with a property named `port`
+* by default, the port is 443. It can optionally be overridden with a property named `port`.
 
 
 <!--
@@ -369,8 +372,10 @@ For AEM logs (including Apache/Dispatcher), if you have configured [advanced net
        default:
          enabled: true
          host: "splunk-host.example.com"
+         port: 443
          token: "${{SPLUNK_TOKEN}}"
          index: "aemaacs"
        aem:
          advancedNetworking: true
    ```
+
