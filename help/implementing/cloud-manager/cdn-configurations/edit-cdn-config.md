@@ -28,7 +28,7 @@ A user must be a member of the **Business Owner** or **Deployment Manager** role
 
 1. In the **Edit CDN** dialog box, set one or more of the options in the respective drop-down list.
 
-    The options you see in the dialog box vary depending on if you are using an Adobe-managed CDN or a Customer-managed CDN. 
+    The options that you see in the dialog box can vary depending on if you are using an Adobe-managed CDN or a Customer-managed CDN. 
 
 1. Click **Update**.
 
