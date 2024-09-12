@@ -10,7 +10,7 @@ role: Admin, Architect, Developer
 
 # Delete a CDN configuration {#delete-cdn}
 
-When you delete an Adobe-managed or Customer-managed CDN configuration in Adobe Cloud Manager, the associated domain's routing and SSL certificate settings are removed. The domain no longer uses the CDN for traffic delivery, and any security or performance enhancements provided by the CDN is lost. You may experience service disruption until a new configuration is set up, whether re-adding the deleted CDN or adding a new one.
+When you delete an Adobe-managed or Customer-managed CDN configuration in Adobe Cloud Manager, the associated domain's routing and SSL certificate settings are removed. The domain no longer uses the CDN for traffic delivery, and any security or performance enhancements provided by the CDN is lost. You may experience service disruption until a new configuration is set up, whether re-adding the deleted CDN or adding a new one. 
 
 A user must be a member of the **Business Owner** or **Deployment Manager** role to complete this task.
 
