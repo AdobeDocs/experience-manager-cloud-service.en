@@ -4,8 +4,6 @@ description: Learn about how to delete a CDN configuration for an Edge Delivery 
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-
-
 ---
 
 # Delete a CDN configuration {#delete-cdn}
