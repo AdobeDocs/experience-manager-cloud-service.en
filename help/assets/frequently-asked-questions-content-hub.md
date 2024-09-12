@@ -67,9 +67,9 @@ To view the edit using Adobe Express option on the asset card, you must have Ado
 
 You can add custom links as separate tabs in addition to the standard All Assets, Collections, and Insights tabs on the Content Hub home page. For information on how to set it up, see [Custom Links](/help/assets/configure-content-hub-ui-options.md#configure-custom-links-content-hub).
 
-## Is there any plan on migrating existing Brand Portal and Asset Share commons customers to Content Hub? {#migration-brand-portal}
+## Is there any plan on migrating existing Brand Portal customers to Content Hub? {#migration-brand-portal}
 
-Adobe provides migration support from Brand Portal and Asset Share commons to Content Hub that you can use by creating an Adobe support ticket.
+Adobe provides migration support from Brand Portal to Content Hub that you can use by creating an Adobe support ticket.
 
 
 
