@@ -27,9 +27,9 @@ In the accompanying guide, you'll find a comprehensive list of best practices fo
 
 Stage Business Problem Best Practice Recommendation: This section will outline specific business challenges and provide targeted best practices and recommendations to address them effectively. -->
 
-{{work-with-dynamic-media}}
+{{see-also-dm}}
 
-Organizations face an explosion of channels and devices for engaging with users. The customer journey spans physical stores, web, mobile, social media, emails, and commerce. To meet this demand, Dynamic Media on Adobe Experience Manager (AEM) offers a comprehensive solution. It optimizes asset delivery, handles personalization, and ensures consistent, performant, and brand-aligned experiences across channels and devices.
+Organizations face an explosion of channels and devices for engaging with users. The customer journey spans physical stores, web, mobile, social media, emails, and commerce. To meet this demand, Dynamic Media on Adobe Experience Manager (AEM) offers a comprehensive solution. It optimizes asset delivery, handles personalization, and ensures consistent, performant, and brand-aligned experiences across channels and devices. 
 
 Some of the key tenets of Dynamic Media include the following:
 
@@ -406,4 +406,3 @@ The CDN (Content Delivery Network) caches Dynamic Media assets for quick deliver
 
 Want to learn more? Go to [Invalidate the CDN cache by way of Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
 
-{{see-also-dm}}
