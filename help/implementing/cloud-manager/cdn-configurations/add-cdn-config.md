@@ -41,5 +41,4 @@ For Adobe managed CDNs, when using DV certificates, only sites with ACME validat
    | Adobe managed CDN | a. In the **Domain** drop-down list, select the domain name that you want to use.<br>No verified domains available in the drop-down list? See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).<br>b. In the SSL Certificate drop-down list, select a certificate that you want to use.<br>No SSL certificates available in the drop-down list? See [Add an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
    | Other CDN provider. | Select this option if you are using your own CDN provider and not the Adobe managed CDN that is available to you.<br>In the **Domain** drop-down list, select the domain name that you want to use.<br>No available SSL certificates in the drop-down list? See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 
-
 1. Click **Save**.
