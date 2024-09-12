@@ -4,8 +4,6 @@ description: Learn about how to edit and update a CDN configuration for an Edge 
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-
-
 ---
 
 # Edit a CDN configuration {#edit-cdn}
