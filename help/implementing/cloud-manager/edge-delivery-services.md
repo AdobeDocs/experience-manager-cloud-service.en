@@ -55,7 +55,7 @@ Depending on your use case, do one of the following:
 
 ## Adobe recommended path for contracted customers {#recommended-path-eds}
 
-As a contracted customer, ensure you maximize your benefits from Adobe by accessing and consuming your Edge Delivery Services license through Cloud Manager. This approach lets you use [Adobe managed CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) and take advantage of key benefits such as self-service CDN management, including the configuration and installation of DV or EV/OV certificates. If you do not have an Edge Delivery Services license with Adobe and decide to bypass those benefits, you can only use a customer-managed CDN. This setup must be on the aem.live platform.
+As a contracted customer, ensure you maximize your benefits from Adobe by accessing and consuming your Edge Delivery Services license through Cloud Manager. This approach lets you use [Adobe managed CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) and take advantage of key benefits such as self-service CDN management, including the configuration and addition of DV certificates. Additionally, after a DV certificate is created, Adobe renews it automatically every three months, unless it is deleted. If you do not have an Edge Delivery Services license with Adobe and decide to bypass these benefits, you can only use a customer-managed CDN. This setup must be on the `aem.live` platform.
 
 If you are contracted with AEM as a Cloud Service Sites Edge Delivery Services licenses, log into Cloud Manager to ensure you are able to do the following:
 
