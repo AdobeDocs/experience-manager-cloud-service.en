@@ -17,7 +17,7 @@ See also [Troubleshoot SSL certificate errors](/help/implementing/cloud-manager/
 
 A certificate can take a few days to provision. As such, Adobe recommends that the certificate be provisioned well in advance of any deadline or go-live date.
 
-Be sure you review **Certificate requirements** in [Introduction to Managing SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) to make sure AEM as a Cloud Service supports the certificate that you want to add.
+Be sure you review **Certificate requirements** in [Introduction to Managing SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements) to make sure AEM as a Cloud Service supports the certificate that you want to add.
 
 A user must be a member of the **Business Owner** or **Deployment Manager** role to complete this task.
 
@@ -39,7 +39,7 @@ A user must be a member of the **Business Owner** or **Deployment Manager** role
 
 1. Near the upper-right corner of the page, click **Add SSL Certificate**.
 
-1. In the **Add SSL certificate** dialog box, based on [your particular use case](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md), do one of the following:
+1. In the **Add SSL certificate** dialog box, based on [your particular use case](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md), do one of the following:
 
     | | Use case | Steps |
     | --- | --- | --- |
