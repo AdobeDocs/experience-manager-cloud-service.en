@@ -46,6 +46,7 @@ Assets display panel shows the out of the box metadata that can be displayed in 
 
 >[!MORELIKETHIS]
 >
->* [Asset Selector customization](/help/assets/asset-selector-customization.md)
+>* [Asset Selector customizations](/help/assets/asset-selector-customization.md)
+>* [Asset Selector upload](/help/assets/asset-selector-upload.md)
 >* [Asset Selector properties](/help/assets/asset-selector-properties.md)
->* [Integrate Asset Selector dynamic media open APIs](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [Integrate Asset Selector with Dynamic Media with OpenAPI capabilities](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
