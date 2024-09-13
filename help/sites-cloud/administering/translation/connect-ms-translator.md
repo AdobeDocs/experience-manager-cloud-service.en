@@ -36,7 +36,7 @@ The following procedure creates a Microsoft Translator configuration.
 1. Click **Create**.
 1. In the **Edit Configuration** window, provide the values for the translation service described in the previous table.
 
-   ![Edit translation configuration](../assets/edit-translation-config.png)
+   ![Edit translation configuration](../assets/msft-config-ui.png)
 
 1. Select **Connect** to verify the connection.
 1. Select **Save &amp; Close**.
