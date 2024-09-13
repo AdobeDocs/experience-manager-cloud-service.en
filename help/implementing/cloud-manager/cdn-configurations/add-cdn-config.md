@@ -21,13 +21,16 @@ For Adobe managed CDNs, when using DV certificates, only sites with ACME validat
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. In the left navigation panel, under **Services**, click **CDN Configurations**.
+1. Depending on your use case, do one of the following:
 
-1. Near the upper-right corner of the CDN Configurations page, click **Add**. 
-
-   ![Configure CDN dialog box](/help/implementing/cloud-manager/assets/configure-cdn-dialog.png)
+   | Use case | Steps |
+   | --- | --- |
+   | I want to add a CDN configuration to an *existing* Edge Delivery site in Cloud Manager | a. In the left navigation panel, under **Services**, click **Edge Delivery Sites**.<br>b. In the Edge Delivery table, at the end of a row that does not have a domain associated with it, click the ellipsis.<br>c. Click **Configure CDN**.  ![Click Configure CDN for a Edge Delivery site](/help/implementing/cloud-manager/assets/cm-eds-config-cdn.png)   |
+   | I want to add a CDN configuration in Cloud Manager | a. In the left navigation panel, under **Services**, click **CDN Configurations**.<br>b. Near the upper-right corner of the CDN Configurations page, click **Add**.   |
 
 1. In the **Configure CDN** dialog box, in the **Origin** drop-down list, select one of the following:
+
+   ![Configure CDN dialog box](/help/implementing/cloud-manager/assets/configure-cdn-dialog.png)
 
    | Origin | Description |
    | --- | --- |
