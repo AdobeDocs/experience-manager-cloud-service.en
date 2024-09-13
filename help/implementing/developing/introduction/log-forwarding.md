@@ -237,7 +237,7 @@ Considerations:
 
 ![Elastic deployment credentials](/help/implementing/developing/introduction/assets/ec-creds.png)
 
-* For AEM logs, the index variable is set to one of `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess`, or `aemhttpderror`
+* For AEM logs, `index` is set to one of `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess`, or `aemhttpderror`
 * The optional pipeline property should be set to the name of the Elasticsearch or OpenSearch ingest pipeline, which can be configured to route the log entry to the appropriate index. The pipeline's Processor type must be set to *script* and the script language should be set to *painless*. Here is a sample script snippet to route log entries into an index such as aemaccess_dev_26_06_2024:
 
 ```
@@ -284,7 +284,7 @@ There is also be a property named `sourcetype`, which is set to the value `aemcd
 
 For AEM logs (including apache/dispacher), web requests (POSTs) will be sent continuously, with a json payload that is an array of log entries, with the various log entry formats as described under [Logging for AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md). Additional properties are mentioned in the [Log Entry Formats](#log-format) section below.
 
-There is also be a property named `sourcetype`, which is set to one of these values:
+There is also be a property named `Source-Type`, which is set to one of these values:
 
 * aemaccess
 * aemerror
