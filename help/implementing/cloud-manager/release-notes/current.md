@@ -27,9 +27,17 @@ The release date for Cloud Manager release 2024.9.0 in AEM as a Cloud Service is
 
     With Cloud Manager, you are now able to [self-service Adobe generated and managed DV (Domain Validation) SSL certificates](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). This capability gives you the fastest, easiest, and most cost-effective solution to create a secure website for your online organization or business. <!-- CMGR-52403 -->
 
+    >[!NOTE]
+    >
+    >[Content Hub](/help/assets/product-overview.md) customers are planned to receive this feature in phases as part of a gradual roll-out.
+
 * **Edge Delivery Services support in Cloud Manager:**
 
-    If you have Edge Delivery Services license as part of AEM Sites, [you can now onboard your site with Edge Delivery Services directly through Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md). This feature enables a guided, self-service Go Live experience. It also unifies essential workflows like domain name management, SSL certificates, and CDN mappings across all your AEM properties, ensuring consistency and efficiency. <!-- CMGR-49859 -->
+    If you have an Edge Delivery Services license as part of AEM Sites, [you can now onboard your site with Edge Delivery Services directly through Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md). This feature enables a guided, self-service Go Live experience. It also unifies essential workflows like domain name management, SSL certificates, and CDN mappings across all your AEM properties, ensuring consistency and efficiency. <!-- CMGR-49859 -->
+
+    >[!NOTE]
+    >
+    >[Content Hub](/help/assets/product-overview.md) customers are planned to receive this feature in phases as part of a gradual roll-out.
 
 * Customers who use GitHub repositories now have the ability to create and use Web Tier Config pipelines. <!--( KEEP IN? SP: YES CMGR-59046 and Slack https://cq-dev.slack.com/archives/C07LFP5BZ2L/p1725407057847379 ) --> 
 
