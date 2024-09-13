@@ -65,7 +65,7 @@ You can quickly find assets uploaded using Content Hub on AEM as a Cloud Service
 
 ## Why do not I view the edit using Adobe Express option on my asset card to be able to remix assets to create new variations? {#edit-using-express-not-available}
 
-To view the edit using Adobe Express option on the asset card, you must have Adobe Express entitlements in addition to privileges for [Content Hub users with rights to remix assets to new variations](#onboard-content-hub-users-add-assets). Adobe Express has to be deployed in the same Adobe Admin Console in your organization where Adobe Experience Manager is deployed.
+To view the edit using Adobe Express option on the asset card, you must have Adobe Express entitlements in addition to privileges for [Content Hub users with rights to remix assets to new variations](#onboard-content-hub-users-add-assets). Adobe Express has to be deployed in the same organization in Adobe Admin console where Adobe Experience Manager is deployed.
 
 ## Can I setup Content Hub so that my organization's brand guidelines display as a link on the home page? {#content-hub-setup-brand-guidelines}
 
@@ -75,8 +75,8 @@ You can add custom links as separate tabs in addition to the standard All Assets
 
 Adobe provides migration support from Brand Portal to Content Hub that you can use by creating an Adobe support ticket.
 
-## Why cannot I see the Product Settings / Configuration option in Content Hub? {#ui-configuration-option-missing}
+## Why cannot I see the Product Settings/Configuration option in Content Hub? {#ui-configuration-option-missing}
 
-To access the [Configuration User Interface](/help/assets/configure-content-hub-ui-options.md), the user needs to be a Content Hub Administrator. If your user is assigned to the AEM Administrators product profile on the production author instance in Adobe Admin Console and you still cannot see option, please double check that the AEM Administrators product profile is not renamed. See [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md) for more details.
+To access the [Configuration User Interface](/help/assets/configure-content-hub-ui-options.md), you need to be a [Content Hub Administrator](/help/assets/deploy-content-hub.md##onboard-content-hub-administrator). If you are assigned to the AEM Administrators product profile on the production author instance in Adobe Admin Console and you still cannot see the configuration option, ensure that the AEM Administrators product profile is not renamed. See [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md) for more details.
 
 
