@@ -12,17 +12,18 @@ The Micro Front-end Collections in Asset Selector is available out of the box in
 
 >[!NOTE]
 >
->Ensure that you have permissions to access an [!DNL Experience Manager Assets] [imsOrg](asset-selector-properties.md) and Collections.
+>Ensure that you have permissions to access an [!DNL Experience Manager Assets] [imsOrg](/help/assets/asset-selector-properties.md) and Collections.
 
-The Micro Front-end Collections in Asset Selector is available out of the box in read only mode. It fetches assets and collections directly from the Experience Manager Assets repository that you have access to and inherits the properties of public and private folders from your Experience Manager Assets repository. See more about [creating a public or private collection in Assets view](manage-collections-assets-view.md#create-collection).
+The Micro Front-end Collections in Asset Selector is available out of the box in read only mode. It fetches assets and collections directly from the Experience Manager Assets repository that you have access to and inherits the properties of public and private folders from your Experience Manager Assets repository. See more about [creating a public or private collection in Assets view](/help/assets/manage-collections-assets-view.md#create-collection).
 
 You can view Collections in Asset Selector in both rail view and modal view. 
 
   ![Collections in rail view](assets/collections-rail-modal-view.png)
 
-Additionally, you can [customize](asset-selector-customization.md) the `featureSet` property to enable or disable collections in Asset Selector. See [enable or disable Collections tab](#enable-disable-collections-tab).
+<!--
+Additionally, you can [customize](/help/assets/asset-selector-customization.md) the `featureSet` property to enable or disable collections in Asset Selector. See [enable or disable Collections tab](#enable-disable-collections-tab).-->
 
-Moreover, you can also customize the selection of assets under the Collections tab. To do this, you can customize it using `handleSelection`. See [handling selection of Assets using Object Schema](asset-selector-customization.md#handling-selection).
+Moreover, you can also customize the selection of assets under the Collections tab. To do this, you can customize it using `handleSelection`. See [handling selection of Assets using Object Schema](/help/assets/asset-selector-customization.md#handling-selection).
 
 ## View collections {#view-collections}
 
@@ -41,7 +42,7 @@ On the other hand, you can also [enable or disable drag and drop of assets in th
 
 ## Disable selection of asset in Collections {#disable-selection-collection}
 
-Disable selection is used to hide or disable the assets or folders from being selectable. It hides the select checkbox from the card or asset which refrains it from getting selected. See [disable selection](asset-selector-customization.md#disable-selection).
+Disable selection is used to hide or disable the assets or folders from being selectable. It hides the select checkbox from the card or asset which refrains it from getting selected. See [disable selection](/help/assets/asset-selector-customization.md#disable-selection).
 
 ## Enable or disable Collections tab {#enable-disable-collections-tab}
 
