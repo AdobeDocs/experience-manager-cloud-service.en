@@ -1117,13 +1117,13 @@ user-guide-title: AEM as a Cloud Service
     + Edge Delivery Sites {#edge-delivery-sites}
       + [Edge Delivery Support in Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md)
     + Domain Settings {#custom-domain-names}
-      + [Introduction](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+      + [Introduction to Domain Settings](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
       + [Add a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
       + [Check Custom Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
       + [Check DNS Record Status](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
       + [Manage Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
     + SSL Certificates {#manage-ssl-certificates}
-      + [Introduction](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+      + [Introduction to SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
       + [Add an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
       + [Troubleshoot SSL Certificate Errors](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
       + [Manage SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
@@ -1131,7 +1131,7 @@ user-guide-title: AEM as a Cloud Service
       + [Add a CDN Configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
       + [Manage CDN Configurations](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
     + IP Allow Lists {#ip-allow-lists}
-      + [Introduction](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+      + [Introduction to IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
       + [Add an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
       + [Apply and Unapply IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
       + [Manage IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)

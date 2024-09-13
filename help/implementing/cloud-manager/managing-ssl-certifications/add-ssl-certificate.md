@@ -7,12 +7,11 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 ---
 
-# Add an SSL certificate
+# Add an SSL certificate {#add-ssl-cert}
 
 Learn how to add a customer managed SSL certificate or an Adobe generated and managed DV (Domain Validation) certificate using Cloud Manager's self-service tools.
 
 See also [Troubleshoot SSL certificate errors](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md).
-
 
 ## Add an SSL certificate {#adding-an-ssl-certificate}
 
