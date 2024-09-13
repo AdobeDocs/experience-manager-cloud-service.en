@@ -1116,7 +1116,9 @@ user-guide-title: AEM as a Cloud Service
     + [Notifications](/help/implementing/cloud-manager/notifications.md)
     + [Advanced Networking](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
     + Edge Delivery Sites {#edge-delivery-sites}
-      + [Edge Delivery Support in Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md)
+      + [Introduction to Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
+      + [Add an Edge Delivery Site to Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
+      + [Manage Edge Delivery Sites in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
     + Domain Settings {#custom-domain-names}
       + [Introduction to Domain Settings](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
       + [Add a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
@@ -1124,7 +1126,7 @@ user-guide-title: AEM as a Cloud Service
       + [Check DNS Record Status](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
       + [Manage Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
     + SSL Certificates {#manage-ssl-certificates}
-      + [Introduction to SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+      + [Introduction to SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
       + [Add an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
       + [Troubleshoot SSL Certificate Errors](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
       + [Manage SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
