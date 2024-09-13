@@ -28,12 +28,10 @@ Customers looking to publish to the Edge Delivery Services tier can take advanta
 
 To prepare for content delivery using AEM's built-in CDN through Cloud Manager's self-service UI, you can take advantage of Adobe's managed CDN features. This functionality lets you handle self-service CDN management, including configuring and installing SSL certificates such as DV (Domain Validation) or EV/OV (Extended/Organization Validation) certificates. For more details on these methods, see the following:
 
+* [Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
 * [Introduction to custom domain names](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
-* [Introduction to SSL certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
-* [Add a CDN Configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) 
-
-* [Edge Delivery Services Support in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
-
+* [Introduction to SSL certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
+* [Add a CDN Configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
 
 **Restricting traffic**
 
