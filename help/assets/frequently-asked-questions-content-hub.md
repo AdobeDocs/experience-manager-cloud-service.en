@@ -16,7 +16,9 @@ Content Hub enables broader teams to easily discover relevant, approved assets t
 
 Content Hub is at this point is only available on AEM Cloud Manager Production programs, which include an Assets license. When you click [Content Hub](/help/assets/deploy-content-hub.md#enable-content-hub) to enable it, it is deployed and associated with the author production environment of AEM in that program. See [Deploy Content Hub](/help/assets/deploy-content-hub.md) for details and prerequisites.
 
-Content Hub is not available for other program types, such as Sandbox programs, nor for non-production environments (stage, dev, and so on).
+There is an early access program to Content Hub on Sandbox programs / author production environments. For more information, see [Introduction to Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). To learn more about the early access program, please reach out to your Adobe account team. 
+
+Content Hub is not available for non-production environments (stage, dev, and so on) at this stage.
 
 ## I enabled Content Hub on my production program/environment, can I disable it? {#can-i-disable-content-hub}
 
@@ -37,9 +39,11 @@ It is possible to evaluate Content Hub without impacting your users/production c
 * Admin Console administrator adds [a few selected users](/help/assets/deploy-content-hub.md#onboard-content-hub-users) to the Content Hub product profile, so that they can start evaluation.
 * After the evaluation is completed, AEM Users in author instance can remove approval from test assets, approve production assets for Content Hub, and then Admin Console administrator can add all users who need access to Content Hub and approved content. Congratulations, your Content Hub is live now.
 
+Adobe also offers an early access program to Content Hub on Stage environments - please see the question [Why cannot I enable Content Hub on my Cloud Manager program/environment?](#cannot-enable-content-hub) for details.
+
 ## Why do not I see any assets after logging on to Content Hub? {#no-assets-in-content-hub}
 
-The assets marked as approved in Assets as a Cloud Service are automatically available in Content Hub. If you cannot view any assets after logging on to Content Hub, approve assets using the AEM as a Cloud Service author environment to make them available in Content Hub. For more information, see [Approve assets for Content Hub](/help/assets/approve-assets-content-hub.md).
+The assets marked as approved in Assets as a Cloud Service are automatically available in Content Hub. If you cannot see any assets after logging on to Content Hub, approve assets using the AEM as a Cloud Service author environment to make them available in Content Hub. For more information, see [Approve assets for Content Hub](/help/assets/approve-assets-content-hub.md).
 
 ## Why do not I see my assets that I either upload directly using Content Hub or import them from Dropbox or OneDrive accounts using Content Hub? {#no-assets-uploaded-from-content-hub}
 
@@ -61,16 +65,18 @@ You can quickly find assets uploaded using Content Hub on AEM as a Cloud Service
 
 ## Why do not I view the edit using Adobe Express option on my asset card to be able to remix assets to create new variations? {#edit-using-express-not-available}
 
-To view the edit using Adobe Express option on the asset card, you must have Adobe Express entitlements in addition to privileges for [Content Hub users with rights to remix assets to new variations](#onboard-content-hub-users-add-assets).
+To view the edit using Adobe Express option on the asset card, you must have Adobe Express entitlements in addition to privileges for [Content Hub users with rights to remix assets to new variations](#onboard-content-hub-users-add-assets). Adobe Express has to be deployed in the same Adobe Admin Console in your organization where Adobe Experience Manager is deployed.
 
 ## Can I setup Content Hub so that my organization's brand guidelines display as a link on the home page? {#content-hub-setup-brand-guidelines}
 
-You can add custom links as separate tabs in addition to the standard All Assets, Collections, and Insights tabs on the Content Hub home page. For information on how to set it up, see [Custom Links](/help/assets/configure-content-hub-ui-options.md#configure-custom-links-content-hub).
+You can add custom links as separate tabs in addition to the standard All Assets, Collections, and Insights tabs on the Content Hub home page. For information on how to set it up, see [Custom Links](/help/assets/configure-content-hub-ui-options.md#configure-custom-links-content-hub). 
 
 ## Is there any plan on migrating existing Brand Portal customers to Content Hub? {#migration-brand-portal}
 
 Adobe provides migration support from Brand Portal to Content Hub that you can use by creating an Adobe support ticket.
 
+## Why cannot I see the Product Settings / Configuration option in Content Hub? {#ui-configuration-option-missing}
 
+To access the [Configuration User Interface](/help/assets/configure-content-hub-ui-options.md), the user needs to be a Content Hub Administrator. If your user is assigned to the AEM Administrators product profile on the production author instance in Adobe Admin Console and you still cannot see option, please double check that the AEM Administrators product profile is not renamed. See [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md) for more details.
 
 
