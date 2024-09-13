@@ -59,6 +59,12 @@ Leverage GenAI through AEM's new feature, [generate variations](/help/generative
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
+### Early access feature in Dynamic Media {#dm-early-access}
+
+**AI-based video captions** 
+
+AI-based video captions in Adobe Dynamic Media use artificial intelligence to generate captions automatically for video content. This feature is designed to improve accessibility and enhance the user experience by providing accurate, real-time captions. The AI analyzes the video's audio track to transcribe speech and create captions, which can be edited for accuracy or customization. These captions help meet accessibility requirements and improve video engagement for audiences who rely on or prefer text-based video support.
+
 ### New features in Assets view {#assets-view-new-features}
 
 **Updated Adobe Firefly Image Generation**
@@ -74,11 +80,11 @@ Assets as a Cloud Service now supports Photoshop large documents (PSB files) in 
 ### New enhancements in Content Hub {#content-hub-new-enhancements}
 
 * Better handling of long filenames, easy expansion of complete name via tooltip.
-* Improved thumbnails to better fit content aspect ratio and cover larger area of content.
+* Improved thumbnails to better fit content aspect ratio and cover a larger area of content.
 * Custom thumbnail experience from AEM supported with content hub.
-* Improvements in colour search.
+* Improvements in color search.
 * Improvements in configurations save experience.
-* Improved info page of collections to reflect creator name.
+* Improved info page of collections to reflect the creator name.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -87,7 +93,7 @@ Assets as a Cloud Service now supports Photoshop large documents (PSB files) in 
 
 #### Auto-save a draft for Core Components based Adaptive Forms
 
-Users can now benefit from an auto-save feature that saves a partially completed form as a draft automatically. They can return later to finish filling it out on the same or other device. This feature improves conversion rates for organziations by reducing form abandonment, as users do not need to start over form filling from the beginning.
+Users can now benefit from an auto-save feature that saves a partially completed form as a draft automatically. They can return later to finish filling it out on the same or other device. This feature improves conversion rates for organizations by reducing form abandonment, as users do not need to start over form filling from the beginning.
 
  
 ### Early Access features in AEM Forms {#forms-new-early-access-features}
@@ -106,17 +112,17 @@ The Generative AI capabilities on offer are:
 
 * **AI Assistant for Product Queries**: Get instant answers to your AEM form-related questions. The AI assistant acts as your own personal knowledge base, providing insightful guidance and recommendations directly within the platform.
 
-* **Adaptive Form Generation**: Effortlessly create full-fledged forms with Generative AI Prompts. Our Generative AI automatically generates user-friendly forms that reduce drop-offs and personalize the experience.
+* **Adaptive Form Generation**: Effortlessly create full-fledged forms with generative AI prompts. Adobe's generative AI automatically generates user-friendly forms that reduce drop-offs and personalize the experience.
 
 * **Panel Generation for Forms**: Generate form sections tailored to specific data collection needs. For example, generate sections for collecting payment information, customer preferences, or travel details.
 
-* **Changing Form Layouts**: Experiment with different layouts and designs using Generative AI Prompts. Try out different layouts like wizard or tabbed views to find the perfect fit for your form. Use Generative AI Prompts to optimize your forms for mobile responsiveness and create visually engaging forms that users love.
+* **Changing Form Layouts**: Experiment with different layouts and designs using generative AI prompts. Try out different layouts like wizard or tabbed views to find the perfect fit for your form. Use generative AI prompts to optimize your forms for mobile responsiveness and create visually engaging forms that users love.
 
-* **Configure Submit Action**: Use Generative AI prompts to effortlessly configure a submit action for your form. Choose from a library of pre-built submit actions or from a list of custom submit actions, created and deployed by your own development team.
+* **Configure Submit Action**: Use generative AI prompts to configure a submit action effortlessly for your form. Choose from a library of pre-built submit actions or custom submit actions created and deployed by your development team.
 
 >[!IMPORTANT] 
 >
-> If you are interested in joining the Early Access Program for any innovation, simply send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) with the list of capabilities you are interested in.
+> Interested in joining the Early Access Program for any Forms innovation? Send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) with the list of capabilities that you are interested in.
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
