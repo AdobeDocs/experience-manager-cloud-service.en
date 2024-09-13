@@ -34,11 +34,11 @@ For Adobe managed CDNs, when using DV certificates, only sites with ACME validat
    | Sites | Select an Edge Delivery site. |
    | Environment | Select a specific Cloud Service environment that you want to target within your AEM setup.<br>In the **Tier** drop-down list, select one of the following:<br>&bull; Select **Publish** to target a live, production environment where content is delivered to end users.<br>&bull; Select **Preview** for staging or non-production environments where you test changes before they go live. |
 
-1. Select your CDN type by choosing one of the following:
+1. Select your CDN type and associated configuration by selecting one of the following:
 
-   | CDN type | Description |
+   | CDN type | Configuration details |
    | --- | --- |
-   | Adobe managed CDN | a. In the **Domain** drop-down list, select the domain name that you want to use.<br>No verified domains available in the drop-down list? See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).<br>b. In the SSL Certificate drop-down list, select a certificate that you want to use.<br>No SSL certificates available in the drop-down list? See [Add an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
-   | Other CDN provider. | Select this option if you are using your own CDN provider and not the Adobe managed CDN that is available to you.<br>In the **Domain** drop-down list, select the domain name that you want to use.<br>No available SSL certificates in the drop-down list? See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
+   | Adobe managed CDN | Under **Configuration details**, do the following:<br>a. In the **Domain** drop-down list, select the domain name that you want to use.<br>No verified domains available in the drop-down list? See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).<br>b. In the **SSL certificate** drop-down list, select a certificate that you want to use.<br>No SSL certificates available in the drop-down list? See [Add an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
+   | Other CDN provider | Select this option if you are using your own CDN provider and not the Adobe managed CDN that is available to you.<br>Under **Configuration details**, in the **Domain** drop-down list, select the domain name that you want to use.<br>No verified domains available in the drop-down list? See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 
 1. Click **Save**.
