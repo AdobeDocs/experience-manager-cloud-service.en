@@ -23,7 +23,7 @@ Cloud Manager offers self-service tools to install and manage SSL (Secure Socket
 
 | | Use case | Description |
 | --- | --- | --- |
-| 1 | **Adobe managed certificate (DV)** | Cloud Manager lets users configure a DV (Domain Validation) certificate that comes from Adobe for quick domain setup. DV certificates are the most basic level of SSL certification and are often used for testing purposes or for securing websites with basic encryption. DV certificates are available in both [production and sandbox programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md). |
+| 1 | **Adobe managed certificate (DV)** | Cloud Manager lets users configure a DV (Domain Validation) certificate that comes from Adobe for quick domain setup. DV certificates are the most basic level of SSL certification and are often used for testing purposes or for securing websites with basic encryption. DV certificates are available in both [production programs and sandbox programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md). After the DV certificate is created, Adobe renews it automatically every three months, unless it is deleted. |
 | 2 | **Customer managed certificate (OV/EV)** | Cloud Manager uses a platform TLS (Transport Layer Security) service to manage customer-owned SSL certificates and private keys from third-party Certificate Authorities, such as *Let's Encrypt*. | 
 
   >[!NOTE]
@@ -35,7 +35,7 @@ Cloud Manager offers self-service tools to install and manage SSL (Secure Socket
 
 Businesses and organizations use SSL certificates to secure their websites and allow their customers to place trust in them. To use the SSL protocol, a web server requires the use of an SSL certificate. 
 
-When an entity, such as an organization or business, requests a certificate from a CA (Certificate Authority), the CA completes a verification process. This process can range from verifying domain name control to collecting company registration documents and subscriber agreements. After an entity's information is verified, the CA signs their public key using the CA's private key. Because all major Certificate Authorities have root certificates in web browsers, the entity's certificate is linked through a *chain of trust*, and the web browser recognizes it as a trusted certificate.
+When an entity, such as an organization or business, requests a certificate from a Certificate Authority (CA), the CA completes a verification process. This process can range from verifying domain name control to collecting company registration documents and subscriber agreements. After an entity's information is verified, the CA signs their public key using the CA's private key. Because all major Certificate Authorities have root certificates in web browsers, the entity's certificate is linked through a *chain of trust*, and the web browser recognizes it as a trusted certificate.
 
 >[!IMPORTANT]
 >
