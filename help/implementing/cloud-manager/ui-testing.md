@@ -206,6 +206,10 @@ This section describes the conventions that the Docker image containing your UI 
 
 The following environment variables are passed to your Docker image at run time, depending on your framework.
 
+>[!NOTE]
+>
+> These values will be set automatically - there is no need to set them manually.
+
 | Variable                   | Examples                         | Description                                                                                       | Testing Framework   |
 |----------------------------|----------------------------------|---------------------------------------------------------------------------------------------------|---------------------|
 | `SELENIUM_BASE_URL`        | `http://my-ip:4444`              | The URL of the Selenium server                                                                    | Selenium only       |
@@ -213,9 +217,9 @@ The following environment variables are passed to your Docker image at run time,
 | `AEM_AUTHOR_URL`           | `http://my-ip:4502/context-path` | The URL of the AEM author instance                                                                | All                 |
 | `AEM_AUTHOR_USERNAME`      | `admin`                          | The user name to log in to the AEM author instance                                                | All                 |
 | `AEM_AUTHOR_PASSWORD`      | `admin`                          | The password to log in to the AEM author instance                                                 | All                 |
-| `AEM_PUBLISH_URL`          | `http://my-ip:4503/context-path` | The URL of the AEM publish instance                                                               | All                 |
-| `AEM_PUBLISH_USERNAME`     | `admin`                          | The user name to log in to the AEM publish instance                                               | All                 |
-| `AEM_PUBLISH_PASSWORD`     | `admin`                          | The password to log in to the AEM publish instance                                               | All                 |
+| `AEM_PUBLISH_URL`          | `http://my-ip:4503/context-path` | The URL of the AEM publish instance                                                               | All *               |
+| `AEM_PUBLISH_USERNAME`     | `admin`                          | The user name to log in to the AEM publish instance                                               | All *               |
+| `AEM_PUBLISH_PASSWORD`     | `admin`                          | The password to log in to the AEM publish instance                                               | All *               |
 | `REPORTS_PATH`             | `/usr/src/app/reports`           | The path where the XML report of the test results must be saved                                   | All                 |
 | `UPLOAD_URL`               | `http://upload-host:9090/upload` | The URL where to which the file must be uploaded to make them accessible to the testing framework | All                 |
 | `PROXY_HOST`               | `proxy-host`                     | The hostname of the internal HTTP Proxy to be used by the testing framework                               | All except Selenium |
@@ -225,6 +229,8 @@ The following environment variables are passed to your Docker image at run time,
 | `PROXY_OBSERVABILITY_PORT` | `8081`                           | The HTTP healthcheck port of the proxy server                                                         | All except Selenium |
 | `PROXY_RETRY_ATTEMPTS`     | `12`                             | Suggested number of retry attempts while waiting for proxy server readiness                       | All except Selenium |
 | `PROXY_RETRY_DELAY`        | `5`                              | Suggested delay between retry attempts while waiting for proxy server readiness                   | All except Selenium |
+
+`* these values will be empty if there is no publish instance`
 
 The Adobe test samples provide helper functions to access the configuration parameters:
 
