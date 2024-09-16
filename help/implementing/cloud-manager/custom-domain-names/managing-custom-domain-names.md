@@ -35,7 +35,7 @@ You can follow [the same steps to view and update a custom domain name](#view-an
 
 >[!NOTE]
 >
->The SSL certificate must be valid, [already configured](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md), and contain the custom domain name you are updating.
+>The SSL certificate must be valid, [already configured](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md), and contain the custom domain name you are updating.
 
 ## Delete a custom domain name {#deleting}
 
