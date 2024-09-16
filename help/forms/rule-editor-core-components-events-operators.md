@@ -304,6 +304,32 @@ A typical Validate rule is structured as follows:
 
 ![Script-validation](assets/script-validation.png)
 
+#### [!UICONTROL Navigate in Panel]
+
+The **[!UICONTROL Navigate in Panel]** rule type allows you to shift focus among different panels in a form. For example, you can create an expression to move focus to the next panel. 
+
+A typical Navigate in Panel rule for shifting focus to the next panel is structured as follows:
+
+`Navigate in Panel`
+
+`Focus on Next Item Object A;`
+
+`When:`
+
+`(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
+
+Similarly you can write Navigate in Panel rule for shifting focus to the previous panel:
+
+`Navigate in Panel`
+
+`Focus on Previous Item Object A;`
+
+`When:`
+
+`(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
+
+For more details on how to create a rule to navigate in a panel, [click here](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons).
+
 <!--
 ### [!UICONTROL Set Options Of] {#setoptionsof}
 
