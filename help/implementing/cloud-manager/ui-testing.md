@@ -208,7 +208,7 @@ The following environment variables are passed to your Docker image at run time,
 
 >[!NOTE]
 >
-> These values will be set automatically - there is no need to set them manually.
+> These values will be set automatically during pipeline execution - there is no need to set them manually as pipeline variables.
 
 | Variable                   | Examples                         | Description                                                                                       | Testing Framework   |
 |----------------------------|----------------------------------|---------------------------------------------------------------------------------------------------|---------------------|
