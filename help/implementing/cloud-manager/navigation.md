@@ -1,5 +1,5 @@
 ---
-title: Navigating the Cloud Manager UI
+title: Navigate the Cloud Manager UI
 description: Learn how the Cloud Manager UI is organized and how to navigate to manage your programs and environments.
 exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
@@ -7,14 +7,14 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 ---
 
-# Navigating the Cloud Manger UI {#navigation}
+# Navigate the Cloud Manger UI {#navigation}
 
 Learn how the Cloud Manager UI is organized and how to navigate to manage your programs and environments.
 
 The Cloud manage UI is primarily composed of two graphical interfaces:
 
-* [The My Programs console](#my-programs-console) where you can view and manage all of your programs.
-* [The Program Overview window](#program-overview) where you can see the detail of and manage an individual program.
+* [The My Programs console](#my-programs-console) is where you can view and manage all of your programs.
+* [The Program Overview window](#program-overview) is where you can see the detail of and manage an individual program.
 
 >[!TIP]
 >
@@ -35,7 +35,7 @@ The My Programs console provides an overview of all programs to which you have a
    * Note that the tabs default to closed and can be revealed using the hamburger menu in the [Cloud Manager header](#cloud-manager-header).
 1. [Statistics and call-to-action](#statistics) for an overview of your recent activity
 1. [**My Programs** section](#my-programs-section) with an overview of all your programs
-1. [Quick links](#quick-links-section) to easily access related resources
+1. [Quick links](#quick-links-section) to access related resources easily.
 
 >[!TIP]
 >
@@ -45,22 +45,22 @@ The My Programs console provides an overview of all programs to which you have a
 
 There are two toolbars on top of each other. 
 
-#### Cloud Manager Header {#cloud-manager-header}
+#### Cloud Manager header {#cloud-manager-header}
 
 The first is the Cloud Manager header, which is persistent as you navigate Cloud Manager. It is an anchor that gives you access to settings and information that apply across Cloud Manager programs.
 
 ![The Experience Cloud header](assets/experience-cloud-header.png)
 
-1. The hamburger menu giving access to tabs that can take you to specific parts of a in individual program or switch between the [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md) and the **[My Programs](#my-programs-console)** console depending on context.
-1. The Cloud Manager button will take you back to the My Programs console of Cloud Manager no matter where you are in Cloud Manager.
+1. The hamburger menu giving access to tabs that can take you to specific parts of an individual program. Or, you can switch between the [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md) and the **[My Programs](#my-programs-console)** console depending on the context.
+1. The Cloud Manager button takes you back to the My Programs console of Cloud Manager no matter where you are in Cloud Manager.
 1. Tap or click the Feedback button to provide feedback to Adobe about Cloud Manager.
-1. The organization selector displays the organization you are currently signed into (in this example, Foundation Internal). Tap or click to switch to another organization if your Adobe ID is associated with multiple.
+1. The organization selector displays the organization that you are currently signed into (in this example, Foundation Internal). Tap or click to switch to another organization if your Adobe ID is associated with multiple.
 1. Tapping or clicking the solutions switcher lets you quickly jump to other Experience Cloud solutions.
 1. The help icon provides quick access to learning and support resources.
 1. The notifications icon is badged with the number of currently assigned incomplete [notifications](/help/implementing/cloud-manager/notifications.md).
 1. Select the icon representing your user to access your user settings. If you do not have a user picture configured, an icon is randomly assigned.
 
-#### Program Toolbar {#program-toolbar}
+#### Program toolbar {#program-toolbar}
 
 The program toolbar provides links to switch between Cloud Manager programs and actions appropriate to the context.
 
@@ -70,7 +70,7 @@ The program toolbar provides links to switch between Cloud Manager programs and 
 1. The getting started link gives you access to the [onboarding documentation journey](/help/journey-onboarding/overview.md) to get you up-and-running with Cloud Manager.
 1. The action button offers context-appropriate actions such as creating a new program.
 
-### Statistics and Call-to-Actions {#statistics}
+### Statistics and call-to-actions {#statistics}
 
 The statistics and call-to-action section provides aggregate data for your organization, for example, if you have successfully set up your programs, statistics of your activities over the past 90 days might show, including:
 
@@ -80,7 +80,7 @@ The statistics and call-to-action section provides aggregate data for your organ
 
 Or if you are just beginning the setup of your org, there might be tips on next steps or documentation resources.
 
-### My Programs Section {#my-programs-section}
+### My Programs section {#my-programs-section}
 
 The main content of the **My Programs** console is the list of programs in the **My Programs** section.
 
@@ -88,9 +88,10 @@ The **My Programs** section lists cards representing each program. Tap or click 
 
 >[!NOTE]
 >
->Depending on your privileges you may not be able to select certain programs.
+>Depending on your privileges, you may not be able to select certain programs.
 
-Use the sorting options to better find the program you need.
+
+To find the program you need more easily, use the sorting options.
 
 ![Sorting options](/help/implementing/cloud-manager/assets/my-programs-sorting.png)
 
@@ -102,9 +103,9 @@ Use the sorting options to better find the program you need.
 * Grid View (default)
 * List View
 
-#### Program Cards {#program-cards}
+#### Program cards {#program-cards}
 
-Every program is represented by a card (or row in a table), providing an overview of the program and quick links to take action.
+A card (or row in a table) represents every program, providing an overview of the program and quick links to take action.
 
 ![Program card](assets/program-card.png)
 
@@ -138,7 +139,7 @@ The information icon also gives quick access to additional information about the
 
 ![Information](assets/information-list-view.png)
 
-The ellipsis icon gives you access additional actions you can take on the program.
+The ellipsis icon gives you access to additional actions you can take on the program.
 
 ![Ellipsis button for programs](assets/program-ellipsis.png)
 
@@ -152,22 +153,23 @@ The ellipsis icon gives you access additional actions you can take on the progra
 >For more information about programs and creating and managing programs, please see the following documents.
 >
 >* [Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
->* [Creating Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
->* [Creating Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+>* [Create production programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+>* [Create sandbox programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
 
-### Quick Links Section {#quick-links-section}
 
-The quick links section give you access to commonly-used, related resources.
+### Quick links section {#quick-links-section}
 
-## Program Overview Window {#program-overview}
+The quick links section gives you access to commonly used resources that are related.
 
-Once you select a program in the **[My Programs](#my-programs-console)** console, you are taken to the **Program Overview** window.
+## Program overview window {#program-overview}
+
+When a program is selected in the **[My Programs](#my-programs-console)** console, you are taken to the **Program Overview** window.
 
 ![Program overview](assets/program-overview.png)
 
 The program overview gives you access to all details of a Cloud Manager program. Like the **My Programs** console, it is made of several parts.
 
-1. [Toolbars](#program-overview-toolbar) to quickly jump back to the My Programs console as well as navigate the program
+1. [Toolbars](#program-overview-toolbar) to jump back to the My Programs console quickly, and to navigate the program
 1. [Tabs](#program-tabs) to switch between different aspects of the program
 1. A [call-to-action](#cta) based on the last actions of the program
 1. An [overview of the environments](#environments) of the program
@@ -177,9 +179,9 @@ The program overview gives you access to all details of a Cloud Manager program.
 
 ### Toolbars {#program-overview-toolbar}
 
-The toolbars for the program overview are similar to those of the [My Programs console](#my-programs-toolbars). Only the differences are illustrated here.
+The toolbars for the program overview are similar to those toolbars of the [My Programs console](#my-programs-toolbars). Only the differences are illustrated here.
 
-#### Cloud Manager Header {#cloud-manager-header-2}
+#### Cloud Manager header {#cloud-manager-header-2}
 
 The Cloud Manager header has a hamburger menu that automatically opens to show the navigable tabs of the program overview.
 
@@ -187,39 +189,49 @@ The Cloud Manager header has a hamburger menu that automatically opens to show t
 
 Tap or click the hamburger menu icon to hide the tabs.
 
-#### Program Toolbar {#program-toolbar-2}
+#### Program toolbar {#program-toolbar-2}
 
-The program toolbar still gives you access to quickly switch to other programs, but additionally gives access to context-appropriate actions such as adding and editing the program.
+The program toolbar still gives you access to switch to other programs quickly, but additionally gives access to context-appropriate actions such as adding and editing the program.
 
 ![Program toolbar](assets/cloud-manager-program-toolbar.png)
 
-Additionally, the toolbar always provides which tab you are on if you have chosen to hidden the tabs using the hamburger menu.
+The toolbar always shows the tab that you currently are on, even if you have hidden the tabs using the hamburger menu.
 
-### Program Tabs {#program-tabs}
+### Program tabs {#program-tabs}
 
-Each program has a lot of options and data associated with it. These data are gathered into tabs to make navigating the program simpler. The tabs give you access to:
+Each program has numerous options and data associated with it. These options and data are gathered into tabs to make navigating the program simpler. The tabs give you access to:
+
+**Program**
 
 * Overview - The program overview as described in the current document
 * [Activity](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity) - The history of pipeline runs of the program
 * [Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines) - All pipelines configured for the program
 * [Repositories](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - All repositories configured for the program
 * [Reports](/help/implementing/cloud-manager/sla-reporting.md) - Metrics such as SLA data
+
+**Services**
+
 * [Environments](/help/implementing/cloud-manager/manage-environments.md) - All environments configured for the program
+* [Edge Delivery Sites](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) - Manage Edge Delivery sites
 * [Domain Settings](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - Manage custom domain names for the program
-* [SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) - Manage SSL certificates for the program
+* [SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) - Manage SSL certificates for the program
+* [CDN Configurations](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - Manage CDN configurations 
 * [IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - Define allow lists for certain IP addresses
 * [Content Sets](/help/implementing/developing/tools/content-copy.md) - Sets of content created for copy purposes
 * [Copy Content Activity](/help/implementing/developing/tools/content-copy.md) - Content copy activities
 * [Network Infrastructures](/help/security/configuring-advanced-networking.md) - Manage advanced networking options for the program
+
+**Resources**
+
 * Learning Paths - Additional learning resources about Cloud Manager
 
 By default, when you open a program you arrive on the **Overview** tab. The current tab is highlighted. Select another tab to show its details.
 
 Use the hamburger menu in the [Cloud Manager header](#cloud-manager-header-2) to hide the tabs.
 
-### Call-to-Action {#cta}
+### Call-to-sction {#cta}
 
-The call-to-action section will give you helpful information depending on the status of your program. For a new program you may see next steps offered as well as a reminder of a go-live date, [set during program creation](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
+The call-to-action section gives you helpful information depending on the status of your program. For a new program, you may see next steps given and a reminder of a go-live date, [set during program creation](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
 
 ![Call-to-action for a new program](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
 
