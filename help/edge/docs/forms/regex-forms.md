@@ -1,6 +1,6 @@
 ---
-title: AEM Forms Edge Delivery Servicescommonly used regex expressions for validating form fields
-description: AEM Forms Edge Delivery Servicescommonly used regex expressions for validating form fields
+title: Edge Delivery Services for AEM Forms commonly used regex expressions for validating form fields
+description: Edge Delivery Services for AEM Forms commonly used regex expressions for validating form fields
 feature: Edge Delivery Services
 role: User
 hide: yes
