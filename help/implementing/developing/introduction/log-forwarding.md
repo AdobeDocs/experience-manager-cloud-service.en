@@ -174,9 +174,10 @@ AEM logs (including Apache/Dispatcher) appear below a folder with the following 
 
 * aemaccess
 * aemerror
+* aemrequest
 * aemdispatcher 
-* httpdaccess
-* httpderror
+* aemhttpdaccess
+* aemhttpderror
 
 Under each folder, a single file will be created and appended to. Customers are responsible for processing and managing this file so it does not grow too large.
 
@@ -206,6 +207,9 @@ Considerations:
 
 * Create an API Key, without any integration with a specific cloud provider.
 * the tags property is optional
+* For AEM logs, the Datadog source tag is set to one of `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess`, or `aemhttpderror`
+* For CDN logs, the Datadog source tag is set to `aemcdn`
+* the Datadog service tag is set to `adobeaemcloud`, but you can overwrite it in the tags section
    
 
 ### Elasticsearch and OpenSearch {#elastic}
@@ -228,10 +232,12 @@ Considerations:
 
 Considerations:
 
+* by default, the port is 443. It can optionally be overridden with a property named `port`
 * For credentials, make sure to use use deployment credentials, rather than account credentials. These are the credentials that are generated in a screen that may resemble this image:
 
 ![Elastic deployment credentials](/help/implementing/developing/introduction/assets/ec-creds.png)
 
+* For AEM logs, `index` is set to one of `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess`, or `aemhttpderror`
 * The optional pipeline property should be set to the name of the Elasticsearch or OpenSearch ingest pipeline, which can be configured to route the log entry to the appropriate index. The pipeline's Processor type must be set to *script* and the script language should be set to *painless*. Here is a sample script snippet to route log entries into an index such as aemaccess_dev_26_06_2024:
 
 ```
@@ -253,7 +259,7 @@ ctx._index = sourceType + "_" + envType + "_" + date;
      https:
        default:
          enabled: true
-         url: "https://example.com:8443/aem_logs/aem"
+         url: "https://example.com/aem_logs/aem"
          authHeaderName: "X-AEMaaCS-Log-Forwarding-Token"
          authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
    
@@ -261,8 +267,8 @@ ctx._index = sourceType + "_" + envType + "_" + date;
 
 Considerations:
 
-* The url string must include **https://** or validation will fail. If no port is included in the url string, port 443 (the default HTTPS port) is assumed.
-* If you would like to use a port different than 443, please provide it as part of the URL.
+* The url string must include **https://** or validation will fail.
+* The url may include a port. For example, `https://example.com:8443/aem_logs/aem`. If no port is included in the url string, port 443 (the default HTTPS port) is assumed.
 
 #### HTTPS CDN logs {#https-cdn}
 
@@ -278,13 +284,14 @@ There is also be a property named `sourcetype`, which is set to the value `aemcd
 
 For AEM logs (including apache/dispacher), web requests (POSTs) will be sent continuously, with a json payload that is an array of log entries, with the various log entry formats as described under [Logging for AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md). Additional properties are mentioned in the [Log Entry Formats](#log-format) section below.
 
-There is also be a property named `sourcetype`, which is set to one of these values:
+There is also be a property named `Source-Type`, which is set to one of these values:
 
 * aemaccess
 * aemerror
+* aemrequest
 * aemdispatcher 
-* httpdaccess
-* httpderror
+* aemhttpdaccess
+* aemhttpderror
 
 ### Splunk {#splunk}
 
@@ -299,9 +306,13 @@ There is also be a property named `sourcetype`, which is set to one of these val
          enabled: true
          host: "splunk-host.example.com"
          token: "${{SPLUNK_TOKEN}}"
-         index: "AEMaaCS"
-   
+         index: "aemaacs"
    ```
+   
+Considerations:
+
+* by default, the port is 443. It can optionally be overridden with a property named `port`.
+
 
 <!--
 ### Sumo Logic {#sumologic}
@@ -345,125 +356,26 @@ aem_tier: author
 
 ## Advanced Networking {#advanced-networking}
 
->[!NOTE]
->
->This feature is not yet ready for early adopters.
-
-
 Some organizations choose to restrict which traffic can be received by the logging destinations.
 
-For the CDN log, you can allow-list the IP addresses, as described in [fastly documentation - Public IP List](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). If that list of shared IP addresses is too large, consider sending traffic to a (non-Adobe) Azure Blob Store where logic can be written to send the logs out of a dedicated IP to their ultimate destination. 
+For the CDN log, you can allow-list the IP addresses, as described in [fastly documentation - Public IP List](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). If that list of shared IP addresses is too large, consider sending traffic to an https server or (non-Adobe) Azure Blob Store where logic can be written to send the logs out of a known IP to their ultimate destination. 
 
-For AEM logs (including Apache/Dispatcher), you can configure log forwarding to go through [advanced networking](/help/security/configuring-advanced-networking.md). See the patterns for the three advanced networking types below, which make use of an optional `port` parameter, along with the `host` parameter.
+For AEM logs (including Apache/Dispatcher), if you have configured [advanced networking](/help/security/configuring-advanced-networking.md), you can use the advancedNetworking property to forward them from a dedicated egress IP address or over a VPN.
 
-### Flexible Port Egress {#flex-port}
-
-If the log traffic is going to a port other than 443 (e.g., 8443 below), configure advanced networking like so:
-
-```
-{
-    "portForwards": [
-        {
-            "name": "splunk-host.example.com",
-            "portDest": 8443, # something other than 443
-            "portOrig": 30443
-        }    
-    ]
-}
-
-```
-
-and configure the yaml file like so:
-
-```
-
-kind: "LogForwarding"
-version: "1"
-data:
-  splunk:
-    default:
-      host: "${{AEM_PROXY_HOST}}"
-      token: "${{SomeToken}}"
-      port: 30443
-      index: "index_name"
-
-```
-
-### Dedicated Egress IP {#dedicated-egress}
-
-
-If the log traffic needs to come out of a dedicated egress IP, configure advanced networking like so:
-
-```
-{
-    "portForwards": [
-        {
-            "name": "splunk-host.example.com",
-            "portDest": 443, 
-            "portOrig": 30443
-        }    
-    ]
-}
-
-```
-
-and configure the yaml file like so:
-
-```
-      
-kind: "LogForwarding"
-version: "1"
+   ```
+   kind: "LogForwarding"
+   version: "1"
    metadata:
      envTypes: ["dev"]
-data:
-  splunk:
-     default:
-       enabled: true
-       index: "index_name" 
-       token: "${{SPLUNK_TOKEN}}"  
-     aem:
-       enabled: true
-       host: "${{AEM_PROXY_HOST}}"
-       port: 30443       
-     cdn:
-       enabled: true
-       host: "splunk-host.example.com"
-       port: 443    
+   data:
+     splunk:
+       default:
+         enabled: true
+         host: "splunk-host.example.com"
+         port: 443
+         token: "${{SPLUNK_TOKEN}}"
+         index: "aemaacs"
+       aem:
+         advancedNetworking: true
+   ```
 
-```
-
-### VPN {#vpn}
-
-If the log traffic needs to go through a VPN, configure advanced networking like so:
-
-```
-{
-    "portForwards": [
-        {
-            "name": "splunk-host.example.com",
-            "portDest": 443,
-            "portOrig": 30443
-        }    
-    ]
-}
-
-kind: "LogForwarding"
-version: "1"
-   metadata:
-     envTypes: ["dev"]
-data:
-  splunk:
-     default:
-       enabled: true
-       index: "index_name" 
-       token: "${{SPLUNK_TOKEN}}"  
-     aem:
-       enabled: true
-       host: "${{AEM_PROXY_HOST}}"
-       port: 30443       
-     cdn:
-       enabled: true
-       host: "splunk-host.example.com"
-       port: 443     
-
-```
