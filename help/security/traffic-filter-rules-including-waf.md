@@ -471,7 +471,7 @@ data:
 
 ## CVE Rules {#cve-rules}
 
-If WAF is licensed, Adobe automatically applies blocking rules to protect against known CVEs (Common Vulnerabilities and Exposures) and new CVEs are added soon after being discovered. Customers should not and need not configure CVE rules themselves.
+If WAF is licensed, Adobe automatically applies blocking rules to protect against many known CVEs (Common Vulnerabilities and Exposures) and new CVEs may be added soon after being discovered. Customers should not and need not configure CVE rules themselves.
 
 If a traffic request matches a CVE, it will appear in the corresponding CDN log entry.
 
