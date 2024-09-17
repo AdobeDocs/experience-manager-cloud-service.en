@@ -52,11 +52,11 @@ Depending on your use case, do one of the following:
 | I want to add an Edge Delivery site to Cloud Manager | See [Add an Edge Delivery site](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md). |
 | I want to add Edge Delivery Services to a new or existing sandbox program. | See [Create sandbox programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md).<br>When you create a sandbox program, Edge Delivery Services is added to the program by default; you do not need to select it.<br>Existing sandbox programs prior to the general availability of Edge Delivery, inherit Edge Delivery Services automatically. |
 
-## Adobe recommended path for contracted customers {#recommended-path-eds}
+## Adobe recommended path for licensed customers {#recommended-path-eds}
 
-As a contracted customer, ensure you maximize your benefits from Adobe by accessing and consuming your Edge Delivery Services license through Cloud Manager. This approach lets you use [Adobe managed CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) and take advantage of key benefits such as self-service CDN management, including the configuration and addition of DV certificates. Additionally, after a DV certificate is created, Adobe renews it automatically every three months, unless it is deleted. If you do not have an Edge Delivery Services license with Adobe and decide to bypass these benefits, you can only use a customer-managed CDN. This setup must be on the `aem.live` platform.
+As a licensed customer, ensure you maximize your benefits from Adobe by accessing and consuming your Edge Delivery Services license through Cloud Manager. This approach lets you use [Adobe managed CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) and take advantage of key benefits such as self-service CDN management, including the configuration and addition of DV certificates. Additionally, after a DV certificate is created, Adobe renews it automatically every three months, unless it is deleted. If you do not have an Edge Delivery Services license with Adobe and decide to bypass these benefits, you can only use a customer-managed CDN. This setup must be on the `aem.live` platform.
 
-If you are contracted with AEM as a Cloud Service Sites Edge Delivery Services licenses, log into Cloud Manager to ensure you are able to do the following:
+If you are licensed with AEM as a Cloud Service Sites Edge Delivery Services licenses, log into Cloud Manager to ensure you are able to do the following:
 
 * Consume your license on your chosen program. 
 * Take advantage of [API-first](https://developer.adobe.com/experience-cloud/experience-manager-apis/) benefits for performing CRUD (Create, Read, Update, Delete) operations.
