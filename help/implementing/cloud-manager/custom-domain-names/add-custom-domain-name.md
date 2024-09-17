@@ -15,15 +15,15 @@ Learn how to add a custom domain name using Cloud Manager.
 
 Fulfill these requirements before adding a custom domain name in Cloud Manager.
 
-* You must have added a domain SSL certificate for the domain you want to add before adding a custom domain name as described in the document [Adding an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
+* You must have added a domain SSL certificate for the domain you want to add before adding a custom domain name as described in the document [Add an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
 * You must have the **Business Owner** or **Deployment Manager** role to add a custom domain name in Cloud Manager.
-* Be using the Fastly CDN.
+* Be using the Fastly or other CDN.
 
 >[!IMPORTANT]
 >
 >Even if you use a non-Adobe CDN, you still need to add your domain to Cloud Manager.
 
-## Where to add custom domain names {#}
+## Where to add custom domain names {#where-to-add-cdn}
 
 You can add a custom domain name from two locations in Cloud Manager:
 
@@ -62,7 +62,7 @@ Do not include `http://`, `https://`, or spaces when entering in your domain.
 
    | If you selected the certificate type | Description |
    | --- | ---  |
-   | Adobe managed certificate |  Complete the [Adobe managed certificate steps](#abobe-managed-cert-steps) before continuing to the next step. |
+   | Adobe managed certificate |  Complete the [Adobe managed certificate steps](#adobe-managed-cert-steps) before continuing to the next step. |
    | Customer managed certificate | Complete the [Customer managed certificate steps](#customer-managed-cert-steps) before continuing to the next step. |
 
 1. Click **Verify**.
@@ -72,7 +72,6 @@ Do not include `http://`, `https://`, or spaces when entering in your domain.
    >[!NOTE]
    >
    >If you use a self-managed SSL certificate and a self-managed CDN provider, you can skip this step and go directly to [Add a CDN configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) when ready.
-
 
 
 ### Adobe managed certificate steps {#adobe-managed-cert-steps}
@@ -91,7 +90,7 @@ To configure these settings, determine if a `CNAME` or apex record must be confi
 >
 >For Adobe-managed CDNs, when using DV (Domain Validation) certificates, only sites with ACME validation are permitted.
 
-#### Requirements {#dv-requirements}
+#### Requirements {#adobe-managed-cert-dv-requirements}
 
 Fulfill these requirements before configuring your DNS records.
 
@@ -99,7 +98,7 @@ Fulfill these requirements before configuring your DNS records.
 * Be able to edit the DNS records for your organization's domain, or contact the appropriate person who can.
 * You must have already verified your configured custom domain name as described in the document [Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
 
-#### CNAME record {#cname-record}
+#### CNAME record {#adobe-managed-cert-cname-record}
 
 A canonical name or CNAME record is a type of DNS record that maps an alias name to a true or canonical domain name. CNAME records are typically used to map a subdomain such as `www.example.com` to the domain hosting that subdomain's content. 
 
@@ -109,7 +108,7 @@ Log in to your DNS service provider and create a `CNAME` record to point your cu
 | --- | --- |
 | `www.customdomain.com` | `cdn.adobeaemcloud.com` |
 
-#### APEX record {#apex-record}
+#### APEX record {#adobe-managed-cert-apex-record}
 
 An apex domain is a custom domain that does not contain a subdomain, such as `example.com`. An apex domain is configured with an `A`, `ALIAS`, or `ANAME` record through your DNS provider. Apex domains must point to specific IP addresses.
 
@@ -126,7 +125,6 @@ Add the following `A` records to your domain's DNS settings by way of your domai
 * `A record for domain @ pointing to IP 151.101.195.10`
 
 
-
 ### Customer managed certificate steps {#customer-managed-cert-steps}
 
 If you selected the certificate type *Customer managed certificate*, complete the following steps in the **Verify domain** dialog box.
@@ -139,7 +137,7 @@ A text record (also known as a TXT record) is a type of resource record in the D
 
 Cloud Manager uses a specific TXT record to authorize a domain to be hosted in a CDN service. Create a DNS TXT record in the zone that authorizes Cloud Manager to deploy the CDN service with the custom domain and associate it with the backend service. This association is entirely under your control and authorizes Cloud Manager to serve content from the service to a domain. This authorization may be granted and withdrawn. The TXT record is specific to the domain and the Cloud Manager environment.
 
-## Requirements {#requirements-customer-cert}
+#### Requirements {#customer-managed-cert-requirements}
 
 Fulfill these requirements before adding a TXT record.
 
@@ -147,7 +145,7 @@ Fulfill these requirements before adding a TXT record.
 * Be able to edit the DNS records for your organization's domain, or contact the appropriate person who can.
 * First, add a custom domain name as described earlier in this article.
 
-## Add a TXT record for verification {#verification}
+#### Add a TXT record for verification {#customer-managed-cert-verification}
 
 1. In the **Verify domain** dialog box, Cloud Manager displays the name and TXT value to use for verification. Copy this value.
 
@@ -164,7 +162,7 @@ Fulfill these requirements before adding a TXT record.
 
 1. Save the TXT record to your domain host.
 
-## Verify TXT record {#verify}
+#### Verify TXT record {#customer-managed-cert-verify}
 
 When you are done, you can verify the result by running the following command.
 
