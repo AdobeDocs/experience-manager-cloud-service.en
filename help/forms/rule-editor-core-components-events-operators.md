@@ -330,6 +330,22 @@ Similarly you can write Navigate in Panel rule for shifting focus to the previou
 
 For more details on how to create a rule to navigate in a panel, [click here](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons).
 
+#### [!UICONTROL Async Function call]
+
+The **[!UICONTROL Async Function call]** rule type allows you to execute asynchronous functions. It enables you to initiate a function call that operates independently of the main execution thread, allowing other processes to continue running without waiting for the asynchronous function to complete. 
+
+A typical Async Function call rule to execute asynchronous function is structured as follows:
+
+`When:`
+
+`(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
+
+`Async Function call`
+
+`[Callback Function];`
+
+For more information on how to use the Async Function call in the Visual Rule Editor, refer to the [Using asynchronous function calls in the rule editor](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons) article.
+
 <!--
 ### [!UICONTROL Set Options Of] {#setoptionsof}
 

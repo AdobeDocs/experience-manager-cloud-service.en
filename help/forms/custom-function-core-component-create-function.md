@@ -237,7 +237,7 @@ Let's dive into the features of custom functions.
 
 Asynchronous custom functions do not appear in the rule editor list. However, it is possible to invoke asynchronous functions within custom functions created using synchronous function expressions.
 
- ![Sync and async custom function](/help/forms/assets/workflow-for-sync-async-custom-fumction.png)
+![Sync and async custom function](/help/forms/assets/workflow-for-sync-async-custom-fumction.png)
 
 >[!NOTE]
 >
@@ -278,6 +278,8 @@ To see its working, let us add a button and create a rule for the button that in
 Refer to the illustration of the console window below to demonstrate that when the user clicks the `Fetch` button, the custom function `callAsyncFunction` is invoked, which in turn calls an asynchronous function `asyncFunction`. Inspect the console window to view the response to the button click:
 
  ![Console window](/help/forms/assets/async-custom-funct-console.png)
+
+You can implement asynchronous functions in the rule editor using custom functions. For guidance on how to do this, refer to the article [Using asynchronous functions in an Adaptive Form](/help/forms/Using-asynchronous-function-calls-in-rule-editor.md).
 
 
 ### Field and Global scope objects support in custom functions {#support-field-and-global-objects}
