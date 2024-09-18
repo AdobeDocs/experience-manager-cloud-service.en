@@ -624,8 +624,8 @@ user-guide-title: AEM as a Cloud Service
   + Content Hub {#content-hub}
     + [Overview](/help/assets/product-overview.md)
     + [Deploy Content Hub](/help/assets/deploy-content-hub.md)
-    + [Configure Content Hub user interface](/help/assets/configure-content-hub-ui-options.md)
     + [Upload or Import brand-approved assets to Content Hub](/help/assets/upload-brand-approved-assets.md)
+    + [Configure Content Hub user interface](/help/assets/configure-content-hub-ui-options.md)
     + [Approve assets for Content Hub](/help/assets/approve-assets-content-hub.md)
     + [Search assets in Content Hub](/help/assets/search-assets-content-hub.md)
     + [Asset properties](/help/assets/asset-properties-content-hub.md)
@@ -633,7 +633,8 @@ user-guide-title: AEM as a Cloud Service
     + [Download assets using Content Hub](/help/assets/download-assets-content-hub.md)
     + [Manage collections in Content Hub](/help/assets/collections-content-hub.md)
     + [Edit images using Adobe Express in Content Hub](/help/assets/edit-images-content-hub.md)
-    + [Asset Insights in Content Hub](/help/assets/insights-content-hub.md)    
+    + [Asset Insights in Content Hub](/help/assets/insights-content-hub.md)
+    + [Frequently asked questions for Content Hub](/help/assets/frequently-asked-questions-content-hub.md)  
   + Best practices{#best-practices}
     + [Search best practices](/help/assets/search-best-practices.md)
     + [Metadata management and best practices](/help/assets/metadata-best-practices.md)
@@ -1116,7 +1117,9 @@ user-guide-title: AEM as a Cloud Service
     + [Notifications](/help/implementing/cloud-manager/notifications.md)
     + [Advanced Networking](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
     + Edge Delivery Sites {#edge-delivery-sites}
-      + [Edge Delivery Support in Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md)
+      + [Introduction to Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
+      + [Add an Edge Delivery Site to Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
+      + [Manage Edge Delivery Sites in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
     + Domain Settings {#custom-domain-names}
       + [Introduction to Domain Settings](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
       + [Add a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
@@ -1124,7 +1127,7 @@ user-guide-title: AEM as a Cloud Service
       + [Check DNS Record Status](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
       + [Manage Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
     + SSL Certificates {#manage-ssl-certificates}
-      + [Introduction to SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+      + [Introduction to SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
       + [Add an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
       + [Troubleshoot SSL Certificate Errors](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
       + [Manage SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)

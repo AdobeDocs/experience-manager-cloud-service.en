@@ -34,7 +34,7 @@ Review this list of activities to ensure that you perform a smooth and successfu
     * Configure SSL and DNS according to the documentation of your CDN vendor.
   * If you are not using an additional CDN, manage SSL and DNS as per the following documentation:
     * Managing SSL Certificates
-      * [Introduction to managing SSL certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+      * [Introduction to SSL certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
       * [Manage SSL certificates](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
     * Managing Custom Domain Names (DNS)
       * Ensure that the DNS cutover does not introduce unexpected problems. Create a test subdomain to connect your production instance to before you go-live and do a round of UAT testing. So, if your domain is example.com, you can create a subdomain test.example.com and apply it to production. During UAT testing of the domain, look for things such as proper link redirection, caching, and Dispatcher configurations. 
