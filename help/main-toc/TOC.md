@@ -464,6 +464,7 @@ user-guide-title: AEM as a Cloud Service
       + [Asset Selector examples](/help/assets/asset-selector-examples.md)
       + [Asset Selector customizations](/help/assets/asset-selector-customization.md)
       + [Asset Selector upload](/help/assets/asset-selector-upload.md)
+      + [Asset Selector collections](/help/assets/asset-selector-collections.md)
     + [Micro-Frontend Destination Selector](/help/assets/destination-selector.md)
     + [Share assets](/help/assets/share-assets.md)
     + [Reprocessing assets](/help/assets/reprocessing.md)
