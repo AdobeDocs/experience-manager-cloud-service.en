@@ -29,7 +29,7 @@ Follow the section below to understand the important considerations for running 
 * BPA can run on any environment, but it is preferred to have it run on a *Stage* environment.
 
    >[!NOTE]
-   >To avoid an impact on business critical instances, it is recommended that you run BPA on an *Author* environment that is as close as possible to the *Production* environment in the areas of customizations, configurations, content and user applications. Alternatively, it can be run on a clone of the production *Author* environment.
+   >To avoid an impact on business critical instances, it is recommended that you run BPA on an *Stage* environment that is as close as possible to the *Production* environment in the areas of customizations, configurations, content and user applications. Alternatively, it can be run on a clone of the production *Author* environment.
 
 * The generation of BPA report contents can take a significant amount of time, from several minutes to a few hours. The amount of time required is highly dependent on the size and nature of the AEM repository content, the AEM version, and other factors.
 

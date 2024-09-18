@@ -55,19 +55,27 @@ Interested in trying out the feature and sharing feedback? Send an email to aemc
 
 **Upload assets using Asset Selector**
 
-Asset Selector now offers ability for content authors to upload final assets directly from the selector, by either dragging or by browsing from the local file system. This allows final assets to be uploaded to the DAM from the application of your choice.
+Asset Selector now offers the ability for content authors to upload final assets directly from the selector, by either dragging or by browsing from the local file system. This functionality allows final assets to be uploaded to the DAM from the application of your choice.
+
+### Early access feature in Dynamic Media {#dm-early-access}
+
+**AI-generated video captions** 
+
+AI-generated video captions in Adobe Dynamic Media use artificial intelligence to generate captions automatically for video content. This feature is designed to improve accessibility and enhance the user experience by providing accurate, real-time captions. The AI analyzes the video's audio track to transcribe speech and create captions, which can be edited for accuracy or customization. These captions help meet accessibility requirements and improve video engagement for audiences who rely on or prefer text-based video support. 
+
+To get early access to AI-generated captions support on your Dynamic Media account, [create and submit an Adobe Customer Support case](/help/assets/dynamic-media/video.md##enable-dash). 
 
 ### New features in Assets view {#assets-view-new-features}
 
 **Content credentials integration**
 
-Experience Manager Assets now supports content credentials for supported image formats. This provides information on the lineage of the asset and how it was created, including if it was modified using GenAI.
+Experience Manager Assets now supports content credentials for supported image formats. This ability provides information on the lineage of the asset and how it was created, including if it was modified using GenAI.
 
 ![Content credentials](/help/assets/assets/content-credentials.png)
 
 **Visual previews of folder contents**
 
-Experience Manager Assets now displays visual previews of folder contents on the folder thumbnail when browsing or searching for content, which improves the discoverability of assets available within AEM Assets repository.
+Experience Manager Assets now displays visual previews of folder contents on the folder thumbnail when browsing or searching for content, which improves the discoverability of assets available within the AEM Assets repository.
 
 <!--
 
@@ -88,7 +96,7 @@ When looking at the asset details, any image with content credentials added, suc
 
 #### Enhanced Visual Rule Editor for Core Component Based Adaptive Forms
 
-Adaptive form authors can use repeatable form fields in out of the box functions available in visual rule editor for core components to build complex business logic in the forms, without requiring customization or development team's assistance.
+Adaptive form authors can use repeatable form fields and out-of-the-box visual rule editor functions to create complex business logic in forms without needing customization or support from the development team.
  
 ### Early Access features in AEM Forms {#forms-new-early-access-features}
 
@@ -98,7 +106,7 @@ This release notes lists the innovations delivered in the current release. For t
 
 #### Author adaptive forms using Universal Editor
 
-Leverage the Adobe Experience Manager [Universal Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) to create adaptive forms using WYSIWYG drag-drop authoring, for both headless and headful enrollment experiences, delivered via Edge Delivery Service. Adaptive form authors can easily create and launch experiments for variations of the forms in the web pages and determine the best performing experiences for end users.
+Leverage the Adobe Experience Manager [Universal Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) to create adaptive forms using WYSIWYG drag-drop authoring, for both headless and headful enrollment experiences, delivered via Edge Delivery Service. Adaptive form authors can easily create and launch experiments for variations of the forms in the web pages. This ability lets them determine the best performing experiences for end users.
 
 >[!IMPORTANT] 
 >
@@ -108,22 +116,23 @@ Leverage the Adobe Experience Manager [Universal Editor](https://experienceleagu
 
 ### Purge Content at the CDN with a Self-Serve API Key {#purge-cdn}
 
-Setting TTL using the HTTP Cache-Control header is an effective approach to balance content delivery performance and content freshness. However, in scenarios where it is critical to immediately serve updated content, it may be beneficial to directly purge the CDN cache .
+Setting TTL using the HTTP Cache-Control header is an effective approach to balance content delivery performance and content freshness. However, in scenarios where it is critical to serve updated content immediately, it may be beneficial to purge the CDN cache directly.
 
-[Learn how](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) to self-serve configure a purge API token using the Cloud Manager configuration pipeline, so you can [invoke the purge APIs](/help/implementing/dispatcher/cdn-cache-purge.md), with any of these variations:
+[Learn how](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) to self-serve the configuration of a purge API token using the Cloud Manager configuration pipeline, so you can [invoke the purge APIs](/help/implementing/dispatcher/cdn-cache-purge.md), with any of these variations:
+
 * Single URL
 * Multiple URLs using a tag
 * Full CDN cache purge
 
 ### Self-Serve Configuration of X-AEM-Edge-Key for Customer-Managed CDN {#customermanaged-keys}
 
-Previously, a support ticket was needed to generate the X-AEM-Edge-Key required for configuration of a customer-managed CDN. This is now self-service by declaring the key value in a configuration file that is deployed using the Configuration Pipeline, removing any delay in onboarding a new environment. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
+Previously, a support ticket was needed to generate the X-AEM-Edge-Key required for configuration of a customer-managed CDN. This workflow is now self-service by declaring the key value in a configuration file that is deployed using the Configuration Pipeline, removing any delay in onboarding a new environment. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
 ### Traffic Filter Rules Alerts {#traffic-filter-rules-alerts}
 
-Traffic Filter Rules, which include the optionally licensable Web Application Firewall (WAF) rules, lets you configure what traffic should be blocked. 
+Traffic filter rules, which include the optionally licensable Web Application Firewall (WAF) rules, lets you configure what traffic should be blocked. 
 
-Now you can [subscribe to alerts](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts) whenever your traffic filter rules are triggered. Actions Center email notifications keep you informed when certain traffic conditions occur so you can take appropriate measures. 
+Now, you can [subscribe to alerts](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts) whenever your traffic filter rules are triggered. Actions Center email notifications keep you informed when certain traffic conditions occur so you can take appropriate measures. 
 
 ### Content Delivery-related Early Adopter Programs {#foundation-early-adopter}
 
