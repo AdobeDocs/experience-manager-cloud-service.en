@@ -43,7 +43,7 @@ To access configuration options on Content Hub:
 
 ## Manage configuration options on Content Hub {#manage-configuration-options}
 
-Manage the following configuration options for your users:
+As an administrator, manage the following configuration options for your users:
 
 * [Import](#configure-import-options-content-hub)
 
