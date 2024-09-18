@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 
 # Add an Edge Delivery site to Cloud Manager {#adding}
 
-You can add an Edge Delivery site to your production program or sandbox program.
+After you add an Edge Delivery site to your production program, your Edge Delivery Services license is applied to it.
 
 Adding an Edge Delivery site to Cloud Manager is required to [register a support ticket for your Edge Delivery project](/help/edge/overview.md##support-ticket).
 
@@ -29,22 +29,21 @@ See also [Introduction to Edge Delivery Services in Cloud Manager](/help/impleme
 
 1. In the **Add Edge Delivery site** dialog box, provide the following information in the required fields:
 
-    | Text field | Data to provide |
-    | --- | --- |
-    | Site Name | Enter the name of the Edge Delivery site that you are adding. The name serves as a unique identifier for the site within Cloud Manager. |
-    | Repository URL | This field refers to the Git repository where your website's code is stored. This field allows Cloud Manager to pull the code from that repository during the deployment process.  |
-    | Site description (optional) | Enter a brief description of the Edge Delivery site that you are adding. This description helps to identify and differentiate the site, making it easier to manage and recognize among other sites you have added. |
+    | Text field | Description |
+    | - | --- |
+    | Site Name | Enter the name of the Edge Delivery site that you are adding.<br>The name serves as a unique identifier for the site within Cloud Manager. |
+    | Repository URL | Enter the Git repository where your website's code is stored.<br>This field allows Cloud Manager to pull the code from that repository during the deployment process.  |
+    | Site description (optional) | Enter a brief description of the Edge Delivery site that you are adding.<br>A description helps to identify and differentiate the site, making it easier to manage and recognize among other sites you have added. |
 
 1. In the lower-right corner of the dialog box, click **Add**.
 
-1. The **Verify repository ownership** dialog box opens. With it open, perform the following steps:
+1. In the **Verify repository ownership** dialog box, verify the ownership of your repository by doing the following steps:
 
-   1. Add a file with the path and name `well-known/adobe/cloudmanager-challenge.txt` to the `main` branch of the Git repository that is listed in the **Repository URL** field.
-      * If necessary, click the **Copy** icon to copy the path to the clipboard.
-      * Do *not* add a period at the start of the location path.
-   1. Add the code from the **Step &num; 1** field to the file that you created in the previous step.
-      * If necessary, click the **Copy** icon to copy the code to the clipboard.
-   1. In the Git repository, create a pull request for the changes you just created and then merge it to `main`.
+    | Step number | Description |
+    | - | - |
+    | **1** | Add a file with the path and name `well-known/adobe/cloudmanager-challenge.txt` to the `main` branch of the Git repository that is listed in the **Repository URL** field. Do *not* add a period at the start of the location path.<br>If necessary, click the **Copy** icon to copy the path to the clipboard. |
+    | **2** | Add the code seen in the text field in Step 2 to the file that you just created in Step 1.<br>If necessary, click the **Copy** icon to copy the code to the clipboard. |
+    | **3** | Create a pull request in the Git repository for the changes you just created, then merge it to `main` to commit the code. |
 
 1. Click **Verify**.
 
