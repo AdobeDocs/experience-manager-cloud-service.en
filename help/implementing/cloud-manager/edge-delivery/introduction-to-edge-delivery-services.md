@@ -62,7 +62,7 @@ The **Edge Delivery to-do list** is an onboarding task checklist meant to guide 
 
 ![Edge Delivery site to-do list](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
-|  | Task | Description |
+|   | Task  | Description |
 | --- | --- | --- |
 | 1 | Join the product collaboration channel | Clicking **Submit request now** submits a request to Adobe to create a channel for your company. If the channel already exists, you are forwarded to your company's channel. |
 | 2 | Complete prerequisites | Clicking **View Getting Started tutorial**, directs you to the [Getting Started - Developer Tutorial](https://www.aem.live/developer/tutorial). |
@@ -70,5 +70,7 @@ The **Edge Delivery to-do list** is an onboarding task checklist meant to guide 
 | 4 | Add domain | See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 | 5 | Add SSL certificate | See [Add SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
 | 6 | Configure the CDN of your Edge Delivery site | See [Add a CDN configuration](#add-cdn). |
+
+<!-- &#x2460; for "1" inside circle -->
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
