@@ -49,8 +49,7 @@ Adobe invites you to give feedback or ask questions about traffic filter rules b
 
 In the current digital landscape, malicious traffic is an ever-present threat. Adobe recognizes the gravity of the risk and offers several approaches to protect customer applications and mitigate attacks when they occur.
 
-At the edge, the Adobe Managed CDN absorbs DoS attacks at the network
-layer (layers 3 and 4), including flood and reflection/amplification attacks.
+At the edge, the Adobe Managed CDN absorbs DoS attacks at the network layer (layers 3 and 4), including flood and reflection/amplification attacks.
 
 By default, Adobe takes measures to prevent performance degradation due to bursts of unexpectedly high traffic beyond a certain threshold. If there is a DoS attack that impacts site availability, Adobe's operations teams are alerted and take steps to mitigate.
 
@@ -469,6 +468,14 @@ data:
           type: block
         rateLimit: { limit: 100, window: 10, penalty: 60, count: fetches }
 ```
+
+## CVE Rules {#cve-rules}
+
+If WAF is licensed, Adobe automatically applies blocking rules to protect against many known CVEs (Common Vulnerabilities and Exposures) and new CVEs may be added soon after being discovered. Customers should not and need not configure CVE rules themselves.
+
+If a traffic request matches a CVE, it will appear in the corresponding CDN log entry.
+
+Please contact Adobe support if there are questions about a particular CVE or if there is a particular CVE rule that your organization would like to disable.
 
 ## Traffic Filter Rules Alerts {#traffic-filter-rules-alerts}
 
