@@ -4,6 +4,7 @@ description: Learn how to add a CDN configuration to an Edge Delivery site or de
 
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
+
 ---
 # Manage Edge Delivery site in Cloud Manager {#manage-edge-delivery-sites}
 
@@ -12,6 +13,29 @@ Learn how to manage Edge Delivery sites in Cloud Manager by adding a CDN configu
 ## Add a CDN configuration to an existing Edge Delivery site {#add-cdn-to-edge-delivery-site}
 
 See [Add a CDN configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md).
+
+## Rename an Edge Delivery Site (#rename-edge-delivery-site)
+
+In Adobe Cloud Manager, you may want to rename an Edge Delivery site for several reasons:
+
+* **Clarity and organization**: To better describe the site's purpose or its associated environment (for example, production, staging).
+* **Avoiding confusion**: If multiple sites are in use, renaming can help easily differentiate between them, reducing the chance of applying configurations or updates to the wrong site.
+* **Standardization**: To follow a consistent naming convention that aligns with your organization's guidelines for easier management and auditing.
+
+**To rename an Edge Delivery site:**
+
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate program.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program with Edge Delivery Services configured, where you want to add an Edge Delivery site.
+1. Do either one of the following:
+
+    * From the **Program Overview** page, click the **Edge Delivery** tab. In the Edge Delivery site table, click the ellipsis at the end of a row whose site you want to rename. 
+    Click **Rename**.
+    * In the upper-left corner of the page, click the hamburger icon to reveal the left navigation menu. Under the **Services** heading, click **Edge Delivery Sites**. 
+    In the Edge Delivery site table, click the ellipsis at the end of a row whose site you want to rename. Click **Rename**.
+
+1. In the **Edit Edge Delivery Site** dialog box, in the **Site Name** text field, enter the new name of the site.
+
+1. Click **Edit**.
 
 ## Delete an Edge Delivery site {#delete-edge-delivery-site}
 
@@ -22,6 +46,7 @@ If you delete an Edge Delivery Services site, any associated CDN configurations 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate program.
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program with Edge Delivery Services configured, where you want to add an Edge Delivery site.
 1. Do either one of the following:
+
     * From the **Program Overview** page, click the **Edge Delivery** tab. In the Edge Delivery site table, click the ellipsis at the end of a row whose site you want to remove. 
     Click **Delete**, then click **Delete** again to confirm the site's removal.
 
