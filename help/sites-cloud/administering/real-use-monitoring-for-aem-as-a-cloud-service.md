@@ -21,7 +21,7 @@ The RUM (Real Use Monitoring) service is a performance monitoring technology tha
 
 ## Who can benefit from a Real Use Monitoring service? {#who-can-benefit-from-rum-service}
 
-AEM has developed Real Use Monitoring helps customers and Adobe to understand how end-users interact with AEM sites. Real Use Monitoring diagnoses performance issues, and measure the effectiveness of experiments. Real Use Monitoring preserves the privacy of visitors through sampling - only a small portion of all page views is monitored - and no personally identifiable information (PII) is collected.
+Real Use Monitoring helps customers and Adobe to understand how end-users interact with AEM sites. Real Use Monitoring diagnoses performance issues, and measure the effectiveness of experiments. Real Use Monitoring preserves the privacy of visitors through sampling - only a small portion of all page views is monitored - and no personally identifiable information (PII) is collected.
 
 ## Real Use Monitoring service and privacy {#rum-service-and-privacy}
 
@@ -53,7 +53,7 @@ The Real Use Monitoring service is designed to prevent the collection of persona
 
 ## How Real Use Monitoring works for a customer {#how-rum-works-for-a-customer}
 
-Real Use Monitoring automatically monitors client-side traffic. As an Adobe customer, you do not need to take any additional steps, as this service is seamlessly integrated into your existing setup. With Real Use Monitoring (RUM) being Generall Availability (GA) , you automatically benefit from this new feature. Real Use Monitoring service does not expose any metrics today through a visualisation tool. We are working to deliver this functionality to you as soon as possible.
+Real Use Monitoring automatically monitors client-side traffic. As an Adobe customer, you do not need to take any additional steps, as this service is seamlessly integrated into your existing setup. With Real Use Monitoring (RUM) service being generally available , you automatically benefit from this new feature. Real Use Monitoring service does not expose any customer facing metrics today to monitor. We are working to deliver this functionality to you as soon as possible.
 
 <!-- Alexandru: hiding temporarily, until we figure out where this needs to be linked to 
 
