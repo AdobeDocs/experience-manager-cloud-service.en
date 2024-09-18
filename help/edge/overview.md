@@ -131,11 +131,7 @@ You can engage with Adobe product teams via your provisioned product collaborati
 
 If a product issue needs additional investigation and troubleshooting and must meet response SLTs, you can submit a support ticket.
 
-In order to log a support ticket, you must first register your Edge Delivery site in Cloud Manager. Please see [the Cloud Manager documentation](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) for details if you have not already done this. Registering your website with Cloud Manager also brings you the following benefits.
-
-* [Access to Adobe-managed CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-* [Access to SLA reports](/help/implementing/cloud-manager/sla-reporting.md)
-* [Access to licensing usage reports](/help/implementing/cloud-manager/license-dashboard.md)
+In order to log a support ticket, you must first register your Edge Delivery site in Cloud Manager. Registering your website with Cloud Manager is recommended to all AEM as a Cloud Service users and [brings a number of benefits.](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) Please see [the Cloud Manager documentation](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) for details if you have not already registered your site. 
 
 Once your website is registered with Cloud Manager, follow this process using the Admin Console to submit a support ticket:
 
