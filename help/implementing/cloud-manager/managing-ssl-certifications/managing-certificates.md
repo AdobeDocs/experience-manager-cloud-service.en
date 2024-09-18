@@ -44,11 +44,30 @@ A user must be a member of the **Business Owner** or **Deployment Manager** role
     * In the **Private key** field, update this field only if you made changes to the certificate.
     * In the **Certificate chain** field (or chain of trust), paste the certificate chain.
 
-1. Click **Update** to save your changes and have them applied automatically.
+1. Click **Update** to save your changes and have them applied automatically. -->
 
 ## Replace an expired customer managed SSL certificate {#replace-ssl-certificate}
 
 Follow the same steps that are described in [Update an expired SSL certificate](#update-ssl-certificate) to replace an expired, customer managed SSL certificate.
+
+## Rename an Adobe managed SSL certificate (#rename-an-ssl-certificate)
+
+The following are a few reasons why you might want to rename an SSL certificate:
+
+* **Improved organization**: Renaming the certificate can help clarify its purpose, such as identifying which environment (for example, staging, production) or domain it is for.
+* **Avoiding confusion**: If you are managing multiple certificates, a clear, descriptive name can help prevent mistakes, like applying the wrong certificate to the wrong domain.
+* **Compliance and auditing**: Properly named certificates may be easier to track for security and audit purposes.
+
+**To rename an Adobe managed SSL certificate:**
+
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate program.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
+1. In the upper-left corner of the page, click the hamburger icon to reveal the left navigation menu. 
+1. Under the **Services** heading, click **SSL Certificates**. 
+1. On the **SSL Certificates** page, click the ellipsis at the end of a row whose certificate you want to rename. 
+1. Click **Rename**.
+1. In the **Rename DV Certificate** dialog box, in the **Certificate name** text field, enter the new name of the certificate.
+1. Click **Rename**.
 
 ## Delete an SSL certificate {#deleting-an-ssl-certificate}
 
