@@ -53,7 +53,7 @@ Asset Selector allows you to customize the components as per the requirement and
 
 >[!MORELIKETHIS]
 >
->* [Asset Selector customization](/help/assets/asset-selector-customization.md)
+>* [Asset Selector customizations](/help/assets/asset-selector-customization.md)
 >* [Integrate Asset Selector with various applications](/help/assets/integrate-asset-selector.md)
 >* [Asset Selector properties](/help/assets/asset-selector-properties.md)
 
