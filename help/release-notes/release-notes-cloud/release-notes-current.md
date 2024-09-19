@@ -137,6 +137,10 @@ Configure 301/302 client-side redirects in source control, and deploy to the CDN
 
 <!-- Content Delivery-related Early Adopter Programs {#foundation-early-adopter} Email **<aemcs-cdn-config-adopter@adobe.com>**, indicating which of the early adopter programs below you are interested in. -->
 
+### New AEM Developer Console (Public Beta) {#aem-developer-console-beta}
+[hello](/implementing/developing/introduction/aem-developer-console.md)
+
+
 ### Business Users Can Declare Redirects Outside of Git (Early Adopter Program) {#apache-rewritemaps-early-adopter}
 
 Similar to AEM 6.5, Apache/dispatcher ingest rewrite maps placed in a specific location in the publish repository, and load them, without requiring a web tier pipeline execution. This approach let business users declare redirects using a spreadsheet or a UI, like ACS Commons Redirect Map Manager or a custom application. Join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**.
