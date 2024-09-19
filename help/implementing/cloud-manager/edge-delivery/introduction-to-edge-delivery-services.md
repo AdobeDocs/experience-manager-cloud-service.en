@@ -20,7 +20,7 @@ Cloud Manager in AEM as a Cloud Service lets you enable Edge Delivery Service fo
 
 >[!TIP]
 >
->For details about Edge Delivery Services and how it can be used with AEM, see [Edge Delivery Services overview](/help/edge/overview.md).
+>For details about Edge Delivery Services and how it can be used with AEM, see the [Edge Delivery Services overview](/help/edge/overview.md).
 
 ## About Edge Delivery Services in Cloud Manager {#edge-in-cloud-manager}
 
@@ -73,4 +73,9 @@ The **Edge Delivery to-do list** is an onboarding task checklist meant to guide 
 
 <!-- &#x2460; for "1" inside circle -->
 
+## Log a support ticket {#eds-support-ticket}
+
+{{support-ticket}}
+
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
+
