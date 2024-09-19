@@ -132,6 +132,7 @@ To use reCAPTCHA in Adaptive Forms:
          1. You can select the **[!UICONTROL Invisible]** option to show the CAPTCHA challenge only in the case of a suspicious activity.
 
     The reCAPTCHA service is enabled on the adaptive form. You can preview the form and see the CAPTCHA working. The **protected by reCAPTCHA** badge, displayed below, is displayed on the protected forms.
+
     ![Google protected by reCAPTCHA badge](/help/forms/assets/google-recaptcha-v2.png)
 
 1. Select **[!UICONTROL Done]**. 
@@ -139,7 +140,6 @@ To use reCAPTCHA in Adaptive Forms:
     Now, the **protected by reCAPTCHA** is displayed on your Adaptive Form. It is displayed on all the Adaptive Forms which are configured to use the Google reCAPTCHA service. 
     
     Now, only legitimate forms, in which the form filler successfully clears the challenge posed by the Google reCAPTCHA service, are allowed for submission.
-    ![Google protected by reCAPTCHA badge](/help/forms/assets/google-recaptcha-v2.png)
 
 <!--
 ### Show or hide CAPTCHA component based on rules {#show-hide-captcha}
