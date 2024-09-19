@@ -51,6 +51,11 @@ The following figure illustrates the steps to use the **[!UICONTROL Async Functi
 
 ### 1. Write a custom function for the asynchronous operation in the JS file
 
+>[!NOTE]
+>
+> * The rule editor of a form displays only functions with a return type of `Promise` when you select the **Async Function Call** rule type.
+> * To learn how to create a custom function, refer to the article titled [Create a Custom Function for an Adaptive Form Based on Core Components](/help/forms/custom-function-core-component-create-function.md).
+
 The `matchOTP()` function is implemented as a custom function. The below code is added in the JS file of the custom function:
 
 ```JavaScript
@@ -89,11 +94,6 @@ function asyncOperationForOTPMatch(otp, callback) {
 ```
 
 The code defines a function `matchOTP()` that generates a promise to validate a one-time password (OTP) asynchronously. It uses a function `asyncOperationForOTPMatch()` to simulate the OTP matching process. The function checks if the provided OTP is equal to `111`. If the entered OTP is correct, it calls the callback with null for the error and an object indicating the OTP is valid `({'valid':'true'})`.If the OTP is not valid, it calls the callback with an error object `({'valid':'false'})` and null for the result.
-
->[!NOTE]
->
-> * The rule editor of a form displays only functions with a return type of `Promise` when you select the **Async Function Call** rule type.
-> * To learn how to create a custom function, refer to the article titled [Create a Custom Function for an Adaptive Form Based on Core Components](/help/forms/custom-function-core-component-create-function.md).
 
 ### 2. Configure the asynchronous function in the rule editor
 
@@ -170,7 +170,7 @@ Refer to the screenshot below, where the user enters the OTP as `123`, and the e
 
 ![Failure](/help/forms/assets/failure.gif)
 
-The screenshot below displays the rule for using **[!UICONTROL Async Function Call]** to implement an asynchronous function:
+The screenshot below displays the complete rule for using **[!UICONTROL Async Function Call]** to implement an asynchronous function:
 
 ![Rule for async function call](/help/forms/assets/rule-editor-async-callbacks.png)
 
