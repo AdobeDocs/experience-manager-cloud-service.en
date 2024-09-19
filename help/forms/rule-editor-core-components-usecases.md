@@ -14,6 +14,8 @@ Now, let us discuss the different implementations for a rule editor.
 
 ## Navigating between panels using buttons 
 
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
 The rule editor allows you to add navigation buttons to your panel layouts, such as Horizontal Tabs, Vertical Tabs, Accordions, or Wizard. These buttons enhance the user experience by simplifying transitions between different panels in a form, shifting focus to the selected panel.
 
 Imagine you are interacting with the profile settings section of an application, where navigation is facilitated by buttons rather than tabs. Upon entering the profile settings from the main dashboard, you encounter a series of panels dedicated to different aspects of their profile: **Personal Information**, **Account Security**, and **Notification Preferences**.
