@@ -193,15 +193,15 @@ Asset Selector lets you view the asset in four different views:
         <em>Understand how to integrate Asset Selector with Dynamic Media Open APIs.</em>
         </p>
      </td>
-</tr>
-<tr>
-    <td>
+     <td>
         <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="Asset Selector properties graphic"><br/>
         <a href="asset-selector-customization.md">Asset Selector Properties</a>
         <p>
         <em>Learn the basics of customizing various components of Asset Selector, such as filters, selection of assets, expired assets, and much more. </em>
         </p>
     </td>
+</tr>
+<tr>
     <td>
         <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="Asset Selector examples graphic"><br/>
         <a href="asset-selector-customization.md">Asset Selector Examples</a>
@@ -222,6 +222,15 @@ Asset Selector lets you view the asset in four different views:
         <p>
         <em>Learn how you can upload files or folders to Asset Selector from your local or third party file system. </em>
         </p>
+    </td>
+     <td>
+        <img src="assets/asset-selector-collections.gif" width="70px" height="70px" alt="Asset Selector collections graphic"><br/>
+        <a href="asset-selector-collections.md">Asset Selector Collections</a>
+        <p>
+        <em>Learn how to use collections inside Asset Selector using Experience Manager repository. </em>
+        </p>
+    </td>
+    <td>
     </td>
 </tr>
 </table>
