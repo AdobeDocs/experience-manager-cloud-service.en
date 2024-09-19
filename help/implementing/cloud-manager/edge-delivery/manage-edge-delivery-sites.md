@@ -18,7 +18,7 @@ See [Add a CDN configuration](/help/implementing/cloud-manager/cdn-configuration
 
 In Adobe Cloud Manager, you may want to rename an Edge Delivery site for several reasons:
 
-* **Clarity and organization**: To better describe the site's purpose or its associated environment (for example, production, staging).
+* **Clarity and organization**: To describe the site's purpose better or its associated environment (for example, production, staging).
 * **Avoiding confusion**: If multiple sites are in use, renaming can help easily differentiate between them, reducing the chance of applying configurations or updates to the wrong site.
 * **Standardization**: To follow a consistent naming convention that aligns with your organization's guidelines for easier management and auditing.
 
@@ -57,3 +57,7 @@ If you delete an Edge Delivery Services site, any associated CDN configurations 
 
 
         ![Add Edge Delivery Site from the Edge Delivery Sites button](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
+
+### Log a support ticket {#eds-support-ticket}
+
+{{support-ticket}}
