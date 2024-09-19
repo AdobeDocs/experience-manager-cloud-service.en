@@ -58,6 +58,8 @@ If you delete an Edge Delivery Services site, any associated CDN configurations 
 
         ![Add Edge Delivery Site from the Edge Delivery Sites button](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
 
-### Log a support ticket {#eds-support-ticket}
+## Log a support ticket {#eds-support-ticket}
 
 {{support-ticket}}
+
+
