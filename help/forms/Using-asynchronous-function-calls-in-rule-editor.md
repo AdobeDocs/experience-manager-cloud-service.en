@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 ---
 
-# Using asynchronous functions in an Adaptive Form
+# Using asynchronous functions in an Adaptive Form based on Core Components
 
 <span class="preview"> This feature is available under early adopter program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
 
@@ -116,7 +116,7 @@ When you select **[!UICONTROL Async Function call]** and the functions with the 
 
 The below screenshot displays the rule:
 
-![Rule Type](/help/forms/assets/asyn-function-rule-type.png)
+![rule type](/help/forms/assets/asyn-function-rule-type.png)
 
 Now, you can proceed with the implementation of the callbacks: `Success` and `Failure` for the `matchOTP` function.
 
