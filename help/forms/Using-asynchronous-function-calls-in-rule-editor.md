@@ -8,11 +8,13 @@ level: Beginner, Intermediate
 
 # Using asynchronous functions in an Adaptive Form
 
-The rule editor in Adaptive Forms supports asynchronous functions, allowing you to integrate and manage operations that require waiting for external processes or data retrieval without interrupting the user's interaction with the form.
+<span class="preview"> This feature is available under early adopter program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+
+The [rule editor in Adaptive Forms](/help/forms/rule-editor-core-components.md) supports asynchronous functions, allowing you to integrate and manage operations that require waiting for external processes or data retrieval without interrupting the user's interaction with the form.
 
 ## What factors determine the use of asynchronous or synchronous functions?
 
-In web development, managing user interactions effectively is crucial for creating a smooth experience. Two common approaches to handling operations are synchronous and asynchronous functions. 
+Managing the user interaction effectively is crucial for creating a smooth experience. Two common approaches for handling operations are synchronous and asynchronous functions. 
 
 **Synchronous functions** execute tasks one after another, causing the application to wait for each operation to complete before proceeding. This can lead to delays and a less engaging user experience, especially when tasks involve waiting for external resources, like file uploads or data fetching.
 
@@ -37,9 +39,11 @@ You can write the [custom functions](/help/forms/custom-function-core-component-
 
 ### Exploring the Async Function Call rule type through a use case
 
-Consider a login form for a website where users enter the username and password to access the account along with an OTP. If the user enters a correct OTP, the login attempt is successful; however, if the OTP is incorrect, the login is unsuccessful. 
+Consider a registration form on a website where users enter a one-time password (OTP). The panel for adding user details appears only after entering the correct OTP. If the OTP is incorrect, the panel stays hidden and an error message appears on screen.
 
-In a login form, when the user clicks the **Confirm** button, the `getOTP()` function is called asynchronously to verify the entered OTP. The `getOTP()` function is implemented as a [custom function](/help/forms/custom-function-core-component-create-function.md). Using the **[!UICONTROL Async Function Call]** rule type in the rule editor, you can configure the `getOTP()` function in the rule editor of an Adaptive Form. You can also implement the success and failure callback methods in the rule editor. 
+![Login-form](/help/forms/assets/rule-editor-login-form.png) {width-50%}
+
+In a registration form, when the user clicks the **Confirm** button, the `matchOTP()` function is called asynchronously to verify the entered OTP. The `matchOTP()` function is implemented as a [custom function](/help/forms/custom-function-core-component-create-function.md). Using the **[!UICONTROL Async Function Call]** rule type in the rule editor, you can configure the `matchOTP()` function in the rule editor of an Adaptive Form. You can also implement the success and failure callbacks in the rule editor. 
 
 The following figure illustrates the steps to use the **[!UICONTROL Async Function Call]** rule type to invoke asynchronous functions for Adaptive Forms:
 
@@ -47,19 +51,18 @@ The following figure illustrates the steps to use the **[!UICONTROL Async Functi
 
 ### 1. Write a custom function for the asynchronous operation in the JS file
 
-The `getOTP()` function is implemented as a custom function. The below code is added in the JS file of the custom function:
+The `matchOTP()` function is implemented as a custom function. The below code is added in the JS file of the custom function:
 
 ```JavaScript
 /**
- * generates the otp
- * @param {object} username
- * @param {object} password
+ * generates the otp for success use case
+ * @param {string} otp
  * @return {PROMISE}
  */
-function getOTP() {
+function matchOTP(otp) {
      return new Promise((resolve, reject) => {
         // Perform some asynchronous operation here
-        asyncOperation((error, result) => {
+         asyncOperationForOTPMatch(otp, (error, result) => {
             if (error) {
                 // On failure, call reject(error)
                 reject(error);
@@ -74,19 +77,18 @@ function getOTP() {
 /**
  * generates the otp
  */
-function asyncOperation(callback) {
+function asyncOperationForOTPMatch(otp, callback) {
     setTimeout(() => {
-        const result = {
-            key1: 'value1',
-            key2: 'value2',
-            key3: 'value3'
-        };
-        callback(null, result);
+        if(otp === '111') {
+        	callback( null, {'valid':'true'});    
+        } else {
+            callback( {'valid':'false'}, null);
+        }
     }, 1000);
 }
 ```
 
-The `getOTP()` function handles the asynchronous `asyncOperation()` function in a `Promise`. It manages the asynchronous task to verify the entered OTP and provides a way to handle success and failure using the `resolve()` and `reject()` methods of the Promise.
+The code defines a function `matchOTP()` that generates a promise to validate a one-time password (OTP) asynchronously. It uses a function `asyncOperationForOTPMatch()` to simulate the OTP matching process. The function checks if the provided OTP is equal to `111`. If the entered OTP is correct, it calls the callback with null for the error and an object indicating the OTP is valid `({'valid':'true'})`.If the OTP is not valid, it calls the callback with an error object `({'valid':'false'})` and null for the result.
 
 >[!NOTE]
 >
@@ -98,59 +100,81 @@ The `getOTP()` function handles the asynchronous `asyncOperation()` function in 
 Perform the following steps to configure asynchronous function in rule editor:
 
 1. [Create a rule to use asynchronous function using the Async Function call rule type](#21-create-a-rule-to-use-asynchronous-function-using-the-async-function-call-rule-type)
-2. [Implement the callback methods for the asynchronous function](#22-implement-the-callback-methods-for-asynchronous-function)
+1. [Implement the callbacks for the asynchronous function](#22-implement-the-callbacks-for-asynchronous-function)
 
 #### 2.1 Create a rule to use  asynchronous function using the Async Function call rule type
 
 To create a rule to use asynchronous operation use the **[!UICONTROL Async Function Call]** rule type, perform the following steps:
 
 1. Open an Adaptive Form in authoring mode, select a form component and select **[!UICONTROL Rule Editor]** to open the rule editor.
-2. Select **[!UICONTROL Create]**.
-3. Create a condition in the **When** section of the rule for a click of button. For example, **When[Confirm]** is clicked and **When[OTP]** is equal to the value say `111`. 
-4. In the **Then** section, select **[!UICONTROL Async Function call]** from the **Select Action** drop-down list.
+1. Select **[!UICONTROL Create]**.
+1. Create a condition in the **When** section of the rule for a click of button. For example, **When[Confirm]** is clicked. 
+1. In the **Then** section, select **[!UICONTROL Async Function call]** from the **Select Action** drop-down list.
 When you select **[!UICONTROL Async Function call]** and the functions with the `Promise` return type appears.
-1. Select the asynchronous function from the list. For example, select the `getOTP()` function and its callback methods as `Add success callback` and `add failure callback` appears.
+1. Select the asynchronous function from the list. For example, select the `matchOTP()` function and its callbacks as `Add success callback` and `add failure callback` appears.
+1. Now, select the **[!UICONTROL Input]** bindings. For example, select **[!UICONTROL Input]** as `Form Object` and compare it to the `OTP` field.
 
-Now, you can proceed with the implementation of the callback methods: `Success` and `Failure` for the `getOTP` function.
+The below screenshot displays the rule:
 
-#### 2.2 Implement the callback methods for the asynchronous function
+![Rule Type](/help/forms/assets/asyn-function-rule-type.png)
+
+Now, you can proceed with the implementation of the callbacks: `Success` and `Failure` for the `matchOTP` function.
+
+#### 2.2 Implement the callbacks for the asynchronous function
 
 Implement the success and failure callback methods for the asynchronous function using the visual rule editor.
 
 **Create a rule for `Add Success callback` method**
 
-Let's create a rule to display a success message if the OTP matches the value `111` as defined in the `asyncOperation` function.
+Let's create a rule to display the `userdetails` panel, if the OTP matches the value `111`.
 
+1. Click **[!UICONTROL Add success callback]**.
 1. Click **[!UICONTROL Add Statement]** to create the rule.
-1. Create a condition in the **When** section of the rule. For example, **When[Get Event Payload]**.  
+1. Create a condition in the **When** section of the rule.
+1. Select the **[!UICONTROL Function Output]** > **[!UICONTROL Get Event Payload]**.
 
     >[!NOTE]
     >
     > The **[!UICONTROL Get Event Payload]** function retrieves data associated with a specific event to manage user interactions dynamically.
 
-1. Select its corresponding bindings from the **Input** section. For example, to validate OTP, select **otp** in the **Input** section.
-1. In the **Then** section, select **[!UICONTROL Show]** from the **Select Action** drop-down list. For example, show the text with the success message in case the entered OTP is equal to `111`. 
+1. Select its corresponding bindings from the **Input** section. For example, select **[!UICONTROL String]** and enter `valid`. Compare the entered string to `true`. 
+1. In the **Then** section, select **[!UICONTROL Show]** from the **Select Action** drop-down list. For example, show the `userdetails` panel.
+1. Click **[!UICONTROL Add Statement]**.
+1. Select **[!UICONTROL Hide]** from the **Select Action** drop-down list. For example, hide the `error message` textbox.
 1. Click **[!UICONTROL Done]**.
 
+![Success call](/help/forms/assets/rule-editor-success-callback.png){width=50%, height=50%}
 
-Refer to the screenshot below, where the user enters the OTP as `111`, and the success message appears when the button is clicked.
+Refer to the screenshot below, where the user enters the OTP as `111`, and the `User Details` panel appears when the `Confirm` button is clicked.
 
-
-
+![Success](/help/forms/assets/success.gif)
 
 **Create a rule for `Add Failure callback` method**
 
-Let's create a rule to display a failure message if the OTP do not match the value `111` as defined in the `asyncOperation` function.
+Let's create a rule to display a failure message if the OTP do not match the value `111`.
+
+1. Click **[!UICONTROL Add failure callback]**.
 
 1. Click **[!UICONTROL Add Statement]** to create the rule.
-1. Create a condition in the **When** section of the rule. For example, **When[Get Event Payload]**. 
-1. Select its corresponding bindings from the **Input** section. For example, to validate OTP, select **key1** in the **Input** section.
-1. In the **Then** section, select **[!UICONTROL Show]** from the **Select Action** drop-down list. For example, show the text with the failure message in case the entered OTP is not equal to `111`. 
+1. Create a condition in the **When** section of the rule. 
+1. Select the **[!UICONTROL Function Output]** > **[!UICONTROL Get Event Payload]**.
+1. Select its corresponding bindings from the **Input** section. For example, select **[!UICONTROL String]** and enter `valid`. Compare the entered string to `false`.
+1. In the **Then** section, select **[!UICONTROL Show]** from the **Select Action** drop-down list. For example, show the `error message` textbox.
+1. Click **[!UICONTROL Add Statement]**.
+1. Select **[!UICONTROL Hide]** from the **Select Action** drop-down list. For example, hide the `userdetails` panel.
 1. Click **[!UICONTROL Done]**.
 
+![Failure callback method](/help/forms/assets/rule-editor-failure-callback.png){width=50%, height=50%}
 
-Refer to the screenshot below, where the user enters the OTP as `123`, and the failure message appears when the button is clicked.
+Refer to the screenshot below, where the user enters the OTP as `123`, and the error message appears when the `Confirm` button is clicked.
 
+![Failure](/help/forms/assets/failure.gif)
+
+The screenshot below displays the rule for using **[!UICONTROL Async Function Call]** to implement an asynchronous function:
+
+![Rule for async function call](/help/forms/assets/rule-editor-async-callbacks.png)
+
+You can also edit the callbacks by clicking **[!UICONTROL Edit success callback]** and **[!UICONTROL Edit failure callback]**.
 
 ## How to use Function Output rule type?
 

@@ -107,7 +107,7 @@ The following table demonstrates the difference between the features available i
    <tr>
    <td>Navigate between the panels</td>
    <td> The <b>Next button</b> and <b>Previous button</b> components are provided to navigate between the panels. A navigation button placed within the container works on its child elements</td>
-   <td> The <b>Navigation in Panel</b> rule is available in the rule editor, allowing users to create rules for navigating between panels.
+   <td> The <b>Navigation in Panel</b> rule is available in the rule editor, allowing users to create rules for navigating between the children of panels.
    </td>
    </tr>
    </tr>
