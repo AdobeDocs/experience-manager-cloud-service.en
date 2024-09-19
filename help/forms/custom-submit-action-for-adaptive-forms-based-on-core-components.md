@@ -12,7 +12,8 @@ A submit action allows users to select the destination for the data captured fro
 
 You can also create a custom submit action to add functionality not included in the [out-of-the-box options](/help/forms/configure-submit-actions-core-components.md#select-and-configure-a-submit-action-for-an-adaptive-form-select-and-configure-submit-action). For example, integrate the form data with a third-party application or trigger a personalized SMS notification based on user input.
 
-![Custom Submit Her Image](/help/forms/assets/custom-submit-action-hero-image.png)
+<!-- ![Custom Submit Image](/help/forms/assets/custom-submit-action-hero-image.png)
+-->
 
 ## Pre-requisites
 
@@ -26,7 +27,7 @@ Before you begin creating your first custom submit action for Adaptive Forms, en
 
 The below diagram depicts the steps to create a custom submit action for an Adaptive Form:
 
-![Custom submit action workflow](/help/forms/assets/custom-submit-action-workflow.png)
+![Custom submit action workflow](/help/forms/assets/custom-submit-action-workflow.png){width=50%, height-50%}
 
 ### Clone AEM as a Cloud Service Git repository.
 
