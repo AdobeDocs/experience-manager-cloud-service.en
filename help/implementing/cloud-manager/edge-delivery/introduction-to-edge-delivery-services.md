@@ -56,7 +56,10 @@ An Edge Delivery Services can be added in a number of different ways depending o
 >* Your organization must have an unused Edge Delivery Services license before it can be applied to a Production program.
 >* Once the Edge Delivery Services license is applied to or removed from a program, the change takes effect immediately without the need to run a pipeline.
 
+
 ## About the Edge Delivery to-do list {#ed-todo-list}
+
+<!-- &#x2460; for "1" inside circle -->
 
 The **Edge Delivery to-do list** is an onboarding task checklist meant to guide you through onboarding, managing your Edge Delivery site all the way to [go-live](/help/journey-onboarding/go-live-checklist.md).
 
@@ -71,7 +74,6 @@ The **Edge Delivery to-do list** is an onboarding task checklist meant to guide 
 | 5 | Add SSL certificate | See [Add SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
 | 6 | Configure the CDN of your Edge Delivery site | See [Add a CDN configuration](#add-cdn). |
 
-<!-- &#x2460; for "1" inside circle -->
 
 ## Log a support ticket {#eds-support-ticket}
 
