@@ -23,7 +23,7 @@ See also [Introduction to Edge Delivery Services in Cloud Manager](/help/impleme
 
         ![Add Edge Delivery site from the Edge Delivery tab](/help/implementing/cloud-manager/assets/cm-eds-add1.png)       
 
-    * In the upper-left corner of the page, click ![Show or hide side navigation](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg ) to reveal the side navigation menu.
+    * In the upper-left corner of the page, click ![Show or hide side navigation](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to reveal the side navigation menu.
     Under the **Services** heading, click ![Web page for Edge Delivery sites](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**.
     Near the upper-right corner of the page, click **Add site**.
 
