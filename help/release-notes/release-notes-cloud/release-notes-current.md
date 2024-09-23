@@ -138,7 +138,12 @@ Configure 301/302 client-side redirects in source control, and deploy to the CDN
 <!-- Content Delivery-related Early Adopter Programs {#foundation-early-adopter} Email **<aemcs-cdn-config-adopter@adobe.com>**, indicating which of the early adopter programs below you are interested in. -->
 
 ### New AEM Developer Console (Public Beta) {#aem-developer-console-beta}
-[hello](/implementing/developing/introduction/aem-developer-console.md)
+
+Try out a revamped [AEM Developer Console](/help/implementing/developing/introduction/aem-developer-console.md), which offers a more interactive experience for debugging code in Cloud environments.
+
+Anyone can access the public beta by clicking the *New Console Available* button in the current AEM Developer Console. Adobe welcomes feedback, which you can email to **<aemcs-new-devconsole-ui-beta@adobe.com>**.
+
+![OSGi Bundles Screen in AEM Developer Console](/help/implementing/developing/introduction/assets/osgi-bundles.png)
 
 
 ### Business Users Can Declare Redirects Outside of Git (Early Adopter Program) {#apache-rewritemaps-early-adopter}
