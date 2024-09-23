@@ -57,10 +57,6 @@ The 2024.10.0 feature activation will provide the full feature set for this main
 * SITES - 24786: Enhancements for `referencesTree` endpoint.
 * SITES - 24833: Remove the validation of HTML input against a list of allowed HTML tags.
 * SITES - 25008: Improve handling of PersistenceExceptions and permissions problems.
-* SITES - 16770: [Xwalk] Add cache hit/miss metrics to CodeBusHttpClient.
-* SITES - 23904: [Xwalk] Rename `repository` in Edge Delivery Services config to `Site Name`.
-* SITES - 23518: [Xwalk] To improve authoring performance we should load web renditions of assets.
-* SITES - 24428: [Xwalk] Rename `Helix 5` in Edge Delivery Services.
 * SITES - 24821: [Xwalk] Make aem.page / aem.live the default.
 
 ### Fixed Issues {#fixed-issues-17882}
@@ -117,9 +113,7 @@ The 2024.10.0 feature activation will provide the full feature set for this main
 * SITES - 24036: Investigation needed for AEM RTE Persisting Characters in ASCII Format
 * SITES - 24317: Proxy Configuration not working with Basic Authentication
 * SITES - 24355: Live Relationship is not respected for folder created Content Fragments 
-* SITES - 24596: [Xwalk] service worker is not loading path mapping from enabled config service.
-* SITES - 24918: [Xwalk] 504 errors returned occasionally when using dedicated ip egress.
-* SITES - 25044: [xwalk] Bulk meta data does not work with URL property name.
+* SITES - 24918: [Xwalk] fix 504 errors returned occasionally when using dedicated ip egress.
 * SITES - 2864: Accessibility - Drag and Drop feature is not keyboard accessible.
 
 ### Known Issues {#known-issues-17882}
