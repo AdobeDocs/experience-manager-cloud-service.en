@@ -21,7 +21,7 @@ The 2024.10.0 feature activation will provide the full feature set for this main
 * ASSETS - 37750: [Priority 4] [GraphQL] Support for DM scene7 URLs: image smart crops.
 * CQ - 4354583: [AEMaaCS] Send translation process events via Adobe Pipeline.
 * CQ - 4357642: Update MSFT credentials in OOTB Connector.
-* CQ - 4358217: Deserialise request body from request entity.
+* CQ - 4358217: Deserialize request body from request entity.
 * CQ - 4358342: Register RequestProcessors on only one HTTP method.
 * FORMS - 10781: Enhance rule editor to create rules for next/prev item in a panel.
 * FORMS - 14595: [Browserless Feature] Values are missing in the DoR when prefilled data is used to compute the DoR for Browserless rendering.
@@ -35,27 +35,27 @@ The 2024.10.0 feature activation will provide the full feature set for this main
 * SITES - 16615: Content Fragments: Promote Launch endpoint.
 * SITES - 24215: Content Fragments: Implement Get Launch sources endpoint.
 * SITES - 20336: Content Fragments: Improve validation when deleting a Content Fragment Model.
+* SITES - 21090: Content Fragments: Add support for fractional min/max values for number fields
 * SITES - 21658: Content Fragments: Upgrade to use UUID-references.
 * SITES - 23054: Content Fragments: Copy Content Fragment Models.
 * SITES - 23264: Content Fragments: Create a static schema of a model.
 * SITES - 23265: Content Fragments: Expose the static schema of a model through the UI schema GET endpoint.
-* SITES - 23266: Content Fragments: Customers should be able to add constraints to models.
-* SITES - 23778: Content Fragments: Search CFMs should allow searching for models that have never been published.
+* SITES - 23266: Content Fragments: Ability to add constraints to Content Fragment Models.
+* SITES - 23778: Content Fragments: Search Content Fragment Models should allow searching for models that have never been published.
 * SITES - 23335: Content Fragments: Add support for external asset references.
 * SITES - 24626: Content Fragments: RTC: Permissions for UUID migration: 2.
-* SITES - 24904: Content Fragments: Remove usage of referenced service-user in headless bundle.
+* SITES - 24786: Content Fragments: Enhancements for `referencesTree` endpoint.
+* SITES - 24833: Content Fragments: Remove the validation of HTML input against a list of allowed HTML tags.
 * SITES - 23380: GraphQL: use proper API to read asset metadata.
 * SITES - 22864: [Edge Delivery] Universal editor with new AEM content structure integration H2 2024.
 * SITES - 23584: Foundation component tests fail on Java 17.
-* SITES - 23662: User that triggers a publish cannot be extracted from JCR log statements in server logs. 
-* SITES - 23756: Allow users with limited privileges access to fullName.
-* SITES - 23301: Add support for starting a new workflow `/etc/workflow/models/dam/dam-create-language-copy/jcr:content/model`.
+* SITES - 23662: Eventing: User that triggers a publish request cannot be extracted from JCR log statements in server logs. 
+* SITES - 23301: Add support for starting a new workflow to create folder structures when creating Translations of Content Fragments.
+* SITES - 23336: Content Fragments: Add support for external asset references
 * SITES - 24091: MSM content package split: master.
 * SITES - 24114: isSourceRenderCondition: Reduce error log message to DEBUG.
 * SITES - 24166: Remote assets mitigation for Touch-UI editor.
 * SITES - 24409: Register all request processors on only one HTTP method.
-* SITES - 24786: Enhancements for `referencesTree` endpoint.
-* SITES - 24833: Remove the validation of HTML input against a list of allowed HTML tags.
 * SITES - 25008: Improve handling of PersistenceExceptions and permissions problems.
 * SITES - 24821: [Xwalk] Make aem.page / aem.live the default.
 
@@ -83,17 +83,24 @@ The 2024.10.0 feature activation will provide the full feature set for this main
 * GRANITE - 53028: NPE In ExternalProcessPollingHandler.
 * GRANITE - 53907: Unable to identify service user as workflow super user.
 * SITES - 24405: Content Fragments: Extended Info for enums should be more resilient
-* SITES - 24816: Content Fragments: ValidationStatus messages order inconsistent.
 * SITES - 23024: Content Fragments: Enumeration does not return locked: true in GET fragments.
-* SITES - 23269: Content Fragments: Creating CFs allow setting locked fields.
+* SITES - 23269: Content Fragments: Creating Content Fragments allows setting locked fields.
+* SITES - 23337: Content Fragments: Batch endpoint with `body` fails with casting exception.
+* SITES - 23474: Content Fragments: Pagination should exclude broken resources in Search Content Fragments.
+* SITES - 23615: Content Fragments: Content Fragment copy AuthoringInfo is not updated
+* SITES - 23668: Content Fragments: Patch live copy with multifield fails with 400
 * SITES - 23695: Content Fragments: Tab description is not available in UiSchema
 * SITES - 23704: Content Fragments: Multi-value enums not supported in _extendedInfo
-* SITES - 24150: Content Fragments: [CF GET Version] Authoring data about creation is missing
-* SITES - 24230: Content Fragments: [Search CFM] Fix filtering after `modified` replication status
-* SITES - 24233: Content Fragments: [Search CFM] Filtering by `publishedBy` can include unpublished resources
-* SITES - 23474: Content Fragments: Pagination should exclude broken resources in Search Fragments.
 * SITES - 23781: Content Fragments: Duplicate values not allowed in enumeration fields
-* SITES - 23615: Content Fragments: CF copy AuthoringInfo is not updated
+* SITES - 24150: Content Fragments: Content Fragment Version Authoring data about creation is missing
+* SITES - 24230: Content Fragments: Fix filtering after `modified` replication status in Search Content Fragment Models
+* SITES - 24233: Content Fragments: Filtering by `publishedBy` can include unpublished resources in Search Content Fragment Models
+* SITES - 24355: Content Fragments: Live Relationship is not respected for folder created Content Fragments
+* SITES - 24816: Content Fragments: ValidationStatus messages order inconsistent.
+* SITES - 23896: Eventing: More events are coming together with a Page Moved event
+* SITES - 23899: Eventing: Page events are delayed or not generated at all
+* SITES - 23961: Eventing: Creating Content Fragment Models with references fails when configuration folder is present
+* SITES - 23963: Eventing: Page deleted events are sometimes not coming
 * SITES - 23443: GraphQL: GraphQL Cursor query inconsistent behaviour.
 * SITES - 10994: Keyboard focus order is not logical.
 * SITES - 16357: AEM: Button is truncated in Setup Analytics tab from Sites menu.
@@ -101,18 +108,15 @@ The 2024.10.0 feature activation will provide the full feature set for this main
 * SITES - 22348: Live Copy Overview page fails to load if their are above 100 live copies for a project.
 * SITES - 22960: Unclosed resource resolver in ContentFragmentModelOmniSearchHandler.
 * SITES - 23284: URL encoding causing blank path browser dialog.
-* SITES - 23337: Batch endpoint with `body` fails with casting exception.
 * SITES - 23505: Components show incorrect URLs when the page is moved to another location.
 * SITES - 23574: Not able to preview / compare to current versions for many pages
 * SITES - 23585: Issue with Restoring Inheritance for components having cq:responsive node
 * SITES - 23650: Discrepancy in Incoming Links Count in AEM Author Environment
 * SITES - 23659: Content Language Servlet regression caused by the toggle FT_* SITES - 9757
-* SITES - 23668: Patch live copy with multifield fails with 400
 * SITES - 23759: Assets added on experience fragment are not published with Launches
 * SITES - 24025: 302 Redirects in AEM returning location header using internal DNS instead of public DNS
 * SITES - 24036: Investigation needed for AEM RTE Persisting Characters in ASCII Format
 * SITES - 24317: Proxy Configuration not working with Basic Authentication
-* SITES - 24355: Live Relationship is not respected for folder created Content Fragments 
 * SITES - 24918: [Xwalk] fix 504 errors returned occasionally when using dedicated ip egress.
 * SITES - 2864: Accessibility - Drag and Drop feature is not keyboard accessible.
 
