@@ -24,6 +24,10 @@ The name of the file must be `org.apache.sling.security.impl.ReferrerFilter.cfg.
 
 For example, to grant access for requests with the Referrer `my.domain` you can:
 
+>[!CAUTION]
+>
+>This is a basic example that overwrites the standard configuration. You need to ensure that product updates are always applied to any customizations. 
+
 ```xml
 {
     "allow.empty": false,
@@ -48,14 +52,14 @@ For example, to grant access for requests with the Referrer `my.domain` you can:
 
 >[!CAUTION]
 >
->It remains the customer's responsibility to:
+>It remains the customer's responsibility to ensure that:
 >
->* only grant access to trusted domains 
->* make sure no sensitive information is exposed 
->* not use a wildcard [*] syntax; this will both disable authenticated access to the GraphQL endpoint and also expose it to the entire world.
+>* access is *only* granted to trusted domains 
+>* no sensitive information is exposed 
+>* wildcard [`*`] syntax in not used; this both disables authenticated access to the GraphQL endpoint, and also exposes it to the entire world.
 
 >[!CAUTION]
 >
->All the GraphQL [schemas](#schema-generation) (derived from Content Fragment Models that have been **Enabled**) are readable through the GraphQL endpoint.
+>All the [GraphQL schemas](/help/headless/graphql-api/content-fragments.md#schema-generation) (derived from Content Fragment Models that have been **Enabled**) are readable through the GraphQL endpoint. For example, this includes information that could be present as field names in the model definition.
 >
->This means that you need to ensure that no sensitive data is available, as it could be leaked this way; for example, this includes information that could be present as field names in the model definition.
+>This means that you need to ensure that no sensitive data is available, as it could be leaked this way. 
