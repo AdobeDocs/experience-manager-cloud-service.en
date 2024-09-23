@@ -9,7 +9,7 @@ Learn how you can split staging and production deployments using dedicated pipel
 
 >[!NOTE]
 >
->This feature is only available to [the early adopter program.](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
+>This feature is only available to [the early adopter program](/help/implementing/cloud-manager/release-notes/current.md#early-adoption).
 
 ## Overview {#overview}
 
@@ -48,9 +48,9 @@ Please also note the following known issues before you begin testing this featur
 
 ## Pipeline Creation {#pipeline-creation}
 
-Prod-only and stage-only pipelines are created in a similar fashion to the standard coupled [production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) and [non-production pipelines.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) Please see those documents for details.
+Prod-only and stage-only pipelines are created in a similar fashion to the standard coupled [production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) and [non-production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). See those documents for details.
 
-1. In the **Pipelines** window, tap or click **Add Pipeline**.
+1. In the **Pipelines** window, click **Add Pipeline**.
 
    * Select **Add Non-Production Pipeline** to create a stage-only pipeline.
    * Select **Add Production Only Pipeline** to create a prod-only pipeline.
@@ -68,7 +68,7 @@ Prod-only and stage-only pipelines are created in a similar fashion to the stand
 ### Stage-Only Pipelines {#stage-only}
 
 1. Once you select the **Add Non-Production Pipeline** option, the **Add Non-Production Pipeline** dialog opens.
-1. To create a stage-only pipeline, select the stage environment in the **Eligible Deployment Environments** field for your pipeline. Complete the remaining fields and tap or click **Continue**.
+1. To create a stage-only pipeline, select the stage environment in the **Eligible Deployment Environments** field for your pipeline. Complete the remaining fields and click **Continue**.
 
    ![Creating a stage-only pipeline](assets/stage-only.png)
 
@@ -76,12 +76,12 @@ Prod-only and stage-only pipelines are created in a similar fashion to the stand
 
 ### Prod-Only Pipelines {#prod-only}
 
-1. Once you select the **Add Production Only Pipeline** option, the **Add Production Only Pipeline** dialog opens.
-1. Provide a **Pipeline Name**. The remaining options and functionality of the dialog work the same as those in the standard coupled pipeline creation dialog. Tap or click **Save** to save the pipeline.
+1. When you select the **Add Production Only Pipeline** option, the **Add Production Only Pipeline** dialog box opens.
+1. Provide a **Pipeline Name**. The remaining options and functionality of the dialog work the same as those in the standard coupled pipeline creation dialog. Click **Save** to save the pipeline.
 
 ## Running Prod-Only and Stage-Only Pipelines {#running}
 
-Prod-only and stage-only pipelines are run in the same way as [all other pipelines are run.](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) Please see that documentation for details.
+Prod-only and stage-only pipelines are run in the same way as [all other pipelines are run](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines). See that documentation for details.
 
 In addition, a prod-only pipeline run can be triggered directly from the execution details of a stage-only pipeline.
 
@@ -91,7 +91,7 @@ A stage-only pipeline runs in nearly the same way as standard coupled pipelines.
 
 ![Stage-only pipeline run](assets/stage-only-pipeline-run.png)
 
-The **Promote Build** button only appears if you are on the latest successful stage-only pipeline execution. Once tapped or clicked, it will ask you to confirm the run of the prod-only pipeline or to create a prod-only pipeline if one does not already exist.
+The **Promote Build** button only appears if you are on the latest successful stage-only pipeline execution. When clicked, it asks you to confirm the run of the prod-only pipeline or to create a prod-only pipeline if one does not already exist.
 
 ### Prod-Only Pipelines {#prod-only-run}
 

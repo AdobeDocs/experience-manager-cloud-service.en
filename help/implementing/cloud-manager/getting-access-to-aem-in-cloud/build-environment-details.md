@@ -17,7 +17,7 @@ Cloud Manager builds and tests your code using a specialized build environment.
 
 * The build environment is Linux-based, derived from Ubuntu 22.04.
 * Apache Maven 3.9.4 is installed.
-  * Adobe recommends users [update their Maven repositories to use HTTPS instead of HTTP.](#https-maven)
+  * Adobe recommends users [update their Maven repositories to use HTTPS instead of HTTP](#https-maven).
 * The Java versions installed are Oracle JDK 11.0.22 and Oracle JDK 8u401.
 * **IMPORTANT**: By default, the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk1.8.0_401` which contains Oracle JDK 8u401. *_This default should be overridden for AEM Cloud Projects to use JDK 11_*. See the [Setting the Maven JDK Version](#alternate-maven-jdk-version) section for more details.
 * There are some additional system packages installed which are necessary.
@@ -26,7 +26,7 @@ Cloud Manager builds and tests your code using a specialized build environment.
   * `libpng`
   * `imagemagick`
   * `graphicsmagick`
-* Other packages may be installed at build time as described in the section [Installing Additional System Packages.](#installing-additional-system-packages)
+* Other packages may be installed at build time as described in the section [Installing Additional System Packages](#installing-additional-system-packages).
 * Every build is done on a pristine environment; the build container does not keep any state between executions.
 * Maven is always run with the following three commands.
   * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
@@ -40,7 +40,7 @@ Cloud Manager builds and tests your code using a specialized build environment.
 
 ## HTTPS Maven Repositories {#https-maven}
 
-Cloud Manager [release 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) began a rolling update to the build environment (completing with release 2023.12.0), which included an update to Maven 3.8.8. A significant change introduced in Maven 3.8.1 was a security enhancement aimed at mitigating potential vulnerabilities. Specifically, Maven now disables all insecure `http://*` mirrors by default, as outlined in the [Maven release notes.](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
+Cloud Manager [release 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) began a rolling update to the build environment (completing with release 2023.12.0), which included an update to Maven 3.8.8. A significant change introduced in Maven 3.8.1 was a security enhancement aimed at mitigating potential vulnerabilities. Specifically, Maven now disables all insecure `http://*` mirrors by default, as outlined in the [Maven release notes](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291).
 
 As a result of this security enhancement, some users may face issues during the build step, particularly when downloading artifacts from Maven repositories that use insecure HTTP connections.
 
