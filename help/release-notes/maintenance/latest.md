@@ -108,7 +108,7 @@ The 2024.10.0 feature activation will provide the full feature set for this main
 * SITES - 23650: Discrepancy in Incoming Links Count in AEM Author Environment
 * SITES - 23659: Content Language Servlet regression caused by the toggle FT_* SITES - 9757
 * SITES - 23668: Patch live copy with multifield fails with 400
-* SITES - 23759: Assets added on experience fragment are not published with Launches (p42408-e171873)
+* SITES - 23759: Assets added on experience fragment are not published with Launches
 * SITES - 24025: 302 Redirects in AEM returning location header using internal DNS instead of public DNS
 * SITES - 24036: Investigation needed for AEM RTE Persisting Characters in ASCII Format
 * SITES - 24317: Proxy Configuration not working with Basic Authentication
