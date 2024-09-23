@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 ---
 # Create Custom Components
 
-AEM Forms Edge Delivery Services allows you to customize the [native HTML form components](/help/edge/docs/forms/form-components.md) and create user-friendly and interactive forms. It enables you to modify the form components with predefined markup, as explained in the [Styling of form fields](/help/edge/docs/forms/style-theme-forms.md) using custom CSS (Cascading Style Sheets) and custom code for decorating the component, thus enhancing the appearance of form fields within an Adaptive Forms Block.
+Edge Delivery Services for AEM Forms allows you to customize the [native HTML form components](/help/edge/docs/forms/form-components.md) and create user-friendly and interactive forms. It enables you to modify the form components with predefined markup, as explained in the [Styling of form fields](/help/edge/docs/forms/style-theme-forms.md) using custom CSS (Cascading Style Sheets) and custom code for decorating the component, thus enhancing the appearance of form fields within an Adaptive Forms Block.
 
 ![Custom component](/help/edge/assets/custom-component-image.png)
 

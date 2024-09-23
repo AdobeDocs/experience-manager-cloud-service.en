@@ -11,17 +11,11 @@ role: Admin, Architect, Developer
 
 Discover how Experience Audit validates your deployment process, ensuring that changes meet baseline standards for performance, accessibility, best practices, and SEO. It provides a clear and informative dashboard interface to track these metrics.
 
->[!NOTE]
->
->This feature is only available to [the early adopter program](/help/implementing/cloud-manager/release-notes/current.md#early-adoption).
->
->For details on the existing Experience Audit feature for AEM as a Cloud Service, see [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md).
-
 ## Overview {#overview}
 
 Experience Audit validates the deployment process and helps ensure that the changes are deployed:
 
-1. Meet baseline standards for performance, accessibility, best practices, SEO (Search Engine Optimization), and PWA (Progressive Web App).
+1. Meet baseline standards for performance, accessibility, best practices, and SEO (Search Engine Optimization).
 
 1. Do not introduce regressions.
 
@@ -47,11 +41,11 @@ Audits are run as part of the pipeline. Audits can also be [run on-demand](#on-d
 
 Experience Audit is available by default for production pipelines. It can be optionally enabled for development of full-stack and front-end pipelines. In all cases, you need to define which content paths are evaluated during pipeline execution.
 
-1. Depending on the type of pipeline you wish to configure, follow the directions to:
+1. Depending on the type of pipeline you want to configure, do one of the following:
 
    * Add a new [production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) to define the paths you want the audit to evaluate.
-   * Add a new [non-production pipeline,](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) if you wish to enable the audit on a front-end or development full-stack pipeline.
-   * Or you can [edit an existing pipeline,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) and update the existing options.
+   * Add a new [non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md), if you want to enable the audit on a front-end or development full-stack pipeline.
+   * Or, you can [edit an existing pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), and update the existing options.
 
 1. To use Experience Audit when adding or editing a non-production pipeline, select the **Experience Audit** checkbox. You can find this option on the **Source Code** tab.
 
@@ -82,7 +76,7 @@ Experience Audit is available by default for production pipelines. It can be opt
 
 The results of the Experience Audit are presented in the **Stage testing** phase of the production pipeline via the [production pipeline execution page](/help/implementing/cloud-manager/deploy-code.md).
 
-![Dashboard in the pipeline](assets/experience-audit-dashboard.jpg)
+![Dashboard in the pipeline](assets/experience-audit-dashboard.png)
 
 Experience Audit provides the median Google Lighthouse scores for the [configured pages](#configuration) and the difference in score to the previous scan.
 
@@ -133,9 +127,17 @@ The report is split into two areas:
 
 #### Page scores &mdash; trend {#trend}
 
-By default, the selected view for **Page scores &mdash; trend** is **median scores** for the **Last 6 months**.
+By default, the selected view for **Page scores &mdash; trend** is **median scores** for the **Last year**.
 
-Use the **Select** and **View** drop-downs at the top and bottom of the chart button to select page-specific details and different time frames, respectively. Click **update trend** at the top of the chart to apply the selections and refresh the chart.
+You can choose to view the trends for specific Lighthouse categories by clicking the category name in the legend.
+
+![Trend Selectable](assets/experience-audit-trend-selectable.png)
+
+Use the **Select** drop-down at the top of the chart to select page-specific details, and the **View** and **Trigger** drop-downs at the bottom to choose different time frames and the trigger type, respectively.
+
+The **View** drop-down offers the possibility to select a preset time frame, or a custom interval for a more specific view.
+
+![Trend View](assets/experience-audit-trend-view.png)
 
 When moving the mouse over the chart, a tooltip displays the values for the Google Lighthouse categories at specific points in time.
 
@@ -158,17 +160,17 @@ The **Recommendations** section shows an aggregate set of insights. By default, 
 
 ![Recommendations](assets/experience-audit-recommendations.png)
 
-Click the chevron for any recommendation to reveal details about it.
+Click any recommendation to reveal details about it.
 
 ![Recommendation details](assets/experience-audit-recommendations-details.png)
 
-When available, the expanded recommendation details also contain the percentage of the recommendations impact, to help focus on the most impactful changes.
+When available, the expanded recommendation details also contain the percentage of the recommendations impact, to help focus on the most impactful changes. In addition to this, expanded recommendations may include relevant AEM documentation links and tips that can guide you through implementing the suggested fixes.
 
-Click the **view pages** link in the details view to see the pages to which the recommendation applies.
+Click the **see pages** link in the details view to see the pages to which the recommendation applies.
 
 ![Pages for the recommendation details](assets/experience-audit-details-pages.png)
 
-##### Scanned Pages {#scanned-pages}
+##### Scanned pages {#scanned-pages}
 
 The **Scanned pages** section gives details of scores on all scanned pages. Use the **Prev** and **Next** buttons to page through the results and choose on how many the display should paginate.
 
@@ -210,13 +212,13 @@ You can filter the scores chart based on the trigger type by using the **Trigger
 >
 >An on-demand scan can be started only if the environment is not deleted and there are no other pending scans on the same environment.
 
-## Experience Audit Encounters Issues {#issues}
+## Experience Audit encounters issues {#issues}
 
 If [pages you configured](#configuration) to be audited were not available or there were other errors in the audit, Experience Audit reflects this fact.
 
 The pipeline shows an expandable error section to view the relative URL paths it could not access.
 
-![Issues encountered by Experience Audit](assets/experience-audit-issues.jpg)
+![Issues encountered by Experience Audit](assets/experience-audit-issues.png)
 
 If viewing the full report, details are shown in the **[Experience Audit scan results](#results)** section, which is also expandable.
 
@@ -228,13 +230,12 @@ Some reasons that the pages might not be available are that:
 * The page does not exist.
 * The page redirects requiring authentication other than basic.
 * An internal issue occurred.
-* Etc.
 
 >[!TIP]
 >
 >[Accessing the raw reports](#scanned-pages) for a page can provide details on why the page could not be audited.
 
-## General Performance Tips {#performance-tips}
+## General performance tips {#performance-tips}
 
 Two of the most common impactful issues that are easy to fix relate to Cumulative Layout Shifts (CLS) and Largest Contentful Paint (LCP).
 
@@ -247,7 +248,7 @@ You can improve these areas by doing the following:
 * Converting images to WebP format to reduce their size.
 * Using `<picture>` and image `srcset` with varying image sizes for different viewport sizes (and ensuring that the resizing works).
 
-## Experience Audit Evaluation Details {#details}
+## Experience Audit evaluation details {#details}
 
 The following details provide additional information on how the Experience Audit evaluates your site. They are not necessary for general usage of the feature and are provided here for completeness.
 
