@@ -18,11 +18,10 @@ The 2024.10.0 feature activation will provide the full feature set for this main
 
 ### Enhancements {#enhancements-17882}
 
-FORMS-16113 - Unable to update agreement status by a different user
-FORMS-15619 - AEM Forms Translation Kit -  July 30
+FORMS-16113 - [Adobe Sign]Unable to update agreement status by a different user
+FORMS-15619 - AEM Forms Updated Translation Kit
 FORMS-14595 - [Browserless Feature] Values are missing in the DoR when prefilled data is used to compute the DoR for Browserless rendering
 FORMS-10781 - Enhance rule editor to create rules for next/prev item in a panel
-SKYOPS-83436 - Java Runtime 21 rollout breaks creation of adaptive forms AEM Forms
 SITES-25008 - Improve handling of PersistenceExceptions and permissions problems
 SITES-24912 - [Project Freyja] TriggerIngestionWorkflowProcess should add result as comment
 SITES-24904 - Remove usage of referenced service-user in headless bundle
@@ -69,10 +68,8 @@ SITES-16615 - Promote Launch endpoint
 SITES-16614 - Rebase Launch endpoint
 SITES-16610 - Get launch details endpoint
 GRANITE-53872 - Add new env vars for IMS Client ID
-GRANITE-53028 - NPE In ExternalProcessPollingHandler
-FORMS-16155 - [Async Function] Implement Async function
+FORMS-16155 - [Rule Editor] Implement Async function
 CQ-4358342 - Register RequestProcessors on only one HTTP method
-CQ-4358290 - Target Setting is NOT Working on Published Page
 CQ-4358217 - Deserialise request body from request entity
 CQ-4357642 - Update MSFT credentials in OOTB Connector
 CQ-4354583 - [AEMaaCS] Send translation process events via Adobe Pipeline
@@ -81,15 +78,15 @@ ASSETS-37750 - [Priority 4] [GraphQL] Support for DM scene7 URLs - image smart c
 ### Fixed Issues {#fixed-issues-17882}
 
 FORMS-16139 - Adding required logging for DoR in core-components form
-FORMS-16096 - Forms User does not have access to /libs/fd/af/components/guidesubmittype/restendpoint/cq - dialog/content/items/restEndPointSource/items/config
+FORMS-16096 - Forms User does not have access to restendpoint dialog
 FORMS-16091 - Consuming the restructured Binary.java 
-FORMS-15835 - Post-submission form URL rewrite
+FORMS-15835 - Post-submission form URL rewrite issue.
 FORMS-15799 - Adobe Sign GovCloud Signature page does note render in iframe
 FORMS-15682 - AEMForms - Unable to bind DOR to Dynamics FDM
 FORMS-15623 - AEMaaCS Forms - Alternatives to Update Multiple Tables in Dynamics with One POST
 FORMS-15595 - AEM Form TnC Component Consent Text line break issue
 FORMS-15381 - UI enhancement of Authorization Scope message
-FORMS-15363 - [Backport Request 6.5] Displayed Name in Rule Editor
+FORMS-15363 - Displayed Name in Rule Editor
 FORMS-13873 - AFv2 - (“-”) in the name of component result in failure of rules
 FORMS-7018 - Empty element receives focus
 FORMS-6935 - State of active component lacks 3 to 1 contrast ratio.
@@ -135,6 +132,8 @@ FORMS-13173 - Dropdown list misalignment in Adaptive Form > Rule Editor > Drop o
 CQ-4358028 - Failed to create project if thumbnail is uploaded
 CQ-4357878 - Translation framework is not setting error state upon vendor failure translation 
 CQ-4356887 - Inconsistency in Translation Project Status for Akamai Technologies Inc
+GRANITE-53028 - NPE In ExternalProcessPollingHandler
+CQ-4358290 - Target Setting is NOT Working on Published Page
 
 ### Known Issues {#known-issues-17882}
 
