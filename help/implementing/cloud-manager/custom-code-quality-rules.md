@@ -640,7 +640,7 @@ See [indexing documentation](/help/operations/indexing.md#preparing-the-new-inde
 * **Severity**: Blocker
 * **Since**: 2021.8.0
 
-Oak indexes of type `lucene` must always be asynchronously indexed. Failure to do this may result in system instability. More information on the structure of Lucene indexes can be found in the [Oak documentation.](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition)
+Oak indexes of type `lucene` must always be asynchronously indexed. Failure to do this may result in system instability. More information on the structure of Lucene indexes can be found in the [Oak documentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition).
 
 #### Non-compliant code {#non-compliant-code-indexasync}
 
@@ -892,7 +892,7 @@ The migration tool in the [Experience Manager as a Cloud Service Assets GitHub r
 
 While the use of static templates is historically common in Experience Manager projects, Adobe recommends editable templates because they provide the most flexibility and support additional features not present in static templates. More information can be found in the document [Page Templates](/help/implementing/developing/components/templates.md).
 
-Migration from static to editable templates can be largely automated using the [Experience Manager Modernization Tools.](https://opensource.adobe.com/aem-modernize-tools/)
+Migration from static to editable templates can be largely automated using the [Experience Manager Modernization Tools](https://opensource.adobe.com/aem-modernize-tools/).
 
 ### Usage of legacy foundation components is discouraged {#oakpal-usage-legacy}
 
@@ -903,7 +903,7 @@ Migration from static to editable templates can be largely automated using the [
 
 The legacy Foundation Components (that is, components under `/libs/foundation`) have been deprecated for several Experience Manager releases in favor of the Core Components. Usage of the Foundation Components as the basis for custom components (whether by overlay or inheritance) is discouraged and should be converted to the corresponding Core Components.
 
-This conversion can be facilitated by the [Experience Manager Modernization Tools.](https://opensource.adobe.com/aem-modernize-tools/)
+This conversion can be facilitated by the [Experience Manager Modernization Tools](https://opensource.adobe.com/aem-modernize-tools/).
 
 ### Only use supported run mode names and ordering {#oakpal-supported-runmodes}
 
@@ -948,7 +948,7 @@ Hard to troubleshoot issues can occur when a custom search index definition node
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
-A properly defined custom search index definition node must contain a child node named `indexRules` which, in turn must have at least one child. More information can be found in the [Oak documentation.](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
+A properly defined custom search index definition node must contain a child node named `indexRules` which, in turn must have at least one child. More information can be found in the [Oak documentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
 ### Custom search index definition nodes must follow naming conventions {#oakpal-custom-search-definitions}
 
@@ -1202,7 +1202,7 @@ AEM Cloud Service prohibits custom search index definitions (nodes of type `oak:
 
 >[!WARNING]
 >
->You are urged to address this as soon as possible since it will cause pipelines to fail starting with the [Cloud Manager August 2024 release.](/help/implementing/cloud-manager/release-notes/current.md)
+>You are urged to address this as soon as possible since it will cause pipelines to fail starting with the [Cloud Manager August 2024 release](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### Custom full-text Index Definition Of Type damAssetLucene Must Be Correctly Prefixed With 'damAssetLucene' {#oakpal-dam-asset-lucene}
 
@@ -1215,7 +1215,7 @@ AEM Cloud Service prohibits custom full-text index definitions of type `damAsset
 
 >[!WARNING]
 >
->You are urged to address this as soon as possible since it will cause pipelines to fail starting with the [Cloud Manager August 2024 release.](/help/implementing/cloud-manager/release-notes/current.md)
+>You are urged to address this as soon as possible since it will cause pipelines to fail starting with the [Cloud Manager August 2024 release](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### Index Definition Nodes Must Not Contain Properties With Same Name {#oakpal-index-property-name}
 
@@ -1228,7 +1228,7 @@ AEM Cloud Service prohibits custom search index definitions (that is, nodes of t
 
 >[!WARNING]
 >
->You are urged to address this as soon as possible since it will cause pipelines to fail starting with the [Cloud Manager August 2024 release.](/help/implementing/cloud-manager/release-notes/current.md)
+>You are urged to address this as soon as possible since it will cause pipelines to fail starting with the [Cloud Manager August 2024 release](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### Customizing Of Certain OOTB Index Definitions is Prohibited {#oakpal-customizing-ootb-index}
 
@@ -1248,7 +1248,7 @@ AEM Cloud Service prohibits unauthorized modifications of the following OOTB ind
 
 >[!WARNING]
 >
->You are urged to address this as soon as possible since it will cause pipelines to fail starting with the [Cloud Manager August 2024 release.](/help/implementing/cloud-manager/release-notes/current.md)
+>You are urged to address this as soon as possible since it will cause pipelines to fail starting with the [Cloud Manager August 2024 release](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### Configuration Of The Tokenizers In Analyzers Should Be Created With The Name 'tokenizer' {#oakpal-tokenizer}
 
@@ -1261,7 +1261,7 @@ AEM Cloud Service prohibits creation of tokenizers with incorrect names in analy
 
 >[!WARNING]
 >
->You are urged to address this as soon as possible since it will cause pipelines to fail starting with the [Cloud Manager August 2024 release.](/help/implementing/cloud-manager/release-notes/current.md)
+>You are urged to address this as soon as possible since it will cause pipelines to fail starting with the [Cloud Manager August 2024 release](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### Configuration Of Indexing Definitions Should Not Contain Spaces {#oakpal-indexing-definitions-spaces}
 
