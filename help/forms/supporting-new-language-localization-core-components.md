@@ -85,7 +85,7 @@ Clone the Adaptive Forms Core Components Repository: You need a client library f
 
     ```
 
-    This command downloads the repository and create a folder named `aem-core-forms-components` on your machine. Throughout this guide, we refer to this folder as the `[Adaptive Forms Core Components repository]`
+    This command downloads the repository and create a folder named `aem-core-forms-components` on your machine. Throughout this guide, we refer to this folder as the `[Adaptive Forms Core Components repository]`.
 
 
 ## Add a locale {#add-localization-support-for-non-supported-locales}
