@@ -57,11 +57,11 @@ This article is organized in the following way:
       
 1. Place the file somewhere under a top level folder named *config* or similar, as described in [Using Config Pipelines](/help/operations/config-pipeline.md#folder-structure).
 
-1. For environment types other than RDE (which is not currently supported), create a targeted deployment config pipeline in Cloud Manager, as referenced by [this section](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline#creating-and-managing); note that Full Stack pipelines and Web Tier pipelines do not deploy the configuration file.
+1. For environment types other than RDE (which is not currently supported), create a targeted deployment config pipeline in Cloud Manager, as referenced by [this section](/help/operations/config-pipeline.md#creating-and-managing); note that Full Stack pipelines and Web Tier pipelines do not deploy the configuration file.
 
 1. Deploy the configuration. 
 
-Tokens in the configuration (such as `${{SPLUNK_TOKEN}}`) represent secrets, which should not be stored in Git. Instead, declare them as Cloud Manager [Secret Environment Variables](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline#secret-env-vars). Make sure to select **All** as the dropdown value for the Service Applied field, so logs can be forwarded to author, publish, and preview tiers.
+Tokens in the configuration (such as `${{SPLUNK_TOKEN}}`) represent secrets, which should not be stored in Git. Instead, declare them as Cloud Manager [Secret Environment Variables](/help/operations/config-pipeline.md#secret-env-vars). Make sure to select **All** as the dropdown value for the Service Applied field, so logs can be forwarded to author, publish, and preview tiers.
    
 It is possible to set different values between CDN logs and AEM logs (including Apache/Dispatcher), by including an additional **cdn** and/or **aem** block after the **default** block, where properties can override those defined in the **default** block; only the enabled property is required. A possible use case could be to use a different Splunk index for CDN logs, as the example below illustrates. 
    
