@@ -150,6 +150,10 @@ Anyone can access the public beta by clicking the *New Console Available* button
 
 Similar to AEM 6.5, Apache/dispatcher ingest rewrite maps placed in a specific location in the publish repository, and load them, without requiring a web tier pipeline execution. This approach let business users declare redirects using a spreadsheet or a UI, like ACS Commons Redirect Map Manager or a custom application. Join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**.
 
+### Config Pipeline for RDEs (Early Adopter Program) {#config-pipeline-rdes-early-adopter}
+
+The [Config Pipeline](/help/operations/config-pipeline.md) is used to deploy yaml file configurations, including CDN options (traffic filter rules, request/response transformations, etc). Join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>** to deploy these same configurations to RDEs (Rapid Development Environments), which use a CLI.
+
 
 ## [!DNL Experience Manager] Guides {#guides}
 
