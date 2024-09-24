@@ -344,7 +344,7 @@ A typical Async Function call rule to execute asynchronous function is structure
 
 `[Callback Function];`
 
-For more information on how to use the Async Function call in the Visual Rule Editor, refer to the [Using asynchronous function calls in the rule editor](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons) article.
+For more information on how to use the Async Function call in the Visual Rule Editor, refer to the [Using asynchronous function calls in the rule editor](/help/forms/using-asynchronous-function-calls-in-rule-editor.md) article.
 
 <!--
 ### [!UICONTROL Set Options Of] {#setoptionsof}
