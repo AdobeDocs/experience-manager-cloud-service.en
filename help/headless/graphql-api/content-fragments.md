@@ -926,7 +926,7 @@ The solution in GraphQL means you can:
   * see [Sample query for Dynamic Media asset delivery by URL - Image Reference](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
 * use `_dmS7Url` on multiple references; `ImageRef`, `MultimediaRef` and `DocumentRef`
   * see [Sample query for Dynamic Media asset delivery by URL - Multiple References](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
-* use Smart Crop
+* use `_dmS7Url` with Smart Crop functionality
   * see [Sample query for Dynamic Media asset delivery by URL - with Smart Crop](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
 
 >[!NOTE]
