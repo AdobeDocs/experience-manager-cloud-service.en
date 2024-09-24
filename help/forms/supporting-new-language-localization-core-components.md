@@ -236,11 +236,12 @@ Now, let's incorporate the `clientlib-it-custom-locale` library into your AEM as
         ![Pasting clientlib-it-custom-locale](/help/forms/assets/clientlib-it-custom-locale-paste.png)
 
 1. Update `aemLangUrl` path in `languageinit.js`
-    1. Open the copied `clientlib-it-custom-locale` folder in an editor.
-    1. Go to the `js` directory within the `clientlib-it-custom-locale` folder:
    
-        ```
-         clientlib-it-custom-locale/js
+    1. Navigate to the following directory within your [AEMaaCS project directory]:
+
+         ```
+    
+         /ui.apps/src/main/content/jcr_root/apps/<app-id>/clientlib/clientlib-it-custom-locale/js
          ```
 
     1. Open the `languageinit.js` file in your editor.
@@ -248,14 +249,14 @@ Now, let's incorporate the `clientlib-it-custom-locale` library into your AEM as
    
         `const aemLangUrl = /etc.clientlibs/forms-core-components-it/clientlibs/clientlib-it-custom-locale/resources/i18n/${lang}.json;`
     
-    1. Replace `forms-core-components-it` with your `<app-id>` in the above line. 
+    1. Replace `forms-core-components-it` with your `<app-id>` (actual ID of your application) in the above line. 
 
         `const aemLangUrl = '/etc.clientlibs/<app-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/${lang}.json';`
 
         ![language-init-file](/help/forms/assets/language-init-name-change.png)
 
 >[!NOTE]
->
+>  
 > If you do not replace `forms-core-components-it` with your project name or `<app-id>`, the date picker component fails to translate.
 
 ### Create a file for your new locale:
