@@ -169,6 +169,9 @@ Similar to AEM 6.5, Apache/dispatcher ingest rewrite maps placed in a specific l
 
 The [Config Pipeline](/help/operations/config-pipeline.md) is used to deploy yaml file configurations, including CDN options (traffic filter rules, request/response transformations, etc). Join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>** to deploy these same configurations to RDEs (Rapid Development Environments), which use a CLI.
 
+## Translation Management {#translation-management}
+
+AEM translation workflows and API actions now trigger events to provide insight about translation job state changes. Users can subscribe to these events through the Adobe Developer Console. See [here](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/) for more information on the AEM Translation Management API. 
 
 ## [!DNL Experience Manager] Guides {#guides}
 
