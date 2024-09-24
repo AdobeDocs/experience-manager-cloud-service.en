@@ -16,7 +16,7 @@ To be able to author WYSIWYG content using AEM and publish it to Edge Delivery S
 * It maps and creates a relationship between page paths used on your AEM authoring instance and the public page paths used on your website.
 * It controls which content (pages, sheets, assets, etc.) are published to Edge Delivery Services.
 
-The path mapping must be configured for each project individually and according to the project's content and URL structure. It is used by AEM during content publishing and while editing content in the Universal Editor.
+The path mapping must be configured for each project individually and according to the project's content and URL structure. It is used by AEM during content publishing and while editing content in the [Universal Editor.](/help/sites-cloud/authoring/universal-editor/navigation.md)
 
 ## Configuration Format {#configuration-format}
 
@@ -43,11 +43,11 @@ The format is `<internal paths>:<external path>`. It typically consists of a min
 1. The first entry from the example is the path mapping of the website pages. 
 1. The second entry controls the mapping of the `.helix/config.json` to the corresponding spreadsheet page in the AEM authoring repository. 
 
-In this example, all pages stored under `/content/aem-boilerplate/...` will be publicly accessible on the Edge Delivery Services site directly under `https://main--my-site--org.aem.live/....`
+In this example, all pages stored under `/content/aem-boilerplate/...` will be publicly accessible on the Edge Delivery Services site directly under `https://main--my-site--org.aem.live/....`.
 
 >[!TIP]
 >
->All tabular data managed as spreadsheets (such as metadata, redirects, and taxonomy) are typically published as `.json` API URLs on Edge Delivery Services. To do so, they must be individually listed in the mapping configuration.
+>All tabular data managed as spreadsheets (e.g. metadata, redirects, and taxonomy) are typically published as `.json` API URLs on Edge Delivery Services. To do so, they must be individually listed in the mapping configuration.
 >
 >Please see the document [Using Spreadsheets to Manage Tabular Data](/help/edge/wysiwyg-authoring/tabular-data.md) for more information.
 
