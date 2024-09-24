@@ -85,7 +85,7 @@ Clone the Adaptive Forms Core Components Repository: You need a client library f
 
     ```
 
-    This command downloads the repository and create a folder named `aem-core-forms-components` on your machine. Throughout this guide, we refer to this folder as the `[Adaptive Forms Core Components repository]`.
+    This command downloads the repository and create a folder named `aem-core-forms-components` on your machine. Throughout this guide, we refer to this folder as the `[Adaptive Forms Core Components repository]`. 
 
 
 ## Add a locale {#add-localization-support-for-non-supported-locales}
@@ -235,6 +235,29 @@ Now, let's incorporate the `clientlib-it-custom-locale` library into your AEM as
 
         ![Pasting clientlib-it-custom-locale](/help/forms/assets/clientlib-it-custom-locale-paste.png)
 
+1. Update `aemLangUrl` path in `languageinit.js`
+    1. Open the copied `clientlib-it-custom-locale` folder in an editor.
+    1. Go to the `js` directory within the `clientlib-it-custom-locale` folder:
+   
+        ```
+         clientlib-it-custom-locale/js
+         ```
+
+    1. Open the `languageinit.js` file in your editor.
+    1. Locate the following line in the `languageinit.js` file: 
+   
+        `const aemLangUrl = /etc.clientlibs/forms-core-components-it/clientlibs/clientlib-it-custom-locale/resources/i18n/${lang}.json;`
+
+        ![language-init-file](/help/forms/assets/language-init-name-change.png)
+    
+    1. Replace `forms-core-components-it` with your `<app-id>` in the above line. 
+
+        `const aemLangUrl = '/etc.clientlibs/<app-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/${lang}.json';`
+
+
+    >[!NOTE]
+    >
+    > If you do not replace `forms-core-components-it` with your project name or `<app-id>`, the date picker component fails to translate.
 
 ### Create a file for your new locale:
 
