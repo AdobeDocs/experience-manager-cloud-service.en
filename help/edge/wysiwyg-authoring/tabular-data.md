@@ -116,6 +116,10 @@ In order for AEM to be able to publish the data in your spreadsheet, you additio
 
 The redirects spreadsheet is now published and publicly-accessible.
 
+>[!TIP]
+>
+>For more information about path mappings, please see the document [Path Mapping for Edge Delivery Services.](/help/edge/wysiwyg-authoring/path-mapping.md)
+
 ## Other Spreadsheet Types {#other}
 
 Now that you know how to create a redirects spreadsheet, you can create any other standard spreadsheet type:
