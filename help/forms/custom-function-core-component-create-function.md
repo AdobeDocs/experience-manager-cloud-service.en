@@ -235,7 +235,7 @@ Let's dive into the features of custom functions.
 
 ### Asynchronous support in custom functions {#support-of-async-functions}
 
-You can implement asynchronous functions in the rule editor using custom functions. For guidance on how to do this, refer to the article [Using asynchronous functions in an Adaptive Form](/help/forms/using-asynchronous-function-calls-in-rule-editor.md).
+
 
 ### Field and Global scope objects support in custom functions {#support-field-and-global-objects}
 
