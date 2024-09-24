@@ -17,7 +17,7 @@ Fulfill these requirements before adding a custom domain name in Cloud Manager.
 
 * You must have added a domain SSL certificate for the domain you want to add before adding a custom domain name as described in the document [Add an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
 * You must have the **Business Owner** or **Deployment Manager** role to add a custom domain name in Cloud Manager.
-* Be using the Fastly or other CDN.
+* Be using the Fastly or other CDN (Content Delivery Network).
 
 >[!IMPORTANT]
 >
@@ -25,22 +25,22 @@ Fulfill these requirements before adding a custom domain name in Cloud Manager.
 
 ## Where to add custom domain names {#where-to-add-cdn}
 
-You can add a custom domain name from two locations in Cloud Manager:
+You can add a custom domain name from the following two locations in Cloud Manager:
 
-   * [From the Domain Settings page](#adding-cdn-settings)
-   * [From the Environments page](#adding-cdn-environments)
+   * [Domain Settings page](#adding-cdn-settings)
+   * [Environments page](#adding-cdn-environments)
 
 When adding a custom domain name, the domain is served using the most specific, valid certificate. If multiple certificates have the same domain, then the most recently updated is chosen. Adobe recommends that you manage certificates such that there are no overlapping domains.
 
-The steps for either method described in this document are based on Fastly. If you used a different CDN, configure your domain with the CDN you have chosen to use.
+The steps for either method described in this document are based on Fastly. If you used a different CDN (Content Delivery Network), configure your domain with the CDN you have chosen to use.
 
-## Add a custom domain name from the Domain Settings page {#adding-cdn-settings}
+## Add a custom domain name {#adding-cdn-settings}
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
 
-1. In the left navigation panel, select the **Domain Settings** tab
+1. In the side menu, under **Services**, select **Domain Settings**.
 
    ![The Domain Settings window](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
@@ -53,7 +53,7 @@ Do not include `http://`, `https://`, or spaces when entering in your domain.
 
 1. In the **Verify Domain** dialog box, in the **What certificate type do you plan on using with this domain?** drop-down list, select one of the following options:
 
-   | Certificate type | Description |
+   | Certificate type option | Description |
    | --- | --- |
    | Adobe managed certificate | Select if you want to use a DV (Domain Validation) certificate. This option is ideal for most cases, providing basic domain validation. Adobe manages and renews the certificate automatically. |
    | Customer managed certificate | Select if you want to use an EV/OV certificate. This option offers enhanced security with EV (Extended Validation) or OV (Organization Validation). Use if stricter verification, higher trust levels, or custom control over the certificates is required. |
@@ -201,6 +201,8 @@ Now that you created your TXT entry, you can verify your domain name status. Pro
 
 
 ## Add a custom domain name from the Environments page {#adding-cdn-environments}
+
+<!-- I DON'T SEE THIS ABILITY ANYMORE IN THE UI -->
 
 The steps for adding a custom domain name from the **Environments** page are the same as when [adding a custom domain name from the Domain Settings page](#adding-cdn-settings), but the entry point differs. Follow these steps to add a custom domain name from the **Environments** page.
 
