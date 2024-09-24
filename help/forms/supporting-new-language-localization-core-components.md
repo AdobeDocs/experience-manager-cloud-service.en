@@ -247,17 +247,16 @@ Now, let's incorporate the `clientlib-it-custom-locale` library into your AEM as
     1. Locate the following line in the `languageinit.js` file: 
    
         `const aemLangUrl = /etc.clientlibs/forms-core-components-it/clientlibs/clientlib-it-custom-locale/resources/i18n/${lang}.json;`
-
-        ![language-init-file](/help/forms/assets/language-init-name-change.png)
     
     1. Replace `forms-core-components-it` with your `<app-id>` in the above line. 
 
         `const aemLangUrl = '/etc.clientlibs/<app-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/${lang}.json';`
 
+        ![language-init-file](/help/forms/assets/language-init-name-change.png)
 
-    >[!NOTE]
-    >
-    > If you do not replace `forms-core-components-it` with your project name or `<app-id>`, the date picker component fails to translate.
+>[!NOTE]
+>
+> If you do not replace `forms-core-components-it` with your project name or `<app-id>`, the date picker component fails to translate.
 
 ### Create a file for your new locale:
 
