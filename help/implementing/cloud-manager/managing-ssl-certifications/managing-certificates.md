@@ -29,10 +29,10 @@ A user must be a member of the **Business Owner** or **Deployment Manager** role
 
 **To update an expired customer managed SSL certificate:**
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate program.
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
-1. From the **Overview** page, navigate to the **Environments** screen.
-1. From the **Environments** screen, navigate to the **SSL Certificates** screen.
+1. In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to reveal the side menu. 
+1. Under the **Services** heading, click ![Lock closed icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL Certificates**. 
 1. In the row of the expired customer managed certificate that you want to update, click the ellipsis button at the far right, then select **View and Update**.
 
    ![Update an expired customer managed SSL certification](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
@@ -44,7 +44,7 @@ A user must be a member of the **Business Owner** or **Deployment Manager** role
     * In the **Private key** field, update this field only if you made changes to the certificate.
     * In the **Certificate chain** field (or chain of trust), paste the certificate chain.
 
-1. Click **Update** to save your changes and have them applied automatically. -->
+1. Click **Update** to save your changes and have them applied automatically.
 
 ## Replace an expired customer managed SSL certificate {#replace-ssl-certificate}
 
@@ -62,10 +62,10 @@ The following are a few reasons why you might want to rename an SSL certificate:
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate program.
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
-1. In the upper-left corner of the page, click the hamburger icon to reveal the left navigation menu. 
-1. Under the **Services** heading, click **SSL Certificates**. 
-1. On the **SSL Certificates** page, click the ellipsis at the end of a row whose certificate you want to rename. 
-1. Click **Rename**.
+1. In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to reveal the side menu. 
+1. Under the **Services** heading, click ![Lock closed icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL Certificates**. 
+1. On the **SSL Certificates** page, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) at the end of a row whose *Adobe Managed* certificate you want to rename. 
+1. In the drop-down menu, click **Rename**.
 1. In the **Rename DV Certificate** dialog box, in the **Certificate name** text field, enter the new name of the certificate.
 1. Click **Rename**.
 
@@ -81,11 +81,13 @@ A user must be a member of the **Business Owner** or **Deployment Manager** role
 
 **To delete an SSL certificate:**
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
-1. From the **Overview** page, navigate to the **Environments** screen.
-1. From the **Environments** screen, navigate to the **SSL Certificates** screen.
-1. In the row of the certificate you want to delete, click the ellipsis button at the far right, then select **Delete**.
-If the Delete button has an information icon as seen in the following image, see the Note above.
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate program.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
+1. In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to reveal the side menu.
+1. Under the **Services** heading, click ![Lock closed icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL Certificates**. 
+1. On the SSL Certificates page, in the table row of the certificate you want to delete, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)at the far right
+1. In the drop-down menu, click **Delete**.
+   If the Delete button has an information icon as seen in the following image, see the Note above.
 
    ![Delete button with Information icon](/help/implementing/cloud-manager/assets/ssl/ssl-cert-delete-infoicon.png)
 
@@ -96,8 +98,9 @@ If the Delete button has an information icon as seen in the following image, see
 
 If you already have a CDN configuration for your SSL certificate, the **SSL Certificates** page displays an informative message. It encourages you to add these configurations through the UI so they are visible and manageable in Cloud Manager.
 
-The message disappears after all pre-existing environment configurations are migrated using the UI. It may take 1-2 business days for the message to disappear.
+The message disappears after all pre-existing environment configurations are migrated using the UI. It may take one to two business days for the message to disappear.
 
 See [Add an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) for more details.
 
 A similar message is also provided on the **IP Allow List** and the **Environments** pages for environments that have pre-existing CDN configurations for IP Allow Lists or custom domain names.
+
