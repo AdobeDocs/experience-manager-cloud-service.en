@@ -520,7 +520,7 @@ You can enable support in Dynamic Media for:
 * Multi-captions and audio tracks
 * AI-generated captions (Early Access)
 
-By way of an Adobe Customer Support case that you create and submit. 
+By creating and submitting an Adobe Customer Support case. 
 
 Enabling any of the above three capabilities, enables all of them. So, if you only want DASH enabled, you are actually enabling all three capabilities listed above.  
 

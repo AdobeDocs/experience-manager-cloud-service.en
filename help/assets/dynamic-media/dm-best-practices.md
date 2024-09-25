@@ -27,7 +27,9 @@ In the accompanying guide, you'll find a comprehensive list of best practices fo
 
 Stage Business Problem Best Practice Recommendation: This section will outline specific business challenges and provide targeted best practices and recommendations to address them effectively. -->
 
-Organizations face an explosion of channels and devices for engaging with users. The customer journey spans physical stores, web, mobile, social media, emails, and commerce. To meet this demand, Dynamic Media on Adobe Experience Manager (AEM) offers a comprehensive solution. It optimizes asset delivery, handles personalization, and ensures consistent, performant, and brand-aligned experiences across channels and devices.
+{{see-also-dm}}
+
+Organizations face an explosion of channels and devices for engaging with users. The customer journey spans physical stores, web, mobile, social media, emails, and commerce. To meet this demand, Dynamic Media on Adobe Experience Manager (AEM) offers a comprehensive solution. It optimizes asset delivery, handles personalization, and ensures consistent, performant, and brand-aligned experiences across channels and devices. 
 
 Some of the key tenets of Dynamic Media include the following:
 
@@ -403,3 +405,4 @@ Want to learn more? Go to [Smart Imaging](/help/assets/dynamic-media/imaging-faq
 The CDN (Content Delivery Network) caches Dynamic Media assets for quick delivery to customers. When updates are made to these assets, it is important for the changes to take effect immediately on the website. By purging or invalidating the CDN cache, assets delivered by Dynamic Media can be updated quickly. This approach eliminates the need to wait for the cache to expire based on the TTL (Time To Live) value, which is typically set to ten hours. Depending on your specific use case, you can update the CDN TTL (Time to Live) settings accordingly.
 
 Want to learn more? Go to [Invalidate the CDN cache by way of Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
+

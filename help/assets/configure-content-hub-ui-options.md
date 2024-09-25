@@ -5,6 +5,11 @@ exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
 ---
 # Configure Content Hub user interface {#configure-content-hub-user-interface}
 
+>[!CONTEXTUALHELP]
+>id="configure_content_hub"
+>title="Configure Content Hub user interface"
+>abstract="Experience Manager Assets enables administrators to configure the options available on the Content Hub user interface. Based on the configuration options selected by the administrators, the Content Hub users are able to view fields on Content Hub. The configuration options include metadata while importing assets, filters, asset properties, metadata while searching assets, personalized branding, and any custom links."
+
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Configure assets on Content Hub](assets/configure-assets.png)
 
@@ -38,7 +43,7 @@ To access configuration options on Content Hub:
 
 ## Manage configuration options on Content Hub {#manage-configuration-options}
 
-Manage the following configuration options for your users:
+As an administrator, manage the following configuration options for your users:
 
 * [Import](#configure-import-options-content-hub)
 

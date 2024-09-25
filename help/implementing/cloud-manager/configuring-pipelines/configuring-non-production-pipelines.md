@@ -97,7 +97,7 @@ To finish the configuration of the full-stack code non-production pipeline, foll
      * **Product Functional Testing** - Execute [product functional tests](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) against the development environment.
      * **Custom Functional Testing** - Execute [custom functional tests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) against the development environment.
      * **Custom UI Testing** - Execute [custom UI tests](/help/implementing/cloud-manager/ui-testing.md) for custom applications.
-     * **Experience Audit** - Execute [Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md)
+     * **Experience Audit** - Execute [Experience Audit](/help/implementing/cloud-manager/experience-audit-dashboard.md)
 
    ![Full-stack pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
@@ -146,13 +146,13 @@ The steps to complete the creation of your non-production, targeted deployment p
    * **Git Branch** - This option defines from which branch in the selected pipeline should retrieve the code.
      * Enter the first few characters of the branch name and the auto-complete feature of this field. It finds the matching branches that you can select.
    * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
-   * **Pipeline** - For front-end non-production pipelines, you have the option to enable **[Experience Audit.](/help/implementing/cloud-manager/experience-audit-testing.md)**
+   * **Pipeline** - For front-end non-production pipelines, you have the option to enable **[Experience Audit](/help/implementing/cloud-manager/experience-audit-dashboard.md)**.
    
    ![Config pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
 1. If you enabled Experience Audit, tap or click **Continue** to advance to the **Experience Audit** tab where you can define the paths that should always be included in the Experience Audit.
 
-   * If you enabled **Experience Audit**, please see the document [Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) for details on how to configure.
+   * If you enabled **Experience Audit**, see the document [Experience Audit](/help/implementing/cloud-manager/experience-audit-dashboard.md) for details on how to configure.
    * If you did not, skip this step.
 
 1. Tap or click **Save** to save the pipeline.
