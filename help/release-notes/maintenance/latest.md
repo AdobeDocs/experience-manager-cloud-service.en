@@ -10,13 +10,13 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 17882 {#release-17882}
+## Release 17964 {#release-17964}
 
-Summarized below are the continuous improvements for maintenance release 17882, which was publicly released on September 24, 2024. The previous maintenance release was release 17689.
+Summarized below are the continuous improvements for maintenance release 17964, which was publicly released on September 25, 2024. The previous maintenance release was release 17689.
 
 The 2024.10.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-17882}
+### Enhancements {#enhancements-17964}
 
 * ASSETS - 37750: [Priority 4] [GraphQL] Support for DM scene7 URLs: image smart crops.
 * CQ - 4354583: [AEMaaCS] Send translation process events via Adobe Pipeline.
@@ -59,7 +59,7 @@ The 2024.10.0 feature activation will provide the full feature set for this main
 * SITES - 25008: Improve handling of PersistenceExceptions and permissions problems.
 * SITES - 24821: [Xwalk] Make aem.page / aem.live the default.
 
-### Fixed Issues {#fixed-issues-17882}
+### Fixed Issues {#fixed-issues-17964}
 
 * CQ - 4356887: Inconsistency in Translation Project Status for Akamai Technologies Inc.
 * CQ - 4357878: Translation framework is not setting error state upon vendor failure translation .
@@ -120,21 +120,21 @@ The 2024.10.0 feature activation will provide the full feature set for this main
 * SITES - 24918: [Xwalk] fix 504 errors returned occasionally when using dedicated ip egress.
 * SITES - 2864: Accessibility - Drag and Drop feature is not keyboard accessible.
 
-### Known Issues {#known-issues-17882}
+### Known Issues {#known-issues-17964}
 
 * FORMS - 15818: Component descriptor entry `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` not found statements in server logs. These are harmless log statements.
 
-### Deprecated Features and APIs {#deprecated-17882}
+### Deprecated Features and APIs {#deprecated-17964}
 
 Please note that we are in the proces of updating `com.day.cq.wcm.api` and with the current release, we have marked as `@Deprecated` a few of its methods and classes. These will be removed in future releases, so please consider switching to their suggested alternatives if you are using any of them.
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-17882}
+### Security Fixes {#security-17964}
 
 AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 16 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-17882}
+### Embedded Technologies {#embedded-tech-17964}
 
 |Technology|Version|Link|
 |---|---|---|
