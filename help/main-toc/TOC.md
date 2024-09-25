@@ -922,6 +922,7 @@ user-guide-title: AEM as a Cloud Service
     + [Path Mapping](/help/edge/wysiwyg-authoring/path-mapping.md)
     + [Tabular Data and Spreadheets](/help/edge/wysiwyg-authoring/tabular-data.md)
     + [Managing Taxonomy Data](/help/edge/wysiwyg-authoring/taxonomy.md)
+    + [WYSIWYG and Doc-Based Blocks](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
     + [WIP Sites Features](/help/edge/wysiwyg-authoring/wip-features.md)
   + Document-Based Authoring {#document-authoring}
     + [Authoring](/help/edge/docs/authoring.md)
