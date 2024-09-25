@@ -16,12 +16,12 @@ Upon creation of a new code repository in Cloud Manager, an `it.tests` folder is
 
 >[!NOTE]
 >
->If your repository was created before Cloud Manager automatically created `it.tests` folders, you may also generate the latest version using the [AEM Project Archetype.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
+>If your repository was created before Cloud Manager automatically created `it.tests` folders, you may also generate the latest version using the [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests).
 
 Once you have the contents of the `it.tests` folder, you can use it as a basis for your own tests and then:
 
-1. [Develop your test cases.](#writing-functional-tests)
-1. [Run the tests locally.](#local-test-execution)
+1. [Develop your test cases](#writing-functional-tests).
+1. [Run the tests locally](#local-test-execution).
 1. Commit your code into the Cloud Manager repository and execute a Cloud Manager pipeline.
 
 ## Writing Custom Functional Tests {#writing-functional-tests}

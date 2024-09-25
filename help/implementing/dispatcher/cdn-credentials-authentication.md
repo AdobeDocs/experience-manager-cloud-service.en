@@ -67,7 +67,7 @@ Additional properties include:
    * action - must specify "authenticate", with the intended authenticator referenced.
 
 >[!NOTE]
->The Edge Key must be configured as a [secret type Cloud Manager environment variable](/help/operations/config-pipeline.md#secret-env-vars), before the configuration referencing it is deployed.
+>The Edge Key must be configured as a [secret type Cloud Manager environment variable](/help/operations/config-pipeline.md#secret-env-vars), before the configuration referencing it is deployed. It is recommended to use a unique random key of minimum 32 bytes length; for example, the Open SSL cryptographic library can generate a random key by executing the command `openssl rand -hex 32`.
 
 ### Migrating safely to reduce the risk of blocked traffic {#migrating-safely}
 
@@ -136,7 +136,7 @@ Additional properties include:
   * action - must specify "authenticate", with the intended authenticator referenced.
 
 >[!NOTE]
->The Purge Key must be configured as a [secret type Cloud Manager Environment Variable](/help/operations/config-pipeline.md#secret-env-vars), before the configuration referencing it is deployed.
+>The Purge Key must be configured as a [secret type Cloud Manager Environment Variable](/help/operations/config-pipeline.md#secret-env-vars), before the configuration referencing it is deployed. It is recommended to use a unique random key of minimum 32 bytes length; for example, the Open SSL cryptographic library can generate a random key by executing the command openssl rand -hex 32
 
 You may reference [a tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) focused on configuring purge keys and performing the CDN cache purge.
 

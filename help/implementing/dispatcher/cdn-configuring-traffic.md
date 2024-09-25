@@ -149,6 +149,21 @@ Explained in the table below are the available actions.
 | **transform** |op:replace, (reqProperty or reqHeader or queryParam or reqCookie), match, replacement  | Replaces part of the request parameter (only "path" property supported), or request header, query parameter, or cookie with a new value. |
 |              |op:tolower, (reqProperty or reqHeader or queryParam or reqCookie) | Sets the request parameter (only "path" property supported), or request header, query parameter, or cookie to its lowercase value. |
 
+Replace actions support capture groups, as illustrated below:
+
+```
+      - name: replace-jpg-with-jpeg
+        when:
+          reqProperty: path
+          like: /mypath          
+        actions:
+          - type: transform
+            reqProperty: path
+            op: replace
+            match: (.*)(\.jpg)$
+            replacement: "\1\.jpeg"          
+```
+
 Actions can be chained together. For example:
 
 ```
@@ -384,3 +399,31 @@ data:
 |-----------|--------------------------|-------------|
 |**redirect** |location|Value for the "Location" header.|
 |     |status (optional, default is 301)|HTTP status to be used in the redirect message, 301 by default, the allowed values are: 301, 302, 303, 307, 308.|
+
+The locations of a redirect can be either string literals (e.g., https://www.example.com/page) or the result of a property (e.g., path) that is optionally transformed, with the following syntax:
+
+```
+experimental_redirects:
+  rules:
+    - name: country-code-redirect
+      when: { reqProperty: path, like: "/" }
+      action:
+        type: redirect
+        location:
+          reqProperty: clientCountry
+          transform:
+            - op: replace
+              match: '^(/.*)$'
+              replacement: 'https://www.example.com/\1/home'
+            - op: tolower
+    - name: www-redirect
+      when: { reqProperty: domain, equals: "example.com" }
+      action:
+        type: redirect
+        location:
+          reqProperty: path
+          transform:
+            - op: replace
+              match: '^(/.*)$'
+              replacement: 'https://www.example.com/\1'
+```
