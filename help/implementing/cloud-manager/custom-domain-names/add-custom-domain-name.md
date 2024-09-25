@@ -1,6 +1,6 @@
 ---
 title: Add a Custom Domain Name
-description: Learn how to add a custom domain name using Cloud Manager.
+description: Learn how to add a custom domain name using Domain Settings in Cloud Manager.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 
 # Add a custom domain name {#adding-cdn}
 
-Learn how to add a custom domain name using Cloud Manager.
+Learn how to add a custom domain name using **Domain Settings** in Cloud Manager.
 
 ## Requirements {#requirements}
 
@@ -40,7 +40,7 @@ The steps for either method described in this document are based on Fastly. If y
 
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
 
-1. In the side menu, under **Services**, select **Domain Settings**.
+1. In the side menu, under **Services**, select ![Settings icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) **Domain Settings**.
 
    ![The Domain Settings window](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
@@ -55,8 +55,8 @@ Do not include `http://`, `https://`, or spaces when entering in your domain.
 
    | Certificate type option | Description |
    | --- | --- |
-   | Adobe managed certificate | Select if you want to use a DV (Domain Validation) certificate. This option is ideal for most cases, providing basic domain validation. Adobe manages and renews the certificate automatically. |
-   | Customer managed certificate | Select if you want to use an EV/OV certificate. This option offers enhanced security with EV (Extended Validation) or OV (Organization Validation). Use if stricter verification, higher trust levels, or custom control over the certificates is required. |
+   | Adobe managed certificate | Select this certificate type if you want to use a DV (Domain Validation) certificate. This option is ideal for most cases, providing basic domain validation. Adobe manages and renews the certificate automatically. |
+   | Customer managed certificate | Select this certificate type if you want to use an EV/OV certificate. This option offers enhanced security with EV (Extended Validation) or OV (Organization Validation). Use if stricter verification, higher trust levels, or custom control over the certificates is required. |
 
 1. In the **Verify domain** dialog box, based on the certificate type you selected, do one of the following:
 
@@ -71,7 +71,7 @@ Do not include `http://`, `https://`, or spaces when entering in your domain.
 
    >[!NOTE]
    >
-   >If you use a self-managed SSL certificate and a self-managed CDN provider, you can skip this step and go directly to [Add a CDN configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) when ready.
+   >If you use a customer-managed SSL certificate and a customer-managed CDN provider, you can skip adding an SSL certificate and go directly to [Add a CDN configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) when ready.
 
 
 ### Adobe managed certificate steps {#adobe-managed-cert-steps}
@@ -216,8 +216,8 @@ The steps for adding a custom domain name from the **Environments** page are the
 
    1. Enter the custom domain name.
    1. Select the SSL certificate associated with this name from the drop-down list.
-   1. Click **+Add**.
+   1. Click ![Add icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **Add**.
 
    ![Add a custom domain name](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 
-1. The **Add domain name** dialog box opens to the **Domain Name** tab. Continue as you would for [adding a custom domain name from the Domain Settings page](#adding-cdn-settings). -->
+1. The **Add domain name** dialog box opens to the **Domain Name** tab. Continue as you would for [adding a custom domain name from the Domain Settings page](#adding-cdn-settings). 
