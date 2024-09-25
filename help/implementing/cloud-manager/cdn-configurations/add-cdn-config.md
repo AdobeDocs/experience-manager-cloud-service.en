@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
 ---
 
-# Add a CDN configuration {#add-cdn}
+# Add a CDN (Content Delivery Network) configuration {#add-cdn}
 
 To link a domain with an SSL certificate on the Adobe-managed CDN within your program, you must add a CDN (Content Delivery Network) configuration.
 
