@@ -84,7 +84,7 @@ Or if you are just beginning the setup of your org, there might be tips on next 
 
 The main content of the **My Programs** console is the list of programs in the **My Programs** section.
 
-The **My Programs** section lists cards representing each program. Tap or click on a card to access the **Program Overview** page of the program for details about the program.
+The **My Programs** section lists cards representing each program. Click a card to access the **Program Overview** page of the program for details about the program.
 
 >[!NOTE]
 >
@@ -138,7 +138,7 @@ The ![More icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_More_
 ![Ellipsis button for programs](assets/program-ellipsis.png)
 
 * Navigate to a particular ![Data icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [Environment](/help/implementing/cloud-manager/manage-environments.md) of the program
-* Open the [Program Overview](#program-overview)
+* Open the ![Program overview icon](/help/implementing/cloud-manager/assets/program-overview.svg) [Program Overview](#program-overview)
 * ![Edit icon](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [Edit the program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
 * ![Delete icon](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[Delete a sandbox program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
@@ -155,9 +155,9 @@ The ![More icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_More_
 
 The quick links section gives you access to commonly used resources that are related.
 
-## Program overview window {#program-overview}
+## Program overview page {#program-overview}
 
-When a program is selected in the **[My Programs](#my-programs-console)** console, you are taken to the **Program Overview** window.
+When a program is selected in the **[My Programs](#my-programs-console)** console, you are taken to the **Program Overview** page.
 
 ![Program overview](assets/program-overview.png)
 
