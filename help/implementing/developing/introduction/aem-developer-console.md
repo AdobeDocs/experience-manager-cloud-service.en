@@ -11,31 +11,32 @@ role: Admin, Architect, Developer
 >
 >This article describes a revamped experience for the AEM Cloud Service Developer Console, which is now in beta, and available to some customers by clicking a button at the top of the classic UI. We appreciate any feedback you can send to `aemcs-new-devconsole-ui-beta@adobe.com`. For information about the classic AEM Developer Console, see [this article](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console).
 
-## AEM as a Cloud Service Development tools {#aem-as-a-cloud-service-development-tools}
+The AEM as a Cloud Service Developer Console includes a set of tools for debugging in Cloud environments. It can be accessed through a per-environment link in Cloud Manager.
 
 >[!NOTE]
 >The AEM as a Cloud Service Developer Console should not be confused with the similarly named [*Adobe Developer Console*](https://developer.adobe.com/developer-console/).
 >
 
-Customers can access CRXDE lite on the author tier's development environment but not stage or production. The immutable repository (`/libs`, `/apps`) cannot be written to at runtime so attempting to do so will result in errors.
 
-Instead, the Repository Browser can be launched from the AEM as a Cloud Service Developer Console, providing a read-only view into the repository for all environments on author, publish, and preview tiers. For more information see the [Repository Browser](/help/implementing/developing/tools/repository-browser.md).
+<!--
+There are multiple ways of accessing it:
 
-A set of tools for debugging AEM as a Cloud Service developer environments are available in the AEM as a Cloud Service Developer Console for RDE, dev, stage, and production environments. The url can be determined by adjusting the Author or Publish service urls as follows:
+1. Launch from Cloud Manager  
 
-`https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
+1. Type a url that can be determined by adjusting the Author or Publish service urls as follows:
+   ```  
+   https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com
+   ```  
 
-As a shortcut, the following Cloud Manager CLI command can be used to launch the AEM as a Cloud Service Developer Console based on an environment parameter described below:
+1. As a shortcut, the following Cloud Manager CLI command can be used to launch the AEM as a Cloud Service Developer Console based on an environment parameter described below:    
+   ```
+   aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>
+   ```
+-->
 
-`aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
+Developers can access the features described below: 
 
-See [Release Information](/help/release-notes/home.md) for more information.
-
-Developers can generate status information, and resolve various resources.
-
-As illustrated below, available statuses information include the state of bundles, components, OSGI configurations, oak indexes, OSGI services, and Sling jobs.
-
-### OSGi Bundles {#osgi-bundles}
+## OSGi Bundles {#osgi-bundles}
 
 ![New OSGi Bundles Screen in Dev Console](/help/implementing/developing/introduction/assets/osgi-bundles.png)
 
@@ -44,27 +45,27 @@ As illustrated below, available statuses information include the state of bundle
 * Developers want to verify on the actual environment, and check if the bundle does what they expect it to do. 
 * **Example use-case:** A version range of a dependency is specified in your bundle. Something is going wrong in the dependency. You want to check which version of the dependency is being wired into your bundle. To check this, you go to the bundle details, and use importing bundles / packages to check which bundle version or package version is being used at runtime to find out. With this information you can adjust your maven dependency version range or adapt your code.
 
-### Java Packages {#java-packages}
+## Java Packages {#java-packages}
 
 ![Java Packages tab in the Dev Console UI](/help/implementing/developing/introduction/assets/java-packages-dev-console-ui.png)
 
 * This provides a search prompt you can use to search packages that are active in the environment's OSGI system. In this location you can see which bundle exports (or provides) the package, and you can see which bundle imports (or uses) the package. You can also check for duplicate packages (same package, different versions), which can cause problems in some cases. 
-* **Example use-case:** A custom service that is using the [dynamic class loader](https://sling.apache.org/apidocs/sling9/org/apache/sling/commons/classloader/DynamicClassLoaderManager.html) is loading a class without specifying a version, that is exported by multiple bundles with different versions, causing the implementation to be different and the behaviour to change. The developer wants to see which packages are in the environment without analysing the feature model, so they search for this package and seee all the versions being exported. This gives them the information to enter a better version range. 
+* **Example use-case:** A custom service that is using the [dynamic class loader](https://sling.apache.org/apidocs/sling9/org/apache/sling/commons/classloader/DynamicClassLoaderManager.html) is loading a class without specifying a version, that is exported by multiple bundles with different versions, causing the implementation to be different and the behaviour to change. The developer wants to see which packages are in the environment without analysing the feature model, so they search for this package and see all the versions being exported. This gives them the information to enter a better version range. 
 
-### Servlets {#servlets}
+## Servlets {#servlets}
 
 ![Servlets tab in the Dev Console UI](/help/implementing/developing/introduction/assets/servlets-dev-console-ui.png)
 
 * This provides a search prompt on which you can specify a path with selectors and an extension with either GET or POST. It then provides results of servlets in order of preference which will handle the request in Sling.
 * **Example use case:** You have OSGI servlet that should be activated on a request and print something to the response, but you get an empty response back instead. You need to check if some other servlet is taking precedence over your servlet due to more specific selectors, `resourceType`, extensions or ranking. You search for the expected path, and find out another servlet is active with a higher rank. Then, you decide if you can get your servlet above in rank by adding selectors, for example. 
 
-### Services {#services}
+## Services {#services}
 
 ![Services tab in the Dev Console UI](/help/implementing/developing/introduction/assets/services-dev-console.png)
 
 * Similar to the OSGI Components view, but based on services. You can quickly search which services are provided with certain properties. 
 
-### OSGi Components {#osgi-components}
+## OSGi Components {#osgi-components}
 
 ![OSGi Components Tab in the Dev Console UI](/help/implementing/developing/introduction/assets/osgi-components-dev-console.png)
 
@@ -73,24 +74,24 @@ As illustrated below, available statuses information include the state of bundle
 * **Example use-case 1:** As developer, you want to verify if a component that is activated with a configuration is active or not on a particular environment, because you are not getting the behaviour that you expect. You simply lookup the component in the search and check to see if the component is active or not.
 * **Example use-case 2:** You are interested to see which out of the box components are present on the environment, and which services they satisfy, to learn more about Adobe Experience Manager as a Cloud Service. You can check them out in the component list. 
 
-### Integrations {#integrations}
+## Integrations {#integrations}
 
 ![Integrations tab in the Dev Console UI](/help/implementing/developing/introduction/assets/integrations-dev-console-ui.png)
 
 * Gives admins the capability to generate, rename and delete service-credentials and developer tokens.
 
-### Repository {#repository}
+## Repository {#repository}
 
 * Opens the [Repository browser](/help/implementing/developing/tools/repository-browser.md).
 
-### Status Dumps/Queries {#status-dumps-queries}
+## Status Dumps/Queries {#status-dumps-queries}
 
 ![Status Dumps / Queries tab in the Dev Console UI](/help/implementing/developing/introduction/assets/status-dumps-queries.png)
 
 * Gives a full text or JSON dump of the current state of bundles, packages, configurations, services, components, sling jobs or oak definitions.
 * This can be useful especially if the developer has discovered some unexpected state, and wants to communicate or document this for other developers. Downloading the dump gives you a snapshot of the state for later reference.
 
-### Configurations {#configurations}
+## Configurations {#configurations}
 
 ![Configurations tab in the Dev Console UI](/help/implementing/developing/introduction/assets/configurations-dev-console.png)
 
