@@ -86,3 +86,9 @@ curl "https://publish-pXXXXX-eXXXXXX.adobeaemcloud.com/cdnstatus?code=403"
 The supported codes are: 403, 404, 406, 500 and 503.
 
 In this way, you directly trigger the CDN's error handler in order to test the synthetic response for a given error code.
+
+### Tutorial
+
+Refer to the [CDN error pages](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages) tutorial for step-by-step instructions on how to create, deploy and test the CDN served error pages.
+
+
