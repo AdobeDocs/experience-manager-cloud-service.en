@@ -118,7 +118,6 @@ The 2024.10.0 feature activation will provide the full feature set for this main
 * SITES - 24036: Investigation needed for AEM RTE Persisting Characters in ASCII Format
 * SITES - 24317: Proxy Configuration not working with Basic Authentication
 * SITES - 24918: [Xwalk] fix 504 errors returned occasionally when using dedicated ip egress.
-* SITES - 2864: Accessibility - Drag and Drop feature is not keyboard accessible.
 
 ### Known Issues {#known-issues-17964}
 
