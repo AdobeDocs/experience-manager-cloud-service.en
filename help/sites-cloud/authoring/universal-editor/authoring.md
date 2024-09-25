@@ -82,7 +82,7 @@ You can view its details in the [properties rail.](/help/sites-cloud/authoring/u
 ![Editing media](assets/ue-edit-media.png)
 
 1. Tap or click the preview of the selected image in the properties rail.
-1. The [asset selector](/help/assets/asset-selector.md#using-asset-selector) window opens to allow you to select an asset.
+1. The [asset selector](/help/assets/overview-asset-selector.md#using-asset-selector) window opens to allow you to select an asset.
 1. Select to select a new asset.
 1. Select **Select** to return to the properties rail where the asset was replaced.
 

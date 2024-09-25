@@ -15,11 +15,13 @@ A user in the **Business Owner** or **Deployment Manager** role can follow these
 
 {{add-cm-allowlist-frontend-pipeline}}
 
+**To add an IP Allow List:**
+
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
 
-1. From the **Program Overview** page, using the side panel on the left side (you may need to click the hamburger icon in the upper-left corner to see the panel), click **IP Allow Lists**.
+1. From the **Program Overview** page, using the side panel (you may need to click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) in the upper-left corner to see the panel), click ![Task list icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP Allow Lists**.
 
    ![IP Allow Lists option in the side panel](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 

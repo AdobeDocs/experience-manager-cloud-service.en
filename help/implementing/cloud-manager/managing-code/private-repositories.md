@@ -104,7 +104,7 @@ When the pull request is closed or merged, the full stack code quality pipeline 
 
 ## Associating Private Repositories with Pipelines {#pipelines}
 
-Validated private repositories can be associated with [full-stack and frontend pipelines.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+Validated private repositories can be associated with [full-stack and frontend pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
 >[!NOTE]
 >
