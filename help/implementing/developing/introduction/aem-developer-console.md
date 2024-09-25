@@ -11,13 +11,12 @@ role: Admin, Architect, Developer
 >
 >This article describes a revamped experience for the AEM Cloud Service Developer Console, which is now in beta, and available to some customers by clicking a button at the top of the classic UI. We appreciate any feedback you can send to `aemcs-new-devconsole-ui-beta@adobe.com`. For information about the classic AEM Developer Console, see [this article](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console).
 
-## AEM as a Cloud Service Development tools {#aem-as-a-cloud-service-development-tools}
+The AEM as a Cloud Service Developer Console includes a set of tools for debugging in Cloud environments. It can be access through a per environment link in Cloud Manager.
 
 >[!NOTE]
 >The AEM as a Cloud Service Developer Console should not be confused with the similarly named [*Adobe Developer Console*](https://developer.adobe.com/developer-console/).
 >
 
-The AEM as a Cloud Service Developer Console includes a set of tools for debugging in Cloud environments. It can be access through a per environment link in Cloud Manager.
 
 <!--
 There are multiple ways of accessing it:
