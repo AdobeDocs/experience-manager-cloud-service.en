@@ -89,8 +89,8 @@ Your path mappings can be configured in one of two ways depending on the setup o
    }'
    ```
 
-1. If the project does not use the configuration service, the paths mapping is configured via a paths.json file in you projects GitHub repository.
+1. If the project does not use the configuration service, the paths mapping is configured via a `paths.json` file in you projects GitHub repository.
 
-   * See [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json`](/https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json) for an example.
+   * See [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json) for an example.
 
 In both cases, once you configure your path mappings, you can check the configuration via the publicly-accessible configuration URL `https://<branch>--<site>--<org>.aem.page/config.json`.
