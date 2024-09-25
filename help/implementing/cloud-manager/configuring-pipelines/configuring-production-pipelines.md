@@ -96,11 +96,11 @@ To finish the configuration of the full-stack code production pipeline, follow t
   
 1. Provide paths to be included in the Experience Audit.
 
-   * See the document [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) for details.
+   * See the document [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-dashboard.md#configuration) for details.
 
 1. Click **Save** to save your pipeline.
 
-Paths configured for the Experience Audit are submitted to the service and evaluated according to the performance, accessibility, SEO (Search Engine Optimization), best practice, and PWA (Progressive Web App) tests when the pipeline runs. See [Understanding Experience Audit Results](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
+Paths configured for the Experience Audit are submitted to the service and evaluated according to the performance, accessibility, SEO (Search Engine Optimization), best practice, and PWA (Progressive Web App) tests when the pipeline runs. See [Understanding Experience Audit Results](/help/implementing/cloud-manager/experience-audit-dashboard.md) for more details.
 
 The pipeline is saved and you can now [manage your pipelines](managing-pipelines.md) on the **Pipelines** card on the **Program Overview** page.
 
