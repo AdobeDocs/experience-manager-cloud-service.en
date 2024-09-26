@@ -129,7 +129,7 @@ Protect certain content resources by popping up a basic auth dialog requiring a 
 
 ### Client-Side Redirects {#client-side-redirects}
 
-Declare [browser redirects](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) in a configuration file git that are deployed to and evaluated at the CDN. 
+Declare [browser redirects](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) in a configuration file git that are deployed to and evaluated at the CDN. This can be useful for scenarios including deleting pagtes, changed site structure, and SEO optimization.
 
 ### New AEM Developer Console (Public Beta) {#aem-developer-console-beta}
 
