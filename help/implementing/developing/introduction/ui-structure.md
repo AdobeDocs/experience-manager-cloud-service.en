@@ -170,7 +170,7 @@ For more technical information, see the [JS documentation set](https://developer
 
 See [AEM as a Cloud Service on Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) if you are using the Unified Shell as your AEM UI. 
 
-If you need to make (or have already made) any customizations, this can be disabled:
+If you need to make, or have already made, any customizations, the Unified Shall can be disabled:
 
 * [from the UI](/help/overview/aem-cloud-service-on-unified-shell.md#disabling-unified-shell)
 
