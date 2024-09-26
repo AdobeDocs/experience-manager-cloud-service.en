@@ -150,13 +150,11 @@ The Adobe Managed CDN now supports [Edge Side Includes (ESI)](/help/implementing
 
 ### Basic Authentication at the CDN {#basicauth-cdn}
 
-Protect certain content resources by popping up a basic auth dialog requiring a username and password. This feature primarily targets light authentication use cases, like business stakeholders reviewing content, rather than serving as a comprehensive solution for end-user access rights. The list of username and passwords in managed through a configuration file in git that is deployed via Configuration Pipeline, with a reference to secret-type Cloud Manager environment variables. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
+Protect certain content resources by popping up a basic auth dialog requiring a username and password. This feature primarily targets light authentication use cases, like business stakeholders reviewing content, rather than serving as a comprehensive solution for end-user access rights. The list of username and passwords is managed through a configuration file in git that is deployed via Config Pipeline, with a reference to secret-type Cloud Manager environment variables. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
 
 ### Client-Side Redirects {#client-side-redirects}
 
-Configure 301/302 client-side redirects in source control, and deploy to the CDN. [Learn more](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Note that there are several other features already available related to [CDN configuration](/help/implementing/dispatcher/cdn-configuring-traffic.md), including request and response transformations, and routing traffic to off-AEM sites.
-
-<!-- Content Delivery-related Early Adopter Programs {#foundation-early-adopter} Email **<aemcs-cdn-config-adopter@adobe.com>**, indicating which of the early adopter programs below you are interested in. -->
+Declare [browser redirects](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) in a configuration file git that are deployed to and evaluated at the CDN. 
 
 ### New AEM Developer Console (Public Beta) {#aem-developer-console-beta}
 
@@ -169,7 +167,7 @@ Anyone can access the public beta by clicking the *New Console Available* button
 
 ### Business Users Can Declare Redirects Outside of Git (Early Adopter Program) {#apache-rewritemaps-early-adopter}
 
-Similar to AEM 6.5, Apache/dispatcher ingest rewrite maps placed in a specific location in the publish repository, and load them, without requiring a web tier pipeline execution. This approach let business users declare redirects using a spreadsheet or a UI, like ACS Commons Redirect Map Manager or a custom application. Join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**.
+Similar to AEM 6.5, Apache/dispatcher ingests rewrite maps placed in a specific location in the publish repository, and loads them without requiring a web tier pipeline execution. This approach lets business users declare redirects using a spreadsheet or a UI, like ACS Commons Redirect Map Manager or a custom application. Join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**.
 
 ### Config Pipeline for RDEs (Early Adopter Program) {#config-pipeline-rdes-early-adopter}
 
