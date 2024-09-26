@@ -109,7 +109,7 @@ See [Add a non-production pipeline](/help/implementing/cloud-manager/configuring
 
 Using a config pipeline, you can deploy settings quickly for log forwarding, purge-related maintenance tasks, and various CDN configurations, including traffic filter rules (such as WAF (Web Application Firewall) rules). Additionally, you can manage request and response transformations, origin selectors, client-side redirects, error pages, customer-managed CDN keys, purge API keys, and basic authentication.
 
-See [Use config pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) for a comprehensive list of supported features and to learn how to manage the configurations in your repository so they are deployed properly.
+See [Use config pipelines](/help/operations/config-pipeline.md) for a comprehensive list of supported features and to learn how to manage the configurations in your repository so they are deployed properly.
 
 ### Configure config Pipelines {#configure-config-deployment}
 
