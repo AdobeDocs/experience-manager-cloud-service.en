@@ -919,6 +919,7 @@ user-guide-title: AEM as a Cloud Service
     + [Developer Getting Started Guide](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
     + [Creating Blocks](/help/edge/wysiwyg-authoring/create-block.md)
     + [Content Modeling](/help/edge/wysiwyg-authoring/content-modeling.md)
+    + [Path Mapping](/help/edge/wysiwyg-authoring/path-mapping.md)
     + [Tabular Data and Spreadheets](/help/edge/wysiwyg-authoring/tabular-data.md)
     + [Managing Taxonomy Data](/help/edge/wysiwyg-authoring/taxonomy.md)
     + [WYSIWYG and Doc-Based Blocks](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
