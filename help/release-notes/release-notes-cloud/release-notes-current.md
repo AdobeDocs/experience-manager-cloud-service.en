@@ -28,11 +28,13 @@ The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] cu
 
 You can find the latest maintenance release notes [here](/help/release-notes/maintenance/latest.md).
 
-## Release Video {#release-video}
+<!--  ## Release Video {#release-video}
 
 Have a look at the September 2024 Release Overview video for a summary of the features added in the 2024.9.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3433381?quality=12)
+
+-->
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -71,28 +73,6 @@ To get early access to AI-generated captions support on your Dynamic Media accou
 
 Asset Selector now supports browsing Collections to find your desired asset.
 ![Asset selector collections](/help/assets/assets/collections-rail-modal-view.png)
-
-### New features in Assets view {#assets-view-new-features}
-
-**Updated Adobe Firefly Image Generation**
-
-Assets as a Cloud Service now uses the latest widget from Firefly that allows you to generate images in different styles using Adobe Firefly. By defining its style, composition, dimensions, and more, using the in-built Firefly editor, you can quickly create & save the assets you need directly within the AEM Assets repository for immediate use.
-
-![Adobe Firefly image generation](/help/assets/assets/bugatti-type-57.png)
-
-**PSB file support**
-
-Assets as a Cloud Service now supports Photoshop large documents (PSB files) in addition to the existing PSD file support.
-
-### New enhancements in Content Hub {#content-hub-new-enhancements}
-
-* Better handling of long filenames, easy expansion of complete name via tooltip.
-* Improved thumbnails to better fit content aspect ratio and cover a larger area of content.
-* Custom thumbnail experience from AEM supported with content hub.
-* Improvements in color search.
-* Improvements in configurations save experience.
-* Improved info page of collections to reflect the creator name.
-
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -145,7 +125,6 @@ The Generative AI capabilities on offer are:
 * Issue with Carousel Category Multifield for Drag & Drop
 * On-click doesn’t working for the menus in the Page information on category & product editor page
 * Order Number is not visible in Order Confirmation Page
-
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
