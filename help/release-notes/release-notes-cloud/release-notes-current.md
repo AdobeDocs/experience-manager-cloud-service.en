@@ -40,17 +40,9 @@ Have a look at the September 2024 Release Overview video for a summary of the fe
 
 ### New feature in Experience Manager Sites {#new-feature-sites}
 
-**AEM Authoring for Edge Delivery Services**
+#### Translation Management {#translation-management}
 
-Existing Sites [inheritance](/help/sites-cloud/authoring/universal-editor/inheritance.md) functionality is now supported including:
-
-* [AEM Launches](/help/sites-cloud/authoring/launches/overview.md)
-* [MSM](/help/sites-cloud/administering/msm/overview.md) at the page level
-
-In addition, the following page management features are now supported:
-
-* [AEM Tags](/help/sites-cloud/authoring/sites-console/tags.md) can be exported as a [taxonomy](/help/edge/wysiwyg-authoring/taxonomy.md) to Edge Delivery Services.
-* [Templates](/help/edge/wysiwyg-authoring/templates.md) for Edge Delivery Services are coming soon!
+AEM translation workflows and API actions now trigger events to provide insight about translation job state changes. Users can subscribe to these events through the Adobe Developer Console. See [here](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/) for more information on the AEM Translation Management API. 
 
 ### Early Adopter Program {#sites-early-adopter}
 
@@ -147,7 +139,6 @@ Anyone can access the public beta by clicking the *New Console Available* button
 
 ![OSGi Bundles Screen in AEM Developer Console](/help/implementing/developing/introduction/assets/osgi-bundles.png)
 
-
 ### Business Users Can Declare Redirects Outside of Git (Early Adopter Program) {#apache-rewritemaps-early-adopter}
 
 Similar to AEM 6.5, Apache/dispatcher ingests rewrite maps placed in a specific location in the publish repository, and loads them without requiring a web tier pipeline execution. This approach lets business users declare redirects using a spreadsheet or a UI, like ACS Commons Redirect Map Manager or a custom application. Join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**.
@@ -155,10 +146,6 @@ Similar to AEM 6.5, Apache/dispatcher ingests rewrite maps placed in a specific 
 ### Config Pipeline for RDEs (Early Adopter Program) {#config-pipeline-rdes-early-adopter}
 
 The [Config Pipeline](/help/operations/config-pipeline.md) is used to deploy yaml file configurations, including CDN options (traffic filter rules, request/response transformations, etc). Join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>** to deploy these same configurations to RDEs (Rapid Development Environments), which use a CLI.
-
-## Translation Management {#translation-management}
-
-AEM translation workflows and API actions now trigger events to provide insight about translation job state changes. Users can subscribe to these events through the Adobe Developer Console. See [here](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/) for more information on the AEM Translation Management API. 
 
 ## [!DNL Experience Manager] Guides {#guides}
 
