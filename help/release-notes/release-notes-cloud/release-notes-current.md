@@ -67,6 +67,11 @@ AI-generated video captions in Adobe Dynamic Media use artificial intelligence t
 
 To get early access to AI-generated captions support on your Dynamic Media account, [create and submit an Adobe Customer Support case](/help/assets/dynamic-media/video.md##enable-dash).  
 
+### New features in Asset Selector {#asset-selector-new-features}
+
+Asset Selector now supports browsing Collections to find your desired asset.
+![Asset selector collections](/help/assets/assets/collections-rail-modal-view.png)
+
 ### New features in Assets view {#assets-view-new-features}
 
 **Updated Adobe Firefly Image Generation**
