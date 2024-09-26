@@ -174,6 +174,8 @@ If you need to make (or have already made) any customizations, this can be disab
 
 * [from the UI](/help/overview/aem-cloud-service-on-unified-shell.md#disabling-unified-shell)
 
-* from your project code, by setting the `Boolean` property:
+* from your project code, by:
 
-  `/conf/global/setting/unifiedshell` - `false` 
+  * on `/conf/global/setting/unifiedshell`
+
+    * setting the `Boolean` property `enable` to `false` 
