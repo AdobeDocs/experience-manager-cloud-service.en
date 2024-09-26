@@ -619,8 +619,6 @@ user-guide-title: AEM as a Cloud Service
     + [Manage tags](/help/assets/tagging-management-assets-view.md)
     + [Content Credentials](/help/assets/content-credentials.md)
     + [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
-   
-
   + Content Hub {#content-hub}
     + [Overview](/help/assets/product-overview.md)
     + [Deploy Content Hub](/help/assets/deploy-content-hub.md)
@@ -921,8 +919,10 @@ user-guide-title: AEM as a Cloud Service
     + [Developer Getting Started Guide](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
     + [Creating Blocks](/help/edge/wysiwyg-authoring/create-block.md)
     + [Content Modeling](/help/edge/wysiwyg-authoring/content-modeling.md)
+    + [Path Mapping](/help/edge/wysiwyg-authoring/path-mapping.md)
     + [Tabular Data and Spreadheets](/help/edge/wysiwyg-authoring/tabular-data.md)
     + [Managing Taxonomy Data](/help/edge/wysiwyg-authoring/taxonomy.md)
+    + [WYSIWYG and Doc-Based Blocks](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
     + [WIP Sites Features](/help/edge/wysiwyg-authoring/wip-features.md)
   + Document-Based Authoring {#document-authoring}
     + [Authoring](/help/edge/docs/authoring.md)
@@ -1062,9 +1062,6 @@ user-guide-title: AEM as a Cloud Service
   + [Generate Variations](/help/generative-ai/generate-variations.md)
 + Implementing {#implementing}
   + [Implementing Applications for AEM as a Cloud Service](/help/implementing/home.md)
-
-
-
   + Using Cloud Manager {#using-cloud-manager}
     + [Navigation](/help/implementing/cloud-manager/navigation.md)
     + Programs {#programs}
@@ -1143,9 +1140,6 @@ user-guide-title: AEM as a Cloud Service
     + [Understand Cloud Service Content Requests](/help/implementing/cloud-manager/content-requests.md)
     + [CDN Performance Dashboard](/help/implementing/cloud-manager/cdn-performance.md)
     + [Cloud Manager FAQs](/help/implementing/cloud-manager/faqs.md)
-
-  
-
   + Developing for AEM as a Cloud Service {#developing}
     + [AEM Project Structure](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
     + [AEM Project Repository Structure Package](/help/implementing/developing/introduction/repository-structure-package.md)
@@ -1253,7 +1247,7 @@ user-guide-title: AEM as a Cloud Service
     + [ContextHub API](/help/implementing/developing/personalization/contexthub-api.md)
     + [Configuring Segmentation with ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html)
   + Configuring and Extending AEM as a Cloud Service {#configuring-and-extending}
-    + Extending AEM with App Builder{#app-builder}
+    + Extending AEM with App Builder {#app-builder}
       + [Extending AEM using Adobe Developer App Builder](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
       + [Introduction to App Builder](/help/implementing/developing/extending/app-builder/videos/introduction.md)
       + [Adobe Developer Console](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
@@ -1281,6 +1275,10 @@ user-guide-title: AEM as a Cloud Service
     + [Extending Page Properties](/help/implementing/developing/extending/page-properties.md)
     + [Extending the Bulk Editor](/help/implementing/developing/extending/bulk-editor.md)
     + [Extending MSM](/help/implementing/developing/extending/msm.md)
+    + Internationalization{#internationalization}
+      + [Internationalizing Components](/help/implementing/developing/extending/i18n/components.md)
+      + [Internationalizing UI Strings](/help/implementing/developing/extending/i18n/dev.md)
+      + [Extracting Strings for Translating](/help/implementing/developing/extending/i18n/extract.md)
   + Deploying to AEM as a Cloud Service {#deploying}
     + [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md)
     + [AEM Version Updates](/help/implementing/deploying/aem-version-updates.md)
