@@ -111,20 +111,19 @@ The Generative AI capabilities on offer are:
 >
 > Interested in joining the Early Access Program for any Forms innovation? Send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) with the list of capabilities that you are interested in.
 
-
 ## CIF Add-on {#cloud-services-cif}
 
 ### Improvements {#improvements-fixes-cif}
 
-* Make category limit customisable
+* Make category limit customisable.
 
 ### Bug fixes {#bug-fixes-cif}
 
-* Commerce fields are not properly integrated with the Assets Metadata Schema editor
-* Issue with Carousel Products Multifield for Drag & Drop
-* Issue with Carousel Category Multifield for Drag & Drop
-* On-click doesn’t working for the menus in the Page information on category & product editor page
-* Order Number is not visible in Order Confirmation Page
+* Commerce fields are not properly integrated with the Assets Metadata Schema editor.
+* Issue with Carousel Products Multifield for Drag & Drop.
+* Issue with Carousel Category Multifield for Drag & Drop.
+* On-click doesn’t working for the menus in the Page information on category & product editor page.
+* Order Number is not visible in Order Confirmation Page.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
