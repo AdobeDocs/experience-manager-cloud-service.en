@@ -55,6 +55,8 @@ As an administrator, manage the following configuration options for your users:
 
 * [Branding](#configure-branding-content-hub)
 
+* [Expired Assets](#dfdf)
+
 * [Custom Links](#configure-custom-links-content-hub)
 
 ### Import {#configure-import-options-content-hub}
@@ -162,6 +164,31 @@ Administrators can also personalize the title and body text on the banner of Con
 The branding updates enabled on the Configuration User Interface display on the Content Hub portal banner:
 
 ![Configuration UI branding on Content Hub](assets/configuration-ui-branding-updates.png)
+
+### Expired assets {#expired-assets-content-hub}
+
+Administrators can control if they need expired assets to be visible on Content Hub. If the expired assets are made visible, they can also define if users can download them.
+
+To do so, execute the following steps:
+
+1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Expired Assets]**.
+
+1. In the **[!UICONTROL Visible]** section, enable the **[!UICONTROL Allow users to view expired assets]** toggle to make all expired assets visible on Content Hub.
+
+1. After enabling the visibility of assets, you can enable or disable the ability to download expired assets using the **[!UICONTROL Allow users to download expired assets]** toggle. 
+
+1. Click **[!UICONTROL Save]** to apply the changes.
+
+   ![Expired assets on Content Hub](assets/expired-assets-content-hub.png)
+
+After enabling the visibility of assets, you can view the expired assets on Content Hub, as depicted in the following image:
+
+![Expired assets on Content Hub](assets/view-download-expired-assets.png)
+
+If the administrator has enabled download, the Content Hub users can also download them, as highlighted in the image.
+
+If the visibility of expired assets is enabled, Content Hub also highlights assets expiring within the next 15 days using the `Expiring in n days` message on the asset card.
+
 
 ### Custom Links {#configure-custom-links-content-hub}
 
