@@ -55,7 +55,7 @@ As an administrator, manage the following configuration options for your users:
 
 * [Branding](#configure-branding-content-hub)
 
-* [Expired Assets](#dfdf)
+* [Expired Assets](#expired-assets-content-hub)
 
 * [Custom Links](#configure-custom-links-content-hub)
 
