@@ -383,12 +383,11 @@ Customers who had been setup in that manner by Adobe are welcome to adapt to the
 * Adobe had setup your log forwarding before CDN logs were available and you would like to receive CDN logs.
 * A conscious decision to proactively adapt to the self-serve model so your organization has the knowledge even before a time-sensitive change is necessary.
 
-When ready to migrate, simply configure the YAML file as described in the preceding sections. Use the Cloud Manager [config pipeline] to deploy the to each of the environments where the configuration should be applied. 
+When ready to migrate, simply configure the YAML file as described in the preceding sections. Use the Cloud Manager config pipeline to deploy to each of the environments where the configuration should be applied. 
 
 It is recommended, but not required, that a configuration is deployed to all environments so they are all under self-serve control. If not, you may forget which environments have been configured by Adobe versus those configured in a self-serve way.
 
 >[!NOTE]
 >
 >When Log Forwarding is deployed to an environment previously configured by Adobe support, you may receive duplicate logs for up to a few hours. This will eventually auto-resolve.
-
 
