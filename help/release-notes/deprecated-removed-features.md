@@ -265,11 +265,36 @@ Below is an extensive list of deprecated AEM APIs and their expected removal dat
     <td>4/11/2022</td>
     <td>8/30/2024</td>
   </tr>
+  <tr>
     <td>org.apache.sling.repoinit.jcr<br>org.apache.sling.repoinit.parser.operations</td>
     <td>Usage of this API is not supported in AEM as a Cloud Service.</td>
     <td>5/17/2024</td>
     <td>6/30/2024</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
+    <td>Use org.apache.sling.xss instead.</td>
+    <td>12/12/2023</td>
+    <td>6/30/2024</td>
+  </tr>
+  <tr>
+    <td>com.adobe.granite.xss<br>com.adobe.granite.xss.impl</td>
+    <td>Note that servlet in com.adobe.granite.xss.impl.servlets is not deprecated</td>
+    <td>12/12/2023</td>
+    <td>6/30/2024</td>
   </tr>  
+  <tr>
+    <td>com.drew.*</td>
+    <td>Extracting metadata from images and videos should be done via Asset Compute in Cloud Service, or via Apache POI or Apache Tika.</td>
+    <td>9/17/2024</td>
+    <td>12/17/2024</td>
+  </tr>
+  <tr>
+    <td>org.apache.jackrabbit.oak.plugins.blob.*</td>
+    <td></td>
+    <td>9/23/2024</td>
+    <td>12/23/2024</td>
+  </tr>       
 </tbody>
 </table>
 </details>
