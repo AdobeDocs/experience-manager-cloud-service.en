@@ -30,7 +30,7 @@ By following these steps, you can use Asset Selector with your [!DNL Adobe] appl
 <html>
 <head>
     <title>Asset Selector</title>
-    <script src="https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/assets-selectors.js"></script>
+    <script src="https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/assets-selectors.js"></script>
     <script>
         // get the container element in which we want to render the AssetSelector component
         const container = document.getElementById('asset-selector-container');
