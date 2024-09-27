@@ -66,7 +66,7 @@ Read about [configuring a purge API token](/help/implementing/dispatcher/cdn-cre
 
 ### Basic authentication at the CDN {#basic-auth}
 
-For light authentication use cases including business stakeholders reviewing content, protect content by displaying a basic auth dialog requiring a username and password. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md) and join the early adopter program.
+For light authentication use cases including business stakeholders reviewing content, protect content by displaying a basic auth dialog requiring a username and password. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md).
 
 ## Customer managed CDN points to AEM managed CDN {#point-to-point-CDN}
 
