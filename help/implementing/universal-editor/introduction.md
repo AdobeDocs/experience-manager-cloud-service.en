@@ -86,7 +86,7 @@ As you explore the Universal Editor and move forward implementing it in your own
 * Content authors must have their own individual Experience Cloud accounts.
 * Chrome and Edge are the supported browsers
 
-{{ip-allow-lists-ue}}
+{{ue-ip-allow-lists}}
 
 ## Next Steps {#next-steps}
 
