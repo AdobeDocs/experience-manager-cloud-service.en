@@ -26,6 +26,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2024 {#2024}
+      + [Release Notes for 2024.8.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-8-0.md)
       + [Release Notes for 2024.7.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-7-0.md)
       + [Release Notes for 2024.6.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-6-0.md)
       + [Release Notes for 2024.5.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-5-0.md)
@@ -919,8 +920,10 @@ user-guide-title: AEM as a Cloud Service
     + [Developer Getting Started Guide](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
     + [Creating Blocks](/help/edge/wysiwyg-authoring/create-block.md)
     + [Content Modeling](/help/edge/wysiwyg-authoring/content-modeling.md)
+    + [Path Mapping](/help/edge/wysiwyg-authoring/path-mapping.md)
     + [Tabular Data and Spreadheets](/help/edge/wysiwyg-authoring/tabular-data.md)
     + [Managing Taxonomy Data](/help/edge/wysiwyg-authoring/taxonomy.md)
+    + [WYSIWYG and Doc-Based Blocks](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
     + [WIP Sites Features](/help/edge/wysiwyg-authoring/wip-features.md)
   + Document-Based Authoring {#document-authoring}
     + [Authoring](/help/edge/docs/authoring.md)
