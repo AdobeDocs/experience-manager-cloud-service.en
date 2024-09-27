@@ -34,6 +34,7 @@ This article is organized in the following way:
 * Logging destination configurations - each destination has a slightly different format
 * Log Entry Formats - information about the log entry formats
 * Advanced networking - sending AEM and Apache/Dispatcher logs through a dedicated egress or through a VPN
+* Migrating from legacy log forwarding - how to move from log forwarding previously setup by Adobe to the self-serve approach
 
 
 ## Setup {#setup}
@@ -370,4 +371,24 @@ For AEM logs (including Apache/Dispatcher), if you have configured [advanced net
        aem:
          advancedNetworking: true
    ```
+
+## Migrating from Legacy Log Forwarding {#legacy-migration}
+
+Before Log Forwarding configuration was achieved through a self-serve model, customers were requested to open support tickets, where Adobe would initiate the integration.
+
+Customers who had been setup in that manner by Adobe are welcome to adapt to the self-serve model at their convenience. There are several reason to make this transition:
+
+* A new environment (e.g., a new dev env or RDE) has been provisioned.
+* Changes to your existing Splunk endpoint or credentials.
+* Adobe had setup your log forwarding before CDN logs were available and you would like to receive CDN logs.
+* A conscious decision to proactively adapt to the self-serve model so your organization has the knowledge even before a time-sensitive change is necessary.
+
+When ready to migrate, simply configure the YAML file as described in the preceding sections. Use the Cloud Manager [config pipeline] to deploy the to each of the environments where the configuration should be applied. 
+
+It is recommended, but not required, that a configuration is deployed to all environments so they are all under self-serve control. If not, you may forget which environments have been configured by Adobe versus those configured in a self-serve way.
+
+>[!NOTE]
+>
+>When Log Forwarding is deployed to an environment previously configured by Adobe support, you may receive duplicate logs for up to a few hours. This will eventually auto-resolve.
+
 
