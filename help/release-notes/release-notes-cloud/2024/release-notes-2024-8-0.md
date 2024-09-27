@@ -6,7 +6,7 @@ role: Admin
 ---
 # 2024.8.0 Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-The following section outlines the feature release notes for the current (latest) version of [!DNL Experience Manager] as a Cloud Service.
+The following section outlines the feature release notes for the 2024.8.0 version of [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
