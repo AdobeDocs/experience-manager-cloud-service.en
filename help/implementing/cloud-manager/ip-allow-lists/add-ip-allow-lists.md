@@ -15,6 +15,8 @@ A user in the **Business Owner** or **Deployment Manager** role can follow these
 
 {{add-cm-allowlist-frontend-pipeline}}
 
+{{ip-allow-lists-ue}}
+
 **To add an IP Allow List:**
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
