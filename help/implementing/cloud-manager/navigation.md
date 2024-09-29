@@ -139,8 +139,8 @@ The ![More icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_More_
 
 * Navigate to a particular ![Data icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [Environment](/help/implementing/cloud-manager/manage-environments.md) of the program
 * Open the ![Program overview icon](/help/implementing/cloud-manager/assets/program-overview.svg) [Program Overview](#program-overview)
-* ![Edit icon](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [Edit the program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* ![Delete icon](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[Delete a sandbox program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![Edit icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [Edit the program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
+* ![Delete icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[Delete a sandbox program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
@@ -177,9 +177,9 @@ The toolbars for the program overview are similar to those toolbars of the [My P
 
 #### Cloud Manager header {#cloud-manager-header-2}
 
-In the upper-left corner of the page is the Adobe Cloud Manager header. You can click ![Side menu icon](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to show or hide the side menu of tabs to other areas of the software.
+In the upper-left corner of the page is the Adobe Cloud Manager header. You can click ![Side menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to show or hide the side menu of tabs to other areas of the software.
 
-![Cloud Manager hamburger menu](assets/cloud-manager-hamburger.png)
+![Cloud Manager side menu](assets/cloud-manager-hamburger.png)
 
 Click Adobe Cloud Manager to return to Home.
 
