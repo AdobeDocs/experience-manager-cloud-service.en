@@ -10,7 +10,7 @@ role: Admin
 >[!CONTEXTUALHELP]
 >id="aem_cloud_deprecated_features"
 >title="Deprecated and Removed Features in AEM as a Cloud Service"
->abstract="AEM as a Cloud Service has a cloud-native deployment model. Certain capabilities and features have been repalced by cloud-native counterparts and this tab shows those features." 
+>abstract="AEM as a Cloud Service has a cloud-native deployment model. Certain capabilities and features have been replaced by cloud-native counterparts and this tab shows those features." 
 
 Adobe constantly evaluates product capabilities to, over time, reinvent or replace older features with more modern alternatives to improve overall customer value, always under careful consideration of backward compatibility. Also, as [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] provides a cloud-native deployment model, certain capabilities and features were replaced by cloud-native counterparts.
 
@@ -29,6 +29,7 @@ Customers are advised to review if they use the feature/capability in their curr
 
 | Capabilities | Deprecated feature | Replacement |
 | ------------ | ------------------ | ----------- |
+|[!DNL Sites]|[JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api)|[Java Use API](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api)|
 | [!DNL Sites]       | Experience Fragments properties for **Social Media Status**. | The feature will be removed soon. |
 | [!DNL Sites]       | Template-based simple content fragments. | [Model-based structured content fragments](/help/assets/content-fragments/content-fragments-models.md) now. |
 | [!DNL Assets]       | `DAM Asset Update` workflow to process ingested images. | Asset ingestion uses [asset microservices](/help/assets/asset-microservices-overview.md) now. |
@@ -51,7 +52,7 @@ This section lists features and capabilities that have been removed from [!DNL E
 | [!DNL Sites] | Design Importer | This capability has been removed as immutable sections of the [!DNL Experience Manager] repository are not accessible at runtime. | Removed |
 | [!DNL Assets] | [!DNL Assets] sharing with Marketing Cloud Assets Core Service and Creative Cloud services is not available. | For integration with [!DNL Adobe Creative Cloud], use [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html). | Removed |
 | [!DNL Foundation]       | Support for Apache Sling datasources (OSGi bundle org.apache.sling.datasource) | N/A | Removed |
-| [!DNL Foundation]       | Suppport for JST scripting templates (OSGi bundle org.apache.sling.scripting.jst) | N/A | Removed |
+| [!DNL Foundation]       | Support for JST scripting templates (OSGi bundle org.apache.sling.scripting.jst) | N/A | Removed |
 | [!DNL Foundation]       | Support for the Apache Felix Http Whiteboard | OSGi Http Whiteboard | March 2022 |
 | [!DNL Foundation]       | Support for com.adobe.granite.oauth.server | Adobe IMS Integration | March 2023 |
 | [!DNL Foundation]       | Support for org.apache.sling.serviceusermapping feature to [get the service user id](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | N/A | 8/30/24 |
