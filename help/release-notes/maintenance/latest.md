@@ -131,7 +131,7 @@ The following is a summary of recently-deprecated features or those in the proce
 
 #### JavaScript Use API {#javascript-use-api}
 
-[The JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) is officially deprecated due to challenges in debugging and maintaining the API, as well as performance limitations compared to the Java alternative.
+[The JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) is officially deprecated due to challenges users have debugging and maintaining code that leverages the API, as well as performance limitations compared to the Java alternative.
 
 You should should transition to [the Java Use API,](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api) which offers better performance, easier debugging, and greater long-term support.
 
