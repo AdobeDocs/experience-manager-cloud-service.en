@@ -5,41 +5,40 @@ feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 ---
 
-# AEM APIs for Headless Content Delivery and Content Fragments {#aem-apis-headless-content-delivery-and-content-fragments}
+# AEM APIs for Structured Content Delivery {#aem-apis-headless-content-delivery-and-content-fragments}
 
-In Adobe Experience Manager (AEM) as a Cloud Service, there are several APIs available for use with Headless Content Delivery and Content Fragments. See the individual pages for further details of the specific APIs.
+Adobe Experience Manager (AEM) as a Cloud Service offers multiple APIs for structured content delivery. See the individual pages for further details of the specific APIs.
 
 * [AEM Edge Delivery Services REST OpenAPI for Content Fragment delivery](/help/headless/aem-edge-rest-openapi.md)
-  * This API creates JSON responses specifically for delivering the structured content provided by Content Fragments in AEM. 
-  * It requires a path to a content fragment as an endpoint. 
+  * This API creates JSON responses for delivering structured content in AEM Content Fragments. It is optimized for content delivery, including CDN integration. 
+  * It utilizes a path to a content fragment as endpoint. 
   * This API is REST based.
 * [AEM GraphQL API for Content Fragment delivery](/help/headless/graphql-api/content-fragments.md)
-  * This API is schema-based. The schemas are represented by Content Fragment Models, which define the content structure.
+  * This API is schema-based. API schemas are defined by Content Fragment Models, which define the content structure.
   * This API is GraphQL based.
 * [Content Fragments and Content Fragment Models OpenAPIs](/help/headless/content-fragment-openapis.md)
-  * These APIs are used for managing the Content Fragments and Content Fragment Models (CRUD), rather than for content delivery.
-  * This API is AEM specific. 
+  * These APIs are intended for structured content management. Respective GET operators are not optimized for content delivery.
+  * This API is REST based. 
 * [Content Fragments Support in the AEM Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)
-  * The original API for the JSON output for delivering the content of structured Content Fragments in AEM. 
-    * While robust and proven, this API does not deliver *fully hydrated* JSON output. This means that references are only output as paths, requiring secondary API requests for retrieving further content.
+  * The original API for the JSON output for structured content delivery in AEM.  
+    * While robust and proven, this API does not deliver *fully hydrated* JSON output. References are only output as paths, requiring secondary API requests for retrieving further content.
   * The Assets HTTP API can also be used for managing the Content Fragments and Content Fragment Models (CRUD).
   * This API is REST based.
-  * The API will be deprecated in the future as it is being succeeded by the Edge Delivery Services JSON REST API. The timescale is not yet known.
 
 ## JSON vs HTML {#json-vs-HTML}
 
-The format used is a decision for the developers - AEM supports both. Many comparisons are available online, but a few key considerations are 
+The content delivery format used is driven by frontend implementation - unstructured content/HTML for full-stack implementations, and structured content/JSON for headless implementations, or a combination of both in hybrid implementations. 
 
 * Definition
   * JSON (JavaScript Object Notation) - used to represent, access and process structured data. 
   * HTML (HyperText Markup Language) - a markup language of tags and elements in a hierarchical structure.
 * Primary Purpose
   * JSON is often used for transferring structure content between the server and client app.
-  * HTML is the standard markup language for creating and rendering web pages.
+  * HTML is the standard markup language for creating and rendering web pages in a browser.
 
 ## REST vs GraphQL {#rest-vs-graphql}
 
-The API used is a decision for the developers - AEM supports both. Many comparisons are available online, but a few highlights and benefits are: 
+The API used is a decision for the developers - AEM supports both. Many comparisons are available online, but a few highlights and benefits of REST are: 
 
 * Simplicity
 
@@ -59,6 +58,8 @@ The API used is a decision for the developers - AEM supports both. Many comparis
 
   * JSON responses to REST `GET` requests are inherently cacheable. GraphQL `POST` requests are not cacheable, unless they are made so; for example, by using AEM Persisted Queries that are stored on the server and requested with REST-like `GET`requests. 
 
+Benefits of GraphQL are
+
 * Efficiency of content delivery 
 
   * Focus
@@ -71,10 +72,9 @@ The API used is a decision for the developers - AEM supports both. Many comparis
 
 * Rapid Prototyping
 
-  * REST is a 2-step process:
+  * With GraphQL this is a one-step process, brought together in the GraphQL query, and can make prototyping easier. REST on the other hand is a 2-step process:
 
     1. Fetch content with API.
     2. In the JSON response, determine what to use for rendering in the client app. 
 
-    With GraphQL this is a one-step process, brought together in the GraphQL query, and can make prototyping easier. 
-
+    
