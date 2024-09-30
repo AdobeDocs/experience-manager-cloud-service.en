@@ -169,6 +169,8 @@ The branding updates enabled on the Configuration User Interface display on the 
 
 Administrators can control if they need expired assets to be visible on Content Hub. If the expired assets are made visible, they can also define if users can download them.
 
+Expired assets do not display in Content Hub by default.
+
 To do so, execute the following steps:
 
 1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Expired Assets]**.
