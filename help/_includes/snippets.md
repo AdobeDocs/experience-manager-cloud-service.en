@@ -149,6 +149,22 @@ The following table demonstrates the difference between the features available i
 >If you use&mdash;or intend to use&mdash;the front-end pipeline to develop sites, the Cloud Manager IP Allow List must be added beforehand. 
 >See [Use of the Cloud Manager IP Allow List with the front-end pipeline](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline). 
 
+## IP Allow Lists and the Universal Editor {#ip-allow-lists-ue}
+
+>[!IMPORTANT]
+>
+>[The Universal Editor](/help/implementing/universal-editor/introduction.md) is not compatible with IP allow lists.
+>
+>If you wish to use the Universal Editor, IP allow lists must not be enabled.
+
+## Universal Editor and IP Allow Lists {#ue-ip-allow-lists}
+
+>[!IMPORTANT]
+>
+>The Universal Editor is not compatible with [IP allow lists.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+>
+>If you wish to use the Universal Editor, IP allow lists must not be enabled.
+
 ## Work with Dynamic Media {#work-with-dynamic-media}
 
 >[!TIP]
