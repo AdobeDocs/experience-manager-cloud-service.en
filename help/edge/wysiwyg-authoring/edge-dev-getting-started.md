@@ -108,6 +108,10 @@ First you will need to create a new project on GitHub, based on the Adobe templa
 
    ![Committing changes](assets/edge-dev-getting-started/commit-paths-changes.png)
 
+>[!TIP]
+>
+>For more information about path mappings, please see the document [Path Mapping for Edge Delivery Services.](/help/edge/wysiwyg-authoring/path-mapping.md)
+
 ### Create and Edit a New AEM Site {#create-aem-site}
 
 Now that you have a GitHub project, you must create a new AEM site that the project can use.
