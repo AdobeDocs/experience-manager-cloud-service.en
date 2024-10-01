@@ -13,6 +13,8 @@ When applying IP Allow Lists, all IP ranges included in the list's definition ar
 
 {{add-cm-allowlist-frontend-pipeline}}
 
+{{ip-allow-lists-ue}}
+
 ## Apply IP Allow Lists {#applying}
 
 A user in the **Business Owner** or **Deployment Manager** role can follow these steps to apply an IP Allow List.
