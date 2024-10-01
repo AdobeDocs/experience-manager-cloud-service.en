@@ -37,7 +37,7 @@ Cloud Manager offers self-service tools to install and manage SSL certificates, 
 | 1 | **[Adobe managed certificate (DV)](#adobe-managed)** | Cloud Manager lets users configure DV (Domain Validation) certificates that that are provided by Adobe for quick domain setup.|
 | 2 | **[Customer managed certificate (OV/EV)](#customer-managed)** | Cloud Manager offers a platform TLS (Transport Layer Security) service to allow you to manage OV and EV SSL certificates you own as well as private keys from third-party Certificate Authorities, such as *Let's Encrypt*. | 
 
-Cloud Manager offers the following general features for managing your certificates.
+Both models offer the following general features.
 
 * Each Cloud Manager environment can use multiple certificates.
 * A private key may issue multiple SSL certificates.
