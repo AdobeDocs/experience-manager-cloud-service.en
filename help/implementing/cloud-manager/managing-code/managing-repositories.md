@@ -64,7 +64,7 @@ When viewing your repositories in the **Repositories** window, you can view the 
 
 ![Repository information](assets/repository-access-repo-info2.png)
 
-The **Repository Info** window opens with the details. For more information on accessing repository information, see [Accessing Repository Information](accessing-repositories.md).
+The **Repository Info** window opens with the details. For more information on accessing repository information, see [Accessing Repository Information](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 ## Check Branches / Create Project {#check-branches}
 
