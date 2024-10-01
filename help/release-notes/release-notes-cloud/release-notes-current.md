@@ -66,6 +66,12 @@ To get early access to AI-generated captions support on your Dynamic Media accou
 Asset Selector now supports browsing Collections to find your desired asset.
 ![Asset selector collections](/help/assets/assets/collections-rail-modal-view.png)
 
+### New features in Content Hub {#content-hub-new-features}
+
+Administrators can now control if they need expired assets to be visible on Content Hub. If the expired assets are made visible, they can also define if users can download them.
+
+![Expired assets on Content Hub](/help/assets/assets/view-download-expired-assets.png)
+
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### New Pre-release features in AEM Forms {#forms-new-prerelease-features}
@@ -114,7 +120,7 @@ The Generative AI capabilities on offer are:
 * Commerce fields are not properly integrated with the Assets Metadata Schema editor.
 * Issue with Carousel Products Multifield for Drag & Drop.
 * Issue with Carousel Category Multifield for Drag & Drop.
-* On-click doesn’t working for the menus in the Page information on category & product editor page.
+* On-click doesn't working for the menus in the Page information on category & product editor page.
 * Order Number is not visible in Order Confirmation Page.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
