@@ -1,6 +1,6 @@
 ---
 title: Manage Repositories in Cloud Manager
-description: Learn how to create, view, and delete your GIT repositories in Cloud Manager.
+description: Learn how to add, view, and delete your Git repositories in Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
@@ -42,7 +42,9 @@ Other available actions on the drop-down menu include **[Copy Repository URL](#c
    ![Repositories page](assets/repositories.png)
    *The Repositories page in Cloud Manager.*
 
-## Add repositories {#adding-repositories}
+## Add a repository {#adding-repositories}
+
+A user must have the role **Deployment Manager** or **Business Owner** to add a repository.
 
 On the **Repositories** page, near the upper-right corner, click **Add Repository**
 
@@ -54,11 +56,15 @@ Cloud Manager supports two types of repositories: Adobe-managed repositories (**
 * [Add Adobe repositories in Cloud Manager](adobe-repositories.md)
 * [Add private repositories in Cloud Manager](private-repositories.md)
 
->[!NOTE]
->
->* A user must have the role **Deployment Manager** or **Business Owner** to add a repository.
->* There is a limit of 300 repositories across all programs in any given company or IMS organization.
+There is a limit of 300 repositories across all programs in any given company or IMS organization.
 
+## Access repository information {#repo-info}
+
+When viewing your repositories in the **Repositories** window, you can view the details on how to access the Adobe-managed repositories programmatically by clicking the **Access Repo Info** button on the toolbar.
+
+![Repository information](assets/repository-access-repo-info2.png)
+
+The **Repository Info** window opens with the details. For more information on accessing repository information, see [Accessing Repository Information](accessing-repositories.md).
 
 ## Check Branches / Create Project {#check-branches}
 
@@ -85,7 +91,7 @@ The **Delete** action removes the repository from your project. A repository can
 
 ![Delete](assets/repository-delete.png)
 
-Deleting a repository makes its name unusable for any new repositories created in the future. If you attempt to use the same name, you encounter the following error message:
+Deleting a repository makes its name unusable for any new repositories created in the future. If you attempt to add a repository using the same name of a deleted repository, you encounter the following error message:
 
 `Repository name should be unique within organization.` 
 

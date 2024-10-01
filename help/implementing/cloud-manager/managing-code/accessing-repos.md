@@ -36,9 +36,9 @@ The **Access Repo Info** feature is visible to users with **Developer** or **Dep
 
    ![Access Repo Info on Pipelilnes card](assets/pipelines-card.png)
 
-1. To access the password, a new password must be generated. In the Repository Info dialog box, click **`Generate password`**.
+1. To access the password, a new password must be generated. In the **Repository Info** dialog box, select **Generate password**.
 
-1. In the confirmation dialog box, click **`Generate password`**.
+1. In the confirmation dialog box, select **Generate password**.
 
    ![Confirm password generation](assets/confirm-generated-password.png)
 
