@@ -497,11 +497,9 @@ Before activating UI tests in a Cloud Manager pipeline, it's recommended to run 
 1. Execute the below commands to start the tests using Maven
 
    ```shell
-   # Start selenium docker image (for x64 CPUs)
-   docker run --platform linux/amd64 -d -p 4444:4444 selenium/standalone-chrome-debug:latest
-   
-   # Start selenium docker image (for ARM CPUs)
-   docker run -d -p 4444:4444 seleniarm/standalone-chromium
+   # Start selenium docker image
+   # we mount /tmp/shared as a shared volume that will be used between selenium and the test module for uploads
+   docker run -d -p 4444:4444 -v /tmp/shared:/tmp/shared selenium/standalone-chromium:latest
 
    # Run the tests using the previously started Selenium instance
    mvn verify -Pui-tests-local-execution -DSELENIUM_BASE_URL=http://<server>:4444
