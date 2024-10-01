@@ -43,9 +43,9 @@ Cloud Manager offers the following general features for managing your certificat
 * A private key may issue multiple SSL certificates.
 * The platform TLS service routes requests to the customer's CDN service based on the SSL certificate used to terminate and the CDN service that hosts that domain.
 
->[!TIP]
+>[!IMPORTANT]
 >
->AEM as a Cloud Service only supports secure `https` sites. If you you have multiple custom domains and do not want to upload a certificate every time you add a domain, you may benefit by getting one certificate with multiple domains.
+>[To add and and associate a custom domain to an environment,](/help/implementing/cloud-manager/custom-domain-names/introduction.md) you must have have a valid SSL certificate that covers the domain.
 
 ### Adobe Managed Certificates {#adobe-managed}
 
@@ -63,6 +63,16 @@ OV and EV additionally offer these features over DV certificates in Cloud Manage
   * That is, it can be added once, but used multiple times.
 * Each OV/EV certificate typically contains multiple domains.
 * Cloud Manager accepts wildcard OV/EV certificates for a domain.
+
+>[!TIP]
+>
+>If you you have multiple custom domains and do not want to upload a certificate every time you add a domain, you may benefit by getting one certificate with multiple domains.
+
+>[!NOTE]
+>
+>If two certificates cover the same domain are installed, the one which is more exact is applied.
+>
+>For example, if your domain is `dev.adobe.com` and you have a certificate that covers `*.adobe.com` and a certificate that covers `dev.adobe.com`, the latter will be applied because it is more exact.
 
 #### Requirements for Customer Managed Certificates {#requirements}
 
