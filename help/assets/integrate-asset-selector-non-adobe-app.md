@@ -62,7 +62,7 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
     <title>Asset Selectors</title>
     <link rel="stylesheet" href="index.css">
     <script id="asset-selector"
-        src="https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/asset-selectors.js"></script>
+        src="https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/assets-selectors.js"></script>
     <script>
 
         const imsProps = {

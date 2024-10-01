@@ -12,7 +12,7 @@ The following section outlines the technical release notes for the current maint
 
 ## Release 17964 {#release-17964}
 
-Summarized below are the continuous improvements for maintenance release 17964, which was publicly released on September 25, 2024. The previous maintenance release was release 17689.
+Summarized below are the continuous improvements for maintenance release 17964, which was publicly released on September 25, 2024. The previous maintenance release was release 17689. Release 17882 has been made private because of an issue.
 
 The 2024.10.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 

@@ -22,7 +22,7 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2024.8.0) is August 29, 2024. The next feature release (2024.9.0) is planned for September 26, 2024.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2024.9.0) is September 26, 2024. The next feature release (2024.10.0) is planned for October 31, 2024.
 
 ## Maintenance Release Notes {#maintenance}
 
@@ -30,25 +30,17 @@ You can find the latest maintenance release notes [here](/help/release-notes/mai
 
 ## Release Video {#release-video}
 
-Have a look at the August 2024 Release Overview video for a summary of the features added in the 2024.8.0 release:
+Have a look at the September 2024 Release Overview video for a summary of the features added in the 2024.9.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3433381?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3434847?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### New feature in Experience Manager Sites {#new-feature-sites}
 
-**AEM Authoring for Edge Delivery Services**
+#### Translation Management {#translation-management}
 
-Existing Sites [inheritance](/help/sites-cloud/authoring/universal-editor/inheritance.md) functionality is now supported including:
-
-* [AEM Launches](/help/sites-cloud/authoring/launches/overview.md)
-* [MSM](/help/sites-cloud/administering/msm/overview.md) at the page level
-
-In addition, the following page management features are now supported:
-
-* [AEM Tags](/help/sites-cloud/authoring/sites-console/tags.md) can be exported as a [taxonomy](/help/edge/wysiwyg-authoring/taxonomy.md) to Edge Delivery Services.
-* [Templates](/help/edge/wysiwyg-authoring/templates.md) for Edge Delivery Services are coming soon!
+AEM translation workflows and API actions now trigger events to provide insight about translation job state changes. Users can subscribe to these events through the Adobe Developer Console. See [here](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/) for more information on the AEM Translation Management API. 
 
 ### Early Adopter Program {#sites-early-adopter}
 
@@ -67,27 +59,16 @@ AI-generated video captions in Adobe Dynamic Media use artificial intelligence t
 
 To get early access to AI-generated captions support on your Dynamic Media account, [create and submit an Adobe Customer Support case](/help/assets/dynamic-media/video.md##enable-dash).  
 
-### New features in Assets view {#assets-view-new-features}
+### New features in Asset Selector {#asset-selector-new-features}
 
-**Updated Adobe Firefly Image Generation**
+Asset Selector now supports browsing Collections to find your desired asset.
+![Asset selector collections](/help/assets/assets/collections-rail-modal-view.png)
 
-Assets as a Cloud Service now uses the latest widget from Firefly that allows you to generate images in different styles using Adobe Firefly. By defining its style, composition, dimensions, and more, using the in-built Firefly editor, you can quickly create & save the assets you need directly within the AEM Assets repository for immediate use.
+### New features in Content Hub {#content-hub-new-features}
 
-![Adobe Firefly image generation](/help/assets/assets/bugatti-type-57.png)
+Administrators can now control if they need expired assets to be visible on Content Hub. If the expired assets are made visible, they can also define if users can download them.
 
-**PSB file support**
-
-Assets as a Cloud Service now supports Photoshop large documents (PSB files) in addition to the existing PSD file support.
-
-### New enhancements in Content Hub {#content-hub-new-enhancements}
-
-* Better handling of long filenames, easy expansion of complete name via tooltip.
-* Improved thumbnails to better fit content aspect ratio and cover a larger area of content.
-* Custom thumbnail experience from AEM supported with content hub.
-* Improvements in color search.
-* Improvements in configurations save experience.
-* Improved info page of collections to reflect the creator name.
-
+![Expired assets on Content Hub](/help/assets/assets/view-download-expired-assets.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -126,29 +107,49 @@ The Generative AI capabilities on offer are:
 >
 > Interested in joining the Early Access Program for any Forms innovation? Send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) with the list of capabilities that you are interested in.
 
+## CIF Add-on {#cloud-services-cif}
+
+### Improvements {#improvements-fixes-cif}
+
+* Make category limit customisable.
+
+### Bug fixes {#bug-fixes-cif}
+
+* Commerce fields are not properly integrated with the Assets Metadata Schema editor.
+* Issue with Carousel Products Multifield for Drag & Drop.
+* Issue with Carousel Category Multifield for Drag & Drop.
+* On-click doesn't working for the menus in the Page information on category & product editor page.
+* Order Number is not visible in Order Confirmation Page.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Content Delivery-related Early Adopter Programs {#foundation-early-adopter}
+### Edge Side Includes (ESI) for Loading Dynamic Content {#esi}
 
-Email **<aemcs-cdn-config-adopter@adobe.com>**, indicating which of the early adopter programs below you are interested in.
+The Adobe Managed CDN now supports [Edge Side Includes (ESI)](/help/implementing/dispatcher/edge-side-includes.md), a markup language for edge level dynamic web content assembly. By including ESI snippets, you can cache the overall HTML page at the CDN with higher TTLs, while more frequently fetching from origin those smaller sections that require higher cadence updates (lower TTLs). This feature will be rolled out gradually.
 
-#### Basic Authentication at the CDN (Early Adopter Program) {#basicauth-cdn}
+### Basic Authentication at the CDN {#basicauth-cdn}
 
-Protect certain content resources by popping up a basic auth dialog requiring a username and password. This feature primarily targets light authentication use cases, like business stakeholders reviewing content, rather than serving as a comprehensive solution for end-user access rights. The list of username and passwords in managed through a configuration file in git that is deployed via Configuration Pipeline, with a reference to secret-type Cloud Manager environment variables. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
+Protect certain content resources by popping up a basic auth dialog requiring a username and password. This feature primarily targets light authentication use cases, like business stakeholders reviewing content, rather than serving as a comprehensive solution for end-user access rights. The list of username and passwords is managed through a configuration file in git that is deployed via Config Pipeline, with a reference to secret-type Cloud Manager environment variables. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
 
-#### Client-Side Redirects (Early Adopter Program) {#client-side-redirects-early-adopter}
+### Client-Side Redirects {#client-side-redirects}
 
-Configure 301/302 client-side redirects in source control, and deploy to the CDN. [Learn more](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Note that there are several other features already available related to [CDN configuration](/help/implementing/dispatcher/cdn-configuring-traffic.md), including request and response transformations, and routing traffic to off-AEM sites.
+Declare [browser redirects](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) in a configuration file git that are deployed to and evaluated at the CDN. This can be useful for scenarios including deleting pagtes, changed site structure, and SEO optimization.
 
-#### Business Users Can Declare Redirects Outside of Git (Early Adopter Program) {#apache-rewritemaps-early-adopter}
+### New AEM Developer Console (Public Beta) {#aem-developer-console-beta}
 
-Similar to AEM 6.5, Apache/dispatcher ingest rewrite maps placed in a specific location in the publish repository, and load them, without requiring a web tier pipeline execution. This approach let business users declare redirects using a spreadsheet or a UI, like ACS Commons Redirect Map Manager or a custom application. <!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
+Try out a revamped [AEM Developer Console](/help/implementing/developing/introduction/aem-developer-console.md), which offers a more interactive experience for debugging code in Cloud environments.
 
-#### Edge Side Includes (ESI) for Loading Dynamic Content (Early Adopter Program) {#esi-early-adopter}
+Anyone can access the public beta by clicking the *New Console Available* button in the current AEM Developer Console. Adobe welcomes feedback, which you can email to **<aemcs-new-devconsole-ui-beta@adobe.com>**.
 
-The Adobe Managed CDN now supports [Edge Side Includes (ESI)](/help/implementing/dispatcher/edge-side-includes.md), a markup language for edge level dynamic web content assembly. By including ESI snippets, you can cache the overall HTML page at the CDN with higher TTLs, while more frequently fetching from origin those smaller sections that require higher cadence updates (lower TTLs). <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
+![OSGi Bundles Screen in AEM Developer Console](/help/implementing/developing/introduction/assets/osgi-bundles.png)
 
+### Business Users Can Declare Redirects Outside of Git (Early Adopter Program) {#apache-rewritemaps-early-adopter}
+
+Similar to AEM 6.5, Apache/dispatcher ingests rewrite maps placed in a specific location in the publish repository, and loads them without requiring a web tier pipeline execution. This approach lets business users declare redirects using a spreadsheet or a UI, like ACS Commons Redirect Map Manager or a custom application. Join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**.
+
+### Config Pipeline for RDEs (Early Adopter Program) {#config-pipeline-rdes-early-adopter}
+
+The [Config Pipeline](/help/operations/config-pipeline.md) is used to deploy yaml file configurations, including CDN options (traffic filter rules, request/response transformations, etc). Join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>** to deploy these same configurations to RDEs (Rapid Development Environments), which use a CLI.
 
 ## [!DNL Experience Manager] Guides {#guides}
 
