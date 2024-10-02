@@ -1,13 +1,13 @@
 ---
-title: Release Notes for Cloud Manager 2024.9.0 in Adobe Experience Manager as a Cloud Service
-description: Learn about the release notes for Cloud Manager 2024.9.0 in AEM as a Cloud Service.
+title: Release Notes for Cloud Manager 2024.10.0 in Adobe Experience Manager as a Cloud Service
+description: Learn about the release notes for Cloud Manager 2024.10.0 in AEM as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 ---
-# Release notes for Cloud Manager 2024.9.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Release notes for Cloud Manager 2024.10.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-This page documents the release notes for Cloud Manager release 2024.9.0 in AEM as a Cloud Service.
+This page documents the release notes for Cloud Manager release 2024.10.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -15,36 +15,32 @@ This page documents the release notes for Cloud Manager release 2024.9.0 in AEM 
 
 ## Release date {#release-date}
 
-The release date for Cloud Manager release 2024.9.0 in AEM as a Cloud Service is September 5, 2024. The next release is planned for October 3, 2024.
+The release date for Cloud Manager release 2024.10.0 in AEM as a Cloud Service is October 3, 2024. The next release is planned for November 14, 2024.
 
 ## What's new {#what-is-new}
 
-* **Experience Audit dashboard:**
+* j
 
-    Adobe Cloud Manager's [enhanced Experience Audit dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md), powered by Google Lighthouse, provides insights into the quality and performance of AEM Sites by evaluating core web vitals, SEO, and accessibility metrics. It helps users identify areas for improvement by offering actionable recommendations, enabling teams to enhance user experience, page load times, and site compliance. This dashboard simplifies the monitoring of critical site metrics and ensures that AEM applications meet high performance and accessibility standards.
-
-* **Adobe generated and managed Domain Validation certificates:**
-
-    With Cloud Manager, you are now able to [self-service Adobe generated and managed DV (Domain Validation) SSL certificates](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). This capability gives you the fastest, easiest, and most cost-effective solution to create a secure website for your online organization or business. <!-- CMGR-52403 -->
-
-    >[!NOTE]
-    >
-    >[Content Hub](/help/assets/product-overview.md) customers are planned to receive this feature in phases as part of a gradual roll-out.
-
-* **Edge Delivery Services support in Cloud Manager:**
-
-    If you have an Edge Delivery Services license as part of AEM Sites, [you can now onboard your site with Edge Delivery Services directly through Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). This feature enables a guided, self-service Go Live experience. It also unifies essential workflows like domain name management, SSL certificates, and CDN mappings across all your AEM properties, ensuring consistency and efficiency. <!-- CMGR-49859 -->
-
-    >[!NOTE]
-    >
-    >[Content Hub](/help/assets/product-overview.md) customers are planned to receive this feature in phases as part of a gradual roll-out.
-
-* Customers who use GitHub repositories now have the ability to create and use Web Tier Config pipelines. <!--( KEEP IN? SP: YES CMGR-59046 and Slack https://cq-dev.slack.com/archives/C07LFP5BZ2L/p1725407057847379 ) --> 
-
-<!--
 ## Early adoption program {#early-adoption}
 
-For a chance to test some upcoming features, be a part of Adobe's early adoption program. -->
+Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features.
+
+### Bring Your Own Git - now with extensions for Bitbucket, GitLab, and GitHub Enterprise Server
+
+Following the introduction of direct support for GitHub-hosted repositories in Cloud Manager, you can now also add repositories from Bitbucket, GitLab, or self-hosted GitHub and link them to your pipelines. See [Add external repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/onboard-external-repositories.md). These repositories can be hosted on public clouds or within your private cloud or infrastructure. This integration also removes the need for constant code synchronization with the Adobe repository. 
+
+>[!NOTE]
+>
+>Currently, the out-of-the-box pull request code quality checks are exclusive to GitHub-hosted repositories, but an update to extend this functionality to other Git vendors is in the works.
+
+If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure.
+
+### Staging-only and production-only pipelines {#staging-production-only-pipelines}
+
+Adobe announces the introduction of support for [staging-only and production-only pipelines](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md). This new feature lets you divide full-stack production deployment pipelines into smaller, more specialized deployments.
+
+If you would like to test this feature and provide feedback, email [Grp-cloudmanager_splitpipelines@adobe.com](mailto:Grp-cloudmanager_splitpipelines@adobe.com) from your email address associated with your Adobe ID.
+
 
 
 ## Bug fixes
@@ -52,4 +48,8 @@ For a chance to test some upcoming features, be a part of Adobe's early adoption
 * Pagination for SSL certificates table view now works as expected. <!-- (CMGR-60804 - [UI] Pagination doesn't work for ssl certificates) -->
 * The wrong artifact version got promoted when using the **Promote Build** button from an execution. <!-- ( KEEP IN? SP: YES CMGR-59519 and Slack https://cq-dev.slack.com/archives/C07LFPN2R08/p1725408253474129 ) -->
 
-<!-- * Slack message says next release? SP: REMOVE (Leave in for now) SSL Certificates table in Cloud Manager now enables pagination in the user experience. ( https://jira.corp.adobe.com/browse/CMGR-61041 and Slack https://cq-dev.slack.com/archives/C07LFRE9QJU/p1725408553760009 ) --<>
+<!-- * Slack message says next release? SP: REMOVE (Leave in for now) SSL Certificates table in Cloud Manager now enables pagination in the user experience. ( https://jira.corp.adobe.com/browse/CMGR-61041 and Slack https://cq-dev.slack.com/archives/C07LFRE9QJU/p1725408553760009 ) -->
+
+
+
+## Known Issues {#known-issues}
