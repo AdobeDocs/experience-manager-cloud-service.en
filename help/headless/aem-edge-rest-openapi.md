@@ -7,6 +7,15 @@ role: Admin, Developer
 
 # AEM Edge Delivery Services REST OpenAPI {#aem-edge-delivery-services-rest-openapi}
 
+<!-- CQDOC-21938 -->
+<!-- Needs a link to the API docs - once available -->
+
+>[!IMPORTANT]
+>
+>The API is available through the Early Adopter Program.
+>
+>To see the status, and how to apply if you are interested, check the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md).
+
 In Adobe Experience Manager (AEM) as a Cloud Service, the AEM Edge Delivery Services REST OpenAPI for Content Fragment delivery:
 
 * is a HTTP REST API on [AEM Edge Delivery Services](/help/edge/overview.md), designed to deliver structured content from Content Fragments in JSON format
