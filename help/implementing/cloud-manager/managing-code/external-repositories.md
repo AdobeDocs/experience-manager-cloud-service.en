@@ -19,8 +19,8 @@ Learn how to add an external repository into Cloud Manager. Cloud Manager suppor
 Configuration of an external repository in Cloud Manager consists of three steps:
 
 1. [Add an external repository](#add-external-repo) to a selected program.
-1. [Provide an access token to the external repository](#add-access-token).
-1. [Validate ownership of the private GitHub repository](#validate-ownership).
+1. Provide an access token to the external repository.
+1. Validate ownership of the private GitHub repository.
 
 
 ## Add an external repository {#add-ext-repo}
@@ -43,14 +43,14 @@ Configuration of an external repository in Cloud Manager consists of three steps
 
     | Field | Description |
     | --- | --- |
-    | Repository Name | Required. An expressive name for your new repository. | 
-    | Repository URL | Required. The URL of the repository.<br><br> If you are using a GitHub-hosted repository, the path must end in `.git`.<br>For example, *`https://github.com/org-name/repo-name.git`* (URL path is for illustration purposes only).<br><br>If you are using an external repository, it must use the following URL path format:<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> or<br>`https://self-hosted-domain/org-name/repo-name.git`<br>And match your Git vendor. |
-    | Select Repository Type | Required. Select the repository type that you are using: **GitHub**, **GitLab**, or **BitBucket**. If the repository URL path above includes the Git vendor name, such as GitLab or Bitbucket, the repository type is already pre-selected for you. |
-    | Description | Optional. A detailed description of the repository. |
+    | **Repository Name** | Required. An expressive name for your new repository. | 
+    | **Repository URL** | Required. The URL of the repository.<br><br> If you are using a GitHub-hosted repository, the path must end in `.git`.<br>For example, *`https://github.com/org-name/repo-name.git`* (URL path is for illustration purposes only).<br><br>If you are using an external repository, it must use the following URL path format:<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> or<br>`https://self-hosted-domain/org-name/repo-name.git`<br>And match your Git vendor. |
+    | S**elect Repository Type** | Required. Select the repository type that you are using: **GitHub**, **GitLab**, or **BitBucket**. If the repository URL path above includes the Git vendor name, such as GitLab or Bitbucket, the repository type is already pre-selected for you. |
+    | **Description** | Optional. A detailed description of the repository. |
 
 1. Select **Save** to add the repository.
 
-1. In the **Private Repository Ownership Validation** dialog box, [provide an access token](#add-access-token) to validate ownership of the external repository so you can access it.
+1. In the **Private Repository Ownership Validation** dialog box, provide an access token to validate ownership of the external repository so you can access it.
 
     ![Selecting an existing access token for a repository](/help/implementing/cloud-manager/managing-code/assets/repositories-exisiting-access-token.png)
     *Selecting an existing access token for a BitBucket repository.*
