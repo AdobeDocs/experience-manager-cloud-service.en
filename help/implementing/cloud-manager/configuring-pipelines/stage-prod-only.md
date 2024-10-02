@@ -1,5 +1,5 @@
 ---
-title: Stage-Only and Prod-Only Pipelines
+title: Split Stage-Only and Prod-Only Pipelines
 description: Learn how you can split staging and production deployments using dedicated pipelines.
 
 solution: Experience Manager
