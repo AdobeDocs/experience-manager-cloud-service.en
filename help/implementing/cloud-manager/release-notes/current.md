@@ -21,7 +21,9 @@ The next release is planned for November 14, 2024.
 
 ## What's new {#what-is-new}
 
-* <!-- BOTH CS & AMS -->The AEM Archetype version used in Cloud Manager is now updated to version 26. See [https://github.com/adobe/aem-project-archetype/releases](https://github.com/adobe/aem-project-archetype/releases) <!--(CMGR-59817) -->
+* <!-- BOTH CS & AMS --> The AEM Archetype version used in Cloud Manager is now updated to version 26. See [https://github.com/adobe/aem-project-archetype/releases](https://github.com/adobe/aem-project-archetype/releases) 
+
+<!-- (CMGR-59817) -->
 
 * <!-- CS ONLY --> When you add or edit network infrastructure, the values in the IP address and network mask fields are validated according to the following rules:
 
@@ -51,9 +53,9 @@ The next release is planned for November 14, 2024.
 
 Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features.
 
-### Bring Your Own Git - now with support for GitLab and Bitbucket
+### Bring Your Own Git - now with support for GitLab and Bitbucket {#gitlab-bitbucket}
 
-<!-- CS & AMS -->
+<!-- BOTH CS & AMS -->
 
 The **Bring Your Own Git** feature has been expanded to include support for external repositories such as GitLab and Bitbucket. This new support is in addition to the already existing support for private and enterprise GitHub repositories. When you add these new repos, you can also link them directly to your pipelines. You can host these repositories on public cloud platforms or within your private cloud or infrastructure. This integration also removes the need for constant code synchronization with the Adobe repository and provides the ability to validate pull requests before merging them into a main branch.
 
