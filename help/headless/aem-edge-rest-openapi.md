@@ -12,7 +12,7 @@ role: Admin, Developer
 
 >[!IMPORTANT]
 >
->The API is available through the Early Adopter Program.
+>This API is available through the Early Adopter Program.
 >
 >To see the status, and how to apply if you are interested, check the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
