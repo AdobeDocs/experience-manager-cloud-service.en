@@ -12,7 +12,7 @@ Learn how to manage your **Content Fragments** in Adobe Experience Manager (AEM)
 
 >[!IMPORTANT]
 >
->Various features of the Content Fragment Console are availlable through the Early Adopter Program.
+>Various features of the Content Fragment Console are available through the Early Adopter Program.
 >
 >To see the status, and how to apply if you are interested, check the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
