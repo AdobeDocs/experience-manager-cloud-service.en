@@ -27,7 +27,7 @@ Using the GraphQL API in AEM enables the efficient delivery of Content Fragments
 
 >[!NOTE]
 >
->See [AEM APIs for Headless Content Delivery and Content Fragments](/help/headless/apis-headless-and-content-fragments.md) for an overview of the various APIs available and comparison of some of the concepts involved.
+>See [AEM APIs for Structured Content Delivery and Management](/help/headless/apis-headless-and-content-fragments.md) for an overview of the various APIs available and comparison of some of the concepts involved.
 
 >[!NOTE]
 >

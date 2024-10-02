@@ -40,7 +40,7 @@ For more information, see [Content Fragments support in the [!DNL Experience Man
 
 >[!NOTE]
 >
->See [AEM APIs for Headless Content Delivery and Content Fragments](/help/headless/apis-headless-and-content-fragments.md) for an overview of the various APIs available and comparison of some of the concepts involved.
+>See [AEM APIs for Structured Content Delivery and Management](/help/headless/apis-headless-and-content-fragments.md) for an overview of the various APIs available and comparison of some of the concepts involved.
 >
 >The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) are also available.
 

@@ -1,23 +1,25 @@
 ---
-title: AEM APIs for Headless Content Delivery and Content Fragments
-description: Learn about the APIs available for Headless Content Delivery and Content Fragments
+title: AEM APIs for Structured Content Delivery and Content Fragment Management
+description: Learn about the APIs available for Structured Content Delivery and Content Fragment Management
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 ---
 
-# AEM APIs for Structured Content Delivery {#aem-apis-headless-content-delivery-and-content-fragments}
+# AEM APIs for Structured Content Delivery and Management {#aem-apis-structured-content-delivery-and-management}
 
-Adobe Experience Manager (AEM) as a Cloud Service offers multiple APIs for structured content delivery. See the individual pages for further details of the specific APIs.
+Adobe Experience Manager (AEM) as a Cloud Service offers multiple APIs for both structured content delivery from Content Fragments and Content Fragment management. See the individual pages for further details of the specific APIs.
 
 * [AEM Edge Delivery Services REST OpenAPI for Content Fragment delivery](/help/headless/aem-edge-rest-openapi.md)
-  * This API creates JSON responses for delivering structured content in AEM Content Fragments. It is optimized for content delivery, including CDN integration. 
-  * It utilizes a path to a content fragment as endpoint. 
+  * This API creates JSON responses for delivering structured content from Content Fragments in AEM. 
+  * It uses a path to a content fragment as endpoint. 
   * This API is REST based.
+  * It is optimized for content delivery, including CDN integration. 
 * [AEM GraphQL API for Content Fragment delivery](/help/headless/graphql-api/content-fragments.md)
-  * This API is schema-based. API schemas are defined by Content Fragment Models, which define the content structure.
+  * This API is schema-based. API schemas are represented by Content Fragment Models, which define the content structure.
   * This API is GraphQL based.
 * [Content Fragments and Content Fragment Models OpenAPIs](/help/headless/content-fragment-openapis.md)
-  * These APIs are intended for structured content management. Respective GET operators are not optimized for content delivery.
+  * These APIs are intended for structured content management. 
+  * Respective GET operators are not optimized for content delivery.
   * This API is REST based. 
 * [Content Fragments Support in the AEM Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)
   * The original API for the JSON output for structured content delivery in AEM.  
@@ -27,7 +29,9 @@ Adobe Experience Manager (AEM) as a Cloud Service offers multiple APIs for struc
 
 ## JSON vs HTML {#json-vs-HTML}
 
-The content delivery format used is driven by frontend implementation - unstructured content/HTML for full-stack implementations, and structured content/JSON for headless implementations, or a combination of both in hybrid implementations. 
+The content delivery format used is driven by frontend implementation. Unstructured content/HTML for full-stack implementations, structured content/JSON for headless implementations, or a combination of both in hybrid implementations. 
+
+Key considerations include:
 
 * Definition
   * JSON (JavaScript Object Notation) - used to represent, access and process structured data. 
@@ -38,7 +42,9 @@ The content delivery format used is driven by frontend implementation - unstruct
 
 ## REST vs GraphQL {#rest-vs-graphql}
 
-The API used is a decision for the developers - AEM supports both. Many comparisons are available online, but a few highlights and benefits of REST are: 
+The API used is a decision for the developers - AEM supports both. 
+
+Many comparisons are available online, but a few highlights and benefits of REST include: 
 
 * Simplicity
 
@@ -58,7 +64,7 @@ The API used is a decision for the developers - AEM supports both. Many comparis
 
   * JSON responses to REST `GET` requests are inherently cacheable. GraphQL `POST` requests are not cacheable, unless they are made so; for example, by using AEM Persisted Queries that are stored on the server and requested with REST-like `GET`requests. 
 
-Benefits of GraphQL are
+Benefits of GraphQL include:
 
 * Efficiency of content delivery 
 
@@ -76,5 +82,3 @@ Benefits of GraphQL are
 
     1. Fetch content with API.
     2. In the JSON response, determine what to use for rendering in the client app. 
-
-    
