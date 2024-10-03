@@ -93,7 +93,7 @@ The following restrictions apply.
 * A user must be logged with the **Deployment Manager** role to configure or run pipelines.
 * At any time, there can only be one full-stack pipeline per environment.
 
-In addition, be aware of how the full-stack pipeline behaves if you choose to introduce a [web tier config pipeline.](#web-tier-config-pipelines)
+In addition, be aware of how the full-stack pipeline behaves if you choose to introduce a [web tier config pipeline](#web-tier-config-pipelines).
 
 * The full-stack pipeline for an environment ignores the Dispatcher configuration if the corresponding web tier config pipeline exists.  
 * If the corresponding web tier config pipeline for the environment does not exist, the user can configure the full-stack pipeline include or ignore the Dispatcher configuration.
@@ -109,7 +109,7 @@ See [Add a non-production pipeline](/help/implementing/cloud-manager/configuring
 
 Using a config pipeline, you can deploy settings quickly for log forwarding, purge-related maintenance tasks, and various CDN configurations, including traffic filter rules (such as WAF (Web Application Firewall) rules). Additionally, you can manage request and response transformations, origin selectors, client-side redirects, error pages, customer-managed CDN keys, purge API keys, and basic authentication.
 
-See [Use config pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) for a comprehensive list of supported features and to learn how to manage the configurations in your repository so they are deployed properly.
+See [Use config pipelines](/help/operations/config-pipeline.md) for a comprehensive list of supported features and to learn how to manage the configurations in your repository so they are deployed properly.
 
 ### Configure config Pipelines {#configure-config-deployment}
 
