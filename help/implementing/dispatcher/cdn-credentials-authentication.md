@@ -12,7 +12,7 @@ The Adobe-provided CDN has several features and services, some of which rely on 
 
 * The X-AEM-Edge-Key HTTP header value used by the Adobe CDN to validate requests coming from a Customer-managed CDN.
 * The API token used to purge resources in the CDN cache.
-* A list of username/password combinations that can access restricted content, by submitting a Basic Authentication form. [This feature is available to early adopters.](/help/release-notes/release-notes-cloud/release-notes-current.md#foundation-early-adopter)
+* A list of username/password combinations that can access restricted content, by submitting a Basic Authentication form.
 
 Each of these, including the configuration syntax, is described in its own section below. 
 
@@ -143,9 +143,6 @@ You may reference [a tutorial](https://experienceleague.adobe.com/en/docs/experi
 
 ## Basic Authentication {#basic-auth}
 
->[!NOTE]
->This feature is not yet generally available. To join the early-adopter program, email `aemcs-cdn-config-adopter@adobe.com`.
-
 Protect certain content resources by popping up a basic auth dialog requiring a username and password. This feature is primarily intended for light authentication use cases such as business stakeholder review of content, rather than as a full-fledged solution for end-user access rights.
 
 The end user will experience a basic auth dialog popping up like the following:
@@ -162,7 +159,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  experimental_authentication:
+  authentication:
     authenticators:
        - name: my-basic-authenticator
          type: basic
@@ -184,12 +181,12 @@ See [Using Config Pipelines](/help/operations/config-pipeline.md#common-syntax) 
 
 In addition, the syntax includes:
 
-* a `data` node that contains an `experimental_authentication` node (the experimental prefix will be removed when the feature is released).
-* Under `experimental_authentication`, one `authenticators` node and one `rules` node, both of which are arrays.
+* a `data` node that contains an `authentication` node.
+* Under `authentication`, one `authenticators` node and one `rules` node, both of which are arrays.
 * Authenticators: in this scenario declare a basic authenticator, which has the following structure:
   * name - a descriptive string
   * type - must be `basic`
-  * an array of credentials, each of which includes the following name/value pairs, which end-users can enter in the basic auth dialog:
+  * an array of up to 10 credentials, each of which includes the following name/value pairs, which end-users can enter in the basic auth dialog:
     * user - the name of user
     * password - its value must reference a [Cloud Manager secret-type environment variable](/help/operations/config-pipeline.md#secret-env-vars), with **All** selected as the service field.
 * Rules: Lets you declare which of the authenticators should be used, and which resources should be protected. Each rule includes:
@@ -207,7 +204,7 @@ In addition, the syntax includes:
 1. Initially just `edgeKey1` has been defined, in this case referenced as `${{CDN_EDGEKEY_052824}}`, which as a recommended convention, reflects the date it was created.
 
     ```
-    experimental_authentication:
+    authentication:
       authenticators:
         - name: edge-auth
           type: edge
@@ -216,7 +213,7 @@ In addition, the syntax includes:
 1. When it's time to rotate the key, create a new Cloud Manager secret, for example `${{CDN_EDGEKEY_041425}}`.
 1. In the configuration, reference it from `edgeKey2` and deploy.
     ```
-    experimental_authentication:
+    authentication:
       authenticators:
         - name: edge-auth
           type: edge
@@ -226,7 +223,7 @@ In addition, the syntax includes:
 
 1. Once you are sure the old edge key is not used anymore, remove it by removing `edgeKey1` from the configuration.    
     ```
-    experimental_authentication:
+    authentication:
       authenticators:
         - name: edge-auth
           type: edge
@@ -237,7 +234,7 @@ In addition, the syntax includes:
 1. When ready for the next rotation, follow the same procedure, however this time you will add `edgeKey1` to the configuration, referencing a new Cloud Manager environment secret named, for example, `${{CDN_EDGEKEY_031426}}`.
 
     ```
-    experimental_authentication:
+    authentication:
       authenticators:
         - name: edge-auth
           type: edge

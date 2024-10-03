@@ -17,6 +17,10 @@ exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 
 In large enterprises the infrastructure required to create websites may be distributed. At times the website creation capabilities and digital assets used to create these websites may reside in different deployments. One reason can be geographically distributed existing deployments that are required to work together. Another reason can be acquisitions leading to heterogenous infrastructure, including different [!DNL Experience Manager] versions, that the parent company wants to use together.
 
+>[!NOTE]
+>
+>Adobe recommends leveraging Dynamic Media with OpenAPI capabilities to connect AEM Assets as a Cloud Service and AEM Sites. See [Integrate remote AEM Assets with AEM Sites](/help/assets/integrate-remote-approved-assets-with-sites.md).
+
 Connected Assets functionality supports the above use cases by integrating [!DNL Experience Manager Sites] and [!DNL Experience Manager Assets]. Users can create web pages in [!DNL Sites] that use the digital assets from a separate [!DNL Assets] deployments.
 
 >[!NOTE]
