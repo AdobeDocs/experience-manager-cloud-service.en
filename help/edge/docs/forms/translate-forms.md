@@ -1,6 +1,6 @@
 ---
-title: Translate and localize an AEM Forms Edge Delivery ServicesForm
-description: Translate and localize an AEM Forms Edge Delivery ServicesForm
+title: Translate and localize an Edge Delivery Services for AEM Forms
+description: Translate and localize an Edge Delivery Services for AEM Forms
 feature: Edge Delivery Services
 hide: yes
 hidefromtoc: yes
@@ -8,7 +8,7 @@ exl-id: 8a0c826f-8acc-4a00-bd84-7b0df9a82457
 role: Admin, Architect, Developer
 ---
 
-# Translate and localize an AEM Forms Edge Delivery ServicesForm
+# Translate and localize an Edge Delivery Services for AEM Forms
 
 In Edge Delivery Services, form translation involves converting form content from one language to another with a focus on accuracy, clarity, and consistency. Translated or localized forms enable broader audience reach across different geographical locations, thus enhancing user experience and facilitating better communication across diverse language preferences. 
 
@@ -42,9 +42,9 @@ https://main--portal--wkndforms.hlx.live/enquirytranslate
 
 ## Translate forms within SharePoint Site{#translate-form-sharepoint}
 
-To translate the forms on the Microsoft® SharePoint site, you need to manually change the labels of the fields using any translation service. To translate the forms within SharePoint Site:
+To translate the forms on the Microsoft&reg; SharePoint site, you need to manually change the labels of the fields using any translation service. To translate the forms within SharePoint Site:
 
-1. Go to your AEM Project folder on Microsoft® SharePoint and open your spreadsheet. 
+1. Go to your AEM Project folder on Microsoft&reg; SharePoint and open your spreadsheet. 
 2. Rename the existing sheet (`shared-default`) to `shared-en`.
 3. Add a sheet named `shared-default`. The `shared-default` sheet contains the content for localization to a specific language.
 4. Add the  localized content in the `shared-default` sheet manually. 
