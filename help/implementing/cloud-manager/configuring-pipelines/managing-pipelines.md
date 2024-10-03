@@ -86,7 +86,7 @@ You can see the details of the run by clicking the ellipsis button again and sel
 
 Depending on the type of pipeline, you may be able to cancel the run by clicking the ellipsis button again and selecting **Cancel**.
 
-## Editing Pipelines {#editing-pipelines}
+## Edit a pipeline {#editing-pipelines}
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
