@@ -4,14 +4,13 @@ description: Learn how to troubleshoot SSL certificate errors by identifying com
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-
 ---
 
 # Troubleshoot SSL certificate errors {#certificate-errors}
 
-Certain errors may arise if a certificate is not installed properly or does not meet the requirements of Cloud Manager.
+Learn how to troubleshoot SSL certificate errors by identifying common causes so you can maintain secure connections.
 
-+++**Correct certificate order**
+## Correct certificate order {#order}
 
 The most common reason for a certificate deployment to fail is that the intermediate or chain certificates are not in the correct order.
 
@@ -37,9 +36,8 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 >
 >The output of these two commands must be exactly the same. If you cannot locate a matching private key for your `main/server` certificate, you are required to re-key the certificate by generating a new CSR and/or requesting an updated certificate from your SSL vendor.
 
-+++
 
-+++**Remove client certificates**
+## Remove client certificates {#client-certificates}
 
 When adding a certificate, if you receive an error similar to the following:
 
@@ -49,9 +47,7 @@ The Subject of an intermediate certificate must match the issuer in the previous
 
 You likely included the client certificate in the certificate chain. Make sure that the chain does not include the client certificate and try again.
 
-+++
-
-+++**Certificate policy**
+## Certificate policy {#policy}
 
 If you see the following error, check the policy of your certificate.
 
@@ -101,10 +97,6 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
 openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 ```
 
-+++
-
-+++**Certificate validity dates**
+## Certificate validity {#validity}
 
 Cloud Manager expects the SSL certificate to be valid for at least 90 days from the current date. Check the validity of the certificate chain.
-
-+++
