@@ -88,7 +88,7 @@ The following table demonstrates the difference between the features available i
     <td>Validate/Reset field/panel/form rule in 'Then' </td>
     <td>Validate and Reset functions only support form object in Rule Editor. 
    </td>
-    <td>Validate and Reset functions support form/panel/field object in Rule Editor. 
+    <td>Validate and Reset functions support form / panel / field object in Rule Editor. 
    </td>
    </tr>
    <tr>
@@ -127,7 +127,7 @@ The following table demonstrates the difference between the features available i
 * [Introduction to Forms Portal components](/help/forms/configure-forms-portal.md)
 * [List your forms on sites page](/help/forms/list-forms-on-sites-page.md)
 * [Save your forms as drafts](/help/forms/save-core-component-based-form-as-draft.md)
-* [Add form links to an Sites page](/help/forms/add-form-link-to-aem-sites-page.md)
+* [Add form links to a Sites page](/help/forms/add-form-link-to-aem-sites-page.md)
 
 
 ## Cloud Manager IP Allow List and front-end pipelines {#allowlist-frontend-pipeline}
@@ -136,7 +136,7 @@ The following table demonstrates the difference between the features available i
 >
 >The front-end pipeline requires that the following IP Allow List be added to Cloud Manager beforehand.
 >If needed, [add the IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) by copying the block of addresses below. Each address is separated by a comma. Paste the block into the **IP address / CIDR** field of the **Add IP Allow List** dialog box. Place the cursor just after the first comma in the address list and press **Enter**. Save the list. 
->To avoid disruption of running the front-end pipleline, ensure that this IP Allow List is added to Cloud Manager *before* you enable the pipleline.
+>To avoid disruption of running the front-end pipeline, ensure that this IP Allow List is added to Cloud Manager *before* you enable the pipeline.
 >
 >**Cloud Manager IP Allow List**
 >52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
@@ -149,21 +149,37 @@ The following table demonstrates the difference between the features available i
 >If you use&mdash;or intend to use&mdash;the front-end pipeline to develop sites, the Cloud Manager IP Allow List must be added beforehand. 
 >See [Use of the Cloud Manager IP Allow List with the front-end pipeline](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline). 
 
+## IP Allow Lists and the Universal Editor {#ip-allow-lists-ue}
+
+>[!IMPORTANT]
+>
+>[The Universal Editor](/help/implementing/universal-editor/introduction.md) is not compatible with IP allow lists.
+>
+>If you wish to use the Universal Editor, IP allow lists must not be enabled.
+
+## Universal Editor and IP Allow Lists {#ue-ip-allow-lists}
+
+>[!IMPORTANT]
+>
+>The Universal Editor is not compatible with [IP allow lists.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+>
+>If you wish to use the Universal Editor, IP allow lists must not be enabled.
+
 ## Work with Dynamic Media {#work-with-dynamic-media}
 
 >[!TIP]
 >
->Are you new to Dynamic Media? For quick, high-level overview of Dynamic Media, see [Work with Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
+>Are you new to Dynamic Media? For a quick, high-level overview of Dynamic Media, see [Work with Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
 
 ## See also for Dynamic Media {#see-also-dm}
 
 >[!NOTE]
 >
->* Are you new to Dynamic Media? For quick, high-level overview of Dynamic Media, see [Work with Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
+>* Are you new to Dynamic Media? For a quick, high-level overview of Dynamic Media, see [Work with Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
 >
 >* Follow [Dynamic Media Best Practices](/help/assets/dynamic-media/dm-best-practices.md) to get the most value.
 >
->* Try out Dynamic Media image capabilities with [Snapshot tool](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
+>* Try out Dynamic Media image capabilities with the [Snapshot tool](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
 >
 >* Ensure smooth video playback with [adaptive video](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash).
 >
@@ -171,6 +187,21 @@ The following table demonstrates the difference between the features available i
 >
 >* Automate cropping of [videos with Smart Crop](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video).
 >
->* Deliver [interactive 3D-powered experience](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
+>* Deliver an [interactive 3D-powered experience](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
 >* Other [Dynamic Media resource bank](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
+
+## Logging a Support Ticket {#support-ticket}
+
+If a product issue needs additional investigation and troubleshooting and must meet response SLTs, you can submit a support ticket.
+
+To log a support ticket, you must first register your Edge Delivery site in Cloud Manager. Registering your website with Cloud Manager is recommended to all AEM as a Cloud Service users and [brings a number of benefits](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). See [the Cloud Manager documentation](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) for details if you have not already registered your site. 
+
+Once your website is registered with Cloud Manager, follow this process using the Admin Console to submit a support ticket:
+
+1. [Follow the standard support process](https://experienceleague.adobe.com/?support-tab=home#support) and create a ticket.
+1. Add **Edge Delivery** in the title of the ticket.
+1. In the description, provide the following details in addition to the problem description:
+
+    * URL of the live website. For example: `www.mydomain.com`.
+    * URL of the origin website (`.hlx` URL).
 

@@ -28,11 +28,10 @@ Customers looking to publish to the Edge Delivery Services tier can take advanta
 
 To prepare for content delivery using AEM's built-in CDN through Cloud Manager's self-service UI, you can take advantage of Adobe's managed CDN features. This functionality lets you handle self-service CDN management, including configuring and installing SSL certificates such as DV (Domain Validation) or EV/OV (Extended/Organization Validation) certificates. For more details on these methods, see the following:
 
-* [Manage SSL certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
-* [Add a CDN Configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) 
-* [Manage custom domain names](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
-* [Edge Delivery Services Support in Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md)
-
+* [Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
+* [Introduction to custom domain names](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+* [Introduction to SSL certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
+* [Add a CDN Configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
 
 **Restricting traffic**
 
@@ -67,7 +66,7 @@ Read about [configuring a purge API token](/help/implementing/dispatcher/cdn-cre
 
 ### Basic authentication at the CDN {#basic-auth}
 
-For light authentication use cases including business stakeholders reviewing content, protect content by displaying a basic auth dialog requiring a username and password. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md) and join the early adopter program.
+For light authentication use cases including business stakeholders reviewing content, protect content by displaying a basic auth dialog requiring a username and password. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md).
 
 ## Customer managed CDN points to AEM managed CDN {#point-to-point-CDN}
 
