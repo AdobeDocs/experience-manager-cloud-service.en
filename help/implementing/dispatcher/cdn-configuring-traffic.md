@@ -148,7 +148,7 @@ Explained in the table below are the available actions.
 
 | Name      | Properties               | Meaning     |
 |-----------|--------------------------|-------------|
-| **set** |(reqProperty or reqHeader or queryParam or reqCookie), value|Sets a specified request parameter (only "path" property supported), or request header, query parameter, or cookie, to a given value. |
+| **set** |(reqProperty or reqHeader or queryParam or reqCookie), value|Sets a specified request parameter (only "path" property supported), or request header, query parameter, or cookie, to a given value, which could be a string literal or request parameter. |
 |     |var, value|Sets a specified request property to a given value.|
 | **unset** |reqProperty|Removes a specified request parameter (only "path" property supported), or request header, query parameter, or cookie, to a given value, which could be a string literal or request parameter.|
 |         |var|Removes a specified variable.|
