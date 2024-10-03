@@ -27,7 +27,7 @@ As part of the setup, the Adobe CDN and the Customer CDN must agree on a value o
 The *X-AEM-Edge-Key* value is referenced by the `edgeKey1` and `edgeKey2` properties in a file named `cdn.yaml` or similar, somewhere under a top-level `config` folder. Read [Using Config Pipelines](/help/operations/config-pipeline.md#folder-structure) for details about the folder structure and how to deploy the configuration.  The syntax is described in the example below.
 
 >[!WARNING]
->Direct access without a correct X-AEM-Edge-Key denied results in access being denied for all requests matching the condition (in the sample below that means all requests to the publish tier). If you need to gradually introduce authentication please see the [Migrating safely to reduce the risk of blocked traffic](#migrating-safely) section.
+>Direct access without a correct X-AEM-Edge-Key will be denied for all requests matching the condition (in the sample below that means all requests to the publish tier). If you need to gradually introduce authentication please see the [Migrating safely to reduce the risk of blocked traffic](#migrating-safely) section.
 
 ```
 kind: "CDN"
@@ -72,7 +72,7 @@ Additional properties include:
 
 ### Migrating safely to reduce the risk of blocked traffic {#migrating-safely}
 
-If your site is already live, exercise caution when migrating to customer-managed CDN since a misconfiguration can block public traffic; this is because only requests with the expected X-AEM-Edge-Key header value will be accepted by the Adobe CDN. An approach is recommended where an additional condition is temporarily included in the authentication rule, which causes it to only evaluate the request if a test header is included:
+If your site is already live, exercise caution when migrating to customer-managed CDN since a misconfiguration can block public traffic; this is because only requests with the expected X-AEM-Edge-Key header value will be accepted by the Adobe CDN. An approach is recommended where an additional condition is temporarily included in the authentication rule, which causes it to block the request only if a test header is included or if a path is matched:
 
 ```
     - name: edge-auth-rule
@@ -80,6 +80,17 @@ If your site is already live, exercise caution when migrating to customer-manage
           allOf:  
             - { reqProperty: tier, equals: "publish" }
             - { reqHeader: x-edge-test, equals: "test" }
+        action:
+          type: authenticate
+          authenticator: edge-auth
+```
+
+```
+    - name: edge-auth-rule
+        when:
+          allOf:
+            - { reqProperty: tier, equals: "publish" }
+            - { reqProperty: path, like: "/test*" }
         action:
           type: authenticate
           authenticator: edge-auth
