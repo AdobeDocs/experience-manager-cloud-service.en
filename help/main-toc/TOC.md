@@ -26,6 +26,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2024 {#2024}
+      + [Release Notes for 2024.8.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-8-0.md)
       + [Release Notes for 2024.7.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-7-0.md)
       + [Release Notes for 2024.6.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-6-0.md)
       + [Release Notes for 2024.5.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-5-0.md)
@@ -79,6 +80,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2024 {#2024}
+      + [Maintenance Release Notes for 2024.9.0](/help/release-notes/maintenance/2024/2024-9-0.md)
       + [Maintenance Release Notes for 2024.8.0](/help/release-notes/maintenance/2024/2024-8-0.md)
       + [Maintenance Release Notes for 2024.7.0](/help/release-notes/maintenance/2024/2024-7-0.md)
       + [Maintenance Release Notes for 2024.6.0](/help/release-notes/maintenance/2024/2024-6-0.md)
@@ -99,6 +101,7 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
     + 2024 {#2024}
+      + [Release Notes for 2024.8.0](/help/implementing/cloud-manager/release-notes/2024/2024-8-0.md)
       + [Release Notes for 2024.7.0](/help/implementing/cloud-manager/release-notes/2024/2024-7-0.md)
       + [Release Notes for 2024.6.0](/help/implementing/cloud-manager/release-notes/2024/2024-6-0.md)
       + [Release Notes for 2024.5.0](/help/implementing/cloud-manager/release-notes/2024/2024-5-0.md)
@@ -162,6 +165,7 @@ user-guide-title: AEM as a Cloud Service
     + 2024 {#2024}
       + [Release Notes for 2024.01.0](/help/journey-migration/release-notes/release-notes-migration-tools-2024-01-0.md)
       + [Release Notes for 2024.05.0](/help/journey-migration/release-notes/release-notes-migration-tools-2024-05-0.md)
+      + [Release Notes for 2024.07.0](/help/journey-migration/release-notes/release-notes-migration-tools-2024-07-0.md)
     + 2023 {#2023}
       + [Release Notes for 2023.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-10-0.md)
       + [Release Notes for 2023.9.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-09-0.md)
@@ -450,7 +454,18 @@ user-guide-title: AEM as a Cloud Service
   + [Overview of asset microservices](/help/assets/asset-microservices-overview.md)
   + [Accessibility in [!DNL Assets]](/help/assets/accessibility.md)
   + Manage digital assets {#manage}
-    + [Micro-Frontend Asset Selector](/help/assets/asset-selector.md)
+    + Micro-Frontend Asset Selector {#asset-selector}
+      + [Asset Selector overview](/help/assets/overview-asset-selector.md)
+      + Asset Selector integrations {#asset-selector-integration}
+          + [Asset Selector integrations overview](/help/assets/integrate-asset-selector.md)
+          + [Integrate Asset Selector with an Adobe application](/help/assets/integrate-asset-selector-adobe-app.md)
+          + [Integrate Asset Selector with a non-Adobe application](/help/assets/integrate-asset-selector-non-adobe-app.md)
+          + [Integrate Asset Selector for Dynamic Media with OpenAPI capabilities](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+      + [Asset Selector properties](/help/assets/asset-selector-properties.md)
+      + [Asset Selector examples](/help/assets/asset-selector-examples.md)
+      + [Asset Selector customizations](/help/assets/asset-selector-customization.md)
+      + [Asset Selector upload](/help/assets/asset-selector-upload.md)
+      + [Asset Selector collections](/help/assets/asset-selector-collections.md)
     + [Micro-Frontend Destination Selector](/help/assets/destination-selector.md)
     + [Share assets](/help/assets/share-assets.md)
     + [Reprocessing assets](/help/assets/reprocessing.md)
@@ -605,13 +620,11 @@ user-guide-title: AEM as a Cloud Service
     + [Manage tags](/help/assets/tagging-management-assets-view.md)
     + [Content Credentials](/help/assets/content-credentials.md)
     + [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
-   
-
   + Content Hub {#content-hub}
     + [Overview](/help/assets/product-overview.md)
     + [Deploy Content Hub](/help/assets/deploy-content-hub.md)
-    + [Configure Content Hub user interface](/help/assets/configure-content-hub-ui-options.md)
     + [Upload or Import brand-approved assets to Content Hub](/help/assets/upload-brand-approved-assets.md)
+    + [Configure Content Hub user interface](/help/assets/configure-content-hub-ui-options.md)
     + [Approve assets for Content Hub](/help/assets/approve-assets-content-hub.md)
     + [Search assets in Content Hub](/help/assets/search-assets-content-hub.md)
     + [Asset properties](/help/assets/asset-properties-content-hub.md)
@@ -619,7 +632,8 @@ user-guide-title: AEM as a Cloud Service
     + [Download assets using Content Hub](/help/assets/download-assets-content-hub.md)
     + [Manage collections in Content Hub](/help/assets/collections-content-hub.md)
     + [Edit images using Adobe Express in Content Hub](/help/assets/edit-images-content-hub.md)
-    + [Asset Insights in Content Hub](/help/assets/insights-content-hub.md)    
+    + [Asset Insights in Content Hub](/help/assets/insights-content-hub.md)
+    + [Frequently asked questions for Content Hub](/help/assets/frequently-asked-questions-content-hub.md)  
   + Best practices{#best-practices}
     + [Search best practices](/help/assets/search-best-practices.md)
     + [Metadata management and best practices](/help/assets/metadata-best-practices.md)
@@ -906,8 +920,10 @@ user-guide-title: AEM as a Cloud Service
     + [Developer Getting Started Guide](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
     + [Creating Blocks](/help/edge/wysiwyg-authoring/create-block.md)
     + [Content Modeling](/help/edge/wysiwyg-authoring/content-modeling.md)
+    + [Path Mapping](/help/edge/wysiwyg-authoring/path-mapping.md)
     + [Tabular Data and Spreadheets](/help/edge/wysiwyg-authoring/tabular-data.md)
     + [Managing Taxonomy Data](/help/edge/wysiwyg-authoring/taxonomy.md)
+    + [WYSIWYG and Doc-Based Blocks](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
     + [WIP Sites Features](/help/edge/wysiwyg-authoring/wip-features.md)
   + Document-Based Authoring {#document-authoring}
     + [Authoring](/help/edge/docs/authoring.md)
@@ -1052,37 +1068,36 @@ user-guide-title: AEM as a Cloud Service
     + Programs {#programs}
       + [Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
       + [Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
-      + [Creating Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+      + [Create Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
       + [Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
-      + [Creating Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
-      + [Editing Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
-      + [Hibernating Environments](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
-      + [Edge Delivery Services Support](/help/implementing/cloud-manager/edge-delivery-services.md)
+      + [Create Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
+      + [Edit Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+      + [Hibernate Environments](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
     + Creating an AEM Application Project {#create-application-project}
       + [Project Creation Wizard](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
       + [Project Setup](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
       + [Build Environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
-    + [Managing Environments](/help/implementing/cloud-manager/manage-environments.md)
+    + [Manage Environments](/help/implementing/cloud-manager/manage-environments.md)
     + Managing your Code {#managing-code}
       + [Maven Project Version Handling](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
-      + [Managing Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
-      + [Adding Adobe Repositories](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
-      + [Adding Private Repositories](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-      + [Accessing Repositories](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+      + [Manage Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
+      + [Add Adobe Repositories](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+      + [Add Private Repositories](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+      + [Access Repositories](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
       + [Git Submodule Support](/help/implementing/cloud-manager/managing-code/git-submodules.md)
-      + [Using git with Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
-      + [Using Multiple Repositories](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
+      + [Use Git with Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
+      + [Use Multiple Repositories](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
       + [Enterprise Development Team Setup](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
       + [GitHub Check Configuration](/help/implementing/cloud-manager/managing-code/github-check-config.md)
       + [GitHub Check Annotations](/help/implementing/cloud-manager/managing-code/github-annotations.md)
     + [Environment Variables](/help/implementing/cloud-manager/environment-variables.md)
     + Cloud Manager CI-CD Pipelines {#cicd-pipelines}
       + [Introduction](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
-      + [Configuring a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
-      + [Configuring a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-      + [Managing Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
+      + [Configure a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+      + [Configure a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+      + [Manage Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
       + [Pipeline Variables](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
-    + [Deploying Your Code](/help/implementing/cloud-manager/deploy-code.md)
+    + [Deploy Your Code](/help/implementing/cloud-manager/deploy-code.md)
     + Understanding your Test Results {#test-results}
       + [Overview](/help/implementing/cloud-manager/overview-test-results.md)
       + [Code Quality Testing](/help/implementing/cloud-manager/code-quality-testing.md)
@@ -1091,35 +1106,39 @@ user-guide-title: AEM as a Cloud Service
         + [Functional Testing Overview](/help/implementing/cloud-manager/functional-testing.md)
         + [Java Functional Testing](/help/implementing/cloud-manager/java-functional-testing.md)
         + [UI Testing](/help/implementing/cloud-manager/ui-testing.md)
-      + [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md)
       + [Experience Audit Dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md)
-    + [Accessing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md)
+    + [Access and Manage Logs](/help/implementing/cloud-manager/manage-logs.md)
     + [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md)
     + [SLA Reporting](/help/implementing/cloud-manager/sla-reporting.md)
     + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
     + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
     + [Notifications](/help/implementing/cloud-manager/notifications.md)
     + [Advanced Networking](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
+    + Edge Delivery Sites {#edge-delivery-sites}
+      + [Introduction to Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
+      + [Add an Edge Delivery Site to Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
+      + [Manage Edge Delivery Sites in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
+    + Domain Settings {#custom-domain-names}
+      + [Introduction to Domain Settings](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+      + [Add a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+      + [Check Custom Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
+      + [Check DNS Record Status](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
+      + [Manage Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
     + SSL Certificates {#manage-ssl-certificates}
-      + [Introduction](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
-      + [Adding an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-      + [Managing SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-    + Custom Domain Names {#custom-domain-names}
-      + [Introduction](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
-      + [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
-      + [Adding a TXT Record](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
-      + [Checking Custom Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
-      + [Configuring DNS Settings](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
-      + [Checking DNS Record Status](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
-      + [Managing Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
-      + [Domain Validated (DV) Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)
+      + [Introduction to SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
+      + [Add an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+      + [Troubleshoot SSL Certificate Errors](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
+      + [Manage SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
+    + CDN Configurations {#cdn-configurations}
+      + [Add a CDN Configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+      + [Manage CDN Configurations](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
     + IP Allow Lists {#ip-allow-lists}
-      + [Introduction](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
-      + [Adding an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-      + [Applying and Un-Applying IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
-      + [Managing IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
+      + [Introduction to IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+      + [Add an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
+      + [Apply and Unapply IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+      + [Manage IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
     + [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md)
-    + [Understanding Cloud Service Content Requests](/help/implementing/cloud-manager/content-requests.md)
+    + [Understand Cloud Service Content Requests](/help/implementing/cloud-manager/content-requests.md)
     + [CDN Performance Dashboard](/help/implementing/cloud-manager/cdn-performance.md)
     + [Cloud Manager FAQs](/help/implementing/cloud-manager/faqs.md)
   + Developing for AEM as a Cloud Service {#developing}
@@ -1128,6 +1147,7 @@ user-guide-title: AEM as a Cloud Service
     + [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
     + [AEM Rapid Development Environments](/help/implementing/developing/introduction/rapid-development-environments.md)
     + [AEM as a Cloud Service Development Guidelines](/help/implementing/developing/introduction/development-guidelines.md)
+    + [AEM as a Cloud Service Developer Console (Beta)](/help/implementing/developing/introduction/aem-developer-console.md)
     + [Logging](/help/implementing/developing/introduction/logging.md)
     + [Log Forwarding](/help/implementing/developing/introduction/log-forwarding.md)
     + [Configurations and the Configuration Browser](/help/implementing/developing/introduction/configurations.md)
@@ -1228,7 +1248,7 @@ user-guide-title: AEM as a Cloud Service
     + [ContextHub API](/help/implementing/developing/personalization/contexthub-api.md)
     + [Configuring Segmentation with ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html)
   + Configuring and Extending AEM as a Cloud Service {#configuring-and-extending}
-    + Extending AEM with App Builder{#app-builder}
+    + Extending AEM with App Builder {#app-builder}
       + [Extending AEM using Adobe Developer App Builder](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
       + [Introduction to App Builder](/help/implementing/developing/extending/app-builder/videos/introduction.md)
       + [Adobe Developer Console](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
@@ -1256,6 +1276,10 @@ user-guide-title: AEM as a Cloud Service
     + [Extending Page Properties](/help/implementing/developing/extending/page-properties.md)
     + [Extending the Bulk Editor](/help/implementing/developing/extending/bulk-editor.md)
     + [Extending MSM](/help/implementing/developing/extending/msm.md)
+    + Internationalization{#internationalization}
+      + [Internationalizing Components](/help/implementing/developing/extending/i18n/components.md)
+      + [Internationalizing UI Strings](/help/implementing/developing/extending/i18n/dev.md)
+      + [Extracting Strings for Translating](/help/implementing/developing/extending/i18n/extract.md)
   + Deploying to AEM as a Cloud Service {#deploying}
     + [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md)
     + [AEM Version Updates](/help/implementing/deploying/aem-version-updates.md)

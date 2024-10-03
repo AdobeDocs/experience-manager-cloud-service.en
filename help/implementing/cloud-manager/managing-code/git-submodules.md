@@ -60,7 +60,7 @@ This results in a `.gitmodules` file similar to the following.
     branch = main
 ```
 
-More information on git submodules can be found in the [Git Reference Manual.](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
+More information on git submodules can be found in the [Git Reference Manual](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 
 ### Limitations and Recommendations {#limitations-recommendations}
 

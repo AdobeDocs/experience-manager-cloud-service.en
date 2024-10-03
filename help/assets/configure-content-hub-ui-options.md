@@ -5,6 +5,11 @@ exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
 ---
 # Configure Content Hub user interface {#configure-content-hub-user-interface}
 
+>[!CONTEXTUALHELP]
+>id="configure_content_hub"
+>title="Configure Content Hub user interface"
+>abstract="Experience Manager Assets enables administrators to configure the options available on the Content Hub user interface. Based on the configuration options selected by the administrators, the Content Hub users are able to view fields on Content Hub. The configuration options include metadata while importing assets, filters, asset properties, metadata while searching assets, personalized branding, and any custom links."
+
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Configure assets on Content Hub](assets/configure-assets.png)
 
@@ -38,7 +43,7 @@ To access configuration options on Content Hub:
 
 ## Manage configuration options on Content Hub {#manage-configuration-options}
 
-Manage the following configuration options for your users:
+As an administrator, manage the following configuration options for your users:
 
 * [Import](#configure-import-options-content-hub)
 
@@ -49,6 +54,8 @@ Manage the following configuration options for your users:
 * [Search](#configure-metadata-search-content-hub)
 
 * [Branding](#configure-branding-content-hub)
+
+* [Expired Assets](#expired-assets-content-hub)
 
 * [Custom Links](#configure-custom-links-content-hub)
 
@@ -157,6 +164,33 @@ Administrators can also personalize the title and body text on the banner of Con
 The branding updates enabled on the Configuration User Interface display on the Content Hub portal banner:
 
 ![Configuration UI branding on Content Hub](assets/configuration-ui-branding-updates.png)
+
+### Expired assets {#expired-assets-content-hub}
+
+Administrators can control if they need expired assets to be visible on Content Hub. If the expired assets are made visible, they can also define if users can download them.
+
+Expired assets do not display in Content Hub by default.
+
+To do so, execute the following steps:
+
+1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Expired Assets]**.
+
+1. In the **[!UICONTROL Visible]** section, enable the **[!UICONTROL Allow users to view expired assets]** toggle to make all expired assets visible on Content Hub.
+
+1. After enabling the visibility of assets, you can enable or disable the ability to download expired assets using the **[!UICONTROL Allow users to download expired assets]** toggle. 
+
+1. Click **[!UICONTROL Save]** to apply the changes.
+
+   ![Expired assets on Content Hub](assets/expired-assets-content-hub.png)
+
+After enabling the visibility of assets, you can view the expired assets on Content Hub, as depicted in the following image:
+
+![Expired assets on Content Hub](assets/view-download-expired-assets.png)
+
+If the administrator has enabled download, the Content Hub users can also download them, as highlighted in the image.
+
+If the visibility of expired assets is enabled, Content Hub also highlights assets expiring within the next 15 days using the `Expiring in n days` message on the asset card.
+
 
 ### Custom Links {#configure-custom-links-content-hub}
 

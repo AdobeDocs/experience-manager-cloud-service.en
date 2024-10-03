@@ -10,79 +10,134 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 17569 {#release-17569}
+## Release 17964 {#release-17964}
 
-Summarized below are the continuous improvements for maintenance release 17569, which was publicly released on August 27, 2024. The previous maintenance release was release 17465.
+Summarized below are the continuous improvements for maintenance release 17964, which was publicly released on September 25, 2024. The previous maintenance release was release 17689. Release 17882 has been made private because of an issue.
 
-The 2024.9.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
+The 2024.10.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-17569}
+### Enhancements {#enhancements-17964}
 
-* CQ-4353778: Translation Process Events.
-* CQ-4354583: Send translation process events via Adobe Pipeline.
-* CQ-4356479: Allow only Adobe code to use the /adobe servlet context.
-* CQ-4358226: Save Translation keyword functionality doesn't work for particular String format.
-* CQ-4358270: AEM Translation Kit: August 08.
-* CQ-4358310: Add oak-compat-query-spi-1.2 to quickstart.
-* GRANITE-49833: Batching support for event sender and proxy.
-* GRANITE-52053: Remove usages of Commons Collections 3: Platform others.
-* GRANITE-52492: Elastic async catchup in case of PIT restore.
-* GRANITE-53099: Update to Apache Felix Http Jetty 5.1.24.
-* GRANITE-53125: Add classification to CloudEvent.
-* GRANITE-53328: Update Filevault to 3.8.0-T20240726111512-3cc11d50 containing stashing logging improvements.
-* GRANITE-53453: update commons-lang to 3.15.0.
-* GRANITE-53478: Update Filevault to version 3.8.0.
-* GRANITE-53505: Update QS to commons-collections-3.2.2-adobe-2.
-* GRANITE-53528: Update version of platform artifacts .
-* GRANITE-53547: Provide alternative API avoiding usage of Apache Commons Lang 2.
-* GRANITE-53575: Use BSAFE 6.2.5 in CS.
-* GRANITE-53608: Update Oak to latest public release (1.68.0).
-* SITES-23583: Sites Evergreen tests fail on Java 17.
-* SKYOPS-79535: Update to rum script v2.
-* SKYOPS-79816: Enable Sling Feature Analyzer Task for Service User Mappings in FACT Tool.
-* SKYOPS-81179: AEM builds testing for bundles toggling.
-* SKYOPS-81866: Report warnings for bundles known to be incompatible with Java 21.
-* SKYOPS-82660: Update Sling API to 2.27.6.
-* SKYOPS-82961: Update to Sling ResourceResolver 1.12.0-T20240723153354-a0270a0.
-* SKYOPS-83356: Create global dashboard for tracking JVM versions used in AEM deployments.
-* SKYOPS-83436: Java Runtime 21 rollout breaks creation of adaptive forms AEM Forms.
-* SKYOPS-84272: Log the java version used on aem launcher startup.
+* ASSETS - 37750: [Priority 4] [GraphQL] Support for DM scene7 URLs: image smart crops.
+* CQ - 4354583: [AEMaaCS] Send translation process events via Adobe Pipeline.
+* CQ - 4357642: Update MSFT credentials in OOTB Connector.
+* CQ - 4358217: Deserialize request body from request entity.
+* CQ - 4358342: Register RequestProcessors on only one HTTP method.
+* FORMS - 10781: Enhance rule editor to create rules for next/prev item in a panel.
+* FORMS - 14595: [Browserless Feature] Values are missing in the DoR when prefilled data is used to compute the DoR for Browserless rendering.
+* FORMS - 15619: AEM Forms Updated Translation Kit.
+* FORMS - 16113: [Adobe Sign]Unable to update agreement status by a different user.
+* FORMS - 16155: [Rule Editor] Implement Async function.
+* GRANITE - 53872: Add new env vars for IMS Client ID.
+* SITES - 23738: Release Core Components 2.27.0.
+* SITES - 16610: Content Fragments: Get launch details endpoint.
+* SITES - 16614: Content Fragments: Rebase Launch endpoint.
+* SITES - 16615: Content Fragments: Promote Launch endpoint.
+* SITES - 24215: Content Fragments: Implement Get Launch sources endpoint.
+* SITES - 20336: Content Fragments: Improve validation when deleting a Content Fragment Model.
+* SITES - 21090: Content Fragments: Add support for fractional min/max values for number fields
+* SITES - 21658: Content Fragments: Upgrade to use UUID-references.
+* SITES - 23054: Content Fragments: Copy Content Fragment Models.
+* SITES - 23264: Content Fragments: Create a static schema of a model.
+* SITES - 23265: Content Fragments: Expose the static schema of a model through the UI schema GET endpoint.
+* SITES - 23266: Content Fragments: Ability to add constraints to Content Fragment Models.
+* SITES - 23778: Content Fragments: Search Content Fragment Models should allow searching for models that have never been published.
+* SITES - 23335: Content Fragments: Add support for external asset references.
+* SITES - 24626: Content Fragments: RTC: Permissions for UUID migration: 2.
+* SITES - 24786: Content Fragments: Enhancements for `referencesTree` endpoint.
+* SITES - 24833: Content Fragments: Remove the validation of HTML input against a list of allowed HTML tags.
+* SITES - 23380: GraphQL: use proper API to read asset metadata.
+* SITES - 22864: [Edge Delivery] Universal editor with new AEM content structure integration H2 2024.
+* SITES - 23584: Foundation component tests fail on Java 17.
+* SITES - 23662: Eventing: User that triggers a publish request cannot be extracted from JCR log statements in server logs. 
+* SITES - 23301: Add support for starting a new workflow to create folder structures when creating Translations of Content Fragments.
+* SITES - 23336: Content Fragments: Add support for external asset references
+* SITES - 24091: MSM content package split: master.
+* SITES - 24114: isSourceRenderCondition: Reduce error log message to DEBUG.
+* SITES - 24166: Remote assets mitigation for Touch-UI editor.
+* SITES - 24409: Register all request processors on only one HTTP method.
+* SITES - 25008: Improve handling of PersistenceExceptions and permissions problems.
+* SITES - 24821: [Xwalk] Make aem.page / aem.live the default.
 
-### Fixed Issues {#fixed-issues-17569}
+### Fixed Issues {#fixed-issues-17964}
 
-* CMGR-60225: Pipeline execution failure identified on AEM Sites CS customer while validating update to AEM release 17486.
-* GRANITE-45919: Embargoed countries in Country/Region list in Edit User Settings.
-* GRANITE-51715: Picker does sometimes not enter the selection into the text field.
-* GRANITE-53290: Correctly check the protocol when parsing the URL in the XSS check.
-* GRANITE-53576: Wrong definition of service ranking in OSGi configurations.
-* SKYOPS-82129: Memoryleak in Sling Models.
+* CQ - 4356887: Inconsistency in Translation Project Status for Akamai Technologies Inc.
+* CQ - 4357878: Translation framework is not setting error state upon vendor failure translation .
+* CQ - 4358028: Failed to create project if thumbnail is uploaded.
+* CQ - 4358290: Target Setting is NOT Working on Published Page.
+* FORMS - 13173: Dropdown list misalignment in Adaptive Form > Rule Editor > Drop object field.
+* FORMS - 13873: AFv2: (“-”) in the name of component result in failure of rules.
+* FORMS - 14340: Error in instantiation of FormsAndDocumentOmniSearchHandler and CloudStorageSubmitActionInserter.
+* FORMS - 15363: Displayed Name in Rule Editor.
+* FORMS - 15381: UI enhancement of Authorization Scope message.
+* FORMS - 15595: AEM Form TnC Component Consent Text line break issue.
+* FORMS - 15623: AEMaaCS Forms - Alternatives to Update Multiple Tables in Dynamics with One POST.
+* FORMS - 15682: AEM Forms - Unable to bind DOR to Dynamics FDM.
+* FORMS - 15799: Adobe Sign GovCloud Signature page does note render in iframe.
+* FORMS - 15835: Post-submission form URL rewrite issue.
+* FORMS - 16091: Consuming the restructured Binary.java.
+* FORMS - 16096: Forms User does not have access to restendpoint dialog.
+* FORMS - 16139: Adding required logging for DoR in core-components form.
+* FORMS - 6935: State of active component lacks 3 to 1 contrast ratio.
+* FORMS - 7018: Empty element receives focus.
+* GRANITE - 53028: NPE In ExternalProcessPollingHandler.
+* GRANITE - 53907: Unable to identify service user as workflow super user.
+* SITES - 24405: Content Fragments: Extended Info for enums should be more resilient
+* SITES - 23024: Content Fragments: Enumeration does not return locked: true in GET fragments.
+* SITES - 23269: Content Fragments: Creating Content Fragments allows setting locked fields.
+* SITES - 23337: Content Fragments: Batch endpoint with `body` fails with casting exception.
+* SITES - 23474: Content Fragments: Pagination should exclude broken resources in Search Content Fragments.
+* SITES - 23615: Content Fragments: Content Fragment copy AuthoringInfo is not updated
+* SITES - 23668: Content Fragments: Patch live copy with multifield fails with 400
+* SITES - 23695: Content Fragments: Tab description is not available in UiSchema
+* SITES - 23704: Content Fragments: Multi-value enums not supported in _extendedInfo
+* SITES - 23781: Content Fragments: Duplicate values not allowed in enumeration fields
+* SITES - 24150: Content Fragments: Content Fragment Version Authoring data about creation is missing
+* SITES - 24230: Content Fragments: Fix filtering after `modified` replication status in Search Content Fragment Models
+* SITES - 24233: Content Fragments: Filtering by `publishedBy` can include unpublished resources in Search Content Fragment Models
+* SITES - 24355: Content Fragments: Live Relationship is not respected for folder created Content Fragments
+* SITES - 24816: Content Fragments: ValidationStatus messages order inconsistent.
+* SITES - 23896: Eventing: More events are coming together with a Page Moved event
+* SITES - 23899: Eventing: Page events are delayed or not generated at all
+* SITES - 23961: Eventing: Creating Content Fragment Models with references fails when configuration folder is present
+* SITES - 23963: Eventing: Page deleted events are sometimes not coming
+* SITES - 23443: GraphQL: GraphQL Cursor query inconsistent behaviour.
+* SITES - 10994: Keyboard focus order is not logical.
+* SITES - 16357: AEM: Button is truncated in Setup Analytics tab from Sites menu.
+* SITES - 19836: Ghost component in container is displayed on publish and preview instances.
+* SITES - 22348: Live Copy Overview page fails to load if their are above 100 live copies for a project.
+* SITES - 22960: Unclosed resource resolver in ContentFragmentModelOmniSearchHandler.
+* SITES - 23284: URL encoding causing blank path browser dialog.
+* SITES - 23505: Components show incorrect URLs when the page is moved to another location.
+* SITES - 23574: Not able to preview / compare to current versions for many pages
+* SITES - 23585: Issue with Restoring Inheritance for components having cq:responsive node
+* SITES - 23650: Discrepancy in Incoming Links Count in AEM Author Environment
+* SITES - 23659: Content Language Servlet regression caused by the toggle FT_* SITES - 9757
+* SITES - 23759: Assets added on experience fragment are not published with Launches
+* SITES - 24025: 302 Redirects in AEM returning location header using internal DNS instead of public DNS
+* SITES - 24036: Investigation needed for AEM RTE Persisting Characters in ASCII Format
+* SITES - 24317: Proxy Configuration not working with Basic Authentication
+* SITES - 24918: [Xwalk] fix 504 errors returned occasionally when using dedicated ip egress.
 
-### Known Issues {#known-issues-17569}
+### Known Issues {#known-issues-17964}
 
-* ASSETS-40875 - The AssetDeleteHandler class listens for asset delete events and performs specific actions based on the type of delete event (PRE_DELETE or POST_DELETE). In certain scenarios, the POST_DELETE type of event causes a NullPointerException.
-* FORMS-14340 - Error in instantiation of FormsAndDocumentOmniSearchHandler and CloudStorageSubmitActionInserter. These are harmless log statements.
-* FORMS-15818 - Component descriptor entry 'OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml' not found statements in server logs. These are harmless log statements.
-* SITES-23662 - User that triggers a publish cannot be extracted from JCR log statements in server logs. This is for a feature under development that might cause intermitent and harmless "Cannot find a valid user id in the batch of OSGI events" errors in the log.
+* FORMS - 15818: Component descriptor entry `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` not found statements in server logs. These are harmless log statements.
 
-### Change Notice {#change-notice-17569}
-
-* Starting in September 2024, AEM as a Cloud Service will disable the serialization of Resource Resolvers via the Sling Model Exporter framework. See [the documentation](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) for more details.
-
-### Deprecated Features and APIs {#deprecated-17569}
+### Deprecated Features and APIs {#deprecated-17964}
 
 Please note that we are in the proces of updating `com.day.cq.wcm.api` and with the current release, we have marked as `@Deprecated` a few of its methods and classes. These will be removed in future releases, so please consider switching to their suggested alternatives if you are using any of them.
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-17569}
+### Security Fixes {#security-17964}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 4 identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 16 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-17569}
+### Embedded Technologies {#embedded-tech-17964}
 
 |Technology|Version|Link|
 |---|---|---|
 |AEM Oak | 1.68.0|[Oak API 1.68.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.68.0/index.html)| 
 |AEM SLING API | 2.27.6 |[Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL| 1.4.24-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
-|AEM Core Components| 2.26.0|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
+|AEM Core Components| 2.27.0|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
