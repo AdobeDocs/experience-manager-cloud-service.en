@@ -41,11 +41,11 @@ Audits are run as part of the pipeline. Audits can also be [run on-demand](#on-d
 
 Experience Audit is available by default for production pipelines. It can be optionally enabled for development of full-stack and front-end pipelines. In all cases, you need to define which content paths are evaluated during pipeline execution.
 
-1. Depending on the type of pipeline you wish to configure, follow the directions to:
+1. Depending on the type of pipeline you want to configure, do one of the following:
 
    * Add a new [production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) to define the paths you want the audit to evaluate.
-   * Add a new [non-production pipeline,](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) if you wish to enable the audit on a front-end or development full-stack pipeline.
-   * Or you can [edit an existing pipeline,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) and update the existing options.
+   * Add a new [non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md), if you want to enable the audit on a front-end or development full-stack pipeline.
+   * Or, you can [edit an existing pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), and update the existing options.
 
 1. To use Experience Audit when adding or editing a non-production pipeline, select the **Experience Audit** checkbox. You can find this option on the **Source Code** tab.
 
@@ -170,7 +170,7 @@ Click the **see pages** link in the details view to see the pages to which the r
 
 ![Pages for the recommendation details](assets/experience-audit-details-pages.png)
 
-##### Scanned Pages {#scanned-pages}
+##### Scanned pages {#scanned-pages}
 
 The **Scanned pages** section gives details of scores on all scanned pages. Use the **Prev** and **Next** buttons to page through the results and choose on how many the display should paginate.
 
@@ -212,7 +212,7 @@ You can filter the scores chart based on the trigger type by using the **Trigger
 >
 >An on-demand scan can be started only if the environment is not deleted and there are no other pending scans on the same environment.
 
-## Experience Audit Encounters Issues {#issues}
+## Experience Audit encounters issues {#issues}
 
 If [pages you configured](#configuration) to be audited were not available or there were other errors in the audit, Experience Audit reflects this fact.
 
@@ -230,13 +230,12 @@ Some reasons that the pages might not be available are that:
 * The page does not exist.
 * The page redirects requiring authentication other than basic.
 * An internal issue occurred.
-* Etc.
 
 >[!TIP]
 >
 >[Accessing the raw reports](#scanned-pages) for a page can provide details on why the page could not be audited.
 
-## General Performance Tips {#performance-tips}
+## General performance tips {#performance-tips}
 
 Two of the most common impactful issues that are easy to fix relate to Cumulative Layout Shifts (CLS) and Largest Contentful Paint (LCP).
 
@@ -249,7 +248,7 @@ You can improve these areas by doing the following:
 * Converting images to WebP format to reduce their size.
 * Using `<picture>` and image `srcset` with varying image sizes for different viewport sizes (and ensuring that the resizing works).
 
-## Experience Audit Evaluation Details {#details}
+## Experience Audit evaluation details {#details}
 
 The following details provide additional information on how the Experience Audit evaluates your site. They are not necessary for general usage of the feature and are provided here for completeness.
 
