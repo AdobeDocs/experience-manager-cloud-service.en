@@ -1,11 +1,11 @@
 ---
-title: AEM Edge Delivery Services REST OpenAPI for Content Fragment Delivery
-description: Learn about the AEM Edge Delivery Services REST OpenAPI for Content Fragment Delivery
+title: AEM REST OpenAPI for Content Fragment Delivery
+description: Learn about the AEM REST OpenAPI for Content Fragment Delivery
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 ---
 
-# AEM Edge Delivery Services REST OpenAPI {#aem-edge-delivery-services-rest-openapi}
+# AEM REST OpenAPI for Content Fragment Delivery{#aem-rest-openapi-for-content-fragment-delivery}
 
 <!-- CQDOC-21938 -->
 <!-- Needs a link to the API docs - once available -->
@@ -16,7 +16,7 @@ role: Admin, Developer
 >
 >To see the status, and how to apply if you are interested, check the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-In Adobe Experience Manager (AEM) as a Cloud Service, the AEM Edge Delivery Services REST OpenAPI for Content Fragment delivery:
+In Adobe Experience Manager (AEM) as a Cloud Service, the AEM REST OpenAPI for Content Fragment Delivery:
 
 * is a HTTP REST API on [AEM Edge Delivery Services](/help/edge/overview.md), designed to deliver structured content from Content Fragments in JSON format
 * uses the infrastructure of Edge Delivery Services, including CDN integration that allows active invalidation 
