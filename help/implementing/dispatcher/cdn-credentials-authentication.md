@@ -24,9 +24,10 @@ As described in the [CDN in AEM as a Cloud Service](/help/implementing/dispatche
 
 As part of the setup, the Adobe CDN and the Customer CDN must agree on a value of the `X-AEM-Edge-Key` HTTP Header. This value is set on each request, at the Customer CDN, before it is routed to the Adobe CDN, which then validates that the value is as expected, so it can trust other HTTP headers, including those that help route the request to the appropriate AEM origin.  
 
-The *X-AEM-Edge-Key* value is referenced by the `edgeKey1` and `edgeKey2` properties in a file named `cdn.yaml` or similar, somewhere under a top-level `config` folder. Read [Using Config Pipelines](/help/operations/config-pipeline.md#folder-structure) for details about the folder structure and how to deploy the configuration. 
+The *X-AEM-Edge-Key* value is referenced by the `edgeKey1` and `edgeKey2` properties in a file named `cdn.yaml` or similar, somewhere under a top-level `config` folder. Read [Using Config Pipelines](/help/operations/config-pipeline.md#folder-structure) for details about the folder structure and how to deploy the configuration.  The syntax is described in the example below.
 
-The syntax is described below:
+>[!WARNING]
+>Direct access without a correct X-AEM-Edge-Key denied results in access being denied for all requests matching the condition (in the sample below that means all requests to the publish tier). If you need to gradually introduce authentication please see the [Migrating safely to reduce the risk of blocked traffic](#migrating-safely) section.
 
 ```
 kind: "CDN"
