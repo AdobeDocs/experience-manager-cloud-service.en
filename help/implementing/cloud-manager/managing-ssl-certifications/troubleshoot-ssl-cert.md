@@ -10,7 +10,16 @@ role: Admin, Architect, Developer
 
 Learn how to troubleshoot SSL certificate problems by identifying common causes so you can maintain secure connections.
 
-## Correct certificate order {#order}
+
+**Invalid certificate**
+
+This error occurs because the customer added an encrypted private key and used a DER formatted private key. 
+
+**Private key needs to be PKCS 8 format**
+
+This error occurs because the customer added an encrypted private key and used a DER formatted private key. 
+
+**Correct certificate order**
 
 The most common reason for a certificate deployment to fail is that the intermediate or chain certificates are not in the correct order.
 
