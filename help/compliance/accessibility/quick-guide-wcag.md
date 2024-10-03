@@ -17,7 +17,7 @@ The [Web Content Accessibility Guidelines (WCAG) version 2.1](https://www.w3.org
 
 >[!NOTE]
 >
->Since these documents were written the [updated version of the guidelines, WCAG 2.2](https://www.w3.org/TR/) were made available in October 2023. 
+>Since these documents were written the [updated version of the guidelines, WCAG 2.2](https://www.w3.org/TR/WCAG/) were made available in October 2023. 
 >
 >See [Comparison with WCAG 2.1](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1) and [New Features in WCAG 2.2](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2).
 
