@@ -105,7 +105,15 @@ After you have added an RDE for your program using Cloud Manager, you can intera
    aio login --no-open
    ```
 
-   The logincommand with the `--no-open` option will output a URL in the terminal instead of opening your default browser. Like that you can copy and open it with an **ingognito** window of your browser. This way, your currently logged in session in the normal browser window will remain untouched, and you can ensure to use the specific login and organization neccesary for your context.
+   
+>[!NOTE]
+> The login command with the `--no-open` option will output a URL in the terminal instead of opening your default browser. Like that you can copy and open it with an **incognito** window of your browser. This way, your currently logged in session in the normal browser window will remain untouched, and you can ensure to use the specific login and organization necessary for your context.
+
+The first command creates a new login context configuration, called `mycontext`, in your local `.aio` configuration file (the file is created if needed. The second command sets the context `mycontext` to be the "current" context, i.e. the default.
+
+With this configuration in place, the login command automatically stores the login tokens in the context `mycontext`, and thus keeps it local.
+
+Multiple contexts can be managed either by keeping local configurations in multiple folders. Alternatively, it is also possible to set up multiple context within a single configuration file, and switch between them by changing the "current" context.
    </details>
  
 1. Configure the RDE plugin to use your organization, program and environment. The setup command below will interactively provide the user with a list of programs in their organization, and show RDE environments in that program to choose from.
