@@ -13,13 +13,13 @@ Certain errors may arise if a certificate is not installed properly or does not 
 
 +++**Invalid certificate**
 
-This error occurs because the customer added an encrypted private key and used a DER formatted private key. 
+This error occurs because the customer used an encrypted private key and provided the key in DER format.
 
 +++
 
 +++**Private key needs to be PKCS 8 format**
 
-This error occurs because the customer added an encrypted private key and used a DER formatted private key. 
+This error occurs because the customer used an encrypted private key and provided the key in DER format.
 
 +++
 
