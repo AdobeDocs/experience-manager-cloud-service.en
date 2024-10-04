@@ -124,7 +124,7 @@ Execute the following steps to create a bulk import configuration in the [!DNL E
    >If you are using OneDrive as the data source, specify the source folder path based on the following rules:
    >* Specify the Root folder name only, without the domain. If the full URL path of the folder is `https://my.sharepoint.com/my?id=/personal/user/Documents/Importfolder/`, specify `/Importfolder/` in the **[!UICONTROL Source Folder]** field. 
    >* If the folder name contains multiple words separated by spaces, specify the name with the spaces in the Bulk Import configuration.
-   >* The source folder must be located at the root of the directory; folder paths are not supported. 
+   >* The source folder must be located at the root of the directory. Folder paths are not supported. 
 
 1. (Optional) Select the **[!UICONTROL Delete source file after import]** option to delete the original files from the source data store after the files are imported into Experience Manager Assets.
 1. Select the **[!UICONTROL Import Mode]**. Select **[!UICONTROL Skip]**, **[!UICONTROL Replace]**, or **[!UICONTROL Create Version]**. Skip mode is the default and in this mode, the ingestor skips to import an asset if it exists already.
