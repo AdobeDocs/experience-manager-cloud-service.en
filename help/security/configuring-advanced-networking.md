@@ -210,7 +210,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 A dedicated IP address can enhance security when integrating with SaaS vendors (like a CRM vendor) or other integrations outside of AEM as a Cloud Service that offer an allowlist of IP addresses. By adding the dedicated IP address to the allowlist, it ensures that only traffic from the AEM Cloud Service is permitted to flow into the external service. This is in addition to traffic from any other IPs allowed.
 
-The same dedicated IP is applied to all programs in your Adobe Organization and for all environments in each of your programs. It applies to both Author and Publish services.
+The same dedicated IP is applied to all environments in a program, and applies to both Author and Publish services.
 
 Without the dedicated IP address feature enabled, traffic coming out of AEM as a Cloud Service flows through a set of IPs shared with other customers of AEM as a Cloud Service.
 
