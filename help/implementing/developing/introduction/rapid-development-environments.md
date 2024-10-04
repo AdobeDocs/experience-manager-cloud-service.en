@@ -92,7 +92,7 @@ After you have added an RDE for your program using Cloud Manager, you can intera
    ```
    aio login
    ```   
-   The login information(tokens) is stored in the global aio configuration and therfore supports one login and organization only. In case you want to use multiple RDEs that need different logins or organizations, follow below example introducing contexts. 
+   The login information (token) is stored in the global aio configuration and therefore supports one login and organization only. In case you want to use multiple RDEs that need different logins or organizations, follow below example introducing contexts. 
    
    <details><summary>Follow this example to setup a local context for one of your RDE logins</summary>
    To store the login information locally in a .aio file in the current directory within a specific context, follow these steps. A context is also a clever way to setup a CI/CD environment or script. 
