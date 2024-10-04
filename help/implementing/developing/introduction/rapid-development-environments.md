@@ -88,9 +88,28 @@ After you have added an RDE for your program using Cloud Manager, you can intera
    aio plugins:update
    ```
 
-1. Configure the RDE plugin to use your organization, program and environment. The setup command below will interactively provide the user with a list of programs in their organization, and show RDE environments in that program to choose from.
+1. Login using the aio client. 
    ```
    aio login
+   ```   
+   The login information(tokens) is stored in the global aio configuration and therfore supports one login and organization only. In case you want to use multiple RDEs that need different logins or organizations, follow below example introducing contexts. 
+   
+   <details><summary>Follow this example to setup a local context for one of your RDE logins</summary>
+   To store the login information locally in a .aio file in the current directory within a specific context, follow these steps. A context is also a clever way to setup a CI/CD environment or script. 
+
+   Let's create a context called 'mycontext' that we then set as the default context using the auth plugin before calling the login command.
+
+   ```
+   aio config set --json -l "ims.contexts.mycontext" "{ cli.bare-output: false }"
+   aio auth ctx -s mycontext
+   aio login --no-open
+   ```
+
+   The logincommand with the `--no-open` option will output a URL in the terminal instead of opening your default browser. Like that you can copy and open it with an **ingognito** window of your browser. This way, your currently logged in session in the normal browser window will remain untouched, and you can ensure to use the specific login and organization neccesary for your context.
+   </details>
+ 
+1. Configure the RDE plugin to use your organization, program and environment. The setup command below will interactively provide the user with a list of programs in their organization, and show RDE environments in that program to choose from.
+   ```
    aio aem:rde:setup
    ```
    
