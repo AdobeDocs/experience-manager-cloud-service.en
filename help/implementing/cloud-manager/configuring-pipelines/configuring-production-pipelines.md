@@ -122,7 +122,7 @@ A targeted deployment deploys code only for selected parts of your AEM applicati
 
 >[!NOTE]
 >
->Web tier and config pipelines are not supported with private repositories. Please see the document [Adding Private Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) for details and the full list of limitations.
+>Web tier and config pipelines are not supported with private repositories. See the document [Adding Private Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) for details and the full list of limitations.
 
 The steps to complete the creation of your production, targeted deployment pipeline are the same once you choose a deployment type.
 
