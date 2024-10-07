@@ -63,7 +63,7 @@ If a pipeline is running, variable management is blocked.
 
    ![View/edit pipeline variables](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. The **Variables Configuration** window opens. Tap or click the ellipsis button of the variable you wish to edit and select **Edit**.
+1. The **Variables Configuration** window opens. Tap or click the ellipsis button of the variable you want to edit and select **Edit**.
 
    ![Edit variable](/help/implementing/cloud-manager/assets/pipeline-variables-edit.png)
 
@@ -75,7 +75,7 @@ If a pipeline is running, variable management is blocked.
 
 1. Tap or click **Save** to save the changes you made to the variables to the pipeline.
 
-If you wish to delete a variable, select **Delete** instead of **Edit** from the ellipsis menu of the pipeline variable in the **Variables Configuration** window.
+If you want to delete a variable, select **Delete** instead of **Edit** from the ellipsis menu of the pipeline variable in the **Variables Configuration** window.
 
 ## Using the Cloud Manager CLI {#cli}
 

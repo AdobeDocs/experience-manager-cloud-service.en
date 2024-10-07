@@ -11,6 +11,18 @@ role: Admin, Architect, Developer
 
 Certain errors may arise if a certificate is not installed properly or does not meet the requirements of Cloud Manager.
 
++++**Invalid certificate**
+
+This error occurs because the customer used an encrypted private key and provided the key in DER format.
+
++++
+
++++**Private key needs to be PKCS 8 format**
+
+This error occurs because the customer used an encrypted private key and provided the key in DER format.
+
++++
+
 +++**Correct certificate order**
 
 The most common reason for a certificate deployment to fail is that the intermediate or chain certificates are not in the correct order.
