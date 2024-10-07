@@ -107,6 +107,10 @@ The following `openssl` commands can be used to convert non-PEM certificates.
   openssl x509 -inform der -in certificate.cer -out certificate.pem
   ```
 
+>[!TIP]
+>
+>Adobe recommends you validate the integrity of your certificate locally using a tool such as `openssl verify -untrusted intermediate.pem certificate.pem` before attempting to install it using Cloud manager.
+
 ## Limitation on number of installed SSL certificates {#limitations}
 
 At any given time, Cloud Manager allows a maximum of 50 installed SSL certificates. These certificates can be associated with one or more environments across your program and also include any expired certificates.
