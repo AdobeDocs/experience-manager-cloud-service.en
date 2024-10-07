@@ -57,7 +57,7 @@ A user must be a member of the **Business Owner** or **Deployment Manager** role
 >
 >If you have two or more SAN certificates that cover the same SAN domain entry, if that domain is covered by one certificate and the other one is updated, the latter will now be installed for the domain.
 >
->Please see the document [Troubleshoot SSL Certificate Problems](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md#wrong-san-cert) for more information.
+>See [Troubleshoot SSL Certificate Problems](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md#wrong-san-cert) for more information.
 
 ## Replace an expired customer managed SSL certificate {#replace-ssl-certificate}
 
