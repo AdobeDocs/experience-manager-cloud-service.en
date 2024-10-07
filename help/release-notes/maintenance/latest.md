@@ -137,7 +137,7 @@ You should should transition to [the Java Use API,](https://experienceleague.ado
 
 #### com.day.cq.wcm.api {#com-day-cq-wcm-api}
 
-Please note that we are in the process of updating `com.day.cq.wcm.api` and with the current release, we have marked as `@Deprecated` a few of its methods and classes. These will be removed in future releases, so please consider switching to their suggested alternatives if you are using any of them.
+Please note that Adobe is in the process of updating `com.day.cq.wcm.api`. Some of its methods and classes have been marked as `@Deprecated` in the current release. These will be removed in future releases. Please consider switching to their suggested alternatives.
 
 ### Security Fixes {#security-17964}
 
