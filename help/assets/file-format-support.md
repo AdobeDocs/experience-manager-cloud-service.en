@@ -8,6 +8,9 @@ exl-id: e848aa77-7829-4adc-8b88-0279791a4525
 ---
 # [!DNL Assets] supported file formats {#supported-file-formats}
 
+| Search Best Practices |Metadata Best Practices|Content Hub|Dynamic Media with OpenAPI capabilities|AEM Assets developer documentation|
+| ------------- | --------------------------- |---------|----|-----|
+
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] supports basic content management capabilities &mdash; storage, managing metadata online, versioning, upload and download, and so on &mdash; for any binary file, independent of its format. [!DNL Adobe Experience Manager Assets] supports a wide range of file formats and each product feature has varied support for different formats.
 
 In addition, [!DNL Experience Manager Assets] provides extended support to generate previews and renditions and to extract metadata and text for full-text indexing. This extended support is provided using [asset microservices](asset-microservices-configure-and-use.md).
