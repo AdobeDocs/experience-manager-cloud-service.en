@@ -13,11 +13,11 @@ Learn how to troubleshoot SSL certificate problems by identifying common causes 
 
 **Invalid certificate**
 
-This error occurs because the customer added an encrypted private key and used a DER formatted private key. 
+This error occurs because the customer used an encrypted private key and provided the key in DER format.
 
 **Private key needs to be PKCS 8 format**
 
-This error occurs because the customer added an encrypted private key and used a DER formatted private key. 
+This error occurs because the customer used an encrypted private key and provided the key in DER format.
 
 **Correct certificate order**
 
