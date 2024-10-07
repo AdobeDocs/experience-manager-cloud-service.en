@@ -1,6 +1,6 @@
 ---
-title: Configuring Production Pipelines
-description: Learn how to configuring production pipelines to build and deploy your code to production environments.
+title: Add a Production Pipeline
+description: Learn how to add a production pipeline to build and deploy your code to production environments.
 index: yes
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
@@ -8,7 +8,7 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 ---
 
-# Configuring a Production Pipeline {#configure-production-pipeline}
+# Add a production pipeline {#configure-production-pipeline}
 
 Learn how to configuring production pipelines to build and deploy your code to production environments. A production pipeline deploys code first to stage environment, and upon approval deploys the same code to the production environment.
 
@@ -24,7 +24,7 @@ Before you start to deploy your code, you must configure your pipeline settings 
 >
 >You can [edit pipeline settings](managing-pipelines.md) after the initial setup.
 
-## Adding a New Production Pipeline {#adding-production-pipeline}
+## Add a new production pipeline {#adding-production-pipeline}
 
 Once you have set up your program and have at least one environment using the [!UICONTROL Cloud Manager] UI, you are ready to add a production pipeline by following these steps.
 
@@ -122,7 +122,7 @@ A targeted deployment deploys code only for selected parts of your AEM applicati
 
 >[!NOTE]
 >
->Web tier and config pipelines are not supported with private repositories. Please see the document [Adding Private Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) for details and the full list of limitations.
+>Web tier and config pipelines are not supported with private repositories. See the document [Adding Private Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) for details and the full list of limitations.
 
 The steps to complete the creation of your production, targeted deployment pipeline are the same once you choose a deployment type.
 

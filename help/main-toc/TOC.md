@@ -99,9 +99,11 @@ user-guide-title: AEM as a Cloud Service
       + [Maintenance Release Notes for 2023.4.0](/help/release-notes/maintenance/2023/2023-4-0.md)
       + [Maintenance Release Notes for 2023.2.0](/help/release-notes/maintenance/2023/2023-2-0.md)
       + [Maintenance Release Notes for 2023.1.0](/help/release-notes/maintenance/2023/2023-1-0.md)
+  
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
     + 2024 {#2024}
+      + [Release Notes for 2024.9.0](/help/implementing/cloud-manager/release-notes/2024/2024-9-0.md)
       + [Release Notes for 2024.8.0](/help/implementing/cloud-manager/release-notes/2024/2024-8-0.md)
       + [Release Notes for 2024.7.0](/help/implementing/cloud-manager/release-notes/2024/2024-7-0.md)
       + [Release Notes for 2024.6.0](/help/implementing/cloud-manager/release-notes/2024/2024-6-0.md)
@@ -1082,8 +1084,9 @@ user-guide-title: AEM as a Cloud Service
     + Managing your Code {#managing-code}
       + [Maven Project Version Handling](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
       + [Manage Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
-      + [Add Adobe Repositories](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
-      + [Add Private Repositories](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+      + [Add an Adobe Repository](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+      + [Add a Private Repository](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+      + [Add an External Repository (Early Adopter)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
       + [Access Repositories](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
       + [Git Submodule Support](/help/implementing/cloud-manager/managing-code/git-submodules.md)
       + [Use Git with Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
