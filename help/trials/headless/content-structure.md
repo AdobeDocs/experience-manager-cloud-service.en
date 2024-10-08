@@ -84,6 +84,7 @@ Follow the same steps as above to add these additional fields. The only differen
 
    * **Render As:** **Text Area** - When you create an adventure, this field stores a brief description of the trip.
    * **Field Label:** `Description` - The label that is displayed for this field when creating an adventure.
+   * **Default Type**: **Plain Text** - The format required for this example.
 
 1. Add a field so you can store the price of the adventure by dragging and dropping a **Single line text** field and enter the following properties:
 

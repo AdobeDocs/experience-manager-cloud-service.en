@@ -20,24 +20,24 @@ Learn more about program types in the document [Understanding Program and Progra
 
    ![Cloud Manager landing page](assets/log-in.png) 
 
-1. In the *Let's create your program* wizard, in the **Program name** text field, type the name you want for the program.
+1. In the *Let's create your Program* wizard, in the **Program name** text field, type the name you want for the program.
 
-1. Under **Program Objective**, select **`Set up a sandbox`**.
+1. Under **Program Objective**, select ![Magic wand icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MagicWand_18_N.svg) **Set up a sandbox**.
 
    ![Program type creation](assets/create-sandbox.png)
 
 1. (Optional) In the lower-right corner of the wizard dialog box, do either one of the following:
 
-   * Drag and drop an image file onto the **Add a program image** target.
-   * Click **Add a program image**, then select an image from a file browser.
-   * Click the trash can icon to delete an image that you added.
+   * Drag and drop an image file onto the ![Image icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **Add a program image** target.
+   * Click ![Image icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **Add a program image**, then select an image from a file browser.
+   * Click ![Delete icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) to remove an image that you added.
    
 1. Click **Continue**.
 
 1. In the **Solutions &amp; Add-ons** list box, select one or more solutions to include in the program.
    
    * Click the chevron to the left of a solution name to reveal any available optional add-ons that you want to include with a selected solution.
-   * The **Sites**, **Assets**, and **Edge Deliver Servicesy** solutions are always selected by default when you create a sandbox program. You cannot de-select them.
+   * The **Sites**, **Assets**, and **Edge Deliver Services** solutions are always selected by default when you create a sandbox program. You cannot de-select them.
 
    ![Select solutions and add-ons for a sandbox](assets/sandbox-solutions-add-ons.png)
 
@@ -49,7 +49,7 @@ Learn more about program types in the document [Understanding Program and Progra
 
 After a new sandbox program is finished being created, you can view the detail of your sandbox setup and access the environment by viewing the program overview page.
 
-1. From the Cloud Manager landing page, click the ellipsis button on your created sandbox program.
+1. From the Cloud Manager landing page, in the Sandbox program, click ![More small list icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) on your created sandbox program.
 
    ![Accessing program overview](assets/program-overview-sandbox.png)
 
