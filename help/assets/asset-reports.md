@@ -8,6 +8,9 @@ exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
 ---
 # Asset reports {#asset-reports}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=en)                  |
