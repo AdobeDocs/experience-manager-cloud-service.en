@@ -50,7 +50,7 @@ If a pipeline is executing, clicking the information icon in the **Status** colu
 
 Clicking **View details** takes you to the [details of the pipeline execution](#view-details).
 
-You can also click the ellipsis button of the pipeline to take additional actions appropriate to the pipeline state such as [editing](#editing-pipelines) it or [cancelling execution](#cancel).
+You can also click the ellipsis button of the pipeline to take additional actions appropriate to the pipeline state such as [editing](#editing-pipelines) it or [canceling execution](#cancel).
 
 ![Pipeline actions](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-actions.png)
 
@@ -92,7 +92,7 @@ Depending on the type of pipeline, you may be able to cancel the run by clicking
 
 1. Navigate to the **Pipelines** card from the **Program Overview** page and click the ellipsis button next to the pipeline you want to edit and then select **Edit** from the menu.
 
-1. The **Edit Production Pipeline** or **Edit Non-Production Pipeline** dialog box displays, allowing you to edit the same details that you entered when creating the pipeline.
+1. The **Edit Production Pipeline** or **Edit Non-Production Pipeline** dialog box displays, letting you edit the same details that you entered when creating the pipeline.
 
    * See the following pages for details on the fields and configuration options available for pipelines.
      * [Configuring Production Pipelines](configuring-production-pipelines.md)
