@@ -5,13 +5,13 @@ exl-id: 3ae3c19e-2621-4073-ae17-32663ccf9e7b
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 ---
-# GitHub Check Configuration for Private Repositories {#github-check-config}
+# GitHub check configuration for private repositories {#github-check-config}
 
 Learn how control the pipelines that are created automatically to validate each pull request to a private repository.
 
-## Configuration of GitHub Checks {#configuration}
+## Configuration of GitHub checks {#configuration}
 
-When using [private repositories,](private-repositories.md#using) a [full stack code quality pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) will be created automatically. This pipeline is started at each pull request update.
+When using [private repositories](private-repositories.md#using), a [full stack code quality pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) will be created automatically. This pipeline is started at each pull request update.
 
 You can control these checks by creating a `.cloudmanager/pr_pipelines.yml` file in the default branch of the private repository.
 
@@ -34,4 +34,4 @@ pipelines:
 |`template.programID`|Integer|No pipeline variables are reused|Can be used to reuse the [pipeline variables](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) that are set on one of the existing pipelines that are created automatically by each PR.|
 |`template.pipelineID`|Integer|No pipeline variables are reused|Can be used to reuse the [pipeline variables](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) that are set on one of the existing pipelines that are created automatically by each PR.|
 |`namePrefix`|String|`Full Stack Code Quality Pipeline for PR`|Used to set the name of the pipeline that is created automatically|
-|`importantMetricsFailureBehavior`|`CONTINUE` or `FAIL` or `PAUSE`|`CONTINUE`|Sets the important metric behavior of the pipeline<br>`CONTINUE` = If an important metric fails, the pipeline will move forward automatically<br>`FAIL` = The pipeline will finish with a FAILED status if an important metric fails<br>`PAUSE` = The code scanning step will receive a WAITING status when an important metric fails and must be manually resumed|
+|`importantMetricsFailureBehavior`|`CONTINUE` or `FAIL` or `PAUSE`|`CONTINUE`|Sets the important metric behavior of the pipeline<br>`CONTINUE` = If an important metric fails, the pipeline moves forward automatically<br>`FAIL` = The pipeline finishes with a FAILED status if an important metric fails<br>`PAUSE` = The code scanning step receives a WAITING status when an important metric fails and must be manually resumed|

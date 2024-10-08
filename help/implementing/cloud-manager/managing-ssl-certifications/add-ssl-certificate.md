@@ -18,7 +18,7 @@ Learn how to add your own SSL certificate or and Adobe managed DV (Domain Valida
 ## Prerequisites {#prerequisites}
 
 * A user must be a member of the **Business Owner** or **Deployment Manager** role to add a certificate.
-* If you are installing your own certificate, be sure to review **Certificate requirements** in [Introduction to Managing SSL Certificates.](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements)
+* If you are installing your own certificate, see **Certificate requirements** in [Introduction to Managing SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements).
 
 ## Adding an SSL certificate {#add-certificate}
 
@@ -49,4 +49,4 @@ You now have added a working SSL certificate for your project. This step is ofte
 
 >[!TIP]
 >
->If you are having issues adding or managing your certificates, please see the document [Troubleshoot SSL certificate errors.](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
+>If you are having issues adding or managing your certificates, see [Troubleshoot SSL certificate errors](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md).
