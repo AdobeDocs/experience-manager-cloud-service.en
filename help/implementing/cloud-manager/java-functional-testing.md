@@ -28,7 +28,7 @@ Once you have the contents of the `it.tests` folder, you can use it as a basis f
 
 The same tools that Adobe uses to write product functional tests can be used to write your custom functional tests. Use the [product functional tests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub as an example of how to write your tests.
 
-The code for custom functional test is Java&trade; code in the `it.tests` folder of your project. It should produce a single JAR with all the functional tests. If the build produces more than one test JAR, which JAR is selected is non-deterministic. If it produces zero test JARs, the test step passes by default. [See the AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) for sample tests.
+The code for custom functional test is Java&trade; code in the `it.tests` folder of your project. It should produce a single JAR with all the functional tests. If the build produces more than one test JAR, which JAR is selected is non-deterministic. If it produces zero test JARs, the test step passes by default. See [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) for sample tests.
 
 The tests are run on Adobe-maintained testing infrastructure including at least two author instances, two publish instances, and a Dispatcher configuration. This setup means that your custom functional tests run against the entire AEM stack.
 
