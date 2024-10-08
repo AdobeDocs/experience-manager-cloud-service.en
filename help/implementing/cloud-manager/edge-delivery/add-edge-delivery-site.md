@@ -23,7 +23,9 @@ See also [Introduction to Edge Delivery Services in Cloud Manager](/help/impleme
 
         ![Add Edge Delivery site from the Edge Delivery tab](/help/implementing/cloud-manager/assets/cm-eds-add1.png)       
 
-    * In the upper-left corner of the page, click the hamburger icon to reveal the left navigation menu. Under the **Services** heading, click **Edge Delivery Sites**. Near the upper-right corner of the page, click **Add site**.
+    * In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to reveal the side navigation menu.
+    Under the **Services** heading, click ![Web page icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**.
+    Near the upper-right corner of the page, click **Add site**.
 
         ![Add Edge Delivery site from the Edge Delivery Sites button](/help/implementing/cloud-manager/assets/cm-eds-add2.png)
 
@@ -41,10 +43,14 @@ See also [Introduction to Edge Delivery Services in Cloud Manager](/help/impleme
 
     | Step number | Description |
     | - | - |
-    | **1** | Add a file with the path and name `well-known/adobe/cloudmanager-challenge.txt` to the `main` branch of the Git repository that is listed in the **Repository URL** field. Do *not* add a period at the start of the location path.<br>If necessary, click the **Copy** icon to copy the path to the clipboard. |
-    | **2** | Add the code seen in the text field in Step 2 to the file that you just created in Step 1.<br>If necessary, click the **Copy** icon to copy the code to the clipboard. |
+    | **1** | Add a file with the path and name `well-known/adobe/cloudmanager-challenge.txt` to the `main` branch of the Git repository that is listed in the **Repository URL** field. Do *not* add a period at the start of the location path.<br>If necessary, click ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) to copy the path to the clipboard. |
+    | **2** | Add the code seen in the text field in Step 2 to the file that you just created in Step 1.<br>If necessary, click ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) to copy the code to the clipboard. |
     | **3** | Create a pull request in the Git repository for the changes you just created, then merge it to `main` to commit the code. |
 
 1. Click **Verify**.
 
-After the repository is verified, its status in the Edge Deliver Sites table changes to a green circle with a white check mark inside of it.
+After the repository is verified, its status in the Edge Delivery sites table changes to a green circle with a white check mark inside of it. 
+
+In the same table, you can click ![Information about Edge Delivery site.](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) to view details about your site such as the verified URL of the repository and the URL of the Preview and Production website.
+
+

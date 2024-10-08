@@ -54,20 +54,20 @@ You are encouraged to provide the unit tests for your AEM application, which are
 
 They are implemented using JUnit and are executed with Maven. See [core module of the AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/core.html#unit-tests) for an example unit test for AEM and getting started.
 
-### Code Quality
+### Code quality
 
 This quality gate is configured out-of-the-box and runs static code analysis on your AEM application code.
 
 See [Code Quality Testing](/help/implementing/cloud-manager/code-quality-testing.md) and [Custom code quality rules](/help/implementing/cloud-manager/custom-code-quality-rules.md) for more information.
 
-### Product Tests
+### Product tests
 
 Product functional tests are a set of stable HTTP integration tests (ITs) of core functionality in AEM such as authoring and replication tasks. Adobe provides and maintains them out-of-the-box. They are intended to prevent changes to custom application code from being deployed if it breaks core functionality in the AEM product.
 
 They are implemented using Junit, are run using Maven and use the official [AEM Testing Clients](https://github.com/adobe/aem-testing-clients). The product test suite is maintained as
 an [open-source project](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke), follows best-practices and can be considered a good starting point for the implementation of your tests.
 
-### Custom Functional Tests
+### Custom functional tests
 
 Like the product tests, customer functional tests are HTTP integration tests (ITs) and are as well implemented using Junit, are executed using Maven and built on top of the official [AEM Testing Clients](https://github.com/adobe/aem-testing-clients).
 
@@ -81,7 +81,7 @@ See [open-sourced product tests](https://github.com/adobe/aem-test-samples/tree/
 
 See [Java Functional Tests](/help/implementing/cloud-manager/java-functional-testing.md) for more information.
 
-### Custom UI Tests
+### Custom UI tests
 
 To maximize risk control for your customer-specific development, Adobe strongly encourages you to capture critical UI tests into AEMCS. They are intended to be kept rather limited in number, but with the highest impact on your customer experience.
 
@@ -99,7 +99,7 @@ See [open-sourced example tests](https://github.com/adobe/aem-test-samples/tree/
 
 See [Custom UI Testing](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) for more information.
 
-### Experience Audit
+### Experience audit
 
 The experience audit quality gate is performing [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) audits against the customer's webpage.
 
@@ -107,7 +107,7 @@ This quality gate is provided by AEM out-of-the-box, but is not blocking the dep
 
 See [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-dashboard.md) for more information.
 
-### Customer Validations
+### Customer validations
 
 The customer validations quality gate is a placeholder for the customer's own testing strategy and effort, executed before the customer's application changes reach the AEM cloud deployment pipelines.
 
