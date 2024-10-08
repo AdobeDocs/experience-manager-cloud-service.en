@@ -83,9 +83,9 @@ You should should transition to [the Java Use API,](https://experienceleague.ado
 
 Please note that Adobe is in the process of updating `com.day.cq.wcm.api`. Some of its methods and classes have been marked as `@Deprecated` in the current release. These will be removed in future releases. Please consider switching to their suggested alternatives.
 
-#### Deprecate org.apache.jackrabbit.oak.plugins.blob
+#### org.apache.jackrabbit.oak.plugins.blob {#org.apache.jackrabbit.oak.plugins.blob}
 
-* GRANITE-54165 - Deprecate org.apache.jackrabbit.oak.plugins.blob in public API.
+* GRANITE-54165: Deprecate org.apache.jackrabbit.oak.plugins.blob in public API.
 
 ### Security Fixes {#security-18099}
 
