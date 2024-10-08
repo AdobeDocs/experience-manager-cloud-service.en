@@ -319,14 +319,14 @@ If you use anything from the package `org.eclipse.jetty` or one of its sub packa
 Action list:
 * Replace usage of `org.eclipse.jetty` packages with other 3rd party libraries/own code or
 * Select the required bundles from this list and add them to your project:
-  * org.eclipse.jetty:jetty-client:9.4.54.v20240208
-  * org.eclipse.jetty:jetty-http:9.4.54.v20240208
-  * org.eclipse.jetty:jetty-io:9.4.54.v20240208
-  * org.eclipse.jetty:jetty-security:9.4.54.v20240208
-  * org.eclipse.jetty:jetty-servlet:9.4.54.v20240208
-  * org.eclipse.jetty:jetty-server:9.4.54.v20240208
-  * org.eclipse.jetty:jetty-util:9.4.54.v20240208
-  * org.eclipse.jetty:jetty-util-ajax:9.4.54.v20240208
+  * `org.eclipse.jetty:jetty-client:9.4.54.v20240208`
+  * `org.eclipse.jetty:jetty-http:9.4.54.v20240208`
+  * `org.eclipse.jetty:jetty-io:9.4.54.v20240208`
+  * `org.eclipse.jetty:jetty-security:9.4.54.v20240208`
+  * `org.eclipse.jetty:jetty-servlet:9.4.54.v20240208`
+  * `org.eclipse.jetty:jetty-server:9.4.54.v20240208`
+  * `org.eclipse.jetty:jetty-util:9.4.54.v20240208`
+  * `org.eclipse.jetty:jetty-util-ajax:9.4.54.v20240208`
 
 ### Removal of `com.mongodb` {#com.mongodb}
 
