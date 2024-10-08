@@ -114,7 +114,7 @@ To use reCAPTCHA in Adaptive Forms:
 
 1. Select the **[!UICONTROL Adaptive Form reCAPTCHA]** component and select the properties ![Properties icon](assets/configure-icon.svg) icon. It opens the properties dialog. Specify the following mandatory properties: 
     * **[!UICONTROL Name]:** You can identify a form component easily with its unique name both in the form and in the rule editor, but the name must not contain spaces or special characters.
-    * **[!Title]:** Specify a title for the CAPTCHA widget. The default value is **Captcha**. Select **Hide title** if you do not want title to appear. Select **Allow Rich Text for Title** to edit your title in rich text format. You can also mark your title as **Unbound Form Element**.
+    * **[!UICONTROL Title]:** Specify a title for the CAPTCHA widget. The default value is **Captcha**. Select **Hide title** if you do not want title to appear. Select **Allow Rich Text for Title** to edit your title in rich text format. You can also mark your title as **Unbound Form Element**.
     * **[!UICONTROL CAPTCHA Configuration]:** Select a configuration from the Settings drop-down for **reCAPTCHA Enterprise** or **reCAPTCHA v2** to present the Google reCAPTCHA dialog for the form: 
         1. If you select **reCAPTCHA Enterprise** version, the key type can be of **checkbox** or **score based**, It is based on your selection when you configure [site key for websites](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key):
             >[!NOTE] 
