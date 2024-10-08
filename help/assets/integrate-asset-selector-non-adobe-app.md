@@ -6,6 +6,9 @@ exl-id: 55848de0-aff2-42a0-b959-c771235d9425
 ---
 # Integration with a non-Adobe application {#integrate-asset-selector-non-adobe-app}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 Asset Selector allows you to integrate using various non-Adobe or third party applications to enable them to work together seamlessly.
 
 ## Prerequisites {#prereqs-non-adobe-app} 
