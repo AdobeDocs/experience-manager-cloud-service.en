@@ -101,7 +101,7 @@ Launches allow you to:
 
 The Launches console provides an overview of your launches and lets you act on those listed. The console can be accessed by:
 
-* The **Tools** Console: **Tools**, **Sites**, **Launches**.
+* The **Tools** Console: **Tools**, **General**, **Launches**.
 
 * **Launches Console** at the bottom of the **Launches** section of the **References** rail when navigating source content in the Sites console.
 
