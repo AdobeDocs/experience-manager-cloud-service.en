@@ -294,7 +294,7 @@ data:
   originSelectors:
     rules:
       - name: example-com
-        when: { reqProperty: path, like: /proxy-me* }
+        when: { reqProperty: path, like: /proxy* }
         action:
           type: selectOrigin
           originName: example-com
