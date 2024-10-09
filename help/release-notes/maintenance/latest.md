@@ -12,7 +12,7 @@ The following section outlines the technical release notes for the current maint
 
 ## Release 18099 {#release-18099}
 
-Summarized below are the continuous improvements for maintenance release 18099, which was publicly released on October 8, 2024. The previous maintenance release was release 17964.
+Summarized below are the continuous improvements for maintenance release 18099, which was publicly released on October 9, 2024. The previous maintenance release was release 17964.
 
 The 2024.10.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
