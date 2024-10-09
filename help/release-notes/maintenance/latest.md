@@ -62,6 +62,12 @@ The 2024.10.0 feature activation will provide the full feature set for this main
 * SKYOPS-83910: Fix concurrency issues found in SKYOPS-82371. 
 * GRANITE-52876: Update to com.adobe.granite.ui.content 0.8.1448.
 * GRANITE-53088: Regression introduced by the fix of SITES-11992.
+* GUIDES-14445: Native PDF generation fails with an error related to getting dependencies for Node.js.
+* GUIDES-16961: The title with `<conref>` doesn't resolve in the Baseline and Translation dashboards of the Web Editor.
+* GUIDES-17283: When selecting the **Use metadata added in the topicmeta** option, the metadata properties are not propagated in the document proprieties of the Native PDF output.
+* GUIDES-17793: The referenced PDF isn’t activated from the **Bulk Publish Dashboard** during the Bulk Activation of published content.
+  
+For more information about the new and enhanced Guides features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ### Known Issues {#known-issues-18099}
 
