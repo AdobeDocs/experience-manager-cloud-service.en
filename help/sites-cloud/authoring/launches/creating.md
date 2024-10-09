@@ -153,7 +153,8 @@ You can clone a launch from the [launches console](/help/sites-cloud/authoring/l
 
 * Select the launch, by tapping/clicking on the thumbnail.
 * The toolbar will appear - select Clone.
-  * The clone will be shown in the console.
+  * The clone will be created and shown in the console. 
+  * The **Launch Title** will indicate that it is a clone. You can update the title by editing the [Launch Configuration](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration) (**Properties**).
 
 ## Deleting a Launch {#deleting-a-launch}
 
