@@ -112,7 +112,7 @@ You can edit a pipeline if it is not running.
 
 >[!NOTE]
 >
->Web tier and config pipelines are not supported with private repositories. See [Add a Private Repository in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) for details and the full list of limitations.
+>Web tier and config pipelines are not supported with private repositories. See [Add a Private GitHub Repository in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) for details and the full list of limitations.
 
 ## Delete a pipeline {#deleting-pipelines}
 
@@ -151,21 +151,21 @@ You can check the details of a pipeline to view the status and logs from its mos
 
    ![Step summary](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-step.png)
 
-1. Click the **View details** link to reveal the **Duration** section. This includes the average duration for the pipeline based on the historical trend for that program.
+1. Click **View details** to expand the **Duration** section, where you can see the average duration of the pipeline based on the program's historical trends.
 
    ![Duration](/help/implementing/cloud-manager/assets/configure-pipeline/duration.png)
 
-1. If your pipeline contained a **Code Scanning** step, which raised issues, click **Download Details** to view a list of [code quality tests](/help/implementing/cloud-manager/code-quality-testing.md) that did not pass.
+1. If your pipeline included a **Code Scanning** step that flagged issues, click **Download Details** to access a list of [code quality tests](/help/implementing/cloud-manager/code-quality-testing.md) that failed to pass.
 
    ![Code quality issues](assets/managing-pipelines-code-quality-issues.png)
 
-   A **Project File Location** column is available in the CSV file to indicate the location of the offending code. This column is the project-relative path, whereas the **File Location** column is Maven-generated.
+   The CSV file includes a **Project File Location** column, showing the path to the problematic code relative to the project. In contrast, the **File Location** column reflects the Maven-generated path.
 
    ![Project code scan issue details](assets/managing-pipelines-code-quality-details.png)
 
 ## Cancel a pipeline {#cancel}
 
-If a pipeline is in the validation or build image phase you can safely cancel the pipeline run.
+You can safely cancel the pipeline run if it is in the validation or build image phase.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 

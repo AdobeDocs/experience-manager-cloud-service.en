@@ -1,13 +1,13 @@
 ---
-title: Add Private GitHub Repositories in Cloud Manager
+title: Add a rivate GitHub Repository in Cloud Manager
 description: Learn how to set up Cloud Manager to work with your own private GitHub repositories.
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 ---
-# Add private GitHub repositories in Cloud Manager {#private-repositories}
+# Add a private GitHub repository in Cloud Manager {#private-repositories}
 
-By setting up Cloud Manager to integrate with your private GitHub repositories, you can validate your code directly within GitHub using Cloud Manager. This configuration removes the requirement to regularly sync your code with the Adobe repository.
+By setting up Cloud Manager to integrate with your private GitHub repositories, you can validate your code directly within GitHub using Cloud Manager. This configuration removes the requirement to regularly sync your code with the Adobe repository. 
 
 <!-- CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
 
