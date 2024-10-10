@@ -48,7 +48,7 @@ A user must have the role **Deployment Manager** or **Business Owner** to add a 
 
 On the **Repositories** page, near the upper-right corner, click **Add Repository**
 
-![Add repository dialog box.](assets/repository-add.png)
+![Add repository dialog box](assets/repository-add.png)
 *Add Repository dialog box.*
 
 Cloud Manager supports two types of repositories: Adobe-managed repositories (**Adobe Repository**) and self-managed repositories (**Private Repository**). The required fields for setup vary depending on the type of repository you choose to add. For more information, see the following:
