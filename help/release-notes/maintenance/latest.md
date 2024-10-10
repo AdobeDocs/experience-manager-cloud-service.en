@@ -10,13 +10,13 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 18099 {#release-18099}
+## Release 18175 {#release-18175}
 
-Summarized below are the continuous improvements for maintenance release 18099, which was publicly released on October 10, 2024. The previous maintenance release was release 17964. Release 18099 has been made private because of an issue.
+Summarized below are the continuous improvements for maintenance release 18175, which was publicly released on October 10, 2024. The previous maintenance release was release 17964. Release 18099 has been made private because of an issue.
 
 The 2024.10.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-18099}
+### Enhancements {#enhancements-18175}
 
 * ASSETS-38322: Enabling http request event for AEM.
 * ASSETS-41448: Update auth.ims bundle to support FI to group mappings.
@@ -50,7 +50,7 @@ The 2024.10.0 feature activation will provide the full feature set for this main
 * SKYOPS-85336: Update Sling Commons Threads to 3.3.0.
 * SKYOPS-86329: updating versions of platform test modules for java 21 sdk support.
 
-### Fixed Issues {#fixed-issues-18099}
+### Fixed Issues {#fixed-issues-18175}
 
 * CNTBF-298: Remove jcr:uuid from CC exported packages.
 * SKYOPS-83910: Fix concurrency issues found in SKYOPS-82371. 
@@ -62,11 +62,11 @@ The 2024.10.0 feature activation will provide the full feature set for this main
   
 For more information about the new and enhanced Guides features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
-### Known Issues {#known-issues-18099}
+### Known Issues {#known-issues-18175}
 
 * FORMS-15818: Component descriptor entry `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` not found statements in server logs. These are harmless log statements.
 
-### Deprecated Features and APIs {#deprecated-18099}
+### Deprecated Features and APIs {#deprecated-18175}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
@@ -86,11 +86,11 @@ Please note that Adobe is in the process of updating `com.day.cq.wcm.api`. Some 
 
 * GRANITE-54165: Deprecate org.apache.jackrabbit.oak.plugins.blob in public API.
 
-### Security Fixes {#security-18099}
+### Security Fixes {#security-18175}
 
 AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 2 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-18099}
+### Embedded Technologies {#embedded-tech-18175}
 
 |Technology|Version|Link|
 |---|---|---|
