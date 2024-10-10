@@ -50,7 +50,7 @@ The 2024.10.0 feature activation will provide the full feature set for this main
 * SKYOPS-85335: Update org.apache.sling.jcr.repoinit to 1.1.52.
 * SKYOPS-85336: Update Sling Commons Threads to 3.3.0.
 * SKYOPS-86329: updating versions of platform test modules for java 21 sdk support.
-* 
+
 ### Fixed Issues {#fixed-issues-18099}
 
 * CNTBF-298: Remove jcr:uuid from CC exported packages.
