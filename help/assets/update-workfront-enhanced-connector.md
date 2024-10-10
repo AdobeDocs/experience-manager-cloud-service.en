@@ -7,6 +7,9 @@ role: Admin
 ---
 # Update [!DNL Workfront for Experience Manager enhanced connector] {#update-enhanced-connector-for-workfront}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 [!UICONTROL Experience Manager Assets as a Cloud Service] enables you to update the [!DNL Workfront for Experience Manager enhanced connector] from a previous version to the latest version.
 
 >[!TIP]

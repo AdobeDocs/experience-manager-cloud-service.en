@@ -36,6 +36,7 @@ You can navigate through the structure of your launch from:
 
 * The **Sites** Console:
   If you select a specific source page and open **References**, you can then select **Launches** followed by **Manage Content**:
+  
   ![Launch Console - Manage Content](/help/sites-cloud/authoring/assets/launches-navigate-sites-console.png)
   
   >[!NOTE]

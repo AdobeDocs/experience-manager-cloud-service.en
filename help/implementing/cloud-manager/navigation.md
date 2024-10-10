@@ -39,7 +39,7 @@ The My Programs console provides an overview of all programs to which you have a
 
 >[!TIP]
 >
->Please see the document [Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) for details on programs.
+>See [Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) for details on programs.
 
 ### Toolbars {#my-programs-toolbars}
 
@@ -139,8 +139,8 @@ The ![More icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_More_
 
 * Navigate to a particular ![Data icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [Environment](/help/implementing/cloud-manager/manage-environments.md) of the program
 * Open the ![Program overview icon](/help/implementing/cloud-manager/assets/program-overview.svg) [Program Overview](#program-overview)
-* ![Edit icon](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [Edit the program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* ![Delete icon](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[Delete a sandbox program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![Edit icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [Edit the program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
+* ![Delete icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[Delete a sandbox program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
@@ -177,9 +177,9 @@ The toolbars for the program overview are similar to those toolbars of the [My P
 
 #### Cloud Manager header {#cloud-manager-header-2}
 
-In the upper-left corner of the page is the Adobe Cloud Manager header. You can click ![Side menu icon](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to show or hide the side menu of tabs to other areas of the software.
+In the upper-left corner of the page is the Adobe Cloud Manager header. You can click ![Side menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to show or hide the side menu of tabs to other areas of the software.
 
-![Cloud Manager hamburger menu](assets/cloud-manager-hamburger.png)
+![Cloud Manager side menu](assets/cloud-manager-hamburger.png)
 
 Click Adobe Cloud Manager to return to Home.
 
@@ -223,7 +223,7 @@ By default, when you open a program you arrive on the **Overview** tab. The curr
 
 In the upper-left corner of the [Cloud Manager header](#cloud-manager-header-2), click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to show or hide the side menu of tabs.
 
-### Call-to-sction {#cta}
+### Call-to-action {#cta}
 
 The call-to-action section gives you helpful information depending on the status of your program. For a new program, you may see next steps given and a reminder of a go-live date, [set during program creation](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
 
@@ -233,28 +233,28 @@ For a live program, the status of your last deployment with links for details an
 
 ![Call-to-action](/help/implementing/cloud-manager/assets/info-banner.png)
 
-### Environments Card {#environments}
+### Environments card {#environments}
 
-The **Environments** card gives you an overview of your environments as well as links for quick actions.
+The **Environments** card gives you an overview of your environments and links for quick actions.
 
 The **Environments** card only lists three environments. Click **Show All** to see all environments of the program.
 
-Please see the document [Managing Environments](/help/implementing/cloud-manager/manage-environments.md) for details on how to manage your environments.
+See also [Manage Environments](/help/implementing/cloud-manager/manage-environments.md).
 
-### Pipelines Card {#pipelines}
+### Pipelines card {#pipelines}
 
 The **Pipelines** card gives you an overview of your pipelines as well as links for quick actions.
 
 The **Pipelines** card only lists three pipelines. Click **Show All** to see all pipelines of the program.
 
-Please see the document [Managing Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) for details on how to manage your pipelines.
+See also [Manage Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) for details on how to manage your pipelines.
 
-### Performance Card {#performance}
+### Performance card {#performance}
 
 The **Performance** card gives an overview of the **[CDN Dashboard](/help/implementing/cloud-manager/cdn-performance.md)**.
 
 ![Performance card](/help/implementing/cloud-manager/assets/cdn-performance-dashboard.png)
 
-### Useful Resources {#useful-resources}
+### Useful resources {#useful-resources}
 
 The **Useful Resources** section provides links to additional learning resources for Cloud Manager.

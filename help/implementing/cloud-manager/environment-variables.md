@@ -84,7 +84,7 @@ After you have created environment variables, you can update them using the **Ad
 
 1. After you have made the required configuration changes, select **Save**.
 
-[As when adding variables,](#add-variables) an indicator with the status **Updating** is shown at the top of the table and next to the newly updated variable(s) to indicate that the environment is being updated with the configuration. After completion, the updated environment variables are visible in the table.
+[As when adding variables](#add-variables), an indicator with the status **Updating** is shown at the top of the table and next to the newly updated variable(s) to indicate that the environment is being updated with the configuration. After completion, the updated environment variables are visible in the table.
 
 >[!TIP]
 >
