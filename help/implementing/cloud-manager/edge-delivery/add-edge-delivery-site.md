@@ -51,6 +51,6 @@ See also [Introduction to Edge Delivery Services in Cloud Manager](/help/impleme
 
 After the repository is verified, its status in the Edge Delivery sites table changes to a green circle with a white check mark inside of it. 
 
-In the same table, you can click ![Information about Edge Delivery site.](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) to view details about your site such as the verified URL of the repository and the URL of the Preview and Production website.
+In the same table, click ![Information about Edge Delivery site](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) to view details about your site such as the verified URL of the repository and the URL of the Preview and Production website.
 
 
