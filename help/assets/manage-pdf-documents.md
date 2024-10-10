@@ -7,6 +7,9 @@ exl-id: 29660869-6902-4093-845b-cd629be59d4d
 ---
 # Manage PDF documents in Experience Manager Assets as a Cloud Service {#add-assets-to-experience-manager}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 Experience Manager Assets integrates with the Document Cloud PDF Viewer seamlessly, which lets you preview multiple pages of a PDF document. In addition, you can also use advanced Document Cloud PDF viewer features such as annotations, search text, navigate the PDF document using bookmarks and thumbnails, and more under the same roof. Experience Manager Assets also lets you upload documents in other supported formats and preview them in a PDF format.
 
 Document Cloud PDF viewer benefits AEM Assets in the following ways:

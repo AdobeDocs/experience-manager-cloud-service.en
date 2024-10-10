@@ -6,6 +6,9 @@ exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
 ---
 # Restrict access to assets in [!DNL Experience Manager] {#restrict-access-to-assets}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 Central asset governance in Experience Manager allows the DAM Admin or Brand Managers to manage access to assets. They can restrict the access by configuring roles for approved assets on the authoring side, specifically on the AEM as a Cloud Service author instance.
 
 Users [searching](search-assets-api.md) or utilizing [delivery URLs](deliver-assets-apis.md) can gain access to restricted assets upon successfully passing the authorization process.
