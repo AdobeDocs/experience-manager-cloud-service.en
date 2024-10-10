@@ -9,11 +9,18 @@ role: Admin, Architect, Developer
 
 # Manage SSL certificates {#managing-ssl-certificates}
 
-Learn how to use Cloud Manager to check the status of your Adobe managed and customer managed SSL certificates and how to delete them. For customer managed certificates, you can also edit and update (replace) them.
+Learn how to use Cloud Manager to check the status of your SSL certificates and how to edit, replace, update, and delete them.
 
 ## Check the status of SSL certificates {#checking-status-an-ssl-certificate}
 
-The status of your SSL certificates can be understood at a glance from the **SSL Certificates** page.
+Cloud Manager gives an overview of the status of all certificates for your program.
+
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate program.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
+1. In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to reveal the side menu. 
+1. Under the **Services** heading, click ![Lock closed icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL Certificates**. 
+
+The **SSL Certificates** page provides the status of your SSL certificates.
 
 | Status of SSL certificate | Description |
 | --- | --- |
@@ -45,6 +52,12 @@ A user must be a member of the **Business Owner** or **Deployment Manager** role
     * In the **Certificate chain** field (or chain of trust), paste the certificate chain.
 
 1. Click **Update** to save your changes and have them applied automatically.
+
+>[!NOTE]
+>
+>If you have two or more SAN certificates that cover the same SAN domain entry, if that domain is covered by one certificate and the other one is updated, the latter will now be installed for the domain.
+>
+>See [Troubleshoot SSL Certificate Problems](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md#wrong-san-cert) for more information.
 
 ## Replace an expired customer managed SSL certificate {#replace-ssl-certificate}
 
@@ -83,7 +96,7 @@ A user must be a member of the **Business Owner** or **Deployment Manager** role
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate program.
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
-1. In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to reveal the side menu.
+1. In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to reveal the side menu. 
 1. Under the **Services** heading, click ![Lock closed icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL Certificates**. 
 1. On the SSL Certificates page, in the table row of the certificate you want to delete, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)at the far right
 1. In the drop-down menu, click **Delete**.
@@ -103,4 +116,3 @@ The message disappears after all pre-existing environment configurations are mig
 See [Add an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) for more details.
 
 A similar message is also provided on the **IP Allow List** and the **Environments** pages for environments that have pre-existing CDN configurations for IP Allow Lists or custom domain names.
-
