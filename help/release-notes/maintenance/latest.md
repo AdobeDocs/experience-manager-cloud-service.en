@@ -12,7 +12,7 @@ The following section outlines the technical release notes for the current maint
 
 ## Release 18099 {#release-18099}
 
-Summarized below are the continuous improvements for maintenance release 18099, which was publicly released on October 9, 2024. The previous maintenance release was release 17964.
+Summarized below are the continuous improvements for maintenance release 18099, which was publicly released on October 10, 2024. The previous maintenance release was release 17964. Release 18099 has been made private because of an issue.
 
 The 2024.10.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
@@ -55,7 +55,6 @@ The 2024.10.0 feature activation will provide the full feature set for this main
 * CNTBF-298: Remove jcr:uuid from CC exported packages.
 * SKYOPS-83910: Fix concurrency issues found in SKYOPS-82371. 
 * GRANITE-52876: Update to com.adobe.granite.ui.content 0.8.1448.
-* GRANITE-53088: Regression introduced by the fix of SITES-11992.
 * GUIDES-14445: Native PDF generation fails with an error related to getting dependencies for Node.js.
 * GUIDES-16961: The title with `<conref>` doesn't resolve in the Baseline and Translation dashboards of the Web Editor.
 * GUIDES-17283: When selecting the **Use metadata added in the topicmeta** option, the metadata properties are not propagated in the document proprieties of the Native PDF output.
