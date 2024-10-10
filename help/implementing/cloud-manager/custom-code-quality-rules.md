@@ -789,7 +789,7 @@ A common problem is use of nodes named `config` within component dialogs or when
 * **Severity**: Major
 * **Since**: Version 2019.6.0
 
-Similar to the [Packages Should Not Contain Duplicate OSGi Configurations rule,](#oakpal-package-osgi) this is a common problem on complex projects where the same node path is written to by multiple separate content packages. While using content package dependencies can be used to ensure a consistent result, it is better to avoid overlaps entirely.
+Similar to the [Packages Should Not Contain Duplicate OSGi Configurations rule](#oakpal-package-osgi), this is a common problem on complex projects where the same node path is written to by multiple separate content packages. While using content package dependencies can be used to ensure a consistent result, it is better to avoid overlaps entirely.
 
 ### Default authoring mode should not be classic UI {#oakpal-default-authoring}
 
@@ -848,7 +848,7 @@ Customers using reverse replication should contact Adobe for alternative solutio
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
-Experience Manager client libraries may contain static resources like images and fonts. As described in the document [Using Preprocessors,](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) when using proxied client libraries these static resources must be contained in a child folder named `resources` to be effectively referenced on the publish instances.
+Experience Manager client libraries may contain static resources like images and fonts. As described in the document [Using Preprocessors](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors), when using proxied client libraries these static resources must be contained in a child folder named `resources` to be effectively referenced on the publish instances.
 
 #### Non-compliant code {#non-compliant-proxy-enabled}
 

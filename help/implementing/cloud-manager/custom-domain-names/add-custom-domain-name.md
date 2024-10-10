@@ -17,7 +17,7 @@ Fulfill these requirements before adding a custom domain name in Cloud Manager.
 
 * You must have added a domain SSL certificate for the domain you want to add before adding a custom domain name as described in the document [Add an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
 * You must have the **Business Owner** or **Deployment Manager** role to add a custom domain name in Cloud Manager.
-* Be using the Fastly or other CDN (Content Delivery Network).
+* Use the Fastly or other CDN (Content Delivery Network).
 
 >[!IMPORTANT]
 >
@@ -51,7 +51,7 @@ Do not include `http://`, `https://`, or spaces when entering in your domain.
 
 1. Click **Create**.
 
-1. In the **Verify Domain** dialog box, in the **What certificate type do you plan on using with this domain?** drop-down list, select one of the following options:
+1. In the **Verify domain** dialog box, in the **What certificate type do you plan on using with this domain?** drop-down list, select one of the following options:
 
    | Certificate type option | Description |
    | --- | --- |
@@ -62,8 +62,8 @@ Do not include `http://`, `https://`, or spaces when entering in your domain.
 
    | If you selected the certificate type | Description |
    | --- | ---  |
-   | Adobe managed certificate |  Complete the [Adobe managed certificate steps](#adobe-managed-cert-steps) before continuing to the next step. |
-   | Customer managed certificate | Complete the [Customer managed certificate steps](#customer-managed-cert-steps) before continuing to the next step. |
+   | Adobe managed certificate |  Complete the [Adobe managed certificate steps](#adobe-managed-cert-steps) before continuing to step 9. |
+   | Customer managed certificate | Complete the [Customer managed certificate steps](#customer-managed-cert-steps) before continuing to step 9. |
 
 1. Click **Verify**.
 
@@ -124,11 +124,26 @@ Add the following `A` records to your domain's DNS settings by way of your domai
 
 * `A record for domain @ pointing to IP 151.101.195.10`
 
+>[!TIP]
+>
+>The *CNAME* or *A Record* can be set on the governing DNS server to save you time.
+
 
 ### Customer managed certificate steps {#customer-managed-cert-steps}
 
-If you selected the certificate type *Customer managed certificate*, complete the following steps in the **Verify domain** dialog box.
+If you selected the certificate type *Customer managed certificate*, complete the following steps.
 
+1. In the **Verify domain** dialog box, upload a new EV/OV certificate that covers the selected domain. 
+
+   ![Verify domain for a customer managed EV/OV certificate](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
+
+1. Click **OK**.
+
+   After uploading a valid EV/OV certificate, the domain's status is marked as **Verified** in the **Domain Settings** table. 
+
+   ![Domain Setting table showing a Verified status](/help/implementing/cloud-manager/assets/domain-settings-verified.png).
+
+<!--
 ![Customer managed certificate steps](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)
 
 To verify the domain in use, you are required to add and verify a TXT record.
@@ -178,46 +193,26 @@ For example, if your domain is `example.com`, then run:
 dig TXT _aemverification.example.com -t txt
 ```
 
+
 >[!TIP]
 >
 >There are several [DNS lookup tools](https://www.ultratools.com/tools/dnsLookup) available. Google DoH can be used to look up TXT record entries and identify if the TXT record is missing or erroneous.
+
+-->
 
 >[!NOTE]
 >
 >DNS verification can take a few hours to process because of DNS propagation delays.
 >
->Cloud Manager verifies ownership and updates the status, which can be seen in the Domain Settings table. See [Check custom domain name status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) for more details.
+>Cloud Manager verifies ownership and updates the status, which can be seen in the **Domain Settings** table. See [Check custom domain name status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) for more details.
 
 <!--
 ## Next Steps {#next-steps}
 
 Now that you created your TXT entry, you can verify your domain name status. Proceed to the document [Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) to continue setting up your custom domain name. -->
 
->[!TIP]
->
->The TXT entry and the CNAME or A Record can be set simultaneously on the governing DNS server, thus saving time.
+
+><!-- The TXT entry and the CNAME or A Record can be set simultaneously on the governing DNS server, thus saving time. -->
 >
 ><!-- To do this, review the entire process of setting up a custom domain name as detailed in the document [Introduction to custom domain names](/help/implementing/cloud-manager/custom-domain-names/introduction.md) taking special note of the document [help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) and update your DNS settings appropriately. -->
 
-
-## Add a custom domain name from the Environments page {#adding-cdn-environments}
-
-<!-- I DON'T SEE THIS ABILITY ANYMORE IN THE UI -->
-
-The steps for adding a custom domain name from the **Environments** page are the same as when [adding a custom domain name from the Domain Settings page](#adding-cdn-settings), but the entry point differs. Follow these steps to add a custom domain name from the **Environments** page.
-
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
-
-1. Navigate to the **Environments Detail** detail page for the environment of interest.
-
-   ![Entering domain name on the Environment Details page](/help/implementing/cloud-manager/assets/cdn/cdn-create4.png)
-
-1. Use the **Domain Names** table to submit the custom domain name.
-
-   1. Enter the custom domain name.
-   1. Select the SSL certificate associated with this name from the drop-down list.
-   1. Click ![Add icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **Add**.
-
-   ![Add a custom domain name](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
-
-1. The **Add domain name** dialog box opens to the **Domain Name** tab. Continue as you would for [adding a custom domain name from the Domain Settings page](#adding-cdn-settings). 
