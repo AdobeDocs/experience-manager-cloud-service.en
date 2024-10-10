@@ -29,7 +29,6 @@ The 2024.10.0 feature activation will provide the full feature set for this main
 * GRANITE-54300: Update Oak to latest public release (1.70.0).
 * GRANITE-54274: Accept Firefly IMS client.
 * GRANITE-36205: Update internal oak release version to latest.
-* GRANITE-45298: A low privileged user can get RCE by crafting a malicious form without JS but in the fashion of XSS.
 * GRANITE-54266: Production SDK missing Search Suggestor service.
 * GRANITE-50948 -Integrate repository service into AEM Add alternative repository service for local development.
 * GRANITE-53966: Use separate thread pool for content-distribution.
