@@ -334,7 +334,7 @@ Add the Mongo client API to your project.
 
 Action list:
 * Add this bundle to your project
-  * org.mongodb:mongo-java-driver:3.12.7
+  * `org.mongodb:mongo-java-driver:3.12.7`
 
 ### Usage of `org.apache.abdera*` and `org.apache.sling.atom.taglib` {#org.apache.abdera_or_org.apache.sling.atom.taglib}
 

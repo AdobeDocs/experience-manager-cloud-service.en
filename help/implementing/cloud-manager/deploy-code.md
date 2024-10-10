@@ -76,7 +76,7 @@ The **Stage testing** phase involves these steps.
    * UI tests are Selenium-based tests packaged in a Docker image to allow a wide choice in language and frameworks (such as Java and Maven, Node and WebDriver.io, or any other framework and technology built upon Selenium).
    * See [Custom UI Testing](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) for more details.
 
-* **Experience Audit** - This step in the pipeline is always executed and cannot be skipped. As a production pipeline is executed, an experience audit step is included after custom functional testing that will run the checks.
+* **Experience Audit** - This step in the pipeline is always executed and cannot be skipped. As a production pipeline is executed, an experience audit step is included after custom functional testing that runs the checks.
    * The pages that are configured are submitted to the service and evaluated. 
    * The results are informational and show the scores and the change between the current and previous scores.
    * This insight is valuable to determine if there is a regression that is introduced with the current deployment.
@@ -104,7 +104,7 @@ This process continues until the deployment has reached all publishers and dispa
 
 ## Timeouts {#timeouts}
 
-The following steps will timeout if left waiting for user feedback:
+The following steps timeout if left waiting for user feedback:
 
 |Step|Timeout|
 |--- |--- |
@@ -125,7 +125,7 @@ All Cloud Service deployments follow a rolling process to ensure zero downtime. 
 
 ## Re-Executing a Production Deployment {#reexecute-deployment}
 
-In rare cases, production deployment steps may fail for transient reasons. In such cases, re-execution of the production deployment step is supported so long as the production deployment step has completed, regardless of the type of completion (for example, cancelled or unsuccessful). Re-execution creates a new execution using the same pipeline consisting of three steps.
+In rare cases, production deployment steps may fail for transient reasons. In such cases, re-execution of the production deployment step is supported so long as the production deployment step has completed, regardless of the type of completion (for example, canceled or unsuccessful). Re-execution creates a new execution using the same pipeline consisting of three steps.
 
 1. The validate step - This is essentially the same validation that occurs during a normal pipeline execution.
 1. The build step - In the context of a re-execution, the build step copies artifacts and does not actually execute a new build process.
@@ -141,7 +141,7 @@ In such circumstances where a re-execution is possible, the production pipeline 
 
 ### Limitations {#limitations}
 
-* Re-executing the production deployment step will only be available for the last execution.
+* Re-executing the production deployment step is only be available for the last execution.
 * Re-execution is not available for push update executions.
   * If the last execution is a push update execution, re-execution is not possible.
 * If the last execution failed at any point prior to the production deployment step, re-execution is not possible.

@@ -61,17 +61,17 @@ The following step-by-step workflow description is designed to help you get up a
     * Work with video metadata
 
         * Edit the properties of video such as the title, description, and tags, custom metadata fields:
-          [Editing video properties](/help/assets/manage-digital-assets.md#editing-properties)
+          [Edit video properties](/help/assets/manage-digital-assets.md#editing-properties)
 
-        * [Managing metadata for digital assets](/help/assets/manage-metadata.md)
+        * [Manage metadata for digital assets](/help/assets/manage-metadata.md)
         * [Metadata schemas](/help/assets/metadata-schemas.md)
 
     * Review, approve, and annotate videos, and maintain full version control
 
-        * [Annotating videos](/help/assets/manage-video-assets.md#annotate-video-assets) or [Annotating assets](/help/assets/manage-digital-assets.md#annotating)
+        * [Annotate videos](/help/assets/manage-video-assets.md#annotate-video-assets) or [Annotating assets](/help/assets/manage-digital-assets.md#annotating)
 
-        * [Creating a version](/help/assets/manage-digital-assets.md#asset-versioning)
-        * [Starting a workflow on an asset](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
+        * [Create a version](/help/assets/manage-digital-assets.md#asset-versioning)
+        * [Start a workflow on an asset](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
 
         * [Review folder assets](/help/assets/bulk-approval.md)
         * [Projects](/help/sites-cloud/authoring/projects/overview.md)
@@ -518,7 +518,7 @@ You can enable support in Dynamic Media for:
 
 * DASH
 * Multi-captions and audio tracks
-* AI-generated captions (Early Access)
+* AI-generated captions (Limited Availability)
 
 By creating and submitting an Adobe Customer Support case. 
 
@@ -528,7 +528,7 @@ Enabling any of the above three capabilities, enables all of them. So, if you on
 | --- | --- |
 | DASH | DASH (Digital Adaptive Streaming over HTTP) is the international standard for video streaming and is widely adopted across different video viewers. When DASH is enabled on your account, you get the option to choose from either DASH or HLS for adaptive video streaming. Or, you can opt for both with automatic switching between players when **[!UICONTROL auto]** is selected as the playback type in the Viewer preset.<br>Some key benefits from enabling DASH on your account include the following:<br>&bull;Package DASH stream video for adaptive bitrate streaming. This method leads to higher efficiency of delivery. Adaptive streaming ensures the best viewing experience for your customers.<br>&bull;Browser optimized streaming with Dynamic Media players switches between HLS and DASH streaming to ensure the best quality of service. The video player auto-switches to HLS when a Safari browser is used.<br>&bull;You can configure your preferred streaming method (HLS or DASH) by editing the video viewer preset.<br>&bull;Optimized video encoding ensures that no additional storage is used while enabling DASH capability. A single set of video encodings is created for both HLS and DASH to optimize video storage costs.<br>&bull;Helps make video delivery more accessible for your customers.<br>&bull;Get the streaming URL by way of APIs, too. |
 | Multi-captions and audio tracks | You can benefit from having multiple caption and audio track support automatically enabled. After enablement, all subsequent videos that you upload are processed with a new backend architecture that includes support for adding multiple caption and audio tracks to your videos. |
-| AI-generated captions (Early Access) | Create captions for your videos powered by AI. Using AI, it creates the transcript of the video and converts it into captions. Even the timeline is defined, too. |
+| AI-generated captions (Limited Availability) | Create captions for your videos powered by AI. Using AI, it creates the transcript of the video and converts it into captions. Even the timeline is defined, too. |
 
 >[!IMPORTANT]
 >
@@ -543,7 +543,7 @@ Enabling any of the above three capabilities, enables all of them. So, if you on
     * Your Cloud Services environment (program ID and environment ID).
     * Your Dynamic Media company account name.
     * Your Dynamic Media region: North America (NA), Asia-Pacific (APAC), or Europe-Middle East-Asia (EMEA).
-    * Specify that you want DASH, multi-captions and multi-audio tracks, and AI-generated captions (Early Access) support enabled on your Dynamic Media account, on AEM as a Cloud Service.
+    * Specify that you want DASH, multi-captions and multi-audio tracks, and AI-generated captions (Limited Availability) support enabled on your Dynamic Media account, on AEM as a Cloud Service.
    
 1. Adobe Customer Support adds you to the Customer Wait List based on the order in which requests are submitted.
 1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate and set a target date for enablement.
@@ -553,6 +553,9 @@ Enabling any of the above three capabilities, enables all of them. So, if you on
     * Create your [video viewer preset](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) as usual.
     * Create your [video profile](/help/assets/dynamic-media/video-profiles.md) as usual.
     * [Add multiple captions and audio tracks](#add-msma) to your video.
+
+
+<!-- HIDDEN AS OF OCTOBER 7, 2024 AS PER EMAIL REQUEST FROM RIYA MIDHA ON SAME DATE 
 
 ## About multiple caption and audio track support for videos in Dynamic Media{#about-msma}
 
@@ -650,11 +653,9 @@ Added captions and captions are supported with WebVTT and Adobe VTT formats. And
 
 1. (Optional) Preview the video before publishing to ensure the captions and audio work as expected. See [Preview a video that has multiple captions and audio tracks](/help/assets/dynamic-media/video.md#preview-video-audio-subtitle).
 
-1. Publish the video. See [Publish assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+1. Publish the video. See [Publish assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md). -->
 
 
-
-<!--
 
 ## About multiple caption and audio track support for videos in Dynamic Media{#about-msma}
 
@@ -844,8 +845,6 @@ Added captions are supported with WebVTT and Adobe VTT formats. And, added audio
 
 1. (Optional) Preview the video before publishing to ensure the captions and audio work as expected. See [Preview a video that has multiple captions and audio tracks](#preview-video-audio-subtitle).
 1. Publish the video. See [Publish assets](publishing-dynamicmedia-assets.md).
-
--->
 
 #### About adding caption and audio track files to a video that is already published
 

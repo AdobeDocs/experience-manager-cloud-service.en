@@ -141,7 +141,7 @@ If you selected the certificate type *Customer managed certificate*, complete th
 
    After uploading a valid EV/OV certificate, the domain's status is marked as **Verified** in the **Domain Settings** table. 
 
-   ![Domain Setting table showing a Verified status.](/help/implementing/cloud-manager/assets/domain-settings-verified.png)
+   ![Domain Setting table showing a Verified status](/help/implementing/cloud-manager/assets/domain-settings-verified.png).
 
 <!--
 ![Customer managed certificate steps](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)
