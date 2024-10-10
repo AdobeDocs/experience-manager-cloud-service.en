@@ -21,7 +21,6 @@ The 2024.10.0 feature activation will provide the full feature set for this main
 * ASSETS-38322: Enabling http request event for AEM.
 * ASSETS-41448: Update auth.ims bundle to support FI to group mappings.
 * ASSETS-41684: Add OOB OSGI configs to define FI to group mapping for Assets, Foundation, Sites, and Forms.
-* ASSETS-41684: Update src/main/features/docker/ethos/base-ims-oauth.json.
 * ASSETS-43015: Update to latest auth.ims bundle.
 * CQ-4356633: Add extra character in "Content Only" tooltip.
 * GRANITE-50948: Integrate repository service into AEM Support for repository service.
@@ -29,9 +28,9 @@ The 2024.10.0 feature activation will provide the full feature set for this main
 * GRANITE-52454: Upgrading Support Helper GRANITE-52454 upgrading support helper to use latest release for AEMaaCS.
 * GRANITE-53287: Updating security-privileges integration test version.
 * GRANITE-53485: Support Service Principal authentication for replication Azure Blob Storage.
-* GRANITE-53514: Treeactivation 1.0.26.
+* GRANITE-53514: Treeactivation updated to version 1.0.26.
 * GRANITE-53870: Create internal mechanism to skip max JVM version check for the quickstart.
-* GRANITE-53914: Platform test failures with Java 17 Updated module version.
+* GRANITE-53914: Fix Platform test failures with Java 17 Updated module version.
 * GRANITE-53966: Use separate thread pool for content-distribution.
 * GRANITE-54006: update Jackson to 2.17.2.
 * GRANITE-54038: Add the Creative Cloud Enterprise IMS client to the AEM IMS client allowlist.
@@ -40,13 +39,13 @@ The 2024.10.0 feature activation will provide the full feature set for this main
 * GRANITE-54274: Accept Firefly IMS client.
 * GRANITE-54300: Update Oak to latest public release (1.70.0).
 * GUIDES-19069: Add guidesPeerLinkIndex for aem guides add on.
-* SITES-23584: Foundation component tests fail on Java 17.
+* SITES-23584: Fix failing test for Foundation component on Java 17.
 * SKYOPS-69768: SlingModels do not deserialize ResourceResolvers.
 * SKYOPS-76378: Improve thread-safety of ResourceBundle registration/deregistration in i18n.
 * SKYOPS-79285: Update Sling XSS to 2.4.2.
 * SKYOPS-82383: Expose the 'helm-values' convert-merge-analyse result in the command execution descriptor.
 * SKYOPS-84810: skip "40-initialize-publish.sh" execution on startup for RDE.
-* SKYOPS-84951: Mutable content checksum generation code is incorrect.
+* SKYOPS-84951: Fix Mutable content checksum generation code.
 * SKYOPS-85335: Update org.apache.sling.jcr.repoinit to 1.1.52.
 * SKYOPS-85336: Update Sling Commons Threads to 3.3.0.
 * SKYOPS-86329: updating versions of platform test modules for java 21 sdk support.
