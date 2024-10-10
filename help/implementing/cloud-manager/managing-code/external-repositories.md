@@ -12,7 +12,7 @@ Learn how to add an external repository into Cloud Manager. Cloud Manager suppor
 
 >[!NOTE]
 >
->This feature is only available to [the early adopter program](/help/implementing/cloud-manager/release-notes/current.md#early-adoption).
+>This feature is only available to [the early adoption program](/help/implementing/cloud-manager/release-notes/current.md#early-adoption).
 
 ## Configure an external repository
 
