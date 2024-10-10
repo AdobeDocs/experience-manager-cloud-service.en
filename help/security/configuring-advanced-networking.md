@@ -293,7 +293,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 <tbody>
   <tr>
     <td><b>Http or https protocol</b></td>
-    <td>Traffic to Azure or Adobe services</td>
+    <td>Traffic to Azure (*.windows.net) or Adobe services</td>
     <td>Any</td>
     <td>Through the shared cluster IPs (not the dedicated IP)</td>
     <td>adobe.io<br>api.windows.net</td>
