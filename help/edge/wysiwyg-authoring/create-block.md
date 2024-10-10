@@ -325,6 +325,12 @@ When you are not developing on the `main` branch, you can append `?ref=<branch>`
 
 Publishing content with a new model is only supported when the model is merged to the `main` branch.
 
+## Reusing Your Blocks for Document-Based Authoring {#reusing-blocks}
+
+You can use the blocks you create for WYSIWYG authoring using the Universal Editor for document-based authoring if you adhere to the same content model.
+
+Please see the document [Blocks for WYSIWYG and Document-Based Authoring](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md) for more information.
+
 ## Next Steps {#next-steps}
 
 Now that you know how to create blocks, it is essential to understand how to model content in a semantic way to achieve a lean developer experience.
