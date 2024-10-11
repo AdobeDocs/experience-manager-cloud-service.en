@@ -232,8 +232,8 @@ To possibly avoid this restriction, run the [Best Practices Analyzer](/help/jour
 
 At times unexpected intermittent issues could lend themselves to failed ingestions where unfortunately the only recourse is to retry the ingestion. Investigate the ingestion log to uncover the cause of the failure and see if it aligns with any of the errors listed below, where a retry should be attempted. 
 
-## MongoDB issues
-* `Atlas prescale timeout error` - The ingestion phase will attempt to prescale the target cloud database to a suitable size that aligns with the size of the migration set content being ingested.  Infrequently, this operation does not complete within the expected timeframe.
+## MongoDB issues {#mongo-db-issues}
+* `Atlas prescale timeout error` - The ingestion phase will attempt to prescale the target cloud database to a suitable size that aligns with the size of the migration set content being ingested. Infrequently, this operation does not complete within the expected timeframe.
 * `Exhausted mongo restore retries` - Attempts to restore a local dump of the ingested migration set contents to the cloud database has been exhausted. This indicates an overall health/network issue with MongoDB, that often heals itself after a few minutes.
 
 ### Ingestion Rescinded {#ingestion-rescinded}
