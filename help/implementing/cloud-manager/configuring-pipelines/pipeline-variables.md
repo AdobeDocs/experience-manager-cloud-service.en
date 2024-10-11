@@ -1,16 +1,16 @@
 ---
-title: Configure Pipeline Variables
+title: Pipeline Variables in Cloud Manager
 description: Learn how you can use pipeline variables in Cloud Manager to manage specific configuration variables for your build.
 exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 ---
-# Configure pipeline variables {#configuring-pipeline-variables}
+# Pipeline variables in Cloud Manager {#configuring-pipeline-variables}
 
 Your build process might rely on specific configuration variables that should not be stored in the Git repository. Or, you may need to adjust them between pipeline runs on the same branch. Cloud Manager lets you manage these settings as pipeline variables.
 
-## Pipeline variables {#pipeline-variables}
+## About pipeline variables {#pipeline-variables}
 
 Using Cloud Manager you can configure pipeline variables in several different ways.
 
@@ -20,7 +20,7 @@ Using Cloud Manager you can configure pipeline variables in several different wa
 
 Variables may be stored as either plain text or encrypted at rest. In either case, variables are made available inside the build environment as an environment variable, which can then be referenced from inside the `pom.xml` file or other build scripts.
 
-## Add pipeline variables through Cloud Manager {#ui}
+## Add a pipeline variable through Cloud Manager {#ui}
 
 Pipeline variables can be configured and managed through the Cloud Manager user interface. They help streamline pipeline management, especially when varying configurations are required across different steps.
 
@@ -28,7 +28,7 @@ You must have permissions to edit the pipeline to add, edit, and delete pipeline
 
 If a pipeline is running, variable management is blocked.
 
-### Add a pipeline variable {#add-ui}
+**To add a pipeline variable through Cloud Manager:**
 
 1. When [managing your pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), click ![Ellipsis - More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) of the pipeline for which you want to create pipeline variables.
 
@@ -53,7 +53,7 @@ If a pipeline is running, variable management is blocked.
 
 1. Click **Save**.
 
-### Edit a pipeline variable {#edit-ui}
+## Edit a pipeline variable {#edit-ui}
 
 1. When [managing your pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), click ![Ellipsis - More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) of the pipeline for which you want to edit pipeline variables.
 
@@ -78,7 +78,7 @@ If a pipeline is running, variable management is blocked.
 
 1. Click **Save**.
 
-### Delete a pipeline variable {#delete-ui}
+## Delete a pipeline variable {#delete-ui}
 
 1. When [managing your pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), click ![Ellipsis - More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) of the pipeline for which you want to delete pipeline variables.
 
