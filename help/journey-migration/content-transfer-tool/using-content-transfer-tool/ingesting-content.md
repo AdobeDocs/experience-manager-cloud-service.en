@@ -223,6 +223,20 @@ To possibly avoid this restriction, run the [Best Practices Analyzer](/help/jour
 >
 >[Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) version 2.1.50+ will report on large nodes containing unicode characters that exceed the maximum size. Please ensure you are running the latest version. BPA versions prior to 2.1.50 will not identify and report on these large nodes and they will need to be discovered separately using the prerequisite Oak tool mentioned above.
 
+### Ingestion Failure Due to Unexpected Intermittent Errors {#ingestion-failure-due-to-unexpected-intermittent-errors}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_intermittent_errors"
+>title="Unexpected Intermittent Errors"
+>abstract="At times unexpected intermittent downstream service errors may occur and unfortunately the only recourse is to simply retry the ingestion."
+
+At times unexpected intermittent issues could lend themselves to failed ingestions where unfortunately the only recourse is to retry the ingestion. Investigate the ingestion log to uncover the cause of the failure and see if it aligns with any of the errors listed below, where a retry should be attempted. 
+
+## MongoDB issues {#mongo-db-issues}
+
+* `Atlas prescale timeout error` - The ingestion phase will attempt to prescale the target cloud database to a suitable size that aligns with the size of the migration set content being ingested. Infrequently, this operation does not complete within the expected timeframe.
+* `Exhausted mongo restore retries` - Attempts to restore a local dump of the ingested migration set contents to the cloud database has been exhausted. This indicates an overall health/network issue with MongoDB, that often heals itself after a few minutes.
+
 ### Ingestion Rescinded {#ingestion-rescinded}
 
 >[!CONTEXTUALHELP]
