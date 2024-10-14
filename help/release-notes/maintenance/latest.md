@@ -10,58 +10,51 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 18099 {#release-18099}
+## Release 18175 {#release-18175}
 
-Summarized below are the continuous improvements for maintenance release 18099, which was publicly released on October 9, 2024. The previous maintenance release was release 17964.
+Summarized below are the continuous improvements for maintenance release 18175, which was publicly released on October 10, 2024. The previous maintenance release was release 17964. Release 18099 has been made private because of an issue.
 
 The 2024.10.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-18099}
+### Enhancements {#enhancements-18175}
 
-* ASSETS-43015: Update to latest auth.ims bundle.
-* ASSETS-41684: Update src/main/features/docker/ethos/base-ims-oauth.json.
 * ASSETS-38322: Enabling http request event for AEM.
-* ASSETS-41684: Add OOB OSGI configs to define FI to group mapping for Assets, Foundation, Sites, and Forms.
 * ASSETS-41448: Update auth.ims bundle to support FI to group mappings.
+* ASSETS-41684: Add OOB OSGI configs to define FI to group mapping for Assets, Foundation, Sites, and Forms.
+* ASSETS-43015: Update to latest auth.ims bundle.
 * CQ-4356633: Add extra character in "Content Only" tooltip.
-* SITES-23584: Foundation component tests fail on Java 17.
-* GUIDES-19069: Add guidesPeerLinkIndex for aem guides add on.
-* GRANITE-54300: Update Oak to latest public release (1.70.0).
-* GRANITE-54274: Accept Firefly IMS client.
-* GRANITE-36205: Update internal oak release version to latest.
-* GRANITE-45298: A low privileged user can get RCE by crafting a malicious form without JS but in the fashion of XSS.
-* GRANITE-54266: Production SDK missing Search Suggestor service.
-* GRANITE-50948 -Integrate repository service into AEM Add alternative repository service for local development.
-* GRANITE-53966: Use separate thread pool for content-distribution.
-* GRANITE-53514: Treeactivation 1.0.26.
-* GRANITE-54054: Environment variable for com.adobe.granite.repository.impl.SystemUserValidation warnOnly.
 * GRANITE-50948: Integrate repository service into AEM Support for repository service.
 * GRANITE-52454: Adding support helper 0.1.2.
-* GRANITE-53514: Treeactivation 1.0.26.
-* GRANITE-54038: Add the Creative Cloud Enterprise IMS client to the AEM IMS client allowlist.
-* GRANITE-36205: Update internal oak release version to latest.
-* GRANITE-53485: Support Service Principal authentication for replication Azure Blob Storage.
-* GRANITE-54006: update Jackson to 2.17.2.
-* GRANITE-53287: Updating security-privileges integration test version.
-* GRANITE-53914: Platform test failures with Java 17 Updated module version.
-* GRANITE-53870: Create internal mechanism to skip max JVM version check for the quickstart.
 * GRANITE-52454: Upgrading Support Helper GRANITE-52454 upgrading support helper to use latest release for AEMaaCS.
+* GRANITE-53287: Updating security-privileges integration test version.
+* GRANITE-53485: Support Service Principal authentication for replication Azure Blob Storage.
+* GRANITE-53514: Treeactivation updated to version 1.0.26.
+* GRANITE-53870: Create internal mechanism to skip max JVM version check for the quickstart.
+* GRANITE-53914: Fix Platform test failures with Java 17 Updated module version.
+* GRANITE-53966: Use separate thread pool for content-distribution.
+* GRANITE-54006: update Jackson to 2.17.2.
+* GRANITE-54038: Add the Creative Cloud Enterprise IMS client to the AEM IMS client allowlist.
+* GRANITE-54054: Environment variable for com.adobe.granite.repository.impl.SystemUserValidation warnOnly.
+* GRANITE-54266: Production SDK missing Search Suggestor service.
+* GRANITE-54274: Accept Firefly IMS client.
+* GRANITE-54300: Update Oak to latest public release (1.70.0).
+* GUIDES-19069: Add guidesPeerLinkIndex for aem guides add on.
+* SITES-23584: Fix failing test for Foundation component on Java 17.
+* SKYOPS-69768: SlingModels do not deserialize ResourceResolvers.
+* SKYOPS-76378: Improve thread-safety of ResourceBundle registration/deregistration in i18n.
+* SKYOPS-79285: Update Sling XSS to 2.4.2.
+* SKYOPS-82383: Expose the 'helm-values' convert-merge-analyse result in the command execution descriptor.
+* SKYOPS-84810: skip "40-initialize-publish.sh" execution on startup for RDE.
+* SKYOPS-84951: Fix Mutable content checksum generation code.
 * SKYOPS-85335: Update org.apache.sling.jcr.repoinit to 1.1.52.
 * SKYOPS-85336: Update Sling Commons Threads to 3.3.0.
-* SKYOPS-76378: Improve thread-safety of ResourceBundle registration/deregistration in i18n.
-* SKYOPS-84951: Mutable content checksum generation code is incorrect.
-* SKYOPS-82383: Expose the 'helm-values' convert-merge-analyse result in the command execution descriptor.
 * SKYOPS-86329: updating versions of platform test modules for java 21 sdk support.
-* SKYOPS-69768: SlingModels do not deserialize ResourceResolvers.
-* SKYOPS-84810: skip "40-initialize-publish.sh" execution on startup for RDE.
-* SKYOPS-79285: Update Sling XSS to 2.4.2
 
-### Fixed Issues {#fixed-issues-18099}
+### Fixed Issues {#fixed-issues-18175}
 
 * CNTBF-298: Remove jcr:uuid from CC exported packages.
 * SKYOPS-83910: Fix concurrency issues found in SKYOPS-82371. 
 * GRANITE-52876: Update to com.adobe.granite.ui.content 0.8.1448.
-* GRANITE-53088: Regression introduced by the fix of SITES-11992.
 * GUIDES-14445: Native PDF generation fails with an error related to getting dependencies for Node.js.
 * GUIDES-16961: The title with `<conref>` doesn't resolve in the Baseline and Translation dashboards of the Web Editor.
 * GUIDES-17283: When selecting the **Use metadata added in the topicmeta** option, the metadata properties are not propagated in the document proprieties of the Native PDF output.
@@ -69,11 +62,11 @@ The 2024.10.0 feature activation will provide the full feature set for this main
   
 For more information about the new and enhanced Guides features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
-### Known Issues {#known-issues-18099}
+### Known Issues {#known-issues-18175}
 
-* FORMS - 15818: Component descriptor entry `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` not found statements in server logs. These are harmless log statements.
+* FORMS-15818: Component descriptor entry `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` not found statements in server logs. These are harmless log statements.
 
-### Deprecated Features and APIs {#deprecated-18099}
+### Deprecated Features and APIs {#deprecated-18175}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
@@ -93,11 +86,11 @@ Please note that Adobe is in the process of updating `com.day.cq.wcm.api`. Some 
 
 * GRANITE-54165: Deprecate org.apache.jackrabbit.oak.plugins.blob in public API.
 
-### Security Fixes {#security-18099}
+### Security Fixes {#security-18175}
 
 AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 2 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-18099}
+### Embedded Technologies {#embedded-tech-18175}
 
 |Technology|Version|Link|
 |---|---|---|
