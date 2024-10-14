@@ -28,9 +28,9 @@ Follow these steps to manually hibernate your sandbox program environments.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, tap or click the program you want to hibernate to show its details.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, click the program you want to hibernate to show its details.
 
-1. On the **Environments** card, click the ellipsis button and select **Developer Console**. 
+1. On the **Environments** card, click https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg and click **Developer Console**. 
 
    * See [Accessing Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) for additional details about the Developer Console.
 
@@ -62,9 +62,9 @@ You can manually hibernate your Sandbox Program from the Developer Console.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, tap or click the program you want to de-hibernate to show its details.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, click the program you want to de-hibernate to show its details.
 
-1. On the **Environments** card, click the ellipsis button and select **Developer Console**. 
+1. On the **Environments** card, click https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg and click **Developer Console**. 
 
    * See [Accessing Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) for additional details about the Developer Console.
 
