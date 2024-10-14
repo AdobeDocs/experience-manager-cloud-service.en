@@ -28,7 +28,7 @@ The Cloud Manager License Dashboard provides easy access to solution entitlement
 >A user in the **Business Owner** role must be logged in to view the License Dashboard.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
-1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, click the hamburger menu button on the [Cloud Manager Header](/help/implementing/cloud-manager/navigation.md#cloud-manager-header). This reveals the tabs.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, click https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg on the [Cloud Manager Header](/help/implementing/cloud-manager/navigation.md#cloud-manager-header). This action reveals the tabs.
 1. Click the **License** option in the tab.
 
 ![License Dashboard](assets/license-dashboard.png)
