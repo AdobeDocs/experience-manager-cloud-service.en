@@ -25,7 +25,7 @@ Fulfill these requirements before adding a custom domain name in Cloud Manager.
 
 ## Where to add custom domain names {#where-to-add-cdn}
 
-You add a custom domain name from the [Domain Settings page](#adding-cdn-settings) in Cloud Manager.
+You can add a custom domain name from the [Domain Settings page](#adding-cdn-settings) in Cloud Manager.
 
 When adding a custom domain name, the domain is served using the most specific, valid certificate. If multiple certificates have the same domain, then the most recently updated is chosen. Adobe recommends that you manage certificates such that there are no overlapping domains.
 

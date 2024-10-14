@@ -91,7 +91,7 @@ A user must be a member of the **Business Owner** or **Deployment Manager** role
 
 1. In the **Delete CDN Configuration** dialog box, click **Delete**.
 
-1. Click **Delete** again to confirm removal of the site's CDN.
+1. Click **Delete** again to confirm the removal of the site's CDN.
 
 
 ## Delete a CDN configuration from the Environments page
@@ -114,6 +114,6 @@ The steps for deleting a CDN configuration from the **Environments** page are ne
 
 1. In the **Delete CDN Configuration** dialog box, click **Delete**.
 
-1. Click **Delete** again to confirm removal of the site's CDN.
+1. Click **Delete** again to confirm the removal of the site's CDN.
 
 
