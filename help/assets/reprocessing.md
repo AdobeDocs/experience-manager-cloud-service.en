@@ -8,6 +8,9 @@ role: User, Leader, Developer
 ---
 # Reprocessing digital assets {#reprocessing-digital-assets}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 You can reprocess assets in a folder that already has an existing metadata profile that you later changed. If you want the newly edited preset to be reapplied to the existing assets in the folder, you must reprocess the folder. You can reprocess as many assets as required.
 
 Reprocess assets in a folder if you experience either of the following two scenarios:

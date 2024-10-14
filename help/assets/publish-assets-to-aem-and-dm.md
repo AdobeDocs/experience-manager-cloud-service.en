@@ -7,6 +7,9 @@ role: User
 ---
 # Publish Assets to AEM and Dynamic Media{#Publish-Assets-to-AEM-and-Dynamic-Media}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 Experience Manager Assets enables you to quickly publish assets to Experience Manager and Dynamic Media using the Assets view. This ensures that you manage your assets and then publish them using [Assets view without switching to the Admin view](/help/assets/overview.md##persona-based-experiences). 
 
 Experience Manager Assets view provides the flexibility to publish assets to AEM or Dynamic Media, or both at the same time. You can publish assets while uploading, browsing, and searching assets. All these optons to publish assets are explained within this artcle in detail.

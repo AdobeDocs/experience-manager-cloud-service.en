@@ -155,7 +155,7 @@ The following table demonstrates the difference between the features available i
 >
 >[The Universal Editor](/help/implementing/universal-editor/introduction.md) is not compatible with IP allow lists.
 >
->If you wish to use the Universal Editor, IP allow lists must not be enabled.
+>If you want to use the Universal Editor, IP allow lists must not be enabled.
 
 ## Universal Editor and IP Allow Lists {#ue-ip-allow-lists}
 
@@ -163,7 +163,7 @@ The following table demonstrates the difference between the features available i
 >
 >The Universal Editor is not compatible with [IP allow lists.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
 >
->If you wish to use the Universal Editor, IP allow lists must not be enabled.
+>If you want to use the Universal Editor, IP Allow Lists must not be enabled.
 
 ## Work with Dynamic Media {#work-with-dynamic-media}
 
@@ -190,7 +190,7 @@ The following table demonstrates the difference between the features available i
 >* Deliver an [interactive 3D-powered experience](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
 >* Other [Dynamic Media resource bank](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
 
-## Logging a Support Ticket {#support-ticket}
+## Log a support ticket {#support-ticket}
 
 If a product issue needs additional investigation and troubleshooting and must meet response SLTs, you can submit a support ticket.
 
