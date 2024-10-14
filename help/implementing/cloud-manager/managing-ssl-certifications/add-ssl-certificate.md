@@ -40,7 +40,7 @@ After [adding a custom domain name](/help/implementing/cloud-manager/custom-doma
 * **For a customer managed (OV/EV) SSL certificate:**
 
     * Obtain your OV/EV SSL certificate from a Certificate Authority. For more details, review the [requirements for customer managed OV/EV SSL certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements).
-    * After acquiring the certificate, [add your customer managed (OV/EV) SSL certificate's](#add-customer-manage-ssl-cert) details in Cloud Manager.
+    * After acquiring the certificate, [add your customer managed (OV/EV) SSL certificate's](#add-customer-managed-ssl-cert) details in Cloud Manager.
     * Once added, the custom domain name is marked as verified, and the SSL certificate is applied.
 
 In either case, after the certificate is verified and installed, the custom domain is available for secure use in your environment. Make sure to [check the domain's status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) in the Cloud Manager interface regularly to confirm everything is working as expected.
