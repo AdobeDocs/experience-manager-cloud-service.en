@@ -25,7 +25,7 @@ In Adobe Cloud Manager, you might want to edit a custom domain name configuratio
 
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
 
-1. In the upper-left corner of the page, click ![Show icon - hamburger](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to reveal the left navigation menu.
+1. In the upper-left corner of the page, click ![Show icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to reveal the left side menu.
 
 1. Under the **Services** heading, click **CDN Configurations**.
 
