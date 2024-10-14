@@ -89,8 +89,11 @@ Need help with choosing whether to use an Adobe managed SSL certificate (recomme
 **To add a customer managed (OV/EV) SSL certificate:**
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate program.
+
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
+
 1. In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to reveal the side menu. 
+
 1. Under the **Services** heading, click ![Lock closed icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL Certificates**. 
 
    ![Adding an SSL certificate](/help/implementing/cloud-manager/assets/ssl/ssl-cert-add.png)
@@ -103,6 +106,7 @@ Need help with choosing whether to use an Adobe managed SSL certificate (recomme
 This field is for informational purposes only and can be any name that helps you reference your SSL certificate easily.
 
 1. In the **Certificate**, **Private key**, and **Certificate chain** fields, copy the required values from your OV or EV SSL certificate, and paste them into their respective fields in the dialog box.
+
     Any detected errors in values are displayed. Before you can save your certificate, you must address all errors. See [Certificate Errors](#certificate-errors) to learn more about troubleshooting common errors.
 
     ![Add SSL certificate dialog box](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)| 
