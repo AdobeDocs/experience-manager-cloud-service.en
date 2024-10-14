@@ -1,6 +1,6 @@
 ---
 title: Intoduction to scope objects in custom functions
-description: AEM Forms support scope objects in custom functions which is passed as a last argument to functions when rule is executed.
+description: Form supports scope objects in custom functions which is passed as a last argument to functions when rule is executed.
 keywords: scope objects in custom functions, global objects, field objects.
 feature: Adaptive Forms, Core Components
 role: User, Developer
@@ -9,7 +9,7 @@ role: User, Developer
 
 # Scope object in custom functions
 
-In Adaptive Forms, a scope object is passed as a last argument to functions when rule is executed. It can be used to read form/field propertis and modify form from inside the functions. Scope object has the read-only proxy object for form, triggered event and target field. Form and field properties can be accessed using the scope object by appending `$` , for example, `scope.form.$id` and `scope.field.$id` respectively.
+In Adaptive Forms, a scope object is passed as the last argument to functions when a rule is executed. It can be used to read form/field properties and modify the form from within the functions. The scope object contains a read-only proxy object for the form, the triggered event, and the target field. Form and field properties can be accessed using the scope object by appending `$`, for example, `scope.form.$id` and `scope.field.$id`, respectively.
 
 ## Form modification functions using scope object
 
