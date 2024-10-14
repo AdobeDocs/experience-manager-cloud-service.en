@@ -63,7 +63,7 @@ Need help with choosing whether to use an Adobe managed SSL certificate (recomme
 
 1. Near the upper-right corner of the SSL Certificates page, click **Add SSL Certificate**.
 
-1. In the **Add SSL certificate** dialog box, based on [your particular use case](#which-ssl-to-add), select **Adobe managed (DV)**.
+1. In the **Add SSL certificate** dialog box, based on [your particular use case](#which-ssl-to-add), select **Adobe Managed (DV)**.
 
     ![Add a DV certificate](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)
 
@@ -83,6 +83,8 @@ You now have added a working Adobe managed DV SSL certificate for your project. 
 You are now ready to add a [CDN configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md).
 
 ## Add a customer managed (OV/ED) SSL certificate {#add-customer-managed-ssl-cert}
+
+<!-- IF THIS TOPIC GET UPDATED, REMEMBER TO UPDATE THE STEPS ALSO IN THE "MANAGE SSL CERTIFICATES TOPIC TOO -->
 
 Need help with choosing whether to use an Adobe managed SSL certificate (recommended) or a customer managed SSL certificate with your domain? See [Choosing which SSL certificate to add](#which-ssl-to-add) 
 
