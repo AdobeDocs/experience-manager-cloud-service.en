@@ -70,8 +70,7 @@ Need help with choosing whether to use an Adobe managed SSL certificate (recomme
 1. In the **Certificate name** field, enter a name you want associated with the DV SSL certificate.
 
 1. In the **Select domains** drop-down list, select one or more verified domains that you want associated with the DV SSL certificate.
-    * No domains to select? If so, you must first add a custom domain name and ensure it is verified before you can add an SSL certificate.
-    * See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). 
+    * No domains to select? If so, you must first [add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) and ensure it is verified before you can add an Adobe managed SSL certificate.
     * When you are finished adding a custom domain name, return to this topic and begin at step 1 again.
     
 1. In the lower-right corner of the dialog box, click **Save**.
@@ -105,7 +104,7 @@ Need help with choosing whether to use an Adobe managed SSL certificate (recomme
 1. In the **Add SSL certificate** dialog box, based on [your particular use case](#which-ssl-to-add), select **Customer managed (OV/EV)**.
 
 1. In the **Certificate name** field, enter a name for your certificate. 
-This field is for informational purposes only and can be any name that helps you reference your SSL certificate easily.
+    This field is for informational purposes only and can be any name that helps you reference your SSL certificate easily.
 
 1. In the **Certificate**, **Private key**, and **Certificate chain** fields, copy the required values from your OV or EV SSL certificate, and paste them into their respective fields in the dialog box.
 
