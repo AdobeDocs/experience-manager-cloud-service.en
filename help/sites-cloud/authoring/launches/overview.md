@@ -99,9 +99,13 @@ Launches allow you to:
 
 ## The Launches Console {#the-launches-console}
 
-The Launches console provides an overview of your launches and lets you act on those listed. The console can be accessed by:
+The Launches console provides an overview of your launches and lets you act on those listed. 
 
-* The **Tools** Console: **Tools**, **Sites**, **Launches**.
+![Launch Console - Manage Content](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
+
+The console can be accessed by:
+
+* The **Tools** Console: **Tools**, **General**, **Launches**.
 
 * **Launches Console** at the bottom of the **Launches** section of the **References** rail when navigating source content in the Sites console.
 
@@ -110,6 +114,3 @@ The Launches console provides an overview of your launches and lets you act on t
 * The **Launches** button at the top right, when navigating launch content in the Sites console:
 
   ![Launches option in Sites console](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
-
-* Or directly; for example, with:
-   `https://<host>:<port>/libs/launches/content/launches.html`
