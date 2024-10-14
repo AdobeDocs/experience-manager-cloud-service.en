@@ -245,6 +245,8 @@ Field objects refer to the individual components or elements within a form, such
 >
 > The `param {scope} globals` has to be the last parameter and it is not displayed in the rule editor of an Adaptive Form.
 
+For more information on scope objects, see the [Scope objects in custom functions](/help/forms/custom-function-core-component-scope-function.md) article.
+
 ### Caching support in custom function
 
 Adaptive Forms implement caching for custom functions to enhance response time while retrieving the custom function list in the rule editor. A message as `Fetched following custom functions list from cache` appears in the `error.log` file. 
@@ -263,7 +265,7 @@ In case the custom functions are modified, the caching becomes invalidated, and 
 
     ![error log file with proper custom function](/help/forms/assets/custom-function-list-fetched-in-error.png)
 
-## Next Step
+## Next step
 
 Let us now see various [examples of custom functions for an Adaptive Form based on Core Components](/help/forms/custom-function-core-components-use-cases.md).
 

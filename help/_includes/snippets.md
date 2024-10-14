@@ -125,6 +125,7 @@ The following table demonstrates the difference between the features available i
 * [Difference in various editions of Rule editor](/help/forms/rule-editor-core-components-difference-tables.md)
 * [Introduction to Custom Functions for Adaptive Forms based on Core Components](/help/forms/create-and-use-custom-functions.md)
 * [Create a Custom Function for an Adaptive Form based on Core Components](/help/forms/custom-function-core-component-create-function.md)
+* [Scope object in custom functions](/help/forms/custom-function-core-component-scope-function.md)
 * [Examples of developing and using a custom function](/help/forms/custom-function-core-components-use-cases.md)
 
 
