@@ -32,7 +32,7 @@ The capabilities of individual environments depend upon the solutions enabled in
 >
 >Production and staging environments are only created as a pair. You cannot create only a staging or only a production environment.
 
-## Add an Environment {#adding-environments}
+## Add an environment {#adding-environments}
 
 To add or edit an environment, a user must be a member of the **Business Owner** role.
 
@@ -44,13 +44,13 @@ To add or edit an environment, a user must be a member of the **Business Owner**
 
    ![Environments card](assets/no-environments.png)
 
-   * The **Add Environment** option is also available on the **Environments** tab.
+   * The **Add Environment** option is also available on the ![Data icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Environments** tab.
 
      ![Environments tab](assets/environments-tab.png)
 
    * The **Add Environment** option may be disabled due to lack of permissions or depending on the licensed resources.
    
-1. In the **Add environment** dialog that appears:
+1. In the **Add environment** dialog box:
    
    * Select an [**environment type**](#environment-types).
      * The number of available/used environments is displayed in parentheses behind the environment type name.
@@ -213,7 +213,7 @@ However, updates to environments in sandbox programs are managed within the prog
 
 ![Environment update status](assets/environ-update.png)
 
-### Updates and Pipelines {#updates-pipelines}
+### Updates and pipelines {#updates-pipelines}
 
 Pipelines are the only way to [deploy code to the environments of AEM as a Cloud Service](deploy-code.md). For this reason, each pipeline is associated with a particular AEM version.
 
@@ -249,7 +249,7 @@ The **Update** option's behavior varies depending on the configuration and curre
 * If the pipeline is already being updated, the **Update** option informs the user that an update is already running.
 * If an appropriate pipeline does not exist, the **Update** option prompts the user to create one.
 
-## Deleting development environments {#deleting-environment}
+## Delete development environments {#deleting-environment}
 
 A user with the **Deployment Manager** or **Business Owner** role is able to delete a development environment. 
 
@@ -304,7 +304,7 @@ Custom domain names are supported in Cloud Manager for Sites programs for both p
 
 >[!TIP]
 >
->For more information, please see the document [Introduction to custom domain names](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
+>For more information, see [Introduction to custom domain names](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
 ## Manage IP Allow Lists {#manage-ip-allow-lists} 
 
@@ -318,4 +318,4 @@ Applying an IP allowlist associates all IP ranges included in the definition of 
 
 >[!TIP]
 >
->For more information, please see the document [Introduction to IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+>For more information, see [Introduction to IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).

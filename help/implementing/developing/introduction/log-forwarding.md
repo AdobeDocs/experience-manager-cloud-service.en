@@ -34,18 +34,12 @@ This article is organized in the following way:
 * Logging destination configurations - each destination has a slightly different format
 * Log Entry Formats - information about the log entry formats
 * Advanced networking - sending AEM and Apache/Dispatcher logs through a dedicated egress or through a VPN
+* Migrating from legacy log forwarding - how to move from log forwarding previously setup by Adobe to the self-serve approach
 
 
 ## Setup {#setup}
 
-1. Create the following folder and file structure in the top-level folder in your project in Git:
-
-   ```
-   config/
-        logForwarding.yaml
-   ```
-
-1. `logForwarding.yaml` should contain metadata and a configuration similar to the following format (we use Splunk as an example). 
+1. Create a file named `logForwarding.yaml`. It should contain metadata, as described in the [config pipeline article](/help/operations/config-pipeline.md#common-syntax) (**kind** should be set to `LogForwarding` and version set to "1"), with a configuration similar to the following (we use Splunk as an example). 
 
    ```
    kind: "LogForwarding"
@@ -61,12 +55,16 @@ This article is organized in the following way:
          index: "AEMaaCS"
    
    ```
+      
+1. Place the file somewhere under a top level folder named *config* or similar, as described in [Using Config Pipelines](/help/operations/config-pipeline.md#folder-structure).
+
+1. For environment types other than RDE (which is not currently supported), create a targeted deployment config pipeline in Cloud Manager, as referenced by [this section](/help/operations/config-pipeline.md#creating-and-managing); note that Full Stack pipelines and Web Tier pipelines do not deploy the configuration file.
+
+1. Deploy the configuration. 
+
+Tokens in the configuration (such as `${{SPLUNK_TOKEN}}`) represent secrets, which should not be stored in Git. Instead, declare them as Cloud Manager [Secret Environment Variables](/help/operations/config-pipeline.md#secret-env-vars). Make sure to select **All** as the dropdown value for the Service Applied field, so logs can be forwarded to author, publish, and preview tiers.
    
-   The **kind** parameter should be set to `LogForwarding` the version should be set to the schema version, which is 1.
-   
-   Tokens in the configuration (such as `${{SPLUNK_TOKEN}}`) represent secrets, which should not be stored in Git. Instead, declare them as Cloud Manager  [Environment Variables](/help/implementing/cloud-manager/environment-variables.md) of type **secret**. Make sure to select **All** as the dropdown value for the Service Applied field, so logs can be forwarded to author, publish, and preview tiers.
-   
-   It is possible to set different values between CDN logs and AEM logs (including Apache/Dispatcher), by including an additional **cdn** and/or **aem** block after the **default** block, where properties can override those defined in the **default** block; only the enabled property is required. A possible use case could be to use a different Splunk index for CDN logs, as the example below illustrates. 
+It is possible to set different values between CDN logs and AEM logs (including Apache/Dispatcher), by including an additional **cdn** and/or **aem** block after the **default** block, where properties can override those defined in the **default** block; only the enabled property is required. A possible use case could be to use a different Splunk index for CDN logs, as the example below illustrates. 
    
    ```
       kind: "LogForwarding"
@@ -103,11 +101,6 @@ This article is organized in the following way:
           aem:
             enabled: false
    ```
-   
-1. For environment types other than RDE (which is not currently supported), create a targeted deployment config pipeline in Cloud Manager; note that Full Stack pipelines and Web Tier pipelines do not deploy the configuration file.
-
-   * [See configuring production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
-   * [See configuring non-production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
 ## Logging Destination Configuration {#logging-destinations}
 
@@ -378,4 +371,23 @@ For AEM logs (including Apache/Dispatcher), if you have configured [advanced net
        aem:
          advancedNetworking: true
    ```
+
+## Migrating from Legacy Log Forwarding {#legacy-migration}
+
+Before Log Forwarding configuration was achieved through a self-serve model, customers were requested to open support tickets, where Adobe would initiate the integration.
+
+Customers who had been setup in that manner by Adobe are welcome to adapt to the self-serve model at their convenience. There are several reason to make this transition:
+
+* A new environment (e.g., a new dev env or RDE) has been provisioned.
+* Changes to your existing Splunk endpoint or credentials.
+* Adobe had setup your log forwarding before CDN logs were available and you would like to receive CDN logs.
+* A conscious decision to proactively adapt to the self-serve model so your organization has the knowledge even before a time-sensitive change is necessary.
+
+When ready to migrate, simply configure the YAML file as described in the preceding sections. Use the Cloud Manager config pipeline to deploy to each of the environments where the configuration should be applied. 
+
+It is recommended, but not required, that a configuration is deployed to all environments so they are all under self-serve control. If not, you may forget which environments have been configured by Adobe versus those configured in a self-serve way.
+
+>[!NOTE]
+>
+>When Log Forwarding is deployed to an environment previously configured by Adobe support, you may receive duplicate logs for up to a few hours. This will eventually auto-resolve.
 

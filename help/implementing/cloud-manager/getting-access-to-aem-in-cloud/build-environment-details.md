@@ -81,7 +81,7 @@ To support this, Cloud Manager adds these standard environment variables to the 
 
 Your build process may depend upon specific configuration variables which would be inappropriate to place in the git repository or you may need to vary them between pipeline executions using the same branch.
 
-Please see the document [Configuring Pipeline Variables](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) for more information
+See also [Configure Pipeline Variables](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) for more information
 
 ## Installing Additional System Packages {#installing-additional-system-packages}
 
