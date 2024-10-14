@@ -5,6 +5,9 @@ exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
 ---
 # Approve assets for Content Hub {#approve-assets-content-hub}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 ![Approve assets for Content Hub](assets/content-hub-approve-assets.png)
 
 Brand Managers and Marketers maintain strict control over brand assets. Only approved and latest version of the asset is available for use within Content Hub, ensuring brand consistency across all channels and applications. 
