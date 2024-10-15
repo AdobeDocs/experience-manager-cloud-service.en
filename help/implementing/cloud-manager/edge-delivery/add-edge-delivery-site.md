@@ -23,7 +23,7 @@ See also [Introduction to Edge Delivery Services in Cloud Manager](/help/impleme
 
         ![Add Edge Delivery site from the Edge Delivery tab](/help/implementing/cloud-manager/assets/cm-eds-add1.png)       
 
-    * In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to reveal the side navigation menu.
+    * In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to reveal the left side menu.
     Under the **Services** heading, click ![Web page icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**.
     Near the upper-right corner of the page, click **Add site**.
 
@@ -49,8 +49,8 @@ See also [Introduction to Edge Delivery Services in Cloud Manager](/help/impleme
 
 1. Click **Verify**.
 
-After the repository is verified, its status in the Edge Delivery sites table changes to a green circle with a white check mark inside of it. 
+Once the repository is verified, its status in the Edge Delivery sites table gets updated. A green circle with a white check mark inside indicates the status.
 
-In the same table, click ![Information about Edge Delivery site](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) to view details about your site such as the verified URL of the repository and the URL of the Preview and Production website.
+In the same table, click ![Information about Edge Delivery site](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) to view site details. This information includes the verified Repository URL, along with the Preview and Production website URLs.
 
 
