@@ -80,8 +80,8 @@ The following table summarizes the available Content Hub user types, the privile
 | Access all AEM Assets capabilities, such as, managing assets, permissions, metadata and the overall governance and automation        | &minus; | &minus; |    &#10003;   |&#10003;|
 | **User needs to be in these product profiles (Admin Console)**|
 | AEM > Delivery instance > AEM Assets Limited Users | &#10003;  | &#10003;  |   &#10003;     |&#10003;|
-| AEM > Production Author instance > AEM Users         | &minus; | &#10003; |   &#10003;    |&minus;|
-| AEM > Production Author instance > AEM Administrators |  &minus; | &minus; | &minus;  |&#10003;|
-| Adobe Express| &minus;  | &minus; | &#10003;  |&minus;|
-| **More information**          | See [Content Hub users](#onboard-content-hub-users) |  See [Content Hub users with rights to add assets](#onboard-content-hub-users-add-assets) |   See [Content Hub users with rights to remix assets to new variations](#onboard-content-hub-users-remix-assets)    |See [Content Hub administrators](#onboard-content-hub-administrator)|
+| AEM > Production Author instance > AEM Assets Collaborator Users         | &minus; | &#10003; |   &minus;    |&minus;|
+| AEM > Production Author instance > AEM Assets Power Users |  &minus; | &minus; | &#10003;  |&minus;|
+| AEM > Production Author instance > AEM Administrators | &minus;  | &minus; | &minus;  |&#10003;|
+| **More information**          |  |   |     ||
 
