@@ -16,13 +16,13 @@ role: Admin, Architect, Developer
 
 Discover the quality gates available in the [AEM as a Cloud Service deployment process](/help/implementing/cloud-manager/deploy-code.md) and the various types of built-in functional testing. Learn how you can contribute and optimize their use within the framework of a comprehensive testing strategy.
 
-## Overview
+## About functional testing
 
 The following diagram provides a high-level overview of the available pipelines in the context of an overall testing strategy and the [AEM as a Cloud Service deployment process](/help/implementing/cloud-manager/deploy-code.md).
 
 ![AEM Cloud Service deployment quality gates](assets/functional-testing/quality-gates-compact.svg)
 
-## Purpose
+## Purpose of functional testing
 
 The purpose of the AEM Cloud Service deployment pipelines is to facilitate robust and secure deployments at various stages of your development and AEM product release lifecycle. These pipelines incorporate multiple quality gates at different levels to ensure the integrity and safety of deployments for both your AEM application changes and AEM product updates.
 
@@ -32,13 +32,13 @@ The built-in quality gates primarily validate the functionality of the AEM produ
 
 It is important to note that these quality gates are not intended to be a comprehensive testing framework for your entire testing strategy. The AEM product is subjected to extensive testing before entering the AEM cloud service deployment process. Similarly, your application should already be of high quality before it reaches the deployment phase. This approach ensures that the quality gates focus on their primary objective of safeguarding the deployment process, rather than being a substitute for a full testing regimen.
 
-## Quality Gates
+## Quality gates in testing
 
 The following diagram provides a detailed view of available quality gates and their use in the overall testing strategy and the [AEM as a Cloud Service deployment process](/help/implementing/cloud-manager/deploy-code.md).
 
 ![AEM Cloud Service deployment quality gates](assets/functional-testing/quality-gates-overview.svg)
 
-### Summary Customer Provided Quality Gates
+### Summary customer provided quality gates
 
 |                               |      Unit Tests       |    Custom<br/> Functional Tests     |        Custom<br/> UI Tests         | Customer<br/> Validations | Manual<br/> Testing |
 |:------------------------------|:---------------------:|:-----------------------------------:|:-----------------------------------:|:-------------------------:|:-------------------:|
@@ -48,7 +48,7 @@ The following diagram provides a detailed view of available quality gates and th
 | **Customer CI/CD**            |          Yes          |                 Yes                 |                 Yes                 |            Yes            |         Yes         |
 | **Customer Local Developer**  |          Yes          |                 Yes                 |                 Yes                 |            Yes            |         Yes         |
 
-### Unit Test
+### Unit test
 
 You are encouraged to provide the unit tests for your AEM application, which are the foundation of every testing strategy. They are intended to run fast and often and give early and fast feedback. They are tightly integrated into the developer workflows, your own CI/CD and the AEM cloud service deployment pipelines.
 
