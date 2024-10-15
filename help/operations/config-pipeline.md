@@ -32,7 +32,7 @@ The following table offers a comprehensive list of such configurations with link
 | [Traffic Filter Rules, including WAF](/help/security/traffic-filter-rules-including-waf.md) | `CDN` | Declare rules to block malicious traffic |
 | [Request Transformations](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)  | `CDN` | Declare rules to transform the shape of the traffic request |
 | [Response Transformations](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations)  | `CDN` | Declare rules to transform the shape of the  response for a given request |
-| [Client-side Redirects](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)  | `CDN` | Declare 301/302-style client-side redirects [(available to early adopters only)](/help/release-notes/release-notes-cloud/release-notes-current.md#foundation-early-adopter) |
+| [Client-side Redirects](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)  | `CDN` | Declare 301/302-style client-side redirects |
 | [Origin Selectors](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors)  | `CDN` | Declare rules to route traffic to different backends, including non-Adobe applications |
 | [CDN error pages](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | Override the default error page if AEM origin cannot be reached, referencing the location of self-hosted static content in the configuration file  |
 | [CDN Purge](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | Declare the Purge API keys used to purge the CDN |
