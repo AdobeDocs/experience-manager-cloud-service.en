@@ -32,7 +32,7 @@ The capabilities of individual environments depend upon the solutions enabled in
 >
 >Production and staging environments are only created as a pair. You cannot create only a staging or only a production environment.
 
-## Add an Environment {#adding-environments}
+## Add an environment {#adding-environments}
 
 To add or edit an environment, a user must be a member of the **Business Owner** role.
 
@@ -44,13 +44,13 @@ To add or edit an environment, a user must be a member of the **Business Owner**
 
    ![Environments card](assets/no-environments.png)
 
-   * The **Add Environment** option is also available on the **Environments** tab.
+   * The **Add Environment** option is also available on the ![Data icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Environments** tab.
 
      ![Environments tab](assets/environments-tab.png)
 
    * The **Add Environment** option may be disabled due to lack of permissions or depending on the licensed resources.
    
-1. In the **Add environment** dialog that appears:
+1. In the **Add environment** dialog box:
    
    * Select an [**environment type**](#environment-types).
      * The number of available/used environments is displayed in parentheses behind the environment type name.
@@ -103,7 +103,7 @@ If you did not specify any additional regions initially, you can do so after the
 
 You can also remove additional publish regions. However you can only add or only remove regions in one transaction. If you must add one region and remove one region, first add, save your change, and then remove (or conversely).
 
-1. From the Program Overview console of your program, click the ellipsis button for your production environment and select **Edit** from the menu.
+1. From the Program Overview console of your program, click https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg for your production environment and select **Edit** from the menu.
 
    ![Edit environment](assets/select-edit-environment.png)
 
@@ -123,7 +123,7 @@ If you want to provision [advanced networking](/help/security/configuring-advanc
 
 From the **Overview** page, you can access an environment's detail in two ways.
 
-1. From the **Overview** page, click the **Environments** tab in the side navigation panel.
+1. From the **Overview** page, click the **Environments** tab in the left side menu.
 
    ![Environments tab](assets/environments-tab2.png)
 
@@ -135,11 +135,11 @@ From the **Overview** page, you can access an environment's detail in two ways.
 
    ![The environments tab](assets/environments-tab2.png)
 
-1. Tap or click an environment in the list so you can reveal its details.
+1. Click an environment in the list so you can reveal its details.
 
    ![Environment details](assets/environ-preview1.png)
 
-Alternatively, click the ellipsis button of the environment you want and then select **View Details**.
+Alternatively, click https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg of the environment you want and then select **View Details**.
 
    ![View environment details](assets/view-environment-details.png)
 
@@ -187,7 +187,7 @@ Alternatively you can access the same information from the **Environments** tab.
 
 1. On the **Overview** page, select the **Environments** tab.
 
-1. On the **Environments** tab, select the environment you want to query in the left navigation panel.
+1. On the **Environments** tab, select the environment you want to query in the left side menu.
 
 1. Once an environment is selected:
    
@@ -213,7 +213,7 @@ However, updates to environments in sandbox programs are managed within the prog
 
 ![Environment update status](assets/environ-update.png)
 
-### Updates and Pipelines {#updates-pipelines}
+### Updates and pipelines {#updates-pipelines}
 
 Pipelines are the only way to [deploy code to the environments of AEM as a Cloud Service](deploy-code.md). For this reason, each pipeline is associated with a particular AEM version.
 
@@ -229,11 +229,11 @@ The process of updating is therefore a two-step process:
 >[!NOTE]
 > As of 2024, development instances and some sandbox programs are already automatically updated so there is no need to manage updates for them manually. As a result of this transition, the option to Update environment manually for development instances might not be available to _some_ of your programs.
 
-The **Update** option is available from the **Environments** card for some development environments and environments in sandbox programs by clicking the ellipsis button of the environment.
+The **Update** option is available from the **Environments** card for some development environments and environments in sandbox programs by clicking https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg of the environment.
 
 ![Update option from Environments card](assets/environ-update2.png)
 
-This option is also available by clicking the **Environments** tab of the program and then selecting the ellipsis button of the environment.
+This option is also available by clicking the **Environments** tab of the program and then clicking https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg of the environment.
 
 ![Update option from Environments tab](assets/environ-update3.png)
 
@@ -249,15 +249,15 @@ The **Update** option's behavior varies depending on the configuration and curre
 * If the pipeline is already being updated, the **Update** option informs the user that an update is already running.
 * If an appropriate pipeline does not exist, the **Update** option prompts the user to create one.
 
-## Deleting development environments {#deleting-environment}
+## Delete development environments {#deleting-environment}
 
 A user with the **Deployment Manager** or **Business Owner** role is able to delete a development environment. 
 
-From the **Overview** screen of the program on the **Environments** card, click the ellipsis button of the development environment you want to delete.
+From the **Overview** screen of the program on the **Environments** card, click https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg of the development environment you want to delete.
 
 ![The delete option](assets/environ-delete.png)
 
-The delete option is also available from the **Environments** tab of the **Overview** window of the program. Click the ellipsis button of the environment and select **Delete**.
+The delete option is also available from the **Environments** tab of the **Overview** window of the program. Click https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg of the environment and select **Delete**.
 
 ![The delete option from the Environments tab](assets/environ-delete2.png)
 
@@ -304,7 +304,7 @@ Custom domain names are supported in Cloud Manager for Sites programs for both p
 
 >[!TIP]
 >
->For more information, please see the document [Introduction to custom domain names](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
+>For more information, see [Introduction to custom domain names](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
 ## Manage IP Allow Lists {#manage-ip-allow-lists} 
 
@@ -318,4 +318,4 @@ Applying an IP allowlist associates all IP ranges included in the definition of 
 
 >[!TIP]
 >
->For more information, please see the document [Introduction to IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+>For more information, see [Introduction to IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).

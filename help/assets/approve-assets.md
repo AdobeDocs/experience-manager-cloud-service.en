@@ -6,6 +6,9 @@ exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
 ---
 # Approve assets in [!DNL Experience Manager]
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 Brand Managers and Marketers maintain strict control over brand assets. Only approved and latest version of the asset is available for use, ensuring brand consistency across all channels and applications. 
 
 You can approve assets in AEM Assets to streamline asset management, ensuring a controlled and efficient process for handling assets.
