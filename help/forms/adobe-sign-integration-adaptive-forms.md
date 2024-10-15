@@ -99,7 +99,7 @@ After prerequisites are in place, perform the following steps to configure [!DNL
     * [!DNL workflow_read]
 
     ![NOTE]
-    > You can change the scopes modifier from `self` to `agreement` directly from AEM UI as given in the step 12.
+    > You can change the scopes modifier from `self` to `account` directly from AEM UI as given in the step 12.
 
    For step-by-step information to configure OAuth settings for an [!DNL Adobe Acrobat Sign] application and obtain the keys, see [Configure oAuth settings for the application](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) developer documentation.
 
@@ -107,7 +107,7 @@ After prerequisites are in place, perform the following steps to configure [!DNL
 
 1. Go back to the **[!UICONTROL Create Adobe Acrobat Sign Configuration]** page. In the **[!UICONTROL Settings]** tab, specify the [**[!UICONTROL Client ID]** (also referred to as Application ID) and **[!UICONTROL Client Secret]**]. Use the [Client ID and Client Secret of Adobe Acrobat Sign application](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) you created in the previous step.
 
-1. In the [!UICONTROL Authorization Scope] section, you can modify the scopes to either "agreement" or "self" by adding the prefix "self" or "agreement" to the scopes, as needed.
+1. In the [!UICONTROL Authorization Scope] section, you can modify the scopes to either "account" or "self" by adding the prefix "self" or "account" to the scopes, as needed.
    ![Authorization Scope](/help/forms/assets/authorization-scope.png)
 
 1. Select the **[!UICONTROL Enable Adobe Acrobat Sign for attachments]** option to append files attached to an Adaptive Form to the corresponding [!DNL Adobe Acrobat Sign] document sent for signing.
