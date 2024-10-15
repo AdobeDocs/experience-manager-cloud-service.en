@@ -34,8 +34,8 @@ Cloud Manager offers self-service tools to install and manage SSL certificates, 
 
 | | Model | Description |
 | --- | --- | --- |
-| A | **[Adobe managed certificate (DV)](#adobe-managed)** | Cloud Manager lets users configure DV (Domain Validation) certificates that that are provided by Adobe for quick domain setup.|
-| B | **[Customer managed certificate (OV/EV)](#customer-managed)** | Cloud Manager offers a platform TLS (Transport Layer Security) service to let you manage OV and EV SSL certificates that you own and private keys from third-party Certificate Authorities, such as *Let's Encrypt*. | 
+| A | **[Adobe managed SSL certificate (DV)](#adobe-managed)** | Cloud Manager lets users configure DV (Domain Validation) certificates that that are provided by Adobe for quick domain setup.|
+| B | **[Customer managed SSL certificate (OV/EV)](#customer-managed)** | Cloud Manager offers a platform TLS (Transport Layer Security) service to let you manage OV and EV SSL certificates that you own and private keys from third-party Certificate Authorities, such as *Let's Encrypt*. | 
 
 Both models offer the following general features for managing your certificates:
 
@@ -47,20 +47,19 @@ Both models offer the following general features for managing your certificates:
 >
 >[To add and associate a custom domain with an environment](/help/implementing/cloud-manager/custom-domain-names/introduction.md), you must have a valid SSL certificate that covers the domain.
 
-### Adobe managed certificates {#adobe-managed}
+### Adobe managed (DV) SSL certificates {#adobe-managed}
 
 DV certificates are the most basic level of SSL certification and are often used for testing purposes or for securing websites with basic encryption. DV certificates are available in both [production programs and sandbox programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
 After the DV certificate is created, Adobe renews it automatically every three months, unless it is deleted. 
 
-### Customer managed certificates {#customer-managed}
+### Customer managed OV/EV SSL certificates {#customer-managed}
 
 OV and EV certificates offer CA-validated information. Such information helps users assess whether the website owner, email sender, or digital signatory of code or PDF documents can be trusted. DV certificates do not allow such ownership verification.
 
 OV and EV additionally offer these features over DV certificates in Cloud Manager.
 
-* Multiple environments can use an OV/EV certificate.
-  * That is, it can be added once, but used multiple times.
+* Multiple environments can use an OV/EV certificate. That is, it can be added once, but used multiple times.
 * Each OV/EV certificate typically contains multiple domains.
 * Cloud Manager accepts wildcard OV/EV certificates for a domain.
 
@@ -74,12 +73,12 @@ OV and EV additionally offer these features over DV certificates in Cloud Manage
 >
 >For example, if your domain is `dev.adobe.com` and you have one certificate for `*.adobe.com` and another for `dev.adobe.com`, the more specific one (`dev.adobe.com`) is used.
 
-#### Requirements for customer managed certificates {#requirements}
+#### Requirements for customer managed OV/EV SSL certificates {#requirements}
 
-If you choose to upload your own EV/OV certificate, it must meet the following requirements:
+If you choose to add your own customer managed OV/EV SSL certificate, it must meet the following requirements:
 
 * AEM as a Cloud Service accepts certificates that conform with OV (Organization Validation) or EV (Extended Validation) policy.
-  * Cloud Manager does not support uploading your own DV (Domain Validation) certificates.
+  * Cloud Manager does not support adding your own DV (Domain Validation) certificates.
 * Any certificate must be an X.509 TLS certificate from a trusted Certificate Authority with a matching 2048-bit RSA private key.
 * Self-signed certificates are not accepted.
 
@@ -106,6 +105,10 @@ The following `openssl` commands can be used to convert non-PEM certificates.
   ```shell
   openssl x509 -inform der -in certificate.cer -out certificate.pem
   ```
+
+>[!TIP]
+>
+>Adobe recommends that you validate the integrity of your certificate locally using a tool such as `openssl verify -untrusted intermediate.pem certificate.pem` before attempting to install it using Cloud Manager.
 
 ## Limitation on number of installed SSL certificates {#limitations}
 
