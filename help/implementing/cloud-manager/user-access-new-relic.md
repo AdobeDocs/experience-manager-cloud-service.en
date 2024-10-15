@@ -41,13 +41,13 @@ For a newly-created program, a New Relic One sub-account is created for you. How
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, tap or click the program for which you want to manage your New Relic One users.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, click the program for which you want to manage your New Relic One users.
 
-1. At the bottom of the **Environments** card on the program overview page, click the ellipsis button and select **Activate New Relic**.
+1. At the bottom of the **Environments** card on the program overview page, click https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg and select **Activate New Relic**.
 
    ![Manage users](assets/newrelic-activate-sub-account.png)
 
-   * You can also access the **Manage users** option via the ellipsis button at the top of the **Environments** screen of your program.
+   * You can also access the **Manage users** option by clicking https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg at the top of the **Environments** screen of your program.
 
 1. [Run a pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) for the same environment to successful completion to complete the sub-account activation.
 
@@ -65,11 +65,11 @@ Follow these steps to define the users of your New Relic One sub-account associa
 
 1. Click the program for which you want to manage your New Relic One users.
 
-1. At the bottom of the **Environments** card on the program overview page, click the ellipsis button and select **Manage users**.
+1. At the bottom of the **Environments** card on the program overview page, click https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg and select **Manage users**.
 
    ![Manage users](assets/newrelic-manage-users.png)
 
-   * You can also access the **Manage users** option via the ellipsis button at the top of the **Environments** screen of your program.
+   * You can also access the **Manage users** option by clicking https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg at the top of the **Environments** screen of your program.
 
 1. In the **Manage New Relic users** dialog, enter the first and last name of the user you want to add, and click the **Add** button. Repeat this step for all users you want to add.
 
@@ -115,11 +115,11 @@ Once you have [activated your New Relic account](#activate-account), you can acc
 
 1. Click the program for which you want to access New Relic One.
 
-1. At the bottom of the **Environments** card on the program overview page, click the ellipsis button and select **Open New Relic**.
+1. At the bottom of the **Environments** card on the program overview page, click https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg and select **Open New Relic**.
 
    ![Manage users](assets/newrelic-access.png)
 
-   * You can also access New Relic via the ellipsis button at the top of the **Environments** screen of your program.
+   * You can also access New Relic by clicking https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg at the top of the **Environments** screen of your program.
 
 1. In the new browser tab that opens, sign in to New Relic One.
 

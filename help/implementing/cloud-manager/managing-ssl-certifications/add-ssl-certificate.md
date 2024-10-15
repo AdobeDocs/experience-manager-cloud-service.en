@@ -40,7 +40,7 @@ After [adding a custom domain name](/help/implementing/cloud-manager/custom-doma
 * **For a customer managed (OV/EV) SSL certificate:**
 
     * Obtain your OV/EV SSL certificate from a Certificate Authority. For more details, review the [requirements for customer managed OV/EV SSL certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements).
-    * After acquiring the certificate, [add your customer managed (OV/EV) SSL certificate's](#add-customer-manage-ssl-cert) details in Cloud Manager.
+    * After acquiring the certificate, [add your customer managed (OV/EV) SSL certificate's](#add-customer-managed-ssl-cert) details in Cloud Manager.
     * Once added, the custom domain name is marked as verified, and the SSL certificate is applied.
 
 In either case, after the certificate is verified and installed, the custom domain is available for secure use in your environment. Make sure to [check the domain's status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) in the Cloud Manager interface regularly to confirm everything is working as expected.
@@ -63,15 +63,14 @@ Need help with choosing whether to use an Adobe managed SSL certificate (recomme
 
 1. Near the upper-right corner of the SSL Certificates page, click **Add SSL Certificate**.
 
-1. In the **Add SSL certificate** dialog box, based on [your particular use case](#which-ssl-to-add), select **Adobe managed (DV)**.
+1. In the **Add SSL certificate** dialog box, based on [your particular use case](#which-ssl-to-add), select **Adobe Managed (DV)**.
 
     ![Add a DV certificate](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)
 
 1. In the **Certificate name** field, enter a name you want associated with the DV SSL certificate.
 
 1. In the **Select domains** drop-down list, select one or more verified domains that you want associated with the DV SSL certificate.
-    * No domains to select? If so, you must first add a custom domain name and ensure it is verified before you can add an SSL certificate.
-    * See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). 
+    * No domains to select? If so, you must first [add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) and ensure it is verified before you can add an Adobe managed SSL certificate.
     * When you are finished adding a custom domain name, return to this topic and begin at step 1 again.
     
 1. In the lower-right corner of the dialog box, click **Save**.
@@ -84,13 +83,18 @@ You are now ready to add a [CDN configuration](/help/implementing/cloud-manager/
 
 ## Add a customer managed (OV/ED) SSL certificate {#add-customer-managed-ssl-cert}
 
+<!-- IF THIS TOPIC GET UPDATED, REMEMBER TO UPDATE THE STEPS ALSO IN THE "MANAGE SSL CERTIFICATES TOPIC TOO -->
+
 Need help with choosing whether to use an Adobe managed SSL certificate (recommended) or a customer managed SSL certificate with your domain? See [Choosing which SSL certificate to add](#which-ssl-to-add) 
 
 **To add a customer managed (OV/EV) SSL certificate:**
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate program.
+
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
+
 1. In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to reveal the side menu. 
+
 1. Under the **Services** heading, click ![Lock closed icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL Certificates**. 
 
    ![Adding an SSL certificate](/help/implementing/cloud-manager/assets/ssl/ssl-cert-add.png)
@@ -100,9 +104,10 @@ Need help with choosing whether to use an Adobe managed SSL certificate (recomme
 1. In the **Add SSL certificate** dialog box, based on [your particular use case](#which-ssl-to-add), select **Customer managed (OV/EV)**.
 
 1. In the **Certificate name** field, enter a name for your certificate. 
-This field is for informational purposes only and can be any name that helps you reference your SSL certificate easily.
+    This field is for informational purposes only and can be any name that helps you reference your SSL certificate easily.
 
 1. In the **Certificate**, **Private key**, and **Certificate chain** fields, copy the required values from your OV or EV SSL certificate, and paste them into their respective fields in the dialog box.
+
     Any detected errors in values are displayed. Before you can save your certificate, you must address all errors. See [Certificate Errors](#certificate-errors) to learn more about troubleshooting common errors.
 
     ![Add SSL certificate dialog box](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)| 
