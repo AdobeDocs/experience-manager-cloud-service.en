@@ -94,7 +94,6 @@ You can access the full audit results by clicking the **Reports** tab in the Clo
 >* To learn more details on how the audit works, see [Experience Audit Evaluation Details](#details).
 >* To know how to run an Experience Audit on demand, see [On-Demand Audit Reports](#on-demand).
 >* If you experience issues with the audit, see [Experience Audit Encounters Issues](#issues).
->* For general performance tips, see [General Performance Tips](#performance-tips).
 
 ### View the slowest pages {#view-slowest-pages}
 
@@ -149,38 +148,11 @@ If you click on the chart at a point in time, a popover opens with detail of tha
 
 #### Experience Audit scan results {#scan-results}
 
-The **Experience Audit scan results** section gives recommendations on how to improve your score and details of all the pages scanned. It is divided into two sections:
-
-* **[Recommendations](#recommendations)**
-* **[Scanned pages](#scanned-pages)**
-
-##### Recommendations {#recommendations}
-
-The **Recommendations** section shows an aggregate set of insights. By default, recommendations for **performance** are displayed. Use the drop-down next to the **Recommendations** heading to change to another category. 
-
-![Recommendations](assets/experience-audit-recommendations.png)
-
-Click any recommendation to reveal details about it.
-
-![Recommendation details](assets/experience-audit-recommendations-details.png)
-
-When available, the expanded recommendation details also contain the percentage of the recommendations impact, to help focus on the most impactful changes. In addition to this, expanded recommendations may include relevant AEM documentation links and tips that can guide you through implementing the suggested fixes.
-
-Click the **see pages** link in the details view to see the pages to which the recommendation applies.
-
-![Pages for the recommendation details](assets/experience-audit-details-pages.png)
-
-##### Scanned pages {#scanned-pages}
-
-The **Scanned pages** section gives details of scores on all scanned pages. Use the **Prev** and **Next** buttons to page through the results and choose on how many the display should paginate.
+The **Experience Audit scan results** section gives details of scores on all scanned pages. Use the **Prev** and **Next** buttons to page through the results and choose on how many the display should paginate.
 
 ![Scanned pages](assets/experience-audit-scanned-pages.png)
 
-Click the link of a particular page updates the **Select** filter of the [**Page scores &mdash; trend** section](#trend) and shows the **Scores &amp; recommendations** tab for the selected page.
-
-![Page results](assets/experience-audit-page-results.png)
-
-The **Raw reports** tab gives you scores for every audit of the page. Click the report date in the **Lighthouse Report** column to retrieve a JSON file of the raw data.
+Click the link of a particular page updates the **Select** filter of the [**Page scores &mdash; trend** section](#trend) and shows the **Raw reports** tab gives you scores for every audit of the page. Click the report date in the **Lighthouse Report** column to retrieve a JSON file of the raw data.
 
 ![Raw report](assets/experience-audit-raw-reports.png)
 
@@ -233,20 +205,7 @@ Some reasons that the pages might not be available are that:
 
 >[!TIP]
 >
->[Accessing the raw reports](#scanned-pages) for a page can provide details on why the page could not be audited.
-
-## General performance tips {#performance-tips}
-
-Two of the most common impactful issues that are easy to fix relate to Cumulative Layout Shifts (CLS) and Largest Contentful Paint (LCP).
-
-You can improve these areas by doing the following:
-
-* Not lazy loading the images above the fold &mdash; the content that is visible in the browser without needing to scroll down.
-* Properly prioritizing how resources are loaded (for example, by asynchronously loading the images below the fold after the document has loaded).
-* Prefetching JavaScript and CSS files that are used to render content above the fold (if they are necessary).
-* Reserving the vertical space by assigning an aspect ratio to containers that either load slowly or are rendered later.
-* Converting images to WebP format to reduce their size.
-* Using `<picture>` and image `srcset` with varying image sizes for different viewport sizes (and ensuring that the resizing works).
+>[Accessing the raw reports](#scan-results) for a page can provide details on why the page could not be audited.
 
 ## Experience Audit evaluation details {#details}
 
@@ -255,7 +214,3 @@ The following details provide additional information on how the Experience Audit
 * The audit scans the origin (`.com`) domain from the [configured Experience Audit page paths](#configuration) of the publisher to simulate real user experiences, helping you make better decisions about managing and optimizing your websites.
 * In production full-stack pipelines, the staging environment is scanned. To ensure that the audit provides relevant details during auditing, the staging environment's content should be as close as possible to the production environment.
 * The pages displayed in the **Select** drop-down in the [**Page scores &mdash; trend** section](#trend) are all known pages that the Experience Audit scanned in the past.
-* [A recommendation](#recommendations) can have a potential gain and a difference from the previous scan.
-* Experience Audit estimates potential improvements by processing the raw report for each page. It correlates wasted bytes or milliseconds with insights, assigning a weighted impact on the performance score. The audit provides this information, and the affected pages, to help decide which recommendation to pursue.
-See the [General Performance Tips section](#performance-tips) for more details.
-* A front end pipeline may deploy to an existing environment, and multiple front end pipelines can target the same environment. Because scan results are aggregated at the environment level, the scores, trends, and recommendations are consistent. These results are displayed in the selected environment, regardless of which pipeline triggered the scan.

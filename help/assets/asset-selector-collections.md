@@ -6,6 +6,9 @@ role: Admin,User
 
 # Asset Selector Collections {#asset-selector-collections}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 A collection is a set of assets, folders, or other collections within Asset Selector. Use collections to share assets between users. Unlike folders, a collection can include assets from different locations. 
 
 The Micro Front-end Collections in Asset Selector is available out of the box in read only mode. It fetches assets and collections directly from the [!DNL Experience Manager Assets] repository that you have access to.
