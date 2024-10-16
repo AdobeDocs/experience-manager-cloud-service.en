@@ -302,7 +302,7 @@ To adjust the TTL:
         1. Navigate to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**. 
         1. Set the **[!UICONTROL Default Client Cache Time To Live]** value to 24 hours or more.
     1. **For Dynamic Media on Adobe Experience Manager:**
-        1. Follow [these instructions](/help/assets/dm-publish-settings.md#common-thumbnail-attributes-tab).
+        1. Follow [these instructions](/help/assets/dynamic-media/config-dm.md).
         1. Set the **[!UICONTROL Expiration]** value for 24 hours or more.
 
 
