@@ -68,6 +68,8 @@ Assets as a Cloud Service offers four types of user types. Each user type provid
 
    * Access and leverage approved assets from your organization using AEM Assets Content Hub portal.
 
+   ![Assets as a Cloud Service Power user](/help/assets/assets/assets-cs-power-users.png)
+
 The following table summarizes the available Content Hub user types, the privileges they have, and the product profiles that are required to get those privileges:
 
 
