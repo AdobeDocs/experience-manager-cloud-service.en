@@ -583,21 +583,6 @@ The diagram below provides a visual representation of a set of domains and assoc
 </tbody>
 </table>
 
-### Restrict VPN to Ingress Connections {#restrict-vpn-to-ingress-connections}
-
-If you want to allow only VPN access to AEM, environment allowlists can be configured in Cloud Manager so that only the IP defined by `p{PROGRAM_ID}.external.adobeaemcloud.com` is allowed to talk to the environment. This can be done the same way as any other IP-based allowlist in Cloud Manager.
-
-If rules must be path-based, use standard http directives at the Dispatcher level to deny or allow certain IPs. They should ensure that the desired paths are also not cacheable at the CDN so that the request always gets to origin.
-
-#### Httpd Config Example {#httpd-example}
-
-```
-Order deny,allow
-Deny from all
-Allow from 192.168.0.1
-Header always set Cache-Control private
-```
-
 ## Enabling Advanced Networking Configurations on Environments {#enabling}
 
 Once you have configured an advanced networking option for a program, whether [flexible port egress](#flexible-port-egress), [dedicated egress IP address](#dedicated-egress-ip-address), or [VPN](#vpn), to use it, you must enable it at the environment level.
