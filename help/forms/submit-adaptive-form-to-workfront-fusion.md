@@ -31,6 +31,7 @@ To establish a connection between Workfront Fusion and AEM Forms, the following 
 
 * A valid [ Workfront and Workfront Fusion license](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
 * An AEM user with right to access [Dev Console](https://my.cloudmanager.adobe.com/) to [retrieve the service credentials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+* The user must be a member of the **forms-users** group to add a webhook.
 
 ## Integrate AEM Forms with Adobe Workfront Fusion
 
@@ -75,6 +76,10 @@ To add a webhook:
     > It is recommended to choose your webhook name carefully, as the specified webhook name appears in the AEM instance. 
 
 1. Click **[!UICONTROL Add]** to add new connection. The **[!UICONTROL Create a Connection]** dialog box appears.
+
+>[!NOTE]
+>
+> Ensure that the Technical Account is a member of the **forms-users** group; otherwise, adding a webhook fails.
 
 #### Add a connection to a webhook {#add-connection}
 
