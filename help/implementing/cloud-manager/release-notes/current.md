@@ -25,6 +25,16 @@ The next release is planned for November 14, 2024.
 
 <!-- (CMGR-59817) -->
 
+* <!-- CS ONLY --> When adding a new custom domain, the previous verification method involved a lengthy DNS validation process. Adobe has simplified this process for customers. Now, you only need to provide a valid SSL certificate (EV or OV), which serves as proof of ownership. There is no longer a need to update TXT records in the DNS.
+
+    >[!NOTE]
+    >
+    >This feature is only applicable to EV and OV certificates managed by the customer. DV certificates managed by Adobe still require the presence of a CNAME record.
+
+    See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+
+    ![Verify domain for a customer managed EV/OV certificate](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
+
 * <!-- CS ONLY --> When you add or edit network infrastructure, the values in the IP address and network mask fields are validated according to the following rules:
 
     * The address space must not overlap with the addresses defined in the connection address space.
@@ -75,4 +85,4 @@ If you are interested in testing this new feature and sharing your feedback, sen
 
 
 
-## Known Issues {#known-issues} -->
+## Known issues {#known-issues} -->

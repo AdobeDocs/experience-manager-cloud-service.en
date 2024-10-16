@@ -6,6 +6,9 @@ exl-id: a0c030e2-2213-406b-ad92-4761f1e2ee9f
 ---
 # Integrate Asset Selector with Adobe application {#integrate-asset-selector-with-adobe-app}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 Asset Selector allows you to integrate using various Adobe applications to enable them to work together seamlessly.
 
 ## Prerequisites{#prereqs-adobe-app}

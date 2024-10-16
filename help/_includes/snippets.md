@@ -163,7 +163,7 @@ The following table demonstrates the difference between the features available i
 >
 >The Universal Editor is not compatible with [IP allow lists.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
 >
->If you wish to use the Universal Editor, IP allow lists must not be enabled.
+>If you want to use the Universal Editor, IP Allow Lists must not be enabled.
 
 ## Work with Dynamic Media {#work-with-dynamic-media}
 

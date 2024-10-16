@@ -14,6 +14,9 @@ exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html)                  |
 | AEM as a Cloud Service     | This article         |
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 [!DNL Adobe Experience Manager Assets] provides robust asset search methods that help you achieve higher content velocity. Your teams can reduce time to market with seamless, intelligent asset search experience using out-of-the-box functionality and custom methods. Search assets capability is central to the usage of a digital asset management system -- be it for further use by creatives, for robust management of assets by the business users and marketers, or for administration by DAM administrators. Simple, advanced, and custom searches that you can perform via [!DNL Assets] user interface or other apps and surfaces help fulfill these use cases.
 
 Asset search in AEM supports the following use cases and this article describes the usage, concepts, configurations, limitations, and troubleshooting for these use cases.

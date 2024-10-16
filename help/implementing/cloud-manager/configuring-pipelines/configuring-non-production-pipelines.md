@@ -123,7 +123,7 @@ A targeted deployment deploys code only for selected parts of your AEM applicati
 
 >[!NOTE]
 >
->Web tier and config pipelines are not supported with private repositories. Please see the document [Adding Private Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) for details and the full list of limitations.
+>Web tier and config pipelines are not supported with private repositories. See [Adding Private Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) for details and the full list of limitations.
 
 The steps to complete the creation of your non-production, targeted deployment pipeline are the same once you choose a deployment type.
 
@@ -150,16 +150,16 @@ The steps to complete the creation of your non-production, targeted deployment p
    
    ![Config pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
-1. If you enabled Experience Audit, tap or click **Continue** to advance to the **Experience Audit** tab where you can define the paths that should always be included in the Experience Audit.
+1. If you enabled Experience Audit, click **Continue** to advance to the **Experience Audit** tab where you can define the paths that should always be included in the Experience Audit.
 
    * If you enabled **Experience Audit**, see the document [Experience Audit](/help/implementing/cloud-manager/experience-audit-dashboard.md) for details on how to configure.
    * If you did not, skip this step.
 
-1. Tap or click **Save** to save the pipeline.
+1. Click **Save** to save the pipeline.
 
 The pipeline is saved and you can now [manage your pipelines](managing-pipelines.md) on the **Pipelines** card on the **Program Overview** page.
 
-## Skip Dispatcher Packages {#skip-dispatcher-packages}
+## Skip Dispatcher packages {#skip-dispatcher-packages}
 
 If you want Dispatcher packages built as part of your pipeline, but do not want them published to build storage, you can disable publishing them, which may reduce pipeline run duration.
 
