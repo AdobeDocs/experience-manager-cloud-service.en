@@ -374,6 +374,7 @@ This header tells you the following:
 >An example of using the modifier:
 >`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
 >To invalidate the entire cache, you must create a support case.
+
 +++
 
 +++
