@@ -88,9 +88,36 @@ After you have added an RDE for your program using Cloud Manager, you can intera
    aio plugins:update
    ```
 
-1. Configure the RDE plugin to use your organization, program and environment. The setup command below will interactively provide the user with a list of programs in their organization, and show RDE environments in that program to choose from.
+1. Login using the aio client. 
    ```
    aio login
+   ```   
+   The login information (token) is stored in the global aio configuration and therefore supports one login and organization only. In case you want to use multiple RDEs that need different logins or organizations, follow below example introducing contexts. 
+   
+   <details><summary>Follow this example to setup a local context for one of your RDE logins</summary>
+   To store the login information locally in a .aio file in the current directory within a specific context, follow these steps. A context is also a clever way to setup a CI/CD environment or script.  To make use of this feature, ensure to use at least aio-cli version 10.3.1. Update it using `npm install -g @adobe/aio-cli`
+
+   Let's create a context called 'mycontext' that we then set as the default context using the auth plugin before calling the login command.
+
+   ```
+   aio config set --json -l "ims.contexts.mycontext" "{ cli.bare-output: false }"
+   aio auth ctx -s mycontext
+   aio login --no-open
+   ```
+
+   
+   >[!NOTE]
+   > The login command with the `--no-open` option will output a URL in the terminal instead of opening your default browser. Like that you can copy and open it with an **incognito** window of your browser. This way, your currently logged in session in the normal browser window will remain untouched, and you can ensure to use the specific login and organization necessary for your context.
+
+   The first command creates a new login context configuration, called `mycontext`, in your local `.aio` configuration file (the file is created if needed. The second command sets the context `mycontext` to be the "current" context, i.e. the default.
+
+   With this configuration in place, the login command automatically stores the login tokens in the context `mycontext`, and thus keeps it local.
+
+   Multiple contexts can be managed either by keeping local configurations in multiple folders. Alternatively, it is also possible to set up multiple context within a single configuration file, and switch between them by changing the "current" context.
+   </details>
+ 
+1. Configure the RDE plugin to use your organization, program and environment. The setup command below will interactively provide the user with a list of programs in their organization, and show RDE environments in that program to choose from.
+   ```
    aio aem:rde:setup
    ```
    
