@@ -5,6 +5,9 @@ role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
 ---
 # Asset Selector customizations {#asset-selector-customization}
+
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
  
 Asset Selector allows you to customize various components according to preferences, requirements, or functional needs. You can customize the following components [Micro-Frontend Asset Selector](#overview-asset-selector.md):
 

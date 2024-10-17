@@ -8,6 +8,9 @@ exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
 ---
 # Folder Metadata Schema {#folder-metadata-schema}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 [!DNL Adobe Experience Manager Assets] lets you create metadata schemas for asset folders, which define the layout and metadata displayed in folder properties pages.
 
 ## Add a folder metadata schema form {#add-a-folder-metadata-schema-form}

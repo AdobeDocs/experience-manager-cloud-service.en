@@ -11,15 +11,11 @@ role: Admin, Architect, Developer
 
 Learn how to verify that Cloud Manager has successfully confirmed your custom domain name.
 
-## Requirements {#requirements}
+## Check the status of a custom domain name {#how-to}
 
-Fulfill these requirements before checking your domain name status in Cloud Manager.
+Before checking your domain name status in Cloud Manager, make sure you have already added a customer managed (OV/EV) SSL certificate for your custom domain as described in [Add a customer managed SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md##add-customer-managed-ssl-cert).
 
-* First add an EV/OV certificate for your custom domain as described in the document [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
-
-## Check the status of your custom domain name {#how-to}
-
-You can determine the status of your custom domain name within Cloud Manager.
+**To check the status of a custom domain name:**
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
@@ -27,7 +23,7 @@ You can determine the status of your custom domain name within Cloud Manager.
 
 1. Navigate to the **Environments** screen from the **Overview** page.
 
-1. Click **Domain Settings** in the left navigation panel.
+1. Click **Domain Settings** in the left side menu.
 
 1. Click the **Status** icon for the domain name.
 
@@ -35,11 +31,14 @@ The status detail is shown. Your custom domain is ready to be used when the stat
 
 >[!NOTE]
 >
->Cloud Manager automatically triggers verification when you select **Create** on the verification step of the **Add Custom Domain** wizard when [adding a new custom domain name to Cloud Manager](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). For subsequent verifications, you must actively select the verify again icon next to the status.
+>If you are using an *Adobe managed (DV) SSL certificate* with the domain, Cloud Manager automatically triggers verification when you click **Verify** in the Verify domain dialog box when [adding a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+>
+>If you plan on using a **customer managed (OV/EV) SSL certificate**, your domain is verified *after* you [add the OV/EV SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). 
+
 
 ## Verification statuses {#statuses}
 
-Cloud Manager verifies domain ownership through the Customer managed certificate. When done, it displays one of the following status messages:
+Cloud Manager verifies domain ownership through the customer managed (OV/EV) SSL certificate. When done, it displays one of the following status messages:
 
 | Status | Description |
 | --- | --- |
