@@ -165,9 +165,7 @@ The Image Serving commands `fmt` and `qlt` are not supported; all remaining comm
 
 ## Frequently asked questions about Smart Imaging{#smart-imaging-faq}
 
-+++
-
-**Are there licensing costs associated with Smart Imaging?**
++++**Are there licensing costs associated with Smart Imaging?**
 
 No. Smart Imaging is included with your existing license. This rule is true for either Dynamic Media Classic or Experience Manager - Dynamic Media (On-prem, AMS, and Experience Manager as a Cloud Service).
 
@@ -177,37 +175,34 @@ No. Smart Imaging is included with your existing license. This rule is true for 
 
 +++
 
-+++
-
-**Can Smart Imaging be turned off for any request?**
++++**Can Smart Imaging be turned off for any request?**
 
 Yes. You can turn off Smart Imaging by adding any of the following modifiers:
 
 * `bfc=off` to turn off Browser Format Conversion. See also [Browser Format Conversion](#bfc).
 * `dpr=off` to turn off Device Pixel Ratio. See also [Device Pixel Ratio](#dpr).
 * `network=off` to turn off network bandwidth. See also [Network Bandwidth](#network).
-+++
 
 +++
 
-**Is it possible to "tune" Smart Imaging?**
++++**Is it possible to "tune" Smart Imaging?**
 
 Yes. Smart Imaging has three options that you can enable or disable. 
 
 * [Browser Format Conversion](#bfc)
 * [Device Pixel Ratio](#dpr)
 * [Network Bandwidth](#network)
-+++
 
 +++
 
-**Does Smart Imaging work with my existing image presets?**
++++**Does Smart Imaging work with my existing image presets?**
 
 Smart Imaging seamlessly integrates with your existing image presets, respecting all your image settings.
 
 The only adjustments involve the image format, or quality, or both. During format conversion, Smart Imaging preserves full visual fidelity according to your preset settings but delivers a smaller file size. Just enable it by adding `bfc=on`, or `dpr=on,dprValue`, or `network=on`, or all three parameter settings to your existing URLs or presets.
 
 For example, let's say an image preset specifies a JPEG format at 500 &times; 500 pixels, with `quality=85`, and `unsharp mask=0.1,1,5`. Smart Imaging detects if the user is on a Chrome browser. It then converts the image to WebP with the same dimensions (500 &times; 500) and an unsharp mask matching the JPEG's settings. The system then compares the file sizes of the WebP and JPEG versions and serves the smaller one to the user.
+
 +++
 
 <!-- OLD VERSION BELOW AS PER CQDOC-22085>
@@ -231,26 +226,20 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 -->
 
-+++
-
-**Does Smart Imaging working with HTTPS? How about HTTP/2?**
++++**Does Smart Imaging working with HTTPS? How about HTTP/2?**
 
 Yes, to both questions. Smart Imaging works with images delivered over HTTP or HTTPS. In addition, it also works over HTTP/2.
 +++
 
-+++
-
-**Am I eligible to use Smart Imaging?**
++++**Am I eligible to use Smart Imaging?**
 
 Smart Imaging is ready to use immediately for all customers. To start enjoying its benefits, just add `bfc=on`, or `dpr=on,dprValue`, or `network=on`, or all three parameter settings to your existing URLs or presets.
 
 To activate Smart Imaging, your company's Dynamic Media Classic or Dynamic Media on Experience Manager account must include the Adobe bundled CDN (Content Delivery Network) as part of your license.
-+++
-
 
 +++
 
-**What is the process to enable Smart Imaging on an account?**
++++**What is the process to enable Smart Imaging on an account?**
 
 To start using Smart Imaging, append `bfc=on`, or `dpr=on,dprValue`, or `network=on`, or all three parameter settings to your existing URLs or presets. If you prefer not to make these changes manually, you can enable Smart Imaging by default by creating a support case.
 
@@ -305,10 +294,9 @@ To adjust the TTL:
         1. Follow [these instructions](/help/assets/dynamic-media/config-dm.md).
         1. Set the **[!UICONTROL Expiration]** value for 24 hours or more.
 
-
 +++
 
-**When is an account enabled with Smart Imaging?**
++++**When is an account enabled with Smart Imaging?**
 
 Customer Support processes requests in the order that they receive them, following the Wait List.
 
@@ -318,16 +306,15 @@ Customer Support processes requests in the order that they receive them, followi
 
 +++
 
-**Are there risks with using Smart Imaging?**
++++**Are there risks with using Smart Imaging?**
 
 There is no risk to a customer web page. However, the transition to Smart Imaging does clear out your CDN cache. This operation involves moving to a new configuration of Dynamic Media Classic or Dynamic Media on Experience Manager.
 
 During the initial transition, the non-cached images directly hit Adobe's origin servers until the cache is rebuilt again. As such, Adobe plans to handle a few customer transitions at a time so that acceptable performance is maintained when pulling requests from the origin. For most customers, the cache is fully built up again at the CDN within about one to two days.
-+++
 
 +++
 
-**Can I verify if Smart Imaging works?**
++++**Can I verify if Smart Imaging works?**
 
 Yes. You can do the following:
 
@@ -347,11 +334,10 @@ Yes. You can do the following:
 >Not all images are converted. Smart Imaging decides if the conversion can improve performance. Sometimes, where there is no expected performance gain or the format is not JPEG or PNG, the image is not converted.
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
-+++
 
 +++
 
-**Is there a way to know the benefits of Smart Imaging?**
++++**Is there a way to know the benefits of Smart Imaging?**
 
 Yes. The Smart Imaging Header determines the benefits of Smart Imaging. When Smart Imaging is enabled, after you request an image, under the **[!UICONTROL Response Headers]** heading, you can see `-X-Adobe-Smart-Imaging` as seen in the following highlighted example:
 
@@ -376,16 +362,13 @@ This header tells you the following:
 
 +++
 
-+++
-
-**Can I disable AVIF optimization in Smart Imaging?**
++++**Can I disable AVIF optimization in Smart Imaging?**
 
 Yes. If you want to switch back to serving WebP by default, create a support case for the same. As usual, you can turn off Smart Imaging by adding the parameter `bfc=off` to the image's URL. However, you cannot select WebP or AVIF in the URL modifier for Smart Imaging. This ability is maintained at your company account-level.
-+++
 
 +++
 
-**Why does my request fail when I have a URL with fmt=tif on the Chrome web browser?**
++++**Why does my request fail when I have a URL with fmt=tif on the Chrome web browser?**
 
 This error does not occur if Smart Imaging is not enabled on your account. Smart Imaging works with either JPEG or PNG formats only. 
 
@@ -394,73 +377,65 @@ To avoid this error, you can either:
 * Specify JPEG or PNG, or
 * Not use the `fmt` modifier at all, or
 * Use a browser-preferred format defined by Smart Imaging. For example, you can use WebP for the Chrome Web browser.
-+++
 
 +++
 
-**Can I download a TIFF image from an image's URL?**
++++**Can I download a TIFF image from an image's URL?**
 
 Yes. Add `fmt=tif` and `bfc=off` to image's URL path.
-+++
 
 +++
 
-**Does Smart Imaging manage image format and image quality settings?**
++++**Does Smart Imaging manage image format and image quality settings?**
 
 Yes. Smart Imaging uses both format and quality. The rest of the parameters remain the same, if requested in the image's URL.
-+++
 
 +++
 
-**Can I set a minimum and maximum quality setting?**
++++**Can I set a minimum and maximum quality setting?**
 
 No. Currently there is no such provisioning.
-+++
 
 +++
 
-**Does Smart Imaging adjust the percent quality output setting?**
++++**Does Smart Imaging adjust the percent quality output setting?**
 
 Yes. Smart Imaging automatically adjusts the quality percent. This quality is determined using a machine learning algorithm developed by Adobe. This percent is not range-specific.
-+++
 
 +++
 
-**Are only JPEG and PNG replaced by Smart Imaging?**
++++**Are only JPEG and PNG replaced by Smart Imaging?**
 
 Yes. This functionality works for JPEG and PNG only.
-+++
 
 +++
 
-**Why is JPEG sometimes returned to Chrome instead of WebP?**
++++**Why is JPEG sometimes returned to Chrome instead of WebP?**
 
 Smart Imaging determines if the conversion is beneficial or not. It returns the new image only of the conversion is beneficial.
-+++
 
 +++
 
-**Why does Device Pixel Ratio (dpr) not work with composite images?**
++++**Why does Device Pixel Ratio (dpr) not work with composite images?**
 
 If a composite image involves too many layers, dpr functionality may be impacted while using a position modifier. This issue is known and will be fixed in future releases of Smart Imaging. If other Smart Imaging functionality is not working as expected, you can create a support case to report the issue.
-+++
 
 +++
 
-**Why does Smart Imaging PNG convert to lossless WebP/AVIF?**
++++**Why does Smart Imaging PNG convert to lossless WebP/AVIF?**
 
 Because PNG is a lossless format, earlier WebP and AVIF being delivered were lossless, resulting is higher size than expected. Smart Imaging now supports lossy conversion. You can use the modifier `cache=update` (one time only) in an image request to fix this issue. An example of using this modifier:
 
 `https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
 
 To invalidate the entire cache, you must create a support case requesting such effort.
-+++
 
 +++
 
-**Can I continue using PNG to lossless conversion in Smart Imaging?**
++++**Can I continue using PNG to lossless conversion in Smart Imaging?**
 
 Yes. Smart Imaging now supports lossy conversion based on the quality level. You can continue using lossless conversion by setting the quality to 100, either through your company's settings, or by adding `qlt=100` to the image's URL path.
+
 +++
 
 
