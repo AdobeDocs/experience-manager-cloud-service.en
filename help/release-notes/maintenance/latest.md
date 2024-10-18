@@ -21,6 +21,7 @@ The 2024.10.0 feature activation will provide the full feature set for this main
 * ASSETS-41820 : Indexing improvements for processing watchdog.
 * ASSETS-43720 : Functional improvements to processing watchdog.
 * ASSETS-42554 : Performance improvements for large folders.
+* SKYOPS-77603 : Management of redirects by business users.
 
 ### Fixed Issues {#fixed-issues-18311}
 
@@ -49,7 +50,6 @@ The 2024.10.0 feature activation will provide the full feature set for this main
 * ASSETS-43945 : Increase retry delay to 20 min for async assets job queue.
 * ASSETS-44025 : Async delete assets job fails for when individual assets are selected.
 * SITES-26128 : Class cast exception in CreateLiveCopyStep.
-* SKYOPS-77603 : Redirects managed by business user.
 
 ### Known Issues {#known-issues-18311}
 
