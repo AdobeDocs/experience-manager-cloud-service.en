@@ -1036,3 +1036,15 @@ Verify that the login was completed successfully by running
    `aio cloudmanager:list-programs`
 
    This should list all programs under your configured organization and confirm that you have the correct role assigned.
+
+### Using deprecated context 'aio-cli-plugin-cloudmanager' {#aio-rde-plugin-troubleshooting-deprecatedcontext}
+
+Due to the history of the 'aio-cli-plugin-aem-rde', the context name 'aio-cli-plugin-cloudmanager' was used for some time. The rde plugin now uses the IMS way of dealing with context information, which means there's options to store context information globally or locally, as well as defaulting all aio calls to a configured default if wished to do so. The default context configured is stored locally and enables the developers to track and use individual contexts and their information inside a folder. For further details, read [the example to setup a local context](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) above.
+
+Developers who use both plugins, the aio-cli-plugin-cloudmanager and the aio-cli-plugin-aem-rde and would like to keep all information in the same context have to options right now:
+
+#### Keep using context 'aio-cli-plugin-cloudmanager'
+The context can still be used, a deprecation warning will be shown in the RDE plugin. This warning can be omited by using the ```--quiet``` mode. More recent versions of the RDE plugin will not offer the fallback to read the context 'aio-cli-plugin-cloudmanager' any longer. To still make use of it, simply configure the default context to 'aio-cli-plugin-cloudmanager', see [the example to setup a local context](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) above.
+
+#### Use any other context name also for the cloud manager plugin
+The cloud manager plugins offers a parameter to define a context to be used. It does not support the IMS default context configuration just yet. To do so, configure the RDE plugin using [the example to setup a local context](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) and tell the cloud manager plugin to use 'myContext' like ```--imsContextName=myContext``` in every call to it.
