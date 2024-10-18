@@ -50,7 +50,8 @@ The 2024.10.0 feature activation will provide the full feature set for this main
 - ASSETS-44025 : Async delete assets job fails for when individual assets are selected
 
 - SITES-26128 : Class cast exception in CreateLiveCopyStep
-
+- SKYOPS-77603 : Redirects managed by business user 
+- 
 ### Known Issues {#known-issues-18311}
 
 * FORMS-15818: Component descriptor entry `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` not found statements in server logs. These are harmless log statements.
