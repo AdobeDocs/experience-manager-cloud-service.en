@@ -20,6 +20,7 @@ The 2024.10.0 feature activation will provide the full feature set for this main
 
 - ASSETS-41820 : Indexing improvements for processing watchdog
 - ASSETS-43720 : Functional improvements to processing watchdog
+- ASSETS-42554 : Performance improvements for large folders
 
 ### Fixed Issues {#fixed-issues-18311}
 
@@ -36,7 +37,6 @@ The 2024.10.0 feature activation will provide the full feature set for this main
 - ASSETS-42067 : Dynamic Media Templates - Download gives error
 - ASSETS-42070 : Dynamic Media Templates - Non-admin users should have Template create/edit access
 - ASSETS-42344 : Connected Assets Sync disconnected - Reconnect and advice for customer
-- ASSETS-42554 : Improve folder listing largeFolder check
 - ASSETS-42620 : Issue with the preview option of asset versions - shows blank preview when we open the asset
 - ASSETS-42701 : Web Optimized Image Delivery and Cropping Issue
 - ASSETS-42966 : Async barricade can become unblocked in error due if multiple jobs share the same path
