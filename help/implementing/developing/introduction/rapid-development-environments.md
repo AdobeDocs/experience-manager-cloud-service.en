@@ -1044,7 +1044,9 @@ Due to the history of the 'aio-cli-plugin-aem-rde', the context name 'aio-cli-pl
 Developers who use both plugins, the aio-cli-plugin-cloudmanager and the aio-cli-plugin-aem-rde and would like to keep all information in the same context have to options right now:
 
 #### Keep using context 'aio-cli-plugin-cloudmanager'
+
 The context can still be used, a deprecation warning will be shown in the RDE plugin. This warning can be omited by using the ```--quiet``` mode. More recent versions of the RDE plugin will not offer the fallback to read the context 'aio-cli-plugin-cloudmanager' any longer. To still make use of it, simply configure the default context to 'aio-cli-plugin-cloudmanager', see [the example to setup a local context](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) above.
 
 #### Use any other context name also for the cloud manager plugin
+
 The cloud manager plugins offers a parameter to define a context to be used. It does not support the IMS default context configuration just yet. To do so, configure the RDE plugin using [the example to setup a local context](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) and tell the cloud manager plugin to use 'myContext' like ```--imsContextName=myContext``` in every call to it.
