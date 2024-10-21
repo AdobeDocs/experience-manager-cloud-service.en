@@ -923,6 +923,15 @@ GraphQL for AEM Content Fragments allows you to request a URL to an AEM Dynamic 
 The solution in GraphQL means you can:
 
 * use `_dmS7Url` on the `ImageRef` reference
+  * see [Sample query for Dynamic Media asset delivery by URL - Image Reference](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+* use `_dmS7Url` on multiple references; `ImageRef`, `MultimediaRef` and `DocumentRef`
+  * see [Sample query for Dynamic Media asset delivery by URL - Multiple References](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+
+* use `_dmS7Url` with Smart Crop functionality
+
+  * The `_smartCrops` property exposes the Smart Crop configurations available for a specific asset
+
+  * see [Sample query for Dynamic Media asset delivery by URL - with Smart Crop](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
 
 >[!NOTE]
 >
@@ -1005,6 +1014,36 @@ query allTeams {
     }
   }
 }
+```
+
+### Sample query for Dynamic Media asset delivery by URL - with Smart Crop {#sample-query-dynamic-media-asset-delivery-by-url-smart-crop}
+
+The following is a sample query:
+
+* to expose the Smart Crop configurations available for the requested assets
+
+```graphql
+query allTeams {
+  teamList {
+    items {
+      title
+      teamMembers {
+        profilePicture {
+          ... on ImageRef {
+            height
+            width
+            _dmS7Url
+            _smartCrops {
+              width
+              height
+              name
+            }
+          }
+        }
+      }
+    }
+  }
+} 
 ```
 
 ## GraphQL for AEM - Summary of Extensions {#graphql-extensions}
