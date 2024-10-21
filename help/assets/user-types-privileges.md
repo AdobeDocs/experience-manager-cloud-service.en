@@ -4,12 +4,26 @@ description:
 feature: Asset Management
 role: User, Admin
 ---
-# [!DNL Assets] as a Cloud Service user types and privileges {#assets-user-types-privileges}
+# [!DNL Assets] as a Cloud Service Ultimate package {#assets-ultimate-package-user-types-privileges}
 
 | [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
 | ------------- | --------------------------- |---------|----|-----|
 
-## [!DNL Assets] as a Cloud Service Ultimate package and user types {#assets-ultimate-package-user-types-privileges}
+Assets as a Cloud Service offers an Ultimate package with advanced DAM capabilities. AEM Assets Ultimate is engineered to manage complex content supply chains, ensuring that every piece of content performs well across all channels. 
+
+## Why Assets as a Cloud Service Ultimate Package? {#why-ultimate-package-existing-new-users}
+
+Assets as a Cloud Service Ultimate package offers various key benefits that help manage your organization's asset needs effectively, such as:
+
+* Greater flexibility with more user types and privileges associated with those user types, such as Collaborator users, Power users, and Limited users.
+
+* Seamless asset distribution with Content Hub.
+
+* AI-powered content creation using Adobe Express with Firefly.
+
+* Smoother onboarding or upgrade experience for new and existing users.
+
+## Key capabilities of Assets Ultimate package {#capabilities-ultimate-package}
 
 Assets as a Cloud Service Ultimate package enables you to perform various key Digital Asset Management operations, such as:
 
@@ -33,14 +47,8 @@ Assets as a Cloud Service Ultimate package enables you to perform various key Di
 
 * Additional Stage and Development environments.
 
-The operations that you can perform within Assets as a Cloud Service depends on your user type. See [Available user types](#available-user-types) for more information.
+The operations that you can perform within Assets as a Cloud Service also depends on your user type. See [Available user types](#available-user-types) for more information.
 
-
-## Why Assets as a Cloud Service Ultimate Package? {#why-ultimate-package-existing-new-users}
-
-New users
-
-Existing users
 
 ## What are available user types and privileges? {#available-user-types}
 
