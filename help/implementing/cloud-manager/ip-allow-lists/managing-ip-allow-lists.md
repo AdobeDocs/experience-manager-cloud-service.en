@@ -17,7 +17,7 @@ A user in the **Business Owner** or **Deployment Manager** role can follow these
 **To view and update IP Allow Lists:**
 
 1. Log on to Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
-1. From the **Overview** page, in the side panel, under **Services**, click ![Task list icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP Allow Lists**.
+1. From the **Overview** page, in the left side menu, under **Services**, click ![Task list icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP Allow Lists**.
 1. Identify the row for the IP Allow Lists that you want to view or update.
 1. Click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) at the right end of the row.
 1. From the drop-down menu, click **View & Update**.
@@ -34,7 +34,7 @@ A user in the **Business Owner** or **Deployment Manager** role can follow these
 
 1. Log on to Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. From the **Overview** page, in the side panel, under **Services**, click ![Task list icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP Allow Lists**.
+1. From the **Overview** page, in the left side menu, under **Services**, click ![Task list icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP Allow Lists**.
 
 1. In the **Status** column of the IP Allow Lists table, hover the mouse pointer over an IP Allow List that is green (in use) to see one or more services applied to it.
 
@@ -57,10 +57,9 @@ A user in the **Business Owner** or **Deployment Manager** role can follow these
 **To delete an IP Allow List:**
 
 1. Log on to Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
-1. From the **Overview** page, in the side panel, under **Services**, click ![Task list icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP Allow Lists**.
-1. Identify the row for the IP Allow List that you want to delete, then click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) at the right end of the row.
-1. In the drop-down menu, click **Delete**.
-1. In the Delete IP Allow List dialog box, click **Delete**.
+1. From the **Overview** page, in the left side menu, under **Services**, click ![Task list icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP Allow Lists**.
+1. Identify the row for the IP Allow List that you want to delete, then click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) at the right end of the row, then click **Delete**.
+1. In the **Delete IP Allow List** dialog box, click **Delete**.
 
 ## Pre-existing CDN configurations {#pre-existing-cdn}
 
