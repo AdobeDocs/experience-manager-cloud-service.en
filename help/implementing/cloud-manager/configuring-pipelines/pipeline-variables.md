@@ -78,6 +78,7 @@ If a pipeline is running, variable management is blocked.
 
 1. Click **Save**.
 
+
 ## Delete a pipeline variable {#delete-ui}
 
 1. When [managing your pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), click ![Ellipsis - More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) of the pipeline for which you want to delete pipeline variables.
@@ -86,10 +87,7 @@ If a pipeline is running, variable management is blocked.
 
    ![View/Edit pipeline variables](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. In the **Variables Configuration** dialog box, click ![Ellipsis - More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) of the variable you want to remove.
-
-1. In the drop-down menu, click **Delete**.
-
+1. In the **Variables Configuration** dialog box, click ![Ellipsis - More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) of the variable you want to remove, then click **Delete**.
 
 ## Set pipeline variables using the Cloud Manager CLI {#cli}
 
