@@ -103,7 +103,7 @@ If you did not specify any additional regions initially, you can do so after the
 
 You can also remove additional publish regions. However you can only add or only remove regions in one transaction. If you must add one region and remove one region, first add, save your change, and then remove (or conversely).
 
-1. From the Program Overview console of your program, click the ellipsis button for your production environment and select **Edit** from the menu.
+1. From the Program Overview console of your program, click https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg for your production environment and select **Edit** from the menu.
 
    ![Edit environment](assets/select-edit-environment.png)
 
@@ -123,7 +123,7 @@ If you want to provision [advanced networking](/help/security/configuring-advanc
 
 From the **Overview** page, you can access an environment's detail in two ways.
 
-1. From the **Overview** page, click the **Environments** tab in the side navigation panel.
+1. From the **Overview** page, click the **Environments** tab in the left side menu.
 
    ![Environments tab](assets/environments-tab2.png)
 
@@ -135,11 +135,11 @@ From the **Overview** page, you can access an environment's detail in two ways.
 
    ![The environments tab](assets/environments-tab2.png)
 
-1. Tap or click an environment in the list so you can reveal its details.
+1. Click an environment in the list so you can reveal its details.
 
    ![Environment details](assets/environ-preview1.png)
 
-Alternatively, click the ellipsis button of the environment you want and then select **View Details**.
+Alternatively, click https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg of the environment you want and then select **View Details**.
 
    ![View environment details](assets/view-environment-details.png)
 
@@ -187,7 +187,7 @@ Alternatively you can access the same information from the **Environments** tab.
 
 1. On the **Overview** page, select the **Environments** tab.
 
-1. On the **Environments** tab, select the environment you want to query in the left navigation panel.
+1. On the **Environments** tab, select the environment you want to query in the left side menu.
 
 1. Once an environment is selected:
    
@@ -229,11 +229,11 @@ The process of updating is therefore a two-step process:
 >[!NOTE]
 > As of 2024, development instances and some sandbox programs are already automatically updated so there is no need to manage updates for them manually. As a result of this transition, the option to Update environment manually for development instances might not be available to _some_ of your programs.
 
-The **Update** option is available from the **Environments** card for some development environments and environments in sandbox programs by clicking the ellipsis button of the environment.
+The **Update** option is available from the **Environments** card for some development environments and environments in sandbox programs by clicking https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg of the environment.
 
 ![Update option from Environments card](assets/environ-update2.png)
 
-This option is also available by clicking the **Environments** tab of the program and then selecting the ellipsis button of the environment.
+This option is also available by clicking the **Environments** tab of the program and then clicking https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg of the environment.
 
 ![Update option from Environments tab](assets/environ-update3.png)
 
@@ -253,11 +253,11 @@ The **Update** option's behavior varies depending on the configuration and curre
 
 A user with the **Deployment Manager** or **Business Owner** role is able to delete a development environment. 
 
-From the **Overview** screen of the program on the **Environments** card, click the ellipsis button of the development environment you want to delete.
+From the **Overview** screen of the program on the **Environments** card, click https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg of the development environment you want to delete.
 
 ![The delete option](assets/environ-delete.png)
 
-The delete option is also available from the **Environments** tab of the **Overview** window of the program. Click the ellipsis button of the environment and select **Delete**.
+The delete option is also available from the **Environments** tab of the **Overview** window of the program. Click https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg of the environment and select **Delete**.
 
 ![The delete option from the Environments tab](assets/environ-delete2.png)
 
