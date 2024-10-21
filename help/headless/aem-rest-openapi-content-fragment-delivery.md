@@ -7,9 +7,6 @@ role: Admin, Developer
 
 # AEM REST OpenAPI for Content Fragment Delivery{#aem-rest-openapi-for-content-fragment-delivery}
 
-<!-- CQDOC-21938 -->
-<!-- Needs a link to the API docs - once available -->
-
 >[!IMPORTANT]
 >
 >This API is available through the Early Adopter Program.
@@ -30,6 +27,8 @@ This API:
 * supplements the [Content Fragments and Content Fragment Models OpenAPIs](/help/headless/content-fragment-openapis.md), that allow you to manage the Content Fragments and Content Fragment Models (CRUD)
 
 * is a HTTP REST alternative to the [AEM GraphQL API for use with Content Fragments](/help/headless/graphql-api/content-fragments.md) 
+
+For full documentation see [AEM Sites API Schemas - Content Fragments Delivery API (2024.07-experimental)](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/). 
 
 >[!NOTE]
 >
