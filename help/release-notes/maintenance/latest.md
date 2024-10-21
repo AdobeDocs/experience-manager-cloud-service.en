@@ -12,7 +12,7 @@ The following section outlines the technical release notes for the current maint
 
 ## Release 18311 {#18311}
 
-Summarized below are the continuous improvements for maintenance release X, which was publicly released on October 22, 2024. The previous maintenance release was release 18175.
+Summarized below are the continuous improvements for maintenance release 18311, which was publicly released on October 22, 2024. The previous maintenance release was release 18175.
 
 The 2024.10.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
@@ -62,7 +62,7 @@ Deprecated and removed features and APIs in AEM as a Cloud Service are detailed 
 
 ### Security Fixes {#security-18311}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses X identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 3 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
 ### Embedded Technologies {#embedded-tech-18311}
 
