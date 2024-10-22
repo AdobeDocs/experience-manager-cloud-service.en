@@ -28,6 +28,7 @@ Adobe Experience Manager (AEM) as a Cloud Service offers multiple APIs for both 
   * This API is REST based.
   * Content Fragment Support in Assets HTTP API will be deprecated in the future as it is being succeeded by the Edge Delivery Services JSON REST API. The timescale has not been decided yet.
 
+<!--
 ## JSON vs HTML {#json-vs-HTML}
 
 The content delivery format used is driven by frontend implementation. Unstructured content/HTML for full-stack implementations, structured content/JSON for headless implementations, or a combination of both in hybrid implementations. 
@@ -40,6 +41,7 @@ Key considerations include:
 * Primary Purpose
   * JSON is often used for transferring structure content between the server and client app.
   * HTML is the standard markup language for creating and rendering web pages in a browser.
+-->
 
 ## REST vs GraphQL {#rest-vs-graphql}
 

@@ -16,7 +16,7 @@ role: Admin, Developer
 In Adobe Experience Manager (AEM) as a Cloud Service, the AEM REST OpenAPI for Content Fragment Delivery:
 
 * is a HTTP REST API on [AEM Edge Delivery Services](/help/edge/overview.md), designed to deliver structured content from Content Fragments in JSON format
-* uses the infrastructure of Edge Delivery Services, including CDN integration that allows active invalidation 
+* offers a modern CDN integration that allows active content invalidation 
 * focuses on content delivery (performance, scalability, CDN integration, optimized JSON control and output) 
 * includes the ability to hydrate JSON for referenced fragments and assets
 
@@ -33,12 +33,6 @@ For full documentation see [AEM Sites API Schemas - Content Fragments Delivery A
 >[!NOTE]
 >
 >See [AEM APIs for Structured Content Delivery and Management](/help/headless/apis-headless-and-content-fragments.md) for an overview of the various APIs available and comparison of some of the concepts involved.
-
-## Authentication {#authentication}
-
-Requests made on the author tier must be authenticated, similar to any other request to the [Content Fragment Management API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/). This means that an access token must be provided as part of the Authorization header of the HTTP request. 
-
-The concept is the same as for [AEM GraphQL authenticated queries](/help/headless/security/authentication.md).
 
 ## Caching {#caching}
 
