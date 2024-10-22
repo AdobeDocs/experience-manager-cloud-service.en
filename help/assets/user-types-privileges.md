@@ -9,6 +9,8 @@ role: User, Admin
 | [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
 | ------------- | --------------------------- |---------|----|-----|
 
+![Assets as a Cloud Service Ultimate package](/help/assets/assets/aem-assets-ultimate-banner.png)
+
 Assets as a Cloud Service offers an Ultimate package with advanced DAM capabilities. AEM Assets Ultimate is engineered to manage complex content supply chains, ensuring that every piece of content performs well across all channels. 
 
 ## Why Assets as a Cloud Service Ultimate Package? {#why-ultimate-package-existing-new-users}

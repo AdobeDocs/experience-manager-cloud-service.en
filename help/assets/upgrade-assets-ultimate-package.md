@@ -59,17 +59,17 @@ Click the instance name to view the `AEM Assets Limited Users` Content Hub produ
 >
 >If you have provisioned Content Hub before August 14, 2024, the Content Hub product profile has `contenthub` mentioned after `Limited Users` instead of `delivery`.
 
-## Enable Assets as a Cloud Service Ultimate package for existing users {#enable-assets-ultimate-package-existing-users}
+## Enable Assets as a Cloud Service Ultimate for existing users {#enable-assets-ultimate-existing-users}
 
-Existing Assets as a Cloud Service users can upgrade to Assets ultimate by executing two simple steps. You can navigate to the Assets as a Cloud Service program in Cloud Manager and see upgrade status on the Program card based on the availability of credits. If there are enough credits available for upgrade to Assets Ultimate, you can see the status as `Assets license upgrade available`, as depicted in the following image:
+Existing Assets as a Cloud Service users can upgrade to Assets ultimate by executing two simple steps. You can navigate to the Assets as a Cloud Service program in Cloud Manager and see upgrade status on the Program card based on the availability of credits. If there are enough credits available for upgrade to Assets Ultimate, you can see the status as `Assets license upgrade required`, as depicted in the following image:
 
 ![AEM Assets upgrade to Assets Ultimate](assets/aem-assets-upgrade-status-ultimate.png)
 
-In case of, the upgrade status can also display `Assets license upgrade required`.
+In case an existing user purchases a new license for Assets Ultimate, the upgrade status displays as `Assets license upgrade available`.
 
 ### Prerequisites for upgrade {#prerequisites-assets-upgrade}
 
-Latest AEM as a Cloud Service release version or a minimum of x release version. If you do not meet the minimum requirements, contact Adobe support to switch to the required AEM release version.
+All environments must be upgraded to latest AEM as a Cloud Service release version or a minimum of x release version. If you do not meet the minimum requirements, contact your Adobe representative to switch to the required AEM release version.
 
 ### Upgrade to Assets Ultimate {#upgrade-assets-ultimate}
 
@@ -95,9 +95,11 @@ Execute the following steps:
 
    ![AEM Assets select individual environments in Environments section](assets/aem-assets-select-individual-environments.png)
 
-   The status of the environment displays `Updating Product Profiles` while the new product profiles are being added and subsequently displays `Running` when the process id=s complete.
+   The status of the environment displays `Updating Product Profiles` while the new product profiles are being added and subsequently displays `Running` when the process is complete.
 
-1. Click **[!UICONTROL Upgrade]**. 
+   You must add product profiles to all environments available in the program, individually or all environments together, before executing the next step.
+
+1. Click **[!UICONTROL Upgrade]**. The **[!UICONTROL Upgrade]** option displays only when you execute the previous step. 
 
    ![Last step in the upgrade process](assets/aem-assets-upgrade-button.png)
 
@@ -105,30 +107,35 @@ Execute the following steps:
 
    ![Program status after upgrade](assets/program-status-post-upgrade.png)
 
+Your AEM as a Cloud Service instance on Admin Console now comprises the following product profiles:
 
-## Step 2: Onboard Assets as a Cloud Service administrator {#onboard-administrator}
+* AEM Administrators
 
-Content Hub administrators can access the [Configuration User Interface](/help/assets/configure-content-hub-ui-options.md) on Content Hub in addition to accessing brand-approved assets, uploading assets to Content Hub, Adobe Express integration to edit images (if you have Adobe Express entitlements). 
+* AEM Users
 
-To onboard the Content Hub administrator:
+* AEM Assets Collaborator Users
 
-1. [Access and click the Content Hub user product profile](#content-hub-instance-product-profile).
+* AEM Assets Power Users
 
-1. Click **[!UICONTROL Add users]** to add users or user groups to the product profile.
+![AEM Assets Product Profiles](assets/aem-assets-product-profiles.png)
 
-1. Click **[!UICONTROL Save]** to save the changes.
+If you need Content Hub enabled, click More options (...) icon on the program name in Cloud Manager and select **[!UICONTROL Edit Program]**. Expand **[!UICONTROL Assets Ultimate]** and click **[!UICONTROL Content Hub]**. This step enables the Content Hub for Assets Ultimate. There is a new instance created within AEM Assets as a Cloud Service on Admin Console with `delivery` as the suffix:
 
-1. After adding the user to the Content Hub product profile, access Experience Manager Assets product profiles by clicking the AEM as a Cloud Service product name in the list of products on Admin Console.
+![New instance for Content Hub](assets/new-instance-content-hub.png)
 
-1. Click the production author instance for AEM as a Cloud Service:
-   ![Product profiles for AEM as a Cloud Service](assets/aem-cloud-service-instances.png)
+>[!NOTE]
+>
+>If you have provisioned Content Hub before August 14, 2024, the new instance is created with `contenthub` as the suffix.
 
-   Admin Console displays two product profiles for AEM as a Cloud Service: Administrators and Users.
-1. Click the Administrators product profile and click **[!UICONTROL Add users]** to add the user to the product profile.
-   ![Administrator product profile](assets/aem-cs-admin-product-profile.png)
+Note that there is no `author` or `publish` in the instance name for Content Hub.
 
-1. Click **[!UICONTROL Save]** to save the changes.
+Click the instance name to view the `AEM Assets Limited Users` Content Hub product profile.
 
+![Content Hub product profile](assets/content-hub-product-profile.png)
+
+>[!NOTE]
+>
+>If you have provisioned Content Hub before August 14, 2024, the Content Hub product profile has `contenthub` mentioned after `Limited Users` instead of `delivery`.
 
 ## Step 4: Onboard AEM Assets Collaborator users {#onboard-collaborator-users}
 
@@ -146,6 +153,12 @@ To onboard Collaborator users:
 
 1. Click **[!UICONTROL Save]** to save the changes.
 
+You can also access and view the services assigned to Collaborator users, as depicted in the following image:
+
+![Services for Collaborator users](assets/aem-assets-collaborator-users.png)
+
+`Adobe Express` and `AEM Assets Collaborator Users` services are enabled by default. You can turn the toggle off and on, as per your requirements.
+
 ## Step 4: Onboard AEM Assets Power users {#onboard-power-users}
 
 AEM Assets Power users can access all AEM Assets capabilities including managing assets, permissions, metadata and the overall governance and automation around digital assets, work with assets from Experience manager via integrations of Assets available to your organization in other Adobe and non-Adobe applications, create and edit assets using built-in Adobe Express and Firefly leveraging professionally designed templates, brand kits, Adobe Stock assets, and so on, and access and leverage approved assets from your organization using AEM Assets Content Hub portal.
@@ -161,3 +174,9 @@ To onboard Power users:
    ![User product profile](assets/aem-cs-user-product-profile.png)
 
 1. Click **[!UICONTROL Save]** to save the changes.
+
+You can also access and view the services assigned to Power users, as depicted in the following image:
+
+![Services for Power users](assets/aem-assets-power-users.png)
+
+`Adobe Express` and `AEM Assets Power Users` services are enabled by default. You can turn the toggle off and on, as per your requirements.
