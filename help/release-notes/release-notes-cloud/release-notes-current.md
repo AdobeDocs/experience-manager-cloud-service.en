@@ -30,7 +30,7 @@ You can find the latest maintenance release notes [here](/help/release-notes/mai
 
 ## Release Video {#release-video}
 
-Have a look at the September 2024 Release Overview video for a summary of the features added in the 2024.9.0 release:
+Have a look at the October 2024 Release Overview video for a summary of the features added in the 2024.10.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3434847?quality=12)
 
