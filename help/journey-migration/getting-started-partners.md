@@ -27,7 +27,7 @@ This one-pager outlines the recommended phased approach to transition customers 
 
 See the diagram below for a general representation of the migration journey.
 
-![image](/help/journey-migration/assets/migration-process.png)
+![General representation of the migration journey](/help/journey-migration/assets/migration-process.png)
 
 ## Getting Started with Adobe Experience Manager as a Cloud Service {#getting-started}
 
@@ -112,7 +112,7 @@ For a successful and smooth transition, you should ensure proper planning and ad
 
 The figure below shows a high-level representation of the recommended transition journey to Cloud Service.
 
-![image](/help/journey-migration/assets/home-img1.png)
+![High-level representation of the recommended transition journey to Cloud Service](/help/journey-migration/assets/home-img1.png)
 
 <br>
 
