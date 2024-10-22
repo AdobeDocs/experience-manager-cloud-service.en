@@ -426,6 +426,11 @@ if (proxyServer !== '') {
 }
 ```
 
+>[!NOTE]
+>
+> An example implementation can be found in the Playwright Sample Test Module's on [GitHub](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-playwright/).
+
+
 ## Running UI Tests Locally {#run-ui-tests-locally}
 
 Before activating UI tests in a Cloud Manager pipeline, it's recommended to run the UI tests locally against the [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) or against an actual AEM as a Cloud Service instance.
@@ -488,7 +493,36 @@ Before activating UI tests in a Cloud Manager pipeline, it's recommended to run 
 >* The log files are stored in the `target/reports` folder of your repository
 >* You need to ensure that your machine is running the latest Chrome version as the test downloads the latest release of ChromeDriver automatically for testing.
 >
->For details, see [AEM Project Archetype repository](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md).
+>For details, see [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio).
+
+### Playwright Test Sample {#javascript-sample}
+
+1. Open a shell and navigate to the `ui.tests` folder in your repository
+
+1. Execute the below command to build docker image using Maven
+
+   ```shell
+   mvn clean package -Pui-tests-docker-build
+   ```
+
+1. Execute the below command to start the tests using Maven
+
+   ```shell
+   mvn verify -Pui-tests-docker-execution \
+    -DAEM_AUTHOR_URL=https://author-<program-id>-<environment-id>.adobeaemcloud.com \
+    -DAEM_AUTHOR_USERNAME=<user> \
+    -DAEM_AUTHOR_PASSWORD=<password> \
+    -DAEM_PUBLISH_URL=https://publish-<program-id>-<environment-id>.adobeaemcloud.com \
+    -DAEM_PUBLISH_USERNAME=<user> \
+    -DAEM_PUBLISH_PASSWORD=<password>
+   ```
+
+>[!NOTE]
+>
+>The log files are stored in the `target/` folder of your repository.
+>
+>For details, see [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright).
+
 
 ### Java Selenium WebDriver Test Sample {#java-sample}
 
