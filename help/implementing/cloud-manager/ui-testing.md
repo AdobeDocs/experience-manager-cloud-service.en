@@ -426,7 +426,7 @@ if (proxyServer !== '') {
 
 >[!NOTE]
 >
-> An example implementation can be found in the Playwright Sample Test Module's on [GitHub](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-playwright/).
+> An example implementation can be found in the Playwright Sample Test Module on [GitHub](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-playwright/).
 
 
 ## Running UI Tests Locally {#run-ui-tests-locally}
