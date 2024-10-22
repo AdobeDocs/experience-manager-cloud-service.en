@@ -38,17 +38,15 @@ Unlike custom functional tests, which are HTTP tests written in Java, UI tests c
 
 This section describes the steps required to set up UI tests for execution in Cloud Manager.
 
-1. Decide on the programming language that you want to use.
+1. Decide on the test framework that you want to use.
 
-    * For Cypress, use the sample code from the [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress).
+    * For Cypress (default), use the sample code from the [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress) or use the sample code that is automatically generated in the `ui.tests` folder of your Cloud Manager repository.
+ 
+    * For Playwright, use the sample code from the [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright).
 
-    * For JavaScript and WDIO, use the sample code that is automatically generated in the `ui.tests` folder of your Cloud Manager repository.
-      
-      >[!NOTE]
-      >
-      >If your repository was created before Cloud Manager automatically created `ui.tests` folders, you may also generate the latest version using the [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests).
-
-    * For Java and WebDriver, use the sample code from the [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
+    * For Webdriver.IO, use the sample code from the [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio).
+   
+    * For Selenium Webdriver, use the sample code from the [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
 
     * For other programming languages, see the section [Building UI Tests](#building-ui-tests) in this document to set up the test project.
 
