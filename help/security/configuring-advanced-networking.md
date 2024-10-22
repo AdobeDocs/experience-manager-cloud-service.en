@@ -838,4 +838,4 @@ Yes, the limit applies to connections using Advanced Networking, including VPNs.
 
 ##### If we use a Dedicated Egress IP, will this limit still be applicable?
 
-Yes, the limit is still applicable if using a dedicated egress IP.
+Yes, the limit is still applicable if using a dedicated egress IP. 
