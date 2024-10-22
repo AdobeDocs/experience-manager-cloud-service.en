@@ -493,7 +493,7 @@ Before activating UI tests in a Cloud Manager pipeline, it's recommended to run 
 >
 >For details, see [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio).
 
-### Playwright Test Sample {#javascript-sample}
+### Playwright Test Sample {#playwright-sample}
 
 1. Open a shell and navigate to the `ui.tests` folder in your repository
 
