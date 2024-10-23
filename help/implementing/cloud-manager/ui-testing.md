@@ -356,7 +356,7 @@ An example implementation can be found in the Cypress Sample Test Module's Entry
 
 Similar to Cypress, tests need to use the HTTP proxy if a non-empty `PROXY_HOST` environment variable is provided.
 
-To do this, the follwoing modifications need to be made.
+To do this, the following modifications need to be made.
 
 #### Dockerfile
 
