@@ -88,51 +88,80 @@ After you have added an RDE for your program using Cloud Manager, you can intera
    aio plugins:update
    ```
 
-1. Configure the RDE plugin to use your organization, program and environment. The setup command below will interactively provide the user with a list of programs in their organization, and show RDE environments in that program to choose from.
+1. Login using the aio client. 
+
    ```
    aio login
+   ```
+
+   The login information (token) is stored in the global aio configuration and therefore supports one login and organization only. In case you want to use multiple RDEs that need different logins or organizations, follow below example introducing contexts. 
+   
+   <details><summary>Follow this example to setup a local context for one of your RDE logins</summary>
+   To store the login information locally in a .aio file in the current directory within a specific context, follow these steps. A context is also a clever way to setup a CI/CD environment or script.  To make use of this feature, ensure to use at least aio-cli version 10.3.1. Update it using `npm install -g @adobe/aio-cli`
+
+   Let's create a context called 'mycontext' that we then set as the default context using the auth plugin before calling the login command.
+
+   ```
+   aio config set --json -l "ims.contexts.mycontext" "{ cli.bare-output: false }"
+   aio auth ctx -s mycontext
+   aio login --no-open
+   ```
+
+   >[!NOTE]
+   > The login command with the `--no-open` option will output a URL in the terminal instead of opening your default browser. Like that you can copy and open it with an **incognito** window of your browser. This way, your currently logged in session in the normal browser window will remain untouched, and you can ensure to use the specific login and organization necessary for your context.
+
+   The first command creates a new login context configuration, called `mycontext`, in your local `.aio` configuration file (the file is created if needed. The second command sets the context `mycontext` to be the "current" context, i.e. the default.
+
+   With this configuration in place, the login command automatically stores the login tokens in the context `mycontext`, and thus keeps it local.
+
+   Multiple contexts can be managed either by keeping local configurations in multiple folders. Alternatively, it is also possible to set up multiple context within a single configuration file, and switch between them by changing the "current" context.
+   </details>
+ 
+1. Configure the RDE plugin to use your organization, program and environment. The setup command below will interactively provide the user with a list of programs in their organization, and show RDE environments in that program to choose from.
+
+   ```
    aio aem:rde:setup
    ```
-   
+
    The setup step may be skipped if the intent is to use a scripted environment, in which case the organization, program and environment values can be included in each command. [See rde commands below for more information](#rde-cli-commands).
-   
+
 ### The Interactive Setup {#installing-the-rde-command-line-tools-interactive}
 
-  The setup command will ask if the provided configuration should be stored locally or globally.
-   
-   ```
-   Setup the CLI configuration necessary to use the RDE commands.
-   ? Do you want to store the information you enter in this setup procedure locally? (y/N)
-   ```
-   
-   Choose `no` to 
-   * store the organization, program and environment globally in your aio configuration.
-   * work with a single RDE only.
-   
-   Choose `yes` to
-   * store the organization, program and environment locally in the current directory, in a `.aio` file. This is convenient if you want to commit the file to version control so others cloning the git repository can use it.
-   * work with many RDEs, so that switching to another directory will use that configuration instead.
-   * use the configuration in a programmatic context like a script, which can reference it.
+The setup command will ask if the provided configuration should be stored locally or globally.
+
+```
+Setup the CLI configuration necessary to use the RDE commands.
+? Do you want to store the information you enter in this setup procedure locally? (y/N)
+```
+
+Choose `no` to 
+* store the organization, program and environment globally in your aio configuration.
+* work with a single RDE only.
+
+Choose `yes` to
+* store the organization, program and environment locally in the current directory, in a `.aio` file. This is convenient if you want to commit the file to version control so others cloning the git repository can use it.
+* work with many RDEs, so that switching to another directory will use that configuration instead.
+* use the configuration in a programmatic context like a script, which can reference it.
 
 
-   Once local or global configuration is selected, the setup command will try to read your organization id from your current login and then read the organization's programs. In case the organization cannot be found, you can enter it manually along with some guidance.
-   
-  ```
-   Selected only organization: XYXYXYXYXYXYXYXXYY
-   retrieving programs of your organization ...
-   ```
-   
-   Once the programs are retrieved, the user can select from the list and also type to filter.
-   When the program was selected, a list of RDE environments is listed to choose from.
-   In case there is only one program and/or RDE environment available, it is selected automatically.
-   
-   To see the current environment context, execute:
-   
-   ```aio aem rde setup --show```
-   
-   The command will respond with a result similar to:
-   
-   ```Current configuration: cm-p1-e1: programName - environmentName (organization: ...@AdobeOrg)```
+Once local or global configuration is selected, the setup command will try to read your organization id from your current login and then read the organization's programs. In case the organization cannot be found, you can enter it manually along with some guidance.
+
+```
+Selected only organization: XYXYXYXYXYXYXYXXYY
+retrieving programs of your organization ...
+```
+
+Once the programs are retrieved, the user can select from the list and also type to filter.
+When the program was selected, a list of RDE environments is listed to choose from.
+In case there is only one program and/or RDE environment available, it is selected automatically.
+
+To see the current environment context, execute:
+
+```aio aem rde setup --show```
+
+The command will respond with a result similar to:
+
+```Current configuration: cm-p1-e1: programName - environmentName (organization: ...@AdobeOrg)```
 
 ### Manual setup procedure in a non-interactive environment {#manual-setup}
 
@@ -171,8 +200,8 @@ Adobe recommends the following workflow for developing a new feature:
 
 * When an intermediate milestone is reached and successfully validated locally with the AEM as a Cloud Service SDK, commit the code to a git feature branch. The branch should not be part of the main line yet, although committing to git is optional. What constitutes an "intermediate milestone" varies based on team habits. Examples include a few new lines of code, half a day of work, or completing a subfeature.
 
-* Reset the RDE if it has been used by another feature and you want to [reset it to a default state](#reset-rde). <!-- Alexandru: hiding for now, do not delete This can be done by way of [Cloud Manager](#reset-the-rde-cloud-manager) or by way of the [command line](#reset-the-rde-command-line). -->Reset takes a few minutes and all existing content and code is deleted. You can use the RDE status command to confirm the RDE is ready. The RDE comes back up with the most recent AEM release version.  
-  
+* Reset the RDE if it has been used by another feature and you want to [reset it to a default state](#reset-rde). <!-- Alexandru: hiding for now, do not delete This can be done by way of [Cloud Manager](#reset-the-rde-cloud-manager) or by way of the [command line](#reset-the-rde-command-line). -->Reset takes a few minutes and all existing content and code is deleted. You can use the RDE status command to confirm the RDE is ready. The RDE comes back up with the most recent AEM release version.
+
   >[!IMPORTANT]
   >
   > If your staging and production environments are not receiving automatic AEM release updates and are behind the most recent AEM release version, the code running on the RDE may not match how the code functions on staging and production. In that case, it is especially important to perform thorough testing of the code on staging before deploying it to production.
@@ -213,26 +242,25 @@ However, with careful coordination, it is possible for more than one developer t
 * For detailed help for a command, type:
 
   `aio aem rde <command> --help`
-  
-  
+
 ### Global flags {#global-flags}
 
 * For a less verbose output, use the quiet flag:
 
   `aio aem rde <command> --quiet`
-  
+
   This removes certain elements such as spinners and progress bars, and limits the need for user input.
-  
+
 * For JSON instead of console log output, use the json flag:
-  
+
   `aio aem rde <command> --json`
-  
+
   This returns valid JSON while suppressing any console output. See JSON examples further below.
-  
+
 * To avoid configuring the RDE connection information using the setup command, or any aio config creation, use the three flags for organization, program and environment:
-  
+
   `aio aem rde <command> --organizationId=<value> --programId=<value> --environmentId=<value>`
-  
+
   This still requires an ```aio login``` to be performed.
 
 ### Deploying to RDE {#deploying-to-rde}
@@ -472,6 +500,7 @@ The following example illustrates how to tail the author tier, with one package 
 >[!TIP]
 >
 >If you see the error `RDECLI:UNEXPECTED_API_ERROR` when playing with the logs commands for the author service, please reset your environment and try again. This error will be thrown if your latest reset operation was before end of May 2024.
+>
 >```
 >aio aem:rde:reset
 >```
@@ -564,6 +593,7 @@ Most commands support the global ```--json``` flag which suppresses console outp
 #### A clean RDE {#clean-rde}
 
 ```$ aio aem rde status --json```
+
 ```json
 {
   "programId": "myProgram",
@@ -583,6 +613,7 @@ Most commands support the global ```--json``` flag which suppresses console outp
 #### An RDE with some installed bundles {#rde-installed-bundles}
 
 ```$ aio aem rde status --json```
+
 ```json
 {
   "programId": "myProgram",
@@ -646,14 +677,16 @@ Most commands support the global ```--json``` flag which suppresses console outp
   }
 }
 ```
+
 </details>
 
 ### Install {#install}
 
 <details>
   <summary>Expand to see Install examples</summary>
-  
+
 ```$ aio aem rde install ~/Downloads/hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip --json```
+
 ```json
 {
   "programId": "myProgram",
@@ -685,6 +718,7 @@ Most commands support the global ```--json``` flag which suppresses console outp
   ]
 }
 ```
+
 </details>
 
 ### Delete {#delete}
@@ -693,6 +727,7 @@ Most commands support the global ```--json``` flag which suppresses console outp
   <summary>Expand to see Delete examples</summary>
 
 ```$ aio aem rde delete com.adobe.granite.hotdev.demo-1.0.0.SNAPSHOT --json```
+
 ```json
 {
   "programId": "myProgram",
@@ -774,6 +809,7 @@ Most commands support the global ```--json``` flag which suppresses console outp
   <summary>Expand to see History examples</summary>
 
 ```$ aio aem rde history --json```
+
 ```json
 {
   "programId": "myProgram",
@@ -861,6 +897,7 @@ Most commands support the global ```--json``` flag which suppresses console outp
   ]
 }
 ```
+
 </details>
 
 ### Reset {#reset}
@@ -871,6 +908,7 @@ Most commands support the global ```--json``` flag which suppresses console outp
 #### Fire and Forget, No-wait {#fire-no-wait}
 
 ```$ aio aem rde reset --no-wait --json```
+
 ```json
 {
   "programId": "myProgram",
@@ -882,6 +920,7 @@ Most commands support the global ```--json``` flag which suppresses console outp
 #### Wait for Completion {#wait}
 
 ```$ aio aem rde reset --json```
+
 ```json
 {
   "programId": "myProgram",
@@ -889,6 +928,7 @@ Most commands support the global ```--json``` flag which suppresses console outp
   "status": "reset"
 }
 ```
+
 </details>
 
 ### Restart {#restart}
@@ -897,6 +937,7 @@ Most commands support the global ```--json``` flag which suppresses console outp
   <summary>Expand to see Restart examples</summary>
 
 ```$ aio aem rde restart --json```
+
 ```json
 {
   "programId": "myProgram",
@@ -1006,6 +1047,20 @@ Alternatively, you can confirm that you have this developer role if you can log 
 
 Verify that the login was completed successfully by running
 
-   `aio cloudmanager:list-programs`
+`aio cloudmanager:list-programs`
 
-   This should list all programs under your configured organization and confirm that you have the correct role assigned.
+This should list all programs under your configured organization and confirm that you have the correct role assigned.
+
+### Using deprecated context 'aio-cli-plugin-cloudmanager' {#aio-rde-plugin-troubleshooting-deprecatedcontext}
+
+Due to the history of the 'aio-cli-plugin-aem-rde', the context name 'aio-cli-plugin-cloudmanager' was used for some time. The rde plugin now uses the IMS way of dealing with context information, which means there's options to store context information globally or locally, as well as defaulting all aio calls to a configured default if wished to do so. The default context configured is stored locally and enables the developers to track and use individual contexts and their information inside a folder. For further details, read [the example to setup a local context](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) above.
+
+Developers who use both plugins, the aio-cli-plugin-cloudmanager and the aio-cli-plugin-aem-rde and would like to keep all information in the same context have to options right now:
+
+#### Keep using context 'aio-cli-plugin-cloudmanager'
+
+The context can still be used, a deprecation warning will be shown in the RDE plugin. This warning can be omited by using the ```--quiet``` mode. More recent versions of the RDE plugin will not offer the fallback to read the context 'aio-cli-plugin-cloudmanager' any longer. To still make use of it, simply configure the default context to 'aio-cli-plugin-cloudmanager', see [the example to setup a local context](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) above.
+
+#### Use any other context name also for the cloud manager plugin
+
+The cloud manager plugins offers a parameter to define a context to be used. It does not support the IMS default context configuration just yet. To do so, configure the RDE plugin using [the example to setup a local context](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) and tell the cloud manager plugin to use 'myContext' like ```--imsContextName=myContext``` in every call to it.
