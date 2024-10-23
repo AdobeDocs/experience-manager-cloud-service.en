@@ -126,22 +126,6 @@ To set asset status:
 
 1. In the **[!UICONTROL Basic]** tab, select the asset status from the **[!UICONTROL Status]** drop-down list. The possible values include Approved, Rejected, and No Status (default).
 
-   If you select the status as `Approved`, and if [Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md) and [Content Hub](/help/assets/product-overview.md) are enabled for your Experience Manager Assets, you can view `Delivery` and `Content Hub` options available in the **[!UICONTROL Approval Target]** field. When approval target is not explicitly selected, **[!UICONTROL Delivery]** is selected by default to make the assets available to both Dynamic Media with OpenAPI capabilities and Content Hub. If you do not have Content Hub enabled, the assets are made available to Dynamic Media with OpenAPI capabilities only.
-   
-   Select **[!UICONTROL Content Hub]** to make the assets only available to Content Hub. This option is available in the dropdown list only if Content Hub is enabled on Experience Manager Assets.
-
-     ![Approval status](/help/assets/assets/approval-status-delivery.png)
-
-     >[!NOTE]
-     >
-     > If you do not have Dynamic Media with OpenAPI capabilities and Content Hub enabled for Experience Manager Assets, the **[!UICONTROL Approval Target]** field is not displayed.
-
-   If you are not using the default metadata form and cannot view the **[!UICONTROL Approval Target]** field, [edit your metadata form](/help/assets/metadata-assets-view.md#metadata-forms) to drag the **[!UICONTROL Approval for]** field from the available components to your metadata form and click **[!UICONTROL Save]**.
-
-   >[!NOTE]
-   >
-   >If you select the approval target as `Content Hub` using the Assets view, the assets are made available in Content Hub to the users that are part of the same organization. 
-
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 
 
