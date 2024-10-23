@@ -163,7 +163,7 @@ After you have accustomed yourself with the changes introduced with AEM as a Clo
 
 The following figure showcases key steps involved during the review phase:
 
-![image](/help/journey-migration/assets/planning-phaseimg1.png)
+![Key steps involved during the review phase](/help/journey-migration/assets/planning-phaseimg1.png)
 
 Next, you explore what each of these steps means in detail.
 
