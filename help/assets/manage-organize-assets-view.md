@@ -145,6 +145,37 @@ To set asset status:
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 
 
+
+### Set approval target {#set-approval-target}
+
+Assets view enables you to publish approved assets to Dynamic Media with OpenAPI capabilities, Content Hub, or both based on the value that you set in the **Approval Target** field available on the Asset Details page.
+
+To set approval target:
+
+1. Select the asset, and click **[!UICONTROL Details]** in the toolbar.
+
+1. In the **[!UICONTROL Basic]** tab, select the asset status from the **[!UICONTROL Status]** drop-down list. The possible values include Approved, Rejected, and No Status (default).
+
+1. If you select **Approved** in step 2, select an approval target. The possible values include Delivery and Content Hub. **Delivery** is the default option selected in the drop-down menu and it publishes the asset to both [Dynamic Media with OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) and [Content Hub](/help/assets/product-overview.md), if both are enabled for Experience Manager Assets. Selecting **Content Hub** publishes the asset just to Content Hub. Content Hub displays as an option only if it is enabled for Experience Manager Assets.
+
+   >[!NOTE]
+   >
+   >Setting an approval target is a limited availability feature. You can get it enabled or disabled by creating a support ticket.
+
+   ![Approval status](/help/assets/assets/approval-status-delivery.png)
+
+1. Specify other asset properties and click **[!UICONTROL Save]**.
+
+In addition to the default behavior defined in step 3, some additional points to note include:
+
+* When both Dynamic Media with OpenAPI and Content Hub are not enabled, the **[!UICONTROL Approval Target]** field is not displayed.
+
+* When you select Delivery and Content Hub is not enabled, the assets are made available to Dynamic Media with OpenAPI capabilities.
+
+* When you are not using the default metadata form and cannot view the **[!UICONTROL Approval Target]** field, [edit your metadata form](/help/assets/metadata-assets-view.md#metadata-forms) to drag the **[!UICONTROL Approval for]** field from the available components to your metadata form and click **[!UICONTROL Save]**.
+
+* When you select the approval target as `Content Hub` using the Assets view, the assets are made available in Content Hub to the users that are part of the same organization. 
+
 ### Set asset expiration date {#set-asset-expiration-date}
 
 Assets view also lets you set expiration date on assets available in the repository. You can then [filter the search results](search-assets-view.md#refine-search-results) based on an `Expired` asset status. In addition, you can specify an expiration date range for assets to further filter your search results.
