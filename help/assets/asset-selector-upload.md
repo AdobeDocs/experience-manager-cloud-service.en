@@ -6,6 +6,9 @@ exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
 ---
 # Upload files and folders to Asset Selector {#upload-files-folders}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 You can upload files or folders to Asset Selector from your local file system. To upload files using the local file system, you generally need to use an upload feature provided by an Asset Selector micro front-end application.
 
 ## Upload assets from local file system {#basic-upload}

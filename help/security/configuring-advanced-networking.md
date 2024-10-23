@@ -210,7 +210,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 A dedicated IP address can enhance security when integrating with SaaS vendors (like a CRM vendor) or other integrations outside of AEM as a Cloud Service that offer an allowlist of IP addresses. By adding the dedicated IP address to the allowlist, it ensures that only traffic from the AEM Cloud Service is permitted to flow into the external service. This is in addition to traffic from any other IPs allowed.
 
-The same dedicated IP is applied to all programs in your Adobe Organization and for all environments in each of your programs. It applies to both Author and Publish services.
+The same dedicated IP is applied to all environments in a program, and applies to both Author and Publish services.
 
 Without the dedicated IP address feature enabled, traffic coming out of AEM as a Cloud Service flows through a set of IPs shared with other customers of AEM as a Cloud Service.
 
@@ -293,7 +293,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 <tbody>
   <tr>
     <td><b>Http or https protocol</b></td>
-    <td>Traffic to Azure or Adobe services</td>
+    <td>Traffic to Azure (*.windows.net) or Adobe services</td>
     <td>Any</td>
     <td>Through the shared cluster IPs (not the dedicated IP)</td>
     <td>adobe.io<br>api.windows.net</td>
@@ -557,9 +557,7 @@ The table below describes traffic routing.
 
 ### Useful Domains for Configuration {#vpn-useful-domains-for-configuration}
 
-The diagram below provides a visual representation of a set of domains and associated IPs that are useful for configuration and development. The table further below the diagram describes those domains and IPs.
-
-![VPN Domain Configuration](/help/security/assets/AdvancedNetworking.jpg)
+The table below describes a set of domains and IPs that are useful for configuration and development.
 
 <table>
 <thead>
@@ -579,11 +577,6 @@ The diagram below provides a visual representation of a set of domains and assoc
     <td><code>p{PROGRAM_ID}.{REGION}-gateway.external.adobeaemcloud.com</code></td>
     <td>N/A</td>
     <td>The IP of the VPN gateway on the AEM side. Your network engineering team can use this to allow only VPN connections to your VPN gateway from a specific IP address. </td>
-  </tr>
-  <tr>
-    <td><code>p{PROGRAM_ID}.{REGION}.inner.adobeaemcloud.net</code></td>
-    <td>The IP of traffic coming from the AEM side of the VPN to your side. This can be allowlisted in your configuration to ensure that the connections are only made from AEM.</td>
-    <td>If you want to allow VPN access to AEM, you should configure CNAME DNS entries to map your custom domain and/or <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> and/or <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> to this.</td>
   </tr>
 </tbody>
 </table>
@@ -845,4 +838,4 @@ Yes, the limit applies to connections using Advanced Networking, including VPNs.
 
 ##### If we use a Dedicated Egress IP, will this limit still be applicable?
 
-Yes, the limit is still applicable if using a dedicated egress IP.
+Yes, the limit is still applicable if using a dedicated egress IP. 

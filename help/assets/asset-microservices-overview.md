@@ -8,6 +8,9 @@ exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
 ---
 # Overview of asset ingestion and processing with asset microservices {#asset-microservices-overview}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 Adobe Experience Manager as a [!DNL Cloud Service] provides a cloud-native method to use Experience Manager applications and capabilities. One of the key elements of this new architecture is asset ingestion and processing, powered by asset microservices. Asset microservices provide a scalable and resilient processing of assets using cloud services. Adobe manages the cloud services for optimal handling of different asset types and processing options. The key benefits of cloud-native asset microservices are:
 
 * Scalable architecture that allows for seamless processing for resource-intensive operations.

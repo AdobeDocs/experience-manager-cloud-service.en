@@ -8,6 +8,9 @@ feature: Asset Management, Publishing, Collaboration, Asset Processing
 ---
 # Files formats support in [!DNL Assets view] {#file-format-support}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 [!DNL Assets view] supports a wide range of file formats and each functionality has varied support for different file types.
 
 * ![image file type icon](assets/image-icon.svg) Images: JPG, PNG, GIF, TIFF, and others
