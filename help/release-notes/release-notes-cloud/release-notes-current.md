@@ -109,17 +109,10 @@ The Generative AI capabilities on offer are:
 
 ## CIF Add-on {#cloud-services-cif}
 
-### Improvements {#improvements-fixes-cif}
-
-* Make category limit customisable.
-
 ### Bug fixes {#bug-fixes-cif}
 
-* Commerce fields are not properly integrated with the Assets Metadata Schema editor.
-* Issue with Carousel Products Multifield for Drag & Drop.
-* Issue with Carousel Category Multifield for Drag & Drop.
-* On-click doesn't working for the menus in the Page information on category & product editor page.
-* Order Number is not visible in Order Confirmation Page.
+* Fixed UI tests to work properly with Core CIF components.
+* Resolved issue with category URL format not functioning as expected in the cloud instance.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
