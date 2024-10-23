@@ -85,7 +85,7 @@ See [Java Functional Tests](/help/implementing/cloud-manager/java-functional-tes
 
 To maximize risk control for your customer-specific development, Adobe encourages you to capture critical UI tests into AEM as a Cloud Service. Keep them limited but focused on maximizing their impact on the customer experience.
 
-The tests are packaged in a Docker image - designed to be as volatile as possible (with support for Cypress, Selenium, Java, and JavaScript). They follow the same characteristics and purposes like the custom functional tests.
+The tests are packaged in a Docker image - designed to be as volatile as possible (with support for Cypress, Playwright, Selenium, Java, and JavaScript). They follow the same characteristics and purposes like the custom functional tests.
 
 >[!NOTE]
 >
