@@ -25,7 +25,7 @@ All these rules, declared in a configuration file in source control, are deploye
 
 Functionally, the various features mentioned previously are evaluated in the following sequence:
 
-![image](/help/implementing/dispatcher/assets/order.png)
+![Order of evaluation](/help/implementing/dispatcher/assets/order.png)
 
 ## Setup {#initial-setup}
 
