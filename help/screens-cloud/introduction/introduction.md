@@ -25,4 +25,4 @@ Screens as a Cloud Service has two main components, namely:
 
 As an AEM Screens as a Cloud Service user, you can add and manage content in channels. You can register, and manage displays and players from the interfaces designed specifically for Screens as a Cloud Service, namely, **Screens Services Provider** and **Screens Content Provider**.
 
-![image](/help/screens-cloud/assets/architecture-screenscloud.png)
+![Architectural Overview](/help/screens-cloud/assets/architecture-screenscloud.png)
