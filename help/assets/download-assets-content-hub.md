@@ -32,7 +32,7 @@ Alternatively, click ![download](/help/assets/assets/download-icon.svg) in the a
 #### Single asset download from Asset dialog box {#single-download-from-asset-dialog-box}
 
 1. Click the asset thumbnail. The asset dialog box displays.
-1. Click ![download](/help/assets/assets/download-icon.svg) from the rightmost toolbar. The download pane displays the original asset rendition and the licensing terms and conditions acceptance checkbox.
+1. Click ![download](/help/assets/assets/download-icon.svg) from the rightmost toolbar. The download pane displays the asset renditions and the licensing terms and conditions acceptance checkbox.
 ![single-download-dialog-box](/help/assets/assets/asset-dialog-box-for-single-download.png)
    * Click the terms and conditions link to see the licensing terms in the left pane.
 
@@ -40,33 +40,25 @@ Alternatively, click ![download](/help/assets/assets/download-icon.svg) in the a
         >
         >The terms and conditions checkbox displays only for licensed assets. Additionally, the asset dialog box displays a preview of the licensing terms and conditions only for assets with approved licenses. [Approve the asset's license](/help/assets/approve-assets-content-hub.md) before downloading to enable the preview of licensing terms in the asset dialog box.
 
-   * Click the Original Rendition Box to return to the original asset rendition in the left pane.
+   * Click the **Original Rendition Box** to return to the original asset rendition in the left pane.
 1. Accept the licensing terms and conditions (for licensed asset) and click **Download** to download the asset.
-    
-
-
 
 ### Multi Download {#multi-download} 
 
-1. Select the assets and click ![download](/help/assets/assets/download-icon.svg) from the top rail. The dialog box that displays depends on whether the download list includes expired assets or only non-expired assets.
-
-#### Download expired assets dialog box{#download-dialog-box-expired-assets} 
-
-* This dialog box displays the expired assets' preview along with their expiry date on the left pane and the expired assets' count out of total selected on the right pane. Click **Proceed with all assets** to download expired assets with other assets (if present). The Download assets dialog box displays. See [Download assets dialog box](#download-asset-dialog-box) to proceed further.
+1. Select the assets and click ![download](/help/assets/assets/download-icon.svg) from the top rail. The dialog box that displays depends on whether the download list includes expired assets or only non-expired assets. <br/>
+**Download expired assets dialog box:** This dialog box displays the expired assets' preview along with their expiry date on the left pane and the expired assets' count out of total selected on the right pane. Click **Proceed with all assets** to download expired assets with other assets (if present). The Download assets dialog box displays. See [Download assets dialog box](#Download-asset-dialog-box) to proceed further.
     
     >[!NOTE]
     >
-    >Expired assets with downloading disabled can't be downloaded. [Enable download for expired assets](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub) to download them.
+    >[Enable the download option for expired assets](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub) to download them. Only expired assets that have enabled downloading are available for download.
 
-#### Download assets dialog box {#download-asset-dialog-box}
- 
-* This dialog box displays the list of licenses associated with the selected assets in the left pane. Select a license to preview its terms and conditions (in pdf format) in the middle pane and the associated assets' preview and their count in the right pane. Reviewed licenses are highlighted in light blue.
+   <a id="Download-asset-dialog-box"></a> **Download assets dialog box:** This dialog box displays the list of licenses associated with the selected assets in the left pane. Select a license to preview its terms and conditions (in pdf format) in the middle pane and the associated assets' preview and their count in the right pane. Reviewed licenses are highlighted in light blue.
 
     >[!NOTE]
     >
-    >Unapproved licenses don't preview the licencing terms in the **Download asset dialog box**. [Approve asset's license](/help/assets/approve-assets-content-hub.md#approve-assets-for-content-hub) before downloading to preview the licensing terms.
+    > The **Download Asset dialog box** previews licensing terms and conditions only for approved licenses. [Approve the assets' licenses](/help/assets/approve-assets-content-hub.md) before downloading them to preview their licensing terms in the **Download Asset dialog box**.
 
-* Click  ![remove-icon](/help/assets/assets/remove-icon.svg) to remove a license from the download dialog box. 
+1. Click  ![remove-icon](/help/assets/assets/remove-icon.svg) to remove a license from the download dialog box. 
 
 1. Accept the terms and conditions and then click **Download** to download assets associated with the available licenses in the left pane.
 ![download-multiple-license](/help/assets/assets/download-multiple-license.png)
