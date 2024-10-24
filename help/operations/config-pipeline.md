@@ -13,7 +13,7 @@ Learn how you can use config pipelines to deploy different configurations AEM as
 
 A Cloud Manager config pipeline deploys configurations files (created in YAML format) to a target environment. A number of features in AEM as a Cloud Service can be configured in this way, including log forwarding, purge-related maintenance tasks, and several CDN features.
 
-Config Pipelines can be deployed via Cloud Manager to dev, stage, and production environment types in production (non-sandbox) programs. RDEs are not supported.
+Config Pipelines can be deployed via Cloud Manager to dev, stage, and production environment types in production (non-sandbox) programs. The configurations fils can be deployed to Rapid Developement Environments using command line tooling.
 
 This following sections of this document give an overview of important information regarding how Config Pipelines can be used and how configurations for them should be structured. It describes general concepts shared across either all or a subset of the features supported by config pipelines.
 
