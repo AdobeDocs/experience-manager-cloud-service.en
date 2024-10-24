@@ -118,7 +118,9 @@ The Generative AI capabilities on offer are:
 
 ### Self-Serve Log Forwarding with Advanced Networking Option {#log-forwarding}
 
-[hi](/help/implementing/developing/introduction/log-forwarding.md)
+While AEM (including Apache/Dispatcher) and CDN logs can be downloaded from Cloud Manager, many organizations find it beneficial to [forward those logs](/help/implementing/developing/introduction/log-forwarding.md) to a preferred logging destination. AEM now supports streaming logs to Azure Blob Storage, Datadog, HTTPD, Elasticsearch (and OpenSearch), and Splunk.  Forward logs [](/help/implementing/developing/introduction/log-forwarding.md). AEM logs can be optionally forwarded over advanced networking; for example, with a dedicated IP address.
+
+This feature is self-serve configured, and deployed using the Config Pipeline.
 
 ### Pipeline-free URL Redirects for Business Users {#pipeline-free-redirects}
 
