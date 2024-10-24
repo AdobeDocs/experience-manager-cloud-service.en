@@ -137,6 +137,25 @@ The properties enabled on the Configuration User Interface display on the Asset 
 
 ![Asset properties on Content Hub](assets/config-ui-asset-properties.png)
 
+### Asset Card {#asset-card}
+
+The Asset Card feature in content Hub lets administrators **add**, **edit**, or **delete** metadata properties at the repository level. AEM Content Hub UI displays the metadata that are added to the Asset Card directly below the asset. For example if you add a metadata, **Licensed** in the Asset Card and map this metadata to the correct metadata property then **Licensed** and its mapped value displays within the asset card in Content Hub UI to show whether the asset is licensed or not. 
+The default Content Hub view does not display asset metadata. The Asset Card allows you to add up to six metadata properties for an asset. 
+![Asset properties on Content Hub](/help/assets/assets/metadata-below-assets.png)
+
+#### Add, Edit or Delete a metadata under Asset Card {#add-edit-delete-metadata}
+
+To add a metadata to an asset, see the instructions below:
+
+1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **Asset Card**.
+2. Click **Add metadata**. The **Add asset card metadata** dialog box displays.
+3. Specify the metadata name in the **Label** field and select a metadata property in the **Metadata** field. For example, name the metadata **Licensed** and select **dc:license** as the metadata property. The selected metadata property is mapped to a value that displays with the metadata in the Content Hub UI. In this example, the **dc:license** property is mapped to the License ID. This property follows the specified asset (PDF license) path to locate the corresponding asset and accordingly renders a boolean value (**Yes** or **No**) in the UI based on asset's presence. If the license PDF is found, it displays **Yes**. If not, it displays **No**. Therefore, in the Content Hub UI, assets with a License ID displays **Yes**, while those without a License ID displays **No**. 
+4. Click **Confirm** and then **Save** to apply the changes so that the new property display on the asset details page.
+![asset card](/help/assets/assets/asset-card.png)
+
+Similarly, click ![edit](/help/assets/assets/edit-content-hub.svg) that is available next to each available property, to make any required modifications or click ![delete](/help/assets/assets/delete-content-hub.svg) to delete any existing metadata property. Click **Save** after making all modifications to apply the changes.
+
+
 ### Search {#configure-metadata-search-content-hub}
 
 Administrators can define the metadata fields that are searched when a user specifies a search criteria on Content Hub. Execute the following steps:
