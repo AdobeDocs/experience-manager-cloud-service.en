@@ -396,7 +396,7 @@ To validate that traffic is indeed outgoing on the expected dedicated IP address
 
 ## Virtual Private Network (VPN) {#vpn}
 
-A VPN allows connecting to an on-premise infrastructure or data center from the author, publish, or preview instances. This can be useful, for example, to secure access to a database. It also allows connecting to SaaS vendors such as a CRM vendor that supports VPN or connecting from a corporate network to AEM as a Cloud Service author, preview, or publish instance.
+A VPN allows connecting to an on-premise infrastructure or data center from the author, publish, or preview instances. This can be useful, for example, to secure access to a database. It also allows connecting to SaaS vendors such as a CRM vendor that supports VPN.
 
 Most VPN devices with IPSec technology are supported. Consult the information in the **RouteBased configuration instructions** column in [this list of devices.](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable) Configure the device as described in the table.
 
