@@ -70,7 +70,7 @@ Assets as a Cloud Service offers four types of user types. Each user type provid
 
 * **Power users**: As a Power user, you can:
 
-   * Access all AEM Assets capabilities including managing assets, permissions, metadata and the overall governance and automation around digital assets. 
+   * Access all AEM Assets capabilities including managing assets, metadata and the overall governance and automation around digital assets. 
    
    * Work with assets from Experience manager via integrations of Assets available to your organization in other Adobe and non-Adobe applications.
 
