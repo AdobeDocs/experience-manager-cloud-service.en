@@ -332,7 +332,7 @@ Tag permissions are ['secure (by default)'](/help/sites-administering/production
     * select the `checkbox`in the **Read** column
     * select **Save**
 
-![chlimage_1-204](assets/chlimage_1-204.png)
+![Setting tag permissions](assets/chlimage_1-204.png)
 
 * ensure all publish instances have same permissions
 
