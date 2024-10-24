@@ -142,7 +142,7 @@ The properties enabled on the Configuration User Interface display on the Asset 
 
 The Asset Card feature in content Hub lets administrators **add**, **edit**, or **delete** metadata properties at the repository level. AEM Content Hub UI displays the metadata that are added to the Asset Card directly below the asset. For example if you add a metadata, **Licensed** in the Asset Card and map this metadata to the correct metadata property then **Licensed** and its mapped value displays within the asset card in Content Hub UI to show whether the asset is licensed or not. 
 The default Content Hub view does not display asset metadata. The Asset Card allows you to add up to six metadata properties for an asset. 
-![Asset properties on Content Hub](/help/assets/assets/metadata-below-assets.png)
+![Asset properties on Content Hub](/help/assets/assets/metadata-on-asset-card.png)
 
 #### Add, Edit or Delete a metadata under Asset Card {#add-edit-delete-metadata}
 
@@ -188,7 +188,7 @@ The branding updates enabled on the Configuration User Interface display on the 
 
 ![Configuration UI branding on Content Hub](assets/configuration-ui-branding-updates.png)
 
-### Expired assets {#expired-assets-content-hub}
+### Expired assets{#expired-assets-content-hub}
 
 Administrators can control if they need expired assets to be visible on Content Hub. If the expired assets are made visible, they can also define if users can download them.
 
