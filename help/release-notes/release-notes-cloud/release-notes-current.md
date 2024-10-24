@@ -116,17 +116,25 @@ The Generative AI capabilities on offer are:
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Edge Side Includes (ESI) for Loading Dynamic Content {#esi}
+### Self-Serve Log Forwarding with Advanced Networking Option {#log-forwarding}
 
-The Adobe Managed CDN now supports [Edge Side Includes (ESI)](/help/implementing/dispatcher/edge-side-includes.md), a markup language for edge level dynamic web content assembly. By including ESI snippets, you can cache the overall HTML page at the CDN with higher TTLs, while more frequently fetching from origin those smaller sections that require higher cadence updates (lower TTLs). This feature will be rolled out gradually.
+[hi](/help/implementing/developing/introduction/log-forwarding.md)
 
-### Basic Authentication at the CDN {#basicauth-cdn}
+### Pipeline-free URL Redirects for Business Users {#pipeline-free-redirects}
 
-Protect certain content resources by popping up a basic auth dialog requiring a username and password. This feature primarily targets light authentication use cases, like business stakeholders reviewing content, rather than serving as a comprehensive solution for end-user access rights. The list of username and passwords is managed through a configuration file in git that is deployed via Config Pipeline, with a reference to secret-type Cloud Manager environment variables. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
+Browser-side redirects are useful for scenarios where a web page has been taken down or has moved. With this feature, you can place an Apache rewrite map file in an AEM publish location where it is loaded on a regular basis, without the need to commit the file to source control or run a Cloud manager pipeline.
 
-### Client-Side Redirects {#client-side-redirects}
+There are several options for publishing the rewrite file, including AEM Asset ingestion, ACS Commons Rewrite Map Manager, or a custom user interface.
 
-Declare [browser redirects](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) in a configuration file git that are deployed to and evaluated at the CDN. This can be useful for scenarios including deleting pagtes, changed site structure, and SEO optimization.
+### Config Pipeline for RDEs {#config-pipeline-rdes}
+
+Rapid Development Environments are a powerful tool to quickly sync and test code and configuration changes to a Cloud environment. RDEs now support [deploying yaml file configurations](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline), which include CDN options like traffic filter rules and request/response transformations. [See the full list](/help/operations/config-pipeline.md) of supported configuration options.
+
+### New Product Profiles {#new-product-profiles}
+
+When you setup anew AEM environment, product profiles appear in Adobe Admin Console, allowing your organization's administrator give your internal users access to  solutions and features that have been licensed. 
+
+Newly created environments now have a set of new product profiles, which makes them compatible with future features, including APIs that can be selected in the Adobe Develope Console. Previously created environments can soon update their product profiles, as well. [Learn more]().
 
 ### New AEM Developer Console (Public Beta) {#aem-developer-console-beta}
 
@@ -135,14 +143,6 @@ Try out a revamped [AEM Developer Console](/help/implementing/developing/introdu
 Anyone can access the public beta by clicking the *New Console Available* button in the current AEM Developer Console. Adobe welcomes feedback, which you can email to **<aemcs-new-devconsole-ui-beta@adobe.com>**.
 
 ![OSGi Bundles Screen in AEM Developer Console](/help/implementing/developing/introduction/assets/osgi-bundles.png)
-
-### Business Users Can Declare Redirects Outside of Git (Early Adopter Program) {#apache-rewritemaps-early-adopter}
-
-Similar to AEM 6.5, Apache/dispatcher ingests rewrite maps placed in a specific location in the publish repository, and loads them without requiring a web tier pipeline execution. This approach lets business users declare redirects using a spreadsheet or a UI, like ACS Commons Redirect Map Manager or a custom application. Join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**.
-
-### Config Pipeline for RDEs (Early Adopter Program) {#config-pipeline-rdes-early-adopter}
-
-The [Config Pipeline](/help/operations/config-pipeline.md) is used to deploy yaml file configurations, including CDN options (traffic filter rules, request/response transformations, etc). Join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>** to deploy these same configurations to RDEs (Rapid Development Environments), which use a CLI.
 
 ## [!DNL Experience Manager] Guides {#guides}
 
