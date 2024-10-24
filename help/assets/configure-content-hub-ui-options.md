@@ -53,6 +53,7 @@ As an administrator, manage the following configuration options for your users:
 * [Filters](#configure-filters-content-hub)
 
 * [Asset details](#configure-asset-details-content-hub)
+* [Asset Card](#asset-card)
 
 * [Search](#configure-metadata-search-content-hub)
 
