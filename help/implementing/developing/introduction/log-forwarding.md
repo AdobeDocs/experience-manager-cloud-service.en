@@ -1,6 +1,6 @@
 ---
 title: Log Forwarding for AEM as a Cloud Service
-description: Learn about forwarding logs to Splunk and other logging vendors in AEM as a Cloud Service
+description: Learn about forwarding logs to logging vendors in AEM as a Cloud Service
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
@@ -9,17 +9,17 @@ role: Admin, Architect, Developer
 
 >[!NOTE]
 >
->Log Forwarding is now self-serve, rather than the previous method of submitting an Adobe Support ticket. See the [Migrating](#legacy-migration) section if your log forwarding was setup by Adobe.
+>Log Forwarding is now configured in self-serve way, different from the legacy method, which required submitting an Adobe Support ticket. See the [Migrating](#legacy-migration) section if your log forwarding was setup by Adobe.
 
-Customers who have a license for a logging vendor or host a logging product can have AEM logs (including Apache/Dispatcher) and CDN logs forwarded to the associated logging destinations. AEM as a Cloud Service supports the following logging destinations: 
+Customers with a license with a logging vendor or who host a logging product can have AEM logs (including Apache/Dispatcher) and CDN logs forwarded to the associated logging destination. AEM as a Cloud Service supports the following logging destinations: 
 
 * Azure Blob Storage
-* DataDog
+* Datadog
 * Elasticsearch or OpenSearch
 * HTTPS
 * Splunk
 
-Log forwarding is configured in a self-service manner by declaring a configuration in Git, and deploying it via the Cloud Manager Configuration Pipeline to dev, stage, and production environment types in production (non-sandbox) programs.
+Log forwarding is configured in a self-service manner by declaring a configuration in Git, and deploying it via the Cloud Manager Config Pipeline to RDE, dev, stage, and production environment types in production (non-sandbox) programs.
 
 There is an option for the AEM and Apache/Dispatcher logs to be routed through AEM's advanced networking infrastructure, such as dedicated egress IP.
 
@@ -134,6 +134,8 @@ Here is a screenshot of a sample SAS token configuration:
 
 ![Azure Blob SAS token configuration](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
 
+If logs have stopped being delivered after previously functioning correctly, check whether the SAS token you configured is still valid, as it may have expired.
+
 #### Azure Blob Storage CDN logs {#azureblob-cdn}
 
 Each of the globally distributed logging servers will produce a new file every few seconds, under the `aemcdn` folder. Once created, the file will no longer be appended to. The filename format is YYYY-MM-DDThh:mm:ss.sss-uniqueid.log. E.g., 2024-03-04T10:00:00.000-WnFWYN9BpOUs2aOVn4ee.log.
@@ -199,10 +201,12 @@ See the log entry formats under [Logging for AEM as a Cloud Service](/help/imple
 Considerations:
 
 * Create an API Key, without any integration with a specific cloud provider.
-* the tags property is optional
+* The tags property is optional
 * For AEM logs, the Datadog source tag is set to one of `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess`, or `aemhttpderror`
 * For CDN logs, the Datadog source tag is set to `aemcdn`
-* the Datadog service tag is set to `adobeaemcloud`, but you can overwrite it in the tags section
+* The Datadog service tag is set to `adobeaemcloud`, but you can overwrite it in the tags section
+* If your ingestion pipeline uses Datadog tags to determine the appropriate index for forwarding logs, verify that these tags are correctly configured in the Log Forwarding YAML file. Missing tags may prevent successful log ingestion if the pipeline depends on them.
+
    
 
 ### Elasticsearch and OpenSearch {#elastic}
@@ -307,6 +311,8 @@ Considerations:
 * By default, the port is 443. It can optionally be overridden with a property named `port`.
 * The sourcetype field will have one of the following values, depending on the specific log: *aemaccess*, *aemerror*, 
 *aemrequest*, *aemdispatcher*, *aemhttpdaccess*, *aemhttpderror*, *aemcdn*
+* If the required IPs have been allowlisted and logs are still not being delivered, verify that there are no firewall rules enforcing Splunk token validation. Fastly performs an initial validation step where an invalid Splunk token is intentionally sent. If your firewall is set to terminate connections with invalid Splunk tokens, the validation process will fail, preventing Fastly from delivering logs to your Splunk instance.
+
 
 >[!NOTE]
 >
