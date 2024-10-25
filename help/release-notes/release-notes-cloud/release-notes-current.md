@@ -118,7 +118,7 @@ The Generative AI capabilities on offer are:
 
 ### Self-Serve Log Forwarding with Advanced Networking Option {#log-forwarding}
 
-While AEM (including Apache/Dispatcher) and CDN logs can be downloaded from Cloud Manager, many organizations find it beneficial to [forward those logs](/help/implementing/developing/introduction/log-forwarding.md) to a preferred logging destination. AEM now supports streaming logs to Azure Blob Storage, Datadog, HTTPD, Elasticsearch (and OpenSearch), and Splunk.  Forward logs [](/help/implementing/developing/introduction/log-forwarding.md). AEM logs can be optionally forwarded over advanced networking; for example, with a dedicated IP address.
+While AEM (including Apache/Dispatcher) and CDN logs can be downloaded from Cloud Manager, many organizations find it beneficial to [forward those logs](/help/implementing/developing/introduction/log-forwarding.md) to a preferred logging destination. AEM now supports streaming logs to Azure Blob Storage, Datadog, HTTPD, Elasticsearch (and OpenSearch), and Splunk. AEM logs can be optionally forwarded over advanced networking; for example, with a dedicated IP address.
 
 This feature is self-serve configured, and deployed using the Config Pipeline.
 
@@ -136,7 +136,7 @@ Rapid Development Environments are a powerful tool to quickly sync and test code
 
 When you setup anew AEM environment, product profiles appear in Adobe Admin Console, allowing your organization's administrator give your internal users access to  solutions and features that have been licensed. 
 
-Newly created environments now have a set of new product profiles, which makes them compatible with future features, including APIs that can be selected in the Adobe Develope Console. Previously created environments can soon update their product profiles, as well. [Learn more]().
+Newly created environments now have a set of new product profiles, which makes them compatible with future features, including APIs that can be selected in the Adobe Developer Console. Previously created environments can soon update their product profiles, as well. [Learn more]().
 
 ### New AEM Developer Console (Public Beta) {#aem-developer-console-beta}
 
