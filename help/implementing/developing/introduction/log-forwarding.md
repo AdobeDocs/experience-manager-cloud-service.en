@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 
 >[!NOTE]
 >
->This feature is not yet released, and some logging destinations may not be available at the time of release. In the meantime, you can open a support ticket to forward logs to **Splunk**, as described under [Logging for AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md).
+>Log Forwarding is now self-serve, rather than the previous method of submitting an Adobe Support ticket. See the [Migrating](#legacy-migration) section if your log forwarding was setup by Adobe.
 
 Customers who have a license for a logging vendor or host a logging product can have AEM logs (including Apache/Dispatcher) and CDN logs forwarded to the associated logging destinations. AEM as a Cloud Service supports the following logging destinations: 
 
