@@ -140,7 +140,7 @@ The properties enabled on the Configuration User Interface display on the Asset 
 
 ### Asset Card {#asset-card}
 
-The Asset Card feature in content Hub lets administrators **add**, **edit**, or **delete** metadata properties at the repository level. AEM Content Hub UI displays the metadata that are added to the Asset Card directly below the asset. For example if you add a metadata, **Licensed** in the Asset Card and map this metadata to the correct metadata property then **Licensed** and its mapped value displays within the asset card in Content Hub UI to show whether the asset is licensed or not. 
+The Asset Card feature in Content Hub lets administrators **add**, **edit**, or **delete** metadata properties at the repository level. AEM Content Hub UI displays the metadata that are added to the Asset Card directly below the asset. For example, if you add a metadata, **Licensed** in the Asset Card and map this metadata to the correct metadata property then **Licensed** and its mapped value displays within the Asset Card in Content Hub UI to show whether the asset is licensed or not. 
 The default Content Hub view does not display asset metadata. The Asset Card allows you to add up to six metadata properties for an asset. 
 ![Asset properties on Content Hub](/help/assets/assets/metadata-on-asset-card.png)
 
@@ -150,7 +150,7 @@ To add a metadata to an asset, see the instructions below:
 
 1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **Asset Card**.
 2. Click **Add metadata**. The **Add asset card metadata** dialog box displays.
-3. Specify the metadata name in the **Label** field and select a metadata property in the **Metadata** field. For example, name the metadata **Licensed** and select **dc:license** as the metadata property. The selected metadata property is mapped to a value that displays with the metadata in the Content Hub UI. In this example, the **dc:license** property is mapped to the License ID. This property follows the specified asset (PDF license) path to locate the corresponding asset and accordingly renders a boolean value (**Yes** or **No**) in the UI based on asset's presence. If the license PDF is found, it displays **Yes**. If not, it displays **No**. Therefore, in the Content Hub UI, assets with a License ID displays **Yes**, while those without a License ID displays **No**. 
+3. Specify the metadata name in the **Label** field and select a metadata property in the **Metadata** field. For example, name the metadata **Licensed** and select **dc:license** as the metadata property. The selected metadata property is mapped to a value that displays with the metadata in the Content Hub UI. In this example, the **dc:license** property is mapped to the License ID. This property follows the specified asset (PDF license) path to locate the corresponding asset and accordingly renders a boolean value (**Yes** or **No**) in the UI based on the asset's presence. If the license PDF is found, it displays **Yes**. If not, it displays **No**. Therefore, in the Content Hub UI, assets with a License ID displays **Yes**, while assets without a License ID displays **No**. 
 4. Click **Confirm** and then **Save** to apply the changes so that the new property display on the asset details page.
 ![asset card](/help/assets/assets/asset-card.png)
 
@@ -174,7 +174,7 @@ Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), ava
 
 ### Branding {#configure-branding-content-hub}
 
-Administrators can also personalize the title and body text on the banner of Content Hub portal, as per your branding requirements. To do so, execute the following steps:
+Administrators can also personalize the title and body text on the banner of the Content Hub portal, as per your branding requirements. To do so, execute the following steps:
 
 1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Branding]**.
 
@@ -212,7 +212,7 @@ After enabling the visibility of assets, you can view the expired assets on Cont
 
 If the administrator has enabled download, the Content Hub users can also download them, as highlighted in the image.
 
-If the visibility of expired assets is enabled, Content Hub also highlights assets expiring within the next 15 days using the `Expiring in n days` message on the asset card.
+If the visibility of expired assets is enabled, Content Hub also highlights assets expiring within the next 15 days using the `Expiring in n days` message on the Asset Card.
 
 
 ### Custom Links {#configure-custom-links-content-hub}
