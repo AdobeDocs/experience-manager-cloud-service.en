@@ -14,15 +14,15 @@ exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
 
 The Content Hub lets you download and share your assets. These assets may include images, videos, or any other digital content. The Content Hub enhances accessibility and adaptability for effective asset distribution.  
 
-You can download single asset or multiple assets using the Content Hub. The original versions of the asset are downloaded.
+You can download a single asset or multiple assets using the Content Hub. The original versions of the asset are downloaded.
 
 ## Prerequisites {#prerequisites}
 
-[Content Hub users](deploy-content-hub.md#onboard-content-hub-users) can perform actions mentioned in this article.
+[Content Hub users](deploy-content-hub.md#onboard-content-hub-users) can perform the actions mentioned in this article.
 
 ## Download asset {#download-single-asset} 
 
-[Approve asset's license](/help/assets/approve-assets-content-hub.md) before downloading.
+[Approve the asset's license](/help/assets/approve-assets-content-hub.md) before downloading them.
 
 ### Single Download {#single-download-asset} 
 
@@ -46,7 +46,7 @@ Alternatively, click ![download](/help/assets/assets/download-icon.svg) in the a
 ### Multi Download {#multi-download} 
 
 1. Select the assets and click ![download](/help/assets/assets/download-icon.svg) from the top rail. The dialog box that displays depends on whether the download list includes expired assets or only non-expired assets. <br/>
-**Download expired assets dialog box:** This dialog box displays the expired assets' preview along with their expiry date on the left pane and the expired assets' count out of total selected on the right pane. Click **Proceed with all assets** to download expired assets with other assets (if present). The Download assets dialog box displays. See [Download assets dialog box](#Download-asset-dialog-box) to proceed further.
+**Download expired assets dialog box:** This dialog box displays the expired assets' preview along with their expiry date in the left pane. The expired assets' count out of total selected displays in the right pane. Click **Proceed with all assets** to download expired assets with other assets (if present). The Download assets dialog box displays. See the [Download assets dialog box](#Download-asset-dialog-box) to proceed further.
     
     >[!NOTE]
     >
