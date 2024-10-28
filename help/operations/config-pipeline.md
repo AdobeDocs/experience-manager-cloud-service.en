@@ -48,6 +48,9 @@ For information on how to create and configure pipelines, please see the documen
 
 When creating a Config Pipeline in Cloud Manager, be sure to select a **Targeted Deployment** rather than **Full Stack Code** when configuring the pipeline.
 
+As noted earlier, configuration for RDEs is deployed using [command line tooling](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline) rather than a pipeline.
+
+
 ## Common Syntax {#common-syntax}
 
 Each configuration file begins with properties resembling the following example snippet:
