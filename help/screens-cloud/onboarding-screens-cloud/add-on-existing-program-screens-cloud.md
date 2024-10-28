@@ -27,14 +27,14 @@ Follow the steps below to add Screens as an add-on to an existing program:
 
 1. Navigate to your project and click the **Edit program** option from the Cloud Manager's **Overview** page. 
 
-   ![image](/help/screens-cloud/assets/onboarding/add-onexisting1.png)
+   ![Edit program](/help/screens-cloud/assets/onboarding/add-onexisting1.png)
 
    >[!NOTE]
    >The **Edit Program** page displays two tabs **General** and **Solutions & Add-ons**.
 
 1. The **Solutions & Add-ons** tab displays options, such as Sites, Assets, and Screens. Select **Screens** add-on option, as shown in the figure below.
 
-    ![image](/help/screens-cloud/assets/onboarding/add-onexisting2.png)
+    ![Screens add-on option](/help/screens-cloud/assets/onboarding/add-onexisting2.png)
 
 1. Click **Update**, once you have selected your options.
 
