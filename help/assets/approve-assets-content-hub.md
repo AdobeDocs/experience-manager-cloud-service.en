@@ -22,7 +22,7 @@ Before you begin, you should have:
 
 * Write permissions to edit asset metadata to be able to edit the **[!UICONTROL Status]** field available in [asset properties](/help/assets/manage-organize-assets-view.md##manage-asset-status) for an asset.
 
-## Approve assets for Content Hub {#approve-assets-for-content-hub}
+## Approve assets for Content Hub{#approve-assets-for-content-hub}
 
 The assets marked as `approved` in Assets as a Cloud Service are automatically available in Content Hub.
 
