@@ -6,7 +6,7 @@ Feature: Adaptive Forms, Core Components
 Role: User, Developer
 ---
 
-# Integrate an Adaptive Form with Marketo Engage
+# Connect an Adaptive Form with Marketo Engage
 
 You can configure an Adaptive Form to submit data to [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home) on submission. The configured Adaptive Form sends captured data to Marketo Engage for processing. It helps you build custom data capture experience while harnessing the power of Adobe Marketo Engage to build business logics around captured data and automate workflows.
 
