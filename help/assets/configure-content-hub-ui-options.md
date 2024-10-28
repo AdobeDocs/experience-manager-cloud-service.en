@@ -53,6 +53,7 @@ As an administrator, manage the following configuration options for your users:
 * [Filters](#configure-filters-content-hub)
 
 * [Asset details](#configure-asset-details-content-hub)
+* [Asset Card](#asset-card)
 
 * [Search](#configure-metadata-search-content-hub)
 
@@ -137,6 +138,25 @@ The properties enabled on the Configuration User Interface display on the Asset 
 
 ![Asset properties on Content Hub](assets/config-ui-asset-properties.png)
 
+### Asset Card {#asset-card}
+
+In Content Hub UI, the asset-level view displays the **Asset Card** of approved assets. The Asset Card displays the key asset details for the users. The Asset Card has asset thumbnail, asset metadata and other actionable options. The Content Hub administrators add the metadata fields at the repository level to display the metadata name and its metadata value in all assets' Asset Card at Once. The Asset Card accepts six metadata fields. The metadata field includes metadata name and metadata property. Asset Card displays the metadata and its metadata value. Administrator specifies the metadata name and map it to the right metadata property. The metadata property renders a metadata value in the Asset Card. The metadata property is linked to the properties of the asset, therefore the rendered metadata value varies across all Asset Cards. For example, administrators add a metadata, **Licensed** in the Asset Card and map this **Licensed** metadata to the correct metadata property. The Asset Cards on the Content Hub UI display this **Licensed** metadata and its metadata value (**Yes** or **No**). In this example, Assets having a license displays **Yes** in the Asset Card while the assets without license displays **NO**.
+
+![Asset properties on Content Hub](/help/assets/assets/metadata-on-asset-card.png)
+
+#### Add, Edit or Delete a metadata under Asset Card {#add-edit-delete-metadata}
+
+To add a metadata to an asset, see the instructions below:
+
+1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **Asset Card**.
+2. Click **Add metadata**. The **Add asset card metadata** dialog box displays.
+3. Specify the metadata name in the **Label** field and select a metadata property in the **Metadata** field. For example, name the metadata **Licensed** and select **dc:license** as the metadata property. The selected metadata property is mapped to a value that displays with the metadata in the Content Hub UI. In this example, the **dc:license** property is mapped to the License ID. This property follows the specified asset (PDF license) path to locate the corresponding asset and accordingly renders a boolean value (**Yes** or **No**) in the UI based on the asset's presence. If the license PDF is found, it displays **Yes**. If not, it displays **No**. Therefore, in the Content Hub UI, assets with a License ID displays **Yes**, while assets without a License ID display **No**. 
+4. Click **Confirm** and then **Save** to apply the changes so that the new property display on the asset details page.
+![asset card](/help/assets/assets/asset-card.png)
+
+Similarly, click ![edit](/help/assets/assets/edit-content-hub.svg) that is available next to each available property, to make any required modifications or click ![delete](/help/assets/assets/delete-content-hub.svg) to delete any existing metadata property. Click **Save** after making all modifications to apply the changes.
+
+
 ### Search {#configure-metadata-search-content-hub}
 
 Administrators can define the metadata fields that are searched when a user specifies a search criteria on Content Hub. Execute the following steps:
@@ -154,7 +174,7 @@ Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), ava
 
 ### Branding {#configure-branding-content-hub}
 
-Administrators can also personalize the title and body text on the banner of Content Hub portal, as per your branding requirements. To do so, execute the following steps:
+Administrators can also personalize the title and body text on the banner of the Content Hub portal, as per your branding requirements. To do so, execute the following steps:
 
 1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Branding]**.
 
@@ -168,7 +188,7 @@ The branding updates enabled on the Configuration User Interface display on the 
 
 ![Configuration UI branding on Content Hub](assets/configuration-ui-branding-updates.png)
 
-### Expired assets {#expired-assets-content-hub}
+### Expired assets{#expired-assets-content-hub}
 
 Administrators can control if they need expired assets to be visible on Content Hub. If the expired assets are made visible, they can also define if users can download them.
 
@@ -192,7 +212,7 @@ After enabling the visibility of assets, you can view the expired assets on Cont
 
 If the administrator has enabled download, the Content Hub users can also download them, as highlighted in the image.
 
-If the visibility of expired assets is enabled, Content Hub also highlights assets expiring within the next 15 days using the `Expiring in n days` message on the asset card.
+If the visibility of expired assets is enabled, Content Hub also highlights assets expiring within the next 15 days using the `Expiring in n days` message on the Asset Card.
 
 
 ### Custom Links {#configure-custom-links-content-hub}
