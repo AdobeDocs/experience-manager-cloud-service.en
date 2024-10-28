@@ -29,7 +29,7 @@ Assets as a Cloud Service Ultimate package offers various key benefits that help
 
 Assets as a Cloud Service Ultimate package enables you to perform various key Digital Asset Management operations, such as:
 
-* Asset management tasks, such as metadata management, permissions management, and asset governance.
+* Asset management tasks, such as metadata management and asset governance.
 
 * Trainable Smart Tags for better search.
 
@@ -49,7 +49,7 @@ Assets as a Cloud Service Ultimate package enables you to perform various key Di
 
 * Additional Stage and Development environments.
 
-The operations that you can perform within Assets as a Cloud Service also depends on your user type. See [Available user types](#available-user-types) for more information.
+The operations that you can perform within Assets as a Cloud Service depends on your user type. See [Available user types](#available-user-types) for more information.
 
 
 ## What are available user types and privileges? {#available-user-types}
@@ -89,11 +89,14 @@ The following table summarizes the available Content Hub user types, the privile
 | Access brand approved assets on the Content Hub portal |&#10003; | &#10003;|   &#10003;  |&#10003;|
 | Create and edit assets using built-in Adobe Express and Firefly    | &minus; |  &#10003; | &#10003;   |&#10003;|
 | Integration of assets within your organization with Adobe and non-Adobe applications     |  &minus; |   &#10003; |     &#10003;   | &#10003;|
-| Access all AEM Assets capabilities, such as, managing assets, permissions, metadata and the overall governance and automation        | &minus; | &minus; |    &#10003;   |&#10003;|
+| Access all AEM Assets capabilities, such as, managing assets, metadata and the overall governance and automation        | &minus; | &minus; |    &#10003;   |&#10003;|
 | **User needs to be in these product profiles (Admin Console)**|
 | AEM > Delivery instance > AEM Assets Limited Users | &#10003;  | &#10003;  |   &#10003;     |&#10003;|
 | AEM > Production Author instance > AEM Assets Collaborator Users         | &minus; | &#10003; |   &minus;    |&minus;|
 | AEM > Production Author instance > AEM Assets Power Users |  &minus; | &minus; | &#10003;  |&minus;|
 | AEM > Production Author instance > AEM Administrators | &minus;  | &minus; | &minus;  |&#10003;|
-| **More information**          |  |   |     ||
+| **More information**          | See [Enable Content Hub](/help/assets/upgrade-assets-ultimate-package.md##enable-assets-ultimate-package-new-users) | See [Onboard Collaborator Users](/help/assets/upgrade-assets-ultimate-package.md#onboard-collaborator-users)  | See [Onboard Power Users](/help/assets/upgrade-assets-ultimate-package.md#onboard-power-users)    |- |
 
+For information on how to upgrade to Assets Ultimate or how to get started with Assets Ultimate, see [Upgrade to AEM Assets Ultimate](/help/assets/upgrade-assets-ultimate-package.md).
+
+AEM Assets also provides a lightweight DAM that allows you to perform some of the key capabilities, however, the advanced capabilities are not available to you, such as, custom schemas, metadata translations, custom processing profiles, UI extensibility, custom workflow management, and additional Stage and Production environments. For more information, see [AEM Assets Prime Package](/help/assets/assets-prime-package.md).

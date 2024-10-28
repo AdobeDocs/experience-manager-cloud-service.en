@@ -9,7 +9,7 @@ role: User, Admin
 | [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
 | ------------- | --------------------------- |---------|----|-----|
 
-![Upgrade to Asset Cloud Service Ultimate Package](/help/assets/assets/upgrade-assets-cs-ultimate-package-banner.png)
+![AEM Assets Prime package banner image](/help/assets/assets/aem-assets-prime-package-banner.png)
 
 Assets as a Cloud Service Prime package includes a lightweight DAM that enables you to perform various key capabilities, such as:
 
