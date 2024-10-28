@@ -46,6 +46,8 @@
 * [Submit to Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Connect Adaptive Form to Salesforce application](/help/forms/aem-forms-salesforce-integration.md)
 * [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+* [Connect an Adaptive Form to Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
+
 
 ## See also {#see-more-forms-eds}
 
