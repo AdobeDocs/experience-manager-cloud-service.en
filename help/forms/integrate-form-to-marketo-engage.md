@@ -18,6 +18,7 @@ AEM as a Cloud Service offers various out of the box submit actions for handling
 
 Below are the few advantages to connect an Adaptive Form with Adobe Marketo Engage:
 
+* **Simplified integration**: Connecting forms with Marketo Engage eliminates the need to create a separate form data model. The integration process is straightforward and user-friendly.
 * **Automated data capture**: It helps in automatically capture form submissions and store them in Marketo, eliminating manual data entry and reducing errors.
 
 * **Lead management**: It streamlines lead management processes by integrating form submissions directly into your marketing database, enabling better tracking and nurturing of leads.
