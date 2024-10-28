@@ -19,7 +19,7 @@ This article provides an end-to-end workflow to either enable the Ultimate packa
 
 The new Assets as a Cloud Service users must first enable the Assets Ultimate package while creating the new program using Cloud Manager. Execute the following steps:
 
-1. Log on to Cloud Manager. Ensure that you select the right organization while logging in.
+1. As a system administrator, log on to Cloud Manager. Ensure that you select the right organization while logging in.
 
 1. [Create a new program](/help/journey-onboarding/create-program.md) and [add environments](/help/journey-onboarding//create-environments.md) to it.
 
@@ -29,17 +29,19 @@ The new Assets as a Cloud Service users must first enable the Assets Ultimate pa
 
 1. Click **[!UICONTROL Create]** to create the program. Assets Ultimate package is now enabled for Experience Manager Assets as a Cloud Service.
 
+The System Adminstrator is automatically entitled for the AEM Administrators role on Assets Ultimate and must have received an email to navigate to Admin Console to manage the updated product profiles.
+
 Your AEM as a Cloud Service instance on Admin Console comprises the following product profiles:
 
 * AEM Administrators
 
 * AEM Users
 
-* AEM Assets Collaborator Users
+* [AEM Assets Collaborator Users](#onboard-collaborator-users)
 
-* AEM Assets Power Users
+* [AEM Assets Power Users](#onboard-power-users)
 
-![AEM Assets Product Profiles](assets/aem-assets-product-profiles.png)
+   ![AEM Assets Product Profiles](assets/aem-assets-product-profiles.png)
 
 If you have enabled Content Hub for Assets as a Cloud Service, there is a new instance created within AEM Assets as a Cloud Service on Admin Console with `delivery` as the suffix:
 
@@ -54,6 +56,8 @@ Note that there is no `author` or `publish` in the instance name for Content Hub
 Click the instance name to view the `AEM Assets Limited Users` Content Hub product profile.
 
 ![Content Hub product profile](assets/content-hub-product-profile.png)
+
+You can start adding users or user groups to this product profile to provide them access to Content Hub.
 
 >[!NOTE]
 >
@@ -99,7 +103,7 @@ Execute the following steps:
 
    You must add product profiles to all environments available in the program, individually or all environments together, before executing the next step.
 
-1. Click **[!UICONTROL Upgrade]**. The **[!UICONTROL Upgrade]** option displays only when you execute the previous step. 
+1. Click **[!UICONTROL Upgrade]**. The **[!UICONTROL Upgrade]** option displays only when you add product profiles to all available environments. 
 
    ![Last step in the upgrade process](assets/aem-assets-upgrade-button.png)
 
@@ -113,9 +117,9 @@ Your AEM as a Cloud Service instance on Admin Console now comprises the followin
 
 * AEM Users
 
-* AEM Assets Collaborator Users
+* [AEM Assets Collaborator Users](#onboard-collaborator-users)
 
-* AEM Assets Power Users
+* [AEM Assets Power Users](#onboard-power-users)
 
 ![AEM Assets Product Profiles](assets/aem-assets-product-profiles.png)
 
@@ -133,6 +137,8 @@ Click the instance name to view the `AEM Assets Limited Users` Content Hub produ
 
 ![Content Hub product profile](assets/content-hub-product-profile.png)
 
+You can start adding users or user groups to this product profile to provide them access to Content Hub.
+
 >[!NOTE]
 >
 >If you have provisioned Content Hub before August 14, 2024, the Content Hub product profile has `contenthub` mentioned after `Limited Users` instead of `delivery`.
@@ -148,8 +154,8 @@ To onboard Collaborator users:
 1. Click the production author instance for AEM as a Cloud Service:
    ![Product profiles for AEM as a Cloud Service](assets/aem-cloud-service-instances.png)
 
-1. Click the Collaborators users product profile and click **[!UICONTROL Add users]** to add the user to the product profile.
-   ![User product profile](assets/aem-cs-user-product-profile.png)
+1. Click the Collaborators users product profile and click **[!UICONTROL Add users]** to add users or user groups to the product profile.
+   ![User product profile](assets/aem-assets-collaborator-user-permissions.png)
 
 1. Click **[!UICONTROL Save]** to save the changes.
 
@@ -157,7 +163,12 @@ You can also access and view the services assigned to Collaborator users, as dep
 
 ![Services for Collaborator users](assets/aem-assets-collaborator-users.png)
 
-`Adobe Express` and `AEM Assets Collaborator Users` services are enabled by default. You can turn the toggle off and on, as per your requirements.
+`Adobe Express` and `AEM Assets Collaborator Users` services are enabled by default.
+
+>[!NOTE]
+>
+>You can turn the toggle off and on to enable or disable the available services, as per your requirements, however, Adobe recommends to use the default services enabled for the product profiles.
+
 
 ## Step 4: Onboard AEM Assets Power users {#onboard-power-users}
 
@@ -170,8 +181,8 @@ To onboard Power users:
 1. Click the production author instance for AEM as a Cloud Service:
    ![Product profiles for AEM as a Cloud Service](assets/aem-cloud-service-instances.png)
 
-1. Click the Power users product profile and click **[!UICONTROL Add users]** to add the user to the product profile.
-   ![User product profile](assets/aem-cs-user-product-profile.png)
+1. Click the Power users product profile and click **[!UICONTROL Add users]** to add users or user groups to the product profile.
+   ![User product profile](assets/aem-assets-power-user-permissions.png)
 
 1. Click **[!UICONTROL Save]** to save the changes.
 
@@ -179,4 +190,8 @@ You can also access and view the services assigned to Power users, as depicted i
 
 ![Services for Power users](assets/aem-assets-power-users.png)
 
-`Adobe Express` and `AEM Assets Power Users` services are enabled by default. You can turn the toggle off and on, as per your requirements.
+`Adobe Express` and `AEM Assets Power Users` services are enabled by default.
+
+>[!NOTE]
+>
+>You can turn the toggle off and on to enable or disable the available services, as per your requirements, however, Adobe recommends to use the default services enabled for the product profiles.

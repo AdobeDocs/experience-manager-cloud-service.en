@@ -9,6 +9,8 @@ role: User, Admin
 | [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
 | ------------- | --------------------------- |---------|----|-----|
 
+![AEM Assets Collaborator users banner](/help/assets/assets/aem-assets-collaborator-users-banner.png)
+
 Experience Manager Assets includes a Collaborator user type and administrators can easily add users or user groups to this user type using Admin Console. For more information, see [Onboard Collaborator Users](/help/assets/upgrade-assets-ultimate-package.md#onboard-collaborator-users).
 
 As a Collaborator user, you can:
