@@ -46,15 +46,15 @@ The table below outlines the reasons to choose AEM Forms over Marketo Forms:
 
 The following are required to integrate an Adaptive Form with Marketo Engage:
 
-* Valid Adobe Marketo Engage license.
-* Working instance of Marketo Engage to retrive the [Client ID and Client Secret from the Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/additional-integrations/create-a-custom-service-for-use-with-rest-api).
+* A valid Adobe Marketo Engage license
+* A working instance of Marketo Engage to [retrieve the Client ID and Client Secret](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/additional-integrations/create-a-custom-service-for-use-with-rest-api).
 
 ## Considerations while integrating Adaptive Forms with Marketo Engage
 
 Some of the consideration to integrate an Adaptive Form with Marketo Engage are:
 
 * AEM only supports the People(Leads) database among the various Marketo databases.
-* Marketo allows the [creation of up to 10 custom objects](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/marketo-custom-objects/add-marketo-custom-object-fields) as user-defined objects to store specialized data beyond the standard fields in Leads, supporting unique business needs.
+* Marketo allows the [creation of 10 custom objects](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/marketo-custom-objects/add-marketo-custom-object-fields) as user-defined objects to store specialized data beyond the standard fields in Leads, supporting unique business needs.
 * AEM can access custom objects only if they are associated with the Lead database.
 * It is not possible to connect Edge Delivery Services Forms with Marketo Engage.
 
