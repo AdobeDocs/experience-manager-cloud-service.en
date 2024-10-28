@@ -51,7 +51,7 @@ The following are required to integrate an Adaptive Form with Marketo Engage:
 
 ## Considerations while integrating Adaptive Forms with Marketo Engage
 
-Some of the consideration to integrate an Adaptive Form with Marketo Engage are:
+Some considerations for integrating an Adaptive Form with Marketo Engage are:
 
 * AEM only supports the People(Leads) database among the various Marketo databases.
 * Marketo allows the [creation of 10 custom objects](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/marketo-custom-objects/add-marketo-custom-object-fields) as user-defined objects to store specialized data beyond the standard fields in Leads, supporting unique business needs.
