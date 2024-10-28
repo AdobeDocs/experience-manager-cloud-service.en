@@ -177,6 +177,7 @@ A selection of data types is available for defining your model:
     * Edit the referenced fragment directly.
     * Create a new Content Fragment, based on the appropriate model  
   * The field specifies a universally unique ID (UUID) that references the resource
+    * You do not need to know the UUID. In the fragment editor you can browse to the required fragment
 * **Content Reference**
   * References other content, of any type; can be used to [create nested content](#using-references-to-form-nested-content)
   * If an image is referenced, you can opt to show a thumbnail
@@ -185,6 +186,7 @@ A selection of data types is available for defining your model:
   * References other content, of any type; can be used to [create nested content](#using-references-to-form-nested-content)
   * If an image is referenced, you can opt to show a thumbnail
   * The field specifies a universally unique ID (UUID) that references the resource
+    * You do not need to know the UUID. In the fragment editor you can browse to the required asset resource
 * **JSON Object**
   * Allows the Content Fragment author to enter JSON syntax into the corresponding elements of a fragment. 
     * To allow AEM to store direct JSON that you have copy/pasted from another service.
