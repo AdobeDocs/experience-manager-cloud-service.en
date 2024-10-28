@@ -44,7 +44,7 @@ The table below outlines the reasons to choose AEM Forms over Marketo Forms:
 
 ## Pre-requisites to integrate Adaptive Forms with Marketo Engage
 
-The following are required to connect an Adaptive Form with Marketo Engage:
+The following are required to integrate an Adaptive Form with Marketo Engage:
 
 * Valid Adobe Marketo Engage license.
 * Working instance of Marketo Engage to retrive the [Client ID and Client Secret from the Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/additional-integrations/create-a-custom-service-for-use-with-rest-api).
