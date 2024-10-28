@@ -14,7 +14,7 @@ Adaptive Forms editor provides the **Submit to Marketo Engage** submit action to
 
 AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md) article.
 
-## Advantages to connect forms with Marketo Engage
+## Advantages of connecting forms with Marketo Engage
 
 Below are the few advantages to connect an Adaptive Form with Adobe Marketo Engage:
 
@@ -42,14 +42,14 @@ The table below outlines the reasons to choose AEM Forms over Marketo Forms:
 | **Ease of Integration with Sites**  | No additional learning required; AEM Forms use the same skills as Sites | Additional learning may be required|
 | **Data Submission**| Can submit data to various platforms and offers multiple connectors, such as Connect to SharePoint, Connect to OneDrive, Connect to Salesforce, and more.| Can submit data to limited connectors, for example to Salesforce |
 
-## Pre-requisites to integrate Adaptive Forms with Marketo Engage
+## Prerequisites for integrating Adaptive Forms with Marketo Engage
 
 The following are required to integrate an Adaptive Form with Marketo Engage:
 
 * A valid Adobe Marketo Engage license
 * A working instance of Marketo Engage to [retrieve the Client ID and Client Secret](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/additional-integrations/create-a-custom-service-for-use-with-rest-api).
 
-## Considerations while integrating Adaptive Forms with Marketo Engage
+## Considerations for integrating Adaptive Forms with Marketo Engage
 
 Some considerations for integrating an Adaptive Form with Marketo Engage are:
 
