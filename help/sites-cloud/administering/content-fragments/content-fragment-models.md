@@ -165,14 +165,26 @@ A selection of data types is available for defining your model:
   * Add a set of checkbox, radio button, or drop-down list fields
 * **Tags**
   * Allows fragment authors to access and select areas of tags
-* **Content Reference**
-  * References other content, of any type; can be used to [create nested content](#using-references-to-form-nested-content)
-  * If an image is referenced, you can opt to show a thumbnail
 * **Fragment Reference**
   * References other Content Fragments; can be used to [create nested content](#using-references-to-form-nested-content)
   * The data type can be configured to allow fragment authors to:
     * Edit the referenced fragment directly.
     * Create a new Content Fragment, based on the appropriate model  
+  * The reference specifies the path to the referenced resource; for example `/content/dam/path/to/resource`
+* **Fragment Reference (UUID)**
+  * References other Content Fragments; can be used to [create nested content](#using-references-to-form-nested-content)
+  * The data type can be configured to allow fragment authors to:
+    * Edit the referenced fragment directly.
+    * Create a new Content Fragment, based on the appropriate model  
+  * The field specifies a universally unique ID (UUID) that references the resource
+* **Content Reference**
+  * References other content, of any type; can be used to [create nested content](#using-references-to-form-nested-content)
+  * If an image is referenced, you can opt to show a thumbnail
+  * The reference specifies the path to the referenced resource; for example `/content/dam/path/to/resource`  
+* **Content Reference (UUID)**
+  * References other content, of any type; can be used to [create nested content](#using-references-to-form-nested-content)
+  * If an image is referenced, you can opt to show a thumbnail
+  * The field specifies a universally unique ID (UUID) that references the resource
 * **JSON Object**
   * Allows the Content Fragment author to enter JSON syntax into the corresponding elements of a fragment. 
     * To allow AEM to store direct JSON that you have copy/pasted from another service.
@@ -182,7 +194,7 @@ A selection of data types is available for defining your model:
   * Allows the introduction of tabs for use when editing the Content Fragment content.
     * These are shown as dividers in the model editor, separating sections of the list of content data types. Each instance represents the start of a new tab.
     * In the fragment editor each instance appears as a tab.
-    
+
     >[!NOTE]
     >
     >This data type is purely used for formatting, it is ignored by the AEM GraphQL schema.
