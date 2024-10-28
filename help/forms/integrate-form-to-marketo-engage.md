@@ -76,7 +76,7 @@ To connect the Adaptive Form with Adobe Marketo Engage:
 ## FAQs
 
 **Q: Can you change the submit action for forms configured to connect with the Marketo Engage schema?**
-**A:** By default, the **Submit to Marketo** action is selected when a form is configured to connect with the Marketo Engage schema. However, you can change the submit action for these forms if needed.
+**A:** By default, the **Submit to Marketo** action is selected when a form is configured to connect with the Marketo Engage schema. However, you can change the submit action for the forms if needed.
 
 **Q: What happens when you change the connector of the form?**  
 **A:** If you change the connector of the form, the existing bindings become invalid.
