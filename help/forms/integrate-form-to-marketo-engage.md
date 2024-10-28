@@ -40,7 +40,7 @@ The table below outlines the reasons to choose AEM Forms over Marketo Forms:
 | **Prefill Service** | Offers a Prefill service to auto-populate form data. | No Prefill service available|
 | **Embedding in Sites** | Can be embedded in Sites using iFrame| Cannot be embedded in Sites using iFrame|
 | **Ease of Integration with Sites**  | No additional learning required; AEM Forms use the same skills as Sites | Additional learning may be required|
-| **Data Submission**| Can submit data to various platforms; offers multiple connectors such as Connect to SharePoint, Connect to OneDrive    | Can submit data to limited connectors such as Salesforce |
+| **Data Submission**| Can submit data to various platforms and offers multiple connectors, such as Connect to SharePoint, Connect to OneDrive, Connect to Salesforce, and more.| Can submit data to limited connectors, for example to Salesforce |
 
 ## Pre-requisites to integrate Adaptive Forms with Marketo Engage
 
@@ -76,13 +76,13 @@ To connect the Adaptive Form with Adobe Marketo Engage:
 ## FAQs
 
 **Q: Can you change the submit action for forms configured to connect with the Marketo Engage schema?**
-**A:** By default, the **Submit to Marketo** action is selected when a form is configured to connect with the Marketo Engage schema. However, you can change the submit action for the forms if needed.
+    **A:** By default, the **Submit to Marketo** action is selected when a form is configured to connect with the Marketo Engage schema. However, you can change the submit action for the forms if needed.
 
 **Q: What happens when you change the connector of the form?**  
-**A:** If you change the connector of the form, the existing bindings become invalid.
+    **A:** If you change the connector of the form, the existing bindings become invalid.
 
 **Q: What are the three operations available in the Invoke Service of the Rule Editor for forms integrated with Marketo Engage?**  
-**A:** The three available out of the box operations available in the **Invoke Service** for forms integrated with Marketo Engage are:
+    **A:** The three available out of the box operations available in the **Invoke Service** for forms integrated with Marketo Engage are:
 * Sync Lead
 * Get Lead by ID
 * Get Lead by Filter Type
