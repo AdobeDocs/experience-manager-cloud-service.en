@@ -8,11 +8,9 @@ Role: User, Developer
 
 # Integrate an Adaptive Form with Marketo Engage
 
-You can configure an Adaptive Form to submit data to [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home) on submission. The configured Adaptive Form sends captured data to Marketo Engage for processing. It helps you build custom data capture experience while harnessing the power of Adobe Marketo Engage to build business logics around captured data and automate workflows.
+Integrating Adaptive Forms with Marketo Engage enables users to leverage the capabilities of Marketo Engage to create business logic from captured data and automate workflows, including smart campaigns and email automation. You can configure an Adaptive Form to submit data to [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home) on submission.  
 
-Adaptive Forms editor provides the **Submit to Marketo Engage** submit action to send Adaptive Forms data to Adobe Marketo Engage. 
-
-AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md) article.
+Adaptive Forms editor provides the **Submit to Marketo Engage** submit action to send Adaptive Forms data to Adobe Marketo Engage. Various out of the box submit actions for handling form submissions are available. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md) article.
 
 ## Advantages of connecting forms with Marketo Engage
 
