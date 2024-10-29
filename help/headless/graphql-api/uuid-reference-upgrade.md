@@ -68,7 +68,7 @@ The content upgrade can be managed using the endpoint: `/libs/dam/cfm/maintenanc
 |--- |--- |--- |
 | `/libs/dam/cfm/maintenance.json`| `POST`| |
 | action | `start`| |
-| basePath | `/conf` | Specify either:<ul><li>the root `/conf` to upgrade all the AEM configurations</li><li>a selected AEM configuration path. for which the content upgrade will be executed<br>For example: `/conf/wknd-shared` will only upgrade the single tenant `wknd-shared`</li></ul>
+| basePath | `/conf` | Specify either:<ul><li>the root `/conf` to upgrade all the AEM configurations</li><li>a selected AEM configuration path. for which the content upgrade will be executed<br>For example: `/conf/wknd-shared` will only upgrade the single tenant `wknd-shared`</li></ul> |
 | dryRun | `true`, `false`| <ul><li>`false`: simulate the content upgrade, without saving any content changes</li><li>`true`: perform the content upgrade, and save content changes</li></ul> |
 | interval | `10`| Interval in seconds, after which next segment of Content Fragments, or models will be upgraded. |
 | jobId | `UUID`| The ID of the job that executes the content upgrade.<ul><li>This ID will be required in any subsequent calls related to this execution.</li><li>If the `mode` value is set to `replicate` execution on AEM Publish instances will also need to be under the same `jobId`.</li></ul> |
@@ -78,7 +78,7 @@ The content upgrade can be managed using the endpoint: `/libs/dam/cfm/maintenanc
 | &nbsp; | &nbsp; | &nbsp; |
 | **Response details** | **Value(s)** | | 
 | segmentSize | `1000` | This is the number of Content Fragments or models that will be upgraded in one segment (batch). |
-| serviceTypeId | `uuidUpgradeService` | This is a fixed service ID.
+| serviceTypeId | `uuidUpgradeService` | This is a fixed service ID. |
 
 ### Example Content Upgrade Request {#example-content-upgrade-request}
 
@@ -141,7 +141,7 @@ Content-Length: 386
 | action | status | |
 | jobId | `<UUID>` | The `jobId` that was returned from the call to start the content upgrade. |
 | **Response details** | **Value(s)** | | 
-| status | JSON values | Contains the detailed status of the content upgrade:<ul><li>Updated after every interval (seconds).</li><li>`uuidUpgradeService` execution has two phases:<ol><li>phase-0 to upgrade content fragment models</li><li>phase-1 to upgrade content fragments</li></ol></li><li>In each phase, statistics will will be updated after every interval.</li><li>"jobStatus": "COMPLETED" will mark the upgrade as successfully completed.</li><li>Other status values are self-explanatory.</li></ul>
+| status | JSON values | Contains the detailed status of the content upgrade:<ul><li>Updated after every interval (seconds).</li><li>`uuidUpgradeService` execution has two phases:<ol><li>phase-0 to upgrade content fragment models</li><li>phase-1 to upgrade content fragments</li></ol></li><li>In each phase, statistics will will be updated after every interval.</li><li>"jobStatus": "COMPLETED" will mark the upgrade as successfully completed.</li><li>Other status values are self-explanatory.</li></ul> |
 
 ### Example Content Upgrade Status Request {#example-content-upgrade-status-request}
 
@@ -232,7 +232,7 @@ Content-Length: 1116
 | action | abort | |
 | jobId | `<UUID>` | The `jobId` that was returned from the call to start the content upgrade. |
 | **Response details** | **Value(s)** | | 
-| status | JSON values | Contains the detailed status of the content upgrade:<ul><li>The status to note is "jobStatus": "ABORTED".<br>After this, any pending segments of data will not be processed.</li><li>If the jobStatus is "COMPLETED" before an abort, the call will not have any effect.</li></ul>
+| status | JSON values | Contains the detailed status of the content upgrade:<ul><li>The status to note is "jobStatus": "ABORTED".<br>After this, any pending segments of data will not be processed.</li><li>If the jobStatus is "COMPLETED" before an abort, the call will not have any effect.</li></ul> |
 
 ### Example Abort a Content upgrade Request {#example-abort-content-upgrade-request}
 
