@@ -97,6 +97,6 @@ The following table summarizes the available Content Hub user types, the privile
 | AEM > Production Author instance > AEM Administrators | &minus;  | &minus; | &minus;  |&#10003;|
 | **More information**          | See [Enable Content Hub](/help/assets/enable-assets-ultimate.md##enable-assets-ultimate-new-users) | See [Onboard Collaborator Users](/help/assets/enable-assets-ultimate.md#onboard-collaborator-users)  | See [Onboard Power Users](/help/assets/enable-assets-ultimate.md#onboard-power-users)    |- |
 
-For information on how to get started with Assets Ultimate, see [Upgrade to AEM Assets Ultimate](/help/assets/enable-assets-ultimate.md).
+For information on how to get started with Assets Ultimate, see [Enable AEM Assets Ultimate](/help/assets/enable-assets-ultimate.md).
 
 AEM Assets also provides a lightweight DAM that allows you to perform some of the key capabilities, however, the advanced capabilities are not available to you, such as, custom schemas, metadata translations, custom processing profiles, UI extensibility, custom workflow management, and additional Stage and Production environments. For more information, see [AEM Assets Prime](/help/assets/assets-prime.md).

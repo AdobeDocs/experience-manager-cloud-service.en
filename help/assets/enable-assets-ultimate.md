@@ -11,7 +11,7 @@ role: User, Admin
 
 ![Upgrade to Asset Cloud Service Ultimate](/help/assets/assets/upgrade-assets-cs-ultimate-package-banner.png)
 
-Assets as a Cloud Service Ultimate enables you to perform various key DAM capabilities, such as, advanced asset management operations, including, custom schema, metadata translations, custom processing profiles, Custom workflow management, API-driven UI extensibility, advanced reporting, integrations with adobe and non-adobe applications, and many more. See [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md) for the complete list.
+Assets as a Cloud Service Ultimate enables you to perform various key DAM capabilities, such as, advanced asset management operations, including, custom schema, metadata translations, custom processing profiles, Custom workflow management, API-driven UI extensibility, advanced reporting, integrations with adobe and non-adobe applications, and many more. See [Assets as a Cloud Service Ultimate Overview](/help/assets/assets-ultimate-overview.md) for the complete list.
 
 
 The new Assets as a Cloud Service users must first enable Assets Ultimate while creating the new program using Cloud Manager. Execute the following steps:
@@ -26,7 +26,7 @@ The new Assets as a Cloud Service users must first enable Assets Ultimate while 
 
 1. Click **[!UICONTROL Create]** to create the program. Assets Ultimate is now enabled for Experience Manager Assets as a Cloud Service.
 
-The System Adminstrator is automatically entitled for the AEM Administrators role on Assets Ultimate and must have received an email to navigate to Admin Console to manage the updated product profiles.
+The System Administrator is automatically entitled for the AEM Administrators role on Assets Ultimate and must have received an email to navigate to Admin Console to manage the updated product profiles.
 
 Your AEM as a Cloud Service instance on Admin Console comprises the following product profiles:
 
