@@ -45,6 +45,8 @@ Assets as a Cloud Service Ultimate enables you to perform various key Digital As
 
 * API-driven UI extensibility.
 
+* Content automation
+
 * Basic and advanced reporting, such as, downloads, uploads, asset performance, and asset usage by user.
 
 * Additional Stage and Development environments.
@@ -99,4 +101,4 @@ The following table summarizes the available Content Hub user types, the privile
 
 For information on how to get started with Assets Ultimate, see [Enable AEM Assets Ultimate](/help/assets/enable-assets-ultimate.md).
 
-AEM Assets also provides a lightweight DAM that allows you to perform some of the key capabilities, however, the advanced capabilities are not available to you, such as, custom schemas, metadata translations, custom processing profiles, UI extensibility, custom workflow management, and additional Stage and Production environments. For more information, see [AEM Assets Prime](/help/assets/assets-prime.md).
+AEM Assets also provides a lightweight DAM that allows you to perform some of the key capabilities, however, the advanced capabilities are not available to you, such as, UI extensibility, content automation, and additional Stage and Production environments. For more information, see [AEM Assets Prime](/help/assets/assets-prime.md).

@@ -17,7 +17,7 @@ Assets as a Cloud Service Prime includes a lightweight DAM that enables you to p
 
 * Trainable Smart Tags for better search.
 
-* Automated content creation by creating asset variations using Adobe Express.
+* Creating asset variations using Adobe Express.
 
 * Integrating Assets available in the Cloud Service repository with Adobe and non-Adobe applications using Asset Selector.
 
@@ -27,7 +27,7 @@ Assets as a Cloud Service Prime includes a lightweight DAM that enables you to p
 
 * Content Hub for distributing assets for activation at scale.
 
-However, as your DAM needs grow and you need more capabilities, such as, advanced asset management operations, including custom schema, metadata translations, custom processing profiles, and so on, Custom workflow management, API-driven UI extensibility, advanced reporting, such as, asset performance, and asset usage by user, and additional Stage and Development environments, you must consider upgrading to [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md).
+However, as your DAM needs grow and you need more capabilities, such as, UI extensibility, content automation, and additional Stage and Production environments, you must consider upgrading to [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md).
 
 This article provides an end-to-end workflow to enable Assets as a Cloud Service Prime.
 
