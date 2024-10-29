@@ -11,7 +11,7 @@ role: User, Admin
 
 ![Upgrade to Asset Cloud Service Ultimate](/help/assets/assets/upgrade-assets-cs-ultimate-package-banner.png)
 
-Assets as a Cloud Service Ultimate enables you to perform various key DAM capabilities, such as, advanced asset management operations, including, custom schema, metadata translations, custom processing profiles, custom workflow management, API-driven UI extensibility, advanced reporting, integrations with adobe and non-adobe applications, and many more. See [Assets as a Cloud Service Ultimate Overview](/help/assets/assets-ultimate-overview.md) for the complete list.
+Assets as a Cloud Service Ultimate enables you to perform various key DAM capabilities, such as, advanced asset management operations, including, custom schema, metadata translations, custom processing profiles, custom workflow management, API-driven UI extensibility, content automation, advanced reporting, integrations with adobe and non-adobe applications, and many more. See [Assets as a Cloud Service Ultimate Overview](/help/assets/assets-ultimate-overview.md) for the complete list.
 
 
 The new Assets as a Cloud Service users must first enable Assets Ultimate while creating the new program using Cloud Manager. Execute the following steps:
