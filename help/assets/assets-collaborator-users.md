@@ -11,7 +11,7 @@ role: User, Admin
 
 ![AEM Assets Collaborator users banner](/help/assets/assets/aem-assets-collaborator-users-banner.png)
 
-Experience Manager Assets includes a Collaborator user type and administrators can easily add users or user groups to this user type using Admin Console. For more information, see [Onboard Collaborator Users](/help/assets/upgrade-assets-ultimate-package.md#onboard-collaborator-users).
+Experience Manager Assets includes a Collaborator user type and administrators can easily add users or user groups to this user type using Admin Console. For more information, see [Onboard Collaborator Users](/help/assets/enable-assets-ultimate.md#onboard-collaborator-users).
 
 As a Collaborator user, you can:
 
@@ -19,6 +19,5 @@ As a Collaborator user, you can:
 
 * Create and edit assets using built-in Adobe Express and Firefly leveraging professionally designed templates, brand kits, Adobe Stock assets, and so on.
 
-* Access and leverage approved assets from your organization using AEM Assets Content Hub portal.
 
 In addition, if your administrator has configured Content Hub for your organization, you can access and leverage approved assets from your organization using AEM Assets Content Hub portal. For more information on Content Hub capabilities, see [Content Hub Overview](/help/assets/product-overview.md).

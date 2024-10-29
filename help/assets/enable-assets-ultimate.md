@@ -4,20 +4,17 @@ description:
 feature: Asset Management
 role: User, Admin
 ---
-# Upgrade to [!DNL Assets] as a Cloud Service Ultimate package  {#assets-upgrade-ultimate-package}
+# Enable [!DNL Assets] as a Cloud Service Ultimate {#enable-assets-ultimate}
 
 | [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
 | ------------- | --------------------------- |---------|----|-----|
 
-![Upgrade to Asset Cloud Service Ultimate Package](/help/assets/assets/upgrade-assets-cs-ultimate-package-banner.png)
+![Upgrade to Asset Cloud Service Ultimate](/help/assets/assets/upgrade-assets-cs-ultimate-package-banner.png)
 
-Assets as a Cloud Service Ultimate package enables you to perform various key DAM capabilities, such as, advanced asset management operations, including, custom schema, metadata translations, custom processing profiles, Custom workflow management, API-driven UI extensibility, advanced reporting, integrations with adobe and non-adobe applications, and many more. See [Assets as a Cloud Service Ultimate package](/help/assets/user-types-privileges.md) for the complete list.
+Assets as a Cloud Service Ultimate enables you to perform various key DAM capabilities, such as, advanced asset management operations, including, custom schema, metadata translations, custom processing profiles, Custom workflow management, API-driven UI extensibility, advanced reporting, integrations with adobe and non-adobe applications, and many more. See [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md) for the complete list.
 
-This article provides an end-to-end workflow to either enable the Ultimate package for new users or upgrade your Assets as a Cloud Service environment to the Ultimate package, for existing users.
 
-## Enable Assets as a Cloud Service Ultimate package for new users {#enable-assets-ultimate-package-new-users}
-
-The new Assets as a Cloud Service users must first enable the Assets Ultimate package while creating the new program using Cloud Manager. Execute the following steps:
+The new Assets as a Cloud Service users must first enable Assets Ultimate while creating the new program using Cloud Manager. Execute the following steps:
 
 1. As a system administrator, log on to Cloud Manager. Ensure that you select the right organization while logging in.
 
@@ -25,9 +22,9 @@ The new Assets as a Cloud Service users must first enable the Assets Ultimate pa
 
    While creating the new program, in **[!UICONTROL Solutions & Add-ons]** tab, select **[!UICONTROL Assets Ultimate]**. You can also expand **[!UICONTROL Assets Ultimate]** and select **[!UICONTROL Content Hub]** to enable [Content Hub](/help/assets/product-overview.md) for asset distribution.
 
-   ![AEM Assets Ultimate Package](assets/aem-assets-ultimate-solutions.png)
+   ![AEM Assets Ultimate](assets/aem-assets-ultimate-solutions.png)
 
-1. Click **[!UICONTROL Create]** to create the program. Assets Ultimate package is now enabled for Experience Manager Assets as a Cloud Service.
+1. Click **[!UICONTROL Create]** to create the program. Assets Ultimate is now enabled for Experience Manager Assets as a Cloud Service.
 
 The System Adminstrator is automatically entitled for the AEM Administrators role on Assets Ultimate and must have received an email to navigate to Admin Console to manage the updated product profiles.
 
@@ -62,6 +59,8 @@ You can start adding users or user groups to this product profile to provide the
 >[!NOTE]
 >
 >If you have provisioned Content Hub before August 14, 2024, the Content Hub product profile has `contenthub` mentioned after `Limited Users` instead of `delivery`.
+
+<!--
 
 ## Enable Assets as a Cloud Service Ultimate for existing users {#enable-assets-ultimate-existing-users}
 
@@ -143,7 +142,9 @@ You can start adding users or user groups to this product profile to provide the
 >
 >If you have provisioned Content Hub before August 14, 2024, the Content Hub product profile has `contenthub` mentioned after `Limited Users` instead of `delivery`.
 
-## Step 4: Onboard AEM Assets Collaborator users {#onboard-collaborator-users}
+-->
+
+## Onboard AEM Assets Collaborator users {#onboard-collaborator-users}
 
 AEM Assets Collaborator users can work with assets from Experience manager via integrations of Assets available to your organization in other Adobe products and non-Adobe applications, create and edit assets using built-in Adobe Express and Firefly leveraging professionally designed templates, brand kits, Adobe Stock assets, and so on, and access and leverage approved assets from your organization using AEM Assets Content Hub portal.
 
@@ -170,7 +171,7 @@ You can also access and view the services assigned to Collaborator users, as dep
 >You can turn the toggle off and on to enable or disable the available services, as per your requirements, however, Adobe recommends to use the default services enabled for the product profiles.
 
 
-## Step 4: Onboard AEM Assets Power users {#onboard-power-users}
+## Onboard AEM Assets Power users {#onboard-power-users}
 
 AEM Assets Power users can access all AEM Assets capabilities including managing assets, permissions, metadata and the overall governance and automation around digital assets, work with assets from Experience manager via integrations of Assets available to your organization in other Adobe and non-Adobe applications, create and edit assets using built-in Adobe Express and Firefly leveraging professionally designed templates, brand kits, Adobe Stock assets, and so on, and access and leverage approved assets from your organization using AEM Assets Content Hub portal.
 
