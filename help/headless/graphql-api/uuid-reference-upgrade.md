@@ -6,53 +6,62 @@ role: Admin, Developer
 ---
 # Upgrading your Content Fragments for UUID References {#upgrading-content-fragments-for-UUID-references}
 
-To optimize the stability of your GraphQL filters run a procedure to upgrade the content and fragment references in your Content Fragments to use universally unique identifiers (UUID).
+To optimize the stability of your GraphQL filters, you can upgrade the content and fragment references in your Content Fragments so that they use universally unique identifiers (UUID).
 
-Originally Content Fragment Models provided the data types of **Content Reference** and **Fragment Reference**. Both of these are based on a path that points to the referenced resource, and which can become outdated if the resource is moved. Although these are more than sufficient in most scenarios, Content Fragment Models have been extended to also provide references based on a UUID: **Content Reference (UUID)** and **Fragment Reference (UUID)**. 
+Originally Content Fragment Models provided the data types of **Content Reference** and **Fragment Reference**. Both of these references use a path to point to the referenced resource, and this path can become outdated if the resource is moved. Although such references are more than sufficient in most scenarios, Content Fragment Models have been extended to also provide references based on a UUID:
 
-The new reference types (supporting UUIDs) can be used in new Content Fragment Models and Fragments, and to extend existing instances. 
+* **Content Reference (UUID)** 
+* **Fragment Reference (UUID)**. 
 
-You can also upgrade existing Content Fragments and Models to replace any **Content Reference** and **Fragment Reference** fields with the corresponding new **Content References (UUID)** and **Fragment Reference (UUID)** fields.
+These new reference types can be used both in new Content Fragment Models and Fragments, and to extend existing instances. 
 
-## Upgrade Considerations {#upgrade-considerations}
+To upgrade existing Content Fragments and Models you can run the procedure documented here. 
 
-## What will be upgraded {#what-will-be-upgraded}
+## What is upgraded {#what-is-upgraded}
 
 The following updates are made:
 
 * Fields of the data types:
   * **Content Reference** are converted to **Content Reference (UUID)** 
   * **Fragment Reference** are converted to **Fragment Reference (UUID)** 
-* The path based reference values held in these fields are replaced by the corresponding UUIDs
+* The values of the path based references held in these fields are replaced by the corresponding UUIDs
 
-## What will NOT be upgraded {#what-will-not-be-upgraded}
+## What is NOT upgraded {#what-is-not-upgraded}
 
-The following references will not be upgraded:
+The following references are not upgraded:
 
-* Page references - UUIDs are not supported for these yet
-* Any [invalid references](#what-happens-if-there-are-invalid-references-in-the-existing-data)
+* Page references - UUIDs are not supported yet
+* Any invalid references; for example, where the target of the Content Fragment path, or Asset path, does not exist
+
+  * Invalid references are not upgraded, as if the Content Fragment path, or Asset path, is invalid there is not be a corresponding UUID to assign. The original reference remains untouched.
+
+  * Use a [dry run](#execute-a-dry-run) to detact any invalid references.
+
+  >[!NOTE]
+  >
+  >Being invalid, they are not usable, irrespective of the upgrade.
 
 ## When you should not upgrade {#when-you-should-not-upgrade}
 
 You should not upgrade:
 
-* When any of your Content Fragments use page references; as UUIDs are yet not supported for these
-
-## What happens if there are invalid references in the existing data {#what-happens-if-there-are-invalid-references-in-the-existing-data}
-
-Invalid references will not be upgraded, as if the Content Fragment path, or Asset path, is invalid there will not be a corresponding UUID to assign. The original reference will remain untouched.
-
-Being invalid, they are not usable, irrespective of the upgrade.
-
-You can run the content upgrade in `dry-run` mode to identify any invalid references, by listing them in the log files. You can then fix those, before running the actual content upgrade.
+* When any of your Content Fragments use page references; as UUIDs are yet not supported for page references
 
 ## Upgrade Planning {#upgrade-planning}
 
-## Plan a content freeze time period {#plan-a-content-freeze-time-period}
+There are a few preparation steps before running your upgrade.
+
+### Execute a dry run {#execute-a-dry-run}
+
+Plan time for a dry run of the upgrade to ensure that you find, and correct, any invalid references.
+
+Run the content upgrade in `dry-run` mode to identify any invalid references, by listing them in the log files. You can then fix those, before running the actual content upgrade.
+
+### Enforce a content freeze {#enforce-a-content-freeze}
 
 Execution of the content upgrade should be planned during a content freeze period.
 
-The duration of content freeze depends on volume of Content Fragments being upgraded, and accordingly can vary from few minutes till few hours, and also depends upon the parameters used for the starting the content upgrade.
+The duration of the content freeze depends on the volume of Content Fragments being upgraded. Accordingly the upgrade can range from a few minutes up to a few hours, and also depends upon the parameters used when starting the content upgrade.
 
 ## Running the content upgrade {#running-the-content-upgrade}
 
@@ -68,9 +77,9 @@ The content upgrade can be managed using the endpoint: `/libs/dam/cfm/maintenanc
 |--- |--- |--- |
 | `/libs/dam/cfm/maintenance.json`| `POST`| |
 | action | `start`| |
-| basePath | `/conf` | Specify either:<ul><li>the root `/conf` to upgrade all the AEM configurations</li><li>a selected AEM configuration path. for which the content upgrade will be executed<br>For example: `/conf/wknd-shared` will only upgrade the single tenant `wknd-shared`</li></ul> |
+| basePath | `/conf` | Specify either:<ul><li>the root `/conf` to upgrade all the AEM configurations</li><li>a selected AEM configuration path. for which the content upgrade is executed<br>For example: `/conf/wknd-shared` will only upgrade the single tenant `wknd-shared`</li></ul> |
 | dryRun | `true`, `false`| <ul><li>`false`: simulate the content upgrade, without saving any content changes</li><li>`true`: perform the content upgrade, and save content changes</li></ul> |
-| interval | `10`| Interval in seconds, after which next segment of Content Fragments, or models will be upgraded. |
+| interval | `10`| Interval in seconds, after which the next segment of Content Fragments, or models is upgraded. |
 | jobId | `UUID`| The ID of the job that executes the content upgrade.<ul><li>This ID will be required in any subsequent calls related to this execution.</li><li>If the `mode` value is set to `replicate` execution on AEM Publish instances will also need to be under the same `jobId`.</li></ul> |
 | mode | `replicate`, `noReplicate`| <ul><li>`replicate`: will replicate the same job on all AEM Publish instances</li><li>`noReplicate`: will only run the job on AEM Author instances</li></ul> |
 | parameters | The content upgrade parameters | These include the initial parameters provided to start the content upgrade, and also some internal defaults.|
@@ -141,7 +150,7 @@ Content-Length: 386
 | action | status | |
 | jobId | `<UUID>` | The `jobId` that was returned from the call to start the content upgrade. |
 | **Response details** | **Value(s)** | | 
-| status | JSON values | Contains the detailed status of the content upgrade:<ul><li>Updated after every interval (seconds).</li><li>`uuidUpgradeService` execution has two phases:<ol><li>phase-0 to upgrade content fragment models</li><li>phase-1 to upgrade content fragments</li></ol></li><li>In each phase, statistics will will be updated after every interval.</li><li>"jobStatus": "COMPLETED" will mark the upgrade as successfully completed.</li><li>Other status values are self-explanatory.</li></ul> |
+| status | JSON values | Contains the detailed status of the content upgrade:<ul><li>Updated after every interval (seconds).</li><li>`uuidUpgradeService` execution has two phases:<ol><li>phase-0 to upgrade content fragment models</li><li>phase-1 to upgrade content fragments</li></ol></li><li>In each phase, statistics are updated after every interval.</li><li>"jobStatus": "COMPLETED" marks the upgrade as successfully completed.</li><li>Other status values are self-explanatory.</li></ul> |
 
 ### Example Content Upgrade Status Request {#example-content-upgrade-status-request}
 
@@ -220,7 +229,7 @@ Content-Length: 1116
 >
 >Aborting a content upgrade (that is not a dry run):
 >
->* will not revert any changes already made
+>* does not revert any changes already made
 >* might leave your content in a mixed state 
 >
 >Use this action with caution.
