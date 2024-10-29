@@ -146,7 +146,7 @@ In Content Hub UI, the asset-level view displays the **Asset Card** of approved 
 
 #### Add, Edit or Delete a metadata under Asset Card {#add-edit-delete-metadata}
 
-To add a metadata to an asset, see the instructions below:
+To configure the asset metadata that display on the Asset Card for each asset, see the instructions below:
 
 1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **Asset Card**.
 2. Click **Add metadata**. The **Add asset card metadata** dialog box displays.
