@@ -16,20 +16,12 @@ The Content Hub lets you download and share your assets. These assets may includ
 
 You can download a single asset or multiple assets using the Content Hub. The original versions of the asset are downloaded.
 
-## Prerequisites {#prerequisites}
-
-[Content Hub users](deploy-content-hub.md#onboard-content-hub-users) can perform the actions mentioned in this article.
-
-## Download asset {#download-single-asset} 
-
-[Approve the asset's license](/help/assets/approve-assets-content-hub.md) before downloading them.
-
-### Single Download {#single-download-asset} 
+## Download Single Asset {#single-download-asset} 
 
 Select an asset and click ![download](/help/assets/assets/download-icon.svg) from the top rail. The Download asset dialog box displays the asset's license. Accept the licensing terms and conditions and click **Download**.
 Alternatively, click ![download](/help/assets/assets/download-icon.svg) in the asset card to download the asset.
 
-#### Single asset download from Asset dialog box {#single-download-from-asset-dialog-box}
+### Download single Asset from Asset dialog box {#single-download-from-asset-dialog-box}
 
 1. Click the asset thumbnail. The asset dialog box displays.
 1. Click ![download](/help/assets/assets/download-icon.svg) from the rightmost toolbar. The download pane displays the asset renditions and the licensing terms and conditions acceptance checkbox.
@@ -43,7 +35,7 @@ Alternatively, click ![download](/help/assets/assets/download-icon.svg) in the a
    * Click the **Original Rendition Box** to return to the original asset rendition in the left pane.
 1. Accept the licensing terms and conditions (for licensed asset) and click **Download** to download the asset.
 
-### Multi Download {#multi-download} 
+## Download Multiple Assets{#multi-download} 
 
 1. Select the assets and click ![download](/help/assets/assets/download-icon.svg) from the top rail. The dialog box that displays depends on whether the download list includes expired assets or only non-expired assets. <br/>
 **Download expired assets dialog box:** This dialog box displays the expired assets' preview along with their expiry date in the left pane. The expired assets' count out of total selected displays in the right pane. Click **Proceed with all assets** to download expired assets with other assets (if present). The Download assets dialog box displays. See the [Download assets dialog box](#Download-asset-dialog-box) to proceed further.
@@ -63,7 +55,7 @@ Alternatively, click ![download](/help/assets/assets/download-icon.svg) in the a
 1. Accept the terms and conditions and then click **Download** to download assets associated with the available licenses in the left pane.
 ![download-multiple-license](/help/assets/assets/download-multiple-license.png)
 
-### Download non-licensed assets {#download-non-licensed-assets}
+### Download non-licensed Assets {#download-non-licensed-assets}
 
  To download non-licensed assets, select the assets and click ![download](/help/assets/assets/download-icon.svg) from the top rail.
 
