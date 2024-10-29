@@ -286,12 +286,18 @@ Various data types now include the possibility to define validation requirements
 
 Content Fragments can form nested content, using either of the following data types:
 
-* **[Content Reference](#content-reference)**
+* [Content Reference](#content-reference)
   * Provides a simple reference to other content; of any type.
+  * Provided by the data types:
+    * **Content Reference** - path based
+    * **Content Reference (UUID)** - UUID based
   * Can be configured for a one or multiple references (in the resulting fragment).
 
-* **[Fragment Reference](#fragment-reference-nested-fragments)** (Nested Fragments)
+* [Fragment Reference](#fragment-reference-nested-fragments) (Nested Fragments)
   * References other fragments, dependent on the specific models specified.
+  * Provided by the data types:
+    * **Fragment Reference** - path based
+    * **Fragment Reference (UUID)** - UUID based
   * Allows you to include/retrieve structured data.
     >[!NOTE]
     >
@@ -316,11 +322,11 @@ Content Fragments can form nested content, using either of the following data ty
 
 ### Content Reference {#content-reference}
 
-The Content Reference allows you to render content from another source; for example, image, page or Experience Fragment.
+The **Content Reference** and **Content Reference (UUID)** data types allow you to render content from another source; for example, image, page or Experience Fragment.
 
 In addition to standard properties you can specify:
 
-* The **Root Path**, which specifies where to store any referenced content
+* The **Root Path**, which specifies, or represents, where to store any referenced content
   >[!NOTE]
   >
   >This is mandatory if you want to directly upload and reference images in this field when using the Content Fragment editor.
@@ -343,7 +349,7 @@ In addition to standard properties you can specify:
 
 ### Fragment Reference (Nested Fragments) {#fragment-reference-nested-fragments}
 
-The Fragment Reference references one, or more, Content Fragments. This feature is of particular interest when retrieving content for use in your app, as it allows you to retrieve structured data with multiple layers.
+The **Fragment Reference** and **Fragment Reference (UUID)** data types can reference one, or more, Content Fragments. This feature is of particular interest when retrieving content for use in your app, as it allows you to retrieve structured data with multiple layers.
 
 For example:
 
@@ -380,7 +386,7 @@ In addition to standard properties you can define:
   Multiple models can be selected. When adding references to a Content Fragment, any referenced fragments must have been created using these models.
 
 * **Root Path**
-  This specifies a root path for any fragments referenced.
+  This specifies, or represents, a root path for any fragments referenced.
 
 * **Allow Fragment Creation**
 
