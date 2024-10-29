@@ -350,6 +350,16 @@ Replace the usage of `org.apache.felix.http.whiteboard` with the [OSGi Http Whit
 Action list:
 * Replace the usage of `org.apache.felix.http.whiteboard` with [OSGi Http Whiteboard](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html)
 
+### Usage of `org.objectweb.asm` {#org.objectweb.asm}
+
+Update the usage of `org.objectweb.asm` to version 9.5 or higher to ensure support for newer JVM runtimes.
+
+### Usage of `org.apache.groovvy` {#org.apache.groovy}
+
+Update the usage of `org.objectweb.asm` to version 4.0.22 or higher to ensure support for newer JVM runtimes.
+
+This bundle can be indirectly included by adding third party dependencies such as the AEM Groovy Console.
+
 ## OSGI Configuration {#osgi-configuration}
 
 The two lists below reflect the AEM as a Cloud Service OSGi configuration surface, describing what customers can configure.
