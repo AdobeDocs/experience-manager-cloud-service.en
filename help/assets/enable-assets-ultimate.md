@@ -60,8 +60,6 @@ You can start adding users or user groups to this product profile to provide the
 >
 >If you have provisioned Content Hub before August 14, 2024, the Content Hub product profile has `contenthub` mentioned after `Limited Users` instead of `delivery`.
 
-<!--
-
 ## Enable Assets as a Cloud Service Ultimate for existing users {#enable-assets-ultimate-existing-users}
 
 Existing Assets as a Cloud Service users can upgrade to Assets ultimate by executing two simple steps. You can navigate to the Assets as a Cloud Service program in Cloud Manager and see upgrade status on the Program card based on the availability of credits. If there are enough credits available for upgrade to Assets Ultimate, you can see the status as `Assets license upgrade required`, as depicted in the following image:
@@ -141,8 +139,6 @@ You can start adding users or user groups to this product profile to provide the
 >[!NOTE]
 >
 >If you have provisioned Content Hub before August 14, 2024, the Content Hub product profile has `contenthub` mentioned after `Limited Users` instead of `delivery`.
-
--->
 
 ## Onboard AEM Assets Collaborator users {#onboard-collaborator-users}
 
