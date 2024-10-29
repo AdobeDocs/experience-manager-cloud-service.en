@@ -557,7 +557,9 @@ The table below describes traffic routing.
 
 ### Useful Domains for Configuration {#vpn-useful-domains-for-configuration}
 
-The table below describes a set of domains and IPs that are useful for configuration and development.
+The diagram below provides a visual representation of a set of domains and associated IPs that are useful for configuration and development. The table further below the diagram describes those domains and IPs.
+
+![VPN Domain Configuration](/help/security/assets/AdvancedNetworking.jpg)
 
 <table>
 <thead>
