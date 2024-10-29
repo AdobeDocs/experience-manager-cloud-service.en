@@ -90,12 +90,4 @@ On AEM Cloud Service author services as well as Asset Selector, the IMS Bearer T
 
 ### Delivery for custom identity providers on Publish service {#delivery-custom-identity-provider}
 
-AEM Sites, AEM Assets and Dynamic Media with OpenAPI licenses can used together, and restricted delivery of assets can be configured on websites delivered through AEM Publish or Preview services.
-In case AEM Sites' Publish and Preview services are configured to user a [custom identity provider (IdP)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0), the group that must have access to secured assets within can be included in the `groupMembership` attribute during the setup process.  
-When a website user log on to custom identity provider and access the website hosted on the Publish/Preview service, the `groupMembership` attribute is read and a secure-cookie is constructed and delivered on the website post successful authentication. This secure-cookie is included in all subsequent request to deliver the website content to the user-agent.
-
-When a secured asset is requested on a page, AEM Publish and Preview tiers extract the authorization material from the secure-cookie and validate the access. If there is a match, the asset gets displayed.
-
->[!NOTE]
->
-> In the [support ticket to activate Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities), mention restricted delivery in the use case. Adobe Engineering will help with necessary clarifications and/or set up process for restricted delivery.
+AEM Sites, AEM Assets and Dynamic Media with OpenAPI licenses can be used together, allowing for restricted delivery of assets to be configured on websites hosted on AEM Publish or Preview service. The secure delivery flow leverages browser cookies to establish user's access and having a custom domain for delivery tier that is subdomain of the publish domain is a pre-requisite for implementing this use case. In case AEM Sites' Publish and Preview services are configured to use a [custom identity provider (IdP)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0), a new cookie called `delivery-token` encapsulating user's group membership must be set on publish domain post user's authentication. The delivery tier extracts the authorization material from the secure-cookie and validates the access. Please log an [enterprise support ticket](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities) for more details.
