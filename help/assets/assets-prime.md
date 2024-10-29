@@ -1,17 +1,17 @@
 ---
-title: Assets as a Cloud Service Prime package
-description: Assets as a Cloud Service Prime package
+title: Assets as a Cloud Service Prime
+description: Assets as a Cloud Service Prime
 feature: Asset Management
 role: User, Admin
 ---
-# [!DNL Assets] as a Cloud Service Prime package  {#assets-upgrade-ultimate-package}
+# [!DNL Assets] as a Cloud Service Prime  {#assets-prime}
 
 | [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
 | ------------- | --------------------------- |---------|----|-----|
 
-![AEM Assets Prime package banner image](/help/assets/assets/aem-assets-prime-package-banner.png)
+![AEM Assets Prime banner image](/help/assets/assets/aem-assets-prime-package-banner.png)
 
-Assets as a Cloud Service Prime package includes a lightweight DAM that enables you to perform various key capabilities, such as:
+Assets as a Cloud Service Prime includes a lightweight DAM that enables you to perform various key capabilities, such as:
 
 * Asset management tasks, such as metadata management, permissions management, and asset governance.
 
@@ -27,13 +27,13 @@ Assets as a Cloud Service Prime package includes a lightweight DAM that enables 
 
 * Content Hub for distributing assets for activation at scale.
 
-However, as your DAM needs grow and you need more capabilities, such as, advanced asset management operations, including custom schema, metadata translations, custom processing profiles, and so on, Custom workflow management, API-driven UI extensibility, advanced reporting, such as, asset performance, and asset usage by user, and additional Stage and Development environments, you must consider upgrading to [Assets as a Cloud Service Ultimate package](/help/assets/user-types-privileges.md).
+However, as your DAM needs grow and you need more capabilities, such as, advanced asset management operations, including custom schema, metadata translations, custom processing profiles, and so on, Custom workflow management, API-driven UI extensibility, advanced reporting, such as, asset performance, and asset usage by user, and additional Stage and Development environments, you must consider upgrading to [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-package-overview.md).
 
-This article provides an end-to-end workflow to enable Assets as a Cloud Service Prime package.
+This article provides an end-to-end workflow to enable Assets as a Cloud Service Prime.
 
-## Enable Assets as a Cloud Service Prime package{#enable-assets-prime-package}
+## Enable Assets as a Cloud Service Prime{#enable-assets-prime}
 
-Enable the Assets Prime package while creating the new program using Cloud Manager. Execute the following steps:
+Enable Assets Prime  while creating the new program using Cloud Manager. Execute the following steps:
 
 1. As a system administrator, log on to Cloud Manager. Ensure that you select the right organization while logging in.
 
@@ -41,7 +41,7 @@ Enable the Assets Prime package while creating the new program using Cloud Manag
 
    While creating the new program, in **[!UICONTROL Solutions & Add-ons]** tab, select **[!UICONTROL Assets Prime]**. You can also expand **[!UICONTROL Assets Prime]** and select **[!UICONTROL Content Hub]** to enable [Content Hub](/help/assets/product-overview.md) for asset distribution.
 
-   ![AEM Assets Ultimate Package](assets/aem-assets-prime.png)
+   ![AEM Assets Ultimate](assets/aem-assets-prime.png)
 
 1. Click **[!UICONTROL Create]** to create the program. 
 
@@ -55,9 +55,9 @@ Enable the Assets Prime package while creating the new program using Cloud Manag
 >
 >Assets Prime only allows you to create a production environment. The option to Add environment is no longer available once the production environment is created successfully.
 
-Assets Prime package is now enabled for Experience Manager Assets as a Cloud Service.
+Assets Prime is now enabled for Experience Manager Assets as a Cloud Service.
 
-![AEM Assets Prime Package is avaiable](assets/aem-assets-prime-setup-complete.png)
+![AEM Assets Prime is avaiable](assets/aem-assets-prime-setup-complete.png)
 
 System administrator is automatically entitled as AEM administrator and receives an email to navigate to Admin Console to manage product profiles.
 
@@ -68,9 +68,9 @@ Your AEM as a Cloud Service instance on Admin Console comprises the following pr
 
 * AEM Users
 
-* AEM Assets Collaborator Users
+* [AEM Assets Collaborator Users](#onboard-collaborator-users)
 
-* AEM Assets Power Users
+* [AEM Assets Power Users](#onboard-power-users)
 
 You can start adding users or user groups to AEM Assets Collaborator Users and AEM Assets Power Users product profiles. For more information, see [Onboard AEM Assets Collaborator users](#onboard-collaborator-users) and [Onboard AEM Assets Power users](#onboard-power-users).
 
@@ -90,11 +90,13 @@ Click the instance name to view the `AEM Assets Limited Users` Content Hub produ
 
 ![Content Hub product profile](assets/content-hub-product-profile.png)
 
+You can start adding users or user groups to this product profile to provide them access to Content Hub.
+
 >[!NOTE]
 >
 >If you have provisioned Content Hub before August 14, 2024, the Content Hub product profile has `contenthub` mentioned after `Limited Users` instead of `delivery`.
 
-## Step 4: Onboard AEM Assets Collaborator users {#onboard-collaborator-users}
+## Onboard AEM Assets Collaborator users {#onboard-collaborator-users}
 
 AEM Assets Collaborator users can work with assets from Experience manager via integrations of Assets available to your organization in other Adobe products and non-Adobe applications, create and edit assets using built-in Adobe Express and Firefly leveraging professionally designed templates, brand kits, Adobe Stock assets, and so on, and access and leverage approved assets from your organization using AEM Assets Content Hub portal.
 
@@ -116,7 +118,7 @@ You can also access and view the services assigned to Collaborator users, as dep
 
 `Adobe Express` and `AEM Assets Collaborator Users` services are enabled by default. You can turn the toggle off and on, as per your requirements.
 
-## Step 4: Onboard AEM Assets Power users {#onboard-power-users}
+## Onboard AEM Assets Power users {#onboard-power-users}
 
 AEM Assets Power users can access all AEM Assets capabilities including managing assets, permissions, metadata and the overall governance and automation around digital assets, work with assets from Experience manager via integrations of Assets available to your organization in other Adobe and non-Adobe applications, create and edit assets using built-in Adobe Express and Firefly leveraging professionally designed templates, brand kits, Adobe Stock assets, and so on, and access and leverage approved assets from your organization using AEM Assets Content Hub portal.
 
