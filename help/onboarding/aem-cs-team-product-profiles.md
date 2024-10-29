@@ -16,6 +16,16 @@ When granting a user access to a specific Adobe solution, you do not necessarily
 
 The Adobe Admin Console has a structured hierarchy of product, product instances, and product profiles where an organization's internal users can be assigned membership, giving them access to the solutions and features that have been licensed. 
 
+<!-- Alexandru: Drafting for now 
+
+Your AEM as a Cloud Service team members are added and assigned to one or more of the following product profiles via the Admin Console during onboarding.
+
+* **AEM Administrators**: An AEM administrator is typically assigned to developers, in particular developers who need access to, for example, the development environments. The AEM administrator's product profile is used to grant administrator privileges in the associated AEM instance.
+
+* **AEM Users**: AEM users are the users in your organization who use AEM as a Cloud Service generally to create content. These users need to access AEM to do their tasks. The AEM users product profile is typically assigned to an AEM content author who creates and reviews the content. This content can be of many types such as pages, assets, publications, and so on. The AEM users product profile shown below is assigned to these members.
+
+![Product profiles](/help/onboarding/assets/admin-console-profiles.png) -->
+
 ## AEM as a Cloud Service Product Profiles {#aem-product-profiles}
 
 AEM as a Cloud Service is a fully cloud-native offering that delivers AEM as a service. It delivers AEM in a cloud native manner, with new attributes like always on, always current, always secure, and always at scale. At the same time, it retains the main value proposition that AEM provides as a customizable platform to customers and allows enterprise grade teams to integrate in their development and delivery procedure. See [Introduction to Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md) to learn more about AEM as a Cloud Service.
@@ -50,14 +60,6 @@ Below are the Product Profiles in an author Product Instance, for an organizatio
 ![Sites Product Instances](/help/onboarding/assets/sites-product-instances.png)
 
 The following table describes a list of the possible Product Profiles below an environment-tier-specific Product Instance.
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
 
 <table border="1">
 <table style="table-layout:auto">
@@ -181,17 +183,19 @@ The following table describes a list of the possible Product Profiles below an e
     </tr>
 </table>
 
-</body>
-</html>
+Note that each Product Profile has an associated Product Profile Service enabled by default. Unless you have complex access requirements, it is recommended to keep just the Default Service selected. A corresponding AEM group will be created in AEM with the naming convention `<Product Profile Prefix> - Service` (for example, **AEM Sites Content Managers - Service**), and the users in the parent product profiles will automatically become members of that corresponding AEM group.
 
+The AEM group in AEM associated with the service will have the aggregated set of users that exist in all the associated Product Profiles of that service for that environment-tier combination.
 
-<!-- AS: Draft for now Your AEM as a Cloud Service team members are added and assigned to one or more of the following product profiles via the Admin Console during onboarding.
+![Services](/help/onboarding/assets/services.png)
 
-* **AEM Administrators**: An AEM administrator is typically assigned to developers, in particular developers who need access to, for example, the development environments. The AEM administrator's product profile is used to grant administrator privileges in the associated AEM instance.
+>[!NOTE]
+>
+>The steps above illustrate new Product Profiles and services created for new environments.
 
-* **AEM Users**: AEM users are the users in your organization who use AEM as a Cloud Service generally to create content. These users need to access AEM to do their tasks. The AEM users product profile is typically assigned to an AEM content author who creates and reviews the content. This content can be of many types such as pages, assets, publications, and so on. The AEM users product profile shown below is assigned to these members.
+The following image represents the AEM groups reflecting the AEM Sites Content Managers author tier Product Profile and service.
 
-![Product profiles](/help/onboarding/assets/admin-console-profiles.png) -->
+![AEM Group to Service mapping](/help/onboarding/assets/profile-to-service-mapping.png)
 
 >[!NOTE]
 >
