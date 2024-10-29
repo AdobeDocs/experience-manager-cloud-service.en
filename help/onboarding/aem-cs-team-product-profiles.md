@@ -61,7 +61,6 @@ Below are the Product Profiles in an author Product Instance, for an organizatio
 
 The following table describes a list of the possible Product Profiles below an environment-tier-specific Product Instance.
 
-<table border="1">
 <table style="table-layout:auto">
     <tr>
         <th>Product Instance</th>
