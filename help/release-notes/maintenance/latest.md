@@ -18,15 +18,33 @@ The 2024.11.0 feature activation will provide the full feature set for this main
 
 ### Enhancements {#enhancements-X}
 
-None.
+* SITES-23591: Content Fragments: Content fragment upgrade for UUID support
+* SITES-25440: Content Fragments: CFM Search API to show replication status
+* SITES-24369: Content Fragments: OpenAPI documentation improvements
+* SITES-25478: Content Fragments: Add back-end support for external asset references
+* SITES-26119: Content Fragments: Add support of external asset references in reference type
 
 ### Fixed Issues {#fixed-issues-X}
 
-None.
+* SITES-10575: MSM: Blueprint Bloomfilter Loader tries to load >100,000 rows
+* SITES-20755: Content Fragments: Asset reference with UUID refresh doesn't show the thumbnail
+* SITES-26253: Content Fragments: UUID migration: Change sling job topic to be generic
+* SITES-21338: Content Fragments: referencedBy endpoint does not return the correct page reference
+* SITES-24421: Content Fragments: Edit CF endpoint does not work for CF retrieved via GET CF
+* SITES-25461: Content Fragments: Filter by model in search for CFs should be case-insensitive
+* SITES-25471: Content Fragments: Fix validation of global models in the ModelValidatorServlet
+* SITES-25795: Content Fragments: CF Model API is failing when there is no cq date set
+* SITES-25817: Content Fragments: Enhance promoteLaunch: update last promotion for CF Launches
+* SITES-26030: Content Fragments: Endpoint /referencesTree doesn't return needed header
+* SITES-26031: Content Fragments: Replication status not returned on CFM search endpoint
+* SITES-26213: Content Fragments: Unpublish content fragments should only validate published references
+* SITES-26226: Content Fragments: Start workflow issue when none of the given paths are usable
+* SITES-26238: Content Fragments: The asset references returned by the API have a different order than the order from JCR
+* SITES-25456: Events: When moving a page, a page-deleted event is generated besides the page-moved event
+* SITES-25658: Events: The tier and sourceUrl are not populated in the page content state events
+* SITES-6497: Launches: Create page in launch not working
 
 ### Known Issues {#known-issues-X}
-
-* FORMS-15818: Component descriptor entry `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` not found statements in server logs. These are harmless log statements.
 
 ### Deprecated Features and APIs {#deprecated-X}
 
