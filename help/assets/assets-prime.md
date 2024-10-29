@@ -27,7 +27,7 @@ Assets as a Cloud Service Prime includes a lightweight DAM that enables you to p
 
 * Content Hub for distributing assets for activation at scale.
 
-However, as your DAM needs grow and you need more capabilities, such as, advanced asset management operations, including custom schema, metadata translations, custom processing profiles, and so on, Custom workflow management, API-driven UI extensibility, advanced reporting, such as, asset performance, and asset usage by user, and additional Stage and Development environments, you must consider upgrading to [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-package-overview.md).
+However, as your DAM needs grow and you need more capabilities, such as, advanced asset management operations, including custom schema, metadata translations, custom processing profiles, and so on, Custom workflow management, API-driven UI extensibility, advanced reporting, such as, asset performance, and asset usage by user, and additional Stage and Development environments, you must consider upgrading to [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md).
 
 This article provides an end-to-end workflow to enable Assets as a Cloud Service Prime.
 
@@ -72,9 +72,10 @@ Your AEM as a Cloud Service instance on Admin Console comprises the following pr
 
 * [AEM Assets Power Users](#onboard-power-users)
 
-You can start adding users or user groups to AEM Assets Collaborator Users and AEM Assets Power Users product profiles. For more information, see [Onboard AEM Assets Collaborator users](#onboard-collaborator-users) and [Onboard AEM Assets Power users](#onboard-power-users).
 
 ![AEM Assets Product Profiles](assets/aem-assets-product-profiles.png)
+
+You can start adding users or user groups to AEM Assets Collaborator Users and AEM Assets Power Users product profiles. For more information, see [Onboard AEM Assets Collaborator users](#onboard-collaborator-users) and [Onboard AEM Assets Power users](#onboard-power-users).
 
 If you have enabled Content Hub for Assets as a Cloud Service, there is a new instance created within AEM Assets as a Cloud Service on Admin Console with `delivery` as the suffix:
 
