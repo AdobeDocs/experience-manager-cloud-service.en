@@ -1017,6 +1017,7 @@ user-guide-title: AEM as a Cloud Service
     + [Persisted GraphQL queries](/help/headless/graphql-api/persisted-queries.md)
     + [Optimizing GraphQL Queries](/help/headless/graphql-api/graphql-optimization.md)
     + [Updating your Content Fragments for optimized GraphQL Filtering](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
+    + [Upgrading your Content Fragments for UUID References](/help/headless/graphql-api/uuid-reference-upgrade.md)
     + [Sample GraphQL queries](/help/headless/graphql-api/sample-queries.md)
     + [Troubleshoot GraphQL queries](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
   + [Content Fragments and Models OpenAPIs](/help/headless/content-fragment-openapis.md)
