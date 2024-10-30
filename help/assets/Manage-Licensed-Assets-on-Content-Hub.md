@@ -16,5 +16,3 @@ Execute the following steps:
 ![absolute path](/help/assets/assets/absolute-path.png)
 1. Approve the asset to make it available in Content Hub and click **Save**. For information on how to approve an asset, see [Set asset status](/help/assets/manage-organize-assets-view.md#set-asset-status).
 1. Similar to step 4, [approve the licensed asset](/help/assets/manage-organize-assets-view.md#set-asset-status) defined in Step 3.
-
-
