@@ -32,7 +32,7 @@ The My Programs console provides an overview of all programs to which you have a
 1. Tabs that allow you to toggle the current view of your programs.
    * **Home** view (default) that selects the **My Programs** view with an overview of all programs
    * **License** that accesses the [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md).
-   * Note that the tabs default to closed and can be revealed using the hamburger menu in the [Cloud Manager header](#cloud-manager-header).
+   * Note that the tabs default to closed and can be revealed using https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg in the [Cloud Manager header](#cloud-manager-header).
 1. [Statistics and call-to-action](#statistics) for an overview of your recent activity
 1. [**My Programs** section](#my-programs-section) with an overview of all your programs
 1. [Quick links](#quick-links-section) to access related resources easily.
@@ -189,7 +189,7 @@ The program toolbar still gives you access to switch to other programs quickly, 
 
 ![Program toolbar](assets/cloud-manager-program-toolbar.png)
 
-The toolbar always shows the tab that you currently are on, even if you have hidden the tabs using the hamburger menu.
+The toolbar always shows the tab that you currently are on, even if you have hidden the tabs using https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg.
 
 ### Program tabs {#program-tabs}
 
