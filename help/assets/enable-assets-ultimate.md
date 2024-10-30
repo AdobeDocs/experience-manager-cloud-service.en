@@ -1,22 +1,29 @@
 ---
-title: Assets as a Cloud Service user types and privileges
-description: 
+title: Enable Assets Ultimate
+description: Learn how to enable Assets Ultimate for new and existing customers.
 feature: Asset Management
 role: User, Admin
 ---
-# Enable [!DNL Assets] as a Cloud Service Ultimate {#enable-assets-ultimate}
+# Enable [!DNL Assets] as a Cloud Service Ultimate {#enable-assets-cloud-service-ultimate}
 
 | [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Upgrade to Asset Cloud Service Ultimate](/help/assets/assets/upgrade-assets-cs-ultimate-package-banner.png)
 
-Assets as a Cloud Service Ultimate enables you to perform various key DAM capabilities, such as, advanced asset management operations, including, custom schema, metadata translations, custom processing profiles, custom workflow management, API-driven UI extensibility, content automation, advanced reporting, integrations with adobe and non-adobe applications, and many more. See [Assets as a Cloud Service Ultimate Overview](/help/assets/assets-ultimate-overview.md) for the complete list.
+Assets as a Cloud Service Ultimate enables you to perform various key DAM capabilities, such as, asset management and library services, security and rights management, Creative and Experience Cloud connections, UI extensibility, API-driven automation, integrations with Adobe and non-Adobe applications, custom code deployment and many more. See [Assets as a Cloud Service Ultimate Overview](/help/assets/assets-ultimate-overview.md) for the complete list.
 
+## Enable Assets Ultimate {#enable-assets-ultimate}
 
-The new Assets as a Cloud Service users must first enable Assets Ultimate while creating the new program using Cloud Manager. Execute the following steps:
+New Assets as a Cloud Service customers must first enable Assets Ultimate by creating a new program using Cloud Manager. 
+
+Execute the following steps:
 
 1. As a system administrator, log on to Cloud Manager. Ensure that you select the right organization while logging in.
+
+   >[!NOTE]
+   >
+   >Ensure that you are added to the appropriate Cloud Manager product profile to add a new program. For more information, see [Role Based Permissions in Cloud Manager](/help/onboarding/cloud-manager-introduction.md#role-based-permissions).
 
 1. [Create a new program](/help/journey-onboarding/create-program.md) and [add environments](/help/journey-onboarding//create-environments.md) to it.
 
@@ -26,7 +33,7 @@ The new Assets as a Cloud Service users must first enable Assets Ultimate while 
 
 1. Click **[!UICONTROL Create]** to create the program. Assets Ultimate is now enabled for Experience Manager Assets as a Cloud Service.
 
-The System Administrator is automatically entitled for the AEM Administrators role on Assets Ultimate and must have received an email to navigate to Admin Console to manage the updated product profiles.
+The System Administrator is automatically entitled as an AEM Administrator on Assets Ultimate and receives an email to navigate to Admin Console to manage the available product profiles.
 
 Your AEM as a Cloud Service instance on Admin Console comprises the following product profiles:
 
@@ -60,17 +67,17 @@ You can start adding users or user groups to this product profile to provide the
 >
 >If you have provisioned Content Hub before August 14, 2024, the Content Hub product profile has `contenthub` mentioned after `Limited Users` instead of `delivery`.
 
-## Enable Assets as a Cloud Service Ultimate for existing users {#enable-assets-ultimate-existing-users}
+## Enable Assets Ultimate for existing customers {#enable-assets-ultimate-existing-customers}
 
-Existing Assets as a Cloud Service users can upgrade to Assets ultimate by executing two simple steps. You can navigate to the Assets as a Cloud Service program in Cloud Manager and see upgrade status on the Program card based on the availability of credits. If there are enough credits available for upgrade to Assets Ultimate, you can see the status as `Assets license upgrade required`, as depicted in the following image:
+Existing Assets as a Cloud Service customers can upgrade to Assets Ultimate by executing two simple steps. You can navigate to the Assets as a Cloud Service program in Cloud Manager and see upgrade status on the Program card based on the availability of Assets Ultimate credits. If there are enough credits available for upgrade to Assets Ultimate, you can see the status as `Assets license upgrade required`, as depicted in the following image:
 
 ![AEM Assets upgrade to Assets Ultimate](assets/aem-assets-upgrade-status-ultimate.png)
 
-In case an existing user purchases a new license for Assets Ultimate, the upgrade status displays as `Assets license upgrade available`.
+In case an existing customer purchases a new license for Assets Ultimate, the upgrade status displays as `Assets license upgrade available`.
 
 ### Prerequisites for upgrade {#prerequisites-assets-upgrade}
 
-All environments must be upgraded to latest AEM as a Cloud Service release version or a minimum of x release version. If you do not meet the minimum requirements, contact your Adobe representative to switch to the required AEM release version.
+All environments must be upgraded to latest AEM as a Cloud Service release version or a minimum of `2024.10.18175` release version. If you do not meet the minimum requirements, contact your Adobe representative to switch to the required AEM release version.
 
 ### Upgrade to Assets Ultimate {#upgrade-assets-ultimate}
 
@@ -94,9 +101,7 @@ Execute the following steps:
 
    You can also add product profiles to selected environments by navigating to the **[!UICONTROL Environments]** section, clicking the More Options icon corresponding to an environment, and selecting **[!UICONTROL Add Product Profiles]**.
 
-   ![AEM Assets select individual environments in Environments section](assets/aem-assets-select-individual-environments.png)
-
-   The status of the environment displays `Updating Product Profiles` while the new product profiles are being added and subsequently displays `Running` when the process is complete.
+   The status of the environment displays `Adding Product Profiles` while the new product profiles are being added and subsequently displays `Running` when the process is complete.
 
    You must add product profiles to all environments available in the program, individually or all environments together, before executing the next step.
 

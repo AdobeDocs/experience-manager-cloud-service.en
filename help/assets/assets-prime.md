@@ -1,6 +1,6 @@
 ---
-title: Assets as a Cloud Service Prime
-description: Assets as a Cloud Service Prime
+title: Assets Prime
+description: Learn more about key aspects of Assets Prime, such as, key benefits, user types, and their privileges.
 feature: Asset Management
 role: User, Admin
 ---
@@ -13,35 +13,42 @@ role: User, Admin
 
 Assets as a Cloud Service Prime includes a lightweight DAM that enables you to perform various key capabilities, such as:
 
-* Asset management tasks, such as metadata management, permissions management, and asset governance.
+* **Asset management and library services**​: Tools that enable users to ingest, store, catalog, control, manage, and govern a brand's digital assets in a centralized repository 
 
-* Trainable Smart Tags for better search.
+* **Search, Discovery, and Collaboration**: Tools that enable users to browse, discover, share, and collaborate on assets they need to create rich customer experiences.
 
-* Creating asset variations using Adobe Express.
+* **Security & Rights Management**: Tools to manage access, permissions, rights, and security to ensure compliance, consistency, and brand integrity.
 
-* Integrating Assets available in the Cloud Service repository with Adobe and non-Adobe applications using Asset Selector.
+* **Creative Cloud Connections**: Tools that enable marketing & creative teams to collaborate with simplified access, comment, review, and annotations to update or finalize digital assets.
 
-* Delivery of assets using Publish URL.
+* **Experience Cloud Connections**: Tools to support native access to digital assets from other Experience Cloud applications and services.
 
-* Basic reporting operations, such as, asset usage and downloads.
+* **Distribution Portal Experience with no extensibility options (Content Hub)**: Tools to expand access to a brand's approved digital assets to extended stakeholders to ensure usage and brand consistency.
 
-* Content Hub for distributing assets for activation at scale.
+* **Integrations**: integrations with other Adobe and non-Adobe applications.
 
-However, as your DAM needs grow and you need more capabilities, such as, UI extensibility, content automation, and additional Stage and Production environments, you must consider upgrading to [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md).
+* **Dynamic Media (add-on)**: Tools to transform and deliver images, videos, and other emerging content for rich, interactive, multimedia experiences for any device at scale.
+
+However, as your DAM needs grow and you need more capabilities, such as, UI extensibility, API-driven automation, and custom code deployment, you must consider upgrading to [Assets Ultimate](/help/assets/assets-ultimate-overview.md).
 
 This article provides an end-to-end workflow to enable Assets as a Cloud Service Prime.
 
 ## Enable Assets as a Cloud Service Prime{#enable-assets-prime}
 
-Enable Assets Prime  while creating the new program using Cloud Manager. Execute the following steps:
+Enable Assets Prime  while creating a new program using Cloud Manager. Execute the following steps:
 
 1. As a system administrator, log on to Cloud Manager. Ensure that you select the right organization while logging in.
+
+   >[!NOTE]
+   >
+   >Ensure that you are added to the appropriate Cloud Manager product profile to add a new program. For more information, see [Role Based Permissions in Cloud Manager](/help/onboarding/cloud-manager-introduction.md#role-based-permissions).
 
 1. [Create a new program](/help/journey-onboarding/create-program.md).
 
    While creating the new program, in **[!UICONTROL Solutions & Add-ons]** tab, select **[!UICONTROL Assets Prime]**. You can also expand **[!UICONTROL Assets Prime]** and select **[!UICONTROL Content Hub]** to enable [Content Hub](/help/assets/product-overview.md) for asset distribution.
 
    ![AEM Assets Ultimate](assets/aem-assets-prime.png)
+
 
 1. Click **[!UICONTROL Create]** to create the program. 
 
@@ -117,7 +124,7 @@ You can also access and view the services assigned to Collaborator users, as dep
 
 ![Services for Collaborator users](assets/aem-assets-collaborator-users.png)
 
-`Adobe Express` and `AEM Assets Collaborator Users` services are enabled by default. You can turn the toggle off and on, as per your requirements.
+`Adobe Express` and `AEM Assets Collaborator Users` services are enabled by default. You can turn the toggle off and on, as per your requirements, however, Adobe recommends to use the default services enabled for the product profiles.
 
 ## Onboard AEM Assets Power users {#onboard-power-users}
 
@@ -139,4 +146,4 @@ You can also access and view the services assigned to Power users, as depicted i
 
 ![Services for Power users](assets/aem-assets-power-users.png)
 
-`Adobe Express` and `AEM Assets Power Users` services are enabled by default. You can turn the toggle off and on, as per your requirements.
+`Adobe Express` and `AEM Assets Power Users` services are enabled by default. You can turn the toggle off and on, as per your requirements, however, Adobe recommends to use the default services enabled for the product profiles.

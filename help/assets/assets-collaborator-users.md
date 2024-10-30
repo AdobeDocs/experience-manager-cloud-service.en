@@ -1,6 +1,6 @@
 ---
 title: AEM Assets Collaborator Users
-description: AEM Assets Collaborator Users
+description: Learn how to manage AEM Assets Collaborator users and their privileges.
 feature: Asset Management
 role: User, Admin
 ---
