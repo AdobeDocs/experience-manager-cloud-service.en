@@ -58,7 +58,7 @@ This article is organized in the following way:
       
 1. Place the file somewhere under a top level folder named *config* or similar, as described in [Using Config Pipelines](/help/operations/config-pipeline.md#folder-structure).
 
-1. For environment types other than RDE (which is not currently supported), create a targeted deployment config pipeline in Cloud Manager, as referenced by [this section](/help/operations/config-pipeline.md#creating-and-managing); note that Full Stack pipelines and Web Tier pipelines do not deploy the configuration file.
+1. For environment types other than RDE (which uses command line tooling), create a targeted deployment config pipeline in Cloud Manager, as referenced by [this section](/help/operations/config-pipeline.md#creating-and-managing); note that Full Stack pipelines and Web Tier pipelines do not deploy the configuration file.
 
 1. Deploy the configuration. 
 
@@ -304,7 +304,13 @@ There is also be a property named `Source-Type`, which is set to one of these va
    
 Considerations:
 
-* by default, the port is 443. It can optionally be overridden with a property named `port`.
+* By default, the port is 443. It can optionally be overridden with a property named `port`.
+* The sourcetype field will have one of the following values, depending on the specific log: *aemaccess*, *aemerror*, 
+*aemrequest*, *aemdispatcher*, *aemhttpdaccess*, *aemhttpderror*, *aemcdn*
+
+>[!NOTE]
+>
+> [If migrating](#legacy-migration) from legacy Log Forwarding to this self-serve model, the `sourcetype` field's values sent to your Splunk index may have changed, so adjust accordingly. 
 
 
 <!--
@@ -386,6 +392,10 @@ Customers who had been setup in that manner by Adobe are welcome to adapt to the
 When ready to migrate, simply configure the YAML file as described in the preceding sections. Use the Cloud Manager config pipeline to deploy to each of the environments where the configuration should be applied. 
 
 It is recommended, but not required, that a configuration is deployed to all environments so they are all under self-serve control. If not, you may forget which environments have been configured by Adobe versus those configured in a self-serve way.
+
+>[!NOTE]
+>
+>The `sourcetype` field's values sent to your Splunk index may have changed, so adjust accordingly. 
 
 >[!NOTE]
 >

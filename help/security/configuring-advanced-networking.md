@@ -557,9 +557,7 @@ The table below describes traffic routing.
 
 ### Useful Domains for Configuration {#vpn-useful-domains-for-configuration}
 
-The diagram below provides a visual representation of a set of domains and associated IPs that are useful for configuration and development. The table further below the diagram describes those domains and IPs.
-
-![VPN Domain Configuration](/help/security/assets/AdvancedNetworking.jpg)
+The table below describes a set of domains and IPs that are useful for configuration and development.
 
 <table>
 <thead>
@@ -840,4 +838,4 @@ Yes, the limit applies to connections using Advanced Networking, including VPNs.
 
 ##### If we use a Dedicated Egress IP, will this limit still be applicable?
 
-Yes, the limit is still applicable if using a dedicated egress IP.
+Yes, the limit is still applicable if using a dedicated egress IP. 

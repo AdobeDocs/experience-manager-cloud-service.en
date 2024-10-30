@@ -96,6 +96,10 @@ In order for AEM to be able to publish the data in your spreadsheet, you additio
    }
    ```
 
+   >[!NOTE]
+   >
+   >This `paths.json` entry is based on the example of creating redirects using tabular data. Make sure to update the path appropriate to the [type of spreadsheet you are creating.](#other)
+
 1. Click **Commit changes...** to save the changes to `main`.
 
    * Either commit to `main` or create a pull request as per your process.
