@@ -32,6 +32,10 @@ AEM as a Cloud Service is a fully cloud-native offering that delivers AEM as a s
 
 ### Organization Level Product Instances {#org-level-product-instances}
 
+>[!NOTE]
+>
+> Some of the Product Instances and Product Profiles described in this article may only appear for newly created environments. A future mechanism will allow existing environments to be updated as well.
+
 When Adobe processes the licensing of an AEM solution for the first time, two Product Instances will appear in Adobe Admin Console, under the Adobe Experience Manager as a Cloud Service Product:
 
 * **AEM Org-Level** - contains one or more Product Profile that represent access to features that are scoped to all AEM environments, rather than just to a single one
@@ -189,10 +193,6 @@ Note that each Product Profile has an associated Product Profile Service enabled
 The AEM group in AEM associated with the service will have the aggregated set of users that exist in all the associated Product Profiles of that service for that environment-tier combination.
 
 ![Services](/help/onboarding/assets/services.png)
-
->[!NOTE]
->
->The steps above illustrate new Product Profiles and services created for new environments.
 
 The following image represents the AEM groups reflecting the AEM Sites Content Managers author tier Product Profile and service.
 
