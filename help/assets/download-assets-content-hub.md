@@ -16,12 +16,12 @@ The Content Hub lets you download and share your assets. These assets may includ
 
 You can download a single asset or multiple assets using the Content Hub. The original versions of the asset are downloaded.
 
-## Download Single Asset {#single-download-asset} 
+## Download Single Licensed Asset {#single-download-asset} 
 
 Select an asset and click ![download](/help/assets/assets/download-icon.svg) from the top rail. The Download asset dialog box displays the asset's license. Accept the licensing terms and conditions and click **Download**.
 Alternatively, click ![download](/help/assets/assets/download-icon.svg) in the asset card to download the asset.
 
-### Download single Asset from Asset dialog box {#single-download-from-asset-dialog-box}
+### Download single Licensed Asset from Asset dialog box {#single-download-from-asset-dialog-box}
 
 1. Click the asset thumbnail. The asset dialog box displays.
 1. Click ![download](/help/assets/assets/download-icon.svg) from the rightmost toolbar. The download pane displays the asset renditions and the licensing terms and conditions acceptance checkbox.
@@ -35,7 +35,7 @@ Alternatively, click ![download](/help/assets/assets/download-icon.svg) in the a
    * Click the **Original Rendition Box** to return to the original asset rendition in the left pane.
 1. Accept the licensing terms and conditions (for licensed asset) and click **Download** to download the asset.
 
-## Download Multiple Assets{#multi-download} 
+## Download Multiple Licensed Assets{#multi-download} 
 
 1. Select the assets and click ![download](/help/assets/assets/download-icon.svg) from the top rail. The dialog box that displays depends on whether the download list includes expired assets or only non-expired assets. <br/>
 **Download expired assets dialog box:** This dialog box displays the expired assets' preview along with their expiry date in the left pane. The expired assets' count out of total selected displays in the right pane. Click **Proceed with all assets** to download expired assets with other assets (if present). The Download assets dialog box displays. See the [Download assets dialog box](#Download-asset-dialog-box) to proceed further.

@@ -140,13 +140,9 @@ The properties enabled on the Configuration User Interface display on the Asset 
 
 ### Asset Card {#asset-card}
 
-In Content Hub UI, the asset-level view displays the **Asset Card** of approved assets. The Asset Card displays the key asset details for the users. The Asset Card has asset thumbnail, asset metadata and other actionable options. 
+You can also configure the key metadata fields that you need to display on the **Asset Card** upto a maximum of 6 fields. To do so, execute the following steps:
 
-![Asset properties on Content Hub](/help/assets/assets/metadata-on-asset-card.png)
-
-#### Add, Edit or Delete a metadata under Asset Card {#add-edit-delete-metadata}
-
-To configure the asset metadata that display on the Asset Card for each asset, see the instructions below:
+![key metadata on Asset Card](/help/assets/assets/asset-card-key-metadata.png)
 
 1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **Asset Card**.
 2. Click **Add metadata**. The **Add asset card metadata** dialog box displays.
