@@ -51,7 +51,7 @@ When a Forms Communication Solution is licensed, a corresponding product profile
 
 ![Reporters Product Profile](/help/onboarding/assets/org-level-reporters.png)
 
-### Environment and Tier Level Product Instances {#environemnt-and-tier-level-product-instances}
+### Environment and Tier Level Product Instances {#environment-and-tier-level-product-instances}
 
 Upon provisioning new programs with one or more AEM environments, two Product Instances will appear per environment, containing Product Profiles for author and publish, respectively.
 
