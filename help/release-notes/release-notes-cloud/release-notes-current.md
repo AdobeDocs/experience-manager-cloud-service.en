@@ -118,9 +118,9 @@ This feature is self-serve configured, and deployed using the [Config Pipeline](
 
 ### Pipeline-free URL Redirects for Business Users {#pipeline-free-redirects}
 
-Browser-side redirects are useful for scenarios where a web page has been taken down or has moved. With [Pipeline-free URL Redirects](/help/implementing/dispatcher/pipeline-free-url-redirects.md), you can place an Apache rewrite map file in an AEM publish location where it is loaded on a regular basis, without the need to commit the file to source control or run a Cloud Manager pipeline.
+Browser-side redirects are useful when a web page has been taken down or has moved, or other scenarios. With [Pipeline-free URL Redirects](/help/implementing/dispatcher/pipeline-free-url-redirects.md), you can place an Apache rewrite map file in an AEM publish location, where it is loaded regularly -- no need to commit the file to source control or initiate a Cloud Manager pipeline.
 
-There are several options for publishing the rewrite file, including uploading as an asset, ACS Commons Rewrite Map Manager, or a custom user interface.
+Options for publishing the rewrite file include uploading it as an asset, using the ACS Commons Rewrite Map Manager, or interacting with a custom user interface.
 
 ### Config Pipeline for RDEs {#config-pipeline-rdes}
 
