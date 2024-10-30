@@ -147,19 +147,46 @@ The following table describes a list of the possible Product Profiles below an e
         <td></td>
         <td>AEM Forms Content Managers - author - Program <code>id</code> - Environment <code>id</code></td>
         <td>AEM Forms Content Managers</td>
-        <td></td>
+        <td>
+            <ul>
+                <li>Intended for controlled access to AEM Forms author features on this environment. Users in this Product Profile will be members of the AEM Forms forms-users AEM group, that is automatically created in AEM.</li><br>
+                <li>If the default service remains selected
+                    <ul>
+                        <li>users in this product profile will also be members of the "AEM Forms Content Managers - Service" AEM group.</li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
     </tr>
     <tr>
         <td></td>
         <td>AEM Forms Developers - author - Program <code>id</code> - Environment <code>id</code></td>
         <td>AEM Forms Developers</td>
-        <td></td>
+        <td>
+            <ul>
+                <li>Intended for controlled access to AEM Forms author features on this environment. Users in this Product Profile will be members of the AEM Forms forms-power-users AEM group, that is automatically created in AEM. These users have the rights to upload XDPs and author Form Data Models also in addition to normal form authoring tasks.</li><br>
+                <li>If the default service remains selected
+                    <ul>
+                        <li>users in this product profile will also be members of the "AEM Forms Developers - Service" AEM group.</li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
     </tr>
     <tr>
         <td></td>
         <td>AEM Forms Communications Service Users - author - Program <code>id</code> - Environment <code>id</code></td>
         <td>AEM Forms Communications Service Users</td>
-        <td></td>
+        <td>
+            <ul>
+                <li>Intended for controlled access to AEM Forms Communications Services features on this environment. Users in this Product Profile will be members of the AEM Forms forms-users AEM group, that is automatically created in AEM.</li><br>
+                <li>If the default service remains selected
+                    <ul>
+                        <li>users in this product profile will also be members of the "AEM Forms Communications Service Users - Service" AEM group.</li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
     </tr>
     <tr>
         <td>AEM Publish</td>
@@ -183,6 +210,21 @@ The following table describes a list of the possible Product Profiles below an e
         <td>
             <ul>
                 <li>Not currently used, but in the future may provide access to reporting information about the publish tier for this environment.</li>
+            </ul>
+        </td>
+    </tr>
+   <tr>
+        <td></td>
+        <td>AEM Forms Communications Service Users - publish - Program <code>id</code> - Environment <code>id</code></td>
+        <td>AEM Forms Communications Service Users</td>
+        <td>
+            <ul>
+                <li>Intended for controlled access to AEM Forms Communications Services features on this environment. Users in this Product Profile will be members of the AEM Forms forms-users AEM group, that is automatically created in AEM.</li><br>
+                <li>If the default service remains selected
+                    <ul>
+                        <li>users in this product profile will also be members of the "AEM Forms Communications Service Users - Service" AEM group.</li>
+                    </ul>
+                </li>
             </ul>
         </td>
     </tr>
