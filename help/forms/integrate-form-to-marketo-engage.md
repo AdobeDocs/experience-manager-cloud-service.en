@@ -27,11 +27,11 @@ Below are the few advantages to connect an Adaptive Form with Adobe Marketo Enga
 
 * **Follow-up automation**: It helps in automating follow-up emails and workflows triggered by form submissions, ensuring timely communication with leads.
 
-## Why choose AEM Forms over Marketo Forms?
+## Key Benefits of using AEM Forms (Adaptive Forms) over alternative Form solutions
 
-The table below outlines the reasons to choose AEM Forms over Marketo Forms:
+The table below outlines the few reasons to choose AEM Forms over other alternative Form solutions:
 
-| **Feature** | **AEM Forms**| **Marketo Engage Forms** |
+| **Feature** | **AEM Forms**| **Other Form Solutions** |
 |-------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------|
 | **Customizations** | Allows to add specific custom functions, adjust form actions, and modify field behaviors to enhance form interactions, complex workflows | No customization support |
 | **Rule Editor**| Supports a built-in Rule Editor for adding logic and conditions.      | No Rule Editor support|
@@ -74,7 +74,7 @@ To connect the Adaptive Form with Adobe Marketo Engage:
 
 ## FAQs
 
-**Q: Can you change the submit action for forms configured to connect with the Marketo Engage schema?**
+**Q: Can you change the submit action for forms configured to connect with the Marketo Engage schema?** 
     **A:** By default, the **Submit to Marketo** action is selected when a form is configured to connect with the Marketo Engage schema. However, you can change the submit action for the forms if needed.
 
 **Q: What happens when you change the connector of the form?**  
