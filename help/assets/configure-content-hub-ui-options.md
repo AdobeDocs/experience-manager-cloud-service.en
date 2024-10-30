@@ -140,18 +140,14 @@ The properties enabled on the Configuration User Interface display on the Asset 
 
 ### Asset Card {#asset-card}
 
-In Content Hub UI, the asset-level view displays the **Asset Card** of approved assets. The Asset Card displays the key asset details for the users. The Asset Card has asset thumbnail, asset metadata and other actionable options. The Content Hub administrators add the metadata fields at the repository level to display the metadata name and its metadata value in all assets' Asset Card at Once. The Asset Card accepts six metadata fields. The metadata field includes metadata name and metadata property. Asset Card displays the metadata and its metadata value. Administrator specifies the metadata name and map it to the right metadata property. The metadata property renders a metadata value in the Asset Card. The metadata property is linked to the properties of the asset, therefore the rendered metadata value varies across all Asset Cards. For example, administrators add a metadata, **Licensed** in the Asset Card and map this **Licensed** metadata to the correct metadata property. The Asset Cards on the Content Hub UI display this **Licensed** metadata and its metadata value (**Yes** or **No**). In this example, Assets having a license displays **Yes** in the Asset Card while the assets without license displays **NO**.
+You can also configure the key metadata fields that you need to display on the **Asset Card** upto a maximum of 6 fields. To do so, execute the following steps:
 
-![Asset properties on Content Hub](/help/assets/assets/metadata-on-asset-card.png)
-
-#### Add, Edit or Delete a metadata under Asset Card {#add-edit-delete-metadata}
-
-To add a metadata to an asset, see the instructions below:
+![key metadata on Asset Card](/help/assets/assets/asset-card-key-metadata.png)
 
 1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **Asset Card**.
 2. Click **Add metadata**. The **Add asset card metadata** dialog box displays.
-3. Specify the metadata name in the **Label** field and select a metadata property in the **Metadata** field. For example, name the metadata **Licensed** and select **dc:license** as the metadata property. The selected metadata property is mapped to a value that displays with the metadata in the Content Hub UI. In this example, the **dc:license** property is mapped to the License ID. This property follows the specified asset (PDF license) path to locate the corresponding asset and accordingly renders a boolean value (**Yes** or **No**) in the UI based on the asset's presence. If the license PDF is found, it displays **Yes**. If not, it displays **No**. Therefore, in the Content Hub UI, assets with a License ID displays **Yes**, while assets without a License ID display **No**. 
-4. Click **Confirm** and then **Save** to apply the changes so that the new property display on the asset details page.
+3. Specify the metadata name in the **Label** field and select a metadata property in the **Metadata** field.
+4. Click **Confirm** and then click **Save** to apply the changes so that the new property display on the asset details page.
 ![asset card](/help/assets/assets/asset-card.png)
 
 Similarly, click ![edit](/help/assets/assets/edit-content-hub.svg) that is available next to each available property, to make any required modifications or click ![delete](/help/assets/assets/delete-content-hub.svg) to delete any existing metadata property. Click **Save** after making all modifications to apply the changes.
