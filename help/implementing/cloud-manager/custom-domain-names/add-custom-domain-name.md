@@ -62,9 +62,10 @@ The steps for either method described in this document are based on Fastly. If y
    | Adobe managed certificate |a. Complete the [Adobe managed certificate steps](#adobe-managed-cert-steps) below. When you complete the steps, in the **Verify domain** dialog box, click **Verify**.<ul><li>DNS verification can take a few hours to process because of DNS propagation delays.</li><li>Cloud Manager eventually verifies domain name ownership and updates the status in the **Domain Settings** table. See [Check custom domain name status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) for more details.</li>![Verify domain status](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>b. You are now ready to [add an Adobe managed (DV) SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-adobe-managed-ssl-cert).</li></ul> |
    | Customer managed certificate | a. Click **OK**.<br>b. You are now ready to [add a customer managed (OV/EV) SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-customer-managed-ssl-cert).<br>After you add the certificate, your domain name is marked as verified in the **Domain Settings** table. See [Check custom domain name status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) for more details.</li></ul><br>![Verify domain for a customer managed EV/OV certificate](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png) |
 
-   >[!NOTE]
-   >
-   >If you use a customer managed (OV/EV) SSL certificate and a customer managed CDN provider, you can skip adding an SSL certificate and go directly to [Add a CDN configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) when ready.
+      >[!NOTE]
+      >
+      >If you use a customer managed (OV/EV) SSL certificate, and intend to use a customer managed CDN ***provider***, you can skip adding an SSL certificate and go directly to [Add a CDN configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) when ready.
+
 
 ### Adobe managed certificate steps {#adobe-managed-cert-steps}
 
