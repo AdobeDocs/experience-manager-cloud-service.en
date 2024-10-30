@@ -19,7 +19,6 @@ CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Ap
 AEM Forms as a Cloud Service supports the following CAPTCHA solutions: 
 
 * [Google reCAPTCHA](#connect-your-aem-forms-environment-with-recaptcha-service-by-google)
-* [Cloudflare Turnstile](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
 * [hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)  
 
 

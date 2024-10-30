@@ -456,6 +456,10 @@ user-guide-title: AEM as a Cloud Service
   + [Supported file formats](/help/assets/file-format-support.md)
   + [Overview of asset microservices](/help/assets/asset-microservices-overview.md)
   + [Accessibility in [!DNL Assets]](/help/assets/accessibility.md)
+  + [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
+  + [Enable Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
+  + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
+  + [Assets Collaborator users](/help/assets/assets-collaborator-users.md)
   + Manage digital assets {#manage}
     + Micro-Frontend Asset Selector {#asset-selector}
       + [Asset Selector overview](/help/assets/overview-asset-selector.md)
@@ -723,7 +727,6 @@ user-guide-title: AEM as a Cloud Service
         + [Configure the Send Email submit action for an Adaptive Form](/help/forms/configure-submit-action-send-email.md)
         + [Use Google reCAPTCHA in an Adaptive Form ](/help/forms/captcha-adaptive-forms-core-components.md)
         + [Use hCAPTCHA in an Adaptive Form ](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
-        + [Use Turnstile in an Adaptive Form ](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
         + [Add custom error handler in an Adaptive Form](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
         + [Add a locale for Adaptive Forms based on Core Components](/help/forms/supporting-new-language-localization-core-components.md)
         +  [Design JSON Schema for an Adaptive Form (Core Components)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
