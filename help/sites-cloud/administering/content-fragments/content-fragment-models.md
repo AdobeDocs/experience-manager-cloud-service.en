@@ -176,7 +176,7 @@ A selection of data types is available for defining your model:
   * The data type can be configured to allow fragment authors to:
     * Edit the referenced fragment directly.
     * Create a new Content Fragment, based on the appropriate model  
-  * The field specifies a universally unique ID (UUID) that references the resource
+  * In the editor, the reference specifies the path to the referenced resource; internally the reference is held as a universally unique ID (UUID) that references the resource
     * You do not need to know the UUID; in the fragment editor you can browse to the required fragment
 * **Content Reference**
   * References other content, of any type; can be used to [create nested content](#using-references-to-form-nested-content)
@@ -185,7 +185,7 @@ A selection of data types is available for defining your model:
 * **Content Reference (UUID)**
   * References other content, of any type; can be used to [create nested content](#using-references-to-form-nested-content)
   * If an image is referenced, you can opt to show a thumbnail
-  * The field specifies a universally unique ID (UUID) that references the resource
+  * In the editor, the reference specifies the path to the referenced resource; internally the reference is held as a universally unique ID (UUID) that references the resource
     * You do not need to know the UUID; in the fragment editor you can browse to the required asset resource
 * **JSON Object**
   * Allows the Content Fragment author to enter JSON syntax into the corresponding elements of a fragment. 
@@ -291,7 +291,7 @@ Content Fragments can form nested content, using either of the following data ty
   * Provided by the data types:
     * **Content Reference** - path based
     * **Content Reference (UUID)** - UUID based
-  * Can be configured for a one or multiple references (in the resulting fragment).
+  * Can be configured for one or multiple references (in the resulting fragment).
 
 * [Fragment Reference](#fragment-reference-nested-fragments) (Nested Fragments)
   * References other fragments, dependent on the specific models specified.
@@ -299,6 +299,7 @@ Content Fragments can form nested content, using either of the following data ty
     * **Fragment Reference** - path based
     * **Fragment Reference (UUID)** - UUID based
   * Allows you to include/retrieve structured data.
+  
     >[!NOTE]
     >
     >This method is of particular interest when you are using [Headless Content Delivery using Content Fragments with GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).

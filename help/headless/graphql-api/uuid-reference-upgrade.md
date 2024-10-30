@@ -47,6 +47,19 @@ You should not upgrade:
 
 * When any of your Content Fragments use page references; as UUIDs are yet not supported for page references
 
+## Limitations of UUID references {#limitations-of-uuid-references}
+
+Currently the following limitations apply when using references based on a UUID:
+
+* Models
+
+  * New Content Fragment Models with either Content Fragment UUID or Content Reference UUID fields cannot be created via OpenAPI.
+  * The `id` field for models has not been changed to be UUID based. It uses the base64 decoded path of the model. Models cannot be moved, therefore, this value is still stable.
+
+* Assets
+
+  * When creating a Content Fragment via OpenAPI,`fragment-reference` or `content-reference` field types must be used for specifying references to a fragment or an asset respectively - even when setting the value of a UUID based reference field.
+
 ## Upgrade Planning {#upgrade-planning}
 
 There are a few preparation steps before running your upgrade.
@@ -219,6 +232,32 @@ Content-Length: 1116
     }
   }
 }
+```
+
++++
+
++++Sample log files
+
+In addition to the status of a running content upgrade obtained the HTTP endpoint, AEM logs provide detailed information of the progress on the content level. For example:
+
+```xml
+#Successful model upgrade
+com.adobe.cq.dam.cfm.impl.servicing.uuid.* Phase phase-0: resource: /conf/wknd-shared/settings/dam/cfm/models/article , status: SUCCESS, skips: [], errors: []
+ 
+#Successful content fragment upgrade
+com.adobe.cq.dam.cfm.impl.servicing.uuid.* Phase phase-1: resource: /content/dam/wknd-shared/en/magazine/san-diego-surf-spots/san-diego-surfspots , status: SUCCESS, skips: [], errors: []
+ 
+#Unsuccessful/Skipped model upgrade
+com.adobe.cq.dam.cfm.impl.servicing.uuid.* Phase phase-0: resource: /conf/wknd-shared/settings/dam/cfm/models/adventure , status: SKIPPED, skips: [Model: '/conf/wknd-shared/settings/dam/cfm/models/adventure', no upgradeable fields found], errors: []
+ 
+#Unsuccessful content fragment upgrade
+com.adobe.cq.dam.cfm.impl.servicing.uuid.* Phase phase-1: resource: /content/dam/wknd-shared/en/magazine/western-australia/western-australia-by-camper-van , status: FAILED, skips: [], errors: [Path '/content/dam/wknd-shared/en/magazine/western-australia/western-australia-by-camper-van', Variation: 'master' Field 'featuredImage', Value '/content/dam/wknd-shared/en/magazine/western-australia/adobestock_156407519.jpeg' is invalid; will not upgrade this field.] 
+```
+
+Additionally, after the processing of each segment (batch) of Content Fragments and Models, an accumulated status is logged, summarizing the progress so far. For example:
+
+```xml
+com.adobe.cq.dam.cfm.impl.servicing.PhaseChainProcessor Phase phase-x, processed a segment, stats: {successCount=29, skippedCount=0, errorCount=1}
 ```
 
 +++
