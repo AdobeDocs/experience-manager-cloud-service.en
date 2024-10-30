@@ -21,13 +21,13 @@ If you're interested in joining our Early Access program for any Early Access in
 
 ## Early Access Innovations 
 
-### AEM Forms Generative AI (Gen AI)
+### AEM Forms AI Assistant (Gen AI)
 
 Generative AI for Adaptive Forms brings a whole new level of power and ease to your forms development processes. With the help of intelligent AI features, you can build better forms faster than ever before. 
 
-![Generative AI Assistant, Adaptive Forms](/help/forms/assets/generative-ai-assistant.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3435527)
 
-The Generative AI capabilities on offer are: 
+The Generative AI capabilities on offer via AEM Forms AI Assistant are: 
 
 * **AI Assistant for Product Queries**: Get instant answers to your AEM form-related questions. Our AI assistant acts as your own personal knowledge base, providing insightful guidance and recommendations directly within the platform.
 
