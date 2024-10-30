@@ -1,6 +1,6 @@
 ---
-title: Assets as a Cloud Service user types and privileges
-description: 
+title: Assets Ultimate
+description: Learn more about key aspects of Assets Ultimate, such as, key benefits, user types, and their privileges.
 feature: Asset Management
 role: User, Admin
 ---
@@ -13,7 +13,7 @@ role: User, Admin
 
 Assets as a Cloud Service Ultimate offers advanced DAM capabilities. AEM Assets Ultimate is engineered to manage complex content supply chains, ensuring that every piece of content performs well across all channels. 
 
-## Why Assets as a Cloud Service Ultimate? {#why-ultimate-existing-new-users}
+## Why Assets Ultimate? {#why-ultimate-existing-new-users}
 
 Assets as a Cloud Service Ultimate offers various key benefits that help manage your organization's asset needs effectively, such as:
 
@@ -21,7 +21,7 @@ Assets as a Cloud Service Ultimate offers various key benefits that help manage 
 
 * Seamless asset distribution with Content Hub.
 
-* AI-powered content creation using Adobe Express with Firefly.
+* AI-powered content creation and remixing using Adobe Express with Firefly.
 
 * Smoother onboarding or upgrade experience for new and existing users.
 
@@ -29,34 +29,34 @@ Assets as a Cloud Service Ultimate offers various key benefits that help manage 
 
 Assets as a Cloud Service Ultimate enables you to perform various key Digital Asset Management operations, such as:
 
-* Asset management tasks, such as metadata management and asset governance.
+* **Asset management and library services**​: Tools that enable users to ingest, store, catalog, control, manage, and govern a brand's digital assets in a centralized repository 
 
-* Trainable Smart Tags for better search.
+* **Search, Discovery, and Collaboration**: Tools that enable users to browse, discover, share, and collaborate on assets they need to create rich customer experiences.
 
-* Automated content creation by creating asset variations using Adobe Express.
+* **Security & Rights Management**: Tools to manage access, permissions, rights, and security to ensure compliance, consistency, and brand integrity.
 
-* Integrating Assets available in the Cloud Service repository with Adobe and non-Adobe applications using Asset Selector.
+* **Creative Cloud Connections**: Tools that enable marketing & creative teams to collaborate with simplified access, comment, review, and annotations to update or finalize digital assets.
 
-* Delivery of assets using Publish URL.
+* **Experience Cloud Connections**: Tools to support native access to digital assets from other Experience Cloud applications and services.
 
-* Advanced asset management operations, such as, custom schema, metadata translations, custom processing profiles, and so on.
+* **Distribution Portal Experience (Content Hub)**: Tools to expand access to a brand's approved digital assets to extended stakeholders to ensure usage and brand consistency.
 
-* Custom workflow management.
+* **Integrations**: integrations with other Adobe and non-Adobe applications.
 
-* API-driven UI extensibility.
+* **Dynamic Media (add-on)**: Tools to transform and deliver images, videos, and other emerging content for rich, interactive, multimedia experiences for any device at scale.
 
-* Content automation
+* **Customization**: Tools to customize the DAM User Interface access to APIs for further development.
 
-* Basic and advanced reporting, such as, downloads, uploads, asset performance, and asset usage by user.
+* **Custom Extensibility**: Extensive flexibility through its robust API-first platform, enabling seamless integration and customization to meet the customer complex IT infrastructure.
 
-* Additional Stage and Development environments.
+* **Content Automation (add-on)**: Tools to unify work management and automate digital asset transformation workflows for content production at scale.
 
 The operations that you can perform within Assets as a Cloud Service depends on your user type. See [Available user types](#available-user-types) for more information.
 
 
 ## What are available user types and privileges? {#available-user-types}
 
-Assets as a Cloud Service offers four types of user types. Each user type provides different set of privileges. The user types include:
+Assets as a Cloud Service offers four user types. Each user type provides a different set of privileges. The user types include:
 
 * **Administrator**: The standard administrator user, who configures the other three user types within the organization.
 
@@ -82,7 +82,7 @@ Assets as a Cloud Service offers four types of user types. Each user type provid
 
    ![Assets as a Cloud Service Power user](/help/assets/assets/assets-cs-power-users.png)
 
-The following table summarizes the available Content Hub user types, the privileges they have, and the product profiles that are required to get those privileges:
+The following table summarizes the available AEM Assets user types, the privileges they have, and the product profiles that are required to get those privileges:
 
 
 | User Role    | Limited users | Collaborator users  | Power users | Administrators |
@@ -92,6 +92,7 @@ The following table summarizes the available Content Hub user types, the privile
 | Create and edit assets using built-in Adobe Express and Firefly    | &minus; |  &#10003; | &#10003;   |&#10003;|
 | Integration of assets within your organization with Adobe and non-Adobe applications     |  &minus; |   &#10003; |     &#10003;   | &#10003;|
 | Access all AEM Assets capabilities, such as, managing assets, metadata and the overall governance and automation        | &minus; | &minus; |    &#10003;   |&#10003;|
+| Manage permissions on content in AEM Assets author environment        | &minus; | &minus; |    &minus;   |&#10003;|
 | **User needs to be in these product profiles (Admin Console)**|
 | AEM > Delivery instance > AEM Assets Limited Users | &#10003;  | &#10003;  |   &#10003;     |&#10003;|
 | AEM > Production Author instance > AEM Assets Collaborator Users         | &minus; | &#10003; |   &minus;    |&minus;|
@@ -101,4 +102,4 @@ The following table summarizes the available Content Hub user types, the privile
 
 For information on how to get started with Assets Ultimate, see [Enable AEM Assets Ultimate](/help/assets/enable-assets-ultimate.md).
 
-AEM Assets also provides a lightweight DAM that allows you to perform some of the key capabilities, however, the advanced capabilities are not available to you, such as, UI extensibility, content automation, and additional Stage and Production environments. For more information, see [AEM Assets Prime](/help/assets/assets-prime.md).
+AEM Assets also provides a lighter weight DAM for customers who do not have advanced requirements such as, UI extensibility, API-driven automation, and custom code deployment. For more information, see [AEM Assets Prime](/help/assets/assets-prime.md).
