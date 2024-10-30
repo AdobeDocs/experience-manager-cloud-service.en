@@ -6,6 +6,12 @@ role: Admin, Developer
 ---
 # Upgrading your Content Fragments for UUID References {#upgrading-content-fragments-for-UUID-references}
 
+>[!IMPORTANT]
+>
+>Various features of the GraphQL API for use with Content Fragments are available through the Early Adopter Program.
+>
+>To see the status, and how to apply if you are interested, check the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md).
+
 To optimize the stability of your GraphQL filters, you can upgrade the content and fragment references in your Content Fragments so that they use universally unique identifiers (UUID).
 
 Originally Content Fragment Models provided the data types of **Content Reference** and **Fragment Reference**. Both of these references use a path to point to the referenced resource, and this path can become outdated if the resource is moved. Although such references are more than sufficient in most scenarios, Content Fragment Models have been extended to also provide references based on a UUID:
