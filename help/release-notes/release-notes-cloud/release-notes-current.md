@@ -38,18 +38,11 @@ Have a look at the October 2024 Release Overview video for a summary of the feat
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### New feature in Experience Manager Sites {#new-feature-sites}
-
-#### Translation Management {#translation-management}
-
-AEM translation workflows and API actions now trigger events to provide insight about translation job state changes. Users can subscribe to these events through the Adobe Developer Console. See [here](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/) for more information on the AEM Translation Management API. 
-
 ### Early Adopter Program {#sites-early-adopter}
 
 **Generate Variations**
 
 Leverage GenAI through AEM's new feature, [generate variations](/help/generative-ai/generate-variations.md), accessible now in Cloud Service. Generate variations helps you generate and scale content creation through the use of generative AI. Reach out to your Adobe account team for consideration in the program.
-
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -79,7 +72,6 @@ Administrators can now control if they need expired assets to be visible on Cont
 #### Auto-save a draft for Core Components based Adaptive Forms
 
 Users can now benefit from an auto-save feature that saves a partially completed form as a draft automatically. They can return later to finish filling it out on the same or other device. This feature improves conversion rates for organizations by reducing form abandonment, as users do not need to start over form filling from the beginning.
-
  
 ### Early Access features in AEM Forms {#forms-new-early-access-features}
 
