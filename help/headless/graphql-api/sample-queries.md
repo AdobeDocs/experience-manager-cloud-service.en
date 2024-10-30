@@ -9,6 +9,12 @@ role: Admin, Developer
 
 Learn to use GraphQL with AEM so you can serve content headlessly by exploring sample content and queries.
 
+>[!IMPORTANT]
+>
+>Various features of the GraphQL API for use with Content Fragments are available through the Early Adopter Program.
+>
+>To see the status, and how to apply if you are interested, check the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md).
+
 >[!NOTE]
 >
 >Read this page along with the following:
