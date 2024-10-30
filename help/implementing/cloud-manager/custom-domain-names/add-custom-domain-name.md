@@ -64,7 +64,7 @@ The steps for either method described in this document are based on Fastly. If y
 
       >[!NOTE]
       >
-      >If you use a customer managed (OV/EV) SSL certificate, and intend to use a customer managed CDN ***provider***, you can skip adding an SSL certificate and go directly to [Add a CDN configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) when ready.
+      >If you use your own customer managed (OV/EV or DV) SSL certificate, and intend to use a customer managed CDN ***provider***, you can skip adding an SSL certificate and go directly to [Add a CDN configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) when ready.
 
 
 ### Adobe managed certificate steps {#adobe-managed-cert-steps}
