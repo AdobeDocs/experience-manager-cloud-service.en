@@ -8,8 +8,6 @@ level: Beginner, Intermediate
 
 # Using asynchronous functions in an Adaptive Form based on Core Components
 
-<span class="preview"> This feature is available under early adopter program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
-
 The [rule editor in Adaptive Forms](/help/forms/rule-editor-core-components.md) supports asynchronous functions, allowing you to integrate and manage operations that require waiting for external processes or data retrieval without interrupting the user's interaction with the form.
 
 ## What factors determine the use of asynchronous or synchronous functions?
@@ -34,6 +32,8 @@ You can implement the asynchronous functions for Adaptive Forms using the follow
 * [Function output](#how-to-use-function-output-rule-type)
 
 ## How to use the Async Function Call rule type?
+
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 You can write the [custom functions](/help/forms/custom-function-core-component-create-function.md) for asynchronous operations and configure the asynchronous functions using the **[!UICONTROL Async Function Call]** rule type in the rule editor.
 

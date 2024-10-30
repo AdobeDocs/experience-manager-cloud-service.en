@@ -14,15 +14,13 @@ Now, let us discuss the different implementations for a rule editor.
 
 ## Navigating between panels using buttons 
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
-
 The rule editor allows you to add navigation buttons to your panel layouts, such as Horizontal Tabs, Vertical Tabs, Accordions, or Wizard. These buttons enhance the user experience by simplifying transitions between different panels in a form, shifting focus to the selected panel.
 
 Imagine you are interacting with the profile settings section of an application, where navigation is facilitated by buttons rather than tabs. Upon entering the profile settings from the main dashboard, you encounter a series of panels dedicated to different aspects of their profile: **Personal Information**, **Account Security**, and **Notification Preferences**.
 
 Each panel contains relevant fields and options for updating specific information. Navigation buttons, such as `Next` and `Back`, are prominently placed allow you to move between these panels. Click `Next` to advance the user to the **Account Security** panel and click `Back` to return to the **Personal Information** panel. This method of navigation ensures a seamless transition between sections without losing context, providing a smooth and intuitive user experience. The use of navigation buttons simplifies the process of managing profile settings, making the interaction more organized and user-friendly.
 
-You can use the `Navigate in Panel` rule to create navigation rules for buttons that allow switching between different panels.  Select the `Focus on Next Item` attribute to move the focus to the next panel in the layout.
+You can use the `Navigate among the panels` rule to create navigation rules for buttons that allow switching between different panels.  Select the `Shift focus to the next item` attribute to move the focus to the next panel in the layout.
 
 ![Next panel rule](/help/forms/assets/rule-editor-navigate-in-panel-next.png){width=50%}
 
