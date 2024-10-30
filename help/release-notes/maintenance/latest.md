@@ -26,6 +26,8 @@ The 2024.11.0 feature activation will provide the full feature set for this main
 
 ### Fixed Issues {#fixed-issues-X}
 
+* FORMS-14978: Enabling page load for a Core Component based form for theme editor
+* FORMS-16596: Accessibility Issue: Disabled Buttons Not Recognized by Screen Reader
 * SITES-10575: MSM: Blueprint Bloomfilter Loader tries to load >100,000 rows
 * SITES-20755: Content Fragments: Asset reference with UUID refresh doesn't show the thumbnail
 * SITES-26253: Content Fragments: UUID migration: Change sling job topic to be generic
