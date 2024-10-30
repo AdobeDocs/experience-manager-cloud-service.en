@@ -1,6 +1,6 @@
 ---
 title: Assets Prime
-description: Learn more about key aspects of Assets Prime, such as, key benefits, user types, and their privileges.
+description: Learn more about key aspects of Assets Prime, such as, key benefits, user types and their privileges.
 feature: Asset Management
 role: User, Admin
 ---

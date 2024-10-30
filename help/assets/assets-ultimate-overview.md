@@ -1,6 +1,6 @@
 ---
 title: Assets Ultimate
-description: Learn more about key aspects of Assets Ultimate, such as, key benefits, user types, and their privileges.
+description: Learn more about key aspects of Assets Ultimate, such as, key benefits, user types and their privileges.
 feature: Asset Management
 role: User, Admin
 ---
