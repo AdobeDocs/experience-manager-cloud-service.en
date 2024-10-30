@@ -118,13 +118,13 @@ This feature is self-serve configured, and deployed using the [Config Pipeline](
 
 ### Pipeline-free URL Redirects for Business Users {#pipeline-free-redirects}
 
-Browser-side redirects are useful when a web page has been taken down or has moved, or other scenarios. With [Pipeline-free URL Redirects](/help/implementing/dispatcher/pipeline-free-url-redirects.md), you can place an Apache rewrite map file in an AEM publish location, where it is loaded regularly -- no need to commit the file to source control or initiate a Cloud Manager pipeline.
+Browser-side redirects are useful when a web page has been taken down or has moved, or other scenarios. With [Pipeline-free URL Redirects](/help/implementing/dispatcher/pipeline-free-url-redirects.md), you can place an Apache rewrite map file in an AEM publish location, where it is automatically loaded -- no need to commit the file to source control or initiate a Cloud Manager pipeline.
 
 Options for publishing the rewrite file include uploading it as an asset, using the ACS Commons Rewrite Map Manager, or interacting with a custom user interface.
 
 ### Config Pipeline for RDEs {#config-pipeline-rdes}
 
-Rapid Development Environments are a powerful tool to quickly sync and test code and configuration changes to a Cloud environment. RDEs now support [deploying yaml file configurations](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline), which include CDN options like traffic filter rules and request/response transformations. [See the full list](/help/operations/config-pipeline.md) of supported configuration options.
+Rapid Development Environments are a powerful tool for quickly deploying and testing code and configuration in a Cloud environment. RDEs now support [syncing YAML-file configurations](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline), including CDN settings such as traffic filter rules and request/response transformations, as well as log forwarding and other configuration options. [See the full list](/help/operations/config-pipeline.md) of supported configuration options for more details.
 
 ### New Product Profiles {#new-product-profiles}
 
