@@ -112,7 +112,7 @@ The following table describes a list of the possible Product Profiles below an e
         <td>AEM Users</td>
         <td>
             <ul>
-                <li>Intended for very limited access to AEM author environment features. Users in this product profile will be members of the "contrib" AEM group automatically created in AEM</li><br>
+                <li>Intended for very limited access to AEM author environment features. Users in this product profile will be members of the "Contributors" AEM group automatically created in AEM</li><br>
                 <li>If the default service remains selected
                     <ul>
                         <li>users in this product profile will also be members of the "AEM Users - Service" AEM group</li>
@@ -135,13 +135,28 @@ The following table describes a list of the possible Product Profiles below an e
         <td></td>
         <td>AEM Assets Collaborator - author - Program <code>id</code> - Environment <code>id</code></td>
         <td>AEM Assets Collaborator Users</td>
-        <td></td>
+        <td>
+        <ul>
+                <li>Intended for read-only access to the DAM. Users in this product profile will be members of the "Contributors" AEM group automatically created in AEM.
+                </li>
+                <li>
+                Also, it provides the Adobe Express entitlements to create asset variations.
+                </li>
+          <ul>
     </tr>
     <tr>
         <td></td>
         <td>AEM Assets Power User - author - Program <code>id</code> - Environment <code>id</code></td>
         <td>AEM Assets Power Users</td>
-        <td></td>
+<td>
+        <ul>
+                <li>Intended for read-only access to the DAM. Users in this product profile will be members of the "Contributors" AEM group automatically created in AEM.
+                </li>
+                <li>
+                Also, it provides the Adobe Express entitlements to create asset variations.
+                </li>
+          <ul>
+</td>
     </tr>
     <tr>
         <td></td>
