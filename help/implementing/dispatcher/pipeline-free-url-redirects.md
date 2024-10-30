@@ -70,9 +70,11 @@ RewriteRule ^(.*)$ ${map.foo:$1|/} [L,R=301]
 
 ```
 
+
 ## Considerations {#considerations}
 
 Keep in mind the following:
-
+ 
+* By default, when loading a rewrite map, Apache will start up without waiting for the full map file(s) to load, and thus there can be temporary inconsistencies until the full map(s) loads. This setting can be changed so that Apache waits for the full map contents to be loaded, but it will take longer for Apache to startup. To change this behavior so Apache will wait, add `wait:true` to the `managed-rewrite-maps.yaml` file.
+* To change the frequency between loads, add `ttl: <integer>` to the `managed-rewrite-maps.yaml` file. For example `ttl: 120`.
 * Apache has an 1024 length limit for RewriteMap single entries.
-* By default, for the first load of a redirect map, Apache will start up without waiting for the full map file(s) to load, and thus there can be temporary inconsistencies until the full map(s) loads. This setting can be changed so that Apache waits for the full map contents to be loaded, but it will take longer for Apache to startup.
