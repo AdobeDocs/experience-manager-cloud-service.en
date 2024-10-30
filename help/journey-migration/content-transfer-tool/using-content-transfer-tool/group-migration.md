@@ -40,6 +40,8 @@ Note that the path logged/reported for a group is only the first path that trigg
 
 Most groups migrated are configured to be managed by IMS.  This means that a group in IMS with the same name will be linked to the group in AEM, and any IMS users in the IMS group will become AEM users and members of the group in AEM.  This allows those users to have access to the content according to ACLs or CUGs policies for the group.
 
+Note that migrated groups are no longer considered "local groups"; they are IMS groups, and they must be re-created in IMS so that they can be synchronized between AEM and IMS.  Groups can be created in IMS via Admin Console, among other methods, individually or in bulk.  See [Manage user groups](https://helpx.adobe.com/ca/enterprise/using/user-groups.html) for details about creating groups individually or in bulk on the Admin Console.
+
 The exception to this IMS configuration is with groups created by Assets Collections. When a collection is created on AEM, groups are created for access to that collection; such groups are migrated to the cloud system, but they are not configured to be managed by IMS.  In order to add IMS users to these groups, they must be added in the Group Properties page in the Assets UI, either individually or collectively as part of another IMS group.
 
 
@@ -47,7 +49,7 @@ The exception to this IMS configuration is with groups created by Assets Collect
 
 CTT version 3.0.20 and later includes an option to disable the migration of groups.  This is configured in the OSGI console as follows: 
 
-* Open the OSGI Configuration `(http://<server> /system/console/configMgr)`
+* Open the OSGI Configuration `(http://<server>/system/console/configMgr)`
 * Click on the configuration called **Content Transfer Tool Extraction Service Configuration**
 * Uncheck **Include Groups in migration** to disable group migrations
 * Click **Save** to ensure the configuration is saved and active on the server
@@ -67,7 +69,9 @@ In addition to the groups for each user, there is a field in the report where no
 
 These cases can occur simultaneously, and also at the same time as the earlier cases.
 
-The User Report is added onto the end of (and is therefore part of) the Principal Migration Report (see [Final Summary and Report](#final-summary-and-report) below).
+The User Report is added onto the end of (and is therefore part of) the Principal Migration Report (see [Final Summary and Report](#final-summary-and-report) below).  The information in this report, including the groups reported for each user, can be used to create a bulk user upload file which can be used in Admin Console to create many users in IMS in bulk.  Existing IMS users can also be edited in bulk.
+
+See [Manage multiple users | Bulk CSV upload](https://helpx.adobe.com/ca/enterprise/using/bulk-upload-users.html) for details about creating or editing users in bulk via the Admin Console.
 
 ## Additional Considerations {#additional-considerations}
 
