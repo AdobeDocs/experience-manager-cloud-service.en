@@ -1486,6 +1486,25 @@ The following query returns all `attachments` - a specific field (subgroup) of t
 }
 ```
 
+### Sample Query for a Content Fragment of a specific Model with UUID reference{#sample-wknd-fragment-specific-model-uuid-reference}
+
+<!-- CQDOC-21487 -->
+
+These queries interrogate:
+
+* for multiple Content Fragments of type `bookmark`
+  * with Content References to other fragments 
+
+The following query returns all content references by using `_references`:
+
+<!-- need replacement query -->
+
+```graphql
+{
+    tbc
+}
+```
+
 ### Sample Query for a single Content Fragment with RTE Inline Reference {#sample-wknd-single-fragment-rte-inline-reference}
 
 This query interrogates:

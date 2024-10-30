@@ -1,10 +1,10 @@
 ---
-title: Upgradng your Content Fragments for UUID References
+title: Upgrade your Content Fragments for UUID References
 description: Learn how to upgrade your Content Fragments for optimized UUID references in Adobe Experience Manager as a Cloud Service for headless content delivery.
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 ---
-# Upgrading your Content Fragments for UUID References {#upgrading-content-fragments-for-UUID-references}
+# Upgrade your Content Fragments for UUID References {#upgrade-content-fragments-for-UUID-references}
 
 >[!IMPORTANT]
 >
@@ -21,7 +21,7 @@ Originally Content Fragment Models provided the data types of **Content Referenc
 
 These new reference types can be used both in new Content Fragment Models and Fragments, and to extend existing instances. 
 
-To upgrade existing Content Fragments and Models you can run the procedure documented here. 
+To upgrade existing Content Fragments and Models, you can run the procedure documented here. 
 
 ## What is upgraded {#what-is-upgraded}
 
@@ -39,7 +39,7 @@ The following references are not upgraded:
 * Page references - UUIDs are not supported yet
 * Any invalid references; for example, where the target of the Content Fragment path, or Asset path, does not exist
 
-  * Invalid references are not upgraded, as if the Content Fragment path, or Asset path, is invalid there is not be a corresponding UUID to assign. The original reference remains untouched.
+  * Invalid references are not upgraded, as if the Content Fragment path, or Asset path, is invalid there is not a corresponding UUID to assign. The original reference remains untouched.
 
   * Use a [dry run](#execute-a-dry-run) to detact any invalid references.
 
@@ -49,7 +49,7 @@ The following references are not upgraded:
 
 ## When you should not upgrade {#when-you-should-not-upgrade}
 
-You should not upgrade:
+Do not upgrade:
 
 * When any of your Content Fragments use page references; as UUIDs are yet not supported for page references
 
@@ -74,13 +74,13 @@ There are a few preparation steps before running your upgrade.
 
 Plan time for a dry run of the upgrade to ensure that you find, and correct, any invalid references.
 
-Run the content upgrade in `dry-run` mode to identify any invalid references, by listing them in the log files. You can then fix those, before running the actual content upgrade.
+Run the content upgrade in `dry-run` mode to identify any invalid references, by listing them in the log files. You can then fix these references, before running the actual content upgrade.
 
 ### Enforce a content freeze {#enforce-a-content-freeze}
 
 Execution of the content upgrade should be planned during a content freeze period.
 
-The duration of the content freeze depends on the volume of Content Fragments being upgraded. Accordingly the upgrade can range from a few minutes up to a few hours, and also depends upon the parameters used when starting the content upgrade.
+The duration of the content freeze depends on the volume of Content Fragments being upgraded. Accordingly, the upgrade can range from a few minutes up to a few hours, and also depends upon the parameters used when starting the content upgrade.
 
 ## Running the content upgrade {#running-the-content-upgrade}
 
@@ -96,17 +96,17 @@ The content upgrade can be managed using the endpoint: `/libs/dam/cfm/maintenanc
 |--- |--- |--- |
 | `/libs/dam/cfm/maintenance.json`| `POST`| |
 | action | `start`| |
-| basePath | `/conf` | Specify either:<ul><li>the root `/conf` to upgrade all the AEM configurations</li><li>a selected AEM configuration path. for which the content upgrade is executed<br>For example: `/conf/wknd-shared` will only upgrade the single tenant `wknd-shared`</li></ul> |
+| basePath | `/conf` | Specify either:<ul><li>the root `/conf` to upgrade all the AEM configurations</li><li>a selected AEM configuration path. for which the content upgrade is executed<br>For example: `/conf/wknd-shared` only upgrades the single tenant `wknd-shared`</li></ul> |
 | dryRun | `true`, `false`| <ul><li>`false`: simulate the content upgrade, without saving any content changes</li><li>`true`: perform the content upgrade, and save content changes</li></ul> |
 | interval | `10`| Interval in seconds, after which the next segment of Content Fragments, or models is upgraded. |
-| jobId | `UUID`| The ID of the job that executes the content upgrade.<ul><li>This ID will be required in any subsequent calls related to this execution.</li><li>If the `mode` value is set to `replicate` execution on AEM Publish instances will also need to be under the same `jobId`.</li></ul> |
-| mode | `replicate`, `noReplicate`| <ul><li>`replicate`: will replicate the same job on all AEM Publish instances</li><li>`noReplicate`: will only run the job on AEM Author instances</li></ul> |
-| parameters | The content upgrade parameters | These include the initial parameters provided to start the content upgrade, and also some internal defaults.|
-| **Request parameters** | **Value(s)** | |
+| jobId | `UUID`| The ID of the job that executes the content upgrade.<ul><li>This ID is required in any subsequent calls related to this execution.</li><li>If the `mode` value is set to `replicate`, execution on AEM Publish instances also need to be under the same `jobId`.</li></ul> |
+| mode | `replicate`, `noReplicate`| <ul><li>`replicate`: replicates the same job on all AEM Publish instances</li><li>`noReplicate`: only runs the job on AEM Author instances</li></ul> |
+| parameters | The content upgrade parameters | These include the initial parameters provided to start the content upgrade, and some internal defaults. |
+| **Request parameters** | **Value** | |
 | &nbsp; | &nbsp; | &nbsp; |
-| **Response details** | **Value(s)** | | 
-| segmentSize | `1000` | This is the number of Content Fragments or models that will be upgraded in one segment (batch). |
-| serviceTypeId | `uuidUpgradeService` | This is a fixed service ID. |
+| **Response details** | **Value** | | 
+| segmentSize | `1000` | The number of Content Fragments or models that will be upgraded in one segment (batch). |
+| serviceTypeId | `uuidUpgradeService` | The fixed service ID. |
 
 ### Example Content Upgrade Request {#example-content-upgrade-request}
 
@@ -165,10 +165,10 @@ Content-Length: 386
 | Endpoint | HTTP request type | Comment |
 |--- |--- |--- |
 | `/libs/dam/cfm/maintenance.json`| `GET`| |
-| **Request parameters** | **Value(s)** | |
+| **Request parameters** | **Value** | |
 | action | status | |
 | jobId | `<UUID>` | The `jobId` that was returned from the call to start the content upgrade. |
-| **Response details** | **Value(s)** | | 
+| **Response details** | **Value** | | 
 | status | JSON values | Contains the detailed status of the content upgrade:<ul><li>Updated after every interval (seconds).</li><li>`uuidUpgradeService` execution has two phases:<ol><li>phase-0 to upgrade content fragment models</li><li>phase-1 to upgrade content fragments</li></ol></li><li>In each phase, statistics are updated after every interval.</li><li>"jobStatus": "COMPLETED" marks the upgrade as successfully completed.</li><li>Other status values are self-explanatory.</li></ul> |
 
 ### Example Content Upgrade Status Request {#example-content-upgrade-status-request}
@@ -244,7 +244,7 @@ Content-Length: 1116
 
 +++Sample log files
 
-In addition to the status of a running content upgrade obtained the HTTP endpoint, AEM logs provide detailed information of the progress on the content level. For example:
+In addition to the status of a running content upgrade obtained from the HTTP endpoint, AEM logs provide detailed information of the progress on the content level. For example:
 
 ```xml
 #Successful model upgrade
@@ -282,11 +282,11 @@ com.adobe.cq.dam.cfm.impl.servicing.PhaseChainProcessor Phase phase-x, processed
 | Endpoint | HTTP request type | Comment |
 |--- |--- |--- |
 | `/libs/dam/cfm/maintenance.json`| `POST`| |
-| **Request parameters** | **Value(s)** | |
+| **Request parameters** | **Value** | |
 | action | abort | |
 | jobId | `<UUID>` | The `jobId` that was returned from the call to start the content upgrade. |
-| **Response details** | **Value(s)** | | 
-| status | JSON values | Contains the detailed status of the content upgrade:<ul><li>The status to note is "jobStatus": "ABORTED".<br>After this, any pending segments of data will not be processed.</li><li>If the jobStatus is "COMPLETED" before an abort, the call will not have any effect.</li></ul> |
+| **Response details** | **Value** | | 
+| status | JSON values | Contains the detailed status of the content upgrade:<ul><li>The status to note is "jobStatus": "ABORTED".<br>After an abort action, any pending segments of data will not be processed.</li><li>If the jobStatus is "COMPLETED" before an abort, the call does not have any effect.</li></ul> |
 
 ### Example Abort a Content upgrade Request {#example-abort-content-upgrade-request}
 
