@@ -164,7 +164,7 @@ The following table describes a list of the possible Product Profiles below an e
         <td>AEM Forms Developers</td>
         <td>
             <ul>
-                <li>Intended for controlled access to AEM Forms author features on this environment. Users in this Product Profile will be members of the AEM Forms forms-power-users AEM group, that is automatically created in AEM. These users have the rights to upload XDPs and author Form Data Models also in addition to normal for authoring tasks.</li><br>
+                <li>Intended for controlled access to AEM Forms author features on this environment. Users in this Product Profile will be members of the AEM Forms forms-power-users AEM group, that is automatically created in AEM. These users have the rights to upload XDPs and author Form Data Models also in addition to normal form authoring tasks.</li><br>
                 <li>If the default service remains selected
                     <ul>
                         <li>users in this product profile will also be members of the "AEM Forms Developers - Service" AEM group.</li>
