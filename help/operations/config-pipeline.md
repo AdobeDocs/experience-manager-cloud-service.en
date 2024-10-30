@@ -40,7 +40,7 @@ The following table offers a comprehensive list of such configurations with link
 | [Basic authentication](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Declare the usernames and passwords for a basic auth dialog protecting certain URLs [(available to early adopters only)](/help/release-notes/release-notes-cloud/release-notes-current.md#foundation-early-adopter) |
 | [Version Purge Maintenance Task](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimize the AEM repository by declaring rules around when content versions should be purged |
 | [Audit log Purge Maintenance Task](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimize the AEM audit log for increased performance by declaring rules around when logs should be purged |
-| [Log forwarding](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Not yet available - Configure the endpoints and credentials for forwarding logs to various destinations (e.g., Splunk, Datadog, HTTPS) |
+| [Log forwarding](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Configure the endpoints and credentials for forwarding logs to various destinations, including Azure Blob Storage, Datadog, HTTPD, Elasticsearch, Splunk) |
 
 ## Creating and Managing Config Pipelines {#creating-and-managing}
 
