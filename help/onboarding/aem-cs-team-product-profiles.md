@@ -37,9 +37,11 @@ When Adobe processes the licensing of an AEM solution for the first time, two Pr
 * **AEM Org-Level** - contains one or more Product Profile that represent access to features that are scoped to all AEM environments, rather than just to a single one
 * **Cloud Manager** - contains Product Profiles corresponding to different levels of access to Cloud Manager features.
 
+<!--
 >[!NOTE]
 >
->For existing programs, the AEM Org-Level Product Instance is created upon selecting the **Create product** profiles action for a given environment.
+>For existing programs, the AEM Org-Level Product Instance is created upon selecting the **Update product** profiles action for a given environment.
+-->
 
 ![Org Level Product Instances](/help/onboarding/assets/orglevel.png)
 
@@ -78,8 +80,8 @@ The following table describes a list of the possible Product Profiles below an e
                 <li>If the default service remains selected
                     <ul>
                         <li>users in this product profile will also be members of the "AEM Sites Content Managers - Service" AEM group.</li>
-                        <li>users in this product profile will have access to AEM Sites Content Management API.</li>
-                        <li>an Adobe Developer Console API OAuth S2S project containing AEM Sites Content Management API can optionally be scoped to this environment.</li>
+                      <!--  <li>users in this product profile will have access to AEM Sites Content Management API.</li>
+                        <li>an Adobe Developer Console API OAuth S2S project containing AEM Sites Content Management API can optionally be scoped to this environment.</li>-->
                     </ul>
                 </li>
             </ul>
