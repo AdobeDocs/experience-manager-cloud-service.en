@@ -112,15 +112,15 @@ The Generative AI capabilities on offer are:
 
 ### Self-Serve Log Forwarding with Advanced Networking Option {#log-forwarding}
 
-While AEM (including Apache/Dispatcher) and CDN logs can be downloaded from Cloud Manager, many organizations find it beneficial to stream those logs to a preferred logging destination. AEM now supports [log forwarding](/help/implementing/developing/introduction/log-forwarding.md) to Azure Blob Storage, Datadog, HTTPD, Elasticsearch (and OpenSearch), and Splunk. AEM logs can be optionally forwarded over advanced networking; for example, with a dedicated IP address.
+While AEM (including Apache/Dispatcher) and CDN logs can be downloaded from Cloud Manager, many organizations find it beneficial to stream those logs to a preferred logging destination. AEM now supports [log forwarding](/help/implementing/developing/introduction/log-forwarding.md) to Azure Blob Storage, Datadog, HTTPS, Elasticsearch (and OpenSearch), and Splunk. AEM logs can be optionally forwarded over advanced networking configurations, such as using a dedicated IP address.
 
 This feature is self-serve configured, and deployed using the [Config Pipeline](/help/operations/config-pipeline.md).
 
 ### Pipeline-free URL Redirects for Business Users {#pipeline-free-redirects}
 
-Browser-side redirects are useful for scenarios where a web page has been taken down or has moved. With this feature, you can place an Apache rewrite map file in an AEM publish location where it is loaded on a regular basis, without the need to commit the file to source control or run a Cloud manager pipeline.
+Browser-side redirects are useful for scenarios where a web page has been taken down or has moved. With [Pipeline-free URL Redirects](/help/implementing/dispatcher/pipeline-free-url-redirects.md), you can place an Apache rewrite map file in an AEM publish location where it is loaded on a regular basis, without the need to commit the file to source control or run a Cloud Manager pipeline.
 
-There are several options for publishing the rewrite file, including AEM Asset ingestion, ACS Commons Rewrite Map Manager, or a custom user interface.
+There are several options for publishing the rewrite file, including uploading as an asset, ACS Commons Rewrite Map Manager, or a custom user interface.
 
 ### Config Pipeline for RDEs {#config-pipeline-rdes}
 
