@@ -62,7 +62,7 @@ Perform the following steps to install AEM Modernize Tools to your local AEM For
 
     `java -jar aem-author-p4502.jar`
 
-1. Clone the [AEM Modernize Tool](https://git.corp.adobe.com/livecycle/forms-modernizer/tree/convertForms) repository in your local system.
+1. Clone the [AEM Modernize Tool](/content/migration-journey/refactoring-tools/aem-modernization-tools) repository in your local system.
 
     ```Shell 
 
