@@ -1136,7 +1136,8 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 
     * `_id_` : the UUID for your Content Fragment within the repository
       <!-- CQDOC-21487 -->
-      * See [Sample Query for a Content Fragment of a specific Model with UUID reference](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-reference)
+      * See [Sample Query for a Content Fragment of a specific Model with UUID references](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-references)
+      * [See Sample Query for Content Fragments by UUID reference](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-reference)
 
     * `_reference` : to reveal references; including inline references in the Rich Text Editor
       * See [Sample Query for multiple Content Fragments with Prefetched References](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-prefetched-references)

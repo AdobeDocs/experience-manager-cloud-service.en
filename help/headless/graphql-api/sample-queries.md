@@ -1486,22 +1486,76 @@ The following query returns all `attachments` - a specific field (subgroup) of t
 }
 ```
 
-### Sample Query for a Content Fragment of a specific Model with UUID reference{#sample-wknd-fragment-specific-model-uuid-reference}
+### Sample Queries for a Content Fragment of a specific Model using UUID references {#sample-wknd-fragment-specific-model-uuid-references}
 
-<!-- CQDOC-21487 -->
+<!-- CQDOC-21487 - need more details on both, text must be checked too -->
 
 These queries interrogate:
 
-* for multiple Content Fragments of type `bookmark`
-  * with Content References to other fragments 
+* the UUID for a Content Fragment, and for referenced Content Fragments or assets
+* the result is returned through the JSON property `_id`
 
-The following query returns all content references by using `_references`:
+#### Sample Query for a Content Fragment of a specific Model using UUID reference {#sample-wknd-fragment-specific-model-uuid-reference}
 
-<!-- need replacement query -->
+The following query returns all content references by using `_id` and `_path`:
 
 ```graphql
 {
-    tbc
+  articleList {
+    items {
+        _id
+        _path
+        title
+        featuredImage {
+          ... on ImageRef {
+            _id
+            _path           
+          }
+        }
+        authorFragment {
+          firstName
+          lastName
+          profilePicture {
+            ... on ImageRef {
+              _id
+              _path
+            }
+          }
+        }
+      }
+  }
+}
+```
+
+#### Sample Query for Content Fragments by UUID reference {#sample-wknd-fragment-specific-model-uuid-reference}
+
+The following query returns all content references related to a specific `_id`:
+
+```graphql
+{
+  articleById(_id: "3ce2bf53-7436-4d3e-b19a-2793bc2ca63e") {
+    item {
+      _id
+      _path
+      title
+      featuredImage {
+        ... on ImageRef {
+          _id
+          _path
+        }
+      }
+      authorFragment {
+        firstName
+        lastName
+        profilePicture {
+          ... on ImageRef {
+            _id
+            _path
+          }
+        }
+      }
+    }
+  }
 }
 ```
 
