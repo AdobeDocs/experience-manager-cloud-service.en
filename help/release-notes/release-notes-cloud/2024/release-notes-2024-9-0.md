@@ -109,15 +109,15 @@ The Generative AI capabilities on offer are:
 
 ### Improvements {#improvements-fixes-cif}
 
-* Make category limit customisable.
+* Make category limit customizable.
 
 ### Bug fixes {#bug-fixes-cif}
 
 * Commerce fields are not properly integrated with the Assets Metadata Schema editor.
 * Issue with Carousel Products Multifield for Drag & Drop.
 * Issue with Carousel Category Multifield for Drag & Drop.
-* On-click doesn't working for the menus in the Page information on category & product editor page.
-* Order Number is not visible in Order Confirmation Page.
+* On-click doesn't work for the menus in the Page information on the category & product editor page.
+* Order Number is not visible in the Order Confirmation Page.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -127,11 +127,11 @@ The Adobe Managed CDN now supports [Edge Side Includes (ESI)](/help/implementing
 
 ### Basic Authentication at the CDN {#basicauth-cdn}
 
-Protect certain content resources by popping up a basic auth dialog requiring a username and password. This feature primarily targets light authentication use cases, like business stakeholders reviewing content, rather than serving as a comprehensive solution for end-user access rights. The list of username and passwords is managed through a configuration file in git that is deployed via Config Pipeline, with a reference to secret-type Cloud Manager environment variables. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
+Protect certain content resources by popping up a basic auth dialog requiring a username and password. This feature primarily targets light authentication use cases, like business stakeholders reviewing content, rather than serving as a comprehensive solution for end-user access rights. The list of username and passwords is managed through a configuration file in Git that is deployed via Config Pipeline, with a reference to secret-type Cloud Manager environment variables. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
 
 ### Client-Side Redirects {#client-side-redirects}
 
-Declare [browser redirects](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) in a configuration file git that are deployed to and evaluated at the CDN. This can be useful for scenarios including deleting pagtes, changed site structure, and SEO optimization.
+Declare [browser redirects](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) in a configuration file Git that are deployed to and evaluated at the CDN. This can be useful for scenarios including deleting pages, changed site structure, and SEO optimization.
 
 ### New AEM Developer Console (Public Beta) {#aem-developer-console-beta}
 
@@ -147,7 +147,7 @@ Similar to AEM 6.5, Apache/dispatcher ingests rewrite maps placed in a specific 
 
 ### Config Pipeline for RDEs (Early Adopter Program) {#config-pipeline-rdes-early-adopter}
 
-The [Config Pipeline](/help/operations/config-pipeline.md) is used to deploy yaml file configurations, including CDN options (traffic filter rules, request/response transformations, etc). Join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>** to deploy these same configurations to RDEs (Rapid Development Environments), which use a CLI.
+The [Config Pipeline](/help/operations/config-pipeline.md) is used to deploy yaml file configurations, including CDN options (traffic filter rules, request/response transformations, and so on). Join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>** to deploy these same configurations to RDEs (Rapid Development Environments), which use a CLI.
 
 ## [!DNL Experience Manager] Guides {#guides}
 
