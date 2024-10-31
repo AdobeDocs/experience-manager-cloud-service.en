@@ -278,7 +278,7 @@ Cloud Manager has pre-configured product profiles which can be thought of as rol
 >
 >See [Role Based Permissions in Cloud Manager](/help/onboarding/cloud-manager-introduction.md#role-based-permissions) for more details.
 
-Each of the product profiles have specific permissions associated with them.
+Each of the product profiles have specific permissions associated with them. 
 
 * **Business Owner**
   * In this role you have the permission to add a new program or edit a program, add or update an environment, deploy code to AEM environment, or execute code quality checks.
