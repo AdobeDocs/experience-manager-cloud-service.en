@@ -74,7 +74,7 @@ There are a few preparation steps before running your upgrade.
 
 Plan time for a dry run of the upgrade to ensure that you find, and correct, any invalid references.
 
-Run the content upgrade in `dry-run` mode to identify any invalid references, by listing them in the log files. You can then fix these references, before running the actual content upgrade.
+Run the content upgrade in `dryRun` mode to identify any invalid references, by listing them in the log files. You can then fix these references, before running the actual content upgrade.
 
 ### Enforce a content freeze {#enforce-a-content-freeze}
 
