@@ -62,7 +62,7 @@ Perform the following steps to install AEM Modernize Tools to your local AEM For
 
     `java -jar aem-author-p4502.jar`
 
-1. Clone the [AEM Modernize Tool](/content/migration-journey/refactoring-tools/aem-modernization-tools) repository in your local system.
+1. Clone the [AEM Modernize Tool](/help/migration-journey/refactoring-tools/aem-modernization-tools.md) repository in your local system.
 
     ```Shell 
 
