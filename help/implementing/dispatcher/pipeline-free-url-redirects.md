@@ -6,9 +6,6 @@ role: Admin
 ---
 # Pipeline-free URL Redirects {#pipeline-free-redirects}
 
->[!NOTE]
->This feature is not yet released.
-
 For various reasons, organizations rewrite URLs in a way that causes a 301 (or 302) redirect, meaning that the browser is redirected to a different page.
 
 Scenarios include:
