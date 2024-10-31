@@ -114,7 +114,7 @@ The Generative AI capabilities on offer are:
 
 While AEM (including Apache/Dispatcher) and CDN logs can be downloaded from Cloud Manager, many organizations find it beneficial to stream those logs to a preferred logging destination. AEM now supports [log forwarding](/help/implementing/developing/introduction/log-forwarding.md) to Azure Blob Storage, Datadog, HTTPS, Elasticsearch (and OpenSearch), and Splunk. AEM logs can be optionally forwarded over advanced networking configurations, such as using a dedicated IP address.
 
-This feature is self-serve configured, and deployed using the [Config Pipeline](/help/operations/config-pipeline.md).
+This feature isconfigured by users in a self-serve manner, and deployed using the [Config Pipeline](/help/operations/config-pipeline.md).
 
 ### Pipeline-free URL Redirects for Business Users {#pipeline-free-redirects}
 
@@ -124,7 +124,7 @@ Options for publishing the rewrite file include uploading it as an asset, using 
 
 ### Config Pipeline for RDEs {#config-pipeline-rdes}
 
-Rapid Development Environments are a powerful tool for quickly deploying and testing code and configuration in a Cloud environment. RDEs now support [syncing YAML-file configurations](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline), including CDN settings such as traffic filter rules and request/response transformations, as well as log forwarding and other configuration options. [See the full list](/help/operations/config-pipeline.md) of supported configuration options for more details.
+Rapid Development Environments are a powerful tool for quickly deploying and testing code and configuration in a Cloud environment. RDEs now support [syncing of configuration YAML-files](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline), including CDN settings such as traffic filter rules and request/response transformations, as well as log forwarding and other configuration options. [See the full list](/help/operations/config-pipeline.md) of supported configuration options for more details.
 
 ### New Product Profiles {#new-product-profiles}
 
