@@ -54,16 +54,33 @@ AI-generated video captions in Adobe Dynamic Media use artificial intelligence t
 
 To get early access to AI-generated captions support on your Dynamic Media account, [create and submit an Adobe Customer Support case](/help/assets/dynamic-media/video.md##enable-dash).  
 
-### New features in Asset Selector {#asset-selector-new-features}
+### New features in Assets view {#assets-view-new-features}
 
-Asset Selector now supports browsing Collections to find your desired asset.
-![Asset selector collections](/help/assets/assets/collections-rail-modal-view.png)
+**Scheduled Reports**
+
+Reports can now be automatically generated in the Assets View on a recurring schedule or at a future date, reducing the effort to uncover data-driven insights.
+
+![Scheduled Reports-](/help/assets/assets/scheduled-reports-tab.png)
 
 ### New features in Content Hub {#content-hub-new-features}
 
+**Digital Rights management for licensed assets**
+
+Organizations can now increase license compliance and minimize risk of sharing assets with licensing terms by leveraging DRM for licensed assets for users of Content Hub, requiring users to review and accept license terms before they can start downloading licensed assets.
+
+![download-multiple-license](/help/assets/assets/download-multiple-license.png)
+
+**Asset card metadata configuration**
+
+Content Hub now allows you to configure the key metadata fields that you need to display on the Asset Card upto a maximum of 6 fields. 
+
+![key metadata on Asset Card](/help/assets/assets/asset-card-key-metadata.png)
+
+**Configure the visibility and download of expired assets**
+
 Administrators can now control if they need expired assets to be visible on Content Hub. If the expired assets are made visible, they can also define if users can download them.
 
-![Expired assets on Content Hub](/help/assets/assets/view-download-expired-assets.png)
+![Expired assets on Content Hub](/help/assets/assets/expired-assets-content-hub.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
