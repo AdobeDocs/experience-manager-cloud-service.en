@@ -1495,7 +1495,7 @@ These queries interrogate:
 * the UUID for a Content Fragment, and for referenced Content Fragments or assets
 * the result is returned through the JSON property `_id`
 
-#### Sample Query for a Content Fragment of a specific Model using UUID reference {#sample-wknd-fragment-specific-model-uuid-reference}
+#### Sample Query for a Content Fragment of a specific Model using a UUID reference {#sample-wknd-fragment-specific-model-using-a-uuid-reference}
 
 The following query returns all content references by using `_id` and `_path`:
 
@@ -1527,7 +1527,7 @@ The following query returns all content references by using `_id` and `_path`:
 }
 ```
 
-#### Sample Query for Content Fragments by UUID reference {#sample-wknd-fragment-specific-model-uuid-reference}
+#### Sample Query for Content Fragments by UUID reference {#sample-wknd-fragment-specific-model-by-uuid-reference}
 
 The following query returns all content references related to a specific `_id`:
 
