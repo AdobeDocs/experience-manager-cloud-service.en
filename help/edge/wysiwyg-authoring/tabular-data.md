@@ -94,7 +94,7 @@ A dialog opens as the import is processed. Once complete, the data in the CSV fi
 >* If you need to update the columns, you must do that in the AEM Page Editor before performing the import of the CSV.
 >* A CSV file can not be larger than 10 MB for import.
 
-You can also import using a cURL command similar to the following.
+Depending on your selection of `mode`, you can also `create`, `replace`, or `append` to spreadsheets using a CSV and a cURL command similar to the following.
 
 ```text
 curl --request POST \
@@ -115,7 +115,7 @@ The call returns an HTML page with information about the job ID.
 Message | Job(Id:2024/9/18/15/27/5cb0cacc-585d-4176-b018-b684ad2dfd02_90) created successfully. Please check status at Async Job Status Navigation.
 ```
 
-This information can be used to query the job status, which is returned as JSON.
+[You can use the **Jobs** console](/help/operations/asynchronous-jobs.md) to view the status of the job or use the ID returned to query it.
 
 ```text
 https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da63f9e-066b-4134-95c9-21a9c57836a5_1
