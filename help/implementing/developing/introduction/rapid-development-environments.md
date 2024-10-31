@@ -271,7 +271,7 @@ The general usage pattern is `aio aem:rde:install <artifact>`.
 
 You can find some examples below:
 
-<u>Deploying a Content Package</u>
+#### Deploying a Content Package {#deploy-content-package}
 
 `aio aem:rde:install sample.demo.ui.apps.all-1.0.0-SNAPSHOT.zip`
 
@@ -294,7 +294,7 @@ Any AEM package can be deployed, such as packages with code, content, or a [cont
 >
 >The Dispatcher configuration for the WKND project is not deployed by way of the above content-package installation. Deploy it separately following the "Deploying an Apache/Dispatcher Configuration" steps.
 
-<u>Deploying an OSGI Configuration</u>
+#### Deploying an OSGI Configuration {#deploy-OSGI-config}
 
 `aio aem:rde:install com.adobe.granite.demo.MyServlet.cfg.json`
 
@@ -305,7 +305,7 @@ Where the response for a successful deployment resembles the following:
 #2: deploy completed for osgi-config com.adobe.granite.demo.MyServlet.cfg.json on author,publish - done by 9E0725C05D54FE1A0B49431C@AdobeID at 2022-09-13T11:54:36.390Z
 ```
 
-<u>Deploying a Bundle</u>
+#### Deploying a Bundle {#deploy-bundle}
 
 To deploy a bundle, use:
 
@@ -318,7 +318,7 @@ Where the response for a successful deployment resembles the following:
 #3: deploy staged for osgi-bundle org.apache.felix.gogo.jline-1.1.8.jar on author,publish - done by 9E0725C05D53BE1A0B49431C@AdobeID at 2022-09-14T07:54:28.882Z
 ```
 
-<u>Deploying a Content File</u>
+#### Deploying a Content File {#deploy-content-file}
 
 To deploy a content file, use:
 
@@ -331,7 +331,7 @@ Where the response for a successful deployment resembles the following:
 #4: deploy completed for content-file world.txt on author,publish - done by 9E0729C05C54FE1A0B49431C@AdobeID at 2022-09-14T07:49:30.644Z
 ```
 
-<u>Deploying an Apache/Dispatcher Configuration</u>
+#### Deploying an Apache/Dispatcher Configuration {#deploy-apache-config}
 
 The entire folder structure must be in the form of a zip file for this type of configuration. 
 
@@ -382,6 +382,26 @@ The analyser found the following errors for publish :
 ```
 
 The above code sample illustrates the behavior if a bundle does not resolve. In which case, it is "staged" and is only installed if its requirements (missing imports, in this case) are satisfied through the installation of other code. 
+
+#### Deploying Config Pipeline related configuration (yaml configs) {#deploy-config-pipeline}
+
+The environment-specific configurations (one or more yaml files) described in the article [Using Config Pipelines](/help/operations/config-pipeline.md) can be deployed as follows:
+
+`aio aem:rde:install -t env-config ./my-config-folder`
+where my-config-folder is the parent folder containing your yaml configurations.
+
+Alternatively, it is also possible to install a zip file containing the config folder tree:
+
+`aio aem:rde:install -t env-config config.zip` 
+
+Note that the yaml file's envTypes array should include the value *rde*, as in the example below:
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["rde"]
+```
 
 ### Deploying front-end code based on site themes and site templates {#deploying-themes-to-rde}
 
