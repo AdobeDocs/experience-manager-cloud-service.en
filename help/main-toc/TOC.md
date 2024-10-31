@@ -932,6 +932,7 @@ user-guide-title: AEM as a Cloud Service
     + [Managing Taxonomy Data](/help/edge/wysiwyg-authoring/taxonomy.md)
     + [WYSIWYG and Doc-Based Blocks](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
     + [WIP Sites Features](/help/edge/wysiwyg-authoring/wip-features.md)
+    + [Reusing Code Across Sites](/help/edge/wysiwyg-authoring/repoless.md)
   + Document-Based Authoring {#document-authoring}
     + [Authoring](/help/edge/docs/authoring.md)
     + [Bulk Metadata](/help/edge/docs/bulk-metadata.md)
