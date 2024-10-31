@@ -456,6 +456,10 @@ user-guide-title: AEM as a Cloud Service
   + [Supported file formats](/help/assets/file-format-support.md)
   + [Overview of asset microservices](/help/assets/asset-microservices-overview.md)
   + [Accessibility in [!DNL Assets]](/help/assets/accessibility.md)
+  + [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
+  + [Enable Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
+  + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
+  + [Assets Collaborator users](/help/assets/assets-collaborator-users.md)
   + Manage digital assets {#manage}
     + Micro-Frontend Asset Selector {#asset-selector}
       + [Asset Selector overview](/help/assets/overview-asset-selector.md)
@@ -633,6 +637,7 @@ user-guide-title: AEM as a Cloud Service
     + [Asset properties](/help/assets/asset-properties-content-hub.md)
     + [Share assets in Content Hub](/help/assets/share-assets-content-hub.md)
     + [Download assets using Content Hub](/help/assets/download-assets-content-hub.md)
+    + [Manage Licensed Assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md)
     + [Manage collections in Content Hub](/help/assets/collections-content-hub.md)
     + [Edit images using Adobe Express in Content Hub](/help/assets/edit-images-content-hub.md)
     + [Asset Insights in Content Hub](/help/assets/insights-content-hub.md)
