@@ -74,7 +74,7 @@ The error is fixed as follows:
 
 >[!TIP]
 >
->Solving domain delegation issues with Fastly typically takes 1-2 business days. For this reason, it is highly recommended to install the domains well before their go live date.
+>Solving domain delegation issues with Fastly typically takes 1-2 business days. For this reason, it is recommended to install the domains well before their go live date.
 
 >[!NOTE]
 >
