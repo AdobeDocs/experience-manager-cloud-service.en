@@ -128,9 +128,9 @@ Rapid Development Environments are a powerful tool for quickly deploying and tes
 
 ### New Product Profiles {#new-product-profiles}
 
-When a new AEM environment is created, Product Profiles appear in Adobe Admin Console, which are used by your organization's administrator to assign access to licensed solutions and features. 
+When a new AEM environment is created, Product Profiles automatically appear in the Adobe Admin Console, enabling administrators to assign access to licensed solutions and features. 
 
-Newly created environments now have a new set of Product Profiles, which makes them compatible with future features, including generating APIs credentials in the Adobe Developer Console. Existing environments will be able to update their environments to the new Product Profiles in a future release. [Learn more](/help/onboarding/aem-cs-team-product-profiles.md).
+New environments now include an updated set of Product Profiles, making them compatible with future features including generating API credentials in the Adobe Developer Console. Existing environments will be able to update their Product Profiles in a future release. [Learn more](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ### New AEM Developer Console (Public Beta) {#aem-developer-console-beta}
 
