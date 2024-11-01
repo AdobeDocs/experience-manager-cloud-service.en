@@ -32,3 +32,21 @@ This technical account must have access rights to all DAM folders in order to pu
 
 ## Ensuring Assets Folder is Assigned Proper Configuration {#configuration}
 
+Generally assuring that your technical account has access to your assets in DAM is sufficient for publishing your assets along with your pages to Edge Delivery Services.
+
+Additional configuration is needed in two additional cases, however:
+
+* If you wish to publish pages with non-image assets such as PDFs or videos to Edge Delivery Services.
+* If you wish to publish image assets to Edge Delivery Services independently of pages.
+
+To support both these use cases, a [configuration](/help/implementing/developing/introduction/configurations.md) must be assigned to the DAM folder.
+
+1. Sign into your AEM authoring environment.
+1. Under **Sites** select the site where you are publishing your assets or the site with which the assets will be associated.
+1. Tap or click **Properties** in the tool bar.
+1. On the **Advanced** tab in the properties window, take note of the configuration in the field **Cloud Configuration**.
+   * This is created automatically when you create your site in the format `/conf/<site-name>`.
+1. Tap or click **Cancel** in the properties window and navigate to **Assets** -&gt; **Files** and select your DAM folder.
+1. Tap or click **Properties** in the tool bar.
+1. On the **Cloud Services** tab of the properties window, in the **Cloud Configuration** field, select the same configuration as you noted previously.
+1. Tap or click **Save &amp; Close**.
