@@ -1,6 +1,6 @@
 ---
 title: Content Hub frequently asked questions (FAQs)
-description: Get responses to some of the most frquently asked questions (FAQs) for Content Hub.
+description: Get responses to some of the most frequently asked questions (FAQs) for Content Hub.
 ---
 # Content Hub frequently asked questions {#content-hub-frequently-asked-questions}
 
