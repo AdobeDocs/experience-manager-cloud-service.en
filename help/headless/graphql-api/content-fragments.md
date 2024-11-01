@@ -33,6 +33,10 @@ Using the GraphQL API in AEM enables the efficient delivery of Content Fragments
 
 >[!NOTE]
 >
+>See [AEM APIs for Structured Content Delivery and Management](/help/headless/apis-headless-and-content-fragments.md) for an overview of the various APIs available and comparison of some of the concepts involved.
+
+>[!NOTE]
+>
 >For the latest information about Experience Manager APIs, please also visit [Adobe Experience Manager as a Cloud Service APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 ## The GraphQL API {#graphql-api}
