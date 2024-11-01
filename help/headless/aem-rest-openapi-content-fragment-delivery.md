@@ -5,7 +5,7 @@ feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 ---
 
-# AEM REST OpenAPI for Content Fragment Delivery{#aem-rest-openapi-for-content-fragment-delivery}
+# AEM REST OpenAPI for Content Fragment Delivery {#aem-rest-openapi-for-content-fragment-delivery}
 
 >[!IMPORTANT]
 >
