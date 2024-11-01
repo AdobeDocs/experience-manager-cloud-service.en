@@ -51,6 +51,10 @@ The following AEM Sites page events are now available as externally consumable e
 
 Leverage GenAI through AEM's new feature, [generate variations](/help/generative-ai/generate-variations.md), accessible now in Cloud Service. Generate variations helps you generate and scale content creation through the use of generative AI. Reach out to your Adobe account team for consideration in the program.
 
+**AEM REST OpenAPI for Content Fragment Delivery**
+
+The [AEM REST OpenAPI for Content Fragment Delivery](/help/headless/aem-rest-openapi-content-fragment-delivery.md), is available now for AEM as a Cloud Service. 
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Early access feature in Dynamic Media {#dm-early-access}
