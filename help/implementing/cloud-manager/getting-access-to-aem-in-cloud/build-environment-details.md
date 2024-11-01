@@ -48,7 +48,7 @@ To ensure a smooth experience with the updated version, Adobe recommends that us
 
 ### Using a Specific Java Version {#using-java-support}
 
-By default, projects are built by the Cloud Manager build process using the Oracle 8 JDK, but AEM Cloud Service customers are strongly advised to set the JDK version used to execute Maven to `11`.
+By default, projects are built by the Cloud Manager build process using the Oracle 8 JDK, but AEM Cloud Service customers are advised to set the JDK version used to execute Maven to `11`.
 
 #### Setting the Maven JDK Version {#alternate-maven-jdk-version}
 
