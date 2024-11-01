@@ -11,13 +11,13 @@ feature: Adaptive Forms, Core Components
 ---
 # Introduction 
 
-<span class="preview"> The feature is available under early adopter program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+<span class="preview"> The feature is available under the early adopter program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
 
-The Forms Conversion Utility, part of [AEM Modernize Tool](https://opensource.adobe.com/aem-modernize-Tools/) suite, helps you easily convert Adaptive Forms built with legacy Foundation Components to forms that leverage the modern, supported capabilities of Core Components.
+The Forms Conversion Utility, part of the [AEM Modernize Tool](https://opensource.adobe.com/aem-modernize-tools/) suite, helps you easily convert Adaptive Forms built with legacy Foundation Components to forms that leverage the modern, supported capabilities of Core Components.
 
 ## What is AEM Modernize Tools?
 
-[AEM Modernize Tools](https://opensource.adobe.com/aem-modernize-Tools/) refers to a set of utilities or software applications designed to facilitate the process of modernizing or updating Adobe Experience Manager (AEM) projects. These Tools typically assist in converting older components or functionalities within AEM to newer, more efficient, and supported alternatives. The Forms Conversion Utility is installed under AEM Modernize Tools to convert Adaptive Forms based on Foundation Components to Core Component based forms.
+[AEM Modernize Tools](https://opensource.adobe.com/aem-modernize-tools/) refers to a set of utilities or software applications designed to facilitate the process of modernizing or updating Adobe Experience Manager (AEM) projects. These Tools typically assist in converting older components or functionalities within AEM to newer, more efficient, and supported alternatives. The Forms Conversion Utility is installed under AEM Modernize Tools to convert Adaptive Forms based on Foundation Components to Core Component based forms.
 
 The Forms Conversion Utility converts Adaptive Forms that are based on older Foundation Components to newer Core Component based forms. This conversion process ensures that the forms align with modern standards and capabilities, potentially improving performance, compatibility, and ease of maintenance within the AEM environment.
 
@@ -62,7 +62,7 @@ Perform the following steps to install AEM Modernize Tools to your local AEM For
 
     `java -jar aem-author-p4502.jar`
 
-1. Clone the [AEM Modernize Tool](https://git.corp.adobe.com/livecycle/forms-modernizer/tree/convertForms) repository in your local system.
+1. Clone the [AEM Modernize Tool](/help/journey-migration/refactoring-tools/aem-modernization-tools.md) repository in your local system.
 
     ```Shell 
 
@@ -98,7 +98,7 @@ To enable and use the AEM Modernize Tools for your AEM Environment, it is import
 
 ![AEM Modernize Component Rule](/help/forms/assets/aem-modernize-tools-component-rule.png)
 
-## Run Form Conversion utility to convert Foundation Components based forms to Core Component based forms 
+## Run the Form Conversion utility to convert Foundation Components based forms to Core Component based forms 
 
 1. Go to **[!UICONTROL Tools > AEM Modernize Tools > Forms Conversion]**.
    
@@ -122,7 +122,7 @@ To enable and use the AEM Modernize Tools for your AEM Environment, it is import
 1. Specify the `source folder` name in the **[!UICONTROL Source Path]**.
 1. Specify the `target folder` name in the **[!UICONTROL Target Path]**.
 1. Select **[!UICONTROL Next]**.
-1. Click on **[!UICONTROL Add Forms]**. All the forms in the `source folder` appears on the screen.
+1. Click on **[!UICONTROL Add Forms]**. All the forms in the `source folder` appear on the screen.
 1. Select the Adaptive Forms based on Foundation Components to convert it to Core Component based forms. You can also select multiple forms.
 
     ![AEM Modernize Tools Select Form](/help/forms/assets/aem-modernize-tools-select-form.png)
