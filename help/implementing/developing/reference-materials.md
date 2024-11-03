@@ -69,6 +69,7 @@ AEM offers customizable components and content delivery options.
 |[Content Fragment GraphQL API](/help/headless/graphql-api/content-fragments.md)|Enable the efficient delivery of Content Fragments to JavaScript clients in headless CMS implementations|
 |[Content Fragments Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html)|Exact format of supported HTTP asset requests|
 | [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) | Content Fragment and Content Fragment Model OpenAPIs |
+| [AEM REST OpenAPI for Content Fragment Delivery](/help/headless/aem-rest-openapi-content-fragment-delivery.md) | A HTTP REST API on AEM Edge Delivery Services, designed to deliver structured content from Content Fragments in JSON format. |
 
 ## SPA-Specific APIs {#spa-apis}
 
