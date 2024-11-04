@@ -38,6 +38,10 @@ Out of the box, AEM as a Cloud Service has unified shell enabled. However, in ca
 
    ![image](/help/overview/assets/unifiedshell3.png)
 
+>[!NOTE]
+>
+>Unified Shell can also be disabled from your project code. See [Structure of the AEM UI - Unified Shell](/help/implementing/developing/introduction/ui-structure.md#unified-shell).
+
 ## Changing to Dark Theme {#changing-to-dark-theme}
 
 To change to the dark theme, click your profile icon. This action displays a popover as shown below. You can use the toggle to switch to a dark theme for the Unified Shell.
@@ -67,3 +71,4 @@ The AEM Inbox can be accessed by clicking the bell icon in the unified shell.
 Click the Inbox button in the popover so you can go to your AEM Inbox:
 
 ![image](/help/overview/assets/unifiedshell6.png)
+

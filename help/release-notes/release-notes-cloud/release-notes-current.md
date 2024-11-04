@@ -22,33 +22,28 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2024.8.0) is August 29, 2024. The next feature release (2024.9.0) is planned for September 26, 2024.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2024.10.0) is October 31, 2024. The next feature release (2024.11.0) is planned for November 21, 2024.
 
 ## Maintenance Release Notes {#maintenance}
 
 You can find the latest maintenance release notes [here](/help/release-notes/maintenance/latest.md).
 
-## Release Video {#release-video}
+<!-- ## Release Video {#release-video}
 
-Have a look at the August 2024 Release Overview video for a summary of the features added in the 2024.8.0 release:
+Have a look at the October 2024 Release Overview video for a summary of the features added in the 2024.10.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3433381?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3434847?quality=12)
+
+-->
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### New feature in Experience Manager Sites {#new-feature-sites}
+**Modernized Page Events**
 
-**AEM Authoring for Edge Delivery Services**
-
-Existing Sites [inheritance](/help/sites-cloud/authoring/universal-editor/inheritance.md) functionality is now supported including:
-
-* [AEM Launches](/help/sites-cloud/authoring/launches/overview.md)
-* [MSM](/help/sites-cloud/administering/msm/overview.md) at the page level
-
-In addition, the following page management features are now supported:
-
-* [AEM Tags](/help/sites-cloud/authoring/sites-console/tags.md) can be exported as a [taxonomy](/help/edge/wysiwyg-authoring/taxonomy.md) to Edge Delivery Services.
-* [Templates](/help/edge/wysiwyg-authoring/templates.md) for Edge Delivery Services are coming soon!
+The following AEM Sites page events are now available as externally consumable events that are based on the AEM as a Cloud Service Eventing Platform. The events can be processed via Adobe I/O to interact with external processes. 
+* Page published
+* Page unpublished
+* Page deleted
 
 ### Early Adopter Program {#sites-early-adopter}
 
@@ -56,6 +51,9 @@ In addition, the following page management features are now supported:
 
 Leverage GenAI through AEM's new feature, [generate variations](/help/generative-ai/generate-variations.md), accessible now in Cloud Service. Generate variations helps you generate and scale content creation through the use of generative AI. Reach out to your Adobe account team for consideration in the program.
 
+**AEM REST OpenAPI for Content Fragment Delivery**
+
+The [AEM REST OpenAPI for Content Fragment Delivery](/help/headless/aem-rest-openapi-content-fragment-delivery.md), is available now for AEM as a Cloud Service. 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -69,25 +67,31 @@ To get early access to AI-generated captions support on your Dynamic Media accou
 
 ### New features in Assets view {#assets-view-new-features}
 
-**Updated Adobe Firefly Image Generation**
+**Scheduled Reports**
 
-Assets as a Cloud Service now uses the latest widget from Firefly that allows you to generate images in different styles using Adobe Firefly. By defining its style, composition, dimensions, and more, using the in-built Firefly editor, you can quickly create & save the assets you need directly within the AEM Assets repository for immediate use.
+Reports can now be automatically generated in the Assets View on a recurring schedule or at a future date, reducing the effort to uncover data-driven insights.
 
-![Adobe Firefly image generation](/help/assets/assets/bugatti-type-57.png)
+![Scheduled Reports-](/help/assets/assets/scheduled-reports-tab.png)
 
-**PSB file support**
+### New features in Content Hub {#content-hub-new-features}
 
-Assets as a Cloud Service now supports Photoshop large documents (PSB files) in addition to the existing PSD file support.
+**Digital Rights management for licensed assets**
 
-### New enhancements in Content Hub {#content-hub-new-enhancements}
+Organizations can now increase license compliance and minimize risk of sharing assets with licensing terms by leveraging DRM for licensed assets for users of Content Hub, requiring users to review and accept license terms before they can start downloading licensed assets.
 
-* Better handling of long filenames, easy expansion of complete name via tooltip.
-* Improved thumbnails to better fit content aspect ratio and cover a larger area of content.
-* Custom thumbnail experience from AEM supported with content hub.
-* Improvements in color search.
-* Improvements in configurations save experience.
-* Improved info page of collections to reflect the creator name.
+![download-multiple-license](/help/assets/assets/download-multiple-license.png)
 
+**Asset card metadata configuration**
+
+Content Hub now allows you to configure the key metadata fields that you need to display on the Asset Card upto a maximum of 6 fields. 
+
+![key metadata on Asset Card](/help/assets/assets/asset-card-key-metadata.png)
+
+**Configure the visibility and download of expired assets**
+
+Administrators can now control if they need expired assets to be visible on Content Hub. If the expired assets are made visible, they can also define if users can download them.
+
+![Expired assets on Content Hub](/help/assets/assets/expired-assets-content-hub.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -96,7 +100,6 @@ Assets as a Cloud Service now supports Photoshop large documents (PSB files) in 
 #### Auto-save a draft for Core Components based Adaptive Forms
 
 Users can now benefit from an auto-save feature that saves a partially completed form as a draft automatically. They can return later to finish filling it out on the same or other device. This feature improves conversion rates for organizations by reducing form abandonment, as users do not need to start over form filling from the beginning.
-
  
 ### Early Access features in AEM Forms {#forms-new-early-access-features}
 
@@ -126,33 +129,61 @@ The Generative AI capabilities on offer are:
 >
 > Interested in joining the Early Access Program for any Forms innovation? Send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) with the list of capabilities that you are interested in.
 
+## CIF Add-on {#cloud-services-cif}
+
+### Bug fixes {#bug-fixes-cif}
+
+* Fixed UI tests to work properly with Core CIF components.
+* Resolved issue with category URL format not functioning as expected in the cloud instance.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Content Delivery-related Early Adopter Programs {#foundation-early-adopter}
+### Configuration to Control Form Submissions {#configuration-submissions}
 
-Email **<aemcs-cdn-config-adopter@adobe.com>**, indicating which of the early adopter programs below you are interested in.
+To control form submissions for Coral or Foundation forms at specific locations, AEM has introduced a new configuration: `com.adobe.granite.ui.components.FormRestrict`. This configuration consists of two fields:
 
-#### Basic Authentication at the CDN (Early Adopter Program) {#basicauth-cdn}
+1. **Add Allowed Paths**: Specifies the paths where form actions are permitted.
+1. **Restrict Behavior**: Determines the behavior for restricted paths (paths not included in the allowed list). You can choose between two options:
+   * **Popup** (default): Displays a popup notification.
+   * **Prevent**:Blocks form submission.
 
-Protect certain content resources by popping up a basic auth dialog requiring a username and password. This feature primarily targets light authentication use cases, like business stakeholders reviewing content, rather than serving as a comprehensive solution for end-user access rights. The list of username and passwords in managed through a configuration file in git that is deployed via Configuration Pipeline, with a reference to secret-type Cloud Manager environment variables. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
+>[!NOTE]
+>
+>This configuration is not supported for all Coral or Foundation forms located under `/apps`, `/libs`, `/mnt/overlay`, and `/mnt/override`.
 
-#### Client-Side Redirects (Early Adopter Program) {#client-side-redirects-early-adopter}
+### Self-Serve Log Forwarding with Advanced Networking Option {#log-forwarding}
 
-Configure 301/302 client-side redirects in source control, and deploy to the CDN. [Learn more](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Note that there are several other features already available related to [CDN configuration](/help/implementing/dispatcher/cdn-configuring-traffic.md), including request and response transformations, and routing traffic to off-AEM sites.
+While AEM (including Apache/Dispatcher) and CDN logs can be downloaded from Cloud Manager, many organizations find it beneficial to stream those logs to a preferred logging destination. AEM now supports [log forwarding](/help/implementing/developing/introduction/log-forwarding.md) to Azure Blob Storage, Datadog, HTTPS, Elasticsearch (and OpenSearch), and Splunk. AEM logs can be optionally forwarded over advanced networking configurations, such as using a dedicated IP address.
 
-#### Business Users Can Declare Redirects Outside of Git (Early Adopter Program) {#apache-rewritemaps-early-adopter}
+This feature is configured by users in a self-serve manner, and deployed using the [Config Pipeline](/help/operations/config-pipeline.md).
 
-Similar to AEM 6.5, Apache/dispatcher ingest rewrite maps placed in a specific location in the publish repository, and load them, without requiring a web tier pipeline execution. This approach let business users declare redirects using a spreadsheet or a UI, like ACS Commons Redirect Map Manager or a custom application. <!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
+### Pipeline-free URL Redirects for Business Users {#pipeline-free-redirects}
 
-#### Edge Side Includes (ESI) for Loading Dynamic Content (Early Adopter Program) {#esi-early-adopter}
+Browser-side redirects are useful when a web page has been taken down or has moved, or other scenarios. With [Pipeline-free URL Redirects](/help/implementing/dispatcher/pipeline-free-url-redirects.md), you can place an Apache rewrite map file in an AEM publish location, where it is automatically loaded -- no need to commit the file to source control or initiate a Cloud Manager pipeline.
 
-The Adobe Managed CDN now supports [Edge Side Includes (ESI)](/help/implementing/dispatcher/edge-side-includes.md), a markup language for edge level dynamic web content assembly. By including ESI snippets, you can cache the overall HTML page at the CDN with higher TTLs, while more frequently fetching from origin those smaller sections that require higher cadence updates (lower TTLs). <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
+Options for publishing the rewrite file include uploading it as an asset, using the ACS Commons Rewrite Map Manager, or interacting with a custom user interface.
 
+### Config Pipeline for RDEs {#config-pipeline-rdes}
+
+Rapid Development Environments are a powerful tool for quickly deploying and testing code and configuration in a Cloud environment. RDEs now support [syncing of configuration YAML-files](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline), including CDN settings such as traffic filter rules and request/response transformations, as well as log forwarding and other configuration options. [See the full list](/help/operations/config-pipeline.md) of supported configuration options for more details.
+
+### New Product Profiles {#new-product-profiles}
+
+When a new AEM environment is created, Product Profiles automatically appear in the Adobe Admin Console, enabling administrators to assign access to licensed solutions and features. 
+
+New environments now include an updated set of Product Profiles, making them compatible with future features including generating API credentials in the Adobe Developer Console. Existing environments will be able to update their Product Profiles in a future release. [Learn more](/help/onboarding/aem-cs-team-product-profiles.md).
+
+### New AEM Developer Console (Public Beta) {#aem-developer-console-beta}
+
+Try out a revamped [AEM Developer Console](/help/implementing/developing/introduction/aem-developer-console.md), which offers a more interactive experience for debugging code in Cloud environments.
+
+Anyone can access the public beta by clicking the *New Console Available* button in the current AEM Developer Console. Adobe welcomes feedback, which you can email to **<aemcs-new-devconsole-ui-beta@adobe.com>**.
+
+![OSGi Bundles Screen in AEM Developer Console](/help/implementing/developing/introduction/assets/osgi-bundles.png)
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-You can find a complete list of new and enhanced features of the latest release of Adobe Experience Manager Guides [here](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0).
+You can find a complete list of new and enhanced features of the latest release of Adobe Experience Manager Guides [here](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0).
 
 ## Cloud Manager {#cloud-manager}
 

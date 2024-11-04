@@ -27,7 +27,7 @@ You must have already configured the DNS settings for your custom domain name as
 
 1. Navigate to the **Environments** screen from the **Overview** page.
 
-1. Click **Domain Settings** in the left navigation panel.
+1. Click **Domain Settings** in the left side menu.
 
 1. Click the **Status** icon for the domain name.
 

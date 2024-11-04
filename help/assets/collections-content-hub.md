@@ -6,6 +6,9 @@ exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
 ---
 # Manage collections in [!DNL Content Hub] {#manage-collections}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 <!-- ![Manage collections](assets/manage-collections.jpg) -->
 ![Manage collections](assets/manage-collection.png)
 

@@ -7,9 +7,6 @@ role: Admin
 ---
 # Edge Side Includes {#edge-side-includes}
 
->[!NOTE]
->This feature is not yet generally available. To join the early-adopter program, email `aemcs-cdn-config-adopter@adobe.com` and describe your use case.
-
 Content delivery speed benefits from caching pages aggressively, achieved through setting cache headers with high time to live (TTL) values. This can be challenging when pages include dynamic content, which needs to be either frequently refreshed or potentially cannot be cached at all. Fortunately, there are strategies where the containing HTML page can be cached with a high TTL, deferring the fetch of the more dynamic content snippets to a later time, either through client-side Javascript or at the CDN. The latter approach is a standard called Edge Side Includes (ESI), which is supported for sites rendered with AEM publishing. The HTML includes ESI tags instructing the CDN to defer the serving of the page to the browser until it evaluates those tags, retrieving additional, more dynamic (lower TTL) content from the origin (or CDN cache if its TTL hasn't expired).
 
 Some use cases where Edge Side Includes may be useful:

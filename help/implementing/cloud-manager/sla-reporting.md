@@ -30,7 +30,7 @@ The line graph of a selected year includes data points for each month from Janua
 
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
 
-1. From the **Program Overview** page, in the left navigation panel, click **Reports**.
+1. From the **Program Overview** page, in the left side menu, click **Reports**.
 
 1. Click **SLA Reports**. 
 

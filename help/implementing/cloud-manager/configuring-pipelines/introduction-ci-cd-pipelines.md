@@ -1,5 +1,5 @@
 ---
-title: CI/CD Pipelines
+title: Introduction to CI/CD Pipelines
 description: Learn about Cloud Manager's CI/CD pipelines and how they can be used to deploy your code efficiently.
 index: yes
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
@@ -12,7 +12,7 @@ role: Admin, Architect, Developer
 
 Learn about Cloud Manager's CI/CD (Continuous Integration/Continuous Delivery) pipelines and how they can be used to deploy your code efficiently.
 
-## Introduction {#introduction}
+## Introduction to CI/CD Pipelines {#introduction}
 
 A CI/CD pipeline in Cloud Manager is a mechanism to build code from a source repository and deploy it to an environment. An event triggers a pipeline, such as a pull request from a source code repository such as Git (that is, a code change). Or, it can be triggered on a regular schedule to match a release cadence.
 
@@ -109,7 +109,7 @@ See [Add a non-production pipeline](/help/implementing/cloud-manager/configuring
 
 Using a config pipeline, you can deploy settings quickly for log forwarding, purge-related maintenance tasks, and various CDN configurations, including traffic filter rules (such as WAF (Web Application Firewall) rules). Additionally, you can manage request and response transformations, origin selectors, client-side redirects, error pages, customer-managed CDN keys, purge API keys, and basic authentication.
 
-See [Use config pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) for a comprehensive list of supported features and to learn how to manage the configurations in your repository so they are deployed properly.
+See [Use config pipelines](/help/operations/config-pipeline.md) for a comprehensive list of supported features and to learn how to manage the configurations in your repository so they are deployed properly.
 
 ### Configure config Pipelines {#configure-config-deployment}
 

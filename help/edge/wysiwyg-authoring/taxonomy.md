@@ -103,6 +103,10 @@ Like when [managing and publishing tabular data for your Edge Delivery Services 
 
 This process only needs to be done once per taxonomy page. Once done, you can publish your taxonomy.
 
+>[!TIP]
+>
+>For more information about path mappings, please see the document [Path Mapping for Edge Delivery Services.](/help/edge/wysiwyg-authoring/path-mapping.md)
+
 ## Publishing a Taxonomy {#publishing}
 
 A taxonomy is not available to the Universal Editor or your users until it is published.

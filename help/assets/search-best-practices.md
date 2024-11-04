@@ -8,6 +8,9 @@ role: User
 ---
 # AEM Assets Search Best Practices
 
+|[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| --------------------------- |---------|----|-----|
+
 [!DNL Adobe Experience Manager Assets] provides robust asset search methods that help you achieve higher content velocity. Sometimes, finding the right asset can be arduous and time-consuming. Therefore, search assets capability in [!DNL Adobe Experience Manager Assets] is central to the usage of a digital asset management system - be it for further use by creatives, for robust management of assets by the business users and marketers, or for administration by DAM administrators.
 
 This help document contains AEM search best practices with the help of various scenarios to assist AEM users to perform basic to advanced level search.

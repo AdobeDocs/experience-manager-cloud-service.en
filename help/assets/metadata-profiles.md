@@ -8,6 +8,9 @@ exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
 ---
 # Metadata profiles {#metadata-profiles}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-config.html?lang=en)                  |

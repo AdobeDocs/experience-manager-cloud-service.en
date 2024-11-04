@@ -1,6 +1,6 @@
 ---
-title: Configuring Non-Production Pipelines
-description: Learn how to configure non-production pipelines to test the quality of your code before deploying to production environments.
+title: Add a Non-Production Pipeline
+description: Learn how to add a non-production pipeline to test the quality of your code before deploying to production environments.
 index: yes
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
@@ -8,13 +8,13 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 ---
 
-# Configuring Non-Production Pipelines {#configuring-non-production-pipelines}
+# Add a non-production pipeline {#configuring-non-production-pipelines}
 
 Learn how to configure non-production pipelines to test the quality of your code before deploying to production environments.
 
 A user must have the **[Deployment Manager](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** role to configure non-production pipelines.
 
-## Non-Production Pipelines {#non-production-pipelines}
+## Non-production pipelines {#non-production-pipelines}
 
 In addition to [production pipelines](#configuring-production-pipelines.md) which deploys to stagings and production environments, you can also set up non-production pipelines to validate your code.
 
@@ -27,7 +27,7 @@ There are two types of non-production pipelines:
 >
 >You can [edit pipeline settings](managing-pipelines.md) after the initial setup.
 
-## Adding a New Non-Production Pipeline {#adding-non-production-pipeline}
+## Add a new non-production pipeline {#adding-non-production-pipeline}
 
 Once you have set up your program and have at least one environment using the Cloud Manager UI, you are ready to add a non-production pipeline by following these steps.
 
@@ -123,7 +123,7 @@ A targeted deployment deploys code only for selected parts of your AEM applicati
 
 >[!NOTE]
 >
->Web tier and config pipelines are not supported with private repositories. Please see the document [Adding Private Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) for details and the full list of limitations.
+>Web tier and config pipelines are not supported with private repositories. See [Adding Private Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) for details and the full list of limitations.
 
 The steps to complete the creation of your non-production, targeted deployment pipeline are the same once you choose a deployment type.
 
@@ -150,16 +150,16 @@ The steps to complete the creation of your non-production, targeted deployment p
    
    ![Config pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
-1. If you enabled Experience Audit, tap or click **Continue** to advance to the **Experience Audit** tab where you can define the paths that should always be included in the Experience Audit.
+1. If you enabled Experience Audit, click **Continue** to advance to the **Experience Audit** tab where you can define the paths that should always be included in the Experience Audit.
 
    * If you enabled **Experience Audit**, see the document [Experience Audit](/help/implementing/cloud-manager/experience-audit-dashboard.md) for details on how to configure.
    * If you did not, skip this step.
 
-1. Tap or click **Save** to save the pipeline.
+1. Click **Save** to save the pipeline.
 
 The pipeline is saved and you can now [manage your pipelines](managing-pipelines.md) on the **Pipelines** card on the **Program Overview** page.
 
-## Skip Dispatcher Packages {#skip-dispatcher-packages}
+## Skip Dispatcher packages {#skip-dispatcher-packages}
 
 If you want Dispatcher packages built as part of your pipeline, but do not want them published to build storage, you can disable publishing them, which may reduce pipeline run duration.
 
