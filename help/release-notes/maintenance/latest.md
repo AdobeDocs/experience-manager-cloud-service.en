@@ -10,13 +10,13 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release X {#X}
+## Release 18459 {#18459}
 
 Summarized below are the continuous improvements for maintenance release X, which was publicly released on November 5, 2024. The previous maintenance release was release 18311.
 
 The 2024.11.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-X}
+### Enhancements {#enhancements-18459}
 
 * SITES-23591: Content Fragments: Content fragment upgrade for UUID support
 * SITES-25440: Content Fragments: CFM Search API to show replication status
@@ -24,7 +24,7 @@ The 2024.11.0 feature activation will provide the full feature set for this main
 * SITES-25478: Content Fragments: Add back-end support for external asset references
 * SITES-26119: Content Fragments: Add support of external asset references in reference type
 
-### Fixed Issues {#fixed-issues-X}
+### Fixed Issues {#fixed-issues-18459}
 
 * FORMS-14978: Enabling page load for a Core Component based form for theme editor
 * FORMS-16596: Accessibility Issue: Disabled Buttons Not Recognized by Screen Reader
@@ -46,17 +46,17 @@ The 2024.11.0 feature activation will provide the full feature set for this main
 * SITES-25658: Events: The tier and sourceUrl are not populated in the page content state events
 * SITES-6497: Launches: Create page in launch not working
 
-### Known Issues {#known-issues-X}
+### Known Issues {#known-issues-18459}
 
-### Deprecated Features and APIs {#deprecated-X}
+### Deprecated Features and APIs {#deprecated-18459}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-X}
+### Security Fixes {#security-18459}
 
 AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 3 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-X}
+### Embedded Technologies {#embedded-tech-18459}
 
 |Technology|Version|Link|
 |---|---|---|
