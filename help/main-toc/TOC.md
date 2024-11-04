@@ -200,7 +200,7 @@ user-guide-title: AEM as a Cloud Service
       + [2024.09.27 Release Notes](/help/release-notes/universal-editor/2024/2024-09-27.md)
       + [2024.09.26 Release Notes](/help/release-notes/universal-editor/2024/2024-09-26.md)
       + [2024.09.18 Release Notes](/help/release-notes/universal-editor/2024/2024-09-18.md)
-      + [2024.09.03 Release Notes](/help/release-notes/universal-editor/2024/2024-08-13.md)
+      + [2024.09.03 Release Notes](/help/release-notes/universal-editor/2024/2024-09-03.md)
       + [2024.08.13 Release Notes](/help/release-notes/universal-editor/2024/2024-08-13.md)
       + [2024.07.28 Release Notes](/help/release-notes/universal-editor/2024/2024-07-28.md)
       + [2024.06.28 Release Notes](/help/release-notes/universal-editor/2024/2024-06-28.md)
