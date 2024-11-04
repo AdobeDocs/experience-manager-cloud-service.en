@@ -153,7 +153,11 @@ The selected component deleted.
    
 1. The dragged component turns gray in the content tree, while your insertion point is represented by a blue line. Release the component to place it in its new location.
 
-The components are reordered in both the content tree and in the editor
+The components are reordered in both the content tree and in the editor.
+
+>[!NOTE]
+>
+>Components can not be moved between containers if a different [component filter](/help/implementing/universal-editor/customizing.md#filtering-components) is set between the source and target containers.
 
 ## Previewing Content {#previewing-content}
 
