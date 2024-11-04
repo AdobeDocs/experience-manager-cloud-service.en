@@ -96,7 +96,3 @@ After validation, the external repository is ready to use and link to a pipeline
 
 * External repositories cannot be linked to Configuration pipelines.
 * Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started.
-
-
-
-
