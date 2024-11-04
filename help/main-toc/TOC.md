@@ -26,6 +26,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2024 {#2024}
+      + [Release Notes for 2024.9.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-9-0.md)
       + [Release Notes for 2024.8.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-8-0.md)
       + [Release Notes for 2024.7.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-7-0.md)
       + [Release Notes for 2024.6.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-6-0.md)
@@ -637,6 +638,7 @@ user-guide-title: AEM as a Cloud Service
     + [Asset properties](/help/assets/asset-properties-content-hub.md)
     + [Share assets in Content Hub](/help/assets/share-assets-content-hub.md)
     + [Download assets using Content Hub](/help/assets/download-assets-content-hub.md)
+    + [Manage Licensed Assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md)
     + [Manage collections in Content Hub](/help/assets/collections-content-hub.md)
     + [Edit images using Adobe Express in Content Hub](/help/assets/edit-images-content-hub.md)
     + [Asset Insights in Content Hub](/help/assets/insights-content-hub.md)
@@ -1015,6 +1017,7 @@ user-guide-title: AEM as a Cloud Service
       + [Markdown editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
     + [Structure Tree](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
     + [JSON Preview](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html)
+  + [AEM APIs for Structured Content Delivery and Management](/help/headless/apis-headless-and-content-fragments.md)
   + GraphQL API {#graphql-api}
     + [GraphQL API for Content Fragments](/help/headless/graphql-api/content-fragments.md)
     + [Manage GraphQL endpoints](/help/headless/graphql-api/graphql-endpoint.md)
@@ -1024,6 +1027,7 @@ user-guide-title: AEM as a Cloud Service
     + [Updating your Content Fragments for optimized GraphQL Filtering](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
     + [Sample GraphQL queries](/help/headless/graphql-api/sample-queries.md)
     + [Troubleshoot GraphQL queries](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
+  + [AEM REST OpenAPI for Content Fragment Delivery](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
   + [Content Fragments and Models OpenAPIs](/help/headless/content-fragment-openapis.md)
   + [Content Fragments support in Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
   + Security {#security}
