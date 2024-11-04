@@ -263,7 +263,7 @@ You can also inspect the console window to view the data submitted to the server
 
 Let's learn how custom functions use field and global objects to override submission handlers with the help of a `Contact Us` form.
 
-Add the following line of code as explained in the [create-custom-function ](/help/forms/custom-function-core-component-create-function.md) section, to customize the submission or failure message for form submissions and display the form submission messages in a modal box:
+Add the following line of code as explained in the [create-custom-functionas](/help/forms/custom-function-core-component-create-function.md) section, to customize the submission or failure message for form submissions and display the form submission messages in a modal box:
 
 ```javascript
 /**
