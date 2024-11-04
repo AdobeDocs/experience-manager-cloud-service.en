@@ -104,6 +104,12 @@ The following table demonstrates the difference between the features available i
    <td>The <b>Set Value of</b> option does not support the <b>Service output</b> property for invoking APIs in the Rule Editor.
    </td>
    </tr>
+   <tr>
+   <td>Navigate between the panels</td>
+   <td> The <b>Next button</b> and <b>Previous button</b> components are provided to navigate between the panels. A navigation button placed within the container works on its child elements</td>
+   <td> The <b>Navigation in Panel</b> rule is available in the rule editor, allowing users to create rules for navigating between the children of panels.
+   </td>
+   </tr>
    </tr>
    </tr>
   </tbody>
@@ -119,6 +125,7 @@ The following table demonstrates the difference between the features available i
 * [Difference in various editions of Rule editor](/help/forms/rule-editor-core-components-difference-tables.md)
 * [Introduction to Custom Functions for Adaptive Forms based on Core Components](/help/forms/create-and-use-custom-functions.md)
 * [Create a Custom Function for an Adaptive Form based on Core Components](/help/forms/custom-function-core-component-create-function.md)
+* [Scope object in custom functions](/help/forms/custom-function-core-component-scope-function.md)
 * [Examples of developing and using a custom function](/help/forms/custom-function-core-components-use-cases.md)
 
 
