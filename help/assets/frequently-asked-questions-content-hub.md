@@ -1,8 +1,11 @@
 ---
 title: Content Hub frequently asked questions (FAQs)
-description: Get responses to some of the most frquently asked questions (FAQs) for Content Hub.
+description: Get responses to some of the most frequently asked questions (FAQs) for Content Hub.
 ---
 # Content Hub frequently asked questions {#content-hub-frequently-asked-questions}
+
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
 
 ![Content Hub frequently asked question](assets/content-hub-faqs.png)
 

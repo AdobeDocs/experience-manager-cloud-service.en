@@ -30,7 +30,7 @@ You can buy a domain name from a domain name registrar, a company or organizatio
 >
 >Cloud Manager is not a domain name registrar and does not provide DNS services.
 
-## Custom domain names and bring your own CDNs {#byo-cdn}
+## Custom domain names and Bring Your Own CDNs {#byo-cdn}
 
 AEM as a Cloud Service offers a built-in CDN (Content Delivery Network) service, but also lets you BYO (Bring Your Own) CDN to use with AEM. Custom domains can be installed either in the AEM-managed CDN or a CDN you manage.
 
@@ -55,7 +55,7 @@ Adding a custom domain name requires interaction between the DNS service and Clo
 
 >[!TIP]
 >
->Setting up custom domain names with AEM as a Cloud service is typically a simple process. However, on occasion, domain delegation issues can occur which can take 1-2 business days to resolve. For this reason, it is highly recommended to install the domains well before their go live date. See the document [Check domain name status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) for more information.
+>Setting up custom domain names with AEM as a Cloud service is typically a simple process. However, on occasion, domain delegation issues can occur which can take 1-2 business days to resolve. For this reason, it is recommended to install the domains well before their go live date. See the document [Check domain name status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) for more information.
 
 ## Limitations {#limitations}
 

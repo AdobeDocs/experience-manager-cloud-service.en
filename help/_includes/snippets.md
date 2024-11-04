@@ -46,6 +46,7 @@
 * [Submit to Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Connect Adaptive Form to Salesforce application](/help/forms/aem-forms-salesforce-integration.md)
 * [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+* [Create custom submit action](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
 ## See also {#see-more-forms-eds}
 
@@ -104,6 +105,12 @@ The following table demonstrates the difference between the features available i
    <td>The <b>Set Value of</b> option does not support the <b>Service output</b> property for invoking APIs in the Rule Editor.
    </td>
    </tr>
+   <tr>
+   <td>Navigate between the panels</td>
+   <td> The <b>Next button</b> and <b>Previous button</b> components are provided to navigate between the panels. A navigation button placed within the container works on its child elements</td>
+   <td> The <b>Navigation in Panel</b> rule is available in the rule editor, allowing users to create rules for navigating between the children of panels.
+   </td>
+   </tr>
    </tr>
    </tr>
   </tbody>
@@ -119,6 +126,7 @@ The following table demonstrates the difference between the features available i
 * [Difference in various editions of Rule editor](/help/forms/rule-editor-core-components-difference-tables.md)
 * [Introduction to Custom Functions for Adaptive Forms based on Core Components](/help/forms/create-and-use-custom-functions.md)
 * [Create a Custom Function for an Adaptive Form based on Core Components](/help/forms/custom-function-core-component-create-function.md)
+* [Scope object in custom functions](/help/forms/custom-function-core-component-scope-function.md)
 * [Examples of developing and using a custom function](/help/forms/custom-function-core-components-use-cases.md)
 
 
@@ -149,6 +157,22 @@ The following table demonstrates the difference between the features available i
 >If you use&mdash;or intend to use&mdash;the front-end pipeline to develop sites, the Cloud Manager IP Allow List must be added beforehand. 
 >See [Use of the Cloud Manager IP Allow List with the front-end pipeline](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline). 
 
+## IP Allow Lists and the Universal Editor {#ip-allow-lists-ue}
+
+>[!IMPORTANT]
+>
+>[The Universal Editor](/help/implementing/universal-editor/introduction.md) is not compatible with IP allow lists.
+>
+>If you want to use the Universal Editor, IP allow lists must not be enabled.
+
+## Universal Editor and IP Allow Lists {#ue-ip-allow-lists}
+
+>[!IMPORTANT]
+>
+>The Universal Editor is not compatible with [IP allow lists.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+>
+>If you want to use the Universal Editor, IP Allow Lists must not be enabled.
+
 ## Work with Dynamic Media {#work-with-dynamic-media}
 
 >[!TIP]
@@ -174,7 +198,7 @@ The following table demonstrates the difference between the features available i
 >* Deliver an [interactive 3D-powered experience](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
 >* Other [Dynamic Media resource bank](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
 
-## Logging a Support Ticket {#support-ticket}
+## Log a support ticket {#support-ticket}
 
 If a product issue needs additional investigation and troubleshooting and must meet response SLTs, you can submit a support ticket.
 

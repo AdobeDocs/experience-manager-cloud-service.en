@@ -1,6 +1,6 @@
 ---
 title: Log Forwarding for AEM as a Cloud Service
-description: Learn about forwarding logs to Splunk and other logging vendors in AEM as a Cloud Service
+description: Learn about forwarding logs to logging vendors in AEM as a Cloud Service
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
@@ -9,17 +9,17 @@ role: Admin, Architect, Developer
 
 >[!NOTE]
 >
->This feature is not yet released, and some logging destinations may not be available at the time of release. In the meantime, you can open a support ticket to forward logs to **Splunk**, as described under [Logging for AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md).
+>Log Forwarding is now configured in self-serve way, different from the legacy method, which required submitting an Adobe Support ticket. See the [Migrating](#legacy-migration) section if your log forwarding was setup by Adobe.
 
-Customers who have a license for a logging vendor or host a logging product can have AEM logs (including Apache/Dispatcher) and CDN logs forwarded to the associated logging destinations. AEM as a Cloud Service supports the following logging destinations: 
+Customers with a license with a logging vendor or who host a logging product can have AEM logs (including Apache/Dispatcher) and CDN logs forwarded to the associated logging destination. AEM as a Cloud Service supports the following logging destinations: 
 
 * Azure Blob Storage
-* DataDog
+* Datadog
 * Elasticsearch or OpenSearch
 * HTTPS
 * Splunk
 
-Log forwarding is configured in a self-service manner by declaring a configuration in Git, and deploying it via the Cloud Manager Configuration Pipeline to dev, stage, and production environment types in production (non-sandbox) programs.
+Log forwarding is configured in a self-service manner by declaring a configuration in Git, and deploying it via the Cloud Manager Config Pipeline to RDE, dev, stage, and production environment types in production (non-sandbox) programs.
 
 There is an option for the AEM and Apache/Dispatcher logs to be routed through AEM's advanced networking infrastructure, such as dedicated egress IP.
 
@@ -34,18 +34,12 @@ This article is organized in the following way:
 * Logging destination configurations - each destination has a slightly different format
 * Log Entry Formats - information about the log entry formats
 * Advanced networking - sending AEM and Apache/Dispatcher logs through a dedicated egress or through a VPN
+* Migrating from legacy log forwarding - how to move from log forwarding previously setup by Adobe to the self-serve approach
 
 
 ## Setup {#setup}
 
-1. Create the following folder and file structure in the top-level folder in your project in Git:
-
-   ```
-   config/
-        logForwarding.yaml
-   ```
-
-1. `logForwarding.yaml` should contain metadata and a configuration similar to the following format (we use Splunk as an example). 
+1. Create a file named `logForwarding.yaml`. It should contain metadata, as described in the [config pipeline article](/help/operations/config-pipeline.md#common-syntax) (**kind** should be set to `LogForwarding` and version set to "1"), with a configuration similar to the following (we use Splunk as an example). 
 
    ```
    kind: "LogForwarding"
@@ -61,12 +55,16 @@ This article is organized in the following way:
          index: "AEMaaCS"
    
    ```
+      
+1. Place the file somewhere under a top level folder named *config* or similar, as described in [Using Config Pipelines](/help/operations/config-pipeline.md#folder-structure).
+
+1. For environment types other than RDE (which uses command line tooling), create a targeted deployment config pipeline in Cloud Manager, as referenced by [this section](/help/operations/config-pipeline.md#creating-and-managing); note that Full Stack pipelines and Web Tier pipelines do not deploy the configuration file.
+
+1. Deploy the configuration. 
+
+Tokens in the configuration (such as `${{SPLUNK_TOKEN}}`) represent secrets, which should not be stored in Git. Instead, declare them as Cloud Manager [Secret Environment Variables](/help/operations/config-pipeline.md#secret-env-vars). Make sure to select **All** as the dropdown value for the Service Applied field, so logs can be forwarded to author, publish, and preview tiers.
    
-   The **kind** parameter should be set to `LogForwarding` the version should be set to the schema version, which is 1.
-   
-   Tokens in the configuration (such as `${{SPLUNK_TOKEN}}`) represent secrets, which should not be stored in Git. Instead, declare them as Cloud Manager  [Environment Variables](/help/implementing/cloud-manager/environment-variables.md) of type **secret**. Make sure to select **All** as the dropdown value for the Service Applied field, so logs can be forwarded to author, publish, and preview tiers.
-   
-   It is possible to set different values between CDN logs and AEM logs (including Apache/Dispatcher), by including an additional **cdn** and/or **aem** block after the **default** block, where properties can override those defined in the **default** block; only the enabled property is required. A possible use case could be to use a different Splunk index for CDN logs, as the example below illustrates. 
+It is possible to set different values between CDN logs and AEM logs (including Apache/Dispatcher), by including an additional **cdn** and/or **aem** block after the **default** block, where properties can override those defined in the **default** block; only the enabled property is required. A possible use case could be to use a different Splunk index for CDN logs, as the example below illustrates. 
    
    ```
       kind: "LogForwarding"
@@ -103,11 +101,6 @@ This article is organized in the following way:
           aem:
             enabled: false
    ```
-   
-1. For environment types other than RDE (which is not currently supported), create a targeted deployment config pipeline in Cloud Manager; note that Full Stack pipelines and Web Tier pipelines do not deploy the configuration file.
-
-   * [See configuring production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
-   * [See configuring non-production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
 ## Logging Destination Configuration {#logging-destinations}
 
@@ -140,6 +133,8 @@ A SAS token should be used for authentication. It should be created from the Sha
 Here is a screenshot of a sample SAS token configuration:
 
 ![Azure Blob SAS token configuration](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
+
+If logs have stopped being delivered after previously functioning correctly, check whether the SAS token you configured is still valid, as it may have expired.
 
 #### Azure Blob Storage CDN logs {#azureblob-cdn}
 
@@ -206,10 +201,12 @@ See the log entry formats under [Logging for AEM as a Cloud Service](/help/imple
 Considerations:
 
 * Create an API Key, without any integration with a specific cloud provider.
-* the tags property is optional
+* The tags property is optional
 * For AEM logs, the Datadog source tag is set to one of `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess`, or `aemhttpderror`
 * For CDN logs, the Datadog source tag is set to `aemcdn`
-* the Datadog service tag is set to `adobeaemcloud`, but you can overwrite it in the tags section
+* The Datadog service tag is set to `adobeaemcloud`, but you can overwrite it in the tags section
+* If your ingestion pipeline uses Datadog tags to determine the appropriate index for forwarding logs, verify that these tags are correctly configured in the Log Forwarding YAML file. Missing tags may prevent successful log ingestion if the pipeline depends on them.
+
    
 
 ### Elasticsearch and OpenSearch {#elastic}
@@ -311,7 +308,15 @@ There is also be a property named `Source-Type`, which is set to one of these va
    
 Considerations:
 
-* by default, the port is 443. It can optionally be overridden with a property named `port`.
+* By default, the port is 443. It can optionally be overridden with a property named `port`.
+* The sourcetype field will have one of the following values, depending on the specific log: *aemaccess*, *aemerror*, 
+*aemrequest*, *aemdispatcher*, *aemhttpdaccess*, *aemhttpderror*, *aemcdn*
+* If the required IPs have been allowlisted and logs are still not being delivered, verify that there are no firewall rules enforcing Splunk token validation. Fastly performs an initial validation step where an invalid Splunk token is intentionally sent. If your firewall is set to terminate connections with invalid Splunk tokens, the validation process will fail, preventing Fastly from delivering logs to your Splunk instance.
+
+
+>[!NOTE]
+>
+> [If migrating](#legacy-migration) from legacy Log Forwarding to this self-serve model, the `sourcetype` field's values sent to your Splunk index may have changed, so adjust accordingly. 
 
 
 <!--
@@ -378,4 +383,27 @@ For AEM logs (including Apache/Dispatcher), if you have configured [advanced net
        aem:
          advancedNetworking: true
    ```
+
+## Migrating from Legacy Log Forwarding {#legacy-migration}
+
+Before Log Forwarding configuration was achieved through a self-serve model, customers were requested to open support tickets, where Adobe would initiate the integration.
+
+Customers who had been setup in that manner by Adobe are welcome to adapt to the self-serve model at their convenience. There are several reason to make this transition:
+
+* A new environment (e.g., a new dev env or RDE) has been provisioned.
+* Changes to your existing Splunk endpoint or credentials.
+* Adobe had setup your log forwarding before CDN logs were available and you would like to receive CDN logs.
+* A conscious decision to proactively adapt to the self-serve model so your organization has the knowledge even before a time-sensitive change is necessary.
+
+When ready to migrate, simply configure the YAML file as described in the preceding sections. Use the Cloud Manager config pipeline to deploy to each of the environments where the configuration should be applied. 
+
+It is recommended, but not required, that a configuration is deployed to all environments so they are all under self-serve control. If not, you may forget which environments have been configured by Adobe versus those configured in a self-serve way.
+
+>[!NOTE]
+>
+>The `sourcetype` field's values sent to your Splunk index may have changed, so adjust accordingly. 
+
+>[!NOTE]
+>
+>When Log Forwarding is deployed to an environment previously configured by Adobe support, you may receive duplicate logs for up to a few hours. This will eventually auto-resolve.
 

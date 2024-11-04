@@ -12,7 +12,7 @@ AEM as a Cloud Service offers a collection of features configurable at the [Adob
 
 * [Request transformations](#request-transformations) - modify aspects of incoming requests, including headers, paths and parameters.
 * [Response transformations](#response-transformations) - modify headers that are on the way back to the client (for example, a web browser).
-* [Client-side redirects](#client-side-redirectors) - trigger a browser redirect. This feature is not yet GA, but available to early adopters.
+* [Client-side redirects](#client-side-redirectors) - trigger a browser redirect.
 * [Origin selectors](#origin-selectors) - proxy to a different origin backend.
 
 Also configurable at the CDN are Traffic Filter Rules (including WAF), which control what traffic is allowed or denied by the CDN. This feature is already released and you can learn more about it in the [Traffic Filter Rules including WAF rules](/help/security/traffic-filter-rules-including-waf.md) page.
@@ -25,13 +25,13 @@ All these rules, declared in a configuration file in source control, are deploye
 
 Functionally, the various features mentioned previously are evaluated in the following sequence:
 
-![image](/help/implementing/dispatcher/assets/order.png)
+![Order of evaluation](/help/implementing/dispatcher/assets/order.png)
 
 ## Setup {#initial-setup}
 
 Before you can configure traffic at the CDN you need to do the following:
 
-1. Create a file named `cdn.yaml` or similar, referencing the various configuration snippets in the sections below. 
+1. Create a file named `cdn.yaml` or similar, referencing the various configuration snippets in the sections below.
 
     All snippets have these common properties, which are described under [Config Pipeline](/help/operations/config-pipeline.md#common-syntax). The `kind` property value should be *CDN* and the `version` property should be set to *1*.
     ```
@@ -43,7 +43,7 @@ Before you can configure traffic at the CDN you need to do the following:
 
 1. Place the file somewhere under a top level folder named *config* or similar, as described under [Config Pipeline](/help/operations/config-pipeline.md#folder-structure).
 
-1. Create a Config Pipeline in Cloud Manager, as described under [Config Pipeline](/help/operations/config-pipeline.md#managing-in-cloud-manager). 
+1. Create a Config Pipeline in Cloud Manager, as described under [Config Pipeline](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 1. Deploy the configuration.
 
@@ -73,7 +73,7 @@ kind: "CDN"
 version: "1"
 metadata:
   envTypes: ["dev", "stage", "prod"]
-data:  
+data:
   requestTransformations:
     removeMarketingParams: true
     rules:
@@ -85,7 +85,14 @@ data:
           - type: set
             reqHeader: x-some-header
             value: some value
-            
+      - name: set-header-with-reqproperty-rule
+        when:
+          reqProperty: path
+          like: /set-header
+        actions:
+          - type: set
+            reqHeader: x-some-header
+            value: {reqProperty: path}
       - name: unset-header-rule
         when:
           reqProperty: path
@@ -93,7 +100,7 @@ data:
         actions:
           - type: unset
             reqHeader: x-some-header
-            
+
       - name: unset-matching-query-params-rule
         when:
           reqProperty: path
@@ -101,7 +108,7 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^removeMe_.*$
-            
+
       - name: unset-all-query-params-except-exact-two-rule
         when:
           reqProperty: path
@@ -109,7 +116,7 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^(?!leaveMe$|leaveMeToo$).*$
-            
+
       - name: multi-action
         when:
           reqProperty: path
@@ -121,47 +128,61 @@ data:
           - type: set
             reqHeader: x-header2
             value: '201'
-            
+
       - name: replace-html
         when:
           reqProperty: path
           like: /mypath
         actions:
           - type: transform
-           reqProperty: path
-           op: replace
-           match: \.html$
-           replacement: ""
+            reqProperty: path
+            op: replace
+            match: \.html$
+            replacement: ""
 
 ```
 
 **Actions**
 
-Explained in the table below are the available actions. 
+Explained in the table below are the available actions.
 
 | Name      | Properties               | Meaning     |
 |-----------|--------------------------|-------------|
-| **set** |(reqProperty or reqHeader or queryParam or reqCookie), value|Sets a specified request parameter (only "path" property supported), or request header, query parameter, or cookie, to a given value. |
+| **set** |(reqProperty or reqHeader or queryParam or reqCookie), value|Sets a specified request parameter (only "path" property supported), or request header, query parameter, or cookie, to a given value, which could be a string literal or request parameter. |
 |     |var, value|Sets a specified request property to a given value.|
-| **unset** |reqProperty|Removes a specified request parameter (only "path" property supported), or request header, query parameter, or cookie, to a given value.|
+| **unset** |reqProperty|Removes a specified request parameter (only "path" property supported), or request header, query parameter, or cookie, to a given value, which could be a string literal or request parameter.|
 |         |var|Removes a specified variable.|
 |         |queryParamMatch|Removes all query parameters that match a specified regular expression.|
-| **transform** |op:replace, (reqProperty or reqHeader or queryParam or reqCookie), match, replacement  | Replaces part of the request parameter (only "path" property supported), or request header, query parameter, or cookie with a new value. |
-|              |op:tolower, (reqProperty or reqHeader or queryParam or reqCookie) | Sets the request parameter (only "path" property supported), or request header, query parameter, or cookie to its lowercase value. |
+| **transform** |op:replace, (reqProperty or reqHeader or queryParam or reqCookie or var), match, replacement  | Replaces part of the request parameter (only "path" property supported), or request header, or query parameter, or cookie, or variable with a new value. |
+|              |op:tolower, (reqProperty or reqHeader or queryParam or reqCookie or var) | Sets the request parameter (only "path" property supported), or request header, or query parameter, or cookie, or variable to its lowercase value. |
 
 Replace actions support capture groups, as illustrated below:
 
 ```
+      - name: extract-country-code-from-path
+        when:
+          reqProperty: path
+          matches: ^/([a-zA-Z]{2})(/.*|$)
+        actions:
+          - type: set
+            var: country-code
+            value:
+              reqProperty: path
+          - type: transform
+            var: country-code
+            op: replace
+            match: ^/([a-zA-Z]{2})(/.*|$)
+            replacement: \1
       - name: replace-jpg-with-jpeg
         when:
           reqProperty: path
-          like: /mypath          
+          like: /mypath
         actions:
           - type: transform
             reqProperty: path
             op: replace
             match: (.*)(\.jpg)$
-            replacement: "\1\.jpeg"          
+            replacement: "\1\.jpeg"
 ```
 
 Actions can be chained together. For example:
@@ -190,7 +211,7 @@ kind: "CDN"
 version: "1"
 metadata:
   envTypes: ["prod", "dev"]
-data:   
+data:
   requestTransformations:
     rules:
       - name: set-variable-rule
@@ -201,7 +222,7 @@ data:
           - type: set
             var: some_var_name
             value: some_value
- 
+
   responseTransformations:
     rules:
       - name: set-response-header-while-variable
@@ -238,7 +259,7 @@ data:
           - type: set
             value: value-set-by-resp-rule
             respHeader: x-resp-header
- 
+
       - name: unset-response-header-rule
         when:
           reqProperty: path
@@ -246,7 +267,7 @@ data:
         actions:
           - type: unset
             respHeader: x-header1
- 
+
       # Example: Multi-action on response header
       - name: multi-action-response-header-rule
         when:
@@ -287,7 +308,7 @@ data:
   originSelectors:
     rules:
       - name: example-com
-        when: { reqProperty: path, like: /proxy-me* }
+        when: { reqProperty: path, like: /proxy* }
         action:
           type: selectOrigin
           originName: example-com
@@ -297,7 +318,7 @@ data:
         domain: www.example.com
         # ip: '1.1.1.1'
         # forwardHost: true
-        # forwardCookie: true 
+        # forwardCookie: true
         # forwardAuthorization: true
         # timeout: 20
 
@@ -330,7 +351,7 @@ Connections to origins are SSL only and use port 443.
 
 There are scenarios where origin selectors should be used to route traffic through AEM Publish to AEM Edge Delivery Services:
 
-* Some content is delivered by a domain managed by AEM Publish, while other content from the same domain is delivered by Edge Delivery Services 
+* Some content is delivered by a domain managed by AEM Publish, while other content from the same domain is delivered by Edge Delivery Services
 * Content delivered by Edge Delivery Services would benefit from rules deployed via config pipeline, including traffic filter rules or request/response transformations
 
 Here is an example of an origin selector rule that can accomplish this:
@@ -356,16 +377,13 @@ data:
     origins:
       - name: aem-live
         domain: main--repo--owner.aem.live
-```        
-        
+```
+
 >[!NOTE]
 > Since the Adobe Managed CDN is used, make sure to configure push invalidation in **managed** mode, by following the Edge Delivery Services [Setup push invalidation documentation](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
 
 
 ## Client-side Redirects {#client-side-redirectors}
-
->[!NOTE]
->This feature is not yet generally available. To join the early-adopter program, email `aemcs-cdn-config-adopter@adobe.com` and describe your use case.
 
 You can use client side redirect rules for 301, 302 and similar client side redirects. If a rule matches, the CDN responds with a status line that includes the status code and message (for example, HTTP/1.1 301 Moved Permanently), as well as the location header set.
 
@@ -382,7 +400,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  experimental_redirects:
+  redirects:
     rules:
       - name: redirect-absolute
         when: { reqProperty: path, equals: "/page.html" }

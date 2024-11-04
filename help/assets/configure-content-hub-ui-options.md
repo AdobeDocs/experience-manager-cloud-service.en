@@ -5,6 +5,9 @@ exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
 ---
 # Configure Content Hub user interface {#configure-content-hub-user-interface}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 >[!CONTEXTUALHELP]
 >id="configure_content_hub"
 >title="Configure Content Hub user interface"
@@ -50,10 +53,13 @@ As an administrator, manage the following configuration options for your users:
 * [Filters](#configure-filters-content-hub)
 
 * [Asset details](#configure-asset-details-content-hub)
+* [Asset Card](#asset-card)
 
 * [Search](#configure-metadata-search-content-hub)
 
 * [Branding](#configure-branding-content-hub)
+
+* [Expired Assets](#expired-assets-content-hub)
 
 * [Custom Links](#configure-custom-links-content-hub)
 
@@ -132,6 +138,21 @@ The properties enabled on the Configuration User Interface display on the Asset 
 
 ![Asset properties on Content Hub](assets/config-ui-asset-properties.png)
 
+### Asset Card {#asset-card}
+
+You can also configure the key metadata fields that you need to display on the **Asset Card** upto a maximum of 6 fields. To do so, execute the following steps:
+
+![key metadata on Asset Card](/help/assets/assets/asset-card-key-metadata.png)
+
+1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **Asset Card**.
+2. Click **Add metadata**. The **Add asset card metadata** dialog box displays.
+3. Specify the metadata name in the **Label** field and select a metadata property in the **Metadata** field.
+4. Click **Confirm** and then click **Save** to apply the changes so that the new property display on the asset details page.
+![asset card](/help/assets/assets/asset-card.png)
+
+Similarly, click ![edit](/help/assets/assets/edit-content-hub.svg) that is available next to each available property, to make any required modifications or click ![delete](/help/assets/assets/delete-content-hub.svg) to delete any existing metadata property. Click **Save** after making all modifications to apply the changes.
+
+
 ### Search {#configure-metadata-search-content-hub}
 
 Administrators can define the metadata fields that are searched when a user specifies a search criteria on Content Hub. Execute the following steps:
@@ -149,7 +170,7 @@ Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), ava
 
 ### Branding {#configure-branding-content-hub}
 
-Administrators can also personalize the title and body text on the banner of Content Hub portal, as per your branding requirements. To do so, execute the following steps:
+Administrators can also personalize the title and body text on the banner of the Content Hub portal, as per your branding requirements. To do so, execute the following steps:
 
 1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Branding]**.
 
@@ -162,6 +183,33 @@ Administrators can also personalize the title and body text on the banner of Con
 The branding updates enabled on the Configuration User Interface display on the Content Hub portal banner:
 
 ![Configuration UI branding on Content Hub](assets/configuration-ui-branding-updates.png)
+
+### Expired assets{#expired-assets-content-hub}
+
+Administrators can control if they need expired assets to be visible on Content Hub. If the expired assets are made visible, they can also define if users can download them.
+
+Expired assets do not display in Content Hub by default.
+
+To do so, execute the following steps:
+
+1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Expired Assets]**.
+
+1. In the **[!UICONTROL Visible]** section, enable the **[!UICONTROL Allow users to view expired assets]** toggle to make all expired assets visible on Content Hub.
+
+1. After enabling the visibility of assets, you can enable or disable the ability to download expired assets using the **[!UICONTROL Allow users to download expired assets]** toggle. 
+
+1. Click **[!UICONTROL Save]** to apply the changes.
+
+   ![Expired assets on Content Hub](assets/expired-assets-content-hub.png)
+
+After enabling the visibility of assets, you can view the expired assets on Content Hub, as depicted in the following image:
+
+![Expired assets on Content Hub](assets/view-download-expired-assets.png)
+
+If the administrator has enabled download, the Content Hub users can also download them, as highlighted in the image.
+
+If the visibility of expired assets is enabled, Content Hub also highlights assets expiring within the next 15 days using the `Expiring in n days` message on the Asset Card.
+
 
 ### Custom Links {#configure-custom-links-content-hub}
 
