@@ -23,7 +23,7 @@ These are the release notes for the 29 October 2024 release of the Universal Edi
 
 The Universal Editor is now available for headless use cases when using AEM 6.5 as part of an early adopter program.
 
-If you are interested in testing this new feature and sharing your feedback, please send an email to your Adobe representative from the email address associated with your Adobe ID. 
+If you are interested in testing this new feature and sharing your feedback, please send an email to your Adobe Customer Success Manager from the email address associated with your Adobe ID. 
 
 ## Bug Fixes {#bug-fixes}
 
