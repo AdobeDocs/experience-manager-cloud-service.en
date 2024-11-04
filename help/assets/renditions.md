@@ -66,11 +66,8 @@ To download the renditions of the image assets processed with **Dynamic Media (S
 Access Dynamic Media with OpenAPI rendition to see the renditions of approved assets:
 
 1. Go to **[!UICONTROL Assets Management]** > **[!UICONTROL Assets]**.
-
 1. Navigate to the applicable asset folder.
-
 1. Click the asset you need to view and click **[!UICONTROL Details]**.
-s
 1. In the right menu, click **[!UICONTROL Dynamic Media Renditions]**. <br> The **[!UICONTROL Dynamic Media Renditions]** panel opens with the rendition preview of the selected asset.
 
 1. Select **Dynamic Media with OpenAPI** and click **Copy URL** to copy the Dynamic Media with OpenAPI URL of the selected asset. 
