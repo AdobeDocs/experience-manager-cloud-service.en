@@ -53,7 +53,7 @@ maps:
 
 ```
 
-Next, in an Apache configuration file such as `rewrites/rewrite.rules` or `<yourfile>.vhost`, you must configure the map file referenced by the name property ( `my.map`in the sample above).
+Next, in an Apache configuration file such as `rewrites/rewrite.rules` or `<yourfile>.vhost`, you must configure the map file referenced by the name property (`my.map` in the sample above).
 
 The `RewriteMap` directive should indicate that the data is stored in a database manager (DBM) file format by using the `sdbm` (simple DBM) format.
 
