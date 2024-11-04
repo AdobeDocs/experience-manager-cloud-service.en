@@ -138,6 +138,19 @@ The Generative AI capabilities on offer are:
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
+### Configuration to Control Form Submissions {#configuration-submissions}
+
+To control form submissions for Coral or Foundation forms at specific locations, AEM has introduced a new configuration: `com.adobe.granite.ui.components.FormRestrict`. This configuration consists of two fields:
+
+1. **Add Allowed Paths**: Specifies the paths where form actions are permitted.
+1. **Restrict Behavior**: Determines the behavior for restricted paths (paths not included in the allowed list). You can choose between two options:
+   * **Popup** (default): Displays a popup notification.
+   * **Prevent**:Blocks form submission.
+
+>[!NOTE]
+>
+>This configuration is not supported for all Coral or Foundation forms located under `/apps`, `/libs`, `/mnt/overlay`, and `/mnt/override`.
+
 ### Self-Serve Log Forwarding with Advanced Networking Option {#log-forwarding}
 
 While AEM (including Apache/Dispatcher) and CDN logs can be downloaded from Cloud Manager, many organizations find it beneficial to stream those logs to a preferred logging destination. AEM now supports [log forwarding](/help/implementing/developing/introduction/log-forwarding.md) to Azure Blob Storage, Datadog, HTTPS, Elasticsearch (and OpenSearch), and Splunk. AEM logs can be optionally forwarded over advanced networking configurations, such as using a dedicated IP address.
