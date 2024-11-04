@@ -17,7 +17,7 @@ exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
 
 Adaptive Forms provides first-class components to layout and design the forms effectively. The layout controls how components are displayed in a form. Adaptive Forms support various layouts: panel, wizard, accordion, tabs on top/horizontal tabs, and tabs on left/vertical tabs.
 
-![Types of Layout](/help/forms/assets/generic-layout-hero-image.png){align="center"}
+<!-- ![Types of Layout](/help/forms/assets/generic-layout-hero-image.png){align="center"}-->
 
 ## Pre-requisite
 

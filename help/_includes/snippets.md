@@ -46,6 +46,7 @@
 * [Submit to Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Connect Adaptive Form to Salesforce application](/help/forms/aem-forms-salesforce-integration.md)
 * [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+* [Create custom submit action](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
 ## See also {#see-more-forms-eds}
 
