@@ -73,7 +73,7 @@ To preview an asset, select it and click [!UICONTROL Details] ![details icon](as
 
 ![Preview an asset](assets/preview-asset-2.png)
 
-**A**: Return to the current folder or current search result in the repository **B**: Name and format for the file you are previewing **C**: Assign tasks **D**: Advanced metadata **E**: Keywords and smart tags **F**: Comment and annotate **G**: View tasks related to the selected Asset **H**: View and manage versions **I**: View renditions of the image **J**: Edit image **K**: Basic metadata **L**: Advanced metadata **M**: Keywords and smart tags **N**: Preview more closely. Zoom, full screen, and other options **O**: Proceed to previous or next asset in the current folder without going back to the folder
+**A**: Return to the current folder or current search result in the repository **B**: Name and format for the file you are previewing **C**: Assign tasks **D**: Advanced metadata **E**: Keywords and smart tags **F**: Comment and annotate **G**: View tasks related to the selected Asset **H**: View and manage versions **I**: View renditions of the image **J**: Edit image **K**: Basic metadata **L**: Advanced metadata **M**: Keywords and smart tags **N**: Preview more closely. Zoom, full screen, and other options **O**: Proceed to previous or next asset in the current folder without going back to the folder **P**: View Dynamic Media renditions including DM Scene7 rendition (including smart crops) and DM with OpenAPI rendition.
 
 You can also preview videos.
 
