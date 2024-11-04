@@ -23,6 +23,10 @@ These new reference types can be used both in new Content Fragment Models and Fr
 
 To upgrade existing Content Fragments and Models, you can run the procedure documented here. 
 
+>[!CAUTION]
+>
+>Before running the upgrade procedure you should always [Execute a dry run](#execute-a-dry-run) to highlight any potential issues with your content.
+
 ## What is upgraded {#what-is-upgraded}
 
 The following updates are made:
@@ -72,7 +76,7 @@ There are a few preparation steps before running your upgrade.
 
 ### Execute a dry run {#execute-a-dry-run}
 
-Plan time for a dry run of the upgrade to ensure that you find, and correct, any invalid references.
+It is recommended that *every* time you upgrade your content, you first perform a dry run to ensure that you find, and correct, any invalid references.
 
 Run the content upgrade in `dryRun` mode to identify any invalid references, by listing them in the log files. You can then fix these references, before running the actual content upgrade.
 
@@ -106,7 +110,7 @@ The content upgrade can be managed using the endpoint: `/libs/dam/cfm/maintenanc
 | &nbsp; | &nbsp; | &nbsp; |
 | **Response details** | **Value** | | 
 | segmentSize | `1000` | The number of Content Fragments or models that will be upgraded in one segment (batch). |
-| serviceTypeId | `uuidUpgradeService` | The fixed service ID. |
+| serviceTypeId | `uuidUpgradeService` | The service type ID (predefined, fixed value). |
 
 ### Example Content Upgrade Request {#example-content-upgrade-request}
 
