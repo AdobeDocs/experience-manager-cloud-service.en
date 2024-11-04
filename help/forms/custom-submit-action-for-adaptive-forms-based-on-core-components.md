@@ -273,5 +273,4 @@ The below diagram depicts the steps to create a custom submit action for an Adap
 
 {{af-submit-action}}
 
-
 <!-- The [Adaptive Forms Core Components](https://github.com/adobe/aem-core-forms-components) repository includes a sample folder, `customsubmission/logsubmit`, to simplify the process of adding new custom submit actions. It also provides the Java service implementation for the `logsubmit` custom submit action, named `CustomAFSubmitService`.java. These resources are available on GitHub. -->
