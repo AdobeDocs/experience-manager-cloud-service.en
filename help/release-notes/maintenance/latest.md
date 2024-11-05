@@ -23,6 +23,7 @@ The 2024.11.0 feature activation will provide the full feature set for this main
 * SITES-24369: Content Fragments: OpenAPI documentation improvements.
 * SITES-25478: Content Fragments: Add back-end support for external asset references.
 * SITES-26119: Content Fragments: Add support of external asset references in reference type.
+* CQ-4357471: Add support for i18n Dictionaries Translation in AEMaaCS.
 
 ### Fixed Issues {#fixed-issues-18459}
 
@@ -45,6 +46,7 @@ The 2024.11.0 feature activation will provide the full feature set for this main
 * SITES-25456: Events: When moving a page, a page-deleted event is generated besides the page-moved event.
 * SITES-25658: Events: The tier and sourceUrl are not populated in the page content state events.
 * SITES-6497: Launches: Create page in launch not working.
+* CQ-4358730: CQPagePreviewGenerator fails when there are more than 10 keys to be translated.
 
 ### Known Issues {#known-issues-18459}
 
