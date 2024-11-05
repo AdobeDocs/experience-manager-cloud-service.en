@@ -29,17 +29,17 @@ These renditions enable organizations to deliver personalized and optimized expe
 ### Before you begin
 
 * You must be a licensed AEM Dynamic Media user.
-* Configure Dynamic Media Scene7 and Dynamic Media with OpenAPI to the AEM Assets cloud servive environment. 
+* Configure Dynamic Media and Dynamic Media with OpenAPI capabilities to the AEM Assets cloud service environment. 
 * Use [!UICONTROL Admin view] to set up: 
     * [Smart Crop Image Profiles](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles) 
     * [Image presets](/help/assets/dynamic-media/managing-image-presets.md)
 
     You can [switch the view](/help/assets/assets-view-introduction.md#how-to-access-assets-view) later to preview dynamic renditions in the Assets view.
-* Approve the asset to view Dynamic Media with Open API renditions with its base URL(to copy).
+* Approve the asset to see the renditions of Dynamic Media with OpenAPI capabilities with its base URL(to copy).
 
-### View and download Dynamic Media Scene7 renditions {#view-download-dmscene7-renditions}
+### View and download Dynamic Media renditions {#view-download-dm-renditions}
 
-To download the renditions of the image assets processed with **Dynamic Media (Scene7 stack)** that have pre-created and applied image presets and smart crops, follow these steps:
+To download renditions of image assets processed with Dynamic Media, ensure the image asset has pre-created and applied image presets and smart crops. Then, follow these steps to download.
 
 1. Go to **[!UICONTROL Assets Management]** > **[!UICONTROL Assets]**.
 
@@ -47,37 +47,25 @@ To download the renditions of the image assets processed with **Dynamic Media (S
 
 1. Click the asset you need to view and click **[!UICONTROL Details]**.
 
-1. In the right menu, click **[!UICONTROL Dynamic Media Renditions]**. <br> The **[!UICONTROL Dynamic Media Renditions]** panel opens with the available **[!UICONTROL Dynamic Media Scene7]** and **[!UICONTROL Smart Crop]** renditions.
+1. In the right menu, click **[!UICONTROL Dynamic Media]** icon. The **[!UICONTROL Dynamic Media]** panel displays Dynamic Media and Smart Crop renditions.
 
     ![dynamic renditions](/help/assets/assets/dm-scene7-renditions.png)
     <!-- ![dynamic renditions](assets/preset_smart_crop_view.png) -->
 
-1. Select the rendition to preview and click **Copy URL** to copy the URL of the selected rendition. Click **Download Rendition** to download the renditions for image assets.
-1. Select the smart crop rendition to preview and click **Copy URL** to copy the URL of the selected renditon.
+1. Select the rendition to preview and click **Copy URL** to copy the URL of the selected rendition. Click **Download Rendition** to download the renditions of image assets.
+1. Select the Smart Crop rendition to preview and click **Copy URL** to copy the URL of the selected rendition.
 1. Click ![download icon](assets/do-not-localize/download-icon.png) to download all available smartcrop renditions as a single zip file.
 ![download icon](/help/assets/assets/smartcrop-rendition.png)
 
    >[!NOTE]
    >
-   >Dynamic Media renditions are visible only if the assets are uploaded from the Admin view.
-
-### View Dynamic Media with OpenAPI renditions {#view-dm-with-openapi-renditions}
-
-Access Dynamic Media with OpenAPI rendition to see the renditions of approved assets:
-
-1. Go to **[!UICONTROL Assets Management]** > **[!UICONTROL Assets]**.
-1. Navigate to the applicable asset folder.
-1. Click the asset you need to view and click **[!UICONTROL Details]**.
-1. In the right menu, click **[!UICONTROL Dynamic Media Renditions]**. <br> The **[!UICONTROL Dynamic Media Renditions]** panel opens with the rendition preview of the selected asset.
-
-1. Select **Dynamic Media with OpenAPI** and click **Copy URL** to copy the Dynamic Media with OpenAPI URL of the selected asset. 
-![dynamic renditions](/help/assets/assets/dm-with-openapi-non-image-assets.png)
-
-   >[!NOTE]
-   >
-   >Dynamic Media renditions are available only for image assets.
+   >Dynamic Media renditions are visible only if assets are uploaded from the Admin view. These renditions are available only for image assets.
+   
+   
 
 ![dynamic renditions](/help/assets/assets/dm-with-openapi.png)
+
+See [Dynamic Media with OpenAPI capabilities renditions](/help/assets/approve-assets.md#copy-delivery-url-approved-assets) of approved assets.
 
 
 
