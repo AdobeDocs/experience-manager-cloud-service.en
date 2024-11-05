@@ -28,7 +28,7 @@ When you log into [!DNL Assets view], you see the following interface.
 
 ## Browse and view assets and folders {#browse-repository}
 
-You can browse the folders from the main user interface or from the left sidebar. Experience Manager Assets now displays visual previews of folder contents on the folder thumbnail when browsing or searching for content, which improves the discoverability of assets available within AEM Assets repository. This folder thumbnail saves your time spent on searching specific assets within a folder in AEM Assets repository.
+You can browse the folders from the main user interface or from the left sidebar. Experience Manager Assets displays visual previews of folder contents on the folder thumbnail when browsing or searching for content. This improves the discoverability of assets available within AEM Assets repository. This folder thumbnail saves your time spent on searching specific assets within a folder in AEM Assets repository.
 When browsing through assets in a folder, you can use the interface to view asset thumbnails to visually browse the repository or view asset details to quickly find the asset you want. The options available in the left sidebar are:
 
 * [My Workspace](/help/assets/my-workspace-assets-view.md): Assets now includes a customizable workspace that provides widgets for convenient access to key areas of the Assets user interface and information that is most relevant to you. This page serves as a one-stop solution to provide an overview of your work items and to give quick access to key workflows. More convenient access to these options increases your efficiency and content velocity.
@@ -71,9 +71,9 @@ Before you use, share, or download an asset, you can view it more closely. The p
 
 To preview an asset, select it and click [!UICONTROL Details] ![details icon](assets/do-not-localize/edit-in-icon.png) from the toolbar at the top. You cannot only view the asset but also view its detailed metadata and take other actions.
 
-![Preview an asset](assets/preview-asset-2.png)
+![Preview an asset](/help/assets/assets/navigate-file-folder-dm.png)
 
-**A**: Return to the current folder or current search result in the repository **B**: Name and format for the file you are previewing **C**: Assign tasks **D**: Advanced metadata **E**: Keywords and smart tags **F**: Comment and annotate **G**: View tasks related to the selected Asset **H**: View and manage versions **I**: View renditions of the image **J**: Edit image **K**: Basic metadata **L**: Advanced metadata **M**: Keywords and smart tags **N**: Preview more closely. Zoom, full screen, and other options **O**: Proceed to previous or next asset in the current folder without going back to the folder **P**: View Dynamic Media renditions including DM Scene7 rendition (including smart crops) and DM with OpenAPI rendition.
+**A**: Return to the current folder or current search result in the repository **B**: Name and format for the file you are previewing **C**: Assign tasks **D**: Advanced metadata **E**: Keywords and smart tags **F**: Comment and annotate **G**: View tasks related to the selected Asset **H**: View and manage versions **I**: View renditions of the image **J**: Edit image **K**: View Dynamic Media renditions including smart crops and Dynamic Media with OpenAPI capabilities renditions. **L**: Basic metadata **M**: Advanced metadata **N**: Keywords and smart tags **O**: Proceed to previous or next asset in the current folder without going back to the folder **P**: Preview more closely. Zoom, full screen, and other options.
 
 You can also preview videos.
 
