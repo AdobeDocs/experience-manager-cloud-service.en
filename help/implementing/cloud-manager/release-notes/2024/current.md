@@ -41,8 +41,6 @@ AEM Home is a new, centralized starting point for managing your content, assets,
 
 Available to early adopter customers, AEM Home offers a first look at an enhanced experience that optimizes workflows, prioritizes objectives, and drives results. By opting in, you have the opportunity to shape the development of AEM Home, providing feedback that influences its evolution to serve the AEM community best.
 
-See [AEM Home (Early Adopter)](/help/implementing/cloud-manager/aem-home.md) for more information.
-
 If you are interested in testing this new capability and sharing your feedback, send an email to [Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com) from your email address associated with your Adobe ID. Be sure to include the following information:
 
 * The role that best fits your profile: Content author, Developer, Business owner, Admin, or Other (provide a description).
