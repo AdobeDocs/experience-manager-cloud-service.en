@@ -184,6 +184,7 @@ A selection of data types is available for defining your model:
     * Create a new Content Fragment, based on the appropriate model  
   * In the editor, the reference specifies the path to the referenced resource; internally the reference is held as a universally unique ID (UUID) that references the resource
     * You do not need to know the UUID; in the fragment editor you can browse to the required fragment
+
 * **Content Reference**
   * References other content, of any type; can be used to [create nested content](#using-references-to-form-nested-content)
   * If an image is referenced, you can opt to show a thumbnail
@@ -193,6 +194,7 @@ A selection of data types is available for defining your model:
   * If an image is referenced, you can opt to show a thumbnail
   * In the editor, the reference specifies the path to the referenced resource; internally the reference is held as a universally unique ID (UUID) that references the resource
     * You do not need to know the UUID; in the fragment editor you can browse to the required asset resource
+
 * **JSON Object**
   * Allows the Content Fragment author to enter JSON syntax into the corresponding elements of a fragment. 
     * To allow AEM to store direct JSON that you have copy/pasted from another service.
@@ -310,6 +312,10 @@ Content Fragments can form nested content, using either of the following data ty
     >
     >This method is of particular interest when you are using [Headless Content Delivery using Content Fragments with GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
   * Can be configured for one or multiple references (in the resulting fragment).
+
+>[!NOTE]
+>
+>See [Upgrade your Content Fragments for UUID References](/help/headless/graphql-api/uuid-reference-upgrade.md) for further information about Content/Fragment Reference and Content/Fragment Reference (UUID), and upgrading to the UUID-based data types.
 
 >[!NOTE]
 >
