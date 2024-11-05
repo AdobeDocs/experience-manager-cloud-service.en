@@ -18,6 +18,7 @@ The 2024.11.0 feature activation will provide the full feature set for this main
 
 ### Enhancements {#enhancements-18459}
 
+* CQ-4357471: Add support for i18n Dictionaries Translation in AEMaaCS.
 * SITES-23591: Content Fragments: Content fragment upgrade for UUID support.
 * SITES-25440: Content Fragments: CFM Search API to show replication status.
 * SITES-24369: Content Fragments: OpenAPI documentation improvements.
@@ -26,10 +27,10 @@ The 2024.11.0 feature activation will provide the full feature set for this main
 * SITES-21199: Edge Delivery with Universal Editor: Add suppprt for templates created from pages.
 * SITES-20311: Edge Delivery with Universal Editor: Add support to import CSVs into Spreadsheets.
 * SITES-24821: Edge Delivery with Universal Editor: Make aem.page / aem.live the default to integrate with Edge Delivery. 
-* CQ-4357471: Add support for i18n Dictionaries Translation in AEMaaCS.
 
 ### Fixed Issues {#fixed-issues-18459}
 
+* CQ-4358730: CQPagePreviewGenerator fails when there are more than 10 keys to be translated.
 * FORMS-14978: Enabling page load for a Core Component based form for theme editor.
 * FORMS-16596: Accessibility Issue: Disabled Buttons Not Recognized by Screen Reader.
 * SITES-10575: MSM: Blueprint Bloomfilter Loader tries to load >100,000 rows.
@@ -51,7 +52,6 @@ The 2024.11.0 feature activation will provide the full feature set for this main
 * SITES-6497: Launches: Create page in launch not working.
 * SITES-25393: Edge Delivery with Universal Editor: Text nodes lost when rendering formatted richtext with single paragraph.
 * SITES-24643: Edge Delivery with Universal Editor: OpenGraph and twitter metadata attributes not working in page metadata model. 
-* CQ-4358730: CQPagePreviewGenerator fails when there are more than 10 keys to be translated.
 
 ### Known Issues {#known-issues-18459}
 
