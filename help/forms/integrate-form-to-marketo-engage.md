@@ -1,20 +1,18 @@
 ---
-Title: How to Integrate an Adaptive Form with Marketo Engage?
-Description: Learn how to integrate your Adaptive Form with a Marketo Engage instance.
-Keywords: How to connect a Marketo instance with an Adaptive Form? , Connect a form to Marketo, Integrate a form with Marketo Engage, Integrate an Adaptive Form with a Marketo instance, Submit data from form to Marketo. 
+Title: How to Integrate Marketo Engage with AEM Forms?
+Description: Learn how to integrate your Marketo Engage instance with AEM Forms.
+Keywords: How to connect a Marketo instance with form? , Connect a form to Marketo, Integrate a form with Marketo Engage, Integrate an Adaptive Form with a Marketo instance. 
 Feature: Adaptive Forms, Core Components
 Role: User, Developer
 ---
 
-# Integrate an Adaptive Form with Marketo Engage
+# Integrate Marketo Engage with AEM Forms
 
-Integrating Adaptive Forms with Marketo Engage enables users to leverage the capabilities of Marketo Engage to create business logic from captured data and automate workflows, including smart campaigns and email automation. You can configure an Adaptive Form to submit data to [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home) on submission. The configured Adaptive Form sends captured data, attachments, and Document Of Record to Marketo Engage for processing.
+Integrating AEM Forms with [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home) enables users to leverage the capabilities of Marketo Engage to create business logic from captured data and automate workflows, including smart campaigns and email automation. The configured form can send captured data, attachments, and Document Of Record to Marketo Engage for processing.
 
-Adaptive Forms editor provides the **Submit to Marketo Engage** submit action to send Adaptive Forms data to Adobe Marketo Engage. Various out of the box submit actions for handling form submissions are available. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md) article.
+## Advantages of integrating Marketo Engage with forms
 
-## Advantages of connecting forms with Marketo Engage
-
-Below are the few advantages to connect an Adaptive Form with Adobe Marketo Engage:
+Below are a few advantages of connecting an AEM form with Adobe Marketo Engage:
 
 * **Simplified integration**: Connecting forms with Marketo Engage eliminates the need to create a separate form data model. The integration process is straightforward and user-friendly.
 * **Automated data capture**: It helps in automatically capture form submissions and store them in Marketo, eliminating manual data entry and reducing errors.
@@ -27,7 +25,7 @@ Below are the few advantages to connect an Adaptive Form with Adobe Marketo Enga
 
 * **Follow-up automation**: It helps in automating follow-up emails and workflows triggered by form submissions, ensuring timely communication with leads.
 
-## Key Benefits of using AEM Forms (Adaptive Forms) over alternative Form solutions
+## Key Benefits of using AEM Forms over alternative Form solutions
 
 The table below outlines the few reasons to choose AEM Forms over other alternative Form solutions:
 
@@ -41,64 +39,54 @@ The table below outlines the few reasons to choose AEM Forms over other alternat
 | **Ease of Integration with Sites**  | No additional learning required; AEM Forms use the same skills as Sites | Additional learning may be required|
 | **Data Submission**| Can submit data to various platforms and offers multiple connectors, such as Connect to SharePoint, Connect to OneDrive, Connect to Salesforce, and more.| Can submit data to limited connectors, for example to Salesforce |
 
-## Prerequisites for integrating Adaptive Forms with Marketo Engage
+## Considerations for integrating Marketo Engage with forms
 
-The following are required to integrate an Adaptive Form with Marketo Engage:
-
-* A valid Adobe Marketo Engage license
-* A working instance of Marketo Engage to [retrieve the Client ID and Client Secret](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/additional-integrations/create-a-custom-service-for-use-with-rest-api).
-
-## Considerations for integrating Adaptive Forms with Marketo Engage
-
-Some considerations for integrating an Adaptive Form with Marketo Engage are:
+Some considerations while integrating Marketo Engage with AEM Forms:
 
 * AEM only supports the People(Leads) database among the various Marketo databases.
 * Marketo allows the [creation of 10 custom objects](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/marketo-custom-objects/add-marketo-custom-object-fields) as user-defined objects to store specialized data beyond the standard fields in Leads, supporting unique business needs.
-* AEM can access custom objects only if they are associated with the Lead database.
-* It is not possible to connect Edge Delivery Services Forms with Marketo Engage.
+* AEM can access custom objects only if they are associated with the Lead database
 
-## How to connect forms with Marketo Engage?
+## Prerequisites for integrating Marketo Engage with forms
 
-To connect the Adaptive Form with Adobe Marketo Engage:
-1. [Create a Marketo Engage configuration](#1-create-a-marketo-engage-configuration) 
-1. [Configure Submit action of an Adaptive Form](#2-configure-submit-action-of-an-adaptive-form)
+Below are the prerequisites to connect Marketo Engage with AEM Forms:
 
+* A valid Adobe Marketo Engage license
+* A working instance of Marketo Engage to [retrieve the Client ID and Client Secret](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/additional-integrations/create-a-custom-service-for-use-with-rest-api) to create a cloud configuration.
 
-### 1. Create a Marketo Engage configuration
+## Create cloud service configuration to connect AEM Forms (Adaptive Forms) with Marketo Engage
 
-**Steps will be added**
+The Cloud configuration connects your Experience Manager instance to the Adobe Marketo Engage instance. Perform the following steps to create a Marketo Engage cloud configuration:
 
-### 2. Configure Submit action of an Adaptive Form
+1. Go to **Tools** > **Cloud Services** > **Marketo Engage**.
+1. Open a folder to host the configuration and click **Create**. The **Create Marketo Engage Configuration** window appears.
 
-**Steps will be added**
+    >[!NOTE]
+    >
+    > You can also [configure folder for cloud service configurations](/help/forms/configure-data-sources.md#configure-folder-for-cloud-service-configurations).
 
-## FAQs
+1. Specify the **Title** of the configuration and credentials to connect to the service. You can retrieve the authentication credentials from the Adobe Marketo Engage dashboard:
+   * **Client ID** and **Client Secret** are available in **Admin** > **Integration** > **LaunchPoint** by selecting the custom service and clicking **View Details**.
+    * **Identity URL** is available in **Admin** > **Integration** > **Web Services** as **Identity** in the **REST API** section.
 
-**Q: Can you change the submit action for forms configured to connect with the Marketo Engage schema?** 
-    **A:** By default, the **Submit to Marketo** action is selected when a form is configured to connect with the Marketo Engage schema. However, you can change the submit action for the forms if needed.
+1. Click **Connect**.  On a successful connection, the `Authentication Successful` message appears. 
+1. Click **[!UICONTROL Create]** to save the cloud configuration settings.
 
-**Q: What happens when you change the connector of the form?**  
-    **A:** If you change the connector of the form, the existing bindings become invalid.
+![Marketo Engage Cloud Configuration](/help/forms/assets/marketo-engage-cloud-configuration.png)
 
-**Q: What are the three operations available in the Invoke Service of the Rule Editor for forms integrated with Marketo Engage?**  
-    **A:** The three available out of the box operations available in the **Invoke Service** for forms integrated with Marketo Engage are:
-* Sync Lead
-* Get Lead by ID
-* Get Lead by Filter Type
+Now you can use the created cloud service configuration to connect the Marketo Engage data source to an Adaptive Form.
 
 ## Next Step
 
-You can also connect an AEM Form with the [Munchkin library](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) to track the number of visits, clicks, and form submissions.
+You have created the cloud service configuration to integrate Adobe Marketo Engage with AEM Forms. You can now [use the Marketo Engage data source in an Adaptive Form](/help/forms/use-marketo-engage-data-source-in-form.md). 
 
-## Related Articles
+## Related Article
 
 {{af-submit-action}}
 
 ## See Also
 
-{{see-also}}
-
-
+{{marketo-engage-see-also}}
 
 
 

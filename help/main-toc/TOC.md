@@ -748,6 +748,10 @@ user-guide-title: AEM as a Cloud Service
           +  [List forms on the Sites page using the Search & Lister component](/help/forms/list-forms-on-sites-page.md)
           +  [Save and list forms as drafts on Sites page using the Drafts & Submissions component](/help/forms/save-core-component-based-form-as-draft.md)
           +  [Add form links to Sites page using the Link component](/help/forms/add-form-link-to-aem-sites-page.md)
+        +  Integrate Adaptive Forms with Adobe Marketo Engage 
+            +  [Integrate Adobe Marketo Engage with AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
+            + [Configure Adobe Marketo Engage data source for Adaptive Forms](/help/forms/use-marketo-engage-data-source-in-form.md)
+             + [Configure the submit action to Marketo Engage for forms](/help/forms/submit-adaptive-form-to-marketo-engage.md)
     + Foundation Components {#authoring-adaptive-forms-foundation-components}
       + Convert your PDF forms to Adaptive Forms {#afcs}
         + [Introduction to Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
