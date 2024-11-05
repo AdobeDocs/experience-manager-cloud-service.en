@@ -34,11 +34,11 @@ These renditions enable organizations to deliver personalized and optimized expe
     * [Image presets](/help/assets/dynamic-media/managing-image-presets.md)
 
     You can [switch the view](/help/assets/assets-view-introduction.md#how-to-access-assets-view) later to preview dynamic renditions in the Assets view.
-* Approve the asset to see the renditions of Dynamic Media with OpenAPI capabilities with its base URL(to copy).
+
 
 ### View and download Dynamic Media renditions {#view-download-dm-renditions}
 
-To download renditions of image assets processed with Dynamic Media, ensure the image asset has pre-created and applied image presets and smart crops. Then, follow these steps to download.
+To view or download dynamic renditions of images in Experience Manager Assets, follow these steps:
 
 1. Go to **[!UICONTROL Assets Management]** > **[!UICONTROL Assets]**.
 
@@ -53,7 +53,7 @@ To download renditions of image assets processed with Dynamic Media, ensure the 
 
 1. Select the rendition to preview and click **Copy URL** to copy the URL of the selected rendition. Click **Download Rendition** to download the renditions of image assets.
 1. Select the Smart Crop rendition to preview and click **Copy URL** to copy the URL of the selected rendition.
-1. Click ![download icon](assets/do-not-localize/download-icon.png) to download all available smartcrop renditions as a single zip file.
+1. Click ![download icon](assets/do-not-localize/download-icon.png) to download all available smart crop renditions as a single zip file.
 ![download icon](/help/assets/assets/smartcrop-rendition.png)
 
    >[!NOTE]

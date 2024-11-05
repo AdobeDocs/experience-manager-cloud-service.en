@@ -73,7 +73,7 @@ To preview an asset, select it and click [!UICONTROL Details] ![details icon](as
 
 ![Preview an asset](/help/assets/assets/navigate-file-folder-dm.png)
 
-**A**: Return to the current folder or current search result in the repository **B**: Name and format for the file you are previewing **C**: Assign tasks **D**: Advanced metadata **E**: Keywords and smart tags **F**: Comment and annotate **G**: View tasks related to the selected Asset **H**: View and manage versions **I**: View renditions of the image **J**: Edit image **K**: View Dynamic Media renditions including smart crops and Dynamic Media with OpenAPI capabilities renditions. **L**: Basic metadata **M**: Advanced metadata **N**: Keywords and smart tags **O**: Proceed to previous or next asset in the current folder without going back to the folder **P**: Preview more closely. Zoom, full screen, and other options.
+**A**: Return to the current folder or current search result in the repository **B**: Name and format for the file you are previewing **C**: Assign tasks **D**: Advanced metadata **E**: Keywords and smart tags **F**: Comment and annotate **G**: View tasks related to the selected Asset **H**: View and manage versions **I**: View renditions of the image **J**: Edit image **K**: View Dynamic Media renditions including Smart Crop and Dynamic Media with OpenAPI capabilities renditions. **L**: Basic metadata **M**: Advanced metadata **N**: Keywords and smart tags **O**: Proceed to previous or next asset in the current folder without going back to the folder **P**: Preview more closely. Zoom, full screen, and other options.
 
 You can also preview videos.
 
