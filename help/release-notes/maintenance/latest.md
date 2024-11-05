@@ -23,9 +23,9 @@ The 2024.11.0 feature activation will provide the full feature set for this main
 * SITES-24369: Content Fragments: OpenAPI documentation improvements.
 * SITES-25478: Content Fragments: Add back-end support for external asset references.
 * SITES-26119: Content Fragments: Add support of external asset references in reference type.
-* SITES-21199: Add suppprt for templates created from pages.
-* SITES-20311: Add support to import CSVs into Spreadsheets.
-* SITES-24821: Make aem.page / aem.live the default to integrate with Edge Delivery.
+* SITES-21199: Edge Delivery with Universal Editor: Add suppprt for templates created from pages.
+* SITES-20311: Edge Delivery with Universal Editor: Add support to import CSVs into Spreadsheets.
+* SITES-24821: Edge Delivery with Universal Editor: Make aem.page / aem.live the default to integrate with Edge Delivery.
 
 ### Fixed Issues {#fixed-issues-18459}
 
@@ -48,8 +48,8 @@ The 2024.11.0 feature activation will provide the full feature set for this main
 * SITES-25456: Events: When moving a page, a page-deleted event is generated besides the page-moved event.
 * SITES-25658: Events: The tier and sourceUrl are not populated in the page content state events.
 * SITES-6497: Launches: Create page in launch not working.
-* SITES-25393: text nodes lost when rendering formatted richtext with single paragraph.
-* SITES-24643: OpenGraph and twitter metadata attributes not working in page metadata model.
+* SITES-25393: Edge Delivery with Universal Editor: Text nodes lost when rendering formatted richtext with single paragraph.
+* SITES-24643: Edge Delivery with Universal Editor: OpenGraph and twitter metadata attributes not working in page metadata model.
 
 ### Known Issues {#known-issues-18459}
 
