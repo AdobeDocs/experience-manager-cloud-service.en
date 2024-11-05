@@ -100,3 +100,5 @@ To copy delivery URL for an approved asset within the repository:
    >[!NOTE]
    >
    >The option to copy delivery URL for approved assets is just available in Assets view.
+
+For information on other renditions that display within Dynamic Media panel, see [View and download Dynamic Media renditions](/help/assets/renditions.md#view-download-dm-renditions).
