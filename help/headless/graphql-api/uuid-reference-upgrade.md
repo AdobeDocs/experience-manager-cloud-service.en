@@ -36,6 +36,10 @@ The following updates are made:
   * **Fragment Reference** are converted to **Fragment Reference (UUID)** 
 * The values of the path based references held in these fields are replaced by the corresponding UUIDs
 
+>[!NOTE]
+>
+>After the upgrade both Data Types are still available in the Content Fragment Model editor. You can create new fields based on both types (though it is anticipated that you will use the UUID based types) and rerun the upgrade if required.
+
 ## What is NOT upgraded {#what-is-not-upgraded}
 
 The following references are not upgraded:
@@ -76,9 +80,18 @@ There are a few preparation steps before running your upgrade.
 
 ### Execute a dry run {#execute-a-dry-run}
 
-It is recommended that *every* time you upgrade your content, you first perform a dry run to ensure that you find, and correct, any invalid references.
+It is recommended that *every* time you upgrade your content, you first perform a dry run. This will create log files with entries that highlight any potential issues:
 
-Run the content upgrade in `dryRun` mode to identify any invalid references, by listing them in the log files. You can then fix these references, before running the actual content upgrade.
+* Invalid references
+* Page references
+
+Run the content upgrade in `dryRun` mode to:
+
+* identify any invalid references; by listing them in the log files
+  You can then fix these references, before running the actual content upgrade.
+* identify any page references; by listing them in the log files
+  When page references are detected you [should not run the content upgrade](#when-you-should-not-upgrade).
+
 
 ### Enforce a content freeze {#enforce-a-content-freeze}
 
