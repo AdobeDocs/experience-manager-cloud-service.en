@@ -29,7 +29,6 @@ These renditions enable organizations to deliver personalized and optimized expe
 ### Before you begin
 
 * You must be a licensed AEM Dynamic Media user.
-* Configure Dynamic Media and Dynamic Media with OpenAPI capabilities to the AEM Assets cloud service environment. 
 * Use [!UICONTROL Admin view] to set up: 
     * [Smart Crop Image Profiles](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles) 
     * [Image presets](/help/assets/dynamic-media/managing-image-presets.md)
@@ -60,13 +59,8 @@ To download renditions of image assets processed with Dynamic Media, ensure the 
    >[!NOTE]
    >
    >Dynamic Media renditions are visible only if assets are uploaded from the Admin view. These renditions are available only for image assets.
-   
-   
 
-![dynamic renditions](/help/assets/assets/dm-with-openapi.png)
-
-See [Dynamic Media with OpenAPI capabilities renditions](/help/assets/approve-assets.md#copy-delivery-url-approved-assets) of approved assets.
-
+For information on Dynamic Media with OpenAPI capabilities renditions, see [Copy delivery URL for approved assets](/help/assets/approve-assets.md#copy-delivery-url-approved-assets).
 
 
 
