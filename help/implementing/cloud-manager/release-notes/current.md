@@ -15,7 +15,7 @@ Learn about the release of Cloud Manager 2024.11.0 in AEM (Adobe Experience Mana
 
 ## Release dates {#release-date}
 
-Release date for Cloud Manager 2024.11.0 in AEM as a Cloud Service is November 7, 2024. 
+The release date for Cloud Manager 2024.11.0 in AEM as a Cloud Service is November 7, 2024. 
 
 The next planned release is December 5, 2024.
 
