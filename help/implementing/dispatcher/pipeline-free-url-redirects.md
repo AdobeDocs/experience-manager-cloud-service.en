@@ -6,9 +6,6 @@ role: Admin
 ---
 # Pipeline-free URL Redirects {#pipeline-free-redirects}
 
->[!NOTE]
->This feature is not yet released.
-
 For various reasons, organizations rewrite URLs in a way that causes a 301 (or 302) redirect, meaning that the browser is redirected to a different page.
 
 Scenarios include:
@@ -56,11 +53,11 @@ maps:
 
 ```
 
-Next, in an apache configuration file such as `rewrites/rewrite.rules` or `<yourfile>.vhost`, you must configure the map file referenced by the name property ( `my.map`in the sample above).
+Next, in an Apache configuration file such as `rewrites/rewrite.rules` or `<yourfile>.vhost`, you must configure the map file referenced by the name property (`my.map` in the sample above).
 
 The `RewriteMap` directive should indicate that the data is stored in a database manager (DBM) file format by using the `sdbm` (simple DBM) format.
 
-The rest of the configuration will depend on the format of the `redirectmap.txt`. The simplest format, shown in the sample below, is a one to one mapping between the original url to the mapped url:
+The rest of the configuration depends on the format of the `redirectmap.txt`. The simplest format, shown in the sample below, is a one to one mapping between the original url to the mapped url:
 
 ```
 # RewriteMap from managed rewrite maps
@@ -75,6 +72,6 @@ RewriteRule ^(.*)$ ${map.foo:$1|/} [L,R=301]
 
 Keep in mind the following:
  
-* By default, when loading a rewrite map, Apache will start up without waiting for the full map file(s) to load, and thus there can be temporary inconsistencies until the full map(s) loads. This setting can be changed so that Apache waits for the full map contents to be loaded, but it will take longer for Apache to startup. To change this behavior so Apache will wait, add `wait:true` to the `managed-rewrite-maps.yaml` file.
-* To change the frequency between loads, add `ttl: <integer>` to the `managed-rewrite-maps.yaml` file. For example `ttl: 120`.
-* Apache has an 1024 length limit for RewriteMap single entries.
+* By default, when loading a rewrite map, Apache starts up without waiting for the full map file(s) to load, and thus there can be temporary inconsistencies until the full map(s) loads. This setting can be changed so that Apache waits for the full map contents to be loaded, but it takes longer for Apache to start up. To change this behavior so Apache waits, add `wait:true` to the `managed-rewrite-maps.yaml` file.
+* To change the frequency between loads, add `ttl: <integer>` to the `managed-rewrite-maps.yaml` file. For example: `ttl: 120`.
+* Apache has a 1024 length limit for RewriteMap single entries.
