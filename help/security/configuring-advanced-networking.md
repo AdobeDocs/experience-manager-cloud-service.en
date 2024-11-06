@@ -230,10 +230,6 @@ Configuring dedicated egress IP address is similar to [flexible port egress.](#f
 >
 >Once created, dedicated egress IP address infrastructure types cannot be edited. The only way to change configuration values is to delete and recreate them.
 
->[!INFO]
->
->If a dedicated egress IP is configured, Splunk forwarding will continue to use the dynamic egress ranges. Splunk forwarding cannot be configured to use a dedicated egress IP.
-
 ### UI Configuration {#configuring-dedicated-egress-provision-ui}
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
@@ -405,7 +401,6 @@ Most VPN devices with IPSec technology are supported. Consult the information in
 >The following are limitations to a VPN infrastructure:
 >
 >* Support is limited to a single VPN connection
->* The Splunk forwarding capability is not possible over a VPN connection.
 >* DNS Resolvers must be listed in the Gateway Address space to resolve private host names.
 
 ### UI Configuration {#configuring-vpn-ui}
