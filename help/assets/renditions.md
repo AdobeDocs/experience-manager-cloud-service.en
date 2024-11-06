@@ -10,7 +10,7 @@ role: User
 | [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
 | ------------- | --------------------------- |---------|----|-----|
 
-Renditions in Adobe Experience Manager (AEM) are customized versions of digital assets, such as images, designed for different devices and platforms to ensure optimal performance. AEM facilitates easy creation and management of these renditions, enhancing user experience. You can create thumbnails, optimize images for web or mobile, add watermarks, view and download dynamic renditions or smart crop renditions, and do much more.
+Renditions in Adobe Experience Manager (AEM) are customized versions of digital assets, such as images, designed for different devices and platforms to ensure optimal performance. AEM facilitates easy creation and management of these renditions, enhancing the user experience. You can create thumbnails, optimize images for web or mobile, add watermarks, view and download dynamic renditions or Smart Crop renditions, and do much more.
 
 Dynamic Media image presets, and Smart Crop renditions promote systematic image management that aligns with brand standards, maximizing brand cohesion. This simplifies the process of quickly locating and using dynamic image renditions as needed without any admin access.
 
@@ -28,17 +28,15 @@ These renditions enable organizations to deliver personalized and optimized expe
 
 ## Dynamic Media renditions {#dynamic-media-renditions}
 
-Access Dynamic Media renditions from the Assets view.
-
 ### Before you begin
 
 * You must be a licensed AEM Dynamic Media user.
-* Use [!UICONTROL Admin view] to set up: 
+* Use the [!UICONTROL Admin view] to set up: 
     * [Smart Crop Image Profiles](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles) 
     * [Image presets](/help/assets/dynamic-media/managing-image-presets.md)
 
     You can [switch the view](/help/assets/assets-view-introduction.md#how-to-access-assets-view) later to preview dynamic renditions in the Assets view.
-* Publish assets to Dynamic Media to make their Dynamic Media renditions available in Assets View. See [Publish Assets to AEM and Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm) for the publishing information.
+* Publish assets to Dynamic Media to make Dynamic Media renditions available in the Assets view. For more information, see [Publish Assets to AEM and Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm).
 
 
 ### View and download Dynamic Media renditions {#view-download-dm-renditions}
@@ -49,16 +47,16 @@ To view or download dynamic renditions of images in Experience Manager Assets, f
 
 1. Navigate to the applicable asset folder.
 
-1. Click the asset you need to view and click **[!UICONTROL Details]**.
+1. Click the asset that you need to view and click **[!UICONTROL Details]**.
 
-1. In the right menu, click **[!UICONTROL Dynamic Media]** icon. The **[!UICONTROL Dynamic Media]** panel displays Dynamic Media and Smart Crop renditions.
+1. In the right menu, click the **[!UICONTROL Dynamic Media]** icon. The **[!UICONTROL Dynamic Media]** panel displays Dynamic Media and Smart Crop renditions.
 
     ![dynamic renditions](/help/assets/assets/dm-scene7-renditions.png)
     <!-- ![dynamic renditions](assets/preset_smart_crop_view.png) -->
 
 1. Select the rendition to preview and click **Copy URL** to copy the URL of the selected rendition. Click **Download Rendition** to download the renditions of image assets.
 1. Select the Smart Crop rendition to preview and click **Copy URL** to copy the URL of the selected rendition.
-1. Click ![download icon](assets/do-not-localize/download-icon.png) to download all available smart crop renditions as a single zip file.
+1. Click ![download icon](assets/do-not-localize/download-icon.png) to download all available Smart Crop renditions as a single zip file.
 ![download icon](/help/assets/assets/smartcrop-rendition.png)
 
    >[!NOTE]
@@ -67,17 +65,16 @@ To view or download dynamic renditions of images in Experience Manager Assets, f
 
 ## Dynamic Media with OpenAPI Capabilities renditions {#dm-with-openapi-renditions}
 
-Access Dynamic Media with OpenAPI Capabilities renditions from Assets view.
-
 ### Before you begin
 
 * You must be a licensed AEM Dynamic Media user.
-* Assets within the repository must be approved and licensed. See [Approve assets in Experience Manager ](/help/assets/approve-assets.md#copy-delivery-url-approved-assets) to approve the assets.
+* Assets must be approved to display Dynamic Media with OpenAPI capabilities renditions. For more information, see [Approve assets in Experience Manager ](/help/assets/approve-assets.md#copy-delivery-url-approved-assets)
+* Dynamic Media with OpenAPI capabilities must be enabled on your AEM as a Cloud Service instance.
 
 ### View Dynamic Media with OpenAPI Capabilities renditions {#view-download-dm-with-openapi-renditions}
 
 1. Select the asset and click **Details**.
-1. Click the Dynamic Media icon available in the right pane. The Dynamic Media panel diaplays the Dynamic Media with OpenAPI Capabilities rendition for all asset types. 
+1. Click the Dynamic Media icon available in the right pane. The Dynamic Media panel displays the Dynamic Media with OpenAPI Capabilities rendition for all asset types. 
 ![download icon](/help/assets/assets/dm-with-openapi-copy-url.png)
 1. Select **Dynamic Media with OpenAPI** option and then click **Copy URL** to copy the delivery URL of the asset.
 
