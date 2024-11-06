@@ -6,7 +6,6 @@ contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 feature: Adaptive Forms, Foundation Components
-exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
 role: User, Developer
 ---
 
