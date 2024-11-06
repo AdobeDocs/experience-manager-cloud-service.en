@@ -75,7 +75,7 @@ To view or download dynamic renditions of images in Experience Manager Assets, f
 
 1. Select the asset and click **Details**.
 1. Click the Dynamic Media icon available in the right pane. The Dynamic Media panel displays the Dynamic Media with OpenAPI Capabilities rendition for all asset types. 
-![download icon](/help/assets/assets/dm-with-openapi-copy-url.png)
+![download icon](/help/assets/assets/dm-with-open-api-copy-url.png)
 1. Select **Dynamic Media with OpenAPI** option and then click **Copy URL** to copy the delivery URL of the asset.
 
 
