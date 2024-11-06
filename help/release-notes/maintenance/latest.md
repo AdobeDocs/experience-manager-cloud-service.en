@@ -50,8 +50,11 @@ The 2024.11.0 feature activation will provide the full feature set for this main
 * SITES-25456: Events: When moving a page, a page-deleted event is generated besides the page-moved event.
 * SITES-25658: Events: The tier and sourceUrl are not populated in the page content state events.
 * SITES-6497: Launches: Create page in launch not working.
+* SITES-25938: Launches: Unexpected deletion post Translation project.
 * SITES-25393: Edge Delivery with Universal Editor: Text nodes lost when rendering formatted richtext with single paragraph.
 * SITES-24643: Edge Delivery with Universal Editor: OpenGraph and twitter metadata attributes not working in page metadata model. 
+* SITES-25401: Experience Fragments: Slow XF reference update 
+
 
 ### Known Issues {#known-issues-18459}
 
@@ -60,6 +63,10 @@ None.
 ### Deprecated Features and APIs {#deprecated-18459}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
+
+### Security Fixes {#security-18459}
+
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 21 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
 ### Embedded Technologies {#embedded-tech-18459}
 
