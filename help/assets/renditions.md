@@ -26,6 +26,10 @@ Learn [how to view and download](#view-dynamic-renditions) static renditions in 
 Dynamic renditions are customized versions of assets created in real-time to meet specific needs, such as resizing images based on device resolution or cropping to fit different aspect ratios.
 These renditions enable organizations to deliver personalized and optimized experiences to diverse audience needs. You can view and download dynamic renditions in [!DNL Experience Manager Assets].
 
+## Dynamic Media renditions {#dynamic-media-renditions}
+
+Access Dynamic Media renditions from the Assets view.
+
 ### Before you begin
 
 * You must be a licensed AEM Dynamic Media user.
@@ -34,6 +38,7 @@ These renditions enable organizations to deliver personalized and optimized expe
     * [Image presets](/help/assets/dynamic-media/managing-image-presets.md)
 
     You can [switch the view](/help/assets/assets-view-introduction.md#how-to-access-assets-view) later to preview dynamic renditions in the Assets view.
+* Publish assets to Dynamic Media to make their Dynamic Media renditions available in Assets View. See [Publish Assets to AEM and Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm) for the publishing information.
 
 
 ### View and download Dynamic Media renditions {#view-download-dm-renditions}
@@ -58,9 +63,22 @@ To view or download dynamic renditions of images in Experience Manager Assets, f
 
    >[!NOTE]
    >
-   >Dynamic Media renditions are visible only if assets are uploaded from the Admin view. These renditions are available only for image assets.
+   >These renditions are available only for image assets.
 
-For information on Dynamic Media with OpenAPI capabilities renditions, see [Copy delivery URL for approved assets](/help/assets/approve-assets.md#copy-delivery-url-approved-assets).
+## Dynamic Media with OpenAPI Capabilities renditions {#dm-with-openapi-renditions}
 
+Access Dynamic Media with OpenAPI Capabilities renditions from Assets view.
+
+### Before you begin
+
+* You must be a licensed AEM Dynamic Media user.
+* Assets within the repository must be approved and licensed. See [Approve assets in Experience Manager ](/help/assets/approve-assets.md#copy-delivery-url-approved-assets) to approve the assets.
+
+### View Dynamic Media with OpenAPI Capabilities renditions {#view-download-dm-with-openapi-renditions}
+
+1. Select the asset and click **Details**.
+1. Click the Dynamic Media icon available in the right pane. The Dynamic Media panel diaplays the Dynamic Media with OpenAPI Capabilities rendition for all asset types. 
+![download icon](/help/assets/assets/dm-with-openapi-copy-url.png)
+1. Select **Dynamic Media with OpenAPI** option and then click **Copy URL** to copy the delivery URL of the asset.
 
 
