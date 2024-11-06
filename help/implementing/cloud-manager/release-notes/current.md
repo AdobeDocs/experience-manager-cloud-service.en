@@ -17,7 +17,7 @@ Learn about the release of Cloud Manager 2024.11.0 in AEM (Adobe Experience Mana
 
 Release date for Cloud Manager 2024.11.0 in AEM as a Cloud Service is November 7, 2024. 
 
-Next planned release is December 5, 2024.
+The next planned release is December 5, 2024.
 
 ## What's new {#what-is-new}
 
@@ -41,12 +41,9 @@ If you are interested in testing this new capability and sharing your feedback, 
 * The role that best fits your profile: Content author, Developer, Business owner, Admin, or Other (provide a description).
 * Your primary AEM access surface: AEM Sites, AEM Assets, AEM Forms, Cloud Manager, or Other (provide a description).
 
-
-<!-- WAS NOT INCLUDED IN THE NOVEMBER 2024 RELEASE WIKI HENCE REMOVED; LEFT HERE JUST IN CASE PM CHANGES MIND - https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.11.0+Release 
-
 ### Bring Your Own Git - now with support for GitLab and Bitbucket {#gitlab-bitbucket}
 
-BOTH CS & AMS
+<!-- BOTH CS & AMS -->
 
 The **Bring Your Own Git** feature has been expanded to include support for external repositories such as GitLab and Bitbucket. This new support is in addition to the already existing support for private and enterprise GitHub repositories. When you add these new repos, you can also link them directly to your pipelines. You can host these repositories on public cloud platforms or within your private cloud or infrastructure. This integration also removes the need for constant code synchronization with the Adobe repository and provides the ability to validate pull requests before merging them into a main branch.
 
