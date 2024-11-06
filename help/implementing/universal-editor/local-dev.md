@@ -1,14 +1,14 @@
 ---
-title: Local AEM Development with the Universal Editor
-description: Learn how the Universal Editor supports editing on local AEM instances for development purposes.
+title: Running Your Own Universal Editor Service
+description: Learn how you can run your own Universal Editor Service either for local development or as part of your own infrastructure.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
 ---
 
-# Local AEM Development with the Universal Editor {#local-dev-ue}
+# Running Your Own Universal Editor Service {#local-ue-service}
 
-Learn how the Universal Editor supports editing on local AEM instances for development purposes.
+Learn how you can run your own Universal Editor Service either for local development or as part of your own infrastructure.
 
 ## Overview {#overview}
 
@@ -18,11 +18,20 @@ The Universal Editor Service is what binds the Universal Editor and the backend 
 * While developing with a local AEM SDK, Adobe's Universal Editor Service can not be accessed from the internet.
 * If your AEM instance has IP restrictions and Adobe's Universal Editor Service isn't in a defined IP range, you can host it yourself.
 
-This document explains how to run AEM in HTTPS alongside a local copy of the Universal Editor Service so you can develop locally on AEM for use with the Universal Editor.
+## Use Cases {#use-cases}
+
+Your own copy of the Universal Editor Service is useful if you wish to:
+
+* Develop locally on AEM for use with the Universal Editor.
+* Run your own Universal Editor Service as part of your own infrastructure, independent of Adobe's Universal Editor Service.
+
+Both use cases are supported. This document explains how to run AEM in HTTPS alongside a local copy of the Universal Editor Service.
+
+If you wish to run your own Universal Editor Service as part of your own infrastructure, you would follow the same steps as the local development example.
 
 ## Set Up AEM to Run on HTTPS {#aem-https}
 
-Within an outer frame secured with HTTPS an unsecure HTTP frame cannot be loaded. The Universal Editor Service runs on HTTPS and therefore AEM or any other remote page must run also on HTTPS.
+Within an outer frame secured with HTTPS, an unsecure HTTP frame cannot be loaded. The Universal Editor Service runs on HTTPS and therefore AEM or any other remote page must run also on HTTPS.
 
 To do this, you need to set up AEM to run on HTTPS. For development purposes you can use self-signed certificate.
 
