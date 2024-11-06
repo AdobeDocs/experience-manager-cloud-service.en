@@ -37,7 +37,7 @@ To configure an Adaptive Form with the Marketo Engage data source, perform the f
 1. Open the **[!UICONTROL Data Model]** tab and select a data model as **Marketo Engage**.
 1. Select the **[!UICONTROL Connector]** from the drop-down list. 
   Based on the selected Marketo Engage connector, the form elements are displayed in the **[!UICONTROL Data Model Objects]** tab of the **[!UICONTROL Content Browser]** in the sidebar. You can drag-drop these elements to build your Adaptive Form.
-1. Click **[UICONTROL Done]**.
+1. Click **[!UICONTROL Done]**.
    
 Alternatively, you can also edit the Adaptive Form properties to change its associated connector.
 

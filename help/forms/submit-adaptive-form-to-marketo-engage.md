@@ -31,7 +31,7 @@ You can configure the submit action of an Adaptive Form to submit data to Adobe 
 1. Open the Content Tree and select the **[!UICONTROL Guide Container]**. 
 1. Click the Adaptive Form Container properties ![Adaptive Form Container properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box to configure submit action opens. 
 1. Open the **[!UICONTROL Submission]** tab and select a submit action as **Submit to Marketo Engage**.
-1. Click **[UICONTROL Done]**.
+1. Click **[!UICONTROL Done]**.
 
 After configuring the submit action for the Adaptive Form as **Submit to Marketo Engage**, you can send data to Adobe Marketo Engage for processing. The data can be used to analyze and optimize marketing campaigns, automate follow-up emails, and trigger workflows based on form submissions.  
 
