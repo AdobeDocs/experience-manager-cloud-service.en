@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 hide: yes
-hidefromtoc: yes
+hidefromtoc: no
 
 ---
 # About Adobe Experience Manager Home {#aem-home}
