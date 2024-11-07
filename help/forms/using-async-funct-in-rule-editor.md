@@ -4,8 +4,8 @@ description: Asynchronous function calls in Visual rule editor
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+exl-id: a240ba26-a6d8-4643-8acb-1d8812dac61f
 ---
-
 # Using asynchronous functions in an Adaptive Form based on Core Components
 
 The [rule editor in Adaptive Forms](/help/forms/rule-editor-core-components.md) supports asynchronous functions, allowing you to integrate and manage operations that require waiting for external processes or data retrieval without interrupting the user's interaction with the form.
