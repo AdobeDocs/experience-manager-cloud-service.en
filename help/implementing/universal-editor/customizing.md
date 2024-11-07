@@ -35,7 +35,7 @@ The **Publish** button can therefore be suppressed entirely in an app by adding 
 
 ### Filtering Components {#filtering-components}
 
-When using the the Universal Editor, you can restrict the allowed components per container component. To do this, you must introduce an additional script tag, which points to the filter definition.
+When using the Universal Editor, you can restrict the allowed components per container component. To do this, you must introduce an additional script tag, which points to the filter definition.
 
 ```html
 <script type="application/vnd.adobe.aue.filter+json" src="/static/filter-definition.json"></script>
