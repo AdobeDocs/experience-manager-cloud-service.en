@@ -101,7 +101,7 @@ az role assignment create --assignee $servicePrincipalId --role "Key Vault Reade
 az role assignment create --assignee $servicePrincipalId --role "Key Vault Crypto User" --scope $keyVaultId
 ```
 
-## Create an Encryption Key {#create-an-ecryption-key} {#create-an-encryption-key}
+## Create an Encryption Key {#create-an-ecryption-key}
 
 Finally, you can create an encryption key in your key vault. Please note that you will need the **Key Vault Crypto Officer** role to complete this step. If the logged in user does not have this role, contact your system administrator to have this role granted to you or ask someone who already has that role to complete this step for you. 
 
