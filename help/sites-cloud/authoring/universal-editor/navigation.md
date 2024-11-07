@@ -48,7 +48,7 @@ Once the app is instrumented to work with the Universal Editor, the Universal Ed
 
 1. Sign into the Universal Editor. You need an Adobe ID to sign in and [have access to the Universal Editor.](/help/implementing/universal-editor/getting-started.md#request-access)
 
-1. After you are signed in, enter the URL of the page you want to edit in the [location bar.](#location-bar) so you can start editing content such as [text content](#text-mode) or [media content.](#media-mode)
+1. After you are signed in, enter the URL of the page you want to edit in the [location bar.](#location-bar) so you can start editing content such as text content or media content.
 
 ## Understand The UI {#ui}
 
@@ -274,7 +274,7 @@ If you select a container component either in the content tree or in the editor,
 
 ![Add icon](assets/ue-add-component-icon.png)
 
-Tapping or clicking the add button opens a drop-down menu of components that are available to [add to the selected container.](#adding-components)
+Tapping or clicking the add button opens a drop-down menu of components that are available to [add to the selected container.](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)
 
 ![Add context menu](assets/add-context-menu.png)
 
@@ -282,13 +282,21 @@ Tapping or clicking the add button opens a drop-down menu of components that are
 >
 >Use the hot key `a` to add a component to a selected container component.
 
+##### Duplicate {#duplicate}
+
+If you select a component within a container component either in the content tree or in the editor, the duplicate option appears on the properties rail.
+
+![Duplicate icon](assets/duplicate.png)
+
+Tapping or clicking the duplicate button [duplicates the selected component.](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components)
+
 ##### Delete {#delete}
 
 If you select a component within a container component either in the content tree or in the editor, the delete option appears on the properties rail.
 
 ![Delete icon](assets/ue-delete-component-icon.png)
 
-Tapping or clicking the delete button [deletes the component.](#deleting-components)
+Tapping or clicking the delete button [deletes the component.](/help/sites-cloud/authoring/universal-editor/authoring.md#deleting-components)
 
 >[!TIP]
 >
