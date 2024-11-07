@@ -4,8 +4,8 @@ description: Learn about the Adobe Experience Manager Home page.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-hide: yes
-hidefromtoc: yes
+hide: no
+hidefromtoc: no
 
 ---
 # About Adobe Experience Manager Home {#aem-home}
