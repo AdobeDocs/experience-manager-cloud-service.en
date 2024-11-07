@@ -29,7 +29,7 @@ These solutions are now moved to the main navigation under **Tools**. Additional
 
 ![AEM Home page](/help/implementing/cloud-manager/assets/aem-home-author-environments.png)
 
-Serving as the central hub for Adobe Experience Manager, the AEM Home page expands to feature additional widgets and actions tailored to each user role. Fully customizable, the page lets you choose the optimal layout for their screen. Widgets can be filtered so that only selected ones appear on the main page, ensuring a personalized experience.
+Serving as the central hub for Adobe Experience Manager, the AEM Home page expands to feature additional widgets and actions tailored to each user role. Fully customizable, the page lets you choose the optimal layout for your screen. Widgets can be filtered so that only selected ones appear on the main page, ensuring a personalized experience.
 
 ![AEM Home page](/help/implementing/cloud-manager/assets/aem-home-custom.png)
 
