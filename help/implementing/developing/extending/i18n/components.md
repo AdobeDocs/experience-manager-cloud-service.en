@@ -5,6 +5,7 @@ topic-tags: components
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
+exl-id: 0276b310-b9a9-44b6-b295-06c51ef17208
 ---
 # Internationalizing Components{#internationalizing-components}
 

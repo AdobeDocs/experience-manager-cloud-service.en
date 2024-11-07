@@ -50,8 +50,11 @@ The 2024.11.0 feature activation will provide the full feature set for this main
 * SITES-25456: Events: When moving a page, a page-deleted event is generated besides the page-moved event.
 * SITES-25658: Events: The tier and sourceUrl are not populated in the page content state events.
 * SITES-6497: Launches: Create page in launch not working.
+* SITES-25938: Launches: Unexpected deletion post Translation project.
 * SITES-25393: Edge Delivery with Universal Editor: Text nodes lost when rendering formatted richtext with single paragraph.
 * SITES-24643: Edge Delivery with Universal Editor: OpenGraph and twitter metadata attributes not working in page metadata model. 
+* SITES-25401: Experience Fragments: Slow XF reference update 
+
 
 ### Known Issues {#known-issues-18459}
 
