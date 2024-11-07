@@ -3,6 +3,7 @@ title: AEM Assets Collaborator Users
 description: Learn how to manage AEM Assets Collaborator users and their privileges.
 feature: Asset Management
 role: User, Admin
+exl-id: b0be28b8-821c-46a0-9437-2b2fccee95ee
 ---
 # AEM Assets Collaborator Users {#assets-collaborator-users}
 

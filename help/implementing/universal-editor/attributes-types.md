@@ -27,7 +27,7 @@ In order for an app to be editable by the Universal Editor, it must be properly 
 |`data-aue-type`|[Type of the editable item](#item-types) (for example, text, image, and reference)|
 |`data-aue-filter`|Defines which references can be used|
 |`data-aue-label`|Defines a custom label for a selectable item which is displayed in the editor <br>In case `data-aue-model` is set, the label is retrieved by way of the model|
-|`data-aue-model`|Defines a model which is used for form-based editing in the properties rail|
+|`data-aue-model`|Defines a model which is used for form-based editing in the properties panel|
 |`data-aue-behavior`|Defines the [behavior of an instrumentation](#behaviors), for example, stand alone text or image can also mimic a component to make it moveable or deletable|
 
 ## Item Types {#item-types}
@@ -38,7 +38,7 @@ In order for an app to be editable by the Universal Editor, it must be properly 
 |`richtext`|Text is editable with full rich text capabilities. RTE is shown in the right panel|Optional|Required|n/a|Optional|n/a|Optional|
 |`media`|The editable is an asset, for example, image or video|Optional|Required|Optional<br>list of image or video filter criteria which is passed on to the asset selector|Optional|n/a|Optional|
 |`container`|The editable behaves as container for components aka Paragraph System.|Depends <br>see below|Depends <br>see below|Optional<br>a list of allowed components|Optional|n/a|n/a|
-|`component`|The editable is a component. It doesn't add additional functionality. It is required to indicate movable/deletable parts of the DOM and for opening the properties rail and its fields|Required|n/a|n/a|Optional|Optional|n/a|
+|`component`|The editable is a component. It doesn't add additional functionality. It is required to indicate movable/deletable parts of the DOM and for opening the properties panel and its fields|Required|n/a|n/a|Optional|Optional|n/a|
 |`reference`|The editable is a reference, for example, Content Fragment, Experience Fragment or Product|Depends <br>see below|Depends <br>see below|Optional<br>list of Content Fragment, Product, or Experience Fragment filter criteria which is passed on to the reference selector|Optional|Optional|n/a|
 
 Depending on the use case `data-aue-prop` or `data-aue-resource` may or may not be required. For example:
