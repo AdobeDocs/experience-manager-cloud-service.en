@@ -127,6 +127,16 @@ The component is inserted into the container and can be edited in the editor.
 >
 >Use the hot key `a` to add a component to the selected container.
 
+### Duplicating Components in Containers {#duplicating-components}
+
+1. Select a component in a container using the [content tree](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) or the editor.
+1. Then select the **Duplicate** icon in the properties rail.
+
+   ![Selecting a component to add to a container](assets/ue-duplicate-component.png)
+1. The component is duplicated and inserted below the selected component.
+
+The component is inserted into the container and can be edited in the editor.
+
 ### Deleting Components from Containers {#deleting-components}
 
 1. Select a container component in the [content tree](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) or in the editor.
