@@ -1,0 +1,163 @@
+---
+title: Customer Managed Keys for AEM as a Cloud Service
+description: Learn how to manage encryption keys for AEM as a Cloud Service
+feature: Security
+role: Admin
+---
+
+# Customer Managed Keys Setup for AEM as a Cloud Service {#cusomer-managed-keys-for-aem-as-a-cloud-service}
+
+AEM allows you to bring your own encryption keys for encrypting data at rest. This guide provides steps for setting up a customer managed key (CMK) in Azure Key Vault for AEM as a Cloud Service.
+
+You will also be guided through the following steps for creating and configuring the required infrastructure:
+
+1. Set up your environment
+1. Obtain an application ID from Adobe
+1. Create a new resource group
+1. Create a key kault
+1. Grant Adobe access to the key kault
+1. Create an encryption key
+1. Approve Private Endpoint Connections.
+
+You will need to share the key vault URL, the encryption key name and information about the key vault with Adobe.
+
+## Setup your Environment {#setup-your-environment}
+
+The Azure Command Line Interface (CLI) is the only requirement for this guide. If you do not already have the Azure CLI installed, follow the official installation instructions [here](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli).
+
+Before proceeding with the rest of this guide, please login your CLI with `az login`. 
+
+>[!NOTE]
+>
+>While this guide uses the Azure CLI, it is possible to perform the same operations via the Azure console. If you prefer to use the Azure console, use the commands below as a reference.
+
+## Obtain an Application ID from Adobe {#obtain-an-application-id-from-adobe}
+
+Adobe will provide you with an Entra application ID that you will need in the rest of this guide. If you don't already have an application ID, contact Adobe to obtain one.
+
+## Create a New Resource Group {#create-a-new-resource-group}
+
+Create a new resource group in a location of your choice.
+
+```powershell
+# Choose a location and a name for the resource group.
+$location="<AZURE LOCATION>"
+$resourceGroup="<RESOURCE GROUP>"
+
+# Create the resource group.
+az group create --location $location --resource-group $resourceGroup
+```
+
+If you already have a resource group, feel free to use it instead. In the rest of this guide, the location of the resource group and its name are identified with `$location` and `$resourceGroup`, respectively.
+
+## Create a Key Vault {#create-a-key-vault}
+
+You will need to create a key vault to contain your encryption key. The key vault must have purge protection enabled. Purge protection is necessary for encrypting data at rest from other Azure services. Public network access is disabled and all the communication will go through Private Endpoints that Adobe will configure for you at a later step.
+
+>[!IMPORTANT]
+>The creation of the Key Vault with Public Network Access disabled enforces that all Key Vault related operations, such as Key Creation or Rotation have to be executed from an environment that has network access to the KeyVault - for example, a VM that can access the KeyVault.
+
+```powershell
+# Reuse this information from the previous step.
+$location="<AZURE LOCATION>"
+$resourceGroup="<RESOURCE GROUP>"
+
+# Choose a name for the key vault.
+$keyVaultName="<KEY VAULT NAME>"
+
+# Create the key vault.
+az keyvault create `
+  --location $location `
+  --resource-group $resourceGroup `
+  --name $keyVaultName `
+  --default-action=Deny `
+  --enable-purge-protection `
+  --enable-rbac-authorization `
+  --public-network-access Disabled
+```
+
+## Grant Adobe Access to the Key Vault {#grant-adone-access-to-the-key-vault}
+
+In this step you will allow Adobe to access your key vault via an Entra application. The ID of the Entra application should have been already provided by Adobe.
+
+First, you must create a service principal attached to the Entra appplication and assign ot it the **Key Vault Reader** and **Key Vault Crypto User** roles. The roles are limited to the key vault created in this guide.
+
+```powershell
+# Reuse this information from the previous steps.
+$resourceGroup="<RESOURCE GROUP>"
+$keyVaultName="<KEY VAULT NAME>"
+
+# The application ID is provided by Adobe.
+$appId="<APPLICATION ID>"
+
+# Retrieve the ID of the key vault.
+$keyVaultId=(az keyvault show --resource-group $resourceGroup --name $keyVaultName --query id --output tsv)
+
+# Create a new service principal.
+$servicePrincipalId=(az ad sp create --id $appId --query id --out tsv)
+
+# Assign the roles to the service principal.
+az role assignment create --assignee $servicePrincipalId --role "Key Vault Reader" --scope $keyVaultId
+az role assignment create --assignee $servicePrincipalId --role "Key Vault Crypto User" --scope $keyVaultId
+```
+
+## Create an Encryption Key {#create-an-ecryption-key} {#create-an-encryption-key}
+
+Finally, you can create an encryption key in your key vault. Please note that you will need the **Key Vault Crypto Officer** role to complete this step. If the logged in user does not have this role, contact your system administrator to have this role granted to you or ask someone who already has that role to complete this step for you. 
+
+Network access to the key vault is required to create the encryption key. First verify that you can access the key vault and proceed with creating the key:
+
+```powershell
+# Reuse this information from the previous steps.
+$keyVaultName="<KEY VAULT NAME>"
+
+# Chose a name for your key.
+$keyName="<KEY NAME>"
+
+# Create the key.
+az keyvault key create --vault-name $keyVaultName --name $keyName
+```
+
+## Share the Key Vault Information {#share-the-key-vault-information}
+
+At this point, you are all set. You just need to share some required information with Adobe, who will take care of configuring your environment for you.
+
+```powershell
+# Reuse this information from the previous steps.
+$resourceGroup="<RESOURCE GROUP>"
+$keyVaultName="<KEY VAULT NAME>"
+
+# Retrieve the URL of your key vault.
+$keyVaultUri=(az keyvault show --name $keyVaultName `
+    --resource-group $resourceGroup `
+    --query properties.vaultUri `
+    --output tsv)
+
+# In addition we would need the tenantId and the subscriptionId in order to setup the private endpoints.
+$tenantId=(az keyvault show --name $keyVaultName `
+    --resource-group $resourceGroup `
+    --query properties.tenantId `
+    --output tsv)
+$subscriptionId="<Subscription ID>"
+```
+
+
+## Next steps {#next-steps}
+
+Contact Adobe and share:
+
+* The URL of your key vault. You retrieved it in this step and saved it in the `$keyVaultUri` variable.
+* The name of your encryption key. You have created the key in a previous step and saved it in the `$keyName` variable.
+* The `$resourceGroup`, `$subscriptionId` and `$tenantId` which are required to setup private endpoints.
+
+### Private Link Approvals {#private-link-approvals}
+
+>[!TIP]
+>You can also consult the [Azure Documentation](https://learn.microsoft.com/en-us/azure/key-vault/general/private-link-service?tabs=portal#how-to-manage-a-private-endpoint-connection-to-key-vault-using-the-azure-portal) on how to approve a Private Endpoint Connection.
+
+Afterwards, an Adobe Engineer assigned to you will contact you to confirm the creation of the private endpoints, and will request you to approve a set of required Connection Requests. The requests can be approved either using the Azure Portal UI, where you can go to **KeyVault > Settings > Networking > Private Endpoint Connections** and approve the requests with names similar to these: 
+
+`mongodb-atlas-<REGION>-<NUMBER>`, `storage-account-private-endpoint` and `backup-storage-account-private-endpoint`. 
+
+Notify the Adobe Engineer once this process is complete and the Private Endpoints show up as **Approved**.
+
