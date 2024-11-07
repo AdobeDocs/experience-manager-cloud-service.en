@@ -69,9 +69,9 @@ Setting the `components` attribute in a filter definition to `null` allows all c
 ]
 ```
 
-### Conditionally Show and Hide Components in Properties Rail {#conditionally-hide}
+### Conditionally Show and Hide Components in Properties Panel {#conditionally-hide}
 
-Although a component or components may generally be available to your authors, there may be certain situations where it does not make sense. In such cases, you can hide components in the properties rail by adding a `condition` attribute to the [fields of the component model.](/help/implementing/universal-editor/field-types.md#fields)
+Although a component or components may generally be available to your authors, there may be certain situations where it does not make sense. In such cases, you can hide components in the properties panel by adding a `condition` attribute to the [fields of the component model.](/help/implementing/universal-editor/field-types.md#fields)
 
 Conditions can be defined using [JsonLogic schema.](https://jsonlogic.com/) If the condition is true, then the field will be displayed. If the condition is false, then the field will be hidden.
 
@@ -126,7 +126,7 @@ To do so, simply include the desired preview URL in a meta tag of the instrument
 
 As an Adobe Experience Cloud service, the Universal Editor's UI can be extended using the App Builder and Experience Manager.
 
-UI extensions are JavaScript applications built with Adobe App Builder that can be embedded in UI applications that run under Adobe Experience Cloud unified shell, such as the Universal Editor. You can add your own buttons and actions to the header menu and properties rail as well as create your own events for the Universal Editor.
+UI extensions are JavaScript applications built with Adobe App Builder that can be embedded in UI applications that run under Adobe Experience Cloud unified shell, such as the Universal Editor. You can add your own buttons and actions to the header menu and properties panel as well as create your own events for the Universal Editor.
 
 If you would like to explore these possibilities, please see the following resources:
 
