@@ -5,6 +5,7 @@ topic-tags: Adaptive Forms, author
 keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
 feature: Adaptive Forms, Core Components
 role: User, Developer
+exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
 ---
 # Use Google reCAPTCHA in an AEM Adaptive Form based on Core Components {#using-reCAPTCHA-in-adaptive-forms}
 

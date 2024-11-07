@@ -3,8 +3,8 @@ title: AEM REST OpenAPI for Content Fragment Delivery
 description: Learn about the AEM REST OpenAPI for Content Fragment Delivery
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
+exl-id: 838f7781-33e4-4cb1-8a58-8099863f7704
 ---
-
 # AEM REST OpenAPI for Content Fragment Delivery {#aem-rest-openapi-for-content-fragment-delivery}
 
 >[!IMPORTANT]
@@ -49,4 +49,4 @@ Responses are then cached, based on predefined caching headers (cannot be config
 * Stale content can be served, by error, for up to 1 day 
   * `stale-on-error`=`86400`
 
-AEM also comes with active CDN cache invalidation. This means that whenever content is updated, or published, the corresponding JSON OpenAPI responses are automatically invalidated, via a soft purge request to Fastly. This allows you to see changes reflected in the JSON output, before the actual CDN cache age (`s-maxage`) is reached. 
+AEM also comes with active CDN cache invalidation. This means that whenever content is updated, or published, the corresponding JSON OpenAPI responses are automatically invalidated, via a soft purge request to Fastly. This allows you to see changes reflected in the JSON output, before the actual CDN cache age (`s-maxage`) is reached.

@@ -3,6 +3,7 @@ title: Assets Prime
 description: Learn more about key aspects of Assets Prime, such as, key benefits, user types and their privileges.
 feature: Asset Management
 role: User, Admin
+exl-id: 012f94c5-b1c3-4799-8eaf-af68d06c036f
 ---
 # [!DNL Assets] as a Cloud Service Prime  {#assets-prime}
 

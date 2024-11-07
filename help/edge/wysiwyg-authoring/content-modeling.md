@@ -106,7 +106,7 @@ For each block, the developer:
 * Must define the block name, which will be rendered in the block's table header.
   * The block name is used to fetch the right style and script to decorate the block.
 * Can define a [model ID.](/help/implementing/universal-editor/field-types.md#model-structure)
-  * The model ID is a reference to the component's model, which defines the fields available to the author in the properties rail.
+  * The model ID is a reference to the component's model, which defines the fields available to the author in the properties panel.
 * Can define a [filter ID.](/help/implementing/universal-editor/customizing.md#filtering-components)
   * The filter ID is a reference to the component's filter, which allows to change the authoring behavior, for example by limiting which children can be added to the block or section, or which RTE features are enabled.
 
