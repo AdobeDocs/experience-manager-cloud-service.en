@@ -1,67 +1,45 @@
 ---
-title: Release Notes for Cloud Manager 2024.10.0 in Adobe Experience Manager as a Cloud Service
-description: Learn about the release notes for Cloud Manager 2024.10.0 in AEM as a Cloud Service.
+title: Release Notes for Cloud Manager 2024.11.0 in Adobe Experience Manager as a Cloud Service
+description: Learn about the release of Cloud Manager 2024.11.0 in AEM as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 ---
-# Release notes for Cloud Manager 2024.10.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Release notes for Cloud Manager 2024.11.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-This page documents the release notes for Cloud Manager release 2024.10.0 in AEM as a Cloud Service.
+Learn about the release of Cloud Manager 2024.11.0 in AEM (Adobe Experience Manager) as a Cloud Service.
 
 >[!NOTE]
 >
 >See the [current release notes for Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-## Release date {#release-date}
+## Release dates {#release-date}
 
-The release date for Cloud Manager release 2024.10.0 in AEM as a Cloud Service is October 3, 2024. 
+The release date for Cloud Manager 2024.11.0 in AEM as a Cloud Service is November 7, 2024. 
 
-The next release is planned for November 14, 2024.
+The next planned release is December 5, 2024.
 
 ## What's new {#what-is-new}
 
-* <!-- BOTH CS & AMS --> The AEM Archetype version used in Cloud Manager is now updated to version 26. See [https://github.com/adobe/aem-project-archetype/releases](https://github.com/adobe/aem-project-archetype/releases) 
+* Experience the latest in Edge Delivery Services innovation with AEM Cloud Service&ndash;now available to explore in your Sandbox program. [Learn more](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md#auto-creation) <!-- (CMGR-62319) -->
+* The Domain Settings page in AEM Cloud Manager now includes a search feature that lets you quickly locate domains by name. You can enter keywords in the search field to filter and display matching domains, making it easier to manage multiple domains efficiently. Additionally, the page offers status filters, such as **Verified** and **Not Verified**, to refine the search results further. <!-- (CMGR-62615) -->
 
-<!-- (CMGR-59817) -->
-
-* <!-- CS ONLY --> When adding a new custom domain, the previous verification method involved a lengthy DNS validation process. Adobe has simplified this process for customers. Now, you only need to provide a valid SSL certificate (EV or OV), which serves as proof of ownership. There is no longer a need to update TXT records in the DNS.
-
-    >[!NOTE]
-    >
-    >This feature is only applicable to EV and OV certificates managed by the customer. DV certificates managed by Adobe still require the presence of a CNAME record.
-
-    See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
-
-    ![Verify domain for a customer managed EV/OV certificate](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
-
-* <!-- CS ONLY --> When you add or edit network infrastructure, the values in the IP address and network mask fields are validated according to the following rules:
-
-    * The address space must not overlap with the addresses defined in the connection address space.
-    * DNS addresses must either belong to the network mask defined in the connection address space or be public.
-
-    ![Add network infrastructure dialog box](/help/implementing/cloud-manager/release-notes/assets/network-infrastructure-add.png)
-
-* <!-- CS ONLY --> Changes are being made to the format of environment deployment logs for indexing, install mutable content, and transform jobs.
-
-    >[!NOTE]
-    >
-    >This change is planned for rollout in a phased manner with an expected completion date in December 2024.
-
-    ![Deploy to production card](/help/implementing/cloud-manager/release-notes/assets/deploy-to-production-card.png)
-
-    The format of the log is going to change from a simple entry seen in the following:
-
-    ![Log file showing simple entries](/help/implementing/cloud-manager/release-notes/assets/log-file-simple-entry.png)
-
-    To a JSON entry seen in the following:
-
-    ![Log file showing json entries](/help/implementing/cloud-manager/release-notes/assets/log-file-json-entry.png)
-
+![Search field in Domain Settings](/help/implementing/cloud-manager/assets/domain-settings-search.png)
 
 ## Early adoption program {#early-adoption}
 
 Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features.
+
+### AEM Home {#aem-home}
+
+AEM Home is a new, centralized starting point for managing your content, assets, and sites within Adobe Experience Manager. Tailored to provide a personalized experience, AEM Home helps users seamlessly navigate the AEM ecosystem based on their roles and goals. It is designed to be your guide, offering key insights and recommended actions to achieve desired outcomes efficiently. By presenting a clear, persona-driven roadmap, AEM Home ensures that users quickly find what they need to accomplish their objectives, supporting a more streamlined and effective experience across all AEM capabilities.
+
+Available to early adopter customers, AEM Home offers a first look at an enhanced experience that optimizes workflows, prioritizes objectives, and drives results. By opting in, you have the opportunity to shape the development of AEM Home, providing feedback that influences its evolution to serve the AEM community best.
+
+If you are interested in testing this new capability and sharing your feedback, send an email to [Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com) from your email address associated with your Adobe ID. Be sure to include the following information:
+
+* The role that best fits your profile: Content author, Developer, Business owner, Admin, or Other (provide a description).
+* Your primary AEM access surface: AEM Sites, AEM Assets, AEM Forms, Cloud Manager, or Other (provide a description).
 
 ### Bring Your Own Git - now with support for GitLab and Bitbucket {#gitlab-bitbucket}
 
@@ -77,12 +55,17 @@ See [Add external repositories in Cloud Manager](/help/implementing/cloud-manage
 >
 >Currently, the out-of-the-box pull request code quality checks are exclusive to GitHub-hosted repositories, but an update to extend this functionality to other Git vendors is in the works.
 
-If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure.
+If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure. -->
 
 
-<!-- ## Bug fixes
+## Bug fixes
+
+* A recent update addressed an issue in SonarQube where hardcoded passwords were not detected in certain cases. The fix now includes an expanded pattern check, and aligns with default detection standards in SonarQube. <!-- CMGR-62682 -->
+* When trying to update an SSL certificate in Cloud Manager, an unknown error would appear after clicking **[!UICONTROL Update]** in the **[!UICONTROL View & Update SSL Certificate]** dialog box. <!-- CMGR-62848 -->
+* In Cloud Manager, SSL certificate updates would fail with the error "The new certificate does not match the existing domains," even when the domains were identical but had differences in letter case (upper- or lower-case). The update now recognizes domains as case-insensitive, aligning with RFC standards. <!-- CMGR-62844 -->
+* In Cloud Manager, IP Allowlist bindings remained stuck in a running state because foreign key links to domain configurations were missing. The fix now ensures IP Allowlist bindings link correctly to associated domain configurations. <!-- CMGR-62838 -->
+* Cloud Manager validates the OCSP (Online Certificate Status Protocol) status of an SSL certificate. Adobe recommends that you also validate the integrity of your certificate locally using a tool such as `openssl verify -untrusted intermediate.pem certificate.pem` before installing it through Cloud Manager. For more details, see the [SSL certificate requirements documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates#requirements). <!-- CMGR-62341  -->
 
 
 
-
-## Known issues {#known-issues} -->
+<!-- ## Known issues {#known-issues} -->
