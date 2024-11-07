@@ -270,6 +270,22 @@ The following image represents the AEM groups reflecting the AEM Sites Content M
 >* To learn more about AEM product profiles, see [Assigning AEM Product Profiles](/help/journey-onboarding/assign-profiles-aem.md).
 >* For more information on the onboarding process, see [onboarding journey](/help/journey-onboarding/overview.md).
 
+### Adding Product Profiles for Existing Environments {#adding-product-profiles-for-existing-environments}
+
+Environments created before early November 2024 may be missing the Org-Level product instance described in sections above, as well as certain product profiles. Existing product profiles will also be missing the service toggles. It is recommended to update those product profiles, which is a prerequisite for accessing some future APIs. 
+
+If one or more environments in a program needs its product profiles updated, Cloud Manager will show the notice below. Note that an environment must be on the latest AEM version before its product profiles can be updated.
+
+![Modernize Product Profiles](/help/onboarding/assets/modernize-product-profiles.png)
+
+Clicking the **Add Product Profile** button will open a menuthat will allow you to choose between **All Environments** or **Individual Environments**. 
+
+![Replace Environments](/help/onboarding/assets/choose-env-r.png)
+
+Selecting **Individual Environments** will navigate the user to a Environments listing page, where an **Add Product Profiles** action can be selected.
+
+![Individual Environments](/help/onboarding/assets/individual-environments.png)
+
 ## Cloud Manager Product Profiles {#cloud-manager-product-profiles}
 
 Cloud Manager has pre-configured product profiles which can be thought of as role-based permissions. Your system administrator is responsible for setting up your Cloud Manager team by assigning them to these product profiles.
