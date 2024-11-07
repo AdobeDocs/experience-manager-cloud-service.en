@@ -32,9 +32,9 @@ Be a part of Cloud Manager's early adoption program and have a chance to test up
 
 ### AEM Home {#aem-home}
 
-AEM Home is a new, centralized starting point for managing your content, assets, and sites within Adobe Experience Manager. Tailored to provide a personalized experience, AEM Home helps users seamlessly navigate the AEM ecosystem based on their roles and goals. It is designed to be your guide, offering key insights and recommended actions to achieve desired outcomes efficiently. By presenting a clear, persona-driven roadmap, AEM Home ensures that users quickly find what they need to accomplish their objectives, supporting a more streamlined and effective experience across all AEM capabilities.
+AEM Home introduces a centralized starting point for managing content, assets, and sites within Adobe Experience Manager. Designed to deliver a personalized experience, AEM Home lets you navigate the AEM ecosystem seamlessly according to your roles and goals. Acting as a guide, it provides key insights and recommended actions to help you achieve your objectives efficiently. With a clear, persona-driven layout, AEM Home ensures quick access to essential tools, supporting a streamlined and effective experience across all AEM features.
 
-Available to early adopter customers, AEM Home offers a first look at an enhanced experience that optimizes workflows, prioritizes objectives, and drives results. By opting in, you have the opportunity to shape the development of AEM Home, providing feedback that influences its evolution to serve the AEM community best.
+Available to early adopters, AEM Home offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence AEM Home's development by providing feedback that helps shape its future and enhances its value for the entire AEM community.
 
 If you are interested in testing this new capability and sharing your feedback, send an email to [Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com) from your email address associated with your Adobe ID. Be sure to include the following information:
 
