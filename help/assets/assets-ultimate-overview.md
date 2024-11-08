@@ -3,6 +3,7 @@ title: Assets Ultimate
 description: Learn more about key aspects of Assets Ultimate, such as, key benefits, user types and their privileges.
 feature: Asset Management
 role: User, Admin
+exl-id: 3ae96cd2-e0ac-43a5-a0bf-bebb1a028b10
 ---
 # [!DNL Assets] as a Cloud Service Ultimate {#assets-ultimate-user-types-privileges}
 

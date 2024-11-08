@@ -1,8 +1,9 @@
 ---
 title: Pipeline-free URL Redirects
-description: Learn how to declare 301 or 302 redirects without access to Git or Cloud Manager pipelines. 
+description: Learn how to declare 301 or 302 redirects without access to Git or Cloud Manager pipelines.
 feature: Dispatcher
 role: Admin
+exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
 ---
 # Pipeline-free URL Redirects {#pipeline-free-redirects}
 
