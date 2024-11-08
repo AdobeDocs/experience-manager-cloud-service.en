@@ -1,5 +1,5 @@
 ---
-title: Using Templates to Create Pages that are Editable with the Universal Editor
+title: Templates to Create Pages that are Editable with the Universal Editor
 description: Learn how to create templates that can be used to create pages that are editable with the Universal Editor, saving time and ensuring consistent branding.
 solution: Experience Manager Sites
 feature: Authoring
@@ -7,7 +7,7 @@ role: User
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
 ---
 
-# Using Templates to Create Pages that are Editable with the Universal Editor {#page-templates}
+# Templates to Create Pages that are Editable with the Universal Editor {#page-templates}
 
 Learn how to create templates that can be used to create pages that are editable with the Universal Editor, saving time and ensuring consistent branding.
 

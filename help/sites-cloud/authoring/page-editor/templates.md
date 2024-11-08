@@ -1,14 +1,23 @@
 ---
-title: Creating Page Templates
-description: The template defines the structure of the resultant page and with the template editor, creating and maintaining templates is no longer a developer-only task
+title: Templates to Create Pages that are Editable with the Page Editor
+description: Page templates define the structure of resulting pages and can be created and maintained with the Templates Console.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
 ---
-# Creating Page Templates {#creating-page-templates}
 
-When creating a page, you must select a template, which is used as the basis for creating the new page. The template defines the structure of the resultant page, any initial content, and the components that can be used.
+# Templates to Create Pages that are Editable with the Page Editor {#creating-page-templates}
+
+Page templates define the structure of resulting pages and can be created and maintained with the Templates Console.
+
+## Overview {#overview}
+
+When creating a page, you must select a template, which is used as the basis for creating the new page. The template defines the structure of the resultant page, any initial content, and the components that can be used when editing the page in the Page Editor.
+
+>[!NOTE]
+>
+>[Templates are also available for creating pages that are editable with the Universal Editor.](/help/sites-cloud/authoring/universal-editor/templates.md)
 
 With the **Template Editor**, creating and maintaining templates is no longer a developer-only task. A type of power-user, who is called a **template author**, can be involved too. Developers are still required to setup the environment, create client libraries, and create the components to be used, but once these basics are in place the **template author** has the flexibility to create and configure templates without a development project.
 
