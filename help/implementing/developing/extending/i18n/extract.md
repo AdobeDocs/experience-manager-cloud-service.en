@@ -4,6 +4,7 @@ description: Use xgettext-maven-plugin to extract strings from your source code 
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
+exl-id: ce4adc98-dd3d-4b8a-9ea5-57db3074240e
 ---
 # Extracting Strings for Translating{#extracting-strings-for-translating}
 

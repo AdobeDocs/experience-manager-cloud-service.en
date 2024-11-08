@@ -4,9 +4,8 @@ description: Form supports scope objects in custom functions which is passed as 
 keywords: scope objects in custom functions, global objects, field objects.
 feature: Adaptive Forms, Core Components
 role: User, Developer
-
+exl-id: 248c75a5-6335-41d2-aa0a-28a20a710f88
 ---
-
 # Scope object in custom functions
 
 In Adaptive Forms, a scope object is passed as the last argument to functions when a rule is executed. It can be used to read form/field properties and modify the form from within the functions. The scope object contains a read-only proxy object for the form, the triggered event, and the target field. Form and field properties can be accessed using the scope object by appending `$`, for example, `scope.form.$id` and `scope.field.$id`, respectively.

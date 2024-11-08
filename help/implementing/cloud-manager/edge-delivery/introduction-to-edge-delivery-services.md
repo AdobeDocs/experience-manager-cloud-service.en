@@ -72,7 +72,8 @@ The **Edge Delivery to-do list** is an onboarding task checklist meant to guide 
 | 3 | Add Edge Delivery Site | See [Add an Edge Delivery site](#eds-add-site). |
 | 4 | Add domain | See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 | 5 | Add SSL certificate | See [Add SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
-| 6 | Configure the CDN of your Edge Delivery site | See [Add a CDN configuration](#add-cdn). |
+| 6 | Configure the CDN of your Edge Delivery site | See [Add a CDN configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md). |
+| 7 | Go Live | Complete the last step in Go Live. |
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
