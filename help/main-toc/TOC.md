@@ -694,7 +694,6 @@ user-guide-title: AEM as a Cloud Service
       + [Viewing and understanding Adaptive Forms Analytics Report](/help/forms/view-understand-aem-forms-analytics-reports.md)
       + [Submit an Adaptive Form to Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
       + [Integrate an Adaptive Form with Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
-      + [Integrate an Adaptive Form with Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
       + [Embed an Adaptive Forms in an AEM Sites page](/help/forms/embed-adaptive-form-aem-sites.md)
       + [Embed adaptive form based on Core Components to an external web page](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
       + [Embed adaptive form based on Foundation Components to an external web page](/help/forms/embed-adaptive-form-external-web-page.md)
@@ -758,7 +757,7 @@ user-guide-title: AEM as a Cloud Service
           +  [List forms on the Sites page using the Search & Lister component](/help/forms/list-forms-on-sites-page.md)
           +  [Save and list forms as drafts on Sites page using the Drafts & Submissions component](/help/forms/save-core-component-based-form-as-draft.md)
           +  [Add form links to Sites page using the Link component](/help/forms/add-form-link-to-aem-sites-page.md)
-        +  Integrate Adaptive Forms with Adobe Marketo Engage 
+        +  Integrate Adaptive Forms with Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage} 
             +  [Integrate Adobe Marketo Engage with AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
             + [Configure Adobe Marketo Engage data source for Adaptive Forms](/help/forms/use-marketo-engage-data-source-in-form.md)
              + [Configure the submit action to Marketo Engage for forms](/help/forms/submit-adaptive-form-to-marketo-engage.md)
