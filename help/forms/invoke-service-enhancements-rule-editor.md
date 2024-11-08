@@ -54,7 +54,7 @@ The Visual rule editor’s **Invoke Service** allows you to perform several usef
 The table below describes a few scenarios in which the **Invoke Service** can be used:
 
 | **Use Case**                                             | **Description**                                                                                          |
-|----------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+|----------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
 | **Populate dropdown options using output of Invoke Service**  | Populates dropdown options dynamically based on data retrieved from the Invoke Service output. [Click here](#use-case-1), to see the implementation.         |
 | **Set repeatable panel using output of Invoke Service**  | Configures a repeatable panel by using data from the Invoke Service output, allowing for dynamic panels. [Click here](#use-case-2), to see the implementation.   |
 | **Set panel using output of Invoke Service**             | Sets the content or visibility of a panel using specific values from the Invoke Service output. [Click here](#use-case-3), to see the implementation.          |
