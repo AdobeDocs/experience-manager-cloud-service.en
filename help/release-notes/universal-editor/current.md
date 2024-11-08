@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2024.08.13 Release Notes
-description: These are the release notes for the 2024.08.13 release of the Universal Editor.
+title: Universal Editor 2024.11.05 Release Notes
+description: These are the release notes for the 2024.11.05 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2024.08.13 Release Notes {#release-notes}
+# Universal Editor 2024.11.05 Release Notes {#release-notes}
 
-These are the release notes for the 13 August 2024 release of the Universal Editor.
+These are the release notes for the 5 November 2024 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -16,18 +16,11 @@ These are the release notes for the 13 August 2024 release of the Universal Edit
 
 ## What’s New {#what-is-new}
 
-* **Custom Data Types**: Tailor the editor to your unique data needs with the ability to [create custom fields within the properties panel.](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/item-types-renderers/)
-  * Whether you’re developing a custom product picker for commerce use-cases or populating a drop-down list with values from your backends, this feature gives you the control you need over the data that authors use to compose content.
-* **Cross-Container Drag &amp; Drop**: Enjoy greater flexibility in layout composition with the ability to [move components across different containers via drag and drop](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) within the [Content Tree panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
-* **Optimized GitHub Integration**: Caching for GitHub responses have been introduced, significantly speeding up the retrieval of tags and the `universal-editor-cors-library`, resulting in a faster and smoother user experience.
-* **Configurable IMS Token Validation**: To increase flexibility in token management, [IMS token validation is now optional.](/help/implementing/universal-editor/local-dev.md#setting-up-service)
-  * This configuration option allows you to disable validation as needed, simplifying your cloud gateway setups.
-* **Splunk Integration**: Splunk logging has been integrated into the [Universal Editor Service for local development,](/help/implementing/universal-editor/local-dev.md#setting-up-service) enhancing monitoring and diagnostics.
-  * This integration ensures efficient log tracking, smoother operations, and quicker troubleshooting.
+* **Rollback Pipeline for Universal Editor Service:** A rollback pipeline enables Adobe's on-call teams to quickly revert the Universal Editor Service to any specific branch if needed, ensuring high availability through rapid recovery in case of issues.
+* **Optimized API Calls for Content Operations:** The Universal Editor Service now uses JSON APIs instead of HTML APIs for create, copy, and move operations via the SlingPostServlet, streamlining the parsing of the responses.
 
-## Bug Fixes {#bug-fixes}
+## Early Adoption Program for 6.5 Support {#early-adoption}
 
-* **Enhanced Publishing Feedback**: If publication fails due to insufficient permissions, feedback to the user during publishing has been improved to display a clear warning instead of simply indicating a failure.
-* **Improved URL Handling**: Issues with incorrect URL encoding/decoding that were causing publishing failures were fixed.
-* **Accurate Data Handling**: An issue where float numbers were incorrectly stored as integers has been addressed, ensuring precise data handling across your content.
-* **Security and Stability**: Security vulnerabilities in the Docker images have been fixed and test coverage for critical components like the Component Picker and Breadcrumbs have been implemented, leading to a more secure, stable, and reliable editor experience.
+The Universal Editor is now available for headless use cases when using AEM 6.5 as part of an early adopter program.
+
+If you are interested in testing this new feature and sharing your feedback, please send an email to your Adobe Customer Success Manager from the email address associated with your Adobe ID. 

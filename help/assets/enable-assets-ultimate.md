@@ -3,6 +3,7 @@ title: Enable Assets Ultimate
 description: Learn how to enable Assets Ultimate for new and existing customers.
 feature: Asset Management
 role: User, Admin
+exl-id: 45cd8ccd-e5cf-42cd-aa7f-4ae59d0587f7
 ---
 # Enable [!DNL Assets] as a Cloud Service Ultimate {#enable-assets-cloud-service-ultimate}
 
