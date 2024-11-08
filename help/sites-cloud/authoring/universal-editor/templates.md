@@ -1,64 +1,59 @@
 ---
-title: Using Page Templates with the Universal Editor
-description: Learn how to create and use page templates with the Universal Editor.
+title: Using Templates to Create Pages that are Editable with the Universal Editor
+description: Learn how to create templates that can be used to create pages that are editable with the Universal Editor, saving time and ensuring consistent branding.
 solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
 ---
-# Using Page Templates with the Universal Editor {#page-templates}
 
-Learn how to create and use page templates with the Universal Editor.
+# Using Templates to Create Pages that are Editable with the Universal Editor {#page-templates}
+
+Learn how to create templates that can be used to create pages that are editable with the Universal Editor, saving time and ensuring consistent branding.
 
 >[!NOTE]
 >
 >This feature will be available in an upcoming release of AEM as a Cloud Service.
 
+>[!NOTE]
+>
+>[Templates are also available for creating pages that are editable with the Page Editor.](/help/sites-cloud/authoring/page-editor/templates.md)
+
 ## What are Page Templates? {#what-are}
 
 Branding and marketing guidelines often dictate particular layouts for your content pages. It is also often a practical reality that many of your pages will share the same structure and layout. To save your content authors time, pages can be created from templates.
 
-Page templates serve as master copies of your page layouts. When you create a page from a template, the content of the template is copied to the new page, helping to predefine the layout and initial content of the page for the content author, saving them time.
+Page templates serve as master copies of your page layouts. When you create a page from a template, the initial content of the template is copied to the new page, helping to predefine the basic layout and content of the page for the content author, saving them time.
 
-## Creating a Page Template {#creating}
+## Enabling Page Templates {#enabling-templates}
 
-You can create a page template by creating a new page or by using an existing page to serve as the template. In both cases, you use the [**Sites** Console.](/help/sites-cloud/authoring/sites-console/introduction.md)
+In order to use templates to creating pages that are editable with the Universal Editor, you must enable page templates for your site.
 
-### Creating a New Template {#create-new}
+1. Use the **Sites** console and [select the root of your site.](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources)
+1. Once the site root is selected, tap or click the [**Properties** icon](/help/sites-cloud/authoring/sites-console/page-properties.md) in the toolbar.
+1. On the **Advanced** tab of the properties dialog under the **Template Settings** section, tap or click the **Add** button.
+1. In the new, empty field that appears under **Allowed Templates**, add the path `/conf/site/settings/wcm/templates/.*`.
+1. Tap or click **Save &amp; Close**.
 
-1. Use the **Sites** console to navigate to the location where you wish to create the new page that will serve as your template and [create the page as you would any other.](/help/sites-cloud/authoring/sites-console/creating-pages.md)
+You can now use templates to create pages for your site. This task must only be done once, but must be done for every site where you wish to use templates when creating pages that are editable with the Universal Editor.
 
-1. Once the page is created and you return to the console, select the page and then tap or click the [**Properties** icon](/help/sites-cloud/authoring/sites-console/page-properties.md) in the toolbar.
+## Creating a New Template {#create-new}
 
-1. On the **Advanced** tab of the properties dialog under the **Template Settings** section, select the toggle **Use as Template**.
+You can either [create a new page](/help/sites-cloud/authoring/sites-console/creating-pages.md) to serve as a template or use an existing page as the base of a template.
 
-1. In the **Template Name** field, provide a descriptive name.
+1. Use the **Sites** console to [navigate to the new or existing page](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources) that you wish to use as a template and tap or click it to select it.
 
-   * This is the name that will show creating new content pages and you select a template on which to base the new page.
+1. Once the page is selected, tap or click the [**Properties** icon](/help/sites-cloud/authoring/sites-console/page-properties.md) in the toolbar.
+
+1. On the **Advanced** tab of the properties dialog under the **Template Settings** section, select the toggle **Use Page as Template**.
 
 1. Tap or click **Save &amp; Close**.
 
 Your new page can now be used as a template when creating new pages.
 
-### Using an Existing Page as a Template {#existing-page}
-
-1. Use the **Sites** console to [navigate to the location of the page](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources) you would like to use as a template.
-
-1. Select the page and then tap or click the [**Properties** icon](/help/sites-cloud/authoring/sites-console/page-properties.md) in the toolbar.
-
-1. On the **Advanced** tab of the properties dialog under the **Template Settings** section, select the toggle **Use as Template**.
-
-1. In the **Template Name** field, provide a descriptive name.
-
-   * This is the name that will show creating new content pages and you select a template on which to base the new page.
-
-1. Tap or click **Save &amp; Close**.
-
-The selected page can now be used as a template when creating new pages.
-
 ## Creating a Page from a Template {#creating-from-template}
 
-Creating a page from a template for use with the Universal Editor is the same workflow as when [creating the page as you would any other.](/help/sites-cloud/authoring/sites-console/creating-pages.md)
+Creating a page from a template that is editable with the Universal Editor is the same workflow as [creating any other page.](/help/sites-cloud/authoring/sites-console/creating-pages.md)
 
 1. Use the **Sites** console to [navigate to the location](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources) where you wish to create the new page.
 
@@ -68,10 +63,16 @@ Creating a page from a template for use with the Universal Editor is the same wo
 
 Complete the wizard as you would for any other page and you have created your new page based on the selected template.
 
-## Universal Editor and the Page Editor {#page-vs-universal}
+## Pages and Templates {#pages-vs-templates}
 
-Page templates for the Universal Editor solve the same problem as [page templates for the AEM Page Editor:](/help/sites-cloud/authoring/page-editor/templates.md) to be able to reuse content to create pages quickly based on a set of pre-defined layouts. However they solve the problem in very different ways. If you are a user of the Page Editor, please be aware of these differences.
+Page templates only define the initial content of pages. Pages are then entirely editable with the Universal Editor.
 
-* Pages created from pages templates for the Universal Editor are independent copies of the template.
-* Therefore if the template changes, the resulting pages do not change.
+* Pages created from pages templates are independent copies of the template.
+* If the template changes, the existing pages based on that template do not change.
 * The content author can modify and update the content of the resulting page as necessary with no restrictions from the template.
+
+## Editable Templates {#editable-templates}
+
+Pages created with the [Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md) can also be based on templates. Templates used to create pages for the Universal Editor and the Page Editor both leverage AEM's [editable templates.](/help/implementing/developing/components/templates.md)
+
+Templates used to create pages editable with the Page Editor make use of all features of editable templates. Templates usd to create pages editable with the Universal Editor only use the initial content feature.
