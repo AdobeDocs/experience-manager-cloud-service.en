@@ -282,7 +282,7 @@ Clicking the **Add Product Profiles** button will open a menu that displays opti
 
 ![Replace Environments](/help/onboarding/assets/choose-env-r.png)
 
-Click **All Environments** to add the new product profiles to all environments in the program. Alternatively, click **Individual Environments** to add the new product profiles to selected environments; this navigates the user to an Environments listing page, where an **Add Product Profiles** action can be selected from the More Options icon.
+Click **All Environments** to add the new product profiles to all environments in the program. Alternatively, click **Individual Environments** to add the new product profiles to selected environments; this navigates the user to an Environments listing page, where an **Add Product Profiles** action can be selected from the **More Options** icon.
 
 ![Individual Environments](/help/onboarding/assets/individual-environments.png)
             
