@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 keywords: invoke service enhancements in VRE, populating drop-down options using invoke service, Set repeatable panel using output of invoke service, Set panel using output of invoke service, Use output parameter of invoke service to validate other field.
 ---
 
-# Using Invoke Service in the Visual Rule Editor
+# Using Invoke Service in the Visual Rule Editor for forms based on Core Components
 
 Visual Rule Editor in an Adaptive Form supports the **Invoke Service** operation. This operation allows you to select a service from the list of Form Data Models (FDM) configured for your instance. You can map objects to input and output parameters using the event payload option for the specified FDM service. Additionally, the Visual rule editor allows you to create rules for success and failure handlers for **Invoke Service** operations based on its output responses. Success handlers manage the successful execution of the **Invoke Service** operation, while failure handlers address any errors that occur.
 
@@ -22,6 +22,10 @@ Here are few advantages of using Invoke Service operation in the rule editor of 
 * **Enhanced user interaction**: Using the **Invoke Service** in the rule editor enables real-time validation within your forms, providing a better user experience. It also ensures that data is accurately validated on the server side, reducing errors and improving form reliability.
 
 ## Invoke Service handlers for success and failure responses
+
+>[!NOTE]
+>
+> You can use the **Invoke Service** success and failure handlers only for forms based on core components. Forms based on foundation components do not support **Invoke Service** success and failure handlers.
 
 Visual rule editor allows you to create rules for success and failure handlers for **Invoke Service** operations based on its output responses. Below image depicts the **Invoke Service** in Visual rule editor for an Adaptive Form:
 
