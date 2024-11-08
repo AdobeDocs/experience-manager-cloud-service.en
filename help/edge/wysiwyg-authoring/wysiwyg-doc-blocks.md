@@ -3,8 +3,8 @@ title: Blocks for WYSIWYG and Document-Based Authoring
 description: Learn how you can create blocks that can be used for both WYSIWYG authoring and document-based authoring.
 feature: Edge Delivery Services
 role: User
+exl-id: f039c70a-e1a0-4fcc-8f42-dfa0f8bb3764
 ---
-
 # Blocks for WYSIWYG and Document-Based Authoring {#wysiwyg-and-doc-blocks}
 
 Learn how you can create blocks that can be used for both WYSIWYG authoring and document-based authoring.

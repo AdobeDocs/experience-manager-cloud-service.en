@@ -1,10 +1,9 @@
 ---
 title: Manage Edge Delivery Sites in Cloud Manager
 description: Learn how to add a CDN configuration to an Edge Delivery site or delete an Edge Delivery site.
-
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-
+exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
 ---
 # Manage Edge Delivery site in Cloud Manager {#manage-edge-delivery-sites}
 
@@ -52,7 +51,7 @@ If you delete an Edge Delivery Services site, any associated CDN configurations 
 
         ![Add Edge Delivery Site from the Edge Delivery tab](/help/implementing/cloud-manager/assets/cm-eds-delete1.png)
 
-    * In the upper-left corner of the page, click ![Show or hide side navigation](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg ) to reveal the left side menu. Under the **Services** heading, click ![Web page for Edge Delivery sites](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**. 
+    * In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg ) to reveal the left side menu. Under the **Services** heading, click ![Web page for Edge Delivery sites](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**. 
     In the Edge Delivery site table, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) at the end of a row whose site you want to remove. Click ![Delete Edge Delivery site](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **Delete**, then click **Delete** again to confirm the site's removal.
 
         ![Add Edge Delivery Site from the Edge Delivery Sites button](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
@@ -60,5 +59,3 @@ If you delete an Edge Delivery Services site, any associated CDN configurations 
 ## Log a support ticket {#eds-support-ticket}
 
 {{support-ticket}}
-
-

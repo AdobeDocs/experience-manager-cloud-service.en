@@ -4,8 +4,8 @@ description: Learn about how to use Cloud Manager to edit and update, or delete 
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
+exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
 ---
-
 # Manage CDN configurations {#manage-cdn-configurations}
 
 Learn about how to use Cloud Manager to edit or delete CDN configurations for an Edge Delivery site or a Cloud Manager environment.
@@ -111,5 +111,3 @@ The steps for deleting a CDN configuration from the **Environments** page are ne
 1. In the **Delete CDN Configuration** dialog box, click **Delete**.
 
 1. Click **Delete** again to confirm the removal of the site's CDN.
-
-

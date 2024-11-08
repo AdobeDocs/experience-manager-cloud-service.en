@@ -35,7 +35,7 @@ Editing content is simple and intuitive. As you mouse over content in the editor
 >
 >By default, tapping or clicking on content selects it for editing. If you want to navigate your content by following links, switch to [preview mode.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
-Depending on the content you select, you may have different in-place editing options and you may additional information and options for the content in the [properties rail.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Depending on the content you select, you may have different in-place editing options and you may additional information and options for the content in the [properties panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ### Editing Plain Text {#edit-plain-text}
 
@@ -45,11 +45,11 @@ You can edit the text in place by double-clicking or double-tapping the componen
 
 The thin blue outline turns to a heavy blue outline to indicate select and a cursor appears. Make your changes and then press enter/return or select outside of the text box to save your changes.
 
-When you select to select the text component, its details are shown in the [properties rail.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) You can also edit the text in the rail.
+When you select to select the text component, its details are shown in the [properties panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) You can also edit the text in the panel.
 
-![Editing text in the properties rail](assets/ue-editing-text-component-rail.png)
+![Editing text in the properties panel](assets/ue-editing-text-component-rail.png)
 
-Also, details on your text are available in the properties rail. Changes are automatically saved once focus leaves the edited field in the properties rail.
+Also, details on your text are available in the properties panel. Changes are automatically saved once focus leaves the edited field in the properties panel.
 
 ### Editing Rich Text {#edit-rich-text}
 
@@ -67,9 +67,9 @@ The context menu opens above the rich text block and offers basic formatting opt
 
 Changes are automatically saved once focus leaves the edited field.
 
-#### The Properties Rail {#properties-rail}
+#### The Properties Panel {#properties-rail}
 
-The [properties rail](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) shows an item for the selected text. Tap the entry to open a dialog presenting a larger canvas to edit the text.
+The [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) shows an item for the selected text. Tap the entry to open a dialog presenting a larger canvas to edit the text.
 
 ![Rich text editing dialog](assets/rich-text-canvas.png)
 
@@ -77,30 +77,30 @@ Tap or click **Cancel** or **Done** to discard or save the changes, respectively
 
 ### Editing Media {#edit-media}
 
-You can view its details in the [properties rail.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+You can view its details in the [properties panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![Editing media](assets/ue-edit-media.png)
 
-1. Tap or click the preview of the selected image in the properties rail.
+1. Tap or click the preview of the selected image in the properties panel.
 1. The [asset selector](/help/assets/overview-asset-selector.md#using-asset-selector) window opens to allow you to select an asset.
 1. Select to select a new asset.
-1. Select **Select** to return to the properties rail where the asset was replaced.
+1. Select **Select** to return to the properties panel where the asset was replaced.
 
 Changes are saved to your content automatically.
 
 ### Editing Content Fragments {#edit-content-fragment}
 
-If you select a [Content Fragment,](/help/sites-cloud/administering/content-fragments/overview.md) you can edit its details in the [properties rail.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+If you select a [Content Fragment,](/help/sites-cloud/administering/content-fragments/overview.md) you can edit its details in the [properties panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![Editing a Content Fragment](assets/ue-edit-cf.png)
 
-The fields defined in the content model of the selected Content Fragment are displayed and editable in the properties rail.
+The fields defined in the content model of the selected Content Fragment are displayed and editable in the properties panel.
 
-If you select a field that is related to a Content Fragment, the Content Fragment loads in the components rail and the field is automatically scrolled to.
+If you select a field that is related to a Content Fragment, the Content Fragment loads in the components panel and the field is automatically scrolled to.
 
-Changes are automatically saved once focus leaves the edited field in the properties rail.
+Changes are automatically saved once focus leaves the edited field in the properties panel.
 
-If you want to edit your Content Fragment in the [Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md) instead, tap or click the [**Open in CF Editor** button](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) in the properties rail.
+If you want to edit your Content Fragment in the [Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md) instead, tap or click the [**Open in CF Editor** button](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) in the properties panel.
 
 >[!TIP]
 >
@@ -117,7 +117,7 @@ Depending on the needs of your workflow, you may want to edit the Content Fragme
 ### Adding Components to Containers {#adding-components}
 
 1. Select a container component in the [content tree](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) or in the editor.
-1. Then select the add icon in the properties rail.
+1. Then select the add icon in the properties panel.
 
    ![Selecting a component to add to a container](assets/ue-add-component.png)
 
@@ -127,12 +127,22 @@ The component is inserted into the container and can be edited in the editor.
 >
 >Use the hot key `a` to add a component to the selected container.
 
+### Duplicating Components in Containers {#duplicating-components}
+
+1. Select a component in a container using the [content tree](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) or the editor.
+1. Then select the **Duplicate** icon in the properties panel.
+
+   ![Selecting a component to add to a container](assets/ue-duplicate-component.png)
+1. The component is duplicated and inserted below the selected component.
+
+The component is inserted into the container and can be edited in the editor.
+
 ### Deleting Components from Containers {#deleting-components}
 
 1. Select a container component in the [content tree](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) or in the editor.
 1. Select the chevron icon of the container to expand its contents in the content tree.
 1. Then, in the content tree, select a component within the container.
-1. Select the delete icon in the properties rail.
+1. Select the delete icon in the properties panel.
 
    ![Deleting a component](assets/ue-delete-component.png)
 
@@ -153,7 +163,11 @@ The selected component deleted.
    
 1. The dragged component turns gray in the content tree, while your insertion point is represented by a blue line. Release the component to place it in its new location.
 
-The components are reordered in both the content tree and in the editor
+The components are reordered in both the content tree and in the editor.
+
+>[!NOTE]
+>
+>Components can not be moved between containers if a different [component filter](/help/implementing/universal-editor/customizing.md#filtering-components) is set between the source and target containers.
 
 ## Previewing Content {#previewing-content}
 
