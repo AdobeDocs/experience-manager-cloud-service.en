@@ -20,13 +20,13 @@ Add your UI Extensibility component to the **Behold a Title!** panel on Assets V
 
 ### Access from Asset Details page
 
-1. Navigate to Assets View. 
+1. [Navigate to Assets View](#1) 
 1. Open the Asset details page and click ![Behold a ToolTip](/help/assets/assets/behold-tooltip.svg)(Behold a ToolTip!)  to display the **Behold a Title!** panel. Add your extension to this panel.
 ![extensibility panel](/help/assets/assets/extensibility-panel.png)
 
 ### Access from Collections Details page:
 
-1. Navigate to Assets View. 
+1. [Navigate to Assets View](#1) 
 1. Open the Collections details page and click ![Behold a ToolTip](/help/assets/assets/behold-tooltip.svg)(Behold a ToolTip!)  to display the **Behold a Title!** panel. Add your extension to this panel.
 ![extensibility panel at folder level](/help/assets/assets/extensibility-panel-folder-level.png)
 
@@ -44,7 +44,7 @@ Add your UI Extensibility component to the **Behold a Title!** panel on Assets V
 
 ## Adding UI Extensibility Component on Assets View UI{#Adding-UI-Extensibility-Component-on-Assets-View}
 
-1. Navigate to Assets View. You can access the Assets view in the following ways:
+1. <a id="1"></a> Navigate to Assets View. You can access the Assets view in the following ways:
 ![access-assets-view-ui](/help/assets/assets/access-assets-view.jpg)
 1. See [Common Concepts in Creating Extensions](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/commons/) to understand the fundamentals required to develop an extension for the AEM Assets View.
 1. Add custom side panels to the interface. The host application(Assets View) manages these panels to handle UI interactions such as toggling and deep linking. Extensions use the `aem/assets/details/1` extension point to integrate custom panels that specifies properties, such as panel ID, title, and content URL. Developers register custom panels with the `getPanels()` method and build routes to display custom content. For detailed implementation, including API references and code examples, see [Details View](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/details-view/).
