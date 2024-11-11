@@ -27,7 +27,19 @@ Page templates serve as master copies of your page layouts. When you create a pa
 
 ## Enabling Page Templates {#enabling-templates}
 
-In order to use templates to creating pages that are editable with the Universal Editor, you must enable page templates for your site.
+In order to use templates to creating pages that are editable with the Universal Editor, you must enable the option.
+
+First enable editable templates for your site's configuration.
+
+1. Use the **Sites** console and [select the root of your site.](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources)
+1. Once the site root is selected, tap or click the [**Properties** icon](/help/sites-cloud/authoring/sites-console/page-properties.md) in the toolbar.
+1. On the **Advanced** tab of the properties dialog take note of the value in the **Cloud Configuration** field.
+1. From the main navigation, choose **Tools** -&gt; **General** -&gt; **Configuration Browser**.
+1. In the **[Configuration Browser,](/help/implementing/developing/introduction/configurations.md)** select the configuration you noted in the previous step and tap or click **Properties** in the toolbar.
+1. In the **Configuration Properties** window, check the option **Editable Templates**.
+1. Tap or click **Save &amp; Close**.
+
+Once the configuration is enabled, you must allow templates for your site.
 
 1. Use the **Sites** console and [select the root of your site.](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources)
 1. Once the site root is selected, tap or click the [**Properties** icon](/help/sites-cloud/authoring/sites-console/page-properties.md) in the toolbar.
@@ -35,7 +47,7 @@ In order to use templates to creating pages that are editable with the Universal
 1. In the new, empty field that appears under **Allowed Templates**, add the path `/conf/site/settings/wcm/templates/.*`.
 1. Tap or click **Save &amp; Close**.
 
-You can now use templates to create pages for your site. This task must only be done once, but must be done for every site where you wish to use templates when creating pages that are editable with the Universal Editor.
+You can now use templates to create pages for your site. This task must only be done once every site/configuration where you wish to use templates when creating pages that are editable with the Universal Editor.
 
 ## Creating a New Template {#create-new}
 
