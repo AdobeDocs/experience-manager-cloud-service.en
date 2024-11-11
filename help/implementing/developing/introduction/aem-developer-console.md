@@ -3,8 +3,8 @@ title: AEM as a Cloud Service Developer Console (Beta)
 description: Learn about CRX/DE Lite and AEM as a Cloud Service Developer Console
 feature: Developing
 role: Admin, Architect, Developer
+exl-id: 4b0fc3e9-b7c4-4c95-bd97-8b24e4d5cb3d
 ---
-
 # AEM as a Cloud Service Developer Console (Beta) {#developer-console}
 
 >[!NOTE]
