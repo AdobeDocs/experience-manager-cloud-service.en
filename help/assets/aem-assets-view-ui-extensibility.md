@@ -16,18 +16,18 @@ Extensions communicate with AEM Assets View through defined APIs, enabling seaml
 
 ## Where to add the UI Extensibility Component on Assets View? {#ui-extensibility-panel-assets-view}
 
-Add your UI Extensibility component to the **Behold a Title!** panel on Assets View UI. Access this panel from Asset Details page and Collections Details Page.
+Add your UI Extensibility component to the **Behold a Title!** panel on Assets View UI. Access this panel from Asset Details page and Collections Details Page. 
 
 ### Access from Asset Details page
 
 1. [Navigate to Assets View](#1) 
-1. Open the Asset details page and click ![Behold a ToolTip](/help/assets/assets/behold-tooltip.svg)(Behold a ToolTip!)  to display the **Behold a Title!** panel. Add your extension to this panel.
-![extensibility panel](/help/assets/assets/extensibility-panel.png)
+1. Open the Asset details page and click ![Behold a ToolTip](/help/assets/assets/behold-tooltip.svg)(Behold a ToolTip!)  to display the **Behold a Title!** panel. Add your extension to this panel. See [Adding UI Extensibility Component on Assets View UI](#Adding-UI-Extensibility-Component-on-Assets-View) for information on how to add the component.
+![extensibility panel](/help/assets/assets/extensibility-panel.png) 
 
 ### Access from Collections Details page:
 
 1. [Navigate to Assets View](#1) 
-1. Open the Collections details page and click ![Behold a ToolTip](/help/assets/assets/behold-tooltip.svg)(Behold a ToolTip!)  to display the **Behold a Title!** panel. Add your extension to this panel.
+1. Open the Collections details page and click ![Behold a ToolTip](/help/assets/assets/behold-tooltip.svg)(Behold a ToolTip!)  to display the **Behold a Title!** panel. Add your extension to this panel. See [Adding UI Extensibility Component on Assets View UI](#Adding-UI-Extensibility-Component-on-Assets-View) for information on how to add the component.
 ![extensibility panel at folder level](/help/assets/assets/extensibility-panel-folder-level.png)
 
 >[!NOTE]
