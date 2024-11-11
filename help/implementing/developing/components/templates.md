@@ -11,7 +11,7 @@ Learn about how editable templates are used when creating a page, defining its i
 
 ## Overview {#overview}
 
-When creating a page you need to select a template. The page template is used as the base for the new page. The template defines the structure of the resultant page, any initial content and the components that can be used (design properties).
+When creating a page you need to select a template. The page template is used as the base for the new page. The template can define the structure of the resultant page, any initial content, and the components that can be used (design properties).
 
 * Editable templates allow authors to create and use templates.
 * Editable templates can be used to create pages that are editable with both the

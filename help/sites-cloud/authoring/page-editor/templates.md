@@ -34,7 +34,7 @@ The **Template Editor** allows template authors to:
 
 This document explains how a **template author** can use the template console and editor to create and manage editable templates.
 
-For detailed information about how editable templates work at a technical level, see the developer document [Page Templates](/help/implementing/developing/components/templates.md) for more information.
+For detailed information about how editable templates work at a technical level, see the developer document [Editable Templates](/help/implementing/developing/components/templates.md) for more information.
 
 >[!NOTE]
 >
