@@ -47,7 +47,7 @@ Existing Sites [inheritance](/help/sites-cloud/authoring/universal-editor/inheri
 In addition, the following page management features are now supported:
 
 * [AEM Tags](/help/sites-cloud/authoring/sites-console/tags.md) can be exported as a [taxonomy](/help/edge/wysiwyg-authoring/taxonomy.md) to Edge Delivery Services.
-* [Templates](/help/edge/wysiwyg-authoring/templates.md) for Edge Delivery Services are coming soon!
+* [Templates](/help/sites-cloud/authoring/universal-editor/templates.md) for Edge Delivery Services are coming soon!
 
 ### Early Adopter Program {#sites-early-adopter}
 
