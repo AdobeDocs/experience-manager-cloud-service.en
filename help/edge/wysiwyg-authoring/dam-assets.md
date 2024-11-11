@@ -3,8 +3,8 @@ title: Publishing Pages with DAM Assets Using Edge Delivery Services
 description: Learn what settings are required to ensure your DAM assets for your pages are published seamlessly to Edge Delivery Services.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
+exl-id: 160f0474-a72d-4183-a2b2-2f8ba177605d
 ---
-
 # Publishing Pages with DAM Assets Using Edge Delivery Services {#dam-assets}
 
 Learn what settings are required to ensure your DAM assets for your pages are published seamlessly to Edge Delivery Services.
