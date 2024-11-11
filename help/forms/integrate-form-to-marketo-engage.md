@@ -8,7 +8,7 @@ Role: User, Developer
 
 # Integrate Marketo Engage with AEM Forms
 
-Integrating AEM Forms with [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home) enables users to leverage the capabilities of Marketo Engage to create business logic from captured data and automate workflows, including smart campaigns and email automation. The configured form can send captured data, attachments, and Document Of Record to Marketo Engage for processing.
+Integrating AEM Forms with [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home) enables users to leverage the capabilities of Marketo Engage to create business logic from captured data and automate workflows, including smart campaigns and email automation. The configured form can send captured data to Marketo Engage for processing.
 
 ## Advantages of integrating Marketo Engage with forms
 
