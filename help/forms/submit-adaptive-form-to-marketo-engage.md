@@ -16,12 +16,11 @@ Various out-of-the-box submit actions for handling form submissions are availabl
 
 * Ensure that the Adaptive Form is configured with the Marketo Engage data source to submit data to Marketo Engage upon form submission. However, you can change the submit action to alternatives, for example, **Submit to OneDrive** or **Submit to SharePoint**, even if the form is configured with the Marketo Engage data schema.
 
-## Prerequisites to configure the submit action to Marketo Engage for form
+## Prerequisite to configure the submit action to Marketo Engage for form
 
-Below are the prerequisites to configure the submit action to Marketo Engage:
+Prerequisite to configure the submit action to Marketo Engage:
 
 * Configure the [Marketo Engage data source for Adaptive Form](/help/forms/use-marketo-engage-data-source-in-form.md) and bind the form elements with Marketo Engage fields.
-* Ensure that Core Components are enabled for your environment. For detailed instructions on how to enable Core Components for your environment, [click here](/help/forms/enable-adaptive-forms-core-components.md).
 
 ## How to configure submit action to Marketo Engage for forms?
 

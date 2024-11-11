@@ -18,15 +18,13 @@ Consideration while configuring Marketo Engage data source for forms are:
 
 * It is not possible to connect Edge Delivery Services Forms with Marketo Engage.
 
-## Prerequisites to use Marketo Engage data source for forms
+## Prerequisite to use Marketo Engage data source for forms
 
-Below are the prerequisites to use Marketo Engage data source with forms:
+Prerequisite to use Marketo Engage data source with forms:
 
 * Create the [cloud service configuration to integrate Marketo Engage with forms](/help/forms/integrate-form-to-marketo-engage.md). 
-* Ensure that Core Components are enabled for your environment. For detailed instructions on how to enable Core Components for your environment, [click here](/help/forms/enable-adaptive-forms-core-components.md).
 
-
-## How to configure new Adaptive Form for Marketo Engage data source?
+## How to configure Adaptive Form for Marketo Engage data source?
 
 To configure an Adaptive Form with the Marketo Engage data source, perform the following steps:
 1. Log in to your [!DNL Experience Manager Forms] Author instance. 
