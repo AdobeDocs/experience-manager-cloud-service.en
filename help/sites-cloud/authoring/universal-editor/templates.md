@@ -44,7 +44,7 @@ Once the configuration is enabled, you must allow templates for your site.
 1. Use the **Sites** console and [select the root of your site.](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources)
 1. Once the site root is selected, tap or click the [**Properties** icon](/help/sites-cloud/authoring/sites-console/page-properties.md) in the toolbar.
 1. On the **Advanced** tab of the properties dialog under the **Template Settings** section, tap or click the **Add** button.
-1. In the new, empty field that appears under **Allowed Templates**, add the path `/conf/site/settings/wcm/templates/.*`.
+1. In the new, empty field that appears under **Allowed Templates**, add the path `/conf/<site>/settings/wcm/templates/.*`.
 1. Tap or click **Save &amp; Close**.
 
 You can now use templates to create pages for your site. This task must only be done once every site/configuration where you wish to use templates when creating pages that are editable with the Universal Editor.

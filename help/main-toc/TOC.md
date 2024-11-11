@@ -448,6 +448,7 @@ user-guide-title: AEM as a Cloud Service
         + [Translation Best Practices](/help/sites-cloud/administering/translation/best-practices.md)
     + [Administering Tags](/help/sites-cloud/administering/tags.md)
     + [Administering Workflows](/help/sites-cloud/administering/workflows-administering.md)
+    + [Templates Console](/help/sites-cloud/authoring/page-editor/templates.md)
   + Integrating with AEM as a Cloud Service {#integrations}
     + [Integrating with Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
     + [Integrating with Adobe Analytics Automated Setup](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
