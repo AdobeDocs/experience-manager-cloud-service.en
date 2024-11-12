@@ -30,7 +30,7 @@ This document outlines each of these building blocks and how they exchange data.
 ### Editors {#editors}
 
 * **Universal Editor** - The Universal Editor uses an instrumented DOM to allow in-place editing of content. See [Attributes and Types](attributes-types.md) for details regarding the necessary metadata. See the document [Getting Started with the Universal Editor in AEM](getting-started.md) for an example of the instrumentation in AEM.
-* **Properties Rail** - Some properties of components can be not edited in-context, for example, rotation time of a carousel or which accordion tab shall be always opened or closed. To allow for editing of such component information, a form-based editor is provided in the side rail of the editor.
+* **Properties Panel** - Some properties of components can be not edited in-context, for example, rotation time of a carousel or which accordion tab shall be always opened or closed. To allow for editing of such component information, a form-based editor is provided in the side panel of the editor.
 
 ### Remote App {#remote-app}
 
@@ -45,7 +45,7 @@ The Universal Editor strives for a minimal SDK, thus the instrumentation is the 
 
 ### Persistence Layer {#persistence-layer}
 
-* **Content Fragment Model** - To support the rail for editing Content Fragment properties, the Content Fragment Editor, and form-based editors, models per component and content fragment are required.
+* **Content Fragment Model** - To support the panel for editing Content Fragment properties, the Content Fragment Editor, and form-based editors, models per component and content fragment are required.
 * **Content** - Content can be stored anywhere, such as in AEM, Magento, and so on. 
 
 ![Persistence layer](assets/persistence-layer.png)
