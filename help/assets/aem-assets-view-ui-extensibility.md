@@ -22,7 +22,7 @@ Access the Assets view in the following ways:
 
 ## Where the added UI Extensibility Component displays on Assets View UI? {#ui-extensibility-panel-assets-view}
 
-Within Assets View, navigate to the Details page of an asset, folder or a collection. This Details page has a dedicated panel that displays the added UI Extensibility.
+Within Assets View, navigate to the Details page of an asset, folder or a collection. This Details page has a dedicated panel that displays the added UI Extension.
 ![my workspace](/help/assets/assets/my-workspace-assets-view3.png)
 
 >[!NOTE]
