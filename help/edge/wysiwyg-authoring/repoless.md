@@ -1,13 +1,13 @@
 ---
 title: Reusing Code Across Sites
-description: If you have many similar sites that mostly look and behave the same, but have different content, learn how you can share code across multiple sites in a repo-less model.
+description: If you have many similar sites that mostly look and behave the same, but have different content, learn how you can share code across multiple sites in a repoless model.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 ---
 
 # Reusing Code Across Sites {#repoless}
 
-If you have many similar sites that mostly look and behave the same, but have different content, learn how you can share code across multiple sites in a repo-less model.
+If you have many similar sites that mostly look and behave the same, but have different content, learn how you can share code across multiple sites in a repoless model.
 
 ## One Codebase for Multiple Sites {#one-codebase}
 
@@ -24,7 +24,12 @@ If your project requires the repoless flexibility of code reuse across sites, yo
 To take advantage of this feature, make sure you have done the following.
 
 * Your site is already fully set up by following the document [Developer Getting Started Guide for WYSIWYG Authoring with Edge Delivery Services.](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
+* You are running AEM as a Cloud Service 2024.08 at a minimum.
+
+You will also need to ask Adobe to configure two items for you. Reach out to Adobe via your Teams channel or raise a support issue to make these requests.
+
 * The [aem.live configuration service](https://www.aem.live/docs/config-service-setup#prerequisites) is active for your environment and you are configured as an administrator.
+* The repoless feature must be enabled for your org by Adobe.
 
 ## Activate Repoless Feature {#activate}
 
@@ -42,28 +47,28 @@ These steps use the site `https://wknd.site` as an example. Substitute your own 
 
 You will first need an access token to use the configuration service and configure it for the repoless use case.
 
-1. Go to `https://admin.hlx.page/login` and login with the A Adobe identity provider.
-1. You will be forwarded back to `https://admin.hlx.page/profile`.
-1. In your browser's developer tools, retrieve the JSON web token cookie that the `admin.hlx.page` page sets.
+1. Go to `https://admin.hlx.page/login` and use the `login_adobe` link to login with the Adobe identity provider.
+1. You will be forwarded to `https://admin.hlx.page/profile`.
+1. Copy the value of the `x-auth-token` you can copy this either from:
+   * The JSON that the Adobe login service returns.
+   * From the JSON web token cookie that the `admin.hlx.page` page sets by using your browser's developer tools.
 
-The token is passed in the header as the following.
+Once you have your access token, it can be is passed in the header of cURL requests in the following format.
 
 ```text
 --header 'x-auth-token: id_token=<your-bearer-token>&idp_name=adobe'
 ```
 
-### Set Up Configuration Service {#config-service}
+### Configure Your Configuration Service {#config-service}
 
-As mentioned in the [prerequisites,](#prerequisites) the configuration service must be active for your environment. You can check your configuration service setup with this cURL command.
+As mentioned in the [prerequisites,](#prerequisites) the configuration service must be enabled for your environment. You can check your configuration service setup with this cURL command.
 
 ```text
 curl  --location 'https://admin.hlx.page/config/<your-github-org>.json' \
 --header 'x-auth-token: id_token=<your-token>&idp_name=adobe'
 ```
 
-<!--- Magic Happens. The wiki currently has hand-waving and ambiguous steps that happen here. Awaiting feedback. --->
-
-1. Set up the configuration service for your project using a call to the [`SiteConfig` method.](https://www.aem.live/docs/admin.html#tag/siteConfig)
+Reach out to Adobe via your project Slack channel or raise a support issue if your configuration service is not enabled. Once you have your token and verified that the configuration service is enabled, you can continue the configuration.
 
 1. Set up the content source and GitHub code source.
 
