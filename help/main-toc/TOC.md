@@ -356,7 +356,7 @@ user-guide-title: AEM as a Cloud Service
       + [Authoring Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
       + [Publishing Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
       + [Content Inheritance in the Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md)
-      + [Page Templates](/help/edge/wysiwyg-authoring/templates.md)
+      + [Page Templates](/help/sites-cloud/authoring/universal-editor/templates.md)
     + Fragments {#fragments}
       + [Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md)
       + [Experience Fragments](/help/sites-cloud/authoring/fragments/experience-fragments.md)
@@ -448,6 +448,7 @@ user-guide-title: AEM as a Cloud Service
         + [Translation Best Practices](/help/sites-cloud/administering/translation/best-practices.md)
     + [Administering Tags](/help/sites-cloud/administering/tags.md)
     + [Administering Workflows](/help/sites-cloud/administering/workflows-administering.md)
+    + [Templates Console](/help/sites-cloud/administering/templates-console.md)
   + Integrating with AEM as a Cloud Service {#integrations}
     + [Integrating with Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
     + [Integrating with Adobe Analytics Automated Setup](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
