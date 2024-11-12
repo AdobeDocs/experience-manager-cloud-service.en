@@ -1,7 +1,7 @@
 ---
 title: AEM Assets View UI Extensibility
 description: Learn about the UI Extensibility capability of AEM Assets View. AEM Assets View UI enables adding custom UI components to meet specific business needs.   
-feature: UI Extensibility
+feature: App Builder
 role: User, Developer
 ---
 # AEM Assets View UI Extensibility{#AEM-Assets-View-UI-Extensibility}
