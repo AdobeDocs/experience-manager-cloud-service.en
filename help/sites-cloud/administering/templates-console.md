@@ -4,8 +4,8 @@ description: Learn how the templates console serves as the central location to v
 solution: Experience Manager Sites
 feature: Administering
 role: User
+exl-id: d11d7176-dd35-4855-9dcd-dd40ff096510
 ---
-
 # The Templates Console {#templates-console}
 
 Learn how the templates console serves as the central location to view and manage your page templates.
