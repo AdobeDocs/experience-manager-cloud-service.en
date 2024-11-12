@@ -82,9 +82,11 @@ As you explore the Universal Editor and move forward implementing it in your own
 
 * No more than 25 AEM resources (Content Fragments, pages, Experience Fragments, Assets, etc.) should be references as instrumentation on a single page.
 * AEM as a Cloud Service is the only supported AEM backend.
+  * [Support for AEM 6.5 is available as part of an early adoption program.](/help/release-notes/universal-editor/current.md#early-adoption)
 * AEM as a Cloud Service release `2023.8.13099` or higher is required.
 * Content authors must have their own individual Experience Cloud accounts.
-* Chrome and Edge are the supported browsers
+* As part of AEM, the Universal Editor supports the same desktop browsers as AEM.
+  * Mobile versions of these browsers are not supported.
 
 {{ue-ip-allow-lists}}
 
