@@ -712,7 +712,7 @@ user-guide-title: AEM as a Cloud Service
       + [Design XML Schema for an Adaptive Form](/help/forms/adaptive-form-xml-schema-form-model.md)
       +  Integrate Adaptive Forms with Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage} 
             +  [Integrate Adobe Marketo Engage with AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
-            + [Configure new form to integrate with Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md) 
+            + [Configure new form to integrate with Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md) 
             + [Configure Adobe Marketo Engage data source for existing Adaptive Forms](/help/forms/use-marketo-engage-data-source-in-form.md)
             + [Configure the submit action to Marketo Engage for existing forms](/help/forms/submit-adaptive-form-to-marketo-engage.md)
   + Adaptive Forms {#adaptive-forms-authoring}
