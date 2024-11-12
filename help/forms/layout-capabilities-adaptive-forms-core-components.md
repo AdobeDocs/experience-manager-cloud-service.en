@@ -17,13 +17,13 @@ exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
 
 Adaptive Forms provides first-class components to layout and design the forms effectively. The layout controls how components are displayed in a form. Adaptive Forms support various layouts: panel, wizard, accordion, tabs on top/horizontal tabs, and tabs on left/vertical tabs.
 
-![Types of Layout](/help/forms/assets/generic-layout-hero-image.png){align="center"}
+<!-- ![Types of Layout](/help/forms/assets/generic-layout-hero-image.png){align="center"}-->
 
 ## Pre-requisite
 
 Before exploring the various capabilities of a layout, ensure that core components are enabled for your environment. For detailed instructions on how to enable core components for your environment, [click here](/help/forms/enable-adaptive-forms-core-components.md).
 
-##  Adaptive Forms layout types
+## Adaptive Forms layout types
 
 Adaptive Form based on Core Components supports the following types of layouts:
 * **Panel layout**
@@ -255,7 +255,6 @@ Similarly, you can hide titles for the other two panels also. Once done, you can
     ![Third Panel components](/help/forms/assets/panel-3-component.png)
 
 1. Click **[!UICONTROL Preview]** in the top-right corner of your authoring environment.
-
     ![Horizontal Layout](/help/forms/assets/horizontal-layout.gif)
 
 You can also [drag-and-drop the components](#extra-bytes) to add the form components to each panel. 

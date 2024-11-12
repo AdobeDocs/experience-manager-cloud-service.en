@@ -304,6 +304,50 @@ A typical Validate rule is structured as follows:
 
 ![Script-validation](assets/script-validation.png)
 
+#### [!UICONTROL Navigate among the panels]
+
+The **[!UICONTROL Navigate among the panels]** rule type allows you to shift focus among different panels in a form. For example, you can create an expression to move focus to the next panel. 
+
+A typical **Navigate among the panels** rule for shifting focus to the next panel is structured as follows:
+
+`Navigate among the panels`
+
+`Shift focus to the next item Object A;`
+
+`When:`
+
+`(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
+
+Similarly you can write **Navigate among the panels** rule for shifting focus to the previous panel:
+
+`Navigate among the panels`
+
+`Shift focus to the previous item Object A;`
+
+`When:`
+
+`(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
+
+For more details on how to create a rule to navigate in a panel, [click here](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons).
+
+#### [!UICONTROL Async Function call]
+
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
+The **[!UICONTROL Async Function call]** rule type allows you to execute asynchronous functions. It enables you to initiate a function call that operates independently of the main execution thread, allowing other processes to continue running without waiting for the asynchronous function to complete. 
+
+A typical Async Function call rule to execute asynchronous function is structured as follows:
+
+`When:`
+
+`(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
+
+`Async Function call`
+
+`[Callback Function];`
+
+For more information on how to use the Async Function call in the Visual Rule Editor, refer to the [Using asynchronous function calls in the rule editor](/help/forms/using-async-funct-in-rule-editor.md) article.
+
 <!--
 ### [!UICONTROL Set Options Of] {#setoptionsof}
 

@@ -90,13 +90,15 @@ To copy delivery URL for an approved asset within the repository:
 
 1. Select the asset and click **[!UICONTROL Details]**.
 
-1. Click the Renditions icon available in the right pane.
+1. Click the Dynamic Media icon available in the right pane.
 
-1. Select **[!UICONTROL Dynamic Media with OpenAPI]** available in the **[!UICONTROL Dynamic]** section.
+1. Select **[!UICONTROL Dynamic Media with OpenAPI]** available in the **[!UICONTROL Dynamic Media]** Panel.
 
 1. Click **[!UICONTROL Copy URL]** to copy the delivery URL of the asset.
-   ![copy delivery URL](/help/assets/assets/copy-delivery-url.png)
+![dynamic renditions](/help/assets/assets/dm-with-openapi-non-image-assets.png)
 
    >[!NOTE]
    >
    >The option to copy delivery URL for approved assets is just available in Assets view.
+
+For information on other renditions that display within Dynamic Media panel, see [View and download Dynamic Media renditions](/help/assets/renditions.md#view-download-dm-renditions).
