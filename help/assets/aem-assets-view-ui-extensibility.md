@@ -9,26 +9,23 @@ role: User, Developer
 | [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
 | ------------- | --------------------------- |---------|----|-----|
 
-AEM Assets View has UI Extensibility capability. This capability enables users to add custom UI components to Assets View UI to meet specific business needs that the AEM Assets View's out-of-the-box functionalities don't meet. This extensibility feature enhances the flexibility of AEM Assets View that enables organizations to adapt the interface for specific workflows and requirements.
-This capability is created using technologies such as Micro Frontends (MFEs) and Single-Page Applications (SPAs). These technologies create a modular design of Assets View. In this modular architecture of Assets View UI, Assets View is the host that manages core services and interactions, while custom extensions are independent components that communicate through defined APIs.  
-Extensions add at **Asset level** and **Collection level**. To add the extension, navigate to the **Asset Details page** or **Collections Details page** and click **Behold a ToolTip** quick access element in the toolbar. This displays the **Behold a Title!** panel. This panel is the extensibility area for adding extensions.  
-Extensions communicate with AEM Assets View through defined APIs, enabling seamless integration and customization. AEM Assets View UI Extensibility is available with [Assets Ultimate](/help/assets/assets-ultimate-overview.md).
+AEM Assets View has UI Extensibility capability. This capability enables users to add custom UI components to Assets View UI to meet specific business needs that the AEM Assets View's out-of-the-box functionalities do not meet. This extensibility feature enhances the flexibility of AEM Assets View that enables organizations to adapt the interface for specific workflows and requirements. 
+Extensions are applicable to **Assets** and **Collections** Workspace on Assets View UI. Extensions add to Asset, Folder and Collection level. The added extension displays within a dedicated panel on the Asset's, Collection's or Folder's Details page.
 
-## Where to add the UI Extensibility Component on Assets View? {#ui-extensibility-panel-assets-view}
+>[!IMPORTANT]
+> AEM Assets View UI Extensibility is available with [Assets Ultimate](/help/assets/assets-ultimate-overview.md).
 
-Add your UI Extensibility component to the **Behold a Title!** panel on Assets View UI. Access this panel from Asset Details page and Collections Details Page. 
+## <a id="1"></a> How to access Assets View
 
-### Access from Asset Details page
+Access the Assets view in the following ways:
+![access-assets-view-ui](/help/assets/assets/access-assets-view.jpg)
 
-1. [Navigate to Assets View](#1) 
-1. Open the Asset details page and click ![Behold a ToolTip](/help/assets/assets/behold-tooltip.svg)(Behold a ToolTip!)  to display the **Behold a Title!** panel. Add your extension to this panel. See [Adding UI Extensibility Component on Assets View UI](#Adding-UI-Extensibility-Component-on-Assets-View) for information on how to add the component.
-![extensibility panel](/help/assets/assets/extensibility-panel.png) 
+## Where the added UI Extensibility Component displays on Assets View UI? {#ui-extensibility-panel-assets-view}
 
-### Access from Collections Details page:
-
-1. [Navigate to Assets View](#1) 
-1. Open the Collections details page and click ![Behold a ToolTip](/help/assets/assets/behold-tooltip.svg)(Behold a ToolTip!)  to display the **Behold a Title!** panel. Add your extension to this panel. See [Adding UI Extensibility Component on Assets View UI](#Adding-UI-Extensibility-Component-on-Assets-View) for information on how to add the component.
-![extensibility panel at folder level](/help/assets/assets/extensibility-panel-folder-level.png)
+1. Access to the Assets View UI and navigate to the **Assets** or **Collections** Workspace.
+![my workspace](/help/assets/assets/my-workspace-assets-view1.png)
+1. Navigate to the Details page of an asset, folder or a collection. This Details page has a dedicated panel that displays the added UI Extensibility. Access this panel using a quick access element in the toolbar.
+![my workspace](/help/assets/assets/my-workspace-assets-view2.png)
 
 >[!NOTE]
 >
@@ -36,7 +33,7 @@ Add your UI Extensibility component to the **Behold a Title!** panel on Assets V
 
 ## Prerequisites for Adding the Extensibility Component 
 
-* Access to Assets View. For more information, see the [Access Assets View](/help/assets/assets-view-introduction.md#access-assets-view) page.
+* [Access to Assets View](#1).
 * Access to the [Adobe app builder](https://developer.adobe.com/app-builder/docs/overview/), which is included in the [Assets Ultimate](/help/assets/assets-ultimate-overview.md) by default. 
 * Entitled to Developer of System Admin role within the Organization. See [this](https://developer.adobe.com/uix/docs/guides/get-access/) for more information.
 * Adobe IO command line tool (AIO CLI) must be installed on your local machines. This tool is essential for creating and deploying extension projects. See [this](https://developer.adobe.com/app-builder/docs/getting_started/#local-environment-set-up) for more information.
@@ -44,8 +41,6 @@ Add your UI Extensibility component to the **Behold a Title!** panel on Assets V
 
 ## Adding UI Extensibility Component on Assets View UI{#Adding-UI-Extensibility-Component-on-Assets-View}
 
-1. <a id="1"></a> Navigate to Assets View. Access the Assets view in the following ways:
-![access-assets-view-ui](/help/assets/assets/access-assets-view.jpg)
 1. See [Common Concepts in Creating Extensions](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/commons/) to understand the fundamentals required to develop an extension for the AEM Assets View.
 1. Add custom side panels to the interface. The host application(Assets View) manages these panels to handle UI interactions such as toggling and deep linking. Extensions use the `aem/assets/details/1` extension point to integrate custom panels that specifies properties, such as panel ID, title, and content URL. Developers register custom panels with the `getPanels()` method and build routes to display custom content. For detailed implementation, including API references and code examples, see [Details View](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/details-view/).
 1. Set up your local environment and Experience the process of developing UI extensions firsthand by creating your first UI extension. See [Step-by-step AEM Assets View Extension Development](https://developer.adobe.com/uix/docs/services/aem-assets-view/extension-development/) for more details.
