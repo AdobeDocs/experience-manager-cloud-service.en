@@ -12,7 +12,7 @@ Learn how the templates console serves as the central location to view and manag
 
 ## Overview {#overview}
 
-When creating a page you need to select a template. The page template is used as the base for the new page. [AEM's editable templates](/help/implementing/developing/components/templates.md) can define the structure of the resultant page, any initial content, and the components that can be used (design properties).
+When creating a page, you need to select a template. The page template is used as the base for the new page. [AEM's editable templates](/help/implementing/developing/components/templates.md) can define the structure of the resultant page, any initial content, and the components that can be used (design properties).
 
 Content authors are presented with a selection of available templates when they [create new pages in the sites console.](/help/sites-cloud/authoring/sites-console/creating-pages.md) Templates can be used to create pages that are editable with:
 
@@ -56,8 +56,10 @@ Editing a template opens the editor that was used to create the template. Either
 
 Using whichever editor, you can make the necessary changes to the template. Note that editing a template that is in use can affect your authors.
 
-* For templates created with the template editor, changes made can affect live pages as well as new pages your authors create.
-* For templates created with the Universal Editor, changes made affect only new pages your authors create.
+* For templates created with the Template Editor, changes made can affect live pages that are based on the selected template.
+* For templates created with the Universal Editor, changes made affect only new pages your authors create based on the selected template.
+
+If an author starts to a template created with the template editor that has already been enabled, a warning is displayed.
 
 >[!TIP]
 >
@@ -77,7 +79,13 @@ You can edit the [properties of the template](/help/sites-cloud/authoring/page-e
 
 ## Enabling and Disabling {#enable-disable}
 
-When a template is created, it is by default either in a **Draft** or **Enabled** state.
+A template can have one of three states:
+
+* **Draft** - The template is still being created and is not available for creating new pages.
+* **Enabled** - The template is complete and available for creating new pages.
+* **Disabled** - The template is complete but is unavailable for creating new pages.
+
+When a template is created, it is by default either in a **Draft** state (for templates created with the [Template Editor](/help/sites-cloud/authoring/page-editor/templates.md)) or **Enabled** state(for templates created with the [Universal Editor](/help/sites-cloud/authoring/universal-editor/templates.md)).
 
 A template must be enabled before it can be used by content authors to create pages. If a template is no longer needed, it can be disabled so that it no longer displays in the page creation wizard.
 
@@ -109,9 +117,9 @@ Once pasted, you can:
 >
 >Once you have selected a template in the console, use the hot key `Command+c` or `ctrl+c` to copy the selected template.
 
-## Deleting {#deleting}
+## Deleting {#delete}
 
-If a template is no longer needed, it can be deleted.
+If a template is no longer needed, it can be deleted provided it is not referenced by any pages.
 
 Select the template and then tap or click **Delete** to delete it.
 
