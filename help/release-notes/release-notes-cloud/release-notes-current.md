@@ -77,19 +77,19 @@ Reports can now be automatically generated in the Assets View on a recurring sch
 
 **Digital Rights management for licensed assets**
 
-Organizations can now increase license compliance and minimize risk of sharing assets with licensing terms by leveraging DRM for licensed assets for users of Content Hub, requiring users to review and accept license terms before they can start downloading licensed assets.
+Organizations can now increase license compliance and minimize risk of sharing assets with licensing terms by leveraging DRM for licensed assets for users of Content Hub, requiring users to review and accept license terms before they can start downloading licensed assets. For more information, see [Manage licensed assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
 ![download-multiple-license](/help/assets/assets/download-multiple-license.png)
 
 **Asset card metadata configuration**
 
-Content Hub now allows you to configure the key metadata fields that you need to display on the Asset Card upto a maximum of 6 fields. 
+Content Hub now allows you to configure the key metadata fields that you need to display on the Asset Card upto a maximum of 6 fields. For more information, see the Asset Card section in [Configure Content Hub](/help/assets/configure-content-hub-ui-options.md#asset-card).
 
 ![key metadata on Asset Card](/help/assets/assets/asset-card-key-metadata.png)
 
 **Configure the visibility and download of expired assets**
 
-Administrators can now control if they need expired assets to be visible on Content Hub. If the expired assets are made visible, they can also define if users can download them.
+Administrators can now control if they need expired assets to be visible on Content Hub. If the expired assets are made visible, they can also define if users can download them. For more information, see the Expired Assets section in [Configure Content Hub](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub).
 
 ![Expired assets on Content Hub](/help/assets/assets/expired-assets-content-hub.png)
 
@@ -147,6 +147,19 @@ The Generative AI capabilities on offer are:
 * Resolved issue with category URL format not functioning as expected in the cloud instance.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+
+### Configuration to Control Form Submissions {#configuration-submissions}
+
+To control form submissions for Coral or Foundation forms at specific locations, AEM has introduced a new configuration: `com.adobe.granite.ui.components.FormRestrict`. This configuration consists of two fields:
+
+1. **Add Allowed Paths**: Specifies the paths where form actions are permitted.
+1. **Restrict Behavior**: Determines the behavior for restricted paths (paths not included in the allowed list). You can choose between two options:
+   * **Popup** (default): Displays a popup notification.
+   * **Prevent**:Blocks form submission.
+
+>[!NOTE]
+>
+>This configuration is not supported for all Coral or Foundation forms located under `/apps`, `/libs`, `/mnt/overlay`, and `/mnt/override`.
 
 ### Self-Serve Log Forwarding with Advanced Networking Option {#log-forwarding}
 
