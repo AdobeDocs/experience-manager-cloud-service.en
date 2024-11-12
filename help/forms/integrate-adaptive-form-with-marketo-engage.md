@@ -42,7 +42,7 @@ To configure new Adaptive Form to integrate with Marketo Engage, perform the fol
 
     ![Select Templates](/help/forms/assets/select-template.png)
 
-2. From the **[!UICONTROL Style]**, select the theme.
+1. From the **[!UICONTROL Style]**, select the theme.
 
     ![Select Theme](/help/forms/assets/select-form-theme.png)
 
