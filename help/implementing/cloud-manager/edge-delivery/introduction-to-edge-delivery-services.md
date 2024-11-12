@@ -61,7 +61,7 @@ An Edge Delivery Services can be added in a number of different ways depending o
 
 <!-- &#x2460; for "1" inside circle -->
 
-The **Edge Delivery to-do list** is an onboarding task checklist meant to guide you through onboarding, managing your Edge Delivery site all the way to [go-live](/help/journey-onboarding/go-live-checklist.md).
+The **Edge Delivery to-do list** is an onboarding task checklist meant to guide you through onboarding, managing your Edge Delivery site all the way to [Go-Live](/help/journey-onboarding/go-live-checklist.md).
 
 ![Edge Delivery site to-do list](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
