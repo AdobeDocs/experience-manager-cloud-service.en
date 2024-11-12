@@ -1157,6 +1157,7 @@ user-guide-title: AEM as a Cloud Service
       + [Manage SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
     + CDN Configurations {#cdn-configurations}
       + [Add a CDN Configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+      + [Setup Push Validation](/help/implementing/cloud-manager/cdn-configurations/cdn-setup-push-invalidation.md)
       + [Manage CDN Configurations](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
     + IP Allow Lists {#ip-allow-lists}
       + [Introduction to IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
