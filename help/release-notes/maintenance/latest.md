@@ -22,7 +22,12 @@ None.
 
 ### Fixed Issues {#fixed-issues-X}
 
-None.
+* GUIDES-20006: Document state marked as Done reverts back to Draft before saving a new version, resulting in the Done state not persisting in any document versions.
+* GUIDES-21840: In the Native PDF output, chapter titles are missing from the TOC, leading to an incorrect hierarchy.
+* GUIDES-19558: Editing and then saving a baseline on a cloud setup timesout after 1 minute if the baseline has large number of topics or maps.
+* GUIDES-19733: Map translation using baseline becomes slow and eventually fails to load the list of all the associated topics and maps files.
+
+For more information about the new and enhanced features and issues fixed in Experience Manager Guides, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ### Known Issues {#known-issues-X}
 
