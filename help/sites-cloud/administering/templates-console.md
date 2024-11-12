@@ -65,7 +65,7 @@ Using whichever editor, you can make the necessary changes to the template. Note
 
 ## Properties {#properties}
 
-Though greatly limited, you can edit the properties of the template in much the same way you can [edit page properties,](/help/sites-cloud/authoring/sites-console/page-properties.md) including
+You can edit the [properties of the template](/help/sites-cloud/authoring/page-editor/templates.md) much in the same way that you can [edit page properties.](/help/sites-cloud/authoring/sites-console/page-properties.md) Template properties include:
 
 * Template title
 * Description
