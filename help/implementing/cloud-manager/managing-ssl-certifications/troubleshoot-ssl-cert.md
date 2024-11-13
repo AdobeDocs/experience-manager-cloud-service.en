@@ -4,8 +4,8 @@ description: Learn how to troubleshoot SSL certificate problems by identifying c
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
+exl-id: 8fb8f708-51a5-46d0-8317-6ce118a70fab
 ---
-
 # Troubleshoot SSL certificate problems {#certificate-problems}
 
 Learn how to troubleshoot SSL certificate problems by identifying common causes so you can maintain secure connections.

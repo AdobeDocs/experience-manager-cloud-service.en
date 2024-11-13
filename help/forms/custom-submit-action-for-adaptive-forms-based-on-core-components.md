@@ -4,8 +4,8 @@ description: Learn how to create a custom Submit Action for an Adaptive Forms to
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Intermediate
+exl-id: a369b585-d148-4b5a-8afe-d5673ea865d0
 ---
-
 # Create a custom submit action for Adaptive Forms (Core Components)
 
 A submit action allows users to select the destination for the data captured from a form and to define additional functionality to be executed on form submission. AEM form supports multiple [submit actions out-of-the-box (OOTB)](/help/forms/configure-submit-actions-core-components.md), such as sending an email or saving data to SharePoint or OneDrive.

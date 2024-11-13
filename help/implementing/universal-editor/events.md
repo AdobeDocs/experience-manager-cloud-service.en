@@ -49,7 +49,7 @@ The payload is content from the Universal Editor service, with fallback content 
 
 ### aue:content-details {#content-details}
 
-The `aue:content-details` event is triggered when a component is loaded in the properties rail.
+The `aue:content-details` event is triggered when a component is loaded in the properties panel.
 
 The payload is the component's content and optionally its schema.
 
@@ -85,7 +85,7 @@ The payload is the component, source container, and target container.
 
 ### aue:content-patch {#content-patch}
 
-The `aue:content-patch` event is triggered when a component's data is updated in properties rail.
+The `aue:content-patch` event is triggered when a component's data is updated in properties panel.
 
 The payload is a JSON patch of the updated properties.
 
