@@ -198,6 +198,7 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Universal Editor {#univeral-editor}
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + 2024 {#2024}
+      + [2024.11.05 Release Notes](/help/release-notes/universal-editor/2024/2024-11-05.md)
       + [2024.10.29 Release Notes](/help/release-notes/universal-editor/2024/2024-10-29.md)
       + [2024.09.27 Release Notes](/help/release-notes/universal-editor/2024/2024-09-27.md)
       + [2024.09.26 Release Notes](/help/release-notes/universal-editor/2024/2024-09-26.md)
@@ -356,7 +357,7 @@ user-guide-title: AEM as a Cloud Service
       + [Authoring Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
       + [Publishing Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
       + [Content Inheritance in the Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md)
-      + [Page Templates](/help/edge/wysiwyg-authoring/templates.md)
+      + [Page Templates](/help/sites-cloud/authoring/universal-editor/templates.md)
     + Fragments {#fragments}
       + [Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md)
       + [Experience Fragments](/help/sites-cloud/authoring/fragments/experience-fragments.md)
@@ -449,6 +450,7 @@ user-guide-title: AEM as a Cloud Service
         + [Translation Best Practices](/help/sites-cloud/administering/translation/best-practices.md)
     + [Administering Tags](/help/sites-cloud/administering/tags.md)
     + [Administering Workflows](/help/sites-cloud/administering/workflows-administering.md)
+    + [Templates Console](/help/sites-cloud/administering/templates-console.md)
   + Integrating with AEM as a Cloud Service {#integrations}
     + [Integrating with Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
     + [Integrating with Adobe Analytics Automated Setup](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
@@ -636,6 +638,7 @@ user-guide-title: AEM as a Cloud Service
     + [Manage tags](/help/assets/tagging-management-assets-view.md)
     + [Content Credentials](/help/assets/content-credentials.md)
     + [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+    + [AEM Assets View UI Extensibility](/help/assets/aem-assets-view-ui-extensibility.md)
   + Content Hub {#content-hub}
     + [Overview](/help/assets/product-overview.md)
     + [Deploy Content Hub](/help/assets/deploy-content-hub.md)
@@ -1155,6 +1158,7 @@ user-guide-title: AEM as a Cloud Service
       + [Manage SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
     + CDN Configurations {#cdn-configurations}
       + [Add a CDN Configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+      + [Setup Push Validation](/help/implementing/cloud-manager/cdn-configurations/cdn-setup-push-invalidation.md)
       + [Manage CDN Configurations](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
     + IP Allow Lists {#ip-allow-lists}
       + [Introduction to IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
