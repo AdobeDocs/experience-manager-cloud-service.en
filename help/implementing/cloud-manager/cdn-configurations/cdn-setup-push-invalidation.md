@@ -23,4 +23,4 @@ The following configuration properties define the production host's name and the
 
 Once changes are made to the configuration sheet, users must preview and activate them using the [Sidekick tool](/help/edge/docs/sidekick.md) to apply the updates.
 
-See also [Introduction to Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list).
+See also [About the Edge Delivery to-do list in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list).
