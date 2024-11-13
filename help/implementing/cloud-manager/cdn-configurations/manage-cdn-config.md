@@ -57,7 +57,7 @@ The steps for editing a CDN configuration from the **Environments** page are nea
 
 1. In the **Edit CDN Configuration** dialog box, set one or more of the options in the respective drop-down list.
 
-The options displayed in the dialog box depend on whether you are using an **Adobe managed CDN** or an **Other CDN provider** (customer managed CDN).
+    The options displayed in the dialog box depend on whether you are using an **Adobe managed CDN** or an **Other CDN provider** (customer managed CDN).
 
 1. Click **Update**.
 
