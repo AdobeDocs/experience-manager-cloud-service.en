@@ -10,61 +10,74 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 18311 {#18311}
+## Release 18459 {#18459}
 
-Summarized below are the continuous improvements for maintenance release 18311, which was publicly released on October 22, 2024. The previous maintenance release was release 18175.
+Summarized below are the continuous improvements for maintenance release 18459, which was publicly released on November 5, 2024. The previous maintenance release was release 18311.
 
-The 2024.10.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
+The 2024.11.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-18311}
+### Enhancements {#enhancements-18459}
 
-* ASSETS-41820 : Indexing improvements for processing watchdog.
-* ASSETS-43720 : Functional improvements to processing watchdog.
-* ASSETS-42554 : Performance improvements for large folders.
-* SKYOPS-77603 : Management of redirects by business users.
+* CQ-4357471: Add support for i18n Dictionaries Translation in AEMaaCS.
+* SITES-23591: Content Fragments: Content fragment upgrade for UUID support.
+* SITES-25440: Content Fragments: CFM Search API to show replication status.
+* SITES-24369: Content Fragments: OpenAPI documentation improvements.
+* SITES-25478: Content Fragments: Add back-end support for external asset references.
+* SITES-26119: Content Fragments: Add support of external asset references in reference type.
+* SITES-21199: Edge Delivery with Universal Editor: Add suppprt for templates created from pages.
+* SITES-20311: Edge Delivery with Universal Editor: Add support to import CSVs into Spreadsheets.
+* SITES-24821: Edge Delivery with Universal Editor: Make aem.page / aem.live the default to integrate with Edge Delivery. 
+* FORMS-11646: Setting globalContext Variables for AEM Forms relevant pages
+* FORMS-14833: The AEM Forms now has the capability to include Adaptive Form fragments in final Document of Record (DoR).
+* FORMS-14255: Users can now benefit from an auto-save feature that saves a partially completed form as a draft automatically. They can return later to finish filling it out on the same or other device.
 
-### Fixed Issues {#fixed-issues-18311}
 
-* ASSETS-37534 : Changes in search to not expose property used for approval target.
-* ASSETS-38322 : Remove publish criteria provider config Remove publish event feature.
-* ASSETS-40482 : Accessibility issue in play/pause and mute/unmute button in Scene7 video player.
-* ASSETS-40593 : Error page occurs after clicking on "Properties" button in Assets > Files.
-* ASSETS-40598 : Sync smart crops when unsynced asset is moved to a sync enabled folder.
-* ASSETS-40743 : Issues with triggering Replace Asset dialog when certain characters exist in filename.
-* ASSETS-40825 : Assets Search Facets Disappearing After Editing Search Form.
-* ASSETS-41007 : Deletion on AEM sometimes leaves orphan Assets on Delivery.
-* ASSETS-41172 : Dynamic Media Templates special chars not allowed in name.
-* ASSETS-41896 : Assets mentioned in cq:discarded property on the folder should NOT be published to Brand Portal.
-* ASSETS-42067 : Dynamic Media Templates - Download gives error.
-* ASSETS-42070 : Dynamic Media Templates - Non-admin users should have Template create/edit access.
-* ASSETS-42344 : Connected Assets Sync disconnected - Reconnect and advice for customer.
-* ASSETS-42620 : Issue with the preview option of asset versions - shows blank preview when we open the asset.
-* ASSETS-42701 : Web Optimized Image Delivery and Cropping Issue.
-* ASSETS-42966 : Async barricade can become unblocked in error due if multiple jobs share the same path.
-* ASSETS-43072 : Dynamic Media Templates - Template references lookup breaks on an invalid reference.
-* ASSETS-43212 : Internationalisation issues in metadata schema editor.
-* ASSETS-43202 : Fixes for selecting annotations to print from timeline.
-* ASSETS-43502 : AEM CS Existing Image Preset Name Not Displayed on Edit Page.
-* ASSETS-43538 : Async copy assets job uses incorrect property for source path.
-* ASSETS-43798 : Check for destination path first before copying assets.
-* ASSETS-43945 : Increase retry delay to 20 min for async assets job queue.
-* ASSETS-44025 : Async delete assets job fails for when individual assets are selected.
-* SITES-26128 : Class cast exception in CreateLiveCopyStep.
-* SCRNS-4551 : [SG Pools] Screens channel containing video component shows "General Page Error" on browser preview and player
+### Fixed Issues {#fixed-issues-18459}
 
-### Known Issues {#known-issues-18311}
+* CQ-4358730: CQPagePreviewGenerator fails when there are more than 10 keys to be translated.
+* FORMS-14978: Enabling page load for a Core Component based form for theme editor.
+* FORMS-16596: Accessibility Issue: Disabled Buttons Not Recognized by Screen Reader.
+* SITES-10575: MSM: Blueprint Bloomfilter Loader tries to load >100,000 rows.
+* SITES-20755: Content Fragments: Asset reference with UUID refresh doesn't show the thumbnail.
+* SITES-26253: Content Fragments: UUID migration: Change sling job topic to be generic.
+* SITES-21338: Content Fragments: referencedBy endpoint does not return the correct page reference.
+* SITES-24421: Content Fragments: Edit CF endpoint does not work for CF retrieved via GET CF.
+* SITES-25461: Content Fragments: Filter by model in search for CFs should be case-insensitive.
+* SITES-25471: Content Fragments: Fix validation of global models in the ModelValidatorServlet.
+* SITES-25795: Content Fragments: CF Model API is failing when there is no cq date set.
+* SITES-25817: Content Fragments: Enhance promoteLaunch: update last promotion for CF Launches.
+* SITES-26030: Content Fragments: Endpoint /referencesTree doesn't return needed header.
+* SITES-26031: Content Fragments: Replication status not returned on CFM search endpoint.
+* SITES-26213: Content Fragments: Unpublish content fragments should only validate published references.
+* SITES-26226: Content Fragments: Start workflow issue when none of the given paths are usable.
+* SITES-26238: Content Fragments: The asset references returned by the API have a different order than the order from JCR.
+* SITES-25456: Events: When moving a page, a page-deleted event is generated besides the page-moved event.
+* SITES-25658: Events: The tier and sourceUrl are not populated in the page content state events.
+* SITES-6497: Launches: Create page in launch not working.
+* SITES-25938: Launches: Unexpected deletion post Translation project.
+* SITES-25393: Edge Delivery with Universal Editor: Text nodes lost when rendering formatted richtext with single paragraph.
+* SITES-24643: Edge Delivery with Universal Editor: OpenGraph and twitter metadata attributes not working in page metadata model. 
+* SITES-25401: Experience Fragments: Slow XF reference update 
+* GRANITE-53907: Unable to identify service user as workflow super user
+* CQ-4358028: AEM project creation fails when a user with only project-administrators group uploads a new thumbnail on the project creation page.
+* FORMS-15682: The issue involves AEM Forms and Dynamics FDM integration. When a user submits a form, the Document of Record (DOR) is not being sent as a PDF attachment to the specified entity field.
+* FORMS-15799: Adobe Sign GovCloud Signature page does note render in iframe
+* FORMS-16113: When a user, who is an admin of the Adobe Sign account, tries to access a document sent by another user (also an admin), the get agreement API may return a different agreement ID than the one initially generated when the agreement was created. 
 
-* FORMS-15818: Component descriptor entry `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` not found statements in server logs. These are harmless log statements.
 
-### Deprecated Features and APIs {#deprecated-18311}
+### Known Issues {#known-issues-18459}
+
+None.
+
+### Deprecated Features and APIs {#deprecated-18459}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-18311}
+### Security Fixes {#security-18459}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 3 identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 21 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-18311}
+### Embedded Technologies {#embedded-tech-18459}
 
 |Technology|Version|Link|
 |---|---|---|
