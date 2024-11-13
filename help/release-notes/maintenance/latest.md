@@ -10,13 +10,13 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 18459 {#18459}
+## Release 18598 {#18598}
 
-Summarized below are the continuous improvements for maintenance release 18459, which was publicly released on November 5, 2024. The previous maintenance release was release 18311. Release 18459 has been made private because of an issue.
+Summarized below are the continuous improvements for maintenance release 18598, which was publicly released on November 13, 2024. The previous maintenance release was release 18311. Release 18459 has been made private because of an issue.
 
 The 2024.11.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-18459}
+### Enhancements {#enhancements-18598}
 
 * CQ-4357471: Add support for i18n Dictionaries Translation in AEMaaCS.
 * FORMS-11646: Setting globalContext Variables for AEM Forms relevant pages.
@@ -31,7 +31,7 @@ The 2024.11.0 feature activation will provide the full feature set for this main
 * SITES-20311: Edge Delivery with Universal Editor: Add support to import CSVs into Spreadsheets.
 * SITES-24821: Edge Delivery with Universal Editor: Make aem.page / aem.live the default to integrate with Edge Delivery. 
 
-### Fixed Issues {#fixed-issues-18459}
+### Fixed Issues {#fixed-issues-18598}
 
 * CQ-4358730: CQPagePreviewGenerator fails when there are more than 10 keys to be translated.
 * CQ-4358028: AEM project creation fails when a user with only project-administrators group uploads a new thumbnail on the project creation page.
@@ -64,19 +64,19 @@ The 2024.11.0 feature activation will provide the full feature set for this main
 * SITES-24643: Edge Delivery with Universal Editor: OpenGraph and twitter metadata attributes not working in page metadata model. 
 * SITES-25401: Experience Fragments: Slow XF reference update.
 
-### Known Issues {#known-issues-18459}
+### Known Issues {#known-issues-18598}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-18459}
+### Deprecated Features and APIs {#deprecated-18598}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-18459}
+### Security Fixes {#security-18598}
 
 AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 21 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-18459}
+### Embedded Technologies {#embedded-tech-18598}
 
 |Technology|Version|Link|
 |---|---|---|
