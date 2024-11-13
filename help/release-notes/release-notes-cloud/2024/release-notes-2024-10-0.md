@@ -93,11 +93,19 @@ Administrators can now control if they need expired assets to be visible on Cont
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
+### New features in AEM Forms {#forms-new-features}
+
+* **Enhance User Experience with Navigation Buttons in Panel Layouts**: You can now add navigation buttons to your panel layouts, such as Horizontal Tabs, Vertical Tabs, Accordions, or Wizard. These buttons enhance the user experience by simplifying transitions between panels, focusing on the selected panel.
+
+* **Specify Display Styles for Document of Record (DoR) Components**: In an XFA file, you can now specify the display styles for Document of Record components. These styles can later be applied to the corresponding components in Adaptive Forms Editor.
+
 ### New Pre-release features in AEM Forms {#forms-new-prerelease-features}
 
-#### Auto-save a draft for Core Components based Adaptive Forms
+* **Auto-save a draft for Core Components based Adaptive Forms**: Users can now benefit from an auto-save feature that saves a partially completed form as a draft automatically. They can return later to finish filling it out on the same or other device. This feature improves conversion rates for organizations by reducing form abandonment, as users do not need to start over form filling from the beginning.
 
-Users can now benefit from an auto-save feature that saves a partially completed form as a draft automatically. They can return later to finish filling it out on the same or other device. This feature improves conversion rates for organizations by reducing form abandonment, as users do not need to start over form filling from the beginning.
+* **Update Adobe Sign scopes easily**: You can modify the scopes of an Adobe Sign configuration directly from the AEM Cloud Configurations page, making it quicker and easier to update existing configurations.
+
+* **Asynchronous function support for Adaptive Forms**: When your Adaptive Form requires asynchronous operations, such as waiting for external processes or data retrieval, you can implement these operations with custom functions and configure them in the Rule Editor.
  
 ### Early Access features in AEM Forms {#forms-new-early-access-features}
 
