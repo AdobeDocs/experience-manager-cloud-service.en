@@ -54,6 +54,7 @@ When you first open the Content Fragment Editor, you see four main areas:
   * in the **Properties** tab you can update the **Title** and **Description** for the fragment, or **Variation**
 * central panel: shows the actual fields, and content, of the selected variation
   * allows you to edit the content
+    * when configured (as multiple) in the model, various data types allow you to **Add** instances of the relevant field
   * if **Tab Placeholder** fields are defined within the model they are shown here, and can be used for navigating; they will either be presented horizontally, or as a drop-down list.
 
   >[!NOTE]
