@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2024.11.12 Release Notes
-description: These are the release notes for the 2024.11.12 release of the Universal Editor.
+title: Universal Editor 2024.11.13 Release Notes
+description: These are the release notes for the 2024.11.13 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2024.11.12 Release Notes {#release-notes}
+# Universal Editor 2024.11.13 Release Notes {#release-notes}
 
-These are the release notes for the 12 November 2024 release of the Universal Editor.
+These are the release notes for the 13 November 2024 release of the Universal Editor.
 
 >[!TIP]
 >
