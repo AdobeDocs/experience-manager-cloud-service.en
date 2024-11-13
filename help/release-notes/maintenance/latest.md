@@ -27,6 +27,10 @@ The 2024.11.0 feature activation will provide the full feature set for this main
 * SITES-21199: Edge Delivery with Universal Editor: Add suppprt for templates created from pages.
 * SITES-20311: Edge Delivery with Universal Editor: Add support to import CSVs into Spreadsheets.
 * SITES-24821: Edge Delivery with Universal Editor: Make aem.page / aem.live the default to integrate with Edge Delivery. 
+* FORMS-11646: Setting globalContext Variables for AEM Forms relevant pages
+* FORMS-14833: The AEM Forms now has the capability to include Adaptive Form fragments in final Document of Record (DoR).
+* FORMS-14255: Users can now benefit from an auto-save feature that saves a partially completed form as a draft automatically. They can return later to finish filling it out on the same or other device.
+
 
 ### Fixed Issues {#fixed-issues-18459}
 
@@ -54,6 +58,11 @@ The 2024.11.0 feature activation will provide the full feature set for this main
 * SITES-25393: Edge Delivery with Universal Editor: Text nodes lost when rendering formatted richtext with single paragraph.
 * SITES-24643: Edge Delivery with Universal Editor: OpenGraph and twitter metadata attributes not working in page metadata model. 
 * SITES-25401: Experience Fragments: Slow XF reference update 
+* GRANITE-53907: Unable to identify service user as workflow super user
+* CQ-4358028: AEM project creation fails when a user with only project-administrators group uploads a new thumbnail on the project creation page.
+* FORMS-15682: The issue involves AEM Forms and Dynamics FDM integration. When a user submits a form, the Document of Record (DOR) is not being sent as a PDF attachment to the specified entity field.
+* FORMS-15799: Adobe Sign GovCloud Signature page does note render in iframe
+* FORMS-16113: When a user, who is an admin of the Adobe Sign account, tries to access a document sent by another user (also an admin), the get agreement API may return a different agreement ID than the one initially generated when the agreement was created. 
 
 
 ### Known Issues {#known-issues-18459}
