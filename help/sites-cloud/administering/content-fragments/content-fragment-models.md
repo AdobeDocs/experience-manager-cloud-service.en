@@ -184,23 +184,27 @@ A selection of data types is available for defining your model:
   * References other Content Fragments; can be used to [create nested content](#using-references-to-form-nested-content)
   * The data type can be configured to allow fragment authors to:
     * Edit the referenced fragment directly.
-    * Create a new Content Fragment, based on the appropriate model  
+    * Create a new Content Fragment, based on the appropriate model
+    * Create new instances of the field 
   * The reference specifies the path to the referenced resource; for example `/content/dam/path/to/resource`
 * **Fragment Reference (UUID)**
   * References other Content Fragments; can be used to [create nested content](#using-references-to-form-nested-content)
   * The data type can be configured to allow fragment authors to:
     * Edit the referenced fragment directly.
-    * Create a new Content Fragment, based on the appropriate model  
+    * Create a new Content Fragment, based on the appropriate model
+    * Create new instances of the field 
   * In the editor, the reference specifies the path to the referenced resource; internally the reference is held as a universally unique ID (UUID) that references the resource
     * You do not need to know the UUID; in the fragment editor you can browse to the required fragment
 
 * **Content Reference**
   * References other content, of any type; can be used to [create nested content](#using-references-to-form-nested-content)
   * If an image is referenced, you can opt to show a thumbnail
+  * The field can be configured to allow fragment authors to create new instances of the field 
   * The reference specifies the path to the referenced resource; for example `/content/dam/path/to/resource`  
 * **Content Reference (UUID)**
   * References other content, of any type; can be used to [create nested content](#using-references-to-form-nested-content)
   * If an image is referenced, you can opt to show a thumbnail
+  * The field can be configured to allow fragment authors to create new instances of the field 
   * In the editor, the reference specifies the path to the referenced resource; internally the reference is held as a universally unique ID (UUID) that references the resource
     * You do not need to know the UUID; in the fragment editor you can browse to the required asset resource
 
