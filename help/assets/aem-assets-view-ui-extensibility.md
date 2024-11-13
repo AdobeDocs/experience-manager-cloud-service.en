@@ -21,7 +21,7 @@ You can add your Extensions to Asset, Folder and Collection level. The added ext
 Access the Assets view in the following ways:
 ![access-assets-view-ui](/help/assets/assets/access-assets-view.jpg)
 
-## Where does UI Extensions displays on the Assets View UI? {#ui-extensibility-panel-assets-view}
+## Where does UI Extensions display on the Assets View UI? {#ui-extensibility-panel-assets-view}
 
 Within Assets View, navigate to the Details page of an asset, folder or a collection. This Details page has a dedicated panel that displays the added UI Extension.
 ![my workspace](/help/assets/assets/my-workspace-assets-view3.png)
