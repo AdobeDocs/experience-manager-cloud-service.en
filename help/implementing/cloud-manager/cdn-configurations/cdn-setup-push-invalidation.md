@@ -1,16 +1,14 @@
 ---
 title: Setup Push Invalidation
-description: Learn about how to configure push invalidation for building your own production CDN. 
+description: Learn about how to configure push invalidation for building your own production CDN.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-hide: yes
-hidefrom toc: yes
-
+exl-id: 7cded93c-325c-4a4b-8644-e6a2379d5179
 ---
 # Setup push invalidation 
 
-Push invalidation ensures that content updates made by authors are automatically removed from the managed Content Delivery Network (CDN) when published, so only the latest content is served. 
+Push invalidation ensures that content updates made by authors are automatically removed from the managed Content Delivery Network (CDN) when published. Doing so ensures that only the latest content is served. 
 
 The system clears the content based on specific URLs and cache tags or keys, ensuring that outdated versions are purged.
 
@@ -24,3 +22,5 @@ The following configuration properties define the production host's name and the
 | `cdn.prod.type` | managed |   |
 
 Once changes are made to the configuration sheet, users must preview and activate them using the [Sidekick tool](/help/edge/docs/sidekick.md) to apply the updates.
+
+See also [About the Edge Delivery to-do list in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list).
