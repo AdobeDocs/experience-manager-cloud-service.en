@@ -174,9 +174,9 @@ The response will be similar to the following.
 
 Since you now use the configuration service, you can remove `fstab.yaml` and `paths.json` from your Git repository.
 
-[!NOTE]
-
-By using the configuration service and exposing the path mapping via `config.json`, the `path.json` file is ignored.
+>[!NOTE]
+>
+>By using the configuration service and exposing the path mapping via `config.json`, the `path.json` file is ignored.
 
 Once AEM is configured for repoless use, you must use the configuration service and provide a valid `config.json` with the paths mapping.
 
