@@ -57,13 +57,13 @@ An Edge Delivery Services can be added in a number of different ways depending o
 >* Once the Edge Delivery Services license is applied to or removed from a program, the change takes effect immediately without the need to run a pipeline.
 
 
-## About the Edge Delivery to-do list {#ed-todo-list}
+## About the Edge Delivery to-do list in Cloud Manager {#ed-todo-list}
 
 <!-- &#x2460; for "1" inside circle -->
 
-The **Edge Delivery to-do list** is an onboarding task checklist meant to guide you through onboarding, managing your Edge Delivery site all the way to [Go-Live](/help/journey-onboarding/go-live-checklist.md).
+The **Edge Delivery to-do list** in Cloud Manager is an onboarding task checklist meant to guide you through onboarding, managing your Edge Delivery site all the way to [Go-Live](/help/journey-onboarding/go-live-checklist.md).
 
-![Edge Delivery site to-do list](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
+![Edge Delivery site to-do list in Cloud Manager](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
 |   | Task  | Description |
 | --- | --- | --- |
