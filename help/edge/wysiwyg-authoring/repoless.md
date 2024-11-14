@@ -105,40 +105,58 @@ Once the public configuration is created, you can access it via a URL similar to
 
 To set up access control, you need to provide the technical account.
 
-1. Your site should already have a configuration assigned to it automatically as part of the site creation process. Confirm this by signing into the authoring instance and going to **Sites**, selecting your site and then **Properties** from the toolbar.
-1. On the **Advanced** tab, you should see a configuration assigned in the **Cloud Configuration** field similar to `/conf/<conf-name>`. If not, [create a configuration and assign it to your site.](/help/implementing/developing/introduction/configurations.md)
+1. Create a new page at the root of your site and choose the  [Configuration template.](/help/edge/wysiwyg-authoring/tabular-data.md#other)
+   * You can leave the configuration empty with only the predefined `key` and `value` columns. You only need to create it.
 1. Create a mapping in the public configuration to the site configuration using a cURL command similar to the following.
    ```text
    curl --request POST \
-     --url https://admin.hlx.page/config/mhaack/sites/my-aem-project/public.json \
-     --header 'x-auth-token: id_token=<your-token>&idp_name=adobe' \
+     --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>/public.json \
+     --header 'x-auth-token: <your-token>' \
      --header 'Content-Type: application/json' \
      --data '{
        "paths": {
            "mappings": [
-               "/content/mh-aem-project/:/",
-               "/content/mh-aem-project/configuration:/.helix/config.json"
+               "/content/<your-site-content>/:/",
+               "/content/<your-site-content>/configuration:/.helix/config.json"
       ],
            "includes": [
-               "/content/mh-aem-project/"
+               "/content/<your-site-content>/"
            ]
        }
    }'
    ```
 1. Validate that the public configuration has been set an is available with a cURL command similar to the following.
    ```text
-   curl 'https://main--my-aem-project--mhaack.aem.live/config.json'
+   curl 'https://main--<your-aem-project>--<your-github-org>.aem.live/config.json'
    ```
-1. Now you can retrieve the technical account in the response of a cURL command similar to the following.
+1. Now you can retrieve the technical account in the response of the following link.
    ```text
-   https://author-pXX-eYY.adobeaemcloud.com/bin/franklin.delivery/mhaack/my-aem-project/main/.helix/config.json
+   https://author-p<programID>-e<envionmentID>.adobeaemcloud.com/bin/franklin.delivery/<your-github-org>/<your-aem-project>/main/.helix/config.json
    ```
+
+The response will be similar to the following.
+
+```json
+{
+  "total": 1,
+  "offset": 0,
+  "limit": 1,
+  "data": [
+    {
+      "key": "admin.role.publish",
+      "value": "<tech-account-id>@techacct.adobe.com"
+    }
+  ],
+  ":type": "sheet"
+}
+```
+
 1. Set the technical account in your configuration with a cURL command similar to the following.
    ```text
    curl --request POST \
-     --url https://admin.hlx.page/config/mhaack/sites/my-aem-project/access.json \
+     --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>/access.json \
      --header 'Content-Type: application/json' \
-     --header 'x-auth-token: id_token=<your-token>&idp_name=adobe' \
+     --header 'x-auth-token: <your-token>' \
      --data '{
        "admin": {
            "role": {
@@ -146,20 +164,21 @@ To set up access control, you need to provide the technical account.
                    "*@adobe.com"
                ],
                "config_admin": [
-                   "<--xyz-->@techacct.adobe.com"
+                   "<tech-account-id>@techacct.adobe.com"
                ]
            },
            "requireAuth": "auto"
        }
    }'
    ```
-1. Since you now use the configuration service, you can remove `fstab.yaml` and `paths.json` from your Git repository.
-   >[!NOTE]
-   >
-   >By using the configuration service and exposing the path mapping via `config.json`, the `path.json` file is ignored.
-   >
-   >Once AEM is configured for repoless use, you must use the configuration service and provide a valid `config.json` with the paths mapping.
-1. Verify that the public configuration can be accessed by the project by accessing the `config.json` resource of your project such as `https://main--my-aem-project-mhaack.aem.page/config.json`
+
+Since you now use the configuration service, you can remove `fstab.yaml` and `paths.json` from your Git repository.
+
+[!NOTE]
+
+By using the configuration service and exposing the path mapping via `config.json`, the `path.json` file is ignored.
+
+Once AEM is configured for repoless use, you must use the configuration service and provide a valid `config.json` with the paths mapping.
 
 ### Update AEM Configuration {#update-aem}
 
