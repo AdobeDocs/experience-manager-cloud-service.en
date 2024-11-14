@@ -184,22 +184,14 @@ Once AEM is configured for repoless use, you must use the configuration service 
 
 Now you are ready to make the necessary changes to your Edge Delivery Services in AEM.
 
-1. Sign into the AEM author instance and go to **Tools** -&gt; **Cloud Configurations** -&gt; **Edge Delivery Services Configuration** and select the configuration that was automatically created for your site and tap or click **Properties** in the tool bar.
+1. Sign into the AEM author instance and go to **Tools** -&gt; **Cloud Services** -&gt; **Edge Delivery Services Configuration** and select the configuration that was automatically created for your site and tap or click **Properties** in the tool bar.
 1. In the **Edge Delivery Services Configuration** window, change project type to **aem.live with repoless config setup** and tap or click **Save &amp; Close**.
    ![Edge Delivery Services Configuration](/help/edge/wysiwyg-authoring/assets/repoless/edge-delivery-services-configuration.png)
 1. Return to your site using the Universal Editor and ensure that it still renders properly.
 1. Modify some of your content and re-publish.
-1. Visit your published site on `https://main--my-aem-project--mhaack.aem.page/` and verify that the changes are properly reflected.
+1. Visit your published site at `https://main--<your-aem-project>--<your-github-org>.aem.page/` and verify that the changes are properly reflected.
 
-### Authenticate Site {#authenticate-site}
-
-To authenticate your preview and publish services, you will need to provide an authentication token to your **Edge Delivery Service Configuration** in AEM.
-
-1. [Follow the process documented here](https://www.aem.live/docs/authentication-setup-site#create-a-token-to-access-your-protected-site) to generate an authentication token.
-   * You will receive a site authentication token to access your protected site similar to `<site-auth-token>=hlx_ZGFzIGlzdCBkZWluIHRva2Vu`.
-1. Sign into the AEM author instance and go to **Tools** -&gt; **Cloud Configurations** -&gt; **Edge Delivery Services Configuration** and select the configuration that was automatically created for your site and tap or click **Properties** in the tool bar.
-1. In the **Edge Delivery Services Configuration** window, provide the `<site-auth-token>` value in the `Site Authentication Token` field and tap or click **Save &amp; Close**.
-   ![Edge Delivery Services Configuration](/help/edge/wysiwyg-authoring/assets/repoless/site-authentication-token.png)
+Your project is now set up for repoless use.
 
 ## Next Steps {#next-steps}
 
