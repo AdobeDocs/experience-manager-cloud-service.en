@@ -197,8 +197,8 @@ Your project is now set up for repoless use.
 
 Now that your base site is configured for repoless usage, you can create additional sites that leverage the same code base. Refer to the following documentation depending on your use case.
 
-* [Repoless Multi Site Management](help/edge/wysiwyg-authoring/repoless-msm.md)
-* [Repoless Stage and Prod Environments](help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+* [Repoless Multi Site Management](/help/edge/wysiwyg-authoring/repoless-msm.md)
+* [Repoless Stage and Prod Environments](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
 
 ## Troubleshooting {#troubleshooting}
 
