@@ -209,6 +209,16 @@ The Signature APIs let your organization protect the security and privacy of Ado
 * Sign the specified signature field in a PDF document. 
 * Certify a PDF document
 
+### Remove Signature APIs
+
+The Remove Signature API helps to remove an existing digital signatures from a PDF document. This API is useful when you need to update or revise a signed document and reapply signatures. It maintains document integrity while effectively clearing signatures from specific pages or the entire file. Use cases include re-signing documents with updated data or clearing previous approvals for revised versions.
+
+
+### Remove Signature Field APIs
+
+The Remove Signature Field API is tailored for removing signature fields from a PDF document. This is ideal when you need to delete empty or unused signature fields to streamline document presentation. It enables users to eliminate signature fields without impacting other form fields or the document structure, making it easier to create cleaner, final versions of a document that no longer require signatures.
+
+
 ### Encryption APIs
 
 The Encryption APIs let you encrypt and decrypt documents. When a document is encrypted, its contents become unreadable. An authorized user can decrypt the document to obtain access to the contents. If a PDF document is encrypted with a password, the user must specify the open password before the document can be viewed in Adobe Reader or Adobe Acrobat. <!-- Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.-->
@@ -220,7 +230,7 @@ You can accomplish these tasks using the Encryption APIs:
 * Retrieve the type of security applied to a PDF document.
 * Return the security type applied to a PDF document. 
 
-Both Signature APIs and Encryption APIs are [Synchronous APIs](#types-of-communications-apis-types).
+Signature APIs, Remove Signature APIs, Remove Signature Field APIs,  and Encryption APIs are [Synchronous APIs](#types-of-communications-apis-types).
 
 
 ### Document Utilities {#doc-utility}
