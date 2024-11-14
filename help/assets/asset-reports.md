@@ -1,6 +1,6 @@
 ---
 title: Reports about usage and sharing
-description: Reports about your assets in [!DNL Adobe Experience Manager Assets] that help you understand usage, activity, and sharing of your digital assets.
+description: Reports about your assets in [!DNL Adobe Experience Manager Assets] that help you understand the usage, activity, and sharing of your digital assets.
 contentOwner: AG
 feature: Asset Reports, Asset Management
 role: Admin, User
@@ -20,7 +20,7 @@ Asset reporting lets you assess the utility of your [!DNL Adobe Experience Manag
 
 Use the information in the reports to derive key success metrics to measure the adoption of [!DNL Assets] within your enterprise and by customers.
 
-The [!DNL Assets] reporting framework uses [!DNL Sling] jobs to asynchronously process report requests in an ordered manner. It is scalable for large repositories. Asynchronous report processing increases the efficiency and speed with which reports are generated.
+The [!DNL Assets] reporting framework uses [!DNL Sling] jobs asynchronously to process report requests in an ordered manner. It is scalable for large repositories. Asynchronous report processing increases the efficiency and speed with which reports are generated.
 
 The report management interface is intuitive and includes fine-grained options and controls to access archived reports and view report run statuses (success, failed, and queued).
 
@@ -59,11 +59,11 @@ When a report is generated, you are notified via <!-- through an email (optional
    ![Tools page to navigate assets report](assets/navigation.png)
 
 1. On the [!UICONTROL Asset Reports] page, click **[!UICONTROL Create]** from the toolbar.
-1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and click **[!UICONTROL Next]**.
+1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and click **[!UICONTROL Next]**. Entitle yourself with an **AEM Administrator product profile** to create a **Download** report. See [Assigning AEM Product Profiles](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) to entitle yourself to an AEM Administrator product profile.
 
    ![Select report type](assets/choose_report.png)
 
-1. Configure report details such as title, description, thumbnail, and folder path. By default, the folder path is `/content/dam`. You can specify a different path to execute the report on a specific folder.
+1. Configure report details, such as title, description, thumbnail, and folder path. By default, the folder path is `/content/dam`. You can specify a different path to execute the report on a specific folder.
 
    ![Page to add report details](assets/report_configuration.png)
 
@@ -97,12 +97,12 @@ When a report is generated, you are notified via <!-- through an email (optional
 
    ![Select or cancel selection of report columns](assets/configure_columns.png)
 
-   To display a custom column name or property path, configure the properties for the asset binary under the `jcr:content` node in CRX. Alternatively, add it through property path picker.
+   To display a custom column name or property path, configure the properties for the asset binary under the `jcr:content` node in CRX. Alternatively, add it through a property path picker.
 
    ![Select or cancel selection of report columns](assets/custom_columns.png)
 
 1. Click **[!UICONTROL Create]** from the toolbar. A message notifies that report generation has been initiated.
-1. On the [!UICONTROL Asset Reports] page, the report generation status is based on the current state of the report job, for example, [!UICONTROL Success], [!UICONTROL Failed], [!UICONTROL Queued], or [!UICONTROL Scheduled]. The same status appears in the notifications inbox.To view the report page, click the report link. Alternatively, select the report, and click **[!UICONTROL View]** from the toolbar.
+1. On the [!UICONTROL Asset Reports] page, the report generation status is based on the current state of the report job, for example, [!UICONTROL Success], [!UICONTROL Failed], [!UICONTROL Queued], or [!UICONTROL Scheduled]. The same status appears in the notifications inbox. To view the report page, click the report link. Alternatively, select the report, and click **[!UICONTROL View]** from the toolbar.
 
    <!--![A generated report](assets/report_page.png)-->
    ![generated report status](assets/report-status.JPG)
