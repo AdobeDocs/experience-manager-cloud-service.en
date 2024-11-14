@@ -19,6 +19,8 @@ This simplified setup, which eliminates the need for code replication is also kn
 
 If your project requires the repoless flexibility of code reuse across sites, you can activate the feature.
 
+Regardless of how many sites you want to ultimately create in a repoless fashion, you must create your first site, which serves as your base site. This document explains how to create you first site for repoless use.
+
 ## Prerequisites {#prerequisites}
 
 To take advantage of this feature, make sure you have done the following.
@@ -26,7 +28,7 @@ To take advantage of this feature, make sure you have done the following.
 * Your site is already fully set up by following the document [Developer Getting Started Guide for WYSIWYG Authoring with Edge Delivery Services.](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
 * You are running AEM as a Cloud Service 2024.08 at a minimum.
 
-You will also need to ask Adobe to configure two items for you. Reach out to Adobe via your Teams channel or raise a support issue to make these requests.
+You will also need to ask Adobe to configure two items for you. Reach out to Adobe via your Slack channel or raise a support issue to make these requests.
 
 * The [aem.live configuration service](https://www.aem.live/docs/config-service-setup#prerequisites) is active for your environment and you are configured as an administrator.
 * The repoless feature must be enabled for your org by Adobe.
@@ -47,16 +49,16 @@ These steps use the site `https://wknd.site` as an example. Substitute your own 
 
 You will first need an access token to use the configuration service and configure it for the repoless use case.
 
-1. Go to `https://admin.hlx.page/login` and use the `login_adobe` link to login with the Adobe identity provider.
+1. Go to `https://admin.hlx.page/login` and use the `login_adobe` address to login with the Adobe identity provider.
 1. You will be forwarded to `https://admin.hlx.page/profile`.
-1. Copy the value of the `x-auth-token` you can copy this either from:
+1. Copy the value of the `x-auth-token` either from:
    * The JSON that the Adobe login service returns.
    * From the JSON web token cookie that the `admin.hlx.page` page sets by using your browser's developer tools.
 
 Once you have your access token, it can be is passed in the header of cURL requests in the following format.
 
 ```text
---header 'x-auth-token: id_token=<your-bearer-token>&idp_name=adobe'
+--header 'x-auth-token: <your-token>'
 ```
 
 ### Configure Your Configuration Service {#config-service}
@@ -65,41 +67,39 @@ As mentioned in the [prerequisites,](#prerequisites) the configuration service m
 
 ```text
 curl  --location 'https://admin.hlx.page/config/<your-github-org>.json' \
---header 'x-auth-token: id_token=<your-token>&idp_name=adobe'
+--header 'x-auth-token: <your-token>'
 ```
 
 Reach out to Adobe via your project Slack channel or raise a support issue if your configuration service is not enabled. Once you have your token and verified that the configuration service is enabled, you can continue the configuration.
 
-1. Set up the content source and GitHub code source.
-
-   * The sources can be checked with the following cURL command.
+1. Check that your content source is set up properly.
 
    ```text
    curl --request GET \
-   --url https://admin.hlx.page/config/<org>/sites/my-aem-project.json \
-   --header 'x-auth-token: id_token=<your-token>&idp_name=adobe'
+   --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>.json \
+   --header 'x-auth-token: <your-token>'
    ```
 
-1. Add a path mapping configuration to the public configuration.
+1. Add a path mapping to the public configuration.
 
    ```text
    curl --request POST \
-     --url https://admin.hlx.page/config/mhaack/sites/my-aem-project/public.json \
+     --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>/public.json \
      --header 'x-auth-token: id_token=<your-token>&idp_name=adobe' \
      --header 'Content-Type: application/json' \
      --data '{
        "paths": {
            "mappings": [
-               "/content/mh-aem-project/:/"
+               "/content/<your-site-content>/:/"
       ],
            "includes": [
-               "/content/mh-aem-project/"
+               "/content/<your-site-content>/"
            ]
        }
    }'
    ```
 
-Once the public configuration is created, you can access it via a URL similar to `https://main--my-aem-project--mhaack.aem.page/config.json` in order to verify it.
+Once the public configuration is created, you can access it via a URL similar to `https://main--<your-aem-project>--<your-github-org>.aem.page/config.json` in order to verify it.
 
 ### Set Access Control {#access-control}
 
@@ -153,7 +153,7 @@ To set up access control, you need to provide the technical account.
        }
    }'
    ```
-1. Remove `fstab.yaml` and `paths.json` from your Git repository.
+1. Since you now use the configuration service, you can remove `fstab.yaml` and `paths.json` from your Git repository.
    >[!NOTE]
    >
    >By using the configuration service and exposing the path mapping via `config.json`, the `path.json` file is ignored.
@@ -181,6 +181,13 @@ To authenticate your preview and publish services, you will need to provide an a
 1. Sign into the AEM author instance and go to **Tools** -&gt; **Cloud Configurations** -&gt; **Edge Delivery Services Configuration** and select the configuration that was automatically created for your site and tap or click **Properties** in the tool bar.
 1. In the **Edge Delivery Services Configuration** window, provide the `<site-auth-token>` value in the `Site Authentication Token` field and tap or click **Save &amp; Close**.
    ![Edge Delivery Services Configuration](/help/edge/wysiwyg-authoring/assets/repoless/site-authentication-token.png)
+
+## Next Steps {#next-steps}
+
+Now that your base site is configured for repoless usage, you can create additional sites that leverage the same code base. Refer to the following documentation depending on your use case.
+
+* [Repoless Multi Site Management](help/edge/wysiwyg-authoring/repoless-msm.md)
+* [Repoless Stage and Prod Environments](help/edge/wysiwyg-authoring/repoless-stage-prod.md)
 
 ## Troubleshooting {#troubleshooting}
 
