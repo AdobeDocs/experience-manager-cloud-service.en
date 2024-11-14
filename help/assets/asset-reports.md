@@ -59,7 +59,7 @@ When a report is generated, you are notified via <!-- through an email (optional
    ![Tools page to navigate assets report](assets/navigation.png)
 
 1. On the [!UICONTROL Asset Reports] page, click **[!UICONTROL Create]** from the toolbar.
-1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and click **[!UICONTROL Next]**. Entitle yourself with an **AEM Administrator product profile** to create a **Download** report. See [Assigning AEM Product Profiles](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) to entitle yourself to an AEM Administrator product profile.
+1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and click **[!UICONTROL Next]**. Entitle yourself to an **AEM Administrator product profile** to create a **Download** report. See [Assigning AEM Product Profiles](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) to entitle yourself to an AEM Administrator product profile.
 
    ![Select report type](assets/choose_report.png)
 
