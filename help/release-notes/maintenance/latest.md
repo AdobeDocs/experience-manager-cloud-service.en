@@ -10,15 +10,18 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 18459 {#18459}
+## Release 18598 {#18598}
 
-Summarized below are the continuous improvements for maintenance release 18459, which was publicly released on November 5, 2024. The previous maintenance release was release 18311.
+Summarized below are the continuous improvements for maintenance release 18598, which was publicly released on November 13, 2024. The previous maintenance release was release 18311. Release 18459 has been made private because of an issue.
 
 The 2024.11.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-18459}
+### Enhancements {#enhancements-18598}
 
 * CQ-4357471: Add support for i18n Dictionaries Translation in AEMaaCS.
+* FORMS-11646: Setting globalContext Variables for AEM Forms relevant pages.
+* FORMS-14833: The AEM Forms now has the capability to include Adaptive Form fragments in final Document of Record (DoR).
+* FORMS-14255: Users can now benefit from an auto-save feature that saves a partially completed form as a draft automatically. They can return later to finish filling it out on the same or other device.
 * SITES-23591: Content Fragments: Content fragment upgrade for UUID support.
 * SITES-25440: Content Fragments: CFM Search API to show replication status.
 * SITES-24369: Content Fragments: OpenAPI documentation improvements.
@@ -27,16 +30,18 @@ The 2024.11.0 feature activation will provide the full feature set for this main
 * SITES-21199: Edge Delivery with Universal Editor: Add suppprt for templates created from pages.
 * SITES-20311: Edge Delivery with Universal Editor: Add support to import CSVs into Spreadsheets.
 * SITES-24821: Edge Delivery with Universal Editor: Make aem.page / aem.live the default to integrate with Edge Delivery. 
-* FORMS-11646: Setting globalContext Variables for AEM Forms relevant pages
-* FORMS-14833: The AEM Forms now has the capability to include Adaptive Form fragments in final Document of Record (DoR).
-* FORMS-14255: Users can now benefit from an auto-save feature that saves a partially completed form as a draft automatically. They can return later to finish filling it out on the same or other device.
 
-
-### Fixed Issues {#fixed-issues-18459}
+### Fixed Issues {#fixed-issues-18598}
 
 * CQ-4358730: CQPagePreviewGenerator fails when there are more than 10 keys to be translated.
+* CQ-4358028: AEM project creation fails when a user with only project-administrators group uploads a new thumbnail on the project creation page.
 * FORMS-14978: Enabling page load for a Core Component based form for theme editor.
+* FORMS-15682: The issue involves AEM Forms and Dynamics FDM integration. When a user submits a form, the Document of Record (DOR) is not being sent as a PDF attachment to the specified entity field.
+* FORMS-15799: Adobe Sign GovCloud Signature page does note render in iframe.
+* FORMS-16113: When a user, who is an admin of the Adobe Sign account, tries to access a document sent by another user (also an admin), the get agreement API may return a different agreement ID than the one initially generated when the agreement was created. 
 * FORMS-16596: Accessibility Issue: Disabled Buttons Not Recognized by Screen Reader.
+* GRANITE-53907: Unable to identify service user as workflow super user.
+* SKYOPS-90560: Latest Sling Model release impacts performance of Sling Model export.
 * SITES-10575: MSM: Blueprint Bloomfilter Loader tries to load >100,000 rows.
 * SITES-20755: Content Fragments: Asset reference with UUID refresh doesn't show the thumbnail.
 * SITES-26253: Content Fragments: UUID migration: Change sling job topic to be generic.
@@ -57,27 +62,21 @@ The 2024.11.0 feature activation will provide the full feature set for this main
 * SITES-25938: Launches: Unexpected deletion post Translation project.
 * SITES-25393: Edge Delivery with Universal Editor: Text nodes lost when rendering formatted richtext with single paragraph.
 * SITES-24643: Edge Delivery with Universal Editor: OpenGraph and twitter metadata attributes not working in page metadata model. 
-* SITES-25401: Experience Fragments: Slow XF reference update 
-* GRANITE-53907: Unable to identify service user as workflow super user
-* CQ-4358028: AEM project creation fails when a user with only project-administrators group uploads a new thumbnail on the project creation page.
-* FORMS-15682: The issue involves AEM Forms and Dynamics FDM integration. When a user submits a form, the Document of Record (DOR) is not being sent as a PDF attachment to the specified entity field.
-* FORMS-15799: Adobe Sign GovCloud Signature page does note render in iframe
-* FORMS-16113: When a user, who is an admin of the Adobe Sign account, tries to access a document sent by another user (also an admin), the get agreement API may return a different agreement ID than the one initially generated when the agreement was created. 
+* SITES-25401: Experience Fragments: Slow XF reference update.
 
-
-### Known Issues {#known-issues-18459}
+### Known Issues {#known-issues-18598}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-18459}
+### Deprecated Features and APIs {#deprecated-18598}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-18459}
+### Security Fixes {#security-18598}
 
 AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 21 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-18459}
+### Embedded Technologies {#embedded-tech-18598}
 
 |Technology|Version|Link|
 |---|---|---|
