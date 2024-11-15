@@ -112,18 +112,18 @@ The content upgrade can be managed using the endpoint: `/libs/dam/cfm/maintenanc
 | Endpoint | HTTP request type | Comment |
 |--- |--- |--- |
 | `/libs/dam/cfm/maintenance.json`| `POST`| |
-| action | `start`| |
-| basePath | `/conf` | Specify either:<ul><li>the root `/conf` to upgrade all the AEM configurations</li><li>a selected AEM configuration path. for which the content upgrade is executed<br>For example: `/conf/wknd-shared` only upgrades the single tenant `wknd-shared`</li></ul> |
-| dryRun | `true`, `false`| <ul><li>`false`: simulate the content upgrade, without saving any content changes</li><li>`true`: perform the content upgrade, and save content changes</li></ul> |
-| interval | `10`| Interval in seconds, after which the next segment of Content Fragments, or models is upgraded. |
-| jobId | `UUID`| The ID of the job that executes the content upgrade.<ul><li>This ID is required in any subsequent calls related to this execution.</li><li>If the `mode` value is set to `replicate`, execution on AEM Publish instances also need to be under the same `jobId`.</li></ul> |
-| mode | `replicate`, `noReplicate`| <ul><li>`replicate`: replicates the same job on all AEM Publish instances</li><li>`noReplicate`: only runs the job on AEM Author instances</li></ul> |
-| parameters | The content upgrade parameters | These include the initial parameters provided to start the content upgrade, and some internal defaults. |
 | **Request parameters** | **Value** | |
-| &nbsp; | &nbsp; | &nbsp; |
-| **Response details** | **Value** | | 
-| segmentSize | `1000` | The number of Content Fragments or models that will be upgraded in one segment (batch). |
+| action | `start`| |
 | serviceTypeId | `uuidUpgradeService` | The service type ID (predefined, fixed value). |
+| segmentSize | `1000` | The number of Content Fragments or models that will be upgraded in one segment (batch). |
+| basePath | `/conf` | Specify either:<ul><li>the root `/conf` to upgrade all the AEM configurations</li><li>a selected AEM configuration path. for which the content upgrade is executed<br>For example: `/conf/wknd-shared` only upgrades the single tenant `wknd-shared`</li></ul> |
+| interval | `10`| Interval in seconds, after which the next segment of Content Fragments, or models is upgraded. |
+| mode | `replicate`, `noReplicate`| <ul><li>`replicate`: replicates the same job on all AEM Publish instances</li><li>`noReplicate`: only runs the job on AEM Author instances</li></ul> |
+| dryRun | `true`, `false`| <ul><li>`false`: simulate the content upgrade, without saving any content changes</li><li>`true`: perform the content upgrade, and save content changes</li></ul> |
+| **Response details** | **Value** | | 
+| jobId | `UUID`| The ID of the job that executes the content upgrade.<ul><li>This ID is required in any subsequent calls related to this execution.</li><li>If the `mode` value is set to `replicate`, execution on AEM Publish instances also need to be under the same `jobId`.</li></ul> |
+| parameters | The content upgrade parameters | These include the initial parameters provided to start the content upgrade, and some internal defaults. |
+
 
 ### Example Content Upgrade Request {#example-content-upgrade-request}
 
