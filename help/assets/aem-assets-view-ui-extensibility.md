@@ -1,8 +1,9 @@
 ---
 title: AEM Assets View UI Extensibility
-description: Learn about the UI Extensibility capability of AEM Assets View. AEM Assets View UI enables adding custom UI components to meet specific business needs.   
+description: Learn about the UI Extensibility capability of AEM Assets View. AEM Assets View UI enables adding custom UI components to meet specific business needs.
 feature: App Builder
 role: User, Developer
+exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
 ---
 # AEM Assets View UI Extensibility{#AEM-Assets-View-UI-Extensibility}
 
@@ -20,7 +21,7 @@ You can add your Extensions to Asset, Folder and Collection level. The added ext
 Access the Assets view in the following ways:
 ![access-assets-view-ui](/help/assets/assets/access-assets-view.jpg)
 
-## Where the added UI Extensibility Component displays on Assets View UI? {#ui-extensibility-panel-assets-view}
+## Where does UI Extensions display on the Assets View UI? {#ui-extensibility-panel-assets-view}
 
 Within Assets View, navigate to the Details page of an asset, folder or a collection. This Details page has a dedicated panel that displays the added UI Extension.
 ![my workspace](/help/assets/assets/my-workspace-assets-view3.png)
@@ -46,5 +47,3 @@ Within Assets View, navigate to the Details page of an asset, folder or a collec
 1. Set up your local environment and Experience the process of developing UI extensions in Assets view firsthand by creating your first UI extension. See [Step-by-step AEM Assets View Extension Development](https://developer.adobe.com/uix/docs/services/aem-assets-view/extension-development/) for more details.
 1. Set up your app using the AIO CLI to generate the basic extension structure and required code. See [Code Generation for AEM Assets View](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/) for detailed information.
 1. Test your extensions locally to ensure that they work as expected before deployment. Run your extension in a fully isolated environment or with partial isolation and connect your extension to the production AEM Assets View for testing. See [Troubleshooting - AEM Assets View Extensibility](https://developer.adobe.com/uix/docs/services/aem-assets-view/debug/) for detailed information.
-
-
