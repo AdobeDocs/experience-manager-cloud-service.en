@@ -70,9 +70,17 @@ UES_PORT=8000
 UES_PRIVATE_KEY=./key.pem
 UES_CERT=./certificate.pem
 UES_TLS_REJECT_UNAUTHORIZED=false
+UES_CORS_PRIVATE_NETWORK=true
 ```
 
-These are the minimum values required for local development in our example. The following table details these and additional values available.
+These are the minimum values required for local development in our example.
+
+>[!NOTE]
+>
+>If you are running Chrome version 130+, you must enable sending CORS headers for [private network access](https://wicg.github.io/private-network-access/#private-network-request) using the `UES_CORS_PRIVATE_NETWORK` option.
+
+
+The following table details these and additional values available.
 
 |Value|Optional|Default|Description|
 |---|---|---|---|
@@ -87,6 +95,7 @@ These are the minimum values required for local development in our example. The 
 |`UES_SPLUNK_TOKEN`|Yes|None|Splunk token|
 |`UES_SPLUNK_INDEX`|Yes|None|Index to write logs to|
 |`UES_SPLUNK_SOURCE`|Yes|`universal-editor-service`|Name of the source in the splunk logs|
+|`UES_CORS_PRIVATE_NETWORK`|Yes|`false`|Enable sending CORS headers to allow [Private network.](https://wicg.github.io/private-network-access/#private-network-request) Required for users of Chrome version 130+|
 
 >[!NOTE]
 >
