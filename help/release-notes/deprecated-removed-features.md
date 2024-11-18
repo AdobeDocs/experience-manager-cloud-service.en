@@ -493,3 +493,16 @@ Additional information about OSGI configuration can be found at [this location](
     * Type: boolean
 +++
 
+## Java Runtime Update to Version 21 {#java-runtime-update-21}
+
+AEM as a Cloud Service will be moving to Java 21 runtime. In order to ensure compatibility, it is essential to make the following adjustments:
+
+### Minimum version of org.objectweb.asm {#org.objectweb.asm}
+
+Update the usage of org.objectweb.asm to version 9.5 or higher to ensure support for newer JVM runtimes.
+
+### Minimum version of org.apache.groovy {#org.apache.groovy}
+
+Update the usage of org.apache.groovy to version 4.0.22 or higher to ensure support for newer JVM runtimes.
+
+This bundle can be indirectly included by adding third party dependencies such as the AEM Groovy Console.

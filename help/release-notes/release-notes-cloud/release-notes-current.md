@@ -95,19 +95,19 @@ Administrators can now control if they need expired assets to be visible on Cont
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### New features in AEM Forms {#forms-new-features}
+### New feature in AEM Forms {#forms-new-features}
 
-* **Enhance User Experience with Navigation Buttons in Panel Layouts**: You can now add navigation buttons to your panel layouts, such as Horizontal Tabs, Vertical Tabs, Accordions, or Wizard. These buttons enhance the user experience by simplifying transitions between panels, focusing on the selected panel.
+* [Enhance User Experience with Navigation Buttons in Panel Layouts](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button): You can now add navigation buttons to your panel layouts, such as Horizontal Tabs, Vertical Tabs, Accordions, or Wizard. These buttons enhance the user experience by simplifying transitions between panels, focusing on the selected panel.
 
-* **Specify Display Styles for Document of Record (DoR) Components**: In an XFA file, you can now specify the display styles for Document of Record components. These styles can later be applied to the corresponding components in Adaptive Forms Editor.
+<!--* **Specify Display Styles for Document of Record (DoR) Components**: In an XFA file, you can now specify the display styles for Document of Record components. These styles can later be applied to the corresponding components in Adaptive Forms Editor.-->
 
 ### New Pre-release features in AEM Forms {#forms-new-prerelease-features}
 
-* **Auto-save a draft for Core Components based Adaptive Forms**: Users can now benefit from an auto-save feature that saves a partially completed form as a draft automatically. They can return later to finish filling it out on the same or other device. This feature improves conversion rates for organizations by reducing form abandonment, as users do not need to start over form filling from the beginning.
+* [Auto-save a draft for Core Components based Adaptive Forms](/help/forms/save-core-component-based-form-as-draft.md): Users can now benefit from an auto-save feature that saves a partially completed form as a draft automatically. They can return later to finish filling it out on the same or other device. This feature improves conversion rates for organizations by reducing form abandonment, as users do not need to start over form filling from the beginning.
 
-* **Update Adobe Sign scopes easily**: You can modify the scopes of an Adobe Sign configuration directly from the AEM Cloud Configurations page, making it quicker and easier to update existing configurations.
+* [Update Adobe Sign scopes easily](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms): You can modify the scopes of an Adobe Sign configuration directly from the AEM Cloud Configurations page, making it quicker and easier to update existing configurations.
 
-* **Asynchronous function support for Adaptive Forms**: When your Adaptive Form requires asynchronous operations, such as waiting for external processes or data retrieval, you can implement these operations with custom functions and configure them in the Rule Editor.
+* [Asynchronous function support for Adaptive Forms](/help/forms/using-async-funct-in-rule-editor.md): When your Adaptive Form requires asynchronous operations, such as waiting for external processes or data retrieval, you can implement these operations with custom functions and configure them in the Rule Editor.
  
 ### Early Access features in AEM Forms {#forms-new-early-access-features}
 
@@ -117,7 +117,7 @@ This release notes lists the innovations delivered in the current release. For t
 
 #### AEM Forms AI Assistant
 
-Generative AI for Adaptive Forms brings a whole new level of power and ease to your forms development processes. It allows you to build better forms faster than ever before. 
+[Generative AI for Adaptive Forms](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features#aem-forms-ai-assistant-gen-ai) brings a whole new level of power and ease to your forms development processes. It allows you to build better forms faster than ever before. 
 
 ![Generative AI Assistant, Adaptive Forms](/help/forms/assets/generative-ai-assistant.png)
 
@@ -191,7 +191,7 @@ Anyone can access the public beta by clicking the *New Console Available* button
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-You can find a complete list of new and enhanced features of the latest release of Adobe Experience Manager Guides [here](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0).
+You can find a complete list of new and enhanced features of the latest release of Adobe Experience Manager Guides [here](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-0-release/whats-new-2024-10-0).
 
 ## Cloud Manager {#cloud-manager}
 
