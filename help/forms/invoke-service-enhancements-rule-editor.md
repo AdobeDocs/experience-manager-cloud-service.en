@@ -9,7 +9,7 @@ keywords: invoke service enhancements in VRE, populating drop-down options using
 
 # Using Invoke Service in the Visual Rule Editor for forms based on Core Components
 
-Visual Rule Editor in an Adaptive Form supports the **Invoke Service** operation. This operation allows you to select a service from the list of Form Data Models (FDM) configured for your instance. You can map objects to input and output parameters using the event payload option for the specified FDM service. Additionally, the Visual rule editor allows you to create rules for success and failure handlers for **Invoke Service** operations based on its output responses. Success handlers manage the successful execution of the **Invoke Service** operation, while failure handlers address any errors that occur.
+The Visual Rule Editor in an Adaptive Form supports the **Invoke Service** feature, which allows you to select a service from the list of Form Data Models (FDM) configured for your instance. You can map form fields directly to the input parameters of the service. To map form fields to the output parameters, use the event payload option for the specified Form Data Model service. Additionally, the Visual rule editor allows you to create rules for success and failure handlers for **Invoke Service** operations based on its output responses. Success handlers manage the successful execution of the **Invoke Service** operation, while failure handlers address any errors that occur.
 
 ### Advantages of using the Invoke Service in the form's rule editor
 
@@ -43,6 +43,8 @@ Similarly, you can add rules to handle the **Invoke Service** output response wh
 
 ![Invoke service failure hadler](/help/forms/assets/invoke-service-failue-handler.png)
 
+You can also add multiple rules to handle unsuccessful responses from the **Invoke Service** operation.
+
 ## Prerequisites for using the Invoke Service in the rule editor
 
 Below are the prerequisites you must satisfy before using **Invoke Service** in the rule editor:
@@ -64,33 +66,149 @@ The table below describes a few scenarios in which the **Invoke Service** can be
 | **Set panel using output of Invoke Service**             | Sets the content or visibility of a panel using specific values from the Invoke Service output. [Click here](#use-case-3), to see the implementation.          |
 | **Use output parameter of Invoke Service to validate other fields** | Uses specific output parameters from the Invoke Service to validate the form fields. [Click here](#use-case-4), to see the implementation.  |
 
-In our examples, the [Swagger Petstore](https://petstore.swagger.io/) is used to configure a data source. The Form Data Model is set up for the [getPetById](https://petstore.swagger.io/#/pet/getPetById) service, which retrieves pet information based on the entered ID. Rules and logic are created using the **Invoke Service** in the rule editor to demonstrate the above-mentioned use cases.
+Create a `Get Information` form that retrieves values based on the input entered in the `Pet ID` text box. The screenshot below shows the form used in these use cases:
+
+![Get information form](/help/forms/assets/get-information-form.png)
+
+**Form Fields**
+
+Add the following fields to the form:  
+- **Enter Pet ID**: Textbox  
+- **Select Photo URLs**: Dropdown  
+- **Tags**: Panel  
+  - Name: Textbox  
+  - ID: Textbox  
+- **Category**: Panel  
+  - Name: Textbox  
+- **Submit**: Submit button  
+
+>[!NOTE]
+>
+> In the **Bind Reference** field in the **Properties** dialog of the form fields, select ![foldersearch_18](assets/folder-search-icon.svg) and navigate to select the binary property you added in the Form Data Model (FDM).
+
+**Configuring panels**  
+
+Set the panels as repetitive with the following constraints:  
+* Minimum value: 1  
+* Maximum value: 4  
+
+You can adjust the values of the repetitive panels to suit your requirements.  
+
+**Data source** 
+
+In this example, the [Swagger Petstore](https://petstore.swagger.io/) API is used to configure a data source. The [Form Data Model](/help/forms/create-form-data-models.md) is configured for the [getPetById](https://petstore.swagger.io/#/pet/getPetById) service, which retrieves pet details based on the entered ID.  
+
+Let's post the following JSON using the [addPet](https://petstore.swagger.io/#/pet/addPet) service in the [Swagger Petstore](https://petstore.swagger.io/) API:
+
+```
+{
+        "id": 101,
+        "category": {
+            "id": 1,
+            "name": "Labrador"
+        },
+        "name": "Lisa",
+        "photoUrls": [
+            "https://example.com/photos/lisa1.jpg",
+            "https://example.com/photos/lisa2.jpg"
+        ],
+        "tags": [
+            {
+                "id": 1,
+                "name": "vaccinated"
+            },
+            {
+                "id": 2,
+                "name": "friendly"
+            },
+            {
+                "id": 3,
+                "name": "house-trained"
+            }
+        ],
+        "status": "available"
+    }
+
+```
+
+
+Rules and logic are implemented using the **Invoke Service** action in the rule editor on the `Pet ID` textbox to demonstrate the mentioned use cases.  
 
 Let's now explore the implementation of each use case in detail.
 
-### Use Case 1: Populate dropdown options using output of Invoke Service
+### Use Case 1: Populate dropdown values using the output of Invoke Service  
 
-#### Consideration
+This use case demonstrates how to populate dropdown options dynamically based on the output of an `Invoke Service`.  
 
-#### Implementation
+#### Implementation  
 
-### Use Case 2: Set repeatable panel using output of Invoke Service
+To achieve this, create a rule on the `Pet ID` text box to invoke the `getPetById` service. In the rule, set the `enum` property of the `photo-url` dropdown to `photoUrls` in **[!UICONTROL Add Success Handler]**.  
 
-#### Consideration
+![Set drop-down value](/help/forms/assets/set-dropdownoption.png)  
 
-#### Implementation
+#### Output  
 
-### Use Case 3: Set panel using output of Invoke Service
+Enter `101` in the `Pet ID` text box to dynamically populate the dropdown options based on the entered value.  
 
-#### Consideration
+![Result](/help/forms/assets/output1.png)  
 
-#### Implementation
+### Use Case 2: Set repeatable panel using output of Invoke Service  
 
-### Use Case 4: Use output parameter of Invoke Service to validate other fields
+This use case demonstrates how to populate repeatable panels dynamically based on the output of an **Invoke Service**.  
 
-#### Consideration
+#### Considerations  
 
-#### Implementation
+- Ensure the name of the repeatable panel matches the parameter of the **Invoke Service** for which you want to set the panel.  
+- The panel repeats for the number of values returned by the corresponding **Invoke Service** field.  
+
+#### Implementation  
+
+Create a rule on the `Pet ID` text box to invoke the `getPetById` service. In **[!UICONTROL Add Success Handler]**, add another success handler response. Set the value of the `tags` panel to `tags` in the rule.  
+
+![Create rule for repeatable panel](/help/forms/assets/create-rule-repeatable-panel.png)  
+
+#### Output  
+
+Enter `101` in the `Pet ID` text box to populate the repeatable panel dynamically based on the input value.  
+
+![Output](/help/forms/assets/output2.png)  
+
+### Use Case 3: Set panel using output of Invoke Service  
+
+This use case demonstrates how to dynamically set the value of a panel based on the output of an **Invoke Service**.  
+
+#### Considerations  
+
+* Ensure the name of the panel matches the parameter of the **Invoke Service** for which you want to set the panel.  
+* The panel repeats for the number of values returned by the corresponding Invoke Service field.  
+
+#### Implementation  
+
+Create a rule on the `Pet ID` text box to invoke the `getPetById` service. In **[!UICONTROL Add Success Handler]**, add another success handler response. Set the value of the `categoryname` text box to `category.name` in the rule.  
+
+![Create rule for repeatable panel](/help/forms/assets/set-panel-values.png)  
+
+#### Output  
+
+Enter `101` in the `Pet ID` text box to populate the panel dynamically based on the input value.  
+
+![Output](/help/forms/assets/output3.png)  
+
+### Use Case 4: Use output parameter of Invoke Service to validate other fields  
+
+This use case demonstrates how to use the output of an **Invoke Service** to dynamically validate other form fields.  
+
+#### Implementation  
+
+Create a rule on the `Pet ID` text box to invoke the `getPetById` service. In **[!UICONTROL Add Failure Handler]**, add a failure handler response. Hide the **Submit** button if an incorrect `Pet ID` is entered.  
+
+![Failure Handler](/help/forms/assets/create-rule-failure-handler.png)  
+
+#### Output  
+
+Enter `102` in the `Pet ID` text box, and the **Submit** button is hidden. 
+
+![Output](/help/forms/assets/output4.png)  
 
 ## Frequently asked questions
 
