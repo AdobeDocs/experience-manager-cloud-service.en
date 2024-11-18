@@ -73,14 +73,14 @@ Create a `Get Information` form that retrieves values based on the input entered
 **Form Fields**
 
 Add the following fields to the form:  
-- **Enter Pet ID**: Textbox  
-- **Select Photo URLs**: Dropdown  
-- **Tags**: Panel  
-  - Name: Textbox  
-  - ID: Textbox  
-- **Category**: Panel  
-  - Name: Textbox  
-- **Submit**: Submit button  
+* **Enter Pet ID**: Textbox  
+* **Select Photo URLs**: Dropdown  
+* **Tags**: Panel  
+  * Name: Textbox  
+  * ID: Textbox  
+* **Category**: Panel  
+  * Name: Textbox  
+* **Submit**: Submit button  
 
 >[!NOTE]
 >
@@ -158,8 +158,8 @@ This use case demonstrates how to populate repeatable panels dynamically based o
 
 #### Considerations  
 
-- Ensure the name of the repeatable panel matches the parameter of the **Invoke Service** for which you want to set the panel.  
-- The panel repeats for the number of values returned by the corresponding **Invoke Service** field.  
+* Ensure the name of the repeatable panel matches the parameter of the **Invoke Service** for which you want to set the panel.  
+* The panel repeats for the number of values returned by the corresponding **Invoke Service** field.  
 
 #### Implementation  
 
