@@ -99,9 +99,9 @@ After prerequisites are in place, perform the following steps to configure [!DNL
     * [!DNL widget_write]
     * [!DNL workflow_read]
 
-    ![NOTE]
+    >[!NOTE]
     > You can change the scopes modifier from `self` to `account` directly from AEM UI as given in the step 12.
-
+    
    For step-by-step information to configure OAuth settings for an [!DNL Adobe Acrobat Sign] application and obtain the keys, see [Configure oAuth settings for the application](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) developer documentation.
 
    ![OAuth Config](/help/forms/assets/oauthconfig-new.png)
