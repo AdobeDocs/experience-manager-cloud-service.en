@@ -515,11 +515,11 @@ Update the usage of bnd-maven-plugin to version 6.4.0 or higher to ensure suppor
 
 Update the usage of aemanalyser-maven-plugin to version 1.6.6 or higher to ensure support for newer JVM runtimes.
 
-### Minimum version of maven-bundle-plugin  {#maven-bundle-plugin }
+### Minimum version of maven-bundle-plugin  {#maven-bundle-plugin}
 
 Update the usage of maven-bundle-plugin to version 5.1.5 or higher to ensure support for newer JVM runtimes.
 
-### Update dependencies in maven-scr-plugin  {#maven-scr-plugin }
+### Update dependencies in maven-scr-plugin  {#maven-scr-plugin}
 
 The `maven-scr-plugin` is not directly compatible with Java 17 and 21. However, it remains possible to generate the descriptor files by updating the ASM dependency version within the plugin configuration.
 for that we need to update it something like below:
