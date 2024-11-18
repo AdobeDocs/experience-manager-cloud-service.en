@@ -1180,6 +1180,7 @@ user-guide-title: AEM as a Cloud Service
     + [Configurations and the Configuration Browser](/help/implementing/developing/introduction/configurations.md)
     + [AEM Technical Foundations](/help/implementing/developing/introduction/aem-technologies.md)
     + [API Reference Materials](/help/implementing/developing/reference-materials.md)
+    + [Open API Based APIs](/help/implementing/developing/open-api-based-apis.md)
     + [Generating Access Tokens for Server Side APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
     + [Generating Access Tokens for Server Side APIs (Legacy)](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
     + [Quick Site Creation and Front-End Customization](/help/implementing/developing/introduction/quick-site-creation.md)
