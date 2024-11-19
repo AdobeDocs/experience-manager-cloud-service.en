@@ -392,7 +392,7 @@ To validate that traffic is indeed outgoing on the expected dedicated IP address
 
 ## Virtual Private Network (VPN) {#vpn}
 
-A VPN allows connecting to an on-premise infrastructure or data center from the author, publish, or preview instances. This can be useful, for example, to secure access to a database. It also allows connecting to SaaS vendors such as a CRM vendor that supports VPN or connecting from a corporate network to AEM as a Cloud Service author, preview, or publish instance.
+A VPN allows connecting to an on-premise infrastructure or data center from the author, publish, or preview instances. This can be useful, for example, to secure access to a database. It also allows connecting to SaaS vendors such as a CRM vendor that supports VPN.
 
 Most VPN devices with IPSec technology are supported. Consult the information in the **RouteBased configuration instructions** column in [this list of devices.](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable) Configure the device as described in the table.
 
@@ -552,7 +552,9 @@ The table below describes traffic routing.
 
 ### Useful Domains for Configuration {#vpn-useful-domains-for-configuration}
 
-The table below describes a set of domains and IPs that are useful for configuration and development.
+The diagram below provides a visual representation of a set of domains and associated IPs that are useful for configuration and development. The table further below the diagram describes those domains and IPs.
+
+![VPN Domain Configuration](/help/security/assets/AdvancedNetworking.jpg)
 
 <table>
 <thead>
@@ -575,21 +577,6 @@ The table below describes a set of domains and IPs that are useful for configura
   </tr>
 </tbody>
 </table>
-
-### Restrict VPN to Ingress Connections {#restrict-vpn-to-ingress-connections}
-
-If you want to allow only VPN access to AEM, environment allowlists can be configured in Cloud Manager so that only the IP defined by `p{PROGRAM_ID}.external.adobeaemcloud.com` is allowed to talk to the environment. This can be done the same way as any other IP-based allowlist in Cloud Manager.
-
-If rules must be path-based, use standard http directives at the Dispatcher level to deny or allow certain IPs. They should ensure that the desired paths are also not cacheable at the CDN so that the request always gets to origin.
-
-#### Httpd Config Example {#httpd-example}
-
-```
-Order deny,allow
-Deny from all
-Allow from 192.168.0.1
-Header always set Cache-Control private
-```
 
 ## Enabling Advanced Networking Configurations on Environments {#enabling}
 
