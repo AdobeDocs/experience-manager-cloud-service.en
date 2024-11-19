@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 
 >[!NOTE]
 >
->OpenAPIs are available as part of an early access program. If you are interested in accessing them, we encourage you to email placeholder@adobe.com with a description of your use case.
+>OpenAPIs are available as part of an early access program. If you are interested in accessing them, we encourage you to email [aem-apis@adobe.com](mailto:aem-apis@adobe.com) with a description of your use case.
 
 Newer AEM as a Cloud Service APIs follow the OpenAPI specification, and thus produce consistent, well-documented, and user-friendly APIs. In-depth information is available in the following pages:
 
