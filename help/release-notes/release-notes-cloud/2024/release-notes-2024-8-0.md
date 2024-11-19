@@ -3,10 +3,11 @@ title: Release Notes for 2024.8.0 release of [!DNL Adobe Experience Manager] as 
 description: Release Notes for 2024.8.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
+exl-id: dd1d4b8f-8331-4e97-a754-37e720974db6
 ---
 # 2024.8.0 Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-The following section outlines the feature release notes for the current (latest) version of [!DNL Experience Manager] as a Cloud Service.
+The following section outlines the feature release notes for the 2024.8.0 version of [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -46,7 +47,7 @@ Existing Sites [inheritance](/help/sites-cloud/authoring/universal-editor/inheri
 In addition, the following page management features are now supported:
 
 * [AEM Tags](/help/sites-cloud/authoring/sites-console/tags.md) can be exported as a [taxonomy](/help/edge/wysiwyg-authoring/taxonomy.md) to Edge Delivery Services.
-* [Templates](/help/edge/wysiwyg-authoring/templates.md) for Edge Delivery Services are coming soon!
+* [Templates](/help/sites-cloud/authoring/universal-editor/templates.md) for Edge Delivery Services are coming soon!
 
 ### Early Adopter Program {#sites-early-adopter}
 

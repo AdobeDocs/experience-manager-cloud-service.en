@@ -34,7 +34,7 @@ Unless all pages have been created for you in advance, you must create a page be
 1. From the first stage of the wizard, you can either:
 
     * Select the template you want to use to create the new page, then select **Next** to proceed or **Cancel** to abort the process.
-    * Templates are supported for both the [Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md) as well as for the [Universal Editor.](/help/edge/wysiwyg-authoring/templates.md)
+    * Templates are supported for both the [Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md) as well as for the [Universal Editor.](/help/sites-cloud/authoring/universal-editor/templates.md)
 
    ![Selecting a template for a new page](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
 

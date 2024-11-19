@@ -1,11 +1,10 @@
 ---
 title: Add External Repositories in Cloud Manager (Early Adopter)
 description: Learn how to add an external repository into Cloud Manager. Cloud Manager supports integration with GitHub, GitLab, and Bitbucket repositories.
-
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
+exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
 ---
-
 # Add external repositories in Cloud Manager {#external-repositories}
 
 Learn how to add an external repository into Cloud Manager. Cloud Manager supports integration with GitHub, GitLab, and Bitbucket repositories.
@@ -96,7 +95,3 @@ After validation, the external repository is ready to use and link to a pipeline
 
 * External repositories cannot be linked to Configuration pipelines.
 * Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started.
-
-
-
-
