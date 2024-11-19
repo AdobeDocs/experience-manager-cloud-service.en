@@ -1,11 +1,11 @@
 ---
-title: Open API Based APIs
-description: Learn about AEM as a Cloud Service support for Open API based APIs
+title: OpenAPI-based APIs
+description: Learn about AEM as a Cloud Service support for OpenAPI-based APIs
 feature: Developing
 role: Admin, Architect, Developer
 ---
 
-# Open API based APIs {#open-api-based-apis}
+# OpenAPI-based APIs {#open-api-based-apis}
 
 >[!NOTE]
 >
@@ -28,9 +28,9 @@ Many OpenAPI-based AEM APIs require authentication, which requires credentials t
 1. Generate the credential, which should be used to generate a bearer token used in the API call
 1. Register the client id with the environment by configuring a YAML file and deploy it using the Config Pipeline (or via CLI if the environment is an RDE). See the Registering a Client Id section below.
 
-## Registering a Client Id {#registering-a-client-id}
+## Registering a Client ID {#registering-a-client-id}
 
-Client ids scope an Adobe Developer Console project to specific AEM environments. This can be achieved with a YAML file, as described in the following steps:
+Client IDs scope an Adobe Developer Console project to specific AEM environments. This can be achieved with a YAML file, as described in the following steps:
 
 1. Create a file named `api.yaml` or similar with a configuration like the snippet below, including the desired tiers (author, publish, preview). `Client_id` values should come from your Adobe Developer Console API projects.
 
@@ -55,6 +55,9 @@ Client ids scope an Adobe Developer Console project to specific AEM environments
 1. Place the file somewhere under a top level folder named `config` or similar, as described under [Config Pipeline](/help/operations/config-pipeline.md#folder-structure).
 1. For environment types other than RDE (which uses command line tooling), create a targeted deployment config pipeline in Cloud Manager, as referenced by [this section](/help/operations/config-pipeline.md#creating-and-managing). Note that Full Stack pipelines and Web Tier pipelines do not deploy the configuration file
 1. Deploy the configuration.
+
+## Documentation and Playgrounds {#docs-and-playgrounds}
+
 
 
 
