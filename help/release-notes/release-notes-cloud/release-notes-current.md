@@ -38,6 +38,14 @@ Have a look at the November 2024 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
+**Edge Delivery Services - Page templates with Universal Editor authoring **
+
+Turn quickly any Edge Delivery page into a page template. This allows you to start a new page with a pre-defined structure & content instead of a blank page.
+
+**Edge Delivery Services - CSV Importer for publishing via an AEM instance **
+
+Manage your Edge Delivery spreadsheet data (e.g. redirects) efficiently in your favorite spreadsheet tool and upload it to AEM via the new CSV importer.
+
 **Modernized Page Events**
 
 The following AEM Sites page events are now available as externally consumable events that are based on the AEM as a Cloud Service Eventing Platform. The events can be processed via Adobe I/O to interact with external processes. 
