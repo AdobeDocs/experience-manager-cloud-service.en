@@ -38,11 +38,11 @@ Have a look at the November 2024 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-**Edge Delivery Services - Page templates with Universal Editor authoring **
+**[Edge Delivery Services] Page templates with Universal Editor authoring**
 
 Turn quickly any Edge Delivery page into a page template. This allows you to start a new page with a pre-defined structure & content instead of a blank page.
 
-**Edge Delivery Services - CSV Importer for publishing via an AEM instance **
+**[Edge Delivery Services] CSV Importer for publishing via an AEM instance**
 
 Manage your Edge Delivery spreadsheet data (e.g. redirects) efficiently in your favorite spreadsheet tool and upload it to AEM via the new CSV importer.
 
