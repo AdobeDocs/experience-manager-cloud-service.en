@@ -40,11 +40,11 @@ Have a look at the November 2024 Release Overview video for a summary of the fea
 
 **[Edge Delivery Services] Page templates with Universal Editor authoring**
 
-Turn quickly any Edge Delivery page into a page template. This allows you to start a new page with a pre-defined structure & content instead of a blank page.
+Turn quickly any Edge Delivery page into a page template. This allows you to start a new page with a pre-defined structure & content instead of a blank page. [Read more](/help/sites-cloud/authoring/universal-editor/templates.md)
 
 **[Edge Delivery Services] CSV Importer for publishing via an AEM instance**
 
-Manage your Edge Delivery spreadsheet data (e.g. redirects) efficiently in your favorite spreadsheet tool and upload it to AEM via the new CSV importer.
+Manage your Edge Delivery spreadsheet data (e.g. redirects) efficiently in your favorite spreadsheet tool and upload it to AEM via the new CSV importer. [Read more](/help/edge/wysiwyg-authoring/tabular-data.md#importing)
 
 **Modernized Page Events**
 
