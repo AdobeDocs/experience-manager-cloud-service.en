@@ -168,15 +168,9 @@ Concretely, the API endpoints listed below are available as part of an early ado
 * [Sites and Assets Folders APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/)
 * [Forms APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
 
-### Config Pipeline for RDEs {#config-pipeline-rdes}
+### Edge Computing - Request for Feedback! {#edge-computing-feedback}
 
-Rapid Development Environments are a powerful tool for quickly deploying and testing code and configuration in a Cloud environment. RDEs now support [syncing of configuration YAML-files](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline), including CDN settings such as traffic filter rules and request/response transformations, as well as log forwarding and other configuration options. [See the full list](/help/operations/config-pipeline.md) of supported configuration options for more details.
-
-### New Product Profiles {#new-product-profiles}
-
-When a new AEM environment is created, Product Profiles automatically appear in the Adobe Admin Console, enabling administrators to assign access to licensed solutions and features. 
-
-New environments now include an updated set of Product Profiles, making them compatible with future features including generating API credentials in the Adobe Developer Console. Existing environments will be able to update their Product Profiles in a future release. [Learn more](/help/onboarding/aem-cs-team-product-profiles.md).
+Edge computing brings data processing closer to the browser, which has benefits including reduced latency. As input into the roadmap, we’d love to hear how you envision using this technology for your AEM Publish Delivery and Edge Delivery Services projects. Email [aem-edgecompute-feedback@adobe.com](mailto:aem-edgecompute-feedback@adobe.com) with questions and comments!
 
 ### New AEM Developer Console (Public Beta) {#aem-developer-console-beta}
 
