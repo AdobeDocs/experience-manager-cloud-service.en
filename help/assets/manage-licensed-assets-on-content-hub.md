@@ -5,6 +5,12 @@ exl-id: ac3aad9f-c7b3-47a7-9314-a2f8277f0d3e
 ---
 # Manage Licensed Assets on Content Hub {#manage-licensed-assets-on-content-hub}
 
+>[!AVAILABILITY]
+>
+>Content Hub guide is now available in PDF format. Download the entire guide and use Adobe Acrobat AI Assistant to answer your queries. 
+>
+>[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+
 As an administrator, edit the metadata form to include the asset license field so that it displays in Asset properties in the AEM author environment. You can then approve the asset as well as its license to make the asset licensed and available on Content Hub.
 
 Execute the following steps:
