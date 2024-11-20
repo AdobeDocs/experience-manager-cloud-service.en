@@ -207,7 +207,7 @@ If a product issue needs additional investigation and troubleshooting and must m
 
 To log a support ticket, you must first register your Edge Delivery site in Cloud Manager. Registering your website with Cloud Manager is recommended to all AEM as a Cloud Service users and [brings a number of benefits](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). See [the Cloud Manager documentation](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) for details if you have not already registered your site. 
 
-Once your website is registered with Cloud Manager, follow this process using the Admin Console to submit a support ticket:
+**To log a support ticket:**
 
 1. [Follow the standard support process](https://experienceleague.adobe.com/?support-tab=home#support) and create a ticket.
 1. Add **Edge Delivery** in the title of the ticket.
