@@ -208,6 +208,10 @@ The Signature APIs let your organization protect the security and privacy of Ado
 * Add an invisible signature field to a PDF document. 
 * Sign the specified signature field in a PDF document. 
 * Certify a PDF document
+* Remove the signature from the specified signature field in a PDF document
+* Delete the specified signature field from a PDF document
+
+<!--
 
 ### Remove Signature APIs
 
@@ -218,6 +222,7 @@ The Remove Signature API helps to remove an existing digital signatures from a P
 
 The Remove Signature Field API is tailored for removing signature fields from a PDF document. This is ideal when you need to delete empty or unused signature fields to streamline document presentation. It enables users to eliminate signature fields without impacting other form fields or the document structure, making it easier to create cleaner, final versions of a document that no longer require signatures.
 
+-->
 
 ### Encryption APIs
 
