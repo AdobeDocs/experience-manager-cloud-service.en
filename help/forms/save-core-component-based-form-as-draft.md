@@ -147,8 +147,8 @@ You can also configure an Adaptive Form to save automatically based on a time-ba
 
 1. Select the **[!UICONTROL Automatically Save Drafts]** check box to enable auto-save of the form as drafts.
 1. Configure **[!UICONTROL Save Preference]** as **Save drafts at regular intervals**, to auto-save the form <!--based on the occurrence of an event or--> after a specific interval of time.
-2. Specify the time interval in **[!UICONTROL Save interval frequency (Seconds)]** to set the duration that triggers the automatic saving of the form at the defined interval.
-3. Click **[!UICONTROL Done]**.
+1. Specify the time interval in **[!UICONTROL Save interval frequency (Seconds)]** to set the duration that triggers the automatic saving of the form at the defined interval.
+1. Click **[!UICONTROL Done]**.
  
 ## View drafts/submitted forms on Sites page using the Drafts & Submissions component
 
