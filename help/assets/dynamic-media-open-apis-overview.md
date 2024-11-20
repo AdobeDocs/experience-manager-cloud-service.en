@@ -9,6 +9,12 @@ exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
 | [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
 | ------------- | --------------------------- |---------|-----|
 
+>[!AVAILABILITY]
+>
+>Dynamic Media with OpenAPI capabilities guide is now available in PDF format. Download the entire guide and use Adobe Acrobat AI Assistant to answer your queries. 
+>
+>[!BADGE Dynamic Media with OpenAPI capabilities Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+
 In today's fast-paced digital world, unlocking the full potential of your brand's digital assets is crucial for staying ahead of the competition. A holistic Digital Assets Management (DAM) solution facilitates assets governance, promotes brand consistency, and accelerates content delivery while ensuring brand integrity, and exceptional customer experiences.
 
 Dynamic Media with OpenAPI capabilities puts DAM at the core of an agile and efficient content supply chain ecosystem to ensure asset governance and delivery.
