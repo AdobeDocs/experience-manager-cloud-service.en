@@ -166,7 +166,7 @@ Concretely, the API endpoints listed below are available as part of an early ado
 * [Sites Content Fragments APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
 * [Assets APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
 * [Sites and Assets Folders APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/)
-* [Forms APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
+* [Forms Communications APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 
 ### Edge Computing - Request for Feedback! {#edge-computing-feedback}
 
