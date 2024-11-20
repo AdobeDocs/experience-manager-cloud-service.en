@@ -57,13 +57,13 @@ An Edge Delivery Services can be added in a number of different ways depending o
 >* Once the Edge Delivery Services license is applied to or removed from a program, the change takes effect immediately without the need to run a pipeline.
 
 
-## About the Edge Delivery to-do list {#ed-todo-list}
+## About the Edge Delivery to-do list in Cloud Manager {#ed-todo-list}
 
 <!-- &#x2460; for "1" inside circle -->
 
-The **Edge Delivery to-do list** is an onboarding task checklist meant to guide you through onboarding, managing your Edge Delivery site all the way to [Go-Live](/help/journey-onboarding/go-live-checklist.md).
+The **Edge Delivery to-do list** in Cloud Manager is an onboarding task checklist meant to guide you through onboarding, managing your Edge Delivery site all the way to [Go-Live](/help/journey-onboarding/go-live-checklist.md).
 
-![Edge Delivery site to-do list](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
+![Edge Delivery site to-do list in Cloud Manager](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
 |   | Task  | Description |
 | --- | --- | --- |
@@ -73,7 +73,7 @@ The **Edge Delivery to-do list** is an onboarding task checklist meant to guide 
 | 4 | Add domain | See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 | 5 | Add SSL certificate | See [Add SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
 | 6 | Configure the CDN of your Edge Delivery site | See [Add a CDN configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md). |
-| 7 | Setup push validation | See [Setup push validation](/help/implementing/cloud-manager/cdn-configurations/cdn-setup-push-invalidation.md). |
+| 7 | Setup push validation | See [Setup push validation for an Edge Delivery site](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 8 | Go-Live | See [Go-Live checklist](/help/edge/docs/go-live-checklist.md). |
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)

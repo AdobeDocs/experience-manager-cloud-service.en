@@ -14,7 +14,7 @@ For Content Fragments of Adobe Experience Manager (AEM) as a Cloud Service, the 
 >
 >Content Fragments are a Sites feature, but are stored as **Assets**. 
 >
->There are two editors for authoring Content Fragments. This section covers the original editor, primarily accessed from the **Assets** console. 
+>There are two editors for authoring Content Fragments; although the basic functionality is the same, there are some differences. This section covers the original editor, primarily accessed from the **Assets** console. 
 
 ## Adding Associated Content {#adding-associated-content}
 

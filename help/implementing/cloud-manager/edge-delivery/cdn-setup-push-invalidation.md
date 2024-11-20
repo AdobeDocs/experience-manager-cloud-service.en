@@ -1,6 +1,6 @@
 ---
-title: Setup Push Invalidation
-description: Learn about how to configure push invalidation for building your own production CDN.
+title: Setup Push Invalidation for an Edge Delivery site
+description: Discover how to configure push invalidation for an Edge Delivery site to ensure efficient content updates and caching control.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
