@@ -8,6 +8,12 @@ exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
 | [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
 | ------------- | --------------------------- |---------|----|-----|
 
+>[!AVAILABILITY]
+>
+>Dynamic Media with OpenAPI capabilities guide is now available in PDF format. Download the entire guide and use Adobe Acrobat AI Assistant to answer your queries. 
+>
+>[!BADGE Dynamic Media with OpenAPI capabilities Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+
 Effectively managing digital assets is crucial for delivering engaging and consistent brand experiences across various online platforms. Dynamic Media with OpenAPI capabilities enhances digital asset management by enabling seamless integration between AEM Sites and AEM Assets as a Cloud Service. This innovative feature allows you to easily share and manage different types of approved digital assets across multiple AEM environments, streamlining workflows for sites authors and content editors.
 
 Dynamic Media with OpenAPI capabilities allows sites authors to use assets from remote DAM directly within the AEM Page Editor and [Content Fragment](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments.html), simplifying content creation and management processes.
