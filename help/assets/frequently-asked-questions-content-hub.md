@@ -10,6 +10,12 @@ exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
 
 ![Content Hub frequently asked question](assets/content-hub-faqs.png)
 
+>[!AVAILABILITY]
+>
+>Content Hub guide is now available in PDF format. Download the entire guide and use Adobe Acrobat AI Assistant to answer your queries. 
+>
+>[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+
 ## What is Content Hub? {#what-is-content-hub} 
 
 Content Hub is a feature of Adobe Experience Manager Assets as a Cloud Service. 
