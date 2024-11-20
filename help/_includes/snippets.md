@@ -46,6 +46,7 @@
 * [Submit to Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Connect Adaptive Form to Salesforce application](/help/forms/aem-forms-salesforce-integration.md)
 * [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+* [Connect an Adaptive Form to Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 * [Create custom submit action](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
 ## See also {#see-more-forms-eds}
@@ -124,6 +125,8 @@ The following table demonstrates the difference between the features available i
 * [Rule Editor User Interface for Adaptive Forms based on Core Components](/help/forms/rule-editor-core-components-user-interface.md)
 * [Different use cases of Rule Editor for an Adaptive Form Based on Core Components](/help/forms/rule-editor-core-components-usecases.md)
 * [Difference in various editions of Rule editor](/help/forms/rule-editor-core-components-difference-tables.md)
+*  [Using asynchronous functions in an Adaptive Form](/help/forms/using-async-funct-in-rule-editor.md)
+* [Invoke Service enhancements in the Visual Rule Editor for forms based on Core Components](/help/forms/invoke-service-enhancements-rule-editor.md)
 * [Introduction to Custom Functions for Adaptive Forms based on Core Components](/help/forms/create-and-use-custom-functions.md)
 * [Create a Custom Function for an Adaptive Form based on Core Components](/help/forms/custom-function-core-component-create-function.md)
 * [Scope object in custom functions](/help/forms/custom-function-core-component-scope-function.md)
@@ -137,6 +140,12 @@ The following table demonstrates the difference between the features available i
 * [Save your forms as drafts](/help/forms/save-core-component-based-form-as-draft.md)
 * [Add form links to a Sites page](/help/forms/add-form-link-to-aem-sites-page.md)
 
+## Marketo Engage{#marketo-engage-see-also}
+
+* [Integrate Marketo Engage with AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
+* [Configure new form to integrate with Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md) 
+* [Configure Marketo Engage data source for existing Adaptive Forms](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [Configure the submit action to Marketo Engage for existing forms](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 ## Cloud Manager IP Allow List and front-end pipelines {#allowlist-frontend-pipeline}
 
@@ -207,7 +216,7 @@ If a product issue needs additional investigation and troubleshooting and must m
 
 To log a support ticket, you must first register your Edge Delivery site in Cloud Manager. Registering your website with Cloud Manager is recommended to all AEM as a Cloud Service users and [brings a number of benefits](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). See [the Cloud Manager documentation](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) for details if you have not already registered your site. 
 
-Once your website is registered with Cloud Manager, follow this process using the Admin Console to submit a support ticket:
+**To log a support ticket:**
 
 1. [Follow the standard support process](https://experienceleague.adobe.com/?support-tab=home#support) and create a ticket.
 1. Add **Edge Delivery** in the title of the ticket.
