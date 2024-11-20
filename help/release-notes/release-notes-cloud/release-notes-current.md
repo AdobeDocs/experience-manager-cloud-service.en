@@ -77,13 +77,13 @@ To get early access to AI-generated captions support on your Dynamic Media accou
 
 Get delivery insights for assets delivered with Dynamic Media, with asset level delivery count, referrer information, asset path in AEM Assets and unique asset ID. Reports can be generated for all assets delivered via Dynamic Media for AEM Assets repository or for a specific folder hierarchy in AEM Assets. Insights help measure ROI of assets delivered, measure channel performance, and help take informed asset management tasks for assets.
 
-To get early access to Dynamic Media Delivery Report on your Dynamic Media account, create and submit an Adobe Customer Support case.
+To get early access to Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 ### New features in Assets view {#assets-view-new-features}
 
 **Dynamic Media panel**
 
-Assets view now enables you to access all Dynamic Media and Dynamic Media with OpenAPI capabilities renditions from a separate panel made available to you. You can choose to copy the delivery URL or download the renditions based on the asset and rendition type. For more information, see [Dynamic Media renditions](/help/assets/renditions.md#dynamic-media-renditions) and [Dynamic Media with OpenAPI capabilities renditions](/help/assets/renditions.md#dm-with-openapi-renditions).
+Assets view now enables you to access Dynamic Media and Dynamic Media with OpenAPI renditions from a separate panel made available to you. You can choose to copy the delivery URL or download the renditions based on the asset and rendition type. For more information, see [Dynamic Media renditions](/help/assets/renditions.md#dynamic-media-renditions) and [Dynamic Media with OpenAPI capabilities renditions](/help/assets/renditions.md#dm-with-openapi-renditions).
 
 ![dynamic renditions](/help/assets/assets/dm-scene7-renditions.png)
 
@@ -156,7 +156,7 @@ Concretely, the API endpoints listed below are available as part of an early ado
 
 ### Edge Computing - Request for Feedback! {#edge-computing-feedback}
 
-Edge computing brings data processing closer to the browser, which has benefits including reduced latency. As input into the roadmap, we’d love to hear if you'd find this technology useful for AEM Publish Delivery and Edge Delivery Services projects and what you envision using it for. Email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with questions and comments!
+Edge computing brings data processing closer to the browser, which has benefits including reduced latency. As input into the roadmap, we'd love to hear if you'd find this technology useful for AEM Publish Delivery and Edge Delivery Services projects and what you envision using it for. Email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with questions and comments!
 
 ### New AEM Developer Console (Public Beta) {#aem-developer-console-beta}
 
