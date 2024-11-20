@@ -13,10 +13,6 @@ Learn how to create templates that can be used to create pages that are editable
 
 >[!NOTE]
 >
->This feature will be available in an upcoming release of AEM as a Cloud Service.
-
->[!NOTE]
->
 >[Templates are also available for creating pages that are editable with the Page Editor.](/help/sites-cloud/authoring/page-editor/templates.md)
 
 ## What are Page Templates? {#what-are}

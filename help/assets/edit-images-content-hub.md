@@ -10,6 +10,12 @@ exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
 
 ![Edit images in Content Hub using Adobe Express](assets/edit-images-content-hub.png)
 
+>[!AVAILABILITY]
+>
+>Content Hub guide is now available in PDF format. Download the entire guide and use Adobe Acrobat AI Assistant to answer your queries. 
+>
+>[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+
 Content Hub allows you to create new content with Adobe Express. You can edit existing content with easy to use tools, produce on-brand variations with templates and brand elements, and create new content with the latest GenAI capabilities from Adobe Firefly.
 
 ## Prerequisites {#prereqs-edit-image-content-hub}
