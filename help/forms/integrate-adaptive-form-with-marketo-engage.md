@@ -8,6 +8,8 @@ Role: User, Developer
 
 # Configure new form to integrate with Marketo Engage 
 
+<span class="preview"> The feature is available under early adopter program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+
 ![Workflow](/help/forms/assets/workflow-marketo-4.png)
 
 After creating the cloud service configuration to integrate Marketo Engage with AEM Forms, you can configure an Adaptive Form to integrate with [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home). 

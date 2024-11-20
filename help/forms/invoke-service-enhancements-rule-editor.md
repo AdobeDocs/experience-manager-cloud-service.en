@@ -9,6 +9,8 @@ keywords: invoke service enhancements in VRE, populating drop-down options using
 
 # Using Invoke Service in the Visual Rule Editor for forms based on Core Components
 
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
 The Visual Rule Editor in an Adaptive Form supports the **Invoke Service** feature, which allows you to select a service from the list of Form Data Models (FDM) configured for your instance. You can map form fields directly to the input parameters of the service. To map form fields to the output parameters, use the event payload option for the specified Form Data Model service. Additionally, the Visual rule editor allows you to create rules for success and failure handlers for **Invoke Service** operations based on its output responses. Success handlers manage the successful execution of the **Invoke Service** operation, while failure handlers address any errors that occur.
 
 ### Advantages of using the Invoke Service in the form's rule editor
