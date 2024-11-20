@@ -8,6 +8,8 @@ Role: User, Developer
 
 # Integrate Marketo Engage with AEM Forms
 
+<span class="preview"> The feature is available under early adopter program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+
 Integrating AEM Forms with [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home) enables users to leverage the capabilities of Marketo Engage to create business logic from captured data and automate workflows, including smart campaigns and email automation. The configured form can send captured data to Marketo Engage for processing.
 
 ## Advantages of integrating Marketo Engage with forms

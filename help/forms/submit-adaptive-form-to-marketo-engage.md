@@ -8,6 +8,8 @@ Role: User, Developer
 
 # Configure the submit action to Marketo Engage for existing forms 
 
+<span class="preview"> The feature is available under early adopter program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+
 ![Workflow](/help/forms/assets/workflow-marketo-3.png)
 
 Adaptive Forms editor provides the **Submit to Marketo Engage** submit action to send Adaptive Forms data to Adobe Marketo Engage for processing. You can configure an existing Adaptive Form to submit data to [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home) on submission. 

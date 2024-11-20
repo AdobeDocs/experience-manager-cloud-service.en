@@ -6,7 +6,9 @@ role: User, Developer
 level: Beginner
 ---
 
-# Create an Adaptive Form (Core Components) based on XFA Form templates or XDP files
+# Create an Adaptive Form (Core Components) based on XFA Form templates
+
+<span class="preview"> The feature is available under early adopter program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
 
 AEM as a Cloud Service provides users with the option to create Adaptive Forms based on Core Components using XFA (XML Forms Architecture) form templates or `*.XDP` (XML Data Package) files. This feature allows users to save time by migrating fields from XFA form template or XDP files files directly into Adaptive Forms. 
 
