@@ -12,6 +12,12 @@ exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Download assets](assets/download-asset-genstudio.jpeg)
 
+>[!AVAILABILITY]
+>
+>Content Hub guide is now available in PDF format. Download the entire guide and use Adobe Acrobat AI Assistant to answer your queries. 
+>
+>[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+
 The Content Hub lets you download and share your assets. These assets may include images, videos, or any other digital content. The Content Hub enhances accessibility and adaptability for effective asset distribution.  
 
 You can download a single asset or multiple assets using the Content Hub. The original versions of the asset are downloaded.
