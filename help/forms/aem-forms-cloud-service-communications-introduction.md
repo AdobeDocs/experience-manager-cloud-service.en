@@ -211,6 +211,9 @@ The Signature APIs let your organization protect the security and privacy of Ado
 * Remove the signature from the specified signature field in a PDF document
 * Delete the specified signature field from a PDF document
 
+<span class="preview"> Remove the signature from the specified signature field and delete the specified signature field, from a PDF document are available under the early adopter program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+
+
 <!--
 
 ### Remove Signature APIs
@@ -235,7 +238,7 @@ You can accomplish these tasks using the Encryption APIs:
 * Retrieve the type of security applied to a PDF document.
 * Return the security type applied to a PDF document. 
 
-Signature APIs, Remove Signature APIs, Remove Signature Field APIs,  and Encryption APIs are [Synchronous APIs](#types-of-communications-apis-types).
+Both Signature APIs and Encryption APIs are [Synchronous APIs](#types-of-communications-apis-types).
 
 
 ### Document Utilities {#doc-utility}
