@@ -54,7 +54,8 @@ Create a Workflow Model that uses the `TreeActivation` process step:
 1. In the Workflow Models page, press **Create** in the upper right corner of the screen.
 1. Add a title and a name to your model. For more information, see [Creating Workflow Models](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html).
 1. Select the created model from the list, and press **Edit**
-1. In the following window, drag and drop the Process Step to the current model flow:
+2. In the following window, delete the Step that appears by default
+3. Drag and drop the Process Step to the current model flow:
    
    ![Process Step](/help/operations/assets/processstep.png)
 
@@ -85,9 +86,9 @@ Create a Workflow Model that uses the `TreeActivation` process step:
 | enableVersion  | false   | Enable versioning                                               |
 | dryRun         | false   | When set to true replication is not acutally called             |
 | userId         |         | only for job. On workflow the user calling the workflow is used |
-| filters        |         | List of node filter names                                       |
+| filters        |         | List of node filter names. See supported filter below           |
 
-Support Filters:
+**Support Filters**
 
 | Name          | description                                 |
 | ------------- | ------------------------------------------- |
@@ -98,6 +99,18 @@ Support Filters:
 **Resume Support**
 
 The workflow processes content in chunks, each of which represents a subset of the full content to be published.  If the workflow is stopped by the system, it will continue where it left off. 
+
+**Monitoring Workflow Progress**
+
+1. From the AEM as a Cloud Service homepage, go to **Tools - General - Jobs**.
+1. Look at the row corresponding to your workflow. The *progress* column gives an indication of how the replication is progressing. For example, it may display 41/564 and upon refreshing, it may be updated to 52/564.
+
+   ![Treeactivation progress](/help/operations/assets/new-treeactivationstep.png)
+
+1. Selecting the row and opening it will provide additional details about the status of the workflow execution.
+
+   ![Treeactivation status details](/help/operations/assets/treeactivation-progress-details.png)
+
 
 ### Publish Content Tree Workflow {#publish-content-tree-workflow}
 
