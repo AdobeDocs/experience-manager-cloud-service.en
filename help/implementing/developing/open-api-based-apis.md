@@ -5,7 +5,7 @@ feature: Developing
 role: Admin, Architect, Developer
 ---
 
-# OpenAPI-based APIs {#open-api-based-apis}
+# OpenAPI-based APIs {#openapi-based-apis}
 
 >[!NOTE]
 >
@@ -15,9 +15,9 @@ Newer AEM as a Cloud Service APIs follow the OpenAPI specification, and thus pro
 
 * API setup and usage tutorial
 * [Informational Guides](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/), including [API concepts and syntax](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/)
-* API-endpoint reference documentation
+* API-endpoint [reference documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/), where some of the APIs are OpenAPI-based, such as [this Sites API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/). Reference documentation also includes an API playground, which makes it simple to try out an endpoint using a bearer token generated with the Adobe Developer Console.
 
-For the many OpenAPI-based AEM APIs that require authentication, credentials for APIs are generated using Adobe Developer Console. A common use case involves integrations with systems such as CRM or PIM, where AEM API calls are made to retrieve or persist data. Applications may subscribe to events emitted by AEM to trigger an API all to retrieve more data. Supported API authentication approaches differ based on the endpoint, but may include Server-to-Server OAuth, Web App, and Single Page Application (SPA).
+For the many OpenAPI-based AEM APIs that require authentication, credentials for APIs are generated using [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/). A common use case involves integrations with systems such as CRM or PIM, where AEM API calls are made to retrieve or persist data. Applications may subscribe to events emitted by AEM to trigger an API call to retrieve more data. Supported API authentication types differ based on the endpoint, but may be Server-to-Server OAuth, Web App, and Single Page Application (SPA).
 
 ## Configuring API Access {#configuring-api-access}
 
