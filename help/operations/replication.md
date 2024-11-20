@@ -46,7 +46,7 @@ You can find more detailed information on Manage Publication on the [Publishing 
 
 ### Tree Activation Workflow Step {#tree-activation}
 
-The Tree Activaton workflow step is intended to performantly replicate a deep hierarchy of content nodes. It automatically pauses when the queue grows to large in order to allow other replications to proceed in parallel with minimal latency. 
+The Tree Activaton workflow step is intended to performantly replicate a deep hierarchy of content nodes. It automatically pauses when the queue grows too large in order to allow other replications to proceed in parallel with minimal latency. 
 
 Create a Workflow Model that uses the `TreeActivation` process step:
 
@@ -105,7 +105,7 @@ The workflow processes content in chunks, each of which represents a subset of t
 1. From the AEM as a Cloud Service homepage, go to **Tools - General - Jobs**.
 1. Look at the row corresponding to your workflow. The *progress* column gives an indication of how the replication is progressing. For example, it may display 41/564 and upon refreshing, it may be updated to 52/564.
 
-   ![Treeactivation progress](/help/operations/assets/new-treeactivationstep.png)
+   ![Treeactivation progress](/help/operations/assets/treeactivation-progress.png)
 
 1. Selecting the row and opening it will provide additional details about the status of the workflow execution.
 
