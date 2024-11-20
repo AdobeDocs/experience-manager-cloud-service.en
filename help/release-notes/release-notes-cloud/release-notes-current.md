@@ -65,41 +65,27 @@ The [AEM REST OpenAPI for Content Fragment Delivery](/help/headless/aem-rest-ope
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Early access feature in Dynamic Media {#dm-early-access}
+### Early access features in Dynamic Media {#dm-early-access}
 
 **AI-generated video captions** 
 
 AI-generated video captions in Adobe Dynamic Media use artificial intelligence to generate captions automatically for video content. This feature is designed to improve accessibility and enhance the user experience by providing accurate, real-time captions. The AI analyzes the video's audio track to transcribe speech and create captions, which can be edited for accuracy or customization. These captions help meet accessibility requirements and improve video engagement for audiences who rely on or prefer text-based video support. 
 
-To get early access to AI-generated captions support on your Dynamic Media account, [create and submit an Adobe Customer Support case](/help/assets/dynamic-media/video.md##enable-dash).  
+To get early access to AI-generated captions support on your Dynamic Media account, [create and submit an Adobe Customer Support case](/help/assets/dynamic-media/video.md##enable-dash).
+
+**Dynamic Media delivery report**
+
+Get delivery insights for assets delivered with Dynamic Media, with asset level delivery count, referrer information, asset path in AEM Assets and unique asset ID. Reports can be generated for all assets delivered via Dynamic Media for AEM Assets repository or for a specific folder hierarchy in AEM Assets. Insights help measure ROI of assets delivered, measure channel performance, and help take informed asset management tasks for assets.
+
+To get early access to Dynamic Media Delivery Report on your Dynamic Media account, create and submit an Adobe Customer Support case.
 
 ### New features in Assets view {#assets-view-new-features}
 
-**Scheduled Reports**
+**Dynamic Media panel**
 
-Reports can now be automatically generated in the Assets View on a recurring schedule or at a future date, reducing the effort to uncover data-driven insights.
+Assets view now enables you to access all Dynamic Media and Dynamic Media with OpenAPI capabilities renditions from a separate panel made available to you. You can choose to copy the delivery URL or download the renditions based on the asset and rendition type. For more information, see [Dynamic Media renditions](/help/assets/renditions.md#dynamic-media-renditions) and [Dynamic Media with OpenAPI capabilities renditions](/help/assets/renditions.md#dm-with-openapi-renditions).
 
-![Scheduled Reports-](/help/assets/assets/scheduled-reports-tab.png)
-
-### New features in Content Hub {#content-hub-new-features}
-
-**Digital Rights management for licensed assets**
-
-Organizations can now increase license compliance and minimize risk of sharing assets with licensing terms by leveraging DRM for licensed assets for users of Content Hub, requiring users to review and accept license terms before they can start downloading licensed assets. For more information, see [Manage licensed assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
-
-![download-multiple-license](/help/assets/assets/download-multiple-license.png)
-
-**Asset card metadata configuration**
-
-Content Hub now allows you to configure the key metadata fields that you need to display on the Asset Card upto a maximum of 6 fields. For more information, see the Asset Card section in [Configure Content Hub](/help/assets/configure-content-hub-ui-options.md#asset-card).
-
-![key metadata on Asset Card](/help/assets/assets/asset-card-key-metadata.png)
-
-**Configure the visibility and download of expired assets**
-
-Administrators can now control if they need expired assets to be visible on Content Hub. If the expired assets are made visible, they can also define if users can download them. For more information, see the Expired Assets section in [Configure Content Hub](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub).
-
-![Expired assets on Content Hub](/help/assets/assets/expired-assets-content-hub.png)
+![dynamic renditions](/help/assets/assets/dm-scene7-renditions.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
