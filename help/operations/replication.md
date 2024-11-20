@@ -17,11 +17,10 @@ Adobe Experience Manager as a Cloud Service uses the [Sling Content Distribution
 
 >[!NOTE]
 >
->If you are interested in bulk publishing content, use the [Publish Content Tree Workflow](#publish-content-tree-workflow). 
->This workflow step is built specifically for Cloud Service and can efficiently handle large payloads. 
+>If you are interested in bulk publishing content, create a workflow using the [Tree Activation Workflow Step](#tree-activation), which can efficiently handle large payloads. 
 >It is not recommended to build your own bulk publishing custom code. 
->If you must customize for whatever reason, you can trigger this workflow / workflow step by using existing Workflow APIs. 
->It is always a good practice to only publish content that must be published. And, be prudent about not trying to publish large numbers of content, if not necessary. However, there are no limits as to how much content you can send through the Publish Content Tree Workflow.
+>If you must customize for whatever reason, you can trigger a workflow with this step by using existing Workflow APIs. 
+>It is always a good practice to only publish content that must be published. And be prudent about not trying to publish large numbers of content, if not necessary. However, there are no limits as to how much content you can send through workflows with the Tree Activation Workflow Step.
 
 ### Quick Un/Publish - Planned Un/Publish {#publish-unpublish}
 
@@ -44,77 +43,6 @@ Manage Publication offers more options than Quick Publish, allowing for the incl
 Including a folder's children for the "publish later" option invokes the Publish Content Tree workflow, described in this article.
 
 You can find more detailed information on Manage Publication on the [Publishing Fundamentals documentation](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication).
-
-### Publish Content Tree Workflow {#publish-content-tree-workflow}
-
->[!NOTE]
->
->This feature is deprecated in favor of the more performant Tree Activation step, which can be included in a custom workflow.  
-
-You can trigger a tree replication by choosing **Tools - Workflow - Models** and copying the **Publish Content Tree** out-of-the-box workflow model, as shown below:
-
-![The Publish Content Tree Workflow Card](/help/operations/assets/publishcontenttreeworkflow.png)
-
-Do not invoke the original model. Instead, make sure to first copy the model and invoke that copy.
-
-Like all workflows, it can also be invoked via API. For more information, see [Interacting with Workflows Programmatically](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
-
-Alternatively, you can create a Workflow Model that uses the `Publish Content Tree` process step:
-
-1. From the AEM as a Cloud Service homepage, go to **Tools - Workflow - Models**.
-1. In the Workflow Models page, press **Create** in the upper right corner of the screen.
-1. Add a title and a name to your model. For more information, see [Creating Workflow Models](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html).
-1. Select the created model from the list, and press **Edit**
-1. In the following window, drag and drop the Process Step to the current model flow:
-   
-   ![Process Step](/help/operations/assets/processstep.png)
-
-1. Select the Process step in the flow and select **Configure** by pressing the wrench icon.
-1. Select the **Process** tab and select `Publish Content Tree` from the drop-down list, then check the **Handler Advance** check box
-   
-   ![Treeactivation](/help/operations/assets/newstep.png)
-
-1. Set any additional parameters in the **Arguments** field. Multiple comma-separated arguments can be strung together. For example:
-   
-   `enableVersion=true,agentId=publish,includeChildren=true`  
-
-   
-   >[!NOTE]
-   >
-   >For the list of parameters, see the **Parameters** section below.
-
-1. Press **Done** to save the Workflow model.
-
-**Parameters**
-
-* `includeChildren` (boolean value, default: `false`). The value `false` means that only the path is published; `true` means that children are published too.
-* `replicateAsParticipant` (boolean value, default: `false`). If configured as `true`, the replication is using the `userid` of the principal which performed the participant step.
-* `enableVersion` (boolean value, default: `false`). This parameter determines if a new version is created upon replication.
-* `agentId` (string value, default means only agents for publish are used). It is recommended to be explicit about the agentId; for example, setting it the value: publish. Setting the agent to `preview` publishes to the preview service.
-* `filters` (string value, default means that all paths are activated). Available values are: 
-  * `onlyActivated` - only activate pages that have (already) been activated. Acts as a form of reactivation.
-  * `onlyModified` - activate only paths which are already activated and have a modification date later than the activation date.
-  * The above can be ORed with a pipe "|". For example, `onlyActivated|onlyModified`.  
-
-**Logging**
-
-When the tree activation workflow step starts, it logs its configuration parameters on the INFO loglevel. When paths are activated, an INFO statement is also logged.
-
-A final INFO statement is logged after the workflow step has replicated all paths.
-
-Also, you can increase the loglevel of the loggers below `com.day.cq.wcm.workflow.process.impl` to DEBUG/TRACE to get even more log information.
-
-If there are errors, the workflow step terminates with a `WorkflowException`, which wraps the underlying Exception.
-
-The following are examples of logs that are generated during a sample publish content tree workflow:
-
-```
-21.04.2021 19:14:55.566 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.treeactivation.TreeActivationWorkflowProcess TreeActivation options: replicateAsParticipant=false(userid=workflow-process-service), agentId=publish, chunkSize=100, filter=, enableVersion=false
-```
-
-```
-21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
-```
 
 ### Tree Activation Workflow Step {#tree-activation}
 
@@ -170,6 +98,81 @@ Support Filters:
 **Resume Support**
 
 The workflow processes content in chunks, each of which represents a subset of the full content to be published.  If the workflow is stopped by the system, it will continue where it left off. 
+
+### Publish Content Tree Workflow {#publish-content-tree-workflow}
+
+>[!NOTE]
+>
+>This feature is deprecated in favor of the more performant Tree Activation step, which can be included in a custom workflow.  
+
+<details>
+<summary>Click here to learn more about this deprecated feature.</summary>
+   
+You can trigger a tree replication by choosing **Tools - Workflow - Models** and copying the **Publish Content Tree** out-of-the-box workflow model, as shown below:
+
+![The Publish Content Tree Workflow Card](/help/operations/assets/publishcontenttreeworkflow.png)
+
+Do not invoke the original model. Instead, make sure to first copy the model and invoke that copy.
+
+Like all workflows, it can also be invoked via API. For more information, see [Interacting with Workflows Programmatically](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
+
+Alternatively, you can create a Workflow Model that uses the `Publish Content Tree` process step. 
+
+1. From the AEM as a Cloud Service homepage, go to **Tools - Workflow - Models**.
+1. In the Workflow Models page, press **Create** in the upper right corner of the screen.
+1. Add a title and a name to your model. For more information, see [Creating Workflow Models](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html).
+1. Select the created model from the list, and press **Edit**
+1. In the following window, drag and drop the Process Step to the current model flow:
+   
+   ![Process Step](/help/operations/assets/processstep.png)
+
+1. Select the Process step in the flow and select **Configure** by pressing the wrench icon.
+1. Select the **Process** tab and select `Publish Content Tree` from the drop-down list, then check the **Handler Advance** check box
+   
+   ![Treeactivation](/help/operations/assets/newstep.png)
+
+1. Set any additional parameters in the **Arguments** field. Multiple comma-separated arguments can be strung together. For example:
+   
+   `enableVersion=true,agentId=publish,includeChildren=true`  
+
+   
+   >[!NOTE]
+   >
+   >For the list of parameters, see the **Parameters** section below.
+
+1. Press **Done** to save the Workflow model.
+
+**Parameters**
+
+* `includeChildren` (boolean value, default: `false`). The value `false` means that only the path is published; `true` means that children are published too.
+* `replicateAsParticipant` (boolean value, default: `false`). If configured as `true`, the replication is using the `userid` of the principal which performed the participant step.
+* `enableVersion` (boolean value, default: `false`). This parameter determines if a new version is created upon replication.
+* `agentId` (string value, default means only agents for publish are used). It is recommended to be explicit about the agentId; for example, setting it the value: publish. Setting the agent to `preview` publishes to the preview service.
+* `filters` (string value, default means that all paths are activated). Available values are: 
+  * `onlyActivated` - only activate pages that have (already) been activated. Acts as a form of reactivation.
+  * `onlyModified` - activate only paths which are already activated and have a modification date later than the activation date.
+  * The above can be ORed with a pipe "|". For example, `onlyActivated|onlyModified`.  
+
+**Logging**
+
+When the tree activation workflow step starts, it logs its configuration parameters on the INFO loglevel. When paths are activated, an INFO statement is also logged.
+
+A final INFO statement is logged after the workflow step has replicated all paths.
+
+Also, you can increase the loglevel of the loggers below `com.day.cq.wcm.workflow.process.impl` to DEBUG/TRACE to get even more log information.
+
+If there are errors, the workflow step terminates with a `WorkflowException`, which wraps the underlying Exception.
+
+The following are examples of logs that are generated during a sample publish content tree workflow:
+
+```
+21.04.2021 19:14:55.566 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.treeactivation.TreeActivationWorkflowProcess TreeActivation options: replicateAsParticipant=false(userid=workflow-process-service), agentId=publish, chunkSize=100, filter=, enableVersion=false
+```
+
+```
+21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
+```
+</details>
 
 ### Replication API {#replication-api}
 
