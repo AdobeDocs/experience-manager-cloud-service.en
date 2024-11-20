@@ -33,7 +33,8 @@ Visual rule editor allows you to create rules for success and failure handlers f
 
 ![Invoke service handlers](/help/forms/assets/invoke-service-rule-editor.png)
 
-To add success or failure handler, click **[!UICONTROL Add Success Handler]** or **[!UICONTROL Add Failure Handler]**, respectively. When you click **[!UICONTROL Add Success Handler]**, the **[!UICONTROL Invoke Service Success Handler]** rule editor appears, allowing you to specify rules or logic to manage the **Invoke Service** output response when the operation is successful. You can specify rules even without defining conditions; however, you can add conditions for the success handler by clicking the **[!UICONTROL Add Condition]** option. The **Enable Error Validation on Server** feature allows validations added by the author while designing an Adaptive Form to run on the server also.
+To add success or failure handler, click **[!UICONTROL Add Success Handler]** or **[!UICONTROL Add Failure Handler]**, respectively. 
+When you click **[!UICONTROL Add Success Handler]**, the **[!UICONTROL Invoke Service Success Handler]** rule editor appears, allowing you to specify rules or logic to manage the **Invoke Service** output response when the operation is successful. You can specify rules even without defining conditions; however, you can add conditions for the success handler by clicking the **[!UICONTROL Add Condition]** option. 
 
 ![Invoke service success hadler](/help/forms/assets/invoke-service-success-handler.png)
 
@@ -46,6 +47,8 @@ Similarly, you can add rules to handle the **Invoke Service** output response wh
 ![Invoke service failure hadler](/help/forms/assets/invoke-service-failue-handler.png)
 
 You can also add multiple rules to handle unsuccessful responses from the **Invoke Service** operation.
+
+The **Enable Error Validation on Server** feature allows validations added by the author while designing an Adaptive Form to run on the server also.
 
 ## Prerequisites for using the Invoke Service in the rule editor
 
@@ -63,10 +66,10 @@ The table below describes a few scenarios in which the **Invoke Service** can be
 
 | **Use Case**                                             | **Description**                                                                                          |
 |----------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| **Populate dropdown options using output of Invoke Service**  | Populates dropdown options dynamically based on data retrieved from the Invoke Service output. [Click here](#use-case-1), to see the implementation.         |
-| **Set repeatable panel using output of Invoke Service**  | Configures a repeatable panel by using data from the Invoke Service output, allowing for dynamic panels. [Click here](#use-case-2), to see the implementation.   |
-| **Set panel using output of Invoke Service**             | Sets the content or visibility of a panel using specific values from the Invoke Service output. [Click here](#use-case-3), to see the implementation.          |
-| **Use output parameter of Invoke Service to validate other fields** | Uses specific output parameters from the Invoke Service to validate the form fields. [Click here](#use-case-4), to see the implementation.  |
+| **Populate dropdown options using output of Invoke Service**  | Populates dropdown options dynamically based on data retrieved from the Invoke Service output. [Click here](#use-case-1-populate-dropdown-values-using-the-output-of-invoke-service), to see the implementation.         |
+| **Set repeatable panel using output of Invoke Service**  | Configures a repeatable panel by using data from the Invoke Service output, allowing for dynamic panels. [Click here](#use-case-2-set-repeatable-panel-using-output-of-invoke-service), to see the implementation.   |
+| **Set panel using output of Invoke Service**             | Sets the content or visibility of a panel using specific values from the Invoke Service output. [Click here](#use-case-3-set-panel-using-output-of-invoke-service), to see the implementation.          |
+| **Use output parameter of Invoke Service to validate other fields** | Uses specific output parameters from the Invoke Service to validate the form fields. [Click here](#use-case-4-use-output-parameter-of-invoke-service-to-validate-other-fields), to see the implementation.  |
 
 Create a `Get Information` form that retrieves values based on the input entered in the `Pet ID` text box. The screenshot below shows the form used in these use cases:
 
