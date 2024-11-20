@@ -34,6 +34,7 @@ Visual rule editor allows you to create rules for success and failure handlers f
 ![Invoke service handlers](/help/forms/assets/invoke-service-rule-editor.png)
 
 To add success or failure handler, click **[!UICONTROL Add Success Handler]** or **[!UICONTROL Add Failure Handler]**, respectively. 
+
 When you click **[!UICONTROL Add Success Handler]**, the **[!UICONTROL Invoke Service Success Handler]** rule editor appears, allowing you to specify rules or logic to manage the **Invoke Service** output response when the operation is successful. You can specify rules even without defining conditions; however, you can add conditions for the success handler by clicking the **[!UICONTROL Add Condition]** option. 
 
 ![Invoke service success hadler](/help/forms/assets/invoke-service-success-handler.png)
