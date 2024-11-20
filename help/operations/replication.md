@@ -54,8 +54,8 @@ Create a Workflow Model that uses the `TreeActivation` process step:
 1. In the Workflow Models page, press **Create** in the upper right corner of the screen.
 1. Add a title and a name to your model. For more information, see [Creating Workflow Models](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html).
 1. Select the created model from the list, and press **Edit**
-2. In the following window, delete the Step that appears by default
-3. Drag and drop the Process Step to the current model flow:
+1. In the following window, delete the Step that appears by default
+1. Drag and drop the Process Step to the current model flow:
    
    ![Process Step](/help/operations/assets/processstep.png)
 
