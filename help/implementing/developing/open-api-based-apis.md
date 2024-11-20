@@ -56,8 +56,6 @@ Client IDs scope an Adobe Developer Console project to specific AEM environments
 1. For environment types other than RDE (which uses command line tooling), create a targeted deployment config pipeline in Cloud Manager, as referenced by [this section](/help/operations/config-pipeline.md#creating-and-managing). Note that Full Stack pipelines and Web Tier pipelines do not deploy the configuration file
 1. Deploy the configuration.
 
-## Documentation and Playgrounds {#docs-and-playgrounds}
-
 
 
 
