@@ -47,6 +47,10 @@ You can find more detailed information on Manage Publication on the [Publishing 
 
 ### Publish Content Tree Workflow {#publish-content-tree-workflow}
 
+>[!NOTE]
+>
+>This feature is deprecated in favor of the more performant Tree Activation step, which can be included in a custom workflow.  
+
 You can trigger a tree replication by choosing **Tools - Workflow - Models** and copying the **Publish Content Tree** out-of-the-box workflow model, as shown below:
 
 ![The Publish Content Tree Workflow Card](/help/operations/assets/publishcontenttreeworkflow.png)
@@ -112,9 +116,58 @@ The following are examples of logs that are generated during a sample publish co
 21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
 ```
 
+### Tree Activation Workflow Step {#tree-activation}
+
+Create a Workflow Model that uses the `TreeActivation` process step:
+
+1. From the AEM as a Cloud Service homepage, go to **Tools - Workflow - Models**.
+1. In the Workflow Models page, press **Create** in the upper right corner of the screen.
+1. Add a title and a name to your model. For more information, see [Creating Workflow Models](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html).
+1. Select the created model from the list, and press **Edit**
+1. In the following window, drag and drop the Process Step to the current model flow:
+   
+   ![Process Step](/help/operations/assets/processstep.png)
+
+1. Select the Process step in the flow and select **Configure** by pressing the wrench icon.
+1. Select the **Process** tab and select `Publish Content Tree` from the drop-down list, then check the **Handler Advance** check box
+   
+   ![Treeactivation](/help/operations/assets/new-treeactivationstep.png)
+
+1. Set any additional parameters in the **Arguments** field. Multiple comma-separated arguments can be strung together. For example:
+   
+   `enableVersion=false,agentId=publish,chunkSize=50,maxTreeSize=500000,dryRun=false,filters=onlyModified,maxQueueSize=10`  
+   
+   >[!NOTE]
+   >
+   >For the list of parameters, see the **Parameters** section below.
+
+1. Press **Done** to save the Workflow model.
+
+**Parameters**
+
+| Name           | default | description                                                     |
+| -------------- | ------- | --------------------------------------------------------------- |
+| path           |         | root path to start from                                         |
+| agentId        | publish | Replication agent name to use                                   |
+| chunkSize      | 50      | Number of paths to bundle into a single replication             |
+| maxTreeSize    | 500000  | Maximum number of nodes for a tree to be considered small       |
+| maxQueueSize   | 10      | Maximum number of items in replication queue                    |
+| enableVersion  | false   | Enable versioning                                               |
+| dryRun         | false   | When set to true replication is not acutally called             |
+| userId         |         | only for job. On workflow the user calling the workflow is used |
+| filters        |         | List of node filter names                                       |
+
+Support Filters:
+
+| Name          | description                                 |
+| ------------- | ------------------------------------------- |
+| onlyModified  | Nodes that were modified since last publish |
+| onlyPublished | Nodes that were published before            |
+
+
 **Resume Support**
 
-The workflow processes content in chunks, each of which represents a subset of the full content to be published. If the workflow is stopped by the system, it restarts and processes the chunk that was not yet processed. A log statement states that content was resumed from a specific path.
+The workflow processes content in chunks, each of which represents a subset of the full content to be published.  If the workflow is stopped by the system, it will continue where it left off. 
 
 ### Replication API {#replication-api}
 
