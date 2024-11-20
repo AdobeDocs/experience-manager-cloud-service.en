@@ -118,7 +118,7 @@ This release notes lists the innovations delivered in the current release. For t
 
    ![Interactive Communication Editor](/help/forms/assets/ic-editor.png)
 
-[
+
 * **[PDF/A Compliance Enhancements](/help/forms/aem-forms-cloud-service-communications-introduction.md#convert-to-and-validate-pdfa-compliant-documents)**: You can now use Communication APIs to convert PDF documents to PDF/A formats (1a, 2a, 3a) for archival purposes while ensuring accessibility and verifying compliance with these standards.
 
 ![](/help/forms/assets/pdf-format-conversion.png)
@@ -137,6 +137,7 @@ This release notes lists the innovations delivered in the current release. For t
 
 * **[Stucture Core Components based Adaptive Forms using an XFA template](/help/forms/create-adaptive-form-using-xfa-templates.md)**: You can now create Core Components based Adaptive Forms using XFA form templates (*.XDP files) as a base. This reduces form creation time by reusing fields from XDP files directly in an Adaptive Form.
 
+
 <!-- 
 * **Hamburger Menu Layout in Adaptive Forms**: Adaptive Forms now offers a responsive hamburger menu layout for mobile devices. This collapsible menu organizes form sections, making navigation more 
 intuitive and improving the mobile form-filling experience.
@@ -153,6 +154,9 @@ intuitive and improving the mobile form-filling experience.
 >[!IMPORTANT] 
 >
 > Interested in joining the Early Access Program for any Forms innovation? Send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) with the list of capabilities that you are interested in.## CIF Add-on {#cloud-services-cif}
+
+## CIF Add-on
+
 
 ### Bug fixes {#bug-fixes-cif}
 
