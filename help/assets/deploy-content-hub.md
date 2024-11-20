@@ -11,6 +11,12 @@ exl-id: 58194858-6e1c-460b-bab3-3496176b2851
 
 ![Deploy Content Hub](assets/deploy-content-hub.png)
 
+>[!AVAILABILITY]
+>
+>Content Hub guide is now available in PDF format. Download the entire guide and use Adobe Acrobat AI Assistant to answer your queries. 
+>
+>[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+
 Content Hub is available as part of Experience Manager Assets as a Cloud Service for democratizing access to on-brand content for organizations and their business partners.
 
 The assets that are marked Approved on Experience Manager Assets as a Cloud Service are available for asset distribution on Content Hub.
