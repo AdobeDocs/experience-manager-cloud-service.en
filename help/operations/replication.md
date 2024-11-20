@@ -118,6 +118,8 @@ The following are examples of logs that are generated during a sample publish co
 
 ### Tree Activation Workflow Step {#tree-activation}
 
+The Tree Activaton workflow step is intended to performantly replicate a deep hierarchy of content nodes. It automatically pauses when the queue grows to large in order to allow other replications to proceed in parallel with minimal latency. 
+
 Create a Workflow Model that uses the `TreeActivation` process step:
 
 1. From the AEM as a Cloud Service homepage, go to **Tools - Workflow - Models**.
