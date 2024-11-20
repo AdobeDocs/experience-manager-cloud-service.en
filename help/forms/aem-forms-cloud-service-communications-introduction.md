@@ -188,7 +188,7 @@ PDF documents contain metadata, which is information about the document (as dist
 
 ### Convert to and validate PDF/A-compliant documents
 
-Communications document conversion APIs help to Convert a PDF document to PDF/A. You can use the APIs to convert a PDF document to a PDF/A-compliant document and also to determine whether a PDF document is PDF/A-compliant. PDF/A is an archival format meant for long-term preservation of the document's content. The fonts are embedded within the document, and the file is uncompressed. As a result, a PDF/A document is typically larger than a standard PDF document. Also, a PDF/A document does not contain audio and video content.
+Communications document conversion APIs help to Convert a PDF document to PDF/A. You can use the APIs to convert a PDF document to a PDF/A-compliant document and also to determine whether a PDF document is PDF/A-compliant. PDF/A is an archival format meant for long-term preservation of the document's content. The fonts are embedded within the document, and the file is uncompressed. As a result, a PDF/A document is typically larger than a standard PDF document. Also, a PDF/A document does not contain audio and video content. The supported PDF/A compliance standards include PDF/A-1a, 1b, 2a, 2b, 3a, and 3b.
 
 ### Convert PDF to XDP {#convert-pdf-to-xdp}
 
