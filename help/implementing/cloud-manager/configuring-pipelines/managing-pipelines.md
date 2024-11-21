@@ -56,7 +56,7 @@ You can also click ![Ellipsis - More icon](https://spectrum.adobe.com/static/ico
 
 ## Activity page {#activity}
 
-The **Activity** page shows a complete list of all pipelines executions for the selected program as well as other important program events.
+The **Activity** page shows a complete list of all pipelines executions for the selected program and other important program events.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
