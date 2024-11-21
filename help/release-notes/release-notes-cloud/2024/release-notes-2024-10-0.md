@@ -3,6 +3,7 @@ title: Release Notes for 2024.10.0 release of [!DNL Adobe Experience Manager] as
 description: Release Notes for 2024.10.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
+exl-id: 7a63f04f-10f0-4879-bd06-4182bb288a9b
 ---
 # 2024.10.0 Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 

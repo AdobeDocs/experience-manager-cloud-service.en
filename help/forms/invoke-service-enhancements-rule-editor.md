@@ -1,12 +1,12 @@
 ---
-title: What are the enhancements to the Invoke service VRE for forms based on Core Components?  
+title: What are the enhancements to the Invoke service VRE for forms based on Core Components?
 description: Enhancements to the Invoke service for the rule editor
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 keywords: invoke service enhancements in VRE, populating drop-down options using invoke service, Set repeatable panel using output of invoke service, Set panel using output of invoke service, Use output parameter of invoke service to validate other field.
+exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
 ---
-
 # Using Invoke Service in the Visual Rule Editor for forms based on Core Components
 
 <span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
@@ -237,4 +237,3 @@ Enter `102` in the `Pet ID` text box, and the **Submit** button is hidden.
 ## Additional resources
 
 {{see-also-rule-editor}}
-

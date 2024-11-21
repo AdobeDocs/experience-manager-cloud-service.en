@@ -1,11 +1,11 @@
 ---
 title: How to create an Adaptive Form based on Core Components using XFA form templates?
-description: Learn how to create an Adaptive Form using [!DNL Experience Manager Forms] using XFA form templates or XDP files. 
+description: Learn how to create an Adaptive Form using [!DNL Experience Manager Forms] using XFA form templates or XDP files.
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
+exl-id: f3c9b798-8b20-4674-9b96-a3a0b143d947
 ---
-
 # Create an Adaptive Form (Core Components) based on XFA Form templates
 
 <span class="preview"> The feature is available under early adopter program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
