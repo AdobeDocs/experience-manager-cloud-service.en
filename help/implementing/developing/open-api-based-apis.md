@@ -3,8 +3,8 @@ title: OpenAPI-Based APIs
 description: Learn about AEM as a Cloud Service support for OpenAPI-based APIs
 feature: Developing
 role: Admin, Architect, Developer
+exl-id: 4aeafba9-8f9e-4ecb-9e37-8d048b0474cc
 ---
-
 # OpenAPI-Based APIs {#openapi-based-apis}
 
 >[!NOTE]
@@ -62,8 +62,3 @@ Client IDs scope the APis in an Adobe Developer Console project to specific AEM 
 1. Place the file somewhere under a top level folder named `config` or similar, as described under [Config Pipeline](/help/operations/config-pipeline.md#folder-structure).
 1. For environment types other than RDE (which uses command line tooling), create a targeted deployment config pipeline in Cloud Manager, as referenced by [this section](/help/operations/config-pipeline.md#creating-and-managing) in the Config Pipeline article. Note that Full Stack pipelines and Web Tier pipelines do not deploy the configuration file.
 1. Deploy the configuration.
-
-
-
-
-
