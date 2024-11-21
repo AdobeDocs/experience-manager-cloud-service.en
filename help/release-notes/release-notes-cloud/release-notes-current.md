@@ -112,6 +112,11 @@ The AEM Forms Early Access Program program offers a unique opportunity to you to
 
 This release notes lists the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
 
+
+#### Integrations
+
+* **[Integrate Adaptive Forms with Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)**: AEM Forms as a Cloud Service now includes an easy-to-use option to connect Adaptive Forms with Adobe Marketo Engage. This integration allows you to create Adaptive Forms directly with Marketo Engage's lead capture and related custom objects. You can now prefill form fields with data from Marketo Engage and submit data back to automate workflows like smart campaigns and email automation. You can also connect an Adaptive Form with the Munchkin library to track the number of visits, clicks, and form submissions.
+
 #### Adaptive Forms and HTML5 Forms
 
 * **[Create Adaptive Forms based on existing XFA template](/help/forms/create-adaptive-form-using-xfa-templates.md)**: You can now create Core Component-based Adaptive Forms using XFA form templates (*.XDP files). This capability facilitates AEM Forms On-Premise customers with existing investments in XFA technology to adopt AEM Forms as a Cloud Service.
@@ -121,8 +126,7 @@ This release notes lists the innovations delivered in the current release. For t
    ![HTML Forms (XFA-based Web Forms)](/help/forms/assets/html-forms-xfa-based-web-forms.png) 
 
 
-* **[Integrate Adaptive Forms with Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)**: AEM Forms as a Cloud Service now includes an easy-to-use option to connect Adaptive Forms with Adobe Marketo Engage. This integration allows you to create Adaptive Forms directly with Marketo Engage's lead capture and related custom objects. You can now prefill form fields with data from Marketo Engage and submit data back to automate workflows like smart campaigns and email automation. You can also connect an Adaptive Form with the Munchkin library to track the number of visits, clicks, and form submissions.
-
+* **[Base64 Encoded String Support for File Attachment](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)**: The File Attachment component in Adaptive Forms based on Core Components now includes an option to submit attached files as Base64-encoded strings.
 
 #### Interactive Communications and Communication APIs
 
@@ -149,9 +153,9 @@ intuitive and improving the mobile form-filling experience.
 
 -->
 
-* **[Base64 Encoded String Support for File Attachment](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)**: The File Attachment component in Adaptive Forms based on Core Components now includes an option to submit attached files as Base64-encoded strings.
+## Automated Forms Conversion Service 
 
-* **[Convert PDF forms, AcroForms, or XFA-based forms to Core Components based Adaptive Forms](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms)**: You can now use Automated Forms Conversion Service to transform PDF forms, AcroForms, or XFA-based forms into Core Components based Adaptive Forms. 
+* **[Convert PDF Forms to Core Components based Adaptive Forms](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms)**: You can now use Automated Forms Conversion Service to transform PDF forms, AcroForms, or XFA-based forms into Core Components based Adaptive Forms. 
 
 
 >[!IMPORTANT] 
