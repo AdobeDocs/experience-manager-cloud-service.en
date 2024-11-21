@@ -243,7 +243,7 @@ See also [Manage Environments](/help/implementing/cloud-manager/manage-environme
 
 ### Pipelines card {#pipelines}
 
-The **Pipelines** card gives you an overview of your pipelines as well as links for quick actions.
+The **Pipelines** card gives you an overview of your pipelines and links for quick actions.
 
 The **Pipelines** card only lists three pipelines. Click **Show All** to see all pipelines of the program.
 
