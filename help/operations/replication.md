@@ -62,7 +62,7 @@ Create a Workflow Model that uses the `TreeActivation` process step:
 1. Select the Process step in the flow and select **Configure** by pressing the wrench icon.
 1. Select the **Process** tab and select `Publish Content Tree` from the drop-down list, then check the **Handler Advance** check box
    
-   ![Treeactivation](/help/operations/assets/new-treeactivationstep.png)
+   ![Treeactivation](/help/operations/assets/new-treeactivationstep.png){width="300" align="center"}
 
 1. Set any additional parameters in the **Arguments** field. Multiple comma-separated arguments can be strung together. For example:
    
@@ -105,11 +105,13 @@ The workflow processes content in chunks, each of which represents a subset of t
 1. From the AEM as a Cloud Service homepage, go to **Tools - General - Jobs**.
 1. Look at the row corresponding to your workflow. The *progress* column gives an indication of how the replication is progressing. For example, it may display 41/564 and upon refreshing, it may be updated to 52/564.
 
-   ![Treeactivation progress](/help/operations/assets/treeactivation-progress.png)
+   ![Treeactivation progress](/help/operations/assets/treeactivation-progress.png){width="300" align="center"}
+
 
 1. Selecting the row and opening it will provide additional details about the status of the workflow execution.
 
-   ![Treeactivation status details](/help/operations/assets/treeactivation-progress-details.png)
+   ![Treeactivation status details](/help/operations/assets/treeactivation-progress-details.png){width="300" align="center"}
+
 
 
 ### Publish Content Tree Workflow {#publish-content-tree-workflow}
