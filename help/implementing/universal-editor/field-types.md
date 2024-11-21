@@ -133,7 +133,7 @@ An AEM tag component type enables an AEM tag picker, which can be used to attach
 
 #### AEM Content {#aem-content}
 
-An AEM content component type type enables an AEM content picker, which can be used to set content references. It offers an additional validation type.
+An AEM content component type type enables an AEM content picker, which can be used to select any AEM resource. Unlike the [reference component,](#reference) the AEM content component can reference any AEM content. It offers an additional validation type.
 
 |Validation Type|Value Type|Description|Required|
 |---|---|---|---|
@@ -630,6 +630,8 @@ A radio group component type allows for a mutually-exclusive selection from mult
 >[!ENDTABS]
 
 #### Reference {#reference}
+
+An reference component type type enables an AEM asset picker, which can be used to select any AEM asset to reference. Unlike the [AEM content component,](#aem-content) the reference component can only reference assets. It offers an additional validation type.
 
 A reference component type allows for a reference to another data object from the current object.
 
