@@ -38,26 +38,15 @@ Have a look at the November 2024 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-**[Edge Delivery Services] Page templates with Universal Editor authoring**
+**[!DNL Edge Delivery Services] Page templates with Universal Editor authoring**
 
-Turn quickly any Edge Delivery page into a page template. This allows you to start a new page with a pre-defined structure & content instead of a blank page. [Read more](/help/sites-cloud/authoring/universal-editor/templates.md)
+Turn quickly any Edge Delivery page into a page template. This allows you to start a new page with a pre-defined structure & content instead of a blank page. [Read more](/help/sites-cloud/authoring/universal-editor/templates.md).
 
-**[Edge Delivery Services] CSV Importer for publishing via an AEM instance**
+**[!DNL Edge Delivery Services] CSV Importer for publishing via an AEM instance**
 
-Manage your Edge Delivery spreadsheet data (e.g. redirects) efficiently in your favorite spreadsheet tool and upload it to AEM via the new CSV importer. [Read more](/help/edge/wysiwyg-authoring/tabular-data.md#importing)
-
-**Modernized Page Events**
-
-The following AEM Sites page events are now available as externally consumable events that are based on the AEM as a Cloud Service Eventing Platform. The events can be processed via Adobe I/O to interact with external processes. 
-* Page published
-* Page unpublished
-* Page deleted
+Manage your Edge Delivery spreadsheet data (e.g. redirects) efficiently in your favorite spreadsheet tool and upload it to AEM via the new CSV importer. [Read more](/help/edge/wysiwyg-authoring/tabular-data.md#importing).
 
 ### Early Adopter Program {#sites-early-adopter}
-
-**Generate Variations**
-
-Leverage GenAI through AEM's new feature, [generate variations](/help/generative-ai/generate-variations.md), accessible now in Cloud Service. Generate variations helps you generate and scale content creation through the use of generative AI. Reach out to your Adobe account team for consideration in the program.
 
 **AEM REST OpenAPI for Content Fragment Delivery**
 
@@ -112,7 +101,6 @@ The AEM Forms Early Access Program program offers a unique opportunity to you to
 
 This release notes lists the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
 
-
 #### Integrations
 
 * **[Integrate Adaptive Forms with Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)**: AEM Forms as a Cloud Service now includes an easy-to-use option to connect Adaptive Forms with Adobe Marketo Engage. This integration allows you to create Adaptive Forms directly with Marketo Engage's lead capture and related custom objects. You can now prefill form fields with data from Marketo Engage and submit data back to automate workflows like smart campaigns and email automation. You can also connect an Adaptive Form with the Munchkin library to track the number of visits, clicks, and form submissions.
@@ -143,8 +131,6 @@ This release notes lists the innovations delivered in the current release. For t
     * Remove Signature Field: Deletes a specified signature field.
 
 
-
-
 <!-- 
 * **Hamburger Menu Layout in Adaptive Forms**: Adaptive Forms now offers a responsive hamburger menu layout for mobile devices. This collapsible menu organizes form sections, making navigation more 
 intuitive and improving the mobile form-filling experience.
@@ -162,8 +148,7 @@ intuitive and improving the mobile form-filling experience.
 >
 > Interested in joining the Early Access Program for any Forms innovation? Send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) with the list of capabilities that you are interested in.## CIF Add-on {#cloud-services-cif}
 
-## CIF Add-on
-
+## CIF Add-on {#cif}
 
 ### Bug fixes {#bug-fixes-cif}
 
