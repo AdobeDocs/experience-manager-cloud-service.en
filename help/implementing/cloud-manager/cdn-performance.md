@@ -36,7 +36,7 @@ The dashboard presents an overall score for CDN performance along with trends, a
 
 ![CDN performance dashboard](assets/cdn-performance-dashboard.png)
 
-For details on your CDN performance as well as for suggestions on how to improve it, click **View trend**.
+For details on your CDN performance and for suggestions on how to improve it, click **View trend**.
 
 ![Performance trend](assets/cdn-performance-trend.png)
 
