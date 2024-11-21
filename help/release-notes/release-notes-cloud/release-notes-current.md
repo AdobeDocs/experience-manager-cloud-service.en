@@ -95,13 +95,13 @@ Assets view now enables you to access Dynamic Media and Dynamic Media with OpenA
 
 * **[Asynchronous function support for Adaptive Forms](/help/forms/using-async-funct-in-rule-editor.md)**: When your Adaptive Form requires asynchronous operations, such as waiting for external processes or data retrieval, you can implement these operations with custom functions and configure them in the Rule Editor.
 
-### New Pre-release features in AEM Forms {#forms-new-prerelease-features}
+### Pre-release features in AEM Forms {#forms-new-prerelease-features}
 
 * **Manage Publication**: You can use the Manage Publication workflow to publish or unpublish forms across environments, typically from the author instance to the publish and preview instance(s). It allows users to publish, unpublish, or schedule the publication of content in a streamlined manner.
 
 * **[Auto-save a draft for Core Components based Adaptive Forms](/help/forms/save-core-component-based-form-as-draft.md)**: Users can now benefit from an auto-save feature that saves a partially completed form as a draft automatically. They can return later to finish filling it out on the same or other device. This feature improves conversion rates for organizations by reducing form abandonment, as users do not need to start over form filling from the beginning.
 
-* **[Enhanced Invoke Service](/help/forms/invoke-service-enhancements-rule-editor.md)**: For Adaptive Forms based on Core Components*, you can now populate dropdown options using the output of Invoke Service, set repeatable panels using the output of Invoke Service, set individual panels using the output of Invoke Service and use the output parameter of Invoke Service to validate other fields. 
+* **[Rule editor enhancements](/help/forms/invoke-service-enhancements-rule-editor.md)**: For Adaptive Forms based on Core Components, you can now populate dropdown options using the output of Invoke Service, set repeatable panels using the output of Invoke Service, set individual panels using the output of Invoke Service and use the output parameter of Invoke Service to validate other fields. 
 
 * **[Enhance User Experience with Navigation Buttons in Panel Layouts](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button)**: You can now add navigation buttons to your panel layouts, such as Horizontal Tabs, Vertical Tabs, Accordions, or Wizard. These buttons enhance the user experience by simplifying transitions between panels, focusing on the selected panel.
 
@@ -112,6 +112,18 @@ The AEM Forms Early Access Program program offers a unique opportunity to you to
 
 This release notes lists the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
 
+#### Adaptive Forms and HTML5 Forms
+
+* **[Create Adaptive Forms based on existing XFA template](/help/forms/create-adaptive-form-using-xfa-templates.md)**: You can now create Core Component-based Adaptive Forms using XFA form templates (*.XDP files). This capability facilitates AEM Forms On-Premise customers with existing investments in XFA technology to adopt AEM Forms as a Cloud Service.
+
+* **HTML5 Forms (XFA-based Web Forms)**: Now, AEM Forms On-Premise customers using XFA technology can effortlessly transition to AEM Forms as a Cloud Service while preserving their existing user experience with HTML5 Forms (XFA-based Web Forms). This capability enables the rendering of XFA form templates in HTML5 format, making forms accessible on devices that do not support XFA-based PDF forms.
+
+   ![HTML Forms (XFA-based Web Forms)](/help/forms/assets/html-forms-xfa-based-web-forms.png) 
+
+
+* **[Integrate Adaptive Forms with Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)**: AEM Forms as a Cloud Service now includes an easy-to-use option to connect Adaptive Forms with Adobe Marketo Engage. This integration allows you to create Adaptive Forms directly with Marketo Engage's lead capture and related custom objects. You can now prefill form fields with data from Marketo Engage and submit data back to automate workflows like smart campaigns and email automation. You can also connect an Adaptive Form with the Munchkin library to track the number of visits, clicks, and form submissions.
+
+
 #### Interactive Communications and Communication APIs
 
 * **Interactive Communication Editor**: The Interactive Communication Editor is a user-friendly, graphical Communication design tool that simplifies the creation of personalized, data-driven correspondences and runs in any modern browser. It supports seamless data integration, intricate logic definition, and rich media integration, ensuring professional and compliant document, Communication, and template generation for various business needs. 
@@ -121,21 +133,12 @@ This release notes lists the innovations delivered in the current release. For t
 
 * **[PDF/A Compliance Enhancements](/help/forms/aem-forms-cloud-service-communications-introduction.md#convert-to-and-validate-pdfa-compliant-documents)**: You can now use Communication APIs to convert PDF documents to PDF/A formats (1a, 2a, 3a) for archival purposes while ensuring accessibility and verifying compliance with these standards.
 
-![](/help/forms/assets/pdf-format-conversion.png)
 
 * **[Signature API (Document Assurance)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance)**: A new RESTful API in Communication APIs enables easy management of PDF signatures. It supports operations like:
     * Clear Signature: Removes a signature from a specified field.
     * Remove Signature Field: Deletes a specified signature field.
 
-#### Adaptive Forms and HTML5 Forms
 
-* **HTML5 Forms (XFA-based Web Forms)**: You can now render XFA form templates in HTML5 format. This capability enables the rendering of forms on devices on which XFA-based PDF forms are not supported. HTML5 forms not only supports the existing capabilities of XFA form templates but also adds new capabilities, such as scribble signature, for mobile devices.
-
-   ![HTML Forms (XFA-based Web Forms)](/help/forms/assets/html-forms-xfa-based-web-forms.png) 
-
-* **[Integrate Adaptive Forms with Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)**: AEM Forms as a Cloud Service now includes an easy-to-use option to connect Adaptive Forms with Adobe Marketo Engage. This integration allows you to create Adaptive Forms directly with Marketo Engage's lead capture and related custom objects. You can now prefill form fields with data from Marketo Engage and submit data back to automate workflows like smart campaigns and email automation. You can also connect an Adaptive Form with the Munchkin library to track the number of visits, clicks, and form submissions.
-
-* **[Stucture Core Components based Adaptive Forms using an XFA template](/help/forms/create-adaptive-form-using-xfa-templates.md)**: You can now create Core Components based Adaptive Forms using XFA form templates (*.XDP files) as a base. This reduces form creation time by reusing fields from XDP files directly in an Adaptive Form.
 
 
 <!-- 
@@ -148,7 +151,7 @@ intuitive and improving the mobile form-filling experience.
 
 * **[Base64 Encoded String Support for File Attachment](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)**: The File Attachment component in Adaptive Forms based on Core Components now includes an option to submit attached files as Base64-encoded strings.
 
-* **[Automated Forms Conversion Service (AFCS)](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms)**: You can now use Automated Forms Conversion Service to transform PDF forms, AcroForms, or XFA-based forms into Core Components based Adaptive Forms. 
+* **[Convert PDF forms, AcroForms, or XFA-based forms to Core Components based Adaptive Forms](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms)**: You can now use Automated Forms Conversion Service to transform PDF forms, AcroForms, or XFA-based forms into Core Components based Adaptive Forms. 
 
 
 >[!IMPORTANT] 
