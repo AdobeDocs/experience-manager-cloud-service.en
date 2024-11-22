@@ -4,6 +4,7 @@ description: Java&trade; and JavaScript APIs enable you to internationalize stri
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
+exl-id: 131c485d-8cff-477c-8792-d1547d343495
 ---
 # Internationalizing UI Strings {#internationalizing-ui-strings}
 

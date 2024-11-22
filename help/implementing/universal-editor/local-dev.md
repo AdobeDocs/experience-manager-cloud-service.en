@@ -1,14 +1,14 @@
 ---
-title: Local AEM Development with the Universal Editor
-description: Learn how the Universal Editor supports editing on local AEM instances for development purposes.
+title: Running Your Own Universal Editor Service
+description: Learn how you can run your own Universal Editor Service either for local development or as part of your own infrastructure.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
 ---
 
-# Local AEM Development with the Universal Editor {#local-dev-ue}
+# Running Your Own Universal Editor Service {#local-ue-service}
 
-Learn how the Universal Editor supports editing on local AEM instances for development purposes.
+Learn how you can run your own Universal Editor Service either for local development or as part of your own infrastructure.
 
 ## Overview {#overview}
 
@@ -18,11 +18,20 @@ The Universal Editor Service is what binds the Universal Editor and the backend 
 * While developing with a local AEM SDK, Adobe's Universal Editor Service can not be accessed from the internet.
 * If your AEM instance has IP restrictions and Adobe's Universal Editor Service isn't in a defined IP range, you can host it yourself.
 
-This document explains how to run AEM in HTTPS alongside a local copy of the Universal Editor Service so you can develop locally on AEM for use with the Universal Editor.
+## Use Cases {#use-cases}
+
+Your own copy of the Universal Editor Service is useful if you wish to:
+
+* Develop locally on AEM for use with the Universal Editor.
+* Run your own Universal Editor Service as part of your own infrastructure, independent of Adobe's Universal Editor Service.
+
+Both use cases are supported. This document explains how to run AEM in HTTPS alongside a local copy of the Universal Editor Service.
+
+If you wish to run your own Universal Editor Service as part of your own infrastructure, you would follow the same steps as the local development example.
 
 ## Set Up AEM to Run on HTTPS {#aem-https}
 
-Within an outer frame secured with HTTPS an unsecure HTTP frame cannot be loaded. The Universal Editor Service runs on HTTPS and therefore AEM or any other remote page must run also on HTTPS.
+Within an outer frame secured with HTTPS, an unsecure HTTP frame cannot be loaded. The Universal Editor Service runs on HTTPS and therefore AEM or any other remote page must run also on HTTPS.
 
 To do this, you need to set up AEM to run on HTTPS. For development purposes you can use self-signed certificate.
 
@@ -61,9 +70,17 @@ UES_PORT=8000
 UES_PRIVATE_KEY=./key.pem
 UES_CERT=./certificate.pem
 UES_TLS_REJECT_UNAUTHORIZED=false
+UES_CORS_PRIVATE_NETWORK=true
 ```
 
-These are the minimum values required for local development in our example. The following table details these and additional values available.
+These are the minimum values required for local development in our example.
+
+>[!NOTE]
+>
+>If you are running Chrome version 130+, you must enable sending CORS headers for [private network access](https://wicg.github.io/private-network-access/#private-network-request) using the `UES_CORS_PRIVATE_NETWORK` option.
+
+
+The following table details these and additional values available.
 
 |Value|Optional|Default|Description|
 |---|---|---|---|
@@ -78,6 +95,7 @@ These are the minimum values required for local development in our example. The 
 |`UES_SPLUNK_TOKEN`|Yes|None|Splunk token|
 |`UES_SPLUNK_INDEX`|Yes|None|Index to write logs to|
 |`UES_SPLUNK_SOURCE`|Yes|`universal-editor-service`|Name of the source in the splunk logs|
+|`UES_CORS_PRIVATE_NETWORK`|Yes|`false`|Enable sending CORS headers to allow [Private network.](https://wicg.github.io/private-network-access/#private-network-request) Required for users of Chrome version 130+|
 
 >[!NOTE]
 >
@@ -130,7 +148,7 @@ Once set, you should see every content update call go to `https://localhost:8000
 
 With the [Universal Editor Service running locally](#running-ue) and your [content page instrumented to use the local service,](#using-loca-ue) you can now start the editor.
 
-1. Open your browser to `https://localhost:8000/corslib/LATEST`.
+1. Open your browser to `https://localhost:8000/ping`.
 1. Direct your browser to accept [your self-signed certificate.](#ue-https)
 1. Once the self-signed certificate is trusted, you can edit the page using your local Universal Editor Service.
 
