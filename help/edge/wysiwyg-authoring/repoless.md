@@ -31,7 +31,7 @@ To take advantage of this feature, make sure you have done the following.
 You will also need to ask Adobe to configure two items for you. Reach out to Adobe via your Slack channel or raise a support issue to make these requests.
 
 * The [aem.live configuration service](https://www.aem.live/docs/config-service-setup#prerequisites) is active for your environment and you are configured as an administrator.
-* The repoless feature must be enabled for your org by Adobe.
+* The repoless feature must be enabled for your program by Adobe.
 
 ## Activate Repoless Feature {#activate}
 
