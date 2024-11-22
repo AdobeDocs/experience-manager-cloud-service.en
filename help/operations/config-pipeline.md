@@ -1,5 +1,5 @@
 ---
-title: Using \s
+title: Using Config Pipelines
 description: Learn how you can use config pipelines to deploy different configurations AEM as a Cloud Service such as log forwarding settings, purge-related maintenance tasks, and various CDN configurations.
 feature: Operations
 role: Admin

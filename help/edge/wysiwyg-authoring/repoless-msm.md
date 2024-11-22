@@ -6,3 +6,7 @@ role: Admin, Architect, Developer
 ---
 
 # Repoless Multi Site Management {#repoless-msm}
+
+This document assumes that you have already created a base site for your project called `my-aem-site` and you wish to localize it using AEM's MSM feature.
+
+If you have set up your project already for the repoless use case, the cloud configuration is assigned at the level of the root page, `/content/my-aem-site`. For multilingual sites, this configuration assignment must be changed to the language root such as `/content/my-aem-site/language-master/de`.
