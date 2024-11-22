@@ -1136,7 +1136,7 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
     * `_path` : the path to your Content Fragment within the repository
       * See [Sample Query - A Single Specific City Fragment](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
 
-    * `_id_` : the UUID for your Content Fragment within the repository
+    * `_id` : the UUID for your Content Fragment within the repository
 
       * See [Sample Query for a Content Fragment of a specific Model with UUID references](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-references)
       * [See Sample Query for Content Fragments by UUID reference](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-reference)
