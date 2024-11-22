@@ -523,7 +523,7 @@ Update the usage of maven-bundle-plugin to version 5.1.5 or higher to ensure sup
 
 #### Update dependencies in maven-scr-plugin  {#maven-scr-plugin}
 
-The `maven-scr-plugin` is not directly compatible with Java 17 and 21. However, it remains possible to generate the descriptor files by updating the ASM dependency version within the plugin configuration.
+The `maven-scr-plugin` is not directly compatible with Java 17 and 21. However, it is possible to generate the descriptor files by updating the ASM dependency version within the plugin configuration, similar to the snippet below: 
 for that we need to update it something like below:
 
 ```
