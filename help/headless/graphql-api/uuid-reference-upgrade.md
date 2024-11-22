@@ -3,6 +3,7 @@ title: Upgrade your Content Fragments for UUID References
 description: Learn how to upgrade your Content Fragments for optimized UUID references in Adobe Experience Manager as a Cloud Service for headless content delivery.
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
+exl-id: 004d1340-8e3a-4e9a-82dc-fa013cea45a7
 ---
 # Upgrade your Content Fragments for UUID References {#upgrade-content-fragments-for-UUID-references}
 
