@@ -252,8 +252,6 @@ Within the schema there are individual fields, of two basic categories:
 
 GraphQL for AEM supports a list of types. All the supported Content Fragment Model Data Types and the corresponding GraphQL types are represented:
 
-<!-- CQDOC-21487 - check additions to table -->
-
 | Content Fragment Model - Data Type | GraphQL Type | Description |
 |--- |--- |--- |
 | Single line Text | `String`, `[String]` | Used for simple strings such as author names, location names, and so on. |
@@ -1139,7 +1137,7 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
       * See [Sample Query - A Single Specific City Fragment](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
 
     * `_id_` : the UUID for your Content Fragment within the repository
-      <!-- CQDOC-21487 -->
+
       * See [Sample Query for a Content Fragment of a specific Model with UUID references](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-references)
       * [See Sample Query for Content Fragments by UUID reference](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-reference)
 

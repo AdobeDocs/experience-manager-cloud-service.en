@@ -1488,8 +1488,6 @@ The following query returns all `attachments` - a specific field (subgroup) of t
 
 ### Sample Queries for a Content Fragment of a specific Model using UUID references {#sample-wknd-fragment-specific-model-uuid-references}
 
-<!-- CQDOC-21487 - need more details on both, text must be checked too -->
-
 These queries interrogate:
 
 * the UUID for a Content Fragment, and for referenced Content Fragments or assets
