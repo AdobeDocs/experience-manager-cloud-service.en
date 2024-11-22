@@ -4,8 +4,8 @@ description: Learn about how to use Cloud Manager to edit and update, or delete 
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
+exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
 ---
-
 # Manage CDN configurations {#manage-cdn-configurations}
 
 Learn about how to use Cloud Manager to edit or delete CDN configurations for an Edge Delivery site or a Cloud Manager environment.
@@ -27,8 +27,6 @@ A user must be a member of the **Business Owner** or **Deployment Manager** role
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 1. In the left side menu, under **Services**, click ![Social network icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **CDN Configurations**.
 1. In the **CDN Configurations** table, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) at the end of a row whose CDN configuration you want to update.
-
-    ![Editing a CDN configuration](/help/implementing/cloud-manager/assets/cdn-config-edit.png)
 
 1. From the drop-down menu, click **Edit**.
 
@@ -55,13 +53,11 @@ The steps for editing a CDN configuration from the **Environments** page are nea
 
 1. On the environment details page, in the CDN Configurations grouping, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) that corresponds to the CDN configuration you want to edit.  
     
-    ![Entering domain name on the Environment Details page](/help/implementing/cloud-manager/assets/cdn/environments-cdn-config.png)
-
 1. In the pop-up menu, click **Edit**.
 
 1. In the **Edit CDN Configuration** dialog box, set one or more of the options in the respective drop-down list.
 
-The options displayed in the dialog box depend on whether you are using an **Adobe managed CDN** or an **Other CDN provider** (customer managed CDN).
+    The options displayed in the dialog box depend on whether you are using an **Adobe managed CDN** or an **Other CDN provider** (customer managed CDN).
 
 1. Click **Update**.
 
@@ -81,11 +77,9 @@ A user must be a member of the **Business Owner** or **Deployment Manager** role
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. In the left side menul, under **Services**, click **CDN Configurations**.
+1. In the left side menu, under **Services**, click **CDN Configurations**.
 
 1. In the CDN Configurations table, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) at the end of a row that corresponds to a CDN you want to remove, then click **Delete**.
-
-    ![Deleting a CDN configuration](/help/implementing/cloud-manager/assets/cdn-config-delete.png)
 
 1. In the **Delete CDN Configuration** dialog box, click **Delete**.
 
@@ -106,10 +100,6 @@ The steps for deleting a CDN configuration from the **Environments** page are ne
 
 1. On the environment details page, in the **CDN Configurations** grouping, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) that corresponds to the CDN configuration you want to remove, then click **Delete**.  
     
-    ![CDN configuration group on an environment detail page](/help/implementing/cloud-manager/assets/cdn/environments-cdn-config.png)
-
 1. In the **Delete CDN Configuration** dialog box, click **Delete**.
 
 1. Click **Delete** again to confirm the removal of the site's CDN.
-
-

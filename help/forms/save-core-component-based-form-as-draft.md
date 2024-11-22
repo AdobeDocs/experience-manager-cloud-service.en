@@ -8,7 +8,7 @@ role: User, Developer
 
 # Save forms as drafts and list them on Sites page
 
-<span class="preview"> This article contains content about the **Auto Save** feature, a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
+<span class="preview"> This article contains content about the **Drafts** feature, a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
 
 Consider a user who begins filling out a form but needs to pause and return later. AEM offers a `save-as-draft` option, allowing the user to save the form as a draft for future completion. To facilitate this, AEM provides the **Drafts & Submissions** Forsm Portal component out of the box, which displays drafts and submissions on AEM Sites pages. The component lists forms that have been saved as drafts for later completion, as well as those that have been submitted. Only logged-in users can edit their drafts or view their submitted forms. However, if an anonymous user navigates through the list of forms using the **Search & Lister** component and saves a form as a draft, that draft is not listed by the **Drafts & Submissions** component. To view drafts and submissions, users must be logged in at the time of form submission.
 
@@ -131,7 +131,7 @@ To save a form as a Draft, create a **Save Form** rule on a form component, such
 
 When you preview an Adaptive Form, fill it out, and click the **Save Form** button, the form is saved as a draft.
 
-### Auto save
+### Drafts
 
 >[!NOTE]
 >
@@ -141,13 +141,13 @@ You can also configure an Adaptive Form to save automatically based on a time-ba
 
 1. In the author instance, open an Adaptive Form in an edit mode.
 1. Open the Content browser, and select the **[!UICONTROL Guide Container]** component of your Adaptive Form. 
-1. Click the Guide Container properties ![Guide properties](/help/forms/assets/configure-icon.svg) icon and open the **[!UICONTROL Auto-Save]** tab.
+1. Click the Guide Container properties ![Guide properties](/help/forms/assets/configure-icon.svg) icon and open the **[!UICONTROL Drafts]** tab.
 
     ![Auto-save](/help/forms/assets/auto-save.png)
 
-1. Select the **[!UICONTROL Enable]** check box to enable auto-save of the form.
-1. Configure **[!UICONTROL Trigger]** as **Time based**, to auto-save the form <!--based on the occurrence of an event or--> after a specific interval of time.
-1. Specify the time interval in **[!UICONTROL Auto save on this interval (In seconds)]** to set the duration that triggers the automatic saving of the form at the defined interval.
+1. Select the **[!UICONTROL Automatically Save Drafts]** check box to enable auto-save of the form as drafts.
+1. Configure **[!UICONTROL Save Preference]** as **Save drafts at regular intervals**, to auto-save the form <!--based on the occurrence of an event or--> after a specific interval of time.
+1. Specify the time interval in **[!UICONTROL Save interval frequency (Seconds)]** to set the duration that triggers the automatic saving of the form at the defined interval.
 1. Click **[!UICONTROL Done]**.
  
 ## View drafts/submitted forms on Sites page using the Drafts & Submissions component
