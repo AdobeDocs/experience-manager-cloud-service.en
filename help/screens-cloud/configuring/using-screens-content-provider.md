@@ -33,7 +33,7 @@ Follow the steps below to log on to Screens Content Provider:
 
 1. Select the program for Screens as a Cloud Service and click the icon, as shown below to open the Cloud Manager's **Overview** page for that specific program.
 
-   ![Icon for Cloud Manager's Overview page is shown on the far left of a a toolbar.](/help/screens-cloud/assets/configure/screens-cp-1.png)
+   ![Icon for Cloud Manager's Overview page is shown on the far left of a toolbar.](/help/screens-cloud/assets/configure/screens-cp-1.png)
 
    >[!NOTE]
    >If you have not created any program, see [First Time Login to Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html). The topic guides you through adding a program for Screens as a Cloud Service, in Cloud Manager.

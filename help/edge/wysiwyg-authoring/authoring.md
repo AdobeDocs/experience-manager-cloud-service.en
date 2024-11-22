@@ -38,7 +38,7 @@ The Universal Editor provides a modern and intuitive GUI for authoring your cont
 
 ![Adding and arranging blocks in the Universal Editor](assets/blocks.png)
 
-Details of the blocks can then be configured in the Properties rail.
+Details of the blocks can then be configured in the Properties panel.
 
 ![Configuring block properties](assets/block-properties.png)
 
