@@ -10,6 +10,12 @@ exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
 
 ![Approve assets for Content Hub](assets/content-hub-approve-assets.png)
 
+>[!AVAILABILITY]
+>
+>Content Hub guide is now available in PDF format. Download the entire guide and use Adobe Acrobat AI Assistant to answer your queries. 
+>
+>[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+
 Brand Managers and Marketers maintain strict control over brand assets. Only approved and latest version of the asset is available for use within Content Hub, ensuring brand consistency across all channels and applications. 
 
 You can approve assets using AEM Assets as a Cloud Service to streamline asset management, ensuring a controlled and efficient process for handling assets.
