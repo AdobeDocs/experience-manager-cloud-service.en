@@ -1,22 +1,21 @@
 ---
-title: AI Assistant in Adobe Experience Manage
+title: AI Assistant in Adobe Experience Manager (Limited Beta)
 description: Use AI Assistant in Adobe Experience Manager to help you find answers, troubleshoot, and explore Sites, Assets, Forms, and Cloud Manager.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-hide: yes
+hide: no
 hidefromtoc: yes
 
 ---
-# About AI Assistant in Adobe Experience Manager Home {#aem-home}
+# About AI Assistant in Adobe Experience Manager {#aem-home}
 
-The AI Assistant in AEM (Adobe Experience Manager) offers a conversational interface designed to streamline finding answers to your Adobe Experience Manager-related queries. It helps you access product knowledge, troubleshoot issues, and explore information available in Experience League. During the Beta program, the AI Assistant supports Adobe Experience Manager as a Cloud Service, including Sites, Assets, Forms, and Cloud Manager.
+The AI Assistant in AEM (Adobe Experience Manager) offers a conversational interface designed to streamline finding answers to your Adobe Experience Manager-related queries. It helps you access product knowledge, troubleshoot issues, and explore information available in Experience League. During the limited Beta program, the AI Assistant supports Adobe Experience Manager as a Cloud Service, including Sites, Assets, Forms, and Cloud Manager.
 
 >[!IMPORTANT]
+>Be sure you have reviewed and submitted the user agreement so Adobe can enable the AI Assistant feature for you to test out and participate in the Beta program.
 >
->Be sure you review the user agreement before using the AI Assistant to unlock additional features as they become available during the beta phase.
->
->Select to view the user agreement interface.
+>For any questions, send an email to [Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com) from your email address associated with your Adobe ID. 
 
 ## Privacy, Security, and Governance
 
@@ -38,7 +37,7 @@ Product knowledge encompasses concepts and topics derived from Adobe Experience 
 | --- | --- |
 | Pointed learning | <ul><li>What is the Universal Editor?</li><li>How do I create a program in Cloud Manager?</li></ul> |
 | Open discovery | <ul><li>How do I use Universal Editor?</li><li>Is there a way to copy content from one environment to another?</li></ul>  |
-| Troubleshooting | <ul><li>What can't I access Universal Editor?</li><li>Why is my pipeline failing?</li></ul>  | 
+| Troubleshooting | <ul><li>Why can't I access the Universal Editor?</li><li>Why is my pipeline failing?</li></ul>  | 
 
 The current scope of the AI Assistant focuses on addressing product knowledge questions for Adobe Experience Manager as a Cloud Service. This scope includes comprehensive support for key areas, such as Sites, Assets, Forms, and Cloud Manager.
 
