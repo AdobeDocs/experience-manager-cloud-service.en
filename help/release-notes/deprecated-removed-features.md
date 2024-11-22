@@ -499,7 +499,9 @@ Additional information about OSGI configuration can be found at [this location](
 
 AEM as a Cloud Service will be moving to Java 21 runtime. In order to ensure compatibility, it is essential to make the following adjustments:
 
-### Build-time Requirements :
+### Runtime Requirements
+
+These adjustments are required to ensure compatibility with the Java 21 runtime. The libraries can be updated at any time as they are compatible with older versions of Java.
 
 #### Minimum version of org.objectweb.asm {#org.objectweb.asm}
 
@@ -511,9 +513,13 @@ Update the usage of org.apache.groovy to version 4.0.22 or higher to ensure supp
 
 This bundle can be indirectly included by adding third party dependencies such as the AEM Groovy Console.
 
+### Build-time Requirements
+
+These adjustments are required to allow building the project with newer versions of Java but not required for runtime compatibility. The Maven plug-ins can be updated at any time as they are compatible with older versions of Java.
+
 #### Minimum version of bnd-maven-plugin {#bnd-maven-plugin}
 
-Update the usage of bnd-maven-plugin to version 6.4.0 or higher to ensure support for newer JVM runtimes.
+Update the usage of bnd-maven-plugin to version 6.4.0 to ensure support for newer JVM runtimes. Versions 7 or higher are not compatible with Java 11 or lower so an upgrade to that version is not recommended at this time.
 
 #### Minimum version of aemanalyser-maven-plugin {#aemanalyser-maven-plugin}
 
