@@ -370,7 +370,7 @@ data:
             - reqProperty: domain
               equals: <Production Host>
             - reqProperty: path
-              matches: "^^(/scripts/.*|/styles/.*|/fonts/.*|/blocks/.*|/icons/.*|.*/media_.*|/favicon.ico)"
+              matches: "^(/scripts/.*|/styles/.*|/fonts/.*|/blocks/.*|/icons/.*|.*/media_.*|/favicon.ico)"
         action:
           type: selectOrigin
           originName: aem-live
@@ -434,7 +434,7 @@ experimental_redirects:
           reqProperty: clientCountry
           transform:
             - op: replace
-              match: '^(/.*)$'
+              match: '^(.*)$'
               replacement: 'https://www.example.com/\1/home'
             - op: tolower
     - name: www-redirect
@@ -445,6 +445,6 @@ experimental_redirects:
           reqProperty: path
           transform:
             - op: replace
-              match: '^(/.*)$'
+              match: '^/(.*)$'
               replacement: 'https://www.example.com/\1'
 ```

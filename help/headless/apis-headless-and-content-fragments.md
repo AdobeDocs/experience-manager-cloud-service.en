@@ -3,8 +3,8 @@ title: AEM APIs for Structured Content Delivery and Content Fragment Management
 description: Learn about the APIs available for Structured Content Delivery and Content Fragment Management
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
+exl-id: 95aecd30-566a-42a9-b97a-7efe45fd389c
 ---
-
 # AEM APIs for Structured Content Delivery and Management {#aem-apis-structured-content-delivery-and-management}
 
 Adobe Experience Manager (AEM) as a Cloud Service offers multiple APIs for both structured content delivery from Content Fragments and Content Fragment management. See the individual pages for further details of the specific APIs.
@@ -84,4 +84,4 @@ Benefits of GraphQL include:
   * With GraphQL this is a one-step process, brought together in the GraphQL query, and can make prototyping easier. REST on the other hand is a 2-step process:
 
     1. Fetch content with API.
-    2. In the JSON response, determine what to use for rendering in the client app. 
+    2. In the JSON response, determine what to use for rendering in the client app.

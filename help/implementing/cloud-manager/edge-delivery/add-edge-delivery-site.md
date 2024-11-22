@@ -1,11 +1,10 @@
 ---
 title: Add an Edge Delivery Site to Cloud Manager
 description: Learn how to add an Edge Delivery site to your production program or sandbox program.
-
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
+exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
 ---
-
 # Add an Edge Delivery site to Cloud Manager {#adding}
 
 After you add an Edge Delivery site to your production program, your Edge Delivery Services license is applied to it.
@@ -49,8 +48,6 @@ See also [Introduction to Edge Delivery Services in Cloud Manager](/help/impleme
 
 1. Click **Verify**.
 
-Once the repository is verified, its status in the Edge Delivery sites table gets updated. A green circle with a white check mark inside indicates the status.
+When the repository is verified, its status in the Edge Delivery sites table gets updated. A green circle with a white check mark inside indicates the status.
 
 In the same table, click ![Information about Edge Delivery site](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) to view site details. This information includes the verified Repository URL, along with the Preview and Production website URLs.
-
-

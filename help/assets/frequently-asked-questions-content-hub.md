@@ -1,6 +1,7 @@
 ---
 title: Content Hub frequently asked questions (FAQs)
 description: Get responses to some of the most frequently asked questions (FAQs) for Content Hub.
+exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
 ---
 # Content Hub frequently asked questions {#content-hub-frequently-asked-questions}
 
@@ -8,6 +9,12 @@ description: Get responses to some of the most frequently asked questions (FAQs)
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Content Hub frequently asked question](assets/content-hub-faqs.png)
+
+>[!AVAILABILITY]
+>
+>Content Hub guide is now available in PDF format. Download the entire guide and use Adobe Acrobat AI Assistant to answer your queries. 
+>
+>[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 ## What is Content Hub? {#what-is-content-hub} 
 
@@ -81,5 +88,3 @@ Adobe provides migration support from Brand Portal to Content Hub that you can u
 ## Why cannot I see the Product Settings/Configuration option in Content Hub? {#ui-configuration-option-missing}
 
 To access the [Configuration User Interface](/help/assets/configure-content-hub-ui-options.md), you need to be a [Content Hub Administrator](/help/assets/deploy-content-hub.md##onboard-content-hub-administrator). If you are assigned to the AEM Administrators product profile on the production author instance in Adobe Admin Console and you still cannot see the configuration option, ensure that the AEM Administrators product profile is not renamed. See [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md) for more details.
-
-
