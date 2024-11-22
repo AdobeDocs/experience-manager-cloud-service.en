@@ -48,7 +48,7 @@ Manage your Edge Delivery spreadsheet data (e.g. redirects) efficiently in your 
 
 ### Prerelease capabilities in AEM Sites
 
-Enhanced Content Fragment referencing with unique ID-based references, ensuring stable links that remain valid even when assets or fragments are moved—eliminating the need for updates or re-publishing. Current limitation: Page references are not yet supported with unique IDs. If pages are referenced in Content Fragments, this capability should not be used.
+Enhanced [Content Fragment referencing with unique ID-based references](/help/headless/graphql-api/uuid-reference-upgrade.md), ensuring stable links that remain valid even when assets or fragments are moved—eliminating the need for updates or re-publishing. Current limitation: Page references are not yet supported with unique IDs. If pages are referenced in Content Fragments, this capability should not be used.
 
 ### Early Adopter Program {#sites-early-adopter}
 
