@@ -45,7 +45,6 @@ The navigation elements include Assets Browse, which loads the repository of the
 
 If no production AEM Cloud Service environments are available, the options appear dimmed (unavailable) for the user.
 
-![](/help/implementing/cloud-manager/assets/aem-home-no-prod-environs.png)
-
-
+![AEM Home no production environments](/help/implementing/cloud-manager/assets/aem-home-no-prod-environs.png)
+.
 
