@@ -6,7 +6,7 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 hide: no
 hidefromtoc: yes
-
+exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
 ---
 # About AI Assistant in Adobe Experience Manager {#aem-home}
 
@@ -110,6 +110,3 @@ Here are answers to some common questions about the AI Assistant:
   AI Assistant is designed to answer queries related to Adobe product knowledge.
 * **Does AI Assistant use personal information for training data?**  
   No. AI Assistant does not use personal information for training purposes. Avoid sharing personal information about yourself or others, including names or contact details, with the AI Assistant.
-
-
-
