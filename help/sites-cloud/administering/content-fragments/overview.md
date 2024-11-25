@@ -85,8 +85,10 @@ This and the following pages cover the tasks for creating, configuring, maintain
 
 After the fragments have been created, you can:
 
-* [Use the Content Fragments console](/help/sites-cloud/administering/content-fragments/managing.md) - to access, publish (to preview or production), and reference your fragments
-* [Use the Content Fragments editor](/help/sites-cloud/administering/content-fragments/authoring.md) - to edit, publish (to preview or production), and reference your fragments
+* [Use the Content Fragments console](/help/sites-cloud/administering/content-fragments/managing.md) - to:
+  * access, publish (to preview or production), and reference your fragments
+* [Use the Content Fragments editor](/help/sites-cloud/administering/content-fragments/authoring.md) - to:
+  * edit, publish (to preview or production), and reference your fragments
 * [Analyze](/help/sites-cloud/administering/content-fragments/analysis.md)  the structure of your Content Fragment, using the editor
 * [Access your fragments with GraphQL, for headless delivery to your applications](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md). 
 * [Or use your fragments for page authoring](/help/sites-cloud/authoring/fragments/content-fragments.md)
