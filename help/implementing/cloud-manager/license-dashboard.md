@@ -35,9 +35,9 @@ The Cloud Manager License dashboard provides easy access to solution entitlement
 
 The dashboard is divided into three sections showing you:
 
-* **Solutions** - This section summarizes which solutions that you have licensed such as Sites or Assets.
-* **Add-ons** - This section summarizes which add-ons to your licensed solutions that you have available.
-* **Other Entitlements** - This section summarizes what sandbox and dev environment as well as other entitlements that can be consumed within your tenant.
+* **Solutions** - Which solutions that you have licensed.
+* **Add-ons** - Which add-ons to your licensed solutions that you have available.
+* **Other Entitlements** - What sandbox and dev environment and other entitlements that can be consumed within your tenant.
 
 Each section summarizes what is available and how it is used, if at all. Currently only Sites and Assets solutions are displayed even if other solutions exist in the tenant.
 

@@ -139,7 +139,13 @@ If the allowed multiple fields in the When condition feature encounter any issue
 
 **[!UICONTROL Disable]** Disables the specified object.
 
-**[!UICONTROL Invoke service]** Invokes a service configured in a form data model (FDM). When you choose the Invoke Service operation, a field appears. On tapping the field, it displays all services configured in all form data model (FDM) on your [!DNL Experience Manager] instance. On choosing a Form Data Model service, more fields appear where you can map form objects with input and output parameters for the specified service. See the example rule for invoking Form Data Model (FDM) services.
+**[!UICONTROL Invoke service]** Invokes a service configured in a form data model (FDM). When you choose the Invoke Service operation, a field appears. On tapping the field, it displays all services configured in all form data model (FDM) on your [!DNL Experience Manager] instance. On choosing a Form Data Model service, more fields appear where you can map form objects with input  parameters for the specified service. You can map the output parameters through the event payload option for the specified service. You can also create rules for handling success and failure responses of the Invoke service operation using the rule editor. 
+
+>[!NOTE]
+>
+> To learn more about the Invoke service, [click here](/help/forms/invoke-service-enhancements-rule-editor.md).
+
+See the example rule for invoking Form Data Model (FDM) services. 
 
 In addition to the Form Data Model service, you can specify a direct WSDL URL to invoke a web service. However, a Form Data Model service has many benefits and the recommended approach to invoke a service.
 

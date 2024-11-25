@@ -8,6 +8,12 @@ role: Admin, Developer
 
 # AEM GraphQL API for use with Content Fragments {#graphql-api-for-use-with-content-fragments}
 
+>[!IMPORTANT]
+>
+>Various features of the GraphQL API for use with Content Fragments are available through the Early Adopter Program.
+>
+>To see the status, and how to apply if you are interested, check the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md).
+
 Learn how to use Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service with the AEM GraphQL API for headless content delivery.
 
 AEM as a Cloud Service GraphQL API used with Content Fragments is heavily based on the standard, open source GraphQL API.
@@ -256,7 +262,9 @@ GraphQL for AEM supports a list of types. All the supported Content Fragment Mod
 | Enumeration | `String` | Used to display an option from a list of options defined at model creation |
 | Tags | `[String]` | Used to display a list of Strings representing Tags used in AEM |
 | Content Reference | `String`, `[String]` | Used to display the path towards another asset in AEM |
+| Content Reference (UUID) | `String`, `[String]` | Used to display the path, represented by a UUID towards another asset in AEM |
 | Fragment Reference | *A model type* <br><br>Single field: `Model` - Model type, referenced directly <br><br>Multifield, with one referenced type: `[Model]` - Array of type `Model`, referenced directly from array <br><br>Multifield, with multiple referenced types: `[AllFragmentModels]` - Array of all model types, referenced from array with union type | Used to reference one, or more, Content Fragments of certain Model Types, defined when the model was created |
+| Fragment Reference (UUID) | *A model type* <br><br>Single field: `Model` - Model type, referenced directly <br><br>Multifield, with one referenced type: `[Model]` - Array of type `Model`, referenced directly from array <br><br>Multifield, with multiple referenced types: `[AllFragmentModels]` - Array of all model types, referenced from array with union type | Used to reference one, or more, Content Fragments of certain Model Types, defined when the model was created |
 
 {style="table-layout:auto"}
 
@@ -300,6 +308,27 @@ To retrieve a single Content Fragment of a specific type, you also need to deter
 ```
 
 See [Sample Query - A Single Specific City Fragment](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment).
+
+#### ID (UUID) {#id-uuid}
+
+The ID field is also used as an identifier in AEM GraphQL. It represents the path of the Content Fragment asset inside the AEM repository, but instead of holding the actual path it holds a UUID representing the resource. We have chosen this as the identifier of a Content Fragment, because it:
+
+* is unique within AEM,
+* can be easily fetched,
+* does not change when the resource is moved.
+
+The UUID for a Content Fragment and for a referenced Content Fragment, or asset, can be returned through the JSON property `_id`.
+
+```graphql
+{
+  articleList {
+    items {
+        _id
+        _path
+    }
+  }
+}
+```
 
 #### Metadata {#metadata}
 
@@ -1106,6 +1135,11 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
   
     * `_path` : the path to your Content Fragment within the repository
       * See [Sample Query - A Single Specific City Fragment](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
+
+    * `_id` : the UUID for your Content Fragment within the repository
+
+      * See [Sample Query for a Content Fragment of a specific Model with UUID references](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-references)
+      * [See Sample Query for Content Fragments by UUID reference](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-reference)
 
     * `_reference` : to reveal references; including inline references in the Rich Text Editor
       * See [Sample Query for multiple Content Fragments with Prefetched References](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-prefetched-references)
