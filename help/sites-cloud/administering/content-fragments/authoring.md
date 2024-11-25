@@ -52,6 +52,7 @@ When you first open the Content Fragment Editor, you see four main areas:
   * these links can be used to [navigate the Content Fragment structure](#navigate-structure)
 * right panel: presents tabs [showing the properties (metadata) and tags](#view-properties-tags), information about the [version history](#view-version-history), and information related to any [language copies](#view-language-copies)
   * in the **Properties** tab you can update the **Title** and **Description** for the fragment, or **Variation**
+  * In the **Comments** tab you can add, and read, comments to help you collaborate with other authors
 * central panel: shows the actual fields, and content, of the selected variation
   * allows you to edit the content
     * when configured (as multiple) in the model, various data types allow you to **Add** instances of the relevant field
@@ -460,6 +461,17 @@ For example:
 >
 >For more details about translating a Content Fragment, and creating language copies, see the [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md).
 
+## Commenting on your Fragment {#commenting-on-your-fragment}
+
+The **Comments** tab in the right panel provides the following capabilities:
+
+* Add a new comment
+* Tag specific users in a comment
+* Reply to a comment
+* Format your comments; basic formatting is available
+* Perform a text search through existing comments
+* Edit an existing comment
+* Delete comments
 
 ## Preview your Fragment {#preview-content-fragment}
 
