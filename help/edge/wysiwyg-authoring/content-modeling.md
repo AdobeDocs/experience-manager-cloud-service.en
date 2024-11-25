@@ -515,7 +515,7 @@ Element grouping uses a naming convention, where the group name is separated fro
 | ![A group of people sitting on a stage][image0] |
 +-------------------------------------------------+
 | Adobe Experience Cloud                          |
-| ## Welcome to AEM                               |
+| ## Meet the Experts                             |
 | Join us in this ask me everything session ...   |
 | [More Details](https://link.to/more-details)    |
 | [RSVP](https://link.to/sign-up)                 |
