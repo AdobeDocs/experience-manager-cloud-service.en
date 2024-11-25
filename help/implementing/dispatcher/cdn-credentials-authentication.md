@@ -24,9 +24,10 @@ As described in the [CDN in AEM as a Cloud Service](/help/implementing/dispatche
 
 As part of the setup, the Adobe CDN and the Customer CDN must agree on a value of the `X-AEM-Edge-Key` HTTP Header. This value is set on each request, at the Customer CDN, before it is routed to the Adobe CDN, which then validates that the value is as expected, so it can trust other HTTP headers, including those that help route the request to the appropriate AEM origin.  
 
-The *X-AEM-Edge-Key* value is referenced by the `edgeKey1` and `edgeKey2` properties in a file named `cdn.yaml` or similar, somewhere under a top-level `config` folder. Read [Using Config Pipelines](/help/operations/config-pipeline.md#folder-structure) for details about the folder structure and how to deploy the configuration. 
+The *X-AEM-Edge-Key* value is referenced by the `edgeKey1` and `edgeKey2` properties in a file named `cdn.yaml` or similar, somewhere under a top-level `config` folder. Read [Using Config Pipelines](/help/operations/config-pipeline.md#folder-structure) for details about the folder structure and how to deploy the configuration.  The syntax is described in the example below.
 
-The syntax is described below:
+>[!WARNING]
+>Direct access without a correct X-AEM-Edge-Key will be denied for all requests matching the condition (in the sample below that means all requests to the publish tier). If you need to gradually introduce authentication please see the [Migrating safely to reduce the risk of blocked traffic](#migrating-safely) section.
 
 ```
 kind: "CDN"
@@ -51,6 +52,8 @@ data:
 
 See [Using Config Pipelines](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the `data` node. The `kind` property value should be *CDN* and the `version` property should be set to `1`.
 
+See [Configure and deploy HTTP Header validation CDN rule](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) tutorial step for more details.
+
 Additional properties include:
 
 * `Data` node that contains a child `authentication` node.
@@ -71,7 +74,7 @@ Additional properties include:
 
 ### Migrating safely to reduce the risk of blocked traffic {#migrating-safely}
 
-If your site is already live, exercise caution when migrating to customer-managed CDN since a misconfiguration can block public traffic; this is because only requests with the expected X-AEM-Edge-Key header value will be accepted by the Adobe CDN. An approach is recommended where an additional condition is temporarily included in the authentication rule, which causes it to only evaluate the request if a test header is included:
+If your site is already live, exercise caution when migrating to customer-managed CDN since a misconfiguration can block public traffic; this is because only requests with the expected X-AEM-Edge-Key header value will be accepted by the Adobe CDN. An approach is recommended where an additional condition is temporarily included in the authentication rule, which causes it to block the request only if a test header is included or if a path is matched:
 
 ```
     - name: edge-auth-rule
@@ -79,6 +82,17 @@ If your site is already live, exercise caution when migrating to customer-manage
           allOf:  
             - { reqProperty: tier, equals: "publish" }
             - { reqHeader: x-edge-test, equals: "test" }
+        action:
+          type: authenticate
+          authenticator: edge-auth
+```
+
+```
+    - name: edge-auth-rule
+        when:
+          allOf:
+            - { reqProperty: tier, equals: "publish" }
+            - { reqProperty: path, like: "/test*" }
         action:
           type: authenticate
           authenticator: edge-auth

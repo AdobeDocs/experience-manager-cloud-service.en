@@ -32,7 +32,7 @@ After adding, [IP Allow Lists can be applied or unapplied](/help/implementing/cl
 
 ## Limitations {#limitations}
 
-Before using IP allow lists, please understand the following limitations in their functionality, usage, and effect on other features.
+Before using IP Allow Lists, understand the following limitations in their functionality, usage, and effect on other features.
 
 ### General Limitations of IP Allow Lists {#general}
 
@@ -74,7 +74,7 @@ When you [add the IP Allow List](/help/implementing/cloud-manager/ip-allow-lists
 
 To avoid disruption of running the front-end pipeline, ensure that this Cloud Manager IP Allow List is added. Then, apply the list to the Author environment *before* you enable the pipeline.
 
-Please see the documents [Apply IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) and [Enable front-end pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) for more information.
+See [Apply IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) and [Enable front-end pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) for more information.
 
 ### Universal Editor and IP Allow Lists {#universal-editor}
 

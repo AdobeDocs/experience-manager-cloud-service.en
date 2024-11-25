@@ -68,7 +68,9 @@ You can promote launches from either the **Sites** console or the **Launches** c
       >[!NOTE]
       >
       >This covers a single launch, if you have nested launches see [Promoting a Nested Launch](#promoting-a-nested-launch).
+
 1. Select **Next** to proceed.
+
 1. You can review the pages to be promoted; these will depend on the range of pages you have chosen:
 
    ![Review promotion](/help/sites-cloud/authoring/assets/launches-promote-review.png)

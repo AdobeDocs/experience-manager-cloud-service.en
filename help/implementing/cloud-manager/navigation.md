@@ -7,7 +7,7 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 ---
 
-# Navigate the Cloud Manger UI {#navigation}
+# Navigate the Cloud Manager UI {#navigation}
 
 Learn how the Cloud Manager UI is organized and how to navigate to manage your programs and environments.
 
@@ -29,17 +29,17 @@ When you log into Cloud Manager at at [my.cloudmanager.adobe.com](https://my.clo
 The My Programs console provides an overview of all programs to which you have access in the selected organization. It is made up of several parts.
 
 1. [Toolbars](#toolbars-my-programs-toolbars) for organization selection, alerts, and account settings
-1. Tabs that allow you to toggle the current view of your programs.
+1. Tabs that let you toggle the current view of your programs.
    * **Home** view (default) that selects the **My Programs** view with an overview of all programs
    * **License** that accesses the [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md).
-   * Note that the tabs default to closed and can be revealed using the hamburger menu in the [Cloud Manager header](#cloud-manager-header).
+   * Note that the tabs default to closed and can be revealed using ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) in the [Cloud Manager header](#cloud-manager-header).
 1. [Statistics and call-to-action](#statistics) for an overview of your recent activity
 1. [**My Programs** section](#my-programs-section) with an overview of all your programs
 1. [Quick links](#quick-links-section) to access related resources easily.
 
 >[!TIP]
 >
->Please see the document [Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) for details on programs.
+>See [Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) for details on programs.
 
 ### Toolbars {#my-programs-toolbars}
 
@@ -189,7 +189,7 @@ The program toolbar still gives you access to switch to other programs quickly, 
 
 ![Program toolbar](assets/cloud-manager-program-toolbar.png)
 
-The toolbar always shows the tab that you currently are on, even if you have hidden the tabs using the hamburger menu.
+The toolbar always shows the tab that you currently are on, even if you have hidden the tabs using ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg).
 
 ### Program tabs {#program-tabs}
 
@@ -223,7 +223,7 @@ By default, when you open a program you arrive on the **Overview** tab. The curr
 
 In the upper-left corner of the [Cloud Manager header](#cloud-manager-header-2), click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to show or hide the side menu of tabs.
 
-### Call-to-sction {#cta}
+### Call-to-action {#cta}
 
 The call-to-action section gives you helpful information depending on the status of your program. For a new program, you may see next steps given and a reminder of a go-live date, [set during program creation](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
 
@@ -233,28 +233,28 @@ For a live program, the status of your last deployment with links for details an
 
 ![Call-to-action](/help/implementing/cloud-manager/assets/info-banner.png)
 
-### Environments Card {#environments}
+### Environments card {#environments}
 
-The **Environments** card gives you an overview of your environments as well as links for quick actions.
+The **Environments** card gives you an overview of your environments and links for quick actions.
 
 The **Environments** card only lists three environments. Click **Show All** to see all environments of the program.
 
-Please see the document [Managing Environments](/help/implementing/cloud-manager/manage-environments.md) for details on how to manage your environments.
+See also [Manage Environments](/help/implementing/cloud-manager/manage-environments.md).
 
-### Pipelines Card {#pipelines}
+### Pipelines card {#pipelines}
 
-The **Pipelines** card gives you an overview of your pipelines as well as links for quick actions.
+The **Pipelines** card gives you an overview of your pipelines and links for quick actions.
 
 The **Pipelines** card only lists three pipelines. Click **Show All** to see all pipelines of the program.
 
-Please see the document [Managing Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) for details on how to manage your pipelines.
+See also [Manage Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) for details on how to manage your pipelines.
 
-### Performance Card {#performance}
+### Performance card {#performance}
 
 The **Performance** card gives an overview of the **[CDN Dashboard](/help/implementing/cloud-manager/cdn-performance.md)**.
 
 ![Performance card](/help/implementing/cloud-manager/assets/cdn-performance-dashboard.png)
 
-### Useful Resources {#useful-resources}
+### Useful resources {#useful-resources}
 
 The **Useful Resources** section provides links to additional learning resources for Cloud Manager.

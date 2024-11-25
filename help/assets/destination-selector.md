@@ -8,6 +8,9 @@ feature: Selectors
 ---
 # Micro-Frontend Destination Selector {#Overview}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 Micro-Frontend Destination Selector provides a user interface within your application that easily integrates with the [!DNL Experience Manager Assets as a Cloud Service] repository. You can search or browse to the appropriate folder within the [!DNL Experience Manager Assets as a Cloud Service] repository and upload assets from your application.
 
 The Micro-Frontend user interface is made available in your application experience using the Destination Selector package. Any updates to the package are automatically imported and the latest deployed Destination Selector loads automatically within your application.

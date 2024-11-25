@@ -2,9 +2,12 @@
 title: Asset Selector for [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Use Asset selector to search, find, and retrieve assets' metadata and renditions within your application.
 role: Admin,User
+exl-id: 1687e7d5-eb7e-4eb7-8747-e5dc6afacd5b
 ---
-
 # Asset Selector Collections {#asset-selector-collections}
+
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
 
 A collection is a set of assets, folders, or other collections within Asset Selector. Use collections to share assets between users. Unlike folders, a collection can include assets from different locations. 
 
@@ -56,4 +59,3 @@ Asset Selector allows you to customize the components as per the requirement and
 >* [Asset Selector customizations](/help/assets/asset-selector-customization.md)
 >* [Integrate Asset Selector with various applications](/help/assets/integrate-asset-selector.md)
 >* [Asset Selector properties](/help/assets/asset-selector-properties.md)
-

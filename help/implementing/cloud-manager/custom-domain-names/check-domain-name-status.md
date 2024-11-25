@@ -1,5 +1,5 @@
 ---
-title: Checking Domain Name Status
+title: Check Domain Name Status
 description: Learn how to verify that Cloud Manager has successfully confirmed your custom domain name.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
@@ -11,15 +11,11 @@ role: Admin, Architect, Developer
 
 Learn how to verify that Cloud Manager has successfully confirmed your custom domain name.
 
-## Requirements {#requirements}
+## Check the status of a custom domain name {#how-to}
 
-Fulfill these requirements before checking your domain name status in Cloud Manager.
+Before checking your domain name status in Cloud Manager, make sure you have already added a customer managed (OV/EV) SSL certificate for your custom domain as described in [Add a customer managed SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md##add-customer-managed-ssl-cert).
 
-* First add a TXT record for your custom domain as described in the document [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
-
-## Check the status of your custom domain name {#how-to}
-
-You can determine the status of your custom domain name within Cloud Manager.
+**To check the status of a custom domain name:**
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
@@ -27,7 +23,7 @@ You can determine the status of your custom domain name within Cloud Manager.
 
 1. Navigate to the **Environments** screen from the **Overview** page.
 
-1. Click **Domain Settings** in the left navigation panel.
+1. Click **Domain Settings** in the left side menu.
 
 1. Click the **Status** icon for the domain name.
 
@@ -35,17 +31,20 @@ The status detail is shown. Your custom domain is ready to be used when the stat
 
 >[!NOTE]
 >
->Cloud Manager automatically triggers verification when you select **Create** on the verification step of the **Add Custom Domain** wizard when [adding a new custom domain name to Cloud Manager](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). For subsequent verifications, you must actively select the verify again icon next to the status.
+>If you are using an *Adobe managed (DV) SSL certificate* with the domain, Cloud Manager automatically triggers verification when you click **Verify** in the Verify domain dialog box when [adding a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+>
+>If you plan on using a **customer managed (OV/EV) SSL certificate**, your domain is verified *after* you [add the OV/EV SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). 
+
 
 ## Verification statuses {#statuses}
 
-Cloud Manager verifies domain ownership through the [TXT value](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) and displays one of the following status messages.
+Cloud Manager verifies domain ownership through the customer managed (OV/EV) SSL certificate. When done, it displays one of the following status messages:
 
 | Status | Description |
 | --- | --- |
-| Domain verification failed | The TXT value is either missing or is detected with errors.<br> Follow the instructions provided in the status message to resolve the issue. When ready, you must select the **Verify Again** icon next to the status.  |
+| Domain verification failed | The Customer managed EV/OV certificate is either missing or is detected with errors.<br> Follow the instructions provided in the status message to resolve the issue. When ready, you must select the **Verify Again** icon next to the status. |
 | Domain verification in progress | Verification is in progress.<br>This status is typically seen after you select the **Verify Again** icon next to the status. DNS verification can take a few hours to process because of DNS propagation delays.  |
-| Verified - deployment failed| The TXT verification was successful, but the CDN deployment failed.<br>In such cases, contact your Adobe representative. |
+| Verified - deployment failed| The EV/OV certificate verification was successful, but the CDN deployment failed.<br>In such cases, contact your Adobe representative. |
 | Domain verified & deployed | This status indicates that your custom domain name is ready to be used.<br>At this point, your custom domain name is ready for testing and to be pointed to the Cloud Manager domain name. See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) to learn more. |
 | Deleting | The deletion of a custom domain name is in progress. |
 | Deletion failed | The deletion of a custom domain name failed and must be retried.<br>See [Manage custom domain names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) to learn more. |
@@ -57,7 +56,7 @@ The following are some common domain name verification errors and their typical 
 
 ### Domain not installed error {#domain-not-installed}
 
-This error may occur during domain validation of the TXT record even after you have checked that the record has been updated appropriately.
+This error may occur during domain validation of the EV/OV certificate even after you have checked that the certificate has been updated appropriately.
 
 #### Error cause {#cause}
 
@@ -75,7 +74,7 @@ The error is fixed as follows:
 
 >[!TIP]
 >
->Solving domain delegation issues with Fastly typically takes 1-2 business days. For this reason, it is highly recommended to install the domains well before their go live date.
+>Solving domain delegation issues with Fastly typically takes 1-2 business days. For this reason, it is recommended to install the domains well before their go live date.
 
 >[!NOTE]
 >

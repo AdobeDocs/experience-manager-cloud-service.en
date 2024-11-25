@@ -1,55 +1,71 @@
 ---
-title: Release Notes for Cloud Manager 2024.9.0 in Adobe Experience Manager as a Cloud Service
-description: Learn about the release notes for Cloud Manager 2024.9.0 in AEM as a Cloud Service.
+title: Release Notes for Cloud Manager 2024.11.0 in Adobe Experience Manager as a Cloud Service
+description: Learn about the release of Cloud Manager 2024.11.0 in AEM as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 ---
-# Release notes for Cloud Manager 2024.9.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Release notes for Cloud Manager 2024.11.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-This page documents the release notes for Cloud Manager release 2024.9.0 in AEM as a Cloud Service.
+Learn about the release of Cloud Manager 2024.11.0 in AEM (Adobe Experience Manager) as a Cloud Service.
 
 >[!NOTE]
 >
 >See the [current release notes for Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-## Release date {#release-date}
+## Release dates {#release-date}
 
-The release date for Cloud Manager release 2024.9.0 in AEM as a Cloud Service is September 5, 2024. The next release is planned for October 3, 2024.
+The release date for Cloud Manager 2024.11.0 in AEM as a Cloud Service is November 7, 2024. 
+
+The next planned release is December 5, 2024.
 
 ## What's new {#what-is-new}
 
-* **Experience Audit dashboard:**
+* Experience the latest in Edge Delivery Services innovation with AEM Cloud Service&ndash;now available to explore in your Sandbox program. [Learn more](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md#auto-creation) <!-- (CMGR-62319) -->
+* The Domain Settings page in AEM Cloud Manager now includes a search feature that lets you quickly locate domains by name. You can enter keywords in the search field to filter and display matching domains, making it easier to manage multiple domains efficiently. Additionally, the page offers status filters, such as **Verified** and **Not Verified**, to refine the search results further. <!-- (CMGR-62615) -->
 
-    Adobe Cloud Manager's [enhanced Experience Audit dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md), powered by Google Lighthouse, provides insights into the quality and performance of AEM Sites by evaluating core web vitals, SEO, and accessibility metrics. It helps users identify areas for improvement by offering actionable recommendations, enabling teams to enhance user experience, page load times, and site compliance. This dashboard simplifies the monitoring of critical site metrics and ensures that AEM applications meet high performance and accessibility standards.
+![Search field in Domain Settings](/help/implementing/cloud-manager/assets/domain-settings-search.png)
 
-* **Adobe generated and managed Domain Validation certificates:**
-
-    With Cloud Manager, you are now able to [self-service Adobe generated and managed DV (Domain Validation) SSL certificates](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). This capability gives you the fastest, easiest, and most cost-effective solution to create a secure website for your online organization or business. <!-- CMGR-52403 -->
-
-    >[!NOTE]
-    >
-    >[Content Hub](/help/assets/product-overview.md) customers are planned to receive this feature in phases as part of a gradual roll-out.
-
-* **Edge Delivery Services support in Cloud Manager:**
-
-    If you have an Edge Delivery Services license as part of AEM Sites, [you can now onboard your site with Edge Delivery Services directly through Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). This feature enables a guided, self-service Go Live experience. It also unifies essential workflows like domain name management, SSL certificates, and CDN mappings across all your AEM properties, ensuring consistency and efficiency. <!-- CMGR-49859 -->
-
-    >[!NOTE]
-    >
-    >[Content Hub](/help/assets/product-overview.md) customers are planned to receive this feature in phases as part of a gradual roll-out.
-
-* Customers who use GitHub repositories now have the ability to create and use Web Tier Config pipelines. <!--( KEEP IN? SP: YES CMGR-59046 and Slack https://cq-dev.slack.com/archives/C07LFP5BZ2L/p1725407057847379 ) --> 
-
-<!--
 ## Early adoption program {#early-adoption}
 
-For a chance to test some upcoming features, be a part of Adobe's early adoption program. -->
+Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features.
+
+### AEM Home {#aem-home}
+
+AEM Home introduces a centralized starting point for managing content, assets, and sites within Adobe Experience Manager. Designed to deliver a personalized experience, AEM Home lets you navigate the AEM ecosystem seamlessly according to your roles and goals. Acting as a guide, it provides key insights and recommended actions to help you achieve your objectives efficiently. With a clear, persona-driven layout, AEM Home ensures quick access to essential tools, supporting a streamlined and effective experience across all AEM features.
+
+Available to early adopters, AEM Home offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence AEM Home's development by providing feedback that helps shape its future and enhances its value for the entire AEM community.
+
+If you are interested in testing this new capability and sharing your feedback, send an email to [Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com) from your email address associated with your Adobe ID. Be sure to include the following information:
+
+* The role that best fits your profile: Content author, Developer, Business owner, Admin, or Other (provide a description).
+* Your primary AEM access surface: AEM Sites, AEM Assets, AEM Forms, Cloud Manager, or Other (provide a description).
+
+### Bring Your Own Git - now with support for GitLab and Bitbucket {#gitlab-bitbucket}
+
+<!-- BOTH CS & AMS -->
+
+The **Bring Your Own Git** feature has been expanded to include support for external repositories such as GitLab and Bitbucket. This new support is in addition to the already existing support for private and enterprise GitHub repositories. When you add these new repos, you can also link them directly to your pipelines. You can host these repositories on public cloud platforms or within your private cloud or infrastructure. This integration also removes the need for constant code synchronization with the Adobe repository and provides the ability to validate pull requests before merging them into a main branch.
+
+See [Add external repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+
+![Add Repository dialog box](/help/implementing/cloud-manager/release-notes/assets/repositories-add-release-notes.png)
+
+>[!NOTE]
+>
+>Currently, the out-of-the-box pull request code quality checks are exclusive to GitHub-hosted repositories, but an update to extend this functionality to other Git vendors is in the works.
+
+If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure.
 
 
 ## Bug fixes
 
-* Pagination for SSL certificates table view now works as expected. <!-- (CMGR-60804 - [UI] Pagination doesn't work for ssl certificates) -->
-* The wrong artifact version got promoted when using the **Promote Build** button from an execution. <!-- ( KEEP IN? SP: YES CMGR-59519 and Slack https://cq-dev.slack.com/archives/C07LFPN2R08/p1725408253474129 ) -->
+* A recent update addressed an issue in SonarQube where hardcoded passwords were not detected in certain cases. The fix now includes an expanded pattern check, and aligns with default detection standards in SonarQube. <!-- CMGR-62682 -->
+* When trying to update an SSL certificate in Cloud Manager, an unknown error would appear after clicking **[!UICONTROL Update]** in the **[!UICONTROL View & Update SSL Certificate]** dialog box. <!-- CMGR-62848 -->
+* In Cloud Manager, SSL certificate updates would fail with the error "The new certificate does not match the existing domains," even when the domains were identical but had differences in letter case (upper- or lower-case). The update now recognizes domains as case-insensitive, aligning with RFC standards. <!-- CMGR-62844 -->
+* In Cloud Manager, IP Allowlist bindings remained stuck in a running state because foreign key links to domain configurations were missing. The fix now ensures IP Allowlist bindings link correctly to associated domain configurations. <!-- CMGR-62838 -->
+* Cloud Manager validates the OCSP (Online Certificate Status Protocol) status of an SSL certificate. Adobe recommends that you also validate the integrity of your certificate locally using a tool such as `openssl verify -untrusted intermediate.pem certificate.pem` before installing it through Cloud Manager. For more details, see the [SSL certificate requirements documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates#requirements). <!-- CMGR-62341  -->
 
-<!-- * Slack message says next release? SP: REMOVE (Leave in for now) SSL Certificates table in Cloud Manager now enables pagination in the user experience. ( https://jira.corp.adobe.com/browse/CMGR-61041 and Slack https://cq-dev.slack.com/archives/C07LFRE9QJU/p1725408553760009 ) --<>
+
+
+<!-- ## Known issues {#known-issues} -->

@@ -6,6 +6,15 @@ exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
 ---
 # Approve assets in [!DNL Experience Manager]
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>Dynamic Media with OpenAPI capabilities guide is now available in PDF format. Download the entire guide and use Adobe Acrobat AI Assistant to answer your queries. 
+>
+>[!BADGE Dynamic Media with OpenAPI capabilities Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+
 Brand Managers and Marketers maintain strict control over brand assets. Only approved and latest version of the asset is available for use, ensuring brand consistency across all channels and applications. 
 
 You can approve assets in AEM Assets to streamline asset management, ensuring a controlled and efficient process for handling assets.
@@ -87,13 +96,15 @@ To copy delivery URL for an approved asset within the repository:
 
 1. Select the asset and click **[!UICONTROL Details]**.
 
-1. Click the Renditions icon available in the right pane.
+1. Click the Dynamic Media icon available in the right pane.
 
-1. Select **[!UICONTROL Dynamic Media with OpenAPI]** available in the **[!UICONTROL Dynamic]** section.
+1. Select **[!UICONTROL Dynamic Media with OpenAPI]** available in the **[!UICONTROL Dynamic Media]** Panel.
 
 1. Click **[!UICONTROL Copy URL]** to copy the delivery URL of the asset.
-   ![copy delivery URL](/help/assets/assets/copy-delivery-url.png)
+![dynamic renditions](/help/assets/assets/dm-with-openapi-non-image-assets.png)
 
    >[!NOTE]
    >
    >The option to copy delivery URL for approved assets is just available in Assets view.
+
+For information on other renditions that display within Dynamic Media panel, see [View and download Dynamic Media renditions](/help/assets/renditions.md#view-download-dm-renditions).

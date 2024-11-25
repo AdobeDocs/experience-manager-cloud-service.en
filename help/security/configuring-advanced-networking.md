@@ -210,7 +210,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 A dedicated IP address can enhance security when integrating with SaaS vendors (like a CRM vendor) or other integrations outside of AEM as a Cloud Service that offer an allowlist of IP addresses. By adding the dedicated IP address to the allowlist, it ensures that only traffic from the AEM Cloud Service is permitted to flow into the external service. This is in addition to traffic from any other IPs allowed.
 
-The same dedicated IP is applied to all programs in your Adobe Organization and for all environments in each of your programs. It applies to both Author and Publish services.
+The same dedicated IP is applied to all environments in a program, and applies to both Author and Publish services.
 
 Without the dedicated IP address feature enabled, traffic coming out of AEM as a Cloud Service flows through a set of IPs shared with other customers of AEM as a Cloud Service.
 
@@ -229,10 +229,6 @@ Configuring dedicated egress IP address is similar to [flexible port egress.](#f
 >[!NOTE]
 >
 >Once created, dedicated egress IP address infrastructure types cannot be edited. The only way to change configuration values is to delete and recreate them.
-
->[!INFO]
->
->If a dedicated egress IP is configured, Splunk forwarding will continue to use the dynamic egress ranges. Splunk forwarding cannot be configured to use a dedicated egress IP.
 
 ### UI Configuration {#configuring-dedicated-egress-provision-ui}
 
@@ -293,7 +289,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 <tbody>
   <tr>
     <td><b>Http or https protocol</b></td>
-    <td>Traffic to Azure or Adobe services</td>
+    <td>Traffic to Azure (*.windows.net) or Adobe services</td>
     <td>Any</td>
     <td>Through the shared cluster IPs (not the dedicated IP)</td>
     <td>adobe.io<br>api.windows.net</td>
@@ -396,7 +392,7 @@ To validate that traffic is indeed outgoing on the expected dedicated IP address
 
 ## Virtual Private Network (VPN) {#vpn}
 
-A VPN allows connecting to an on-premise infrastructure or data center from the author, publish, or preview instances. This can be useful, for example, to secure access to a database. It also allows connecting to SaaS vendors such as a CRM vendor that supports VPN or connecting from a corporate network to AEM as a Cloud Service author, preview, or publish instance.
+A VPN allows connecting to an on-premise infrastructure or data center from the author, publish, or preview instances. This can be useful, for example, to secure access to a database. It also allows connecting to SaaS vendors such as a CRM vendor that supports VPN.
 
 Most VPN devices with IPSec technology are supported. Consult the information in the **RouteBased configuration instructions** column in [this list of devices.](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable) Configure the device as described in the table.
 
@@ -405,7 +401,6 @@ Most VPN devices with IPSec technology are supported. Consult the information in
 >The following are limitations to a VPN infrastructure:
 >
 >* Support is limited to a single VPN connection
->* The Splunk forwarding capability is not possible over a VPN connection.
 >* DNS Resolvers must be listed in the Gateway Address space to resolve private host names.
 
 ### UI Configuration {#configuring-vpn-ui}
@@ -582,21 +577,6 @@ The diagram below provides a visual representation of a set of domains and assoc
   </tr>
 </tbody>
 </table>
-
-### Restrict VPN to Ingress Connections {#restrict-vpn-to-ingress-connections}
-
-If you want to allow only VPN access to AEM, environment allowlists can be configured in Cloud Manager so that only the IP defined by `p{PROGRAM_ID}.external.adobeaemcloud.com` is allowed to talk to the environment. This can be done the same way as any other IP-based allowlist in Cloud Manager.
-
-If rules must be path-based, use standard http directives at the Dispatcher level to deny or allow certain IPs. They should ensure that the desired paths are also not cacheable at the CDN so that the request always gets to origin.
-
-#### Httpd Config Example {#httpd-example}
-
-```
-Order deny,allow
-Deny from all
-Allow from 192.168.0.1
-Header always set Cache-Control private
-```
 
 ## Enabling Advanced Networking Configurations on Environments {#enabling}
 
@@ -840,4 +820,4 @@ Yes, the limit applies to connections using Advanced Networking, including VPNs.
 
 ##### If we use a Dedicated Egress IP, will this limit still be applicable?
 
-Yes, the limit is still applicable if using a dedicated egress IP.
+Yes, the limit is still applicable if using a dedicated egress IP. 

@@ -4,8 +4,6 @@ description: Enhance form security with hCaptcha&reg; service effortlessly. Step
 topic-tags: Adaptive Forms, author
 keywords: hCaptcha&reg; service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
 feature: Adaptive Forms, Core Components
-hide: yes
-hidefromtoc: yes
 exl-id: 6c559df2-7b6a-42fe-b44c-29a782570a0c
 role: User, Developer
 ---
@@ -13,12 +11,11 @@ role: User, Developer
 
 <span class="preview"> This feature is under Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
 
-CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) is a program commonly used in online transactions to distinguish between humans and automated programs or bots. It poses a challenge and evaluates user response to determine if it's a human or a bot interacting with the site. It prevents the user to proceed if the test fails and helps make online transactions secure by keeping bots from posting spam or malicious purposes. 
+CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) is a program commonly used in online transactions to distinguish between humans and automated programs or bots. It poses a challenge and evaluates user response to determine if it's a human or a bot interacting with the site. It prevents the user to proceed if the test fails and helps make online transactions secure by keeping bots from posting spam or malicious purposes.
 
 AEM Forms as a Cloud Service supports the following CAPTCHA solutions: 
-
+* [hCaptcha](#integrate-aem-forms-environment-with-hcaptcha-captcha) 
 * [Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
-* [Cloudflare Turnstile](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
 * [hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)  
 
 ## Integrate AEM Forms environment with hCaptcha Captcha
