@@ -744,7 +744,7 @@ user-guide-title: AEM as a Cloud Service
         + [Configure Submit to REST Endpoint submit action for Adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
         + [Configure the Send Email submit action for an Adaptive Form](/help/forms/configure-submit-action-send-email.md)
         + [Use Google reCAPTCHA in an Adaptive Form ](/help/forms/captcha-adaptive-forms-core-components.md)
-        + [Use hCAPTCHA in an Adaptive Form ](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+        + [Use hCAPTCHA in an Adaptive Form Core Components ](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
         + [Add custom error handler in an Adaptive Form](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
         + [Add a locale for Adaptive Forms based on Core Components](/help/forms/supporting-new-language-localization-core-components.md)
         +  [Design JSON Schema for an Adaptive Form (Core Components)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
@@ -791,7 +791,7 @@ user-guide-title: AEM as a Cloud Service
       + Add components to an Adaptive Form {#add-components-to-an-adaptive-form}
         + [Use CAPTCHA in an Adaptive Form](/help/forms/captcha-adaptive-forms.md)
         + [Use hCaptcha in an Adaptive Form](/help/forms/integrate-adaptive-forms-hcaptcha.md)
-        + [Use Turnstile in an Adaptive Form ](/help/forms/integrate-adaptive-forms-turnstile.md)
+        + [Use Turnstile CAPTCHA in an Adaptive Form ](/help/forms/integrate-adaptive-forms-turnstile.md)
         + [Use Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
         + [Apply Scribble Signature](/help/forms/signing-forms-using-scribble.md)
         + [Add a table to an adaptive form](/help/forms/adaptive-forms-tables.md)
@@ -1097,6 +1097,7 @@ user-guide-title: AEM as a Cloud Service
       + [Learn about defining Metadata and Tagging for Content Fragments](/help/journey-headless/author/metadata-tagging.md)
 + Generative AI {#generative-ai}
   + [Generate Variations](/help/generative-ai/generate-variations.md)
+  + [Assistant (Limited Beta)](/help/implementing/cloud-manager/aem-ai-assistant.md)
 + Implementing {#implementing}
   + [Implementing Applications for AEM as a Cloud Service](/help/implementing/home.md)
   + Use Cloud Manager {#using-cloud-manager}
@@ -1120,7 +1121,7 @@ user-guide-title: AEM as a Cloud Service
       + [Manage Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
       + [Add an Adobe Repository](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
       + [Add a Private Repository](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-      + [Add an External Repository (Early Adopter)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+      + [Add an External Repository (Limited Beta)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
       + [Access Repositories](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
       + [Git Submodule Support](/help/implementing/cloud-manager/managing-code/git-submodules.md)
       + [Use Git with Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
