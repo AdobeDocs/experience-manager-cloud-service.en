@@ -15,7 +15,8 @@ role: User, Developer
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html)                  |
-| AEM as a Cloud Service     | This article         |
+| AEM as a Cloud Service (Foundation Components)    | [Click here](/help/forms/configuring-submit-actions.md)        |
+| AEM as a Cloud Service (Core Components)    | This article         |
 
 A Submit Action lets you choose the destination of data captured via an Adaptive Form. It is triggered when a user clicks the **[!UICONTROL Submit]** button on an Adaptive Form. Forms as a Cloud Service, for Adaptive Forms based on Core Components, offers an array of pre-built Submit Actions. These out-of-the-box submit actions empower you to: 
 
@@ -62,11 +63,13 @@ For detailed information about the following Submit Actions, see:
 * [Submit to REST endpoint](/help/forms/configure-submit-action-restpoint.md)
 * [Submit to OneDrive](/help/forms/configure-submit-action-onedrive.md)
 * [Invoke an AEM Workflow](/help/forms/configure-submit-action-workflow.md)
+* [Submit to Marketo enagage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 You can also submit an Adaptive Form to other storage configurations:
 
 * [Connect Adaptive Form to Salesforce application](/help/forms/aem-forms-salesforce-integration.md)
 * [Connect an Adaptive Form to Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+* [Connect an Adaptive Form to Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 
 You can [customize the default Submit Actions](custom-submit-action-form.md). Additionally, you can customize the Submit Actions to align with specific organizational requirements.
     
