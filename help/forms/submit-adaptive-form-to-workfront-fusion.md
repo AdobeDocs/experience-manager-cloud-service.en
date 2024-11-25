@@ -76,6 +76,10 @@ To add a webhook:
 
 1. Click **[!UICONTROL Add]** to add new connection. The **[!UICONTROL Create a Connection]** dialog box appears.
 
+>[!NOTE]
+>
+> Ensure that the Technical Account is a member of the **forms-users** group; otherwise, adding a webhook fails.
+
 #### Add a connection to a webhook {#add-connection}
 
 ![Add a connection](/help/forms/assets/workfront-add-connection.png)

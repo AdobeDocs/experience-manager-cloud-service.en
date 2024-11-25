@@ -10,7 +10,7 @@ role: Admin
 >[!CONTEXTUALHELP]
 >id="aem_cloud_deprecated_features"
 >title="Deprecated and Removed Features in AEM as a Cloud Service"
->abstract="AEM as a Cloud Service has a cloud-native deployment model. Certain capabilities and features have been repalced by cloud-native counterparts and this tab shows those features." 
+>abstract="AEM as a Cloud Service has a cloud-native deployment model. Certain capabilities and features have been replaced by cloud-native counterparts and this tab shows those features." 
 
 Adobe constantly evaluates product capabilities to, over time, reinvent or replace older features with more modern alternatives to improve overall customer value, always under careful consideration of backward compatibility. Also, as [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] provides a cloud-native deployment model, certain capabilities and features were replaced by cloud-native counterparts.
 
@@ -29,15 +29,18 @@ Customers are advised to review if they use the feature/capability in their curr
 
 | Capabilities | Deprecated feature | Replacement |
 | ------------ | ------------------ | ----------- |
+|[!DNL Sites]|[JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api)|[Java Use API](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api)|
 | [!DNL Sites]       | Experience Fragments properties for **Social Media Status**. | The feature will be removed soon. |
 | [!DNL Sites]       | Template-based simple content fragments. | [Model-based structured content fragments](/help/assets/content-fragments/content-fragments-models.md) now. |
 | [!DNL Assets]       | `DAM Asset Update` workflow to process ingested images. | Asset ingestion uses [asset microservices](/help/assets/asset-microservices-overview.md) now. |
 | [!DNL Assets]       | Upload assets directly to [!DNL Experience Manager]. See [deprecated asset upload APIs](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Use [Direct binary upload](/help/assets/add-assets.md). For technical details, see [direct upload APIs](/help/assets/developer-reference-material-apis.md#upload-binary). |
 | [!DNL Assets]       | [Certain workflow steps](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) in `DAM Asset Update` workflow are not supported, including calling command-line tools like [!DNL ImageMagick]. | [Asset microservices](/help/assets/asset-microservices-overview.md) provide a replacement for many workflows. For custom processing, use [post-processing workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 | [!DNL Assets]       | FFmpeg transcoding of videos. | For FFmpeg thumbnail generation, use [Asset microservices](/help/assets/asset-microservices-overview.md). For FFmpeg transcoding, use [Dynamic Media](/help/assets/manage-video-assets.md). |
-| [!DNL Foundation]       | Tree replication UI under the replication agent's "Distribute" tab (removal after September 30, 2021) | [Manage publication](/help/operations/replication.md#manage-publication) or [publish content tree workflow](/help/operations/replication.md#publish-content-tree-workflow) approaches |
-| [!DNL Foundation]       | Neither the replication agent admin screen's Distribute tab nor the Replication API can be used to replicate content packages over 10MB. Instead, use either [Manage publication](/help/operations/replication.md#manage-publication) or [publish content tree workflow](/help/operations/replication.md#publish-content-tree-workflow) |
+| [!DNL Foundation]       | Tree replication UI under the replication agent's "Distribute" tab (removal after September 30, 2021) | [Manage publication](/help/operations/replication.md#manage-publication) or [Tree Activation Workflow Step](/help/operations/replication.md#tree-activation) approaches. |
+| [!DNL Foundation]       | Neither the replication agent admin screen's Distribute tab nor the Replication API can be used to replicate content packages over 10MB. | [Manage publication](/help/operations/replication.md#manage-publication) or [Tree Activation Workflow Step](/help/operations/replication.md#tree-activation) |
 | [!DNL Foundation]       | Integrations using credentials generated from Adobe Developer Console projects will gradually lose support for Service Account (JWT) credentials. New Service Account (JWT) credentials cannot be created in Adobe Developer Console on or after May 1, 2024, although existing Service Account (JWT) credentials can still be used for already-configured integrations until January 1, 2025, at which time existing Service Account (JWT) credentials will no longer work, and customers must migrate to OAuth Server-to-Server credentials. [Learn more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console).| [Migrate](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) to OAuth Server-to-Server credentials. |
+| [!DNL Foundation]       | Publish Content Tree Workflow and the related Publish Content Tree Workflow Step, which was used for replications of hierarchies of content. | Use [Tree Activation Workflow Step](/help/operations/replication.md#tree-activation), which is more performant. |
+
 
 ## Removed Features {#removed-features}
 
@@ -51,7 +54,7 @@ This section lists features and capabilities that have been removed from [!DNL E
 | [!DNL Sites] | Design Importer | This capability has been removed as immutable sections of the [!DNL Experience Manager] repository are not accessible at runtime. | Removed |
 | [!DNL Assets] | [!DNL Assets] sharing with Marketing Cloud Assets Core Service and Creative Cloud services is not available. | For integration with [!DNL Adobe Creative Cloud], use [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html). | Removed |
 | [!DNL Foundation]       | Support for Apache Sling datasources (OSGi bundle org.apache.sling.datasource) | N/A | Removed |
-| [!DNL Foundation]       | Suppport for JST scripting templates (OSGi bundle org.apache.sling.scripting.jst) | N/A | Removed |
+| [!DNL Foundation]       | Support for JST scripting templates (OSGi bundle org.apache.sling.scripting.jst) | N/A | Removed |
 | [!DNL Foundation]       | Support for the Apache Felix Http Whiteboard | OSGi Http Whiteboard | March 2022 |
 | [!DNL Foundation]       | Support for com.adobe.granite.oauth.server | Adobe IMS Integration | March 2023 |
 | [!DNL Foundation]       | Support for org.apache.sling.serviceusermapping feature to [get the service user id](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | N/A | 8/30/24 |
@@ -318,14 +321,14 @@ If you use anything from the package `org.eclipse.jetty` or one of its sub packa
 Action list:
 * Replace usage of `org.eclipse.jetty` packages with other 3rd party libraries/own code or
 * Select the required bundles from this list and add them to your project:
-  * org.eclipse.jetty:jetty-client:9.4.54.v20240208
-  * org.eclipse.jetty:jetty-http:9.4.54.v20240208
-  * org.eclipse.jetty:jetty-io:9.4.54.v20240208
-  * org.eclipse.jetty:jetty-security:9.4.54.v20240208
-  * org.eclipse.jetty:jetty-servlet:9.4.54.v20240208
-  * org.eclipse.jetty:jetty-server:9.4.54.v20240208
-  * org.eclipse.jetty:jetty-util:9.4.54.v20240208
-  * org.eclipse.jetty:jetty-util-ajax:9.4.54.v20240208
+  * `org.eclipse.jetty:jetty-client:9.4.54.v20240208`
+  * `org.eclipse.jetty:jetty-http:9.4.54.v20240208`
+  * `org.eclipse.jetty:jetty-io:9.4.54.v20240208`
+  * `org.eclipse.jetty:jetty-security:9.4.54.v20240208`
+  * `org.eclipse.jetty:jetty-servlet:9.4.54.v20240208`
+  * `org.eclipse.jetty:jetty-server:9.4.54.v20240208`
+  * `org.eclipse.jetty:jetty-util:9.4.54.v20240208`
+  * `org.eclipse.jetty:jetty-util-ajax:9.4.54.v20240208`
 
 ### Removal of `com.mongodb` {#com.mongodb}
 
@@ -333,7 +336,7 @@ Add the Mongo client API to your project.
 
 Action list:
 * Add this bundle to your project
-  * org.mongodb:mongo-java-driver:3.12.7
+  * `org.mongodb:mongo-java-driver:3.12.7`
 
 ### Usage of `org.apache.abdera*` and `org.apache.sling.atom.taglib` {#org.apache.abdera_or_org.apache.sling.atom.taglib}
 
@@ -492,3 +495,77 @@ Additional information about OSGI configuration can be found at [this location](
     * Type: boolean
 +++
 
+## Java Runtime Update to Version 21 {#java-runtime-update-21}
+
+AEM as a Cloud Service will be moving to Java 21 runtime. In order to ensure compatibility, it is essential to make the following adjustments:
+
+### Runtime Requirements
+
+These adjustments are required to ensure compatibility with the Java 21 runtime. The libraries can be updated at any time as they are compatible with older versions of Java.
+
+#### Minimum version of org.objectweb.asm {#org.objectweb.asm}
+
+Update the usage of org.objectweb.asm to version 9.5 or higher to ensure support for newer JVM runtimes.
+
+#### Minimum version of org.apache.groovy {#org.apache.groovy}
+
+Update the usage of org.apache.groovy to version 4.0.22 or higher to ensure support for newer JVM runtimes.
+
+This bundle can be indirectly included by adding third party dependencies such as the AEM Groovy Console.
+
+### Build-time Requirements
+
+These adjustments are required to allow building the project with newer versions of Java but not required for runtime compatibility. The Maven plug-ins can be updated at any time as they are compatible with older versions of Java.
+
+#### Minimum version of bnd-maven-plugin {#bnd-maven-plugin}
+
+Update the usage of bnd-maven-plugin to version 6.4.0 to ensure support for newer JVM runtimes. Versions 7 or higher are not compatible with Java 11 or lower so an upgrade to that version is not recommended at this time.
+
+#### Minimum version of aemanalyser-maven-plugin {#aemanalyser-maven-plugin}
+
+Update the usage of aemanalyser-maven-plugin to version 1.6.6 or higher to ensure support for newer JVM runtimes.
+
+#### Minimum version of maven-bundle-plugin  {#maven-bundle-plugin}
+
+Update the usage of maven-bundle-plugin to version 5.1.5 or higher to ensure support for newer JVM runtimes.
+
+#### Update dependencies in maven-scr-plugin  {#maven-scr-plugin}
+
+The `maven-scr-plugin` is not directly compatible with Java 17 and 21. However, it is possible to generate the descriptor files by updating the ASM dependency version within the plugin configuration, similar to the snippet below: 
+
+```
+[source,xml]
+ <project>
+   ...
+   <build>
+     ...
+     <plugins>
+       ...
+       <plugin>
+         <groupId>org.apache.felix</groupId>
+         <artifactId>maven-scr-plugin</artifactId>
+         <version>1.26.4</version>
+         <executions>
+           <execution>
+             <id>generate-scr-scrdescriptor</id>
+             <goals>
+               <goal>scr</goal>
+             </goals>
+           </execution>
+         </executions>
+         <dependencies>
+           <dependency>
+             <groupId>org.ow2.asm</groupId>
+             <artifactId>asm-analysis</artifactId>
+             <version>9.7.1</version>
+             <scope>compile</scope>
+           </dependency>
+         </dependencies>
+       </plugin>
+       ...
+     </plugins>
+     ...
+   </build>
+   ...
+ </project>
+```

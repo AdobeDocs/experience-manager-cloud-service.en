@@ -51,7 +51,8 @@ After prerequisites are in place, perform the following steps to configure [!DNL
 
 1. Now you can **[!UICONTROL Select solution]** to select [!DNL Adobe Acrobat Sign].
    
-   ![Adobe Acrobat Sign Solutions](assets/adobe-sign-solution.png)
+   <!--![Adobe Acrobat Sign Solutions](assets/adobe-sign-solution.png)-->
+   ![Adobe Acrobat Sign Solutions Configuration](assets/adobe-sign-solution-config.png)
 
 <!--
 
@@ -98,11 +99,17 @@ After prerequisites are in place, perform the following steps to configure [!DNL
     * [!DNL widget_write]
     * [!DNL workflow_read]
 
+    >[!NOTE]
+    > You can change the scopes modifier from `self` to `account` directly from AEM UI as given in the step 12.
+    
    For step-by-step information to configure OAuth settings for an [!DNL Adobe Acrobat Sign] application and obtain the keys, see [Configure oAuth settings for the application](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) developer documentation.
 
    ![OAuth Config](/help/forms/assets/oauthconfig-new.png)
 
 1. Go back to the **[!UICONTROL Create Adobe Acrobat Sign Configuration]** page. In the **[!UICONTROL Settings]** tab, specify the [**[!UICONTROL Client ID]** (also referred to as Application ID) and **[!UICONTROL Client Secret]**]. Use the [Client ID and Client Secret of Adobe Acrobat Sign application](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) you created in the previous step.
+
+1. In the [!UICONTROL Authorization Scope] section, you can modify the scopes to either "account" or "self" by adding the prefix "self" or "account" to the scopes, as needed.
+   ![Authorization Scope](/help/forms/assets/authorization-scope.png)
 
 1. Select the **[!UICONTROL Enable Adobe Acrobat Sign for attachments]** option to append files attached to an Adaptive Form to the corresponding [!DNL Adobe Acrobat Sign] document sent for signing.
 
@@ -257,6 +264,10 @@ For example, to run the configuration service daily at 00:00 am, set the **sign.
 
 To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
 
+## Frequently Asked Questions
+
+* **Q: Can I render the Adobe Sign GovCloud Signature page in an iframe?**  
+* **A:** Yes, you can render the Adobe Sign GovCloud Signature page in an iframe.
 
 >[!MORELIKETHIS]
 >

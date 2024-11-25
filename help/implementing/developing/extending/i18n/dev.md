@@ -4,6 +4,7 @@ description: Java&trade; and JavaScript APIs enable you to internationalize stri
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
+exl-id: 131c485d-8cff-477c-8792-d1547d343495
 ---
 # Internationalizing UI Strings {#internationalizing-ui-strings}
 
@@ -168,7 +169,7 @@ Test whether you have internationalized all the strings in your UI. To see which
 
 The following image shows the stub translation for the AEM home page:
 
-![chlimage_1](/help/implementing/developing/extending/assets/i18n-dev1.jpeg)
+![Stub translation for the AEM home page](/help/implementing/developing/extending/assets/i18n-dev1.jpeg)
 
 To set the language for the user, configure the language property of the preferences node for the user account.
 

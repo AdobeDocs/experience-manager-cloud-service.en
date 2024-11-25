@@ -7,11 +7,11 @@ role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
 ---
 
-# Add a CDN (Content Delivery Network) configuration {#add-cdn}
+# Add a CDN configuration {#add-cdn}
 
 To link a domain with an SSL certificate on the Adobe-managed CDN within your program, you must add a CDN (Content Delivery Network) configuration.
 
-For Adobe managed CDNs, when using DV certificates, only sites with ACME validation are permitted. 
+For Adobe managed CDNs, when using a DV SSL certificate, only sites with ACME validation are permitted. 
 
 >[!IMPORTANT]
 >
@@ -25,8 +25,8 @@ For Adobe managed CDNs, when using DV certificates, only sites with ACME validat
 
    | Use case | Steps |
    | --- | --- |
-   | I want to add a CDN configuration to an *existing* Edge Delivery site in Cloud Manager | a. In the left navigation panel, under **Services**, click **Edge Delivery Sites**.<br>b. In the Edge Delivery table, at the end of a row that does not have a domain associated with it, click the ellipsis.<br>c. Click **Configure CDN**.  ![Click Configure CDN for a Edge Delivery site](/help/implementing/cloud-manager/assets/cm-eds-config-cdn.png)   |
-   | I want to add a CDN configuration in Cloud Manager | a. In the left navigation panel, under **Services**, click **CDN Configurations**.<br>b. Near the upper-right corner of the CDN Configurations page, click **Add**.   |
+   | I want to add a CDN configuration to an *existing* Edge Delivery site in Cloud Manager | a. In the left side menu, under **Services**, click **Edge Delivery Sites**.<br>b. In the Edge Delivery table, at the end of a row that does not have a domain associated with it, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).<br>c. Click **Configure CDN**. |
+   | I want to add a CDN configuration in Cloud Manager | a. In the left side menu, under **Services**, click **CDN Configurations**.<br>b. Near the upper-right corner of the CDN Configurations page, click **Add**.   |
 
 1. In the **Configure CDN** dialog box, in the **Origin** drop-down list, select one of the following:
 

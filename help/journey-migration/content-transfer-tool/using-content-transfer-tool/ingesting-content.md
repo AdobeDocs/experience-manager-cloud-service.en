@@ -13,7 +13,7 @@ role: Admin
 >id="aemcloud_ctt_ingestion"
 >title="Content Ingestion"
 >abstract="Ingestion refers to ingesting content from the migration set into the destination Cloud Service instance. The Content Transfer Tool has a feature that supports differential content top-up where it is possible to transfer only changes made since the previous content transfer activity."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html#top-up-extraction-process" text="Top Up Extraction"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content#top-up-extraction-process" text="Top Up Extraction"
 
 Follow the steps below to ingest your migration set using the Cloud Acceleration Manager:
 
@@ -46,6 +46,7 @@ Follow the steps below to ingest your migration set using the Cloud Acceleration
    * **Wipe:** Choose the `Wipe` value
      * The **Wipe** option sets the destination's starting point of the ingestion. If **Wipe** is enabled, the destination including all its content is reset to the version of AEM that is specified in Cloud Manager. If not enabled, the destination maintains its current content as the starting point.
      * This option does **NOT** affect how the ingestion of content will be performed. Ingestion always uses a content replacement strategy and _not_ a content merge strategy so, in both **Wipe** and **Non-Wipe** cases, the ingestion of a migration set will overwrite contents in the same path on the destination. For instance, if the migration set contains `/content/page1` and the destination already contains `/content/page1/product1`, the ingestion removes the entire `page1` path and its subpages, including `product1`, and replace it with the content in the migration set. This means careful planning must be done when performing a **Non-Wipe** ingestion to a destination that contains any content that should be maintained. 
+     * Non-wipe ingestions are specifically designed for the top up ingestion use-case. These ingestions are intended to have an incremental amount of new content that has changed since the last ingestion in an existing migration set. Performing non-wipe ingestions outside of this use case could result in very long ingestion times.
 
    >[!IMPORTANT]
    > If the setting **Wipe** is enabled for the ingestion, it resets the entire existing repository including the user permissions on the target Cloud Service instance. This resetting is true also for an admin user added to the **administrators** group and that user must be added to the administrators group again to start an ingestion.
@@ -88,7 +89,7 @@ Follow the steps below to ingest your migration set using the Cloud Acceleration
 >id="aemcloud_ctt_ingestion_topup"
 >title="Top Up Ingestion"
 >abstract="Use the top-up feature to move content modified since the previous content transfer activity. Upon completion of Ingestion, check the logs for any errors or warnings. Any errors should be addressed immediately either by dealing with the issues reported or by contacting Adobe Customer Care."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html" text="Viewing Logs"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs" text="Viewing Logs"
 
 The Content Transfer Tool has a feature that allows the extraction of differential content by performing a *top-up* of the migration set. This allows the migration set to be modified to include only the content that has changed since the previous extraction without having to extract all the content again.
 
@@ -107,7 +108,7 @@ Begin by creating an Ingestion Job and ensure that **Wipe** is disabled during t
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="Content Ingestion Troubleshooting"
 >abstract="Refer to the ingestion logs and the documentation to find solutions to common reasons why an ingestion can fail and find the way to fix the problem. Once fixed, the ingestion can be run again."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html" text="Validating Content Transfers"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers" text="Validating Content Transfers"
 
 ### CAM Unable to Retrieve the Migration Token {#cam-unable-to-retrieve-the-migration-token}
 
@@ -140,13 +141,13 @@ This message indicates that the Cloud Acceleration Manager was unable to reach t
 > The "Migration token" field is shown because in a few cases retrieving that token is what is actually disallowed. By allowing it to be manually provided, it may allow the user to start the ingestion quickly, without any additional help. If the token is provided, and the message still appears, then retrieving the token was not the problem.
 
 * AEM as a Cloud Service maintains the environment state, and occasionally must restart the migration service for various normal reasons. If that service is restarting, it cannot be reached, but is available eventually.
-* It is possible that another process is being run on the instance. For example, if [AEM Version Updates](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) is applying an update, the system may be busy and the migration service regularly unavailable. Once that process is done, the start of the ingestion can be attempted again. 
+* It is possible that another process is being run on the instance. For example, if [AEM Version Updates](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) is applying an update, the system may be busy and the migration service regularly unavailable. Once that process is done, the start of the ingestion can be attempted again. 
 * If an [IP Allowlist has been applied](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) through Cloud Manager, it blocks Cloud Acceleration Manager from reaching the migration service. An IP address cannot be added for ingestions because its address is dynamic. Currently, the only solution is to disable the IP allowlist during the ingestion and indexing process.
 * There may be other reasons that need investigation. If the ingestion or indexing continues to fail, contact Adobe Customer Care.
 
 ### AEM Version Updates and Ingestions {#aem-version-updates-and-ingestions}
 
-[AEM Version Updates](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) are automatically applied to environments to keep them up to date with the most recent AEM as a Cloud Service version. If the update is triggered when an ingestion is performed, it can cause unpredictable results including the corruption of the environment.
+[AEM Version Updates](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) are automatically applied to environments to keep them up to date with the most recent AEM as a Cloud Service version. If the update is triggered when an ingestion is performed, it can cause unpredictable results including the corruption of the environment.
 
 If the "AEM Version Updates" is onboarded on the destination program, the ingestion process attempts to disable its queue before it starts. When the ingestion is complete, the version updater state is returned to how it was before the ingestions started.
 
@@ -168,7 +169,7 @@ If "AEM Version Updates" is active (that is, updates are running or are queued t
 >id="aemcloud_cam_ingestion_troubleshooting_uuid"
 >title="Uniqueness Constraint Violation"
 >abstract="A common cause of a non-wipe ingestion failure is a conflict in node ids. Only one of the conflicting nodes can exist."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="Top-up Ingestion"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Top-up Ingestion"
 
 A common cause of a [Top-up Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) failure is a conflict in node ids. To identify this error, download the ingestion log using the Cloud Acceleration Manager UI and look for an entry like the following:
 
@@ -188,7 +189,7 @@ This conflict must be resolved manually. Someone familiar with the content must 
 >id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
 >title="Unable to Delete Referenced Node"
 >abstract="A common cause of a non-wipe ingestion failure is a version conflict for a particular node on the destination instance. The versions of the node must be remedied."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="Top-up Ingestion"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Top-up Ingestion"
 
 Another common cause of a [Top-up Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) failure is a version conflict for a particular node on the destination instance. To identify this error, download the ingestion log using the Cloud Acceleration Manager UI and look for an entry like the following:
 
@@ -206,7 +207,7 @@ Best practices indicate that if a **Non-Wipe** ingestion must be run using a mig
 >id="aemcloud_cam_ingestion_troubleshooting_bson"
 >title="Large Node Property"
 >abstract="A common cause of an ingestion failure is exceeding the maximum size of node property values. Follow the documentation, including those related to the BPA report, to remedy this situation."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html" text="Migration Prerequisites"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool" text="Migration Prerequisites"
 
 Node property values stored in MongoDB cannot exceed 16 MB. If a node value exceeds the supported size, the ingestion fails and the log will contain either:
 
@@ -222,6 +223,20 @@ To possibly avoid this restriction, run the [Best Practices Analyzer](/help/jour
 >[!NOTE]
 >
 >[Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) version 2.1.50+ will report on large nodes containing unicode characters that exceed the maximum size. Please ensure you are running the latest version. BPA versions prior to 2.1.50 will not identify and report on these large nodes and they will need to be discovered separately using the prerequisite Oak tool mentioned above.
+
+### Ingestion Failure Due to Unexpected Intermittent Errors {#ingestion-failure-due-to-unexpected-intermittent-errors}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_intermittent_errors"
+>title="Unexpected Intermittent Errors"
+>abstract="At times unexpected intermittent downstream service errors may occur and unfortunately the only recourse is to simply retry the ingestion."
+
+At times unexpected intermittent issues could lend themselves to failed ingestions where unfortunately the only recourse is to retry the ingestion. Investigate the ingestion log to uncover the cause of the failure and see if it aligns with any of the errors listed below, where a retry should be attempted. 
+
+## MongoDB issues {#mongo-db-issues}
+
+* `Atlas prescale timeout error` - The ingestion phase will attempt to prescale the target cloud database to a suitable size that aligns with the size of the migration set content being ingested. Infrequently, this operation does not complete within the expected timeframe.
+* `Exhausted mongo restore retries` - Attempts to restore a local dump of the ingested migration set contents to the cloud database has been exhausted. This indicates an overall health/network issue with MongoDB, that often heals itself after a few minutes.
 
 ### Ingestion Rescinded {#ingestion-rescinded}
 

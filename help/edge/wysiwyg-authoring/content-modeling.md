@@ -106,7 +106,7 @@ For each block, the developer:
 * Must define the block name, which will be rendered in the block's table header.
   * The block name is used to fetch the right style and script to decorate the block.
 * Can define a [model ID.](/help/implementing/universal-editor/field-types.md#model-structure)
-  * The model ID is a reference to the component's model, which defines the fields available to the author in the properties rail.
+  * The model ID is a reference to the component's model, which defines the fields available to the author in the properties panel.
 * Can define a [filter ID.](/help/implementing/universal-editor/customizing.md#filtering-components)
   * The filter ID is a reference to the component's filter, which allows to change the authoring behavior, for example by limiting which children can be added to the block or section, or which RTE features are enabled.
 
@@ -515,7 +515,7 @@ Element grouping uses a naming convention, where the group name is separated fro
 | ![A group of people sitting on a stage][image0] |
 +-------------------------------------------------+
 | Adobe Experience Cloud                          |
-| ## Welcome to AEM                               |
+| ## Meet the Experts                             |
 | Join us in this ask me everything session ...   |
 | [More Details](https://link.to/more-details)    |
 | [RSVP](https://link.to/sign-up)                 |
@@ -602,20 +602,7 @@ It is also possible to define additional page metadata in two ways.
 
 It is possible to define metadata on a per path or per path pattern basis in a table-like way in AEM as a Cloud Service. There is an authoring UI for table-like data available that is similar to Excel or Google Sheets.
 
-To create such table, create a page and use the Metadata template in the Sites console.
-
-In the spreadsheet's page properties, define the metadata fields you need along with the URL. Then add metadata per page path or page path pattern.
-
-Make sure spreadsheet is added to your path mapping as well before you publishing it.
-
-```json
-{
-  "mappings": [
-    "/content/site/:/",
-    "/content/site/metadata:/metadata.json"
-  ]
-}
-```
+For further details, please see the document [Using Spreadsheets to Manage Tabular Data](/help/edge/wysiwyg-authoring/tabular-data.md) for more information.
 
 ### Page Properties {#page-properties}
 
@@ -625,7 +612,7 @@ Many of the default page properties available in AEM are mapped to the respectiv
 * The time the document was last published as `published-time` in ISO8601 format
 * `cq:tags` as `cq-tags` as a comma-separated list of the tag IDs. 
 
-It is also possible to define a component model for custom page metadata, which will be made available to the author as a tab of the AEM Sites page properties dialog.
+It is also possible to define a component model for custom page metadata, which will be made available to the author in the Universal Editor.
 
 To do so, create a component model with the ID `page-metadata`.
 
