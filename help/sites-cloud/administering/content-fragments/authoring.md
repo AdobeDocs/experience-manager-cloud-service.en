@@ -8,6 +8,12 @@ solution: Experience Manager Sites
 ---
 # Authoring Content Fragments {#authoring-content-fragments}
 
+>[!IMPORTANT]
+>
+>Various features of the Content Fragment Editor are available through the Early Adopter Program.
+>
+>To see the status, and how to apply if you are interested, check the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md).
+
 Authoring your Content Fragments is focused on both headless delivery and page authoring.
 
 There are two editors available for Content Fragments. The editor described in this section:
