@@ -1,12 +1,28 @@
 ---
 title: Repoless Multi Site Management
-description: Learn best practice recommendations on how to set up a project with multilingual sites leveraging a single code base in a repoless manner.
+description: Learn best practice recommendations on how to set up a project in a repoless manner with localized sites that leverage a single code base, each served up by Edge Delivery Services. 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 ---
 
 # Repoless Multi Site Management {#repoless-msm}
 
-This document assumes that you have already created a base site for your project called `my-aem-site` and you wish to localize it using AEM's MSM feature.
+Learn best practice recommendations on how to set up a project in a repoless manner with localized sites that leverage a single code base, each served up by Edge Delivery Services. 
 
-If you have set up your project already for the repoless use case, the cloud configuration is assigned at the level of the root page, `/content/my-aem-site`. For multilingual sites, this configuration assignment must be changed to the language root such as `/content/my-aem-site/language-master/de`.
+## Overview {#overview}
+
+[Multi Site Manager (MSM)](/help/sites-cloud/administering/msm/overview.md) and its Live Copy features enable you to use the same site content in multiple locations, while allowing for variations. You can author content once and create Live Copies. MSM maintains live relationships between your source content and its Live Copies so that when you change the source content, the source and Live Copies are synchronized.
+
+You can use MSM to create an entire content structure for your brand across locales and languages, authoring the content centrally. Your localized sites can then each be delivered by Edge Delivery Services, leveraging a central code base.
+
+## Requirements {#requirements}
+
+To configure the MSM repoless use case you must first complete a number of tasks.
+
+* This document assumes that you have already created a site for your project based on the [Developer Getting Started Guide for WYSIWYG Authoring with Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) guide.
+* You must have already [enabled the repoless feature for your project.](/help/edge/wysiwyg-authoring/repoless.md)
+
+## Use Case {#use-case}
+
+This document assumes that you have already created a basic localized site structure for your project. It uses the following structure for the wknd brand as an example.
+

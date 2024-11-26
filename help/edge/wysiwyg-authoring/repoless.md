@@ -51,9 +51,7 @@ You will first need an access token to use the configuration service and configu
 
 1. Go to `https://admin.hlx.page/login` and use the `login_adobe` address to login with the Adobe identity provider.
 1. You will be forwarded to `https://admin.hlx.page/profile`.
-1. Copy the value of the `x-auth-token` either from:
-   * The JSON that the Adobe login service returns.
-   * From the JSON web token cookie that the `admin.hlx.page` page sets by using your browser's developer tools.
+1. By using your browser's developer tools, copy the value of the `x-auth-token` either from the JSON web token cookie that the `admin.hlx.page` page sets.
 
 Once you have your access token, it can be is passed in the header of cURL requests in the following format.
 
@@ -85,7 +83,7 @@ Reach out to Adobe via your project Slack channel or raise a support issue if yo
    ```text
    curl --request POST \
      --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>/public.json \
-     --header 'x-auth-token: id_token=<your-token>&idp_name=adobe' \
+     --header 'x-auth-token: <your-token>' \
      --header 'Content-Type: application/json' \
      --data '{
        "paths": {
@@ -129,7 +127,7 @@ To set up access control, you need to provide the technical account.
    ```text
    curl 'https://main--<your-aem-project>--<your-github-org>.aem.live/config.json'
    ```
-1. Now you can retrieve the technical account in the response of the following link.
+1. In your browser, you can now retrieve the technical account in the response of the following link.
    ```text
    https://author-p<programID>-e<envionmentID>.adobeaemcloud.com/bin/franklin.delivery/<your-github-org>/<your-aem-project>/main/.helix/config.json
    ```
