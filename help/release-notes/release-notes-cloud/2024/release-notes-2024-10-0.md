@@ -31,7 +31,7 @@ You can find the latest maintenance release notes [here](/help/release-notes/mai
 
 Have a look at the October 2024 Release Overview video for a summary of the features added in the 2024.10.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3434847?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440501?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
