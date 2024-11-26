@@ -473,6 +473,8 @@ The **Comments** tab in the right panel provides the following capabilities:
 * Edit an existing comment
 * Delete comments
 
+![Content Fragment Editor - Comments tab](assets/cf-authoring-comments.png)
+
 ## Preview your Fragment {#preview-content-fragment}
 
 The Content Fragment editor provides authors with the option to preview their edits in an external frontend application. 
