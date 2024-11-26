@@ -8,6 +8,12 @@ solution: Experience Manager Sites
 ---
 # An overview of working with Content Fragments {#overview-working-with-content-fragments}
 
+>[!IMPORTANT]
+>
+>Various features of the Content Fragments and Content Fragment Models are available through the Early Adopter Program.
+>
+>To see the status, and how to apply if you are interested, check the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md).
+
 With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow you to design, create, curate, and publish page-independent content. They allow you to prepare content ready for use in multiple locations, and over multiple channels, ideal for [headless delivery](/help/headless/what-is-headless.md), and [page authoring](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!IMPORTANT]
