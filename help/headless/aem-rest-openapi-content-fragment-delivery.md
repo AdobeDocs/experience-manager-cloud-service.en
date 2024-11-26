@@ -32,10 +32,6 @@ For full documentation see [AEM Sites API Schemas - Content Fragments Delivery A
 
 >[!NOTE]
 >
->Authorization is required to access the OpenAPI when you are not logged into AEM; for example when used from another product as part of an integration. See [OpenAPI-Based APIs](/help/implementing/developing/open-api-based-apis.md) for details of authorizing your access to the OpenAPI.
-
->[!NOTE]
->
 >See [AEM APIs for Structured Content Delivery and Management](/help/headless/apis-headless-and-content-fragments.md) for an overview of the various APIs available and comparison of some of the concepts involved.
 
 ## Caching {#caching}
