@@ -33,7 +33,7 @@ Alternatively, click ![download](/help/assets/assets/download-icon.svg) in the a
 
 (by kiran)
 
-## Download single licensed Asset {#download-licensed-asset}
+## Download single licensed asset {#download-licensed-asset}
 
 To download a licensed asset displayed on the Asset Card, execute the following steps:
 
