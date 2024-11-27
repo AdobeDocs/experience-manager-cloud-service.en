@@ -163,6 +163,17 @@ If "AEM Version Updates" is active (that is, updates are running or are queued t
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
+### Ingestion Failure Due to Cloud Environment Not In Ready State {#ingestion-failure-due-to-cloud-environment-not-in-ready-state}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_cloud_environment_not_in_ready_state"
+>title="Cloud Environment Not In Ready State"
+>abstract="In rare instances the target cloud environment may be experiencing unexpected issues, which will cause the ingestion to fail
+
+In rare instances the ingestion's target Cloud Service environment may be experiencing unexpected issues. As a result the ingestion will fail since the environment is not in the expected ready state. Check the ingestion log to reveal more details of the error state encountered. 
+
+Ensure the author environment is available and wait a few minutes before re-attemting the ingestion. If the problem persists, please reach out to customer support with the error state encountered.
+
 ### Top-up Ingestion Failure Due to Uniqueness Constraint Violation {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
 >[!CONTEXTUALHELP]
@@ -233,7 +244,7 @@ To possibly avoid this restriction, run the [Best Practices Analyzer](/help/jour
 
 At times unexpected intermittent issues could lend themselves to failed ingestions where unfortunately the only recourse is to retry the ingestion. Investigate the ingestion log to uncover the cause of the failure and see if it aligns with any of the errors listed below, where a retry should be attempted. 
 
-## MongoDB issues {#mongo-db-issues}
+#### MongoDB issues {#mongo-db-issues}
 
 * `Atlas prescale timeout error` - The ingestion phase will attempt to prescale the target cloud database to a suitable size that aligns with the size of the migration set content being ingested. Infrequently, this operation does not complete within the expected timeframe.
 * `Exhausted mongo restore retries` - Attempts to restore a local dump of the ingested migration set contents to the cloud database has been exhausted. This indicates an overall health/network issue with MongoDB, that often heals itself after a few minutes.
