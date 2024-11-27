@@ -323,8 +323,6 @@ This guide had you commit directly to the `main` branch for simplicity's sake. F
 
 When you are not developing on the `main` branch, you can append `?ref=<branch>` in the Universal Editor location bar to load the page from your branch. `<branch>` is the branch name as it would be used for your project's preview or live URLs, e.g. `https://<branch>--<repo>--<owner>.hlx.page`.
 
-Publishing content with a new model is only supported when the model is merged to the `main` branch.
-
 ## Reusing Your Blocks for Document-Based Authoring {#reusing-blocks}
 
 You can use the blocks you create for WYSIWYG authoring using the Universal Editor for document-based authoring if you adhere to the same content model.
