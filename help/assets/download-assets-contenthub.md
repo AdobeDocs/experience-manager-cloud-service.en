@@ -51,7 +51,7 @@ Alternatively, you can select the Asset Card and click **Download** to download 
 To download multiple licensed assets displayed on the Asset Cards, execute the following steps:
 
 1. On the Content Hub homepage, select the Asset Cards and click **Download**. The **Download assets** dialog box displays a license or list of licenses associated with the selected assets in the left pane. 
-1. Click a license in the left pane to see its PDF in the middle pane and the associated assets with it in the right pane. The PDF preview of the selected license is available only if the license PDF is already approved in your Assets as a Cloud Service Environment. [Approve the license PDFs](/help/assets/approve-assets-content-hub.md) of the selected assets before downloading to see their previews in the dialog box.
+1. Click a license in the left pane to see its PDF in the middle pane and the associated assets with it in the right pane. The PDF preview of the selected license is available only if the license PDF is approved in your Assets as a Cloud Service Environment. [Approve the license PDFs](/help/assets/approve-assets-content-hub.md) of the selected assets before downloading to see their previews in the dialog box.
 1. Click ![remove-icon](/help/assets/assets/remove-icon.svg) to remove a license from the dialog box.
 1. Select **I have read and accept all the terms and conditions mentioned above.** 
 1. Click **Download** to download the selected assets.
