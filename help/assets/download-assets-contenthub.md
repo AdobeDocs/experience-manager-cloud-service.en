@@ -18,7 +18,7 @@ exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
 >
 >[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
-The Content Hub lets you download and share your assets. The Content Hub UI displays approved assets. Asset preview on Content Hub UI is available only for approved assets. See [Approve assets for Content Hub](/help/assets/approve-assets-content-hub.md) to approve assets. These assets may include images, videos, or any other digital content. The Content Hub enhances accessibility and adaptability for effective asset distribution.  
+The Content Hub lets you download and share your assets. The Content Hub UI displays approved assets. These assets may include images, videos, or any other digital content. The Content Hub enhances accessibility and adaptability for effective asset distribution.  
 
 You can download a single asset or multiple assets using the Content Hub. The original versions of the asset are downloaded.
 
@@ -33,36 +33,28 @@ Alternatively, click ![download](/help/assets/assets/download-icon.svg) in the a
 
 (by kiran)
 
-## Download single licensed Asset {#single-download-from-asset-dialog-box}
+## Download single licensed Asset {#download-licensed-asset}
 
-1. Click the asset thumbnail.
-1. Click ![download](/help/assets/assets/download-icon.svg). The Download panel displays the asset renditions.
+To download a licensed asset displayed on the Asset Card, execute the following steps:
+
+1. On the Content Hub homepage, click the asset.
+1. Click ![download](/help/assets/assets/download-icon.svg) from the right rail. The **Download** panel displays the asset renditions.
 ![single-download-dialog-box](/help/assets/assets/asset-dialog-box-for-single-download.png) 
-<!--- * Click the terms and conditions link to see the licensing terms in the left pane.
+1. Click the rendition to see its preview. 
+1. Click the terms and conditions link to display the license PDF of the asset. The license PDF displays only if it is approved in your Assets as a Cloud Service Environment. [Approve the license PDF](/help/assets/approve-assets-content-hub.md) of the asset before downloading to see its preview in the dialog box.
+1. Select **I have read and accepted the terms & conditions for this asset** and then click **Download** to download the asset.
 
-        >[!NOTE]
-        >
-        >The terms and conditions checkbox displays only for licensed assets. Additionally, the asset dialog box displays a preview of the licensing terms and conditions only for assets with approved licenses. [Approve the asset's license](/help/assets/approve-assets-content-hub.md) before downloading to enable the preview of licensing terms in the asset dialog box.
+Alternatively, you can select the Asset Card and click **Download** to download the asset.
 
-   * Click the **Original Rendition Box** to return to the original asset rendition in the left pane.-->
+## Download multiple licensed assets{#download-multiple-licensed-assets} 
 
-1. Click **I have read and accepted the terms & conditions for this asset** and then click **Download** to download the asset. 
+To download multiple licensed assets displayed on the Asset Cards, execute the following steps:
 
-Optionally select the rendition to preview and click the terms and conditions link to see the license PDF for that asset. Approved license PDF only previews. [Approve the asset's license](/help/assets/approve-assets-content-hub.md) before downloading to enable its preview in the asset dialog box.
-Alternatively, you can click ![download](/help/assets/assets/download-icon.svg) on the Asset Card and then click **I have read and accept all the terms and conditions mentioned above** and then click **Download** to download the asset on the Asset Card.
-
-## Download Multiple Licensed Assets{#multi-download} 
-
-1. Select the assets and click ![download](/help/assets/assets/download-icon.svg) from the top rail. The **Download assets** dialog box displays.
-1. Click **I have read and accept all the terms and conditions mentioned above.** 
+1. On the Content Hub homepage, select the Asset Cards and click **Download**. The **Download assets** dialog box displays a license or list of licenses associated with the selected assets in the left pane. 
+1. Click a license in the left pane to see its PDF in the middle pane and the associated assets with it in the right pane. The PDF preview of the selected license is available only if the license PDF is already approved in your Assets as a Cloud Service Environment. [Approve the license PDFs](/help/assets/approve-assets-content-hub.md) of the selected assets before downloading to see their previews in the dialog box.
+1. Click ![remove-icon](/help/assets/assets/remove-icon.svg) to remove a license from the dialog box.
+1. Select **I have read and accept all the terms and conditions mentioned above.** 
 1. Click **Download** to download the selected assets.
-
-Optionally select a license PDF in the **Download assets** dialog box to see its terms and conditions and click ![remove-icon](/help/assets/assets/remove-icon.svg) to remove the license from the dialog box.
-The **Download assets** dialog box displays the list of the license PDFs associated with the selected assets in the left. The middle section previews the selected license PDF (if the license PDF is approved) and in the right the preview of the assets associated with the selected license displays.
-
->[!NOTE]
->
-> The **Download Asset dialog box** previews licensing terms and conditions only for approved licenses. [Approve the assets' licenses](/help/assets/approve-assets-content-hub.md) before downloading them to preview their licensing terms in the **Download Asset** dialog box.
 
 <!---This dialog box displays the list of licenses associated with the selected assets in the left pane. Select a license to preview its terms and conditions (in pdf format) in the middle pane and the preview of the associated assets to the license in the right. Reviewed licenses are highlighted in light blue.
 
