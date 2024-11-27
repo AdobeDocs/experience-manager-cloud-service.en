@@ -88,11 +88,11 @@ You can easily customize your Scribble Signature component for visitors with the
 
 ![Help Content tab](/help/forms/assets/scribblesig-help.png)
 
-- **Short description** - A short description is a brief text explanation that provides additional information or clarification about the purpose of a specific form field. It helps the user understand what type of data should be entered into the field and can provide guidelines or examples to help ensure that the information entered is valid and meets the desired criteria. By default, short descriptions remain hidden. Enable the **Always show short description** option to display it below the component.
+* **Short description** - A short description is a brief text explanation that provides additional information or clarification about the purpose of a specific form field. It helps the user understand what type of data should be entered into the field and can provide guidelines or examples to help ensure that the information entered is valid and meets the desired criteria. By default, short descriptions remain hidden. Enable the **Always show short description** option to display it below the component.
 
-- **Always show short description** - Enable the option to display the Short description below the component.
+* **Always show short description** - Enable the option to display the Short description below the component.
 
-- **Long Description** -  It refers to additional information or guidance that is provided to the user to assist them in filling out a form field correctly. It appears when the user clicks the help icon (i) placed next to the component. It provides more detailed information than a form field's label or placeholder text, and is designed to help the user understand the requirements or constraints of the field. It can also offer suggestions or examples to make filling out the form easier and more accurate.
+* **Long Description** -  It refers to additional information or guidance that is provided to the user to assist them in filling out a form field correctly. It appears when the user clicks the help icon (i) placed next to the component. It provides more detailed information than a form field's label or placeholder text, and is designed to help the user understand the requirements or constraints of the field. It can also offer suggestions or examples to make filling out the form easier and more accurate.
 
 ### Accessibility Tab {#accessibility}
 
@@ -100,13 +100,13 @@ You can easily customize your Scribble Signature component for visitors with the
 
 On the **Accessibility** tab, values are set for [ARIA accessibility](https://www.w3.org/WAI/standards-guidelines/aria/) labels for the component. Various options are available for using the text for screen reader:
 
-- **Screen Reader Precedence** - Screen Reader Precedence refers to additional text that is specifically intended to be read by assistive technologies, such as screen readers, used by visually impaired individuals. This text provides an audio description of the form field's purpose, and can include information about the field's title, description, name, and any relevant messages (Custom text). The screen reader text helps ensure that the form is accessible to all users, including those with visual impairments, and provides them with a complete understanding of the form field and its requirements. 
+* **Screen Reader Precedence** - Screen Reader Precedence refers to additional text that is specifically intended to be read by assistive technologies, such as screen readers, used by visually impaired individuals. This text provides an audio description of the form field's purpose, and can include information about the field's title, description, name, and any relevant messages (Custom text). The screen reader text helps ensure that the form is accessible to all users, including those with visual impairments, and provides them with a complete understanding of the form field and its requirements. 
 
-    - **Custom text**: Select this option to use the custom text for ARIA accessibility labels. Selecting this option displays the Custom Text dialog box. You can add relevant information in the Custom Text dialog box.
-    - **Short Description**: Select this option to use the description for ARIA accessibility labels.
-    - **Title**: Select this option to use the title for ARIA accessibility labels.
-    - **Name**: Select this option to use the name for ARIA accessibility labels.
-    - **None**: Select this option if you do not want to add for ARIA accessibility labels.
+   * **Custom text**: Select this option to use the custom text for ARIA accessibility labels. Selecting this option displays the Custom Text dialog box. You can add relevant information in the Custom Text dialog box.
+   * **Short Description**: Select this option to use the description for ARIA accessibility labels.
+   * **Title**: Select this option to use the title for ARIA accessibility labels.
+   *  **Name**: Select this option to use the name for ARIA accessibility labels.
+   * **None**: Select this option if you do not want to add for ARIA accessibility labels.
 
 <!--
 
