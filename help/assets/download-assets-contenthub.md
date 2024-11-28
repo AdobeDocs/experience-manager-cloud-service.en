@@ -29,7 +29,7 @@ You can download a single asset or multiple assets using the Content Hub. The or
 Select an asset and click ![download](/help/assets/assets/download-icon.svg) from the top rail. The Download asset dialog box displays the asset's license. Accept the licensing terms and conditions and click **Download**.
 Alternatively, click ![download](/help/assets/assets/download-icon.svg) in the asset card to download the asset.-->
 
-## Download multiple assets {#download-multiple-asset} 
+## Download multiple assets {#download-multiple-assets} 
 
 (by kiran)
 
