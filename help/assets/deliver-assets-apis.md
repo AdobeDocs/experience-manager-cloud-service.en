@@ -38,7 +38,8 @@ The following table illustrates the usage of the various available Delivery APIs
 
 >[!NOTE]
 >
->[Image presets, smart imaging, and additional image modifiers](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/), are available to you as a limited availability feature. To get access, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html). 
+>* [Image presets, smart imaging, and additional image modifiers](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/), are available to you as a limited availability feature. To get access, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+>* Smart Crop is not available with [Assets Prime](/help/assets/assets-ultimate-overview.md).
 
 ## Delivery APIs endpoints {#delivery-apis-endpoint}
 
