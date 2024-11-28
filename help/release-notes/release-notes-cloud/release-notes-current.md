@@ -22,7 +22,7 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2024.11.0) is November 21, 2024. The next feature release (2024.12.0) is planned for December 12, 2024.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2024.11.0) is November 21, 2024. The next feature release (2025.1.0) is planned for January 30, 2024.
 
 ## Maintenance Release Notes {#maintenance}
 
@@ -48,7 +48,7 @@ Manage your Edge Delivery spreadsheet data (e.g. redirects) efficiently in your 
 
 ### Prerelease capabilities in AEM Sites
 
-Enhanced Content Fragment referencing with unique ID-based references, ensuring stable links that remain valid even when assets or fragments are moved—eliminating the need for updates or re-publishing. Current limitation: Page references are not yet supported with unique IDs. If pages are referenced in Content Fragments, this capability should not be used.
+Enhanced [Content Fragment referencing with unique ID-based references](/help/headless/graphql-api/uuid-reference-upgrade.md), ensuring stable links that remain valid even when assets or fragments are moved—eliminating the need for updates or re-publishing. Current limitation: Page references are not yet supported with unique IDs. If pages are referenced in Content Fragments, this capability should not be used.
 
 ### Early Adopter Program {#sites-early-adopter}
 
