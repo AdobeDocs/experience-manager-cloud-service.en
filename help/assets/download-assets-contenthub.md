@@ -22,14 +22,14 @@ The Content Hub lets you download and share your assets. The Content Hub UI disp
 
 You can download a single asset or multiple assets using the Content Hub. The original versions of the asset are downloaded.
 
-## Download single Asset {#single-download-asset} 
+## Download single asset {#download-single-asset} 
 
 (by kiran)
 <!--- 
 Select an asset and click ![download](/help/assets/assets/download-icon.svg) from the top rail. The Download asset dialog box displays the asset's license. Accept the licensing terms and conditions and click **Download**.
 Alternatively, click ![download](/help/assets/assets/download-icon.svg) in the asset card to download the asset.-->
 
-## Download multiple Assets {#single-multiple-asset} 
+## Download multiple assets {#download-multiple-asset} 
 
 (by kiran)
 
