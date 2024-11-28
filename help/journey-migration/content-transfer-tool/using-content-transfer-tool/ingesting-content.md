@@ -168,7 +168,7 @@ If "AEM Version Updates" is active (that is, updates are running or are queued t
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_cloud_environment_not_in_ready_state"
 >title="Cloud Environment Not In Ready State"
->abstract="In rare instances the target cloud environment may be experiencing unexpected issues, which will cause the ingestion to fail
+>abstract="In rare instances the target cloud environment may be experiencing unexpected issues, which will cause the ingestion to fail."
 
 In rare instances the ingestion's target Cloud Service environment may be experiencing unexpected issues. As a result the ingestion will fail since the environment is not in the expected ready state. Check the ingestion log to reveal more details of the error state encountered. 
 
