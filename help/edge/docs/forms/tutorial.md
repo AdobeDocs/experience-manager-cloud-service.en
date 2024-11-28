@@ -75,7 +75,7 @@ To copy the sample content to your own content folder and point your GitHub repo
 
 1. Create a new folder specifically for your AEM content in Google Drive or Microsoft SharePoint. This document uses a folder created on Microsoft SharePoint.
 
-1. Share the folder with the Adobe Experience Manager user (helix@adobe.com).
+1. Share the folder with the Adobe Experience Manager user (forms@adobe.com).
 
     ![Use Manage Access option to share folder with AEM User - SharePoint](/help/edge/assets/share-folder-with-aem-user.png)
 
@@ -84,9 +84,9 @@ To copy the sample content to your own content folder and point your GitHub repo
 
     Ensure that you have provided editing rights on the folder to the Adobe Experience Manager user. 
 
-    ![Share folder with AEM User, provide editing rights-SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png)
+    ![Share folder with AEM User, provide editing rights-SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png){width=50%}
 
-    ![Share folder with AEM User, provide editing rights- Google Drive](/help/edge/assets/add-aem-user-google-folder.png)
+    ![Share folder with AEM User, provide editing rights- Google Drive](/help/edge/assets/add-aem-user-google-folder.png){width=50%}
 
 1. Copy the [example content stored in the Google Drive folder](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_) to your folder. To copy:
 
@@ -107,7 +107,7 @@ To copy the sample content to your own content folder and point your GitHub repo
 
     1. Go to the GitHub repository that you created eariler using AEM Forms Boilerplate.
     1. Open the `fstab.yaml` for editing.
-    1. Replace the existing reference with the path to the folder that you shared with the AEM user (helix@adobe.com).
+    1. Replace the existing reference with the path to the folder that you shared with the AEM user (forms@adobe.com).
 
         ![Sample Content on Google Drive](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 

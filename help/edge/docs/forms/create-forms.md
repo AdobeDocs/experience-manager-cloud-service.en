@@ -75,13 +75,13 @@ To proceed with form creation:
 
     ![Sample Content on Google Drive](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
 
-1. Ensure that the sheet is shared with the appropriate AEM user (for example `helix@adobe.com`) [as per the configurations specified for your project](https://www.aem.live/docs/setup-customer-sharepoint). Grant the user editing permission for the sheet. 
+1. Ensure that the sheet is shared with the appropriate AEM user (for example `forms@adobe.com`) [as per the configurations specified for your project](https://www.aem.live/docs/setup-customer-sharepoint). Grant the user editing permission for the sheet. 
 
-1. Open the created spreadsheet and rename the default sheet to "shared-default". 
+1. Open the created spreadsheet and rename the default sheet to "shared-aem". 
 
     ![rename default sheet to "shared-default"](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. To add the form fields, insert rows and column headers into the 'shared-default' sheet. Each row should represent a [form field](/help/edge/docs/forms/form-components.md#available-components), with column headers defining the corresponding field [properties](/help/edge/docs/forms/form-components.md#components-properties).
+1. To add the form fields, insert rows and column headers into the 'shared-aem' sheet. Each row should represent a [form field](/help/edge/docs/forms/form-components.md#available-components), with column headers defining the corresponding field [properties](/help/edge/docs/forms/form-components.md#components-properties).
 
 
     For a swift start, consider copying the contents of the [Enquiry spreadsheet](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) into your spreadsheet. After copying the content, save your spreadsheet. 
