@@ -35,6 +35,12 @@ The following table illustrates the usage of the various available Delivery APIs
 | [Player container for the video asset](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoPlayerDelivery) |Returns the player container for the video asset. You can  embed the player in to an iframe HTML element and play the video.|
 | [Playback manifests in the selected output format](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoManifestDelivery) | Returns the playback manifest file for the specified video asset in the selected output format. You must build a custom player capable of adaptive streaming through HLS or DASH protocols to be able to pull the playback manifest file and play the video.|
 
+
+>[!NOTE]
+>
+>* [Image presets, smart imaging, and additional image modifiers](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/), are available to you as a limited availability feature. To get access, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+>* Smart Crop is not available with [Assets Prime](/help/assets/assets-ultimate-overview.md).
+
 ## Delivery APIs endpoints {#delivery-apis-endpoint}
 
 The API endpoints vary for each delivery API. For example, the API endpoint for `Web-optimized binary representation of the asset in the requested output format` API is:
