@@ -1,5 +1,5 @@
 ---
-title: Preview asset and it properties in [!DNL the Content Hub]
+title: Preview asset and its properties in [!DNL the Content Hub]
 description: Learn how to preview assets and properties in [!DNL Content Hub]
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
