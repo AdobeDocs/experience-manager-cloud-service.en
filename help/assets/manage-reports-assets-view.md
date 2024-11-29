@@ -42,7 +42,7 @@ The AEM Assets view environment offers comprehensive reporting capabilities thro
 
    **In Configuration tab:** 
 
-   1. **Report type:** Select between the upload and download type.
+   1. **Report type:** Select among [!UICONTROL upload], [!UICONTROL download], or [Dynamic Media Delivery Report](#dynamic-media-delivery-reports) type.
    1. **Title:** Add a title to the report.
    1. **Description:** Add an optional description to the report.
    1. **Select folder path:** Select a folder path to generate the report of uploaded and downloaded assets within that specific folder. For example, if you need the report of assets uploaded to a folder then specify the path to that folder.
