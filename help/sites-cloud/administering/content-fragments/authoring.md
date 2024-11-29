@@ -362,6 +362,24 @@ To reference remote assets:
   
    ![Content Fragment Editor - Asset from remote repository](assets/cf-authoring-remote-asset-02.png)
 
+###### Remote Assets - Limitations {#remote-assets-limitations}
+
+There are some limitations when referencing remote assets:
+
+* Only [Approved](/help/assets/approve-assets.md) assets are available for reference from a remote Asset repository.
+
+* If a referenced asset is removed from the remote repository, this results in a broken Content Reference.
+
+* All Delivery Asset Repositories to which the user has access are available for selection, the available list cannot be limited.
+
+* Both the AEM instance and remote asset repository instances must be at the same version.
+
+* No Asset metadata is exposed via the either Management API or the Delivery API. You have to use the Asset Metadata API to retrieve the asset metadata details:
+
+  * the individual asset metadata: [https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata)
+  
+  * get bulk metadata information using the search API (experimental): [https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search)
+
 #### Reference Pages {#reference-pages}
 
 To add references to AEM pages, Experience Fragments, or other such content types:
