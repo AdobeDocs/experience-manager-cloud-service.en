@@ -143,12 +143,12 @@ You should have a Dynamic Media license to create and use this report.
 
 1. Select **[!UICONTROL Dynamic Media Delivery]** from the **[!UICONTROL Report type]** drop-down list.
 
-   ![Dynamic Media Delivery Report drop-down](/help/using/assets/dynamic-media-delivery-report-option.png)
+   ![Dynamic Media Delivery Report drop-down](assets/dynamic-media-delivery-report-option.png)
 
 
 1. In the **[!UICONTROL Columns]** tab, you can select the **[!UICONTROL Referrer]** column to include it in your report.
 
-   ![Referrer](/help/using/assets/referrer.png)
+   ![Referrer](assets/referrer.png)
 
    All the columns of the downloaded report are read-only, except the **Referrer** column, which you can modify to include or exclude from the report. <!--Choosing a referrer displays the number of visitors received from each referred report that directs traffic to the site. It offers insights into the sources of traffic and the origin of the visitors. Such insights help measure ROI of delivered assets, measure channel performance, and help take informed asset management tasks for assets.-->
 
@@ -164,7 +164,7 @@ After creating the report, you can perform the following actions:
 
 To delete or download the Dynamic Media Delivery Report as CSV, see [view and download existing report](#View-and-download-existing-report).
 
-   ![Downloaded CSV on Dynamic Media Delivery Report](/help/using/assets/csv-dynamic-media-delivery-report.png)
+   ![Downloaded CSV on Dynamic Media Delivery Report](assets/csv-dynamic-media-delivery-report.png)
 
 >[!IMPORTANT]
 > 
