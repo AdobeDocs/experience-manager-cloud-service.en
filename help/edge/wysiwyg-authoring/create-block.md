@@ -39,109 +39,109 @@ The following quote block example follows this approach.
 
 ### Create Block Definition and Model {#create-block-model}
 
-1&period; Clone the GitHub project locally that you created in the [Developer Getting Started Guide for WYSIWYG authoring with Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) guide and open it in an editor of your choice.
+1. Clone the GitHub project locally that you created in the [Developer Getting Started Guide for WYSIWYG authoring with Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) guide and open it in an editor of your choice.
 
    * Microsoft Code is used here for illustrative purposes.
 
    ![Cloning the project](assets/create-block/clone.png)
 
-2&period; Edit the `component-definition.json` file at the root of the project and add the following definition for your new quote block and save the file.
+1. Edit the `component-definition.json` file at the root of the project and add the following definition for your new quote block and save the file.
 
->[!BEGINTABS]
+   >[!BEGINTABS]
 
->[!TAB JSON Example]
+   >[!TAB JSON Example]
 
-```json
-{
-  "title": "Quote",
-  "id": "quote",
-  "plugins": {
-    "xwalk": {
-      "page": {
-        "resourceType": "core/franklin/components/block/v1/block",
-        "template": {
-          "name": "Quote",
-          "model": "quote",
-          "quote": "<p>Think, McFly! Think!</p>",
-          "author": "Biff Tannen"
-        }
-      }
-    }
-  }
-}
-```
+   ```json
+   {
+     "title": "Quote",
+     "id": "quote",
+     "plugins": {
+       "xwalk": {
+         "page": {
+           "resourceType": "core/franklin/components/block/v1/block",
+           "template": {
+             "name": "Quote",
+             "model": "quote",
+             "quote": "<p>Think, McFly! Think!</p>",
+             "author": "Biff Tannen"
+           }
+         }
+       }
+     }
+   }
+   ```
 
->[!TAB Screenshot]
+   >[!TAB Screenshot]
 
-![Editing the component-definitions.json file to define the quote block](assets/create-block/component-definitions.png)
+   ![Editing the component-definitions.json file to define the quote block](assets/create-block/component-definitions.png)
+   
+   >[!ENDTABS]
 
->[!ENDTABS]
-
-3&period; Edit the `component-models.json` file at the root of the project and add the following [model definition](/help/implementing/universal-editor/field-types.md#model-structure) for your new quote block and save the file.
+1. Edit the `component-models.json` file at the root of the project and add the following [model definition](/help/implementing/universal-editor/field-types.md#model-structure) for your new quote block and save the file.
 
    * Please see the document [Content Modeling for WYSIWYG authoring with Edge Delivery Services Projects](/help/edge/wysiwyg-authoring/content-modeling.md) for more information about what is important to consider when creating content models.
 
->[!BEGINTABS]
+   >[!BEGINTABS]
 
->[!TAB JSON Example]
+   >[!TAB JSON Example]
 
-```json
-{
-  "id": "quote",
-  "fields": [
-     {
-       "component": "richtext",
-       "name": "quote",
-       "value": "",
-       "label": "Quote",
-       "valueType": "string"
-     },
-     {
-       "component": "text",
-       "valueType": "string",
-       "name": "author",
-       "label": "Author",
-       "value": ""
-     }
-   ]
-}
-```
+   ```json
+   {
+     "id": "quote",
+     "fields": [
+        {
+          "component": "richtext",
+          "name": "quote",
+          "value": "",
+          "label": "Quote",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "author",
+          "label": "Author",
+          "value": ""
+        }
+      ]
+   }
+   ```
 
->[!TAB Screenshot]
+   >[!TAB Screenshot]
 
-![Editing the component-models.json file to define the model of the quote block](assets/create-block/component-models.png)
+   ![Editing the component-models.json file to define the model of the quote block](assets/create-block/component-models.png)
 
->[!ENDTABS]
+   >[!ENDTABS]
 
-4&period; Edit the `component-filters.json` file at the root of the project and add the quote block to the [filter definition](/help/implementing/universal-editor/customizing.md#filtering-components) to allow the block to be added to any section and save the file.
+1. Edit the `component-filters.json` file at the root of the project and add the quote block to the [filter definition](/help/implementing/universal-editor/customizing.md#filtering-components) to allow the block to be added to any section and save the file.
 
->[!BEGINTABS]
+   >[!BEGINTABS]
 
->[!TAB JSON Example]
+   >[!TAB JSON Example]
 
-```json
-{
-  "id": "section",
-  "components": [
-    "text",
-    "image",
-    "button",
-    "title",
-    "hero",
-    "cards",
-    "columns",
-    "quote"
-   ]
-}
-```
+   ```json
+   {
+     "id": "section",
+     "components": [
+       "text",
+       "image",
+       "button",
+       "title",
+       "hero",
+       "cards",
+       "columns",
+       "quote"
+      ]
+   }
+   ```
 
->[!TAB Screenshot]
+   >[!TAB Screenshot]
 
-![Editing the component-filters.json file to define the filters for the quote block](assets/create-block/component-filters.png)
+   ![Editing the component-filters.json file to define the filters for the quote block](assets/create-block/component-filters.png)
 
->[!ENDTABS]
+   >[!ENDTABS]
 
-5&period; Using git, commit these changes to your `main` branch.
+1. Using git, commit these changes to your `main` branch.
 
    * Committing to `main` is for illustrative purposes only. [Follow best practices](https://www.aem.live/docs/dev-collab-and-good-practices) and use a pull request for actual project work.
 
@@ -184,90 +184,90 @@ Now that your basic quote block is defined and committed to the sample project, 
 
 Now that you have a working quote block you can apply styling to it.
 
-1&period; Return to the editor for your project.
+1. Return to the editor for your project.
 
-2&period; Create a `quote` folder under the `blocks` folder.
+1. Create a `quote` folder under the `blocks` folder.
 
    ![Create a quote folder](assets/create-block/new-folder.png)
 
-3&period; In the new `quote` folder, add a `quote.js` file to implement block decoration by adding the following JavaScript and save the file.
+1. In the new `quote` folder, add a `quote.js` file to implement block decoration by adding the following JavaScript and save the file.
 
->[!BEGINTABS]
+   >[!BEGINTABS]
 
->[!TAB JavaScript Example]
+   >[!TAB JavaScript Example]
 
-```javascript
-export default function decorate(block) {
-  const [quoteWrapper] = block.children;
- 
-  const blockquote = document.createElement('blockquote');
-  blockquote.textContent = quoteWrapper.textContent.trim();
-  quoteWrapper.replaceChildren(blockquote);
-}
+   ```javascript
+   export default function decorate(block) {
+     const [quoteWrapper] = block.children;
+    
+     const blockquote = document.createElement('blockquote');
+     blockquote.textContent = quoteWrapper.textContent.trim();
+     quoteWrapper.replaceChildren(blockquote);
+   }
    ```
 
->[!TAB Screenshot]
+   >[!TAB Screenshot]
 
-![Adding JavaScript to decorate the block](assets/create-block/quote-js.png)
+   ![Adding JavaScript to decorate the block](assets/create-block/quote-js.png)
 
->[!ENDTABS]
+   >[!ENDTABS]
 
-4&period; In the `quote` folder, add a `quote.css` file to define the styling for the block by adding the following CSS code and save the file.
+1. In the `quote` folder, add a `quote.css` file to define the styling for the block by adding the following CSS code and save the file.
 
->[!BEGINTABS]
+   >[!BEGINTABS]
 
->[!TAB CSS Example]
+   >[!TAB CSS Example]
 
-```css
-.block.quote {
-    background-color: #ccc;
-    padding: 0 0 24px;
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 0;
-}
- 
-.block.quote blockquote {
-    margin: 16px;
-    text-indent: 0;
-}
- 
-.block.quote > div:last-child > div {
-    margin: 0 16px;
-    font-size: small;
-    font-style: italic;
-    position: relative;
-}
- 
-.block.quote > div:last-child > div::after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    height: 5px;
-    width: 30px;
-    background-color: darkgray;
-}
-```
+   ```css
+   .block.quote {
+       background-color: #ccc;
+       padding: 0 0 24px;
+       display: flex;
+       flex-direction: column;
+       margin: 1rem 0;
+   }
+    
+   .block.quote blockquote {
+       margin: 16px;
+       text-indent: 0;
+   }
+    
+   .block.quote > div:last-child > div {
+       margin: 0 16px;
+       font-size: small;
+       font-style: italic;
+       position: relative;
+   }
+    
+   .block.quote > div:last-child > div::after {
+       content: "";
+       display: block;
+       position: absolute;
+       left: 0;
+       bottom: -8px;
+       height: 5px;
+       width: 30px;
+       background-color: darkgray;
+   }
+   ```
 
->[!TAB Screenshot]
+   >[!TAB Screenshot]
 
-![Adding CSS to define the block styling](assets/create-block/quote-css.png)
+   ![Adding CSS to define the block styling](assets/create-block/quote-css.png)
 
->[!ENDTABS]
+   >[!ENDTABS]
 
-5&period; Using git, commit these changes to your `main` branch.
+1. Using git, commit these changes to your `main` branch.
 
    * Committing to `main` is for illustrative purposes only. [Follow best practices](https://www.aem.live/docs/dev-collab-and-good-practices) and use a pull request for actual project work.
 
-6&period; Return to your browser tab of the Universal Editor where you were editing the page of your project and reload the page to view your styled block.
+1. Return to your browser tab of the Universal Editor where you were editing the page of your project and reload the page to view your styled block.
 
-7&period; See the now styled quote block on the page.
+1. See the now styled quote block on the page.
 
    ![The styled quote block in the Universal Editor](assets/create-block/quote-styled.png)
 
-8&period; Verify that the changes were pushed to production by navigating to the published page. The link will be similar to `https://<branch>--<repo>--<owner>.hlx.page`
+1. Verify that the changes were pushed to production by navigating to the published page. The link will be similar to `https://<branch>--<repo>--<owner>.hlx.page`
 
    ![The published and styled quote block](assets/create-block/quote-styled-published.png)
 
