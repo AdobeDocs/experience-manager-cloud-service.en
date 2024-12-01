@@ -11,7 +11,7 @@ Learn best practice recommendations on how to set up a project in a repoless man
 
 ## Overview {#overview}
 
-[Multi Site Manager (MSM)](/help/sites-cloud/administering/msm/overview.md) and its Live Copy features enable you to use the same site content in multiple locations, while allowing for variations. You can author content once and create Live Copies. MSM maintains live relationships between your source content and its Live Copies so that when you change the source content, the source and Live Copies are synchronized.
+[Multi Site Manager (MSM)](/help/sites-cloud/administering/msm/overview.md) and its Live Copy features enable you to use the same site content in multiple locations, while allowing for variations. You can author content once and create Live Copies. MSM maintains live relationships between your source content and its Live Copies so that when you change the source content, the source and Live Copies can be synchronized.
 
 You can use MSM to create an entire content structure for your brand across locales and languages, authoring the content centrally. Your localized sites can then each be delivered by Edge Delivery Services, leveraging a central code base.
 
@@ -43,7 +43,7 @@ This document assumes that you have already created a basic localized site struc
 /content/wknd/de/en
 ```
 
-Content in language-masters is the source of Live Copies for the localized sites, Germany and Switzerland. The goal of this document is to create Edge Delivery Services sites for each localized site that all use the same code base.
+Content in `language-masters` is the source of Live Copies for the localized sites, Germany (`de`) and Switzerland (`ch`). The goal of this document is to create Edge Delivery Services sites for each localized site that all use the same code base.
 
 ## Configuration {#configuration}
 
@@ -55,14 +55,14 @@ There are several steps to configuring the MSM repoless use case.
 
 ### Update AEM Site Configurations {#update-aem-configurations}
 
-[Configurations](/help/implementing/developing/introduction/configurations.md) can be thought of as workspaces that can be used to gather groups of settings and their associated content for organizational purposes. When you create a site in AEM a configuration is automatically created for it.
+[Configurations](/help/implementing/developing/introduction/configurations.md) can be thought of as workspaces that can be used to gather groups of settings and their associated content for organizational purposes. When you create a site in AEM, a configuration is automatically created for it.
 
 You generally want to share certain content between sites such as:
 
 * Templates created from content in the blueprint
 * Content Fragment models, persisted, queries etc.
 
-We can create additional configurations to facilitate such sharing. For the wknd use case, we would need configurations for the following paths.
+You can create additional configurations to facilitate such sharing. For the wknd use case, we would need configurations for the following paths.
 
 ```text
 /content/wknd
@@ -70,16 +70,16 @@ We can create additional configurations to facilitate such sharing. For the wknd
 /content/wknd/de
 ```
 
-That is, we will have a configuration for the root of our brand's content (wknd) used by the blueprints and a configuration used by each localized site (Switzerland and Germany).
+That is, you will have a configuration for the root of the wknd brand's content (`/content/wknd`) used by the blueprints and a configuration used by each localized site (Switzerland and Germany).
 
 1. Sign into your AEM authoring instance.
 1. Navigate to the **Configuration Browser** by going to **Tools** -&gt; **General** -&gt; **Configuration Browser**.
 1. Select the configuration that was automatically created for your project (in this case wknd) and then tap or click **Create** in the toolbar.
-1. In the **Create Configuration** dialog, provide a descriptive **Name** for your localized site (such as `Switzerland`) and for the **Title** use the same title of the loaclized size (in this case `ch`).
+1. In the **Create Configuration** dialog, provide a descriptive **Name** for your localized site (such as `Switzerland`) and for the **Title** use the same title of the localized size (in this case `ch`).
 1. Select the **Cloud Configuration** feature and any additional features you may need for your project such as **Editable Templates**.
 1. Tap or click **Create**.
 
-Create configurations for each localized site you need. In the case of wknd, you would need you create a configuration for `de` as well.
+Create configurations for each localized site you need. In the case of wknd, you would need you create a configuration for `de` as well alongside the `ch` configuration.
 
 Once the configurations are created, you need to ensure that the localized sites use them.
 
@@ -95,17 +95,17 @@ Assign the respective configurations to the additional localized sites. In the c
 
 ### Create New Edge Delivery Services Sites for Your Localized Pages {#create-edge-sites}
 
-To connect more sites to Edge Delivery Services for a multi region, multi language site setup, you must set up a new aem.live site for each to the AEM MSM sites. There is a 1:1 relationship between AEM MSM sites and aem.live sites with a shared git repository and code base.
+To connect more sites to Edge Delivery Services for a multi-region, multi-language site setup, you must set up a new aem.live site for each of your AEM MSM sites. There is a 1:1 relationship between AEM MSM sites and aem.live sites with a shared Git repository and code base.
 
-For this example, we will create the localized site `wknd-ch` for the Swiss presence of wknd, whose content is under the AEM path `/content/wknd/ch`. 
+For this example, we will create the site `wknd-ch` for the Swiss presence of wknd, whose localized content is under the AEM path `/content/wknd/ch`. 
 
 1. Retrieve your auth token and the technical account for your program.
-   * Please see the document Reusing Code Across Sites for details on how to [obtain your access token](/help/edge/wysiwyg-authoring/repoless.md#access-token) and the [technical account](/help/edge/wysiwyg-authoring/repoless.md#access-control) for your program.
+   * Please see the document **Reusing Code Across Sites** for details on how to [obtain your access token](/help/edge/wysiwyg-authoring/repoless.md#access-token) and the [technical account](/help/edge/wysiwyg-authoring/repoless.md#access-control) for your program.
 1. Create a new site by making the following call to the configuration service. Please consider:
    * The project name in the POST URL must be the new site name you are creating. In this example, it is `wknd-ch`.
    * The `code` configuration should be the same as you used for the initial project creation.
-   * The `content` > `source` > `url` must be adapted to the name of the new project you are creating. In this example, it is `wknd-ch`.
-   * Therefore, the site name in POST URL and the content source URL must be the same.
+   * The `content` > `source` > `url` must be adapted to the name of the new site you are creating. In this example, it is `wknd-ch`.
+   * I.e., the site name in POST URL and the `content` > `source` > `url` must be the same.
 
    ```text
    curl --request POST \
@@ -174,9 +174,22 @@ Your pages in AEM must be configured to use the new Edge Delivery Sites you crea
 1. Sign into the AEM author instance and go to **Tools** -&gt; **Cloud Services** -&gt; **Edge Delivery Services Configuration**.
 1. Select the configuration that was automatically created for your project and then the folder that was created for the localized page. In this case, that would be Switzerland (`ch`).
 1. Tap or click **Create** > **Configuration** in the tool bar.
-1. In the **Edge Delivery Services Configuration** window
-   * The **Organization** is prepopulated.
+1. In the **Edge Delivery Services Configuration** window:
+   * Provide your GitHub organization in the **Organization** field.
    * Change the site name to the name of the site you created in the previous section. In this case, that would be `wknd-ch`.
    * Change project type to **aem.live with repoless config setup**.
 1. Tap or click **Save &amp; Close**.
 
+## Verify Your Setup {#verify}
+
+Now that you have made all of the necessary configuration changes, verify that everything is working as expected.
+
+1. Sign into your AEM authoring instance.
+1. Navigate to the **Sites Console** by going to **Navigation** -&gt; **Sites**.
+1. Select the localized site such as `Switzerland`.
+1. Tap or click **Edit** in the toolbar.
+1. Ensure that the page properly renders in the Universal Editor and uses the same code as your site root.
+1. Make a change to the page and re-publish.
+1. Visit your new Edge Delivery Services site for that localized page at `https://main--wknd-ch--<your-github-org>.aem.page`.
+
+If you see the changes that you made, your MSM setup is working properly.
