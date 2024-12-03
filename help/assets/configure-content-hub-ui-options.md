@@ -68,6 +68,8 @@ As an administrator, manage the following configuration options for your users:
 
 * [Expired Assets](#expired-assets-content-hub)
 
+* [Renditions](#renditions-content-hub)
+
 * [Custom Links](#configure-custom-links-content-hub)
 
 ### Import {#configure-import-options-content-hub}
@@ -217,6 +219,23 @@ If the administrator has enabled download, the Content Hub users can also downlo
 
 If the visibility of expired assets is enabled, Content Hub also highlights assets expiring within the next 15 days using the `Expiring in n days` message on the Asset Card.
 
+### Renditions {#renditions-content-hub}
+
+Renditions are customized versions of digital assets, such as images, documents, etc. designed for different devices and platforms to ensure optimal performance. See more about [renditions in Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+
+Content Hub allows downloading static renditions. Static renditions are different representations of an asset's original file that are generated natively. Examples include thumbnails or mobile optimized renditions. Administrators can manage and control the availability of asset renditions; and manage whether you can download original assets or not.
+
+To do so, execute the following steps:
+
+1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Renditions]**.
+
+1. **[!UICONTROL Enable availability of static renditions]** toggle to make all static renditions visible on Content Hub.
+
+1. Enable or disable **[!UICONTROL Allow users to download original assets]** toggle to control the availability to download original assets.
+
+   ![Configure renditions on Content Hub](assets/config-renditions.png)
+
+Furthermore, you can view the renditions of [single](/help/assets/download-assets-content-hub.md#download-single-asset) or [multiple](/help/assets/download-assets-content-hub.md#download-multiple-assets) assets on Content Hub.
 
 ### Custom Links {#configure-custom-links-content-hub}
 

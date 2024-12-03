@@ -24,14 +24,27 @@ You can download a single asset or multiple assets using the Content Hub. The or
 
 ## Download single asset {#download-single-asset} 
 
-(by kiran)
-<!--- 
-Select an asset and click ![download](/help/assets/assets/download-icon.svg) from the top rail. The Download asset dialog box displays the asset's license. Accept the licensing terms and conditions and click **Download**.
-Alternatively, click ![download](/help/assets/assets/download-icon.svg) in the asset card to download the asset.-->
+To download a single asset, execute the following steps: 
+
+1. Select an asset card and click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]**. 
+1. The [!UICONTROL Download assets] screen appears. Select along the available download options. You can download original asset or [renditions](/help/assets/download-assets-content-hub.md#renditions-content-hub) available for the selected asset.
+1. Click [!UICONTROL Download].
 
 ## Download multiple assets {#download-multiple-assets} 
 
-(by kiran)
+To download a multiple assets, execute the following steps: 
+
+1. Select the Asset Cards and click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]**. 
+1. The [!UICONTROL Download assets] screen appears listing all the selected assets appear. You can manually select or exclude the assets. The download button reflects the count of selected items. 
+1. Choose among various available download options to begin download.
+
+    * **Download [!UICONTROL Original]**: Select this option to download the assets in its original form.
+    * **Download [!UICONTROL Only renditions]**: A rendition is the binary version of an asset, which has a primary representation (the uploaded file). An asset can have multiple representations. This option lets you choose which renditions to download, depending on the asset you select.
+    * **Download [!UICONTROL Originals + all renditions]**: Select this option to download both original and renditions of the selected assets.
+
+    ![Download multiple renditions](/help/assets/assets/download-multiple-renditions.png)
+    
+Once you are done with the selection, all the selected assets or renditions are downloaded in a zip folder. 
 
 ## Download single licensed asset {#download-licensed-asset}
 
