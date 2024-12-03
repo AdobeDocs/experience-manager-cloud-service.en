@@ -80,6 +80,9 @@ Follow this section to learn how to view the Best Practices Analyzer report:
 >[!NOTE]
 >You have the option to skip the automatic upload to CAM by selecting **Skip report auto upload to CAM**. If you choose to skip, you will need to manually download the BPA report as a comma-separated value file and then upload the file in CAM. It is recommended to use the upload key option since it streamlines the operation. 
 
+>[!IMPORTANT]
+>When manually uploading to CAM, report sizes are restricted to approximately 200MB. For larger reports you will need to leverage the automatic upload. 
+ 
 1. The **Generate** button becomes active when a valid key is provided. Click on **Generate** to initiate report generation.
 
    ![Generate Report](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
