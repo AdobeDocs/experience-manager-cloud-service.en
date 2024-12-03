@@ -14,7 +14,7 @@ Asset reporting provides administrators with visibility into activity of the Ado
 
 ## Access reports {#access-reports}
 
-All users who are assigned to the Assets view Administrators product profile can access the Insights dashboard or create user-defined reports in Assets view.
+All users who are assigned to the AEM Administrators product profile can access the Insights dashboard or create user-defined reports in Assets view.
 
 To access reports, navigate to **[!UICONTROL Reports]** under **[!UICONTROL Settings]**.
 
@@ -65,22 +65,22 @@ The AEM Assets view environment offers comprehensive reporting capabilities thro
      <tr>
       <td>Title</td>
       <td>The title of the asset.</td>
-      <td>Upload and download</td>
+      <td>Upload and Download</td>
      </tr>
      <tr>
       <td>Path</td>
       <td>The folder path where the asset is available in Assets view.</td>
-      <td>Upload and download</td>
+      <td>Upload, Download, and Dynamic Media Delivery</td>
      </tr>
      <tr>
       <td>MIME Type</td>
       <td>The MIME type for the asset.</td>
-      <td>Upload and download</td>
+      <td>Upload and Download</td>
      </tr>
      <tr>
       <td>Size</td>
       <td>The size of the asset in bytes.</td>
-      <td>Upload and download</td>
+      <td>Upload and Download</td>
      </tr>
      <tr>
       <td>Downloaded By</td>
@@ -95,35 +95,40 @@ The AEM Assets view environment offers comprehensive reporting capabilities thro
      <tr>
       <td>Author</td>
       <td>The author for the asset.</td>
-      <td>Upload and download</td>
+      <td>Upload and Download</td>
      </tr>
      <tr>
       <td>Creation Date</td>
       <td>The date when the asset is uploaded to Assets view.</td>
-      <td>Upload and download</td>
+      <td>Upload and Download</td>
      </tr>
      <tr>
       <td>Modified Date</td>
       <td>The date when the asset is last modified.</td>
-      <td>Upload and download</td>
+      <td>Upload and Download</td>
      </tr>
      <tr>
       <td>Expired</td>
       <td>The expiration status of the asset.</td>
-      <td>Upload and download</td>
+      <td>Upload and Download</td>
      </tr>
      <tr>
       <td>Downloaded By User Name</td>
       <td>The name of the user who downloaded the asset.</td>
       <td>Download</td>
-     </tr>           
+     </tr> 
+     <tr>
+      <td>Referrer</td>
+      <td>The URL where the asset is delivered or included</td>
+      <td>Dynamic Media Delivery</td>
+     </tr>  
+     <tr>
+      <td>Hits</td>
+      <td>The number of times the asset is delivered (delivery count)</td>
+      <td>Dynamic Media Delivery</td>
+     </tr>          
     </tbody>
    </table>
-
-## View and download existing report {#View-and-download-existing-report}
-
-Existing reports display under the **Executed Reports** tab. Click **Reports** and select **Executed Reports** to view all the created reports with the status as **completed**, indicating they are ready to download. To download the report in CSV format or delete the report, select the report row. Then select **Download CSV** or **Delete**.
-![view and download existing reports](/help/assets/assets/view-download-existing-report.png)
 
 ## Dynamic Media Delivery Reports {#dynamic-media-delivery-reports}
 
@@ -136,6 +141,12 @@ Get delivery insights for assets delivered with Dynamic Media, with asset level 
 ### Prerequisites {#prereqs-dynamic-media-delivery-reports}
 
 You should have a Dynamic Media license to create and use this report.
+
+>[!IMPORTANT]
+> 
+>* Reports are provided for assets delivered via Dynamic Media.
+>* Reports are generated for the first 1 million rows. To capture all files within this limit, consider including the referrer column for smaller folders.
+>* Reports can be generated for the past 3 months only.
 
 ### Create a Dynamic Media Delivery Report{#create-dynamic-media-delivery-report}
 
@@ -162,15 +173,15 @@ After creating the report, you can perform the following actions:
 
     * **Hits** column lists the number of times the asset is delivered (delivery count).
 
-To delete or download the Dynamic Media Delivery Report as CSV, see [view and download existing report](#View-and-download-existing-report).
+To delete or download the Dynamic Media Delivery Report as CSV, see [View and download existing report](#View-and-download-existing-report).
 
    ![Downloaded CSV on Dynamic Media Delivery Report](assets/csv-dynamic-media-delivery-report.png)
 
->[!IMPORTANT]
-> 
->* Reports are provided for assets delivered via Dynamic Media.
->* Reports are generated for the first 1 million rows. To capture all files within this limit, consider including the referrer column for smaller folders.
->* Reports can be generated for the past 3 months only.
+
+## View and download existing report {#View-and-download-existing-report}
+
+Existing reports display under the **Executed Reports** tab. Click **Reports** and select **Executed Reports** to view all the created reports with the status as **completed**, indicating they are ready to download. To download the report in CSV format or delete the report, select the report row. Then select **Download CSV** or **Delete**.
+![view and download existing reports](/help/assets/assets/view-download-existing-report.png)
 
 
 ## Schedule a Report {#schedule-report}
