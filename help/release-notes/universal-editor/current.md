@@ -6,9 +6,9 @@ role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2024.11.28 Release Notes {#release-notes}
+# Universal Editor 2024.12.02 Release Notes {#release-notes}
 
-These are the release notes for the 28 November 2024 release of the Universal Editor.
+These are the release notes for the 2 December 2024 release of the Universal Editor.
 
 >[!TIP]
 >
