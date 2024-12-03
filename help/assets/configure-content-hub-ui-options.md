@@ -228,7 +228,7 @@ To do so, execute the following steps:
 
 1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Renditions]**.
 
-1. Enable or disable the **[!UICONTROL Enable availability of static renditions]** toggle to make all static renditions visible on Content Hub.
+1. Enable  the [!UICONTROL Enable availability of static renditions] toggle to make all static renditions visible on Content Hub.
 
 1. Enable or disable **[!UICONTROL Allow users to download original assets]** toggle to control the availability to download original assets.
 
