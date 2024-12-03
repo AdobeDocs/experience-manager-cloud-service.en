@@ -270,8 +270,7 @@ The created folder structure looks like:
 
     >[!NOTE]
     >
-    > * To call the default error handler from your custom error handler, the following line of the sample code is used:
-        `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
+    > * To call the default error handler from your custom error handler, the following line of the sample code is used: `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
     > * In the `.content.xml` file, add the `allowProxy` and `categories` properties to use custom error handler client library in an Adaptive Form. 
     >
     >   * `allowProxy = [Boolean]true`
