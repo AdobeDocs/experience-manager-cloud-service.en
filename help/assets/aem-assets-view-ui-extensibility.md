@@ -16,7 +16,7 @@ You can add your Extensions to Asset, Folder and Collection level. The added ext
 >[!IMPORTANT]
 >
 > * AEM Assets View UI Extensibility is available with [Assets Ultimate](/help/assets/assets-ultimate-overview.md).
-> * Assets View UI Extensibility is available to you as a Beta release. To get early access to Assets view UI extensibility, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+> * To get access to Assets view UI extensibility, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 > * You can provide documentation feedback by expanding Detailed Feedback options and clicking Report an issue.
 
 ## <a id="1"></a> How to access Assets View
