@@ -481,6 +481,10 @@ The **Comments** tab in the right panel provides the following capabilities:
 
 ![Content Fragment Editor - Comments tab](assets/cf-authoring-comments.png)
 
+>[!NOTE]
+>
+>These comments are not visible as [Annotations in the original editor](/help/assets/content-fragments/content-fragments-managing.md#annotating-a-content-fragment), nor in the [Timeline of the Assets console](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
+
 ## Preview your Fragment {#preview-content-fragment}
 
 The Content Fragment editor provides authors with the option to preview their edits in an external frontend application. 
