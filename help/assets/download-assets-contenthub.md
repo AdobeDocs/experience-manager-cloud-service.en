@@ -27,16 +27,16 @@ You can download a single asset or multiple assets using the Content Hub. The or
 To download a single asset, execute the following steps: 
 
 1. Select an asset card and click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]**. 
-1. The [!UICONTROL Download assets] screen appears. Select along the available download options. You can download original asset or [renditions](/help/assets/download-assets-content-hub.md#renditions-content-hub) available for the selected asset.
+1. The [!UICONTROL Download assets] screen appears. Select from the available download options. You can download the original asset or [renditions](/help/assets/download-assets-content-hub.md#renditions-content-hub) available for the selected asset.
 1. Click [!UICONTROL Download].
 
 ## Download multiple assets {#download-multiple-assets} 
 
-To download a multiple assets, execute the following steps: 
+To download multiple assets, execute the following steps: 
 
-1. Select the Asset Cards and click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]**. 
+1. Select the asset cards and click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]**. 
 1. The [!UICONTROL Download assets] screen appears listing all the selected assets appear. You can manually select or exclude the assets. The download button reflects the count of selected items. 
-1. Choose among various available download options to begin download.
+1. Choose among the various available download options to begin download.
 
     * **Download [!UICONTROL Original]**: Select this option to download the assets in its original form.
     * **Download [!UICONTROL Only renditions]**: A rendition is the binary version of an asset, which has a primary representation (the uploaded file). An asset can have multiple representations. This option lets you choose which renditions to download, depending on the asset you select.
@@ -63,7 +63,7 @@ Alternatively, select the Asset Card and click **Download** to download the asse
 
 To download multiple licensed assets displayed on the Asset Cards, execute the following steps:
 
-1. On the Content Hub homepage, select the Asset Cards and click **Download**. The **Download assets** dialog box displays a license or list of licenses associated with the selected assets in the left pane. 
+1. On the Content Hub homepage, select the asset cards and click **Download**. The **Download assets** dialog box displays a license or list of licenses associated with the selected assets in the left pane. 
 1. Click a license in the left pane to see its PDF in the middle pane and the associated assets with it in the right pane. The license PDF preview is displayed only if the license is approved in your Assets as a Cloud Service environment. [Approve the license PDFs](/help/assets/approve-assets-content-hub.md) of the selected assets to see their previews.
 1. Optional: Click ![remove-icon](/help/assets/assets/remove-icon.svg) to remove a license from the dialog box.
 1. Select **I have read and accept all the terms and conditions mentioned above.** 
