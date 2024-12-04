@@ -40,6 +40,28 @@ The next planned release is January 2024.
     * **SSL certificates filering:** Includes SSL certificates filtering, letting you refine search results for specific certificates. Available filters include SSL certificate name, ownership, and status.
     ![SSL certificate filtering](/help/implementing/cloud-manager/assets/filters-ssl-certificates.png)
 
+## Early adoption program {#early-adoption}
+
+Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features.
+
+### Bring Your Own Git - now with support for GitLab and Bitbucket {#gitlab-bitbucket}
+
+<!-- BOTH CS & AMS -->
+
+The **Bring Your Own Git** feature has been expanded to include support for external repositories, such as GitLab and Bitbucket. This new support is in addition to the already existing support for private and enterprise GitHub repositories. When you add these new repos, you can also link them directly to your pipelines. You can host these repositories on public cloud platforms or within your private cloud or infrastructure. This integration also removes the need for constant code synchronization with the Adobe repository and provides the ability to validate pull requests before merging them into a main branch.
+
+Pipelines using external repositories (excluding GitHub-hosted ones) and the **Deployment Trigger** set to **On Git Changes** now start automatically.
+
+See [Add external repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+
+![Add Repository dialog box](/help/implementing/cloud-manager/release-notes/assets/repositories-add-release-notes.png)
+
+>[!NOTE]
+>
+>Currently, the out-of-the-box pull request code quality checks are exclusive to GitHub-hosted repositories, but an update to extend this functionality to other Git vendors is in the works.
+
+If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure.
+
 ## Bug fixes
 
 * A safeguard has been added to prevent the deletion of domains with active domain mappings in AEM Cloud Manager. Users attempting to delete such domains now receive an error message instructing them to first delete the domain mapping before proceeding with the domain deletion. This workflow ensures domain integrity and prevents accidental misconfigurations. <!-- CMGR-63033 --> 
