@@ -54,7 +54,7 @@ Follow the steps below to navigate to the Readiness Phase:
    ![Get upload key](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3b.png)
    
    >[!IMPORTANT]
-   >The report can still be uploaded manually, but using the Upload Key streamlines the operation. Note that the report cannot be uploaded manually if you are in the browser's Incognito mode.
+   >The report can still be uploaded manually, but using the Upload Key streamlines the operation. Note that the report cannot be uploaded manually if its size is approximately 200MB or greater. The report also can not be uploaded using the browser's Incognito mode.
 
 1. After a new report has been uploaded, you can see the Best Practices Analysis report in CAM.
 
