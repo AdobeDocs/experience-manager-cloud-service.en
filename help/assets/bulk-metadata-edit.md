@@ -1,18 +1,18 @@
 ---
 title: Bulk metadata edit in Assets View
-description: Learn how you can simultaneously edit the metadata of multiple assets available on the Assets View UI.
+description: Learn how you can simultaneously edit the metadata of multiple assets available on the Assets View.
 ---
-# Bulk Metadata Edit{#how-to-edit-the-metadata-of-multiple-assets-simultaneously}
+# Bulk metadata edit in Assets View{#how-to-edit-the-metadata-of-multiple-assets-simultaneously}
 
 ![banner image](/help/assets/assets/)
 
-Using **Bulk Metadata Edit** within the Assets View UI, you can modify metadata for multiple assets simultaneously. Instead of editing the metadata for each asset individually, you apply changes to a large group of assets in one action. This feature enhances the efficiency, consistency, and accuracy of metadata across a large set of assets, improving asset searchability and organization. Consequently, it becomes more convenient to manage extensive collections of digital assets.
+Using **Bulk Metadata Edit** within the Assets View, you can modify metadata for multiple assets simultaneously. Instead of editing the metadata for each asset individually, you apply changes to a large group of assets in one action. This feature enhances the efficiency, consistency, and accuracy of metadata across a large set of assets, improving asset searchability and organization. Consequently, it becomes more convenient to manage extensive collections of digital assets.
 
-## Access Bulk Metadata Edit Option {#how-to-do-bulk-metadata-edit-on-assets-view}
+## Access Bulk Metadata Edit option {#how-to-do-bulk-metadata-edit-on-assets-view}
 
 Follow these steps to edit the metadata of up to 100 assets at once.
 
-1. On the Assets View UI, Click **Assets**, navigate to a folder and select multiple assets.
+1. On the Assets View, Click **Assets**, navigate to a folder and select multiple assets.
 2. Click **Bulk Metadata Edit** from the top rail.
 3. On this Edit metadata page, edit the following fields in **Properties** panel. 
     * **Status:** The status categorizes assets based on their review status. Select: 
