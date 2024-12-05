@@ -25,9 +25,9 @@ Learn how to [view and download static renditions](#view-and-download-static-ren
 
 To see the asset renditions and download them, follow these steps:
 
-1. On Assets View, click **Assets**, navigate to a folder, select an asset, and click **Details** in the top rail.
-1. Click the rendition's icon from the right to access the **Renditions** panel.
-1. Select a rendition to preview it, then click ![download icon](/help/assets/assets/download-icon.svg) to download it. 
+1. On Assets View, click **Assets**, navigate to a folder, select an asset, and click **Details**.
+1. Click the rendition's icon available in the right pane. 
+1. Select a rendition to preview it, and click ![download icon](/help/assets/assets/download-icon.svg) to download it. 
 
 ![](/help/assets/assets/view-download-static-rendition-icon.png)
 
