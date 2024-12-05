@@ -7,7 +7,7 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 ---
 
-# Navigate the Cloud Manger UI {#navigation}
+# Navigate the Cloud Manager UI {#navigation}
 
 Learn how the Cloud Manager UI is organized and how to navigate to manage your programs and environments.
 
@@ -243,7 +243,7 @@ See also [Manage Environments](/help/implementing/cloud-manager/manage-environme
 
 ### Pipelines card {#pipelines}
 
-The **Pipelines** card gives you an overview of your pipelines as well as links for quick actions.
+The **Pipelines** card gives you an overview of your pipelines and links for quick actions.
 
 The **Pipelines** card only lists three pipelines. Click **Show All** to see all pipelines of the program.
 

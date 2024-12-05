@@ -14,7 +14,7 @@ With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow 
 >
 >Content Fragments can be accessed from two consoles: **Content Fragments** and **Assets**.
 >
->There are also two editors available for Content Fragments. (Both editors are accessible from both consoles.)
+>There are also two editors for authoring Content Fragments; although the basic functionality is the same, there are some differences. Both editors are accessible from both consoles.
 >
 >This section deals with the **Content Fragments** console and the *new* Content Fragment editor. These have been developed for headless content delivery (though they can be used for all scenarios)
 >

@@ -34,7 +34,7 @@ Before you begin adding a custom function to your Adaptive Forms, ensure you hav
 * **Git:** This version control system is required for managing code changes. If you do not have it installed, download it from https://git-scm.com.
 
 
-## Create a custom function {#create-custom-function}
+## Create a custom function
 
 Create a client library to call custom functions in the rule editor. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 

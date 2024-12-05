@@ -1,6 +1,6 @@
 ---
 title: Model Definitions, Fields, and Component Types
-description: Learn about fields and the component types that the Universal Editor can edit in the properties rail with examples. Understand how you can instrument your own app by creating a model definition and linking to the component.
+description: Learn about fields and the component types that the Universal Editor can edit in the properties panel with examples. Understand how you can instrument your own app by creating a model definition and linking to the component.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
@@ -8,11 +8,11 @@ role: Admin, Architect, Developer
 
 # Model Definitions, Fields, and Component Types {#field-types}
 
-Learn about fields and the component types that the Universal Editor can edit in the properties rail with examples. Understand how you can instrument your own app by creating a model definition and linking to the component.
+Learn about fields and the component types that the Universal Editor can edit in the properties panel with examples. Understand how you can instrument your own app by creating a model definition and linking to the component.
 
 ## Overview {#overview}
 
-When adapting your own apps for use with the Universal Editor, you must instrument the components and define what fields and component types they can manipulate in the properties rail of the editor. You do this by creating a model and linking to that from the component.
+When adapting your own apps for use with the Universal Editor, you must instrument the components and define what fields and component types they can manipulate in the properties panel of the editor. You do this by creating a model and linking to that from the component.
 
 This document provides an overview of a model definition and of fields and the component types available to you along with example configurations.
 
@@ -22,7 +22,7 @@ This document provides an overview of a model definition and of fields and the c
 
 ## Model Definition Structure {#model-structure}
 
-In order to configure a component via the properties rail in the Universal Editor, a model definition has to exist and be linked to the component.
+In order to configure a component via the properties panel in the Universal Editor, a model definition has to exist and be linked to the component.
 
 The model definition is a JSON structure, starting with an array of models.
 
@@ -30,7 +30,7 @@ The model definition is a JSON structure, starting with an array of models.
 [
   {
     "id": "model-id",        // must be unique
-    "fields": []             // array of fields which shall be rendered in the properties rail
+    "fields": []             // array of fields which shall be rendered in the properties panel
   }
 ]
 ```
@@ -133,7 +133,7 @@ An AEM tag component type enables an AEM tag picker, which can be used to attach
 
 #### AEM Content {#aem-content}
 
-An AEM content component type type enables an AEM content picker, which can be used to set content references. It offers an additional validation type.
+An AEM content component type enables an AEM content picker, which can be used to select any AEM resource. Unlike the [reference component,](#reference) which can only select assets, the AEM content component can reference any AEM content. It offers an additional validation type.
 
 |Validation Type|Value Type|Description|Required|
 |---|---|---|---|
@@ -630,6 +630,8 @@ A radio group component type allows for a mutually-exclusive selection from mult
 >[!ENDTABS]
 
 #### Reference {#reference}
+
+An reference component type enables an AEM asset picker, which can be used to select any AEM asset to reference. Unlike the [AEM content component,](#aem-content) which can select any AEM resource, the reference component can only reference assets. It offers an additional validation type.
 
 A reference component type allows for a reference to another data object from the current object.
 
