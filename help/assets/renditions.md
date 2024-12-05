@@ -29,7 +29,7 @@ To see the asset renditions and download them, follow these steps:
 1. Click the rendition's icon available in the right pane. 
 1. Select a rendition to preview it, and click ![download icon](/help/assets/assets/download-icon.svg) to download it. 
 
-![](/help/assets/assets/view-download-static-rendition-icon.png)
+   ![View and download Dynamic renditions](/help/assets/assets/view-download-static-rendition.png)
 
 ## Dynamic renditions {#dynamic-renditions}
 
