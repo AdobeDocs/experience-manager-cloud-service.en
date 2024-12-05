@@ -7,7 +7,27 @@ role: Admin
 
 # Customer Managed Keys Setup for AEM as a Cloud Service {#cusomer-managed-keys-for-aem-as-a-cloud-service}
 
-AEM allows you to bring your own encryption keys for encrypting data at rest. This guide provides steps for setting up a customer managed key (CMK) in Azure Key Vault for AEM as a Cloud Service.
+AEM as a Cloud Service currently stores customer data in Azure Blob Storage and MongoDB, utilizing provider-managed encryption keys by default to secure data. While this setup meets the security needs of many organizations, businesses in regulated industries or those requiring enhanced data sovereignty may seek greater control over their encryption practices. For organizations that prioritize data security, compliance, and the ability to manage their encryption keys, the Customer-Managed Keys (CMK) solution offers a critical enhancement.
+
+## The Problem Being Solved {#the-problem-being-solved}
+
+Provider managed keys can create concerns for businesses in sectors such as finance, healthcare, and government, where strict regulations demand comprehensive control over data security. Without control over key management, organizations face challenges in meeting compliance requirements, implementing custom security policies, and ensuring complete data sovereignty.
+
+The introduction of Customer-Managed Keys (CMK) addresses these concerns by empowering AEM customers with full control over their encryption keys. By using Azure Private Link, AEM CS securely connects to the customer's Azure Key Vault, allowing them to manage the lifecycle of their encryption keys—covering key creation, rotation, and revocation.
+
+CMK provides several advantages:
+
+* **Enhanced Security:** Customers can ensure their encryption practices meet specific security requirements, giving them peace of mind over data protection.
+* **Compliance Flexibility:** With full control over the key lifecycle, businesses can easily adapt to evolving regulatory standards such as GDPR, HIPAA, or CCPA, ensuring their compliance posture remains strong.
+* **Seamless Integration:** The CMK solution integrates directly with Azure Blob Storage and MongoDB in AEM CS, ensuring no disruption to storage operations or usability while providing customers with powerful encryption capabilities.
+
+By adopting CMK, customers can increase control over their data security and encryption practices, enhancing compliance and mitigating risks, all while continuing to enjoy the scalability and flexibility of AEM CS.
+
+AEM as a Cloud Service allows you to bring your own encryption keys for encrypting data at rest. This guide provides steps for setting up a customer managed key (CMK) in Azure Key Vault for AEM as a Cloud Service.
+
+>[!WARNING]
+>
+>After setting up CMK, you cannot revert to system-managed keys. You are responsible for securely managing your keys and providing access to your Key Vault, Key, and CMK app within Azure to prevent losing access to your data.
 
 You will also be guided through the following steps for creating and configuring the required infrastructure:
 
@@ -141,6 +161,12 @@ $tenantId=(az keyvault show --name $keyVaultName `
 $subscriptionId="<Subscription ID>"
 ```
 
+
+## Implications of Revoking Key Access {#implications-of-revoking-key-access}
+
+Revoking or disabling access to the Key Vault, key, or CMK app can result in significant disruptions, that include breaking changes to your Platform's operations. Once these keys are disabled, data in Platform may become inaccessible, and any downstream operations that rely on this data will cease to function. It is crucial to fully understand the downstream impacts before making any changes to your key configurations.
+
+If you decide to revoke Platform access to your data, you can do so by removing the user role associated with the application from the Key Vault within Azure.
 
 ## Next steps {#next-steps}
 
