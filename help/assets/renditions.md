@@ -34,7 +34,7 @@ To see the asset renditions and download them, follow these steps:
 ## Dynamic renditions {#dynamic-renditions}
 
 Dynamic renditions are customized versions of assets created in real-time to meet specific needs, such as resizing images based on device resolution or cropping to fit different aspect ratios.
-These renditions enable organizations to deliver personalized and optimized experiences to diverse audience needs. You can view and download dynamic renditions in [!DNL Experience Manager Assets].
+These renditions enable organizations to deliver personalized and optimized experiences to diverse audience needs. You can view and download dynamic renditions in Experience Manager Assets.
 
 ## Dynamic Media renditions {#dynamic-media-renditions}
 
