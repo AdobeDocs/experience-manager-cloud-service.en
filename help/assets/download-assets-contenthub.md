@@ -82,6 +82,8 @@ To download multiple licensed assets, execute the following steps:
 
 1. Select **I have read and accepted the terms & conditions mentioned above**, and then click **Download**.
 
+    To view terms & conditions of a licensed asset, see optional steps mentioned in [Download single licensed asset](#download-licensed-asset).
+
 1. Select from [various download options to begin download](#download-multiple-assets). You can download the original asset or [renditions](/help/assets/download-assets-content-hub.md#renditions-content-hub) available for the selected assets.
 
 <!--1. On the Content Hub homepage, select the asset and click **Download**. The **Download assets** dialog box displays a license or list of licenses associated with the selected assets in the left pane. 
