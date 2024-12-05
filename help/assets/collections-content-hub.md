@@ -12,6 +12,12 @@ exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
 <!-- ![Manage collections](assets/manage-collections.jpg) -->
 ![Manage collections](assets/manage-collection.png)
 
+>[!AVAILABILITY]
+>
+>Content Hub guide is now available in PDF format. Download the entire guide and use Adobe Acrobat AI Assistant to answer your queries. 
+>
+>[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+
 A collection refers to a set of assets that can be shared among users. A collection can include assets from different locations while maintaining their referential integrity.
 
 [!DNL Content Hub] lets you create public collections. These collections are accessible to all the entitled users, creating a shared space where multiple users can efficiently access and utilize content. Collections promote collaborative use of resources for increased efficiency and convenience. Within the collection browse page, you can: 

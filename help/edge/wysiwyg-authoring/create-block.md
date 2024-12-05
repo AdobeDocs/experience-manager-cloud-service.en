@@ -159,7 +159,7 @@ Now that your basic quote block is defined and committed to the sample project, 
 
    * In order to load the page, you may need to tap or click **Sign in with Adobe** to authenticate to AEM in the Universal Editor.
 
-1. In the Universal Editor, select a section. In the properties rail, tap or click the **Add** icon and then select your new **Quote** block from the menu.
+1. In the Universal Editor, select a section. In the properties panel, tap or click the **Add** icon and then select your new **Quote** block from the menu.
 
    * The **Add** icon is a plus symbol.
    * You know that you have selected a section if the blue outline of the selected object has a tab labeled **Section**.
@@ -169,7 +169,7 @@ Now that your basic quote block is defined and committed to the sample project, 
 
 1. The page is reloaded and the quote block is added to the bottom of the selected section with the default content specified in the `component-definitions.json` file.
 
-   * The quote block can be selected and edited as any other block either in-place or in the properties rail.
+   * The quote block can be selected and edited as any other block either in-place or in the properties panel.
    * Styling is be applied in a further step.
 
    ![The page with the new quote block in the selected section](assets/create-block/quote-added.png)
@@ -322,8 +322,6 @@ By adding a `classes` property to the block, the property rendered in the table 
 This guide had you commit directly to the `main` branch for simplicity's sake. For experimentation in a sample repository, this is usually not an issue. For actual project work, [you should follow development best practices](https://www.aem.live/docs/dev-collab-and-good-practices) by developing on a different branch and reviewing all changes via pull request before merging to `main`.
 
 When you are not developing on the `main` branch, you can append `?ref=<branch>` in the Universal Editor location bar to load the page from your branch. `<branch>` is the branch name as it would be used for your project's preview or live URLs, e.g. `https://<branch>--<repo>--<owner>.hlx.page`.
-
-Publishing content with a new model is only supported when the model is merged to the `main` branch.
 
 ## Reusing Your Blocks for Document-Based Authoring {#reusing-blocks}
 
