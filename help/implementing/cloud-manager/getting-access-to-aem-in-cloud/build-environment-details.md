@@ -49,12 +49,14 @@ As a result of this security enhancement, some users may face issues during the 
 
 To ensure a smooth experience with the updated version, Adobe recommends that users update their Maven repositories to use HTTPS instead of HTTP. This adjustment aligns with the industry's growing shift towards secure communication protocols and helps maintain a secure and reliable build process.
 
-<!-- OLD --> 
+<!-- OLD below -->
+
 ### Use a specific Java version
 
 The Cloud Manager build process uses the Oracle 8 JDK to build projects by default, but AEM Cloud Service customers should set the Maven execution JDK version to 11.
 
-<!-- OLD --> 
+<!-- OLD below --> 
+
 #### Set the Maven JDK version
 
 Adobe recommends that you set the JDK version for the entire Maven execution to `11` in a `.cloudmanager/java-version file`.
