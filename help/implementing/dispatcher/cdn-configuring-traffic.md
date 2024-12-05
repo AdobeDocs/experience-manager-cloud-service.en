@@ -287,7 +287,7 @@ data:
           like: status-code
         actions:
           - type: set
-            respProperty: code
+            respProperty: status
             value: '410'        
 
 ```
@@ -299,7 +299,7 @@ Explained in the table below are the available actions.
 | Name      | Properties               | Meaning     |
 |-----------|--------------------------|-------------|
 | **set** |reqHeader, value|Sets a specified header to a given value in the response.|
-|          |respProperty, value|Sets the response status code.|
+|          |respProperty, value|Sets a response property. Supports just the property "status" in order to set the status code.|
 | **unset** |respHeader|Removes a specified header from the response.|
 
 ## Origin Selectors {#origin-selectors}
