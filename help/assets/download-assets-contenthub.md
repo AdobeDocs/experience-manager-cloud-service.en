@@ -20,7 +20,7 @@ exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
 
 The Content Hub lets you download and share your assets. The Content Hub UI displays approved assets. These assets may include images, videos, or any other digital content. The Content Hub enhances accessibility and adaptability for effective asset distribution.  
 
-You can download a single asset or multiple assets using the Content Hub. The original versions of the asset are downloaded.
+You can download a single asset or multiple assets or the available renditions of asset(s) using the Content Hub.
 
 ## Download single asset {#download-single-asset} 
 
@@ -41,9 +41,9 @@ To download multiple assets, execute the following steps:
 1. [Optional] You can manually exclude the assets, if required. The download button reflects the count of selected items. 
 1. Select from the various download options to begin download:
 
-    * **Download [!UICONTROL Original]**: Select this option to download the assets in its original form as a zip folder.
-    * **Download [!UICONTROL Only renditions]**: A rendition is the binary version of an asset, which has a primary representation (the uploaded file). An asset can have multiple representations. This option lets you download all the renditions of the selected assets. All the available renditions of the selected assets are downloaded as a zip folder.
-    * **Download [!UICONTROL Originals + all renditions]**: Select this option to download both original and renditions of the selected assets as a zip folder. 
+    * **Download [!UICONTROL Original]**: Select this option to download the selected assets in the original form.
+    * **Download [!UICONTROL Renditions only]**: A rendition is the customized version of digital assets, such as images, documents, and so on designed for different devices and platforms to ensure optimal performance. An asset can have multiple renditions. This option lets you download all the available renditions of the selected assets, if available.
+    * **Download [!UICONTROL Originals & All renditions]**: Select this option to download both original and renditions of the selected assets. 
 
     ![Download multiple renditions](/help/assets/assets/download-multiple-renditions.png)
     
@@ -54,7 +54,7 @@ To download a licensed asset displayed on the asset, execute the following steps
 1. On the Content Hub homepage, click the asset.
 1. Click ![download](/help/assets/assets/download-icon.svg) in the right pane. The **Download** panel displays the asset renditions.
 ![single-download-dialog-box](/help/assets/assets/asset-dialog-box-for-single-download.png) 
-1. Click the rendition to preview it. 
+1. [optional] Click the rendition to preview it. 
 1. Click the terms and conditions link to display the license PDF of the asset. The license PDF displays only if it is approved in your Assets as a Cloud Service Environment. [Approve the license PDF](/help/assets/approve-assets-content-hub.md) of the asset before downloading to see its preview in the dialog box.
 1. Select **I have read and accepted the terms & conditions for this asset**, and then click **Download** to download the asset.
 
