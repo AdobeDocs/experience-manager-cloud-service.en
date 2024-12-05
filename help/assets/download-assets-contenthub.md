@@ -54,7 +54,7 @@ To download a licensed asset displayed on the asset, execute the following steps
 1. On the Content Hub homepage, click the asset.
 1. Click ![download](/help/assets/assets/download-icon.svg) in the right pane. The **Download** panel displays the asset renditions.
 ![single-download-dialog-box](/help/assets/assets/asset-dialog-box-for-single-download.png) 
-1. [optional] Click the rendition to preview it. 
+1. [discuss] Click the rendition to preview it. 
 1. Click the terms and conditions link to display the license PDF of the asset. The license PDF displays only if it is approved in your Assets as a Cloud Service Environment. [Approve the license PDF](/help/assets/approve-assets-content-hub.md) of the asset before downloading to see its preview in the dialog box.
 1. Select **I have read and accepted the terms & conditions for this asset**, and then click **Download** to download the asset.
 
@@ -89,7 +89,7 @@ The dialog box that displays depends on whether the download list includes expir
 1. Click  ![remove-icon](/help/assets/assets/remove-icon.svg) to remove a license from the download dialog box. 
 
 1. Accept the terms and conditions and then click **Download** to download assets associated with the available licenses in the left pane.-->
-![download-multiple-license](/help/assets/assets/download-multiple-license1.png)
+![download-multiple-license](/help/assets/assets/download-multiple-license.png)
 
 <!---
 ### Download non-licensed Assets {#download-non-licensed-assets}
