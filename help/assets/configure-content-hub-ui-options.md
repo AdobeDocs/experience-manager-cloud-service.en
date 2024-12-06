@@ -68,6 +68,8 @@ As an administrator, manage the following configuration options for your users:
 
 * [Expired Assets](#expired-assets-content-hub)
 
+* [Renditions](#renditions-content-hub)
+
 * [Custom Links](#configure-custom-links-content-hub)
 
 ### Import {#configure-import-options-content-hub}
@@ -159,7 +161,6 @@ You can also configure the key metadata fields that you need to display on the *
 
 Similarly, click ![edit](/help/assets/assets/edit-content-hub.svg) that is available next to each available property, to make any required modifications or click ![delete](/help/assets/assets/delete-content-hub.svg) to delete any existing metadata property. Click **Save** after making all modifications to apply the changes.
 
-
 ### Search {#configure-metadata-search-content-hub}
 
 Administrators can define the metadata fields that are searched when a user specifies a search criteria on Content Hub. Execute the following steps:
@@ -217,6 +218,23 @@ If the administrator has enabled download, the Content Hub users can also downlo
 
 If the visibility of expired assets is enabled, Content Hub also highlights assets expiring within the next 15 days using the `Expiring in n days` message on the Asset Card.
 
+### Renditions {#renditions-content-hub}
+
+Renditions are customized versions of digital assets, such as images, documents, and so on designed for different devices and platforms to ensure optimal performance. See more about [renditions in Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+
+Content Hub allows downloading static renditions. Static renditions are different representations of an asset's original file that are generated natively. Examples include thumbnails or mobile optimized renditions. Administrators can manage and control the availability of asset renditions; and manage whether you can download original assets or not.
+
+To do so, execute the following steps:
+
+On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Renditions]**. The following options are available:
+
+* Enable  the [!UICONTROL Enable availability of static renditions] toggle to make all static renditions visible on Content Hub.
+
+* Enable or disable **[!UICONTROL Allow users to download original assets]** toggle to control the availability to download original assets.
+
+   ![Configure renditions on Content Hub](assets/config-renditions.png)
+
+For information on how to view and download static renditions in Content Hub, see [download assets in Content Hub](/help/assets/download-assets-content-hub.md).
 
 ### Custom Links {#configure-custom-links-content-hub}
 
