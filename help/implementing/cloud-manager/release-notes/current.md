@@ -17,17 +17,20 @@ Learn about the release of Cloud Manager 2024.12.0 in AEM (Adobe Experience Mana
 
 The release date for Cloud Manager 2024.12.0 in AEM as a Cloud Service is Thursday, December 5, 2024. 
 
-The next planned release is January 2024.
+The next planned release is January 23, 2025.
+ 
 
 ## What's new {#what-is-new}
 
-* **Java 21 support:** Customers can now optionally build with Java 17 or Java 21, benefiting from performance improvements and new language features. See [Build environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) for configuration steps, including updating your Maven project description, and certain library versions. When the build version is set to Java 17 or Java 21, the runtime defaults to Java 21.
+<!-- * **Java 21 support:** Customers can now optionally build with Java 17 or Java 21, benefiting from performance improvements and new language features. See [Build environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) for configuration steps, including updating your Maven project description, and certain library versions. When the build version is set to Java 17 or Java 21, the runtime defaults to Java 21.
 
-    Starting February 2025, sandboxes and dev environments upgrade to the Java 21 runtime, regardless of the build version (Java 8, 11, 17, or 21). Production environments follow with an upgrade in April 2025.
+    Starting February 2025, sandboxes and dev environments upgrade to the Java 21 runtime, regardless of the build version (Java 8, 11, 17, or 21). Production environments follow with an upgrade in April 2025. -->
 
 * **A record types:** Support for A record types has been added to improve Go Live Readiness for domains using CDN configurations in AEM Cloud Manager. You now have the option to go live by adding either a CNAME record type or an A record type representing Fastly's IPs, simplifying domain routing. This enhancement eliminates the restriction of relying solely on CNAME records for domain setup with Fastly.
 
     See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). <!-- CMGR-63076 -->
+
+<!-- * The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. -->
 
 * **Add multiple domains to an Edge Delivery Site:** You can now add multiple domains, including both apex and non-apex domains, to an Edge Delivery Site (EDS) in AEM Cloud Manager. This enhancement resolves prior limitations that restricted the ability to associate multiple domains with an EDS origin. The update ensures better flexibility for managing domain configurations and simplifies the Go Live processes for sites with complex domain setups. <!-- CMGR-63007 -->
 
