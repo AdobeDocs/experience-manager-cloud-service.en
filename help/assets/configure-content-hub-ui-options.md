@@ -226,7 +226,7 @@ Content Hub allows downloading static renditions. Static renditions are differen
 
 To do so, execute the following steps:
 
-On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Renditions]**. The following permissions are available:
+On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Renditions]**. The following options are available:
 
 * Enable  the [!UICONTROL Enable availability of static renditions] toggle to make all static renditions visible on Content Hub.
 
