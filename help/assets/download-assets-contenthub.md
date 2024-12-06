@@ -39,9 +39,6 @@ To download an asset and its renditions, execute the following steps:
    ![Download single asset renditions](/help/assets/assets/download-single-asset-renditions.png)
 
 
-
-   If you select multiple renditions, the download is available as a ZIP file.
-
 If you are downloading a licensed asset, select **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** and then click **[!UICONTROL Download]**. You can also click **[!UICONTROL terms & conditions]** to view the asset license. The preview of the license displays only if the asset is approved using Assets as a Cloud Service authoring environment. For more information, see [Manage licensed assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
 ## Download multiple assets and their renditions {#download-multiple-assets-renditions} 
