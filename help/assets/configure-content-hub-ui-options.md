@@ -15,6 +15,7 @@ exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
 >additional-url="https://images-tv.adobe.com/mpcv3/4477/74a81d1c-0cfe-41f4-8a06-18ff70604e45_1732023385.854x480at800_h264.mp4" text="Watch Video"
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
+
 ![Configure assets on Content Hub](assets/configure-assets.png)
 
 >[!AVAILABILITY]
