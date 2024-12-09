@@ -144,7 +144,7 @@ You must add the necessary JavaScript library to the page component of the WKND 
 1. Add the JavaScript library to the end of the file.
 
    ```html
-   <script src="https://universal-editor-service.adobe.io.cors.js"></script>
+   <script src="https://universal-editor-service.adobe.io/cors.js" async></script>
    ```
 
 1. Click **Save All** and then reload the Universal Editor.
