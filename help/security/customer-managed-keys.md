@@ -175,6 +175,8 @@ Contact Adobe and share:
 * The name of your encryption key. You have created the key in a previous step and saved it in the `$keyName` variable.
 * The `$resourceGroup`, `$subscriptionId` and `$tenantId` which are required to setup private endpoints.
 
+<!-- Alexandru: hiding this for now
+
 ### Private Link Approvals {#private-link-approvals}
 
 >[!TIP]
@@ -184,7 +186,7 @@ Afterwards, an Adobe Engineer assigned to you will contact you to confirm the cr
 
 `mongodb-atlas-<REGION>-<NUMBER>`, `storage-account-private-endpoint` and `backup-storage-account-private-endpoint`. 
 
-Notify the Adobe Engineer once this process is complete and the Private Endpoints show up as **Approved**.
+Notify the Adobe Engineer once this process is complete and the Private Endpoints show up as **Approved**. -->
 
 ## Customer Managed Keys in Private Beta {#customer-managed-keys-in-private-beta}
 
