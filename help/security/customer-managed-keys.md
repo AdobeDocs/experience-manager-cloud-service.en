@@ -15,7 +15,7 @@ AEM as a Cloud Service currently stores customer data in Azure Blob Storage and 
 
 Provider managed keys can create concerns for businesses in sectors such as finance, healthcare, and government, where strict regulations demand comprehensive control over data security. Without control over key management, organizations face challenges in meeting compliance requirements, implementing custom security policies, and ensuring complete data sovereignty.
 
-The introduction of Customer-Managed Keys (CMK) addresses these concerns by empowering AEM customers with full control over their encryption keys. By using Azure Private Link, AEM CS securely connects to the customer's Azure Key Vault, allowing them to manage the lifecycle of their encryption keys—covering key creation, rotation, and revocation.
+The introduction of Customer-Managed Keys (CMK) addresses these concerns by empowering AEM customers with full control over their encryption keys. By authenticating via Microsoft Entra ID (formerly Azure Active Directory), AEM CS securely connects to the customer's Azure Key Vault, allowing them to manage the lifecycle of their encryption keys—covering key creation, rotation, and revocation.
 
 CMK provides several advantages:
 
@@ -73,7 +73,7 @@ If you already have a resource group, feel free to use it instead. In the rest o
 
 ## Create a Key Vault {#create-a-key-vault}
 
-You will need to create a key vault to contain your encryption key. The key vault must have purge protection enabled. Purge protection is necessary for encrypting data at rest from other Azure services. Public network access is disabled and all the communication will go through Private Endpoints that Adobe will configure for you at a later step.
+You will need to create a key vault to contain your encryption key. The key vault must have purge protection enabled. Purge protection is necessary for encrypting data at rest from other Azure services. Public network access must be enabled, too, to ensure that the Adobe tenant can access the key vault.
 
 >[!IMPORTANT]
 >The creation of the Key Vault with Public Network Access disabled enforces that all Key Vault related operations, such as Key Creation or Rotation have to be executed from an environment that has network access to the KeyVault - for example, a VM that can access the KeyVault.
@@ -154,7 +154,7 @@ $keyVaultUri=(az keyvault show --name $keyVaultName `
     --query properties.vaultUri `
     --output tsv)
 
-# In addition we would need the tenantId and the subscriptionId in order to setup the private endpoints.
+# In addition we would need the tenantId and the subscriptionId in order to setup the connection.
 $tenantId=(az keyvault show --name $keyVaultName `
     --resource-group $resourceGroup `
     --query properties.tenantId `
@@ -175,7 +175,7 @@ Contact Adobe and share:
 
 * The URL of your key vault. You retrieved it in this step and saved it in the `$keyVaultUri` variable.
 * The name of your encryption key. You have created the key in a previous step and saved it in the `$keyName` variable.
-* The `$resourceGroup`, `$subscriptionId` and `$tenantId` which are required to setup private endpoints.
+* The `$resourceGroup`, `$subscriptionId` and `$tenantId` which are required to setup the connection to the key vault.
 
 <!-- Alexandru: hiding this for now
 
