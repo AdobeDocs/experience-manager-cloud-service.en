@@ -37,7 +37,6 @@ You will also be guided through the following steps for creating and configuring
 1. Create a key kault
 1. Grant Adobe access to the key kault
 1. Create an encryption key
-1. Approve Private Endpoint Connections.
 
 You will need to share the key vault URL, the encryption key name and information about the key vault with Adobe.
 
@@ -187,3 +186,8 @@ Afterwards, an Adobe Engineer assigned to you will contact you to confirm the cr
 
 Notify the Adobe Engineer once this process is complete and the Private Endpoints show up as **Approved**.
 
+## Customer Managed Keys in Private Beta {#customer-managed-keys-in-private-beta}
+
+The Engineering team at Adobe is currently working on an enhanced implementation of CMK leveraging Azure's Private Link. The new implementation will allow sharing your key through the Azure backbone thanks to a direct Private Link connection between Adobe's tenant and your Key Vault.
+
+This enhanced implementation is currently in Private Beta, and can be enabled for selected customers who agree to subscribe to the Private Beta program and work closely with Adobe Engineering. If you are interested in the Private Beta for CMK using Private Link, please contact Adobe for further information.
