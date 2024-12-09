@@ -176,7 +176,7 @@ Now that your basic quote block is defined and committed to the sample project, 
 
 1. Once you are satisfied with the content of your quote, you can publish the page by tapping or clicking the **Publish** button in the toolbar of the Universal Editor.
 
-1. Verify that the content was published by navigating to the published page. The link will be similar to `https://<branch>--<repo>--<owner>.hlx.page`
+1. Verify that the content was published by navigating to the published page. The link will be similar to `https://<branch>--<repo>--<owner>.aem.page`
 
    ![The published quote](assets/create-block/quote-published.png)
 
@@ -267,7 +267,7 @@ export default function decorate(block) {
 
    ![The styled quote block in the Universal Editor](assets/create-block/quote-styled.png)
 
-8&period; Verify that the changes were pushed to production by navigating to the published page. The link will be similar to `https://<branch>--<repo>--<owner>.hlx.page`
+8&period; Verify that the changes were pushed to production by navigating to the published page. The link will be similar to `https://<branch>--<repo>--<owner>.aem.page`
 
    ![The published and styled quote block](assets/create-block/quote-styled-published.png)
 
@@ -321,7 +321,7 @@ By adding a `classes` property to the block, the property rendered in the table 
 
 This guide had you commit directly to the `main` branch for simplicity's sake. For experimentation in a sample repository, this is usually not an issue. For actual project work, [you should follow development best practices](https://www.aem.live/docs/dev-collab-and-good-practices) by developing on a different branch and reviewing all changes via pull request before merging to `main`.
 
-When you are not developing on the `main` branch, you can append `?ref=<branch>` in the Universal Editor location bar to load the page from your branch. `<branch>` is the branch name as it would be used for your project's preview or live URLs, e.g. `https://<branch>--<repo>--<owner>.hlx.page`.
+When you are not developing on the `main` branch, you can append `?ref=<branch>` in the Universal Editor location bar to load the page from your branch. `<branch>` is the branch name as it would be used for your project's preview or live URLs, e.g. `https://<branch>--<repo>--<owner>.aem.page`.
 
 ## Reusing Your Blocks for Document-Based Authoring {#reusing-blocks}
 
