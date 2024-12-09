@@ -3,6 +3,8 @@ title: Customer Managed Keys for AEM as a Cloud Service
 description: Learn how to manage encryption keys for AEM as a Cloud Service
 feature: Security
 role: Admin
+hide: yes
+hidefromtoc: yes
 ---
 
 # Customer Managed Keys Setup for AEM as a Cloud Service {#cusomer-managed-keys-for-aem-as-a-cloud-service}
