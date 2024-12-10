@@ -68,6 +68,27 @@ curl  --location 'https://admin.hlx.page/config/<your-github-org>.json' \
 --header 'x-auth-token: <your-token>'
 ```
 
+If the configuration service is set up properly, JSON similar to the following will be returned.
+
+```json
+{
+  "title": "<your-github-org>",
+  "description": "Your GitHub Org",
+  "lastModified": "2024-11-14T12:14:04.230Z",
+  "created": "2024-11-14T12:13:37.032Z",
+  "version": 1,
+  "users": [
+    {
+      "email": "justthisguyyouknow@adobe.com",
+      "roles": [
+        "admin"
+      ],
+      "id": "<your-id>"
+    }
+  ]
+}
+```
+
 Reach out to Adobe via your project Slack channel or raise a support issue if your configuration service is not enabled. Once you have your token and verified that the configuration service is enabled, you can continue the configuration.
 
 1. Check that your content source is set up properly.
@@ -103,7 +124,7 @@ Once the public configuration is created, you can access it via a URL similar to
 
 To set up access control, you need to provide the technical account.
 
-1. Create a new page at the root of your site and choose the  [Configuration template.](/help/edge/wysiwyg-authoring/tabular-data.md#other)
+1. Create a new page at the root of your site and choose the [**Configuration** template.](/help/edge/wysiwyg-authoring/tabular-data.md#other)
    * You can leave the configuration empty with only the predefined `key` and `value` columns. You only need to create it.
 1. Create a mapping in the public configuration to the site configuration using a cURL command similar to the following.
    ```text
