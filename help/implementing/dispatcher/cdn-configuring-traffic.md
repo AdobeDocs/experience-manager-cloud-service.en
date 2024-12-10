@@ -238,7 +238,7 @@ data:
 
 ## Response Transformations {#response-transformations}
 
-Response transformation rules allow you to set and unset headers of the CDN's outgoing responses. Also, see the example above for referencing a variable previously set in a request transformation rule.
+Response transformation rules allow you to set and unset headers of the CDN's outgoing responses. Also, see the example above for referencing a variable previously set in a request transformation rule. The response's status code can also be set.
 
 Configuration example:
 
@@ -280,6 +280,15 @@ data:
           - type: set
             respHeader: x-resp-header-2
             value: value-set-by-resp-rule-2
+      # Example: setting status code
+      - name: status-code-rule
+        when:
+          reqProperty: path
+          like: status-code
+        actions:
+          - type: set
+            respProperty: status
+            value: '410'        
 
 ```
 
@@ -290,6 +299,7 @@ Explained in the table below are the available actions.
 | Name      | Properties               | Meaning     |
 |-----------|--------------------------|-------------|
 | **set** |reqHeader, value|Sets a specified header to a given value in the response.|
+|          |respProperty, value|Sets a response property. Supports just the property "status" in order to set the status code.|
 | **unset** |respHeader|Removes a specified header from the response.|
 
 ## Origin Selectors {#origin-selectors}

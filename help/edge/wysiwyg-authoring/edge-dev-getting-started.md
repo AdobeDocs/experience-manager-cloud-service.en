@@ -174,7 +174,7 @@ Once you are finished editing your new site using the Universal Editor, you can 
 
 1. Open a new tab in the same browser and navigate to the URL of your new site.
 
-   * `https://main--<repository-name>--<owner>.hlx.page`
+   * `https://main--<repository-name>--<owner>.aem.page`
 
 1. See your content published.
 
