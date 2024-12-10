@@ -43,7 +43,7 @@ This document assumes that you have already created a basic localized site struc
 /content/wknd/de/en
 ```
 
-Content in `language-masters` is the source of Live Copies for the localized sites, Germany (`de`) and Switzerland (`ch`). The goal of this document is to create Edge Delivery Services sites for each localized site that all use the same code base.
+Content in `language-masters` is the source of Live Copies for the localized sites: Germany (`de`) and Switzerland (`ch`). The goal of this document is to create Edge Delivery Services sites that all use the same code base for each localized site.
 
 ## Configuration {#configuration}
 
@@ -163,7 +163,7 @@ For this example, we will create the site `wknd-ch` for the Swiss presence of wk
    }'
    ```
 
-1. Verify that the public configuration of your new site is working by calling `https://main--wknd--<your-github-org>.aem.page/config.json` and verifying the content of the returned JSON.
+1. Verify that the public configuration of your new site is working by calling `https://main--wknd-ch--<your-github-org>.aem.page/config.json` and verifying the content of the returned JSON.
 
 Repeat the steps to create additional localized sites. In the case of wknd, you would need to create a `wknd-de` site for the German presence as well.
 
