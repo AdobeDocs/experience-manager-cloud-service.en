@@ -16,7 +16,7 @@ You can add your Extensions to Asset, Folder and Collection level. The added ext
 >[!IMPORTANT]
 >
 > * AEM Assets View UI Extensibility is available with [Assets Ultimate](/help/assets/assets-ultimate-overview.md).
-> * Assets View UI Extensibility is available to you as a Beta release. To get early access to Assets view UI extensibility, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+> * To get access to Assets view UI extensibility, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 > * You can provide documentation feedback by expanding Detailed Feedback options and clicking Report an issue.
 
 ## <a id="1"></a> How to access Assets View
@@ -33,7 +33,7 @@ Within Assets View, navigate to the Details page of an asset, folder or a collec
 ## Prerequisites for Adding the Extensibility Component 
 
 * [Access to Assets View](#1).
-* Access to the [Adobe app builder](https://developer.adobe.com/app-builder/docs/overview/), which is included in the [Assets Ultimate](/help/assets/assets-ultimate-overview.md) by default. 
+* Access to the [Adobe app builder](https://developer.adobe.com/app-builder/docs/overview/). 
 * Entitled to Developer of System Admin role within the Organization. See [this](https://developer.adobe.com/uix/docs/guides/get-access/) for more information.
 * Adobe IO command line tool (AIO CLI) must be installed on your local machines. This tool is essential for creating and deploying extension projects. See [this](https://developer.adobe.com/app-builder/docs/getting_started/#local-environment-set-up) for more information.
 * Good understanding of JavaScript, Node.js, and React technologies.
