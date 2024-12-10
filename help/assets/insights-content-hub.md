@@ -11,6 +11,12 @@ exl-id: 29cbe017-856d-486b-acf3-aa47dbd90f3f
 
  ![Assets insights](assets/asset-insights-banner.jpg)
 
+ >[!AVAILABILITY]
+ >
+ >Content Hub guide is now available in PDF format. Download the entire guide and use Adobe Acrobat AI Assistant to answer your queries. 
+ >
+ >[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+
 [!DNL Content Hub] provides valuable insights into assets, addressing a common challenge that marketing stakeholders often encounter - asset usage statistics used in marketing campaigns, channels, and different regions. By gaining a clear understanding of the performance and popularity of the assets, it delivers actionable insights essential for enhancing user experience.
 
 ## Prerequisites {#prerequisites}

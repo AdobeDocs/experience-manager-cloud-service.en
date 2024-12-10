@@ -25,16 +25,26 @@ The [Adobe Experience Manager page](https://experience.adobe.com/#/experienceman
 * Software Distribution and
 * Extension Manager
 
-These solutions are now moved to the main navigation under **Tools**. Additionally, new navigation elements for **Sites** and **Assets** now offer quick access to key Adobe Experience Manager features, including Assets, Collections, Sites, and Content Fragments.
+These solutions are now moved to the main navigation under **Tools**. Additionally, new navigation elements for **Sites** and **Assets** provide quick access to key Adobe Experience Manager features such as Assets, Collections, Sites, and Content Fragments. These features are available for the primary production environment that you have access to.
 
-![AEM Home page](/help/implementing/cloud-manager/assets/aem-home-author-environments.png)
+![AEM Home environments](/help/implementing/cloud-manager/assets/aem-home-author-environments.png)
 
 Serving as the central hub for Adobe Experience Manager, the AEM Home page expands to feature additional widgets and actions tailored to each user role. Fully customizable, the page lets you choose the optimal layout for your screen. Widgets can be filtered so that only selected ones appear on the main page, ensuring a personalized experience.
 
-![AEM Home page](/help/implementing/cloud-manager/assets/aem-home-custom.png)
+![AEM Home customized](/help/implementing/cloud-manager/assets/aem-home-custom.png)
 
 Widgets can also be resized and repositioned on the page to suit your needs and preferences better.
 
-![AEM Home page](/help/implementing/cloud-manager/assets/aem-home-widgets.png)
+![AEM Home widgets](/help/implementing/cloud-manager/assets/aem-home-widgets.png)
 
-The **Authoring Environments** section displays all AEM environments accessible to you, while the **Recents** section provides a list of recently visited pages tracked within the AEM system.
+The **Authoring Environments** section displays all AEM environments accessible to you, while the **Recents** section provides a list of recently visited pages tracked within the AEM systems.
+
+The navigation elements include Assets Browse, which loads the repository of the production environment accessible to the user.
+
+![AEM Home navigation elements](/help/implementing/cloud-manager/assets/aem-home-navigation.png)
+
+If no production AEM Cloud Service environments are available, the options appear dimmed (unavailable) for the user.
+
+![AEM Home no production environments](/help/implementing/cloud-manager/assets/aem-home-no-prod-environs.png)
+.
+
