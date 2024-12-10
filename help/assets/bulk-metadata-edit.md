@@ -33,6 +33,6 @@ To see the applied metadata changes to an asset, navigate to the asset details p
 
 >[!NOTE]
 >
->Status, Expiration Date, Author, Keywords and Tags are standard metadata properties irrespective of folder-specific metadata. These metadata properties display on the asset details page only if included in the metadata form applied to the asset's folder.  If you cannot see these metadata on the asset details page then edit the folder's metadata form to include them. See [Metadata in Assets View](/help/assets/metadata-assets-view.md) to learn how to create or edit a metadata form and apply it to a folder..
+>Status, Expiration Date, Author, Keywords and Tags are standard metadata properties irrespective of folder-specific metadata. These metadata properties display on the asset details page only if included in the metadata form applied to the asset's folder.  If you cannot see these metadata on the asset details page then edit the folder's metadata form to include them. See [Metadata in Assets View](/help/assets/metadata-assets-view.md) to learn how to create or edit a metadata form and apply it to a folder.
 
  
