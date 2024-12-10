@@ -54,9 +54,9 @@ maps:
 
 ```
 
-Next, in an Apache configuration file such as `rewrites/rewrite.rules` or `<yourfile>.vhost`, you must configure the map file referenced by the name property (`my.map` in the sample above).
+Next, in an Apache configuration file such as `rewrites/rewrite.rules` or `<yourfile>.vhost`, you must configure the map file referenced by the name property (`my.map` in the sample above). Once loaded, this map file is saved in the dispatcher local storage under the **fixed** location `/tmp/rewrites/`.
 
-The `RewriteMap` directive should indicate that the data is stored in a database manager (DBM) file format by using the `sdbm` (simple DBM) format.
+The `RewriteMap` directive should indicate that the data is stored in a database manager (DBM) file format by using the `sdbm` (simple DBM) format, and the full file path is derived from the storage location prefix and the name property.
 
 The rest of the configuration depends on the format of the `redirectmap.txt`. The simplest format, shown in the sample below, is a one to one mapping between the original url to the mapped url:
 
