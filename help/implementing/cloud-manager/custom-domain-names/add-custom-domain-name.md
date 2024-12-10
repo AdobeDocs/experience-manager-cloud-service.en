@@ -80,7 +80,7 @@ If you selected the certificate type *Adobe managed certificate*, complete the f
 
 To verify the domain in use, you are required to add and verify a CNAME. 
 
-A `CNAME` or A record, once provisioned, routes all Internet traffic for the domain to wherever it is pointing. If that location is not provisioned to serve the traffic, there is an outage. If it has not been tested, there may be errors in the content. This reason is why this step is always done after testing is complete and you are ready to go live.
+A `CNAME` record type or an `A` record type, once provisioned, routes all Internet traffic for the domain to wherever it is pointing. If that location is not provisioned to serve the traffic, there is an outage. If it has not been tested, there may be errors in the content. This reason is why this step is always done after testing is complete and you are ready to go live.
 
 To configure these settings, determine if a `CNAME` or apex record must be configured to point your custom domain name to the Cloud Manager domain name. The following sections of this document can help you determine which type of record is appropriate for your DNS configuration.
 
@@ -124,7 +124,7 @@ Add the following `A` records to your domain's DNS settings by way of your domai
 
 >[!TIP]
 >
->The *CNAME* or *A Record* can be set on the governing DNS server to save you time.
+>The *CNAME record* or *A record* can be set on the governing DNS server to save you time.
 
 <!--
 ![Customer managed certificate steps](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)
