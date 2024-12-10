@@ -53,7 +53,7 @@ Defining Options in a Separate Spreadsheet
 1. Preview and publish the `shared-country` sheet using [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content). 
   
    Refer to the URL which showcases the `shared-country` sheet:
-   https://main--wefinance--wkndforms.hlx.live/enquiry.json?sheet=country  
+   https://main--wefinance--wkndforms.aem.live/enquiry.json?sheet=country  
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ After integrating the URL into the form definition to load drop-down list option
 
 Refer to the URL below, which displays the `enquiry` form displaying the options saved in the separate sheet:
 
-https://main--wefinance--wkndforms.hlx.live/enquiry-form 
+https://main--wefinance--wkndforms.aem.live/enquiry-form 
 
 ## See also
 

@@ -84,7 +84,7 @@ To use Admin APIs to enable a spreadsheet to accept data:
     
     ```JSON
 
-    POST 'https://admin.hlx.page/form/{owner}/{repo}/{branch}/contact-us.json' \
+    POST 'https://admin.aem.page/form/{owner}/{repo}/{branch}/contact-us.json' \
     --header 'Content-Type: application/json' \
     --data '{
         "data": {
@@ -129,7 +129,7 @@ To use Admin APIs to enable a spreadsheet to accept data:
 
     ```JSON
 
-    curl -s -i -X POST 'https://admin.hlx.page/form/wkndforms/portal/main/contact-us.json' \
+    curl -s -i -X POST 'https://admin.aem.page/form/wkndforms/portal/main/contact-us.json' \
         --header 'Content-Type: application/json' \
         --data '{
             "data": {
@@ -176,12 +176,12 @@ After the sheet is set to receive data, you can [preview the form using Adaptive
 
 ### Use Admin APIs to send data to your sheet
 
-You can send POST requests directly to your form using hlx.page, hlx.live, or your production domain, to send data. 
+You can send POST requests directly to your form using aem.page, aem.live, or your production domain, to send data. 
 
 
 ```JSON
 
-POST https://branch–repo–owner.hlx.(page|live)/email-form
+POST https://branch–repo–owner.aem.(page|live)/email-form
 POST https://my-domain.com/email-form
 
 ```
@@ -218,7 +218,7 @@ There are a few different ways that you can format the form data in the POST bod
 
     ```JSON
 
-    curl -s -i -X POST 'https://main--portal--wkndforms.hlx.page/contact-us' \
+    curl -s -i -X POST 'https://main--portal--wkndforms.aem.page/contact-us' \
         --header 'Content-Type: application/json' \
         --data '{
         "data": [
@@ -262,7 +262,7 @@ There are a few different ways that you can format the form data in the POST bod
 
     ```JSON
 
-    curl -s -i -X POST 'https://admin.hlx.page/form/wkndforms/portal/main/contact-us.json' \
+    curl -s -i -X POST 'https://admin.aem.page/form/wkndforms/portal/main/contact-us.json' \
     --header 'Content-Type: application/json' \
     --data '{
         "data": {
@@ -294,7 +294,7 @@ There are a few different ways that you can format the form data in the POST bod
 
     curl -s -i -X POST \
       -d 'Email=kent%40wknd.com&Name=clark&Subject=Regarding+Product+Inquiry&   Message=I+have+some+questions+about+your+products.&Phone=123-456-7890& Company=Adobe+Inc.&Country=United+States&PreferredContactMethod=Email&   SubscribeToNewsletter=true' \
-      https://main--portal--wkndforms.hlx.live/contact-us
+      https://main--portal--wkndforms.aem.live/contact-us
 
     ```
 

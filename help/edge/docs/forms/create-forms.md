@@ -108,7 +108,7 @@ To proceed with form creation:
 
     For example, if your project's repository is named "portal", it's located under the account "wkndforms", and you're using the "main" branch, the URL look like the following:
 
-    `https://main--portal--wkndforms.hlx.page/enquiry.json`
+    `https://main--portal--wkndforms.aem.page/enquiry.json`
 
 
 +++
@@ -130,7 +130,7 @@ Till now, you have prepared the structure of the form. Now, to preview the form:
 
     | Form  |
     |---|
-    | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json)  |
+    | [https://main--wefinance--wkndforms.aem.live/enquiry.json](https://main--wefinance--wkndforms.aem.live/enquiry.json)  |
 
 
     ![Add Adaptive Forms Block to your webpage](/help/edge/assets/add-adaptive-forms-block.png)
@@ -146,7 +146,7 @@ Till now, you have prepared the structure of the form. Now, to preview the form:
 1. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview the document. The page now displays the form. For example, here is the form based on the [enquiry spreadsheet](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0): 
 
 
-    [![A sample EDS form](/help/edge/assets/eds-form.png)](https://main--portal--wkndforms.hlx.live/)
+    [![A sample EDS form](/help/edge/assets/eds-form.png)](https://main--portal--wkndforms.aem.live/)
 
     Now, fill the form and click the submit button, you experience an error, similar to the following, because the spreadsheet is not set to accept the data yet. 
 
