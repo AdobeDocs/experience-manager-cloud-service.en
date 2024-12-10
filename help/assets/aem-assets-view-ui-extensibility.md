@@ -11,10 +11,13 @@ exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
 | ------------- | --------------------------- |---------|----|-----|
 
 AEM Assets View has UI Extensibility capability. This capability enables users to add custom UI components to Assets View UI to meet specific business needs that the AEM Assets View's out-of-the-box functionalities do not meet. This extensibility feature enhances the flexibility of AEM Assets View that enables organizations to adapt the interface for specific workflows and requirements. 
-You can add your Extensions to Asset, Folder and Collection level. The added extension displays within a dedicated panel on the Asset's, Collection's or Folder's Details page.
+You can add your Extensions to Asset, Folder and Collection level. The added extension displays within a dedicated panel on the Asset, Collection, or Folder Details page.
 
 >[!IMPORTANT]
-> AEM Assets View UI Extensibility is available with [Assets Ultimate](/help/assets/assets-ultimate-overview.md).
+>
+> * AEM Assets View UI Extensibility is available with [Assets Ultimate](/help/assets/assets-ultimate-overview.md).
+> * To get access to Assets view UI extensibility, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+> * You can provide documentation feedback by expanding Detailed Feedback options and clicking Report an issue.
 
 ## <a id="1"></a> How to access Assets View
 
@@ -26,14 +29,11 @@ Access the Assets view in the following ways:
 Within Assets View, navigate to the Details page of an asset, folder or a collection. This Details page has a dedicated panel that displays the added UI Extension.
 ![my workspace](/help/assets/assets/my-workspace-assets-view3.png)
 
->[!NOTE]
->
-> AEM Assets View UI Extensibility is available to you as a Beta release. You can provide documentation feedback by expanding Detailed Feedback options and clicking Report an issue.
 
 ## Prerequisites for Adding the Extensibility Component 
 
 * [Access to Assets View](#1).
-* Access to the [Adobe app builder](https://developer.adobe.com/app-builder/docs/overview/), which is included in the [Assets Ultimate](/help/assets/assets-ultimate-overview.md) by default. 
+* Access to the [Adobe app builder](https://developer.adobe.com/app-builder/docs/overview/). 
 * Entitled to Developer of System Admin role within the Organization. See [this](https://developer.adobe.com/uix/docs/guides/get-access/) for more information.
 * Adobe IO command line tool (AIO CLI) must be installed on your local machines. This tool is essential for creating and deploying extension projects. See [this](https://developer.adobe.com/app-builder/docs/getting_started/#local-environment-set-up) for more information.
 * Good understanding of JavaScript, Node.js, and React technologies.

@@ -19,12 +19,22 @@ Renditions are classified as static and dynamic, each type presenting unique fea
 ## Static renditions {#static-renditions}
 
 Static renditions are pre-generated versions of digital assets, usually created during asset ingestion or modification. These renditions are optimized for specific purposes and platforms, such as web thumbnails, mobile-friendly formats for responsive design, or high-resolution versions for printing, ensuring an efficient and consistent experience.
-Learn [how to view and download](#view-dynamic-renditions) static renditions in [!DNL Experience Manager Assets].
+Learn how to [view and download static renditions](#view-and-download-static-renditions) in Experience Manager Assets.
+
+### View and download static renditions{#view-and-download-static-renditions}
+
+To see the asset renditions and download them, follow these steps:
+
+1. On Assets View, click **Assets**, navigate to a folder, select an asset, and click **Details**.
+1. Click the rendition's icon available in the right pane. 
+1. Select a rendition to preview it, and click ![download icon](/help/assets/assets/download-icon.svg) to download it. 
+
+   ![View and download Dynamic renditions](/help/assets/assets/view-download-static-rendition.png)
 
 ## Dynamic renditions {#dynamic-renditions}
 
 Dynamic renditions are customized versions of assets created in real-time to meet specific needs, such as resizing images based on device resolution or cropping to fit different aspect ratios.
-These renditions enable organizations to deliver personalized and optimized experiences to diverse audience needs. You can view and download dynamic renditions in [!DNL Experience Manager Assets].
+These renditions enable organizations to deliver personalized and optimized experiences to diverse audience needs. You can view and download dynamic renditions in Experience Manager Assets.
 
 ## Dynamic Media renditions {#dynamic-media-renditions}
 
