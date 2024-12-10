@@ -55,13 +55,13 @@ The AEM Forms Boilerplate template gets you started quickly with an AEM project 
     >
     > If you are using GitHub Enterprise with IP filtering, you can add the following IP to the allowlist: 3.227.118.73
 
-    Congratulations! You have a new website running on `https://<branch>--<repo>--<owner>.hlx.page/`. 
+    Congratulations! You have a new website running on `https://<branch>--<repo>--<owner>.aem.page/`. 
 
     * `<branch>` refers to the branch of your GitHub repository. 
     * `<repository>` denotes your GitHub repository. 
     * `<owner>` refers to username of your GitHub account that hosts your GitHub repository.
 
-    For example, if the branch name is `main`, repository is `wefinance`, and owner is `wkndforms`, the website would be up and running at [https://main--wefinance--wkndforms.hlx.page/](https://main--wefinance--wkndforms.hlx.page/).
+    For example, if the branch name is `main`, repository is `wefinance`, and owner is `wkndforms`, the website would be up and running at [https://main--wefinance--wkndforms.aem.page/](https://main--wefinance--wkndforms.aem.page/).
 
 
 
@@ -174,7 +174,7 @@ To preview unpublished content:
 
     ```HTML
 
-    https://<branch>--<repository>--<owner>.hlx.live
+    https://<branch>--<repository>--<owner>.aem.live
        
     ```
 
@@ -183,11 +183,11 @@ To preview unpublished content:
     * `<owner>` refers to username of your GitHub account that hosts your GitHub repository.
 
     
-    `https://<branch>--<repo>--<owner>.hlx.page/enquiry` URL. 
+    `https://<branch>--<repo>--<owner>.aem.page/enquiry` URL. 
 
     For example, if your project's repository is named "wefinance", it's located under the account owner "wkndforms", and you're using the "main" branch, the URL is: 
 
-    [https://main--wefinance--wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).  
+    [https://main--wefinance--wkndforms.aem.page](https://main--wefinance--wkndforms.aem.page).  
 
 ### Create a form
 
@@ -199,7 +199,7 @@ Let's start with updating a field label. Open the 'enquiry' sheet for editing, c
 
  ![Enquiry form](/help/edge/assets/enquiry-form-preview-publish.png)
 
- When you preview or publish the file, a JSON version of the file appears in a new tab. Copy the preview (.hlx.page) or publish (.hlx.live) URL of the file. 
+ When you preview or publish the file, a JSON version of the file appears in a new tab. Copy the preview (.aem.page) or publish (.aem.live) URL of the file. 
 
  ![JSON of the form spreadsheet](/help/edge/assets//preview-and-publish-enquiry-form.png)
 
@@ -217,7 +217,7 @@ To preview the updated enquiry form go to the following URL:
 
 ```HTML
 
-    https://<branch>--<repository>--<owner>.hlx.page/enquiry
+    https://<branch>--<repository>--<owner>.aem.page/enquiry
        
 ``` 
 
@@ -261,8 +261,8 @@ The Adaptive Forms Block `blocks/form` folder is your playground for styling and
 
 Ready to showcase your creation? Use Git to commit and push your changes. This updates your preview and production environments accessible at these URLs (replace placeholders with your project details):
 
-Preview: `https://<branch>--<repo>--<owner>.hlx.page/`
-Production: `https://<branch>--<repo>--<owner>.hlx.live/`
+Preview: `https://<branch>--<repo>--<owner>.aem.page/`
+Production: `https://<branch>--<repo>--<owner>.aem.live/`
 
 Congratulations! You've successfully set up your local development environment and deployed your changes.
 
