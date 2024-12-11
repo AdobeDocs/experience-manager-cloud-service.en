@@ -5,6 +5,7 @@ topic-tags: Adaptive Forms, author
 keywords: hCaptcha&reg; service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Form submission security, Form spam prevention
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
+exl-id: dc7ca723-1008-472a-b6eb-8e9ed6332a16
 ---
 # Connect your AEM Forms environment with hCaptcha&reg; {#connect-your-forms-environment-with-hcaptcha-service}
 

@@ -28,6 +28,9 @@ The capability provides APIs to generate and manipulate the documents. You can g
 
 * a secure access to data. Communications APIs connect to and access data only from customer-designated data repositories, making Communications highly secure.
 
+The [API reference documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) provides detailed information about all the parameters, authentication methods, and various services provided by APIs. The API reference documentation is also available in the .yaml format. You can download the .yaml and upload it to Postman to check the functionality of the APIs.
+
+
 <!-- 
 ![A sample credit card statement](assets/statement.png)
 A credit card statement can be created using Communications APIs. This sample statement uses same template but separate data for each customer depending on their usage of credit card.
@@ -298,8 +301,6 @@ The various usage rights capabilities for extending PDF Reader services are:
 
 * **Message**: The message displayed within Adobe Acrobat Reader on opening a PDF document with one or more usage rights applied.
 * **Unlock Password**: The password required for opening an encrypted PDF document. Typically, this is the document open password but if the PDF document is additionally protected by a permissions password, either may be used to open it.
-
-The [API reference documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) provides detailed information about all the parameters, authentication methods, and various services provided by APIs. The API reference documentation is also available in the .yaml format. You can download the .yaml and upload it to Postman to check the functionality of the APIs.
 
 ## Types of communications APIs {#types}
 
