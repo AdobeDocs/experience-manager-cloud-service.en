@@ -26,11 +26,6 @@ The 2025.1.0 feature activation will provide the full feature set for this maint
 * GUIDES-21840: In the Native PDF output, chapter titles are missing from the TOC, leading to an incorrect hierarchy.
 * GUIDES-19558: Editing and then saving a baseline on a cloud setup timesout after 1 minute if the baseline has large number of topics or maps.
 * GUIDES-19733: Map translation using baseline becomes slow and eventually fails to load the list of all the associated topics and maps files.
-
-For more information about the new and enhanced features and issues fixed in Experience Manager Guides, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
-
-### Known Issues {#known-issues-18751}
-
 * ASSETS-42802: Back button on MFE doesnt always work and shows extra dialog
 * ASSETS-44148: Fixed NODE_MOVED event in AEM can cause NPE
 * ASSETS-44418: Fixed Correct env is not configured on skyline
@@ -65,6 +60,12 @@ For more information about the new and enhanced features and issues fixed in Exp
 * SKYOPS-89699: Missing warnings for old Groovy versions embedded in the 'orbinson' flavour of the Groovy Console
 * SKYOPS-88664: Log and protect against a case when downloaded map file has line exceeding 1024 limit
 * SKYOPS-89734: Release dispatcher image 2.0.235
+
+For more information about the new and enhanced features and issues fixed in Experience Manager Guides, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+
+### Known Issues {#known-issues-18751}
+
+None
 
 ### Deprecated Features and APIs {#deprecated-18751}
 
