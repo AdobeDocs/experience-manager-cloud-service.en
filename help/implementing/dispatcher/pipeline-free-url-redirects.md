@@ -24,11 +24,14 @@ AEM as a Cloud Service offers [several approaches](https://experienceleague.adob
 The core of this feature is the ability for AEM Apache/Dispatcher to load (or reload) one or more rewrite map files that have been placed in a specified location in the publish repository. It is important to mention that how the files get there is outside the scope of this feature but you can consider one of the following methods:
 
 * Ingesting the rewrite map as an asset in the author user interface and publishing it.
-* Installing the [ACS Commons Rewrite Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html), which includes a user interface to manage the url mappings and can also publish the rewrite map file.
+* Installing the [ACS Commons Rewrite Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html)([at least 6.7.0 version or higher](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)), which includes a user interface to manage the url mappings and can also publish the rewrite map file.
 * Full flexibility by writing a custom application. For example, either a user interface or command line interface to manage the url mappings or alternatively a form to upload a rewrite map, which then uses AEM APIs to publish the rewrite map file.
 
 >[!NOTE]
 > This feature requires AEM version **18311 or higher**.
+
+>[!NOTE]
+> This feature's usage of Rewrite Map Manager requires ACS Commons version **6.7.0 or higher**.
 
 ## The rewrite map {#rewrite-map}
 
