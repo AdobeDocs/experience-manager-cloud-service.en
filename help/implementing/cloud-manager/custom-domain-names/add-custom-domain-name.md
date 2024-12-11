@@ -46,6 +46,11 @@ The steps for either method described in this document are based on Fastly. If y
 1. In the **Add domain** dialog box, in the **Domain Name** field, enter the custom domain name you are using. 
    When entering the domain name, do not include `http://`, `https://`, or spaces.
 
+   >[!NOTE]
+   >
+   >If you require both `www` and `non-www` versions of a domain, you must add them separately. For example, `example.com` and `www.example.com`.
+   <!-- Marius Petria on SLACK tmp-skyline-cdn-certificates - Actually  my opinion is that this option should be explicit in UI (that was present in the initial mocks of the design but for some reason it was dropped). I think when adding a domain there should be a check mark to also add www.domain. When adding example.com Customer should be prompted with the following options: Do you also want to add www.example.com and have a redirect example.com -> www.example.com?Do you also want to add www.example.com and have a redirect www.example.com -> example.com? -->
+
 1. Click **Create**.
 
 1. In the **Verify domain** dialog box, in the **What certificate type do you plan on using with this domain?** drop-down list, select one of the following options:
@@ -64,7 +69,7 @@ The steps for either method described in this document are based on Fastly. If y
 
       >[!NOTE]
       >
-      >If you use your own customer managed (OV/EV or DV) SSL certificate, and intend to use a customer managed CDN ***provider***, you can skip adding an SSL certificate and go directly to [Add a CDN configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) when ready.
+      >If you use your own customer managed (OV/EV or DV) SSL certificate, and intend to use a customer managed CDN ***provider***, you can skip adding an SSL certificate. Instead, go directly to [Add a CDN configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) when ready.
 
 
 ### Adobe managed certificate steps {#adobe-managed-cert-steps}
@@ -75,7 +80,7 @@ If you selected the certificate type *Adobe managed certificate*, complete the f
 
 To verify the domain in use, you are required to add and verify a CNAME. 
 
-A `CNAME` or A record, once provisioned, routes all Internet traffic for the domain to wherever it is pointing. If that location is not provisioned to serve the traffic, there is an outage. If it has not been tested, there may be errors in the content. This reason is why this step is always done after testing is complete and you are ready to go live.
+A `CNAME` record type or an `A` record type, once provisioned, routes all Internet traffic for the domain to wherever it is pointing. If that location is not provisioned to serve the traffic, there is an outage. If it has not been tested, there may be errors in the content. This reason is why this step is always done after testing is complete and you are ready to go live.
 
 To configure these settings, determine if a `CNAME` or apex record must be configured to point your custom domain name to the Cloud Manager domain name. The following sections of this document can help you determine which type of record is appropriate for your DNS configuration.
 
@@ -119,7 +124,7 @@ Add the following `A` records to your domain's DNS settings by way of your domai
 
 >[!TIP]
 >
->The *CNAME* or *A Record* can be set on the governing DNS server to save you time.
+>The *CNAME record* or *A record* can be set on the governing DNS server to save you time.
 
 <!--
 ![Customer managed certificate steps](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)
