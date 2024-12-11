@@ -68,8 +68,6 @@ The processing profile can include an FPO (For Placement Only) rendition. See th
 
 ### Create a standard profile {#create-standard-profile}
 
-To create a standard processing profile, follow these steps:
-
 1. Administrators access **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**. Click **[!UICONTROL Create]**.
 1. Provide a name that helps you uniquely identify the profile when applying to a folder.
 1. To generate FPO renditions, on the **[!UICONTROL Image]** tab, enable **[!UICONTROL Create FPO Rendition]**. Input a **[!UICONTROL Quality]** value from 1&ndash;100.
@@ -118,8 +116,6 @@ Developers can use the [!DNL Asset Compute Service] to [create custom applicatio
 >You cannot edit the standard metadata using the custom applications. You can only modify custom metadata.
 
 ### Create a custom profile {#create-custom-profile}
-
-To create a custom profile, following these steps:
 
 1. Administrators access **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]** > **[!UICONTROL Create]**.
 1. On the Processing Profile page, click the **[!UICONTROL Custom]** tab, then click **[!UICONTROL Add New]**. 
