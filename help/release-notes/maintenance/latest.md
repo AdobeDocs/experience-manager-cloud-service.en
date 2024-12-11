@@ -12,7 +12,7 @@ The following section outlines the technical release notes for the current maint
 
 ## Release 18751 {#18751}
 
-Summarized below are the continuous improvements for maintenance release 18751, which was publicly released on December 11, 2024. The previous maintenance release was release 18459.
+Summarized below are the continuous improvements for maintenance release 18751, which was publicly released on December 11, 2024. The previous maintenance release was release 18598.
 
 The 2025.1.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
