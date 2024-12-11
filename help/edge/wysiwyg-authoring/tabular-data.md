@@ -75,6 +75,52 @@ In this example, you will create a spreadsheet to manage redirects for your AEM 
    * The editor adds new rows to the spreadsheet as necessary.
    * To delete or move a row, use the **Delete** icon at the end of each row and the drag handles at the beginning of each row, respectively.
 
+## Importing Spreadsheet Data {#importing}
+
+In addition to editing spreadsheets in the AEM Page Editor, you can also import data from a CSV file.
+
+1. When editing your spreadsheet in AEM, tap or click the **Upload** button at the top-left of the screen.
+1. In the drop-down, select how you would like to import your data.
+   * **Replace Doc** to replace the content of the entire spreadsheet with the content of the CSV file you will upload.
+   * **Append To Doc** to append the data of the CSV file you will upload to the existing spreadsheet contents.
+1. In the dialog that opens, select your CSV file and then tap or click **Open**.
+
+A dialog opens as the import is processed. Once complete, the data in the CSV file is added to or replaces the content of the spreadsheet. If any errors are encountered such as a mismatch of columns, they are reported so you can correct your CSV file.
+
+>[!NOTE]
+>
+>* The headings in the CSV file must match the columns in the spreadsheet exactly.
+>* Importing the entire CSV does not modify the column headings, only the content rows.
+>* If you need to update the columns, you must do that in the AEM Page Editor before performing the import of the CSV.
+>* A CSV file can not be larger than 10 MB for import.
+
+Depending on your selection of `mode`, you can also `create`, `replace`, or `append` to spreadsheets using a CSV and a cURL command similar to the following.
+
+```text
+curl --request POST \
+  --url http://<aem-instance>/bin/asynccommand \
+  --header 'content-type: multipart/form-data' \
+  --form file=@/path/to/your.csv \
+  --form spreadsheetPath=/content/<your-site>/<your-spreadsheet> \
+  --form 'spreadsheetTitle=Your Spreadsheet' \
+  --form cmd=spreadsheetImport \
+  --form operation=asyncSpreadsheetImport \
+  --form _charset_=utf-8 \
+  --form mode=append
+```
+
+The call returns an HTML page with information about the job ID.
+
+```text
+Message | Job(Id:2024/9/18/15/27/5cb0cacc-585d-4176-b018-b684ad2dfd02_90) created successfully. Please check status at Async Job Status Navigation.
+```
+
+[You can use the **Jobs** console](/help/operations/asynchronous-jobs.md) to view the status of the job or use the ID returned to query it.
+
+```text
+https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da63f9e-066b-4134-95c9-21a9c57836a5_1
+```
+
 ## Publishing a Spreadsheet paths.json {#paths-json}
 
 In order for AEM to be able to publish the data in your spreadsheet, you additionally need to update the `paths.json` file of your project.
