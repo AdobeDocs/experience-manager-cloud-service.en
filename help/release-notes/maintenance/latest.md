@@ -18,7 +18,7 @@ The 2025.1.0 feature activation will provide the full feature set for this maint
 
 ### Enhancements {#enhancements-18751}
 
-None.
+* SKYOPS-88509: Java 21 support for the AEM SDK
 
 ### Fixed Issues {#fixed-issues-18751}
 
@@ -31,7 +31,40 @@ For more information about the new and enhanced features and issues fixed in Exp
 
 ### Known Issues {#known-issues-18751}
 
-None.
+* ASSETS-42802: Back button on MFE doesnt always work and shows extra dialog
+* ASSETS-44148: Fixed NODE_MOVED event in AEM can cause NPE
+* ASSETS-44418: Fixed Correct env is not configured on skyline
+* ASSETS-44821: Fixed Update event filter to include form-url-encoded data for upload events
+* CNTBF-298: Fixed Content Copy fails with UUID conflicts
+* CNTBF-331: [content-copy-bundle] release 2.0.14
+* FORMS-16572: Remove Workflow test failures for java 21 SDK build.
+* GRANITE-36205: Automated update for internal oak release in QS
+* GRANITE-53704: Re-evaluate Sling Discovery on Repository Service​
+* GRANITE-54300: Update Oak to latest public release (1.70.0)
+* GRANITE-54416: Update Filevault to version 3.8.2
+* GRANITE-54462: Configure SubscriberAgents to use hc.tags of "systemready"
+* GRANITE-54542: Update commons-io dependency to 2.17.0
+* GRANITE-54658: Add delayFactor and batch-size OSGi configs for fullGC in QS
+* GRANITE-54696: Widen import range for Jackrabbit API
+* GRANITE-54803: Disable ClusterAtExchange in AEM when imsauth is active
+* GRANITE-55095: Update Oak to latest public release (1.72.0)
+* SITES-26798: Launch Auto-Promotion is not updating Promotion Status (Promotion Date)
+* SITES-27137: Remove Sling commons metrics dependency from MSM core
+* SKYOPS-75446: Fixed AEM sometimes returns a 404 or pages with missing content
+* SKYOPS-76366: No Jetty Threadpool metrics in AEM release 15977 and later
+* SKYOPS-82371: java.io.IOException: classFile.delete() failed
+* SKYOPS-83369: AEM deployments fail to start up if the transform job execution does not generate bundles
+* SKYOPS-83910: Fixed concurrency issues found in SKYOPS-82371
+* SKYOPS-84821: Set the Sling Main Servlet's sling.includes.checkcontenttype configuration to true
+* SKYOPS-85798: Fixed Transform job generates empty index definitions.
+* SKYOPS-86251: Upgrade to AEM Analyser core 1.5.6 and and enable the product-package-import analyser in the transform job
+* SKYOPS-86710: Remove Minify test failures for java 21 sdk build.
+* SKYOPS-86745: Update to Sling ResourceResolver 1.12.2
+* SKYOPS-89616: Fixed Unable to Create Technical Account in Adobe Developer Console
+* SKYOPS-89691: Fixed Incorrect artifact id used for ASM warnings
+* SKYOPS-89699: Missing warnings for old Groovy versions embedded in the 'orbinson' flavour of the Groovy Console
+* SKYOPS-88664: Log and protect against a case when downloaded map file has line exceeding 1024 limit
+* SKYOPS-89734: Release dispatcher image 2.0.235
 
 ### Deprecated Features and APIs {#deprecated-18751}
 
