@@ -42,6 +42,9 @@ Follow the steps below to ingest your migration set using the Cloud Acceleration
 
    >[!NOTE]
    > If the target tier is `Author`, the author instance is shut down during the length of the ingestion and becomes unavailable to users (for example, authors or anyone performing maintenance). The reason is to protect the system, and prevents any changes which could either be lost or cause an ingestion conflict. Ensure that your team is aware of this fact. Also note that the environment appears hibernated during the author ingestion.
+   
+   >[!NOTE]
+   > If the target tier is `Publish`, the publish instance remains running during ingestion.  However, if the compaction process is running while ingestion occurs, a conflict between the two processes is likely to happen.  For this reason the ingestion process 1) disables the compaction timed script so compaction will not start during the ingestion, and 2) checks if compaction is currently running, and if it is, waits for it to complete before the ingestion proceeds.  If the publish ingestion is taking longer than expected, check the ingestion logs for related log statements.
 
    * **Wipe:** Choose the `Wipe` value
      * The **Wipe** option sets the destination's starting point of the ingestion. If **Wipe** is enabled, the destination including all its content is reset to the version of AEM that is specified in Cloud Manager. If not enabled, the destination maintains its current content as the starting point.
