@@ -111,3 +111,16 @@ Your production AEM must be configured to use the new Edge Delivery Sites you cr
    * Change project type to **aem.live with repoless config setup**.
 1. Tap or click **Save &amp; Close**.
 
+## Verify Your Setup {#verify}
+
+Now that you have made all of the necessary configuration changes, verify that everything is working as expected.
+
+1. Sign into your AEM production authoring instance.
+1. Navigate to the **Sites Console** by going to **Navigation** -&gt; **Sites**.
+1. Select a page in your site.
+1. Tap or click **Edit** in the toolbar.
+1. Ensure that the page properly renders in the Universal Editor and uses the same code as your site root.
+1. Make a change to the page and re-publish.
+1. Visit your new Edge Delivery Services site for that page at `https://main--wknd-prod--<your-github-org>.aem.page`.
+
+If you see the changes that you made, your separate production site setup is working properly.
