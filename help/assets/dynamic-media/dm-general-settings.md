@@ -1,6 +1,6 @@
 ---
 title: Configure Dynamic Media General Settings
-description: Learn how to manage General Settings in Dynamic Media. You can set your publish server name and origin server name here and set an image overwrite option. There are also default upload options for unsharp masking of images, and upload options for how you want to process PostScript, Adobe Photoshop, PDF, and Adobe Illustrator files.
+description: Learn to manage General Settings in Dynamic Media. Configure the publish and origin server names, image overwrite options, and default upload settings for unsharp masking, PostScript, Photoshop, PDF, and Illustrator file processing.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
@@ -37,7 +37,7 @@ See also [Optional - Setup and configuration of Dynamic Media settings](/help/as
 **To configure Dynamic Media General Settings:**
 
 1. In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
-1. In the left rail, select the Tools icon, then go to **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media General Settings]**.
+1. In the left rail, click ![Tools icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) > **[!UICONTROL Assets]** > ![Gears edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_GearsEdit_18_N.svg) **[!UICONTROL Dynamic Media General Settings]**.
 1. In the Server page, set your **[!UICONTROL Published Server Name]** and **[!UICONTROL Origin Server Name]**, and then use the five tabs to configure default upload options for Image Editing, and for Postscript, Photoshop, PDF, and Illustrator files.
 
    * [Server](#server-general-setting)
@@ -51,7 +51,7 @@ See also [Optional - Setup and configuration of Dynamic Media settings](/help/as
    ![Dynamic Media General Settings page](/help/assets/assets-dm/dm-general-settings.png)
    *Dynamic Media General Settings page, with the **[!UICONTROL Image Editing]** tab selected.*<br><br>
 
-1. When you are finished, near the upper-right corner of the page, select **[!UICONTROL Save]**.
+1. When you are finished, near the upper-right corner of the page, click **[!UICONTROL Save]**.
 
 ## Server {#server-general-setting}
 
@@ -79,7 +79,7 @@ On account creation, Adobe Dynamic Media automatically provides the assigned ser
     | **[!UICONTROL Overwrite in any folder, same base asset name/extension]** | Requires that the replacement image has the same filename extension as the original image (for example, chair.jpg must replace chair.jpg, not chair.tif). However, you can upload the replacement image to a different folder than the original. The updated image resides in the new folder; the file can no longer be found in its original location. |
     | **[!UICONTROL Overwrite in any folder, same base asset name regardless of extension]** | This option is the most inclusive replacement rule. You can upload a replacement image to a different folder than the original, upload a file with a different filename extension, and replace the original file. If the original file is in a different folder, the replacement image resides in the new folder to which it was uploaded. |
 
-* **[!UICONTROL Preserve Crop]**
+* **[!UICONTROL Preserve crop]**
 
     Controls the preservation of any existing manual crop definition.
 
