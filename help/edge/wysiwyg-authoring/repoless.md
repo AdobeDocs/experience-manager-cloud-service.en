@@ -15,7 +15,7 @@ By default, AEM is tightly bound to your code repository, which meets the majori
 
 Rather than creating multiple GitHub repositories and running each site off a dedicated GitHub repository while keeping them in sync, AEM supports running multiple sites from the same codebase.
 
-This simplified setup, which eliminates the need for code replication is also known as "repoless", because all but your first site don't need a GitHub repository of their own.
+This simplified setup, which eliminates the need for code replication is also known as ["repoless",](https://www.aem.live/docs/repoless) because all but your first site don't need a GitHub repository of their own.
 
 If your project requires the repoless flexibility of code reuse across sites, you can activate the feature.
 
