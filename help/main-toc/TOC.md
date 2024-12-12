@@ -641,6 +641,7 @@ user-guide-title: AEM as a Cloud Service
     + [Content Credentials](/help/assets/content-credentials.md)
     + [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
     + [AEM Assets View UI Extensibility](/help/assets/aem-assets-view-ui-extensibility.md)
+    + [Integrate AEM Assets while authoring content for Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md)
   + Content Hub {#content-hub}
     + [Overview](/help/assets/product-overview.md)
     + [Deploy Content Hub](/help/assets/deploy-content-hub.md)
