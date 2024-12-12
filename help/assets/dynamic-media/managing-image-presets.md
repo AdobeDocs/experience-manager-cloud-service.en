@@ -44,7 +44,7 @@ You manage your image presets in Experience Manager by selecting the Experience 
 >
 >See [Publish Image Presets](#publishing-image-presets).
 
->[!NOTE]
+>[!NOTE] 
 >
 >The system shows various renditions when you select **[!UICONTROL Renditions]** in an asset's Detail View. You can increase or decrease the number of image presets that display. See [Increase the number of image presets that are displayed](#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
