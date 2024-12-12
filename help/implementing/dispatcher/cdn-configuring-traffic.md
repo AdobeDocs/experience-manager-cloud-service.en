@@ -434,7 +434,7 @@ data:
 The locations of a redirect can be either string literals (e.g., https://www.example.com/page) or the result of a property (e.g., path) that is optionally transformed, with the following syntax:
 
 ```
-experimental_redirects:
+redirects:
   rules:
     - name: country-code-redirect
       when: { reqProperty: path, like: "/" }
