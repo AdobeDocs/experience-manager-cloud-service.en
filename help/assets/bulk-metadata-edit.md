@@ -4,8 +4,6 @@ description: Learn how you can simultaneously edit the metadata of multiple asse
 ---
 # Bulk metadata edit in Assets View{#how-to-edit-the-metadata-of-multiple-assets-simultaneously}
 
-![banner image](/help/assets/assets/)
-
 Using **Bulk Metadata Edit** within the Assets View UI, you can modify metadata for multiple assets file simultaneously. Instead of editing the metadata for each asset individually, you apply changes to a large group of assets at a time. This feature enhances the efficiency, consistency, and accuracy of metadata properties across a large set of assets, improving asset searchability and organization. 
 
 ## Bulk edit asset metadata {#how-to-bulk-edit-the-metadata-of-multiple-assets-on-assets-view}
