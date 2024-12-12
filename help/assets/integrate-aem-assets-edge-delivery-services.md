@@ -10,7 +10,7 @@ Edge Delivery Services is a composable set of services that allows for a high de
 
 You can edit content in:
 
-* [Microsoft Word or Google Docs](#integrate-aem-assets-with-document-based-authoring)
+* [Microsoft Word or Google Docs](#integrate-aem-assets-with-document-based-authoring-tools)
 
 * [Universal Editor](#integrate-aem-assets-with-universal-editor)
 
