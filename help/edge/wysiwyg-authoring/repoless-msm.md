@@ -1,10 +1,10 @@
 ---
 title: Repoless Multi Site Management
-description: Learn best practice recommendations on how to set up a project in a repoless manner with localized sites that leverage a single code base, each served up by Edge Delivery Services. 
+description: Learn best practice recommendations on how to set up a project in a repoless manner with localized sites that leverage a single code base, each served up by Edge Delivery Services.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
+exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
 ---
-
 # Repoless Multi Site Management {#repoless-msm}
 
 Learn best practice recommendations on how to set up a project in a repoless manner with localized sites that leverage a single code base, each served up by Edge Delivery Services. 
