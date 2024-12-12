@@ -3,8 +3,8 @@ title: Reusing Code Across Sites
 description: If you have many similar sites that mostly look and behave the same, but have different content, learn how you can share code across multiple sites in a repoless model.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
+exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
 ---
-
 # Reusing Code Across Sites {#repoless}
 
 If you have many similar sites that mostly look and behave the same, but have different content, learn how you can share code across multiple sites in a repoless model.
