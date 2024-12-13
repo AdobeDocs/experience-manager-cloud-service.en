@@ -53,3 +53,35 @@ Customers create Adobe Developer Console projects so they can invoke [Cloud Mana
 When Cloud Manager provisions AEM as a Cloud Service environments, it auto-generates an Adobe Developer Console project with JWT credentials. This project is marked as read-only, as illustrated in the screenshot below. Customers cannot and should not attempt to migrate these projects to OAuth Server-to-Server credentials. Instead, Adobe will migrate these projects on its own, before the credentials are no longer usable.
 
 ![Auto-generated projects](/help/security/assets/jwt-deprecation-autogen-projects.png)
+
+## Auto-generated projects FAQs {#autogen-projects-faqs}
+
+This section provides answers to the most frequently asked questions about JWT credentials deprecation for auto-generated projects in AEM as a Cloud Service.
+
+**How do I do which projects are auto-generated?**
+Navigate to the Adobe Developer Console | Projects section.  AEM as a Cloud Service auto-generated projects will have a lock icon with ‘Auto-generated’ identifier.  Auto-generated projects follow format AEM-p#####-e###### and are created by Technical account user.  
+
+<img width="439" alt="image" src="https://git.corp.adobe.com/storage/user/16149/files/6b20a8a3-3711-4741-8f2c-ec5e36fe97cc">
+
+
+**What if we encounter issues with our auto-generated projects?**  
+
+Contact [Adobe Customer Care](https://helpx.adobe.com/ca/enterprise/using/support-for-experience-cloud.html).  
+
+**Should I go ahead and migrate our auto-generated projects?**
+
+No action is required as Adobe will migrate auto-generated on your behalf for environments with AEM Release 17258 (Aug '24) and higher.  
+
+**What are the timelines for migration of auto-generated projects?**
+
+Adobe will initiate a phased migration approach in Q1 of 2025, beginning with development environments.   
+
+**How will our AEM as a Cloud Service instance be impacted if we have an AEM release that is older than AEM Release 17258 (Aug '24)?**
+
+Auto-generated project integrations will stop working if they are not migrated to OAuth by June 2025.   
+
+To ensure a smooth transition customers should contact [Adobe Customer Care](https://helpx.adobe.com/ca/enterprise/using/support-for-experience-cloud.html) promptly and begin the process of updating to the [latest AEM Release](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest). This will provide ample time for regression testing and allow Adobe to efficiently manage the migration of projects. 
+
+**Can I upgrade to a supported OAuth version without upgrading my AEM as a Cloud Service AEM Release?**
+
+No. To ensure a smooth transition customers should contact [Adobe Customer Care](https://helpx.adobe.com/ca/enterprise/using/support-for-experience-cloud.html) promptly and begin the process of updating to the [latest AEM Release](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest). This will provide ample time for regression testing and allow Adobe to efficiently manage the migration of projects. 

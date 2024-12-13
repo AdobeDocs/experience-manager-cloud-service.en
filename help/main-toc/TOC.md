@@ -82,6 +82,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2024 {#2024}
+      + [Maintenance Release Notes for 2024.11.0](/help/release-notes/maintenance/2024/2024-11-0.md)
       + [Maintenance Release Notes for 2024.10.0](/help/release-notes/maintenance/2024/2024-10-0.md)
       + [Maintenance Release Notes for 2024.9.0](/help/release-notes/maintenance/2024/2024-9-0.md)
       + [Maintenance Release Notes for 2024.8.0](/help/release-notes/maintenance/2024/2024-8-0.md)
@@ -101,10 +102,10 @@ user-guide-title: AEM as a Cloud Service
       + [Maintenance Release Notes for 2023.4.0](/help/release-notes/maintenance/2023/2023-4-0.md)
       + [Maintenance Release Notes for 2023.2.0](/help/release-notes/maintenance/2023/2023-2-0.md)
       + [Maintenance Release Notes for 2023.1.0](/help/release-notes/maintenance/2023/2023-1-0.md)
-  
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
     + 2024 {#2024}
+      + [Release Notes for 2024.11.0](/help/implementing/cloud-manager/release-notes/2024/2024-11-0.md)
       + [Release Notes for 2024.10.0](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md)
       + [Release Notes for 2024.9.0](/help/implementing/cloud-manager/release-notes/2024/2024-9-0.md)
       + [Release Notes for 2024.8.0](/help/implementing/cloud-manager/release-notes/2024/2024-8-0.md)
@@ -199,6 +200,7 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Universal Editor {#univeral-editor}
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + 2024 {#2024}
+      + [2024.11.13 Release Notes](/help/release-notes/universal-editor/2024/2024-11-13.md)
       + [2024.11.05 Release Notes](/help/release-notes/universal-editor/2024/2024-11-05.md)
       + [2024.10.29 Release Notes](/help/release-notes/universal-editor/2024/2024-10-29.md)
       + [2024.09.27 Release Notes](/help/release-notes/universal-editor/2024/2024-09-27.md)
@@ -631,6 +633,7 @@ user-guide-title: AEM as a Cloud Service
     + [Edit videos](/help/assets/edit-videos-assets-view.md)
     + [View and manage renditions](/help/assets/renditions.md)
     + [Manage asset metadata](/help/assets/metadata-assets-view.md)
+    + [Bulk metadata edit](/help/assets/bulk-metadata-edit.md)
     + [Share assets](/help/assets/share-links-for-assets-view.md)
     + [Manage collections](/help/assets/manage-collections-assets-view.md)
     + [Watch asset, folders, and collections](/help/assets/manage-notifications-assets-view.md)
@@ -703,6 +706,11 @@ user-guide-title: AEM as a Cloud Service
       + [Embed an Adaptive Forms in an AEM Sites page](/help/forms/embed-adaptive-form-aem-sites.md)
       + [Embed adaptive form based on Core Components to an external web page](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
       + [Embed adaptive form based on Foundation Components to an external web page](/help/forms/embed-adaptive-form-external-web-page.md)
+      + Integrate Adaptive Forms with Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage} 
+          +  [Integrate Adobe Marketo Engage with AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
+          + [Configure new form to integrate with Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md) 
+          + [Configure Adobe Marketo Engage data source for existing Adaptive Forms](/help/forms/use-marketo-engage-data-source-in-form.md)
+          + [Configure the submit action to Marketo Engage for existing forms](/help/forms/submit-adaptive-form-to-marketo-engage.md)
     + Form Data Model {#use-form-data-model}
       + [Connect AEM Forms to database or data source](/help/forms/data-integration.md)
       + [Configure data sources](/help/forms/configure-data-sources.md)
@@ -714,11 +722,6 @@ user-guide-title: AEM as a Cloud Service
       + [Work with Form Data Model](/help/forms/work-with-form-data-model.md)
       + [Use Form Data Model](/help/forms/using-form-data-model.md)
       + [Design XML Schema for an Adaptive Form](/help/forms/adaptive-form-xml-schema-form-model.md)
-      +  Integrate Adaptive Forms with Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage} 
-            +  [Integrate Adobe Marketo Engage with AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
-            + [Configure new form to integrate with Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md) 
-            + [Configure Adobe Marketo Engage data source for existing Adaptive Forms](/help/forms/use-marketo-engage-data-source-in-form.md)
-            + [Configure the submit action to Marketo Engage for existing forms](/help/forms/submit-adaptive-form-to-marketo-engage.md)
   + Adaptive Forms {#adaptive-forms-authoring}
     + [Create an Adaptive Form](/help/forms/create-an-adaptive-form.md)
     + [Create an Adaptive Form fragment](/help/forms/adaptive-form-fragments.md)
@@ -955,6 +958,9 @@ user-guide-title: AEM as a Cloud Service
     + [WYSIWYG and Doc-Based Blocks](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
     + [Pages with DAM Assets](/help/edge/wysiwyg-authoring/dam-assets.md)
     + [WIP Sites Features](/help/edge/wysiwyg-authoring/wip-features.md)
+    + [Reusing Code Across Sites](/help/edge/wysiwyg-authoring/repoless.md)
+    + [Repoless Multi Site Management](/help/edge/wysiwyg-authoring/repoless-msm.md)
+    + [Repoless Stage and Prod Environments](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
   + Document-Based Authoring {#document-authoring}
     + [Authoring](/help/edge/docs/authoring.md)
     + [Bulk Metadata](/help/edge/docs/bulk-metadata.md)

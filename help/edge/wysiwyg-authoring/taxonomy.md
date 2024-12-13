@@ -126,7 +126,7 @@ Once your taxonomy is published, its information can be leveraged by the Univers
 
 You can access the taxonomy as JSON data at the following address.
 
-`https://<branch>--<repository>--<owner>.hlx.page/<taxonomy-json-name>.json`
+`https://<branch>--<repository>--<owner>.aem.page/<taxonomy-json-name>.json`
 
 Use the `<taxonomy-json-name>` that you defined when [mapping your taxonomy to the `paths.json` file in your project.](#paths-json) The taxonomy data is returned as JSON data like in the following example.
 
