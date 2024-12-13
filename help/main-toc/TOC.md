@@ -615,6 +615,7 @@ user-guide-title: AEM as a Cloud Service
     + [Edit videos](/help/assets/edit-videos-assets-view.md)
     + [View and manage renditions](/help/assets/renditions.md)
     + [Manage asset metadata](/help/assets/metadata-assets-view.md)
+    + [Bulk rename](bulk-rename-assets-view.md)
     + [Share assets](/help/assets/share-links-for-assets-view.md)
     + [Manage collections](/help/assets/manage-collections-assets-view.md)
     + [Watch asset, folders, and collections](/help/assets/manage-notifications-assets-view.md)
