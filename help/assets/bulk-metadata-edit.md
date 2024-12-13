@@ -19,9 +19,9 @@ Execute these steps to bulk edit the metadata of multiple assets at a time:
     * **Expiration date:** Set a date after which the assets are no longer valid or needed. 
     * **Author:** Specify the author's name.
     * **Keywords:** Add terms or text strings that provide a high-level information about the assets to enhance their discoverability. Add a keyword and press Enter or return to add another keyword to the list.
-    * **Tags:** Click ![tags icon](/help/assets/assets/tags-icon.svg) to select tags from the available options. Tags provide more specific information about the assets and enhances their discoverability. Tags already applied to the selected assets are only displayed in the **Properties** panel. If you cannot find the relevant tags, create the tags and assign them to the selected assets. See [Manage tags in Assets view](/help/assets/tagging-management-assets-view.md) for details. 
-    * Click **Save** to append keywords and Tags while override the existing details for Status, Expiration date and Author. 
-    ![save-bulk-metadata-edit-properties](/help/assets/assets/save-bulk-metadata-edit-properties.png)
+    <!-- * **Tags:** Click ![tags icon](/help/assets/assets/tags-icon.svg) to select tags from the available options. Tags provide more specific information about the assets and enhances their discoverability. Tags already applied to the selected assets are only displayed in the **Properties** panel. If you cannot find the relevant tags, create the tags and assign them to the selected assets. See [Manage tags in Assets view](/help/assets/tagging-management-assets-view.md) for details.--> 
+    * Click **Save** to append keywords and <!-- Tags while--> override the existing details for Status, Expiration date and Author. 
+    ![save-bulk-metadata-edit-properties](/help/assets/assets/save-bulk-metadata-edit-properties1.png)
 
         >[!NOTE]
         >
@@ -31,6 +31,6 @@ To see the applied metadata changes to an asset, navigate to the asset details p
 
 >[!NOTE]
 >
->Status, Expiration Date, Author, Keywords and Tags are standard metadata properties available for bulk metadata editing, regardless of folder-specific metadata. These metadata properties display on the asset details page only if they are included in the metadata form applied to the asset's folder.  If you cannot see these metadata properties on the asset details page then edit the asset folder's metadata form to include them. See [Metadata in Assets View](/help/assets/metadata-assets-view.md) to learn how to create or edit a metadata form and apply it to a folder.
+>Status, Expiration Date, Author and Keywords <!-- and Tags--> are standard metadata properties available for bulk metadata editing, regardless of folder-specific metadata. These metadata properties display on the asset details page only if they are included in the metadata form applied to the asset's folder.  If you cannot see these metadata properties on the asset details page then edit the asset folder's metadata form to include them. See [Metadata in Assets View](/help/assets/metadata-assets-view.md) to learn how to create or edit a metadata form and apply it to a folder.
 
  
