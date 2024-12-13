@@ -28,6 +28,9 @@ The capability provides APIs to generate and manipulate the documents. You can g
 
 * a secure access to data. Communications APIs connect to and access data only from customer-designated data repositories, making Communications highly secure.
 
+The [API reference documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) provides detailed information about all the parameters, authentication methods, and various services provided by APIs. The API reference documentation is also available in the .yaml format. You can download the .yaml and upload it to Postman to check the functionality of the APIs.
+
+
 <!-- 
 ![A sample credit card statement](assets/statement.png)
 A credit card statement can be created using Communications APIs. This sample statement uses same template but separate data for each customer depending on their usage of credit card.
@@ -188,7 +191,7 @@ PDF documents contain metadata, which is information about the document (as dist
 
 ### Convert to and validate PDF/A-compliant documents
 
-Communications document conversion APIs help to Convert a PDF document to PDF/A. You can use the APIs to convert a PDF document to a PDF/A-compliant document and also to determine whether a PDF document is PDF/A-compliant. PDF/A is an archival format meant for long-term preservation of the document's content. The fonts are embedded within the document, and the file is uncompressed. As a result, a PDF/A document is typically larger than a standard PDF document. Also, a PDF/A document does not contain audio and video content.
+Communications document conversion APIs help to Convert a PDF document to PDF/A. You can use the APIs to convert a PDF document to a PDF/A-compliant document and also to determine whether a PDF document is PDF/A-compliant. PDF/A is an archival format meant for long-term preservation of the document's content. The fonts are embedded within the document, and the file is uncompressed. As a result, a PDF/A document is typically larger than a standard PDF document. Also, a PDF/A document does not contain audio and video content. The supported PDF/A compliance standards include PDF/A-1a, 1b, 2a, 2b, 3a, and 3b.
 
 ### Convert PDF to XDP {#convert-pdf-to-xdp}
 
@@ -208,6 +211,24 @@ The Signature APIs let your organization protect the security and privacy of Ado
 * Add an invisible signature field to a PDF document. 
 * Sign the specified signature field in a PDF document. 
 * Certify a PDF document
+* Remove the signature from the specified signature field in a PDF document
+* Delete the specified signature field from a PDF document
+
+<span class="preview"> Remove the signature from the specified signature field and delete the specified signature field, from a PDF document are available under the early adopter program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+
+
+<!--
+
+### Remove Signature APIs
+
+The Remove Signature API helps to remove an existing digital signatures from a PDF document. This API is useful when you need to update or revise a signed document and reapply signatures. It maintains document integrity while effectively clearing signatures from specific pages or the entire file. Use cases include re-signing documents with updated data or clearing previous approvals for revised versions.
+
+
+### Remove Signature Field APIs
+
+The Remove Signature Field API is tailored for removing signature fields from a PDF document. This is ideal when you need to delete empty or unused signature fields to streamline document presentation. It enables users to eliminate signature fields without impacting other form fields or the document structure, making it easier to create cleaner, final versions of a document that no longer require signatures.
+
+-->
 
 ### Encryption APIs
 
@@ -280,8 +301,6 @@ The various usage rights capabilities for extending PDF Reader services are:
 
 * **Message**: The message displayed within Adobe Acrobat Reader on opening a PDF document with one or more usage rights applied.
 * **Unlock Password**: The password required for opening an encrypted PDF document. Typically, this is the document open password but if the PDF document is additionally protected by a permissions password, either may be used to open it.
-
-The [API reference documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) provides detailed information about all the parameters, authentication methods, and various services provided by APIs. The API reference documentation is also available in the .yaml format. You can download the .yaml and upload it to Postman to check the functionality of the APIs.
 
 ## Types of communications APIs {#types}
 

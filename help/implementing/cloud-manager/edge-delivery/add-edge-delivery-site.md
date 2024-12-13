@@ -1,11 +1,10 @@
 ---
 title: Add an Edge Delivery Site to Cloud Manager
 description: Learn how to add an Edge Delivery site to your production program or sandbox program.
-
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
+exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
 ---
-
 # Add an Edge Delivery site to Cloud Manager {#adding}
 
 After you add an Edge Delivery site to your production program, your Edge Delivery Services license is applied to it.
@@ -23,7 +22,7 @@ See also [Introduction to Edge Delivery Services in Cloud Manager](/help/impleme
 
         ![Add Edge Delivery site from the Edge Delivery tab](/help/implementing/cloud-manager/assets/cm-eds-add1.png)       
 
-    * In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to reveal the side navigation menu.
+    * In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to reveal the left side menu.
     Under the **Services** heading, click ![Web page icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**.
     Near the upper-right corner of the page, click **Add site**.
 
@@ -49,8 +48,6 @@ See also [Introduction to Edge Delivery Services in Cloud Manager](/help/impleme
 
 1. Click **Verify**.
 
-After the repository is verified, its status in the Edge Delivery sites table changes to a green circle with a white check mark inside of it. 
+When the repository is verified, its status in the Edge Delivery sites table gets updated. A green circle with a white check mark inside indicates the status.
 
-In the same table, you can click ![Information about Edge Delivery site.](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) to view details about your site such as the verified URL of the repository and the URL of the Preview and Production website.
-
-
+In the same table, click ![Information about Edge Delivery site](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) to view site details. This information includes the verified Repository URL, along with the Preview and Production website URLs.

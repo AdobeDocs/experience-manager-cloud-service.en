@@ -64,11 +64,17 @@ AEM offers customizable components and content delivery options.
 |[The Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)|Standardized Web Content Management (WCM) components for AEM to speed up development time and reduce maintenance cost of your websites|
 |[JSON Exporter](/help/implementing/developing/components/json-exporter.md)|Deliver the contents of any AEM page in JSON data model format|
 |[Enabling JSON Export for a Component](/help/implementing/developing/components/enabling-json-exporter.md)|Generate JSON export of component content based on a modeler framework|
+| [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) | Content Fragment and Content Fragment Model OpenAPIs |
+| [AEM REST OpenAPI for Content Fragment Delivery](/help/headless/aem-rest-openapi-content-fragment-delivery.md) | A HTTP REST API on AEM Edge Delivery Services, designed to deliver structured content from Content Fragments in JSON format. |
+|[Content Fragment GraphQL API](/help/headless/graphql-api/content-fragments.md)|Enable the efficient delivery of Content Fragments to JavaScript clients in headless CMS implementations|
+|||
 |[Assets API](/help/assets/mac-api-assets.md)|Allows for create-read-update-delete (CRUD) operations on assets, including binary, metadata, renditions, and comments. See AEM Assets HTTP API|
 |[Content Fragments HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)|Access Content Fragment content directly over the HTTP API via CRUD operations|
-|[Content Fragment GraphQL API](/help/headless/graphql-api/content-fragments.md)|Enable the efficient delivery of Content Fragments to JavaScript clients in headless CMS implementations|
 |[Content Fragments Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html)|Exact format of supported HTTP asset requests|
-| [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) | Content Fragment and Content Fragment Model OpenAPIs |
+
+>[!NOTE]
+>
+>See [AEM APIs for Structured Content Delivery and Management](/help/headless/apis-headless-and-content-fragments.md) for an overview of the various APIs available and comparison of some of the concepts involved.
 
 ## SPA-Specific APIs {#spa-apis}
 

@@ -3,8 +3,8 @@ title: Path Mapping for Edge Delivery Services
 description: Learn how to map page paths used on the AEM authoring instance to public page paths used on the website and control which content is published to Edge Delivery Services.
 feature: Edge Delivery Services
 role: User
+exl-id: 3d68135d-e84c-4bf4-93d1-38a0be70ce4a
 ---
-
 # Path Mapping for Edge Delivery Services {#path-mapping}
 
 Learn how to map page paths used on the AEM authoring instance to public page paths used on the website and control which content is published to Edge Delivery Services.
@@ -73,7 +73,7 @@ Your path mappings can be configured in one of two ways depending on the setup o
 
    ```text
    curl --request POST \
-     --url https://admin.hlx.page/config/{org}/sites/{site}/public.json \
+     --url https://admin.aem.page/config/{org}/sites/{site}/public.json \
      --header 'Content-Type: application/json' \
      --header 'x-auth-token: ......' \
      --data '{

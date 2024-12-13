@@ -48,7 +48,7 @@ Once the app is instrumented to work with the Universal Editor, the Universal Ed
 
 1. Sign into the Universal Editor. You need an Adobe ID to sign in and [have access to the Universal Editor.](/help/implementing/universal-editor/getting-started.md#request-access)
 
-1. After you are signed in, enter the URL of the page you want to edit in the [location bar.](#location-bar) so you can start editing content such as [text content](#text-mode) or [media content.](#media-mode)
+1. After you are signed in, enter the URL of the page you want to edit in the [location bar.](#location-bar) so you can start editing content such as text content or media content.
 
 ## Understand The UI {#ui}
 
@@ -57,7 +57,7 @@ The UI is divided into these main areas.
 * [The Experience Cloud header](#experience-cloud-header)
 * [The Universal Editor toolbar](#universal-editor-toolbar)
 * [The editor](#editor)
-* [The properties rail](#properties-rail)
+* [The properties panel](#properties-rail)
 
 ![The Universal Editor UI](assets/ui.png)
 
@@ -218,19 +218,19 @@ The editor occupies most of the window and is where the page specified in [the l
 
 If the editor is in [preview mode,](#preview-mode) the content will be navigable and you can follow links, but you cannot edit the content.
 
-### Properties Rail {#properties-rail}
+### Properties Panel {#properties-rail}
 
-The properties rail is always present along the right side of the editor. Depending on its mode, it can show details for a component selected in the content or the hierarchy of the page contents.
+The properties panel is always present along the right side of the editor. Depending on its mode, it can show details for a component selected in the content or the hierarchy of the page contents.
 
-![The properties rail](assets/properties-rail.png)
+![The properties panel](assets/properties-rail.png)
 
 #### Properties Mode {#properties-mode}
 
-In properties mode, the rail shows the properties of the component currently selected in the editor. This is the default mode of the properties rail when a page is loaded.
+In properties mode, the panel shows the properties of the component currently selected in the editor. This is the default mode of the properties panel when a page is loaded.
 
 ![Properties mode](assets/properties-mode.png)
 
-Depending on the type of component you select, details can be displayed and modified in the properties rail.
+Depending on the type of component you select, details can be displayed and modified in the properties panel.
 
 ![Component details](assets/component-details.png)
 
@@ -242,7 +242,7 @@ Not all components have details that can be shown and/or edited.
 
 #### Content Tree Mode {#content-tree-mode}
 
-In content tree mode, the rail shows the hierarchy of the page content.
+In content tree mode, the panel shows the hierarchy of the page content.
 
 ![Content tree mode](assets/content-tree-mode.png)
 
@@ -256,7 +256,7 @@ When selecting an item in the content tree, the editor scrolls to that content a
 
 ##### Open in CF Editor {#edit}
 
-When editing, the options for the selected component appear in the properties rail, where you can edit the selected component. If the selected component is a Content Fragment, you can also select the **Open in CF Editor** button.
+When editing, the options for the selected component appear in the properties panel, where you can edit the selected component. If the selected component is a Content Fragment, you can also select the **Open in CF Editor** button.
 
 ![Open in CF Editor icon](assets/open-in-cf-editor.png)
 
@@ -270,11 +270,11 @@ Depending on the needs of your workflow, you may want to edit the Content Fragme
 
 ##### Add {#add}
 
-If you select a container component either in the content tree or in the editor, the add option appears on the properties rail.
+If you select a container component either in the content tree or in the editor, the add option appears on the properties panel.
 
 ![Add icon](assets/ue-add-component-icon.png)
 
-Tapping or clicking the add button opens a drop-down menu of components that are available to [add to the selected container.](#adding-components)
+Tapping or clicking the add button opens a drop-down menu of components that are available to [add to the selected container.](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)
 
 ![Add context menu](assets/add-context-menu.png)
 
@@ -282,13 +282,21 @@ Tapping or clicking the add button opens a drop-down menu of components that are
 >
 >Use the hot key `a` to add a component to a selected container component.
 
+##### Duplicate {#duplicate}
+
+If you select a component within a container component either in the content tree or in the editor, the duplicate option appears on the properties panel.
+
+![Duplicate icon](assets/duplicate.png)
+
+Tapping or clicking the duplicate button [duplicates the selected component.](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components)
+
 ##### Delete {#delete}
 
-If you select a component within a container component either in the content tree or in the editor, the delete option appears on the properties rail.
+If you select a component within a container component either in the content tree or in the editor, the delete option appears on the properties panel.
 
 ![Delete icon](assets/ue-delete-component-icon.png)
 
-Tapping or clicking the delete button [deletes the component.](#deleting-components)
+Tapping or clicking the delete button [deletes the component.](/help/sites-cloud/authoring/universal-editor/authoring.md#deleting-components)
 
 >[!TIP]
 >
@@ -296,7 +304,7 @@ Tapping or clicking the delete button [deletes the component.](#deleting-compone
 
 #### Additional Buttons {#additional-properties-rail-buttons}
 
-The Universal Editor offers a customizable and extensible authoring experience. If you see additional buttons in the properties rail, your Universal Editor has been extended.
+The Universal Editor offers a customizable and extensible authoring experience. If you see additional buttons in the properties panel, your Universal Editor has been extended.
 
 * For details on extension possibilities, please see the [Customizing and Extending the Universal Editor.](/help/implementing/universal-editor/customizing.md)
 * For details on how an individual extension works, please see the [Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)

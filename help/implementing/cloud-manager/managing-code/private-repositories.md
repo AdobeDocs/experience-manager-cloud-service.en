@@ -1,13 +1,13 @@
 ---
-title: Add Private GitHub Repositories in Cloud Manager
+title: Add a private GitHub Repository in Cloud Manager
 description: Learn how to set up Cloud Manager to work with your own private GitHub repositories.
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 ---
-# Add private GitHub repositories in Cloud Manager {#private-repositories}
+# Add a private GitHub repository in Cloud Manager {#private-repositories}
 
-By setting up Cloud Manager to integrate with your private GitHub repositories, you can validate your code directly within GitHub using Cloud Manager. This configuration removes the requirement to regularly sync your code with the Adobe repository.
+By setting up Cloud Manager to integrate with your private GitHub repositories, you can validate your code directly within GitHub using Cloud Manager. This configuration removes the requirement to sync your code regularly with the Adobe repository. 
 
 <!-- CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
 
@@ -42,7 +42,7 @@ Configuration of a private GitHub repository in Cloud Manager consists of two st
 
    ![The Repositories page](/help/implementing/cloud-manager/managing-code/assets/repositories-tab.png)
 
-1. Near the upper-right corner of the **Respositories** page, click **Add Repository**.
+1. Near the upper-right corner of the **Repositories** page, click **Add Repository**.
 
 1. In the **Add Repository** dialog box, select **Private Repository** as the repository type.
 
@@ -52,12 +52,12 @@ Configuration of a private GitHub repository in Cloud Manager consists of two st
 
     | Field | Description |
     | --- | --- |
-    | Repository Name | An expressive name for your new respository. | 
+    | Repository Name | An expressive name for your new repository. | 
     | Repository URL | The URL of the private repository, which must end in `.git`.<br>For example, *`https://github.com/org-name/repo-name.git`* (URL path is for illustration purposes only).  |
     | Description (optional) | A detailed description of the repository. |
 
 1. Select **Save**.
-    Now you can [validate ownership of the private repository](#validate-ownership).
+    Now, you can [validate ownership of the private repository](#validate-ownership).
 
 >[!TIP]
 >

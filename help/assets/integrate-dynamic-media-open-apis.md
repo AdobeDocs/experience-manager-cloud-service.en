@@ -6,6 +6,15 @@ exl-id: abd48b5d-2b43-453c-8eb6-31ff509245ca
 ---
 # Integrate AEM Assets with downstream applications {#integrate-dynamic-media-open-apis}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>Dynamic Media with OpenAPI capabilities guide is now available in PDF format. Download the entire guide and use Adobe Acrobat AI Assistant to answer your queries. 
+>
+>[!BADGE Dynamic Media with OpenAPI capabilities Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+
 All [approved assets](/help/assets/approve-assets.md) available in Experience Manager assets repository are available for delivery to downstream applications.
 
 You can either integrate your own custom user interface with the Experience Manager Assets repository using the Search and Delivery APIs or use Adobe's Micro-Frontend Asset Selector.

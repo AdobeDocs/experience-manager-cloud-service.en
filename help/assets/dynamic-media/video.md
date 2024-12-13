@@ -61,17 +61,17 @@ The following step-by-step workflow description is designed to help you get up a
     * Work with video metadata
 
         * Edit the properties of video such as the title, description, and tags, custom metadata fields:
-          [Editing video properties](/help/assets/manage-digital-assets.md#editing-properties)
+          [Edit video properties](/help/assets/manage-digital-assets.md#editing-properties)
 
-        * [Managing metadata for digital assets](/help/assets/manage-metadata.md)
+        * [Manage metadata for digital assets](/help/assets/manage-metadata.md)
         * [Metadata schemas](/help/assets/metadata-schemas.md)
 
     * Review, approve, and annotate videos, and maintain full version control
 
-        * [Annotating videos](/help/assets/manage-video-assets.md#annotate-video-assets) or [Annotating assets](/help/assets/manage-digital-assets.md#annotating)
+        * [Annotate videos](/help/assets/manage-video-assets.md#annotate-video-assets) or [Annotating assets](/help/assets/manage-digital-assets.md#annotating)
 
-        * [Creating a version](/help/assets/manage-digital-assets.md#asset-versioning)
-        * [Starting a workflow on an asset](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
+        * [Create a version](/help/assets/manage-digital-assets.md#asset-versioning)
+        * [Start a workflow on an asset](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
 
         * [Review folder assets](/help/assets/bulk-approval.md)
         * [Projects](/help/sites-cloud/authoring/projects/overview.md)
@@ -434,7 +434,7 @@ For Video Reports to work correctly, a Report Suite ID is automatically created 
 
 **To view video reports:**
 
-1. In the upper-left corner of Experience Manager, select the Experience Manager logo. In the left rail, go to **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]** > **[!UICONTROL Video Reports]**.
+1. In the upper-left corner of Experience Manager, select the Experience Manager logo. In the left rail, click ![Hammer icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) > **[!UICONTROL Assets]** > **[!UICONTROL Video Reports]**.
 1. On the Video Reports page, do one of the following:
 
     * Near the upper-right corner, select the **[!UICONTROL Refresh Video Report]** icon.
@@ -518,7 +518,7 @@ You can enable support in Dynamic Media for:
 
 * DASH
 * Multi-captions and audio tracks
-* AI-generated captions (Early Access)
+* AI-generated captions (Limited Availability)
 
 By creating and submitting an Adobe Customer Support case. 
 
@@ -526,9 +526,9 @@ Enabling any of the above three capabilities, enables all of them. So, if you on
 
 | Capability | Description |
 | --- | --- |
-| DASH | DASH (Digital Adaptive Streaming over HTTP) is the international standard for video streaming and is widely adopted across different video viewers. When DASH is enabled on your account, you get the option to choose from either DASH or HLS for adaptive video streaming. Or, you can opt for both with automatic switching between players when **[!UICONTROL auto]** is selected as the playback type in the Viewer preset.<br>Some key benefits from enabling DASH on your account include the following:<br>&bull;Package DASH stream video for adaptive bitrate streaming. This method leads to higher efficiency of delivery. Adaptive streaming ensures the best viewing experience for your customers.<br>&bull;Browser optimized streaming with Dynamic Media players switches between HLS and DASH streaming to ensure the best quality of service. The video player auto-switches to HLS when a Safari browser is used.<br>&bull;You can configure your preferred streaming method (HLS or DASH) by editing the video viewer preset.<br>&bull;Optimized video encoding ensures that no additional storage is used while enabling DASH capability. A single set of video encodings is created for both HLS and DASH to optimize video storage costs.<br>&bull;Helps make video delivery more accessible for your customers.<br>&bull;Get the streaming URL by way of APIs, too. |
+| DASH | DASH (Digital Adaptive Streaming over HTTP) is the international standard for video streaming and is widely adopted across different video viewers. When DASH is enabled on your account, you get the option to choose from either DASH or HLS for adaptive video streaming. Or, you can opt for both with automatic switching between players when **[!UICONTROL auto]** is selected as the playback type in the Viewer preset.<br>Some key benefits from enabling DASH on your account include the following:<ul><li>Package DASH stream video for adaptive bitrate streaming. This method leads to higher efficiency of delivery. Adaptive streaming ensures the best viewing experience for your customers.</li><li>Browser optimized streaming with Dynamic Media players switches between HLS and DASH streaming to ensure the best quality of service. The video player auto-switches to HLS when a Safari browser is used.</li><li>You can configure your preferred streaming method (HLS or DASH) by editing the video viewer preset.</li><li>Optimized video encoding ensures that no additional storage is used while enabling DASH capability. A single set of video encodings is created for both HLS and DASH to optimize video storage costs.</li><li>Helps make video delivery more accessible for your customers.</li><li>Get the streaming URL by way of APIs, too.</li></ul>|
 | Multi-captions and audio tracks | You can benefit from having multiple caption and audio track support automatically enabled. After enablement, all subsequent videos that you upload are processed with a new backend architecture that includes support for adding multiple caption and audio tracks to your videos. |
-| AI-generated captions (Early Access) | Create captions for your videos powered by AI. Using AI, it creates the transcript of the video and converts it into captions. Even the timeline is defined, too. |
+| AI-generated captions (Limited Availability) | Create captions for your videos powered by AI. Using AI, it creates the transcript of the video and converts it into captions. Even the timeline is defined, too. |
 
 >[!IMPORTANT]
 >
@@ -543,16 +543,19 @@ Enabling any of the above three capabilities, enables all of them. So, if you on
     * Your Cloud Services environment (program ID and environment ID).
     * Your Dynamic Media company account name.
     * Your Dynamic Media region: North America (NA), Asia-Pacific (APAC), or Europe-Middle East-Asia (EMEA).
-    * Specify that you want DASH, multi-captions and multi-audio tracks, and AI-generated captions (Early Access) support enabled on your Dynamic Media account, on AEM as a Cloud Service.
+    * Specify that you want DASH, multi-captions and multi-audio tracks, and AI-generated captions (Limited Availability) support enabled on your Dynamic Media account, on AEM as a Cloud Service.
    
 1. Adobe Customer Support adds you to the Customer Wait List based on the order in which requests are submitted.
 1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate and set a target date for enablement.
 1. Adobe Customer Support notifies you after completion.
-1. Now, do either one of the following:
+1. Now, do one or more of the following:
 
     * Create your [video viewer preset](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) as usual.
     * Create your [video profile](/help/assets/dynamic-media/video-profiles.md) as usual.
     * [Add multiple captions and audio tracks](#add-msma) to your video.
+
+
+<!-- HIDDEN AS OF OCTOBER 7, 2024 AS PER EMAIL REQUEST FROM RIYA MIDHA ON SAME DATE 
 
 ## About multiple caption and audio track support for videos in Dynamic Media{#about-msma}
 
@@ -650,11 +653,9 @@ Added captions and captions are supported with WebVTT and Adobe VTT formats. And
 
 1. (Optional) Preview the video before publishing to ensure the captions and audio work as expected. See [Preview a video that has multiple captions and audio tracks](/help/assets/dynamic-media/video.md#preview-video-audio-subtitle).
 
-1. Publish the video. See [Publish assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+1. Publish the video. See [Publish assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md). -->
 
 
-
-<!--
 
 ## About multiple caption and audio track support for videos in Dynamic Media{#about-msma}
 
@@ -701,8 +702,8 @@ Added captions are supported with WebVTT and Adobe VTT formats. And, added audio
 
 1. [Upload your primary video to a folder](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) that already has a video profile assigned to it.
 1. Navigate to the uploaded video asset that you want to add multiple caption and audio tracks.
-1. In asset selection mode, either from the List View or the Card View, select the video asset.
-1. On the toolbar, click the Properties icon (a circle with an "i" in it).
+1. In asset selection mode, either from ![View card icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Card View) or ![View List icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (List View), select the video asset.
+1. On the toolbar, click ![Info icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Properties.
 ![Selected video asset with checkmark over video thumbnail image and View Properties highlighted on the toolbar.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Selected video asset in Card View.*
 1. On the video's Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab.
 
@@ -715,12 +716,12 @@ Added captions are supported with WebVTT and Adobe VTT formats. And, added audio
    >When you have completed either one of the above tasks, return to these steps.
   
    ![Captions and Audio Tracks tab on the Properties page.](/help/assets/dynamic-media/assets/msma-audiotracks.png)
-   *Captions and audio tracks tab on the video's Properties page.*
+   *Captions & Audio tracks tab on the video's Properties page.*
 
 1. To add one or more audio tracks to a video, do the following:
    1. Select **[!UICONTROL Upload Audio Tracks]**.
    1. Navigate to, and select, one or more .mp3 files and open them.
-   1. For audio tracks to be visible in the **[!UICONTROL Select audio or caption]** pop-up list on the media player, you must add required details about each audio track file. Doing so ensures that all audio tracks are properly listed and accessible. Select the pencil icon to the right of an audio track file name. In the **Edit Audio Track** dialog box, enter the following required details:
+   1. For audio tracks to be visible in the **[!UICONTROL Select audio or caption]** pop-up list on the media player, you must add required details about each audio track file. Doing so ensures that all audio tracks are properly listed and accessible. Click ![Draw icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) to the right of an audio track file name. In the **Edit Audio Track** dialog box, enter the following required details:
     
       | Audio Track metadata | Description |
       |--- |--- |
@@ -745,13 +746,13 @@ Added captions are supported with WebVTT and Adobe VTT formats. And, added audio
    | **Option 3** | Text in a caption file (`.vtt`) needs to be corrected, reuploaded to replace the old `.vtt` file, then have AI translate the corrected file.<br>See **Option 3** below. | **[!UICONTROL Translate caption]** |
 
     ![Create Captions options.](/help/assets/dynamic-media/assets/msma-createcaption.png)
-    *The Create Captions drop-down menu gives you three options: Upload Files, Convert audio tracks, and Translate caption.*
+    *The Create Caption drop-down menu gives you three options: Upload Files, Convert audio tracks, and Translate caption.*
 
     +++**Option 1:** *I have my own pre-existing caption files that are in the languages that I want to use* (**[!UICONTROL Upload Files]** option)
 
     1. Near the upper-right side of the page, click **[!UICONTROL Create Caption]** > **[!UICONTROL Upload files]**.
     1. Navigate to, and select, one or more of your pre-existing `.vtt` files and open them.
-    1. For captions to be visible on the media player, you *must* add the required details about *each* caption file that you upload. Select the pencil icon to the right of a caption file name. In the **Edit Caption** dialog box, enter the following required details about the file:
+    1. For captions to be visible on the media player, you *must* add the required details about *each* caption file that you upload. Click ![Draw icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) to the right of a caption file name. In the **Edit Caption** dialog box, enter the following required details about the file:
     
         | Caption metadata | Description |
         |--- |--- |
@@ -784,8 +785,8 @@ Added captions are supported with WebVTT and Adobe VTT formats. And, added audio
     
         | Option | Description |
         |--- |--- |
-        | Audio track to convert | In the drop-down list, choose the uploaded audio track file from which you want captions generated using AI.  |
-        | Output languages | In the drop-down list, select one or more languages in which you want the caption file to appear.<br>To remove a selected language, click **X**.<br>During video playback, the list of languages appears in the media player in the order that you select them here. |
+        | Audio track to convert | Click ![Chevron Down icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg), then choose the uploaded audio track file from which you want captions generated using AI.  |
+        | Output languages | Click ![Chevron Down icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg), then select one or more languages in which you want the caption file to appear.<br>To remove a selected language, click ![Close icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg).<br>During video playback, the list of languages appears in the media player in the order that you select them here. |
 
     1. Click **[!UICONTROL Done]**.
     1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**. 
@@ -795,7 +796,7 @@ Added captions are supported with WebVTT and Adobe VTT formats. And, added audio
         >
         >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
 
-    1. (Optional) Select the pencil icon to the right of a caption file name. In the **Edit Caption** dialog box, you can edit the following details about the file:
+    1. (Optional) Click ![Draw icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) to the right of a caption file name. In the **Edit Caption** dialog box, you can edit the following details about the file:
 
         | Caption metadata | Description |
         | --- | --- |
@@ -814,12 +815,12 @@ Added captions are supported with WebVTT and Adobe VTT formats. And, added audio
         ![Translate Captions dialog box.](/help/assets/dynamic-media/assets/msma-translate-captions.png)
         *The Translate Captions dialog box lets you use an existing caption file to have AI generate new caption files in multiple languages.*
 
-    1. In the **Translate caption** dialog box, set the following options:
+    1. In the **Translate Captions** dialog box, set the following options:
 
         | Option | Description |
         |--- |--- |
-        | Caption to translate | In the drop-down list, choose a caption file from which you want the captions generated using AI. |
-        | Output languages | In the drop-down list, select one or more languages in which you want the caption file to appear.<br>To remove a selected language, click **X**.<br>During video playback, the list of languages appears in the media player in the order that you select them here. |
+        | Caption to translate | Click ![Chevron Down icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg), then choose a caption file from which you want the captions generated using AI. |
+        | Output languages | Click ![Chevron Down icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg), then select one or more languages in which you want the caption file to appear.<br>To remove a selected language, click ![Close icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg).<br>During video playback, the list of languages appears in the media player in the order that you select them here. |
 
     1. Click **[!UICONTROL Done]**.
     1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**. 
@@ -829,7 +830,7 @@ Added captions are supported with WebVTT and Adobe VTT formats. And, added audio
         >
         >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
 
-    1. (Optional) Select the pencil icon to the right of a caption file name. In the **Edit Caption** dialog box, you can edit the following details about the file:
+    1. (Optional) Click ![Draw icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) to the right of a caption file name. In the **Edit Caption** dialog box, you can edit the following details about the file:
 
         | Caption metadata | Description |
         | --- | --- |
@@ -844,8 +845,6 @@ Added captions are supported with WebVTT and Adobe VTT formats. And, added audio
 
 1. (Optional) Preview the video before publishing to ensure the captions and audio work as expected. See [Preview a video that has multiple captions and audio tracks](#preview-video-audio-subtitle).
 1. Publish the video. See [Publish assets](publishing-dynamicmedia-assets.md).
-
--->
 
 #### About adding caption and audio track files to a video that is already published
 
@@ -883,11 +882,12 @@ You can observe the lifecycle status of any caption or audio track file uploaded
 **To view the lifecycle status of a video:**
 
 1. Navigate to the video asset whose lifecycle status you want to view.
-1. In asset selection mode, either from the List View or the Card View, select the video asset.
-1. On the toolbar, select the Properties icon (a circle with an "i" in it).
-1. On the Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab. In the Status column, note the state of each caption or audio file.
+1. In asset selection mode, either from ![View card icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Card View) or ![View List icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (List View), select the video asset.
+1. On the toolbar, click ![Info icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Properties.
+1. On the **Properties** page, select the **[!UICONTROL Captions & Audio Tracks]** tab. 
+1. In the **[!UICONTROL Status]** column, note the state of each caption or audio file.
 
-| Caption or Audio Track Status | Description |
+| Status of Captions and Audio Tracks | Description |
 | --- | --- |
 | Processing | When a new caption or audio track file is added and saved, it goes into a "Processing" state. Dynamic Media processes the file by attaching the streaming manifest to the primary video. |
 | Processed | After processing is complete, the caption or audio track file, or the original audio track associated with the primary video, appear in a "Processed" state. You can preview caption and audio track files that appear as "Processed" *before* you publish the video live. |
@@ -895,7 +895,6 @@ You can observe the lifecycle status of any caption or audio track file uploaded
 | Failed | A "Failed" state means that processing of a caption or audio track file did not complete. Delete the caption or audio track file and upload again. |
 | Unpublished | When a published primary video is unpublished explicitly, any caption or audio track files that you added to the video, are also unpublished. |   
 
-![Status column highlighted for Captions and Audio Tracks fields.](/help/assets/dynamic-media/assets/msma-lifecycle-status.png)*Lifecycle status of each uploaded caption and audio track file.*
 
 ### Set the default audio for a video that has multiple audio tracks
 
@@ -913,16 +912,16 @@ However, any uploaded audio track files can be set as the default audio to play 
 **To set the default audio for a video that has multiple audio tracks:**
 
 1. Navigate to the video asset whose default audio track you want to set.
-1. In asset selection mode, either from the List View or the Card View, select the video asset.
-1. On the toolbar, select the Properties icon (a circle with an "i" in it).
+1. In asset selection mode, either from ![View card icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Card View) or ![View List icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (List View), select the video asset.
+1. On the toolbar, click ![Info icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Properties.
 1. On the Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab. 
 1. Under the **Audio Tracks** heading, select the audio track file that you want to set as the video's default.
-1. Select **[!UICONTROL Set as default]**.
-In the **Set as default** dialog box, select **[!UICONTROL Replace]**.
+1. Click ![Audio icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Audio_18_N.svg) **[!UICONTROL Set as default]**.
+1. In the **Set as default** dialog box, click **[!UICONTROL Replace]**.
 
    ![The Audio Tracks heading with a selected audio track file name and highlighted "Set as default" button.](/help/assets/dynamic-media/assets/msma-defaultaudiotrack.png)*Setting the default audio track for a video.*
 
-1. In the upper-right corner, select **[!UICONTROL Save & Close]**.
+1. In the upper-right corner, click **[!UICONTROL Save & Close]**.
 1. Publish the video. See [Publish assets](publishing-dynamicmedia-assets.md).
 
 ### Preview a video that has multiple captions and audio tracks {#preview-video-audio-subtitle}
@@ -942,22 +941,21 @@ See [Add Dynamic Media Assets to pages](/help/assets/dynamic-media/adding-dynami
 **To preview a video that has multiple captions and audio tracks:**
 
 1. In **[!UICONTROL Assets]**, navigate to an existing video that you have added multiple captions and audio tracks. 
-1. Click the video asset so you can open it in preview mode.
-1. On the preview page, near the upper-left corner of the page, select the drop-down list, then select **[!UICONTROL Viewers]**.
+1. Click the video asset to open it in preview mode.
+1. On the preview page, near the upper-left corner of the page, click ![Rail Left icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RailLeft_18_N.svg) ![Chevron Down icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg), then select **[!UICONTROL Viewers]**.
 
    ![Drop-down list showing the Viewers option.](/help/assets/dynamic-media/assets/msma-selectviewers.png)
 
-1. From the Viewers list, select a viewer that you want to use for the video preview. As an example, the following screenshot shows the **[!UICONTROL Video]** viewer being selected.
+1. Near the upper-left corner of the page, click ![Rail Left icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RailLeft_18_N.svg) Viewers ![Chevron Down icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg), then select a viewer that you want to use for the video preview.
 
-   ![Selection of the Video viewer from the Viewers drop-down list.](/help/assets/dynamic-media/assets/msma-dmviewerselected.png)
-
-1. Near the lower-right corner, to the left of the volume icon, select the speech bubble icon, then select the audio or caption you want to hear, or see or both. If desired, under Captions, you can disable the display of any captions by clicking **[!UICONTROL Off]**.
+1. Near the lower-right corner of the page, click the speech bubble icon, then select the audio or subtitle/caption you want to hear, or see, or both.
 
     ![The Audio and Captions pop-up list in the Video viewer.](/help/assets/dynamic-media/assets/msma-selectaudiosubtitle.png)*Simulation of a user selecting the audio and caption for video playback.*
 
-1. To begin playback, select the video's **[!UICONTROL Play]** button. 
-    Note the **[!UICONTROL URL]** and **[!UICONTROL Embed]** buttons in the lower-left corner. Use these buttons to [link the video's URL to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) or to [embed the video on a Web Page](/help/assets/dynamic-media/embed-code.md), respectively.
-1. Near the upper right corner of the preview page, select **[!UICONTROL Close]**.
+1. To begin playback, click ![PLay icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PlayCircle_22_N.svg).
+    If desired, click ![Maximize icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Maximize_22_N.svg) to maximize the viewing window. 
+    Notice the **[!UICONTROL URL]** and **[!UICONTROL Embed]** buttons near the lower-left corner of the page. Use these buttons to [link the video's URL to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) or to [embed the video on a Web Page](/help/assets/dynamic-media/embed-code.md), respectively.
+1. Near the upper-right corner of the preview page, click **[!UICONTROL Close]**.
 
 ### Delete caption or audio track files from a video
 
@@ -968,13 +966,13 @@ The original audio track extracted from a primary video cannot be deleted.
 **To delete caption or audio track files from a video:**
 
 1. Navigate to the video asset whose default audio track you want to set.
-1. In asset selection mode, either from the List View or the Card View, select the video asset.
-1. On the toolbar, select the Properties icon (a circle with an "i" in it).
+1. In asset selection mode, either from ![View card icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Card View) or ![View List icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (List View), select the video asset.
+1. On the toolbar, click ![Info icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Properties.
 1. On the Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab.
 1. Do either one of the following:
 
-   * Captions - Under the **Captions** heading, select one or more caption files that you want to delete from the video, then click **[!UICONTROL Delete]**.
-   * Audio Tracks - Under the **Audio Tracks** heading, select one or more audio track files that you want to delete from the video, then click **[!UICONTROL Delete]**.
+   * Captions - Under the **Captions** heading, select one or more caption files that you want to delete from the video, then click ![Delete icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg) **[!UICONTROL Delete]**.
+   * Audio Tracks - Under the **Audio Tracks** heading, select one or more audio track files that you want to delete from the video, then click ![Delete icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg) **[!UICONTROL Delete]**.
 
 1. In the Delete dialog box, click **[!UICONTROL OK]**.
 1. Publish the video.
@@ -990,22 +988,23 @@ The original audio track extracted from a primary video file cannot be downloade
 **To download caption or audio track files that were uploaded to a video:**
 
 1. Navigate to the video asset whose default audio track you want to set.
-1. In asset selection mode, either from the List View or the Card View, select the video asset.
-1. On the toolbar, select the Properties icon (a circle with an "i" in it).
-1. On the Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab.
+1. In asset selection mode, either from ![View card icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Card View) or ![View List icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (List View), select the video asset.
+1. On the toolbar, click ![Info icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Properties.
+1. On the **Properties** page, select the **[!UICONTROL Captions & Audio Tracks]** tab.
 1. Do either one of the following:
 
-   * Captions - Under the **Captions** heading, select one or more caption files that you want to download from the video, then select **[!UICONTROL Download]**.
-   * Audio Tracks - Under the **Audio Tracks** heading, select one or more audio track files that you want to download from the video, then select **[!UICONTROL Download]**.
+   * Captions - Under the **Captions** heading, select one or more caption files that you want to download from the video, then click ![Download icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Download_22_N.svg) **[!UICONTROL Download]**.
+   * Audio Tracks - Under the **Audio Tracks** heading, select one or more audio track files that you want to download from the video, then click ![Download icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Download_22_N.svg) **[!UICONTROL Download]**.
 
 1. In the Download dialog box, set the following options:
 
-    | Option | Description |
+    | Download option | Description |
     |--- |--- |
     | Save As | Use the default file name specified in the Save As text field, or specify your own name. |
     | Create a separate folder for each asset | Create a folder for each caption file or audio track file that you selected for download. |
     | Email | Use your default email program to send the .zip file to a specified email address. |
     | Assets | Specifies the number of files that you are downloading and the combined total size of all selected files. Deselecting this option dims (turns off) the **[!UICONTROL Download]** button, preventing you from downloading any file. |
+    | Renditions | A rendition refers to an alternative version or a preview of the original file, usually a smaller or lower-resolution version. If it is shown as 0 B, it likely means that no alternate version is available or it is too small to register a size. | 
 
 1. Select **[!UICONTROL Download]**.
 1. Publish the video. See [Publish assets](publishing-dynamicmedia-assets.md).
@@ -1055,7 +1054,7 @@ See [Serving static (non-image) contents](https://experienceleague.adobe.com/en/
 
    For best results, use the tool in Internet Explorer 9 or above, Google Chrome, or Safari.
 
-   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then select **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video.-->
+   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then select **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video. -->
 
   Follow the onscreen instructions from a site to author and save your WebVTT file. When you have finished, copy the caption file contents and paste it into a plain text editor and save it with a VTT filename extension.
 
@@ -1080,11 +1079,11 @@ See [Serving static (non-image) contents](https://experienceleague.adobe.com/en/
 
       Note the `,1` at the end of the caption path. Immediately following the VTT filename extension in the path, you can optionally enable (turn on) or disable (turn off) the closed caption button on the video player bar by setting to `,1` or `,0`, respectively.
 
-    * For an embedded video viewer experience, select **[!UICONTROL Embed Code]**. In the Embed Code dialog box, select, and copy the embed code to the Clipboard and then paste the code into a simple text editor. Append the copied embed code with the following syntax:
+    * For an embedded video viewer experience, click **[!UICONTROL Embed Code]**. In the Embed Code dialog box, select, and copy the embed code to the Clipboard and then paste the code into a simple text editor. Append the copied embed code with the following syntax:
 
       `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
-      Note the `,1` at the end of the caption path. Immediately following the VTT filename extension in the path, you can optionally enable (turn on) or disable (turn off) the closed caption button on the video player bar by setting to `,1` or `,0`, respectively.
+      Notice the `,1` at the end of the caption path. Immediately following the VTT filename extension in the path, you can optionally enable (turn on) or disable (turn off) the closed caption button on the video player bar by setting to `,1` or `,0`, respectively.
 
 ## Add chapter markers to video {#adding-chapter-markers-to-video}
 
@@ -1165,7 +1164,6 @@ See [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/).
    </table>
 
 
-
 ## About video thumbnails {#about-video-thumbnails}
 
 A video thumbnail is a reduced-size version of a video frame or an image asset representing the video to the customer. The thumbnail should serve to encourage a customer to select the video.
@@ -1185,26 +1183,28 @@ The ability to customize a video thumbnail is only available after you have appl
 
     * [Uploaded your videos to the folder](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
 
+
 1. Navigate to an uploaded video asset whose thumbnail image you want to change.
-1. In asset selection mode either from **[!UICONTROL List View]** or **[!UICONTROL Card View]**, select the video asset.
-1. On the toolbar, select the **[!UICONTROL Properties]** icon (a circle with an "i" in it).
-1. On the video's Properties page, select **[!UICONTROL Change Thumbnail]**.
-1. On the Change Thumbnail page, do one of the following:
+1. In asset selection mode, either from ![View card icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Card View) or ![View List icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (List View), select the video asset.
+1. On the toolbar, click ![Info icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Properties.
+1. On the video's Properties page, click **[!UICONTROL Change Thumbnail]**.
+1. On the Change Thumbnail dialog box, do one of the following:
 
     * To use a frame from the video as the new thumbnail:
 
-        * On the toolbar, click the **[!UICONTROL Select Frame from video]** option.
-        * Select the Play button, then select the Pause button on the frame you want to capture as the video's new thumbnail.
+        * On the toolbar, click the **[!UICONTROL Select Frame from video]** tab.
+        * Click ![Play icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PlayCircle_22_N.svg).
+        * Click ![Pause icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PauseCircle_22_N.svg) on the frame that you want to capture as the video's new thumbnail.
 
     * To use an image asset as the new thumbnail:
 
-        * On the toolbar, select **[!UICONTROL Select Thumbnail from Assets]**.
-        * Select **[!UICONTROL Select Thumbnail]**.
+        * On the toolbar, click the **[!UICONTROL Select Thumbnail from Assets]** tab.
+        * Click the **[!UICONTROL Select thumbnail]** button.
         * Navigate to a previously uploaded and published image asset that you want to use. The asset is automatically resized to serve as a thumbnail image for the video.
-        * Select the image asset, then select **[!UICONTROL Select]**.
+        * Select the image asset, then click **[!UICONTROL Select]**.
 
-1. On the Change Thumbnail page, select **[!UICONTROL Save Change]**.
-1. On the video's Properties page, in the upper-right corner, select **[!UICONTROL Save & Close]**.
+1. On the Change Thumbnail dialog box, click **[!UICONTROL Save Change]**.
+1. On the video's Properties page, in the upper-right corner, click **[!UICONTROL Save & Close]** or **[!UICONTROL Save]**.
 
 
 
