@@ -55,7 +55,7 @@ To integrate AEM Forms with the Turnstile service, perform the following steps:
     1. Specify **[!UICONTROL Title]**, **[!UICONTROL Name]**, **[!UICONTROL Site Key]**, and **[!UICONTROL Secret Key]** for Turnstile service [obtained in the prerequisite](#prerequisite). 
     1. Click **[!UICONTROL Create]**.
 
-        ![Configure the Cloud Service to connect your AEM Forms environment with Turnstile](assets/config-turntstile.png)
+        ![Configure the Cloud Service to connect your AEM Forms environment with Turnstile](assets/config-turntstile-cc.png)
 
     >[!NOTE]
     > Users need not to modify Client-side JavaScript validation URL and Server-side validation URL as they are already prefilled for Turnstile validation.
