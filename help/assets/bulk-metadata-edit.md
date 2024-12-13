@@ -1,6 +1,7 @@
 ---
 title: Bulk metadata edit in Assets View
 description: Learn how you can simultaneously edit the metadata of multiple assets available on the Assets View.
+exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
 ---
 # Bulk metadata edit in Assets View{#how-to-edit-the-metadata-of-multiple-assets-simultaneously}
 
@@ -32,5 +33,3 @@ To see the applied metadata changes to an asset, navigate to the asset details p
 >[!NOTE]
 >
 >Status, Expiration Date, Author and Keywords <!-- and Tags--> are standard metadata properties available for bulk metadata editing, regardless of folder-specific metadata. These metadata properties display on the asset details page only if they are included in the metadata form applied to the asset's folder.  If you cannot see these metadata properties on the asset details page then edit the asset folder's metadata form to include them. See [Metadata in Assets View](/help/assets/metadata-assets-view.md) to learn how to create or edit a metadata form and apply it to a folder.
-
- 
