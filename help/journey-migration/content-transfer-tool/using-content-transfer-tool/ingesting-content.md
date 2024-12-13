@@ -42,6 +42,9 @@ Follow the steps below to ingest your migration set using the Cloud Acceleration
 
    >[!NOTE]
    > If the target tier is `Author`, the author instance is shut down during the length of the ingestion and becomes unavailable to users (for example, authors or anyone performing maintenance). The reason is to protect the system, and prevents any changes which could either be lost or cause an ingestion conflict. Ensure that your team is aware of this fact. Also note that the environment appears hibernated during the author ingestion.
+   
+   >[!NOTE]
+   > If the target tier is `Publish`, the publish instance remains running during ingestion.  However, if the compaction process is running while ingestion occurs, a conflict between the two processes is likely to happen.  For this reason the ingestion process 1) disables the compaction timed script so compaction will not start during the ingestion, and 2) checks if compaction is currently running, and if it is, waits for it to complete before the ingestion proceeds.  If the publish ingestion is taking longer than expected, check the ingestion logs for related log statements.
 
    * **Wipe:** Choose the `Wipe` value
      * The **Wipe** option sets the destination's starting point of the ingestion. If **Wipe** is enabled, the destination including all its content is reset to the version of AEM that is specified in Cloud Manager. If not enabled, the destination maintains its current content as the starting point.
@@ -58,8 +61,9 @@ Follow the steps below to ingest your migration set using the Cloud Acceleration
    >[!IMPORTANT]
    > You can initiate an ingestion to the destination environment only if you belong to the local **AEM administrators** group on the destination Cloud Service author service. If you are unable to start an ingestion, see [Unable to Start Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) for more details.
 
-1. Once ingestion choices have been selected, an estimate of its duration will be shown. This is a best-effort estimate based on historical data of similar ingestions.
+1. Once ingestion choices have been selected, an estimate of its duration may be shown. This is a best-effort estimate based on historical data of similar ingestions.
 
+   * This estimate is not calculated or shown for **non-wipe** ingestions, as CAM does not know how much content is on the target system in this case.
    * This estimate is only calculated and shown if the 'Check Size' values of the extraction were collected and are available.
    * This value is an estimate and, although intelligently calculated, should not be considered exact. Various factors can change the actual duration.
    * While the ingestion is running, this value will also be available in the durations dialog, accessed through the "**View durations**" action of the ingestion.

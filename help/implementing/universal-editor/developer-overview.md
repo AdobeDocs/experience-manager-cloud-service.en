@@ -144,7 +144,7 @@ You must add the necessary JavaScript library to the page component of the WKND 
 1. Add the JavaScript library to the end of the file.
 
    ```html
-   <script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>
+   <script src="https://universal-editor-service.adobe.io/cors.js" async></script>
    ```
 
 1. Click **Save All** and then reload the Universal Editor.
@@ -154,7 +154,12 @@ The page now loads with the proper JavaScript library to allow the Universal Edi
 >[!TIP]
 >
 >* The library can be loaded either in the header or the footer.
->* The `universal-editor-embedded.js` library [is available on NPM](https://www.npmjs.com/package/@adobe/universal-editor-cors) and you can host it yourself if that is required or place it directly into your application.
+
+>[!NOTE]
+>
+>The previously-recommend method to include the JavaScript library, `<script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>` or via npmjs.com is no longer recommended as the package has been deprecated.
+>
+>If an app still uses the deprecated package, the Universal Editor will display a warning in the UI that an outdated package is detected.
 
 ## Defining a Connection to Persist Changes {#connection}
 

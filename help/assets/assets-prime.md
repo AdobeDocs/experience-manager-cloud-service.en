@@ -30,6 +30,12 @@ Assets as a Cloud Service Prime includes a lightweight DAM that enables you to p
 
 * **Dynamic Media (add-on)**: Tools to transform and deliver images, videos, and other emerging content for rich, interactive, multimedia experiences for any device at scale.
 
+   >[!NOTE]
+   >
+   >Dynamic Media with OpenAPI capabilities, which provides you access to basic image modifiers like rotate, crop (manual only - no smart crop), flip, size, preferwebp, height, width, quality, format and adaptive video streaming, is also available with Assets Prime. Reach out to Adobe account team to learn more.
+
+1. [Create a new program](/help/journey-onboarding/create-program.md).
+
 However, as your DAM needs grow and you need more capabilities, such as, UI extensibility, API-driven automation, and custom code deployment, you must consider upgrading to [Assets Ultimate](/help/assets/assets-ultimate-overview.md).
 
 This article provides an end-to-end workflow to enable Assets as a Cloud Service Prime.
