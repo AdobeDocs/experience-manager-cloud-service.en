@@ -2,6 +2,7 @@
 title: Rename and bulk assets rename in [!DNL Assets view]
 description: Learn how to bulk rename assets using the new Assets UI (Assets view). It provides the ability to rename multiple assets at once.
 role: User
+exl-id: e041811b-0246-408f-9246-248da55f66a1
 ---
 # Rename asset or folder in [!DNL Assets view] {#rename-single-asset-or-folder}
 
