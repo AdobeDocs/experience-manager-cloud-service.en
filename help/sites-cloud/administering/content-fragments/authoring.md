@@ -473,6 +473,8 @@ The **Comments** tab in the right panel provides the following capabilities:
 
 * Add a new comment
 * Tag specific users in a comment
+  * They will receive a notification, with a link to open the fragment directly
+* Like an existing comment
 * Reply to a comment
 * Format your comments; basic formatting is available
 * Perform a text search through existing comments
