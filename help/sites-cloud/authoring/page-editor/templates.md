@@ -1,21 +1,25 @@
 ---
-title: Creating Page Templates
-description: The template defines the structure of the resultant page and with the template editor, creating and maintaining templates is no longer a developer-only task
+title: Templates to Create Pages that are Editable with the Page Editor
+description: You can use the Template Editor to create templates that your content authors can use to create pages that are editable with the Page Editor.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
 ---
-# Creating Page Templates {#creating-page-templates}
 
-When creating a page, you must select a template, which is used as the basis for creating the new page. The template defines the structure of the resultant page, any initial content, and the components that can be used.
+# Templates to Create Pages that are Editable with the Page Editor {#creating-page-templates}
 
-With the **Template Editor**, creating and maintaining templates is no longer a developer-only task. A type of power-user, who is called a **template author**, can be involved too. Developers are still required to setup the environment, create client libraries, and create the components to be used, but once these basics are in place the **template author** has the flexibility to create and configure templates without a development project.
+You can use the Template Editor to create templates that your content authors can use to create pages that are editable with the Page Editor.
 
-The **Templates Console** allows template authors to:
+## Overview {#overview}
 
-* Create a new template or copy an existing template.
-* Manage the life cycle of the template.
+When an author creates a page, they must select a template, which is used as the basis for the new page. The template defines the structure of the resultant page, any initial content, and the components that can be used when editing the page in the Page Editor.
+
+>[!NOTE]
+>
+>[Templates are also available for creating pages that are editable with the Universal Editor.](/help/sites-cloud/authoring/universal-editor/templates.md)
+
+With the **Template Editor**, creating and maintaining templates is not developer-only task. A type of power-user, who is called a **template author**, can create templates. Developers are required to setup the environment, create client libraries, and create the components to be used, but once these basics are in place the **template author** has the flexibility to create and configure templates without involving a developer.
 
 The **Template Editor** allows template authors to:
 
@@ -23,9 +27,9 @@ The **Template Editor** allows template authors to:
 * Pre-configure the components.
 * Define which components can be edited on pages created with the template.
 
-This document explains how a **template author** can use the template console and editor to create and manage editable templates.
+This document explains how a **template author** can use the **Template Editor** to create and manage editable templates.
 
-For detailed information about how editable templates work at a technical level, see the developer document [Page Templates](/help/implementing/developing/components/templates.md) for more information.
+For detailed information about how editable templates work at a technical level, see the developer document [Editable Templates](/help/implementing/developing/components/templates.md) for more information.
 
 >[!NOTE]
 >
@@ -33,15 +37,15 @@ For detailed information about how editable templates work at a technical level,
 
 ## Before You Start {#before-you-start}
 
+Before you start, it is important to consider that creating a template requires collaboration. For this reason the [Role](#roles) is indicated for each task. This does not impact how you actually use a template to create a page, but it does impact how a page relates to its template.
+
 >[!NOTE]
 >
 >An administrator must configure a template folder in the **Configurations Browser** and apply proper permissions before a template author can create a template in that folder.
 
-Before you start, it is important to consider that creating a template requires collaboration. For this reason the [Role](#roles) is indicated for each task. This does not impact how you actually use a template to create a page, but it does impact how a page relates to its template.
-
 ### Roles {#roles}
 
-Creating a new template using the **Templates Console** and the **Template Editor** requires collaboration between the following roles:
+Creating a new template requires collaboration between the following roles:
 
 * **Admin**:
   * Creates a new folder for templates requires `admin` rights.
@@ -66,9 +70,6 @@ The tasks detailed in this document are listed with the role responsible for car
 
 When creating an editable template you:
 
-* Use the **Template** console. This is available in the **General** section of the **Tools** console.
-  * Or directly at: `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
-* Can [create a folder for the templates](#creating-a-template-folder-admin) if necessary
 * [Create a new template](#creating-a-new-template-template-author), which will initially be empty
 * [Define additional properties](#defining-template-properties-template-author) for the template if necessary
 * [Edit the template](#editing-templates-template-authors) to define the:
@@ -86,7 +87,7 @@ When creating an editable template you:
 
 >[!TIP]
 >
->Never enter any information that must be internationalized into a template. <!-- Never enter any information that must be [internationalized](/help/sites-developing/i18n.md) into a template.-->
+>Never enter any information that must be [internationalized](/help/implementing/developing/extending/i18n/dev.md) into a template.
 >
 >For template elements such as headers and footers that must be localized, use the [localization features of the core components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
 
@@ -96,7 +97,7 @@ A template folder should be created for your project to hold your project-specif
 
 ### Creating a New Template - Template Author {#creating-a-new-template-template-author}
 
-1. Open the **Templates Console** (by way of **Tools &gt;** **General**) then navigate to the required folder.
+1. Open the **[Templates Console](/help/sites-cloud/administering/templates-console.md)** then navigate to the required folder.
 
    >[!NOTE]
    >
@@ -123,7 +124,7 @@ A template folder should be created for your project to hold your project-specif
    >
    >When a new template is created it is marked as **Draft** in the console, this indicates that it is not yet available to use by page authors.
 
->[!NOTE]
+>[!TIP]
 >
 >Templates are powerful tools to streamline your page creation workflow. However too many templates can overwhelm the authors and make page creation confusing. A good rule of thumb is to keep the number of templates under 100.
 >
@@ -142,15 +143,7 @@ A template can have the following properties:
 * Description
   * An optional description to provide more information about the template and its use, which can be seen for example, in the **Create Page** wizard.
 
-To view and/or edit the properties:
-
-1. In the **Templates Console**, select the template.
-1. Select **View Properties** from the toolbar or quick options to open the dialog.
-1. You can now view or edit the template properties.
-
->[!NOTE]
->
->The status of a template (draft, enabled, or disabled) is indicated in the console.
+After creating the template, use the **[Templates Console](/help/sites-cloud/administering/templates-console.md)** to view or edit the template properties.
 
 #### Template Thumbnail Image {#template-thumbnail-image}
 
@@ -175,17 +168,11 @@ To be able to use a template when creating a page you need to:
 
 A template can be enabled or disabled to make it available or unavailable in the **Create Page** wizard.
 
+Use the **[Templates Console](/help/sites-cloud/administering/templates-console.md)** to enable or disable a template.
+
 >[!CAUTION]
 >
 >After a template is enabled, a warning is displayed when a template author starts to update the template further. This is to inform the user that the template might be referenced, so any changes might affect the pages referencing the template.
-
-1. In the **Templates Console**, select the template.
-1. Select **Enable** or **Disable** from the toolbar, and again in the confirmation dialog.
-1. You can now use your template when [creating a page](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page), though you will probably want to [edit the template](#editing-templates-template-authors) according to your requirements.
-
->[!NOTE]
->
->The status of a template (draft, enabled, or disabled) is indicated in the console.
 
 #### Allowing a Template - Author {#allowing-a-template-author}
 
@@ -205,7 +192,6 @@ A template can be made available or unavailable for certain page branches.
    >
    >If the **Allowed Templates** list is left empty, then the tree is ascended until a value/list is found.
    >
-   >
    >See [Template Availability](/help/implementing/developing/components/templates.md#template-availability) - the principles for allowed templates remain the same.
 
 1. Click **Save** to save the changes to the page properties.
@@ -218,10 +204,7 @@ A template can be made available or unavailable for certain page branches.
 
 As the template is referenced when a page is rendered, the fully configured template must be published so that it is available on the publish environment.
 
-1. In the **Templates Console**, select the template.
-1. Select **Publish** from the toolbar to open the wizard.
-1. Select the **Content Policies** to be published in tandem.
-1. Select **Publish** from the toolbar to complete the action.
+Publish templates using the **[Templates Console.](/help/sites-cloud/administering/templates-console.md)**
 
 ## Editing Templates - Template Authors {#editing-templates-template-authors}
 
@@ -658,4 +641,4 @@ When creating templates you should consider:
    >AEM gives explicit warnings when changing the lock status of components on templates that are no longer drafts.
 
 1. [Creating your own folders](#creating-a-template-folder-admin) for your site-specific templates.
-1. [Publish your templates](#publishing-a-template-template-author) from the **Templates** console.
+1. [Publish your templates](#publishing-a-template-template-author) from the **[Templates console.]**(/help/sites-cloud/administering/templates-console.md)

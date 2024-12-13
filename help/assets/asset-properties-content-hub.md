@@ -1,26 +1,35 @@
 ---
-title: Asset properties in [!DNL the Content Hub]
-description: Learn how to view and manage asset properties in [!DNL Content Hub]
+title: Preview asset and its properties in [!DNL the Content Hub]
+description: Learn how to preview assets and properties in [!DNL Content Hub]
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
 ---
-# Manage asset properties in Content Hub {#asset-properties}
+# Preview asset and its properties in Content Hub {#asset-properties}
+
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
 
 ![Metadata banner image](assets/metadata-banner-image.png)
 
+>[!AVAILABILITY]
+>
+>Content Hub guide is now available in PDF format. Download the entire guide and use Adobe Acrobat AI Assistant to answer your queries. 
+>
+>[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+
 [!DNL The Content Hub] allows you to view information about the asset which is critical for efficient asset distribution. It is the collection of all the data available for an asset.
 
-Viewing asset properties help you further categorize assets and is helpful as the amount of digital information grows. It is possible to manage a few hundred files based on just the filenames, thumbnails, and memory. However, this approach is not scalable when the number of people involved, and the number of managed assets increase. In addition, the value of a digital asset grows, as the asset becomes:
+Viewing asset preview and its properties help you further categorize assets and is helpful as the amount of digital information grows. It is possible to manage a few hundred files based on just the filenames, thumbnails, and memory. However, this approach is not scalable when the number of people involved, and the number of managed assets increase. In addition, the value of a digital asset grows, as the asset becomes:
 
 * More accessible - systems and users can find it easily.
-* Easier to manage - you can find assets with the same set of properties easily and apply changes to them.
+* Easier to act on - you have full information on assets' visuals and related information, to be able to act on them faster and with more trust.
 * Complete - asset carries more information and context.
 
 ## Prerequisites {#prerequisites}
 
 [Content Hub users](deploy-content-hub.md#onboard-content-hub-users) can perform actions mentioned in this article.
 
-## View properties of an asset {#properties-ui}
+## Preview asset and its properties {#properties-ui}
 
 Before you use, share, or download an asset, you can view it more closely. The preview feature lets you view not just the images but a few other supported asset types as well. You can not only view the asset but also view its detailed information and take other actions. To view information of an asset, navigate to the asset or [search](search-assets.md) the asset and then click the asset to open its properties. The following figure demonstrates the fields available on an asset properties page: 
 
@@ -39,9 +48,9 @@ Before you use, share, or download an asset, you can view it more closely. The p
 * **K:** Close preview screen
 * **L:** Information of an asset which includes title, format, size, resolution, tags, color tags, and smart tags. 
 
-## Supported formats {#supported-formats}
+## Supported asset formats {#supported-formats}
 
-The following table demonstrates the supported file formats in [!DNL the Content Hub]: 
+[!DNL Content Hub] supports all asset types and formats that the underlying [!DNL Assets] repository supports. The following table lists key file formats in [!DNL the Content Hub], which provide additional support for previewing assets visually:
 
 <table> 
     <tbody>
@@ -89,15 +98,15 @@ The following table demonstrates the supported file formats in [!DNL the Content
     </tbody>
    </table>
 
-### Derived properties after uploading an asset {#derived-properties}
+### Derived properties {#derived-properties}
 
-Once you upload an asset, the Content Hub derives some properties that are generated automatically. The following is a list of some of them:
+Some properties for assets shown in [!DNL Content Hub] are derived, or generated automatically, when assets are uploaded to [!DNL Assets] and then approved for availability on [!DNL Content Hub]. The following is a list of some of them:
 
-* **Size:** Size demonstrates the logical value of an asset as per its dimensions. It clarifies the space that an asset is taking in a repository. [!DNL The Content Hub] supports assets up to 2GB. 
+* **Size:** Size represents the size of the asset binary stored in the underlying repository. 
 
 <!--* **Tags:** Tags help you categorize assets that can be browsed and searched more efficiently. Tagging helps in propagating the appropriate taxonomy to other users and workflows. -->
 
-* **Smart Tags:** [!DNL The Content Hub] uses Adobe Sensei's smart content services to train assets using recognition algorithm on the tags-based structure. This content intelligence is then used to apply relevant tags on a different set of assets. Smart Tags increase the content velocity of your projects by helping that you find relevant assets quickly. The smart tags are an example of asset information that is not contained in the image. [!DNL The Content Hub] automatically applies smart tags to assets, by default. 
+* **Smart Tags:** [!DNL The Content Hub] uses Adobe Sensei's smart content services to train assets using recognition algorithm on the tags-based structure. This content intelligence is then used to apply relevant tags on a different set of assets. Smart Tags increase the content velocity of your projects by helping that you find relevant assets quickly. The smart tags are an example of asset information that is not contained in the image. [!DNL Experience Manager Assets] automatically applies smart tags to assets, by default. 
 
 * **Color Tags:** [Color tags](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) help you recognize an asset using colors that are automatically identified in an asset using Adobe's Sensei AI capabilities.
 
@@ -111,7 +120,10 @@ Once you upload an asset, the Content Hub derives some properties that are gener
 
 There are also properties that are specified while adding assets to Content Hub. For more information, see [Add brand approved assets to Content Hub](upload-brand-approved-assets.md). Those properties are also displayed on the asset properties page.
 
-Administrators can also configure the properties that display for each asset. For more information, see [Configure Content Hub user interface](configure-content-hub-ui-options.md#configure-asset-details-content-hub).
+Administrators can also configure the properties, which are displayed for each asset:
+
+* In the asset preview UI: see [Configure Content Hub user interface](configure-content-hub-ui-options.md#configure-asset-details-content-hub).
+* On asset cards in search results or collections: see [Configure Content Hub user interface](configure-content-hub-ui-options.md#asset-card).
 
 <!--
 

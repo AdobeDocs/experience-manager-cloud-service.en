@@ -34,7 +34,7 @@ Before you begin adding a custom function to your Adaptive Forms, ensure you hav
 * **Git:** This version control system is required for managing code changes. If you do not have it installed, download it from https://git-scm.com.
 
 
-## Create a custom function {#create-custom-function}
+## Create a custom function
 
 Create a client library to call custom functions in the rule editor. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 
@@ -235,50 +235,7 @@ Let's dive into the features of custom functions.
 
 ### Asynchronous support in custom functions {#support-of-async-functions}
 
-Asynchronous custom functions do not appear in the rule editor list. However, it is possible to invoke asynchronous functions within custom functions created using synchronous function expressions.
-
- ![Sync and async custom function](/help/forms/assets/workflow-for-sync-async-custom-fumction.png)
-
->[!NOTE]
->
-> The advantage of calling asynchronous functions in custom functions is that asynchronous functions allow concurrent execution of multiple tasks, with the result of each function used within the custom functions.
-
-Look at the code below to see how we can invoke asynchronous functions using custom functions:
-
-```javascript
-    
-    async function asyncFunction() {
-    const response = await fetch('https://petstore.swagger.io/v2/store/inventory');
-    const data = await response.json();
-    return data;
-    }
-
-    /**
-    * callAsyncFunction
-    * @name callAsyncFunction callAsyncFunction
-    */
-    function callAsyncFunction() {
-    asyncFunction()
-        .then(responseData => {
-        console.log('Response data:', responseData);
-        })
-        .catch(error => {
-         console.error('Error:', error);
-    });
-}
-
-```
-
-In the above example, the asyncFunction function is an `asynchronous function`. It performs an asynchronous operation by making a `GET` request to `https://petstore.swagger.io/v2/store/inventory`. It waits for the response using `await`, parses the response body as JSON using the `response.json()`, and then returns the data. The `callAsyncFunction` function is a synchronous custom function that invokes the `asyncFunction` function and displays the response data in the console. Although the `callAsyncFunction` function is synchronous, it calls the asynchronous asyncFunction function and handles its result with `then` and `catch` statements.
-
-To see its working, let us add a button and create a rule for the button that invokes the asynchronous function upon a button click.
-
- ![creating rule for async function](/help/forms/assets/rule-for-async-funct.png)
-
-Refer to the illustration of the console window below to demonstrate that when the user clicks the `Fetch` button, the custom function `callAsyncFunction` is invoked, which in turn calls an asynchronous function `asyncFunction`. Inspect the console window to view the response to the button click:
-
- ![Console window](/help/forms/assets/async-custom-funct-console.png)
-
+You can implement asynchronous functions in the rule editor using custom functions. For guidance on how to do this, refer to the article [Using asynchronous functions in an Adaptive Form](/help/forms/using-async-funct-in-rule-editor.md).
 
 ### Field and Global scope objects support in custom functions {#support-field-and-global-objects}
 
@@ -287,6 +244,8 @@ Field objects refer to the individual components or elements within a form, such
 >[!NOTE]
 >
 > The `param {scope} globals` has to be the last parameter and it is not displayed in the rule editor of an Adaptive Form.
+
+For more information on scope objects, see the [Scope objects in custom functions](/help/forms/custom-function-core-component-scope-function.md) article.
 
 ### Caching support in custom function
 
@@ -306,7 +265,7 @@ In case the custom functions are modified, the caching becomes invalidated, and 
 
     ![error log file with proper custom function](/help/forms/assets/custom-function-list-fetched-in-error.png)
 
-## Next Step
+## Next step
 
 Let us now see various [examples of custom functions for an Adaptive Form based on Core Components](/help/forms/custom-function-core-components-use-cases.md).
 

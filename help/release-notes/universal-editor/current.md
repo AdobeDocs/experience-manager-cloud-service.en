@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2024.08.13 Release Notes
-description: These are the release notes for the 2024.08.13 release of the Universal Editor.
+title: Universal Editor 2024.12.02 Release Notes
+description: These are the release notes for the 2024.12.02 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2024.08.13 Release Notes {#release-notes}
+# Universal Editor 2024.12.02 Release Notes {#release-notes}
 
-These are the release notes for the 13 August 2024 release of the Universal Editor.
+These are the release notes for the 2 December 2024 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -16,18 +16,18 @@ These are the release notes for the 13 August 2024 release of the Universal Edit
 
 ## What’s New {#what-is-new}
 
-* **Custom Data Types**: Tailor the editor to your unique data needs with the ability to [create custom fields within the properties panel.](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/item-types-renderers/)
-  * Whether you’re developing a custom product picker for commerce use-cases or populating a drop-down list with values from your backends, this feature gives you the control you need over the data that authors use to compose content.
-* **Cross-Container Drag &amp; Drop**: Enjoy greater flexibility in layout composition with the ability to [move components across different containers via drag and drop](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) within the [Content Tree panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
-* **Optimized GitHub Integration**: Caching for GitHub responses have been introduced, significantly speeding up the retrieval of tags and the `universal-editor-cors-library`, resulting in a faster and smoother user experience.
-* **Configurable IMS Token Validation**: To increase flexibility in token management, [IMS token validation is now optional.](/help/implementing/universal-editor/local-dev.md#setting-up-service)
-  * This configuration option allows you to disable validation as needed, simplifying your cloud gateway setups.
-* **Splunk Integration**: Splunk logging has been integrated into the [Universal Editor Service for local development,](/help/implementing/universal-editor/local-dev.md#setting-up-service) enhancing monitoring and diagnostics.
-  * This integration ensures efficient log tracking, smoother operations, and quicker troubleshooting.
+* **Keyboard Navigation of Content Tree**: [The content tree,](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) available in the side panel, is now fully accessible via keyboard.
+  * Authors can navigate and interact with tree view items using standard keyboard controls, adhering to [WCAG 2.1 guidelines](/help/sites-cloud/authoring/page-editor/accessible-content.md) for accessibility.
+  * This enhancement ensures that all interactive elements within the tree are keyboard-operable, improving inclusivity for users who rely on keyboard navigation.
+* **Deselection of Editables**: Authors can now deselect previously selected editable elements on the page.
+  * This eliminates distractions when authors want to view the page without active selection borders.
+* **Fragment Selector**: On AEM as a Cloud Service instances, fragment references now open the fragment selector as content picker, delivering improved functionality such obeying allowed Content Fragment models, search of Content Fragments, and an improved overall experience.
+  * This aligns with other Adobe UIs and enhances consistency.
+  * [For AEM 6.5 environments,](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) the existing content picker remains in use.
+* **Container Description**: [The container component](/help/implementing/universal-editor/field-types.md#container) used in the [properties panel,](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel-properties-rail) to reference content, now supports a description attribute, displayed above the container fields.
+  * This addition enhances clarity by providing authors with context about the grouped fields they are editing.
 
-## Bug Fixes {#bug-fixes}
+## Other Improvements {#other-improvements}
 
-* **Enhanced Publishing Feedback**: If publication fails due to insufficient permissions, feedback to the user during publishing has been improved to display a clear warning instead of simply indicating a failure.
-* **Improved URL Handling**: Issues with incorrect URL encoding/decoding that were causing publishing failures were fixed.
-* **Accurate Data Handling**: An issue where float numbers were incorrectly stored as integers has been addressed, ensuring precise data handling across your content.
-* **Security and Stability**: Security vulnerabilities in the Docker images have been fixed and test coverage for critical components like the Component Picker and Breadcrumbs have been implemented, leading to a more secure, stable, and reliable editor experience.
+* **Rich Text Field Synchronization**: Synchronization of raw and rendered content within rich text fields in the properties panel was improved, addressing issues within Edge Delivery Services projects where rich text content and rendered representation can differ.
+* **Editing Mode Events**: The Universal Editor now reliably emits editing mode events, including after reloading remote apps.

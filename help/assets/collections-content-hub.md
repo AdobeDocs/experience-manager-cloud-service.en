@@ -6,8 +6,17 @@ exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
 ---
 # Manage collections in [!DNL Content Hub] {#manage-collections}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 <!-- ![Manage collections](assets/manage-collections.jpg) -->
 ![Manage collections](assets/manage-collection.png)
+
+>[!AVAILABILITY]
+>
+>Content Hub guide is now available in PDF format. Download the entire guide and use Adobe Acrobat AI Assistant to answer your queries. 
+>
+>[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 A collection refers to a set of assets that can be shared among users. A collection can include assets from different locations while maintaining their referential integrity.
 

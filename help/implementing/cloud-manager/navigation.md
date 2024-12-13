@@ -7,7 +7,7 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 ---
 
-# Navigate the Cloud Manger UI {#navigation}
+# Navigate the Cloud Manager UI {#navigation}
 
 Learn how the Cloud Manager UI is organized and how to navigate to manage your programs and environments.
 
@@ -29,10 +29,10 @@ When you log into Cloud Manager at at [my.cloudmanager.adobe.com](https://my.clo
 The My Programs console provides an overview of all programs to which you have access in the selected organization. It is made up of several parts.
 
 1. [Toolbars](#toolbars-my-programs-toolbars) for organization selection, alerts, and account settings
-1. Tabs that allow you to toggle the current view of your programs.
+1. Tabs that let you toggle the current view of your programs.
    * **Home** view (default) that selects the **My Programs** view with an overview of all programs
    * **License** that accesses the [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md).
-   * Note that the tabs default to closed and can be revealed using the hamburger menu in the [Cloud Manager header](#cloud-manager-header).
+   * Note that the tabs default to closed and can be revealed using ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) in the [Cloud Manager header](#cloud-manager-header).
 1. [Statistics and call-to-action](#statistics) for an overview of your recent activity
 1. [**My Programs** section](#my-programs-section) with an overview of all your programs
 1. [Quick links](#quick-links-section) to access related resources easily.
@@ -189,7 +189,7 @@ The program toolbar still gives you access to switch to other programs quickly, 
 
 ![Program toolbar](assets/cloud-manager-program-toolbar.png)
 
-The toolbar always shows the tab that you currently are on, even if you have hidden the tabs using the hamburger menu.
+The toolbar always shows the tab that you currently are on, even if you have hidden the tabs using ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg).
 
 ### Program tabs {#program-tabs}
 
@@ -243,7 +243,7 @@ See also [Manage Environments](/help/implementing/cloud-manager/manage-environme
 
 ### Pipelines card {#pipelines}
 
-The **Pipelines** card gives you an overview of your pipelines as well as links for quick actions.
+The **Pipelines** card gives you an overview of your pipelines and links for quick actions.
 
 The **Pipelines** card only lists three pipelines. Click **Show All** to see all pipelines of the program.
 

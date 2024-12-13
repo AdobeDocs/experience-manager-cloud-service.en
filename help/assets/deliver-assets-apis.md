@@ -6,6 +6,15 @@ exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
 ---
 # Delivery  APIs {#delivery-apis}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>Dynamic Media with OpenAPI capabilities guide is now available in PDF format. Download the entire guide and use Adobe Acrobat AI Assistant to answer your queries. 
+>
+>[!BADGE Dynamic Media with OpenAPI capabilities Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+
 All [approved assets](approve-assets.md) available in Experience Manager assets repository can be [searched](search-assets-api.md) and then delivered to integrated downstream applications using a Delivery URL.
 
 Any changes made to approved assets in DAM, including version updates and metadata modifications, are automatically reflected in the delivery URLs. With a short Time-to-Live (TTL) value of 10 minutes configured for assets delivery via CDN, updates become visible across all authoring and published interfaces in under 10 minutes.
@@ -25,6 +34,12 @@ The following table illustrates the usage of the various available Delivery APIs
 | [Asset metadata](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata) |Returns the properties associated to an asset, such as, title, description, CreateDate, ModifyDate, and so on.|
 | [Player container for the video asset](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoPlayerDelivery) |Returns the player container for the video asset. You can  embed the player in to an iframe HTML element and play the video.|
 | [Playback manifests in the selected output format](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoManifestDelivery) | Returns the playback manifest file for the specified video asset in the selected output format. You must build a custom player capable of adaptive streaming through HLS or DASH protocols to be able to pull the playback manifest file and play the video.|
+
+
+>[!NOTE]
+>
+>* [Image presets, smart imaging, and additional image modifiers](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/), are available to you as a limited availability feature. To get access, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+>* Smart Crop is not available with [Assets Prime](/help/assets/assets-ultimate-overview.md).
 
 ## Delivery APIs endpoints {#delivery-apis-endpoint}
 

@@ -36,17 +36,17 @@ The dashboard presents an overall score for CDN performance along with trends, a
 
 ![CDN performance dashboard](assets/cdn-performance-dashboard.png)
 
-For details on your CDN performance as well as for suggestions on how to improve it, tap or click **View trend**.
+For details on your CDN performance and for suggestions on how to improve it, click **View trend**.
 
 ![Performance trend](assets/cdn-performance-trend.png)
 
-Tap or click **View** below the chart to change the time span of the chart.
+Click **View** below the chart to change the time span of the chart.
 
 For suggestions on how to improve your CDN performance, select the **Recommendations** tab.
 
 ![CDN recommendations](assets/cdn-performance-recommendations.png)
 
-Tap or click the chevron next to any recommendation in the list to view details about what steps to take to improve and the cause of the issue.
+Click the chevron next to any recommendation in the list to view details about what steps to take to improve and the cause of the issue.
 
 ## Cache hit definition {#cache-hit}
 

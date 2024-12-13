@@ -1,6 +1,6 @@
 ---
 title: Generate For Placement Only renditions for Adobe InDesign
-description: Generate FPO renditions of new and existing assets using Experience Manager Assets workflow and ImageMagick.
+description: Generate FPO (For Placement Only) renditions of new and existing assets using Experience Manager Assets workflow and ImageMagick.
 contentOwner: Vishabh Gupta
 role: Admin
 feature: Renditions
@@ -8,14 +8,17 @@ exl-id: 869c1c34-6287-4d62-bb7a-aa4df580ac0e
 ---
 # Generate For Placement Only renditions for Adobe InDesign {#fpo-renditions}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/configure-fpo-renditions.html?lang=en)                  |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/configure-fpo-renditions)                  |
 | AEM as a Cloud Service     | This article         |
 
-When placing large-sized assets from Experience Manager into Adobe InDesign documents, a creative professional must wait for a substantial time after they [place an asset](https://helpx.adobe.com/indesign/using/placing-graphics.html). Meanwhile, the user is blocked from using InDesign. This interrupts creative flow and negatively impacts the user experience. Adobe enables temporarily placing small-sized renditions in InDesign documents to begin with. When the final output is required, say for print and publishing workflows, the original, full-resolution assets replace the temporary rendition in background. This asynchronous update in the background speeds up the design process to enhance productivity and does not hinder the creative process.
+When placing large-sized assets from Experience Manager into Adobe InDesign documents, a creative professional must wait for a substantial time after they [place an asset](https://helpx.adobe.com/indesign/using/placing-graphics.html). Meanwhile, the user is blocked from using InDesign. This interrupts creative flow and negatively impacts the user experience. Adobe enables temporarily placing small-sized renditions in InDesign documents to begin with. When the final output is required, say for print and publishing workflows, the original, full-resolution assets replace the temporary rendition in the background. This asynchronous update in the background speeds up the design process to enhance productivity and does not hinder the creative process.
 
-Assets provides renditions that are used for placement only (FPO). These FPO renditions have a small file size but are of the same aspect ratio. If an FPO rendition is not available for an asset, Adobe InDesign uses the original asset instead. This fallback mechanism ensures that the creative workflow proceeds without any breaks.
+Assets provide renditions that are used For Placement Only (FPO). These FPO renditions have a small file size but are of the same aspect ratio. If an FPO rendition is not available for an asset, Adobe InDesign uses the original asset instead. This fallback mechanism ensures that the creative workflow proceeds without any breaks.
 
 Experience Manager as a Cloud Service offers cloud-native asset-processing capabilities to generate the FPO renditions. Use asset microservices for rendition generation. You can configure rendition generation of newly uploaded assets and of the assets that exist in Experience Manager.
 
@@ -36,7 +39,7 @@ Select **[!UICONTROL Create FPO Rendition]** to generate FPO rendition. Optional
 
 ## Generate renditions of new assets {#generate-renditions-of-new-assets}
 
-To generate FPO renditions of new assets, apply the **[!UICONTROL Processing Profile]** to the folder in folder properties. In a folder's Properties page, click **[!UICONTROL Asset Processing]** tab, select the **[!UICONTROL FPO profile]** as a **[!UICONTROL Processing Profile]**, and save the changes. All new assets uploaded to the folder are processed using this profile.
+To generate FPO renditions of new assets, apply the **[!UICONTROL Processing Profile]** to the folder in folder properties. In a folder's Properties page, click the **[!UICONTROL Asset Processing]** tab, select the **[!UICONTROL FPO profile]** as a **[!UICONTROL Processing Profile]**, and save the changes. All new assets uploaded to the folder are processed using this profile.
 
 ![add-fpo-rendition](assets/add-fpo-rendition.png)
 
@@ -50,7 +53,7 @@ To generate renditions, select the assets and follow these steps.
 
 ## View FPO renditions {#view-fpo-renditions}
 
-You can check the generated FPO renditions after the workflow completes. In Experience Manager Assets user interface, click the asset to open a large preview. Open the left rail and select **[!UICONTROL Renditions]**. Alternatively, use the keyboard shortcut `Alt + 3` when the preview is open.
+You can check that the generated FPO renditions after the workflow completes. In the Experience Manager Assets user interface, click the asset to open a large preview. Open the left rail and select **[!UICONTROL Renditions]**. Alternatively, use the keyboard shortcut `Alt + 3` when the preview is open.
 
 Click **[!UICONTROL FPO rendition]** to load its preview. Optionally, you can right-click the rendition and save it to your file system. Check for available renditions in the left rail.
 

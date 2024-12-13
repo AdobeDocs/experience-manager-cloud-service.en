@@ -29,7 +29,7 @@ The following list presents such WIP features and alternate solutions. If your p
 |[Language Copy](/help/sites-cloud/administering/translation/overview.md)|Partially available|Components inherit content, but inheritance can only be reverted at the page level|[Content Inheritance in the Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md)|
 |[Multi Site Management](/help/sites-cloud/administering/msm/overview.md)|Partially available|Components inherit content, but inheritance can only be reverted at the page level|[Content Inheritance in the Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md)|
 |[Launches](/help/sites-cloud/authoring/launches/overview.md)|Partially Available|Components inherit content, but inheritance can only be reverted at the page level|[Content Inheritance in the Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md)|
-|[Page Templates](/help/sites-cloud/authoring/page-editor/templates.md)|Coming soon!|Pages created from templates are independent copies of the original template.|[Using Page Templates with the Universal Editor](/help/edge/wysiwyg-authoring/templates.md)|
+|[Page Templates](/help/sites-cloud/authoring/page-editor/templates.md)|Partially available|Pages created from templates are independent copies of the original template.|[Using Page Templates with the Universal Editor](/help/sites-cloud/authoring/universal-editor/templates.md)|
 |[Context Hub and Targeting](/help/sites-cloud/authoring/personalization/overview.md)|Not available|||
 |[Timewarp](/help/sites-cloud/authoring/launches/preview.md)|Not available|||
 |[Associated Content](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#associated-content-browser)|Not available|||
