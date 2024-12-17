@@ -162,7 +162,7 @@ Note:
 
 * Each application uses one license key.
 * AEM as a Cloud Service environments report to only one New Relic One account.
-* Full monitoring metrics and events for both New Relic One are retained for seven days.
+* Full monitoring metrics and events for both New Relic One are retained for three months.
 
 ### Who can access the New Relic One cloud service data? {#access-new-relic-cloud}
 
