@@ -634,6 +634,8 @@ user-guide-title: AEM as a Cloud Service
     + [Edit videos](/help/assets/edit-videos-assets-view.md)
     + [View and manage renditions](/help/assets/renditions.md)
     + [Manage asset metadata](/help/assets/metadata-assets-view.md)
+    + [Bulk rename](/help/assets/bulk-rename-assets-view.md)
+    + [Bulk metadata edit](/help/assets/bulk-metadata-edit.md)
     + [Share assets](/help/assets/share-links-for-assets-view.md)
     + [Manage collections](/help/assets/manage-collections-assets-view.md)
     + [Watch asset, folders, and collections](/help/assets/manage-notifications-assets-view.md)
@@ -958,6 +960,9 @@ user-guide-title: AEM as a Cloud Service
     + [WYSIWYG and Doc-Based Blocks](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
     + [Pages with DAM Assets](/help/edge/wysiwyg-authoring/dam-assets.md)
     + [WIP Sites Features](/help/edge/wysiwyg-authoring/wip-features.md)
+    + [Reusing Code Across Sites](/help/edge/wysiwyg-authoring/repoless.md)
+    + [Repoless Multi Site Management](/help/edge/wysiwyg-authoring/repoless-msm.md)
+    + [Repoless Stage and Prod Environments](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
   + Document-Based Authoring {#document-authoring}
     + [Authoring](/help/edge/docs/authoring.md)
     + [Bulk Metadata](/help/edge/docs/bulk-metadata.md)
@@ -1102,7 +1107,7 @@ user-guide-title: AEM as a Cloud Service
   + [Implementing Applications for AEM as a Cloud Service](/help/implementing/home.md)
   + Use Cloud Manager {#using-cloud-manager}
     + [Navigation](/help/implementing/cloud-manager/navigation.md)
-    + [AEM Home](/help/implementing/cloud-manager/aem-home.md)
+    + [AEM Launchpad](/help/implementing/cloud-manager/aem-home.md)
     + Programs {#programs}
       + [Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
       + [Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
