@@ -45,7 +45,7 @@ The following are a few examples to use AI to rename assets in bulk based on an 
 * Remove the prefix and suffix, just keep the middle part of the name.
 * Prefix the files with 001, 002, etc. and translate into English.
 
-    >[!VIDEO](https://video.tv.adobe.com/v/3440975)
+>[!VIDEO](https://video.tv.adobe.com/v/3440975)
 
 >[!NOTE]
 >
