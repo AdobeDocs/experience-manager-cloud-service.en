@@ -55,6 +55,18 @@ To use asset reference, you must have:
 * The AEM Assets sidekick plugin enabled with copy reference for image assets enabled. For more details, see [this](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin#copymode) for Document-Based Authoring and see [this](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) for Universal Editor based authoring.
 * Assets that are approved. Approved Assets have `dam:status=Approved` via the Assets Cloud Services backend or UI actions.
 
+### Use assets delivered using Dynamic Media with OpenAPI capabilities{#how-to-use-Dynamic-Media-with-OpenAPI-assets}
+
+To use assets delivered using Dynamic Media with OpenAPI Capabilities while authoring content, see:
+
+* [Using image references](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-image-references-when-authoring-content)
+* [Using video references](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-video-references-when-authoring-content)
+* [Using asset references for non-image and video assets such as PDF, Zip files and more](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-asset-references-for-pdf-zip-etc-when-authoring-content)
+
+See this video to learn how to deliver assets using Dynamic Media with OpenAPI capabilities.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3441155)
+
 ## Sample Edge Delivery Services site{#example-of-an-Edge-Delivery-Services-site} 
 
 See [WKND Travel](https://aem-dynamicmedia-demo--dm--hlxsites.aem.live/travel-hospitality/wknd-trvl-home). This site is built using the Document-Based Authoring capabilities of Edge Delivery Services. The site's content is authored in [Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT), using Dynamic Media with OpenAPI capabilities for asset delivery. Once authored, the content is published directly from the document. For this Document-Based Authoring setup, all the essential files, folders, configurations, website's styling and functionality codes are stored in this [Git repository](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks).
