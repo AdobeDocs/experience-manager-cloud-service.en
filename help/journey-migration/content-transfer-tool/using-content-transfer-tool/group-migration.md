@@ -33,7 +33,7 @@ The Content Transfer Tool and Cloud Acceleration Manager will migrate any groups
 
 * If a group is on an ACL or CUG policy of migrated content, that group will be migrated, with a few exceptions listed below.
 * There are a number of groups that are built-in, and already present on the target cloud system; these are never migrated.
-    * Some built-in groups may themselves have member groups which are _not_ built-in groups; any such member groups (direct members or members of members, etc.) which are referred to in an ACL or CUG policy of migrated content will be migrated, to ensure users that are members of such groups (directly or indirectly) maintain their access to the migrated content.
+    * Some built-in groups may include member groups that are _not_ built-in; any such member groups (direct members or members of members, etc.) referenced in an ACL or CUG policy of migrated content will be migrated, to ensure users who are members of these groups (either directly or indirectly) maintain their access to the migrated content.
 * Other groups, such as those not found on an ACL or CUG policy, those already on the destination system, and those with any uniqueness-constrained data already on the target system, will not be migrated. 
 
 Note that the path logged/reported for a group is only the first path that triggered that group to be migrated, and that group could also be on other content paths.
