@@ -62,7 +62,7 @@ Say hello to a Digital Asset Management solution that understands the diverse ne
 
 ![My Workspace overview](assets/my-workspace-demo.gif)
 
-[![See the Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](my-workspace-assets-view.md)
+[![See the Guide](assets/see-the-guide-sm.png)](my-workspace-assets-view.md)
 
 ### Insights to take data-driven decisions {#insights-data}
 
@@ -70,7 +70,7 @@ To keep pace with content velocity, actionable insights are essential. The Asset
 
 ![Insights overview](assets/insights-overview.gif)
 
-[![See the Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
+[![See the Guide](assets/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
 
 ### Adobe Photoshop Express integration to accelerate collaboration {#accelerate-collaboration}
 
@@ -80,7 +80,7 @@ Watch this video to understand the power of Assets view integration with Adobe P
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420922)
 
-[![See the Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](edit-images-assets-view.md)
+[![See the Guide](assets/see-the-guide-sm.png)](edit-images-assets-view.md)
 
 Upcoming releases for Assets as a Cloud Service would also include [Adobe Firefly integration via Adobe Express](https://firefly.adobe.com/?gclid=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE&sdid=JM4FW6VL&mv=search&mv2=paidsearch&ef_id=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE:G:s&s_kwcid=AL!3085!3!652077237594!e!!g!!adobe%20firefly!19870733758!148140507838).
 
@@ -90,7 +90,7 @@ Quickly setup a folder structure for your organization using the Assets view by 
 
 ![Upload folders](assets/folder-uploads.gif)
 
-[![See the Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](add-delete-assets-view.md)
+[![See the Guide](assets/see-the-guide-sm.png)](add-delete-assets-view.md)
 
 ### Search-first approach to enhance efficiency {#search-first}
 
@@ -104,7 +104,7 @@ The Assets view provides the ability to monitor the operations performed on the 
 
 ![Receive notifications](assets/notifications.gif)
 
-[![See the Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](manage-notifications-assets-view.md)
+[![See the Guide](assets/see-the-guide-sm.png)](manage-notifications-assets-view.md)
 
 ### Soft delete assets to provide better control to administrators {#soft-delete-assets}
 
@@ -112,7 +112,7 @@ The Trash folder available in the Assets view lists the assets deleted from the 
 
 ![Soft Delete](assets/soft-delete.gif)
 
-[![See the Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](navigate-assets-view.md)
+[![See the Guide](assets/see-the-guide-sm.png)](navigate-assets-view.md)
 
 In addition to these features, Assets view also enables you to perform following features that are not available in Admin view:
 
