@@ -1,6 +1,6 @@
 ---
 title: Integrate AEM Assets while authoring content for Edge Delivery Services
-description: Learn how to integrate the AEM Assets with Edge Delivery Services. This integration enables you to — integrate AEM Assets with Microsoft Word and Google Docs, integrate AEM Assets with Universal Editor, integrate Dynamic Media with OpenAPI capabilities with Universal Editor and integrate Dynamic Media with OpenAPI capabilities with Microsoft Word and Google Docs. After this integration, you can — use AEM Assets within Microsoft Word and Google Docs, use AEM Assets within Universal Editor, use Dynamic Media with OpenAPI capabilities within Universal Editor to deliver assets and use Dynamic Media with OpenAPI capabilities within Microsoft Word and Google Docs to deliver assets.
+description: Learn how to integrate the AEM Assets with Edge Delivery Services. This integration enables you to integrate AEM Assets with Microsoft Word and Google Docs, integrate AEM Assets with Universal Editor, integrate Dynamic Media with OpenAPI capabilities with Universal Editor and integrate Dynamic Media with OpenAPI capabilities with Microsoft Word and Google Docs.
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
 ---
 # Integrate AEM Assets while authoring content for Edge Delivery Services {#integrate-aem-assets-while-authoring-for-edge-delivery-services}
@@ -25,7 +25,7 @@ AEM Assets integration with the Document-Based Authoring tools, such as Microsof
 
 Before you begin, ensure your Document-Based Authoring environment is ready:
 
-* Integrate AEM with a Document-Based Authoring tool to set up the authoring environment. See [Getting Started – Developer Tutorial](https://www.aem.live/developer/tutorial) to set up the authoring environment.
+* Integrate AEM with a Document-Based Authoring tool to set up the authoring environment. See [Getting Started - Developer Tutorial](https://www.aem.live/developer/tutorial) to set up the authoring environment.
 
 ### Integrating AEM Assets with Document-Based Authoring environment{#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs}
 
