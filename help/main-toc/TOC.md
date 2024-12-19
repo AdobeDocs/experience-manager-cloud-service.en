@@ -473,6 +473,7 @@ user-guide-title: AEM as a Cloud Service
   + [Enable Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
   + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
   + [Assets Collaborator users](/help/assets/assets-collaborator-users.md)
+  + [Integrate AEM Assets while authoring content for Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md)
   + Manage digital assets {#manage}
     + Micro-Frontend Asset Selector {#asset-selector}
       + [Asset Selector overview](/help/assets/overview-asset-selector.md)
@@ -633,6 +634,7 @@ user-guide-title: AEM as a Cloud Service
     + [Edit videos](/help/assets/edit-videos-assets-view.md)
     + [View and manage renditions](/help/assets/renditions.md)
     + [Manage asset metadata](/help/assets/metadata-assets-view.md)
+    + [Bulk rename](/help/assets/bulk-rename-assets-view.md)
     + [Bulk metadata edit](/help/assets/bulk-metadata-edit.md)
     + [Share assets](/help/assets/share-links-for-assets-view.md)
     + [Manage collections](/help/assets/manage-collections-assets-view.md)
@@ -1106,7 +1108,7 @@ user-guide-title: AEM as a Cloud Service
   + [Implementing Applications for AEM as a Cloud Service](/help/implementing/home.md)
   + Use Cloud Manager {#using-cloud-manager}
     + [Navigation](/help/implementing/cloud-manager/navigation.md)
-    + [AEM Home](/help/implementing/cloud-manager/aem-home.md)
+    + [AEM Launchpad](/help/implementing/cloud-manager/aem-home.md)
     + Programs {#programs}
       + [Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
       + [Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
