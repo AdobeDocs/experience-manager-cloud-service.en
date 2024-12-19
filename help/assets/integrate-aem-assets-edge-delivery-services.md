@@ -54,11 +54,11 @@ To use asset reference, you must have:
 * Entitlement to an Assets Cloud Service environment where Dynamic Media with Open API capabilities is enabled.
 * A Dynamic Media license.
 * The AEM Assets sidekick plugin enabled with copy reference for image assets enabled. For more details, see [this](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin#copymode) for Document-Based Authoring and see [this](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) for Universal Editor based authoring.
-* Assets that are approved. Approved Assets have `dam:status=Approved` via the Assets Cloud Services backend or UI actions.
+* Assets that are approved. Approved assets have `dam:status=Approved` via the Assets Cloud Services backend or UI actions.
 
 ### Use assets delivered using Dynamic Media with OpenAPI capabilities{#how-to-use-Dynamic-Media-with-OpenAPI-assets}
 
-To use assets delivered using Dynamic Media with OpenAPI Capabilities while authoring content, see:
+To use assets delivered using Dynamic Media with OpenAPI capabilities while authoring content, see:
 
 * [Using image references](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-image-references-when-authoring-content)
 * [Using video references](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-video-references-when-authoring-content)
@@ -77,4 +77,4 @@ See [WKND Travel](https://aem-dynamicmedia-demo--dm--hlxsites.aem.live/travel-ho
 Set up the Universal Editor to integrate with AEM Assets. This integration enables you to use Dynamic Media with OpenAPI capabilities to deliver assets.
 
 * See [Configuration in Edge Delivery Site](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site) to add a custom asset picker function in Universal Editor. The custom asset picker enables you to insert assets into your Universal Editor content directly.
-* See [Extension overview](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) to learn how to access AEM Assets and insert the assets while authoring in Universal Editor.
+* See [Extension overview](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) to learn how to access to AEM Assets and insert the assets while authoring in Universal Editor.
