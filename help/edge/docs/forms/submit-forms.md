@@ -151,7 +151,7 @@ To use Admin APIs to enable a spreadsheet to accept data:
 
     Your form is now enabled to accept data. You also observe the following changes in your spreadsheet: 
 
-## Automatic Changes to sheet once it is enabled to accept data. 
+## Automatic changes to sheet once it is enabled to accept data. 
 
 Once the sheet is set to recieve data, you observe the following changes in your spreadsheet: 
 
