@@ -92,6 +92,7 @@ To integrate AEM Forms with the Turnstile service, perform the following steps:
         * **Error Message:** Provide the error message to display to the user when the Captcha submission fails. 
             >[!NOTE]
             >* An error message appears only if the CAPTCHA is filled on the client side.
+            
 1. Click **[!UICONTROL Done]**.
 
 
