@@ -78,4 +78,3 @@ Set up the Universal Editor to integrate with AEM Assets. This integration enabl
 
 * See [Configuration in Edge Delivery Site](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site) to add a custom asset picker function in Universal Editor. The custom asset picker enables you to insert assets into your Universal Editor content directly.
 * See [Extension overview](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) to learn how to access to AEM Assets and insert the assets while authoring in Universal Editor.
-
