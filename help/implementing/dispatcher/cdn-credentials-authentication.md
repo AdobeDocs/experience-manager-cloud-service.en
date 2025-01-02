@@ -26,6 +26,8 @@ As part of the setup, the Adobe CDN and the Customer CDN must agree on a value o
 
 The *X-AEM-Edge-Key* value is referenced by the `edgeKey1` and `edgeKey2` properties in a file named `cdn.yaml` or similar, somewhere under a top-level `config` folder. Read [Using Config Pipelines](/help/operations/config-pipeline.md#folder-structure) for details about the folder structure and how to deploy the configuration.  The syntax is described in the example below.
 
+For further debugging information and common errors please check [common errors](/help/implementing/dispatcher/cdn.md#common-errors) page.
+
 >[!WARNING]
 >Direct access without a correct X-AEM-Edge-Key will be denied for all requests matching the condition (in the sample below that means all requests to the publish tier). If you need to gradually introduce authentication please see the [Migrating safely to reduce the risk of blocked traffic](#migrating-safely) section.
 
