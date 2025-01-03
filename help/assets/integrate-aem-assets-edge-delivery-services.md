@@ -12,7 +12,6 @@ exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
 You can edit content in:
 
 * [Microsoft Word or Google Docs](#integrate-aem-assets-with-document-based-authoring-tools)
-
 * [Universal Editor](#integrate-aem-assets-with-universal-editor)
 
 After editing the content, you can publish it to Edge Delivery Services.
