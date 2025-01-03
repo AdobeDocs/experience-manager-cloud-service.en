@@ -20,16 +20,17 @@ After editing the content, you can publish it to Edge Delivery Services.
 ## Integrating AEM Assets with Document-Based Authoring flows for Edge Delivery Services {#integrate-aem-assets-with-document-based-authoring-tools}
 
 AEM Assets integration with the Document-Based Authoring tools, such as Microsoft Word or Google Docs, provides an asset selector in your editor directly. Use this asset selector to access to the AEM Assets, and insert approved assets into your document.
+If you already have an Edge Delivery Services website, see [AEM Assets plugin](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) to integrate AEM Assets with your existing AEM project. If you don't have an Edge Delivery Services website see, [Prerequisites](#integrate-aem-assets-with-microsoft-word-and-google-docs) and [Integrating AEM Assets with Document-Based Authoring environment](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs) sections below.
 
 ### Prerequisites{#integrate-aem-assets-with-microsoft-word-and-google-docs}
 
-Before you begin, ensure your Document-Based Authoring environment is ready:
+Before you begin, ensure that your Document-Based Authoring environment is ready:
 
 * Integrate AEM with a Document-Based Authoring tool to set up the authoring environment. See [Getting Started - Developer Tutorial](https://www.aem.live/developer/tutorial) to set up the authoring environment.
 
 ### Integrating AEM Assets with Document-Based Authoring environment{#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs}
 
-Configure the AEM Assets Sidekick plugin, to use assets while authoring content in Microsoft Word or Google Docs.
+Configure the AEM Assets Sidekick plugin to use assets while authoring content in Microsoft Word or Google Docs.
 
 * See [Adobe Experience Manager Assets Sidekick Plugin](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-experience-manager-assets-for-website-authors) to learn how to access and use AEM Assets in Microsoft Word or Google Docs.
 * See [Configuring Adobe Experience Manager Assets Sidekick Plugin](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin) for configuration details.
