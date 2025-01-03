@@ -17,12 +17,12 @@ AEM as a Cloud Service comes with an integrated CDN, designed to reduce latency 
 
 The AEM-managed CDN meets most customers' performance and security needs. For the publish tier, customers can choose to route traffic through their own CDN, which they must manage. This option is available on a case-by-case basis, particularly when customers have existing legacy integrations with a CDN provider that are hard to replace.
 
-Customers looking to publish to the Edge Delivery Services tier can take advantage of Adobe's managed CDN. See [Adobe managed CDN](#aem-managed-cdn). <!-- CQDOC-21758, 5b -->
+Customers looking to publish to the Edge Delivery Services tier can take advantage of Adobe's managed CDN. See [Adobe Managed CDN](#aem-managed-cdn). <!-- CQDOC-21758, 5b -->
 
 
 <!-- ERROR: NEITHER URL IS FOUND (HTTP ERROR 404) Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) and [Cloud 5 AEM CDN Part 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) for additional information about CDN in AEM as a Cloud Service. -->
 
-## Adobe managed CDN {#aem-managed-cdn}
+## Adobe Managed CDN {#aem-managed-cdn}
 
 <!-- CQDOC-21758, 5a -->
 
@@ -132,7 +132,7 @@ This customer CDN configuration is supported for the publish tier, but not in fr
 
 ### Debugging configuration
 
-In order to debug a BYOCDN configuration please use the `x-aem-debug` header with a value of `edge=true`. E.g. 
+In order to debug a BYOCDN configuration, please use the `x-aem-debug` header with a value of `edge=true`. For example:
 
 In Linux&reg;:
 
@@ -148,15 +148,15 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v --header "X-Fo
 
 ```
 
-This will reflect certain properties used in the request in the `x-aem-debug` response header. e.g.:
+This will reflect certain properties used in the request in the `x-aem-debug` response header. For example:
 
 ```
 x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-Edge-Key=set,host=publish-p87058-e257304-cmstg.adobeaemcloud.com,x-forwarded-host=wknd.site,adobe_unlocked_byocdn=true
 ```
 
-Using this one can verify e.g. the values of host, if the edge authentication is configured, as well as the x-forwarded-host header value, if an edge key is set and which key is used (in case one key matches).
+Using this one can verify for example the values of host, if the edge authentication is configured, as well as the x-forwarded-host header value, if an edge key is set and which key is used (in case one key matches).
 
-### Sample CDN vendor configurations {#sample-configurations}
+### Sample CDN Vendor Configurations {#sample-configurations}
 
 Presented below are several configuration examples from several leading CDN vendors.
 
@@ -175,7 +175,7 @@ Presented below are several configuration examples from several leading CDN vend
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
 
-### Common errors {#common-errors}
+### Common Errors {#common-errors}
 
 The sample configurations provided show the base settings needed. However, a customer configuration may have other impacting rules that remove, edit, or re-arrange the headers needed for AEM as a Cloud Service to serve the traffic. Below are common errors that occur when configuring a customer managed CDN to point to AEM as a Cloud Service.
 
