@@ -32,10 +32,7 @@ The core of this feature is the ability for AEM Apache/Dispatcher to load (or re
 > This feature requires AEM version **18311 or higher**.
 
 >[!NOTE]
-> This feature's usage of Redirect Map Manager requires ACS Commons version **6.7.0 or higher**.
-
->[!NOTE]
-> This feature’s usage of Redirect Manager requires ACS Commons version **6.10.0 or higher**.
+> This feature's usage of Redirect Map Manager requires ACS Commons version **6.7.0 or higher** whereas usage of Redirect Manager requires version **6.10.0 or higher**.
 
 ## The rewrite map {#rewrite-map}
 
