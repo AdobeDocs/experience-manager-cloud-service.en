@@ -72,7 +72,7 @@ See this video to learn how to deliver assets using Dynamic Media with OpenAPI c
 
 ## Sample Edge Delivery Services site{#example-of-an-Edge-Delivery-Services-site} 
 
-See [WKND Travel](https://aem-dynamicmedia-demo--dm--hlxsites.aem.live/travel-hospitality/wknd-trvl-home). This site is built using the Document-Based Authoring capabilities of Edge Delivery Services. The site's content is authored in [Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT), using Dynamic Media with OpenAPI capabilities for asset delivery. Once authored, the content is published directly from the document. For this Document-Based Authoring setup, all the essential files, folders, configurations, website's styling and functionality codes are stored in this [Git repository](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks).
+See [WKND Travel](http://bit.ly/3DExLnf). This site is built using the Document-Based Authoring capabilities of Edge Delivery Services. The site's content is authored in [Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT), using Dynamic Media with OpenAPI capabilities for asset delivery. Once authored, the content is published directly from the document. For this Document-Based Authoring setup, all the essential files, folders, configurations, website's styling and functionality codes are stored in this [Git repository](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks).
 
 ## Integrating AEM Assets with Universal Editor based authoring flows for Edge Delivery Services {#integrate-aem-assets-with-universal-editor}
 
