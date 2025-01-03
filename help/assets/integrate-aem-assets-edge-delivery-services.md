@@ -20,6 +20,7 @@ After editing the content, you can publish it to Edge Delivery Services.
 ## Integrating AEM Assets with Document-Based Authoring flows for Edge Delivery Services {#integrate-aem-assets-with-document-based-authoring-tools}
 
 AEM Assets integration with the Document-Based Authoring tools, such as Microsoft Word or Google Docs, provides an asset selector in your editor directly. Use this asset selector to access to the AEM Assets, and insert approved assets into your document.
+
 If you already have an Edge Delivery Services website, see [AEM Assets plugin](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) to integrate AEM Assets with your existing AEM project. If you don't have an Edge Delivery Services website see, [Prerequisites](#integrate-aem-assets-with-microsoft-word-and-google-docs) and [Integrating AEM Assets with Document-Based Authoring environment](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs) sections below.
 
 ### Prerequisites{#integrate-aem-assets-with-microsoft-word-and-google-docs}
