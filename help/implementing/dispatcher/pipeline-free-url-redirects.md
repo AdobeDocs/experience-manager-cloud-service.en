@@ -21,7 +21,7 @@ AEM as a Cloud Service offers [several approaches](https://experienceleague.adob
 * The number of redirects ranges from a few to tens of thousands.
 * You want the option of a user interface, either created as a custom project or by using the [ACS Commons Redirect Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) or [ACS Commons Redirect Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html).
 
-The core of this feature is the ability for AEM Apache/Dispatcher to load (or reload) one or more rewrite map files that have been placed in a specified location in the publish repository. It is important to mention that how the files get there is outside the scope of this feature but you can consider one of the following methods:
+The core of this feature is the ability for AEM Apache/Dispatcher to load (or reload) one or more rewrite map files that have been placed in a specified location in the publish repository (so that it is downloadable from AEM publish). It is important to mention that how the files get there is outside the scope of this feature but you can consider one of the following methods:
 
 * Ingesting the rewrite map as an asset in the author user interface and publishing it.
 * Installing the [ACS Commons Redirect Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) ([at least 6.7.0 version or higher](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)), which includes a user interface to manage the url mappings and can also publish the rewrite map file.
