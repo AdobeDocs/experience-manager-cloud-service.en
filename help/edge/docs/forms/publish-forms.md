@@ -62,11 +62,11 @@ To add the form to your webpage:
 
 1. Access your Microsoft SharePoint or Google Drive account and navigate to your `[AEM Edge Delivery project directory]`.
 
-2. Open a document file where you intend to embed the form. For instance, you can open the [enquiry-form.docx](/help/edge/assets/enquiry-form.docx) file, or alternatively, create a new document.
+2. Open a document file where you intend to embed the form. For example, you can open the [enquiry-form.docx](/help/edge/assets/enquiry-form.docx) file, or alternatively, create a new document.
  
 3. Identify the desired section within the document where you want to insert the form, and navigate to it accordingly.
 
-4. Add a block named 'Form' to the file, similar to the example provided below:
+4. Add a block named 'Form' to the file. For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch.
 
     | Form  |
     |---|
