@@ -88,7 +88,7 @@ To copy the sample content to your own content folder and point your GitHub repo
 
     ![Share folder with AEM User, provide editing rights- Google Drive](/help/edge/assets/add-aem-user-google-folder.png){width=50%}
 
-2. Copy the [example content](/help/edge/assets/wefinance1.zip) to your folder. To copy:
+1. Copy the [example content](/help/edge/assets/wefinance1.zip) to your folder. To copy:
 
     1. Unzip the downloaded folder and copy the content. 
 
