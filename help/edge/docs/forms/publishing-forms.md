@@ -22,6 +22,7 @@ To publish forms to Edge Delivery Services, you must first establish a connectio
 ##  Publish Forms for Edge Delivery Services 
 
 To publish forms for Edge Delivery Services, perform the below steps:
+
 [1. Link GitHub Repository to AEM instance](#link-github-repository-to-aem-instance)
 [2. Link AEM instance to GitHub Repository](#link-aem-instance-to-github-repository)
   
@@ -68,18 +69,18 @@ To link the AEM Forms Author instance to [your project on the GitHub Repository]
 1. Access your AEM Forms as a Cloud Service author instance.
 1. Select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.1.  Select **[!UICONTROL Create]**  &gt; **[!UICONTROL Adaptive Forms]**. The Wizard opens. In the Source tab, select a Edge Delivery Services based formtemplate:
 
-    ![Create EDS Forms](/help/edge/assets/create-eds-forms.png)
+    ![Create EDS Forms](/help/edge/assets/create-eds-forms.png){width=50%, align-center}
 
 1. Click **[!UICONTROL Create]** and the **Create Form** wizard appears.
 1. Specify the **GitHub URL**. For example, if your GitHub repository is named "aemcrosswalk", it's located under the account "wkndform",the URL is:
     `https://github.com/wkndform/aemcrosswalk`
 1. Click **[!UICONTROL Create]**.
 
-    ![Create Form wizard](/help/edge/assets/create-form-wizard.png)
+    ![Create Form wizard](/help/edge/assets/create-form-wizard.png){width=50%, align-center}
 
     As soon as you click **[!UICONTROL Create]**, the form opens in the Universal editor for authoring.
 
-    ![author the form](/help/edge/assets/author-form.png)
+    ![author the form](/help/edge/assets/author-form.png){width=50%, align-center}
 
     >[!NOTE]
     >
@@ -90,10 +91,10 @@ To link the AEM Forms Author instance to [your project on the GitHub Repository]
 1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Edge Delivery Services Configuration]** on your AEM Forms as a Cloud Service author instance.
 1. Select the folder that matches the form's name. For example, if your form is called 'contact-us' choose the folder `forms/contact-us` and selct the configuration and publish the configuration:
 
-    ![Edge Delivery Services Configuration](/help/forms/assets/aem-instance-eds-configuration.png)
+    ![Edge Delivery Services Configuration](/help/forms/assets/aem-instance-eds-configuration.png){width=50%, align-center}
 
 1. Click **[!UICONTROL Properties]** to see the configuration.   
-    ![Automatically created configuration](/help/edge/assets/aem-forms-create-configuration-github.png)
+    ![Automatically created configuration](/help/edge/assets/aem-forms-create-configuration-github.png){width=50%, align-center}
 
     You can leave the Edge Host option as it is. The form would be published to both preview (.page) and live (.live) environments. 
 
@@ -105,25 +106,25 @@ When you click **[!UICONTROL Create]**, the form opens in the Universal Editor f
 
 1. Open the Content browser, and navigate to the **[!UICONTROL Adaptive Form]** component in the **Content tree**.
 
-    ![content tree](/help/edge/assets/content-tree.png)
+    ![content tree](/help/edge/assets/content-tree.png){width=50%, align-center}
 
 1. Click the **[!UICONTROL Add]** icon and add the desired components from the **Adaptive Form Components** list. 
    
-    ![add component](/help/edge/assets/add-component.png)
+    ![add component](/help/edge/assets/add-component.png){width=50%, align-center}
 
 1. Select the added Adaptive Form component and update its properties using **[!UICONTROL Properties]**.
  
-    ![open properties](/help/edge/assets/component-properties.png)
+    ![open properties](/help/edge/assets/component-properties.png){width=50%, align-center}
 
     The below screenshot displays the simple "Contact Us" form authored in the Universal Editor:
 
-    ![contact us form](/help/edge/assets/contact-us.png)
+    ![contact us form](/help/edge/assets/contact-us.png){width=50%, align-center}
 
 #### 4. Publish and preview the form
     
 Now, you can publish the form to Edge Delivery Services by clicking the **[!UICONTROL Publish]** button in the upper-right corner of the Universal Editor.
 
-![publish form](/help/edge/assets/publish-form.png)
+![publish form](/help/edge/assets/publish-form.png){width=50%, align-center}
 
 
 Here's how to access the form on Edge Delivery Services:
@@ -144,7 +145,7 @@ Here's how to access the form on Edge Delivery Services:
 
 The URL structure remains the same for both staged and live versions. However, the content you see differs based on the context:
 
-![View published form](/help/edge/assets/eds-view-publish-form.png)
+![View published form](/help/edge/assets/eds-view-publish-form.png){width=50%, align-center}
 
 ## Troubleshooting 
 
