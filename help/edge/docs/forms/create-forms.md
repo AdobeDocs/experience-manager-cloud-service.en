@@ -89,7 +89,7 @@ To proceed with form creation:
     >[!VIDEO](https://video.tv.adobe.com/v/3427468?quality=12&learn=on)
 
 
-2. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview the sheet. 
+1. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview the sheet. 
 
     ![Use AEM Sidekick to preview the sheet](/help/edge/assets/preview-form.png)
 
@@ -143,7 +143,7 @@ Till now, you have prepared the structure of the form. Now, to preview the form:
      > Ensure that the URL is formatted as a hyperlink rather than being displayed as plain text.
 
 
-2. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview the document. The page now displays the form. For example, here is the form based on the [enquiry spreadsheet](/help/edge/assets/enquiry-form.docx): 
+1. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview the document. The page now displays the form. For example, here is the form based on the [enquiry spreadsheet](/help/edge/assets/enquiry-form.docx): 
 
 
     [![A sample EDS form](/help/edge/assets/updated-form.png)](https://main--wefinance--wkndform.aem.page/enquiry-form)
