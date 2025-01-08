@@ -24,6 +24,7 @@ To publish forms to Edge Delivery Services, you must first establish a connectio
 To publish forms for Edge Delivery Services, perform the below steps:
 
 [1. Link GitHub Repository to AEM instance](#link-github-repository-to-aem-instance)
+
 [2. Link AEM instance to GitHub Repository](#link-aem-instance-to-github-repository)
   
 ### Link GitHub Repository to AEM instance
@@ -60,8 +61,11 @@ To link [your project on the GitHub Repository](/help/edge/docs/forms/tutorial.m
 To link the AEM Forms Author instance to [your project on the GitHub Repository](/help/edge/docs/forms/tutorial.md), perform the following steps:
 
 [1. Create an Adaptive Form based on the Edge Delivery Services template](#1-create-an-adaptive-form-based-on-the-edge-delivery-services-template)
+
 [2. Locate your form's configuration container in AEM author instance](#2-locate-your-forms-configuration-container-in-aem-author-instance)
+
 [3. Author the form in the Universal Editor](#3-author-the-form-in-the-universal-editor)
+
 [4. Publish and preview the form](#4-publish-and-preview-the-form)
 
 #### 1. Create an Adaptive Form based on the Edge Delivery Services template
