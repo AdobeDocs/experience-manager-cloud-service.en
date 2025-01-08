@@ -81,7 +81,7 @@ To link the AEM Forms Author instance to [your project on the GitHub Repository]
 
     ![author the form](/help/edge/assets/author-form.png)
 
-    > [!NOTE]
+    >[!NOTE]
     >
     > The Edge Delivery Services configuration for the forms based on Edge Delivery Services template is created automatically at the form's configuration container.
 
