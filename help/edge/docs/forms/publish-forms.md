@@ -62,11 +62,11 @@ To add the form to your webpage:
 
 1. Access your Microsoft SharePoint or Google Drive account and navigate to your `[AEM Edge Delivery project directory]`.
 
-2. Open a document file where you intend to embed the form. For example, you can open the [enquiry-form.docx](/help/edge/assets/enquiry-form.docx) file, or alternatively, create a new document.
+1. Open a document file where you intend to embed the form. For example, you can open the [enquiry-form.docx](/help/edge/assets/enquiry-form.docx) file, or alternatively, create a new document.
  
-3. Identify the desired section within the document where you want to insert the form, and navigate to it accordingly.
+1. Identify the desired section within the document where you want to insert the form, and navigate to it accordingly.
 
-4. Add a block named 'Form' to the file. For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch.
+1. Add a block named 'Form' to the file. For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch.
 
     | Form  |
     |---|
@@ -100,7 +100,7 @@ To add the form to your webpage:
     |---|
     | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json)  |
 
-5. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview the webpage. The page now displays the form. For example, here is the form based on the [enquiry spreadsheet](/help/edge/assets/enquiry.xlsx): 
+1. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview the webpage. The page now displays the form. For example, here is the form based on the [enquiry spreadsheet](/help/edge/assets/enquiry.xlsx): 
 
 
     ![A sample EDS form](/help/edge/assets/updated-form.png)
