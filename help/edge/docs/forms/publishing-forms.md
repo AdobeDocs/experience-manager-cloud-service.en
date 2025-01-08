@@ -126,7 +126,7 @@ When you click **[!UICONTROL Create]**, the form opens in the Universal Editor f
 
 #### 4. Publish and preview the form
     
-Now, you can publish the form to Edge Delivery Services by clicking the **[!UICONTROL Publish]** button in the upper-right corner of the Universal Editor.
+Now, publish the form to Edge Delivery Services by clicking the **[!UICONTROL Publish]** button in the upper-right corner of the Universal Editor.
 
 ![publish form](/help/edge/assets/publish-form.png){width=50%, align-center}
 
