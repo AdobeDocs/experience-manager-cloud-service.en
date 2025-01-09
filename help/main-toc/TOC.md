@@ -218,6 +218,7 @@ user-guide-title: AEM as a Cloud Service
   + [Security Overview for AEM as a Cloud Service](/help/security/cloud-service-security-overview.md)
   + [Configuring Advanced Networking for AEM as a Cloud Service](/help/security/configuring-advanced-networking.md)
   + [IMS Support for AEM as a Cloud Service](/help/security/ims-support.md)
+  + [Changes in User Group and Product Profile Synchronization](/help/security/changes-in-user-group-and-product-profile-synchronization.md)
   + [Same Site Cookie Support for AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
   + [OAuth2 Support for the mail Service](/help/security/oauth2-support-for-mail-service.md)
   + [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md)
