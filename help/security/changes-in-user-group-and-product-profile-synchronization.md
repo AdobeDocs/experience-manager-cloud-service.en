@@ -13,11 +13,11 @@ Whenever a user logs into AEM as a Cloud Service or an access token is used, Ado
 
 On January 28th, in order to reduce UI clutter and to optimize performance, there will be some changes to the synchronization behavior, resulting in fewer groups appearing in AEM. Two categories of AEM groups will be removed:
 
-1. AEM Groups with Suffix `GROUP_NAME_SUFFIX`. These groups do not appear in the Adobe Developer Console, but appear in the AEM Group Management screen, as shown below. In the unlikely case that your AEM application references a group that will no longer appear in AEM, make sure to use Adobe Admin Console user groups instead.
+1. AEM Groups with Suffix `GROUP_NAME_SUFFIX`. These groups do not appear in the Adobe Developer Console, but appear in the AEM Group Management screen, as shown below. In the unlikely case that your AEM application references these groups, make sure to reference Adobe Admin Console user groups without that suffix instead.
 
    ![Removed groups 1](/help/security/assets/removed-groups-1.png)
 
-1. AEM groups associated with Adobe Admin Console product profiles unrelated to the specific AEM tier or environment combination (for example, `author` or `e4535`). This may include product profiles that are:
+1. AEM groups associated with Adobe Admin Console product profiles unrelated to the specific environment. This may include product profiles that are:
 
    * related to other Adobe products
    * related to other AEM programs
