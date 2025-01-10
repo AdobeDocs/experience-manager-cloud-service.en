@@ -37,3 +37,4 @@ This will navigate to the Adobe Admin Console, as depicted in the screenshot bel
 ![Suffixes in the Admin Console](/help/security/assets/admin-console-profile-suffixes.png)
 
 In the unlikely case that your AEM application references a group that will no longer appear in AEM, make sure to instead either use i) a Product Profile from the right AEM instance or ii) an Adobe Admin Console user group.
+
