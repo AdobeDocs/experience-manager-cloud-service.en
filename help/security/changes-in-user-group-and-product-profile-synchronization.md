@@ -5,8 +5,8 @@ feature: Security
 role: Admin
 hide: yes
 hidefromtoc: yes
+exl-id: 0b097ab3-bf1d-4d43-9e19-d544594844ef
 ---
-
 # Changes in User Group and Product Profile Synchronization {#changes-in-user-group-and-product-profile-synchronization}
 
 Whenever a user logs into AEM as a Cloud Service or an access token is used, Adobe Admin Console user groups, product profiles, and product profile services are synchronized into the AEM repository as groups.
@@ -36,4 +36,4 @@ This will navigate to the Adobe Admin Console, as depicted in the screenshot bel
 
 ![Suffixes in the Admin Console](/help/security/assets/admin-console-profile-suffixes.png)
 
-In the unlikely case that your AEM application references a group that will no longer appear in AEM, make sure to instead either use i) a Product Profile from the right AEM instance or ii) an Adobe Admin Console user group. 
+In the unlikely case that your AEM application references a group that will no longer appear in AEM, make sure to instead either use i) a Product Profile from the right AEM instance or ii) an Adobe Admin Console user group.
