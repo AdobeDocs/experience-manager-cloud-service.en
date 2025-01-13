@@ -78,7 +78,7 @@ The [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk
 
 Note that not every block must have a model. Some blocks are simply [containers](#container) for a list of children, where each child has its own model.
 
-It is also necessary to define which blocks exist and can be added to a page using the Universal Editor. The [`component-definitions.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) file lists the components as they are made available by the Universal Editor.
+It is also necessary to define which blocks exist and can be added to a page using the Universal Editor. The [`component-definitions.json`](/help/implementing/universal-editor/component-definition.md) file lists the components as they are made available by the Universal Editor.
 
 ```json
 {
