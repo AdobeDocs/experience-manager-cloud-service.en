@@ -8,6 +8,12 @@ solution: Experience Manager Sites
 ---
 # Managing Content Fragments {#managing-content-fragments}
 
+>[!IMPORTANT]
+>
+>Various features of the Content Fragments and Content Fragment Models are available through the Early Adopter Program.
+>
+>To see the status, and how to apply if you are interested, check the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md).
+
 Learn how to manage your **Content Fragments** in Adobe Experience Manager (AEM) as a Cloud Service, from the dedicated [Content Fragments console](#content-fragments-console), and [Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor). These Content Fragments can be used as the basis of your headless content, or for page authoring.
 
 >[!NOTE]
