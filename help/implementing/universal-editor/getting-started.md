@@ -18,7 +18,17 @@ Although the Universal Editor can edit content from any source, this document wi
 
 ## Instrument the Page {#instrument-page}
 
-The Universal Editor service requires a [uniform resource name (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) to identify and utilize the correct backend system for the content in the app being edited. Therefore, a URN schema is required to map content back to content resources.
+The Universal Editor requires a JavaScript library in order to render and edit the page in the editor.
+
+In addition, the Universal Editor service requires a [uniform resource name (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) to identify and utilize the correct backend system for the content in the app being edited. Therefore, a URN schema is required to map content back to content resources.
+
+### Include the Universal Editor CORS Library {#cors-library}
+
+In order for the Universal Editor to connect to your app, your app must include the Universal Editor CORS library. Add the following script to your app.
+
+```html
+ <script src="https://universal-editor-service.adobe.io/cors.js" async></script>
+```
 
 ### Creating Connections {#connections}
 
