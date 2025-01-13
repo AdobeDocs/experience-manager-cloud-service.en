@@ -8,7 +8,7 @@ solution: Experience Manager Sites
 ---
 # Variations - Authoring Fragment Content{#variations-authoring-fragment-content}
 
-[Variations](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) are a significant feature of Content Fragments in Adobe Expoerience Manager (AEM) as a Cloud Service. This is because they let you create and edit copies of the **Master** content for use on specific channels and scenarios. IN particular this makes headless content delivery even more flexible.
+[Variations](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) are a significant feature of Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service. This is because they let you create and edit copies of the **Master** content for use on specific channels and scenarios. IN particular this makes headless content delivery even more flexible.
 
 >[!NOTE]
 >
