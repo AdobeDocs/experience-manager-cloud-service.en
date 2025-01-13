@@ -5,8 +5,8 @@ feature: Security
 role: Admin
 hide: yes
 hidefromtoc: yes
+exl-id: 100ddbf2-9c63-406f-a78d-22862501a085
 ---
-
 # Customer Managed Keys Setup for AEM as a Cloud Service {#cusomer-managed-keys-for-aem-as-a-cloud-service}
 
 AEM as a Cloud Service currently stores customer data in Azure Blob Storage and MongoDB, utilizing provider-managed encryption keys by default to secure data. While this setup meets the security needs of many organizations, businesses in regulated industries or those requiring enhanced data sovereignty may seek greater control over their encryption practices. For organizations that prioritize data security, compliance, and the ability to manage their encryption keys, the Customer-Managed Keys (CMK) solution offers a critical enhancement.
