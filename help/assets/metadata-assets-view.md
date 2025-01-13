@@ -165,6 +165,19 @@ To remove a metadata form from a folder:
 
 You can also navigate to the folder details page and select **[!UICONTROL System mapped Metadata Form]** from the **[!UICONTROL Metadata Forms]** field to remove the assigned metadata form from a folder.
 
+### Working with Link component in metadata form {#link-component-metadata-form}
+
+The link component is used to enable external URLs including storage links, copyright information, contact forms, and so on. To use link component on metadata form, you need to [configure metadata form](#metadata-forms).
+
+Follow the steps below to use link component on metadata form:
+
+1. Go to asset details page and navigate to **[!UICONTROL Link URL]**.
+1. Add a URL that you want to use to redirect for the selected asset.
+1. Click **[!UICONTROL Add link]**. Perform one of the following actions:
+   * Click ![copy icon](assets/do-not-localize/copy.svg) to copy the URL.
+   * Click ![edit icon](assets/do-not-localize/edit.svg) to edit the URL.
+1. Click **[!UICONTROL Save]** to save the changes.
+
 ## Next Steps {#next-steps}
 
 * [Watch a video to manage metadata forms in Assets view](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
@@ -204,3 +217,4 @@ How can one search based strictly on the metadata. Similar to AEM Assets GQL que
 >
 >* [Search assets](search.md).
 -->
+
