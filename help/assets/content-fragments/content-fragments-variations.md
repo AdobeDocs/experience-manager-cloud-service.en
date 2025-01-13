@@ -309,6 +309,10 @@ To annotate a fragment:
 
    ![annotate](assets/cfm-variations-07c.png)
 
+>[!NOTE]
+>
+>The Annotations feature does not show comments entered in the new [Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md#commenting-on-your-fragment).
+
 ### Viewing, Editing, Deleting Annotations {#viewing-editing-deleting-annotations}
 
 Annotations:
