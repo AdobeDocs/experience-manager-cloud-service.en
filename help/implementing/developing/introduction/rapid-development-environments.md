@@ -937,7 +937,7 @@ Most commands support the global ```--json``` flag which suppresses console outp
 }
 ```
 
-#### Wait for Completion {#wait}, reset successfully
+#### Wait for Completion, reset successfully {#wait-success}
 
 ```$ aio aem rde reset --json```
 
@@ -949,7 +949,7 @@ Most commands support the global ```--json``` flag which suppresses console outp
 }
 ```
   
-#### Wait for Completion {#wait}, reset failed
+#### Wait for Completion, reset failed {#wait-failed}
 
 ```$ aio aem rde reset --json```
 
