@@ -25,7 +25,7 @@ The following step-by-step workflow description is designed to help you get up a
 
     * Create your own video encoding profile. Or, you can simply use the predefined _Adaptive Video Encoding_ profile that comes with Dynamic Media.
 
-        * [Create a video encoding profile](/help/assets/dynamic-media/video-profiles#creating-a-video-encoding-profile-for-adaptive-streaming).
+        * [Create a video encoding profile](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
         * The maximum output video encoding resolution is 8,192 &times; 4,320 or 4,320 &times; 8,192.md.
         * Learn more about [Best practices for video encoding](#best-practices-for-encoding-videos).
 
