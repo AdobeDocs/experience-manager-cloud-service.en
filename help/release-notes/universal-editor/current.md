@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2024.11.13 Release Notes
-description: These are the release notes for the 2024.11.13 release of the Universal Editor.
+title: Universal Editor 2024.12.02 Release Notes
+description: These are the release notes for the 2024.12.02 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2024.11.13 Release Notes {#release-notes}
+# Universal Editor 2024.12.02 Release Notes {#release-notes}
 
-These are the release notes for the 13 November 2024 release of the Universal Editor.
+These are the release notes for the 2 December 2024 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -16,22 +16,18 @@ These are the release notes for the 13 November 2024 release of the Universal Ed
 
 ## What’s New {#what-is-new}
 
-* **Retry Option on CORS Timeout:** With [release 2024.09.26,](/help/release-notes/universal-editor/2024/2024-09-26.md) an error panel was introduced when the editor couldn’t establish a connection to the loaded page, preventing endless loading states. 
-  * With this release, the editor automatically keeps retrying and once the connection is established, editing can be resumed.
-  * This is especially useful for pages that may take longer than the one minute timeout to initialize.
-* **Extensibility Enhancements for Developers:** The Universal Editor now supports  broadcasting events to extensions, allowing extension developers to subscribe to [events.](/help/implementing/universal-editor/events.md)
-  * This enables developers to [react to editor events within their custom extensions.](/help/implementing/universal-editor/customizing.md#extending)
-* **Persistent Component Selection:** Selected components in the editor will now persist even after refreshing the browser.
-  * This ensures that users can continue working without losing their context when reloading the page.
-* **Localized Quick Links:** The **Quick Links** section on the home screen now provides localized links to documentation, helping users easily access relevant guides based on their language preferences.
-* **Request ID for Advanced Debugging:** Error notifications now include a **Request ID** in the details section, which correlates with the `x-request-id header`.
-  * This makes it easier for Adobe engineering teams to trace and diagnose issues by matching those errors with internal logs.
+* **Keyboard Navigation of Content Tree**: [The content tree,](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) available in the side panel, is now fully accessible via keyboard.
+  * Authors can navigate and interact with tree view items using standard keyboard controls, adhering to [WCAG 2.1 guidelines](/help/sites-cloud/authoring/page-editor/accessible-content.md) for accessibility.
+  * This enhancement ensures that all interactive elements within the tree are keyboard-operable, improving inclusivity for users who rely on keyboard navigation.
+* **Deselection of Editables**: Authors can now deselect previously selected editable elements on the page.
+  * This eliminates distractions when authors want to view the page without active selection borders.
+* **Fragment Selector**: On AEM as a Cloud Service instances, fragment references now open the fragment selector as content picker, delivering improved functionality such obeying allowed Content Fragment models, search of Content Fragments, and an improved overall experience.
+  * This aligns with other Adobe UIs and enhances consistency.
+  * [For AEM 6.5 environments,](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) the existing content picker remains in use.
+* **Container Description**: [The container component](/help/implementing/universal-editor/field-types.md#container) used in the [properties panel,](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel-properties-rail) to reference content, now supports a description attribute, displayed above the container fields.
+  * This addition enhances clarity by providing authors with context about the grouped fields they are editing.
 
 ## Other Improvements {#other-improvements}
 
-* **Fixed Long Content Tree Labels:** Resolved an issue where long labels in the **Content Tree** panel were cut off
-  * This ensures that drag-and-drop handles are always visible for content reordering.
-* **Fixed Long Properties Labels:** Addressed a bug where long field labels in the **Properties** panel overlapped with field validation information
-* **Horizontal Scrolling in Properties Panel:** Fixed an issue where wide elements in the **Properties** panel caused horizontal scrolling
-* **Fixed Inactive Toolbar During Notifications:** The top **Adobe Experience Cloud** toolbar is now fully functional when [toast](https://spectrum.adobe.com/page/toast/) notifications are displayed.
-* **Improved Stability:** Added error boundaries to handle unexpected values, preventing the entire UI from crashing when a single renderer or validator fails, improving robustness
+* **Rich Text Field Synchronization**: Synchronization of raw and rendered content within rich text fields in the properties panel was improved, addressing issues within Edge Delivery Services projects where rich text content and rendered representation can differ.
+* **Editing Mode Events**: The Universal Editor now reliably emits editing mode events, including after reloading remote apps.
