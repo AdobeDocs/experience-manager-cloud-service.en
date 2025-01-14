@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 
 When deciding [what level of integration](/help/implementing/developing/headful-headless.md) you would like to have between your external SPA and AEM, it is often clear that you need to be able to view and edit the SPA within AEM. The RemotePage Component is a custom page component just for this purpose.
 
-{{#ue-over-spa}}
+{{ue-over-spa}}
 
 ## Overview {#overview}
 

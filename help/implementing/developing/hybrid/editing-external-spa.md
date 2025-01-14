@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 
 When deciding [what level of integration](/help/implementing/developing/headful-headless.md) you would like to have between your external SPA and AEM, consider that you must be able to edit and view the SPA within AEM, often.
 
-{{#ue-over-spa}}
+{{ue-over-spa}}
 
 ## Overview {#overview}
 
