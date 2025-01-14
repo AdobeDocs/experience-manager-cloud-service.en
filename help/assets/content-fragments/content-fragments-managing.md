@@ -307,6 +307,7 @@ In addition to the standard options, [Timeline](/help/assets/manage-digital-asse
 >* Entered in the fragment editor
 >* Specific to a selected segment of text within the fragment
 >
+>Neither show the comments entered in the new [Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md#commenting-on-your-fragment).
 
 For example:
 
