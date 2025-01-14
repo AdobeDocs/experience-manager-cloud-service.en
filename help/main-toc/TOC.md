@@ -1273,7 +1273,6 @@ user-guide-title: AEM as a Cloud Service
       + [The RemotePage Component](/help/implementing/developing/hybrid/remote-page.md)
       + [Editing an External SPA within AEM](/help/implementing/developing/hybrid/editing-external-spa.md)
       + [Composite Components in SPAs](/help/implementing/developing/hybrid/composite-components.md)
-      + [Server Side Rendering](/help/implementing/developing/hybrid/ssr.md)
       + [Enabling JSON Export for a Component](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
       + [Launch Integration](/help/implementing/developing/hybrid/launch-integration.md)
       + [SPA Reference Documents](/help/implementing/developing/hybrid/reference-materials.md)
