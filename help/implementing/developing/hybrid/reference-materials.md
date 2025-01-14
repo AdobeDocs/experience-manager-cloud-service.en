@@ -7,6 +7,8 @@ role: Admin, Architect, Developer
 ---
 # SPA Reference Materials {#spa-reference-materials}
 
+{{ue-over-spa}}
+
 ## SPA JavaScript API References for NMP Modules {#api-references}
 
 The following are the available JavaScript API references of the NPM modules for the AEM SPA Editor SDK framework.
