@@ -7,6 +7,8 @@ role: Admin, Architect, Developer
 ---
 # WKND SPA Project {#wknd-spa-project}
 
+{{ue-over-spa}}
+
 Immerse yourself in SPA development with this multi-part tutorial leading you through project setup, component mapping, front-end development tools, and application routing to implement your own SPA.
 
 ![WKND SPA Project](assets/wknd-spa-project.png)

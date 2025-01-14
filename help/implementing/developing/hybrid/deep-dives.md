@@ -9,6 +9,8 @@ role: Admin, Architect, Developer
 
 The AEM SPA Editor SDK was featured in a series of AEM Gems sessions. [Adobe Experience Manager Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) is a series of technical deep dives delivered by Adobe experts. Hosted by Adobe engineers, this series can serve as a great guide to gain a deeper understanding of the AEM SPA Editor SDK at a low level.
 
+{{ue-over-spa}}
+
 ## Gem Sessions {#gem-sessions}
 
 * **[AEM SPA Editor](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2018/aem-spa-editor)** - A beginner's overview of the SPA Editor. If are just getting started with SPAs in AEM, start here.

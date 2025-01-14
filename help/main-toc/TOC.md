@@ -1208,6 +1208,7 @@ user-guide-title: AEM as a Cloud Service
     + [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
     + [Customizing Site Templates and Themes](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
     + [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md)
+    + [Disallow the Serialization of ResourceResolvers via Sling Model Exporter](/help/implementing/developing/disallow-resourceresolver-serialization.md)
     + Full Stack AEM Development {#full-stack}
       + [Getting Started Developing AEM Sites - WKND Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
       + [Structure of the AEM UI](/help/implementing/developing/introduction/ui-structure.md)
@@ -1272,11 +1273,9 @@ user-guide-title: AEM as a Cloud Service
       + [The RemotePage Component](/help/implementing/developing/hybrid/remote-page.md)
       + [Editing an External SPA within AEM](/help/implementing/developing/hybrid/editing-external-spa.md)
       + [Composite Components in SPAs](/help/implementing/developing/hybrid/composite-components.md)
-      + [Server Side Rendering](/help/implementing/developing/hybrid/ssr.md)
       + [Enabling JSON Export for a Component](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
       + [Launch Integration](/help/implementing/developing/hybrid/launch-integration.md)
       + [SPA Reference Documents](/help/implementing/developing/hybrid/reference-materials.md)
-      + [Disallow the Serialization of ResourceResolvers via Sling Model Exporter](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)
   + Developer Tools {#developer-tools}
     + [Developer Mode](/help/implementing/developing/tools/developer-mode.md)
     + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
