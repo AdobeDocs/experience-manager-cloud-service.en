@@ -1208,7 +1208,7 @@ user-guide-title: AEM as a Cloud Service
     + [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
     + [Customizing Site Templates and Themes](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
     + [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md)
-    + [Disallow the Serialization of ResourceResolvers via Sling Model Exporter](/help/implementing/developing/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)
+    + [Disallow the Serialization of ResourceResolvers via Sling Model Exporter](/help/implementing/developing/disallow-resourceresolver-serialization.md)
     + Full Stack AEM Development {#full-stack}
       + [Getting Started Developing AEM Sites - WKND Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
       + [Structure of the AEM UI](/help/implementing/developing/introduction/ui-structure.md)
