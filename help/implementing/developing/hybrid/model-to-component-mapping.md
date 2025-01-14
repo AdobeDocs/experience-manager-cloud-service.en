@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 
 This document describes how the dynamic model to component mapping occurs in the JavaScript SPA SDK for AEM.
 
-{{#ue-over-spa}}
+{{ue-over-spa}}
 
 ## ComponentMapping Module {#componentmapping-module}
 

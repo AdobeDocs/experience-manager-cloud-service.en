@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 
 For single page applications in AEM, the app is responsible for the routing. This document describes the routing mechanism, the contract, and options available.
 
-{{#ue-over-spa}}
+{{ue-over-spa}}
 
 ## Project Routing {#project-routing}
 

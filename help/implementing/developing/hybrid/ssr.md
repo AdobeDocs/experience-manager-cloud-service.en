@@ -11,7 +11,7 @@ Single page applications (SPAs) can offer the user a rich, dynamic experience th
 
 However, this process can lead to longer initial load times, especially if the SPA is large and rich in its content. To optimize load times, some of the content can be rendered server-side. Using server-side rendering (SSR) can accelerate the initial load of the page and then pass further rendering on to the client.
 
-{{#ue-over-spa}}
+{{ue-over-spa}}
 
 ## When to Use SSR {#when-to-use-ssr}
 
