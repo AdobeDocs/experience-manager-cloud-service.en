@@ -7,6 +7,8 @@ role: Admin, Architect, Developer
 ---
 # Disallow the Serialization of ResourceResolvers via Sling Model Exporter {#disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter}
 
+{{#ue-over-spa}}
+
 The Sling Model Exporter feature allows to serialize Sling Models objects into a JSON format. This feature is widely used as it enables SPAs (single page applications) to easily access data from AEM. On the implementation side the Jacson Databind library is used to serialize these objects.
 
 The serialization is a recursive operation. Starting from a „root object", it recursively iterates through all eligible objects and serializes them and their children. You can find a description of what fields are serialized in the article [Jackson – Decide What Fields Get Serialized/Deserialized](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not).
