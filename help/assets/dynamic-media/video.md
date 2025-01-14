@@ -26,6 +26,7 @@ The following step-by-step workflow description is designed to help you get up a
     * Create your own video encoding profile. Or, you can simply use the predefined _Adaptive Video Encoding_ profile that comes with Dynamic Media.
 
         * [Create a video encoding profile](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
+        * The maximum output video encoding resolution is 8,192 &times; 4,320 or 4,320 &times; 8,192.md.
         * Learn more about [Best practices for video encoding](#best-practices-for-encoding-videos).
 
     * Associate the video processing profile to one or more folders where you are going to upload your primary source videos.
@@ -35,7 +36,8 @@ The following step-by-step workflow description is designed to help you get up a
 
     * Upload your primary source videos to the designated folders. Once added, the videos are encoded according to the video processing profile assigned to the folder.
 
-        * Dynamic Media supports primarily short-form videos with a maximum length of 30 minutes and a minimum resolution that is greater than 25 x 25.
+        * Dynamic Media supports primarily short-form videos with a maximum length of 30 minutes and a minimum resolution that is greater than 25 &times; 25.
+        * The maximum supported input video resolution is 16,384 &times; 16,384.
         * You can upload video files that are up to 15 GB each.
         * [Upload your videos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
         * Learn more about [Supported input file formats](/help/assets/file-format-support.md).
@@ -98,7 +100,7 @@ The following step-by-step workflow description is designed to help you get up a
 
 Video in Dynamic Media is an end-to-end solution that makes it easy to publish high-quality adaptive video for streaming across multiple screens, including desktops, tablets, and mobile devices. An Adaptive Video Set groups versions of the same video that are encoded at different bit rates and formats such as 400 kbps, 800 kbps, and 1000 kbps. The desktop computer or mobile device detects the available bandwidth.
 
-For example, on an iOS mobile device, it detects a bandwidth such as 3G, 4G, or Wi-Fi. Then, it automatically selects the right encoded video from among the various video bit rates within the Adaptive Video Set. The video is streamed to desktops, mobile devices, or tablets.
+For example, on an iOS mobile device, it detects a bandwidth, such as 3G, 4G, or Wi-Fi. Then, it automatically selects the right encoded video from among the various video bit rates within the Adaptive Video Set. The video is streamed to desktops, mobile devices, or tablets.
 
 In addition, video quality is dynamically switched automatically if network conditions change on the desktop or on the mobile device. Also, if a customer enters full-screen mode on a desktop, the Adaptive Video Set responds by using a better resolution, improving the customer's viewing experience. Using Adaptive Video Sets provides you with the best possible viewing experience for customers that play Dynamic Media video on multiple screens and devices.
 
@@ -278,16 +280,16 @@ The following are best-practice tips for encoding source video files.
 
 When you encode a video file, use a source video file of the highest possible quality. Avoid using previously encoded video files because these files are already compressed, and further encoding creates a subpar quality video.
 
-* Dynamic Media supports primarily short-form videos with a maximum length of 30 minutes and a minimum resolution that is greater than 25 x 25.
+* Dynamic Media supports primarily short-form videos with a maximum length of 30 minutes and a minimum resolution that is greater than 25 &times; 25.
 * You can upload primary source video files that are up to 15 GB each.
 
 The following table describes the recommended size, aspect ratio, and minimum bit rate that your source video files must have before you encode them:
 
 |Size|Aspect ratio|Minimum bit rate|
 |--- |--- |--- |
-|1024 X 768|4:3|4500 kbps for most videos.|
-|1280 X 720|16:9|3000 - 6000 kbps, depending on the amount of motion in the video.|
-|1920 X 1080|16:9|6000 - 8000 kbps, depending on the amount of motion in the video.|
+|1024 &times; 768|4:3|4500 kbps for most videos.|
+|1280 &times; 720|16:9|3000 - 6000 kbps, depending on the amount of motion in the video.|
+|1920 &times; 1080|16:9|6000 - 8000 kbps, depending on the amount of motion in the video.|
 
 ### Obtain a file's metadata {#obtaining-a-file-s-metadata}
 
@@ -314,7 +316,7 @@ The following table describes how formula results translate to common aspect rat
 |1.78|16:9|
 |0.56|9:16|
 
-For example, a video that is 1440 width x 1080 height has an aspect ratio of 1440/1080, or 1.33. In this case, you choose a video encoding preset with a 4:3 aspect ratio to encode the video file.
+For example, a video that is 1440 width &times; 1080 height has an aspect ratio of 1440/1080, or 1.33. In this case, you choose a video encoding preset with a 4:3 aspect ratio to encode the video file.
 
 ### Bitrate {#bitrate}
 
@@ -341,23 +343,23 @@ This table describes the data rate of typical connection speeds.
 
 |Speed (Kbps)|Connection type|
 |--- |--- |
-|256|Dial-up connection.|
-|800|Typical mobile connection. For this connection, target a data rate in the range of 400 to a maximum of 800 for 3G experiences.|
-|2000|Typical broadband desktop connection. For this connection, target a data rate in the 800-2000 Kbps range, with most targets averaging 1200-1500 Kbps.|
-|5000|Typical high-broadband connection. Encoding in this upper range is not recommended because video delivery at this speed is not available to most consumers.|
+| 256 | Dial-up connection.|
+| 800 | Typical mobile connection. For this connection, target a data rate in the range of 400 to a maximum of 800 for 3G experiences.|
+| 2000 | Typical broadband desktop connection. For this connection, target a data rate in the 800-2000 Kbps range, with most targets averaging 1200-1500 Kbps.|
+| 5000 | Typical high-broadband connection. Encoding in this upper range is not recommended because video delivery at this speed is not available to most consumers.|
 
 ### Resolution {#resolution}
 
-**Resolution** describes a video file's height and width in pixels. Most source video is stored at a high resolution (for example, 1920 x 1080). For streaming purposes, source video is compressed to a smaller resolution (640 x 480 or smaller).
+**Resolution** describes a video file's height and width in pixels. Most source video is stored at a high resolution (for example, 1920 &times; 1080). For streaming purposes, source video is compressed to a smaller resolution (640 &times; 480 or smaller).
 
-Resolution and data rate are two integrally linked factors that determine video quality. To maintain the same video quality, the higher the number of pixels in a video file (the higher the resolution), the higher the data rate must be. For example, consider the number of pixels per frame in a 320 x 240 resolution and a 640 x 480 resolution video file:
+Resolution and data rate are two integrally linked factors that determine video quality. To maintain the same video quality, the higher the number of pixels in a video file (the higher the resolution), the higher the data rate must be. For example, consider the number of pixels per frame in a 320 &times; 240 resolution and a 640 &times; 480 resolution video file:
 
-|Resolution|Pixels per frame|
+| Resolution | Pixels per frame |
 |--- |--- |
-|320 x 240|76,800|
-|640 x 480|307,200|
+| 320 &times; 240 | 76,800 |
+| 640 &times; 480 | 307,200 |
 
-The 640 x 480 file has four times more pixels per frame. To achieve the same data rate for these two example resolutions, you apply four times the compression to the 640 x 480 file, which can reduce the quality of the video. Therefore, a video data rate of 250 Kbps produces high-quality viewing at a 320 x 240 resolution, but not at a 640 x 480 resolution.
+The 640 &times; 480 file has four times more pixels per frame. To achieve the same data rate for these two example resolutions, you apply four times the compression to the 640 &times; 480 file, which can reduce the quality of the video. Therefore, a video data rate of 250 Kbps produces high-quality viewing at a 320 &times; 240 resolution, but not at a 640 &times; 480 resolution.
 
 In general, the higher data rate you use, the better your video appears, and the higher resolution you use, the higher data rate you must maintain viewing quality (compared to lower resolutions).
 
@@ -368,14 +370,16 @@ Because resolution and data rate are linked, you have two options when encoding 
 
 When you choose (or create) a video encoding preset for your primary source video file, use this table to target the correct resolution:
 
-|Resolution|Height (pixels)|Screen size|
+| Resolution | Height (pixels) | Screen size |
 |--- |--- |--- |
-|240p|240|Tiny screen|
-|300p|300|Small screen typically for mobile devices|
-|360p|360|Small screen|
-|480p|480|Medium screen|
-|720p|720|Large screen|
-|1080p|1080|High-definition large screen|
+| 240p | 240 | Tiny screen |
+| 300p | 300 | Small screen typically for mobile devices |
+| 360p | 360 | Small screen |
+| 480p | 480 | Medium screen |
+| 720p | 720 | Large screen |
+| 1080p | 1080 | High-definition large screen |
+
+The maximum supported input video resolution is 16,384 &times; 16,384. The maximum output video encoding resolution is 8,192 &times; 4,320 or 4,320 &times; 8,192.
 
 ### Fps (Frames per second) {#fps-frames-per-second}
 
@@ -391,14 +395,14 @@ To calculate this ratio, you divide source width by encoded width to get the wid
 
 If the resulting ratio is a whole integer, it means that the video is optimally scaled. If the resulting ratio is not a whole integer, it impacts video quality by leaving leftover pixel artifacts on the display. This effect is most noticeable when the video has text.
 
-As an example, suppose that your source video is 1920 x 1080. In the following table, the three encoded videos provide the optimal encoding settings to use.
+As an example, suppose that your source video is 1920 &times; 1080. In the following table, the three encoded videos provide the optimal encoding settings to use.
 
-|Video Type|Width x Height|Width Ratio|Height Ratio|
+| Video Type | Width &times; Height | Width Ratio | Height Ratio |
 |--- |--- |--- |--- |
-|Source|1920 x 1080|1|1|
-|Encoded|960 x 540|2|2|
-|Encoded|640 x 360|3|3|
-|Encoded|480 x 270|4|4|
+| Source | 1920 &times; 1080 | 1 | 1 |
+| Encoded |960 &times; 540 | 2| 2 |
+| Encoded |640 &times; 360 | 3| 3 |
+| Encoded |480 &times; 270 | 4| 4 |
 
 ### Encoded video file format {#encoded-video-file-format}
 
@@ -1091,7 +1095,7 @@ You can make your long-form videos easier to watch and navigate by adding chapte
 
 >[!NOTE]
 >
->The video player that is used must support the use of chapter markers. Dynamic Media video players do support chapter markers but using third-party video players may not.
+>The video player used must support the use of chapter markers. Dynamic Media video players do support chapter markers but using third-party video players may not.
 
 <!-- OBSOLETE CONTENT OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading "Customizing Behavior Using Modifiers" under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
@@ -1218,7 +1222,7 @@ Based on the total time of the video, Dynamic Media captures ten (default) thumb
 
 Ideally, you can add a video thumbnail anytime after you upload your video but before you publish the video on your website.
 
-If you prefer, you can choose to upload a custom thumbnail to represent your video instead of using a thumbnail generated by Dynamic Media. For example, you could create a custom thumbnail image that has the title of your video, an eye-catching opening image, or a very specific image captured from your video. The custom video thumbnail image that you upload should have a maximum resolution of 1280 x 720 pixels (minimum width of 640 pixels) and be no larger than 2MB.
+If you prefer, you can choose to upload a custom thumbnail to represent your video instead of using a thumbnail generated by Dynamic Media. For example, you could create a custom thumbnail image that has the title of your video, an eye-catching opening image, or a very specific image captured from your video. The custom video thumbnail image that you upload should have a maximum resolution of 1280 &times; 720 pixels (minimum width of 640 pixels) and be no larger than 2MB.
 
 See also [About video thumbnails](/help/assets/dynamic-media/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
 
@@ -1321,7 +1325,7 @@ String getVideoManifestURI(Resource resource, ManifestType manifestType, boolean
 
 #### getVideoManifestURI API parameters 
 
-This API takes in the following three parameters:
+This API takes the following three parameters:
 
 | Parameter | Description |
 | --- | --- |
