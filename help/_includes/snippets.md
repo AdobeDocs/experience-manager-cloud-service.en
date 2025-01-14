@@ -231,5 +231,5 @@ To log a support ticket, you must first register your Edge Delivery site in Clou
 >
 >The SPA Editor remains supported by Adobe, but the preferred editors for managing headless content in AEM are now:
 >
->* [The Universal Editor](/help/edge/wysiwyg-authoring/authoring.md) for visually editing content.
->* [The Content Fragment Editor](/help/assets/content-fragments/content-fragments-managing.md) for form-based editing of content.
+>* [The Universal Editor](/help/edge/wysiwyg-authoring/authoring.md) for visually editing headless content.
+>* [The Content Fragment Editor](/help/assets/content-fragments/content-fragments-managing.md) for form-based editing of headless content.
