@@ -8,7 +8,7 @@ hide: yes
 hidefromtoc: yes
 ---
 
-# Authoring a Edge Delivery Services Forms
+# Authoring a Edge Delivery Services Form
 
 Adobe Experience Manager offers the following platforms to author Edge Delivery Services Forms:
 * Universal Editor based authoring
