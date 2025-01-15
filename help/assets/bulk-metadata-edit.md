@@ -16,7 +16,7 @@ Execute these steps to bulk edit the metadata of multiple assets at a time:
 1. Select the assets and click **Bulk Metadata Edit** from the top menu. 
 ![bulk-metadata-edit](/help/assets/assets/bulk-metadata-edit1.png)
 1. On the Edit metadata page, edit the following fields in the **Properties** panel: 
-    * **Status:** select a status for the selected assets.
+    * **Status:** Select a status for the selected assets.
     * **Expiration date:** Set a date after which the assets are no longer valid or needed. 
     * **Author:** Specify the author's name.
     * **Keywords:** Add specific terms or text strings that provide a high-level information about the assets to enhance their discoverability. Add a keyword and press Enter or return to add another keyword to the list.
