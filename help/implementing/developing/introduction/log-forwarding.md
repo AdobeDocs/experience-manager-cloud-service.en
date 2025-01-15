@@ -5,7 +5,7 @@ exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
 ---
-## Log Forwarding {#log-forwarding}
+# Log Forwarding {#log-forwarding}
 
 >[!NOTE]
 >
@@ -30,9 +30,9 @@ Note that the network bandwidth associated with logs sent to the logging destina
 This article is organized in the following way:
 
 * Setup - common for all logging destinations
+* Transport & Advanced Networking - consideration should be given to network setup before creating logging configuration
 * Logging destination configurations - each destination has a slightly different format
 * Log Entry Formats - information about the log entry formats
-* Advanced networking - sending AEM and Apache/Dispatcher logs through a dedicated egress or through a VPN
 * Migrating from legacy log forwarding - how to move from log forwarding previously setup by Adobe to the self-serve approach
 
 ## Setup {#setup}
@@ -99,6 +99,48 @@ It is possible to set different values between CDN logs and AEM logs (including 
           aem:
             enabled: false
    ```
+
+## Transport & Advanced Networking {#transport-advancednetworking}
+
+Some organizations choose to restrict which traffic can be received by the logging destinations, others may require to use ports other than HTTPS (443).  If so [Advanced Networking](/help/security/configuring-advanced-networking.md) will need to be configured before deploying log forwarding configuration.
+
+**Destination Port**|**Require Logs to appear from Fixed IP?**|**Require Advanced Networking?**|**LogForwarding.yaml Port Required?**
+:-----:|:-----:|:-----:|:----:
+HTTPS (443) | No | No | No
+HTTPS (443) | Yes | Yes, [Dedicated Egress](/help/security/configuring-advanced-networking.md#dedicated-egress-ip-address-dedicated-egress-ip-address) | No
+Non standard port (e.g 8088) | No | Yes | Yes
+Non standrad port (e.g 8088) | Yes | Yes [Dedicated Egress](/help/security/configuring-advanced-networking.md#dedicated-egress-ip-address-dedicated-egress-ip-address) | Yes
+
+>[!Note]
+>Whether your logs appear from a single IP address is determined by your choice of Advanced Networking configuration.  Dedicated Egress must be used to facilitate this.
+>
+> Advanced Networking configuration is a [two-step process](/help/security/configuring-advanced-networking.md#configuring-and-enabling-advanced-networking-configuring-enabling) requiring enablement at program and environment level.
+
+For AEM logs (including Apache/Dispatcher), if you have configured [Advanced Networking](/help/security/configuring-advanced-networking.md), you can use the `aem.advancedNetworking` property to forward them from a Dedicated Egress IP address or over a VPN.
+
+The example below shows how to configure logging on a standard HTTPS port with Advanced Networking.
+
+   ```yaml
+   kind: "LogForwarding"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     splunk:
+       default:
+         enabled: true
+         host: "splunk-host.example.com"
+         port: 443
+         token: "${{SPLUNK_TOKEN}}"
+         index: "aemaacs"
+       aem:
+         advancedNetworking: true
+   ```
+
+For CDN logs, you can allow-list the IP addresses, as described in [Fastly documentation - Public IP List](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). If that list of shared IP addresses is too large, consider sending traffic to an https server or (non-Adobe) Azure Blob Store where logic can be written to send the logs out of a known IP to their ultimate destination.
+
+>[!Note]
+>It is not possible for CDN logs to appear from the same IP address that your AEM logs appear from, this is because logs are sent directly from Fastly and not AEM Cloud Service.
 
 ## Logging Destination Configuration {#logging-destinations}
 
@@ -352,31 +394,6 @@ aem_tier: author
 
 ```
 
-## Advanced Networking {#advanced-networking}
-
-Some organizations choose to restrict which traffic can be received by the logging destinations.
-
-For the CDN log, you can allow-list the IP addresses, as described in [fastly documentation - Public IP List](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). If that list of shared IP addresses is too large, consider sending traffic to an https server or (non-Adobe) Azure Blob Store where logic can be written to send the logs out of a known IP to their ultimate destination.
-
-For AEM logs (including Apache/Dispatcher), if you have configured [advanced networking](/help/security/configuring-advanced-networking.md), you can use the advancedNetworking property to forward them from a dedicated egress IP address or over a VPN.
-
-   ```yaml
-   kind: "LogForwarding"
-   version: "1"
-   metadata:
-     envTypes: ["dev"]
-   data:
-     splunk:
-       default:
-         enabled: true
-         host: "splunk-host.example.com"
-         port: 443
-         token: "${{SPLUNK_TOKEN}}"
-         index: "aemaacs"
-       aem:
-         advancedNetworking: true
-   ```
-
 ## Migrating from Legacy Log Forwarding {#legacy-migration}
 
 Before Log Forwarding configuration was achieved through a self-serve model, customers were requested to open support tickets, where Adobe would initiate the integration.
@@ -394,5 +411,5 @@ It is recommended, but not required, that a configuration is deployed to all env
 
 >[!NOTE]
 >The `sourcetype` field's values sent to your Splunk index may have changed, so adjust accordingly.
->[!NOTE]
+>
 >When Log Forwarding is deployed to an environment previously configured by Adobe support, you may receive duplicate logs for up to a few hours. This will eventually auto-resolve.
