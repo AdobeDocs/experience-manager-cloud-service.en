@@ -452,7 +452,7 @@ redirects:
       action:
         type: redirect
         location:
-          reqProperty: path
+          reqProperty: url
           transform:
             - op: replace
               match: '^/(.*)$'
