@@ -73,7 +73,7 @@ Perform the following steps to install AEM Modernize Tools to your local AEM For
 
     `java -jar aem-author-p4502.jar`
 
-2. Clone the [AEM Modernize Tool](https://github.com/adobe/forms-modernizer) repository in your local system.
+1. Clone the [AEM Modernize Tool](https://github.com/adobe/forms-modernizer) repository in your local system.
 
     ```Shell 
 
@@ -83,8 +83,8 @@ Perform the following steps to install AEM Modernize Tools to your local AEM For
 
     After executing the command successfully, you have a local copy of the AEM Modernize Tool repository available on your machine.
 
-3. Navigate to the`[AEM Modernize Tool Repository]`  in your local system.
-4. Run the following command: 
+1. Navigate to the`[AEM Modernize Tool Repository]`  in your local system.
+1. Run the following command: 
 
     ```Shell
         mvn clean install 
