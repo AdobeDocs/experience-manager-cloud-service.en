@@ -104,14 +104,14 @@ It is possible to set different values between CDN logs and AEM logs (including 
 
 Some organizations choose to restrict which traffic can be received by the logging destinations, others may require to use ports other than HTTPS (443).  If so [Advanced Networking](/help/security/configuring-advanced-networking.md) will need to be configured before deploying log forwarding configuration.
 
-**Destination Port**|**Require Logs to appear from Fixed IP?**|**Require Advanced Networking?**|**LogForwarding.yaml Port Required?**
-:-----:|:-----:|:-----:|:----:
-HTTPS (443) | No | No | No
-HTTPS (443) | Yes | Yes, [Dedicated Egress](/help/security/configuring-advanced-networking.md#dedicated-egress-ip-address-dedicated-egress-ip-address) | No
-Non standard port (e.g 8088) | No | Yes | Yes
-Non standrad port (e.g 8088) | Yes | Yes [Dedicated Egress](/help/security/configuring-advanced-networking.md#dedicated-egress-ip-address-dedicated-egress-ip-address) | Yes
+|**Destination Port**|**Require Logs to appear from Fixed IP?**|**Require Advanced Networking?**|**LogForwarding.yaml Port Required?**|
+|:-----:|:-----:|:-----:|:----:|
+| HTTPS (443) | No | No | No |
+| HTTPS (443) | Yes | Yes, [Dedicated Egress](/help/security/configuring-advanced-networking.md#dedicated-egress-ip-address-dedicated-egress-ip-address) | No |
+| Non standard port (e.g 8088) | No | Yes | Yes |
+| Non standrad port (e.g 8088) | Yes | Yes [Dedicated Egress](/help/security/configuring-advanced-networking.md#dedicated-egress-ip-address-dedicated-egress-ip-address) | Yes |
 
->[!Note]
+>[!NOTE]
 >Whether your logs appear from a single IP address is determined by your choice of Advanced Networking configuration.  Dedicated Egress must be used to facilitate this.
 >
 > Advanced Networking configuration is a [two-step process](/help/security/configuring-advanced-networking.md#configuring-and-enabling-advanced-networking-configuring-enabling) requiring enablement at program and environment level.
@@ -139,7 +139,7 @@ The example below shows how to configure logging on a standard HTTPS port with A
 
 For CDN logs, you can allow-list the IP addresses, as described in [Fastly documentation - Public IP List](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). If that list of shared IP addresses is too large, consider sending traffic to an https server or (non-Adobe) Azure Blob Store where logic can be written to send the logs out of a known IP to their ultimate destination.
 
->[!Note]
+>[!NOTE]
 >It is not possible for CDN logs to appear from the same IP address that your AEM logs appear from, this is because logs are sent directly from Fastly and not AEM Cloud Service.
 
 ## Logging Destination Configuration {#logging-destinations}
