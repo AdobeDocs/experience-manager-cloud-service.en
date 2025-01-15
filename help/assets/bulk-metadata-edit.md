@@ -21,7 +21,7 @@ Execute these steps to bulk edit the metadata of multiple assets at a time:
     * **Author:** Specify the author's name.
     * **Keywords:** Add specific terms or text strings that provide a high-level information about the assets to enhance their discoverability. Add a keyword and press Enter or return to add another keyword to the list.
     * **Tags:** Click ![tags icon](/help/assets/assets/tags-icon.svg) to select tags from the available options. Tags provide more specific information about the assets and enhance their discoverability. Tags already applied to the selected assets displays in the **Properties** panel. If you can't find the relevant tags, create them and assign to the selected assets. See [Manage tags in Assets view](/help/assets/tagging-management-assets-view.md) for details on creating and assigning tags to assets.
-    * Click **Save** to apply the above metadata updates to the selected assets. Keywords and Tags are appended while the updated details for Status, Expiration date and Author overrides their existing details. 
+    * Click **Save** to apply the above metadata updates to the selected assets. Once saved, Keywords and Tags are appended while the updated details for Status, Expiration date and Author overrides their existing details. 
     ![save-bulk-metadata-edit-properties](/help/assets/assets/save-bulk-metadata-edit-properties2.png)
 
         >[!NOTE]
