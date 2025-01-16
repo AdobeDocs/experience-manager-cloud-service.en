@@ -104,12 +104,47 @@ It is possible to set different values between CDN logs and AEM logs (including 
 
 Some organizations choose to restrict which traffic can be received by the logging destinations, others may require to use ports other than HTTPS (443).  If so [Advanced Networking](/help/security/configuring-advanced-networking.md) will need to be configured before deploying log forwarding configuration.
 
-|**Destination Port**|**Require Logs to appear from Fixed IP?**|**Require Advanced Networking?**|**LogForwarding.yaml Port Required?**|
-|:-----:|:-----:|:-----:|:----:|
-| HTTPS (443) | No | No | No |
-| HTTPS (443) | Yes | Yes, [Dedicated Egress](/help/security/configuring-advanced-networking.md#dedicated-egress-ip-address-dedicated-egress-ip-address) | No |
-| Non standard port (e.g 8088) | No | Yes | Yes |
-| Non standrad port (e.g 8088) | Yes | Yes [Dedicated Egress](/help/security/configuring-advanced-networking.md#dedicated-egress-ip-address-dedicated-egress-ip-address) | Yes |
+Use the table below to see what the requirements are for Advanced Networking and Logging configuration based on whether you are using port 443 or not, and whether or not you need your logs to appear from a fixed IP address.
+<html>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+</style>
+<table>
+  <tbody>
+    <tr>
+      <th>Destination Port</th>
+      <th>Requirement for Logs to appear from Fixed IP?</th>
+      <th>Advanced Networking Needed</th>
+      <th>LogForwarding.yaml Port Definition Needed</th>
+    </tr>
+    <tr>
+      <td rowspan="2">HTTPS (443)</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>Yes, <a href="/help/security/configuring-advanced-networking.md#dedicated-egress-ip-address-dedicated-egress-ip-address">Dedicated Egress</a></td>
+      <td>No</td>
+    <tr>
+    <tr>
+      <td rowspan="2">Non standard port (e.g 8088)</td>
+      <td>No</td>
+      <td>Yes, <a href="/help/security/configuring-advanced-networking.md#flexible-port-egress-flexible-port-egress">Flexible Egress</a></td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>Yes, <a href="/help/security/configuring-advanced-networking.md#dedicated-egress-ip-address-dedicated-egress-ip-address">Dedicated Egress</a></td>
+      <td>Yes</td>
+  </tbody>
+</table>
+</html>
 
 >[!NOTE]
 >Whether your logs appear from a single IP address is determined by your choice of Advanced Networking configuration.  Dedicated Egress must be used to facilitate this.
