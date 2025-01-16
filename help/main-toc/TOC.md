@@ -26,6 +26,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2024 {#2024}
+      + [Release Notes for 2024.11.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-11-0.md)
       + [Release Notes for 2024.10.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-10-0.md)
       + [Release Notes for 2024.9.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-9-0.md)
       + [Release Notes for 2024.8.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-8-0.md)
