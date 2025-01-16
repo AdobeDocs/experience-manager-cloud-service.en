@@ -1,7 +1,6 @@
 ---
 title: Reprocessing digital assets
 description: Learn about various methods of reprocessing digital assets
-feature: Asset processing
 role: User, Leader, Developer
 ---
 # Reprocessing digital assets {#reprocessing-digital-assets}
