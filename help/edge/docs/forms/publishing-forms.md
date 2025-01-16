@@ -163,7 +163,8 @@ Having trouble loading your form? Here are some common issues and how to fix the
     * The correct repository name
     * The specific branch that you're using for Edge Delivery Services
 
-* **JSON Display**: If you see only JSON data instead of the actual form, your form block might be outdated. You can update it to the latest version available on https://github.com/adobe-rnd/aem-boilerplate-forms.
+<!-- * **JSON Display**: If you see only JSON data instead of the actual form, your form block might be outdated. You can update it to the latest version available on https://github.com/adobe-rnd/aem-boilerplate-forms.
+-->
 
 ## See also
 

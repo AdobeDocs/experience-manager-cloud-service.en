@@ -29,16 +29,17 @@ For detailed steps on how to author using the Universal Editor, refer to the [Au
 
 You can author the forms using document-based authoring with Microsoft Excel or Google Sheets files, allowing you to leverage the robust ecosystems and APIs of Google Sheets, Microsoft Excel, and Microsoft SharePoint. This approach is particularly useful for creating simple forms without advanced submission services.
 
-To begin creating a form using Microsoft Excel or Google Sheets, [set up an AEM project using AEM Forms boilerplate](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) and clone the corresponding GitHub repository to your local machine. AEM Forms Edge Delivery provides a feature called the Adaptive Forms Block, which simplifies the process of creating forms for capturing and storing data. To learn how to create and publish forms using the Adaptive Forms Block on Edge Delivery Services, refer to the [Create a Form](/help/edge/docs/forms/create-forms.md) article.
+To begin creating a form using Microsoft Excel or Google Sheets, [set up an AEM project using AEM Forms boilerplate](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) and clone the corresponding GitHub repository to your local machine. AEM Forms Edge Delivery provides a feature called the Adaptive Forms Block, which simplifies the process of creating forms for capturing and storing data. To learn how to create and publish forms using the Adaptive Forms Block on Edge Delivery Services, refer to [Create a Form](/help/edge/docs/forms/create-forms.md).
 
 ## Adaptive Forms editors (for Core Components or foundation components based authoring)
 
-You can author forms that are engaging, responsive and dynamic. The Adaptive Form editor provides a user-friendly wizard that allows you to quickly create Adaptive Forms. The form wizard features easy tab navigation, enabling you to select pre-configured templates for foundation or core components, themes, data models, and submission options to create a form efficiently.
+You can author forms that are engaging, responsive and dynamic. The Adaptive Form editor provides a user-friendly wizard that allows you to quickly create Adaptive Forms. The form wizard features easy tab navigation, enabling you to select pre-configured templates for foundation or core components, themes, data models, and submission options to create a form efficiently. 
 
 [Authoring forms with Core Components](/help/forms/creating-adaptive-form-core-components.md) allows you to leverage standardized data capture components that can be customized, reducing development time and lowering maintenance costs for digital enrollment experiences. These forms can be published using the Adaptive Forms Block on Edge Delivery Services or through the AEM Publish instance. 
 
 [Authoring forms with Foundation Components](/help/forms/create-an-adaptive-form.md) uses classic data capture components. These forms can only be published using the AEM Publish instance. 
 
+You can also publish forms created using Adaptive Forms Editors on Edge Delivery Services by establishing [connection between your AEM environment and the Edge Delivery Services GitHub repository](/help/edge/docs/forms/publishing-forms.md).
 
 ## How to choose between various types form authoring?
 
