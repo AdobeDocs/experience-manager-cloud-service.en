@@ -40,7 +40,7 @@ To reprocess assets in a folder:
      * **[!UICONTROL Metadata]:** Choose this option when you want to extract metadata information and smart tags for the selected assets.
 
      * **[!UICONTROL Processing Profiles]:** Choose this option when you want to reprocess a selected profile. You can choose **[!UICONTROL Full Process]** option to include the default processing and the custom profile assigned at the folder level. 
-     <!--When assets are uploaded to a folder, [!DNL Assets view] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
+     <!--When assets are uploaded to a folder, [!DNL Assets ~~view~~] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
 
      * **[!UICONTROL Post-processing Workflow]:** Choose this option where additional processing of assets is required that cannot be achieved using the processing profiles. Additional post-processing workflows can be added to the configuration. Post-processing lets you add completely customized processing on top of the configurable processing using asset microservices.
 
