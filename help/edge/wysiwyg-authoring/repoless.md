@@ -39,7 +39,7 @@ There are several steps to activate repoless functionality for your project.
 
 1. [Retrieve access token](#access-token)
 1. [Set up configuration service](#config-service)
-1. [Set access control](#access-control)
+1. [Add site configuration and technical account](#access-control)
 1. [Update AEM configuration](#update-aem)
 1. [Authenticate site](#authenticate-site)
 
@@ -120,9 +120,9 @@ Reach out to Adobe via your project Slack channel or raise a support issue if yo
 
 Once the public configuration is created, you can access it via a URL similar to `https://main--<your-aem-project>--<your-github-org>.aem.page/config.json` in order to verify it.
 
-### Set Access Control {#access-control}
+### Add Path Mapping for Site Configuration and Set Technical Account {#access-control}
 
-To set up access control, you need to provide the technical account.
+You need to create a site configuration and add it to your path mapping.
 
 1. Create a new page at the root of your site and choose the [**Configuration** template.](/help/edge/wysiwyg-authoring/tabular-data.md#other)
    * You can leave the configuration empty with only the predefined `key` and `value` columns. You only need to create it.
@@ -148,27 +148,30 @@ To set up access control, you need to provide the technical account.
    ```text
    curl 'https://main--<your-aem-project>--<your-github-org>.aem.live/config.json'
    ```
-1. In your browser, you can now retrieve the technical account in the response of the following link.
+
+Once the site configuration is mapped, you can configure access control by defining your technical account so it has privileges to publish.
+
+1. In your browser, retrieve the technical account in the response of the following link.
    ```text
    https://author-p<programID>-e<envionmentID>.adobeaemcloud.com/bin/franklin.delivery/<your-github-org>/<your-aem-project>/main/.helix/config.json
    ```
 
-The response will be similar to the following.
+1. The response will be similar to the following.
 
-```json
-{
-  "total": 1,
-  "offset": 0,
-  "limit": 1,
-  "data": [
-    {
-      "key": "admin.role.publish",
-      "value": "<tech-account-id>@techacct.adobe.com"
-    }
-  ],
-  ":type": "sheet"
-}
-```
+   ```json
+   {
+     "total": 1,
+     "offset": 0,
+     "limit": 1,
+     "data": [
+       {
+         "key": "admin.role.publish",
+         "value": "<tech-account-id>@techacct.adobe.com"
+       }
+     ],
+     ":type": "sheet"
+   }
+   ```
 
 1. Set the technical account in your configuration with a cURL command similar to the following.
    ```text

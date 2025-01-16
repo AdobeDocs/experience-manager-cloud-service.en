@@ -22,12 +22,14 @@ There is a section on how to [rotate keys](#rotating-secrets), which is a good s
 
 As described in the [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) page, customers may choose to route traffic through their own CDN, which is referred to as the Customer CDN (also sometimes called BYOCDN).
 
-As part of the setup, the Adobe CDN and the Customer CDN must agree on a value of the `X-AEM-Edge-Key` HTTP Header. This value is set on each request, at the Customer CDN, before it is routed to the Adobe CDN, which then validates that the value is as expected, so it can trust other HTTP headers, including those that help route the request to the appropriate AEM origin.  
+As part of the setup, the Adobe CDN and the Customer CDN must agree on a value of the `X-AEM-Edge-Key` HTTP Header. This value is set on each request at the Customer CDN, before it is routed to the Adobe CDN, which then validates that the value is as expected, so it can trust other HTTP headers, including those that help route the request to the appropriate AEM origin.  
 
 The *X-AEM-Edge-Key* value is referenced by the `edgeKey1` and `edgeKey2` properties in a file named `cdn.yaml` or similar, somewhere under a top-level `config` folder. Read [Using Config Pipelines](/help/operations/config-pipeline.md#folder-structure) for details about the folder structure and how to deploy the configuration.  The syntax is described in the example below.
 
+For further debugging information and common errors, please check [Common Errors](/help/implementing/dispatcher/cdn.md#common-errors).
+
 >[!WARNING]
->Direct access without a correct X-AEM-Edge-Key will be denied for all requests matching the condition (in the sample below that means all requests to the publish tier). If you need to gradually introduce authentication please see the [Migrating safely to reduce the risk of blocked traffic](#migrating-safely) section.
+>Direct access without a correct X-AEM-Edge-Key will be denied for all requests matching the condition (in the sample below that means all requests to the publish tier). If you need to gradually introduce authentication, please see the [Migrating safely to reduce the risk of blocked traffic](#migrating-safely) section.
 
 ```
 kind: "CDN"
@@ -139,11 +141,11 @@ Additional properties include:
 
 * `data` node that contains a child `authentication` node.
 * Under `authentication`, one `authenticators` node and one `rules` node, both of which are arrays.
-* Authenticators: Lets you declare a type of token or credential, which in this case is an purge key. It includes the following properties:
+* Authenticators: Lets you declare a type of token or credential, which in this case is a purge key. It includes the following properties:
   * name - a descriptive string.
   * type - must be purge.
   * purgeKey1 - its value must reference a [Cloud Manager secret-type Environment Variable](/help/operations/config-pipeline.md#secret-env-vars). For the Service Applied field, select All. It is recommended that the value (for example, `${{CDN_PURGEKEY_031224}}`) reflects the day it was added.
-  * purgeKey2 - used for rotation of secrets, which is described in the [rotating secrets section](#rotating-secrets) section below. At least one of `purgeKey1` and `purgeKey2` must be declared.
+  * purgeKey2 - used for rotation of secrets, which is described in the [rotating secrets](#rotating-secrets) section below. At least one of `purgeKey1` and `purgeKey2` must be declared.
 * Rules: Lets you declare which of the authenticators should be used, and whether it's for the publish and/or preview tier.  It includes:
   * name - a descriptive string
   * when - a condition that determines when the rule should be evaluated, according to the syntax in the [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md) article. Typically, it will include a comparison of the current tier (for example., publish).
@@ -200,7 +202,7 @@ In addition, the syntax includes:
   * name - a descriptive string
   * type - must be `basic`
   * an array of up to 10 credentials, each of which includes the following name/value pairs, which end-users can enter in the basic auth dialog:
-    * user - the name of user
+    * user - the name of the user.
     * password - its value must reference a [Cloud Manager secret-type environment variable](/help/operations/config-pipeline.md#secret-env-vars), with **All** selected as the service field.
 * Rules: Lets you declare which of the authenticators should be used, and which resources should be protected. Each rule includes:
   * name - a descriptive string
