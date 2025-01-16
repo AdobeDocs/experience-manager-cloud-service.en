@@ -6,13 +6,13 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 ---
-# Code Quality Testing {#code-quality-testing}
+# Code Quality testing {#code-quality-testing}
 
 Learn how code quality testing of pipelines works and how it can improve the quality of your deployments.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_codequalitytests"
->title="Code Quality Testing"
+>title="Code Quality testing"
 >abstract="Code quality testing evaluates your application code based on a set of quality rules. It is the primary purpose of a code-quality only pipeline and is executed immediately following the build step in all production and non-production pipelines."
 
 ## Introduction {#introduction}
@@ -23,21 +23,23 @@ See [Configuring Your CI-CD Pipeline](/help/implementing/cloud-manager/configuri
 
 ## Code Quality Rules {#understanding-code-quality-rules}
 
-Code quality testing scans the source code to ensure that it meets certain quality criteria. This is implemented by a combination of SonarQube and content package-level examination using OakPAL. There are over 100 rules, combining generic Java rules and AEM-specific rules. Some of the AEM-specific rules are created based on best practices from AEM Engineering and are referred to as [custom code quality rules](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+Code quality testing scans the source code to ensure that it meets certain quality criteria. A combination of SonarQube and content package-level examination using OakPAL implements this step. There are more than 100 rules, combining generic Java rules and AEM-specific rules. Some AEM-specific rules are based on best practices from AEM Engineering and are known as [custom code quality rules](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
->[!NOTE]
+You can download the current complete list of rules [using this link](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
+
+>[!IMPORTANT]
 >
->You can download the complete list of rules [with this link](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
+>Starting Thursday, February 13, 2025 (Cloud Manager 2025.2.0), Cloud Manager Code Quality is using an updated SonarQube 9.9 version and an updated list of rules that you can [download here](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS-2024-12-0.xlsx).
 
 ### Three-Tiered Ratings {#three-tiered-gate}
 
 Issues identified by code quality testing are assigned to one of three categories.
 
-* **Critical** - These are issues which cause an immediate failure of the pipeline.
+* **Critical** - Issues that cause an immediate failure of the pipeline.
 
-* **Important** - These are issues which cause the pipeline to enter a paused state. A deployment manager, project manager, or business owner can either override the issues, in which case the pipeline proceeds, or they can accept the issues, in which case the pipeline stops with a failure.
+* **Important** - Issues that cause the pipeline to enter a paused state. A deployment manager, project manager, or business owner can either override the issues, allowing the pipeline to proceed. Alternatively, they can accept the issues, causing the pipeline to stop with a failure.
 
-* **Info** - These are issues which are provided purely for informational purposes and have no impact on the pipeline execution
+* **Info** - Issues that are provided purely for informational purposes and have no impact on the pipeline execution
 
 >[!NOTE]
 >
@@ -45,7 +47,7 @@ Issues identified by code quality testing are assigned to one of three categorie
 
 ### Ratings {#ratings}
 
-The results of this step is delivered as **Ratings**. 
+The results of this step are delivered as **Ratings**. 
 
 The following table summarizes the ratings and failure thresholds for each of the critical, important and information categories.
 
@@ -62,7 +64,7 @@ The following table summarizes the ratings and failure thresholds for each of th
 
 >[!NOTE]
 >
->See [SonarQube's Metric Definitions](https://docs.sonarqube.org/latest/user-guide/metric-definitions/) for more detailed definitions.
+>See [SonarQube's Metric Definitions](https://docs.sonarsource.com/sonarqube-server/latest/user-guide/code-metrics/metrics-definition/) for more detailed definitions.
 
 >[!NOTE]
 >
@@ -70,7 +72,7 @@ The following table summarizes the ratings and failure thresholds for each of th
 
 ## Dealing with False Positives {#dealing-with-false-positives}
 
-The quality scanning process is not perfect and will sometimes incorrectly identify issues which are not actually problematic. This is referred to as a **false positive**.
+The quality scanning process is not perfect and sometimes incorrectly identifies issues that are not actually problems. This state is called a **false positive**.
 
 In these cases, the source code can be annotated with the standard Java `@SuppressWarnings` annotation specifying the rule ID as the annotation attribute. For example, one common false positive is that the SonarQube rule to detect hardcoded passwords can be aggressive about how a hardcoded password is identified.
 
@@ -81,7 +83,7 @@ The following code is fairly common in an AEM project, which has code to connect
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```
 
-SonarQube will then raise a blocker vulnerability. But after reviewing the code, you recognize that this is not a vulnerability and can annotate the code with the appropriate rule ID.
+SonarQube raises a blocker vulnerability. But after reviewing the code, you recognize that this issue is not a vulnerability and can annotate the code with the appropriate rule ID.
 
 ```java
 @SuppressWarnings("squid:S2068")
@@ -89,7 +91,7 @@ SonarQube will then raise a blocker vulnerability. But after reviewing the code,
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```
 
-However, if the code was actually this:
+However, if the code was actually the following:
 
 ```java
 @Property(label = "Service Password", value = "mysecretpassword")
@@ -100,14 +102,14 @@ Then the correct solution is to remove the hardcoded password.
 
 >[!NOTE]
 >
->While it is a best practice to make the `@SuppressWarnings` annotation as specific as possible, that is, annotate only the specific statement or block causing the issue, it is possible to annotate at a class level.
+>While it is best practice to make the `@SuppressWarnings` annotation as specific as possible - such as annotating only the statement or block causing the issue - it is also possible to annotate at the class level.
 
 >[!NOTE]
 >While there is no explicit security testing step, there are security-related code quality rules evaluated during the code quality step. See [Security Overview for AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) to learn more about security in Cloud Service.
 
 ## Content Package Scanning Optimization {#content-package-scanning-optimization}
 
-As part of the quality analysis process, Cloud Manager performs analysis of the content packages produced by the Maven build. Cloud Manager offers optimizations to accelerate this process, which are effective when certain packaging constraints are observed. Most significant is the optimization performed for projects that output a single content package, generally referred to as an "all" package, which contains several other content packages produced by the build, which are marked as skipped. When Cloud Manager detects this scenario, rather than unpack the "all" package, the individual content packages are scanned directly and sorted based on dependencies. For example, consider the following build output.
+As part of the quality analysis process, Cloud Manager performs analysis of the content packages produced by the Maven build. Cloud Manager offers optimizations to accelerate this process, which is effective when certain packaging constraints are observed. The most significant optimization targets projects producing a single "all" package, containing multiple content packages from the build, which are marked as skipped. When Cloud Manager detects this scenario, rather than unpack the "all" package, the individual content packages are scanned directly and sorted based on dependencies. For example, consider the following build output.
 
 * `all/myco-all-1.0.0-SNAPSHOT.zip` (content-package)
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (skipped-content-package)
@@ -122,4 +124,4 @@ A special case can occur when the "all" content package contains a combination o
 >[!NOTE]
 >
 >* This optimization does not impact the packages which are deployed to AEM.
->* Because the matching between the embedded content packages and the skipped content packages is based on file names, this optimization cannot be performed if multiple skipped content packages have exactly the same file name or if the file name is changed while embedding.
+>* The matching between embedded content packages and skipped content packages relies on file names. This optimization cannot occur if multiple skipped packages share the same file name or if the file name changes during embedding.

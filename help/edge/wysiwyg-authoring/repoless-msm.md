@@ -134,7 +134,7 @@ For this example, we will create the site `wknd-ch` for the Swiss presence of wk
                    "admin": [
                        "*@adobe.com"
                    ],
-                   "publish": [
+                   "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"
                    ]
                },
