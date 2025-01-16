@@ -35,7 +35,7 @@ The **Publish** button can therefore be suppressed entirely in an app by adding 
 
 ### Filtering Components {#filtering-components}
 
-You can restrict the allowed components per container in the Universal Editor using component filters. Please see the document [Filtering Components](help/implementing/universal-editor/filtering.md) for more information.
+You can restrict the allowed components per container in the Universal Editor using component filters. Please see the document [Filtering Components](/help/implementing/universal-editor/filtering.md) for more information.
 
 ### Conditionally Show and Hide Components in Properties Panel {#conditionally-hide}
 
