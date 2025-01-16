@@ -11,6 +11,8 @@ Single page applications (SPAs) can offer compelling experiences for website use
 
 This article presents important questions to consider when engaging a front-end developer to develop a SPA for AEM and gives an overview of the architecture of AEM concerning deploying SPAs on AEM.
 
+{{ue-over-spa}}
+
 ## SPA Development Principles for AEM {#spa-development-principles-for-aem}
 
 Developing single page applications on AEM assumes that the front-end developer observes standard best practices when creating an SPA. If as a front-end developer you follow these general best practices and a few AEM-specific principles, your SPA is functional with [AEM and its content-authoring capabilities](introduction.md#content-editing-experience-with-spa).

@@ -9,6 +9,8 @@ role: Admin, Architect, Developer
 
 The page component for an SPA does not provide the HTML elements of its child components via a JSP or HTL file and resource objects. This operation is delegated to the SPA framework. The representation of child components is fetched as a JSON data structure (that is, the model). The SPA components are then added to the page according to the provided JSON model. As such the page component initial body composition differs from its pre-rendered HTML counterparts.
 
+{{ue-over-spa}}
+
 ## Page Model Management {#page-model-management}
 
 The resolution and the management of the page model is delegated to a provided [`PageModelManager`](blueprint.md#pagemodelmanager) module. The SPA must interact with the `PageModelManager` module when it initializes to fetch the initial page model and register for model updates - mostly produced when the author is editing the page via the Page Editor. The `PageModelManager` is accessible by SPA project as a npm package. Being an interpreter between AEM and the SPA, the `PageModelManager` is meant to accompany the SPA.

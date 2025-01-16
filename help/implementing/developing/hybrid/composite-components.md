@@ -13,6 +13,8 @@ When composite components are properly implemented within the AEM Single Page Ap
 
 This article demonstrates how you can add a composite component to your single page application to work seamlessly with the AEM SPA Editor.
 
+{{ue-over-spa}}
+
 ## Use Case {#use-case}
 
 This article will use the typical card component as its example use case. Cards are a common UI element for many digital experiences and are typically made up of an image and associated text or caption. An author wants to be able to drag-and-drop the whole card, but be able to individually edit the card's image and customize the associated text.
