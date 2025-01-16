@@ -31,16 +31,16 @@ A major change to AEM as a Cloud Service is the fully integrated use of Adobe ID
 
 The Content Transfer Tool and Cloud Acceleration Manager will migrate any groups associated with the content being migrated to the cloud system. The Content Transfer Tool does this by copying all groups from the source AEM system during the extraction process. CAM Ingestion then selects and migrates only certain groups:
 
+* If a group is on an ACL or CUG policy of migrated content, that group will be migrated, with a few exceptions listed below.
 * There are a number of groups that are built-in, and already present on the target cloud system; these are never migrated.
-* Direct member groups of any built-in group directly or indirectly referred to in an ACL or CUG policy of migrated content will be migrated, to ensure users that are direct or indirect members of such groups maintain their access to the migrated content.
-* If a group is on an ACL or CUG policy of migrated content, that group will be migrated.
+    * Some built-in groups may include member groups that are _not_ built-in; any such member groups (direct members or members of members, etc.) referenced in an ACL or CUG policy of migrated content will be migrated, to ensure users who are members of these groups (either directly or indirectly) maintain their access to the migrated content.
 * Other groups, such as those not found on an ACL or CUG policy, those already on the destination system, and those with any uniqueness-constrained data already on the target system, will not be migrated. 
 
 Note that the path logged/reported for a group is only the first path that triggered that group to be migrated, and that group could also be on other content paths.
 
 Most groups migrated are configured to be managed by IMS.  This means that a group in IMS with the same name will be linked to the group in AEM, and any IMS users in the IMS group will become AEM users and members of the group in AEM.  This allows those users to have access to the content according to ACLs or CUGs policies for the group.
 
-Note that migrated groups are no longer considered "local groups"; they are IMS groups, and they must be re-created in IMS so that they can be synchronized between AEM and IMS.  Groups can be created in IMS via Admin Console, among other methods, individually or in bulk.  See [Manage user groups](https://helpx.adobe.com/ca/enterprise/using/user-groups.html) for details about creating groups individually or in bulk on the Admin Console.
+Note that migrated groups are no longer considered AEM "local groups"; they are IMS-ready groups in AEM though they may not yet exist in IMS.  They must be separately re-created in IMS so that they can be synchronized between AEM and IMS.  Groups can be created in IMS via Admin Console, among other methods, individually or in bulk.  See [Manage user groups](https://helpx.adobe.com/ca/enterprise/using/user-groups.html) for details about creating groups individually or in bulk on the Admin Console.
 
 The exception to this IMS configuration is with groups created by Assets Collections. When a collection is created on AEM, groups are created for access to that collection; such groups are migrated to the cloud system, but they are not configured to be managed by IMS.  In order to add IMS users to these groups, they must be added in the Group Properties page in the Assets UI, either individually or collectively as part of another IMS group.
 

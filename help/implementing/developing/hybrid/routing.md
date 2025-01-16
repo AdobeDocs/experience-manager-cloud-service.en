@@ -9,6 +9,8 @@ role: Admin, Architect, Developer
 
 For single page applications in AEM, the app is responsible for the routing. This document describes the routing mechanism, the contract, and options available.
 
+{{ue-over-spa}}
+
 ## Project Routing {#project-routing}
 
 The App owns the routing and is then implemented by the project front end developers. This document describes the routing specific to the model returned by the AEM server. The page model data structure exposes the URL of the underlying resource. The front end project can use any custom or third-party library providing routing functionalities. Once a route expects a fragment of model, a call to the `PageModelManager.getData()` function can be made. When a model route has changed an event must be triggered to warn listening libraries such as the Page Editor.
