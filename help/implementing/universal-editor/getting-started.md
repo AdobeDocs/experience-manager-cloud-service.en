@@ -114,6 +114,51 @@ If you only want to have certain extensions enabled for a page, you can set this
 <meta name="urn:adobe:aue:config:extensions" content="<url>,<url>,<url>">
 ```
 
+## Define for which content paths or `sling:resourceType`s the Universal Editor shall be opened. (Optional) {#content-paths}
+
+If you have an existing AEM project using [the page editor,](/help/sites-cloud/authoring/page-editor/introduction.md) when content authors edit pages, the pages are opened automatically with the page editor. You can define which editor AEM should open based on the content paths or the `sling:resourceType`, making the experience seamless for your authors, regardless of which editor is required for the selected content.
+
+1. Open the Configuration Manager.
+
+   `http://<host>:<port>/system/console/configMgr`
+
+1. Locate **Universal Editor URL Service** in the list and click **Edit the configuration values**.
+
+1. Define for which content paths or `sling:resourceType`s the Universal Editor shall be opened.
+
+   * In the **Universal Editor Opening Mapping** field, provide the paths for which the Universal Editor is opened.
+   * In the **Sling:resourceTypes which shall be opened by Universal Editor** field, provide a list of resources which are opened directly by the Universal Editor.
+
+1. Click **Save**.
+
+AEM will open the Universal Editor for pages based on this configuration in the following order.
+
+1. AEM will check the mappings under `Universal Editor Opening Mapping` and if the content is under any paths defined there, the Universal Editor is opened for it.
+1. For content not under paths defined in `Universal Editor Opening Mapping`, AEM checks if the `resourceType` of the content matches those defined in **Sling:resourceTypes which shall be opened by Universal Editor** and if the content matches one of those types, the Universal Editor is opened for it at `${author}${path}.html`.
+1. Otherwise AEM opens the Page Editor.
+
+The following variables are available to define your mappings in the **Universal Editor Opening Mapping** field.
+
+* `path`: Content path of the resource to open
+* `localhost`: Externalizer entry for `localhost` without schema, e.g. `localhost:4502`
+* `author`: Externalizer entry for author without schema, e.g. `localhost:4502`
+* `publish`: Externalizer entry for publish without schema, e.g. `localhost:4503`
+* `preview`: Externalizer entry for preview without schema, e.g. `localhost:4504`
+* `env`: `prod`, `stage`, `dev` based on the defined Sling run modes
+* `token`: Query token required for the `QueryTokenAuthenticationHandler`
+
+### Example Mappings {#example-mappings}
+
+* Open all pages under `/content/foo` on the AEM Author:
+
+  * `/content/foo:${author}${path}.html?login-token=${token}`
+  * This results in opening `https://localhost:4502/content/foo/x.html?login-token=<token>`
+
+* Open all pages under `/content/bar` on a remote NextJS server, providing all variables as information:
+
+  * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
+  * This results in opening `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`
+
 ## You're Ready to Use the Universal Editor {#youre-ready}
 
 Your app is now instrumented to use the Universal Editor!
