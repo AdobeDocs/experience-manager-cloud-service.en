@@ -78,6 +78,12 @@ Follow these steps to automate approval for newly ingested assets in [!DNL Exper
     1. Change the **[!UICONTROL Field Label]** to _Approved Assets_.
     1. Update the **[!UICONTROL Map to property]** to _./jcr:content/metadata/dam:status_. 
     1. Change the Default value to _approved_.
+
+1. Similar to Step 6, drag a **[!UICONTROL Single Line Text Field]** from the **[!UICONTROL Build Form]** section in right side to Metadata section in the form.
+1. Click the newly added field, and then do the following updates in the **[!UICONTROL Settings]** panel:
+    1. Change the **[!UICONTROL Field Label]** to _Activation Target_.
+    1. Update the **[!UICONTROL Map to property]** to _./jcr:content/metadata/dam:activationTarget_. 
+    1. Change the Default value to _contenthub_.
     
 1. Click **[!UICONTROL Save]**.
 1. In the **[!UICONTROL Metadata Profiles]** page, select the newly created metadata profile.
