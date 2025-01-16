@@ -3,8 +3,8 @@ title: Filtering Components
 description: Learn how you can restrict the allowed components per container in the Universal Editor using component filters.
 feature: Developing
 role: Admin, Architect, Developer
+exl-id: eeae8d7c-c563-4d9b-8c54-1098a4e98c18
 ---
-
 # Filtering Components {#filtering-components}
 
 Learn how you can restrict the allowed components per container in the Universal Editor using component filters.
