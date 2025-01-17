@@ -175,9 +175,10 @@ Once the site configuration is mapped, you can configure access control by defin
 
 1. Set the technical account in your configuration with a cURL command similar to the following.
 
-   * Adapt the `admin` block to grant access to the desired users.
+   * Adapt the `admin` block to define the users who should have full administrative access to the site.
      * It is an array of email addresses.
      * The wildcard `*` can be used.
+     * See the document [Configuring Authentication for Authors](https://www.aem.live/docs/authentication-setup-authoring#default-roles) for more information.
 
    ```text
    curl --request POST \

@@ -39,9 +39,10 @@ There are two steps to configuring a separate production site.
    * The `code` configuration should be the same as you used for the initial project creation.
    * The `content` > `source` > `url` must be adapted to the name of the new site you are creating. In this example, it is `wknd-prod`.
    * I.e., the site name in POST URL and the `content` > `source` > `url` must be the same.
-   * Adapt the `admin` block to grant access to the desired users.
+   * Adapt the `admin` block to define the users who should have full administrative access to the site.
      * It is an array of email addresses.
      * The wildcard `*` can be used.
+     * See the document [Configuring Authentication for Authors](https://www.aem.live/docs/authentication-setup-authoring#default-roles) for more information.
 
    ```text
    curl --request POST \
