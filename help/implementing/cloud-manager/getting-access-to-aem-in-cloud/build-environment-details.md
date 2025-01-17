@@ -74,12 +74,12 @@ Adobe recommends setting the Maven execution JDK version to `21` or `17` in a `.
 
 To do so, create a file named `.cloudmanager/java-version` in the Git repository branch used by the pipeline. Edit the file so that it contains only the text, `21` or `17`. While Cloud Manager also accepts a value of `8`, this version is no longer supported for AEM Cloud Service projects. Any other value is ignored. When `21` or `17` is specified, Oracle Java 21 or Oracle Java 17 is used and the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk-21` or `/usr/lib/jvm/jdk-17`.
 
+
 #### Prerequisites for migrating to building with Java 21 or Java 17 {#prereq-for-building}
 
->[!NOTE]
->
->*When migrating your application to a new Java build version and runtime version, thoroughly test in dev and stage environments before deploying to production.
->Of special note, the following features have not yet been formally validated with Java 21 runtime: [Forms](/help/forms/home.md), [Workflows](/help/sites-cloud/authoring/workflows/overview.md), [Inbox](/help/sites-cloud/authoring/inbox.md), and [Projects](/help/sites-cloud/authoring/projects/overview.md). If your application relies on these features, ensure comprehensive testing to verify functionality.*
+To migrate to building with Java 21 or Java 17, you must first upgrade to the latest SonarQube version. For details, see [XREF - how-to details from Soren].
+
+When migrating your application to a new Java build version and runtime version, thoroughly test in dev and stage environments before deploying to production.
 
 ##### About some translation features {#translation-features}
 
@@ -90,7 +90,7 @@ The following features might not function correctly when building with Java 21 o
 
 #### Runtime requirements {#runtime-requirements}
 
-The Java 21 runtime is used for builds on Java 21, Java 17, and Java 11 starting in February 2025. To ensure compatibility, the following adjustments are necessary. 
+The Java 21 runtime is used for builds with Java 21 and Java 17, and it will gradually be applied to Java 11 builds too (see the Note below). To ensure compatibility, the following adjustments are required.
 
 Library updates can be applied anytime, as they remain compatible with older Java versions.
 
@@ -107,9 +107,10 @@ When running AEM locally with Java 21, the start scripts (`crx-quickstart/bin/st
 
   Adobe plans to resolve this issue in a future release.
 
->[!NOTE]
+>[!IMPORTANT]
 >
->When `.cloudmanager/java-version` is set to `21` or `17`, the Java 21 runtime is deployed. In February or March 2025, the Java 21 runtime is planned for deployment to all customers, even if Java 11 is used to build your code. 
+>When `.cloudmanager/java-version` is set to `21` or `17`, the Java 21 runtime is deployed. The Java 21 runtime is scheduled for gradual rollout starting Thursday, February 13, 2025, beginning with sandboxes and development environments. Production environments follow in April 2025, regardless of whether the code is built with Java 11. Customers who want to adopt the Java 21 runtime *earlier* can contact Adobe at [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
+
 
 #### Build time requirements
 
