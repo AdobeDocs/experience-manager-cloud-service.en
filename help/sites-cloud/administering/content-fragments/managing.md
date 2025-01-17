@@ -231,7 +231,7 @@ To create a content fragment:
 
    * **Location** - Auto-completed with the current location, but you can select a different location if necessary.
    * **Content Fragment Model** - Select the model to be used as a basis of the fragment from the drop-down list.
-   * **Auto Tag** - Select this option so that any tags assigned to the Content Fragment Model are also assigned to this Content Fragment.
+   * **Auto Tag** - When you select this option, any tags assigned to the Content Fragment Model are also assigned to the new Content Fragment.
    * **Title**
    * **Name** - Auto-completed based on the **Title**, but you can edit it, if necessary.
    * **Description** 
