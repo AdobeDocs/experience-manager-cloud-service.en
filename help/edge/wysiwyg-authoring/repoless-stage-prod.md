@@ -39,6 +39,9 @@ There are two steps to configuring a separate production site.
    * The `code` configuration should be the same as you used for the initial project creation.
    * The `content` > `source` > `url` must be adapted to the name of the new site you are creating. In this example, it is `wknd-prod`.
    * I.e., the site name in POST URL and the `content` > `source` > `url` must be the same.
+   * Adapt the `admin` block to grant access to the desired users.
+     * It is an array of email addresses.
+     * The wildcard `*` can be used.
 
    ```text
    curl --request POST \
@@ -65,7 +68,7 @@ There are two steps to configuring a separate production site.
            "admin": {
                "role": {
                    "admin": [
-                       "*@adobe.com"
+                       "<email>@<domain>.<tld>"
                    ],
                    "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"

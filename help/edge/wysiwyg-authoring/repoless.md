@@ -174,6 +174,11 @@ Once the site configuration is mapped, you can configure access control by defin
    ```
 
 1. Set the technical account in your configuration with a cURL command similar to the following.
+
+   * Adapt the `admin` block to grant access to the desired users.
+     * It is an array of email addresses.
+     * The wildcard `*` can be used.
+
    ```text
    curl --request POST \
      --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>/access.json \
@@ -183,7 +188,7 @@ Once the site configuration is mapped, you can configure access control by defin
        "admin": {
            "role": {
                "admin": [
-                   "*@adobe.com"
+                   "<email>@<domain>.<tld>"
                ],
                "config_admin": [
                    "<tech-account-id>@techacct.adobe.com"
