@@ -1,6 +1,6 @@
 ---
 title: Bulk metadata edit in Assets View
-description: Learn how you can simultaneously edit the metadata of multiple assets available on the Assets View.
+description: Learn how you can update a predefined set of standard metadata fields for multiple assets available on the Assets View simultaneously.
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
 ---
 # Bulk metadata edit in Assets View{#how-to-edit-the-metadata-of-multiple-assets-simultaneously}
