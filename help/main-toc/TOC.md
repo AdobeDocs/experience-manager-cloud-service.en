@@ -1250,6 +1250,7 @@ user-guide-title: AEM as a Cloud Service
       + [Model Definitions, Fields, and Component Types](/help/implementing/universal-editor/field-types.md)
       + [SecurBank Sample App](/help/implementing/universal-editor/securbank.md)
       + [Events](/help/implementing/universal-editor/events.md)
+      + [Filtering Components](/help/implementing/universal-editor/filtering.md)
       + [Customizing](/help/implementing/universal-editor/customizing.md)     
       + [Architecture](/help/implementing/universal-editor/architecture.md)
       + [Authentication](/help/implementing/universal-editor/authentication.md)
