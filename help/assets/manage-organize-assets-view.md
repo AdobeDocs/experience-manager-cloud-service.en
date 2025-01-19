@@ -144,7 +144,7 @@ To set approval target:
 
    >[!NOTE]
    >
-   >Setting an approval target is a limited availability feature. You can get it enabled or disabled by creating a support ticket.
+   >Setting an approval target is a limited availability feature. You can get it enabled or disabled by creating a support ticket. If you have Dynamic Media with OpenAPI enabled, it is enabled by default.
 
    ![Approval status](/help/assets/assets/approval-status-delivery.png)
 
