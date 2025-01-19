@@ -156,7 +156,7 @@ Some additional points to note include:
 
 * When you select the approval target as `Content Hub` using the Assets view, the assets are made available in Content Hub to the users that are part of the same organization.
 
-## Default Approval Target and publish destinations for approved assets {#default-approval-target-options-publish-destinations}
+#### Default Approval Target and publish destinations for approved assets {#default-approval-target-options-publish-destinations}
 
 The following table illustrates the prerequisites for display of `Approval Target` dropdown list and default approval target based on the enablement of DM with OpenAPI and Content Hub on your AEM as a Cloud Service environment:
 
