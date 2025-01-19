@@ -140,7 +140,7 @@ To set approval target:
 
 1. In the **[!UICONTROL Basic]** tab, select the asset status from the **[!UICONTROL Status]** drop-down list. The possible values include Approved, Rejected, and No Status (default).
 
-1. If you select **Approved** in step 2, select an approval target. The possible values include Delivery and Content Hub. **Delivery** is the default option selected in the drop-down menu and it publishes the asset to both [Dynamic Media with OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) and [Content Hub](/help/assets/product-overview.md), if both are enabled for Experience Manager Assets. Selecting **Content Hub** publishes the asset just to Content Hub. Content Hub displays as an option only if it is enabled for Experience Manager Assets.
+1. If you select **Approved** in step 2, select an approval target. The possible values include Delivery and Content Hub. **Delivery** is the default option selected in the drop-down menu and it publishes the asset to both [Dynamic Media with OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) and [Content Hub](/help/assets/product-overview.md), if both are enabled for Experience Manager Assets. Selecting **Content Hub** publishes the asset just to Content Hub. Content Hub displays as an option only if it is enabled for Experience Manager Assets. For more information on the various available options, see [Default Approval Target and publish destinations for approved assets](#default-approval-target-options-publish-destinations).
 
    >[!NOTE]
    >
@@ -150,16 +150,23 @@ To set approval target:
 
 1. Specify other asset properties and click **[!UICONTROL Save]**.
 
-In addition to the default behavior defined in step 3, some additional points to note include:
-
-* When both Dynamic Media with OpenAPI and Content Hub are not enabled, the **[!UICONTROL Approval Target]** field is not displayed.
-
-* When you select Delivery and Content Hub is not enabled, the assets are made available to Dynamic Media with OpenAPI capabilities.
+Some additional points to note include:
 
 * When you are not using the default metadata form and cannot view the **[!UICONTROL Approval Target]** field, [edit your metadata form](/help/assets/metadata-assets-view.md#metadata-forms) to drag the **[!UICONTROL Approval for]** field from the available components to your metadata form and click **[!UICONTROL Save]**.
 
-* When you select the approval target as `Content Hub` using the Assets view, the assets are made available in Content Hub to the users that are part of the same organization. 
+* When you select the approval target as `Content Hub` using the Assets view, the assets are made available in Content Hub to the users that are part of the same organization.
 
+## Default Approval Target and publish destinations for approved assets {#default-approval-target-options-publish-destinations}
+
+The following table illustrates the prerequisites for display of `Approval Target` dropdown list and default approval target based on the enablement of DM with OpenAPI and Content Hub on your AEM as a Cloud Service environment:
+
+| Dynamic Media with OpenAPI| Content Hub | Approval Target dropdown list displays?| Default approval target for approved assets | Publish destination |
+| --- | --- | --- | --- |---|
+| Enabled | Enabled | Yes | Delivery | Dynamic Media with OpenAPI and Content Hub |
+| Not enabled | Enabled | Yes | Content Hub | Content Hub |
+| Enabled | Not enabled | Yes | Delivery | Dynamic Media with OpenAPI|
+| Not enabled | Not enabled | No | N/A | N/A |
+ 
 ### Set asset expiration date {#set-asset-expiration-date}
 
 Assets view also lets you set expiration date on assets available in the repository. You can then [filter the search results](search-assets-view.md#refine-search-results) based on an `Expired` asset status. In addition, you can specify an expiration date range for assets to further filter your search results.
