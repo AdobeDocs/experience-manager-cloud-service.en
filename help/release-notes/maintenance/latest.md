@@ -18,29 +18,30 @@ The 2025.1.0 feature activation will provide the full feature set for this maint
 
 ### Enhancements {#enhancements-19149}
 
-* ASSETS-45286 - Show granular progress for download archiving async job
-* ASSETS-46296 - Support for Dynamic Media Templates in Asset Selector
-* ASSETS-44796 - Fire Assets Events for DAM async assets jobs
+* ASSETS-45286: Show granular progress for download archiving async job.
+* ASSETS-46296: Support for Dynamic Media Templates in Asset Selector.
+* ASSETS-44796: Fire Assets Events for DAM async assets jobs.
 
 ### Fixed Issues {#fixed-issues-19149}
-* GRANITE-55074 - Ensure CORS response headers are set on error respones
-* ASSETS-43755 - Scalability improvements to bulk asset relate
-* ASSETS-45399 - Redirect to Assets Console after creating Asset live-copy
-* ASSETS-45462 - Browser caching issues with custom folder thumbnails
-* ASSETS-46398 - Hide Download and reprocess actions for DM Templates
-* ASSETS-44484 - Issues re-saving Connected Assets configuration
-* ASSETS-44122 - Async copy assets job does not rename the destination folder when copying to the current folder
-* ASSETS-44463 - Download CSV button not visible on successful metadata export
-* ASSETS-45134 - Move job with destination title overrides all folder titles
-* ASSETS-45137 - Conflicts with bulk uploads through Assets View
-* ASSETS-45758 - Asset Relations gets infinite busy/loading animation after adding a relation
-* ASSETS-44148 - NODE_MOVED event in AEM can cause spurious NPE in logs
-* ASSETS-28607 - JS error when setting custom video thumbnail
-* ASSETS-45979 - DM Template Asset renditions are not generated sometimes
-* GRANITE-55781 -  Improve group synchronization between Adobe Developer Console and AEM. More details in [Changes in User Group and Product Profile Synchronization](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization)
-* GRANITE-55754 - Ensure SDK startup scripts support Java 21
-* GRANITE-54248 - Unable to scroll through all items in large assets folder
-* SCRNS-4597 - Search result list view improvements
+
+* GRANITE-55074: Ensure CORS response headers are set on error respones.
+* ASSETS-43755: Scalability improvements to bulk asset relate.
+* ASSETS-45399: Redirect to Assets Console after creating Asset live-copy.
+* ASSETS-45462: Browser caching issues with custom folder thumbnails.
+* ASSETS-46398: Hide Download and reprocess actions for DM Templates.
+* ASSETS-44484: Issues re-saving Connected Assets configuration.
+* ASSETS-44122: Async copy assets job does not rename the destination folder when copying to the current folder.
+* ASSETS-44463: Download CSV button not visible on successful metadata export.
+* ASSETS-45134: Move job with destination title overrides all folder titles.
+* ASSETS-45137: Conflicts with bulk uploads through Assets View.
+* ASSETS-45758: Asset Relations gets infinite busy/loading animation after adding a relation.
+* ASSETS-44148: NODE_MOVED event in AEM can cause spurious NPE in logs.
+* ASSETS-28607: JS error when setting custom video thumbnail.
+* ASSETS-45979: DM Template Asset renditions are not generated sometimes.
+* GRANITE-55781:  Improve group synchronization between Adobe Developer Console and AEM. More details in [Changes in User Group and Product Profile Synchronization](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization).
+* GRANITE-55754: Ensure SDK startup scripts support Java 21.
+* GRANITE-54248: Unable to scroll through all items in large assets folder.
+* SCRNS-4597: Search result list view improvements.
 
 
 ### Known Issues {#known-issues-19149}
