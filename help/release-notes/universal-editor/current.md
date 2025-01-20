@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2024.12.02 Release Notes
-description: These are the release notes for the 2024.12.02 release of the Universal Editor.
+title: Universal Editor 2054.01.16 Release Notes
+description: These are the release notes for the 2025.01.16 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2024.12.02 Release Notes {#release-notes}
+# Universal Editor 2025.01.16 Release Notes {#release-notes}
 
-These are the release notes for the 2 December 2024 release of the Universal Editor.
+These are the release notes for the 16 January 2025 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -16,18 +16,15 @@ These are the release notes for the 2 December 2024 release of the Universal Edi
 
 ## What’s New {#what-is-new}
 
-* **Keyboard Navigation of Content Tree**: [The content tree,](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) available in the side panel, is now fully accessible via keyboard.
-  * Authors can navigate and interact with tree view items using standard keyboard controls, adhering to [WCAG 2.1 guidelines](/help/sites-cloud/authoring/page-editor/accessible-content.md) for accessibility.
-  * This enhancement ensures that all interactive elements within the tree are keyboard-operable, improving inclusivity for users who rely on keyboard navigation.
-* **Deselection of Editables**: Authors can now deselect previously selected editable elements on the page.
-  * This eliminates distractions when authors want to view the page without active selection borders.
-* **Fragment Selector**: On AEM as a Cloud Service instances, fragment references now open the fragment selector as content picker, delivering improved functionality such obeying allowed Content Fragment models, search of Content Fragments, and an improved overall experience.
-  * This aligns with other Adobe UIs and enhances consistency.
-  * [For AEM 6.5 environments,](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) the existing content picker remains in use.
-* **Container Description**: [The container component](/help/implementing/universal-editor/field-types.md#container) used in the [properties panel,](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel-properties-rail) to reference content, now supports a description attribute, displayed above the container fields.
-  * This addition enhances clarity by providing authors with context about the grouped fields they are editing.
+* **Deprecation of CORS Library < 3.0.0** - To ensure future compatibility and to enhance security, the Universal Editor now exclusively supports version 3.0.0 or higher of the 
+`@Adobe Express/universal-editor-cors` library.
+  * The library is now delivered solely via [`universal-editor-service.adobe.io/cors.js`.](http://universal-editor-service.adobe.io/cors.js)
+  * A deprecation notification appears for users when opening a page that uses older versions of the CORS library, prompting them to update.
+* **Extension Point for Landing Page** - [A new extension point](/help/implementing/universal-editor/customizing.md#extending) has been introduced for extensions to appear in the side rail of the Universal Editor's landing page.
+   * Now developers can specify whether extensions are applicable to the editor, the landing page, or both, offering greater customization and usability.
 
 ## Other Improvements {#other-improvements}
 
-* **Rich Text Field Synchronization**: Synchronization of raw and rendered content within rich text fields in the properties panel was improved, addressing issues within Edge Delivery Services projects where rich text content and rendered representation can differ.
-* **Editing Mode Events**: The Universal Editor now reliably emits editing mode events, including after reloading remote apps.
+* **Fixed invalid URLs in Recent items on the landing page** - An issues was resolved where URLs displayed in the "Recents" list on the Universal Editor’s landing page were broken.
+* **Theme Synchronization in Unified Shell** - The Universal Editor now dynamically synchronizes the theme with the system's Unified Shell settings and automatically adjusts between light and dark modes.
+  * This ensures a consistent visual appearance across micro-frontends, including fragment and asset selectors.
