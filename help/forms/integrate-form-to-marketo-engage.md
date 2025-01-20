@@ -60,24 +60,26 @@ Below are the prerequisites to connect Marketo Engage with AEM Forms:
 
 ![Workflow](/help/forms/assets/workflow-marketo-1.png)
 
+>[!VIDEO](https://video.tv.adobe.com/v/3442865/engage-marketo-aem-forms-aem)
+
 The Cloud configuration connects your Experience Manager instance to the Adobe Marketo Engage instance. Perform the following steps to create a Marketo Engage cloud configuration:
 
 1. Go to **Tools** > **Cloud Services** > **Marketo Engage**.
 
     ![Marketo Engage](/help/forms/assets/marketo-engage.png)
 
-1. Open a folder to host the configuration and click **Create**. The **Create Marketo Engage Configuration** window appears.
+2. Open a folder to host the configuration and click **Create**. The **Create Marketo Engage Configuration** window appears.
 
     >[!NOTE]
     >
     > You can also [configure folder for cloud service configurations](/help/forms/configure-data-sources.md#configure-folder-for-cloud-service-configurations).
 
-1. Specify the **Title** of the configuration and credentials to connect to the service. You can retrieve the authentication credentials from the Adobe Marketo Engage dashboard:
+3. Specify the **Title** of the configuration and credentials to connect to the service. You can retrieve the authentication credentials from the Adobe Marketo Engage dashboard:
    * **Client ID** and **Client Secret** are available in **Admin** > **Integration** > **LaunchPoint** by selecting the custom service and clicking **View Details**.
     * **Identity URL** is available in **Admin** > **Integration** > **Web Services** as **Identity** in the **REST API** section.
 
-1. Click **Connect**.  On a successful connection, the `Authentication Successful` message appears. 
-1. Click **[!UICONTROL Create]** to save the cloud configuration settings.
+4. Click **Connect**.  On a successful connection, the `Authentication Successful` message appears. 
+5. Click **[!UICONTROL Create]** to save the cloud configuration settings.
 
 ![Marketo Engage Cloud Configuration](/help/forms/assets/marketo-engage-cloud-configuration.png)
 
