@@ -1014,6 +1014,7 @@ user-guide-title: AEM as a Cloud Service
       + [Use reCAPTCHA to protect your forms](/help/edge/docs/forms/recaptacha-forms.md)
       + [Custom Components](/help/edge/docs/forms/custom-components-forms.md)
       + [Real Use Monitoring for forms](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+      + [Publishing Forms for Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md)
     + References {#forms-references}
       + [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
   + Edge Delivery Resources {#resources}
