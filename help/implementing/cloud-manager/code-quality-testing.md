@@ -23,7 +23,7 @@ See [Configuring Your CI-CD Pipeline](/help/implementing/cloud-manager/configuri
 
 ## Code Quality Rules {#understanding-code-quality-rules}
 
-Code quality testing scans the source code to ensure that it meets certain quality criteria. A combination of SonarQube and content package-level examination using OakPAL implements this step. There are over 100 rules, combining generic Java rules and AEM-specific rules. Some of the AEM-specific rules are created based on best practices from AEM Engineering and are referred to as [custom code quality rules](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+Code quality testing scans the source code to ensure that it meets certain quality criteria. A combination of SonarQube and content package-level examination using OakPAL implements this step. There are more than 100 rules, combining generic Java rules and AEM-specific rules. Some AEM-specific rules are based on best practices from AEM Engineering and are known as [custom code quality rules](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 You can download the current complete list of rules [using this link](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
 
