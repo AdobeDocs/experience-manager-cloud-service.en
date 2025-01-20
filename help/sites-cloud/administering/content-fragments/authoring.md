@@ -469,7 +469,7 @@ For example:
 
 ## Commenting on your Fragment {#commenting-on-your-fragment}
 
-The **Comments** tab in the right panel provides the following capabilities:
+To enable you to collaborate in-product and in-context, the **Comments** tab in the right panel provides the following capabilities:
 
 * Add a new comment
 * Tag specific users in a comment
