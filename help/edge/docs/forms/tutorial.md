@@ -61,7 +61,7 @@ The AEM Forms Boilerplate template gets you started quickly with an AEM project 
     * `<repository>` denotes your GitHub repository. 
     * `<owner>` refers to username of your GitHub account that hosts your GitHub repository.
 
-    For example, if the branch name is `main`, repository is `wefinance`, and owner is `wkndform`, the website would be up and running at [https://main--wefinance--wkndforms.aem.page/](https://main--wefinance--wkndform.aem.page/)
+    For example, if the branch name is `main`, repository is `wefinance`, and owner is `wkndform`, the website would be up and running at [https://main--wefinance--wkndform.aem.page](https://main--wefinance--wkndform.aem.page)
 
 
 

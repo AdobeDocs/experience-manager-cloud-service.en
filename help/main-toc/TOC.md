@@ -1007,6 +1007,7 @@ user-guide-title: AEM as a Cloud Service
       + [Use rules to add dynamic behavior to a form](/help/edge/docs/forms/rules-forms.md)
       + [Regex expressions for validations](/help/edge/docs/forms/regex-forms.md)
       + [Show a custom thank you message after form submission](/help/edge/docs/forms/thank-you-page-form.md)
+      + [Use Forms Submission Service](/help/forms/forms-submission-service.md)
     + Capabilities {#advanced-features-edge-delivery-services-forms}
       + [Use Form fragments](/help/edge/docs/forms/form-fragments.md)
       + [Add repeatable sections to a form​](/help/edge/docs/forms/repeatable-forms.md)
