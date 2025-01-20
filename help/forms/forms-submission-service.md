@@ -1,11 +1,11 @@
 ---
 Title: How to use forms submission service for submitting forms?
 Description: Learn how to use forms submission service for submitting forms.
-Keywords: Use form submission service, Submit form using form submission service 
+Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
+exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
 ---
-
 # Forms Submission Service with Edge Delivery Services Forms
 
 Forms Submission service allows you to store data from the form submissions in any spreadsheet, such as OneDrive, SharePoint, or Google Sheets, allowing you to easily access and manage form data within your preferred spreadsheet platform.
