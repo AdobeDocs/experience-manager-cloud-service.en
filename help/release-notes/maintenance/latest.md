@@ -37,7 +37,6 @@ The 2025.1.0 feature activation will provide the full feature set for this maint
 * ASSETS-45758: Asset Relations gets infinite busy/loading animation after adding a relation.
 * ASSETS-44148: NODE_MOVED event in AEM can cause spurious NPE in logs.
 * ASSETS-28607: JS error when setting custom video thumbnail.
-* ASSETS-45979: DM Template Asset renditions are not generated sometimes.
 * GRANITE-55781:  Improve group synchronization between Adobe Developer Console and AEM. More details in [Changes in User Group and Product Profile Synchronization](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization).
 * GRANITE-55754: Ensure SDK startup scripts support Java 21.
 * GRANITE-54248: Unable to scroll through all items in large assets folder.
