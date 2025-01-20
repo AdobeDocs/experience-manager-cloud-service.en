@@ -28,6 +28,7 @@ Before you start, ensure that you have completed the following steps:
 
 ## Create a form
 
+<!--
 +++ Step 1: Add the Adaptive Forms Block to your Edge Delivery Services (EDS) project.
 
 The Adaptive  empowers users to create forms for an Edge Delivery Service Site. However, this block isn't included in the default AEM boilerplate (used to create an Edge Delivery Services project). To seamlessly integrate the Adaptive Forms Block into your Edge Delivery Services project:
@@ -51,7 +52,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
     If you encounter the error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", navigate to the [EDS Project]/blocks/forms/form.js file. Update the import statement by replacing the lib-franklin.js file with the aem.js file.
 
 * **Handle Linting Errors:**
-    Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project.
+    Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project. -->
 
 +++
 
