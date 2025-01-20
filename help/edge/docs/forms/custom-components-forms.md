@@ -131,7 +131,7 @@ To inject the decorator in the Form Block:
     .... existing code ....
     if (fieldType === 'range') {
     const module = await import('./components/range.js');
-    return module.default;
+    return module.default(element,fd);;
     }
      return null; // null should be returned to use the original markup
     }

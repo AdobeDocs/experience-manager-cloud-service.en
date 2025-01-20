@@ -22,27 +22,25 @@ Once you've [created and previewed the form](/help/edge/docs/forms/create-forms.
 
 To enable the spreadsheet to accept data
 
-1. Open the spreadsheet that has your form and append a new sheet, renaming it to `incoming`.
+1. Open the spreadsheet that has your form and append a new sheet, renaming it to `incoming`. For example, the [enquiry](/help/edge/assets/enquiry.xlsx) form Microsoft Excel workbook. 
 
     >[!WARNING] 
     >
     > If the `incoming` sheet is not present, AEM does not send any data to the spreadsheet.
 
-1. In this sheet, insert a table named "intake_form". Select the number of columns required to match your form field names. Then, in the toolbar go to Insert > Table and click OK. 
+2. In this sheet, insert a table named "intake_form". Select the number of columns required to match your form field names. Then, in the toolbar go to Insert > Table and click OK. 
 
-1. Change the name of the table to "intake_form". In Microsoft Excel, to change the name of the table, select the table and click Table Design. 
+3. Change the name of the table to "intake_form". In Microsoft Excel, to change the name of the table, select the table and click Table Design. 
 
-1. Next, add the form field names as the table headers. To make sure the fields are exactly the same, you can copy and paste them over from the "shared-default" sheet.  In your "shared-default" sheet, select and copy the  form IDs listed under the "Name" column, except for the submit field. 
+4. Next, add the form field names as the table headers. To make sure the fields are exactly the same, you can copy and paste them over from the "shared-default" sheet.  In your "shared-default" sheet, select and copy the  form IDs listed under the "Name" column, except for the submit field. 
 
-1. In the "incoming" sheet, select Paste Special > Transpose Rows to Columns to copy the field IDs over as column headers in this new sheet. Keep only the fields whose data need to capture other can be ignored.
+5. In the "incoming" sheet, select Paste Special > Transpose Rows to Columns to copy the field IDs over as column headers in this new sheet. Keep only the fields whose data need to capture other can be ignored.
 
-    Each value in the `Name` column of the `shared-default` sheet, excluding the submit button, can serve as a header in the `incoming` sheet. For instance, consider the following image illustrating headers for a "contact-us" form:
+    Each value in the `Name` column of the `shared-default` sheet, excluding the submit button, can serve as a header in the `incoming` sheet. For instance, consider the following image illustrating headers for a "enquiry" form:
 
     ![Fields for a contact-us form](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-    
-
-1. Use the AEM Sidekick extension to preview the form updates. Your sheet is now ready to accept incoming form submissions. 
+6. Use the [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) extension to preview the form updates. Your sheet is now ready to accept incoming form submissions. 
 
     >[!NOTE] 
     >
@@ -51,12 +49,13 @@ To enable the spreadsheet to accept data
 
 Once the field names are added to the `incoming` sheet, your form becomes ready to accept submissions. You can preview the form and submit data to the sheet using it. 
 
-Once sheet is  set up to receive data, you can [preview the form using Adaptive Forms Block](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) or [use POST requests](#use-admin-apis-to-send-data-to-your-sheet) to start sending data to the sheet.
+Once sheet is  set up to receive data, you can [preview the form](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) <!--or [use POST requests](#use-admin-apis-to-send-data-to-your-sheet)--> to start sending data to the sheet.
 
  >[!WARNING] 
  >
  >  Never should the "shared-default" sheets contain any personally identifiable information or sensitive data that you are not comfortable with being publicly accessible.
 
+<!--
 ### Use Admin APIs to enable a spreadsheet to accept data
 
 You can also send a POST request to the form to enable it to accept data and configure headers for the `incoming` sheet. Upon receiving the POST request, the service analyzes the body of request and autonomously generates the essential headers and sheets needed for data ingestion.
@@ -84,7 +83,7 @@ To use Admin APIs to enable a spreadsheet to accept data:
     
     ```JSON
 
-    POST 'https://admin.hlx.page/form/{owner}/{repo}/{branch}/contact-us.json' \
+    POST 'https://admin.aem.page/form/{owner}/{repo}/{branch}/contact-us.json' \
     --header 'Content-Type: application/json' \
     --data '{
         "data": {
@@ -129,7 +128,7 @@ To use Admin APIs to enable a spreadsheet to accept data:
 
     ```JSON
 
-    curl -s -i -X POST 'https://admin.hlx.page/form/wkndforms/portal/main/contact-us.json' \
+    curl -s -i -X POST 'https://admin.aem.page/form/wkndform/wefinance/main/contact-us.json' \
         --header 'Content-Type: application/json' \
         --data '{
             "data": {
@@ -151,7 +150,7 @@ To use Admin APIs to enable a spreadsheet to accept data:
 
     Your form is now enabled to accept data. You also observe the following changes in your spreadsheet: 
 
-## Automatic Changes to sheet once it is enabled to accept data. 
+## Automatic changes to sheet once it is enabled to accept data. 
 
 Once the sheet is set to recieve data, you observe the following changes in your spreadsheet: 
 
@@ -170,18 +169,20 @@ A sheet named "Slack" is added to your Excel Workbook or Google Sheet. In this s
     >  Never should the "shared-default" sheets contain any personally identifiable information or sensitive data that you are not comfortable with being publicly accessible.
 
 
+
+<!--
 ## Send data to your sheet {#send-data-to-your-sheet}
 
 After the sheet is set to receive data, you can [preview the form using Adaptive Forms Block](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) or [use Admin APIs](#use-admin-apis-to-send-data-to-your-sheet) to start sending data to the sheet.
 
 ### Use Admin APIs to send data to your sheet
 
-You can send POST requests directly to your form using hlx.page, hlx.live, or your production domain, to send data. 
+You can send POST requests directly to your form using aem.page, aem.live, or your production domain, to send data. 
 
 
 ```JSON
 
-POST https://branch–repo–owner.hlx.(page|live)/email-form
+POST https://branch–repo–owner.aem.(page|live)/email-form
 POST https://my-domain.com/email-form
 
 ```
@@ -218,7 +219,7 @@ There are a few different ways that you can format the form data in the POST bod
 
     ```JSON
 
-    curl -s -i -X POST 'https://main--portal--wkndforms.hlx.page/contact-us' \
+    curl -s -i -X POST 'https://main--wefinance--wkndform.aem.page/contact-us' \
         --header 'Content-Type: application/json' \
         --data '{
         "data": [
@@ -262,7 +263,7 @@ There are a few different ways that you can format the form data in the POST bod
 
     ```JSON
 
-    curl -s -i -X POST 'https://admin.hlx.page/form/wkndforms/portal/main/contact-us.json' \
+    curl -s -i -X POST 'https://admin.aem.page/form/wkndform/wefinance/main/contact-us.json' \
     --header 'Content-Type: application/json' \
     --data '{
         "data": {
@@ -288,15 +289,16 @@ There are a few different ways that you can format the form data in the POST bod
 
     ```
 
-    For example,
+    For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch.,
 
     ```Shell
 
     curl -s -i -X POST \
       -d 'Email=kent%40wknd.com&Name=clark&Subject=Regarding+Product+Inquiry&   Message=I+have+some+questions+about+your+products.&Phone=123-456-7890& Company=Adobe+Inc.&Country=United+States&PreferredContactMethod=Email&   SubscribeToNewsletter=true' \
-      https://main--portal--wkndforms.hlx.live/contact-us
+      https://main--wefinance--wkndform.aem.live/contact-us
 
     ```
+-->
 
 Next, you can [customize the thank you message](/help/edge/docs/forms/thank-you-page-form.md).
 
