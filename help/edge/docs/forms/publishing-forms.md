@@ -5,8 +5,8 @@ feature: Edge Delivery Services
 role: User
 hide: yes
 hidefromtoc: yes
+exl-id: b90c27e3-22ea-4b18-b16e-a5c5a0ed58b8
 ---
-
 # Publishing Forms for Edge Delivery Services 
 
 This article guides you through the process of publishing forms to AEM Edge Delivery Services.
