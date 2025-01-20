@@ -73,7 +73,7 @@ The following is a complete, but simple `component-definition.json` as an exampl
 * `title` defines the textual description of the component shown in the UI.
 * `id` uniquely identifies the component.
   * The [component model](/help/implementing/universal-editor/field-types.md#model-structure) of the same `id` defines the fields of the component.
-  * Because it is unique it can be used, for example, in a [filter definition](/help/implementing/universal-editor/customizing.md#filtering-components) to determine which components can be added to a container.
+  * Because it is unique it can be used, for example, in a [filter definition](/help/implementing/universal-editor/filtering.md) to determine which components can be added to a container.
 
 ## `plugins` {#plugins}
 

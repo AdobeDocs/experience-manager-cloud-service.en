@@ -9,6 +9,8 @@ role: Admin, Architect, Developer
 
 To enable the author to use the AEM SPA Editor to edit the content of an SPA, there are requirements that the SPA must fulfill.
 
+{{ue-over-spa}}
+
 ## Introduction {#introduction}
 
 This document describes the general contract that any SPA framework should fulfill (that is, the kind of AEM support layer) so you can implement editable SPA components within AEM.
