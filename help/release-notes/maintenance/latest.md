@@ -49,6 +49,12 @@ None.
 
 ### Deprecated Features and APIs {#deprecated-19149}
 
+When using the Adobe Admin Console for permission management, the following groups MUST NOT be used as they will not be synchronized to AEM anymore:
+* AEM Groups that end with _GROUP_NAME_SUFFIX
+* Product profiles from other environments, programs or products
+For more details, please check [Changes in User Group and Product Profile Synchronization](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization).
+
+
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
 ### Security Fixes {#security-19149}
