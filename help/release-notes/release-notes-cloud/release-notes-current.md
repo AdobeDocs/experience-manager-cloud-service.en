@@ -12,7 +12,7 @@ The following section outlines the feature release notes for the current (latest
 
 >[!NOTE]
 >
->From here, you can navigate to release notes of previous versions such as 2022 or 2023.
+>From here, you can navigate to release notes of previous versions such as 2023 or 2024.
 >
 >Have a look at the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) to learn about the upcoming feature activations for [!DNL Experience Manager] as a Cloud Service. 
 
@@ -50,13 +50,22 @@ Manage your Edge Delivery spreadsheet data (e.g. redirects) efficiently in your 
 
 ### Prerelease capabilities in AEM Sites
 
-Enhanced [Content Fragment referencing with unique ID-based references](/help/headless/graphql-api/uuid-reference-upgrade.md), ensuring stable links that remain valid even when assets or fragments are moved—eliminating the need for updates or re-publishing. Current limitation: Page references are not yet supported with unique IDs. If pages are referenced in Content Fragments, this capability should not be used.
+Enhanced [Content Fragment referencing with unique ID-based references](/help/headless/graphql-api/uuid-reference-upgrade.md), ensuring stable links that remain valid even when assets or fragments are moved, eliminating the need for updates or re-publishing. Current limitation: Page references are not yet supported with unique IDs. If pages are referenced in Content Fragments, this capability should not be used.
 
 ### Early Adopter Program {#sites-early-adopter}
 
 **AEM REST OpenAPI for Content Fragment Delivery**
 
-The [AEM REST OpenAPI for Content Fragment Delivery](/help/headless/aem-rest-openapi-content-fragment-delivery.md), is available now for AEM as a Cloud Service. 
+The [AEM REST OpenAPI for Content Fragment Delivery](/help/headless/aem-rest-openapi-content-fragment-delivery.md), is available now for AEM as a Cloud Service.
+
+### Deprecated Features {#sites-deprecated}
+
+[The SPA Editor](/help/implementing/developing/hybrid/introduction.md) has been deprecated for new projects starting with release 2025.1.0. The SPA Editor remains fully supported for existing projects, but should not be used for new projects.
+
+The preferred editors for managing headless content in AEM are now:
+
+* [The Universal Editor](/help/edge/wysiwyg-authoring/authoring.md) for visually editing headless content.
+* [The Content Fragment Editor](/help/assets/content-fragments/content-fragments-managing.md) for form-based editing of headless content.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

@@ -71,6 +71,15 @@ None.
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
+#### Deprecation of SPA Editor {#deprecate-spa-editor}
+
+[The SPA Editor](/help/implementing/developing/hybrid/introduction.md) has been deprecated for new projects starting with release 2025.1.0. The SPA Editor remains fully-supported for existing projects, but should not be used for new projects.
+
+The preferred editors for managing headless content in AEM are now:
+
+* [The Universal Editor](/help/edge/wysiwyg-authoring/authoring.md) for visually editing headless content.
+* [The Content Fragment Editor](/help/assets/content-fragments/content-fragments-managing.md) for form-based editing of headless content.
+
 ### Security Fixes {#security-18751}
 
 AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 3 identified vulnerabilities, reinforcing our commitment to robust system protection.
