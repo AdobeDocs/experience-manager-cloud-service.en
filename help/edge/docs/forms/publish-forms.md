@@ -49,7 +49,8 @@ Once you are ready to share your form with your customers for data collection or
 
     For example, if your project's repository is named "wefinance", it's located under the account "wkndform", and you're using the "main" branch and form as "enquiry", the URL look like the following:
 
-    [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json)
+    `https://main--wefinance--wkndform.aem.live/enquiry.json`
+    <!--(https://main--wefinance--wkndform.aem.live/enquiry.json)-->
 
 +++
 
@@ -70,7 +71,7 @@ To add the form to your webpage:
 
     | Form  |
     |---|
-    | [https://main--wefinance--wkndform.aem.live/enquiry.json ](https://main--wefinance--wkndform.aem.live/enquiry.json)  |
+    | `https://main--wefinance--wkndform.aem.live/enquiry.json`  |
 
     ![Add a block named 'Form' to the file](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
@@ -91,16 +92,16 @@ To add the form to your webpage:
 
     | Form  |
     |---|
-    | [https://main--wefinance--wkndform.aem.page/enquiry.json ](https://main--wefinance--wkndform.aem.page/enquiry.json)  |
+    | `https://main--wefinance--wkndform.aem.page/enquiry.json` |
 
 
     **Publish URL**
 
     | Form  |
     |---|
-    | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json)  |
+    | `https://main--wefinance--wkndform.aem.live/enquiry.json`  |
 
-1. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview the webpage. The page now displays the form. For example, here is the form based on the [enquiry spreadsheet](/help/edge/assets/enquiry.xlsx): 
+2. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview the webpage. The page now displays the form. For example, here is the form based on the [enquiry spreadsheet](/help/edge/assets/enquiry-form.docx): 
 
 
     ![A sample EDS form](/help/edge/assets/updated-form.png)

@@ -50,7 +50,8 @@ Defining Options in a Separate Spreadsheet
 1. Preview and publish the `shared-country` sheet using [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
    For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch, the URL which showcases the `shared-country` sheet:
-   [https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country](https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country)  
+   `https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country` 
+   <!--(https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country)  -->
 
 >[!NOTE]
 >
@@ -74,9 +75,10 @@ You can refer to the [enquiry spreadsheet](/help/edge/assets/enquiry.xlsx) to ad
 
 After integrating the URL into the form definition to load drop-down list options, the options for the `Destination` drop-down start appearing from the URL.
 
-<!-- For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch, the below URL displays the `enquiry` form displaying the options saved in the separate sheet:
+For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch, the below URL displays the `enquiry` form displaying the options saved in the separate sheet:
 
-[https://main--wefinance--wkndform.aem.live/enquiry-form](https://main--wefinance--wkndform.aem.live/enquiry-form) 
+`https://main--wefinance--wkndform.aem.live/enquiry-form`
+<!--(https://main--wefinance--wkndform.aem.live/enquiry-form) 
 -->
 
 ## See also
