@@ -200,6 +200,7 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Universal Editor {#univeral-editor}
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + 2024 {#2024}
+      + [2024.12.02 Release Notes](/help/release-notes/universal-editor/2024/2024-12-02.md)
       + [2024.11.13 Release Notes](/help/release-notes/universal-editor/2024/2024-11-13.md)
       + [2024.11.05 Release Notes](/help/release-notes/universal-editor/2024/2024-11-05.md)
       + [2024.10.29 Release Notes](/help/release-notes/universal-editor/2024/2024-10-29.md)
@@ -642,6 +643,7 @@ user-guide-title: AEM as a Cloud Service
     + [Manage collections](/help/assets/manage-collections-assets-view.md)
     + [Watch asset, folders, and collections](/help/assets/manage-notifications-assets-view.md)
     + [Manage reports](/help/assets/manage-reports-assets-view.md)
+    + [Reprocessing](/help/assets/reprocessing-assets-view.md)
     + [Manage tags](/help/assets/tagging-management-assets-view.md)
     + [Content Credentials](/help/assets/content-credentials.md)
     + [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
@@ -1005,6 +1007,7 @@ user-guide-title: AEM as a Cloud Service
       + [Use rules to add dynamic behavior to a form](/help/edge/docs/forms/rules-forms.md)
       + [Regex expressions for validations](/help/edge/docs/forms/regex-forms.md)
       + [Show a custom thank you message after form submission](/help/edge/docs/forms/thank-you-page-form.md)
+      + [Use Forms Submission Service](/help/forms/forms-submission-service.md)
     + Capabilities {#advanced-features-edge-delivery-services-forms}
       + [Use Form fragments](/help/edge/docs/forms/form-fragments.md)
       + [Add repeatable sections to a form​](/help/edge/docs/forms/repeatable-forms.md)
@@ -1012,6 +1015,7 @@ user-guide-title: AEM as a Cloud Service
       + [Use reCAPTCHA to protect your forms](/help/edge/docs/forms/recaptacha-forms.md)
       + [Custom Components](/help/edge/docs/forms/custom-components-forms.md)
       + [Real Use Monitoring for forms](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+      + [Publishing Forms for Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md)
     + References {#forms-references}
       + [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
   + Edge Delivery Resources {#resources}
@@ -1248,6 +1252,7 @@ user-guide-title: AEM as a Cloud Service
       + [Model Definitions, Fields, and Component Types](/help/implementing/universal-editor/field-types.md)
       + [SecurBank Sample App](/help/implementing/universal-editor/securbank.md)
       + [Events](/help/implementing/universal-editor/events.md)
+      + [Filtering Components](/help/implementing/universal-editor/filtering.md)
       + [Customizing](/help/implementing/universal-editor/customizing.md)     
       + [Architecture](/help/implementing/universal-editor/architecture.md)
       + [Authentication](/help/implementing/universal-editor/authentication.md)
