@@ -28,7 +28,7 @@ Execute these steps to bulk edit the metadata of multiple assets at a time:
         >
         >You can edit the metadata of 100 assets at a time.
 
-To see the applied metadata updated to an asset, navigate to the asset details page (select asset, and click **Details**) and click ![](/help/assets/assets/info-icon-solid-black.svg) to see the asset's metadata in the **Information** panel. 
+To see the applied metadata updates to an asset, navigate to the asset details page (select asset, and click **Details**) and click ![](/help/assets/assets/info-icon-solid-black.svg) to see the asset's metadata in the **Information** panel. 
 
 >[!NOTE]
 >
