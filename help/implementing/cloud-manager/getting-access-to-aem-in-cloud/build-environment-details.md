@@ -72,7 +72,7 @@ The Cloud Manager build process uses the Oracle 8 JDK to build projects by defau
 
 Adobe recommends setting the Maven execution JDK version to `21` or `17` in a `.cloudmanager/java-version` file.
 
-To do so, create a file named `.cloudmanager/java-version` in the Git repository branch used by the pipeline. Edit the file so that it contains only the text, `21` or `17`. While Cloud Manager also accepts a value of `8`, this version is no longer supported for AEM Cloud Service projects. Any other value is ignored. When `21` or `17` is specified, Oracle Java 21 or Oracle Java 17 is used and the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk-21` or `/usr/lib/jvm/jdk-17`.
+To do so, create a file named `.cloudmanager/java-version` in the Git repository branch used by the pipeline. Edit the file so that it contains only the text, `21` or `17`. While Cloud Manager also accepts a value of `8`, this version is no longer supported for AEM Cloud Service projects. Any other value is ignored. When `21` or `17` is specified, Oracle Java 21 or Oracle Java 17 is used. <!-- Removed this last part as per Brian's feedback on Slack. ...and the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk-21` or `/usr/lib/jvm/jdk-17`. -->
 
 
 #### Prerequisites for migrating to building with Java 21 or Java 17 {#prereq-for-building}
@@ -109,12 +109,12 @@ When running AEM locally with Java 21, the start scripts (`crx-quickstart/bin/st
 
 >[!IMPORTANT]
 >
->When `.cloudmanager/java-version` is set to `21` or `17`, the Java 21 runtime is deployed. The Java 21 runtime is scheduled for gradual rollout starting Thursday, February 13, 2025, beginning with sandboxes and development environments. Production environments follow in April 2025, regardless of whether the code is built with Java 11. Customers who want to adopt the Java 21 runtime *earlier* can contact Adobe at [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
+>When `.cloudmanager/java-version` is set to `21` or `17`, the Java 21 runtime is deployed. The Java 21 runtime is scheduled for gradual rollout to all environments (not just those environments whose code is built with Java 11) starting Thursday, February 13, 2025. The rollout will begin with sandboxes and development environments, and then rollout to all production environments in April 2025. Customers who want to adopt the Java 21 runtime *earlier* can contact Adobe at [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
 
 
 #### Build time requirements
 
-The following adjustments are required to allow building the project with Java 21 and Java 17. They can be updated at any time as they are compatible with older versions of Java.
+The following adjustments are required to allow building the project with Java 21 and Java 17. They can be updated even before you are running Java 21 and Java 17 because they are compatible with older Java versions.
 
 * **Minimum version of `bnd-maven-plugin`:**
 Update the usage of `bnd-maven-plugin` to version 6.4.0 to ensure support for newer JVM runtimes. 
