@@ -107,7 +107,7 @@ For each block, the developer:
   * The block name is used to fetch the right style and script to decorate the block.
 * Can define a [model ID.](/help/implementing/universal-editor/field-types.md#model-structure)
   * The model ID is a reference to the component's model, which defines the fields available to the author in the properties panel.
-* Can define a [filter ID.](/help/implementing/universal-editor/customizing.md#filtering-components)
+* Can define a [filter ID.](/help/implementing/universal-editor/filtering.md)
   * The filter ID is a reference to the component's filter, which allows to change the authoring behavior, for example by limiting which children can be added to the block or section, or which RTE features are enabled.
 
 All this information is stored in AEM when a block is added to a page. If either the resource type or block name are missing, the block will not render on the page.
@@ -239,7 +239,7 @@ An example of this is the [section metadata.](/help/edge/developer/markup-sectio
 
 Both of the previous structures have a single dimension: the list of properties. Container blocks allow adding children (usually of the same type or model) and hence are two-dimensional. These blocks still support their own properties rendered as rows with a single column first. But they also allow adding children, for which each item is rendered as row and each property as column within that row.
 
-In the following example, a block accepts a list of linked icons as children, where each linked icon has an image and a link. Notice the [filter ID](/help/implementing/universal-editor/customizing.md#filtering-components) set in the data of the block in order to reference the filter configuration.
+In the following example, a block accepts a list of linked icons as children, where each linked icon has an image and a link. Notice the [filter ID](/help/implementing/universal-editor/filtering.md) set in the data of the block in order to reference the filter configuration.
 
 >[!BEGINTABS]
 
@@ -530,9 +530,9 @@ The same way a developer can define and model multiple [blocks,](#blocks) they c
 
 The content model of Edge Delivery Services deliberately allows only a single level of nesting, which is any default content or block contained by a section. This means in order to have more complex visual components that can contain other components, they have to be modelled as sections and combined together using auto-blocking client side. Typical examples of this are tabs and collapsible sections like accordions.
 
-A section can be defined in the same way as a block, but with the resource type of `core/franklin/components/section/v1/section`. Sections can have a name and a [filter ID,](/help/implementing/universal-editor/customizing.md#filtering-components) which are used by the [Universal Editor](/help/implementing/universal-editor/introduction.md) only, as well as a [model ID,](/help/implementing/universal-editor/field-types.md#model-structure) which is used to render the section metadata. The model is in this way the model of the section metadata block, which will automatically be appended to a section as key-value block if it is not empty.
+A section can be defined in the same way as a block, but with the resource type of `core/franklin/components/section/v1/section`. Sections can have a name and a [filter ID,](/help/implementing/universal-editor/filtering.md) which are used by the [Universal Editor](/help/implementing/universal-editor/introduction.md) only, as well as a [model ID,](/help/implementing/universal-editor/field-types.md#model-structure) which is used to render the section metadata. The model is in this way the model of the section metadata block, which will automatically be appended to a section as key-value block if it is not empty.
 
-The [model ID](/help/implementing/universal-editor/field-types.md#model-structure) and [filter ID](/help/implementing/universal-editor/customizing.md#filtering-components) of the default section is `section`. It can be used to alter the behavior of the default section. The following example adds some styles and and a background image to the section metadata model.
+The [model ID](/help/implementing/universal-editor/field-types.md#model-structure) and [filter ID](/help/implementing/universal-editor/filtering.md) of the default section is `section`. It can be used to alter the behavior of the default section. The following example adds some styles and and a background image to the section metadata model.
 
 ```json
 {
