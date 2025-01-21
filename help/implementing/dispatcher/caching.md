@@ -241,12 +241,24 @@ Website URLs frequently include marketing campaign parameters that are used to t
 For environments created in October 2023 or later, to better cache requests, the CDN will remove common marketing related query parameters, specifically those matching the following regex pattern:
  
 ```
-^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid)$
+^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid|msclkid|ttclid)$
 ```
- 
-Submit a support ticket if you want this behavior to be disabled.
 
-For environments created before October 2023, it is recommended to configure the Dispatcher configuration's `ignoreUrlParams` property; see [Configuring Dispatcher - Ignoring URL Parameters](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
+This functionality can be toggled on and off using a `requestTransformations` flag in [CDN configuration](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
+
+For example, to stop removing marketing params at CDN level one should deploy `removeMarketingParams: false` using a config that contains the following section.
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev", "stage", "prod"]
+data:
+  requestTransformations:
+    removeMarketingParams: false
+```
+
+In case `removeMarketingParams` functionalisty is disabled at CDN level it is still recommended to configure the Dispatcher configuration's `ignoreUrlParams` property; see [Configuring Dispatcher - Ignoring URL Parameters](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
 
 There are two possibilities to ignore marketing parameters. (Where the first one is preferred to ignore cache busting via query parameters):
 
@@ -261,7 +273,7 @@ In the following example only `page` and `product` parameters are not ignored an
 }
 ```
 
-1. Allow all parameters except the marketing parameters. The file [marketing_query_parameters.any](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/cache/marketing_query_parameters.any) defines a list of commonly used marketing parameters that will be ignored. Adobe will not update this file. It can be extended by users depending on their marketing providers.
+2. Allow all parameters except the marketing parameters. The file [marketing_query_parameters.any](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/cache/marketing_query_parameters.any) defines a list of commonly used marketing parameters that will be ignored. Adobe will not update this file. It can be extended by users depending on their marketing providers.
 ```
 /ignoreUrlParams {
    /0001 { /glob "*" /type "deny" }
