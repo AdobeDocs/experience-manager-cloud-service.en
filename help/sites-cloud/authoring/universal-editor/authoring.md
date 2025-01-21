@@ -170,7 +170,7 @@ The components are reordered in both the content tree and in the editor.
 
 >[!NOTE]
 >
->Components can not be moved between containers if a different [component filter](/help/implementing/universal-editor/customizing.md#filtering-components) is set between the source and target containers.
+>Components can not be moved between containers if a different [component filter](/help/implementing/universal-editor/filtering.md) is set between the source and target containers.
 
 ## Previewing Content {#previewing-content}
 
