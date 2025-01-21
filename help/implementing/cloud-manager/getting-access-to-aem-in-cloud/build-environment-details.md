@@ -77,7 +77,7 @@ To do so, create a file named `.cloudmanager/java-version` in the Git repository
 
 #### Prerequisites for migrating to building with Java 21 or Java 17 {#prereq-for-building}
 
-To migrate to building with Java 21 or Java 17, you must first upgrade to the latest SonarQube version. For details, see [XREF - how-to details from Soren].
+To migrate to building with Java 21 or Java 17, you must first upgrade to the latest SonarQube version. For details, see the [Release Notes for Cloud Manager 2025.1.0](help/implementing/cloud-manager/release-notes/current.md#what-is-new).
 
 When migrating your application to a new Java build version and runtime version, thoroughly test in dev and stage environments before deploying to production.
 
