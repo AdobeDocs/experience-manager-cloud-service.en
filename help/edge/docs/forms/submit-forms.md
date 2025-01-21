@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 # Set up your Google Sheets or Microsoft Excel files to start accepting data
 
 
-Once you've [created and previewed the form](/help/edge/docs/forms/create-forms.md), it's time to enable the corresponding spreadsheet to start receiving data. You can manually enable the spreadsheet to accept data or use Admin APIs to enable a spreadsheet to accept data.
+Once you have [created and previewed the form](/help/edge/docs/forms/create-forms.md), it's time to enable the corresponding spreadsheet to start receiving data. You can manually enable the spreadsheet to accept data or use Admin APIs to enable a spreadsheet to accept data.
 
 ![Document-based Authoring  ecosystem](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
@@ -28,19 +28,19 @@ To enable the spreadsheet to accept data
     >
     > If the `incoming` sheet is not present, AEM does not send any data to the spreadsheet.
 
-2. In this sheet, insert a table named "intake_form". Select the number of columns required to match your form field names. Then, in the toolbar go to Insert > Table and click OK. 
+1. In this sheet, insert a table named "intake_form". Select the number of columns required to match your form field names. Then, in the toolbar go to Insert > Table and click OK. 
 
-3. Change the name of the table to "intake_form". In Microsoft Excel, to change the name of the table, select the table and click Table Design. 
+1. Change the name of the table to "intake_form". In Microsoft Excel, to change the name of the table, select the table and click Table Design. 
 
-4. Next, add the form field names as the table headers. To make sure the fields are exactly the same, you can copy and paste them over from the "shared-default" sheet.  In your "shared-default" sheet, select and copy the  form IDs listed under the "Name" column, except for the submit field. 
+1. Next, add the form field names as the table headers. To make sure the fields are exactly the same, you can copy and paste them over from the "shared-aem" sheet.  In your "shared-aem" sheet, select and copy the  form IDs listed under the "Name" column, except for the submit field. 
 
-5. In the "incoming" sheet, select Paste Special > Transpose Rows to Columns to copy the field IDs over as column headers in this new sheet. Keep only the fields whose data need to capture other can be ignored.
+1. In the "incoming" sheet, select Paste Special > Transpose Rows to Columns to copy the field IDs over as column headers in this new sheet. Keep only the fields whose data need to capture other can be ignored.
 
-    Each value in the `Name` column of the `shared-default` sheet, excluding the submit button, can serve as a header in the `incoming` sheet. For instance, consider the following image illustrating headers for a "enquiry" form:
+    Each value in the `Name` column of the `shared-aem` sheet, excluding the submit button, can serve as a header in the `incoming` sheet. For instance, consider the following image illustrating headers for a "enquiry" form:
 
     ![Fields for a contact-us form](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-6. Use the [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) extension to preview the form updates. Your sheet is now ready to accept incoming form submissions. 
+1. Use the [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) extension to preview the form updates. Your sheet is now ready to accept incoming form submissions. 
 
     >[!NOTE] 
     >
@@ -53,7 +53,7 @@ Once sheet is  set up to receive data, you can [preview the form](/help/edge/doc
 
  >[!WARNING] 
  >
- >  Never should the "shared-default" sheets contain any personally identifiable information or sensitive data that you are not comfortable with being publicly accessible.
+ >  Never should the "shared-aem" sheets contain any personally identifiable information or sensitive data that you are not comfortable with being publicly accessible.
 
 <!--
 ### Use Admin APIs to enable a spreadsheet to accept data

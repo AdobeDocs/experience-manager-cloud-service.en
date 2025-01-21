@@ -54,8 +54,6 @@ Ensure a smooth GitHub build process by addressing potential issues:
 * **Handle Linting Errors:**
     Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project. -->
 
-+++
-
 +++ Step 1: Author a form using Microsoft Excel or Google Sheet.
 
 Instead of navigating through complex processes, crafting a form can be effortlessly achieved using a spreadsheet. You can define the rows and columns that will make up the form structure. Each row represents an individual [form field](/help/edge/docs/forms/form-components.md#available-components) and the column headers define the corresponding [field properties](/help/edge/docs/forms/form-components.md#components-properties).  
@@ -70,15 +68,15 @@ To proceed with form creation:
 
 1. Create a Microsoft Excel Workbook or Google Sheet anywhere within your AEM Edge Delivery project directory. For example, create a spreadsheet named `enquiry` on AEM Edge Delivery project directory on Google Drive. 
 
-    ![Sample Content on Google Drive](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
+   <!-- ![Sample Content on Google Drive](/help/edge/assets/upload-sample-files-to-your-content-folder.png)-->
 
 1. Ensure that the sheet is shared with the appropriate AEM user (for example `forms@adobe.com`) [as per the configurations specified for your project](https://www.aem.live/docs/setup-customer-sharepoint). Grant the user editing permission for the sheet. 
 
-1. Open the created spreadsheet and rename the default sheet to "shared-default". 
+1. Open the created spreadsheet and rename the default sheet to "shared-aem". 
 
     ![rename default sheet to "shared-default"](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. To add the form fields, insert rows and column headers into the 'shared-default' sheet. Each row should represent a [form field](/help/edge/docs/forms/form-components.md#available-components), with column headers defining the corresponding field [properties](/help/edge/docs/forms/form-components.md#components-properties).
+1. To add the form fields, insert rows and column headers into the 'shared-aem' sheet. Each row should represent a [form field](/help/edge/docs/forms/form-components.md#available-components), with column headers defining the corresponding field [properties](/help/edge/docs/forms/form-components.md#components-properties).
 
 
     For a swift start, consider copying the contents of the [Enquiry spreadsheet](/help/edge/assets/enquiry.xlsx) into your spreadsheet. After copying the content, save your spreadsheet. 
@@ -105,7 +103,8 @@ To proceed with form creation:
 
     For example, if your project's repository is named "wefinance", it's located under the account "wkndform", and you're using the "main" branch, the URL look like the following:
 
-    [https://main--wefinance--wkndform.aem.page/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json)
+`https://main--wefinance--wkndform.aem.page/enquiry.json`
+<!--(https://main--wefinance--wkndform.aem.page/enquiry.json)-->
 
 
 +++
@@ -127,7 +126,7 @@ Till now, you have prepared the structure of the form. Now, to preview the form:
 
     | Form  |
     |---|
-    | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json)  |
+    | `https://main--wefinance--wkndform.aem.live/enquiry.json` |
 
 
     ![Add Adaptive Forms Block to your webpage](/help/edge/assets/enquiry-doc-to-embed-form.png)

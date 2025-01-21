@@ -61,9 +61,8 @@ The AEM Forms Boilerplate template gets you started quickly with an AEM project 
     * `<repository>` denotes your GitHub repository. 
     * `<owner>` refers to username of your GitHub account that hosts your GitHub repository.
 
-    For example, if the branch name is `main`, repository is `wefinance`, and owner is `wkndform`, the website would be up and running at [https://main--wefinance--wkndform.aem.page](https://main--wefinance--wkndform.aem.page)
-
-
+    For example, if the branch name is `main`, repository is `wefinance`, and owner is `wkndforms`, the website would be up and running at `https://main--wefinance--wkndforms.aem.page`
+    <!--(https://main--wefinance--wkndform.aem.page)-->
 
 ### Link your own content source
 
@@ -133,8 +132,6 @@ To copy the sample content to your own content folder and point your GitHub repo
       
     1. Commit the updated `fsatb.yaml` file, once you've updated the reference and everything looks good. If you encounter any build issues, see [Troubleshooting GitHub build issues](#troubleshooting-github-build-issues). 
     
-    
-
         ![Commit updated fsatab.yaml file](/help/edge/assets/commit-updated-fstab-yaml.png)
 
         This connects your content folder to your website. After updating the reference, you might experience "404 Not Found" errors initially. This is because your content is not been previewed yet. The next section explains how to start authoring and previewing your content.
@@ -185,7 +182,8 @@ To preview unpublished content:
     
     `https://<branch>--<repo>--<owner>.aem.page/enquiry` URL. 
 
-    For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch and form name as `enquiry`, the URL is: [https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry).
+    For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch and form name as `enquiry`, the URL is: `https://main--wefinance--wkndform.aem.live/enquiry`.
+    <!--(https://main--wefinance--wkndform.aem.live/enquiry).-->
 
 ### Create a form
 
@@ -199,7 +197,7 @@ Let's start with updating a field label. Open the 'enquiry' sheet for editing, c
 
  When you preview or publish the file, a JSON version of the file appears in a new tab. Copy the preview (.aem.page) or publish (.aem.live) URL of the file. 
 
- ![JSON of the form spreadsheet](/help/edge/assets//preview-and-publish-enquiry-form.png)
+ ![JSON of the form spreadsheet](/help/edge/assets/preview-and-publish-enquiry-form.png)
 
  Open the `enquiry` file, and replace the URL in the form block with URL of file copied in the previous step. Ensure that the URL is a hyper link. 
 
@@ -221,9 +219,12 @@ To preview the updated enquiry form go to the following URL:
 
 The label of the submit button is updated to `Let's Talk`. 
 
-[![Enquiry form](/help/edge/assets/updated-form.png)](https://main--wefinance--wkndform.aem.live/enquiry)
+![Enquiry form](/help/edge/assets/updated-form.png)
 
-URL: [https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry)
+<!--(https://main--wefinance--wkndform.aem.live/enquiry)-->
+
+URL: `https://main--wefinance--wkndform.aem.live/enquiry` 
+<!--(https://main--wefinance--wkndform.aem.live/enquiry)-->
 
 
 For detailed information about creating and publishing a new form, head over to the [create a form](/help/edge/docs/forms/create-forms.md) guide.
