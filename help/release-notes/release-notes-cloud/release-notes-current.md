@@ -60,7 +60,7 @@ The [AEM REST OpenAPI for Content Fragment Delivery](/help/headless/aem-rest-ope
 
 ### Deprecated Features {#sites-deprecated}
 
-[The SPA Editor](/help/implementing/developing/hybrid/introduction.md) has been deprecated for new projects starting with release 2025.1.0. The SPA Editor remains fully supported for existing projects, but should not be used for new projects.
+[The SPA Editor](/help/implementing/developing/hybrid/introduction.md) has been deprecated for new projects starting with release 2025.1.0. The SPA Editor remains supported for existing projects, but should not be used for new projects.
 
 The preferred editors for managing headless content in AEM are now:
 
