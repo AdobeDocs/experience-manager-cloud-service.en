@@ -101,7 +101,7 @@ To add the form to your webpage:
     |---|
     | `https://main--wefinance--wkndform.aem.live/enquiry.json`  |
 
-2. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview the webpage. The page now displays the form. For example, here is the form based on the [enquiry spreadsheet](/help/edge/assets/enquiry-form.docx): 
+1. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview the webpage. The page now displays the form. For example, here is the form based on the [enquiry spreadsheet](/help/edge/assets/enquiry-form.docx): 
 
 
     ![A sample EDS form](/help/edge/assets/updated-form.png)
