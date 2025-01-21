@@ -24,7 +24,7 @@ The 2025.1.0 feature activation will provide the full feature set for this maint
 
 ### Fixed Issues {#fixed-issues-19149}
 
-* GRANITE-55074: Ensure CORS response headers are set on error respones.
+* GRANITE-55074: Ensure that CORS response headers are set on error responses.
 * ASSETS-43755: Scalability improvements to bulk asset relate.
 * ASSETS-45399: Redirect to Assets Console after creating Asset live-copy.
 * ASSETS-45462: Browser caching issues with custom folder thumbnails.
@@ -34,7 +34,7 @@ The 2025.1.0 feature activation will provide the full feature set for this maint
 * ASSETS-44463: Download CSV button not visible on successful metadata export.
 * ASSETS-45134: Move job with destination title overrides all folder titles.
 * ASSETS-45137: Conflicts with bulk uploads through Assets View.
-* ASSETS-45758: Asset Relations gets infinite busy/loading animation after adding a relation.
+* ASSETS-45758: Asset Relations gets an infinite busy/loading animation after adding a relation.
 * ASSETS-44148: NODE_MOVED event in AEM can cause spurious NPE in logs.
 * ASSETS-28607: JS error when setting custom video thumbnail.
 * GRANITE-55781:  Improve group synchronization between Adobe Developer Console and AEM. More details in [Changes in User Group and Product Profile Synchronization](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization).
@@ -50,8 +50,9 @@ None.
 ### Deprecated Features and APIs {#deprecated-19149}
 
 When using the Adobe Admin Console for permission management, the following groups MUST NOT be used as they will not be synchronized to AEM anymore:
-* AEM Groups that end with _GROUP_NAME_SUFFIX
-* Product profiles from other environments, programs or products
+* AEM Groups that end with _GROUP_NAME_SUFFIX.
+* Product profiles from other environments, programs or products.
+
 For more details, please check [Changes in User Group and Product Profile Synchronization](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization).
 
 
