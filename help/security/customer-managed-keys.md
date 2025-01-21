@@ -94,7 +94,7 @@ az keyvault create `
   --default-action=Deny `
   --enable-purge-protection `
   --enable-rbac-authorization `
-  --public-network-access Disabled
+  --public-network-access Enabled
 ```
 
 ## Grant Adobe Access to the Key Vault {#grant-adone-access-to-the-key-vault}

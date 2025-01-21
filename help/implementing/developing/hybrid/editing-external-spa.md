@@ -9,6 +9,8 @@ role: Admin, Architect, Developer
 
 When deciding [what level of integration](/help/implementing/developing/headful-headless.md) you would like to have between your external SPA and AEM, consider that you must be able to edit and view the SPA within AEM, often.
 
+{{ue-over-spa}}
+
 ## Overview {#overview}
 
 This document describes the recommended steps to upload a standalone SPA to an AEM instance, add editable sections of content, and enable authoring.
@@ -73,7 +75,7 @@ The `initializationAsync` can optionally accept an `options` object as a paramet
 
 * `path` - On initialization, the model at the defined path is fetched and stored in the `ModelStore`. This path can be used to fetch the `rootModel` at initialization, if needed.
 * `modelClient` - Allows providing a custom client responsible for fetching the model.
-* `model` - A `model` object passed as a parameter typically populated when [using SSR](/help/implementing/developing/hybrid/ssr.md).
+* `model` - A `model` object passed as a parameter typically populated when using SSR.
 
 ### AEM Authorable Leaf Components {#authorable-leaf-components}
 
@@ -369,4 +371,3 @@ The following reference material may be helpful to understand SPAs in the contex
 * [SPA Reference Materials (API references)](/help/implementing/developing/hybrid/reference-materials.md)
 * [SPA Blueprint and PageModelManager](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)
 * [SPA Model Routing](/help/implementing/developing/hybrid/routing.md)
-* [SPA and Server-Side Rendering](/help/implementing/developing/hybrid/ssr.md)
