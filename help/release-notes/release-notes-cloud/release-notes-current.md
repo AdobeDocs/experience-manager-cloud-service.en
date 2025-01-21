@@ -65,7 +65,7 @@ The [AEM REST OpenAPI for Content Fragment Delivery](/help/headless/aem-rest-ope
 The preferred editors for managing headless content in AEM are now:
 
 * [The Universal Editor](/help/edge/wysiwyg-authoring/authoring.md) for visual editing.
-* [The Content Fragment Editor](/help/assets/content-fragments/content-fragments-managing.md) for form-based editing of headless content.
+* [The Content Fragment Editor](/help/assets/content-fragments/content-fragments-managing.md) for form-based editing.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
