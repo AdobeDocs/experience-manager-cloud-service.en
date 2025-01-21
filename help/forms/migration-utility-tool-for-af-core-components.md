@@ -31,7 +31,18 @@ The Forms Conversion Utility converts Adaptive Forms that are based on older Fou
 
  * On successful conversions, all the rules applied to the form are removed. Rules are not automatically migrated. You should manually recreate and apply these rules to the converted form.
 * The translation settings used in the original form are not carried over. Reconfigure translation for the converted form.
-<!-- * If the form built on Foundation Components contains custom function rules, you have to rewrite these rules for the converted form based on Core Components.-->
+* If the form built on Foundation Components contains scripts or custom function rules, you have to rewrite these for the converted form based on Core Components.
+* The following OOTB foundation components are not yet supported in Core Components and are therefore deleted in the converted form:
+  * Adobe Sign Block
+  * Chart
+  * File Attachment Listing
+  * Footnote Placeholder
+  * Image Choice
+  * Next Button
+  * Previous Button
+  * Scribble Signature
+  * Summary Step
+  * Toolbar
 
 ## Pre-requisites to use AEM Modernize Tools
 
@@ -62,7 +73,7 @@ Perform the following steps to install AEM Modernize Tools to your local AEM For
 
     `java -jar aem-author-p4502.jar`
 
-1. Clone the [AEM Modernize Tool](/help/journey-migration/refactoring-tools/aem-modernization-tools.md) repository in your local system.
+1. Clone the [AEM Modernize Tool](https://github.com/adobe/forms-modernizer) repository in your local system.
 
     ```Shell 
 
