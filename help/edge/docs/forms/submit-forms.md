@@ -12,10 +12,9 @@ Once you have [created and previewed the form](/help/edge/docs/forms/create-form
 
 ![Document-based Authoring  ecosystem](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
-<!-- 
+
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
 
--->
 
 
 ## Manually enable the spreadsheet to accept data
