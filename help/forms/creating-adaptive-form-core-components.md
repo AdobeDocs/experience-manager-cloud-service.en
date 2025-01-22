@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
 ---
-# Create an Adaptive Form {#creating-an-adaptive-form-core-components}
+# Create an Adaptive Form (Core Components) {#creating-an-adaptive-form-core-components}
 
 | Version | Article link |
 | -------- | ---------------------------- |
