@@ -25,7 +25,7 @@ A few advantages of using the Forms Submission Service with spreadsheets are:
 Below are the prerequisites for using the Forms Submission service:
 
 * Make sure your AEM Project has the latest Adaptive Form Block.  
-* Ensure that your Git repository is added to the allowlist to use the Forms Submission Service. Please mailto:aem-forms-ea@adobe.com with your GitHub Organization Name and Repository Name to have them added to the allowlist for using the Forms Submission service. 
+* Ensure that your Git repository is added to the allowlist to use the Forms Submission Service. Please [mailto:aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) with your GitHub Organization Name and Repository Name to have them added to the allowlist for using the Forms Submission service. 
 
 ## Configure Forms Submission service 
 
