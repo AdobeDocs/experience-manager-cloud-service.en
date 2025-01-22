@@ -113,7 +113,7 @@ The following quote block example follows this approach.
 
 >[!ENDTABS]
 
-4\. Edit the [`component-filters.json` file](/help/implementing/universal-editor/customizing.md#filtering-components) at the root of the project and add the quote block to the [filter definition](/help/implementing/universal-editor/customizing.md#filtering-components) to allow the block to be added to any section and save the file.
+4\. Edit the [`component-filters.json` file](/help/implementing/universal-editor/filtering.md) at the root of the project and add the quote block to the [filter definition](/help/implementing/universal-editor/filtering.md) to allow the block to be added to any section and save the file.
 
 >[!BEGINTABS]
 

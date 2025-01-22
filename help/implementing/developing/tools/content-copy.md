@@ -194,10 +194,3 @@ The content copy tool has the following limitations.
 * The content copy tool has no versioning capability and cannot automatically detect modified content or created content on the source environment in a content set since the last content copy operation.
   * If you want to update your destination environment with content changes only, since the last content copy operation, you must create a content set. Then, specify the paths on the source instance where changes were made since the last content copy operation.
 * Version information is not included in a content copy.
-
-## Known issues {#known-issues}
-
-Be aware of the following known issue when using the [content copy functionality.](/help/implementing/developing/tools/content-copy.md)
-
-* If a resource in the source environment is renamed, it can cause the content copy operation to fail due to conflicting UUIDs in the target environment.
-   * To avoid this error, instead of renaming resources, first delete them and then recreate with the desired, new resource name.
