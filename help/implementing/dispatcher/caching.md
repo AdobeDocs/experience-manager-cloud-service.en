@@ -258,7 +258,7 @@ data:
     removeMarketingParams: false
 ```
 
-In case `removeMarketingParams` functionalisty is disabled at CDN level it is still recommended to configure the Dispatcher configuration's `ignoreUrlParams` property; see [Configuring Dispatcher - Ignoring URL Parameters](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
+In case `removeMarketingParams` functionality is disabled at CDN level it is still recommended to configure the Dispatcher configuration's `ignoreUrlParams` property; see [Configuring Dispatcher - Ignoring URL Parameters](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
 
 There are two possibilities to ignore marketing parameters. (Where the first one is preferred to ignore cache busting via query parameters):
 
