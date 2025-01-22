@@ -66,13 +66,11 @@ You can take full advantage of this feature by utilizing the following options:
 
 Before you start creating or an Adaptive Form, enable Adaptive Forms Core Components and add Adaptive Forms Client Libraries to your AEM Sites page:
 
-+++  Enable Adaptive Forms Core Components for your AEM Cloud Service environment
+### Enable Adaptive Forms Core Components for your AEM Cloud Service environment
 
 Ensure that the [Adaptive Forms Core Components are enabled for your AEM Forms as a Cloud Service environment](enable-adaptive-forms-core-components.md). 
 
-+++ 
-
-+++  Add Adaptive Forms Client Libraries to your AEM Sites page or Experience Fragment 
+###  Add Adaptive Forms Client Libraries to your AEM Sites page or Experience Fragment 
 
 To enable complete functionality of the Adaptive Forms Container component, add the Customheaderlibs and Customfooterlibs client libraries to your AEM Sites page using the deployment pipeline. To add the libraries:
 
@@ -117,9 +115,7 @@ To enable complete functionality of the Adaptive Forms Container component, add 
 
 1. [Run the deployment pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) to deploy the client libraries to your AEM as a Cloud Service environment. 
 
-+++ 
-
-+++ Enable Adaptive Forms Container for your AEM Sites page or Experience Fragment 
+### Enable Adaptive Forms Container for your AEM Sites page or Experience Fragment 
 
 To enable [!UICONTROL Adaptive Forms Container] component in template's policy, perform the following steps:
 
@@ -128,7 +124,7 @@ To enable [!UICONTROL Adaptive Forms Container] component in template's policy, 
 1. In the Structure view, click the **[!UICONTROL Policy]** ![Policy](/help/forms/assets/Smock_FeedManagement_18_N.svg) icon in the menu bar. In the **[!UICONTROL Allowed Components]** list and select the **[!UICONTROL Adaptive Forms Container]**  checkbox under the **[AEM Archetype Project Name] - Adaptive Form**.
 1. Click **[!UICONTROL Done]**.
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3419370?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3419370?quality=12&learn=on)
 
 +++
 
