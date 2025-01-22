@@ -268,10 +268,10 @@ It lets you create a folder in the destination folder of your [!DNL Adobe Experi
 
 Destination Selector lets you view the asset in four different views:
 
-* **![list view](assets/do-not-localize/list-view.png) [!UICONTROL List View]**: The list view displays scrollable files and folders in a single column.
-* **![grid view](assets/do-not-localize/grid-view.png) [!UICONTROL Grid View]**: The grid view displays scrollable files and folders in a grid of rows and columns.
-* **![gallery view](assets/do-not-localize/gallery-view.png) [!UICONTROL Gallery View]**: The gallery view displays files or folders in a center-locked horizontal list.
-* **![waterfall view](assets/do-not-localize/waterfall-view.png) [!UICONTROL Waterfall View]**: The waterfall view displays files or folders in the form of a Bridge.
+* ![list view](assets/do-not-localize/list-view.png) [!UICONTROL **List View**]: The list view displays scrollable files and folders in a single column.
+* ![grid view](assets/do-not-localize/grid-view.png) [!UICONTROL **Grid View**]: The grid view displays scrollable files and folders in a grid of rows and columns.
+* ![gallery view](assets/do-not-localize/gallery-view.png) [!UICONTROL **Gallery View**]: The gallery view displays files or folders in a center-locked horizontal list.
+* ![waterfall view](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Waterfall View**]: The waterfall view displays files or folders in the form of a Bridge.
 
 ### Info {#info}
 
