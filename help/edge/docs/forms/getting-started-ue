@@ -13,6 +13,7 @@ AEM Forms provide a block, known as the Adaptive Forms Block, to help you easily
 
 This tutorial guides you through creating, previewing, and publishing your own form with a new or existing Adobe Experience Manager Site project using Universal Editor's WYSIWYG authoring.
 
+
 ## Prerequisites
 
 * You have a GitHub account, and understand Git basics.
