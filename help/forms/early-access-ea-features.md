@@ -84,7 +84,7 @@ WYSIWYG Authoring provides WYSIWYG interfaces (Universal Editor and Adaptive For
 
 ### AEM Forms to Marketo Connector
 
-The AEM Forms to Marketo Connector bridges the gap between your web forms (Adaptive Forms) built with Adobe Experience Manager (AEM) and your marketing automation platform, Marketo. 
+The [AEM Forms to Marketo Connector](/help/forms/integrate-adaptive-form-with-marketo-engage.md) bridges the gap between your web forms (Adaptive Forms) built with Adobe Experience Manager (AEM) and your marketing automation platform, Marketo. 
 
 When someone submits a form on your website created with AEM Adaptive Forms, the connector ensures that the submitted data is automatically sent to Marketo. This eliminates the need for manual data entry and reduces the risk of errors. 
 
