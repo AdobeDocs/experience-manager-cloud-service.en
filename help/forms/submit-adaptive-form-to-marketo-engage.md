@@ -28,13 +28,15 @@ Prerequisite to configure the submit action to Marketo Engage:
 
 ## How to configure submit action to Marketo Engage for existing forms?
 
+>[!VIDEO](https://video.tv.adobe.com/v/3442866/submit-action-marketo-engage-marketo-aem-aem-forms-engage)
+
 You can configure the submit action of an Adaptive Form to submit data to Adobe Marketo Engage. To configure the submit action to Marketo Engage, perform the following steps:
 
 1. Open the Adaptive Form for editing.
-1. Open the Content Tree and select the **[!UICONTROL Guide Container]**. 
-1. Click the Adaptive Form Container properties ![Adaptive Form Container properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box to configure submit action opens. 
-1. Open the **[!UICONTROL Submission]** tab and select a submit action as **Submit to Marketo Engage**.
-1. Click **[!UICONTROL Done]**.
+2. Open the Content Tree and select the **[!UICONTROL Guide Container]**. 
+3. Click the Adaptive Form Container properties ![Adaptive Form Container properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box to configure submit action opens. 
+4. Open the **[!UICONTROL Submission]** tab and select a submit action as **Submit to Marketo Engage**.
+5. Click **[!UICONTROL Done]**.
 
 ![Marketo Submit Action](/help/forms/assets/marketo-engage-submit-action.png){width=50%, height=50%}
 
