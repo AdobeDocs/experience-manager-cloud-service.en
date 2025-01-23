@@ -28,10 +28,11 @@ To take advantage of this feature, make sure you have done the following.
 * Your site is already fully set up by following the document [Developer Getting Started Guide for WYSIWYG Authoring with Edge Delivery Services.](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
 * You are running AEM as a Cloud Service 2024.08 at a minimum.
 
-You will also need to ask Adobe to configure two items for you. Reach out to Adobe via your Slack channel or raise a support issue to make these requests.
+You will also need to ask Adobe to configure two items for you. Reach out via your Slack channel or raise a support issue to request Adobe to make these changes:
 
-* The [aem.live configuration service](https://www.aem.live/docs/config-service-setup#prerequisites) is active for your environment and you are configured as an administrator.
-* The repoless feature must be enabled for your program by Adobe.
+* Ask to activate the [aem.live configuration service](https://www.aem.live/docs/config-service-setup#prerequisites) for your environment and that you are configured as an administrator.
+* Ask to enable the repoless feature for your program by Adobe.
+* Ask Adobe to create the org for you.
 
 ## Activate Repoless Feature {#activate}
 
@@ -58,67 +59,6 @@ Once you have your access token, it can be is passed in the header of cURL reque
 ```text
 --header 'x-auth-token: <your-token>'
 ```
-
-### Configure Your Configuration Service {#config-service}
-
-As mentioned in the [prerequisites,](#prerequisites) the configuration service must be enabled for your environment. You can check your configuration service setup with this cURL command.
-
-```text
-curl  --location 'https://admin.hlx.page/config/<your-github-org>.json' \
---header 'x-auth-token: <your-token>'
-```
-
-If the configuration service is set up properly, JSON similar to the following will be returned.
-
-```json
-{
-  "title": "<your-github-org>",
-  "description": "Your GitHub Org",
-  "lastModified": "2024-11-14T12:14:04.230Z",
-  "created": "2024-11-14T12:13:37.032Z",
-  "version": 1,
-  "users": [
-    {
-      "email": "justthisguyyouknow@adobe.com",
-      "roles": [
-        "admin"
-      ],
-      "id": "<your-id>"
-    }
-  ]
-}
-```
-
-Reach out to Adobe via your project Slack channel or raise a support issue if your configuration service is not enabled. Once you have your token and verified that the configuration service is enabled, you can continue the configuration.
-
-1. Check that your content source is set up properly.
-
-   ```text
-   curl --request GET \
-   --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>.json \
-   --header 'x-auth-token: <your-token>'
-   ```
-
-1. Add a path mapping to the public configuration.
-
-   ```text
-   curl --request POST \
-     --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>/public.json \
-     --header 'x-auth-token: <your-token>' \
-     --header 'Content-Type: application/json' \
-     --data '{
-       "paths": {
-           "mappings": [
-               "/content/<your-site-content>/:/"
-      ],
-           "includes": [
-               "/content/<your-site-content>/"
-           ]
-       }
-   }'
-   ```
-
-Once the public configuration is created, you can access it via a URL similar to `https://main--<your-aem-project>--<your-github-org>.aem.page/config.json` in order to verify it.
 
 ### Add Path Mapping for Site Configuration and Set Technical Account {#access-control}
 
