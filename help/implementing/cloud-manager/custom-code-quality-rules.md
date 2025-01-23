@@ -15,9 +15,11 @@ role: Admin, Architect, Developer
 
 Learn about Cloud Manager's custom code quality rules, based on Adobe Experience Manager Engineering best practices, to ensure high-quality code through thorough testing. See also [code quality testing](/help/implementing/cloud-manager/code-quality-testing.md).
 
->[!NOTE]
+Full SonarQube rules are not available for download due to Adobe proprietary information. You can download the complete list of *current* rules [using this link](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx). Continue reading this document for descriptions and examples of the rules.
+
+>[!IMPORTANT]
 >
->Full SonarQube rules are not available for download due to Adobe proprietary information. You can download the complete list of rules [using this link](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx). Continue reading this document for descriptions and examples of the rules.
+>Starting Thursday, February 13, 2025 (Cloud Manager 2025.2.0), Cloud Manager Code Quality is using an updated SonarQube 9.9 version and an updated list of rules that you can [download here](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS-2024-12-0.xlsx).
 
 >[!NOTE]
 >
@@ -181,7 +183,7 @@ public void orDoThis () {
 ### Always close ResourceResolver objects {#resourceresolver-objects-should-always-be-closed}
 
 * **Key**: CQRules:CQBP-72
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Major
 * **Since**: Version 2018.4.0
 
@@ -223,7 +225,7 @@ public void orDoThis(Session session) throws Exception {
 ### Do not use Sling servlet paths to register servlets {#do-not-use-sling-servlet-paths-to-register-servlets}
 
 * **Key**: CQRules:CQBP-75
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Major
 * **Since**: Version 2018.4.0
 
@@ -243,7 +245,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 ### Caught exceptions should be logged or thrown, not both {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
 
 * **Key**: CQRules:CQBP-44---CatchAndEitherLogOrThrow
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2018.4.0
 
@@ -285,7 +287,7 @@ public void orDoThis() throws MyCustomException {
 ### Avoid log statements immediately followed by a throw statement {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
 
 * **Key**: CQRules:CQBP-44---ConsecutivelyLogAndThrow
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2018.4.0
 
@@ -311,7 +313,7 @@ public void doThis() throws Exception {
 ### Avoid logging at INFO when handling GET or HEAD requests {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
 * **Key**: CQRules:CQBP-44---LogInfoInGetOrHeadRequests
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 
 In general, the INFO log level should be used to demarcate important actions and, by default, Experience Manager is configured to log at the INFO level or above. GET and HEAD methods should only ever be read-only operations and thus do not constitute important actions. Logging at the INFO level in response to GET or HEAD requests is likely to create significant log noise, making it harder to identify useful information in log files. When handling GET or HEAD requests, log at the WARN or ERROR levels if something has gone wrong. Use DEBUG or TRACE levels if detailed troubleshooting information is needed.
@@ -339,7 +341,7 @@ public void doGet() throws Exception {
 ### Do not use Exception.getMessage() as the first parameter of a logging statement {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
 
 * **Key**: CQRules:CQBP-44---ExceptionGetMessageIsFirstLogParam
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2018.4.0
 
@@ -372,7 +374,7 @@ public void doThis() {
 ### Logging in catch blocks should be at the WARN or ERROR level {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
 
 * **Key**: CQRules:CQBP-44---WrongLogLevelInCatchBlock
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2018.4.0
 
@@ -405,7 +407,7 @@ public void doThis() {
 ### Do not print stack traces to the console {#do-not-print-stack-traces-to-the-console}
 
 * **Key**: CQRules:CQBP-44---ExceptionPrintStackTrace
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2018.4.0
 
@@ -438,7 +440,7 @@ public void doThis() {
 ### Do not output to standard output or standard error {#do-not-output-to-standard-output-or-standard-error}
 
 * **Key**: CQRules:CQBP-44—LogLevelConsolePrinters
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2018.4.0
 
@@ -471,7 +473,7 @@ public void doThis() {
 ### Avoid hardcoded apps and libs paths {#avoid-hardcoded-apps-and-libs-paths}
 
 * **Key**: CQRules:CQBP-71
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2018.4.0
 
@@ -496,7 +498,7 @@ public void doThis(Resource resource) {
 ### Do not use Sling scheduler {#sonarqube-sling-scheduler}
 
 * **Key**: CQRules:AMSCORE-554
-* **Type**: Code Smell/Cloud Service Compatibility
+* **Type**: `Code Smell`/Cloud Service Compatibility
 * **Severity**: Minor
 * **Since**: Version 2020.5.0
 
@@ -507,7 +509,7 @@ See [Apache Sling Eventing and Job Handling](https://sling.apache.org/documentat
 ### Do not use Experience Manager deprecated APIs {#sonarqube-aem-deprecated}
 
 * **Key**: AMSCORE-553
-* **Type**: Code Smell/Cloud Service Compatibility
+* **Type**: `Code Smell`/Cloud Service Compatibility
 * **Severity**: Minor
 * **Since**: Version 2020.5.0
 
@@ -795,7 +797,7 @@ Similar to the [Packages Should Not Contain Duplicate OSGi Configurations rule](
 ### The default authoring mode should not be classic UI {#oakpal-default-authoring}
 
 * **Key**: ClassicUIAuthoringMode
-* **Type**: Code Smell/Cloud Service Compatibility
+* **Type**: `Code Smell`/Cloud Service Compatibility
 * **Severity**: Minor
 * **Since**: Version 2020.5.0
 
@@ -804,7 +806,7 @@ The OSGi configuration `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` def
 ### Components with dialogs should have Touch UI dialogs {#oakpal-components-dialogs}
 
 * **Key**: ComponentWithOnlyClassicUIDialog
-* **Type**: Code Smell/Cloud Service Compatibility
+* **Type**: `Code Smell`/Cloud Service Compatibility
 * **Severity**: Minor
 * **Since**: Version 2020.5.0
 
@@ -819,7 +821,7 @@ The Experience Manager Modernization Tools documentation provides documentation 
 ### Packages should not mix mutable and immutable content {#oakpal-packages-immutable}
 
 * **Key**: ImmutableMutableMixedPackage
-* **Type**: Code Smell/Cloud Service Compatibility
+* **Type**: `Code Smell`/Cloud Service Compatibility
 * **Severity**: Minor
 * **Since**: Version 2020.5.0
 
@@ -834,7 +836,7 @@ See [Experience Manager Project Structure](/help/implementing/developing/introdu
 ### Do not use reverse replication agents {#oakpal-reverse-replication}
 
 * **Key**: ReverseReplication
-* **Type**: Code Smell/Cloud Service Compatibility
+* **Type**: `Code Smell`/Cloud Service Compatibility
 * **Severity**: Minor
 * **Since**: Version 2020.5.0
 
@@ -887,7 +889,7 @@ The migration tool in the [Experience Manager as a Cloud Service Assets GitHub r
 ### Usage of static templates is discouraged in favor of editable templates {#oakpal-static-template}
 
 * **Key**: StaticTemplateUsage
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
@@ -898,7 +900,7 @@ Migration from static to editable templates can be largely automated using the [
 ### Usage of legacy foundation components is discouraged {#oakpal-usage-legacy}
 
 * **Key**: LegacyFoundationComponentUsage
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
@@ -909,7 +911,7 @@ The legacy Foundation Components (that is, components under `/libs/foundation`) 
 ### Only use supported run mode names and ordering {#oakpal-supported-runmodes}
 
 * **Key**: SupportedRunmode
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
@@ -918,7 +920,7 @@ Experience Manager as a Cloud Service enforces a strict naming policy for run mo
 ### Custom search index definition nodes must be direct children of `/oak:index` {#oakpal-custom-search}
 
 * **Key**: OakIndexLocation
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
@@ -927,7 +929,7 @@ Experience Manager as a Cloud Service requires that custom search index definiti
 ### Custom search index definition nodes must have a compatVersion of 2 {#oakpal-custom-search-compatVersion}
 
 * **Key**: IndexCompatVersion
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
@@ -936,7 +938,7 @@ Experience Manager as a Cloud Service requires that custom search index definiti
 ### Descendent nodes of custom search index definition nodes must be of type `nt:unstructured `{#oakpal-descendent-nodes}
 
 * **Key**: IndexDescendantNodeType
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
@@ -945,7 +947,7 @@ Hard to troubleshoot issues can occur when a custom search index definition node
 ### Custom search index definition nodes must contain a child node named indexRules that has children {#oakpal-custom-search-index}
 
 * **Key**: IndexRulesNode
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
@@ -954,7 +956,7 @@ A properly defined custom search index definition node must contain a child node
 ### Custom search index definition nodes must follow naming conventions {#oakpal-custom-search-definitions}
 
 * **Key**: IndexName
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
@@ -972,7 +974,7 @@ Experience Manager as a Cloud Service requires that custom search index definiti
 ### Custom search index definition nodes must not contain a property named seed {#oakpal-property-name-seed}
 
 * **Key**: IndexSeedProperty
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
@@ -981,7 +983,7 @@ Experience Manager as a Cloud Service prohibits custom search index definitions 
 ### Custom search index definition nodes must not contain a property named reindex {#oakpal-reindex-property}
 
 * **Key**: IndexReindexProperty
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
@@ -1026,7 +1028,7 @@ Cloud Service. See the document [Content Search and Indexing](/help/operations/i
 ### If the custom search index definition contains `compatVersion`, it must be set to 2 {#oakpal-compatVersion}
 
 * **Key**: IndexCompatVersion
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Major
 * **Since**: Version 2022.1.0
 
@@ -1034,7 +1036,7 @@ Cloud Service. See the document [Content Search and Indexing](/help/operations/i
 ### Index node specifying `includedPaths` should also specify `queryPaths` with the same values {#oakpal-included-paths-without-query-paths}
 
 * **Key**: IndexIncludedPathsWithoutQueryPaths
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2023.1.0
 
@@ -1043,7 +1045,7 @@ For custom indexes, configure `includedPaths` and `queryPaths` with identical va
 ### Index node specifying `nodeScopeIndex` on generic node type should also specify `includedPaths` and `queryPaths` {#oakpal-full-text-on-generic-node-type}
 
 * **Key**: IndexFulltextOnGenericType
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2023.1.0
 
@@ -1089,7 +1091,7 @@ The node type `nt:base` can be considered "generic," because all node types inhe
 ### The queryLimitReads property of the query engine should not be overridden {#oakpal-query-limit-reads}
 
 * **Key**: OverrideOfQueryLimitReads
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2023.1.0
 
@@ -1098,7 +1100,7 @@ Overriding the default value can lead to slow page reads, particularly when more
 ### Multiple active versions of the same index {#oakpal-multiple-active-versions}
 
 * **Key**: IndexDetectMultipleActiveVersionsOfSameIndex
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2023.1.0
 
@@ -1125,7 +1127,7 @@ Overriding the default value can lead to slow page reads, particularly when more
 ### The name of fully custom index definitions should conform to the official guidelines {#oakpal-fully-custom-index-name}
 
 * **Key**: IndexValidFullyCustomName
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2023.1.0
 
@@ -1186,7 +1188,7 @@ If the analyzed property is not explicitly set, its default value is false.
 ### Tags property {#tags-property}
 
 * **Key**: IndexHasValidTagsProperty
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2023.1.0
 
