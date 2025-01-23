@@ -543,8 +543,6 @@ Resetting the RDE removes all custom code, configurations, and content from both
 
 A reset sets the RDE to the most recently available AEM version.
 
-<!-- Alexandru: hiding for now, do not delete
-
 Resetting can be done by way of [Cloud Manager](#reset-the-rde-cloud-manager) or by way of the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code is deleted from the RDE.
 
 >[NOTE!]
@@ -557,9 +555,11 @@ You can reset the RDE and return it to a default state by running:
 
 `aio aem:rde:reset`
 
-This usually takes a few minutes. Use the [status command](#checking-rde-status) to check when the environment is ready again.
+This usually takes a few minutes and will report ```Environment reset.``` when successful or ```Failed to reset the environment.``` on errors. For a structured output, see the chapter about ```--json``` output below.
 
-### Reset the RDE in Cloud Manager {#reset-the-rde-cloud-manager} -->
+Use the [status command](#checking-rde-status) to check when the environment is ready again.
+
+### Reset the RDE in Cloud Manager {#reset-the-rde-cloud-manager}
 
 You can use Cloud Manager to reset your RDE by following the below steps:
 
@@ -937,7 +937,7 @@ Most commands support the global ```--json``` flag which suppresses console outp
 }
 ```
 
-#### Wait for Completion {#wait}
+#### Wait for Completion, reset successfully {#wait-success}
 
 ```$ aio aem rde reset --json```
 
@@ -946,6 +946,18 @@ Most commands support the global ```--json``` flag which suppresses console outp
   "programId": "myProgram",
   "environmentId": "myEnv",
   "status": "reset"
+}
+```
+  
+#### Wait for Completion, reset failed {#wait-failed}
+
+```$ aio aem rde reset --json```
+
+```json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "status": "reset_failed"
 }
 ```
 

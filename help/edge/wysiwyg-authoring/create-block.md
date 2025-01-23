@@ -45,7 +45,7 @@ The following quote block example follows this approach.
 
    ![Cloning the project](assets/create-block/clone.png)
 
-2\. Edit the `component-definition.json` file at the root of the project and add the following definition for your new quote block and save the file.
+2\. Edit the [`component-definition.json` file](/help/implementing/universal-editor/component-definition.md) at the root of the project and add the following definition for your new quote block and save the file.
 
 >[!BEGINTABS]
 
@@ -113,7 +113,7 @@ The following quote block example follows this approach.
 
 >[!ENDTABS]
 
-4\. Edit the `component-filters.json` file at the root of the project and add the quote block to the [filter definition](/help/implementing/universal-editor/customizing.md#filtering-components) to allow the block to be added to any section and save the file.
+4\. Edit the [`component-filters.json` file](/help/implementing/universal-editor/filtering.md) at the root of the project and add the quote block to the [filter definition](/help/implementing/universal-editor/filtering.md) to allow the block to be added to any section and save the file.
 
 >[!BEGINTABS]
 

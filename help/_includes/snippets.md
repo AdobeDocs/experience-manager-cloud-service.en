@@ -59,6 +59,7 @@
 * [Add repeatable sections to a form​](/help/edge/docs/forms/repeatable-forms.md)
 * [Show a custom thank you message after form submission​](/help/edge/docs/forms/thank-you-page-form.md)
 * [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
+* [Using Form Submission Service](/help/forms/forms-submission-service.md)
 
 
 ## Difference between Rule Editor in Core Components and Rule Editor in Foundation Components {#rule-editor-diff}
@@ -225,3 +226,11 @@ To log a support ticket, you must first register your Edge Delivery site in Clou
     * URL of the live website. For example: `www.mydomain.com`.
     * URL of the origin website (`.hlx` URL).
 
+## Universal Editor is Preferred over SPA Editor {#ue-over-spa}
+
+>[!IMPORTANT]
+>
+>The SPA Editor remains supported by Adobe, but the preferred editors for managing headless content in AEM are now:
+>
+>* [The Universal Editor](/help/edge/wysiwyg-authoring/authoring.md) for visually editing headless content.
+>* [The Content Fragment Editor](/help/assets/content-fragments/content-fragments-managing.md) for form-based editing of headless content.
