@@ -28,7 +28,7 @@ To take advantage of this feature, make sure you have done the following.
 * Your site is already fully set up by following the document [Developer Getting Started Guide for WYSIWYG Authoring with Edge Delivery Services.](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
 * You are running AEM as a Cloud Service 2024.08 at a minimum.
 
-You will also need to ask Adobe to configure two items for you. Reach out via your Slack channel or raise a support issue to request Adobe to make these changes:
+You will also need to ask Adobe to configure the following items for you. Reach out via your Slack channel or raise a support issue to request Adobe to make these changes:
 
 * Ask to activate the [aem.live configuration service](https://www.aem.live/docs/config-service-setup#prerequisites) for your environment and that you are configured as an administrator.
 * Ask to enable the repoless feature for your program by Adobe.
