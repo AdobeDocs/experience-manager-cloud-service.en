@@ -10,72 +10,59 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 18751 {#18751}
+## Release 19149 {#19149}
 
-Summarized below are the continuous improvements for maintenance release 18751, which was publicly released on December 11, 2024. The previous maintenance release was release 18598.
+Summarized below are the continuous improvements for maintenance release 19149, which was publicly released on January 21, 2025. The previous maintenance release was release 18751.
 
 The 2025.1.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-18751}
+### Enhancements {#enhancements-19149}
 
-* SKYOPS-88509: Java 21 support for the AEM SDK.
+* ASSETS-45286: Show granular progress for download archiving async job.
+* ASSETS-46296: Support for Dynamic Media Templates in Asset Selector.
+* ASSETS-44796: Fire Assets Events for DAM async assets jobs.
 
-### Fixed Issues {#fixed-issues-18751}
+### Fixed Issues {#fixed-issues-19149}
 
-* ASSETS-42802: Back button on MFE doesnt always work and shows extra dialog.
-* ASSETS-44148: Fixed NODE_MOVED event in AEM can cause NPE.
-* ASSETS-44418: Fixed Correct env is not configured on skyline.
-* ASSETS-44821: Fixed Update event filter to include form-url-encoded data for upload events.
-* CNTBF-298: Fixed Content Copy fails with UUID conflicts.
-* CNTBF-331: [content-copy-bundle] release 2.0.14.
-* FORMS-16572: Remove Workflow test failures for java 21 SDK build.
-* GRANITE-36205: Automated update for internal oak release in QS.
-* GRANITE-53704: Re-evaluate Sling Discovery on Repository Service.
-* GRANITE-54300: Update Oak to latest public release (1.70.0).
-* GRANITE-54416: Update Filevault to version 3.8.2.
-* GRANITE-54462: Configure SubscriberAgents to use hc.tags of "systemready".
-* GRANITE-54542: Update commons-io dependency to 2.17.0.
-* GRANITE-54658: Add delayFactor and batch-size OSGi configs for fullGC in QS.
-* GRANITE-54696: Widen import range for Jackrabbit API.
-* GRANITE-54803: Disable ClusterAtExchange in AEM when imsauth is active.
-* GRANITE-55095: Update Oak to latest public release (1.72.0).
-* GUIDES-20006: Document state marked as Done reverts back to Draft before saving a new version, resulting in the Done state not persisting in any document versions.
-* GUIDES-21840: In the Native PDF output, chapter titles are missing from the TOC, leading to an incorrect hierarchy.
-* GUIDES-19558: Editing and then saving a baseline on a cloud setup timesout after 1 minute if the baseline has large number of topics or maps.
-* GUIDES-19733: Map translation using baseline becomes slow and eventually fails to load the list of all the associated topics and maps files.
-* SITES-26798: Launch Auto-Promotion is not updating Promotion Status (Promotion Date).
-* SITES-27137: Remove Sling commons metrics dependency from MSM core.
-* SKYOPS-75446: Fixed AEM sometimes returns a 404 or pages with missing content.
-* SKYOPS-76366: No Jetty Threadpool metrics in AEM release 15977 and later.
-* SKYOPS-82371: java.io.IOException: classFile.delete() failed.
-* SKYOPS-83369: AEM deployments fail to start up if the transform job execution does not generate bundles.
-* SKYOPS-83910: Fixed concurrency issues found in SKYOPS-82371.
-* SKYOPS-84821: Set the Sling Main Servlet's sling.includes.checkcontenttype configuration to true.
-* SKYOPS-85798: Fixed Transform job generates empty index definitions.
-* SKYOPS-86251: Upgrade to AEM Analyser core 1.5.6 and and enable the product-package-import analyser in the transform job.
-* SKYOPS-86710: Remove Minify test failures for java 21 sdk build.
-* SKYOPS-86745: Update to Sling ResourceResolver 1.12.2.
-* SKYOPS-89616: Fixed Unable to Create Technical Account in Adobe Developer Console.
-* SKYOPS-89691: Fixed Incorrect artifact id used for ASM warnings.
-* SKYOPS-89699: Missing warnings for old Groovy versions embedded in the 'orbinson' flavour of the Groovy Console.
-* SKYOPS-88664: Log and protect against a case when downloaded map file has line exceeding 1024 limit.
-* SKYOPS-89734: Release dispatcher image 2.0.235.
+* GRANITE-55074: Ensure that CORS response headers are set on error responses.
+* ASSETS-43755: Scalability improvements to bulk asset relate.
+* ASSETS-45399: Redirect to Assets Console after creating Asset live-copy.
+* ASSETS-45462: Browser caching issues with custom folder thumbnails.
+* ASSETS-46398: Hide Download and reprocess actions for DM Templates.
+* ASSETS-44484: Issues re-saving Connected Assets configuration.
+* ASSETS-44122: Async copy assets job does not rename the destination folder when copying to the current folder.
+* ASSETS-44463: Download CSV button not visible on successful metadata export.
+* ASSETS-45134: Move job with destination title overrides all folder titles.
+* ASSETS-45137: Conflicts with bulk uploads through Assets View.
+* ASSETS-45758: Asset Relations gets an infinite busy/loading animation after adding a relation.
+* ASSETS-44148: NODE_MOVED event in AEM can cause spurious NPE in logs.
+* ASSETS-28607: JS error when setting custom video thumbnail.
+* GRANITE-55781:  Improve group synchronization between Adobe Developer Console and AEM. More details in [Changes in User Group and Product Profile Synchronization](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization).
+* GRANITE-55754: Ensure SDK startup scripts support Java 21.
+* GRANITE-54248: Unable to scroll through all items in large assets folder.
+* SCRNS-4597: Search result list view improvements.
 
-For more information about the new and enhanced features and issues fixed in Experience Manager Guides, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
-### Known Issues {#known-issues-18751}
+### Known Issues {#known-issues-19149}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-18751}
+### Deprecated Features and APIs {#deprecated-19149}
+
+When using the Adobe Admin Console for permission management, the following groups MUST NOT be used as they will not be synchronized to AEM anymore:
+* AEM Groups that end with _GROUP_NAME_SUFFIX.
+* Product profiles from other environments, programs or products.
+
+For more details, please check [Changes in User Group and Product Profile Synchronization](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization).
+
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-18751}
+### Security Fixes {#security-19149}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 3 identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 4 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-18751}
+### Embedded Technologies {#embedded-tech-19149}
 
 |Technology|Version|Link|
 |---|---|---|
