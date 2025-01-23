@@ -449,14 +449,17 @@ The Experience Fragment picker can be used to select an [Experience Fragment](/h
 ```json
 [
   {
-    "id": "aem-experience-fragment",
+    "id": "experience-fragment",
     "fields": [
       {
         "component": "aem-experience-fragment",
-        "name": "picker",
-        "label": "Experience Fragment Picker",
         "valueType": "string",
-        "variationName": "experienceFragmentVariation"
+        "name": "experience-fragment",
+        "label": "experience-fragment",
+        "variationName": "experienceFragmentVariation",
+        "validation": {
+            "rootPath": "/content/refresh"
+        }
       }
     ]
   }
