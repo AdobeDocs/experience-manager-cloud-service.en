@@ -117,9 +117,12 @@ Depending on the needs of your workflow, you may want to edit the Content Fragme
 ### Adding Components to Containers {#adding-components}
 
 1. Select a container component in the [content tree](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) or in the editor.
-1. Then select the add icon in the properties panel.
 
    ![Selecting a component to add to a container](assets/ue-add-component.png)
+
+1. Then select the add icon in the properties panel.
+
+   ![Select add icon](assets/add-icon.png)
 
 The component is inserted into the container and can be edited in the editor.
 
@@ -167,7 +170,7 @@ The components are reordered in both the content tree and in the editor.
 
 >[!NOTE]
 >
->Components can not be moved between containers if a different [component filter](/help/implementing/universal-editor/customizing.md#filtering-components) is set between the source and target containers.
+>Components can not be moved between containers if a different [component filter](/help/implementing/universal-editor/filtering.md) is set between the source and target containers.
 
 ## Previewing Content {#previewing-content}
 

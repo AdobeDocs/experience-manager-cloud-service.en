@@ -153,6 +153,7 @@ Explained in the table below are the available actions.
 | **unset** |reqProperty|Removes a specified request parameter (only "path" property supported), or request header, query parameter, or cookie, to a given value, which could be a string literal or request parameter.|
 |         |var|Removes a specified variable.|
 |         |queryParamMatch|Removes all query parameters that match a specified regular expression.|
+|         |queryParamDoesNotMatch|Removes all query parameters that do not match a specified regular expression.|
 | **transform** |op:replace, (reqProperty or reqHeader or queryParam or reqCookie or var), match, replacement  | Replaces part of the request parameter (only "path" property supported), or request header, or query parameter, or cookie, or variable with a new value. |
 |              |op:tolower, (reqProperty or reqHeader or queryParam or reqCookie or var) | Sets the request parameter (only "path" property supported), or request header, or query parameter, or cookie, or variable to its lowercase value. |
 
@@ -452,7 +453,7 @@ redirects:
       action:
         type: redirect
         location:
-          reqProperty: path
+          reqProperty: url
           transform:
             - op: replace
               match: '^/(.*)$'
