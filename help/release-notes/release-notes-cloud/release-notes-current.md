@@ -60,12 +60,18 @@ The [AEM REST OpenAPI for Content Fragment Delivery](/help/headless/aem-rest-ope
 
 ### Deprecated Features {#sites-deprecated}
 
+#### SPA Editor {#spa-editor}
+
 [The SPA Editor](/help/implementing/developing/hybrid/introduction.md) has been deprecated for new projects starting with release 2025.1.0. The SPA Editor remains supported for existing projects, but should not be used for new projects.
 
 The preferred editors for managing headless content in AEM are now:
 
 * [The Universal Editor](/help/edge/wysiwyg-authoring/authoring.md) for visual editing.
 * [The Content Fragment Editor](/help/assets/content-fragments/content-fragments-managing.md) for form-based editing.
+
+#### PWA Features {#pwa-features}
+
+[The progressive web app (PWA) features](/help/sites-cloud/authoring/sites-console/enable-pwa.md) for AEM Sites has been deprecated for new projects starting with release 2025.1.0. This feature remains supported for existing projects, but should not be used for new projects
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
