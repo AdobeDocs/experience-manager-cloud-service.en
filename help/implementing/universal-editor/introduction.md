@@ -82,7 +82,8 @@ As you explore the Universal Editor and move forward implementing it in your own
 
 * No more than 25 AEM resources (Content Fragments, pages, Experience Fragments, Assets, etc.) should be references as instrumentation on a single page.
 * AEM as a Cloud Service and [AEM 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) are the only supported AEM backends.
-* AEM as a Cloud Service release `2023.8.13099` or higher is required.
+* Release `2023.8.13099` or higher is required for AEM as a Cloud Service.
+* Service pack 21 or 22 plus a feature pack is required for AEM 6.5.
 * Content authors must have their own individual Experience Cloud accounts.
 * As part of AEM, the Universal Editor supports the same desktop browsers as AEM.
   * Mobile versions of these browsers are not supported.
