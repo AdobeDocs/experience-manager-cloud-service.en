@@ -9,12 +9,12 @@ exl-id:
 | [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
 | ------------- | --------------------------- |---------|-----|
 
-Dynamic Media templates provide a WYSIWYG editor to quickly create personalized marketing content. Using parameterization and [Dynamic Media URLs](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media), template image and text layers can be updated in real-time based on contextual signals. This enables businesses to adapt content instantly for omnichannel merchandising and deliver personalized, real-time experiences.
+Dynamic Media templates provide a WYSIWYG editor to create personalized marketing content instantly. Using parameterization and [Dynamic Media URLs](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media), template image and text layers can be updated in real-time based on contextual signals. This capability of real-time customisation enables businesses to adapt content instantly for omnichannel merchandising and deliver personalized, real-time experiences.
 
 **Features delivered**
 *    **Dynamic Media WYSIWYG Template Editor:** Create customizable banners with image and text layers. 
 *    **Layer Parameterization:** Define dynamic key-value pairs for layers to enable real-time updates.
-*    **Dynamic Media URL Support:** Use Dynamic Media URLs for templates, integrating personalized values from 1st or 3rd party applications.
+*    **Dynamic Media URL Support:** Use Dynamic Media URLs for templates, integrating personalized values from 1st or third party applications.
 *    **Layer Visibility Control:** Dynamically hide or show layers as needed.
 *    **Smart Text Resizing:** Automatically adjust text size to fit designated areas.
 
@@ -27,7 +27,7 @@ Dynamic Media templates provide a WYSIWYG editor to quickly create personalized 
 *    **Enhance Customer Engagement:** Drive interactive, contextually relevant experiences.
 
 
-## Prerequisites {#prerequisites-for-dynamic-media-wysiwyg-template}
+## Prerequisite{#prerequisites-for-dynamic-media-wysiwyg-template}
 
 To create a Dynamic Media template, you must:
 
@@ -38,11 +38,11 @@ To create a Dynamic Media template, you must:
 
 To create a DM template, follow these steps:
 
-1. [Create a blank canvas]()
-1. [Add images to the canvas]()
-1. [Add texts to the canvas]()
-1. [Edit or delete a layer]()
-1. [Parameterise layers]()
+1. [Create a blank canvas](#create-a-canvas)
+1. [Add images to the canvas](#add-images-to-the-canvas)
+1. [Add texts to the canvas](#add-text-to-the-canvas)
+1. [Edit or delete a layer](#edit-or-delete-a-layer)
+1. [Parameterise layers](#parameterise-a-layer)
 
 
 ## Create a blank canvas{#create-a-canvas}
@@ -57,7 +57,7 @@ To [create a folder](/help/assets/add-delete-assets-view.md) under **Dynamic Med
 1. Specify a template name, define the canvas width and height, and click **Create**. A blank canvas displays with menu options on both sides to use for creating the template. Hover over the menu options to see their tooltip. 
 ![](/help/assets/assets/dm-templates/blank-canvas-page.png)
 
-**Menu options on the right pane:** Use these options to add necessary images and text layers to the canvas.
+**Menu options on the right pane:** Use these options to add the necessary images and text layers to the canvas.
 * ![](/help/assets/assets/dm-templates/add-image.svg): Click to add images to the canvas 
 * ![](/help/assets/assets/dm-templates/add-text.svg): Click to add texts to the canvas
 * ![](/help/assets/assets/dm-templates/show-layers-list.svg): Click to see the list of all layers (image and text) on the canvas. Every image and text added to the canvas is represented as layers.
@@ -65,12 +65,12 @@ To [create a folder](/help/assets/add-delete-assets-view.md) under **Dynamic Med
 **Menu options on the left pane:** Use these options for common editor actions as mentioned below.
 
 * ![](/help/assets/assets/dm-templates/layer-selector.svg): Select a layer 
-* ![](/help/assets/assets/dm-templates/bring-forward.svg): Click to bring a selected layer forward or press **Ctrl** + **]** (in windows) and **Cmd** + **]** (in mac).
-* ![](/help/assets/assets/dm-templates/send-backward.svg): Click to send a selected layer backward or press **Ctrl** + **[** (in windows) and **Cmd** + **[** (in mac).
-* ![](/help/assets/assets/dm-templates/undo.svg): Click to undo the last action or press **Ctrl** + **Z** (in windows) and **Cmd** + **Z** (in mac).
-* ![](/help/assets/assets/dm-templates/redo.svg): Click to redo the last action or press **Ctrl** + **Y** (in windows) and **Cmd** + **Y** (in mac).
-* ![](/help/assets/assets/dm-templates/zoomin.svg): Click to zoom in the canvas or press **Ctrl** + **+** (in windows) and Cmd + **+** (in mac)
-* ![](/help/assets/assets/dm-templates/zoomout.svg): Click to zoom out the canvas or press **Ctrl** + **-** (in windows) and **Cmd** + **-** (in mac)
+* ![](/help/assets/assets/dm-templates/bring-forward.svg): Click to bring a selected layer forward or press **Ctrl** + **]** (in Windows) and **Cmd** + **]** (in Mac).
+* ![](/help/assets/assets/dm-templates/send-backward.svg): Click to send a selected layer backward or press **Ctrl** + **[** (in Windows) and **Cmd** + **[** (in Mac).
+* ![](/help/assets/assets/dm-templates/undo.svg): Click to undo the last action or press **Ctrl** + **Z** (in Windows) and **Cmd** + **Z** (in Mac).
+* ![](/help/assets/assets/dm-templates/redo.svg): Click to redo the last action or press **Ctrl** + **Y** (in Windows) and **Cmd** + **Y** (in Mac).
+* ![](/help/assets/assets/dm-templates/zoomin.svg): Click to zoom in the canvas or press **Ctrl** + **+** (in Windows) and Cmd + **+** (in Mac)
+* ![](/help/assets/assets/dm-templates/zoomout.svg): Click to zoom out the canvas or press **Ctrl** + **-** (in Windows) and **Cmd** + **-** (in Mac)
 * Press **Backspace** or **delete** to delete the selected layer if no text/property is being edited.
 
 Click ![](/help/assets/assets/dm-templates/show-layers-list.svg) and more options (![](/help/assets/assets/dm-templates/three-dots.svg)) on the Canvas layer to edit the canvas dimensions anytime while creating the template.
@@ -86,7 +86,7 @@ Execute these steps to add images to the canvas:
 
 1. Click ![](/help/assets/assets/dm-templates/add-image.svg) to display the [Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) panel. The panel displays the images in your AEM Assets instance that are synced to Dynamic Media. 
 1. Browse the panel or use keywords in the search bar to find a specific image.
-1. Drag and drop an image on the canvas to use it. See [Properties panel](#4) for resizing or repositioning a layer on the canvas. 
+1. Drag and drop an image on the canvas to use it. See the [Properties panel](#4) for resizing or repositioning a layer on the canvas. 
 ![](/help/assets/assets/dm-templates/add-image-to-canvas.png)
 
 ## Add text layers to the canvas{#add-text-to-the-canvas}
@@ -95,9 +95,9 @@ Execute these steps to add texts to the canvas:
 
 1. Click ![](/help/assets/assets/dm-templates/add-text.svg) to add a text layer to the canvas and open the Properties panel. 
 1. Select the layer and click the text to update it. 
-1. Enable **Smart Text Resize** in the Properties panel to automatically adjust the text length and font size to optimally fit in the designated area. 
+1. Enable **Smart Text Resize** in the Properties panel to  adjust the text length and font size automatically to fit in the designated area optimally. 
 ![](/help/assets/assets/dm-templates/add-text-layer.png)
-See [Properties panel](#4) to reposition, resize, rotate or delete the layer. Format your text to your desired font, size, color, style, alignment (in the layer) by changing their values in the respective fields in the **Text** section of the panel.
+See the [Properties panel](#4) to reposition, resize, rotate or delete the layer. Format your text to your desired font, size, color, style, alignment (in the layer) by changing their values in the respective fields under the **Text** section of the panel.
    >[!NOTE]
    >
    > To use a font other than the default one, you need to upload and publish the font file to AEM Assets and Dynamic Media. If you have some old fonts in your instance, ensure to reprocess them to see them in the Template editor.
@@ -119,7 +119,7 @@ To navigate to a layer's properties panel:
 1. Click ![](/help/assets/assets/dm-templates/show-layers-list.svg).
 1. Select the layer from the list. 
 
-This panel displays the position of layer's center point on the canvas plane (X and Y values) and layer's dimensions (width and height) along with text formatting options.
+This panel displays the position of the the layer's center point on the canvas plane (X and Y values) and layer's dimensions (width and height) along with text formatting options.
 ![](/help/assets/assets/dm-templates/properties-panel.png)
 
 From the properties panel of a layer, select another layer on the canvas to navigate to its properties panel.
@@ -136,19 +136,19 @@ See these common layer editing actions to edit a text or an image layer:
 
 #### Text formatting options{#text-formatting-options-on-properties-panel}
 
-Format your text to your desired font, size, color, style, alignment (in the layer) by changing their values in the respective fields in the **Text** section of the panel.
+Format your text to your desired font, size, color, style, alignment (in the layer) by changing their values in the respective fields under the **Text** section of the panel.
 
-Smart Text Resize : Ensure to include **Smart Text Resize** ([Copyfitting](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting)) to optimally fit any text in the designated area by smartly adjusting its font size and length. This prevents, text overflow or minimises extra spaces at the bottom of the text.
+**Smart Text Resize:** Ensure to include **Smart Text Resize** ([Copyfitting](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting)) to fit any text in the designated area optimally by adjusting its font size and length smartly. This capability prevents text overflow or minimizes extra spaces at the bottom of the text.
 ![](/help/assets/assets/dm-templates/smart-text-resize.png)
 
 ## Parameterise layers {#parameterise-a-layer}
 
-After creating a template with multiple layers of images and texts, parameterise the selected layers. When a layer or its property is parameterised, it gets a key-value pair (also called as parameter) that can be included in the template URL to update the layer's position, size or content in real time resulting in template customisation in no time.
+After creating a template with multiple layers of images and texts, parameterise the selected layers. When a layer or its property is parameterised, it gets a key-value pair (also called as parameter). This parameter can be included in the template URL to update the layer's position, size or content in real time resulting in template customisation in no time.
 
 To parameterise a layer: <a id="1"></a> 
 
 1. click ![](/help/assets/assets/dm-templates/show-layers-list.svg), select a layer and click **Parameters**. The **Parameters** panel displays.
-1. Toggle **Include Parameter** to parameterise a property. See [this]() to know the property's behaviour after parameterisation.
+1. Toggle **Include Parameter** to parameterise a property. See [this](#parameterisation-options-or-allowed-parameters) to know the property's behaviour after parameterisation.
 1. **Optional:** Rename the parameter name. A parameter name has layer name followed by a suffix. For a selected layer all its parameterized properties share the same layer name followed by a varying suffix. Rename the layer name by following the semantic naming convention so that when you include the parameter in the URL, the parameter name self explains about the layer's content or its purpose.
 1. Click **Save**.
 ![](/help/assets/assets/dm-templates/parameterise-a-layer.png)
@@ -238,10 +238,10 @@ Paste this updated URL in your browser to view the changes.
 
 Edit the template by following these steps:
 
-1.    On the Assets view, click **Dynamic Media Assets**.
-2.    Navigate to the template location.
-3.    Select the template.
-4.    Click **Edit Template**. The template canvas displays the template and the list of all its layers in the Layers panel. Start to edit your template.
+1. On the Assets view, click **Dynamic Media Assets**.
+2. Navigate to the template location.
+3. Select the template.
+4. Click **Edit Template**. The template canvas displays the template and the list of all its layers in the Layers panel. Start to edit your template.
 
 ## Limitations 
 
