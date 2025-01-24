@@ -1,6 +1,6 @@
 ---
 title: Authoring Content Fragments
-description: Understand how to author content for your Content Fragments, and create variations of that content according to purpose. This provides added flexibility for both headless delivery and page authoring.
+description: Understand how to author content for your Content Fragments, and create variations of that content according to purpose. Content Fragments provide added flexibility for both headless delivery and page authoring.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
@@ -62,7 +62,9 @@ When you first open the Content Fragment Editor, you see four main areas:
 * central panel: shows the actual fields, and content, of the selected variation
   * allows you to edit the content
     * when configured (as multiple) in the model, various data types allow you to **Add** instances of the relevant field
-  * if **Tab Placeholder** fields are defined within the model they are shown here, and can be used for navigating; they will either be presented horizontally, or as a drop-down list.
+  * if **Tab Placeholder** fields are defined within the model they are shown here and:
+    * can be used for navigating
+    * will either be shown horizontally, or as a drop-down list
 
   >[!NOTE]
   >
@@ -96,7 +98,7 @@ In the left panel you can see:
 
 ### Follow Links {#follow-links}
 
-In various parts of the editor you can see the link icon. This can be used to open the item shown; for example, a Content Fragment Model, a Parent Reference, or a fragment being referenced:
+In various parts of the editor you can see the link icon. This icon can be used to open the item shown; for example, a Content Fragment Model, a Parent Reference, or a fragment that is referenced:
 
 ![Content Fragment Editor - Link Icon](assets/cf-authoring-link-icon.png)
 
@@ -502,7 +504,7 @@ For example:
 
 ## Commenting on your Fragment {#commenting-on-your-fragment}
 
-The **Comments** tab in the right panel provides the following capabilities:
+To enable you to collaborate in-product and in-context, the **Comments** tab in the right panel provides the following capabilities:
 
 * Add a new comment
 * Tag specific users in a comment
