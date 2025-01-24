@@ -75,6 +75,17 @@ The next planned release is Thursday, February 13, 2025.
 
 * **Early Adopter program update - PR validation support for Bitbucket and GitLab:** Cloud Manager now supports Pull Request (PR) validation for both Cloud and self-hosted versions of Bitbucket and GitLab. This feature lets customers test their code changes against Adobe's code quality thresholds before merging a PR. By ensuring higher code quality prior to merging, this enhancement significantly improves the success rate of code changes in production pipelines, reducing time to market and streamlining development workflows.
 
+* **Advanced filtering options for pipelines:** Cloud Manager now features advanced filtering options on the Pipelines page, letting you quickly access relevant data and enhance deployment efficiency. Several of the key features include the following:
+
+    * **Multi-Criteria Filtering:** Refine search results with filters such as pipeline name, environment, and deploy code.
+    * **Streamlined Pipeline Search:** Easily locate specific pipelines for faster navigation and improved workflow management.
+
+    Altogether, these enhancements make managing and deploying pipelines more efficient and user-friendly.
+
+    ![Pipeline filters feature](/help/implementing/cloud-manager/release-notes/assets/pipeline-filters.png)
+
+* **Self-Service CDN Configuration for Edge Delivery Service:** New adopters of Edge Delivery Service can now configure their CDN independently through Cloud Manager. This update extends support from `.hlx.page/live` to the new `.aem.page/live`, providing greater flexibility and streamlined setup for users.
+
 
 <!-- ## Early adoption program {#early-adoption}
 
