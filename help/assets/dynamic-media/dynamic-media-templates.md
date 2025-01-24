@@ -197,7 +197,7 @@ Execute these steps to preview and publish the template and copy the delivery UR
    1. Select a text layer and edit its text or 
    1. Select an image layer, click ![](/help/assets/assets/dm-templates/add-image.svg), select an image from the asset selector, and click **Refresh**. 
 
-   The template updates immediately, displaying the edited text and replacing the previous image with the new one. Additionally, the image parameter value reflects the new image path. Similarly, you can resize a layer by adjusting its values, and the changes will be applied to the template in real time. <a id="2"></a>  
+   The template updates immediately, displaying the edited text and replacing the previous image with the new one. Additionally, the image parameter value reflects the new image path. Similarly, you can resize a layer by adjusting its values, and the changes are applied to the template in real time. <a id="2"></a>  
 1. Select only one **Hide Parameter** from the duplicates when multiple layers are grouped under the same Hide Parameter. 
 1. **Optional:** Change the **Hide Parameter** value between 0 and 1 and click **Refresh** to see the changes. Layers with the same hide parameter hides or displays together. Similarly you can control the layers' visibility from the URL.
 
