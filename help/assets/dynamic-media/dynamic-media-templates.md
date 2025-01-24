@@ -2,7 +2,6 @@
 title: Dynamic Media templates
 description: Learn to create a WYSIWYG template that allows customization in real-time enabling dynamic content creation such as banners, flyers and more in no time.
 role: User
-exl-id: 
 ---
 # Dynamic Media templates{#dynaminc-media-templates}
 
