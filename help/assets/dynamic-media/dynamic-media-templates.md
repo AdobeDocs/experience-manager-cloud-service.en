@@ -48,9 +48,11 @@ To create a DM template, follow these steps:
 
 Execute these steps to create a blank canvas:
 
-1. Navigate to Assets View and click **Dynamic Media Assets** in the left panel. 
+1. Navigate to Assets View and click **Dynamic Media Assets** in the left panel.
+<img src="/help/assets/assets/dm-templates/DM-Assets1.png" alt="resizing" width="184.71" height="124.69"> 
 ![](/help/assets/assets/dm-templates/DM-Assets1.png)
-1. Click **Create Template** to save the template under Dynamic Media Assets or navigate to a folder and click **Create Template** to save the template within that folder. The **New Template** dialog box displays. 
+1. Click **Create Template** to save the template under Dynamic Media Assets or navigate to a folder and click **Create Template** to save the template within that folder. The **New Template** dialog box displays.
+<img src="/help/assets/assets/dm-templates/new-template.png" alt="resizing" width="284.71" height="229.69"> 
 ![](/help/assets/assets/dm-templates/new-template.png)
 To [create a folder](/help/assets/add-delete-assets-view.md) under **Dynamic Media Assets**, first create a folder under **Assets**. The folder tree under **Assets** replicates under **Dynamic Media Assets**. 
 1. Specify a template name, define the canvas width and height, and click **Create**. A blank canvas displays with menu options on both sides to use for creating the template. Hover over the menu options to see their tooltip. 
@@ -73,6 +75,7 @@ To [create a folder](/help/assets/add-delete-assets-view.md) under **Dynamic Med
 * Press **Backspace** or **delete** to delete the selected layer if no text/property is being edited.
 
 Click ![](/help/assets/assets/dm-templates/show-layers-list.svg) and more options (![](/help/assets/assets/dm-templates/three-dots.svg)) on the Canvas layer to edit the canvas dimensions anytime while creating the template.
+<img src="/help/assets/assets/dm-templates/edit-canvas1.png" alt="resizing" width="380.71" height="230.69">
 ![](/help/assets/assets/dm-templates/edit-canvas1.png)
 
    >[!NOTE]
@@ -85,7 +88,8 @@ Execute these steps to add images to the canvas:
 
 1. Click ![](/help/assets/assets/dm-templates/add-image.svg) to display the [Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) panel. The panel displays the images in your AEM Assets instance that are synced to Dynamic Media. 
 1. Browse the panel or use keywords in the search bar to find a specific image.
-1. Drag and drop an image on the canvas to use it. See the [Properties panel](#4) for resizing or repositioning a layer on the canvas. 
+1. Drag and drop an image on the canvas to use it. See the [Properties panel](#4) for resizing or repositioning a layer on the canvas.
+<img src="/help/assets/assets/dm-templates/add-image-to-canvas.png" alt="resizing" width="584.71" height="324.69"> 
 ![](/help/assets/assets/dm-templates/add-image-to-canvas.png)
 
 ## Add text layers to the canvas{#add-text-to-the-canvas}
@@ -95,6 +99,7 @@ Execute these steps to add texts to the canvas:
 1. Click ![](/help/assets/assets/dm-templates/add-text.svg) to add a text layer to the canvas and open the Properties panel. 
 1. Select the layer and click the text to update it. 
 1. Enable **Smart Text Resize** in the Properties panel to  adjust the text length and font size automatically to fit in the designated area optimally. 
+<img src="/help/assets/assets/dm-templates/add-text-layer.png" alt="resizing" width="584.71" height="334.69">
 ![](/help/assets/assets/dm-templates/add-text-layer.png)
 See the [Properties panel](#4) to reposition, resize, rotate or delete the layer. Format your text to your desired font, size, color, style, alignment (in the layer) by changing their values in the respective fields under the **Text** section of the panel.
    >[!NOTE]
@@ -119,6 +124,7 @@ To navigate to a layer's properties panel:
 1. Select the layer from the list. 
 
 This panel displays the position of the the layer's center point on the canvas plane (X and Y values) and layer's dimensions (width and height) along with text formatting options.
+<img src="/help/assets/assets/dm-templates/properties-panel.png" alt="resizing" width="184.71" height="404.69">
 ![](/help/assets/assets/dm-templates/properties-panel.png)
 
 From the properties panel of a layer, select another layer on the canvas to navigate to its properties panel.
@@ -138,6 +144,7 @@ See these common layer editing actions to edit a text or an image layer:
 Format your text to your desired font, size, color, style, alignment (in the layer) by changing their values in the respective fields under the **Text** section of the panel.
 
 **Smart Text Resize:** Ensure to include **Smart Text Resize** ([Copyfitting](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting)) to fit any text in the designated area optimally by adjusting its font size and length smartly. This capability prevents text overflow or minimizes extra spaces at the bottom of the text.
+<img src="/help/assets/assets/dm-templates/smart-text-resize.png" alt="resizing" width="284.71" height="204.69">
 ![](/help/assets/assets/dm-templates/smart-text-resize.png)
 
 ## Parameterise layers {#parameterise-a-layer}
@@ -150,6 +157,7 @@ To parameterise a layer: <a id="1"></a>
 1. Toggle **Include Parameter** to parameterise a property. See [this](#parameterisation-options-or-allowed-parameters) to know the property's behaviour after parameterisation.
 1. **Optional:** Rename the parameter name. A parameter name has layer name followed by a suffix. For a selected layer all its parameterized properties share the same layer name followed by a varying suffix. Rename the layer name by following the semantic naming convention so that when you include the parameter in the URL, the parameter name self explains about the layer's content or its purpose.
 1. Click **Save**.
+<img src="/help/assets/assets/dm-templates/parameterise-a-layer.png" alt="resizing" width="484.71" height="304.69">
 ![](/help/assets/assets/dm-templates/parameterise-a-layer.png)
 To switch between the Parameter panel of an image and text layer,  select the layer on the canvas and click **Parameters**.
 
@@ -212,9 +220,9 @@ Execute these steps to preview and publish the template and copy the delivery UR
 
 ### Copy the delivery URL
 
-The selected parameters on the **Preview** page become the URL parameters in the template URL. Update the parameter values in the URL to customize your template. 
+The selected parameters on the **Preview** page become the URL parameters in the template URL.
 
-To copy the URL of the published template displayed in preview:
+To copy the URL of the published template, displayed in preview:
 
 1. Click **Copy URL**. The **Copy URL** dialog box displays. Select and copy the displayed URL. Observe that the first parameter in the URL starts after a question mark **(?)** and a key-value pair starts with **$** and ends with **&**. The key and value are separated by an equals sign **(=)**, with the key on the left and the value on the right. 
 1. Paste this URL in your browser tab and see your live template. Customize the template in real time by updating the required parameter's value (Key's value) in the URL directly as demonstrated in [step 2](#3) of **Preview and Publish** section.  
