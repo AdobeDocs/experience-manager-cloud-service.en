@@ -48,6 +48,15 @@ Turn quickly any Edge Delivery page into a page template. This allows you to sta
 
 Manage your Edge Delivery spreadsheet data (e.g. redirects) efficiently in your favorite spreadsheet tool and upload it to AEM via the new CSV importer. [Read more](/help/edge/wysiwyg-authoring/tabular-data.md#importing).
 
+**Content Fragment Editor Commenting now generally available **
+
+Easily collaborate with coworkers when authoring AEM Content Fragments by using the new and modernized commenting service in the AEM Content Fragment Editor. 
+[Read more](/help/edge/wysiwyg-authoring/tabular-data.md#importing](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring?#commenting-on-your-fragment).
+
+**Content Fragment Editor and Admin User Interfaces, updated AEM as a Cloud Service version support **
+
+Minimum supported AEM as a Cloud Servcie version for new Content Fragment Admin and Editor user interfaces is now 2023.8.13099. Earlier versions from before general avaibility release of the new user interfaces are not supported anymore 
+
 ### Prerelease capabilities in AEM Sites
 
 Enhanced [Content Fragment referencing with unique ID-based references](/help/headless/graphql-api/uuid-reference-upgrade.md), ensuring stable links that remain valid even when assets or fragments are moved, eliminating the need for updates or re-publishing. Current limitation: Page references are not yet supported with unique IDs. If pages are referenced in Content Fragments, this capability should not be used.
