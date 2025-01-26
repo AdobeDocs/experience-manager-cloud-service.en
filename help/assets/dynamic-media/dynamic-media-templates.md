@@ -1,6 +1,6 @@
 ---
-title: Dynamic Media templates
-description: Learn to create a WYSIWYG template that allows customization in real-time enabling dynamic content creation such as banners, flyers and more in no time.
+title: How to manage Dynamic Media templates?
+description: Learn how to create a WYSIWYG Dynamic Media template that allows customization in real-time enabling dynamic content creation such as banners, flyers and more in no time.
 role: User
 ---
 # Dynamic Media templates{#dynamic-media-templates}
@@ -98,10 +98,12 @@ Execute these steps to add text layers to the canvas:
 1. Select the layer and click the text to update it. 
 1. Enable **Smart Text Resize** in the Properties panel to  adjust the text length and font size automatically to fit in the designated area optimally. 
 ![](/help/assets/assets/dm-templates/add-text-layer.png)
+
 See the [Properties panel](#4) to reposition, resize, rotate or delete the layer. Format your text to your desired font, size, color, style, alignment (in the layer) by changing their values in the respective fields under the **Text** section of the panel.
+
    >[!NOTE]
    >
-   > To use a font other than the default one, you need to upload and publish the font file to AEM Assets and Dynamic Media. If you have some old fonts in your instance, ensure to reprocess them to see them in the Template editor.
+   > To use a font other than the default Arial font family, you need to upload and publish the font file to AEM Assets and Dynamic Media. If you have some old fonts in your instance, ensure to [reprocess](/help/assets/reprocessing-assets-view.md) them to see them in the Template editor.
 
 ### Edit or delete a layer {#edit-or-delete-a-layer}
 
