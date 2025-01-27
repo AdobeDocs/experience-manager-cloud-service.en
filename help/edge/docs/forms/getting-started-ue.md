@@ -198,7 +198,7 @@ You can open your AEM Project in the Universal Editor for WYSIWYG authoring, whe
     >
     > It is important to publish your AEM Project page again after making changes; otherwise, the updates are not visible in the browser.
 
-3. Re-publish the AEM Project page. 
+1. Re-publish the AEM Project page. 
 
    1. Click **Publish** to publish the AEM Project page again after adding the form.
 
