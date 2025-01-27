@@ -11,7 +11,7 @@ Learn how to add an external repository into Cloud Manager. Cloud Manager suppor
 
 >[!NOTE]
 >
->This feature is only available to [the early adoption program](/help/implementing/cloud-manager/release-notes/current.md#early-adoption).
+>This feature is only available through the early adoption program. For more details and to sign up as an early adopter, see [Bring Your Own Git - now with support for GitLab and Bitbucket](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md#gitlab-bitbucket).
 
 ## Configure an external repository
 
