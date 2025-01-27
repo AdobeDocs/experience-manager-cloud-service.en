@@ -22,8 +22,14 @@ You need to make a one-time update to the applicable metadata schema in Admin vi
 1. Select the applicable metadata schema and click **[!UICONTROL Edit]**. <br>The **[!UICONTROL Metadata Schema Form Editor]** opens with the **[!UICONTROL Basic]** tab highlighted. 
 1. Scroll down and click **[!UICONTROL Review Status]**.
 1. Click the **[!UICONTROL Rules]** tab on right side panel.
-1. Uncheck **[!UICONTROL Disable edit]** and click **[!UICONTROL Save]**.
+1. Uncheck **[!UICONTROL Disable edit]**.
   If you need to view the property that the **[!UICONTROL Review Status]** field is mapped to, navigate to **[!UICONTROL Settings]** tab and view the `./jcr:content/metadata/dam:status` value in the **[!UICONTROL Map to property]** field.
+1. Drag and drop a **[!UICONTROL Dropdown]** field from the **[!UICONTROL Build Form]** section in right side to Metadata section in the form.
+1. Click the newly added field, and then do the following updates in the **[!UICONTROL Settings]** panel:
+    1. Change the **[!UICONTROL Field Label]** to _Approval Target_.
+    1. Update the **[!UICONTROL Map to property]** to _./jcr:content/metadata/dam:activationTarget_. 
+    1. Add the choices with `contenthub` and `delivery` as option values.
+1. Click **[!UICONTROL Save]**.
 
   >[!NOTE]
   >
@@ -58,7 +64,12 @@ Streamline your workflow by quickly approving multiple assets at once. You can b
     1. Change the **[!UICONTROL Field Label]** to _Approved Assets_.
     1. Update the **[!UICONTROL Map to property]** to _./jcr:content/metadata/dam:status_. 
     1. Change the Default value to _approved_.
-    
+
+1. Drag and drop a **[!UICONTROL Dropdown]** field from the **[!UICONTROL Build Form]** section in right side to Metadata section in the form.
+1. Click the newly added field, and then do the following updates in the **[!UICONTROL Settings]** panel:
+    1. Change the **[!UICONTROL Field Label]** to _Approval Target_.
+    1. Update the **[!UICONTROL Map to property]** to _./jcr:content/metadata/dam:activationTarget_. 
+    1. Add the choices with `contenthub` and `delivery` as option values.    
 1. Click **[!UICONTROL Save]**.
 1. In the **[!UICONTROL Metadata Profiles]** page, select the newly created metadata profile.
 1. Click **[!UICONTROL Apply Metadata Profile to Folder(s)]** from the top action bar.
