@@ -42,20 +42,20 @@ Have a look at the January 2025 Release Overview video for a summary of the feat
 
 **[!DNL Edge Delivery Services] Page templates with Universal Editor authoring**
 
-Turn quickly any Edge Delivery page into a page template. This allows you to start a new page with a pre-defined structure & content instead of a blank page. [Read more](/help/sites-cloud/authoring/universal-editor/templates.md).
+Turn quickly any Edge Delivery page into a page template. This ability lets you start a new page with a pre-defined structure & content instead of a blank page. [Read more](/help/sites-cloud/authoring/universal-editor/templates.md).
 
 **[!DNL Edge Delivery Services] CSV Importer for publishing via an AEM instance**
 
-Manage your Edge Delivery spreadsheet data (e.g. redirects) efficiently in your favorite spreadsheet tool and upload it to AEM via the new CSV importer. [Read more](/help/edge/wysiwyg-authoring/tabular-data.md#importing).
+Manage your Edge Delivery spreadsheet data (for example, redirects) efficiently in your favorite spreadsheet tool and upload it to AEM via the new CSV importer. [Read more](/help/edge/wysiwyg-authoring/tabular-data.md#importing).
 
-**Content Fragment Editor Commenting now generally available **
+**Content Fragment Editor Commenting now generally available**
 
 Easily collaborate with coworkers when authoring AEM Content Fragments by using the new and modernized commenting service in the AEM Content Fragment Editor. 
-[Read more](/help/edge/wysiwyg-authoring/tabular-data.md#importing](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring?#commenting-on-your-fragment).
+[Read more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring?#commenting-on-your-fragment).
 
-**Content Fragment Editor and Admin User Interfaces, updated AEM as a Cloud Service version support **
+**Content Fragment Editor and Admin User Interfaces, updated AEM as a Cloud Service version support**
 
-Minimum supported AEM as a Cloud Servcie version for new Content Fragment Admin and Editor user interfaces is now 2023.8.13099. Earlier versions from before general avaibility release of the new user interfaces are not supported anymore 
+Minimum supported AEM as a Cloud Service version for new Content Fragment Admin and Editor user interfaces is now 2023.8.13099. Earlier versions from before the general availability release of the new user interfaces are not supported anymore 
 
 ### Prerelease capabilities in AEM Sites
 
@@ -65,7 +65,7 @@ Enhanced [Content Fragment referencing with unique ID-based references](/help/he
 
 **AEM REST OpenAPI for Content Fragment Delivery**
 
-The [AEM REST OpenAPI for Content Fragment Delivery](/help/headless/aem-rest-openapi-content-fragment-delivery.md), is available now for AEM as a Cloud Service.
+The [AEM REST OpenAPI for Content Fragment Delivery](/help/headless/aem-rest-openapi-content-fragment-delivery.md) is available now for AEM as a Cloud Service.
 
 ### Deprecated Features {#sites-deprecated}
 
@@ -80,7 +80,7 @@ The preferred editors for managing headless content in AEM are now:
 
 #### PWA Features {#pwa-features}
 
-[The progressive web app (PWA) features](/help/sites-cloud/authoring/sites-console/enable-pwa.md) for AEM Sites has been deprecated for new projects starting with release 2025.1.0. This feature remains supported for existing projects, but should not be used for new projects
+[The progressive web app (PWA) features](/help/sites-cloud/authoring/sites-console/enable-pwa.md) for AEM Sites are now deprecated for new projects starting with release 2025.1.0. This feature remains supported for existing projects, but should not be used for new projects
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -88,15 +88,15 @@ The preferred editors for managing headless content in AEM are now:
 
 **AI-generated video captions** 
 
-AI-generated video captions in Adobe Dynamic Media use artificial intelligence to generate captions automatically for video content. This feature is designed to improve accessibility and enhance the user experience by providing accurate, real-time captions. The AI analyzes the video's audio track to transcribe speech and create captions, which can be edited for accuracy or customization. These captions help meet accessibility requirements and improve video engagement for audiences who rely on or prefer text-based video support. 
-
-To get early access to AI-generated captions support on your Dynamic Media account, [create and submit an Adobe Customer Support case](/help/assets/dynamic-media/video.md##enable-dash).
+AI-generated video captions in Adobe Dynamic Media use artificial intelligence to generate captions automatically for video content. This feature is designed to improve accessibility and enhance the user experience by providing accurate, real-time captions. Captions are generated from the original audio, any additional audio tracks, or extra captions provided in the "Captions and Audio" tab on the video properties page. With support for more than 60 languages, captions can be reviewed and previewed before publishing the video.
 
 **Dynamic Media delivery report**
 
-Get delivery insights for assets delivered with Dynamic Media, with asset level delivery count, referrer information, asset path in AEM Assets and unique asset ID. Reports can be generated for all assets delivered via Dynamic Media for AEM Assets repository or for a specific folder hierarchy in AEM Assets. Insights help measure ROI of assets delivered, measure channel performance, and help take informed asset management tasks for assets.
+Gain delivery insights for assets delivered through Dynamic Media, including asset-level delivery counts, referrer details, asset paths in AEM Assets, and unique asset IDs. Generate reports for all assets in the AEM Assets repository or specific folder hierarchies. These insights let you measure the ROI of delivered assets, evaluate channel performance, and make informed decisions for asset management.
 
-To get early access to Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+**Dynamic Media Multi-audio and caption**
+
+[Multi-caption and multi-audio track support for videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) - You can now easily add multiple captions and multiple audio tracks to a primary video. This capability means that your videos are accessible to a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the captions and audio tracks from a single tab in the user interface.
 
 ### New features in Assets view {#assets-view-new-features}
 
@@ -112,15 +112,15 @@ Assets view now enables you to access Dynamic Media and Dynamic Media with OpenA
 
 * **[Update Adobe Sign scopes easily](/help/forms/adobe-sign-integration-adaptive-forms.md)**: You can modify the scopes of an Adobe Sign configuration directly from the AEM Cloud Configurations page, making it quicker and easier to update existing configurations.
 
-* **[Asynchronous function support for Adaptive Forms](/help/forms/using-async-funct-in-rule-editor.md)**: When your Adaptive Form requires asynchronous operations, such as waiting for external processes or data retrieval, you can implement these operations with custom functions and configure them in the Rule Editor.
+* **[Asynchronous function support for Adaptive Forms](/help/forms/using-async-funct-in-rule-editor.md)**: When your Adaptive Form requires asynchronous operations, such as external processes or data retrieval, you can use custom functions. These functions can then be configured in the Rule Editor to handle the operations efficiently.
 
 ### Pre-release features in AEM Forms {#forms-new-prerelease-features}
 
-* **Manage Publication**: You can use the Manage Publication workflow to publish or unpublish forms across environments, typically from the author instance to the publish and preview instance(s). It allows users to publish, unpublish, or schedule the publication of content in a streamlined manner.
+* **Manage Publication**: You can use the "Manage Publication" workflow to publish or unpublish forms across environments, typically from the author instance to the publish and preview instances. It allows users to publish, unpublish, or schedule the publication of content in a streamlined manner.
 
 * **[Auto-save a draft for Core Components based Adaptive Forms](/help/forms/save-core-component-based-form-as-draft.md)**: Users can now benefit from an auto-save feature that saves a partially completed form as a draft automatically. They can return later to finish filling it out on the same or other device. This feature improves conversion rates for organizations by reducing form abandonment, as users do not need to start over form filling from the beginning.
 
-* **[Rule editor enhancements](/help/forms/invoke-service-enhancements-rule-editor.md)**: For Adaptive Forms based on Core Components, you can now populate dropdown options using the output of Invoke Service, set repeatable panels using the output of Invoke Service, set individual panels using the output of Invoke Service and use the output parameter of Invoke Service to validate other fields. 
+* **[Rule editor enhancements](/help/forms/invoke-service-enhancements-rule-editor.md)**: For Adaptive Forms based on Core Components, you can use the output of Invoke Service to populate drop-down options and set repeatable or individual panels. Additionally, this output can be used to validate other fields. 
 
 * **[Enhance User Experience with Navigation Buttons in Panel Layouts](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button)**: You can now add navigation buttons to your panel layouts, such as Horizontal Tabs, Vertical Tabs, Accordions, or Wizard. These buttons enhance the user experience by simplifying transitions between panels, focusing on the selected panel.
 
@@ -158,7 +158,7 @@ This release notes lists the innovations delivered in the current release. For t
 
 * **[Signature API (Document Assurance)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance)**: A new RESTful API in Communication APIs enables easy management of PDF signatures. It supports operations like:
     * Clear Signature: Removes a signature from a specified field.
-    * Remove Signature Field: Deletes a specified signature field.
+    * Remove Signature Field: Deletes a specified Signature Field.
 
 
 <!-- 
@@ -171,7 +171,7 @@ intuitive and improving the mobile form-filling experience.
 
 ## Automated Forms Conversion Service 
 
-* **[Convert PDF Forms to Core Components based Adaptive Forms](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms)**: You can now use Automated Forms Conversion Service to transform PDF forms, AcroForms, or XFA-based forms into Core Components based Adaptive Forms. 
+* **[Convert PDF Forms to Core Components based Adaptive Forms](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms)**: You can now use the Automated Forms Conversion Service to transform PDF forms, AcroForms, or XFA-based forms into Core Components based Adaptive Forms. 
 
 
 >[!IMPORTANT] 
@@ -189,15 +189,16 @@ intuitive and improving the mobile form-filling experience.
 
 ### Improved Tree Replication Performance (and deprecation of Publish Content Tree Workflow) {#tree-replication-performance}
 
-[Tree Activation Workflow Step](/help/operations/replication.md#tree-activation) is a new workflow model step recommended for replicating deep content hierarchies. Of note, it allows independent replications (e.g., through quick publish or manage publication) to proceed in parallel with the in-progress tree replication workflow. This is particularly useful if you need to publish some time-sensitive content while a bulk replication is still in-progress. Tree Replication Step replaces Publish Content Tree Workflow and its related Workflow Step, which are now deprecated. 
+[Tree Activation Workflow Step](/help/operations/replication.md#tree-activation) is a new workflow model step recommended for replicating deep content hierarchies. Of note, it allows independent replications (for example, through quick publish or manage publication) to proceed in parallel with the in-progress tree replication workflow. This functionality is particularly useful if you need to publish some time-sensitive content while a bulk replication is still in-progress. Tree Replication Step replaces Publish Content Tree Workflow and its related Workflow Step, which are now deprecated. 
 
 ### OpenAPI-based APIs - Early Adopter Program {#open-apis-earlyadopter}
 
-Developers can deeply integrate AEM as Cloud Service features into their own applications and tools. New AEM as a Cloud Service APIs will follow the OpenAPI specification, with a goal of being consistent, well-documented, and user-friendly. Credentials for endpoints requiring authentication will be generated by creating Adobe Developer Console projects.
+Developers can deeply integrate AEM as Cloud Service features into their own applications and tools. New AEM as a Cloud Service APIs follow the OpenAPI specification, with a goal of being consistent, well-documented, and user-friendly. Credentials for endpoints requiring authentication are generated by creating Adobe Developer Console projects.
 
 Learn more about [OpenAPI-based AEM APIs](/help/implementing/developing/open-api-based-apis.md) and try out an [end-to-end tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) illustrating configuration and usage.
 
 Concretely, the API endpoints listed below are available as part of an early adopter program. If interested, email [aem-apis@adobe.com](mailto:aem-apis@adobe.com) describing how you intend to make use of them.
+
 * [Sites Content Fragments APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
 * [Assets APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
 * [Sites and Assets Folders APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/)
@@ -205,7 +206,7 @@ Concretely, the API endpoints listed below are available as part of an early ado
 
 ### Edge Computing - Request for Feedback! {#edge-computing-feedback}
 
-Edge computing brings data processing closer to the browser, which has benefits including reduced latency. As input into the roadmap, we'd love to hear if you'd find this technology useful for AEM Publish Delivery and Edge Delivery Services projects and what you envision using it for. Email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with questions and comments!
+Edge computing brings data processing closer to the browser, which has benefits including reduced latency. Adobe would love to hear if you find this technology useful for AEM Publish Delivery and Edge Delivery Services projects. Additionally, let us know what you envision using it for as input into the product roadmap. Email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with questions and comments!
 
 ### New AEM Developer Console (Public Beta) {#aem-developer-console-beta}
 
