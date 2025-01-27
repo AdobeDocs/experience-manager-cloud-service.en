@@ -1,6 +1,6 @@
 ---
 title: How to manage Dynamic Media templates?
-description: Learn how to create a WYSIWYG Dynamic Media template that allows customization in real-time enabling dynamic content creation such as banners, flyers and more in no time.
+description: Learn how to create Dynamic Media templates using a WYSIWYG template editor and include multiple images and text layers to quickly create banners and flyers and use them in downstream applications.
 role: User
 ---
 # Dynamic Media templates{#dynamic-media-templates}
@@ -105,7 +105,7 @@ See the [Properties panel](#4) to reposition, resize, rotate or delete the layer
 
    >[!NOTE]
    >
-   > To use a font other than the default Arial font family, you need to upload and publish the font file to AEM Assets and Dynamic Media. If you have some old fonts in your instance, ensure to [reprocess](/help/assets/reprocessing-assets-view.md) them to see them in the Template editor.
+   > To use a font other than the default Arial font family, you need to upload and publish the font file to AEM Assets and Dynamic Media. If you have some old fonts in your instance, ensure to [reprocess](/help/assets/reprocessing-assets-view.md) to view them in the Template editor.
 
 ### Edit or delete a layer {#edit-or-delete-a-layer}
 
