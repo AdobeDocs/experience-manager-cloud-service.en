@@ -116,6 +116,8 @@ When running AEM locally with Java 21, the start scripts (`crx-quickstart/bin/st
 
 The following adjustments are required to allow building the project with Java 21 and Java 17. They can be updated even before you are running Java 21 and Java 17 because they are compatible with older Java versions.
 
+AEM Cloud Service customers are recommended to build their projects with Java 21 as early as possible to take advantage of new language features.
+
 * **Minimum version of `bnd-maven-plugin`:**
 Update the usage of `bnd-maven-plugin` to version 6.4.0 to ensure support for newer JVM runtimes. 
 
