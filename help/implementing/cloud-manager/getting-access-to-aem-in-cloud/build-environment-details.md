@@ -112,7 +112,7 @@ When running AEM locally with Java 21, the start scripts (`crx-quickstart/bin/st
 >When `.cloudmanager/java-version` is set to `21` or `17`, the Java 21 runtime is deployed. The Java 21 runtime is scheduled for gradual rollout to all environments (not just those environments whose code is built with Java 11) starting Thursday, February 13, 2025. The rollout will begin with sandboxes and development environments, and then rollout to all production environments in April 2025. Customers who want to adopt the Java 21 runtime *earlier* can contact Adobe at [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
 
 
-#### Build time requirements
+#### Build time requirements {#build-time-reqs}
 
 The following adjustments are required to allow building the project with Java 21 and Java 17. They can be updated even before you are running Java 21 and Java 17 because they are compatible with older Java versions.
 
