@@ -18,7 +18,7 @@ Most of these traffic filter rules are available to all AEM as a Cloud Service S
 
 A subcategory of traffic filter rules requires either an Enhanced Security license or WAF-DDoS Protection license. These powerful rules are known as WAF (Web Application Firewall) traffic filter rules (or WAF rules for short) and have access to the [WAF Flags](#waf-flags-list) described later in this article.
 
-Traffic filter rules can be deployed via Cloud Manager config pipelines to dev, stage, and production environment types. The configuration file can be deployed to Rapid Developement Environments (RDEs) using command line tooling.
+Traffic filter rules can be deployed via Cloud Manager config pipelines to dev, stage, and production environment types. The configuration file can be deployed to Rapid Development Environments (RDEs) using command line tooling.
 
 [Follow through a tutorial](#tutorial) to quickly build concrete expertise on this feature.
 
