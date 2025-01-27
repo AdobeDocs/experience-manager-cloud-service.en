@@ -187,9 +187,15 @@ intuitive and improving the mobile form-filling experience.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Improved Tree Replication Performance (and deprecation of Publish Content Tree Workflow) {#tree-replication-performance}
+### Java 21 support {#java21}
 
-[Tree Activation Workflow Step](/help/operations/replication.md#tree-activation) is a new workflow model step recommended for replicating deep content hierarchies. Of note, it allows independent replications (for example, through quick publish or manage publication) to proceed in parallel with the in-progress tree replication workflow. This functionality is particularly useful if you need to publish some time-sensitive content while a bulk replication is still in-progress. Tree Replication Step replaces Publish Content Tree Workflow and its related Workflow Step, which are now deprecated. 
+You can now build code with Java 21, which includes new features (e.g., pattern matching for switch statements, sealed classes) and performance improvements; Java 17 builds are supported as well. For configuration steps, including updating your Maven project and library versions, see the [Build environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) article.
+
+The more performant Java 21 **runtime** will be automtically deployed when a Java 17 or 21 build is detected. However, we recommend that you opt into the Java 21 runtime for environments built with Java 11, by emailing [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com). Learn about [Java 21 runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
+
+>[!IMPORTANT] 
+>
+> Java 21 **runtime** will be gradually deployed to **all** environments, starting with sandboxes and dev/RDE in February, and then stage/production  in April. 
 
 ### OpenAPI-based APIs - Early Adopter Program {#open-apis-earlyadopter}
 
