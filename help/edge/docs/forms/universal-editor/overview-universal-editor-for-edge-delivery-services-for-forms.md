@@ -1,11 +1,11 @@
 ---
 title: Edge Delivery Services for AEM Forms Overview
-description: Edge Delivery Services for AEM Forms
- built for peak performance, empowering you to envision the future of streamlined data collection and user engagement.
+description: Edge Delivery Services for AEM Forms built for peak performance, empowering you to envision the future of streamlined data collection and user engagement.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: yes
 hidefromtoc: yes
+exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
 ---
 # Universal Editor for Edge Delivery Services for Forms (EDS Forms Block)
  
@@ -390,4 +390,4 @@ To enable the Universal Editor and Rule Editor for your environment or to reques
 </br>
 
 
---> 
+-->
