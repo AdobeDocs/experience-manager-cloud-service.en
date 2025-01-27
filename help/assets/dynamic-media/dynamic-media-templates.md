@@ -50,7 +50,9 @@ To create a DM template, follow these steps:
 Execute these steps to create a blank canvas:
 
 1. Navigate to Assets View and click **Dynamic Media Assets** available in the left panel.
+
 ![](/help/assets/assets/dm-templates/DM-Assets1.png)
+
 1. Click **Create Template** to save the template under Dynamic Media Assets or navigate to a folder and click **Create Template** to save the template within that folder. The **New Template** dialog box displays.
 ![](/help/assets/assets/dm-templates/new-template.png)
 To [create a folder](/help/assets/add-delete-assets-view.md) under **Dynamic Media Assets**, create a folder under **Assets**. The folder tree under **Assets** replicates under **Dynamic Media Assets**. 
