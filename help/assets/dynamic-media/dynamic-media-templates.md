@@ -32,7 +32,7 @@ Some of the key benefits of Dynamic Media templates include:
 To create a Dynamic Media template, you must have:
 
 1. Access to Dynamic Media.
-1. [Sync the images available in your AEM Assets instance with Dynamic Media to use them for creating the template](/help/assets/dynamic-media/config-dm.md).
+1. [Synced the images available in your AEM Assets instance with Dynamic Media to use them for creating the template](/help/assets/dynamic-media/config-dm.md).
 
 ## Create Dynamic Media WYSIWYG template{#how-to-create-dynamic-media-wysiwyg-template}
 
@@ -208,7 +208,7 @@ Execute these steps to preview and publish the template and copy the delivery UR
    ![](/help/assets/assets/dm-templates/preview-publish-copy-delivery-url.png)
    You can also toggle **Include all parameters** to edit all of the displayed parameter values and see the updates in the template preview.
    <br>
-1. To publish the template on the preview page, click Publish and confirm to publish. Publish Complete message displays and the publish status updates to Published.
+1. To publish the template on the preview page, click **Publish** and confirm to publish. Publish Complete message displays and the publish status updates to Published.
 
  >[!NOTE]
  >
