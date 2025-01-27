@@ -140,7 +140,16 @@ To set approval target:
 
 1. In the **[!UICONTROL Basic]** tab, select the asset status from the **[!UICONTROL Status]** drop-down list. The possible values include Approved, Rejected, and No Status (default).
 
-1. If you select **Approved** in step 2, select an approval target. The possible values include Delivery and Content Hub. **Delivery** is the default option selected in the drop-down menu and it publishes the asset to both [Dynamic Media with OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) and [Content Hub](/help/assets/product-overview.md), if both are enabled for Experience Manager Assets. Selecting **Content Hub** publishes the asset just to Content Hub. Content Hub displays as an option only if it is enabled for Experience Manager Assets. For more information on the various available options, see [Default Approval Target and publish destinations for approved assets](#default-approval-target-options-publish-destinations).
+1. If you select **Approved** in step 2, select an approval target. The possible values include Delivery and Content Hub. 
+
+   * **Delivery** is the default option selected in the drop-down menu and it publishes the asset to both [Dynamic Media with OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) and [Content Hub](/help/assets/product-overview.md), if both are enabled for Experience Manager Assets. 
+
+   * Selecting **Content Hub** publishes the asset just to Content Hub. Content Hub displays as an option only if it is enabled for Experience Manager Assets.
+
+   * If you do not select an option from the drop-down list, the default option enabled for your AEM as a Cloud Service environment is automatically applied to the asset.
+
+
+   For more information on the available options, see [Default Approval Target and publish destinations for approved assets](#default-approval-target-options-publish-destinations).
 
    >[!NOTE]
    >
