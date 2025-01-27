@@ -94,11 +94,11 @@ The Java 21 runtime is used for builds with Java 21 and Java 17, and it will gra
 
 Library updates can be applied anytime, as they remain compatible with older Java versions.
 
-* **Minimum version of `org.objectweb.asm`:**
-Update the usage of `org.objectweb.asm` to version 9.5 or higher to ensure support for newer JVM runtimes.
+* **Minimum version of ASM:**
+Update the usage of  the Java package`org.objectweb.asm`, often bundled in `org.ow2.asm.*` artifacts, to version 9.5 or higher to ensure support for newer JVM runtimes.
 
-* **Minimum version of `org.apache.groovy`:**
-Update the usage of `org.apache.groovy` to version 4.0.22 or higher to ensure support for newer JVM runtimes.
+* **Minimum version of Groovy:**
+Update the usage of the Java packages `org.apache.groovy` or `org.codehaus.groovy` to version 4.0.22 or higher to ensure support for newer JVM runtimes.
 
   This bundle can be indirectly included by adding third party dependencies such as the AEM Groovy Console.
 
