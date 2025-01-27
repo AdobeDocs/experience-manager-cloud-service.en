@@ -5,7 +5,6 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: yes
 hidefromtoc: yes
-exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
 ---
 # Universal Editor for Edge Delivery Services for Forms (EDS Forms Block)
  
@@ -144,7 +143,7 @@ The Universal Editor provides the following form components out of the box:
 <table>
   <thead>
     <tr>
-      <th>Lovely</th> 
+      <th></th> 
       <th>Form Components</th>
       <th>Description</th>
     </tr>
