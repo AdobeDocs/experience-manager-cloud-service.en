@@ -125,6 +125,7 @@ To navigate to a layer's properties panel:
 1. Select the layer from the list. 
 
 This panel displays the position of the layer's center point on the canvas plane (X and Y values) and layer's dimensions (width and height) along with text formatting options.
+
 ![](/help/assets/assets/dm-templates/properties-panel.png)
 
 From the properties panel of a layer, select another layer on the canvas to navigate to its properties panel.
