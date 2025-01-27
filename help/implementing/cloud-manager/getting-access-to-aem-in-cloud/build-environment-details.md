@@ -105,7 +105,7 @@ Update the usage of `org.apache.groovy` to version 4.0.22 or higher to ensure su
 * **Edit a runtime parameter:**
 When running AEM locally with Java 21, the start scripts (`crx-quickstart/bin/start` or `crx-quickstart/bin/start.bat`) fail due to the `MaxPermSize` parameter. As a remedy, either remove `-XX:MaxPermSize=256M` from the script or define the environment variable `CQ_JVM_OPTS`, setting it to `-Xmx1024m -Djava.awt.headless=true`.
 
-  Adobe plans to resolve this issue in a future release.
+  This issue is solved in the AEM Cloud Service SDK version 19149 and later.
 
 >[!IMPORTANT]
 >
