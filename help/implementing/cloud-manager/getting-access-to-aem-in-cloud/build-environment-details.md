@@ -102,6 +102,8 @@ Update the usage of the Java packages `org.apache.groovy` or `org.codehaus.groov
 
   This bundle can be indirectly included by adding third party dependencies such as the AEM Groovy Console.
 
+The AEM Cloud Service SDK is compatible with Java 21 and can be used to validate the compatibility of your project with Java 21 before executing a Cloud Manager pipeline.
+
 * **Edit a runtime parameter:**
 When running AEM locally with Java 21, the start scripts (`crx-quickstart/bin/start` or `crx-quickstart/bin/start.bat`) fail due to the `MaxPermSize` parameter. As a remedy, either remove `-XX:MaxPermSize=256M` from the script or define the environment variable `CQ_JVM_OPTS`, setting it to `-Xmx1024m -Djava.awt.headless=true`.
 
