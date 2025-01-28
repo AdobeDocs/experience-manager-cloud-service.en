@@ -88,7 +88,7 @@ The following features might not function correctly when building with Java 21 o
 
 #### Runtime requirements {#runtime-requirements}
 
-The Java 21 runtime is used for builds with Java 21 and Java 17, and it will gradually be applied to Java 11 builds too (see the Note below). To ensure compatibility, the following adjustments are required.
+The Java 21 runtime is used for builds with Java 21 and Java 17, and it will gradually be applied to Java 11 builds too (see the Note below). An environment must be on AEM release 17098 or more recent to receive the Java 21 update. To ensure compatibility, the following adjustments are required.
 
 Library updates can be applied anytime, as they remain compatible with older Java versions.
 
