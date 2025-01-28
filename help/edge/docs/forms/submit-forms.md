@@ -8,14 +8,19 @@ role: Admin, Architect, Developer
 # Set up your Google Sheets or Microsoft Excel files to start accepting data
 
 
-Once you have [created and previewed the form](/help/edge/docs/forms/create-forms.md), it's time to enable the corresponding spreadsheet to start receiving data. You can manually enable the spreadsheet to accept data or use Admin APIs to enable a spreadsheet to accept data.
+Once you have [created and previewed the form](/help/edge/docs/forms/create-forms.md), it's time to enable the corresponding spreadsheet to start receiving data. You can 
+
+* [Manually enable the spreadsheet to accept data](#manually-enable-the-spreadsheet-to-accept-data) 
+* [Use Admin APIs to enable a spreadsheet to accept data](#use-admin-apis-to-enable-a-spreadsheet-to-accept-data)
 
 ![Document-based Authoring  ecosystem](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 
+<!--
+
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
 
-
+--> 
 
 ## Manually enable the spreadsheet to accept data
 
@@ -54,8 +59,8 @@ Once sheet is  set up to receive data, you can [preview the form](/help/edge/doc
  >
  >  Never should the "shared-aem" sheets contain any personally identifiable information or sensitive data that you are not comfortable with being publicly accessible.
 
-<!--
-### Use Admin APIs to enable a spreadsheet to accept data
+
+## Use Admin APIs to enable a spreadsheet to accept data
 
 You can also send a POST request to the form to enable it to accept data and configure headers for the `incoming` sheet. Upon receiving the POST request, the service analyzes the body of request and autonomously generates the essential headers and sheets needed for data ingestion.
 
