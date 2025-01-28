@@ -74,7 +74,11 @@ Streamline your workflow by quickly approving multiple assets at once. You can b
 1. Click the newly added field, and then do the following updates in the **[!UICONTROL Settings]** panel:
     1. Change the **[!UICONTROL Field Label]** to _Approval Target_.
     1. Update the **[!UICONTROL Map to property]** to _./jcr:content/metadata/dam:activationTarget_. 
-    1. Add the choices with `contenthub` and `delivery` as option values.    
+    1. Add the choices with `contenthub` and `delivery` as option values.
+
+    >[!NOTE]
+    >
+    >When you select the approval target as Content Hub using the Assets view, the assets are made available in Content Hub to the users that are part of the same organization. When you select approval target as Delivery, the assets are available to all users.    
 1. Click **[!UICONTROL Save]**.
 1. In the **[!UICONTROL Metadata Profiles]** page, select the newly created metadata profile.
 1. Click **[!UICONTROL Apply Metadata Profile to Folder(s)]** from the top action bar.
