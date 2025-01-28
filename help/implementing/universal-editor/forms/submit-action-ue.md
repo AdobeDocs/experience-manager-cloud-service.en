@@ -4,7 +4,7 @@ title: Submit Actions
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 ---
-# Adaptive Form Submit Action (Universal **Editor)
+# Adaptive Form Submit Action
 
 A Submit Action specifies the destination for the data collected through an Adaptive Form. The submission process begins when the user clicks the **[!UICONTROL Submit]** button on the form. AEM Forms offers two types of submit actions described below, and lets you create and use custom submit actions to meet your specific needs.
 
