@@ -94,7 +94,7 @@ You can also send a **POST** request to the form to update the `incoming` sheet 
 > * Share the `incoming` sheet with the Adobe Experience Manager the `forms@adobe.com` and grant the edit access.
 > * Preview and publish the `incoming` sheet in the sidekick.
 
-To understand how to format the POST request for setting up your sheet, refer to the [API documentation](https://main--afb--adobe.hlx.page/docs/index.html#/paths/~1%7Bid%7D/post). You can look at the example provided below: 
+To understand how to format the POST request for setting up your sheet, refer to the [API documentation](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/). You can look at the example provided below: 
 
 You can use tools like curl or Postman to execute this POST request, as demonstrated below.
 

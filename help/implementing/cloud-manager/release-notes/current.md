@@ -26,15 +26,15 @@ The next planned release is Thursday, February 13, 2025.
 
 * **Code quality rules - SonarQube Server Upgrade:** Cloud Manager Code Quality step will start using SonarQube Server 9.9 with Cloud Manager 2025.2.0 release, scheduled for Thursday, February 13, 2025. 
 
-To prepare, updated SonarQube rules are now available at [Code Quality Rules](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules).
+    To prepare, updated SonarQube rules are now available at [Code Quality Rules](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules).
 
-You can "early check" the new rules by setting the following pipeline text variable: 
+    You can "early check" the new rules by setting the following pipeline text variable: 
 
-`CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
+    `CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
 
-Additionally, set the following variable to ensure the code quality step runs for the same commit (normally skipped for the same `commitId`): 
+    Additionally, set the following variable to ensure the code quality step runs for the same commit (normally skipped for the same `commitId`): 
 
-`CM_DISABLE_BUILD_REUSE` = `true`
+    `CM_DISABLE_BUILD_REUSE` = `true`
 
 ![Variables Configuration page](/help/implementing/cloud-manager/release-notes/assets/variables-config.png)
 
@@ -53,9 +53,40 @@ Additionally, set the following variable to ensure the code quality step runs fo
         * Gradual rollout to all Cloud Manager environments begins in February for sandboxes and development environments and extends to production environments in April.
         * Customers building with Java 11 who wish to adopt the Java 21 runtime *earlier* can contact Adobe at [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
 
-* **"CDN Configurations" renamed to "Domain Mappings":** As part of user interface improvements in AEM Cloud Manager, the label "CDN Configurations" is now renamed to "Domain Mappings" for improved terminology alignment with functionality. <!-- CMGR-64738 -->
+* **"CDN Configurations" renamed to "Domain Mappings" :** As part of user interface improvements in AEM Cloud Manager, the label "CDN Configurations" is now renamed to "Domain Mappings." This change improves terminology alignment with functionality. <!-- CMGR-64738 -->
 
     !["CDN Configurations" renamed to "Domain Mappings" in the user interface](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)
+
+* **Provision an Edge Delivery Site with one click:** Cloud Manager now enables users with the appropriate permissions and licenses to create a sample Edge Delivery Services site with just a single click. This streamlined process offers the following automated functionalities:
+
+  * **GitHub Integration** - Automatically creates a GitHub repository within an existing organization, pre-configured with a boilerplate template for Edge Delivery Services.
+  * **AEM Code Sync App Installation** - Installs the AEM Code Sync application on the repository, ensuring seamless synchronization and deployment.
+  * **Content Collaboration Setup** - Links a designated Google Drive folder for content storage, providing a collaborative environment for content management.
+  * **Content Publishing** - Users can now publish content for provisioned sites directly from the Cloud Manager user interface, simplifying workflows and improving efficiency.
+  * **Enhanced Collaboration** - The platform allows users to add multiple collaborators to the Google Drive content storage folder, facilitating teamwork and content contributions.
+
+  These enhancements aim to improve automation, simplify setup processes, and enhance collaboration for Edge Delivery Services users. <!-- CMGR-59362 -->
+
+    ![Provisioning an Edge Delivery Site](/help/implementing/cloud-manager/release-notes/assets/eds-one-click-60.png)
+
+    ![Provision Edge Delivery site dialog box](/help/implementing/cloud-manager/release-notes/assets/eds-provision-60.png)
+
+* **Enhanced support for Edge Delivery Services sites:** Cloud Manager now supports onboarding for the latest Edge Delivery Services sites. This update includes a comprehensive refactoring of the CDN and delivery stack, resulting in improved robustness and maintainability.
+
+* **Early Adopter program update - PR validation support for Bitbucket and GitLab:** Cloud Manager now supports Pull Request (PR) validation for both Cloud and self-hosted versions of Bitbucket and GitLab. This feature lets customers test their code changes against Adobe's code quality thresholds before merging a PR. By ensuring higher code quality prior to merging, this enhancement significantly improves the success rate of code changes in production pipelines, reducing time to market and streamlining development workflows.
+
+For more information about "Bring Your Own Git" - now with support for GitLab and Bitbucket - and to sign up as an Early Adopter, see [Cloud Manager October 2024 Release Notes](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket).
+
+* **Advanced filtering options for pipelines:** Cloud Manager now features advanced filtering options on the Pipelines page, letting you quickly access relevant data and enhance deployment efficiency. Several of the key features include the following:
+
+    * **Multi-Criteria Filtering:** Refine search results with filters such as pipeline name, environment, and deploy code.
+    * **Streamlined Pipeline Search:** Easily locate specific pipelines for faster navigation and improved workflow management.
+
+    Altogether, these enhancements make managing and deploying pipelines more efficient and user-friendly.
+
+    ![Pipeline filters feature](/help/implementing/cloud-manager/release-notes/assets/pipeline-filters.png)
+
+* **Self-Service CDN Configuration for Edge Delivery Service:** New adopters of Edge Delivery Service can now configure their CDN independently through Cloud Manager. This update extends support from `.hlx.page/live` to the new `.aem.page/live`, providing greater flexibility and streamlined setup for users.
 
 
 <!-- ## Early adoption program {#early-adoption}
