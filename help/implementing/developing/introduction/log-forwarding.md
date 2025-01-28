@@ -19,7 +19,7 @@ Customers with a license with a logging vendor or who host a logging product can
 * HTTPS
 * Splunk
 
-Log forwarding is configured in a self-service manner by declaring a configuration in Git, and deploying it via the Cloud Manager Config Pipeline to RDE, dev, stage, and production environment types in production (non-sandbox) programs.
+Log forwarding is configured in a self-service manner by declaring a configuration in Git, and can be deployed via Cloud Manager config pipelines to dev, stage, and production environment types. The configuration file can be deployed to Rapid Development Environments (RDEs) using command line tooling.
 
 There is an option for the AEM and Apache/Dispatcher logs to be routed through AEM's advanced networking infrastructure, such as dedicated egress IP.
 
