@@ -204,7 +204,7 @@ You can open your AEM Project in the Universal Editor for WYSIWYG authoring, whe
 
         ![publish form](/help/edge/docs/forms/assets/publish-form.png)
 
-   2. The **Publish** confirmation dialog appears on screen, click **Publish** to start publishing.
+   1. The **Publish** confirmation dialog appears on screen, click **Publish** to start publishing.
 
         ![publish form1](/help/edge/docs/forms/assets/publish-form1.png)
 
