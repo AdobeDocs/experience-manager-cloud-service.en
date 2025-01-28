@@ -53,7 +53,7 @@ The next planned release is Thursday, February 13, 2025.
         * Gradual rollout to all Cloud Manager environments begins in February for sandboxes and development environments and extends to production environments in April.
         * Customers building with Java 11 who wish to adopt the Java 21 runtime *earlier* can contact Adobe at [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
 
-* **"CDN Configurations" renamed to "Domain Mappings":** As part of user interface improvements in AEM Cloud Manager, the label "CDN Configurations" is now renamed to "Domain Mappings." This change improves terminology alignment with functionality. <!-- CMGR-64738 -->
+* **"CDN Configurations" renamed to "Domain Mappings" :** As part of user interface improvements in AEM Cloud Manager, the label "CDN Configurations" is now renamed to "Domain Mappings." This change improves terminology alignment with functionality. <!-- CMGR-64738 -->
 
     !["CDN Configurations" renamed to "Domain Mappings" in the user interface](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)
 
@@ -74,6 +74,8 @@ The next planned release is Thursday, February 13, 2025.
 * **Enhanced support for Edge Delivery Services sites:** Cloud Manager now supports onboarding for the latest Edge Delivery Services sites. This update includes a comprehensive refactoring of the CDN and delivery stack, resulting in improved robustness and maintainability.
 
 * **Early Adopter program update - PR validation support for Bitbucket and GitLab:** Cloud Manager now supports Pull Request (PR) validation for both Cloud and self-hosted versions of Bitbucket and GitLab. This feature lets customers test their code changes against Adobe's code quality thresholds before merging a PR. By ensuring higher code quality prior to merging, this enhancement significantly improves the success rate of code changes in production pipelines, reducing time to market and streamlining development workflows.
+
+For more information about "Bring Your Own Git" - now with support for GitLab and Bitbucket - and to sign up as an Early Adopter, see [Cloud Manager October 2024 Release Notes](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket).
 
 * **Advanced filtering options for pipelines:** Cloud Manager now features advanced filtering options on the Pipelines page, letting you quickly access relevant data and enhance deployment efficiency. Several of the key features include the following:
 
