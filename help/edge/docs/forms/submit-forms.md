@@ -22,9 +22,6 @@ Once you have [created and previewed the form](/help/edge/docs/forms/create-form
 
 --> 
 
-You can [configure the Forms Submission Service manually](#configuring-the-forms-submission-service-manually) or [configure the Forms Submission Service using the API](#configuring-the-forms-submission-service-using-api).
-
-
 ## Manually enable the spreadsheet to accept data
 
 To enable the spreadsheet to accept data
