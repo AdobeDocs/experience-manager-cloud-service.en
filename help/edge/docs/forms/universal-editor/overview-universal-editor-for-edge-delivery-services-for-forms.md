@@ -1,11 +1,11 @@
 ---
-title: Edge Delivery Services for AEM Forms Overview
-description: Edge Delivery Services for AEM Forms
- built for peak performance, empowering you to envision the future of streamlined data collection and user engagement.
+title: Universal Editor for Edge Delivery Services for Forms (EDS Forms Block)
+description: Use Universal Editor for Edge Delivery Services for Forms (EDS Forms Block) to create Adaptive Forms.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: yes
 hidefromtoc: yes
+exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
 ---
 # Universal Editor for Edge Delivery Services for Forms (EDS Forms Block)
  
@@ -16,9 +16,7 @@ With the Universal Editor, users can use form elements (like text fields, checkb
 
 The Universal Editor is specifically focused on Edge Delivery Services (EDS). The core strength of the Universal Editor lies in its robust feature set, which includes advanced form creation capabilities, dynamic rule editing, and seamless integration with various data sources. Users can quickly design responsive forms using pre-built components, customizable templates, and an extensive library of form elements.
 
-![Universal Editor](/help/edge/docs/forms/universal-editor/assets/universal-editor.png)
-
- 
+![Universal Editor](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=50%, align-center}
 
  Universal Editor's capabilities are carefully designed to maintain lightweight client-side rendering, cross-browser compatibility, and strict adherence to accessibility standards.
 
@@ -35,17 +33,17 @@ The Universal Editor is specifically focused on Edge Delivery Services (EDS). Th
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/rule-editor.svg" alt="WYSIWYG Interface" alt="Rule Editor">
     <h3>Rule Editor</h3>
-    <p>Design responsive forms that adapt seamlessly across devices. Preview and test designs for desktops, tablets, and mobile using the responsive mode.</p>
+    <p>The rule editor lets users create dynamic form interactions using event-driven rules, instant validation, and error handling via lightweight JavaScript and JSON.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG Interface" alt="Submit Actions">
+    <img src="/help/edge/docs/forms/universal-editor/assets/responsive.svg" alt="WYSIWYG Interface" alt="Responsive Mode">
     <h3>Responsive Mode </h3>
-    <p>Design forms that adapt seamlessly across devices (desktops, tablets, and mobile). Use the responsive mode to preview form for various screen sizes.</p>
+    <p>Design forms that adapt seamlessly across devices (desktops, tablets, and mobile). Use the responsive mode to preview and test forms for various screen sizes.</p>
   </div>
 </div>
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG Interface alt="WYSIWYG Interface"> 
+    <img src="/help/edge/docs/forms/universal-editor/assets/personalization.svg" alt="WYSIWYG Interface alt="WYSIWYG Interface"> 
     <h3>Personalization</h3>
     <p>Personalization uses user data to deliver tailored form experiences, dynamically adjusting content, layout, or options based on user preferences.</p>
   </div>
@@ -55,27 +53,27 @@ The Universal Editor is specifically focused on Edge Delivery Services (EDS). Th
     <p>A/B testing (experimentation) enables organizations to experiment with different form designs, layouts, and features to identify the best-performing variants.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/task-management.svg" alt="WYSIWYG Interface" alt="Submit Actions">
+    <img src="/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg" alt="WYSIWYG Interface" alt="Integration with Adobe Workfront">
     <h3> Task Management </h3>
-    <p>Integration with Adobe Workfront lets teams manage tasks for form creation and maintenance, ensuring seamless collaboration and streamlined workflows.</p>
+    <p>Integration with Adobe Workfront lets teams manage tasks for form creation and maintenance, ensuring streamlined workflows.</p>
   </div>
 </div>
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG Interface" alt="Pre-fill Services">
+    <img src="/help/edge/docs/forms/universal-editor/assets/prefill-services.svg" alt="WYSIWYG Interface" alt="Pre-fill Services">
     <h3>Pre-fill Services</h3>
     <p>Pre-fill Services automatically populate form fields with relevant user data from various sources, reducing manual input and enhancing user experience.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG Interface" alt="Data Binding">
+    <img src="/help/edge/docs/forms/universal-editor/assets/data-binding.svg" alt="WYSIWYG Interface" alt="Data Binding">
     <h3>Data Binding</h3>
-    <p>Data binding enables direct connections between form fields and backend data sources, supporting real-time updates and advanced data mapping.</p>
+    <p>Data binding enables direct connections between form fields and backend data sources, supporting real-time updates and advanced data mapping for structured complaint data storage.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/localization.svg" alt="WYSIWYG Interface" alt="Internationalization/Localization">
+    <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="WYSIWYG Interface" alt="Internationalization/Localization">
     <h3>Publishing/Unpublishing</h3>
-    <p>Easily control the visibility of your forms—publish or unpublish them with just a few clicks to dynamically manage availability, user access, and content updates.</p>
+    <p>Easily control the visibility of your forms—publish or unpublish them with just a few clicks to dynamically manage availability and content updates.</p>
   </div>
 </div>
 
@@ -86,12 +84,12 @@ The Universal Editor is specifically focused on Edge Delivery Services (EDS). Th
     <p>Gain insights into user behavior, form interactions, and submission rates with built-in analytics and tracking to enable data-driven form optimization.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG Interface" alt="Experimentation (A/B Testing)">
+    <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="WYSIWYG Interface" alt="Submit Actions">
     <h3>Submit Actions</h3>
     <p>Submit Actions support backend integration, conditional submission logic, secure endpoints, and pre-processors, streamlining submission workflows.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG Interface" alt="Task Management">
+    <img src="/help/edge/docs/forms/universal-editor/assets/custom-components.svg" alt="WYSIWYG Interface" alt="Task Management">
     <h3>Custom Components</h3>
     <p>Custom components allow developers to extend form capabilities by creating unique elements tailored to specific organizational use cases.</p>
   </div>
@@ -99,17 +97,17 @@ The Universal Editor is specifically focused on Edge Delivery Services (EDS). Th
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG Interface" alt="Editor Customization">
+    <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="WYSIWYG Interface" alt="Editor Customization">
     <h3>Editor Customization</h3>
     <p>Developers can extend the functionality of the Universal Editor through UI extensions, enabling tailored solutions that fit specific organizational needs.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG Interface" alt="Embedding Forms">
+    <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="WYSIWYG Interface" alt="Embedding Forms">
     <h3>Embedding Forms</h3>
     <p>Embed forms directly into Edge Delivery Services Sites pages using the Universal Editor's built-in embed component for a seamless user experience.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG Interface" alt="Custom Components">
+    <img src="/help/edge/docs/forms/universal-editor/assets/thank-you.svg" alt="WYSIWYG Interface" alt="Custom Components">
     <h3>Thank You Configuration</h3>
     <p>Easily customize the acknowledgment message or page shown to users after successful form submission.
     </p>
@@ -146,7 +144,7 @@ The Universal Editor provides the following form components out of the box:
 <table>
   <thead>
     <tr>
-      <th>Lovely</th> 
+      <th></th> 
       <th>Form Components</th>
       <th>Description</th>
     </tr>
@@ -281,7 +279,7 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 
 ## Onboarding
 
-To enable the Universal Editor and Rule Editor for your environment or to request additional features like Forms Portal, Document of Record, Adobe Sign integration, or right-to-left language support, simply email mailto:aem-forms-ea@adobe.com from your official address with your request.
+To enable the Universal Editor and Rule Editor for your environment or to request additional features like Forms Portal, Document of Record, Adobe Sign integration, or right-to-left language support, simply email [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address with your request.
 
 
 
@@ -390,4 +388,4 @@ To enable the Universal Editor and Rule Editor for your environment or to reques
 </br>
 
 
---> 
+-->
