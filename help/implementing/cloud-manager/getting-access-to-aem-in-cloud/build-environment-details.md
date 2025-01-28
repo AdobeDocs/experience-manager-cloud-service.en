@@ -79,6 +79,12 @@ To migrate to building with Java 21 or Java 17, you must first upgrade to the la
 
 When migrating your application to a new Java build version and runtime version, thoroughly test in dev and stage environments before deploying to production.
 
+We recommend the following deployment strategy:
+
+1. Run your local SDK with Java 21, which you can download from https://experience.adobe.com/#/downloads, and deploy your application to it and validate its functionality. Check the logs that there are no errors, which indicate problems with classloading or bytecode weaving.
+1. Configure a branch in your Cloud Manager repository to use Java 21 as buildtime Java version, configure a DEV pipeline to use this branch and run the pipeline. Run your validation tests.
+1. If it looks good, configure your stage/prod pipeline to use Java 21 as buildtime Java version and run the pipeline.
+
 ##### About some translation features {#translation-features}
 
 The following features might not function correctly when building with Java 21 or Java 17, and Adobe expects to resolve them by early 2025:
