@@ -29,6 +29,11 @@ You need to make a one-time update to the applicable metadata schema in Admin vi
     1. Change the **[!UICONTROL Field Label]** to _Approval Target_.
     1. Update the **[!UICONTROL Map to property]** to _./jcr:content/metadata/dam:activationTarget_. 
     1. Add the choices with `contenthub` and `delivery` as option values.
+
+   >[!NOTE]
+   >
+   >When you select the approval target as Content Hub using the Assets view, the assets are made available in Content Hub to the users that are part of the same organization. When you select approval target as Delivery, the assets are available to all users.
+   
 1. Click **[!UICONTROL Save]**.
 
   >[!NOTE]
