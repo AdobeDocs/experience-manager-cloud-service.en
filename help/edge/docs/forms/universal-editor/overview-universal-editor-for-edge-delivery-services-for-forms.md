@@ -5,7 +5,6 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: yes
 hidefromtoc: yes
-exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
 ---
 # Universal Editor for Edge Delivery Services for Forms (EDS Forms Block)
  
@@ -73,7 +72,7 @@ The Universal Editor is specifically focused on Edge Delivery Services (EDS). Th
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="WYSIWYG Interface" alt="Internationalization/Localization">
     <h3>Publishing/Unpublishing</h3>
-    <p>Easily control the visibility of your forms—publish or unpublish them with just a few clicks to dynamically manage availability and content updates.</p>
+    <p>Easily control the visibility of your forms—publish or unpublish them directly from the editor with just a few clicks, allowing you to dynamically manage availability, user access, and content updates in real time, ensuring your forms are always up to date and accessible as needed.</p>
   </div>
 </div>
 
@@ -99,7 +98,7 @@ The Universal Editor is specifically focused on Edge Delivery Services (EDS). Th
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="WYSIWYG Interface" alt="Editor Customization">
     <h3>Editor Customization</h3>
-    <p>Developers can extend the functionality of the Universal Editor through UI extensions, enabling tailored solutions that fit specific organizational needs.</p>
+    <p>Developers can extend the functionality of the editor through UI extensions, enabling tailored solutions that fit specific organizational needs.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="WYSIWYG Interface" alt="Embedding Forms">
