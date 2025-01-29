@@ -84,7 +84,7 @@ The preferred editors for managing headless content in AEM are now:
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New features in Assets view {#assets-view-new-features}
+### New features {#new-features}
 
 **Dynamic Media templates**
 
