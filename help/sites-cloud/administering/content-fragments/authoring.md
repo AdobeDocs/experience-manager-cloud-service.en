@@ -389,6 +389,10 @@ There are some limitations when referencing remote assets:
   
   * get bulk metadata information using the search API (experimental): [https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search)
 
+>[!NOTE]
+>
+>See also [AEM GraphQL API for use with Content Fragments - Dynamic Media for OpenAPI asset support (Remote Assets)](/help/headless/graphql-api/content-fragments.md#dynamic-media-for-openapi-asset-support)
+
 #### Reference Pages {#reference-pages}
 
 To add references to AEM pages, Experience Fragments, or other such content types:
