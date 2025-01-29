@@ -354,7 +354,7 @@ To use the custom function in the Rule Editor:
 
 1. **Add the Function**: Include your custom function in the`../[blocks]/form/functions.js` file. Remember to add it to the `export` statement within the file.
 1. **Deploy the File**: Deploy the updated `functions.js` file to your GitHub project and verify a successful build.
-1. **Function Usage**: Access the function within your form's Rule Editor using the `Function Output`.
+1. **Function Usage**: Access the function within your form's Rule Editor by selecting the `Function Output` option in the **[!UICONTROL Select Action]** field.
 
     ![Custom Function in Rule Editor](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 
