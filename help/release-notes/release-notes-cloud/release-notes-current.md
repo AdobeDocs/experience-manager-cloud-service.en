@@ -84,27 +84,37 @@ The preferred editors for managing headless content in AEM are now:
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
+### New features in Assets view {#assets-view-new-features}
+
+**Dynamic Media templates**
+
+Personalize image and text banners on-the-fly with an easy-to-use WYSIWYG Dynamic Media Template Editor, by embedding the URL in any 1st or 3rd party application, to drive highly engaging experiences with real time banner content updates.
+
+![dynamic renditions](/help/assets/assets/dm-templates-smart-text-resize.png)
+
+**Dynamic Media delivery report**
+
+Gain delivery insights for assets delivered through Dynamic Media, including asset-level delivery counts, referrer details, asset paths in AEM Assets, and unique asset IDs. Generate reports for all assets in the AEM Assets repository or specific folder hierarchies. These insights let you measure the ROI of delivered assets, evaluate channel performance, and make informed decisions for asset management.
+
+**Asset relations**
+
+The Assets View now supports viewing and editing asset relations in a simplified asset Details panel. Easily add relationships like Source and Derivative to content so that uses can more effectively find relevant hero content.
+
+**Reprocess assets**
+
+Assets view now supports reprocessing assets available in a folder. You can select to either use the **Full Process** option or use advanced options, such as, default preview renditions, metadata, post-processing workflow, and processing profile.
+
 ### Early access features in Dynamic Media {#dm-early-access}
 
 **AI-generated video captions** 
 
 AI-generated video captions in Adobe Dynamic Media use artificial intelligence to generate captions automatically for video content. This feature is designed to improve accessibility and enhance the user experience by providing accurate, real-time captions. Captions are generated from the original audio, any additional audio tracks, or extra captions provided in the "Captions and Audio" tab on the video properties page. With support for more than 60 languages, captions can be reviewed and previewed before publishing the video.
 
-**Dynamic Media delivery report**
-
-Gain delivery insights for assets delivered through Dynamic Media, including asset-level delivery counts, referrer details, asset paths in AEM Assets, and unique asset IDs. Generate reports for all assets in the AEM Assets repository or specific folder hierarchies. These insights let you measure the ROI of delivered assets, evaluate channel performance, and make informed decisions for asset management.
-
 **Dynamic Media Multi-audio and caption**
 
 [Multi-caption and multi-audio track support for videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) - You can now easily add multiple captions and multiple audio tracks to a primary video. This capability means that your videos are accessible to a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the captions and audio tracks from a single tab in the user interface.
 
-### New features in Assets view {#assets-view-new-features}
 
-**Dynamic Media panel**
-
-Assets view now enables you to access Dynamic Media and Dynamic Media with OpenAPI renditions from a separate panel made available to you. You can choose to copy the delivery URL or download the renditions based on the asset and rendition type. For more information, see [Dynamic Media renditions](/help/assets/renditions.md#dynamic-media-renditions) and [Dynamic Media with OpenAPI capabilities renditions](/help/assets/renditions.md#dm-with-openapi-renditions).
-
-![dynamic renditions](/help/assets/assets/dm-scene7-renditions.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
