@@ -25,7 +25,7 @@ Some of the key benefits of Dynamic Media templates include:
 * **Ensure Consistent Omnichannel Experiences:** Maintain brand consistency across channels.
 * **Reuse Content Effectively:** Avoid single-use content and scale with dynamic, parameterized templates.
 * **Mitigate Risks:** Update pricing, discounts, and links in real-time.
-* **Enhance Customer Engagement:** Drive interactive, contextually relevant experiences.
+* **Enhance Customer Engagement:** Drive interactive, contextually relevant experiences..
 
 >[!NOTE]
 >
