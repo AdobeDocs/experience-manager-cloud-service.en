@@ -92,7 +92,7 @@ Personalize image and text banners on-the-fly with an easy-to-use WYSIWYG Dynami
 
 ![dynamic renditions](/help/assets/assets/dm-templates-smart-text-resize.png)
 
-**Dynamic Media delivery report**
+**Dynamic Media delivery reports**
 
 Gain delivery insights for assets delivered through Dynamic Media, including asset-level delivery counts, referrer details, asset paths in AEM Assets, and unique asset IDs. Generate reports for all assets in the AEM Assets repository or specific folder hierarchies. These insights let you measure the ROI of delivered assets, evaluate channel performance, and make informed decisions for asset management.
 
