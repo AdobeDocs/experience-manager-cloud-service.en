@@ -1081,7 +1081,7 @@ query allTeams {
 
 ## Dynamic Media for OpenAPI asset support (Remote Assets) {#dynamic-media-for-openapi-asset-support}
 
-[Remote assets](/help/sites-cloud/administering/content-fragments/authoring.md#reference-remote-assets) integration is implemented by Dynamic Media for OpenAPI asset support in Content Fragment Editor and GraphQL JSON.
+[Remote assets](/help/sites-cloud/administering/content-fragments/authoring.md#reference-remote-assets) integration allows you to reference Assets, that are not local to the current AEM instance, from the Content Fragment Editor. It is implemented by Dynamic Media for OpenAPI asset support in Content Fragment Editor and GraphQL JSON.
 
 The following is:
 
