@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
 ---
-# Create an Adaptive Form {#creating-an-adaptive-form-core-components}
+# Create an Adaptive Form (Core Components) {#creating-an-adaptive-form-core-components}
 
 | Version | Article link |
 | -------- | ---------------------------- |
@@ -29,7 +29,7 @@ Before you start, learn about the type of Forms components available to you:
 
 You require the following to create an Adaptive Form:
 
-*   **Enable Adaptive Forms Core Components for your environment**: When you create a program, the Adaptive Forms Core Components already enabled for your environment. If you have a Forms as a Cloud Service environment based on Archetype 39 or earlier, [Enable Adaptive Forms Core Components for your environment](enable-adaptive-forms-core-components.md). On enabling the Core Components for your environment, the **Adaptive Forms (Core Component)** template and canvas theme is added to your environment. If your AEM SDK version older than 2023.02.0, [ensure that you have `prerelease` flag enabled on your environment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#new-features) as Adaptive Forms Core Components were part of pre-prelease before the 2023.02.0 release.   
+*   **Enable Adaptive Forms Core Components for your environment**: When you create a program, the Adaptive Forms Core Components already enabled for your environment. If you have a Forms as a Cloud Service environment based on Archetype 39 or earlier, [Enable Adaptive Forms Core Components for your environment](enable-adaptive-forms-core-components.md). On enabling the Core Components for your environment, the **Adaptive Forms (Core Component)** templates and themes are added to your environment. If your AEM SDK version older than 2023.02.0, [ensure that you have `prerelease` flag enabled on your environment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#new-features) as Adaptive Forms Core Components were part of pre-prelease before the 2023.02.0 release.   
 
 *   **An Adaptive Form template**: A template provides a basic structure and defines appearance (layouts and styles) of an Adaptive Form. It has pre-formatted components containing certain properties and content structure. It also provides the options to define a theme and a submit action. The theme defines the look and feel and submit action defines the action to take on submission of an Adaptive Form. For example, sending the collected data to a data source. The cloud service provides an OOTB template, named blank:
 
@@ -100,6 +100,10 @@ You require the following to create an Adaptive Form:
 1.  Select **[!UICONTROL Create]**. An Adaptive Form is created and opens in the Adaptive Forms editor. The editor displays the contents available in the template.  Based on the type of Adaptive Form, the form elements present in the associated <!--XFA form template, XML schema or --> JSON schema or Form Data Model (FDM) are displayed in the **[!UICONTROL Data Model Objects]** tab of the **[!UICONTROL Content Browser]** in the sidebar. You can also drag-drop these elements to build your Adaptive Form.
 
 Now, you can drag-and-drop the [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) to Adaptive Forms container to design and create the form. You can also visit [https://aemcomponents.dev/](https://aemcomponents.dev/) to view available core components in action.
+
+>[!NOTE]
+>
+> You can also [create Adaptive Forms using XFA form templates (*.XDP files)](/help/forms/create-adaptive-form-using-xfa-templates.md). It enables you to save time by reusing fields from XDP files directly in Adaptive Forms.
 
 ## Configure Submit Action for an Adaptive Form {#configure-submit-action-for-form}
 
@@ -210,6 +214,6 @@ To rename an adaptive form, perform the following steps:
 ## See Also {#see-also}
 
 {{see-also}}
-* [Add dynamic behavior to forms using the rule editor](rule-editor.md)
+* [Add dynamic behavior to forms using the rule editor](/help/forms/rule-editor-core-components.md)
 * [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 

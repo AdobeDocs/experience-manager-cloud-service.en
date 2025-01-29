@@ -15,6 +15,8 @@ The SPA authoring feature offers a comprehensive solution for supporting SPAs wi
 >
 >This article is based on the React framework. For the corresponding document for the Angular framework see [Getting Started with SPAs in AEM - Angular](getting-started-angular.md).
 
+{{ue-over-spa}}
+
 ## Introduction {#introduction}
 
 This article summarizes the basic functioning of a simple SPA and the minimum that you need to know to get yours running.
@@ -60,7 +62,7 @@ The `aem-clientlib-generator` is used to make the creation of client libraries a
 
 `"aem-clientlib-generator": "^1.4.1",`
 
-Further details about it can be found [on GitHub here](https://github.com/wcm-io-frontend/aem-clientlib-generator).
+For further details see [aem-clientlib-generator on GitHub](https://github.com/wcm-io-frontend/aem-clientlib-generator).
 
 The `aem-clientlib-generator` is configured in the `clientlib.config.js` file as follows.
 

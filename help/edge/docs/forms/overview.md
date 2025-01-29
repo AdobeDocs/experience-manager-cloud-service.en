@@ -1,13 +1,15 @@
 ---
-title: AEM Forms Edge Delivery Services Overview
-description: AEM Forms Edge Delivery Services built for peak performance, empowering you to envision the future of streamlined data collection and user engagement.
+title: Edge Delivery Services for AEM Forms Overview
+description: Edge Delivery Services for AEM Forms
+ built for peak performance, empowering you to envision the future of streamlined data collection and user engagement.
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
 ---
-# AEM Forms Edge Delivery Services 
+# Edge Delivery Services for AEM Forms
+ 
 
-AEM Forms Edge Delivery Services is a composable set of services that enables a rapid development environment where authors can update, publish, and launch new forms rapidly. These services deliver exceptional and high impact forms experiences that drive engagement and conversions. These forms experiences are easy to author and develop.
+Edge Delivery Services for AEM Forms is a composable set of services that enables a rapid development environment where authors can update, publish, and launch new forms rapidly. These services deliver exceptional and high impact forms experiences that drive engagement and conversions. These forms experiences are easy to author and develop.
 
 These services enable you to:
 
@@ -15,11 +17,13 @@ These services enable you to:
 
 * **Deliver exceptional Digital Enrolment experiences:** Deliver Digital Enrolment experiences that load and render quickly and continuously monitor your forms performance through real use monitoring (RUM). Faster loading times and optimized user experience contribute to higher form completion and conversion rates. 
 
-* **Use developer friendly toolset:** AEM Forms Edge Delivery Services uses plain HTML, modern CSS, and vanilla JavaScript to create exceptional experiences, avoiding the steep learning curve of a specific framework. A developer with basic web development skills can customize and easily build form components and experiences. There is no need to wait for a pipeline to run, just check-in your code into GitHub and your changes are live.
+* **Use developer friendly toolset:** Edge Delivery Services for AEM Forms
+ uses plain HTML, modern CSS, and vanilla JavaScript to create exceptional experiences, avoiding the steep learning curve of a specific framework. A developer with basic web development skills can customize and easily build form components and experiences. There is no need to wait for a pipeline to run, just check-in your code into GitHub and your changes are live.
 
-## AEM Forms Edge Delivery Services Overview {#edge-overview}
+## Edge Delivery Services for AEM Forms Overview {#edge-overview}
 
-AEM Forms Edge Delivery services  allows for a high degree of flexibility in how you author forms on your website. You can author content and forms with [WYSIWYG Authoring](/help/forms/creating-adaptive-form-core-components.md) as well as [Document-based Authoring](/help/edge/docs/forms/create-forms.md). AEM Forms Edge Delivery Services provide a forms block, known as [Adaptive Forms Block](/help/edge/docs/forms/create-forms.md) to add a form to your Edge Delivery Services site.
+Edge Delivery Services for AEM Forms allows for a high degree of flexibility in how you author forms on your website. You can author content and forms with [WYSIWYG Authoring](/help/forms/creating-adaptive-form-core-components.md) as well as [Document-based Authoring](/help/edge/docs/forms/create-forms.md). Edge Delivery Services for AEM Forms
+ provide a forms block, known as [Adaptive Forms Block](/help/edge/docs/forms/create-forms.md) to add a form to your Edge Delivery Services site.
 
 For example, you author forms directly in Microsoft Excel or Google Sheets and these spreadsheets are transformed into forms for your website. Any new form or form content, such as a new form field, is instantly available on your website without requiring a rebuild process.
 
@@ -27,7 +31,7 @@ The following diagram illustrates how you can edit forms in Microsoft Excel or G
 
 ![Publish to Edge Delivery Services and AEM](/help/edge/docs/forms/assets/AEM-forms-with-EDS-publishing.png)
 
-AEM Forms Edge Delivery Services uses GitHub so customers can manage and deploy code directly from their GitHub repository. For example, you can write forms in either [Google Sheets](/help/edge/docs/forms/create-forms.md) or [Microsoft Excel](/help/edge/docs/forms/create-forms.md) and the components of your forms can be developed by using CSS and JavaScript in a GitHub repository.
+Edge Delivery Services for AEM Forms uses GitHub so customers can manage and deploy code directly from their GitHub repository. For example, you can write forms in either [Google Sheets](/help/edge/docs/forms/create-forms.md) or [Microsoft Excel](/help/edge/docs/forms/create-forms.md) and the components of your forms can be developed by using CSS and JavaScript in a GitHub repository.
 
 When your forms are ready, you can use the [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content), a chrome browser extension, to preview and publish content updates.
 
@@ -80,17 +84,19 @@ In essence, WYSIWYG Authoring (Universal Editor and [Adaptive Forms Editor](/hel
 >
 > The WYSIWYG Authoring capability is available under the early-adopter program. If you are interested, send a quick email from your work address to aem-forms-ea@adobe.com to request access to the capability.
 
-### AEM Forms Edge Delivery Services: Authoring, Publishing, and Submission of Forms  
+### Edge Delivery Services for AEM Forms
+
+: Authoring, Publishing, and Submission of Forms  
 
 The following diagrams illustrate the process of creating, publishing, and submitting forms using Document-based Authoring and WYSIWYG Authoring.
 
-![Document-based Authoring ](/help/edge/assets/document-based-authoring-workflow.png)
+![Document-based Authoring](/help/edge/assets/document-based-authoring-workflow.png)
 
 ![WYSIWYG Authoring](/help/edge/assets/wysiwyg-authoring-workflow.png)
 
 ## Start creating forms
 
-* [Get started with AEM Forms Edge Delivery Services](/help/edge/docs/forms/tutorial.md)
+* [Get started with Edge Delivery Services for AEM Forms](/help/edge/docs/forms/tutorial.md)
 * [Create a form using Google Sheets or Microsoft Excel](/help/edge/docs/forms/create-forms.md)
 * [Set up your Google Sheets or Microsoft Excel files to start accepting data​](/help/edge/docs/forms/submit-forms.md)
 * [Publish your form and start collecting data](/help/edge/docs/forms/publish-forms.md)
@@ -98,7 +104,7 @@ The following diagrams illustrate the process of creating, publishing, and submi
 * [Add repeatable sections to a form​](/help/edge/docs/forms/repeatable-forms.md)
 * [Show a custom thank you message after form submission​](/help/edge/docs/forms/thank-you-page-form.md)
 * [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
-* [Realtime user monitoring](https://www.aem.live/developer/rum#authentication)
+* [Real Use Monitoring](https://www.aem.live/developer/rum#authentication)
 
 <!-- 
 

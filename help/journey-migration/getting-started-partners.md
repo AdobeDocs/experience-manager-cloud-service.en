@@ -14,11 +14,11 @@ role: Admin
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html" text="What's new & different?"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html" text="Introduction to AEM as a Cloud Service."
 
-Adobe Experience Manager (AEM) as a Cloud Service offers a re-architected foundation for Experience Manager, built upon a container-based infrastructure, API-driven development, and guided DevOps process, allowing marketers and developers to always keep ahead of the curve in customer experience management innovations.
+Adobe Experience Manager (AEM) as a Cloud Service offers an updated architecture for Experience Manager. This foundation is built upon a container-based infrastructure, API-driven development, and guided DevOps process. This allows marketers and developers to stay ahead of the curve in customer experience management innovations.
 
-Cloud Service brings together rich out-of-the-box capabilities and extensibility of Adobe Experience Manager with agility of the modern cloud-native architecture enabling brands to meet the ever-evolving consumer demand.
+Cloud Service brings together rich out-of-the-box capabilities and extensibility of Adobe Experience Manager with the agility of the modern cloud-native architecture, enabling brands to meet the ever-evolving consumer demand.
 
-This one-pager outlines the recommended phased approach to transition customers from various Experience Manager deployments to Experience Manager as a Cloud Service and help existing customers deliver connected, continuous experiences on this modern, purpose-built platform for experience management.
+This page outlines the phased approach recommended to transition customers from previous Experience Manager deployments to Experience Manager as a Cloud Service. The new, purpose-built platform helps you deliver connected, continuous experiences.
 
 <!-- It primarily focuses on:
 * Getting Started with Adobe Experience Manager as a Cloud Service
@@ -27,7 +27,7 @@ This one-pager outlines the recommended phased approach to transition customers 
 
 See the diagram below for a general representation of the migration journey.
 
-![image](/help/journey-migration/assets/migration-process.png)
+![General representation of the migration journey](/help/journey-migration/assets/migration-process.png)
 
 ## Getting Started with Adobe Experience Manager as a Cloud Service {#getting-started}
 
@@ -43,9 +43,9 @@ See the diagram below for a general representation of the migration journey.
 
 ### Developing 
 
-The fundamentals of code development are similar in Adobe Experience Manager as a Cloud Service compared to the Adobe Experience Manager On Premise and Managed Services solutions. 
+The fundamentals of code development in Adobe Experience Manager as a Cloud Service are similar to those in the Adobe Experience Manager On Premise and Managed Services solutions. 
 
-Developers write code and test it locally, which is then pushed to remote Adobe Experience Manager as a Cloud Service environments. 
+Developers write code and test it locally, then push it to remote Adobe Experience Manager as a Cloud Service environments. 
 
 See self-help resources about implementation for Experience Manager as a Cloud Service to learn how to customize your Experience Manager as a Cloud Service deployment.
 
@@ -58,11 +58,11 @@ See self-help resources about implementation for Experience Manager as a Cloud S
 
 ### Deploying
 
- Developers write code and test it locally, which is then pushed to remote AEM as a Cloud Service environments. 
+Developers write code and test it locally, then push it to remote AEM as a Cloud Service environments. 
   
-  Cloud Manager, which was an optional content delivery tool for Managed Services, is required. This is now the sole mechanism for deploying code to AEM as a Cloud Service environments.
+Cloud Manager, which was an optional content delivery tool for Managed Services, is now required. It is the sole mechanism for deploying code to AEM as a Cloud Service environments.
 
-  See self-help resources about how to configure and deploy to AEM as a Cloud Service environments.
+See self-help resources about how to configure and deploy to AEM as a Cloud Service environments.
 
 1. [Configure CM Pipelines](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html)
       * Production Pipeline
@@ -112,13 +112,17 @@ For a successful and smooth transition, you should ensure proper planning and ad
 
 The figure below shows a high-level representation of the recommended transition journey to Cloud Service.
 
-![image](/help/journey-migration/assets/home-img1.png)
+![High-level representation of the recommended transition journey to Cloud Service](/help/journey-migration/assets/home-img1.png)
 
 <br>
 
 ### Planning
 
-Before beginning your transition journey to Cloud Service, you should familiarize yourself with Experience Manager as a Cloud Service and review the notable changes that have been made to it and also review the features that have been replaced or deprecated.
+Before beginning your transition journey to Cloud Service, you should:
+
+* familiarize yourself with Experience Manager as a Cloud Service
+* review the notable changes that have been made to it 
+* review the features that have been replaced or deprecated
 
 <table>
 <tr>

@@ -11,6 +11,9 @@ exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 
 <!-- Need review information from gklebus -->
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 Adobe Experience Manager Assets as a [!DNL Cloud Service] offers a cloud-native, PaaS solution for businesses to not only perform their Digital Asset Management and Dynamic Media operations with speed and impact, but also use next-generation smart capabilities, such as AI/ML, from within a system that is always current, always available, and always learning.
 
 Concurrent ingestion of many assets or complex assets is resource-intensive task for an Experience Manager Author instance. The primary instance consumes considerable CPU, memory, and I/O resources when assets are added, processed, or even migrated. Such performance issues impact authoring and browsing experience of end users.

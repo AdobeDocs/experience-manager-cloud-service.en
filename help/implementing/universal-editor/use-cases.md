@@ -57,19 +57,22 @@ The power of the Universal Editor is its ability to author any content in-place,
 The Universal Editor works in the following way.
 
 1. A developer instruments the app or page to use the Universal Editor. This instrumentation tells the editor what content is editable and how to persist it.
-   * For WYSIWYG authoring, pages created using the boilerplate template are automatically instrumented.
+   * If you follow the [Developer Getting Started Guide for WYSIWYG Authoring with Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) documentation, your pages are automatically instrumented.
    * For headless authoring, your app can be easily instrumented.
 1. The content author load the Universal Editor, which in turn loads your page for editing. Because it is instrumented, it knows which content is editable and how it is to be represented and persisted.
 1. The content author edits the page content in an intuitive WYSIWYG interface, editing in-place.
-1. The Universal Editor persists the changes automatically back to AEM.
+1. The Universal Editor persists the changes automatically back to the data source.
 
 If you would like to learn more about the architecture of the Universal Editor, please see the document [Universal Editor Architecture.](/help/implementing/universal-editor/architecture.md)
 
 ## Universal Editor Concepts {#concepts}
 
-For a page or app to be editable by the Universal Editor, it must be properly instrumented. Once instrumented, it can be further adapted to your project needs.
+For a page or app to be editable by the Universal Editor, it must be properly instrumented.
 
 * [Attributes and Types](/help/implementing/universal-editor/attributes-types.md) - In order for an app or page to be editable by the Universal Editor, it must be properly instrumented. This includes including the proper metadata so the editor can edit the content of the app. 
-* [Model Definitions, Fields, and Component Types](/help/implementing/universal-editor/field-types.md) - Once the metadata is present to enable editing of a component, you define what fields and component types they can manipulate in the properties rail of the editor. You do this by creating a model and linking to that from the component.
-* [Customizing the Universal Editor Authoring Experience](/help/implementing/universal-editor/customizing.md) - Once the app or page is fully-instrumented, the Universal Editor experience can be further adapted by filtering the available components, or extending the functionality of the editor.
-* [Universal Editor Events](/help/implementing/universal-editor/events.md) - You can further customize your app by reacting to standard events that the Universal Sends on changes to the content and the UI.
+* [Model Definitions, Fields, and Component Types](/help/implementing/universal-editor/field-types.md) - Once the metadata is present to enable editing of a component, you define what fields and component types they can manipulate in the properties panel of the editor.
+* [Universal Editor Events](/help/implementing/universal-editor/events.md) - You can further customize your app by enhancing the editing experience in your app by consuming events the Universal Editor emits on content or UI interactions.
+
+The Universal editor can also be adapted to your project needs.
+
+* [Customizing the Universal Editor Authoring Experience](/help/implementing/universal-editor/customizing.md) - The Universal Editor experience can be adapted by filtering various aspects of the editor or by extending the functionality of the editor.

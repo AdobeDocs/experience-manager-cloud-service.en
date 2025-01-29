@@ -77,16 +77,6 @@ See:
 * [Caching your persisted queries](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries)
 * [Managing cache for your persisted queries](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
 
-#### Use AEM GraphQL pre-caching {#use-aem-graphql-pre-caching}
-
-**Recommendation**
-
-This capability allows AEM to further cache content within the scope of GraphQL queries that can then be assembled as blocks in JSON output rather than line by line. 
-
-**Further Reference**
-
-Contact Adobe to enable this capability for your AEM Cloud Service program and environments. 
-
 ### GraphQL Query optimization {#graphql-query-optimization}
 
 On an AEM instance with a high number of Content Fragments that share the same model, GraphQL list queries can become costly (in terms of resources).

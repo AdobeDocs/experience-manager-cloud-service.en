@@ -12,7 +12,7 @@ Once your page is created in the [**Sites** console,](/help/sites-cloud/authorin
 
 >[!NOTE]
 >
->When editing a page in the [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) the console will open the editor appropriate to the page's [template:](/help/sites-cloud/authoring/sites-console/templates.md) either the page editor described in this document, or the [Universal Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
+>When editing a page in the [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) the console will open the editor appropriate to the page's [template:](/help/sites-cloud/authoring/page-editor/templates.md) either the page editor described in this document, or the [Universal Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ This provides access to detailed page information including page details and act
 * [Lock Page](/help/sites-cloud/authoring/page-editor/introduction.md#locking-unlocking)
 * [Publish Page](/help/sites-cloud/authoring/sites-console/publishing-pages.md#publishing-pages-1)
 * [Unpublish Page](/help/sites-cloud/authoring/sites-console/publishing-pages.md#unpublishing-pages)
-* [Edit Template](/help/sites-cloud/authoring/sites-console/templates.md)
+* [Edit Template](/help/sites-cloud/authoring/page-editor/templates.md)
 * [View as Published](/help/sites-cloud/authoring/page-editor/introduction.md#view-as-published)
 * [View in Admin](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)
 * [Help](/help/sites-cloud/authoring/basic-handling.md#accessing-help)

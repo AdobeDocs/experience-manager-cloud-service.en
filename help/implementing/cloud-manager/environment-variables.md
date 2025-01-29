@@ -1,129 +1,138 @@
 ---
-title: Cloud Manager Environment Variables
-description: Standard environment variables can be configured and managed via Cloud Manager and be provided to the run time environment, to be used in OSGi configuration.
+title: Environment Variables in Cloud Manager
+description: Standard environment variables can be configured and managed through Cloud Manager and be provided to the run time environment, for use in OSGi configurations.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 ---
 
-# Cloud Manager Environment Variables {#environment-variables}
+# Environment variables in Cloud Manager {#environment-variables}
 
-Standard environment variables can be configured and managed via Cloud Manager. They are provided to the run time environment and can be used in OSGi configurations. Environment variables can be either environment-specific values or environment secrets, based on what is being changed.
+Standard environment variables can be configured and managed via Cloud Manager. They are provided to the run time environment and can be used in OSGi configurations. 
 
-## Overview {#overview}
+Environment variables can be either environment-specific values or environment secrets, based on what is being changed.
 
-Environment variables offer a host of benefits to users of AEM as a Cloud Service:
+## About environment variables {#overview}
 
-* They allow the behavior of your code and application to vary based on context and environment. For example, they can used to enable different configurations on the development environment compared to the production or stage environments to avoid costly mistakes.
+Environment variables offer a host of benefits to users of AEM as a Cloud Service such as the following:
+
+* They allow the behavior of your code and application to vary based on context and environment. For example, they can be used to enable different configurations in the development environment compared to the production or stage environments to avoid costly mistakes.
 * They only need to be configured and setup once and can be updated and deleted when necessary.
 * Their values can be updated at any point in time and take effect immediately without the need for any code changes or deployments.
 * They can separate code from configuration and remove the need to include sensitive information in version control.
 * They improve the security of the AEM as a Cloud Service application since they live outside of the code.
 
-Typical use cases for using environment variables include:
+Typical use cases for using environment variables include the following:
 
 * Connecting your AEM application with different external endpoints
 * Using a reference when storing passwords instead of directly in the code base
 * When multiple development environments exist in a program and some configuration differs from one environment to the next
 
-## Adding Environment Variables {#add-variables}
+## Add an environment variable {#add-variables}
 
->[!NOTE]
->
->You must be a member of the [**Deployment Manager** role](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) to add or modify environment variables.
+If you want to add multiple variables, Adobe recommends that you add the first variable, then use ![Add icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg ) **Add** in the **Environment Configuration** dialog to add the additional variables. This method means you can add them with one update to the environment.
 
-1. Log into Adobe Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+To add, update, or delete environment variables, you must be a member of the [**Deployment Manager** role](/help/onboarding/cloud-manager-introduction.md#role-based-premissions).
+
+**To add an environment variable:**
+
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the one you want to manage.
-1. From the side navigation bar, select the **Environments** window for the chosen program then select the environment for which you want to create an environment variable.
-1. Within the detail of the environment, select the **Configuration** tab then select **Add** to open the **Environment Configuration** dialog. 
-   * If you are adding an environment variable for the first time, you can see an **Add Configuration** button in the center of the page. You can use this button or **Add** to open the **Environment Configuration** dialog.
+1. From the side menu, click **Environments**.
+1. On the **Environments** page, select a row in the table that has the environment for which you want to add an environment variable.
+1. On the environment's detail page, click the **Configuration** tab.
+1. Click ![Add/Update - Add circle icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Add / Update**.
+   If you are adding an environment variable for the first time, click **Add Configuration** in the center of the page.
 
-   ![Configuration tab](assets/configuration-tab.png)
+      ![Configuration tab](assets/configuration-tab.png)
 
-1. Enter the variable details.
-   * **Name**
-   * **Value**
-   * **Service Applied** - Defines for which service (Author/Publish/Preview) the variable applies or if it applies to all services
-   * **Type** - Defines if the variable is normal variable or a secret
+1. In the **Environment Configuration** dialog box, enter the details in the first row of the table.
+
+   | Field | Description |
+   | --- | --- |
+   | Name | A unique name of the configuration variable. It identifies the specific variable that is used in the environment. It must adhere to the following naming conventions:<ul><li>Variables can only contain alphanumeric characters and the underscore (`_`).</li><li>There is a limit of 200 variables per environment.</li><li>Each name must be 100 characters or less.</li></ul> |
+   | Value | The value that the variable holds. |
+   | Step Applied | Select which service to which the variable applies. Select **All** to have the variable applied to all services.<ul><li>**All**</li><li>**Author**</li><li>**Publish**</li><li>**Preview**</li></ul> |
+   | Type | Select if the variable is normal or a secret. |
 
    ![Adding a variable](assets/add-variable.png)
 
-1. After you enter your new variable, you must select **Add** in the last column of the row containing the new variable.
-   * You can enter multiple variables at once by entering a new line and selecting **Add**.
+1. Click ![Add icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg )**Add**.
 
-   ![Save variables](assets/save-variables.png)
+   Add additional variables as needed.
 
-1. Select **Save** to persist your variables.
+1. Click **Save**.
 
-An indicator with the status **Updating** is shown at the top of the table and next to the newly added variable to indicate that the environment is being updated with the configuration. After completion, the new environment variable is visible in the table.
+   A spinner with the status **Updating** is shown in the upper-right corner of the table. A spinner also appears to the left of any newly added variables. These statuses indicate that the environment is being updated with the configuration. After completion, the new environment variable is visible in the table.
 
 ![Updating variables](assets/updating-variables.png)
 
->[!TIP]
->
->If you want to add multiple variables, it is recommended to add the first variable, then use the **Add** button in the **Environment Configuration** dialog to add the additional variables. This way you can add them with one update to the environment.
+## Update an environment variable {#update-variables}
 
-## Updating Environment Variables {#update-variables}
+After you have created environment variables, you can update them using ![Add/Update - Add circle icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Add / Update** to open the **Environment Configuration** dialog box.
 
-After you have created environment variables, you can update them using the **Add/Update** button to launch the **Environment Configuration** dialog.
+If you want to update multiple variables, Adobe recommends that you use the **Environment Configuration** dialog box to update all necessary variables at once before clicking **Save**. This way you can add them with one update to the environment.
 
-1. Log into Adobe Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
-1. Cloud Manager lists the various programs available. Select the one you want to manage.
-1. In the navigation panel, select the **Environments** window for the chosen program then select the environment for which you want to modify an environment variable.
-1. Within the detail of the environment, select the **Configuration** tab then select **Add/update** in the top right to open the **Environment Configuration** dialog.
-1. Using the ellipsis button in the last column of the row of the variable you want to modify, select **Edit** or **Delete**. 
+**To update an environment variable:**
+
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the one you want to manage.
+1. From the side menu, click **Environments**.
+1. On the **Environments** page, select a row in the table that has the environment for which you want to update a variable.
+1. On the environment's detail page, click the **Configuration** tab.
+1. Click ![Add/Update - Add circle icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Add / Update**.
+1. In the **Environment Configuration** dialog box, click ![Ellipsis - More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) in the last column of the row of the variable you want to change.
+1. In the drop-down menu, click **Edit**. 
 
    ![Edit or delete variable](assets/edit-delete-variable.png)
 
-1. Edit the environment variable as necessary.
-   * When editing, the ellipsis button will change to options to revert back to the original value or confirm your change.
-   * When editing secrets, the values can only be updated, not viewed.
+1. Update the value of the environment variable as necessary.
+   When editing a secret, the value can only be updated, not viewed.
 
    ![Edit variable](assets/edit-variable.png)
 
-1. After you have made the required configuration changes, select **Save**.
+1. Do one of the following:
 
-[As when adding variables,](#add-variables) an indicator with the status **Updating** is shown at the top of the table and next to the newly updated variable(s) to indicate that the environment is being updated with the configuration. After completion, the updated environment variables are visible in the table.
+   * Click ![Apply - Checkmark icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg) to apply the change.
+   * Click ![Undo icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Undo_18_N.svg) to undo the change.
 
->[!TIP]
->
->If you want to update multiple variables, it is recommended to use the **Environment Configuration** dialog to update all necessary variables at once before tapping or clicking **Save**. This way you can add them with one update to the environment.
+1. Click **Save**.
 
-## Using Environment Variables {#using}
+   A spinner with the status **Updating** is shown in the upper-right corner of the table. A spinner also appears to the left of any updated variables. These statuses indicate that the environment is being updated with the configuration. After completion, the updated environment variable is visible in the table.
+
+## Delete an environment variable {#delete-env-variable}
+
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the one you want to manage.
+1. From the side menu, click **Environments**.
+1. On the **Environments** page, select a row in the table that has the environment for which you want to update a variable.
+1. On the environment's detail page, click the **Configuration** tab.
+1. Click ![Add/Update - Add circle icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Add / Update**.
+1. In the **Environment Configuration** dialog box, click ![Ellipsis - More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) in the last column of the row of the variable you want to change.
+1. In the drop-down menu, click **Delete** to remove the variable immediately. 
+1. Click **Save**.
+
+## Use of environment variables {#using}
 
 Environment variables can make your `pom.xml` configurations more secure and flexible. For example, passwords needn't be hard coded and your configuration can adapt based on the values in environment variables.
 
-You can access environment variables and secrets via XML as follows.
+You can access environment variables and secrets by way of XML as follows:
 
-* `${env.VARIABLE_NAME}`
+`${env.VARIABLE_NAME}`
 
-See the document [Setting Up Project](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories) for an example of how to use both types of variables in a `pom.xml` file.
+See [Setting Up Project](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories) for an example of how to use both types of variables in a `pom.xml` file.
 
-See the [official Maven documentation](https://maven.apache.org/settings.html#quick-overview) for more details.
+See also the [official Maven documentation](https://maven.apache.org/settings.html#quick-overview) for more details.
 
-## Environment Variable Availability {#availability}
+## Availability of environment variables {#availability}
 
-Environment variables can be used in several places.
+Environment variables can be used in several places as follows:
 
-### Author, Preview, and Publish {#author-preview-publish}
+| Where environment variables can be used | Description | 
+| --- | --- |
+| Author, Preview, and Publish  | Both regular environment variables and secrets can be used in the authoring, preview, and publishing environments. |
+| Dispatcher | Only regular environment variables can be used with [the Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/dispatcher).<ul><li>Secrets cannot be used.</li><li>Environment variables cannot be used in `IfDefine` directives.</li><li>Validate your use of environment variables with the [Dispatcher locally](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools) before deploying.</li></ul> |
+| OSGi configurations | Both regular environment variables and secrets can be used in [OSGi Configurations](/help/implementing/deploying/configuring-osgi.md). |
+| Pipeline Variables | In addition to environment variables, there are also pipeline variables, which are exposed during the build phase. Learn more about pipeline variables in [Build Environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables). |
 
-Both regular environment variables and secrets can be used in the authoring, preview, and publishing environments.
-
-### Dispatcher {#dispatcher}
-
-Only regular environment variables can be used with [the dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) Secrets cannot be used.
-
-However environment variables cannot be used in `IfDefine` directives.
-
->[!TIP]
->
->You should validate your use of environment variables with the [dispatcher locally](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) before deploying.
-
-### OSGi Configurations {#osgi}
-
-Both regular environment variables and secrets can be used in [OSGi configurations](/help/implementing/deploying/configuring-osgi.md).
-
-### Pipeline Variables {#pipeline}
-
-In addition to environment variables, there are also pipeline variables, which are exposed during the build phase. [Learn more about pipeline variables here](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables).

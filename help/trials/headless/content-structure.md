@@ -76,7 +76,7 @@ You already have a field for the title of the adventure. Now you must add fields
 
 >[!TIP]
 >
->The **Adventure** model is based on the WKND sample site for AEM. You can [visit the site here](https://wknd.site/us/en/adventures/yosemite-backpacking.html) to see content that uses the **Adventure** model.
+>The **Adventure** model is based on the WKND sample site for AEM. You can [visit the WKND site here](https://wknd.site/us/en/adventures/yosemite-backpacking.html) to see content that uses the **Adventure** model.
 
 Follow the same steps as above to add these additional fields. The only difference is the properties that you must set.
 
@@ -84,6 +84,7 @@ Follow the same steps as above to add these additional fields. The only differen
 
    * **Render As:** **Text Area** - When you create an adventure, this field stores a brief description of the trip.
    * **Field Label:** `Description` - The label that is displayed for this field when creating an adventure.
+   * **Default Type**: **Plain Text** - The format required for this example.
 
 1. Add a field so you can store the price of the adventure by dragging and dropping a **Single line text** field and enter the following properties:
 

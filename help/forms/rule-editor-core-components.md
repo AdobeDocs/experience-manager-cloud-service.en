@@ -86,8 +86,6 @@ While you can achieve most of the use cases by using any rule construct, here ar
 * The condition in the When rule is evaluated when a user changes the value of the object on which the When rule is applied. However, if you want the action to trigger when the value changes on the server side, like for prepopulating the value, it is recommended to write a When rule that triggers the action when the field is initialized.
 * When writing rules for drop-downs, radio buttons, or check boxes objects, the options or values of these form objects in the form are pre-populated in the rule editor.
 
-## Next Step
-
 To understand how to use the user interface for writing and managing rules in a Rule Editor,  refer to the [Rule Editor User Interface for Adaptive Forms based on Core Components](/help/forms/rule-editor-core-components-user-interface.md) article.
 
 ## See Also

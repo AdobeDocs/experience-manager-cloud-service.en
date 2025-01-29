@@ -35,7 +35,7 @@ Follow the steps below to extract your migration set from the Content Transfer T
 
 1. This brings up the Extraction dialog. Click **Extract** to start the extraction phase.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14b.png) 
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14c.png) 
 
    >[!NOTE]
    >You can optionally overwrite the staging container during the extraction phase. If **Overwrite staging container** is disabled, it can speed up extractions for subsequent migrations where the content paths or include versions settings have not changed. However, if the content paths or include versions settings have changed, then **Overwrite staging container** should be enabled.

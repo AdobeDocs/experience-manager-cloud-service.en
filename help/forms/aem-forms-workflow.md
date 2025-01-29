@@ -4,8 +4,12 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: Use AEM Forms Workflow to automate and rapidly build business process workflows. For example, review and approval, PDF Generation, Adobe Sign workflows.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
+feature: Adaptive Forms
+role: User, Developer
+hide: yes
+hidefromtoc: yes
+exl-id: f0fec4a9-b214-4931-bf09-5898b082481e
 ---
-
 # Forms-centric workflow on OSGi {#forms-centric-workflow-on-osgi}
 
  ![Hero Image](do-not-localize/header.png)
@@ -191,7 +195,7 @@ You can launch or trigger a Forms-centric workflow by:
 
 ### Submitting an application from AEM Inbox {#inbox}
 
-The workflow application you created is available as an application in Inbox. Users who are members of [!DNL workflow-users] group can fill and submit the application that triggers the associated workflow. For information about using AEM Inbox to submit applications and manage tasks, see [Manage Forms applications and tasks in AEM Inbox](manage-applications-/help/sites-cloud/authoring/inbox.md).
+The workflow application you created is available as an application in Inbox. Users who are members of [!DNL workflow-users] group can fill and submit the application that triggers the associated workflow. 
 
 <!-- ### Submitting an application from [!DNL AEM Forms] App {#afa}
 
@@ -264,9 +268,3 @@ You can use the Assign Task and Send Email steps of AEM Workflows to send an ema
 ### Purge workflow instances {#purge-workflow-instances}
 
 Minimizing the number of workflow instances increases the performance of the workflow engine, so you can regularly purge completed or running workflow instances from the repository. For detailed information see, [Regular Purging of Workflow Instances](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html) purging of workflow instances
-
-
->[!MORELIKETHIS]
->
->* [Use AEM translation workflow to localize Adaptive Forms and Document of Record](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms.md)
->* [Variables in Forms-centric AEM Workflows](/help/forms/variable-in-aem-workflows.md)

@@ -100,36 +100,59 @@ The content fragment model effectively defines the structure of the resulting co
 A selection of data types is available for defining your model:
 
 * **Single line text**
-  * Add one, or more, fields of a single line of text; the maximum length can be defined
+  * Add a field for a single line of text; the maximum length can be defined
+  * The field can be configured to allow fragment authors to create new instances of the field  
+
 * **Multi line text**
-  * A text area that can be Rich Text, Plain Text or Markdown
+  * A text area that can be Rich Text, Plain Text, or Markdown
+  * The field can be configured to allow fragment authors to create new instances of the field  
+
+  >[!NOTE]
+  >
+  >Whether the text area is Rich Text, Plain Text, or Markdown, is defined in the model by the property **Default Type**. 
+  >
+  >This format cannot be changed from the [Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md), but only from the Model.
+
 * **Number**
-  * Add one, or more, numerical fields
+  * Add a numerical field
+  * The field can be configured to allow fragment authors to create new instances of the field  
+
 * **Boolean**
   * Add a boolean checkbox
+
 * **Date and time**
-  * Add a date and/or time
+  * Add a date and/or time field
+
 * **Enumeration**
-  * Add a set of checkbox, radio buttons, or drop-down list fields
+  * Add a set of Checkbox, Radio Button, or Dropdown fields
+    * You can specify the options available to the fragment author
+
 * **Tags**
   * Allows fragment authors to access and select areas of tags
+
 * **Content Reference**
   * References other content, of any type; can be used to [create nested content](#using-references-to-form-nested-content)
   * If an image is referenced, you can opt to show a thumbnail
+  * The field can be configured to allow fragment authors to create new instances of the field  
+
 * **Fragment Reference**
-  * References other content fragments; can be used to [create nested content](#using-references-to-form-nested-content)
-  * The data type can be configured to allow fragment authors to:
-    * Edit the referenced fragment directly.
-    * Create a new content fragment, based on the appropriate model  
+  * References other Content Fragments; can be used to [create nested content](#using-references-to-form-nested-content)
+  * The field can be configured to allow fragment authors to:
+    * Edit the referenced fragment directly
+    * Create a new Content Fragment, based on the appropriate model 
+    * Create new instances of the field 
+
 * **JSON Object**
-  * Allows the content fragment author to enter JSON syntax into the corresponding elements of a fragment. 
+  * Allows the Content Fragment author to enter JSON syntax into the corresponding elements of a fragment. 
     * To allow AEM to store direct JSON that you have copy/pasted from another service.
     * The JSON is passed through, and output as JSON in GraphQL.
-    * Includes JSON syntax-highlighting, auto-complete and error-highlighting in the content fragment editor.
+    * Includes JSON syntax-highlighting, auto-complete, and error-highlighting in the Content Fragment editor.
+
 * **Tab Placeholder**
   * Allows the introduction of tabs for use when editing the Content Fragment content.
-    This is shown as a divider in the model editor, separating sections of the list of content data types. Each instance represents the start of a new tab.
-    In the fragment editor each instance will appear as a tab.
+    * These are shown as dividers in the model editor, separating sections of the list of content data types. Each instance represents the start of a new tab.
+    * In the fragment editor each instance appears as a tab.
+
     >[!NOTE]
     >
     >This data type is purely used for formatting, it is ignored by the AEM GraphQL schema.
@@ -380,7 +403,7 @@ To implement content governance, you can configure **Policies** on Assets folder
 
 >[!NOTE]
 >
->The mechanism is similar to [allowing page templates](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author) for a page, and its children, in advanced properties of a page. 
+>The mechanism is similar to [allowing page templates](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author) for a page, and its children, in advanced properties of a page. 
 
 To configure the **Policies** for **Allowed Content Fragment Models**:
 

@@ -11,11 +11,12 @@ exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
 The article provides the detailed examples of custom functions for an Adaptive Form based on core components, offering valuable insights into their effective implementation across various scenarios. Custom functions are used in the rule editor of an AEM Forms, enable developers to define and control the logic that governs form behavior. 
 This article explores different implementations of custom functions, showcasing how they can be used to tailor forms to meet specific requirements and enhance overall functionality.
 
-## Set the dropdown list options using custom functions
+## Populate the dropdown list options using custom functions
 
-Rule Editor in Core Components does not support the **Set Options of** property to set the dropdown list options at runtime. However, you can set the dropdown list options using custom functions.
+The Rule Editor in Core Components does not support the **Set Options** property to populate dropdown list options dynamically at runtime. However, you can populate dropdown list options using custom functions, which allow you to retrieve options based on specific logic. Custom functions provide greater flexibility and control over how and when the dropdown options are populated, enhancing the user experience.
 
-Add the following code in the custom function as explained in the [create-custom-function ](/help/forms/custom-function-core-component-create-function.md) section to set the dropdown list options using custom functions:
+To populate the dropdown list options using a custom function, add the following code as described in the [create-custom-function ](/help/forms/custom-function-core-component-create-function.md) section:
+
 
 ```javascript
     /**
@@ -263,7 +264,7 @@ You can also inspect the console window to view the data submitted to the server
 
 Let's learn how custom functions use field and global objects to override submission handlers with the help of a `Contact Us` form.
 
-Add the following line of code as explained in the [create-custom-function ](/help/forms/custom-function-core-component-create-function.md) section, to customize the submission or failure message for form submissions and display the form submission messages in a modal box:
+Add the following line of code as explained in the [create-custom-functionas](/help/forms/custom-function-core-component-create-function.md) section, to customize the submission or failure message for form submissions and display the form submission messages in a modal box:
 
 ```javascript
 /**

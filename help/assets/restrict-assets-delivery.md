@@ -1,57 +1,42 @@
 ---
-title: Restrict delivery of assets in Experience Manager
-description: Learn how to restrict the assets delivery in [!DNL Experience Manager].
+title: Restrict delivery of assets with Dynamic Media with OpenAPI capabilities
+description: Learn how to restrict the assets delivery with OpenAPI capabilities.
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
 ---
-# Restrict access to assets in [!DNL Experience Manager] {#restrict-access-to-assets}
+# Restrict delivery of assets with Dynamic Media with OpenAPI capabilities {#restrict-access-to-assets}
 
-Central asset governance in Experience Manager allows the DAM Admin or Brand Managers to manage access to assets. They can restrict the access by configuring roles for approved assets on the authoring side, specifically on the AEM as a Cloud Service author instance.
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
 
-Users [searching](search-assets-api.md) or utilizing [delivery URLs](deliver-assets-apis.md) can gain access to restricted assets upon successfully passing the authorization process.
+>[!AVAILABILITY]
+>
+>Dynamic Media with OpenAPI capabilities guide is now available in PDF format. Download the entire guide and use Adobe Acrobat AI Assistant to answer your queries. 
+>
+>[!BADGE Dynamic Media with OpenAPI capabilities Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+
+Central asset governance in Experience Manager allows the DAM Admin or Brand Managers to manage access to assets available through Dynamic Media with OpenAPI capabilities. They can restrict delivery of approved assets (down to an individual asset) to selected [Adobe Identity Management System (IMS) User or Groups](https://helpx.adobe.com/in/enterprise/using/users.html#user-mgt-strategy) by configuring certain metadata on assets on their the AEM as a Cloud Service author service.
+
+Once an asset is restricted through Dynamic Media with OpenAPIs, only the (Adobe IMS onboarded) users authorized to access the said asset are granted access. To access the asset, the user must leverage [Search](search-assets-api.md) and [Delivery](deliver-assets-apis.md) capabilities of Dynamic Media with OpenAPI.
 
 ![Restricted access to assets](/help/assets/assets/restricted-access.png)
-
-## Restricted delivery using an IMS token {#restrict-delivery-ims-token}
 
 In Experience Manager Assets, restricted delivery via IMS involves two key stages: 
 
 * Authoring 
 * Delivery
 
-### Authoring {#authoring}
+## Authoring {#authoring}
 
-You can restrict the delivery of assets within [!DNL Experience Manager] based on roles. To configure roles, execute the following steps:
+### Restricted delivery using an IMS Bearer token {#restrict-delivery-ims-token}
 
-1. Go to the [!DNL Experience Manager] as DAM Admin.
-1. Select the asset for which you need to configure the role.
-1. Navigate to **[!UICONTROL Properties]** > **[!UICONTROL Advanced]**, and ensure that the **[!UICONTROL Roles]** field exists in the [!UICONTROL Advanced Metadata] tab.
+You can restrict the delivery of assets within [!DNL Experience Manager] based on IMS User and Group Identities .
 
-   ![Roles metadata](/help/assets/assets/roles_metadata.jpg)
-If the field is not available, use the following steps to add the field:
+>[!NOTE]
+>
+> This capability is currently not self-service. To restrict asset delivery for IMS [Users](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html) and [Groups](https://helpx.adobe.com/in/enterprise/using/user-groups.html), reach out to your Enterprise Support team for guidance on how to retrieve the information required for restricting access from [Adobe Admin Console](https://adminconsole.adobe.com/) portal and how to configure access in the AEM as a Cloud Service author service.
 
-   1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
-   1. Select the metadata schema and click **[!UICONTROL Edit _(e)_]**.
-   1. Add a **[!UICONTROL Multi Value Text]** field from the **[!UICONTROL Build Form]** section in right side to Metadata section in the form. 
-   1. Click the newly added field, and then do the following updates in the  **[!UICONTROL Settings]** panel:
-      1. Change the **[!UICONTROL Field Label]** to _Roles_.
-      1. Update the **[!UICONTROL Map to property]** to _./jcr:content/metadata/dam:roles_.
-
-1. Obtain the IMS groups to be added in the Roles metadata of the asset. To fetch the IMS groups, follow these steps:
-   1. Sign in at `https://adminconsole.adobe.com/.`
-   1. Go to your respective organization and navigate to **[!UICONTROL User Groups]**.
-   1. Select the **[!UICONTROL User Group]** you need to add, and extract the **[!UICONTROL orgID]** and **[!UICONTROL userGroupID]** from the URL or use your Org Id such as `{orgID}@AdobeOrg:{usergroupID}`.
-
-1. Add the Group ID to the **[!UICONTROL Roles]** field of Asset properties. <br>
-   The Group IDs defined in the **[!UICONTROL Roles]** field are the only users who can access the asset. You can also add IMS client ID and IMS profile id in the **[!UICONTROL Roles]** field. For example, `{orgId}@AdobeOrg:{profileId}`.
-
-   >[!NOTE]
-   >
-   >For new Assets view, you can only give access up to the folder level, and exclusively to groups rather than individual users. Learn more about [managing permissions within Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
-
-   >[!VIDEO](https://video.tv.adobe.com/v/3427429)
-
-#### Restrict delivery of assets using On and Off date and time {#restrict-delivery-assets-date-time}
+### Restrict delivery of assets using On and Off date and time {#restrict-delivery-assets-date-time}
 
 DAM authors can also restrict the delivery of assets by defining an On or Off time for activation available in Asset properties.
 
@@ -86,29 +71,29 @@ Similarly, for Assets view, if your asset is not based on the default metadata s
 
 
 
-### Delivery of restricted assets {#delivery-restricted-assets}
+## Delivery of restricted assets {#delivery-restricted-assets}
 
-The delivery of restricted assets is based on successful authorization to access assets. The authorization is either based on an IMS token if the request is sent from an AEM author instance or Asset Selector or it is based on a special cookie if you have custom identity providers set up on your Publish or Preview instance.
+The delivery of restricted assets is based on successful authorization to access assets. The authorization is either through [IMS Bearer Tokens](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/IMS/) (application for requests initiated from [AEM Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)), or a secure-cookie (if you have custom identity providers set up on your AEM Publish/Preview services, and have set up the cookie creation and inclusion on the pages).
 
-#### Delivery for AEM author or Asset Selector requests {#delivery-aem-author-asset-selector}
+### Delivery for AEM author or Asset Selector requests {#delivery-aem-author-asset-selector}
 
-To enable the delivery of restricted assets in case the request is sent from AEM author instance or Asset Selector, a valid IMS token is essential. Follow these steps:
-
-1. [Generate an access token](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token).
-   * Log in to your AEM as a Cloud Service environment's Dev Console.
-
-   * Navigate to **[!UICONTROL Environment]** > **[!UICONTROL Integrations]** > **[!UICONTROL Local Token]** > **[!UICONTROL Get Local Development Token]** > **[!UICONTROL Copy accessToken value]**. Learn more about [how to access token and related aspects](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token)
-
-1. Integrate the obtained access token to the **[!UICONTROL Authorization]** header, ensuring its value is prefixed with **[!UICONTROL Bearer]**.
-
-1. Validate the access token's functionality by initiating a request. It should yield a 404 error in cases where there is no IMS access token, or the provided access token lacks the same principals or groups as those added in the asset's metadata.
-
-#### Delivery for custom identity providers on Publish instance {#delivery-custom-identity-provider}
-
-In case of a custom identity provider set up on your Publish or Preview instance, you can mention the group that must have access to secured assets within `groupMembership` attribute during the setup process. When you log on to custom identity provider via [SAML integration](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0), the `groupMembership` attribute is read and used to construct a cookie, which is sent in all requests for authentication, similar to an IMS token in case of a request from AEM author or Asset Selector.
-
-When a secured asset is available on a page and a request is made to the delivery URL to render the asset, AEM checks the roles present in the cookie or the IMS token and matches it against the `dam:roles property` applied during the authoring of the asset. If there is a match, the asset gets displayed.
+To enable the delivery of restricted assets in case the request is sent from AEM author service or AEM Asset Selector, a valid IMS Bearer token is essential.  
+On AEM Cloud Service author services as well as Asset Selector, the IMS Bearer Token is automatically generated and used for requests after a successful login.
 
 >[!NOTE]
 >
-> In the [support ticket to activate Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities), mention restricted delivery in the use case. Adobe Engineering will help with necessary clarifications and/or set up process for restricted delivery.
+>To get more information on how to enable IMS authentication on AEM Asset Selector based integrations, please reach out to Enterprise Support
+
+1. For non-Asset Selector based experiences, AEM as a Cloud Service and Dynamic Media with OpenAPI capabilities currently support server-side-api integrations and can generate IMS Bearer tokens.
+   * Follow the instructions [here](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow) to perform service-to-server API integrations that can retrieve the IMS Bearer tokens through [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)
+   * For limited duration, local developer access (not meant for production use cases), short-lived IMS Bearer tokens for the user authenticated on [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) can be generated by following the instructions [here](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#developer-flow)
+
+1. While making [Search](search-assets-api.md) and [Delivery](deliver-assets-apis.md) API requests, add the obtained IMS Bearer token to the **[!UICONTROL Authorization]** header of the HTTP request (ensure that its value is prefixed with **[!UICONTROL Bearer]**).
+
+1. To validate the access restriction, initiate a Delivery API request with and without the **[!UICONTROL Authorization]** header.
+   * The response will yield a `404` error status-code in cases where there is no IMS Bearer token, or the provided IMS Bearer token doesn't belong to the user that was granted access to the asset (either directly, or through group membership).
+   * The response will yield a `200` success status-code with the binary content of the asset if the IMS Bearer token is one of the user or groups that were granted access to the asset.
+
+### Delivery for custom identity providers on Publish service {#delivery-custom-identity-provider}
+
+AEM Sites, AEM Assets and Dynamic Media with OpenAPI licenses can be used together, allowing for restricted delivery of assets to be configured on websites hosted on AEM Publish or Preview service. The secure delivery flow leverages browser cookies to establish user's access and having a custom domain for delivery tier that is subdomain of the publish domain is a pre-requisite for implementing this use case. In case AEM Sites' Publish and Preview services are configured to use a [custom identity provider (IdP)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0), a new cookie called `delivery-token` encapsulating user's group membership must be set on publish domain post user's authentication. The delivery tier extracts the authorization material from the secure-cookie and validates the access. Please log an [enterprise support ticket](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities) for more details.

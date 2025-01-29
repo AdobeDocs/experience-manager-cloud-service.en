@@ -324,7 +324,6 @@ When you enable mutual authentication for form data model (FDM), both the data s
 
 You have configured the data sources. Next you can create a Form Data Model (FDM) or if you have already created a Form Data Model (FDM) without a data source, you can associate it with the data sources you configured. See [Create form data model](create-form-data-models.md) for details.
 
-
 <!--
 
 >[!MORELIKETHIS]

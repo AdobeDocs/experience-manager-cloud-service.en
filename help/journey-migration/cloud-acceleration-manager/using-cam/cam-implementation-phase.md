@@ -17,7 +17,7 @@ The Implementation Phase includes:
 
 Click your project card so you can open the project landing page and navigate to the **Implementation** section, as shown in the following figure.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
+   ![Project landing page - Implementation](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
 
    >[!NOTE]
    >See [Creating and Managing a Project in Cloud Acceleration Manager](getting-started-cam.md#create-project) to learn more.
@@ -31,11 +31,11 @@ Follow this section so you can explore the Local Development activity card:
 
 1. Click **View** from the **Local Development** card.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/implementation-2.png)
+   ![Local Development card](/help/journey-migration/cloud-acceleration-manager/assets/implementation-2.png)
 
 1. A content carousel displays the relevant information for this phase of the migration journey.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/implementation-3.png)
+   ![Local Development carousel](/help/journey-migration/cloud-acceleration-manager/assets/implementation-3.png)
 
 
 ## Using Code Refactoring Card {#code-refactoring}
@@ -46,7 +46,7 @@ Follow this section so you can explore the Code Refactoring activity card:
 
 1. Click **Review** from the **Code Refactoring** activity card.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/implementation-4.png)
+   ![Code refactoring card](/help/journey-migration/cloud-acceleration-manager/assets/implementation-4.png)
 
 1. The page displays the list of code refactoring activities organized by the severity level. You can learn more by clicking the two highlighted icons. 
 
@@ -61,11 +61,11 @@ Follow this section so you can explore the Code Refactoring activity card:
    
    The **Dispatcher** tab provides information on how to structure the AEM as a Cloud Service Apache and Dispatcher configurations, and how to validate and run it locally before deploying to Cloud environments. It also describes debugging in Cloud environments.
    
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-2.png)
+   ![Dispatcher tab](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-2.png)
 
    The **Testing** tab provides information on functional, Experience Audit, and UI testing.
    
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-3.png)
+   ![Testing tab](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-3.png)
 
    
 ## Using AEM as a Cloud Service Deployment Card {#aem-as-a-cloud-service-deployment}
@@ -76,11 +76,11 @@ Follow this section so you can explore AEM as a Cloud Service Deployment Card ac
 
 1. Click **View** from the **AEM as a Cloud Service Deployment** activity card.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/implementation-6.png)
+   ![AEM as a Cloud Service Deployment - card](/help/journey-migration/cloud-acceleration-manager/assets/implementation-6.png)
 
 1. A content carousel displays the relevant information for this phase of the migration journey.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/aem-deployment-card.png)
+   ![AEM as a Cloud Service Deployment - carousel](/help/journey-migration/cloud-acceleration-manager/assets/aem-deployment-card.png)
 
 
 ## Using Content Transfer Card {#content-transfer}
@@ -91,11 +91,11 @@ Follow this section so you can explore the Content Transfer activity card:
 
 1. Click **Review** from the **Content Transfer** activity card.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-1.png)
+   ![Content Transfer - Review](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-1.png)
 
 1. To start a content transfer, you must create a Migration set. Click **Create migration set**. A migration set allows content to be transferred to AEM as a Cloud Service. 
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
+   ![Create migration set](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
 
    >[!NOTE]
    >A migration set expires after a prolonged period of inactivity. See [Migration Set Expiry](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) for details.
@@ -107,13 +107,13 @@ Follow this section so you can explore the Content Transfer activity card:
 
 1. To ingest content from the Migration set into an environment on AEM as a Cloud Service, you must start an ingestion. Navigate to **Ingestion Jobs** and click **New ingestion**. Review [Ingesting Content into Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) so you can learn how to complete the Ingestion phase of content transfer.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
+   ![Ingestion Jobs](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 
 <!--### Estimating Content Transfer Time {#calculating}
 
 A Content Transfer Tool calculator has been provided to estimate how long it could take to complete the content transfer activity. You can use the content repository size slider to select the size that applies to your project. The transfer times vary for the extraction and ingestion phases. 
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-4.png)
+   ![Content Transfer Tool calculator](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-4.png)
 
    >[!NOTE]
    >These times are estimates only. Factor such as network speeds and time to scale up instances have not been accounted for in these estimates.

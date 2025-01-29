@@ -8,6 +8,9 @@ feature: Metadata
 ---
 # Metadata in Assets View {#metadata}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 Metadata means data or description about the data. For example, your images as an asset can contain information about the camera it was clicked with or any copyright information. This information is metadata of the image. Metadata is critical for efficient asset management. Metadata is the collection of all the data available for an asset but it may not necessarily be contained in that asset.
 
 Metadata helps you further categorize assets and is helpful as the amount of digital information grows. It is possible to manage a few hundred files based on just the filenames, thumbnails, and memory. However, this approach is not scalable. It falls short when the number of people involved and the number of managed assets increase.
@@ -162,6 +165,19 @@ To remove a metadata form from a folder:
 
 You can also navigate to the folder details page and select **[!UICONTROL System mapped Metadata Form]** from the **[!UICONTROL Metadata Forms]** field to remove the assigned metadata form from a folder.
 
+### Working with Link component in metadata form {#link-component-metadata-form}
+
+The link component is used to enable external URLs including storage links, copyright information, contact forms, and so on. To use link component on metadata form, you need to [configure metadata form](#metadata-forms).
+
+Follow the steps below to use link component on metadata form:
+
+1. Go to asset details page and navigate to **[!UICONTROL Link URL]**.
+1. Add a URL that you want to use to redirect for the selected asset.
+1. Click **[!UICONTROL Add link]**. Perform one of the following actions:
+   * Click ![copy icon](assets/do-not-localize/copy.svg) to copy the URL.
+   * Click ![edit icon](assets/do-not-localize/edit.svg) to edit the URL.
+1. Click **[!UICONTROL Save]** to save the changes.
+
 ## Next Steps {#next-steps}
 
 * [Watch a video to manage metadata forms in Assets view](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
@@ -201,3 +217,4 @@ How can one search based strictly on the metadata. Similar to AEM Assets GQL que
 >
 >* [Search assets](search.md).
 -->
+

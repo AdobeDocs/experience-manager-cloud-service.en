@@ -19,6 +19,10 @@ In addition, some customers who were previously deployed with AEM 6.5 or earlier
 * **6.5 Deprecated Java&trade; API Jar** - an extra set of interfaced that have been removed since AEM 6.5
 * **6.5 Deprecated Javadoc Jar** - the Javadocs for the additional set of interfaced
 
+>[!NOTE]
+> 
+> There are differences between AEM as a Cloud Service and the SDK, in a number of different areas. For situations where quick and iterative changes are needed, Adobe has introduced Rapid Development Environments. Have a look at [Rapid Development Environments](/help/implementing/developing/introduction/rapid-development-environments.md) for more information.
+
 ## Building for the SDK {#building-for-the-sdk}
 
 The AEM as a Cloud Service SDK is used to build and deploy custom code. See the [AEM Project Archetype documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html). At a high level, the following steps are performed:

@@ -39,13 +39,13 @@ The following quote block example follows this approach.
 
 ### Create Block Definition and Model {#create-block-model}
 
-1&period; Clone the GitHub project locally that you created in the [Developer Getting Started Guide for WYSIWYG authoring with Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) guide and open it in an editor of your choice.
+1\. Clone the GitHub project locally that you created in the [Developer Getting Started Guide for WYSIWYG authoring with Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) guide and open it in an editor of your choice.
 
    * Microsoft Code is used here for illustrative purposes.
 
    ![Cloning the project](assets/create-block/clone.png)
 
-2&period; Edit the `component-definition.json` file at the root of the project and add the following definition for your new quote block and save the file.
+2\. Edit the [`component-definition.json` file](/help/implementing/universal-editor/component-definition.md) at the root of the project and add the following definition for your new quote block and save the file.
 
 >[!BEGINTABS]
 
@@ -77,7 +77,7 @@ The following quote block example follows this approach.
 
 >[!ENDTABS]
 
-3&period; Edit the `component-models.json` file at the root of the project and add the following [model definition](/help/implementing/universal-editor/field-types.md#model-structure) for your new quote block and save the file.
+3\. Edit the `component-models.json` file at the root of the project and add the following [model definition](/help/implementing/universal-editor/field-types.md#model-structure) for your new quote block and save the file.
 
    * Please see the document [Content Modeling for WYSIWYG authoring with Edge Delivery Services Projects](/help/edge/wysiwyg-authoring/content-modeling.md) for more information about what is important to consider when creating content models.
 
@@ -90,14 +90,14 @@ The following quote block example follows this approach.
   "id": "quote",
   "fields": [
      {
-       "component": "text-area",
+       "component": "richtext",
        "name": "quote",
        "value": "",
        "label": "Quote",
        "valueType": "string"
      },
      {
-       "component": "text-input",
+       "component": "text",
        "valueType": "string",
        "name": "author",
        "label": "Author",
@@ -113,7 +113,7 @@ The following quote block example follows this approach.
 
 >[!ENDTABS]
 
-4&period; Edit the `component-filters.json` file at the root of the project and add the quote block to the [filter definition](/help/implementing/universal-editor/customizing.md#filtering-components) to allow the block to be added to any section and save the file.
+4\. Edit the [`component-filters.json` file](/help/implementing/universal-editor/filtering.md) at the root of the project and add the quote block to the [filter definition](/help/implementing/universal-editor/filtering.md) to allow the block to be added to any section and save the file.
 
 >[!BEGINTABS]
 
@@ -141,7 +141,7 @@ The following quote block example follows this approach.
 
 >[!ENDTABS]
 
-5&period; Using git, commit these changes to your `main` branch.
+5\. Using git, commit these changes to your `main` branch.
 
    * Committing to `main` is for illustrative purposes only. [Follow best practices](https://www.aem.live/docs/dev-collab-and-good-practices) and use a pull request for actual project work.
 
@@ -159,7 +159,7 @@ Now that your basic quote block is defined and committed to the sample project, 
 
    * In order to load the page, you may need to tap or click **Sign in with Adobe** to authenticate to AEM in the Universal Editor.
 
-1. In the Universal Editor, select a section. In the properties rail, tap or click the **Add** icon and then select your new **Quote** block from the menu.
+1. In the Universal Editor, select a section. In the properties panel, tap or click the **Add** icon and then select your new **Quote** block from the menu.
 
    * The **Add** icon is a plus symbol.
    * You know that you have selected a section if the blue outline of the selected object has a tab labeled **Section**.
@@ -169,14 +169,14 @@ Now that your basic quote block is defined and committed to the sample project, 
 
 1. The page is reloaded and the quote block is added to the bottom of the selected section with the default content specified in the `component-definitions.json` file.
 
-   * The quote block can be selected and edited as any other block either in-place or in the properties rail.
+   * The quote block can be selected and edited as any other block either in-place or in the properties panel.
    * Styling is be applied in a further step.
 
    ![The page with the new quote block in the selected section](assets/create-block/quote-added.png)
 
 1. Once you are satisfied with the content of your quote, you can publish the page by tapping or clicking the **Publish** button in the toolbar of the Universal Editor.
 
-1. Verify that the content was published by navigating to the published page. The link will be similar to `https://<branch>--<repo>--<owner>.hlx.page`
+1. Verify that the content was published by navigating to the published page. The link will be similar to `https://<branch>--<repo>--<owner>.aem.page`
 
    ![The published quote](assets/create-block/quote-published.png)
 
@@ -184,13 +184,13 @@ Now that your basic quote block is defined and committed to the sample project, 
 
 Now that you have a working quote block you can apply styling to it.
 
-1&period; Return to the editor for your project.
+1\. Return to the editor for your project.
 
-2&period; Create a `quote` folder under the `blocks` folder.
+2\. Create a `quote` folder under the `blocks` folder.
 
    ![Create a quote folder](assets/create-block/new-folder.png)
 
-3&period; In the new `quote` folder, add a `quote.js` file to implement block decoration by adding the following JavaScript and save the file.
+3\. In the new `quote` folder, add a `quote.js` file to implement block decoration by adding the following JavaScript and save the file.
 
 >[!BEGINTABS]
 
@@ -212,7 +212,7 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-4&period; In the `quote` folder, add a `quote.css` file to define the styling for the block by adding the following CSS code and save the file.
+4\. In the `quote` folder, add a `quote.css` file to define the styling for the block by adding the following CSS code and save the file.
 
 >[!BEGINTABS]
 
@@ -257,17 +257,17 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-5&period; Using git, commit these changes to your `main` branch.
+5\. Using git, commit these changes to your `main` branch.
 
    * Committing to `main` is for illustrative purposes only. [Follow best practices](https://www.aem.live/docs/dev-collab-and-good-practices) and use a pull request for actual project work.
 
-6&period; Return to your browser tab of the Universal Editor where you were editing the page of your project and reload the page to view your styled block.
+6\. Return to your browser tab of the Universal Editor where you were editing the page of your project and reload the page to view your styled block.
 
-7&period; See the now styled quote block on the page.
+7\. See the now styled quote block on the page.
 
    ![The styled quote block in the Universal Editor](assets/create-block/quote-styled.png)
 
-8&period; Verify that the changes were pushed to production by navigating to the published page. The link will be similar to `https://<branch>--<repo>--<owner>.hlx.page`
+8\. Verify that the changes were pushed to production by navigating to the published page. The link will be similar to `https://<branch>--<repo>--<owner>.aem.page`
 
    ![The published and styled quote block](assets/create-block/quote-styled-published.png)
 
@@ -321,9 +321,13 @@ By adding a `classes` property to the block, the property rendered in the table 
 
 This guide had you commit directly to the `main` branch for simplicity's sake. For experimentation in a sample repository, this is usually not an issue. For actual project work, [you should follow development best practices](https://www.aem.live/docs/dev-collab-and-good-practices) by developing on a different branch and reviewing all changes via pull request before merging to `main`.
 
-When you are not developing on the `main` branch, you can append `?ref=<branch>` in the Universal Editor location bar to load the page from your branch. `<branch>` is the branch name as it would be used for your project's preview or live URLs, e.g. `https://<branch>--<repo>--<owner>.hlx.page`.
+When you are not developing on the `main` branch, you can append `?ref=<branch>` in the Universal Editor location bar to load the page from your branch. `<branch>` is the branch name as it would be used for your project's preview or live URLs, e.g. `https://<branch>--<repo>--<owner>.aem.page`.
 
-Publishing content with a new model is only supported when the model is merged to the `main` branch.
+## Reusing Your Blocks for Document-Based Authoring {#reusing-blocks}
+
+You can use the blocks you create for WYSIWYG authoring using the Universal Editor for document-based authoring if you adhere to the same content model.
+
+Please see the document [Blocks for WYSIWYG and Document-Based Authoring](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md) for more information.
 
 ## Next Steps {#next-steps}
 
@@ -334,4 +338,3 @@ Please see the document [Content Modeling for WYSIWYG authoring with Edge Delive
 >[!TIP]
 >
 >For an end-to-end walkthrough of creating a new Edge Delivery Services project that is enabled for WYSIWYG authoring with AEM as a Cloud Service as a content source, please view [this AEM GEMs webinar.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
-

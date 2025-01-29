@@ -112,7 +112,7 @@ When you supply a page **Name** when creating a page, AEM [validates the name ac
 
 ## Templates {#templates}
 
-In AEM, a [template](/help/sites-cloud/authoring/sites-console/templates.md) is a specialized type of page used as the basis for any new page being created.
+In AEM, a [template](/help/sites-cloud/authoring/page-editor/templates.md) is a specialized type of page used as the basis for any new page being created.
 
 The template defines the structure of a page including a thumbnail image and other properties. For example, you may have separate templates for product pages, sitemaps, and contact information. Templates are comprised of [components](#components).
 

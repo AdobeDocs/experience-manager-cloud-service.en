@@ -10,7 +10,8 @@ role: User, Developer
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html)                  |
-| AEM as a Cloud Service     | This article         |
+| AEM as a Cloud Service (Core Components)    | [Click here](/help/forms/configure-submit-actions-core-components.md)        |
+| AEM as a Cloud Service (Foundation Components)    | This article         |
 
 **Applies to**: ✔️ Adaptive Form Foundation Components. ❌ [Adaptive Form Core Components](/help/forms/configure-submit-actions-core-components.md). Adobe recommends using Core Components to [add Adaptive Forms to an AEM Sites Page](create-or-add-an-adaptive-form-to-aem-sites-page.md) or to [create standalone Adaptive Forms](creating-adaptive-form-core-components.md).
 
@@ -25,6 +26,7 @@ A Submit Action is triggered when a user clicks the **[!UICONTROL Submit]** butt
 * [Submit to Azure Blob Storage](#azure-blob-storage)
 * [Submit to Power Automate](#microsoft-power-automate)
 * [Submit to Workfront Fusion](#workfront-fusion)
+* [Submit to Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 
 You can also [extend the default Submit Actions](custom-submit-action-form.md) to create your own Submit Action. 
 

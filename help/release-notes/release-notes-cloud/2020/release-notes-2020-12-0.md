@@ -26,7 +26,7 @@ The following release (2021.1.0) is January 28, 2021.
 
 * [!DNL Dynamic Media] capabilities are now accessible by way of AEM [!DNL Sites] image-based Core Components. Authors can quickly configure components to use Image Presets, Smart Crop, and Image Modifiers when creating webpages. See [Core Components 2.13.0 release](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0).
 
-* The [!DNL Experience Manager] desktop app lets users upload files and folders by dragging the files from Windows Explorer or Mac Finder on the desktop app interface. See [add assets using the desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* The [!DNL Experience Manager] desktop app lets users upload files and folders by dragging the files from Windows Explorer or Mac Finder on the desktop app interface. See [add assets using the desktop app](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using#upload-and-add-new-assets-to-aem).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -44,7 +44,7 @@ The Release Date for Cloud Manager in Adobe Experience Manager (AEM) as a Cloud 
 
 ### What is new in [!DNL Cloud Manager] {#what-is-new-cm}
 
-* Self-service management of [SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) and [Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
+* Self-service management of [SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) and [Introduction to Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
 * Self-service management of [IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
@@ -60,7 +60,7 @@ The Release Date for Cloud Manager in Adobe Experience Manager (AEM) as a Cloud 
 
 ### What is new in [!DNL Code Refactoring Tools] {#what-is-new-crt}
 
-* New version of AIO-CLI plugin released. The latest version of this plug-in includes bug fixes for the AEM Dispatcher Converter and the Repository Modernizer and also supports a new utility - Index Converter. See [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html#benefits) where you can learn more about this plug-in. 
+* New version of AIO-CLI plugin released. The latest version of this plug-in includes bug fixes for the AEM Dispatcher Converter and the Repository Modernizer and also supports a new utility - Index Converter. See [Unified Experience](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience#benefits) where you can learn more about this plug-in. 
 
 * Index Converter is a utility that can be used to transform a customer's Custom Oak Index Definitions to AEM as a CLoud Service compatible Oak Index Definitions. See [Index Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) for more details.
 
@@ -80,6 +80,6 @@ The Release Date for Content Transfer Tool v1.1.20 is January 08, 2021.
 
 ### Bug Fixes {#ctt-bug-fixes}
 
-* Content Transfer Tool (CTT) user interface status for a migration set did not persist and changed after a period of inactivity. This has been fixed.
-* The option to view logs was disabled if the logs were not available. This has been fixed and messaging has been added to notify users why logs are missing.
-* Content Transfer Tool user interface status showed *FAILED* when the user stopped an ingestion. This has been fixed to display *STOPPED* instead.
+* Content Transfer Tool (CTT) user interface status for a migration set did not persist and changed after a period of inactivity. This issue is now fixed.
+* The option to view logs was disabled if the logs were not available. This issue is now fixed and messaging is now added to notify users why logs are missing.
+* Content Transfer Tool user interface status showed *FAILED* when the user stopped an ingestion. This issue is now fixed to display *STOPPED* instead.

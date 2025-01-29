@@ -30,9 +30,9 @@ Custom permissions let users create custom permission profiles with configurable
 
 To create and use your own custom permissions, it requires three steps:
 
-1. [Create a product profile.](#create)
-1. [Assign custom permissions to the product profile.](#assign-permissions)
-1. [Assign users to the product profile.](#assign-users)
+1. [Create a product profile](#create).
+1. [Assign custom permissions to the product profile](#assign-permissions).
+1. [Assign users to the product profile](#assign-users).
 
 This section details these steps. You may find it useful to see [Terms](#terms) and [Configurable Permissions](#configurable-permissions) sections as you create your own custom permissions.
 
@@ -98,7 +98,7 @@ Your new product profile is now saved with its custom permissions.
 
 You can now assign users to the new product profile you created with custom permissions.
 
-1. In the Admin Console, select the name of the [new product profile to which you assigned custom permissions.](#assign-permissions)
+1. In the Admin Console, select the name of the [new product profile to which you assigned custom permissions](#assign-permissions).
 
 1. In the window that opens, select the **Users** tab.
 
@@ -158,7 +158,7 @@ The following terms are used in creating and managing custom permissions and pre
 
 |Term|Description|
 |---|---|
-|Predefined Permissions|Predefined roles like **Business Owner** and **Deployment Manager** to govern various features of Cloud Manager. For details on pre-defined roles, see [AEM as a Cloud Service Team and Product Profiles.](/help/onboarding/aem-cs-team-product-profiles.md)|
+|Predefined Permissions|Predefined roles like **Business Owner** and **Deployment Manager** to govern various features of Cloud Manager. For details on pre-defined roles, see [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md). |
 |Custom Permissions|Cloud Manager features let users create permission profiles to define roles to govern supported features of Cloud Manager|
 |Product Profile|Created in the Admin Console to manage configurable permissions that are applicable to users who are part of the permission profile| 
 |Configurable Permission|Cloud manager permissions which can be configured in permission profile|
@@ -190,7 +190,7 @@ Keep in mind the following limitations when using custom permissions.
 * Deployment Manager
 * Developer
 
-For details on pre-defined roles, see [AEM as a Cloud Service Team and Product Profiles.](/help/onboarding/aem-cs-team-product-profiles.md)
+For details on pre-defined roles, see [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ### What happens to predefined permission profiles with introduction to custom profiles?
 

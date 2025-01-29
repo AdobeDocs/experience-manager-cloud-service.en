@@ -18,11 +18,11 @@ Follow the steps below to navigate to the Readiness Phase:
 
 1. Click your project card.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-landing1.png)
+   ![Project card](/help/journey-migration/cloud-acceleration-manager/assets/cam-landing1.png)
 
 1. On the project landing page, navigate to the **Readiness** section, as shown in the figure below.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/readiness-1.png)
+   ![Readiness](/help/journey-migration/cloud-acceleration-manager/assets/readiness-1.png)
 
    >[!NOTE]
    >See Creating and Managing a Project in Cloud Acceleration Manager to learn more.
@@ -37,7 +37,7 @@ Follow the steps below to navigate to the Readiness Phase:
 
 1. Click **Review** from the **Best Practices Analysis** card. 
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/readiness-2.png)
+   ![Best Practices Analysis - Review](/help/journey-migration/cloud-acceleration-manager/assets/readiness-2.png)
 
 1. Download Best Practices Analyzer (BPA).
 
@@ -51,14 +51,14 @@ Follow the steps below to navigate to the Readiness Phase:
 
 1. In CAM, click **Get upload key**, so you can get the key used to configure your system to automatically upload BPA reports directly to CAM.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3b.png)
+   ![Get upload key](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3b.png)
    
    >[!IMPORTANT]
-   >The report can still be uploaded manually, but using the Upload Key streamlines the operation. Note that the report cannot be uploaded manually if you are in the browser's Incognito mode.
+   >The report can still be uploaded manually, but using the Upload Key streamlines the operation. Note that the report cannot be uploaded manually if its size is approximately 200MB or greater. The report also can not be uploaded using the browser's Incognito mode.
 
 1. After a new report has been uploaded, you can see the Best Practices Analysis report in CAM.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
+   ![Best Practices Analysis report](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
    >[!NOTE]
    >If multiple, different reports are uploaded, the report that is displayed in detail is always the one that has the most recent creation date (not upload date).
@@ -76,7 +76,7 @@ Follow the steps below:
 
 1. Click the **Print Preview** action.
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview1b.png)
+   ![Print Preview](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview1b.png)
 
 1. On the new tab with the report displayed in a printable preview, click **Print** to print the report to a PDF format.
 
@@ -85,7 +85,7 @@ Follow the steps below:
    >* The option **Save as PDF** is recommended and supported for the above functionality.
    >* If the browser's print button is used, it prints only one page. 
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview2.png)
+   ![Print](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 ### Using View Trendline {#trendline-view-cam}
 
@@ -98,15 +98,15 @@ Follow the steps below to view reports from the trendline option:
 
 1. Navigate to your project and click **Review** from the **Best Practices Analysis** card in the **Readiness** phase.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
+   ![Best Practices Analysis - Review](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
 1. From the **View** drop-down list, click **Trendline Report**, as shown in the figure below.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1b.png)
+   ![Trendline Report](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1b.png)
 
 1. Clicking **Trendline Report** opens the trendline view of the report.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view3a.png)
+   ![Trendline View](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view3a.png)
 
 
    >[!NOTE]
@@ -118,14 +118,14 @@ Follow the steps below to view reports from the trendline option:
    >1. **Custom Components and Template Trend**
    >
    >You can add or change the graphical view by way of the drop-down, as shown in the figure below:
-   >![image](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
+   >![Select the graphical view](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
 
 
 ### Reviewing Best Practices Analysis Report {#analysis-report}
 
 Explore the following cards available in the Best Practices Analysis Report page:
 
-![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
+![Best Practices Analysis Report](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
 >[!NOTE]
 > With each card, you can:
@@ -138,21 +138,21 @@ Explore the following cards available in the Best Practices Analysis Report page
 
 The **Report Properties** card provides information about report properties such as report date, duration, filters, upload date, and Adobe Experience Manager (AEM) details.
 
-![image](/help/journey-migration/cloud-acceleration-manager/assets/report-properties.png)
+![Report Properties](/help/journey-migration/cloud-acceleration-manager/assets/report-properties.png)
 
 #### Report Overview {#report-overview}
 
 This **Report Overview** card provides the report findings and severity levels that apply when assessing the readiness to move to AEM as a Cloud Service, as shown in the figure below.
 
-![image](/help/journey-migration/cloud-acceleration-manager/assets/report-overview.png)
+![Report Overview](/help/journey-migration/cloud-acceleration-manager/assets/report-overview.png)
 
 Clicking this report opens the **Report** tab.
 
-![image](/help/journey-migration/cloud-acceleration-manager/assets/report-overview2.png)
+![Report tab](/help/journey-migration/cloud-acceleration-manager/assets/report-overview2.png)
 
 You can filter the report based on importance, subtype, or count.
 
-![image](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
+![Report filters](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
 >See [Interpreting the Best Practices Analyzer Report](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html) to learn about findings categories and importance levels.
@@ -177,17 +177,17 @@ You can review the following information from this tab:
 * Assessment
 * Content Migration Considerations
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/migration-complexity-1.png)
+   ![Migration Complexity Assessment](/help/journey-migration/cloud-acceleration-manager/assets/migration-complexity-1.png)
 
 ## Using Planning and Setup Card {#planning-setup}
 
 1. Click **View** from the **Planning And Setup** card. This card provides all the relevant content that helps you plan and set up your AEM migration.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/readiness-view.png)
+   ![Planning And Setup - View](/help/journey-migration/cloud-acceleration-manager/assets/readiness-view.png)
 
 1. A content carousel displays all the relevant information for this phase of the migration journey.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/readiness-5-planning.png)
+   ![Planning And Setup carousel](/help/journey-migration/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
 ### Deleting a Best Practices Analysis Report from the Trendline view {#delete-trendline}
 
@@ -196,23 +196,23 @@ You can review the following information from this tab:
 
 1. Navigate to your project and click **Review** from the **Best Practices Analysis** card in the **Readiness** phase.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
+   ![Best Practices Analysis - Review](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
 1. Click **...**.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
+   ![Ellipse](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
 1. In the drop-down list, click **View Trendline**, as shown in the figure below.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1b.png)
+   ![View Trendline](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1b.png)
 
 1. Click the delete icon from the **Trendline Report** screen.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view5a.png)
+   ![Trendline Report - Delete](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view5a.png)
 
 1. Click **Delete** to confirm the deletion.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view6a.png)
+   ![Delete](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view6a.png)
 
 ## What's Next {#whats-next}
 

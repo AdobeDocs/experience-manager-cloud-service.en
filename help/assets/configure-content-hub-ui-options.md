@@ -5,8 +5,24 @@ exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
 ---
 # Configure Content Hub user interface {#configure-content-hub-user-interface}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
+>[!CONTEXTUALHELP]
+>id="configure_content_hub"
+>title="Configure Content Hub user interface"
+>abstract="Experience Manager Assets enables administrators to configure the options available on the Content Hub user interface. Based on the configuration options selected by the administrators, the Content Hub users are able to view fields on Content Hub. The configuration options include metadata while importing assets, filters, asset properties, metadata while searching assets, personalized branding, and any custom links."
+>additional-url="https://images-tv.adobe.com/mpcv3/4477/74a81d1c-0cfe-41f4-8a06-18ff70604e45_1732023385.854x480at800_h264.mp4" text="Watch Video"
+
 <!-- ![Download assets](assets/download-asset.jpg) -->
+
 ![Configure assets on Content Hub](assets/configure-assets.png)
+
+>[!AVAILABILITY]
+>
+>Content Hub guide is now available in PDF format. Download the entire guide and use Adobe Acrobat AI Assistant to answer your queries. 
+>
+>[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Experience Manager Assets enables administrators to configure the options available on the Content Hub user interface. Based on the configuration options selected by the administrators, the Content Hub users are able to view fields on Content Hub. The configuration options include:
 
@@ -38,17 +54,22 @@ To access configuration options on Content Hub:
 
 ## Manage configuration options on Content Hub {#manage-configuration-options}
 
-Manage the following configuration options for your users:
+As an administrator, manage the following configuration options for your users:
 
 * [Import](#configure-import-options-content-hub)
 
 * [Filters](#configure-filters-content-hub)
 
 * [Asset details](#configure-asset-details-content-hub)
+* [Asset Card](#asset-card)
 
 * [Search](#configure-metadata-search-content-hub)
 
 * [Branding](#configure-branding-content-hub)
+
+* [Expired Assets](#expired-assets-content-hub)
+
+* [Renditions](#renditions-content-hub)
 
 * [Custom Links](#configure-custom-links-content-hub)
 
@@ -127,6 +148,20 @@ The properties enabled on the Configuration User Interface display on the Asset 
 
 ![Asset properties on Content Hub](assets/config-ui-asset-properties.png)
 
+### Asset Card {#asset-card}
+
+You can also configure the key metadata fields that you need to display on the **Asset Card** upto a maximum of 6 fields. To do so, execute the following steps:
+
+![key metadata on Asset Card](/help/assets/assets/asset-card-key-metadata.png)
+
+1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **Asset Card**.
+2. Click **Add metadata**. The **Add asset card metadata** dialog box displays.
+3. Specify the metadata name in the **Label** field and select a metadata property in the **Metadata** field.
+4. Click **Confirm** and then click **Save** to apply the changes so that the new property display on the asset details page.
+![asset card](/help/assets/assets/asset-card.png)
+
+Similarly, click ![edit](/help/assets/assets/edit-content-hub.svg) that is available next to each available property, to make any required modifications or click ![delete](/help/assets/assets/delete-content-hub.svg) to delete any existing metadata property. Click **Save** after making all modifications to apply the changes.
+
 ### Search {#configure-metadata-search-content-hub}
 
 Administrators can define the metadata fields that are searched when a user specifies a search criteria on Content Hub. Execute the following steps:
@@ -144,7 +179,7 @@ Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), ava
 
 ### Branding {#configure-branding-content-hub}
 
-Administrators can also personalize the title and body text on the banner of Content Hub portal, as per your branding requirements. To do so, execute the following steps:
+Administrators can also personalize the title and body text on the banner of the Content Hub portal, as per your branding requirements. To do so, execute the following steps:
 
 1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Branding]**.
 
@@ -157,6 +192,50 @@ Administrators can also personalize the title and body text on the banner of Con
 The branding updates enabled on the Configuration User Interface display on the Content Hub portal banner:
 
 ![Configuration UI branding on Content Hub](assets/configuration-ui-branding-updates.png)
+
+### Expired assets{#expired-assets-content-hub}
+
+Administrators can control if they need expired assets to be visible on Content Hub. If the expired assets are made visible, they can also define if users can download them.
+
+Expired assets do not display in Content Hub by default.
+
+To do so, execute the following steps:
+
+1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Expired Assets]**.
+
+1. In the **[!UICONTROL Visible]** section, enable the **[!UICONTROL Allow users to view expired assets]** toggle to make all expired assets visible on Content Hub.
+
+1. After enabling the visibility of assets, you can enable or disable the ability to download expired assets using the **[!UICONTROL Allow users to download expired assets]** toggle. 
+
+1. Click **[!UICONTROL Save]** to apply the changes.
+
+   ![Expired assets on Content Hub](assets/expired-assets-content-hub.png)
+
+After enabling the visibility of assets, you can view the expired assets on Content Hub, as depicted in the following image:
+
+![Expired assets on Content Hub](assets/view-download-expired-assets.png)
+
+If the administrator has enabled download, the Content Hub users can also download them, as highlighted in the image.
+
+If the visibility of expired assets is enabled, Content Hub also highlights assets expiring within the next 15 days using the `Expiring in n days` message on the Asset Card.
+
+### Renditions {#renditions-content-hub}
+
+Renditions are customized versions of digital assets, such as images, documents, and so on designed for different devices and platforms to ensure optimal performance. See more about [renditions in Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+
+Content Hub allows downloading static renditions. Static renditions are different representations of an asset's original file that are generated natively. Examples include thumbnails or mobile optimized renditions. Administrators can manage and control the availability of asset renditions; and manage whether you can download original assets or not.
+
+To do so, execute the following steps:
+
+On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Renditions]**. The following options are available:
+
+* Enable  the [!UICONTROL Enable availability of static renditions] toggle to make all static renditions visible on Content Hub.
+
+* Enable or disable **[!UICONTROL Allow users to download original assets]** toggle to control the availability to download original assets.
+
+   ![Configure renditions on Content Hub](assets/config-renditions.png)
+
+For information on how to view and download static renditions in Content Hub, see [download assets in Content Hub](/help/assets/download-assets-content-hub.md).
 
 ### Custom Links {#configure-custom-links-content-hub}
 

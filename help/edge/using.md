@@ -39,9 +39,3 @@ Please see the document [Publishing Content for Edge Delivery Services](/help/ed
 Edge Delivery Services is based around the concept of blocks. AEM comes with a comprehensive library of predefined blocks, which can be extended to meet your project needs. Code for Edge Delivery Services projects is managed in GitHub.
 
 Please see the document [Developer Getting Started Guide for WYSIWYG Authoring with Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) for more information.
-
-## Existing AEM Projects {#existing-projects}
-
-You needn't wait for a new AEM project to benefit from Edge Delivery Services. Edge Delivery Services can be integrated into your existing AEM project so you can leverage its performance gains immediately.
-
-Please see the document [Using Edge Delivery Services with Existing AEM Projects](/help/edge/wysiwyg-authoring/existing-projects.md) for more information.

@@ -86,7 +86,7 @@ To add items to a Tile:
 
    ![Add item to a tile](/help/sites-cloud/authoring/assets/project-workflows.png)
 
-1. Add an item to the tile as you would when creating a tile. Project tiles are described [here](/help/sites-cloud/authoring/projects/overview.md#project-tiles). In this example, another workflow was added.
+1. Add an item to the tile as you would when creating a tile. See [Project tiles](/help/sites-cloud/authoring/projects/overview.md#project-tiles) for more details. In this example, another workflow was added.
 
 ### Opening a Tile {#opening-a-tile}
 

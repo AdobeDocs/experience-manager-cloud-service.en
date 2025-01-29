@@ -10,7 +10,9 @@ role: User, Developer
 ---
 # Add Custom Error Handlers in AEM Adaptive Forms {#error-handlers-in-adaptive-form}
 
-<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
+>[!NOTE]
+>
+> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components.
 
 | Version | Article link |
 | -------- | ---------------------------- |
@@ -179,7 +181,7 @@ Using the [Rule Editor's Invoke Service](https://experienceleague.adobe.com/docs
 
 Using Rule Editor, you can:
 * [Add default error handler function](#add-default-errror-handler)
-* [Add custom error handler function](#add-custom-errror-handler)
+* [Add custom error handler function](#add-custom-error-handler-function)
 
 
 ### Add default error handler function {#add-default-errror-handler}
@@ -202,7 +204,7 @@ As a result of this rule, the values you enter for **Pet ID** checks validation 
 
  ![display the default error message when you add a default error handler in a form to handle error responses](/help/forms/assets/default-error-message.png)
 
-### Add custom error handler function {#add-custom-errror-handler}
+### Add custom error handler function
 
 You can add a custom error handler function to perform some of the actions like:
 
@@ -216,19 +218,22 @@ The custom error handler is a function (Client Library) designed to respond to e
 To understand how to create and use a custom error handler using the [Rule Editor's Invoke service](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) action, let's take an example of Adaptive Form with two fields, **Pet ID** and **Pet Name** and use a custom error handler at the **Pet ID** field to check for various errors returned by the REST endpoint configured to invoke an external service, for example, `200 - OK`,`404 - Not Found`, `400 - Bad Request`.  
 
 To add and use a custom error handler in an Adaptive Form, perform the following steps:
-1. [Create a custom error handler](#create-custom-error-message) 
-1. [Use the Rule Editor to configure custom error handler](#use-custom-error-handler)
+1. [Add custom function for error handler](#1-add-the-custom-function-for-the-error-handler)
+2. [Use the Rule Editor to configure custom error handler](#use-custom-error-handler)
 
-#### 1. Create a custom error handler {#create-custom-error-message}
+#### 1. Add the custom function for the error handler
 
-To create a custom error function, perform the following steps:
+To learn how to add custom functions, click [Create custom functions in an Adaptive Form based on Core Components](/help/forms/custom-function-core-component-create-function.md#create-a-custom-function).
+
+<!-- To create a custom error function, perform the following steps:
 
 1. [Clone your AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git). 
-1. Create a folder under the `[AEM Forms as a Cloud Service repository folder]/apps/` folder. For example, create a folder named as `experience-league`
-1. Navigate to `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` and create a `ClientLibraryFolder` as `clientlibs`.
-1. Create a folder named `js`.
-1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder.
-1. Add a JavaScript file, for example, `function.js`. The file comprises the code for custom error handler.
+2. Create a folder under the `[AEM Forms as a Cloud Service repository folder]/apps/` folder. For example, create a folder named as `experience-league`
+3. Navigate to `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` and create a `ClientLibraryFolder` as `clientlibs`.
+4. Create a folder named `js`.
+5. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder. -->
+   
+1. Add the below code for custom error handler in the JavaScript file, for example, `function.js`. The file comprises the code for custom error handler.
 Let's add the following code to the JavaScript file to display the response and headers, received from the REST service endpoint, in the browser console.
 
     ```javascript
@@ -247,36 +252,35 @@ Let's add the following code to the JavaScript file to display the response and 
         }
     ```
 
-    To call the default error handler from your custom error handler, the following line of the sample code is used:
-        `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
-
     >[!NOTE]
     >
-    > In the `.content.xml` file, add the `allowProxy` and `categories` properties. 
+    > * To call the default error handler from your custom error handler, the following line of the sample code is used: `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
+    > * In the `.content.xml` file, add the `allowProxy` and `categories` properties to use custom error handler client library in an Adaptive Form. 
     >
-    > * `allowProxy = [Boolean]true`
-    > * `categories= customfunctionsdemo`
-    >For example, in this case, [custom-errorhandler-name] is provided as `customfunctionsdemo`.
+    >   * `allowProxy = [Boolean]true`
+    >   * `categories= customfunctionsdemo`
+    >       For example, in this case, [custom-errorhandler-name] is provided as `customfunctionsdemo`.
 
+
+1. Add, commit, and push the changes in the repository.
+
+<!--
+
+<!--
 1. Save the `function.js` file.
 1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder.
-1. Add a text file as `js.txt`. The file contains:
+2. Add a text file as `js.txt`. The file contains:
 
     ```javascript
         #base=js
         functions.js
     ```
 
-1. Save the `js.txt` file.    
+3. Save the `js.txt` file.    
 The created folder structure looks like:
 
     ![Created Client Library Folder Structure](/help/forms/assets/customclientlibrary_folderstructure.png) 
-
-    >[!NOTE]
-    >
-    > To learn more about how to create custom functions, click [custom functions in the Rule Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#write-rules).
-
-1. Add, commit, and push the changes in the repository using the below commands:
+    using the below commands:
          
     ```javascript
 
@@ -284,6 +288,7 @@ The created folder structure looks like:
         git commit -a -m "Adding error handling files"
         git push
     ```
+-->
 
 1. [Run the pipeline.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)
 

@@ -6,6 +6,15 @@ exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
 ---
 # Dynamic Media with OpenAPI capabilities {#new-dynaminc-media-apis-overview}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|-----|
+
+>[!AVAILABILITY]
+>
+>Dynamic Media with OpenAPI capabilities guide is now available in PDF format. Download the entire guide and use Adobe Acrobat AI Assistant to answer your queries. 
+>
+>[!BADGE Dynamic Media with OpenAPI capabilities Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+
 In today's fast-paced digital world, unlocking the full potential of your brand's digital assets is crucial for staying ahead of the competition. A holistic Digital Assets Management (DAM) solution facilitates assets governance, promotes brand consistency, and accelerates content delivery while ensuring brand integrity, and exceptional customer experiences.
 
 Dynamic Media with OpenAPI capabilities puts DAM at the core of an agile and efficient content supply chain ecosystem to ensure asset governance and delivery.
@@ -14,7 +23,7 @@ Dynamic Media with OpenAPI capabilities puts DAM at the core of an agile and eff
 
 Dynamic Media with OpenAPI capabilities provides the following key benefits:
 
-* **Seamless integrations**: Dynamic Media with OpenAPI capabilities offers a comprehensive set of search and delivery APIs. It allows your developers to easily [integrate delivery of assets with their applications](/help/assets/integrate-dynamic-media-open-apis.md). The applications include Adobe as well as third-party applications. It provides a [Micro Frontend assets selector user interface](/help/assets/asset-selector.md) to search and select approved assets. The selector can be effortlessly integrated with any application based on JavaScript frameworks such as React JS, Angular JS, and Vanilla JS.
+* **Seamless integrations**: Dynamic Media with OpenAPI capabilities offers a comprehensive set of search and delivery APIs. It allows your developers to easily [integrate delivery of assets with their applications](/help/assets/integrate-dynamic-media-open-apis.md). The applications include Adobe as well as third-party applications. It provides a [Micro Frontend assets selector user interface](/help/assets/overview-asset-selector.md) to search and select approved assets. The selector can be effortlessly integrated with any application based on JavaScript frameworks such as React JS, Angular JS, and Vanilla JS.
 
 * **Centralized management of digital assets**: DAM is the single source of truth for all digital assets. Your digital assets are managed centrally in AEM Assets and delivered to consuming applications by reference using delivery URLs, without copying asset binaries. 
 
@@ -56,7 +65,7 @@ To enable Dynamic Media with OpenAPI capabilities on AEM as a Cloud Service, sub
 
    >[!NOTE]
    >
-   > To integrate with a non-Adobe application, provide domain names to whitelist where the application is hosted.
+   > To integrate with a non-Adobe application, provide domain names to allow list where the application is hosted.
 
 * Details of key customer contacts involved in integration project.
 
@@ -98,11 +107,11 @@ Once you submit the support ticket, Adobe enables Dynamic Media with OpenAPI cap
    </p>
 </td>
 <td>
-   <a href="/help/assets/asset-selector.md">
+   <a href="/help/assets/overview-asset-selector.md">
    <img alt="Adobe's Asset Selector" src="./assets/asset-selector-prereqs.png" />
    </a>
    <div>
-      <a href="/help/assets/asset-selector.md">
+      <a href="/help/assets/overview-asset-selector.md">
       <strong>Adobe's Micro-Frontend Asset Selector</strong>
       </a>
    </div>

@@ -7,21 +7,24 @@ feature: Asset Management, Publishing, Collaboration, Asset Processing
 ---
 # Search assets in [!DNL Assets view] {#search-assets}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 >[!CONTEXTUALHELP]
 >id="assets_search"
 >title="Search Assets"
 >abstract="Search for assets by specifying a keyword in the Search bar or by filtering assets based on their status, file type, MIME type, size, creation, modification, and expiration dates. You can also apply custom filters in addition to the standard filters. You can save the filtered results as a Saved Search or a Smart Collection."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-collections.html?lang=en#manage-smart-collection" text="Create Smart Collections"
 
-[!DNL Assets view] provides effective search, that just works by default. The search is comprehensive as it is full-text search. The powerful search functionality lets you quickly discover the appropriate asset and help you improve your content velocity. [!DNL Assets view] provides full-text search and even searches through the metadata such as smart tags, title, date created, and copyright.
+[!DNL Assets view] provides an effective search, that just works by default. The search is comprehensive as it is a full-text search. The powerful search functionality lets you quickly discover the appropriate asset and help you improve your content velocity. [!DNL Assets view] provides full-text search and even searches through the metadata such as smart tags, title, date created, and copyright.
 
-To search assets:
+To search assets, 
 
 * Click in the search box at the top of the page. By default, it searches within the folder that you are currently browsing. Do one of the following:
 
   ![search box](assets/search-box.png)
 
-  * Search using a keyword and optionally change folder. Press Return.
+  * Search using a keyword and optionally change the folder. Press Return.
 
   * Start working with a recently viewed asset, by searching for it directly. Click in the search box and select a recently viewed asset from the suggestions. 
 
@@ -36,22 +39,22 @@ You can filter the search results based on the following parameters.
 * Asset Status: Filter the search results using an `Approved`, `Rejected`, or `No Status` asset status.
 
 * File type: Filter the search results by the supported types of files that is, `Images`, `Documents`, and `Videos`.
-* MIME type: Filter for one or more of the supported file formats. <!-- TBD:  [supported file formats](/help/assets/supported-file-formats-assets-view.md). -->
+* MIME type: Filter for one or more of the supported file formats. <!-- TBD:  [supported file formats](/help/using/supported-file-formats.md). -->
 * Image size: Provide one of more of the minimum and maximum dimensions to filter images. Size is provided in dimensions in pixel and is not the file size of the images.
 * Created date: The creation date of the asset as provided in the metadata. The standard date format used is `yyyy-mm-dd`.
 * Modified date: The last modified date of the assets. The standard date format used is `yyyy-mm-dd`.
 
 * Expiration Date: Filter the search results based on an `Expired` asset status. In addition, you can specify an expiration date range for assets to further filter your search results.
 
-* Custom Filters: [Add custom filters](#custom-filters) to Assets view user interface. Apply the custom filters in addition to the standard filters to refine your search results.
+* Custom Filters: [Add custom filters](#custom-filters) to the Assets view user interface. Apply the custom filters in addition to the standard filters to refine your search results.
 
-You can sort the searched assets in increasing or decreasing order of `Name`, `Relevancy`, `Size`, `Modified`, and `Created`.
+You can sort the searched assets in increasing or decreasing order of `Name`, `Relevance`, `Size`, `Modified`, and `Created`. The searched assets are sorted based on `Relevance`, by default.
 
 ## Manage custom filters {#custom-filters}
 
 **Permissions required:**  `Can Edit`, `Owner`, or Administrator.
 
-Assets view also enables you to add custom filters to the user interface. You can then apply those custom filters in addition to the [standard filters](#refine-search-results) to refine your search results.
+Assets view also enable you to add custom filters to the user interface. You can then apply those custom filters in addition to the [standard filters](#refine-search-results) to refine your search results.
 
 Assets view provides the following custom filters:
 
@@ -119,41 +122,51 @@ To remove custom filters:
 
 You can search for an asset that is not available in any of the asset folders by utilizing the [!DNL Adobe Firefly] asset search feature within [!DNL Experience Manager Assets]. This allows you to efficiently generate assets in real-time that are not stored in the asset folders.
 
-### Before you begin
+### Before you begin {#search-assets-firefly-prereqs}
 
 You must have an active [!DNL Adobe Express] subscription.
 
-### Generate assets
+### Generate assets {#generate-assets-firefly}
 
 To generate new assets using [!DNL Adobe Firefly]:
 
 1. Navigate to the [!DNL AEM Assets] workspace.
-1. Enter the asset name in the search bar at the top of the page.<br>
-For instance, you can search an asset using the keyword `Bugatti Type 57`. When searching for the asset, no results are found because the asset is not present in any of the asset folders.
-1. Type the asset name in the search bar in the middle of the page and click **[!UICONTROL Generate]**.
- ![Firefly integration](assets/firefly-integration.jpg)
- *Figure: No results found for Bugatti Type 57 in the asset folder.* <br>
-The new assets are successfully generated.
- ![Firefly integration](assets/bugatti-type-57.jpg)
- *Figure: Reference assets searched using [!DNL Adobe Firefly] asset search feature.* <br>
-You can upload these assets to your preferred folder for easy access.
 
-### Upload assets
+1. Type the asset name in the search bar. For example, you can search an asset using the keyword `Bugatti Type 57`. When searching for the asset, no results are found because the asset is not present in any of the asset folders. To generate assets using AI, click **[!UICONTROL Generate with Firefly]**. The [!DNL Adobe Firefly] screen appears. 
+
+   ![Firefly integration](assets/firefly-integration.png)
+
+   The new assets are successfully generated. Additionally, you can change the image description by typing the new text prompt in the description box. [Learn how to write a good AI prompt to generate extraordinary and relevant content.](https://helpx.adobe.com/in/firefly/using/tips-and-tricks.html) Alternatively, you can [edit image with various other features like changing style, image dimensions, and more.](https://helpx.adobe.com/in/firefly/using/text-to-image.html)
+
+   ![Firefly integration](assets/bugatti-type-57.png)
+
+1. Select an image that you want to save. Click **[!UICONTROL Save]** to save the assets in your preferred folder for easy access.
+
+1. Save asset form appears. Specify the following fields:
+
+   * Enter a name for the file in the **Save As** field.
+   * Select a destination folder. 
+   * Enter details such as Project or Campaign name, Keywords, Channels, Time frame, and Region. 
+
+   ![Firefly integration](assets/save-generated-asset.png)
+
+1. Click **Save as new asset** to save the asset(s).
+
+### Upload assets {#upload-assets-firefly}
 
 To upload the generated asset to the assets repository:
 
 1. Click **[!UICONTROL Upload]**.
 1. Select the asset folder to which you need to upload the asset and click **[!UICONTROL Select Folder]**.
  ![Upload asset](assets/upload-asset-firefly.jpg)
- *Figure: Select the folder to upload asset.*
 
 ## Saved searches {#saved-search}
 
-Search functionality is quite easy to use in [!DNL Assets view]. From within the search box, you can just type a keyword and press return to see the results, or you can quickly search again for your recently searched keywords in a single click.
+Search functionality is quite easy to use in [!DNL Assets view]. From within the search box, you cannot only type a keyword and press return to see the results, you can also quickly search again for your recently searched keywords in a single click.
 
 You can also filter the search results based on specific criteria around metadata and type of assets. For frequently used filters, to improve the search experience, [!DNL Assets view] lets you save the search parameters. You can then select the saved search to search and apply the filter with just a single click as well.
 
-To create a saved search, search for some asset, apply one or more filters, and click **[!UICONTROL Save as]** > **[!UICONTROL Saved Search]** in the [!UICONTROL Filters] panel. You can also click **[!UICONTROL Save as]** and select **[!UICONTROL Smart Collection]** to save the results as a Smart Collection. See [Create a Smart Collection](manage-collections-assets-view.md#create-a-smart-collection) for more details.
+To create a saved search, search for some asset, apply one or more filters, and click **[!UICONTROL Save as]** > **[!UICONTROL Saved Search]** in the [!UICONTROL Filters] panel. You can also click **[!UICONTROL Save as]** and select **[!UICONTROL Smart Collection]** to save the results as a Smart Collection. See [Create a Smart Collection](manage-collections.md#create-a-smart-collection) for more details.
 
 ![Create smart collection](assets/create-smart-collection.png)
 
@@ -172,7 +185,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 You can select the assets that display in the search results and do the following actions:
 
-* **Find Similar Image**: Find similar image asset in the Assets UI based on the metadata and smart tags.
+* **Find Similar Image**: Find a similar image asset in the Assets UI based on the metadata and smart tags.
 
 * **Details**: View and edit asset properties.
 
@@ -196,33 +209,33 @@ You can select the assets that display in the search results and do the followin
 
 * **Rename**: Rename an asset.
 
-* **Copy to Libraries**: Add an asset to Library.
+* **Copy to Libraries**: Add an asset to the Library.
 
 * **Assign Tasks**: Assign tasks to users for an asset.
 
-* **Watch**: [Monitor the operations](manage-notifications-assets-view.md) performed on an asset.
+* **Watch**: [Monitor the operations](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/search-assets) performed on an asset.
 
-## Configuring search first homepage {#configuring-search-first-homepage}
+## Configure search first homepage {#configuring-search-first-homepage}
 
-Experience Manager Assets enables you to select the default landing page for your organization. When using Search First as the home page, you also have options to tailor the branding of the page by configuring the background and logo images to match your brand.
+Assets view enables you to select the default landing page for your organization. When using Search First as the home page, you also have options to tailor the branding of the page by configuring the background and logo images to match your brand.
 
 To configure the search first homepage, execute the steps below:
 
 1. Navigate to **[!UICONTROL Settings]** > **[!UICONTROL General Settings]**.
-1. Select **[!UICONTROL Search first]**. It further opens search first related configuration. You can set [alignment](#setting-alignment-search-bar) or [set background and logo image](#setting-background-image-and-logo) of your homepage.
+1. Select **[!UICONTROL Search first]**. It further opens the search first related configuration. You can set [alignment](#setting-alignment-search-bar) or [set the background and logo image](#setting-background-image-and-logo) of your homepage.
 
 ### Setting alignment of search bar {#setting-alignment-search-bar}
 
-[!DNL Assets view] allows you to change alignment of the search bar. You can make search bar appear either at the center or at the top. Select the appropriate alignment and click **[!UICONTROL Save]**.
+[!DNL Assets view] allows you to change the alignment of the search bar. You can make the search bar appear either at the center or at the top. Select the appropriate alignment and click **[!UICONTROL Save]**.
 
    ![Search first homepage alignment](assets/search-first-alignment.png)
 
 ### Setting background and logo image of homepage {#setting-background-image-and-logo}
 
-You can add brand logo and background image to your search first homepage. Execute the following steps:
+You can add a brand logo and background image to your search first homepage. Execute the following steps:
 
-1. Navigate to **[!UICONTROL Background and Logo image]** section under **[!UICONTROL Homepage]**.
-1. Click **[!UICONTROL Replace]** to browse images from existing assets repository.
+1. Navigate to the **[!UICONTROL Background and Logo image]** section under **[!UICONTROL Homepage]**.
+1. Click **[!UICONTROL Replace]** to browse images from the existing assets repository.
 1. Click **[!UICONTROL Save]**. [Preview](#preview-configured-homepage) the changes to review the modifications.
 
 ### Preview configured homepage {#preview-configured-homepage}
@@ -230,10 +243,10 @@ You can add brand logo and background image to your search first homepage. Execu
 You can preview to check the layout and formatting of the search first homepage. Using **[!UICONTROL Preview]**, you can fix the layout or make modifications as per the requirement. To preview the configured homepage, execute the steps below:
 
 1. Click **[!UICONTROL General Settings]** and select **[!UICONTROL Search first]**.
-1. Navigate to **[!UICONTROL Customize search first homepage]** and click **[!UICONTROL Preview]**. Toggle through **[!UICONTROL Dark theme]** button to preview homepage in dark or light theme.
+1. Navigate to **[!UICONTROL Customize search first homepage]** and click **[!UICONTROL Preview]**. Toggle through the **[!UICONTROL Dark theme]** button to preview the homepage in dark or light theme.
 1. Click **[!UICONTROL Close]** to close the preview screen.
 
-   ![Search first homepage preview](assets/search-first-preview.gif)
+   ![Search first homepage preview](/help/assets/assets/search-first-preview.gif)
 
 ## Contextual Search {#contextual-search}
 
@@ -249,10 +262,9 @@ To access Contextual Search in Experience Manager Assets:
 
 1. Define the text prompt in the Search text box and click **[!UICONTROL Contextual Search]**.
 
-   ![Contextual Search text prompt](assets/contextual-search-text-prompt.png)
+   ![Contextual Search text prompt](/help/assets/assets/wknd-contextual-search.png)
 
    [!DNL Experience Manager Assets] displays the search results.
-
 
 ### Supported filters {#supported-filters}
 
@@ -296,7 +308,7 @@ Contextual Search supports the following filters out-of-the-box. Base your text 
 
 **Example 3**
 
-**Text prompt**: I need images of blue sky that are 1500 and 2500 pixel height and created in the past month that are not expired and approved.
+**Text prompt**: I need images of blue sky that are 1500 and 2500 pixel height and created in the past month that is not expired and approved.
 
 [!DNL Experience Manager Assets] applies the following filters automatically and displays the search results:
 
@@ -316,7 +328,7 @@ Administrators also have the option to disable Contextual Search for users in yo
 
 ### Contextual Search feedback {#contextual-search-feedback}
 
-If you need to provide feedback on the Contextual Search feature, click ![Contextual Search icon](assets/do-not-localize/Smock_Help_18_N.svg) and click the Feedback icon. Select the feedback type, specify the subject and description, and click **[!UICONTROL Submit]**.
+If you need to provide feedback on the Contextual Search feature, click ![Contextual Search icon](assets/do-not-localize/Smock_Help_18_N.svg)  and click the Feedback icon. Select the feedback type, specify the subject and description, and click **[!UICONTROL Submit]**.
 
 ![Contextual Search feedback](assets/contextual-search-feedback.png)
 
@@ -329,3 +341,5 @@ If you need to provide feedback on the Contextual Search feature, click ![Contex
 * Provide documentation feedback using [!UICONTROL Edit this page] ![edit the page](assets/do-not-localize/edit-page.png) or [!UICONTROL Log an issue] ![create a GitHub issue](assets/do-not-localize/github-issue.png) available on the right sidebar.
 
 * Contact [Customer Care](https://experienceleague.adobe.com/?support-solution=General#support)
+
+

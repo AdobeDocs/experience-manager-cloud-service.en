@@ -15,7 +15,7 @@ This document provides answers to the most frequently asked questions about Clou
 
 Yes. Add the `maven-toolchains-plugin` with proper settings for Java&trade; 11.
 
-The process is documented [here](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
+The process is documented - see [Project Creation Wizard](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
 
 For example, see the [wknd project sample project code](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
@@ -27,7 +27,7 @@ Your AEM Cloud Manager build may fail when attempting to switch the build from J
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 > [Help 1]
 ```
 
-For instructions on how to remove this plugin, see [here](https://cqdump.joerghoh.de/2019/01/03/from-scr-annotations-to-osgi-annotations/).
+For instructions on how to remove this plugin, see [From SCR annotations to OSGI annotations](https://cqdump.joerghoh.de/2019/01/03/from-scr-annotations-to-osgi-annotations/).
 
 ## My build fails with an error about RequireJavaVersion after switching from Java&trade; 8 through Java&trade; 11. What can I do? {#build-fails-requirejavaversion}
 
@@ -55,11 +55,11 @@ This value allows subsequent deployment to still be installed when the version d
 
 You can also set the version to `-SNAPSHOT` for stage and production builds or deployments. Cloud Manager automatically sets a proper version number and creates a tag for you in git. This tag can be referred to later, if necessary.
 
-Further details about version handling are [documented here](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
+For further details about version handling see [Maven Project Version Handling](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 ## How does package and bundle versioning work for stage and production deployments? {#snapshot-version}
 
-In stage and production deployments, an automatic version is generated as [documented here](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
+In stage and production deployments, an automatic version is generated - see [Maven Project Version Handling](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 For custom versioning in stage and production deployments, set a proper three-part maven version like `1.0.0`. Increase the version each time you deploy to production.
 

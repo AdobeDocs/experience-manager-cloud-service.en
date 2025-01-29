@@ -35,4 +35,4 @@ All requests made using the access token are made *by the user account that gene
 
 This user account means that you must check that the account has the permissions required to run GraphQL queries.
 
-You can check these permissions by using GraphiQL on the local instance. More details about [permissions can be found here](/help/headless/security/permissions.md).
+You can check these permissions by using GraphiQL on the local instance. For more details see [Permission considerations for headless content](/help/headless/security/permissions.md).

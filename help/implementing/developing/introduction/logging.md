@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 
 AEM as a Cloud Service is a platform for customers to include custom code to create unique experiences for their customer base. With this in mind, the logging service is a critical function to debug and understand code execution on local development, and cloud environments, particularly the AEM as a Cloud Service's Dev environments.
 
-AEM as a Cloud Service logging settings and log levels are managed in configuration files that are stored as part of the AEM project in Git, and deployed as part of the AEM project via Cloud Manager. Logging in AEM as a Cloud Service can be broken into two logical sets:
+AEM as a Cloud Service logging settings and log levels are managed in configuration files that are stored as part of the AEM project in Git, and deployed as part of the AEM project via Cloud Manager. Logging in AEM as a Cloud Service can be broken into three logical sets:
 
 * AEM logging, which performs logging at the AEM application level
 * Apache HTTPD Web Server/Dispatcher logging, which performs logging of the web server and Dispatcher on the Publish tier.
@@ -138,12 +138,13 @@ AEM Log levels are set per environment type via OSGi configuration, which in tur
 
 AEM Java logs are defined as OSGi configuration, and thus target specific AEM as a Cloud Service environments using run mode folders.
 
-Configure java logging for custom Java packages via OSGi configurations for the Sling LogManager factory. There are two supported configuration properties:
+Configure java logging for custom Java packages via OSGi configurations for the Sling LogManager factory. There are three supported configuration properties:
 
 | OSGi Configuration property  | Description  |
 |---|---|
-| org.apache.sling.commons.log.names | The Java packages for which to collect log statements.  |
-| org.apache.sling.commons.log.level | The log level at which to log the Java packages, specified by org.apache.sling.commons.log.names  |
+| `org.apache.sling.commons.log.names` | The Java packages for which to collect log statements.  |
+| `org.apache.sling.commons.log.level` | The log level at which to log the Java packages, specified by `org.apache.sling.commons.log.names`  |
+| `org.apache.sling.commons.log.file`| Specify the target for the output: `logs/error.log`|
 
 Changing other LogManager OSGi configuration properties may result in availability issues in AEM as a Cloud Service.
 
@@ -157,6 +158,7 @@ The following are examples of the recommended logging configurations (using the 
 {
     "org.apache.sling.commons.log.names": ["com.example"],
     "org.apache.sling.commons.log.level": "debug"
+    "org.apache.sling.commons.log.file": "logs/error.log"
 }
 ```
 
@@ -168,6 +170,7 @@ The following are examples of the recommended logging configurations (using the 
 {
     "org.apache.sling.commons.log.names": ["com.example"],
     "org.apache.sling.commons.log.level": "warn"
+    "org.apache.sling.commons.log.file": "logs/error.log"
 }
 ```
 
@@ -179,6 +182,7 @@ The following are examples of the recommended logging configurations (using the 
 {
     "org.apache.sling.commons.log.names": ["com.example"],
     "org.apache.sling.commons.log.level": "error"
+    "org.apache.sling.commons.log.file": "logs/error.log"
 }
 ```
 
@@ -500,8 +504,6 @@ Define DISP_LOG_LEVEL debug
 
 AEM as a Cloud Service provides access to CDN logs, which are useful for use cases including cache hit ratio optimization. The CDN log format cannot be customized and there is no concept of setting it to different modes such as info, warn, or error.
 
-CDN logs will be forwarded to Splunk for new Splunk forwarding support ticket requests; customers who already have Splunk forwarding enabled will be able to add CDN logs in the future.
-
  **Example**
 
  ```
@@ -602,76 +604,18 @@ Depending on the traffic and the amount of log statement written by Debug, this 
 * Done judiciously, and only when absolutely necessary
 * Reverted to the appropriate levels and re-deployed as soon as possible
 
-## Splunk Logs {#splunk-logs}
+## Log Forwarding {#log-forwarding}
 
-Customers who have Splunk accounts may request via customer support ticket that their AEM Cloud Service logs are forwarded to the appropriate index. The logging data is equivalent to what is available through the Cloud Manager log downloads, but customers may find it convenient to use the query features available in the Splunk product.
+While logs can be downloaded from Cloud Manager, some organizations find it benficial to forward those logs to a preferred logging destination. AEM supports streaming logs to the following destinations:
 
-The network bandwidth associated with logs sent to Splunk are considered part of the customer's Network I/O usage.
+* Azure Blob Storage
+* Datadog
+* HTTPD
+* Elasticsearch (and OpenSearch)
+* Splunk
 
-CDN logs will be forwarded to Splunk for new support ticket requests; customers who already have Splunk forwarding enabled will be able to add CDN logs in the future.
-
-### Enabling Splunk Forwarding {#enabling-splunk-forwarding}
-
-In the support request, customers should indicate:
-
-* Splunk HEC endpoint address. This endpoint must have a valid SSL certificate and be publicly accessible.
-* The Splunk index
-* The Splunk port 
-* The Splunk HEC token. See [this page](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) for more information.
-
-The properties above should be specified for each relevant program/environment type combination. For example, if a customer wanted dev, staging, and production environments, they should provide three sets of information, as indicated below. 
+Refer to the [Log Forwarding article](/help/implementing/developing/introduction/log-forwarding.md) for details on how to configure this feature.
 
 >[!NOTE]
 >
->Splunk forwarding for sandbox program environments is not supported.
-
->[!NOTE]
->
->The Splunk forwarding capability is not possible from a dedicated egress IP address.
-
-You should make sure that the initial request includes all dev environment that should be enabled, in addition to the stage/prod environments. Splunk must have an SSL certificate, and be public facing. 
-
-If any new dev environments created after the initial request are intended to have Splunk forwarding, but do not have it enabled, an additional request should be made.
-
-Also note that if dev environments have been requested, it is possible that other dev environments not in the request or even sandbox environments will have Splunk forwarding enabled and will share a Splunk index. Customers can use the `aem_env_id` field to distinguish between these environments.
-
-Below you will find a sample customer support request:
-
-Program 123, Production Env
-
-* Splunk HEC endpoint address: `splunk-hec-ext.acme.com`
-* Splunk index: acme_123prod (customer can choose whatever naming convention it wantes)
-* Splunk port: 443
-* Splunk HEC token: ABC123
-
-Program 123, Stage Env
-
-* Splunk HEC endpoint address: `splunk-hec-ext.acme.com`
-* Splunk index: acme_123stage
-* Splunk port: 443
-* Splunk HEC token: ABC123
-
-Program 123, Dev Envs
-
-* Splunk HEC endpoint address: `splunk-hec-ext.acme.com`
-* Splunk index: acme_123dev
-* Splunk port: 443
-* Splunk HEC token: ABC123
-
-It may be sufficient for the same Splunk index to be used for each environment, in which case either the `aem_env_type` field can be used to differentiate based on the values dev, stage, and prod. If there are multiple dev environments, the `aem_env_id` field can also be used. Some organizations may choose a separate index for the production environment's logs if the associated index limits access to a reduced set of Splunk users. 
-
-Here is an example log entry:
-
-```
-aem_env_id: 1242
-aem_env_type: dev
-aem_program_id: 12314
-aem_tier: author
-file_path: /var/log/aem/error.log
-host: 172.34.200.12 
-level: INFO
-msg: [FelixLogListener] com.adobe.granite.repository Service [5091, [org.apache.jackrabbit.oak.api.jmx.SessionMBean]] ServiceEvent REGISTERED
-orig_time: 16.07.2020 08:35:32.346
-pod_name: aemloggingall-aem-author-77797d55d4-74zvt
-splunk_customer: true
-```
+>Log forwarding for sandbox program environments is not supported.

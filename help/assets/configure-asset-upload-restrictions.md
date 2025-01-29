@@ -7,6 +7,9 @@ role: User, Admin, Developer
 ---
 # Configure asset upload restrictions {#configure-asset-upload-restrictions}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 You can configure Adobe Experience Manager Assets to restrict the type of assets that users can upload based on the MIME type. 
 
 >[!IMPORTANT]

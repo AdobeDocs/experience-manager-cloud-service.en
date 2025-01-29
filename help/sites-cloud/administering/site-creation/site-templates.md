@@ -20,7 +20,7 @@ Templates are powerful because they are reusable and customizable. And since you
 
 >[!NOTE]
 >
->AEM site templates should not be confused with [page templates](/help/sites-cloud/authoring/sites-console/templates.md). Site templates define the overall structure of a site. A page template defines the structure and initial content of an individual page.
+>AEM site templates should not be confused with [page templates](/help/sites-cloud/authoring/page-editor/templates.md). Site templates define the overall structure of a site. A page template defines the structure and initial content of an individual page.
 >
 >AEM site templates should not be confused with [AEM site themes](site-themes.md). AEM site themes only contain the styling information for an AEM site. AEM site templates define site structure and initial content, and contain an AEM site theme to allow for [quick site creation](create-site.md).
 

@@ -1,6 +1,6 @@
 ---
 title: Content Fragments
-description: Adobe Experience Manager as a Cloud Service Content Fragments allow you to design, create, curate, and use page-independent content
+description: Adobe Experience Manager as a Cloud Service Content Fragments allow you to design, create, curate, and use channel-independent content that can also be used when authoring your pages.
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
@@ -8,11 +8,11 @@ role: User
 ---
 # Content Fragments {#content-fragments}
 
-Content fragments in Adobe Experience Manager (AEM) as a Cloud Service are [created and managed as page-independent assets](/help/sites-cloud/administering/content-fragments/overview.md).
+Content fragments in Adobe Experience Manager (AEM) as a Cloud Service are [created and managed as page-independent assets](/help/sites-cloud/administering/content-fragments/overview.md), allowing you to create channel-neutral content, together with (possibly channel-specific) variations. You can use these fragments, and their variations, when authoring your content pages.
 
-They allow you to create channel-neutral content, together with (possibly channel-specific) variations. You can then use these fragments, and their variations, when authoring your content pages.
-
-Together with the updated JSON exporter, structured content fragments can also be used to deliver AEM content via Content Services to channels other than AEM pages.
+>[!CAUTION]
+>
+>This page must be read in conjunction with [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md) (and related pages) as it introduces basic terminology and concepts, together with information about creating and managing fragments, and delivering structured content fragments to channels other than AEM pages.
 
 >[!NOTE]
 >
@@ -34,10 +34,6 @@ Together with the updated JSON exporter, structured content fragments can also b
 >Experience Fragments can contain content in the form of Content Fragments, but not the other way around.
 >
 >For more information, see [Understanding Content Fragments and Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
-
->[!CAUTION]
->
->This page must be read in conjunction with [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md) (and related pages) as it introduces basic terminology and concepts, together with creating and managing fragments.
 
 The content fragments enable:
 

@@ -217,9 +217,9 @@ Within the dialog, individual fields are defined:
 
 ### Design Dialogs {#design-dialogs}
 
-Design dialogs are similar to the dialogs used to edit and configure content, but they provide the interface for template authors to pro-configure and provide design details for that component on a page template. Page templates are then used by the content authors to create content pages. See the [template documentation](/help/sites-cloud/authoring/sites-console/templates.md) for details on how templates are created.
+Design dialogs are similar to the dialogs used to edit and configure content, but they provide the interface for template authors to pro-configure and provide design details for that component on a page template. Page templates are then used by the content authors to create content pages. See the [template documentation](/help/sites-cloud/authoring/page-editor/templates.md) for details on how templates are created.
 
-[Design dialogs are used when editing a page template](/help/sites-cloud/authoring/sites-console/templates.md), though they are not needed for all components. For example, the **Title** and **Image Components** both have design dialogs, whereas the **Social Media Sharing Component** does not.
+[Design dialogs are used when editing a page template](/help/sites-cloud/authoring/page-editor/templates.md), though they are not needed for all components. For example, the **Title** and **Image Components** both have design dialogs, whereas the **Social Media Sharing Component** does not.
 
 ### Coral UI and Granite UI {#coral-and-granite}
 
@@ -274,7 +274,7 @@ After you have create a component, you must enable it to use it. Using it shows 
 
 After a component has been defined it must be made available for use. To make a component available for use in a template, you must enable the component in the policy of the layout container of the template.
 
-See the [template documentation](/help/sites-cloud/authoring/sites-console/templates.md) for details on how templates are created.
+See the [template documentation](/help/sites-cloud/authoring/page-editor/templates.md) for details on how templates are created.
 
 ### Components and the Content They Create {#components-and-the-content-they-create}
 

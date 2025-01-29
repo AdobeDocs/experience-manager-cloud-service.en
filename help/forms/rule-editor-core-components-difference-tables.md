@@ -1,7 +1,7 @@
 ---
 title: What is the difference between the Foundation and Core Components rule editors?
 description: This article explains the difference between the Foundation and Core Components rule editors
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms, Core Components, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 0feef02c-6186-45f2-9929-07120126c596

@@ -4,10 +4,8 @@ description: Enhance form security with hCaptcha&reg; service effortlessly. Step
 topic-tags: Adaptive Forms, author
 keywords: hCaptcha&reg; service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Form submission security, Form spam prevention
 feature: Adaptive Forms, Foundation Components
-hide: yes
-hidefromtoc: yes
-exl-id: dc7ca723-1008-472a-b6eb-8e9ed6332a16
 role: User, Developer
+exl-id: dc7ca723-1008-472a-b6eb-8e9ed6332a16
 ---
 # Connect your AEM Forms environment with hCaptcha&reg; {#connect-your-forms-environment-with-hcaptcha-service}
 
@@ -25,7 +23,7 @@ AEM Forms as a Cloud Service supports the following CAPTCHA solutions:
 
 hCaptcha&reg; service protects your forms from bots, spam, and automated abuse. It poses a checkbox widget challenge and evaluates the user response to determine if it's a human or a bot interacting with the form. It prevents the user to proceed if the test fails and helps make online transactions secure by keeping bots from posting spam or malicious activities.
 
-AEM Forms as a Cloud Service supports hCaptcha&reg; in Adaptive Forms Core Components. You can use it to present a checkbox widget challenge on form submission.
+AEM Forms as a Cloud Service supports hCaptcha&reg; in Adaptive Forms. You can use it to present a checkbox widget challenge on form submission.
 
 <!-- ![hCaptcha&reg;](assets/hCaptcha&reg;-challenge.png)-->
 

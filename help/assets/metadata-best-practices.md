@@ -12,6 +12,9 @@ experience manager metadata-->
 
 # Metadata management and best practices {#metadata-best-practices}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- |---------|----|-----|
+
 To make your business stand out and engage more customers, utilizing high-quality visuals like images, videos, and other digital assets is crucial. To achieve this, you need a process that allows you to add metadata to all digital assets, making them easily searchable. Metadata is the data that provides essential details about digital assets, including the asset's name, type, location within a repository, modified date, and associated tags. Metadata streamlines asset management, improves searchability and accessibility, and ensures effective version control.
 
 Learn how to use metadata in the Digital Asset Management (DAM) system to effectively [manage metadata of your digital assets](manage-metadata.md).

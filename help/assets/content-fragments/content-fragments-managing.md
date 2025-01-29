@@ -35,7 +35,7 @@ The [Content Fragment Editor](#opening-the-fragment-editor) provides various [mo
 >
 >They are now primarily managed with the **[Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** console, though they can still be managed from the **Assets** console. This section covers management from the **Assets** console.
 >
->There are two editors for authoring Content Fragments. This section covers the original editor, primarily accessed from the **Assets** console. See the Sites documentation, [Content Fragments - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), for details of the new editor (primarily accessed from the **Content Fragments** console). Both editors have a toggle switch in the top toolbar to provide quick access to the other editor.
+>There are two editors for authoring Content Fragments; although the basic functionality is the same, there are some differences. This section covers the original editor, primarily accessed from the **Assets** console. See the Sites documentation, [Content Fragments - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), for details of the new editor (primarily accessed from the **Content Fragments** console). Both editors have a toggle switch in the top toolbar to provide quick access to the other editor.
 
 ## Creating Content Fragments {#creating-content-fragments}
 
@@ -307,6 +307,7 @@ In addition to the standard options, [Timeline](/help/assets/manage-digital-asse
 >* Entered in the fragment editor
 >* Specific to a selected segment of text within the fragment
 >
+>Neither show the comments entered in the new [Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md#commenting-on-your-fragment).
 
 For example:
 

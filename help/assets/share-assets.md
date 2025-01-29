@@ -7,6 +7,9 @@ exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
 ---
 # Share and distribute assets managed in [!DNL Experience Manager] {#share-assets-from-aem}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/link-sharing.html?lang=en)                  |
@@ -115,6 +118,7 @@ The email template can be customized using plain text or HTML. The default edita
 | `${emailMessage}` | Email body |
 | `${pagePath}` | URL of the shared link |
 | `${linkExpiry}` | Shared link expiry date |
+
 <!--| `${host.prefix}` | Origin of the [!DNL Experience Manager] instance, for example `http://www.adobe.com"` |--> 
 
 #### Customized email template example {#custom-email-template-example}

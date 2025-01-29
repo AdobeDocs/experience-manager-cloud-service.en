@@ -12,6 +12,9 @@ exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
 ---
 # Configure transcription in [!DNL Experience Manager Assets] {#configure-transcription-service}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 Transcription is the process of translating the audio from an audio or video file into text (speech to text) using the speech recognition technology. 
 [!DNL Adobe Experience Manager Assets] is configured with [!DNL Azure Media Services] which automatically generates text transcript of the spoken language in a supported audio or video file in the WebVTT (.vtt) format. When an audio or video asset is processed in [!DNL Experience Manager Assets], the transcription service automatically generates the text transcript rendition of the audio or video asset and stores it at the same location within your Assets repository where the original asset resides. The [!DNL Experience Manager Assets] transcription service allows marketers to effectively manage their audio and video content with added discoverability of the text content and increase the ROI of these assets by supporting accessibility and localization.
 

@@ -81,10 +81,13 @@ A marketing practitioner wants to create content that is tailored to the layout 
 As you explore the Universal Editor and move forward implementing it in your own projects, please keep the following limitations in mind.
 
 * No more than 25 AEM resources (Content Fragments, pages, Experience Fragments, Assets, etc.) should be references as instrumentation on a single page.
-* AEM as a Cloud Service is the only supported AEM backend.
+* AEM as a Cloud Service and [AEM 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) are the only supported AEM backends.
 * AEM as a Cloud Service release `2023.8.13099` or higher is required.
 * Content authors must have their own individual Experience Cloud accounts.
-* Chrome and Edge are the supported browsers
+* As part of AEM, the Universal Editor supports the same desktop browsers as AEM.
+  * Mobile versions of these browsers are not supported.
+
+{{ue-ip-allow-lists}}
 
 ## Next Steps {#next-steps}
 

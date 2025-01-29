@@ -8,6 +8,9 @@ exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
 ---
 # Generate variations of assets using [!DNL Adobe Creative Cloud] integration {#content-automation}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 Content automation add-on integrates [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] and [!DNL Adobe Creative Cloud] APIs to creatively process your assets at scale. [!DNL Experience Manager] uses cloud-based [asset microservices](/help/assets/asset-microservices-overview.md) to use the [!DNL Adobe Creative Cloud] features and automate the asset creation and media handling.
 
 To edit assets in [!DNL Adobe Photoshop] and [!DNL Adobe Lightroom], you do not have to download assets from [!DNL Experience Manager Assets], edit, and upload them again. You create and configure a processing profile in [!DNL Experience Manager], apply the profile to a folder, and upload the assets to the folder. Your uploaded assets are reprocessed based on the processing profiles and you get variations of these assets. The consistent and effortless bulk processing saves manual efforts and increases content velocity, that too without the need of superb creative skills. Also, the developers and the partners can extend the asset microservices with direct access to these APIs and include custom logic.

@@ -148,7 +148,7 @@ For detailed configurations of the RTE plug-ins, see [how to activate and config
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-The [Core Components text component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) lets template editors to configure many RTE plug-ins using the user interface as content policies, eliminating the need for technical configuration. Content policies can work with RTE UI configurations as described in this document. For more information, see [create page templates](/help/sites-cloud/authoring/sites-console/templates.md) and the [Core Components developer documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
+The [Core Components text component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) lets template editors to configure many RTE plug-ins using the user interface as content policies, eliminating the need for technical configuration. Content policies can work with RTE UI configurations as described in this document. For more information, see [create page templates](/help/sites-cloud/authoring/page-editor/templates.md) and the [Core Components developer documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
 >For reference purposes, the default Text components (delivered as part of a standard installation) can be found at:
 >
@@ -214,7 +214,7 @@ The pop-up node under inline or full-screen mode contains a list of the pop over
 
 ## RTE user interface settings and content policies {#rtecontentpolicies}
 
-Administrators can control the RTE options using content policies, say instead of doing the configuration as described above. Content policies define the design properties of a component when used as part of an [editable template](/help/sites-cloud/authoring/sites-console/templates.md). For example, if a text component that uses the RTE is used with an editable template, the content policy can define that the bold option be available and a few paragraph formatting options be available. Content policies are reusable and can be applied across multiple templates.
+Administrators can control the RTE options using content policies, say instead of doing the configuration as described above. Content policies define the design properties of a component when used as part of an [editable template](/help/sites-cloud/authoring/page-editor/templates.md). For example, if a text component that uses the RTE is used with an editable template, the content policy can define that the bold option be available and a few paragraph formatting options be available. Content policies are reusable and can be applied across multiple templates.
 
 The available options in the RTE flow downstream from the user interface configurations to the content policies.
 

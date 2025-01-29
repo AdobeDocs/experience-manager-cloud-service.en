@@ -7,6 +7,9 @@ role: User, Admin
 ---
 # Configure asset metadata mapping between Adobe Workfront and Experience Manager Assets {#asset-metadata-mapping-workfront-aem-assets}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 You can map the asset metadata fields between Adobe Workfront and Experience Manager as a Cloud Service applications. As a result of mapping metadata fields, when you send an asset from Workfront to Experience Manager Assets, you can view the mapped asset metadata in Experience Manager Assets.
 
 For example, if you need to retain the metadata fields for an image such as name, description, and the project it belongs to in Workfront when you send the image to Experience Manager Assets, configure and map these fields to Experience Manager Assets properties.

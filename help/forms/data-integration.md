@@ -53,6 +53,10 @@ Review the following to get started, understand, and implement data integration:
 * [Work with form data model (FDM)](work-with-form-data-model.md)
 * [Use form data model (FDM)](using-form-data-model.md)
 
+<!--
+
 >[!NOTE]
 >
 >[!UICONTROL Experience Manager Forms] does not support relational database.
+
+-->

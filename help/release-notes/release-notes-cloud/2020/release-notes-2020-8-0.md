@@ -78,7 +78,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
   >[!NOTE]
   >Content Audit has since been renamed to Experience Audit.
 
-   See [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
+   See [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-dashboard.md) for more details.
 
 * Newlycreated environments in Assets programs will now be automatically configured with Smart Content Services.
 

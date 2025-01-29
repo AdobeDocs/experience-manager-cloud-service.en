@@ -3,10 +3,9 @@ title: How can we create and use themes in Adaptive Forms?
 description: You can use themes to style and provide a visual identity to an Adaptive Form using Core Components. You can share a theme across any number of Adaptive Forms.
 keywords: adaptive forms styling Core Components. using theme in Core Components, styling adaptive form, customizing themes
 feature: Adaptive Forms, Core Components
-exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 role: User, Developer
+exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 ---
-
 # Use themes to style Core Components based Adaptive Forms{#themes-for-af-using-core-components}
 
 | Version | Article link |
@@ -426,11 +425,6 @@ Adaptive Form themes are used as part of an Adaptive Form template to define sty
 * **Changing container panel layout width**
 
   Changing container panel layout width is not recommended. When you specify width of a container panel, it becomes static and does not adapt to different displays.
-
-* **Using a form editor or theme editor for working with header and footer**
-
-  Use a theme editor if you want to style the header and footer using styling options such as font style, background, and transparency.
-  If you want to provide information such as a logo image, company name in the header, and copyright information in the footer, use the form editor options.
 
 ## Frequently asked questions {#faq} 
 

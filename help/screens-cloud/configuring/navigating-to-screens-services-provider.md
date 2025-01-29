@@ -22,7 +22,7 @@ The following section how to configure and set up Screens Services Provider.
 
 Follow the steps below to set up Screens Services Provider:
 
-1. Navigate to Screens Services Provider from [here](https://experience.adobe.com/screens).
+1. Navigate to the [Screens Services Provider](https://experience.adobe.com/screens).
 
    >[!CAUTION]
    >If you have access to multiple organizations, ensure that you have logged into correct Organization. To change your organization, click the Org name from the top right-hand corner of the screen and choose the required organization to which you need access.

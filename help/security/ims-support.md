@@ -54,9 +54,9 @@ After a customer exists as an IMS Organization, they have to configure their sys
 1. The System Administrator does IDP configuration in Admin Console to set up Single Sign-On.
 1. The AEM Administrator manages the local groups and permissions and privileges as usual.
 
-The Adobe Identity Management basics including IDP configuration are covered [here](https://helpx.adobe.com/enterprise/using/set-up-identity.html).
+The Adobe Identity Management basics including IDP configuration are covered under [Set up identity and Single Sign-On](https://helpx.adobe.com/enterprise/using/set-up-identity.html).
 
-Enterprise Administration and Admin Console usage are covered [here](https://helpx.adobe.com/enterprise/admin-guide.html).
+Enterprise Administration and Admin Console usage are covered under [Welcome to the enterprise and teams admin guide](https://helpx.adobe.com/enterprise/admin-guide.html).
 
 ### Onboarding Users in Admin Console {#onboarding-users-in-admin-console}
 
@@ -90,27 +90,29 @@ User Sync Tool is distributed through the Adobe GitHub repository [at this locat
 
 >[!NOTE]
 >
->A prerelease version **2.4RC1** is available with dynamic group creation support and can be found [here](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1).
+>A prerelease version **2.4RC1** is available with dynamic group creation support under [User Sync Tool v2.4rc1 on GitHub](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1).
 
 The major features for this release are the ability to dynamically map new LDAP groups for user membership in the Admin Console, and dynamic user group creation.
 
-More information about the new group features can be found [at this location](https://adobe-apiplatform.github.io/user-sync.py/en/user-manual/advanced_configuration.html#additional-group-options).
+More information about the new group features can be found at [Adobe User Sync Tool - Additional Group Options](https://adobe-apiplatform.github.io/user-sync.py/en/user-manual/advanced_configuration.html#additional-group-options).
 
 **User Sync Documentation**
 
-See [UST documentation](https://adobe-apiplatform.github.io/user-sync.py/en/) for more details.
+See:
 
-The User Sync Tool must register as an Adobe Developer client UMAPI using the procedure [here](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
+* [UST documentation](https://adobe-apiplatform.github.io/user-sync.py/en/) 
 
-Adobe Developer Console Documentation can be found [here](https://developer.adobe.com/developer-console/).
+* the User Sync Tool must register as an Adobe Developer client UMAPI using the procedure from [Authentication for API Access](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html)
 
-The User Management API that is used by the User Sync Tool is covered [here](https://adobe-apiplatform.github.io/user-sync.py/en/).
+* the [Adobe Developer Console Documentation](https://developer.adobe.com/developer-console/)
+
+* the [User Management API that is used by the User Sync Tool](https://adobe-apiplatform.github.io/user-sync.py/en/)
 
 ## Adobe Experience as a Cloud Service Configuration {#aem-configuration}
 
 >[!NOTE]
 >
->The AEM IMS configuration required is automatically configured when the AEM environments and instances are provisioned. However, the administrator may modify it as per their requirements using the method described [here](/help/implementing/deploying/overview.md).
+>The AEM IMS configuration required is automatically configured when the AEM environments and instances are provisioned. However, the administrator may modify it as per their requirements, see [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md).
 
 The AEM IMS configuration required is auto-configured when the AEM environments and instances are provisioned. Customer administrators may modify part of the configuration as per their requirements
 

@@ -33,12 +33,14 @@ Site themes are used in two different ways:
 
 ## Site Theme Structure {#structure}
 
-Site themes are simply packages with a logical structure that clearly reflects the purpose of the package content. A site theme has the following structure typical of a front-end project.
+Site themes are simply packages with a logical structure that clearly reflects the purpose of the package content. For a typical front-end project, Adobe recommends the following structure for a site theme:
 
-* `src/main.ts`: The main entry point of your JS & CSS theme
+* `src/theme.ts`: The main entry point of your JS & CSS theme
 * `src/site`: JS & CSS files that apply to the entire site
 * `src/components`: JS & CSS files specific to AEM components
 * `src/resources`: Static files like icons, logos, and fonts
+
+Depending on specific project needs, your theme structure may vary as long the main entry point, `src/theme.ts`, is preserved.
 
 ## Standard Site Theme {#standard-site-theme}
 

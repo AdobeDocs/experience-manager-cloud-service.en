@@ -1,32 +1,30 @@
 ---
-title: Universal Editor 2024.06.28 Release Notes
-description: These are the release notes for the 2024.06.28 release of the Universal Editor.
+title: Universal Editor 2054.01.16 Release Notes
+description: These are the release notes for the 2025.01.16 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
-# Universal Editor 2024.06.28 Release Notes {#release-notes}
 
-These are the release notes for the 28 June 2024 release of the Universal Editor.
+# Universal Editor 2025.01.16 Release Notes {#release-notes}
+
+These are the release notes for the 16 January 2025 release of the Universal Editor.
 
 >[!TIP]
 >
 >For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
-## What's New {#what-is-new}
+## What’s New {#what-is-new}
 
-* **Home**: The recent pages are displayed as a list, without preview images.
-* **Location Bar**: Enhanced URL validation was added, enforcing HTTPS URLs and supporting hashes in URLs to account for hash-routed applications.
-* **Keyboard Navigation**: The page overlay selection was decoupled from the properties rail focus to improve the keyboard navigation on the page without losing focus.
-* **Item Labels**: The fallback value for labels now uses `data-aue-prop` instead of `data-aue-type` for clearer identification in overlays and the content tree.
-* **RTE Modal**: A **Cancel** button was added to the rich text editor modal when opening it from the properties panel.
-* **UE Service on Node**: HTTP support for the Universal Editor Service was reintroduced, as all HTTPS connections are terminated at the Dispatcher level.
-* **Internal Copy API**: An API to the Universal Editor Service to copy components was added, allowing future introduction of toolbar options to copy and duplicate content.
+* **Deprecation of CORS Library < 3.0.0** - To ensure future compatibility and to enhance security, the Universal Editor now exclusively supports version 3.0.0 or higher of the 
+`@Adobe Express/universal-editor-cors` library.
+  * The library is now delivered solely via [`universal-editor-service.adobe.io/cors.js`.](http://universal-editor-service.adobe.io/cors.js)
+  * A deprecation notification appears for users when opening a page that uses older versions of the CORS library, prompting them to update.
+* **Extension Point for Landing Page** - [A new extension point](/help/implementing/universal-editor/customizing.md#extending) has been introduced for extensions to appear in the side rail of the Universal Editor's landing page.
+   * Now developers can specify whether extensions are applicable to the editor, the landing page, or both, offering greater customization and usability.
 
-## Bug Fixes {#bug-fixes}
+## Other Improvements {#other-improvements}
 
-* **Properties Panel Breadcrumb**: The breadcrumb menu in the properties panel for deeply nested items, which didn’t remain open, was fixed.
-* **Content Fragment Selector**: The Content Fragment selector was improved to ensure that it respects the rules defined in the Content Fragment model or in the `data-aue-filter`.
-* **Component Insertion**: The list to insert new components that didn’t update accurately after navigating to another page was corrected.
-* **Publication Status**: The handling of publication statuses was improved to function more consistently.
-* **Miscellaneous Fixes**: This release also contains various minor fixes, tech debt cleanup, security enhancements, and consolidated tests for overall stability and performance.
+* **Fixed invalid URLs in Recent items on the landing page** - An issues was resolved where URLs displayed in the "Recents" list on the Universal Editor’s landing page were broken.
+* **Theme Synchronization in Unified Shell** - The Universal Editor now dynamically synchronizes the theme with the system's Unified Shell settings and automatically adjusts between light and dark modes.
+  * This ensures a consistent visual appearance across micro-frontends, including fragment and asset selectors.

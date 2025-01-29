@@ -1,28 +1,45 @@
 ---
-title: Release Notes for Migration Tools in AEM as a Cloud Service Release 2024.05.0
-description: Release Notes for Migration Tools in AEM as a Cloud Service Release 2024.05.0
+title: Release Notes for Migration Tools in AEM as a Cloud Service Release 2024.09
+description: Release Notes for Migration Tools in AEM as a Cloud Service Release 2024.09.0
 feature: Release Information
 exl-id: 52709511-eab2-47a7-8bea-1b707cd568a1
 role: Admin
 ---
-# Release Notes for Migration Tools in AEM as a Cloud Service Release 2024.05.0 {#release-notes}
+# Release Notes for Migration Tools in AEM as a Cloud Service Release 2024.09.0 {#release-notes}
 
-This page outlines the Release Notes for Migration Tools in AEM as a Cloud Service 2024.05.0.
+This page outlines the Release Notes for Migration Tools in AEM as a Cloud Service 2024.09.0.
+
+## Content Transfer Tool {#ctt-release}
+
+### Release Date {#release-date-ctt}
+
+The Release Date for Content Transfer Tool v3.0.20 is August 28, 2024.
+
+### What's New {#what-is-new-ctt}
+
+* Users will no longer be ingested with this release and for that reason the User Mapping optional capability has been removed.
+* An OSGI config option has been added to disable or enable the migration of principals during extraction and ingestion (the default setting is to enable it)
+
+### Bug fixes {#bug-fixes-ctt}
+
+* CTT was improved to prevent an error while unprotecting a secret key in azcopy config
+* CTT now gracefully handles any error while copying AzCopy logs in validation phase
+* Change azcopy log directory created during extraction process
 
 ## Best Practices Analyzer {#bpa-release}
 
 ### Release Date {#release-date-bpa}
 
-The Release Date for Best Practices Analyzer v2.1.48 is May 09, 2024.
+The Release Date for Best Practices Analyzer v2.1.52 is September 4, 2024
 
 ### What's New {#what-is-new-bpa}
 
-* The Best Practices Analyzer (BPA) now supports automatic uploading of BPA generated reports directly to Cloud Acceleration Manager (CAM). Users will no longer need to manually download the report and upload it to CAM. Learn more [here](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer)
+* A new pattern was introduced to detect JCR based eventing in AEM
 
-## Cloud Acceleration Manager {#cam-release}
+### Bug fixes {#bug-fixes-bpa}
 
-### What's New {#what-is-new-cam}
+* Fixed false positives
+* Improved robustness to handle redirected response from dispatcher
+* Fixed non-reporting of NCC finding for all languages under /apps/wcm/core/resources/languages/
+* added a check to detect if a multi-property of a node has no values
 
-* Cloud Acceleration Manager (CAM) now supports automatic upload of BPA generated reports directly to CAM. Learn more [here](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase#best-practices-analysis)
-
-* Cloud Acceleration Manager now provides an estimate of how long an ingestion may take, given factors such as node count, data store size, etc. Learn more [here](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content)

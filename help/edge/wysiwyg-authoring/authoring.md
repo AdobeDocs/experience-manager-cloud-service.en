@@ -34,11 +34,11 @@ When using Edge Delivery Services with AEM as a Cloud Service, the most fundamen
 
 Blocks are fundamental components of a page delivered by Edge Delivery Services. Authors can choose from default blocks provided as standard by Adobe or from blocks customized for your project by your developers.
 
-The Universal Editor provides a modern and intuitive GUI for authoring your content by dragging-and-dropping blocks.
+The Universal Editor provides a modern and intuitive GUI for authoring your content by adding and arranging blocks.
 
-![Dragging-and-dropping blocks in the Universal Editor](assets/blocks.png)
+![Adding and arranging blocks in the Universal Editor](assets/blocks.png)
 
-Details of the blocks can then be configured in the Properties rail.
+Details of the blocks can then be configured in the Properties panel.
 
 ![Configuring block properties](assets/block-properties.png)
 
@@ -48,6 +48,6 @@ Please see the [Developer Getting Started Guide for WYSIWYG Authoring with Edge 
 
 ## Additional Authoring Methods  {#authoring-methods}
 
-WYSIWYG authoring is a powerful and intuitive tools for content authors. However, there are many different authroing use cases, which is why AEM offers additional authoring solutions.
+WYSIWYG authoring is a powerful and intuitive tools for content authors. However, there are many different authoring use cases, which is why AEM offers additional authoring solutions.
 
 Please see the document [Choosing an Authoring Method](/help/edge/authoring-methods.md) to learn more about the authoring solutions AEM offers including document-based authoring and headless.

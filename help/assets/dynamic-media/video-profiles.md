@@ -145,7 +145,7 @@ See also [Best practices for video encoding](/help/assets/dynamic-media/video.md
 
 To define advanced processing parameters for other asset types, see [Configure asset processing](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
-**To create a Video Profile for adaptive bitrate streaming**,
+**To create a Video Profile for adaptive bitrate streaming:**
 
 1. Select the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. Select **[!UICONTROL Create]**.
@@ -186,7 +186,7 @@ You can now apply the profile to folders that contain videos. See [Applying a Vi
 
 If you choose not to use the option **[!UICONTROL Encode for adaptive streaming]**, all encoding presets that you add to the profile are treated as individual video renditions for single-bitrate streaming or progressive video delivery. Also, there is no validation to ensure that all the video renditions have the same aspect ratio.
 
-The supported video format codecs are H.264 (.mp4) and WebM.
+The supported video format codec is H.264 (.mp4). <!-- use to also include WebM but was requested for removal by Riya Midha in email dated October 14, 2024 -->
 
 See also [Create a video encoding profile for adaptive bitrate streaming](#creating-a-video-encoding-profile-for-adaptive-streaming).
 

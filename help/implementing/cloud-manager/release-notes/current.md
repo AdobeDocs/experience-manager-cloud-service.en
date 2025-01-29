@@ -1,62 +1,106 @@
 ---
-title: Release Notes for Cloud Manager 2024.7.0 in Adobe Experience Manager as a Cloud Service
-description: These are the release notes for Cloud Manager 2024.7.0 in AEM as a Cloud Service.
+title: Release Notes for Cloud Manager 2025.1.0 in Adobe Experience Manager as a Cloud Service
+description: Learn about the release of Cloud Manager 2025.1.0 in AEM as a Cloud Service.
 feature: Release Information
-exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
+exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 ---
+# Release notes for Cloud Manager 2025.1.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-# Release Notes for Cloud Manager 2024.7.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+<!-- https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3389843928 -->
 
-This page documents the release notes for Cloud Manager release 2024.7.0 in AEM as a Cloud Service.
+Learn about the release of Cloud Manager 2025.1.0 in AEM (Adobe Experience Manager) as a Cloud Service.
 
 >[!NOTE]
 >
->See [this page](/help/release-notes/release-notes-cloud/release-notes-current.md) for the current release notes for Adobe Experience Manager as a Cloud Service.
+>See the [current release notes for Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-## Release Date {#release-date}
+## Release dates {#release-date}
 
-The release date for Cloud Manager release 2024.7.0 in AEM as a Cloud Service is 18 July 2024. The next release is planned for 8 August 2024.
+The release date for Cloud Manager 2025.1.0 in AEM as a Cloud Service is Wednesday, January 22, 2025. 
 
-## What's New {#what-is-new}
+The next planned release is Thursday, February 13, 2025.
+ 
 
-* The [production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline) and [non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline) trigger **On Git Changes** to start the pipeline on a commit is now available for [private repositories.](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-  * This will be rolled out in a phased manner with completion by mid-August.
-* When adding an [Adobe-managed DV certificate,](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) you can now add a single certificate that covers multiple domains instead of creating a certificate for each domain.
-* Solutions that do not have [additional publish regions](/help/operations/additional-publish-regions.md) can now be added to a program as long as the program has at least a Sites or Forms solution applies to it.
-* Solutions that do not have [99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) can now be added to a program as long as the program has at least a Sites or Forms solution applies to it.
-* The [Experience Audit Dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md) has been enhanced in a number of ways.
-  * Audits now run against `.com` endpoints via CDN, replacing the previous `.net` approach.
-    * This change simulates real user experiences more accurately and helps you make more informed decisions about managing and optimizing your website.
-  * Multiple enhancements were made to the Experience Audit UI including:
-    * A trended view of performance, best practices, SEO, and accessibility was added.
-    * The Lighthouse raw report link is now visible in a more intuitive way, directly in the scan snapshot details panel.
-    * The Lighthouse recommendations section was enhanced.
-  * The PWA metric was removed in accordance with Lighthouse version 12.0.0, which eliminated this metric.
-* [The AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) has been updated to [version 49.](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)
+## What's new {#what-is-new}
 
-## Early Adoption Program {#early-adoption}
+* **Code quality rules - SonarQube Server Upgrade:** Cloud Manager Code Quality step will start using SonarQube Server 9.9 with Cloud Manager 2025.2.0 release, scheduled for Thursday, February 13, 2025. 
 
-For a chance to test some upcoming features, be a part of Adobe's early adoption program.
+    To prepare, updated SonarQube rules are now available at [Code Quality Rules](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules).
 
-### Edge Delivery Services Support in Cloud Manager {#edge-delivery-services}
+    You can "early check" the new rules by setting the following pipeline text variable: 
 
-If you have licensed Edge Delivery Services as part of Adobe Experience Manager Sites, [you can now onboard your site with Edge Delivery Services directly in Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md) and go live using a guided, self-service experience.
+    `CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
 
-This enables a unified experience for all of your AEM properties, ensuring consistency with all critical workflows including domain name management, SSL certificate management, and CDN mappings.
+    Additionally, set the following variable to ensure the code quality step runs for the same commit (normally skipped for the same `commitId`): 
 
-If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-cmedgedelsvs-program-adopter@adobe.com` from the email address associated with your Adobe ID. 
+    `CM_DISABLE_BUILD_REUSE` = `true`
 
-### Domain Validated (DV) Certificates
+![Variables Configuration page](/help/implementing/cloud-manager/release-notes/assets/variables-config.png)
 
-Cloud Manager now allows you to [self-service generate and manage domain validated (DV) SSL certificates.](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) This gives you the fastest, easiest, and most cost-effective solution to create a secure website for your online business.
+>[!NOTE]
+>
+>Adobe recommends creating a new CI/CD Code Quality pipeline, configured to the same branch as your main production pipeline. Set the appropriate variables *before* the February 13, 2025 release to validate that the new enforced rules do not introduce blockers.
 
-If you are interested in testing this new feature and sharing your feedback, please send an email to `Grp-aemcs-dv-dert-adopter@adobe.com` from the email address associated with your Adobe ID.
+* **Java 17 and Java 21 build support:** Customers can now build with Java 17 or Java 21, gaining access to performance enhancements and new language features. For configuration steps, including updating your Maven project and library versions, see [Build environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). When the build version is set to Java 17 or Java 21, the runtime deployed is Java 21.
 
-### Experience Audit Dashboard {#experience-audit-dashboard}
+    * **Feature enablement**
+        * This feature will be enabled for all customers on Thursday, February 13, 2025, coinciding with the default rollout of the new SonarQube version.
+        * Customers can enable it *immediately* by setting the two variable configurations described above for upgrading the SonarQube 9.9 version.
 
-[The Cloud Manager Experience Audit dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md) includes a trended view of your page performance scores along with insights and recommendations to help you improve them. Experience Audit is included as a step in the Cloud Manager production pipeline.
+    * **Java 21 runtime deployment**
+        * The Java 21 runtime is deployed when building with Java 17 or Java 21.
+        * Gradual rollout to all Cloud Manager environments begins in February for sandboxes and development environments and extends to production environments in April.
+        * Customers building with Java 11 who wish to adopt the Java 21 runtime *earlier* can contact Adobe at [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
 
-The dashboard uses Google Lighthouse, an open-source, automated tool for improving the quality of your web apps. You can run it against any web page, public, or requiring authentication. It has audits for performance, accessibility, progressive web apps, SEO, and more.
+* **"CDN Configurations" renamed to "Domain Mappings" :** As part of user interface improvements in AEM Cloud Manager, the label "CDN Configurations" is now renamed to "Domain Mappings." This change improves terminology alignment with functionality. <!-- CMGR-64738 -->
 
-Interested in test-driving the new dashboard? To get started, send an email to `aem-lighthouse-pilot@adobe.com` from your email associated with your Adobe ID.
+    !["CDN Configurations" renamed to "Domain Mappings" in the user interface](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)
+
+* **Provision an Edge Delivery Site with one click:** Cloud Manager now enables users with the appropriate permissions and licenses to create a sample Edge Delivery Services site with just a single click. This streamlined process offers the following automated functionalities:
+
+  * **GitHub Integration** - Automatically creates a GitHub repository within an existing organization, pre-configured with a boilerplate template for Edge Delivery Services.
+  * **AEM Code Sync App Installation** - Installs the AEM Code Sync application on the repository, ensuring seamless synchronization and deployment.
+  * **Content Collaboration Setup** - Links a designated Google Drive folder for content storage, providing a collaborative environment for content management.
+  * **Content Publishing** - Users can now publish content for provisioned sites directly from the Cloud Manager user interface, simplifying workflows and improving efficiency.
+  * **Enhanced Collaboration** - The platform allows users to add multiple collaborators to the Google Drive content storage folder, facilitating teamwork and content contributions.
+
+  These enhancements aim to improve automation, simplify setup processes, and enhance collaboration for Edge Delivery Services users. <!-- CMGR-59362 -->
+
+    ![Provisioning an Edge Delivery Site](/help/implementing/cloud-manager/release-notes/assets/eds-one-click-60.png)
+
+    ![Provision Edge Delivery site dialog box](/help/implementing/cloud-manager/release-notes/assets/eds-provision-60.png)
+
+* **Enhanced support for Edge Delivery Services sites:** Cloud Manager now supports onboarding for the latest Edge Delivery Services sites. This update includes a comprehensive refactoring of the CDN and delivery stack, resulting in improved robustness and maintainability.
+
+* **Advanced filtering options for pipelines:** Cloud Manager now features advanced filtering options on the Pipelines page, letting you quickly access relevant data and enhance deployment efficiency. Several of the key features include the following:
+
+    * **Multi-Criteria Filtering:** Refine search results with filters such as pipeline name, environment, and deploy code.
+    * **Streamlined Pipeline Search:** Easily locate specific pipelines for faster navigation and improved workflow management.
+
+    Altogether, these enhancements make managing and deploying pipelines more efficient and user-friendly.
+
+    ![Pipeline filters feature](/help/implementing/cloud-manager/release-notes/assets/pipeline-filters.png)
+
+* **Self-Service CDN Configuration for Edge Delivery Service:** New adopters of Edge Delivery Service can now configure their CDN independently through Cloud Manager. This update extends support from `.hlx.page/live` to the new `.aem.page/live`, providing greater flexibility and streamlined setup for users.
+
+## Early adoption program {#early-adoption}
+
+Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features.
+
+* **Early Adopter program update - PR validation support for Bitbucket and GitLab:** Cloud Manager now supports Pull Request (PR) validation for both Cloud and self-hosted versions of Bitbucket and GitLab. This feature lets customers test their code changes against Adobe's code quality thresholds before merging a PR. By ensuring higher code quality prior to merging, this enhancement significantly improves the success rate of code changes in production pipelines, reducing time to market and streamlining development workflows.
+
+For more information about "Bring Your Own Git" - now with support for GitLab and Bitbucket - and to sign up as an Early Adopter, see [Cloud Manager October 2024 Release Notes](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket).
+
+* **Advanced Test Environment:** A purpose-built solution designed to bridge the gap between development and production. Tailored for enterprise needs, this environment replicates production-level specifications to support accurate user acceptance testing (UAT) and thorough performance evaluations.
+
+If you are interested in joining the Early Adopter program, please [complete this form](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg!fIp-QrZ9si3kcUIjRCniEzqAAa8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqddgpuOMAVL5CQpkZ6ths76Qks8%24&data=05%7C02%7Cpanchapa%40adobe.com%7Cf81bcaa4b20544f1818b08dccd07c78c%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=aGo6zz2ldPrta4lpvo3CLNENR5ghHDDCPbG1adUaNZQ%3D&reserved=0) and email us (details to follow) with your `OrgID`.
+
+
+
+<!-- ## Bug fixes -->
+
+
+
+
+<!-- ## Known issues {#known-issues} -->

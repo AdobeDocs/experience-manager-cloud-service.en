@@ -12,9 +12,30 @@ The article provides detailed examples of a Rule Editor for an Adaptive Form bas
 Now, let us discuss the different implementations for a rule editor.
 
 
-## Streamline complex calculations in repeatable panels with built-in functions
+## Navigating among panels using button 
 
-The rule editor allows you to use out-of-the-box functions like Sum, Min, Max, and Join directly on fields within repeatable panels. This unlocks powerful automation, allowing you to implement complex business logic without custom code.
+The rule editor allows you to add navigation buttons to your panel layouts, such as Horizontal Tabs, Vertical Tabs, Accordions, or Wizard. These buttons enhance the user experience by simplifying transitions among different panels in a form, shifting focus to the selected panel.
+
+Imagine you are interacting with the profile settings section of an application, where navigation is facilitated by buttons rather than tabs. Upon entering the profile settings from the main dashboard, you encounter a series of panels dedicated to different aspects of their profile: **Personal Information**, **Account Security**, and **Notification Preferences**.
+
+Each panel contains relevant fields and options for updating specific information. Navigation buttons, such as `Next` and `Back`, are prominently placed allow you to move between these panels. Click `Next` to advance the user to the **Account Security** panel and click `Back` to return to the **Personal Information** panel. This method of navigation ensures a seamless transition between sections without losing context, providing a smooth and intuitive user experience. The use of navigation buttons simplifies the process of managing profile settings, making the interaction more organized and user-friendly.
+
+You can use the `Navigate among the panels` rule to create navigation rules for buttons that allow switching between different panels.  Select the `Shift focus to the next item` attribute to move the focus to the next panel in the layout.
+
+![Next panel rule](/help/forms/assets/rule-editor-navigate-in-panel-next.png){width=50%}
+
+When the `Next` button is clicked, focus moves to the subsequent panel in the layout.
+
+![Navigate in panel using Next button](/help/forms/assets/navigate-in-panel.gif)
+
+Similarly, you can create a rule for the `Previous` button to shift focus to the preceding panel.
+
+![Previous panel rule](/help/forms/assets/rule-editor-navigate-in-panel-previous.png){width=50%}
+
+## Streamline complex calculations in repeatable panels with functions
+
+The rule editor allows you to use out-of-the-box functions like Sum, Min, Max, and Join directly on fields within repeatable panels. You can also pass a repeatable panel field value to the function that accepts number array, string array, boolean array etc. This unlocks powerful automation, allowing you to implement complex business logic without custom code.
+
 Imagine a form with a repeatable panel, where each panel instance collects information about the declared value of assets. 
 
 ![Repeatable form](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
@@ -26,6 +47,10 @@ You can use the `Sum` function to automatically calculate the total assets value
 When you fill out a form, adding instances to declare the asset values, the `Calculate Asset Value` button computes the total sum of all declared asset values and displays the result in the total in `assetvalue` textbox.
 
 ![Support for repeatable panel fields in OOTB functions](/help/forms/assets/ootb-function-support-repeatable-panel-form-preview.png)
+
+>[!NOTE]
+>
+> In case the value of the repeatable panel field is passed to a function that does not accept an array, the field value from the last instance of the repeatable panel is passed to the function.
 
 This is just one example! Explore the available [functions](#b-form-objects-and-functions-br) to simplify workflows and enhance data accuracy within your forms.
 

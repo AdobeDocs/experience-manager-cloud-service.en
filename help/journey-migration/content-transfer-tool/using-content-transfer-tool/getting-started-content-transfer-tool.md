@@ -5,6 +5,7 @@ exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
 ---
+
 # Getting Started with Content Transfer Tool {#getting-started-content-transfer-tool}
 
 
