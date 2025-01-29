@@ -190,7 +190,7 @@ Include the below parameters to edit the text, its font, colour and size from th
 **Font Size:** Include to update the text's font size from the URL.
 **Text color:** Include to update the text's font color from the URL.
 
-### Group layers to control their visibility simultaneously{#group-layers-to-hide-or-show-them-together}
+### Group layers to control their visibility simultaneously{#group-layers}
 
 Another way to keep your templates flexible, is by utilising a single parameter name to control multiple layers. This strategy is helpful for the visibility (hide or show layers) parameter, to update the design or graphics from a single template.
 
