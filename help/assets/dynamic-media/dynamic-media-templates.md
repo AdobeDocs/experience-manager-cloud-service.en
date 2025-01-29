@@ -27,6 +27,10 @@ Some of the key benefits of Dynamic Media templates include:
 * **Mitigate Risks:** Update pricing, discounts, and links in real-time.
 * **Enhance Customer Engagement:** Drive interactive, contextually relevant experiences.
 
+>[!NOTE]
+>
+>Customers with subscriptions to the Enhanced Security SKU cannot use any Dynamic Media capabilities, including Dynamic Media Templates, on that Cloud Services program.
+
 ## Before you begin{#prerequisites-for-dynamic-media-wysiwyg-template}
 
 To create a Dynamic Media template, you must have:
@@ -58,6 +62,10 @@ Execute these steps to create a blank canvas:
 To [create a folder](/help/assets/add-delete-assets-view.md) under **Dynamic Media Assets**, create a folder under **Assets**. The folder tree under **Assets** replicates under **Dynamic Media Assets**. 
 1. Specify a template name, define the canvas width and height, and click **Create**. A blank canvas displays with menu options on both sides to use for creating the template. Hover over the menu options to see their tooltip. 
 ![](/help/assets/assets/dm-templates/blank-canvas-page.png)
+
+>[!NOTE]
+>
+> The allowed width and height range is from 50 to 5000.
 
 **Menu options on the right pane:** Use these options to add the necessary images and text layers to the canvas.
 
@@ -183,7 +191,9 @@ Include the below parameters to edit the text, its font, colour and size from th
 
 ### Group layers to control their visibility simultaneously{#group-layers-to-hide-or-show-them-together}
 
-You can control the visibility of multiple layers simultaneously by keeping their hide parameter names (![](/help/assets/assets/dm-templates/Visibility-icon.svg)) same. Follow these steps:
+Another way to keep your templates flexible, is by utilising a single parameter name to control multiple layers. This strategy is helpful for the visibility (hide or show layers) parameter, to update the design or graphics from a single template.
+
+Follow these steps to assign the same name to the hide parameters (![](/help/assets/assets/dm-templates/Visibility-icon.svg)) of multiple layers, allowing you to hide or show them simultaneously.
 
 1. Navigate to the [Parameters panel](#1) of a layer.
 1. Toggle the **Hide** Parameter if not parameterised earlier.
