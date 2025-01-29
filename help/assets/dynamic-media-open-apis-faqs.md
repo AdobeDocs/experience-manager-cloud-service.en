@@ -6,6 +6,15 @@ exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
 ---
 # Dynamic Media with OpenAPI capabilities frequently asked questions {#new-dynaminc-media-apis-frequently-asked-questions}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>Dynamic Media with OpenAPI capabilities guide is now available in PDF format. Download the entire guide and use Adobe Acrobat AI Assistant to answer your queries. 
+>
+>[!BADGE Dynamic Media with OpenAPI capabilities Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+
 +++**Are all assets in Experience Manager Assets as a Cloud Service repository available for search and delivery using Dynamic Media with OpenAPI capabilities?**
 
 No, only [approved and latest version of the assets](/help/assets/approve-assets.md) are available for search and delivery using Dynamic Media with OpenAPI capabilities, ensuring brand consistency across all channels and applications.
@@ -103,7 +112,7 @@ The following are some of the key differences between Dynamic Media with OpenAPI
 | [Available only with Assets as a Cloud Service](/help/assets/dynamic-media-open-apis-overview.md#prerequisites-dynaminc-media-open-apis) | Also available with On-premise or Adobe Managed Services with additional configuration and provisioning steps. |
 | [Limited set of supported image modifiers, such as width, height, rotate, flip, quality, and format](/help/assets/deliver-assets-apis.md) | Rich set of available image modifiers |
 | [Restricted asset delivery based on users, roles, date, and time](/help/assets/restrict-assets-delivery.md) | Assets published to Dynamic Media are accessible to all users |
-| Most developers are familiar with OpenAPI specifications. AEM Assets extensibility becomes really simple by using [Micro Frontend Asset Selector](/help/assets/asset-selector.md). | SOAP -based APIs, which become a barrier while developing integration customizations. |
+| Most developers are familiar with OpenAPI specifications. AEM Assets extensibility becomes really simple by using [Micro-Frontend Asset Selector](/help/assets/overview-asset-selector.md). | SOAP -based APIs, which become a barrier while developing integration customizations. |
 | Any changes made to approved assets in DAM, including version updates and metadata modifications, are automatically reflected in the delivery URLs. With a short Time-to-Live (TTL) value of 10 minutes configured for Dynamic Media with OpenAPI capabilities via CDN, updates become visible across all authoring and published interfaces in under 10 minutes. | Recommended CDN TTL of 10 hours. You can override the TTL value using the cache invalidation action. |
 | Only approved assets are available for asset delivery to downstream applications, enabling on brand approved assets in digital experiences.| Any updates to a Dynamic Media published asset are auto-published without any approval workflow, which does not ensure on brand approved assets in digital experiences.    |
 | Usage reports based on number of assets delivered. This feature will be available soon.| Usage reports are not available. This feature will be available soon. |

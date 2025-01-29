@@ -29,13 +29,13 @@ Follow the steps below to update your player:
 
 1. Click the **Configuration** tab and click **To Factory** button under **Reset** option.
 
-   ![image](/help/screens-cloud/assets/player/installplayer-2.png)
+   ![To Factory button under Reset option](/help/screens-cloud/assets/player/installplayer-2.png)
 
 1. Click **Confirm** to reset your player.
 
 1. Again from the **Configuration** tab and click **Change to Cloud Mode** button under **Toggle Runmode** option.
 
-   ![image](/help/screens-cloud/assets/player/installplayer-1.png)
+   ![Change to Cloud Mode button under Toggle Runmode option](/help/screens-cloud/assets/player/installplayer-1.png)
 
 1. Click **Confirm** that prompts when switching to cloud mode unregisters the player.
 
@@ -65,7 +65,9 @@ The following properties are included in each `ping`:
 |lastContentChange {string}|timestamp of the last content change|
 
 >[!NOTE]
+>
 >Optionally, you can enable a more advanced property from the player preferences (Enable Playback Monitoring):
+>
 >|Property|Description|
 >|---|---|
 >|isContentRendering {boolean}|true if the GPU can confirm it is playing actual content (based on pixel analysis)|

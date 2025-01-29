@@ -29,7 +29,7 @@ Follow the section below to understand the important considerations for running 
 * BPA can run on any environment, but it is preferred to have it run on a *Stage* environment.
 
    >[!NOTE]
-   >To avoid an impact on business critical instances, it is recommended that you run BPA on an *Author* environment that is as close as possible to the *Production* environment in the areas of customizations, configurations, content and user applications. Alternatively, it can be run on a clone of the production *Author* environment.
+   >To avoid an impact on business critical instances, it is recommended that you run BPA on an *Stage* environment that is as close as possible to the *Production* environment in the areas of customizations, configurations, content and user applications. Alternatively, it can be run on a clone of the production *Author* environment.
 
 * The generation of BPA report contents can take a significant amount of time, from several minutes to a few hours. The amount of time required is highly dependent on the size and nature of the AEM repository content, the AEM version, and other factors.
 
@@ -67,45 +67,46 @@ Follow this section to learn how to view the Best Practices Analyzer report:
 
 1. Select Adobe Experience Manager and navigate to tools > **Operations** > **Best Practices Analyzer**.
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
+   ![Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
 1. Click **Generate Report** to execute the Best Practices Analyzer. 
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
+   ![Generate Report](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
-1. Provide the BPA upload key to automatically upload the generated BPA report to [Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md). To get the upload key, navigate to the [Best Practices Anaylsis in CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
+1. Provide the BPA upload key to automatically upload the generated BPA report to [Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md). To get the upload key, navigate to the [Best Practices Analysis in CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
+   ![Set BPA Upload Key](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
 
 >[!NOTE]
 >You have the option to skip the automatic upload to CAM by selecting **Skip report auto upload to CAM**. If you choose to skip, you will need to manually download the BPA report as a comma-separated value file and then upload the file in CAM. It is recommended to use the upload key option since it streamlines the operation. 
 
+>[!IMPORTANT]
+>When manually uploading to CAM, report sizes are restricted to approximately 200MB. For larger reports you will need to leverage the automatic upload. 
+ 
 1. The **Generate** button becomes active when a valid key is provided. Click on **Generate** to initiate report generation.
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
+   ![Generate Report](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
  
-
 1. While the BPA is generating the report, you can see the progress made by the tool on the screen. It displays the progress in terms of percentage completed. It also displays the number of items analyzed and also displays the number of findings found. 
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
-   
+   ![Generating Report](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
+
 >[!NOTE]
 >The BPA upload key expiration timestamp is displayed on the top right corner. You should renew the BPA upload key when it's near its expiration. To renew the key, you can click on **Renew** to navigate to CAM to renew the key.
 
 1. After the BPA report is generated, it displays a summary and the number of the findings in a tabular format organized by the type of finding and the importance level. To get more details about a particular finding, you can click the number that corresponds to the type of finding in the table. 
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
+   ![Report overview](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
 1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **Export to CSV**. You also have the option to view the report in CAM by clicking on **Go to CAM**. This will take you to the [Best Practices Analysis](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis) page in CAM. 
 
 You may force the BPA to clear its cache and regenerate the report by clicking **Refresh Report**.
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)   
+   ![Refresh report](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)   
 
-   
 1. If the cache expires, you have the option of viewing the last generated report in CAM by clicking on **View the last generated report in CAM** or initiate a new report generation by clicking on **Generate New Report**. 
 
- ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)   
+ ![No report](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)   
 
 
 #### Using Filters in the Best Practices Analyzer Report {#bpa-filters}
@@ -114,14 +115,14 @@ To filter out findings related to [ACS Commons](https://adobe-consulting-service
 
 1. Click the left rail icon on the left-hand side of the page. This will display the **ACS Commons Filter**. Click the **ACS Commons Filter** to display the interactive checkbox as shown in the image below.
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
+   ![ACS Commons Filter](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
    >The left rail icon will appear only if the BPA detects usage of ACS Commons.
 
 1. Unselect the box to filter out all findings related to ACS Commons. You should see a **Filtered Finding Count** on the report as shown in the image below. The filter is also applied to the report when it is exported in a comma-separated-value (CSV) format.
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
+   ![Filtered Finding Count](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
    >The ACS Commons findings should not be ignored. See [documentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) to determine compatibility with AEM as a Cloud Service. 

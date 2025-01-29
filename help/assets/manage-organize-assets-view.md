@@ -8,6 +8,9 @@ feature: Asset Management, Publishing, Collaboration, Asset Processing
 ---
 # Manage assets {#manage-assets}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 You can do various digital asset management (DAM) tasks easily using the user-friendly interface of [!DNL Assets view]. After you've added the assets, you can search, download, move, copy, rename, delete, update, and edit your assets. 
 
 Use [!DNL Assets view] to accomplish the following asset management tasks. When you select an asset, the following options display in the toolbar at the top.
@@ -125,6 +128,7 @@ To set asset status:
 1. Select the asset, and click **[!UICONTROL Details]** in the toolbar.
 
 1. In the **[!UICONTROL Basic]** tab, select the asset status from the **[!UICONTROL Status]** drop-down list. The possible values include Approved, Rejected, and No Status (default).
+If you have Dynamic Media with OpenAPI capabilities provisioned for your environment, Experience Manager Assets generates a public URL as soon as you mark the asset as `Approved`.
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 

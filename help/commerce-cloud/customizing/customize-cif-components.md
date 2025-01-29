@@ -169,7 +169,7 @@ Next, use a GraphQL IDE to verify that the `eco_friendly` attribute has been add
 
    >[!TIP]
    >
-   > Read more detailed documentation about [Adobe Commerce GraphQL here](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
+   > For more information see [Adobe Commerce GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
 
 ## Update the Sling Model for the Product Teaser {#updating-sling-model-product-teaser}
 
@@ -380,7 +380,7 @@ In this case, you want to render a banner on top of the teaser to indicate that 
 
    When calling a Sling Model method in HTL the `get` and `is` portion of the method is dropped and the first letter is lowercased. So `isShowBadge()` becomes `.showBadge` and `isEcoFriendly` becomes `.ecoFriendly`. Based on the boolean value returned from `.isEcoFriendly()` determines if the `<span>Eco Friendly</span>` is displayed.
 
-   More information about `data-sly-test` and other [HTL block statements can be found here](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html).
+   More information about `data-sly-test` and other HTL block statements can be found in [The HTL Specification](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html).
 
 1. Save the changes and deploy the updates to AEM using your Maven skills, from a command-line terminal:
 
@@ -474,7 +474,7 @@ At this point the logic for when to display the **Eco Friendly** badge is workin
 
 ## Congratulations {#congratulations}
 
-You customized your first AEM CIF component! Download the [finished solution files here](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
+You customized your first AEM CIF component! You can [download the solution files here](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
 
 ## Bonus Challenge {#bonus-challenge}
 

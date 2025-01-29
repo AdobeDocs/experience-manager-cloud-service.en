@@ -29,5 +29,4 @@ The following sections provide greater detail about content delivery:
 * [CDN configuration](/help/implementing/dispatcher/cdn.md)
 * [Caching](/help/implementing/dispatcher/caching.md)
 
-
-Information about replication from the author service to the publish service is available [here](/help/operations/replication.md).
+For information about replication from the author service to the publish service see [Replication](/help/operations/replication.md).

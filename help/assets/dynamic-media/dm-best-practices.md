@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media best practices
-description: Learn about best practices in Dynamic Media when it comes to working with images and video.
+description: Learn about best practices in Dynamic Media when it comes to working with images and video and best practices for Dynamic Media Viewers.
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
@@ -27,7 +27,9 @@ In the accompanying guide, you'll find a comprehensive list of best practices fo
 
 Stage Business Problem Best Practice Recommendation: This section will outline specific business challenges and provide targeted best practices and recommendations to address them effectively. -->
 
-Organizations face an explosion of channels and devices for engaging with users. The customer journey spans physical stores, web, mobile, social media, emails, and commerce. To meet this demand, Dynamic Media on Adobe Experience Manager (AEM) offers a comprehensive solution. It optimizes asset delivery, handles personalization, and ensures consistent, performant, and brand-aligned experiences across channels and devices.
+{{see-also-dm}}
+
+Organizations face an explosion of channels and devices for engaging with users. The customer journey spans physical stores, web, mobile, social media, emails, and commerce. To meet this demand, Dynamic Media on Adobe Experience Manager (AEM) offers a comprehensive solution. It optimizes asset delivery, handles personalization, and ensures consistent, performant, and brand-aligned experiences across channels and devices. 
 
 Some of the key tenets of Dynamic Media include the following:
 
@@ -62,6 +64,33 @@ After syncing your assets, Selective Publish gives you control over which assets
 These two best practices help you achieve better control, governance, and productivity over your rich-media content. 
 
 Want to learn more? Go to [Configure Selective Publish at the folder level in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
+
+
+## Dynamic Media Viewers
+
+Dynamic Media Viewer best practices are essential guidelines designed to optimize the performance, functionality, and user experience of Dynamic Media assets on AEM. These practices ensure that assets are properly synchronized, published, and configured to use the full capabilities of Dynamic Media. 
+
+By following these best practices, you can achieve seamless integration, efficient asset management, and enhanced viewer interactions. Synchronizing assets, using smart cropping, and adhering to JavaScript file inclusion guidelines are all important practices. These recommendations help maintain the integrity and reliability of media delivery across various platforms and devices.
+
+* **Synchronize Viewer Assets:**
+Ensure that all viewer assets are synchronized with Dynamic Media before using the player. 
+
+  * Access the sample manager page at `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`. This page lets you resynchronize a viewer's assets, including out-of-the-box icons, CSS files, and presets.
+  * If you encounter any viewer issues, go to the [Troubleshoot Dynamic Media Viewers](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) article. 
+
+* **Publish Assets:**
+Make sure that assets are published before viewing them in delivery viewers.
+* **Autoplay Videos Muted:**
+For autoplay functionality in videos, use muted video settings because browsers restrict playing videos with volume.
+* **Smart Cropping:**
+Use the Image v3 component for smart cropping to enhance image asset presentation.
+* **JavaScript File Inclusion:**
+Only include the primary viewer JavaScript file on your page. Avoid referencing additional JavaScript files that the viewer's runtime logic may download. Specifically, do not directly link to the HTML5 SDK `Utils.js` library from the `/s7viewers` context path (known as consolidated SDK include). The viewer's logic manages the location of `Utils.js` or similar runtime viewer libraries, which can change between releases. Adobe does not retain older versions of secondary viewer includes on the server, so directly referencing them can break viewer functionality in future updates.
+* **Embedding Guidelines:**
+Use the documentation for embedding guidelines that are specific to each viewer. 
+Want to learn more? Go to [Viewers for AEM Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers).
+* **SDK Tutorial and Examples:**
+Review the [Viewer SDK Tutorial](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) and [HTML5 SDK application examples](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) for a thorough understanding of SDK component APIs.
 
 
 ## Prepare assets for delivery
@@ -128,15 +157,18 @@ Want to learn more? Watch [Using Smart Crop with AEM Assets Dynamic Media](https
 Use the following recommendations regularly to ensure that your images contribute effectively to your overall SEO strategy.
 
 * **Meaningful image file names:**
-Use descriptive file names that reflect the image content. For example, 
+Use descriptive file names that reflect the image content. For example,
+
   * use `myCompany-Silver-Wrist-Watch`
   * *avoid* `myCompany_Silver_Wrist_Watch` or `myCompanySilverWristWatch`
 
   Doing so helps search engines understand the image context and improves SEO. Google prefers hyphens over underscores or spaces in a file name. Also, avoid concatenating words in a file name.
 * **Custom domain:** 
 Implement a custom domain that includes your company or brand name to reinforce brand recognition and trust. For example,
+
   * use `http://images.mycompany.com/is/image/companyname/`
   * *avoid* `https://s7d1.scene7.com/is/image/folder/AdobeStock_28563982`
+
 * **SEO-friendly folder structure:**
 Organize your images in a folder structure that includes your company name or brand for better indexing, like `http://images.mycompany.com/is/image/companyname/`.
 * **Dynamic Media rule sets:**
@@ -150,7 +182,6 @@ Remember, these best practices align well with Google's image SEO best practices
 
 Want to learn more? Go to [URL structure best practices for Google](https://developers.google.com/search/docs/crawling-indexing/url-structure) and [Google image SEO best practices](https://developers.google.com/search/docs/appearance/google-images)
 
-
 ### Dynamically enhance images and create visual effects using commands
 
 **Business case:** *Apply rich visual effects to images.*
@@ -161,9 +192,9 @@ Dynamic Media offers a suite of commands for enhancing images and creating visua
 
 | Task | What to do |
 | --- | --- |
-| **Upload and publish your original image** | &bull; Start by uploading the original image to Dynamic Media.<br>&bull; Make sure that it is published and accessible through a URL.<br>&bull; In this example, a stock image of a watch with a white background (let's call it "Image X") is uploaded to Dynamic Media.<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer) |
-| **Create a mask** | &bull; Develop a mask that defines the subject (the area where you want to apply effects) and the background (the area you want to change).<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps)<br>&bull; Masks are typically grayscale images, where white represents the subject, and black represents the background. You can create masks using tools like Adobe Photoshop.<br>Want to learn more? Go to [Creating and editing a quick mask in Photoshop](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html).<br>&bull; For "Image X," create a mask that precisely outlines the subject you want to enhance. For example, a person, an object, and so on. | 
-| **Apply Dynamic Media URL commands for effects** |  After you have your mask, use URL commands to apply effects like drop shadows or change the background color to "Image X." Here are two examples:<br><br> &bull; **Drop shadow effect:**<br>To add a drop shadow effect along the subject's boundary, edit the URL like this:<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&effect=-1&pos=100,100&op_blur=75&op_grow=1&opac=25](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&effect=-1&pos=100,100&op_blur=75&op_grow=1&opac=25)<br>In this URL, the `$shadow$` parameter creates the shadow effect, and `color=0,0,0` sets the shadow color to black.<br>&bull; **Background color change:**<br>To change the background color, use the URL with a different background color value:<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&maskUse=invert&color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&maskUse=invert&color=255,255,0)<br> In this example, `color=255,255,0` sets the background color to yellow. Edit the background to a specific color for visual impact. |
+| **Upload and publish your original image** | <ul><li> Start by uploading the original image to Dynamic Media.</li><li> Make sure that it is published and accessible through a URL.</li><li> In this example, a stock image of a watch with a white background (let's call it "Image X") is uploaded to Dynamic Media.<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer)</li></ul> |
+| **Create a mask** | <ul><li> Develop a mask that defines the subject (the area where you want to apply effects) and the background (the area you want to change).<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps)</li><li> Masks are typically grayscale images, where white represents the subject, and black represents the background. You can create masks using tools like Adobe Photoshop.<br>Want to learn more? Go to [Creating and editing a quick mask in Photoshop](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html).</li><li> For "Image X," create a mask that precisely outlines the subject you want to enhance. For example, a person, an object, and so on.</li></ul> | 
+| **Apply Dynamic Media URL commands for effects** |  After you have your mask, use URL commands to apply effects like an outer glow or change the background color to "Image X." Here are two examples:<ul><li> **Outer glow effect:**<br>To add an outer glow effect along the subject's boundary, edit the URL like this:<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&effect=-1&pos=100,100&op_blur=75&op_grow=1&opac=25](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&effect=-1&pos=100,100&op_blur=75&op_grow=1&opac=25)<br>In this URL, the `op_blur`, `op_grow`, and `opac` parameters create the outer glow effect.</li><li> **Background color change:**<br>To change the background color, use the URL with a different background color value:<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&maskUse=invert&color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&maskUse=invert&color=255,255,0)<br> In this example, `color=255,255,0` sets the background color to yellow. Edit the background to a specific color for visual impact.</li></ul> |
 
 #### Add an image border
 
@@ -185,7 +216,7 @@ If you are looking to superimpose a logo or icon on an existing image, Dynamic M
 | --- | --- |
 | **Upload and publish the base image** | First, upload and publish the base image on which you want to superimpose the logo or icon. You can use any image as your base.<br>For example, here is a base image:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa). | 
 | **Upload and publish the logo or icon image** | Next, upload and publish the image that you want to superimpose over the base image. This image should be a transparent PNG with the logo or icon you want to overlay.<br>Here is the transparent PNG image of a star object with transparency effects that is going to be superimposed:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
-| **Apply the Dynamic Media URL** | Now, create a Dynamic Media URL that combines the base image and the logo or icon image. You can use URL commands to achieve this effect.<br>The URL structure looks something like this:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png)<br>where<br>&bull; `hotspotRetailBaseImage` is the base image.<br>&bull; `starxp` is the logo/icon image.<br>&bull; `layer=1` specifies that the logo or icon should be layered over the base image.<br>&bull; `scale=1.25` adjusts the size of the logo/icon.<br>&bull; `posN=0.33,-.25` determines the position of the logo/icon relative to the base image.<br>&bull; `fmt=png` ensures that the output is in PNG format. |
+| **Apply the Dynamic Media URL** | Now, create a Dynamic Media URL that combines the base image and the logo or icon image. You can use URL commands to achieve this effect.<br>The URL structure looks something like this:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png)<br>where the asset<ul><li> `hotspotRetailBaseImage` is the base image.</li><li> `starxp` is the logo/icon image.</li><li> `layer=1` specifies that the logo or icon should be layered over the base image.</li><li> `scale=1.25` adjusts the size of the logo/icon.</li><li> `posN=0.33,-.25` determines the position of the logo/icon relative to the base image.</li><li> `fmt=png` ensures that the output is in PNG format.</li></ul> |
 
 What to learn more? Go to [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) for more details on the `src` command and other Dynamic Media URL commands.
 
@@ -241,6 +272,28 @@ Let's explore a use case that involves the following living room image:
 Feel free to explore these variations for your specific needs.
 Want to learn more about the commands available within a URL? Go to [Command reference](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference).
 
+### Deliver GIF images
+
+**Business case:** *Stream GIFs using Dynamic Media*
+
+You can upload and deliver GIFs through Dynamic Media. To render an animated GIF, replace `is/image` with `is/content` in the URL. For example, if you uploaded `abc.gif`, use the following:
+
+* This URL path renders a static view of the GIF:
+
+  ```
+  https://your.domain.com/is/image/yourfolder/abc
+  ```
+
+* This URL path renders the animation view of the GIF:
+
+  ```
+  https://your.domain.com/is/content/yourfolder/abc
+  ```
+
+>[!NOTE]
+>
+>When using `is/content` in the URL path, image transformation commands are not applied to the asset.
+
 ### Publish a video for my website
 
 **Business case:** *Quickly publish a video for a marketing site.*
@@ -255,6 +308,7 @@ Want to learn more about the commands available within a URL? Go to [Command ref
   Preview the video so you can ensure that everything looks as expected. Once satisfied, go ahead and publish it. This step makes the video accessible to your audience.
 * **Link or embed:**
   After publishing, you have two options.
+
     * **Link directly:**
     Use the provided URL to link directly to the video. Hyperlink it appropriately on your marketing site.
     * **Embed the video:**
@@ -343,3 +397,12 @@ Adobe recommends that you use Smart Imaging's capabilities rather than manually 
 By relying on Smart Imaging, you can ensure that your images are delivered in the most efficient manner possible, tailored to each user's browsing environment. This approach simplifies the process and can lead to improved performance in terms of image loading times and overall user experience.
 
 Want to learn more? Go to [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md).
+
+### Post delivery of assets to customers
+
+**Business case:** *After publishing new content or overwriting existing content, how can it be ensured that the changes appear immediately on the CDN?*
+
+The CDN (Content Delivery Network) caches Dynamic Media assets for quick delivery to customers. When updates are made to these assets, it is important for the changes to take effect immediately on the website. By purging or invalidating the CDN cache, assets delivered by Dynamic Media can be updated quickly. This approach eliminates the need to wait for the cache to expire based on the TTL (Time To Live) value, which is typically set to ten hours. Depending on your specific use case, you can update the CDN TTL (Time to Live) settings accordingly.
+
+Want to learn more? Go to [Invalidate the CDN cache by way of Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
+

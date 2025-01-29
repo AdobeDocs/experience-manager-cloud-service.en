@@ -19,9 +19,9 @@ This article builds on those fundamentals.
 
 This document helps you understand how to manage product catalog experience based on staged product data and AEM Launches. Many times, authors have to prepare in parallel an upcoming product launch (such as a new apparel collection). This requires access to staged product data (not live yet) and the ability to prepare the content. This new content will go live with the product launch.
 
-    >[!NOTE]
-    >
-    >This feature is only available with Adobe Commerce or Cloud Edition and third-party connectors that support token-based authentication. See [Getting Started](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html) for additional information.
+>[!NOTE]
+>
+>This feature is only available with Adobe Commerce or Cloud Edition and third-party connectors that support token-based authentication. See [Getting Started](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html) for additional information.
 
 First, let's see how authors can access staged product data with CIF.
 
@@ -39,9 +39,9 @@ You can now browse the catalog with the staged data. If you open a staged catego
 
 ![stage plp](assets/staged-plp.png)
 
-    >[!NOTE]
-    >
-    >Omnisearch does not have a context and thus will only return live product catalog data
+>[!NOTE]
+>
+>Omnisearch does not have a context and thus will only return live product catalog data
 
 ## AEM Launches {#launches}
 

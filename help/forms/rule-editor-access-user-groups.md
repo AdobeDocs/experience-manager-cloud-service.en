@@ -4,8 +4,10 @@ description: There are different types of users with varied skills that work wit
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
+hide: yes
+hidefromtoc: yes
+exl-id: 2ef0e685-458b-4117-b02a-55dd3472577e
 ---
-
 # Grant rule editor access to select user groups {#grant-rule-editor-access-to-select-user-groups}
 
 ## Overview {#overview}
@@ -47,4 +49,3 @@ There are different types of users with varied skills that work with Adaptive Fo
    Components toolbar as visible to a user without rule editor access
 
    For instructions on adding users to groups, see [User Administration and Security](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).
-

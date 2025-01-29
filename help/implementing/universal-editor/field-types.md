@@ -1,6 +1,6 @@
 ---
 title: Model Definitions, Fields, and Component Types
-description: Learn about fields and the component types that the Universal Editor can edit in the properties rail with examples. Understand how you can instrument your own app by creating a model definition and linking to the component.
+description: Learn about fields and the component types that the Universal Editor can edit in the properties panel with examples. Understand how you can instrument your own app by creating a model definition and linking to the component.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
@@ -8,11 +8,11 @@ role: Admin, Architect, Developer
 
 # Model Definitions, Fields, and Component Types {#field-types}
 
-Learn about fields and the component types that the Universal Editor can edit in the properties rail with examples. Understand how you can instrument your own app by creating a model definition and linking to the component.
+Learn about fields and the component types that the Universal Editor can edit in the properties panel with examples. Understand how you can instrument your own app by creating a model definition and linking to the component.
 
 ## Overview {#overview}
 
-When adapting your own apps for use with the Universal Editor, you must instrument the components and define what fields and component types they can manipulate in the properties rail of the editor. You do this by creating a model and linking to that from the component.
+When adapting your own apps for use with the Universal Editor, you must instrument the components and define what fields and component types they can manipulate in the properties panel of the editor. You do this by creating a model and linking to that from the component.
 
 This document provides an overview of a model definition and of fields and the component types available to you along with example configurations.
 
@@ -22,7 +22,7 @@ This document provides an overview of a model definition and of fields and the c
 
 ## Model Definition Structure {#model-structure}
 
-In order to configure a component via the properties rail in the Universal Editor, a model definition has to exist and be linked to the component.
+In order to configure a component via the properties panel in the Universal Editor, a model definition has to exist and be linked to the component.
 
 The model definition is a JSON structure, starting with an array of models.
 
@@ -30,7 +30,7 @@ The model definition is a JSON structure, starting with an array of models.
 [
   {
     "id": "model-id",        // must be unique
-    "fields": []             // array of fields which shall be rendered in the properties rail
+    "fields": []             // array of fields which shall be rendered in the properties panel
   }
 ]
 ```
@@ -93,6 +93,7 @@ The following are the component types that are possible to use for rendering fie
 |[Container](#container)|`container`|
 |[Content Fragment](#content-fragment)|`aem-content-fragment`|
 |[Date Time](#date-time)|`date-time`|
+|[Experience Fragment](#experience-fragment)|`aem-experience-fragment`|
 |[Multiselect](#multiselect)|`multiselect`|
 |[Number](#number)|`number`|
 |[Radio Group](#radio-group)|`radio-group`|
@@ -132,7 +133,11 @@ An AEM tag component type enables an AEM tag picker, which can be used to attach
 
 #### AEM Content {#aem-content}
 
-An AEM content component type type enables an AEM content picker, which can be used to set content references.
+An AEM content component type enables an AEM content picker, which can be used to select any AEM resource. Unlike the [reference component,](#reference) which can only select assets, the AEM content component can reference any AEM content. It offers an additional validation type.
+
+|Validation Type|Value Type|Description|Required|
+|---|---|---|---|
+|`rootPath`|`string`|Path that the content picker will open for the user to select AEM content, limiting selection to that directory and subdirectories|No|
 
 >[!BEGINTABS]
 
@@ -291,11 +296,21 @@ A container component type allows the grouping of components. It offers an addit
 
 #### Content Fragment {#content-fragment}
 
-The Content Fragment picker can be used to select a [Content Fragment](/help/sites-cloud/authoring/fragments/content-fragments.md) and its variations (if required). It offers an additional configuration.
+The Content Fragment picker can be used to select a [Content Fragment](/help/sites-cloud/authoring/fragments/content-fragments.md) and its variations (if required). It offers an additional configuration and validation.
 
 |Configuration|Value Type|Description|Required|
 |---|---|---|---|
 |`variationName`|`string`|Variable name to store the selected variation. If undefined, no variation picker is displayed|No|
+
+|Validation Type|Value Type|Description|Required|
+|---|---|---|---|
+|`rootPath`|`string`|Path that the content picker will open for the user to select the Content Fragment, limiting selection to that directory and subdirectories|No|
+
+>[!NOTE]
+>
+>The Universal Editor [validates Content Fragment fields based on their models](/help/assets/content-fragments/content-fragments-models.md#validation) allowing you to enforce data integrity rules such as regex patterns and uniqueness constraints.
+>
+>This ensures that your content meets specific business requirements before it's published.
 
 >[!BEGINTABS]
 
@@ -417,11 +432,15 @@ It also offers an additional validation type.
 
 #### Experience Fragment {#experience-fragment}
 
-The Experience Fragment picker can be used to select an [Experience Fragment](/help/sites-cloud/authoring/fragments/experience-fragments.md) and its variations (if required). It offers an additional configuration.
+The Experience Fragment picker can be used to select an [Experience Fragment](/help/sites-cloud/authoring/fragments/experience-fragments.md) and its variations (if required). It offers an additional configuration and validation.
 
 |Configuration|Value Type|Description|Required|
 |---|---|---|---|
 |`variationName`|`string`|Variable name to store the selected variation. If undefined, no variation picker is displayed|No|
+
+|Validation Type|Value Type|Description|Required|
+|---|---|---|---|
+|`rootPath`|`string`|Path that the content picker will open for the user to select the Experience Fragment, limiting selection to that directory and subdirectories|No|
 
 >[!BEGINTABS]
 
@@ -430,14 +449,17 @@ The Experience Fragment picker can be used to select an [Experience Fragment](/h
 ```json
 [
   {
-    "id": "aem-experience-fragment",
+    "id": "experience-fragment",
     "fields": [
       {
         "component": "aem-experience-fragment",
-        "name": "picker",
-        "label": "Experience Fragment Picker",
         "valueType": "string",
-        "variationName": "experienceFragmentVariation"
+        "name": "experience-fragment",
+        "label": "experience-fragment",
+        "variationName": "experienceFragmentVariation",
+        "validation": {
+            "rootPath": "/content/refresh"
+        }
       }
     ]
   }
@@ -611,6 +633,8 @@ A radio group component type allows for a mutually-exclusive selection from mult
 >[!ENDTABS]
 
 #### Reference {#reference}
+
+An reference component type enables an AEM asset picker, which can be used to select any AEM asset to reference. Unlike the [AEM content component,](#aem-content) which can select any AEM resource, the reference component can only reference assets. It offers an additional validation type.
 
 A reference component type allows for a reference to another data object from the current object.
 

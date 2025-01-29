@@ -1,42 +1,34 @@
 ---
 title: Configuring CDN Error Pages
-description: Learn how to override the default error page by hosting static files in self-hosted storage such as Amazon S3 or Azure Blob Storage, and referencing them in a configuration file that is deployed using the Cloud Manager Configuration Pipeline.
+description: Learn how to override the default error page by hosting static files in self-hosted storage such as Amazon S3 or Azure Blob Storage, and referencing them in a configuration file that is deployed using the Cloud Manager config pipeline.
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
 ---
+
 # Configuring CDN Error Pages {#cdn-error-pages}
 
-In the unlikely event that the [Adobe-managed CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) cannot reach the AEM origin, the CDN by default serves an unbranded, generic error page which indicates that the server cannot be reached. You can override the default error page by hosting static files in self-hosted storage such as Amazon S3 or Azure Blob Storage, and referencing them in a configuration file that is deployed by using the [Cloud Manager Configuration Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
+In the unlikely event that the [Adobe-managed CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) cannot reach the AEM origin, the CDN by default serves an unbranded, generic error page which indicates that the server cannot be reached. You can override the default error page by hosting static files in self-hosted storage such as Amazon S3 or Azure Blob Storage, and referencing them in a configuration file that is deployed by using the Cloud Manager [config pipeline.](/help/operations/config-pipeline.md#managing-in-cloud-manager)
 
 ## Setup {#setup}
 
 Before you can override the default error page you need to do the following:
 
-* Create this folder and file structure in the top-level folder of your Git project:
+1. Create a file named `cdn.yaml` or similar, referencing the syntax section below. 
 
-```
-config/
-     cdn.yaml
-```
+1. Place the file somewhere under a top level folder named *config* or similar, as described in [Using Config Pipelines](/help/operations/config-pipeline.md#folder-structure).
 
-* The `cdn.yaml` configuration file should contain both metadata and the rules described in examples below. The `kind` parameter should be set to `CDN` and the version should be set to the schema version, which is currently `1`.
+1. Create a configuration pipeline in Cloud Manager, as described in the [Using Config Pipelines](/help/operations/config-pipeline.md#managing-in-cloud-manager). 
 
-* Create a targeted deployment config pipeline in Cloud Manager. See [configuring production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) and [configuring non-production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). 
+1. Deploy the configuration.
 
-**Notes**
-
-* RDEs do not currently support the configuration pipeline.
-* You can use `yq` to validate locally the YAML formatting of your configuration file (for example, `yq cdn.yaml`).
-
-### Configuration {#configuration}
+### Syntax {#syntax}
 
 The error page is implemented as a single page application (SPA), and references a handful of properties, as shown in the example below.  The static files referenced by the urls should be hosted by you on an internet accessible service such as Amazon S3 or Azure Blob Storage.
 
 Configuration example:
 
 ```
-
 kind: "CDN"
 version: "1"
 metadata:
@@ -48,8 +40,9 @@ data:
       icoUrl: https://www.example.com/error.ico
       cssUrl: https://www.example.com/error.css
       jsUrl: https://www.example.com/error.js
-
 ```
+See [Using Config Pipelines](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the data node. The kind property value should be *CDN* and the `version` property should be set to *1*.
+
 
 | Name      | Allowed Properties               | Meaning     |
 |-----------|--------------------------|-------------|
@@ -93,3 +86,9 @@ curl "https://publish-pXXXXX-eXXXXXX.adobeaemcloud.com/cdnstatus?code=403"
 The supported codes are: 403, 404, 406, 500 and 503.
 
 In this way, you directly trigger the CDN's error handler in order to test the synthetic response for a given error code.
+
+### Tutorial
+
+Refer to the [CDN error pages](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages) tutorial for step-by-step instructions on how to create, deploy and test the CDN served error pages.
+
+

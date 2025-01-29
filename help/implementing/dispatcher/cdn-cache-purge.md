@@ -7,11 +7,8 @@ role: Admin
 ---
 # Purging the CDN cache {#cdn-purge-cache}
 
->[!NOTE]
->This feature is not yet generally available. To join the early-adopter program, email `aemcs-cdn-config-adopter@adobe.com`.
-
 Purging removes an object from the Adobe CDN cache, resulting in future requests proceeding to the origin as a cache miss, rather than being served from cache.
-AEM as a Cloud Service allows you to configure a Purge API Token, which can then be used in API calls. Read the [Configuring CDN Credentials and Authentication article](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) to learn how to configure this token using the Cloud Manager Configuration Pipeline Authentication directives.
+AEM as a Cloud Service allows you to configure a Purge API Token, which can then be used in Purge API calls. Read [Configuring CDN Credentials and Authentication](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) to learn how to configure this token using the Cloud Manager Config Pipeline Authentication directives.
 
 There are three supported purging variations:
 
@@ -27,6 +24,8 @@ All purge variations share the following:
 
 >[!CAUTION]
 >Purging the CDN cache, especially with the hard flag, will increase traffic at the origin and could lead to an outage when not executed properly.
+
+You may reference [a tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) focused on configuring purge keys and performing the CDN cache purge.
 
 ## Single URL purge {#single-purge}
 
@@ -70,6 +69,19 @@ curl
 
 Be aware that the `X-AEM-Purge` header must include the 'all' value.
 
+## Interaction with Customer Managed CDN
+
+In case of a [Customer Managed CDN](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) also the `X-Forwarded-Host` and `X-AEM-Edge-Key` need to be provided:
+
+```
+curl
+-X PURGE "https://publish-p1234-e5467.adobeaemcloud.com/resource-path" \
+-H 'X-AEM-Purge-Key: <my_purge_key>' \
+-H 'X-AEM-Edge-Key: <my_edge_key>' \
+-H 'X-Forwarded-Host: <my_forwarded_domain>'
+```
+
+
 ## Interactions with Apache/Dispatcher layer {#apache-layer}
 
-As described in the [Content Delivery Flow article](/help/implementing/dispatcher/overview.md), the CDN retrieves content from the Apache/Dispatcher layer, if the cache has expired. This implies that before purging a resource at the CDN, you should ensure that a fresh version of the content is also available at the Dispatcher. For further details also see [Dispatcher Cache Invalidation](/help/implementing/dispatcher/caching.md#disp).
+As described under [Content Delivery Flow](/help/implementing/dispatcher/overview.md), the CDN retrieves content from the Apache/Dispatcher layer, if the cache has expired. This implies that before purging a resource at the CDN, you should ensure that a fresh version of the content is also available at the Dispatcher. For further details also see [Dispatcher Cache Invalidation](/help/implementing/dispatcher/caching.md#disp).

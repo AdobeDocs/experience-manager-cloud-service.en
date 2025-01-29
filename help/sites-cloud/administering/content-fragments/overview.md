@@ -1,6 +1,6 @@
 ---
 title: An Overview of working with Content Fragments
-description: Learn how Content Fragments in AEM as a Cloud Service allow you to create and use content; ideal for headless delivery, and page authoring.
+description: Learn how Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service allow you to create and use structured content; ideal for headless delivery, and page authoring.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
@@ -8,13 +8,19 @@ solution: Experience Manager Sites
 ---
 # An overview of working with Content Fragments {#overview-working-with-content-fragments}
 
-With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow you to design, create, curate, and [publish page-independent content](/help/sites-cloud/authoring/fragments/content-fragments.md). They allow you to prepare content ready for use in multiple locations, and over multiple channels, ideal for headless delivery, and page authoring.
+>[!IMPORTANT]
+>
+>Various features of the Content Fragments and Content Fragment Models are available through the Early Adopter Program.
+>
+>To see the status, and how to apply if you are interested, check the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md).
+
+With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow you to design, create, curate, and publish page-independent content. They allow you to prepare content ready for use in multiple locations, and over multiple channels, ideal for [headless delivery](/help/headless/what-is-headless.md), and [page authoring](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!IMPORTANT]
 >
 >Content Fragments can be accessed from two consoles: **Content Fragments** and **Assets**.
 >
->There are also two editors available for Content Fragments. (Both editors are accessible from both consoles.)
+>There are also two editors for authoring Content Fragments; although the basic functionality is the same, there are some differences. Both editors are accessible from both consoles.
 >
 >This section deals with the **Content Fragments** console and the *new* Content Fragment editor. These have been developed for headless content delivery (though they can be used for all scenarios)
 >
@@ -85,8 +91,11 @@ This and the following pages cover the tasks for creating, configuring, maintain
 
 After the fragments have been created, you can:
 
-* [Use the Content Fragments console](/help/sites-cloud/administering/content-fragments/managing.md) - to access, publish (to preview or production), and reference your fragments
-* [Use the Content Fragments editor](/help/sites-cloud/administering/content-fragments/authoring.md) - to edit, publish (to preview or production), and reference your fragments
+* [Use the Content Fragments console](/help/sites-cloud/administering/content-fragments/managing.md) - to:
+  * access, publish (to preview or production), and reference your fragments
+* [Use the Content Fragments editor](/help/sites-cloud/administering/content-fragments/authoring.md) - to:
+  * edit, publish (to preview or production), and reference your fragments
+  * collaborate with other authors using Comments
 * [Analyze](/help/sites-cloud/administering/content-fragments/analysis.md)  the structure of your Content Fragment, using the editor
 * [Access your fragments with GraphQL, for headless delivery to your applications](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md). 
 * [Or use your fragments for page authoring](/help/sites-cloud/authoring/fragments/content-fragments.md)

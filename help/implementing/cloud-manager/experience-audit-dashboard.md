@@ -1,27 +1,21 @@
 ---
 title: Experience Audit Dashboard
-description: Learn how Experience Audit validates your deployment process and helps ensure that changes deployed meet baseline standards for performance, accessibility, best practices, and SEO through a clear, informative dashboard interface.
+description: Discover how Experience Audit validates your deployment process, ensuring that changes meet baseline standards for performance, accessibility, best practices, and SEO. It provides a clear and informative dashboard interface to track these metrics.
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 ---
 
-# Experience Audit Dashboard {#experience-audit-dashboard}
+# Experience Audit dashboard {#experience-audit-dashboard}
 
-Learn how Experience Audit validates your deployment process and helps ensure that changes deployed meet baseline standards for performance, accessibility, best practices, and SEO through a clear, informative dashboard interface.
-
->[!NOTE]
->
->This feature is only available to [the early adopter program.](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
->
->For details on the existing Experience Audit feature for AEM as a Cloud Service, please see the document [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md)
+Discover how Experience Audit validates your deployment process, ensuring that changes meet baseline standards for performance, accessibility, best practices, and SEO. It provides a clear and informative dashboard interface to track these metrics.
 
 ## Overview {#overview}
 
-Experience Audit validates the deployment process and helps ensure that the changes deployed:
+Experience Audit validates the deployment process and helps ensure that the changes are deployed:
 
-1. Meet baseline standards for performance, accessibility, best practices, SEO (Search Engine Optimization), and PWA (Progressive Web App).
+1. Meet baseline standards for performance, accessibility, best practices, and SEO (Search Engine Optimization).
 
 1. Do not introduce regressions.
 
@@ -35,9 +29,9 @@ Experience Audit is powered by [Google Lighthouse](https://developer.chrome.com/
 
 Experience Audit is available for Cloud Manager:
 
-* Sites production pipelines, by default
-* Development full-stack pipelines, optionally
-* Development front-end pipelines, optionally
+* (Default) Sites production pipelines
+* (Optional) Development of full-stack pipelines
+* (Optional) Development of front-end pipelines
 
 See the [Configuration section](#configuration) for more information on how to configure the audit for the optional environments.
 
@@ -45,19 +39,19 @@ Audits are run as part of the pipeline. Audits can also be [run on-demand](#on-d
 
 ## Configuration {#configuration}
 
-Experience Audit is available by default for production pipelines. It can be be optionally enabled for development full-stack and front-end pipelines. In all cases, you need to define which content paths are evaluated during pipeline execution.
+Experience Audit is available by default for production pipelines. It can be optionally enabled for development of full-stack and front-end pipelines. In all cases, you need to define which content paths are evaluated during pipeline execution.
 
-1. Depending on the type of pipeline you wish to configure, follow the directions to:
+1. Depending on the type of pipeline you want to configure, do one of the following:
 
-   * Add a new [production pipeline,](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) if you wish to define the paths to be evaluated by the audit.
-   * Add a new [non-production pipeline,](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) if you wish to enable the audit on a front-end or development full-stack pipeline.
-   * Or you can [edit an existing pipeline,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) and update the existing options.
+   * Add a new [production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) to define the paths you want the audit to evaluate.
+   * Add a new [non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md), if you want to enable the audit on a front-end or development full-stack pipeline.
+   * Or, you can [edit an existing pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), and update the existing options.
 
-1. If you are adding or editing a non-production pipeline for which you want to use Experience Audit, you must select the **Experience Audit** checkbox on the **Source Code** tab.
+1. To use Experience Audit when adding or editing a non-production pipeline, select the **Experience Audit** checkbox. You can find this option on the **Source Code** tab.
 
    ![Enabling Experience Audit](assets/experience-audit-enable.jpg)
 
-   * This is only necessary for non-production pipelines.
+   * Necessary only for non-production pipelines.
    * The **Experience Audit** tab appears when the checkbox is selected.
 
 1. For both production and non-production pipelines, you define the paths that should be included in the Experience Audit on the **Experience Audit** tab.
@@ -67,7 +61,7 @@ Experience Audit is available by default for production pipelines. It can be be 
 
    ![Defining a path for the Experience Audit](assets/experience-audit-add-page.png)
 
-1. Tap or click **Add Page** and the path is auto-completed with the address of your environment and added to the table of paths.
+1. Click **Add Page** and the path is auto-completed with the address of your environment and added to the table of paths.
 
    ![Saving path to the table](assets/experience-audit-page-added.png)
 
@@ -76,121 +70,101 @@ Experience Audit is available by default for production pipelines. It can be be 
    * You can add a maximum of 25 paths.
    * If you do not define any paths, the homepage of the site is included in the Experience Audit by default.
 
-1. Click **Save** to save your pipeline.
+1. Click **Save**.
 
-## Experience Audit Results {#results}
+## Experience Audit results {#results}
 
-The results of the Experience Audit are presented in the **Stage testing** phase of the production pipeline via the [production pipeline execution page.](/help/implementing/cloud-manager/deploy-code.md)
+The results of the Experience Audit are presented in the **Stage testing** phase of the production pipeline via the [production pipeline execution page](/help/implementing/cloud-manager/deploy-code.md).
 
-![Dashboard in the pipeline](assets/experience-audit-dashboard.jpg)
+![Dashboard in the pipeline](assets/experience-audit-dashboard.png)
 
 Experience Audit provides the median Google Lighthouse scores for the [configured pages](#configuration) and the difference in score to the previous scan.
 
 From this summary view in the **Stage Testing** phase of the pipeline, you have two options:
 
-* **[View slowest pages](#view-slowest-pages)**
-* **[View full report](#view-full-report)**
+* **[View the slowest pages](#view-slowest-pages)**
+* **[View the full report](#view-full-report)**
 
-In addition to the summary presented in the details of a pipeline run, you can also directly access the full results of the audit by using the **Reports** tab of the Cloud Manager dashboard to access [the full report](#view-full-report) directly.
+You can access the full audit results by clicking the **Reports** tab in the Cloud Manager dashboard. In addition to the summary shown in the pipeline run details, you can view [the full report](#view-full-report) directly.
 
 >[!TIP]
 >
 >The following sections describe how to view the results of the Experience Audit.
 >
->* If you would like details on how the audit works, please see the section [Experience Audit Evaluation Details.](#details)
->* If you would like to know how to run an experience audit on demand, please see the section [On-Demand Audit Reports.](#on-demand)
->* If you experience issues with the audit, please see the section [Experience Audit Encounters Issues.](#issues)
->* For general performance tips, please see the section [General Performance Tips.](#performance-tips)
+>* To learn more details on how the audit works, see [Experience Audit Evaluation Details](#details).
+>* To know how to run an Experience Audit on demand, see [On-Demand Audit Reports](#on-demand).
+>* If you experience issues with the audit, see [Experience Audit Encounters Issues](#issues).
 
-### View Slowest Pages {#view-slowest-pages}
+### View the slowest pages {#view-slowest-pages}
 
-Tapping or clicking **View slowest pages** opens the **Slowest 5 pages** dialog, showing the five lowest-performing pages that you [configured to audit.](#configuration)
+Click **View slowest pages** to open the **Slowest 5 pages** dialog box. The five lowest-performing pages that you [configured to audit](#configuration) are shown.
 
 ![Slowest five](assets/experience-audit-slowest-five.png)
 
-The scores are broken down by **Performance**, **Accessibility**, **Best Practices**, and **SEO** along with the deviation of each metric from the last audit.
+Cloud Manager breaks down the scores by **Performance**, **Accessibility**, **Best Practices**, and **SEO**, showing the deviation of each metric from the previous audit.
 
-By default, the dialog opens with the scores for mobile devices. You can change this to desktop scores using the **Devices** toggle at the top of the dialog.
+By default, the dialog box opens with the scores for mobile devices. You can see desktop scores using the **Devices** toggle near the top of the dialog box.
 
-The dialog is intended for a quick overview. For full details, tap or click **View full report**.
+The dialog box is intended to give you a quick overview. For full details, click **View full report**.
 
-### View Full Report {#view-full-report}
+### View the full report {#view-full-report}
 
-You can view the full Experience Audit report by:
+You can view the full Experience Audit report by doing the following:
 
-* Tapping or clicking **View full report** in the **[Slowest 5 pages](#view-slowest-pages)** dialog.
-* Tapping or clicking **View full report** when viewing the [execution of a pipeline.](#results)
-* Tapping or clicking the **Reports** tab in Cloud Manager.
+* Click **`View full report`** in the **[Slowest 5 pages](#view-slowest-pages)** dialog.
+* Click **`View full report`** when viewing the [execution of a pipeline](#results).
+* Click the **Reports** tab in Cloud Manager.
 
-The **Reports** tab of Cloud Manager is opened, showing the **Experience audit**.
+The **Reports** tab of Cloud Manager is opened, showing the **Experience Audit**.
 
-![Experience audit reports](assets/experience-audit-reports.png)
+![Experience Audit reports](assets/experience-audit-reports.png)
 
 The report is split into two areas:
 
-* **[Page scores - trend](#trend)** 
-* **[Experience audit scan results](#results)**
+* **[Page scores &mdash; trend](#trend)** 
+* **[Experience Audit scan results](#results)**
 
-#### Page scores - trend {#trend}
+#### Page scores &mdash; trend {#trend}
 
-By default, the selected view for **Page scores - trend** is **median scores** for the **Last 6 months**.
+By default, the selected view for **Page scores &mdash; trend** is **median scores** for the **Last year**.
 
-Use the **Select** and **View** drop-downs at the top and bottom of the chart button to select page-specific details and different time frames, respectively. Tap or click the and the **update trend** button at the top of the chart to apply the selections and refresh the chart.
+You can choose to view the trends for specific Lighthouse categories by clicking the category name in the legend.
+
+![Trend Selectable](assets/experience-audit-trend-selectable.png)
+
+Use the **Select** drop-down at the top of the chart to select page-specific details, and the **View** and **Trigger** drop-downs at the bottom to choose different time frames and the trigger type, respectively.
+
+The **View** drop-down offers the possibility to select a preset time frame, or a custom interval for a more specific view.
+
+![Trend View](assets/experience-audit-trend-view.png)
 
 When moving the mouse over the chart, a tooltip displays the values for the Google Lighthouse categories at specific points in time.
 
 ![Trend details](assets/experience-audit-trend-details.png)
 
-If you tap or click on the chart at a point in time, a popover opens with detail of that scan. Tap or click the **open experience audit scan** to load that scan results into the **[Experience audit scan results](#scan-results)** section.
+If you click on the chart at a point in time, a popover opens with detail of that scan. Click the **open experience audit scan** to load that scan results into the **[Experience Audit scan results](#scan-results)** section.
 
 ![Select different scan](assets/experience-audit-open-scan.png)
 
-#### Experience Audit Scan Results {#scan-results}
+#### Experience Audit scan results {#scan-results}
 
-The **Experience audit scan results** section gives recommendations on how to improve your score and details of all the pages scanned. It is divided into two sections:
-
-* **[Recommendations](#recommendations)**
-* **[Scanned pages](#scanned-pages)**
-
-##### Recommendations {#recommendations}
-
-The **Recommendations** section shows an aggregate set of insights. By default, recommendations for **performance** are displayed. Use the drop-down next to the **Recommendations** heading to change to another category. 
-
-![Recommendations](assets/experience-audit-recommendations.png)
-
-Tap or click the chevron for any recommendation to reveal details about it.
-
-![Recommendation details](assets/experience-audit-recommendations-details.png)
-
-When available, the expanded recommendation details also contain the percentage of the recommendations impact, to help focus on the most impactful changes.
-
-Tap or click the **view pages** link in the details view to see the pages to which the recommendation applies.
-
-![Pages for the recommendation details](assets/experience-audit-details-pages.png)
-
-##### Scanned Pages {#scanned-pages}
-
-The **Scanned pages** section gives details scores on all scanned pages. You can use the **Prev** and **Next** buttons to page through the results and choose on how many the display should paginate.
+The **Experience Audit scan results** section gives details of scores on all scanned pages. Use the **Prev** and **Next** buttons to page through the results and choose on how many the display should paginate.
 
 ![Scanned pages](assets/experience-audit-scanned-pages.png)
 
-Tapping or clicking the link of a particular page updates the **Select** filter of the [**Page scores - trend** section](#trend) and shows the **Scores &amp; recommendations** tab for the selected page.
-
-![Page results](assets/experience-audit-page-results.png)
-
-The **Raw reports** tab gives you scores for every audit of the page. Tap or click the report date in the **Lighthouse Report** column to retrieve a JSON file of the raw data.
+Click the link of a particular page updates the **Select** filter of the [**Page scores &mdash; trend** section](#trend) and shows the **Raw reports** tab gives you scores for every audit of the page. Click the report date in the **Lighthouse Report** column to retrieve a JSON file of the raw data.
 
 ![Raw report](assets/experience-audit-raw-reports.png)
 
-This opens a new tab in your browser, pointing to `https://googlechrome.github.io/lighthouse/viewer/` with a signed URL of the Lighthouse raw JavaScript Object Notation (JSON) report for the selected page, which opens automatically for your detailed inspection
+A new tab opens in your browser, directing you to `https://googlechrome.github.io/lighthouse/viewer/`. It automatically loads a signed URL containing the Lighthouse raw JSON report for the selected page, allowing for detailed inspection.
 
 ![Viewing raw report](assets/experience-audit-view-raw-report.png)
 
-## On-Demand Audit Reports {#on-demand}
+## On-demand scan audit reports {#on-demand}
 
-In addition to being run during pipeline execution, Experience Audit reports can also be generated on-demand. This is a good solution to quickly scan your pages, without having to run a pipeline.
+Besides being run during pipeline execution, Experience Audit reports can also be generated on-demand. This option is a good solution to scan your pages quickly, without having to run a pipeline.
 
-To run an on-demand scan, navigate to the  **Reports** tab to see the complete audit report and then tap or click the **Run scan** button. 
+To run an on-demand scan, navigate to the **Reports** tab to see the complete audit report and then click the **Run scan** button. 
 
 ![On-demand scanning](assets/experience-audit-on-demand.png)
 
@@ -200,7 +174,7 @@ The **Run scan** button becomes unavailable and is badged with a clock icon when
 
 On-demand scans trigger an Experience Audit for the latest 25 [configured pages](#configuration) and typically finish in a few minutes.
 
-Upon completion, the scores chart will be automatically updated, and you can inspect the results exactly as for a pipeline execution scan.
+Upon completion, the scores chart is automatically updated, and you can inspect the results exactly as for a pipeline execution scan.
 
 You can filter the scores chart based on the trigger type by using the **Trigger** selector. 
 
@@ -210,15 +184,15 @@ You can filter the scores chart based on the trigger type by using the **Trigger
 >
 >An on-demand scan can be started only if the environment is not deleted and there are no other pending scans on the same environment.
 
-## Experience Audit Encounters Issues {#issues}
+## Experience Audit encounters issues {#issues}
 
-If [pages you configured](#configuration) to be audited were not available or there were other errors in the audit, Experience Audit reflects this.
+If [pages you configured](#configuration) to be audited were not available or there were other errors in the audit, Experience Audit reflects this fact.
 
 The pipeline shows an expandable error section to view the relative URL paths it could not access.
 
-![Issues encountered by Experience Audit](assets/experience-audit-issues.jpg)
+![Issues encountered by Experience Audit](assets/experience-audit-issues.png)
 
-If viewing the full report, details are shown in the **[Experience audit scan results](#results)** section, which is also expandable.
+If viewing the full report, details are shown in the **[Experience Audit scan results](#results)** section, which is also expandable.
 
 ![Full report issues](assets/experience-audit-issues-report.png)
 
@@ -228,35 +202,15 @@ Some reasons that the pages might not be available are that:
 * The page does not exist.
 * The page redirects requiring authentication other than basic.
 * An internal issue occurred.
-* Etc.
 
 >[!TIP]
 >
->[Accessing the raw reports](#scanned-pages) for a page can provide details on why the page could not be audited.
+>[Accessing the raw reports](#scan-results) for a page can provide details on why the page could not be audited.
 
-## General Performance Tips {#performance-tips}
-
-Two of the most common impactful issues that are easy to fix relate to Cumulative Layout Shifts (CLS) and Largest Contentful Paint (LCP).
-
-These can be improved by:
-
-* Not lazy loading the images above the fold (the content visible in the browser without needing to scroll down).
-* Properly prioritizing how resources are loaded (e.g. by asynchronously loading the images below the fold after the document has loaded).
-* Prefetching JavaScript and CSS files that are used to render content above the fold (if they are necessary).
-* Reserving the vertical space by assigning an aspect ratio to containers that either load slowly or are rendered later.
-* Converting images to WebP format to reduce their size.
-* Using `<picture>` and image `srcset` with varying image sizes for different viewport sizes (and ensuring that the resizing works).
-
-## Experience Audit Evaluation Details {#details}
+## Experience Audit evaluation details {#details}
 
 The following details provide additional information on how the Experience Audit evaluates your site. They are not necessary for general usage of the feature and are provided here for completeness.
 
-* The audit scans the origin (`.com`) domain as defined in the [configured Experience Audit page paths](#configuration) of the publisher to simulate real user experiences more accurately and helps you make more informed decisions about managing and optimizing your websites.
-* In production full-stack pipelines, the staging environment is scanned.
-  * To ensure the audit provides relevant details during auditing, the staging environment's content should be as close as possible to the production environment.
-* The pages displayed in the **Select** dropdown in the [**Page scores - trend** section](#trend) are all known pages that were scanned in the past by the Experience Audit.
-* [A recommendation](#recommendations) can have a potential gain and a difference from the previous scan.
-  * Experience Audit estimates the potential gain by processing the raw report for each page and correlating the wasted bytes or milliseconds with an insight that has a weighted impact on the performance score.
-  * The audit provides this information (as well as the affected pages) to help decide which recommendation to pursue.
-  * For more details, please see the [General Performance Tips section](#performance-tips)
-* Given that a frontend pipeline could deploy to an existing environment (or there could be multiple frontend pipelines targeting the same environment), and the scan results are aggregated at an environment level, the scores, trends, and recommendations are displayed in the same selected environment, regardless of the pipeline execution that triggered the scan.
+* The audit scans the origin (`.com`) domain from the [configured Experience Audit page paths](#configuration) of the publisher to simulate real user experiences, helping you make better decisions about managing and optimizing your websites.
+* In production full-stack pipelines, the staging environment is scanned. To ensure that the audit provides relevant details during auditing, the staging environment's content should be as close as possible to the production environment.
+* The pages displayed in the **Select** drop-down in the [**Page scores &mdash; trend** section](#trend) are all known pages that the Experience Audit scanned in the past.

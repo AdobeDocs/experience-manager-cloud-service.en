@@ -6,7 +6,16 @@ exl-id: 58194858-6e1c-460b-bab3-3496176b2851
 ---
 # Deploy Content Hub {#deploy-content-hub}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 ![Deploy Content Hub](assets/deploy-content-hub.png)
+
+>[!AVAILABILITY]
+>
+>Content Hub guide is now available in PDF format. Download the entire guide and use Adobe Acrobat AI Assistant to answer your queries. 
+>
+>[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Content Hub is available as part of Experience Manager Assets as a Cloud Service for democratizing access to on-brand content for organizations and their business partners.
 
@@ -18,13 +27,33 @@ The variations of privileges on Content Hub include:
 
 * [Content Hub users](#onboard-content-hub-users): Access brand approved assets on the Content Hub portal.
 
-* [Content Hub Administrators](#onboard-content-hub-administrator): Access to the [Configuration User Interface](/help/assets/configure-content-hub-ui-options.md) on Content Hub in addition to accessing brand-approved assets, uploading assets to Content Hub, Adobe Express integration to edit images (if you have Adobe Express entitlements).
+* [Content Hub administrators](#onboard-content-hub-administrator): Access to the [Configuration User Interface](/help/assets/configure-content-hub-ui-options.md) on Content Hub in addition to accessing brand-approved assets, uploading assets to Content Hub, Adobe Express integration to edit images (if you have Adobe Express entitlements).
 
 * [Content Hub users with rights to add assets](#onboard-content-hub-users-add-assets): Ability to [upload assets to Content Hub](/help/assets/upload-brand-approved-assets.md) in addition to accessing brand approved assets on the Content Hub portal.
 
 * [Content Hub users with rights to remix assets to new variations](#onboard-content-hub-users-remix-assets): [Adobe Express Integration](/help/assets/edit-images-content-hub.md) (if you have Adobe Express entitlements) in addition to accessing brand approved assets on the Content Hub portal.
 
 * [Experience Manager Assets users](#experience-manager-assets-users): Ability to approve assets on Experience Manager Assets as a Cloud Service to make those assets available on Content Hub.
+
+The following table summarizes the available Content Hub user types, the privileges they have, and the product profiles that are required to get those privileges:
+
+| User Role    | Content Hub users | Content Hub users with rights to add assets  | Content Hub users with rights to remix assets | Content Hub administrators |
+|---------------|----------|----------|-------------------------|---|
+| **Capabilities**|
+| Access brand approved assets on the Content Hub portal |&#10003; | &#10003;|   &#10003;  |&#10003;|
+| Upload assets from Content Hub portal    | &minus; | &#10003; | &#10003;   |&#10003;|
+| Use Adobe Express integration to edit images     |  &minus; |  &minus; |     &#10003;   |&minus;|
+| Access the Content Hub configuration UI        | &minus; | &minus; |   &minus;   |&#10003;|
+| **User needs to be in these product profiles (Admin Console)**|
+| AEM > Delivery instance > AEM Assets Limited Users | &#10003;  | &#10003;  |   &#10003;     |&#10003;|
+| AEM > Production Author instance > AEM Users         | &minus; | &#10003; |   &#10003;    |&minus;|
+| AEM > Production Author instance > AEM Administrators |  &minus; | &minus; | &minus;  |&#10003;|
+| Adobe Express| &minus;  | &minus; | &#10003;  |&minus;|
+| **More information**          | See [Content Hub users](#onboard-content-hub-users) |  See [Content Hub users with rights to add assets](#onboard-content-hub-users-add-assets) |   See [Content Hub users with rights to remix assets to new variations](#onboard-content-hub-users-remix-assets)    |See [Content Hub administrators](#onboard-content-hub-administrator)|
+
+>[!NOTE]
+>
+>[Experience Manager Assets users](#experience-manager-assets-users) have the ability to approve assets on an Experience Manager Assets as a Cloud Service environment to make those assets available on Content Hub. These users must be added to AEM > Production Author instance > AEM Users product profile using Admin Console.
 
 ## Step 1: Enable Content Hub for Experience Manager Assets using Cloud Manager {#enable-content-hub}
 
@@ -47,7 +76,7 @@ To access the Content Hub portal, administrators first need to enable Content Hu
 
 1. Click **[!UICONTROL Update]**.
 
-Content Hub is now enabled for Experience Manager Assets as a Cloud Service. 
+Content Hub is now enabled for Experience Manager Assets as a Cloud Service. After enabling Content Hub on a Production environment, you cannot disable it in a self-service manner.
 
 >[!NOTE]
 >
@@ -58,15 +87,23 @@ If you are new to Experience Manager Assets, click **[!UICONTROL Add Program]** 
 
 ### Content Hub instance and product profile on Admin Console{#content-hub-instance-product-profile}
 
-After [enabling Content Hub for Assets as a Cloud Service using Cloud Manager](#enable-content-hub), there is a new instance created within AEM Assets as a Cloud Service on Admin Console with `contenthub` as the suffix:
+After [enabling Content Hub for Assets as a Cloud Service using Cloud Manager](#enable-content-hub), there is a new instance created within AEM Assets as a Cloud Service on Admin Console with `delivery` as the suffix:
 
 ![New instance for Content Hub](assets/new-instance-content-hub.png)
+
+>[!NOTE]
+>
+>If you have provisioned Content Hub before August 14, 2024, the new instance is created with `contenthub` as the suffix.
 
 Note that there is no `author` or `publish` in the instance name for Content Hub.
 
 Click the instance name to view the Content Hub product profile.
 
 ![Content Hub product profile](assets/content-hub-product-profile.png)
+
+>[!NOTE]
+>
+>If you have provisioned Content Hub before August 14, 2024, the Content Hub product profile has `contenthub` mentioned after `Limited Users` instead of `delivery`.
 
 ## Step 2: Onboard Content Hub administrator {#onboard-content-hub-administrator}
 

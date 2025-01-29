@@ -37,7 +37,7 @@ The model of these components is part of the [Boilerplate for WYSIWYG authoring 
 
 ## Blocks {#blocks}
 
-Blocks are used to create richer content with specific styles and functionality. In contrast to default content, blocks do require additional semantics. Blocks can be likened to [components in the AEM page editor.](/help/implementing/developing/components/overview.md)
+Blocks are used to create richer content with specific styles and functionality. In contrast to default content, blocks do require additional semantics. 
 
 Blocks are essentially pieces of content decorated by JavaScript and styled with a stylesheet.
 
@@ -78,7 +78,7 @@ The [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk
 
 Note that not every block must have a model. Some blocks are simply [containers](#container) for a list of children, where each child has its own model.
 
-It is also necessary to define which blocks exist and can be added to a page using the Universal Editor. The [`component-definitions.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) file lists the components as they are made available by the Universal Editor.
+It is also necessary to define which blocks exist and can be added to a page using the Universal Editor. The [`component-definitions.json`](/help/implementing/universal-editor/component-definition.md) file lists the components as they are made available by the Universal Editor.
 
 ```json
 {
@@ -106,8 +106,8 @@ For each block, the developer:
 * Must define the block name, which will be rendered in the block's table header.
   * The block name is used to fetch the right style and script to decorate the block.
 * Can define a [model ID.](/help/implementing/universal-editor/field-types.md#model-structure)
-  * The model ID is a reference to the component's model, which defines the fields available to the author in the properties rail.
-* Can define a [filter ID.](/help/implementing/universal-editor/customizing.md#filtering-components)
+  * The model ID is a reference to the component's model, which defines the fields available to the author in the properties panel.
+* Can define a [filter ID.](/help/implementing/universal-editor/filtering.md)
   * The filter ID is a reference to the component's filter, which allows to change the authoring behavior, for example by limiting which children can be added to the block or section, or which RTE features are enabled.
 
 All this information is stored in AEM when a block is added to a page. If either the resource type or block name are missing, the block will not render on the page.
@@ -239,7 +239,7 @@ An example of this is the [section metadata.](/help/edge/developer/markup-sectio
 
 Both of the previous structures have a single dimension: the list of properties. Container blocks allow adding children (usually of the same type or model) and hence are two-dimensional. These blocks still support their own properties rendered as rows with a single column first. But they also allow adding children, for which each item is rendered as row and each property as column within that row.
 
-In the following example, a block accepts a list of linked icons as children, where each linked icon has an image and a link. Notice the [filter ID](/help/implementing/universal-editor/customizing.md#filtering-components) set in the data of the block in order to reference the filter configuration.
+In the following example, a block accepts a list of linked icons as children, where each linked icon has an image and a link. Notice the [filter ID](/help/implementing/universal-editor/filtering.md) set in the data of the block in order to reference the filter configuration.
 
 >[!BEGINTABS]
 
@@ -515,7 +515,7 @@ Element grouping uses a naming convention, where the group name is separated fro
 | ![A group of people sitting on a stage][image0] |
 +-------------------------------------------------+
 | Adobe Experience Cloud                          |
-| ## Welcome to AEM                               |
+| ## Meet the Experts                             |
 | Join us in this ask me everything session ...   |
 | [More Details](https://link.to/more-details)    |
 | [RSVP](https://link.to/sign-up)                 |
@@ -530,9 +530,9 @@ The same way a developer can define and model multiple [blocks,](#blocks) they c
 
 The content model of Edge Delivery Services deliberately allows only a single level of nesting, which is any default content or block contained by a section. This means in order to have more complex visual components that can contain other components, they have to be modelled as sections and combined together using auto-blocking client side. Typical examples of this are tabs and collapsible sections like accordions.
 
-A section can be defined in the same way as a block, but with the resource type of `core/franklin/components/section/v1/section`. Sections can have a name and a [filter ID,](/help/implementing/universal-editor/customizing.md#filtering-components) which are used by the [Universal Editor](/help/implementing/universal-editor/introduction.md) only, as well as a [model ID,](/help/implementing/universal-editor/field-types.md#model-structure) which is used to render the section metadata. The model is in this way the model of the section metadata block, which will automatically be appended to a section as key-value block if it is not empty.
+A section can be defined in the same way as a block, but with the resource type of `core/franklin/components/section/v1/section`. Sections can have a name and a [filter ID,](/help/implementing/universal-editor/filtering.md) which are used by the [Universal Editor](/help/implementing/universal-editor/introduction.md) only, as well as a [model ID,](/help/implementing/universal-editor/field-types.md#model-structure) which is used to render the section metadata. The model is in this way the model of the section metadata block, which will automatically be appended to a section as key-value block if it is not empty.
 
-The [model ID](/help/implementing/universal-editor/field-types.md#model-structure) and [filter ID](/help/implementing/universal-editor/customizing.md#filtering-components) of the default section is `section`. It can be used to alter the behavior of the default section. The following example adds some styles and and a background image to the section metadata model.
+The [model ID](/help/implementing/universal-editor/field-types.md#model-structure) and [filter ID](/help/implementing/universal-editor/filtering.md) of the default section is `section`. It can be used to alter the behavior of the default section. The following example adds some styles and and a background image to the section metadata model.
 
 ```json
 {
@@ -602,20 +602,7 @@ It is also possible to define additional page metadata in two ways.
 
 It is possible to define metadata on a per path or per path pattern basis in a table-like way in AEM as a Cloud Service. There is an authoring UI for table-like data available that is similar to Excel or Google Sheets.
 
-To create such table, create a page and use the Metadata template in the Sites console.
-
-In the spreadsheet's page properties, define the metadata fields you need along with the URL. Then add metadata per page path or page path pattern.
-
-Make sure spreadsheet is added to your path mapping as well before you publishing it.
-
-```json
-{
-  "mappings": [
-    "/content/site/:/",
-    "/content/site/metadata:/metadata.json"
-  ]
-}
-```
+For further details, please see the document [Using Spreadsheets to Manage Tabular Data](/help/edge/wysiwyg-authoring/tabular-data.md) for more information.
 
 ### Page Properties {#page-properties}
 
@@ -625,7 +612,7 @@ Many of the default page properties available in AEM are mapped to the respectiv
 * The time the document was last published as `published-time` in ISO8601 format
 * `cq:tags` as `cq-tags` as a comma-separated list of the tag IDs. 
 
-It is also possible to define a component model for custom page metadata, which will be made available to the author as a tab of the AEM Sites page properties dialog.
+It is also possible to define a component model for custom page metadata, which will be made available to the author in the Universal Editor.
 
 To do so, create a component model with the ID `page-metadata`.
 

@@ -11,7 +11,7 @@ role: Admin
 
 The fundamentals of code development are similar in AEM as a Cloud Service compared to the AEM On Premise and Managed Services solutions. Developers write code and test it locally, which is then pushed to remote environments on AEM as a Cloud Service. Cloud Manager, which was an optional content delivery tool for Managed Services, is required. This delivery tool is now the sole mechanism for deploying code to AEM as a Cloud Service dev, stage, and production environments. For quick feature validation and debugging before deploying those previously mentioned environments, code can be synced from a local environment to a [Rapid Development Environment](/help/implementing/developing/introduction/rapid-development-environments.md).
 
-The update of the [AEM version](/help/implementing/deploying/aem-version-updates.md) is always a separate deployment event from pushing [custom code](#customer-releases). Viewed another way, custom code releases should be tested against the AEM version that is on production because that is what it is deployed on the top. AEM version updates that happen after that, which are frequent and are automatically applied. They are intended to be backward compatible with the customer code already deployed.
+The update of the [AEM version](/help/implementing/deploying/aem-version-updates.md) is always a separate deployment event from pushing [custom code](#customer-releases). Viewed another way, custom code releases should be tested against the AEM version that is on production because that is what it is deployed on the top. AEM version updates that happen after that (which are frequent and are automatically applied), are intended to be backward compatible with the customer code already deployed.
 
 The rest of this document describes how developers should adapt their practices so they work with both AEM as a Cloud Service's Version updates and customer updates. 
 
@@ -31,7 +31,7 @@ Like for existing non-cloud AEM versions, a local, offline development based on 
 >[!NOTE]
 >There are subtle operational differences between how the application behaves on a local machine versus the Adobe Cloud. These architectural differences must be respected during local development and could lead to a different behavior when deploying on the cloud infrastructure. Because of these differences, it is important to perform the exhaustive tests on dev and stage environments before rolling out new custom code in production.
 
-To develop custom code for an internal release, the relevant version of the [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) should be downloaded and installed. For additional information about using the AEM as a Cloud Service Dispatcher Tools, see [this page](/help/implementing/dispatcher/disp-overview.md).
+To develop custom code for an internal release, the relevant version of the [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) should be downloaded and installed. For additional information about using the AEM as a Cloud Service Dispatcher Tools, see [Dispatcher in the Cloud](/help/implementing/dispatcher/disp-overview.md).
 
 The following video provides a high-level overview on how to deploy code to AEM as a Cloud Service:
 
@@ -50,7 +50,8 @@ The following video provides a high-level overview on how to deploy code to AEM 
 
 ![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8) -->
 
-Customers deploy custom code to cloud environments through Cloud Manager. Cloud Manager transforms locally assembled content packages into an artifact conforming to the Sling Feature Model, which is how an application on AEM as a Cloud Service is described when running in a cloud environment. As a result, when looking at the packages in [Package Manager](/help/implementing/developing/tools/package-manager.md) on Cloud environments, the name includes "cp2fm" and the transformed packages have all metadata removed. They cannot be interacted with, meaning they cannot be downloaded, replicated, or opened. Detailed documentation about the converter can be [found here](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
+Customers deploy custom code to cloud environments through Cloud Manager. Cloud Manager transforms locally assembled content packages into an artifact conforming to the Sling Feature Model, which is how an application on AEM as a Cloud Service is described when running in a cloud environment. As a result, when looking at the packages in [Package Manager](/help/implementing/developing/tools/package-manager.md) on Cloud environments, the name includes "cp2fm" and the transformed packages have all metadata removed. They cannot be interacted with, meaning they cannot be downloaded, replicated, or opened. For detailed documentation about the converter see [
+sling-org-apache-sling-feature-cpconverter on GitHub](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
 Content packages written for applications on AEM as a Cloud Service must have a clean separation between immutable and mutable content and Cloud Manager only installs the mutable content, also outputting a message like the following:
 
@@ -246,7 +247,7 @@ Like AEM updates, customer releases are deployed using a rolling deployment stra
 
 ## Indexes {#indexes}
 
-New or modified indexes cause an extra indexing or reindexing step before the new version can take on traffic. Details about index management in AEM as a Cloud Service can be found in [this article](/help/operations/indexing.md). You can check the indexing status of build pages on Cloud Manager, and receive a notification when the new version is ready to take traffic.
+New or modified indexes cause an extra indexing or reindexing step before the new version can take on traffic. Details about index management in AEM as a Cloud Service can be found under [Content Search and Indexing](/help/operations/indexing.md). You can check the indexing status of build pages on Cloud Manager, and receive a notification when the new version is ready to take traffic.
 
 >[!NOTE]
 >
@@ -272,7 +273,7 @@ Changing service users, or ACLs that access content or code, could lead to error
 
 ### Index Changes {#index-changes}
 
-If changes to indexes are made, it is important that the new version continues to use its indexes until it is terminated, while the old version uses its own modified set of indexes. The developer should follow the index management techniques described [in this article](/help/operations/indexing.md).
+If changes to indexes are made, it is important that the new version continues to use its indexes until it is terminated, while the old version uses its own modified set of indexes. The developer should follow the index management techniques described under [Content Search and Indexing](/help/operations/indexing.md).
 
 ### Conservative Coding for Rollbacks {#conservative-coding-for-rollbacks}
 
@@ -327,4 +328,4 @@ Developers want to ensure that their custom code is performing well. For Cloud e
 
 ## Maintenance Tasks Configuration in Source Control {#maintenance-tasks-configuration-in-source-control}
 
-Maintenance Task configurations must be persisted in source control because the **Tools > Operations** screen is not available in Cloud environments. This benefit ensures that changes are intentionally persisted rather than reactively applied and forgotten. See [Maintenance Task article](/help/operations/maintenance.md) for additional information.
+Maintenance Task configurations must be persisted in source control because the **Tools > Operations** screen is not available in Cloud environments. This benefit ensures that changes are intentionally persisted rather than reactively applied and forgotten. See [Maintenance Tasks in AEM as a Cloud Service](/help/operations/maintenance.md) for additional information.

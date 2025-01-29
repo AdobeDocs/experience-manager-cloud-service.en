@@ -18,15 +18,6 @@ Before beginning this guide, you should already be familiar with the basics of a
 * You have access to an [AEM Cloud Service sandbox.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
 * You have [enabled the Universal Editor on the same sandbox environment.](/help/implementing/universal-editor/getting-started.md)
 
-## Pick the Right Editor {#editor-choice}
-
-AEM offers two different content editors and the choice of which to use depends on your situation.
-
-* **Universal Editor** - This should be the default choice for new sites.
-* **AEM Page Editor** - This should be chosen for an existing AEM Sites migration to Edge Delivery Services.
-
-This guide focuses on AEM projects on Edge Delivery Services using the Universal Editor. See the document [Using Edge Delivery Services with AEM](/help/edge/using.md) for more details on choosing the right editor and the migration of existing AEM sites to Edge Delivery Services.
-
 ## Core Concepts when Developing for Edge Delivery Services {#core-concepts}
 
 Edge Delivery Services is based around the concept of blocks. AEM comes with a comprehensive library of predefined blocks, which can be extended to meet your project needs. Code for Edge Delivery Services projects is managed in GitHub.
@@ -117,6 +108,10 @@ First you will need to create a new project on GitHub, based on the Adobe templa
 
    ![Committing changes](assets/edge-dev-getting-started/commit-paths-changes.png)
 
+>[!TIP]
+>
+>For more information about path mappings, please see the document [Path Mapping for Edge Delivery Services.](/help/edge/wysiwyg-authoring/path-mapping.md)
+
 ### Create and Edit a New AEM Site {#create-aem-site}
 
 Now that you have a GitHub project, you must create a new AEM site that the project can use.
@@ -179,7 +174,7 @@ Once you are finished editing your new site using the Universal Editor, you can 
 
 1. Open a new tab in the same browser and navigate to the URL of your new site.
 
-   * `https://main--<repository-name>--<owner>.hlx.page`
+   * `https://main--<repository-name>--<owner>.aem.page`
 
 1. See your content published.
 

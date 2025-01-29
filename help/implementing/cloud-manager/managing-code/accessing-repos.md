@@ -1,62 +1,63 @@
 ---
 title: Repository Access Information
-description: Learn how to access and manage your Adobe-managed git repositories using the self-service git account management from Cloud Manager.
+description: Learn how to access and manage your Adobe-managed Git repositories using the self-service Git account management from Cloud Manager.
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 ---
 
-# Repository Access Information {#accessing-repos}
+# Repository access information {#accessing-repos}
 
-Learn how to access and manage your Adobe-managed git repositories using the self-service git account management from Cloud Manager.
+Learn how to access and manage your Adobe-managed Git repositories using the self-service Git account management from Cloud Manager.
 
-## Accessing Repository Info from the Overview Page {#overview-page}
+## Access repository information from the Overview Page {#overview-page}
 
-Cloud Manager makes it easy to retrieve your repository access information for Adobe-managed repositories by using the **Access Repo Info** button available prominently on the pipeline card.
+Cloud Manager makes it easy to retrieve your repository access information for Adobe-managed repositories using **Access Repo Info** from the **Pipelines** card.  
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+The **Repository Info** dialog box lets you see the following access information for Adobe-managed repositories:
 
-1. Navigate to **Pipelines** card from your **Program Overview** page.
-
-   ![Access Repo Info button on Environments card](assets/pipelines-card.png)
-
-1. Tap or click the **Access Repo Info** button to open the **Repository Info** dialog and view:
-
-   * The git username.
-   * The git password.
-   * The URL to the Cloud Manager git repository.
-   * Prebuilt git commands to quickly add a remote to your git repo and push code.
+   * The Git username.
+   * The Git password.
+   * The URL to the Cloud Manager Git repository.
+   * Prebuilt Git commands to add a remote to your Git repo quickly and push code.
 
    ![Repository Info window](assets/repository-info.png)
 
-1. To access the password, a new password must be generated. To do so, tap or click the **Generate password** button.
+Access information about [private repositories](private-repositories.md) is not available in Cloud Manager.
 
-1. Confirm password generation in the **Are you sure...** dialog by tapping or clicking **Generate password**.
+The **Access Repo Info** feature is visible to users with **Developer** or **Deployment Manager** roles.
 
-   ![Confirm password generation](assets/confirm-password-generation.png)
+**To access repository information from the Overview page:**
 
-1. The password is generated and is visible for copying in the **Password** field.
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-   * Generating a password will invalidate the previous password.
-   * Cloud Manager will not save the password. It is your responsibility to save this password securely.
-   * Because Cloud Manager does not save the password, if you loose the password, you must regenerate a new one.
+1. From the **Program Overview** page, under the **Pipelines** card, click **Access Repo Info**. 
 
-   ![Example of a generated password](assets/generated-password.png)
+   ![Access Repo Info on Pipelilnes card](assets/pipelines-card.png)
+
+1. To access the password, a new password must be generated. In the **Repository Info** dialog box, select **Generate password**.
+
+1. In the confirmation dialog box, select **Generate password**.
+
+   ![Confirm password generation](assets/confirm-generated-password.png)
+
+1. To the right of the **Password** field, click ![Copy icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) to copy the password to the clipboard.
+
+   * Generating a password invalidates the previous password.
+   * Cloud Manager does not save the password. It is your responsibility to save the password securely.
+   * Because Cloud Manager does not save the password, if you lose the password, you must regenerate a new one.
+
+   ![Copy password in Repository Info dialog box](/help/implementing/cloud-manager/managing-code/assets/repository-copy-password.png)
 
 Using these credentials, you can clone a local copy of the repository, make changes in that local repository, and when ready commit any code changes back to the remote code repository in Cloud Manager.
 
->[!NOTE]
->
->* The **Access Repo Info** option is visible to users with **Developer** or **Deployment Manager** roles.
->* The **Access Repo Info** button only displays the repository access information for Adobe-managed repositories. Access information about [private repositories](private-repositories.md) is not available in Cloud Manager.
+## Access repository information from the Repositories page {#repositories-window}
 
-## Accessing Repository Information from the Repositories Window {#repositories-window}
+The **Access Repo Info** feature is also available from the [**Repositories** page](managing-repositories.md). It displays the same information about accessing Adobe-managed repositories.
 
-An **Access Repo Info** button is also available in the toolbar of the [**Repositories** window.](managing-repositories.md) it displays the same information about accessing Adobe-managed repositories.
+## Revoke an access password {#revoke-password}
 
-## Revoking an Access Password {#revoke-password}
+You can revoke an access password at any time. 
 
-You can revoke an access password at any time. To do so, please [create a support ticket for this request.](https://experienceleague.adobe.com/?support-solution=Experience+Manager&support-tab=home#support)
-
-The ticket will be treated with high priority and should be revoked within one day.
+To do so, [create a support ticket for this request](https://experienceleague.adobe.com/?support-solution=Experience+Manager&support-tab=home#support). The ticket is treated with high priority and is usually revoked within one day.

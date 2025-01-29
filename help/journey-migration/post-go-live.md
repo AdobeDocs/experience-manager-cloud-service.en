@@ -1,6 +1,6 @@
 ---
 title: Post Go-Live
-description: Learn how to monitor for issues and improve performance
+description: Learn how to monitor for issues and improve performance.
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 feature: Migration
 role: Admin
@@ -10,11 +10,11 @@ role: Admin
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
 >title="Troubleshooting AEM"
->abstract="Review best practices for continous development and manage logs along with tools like Developer console & CRXDE Lite to help with troubleshooting issues with AEM"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html" text="Accessing and Managing Logs"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service Development tools"
+>abstract="Review best practices for continuous development and management of logs. Learn about tools like Developer Console and CRXDE Lite to help with troubleshooting issues with AEM."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="Accessing and Managing Logs"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service Development tools"
 
-This journey is the last part, so you learn to how to monitor for issues and improve performance after the migration is complete. You should ensure the clean-up of temporary files, review best practices for continuous development and manage logs.
+This journey is the last part, so you learn how to monitor for issues and improve performance after the migration is complete. Ensure the clean-up of temporary files, review best practices for continuous development, and manage logs.
 
 ## The Story So Far {#story-so-far}
 
@@ -36,10 +36,10 @@ See [Implementing for AEM as a Cloud Service](/help/implementing/developing/intr
 
 ## CRXDE Lite {#crxde-lite}
 
-As a user, you can access CRXDE Lite on the development environment but not stage or production. 
+As a user, you can access CRXDE Lite in the development environment but not stage or production. 
   
 >[!IMPORTANT]
->Writing to immutable repositories such as `/libs` and `/apps` at runtime results in errors. Also, you do not have access to developer tooling for staging and production environments.
+>Writing to immutable repositories, such as `/libs` and `/apps` at runtime, results in errors. Also, you do not have access to developer tooling for staging and production environments.
 
 See [Developing with CRXDE Lite](/help/implementing/developing/tools/crxde.md) for more information about how to develop your AEM application using CRXDE Lite.
 

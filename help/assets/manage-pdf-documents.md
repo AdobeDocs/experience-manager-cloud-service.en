@@ -7,34 +7,38 @@ exl-id: 29660869-6902-4093-845b-cd629be59d4d
 ---
 # Manage PDF documents in Experience Manager Assets as a Cloud Service {#add-assets-to-experience-manager}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 Experience Manager Assets integrates with the Document Cloud PDF Viewer seamlessly, which lets you preview multiple pages of a PDF document. In addition, you can also use advanced Document Cloud PDF viewer features such as annotations, search text, navigate the PDF document using bookmarks and thumbnails, and more under the same roof. Experience Manager Assets also lets you upload documents in other supported formats and preview them in a PDF format.
 
 Document Cloud PDF viewer benefits AEM Assets in the following ways:
-*   [Support for PDF Document Cloud Viewer Components](#pdf-doc-cloud)
-*   [Support for Multiple Pages Preview and Annotations for PDF Asset](#multi-page)
-*   [Support for Multiple Pages Preview for Documents in Other Formats](#multi-format)
 
-> Tip
-> If you are unable to get multiple pages preview of a previously uploaded PDF document then select the PDF and click **![Reprocess](/help/assets/assets/Reprocess.svg) Reprocess Assets**.
+* [Support for PDF Document Cloud Viewer Components](#pdf-doc-cloud)
+* [Support for Multiple Pages Preview and Annotations for PDF Asset](#multi-page)
+* [Support for Multiple Pages Preview for Documents in Other Formats](#multi-format)
+
+>[!TIP]
 >
+> If you are unable to get multiple pages preview of a previously uploaded PDF document then select the PDF and click ![Reprocess](/help/assets/assets/Reprocess.svg) **Reprocess Assets**.
 
 ## Support for PDF Document Cloud Viewer Components {#pdf-doc-cloud}
 
 The native PDF Doc Cloud viewer has the following components in AEM Assets:
 
-*   **PDF viewer using page thumbnails** Thumbnail view is a small preview of the pages of a PDF document. Using thumbnails, you can directly jump to the desired page. You can access thumbnails of the selected PDF document through ![thumbnail](/help/assets/assets/thumbnail.svg) on the left pane.
+* **PDF viewer using page thumbnails** Thumbnail view is a small preview of the pages of a PDF document. Using thumbnails, you can directly jump to the desired page. You can access thumbnails of the selected PDF document through ![thumbnail](/help/assets/assets/thumbnail.svg) on the left pane.
 
-*   **PDF viewer using bookmarks** Bookmark is a direct link that navigates you to the content in the document. You can access bookmarks of the selected PDF document through ![bookmark](/help/assets/assets/bookmark.svg) on the left pane.
+* **PDF viewer using bookmarks** Bookmark is a direct link that navigates you to the content in the document. You can access bookmarks of the selected PDF document through ![bookmark](/help/assets/assets/bookmark.svg) on the left pane.
 
-*   **Search in PDF** You can use search ![search](/help/assets/assets/Search.svg) to look up the text in the PDF document.
+* **Search in PDF** You can use search ![search](/help/assets/assets/Search.svg) to look up the text in the PDF document.
 
-*   **Page Up/Page Down** Use Page Up ![Page Up](/help/assets/assets/ArrowUp.svg) or Page Down ![Page Down](/help/assets/assets/ArrowDown.svg) to scroll through the document.
+* **Page Up/Page Down** Use Page Up ![Page Up](/help/assets/assets/ArrowUp.svg) or Page Down ![Page Down](/help/assets/assets/ArrowDown.svg) to scroll through the document.
 
-*   **Zoom Out/Zoom In** Use Zoom Out ![Zoom Out](/help/assets/assets/ZoomOut.svg) or Zoom In ![Zoom In](/help/assets/assets/ZoomIn.svg) to streak the document.
+* **Zoom Out/Zoom In** Use Zoom Out ![Zoom Out](/help/assets/assets/ZoomOut.svg) or Zoom In ![Zoom In](/help/assets/assets/ZoomIn.svg) to streak the document.
 
-*   **Page Fit** Use width or height dimensions to fit the document as per your screen size. 
+* **Page Fit** Use width or height dimensions to fit the document as per your screen size. 
 
-*   **Dock/Undock PDF** You can dock or undock the components of native PDF viewer using this option.
+* **Dock/Undock PDF** You can dock or undock the components of native PDF viewer using this option.
 
 ## Support for Multiple Pages Preview and Annotations for PDF Asset {#multi-page}
 
@@ -48,9 +52,9 @@ Adobe Experience Manager Assets lets you preview PDF document consisting of seve
 
 You can also apply [annotations](#pdf-annotations) to the PDF document in a multiple pages preview.
 
-> NOTE
-> The maximum size of an Asset that you can preview is up to 100 MB.
+>[!NOTE]
 >
+> The maximum size of an Asset that you can preview is up to 100 MB.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409355)
 
@@ -63,6 +67,7 @@ You can also apply [annotations](#pdf-annotations) to the PDF document in a mult
 Experience Manager Assets lets you add comments to a PDF document. A PDF document can have multiple annotations. 
 
 To annotate a PDF document, perform the following steps:
+
 1.  Go to the Assets interface, navigate to the PDF document that you want to annotate. The native PDF viewer opens on the right showing preview of the selected PDF document.
 1.  Click **Annotate** from the top menu.
 Following are the Annotations that can be applied on a PDF document:
@@ -117,15 +122,16 @@ In addition to the PDF documents, you can also preview multiple pages for docume
 ![Multi-page Preview of Documents in Other Formats](/help/assets/assets/multi-page-other-formats.png)
 
 For the multiple page preview of other supported document formats, perform the following steps:
+
 1.  Follow the steps to [upload assets in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en).
 1.  Browse the document that you want to upload and preview.
 1.  Open the document.
 1.  Select PDF under the static section in the left panel. The right panel showcases the multiple pages preview of an Asset. Select thumbnail from the left panel to choose the page that you want to preview.
 
-> NOTE
+>[!NOTE]
+>
 > * The maximum size of an Asset that you can preview is up to 100 MB.
 > * The maximum size of XLS or XLSX files to preview is 20 MB.
->
 
 **See also**
 

@@ -44,4 +44,4 @@ Along with the WCM Core Components, you can also use [Adaptive Forms Core Compon
 
 ### Configuring Templates {#configuring-templates}
 
-If your page is based on the recommended, modern, editable template, you can [edit the template](/help/sites-cloud/authoring/sites-console/templates.md) enable/disable these and edit parameters for specific components.
+If your page is based on the recommended, modern, editable template, you can [edit the template](/help/sites-cloud/authoring/page-editor/templates.md) enable/disable these and edit parameters for specific components.

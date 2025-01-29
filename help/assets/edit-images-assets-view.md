@@ -7,7 +7,12 @@ feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
 ---
 # Edit images in [!DNL Assets view] {#edit-images-in-assets-view}
 
-The Assets View enables basic image editing, including resizing, background removal, cropping, and converting between JPEG and PNG formats. Additionally, it allows advanced editing through integration with Adobe Express. After editing an image, you can save the new image as a new version. Versioning helps you to revert to the original asset later if needed. To edit an image, [open its preview](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) and click **Edit Image**. 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
+The Assets view UI enables basic image editing powered by Adobe Express, integrated to the UI. This editing includes resizing, background removal, cropping, and converting between JPEG and PNG formats. Additionally, it allows advanced editing through the Adobe Express interface Embedded within the Assets view UI. 
+
+After editing an image, you can save the new image as a new version. Versioning helps you to revert to the original asset later if needed. To edit an image, [open its preview](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) and click **Edit Image**. 
 
 >[!NOTE]
 >
@@ -17,7 +22,7 @@ The Assets View enables basic image editing, including resizing, background remo
 
 ## Edit image {#edit-image}
 
-Land on Assets View, using the link - [Assets View](https://experience.adobe.com/#/assets) and selecting the right repository. To receive access, contact your organization's administrator.
+Go to Assets view UI, using the link - [Assets View](https://experience.adobe.com/#/assets) and selecting the right repository. To receive access, contact your organization's administrator.
 For any additional reference information refer - [Get started using Adobe Experience Manager Assets View](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Understand the Assets view user interface](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation), and [Assets View use cases](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
 <!--
 >[!CONTEXTUALHELP]
@@ -27,13 +32,13 @@ For any additional reference information refer - [Get started using Adobe Experi
 
 ### Edit Image on Assets View using Adobe Express {#edit-image-on-assets-view-using-adobe-express}
 
-After landing on Assets View, click **Assets**, select an image, and then click **Edit** from the top rail. The new screen displays the available editing options including resizing, background removal, cropping, and converting between JPEG and PNG formats.
+After navigating to Assets View, click **Assets**, select an image, and then click **Edit** from the top rail. The new screen displays the available editing options powered by Adobe Express, which includes resizing, background removal, cropping, and converting between JPEG and PNG formats.
 
 #### Resize image {#resize-image-using-express}
 
 Resizing an image to a specific size is a popular use case. Assets View lets you quickly resize images to fit the common photo sizes by providing pre-calculated new resolutions for specific photo sizes. To resize the image using Assets View, follow the steps below: 
 
-1. Click **Resize Image** from the left pane. 
+1. Click **Resize Image** from the left pane. A dialog box displays the resize image capabilities powered by Adobe Express.
 1. Select the appropriate social media platform from the Resize drop-down list and select the image size from the options that display. 
 1. Scale the image, if required, using the **Image Scale** field.
 1. Click **[!UICONTROL Apply]** to apply your changes.
@@ -62,7 +67,7 @@ Transforming an image into a perfect size is simple using embedded [!DNL Adobe E
    ![Save image with Adobe Express](assets/adobe-express-crop-image.png)
    The cropped image is available for download. You can either save the edited asset as a new version of the same asset or save it as a new asset.
 
-#### Convert between Image file types {#convert-image-types-using-express}
+#### Convert JPEG to PNG {#convert-image-types-using-express}
 
 You can quickly convert between JPEG and PNG image formats using Adobe Express. Execute the following steps: 
    
@@ -73,33 +78,28 @@ You can quickly convert between JPEG and PNG image formats using Adobe Express. 
 #### Limitations {#limitations-adobe-express}
 
 * Supported image resolution: Minimum - 50 pixels, Maximum - 6000 pixels per dimension.
-
 * Maximum file size supported: 17 MB.
 
 ### Edit images in Adobe Express embedded editor {#edit-images-in-adobe-express-embedded-editor}
 
-Users with Express entitlement can use the embedded Express editor from within the Assets View to easily edit content and create new content with GenAI from Adobe Firefly. This improves content reuse and accelerates content velocity. You can also use pre-defined elements to make your asset look stunning or perform quick actions to edit your image with just a few clicks. 
+Users with Express entitlement can use the embedded Express editor from within the Assets View to easily edit content and create new content with GenAI from Adobe Firefly. This feature improves content reuse and accelerates content velocity. You can also use pre-defined elements to make your asset look stunning or perform quick actions to edit your image with just a few clicks. 
+
 ![express in essentials UI](/help/assets/assets/express-in-essentials-ui.jpg)
 To edit images using [!DNL Adobe Express] embedded editor, follow the steps below:
 
-1. Land on to AEM Assets View using the link - [AEM Assets View](https://experience.adobe.com/#/assets) and select the right repository. 
+1. Go to AEM Assets View using the link - [AEM Assets View](https://experience.adobe.com/#/assets) and select the right repository. 
 1. Click **Assets**, enter a folder, and select an image. 
 1. Click **Open in Adobe Express**. The image opens on an express canvas.
 1. Make the required edits to the image. 
 1. If your project requires you to add more pages, click **Add**, select assets, enter a folder, select an image to bring onto the canvas page, and then perform the required edits to the image. 
-1. To save the image(s), click **Save**. The save dialog box displays. 
-
-   >[!NOTE]
-   >
-   > **1. For Single Page**  
-   >
-   > **Save as Version:** This feature supports saving a single asset only. Select this option to export the image as a new version(retaining the original format), and save it in the same folder. 
-   > **Save as New Asset:** Select this option to export the asset in a different format than the original and save it to any folder as a new asset.
-   >  
-   > **2. For Multi Page**  
-   >
-   > **Save as Version:** This feature supports saving a single asset only. If you want to save a single page from multiple pages, select this option to save the asset in its original format and location.  
-   > **Save as New Asset:** With this option, you export either multiple assets or a single asset to any folder and save them as new asset(s) with their file format as original or different.
+1. To save one or more assets, click **Save**. The save dialogue box displays the saving options. To select between the saving options, follow one of the instructions below that aligns with your requirement: 
+   1. To save a single page, click **Save as Version** to export the image as a new version (retaining the original format), and save it in the same folder.
+   
+   1. To save a single page, click **Save as a new Asset** to export the asset into a different format and save it to any folder as a new asset. 
+   
+   1. To save a single page from multiple pages, click **Save as Version** to save the asset in its original format and location.
+   
+   1. To save multiple pages or a single page among multiple pages, click **Save as New Asset**. This action exports the single or multiple assets to any folder and saves them as new asset or assets in the original or a different format.
 
 1. In the Save dialog box:  
    1. Enter a name for the file in the **Save As** field. 

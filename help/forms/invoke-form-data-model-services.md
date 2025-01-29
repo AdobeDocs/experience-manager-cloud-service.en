@@ -4,8 +4,12 @@ description: Explains the invokeWebServices API that you can use to invoke web s
 uuid: 40561086-e69d-4e6a-9543-1eb2f54cd836
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
+feature: Adaptive Forms, Form Data Model
+role: User
+hide: yes
+hidefromtoc: yes
+exl-id: 56e5cabd-a509-4ef9-9fea-3cc610f8dee1
 ---
-
 # API to invoke Form Data Model (FDM) service from Adaptive Forms {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 
 ## Overview {#overview}

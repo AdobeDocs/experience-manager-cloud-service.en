@@ -18,7 +18,7 @@ By using Edge Delivery Services, you can:
 
 ## Agile Reaction to Business Needs {#agile-reaction}
 
-As a longstanding recognized industry leader, Adobe knows how important it is to be able to quickly create and publish new, meaningful content for your customers. Common challenges in scaling content creation have been made clear by the market, including:
+As a longstanding recognized industry leader, Adobe knows how important it is to be able to create and publish new, meaningful content quickly for your customers. Common challenges in scaling content creation have been made clear by the market, including:
 
 1. **Demand for content continues to grow.**
    * There is a need to unlock new content authors to meet this demand.
@@ -30,7 +30,7 @@ As a longstanding recognized industry leader, Adobe knows how important it is to
 1. **Pressure grows to drive ROI on content.**
    * Authors themselves need the ability to optimize the content that they create.
 
-These trends have proved themselves consistent across the industry. However individual requirements inevitably vary project to project. The goal of any Edge Delivery Services project is focused on finding the solution that works for your users.
+These trends have proved themselves consistent across the industry. However, individual requirements inevitably vary project to project. The goal of any Edge Delivery Services project is to focus on finding the solution that works for your users.
 
 1. **Focus on value instead of features.** - Determine the most optimized workflow to serve your authors rather than getting lost in AEM's expansive feature set.
 1. **Take advantage of AEM's flexibility.** - AEM features don't need to be used in a vacuum. Use those features that you need per use case.
@@ -40,7 +40,7 @@ By focusing on value for your authors, your Edge Delivery Services project can m
 
 ## Flexible Authoring Tools for Your Content Creators {#overview}
 
-Edge Delivery Services is a composable set of services that allows for a high degree of flexibility in how you author content on your website. You can use both [AEM content management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) and WYSIWYG authoring using the [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) as well as [document-based authoring.](https://www.aem.live/docs/authoring)
+Edge Delivery Services is a composable set of services that allows for a high degree of flexibility in how you author content on your website. You can use both [AEM content management](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/author-publish) and WYSIWYG authoring using the [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) as well as [document-based authoring](https://www.aem.live/docs/authoring).
 
 The following diagram illustrates how you can edit content in Microsoft Word (document-based authoring) and publish to Edge Delivery Services. It also shows the WYSIWYG editing using the Universal Editor.
 
@@ -61,9 +61,9 @@ With document-based authoring, you can use content directly from Microsoft Word 
 
 Further reading in the document-based authoring documentation:
 
-* For details on how to get started with Edge Delivery see the [Build section.](https://www.aem.live/docs/#build)
-* To understand how to author and publish content by using Edge Delivery see the [Publish section.](https://www.aem.live/docs/authoring)
-* To understand how to properly launch your website project see the [Launch section.](https://www.aem.live/docs/#launch)
+* For details on how to get started with Edge Delivery, see the [Build section](https://www.aem.live/docs/#build).
+* To understand how to author and publish content by using Edge Delivery, see the [Publish section](https://www.aem.live/docs/authoring).
+* To understand how to launch your website project properly, see the [Launch section](https://www.aem.live/docs/#launch).
 
 ### WYSIWYG Authoring {#wysiwyg-authoring}
 
@@ -78,8 +78,8 @@ What-you-see-is-what-you-get (WYSIWYG) authoring leverages the Universal Editor,
 
 Further reading in the WYSIWYG authoring documentation:
 
-* For an overview of the Universal Editor and WYSIWYG authoring see the document [WYSIWYG Content Authoring for Edge Delivery Services.](/help/edge/wysiwyg-authoring/authoring.md)
-* For a developer overview see the document [Developer Getting Started Guide for WYSIWYG Authoring with Edge Delivery Services.](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
+* For an overview of the Universal Editor and WYSIWYG authoring, see [WYSIWYG Content Authoring for Edge Delivery Services](/help/edge/wysiwyg-authoring/authoring.md).
+* For a developer overview, see the [Developer Getting Started Guide for WYSIWYG Authoring with Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 
 ### Deciding on Your Authoring Method {#authoring-method}
 
@@ -88,21 +88,21 @@ AEM's flexibility ensures that your authoring needs are covered. Adobe can help 
 * Always involve your content authors in the decision.
 * Multiple authoring methods can be implemented.
 * You can always change your authoring method after-the-fact.
-* You mustn't decide before the implementation, but rather as part of the implementation.
+* You do not need to decide before the implementation, but rather as part of the implementation.
 
-Please see the document [Choosing an Authoring Method](authoring-methods.md) for more information.
+See [Choosing an Authoring Method](authoring-methods.md) for more information.
 
 ## Edge Delivery Services and Other Adobe Experience Cloud Products {#edge-other-products}
 
-Edge Delivery Services are part of Adobe Experience Manager and as such Edge Delivery Services and AEM sites can co-exist on the same domain, which is a common use case for larger websites. Additionally, content from Edge Delivery Services can easily be consumed by your AEM Sites pages and vice-versa.
+Edge Delivery Services are part of Adobe Experience Manager. As such, Edge Delivery Services and AEM Sites can co-exist on the same domain, which is a common use case for larger websites. Additionally, your AEM Sites pages can seamlessly consume content from Edge Delivery Services, and the reverse is also true.
 
-Please see the [Developer Getting Started Guide for WYSIWYG with Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) to learn how to start your own project to author with AEM and Edge Delivery Services.
+See the [Developer Getting Started Guide for WYSIWYG with Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) to learn how to start your own project to author with AEM and Edge Delivery Services.
 
-You can also use Edge Delivery Services with [Adobe Target,](https://www.aem.live/developer/target-integration) [Real Use Monitoring (RUM)](https://www.aem.live/developer/rum) to diagnose usage and performance of your sites, and [Launch.](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
+You can also use Edge Delivery Services with [Adobe Target](https://www.aem.live/developer/target-integration), [Real Use Monitoring (RUM)](https://www.aem.live/developer/rum) to diagnose usage and performance of your sites, and [Launch](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home).
 
 ## Getting Started with Edge Delivery Services {#getting-started}
 
-It is easy to get started using Edge Delivery Services by following the [Getting Started - Developer Tutorial.](https://www.aem.live/developer/tutorial)
+It is easy to get started using Edge Delivery Services by following the [Getting Started - Developer Tutorial](https://www.aem.live/developer/tutorial).
 
 ## Getting Help from Adobe {#getting-help}
 
@@ -116,12 +116,12 @@ Adobe provides three channels to help you with Edge Delivery Services:
 
 Adobe is committed to empowering you with the best community engagement and support for Edge Delivery Services, WYSIWYG, and document-based authoring.
 
-* Participate in [Experience League Community](https://adobe.ly/3Q6kTKl) to ask questions, share feedback, initiate discussions, seek assistance from Adobe experts and AEM Advisors/Champs, and connect with like-minded individuals in real-time.
-* Join our [Discord channel,](https://discord.gg/aem-live) a more casual platform for real-time interactions and quick idea exchanges.
+* Participate in the [Experience League Community](https://adobe.ly/3Q6kTKl) to ask questions, share feedback, initiate discussions, seek assistance from Adobe experts and AEM Advisors/Champs, and connect with like-minded individuals in real-time.
+* Join the [Discord channel](https://discord.gg/aem-live), a more casual platform for real-time interactions and quick idea exchanges.
 
 ### How to Access Your Product Collaboration Channel {#collaboration-channel}
 
-Given the value of direct communication channel with users, all AEM projects at launch will establish a Slack channel for speed, critical updates, and scaled reporting on experience quality. You will receive an invitation from Adobe to join a Slack channel specific to your organization.
+Given the value of direct communication channel with users, all AEM Projects at launch establish a Slack channel for speed, critical updates, and scaled reporting on experience quality. You receive an invitation from Adobe to join a Slack channel specific to your organization.
 
 For more information, see the document [Using the Slack Bot](https://www.aem.live/docs/slack) for more details.
 
@@ -129,15 +129,8 @@ You can engage with Adobe product teams via your provisioned product collaborati
 
 ### Logging a Support Ticket {#support-ticket}
 
-If a product issue needs additional investigation and troubleshooting and must meet response SLTs, you can submit a support ticket following this process using the Admin Console:
-
-1. [Following the standard support process,](https://experienceleague.adobe.com/?support-tab=home#support) and create a ticket.
-1. Add **Edge Delivery** in the title of the ticket.
-1. In the description, provide the following details in addition to the problem description:
-
-    * URL of the live website. For example: `www.mydomain.com`.
-    * URL of the origin website (`.hlx` URL).
+{{support-ticket}}
 
 ## What's Next {#whats-next}
 
-Get started by reviewing [Using Edge Delivery Services.](/help/edge/using.md)
+Get started by reviewing [Using Edge Delivery Services](/help/edge/using.md).

@@ -1,6 +1,6 @@
 ---
 title: Video in Dynamic Media
-description: Learn how to work with video in Dynamic Media. Review best practices for encoding videos, publishing videos to YouTube, viewing video reports, and adding closed captioning or chapter markers to videos.
+description: Learn how to work with video in Dynamic Media. Review best practices for encoding videos, publishing videos to YouTube, viewing Video Reports, and adding closed captioning or chapter markers to videos.
 contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
@@ -12,7 +12,7 @@ This section describes working with video in Dynamic Media.
 
 ## Quick Start: Videos {#quick-start-videos}
 
-The following step-by-step workflow description is designed to help you get up and running quickly with adaptive video sets in Dynamic Media. After each step, there are cross-references to topic headings where you can find more information.
+The following step-by-step workflow description is designed to help you get up and running quickly with Adaptive Video Sets in Dynamic Media. After each step, there are cross-references to topic headings where you can find more information.
 
 >[!NOTE]
 >
@@ -26,6 +26,7 @@ The following step-by-step workflow description is designed to help you get up a
     * Create your own video encoding profile. Or, you can simply use the predefined _Adaptive Video Encoding_ profile that comes with Dynamic Media.
 
         * [Create a video encoding profile](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
+        * The maximum output video encoding resolution is 8,192 &times; 4,320 or 4,320 &times; 8,192.md.
         * Learn more about [Best practices for video encoding](#best-practices-for-encoding-videos).
 
     * Associate the video processing profile to one or more folders where you are going to upload your primary source videos.
@@ -33,9 +34,10 @@ The following step-by-step workflow description is designed to help you get up a
         * [Apply a video profile to folders](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
         * Learn more about [Organize digital assets](/help/assets/organize-assets.md).
 
-    * Upload your primary source videos to the folders. When you add videos to the folder, they are encoded according to the video processing profile that you assigned to the folder.
+    * Upload your primary source videos to the designated folders. Once added, the videos are encoded according to the video processing profile assigned to the folder.
 
-        * Dynamic Media supports primarily short-form videos with a maximum length of 30 minutes and a minimum resolution that is greater than 25 x 25.
+        * Dynamic Media supports primarily short-form videos with a maximum length of 30 minutes and a minimum resolution that is greater than 25 &times; 25.
+        * The maximum supported input video resolution is 16,384 &times; 16,384.
         * You can upload video files that are up to 15 GB each.
         * [Upload your videos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
         * Learn more about [Supported input file formats](/help/assets/file-format-support.md).
@@ -61,17 +63,17 @@ The following step-by-step workflow description is designed to help you get up a
     * Work with video metadata
 
         * Edit the properties of video such as the title, description, and tags, custom metadata fields:
-          [Editing video properties](/help/assets/manage-digital-assets.md#editing-properties)
+          [Edit video properties](/help/assets/manage-digital-assets.md#editing-properties)
 
-        * [Managing metadata for digital assets](/help/assets/manage-metadata.md)
+        * [Manage metadata for digital assets](/help/assets/manage-metadata.md)
         * [Metadata schemas](/help/assets/metadata-schemas.md)
 
     * Review, approve, and annotate videos, and maintain full version control
 
-        * [Annotating videos](/help/assets/manage-video-assets.md#annotate-video-assets) or [Annotating assets](/help/assets/manage-digital-assets.md#annotating)
+        * [Annotate videos](/help/assets/manage-video-assets.md#annotate-video-assets) or [Annotating assets](/help/assets/manage-digital-assets.md#annotating)
 
-        * [Creating a version](/help/assets/manage-digital-assets.md#asset-versioning)
-        * [Starting a workflow on an asset](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
+        * [Create a version](/help/assets/manage-digital-assets.md#asset-versioning)
+        * [Start a workflow on an asset](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
 
         * [Review folder assets](/help/assets/bulk-approval.md)
         * [Projects](/help/sites-cloud/authoring/projects/overview.md)
@@ -82,48 +84,48 @@ The following step-by-step workflow description is designed to help you get up a
 
         * [Add videos to your web pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
-    * If you are using a third-party web content management system, you can link or embed videos to your web pages.
+    * If you are using a third-party WCM system, you can link or embed videos to your web pages.
 
         * Integrate video using URL:
           [Link URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
 
-        * Integrate video using embed code on web page:
+        * Integrate video using embed code on a web page:
           [Embed the video viewer on a web page](/help/assets/dynamic-media/embed-code.md).
     
     * [Generate video reports](#viewing-video-reports).
 
-    * [Add captions to video](#adding-captions-to-video).
+    * [Add multiple captions and audio tracks to a video](#about-msma).
 
 ## Work with video in Dynamic Media {#working-with-video-in-dynamic-media}
 
-Video in Dynamic Media is an end-to-end solution that makes it easy to publish high-quality Adaptive Video for streaming across multiple screens, including desktops, tablets, and mobile devices. An Adaptive Video Set groups versions of the same video that are encoded at different bit rates and formats such as 400 kbps, 800 kbps, and 1000 kbps. The desktop computer or mobile device detects the available bandwidth.
+Video in Dynamic Media is an end-to-end solution that makes it easy to publish high-quality adaptive video for streaming across multiple screens, including desktops, tablets, and mobile devices. An Adaptive Video Set groups versions of the same video that are encoded at different bit rates and formats such as 400 kbps, 800 kbps, and 1000 kbps. The desktop computer or mobile device detects the available bandwidth.
 
-For example, on an iOS mobile device, it detects a bandwidth such as 3G, 4G, or Wi-Fi. Then, it automatically selects the right encoded video from among the various video bit rates within the Adaptive Video Set. The video is streamed to desktops, mobile devices, or tablets.
+For example, on an iOS mobile device, it detects a bandwidth, such as 3G, 4G, or Wi-Fi. Then, it automatically selects the right encoded video from among the various video bit rates within the Adaptive Video Set. The video is streamed to desktops, mobile devices, or tablets.
 
-In addition, video quality is dynamically switched automatically if network conditions change on the desktop or on the mobile device. Also, if a customer enters full-screen mode on a desktop, the Adaptive Video Set responds by using a better resolution, improving the customer's viewing experience. Using Adaptive Video Sets provides you with the best possible playback for customers playing Dynamic Media video on multiple screens and devices.
+In addition, video quality is dynamically switched automatically if network conditions change on the desktop or on the mobile device. Also, if a customer enters full-screen mode on a desktop, the Adaptive Video Set responds by using a better resolution, improving the customer's viewing experience. Using Adaptive Video Sets provides you with the best possible viewing experience for customers that play Dynamic Media video on multiple screens and devices.
 
 The logic that a video player uses to determine which encoded video to play or to select during playback is based on the following algorithm:
 
-1. Video player loads the initial video fragment based on the bit rate that is closest to the value that is set for "initial bitrate" in the player itself.
+1. The video player loads the initial video fragment based on the bit rate that is closest to the value that is set for "initial bitrate" in the player itself.
 1. Video player switches based on changes to the bandwidth speed using the following criteria:
 
-    1. Player picks the highest bandwidth stream below or equal to the estimated bandwidth.
-    1. Player considers only 80% of the available bandwidth. However, if it is switching up, it is more conservative at only 70% to avoid overestimating and immediately switching back.
+    1. The player picks the highest bandwidth stream below or equal to the estimated bandwidth.
+    1. The player considers only 80% of the available bandwidth. However, if it is switching up, it is more conservative at only 70% to avoid overestimating and immediately switching back.
 
 For detailed technical information about the algorithm, see [https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp](https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp)
 
-For managing single video and Adaptive Video Sets, the following is supported:
+When managing single video and Adaptive Video Sets, the following are supported:
 
-* Uploading video from numerous-supported video formats and audio formats and encoding video to MP4 H.264 format for playback across multiple screens. You can use predefined adaptive video presets, single video encoding presets, or customize your own encoding to control the quality and size of the video.
+* Uploading video from numerous supported video formats and audio formats. Encoding video to MP4 H.264 format for playback across multiple screens. You can use predefined adaptive video presets, single video encoding presets, or customize your own encoding to control the quality and size of the video.
 
-  * When an adaptive video set is generated, it includes MP4 videos.
+  * When an Adaptive Video Set is generated, it includes MP4 videos.
   * **Note**: Primary/source videos are not added to an Adaptive Video Set.
 
 * Video captioning in all HTML5 video viewers.
 * Organize, browse, and search video with full metadata support for efficient management of video assets.
 * Deliver Adaptive Video Sets to the web and desktops, tablets, and mobile devices.
 
-Adaptive video streaming is supported on various iOS platforms. See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
+Adaptive video streaming is supported on various iOS platforms. See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference).
 
 <!-- OUTDATED 2/28/22 BASED ON CQDOC-18692 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -137,13 +139,13 @@ OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that sup
 * Configure video players to meet your branding needs.
 * Integrate video to your website, mobile site, or mobile application with a simple URL or embed code.
 
-See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample.
+<!-- GIVES a 404 See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-See also [Viewers for Experience Manager Assets and Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) and [Viewers for Experience Manager Assets only](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) in the [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
+See also [Viewers for Experience Manager Assets and Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) and [Viewers for Experience Manager Assets only](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) in the [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources).
 
 ## Best practice: Using the HTML5 video viewer {#best-practice-using-the-html-video-viewer}
 
-The Dynamic Media HTML5 Video viewer presets are robust video players. You can use them to avoid many common issues that are associated with HTML5 video playback and issues associated with mobile devices. For example, a lack of adaptive bitrate streaming delivery and limited desktop browser reach.
+The Dynamic Media HTML5 video viewer presets are robust video players. You can use them to avoid many common issues that are associated with HTML5 video playback and issues associated with mobile devices. For example, a lack of adaptive bitrate streaming delivery and limited desktop browser reach.
 
 On the design side of the player, you can design the video player's functionality using standard web development tools. For example, you can design the buttons, controls, and custom poster image background using HTML5 and CSS to help you reach your customers with a customized appearance.
 
@@ -151,11 +153,11 @@ On the playback side of the viewer, it automatically detects the browser's video
 
 >[!NOTE]
 >
->To use DASH for your videos, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](#enable-dash).
+>To use DASH for your videos, Adobe Technical Support must first enable it on your account. See [Enable DASH on your account](#enable-dash).
 
-You can combine into a single player the ability to design the playback components using HTML5 and CSS. It can have embedded playback, and use adaptive and progressive streaming depending on the browser's capability. All this functionality, means you can extend the reach of your rich media content to both desktop and mobile users and ensure a streamlined video experience.
+You can combine into a single player the ability to design the playback components using HTML5 and CSS. It can have embedded playback, and use adaptive and progressive streaming depending on the browser's capability. All this functionality means you can extend the reach of your rich media content to both desktop and mobile users, and ensure a streamlined video experience.
 
-See also [Viewers for Experience Manager Assets only](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) in the [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
+See also [Viewers for Experience Manager Assets only](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) in the [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources).
 
 
 ### Playback of video on desktop computers and mobile devices using the HTML5 video viewer {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
@@ -164,7 +166,7 @@ For desktop and mobile adaptive video streaming, the videos used for bit rate sw
 
 Video playback occurs using either HLS or DASH, or progressive video download. In prior versions of Experience Manager, such as 6.0, 6.1, and 6.2, videos were streamed over HTTP.
 
-However, in Experience Manager 6.3 and on, videos are now streamed over HTTPS (that is, HLS or DASH) because the DM gateway service URL always uses HTTPS as well. There is no customer impact in this default behavior. That is, video streaming will always occur over HTTPS unless it is not supported by the browser. See the following table.
+However, in Experience Manager 6.3 and on, videos are now streamed over HTTPS (that is, HLS or DASH) because the DM gateway service URL always uses HTTPS as well. There is no customer impact in this default behavior. Video streaming always occurs over HTTPS if the browser supports it. See the following table.
 
 Therefore,
 
@@ -175,7 +177,7 @@ DASH is the international standard and HLS is an Apple standard. Both are used f
 
 Progressive video is delivered by downloading and storing the video locally on a user's desktop system or mobile device.
 
-The following table describes the device, browser, and playback method of videos on desktop computers and mobile devices using the [Dynamic Media HTML5 Video Viewer](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video.html#interactive-video).
+The following table describes the device, browser, and playback method of videos on desktop computers and mobile devices using the [Dynamic Media HTML5 Video Viewer](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video#interactive-video).
 
 <table>
  <tbody>
@@ -192,7 +194,7 @@ The following table describes the device, browser, and playback method of videos
   <tr>
    <td>Desktop</td>
    <td>Internet Explorer 11+</td>
-   <td>On Windows&reg; 8 and Windows&reg; 10 - Force use of HTTPS whenever DASH or HLS is requested. Known limitation: HTTP on DASH or HLS does not work in this browser/operating system combination<br /> <br /> On Windows&reg; 7 - Progressive download. Uses standard logic for selecting HTTP versus HTTPS protocol.</td>
+   <td>On Windows&reg; 8 and Windows&reg; 10 - Force use of HTTPS whenever DASH or HLS is requested. Known limitation: HTTP on DASH or HLS does not work in this browser/operating system combination<br /> <br /> On Windows&reg; 7 - Progressive download. Uses standard logic for HTTP versus HTTPS protocol.</td>
   </tr>
   <tr>
    <td>Desktop</td>
@@ -244,7 +246,7 @@ The following table describes the device, browser, and playback method of videos
 
 >[!IMPORTANT]
 >
->*To use DASH for your videos, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](#enable-dash).)
+>To use DASH for your videos, Adobe Technical Support must first enable it on your account. See [Enable DASH on your account](#enable-dash).
 
 <!--  THIS LINE WAS REMOVED FROM THE TABLE ABOVE ON FEB 28, 2022 BASED ON CQDOC 18692 -RSB <tr>
    <td>Mobile</td>
@@ -255,7 +257,7 @@ The following table describes the device, browser, and playback method of videos
 
 ## Architecture of Dynamic Media video solution {#architecture-of-dynamic-media-video-solution}
 
-The following graphic shows the overall authoring workflow of videos that are uploaded and encoded by way of DMGateway (in Dynamic Media Hybrid mode) and made available for public consumption.
+The following graphic shows the overall authoring workflow of videos that are uploaded and encoded through the DMGateway (in Dynamic Media Hybrid mode) and made available for public consumption.
 
 ![chlimage_1-427](assets/chlimage_1-427.png)
 
@@ -265,7 +267,7 @@ The following graphic shows the overall authoring workflow of videos that are up
 
 ## Best practices for encoding videos {#best-practices-for-encoding-videos}
 
-The **Dynamic Media Encode Video** workflow encodes video if you have enabled Dynamic Media and set up video Cloud Services. This workflow captures workflow process history and failure information. If you have enabled Dynamic Media and set up video Cloud Services, the **[!UICONTROL Dynamic Media Encode Video]** workflow automatically takes effect when you upload a video. (If you are not using Dynamic Media, the **[!UICONTROL DAM Update Asset]** workflow takes effect.)
+The **Dynamic Media Encode Video** workflow encodes video if you have enabled Dynamic Media and set up Video Cloud Services. This workflow captures workflow process history and failure information. If you have enabled Dynamic Media and set up Video Cloud Services, the **[!UICONTROL Dynamic Media Encode Video]** workflow automatically takes effect when you upload a video. (If you are not using Dynamic Media, the **[!UICONTROL DAM Update Asset]** workflow takes effect.)
 
 The following are best-practice tips for encoding source video files.
 
@@ -278,16 +280,16 @@ The following are best-practice tips for encoding source video files.
 
 When you encode a video file, use a source video file of the highest possible quality. Avoid using previously encoded video files because these files are already compressed, and further encoding creates a subpar quality video.
 
-* Dynamic Media supports primarily short-form videos with a maximum length of 30 minutes and a minimum resolution that is greater than 25 x 25.
+* Dynamic Media supports primarily short-form videos with a maximum length of 30 minutes and a minimum resolution that is greater than 25 &times; 25.
 * You can upload primary source video files that are up to 15 GB each.
 
 The following table describes the recommended size, aspect ratio, and minimum bit rate that your source video files must have before you encode them:
 
 |Size|Aspect ratio|Minimum bit rate|
 |--- |--- |--- |
-|1024 X 768|4:3|4500 kbps for most videos.|
-|1280 X 720|16:9|3000 - 6000 kbps, depending on the amount of motion in the video.|
-|1920 X 1080|16:9|6000 - 8000 kbps, depending on the amount of motion in the video.|
+|1024 &times; 768|4:3|4500 kbps for most videos.|
+|1280 &times; 720|16:9|3000 - 6000 kbps, depending on the amount of motion in the video.|
+|1920 &times; 1080|16:9|6000 - 8000 kbps, depending on the amount of motion in the video.|
 
 ### Obtain a file's metadata {#obtaining-a-file-s-metadata}
 
@@ -299,9 +301,9 @@ You can obtain a file's metadata by viewing its metadata using an editing tool f
 
 ### Aspect ratio {#aspect-ratio}
 
-When you choose or create a video encoding preset for your primary source video file, make sure that the preset has the same aspect ratio as the primary source video file. The aspect ratio is the ratio of the width to the height of the video.
+When you choose or create a video encoding preset for your primary source video file, make sure that the preset has the same aspect ratio. This approach ensures consistency with the primary source video file. The aspect ratio is the ratio of the width to the height of the video.
 
-To determine the aspect ratio of a video file, obtain the file's metadata and note the file's width, and height (see Obtaining a file's metadata above). Then use this formula to determine the aspect ratio:
+To determine the aspect ratio of a video file, obtain the file's metadata. Note the file's width and height (see Obtaining a file's metadata above). Then use this formula to determine the aspect ratio:
 
 width/height = aspect ratio
 
@@ -314,11 +316,11 @@ The following table describes how formula results translate to common aspect rat
 |1.78|16:9|
 |0.56|9:16|
 
-For example, a video that is 1440 width x 1080 height has an aspect ratio of 1440/1080, or 1.33. In this case, you choose a video encoding preset with a 4:3 aspect ratio to encode the video file.
+For example, a video that is 1440 width &times; 1080 height has an aspect ratio of 1440/1080, or 1.33. In this case, you choose a video encoding preset with a 4:3 aspect ratio to encode the video file.
 
 ### Bitrate {#bitrate}
 
-Bitrate is the amount of data that is encoded to make up a single second of video playback. The bitrate is measured in kilobits per second (Kbps).
+The bitrate is the amount of data that is encoded to make up a single second of video playback. The bitrate is measured in kilobits per second (Kbps).
 
 >[!NOTE]
 >
@@ -326,10 +328,10 @@ Bitrate is the amount of data that is encoded to make up a single second of vide
 
 When selecting a bitrate encoding, there are two types you can choose:
 
-* **[!UICONTROL Constant Bitrate Encoding]** (CBR) - During CBR encoding, the bitrate, or the number of bits per second is kept the same throughout the encoding process. CBR encoding persists the set data rate to your setting over the entire video. Also, CBR encoding does not optimize media files for quality but does save on storage space.
+* **[!UICONTROL Constant Bitrate Encoding]** (CBR) - During CBR encoding, the bitrate, or the number of bits per second, is kept the same throughout the encoding process. CBR encoding persists the set data rate to your setting over the entire video. Also, CBR encoding does not optimize media files for quality but does save on storage space.
   Use CBR if your video contains a similar motion level throughout the entire video. CBR is most commonly used for streaming video content. See also [Use custom-added video encoding parameters](/help/assets/dynamic-media/video-profiles.md#using-custom-added-video-encoding-parameters).
 
-* **[!UICONTROL Variable Bitrate Encoding]** (VBR) - VBR encoding adjusts the data rate down and to the upper limit that you set, based on the data required by the compressor. This functionality means that during a VBR encoding process the bitrate of the media file dynamically increases or decreases depending on the media files bitrate needs.
+* **[!UICONTROL Variable Bitrate Encoding]** (VBR) - VBR encoding adjusts the data rate down and to the upper limit that you set, based on the data required by the compressor. This functionality means that during a VBR encoding process the bitrate of the media file dynamically increases or decreases depending on the media file's bitrate needs.
   VBR takes longer to encode but produces the most favorable results; the quality of the media file is superior. VBR is most commonly used for http progressive delivery of video content.
 
 When do you use VBR versus CRB?
@@ -341,23 +343,23 @@ This table describes the data rate of typical connection speeds.
 
 |Speed (Kbps)|Connection type|
 |--- |--- |
-|256|Dial-up connection.|
-|800|Typical mobile connection. For this connection, target a data rate in the range of 400 to a maximum of 800 for 3G experiences.|
-|2000|Typical broadband desktop connection. For this connection, target a data rate in the 800-2000 Kbps range, with most targets averaging 1200-1500 Kbps.|
-|5000|Typical high-broadband connection. Encoding in this upper range is not recommended because video delivery at this speed is not available to most consumers.|
+| 256 | Dial-up connection.|
+| 800 | Typical mobile connection. For this connection, target a data rate in the range of 400 to a maximum of 800 for 3G experiences.|
+| 2000 | Typical broadband desktop connection. For this connection, target a data rate in the 800-2000 Kbps range, with most targets averaging 1200-1500 Kbps.|
+| 5000 | Typical high-broadband connection. Encoding in this upper range is not recommended because video delivery at this speed is not available to most consumers.|
 
 ### Resolution {#resolution}
 
-**Resolution** describes a video file's height and width in pixels. Most source video is stored at a high resolution (for example, 1920 x 1080). For streaming purposes, source video is compressed to a smaller resolution (640 x 480 or smaller).
+**Resolution** describes a video file's height and width in pixels. Most source video is stored at a high resolution (for example, 1920 &times; 1080). For streaming purposes, source video is compressed to a smaller resolution (640 &times; 480 or smaller).
 
-Resolution and data rate are two integrally linked factors that determine video quality. To maintain the same video quality, the higher the number of pixels in a video file (the higher the resolution), the higher the data rate must be. For example, consider the number of pixels per frame in a 320 x 240 resolution and a 640 x 480 resolution video file:
+Resolution and data rate are two integrally linked factors that determine video quality. To maintain the same video quality, the higher the number of pixels in a video file (the higher the resolution), the higher the data rate must be. For example, consider the number of pixels per frame in a 320 &times; 240 resolution and a 640 &times; 480 resolution video file:
 
-|Resolution|Pixels per frame|
+| Resolution | Pixels per frame |
 |--- |--- |
-|320 x 240|76,800|
-|640 x 480|307,200|
+| 320 &times; 240 | 76,800 |
+| 640 &times; 480 | 307,200 |
 
-The 640 x 480 file has four times more pixels per frame. To achieve the same data rate for these two example resolutions, you apply four times the compression to the 640 x 480 file, which can reduce the quality of the video. Therefore, a video data rate of 250 Kbps produces high-quality viewing at a 320 x 240 resolution, but not at a 640 x 480 resolution.
+The 640 &times; 480 file has four times more pixels per frame. To achieve the same data rate for these two example resolutions, you apply four times the compression to the 640 &times; 480 file, which can reduce the quality of the video. Therefore, a video data rate of 250 Kbps produces high-quality viewing at a 320 &times; 240 resolution, but not at a 640 &times; 480 resolution.
 
 In general, the higher data rate you use, the better your video appears, and the higher resolution you use, the higher data rate you must maintain viewing quality (compared to lower resolutions).
 
@@ -368,20 +370,22 @@ Because resolution and data rate are linked, you have two options when encoding 
 
 When you choose (or create) a video encoding preset for your primary source video file, use this table to target the correct resolution:
 
-|Resolution|Height (pixels)|Screen size|
+| Resolution | Height (pixels) | Screen size |
 |--- |--- |--- |
-|240p|240|Tiny screen|
-|300p|300|Small screen typically for mobile devices|
-|360p|360|Small screen|
-|480p|480|Medium screen|
-|720p|720|Large screen|
-|1080p|1080|High-definition large screen|
+| 240p | 240 | Tiny screen |
+| 300p | 300 | Small screen typically for mobile devices |
+| 360p | 360 | Small screen |
+| 480p | 480 | Medium screen |
+| 720p | 720 | Large screen |
+| 1080p | 1080 | High-definition large screen |
+
+The maximum supported input video resolution is 16,384 &times; 16,384. The maximum output video encoding resolution is 8,192 &times; 4,320 or 4,320 &times; 8,192.
 
 ### Fps (Frames per second) {#fps-frames-per-second}
 
-In the United States and Japan, most video is shot at 29.97 frames per second (fps); in Europe, most video is shot at 25 fps. Film is shot at 24 fps.
+In the United States and Japan, most video is shot at 29.97 fps; in Europe, most video is shot at 25 fps. A film is shot at 24 fps.
 
-Choose a video encoding preset that matches the fps rate of your primary source video file. For example, if your primary source video is 25 fps, choose an encoding preset with 25 fps. By default, all custom encoding uses the primary source video file's fps. For this reason, you do not need to explicitly specify the fps setting when you create a video encoding preset.
+Choose a video encoding preset that matches the fps rate of your primary source video file. For example, if your primary source video is 25 fps, choose an encoding preset with 25 fps. By default, all custom encoding uses the primary source video file's fps. For this reason, you do not need to specify the fps setting explicitly when you create a video encoding preset.
 
 ### Video encoding dimensions {#video-encoding-dimensions}
 
@@ -391,14 +395,14 @@ To calculate this ratio, you divide source width by encoded width to get the wid
 
 If the resulting ratio is a whole integer, it means that the video is optimally scaled. If the resulting ratio is not a whole integer, it impacts video quality by leaving leftover pixel artifacts on the display. This effect is most noticeable when the video has text.
 
-As an example, suppose that your source video is 1920 x 1080. In the following table, the three encoded videos provide the optimal encoding settings to use.
+As an example, suppose that your source video is 1920 &times; 1080. In the following table, the three encoded videos provide the optimal encoding settings to use.
 
-|Video Type|Width x Height|Width Ratio|Height Ratio|
+| Video Type | Width &times; Height | Width Ratio | Height Ratio |
 |--- |--- |--- |--- |
-|Source|1920 x 1080|1|1|
-|Encoded|960 x 540|2|2|
-|Encoded|640 x 360|3|3|
-|Encoded|480 x 270|4|4|
+| Source | 1920 &times; 1080 | 1 | 1 |
+| Encoded |960 &times; 540 | 2| 2 |
+| Encoded |640 &times; 360 | 3| 3 |
+| Encoded |480 &times; 270 | 4| 4 |
 
 ### Encoded video file format {#encoded-video-file-format}
 
@@ -426,19 +430,19 @@ If the video was encoded outside of Adobe Experience Manager Dynamic Media, the 
 
 >[!NOTE]
 >
->Tracking and reporting data is based exclusively on the use of Dynamic Media's own video player and associated video player preset. As such, you cannot track and report on videos that are played by way of other video players.
+>Tracking and reporting data is based exclusively on the use of Dynamic Media's own video player and associated video player preset. As such, you cannot track and report on videos that other video players play.
 
-By default, the first time you enter Video Reports, the report displays video data starting at the first of the current month and ends with the current month's date. However, you can override the default date range by specifying your own date range. The next time you enter Video Reports, the date range you specified is used.
+By default, the first time you enter Video Reports, the report displays video data starting at the first of the current month and ends with the current month's date. However, you can override the default date range by specifying your own date range. The next time in Video Reports, the date range you specified is used.
 
-For video reports to work correctly, a Report Suite ID is automatically created when Dynamic Media Cloud Services is configured. At the same time, the Report Suite ID is pushed to the Publish server so that it is available for the Copy URL feature when you preview assets. However, this functionality requires the Publish server be already set up. If the Publish server is not set up, you can still publish to see the video report. However, you must return to the Dynamic Media Cloud Configuration and select **[!UICONTROL OK]**.
+For Video Reports to work correctly, a Report Suite ID is automatically created when Dynamic Media Cloud Services is configured. At the same time, the Report Suite ID is pushed to the Publish server so that it is available for the Copy URL feature when you preview assets. However, this functionality requires the Publish server be already set up. If the Publish server is not set up, you can still publish to see the video report. However, you must return to the Dynamic Media Cloud Configuration and select **[!UICONTROL OK]**.
 
 **To view video reports:**
 
-1. In the upper-left corner of Experience Manager, select the Experience Manager logo, then in the left rail, navigate to **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]** > **[!UICONTROL Video Reports]**.
+1. In the upper-left corner of Experience Manager, select the Experience Manager logo. In the left rail, click ![Hammer icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) > **[!UICONTROL Assets]** > **[!UICONTROL Video Reports]**.
 1. On the Video Reports page, do one of the following:
 
     * Near the upper-right corner, select the **[!UICONTROL Refresh Video Report]** icon.
-      You use Refresh only if the end date of the report is the current day. This feature ensures that you see the video tracking that has occurred since the last time you ran the report.
+      You can use Refresh only if the end date of the report is the current day. This feature ensures that you can see the video tracking that has occurred since the last time you ran the report.
 
     * Near the upper-right corner, select the **[!UICONTROL Date Picker]** icon.
       Specify the beginning and end date range for which you want video data, and then select **[!UICONTROL Run Report]**.
@@ -512,34 +516,29 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
  -->
 
 
+## Enable DASH, multi-captions and multi-audio tracks, and AI-generated captions support on your Dynamic Media account {#enable-dash}
 
+You can enable support in Dynamic Media for:
 
+* DASH
+* Multi-captions and audio tracks
+* AI-generated captions (Limited Availability)
 
-## Enable DASH, multi-caption, and multi-audio track support on your Dynamic Media account {#enable-dash}
+By creating and submitting an Adobe Customer Support case. 
 
-**About enabling DASH support on your account**
-DASH (Digital Adaptive Streaming over HTTP) is the international standard for video streaming and is widely adopted across different video viewers. When DASH is enabled on your account, you get the option to choose from either DASH or HLS for adaptive video streaming. Or, you can opt for both with automatic switching between players when **[!UICONTROL auto]** is selected as the playback type in the Viewer preset.
+Enabling any of the above three capabilities, enables all of them. So, if you only want DASH enabled, you are actually enabling all three capabilities listed above.  
 
-Some key benefits from enabling DASH on your account include the following:
-     
-* Package DASH stream video for adaptive bitrate streaming. This method leads to higher efficiency of delivery. Adaptive streaming ensures the best viewing experience for your customers.
-* Browser optimized streaming with Dynamic Media players switches between HLS and DASH streaming to ensure the best quality of service. The video player auto-switches to HLS when a Safari browser is used.
-* You can configure your preferred streaming method (HLS or DASH) by editing the video viewer preset.
-* Optimized video encoding ensures that no additional storage is used while enabling DASH capability. A single set of video encodes are created for both HLS and DASH to optimize video storage costs.
-* Helps make video delivery more accessible for your customers.
-* Get the streaming URL by way of APIs, too.
-
-Enabling DASH support on your account is done by way of an Adobe Customer Support case that you create and submit.
-
-**About enabling multiple caption and audio track support on your account**
-
-At the same time that you create an Adobe Support case to have DASH enabled on your account, you can also benefit from having multiple caption and audio track support automatically enabled. After enablement, all subsequent videos that you upload are processed with a new backend architecture that includes support for adding multiple caption and audio tracks to your videos.
+| Capability | Description |
+| --- | --- |
+| DASH | DASH (Digital Adaptive Streaming over HTTP) is the international standard for video streaming and is widely adopted across different video viewers. When DASH is enabled on your account, you get the option to choose from either DASH or HLS for adaptive video streaming. Or, you can opt for both with automatic switching between players when **[!UICONTROL auto]** is selected as the playback type in the Viewer preset.<br>Some key benefits from enabling DASH on your account include the following:<ul><li>Package DASH stream video for adaptive bitrate streaming. This method leads to higher efficiency of delivery. Adaptive streaming ensures the best viewing experience for your customers.</li><li>Browser optimized streaming with Dynamic Media players switches between HLS and DASH streaming to ensure the best quality of service. The video player auto-switches to HLS when a Safari browser is used.</li><li>You can configure your preferred streaming method (HLS or DASH) by editing the video viewer preset.</li><li>Optimized video encoding ensures that no additional storage is used while enabling DASH capability. A single set of video encodings is created for both HLS and DASH to optimize video storage costs.</li><li>Helps make video delivery more accessible for your customers.</li><li>Get the streaming URL by way of APIs, too.</li></ul>|
+| Multi-captions and audio tracks | You can benefit from having multiple caption and audio track support automatically enabled. After enablement, all subsequent videos that you upload are processed with a new backend architecture that includes support for adding multiple caption and audio tracks to your videos. |
+| AI-generated captions (Limited Availability) | Create captions for your videos powered by AI. Using AI, it creates the transcript of the video and converts it into captions. Even the timeline is defined, too. |
 
 >[!IMPORTANT]
 >
 >Any videos that you uploaded *before* enabling multiple caption and audio track support on your Dynamic Media account, [must be reprocessed](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). This video reprocessing step is necessary so that multiple caption and audio track capability is available to them. The video URLs continue to work and play as usual, after reprocessing.
 
-**To enable DASH, multi-caption, and multi-audio track support on your Dynamic Media account:** 
+**To enable DASH, multi-captions and multi-audio tracks, and AI-generated captions support on your Dynamic Media account:** 
 
 1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 1. To create a support case, follow the instructions while ensuring you provide the following information:
@@ -548,22 +547,132 @@ At the same time that you create an Adobe Support case to have DASH enabled on y
     * Your Cloud Services environment (program ID and environment ID).
     * Your Dynamic Media company account name.
     * Your Dynamic Media region: North America (NA), Asia-Pacific (APAC), or Europe-Middle East-Asia (EMEA).
-    * Specify that you want DASH, multi-caption, and multi-audio track support enabled on your Dynamic Media account, on Experience Manager 6.5.
+    * Specify that you want DASH, multi-captions and multi-audio tracks, and AI-generated captions (Limited Availability) support enabled on your Dynamic Media account, on AEM as a Cloud Service.
    
-1. Adobe Customer Support adds you to the customer Wait List based on the order in which requests are submitted.
+1. Adobe Customer Support adds you to the Customer Wait List based on the order in which requests are submitted.
 1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate and set a target date for enablement.
-1. You are notified after completion by Customer Support.
-1. Now you can do either one of the following:
+1. Adobe Customer Support notifies you after completion.
+1. Now, do one or more of the following:
 
     * Create your [video viewer preset](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) as usual.
+    * Create your [video profile](/help/assets/dynamic-media/video-profiles.md) as usual.
     * [Add multiple captions and audio tracks](#add-msma) to your video.
+
+
+<!-- HIDDEN AS OF OCTOBER 7, 2024 AS PER EMAIL REQUEST FROM RIYA MIDHA ON SAME DATE 
+
+## About multiple caption and audio track support for videos in Dynamic Media{#about-msma}
+
+With multiple caption and audio track capability in Dynamic Media, you can easily add multiple captions and audio tracks to a primary video. This capability means that your videos are accessible to a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the captions and audio tracks from a single tab in the user interface.
+
+   ![Captions and audio tracks tab in Dynamic Media along with a table showing uploaded .VTT caption files and uploaded .MP3 audio track files for a video.](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
+
+
+Some of the use cases to consider for adding multiple captions and audio tracks to your primary video include the following:
+
+
+| Type | Use case | 
+| --- | --- |
+| Captions | Multiple language support<br>Descriptive text for accessibility |
+|Audio tracks | Multiple language support<br>Commentary tracks<br>Descriptive audio |
+
+
+All [video formats supported in Dynamic Media](/help/assets/file-format-support.md) and all Dynamic Media video viewers-except the Dynamic Media Video_360 viewer-are supported for use with multiple captions and audio tracks.
+
+Multi-caption and multi-audio track capability is available for your Dynamic Media account by way of a feature toggle that must be enabled (turned on) by Adobe Customer Support.
+
+### Add multiple captions and audio tracks to your video {#add-msma}
+
+Before you add multiple caption and audio tracks to your video, be sure you already have the following in-place:
+
+* Dynamic Media is set up in an AEM environment.
+* A [Dynamic Media Video profile is applied to the folder where your videos are ingested](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
+* [Multi-caption, and multi-audio track is enabled on your Dynamic Media account](/help/assets/dynamic-media/video.md#enable-dash).
+
+Added captions and captions are supported with WebVTT and Adobe VTT formats. And, added audio track files are supported with MP3 format.
+
+>[!IMPORTANT]
+>
+>Any videos that you uploaded before enabling multiple caption and audio track support on your Dynamic Media account, [must be reprocessed](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). This video reprocessing step is necessary so that multiple caption and audio track capability is available to them. The video URLs continue to work and play as usual, after reprocessing.
+
+**To add multiple captions and audio tracks to your video:**
+
+1. [Upload your primary video to a folder](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) that already has a video profile assigned to it.
+1. Navigate to the uploaded video asset that you want to add multiple caption and audio tracks.
+1. In asset selection mode, either from the List View or the Card View, select the video asset.
+1. On the toolbar, select the Properties icon (a circle with an "i" in it). 
+
+   ![Asset properties button.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Selected video asset in Card View.*
+
+1. On the video's Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab.
+
+
+   >[!TIP]
+   >If you do not see the [!UICONTROL Captions & Audio Tracks] tab, it means either one of two things:
+   >* The folder in which the selected video resides does not have a video profile assigned to it. In which case, see [Apply a video profile to the folder](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
+   >* Or, Dynamic Media must reprocess the video. In which case, see [Reprocess Dynamic Media assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+
+    When you have completed either one of the above tasks, return to these steps.
+
+   ![Asset properties](/help/assets/dynamic-media/assets/msma-audiotracks.png)*Captions and audio tracks tab on the video's Properties page.*
+
+1. (Optional) To add one or more caption files to a video, do the following:
+
+    * Select **[!UICONTROL Upload Captions]**.
+    * Navigate to, and select, one or more `.vtt` (Video Text Tracks) files and open them.
+    * For captions to be visible on the media player, you must add required details (metadata) about each caption file that you uploaded. Select the pencil icon to the right of a caption file name. In the Edit Caption dialog box, enter the following required details about the file, then select **[!UICONTROL Save]**. Repeat this process for each caption file that you uploaded:
+
+
+    | Caption metadata | Description | 
+    | --- | --- | 
+    Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional caption files and audio track files. |
+    | Language | Select the language of the caption. |
+    | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text includes background noises and speaker identification. It also includes other relevant details alongside the translation or transcription of dialogue. This functionality makes the content more accessible to individuals who are deaf or hard of hearing. |
+    | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, English (CC). |
+
+    You can change or edit caption metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
+
+1. (Optional) To add one or more audio tracks to a video, do the following:
+
+    * Select **[!UICONTROL Upload Audio Tracks]**.
+    * Navigate to, and select, one or more .mp3 files and open them.
+    * To make audio tracks visible in the **[!UICONTROL Select audio or caption]** pop-up list on the media player, add the required details for each audio track file. Ensure you include all necessary information for proper display. Select the pencil icon to the right of an audio track file name. In the Edit Audio Track dialog box, enter the following required details, then select **[!UICONTROL Save]**. Repeat this process for each audio track file that you uploaded.
+
+    | Audio Track metadata | Description |
+    | --- | --- |
+    | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional audio track files or caption files.| 
+    | Language | Select the language of the audio track. |
+    | Type | Select the type of audio track that you are using.<br>**Original** - The audio track originally attached to the video and represented as `[Original]` in the label with English language selected by default. While **[!UICONTROL Label]** and **[!UICONTROL Language]** can be changed in the **[!UICONTROL Edit Audio Track]** dialog box, it defaults to the original values if the primary video is reprocessed.<br>**Standard** - An add-on audio track for a language other than the original.<br>**Audio description** - An audio track that also includes a descriptive narration of non-verbal actions and gestures in the video, making content more accessible for individuals who are visually impaired. |
+    | Label | The text that is displayed as the audio track's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to an audio track. For example, `English [Original]`. The label of audio attached to a video is set to `[Original]` by default. |
+
+    You can change or edit this audio track metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
+
+1. In the upper-right corner of the page, from the **[!UICONTROL Save & Close]** drop-down list, select **[!UICONTROL Save]**. The files are uploaded and metadata processing begins, as seen in the Status column of the interface.
+
+    >[!NOTE]
+    >
+    >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
+
+1. (Optional) If you selected **[!UICONTROL Save & Close]** in the previous step, instead of selecting **[!UICONTROL Save]**, you can still view the processing status of the uploaded files. See [View the lifecycle status of uploaded caption and audio track files](/help/assets/dynamic-media/video.md#lifecycle-status-video).
+
+1. (Optional) Preview the video before publishing to ensure the captions and audio work as expected. See [Preview a video that has multiple captions and audio tracks](/help/assets/dynamic-media/video.md#preview-video-audio-subtitle).
+
+1. Publish the video. See [Publish assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md). -->
+
 
 
 ## About multiple caption and audio track support for videos in Dynamic Media{#about-msma}
 
-With multiple caption and audio track capability in Dynamic Media, you can easily add multiple captions and audio tracks to a primary video. This capability means that your videos are accessible across a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the captions and audio tracks from a single tab in the user interface.
+With multiple caption and audio track capability in Dynamic Media, you can easily add multiple audio tracks. You can also add multiple caption files using either your own `.vtt` (Video Text Track) files or AI-generated caption files. AI-generated captions in Dynamic Media are designed to enhance video accessibility and engagement by automatically generating accurate and synchronized subtitles. This technology uses advanced AI algorithms to transcribe spoken content into text, which is then displayed as captions on the video. Some key features of this technology include the following:
 
-![Captions and audio tracks tab in Dynamic Media along with a table showing uploaded .VTT caption files and uploaded .MP3 audio track files for a video.](/help/assets/dynamic-media/assets/msma-subtitle-audiotracks-tab2.png)
+* **Automatic Transcription:** The AI system transcribes spoken words into text in real-time, ensuring that captions are generated quickly and accurately.
+* **Multilingual Support:** Captions can be automatically delivered in more than 60 languages, making it easier to reach a global audience.
+* **Enhanced Accessibility:** By providing captions, videos become more accessible to viewers who are deaf or hard of hearing, or people who prefer to watch videos with the sound off.
+* **Improved Engagement:** Captions can help retain viewer attention and improve comprehension, especially in noisy environments or when the viewer's native language is different from the video's language.
+
+These features make AI-powered captions a valuable tool for content creators looking to enhance their video content's accessibility and engagement. 
+
+![Captions and audio tracks tab in Dynamic Media along with a table showing uploaded .VTT caption files and uploaded .MP3 audio track files for a video.](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
 
 Some of the use cases to consider for adding multiple captions and audio tracks to your primary video include the following:
 
@@ -575,7 +684,7 @@ Some of the use cases to consider for adding multiple captions and audio tracks 
 |  | Commentary tracks |
 |  | Descriptive audio |
 
-All [video formats supported in Dynamic Media](/help/assets/file-format-support.md) and all Dynamic Media video viewers&mdash;except the Dynamic Media *Video_360* viewer&mdash;are supported for use with multiple captions and audio tracks.
+All [video formats supported in Dynamic Media](/help/assets/file-format-support.md) and all Dynamic Media video viewers - except the Dynamic Media *Video_360* viewer - are supported for use with multiple captions and audio tracks.
 
 Multi-caption and multi-audio track capability is available for your Dynamic Media account by way of a feature toggle that must be enabled (turned on) by Adobe Customer Support.
 
@@ -585,74 +694,165 @@ Before you add multiple caption and audio tracks to your video, be sure you alre
 
 * Dynamic Media is set up in an AEM environment.
 * A [Dynamic Media Video profile is applied to the folder where your videos are ingested](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
-* [Multi-caption, and multi-audio track is enabled on your Dynamic Media account](#enable-dash).
+* [Multi-caption/audio tracks and AI-generated captions are enabled on your Dynamic Media account](#enable-dash).
 
-Added captions and captions are supported with WebVTT and Adobe VTT formats. And, added audio track files are supported with MP3 format.
+Added captions are supported with WebVTT and Adobe VTT formats. And, added audio track files are supported with MP3 format.
 
 >[!IMPORTANT]
 >
->Any videos that you uploaded *before* enabling multiple caption and audio track support on your Dynamic Media account, [must be reprocessed](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). This video reprocessing step is necessary so that multiple caption and audio track capability is available to them. The video URLs continue to work and play as usual, after reprocessing.
+>For videos uploaded *before* enabling multiple caption/audio track support or AI-generated captions on your Dynamic Media account, [you need to reprocess them](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). This reprocessing step ensures that these videos can use the multiple caption/audio track and AI-generated caption features. After reprocessing, the video URLs continue to function and play as usual.
 
 **To add multiple captions and audio tracks to your video:**
 
 1. [Upload your primary video to a folder](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) that already has a video profile assigned to it.
 1. Navigate to the uploaded video asset that you want to add multiple caption and audio tracks.
-1. In asset selection mode, either from the List View or the Card View, select the video asset.
-1. On the toolbar, select the Properties icon (a circle with an "i" in it).
-![Selected video asset with checkmark over video thumbnail image and View Properties highlighted on the toolbar.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Selected video asset in Card view.*
+1. In asset selection mode, either from ![View card icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Card View) or ![View List icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (List View), select the video asset.
+1. On the toolbar, click ![Info icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Properties.
+![Selected video asset with checkmark over video thumbnail image and View Properties highlighted on the toolbar.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Selected video asset in Card View.*
 1. On the video's Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab.
 
    >[!TIP]
    >If you do not see the **[!UICONTROL Captions & Audio Tracks]** tab, it means either one of two things:
    >
    >* The folder in which the selected video resides does not have a video profile assigned to it. In which case, see [Apply a video profile to the folder](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
-   >* Or, the video must be reprocessed by Dynamic Media. In which case, see [Reprocess Dynamic Media assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+   >* Or, Dynamic Media must reprocess the video. In which case, see [Reprocess Dynamic Media assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
    >
    >When you have completed either one of the above tasks, return to these steps.
   
-   ![Captions and Audio Tracks tab on the Properties page.](/help/assets/dynamic-media/assets/msma-audiotracks2.png)*Captions and Audio Tracks tab on the video's Properties page.*
+   ![Captions and Audio Tracks tab on the Properties page.](/help/assets/dynamic-media/assets/msma-audiotracks.png)
+   *Captions & Audio tracks tab on the video's Properties page.*
 
-1. (Optional) To add one or more caption files to a video, do the following:
-    * Select **[!UICONTROL Upload Captions]**.
-    * Navigate to, and select, one or more .vtt (Video Text Tracks) files and open them.
-    * For captions to be visible on the media player, you *must* add required details (metadata) about *each* caption file that you uploaded. Select the pencil icon to the right of a caption file name. In the **Edit Caption** dialog box, enter the following required details about the file, then select **[!UICONTROL Save]**. Repeat this process for each caption file that you uploaded:
-    
-      | Caption metadata | Description |
-      |--- |--- |
-      | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional caption files and audio track files. |
-      | Language | Select the language of the caption. |
-      | Type | Select the type of caption that you are using.<br>**Subtitle** &ndash; The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** &ndash; The caption text also includes background noises, speaker differentiation, and other relevant information, along with the translation or transcription of the dialogue, making the content more accessible for individuals who are deaf or hard of hearing. |
-      | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, `English (CC)`. |
-
-      You can change or edit caption metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
-
-1. (Optional) To add one or more audio tracks to a video, do the following:
-    * Select **[!UICONTROL Upload Audio Tracks]**.
-    * Navigate to, and select, one or more .mp3 files and open them.
-    * For audio tracks to be visible in the **[!UICONTROL Select audio or caption]** pop-up list on the media player, you *must* add required details about *each* audio track file that you added. Select the pencil icon to the right of an audio track file name. In the **Edit Audio Track** dialog box, enter the following required details, then select **[!UICONTROL Save]**. Repeat this process for each audio track file that you uploaded.
+1. To add one or more audio tracks to a video, do the following:
+   1. Select **[!UICONTROL Upload Audio Tracks]**.
+   1. Navigate to, and select, one or more .mp3 files and open them.
+   1. For audio tracks to be visible in the **[!UICONTROL Select audio or caption]** pop-up list on the media player, you must add required details about each audio track file. Doing so ensures that all audio tracks are properly listed and accessible. Click ![Draw icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) to the right of an audio track file name. In the **Edit Audio Track** dialog box, enter the following required details:
     
       | Audio Track metadata | Description |
       |--- |--- |
       | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional audio track files or caption files. |
-      | Language | Select the language of the audio track. |
-      | Type | Select the type of audio track that you are using.<br>**Original** &ndash; The audio track originally attached to the video and represented as `[Original]` in the label with `English` language selected by default. While **[!UICONTROL Label]** and **[!UICONTROL Language]** can be changed in the **[!UICONTROL Edit Audio Track]** dialog box, it defaults to the original values if the primary video is reprocessed.<br>**Standard** &ndash; An add-on audio track for a language other than the original.<br>**Audio description** &ndash; An audio track that also includes a descriptive narration of non-verbal actions and gestures in the video, making content more accessible for individuals who are visually impaired. |
+      | Language | Select the correct language of the audio track. |
+      | Type | Select the type of audio track that you are using.<br>**Original** - The audio track originally attached to the video and represented as `[Original]` in the label with `English` language selected by default. While **[!UICONTROL Label]** and **[!UICONTROL Language]** can be changed in the **[!UICONTROL Edit Audio Track]** dialog box, it defaults to the original values if the primary video is reprocessed.<br>**Standard** - An add-on audio track for a language other than the original.<br>**Audio description** - An audio track that also includes a descriptive narration of non-verbal actions and gestures in the video, making content more accessible for individuals who are visually impaired. |
       | Label | The text that is displayed as the audio track's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to an audio track. For example, `English [Original]`. The label of audio attached to a video is set to `[Original]` by default. |
 
       You can change or edit this audio track metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
 
-1. In the upper-right corner of the page, from the **[!UICONTROL Save & Close]** drop-down list, select **[!UICONTROL Save]**. The files are uploaded and metadata processing begins, as seen in the **Status** column of the interface.
+   1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**.
+   1. Do one of the following:
+        * Repeat this process for each audio track file that you upload.
+        * Continue to the next step to add captions to a video.
 
-    >[!NOTE]
-    >
-    >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
+1. To add one or more caption files to a video, choose which one of the following use cases best fits your scenario:
+   
+   |  | Use case | Create Caption option to use |
+   | --- | --- | --- |
+   | **Option 1** | I have my own pre-existing caption files that are in the languages that I want to use.<br>See **Option 1** below. | **[!UICONTROL Upload Files]** |
+   | **Option 2** | I want AI to generate my caption files in multiple languages.<br>See **Option 2** below. | **[!UICONTROL Convert audio tracks]** |
+   | **Option 3** | Text in a caption file (`.vtt`) needs to be corrected, reuploaded to replace the old `.vtt` file, then have AI translate the corrected file.<br>See **Option 3** below. | **[!UICONTROL Translate caption]** |
 
-1. (Optional) If you selected **[!UICONTROL Save & Close]** in the previous step, instead of selecting **[!UICONTROL Save]**, you can still view the processing status of the uploaded files. See [View the lifecycle status of uploaded caption and audio track files](#lifecycle-status-video).
-1. (Optional) Preview the video before publishing to ensure the captions and audio work as expected. See [Preview a video that has multiple captions and audio tracks](#preview-video-audio-subtitle)
+    ![Create Captions options.](/help/assets/dynamic-media/assets/msma-createcaption.png)
+    *The Create Caption drop-down menu gives you three options: Upload Files, Convert audio tracks, and Translate caption.*
+
+    +++**Option 1:** *I have my own pre-existing caption files that are in the languages that I want to use* (**[!UICONTROL Upload Files]** option)
+
+    1. Near the upper-right side of the page, click **[!UICONTROL Create Caption]** > **[!UICONTROL Upload files]**.
+    1. Navigate to, and select, one or more of your pre-existing `.vtt` files and open them.
+    1. For captions to be visible on the media player, you *must* add the required details about *each* caption file that you upload. Click ![Draw icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) to the right of a caption file name. In the **Edit Caption** dialog box, enter the following required details about the file:
+    
+        | Caption metadata | Description |
+        |--- |--- |
+        | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional caption files and audio track files. |
+        | Language | Select the language of the caption. After a caption file is processed, this language field becomes uneditable (dimmed) |
+        | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text includes background noises, speaker differentiation, and other relevant details, along with dialogue translation or transcription, enhancing accessibility for individuals who are deaf or hard of hearing. |
+        | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, `English (CC)`. |
+
+        You can change or edit caption metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
+
+    1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**. The files are uploaded and metadata processing begins, as seen in the **Status** column of the interface.
+
+        >[!NOTE]
+        >
+        >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
+
+    1. If you selected **[!UICONTROL Save & Close]** in the previous step, instead of selecting **[!UICONTROL Save]**, you can still view the processing status of the uploaded files. See [View the lifecycle status of uploaded caption and audio track files](#lifecycle-status-video).
+    1. Continue to step 8.
+
+    +++
+
+    +++**Option 2:** *I want AI to generate my caption files in multiple languages* (**[!UICONTROL Convert audio tracks]** option)
+
+    1. Near the upper-right corner of the page, click **[!UICONTROL Create Caption]** > **[!UICONTROL Convert audio tracks]**.
+
+        ![Convert audio tracks dialog box.](/help/assets/dynamic-media/assets/msma-convertaudiotracks.png)
+        *The Convert Audio Tracks dialog box uses AI to generate caption files in multiple languages.*
+
+    1. In the **Convert Audio Tracks** dialog box, set the following options:
+    
+        | Option | Description |
+        |--- |--- |
+        | Audio track to convert | Click ![Chevron Down icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg), then choose the uploaded audio track file from which you want captions generated using AI.  |
+        | Output languages | Click ![Chevron Down icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg), then select one or more languages in which you want the caption file to appear.<br>To remove a selected language, click ![Close icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg).<br>During video playback, the list of languages appears in the media player in the order that you select them here. |
+
+    1. Click **[!UICONTROL Done]**.
+    1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**. 
+    1. Click the **[!UICONTROL Captions & Audio tracks]** tab again. One or more caption files are created and processing begins, as seen in the **Status** column of the interface. See also [View the lifecycle status of uploaded caption and audio track files](#lifecycle-status-video).
+
+        >[!NOTE]
+        >
+        >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
+
+    1. (Optional) Click ![Draw icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) to the right of a caption file name. In the **Edit Caption** dialog box, you can edit the following details about the file:
+
+        | Caption metadata | Description |
+        | --- | --- |
+        | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text includes background noises and speaker differentiation. It also includes other relevant information, along with the translation or transcription of the dialogue. This approach makes the content more accessible for individuals who are deaf or hard of hearing. |
+        | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, `English (CC)`. |
+
+        You can change or edit certain caption metadata later, if necessary. When the video is published, these metadata details are reflected on public URLs in published videos.
+    1. Continue to step 8.
+
+    +++
+
+    +++**Option 3:** *Text in a caption file (`.vtt`) needs to be corrected, reuploaded to replace the old `.vtt` file, then have AI translate the corrected file* (**[!UICONTROL Translate captions]** option)
+
+    1. Click **[!UICONTROL Create Caption]** > **[!UICONTROL Translate captions]**. This option is available if one or more caption files were already added and processed.
+
+        ![Translate Captions dialog box.](/help/assets/dynamic-media/assets/msma-translate-captions.png)
+        *The Translate Captions dialog box lets you use an existing caption file to have AI generate new caption files in multiple languages.*
+
+    1. In the **Translate Captions** dialog box, set the following options:
+
+        | Option | Description |
+        |--- |--- |
+        | Caption to translate | Click ![Chevron Down icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg), then choose a caption file from which you want the captions generated using AI. |
+        | Output languages | Click ![Chevron Down icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg), then select one or more languages in which you want the caption file to appear.<br>To remove a selected language, click ![Close icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg).<br>During video playback, the list of languages appears in the media player in the order that you select them here. |
+
+    1. Click **[!UICONTROL Done]**.
+    1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**. 
+    1. Click the **[!UICONTROL Captions & Audio tracks]** tab again. One or more caption files are created and processing begins, as seen in the **Status** column of the interface. See also [View the lifecycle status of uploaded caption and audio track files](#lifecycle-status-video).
+
+        >[!NOTE]
+        >
+        >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
+
+    1. (Optional) Click ![Draw icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) to the right of a caption file name. In the **Edit Caption** dialog box, you can edit the following details about the file:
+
+        | Caption metadata | Description |
+        | --- | --- |
+        | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text also includes background noises, speaker differentiation. It also includes other relevant information, along with the translation or transcription of the dialogue. This approach makes the content more accessible for individuals who are deaf or hard of hearing. |
+        | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, `English (CC)`. |
+
+        You can change or edit certain caption metadata later, if necessary. When the video is published, these metadata details are reflected on public URLs in published videos.
+
+    1. Continue to step 8.
+
+    +++
+
+1. (Optional) Preview the video before publishing to ensure the captions and audio work as expected. See [Preview a video that has multiple captions and audio tracks](#preview-video-audio-subtitle).
 1. Publish the video. See [Publish assets](publishing-dynamicmedia-assets.md).
 
 #### About adding caption and audio track files to a video that is already published
 
-When you upload additional caption files or audio track files to a video that is already published, it means that those files will have a `Processed` status after they are prepared, following upload. At that point, you can preview the video in Dynamic Media to see or hear the newly uploaded files. 
+After uploading additional caption or audio track files to a published video, these files have a `Processed` status after they are prepared. You can then preview the video in Dynamic Media to see or hear the new files. 
 
 Following preview, however, you must *publish* the video again for the newly added caption or audio track files to be published, too. After publishing, the captions or audio becomes available with the public Dynamic Media URL.
 
@@ -679,26 +879,26 @@ Multiple caption changes take precedence over a caption added by way of a URL mo
 1. Publish the video as usual.
 The existing URL with the caption modifier can now load multiple captions.
 
-### View the lifecycle status of uploaded caption and audio track files{#lifecycle-status-video}
+### View the lifecycle status of uploaded caption and audio track files {#lifecycle-status-video}
 
-You can observe the lifecycle status of any caption or audio track file uploaded to your primary video from the **Captions & Audio Tracks** tab of **Properties**.
+You can observe the lifecycle status of any caption or audio track file uploaded to your primary video. You can do so from the **Captions & Audio Tracks** tab of **Properties**.
 
 **To view the lifecycle status of a video:**
 
 1. Navigate to the video asset whose lifecycle status you want to view.
-1. In asset selection mode, either from the List View or the Card View, select the video asset.
-1. On the toolbar, select the Properties icon (a circle with an "i" in it).
-1. On the Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab. In the Status column, note the state of each caption or audio file.
+1. In asset selection mode, either from ![View card icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Card View) or ![View List icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (List View), select the video asset.
+1. On the toolbar, click ![Info icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Properties.
+1. On the **Properties** page, select the **[!UICONTROL Captions & Audio Tracks]** tab. 
+1. In the **[!UICONTROL Status]** column, note the state of each caption or audio file.
 
-| Caption or Audio Track Status | Description |
+| Status of Captions and Audio Tracks | Description |
 | --- | --- |
 | Processing | When a new caption or audio track file is added and saved, it goes into a "Processing" state. Dynamic Media processes the file by attaching the streaming manifest to the primary video. |
-| Processed | After processing is complete, the caption or audio track file, or the original audio track associated with the primary video, appears in a "Processed" state. You can preview caption and audio track files that appear as "Processed" *before* you publish the video live. |
+| Processed | After processing is complete, the caption or audio track file, or the original audio track associated with the primary video, appear in a "Processed" state. You can preview caption and audio track files that appear as "Processed" *before* you publish the video live. |
 | Published | A "Published" state represents a similar state as "Published" for a primary video. Assets are published when the primary video is published and are available on the public Dynamic Media URL. |
 | Failed | A "Failed" state means that processing of a caption or audio track file did not complete. Delete the caption or audio track file and upload again. |
 | Unpublished | When a published primary video is unpublished explicitly, any caption or audio track files that you added to the video, are also unpublished. |   
 
-![Status column highlighted for Captions and Audio Tracks fields.](/help/assets/dynamic-media/assets/msma-lifecycle-status2.png)*Lifecycle status of each uploaded caption and audio track file.*
 
 ### Set the default audio for a video that has multiple audio tracks
 
@@ -710,25 +910,25 @@ However, any uploaded audio track files can be set as the default audio to play 
 >
 >The playback of default audio can also depend on what is set in the following browsers:
 >
->* Chrome&mdash;The default audio that is set in the video, is played.
->* Safari&mdash;If the default language is set in Safari, audio is played with the set default language, if available with the video's manifest. Otherwise, the default audio that is set as part of a video's properties is played.
+>* Chrome - The default audio that is set in the video, is played.
+>* Safari - If the default language is set in Safari, audio is played with the set default language, if available with the video's manifest. Otherwise, the default audio that is set as part of a video's properties is played.
 
 **To set the default audio for a video that has multiple audio tracks:**
 
 1. Navigate to the video asset whose default audio track you want to set.
-1. In asset selection mode, either from the List View or the Card View, select the video asset.
-1. On the toolbar, select the Properties icon (a circle with an "i" in it).
+1. In asset selection mode, either from ![View card icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Card View) or ![View List icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (List View), select the video asset.
+1. On the toolbar, click ![Info icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Properties.
 1. On the Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab. 
 1. Under the **Audio Tracks** heading, select the audio track file that you want to set as the video's default.
-1. Select **[!UICONTROL Set as default]**.
-In the **Set as default** dialog box, select **[!UICONTROL Replace]**.
+1. Click ![Audio icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Audio_18_N.svg) **[!UICONTROL Set as default]**.
+1. In the **Set as default** dialog box, click **[!UICONTROL Replace]**.
 
-   ![The Audio Tracks heading with a selected audio track file name and highlighted "Set as default" button.](/help/assets/dynamic-media/assets/msma-defaultaudiotrack2.png)*Setting the default audio track for a video.*
+   ![The Audio Tracks heading with a selected audio track file name and highlighted "Set as default" button.](/help/assets/dynamic-media/assets/msma-defaultaudiotrack.png)*Setting the default audio track for a video.*
 
-1. In the upper-right corner, select **[!UICONTROL Save & Close]**.
+1. In the upper-right corner, click **[!UICONTROL Save & Close]**.
 1. Publish the video. See [Publish assets](publishing-dynamicmedia-assets.md).
 
-### Preview a video that has multiple captions and audio tracks{#preview-video-audio-subtitle}
+### Preview a video that has multiple captions and audio tracks {#preview-video-audio-subtitle}
 
 After caption files and audio track files are uploaded to a video and processed, you can use the Dynamic Media video viewer to preview all the different tracks. Doing so helps you to see what your video looks and sounds like to customers and ensures that it is behaving as expected.
 
@@ -740,27 +940,26 @@ See [Add Dynamic Media Assets to pages](/help/assets/dynamic-media/adding-dynami
 
 >[!NOTE]
 >
->The default Experience Manager preview tab does not show multiple caption and audio tracks. The reason is because those tracks are associated with Dynamic Media and can only be seen using Dynamic Media Viewer preview.
+>The default Experience Manager Preview tab does not show multiple caption and audio tracks. The reason is because those tracks are associated with Dynamic Media and can only be seen using Dynamic Media Viewer preview.
 
 **To preview a video that has multiple captions and audio tracks:**
 
 1. In **[!UICONTROL Assets]**, navigate to an existing video that you have added multiple captions and audio tracks. 
-1. Click the video asset so you can open it in preview mode.
-1. On the preview page, near the upper-left corner of the page, select the drop-down list, then select **[!UICONTROL Viewers]**.
+1. Click the video asset to open it in preview mode.
+1. On the preview page, near the upper-left corner of the page, click ![Rail Left icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RailLeft_18_N.svg) ![Chevron Down icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg), then select **[!UICONTROL Viewers]**.
 
    ![Drop-down list showing the Viewers option.](/help/assets/dynamic-media/assets/msma-selectviewers.png)
 
-1. From the Viewers list, select a viewer that you want to use for the video preview. As an example, the following screenshot shows the **[!UICONTROL Video]** viewer being selected.
+1. Near the upper-left corner of the page, click ![Rail Left icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RailLeft_18_N.svg) Viewers ![Chevron Down icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg), then select a viewer that you want to use for the video preview.
 
-   ![Selection of the Video viewer from the Viewers drop-down list.](/help/assets/dynamic-media/assets/msma-dmviewerselected.png)
-
-1. Near the lower-right corner, to the left of the volume icon, select the speech bubble icon, then select the audio or caption you want to hear, or see or both. If desired, under Captions, you can select **[!UICONTROL Off]** to not display any captions or captions.
+1. Near the lower-right corner of the page, click the speech bubble icon, then select the audio or subtitle/caption you want to hear, or see, or both.
 
     ![The Audio and Captions pop-up list in the Video viewer.](/help/assets/dynamic-media/assets/msma-selectaudiosubtitle.png)*Simulation of a user selecting the audio and caption for video playback.*
 
-1. To begin playback, select the video's **[!UICONTROL Play]** button. 
-    Note the **[!UICONTROL URL]** and **[!UICONTROL Embed]** buttons in the lower-left corner. Use these buttons to [link the video's URL to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) or to [embed the video on a Web Page](/help/assets/dynamic-media/embed-code.md), respectively.
-1. Near the upper right corner of the preview page, select **[!UICONTROL Close]**.
+1. To begin playback, click ![PLay icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PlayCircle_22_N.svg).
+    If desired, click ![Maximize icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Maximize_22_N.svg) to maximize the viewing window. 
+    Notice the **[!UICONTROL URL]** and **[!UICONTROL Embed]** buttons near the lower-left corner of the page. Use these buttons to [link the video's URL to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) or to [embed the video on a Web Page](/help/assets/dynamic-media/embed-code.md), respectively.
+1. Near the upper-right corner of the preview page, click **[!UICONTROL Close]**.
 
 ### Delete caption or audio track files from a video
 
@@ -771,47 +970,59 @@ The original audio track extracted from a primary video cannot be deleted.
 **To delete caption or audio track files from a video:**
 
 1. Navigate to the video asset whose default audio track you want to set.
-1. In asset selection mode, either from the List View or the Card View, select the video asset.
-1. On the toolbar, select the Properties icon (a circle with an "i" in it).
+1. In asset selection mode, either from ![View card icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Card View) or ![View List icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (List View), select the video asset.
+1. On the toolbar, click ![Info icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Properties.
 1. On the Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab.
 1. Do either one of the following:
 
-   * Captions&mdash;Under the **Captions** heading, select one or more caption files that you want to delete from the video, then select **[!UICONTROL Delete]**.
-   * Audio Tracks&mdash;Under the **Audio Tracks** heading, select one or more audio track files that you want to delete from the video, then select **[!UICONTROL Delete]**.
+   * Captions - Under the **Captions** heading, select one or more caption files that you want to delete from the video, then click ![Delete icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg) **[!UICONTROL Delete]**.
+   * Audio Tracks - Under the **Audio Tracks** heading, select one or more audio track files that you want to delete from the video, then click ![Delete icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg) **[!UICONTROL Delete]**.
 
-1. In the Delete dialog box, select **[!UICONTROL OK]**.
+1. In the Delete dialog box, click **[!UICONTROL OK]**.
 1. Publish the video.
 
 ### Download caption or audio track files that were uploaded to a video
 
-You can download one or more caption or audio track files that you uploaded for use with a video. You have the option of either downloading all selected files as a .zip, or creating a separate download folder for each file.
+You can download any caption or audio track files you have uploaded for a video. You have the option of either downloading all selected files as a `.zip`, or creating a separate download folder for each file.
 
-The original audio track extracted from a primary file cannot be downloaded.
+The original audio track extracted from a primary video file cannot be downloaded.
 
-**To download caption or audio track files from a video:**
+**Use case:** Downloading a caption file might be necessary if you find an error in a `.vtt` file. Simply download the incorrect `.vtt` file, open it in a plain text editor, and make your corrections. After saving the `.vtt` file, upload it again. Then, use the **[!UICONTROL Translate Captions]** option to re-translate the corrected `.vtt` file.
+
+**To download caption or audio track files that were uploaded to a video:**
 
 1. Navigate to the video asset whose default audio track you want to set.
-1. In asset selection mode, either from the List View or the Card View, select the video asset.
-1. On the toolbar, select the Properties icon (a circle with an "i" in it).
-1. On the Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab.
+1. In asset selection mode, either from ![View card icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Card View) or ![View List icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (List View), select the video asset.
+1. On the toolbar, click ![Info icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Properties.
+1. On the **Properties** page, select the **[!UICONTROL Captions & Audio Tracks]** tab.
 1. Do either one of the following:
 
-   * Captions&mdash;Under the **Captions** heading, select one or more caption files that you want to download from the video, then select **[!UICONTROL Download]**.
-   * Audio Tracks&mdash;Under the **Audio Tracks** heading, select one or more audio track files that you want to download from the video, then select **[!UICONTROL Download]**.
+   * Captions - Under the **Captions** heading, select one or more caption files that you want to download from the video, then click ![Download icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Download_22_N.svg) **[!UICONTROL Download]**.
+   * Audio Tracks - Under the **Audio Tracks** heading, select one or more audio track files that you want to download from the video, then click ![Download icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Download_22_N.svg) **[!UICONTROL Download]**.
 
 1. In the Download dialog box, set the following options:
 
-    | Option | Description |
+    | Download option | Description |
     |--- |--- |
     | Save As | Use the default file name specified in the Save As text field, or specify your own name. |
     | Create a separate folder for each asset | Create a folder for each caption file or audio track file that you selected for download. |
     | Email | Use your default email program to send the .zip file to a specified email address. |
     | Assets | Specifies the number of files that you are downloading and the combined total size of all selected files. Deselecting this option dims (turns off) the **[!UICONTROL Download]** button, preventing you from downloading any file. |
+    | Renditions | A rendition refers to an alternative version or a preview of the original file, usually a smaller or lower-resolution version. If it is shown as 0 B, it likely means that no alternate version is available or it is too small to register a size. | 
+
 1. Select **[!UICONTROL Download]**.
 1. Publish the video. See [Publish assets](publishing-dynamicmedia-assets.md).
 
+<!-- ## About AI-generated captions for videos in Dynamic Media
 
+AI-powered captions in Dynamic Media are designed to enhance video accessibility and engagement by automatically generating accurate and synchronized subtitles. This technology uses advanced AI algorithms to transcribe spoken content into text, which is then displayed as captions on the video. Here are some key features.
 
+* **Automatic Transcription:** The AI system transcribes spoken words from an existing audio file into text in real-time, ensuring that captions are generated quickly and accurately.
+* **Multilingual Support:** It supports more than 60 languages, making it easier to reach a global audience. You can even translate your existing captions to different languages.
+* **Enhanced Accessibility:** By providing captions, videos become more accessible to viewers who are deaf or hard of hearing, as well as those who prefer to watch videos with the sound off.
+* **Improved Engagement:** Captions can help retain viewer attention and improve comprehension, especially in noisy environments or when the viewer's native language is different from the video's language.
+
+These features in Dynamic Media make AI-powered video aptions a valuable tool for content creators looking to enhance their video content's accessibility and engagement. -->
 
 ## Add closed captions to video {#adding-captions-to-video}
 
@@ -831,13 +1042,13 @@ See also [Accessibility in Dynamic Media](/help/assets/dynamic-media/accessibili
 
 Dynamic Media can convert caption files to JSON (JavaScript Object Notation) format. This conversion means you can embed the JSON text into a web page as a hidden but complete transcript of the video. Search engines can then crawl/index the content to make the videos more easily discoverable and give customers more details about the video content.
 
-See [Serving static (non-image) contents](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) for more information about using the JSON function in a URL.
+See [Serving static (non-image) contents](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api) for more information about using the JSON function in a URL.
 
-**To add captions to video:**
+**To add captions to a video:**
 
 1. Use a third-party application or service to create your video caption file.
 
-   Ensure the file that you create follows the WebVTT (Web Video Text Tracks) standard. The captioning filename extension is .VTT. You can learn more information about the WebVTT captioning standard.
+   Ensure the file that you create follows the WebVTT (Web Video Text Track) standard. The captioning filename extension is `.vtt`. You can learn more information about the WebVTT captioning standard.
 
    See [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/).
 
@@ -847,18 +1058,18 @@ See [Serving static (non-image) contents](https://experienceleague.adobe.com/doc
 
    For best results, use the tool in Internet Explorer 9 or above, Google Chrome, or Safari.
 
-   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then select **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video.-->
+   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then select **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video. -->
 
   Follow the onscreen instructions from a site to author and save your WebVTT file. When you have finished, copy the caption file contents and paste it into a plain text editor and save it with a VTT filename extension.
 
    >[!NOTE]
    >
-   >For global support of video captions in multiple languages, the WebVTT standard requires that you create separate .vtt files and calls for each language you want to support.
+   >For global support of video captions in multiple languages, the WebVTT standard requires that you create separate `.vtt` files and calls for each language you want to support.
 
-   Generally, you want to name the caption VTT file the same name as the video file, and append it with the language locale, such as -EN, or -FR, or -DE. By doing so, it can help you with automating the generation of the video URLs using your existing web content management system.
+   Generally, you want to name the caption `.vtt` file the same name as the video file, and append it with the language locale, such as -EN, or -FR, or -DE. By doing so, it can help you with automating the generation of the video URLs using your existing WCM system.
 
 1. In Experience Manager, upload your WebVTT caption file into DAM.
-1. Navigate to the *published* video asset that you want to associate with the caption file that you uploaded.
+1. Navigate to the *published* video asset to associate it with the caption file that you uploaded.
 
    Remember that URLs are only available to copy *after* you have first *published* the assets.
 
@@ -866,17 +1077,17 @@ See [Serving static (non-image) contents](https://experienceleague.adobe.com/doc
 
 1. Do one of the following:
 
-    * For a pop-up video viewer experience, select **[!UICONTROL URL]**. In the URL dialog box, select and copy the URL to the Clipboard and then past the URL into a simple text editor. Append the copied URL of the video with the following syntax:
+    * For a pop-up video viewer experience, click the **[!UICONTROL URL]** button. In the URL dialog box, select and copy the URL to the Clipboard and then past the URL into a simple text editor. Append the copied URL of the video with the following syntax:
 
       `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
       Note the `,1` at the end of the caption path. Immediately following the VTT filename extension in the path, you can optionally enable (turn on) or disable (turn off) the closed caption button on the video player bar by setting to `,1` or `,0`, respectively.
 
-    * For an embedded video viewer experience, select **[!UICONTROL Embed Code]**. In the Embed Code dialog box, select, and copy the embed code to the Clipboard and then paste the code into a simple text editor. Append the copied embed code with the following syntax:
+    * For an embedded video viewer experience, click **[!UICONTROL Embed Code]**. In the Embed Code dialog box, select, and copy the embed code to the Clipboard and then paste the code into a simple text editor. Append the copied embed code with the following syntax:
 
       `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
-      Note the `,1` at the end of the caption path. Immediately following the VTT filename extension in the path, you can optionally enable (turn on) or disable (turn off) the closed caption button on the video player bar by setting to `,1` or `,0`, respectively.
+      Notice the `,1` at the end of the caption path. Immediately following the VTT filename extension in the path, you can optionally enable (turn on) or disable (turn off) the closed caption button on the video player bar by setting to `,1` or `,0`, respectively.
 
 ## Add chapter markers to video {#adding-chapter-markers-to-video}
 
@@ -884,7 +1095,7 @@ You can make your long-form videos easier to watch and navigate by adding chapte
 
 >[!NOTE]
 >
->The video player that is used must support the use of chapter markers. Dynamic Media video players do support chapter markers but using third-party video players may not.
+>The video player used must support the use of chapter markers. Dynamic Media video players do support chapter markers but using third-party video players may not.
 
 <!-- OBSOLETE CONTENT OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading "Customizing Behavior Using Modifiers" under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
@@ -912,15 +1123,15 @@ Cost-efficient access to rapidly evolving technology.
 
 In the example above, `Chapter 1` is the cue identifier and is optional. The cue time of `00:00:000 --> 01:04:364` specifies the start time and end time of the chapter, in `00:00:000` format. That last three digits are milliseconds and can be left as `000`, if preferred. The chapter title of `The bicycle store behind it all` is the actual description of the chapter's contents. The cue identifier, the starting cue time, and the chapter title all appear in a pop-up in the video player when a user hovers their mouse pointer over a visual cue point in the timeline.
 
-Because you are using an HTML5 video viewer, ensure that the chapter file you create follows the WebVTT (Web Video Text Tracks) standard. The chapter filename extension is .VTT. You can learn more information about the WebVTT captioning standard.
+Because you are using an HTML5 video viewer, ensure that the chapter file you create follows the WebVTT (Web Video Text Tracks) standard. The chapter filename extension is `.vtt`. You can learn more information about the WebVTT captioning standard.
 
 See [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/).
 
-**To add chapter markers to video:**
+**To add chapter markers to a video:**
 
-1. Save the VTT file in UTF8 encoding so you avoid problems with character rendition in the chapter title text.
+1. Save the `.vtt` file in UTF8 encoding so you avoid problems with character rendition in the chapter title text.
 
-   Generally, you want to name the chapter VTT file the same name as the video file, and append it with chapters. By doing so, it can help you with automating the generation of the video URLs using your existing web content management system.
+   Generally, you want to name the chapter VTT file the same name as the video file, and append it with chapters. By doing so, it can help you with automating the generation of the video URLs using your existing WCM system.
 1. In Experience Manager, upload your WebVTT chapter file.
 
    See [Upload assets](/help/assets/manage-digital-assets.md#uploading-assets).
@@ -930,22 +1141,22 @@ See [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/).
    <table>
      <tbody>
       <tr>
-       <td>For a pop-up video viewer experience</td>
+       <td>For a pop-up video viewer experience,</td>
        <td>
        <ol>
-       <li>Navigate to the <i>published </i>video asset that you want to associate with the chapter file that you uploaded. Remember that URLs are only available to copy <i>after</i> you have first <i>published</i> the assets. See <a href="/help/assets/dynamic-media/publishing-dynamicmedia-assets.md">Publishing Assets.</a></li>
+       <li>Navigate to the <i>published </i>video asset to associate it with the chapter file that you uploaded. Remember that URLs are only available to copy <i>after</i> you have first <i>published</i> the assets. See <a href="/help/assets/dynamic-media/publishing-dynamicmedia-assets.md">Publishing Assets.</a></li>
        <li>From the drop-down menu, then select <strong>Viewers</strong>.</li>
        <li>In the left rail, select the video viewer preset name. A preview of the video is opened in a separate page.</li>
-       <li>In the left rail, at the bottom, select <strong>URL</strong>.</li>
+       <li>In the left rail, at the bottom, click the <strong>URL</strong> button.</li>
        <li>In the URL dialog box, select and copy the URL to the Clipboard, then past the URL into a simple text editor.</li>
        <li>Append the copied URL of the video with the following syntax so you can associate it with the copied URL to your chapter file:<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
        </ol> </td>
       </tr>
       <tr>
-       <td>For an embedded video viewer experience<br /> </td>
+       <td>For an embedded video viewer experience,<br /> </td>
        <td>
        <ol>
-       <li>Navigate to the <i>published </i>video asset that you want to associate with the chapter file that you uploaded. Remember that URLs are only available to copy <i>after</i> you have first <i>published</i> the assets. See <a href="/help/assets/dynamic-media/publishing-dynamicmedia-assets.md">Publishing Assets.</a></li>
+       <li>Navigate to the <i>published </i>video asset to associate it with the chapter file that you uploaded. Remember that URLs are only available to copy <i>after</i> you have first <i>published</i> the assets. See <a href="/help/assets/dynamic-media/publishing-dynamicmedia-assets.md">Publishing Assets.</a></li>
        <li>From the drop-down menu, then select <strong>Viewers</strong>.</li>
        <li>In the left rail, select the video viewer preset name. A preview of the video is opened in a separate page.</li>
        <li>In the left rail, at the bottom, select <strong>Embed</strong>.</li>
@@ -957,18 +1168,17 @@ See [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/).
    </table>
 
 
-
 ## About video thumbnails {#about-video-thumbnails}
 
 A video thumbnail is a reduced-size version of a video frame or an image asset representing the video to the customer. The thumbnail should serve to encourage a customer to select the video.
 
-All videos in Experience Manager must have an associated thumbnail; you cannot delete a thumbnail without replacing it. By default, when you upload a video to Experience Manager, the first frame is used as the thumbnail. However, you can customize the thumbnail for branding purposes or visual search, for example. When you customize a video thumbnail, you can either play the video and pause on the frame you want to use. Or, you can select an image asset that you have already uploaded and *published* in your digital asset manager.
+All videos in Experience Manager must have an associated thumbnail. By default, when you upload a video to Experience Manager, the first frame is used as the thumbnail. However, you can customize the thumbnail for branding purposes or visual search. When you customize a video thumbnail, you can play the video and pause on the frame you want to use. Or, you can select an image asset that you have already uploaded and *published* in your digital asset manager.
 
 When the thumbnail is changed for a video, thumbnail generation by way of Asset Compute Service on reprocessing the video is skipped.  
 
 The ability to customize a video thumbnail is only available after you have applied a video profile to the folder where the video is located.
 
-### Adding a custom video thumbnail {#adding-a-custom-video-thumbnail}
+### Add a custom video thumbnail {#adding-a-custom-video-thumbnail}
 
 1. Be sure you have already done the following:
 
@@ -977,26 +1187,28 @@ The ability to customize a video thumbnail is only available after you have appl
 
     * [Uploaded your videos to the folder](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
 
+
 1. Navigate to an uploaded video asset whose thumbnail image you want to change.
-1. In asset selection mode either from **[!UICONTROL List View]** or **[!UICONTROL Card View]**, select the video asset.
-1. On the toolbar, select the **[!UICONTROL Properties]** icon (a circle with an "i" in it).
-1. On the video's Properties page, select **[!UICONTROL Change Thumbnail]**.
-1. On the Change Thumbnail page, do one of the following:
+1. In asset selection mode, either from ![View card icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Card View) or ![View List icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (List View), select the video asset.
+1. On the toolbar, click ![Info icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Properties.
+1. On the video's Properties page, click **[!UICONTROL Change Thumbnail]**.
+1. On the Change Thumbnail dialog box, do one of the following:
 
     * To use a frame from the video as the new thumbnail:
 
-        * On the toolbar, select **[!UICONTROL Select Frame from video]**.
-        * Select the Play button, then select the Pause button on the frame you want to capture as the video's new thumbnail.
+        * On the toolbar, click the **[!UICONTROL Select Frame from video]** tab.
+        * Click ![Play icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PlayCircle_22_N.svg).
+        * Click ![Pause icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PauseCircle_22_N.svg) on the frame that you want to capture as the video's new thumbnail.
 
     * To use an image asset as the new thumbnail:
 
-        * On the toolbar, select **[!UICONTROL Select Thumbnail from Assets]**.
-        * Select **[!UICONTROL Select Thumbnail]**.
+        * On the toolbar, click the **[!UICONTROL Select Thumbnail from Assets]** tab.
+        * Click the **[!UICONTROL Select thumbnail]** button.
         * Navigate to a previously uploaded and published image asset that you want to use. The asset is automatically resized to serve as a thumbnail image for the video.
-        * Select the image asset, then select **[!UICONTROL Select]**.
+        * Select the image asset, then click **[!UICONTROL Select]**.
 
-1. On the Change Thumbnail page, select **[!UICONTROL Save Change]**.
-1. On the video's Properties page, in the upper-right corner, select **[!UICONTROL Save & Close]**.
+1. On the Change Thumbnail dialog box, click **[!UICONTROL Save Change]**.
+1. On the video's Properties page, in the upper-right corner, click **[!UICONTROL Save & Close]** or **[!UICONTROL Save]**.
 
 
 
@@ -1010,7 +1222,7 @@ Based on the total time of the video, Dynamic Media captures ten (default) thumb
 
 Ideally, you can add a video thumbnail anytime after you upload your video but before you publish the video on your website.
 
-If you prefer, you can choose to upload a custom thumbnail to represent your video instead of using a thumbnail generated by Dynamic Media. For example, you could create a custom thumbnail image that has the title of your video, an eye-catching opening image, or a very specific image captured from your video. The custom video thumbnail image that you upload should have a maximum resolution of 1280 x 720 pixels (minimum width of 640 pixels) and be no larger than 2MB.
+If you prefer, you can choose to upload a custom thumbnail to represent your video instead of using a thumbnail generated by Dynamic Media. For example, you could create a custom thumbnail image that has the title of your video, an eye-catching opening image, or a very specific image captured from your video. The custom video thumbnail image that you upload should have a maximum resolution of 1280 &times; 720 pixels (minimum width of 640 pixels) and be no larger than 2MB.
 
 See also [About video thumbnails](/help/assets/dynamic-media/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
 
@@ -1091,7 +1303,7 @@ T**o add a custom video thumbnail**,
 
 ## Change the Dynamic Media URL for Dynamic Media assets
 
-Videos processed in Dynamic Media can be used by way of out-of-the-box viewers and also by directly accessing the manifest URLs and playing them through your own custom viewers. The following is the API for fetching manifest URLs for a video. 
+Out-of-the-box viewers can play videos processed in Dynamic Media. You can also play them by directly accessing the manifest URLs and using your own custom viewers. The following is the API for fetching manifest URLs for a video. 
 
 ### About the getVideoManifestURI API
 
@@ -1113,7 +1325,7 @@ String getVideoManifestURI(Resource resource, ManifestType manifestType, boolean
 
 #### getVideoManifestURI API parameters 
 
-This API takes in the following three parameters:
+This API takes the following three parameters:
 
 | Parameter | Description |
 | --- | --- |
@@ -1121,22 +1333,22 @@ This API takes in the following three parameters:
 | `manifestType` | Can be either `ManifestType.DASH` or `ManifestType.HLS`|
 | `onlyIfPublished` | Set to true in case the manifest uri is generated only if it is published and available on the delivery tier.|
 
-To fetch the manifest URLs for videos using the method above, add a [video encoding profile](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) to an "upload videos" folder. Dynamic Media processes these videos based on the encodings found in the video encoding file that was assigned to the folder. Now you can invoke the above API for fetching manifest URLs for the uploaded videos. 
+To fetch the manifest URLs for videos using the method above, add a [video encoding profile](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) to an "upload videos" folder. Dynamic Media processes these videos based on the encodings found in the video encoding file that was assigned to the folder. Now, you can invoke the above API for fetching manifest URLs for the uploaded videos. 
 
 ### Error scenarios 
 
 The API returns null if there are errors. Exceptions are logged in Experience Manager error logs. All such logged errors start with `Could not generate Video Manifest URI`. The following scenarios can make such errors occur: 
 
-*   An `IllegalArgumentException` gets logged for any of the following: 
+* An `IllegalArgumentException` gets logged for any of the following: 
 
     * The `resource` parameter passed is null.
     * The `resource` parameter passed is not a video.
     * The `manifestType` parameter passed is null.
     * The `onlyIfPublished` parameter is passed as true, but the video is not published. 
-    * The video was not ingested using an adaptive video set from Dynamic Media.
+    * The video was not ingested using an Adaptive Video Set from Dynamic Media.
 
-*   `IOException` gets logged when there is an issue connecting to Dynamic Media. 
-*   `UnsupportedOperationException` gets logged when a `manifestType` parameter passed is `ManifestType.DASH`, while the video has not been processed using DASH format. 
+* `IOException` gets logged when there is an issue connecting to Dynamic Media. 
+* `UnsupportedOperationException` gets logged when a `manifestType` parameter passed is `ManifestType.DASH`, while the video has not been processed using DASH format. 
 
 <!-- THE REMAINING SECTION IS FOR 6.5 ONLY 
 

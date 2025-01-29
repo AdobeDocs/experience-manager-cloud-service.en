@@ -1,6 +1,6 @@
 ---
-title: Java&trade; Functional Tests
-description: Learn how to write Java&trade; functional tests for AEM as a Cloud Service
+title: Java &trade; Functional Tests
+description: Learn how to write Java &trade; functional tests for AEM as a Cloud Service
 exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -16,19 +16,19 @@ Upon creation of a new code repository in Cloud Manager, an `it.tests` folder is
 
 >[!NOTE]
 >
->If your repository was created before Cloud Manager automatically created `it.tests` folders, you may also generate the latest version using the [AEM Project Archetype.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
+>If your repository was created before Cloud Manager automatically created `it.tests` folders, you may also generate the latest version using the [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests).
 
 Once you have the contents of the `it.tests` folder, you can use it as a basis for your own tests and then:
 
-1. [Develop your test cases.](#writing-functional-tests)
-1. [Run the tests locally.](#local-test-execution)
+1. [Develop your test cases](#writing-functional-tests).
+1. [Run the tests locally](#local-test-execution).
 1. Commit your code into the Cloud Manager repository and execute a Cloud Manager pipeline.
 
 ## Writing Custom Functional Tests {#writing-functional-tests}
 
 The same tools that Adobe uses to write product functional tests can be used to write your custom functional tests. Use the [product functional tests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub as an example of how to write your tests.
 
-The code for custom functional test is Java&trade; code in the `it.tests` folder of your project. It should produce a single JAR with all the functional tests. If the build produces more than one test JAR, which JAR is selected is non-deterministic. If it produces zero test JARs, the test step passes by default. [See the AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) for sample tests.
+The code for custom functional test is Java&trade; code in the `it.tests` folder of your project. It should produce a single JAR with all the functional tests. If the build produces more than one test JAR, which JAR is selected is non-deterministic. If it produces zero test JARs, the test step passes by default. See [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) for sample tests.
 
 The tests are run on Adobe-maintained testing infrastructure including at least two author instances, two publish instances, and a Dispatcher configuration. This setup means that your custom functional tests run against the entire AEM stack.
 
@@ -100,9 +100,9 @@ See [`aem-testing-clients` GitHub repo](https://github.com/adobe/aem-testing-cli
 | Type                 | Value | Description                                                        |
 |----------------------|-------|--------------------------------------------------------------------|
 | CPU                  | 0.5   | Amount of CPU-time reserved per test execution                     |
-| Memory               | 0.5 Gi | Amount of memory allocated the test, value in gibibytes        |
-| Timeout              | 30 m   | The duration after which the test is terminated.              |
-| Recommended Duration | 15 m   | Adobe recommends writing the tests to not take longer than this time. |
+| Memory               | 0.5 Gi | Amount of memory allocated to the test, value in gibibytes        |
+| Timeout              | 30 m   | The time limit after which the test is stopped.                |
+| Recommended Duration | 15 m   | Adobe recommends writing the tests not to take longer than this time. |
 
 >[!NOTE]
 >
@@ -112,8 +112,7 @@ See [`aem-testing-clients` GitHub repo](https://github.com/adobe/aem-testing-cli
 
 * aem-cloud-testing-clients:
 
-Upcoming changes in the containerized infrastructure used to execute functional tests, will require the library [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) used in your custom functional test to be updated to at least version **1.2.1**
-Make sure that your dependency in `it.tests/pom.xml` has been updated.
+Upcoming changes to the containerized infrastructure for executing functional tests require updating the [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) library in your custom functional tests to version **1.2.1** or higher. Ensure that the dependency in your `it.tests/pom.xml` file is updated accordingly.
 
 ```
 <dependency>
@@ -126,7 +125,7 @@ Make sure that your dependency in `it.tests/pom.xml` has been updated.
 >[!NOTE]
 >
 >This change needs to be performed before April 6, 2024. 
->Failing to update the dependency library will result in pipeline failures at the "Custom Functional Testing" step.
+>Failing to update the dependency library can result in pipeline failures at the "Custom Functional Testing" step.
 
 ### Local Test Execution {#local-test-execution}
 
@@ -134,7 +133,7 @@ Before activating functional tests in a Cloud Manager pipeline, it's recommended
 
 #### Running in an IDE {#running-in-an-ide}
 
-Because test classes are JUnit tests, they can be run from mainstream Java&trade; IDEs like Eclipse, IntelliJ, and NetBeans. Because both product functional tests and custom functional tests are based on the same technology, both can be run locally by copying the product tests into your custom tests.
+Because test classes are JUnit tests, they can be run from mainstream Java &trade; IDEs like Eclipse, IntelliJ, and NetBeans. Because both product functional tests and custom functional tests are based on the same technology, both can be run locally by copying the product tests into your custom tests.
 
 However, when running these tests, it is necessary to set various system properties expected by the `aem-testing-clients` (and the underlying Sling Testing Clients) library.
 
@@ -142,15 +141,15 @@ The system properties are as follows.
 
 | Property                            | Description                                                      | Example                 |
 |-------------------------------------|------------------------------------------------------------------|-------------------------|
-| `sling.it.instances`                | number of instances, to match cloud service should be set to `2` | `2`                     |
-| `sling.it.instance.url.1`           | should be set to the author URL                                  | `http://localhost:4502` | 
-| `sling.it.instance.runmode.1`       | run mode of the first instance, should be set to `author`         | `author`                | 
-| `sling.it.instance.adminUser.1`     | should be set to the author admin user.                          | `admin`                 | 
-| `sling.it.instance.adminPassword.1` | should be set to the author admin password.                      |                         | 
-| `sling.it.instance.url.2`           | should be set to the publish URL                                 | `http://localhost:4503` |
-| `sling.it.instance.runmode.2`       | run mode of the second instance, should be set to `publish`       | `publish`               | 
-| `sling.it.instance.adminUser.2`     | should be set to the publish admin user.                         | `admin`                 | 
-| `sling.it.instance.adminPassword.2` | should be set to the publish admin password.                     |                         | 
+| `sling.it.instances`                | Number of instances, to match cloud service should be set to `2`. | `2`                     |
+| `sling.it.instance.url.1`           | Set to author URL.                                  | `http://localhost:4502` | 
+| `sling.it.instance.runmode.1`       | Run mode of the first instance. Set to `author`.         | `author`                | 
+| `sling.it.instance.adminUser.1`     | Set to author admin user.                          | `admin`                 | 
+| `sling.it.instance.adminPassword.1` | Set to author admin password.                      |                         | 
+| `sling.it.instance.url.2`           | set to publish URL.                                 | `http://localhost:4503` |
+| `sling.it.instance.runmode.2`       | Run mode of the second instance. Set to `publish`.       | `publish`            | 
+| `sling.it.instance.adminUser.2`     | Set to publish admin user.                         | `admin`                 | 
+| `sling.it.instance.adminPassword.2` | Set to publish admin password.                     |                         | 
 
 
 

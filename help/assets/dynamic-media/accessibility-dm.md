@@ -10,6 +10,8 @@ exl-id: f8d2dcbf-f61a-4b27-a3fc-406e3662adcb
 ---
 # Accessibility in Dynamic Media {#accessibility-in-dm}
 
+{{work-with-dynamic-media}}
+
 Dynamic Media supports keyboard control and assistive technologies, such as JAWS and NVDA screen readers, across the authoring user interface.
 
 ## Keyboard accessibility support in Dynamic Media {#keyboard-support-in-dm}

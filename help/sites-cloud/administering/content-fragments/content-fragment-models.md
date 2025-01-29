@@ -8,6 +8,12 @@ solution: Experience Manager Sites
 ---
 # Content Fragment Models {#content-fragment-models}
 
+>[!IMPORTANT]
+>
+>Various features of the Content Fragment Models are available through the Early Adopter Program.
+>
+>To see the status, and how to apply if you are interested, check the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md).
+
 Content Fragment Models in Adobe Experience Manager (AEM) as a Cloud Service define the structure for the content of your [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md). These fragments can then be used for page authoring, or as a foundation for your headless content.
 
 To use Content Fragment Models you:
@@ -145,9 +151,12 @@ The Content Fragment Model effectively defines the structure of the resulting Co
 A selection of data types is available for defining your model:
 
 * **Single line text**
-  * Add one, or more, fields of a single line of text; the maximum length can be defined
+  * Add a field for a single line of text; the maximum length can be defined
+  * The field can be configured to allow fragment authors to create new instances of the field  
+
 * **Multi line text**
   * A text area that can be Rich Text, Plain Text, or Markdown
+  * The field can be configured to allow fragment authors to create new instances of the field  
 
   >[!NOTE]
   >
@@ -156,33 +165,60 @@ A selection of data types is available for defining your model:
   >This format cannot be changed from the [Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md), but only from the Model.
 
 * **Number**
-  * Add one, or more, numerical fields
+  * Add a numerical field
+  * The field can be configured to allow fragment authors to create new instances of the field  
+
 * **Boolean**
   * Add a boolean checkbox
+
 * **Date and time**
-  * Add a date and/or time
+  * Add a date and/or time field
+
 * **Enumeration**
-  * Add a set of checkbox, radio button, or drop-down list fields
+  * Add a set of Checkbox, Radio Button, or Dropdown fields
+    * You can specify the options available to the fragment author
+
 * **Tags**
   * Allows fragment authors to access and select areas of tags
-* **Content Reference**
-  * References other content, of any type; can be used to [create nested content](#using-references-to-form-nested-content)
-  * If an image is referenced, you can opt to show a thumbnail
 * **Fragment Reference**
   * References other Content Fragments; can be used to [create nested content](#using-references-to-form-nested-content)
   * The data type can be configured to allow fragment authors to:
     * Edit the referenced fragment directly.
-    * Create a new Content Fragment, based on the appropriate model  
+    * Create a new Content Fragment, based on the appropriate model
+    * Create new instances of the field 
+  * The reference specifies the path to the referenced resource; for example `/content/dam/path/to/resource`
+* **Fragment Reference (UUID)**
+  * References other Content Fragments; can be used to [create nested content](#using-references-to-form-nested-content)
+  * The data type can be configured to allow fragment authors to:
+    * Edit the referenced fragment directly.
+    * Create a new Content Fragment, based on the appropriate model
+    * Create new instances of the field 
+  * In the editor, the reference specifies the path to the referenced resource; internally the reference is held as a universally unique ID (UUID) that references the resource
+    * You do not need to know the UUID; in the fragment editor you can browse to the required fragment
+
+* **Content Reference**
+  * References other content, of any type; can be used to [create nested content](#using-references-to-form-nested-content)
+  * If an image is referenced, you can opt to show a thumbnail
+  * The field can be configured to allow fragment authors to create new instances of the field 
+  * The reference specifies the path to the referenced resource; for example `/content/dam/path/to/resource`  
+* **Content Reference (UUID)**
+  * References other content, of any type; can be used to [create nested content](#using-references-to-form-nested-content)
+  * If an image is referenced, you can opt to show a thumbnail
+  * The field can be configured to allow fragment authors to create new instances of the field 
+  * In the editor, the reference specifies the path to the referenced resource; internally the reference is held as a universally unique ID (UUID) that references the resource
+    * You do not need to know the UUID; in the fragment editor you can browse to the required asset resource
+
 * **JSON Object**
   * Allows the Content Fragment author to enter JSON syntax into the corresponding elements of a fragment. 
     * To allow AEM to store direct JSON that you have copy/pasted from another service.
     * The JSON is passed through, and output as JSON in GraphQL.
     * Includes JSON syntax-highlighting, auto-complete, and error-highlighting in the Content Fragment editor.
+
 * **Tab Placeholder**
   * Allows the introduction of tabs for use when editing the Content Fragment content.
     * These are shown as dividers in the model editor, separating sections of the list of content data types. Each instance represents the start of a new tab.
     * In the fragment editor each instance appears as a tab.
-    
+
     >[!NOTE]
     >
     >This data type is purely used for formatting, it is ignored by the AEM GraphQL schema.
@@ -272,17 +308,28 @@ Various data types now include the possibility to define validation requirements
 
 Content Fragments can form nested content, using either of the following data types:
 
-* **[Content Reference](#content-reference)**
+* [Content Reference](#content-reference)
   * Provides a simple reference to other content; of any type.
-  * Can be configured for a one or multiple references (in the resulting fragment).
+  * Provided by the data types:
+    * **Content Reference** - path based
+    * **Content Reference (UUID)** - UUID based
+  * Can be configured for one or multiple references (in the resulting fragment).
 
-* **[Fragment Reference](#fragment-reference-nested-fragments)** (Nested Fragments)
+* [Fragment Reference](#fragment-reference-nested-fragments) (Nested Fragments)
   * References other fragments, dependent on the specific models specified.
+  * Provided by the data types:
+    * **Fragment Reference** - path based
+    * **Fragment Reference (UUID)** - UUID based
   * Allows you to include/retrieve structured data.
+  
     >[!NOTE]
     >
     >This method is of particular interest when you are using [Headless Content Delivery using Content Fragments with GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
   * Can be configured for one or multiple references (in the resulting fragment).
+
+>[!NOTE]
+>
+>See [Upgrade your Content Fragments for UUID References](/help/headless/graphql-api/uuid-reference-upgrade.md) for further information about Content/Fragment Reference and Content/Fragment Reference (UUID), and upgrading to the UUID-based data types.
 
 >[!NOTE]
 >
@@ -302,11 +349,11 @@ Content Fragments can form nested content, using either of the following data ty
 
 ### Content Reference {#content-reference}
 
-The Content Reference allows you to render content from another source; for example, image, page or Experience Fragment.
+The **Content Reference** and **Content Reference (UUID)** data types allow you to render content from another source; for example, image, page or Experience Fragment.
 
 In addition to standard properties you can specify:
 
-* The **Root Path**, which specifies where to store any referenced content
+* The **Root Path**, which specifies, or represents, where to store any referenced content
   >[!NOTE]
   >
   >This is mandatory if you want to directly upload and reference images in this field when using the Content Fragment editor.
@@ -329,7 +376,7 @@ In addition to standard properties you can specify:
 
 ### Fragment Reference (Nested Fragments) {#fragment-reference-nested-fragments}
 
-The Fragment Reference references one, or more, Content Fragments. This feature is of particular interest when retrieving content for use in your app, as it allows you to retrieve structured data with multiple layers.
+The **Fragment Reference** and **Fragment Reference (UUID)** data types can reference one, or more, Content Fragments. This feature is of particular interest when retrieving content for use in your app, as it allows you to retrieve structured data with multiple layers.
 
 For example:
 
@@ -366,7 +413,7 @@ In addition to standard properties you can define:
   Multiple models can be selected. When adding references to a Content Fragment, any referenced fragments must have been created using these models.
 
 * **Root Path**
-  This specifies a root path for any fragments referenced.
+  This specifies, or represents, a root path for any fragments referenced.
 
 * **Allow Fragment Creation**
 
@@ -429,7 +476,7 @@ To implement content governance, you can configure **Policies** on Assets folder
 
 >[!NOTE]
 >
->The mechanism is similar to [allowing page templates](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author) for a page, and its children, in advanced properties of a page. 
+>The mechanism is similar to [allowing page templates](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author) for a page, and its children, in advanced properties of a page. 
 
 To configure the **Policies** for **Allowed Content Fragment Models**:
 

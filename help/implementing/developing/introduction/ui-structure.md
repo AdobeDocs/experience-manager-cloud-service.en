@@ -165,3 +165,17 @@ Depending on the space available, the component toolbars are positioned at the t
 <!--For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).-->
 
 For more technical information, see the [JS documentation set](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html) for the page editor.
+
+### Unified Shell {#unified-shell}
+
+See [AEM as a Cloud Service on Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) if you are using the Unified Shell as your AEM UI. 
+
+If you need to make, or have already made, any customizations, the Unified Shall can be disabled:
+
+* [from the UI](/help/overview/aem-cloud-service-on-unified-shell.md#disabling-unified-shell)
+
+* from your project code, by:
+
+  * on `/conf/global/setting/unifiedshell`
+
+    * setting the `Boolean` property `enable` to `false` 

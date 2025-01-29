@@ -1,13 +1,10 @@
 ---
 title: What is separator component in Adaptive Forms?
 description: Separator component in Adaptive Forms help to visually segregate sections of a form.
-uuid: f8d2aed3-52aa-437f-bfe3-0c8779e7986c
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: author
-docset: aem65
-
+feature: Adaptive Forms, Foundation Components
+role: User
+exl-id: 1b7857f9-b201-43ca-870d-42a09c441d9a
 ---
-
 # Separator component in Adaptive Forms{#separator-component-in-adaptive-forms}
 
 You can use the separator component to visually segregate panels of a form. You can define the overall appearance and style of a separator component by specifying the following properties of the separator component:
@@ -32,4 +29,3 @@ To specify the properties of a separator component:
 1. Do one of the following:
     * Confirm the changes by clicking **OK**
     * Exit the dialog box without any changes by clicking **Cancel**.
-

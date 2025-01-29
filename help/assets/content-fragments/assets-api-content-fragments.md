@@ -18,6 +18,8 @@ Learn about support for Content Fragments in the Assets HTTP API, an important p
 
 >[!NOTE]
 >
+>See [AEM APIs for Structured Content Delivery and Management](/help/headless/apis-headless-and-content-fragments.md) for an overview of the various APIs available and comparison of some of the concepts involved.
+>
 >The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) are also available.
 
 >[!NOTE]

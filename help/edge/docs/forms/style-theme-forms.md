@@ -1,6 +1,6 @@
 ---
-title: Customize theme and style for an AEM Forms Edge Delivery ServicesForm
-description: Customize theme and style for an AEM Forms Edge Delivery ServicesForm
+title: Customize theme and style for an Edge Delivery Services for AEM Forms
+description: Customize theme and style for an Edge Delivery Services for AEM Forms
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
 role: Admin, Architect, Developer

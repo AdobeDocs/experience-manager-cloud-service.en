@@ -9,6 +9,8 @@ role: Admin, Architect, Developer
 
 This document describes how the dynamic model to component mapping occurs in the JavaScript SPA SDK for AEM.
 
+{{ue-over-spa}}
+
 ## ComponentMapping Module {#componentmapping-module}
 
 The `ComponentMapping` module is provided as an NPM package to the front-end project. It stores front-end components and provides a way for the Single Page Application to map front-end components to AEM resource types. The module enables a dynamic resolution of components when parsing the JSON model of the application.

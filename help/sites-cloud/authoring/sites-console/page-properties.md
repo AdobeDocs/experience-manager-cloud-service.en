@@ -112,7 +112,7 @@ The properties are distributed across several tabs.
 
 * **Template Settings**
 
-  * **Allowed Templates** - [Defines the list of templates that are available](/help/sites-cloud/authoring/sites-console/templates.md#enabling-and-allowing-a-template-template-author) within this sub-branch
+  * **Allowed Templates** - [Defines the list of templates that are available](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author) within this sub-branch
 
 * **Authentication Requirement**
 

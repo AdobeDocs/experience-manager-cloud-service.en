@@ -21,7 +21,7 @@ There are three categories of tests supported by Cloud Manager for Cloud Service
 
    * Functional testing is a part of the stage testing phase of a [production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) and optionally part of testing phase of a [non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
-1. [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md)
+1. [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-dashboard.md)
 
    * Experience audit testing is enabled in all Cloud Manager production pipelines andcannot be skipped.
 

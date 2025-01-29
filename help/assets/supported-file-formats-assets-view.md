@@ -8,10 +8,13 @@ feature: Asset Management, Publishing, Collaboration, Asset Processing
 ---
 # Files formats support in [!DNL Assets view] {#file-format-support}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 [!DNL Assets view] supports a wide range of file formats and each functionality has varied support for different file types.
 
 * ![image file type icon](assets/image-icon.svg) Images: JPG, PNG, GIF, TIFF, and others
-* ![creative cloudtype icon](assets/creative-cloud-files.svg) Creative Cloud files: PSD, AI, and INDD
+* ![creative cloudtype icon](assets/creative-cloud-files.svg) Creative Cloud files: PSD, PSB, AI, and INDD
 * ![camera type icon](assets/camera-icon.svg) Camera RAW files: CR2/CR3, NEF, SRW/SRF, and others
 * ![document file type icon](assets/document-icon.svg) Documents: DOCX, PDF, PPTX, and XLSX
 * ![video file type icon](assets/video-icon.svg) Videos: MP4
@@ -40,7 +43,7 @@ The various file types have different degrees of support for the use cases and f
 | Folders           | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003;          | &minus;    | &minus;         |
 | MP4 videos        | &#10003; | &#10003; | &#10003; | &minus;  | &#10003; | &#10003; &Dagger; | &minus;    | &#10003;        |
 | PDF               | &#10003; | &#10003; | &#10003; | &minus;  | &#10003; | &#10003;          | &minus;    | &#10003;        |
-| PSD, AI, and INDD | &#10003; | &#10003; | &#10003; | &minus;  | &#10003; | &#10003; &Dagger; | &minus;    | &#10003;        |
+| PSD, PSB, AI, and INDD | &#10003; | &#10003; | &#10003; | &minus;  | &#10003; | &#10003; &Dagger; | &minus;    | &#10003;        |
 | Other binary files | &#10003; | &#10003; | &#10003; | &minus;  | &#10003; | &#10003; | &minus; | &#10003;        |
 
 <!-- Hiding CC Libraries (considered beta) as per PM feedback.
@@ -57,7 +60,7 @@ The various file types have different degrees of support for the use cases and f
 | Videos        | &#10003; | &#10003;      | &minus;      | &#10003; | &#10003;   | &#10003; | &#10003;  |
 | CC Libraries  | &minus;  | &minus;       | &minus;      | &minus;  | &minus;    | &#10003; | &#10003;  |
 | PDF           | &#10003; | &#10003;      | &minus;      | &#10003; | &#10003;   | &#10003; | &#10003;  |
-| PSD           | &#10003; | &#10003;      | &minus;      | &#10003; | &#10003;   | &#10003; | &#10003;  |
+| PSD and PSB          | &#10003; | &#10003;      | &minus;      | &#10003; | &#10003;   | &#10003; | &#10003;  |
 | AI and INDD           | &#10003; | &#10003;      | &minus;      | &#10003; | &minus;   | &#10003; | &#10003;  |
 | Other binary files          |  &#10003;  | &#10003;      | &minus;      |  &#10003;  |&minus;   |  &#10003;  | &#10003;  |
 
@@ -72,7 +75,7 @@ The various file types have different degrees of support for the use cases and f
 | Videos        | &minus;  | &#10003; | &#10003;      |
 | CC Libraries  | &minus;  | &minus;  | &minus;       |
 | PDF           | &minus;  | &#10003; | &#10003;      |
-| PSD, AI, and INDD | &minus;  | &#10003; | &#10003;  |
+| PSD, PSB, AI, and INDD | &minus;  | &#10003; | &#10003;  |
 | Other binary files| &minus;  | &#10003; | &#10003;  |
 | DOC           | &minus; | &#10003;  | &#10003;      |
 | DOCX          | &minus; | &#10003;  | &#10003;      |
@@ -93,7 +96,8 @@ The various file types have different degrees of support for the use cases and f
 | Videos        | &#10003; | &minus;    | &#10003; | &#10003; | &#10003; |
 | CC Libraries  | &#10003; | &minus;    | &minus;  | &minus;  | &minus;  |
 | PDF           | &#10003; | &minus;    | &#10003; | &#10003; | &#10003; |
-| PSD, AI, and INDD           | &#10003; | &minus;    | &#10003; | &#10003; | &#10003; |
+| AI and INDD           | &#10003; | &minus;    | &#10003; | &#10003; | &#10003; |
+| PSD and PSB           | &#10003; | &#10003;    | &#10003; | &#10003; | &#10003; |
 | Other binary files          | &#10003; | &minus;    |&#10003; | &#10003; | &#10003; |
 
 Users of [!DNL Adobe Asset Link] can upload and check-in (upload a new version) files into the [!DNL Assets view] repository from the supported [!DNL Adobe Creative Cloud] desktop applications.
@@ -106,7 +110,7 @@ Users of [!DNL Adobe Asset Link] can upload and check-in (upload a new version) 
 | Videos        |          |
 | CC Libraries  |          |
 | PDF files     |          |
-| PSD           |          |
+| PSD, PSB           |          |
 | AI            |          |
 | INDD          |          |
 

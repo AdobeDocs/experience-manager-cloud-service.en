@@ -27,7 +27,7 @@ Through NIMU, the customer can use the pipeline at any moment, even if an AEM ve
 #### Update Activities
 
 The current AEM version can still be checked for each environment, as before, using the Cloud Manager UI Environments panel. The same quality gates that are used in the pipeline are used by Non-Intrusive Maintenance Updates, including the customer written tests.
-A Cloud Manager UI notification will be sent whenever a Non-Intrusive Maintenance Update is applied to the environments of your program. You can configure it to be also sent to your email.
+A [Cloud Manager UI notification](/help/implementing/cloud-manager/notifications.md) will be sent whenever a Non-Intrusive Maintenance Update is applied to the environments of your program. You can configure it to be also sent to your email.
 
 >[!NOTE]
 >
@@ -96,3 +96,11 @@ Usually, updates incur zero downtime, including for the authoring instance, whic
 This feature allows AEM to reference multiple repositories simultaneously. In a [rolling deployment](/help/implementing/deploying/overview.md#how-rolling-deployments-work), the new AEM version contains its own `/libs` (the TarMK based immutable repository). It is distinct from the older AEM version, although both reference a shared DocumentMK based mutable repository that contains areas like `/content` , `/conf` , `/etc` and others. 
 
 Because both the old and the new versions have their own versions of `/libs`, they can both be active during the rolling update. And, both can take on traffic until the old is fully replaced by the new.
+
+## Further Information {#further-information}
+
+For further details on related themes:
+
+* [Cloud Manager CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+* [Cloud Manager UI notification](/help/implementing/cloud-manager/notifications.md)
+* [the Architecture of Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md)

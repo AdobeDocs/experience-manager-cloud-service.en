@@ -326,7 +326,7 @@ To initialize the React-based Peregrine and CIF core components, create the requ
     - initializes them with a given configuration for Experience Platform and/or ACDS
     - subscribes to all events from Peregrine and forwards them to the events SDK
 
-    You can review the implementation details of the `EventCollectorContext` [here](https://github.com/adobe/aem-core-cif-components/blob/3d4e44d81fff2f398fd2376d24f7b7019f20b31b/extensions/experience-platform-connector/src/events-collector/EventCollectorContext.js).
+    You can review the implementation details of  `EventCollectorContext`. See [aem-core-cif-components on GitHub](https://github.com/adobe/aem-core-cif-components/blob/3d4e44d81fff2f398fd2376d24f7b7019f20b31b/extensions/experience-platform-connector/src/events-collector/EventCollectorContext.js).
 
 ### Build and deploy the updated AEM project
 

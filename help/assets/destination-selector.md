@@ -8,6 +8,9 @@ feature: Selectors
 ---
 # Micro-Frontend Destination Selector {#Overview}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 Micro-Frontend Destination Selector provides a user interface within your application that easily integrates with the [!DNL Experience Manager Assets as a Cloud Service] repository. You can search or browse to the appropriate folder within the [!DNL Experience Manager Assets as a Cloud Service] repository and upload assets from your application.
 
 The Micro-Frontend user interface is made available in your application experience using the Destination Selector package. Any updates to the package are automatically imported and the latest deployed Destination Selector loads automatically within your application.
@@ -265,10 +268,10 @@ It lets you create a folder in the destination folder of your [!DNL Adobe Experi
 
 Destination Selector lets you view the asset in four different views:
 
-* **![list view](assets/do-not-localize/list-view.png) [!UICONTROL List View]**: The list view displays scrollable files and folders in a single column.
-* **![grid view](assets/do-not-localize/grid-view.png) [!UICONTROL Grid View]**: The grid view displays scrollable files and folders in a grid of rows and columns.
-* **![gallery view](assets/do-not-localize/gallery-view.png) [!UICONTROL Gallery View]**: The gallery view displays files or folders in a center-locked horizontal list.
-* **![waterfall view](assets/do-not-localize/waterfall-view.png) [!UICONTROL Waterfall View]**: The waterfall view displays files or folders in the form of a Bridge.
+* ![list view](assets/do-not-localize/list-view.png) [!UICONTROL **List View**]: The list view displays scrollable files and folders in a single column.
+* ![grid view](assets/do-not-localize/grid-view.png) [!UICONTROL **Grid View**]: The grid view displays scrollable files and folders in a grid of rows and columns.
+* ![gallery view](assets/do-not-localize/gallery-view.png) [!UICONTROL **Gallery View**]: The gallery view displays files or folders in a center-locked horizontal list.
+* ![waterfall view](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Waterfall View**]: The waterfall view displays files or folders in the form of a Bridge.
 
 ### Info {#info}
 

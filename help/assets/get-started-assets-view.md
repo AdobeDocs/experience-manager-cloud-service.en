@@ -7,6 +7,9 @@ feature: Asset Management, Publishing, Collaboration, Asset Processing
 ---
 # Get started with Assets view {#assets-view-get-started}
 
+| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
+| ------------- | --------------------------- |---------|----|-----|
+
 <!-- TBD: Make links for these steps. -->
 
 Managing your digital assets using [!DNL Assets View] requires only three simple steps:
@@ -33,6 +36,10 @@ If you are part of different organizations, you can also change the organization
 To change your [!UICONTROL Experience Cloud preferences], Click [!UICONTROL Preferences].
 
 ![Preference to switch dark and light theme](assets/theme-change.png)
+
+>[!NOTE]
+>
+>If you navigate to Assets view and see a `Network Error` message, ensure that you execute the instructions mentioned in [Cross-Origin Resource Sharing (CORS) configuration](/help/headless/deployment/cross-origin-resource-sharing.md) article.
 
 ## [!DNL Assets View] use cases {#use-cases}
 
