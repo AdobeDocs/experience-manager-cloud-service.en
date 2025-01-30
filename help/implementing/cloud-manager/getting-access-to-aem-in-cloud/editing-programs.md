@@ -64,7 +64,7 @@ Deleting a sandbox program removes all environments and pipelines associated wit
 
    ![Delete program option](assets/delete-sandbox1.png)
 
-Alternatively, you can click https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg on your program's card from the Cloud Manager overview page and select **Delete Program**.
+Alternatively, you can click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) on your program's card from the Cloud Manager overview page and select **Delete Program**.
 
 ![Delete sandbox from program card](assets/delete-sandbox2.png)
 
