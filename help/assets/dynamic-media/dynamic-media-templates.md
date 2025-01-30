@@ -237,6 +237,9 @@ To copy the URL of the published template displayed in preview:
 1. Paste this URL in your browser tab and see your live template. Customize the template in real time by updating the required parameter's value (Key's value) in the URL directly as demonstrated in [step 2](#3) of **Preview and Publish** section.  
 1. Use this URL for rapid merchandising of your products or services. You can share this URL with your customers or integrate it into your website or any downstream third-party application to display the banner and make real-time updates to it to reflect the ongoing offers.
 
+Learn to create a Dynamic Media template step by step in this video.
+>[!VIDEO](https://video.tv.adobe.com/v/3443281)
+
 ## Make real-time updates to the template from the URL{#update-the-template-from-the-url}
 
 Editing parameters directly in the URL can be tedious. To simplify: 
