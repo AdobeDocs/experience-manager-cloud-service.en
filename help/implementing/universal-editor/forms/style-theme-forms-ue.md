@@ -2,7 +2,6 @@
 title: Customize theme and style for an Edge Delivery Services for AEM Forms
 description: Customize theme and style for an Edge Delivery Services for AEM Forms
 feature: Edge Delivery Services
-exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
 role: Admin, Architect, Developer
 ---
 
@@ -17,9 +16,8 @@ This document outlines the HTML Structure for various form components, helps you
 By the end of the article:
 
 * You build an understanding of the structure of the default CSS file included with Adaptive Forms Block. 
-* You build an understanding the HTML structure of form components provided by the Adaptive Forms Block, including general components and specific components like dropdowns, radio groups, and checkbox groups.
+* You build an understanding of the HTML structure of the form components provided by the Adaptive Forms Block, including general components and specific components like dropdowns, radio groups, and checkbox groups.
 * You learn how to style form fields based on field type and field names using CSS Selectors, allowing for consistent or unique styling based on requirements.
-
 
 ## Understanding Form Field Types
 
@@ -44,7 +42,7 @@ Understanding [fundamental CSS concepts](https://www.w3schools.com/css/css_intro
 
 The Adaptive Forms Block offers a standardized HTML structure, simplifying the process of selecting and styling form components:
 
-* **Update default styles**: You can modify the default styles of a form by editing the `/blocks/form/form.css file`. This file provides comprehensive styling for a form, supporting multi-step wizard forms. It emphasizes using custom CSS variables for easy customization, maintenance, and uniform styling across forms. For instructions on adding the Adaptive Forms Block to your project, refer to [create a form](/help/edge/docs/forms/create-forms.md).
+* **Update default styles**: You can modify the default styles of a form by editing the `/blocks/form/form.css file`. This file provides comprehensive styling for a form, supporting multi-step wizard forms. It emphasizes using custom CSS variables for easy customization, maintenance, and uniform styling across forms. <!--For instructions on adding the Adaptive Forms Block to your project, refer to [create a form](/help/edge/docs/forms/create-forms.md).-->
 
 * **Customization**: Use the default `forms.css` as a base and customize it to modify the look and feel of your form components, making it visually appealing and user-friendly. The file's structure encourages organization and maintains styles for forms, promoting consistent designs across your website.
 
@@ -139,8 +137,8 @@ All form fields, except for dropdowns, radio groups, and checkbox groups, has th
   
   ```
   
-  * `.{Type}-wrapper`: Targets the outer `div` element based on    the field type. For example, `.text-wrapper` targets all text    fields.
-  * `.field-{Name}`: Further selects the element based on the    specific field name. For example, `.field-first-name` targets    the "First Name" text field. While this selector can be used for   targeting elements with the field-{Name} class, it's important   to be cautious. In this specific case, it wouldn't be useful for styling input fields because it would target not only    the input itself but also the label and description elements. It's recommended to use more specific selectors like the ones you have for targeting text input fields (.text-wrapper   input).
+  * `.{Type}-wrapper`: Targets the outer `div` element based on the field type. For example, `.text-wrapper` targets all text fields.
+  * `.field-{Name}`: Further selects the element based on the specific field name. For example, `.field-first-name` targets the "First Name" text field. While this selector can be used for   targeting elements with the field-{Name} class, it's important   to be cautious. In this specific case, it wouldn't be useful for styling input fields because it would target not only the input itself but also the label and description elements. It's recommended to use more specific selectors like the ones you have for targeting text input fields (.text-wrapper   input).
   
   
   
@@ -154,6 +152,7 @@ All form fields, except for dropdowns, radio groups, and checkbox groups, has th
     border: 1px solid #ccc;
     padding: 8px;
     border-radius: 4px;
+    color: red;
   }
   
   /*Target all fields with name first-name*/
