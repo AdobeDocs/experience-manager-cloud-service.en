@@ -113,7 +113,7 @@ See the [Properties panel](#4) to reposition, resize, rotate or delete the layer
 
    >[!NOTE]
    >
-   > To use a font other than the default Arial font family, you need to upload and publish the font file to AEM Assets and Dynamic Media. If you have some old fonts in your instance, ensure to [reprocess](/help/assets/reprocessing-assets-view.md) to view them in the Template editor.
+   > To use a font other than the default Adobe Sans F2 font family, you need to upload and publish the font file to AEM Assets and Dynamic Media. If you have some old fonts in your instance, ensure to [reprocess](/help/assets/reprocessing-assets-view.md) to view them in the Template editor.
 
 ### Edit or delete a layer {#edit-or-delete-a-layer}
 
@@ -215,7 +215,7 @@ Execute these steps to preview and publish the template and copy the delivery UR
    1. Select an image layer, click ![](/help/assets/assets/dm-templates/add-image.svg), select an image from the asset selector, and click **Refresh**. 
 
    The template updates immediately, displaying the edited text and replacing the previous image with the new one. Additionally, the image parameter value reflects the new image path. Similarly, you can resize a layer by adjusting its values, and the changes are applied to the template in real time. <a id="2"></a>  
-1. Select only one **Hide Parameter** from the duplicates when multiple layers are grouped under the same Hide Parameter. 
+1. Select the hide parameter for [grouped layers](#group-layers) from the list to show or hide them together in the template. 
 1. **Optional:** Change the **Hide Parameter** value between 0 and 1 and click **Refresh** to see the changes. Layers with the same hide parameter hides or displays together. Similarly, you can control the layers' visibility from the URL.
 
    ![](/help/assets/assets/dm-templates/preview-publish-copy-delivery-url.png)
@@ -262,9 +262,6 @@ Edit the template by following these steps:
 ## Important points to note {#important-points-to-note}
 
 * After creating a template with parameterized image layers for dynamic updates, ensure that the images intended for future updates share the same dimensions as the parameterized images. This ensures the images fit perfectly within the layers without overflowing or leaving empty spaces. Currently, the template does not support automatic dimension adjustments to fit images into the layers.
-* References for all image assets used in the template are added to the template. This results in:
-   * Display of a warning message while deleting an associated asset.
-   * Publishing all associated assets while publishing the template.
 * There is no substring support in a text layer. User cannot apply different font properties on substring of a text layer.
 * Support of multiple Dynamic Media companies is not currently available with Dynamic Media Templates.
 * In case of copy or move, Destination Selector shows all the folders (including non-Dynamic Media synced folders). Also, currently, it does not display the Dynamic Media Template assets (both of these are limitations of destination selector).
