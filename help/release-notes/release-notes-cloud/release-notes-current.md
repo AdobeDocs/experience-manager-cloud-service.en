@@ -40,14 +40,6 @@ Have a look at the January 2025 Release Overview video for a summary of the feat
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-**[!DNL Edge Delivery Services] Page templates with Universal Editor authoring**
-
-Turn quickly any Edge Delivery page into a page template. This ability lets you start a new page with a pre-defined structure & content instead of a blank page. [Read more](/help/sites-cloud/authoring/universal-editor/templates.md).
-
-**[!DNL Edge Delivery Services] CSV Importer for publishing via an AEM instance**
-
-Manage your Edge Delivery spreadsheet data (for example, redirects) efficiently in your favorite spreadsheet tool and upload it to AEM via the new CSV importer. [Read more](/help/edge/wysiwyg-authoring/tabular-data.md#importing).
-
 **Content Fragment Editor Commenting now generally available**
 
 Easily collaborate with coworkers when authoring AEM Content Fragments by using the new and modernized commenting service in the AEM Content Fragment Editor. 
@@ -155,19 +147,9 @@ AEM Forms Document Generation APIs now support direct upload of generated PDF do
 
 * **[Base64 Encoded String Support for File Attachment](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)**: The File Attachment component in Adaptive Forms based on Core Components now includes an option to submit attached files as Base64-encoded strings.
 
-
-
-
 >[!IMPORTANT] 
 >
 > Interested in joining the Early Access Program for any Forms innovation? Send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) with the list of capabilities that you are interested in.## CIF Add-on {#cloud-services-cif}
-
-## CIF Add-on {#cif}
-
-### Bug fixes {#bug-fixes-cif}
-
-* Fixed UI tests to work properly with Core CIF components.
-* Resolved issue with category URL format not functioning as expected in the cloud instance.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
