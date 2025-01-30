@@ -84,7 +84,7 @@ The preferred editors for managing headless content in AEM are now:
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New features {#new-features}
+### New features in AEM Assets {#new-features-assets}
 
 **Dynamic Media templates**
 
@@ -98,13 +98,17 @@ Gain delivery insights for assets delivered through Dynamic Media, including ass
 
 ![dynamic renditions](/help/assets/assets/referrer.png)
 
-**AI-generated video captions** 
-
-AI-generated video captions in Adobe Dynamic Media use artificial intelligence to generate captions automatically for video content. This feature is designed to improve accessibility and enhance the user experience by providing accurate, real-time captions. Captions are generated from the original audio, any additional audio tracks, or extra captions provided in the "Captions and Audio" tab on the video properties page. With support for more than 60 languages, captions can be reviewed and previewed before publishing the video.
-
 **Dynamic Media Multi-audio and caption**
 
 [Multi-caption and multi-audio track support for videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) - You can now easily add multiple captions and multiple audio tracks to a primary video. This capability means that your videos are accessible to a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the captions and audio tracks from a single tab in the user interface.
+
+**Dynamic Adaptive Streaming over HTTP support**
+
+New protocol support launched (DASH - Dynamic Adaptive Streaming over HTTP) for Adaptive streaming in Dynamic Media video delivery (with CMAF enabled):
+
+* Adaptive streaming (DASH/HLS) ensures better user viewing experience for videos.
+
+* DASH is the international standard protocol for adaptive video streaming and is widely adopted in the industry
 
 **Asset relations**
 
@@ -113,6 +117,12 @@ The Assets View now supports viewing and editing asset relations in a simplified
 **Reprocess assets**
 
 Assets view now supports reprocessing assets available in a folder. You can select to either use the **Full Process** option or use advanced options, such as, default preview renditions, metadata, post-processing workflow, and processing profile.
+
+### Early Access features in AEM Assets {#early-access-features-assets}
+
+**AI-generated video captions** 
+
+AI-generated video captions in Adobe Dynamic Media use artificial intelligence to generate captions automatically for video content. This feature is designed to improve accessibility and enhance the user experience by providing accurate, real-time captions. Captions are generated from the original audio, any additional audio tracks, or extra captions provided in the "Captions and Audio" tab on the video properties page. With support for more than 60 languages, captions can be reviewed and previewed before publishing the video.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
