@@ -218,7 +218,7 @@ Execute these steps to preview and publish the template and copy the delivery UR
 1. Select the hide parameter for [grouped layers](#group-layers) from the list to show or hide them together in the template. 
 1. **Optional:** Change the **Hide Parameter** value between 0 and 1 and click **Refresh** to see the changes. Layers with the same hide parameter hides or displays together. Similarly, you can control the layers' visibility from the URL.
 
-   ![](/help/assets/assets/dm-templates/preview-publish-copy-delivery-url.png)
+   ![](/help/assets/assets/dm-templates-publish-status.png)
    You can also toggle **Include all parameters** to edit all of the displayed parameter values and see the updates in the template preview.
    <br>
 1. To publish the template on the preview page, click **Publish** and confirm to publish. Publish Complete message displays and the publish status updates to Published.
