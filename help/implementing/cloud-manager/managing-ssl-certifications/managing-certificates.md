@@ -56,7 +56,7 @@ A user must be a member of the **Business Owner** or **Deployment Manager** role
 
 >[!NOTE]
 >
->If you have two or more SAN certificates that cover the same SAN domain entry, if that domain is covered by one certificate and the other is updated, the latter is installed for the domain.
+>If two or more SAN certificates cover the same SAN domain entry, and one of them is updated, the system installs the updated certificate for the domain.
 >
 >See [Troubleshoot SSL Certificate Problems](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md#wrong-san-cert) for more information.
 
