@@ -40,7 +40,7 @@ A user must be a member of the **Business Owner** or **Deployment Manager** role
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
 1. In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to reveal the side menu. 
 1. Under the **Services** heading, click ![Lock closed icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL Certificates**. 
-1. In the row of the expired customer managed certificate that you want to update, click https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg at the far right, then click **View and Update**.
+1. In the row of the expired customer managed certificate that you want to update, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) at the far right, then click **View and Update**.
 
    ![Update an expired customer managed SSL certification](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
 
