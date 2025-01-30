@@ -49,11 +49,11 @@ Easily collaborate with coworkers when authoring AEM Content Fragments by using 
 
 Minimum supported AEM as a Cloud Service version for new Content Fragment Admin and Editor user interfaces is now 2023.8.13099. Earlier versions from before the general availability release of the new user interfaces are not supported anymore 
 
-### Prerelease capabilities in AEM Sites
+### Early Adopter Program {#sites-early-adopter}
+
+**Enhanced Content Fragments** 
 
 Enhanced [Content Fragment referencing with unique ID-based references](/help/headless/graphql-api/uuid-reference-upgrade.md), ensuring stable links that remain valid even when assets or fragments are moved, eliminating the need for updates or re-publishing. Current limitation: Page references are not yet supported with unique IDs. If pages are referenced in Content Fragments, this capability should not be used.
-
-### Early Adopter Program {#sites-early-adopter}
 
 **AEM REST OpenAPI for Content Fragment Delivery**
 
