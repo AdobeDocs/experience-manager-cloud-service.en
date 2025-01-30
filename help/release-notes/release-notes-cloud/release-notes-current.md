@@ -205,7 +205,7 @@ The more performant Java 21 **runtime** will be automatically deployed when a Ja
 >
 > Java 21 **runtime** will be gradually deployed to **all** environments (aside from those already built with Java 17 or 21, which already have Java 21 runtime), starting with sandboxes and dev/RDE in February, and then stage/production in April. 
 
-### Sandbox program support config pipelines {#sandbox-config-pipelines}
+### Sandbox programs support config pipelines {#sandbox-config-pipelines}
 
 Sandbox programs now support config pipelines, which can be configured in Cloud Manager to deploy yaml files persisted in git. 
 
