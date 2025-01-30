@@ -153,37 +153,9 @@ Adaptive Forms allows you use HTML email templates. HTML email templates enable 
 
 AEM Forms Document Generation APIs now support direct upload of generated PDF documents to Azure Blob Storage. This enhancement streamlines storage and retrieval, improving efficiency and integration with cloud workflows.
 
-
-
-
 * **[Base64 Encoded String Support for File Attachment](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)**: The File Attachment component in Adaptive Forms based on Core Components now includes an option to submit attached files as Base64-encoded strings.
 
-#### Interactive Communications and Communication APIs
 
-* **Interactive Communication Editor**: The Interactive Communication Editor is a user-friendly, graphical Communication design tool that simplifies the creation of personalized, data-driven correspondences and runs in any modern browser. It supports seamless data integration, intricate logic definition, and rich media integration, ensuring professional and compliant document, Communication, and template generation for various business needs. 
-
-   ![Interactive Communication Editor](/help/forms/assets/ic-editor.png)
-
-
-* **[PDF/A Compliance Enhancements](/help/forms/aem-forms-cloud-service-communications-introduction.md#convert-to-and-validate-pdfa-compliant-documents)**: You can now use Communication APIs to convert PDF documents to PDF/A formats (1a, 2a, 3a) for archival purposes while ensuring accessibility and verifying compliance with these standards.
-
-
-* **[Signature API (Document Assurance)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance)**: A new RESTful API in Communication APIs enables easy management of PDF signatures. It supports operations like:
-    * Clear Signature: Removes a signature from a specified field.
-    * Remove Signature Field: Deletes a specified Signature Field.
-
-
-<!-- 
-* **Hamburger Menu Layout in Adaptive Forms**: Adaptive Forms now offers a responsive hamburger menu layout for mobile devices. This collapsible menu organizes form sections, making navigation more 
-intuitive and improving the mobile form-filling experience.
-
-* **Masked Field with Eye Icon (Password Box Component)**: The Password Box is a text input field that masks the characters typed into it by displaying placeholder symbols. It allows users to securely input sensitive information, such as passwords and enables them to toggle visibility on demand using the eye icon.
-
--->
-
-## Automated Forms Conversion Service 
-
-* **[Convert PDF Forms to Core Components based Adaptive Forms](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms)**: You can now use the Automated Forms Conversion Service to transform PDF forms, AcroForms, or XFA-based forms into Core Components based Adaptive Forms. 
 
 
 >[!IMPORTANT] 
