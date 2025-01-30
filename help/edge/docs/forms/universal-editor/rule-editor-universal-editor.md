@@ -214,7 +214,7 @@ To write rules, perform the following steps:
   Once you have authored the form, write the first rule to show the `Additional Deduction` field only if the gross salary exceeds $50,000. To add a conditional rule:
 
   1. Open a form in Universal Editor for editing.
-  2. Select the **[!UICONTROL Gross Salary]** component in the content tree and select ![edit-rules](/help/forms/assets/edit-rules-icon.svg). 
+  1. Select the **[!UICONTROL Gross Salary]** component in the content tree and select ![edit-rules](/help/forms/assets/edit-rules-icon.svg). 
   ![Rule Editor example1](/help/edge/docs/forms/assets/rule-editor3.png)
   The visual Rule Editor interface appears.
   1. Click **[!UICONTROL Create]** to launch the Rule Editor.
