@@ -84,7 +84,7 @@ The preferred editors for managing headless content in AEM are now:
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New features {#new-features}
+### New features in AEM Assets {#new-features-assets}
 
 **Dynamic Media templates**
 
@@ -98,13 +98,17 @@ Gain delivery insights for assets delivered through Dynamic Media, including ass
 
 ![dynamic renditions](/help/assets/assets/referrer.png)
 
-**AI-generated video captions** 
-
-AI-generated video captions in Adobe Dynamic Media use artificial intelligence to generate captions automatically for video content. This feature is designed to improve accessibility and enhance the user experience by providing accurate, real-time captions. Captions are generated from the original audio, any additional audio tracks, or extra captions provided in the "Captions and Audio" tab on the video properties page. With support for more than 60 languages, captions can be reviewed and previewed before publishing the video.
-
 **Dynamic Media Multi-audio and caption**
 
 [Multi-caption and multi-audio track support for videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) - You can now easily add multiple captions and multiple audio tracks to a primary video. This capability means that your videos are accessible to a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the captions and audio tracks from a single tab in the user interface.
+
+**Dynamic Adaptive Streaming over HTTP support**
+
+New protocol support launched (DASH - Dynamic Adaptive Streaming over HTTP) for Adaptive streaming in Dynamic Media video delivery (with CMAF enabled):
+
+* Adaptive streaming (DASH/HLS) ensures better user viewing experience for videos.
+
+* DASH is the international standard protocol for adaptive video streaming and is widely adopted in the industry
 
 **Asset relations**
 
@@ -113,6 +117,12 @@ The Assets View now supports viewing and editing asset relations in a simplified
 **Reprocess assets**
 
 Assets view now supports reprocessing assets available in a folder. You can select to either use the **Full Process** option or use advanced options, such as, default preview renditions, metadata, post-processing workflow, and processing profile.
+
+### Early Access features in AEM Assets {#early-access-features-assets}
+
+**AI-generated video captions** 
+
+AI-generated video captions in Adobe Dynamic Media use artificial intelligence to generate captions automatically for video content. This feature is designed to improve accessibility and enhance the user experience by providing accurate, real-time captions. Captions are generated from the original audio, any additional audio tracks, or extra captions provided in the "Captions and Audio" tab on the video properties page. With support for more than 60 languages, captions can be reviewed and previewed before publishing the video.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -193,13 +203,13 @@ intuitive and improving the mobile form-filling experience.
 
 You can now build code with Java 21, which includes new features (e.g., pattern matching for switch statements, sealed classes) and performance improvements; Java 17 builds are newly supported as well. For configuration steps, including updating your Maven project and library versions, see the [Build environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) article.
 
-The more performant Java 21 **runtime** will be automatically deployed when a Java 17 or 21 build is detected. However, we recommend opting into the Java 21 runtime for environments built with Java 11, by emailing [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com). Learn about [Java 21 runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
+The more performant Java 21 **runtime** will be automatically deployed when a Java 17 or 21 build is detected. However, we also recommend opting into the Java 21 runtime for environments built with Java 11, by emailing [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com). Learn about [Java 21 runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
 
 >[!IMPORTANT] 
 >
 > Java 21 **runtime** will be gradually deployed to **all** environments (aside from those already built with Java 17 or 21, which already have Java 21 runtime), starting with sandboxes and dev/RDE in February, and then stage/production in April. 
 
-### Sandbox program support config pipelines {#sandbox-config-pipelines}
+### Sandbox programs support config pipelines {#sandbox-config-pipelines}
 
 Sandbox programs now support config pipelines, which can be configured in Cloud Manager to deploy yaml files persisted in git. 
 
