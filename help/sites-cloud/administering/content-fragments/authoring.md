@@ -352,7 +352,7 @@ In **Content Reference** fields you can:
 
 ##### Reference Local Assets {#reference-local-assets}
 
-To add a local asset, you can either:
+To reference a local asset, you can either:
 
 * drag and drop the new asset file directly (for example, from your file system) into the **Content Reference** field
 * use the **Add asset** action, then select either **Browse Assets** or **Upload** to open the appropriate selector for you to use:

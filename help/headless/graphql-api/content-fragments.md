@@ -1170,11 +1170,16 @@ The following is:
 The current limitations are:
 
 * GraphQL delivery supports only `repositoryId` and `assetId` (other asset metadata is not returned)
+
+  >[!NOTE]
+  >
+  >The full URL then needs to be constructed on the client side, based on the [Asset delivery API](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat).
+
 * Only *Approved* assets will be available for reference from the remote repositories
 * If an asset that is referenced is removed from the remote repository, this will result in a broken Content Fragment Asset reference.
 * All Delivery Asset Repositories to which the user has access, will be available for selection, the available list cannot be limited.
 * Both the AEM instance and the Remote Asset Repository instances must be the same version.
-* No Asset Metadata is exposed via the Management API and Delivery API. You have to use the Asset Metadata API to retrieve the asset metadata details 
+* No Asset Metadata is exposed via the [Management API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/) and [Delivery API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/). You have to use the Asset Metadata API to retrieve the asset metadata details. 
 
 ## GraphQL for AEM - Summary of Extensions {#graphql-extensions}
 
