@@ -53,7 +53,7 @@ Minimum supported AEM as a Cloud Service version for new Content Fragment Admin 
 
 **Enhanced Content Fragments** 
 
-Enhanced [Content Fragment referencing with unique ID-based references](/help/headless/graphql-api/uuid-reference-upgrade.md), ensuring stable links that remain valid even when assets or fragments are moved, eliminating the need for updates or re-publishing. Current limitation: Page references are not yet supported with unique IDs. If pages are referenced in Content Fragments, this capability should not be used.
+Enhanced [Content Fragment referencing with unique ID-based references](/help/headless/graphql-api/uuid-reference-upgrade.md), helping to ensure GraphQL queries for individual content fragments can remain stable even if the fragment was moved to another location. This is now possible with "ByID" queries. While paths can change, potentially breaking "ByPath" queries, UUIDs are stable. The new IDs can also be returned as properties in any query or other applicable API request. Current limitation (2025.1): Page references are not yet supported with unique IDs. If pages are referenced in Content Fragments, this capability should not be used. The limitation is planned to be removed in the next AEM as a Cloud Service release. 
 
 **AEM REST OpenAPI for Content Fragment Delivery**
 
