@@ -79,9 +79,7 @@ Manage publication lets you publish or unpublish content to and from the selecte
 
 1. Click **Next** to continue. 
 1. In the **Scope** tab, use the [Add Content](#add-content) option to add more content for publishing. For example, you can add more Forms or Document of Record files. 
-
     ![scope tab](/help/forms/assets/scope-tab.png)
-
 1. Click **[UICONTROL Publish]** to publish the forms and related assets and successful message appears.
 
     ![publish successful message](/help/forms/assets/publish-successful.png)
