@@ -121,8 +121,8 @@ Execute these steps to edit or delete a canvas layer:
 
 1. Click ![](/help/assets/assets/dm-templates/show-layers-list.svg) and select the layer either on the canvas or from the Layers list.
 1. Click **more options** (![](/help/assets/assets/dm-templates/three-dots.svg)) to edit or delete the layer. 
-1. Click **Delete** to delete the layer. 
-1. Click **Edit** to edit the layer using the [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer).
+1. Click **[!UICONTROL Delete]** to delete the layer. 
+1. Click **[!UICONTROL Edit]** to edit the layer using the [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer).
 ![](/help/assets/assets/dm-templates/edit-delete-layer.png)
 
 ### Properties Panel{#properties-panel}
@@ -146,7 +146,7 @@ See these common layer editing actions to edit a text or an image layer:
 * **Reposition the layer:** Drag the layer to move it anywhere on the canvas. This action updates the X and Y values in the properties panel.
 * **Resize the layer:** Select the layer and drag its edge handles to resize it. This action updates the W (width) and H (height) values in the properties panel.
 * **Rotate the layer:** Drag the square handle placed vertically above the layer to rotate it around its center. This action updates the angle values in the properties panel. 
-* **Delete the layer:** Press **Backspace** or **delete** and then click **Confirm** to delete a selected layer.
+* **Delete the layer:** Press **Backspace** or **delete** and then click **[!UICONTROL Confirm]** to delete a selected layer.
 
 #### Text formatting options{#text-formatting-options-on-properties-panel}
 
@@ -161,7 +161,7 @@ After creating a template with multiple layers of images and texts, parameterise
 
 To parameterise a layer:
 
-1. click ![](/help/assets/assets/dm-templates/show-layers-list.svg), select a layer and click **Parameters**. The **Parameters** panel displays.
+1. click ![](/help/assets/assets/dm-templates/show-layers-list.svg), select a layer and click **[!UICONTROL Parameters]**. The **[!UICONTROL Parameters]** panel displays.
 1. Toggle **[!UICONTROL Include Parameter]** to parameterise a property. See [this](#parameterisation-options-or-allowed-parameters) to know the property's behaviour after parameterisation.
 1. **Optional:** Rename the parameter name. A parameter name has layer name followed by a suffix. For a selected layer all its parameterized properties share the same layer name followed by a varying suffix. Rename the layer name by following the semantic naming convention so that when you include the parameter in the URL, the parameter name self explains about the layer's content or its purpose.
 1. Click **[!UICONTROL Save]**.
