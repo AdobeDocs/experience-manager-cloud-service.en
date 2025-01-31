@@ -97,7 +97,7 @@ Execute these steps to add images to the canvas:
 
 1. Click ![](/help/assets/assets/dm-templates/add-image.svg) to display the [Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) panel. The panel displays the images in your AEM Assets instance that are synced to Dynamic Media. 
 1. Browse the panel or use keywords in the search bar to find a specific image.
-1. Drag and drop an image on the canvas to use it. See the [Properties panel](#4) for resizing or repositioning a layer on the canvas.
+1. Drag and drop an image on the canvas to use it. See the [Properties panel](#reposition-resize-delete-a-layer) for resizing or repositioning a layer on the canvas.
 ![](/help/assets/assets/dm-templates/add-image-to-canvas.png)
 
 ### Add text layers to the canvas{#add-text-to-the-canvas}
@@ -109,7 +109,7 @@ Execute these steps to add text layers to the canvas:
 1. Enable **Smart Text Resize** in the Properties panel to  adjust the text length and font size automatically to fit in the designated area optimally. 
 ![](/help/assets/assets/dm-templates/add-text-layer.png)
 
-See the [Properties panel](#4) to reposition, resize, rotate or delete the layer. Format your text to your desired font, size, color, style, alignment (in the layer) by changing their values in the respective fields under the **Text** section of the panel.
+See the [Properties panel](#reposition-resize-delete-a-layer) to reposition, resize, rotate or delete the layer. Format your text to your desired font, size, color, style, alignment (in the layer) by changing their values in the respective fields under the **Text** section of the panel.
 
    >[!NOTE]
    >
@@ -122,7 +122,7 @@ Execute these steps to edit or delete a canvas layer:
 1. Click ![](/help/assets/assets/dm-templates/show-layers-list.svg) and select the layer either on the canvas or from the Layers list.
 1. Click **more options** (![](/help/assets/assets/dm-templates/three-dots.svg)) to edit or delete the layer. 
 1. Click **Delete** to delete the layer. 
-1. Click **Edit** to edit the layer using the [Properties panel](#4).
+1. Click **Edit** to edit the layer using the [Properties panel](#reposition-resize-delete-a-layer).
 ![](/help/assets/assets/dm-templates/edit-delete-layer.png)
 
 ### Properties Panel{#properties-panel}
@@ -137,7 +137,7 @@ This panel displays the position of the layer's center point on the canvas plane
 ![](/help/assets/assets/dm-templates/properties-panel.png)
 
 From the properties panel of a layer, select another layer on the canvas to navigate to its properties panel.
-<a id="4"></a> 
+ 
 
 #### Reposition, resize, rotate or delete a layer{#reposition-resize-delete-a-layer}
 
@@ -159,7 +159,7 @@ Format your text to your desired font, size, color, style, alignment (in the lay
 
 After creating a template with multiple layers of images and texts, parameterise the selected layers. When a layer or its property is parameterised, it gets a key-value pair (also called as parameter). This parameter can be included in the template URL to update the layer's position, size or content in real time resulting in template customisation in no time.
 
-To parameterise a layer: <a id="1"></a> 
+To parameterise a layer:
 
 1. click ![](/help/assets/assets/dm-templates/show-layers-list.svg), select a layer and click **Parameters**. The **Parameters** panel displays.
 1. Toggle **Include Parameter** to parameterise a property. See [this](#parameterisation-options-or-allowed-parameters) to know the property's behaviour after parameterisation.
@@ -196,25 +196,25 @@ Another way to keep your templates flexible, is by utilising a single parameter 
 
 Follow these steps to assign the same name to the hide parameters (![](/help/assets/assets/dm-templates/Visibility-icon.svg)) of multiple layers, allowing you to hide or show them simultaneously.
 
-1. Navigate to the [Parameters panel](#1) of a layer.
+1. Navigate to the [Parameters panel](#parameterise-a-layer) of a layer.
 1. Toggle the **Hide** Parameter if not parameterised earlier.
 1. **Optional:** Rename the Hide Parameter.
 1. Copy the Hide Parameter name. 
 1. Go to the Parameter panel of other layers by selecting them from the canvas and toggle their **Hide** Parameter if not parameterised.
 1. Replace their **Hide Parameter** name with the copied name.
 1. Click **Save** to group the layers. 
-1. Execute step 3 and then 4 in [Preview and Publish](#2) section to see your changes. 
+1. Execute step 3 and then 4 in [Preview and Publish](#preview-and-publish-template-and-copy-template-deliver-url) section to see your changes. 
 
 ## Preview and publish the template to copy the delivery URL{#preview-and-publish-template-and-copy-template-deliver-url}
 
 Execute these steps to preview and publish the template and copy the delivery URL:
 
-1. On the canvas page, click **Preview**. You can also navigate to **Assets View > Dynamic Media Assets >** find and select your template **>** click **Edit Template >** click **Preview**. The preview page displays the template, its parameters (parameterized layers and properties), publish status, and the **Publish** option. <a id="3"></a> 
+1. On the canvas page, click **Preview**. You can also navigate to **Assets View > Dynamic Media Assets >** find and select your template **>** click **Edit Template >** click **Preview**. The preview page displays the template, its parameters (parameterized layers and properties), publish status, and the **Publish** option.
 1. Select parameters from **Template Parameters** panel to edit their values and instantly update the content, size, position, or text formatting of the corresponding template layer in the preview. For example: 
    1. Select a text layer and edit its text or 
    1. Select an image layer, click ![](/help/assets/assets/dm-templates/add-image.svg), select an image from the asset selector, and click **Refresh**. 
 
-   The template updates immediately, displaying the edited text and replacing the previous image with the new one. Additionally, the image parameter value reflects the new image path. Similarly, you can resize a layer by adjusting its values, and the changes are applied to the template in real time. <a id="2"></a>  
+   The template updates immediately, displaying the edited text and replacing the previous image with the new one. Additionally, the image parameter value reflects the new image path. Similarly, you can resize a layer by adjusting its values, and the changes are applied to the template in real time. 
 1. Select the hide parameter for [grouped layers](#group-layers) from the list to show or hide them together in the template. 
 1. **Optional:** Change the **Hide Parameter** value between 0 and 1 and click **Refresh** to see the changes. Layers with the same hide parameter hides or displays together. Similarly, you can control the layers' visibility from the URL.
 
@@ -234,7 +234,7 @@ The selected parameters on the **Preview** page become the URL parameters in the
 To copy the URL of the published template displayed in preview:
 
 1. Click **Copy URL**. The **Copy URL** dialog box displays. Select and copy the displayed URL. Observe that the first parameter in the URL starts after a question mark **(?)** and a key-value pair starts with **$** and ends with **&**. The key and value are separated by an equals sign **(=)**, with the key on the left and the value on the right. 
-1. Paste this URL in your browser tab and see your live template. Customize the template in real time by updating the required parameter's value (Key's value) in the URL directly as demonstrated in [step 2](#3) of **Preview and Publish** section.  
+1. Paste this URL in your browser tab and see your live template. Customize the template in real time by updating the required parameter's value (Key's value) in the URL directly as demonstrated in [step 2](#preview-and-publish-template-and-copy-template-deliver-url) of **Preview and Publish** section.  
 1. Use this URL for rapid merchandising of your products or services. You can share this URL with your customers or integrate it into your website or any downstream third-party application to display the banner and make real-time updates to it to reflect the ongoing offers.
 
 Learn to create a Dynamic Media template step by step in this video.
