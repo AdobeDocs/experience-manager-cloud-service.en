@@ -1,6 +1,7 @@
 ---
 title: How to manage Dynamic Media templates?
 description: Learn how to create Dynamic Media templates using a WYSIWYG template editor and include multiple images and text layers to quickly create banners and flyers and use them in downstream applications.
+hide: yes
 role: User
 ---
 # Dynamic Media templates{#dynamic-media-templates}
