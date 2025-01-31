@@ -113,7 +113,7 @@ Beyond the required entitlements, 99.99% SLA has additional requirements for use
 
 ## Access your program {#accessing}
 
-1. When you see your program card on the landing page, click https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg to view the menu options available to you.
+1. When you see your program card on the landing page, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) to view the menu options available to you.
 
    ![Program overview](assets/program-overview.png)
 
