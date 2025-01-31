@@ -56,9 +56,16 @@ You can use the document generation APIs to create a PDF document that is based 
 ![Create PDF documents](assets/outPutPDF_popup.png)
 Figure: Typical workflow to create a PDF document
 
+The document generation API returns the generated PDF document. You can also optionally upload the generated PDFs to Azure Blob Storage.
+
+<span class="preview"> Uploading the generated PDFs using document generation API to Azure Blob Storage capability is under [Early Adopter Program](/help/forms/early-access-ea-features.md). You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+
+
 ### Create PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL) document {#create-PS-PCL-ZPL-documents}
 
 You can use document generation APIs to create PostScript (PS), Printer Command Language (PCL), and Zebra Printing Language (ZPL) document that is based on an XDP form design or PDF document. These APIs help to merge a form design with form data to generate a document. You can save the document to a file and develop a custom process to send it to a printer.
+
+
 
 <!-- ### Processing batch data to create multiple documents
 
