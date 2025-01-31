@@ -77,12 +77,12 @@ Manage publication lets you publish or unpublish content to and from the selecte
          * **Now**: Publish forms immediately 
          * **Later**: Publish forms based on the **Activation date** or time 
 
-2. Click **Next** to continue. 
-3. In the **Scope** tab, use the [Add Content](#add-content) option to add more content for publishing. For example, you can add more Forms or Document of Record files. 
+1. Click **Next** to continue. 
+1. In the **Scope** tab, use the [Add Content](#add-content) option to add more content for publishing. For example, you can add more Forms or Document of Record files. 
 
     ![scope tab](/help/forms/assets/scope-tab.png)
 
-4. Click **[UICONTROL Publish]** to publish the forms and related assets and successful message appears.
+1. Click **[UICONTROL Publish]** to publish the forms and related assets and successful message appears.
 
     ![publish successful message](/help/forms/assets/publish-successful.png)
 
@@ -95,15 +95,15 @@ Publishing to Experience Manager Forms lets you further add more content (forms 
 
     ![Add content](/help/forms/assets/add-content.png)
 
-2. Select the form from the **Select Path** screen. You can add multiple forms from a folder or add multiple folders at a time. But you cannot add forms from multiple folders at a time. 
+1. Select the form from the **Select Path** screen. You can add multiple forms from a folder or add multiple folders at a time. But you cannot add forms from multiple folders at a time. 
 
     ![Add content](/help/forms/assets/add-assets.png)
 
-3. To configure the references to publish or not publish for a form, select the form and click **[!UICONTROL Published References]**.  
+1. To configure the references to publish or not publish for a form, select the form and click **[!UICONTROL Published References]**.  
 
     ![published references](/help/forms/assets/published-references.png)
 
-4. In the **Published References** dialog box, uncheck the assets you plan to not-publish and click **[!UICONTROL Done]**. 
+1. In the **Published References** dialog box, uncheck the assets you plan to not-publish and click **[!UICONTROL Done]**. 
     ![published references dialog](/help/forms/assets/published-references-dialog.png)
 
 <!--
@@ -152,9 +152,9 @@ Along with allowing you to publish or unpublish forms at a later date and time, 
 1. Click **[!UICONTROL Next]**. 
 1. In the **Scope** tab, **[!UICONTROL Add Content]** (if necessary). 
     ![Manage Publication add content later](/help/forms/assets/publish-later-add-content.png)
-2. Click **[!UICONTROL Next]**. 
-3. (Optional) In the **Workflows** tab, specify a **[!UICONTROL Workflow title]**. 
-4. Click **[!UICONTROL Publish Later]**. 
+1. Click **[!UICONTROL Next]**. 
+1. (Optional) In the **Workflows** tab, specify a **[!UICONTROL Workflow title]**. 
+1. Click **[!UICONTROL Publish Later]**. 
 
      ![Manage Publication workflow](/help/forms/assets/manage-publication-workflows.png)
 
