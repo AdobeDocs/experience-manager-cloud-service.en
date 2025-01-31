@@ -6,8 +6,8 @@ feature: Adaptive Forms
 feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager
 role: User, Developer
 level: Intermediate
+exl-id: 6ade40f1-bad5-4f5e-aa0e-84b7c6a82e02
 ---
-
 # ​Manage Publication in Experience Manager Forms
 
 As an Adobe Experience Manager (AEM) Forms administrator, you can publish forms from your author instance to Experience Manager Forms. You also have the option to schedule the publication of a form or folder for a later date or time. Once published, users can access and fill out the forms.
@@ -175,4 +175,4 @@ There are multiple ways to determine the publishing status:
 
 * Use the timeline view to determine the publication status. 
 
-* Use the page information menu in Adaptive Forms editor.  
+* Use the page information menu in Adaptive Forms editor.
