@@ -23,7 +23,7 @@ Through a simple configuration, a content author can now enable progressive web 
 
 >[!IMPORTANT]
 >
->The progressive web app (PWA) features for AEM Sites has been deprecated.
+>The progressive web app (PWA) features for AEM Sites [have been deprecated.](/help/release-notes/release-notes-cloud/release-notes-current.md#pwa-features)
 >
 >Existing projects using this feature will continue to be supported, but new projects should not use this feature.
 
