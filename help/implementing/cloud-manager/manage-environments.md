@@ -188,9 +188,9 @@ If you have activated additional publish regions, you can check the status of th
 
 Alternatively you can access the same information from the **Environments** tab.
 
-1. On the **Overview** page, select the **Environments** tab.
+1. On the **Overview** page, click ![Data icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Environments**.
 
-1. On the **Environments** tab, select the environment you want to query in the left side menu.
+1. On the **Environments** page, select the environment you want to query in the left side menu.
 
 1. After an environment is selected:
    
@@ -300,7 +300,7 @@ This option is also available from the **Environment** tab of the **Overview** w
 
       ![Login locally](assets/environ-login-locally.png)
 
-   * From the left side panel, click **Environments**. On the **Environments** page, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), then click **Local Login**.
+   * From the left side panel, click ![Data icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Environments**. On the **Environments** page, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), then click **Local Login**.
 
       ![Login locally from Environments tab](assets/environ-login-locally-2.png)
 
@@ -316,7 +316,7 @@ Custom domain names are supported in Cloud Manager for Sites programs for both p
 
 An IP Allow List is supported in Cloud Manager for author, publish, and preview services for Sites programs.
 
-To manage IP Allow Lists, navigate to the **Environments** tab of the **Overview** page of your program. Click an individual environment so you can manage its details.
+To manage IP Allow Lists, navigate to the ![Data icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Environments** page of the **Overview** page of your program. Click an individual environment so you can manage its details.
 
 ### Apply an IP Allow List {#apply-ip-allow-list}
 
