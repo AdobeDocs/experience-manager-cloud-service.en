@@ -8,7 +8,7 @@ role: User, Developer
 level: Intermediate
 ---
 
-# ​Manage publication in Experience Manager Forms
+# ​Manage Publication in Experience Manager Forms
 
 As an Adobe Experience Manager Forms administrator, you can publish forms from your author instance to Experience Manager Forms. You can schedule to publish a form or folder at a later date or time. Once published, the users can access and fill the forms. 
 
