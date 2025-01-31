@@ -72,7 +72,7 @@ The preferred editors for managing headless content in AEM are now:
 
 #### PWA Features {#pwa-features}
 
-[The progressive web app (PWA) features](/help/sites-cloud/authoring/sites-console/enable-pwa.md) for AEM Sites are now deprecated for new projects starting with release 2025.1.0. This feature remains supported for existing projects, but should not be used for new projects
+[The progressive web app (PWA) features](/help/sites-cloud/authoring/sites-console/enable-pwa.md) for AEM Sites are deprecated for new projects starting with release 2025.1.0. This feature remains supported for existing projects, but should not be used for new projects
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
