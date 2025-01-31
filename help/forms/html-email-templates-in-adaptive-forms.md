@@ -29,7 +29,7 @@ Here is a quick overview of the steps involved:
 
 ## Configure an HTML template for an adaptive form
 
-You can set up an Adaptive Form to send an email upon submission using the [**Send Email** submit action](/help/forms/configure-submit-action-send-email.md). The action provides two methods for configuring an HTML template:
+You can set up an Adaptive Form to send an email upon submission using the [**Send email** submit action](/help/forms/configure-submit-action-send-email.md). The action provides two methods for configuring an HTML template:
 
 ### Option 1: Select a File Containing the HTML Template
 
@@ -37,11 +37,14 @@ Before proceeding, ensure that you have uploaded the HTML template to your AEM F
 
 1. Open the Adaptive Form for editing.
 1. Go to the **Content Browser**, select the **Guide Container**, and tap the properties icon. A dialog box with title `Adaptive Form Container`  appears.
-1. Go to the **Submission** tab and select the **Send Email** submit action.
+1. Go to the **Submission** tab and select the **Send email** submit action.
+
+    ![Send email submit action](/help/forms/assets/send-email-action.png)
+
 1. Enable the **Use external template** option. 
 1. Enable the **Use HTML template** option. 
 1. Click the folder icon for the External Template Path option and browse to select your HTML template.
-1. Click Done to save the configuration.
+1. Click **Done** to save the configuration.
 
 Your HTML template is now configured for the Adaptive Form.
 
@@ -49,15 +52,14 @@ Your HTML template is now configured for the Adaptive Form.
 
 1. Open the Adaptive Form for editing.
 1. Go to the **Content Browser**, select the **Guide Container**, and tap the properties icon. A dialog box with title `Adaptive Form Container`  appears.
-1. Go to the **Submission** tab and select the **Send Email** submit action.
-1. Enable the **Use external template** option. 
+1. Go to the **Submission** tab and select the **Send email** submit action.
 1. Enable the **Use HTML template** option. 
 1. Type or paste your HTML code directly into the provided **Email Template** box.
 
 
 ## Configure a plain-text template for an adaptive form
 
-You can set up an Adaptive Form to send an email upon submission using the [**Send Email** submit action](/help/forms/configure-submit-action-send-email.md). The action provides two methods for configuring a plain-text template:
+You can set up an Adaptive Form to send an email upon submission using the [**Send email** submit action](/help/forms/configure-submit-action-send-email.md). The action provides two methods for configuring a plain-text template:
 
 ### Option 1: Select a File Containing the Template
 
@@ -65,7 +67,7 @@ Before proceeding, ensure that you have uploaded the HTML template to your AEM F
 
 1. Open the Adaptive Form for editing.
 1. Go to the **Content Browser**, select the **Guide Container**, and tap the properties icon. A dialog box with title `Adaptive Form Container`  appears.
-1. Go to the **Submission** tab and select the **Send Email** submit action.
+1. Go to the **Submission** tab and select the **Send email** submit action.
 1. Enable the **Use external template** option. 
 1. Click the folder icon for the **External Template Path** option and browse to select your plain-text template.
 1. Click Done to save the configuration.
@@ -76,7 +78,7 @@ Your template is now configured for the Adaptive Form.
 
 1. Open the Adaptive Form for editing.
 1. Go to the **Content Browser**, select the **Guide Container**, and tap the properties icon. A dialog box with title `Adaptive Form Container`  appears.
-1. Go to the **Submission** tab and select the **Send Email** submit action.
+1. Go to the **Submission** tab and select the **Send email** submit action.
 1. Type or paste your plain-text template code directly into the provided **Email Template** box.
 
 ## Use Form Data in Your Email Templates
@@ -147,8 +149,6 @@ Here's an example of a plain-text email template:
     Your Team
 
 ```
-
-Replace the placeholders (${name}, ${email}, etc.) with the corresponding form field names in your Adaptive Form.
 
 ## Best Practices for HTML Email Templates
 
