@@ -3,6 +3,8 @@ title: Getting Started with Edge Delivery Services for AEM Forms in Universal Ed
 description: This tutorial helps get you up-and-running with a new Adobe Experience Manager Forms (AEM) project. In ten to twenty minutes, you will have created your own Edge Delivery Services Forms in Universal Editor.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
+hide: yes
+hidefromtoc: yes
 ---
 
 # Getting Started with Edge Delivery Services for AEM Forms using Universal Editor (WYSIWYG) 
