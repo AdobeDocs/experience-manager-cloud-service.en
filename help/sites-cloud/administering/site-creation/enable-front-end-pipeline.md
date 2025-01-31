@@ -60,3 +60,14 @@ Now, your site is ready to use the front-end pipeline. To learn more about the f
 * [Using the Site Rail to Manage Your Site Theme](site-rail.md)
 * [Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md) - This documentation journey gives you and beginning-to-end overview of the process of quickly deploying a site using the front-end pipeline and the Quick Site Creation tool.
 * [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) - This document describes the front-end pipeline in the context of the full-stack and web tier pipelines.
+
+## Front-End Pipeline and Custom Domains {#custom-domains}
+
+As described in the [Technical Details](#technical-details) section, activating the Front-End Pipeline feature for a site creates a `SiteConfig` and `HtmlPageItemsConfig` nodes below `/conf/<site-name>/sling:configs`.
+
+If you wish to use [Cloud Manager's custom domains feature](/help/implementing/cloud-manager/custom-domain-names/introduction.md) for your site along with the Front End Pipeline, additional properties must be added to these nodes.
+
+1. Set the `customFrontendPrefix` property in `SiteConfig` for the site.
+1. This updates the `prefixPath` value of the `HtmlPageItemsConfig` with the custom domain.
+
+Pages for the site then reference theme artifacts from that updated URL.
