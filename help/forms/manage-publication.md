@@ -14,7 +14,7 @@ As an Adobe Experience Manager Forms administrator, you can publish forms from y
 
 In the Experience Manager Forms interface, you can publish a form using the:
 * [Publish option](#publish-forms-using-the-publish-option) 
-* [Manage Publication option](#publishunpublish-forms-using-the-manage-publication-option)
+* [Manage Publication option](#publish-forms-using-the-manage-publication-option)
 
 If you make subsequent modifications to the original forms or folder in Experience Manager Forms, the changes are not reflected in the **Publish** instance until you republish from Experience Manager Forms. It ensures that work-in-progress changes are not available in the **Publish** instance. Only changes that are published by an administrator are available in the **Publish** instance.
 
@@ -34,7 +34,7 @@ The **Publish** option lets you immediately publish a form. To publish an Experi
 
 ### Unpublish the form
 
-After successfully publishing the form and its related assets, you can even unpublish them using the **[!UICONTROL Unpublish]** button on the toolbar. To unpublish form:
+After successfully publishing the form using the **Publish** option and its related assets, you can even unpublish them using the **[!UICONTROL Unpublish]** button on the toolbar. To unpublish form:
 
 1. To unpublish the form and its related assets, select the form and click **[!UICONTROL Unpublish]** from the toolbar
 
@@ -54,9 +54,9 @@ Manage publication lets you publish or unpublish content to and from the selecte
 1. From the Experience Manager Forms console, navigate to the parent folder and select a form that you want to publish. 
 1. Click **[!UICONTROL Manage Publication]** option from the toolbar.  
 
-    ![Manage Publication option]() 
+    ![Manage Publication option](/help/forms/assets/manage-publication-option.png) 
 
-    The **Manage Publication (Publish)** interface appears:
+    The **Manage Publication** interface appears:
 
     ![Manage publication](/help/forms/assets/manage-publication.png)
 
@@ -77,35 +77,36 @@ Manage publication lets you publish or unpublish content to and from the selecte
          * **Now**: Publish forms immediately 
          * **Later**: Publish forms based on the **Activation date** or time 
 
-1. Click **Next** to continue. 
-1. In the **Scope** tab, use the [Add Content](#add-content) options to add more content for publishing. For example, you can add more Forms or Document of Record files. 
+2. Click **Next** to continue. 
+3. In the **Scope** tab, use the [Add Content](#add-content) option to add more content for publishing. For example, you can add more Forms or Document of Record files. 
 
     ![scope tab](/help/forms/assets/scope-tab.png)
 
-    Use [Include Folder Settings](#include-folder-settings) to filter the folder content for publishing.
+4. Click **[UICONTROL Publish]** to publish the forms and related assets and successful message appears.
 
-1. Click **[UICONTROL Publish]** to publish the forms and related assets. 
+    ![publish successful message](/help/forms/assets/publish-successful.png)
 
-### Add Content 
 
-Publishing to Experience Manager Forms lets you further add more content (forms, assets and folders) to the publishing list. You can add more forms, assets or folders to the list from the formsanddocuments folder. But you cannot add assets from multiple folders at a time. To add more assets for publishing:
+### Add content 
+
+Publishing to Experience Manager Forms lets you further add more content (forms and folders) to the publishing list. You can add more forms or folders to the list from the `formsanddocuments` folder. But you cannot add forms from multiple folders at a time. To add more forms for publishing:
 
 1. Click **Add Content** button to add more content. 
 
     ![Add content](/help/forms/assets/add-content.png)
 
-1. Select the asset from the **Select Asset** screen. You can add multiple assets from a folder or add multiple folders at a time. But you cannot add assets from multiple folders at a time. 
+2. Select the form from the **Select Path** screen. You can add multiple forms from a folder or add multiple folders at a time. But you cannot add forms from multiple folders at a time. 
 
     ![Add content](/help/forms/assets/add-assets.png)
 
-1. To configure the references to publish or not publish for a form or other assets, select the form or the asset and click **[!UICONTROL Published References]**.  
+3. To configure the references to publish or not publish for a form, select the form and click **[!UICONTROL Published References]**.  
 
     ![published references](/help/forms/assets/published-references.png)
 
-1. In the **Published References** dialog box, uncheck the assets you plan to not-publish and click **[!UICONTROL Done]**. 
+4. In the **Published References** dialog box, uncheck the assets you plan to not-publish and click **[!UICONTROL Done]**. 
     ![published references dialog](/help/forms/assets/published-references-dialog.png)
 
-
+<!--
 ### Include Folder Settings
 By default, publishing a folder to Experience Manager Forms publishes all the assets, subfolders, and their references. To filter the folder for publishing:
 
@@ -127,11 +128,12 @@ By default, publishing a folder to Experience Manager Forms publishes all the as
         Selecting the **[!UICONTROL Include folder contents]** checkbox enables the **[!UICONTROL Include only immediate folder contents]** checkbox for selection.
 
         * If you select both options, all the forms and assets of the selected folder, subfolders (empty), and references are published. The forms and assets of the subfolders are not published.
+        * -->
 
 
-## Publish or unpublish a form later 
+### Publish or unpublish a form later 
 
-Along with allowing you to publish or unpublish forms at a later date and time, the publish or unpublish later option also allows to configure a workflow. The forms are published or unoublished after completion of the workflow. To schedule a form for publishing or unpublishing: 
+Along with allowing you to publish or unpublish forms at a later date and time, the publish or unpublish later option also allows to configure a workflow. The forms are published or unpublished after completion of the workflow. To schedule a form for publishing or unpublishing: 
 
 1. From the Experience Manager Forms console, navigate to the parent folder and select the form that you want to schedule for publishing. 
 1. Click **[!UICONTROL Manage Publication]** option from the toolbar. 
@@ -149,14 +151,14 @@ Along with allowing you to publish or unpublish forms at a later date and time, 
 1. Select an **[!UICONTROL Activation date]** and specify the date and time. 
 1. Click **[!UICONTROL Next]**. 
 1. In the **Scope** tab, **[!UICONTROL Add Content]** (if necessary). 
-1. In the **Include Folder Settings**, filter the folders. (if required).
-1. Click **[!UICONTROL Next]**. 
-1. (Optional) In the **Workflows** tab, specify a **[!UICONTROL Workflow title]**. 
-1. Click **[!UICONTROL Publish Later]**. 
+    ![Manage Publication add content later](/help/forms/assets/publish-later-add-content.png)
+2. Click **[!UICONTROL Next]**. 
+3. (Optional) In the **Workflows** tab, specify a **[!UICONTROL Workflow title]**. 
+4. Click **[!UICONTROL Publish Later]**. 
 
      ![Manage Publication workflow](/help/forms/assets/manage-publication-workflows.png)
 
-## Determining Publication Status 
+## Determining publication status 
 
 There are multiple ways to determine the publishing status: 
 
