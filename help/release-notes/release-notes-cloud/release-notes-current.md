@@ -72,7 +72,7 @@ The preferred editors for managing headless content in AEM are now:
 
 #### PWA Features {#pwa-features}
 
-[The progressive web app (PWA) features](/help/sites-cloud/authoring/sites-console/enable-pwa.md) for AEM Sites are now deprecated for new projects starting with release 2025.1.0. This feature remains supported for existing projects, but should not be used for new projects
+[The progressive web app (PWA) features](/help/sites-cloud/authoring/sites-console/enable-pwa.md) for AEM Sites are deprecated for new projects starting with release 2025.1.0. This feature remains supported for existing projects, but should not be used for new projects
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -144,12 +144,6 @@ Adaptive Forms allows you use HTML email templates. HTML email templates enable 
 #### Enhanced Cloud Storage Support: Direct PDF Upload to Azure Blob Storage
 
 AEM Forms Document Generation APIs now support direct upload of generated PDF documents to Azure Blob Storage. This enhancement streamlines storage and retrieval, improving efficiency and integration with cloud workflows.
-
-* **[Base64 Encoded String Support for File Attachment](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)**: The File Attachment component in Adaptive Forms based on Core Components now includes an option to submit attached files as Base64-encoded strings.
-
->[!IMPORTANT] 
->
-> Interested in joining the Early Access Program for any Forms innovation? Send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) with the list of capabilities that you are interested in.## CIF Add-on {#cloud-services-cif}
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 

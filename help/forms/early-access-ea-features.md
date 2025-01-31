@@ -103,6 +103,11 @@ Ready to start? The following articles provides detailed instructions to use the
 
 ## Additional Early Access Innovations
 
+### HTML email Templates in Adaptive Forms
+
+Adaptive Forms allows you use HTML email templates. HTML email templates enable you to send rich, personalized, and visually appealing emails when a form is submitted. These emails can be customized with form data and enhanced using various email tags, such as images and links. With Adaptive Forms, you can either upload a file containing an HTML template or use a plain-text editor to create these templates.
+
+
 ### Right-to-left (RTL) languages support
 
 Adaptive Forms can now be displayed in a Right-to-Left (RTL) language, allowing a more inclusive user experience and ease of use. 
@@ -164,6 +169,20 @@ Forms service generates interactive PDF forms for data capture. It can also be u
 * **Data Extraction and Import**: Import data into an existing PDF form as well as extract data from a filled PDF form. Both XDP and XML data formats are supported, and importing to non-XFA PDF forms (also known as AcroForms) additionally supports FDF and XFDF data.
 
 * **Data Validation**: : Validate submitted data, in XDP or XML format, against a template created using AEM Forms Designer.
+
+### Doc Generation API
+
+The document generation API includes an optional feature that allows the direct upload of generated PDFs to Azure Blob Storage. Some key benefits of uploading PDFs directly to Azure Blob Storage using the document generation API are:
+
+* **Seamless Integration with Cloud Storage**:
+Directly uploading generated PDFs to Azure Blob Storage eliminates the need for additional manual or programmatic steps to transfer files, streamlining workflows and enhancing efficiency.
+
+* **Centralized Document Management**:
+Storing PDFs in Azure Blob Storage allows for centralized management of documents, making it easier to organize, retrieve, and manage generated files across various use cases.
+
+* **Improved Security**: By leveraging Azure's built-in security features, such as encryption at rest and role-based access control (RBAC), sensitive documents remain protected during storage.
+
+* **Customizable Storage Paths**: The ability to define custom directory paths ensures generated PDFs are stored in organized and application-specific locations, improving file management.
 
 ## See also
 
