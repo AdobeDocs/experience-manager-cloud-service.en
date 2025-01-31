@@ -5,8 +5,8 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: yes
 hidefromtoc: yes
+exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 ---
-
 # Introduction to Rule Editor in Universal Editor 
 
 You can add dynamic form behaviour using the Rule Editor, which allows you to create rules. These rules enable conditional field visibility, automate calculations based on user input, and improve the overall user experience. By streamlining the form-filling process, the Rule Editor helps ensure both accuracy and efficiency.
