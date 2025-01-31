@@ -6,7 +6,7 @@ Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
 exl-id: 1fcba628-ffd8-416a-a8b5-76b35d4aabd4
 ---
-# Configure new form to integrate with Marketo Engage 
+# Integrate an Adaptive Form with Marketo Engage 
 
 <span class="preview"> The feature is available under early adopter program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
 
