@@ -39,11 +39,11 @@ To ensure secure form submission, you need to configure a **Referrer Filter** in
 
 Modify the `submitBaseUrl` in the **constant.js** file within the form block to specify the AEM instance URL:
 
-- **For Cloud Setup:**
+**For Cloud Setup:**
   ```js
   export const submitBaseUrl = 'https://publish-p120-e12.adobeaemcloud.com';
   ```
-- **For Local Development:**
+**For Local Development:**
   ```js
   export const submitBaseUrl = 'http://localhost:4503';
   ```
