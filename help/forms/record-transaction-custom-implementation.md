@@ -2,10 +2,14 @@
 title: Record a transaction for custom implementations
 description: Use the TransactionRecorder API to record actions which are not accounted as transactions automatically
 feature: Adaptive Forms, Foundation Components
-hide: yes
-hidefromtoc: yes
+exl-id: cb584f78-30af-4a58-be99-843352e8249c
 ---
 # Record a transaction for custom implementations {#record-a-transaction-for-custom-implementations}
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/transaction-reports/transaction-reports-osgi/record-transaction-custom-implementation)                  |
+| AEM as a Cloud Service     | This article         |
 
 Use the TransactionRecorder API to record actions which are not accounted as transactions automatically.
 
@@ -84,4 +88,3 @@ $.ajax({
 ## Related Articles {#related-articles}
 
 * [Transaction Reports Billable APIs](/help/forms/transaction-reports-billable-apis.md)
-
