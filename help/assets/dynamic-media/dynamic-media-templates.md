@@ -56,13 +56,13 @@ Execute these steps to create a blank canvas:
 
 1. Navigate to Assets View and click **[!UICONTROL Dynamic Media Assets]** available in the left panel.
 
-   ![](/help/assets/assets/dm-templates/DM-Assets1.png)
+   ![Dynamic Media templates](/help/assets/assets/dm-templates/DM-Assets1.png)
 
 1.  Click **[!UICONTROL Create Template]** to save the template under Dynamic Media Assets or navigate to a folder and click **[!UICONTROL Create Template]** to save the template within that folder. The **[!UICONTROL New Template]** dialog box displays.
-![](/help/assets/assets/dm-templates/new-template.png)
+![how to create dynamic templates that can be customised in real time](/help/assets/assets/dm-templates/new-template.png)
 To [create a folder](/help/assets/add-delete-assets-view.md) under **[!UICONTROL Dynamic Media Assets]**, create a folder under **[!UICONTROL Assets]**. The folder tree under **[!UICONTROL Assets]** replicates under **[!UICONTROL Dynamic Media Assets]**. 
 1. Specify a template name, define the canvas width and height, and click **[!UICONTROL Create]**. A blank canvas displays with menu options on both sides to use for creating the template. Hover over the menu options to see their tooltip. 
-![](/help/assets/assets/dm-templates/blank-canvas-page.png)
+![real-time customizable template](/help/assets/assets/dm-templates/blank-canvas-page.png)
 
 >[!NOTE]
 >
@@ -70,22 +70,22 @@ To [create a folder](/help/assets/add-delete-assets-view.md) under **[!UICONTROL
 
 **Menu options on the right pane:** Use these options to add the necessary images and text layers to the canvas.
 
-* ![](/help/assets/assets/dm-templates/add-image.svg): Click to add images to the canvas.
-* ![](/help/assets/assets/dm-templates/add-text.svg): Click to add texts to the canvas.
-* ![](/help/assets/assets/dm-templates/show-layers-list.svg): Click to see the list of all layers (image and text) on the canvas. Every image and text added to the canvas is represented as a separate layer.
+* ![DM Templates](/help/assets/assets/dm-templates/add-image.svg): Click to add images to the canvas.
+* ![customizable templates](/help/assets/assets/dm-templates/add-text.svg): Click to add texts to the canvas.
+* ![customizable templates](/help/assets/assets/dm-templates/show-layers-list.svg): Click to see the list of all layers (image and text) on the canvas. Every image and text added to the canvas is represented as a separate layer.
 
 **Menu options on the left pane:** Use these options for common editor actions as mentioned below.
 
-* ![](/help/assets/assets/dm-templates/layer-selector.svg): Select a layer.
-* ![](/help/assets/assets/dm-templates/bring-forward.svg): Click to bring a selected layer forward or press **Ctrl** + **]** (Windows) or **Cmd** + **]** (Mac).
-* ![](/help/assets/assets/dm-templates/send-backward.svg): Click to send a selected layer backward or press **Ctrl** + **[** (Windows) or **Cmd** + **[** (Mac).
-* ![](/help/assets/assets/dm-templates/undo.svg): Click to undo the last action or press **Ctrl** + **Z** (Windows) or **Cmd** + **Z** (Mac).
-* ![](/help/assets/assets/dm-templates/redo.svg): Click to redo the last action or press **Ctrl** + **Y** (Windows) or **Cmd** + **Y** (Mac).
-* ![](/help/assets/assets/dm-templates/zoomin.svg): Click to zoom in the canvas or press **Ctrl** + **+** (Windows) or Cmd + **+** (Mac).
-* ![](/help/assets/assets/dm-templates/zoomout.svg): Click to zoom out the canvas or press **Ctrl** + **-** (Windows) or **Cmd** + **-** (Mac).
+* ![DM Templates](/help/assets/assets/dm-templates/layer-selector.svg): Select a layer.
+* ![templates that support customization](/help/assets/assets/dm-templates/bring-forward.svg): Click to bring a selected layer forward or press **Ctrl** + **]** (Windows) or **Cmd** + **]** (Mac).
+* ![how to create a template that can be customized easily](/help/assets/assets/dm-templates/send-backward.svg): Click to send a selected layer backward or press **Ctrl** + **[** (Windows) or **Cmd** + **[** (Mac).
+* ![create a template that can be customized instantly](/help/assets/assets/dm-templates/undo.svg): Click to undo the last action or press **Ctrl** + **Z** (Windows) or **Cmd** + **Z** (Mac).
+* ![template to create banners rapidly](/help/assets/assets/dm-templates/redo.svg): Click to redo the last action or press **Ctrl** + **Y** (Windows) or **Cmd** + **Y** (Mac).
+* ![template to create flyers rapidly](/help/assets/assets/dm-templates/zoomin.svg): Click to zoom in the canvas or press **Ctrl** + **+** (Windows) or Cmd + **+** (Mac).
+* ![template to create banners rapidly](/help/assets/assets/dm-templates/zoomout.svg): Click to zoom out the canvas or press **Ctrl** + **-** (Windows) or **Cmd** + **-** (Mac).
 * Press **Backspace** or **delete** to delete the selected layer if no text or property is being edited.
 
-Click ![](/help/assets/assets/dm-templates/show-layers-list.svg) **>** more options (![](/help/assets/assets/dm-templates/three-dots.svg)) on the Canvas layer to edit the canvas dimensions anytime while creating the template.
+Click ![template to create flyers rapidly](/help/assets/assets/dm-templates/show-layers-list.svg) **>** more options (![](/help/assets/assets/dm-templates/three-dots.svg)) on the Canvas layer to edit the canvas dimensions anytime while creating the template.
 ![](/help/assets/assets/dm-templates/edit-canvas1.png)
 
    >[!NOTE]
@@ -96,19 +96,19 @@ Click ![](/help/assets/assets/dm-templates/show-layers-list.svg) **>** more opti
 
 Execute these steps to add images to the canvas:
 
-1. Click ![](/help/assets/assets/dm-templates/add-image.svg) to display the [Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) panel. The panel displays the images in your AEM Assets instance that are synced to Dynamic Media. 
+1. Click ![create a banner in no time](/help/assets/assets/dm-templates/add-image.svg) to display the [Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) panel. The panel displays the images in your AEM Assets instance that are synced to Dynamic Media. 
 1. Browse the panel or use keywords in the search bar to find a specific image.
 1. Drag and drop an image on the canvas to use it. See the [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) for resizing or repositioning a layer on the canvas.
-![](/help/assets/assets/dm-templates/add-image-to-canvas.png)
+![create a banner within seconds](/help/assets/assets/dm-templates/add-image-to-canvas.png)
 
 ### Add text layers to the canvas{#add-text-to-the-canvas}
 
 Execute these steps to add text layers to the canvas:
 
-1. Click ![](/help/assets/assets/dm-templates/add-text.svg) to add a text layer to the canvas and open the Properties panel. 
+1. Click ![creating new banners fastly](/help/assets/assets/dm-templates/add-text.svg) to add a text layer to the canvas and open the Properties panel. 
 1. Select the layer and click the text to update it. 
 1. Enable **[!UICONTROL Smart Text Resize]** in the Properties panel to  adjust the text length and font size automatically to fit in the designated area optimally. 
-![](/help/assets/assets/dm-templates/add-text-layer.png)
+![best customizable banners](/help/assets/assets/dm-templates/add-text-layer.png)
 
 See the [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) to reposition, resize, rotate or delete the layer. Format your text to your desired font, size, color, style, alignment (in the layer) by changing their values in the respective fields under the **[!UICONTROL Text]** section of the panel.
 
@@ -120,22 +120,22 @@ See the [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) t
 
 Execute these steps to edit or delete a canvas layer:
 
-1. Click ![](/help/assets/assets/dm-templates/show-layers-list.svg) and select the layer either on the canvas or from the Layers list.
-1. Click **more options** (![](/help/assets/assets/dm-templates/three-dots.svg)) to edit or delete the layer. 
+1. Click ![templates with support to dynamic updates](/help/assets/assets/dm-templates/show-layers-list.svg) and select the layer either on the canvas or from the Layers list.
+1. Click **more options** (![templates with support to real-time updates](/help/assets/assets/dm-templates/three-dots.svg)) to edit or delete the layer. 
 1. Click **[!UICONTROL Delete]** to delete the layer. 
 1. Click **[!UICONTROL Edit]** to edit the layer using the [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer).
-![](/help/assets/assets/dm-templates/edit-delete-layer.png)
+![rapid banner creation](/help/assets/assets/dm-templates/edit-delete-layer.png)
 
 ### Properties Panel{#properties-panel}
 
 To navigate to a layer's properties panel:
 
-1. Click ![](/help/assets/assets/dm-templates/show-layers-list.svg).
+1. Click ![rapid content creation](/help/assets/assets/dm-templates/show-layers-list.svg).
 1. Select the layer from the list. 
 
-This panel displays the position of the layer's center point on the canvas plane (X and Y values) and layer's dimensions (width and height) along with text formatting options.
+This panel displays the position of the layer's center point on the canvas plane (X and Y values) and the layer's dimensions (width and height) along with text formatting options.
 
-![](/help/assets/assets/dm-templates/properties-panel.png)
+![rapid content creation](/help/assets/assets/dm-templates/properties-panel.png)
 
 From the properties panel of a layer, select another layer on the canvas to navigate to its properties panel.
  
@@ -154,7 +154,7 @@ See these common layer editing actions to edit a text or an image layer:
 Format your text to your desired font, size, color, style, alignment (in the layer) by changing their values in the respective fields under the **[!UICONTROL Text]** section of the panel.
 
 **[!UICONTROL Smart Text Resize]** Ensure to include **[!UICONTROL Smart Text Resize]** ([Copyfitting](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting)) to fit any text in the designated area optimally by adjusting its font size and length smartly. This capability prevents text overflow or minimizes extra spaces at the bottom of the text.
-![](/help/assets/assets/dm-templates/smart-text-resize.png)
+![content creation in no time](/help/assets/assets/dm-templates/smart-text-resize.png)
 
 ### Parameterise layers {#parameterise-a-layer}
 
@@ -162,12 +162,12 @@ After creating a template with multiple layers of images and texts, parameterise
 
 To parameterise a layer:
 
-1. click ![](/help/assets/assets/dm-templates/show-layers-list.svg), select a layer and click **[!UICONTROL Parameters]**. The **[!UICONTROL Parameters]** panel displays.
+1. click ![instant content creation](/help/assets/assets/dm-templates/show-layers-list.svg), select a layer and click **[!UICONTROL Parameters]**. The **[!UICONTROL Parameters]** panel displays.
 1. Toggle **[!UICONTROL Include Parameter]** to parameterise a property. See [this](#parameterisation-options-or-allowed-parameters) to know the property's behaviour after parameterisation.
 1. **Optional:** Rename the parameter name. A parameter name has layer name followed by a suffix. For a selected layer all its parameterized properties share the same layer name followed by a varying suffix. Rename the layer name by following the semantic naming convention so that when you include the parameter in the URL, the parameter name self explains about the layer's content or its purpose.
 1. Click **[!UICONTROL Save]**.
-![](/help/assets/assets/dm-templates/parameterise-a-layer.png)
-To switch between the Parameter panel of an image and text layer,  select the layer on the canvas and click **[!UICONTROL Parameters]**.
+![instant content creation](/help/assets/assets/dm-templates/parameterise-a-layer.png)
+To switch between the Parameter panel of an image and text layer, select the layer on the canvas and click **[!UICONTROL Parameters]**.
 
 #### Parameters panel option {#parameterisation-options-or-allowed-parameters} 
 
@@ -195,7 +195,7 @@ Include the below parameters to edit the text, its font, colour and size from th
 
 Another way to keep your templates flexible, is by utilising a single parameter name to control multiple layers. This strategy is helpful for the visibility (hide or show layers) parameter, to update the design or graphics from a single template.
 
-Follow these steps to assign the same name to the hide parameters (![](/help/assets/assets/dm-templates/Visibility-icon.svg)) of multiple layers, allowing you to hide or show them simultaneously.
+Follow these steps to assign the same name to the hide parameters (![fast content creation](/help/assets/assets/dm-templates/Visibility-icon.svg)) of multiple layers, allowing you to hide or show them simultaneously.
 
 1. Navigate to the [**[!UICONTROL Properties Panel]**](#parameterise-a-layer) of a layer.
 1. Toggle the **[!UICONTROL Hide]** Parameter if not parameterised earlier.
@@ -213,13 +213,13 @@ Execute these steps to preview and publish the template and copy the delivery UR
 1. On the canvas page, click **[!UICONTROL Preview]**. You can also navigate to **[!UICONTROL Assets View]** **>** **[!UICONTROL Dynamic Media Assets]** **>** find and select your template **>** click **[!UICONTROL Edit Template]** **>** click **[!UICONTROL Preview]**. The preview page displays the template, its parameters (parameterized layers and properties), publish status, and the **[!UICONTROL Publish]** option.
 1. Select parameters from **[!UICONTROL Template Parameters]** panel to edit their values and instantly update the content, size, position, or text formatting of the corresponding template layer in the preview. For example: 
    1. Select a text layer and edit its text or 
-   1. Select an image layer, click ![](/help/assets/assets/dm-templates/add-image.svg), select an image from the asset selector, and click **[!UICONTROL Refresh]**. 
+   1. Select an image layer, click ![creating content on the fly](/help/assets/assets/dm-templates/add-image.svg), select an image from the asset selector, and click **[!UICONTROL Refresh]**. 
 
    The template updates immediately, displaying the edited text and replacing the previous image with the new one. Additionally, the image parameter value reflects the new image path. Similarly, you can resize a layer by adjusting its values, and the changes are applied to the template in real time. 
 1. Select the hide parameter for [grouped layers](#group-layers) from the list to show or hide them together in the template. 
 1. **Optional:** Change the **[!UICONTROL Hide]** parameter value between 0 and 1 and click **[!UICONTROL Refresh]** to see the changes. Layers with the same hide parameter hides or displays together. Similarly, you can control the layers' visibility from the URL.
 
-   ![](/help/assets/assets/dm-templates-publish-status.png)
+   ![creating content on the fly](/help/assets/assets/dm-templates-publish-status.png)
    You can also toggle **[!UICONTROL Include all parameters]** to edit all of the displayed parameter values and see the updates in the template preview.
    <br>
 1. To publish the template on the preview page, click **[!UICONTROL Publish]**  and confirm to publish. Publish Complete message displays and the publish status updates to Published.
