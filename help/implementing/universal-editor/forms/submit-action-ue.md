@@ -24,7 +24,7 @@ Submit to REST Endpoint action is used to send the submitted form data to a spec
 * Allows dynamic mapping of form fields to parameters within the REST endpoint URL, enabling adaptable and customizable data submissions.
 -->
 
-{width=50%,height=50%}![Adaptive Form properties in Universal Editor](/help/forms/assets/submit-actions-ue.png)
+
 
 To configure a REST endpoint:
 
@@ -44,11 +44,14 @@ To configure a REST endpoint:
 
 ### Send Email {#email-submission-ue}
 
-Send Email Submit Action allows you to send an email to one or more recipients upon successful submission of the form. Send Email configuration helps you to create an email that can include form data in a predefined format. For example, consider the following template where customer name, shipping address, state name, and ZIP code are retrieved from the submitted form data. Some advantages of configuring an Adaptive Form with Send Email submit action are:
+Send Email Submit Action allows you to send an email to one or more recipients upon successful submission of the form. Send Email configuration helps you to create an email that can include form data in a predefined format. For example, consider the following template where customer name, shipping address, state name, and ZIP code are retrieved from the submitted form data. [Learn more about Email Templates in Adaptive Forms](/help/forms/html-email-templates-in-adaptive-forms.md). Some advantages of configuring an Adaptive Form with Send Email submit action are:
 
 1. It enables quick communication as form data is directly sent to designated email recipients.
 1. It helps in streamlining the workflow by directly integrating form submissions into email notifications.
 1. It helps organizations customize the email content, thus making it suitable for specific communication needs.
+
+{width=50%,height=50%}![Adaptive Form properties in Universal Editor](/help/forms/assets/submit-actions-ue.png)
+
 
 To configure a submit action as an Email for your form submission:
 
@@ -99,6 +102,11 @@ To configure a submit action as an Email for your form submission:
   </tbody>
 </table>
 
+
+
+
+
+
 <!--
         
         * **From**: The email address of the sender.
@@ -117,7 +125,7 @@ To configure a submit action as an Email for your form submission:
 
 On Submit option helps you to configure a Submit Action message on Adaptive Form submission, To configure a Submit Action message for your form:
 
-1. Open your Adaptive Form in **Editor.
+1. Open your Adaptive Form in **Editor**.
 1. Select your **[!UICONTROL Adaptive Form Block]**. 
 1. Click the properties ![properties](/help/forms/assets/Smock_Properties_18_N.svg) icon. 
 1. On click, you see the following option:
