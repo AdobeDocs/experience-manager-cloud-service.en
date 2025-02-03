@@ -1,5 +1,5 @@
 ---
-title: Adobe Experience Manager Launchpad
+title: Adobe Experience Manager Launchpad (Early Adopter)
 description: Learn about the Adobe Experience Manager Launchpad page.
 solution: Experience Manager
 feature: Cloud Manager, Developing
