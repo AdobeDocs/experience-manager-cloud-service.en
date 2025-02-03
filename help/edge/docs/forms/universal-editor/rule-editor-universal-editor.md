@@ -35,21 +35,23 @@ For detailed step-by-step instructions, see the [add a conditional rule](#2-add-
 
 ## How to enable Rule Editor extension?
 
-In Universal Editor, the Rule Editor is not enabled by default. To enable the Rule Editor extension for your environment, send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) with your request.
+In Universal Editor, the Rule Editor extension is not enabled by default. To enable the Rule Editor extension write to us at [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official email id.
 
 After the Rule Editor extension is enabled for your environment, the ![edit-rules](/help/forms/assets/edit-rules-icon.svg) icon appears in the upper-right corner of the editor.
 
 ![Universal Editor rule editor](/help/edge/docs/forms/assets/universal-editor-rule-editor.png)
 
-Select the form object for which you want to write a rule, and click the ![edit-rules](/help/forms/assets/edit-rules-icon.svg) icon. The Rule Editor user interface appears.
+Select the form component for which you want to write a rule, and click the ![edit-rules](/help/forms/assets/edit-rules-icon.svg) icon. The Rule Editor user interface appears.
 
 ![Rule Editor user interface](/help/edge/docs/forms/assets/rule-editor-for-field.png)
+
+In this article, `form object` and `form component` are used interchangeably.
 
 Now, you can start writing rules or business logic for the selected form field by using the [available rule types in the Rule Editor](#available-rule-types-in-rule-editor).
 
 ## Understanding Rule Editor User Interface
 
-The visual editor of the Rule Editor opens when you click click the ![edit-rules](/help/forms/assets/edit-rules-icon.svg) icon:
+The editor of the Rule Editor opens when you click the ![edit-rules](/help/forms/assets/edit-rules-icon.svg) icon:
 
 ![Rule Editor user Interface](/help/edge/docs/forms/assets/rule-editor-interface.png)
 
@@ -62,20 +64,20 @@ The visual editor of the Rule Editor opens when you click click the ![edit-rules
   </thead>
   <tbody>
     <tr>
-      <td>1. Component-rule display</td>
-      <td>Displays the title of the form object through which you launched the Rule Editor and the rule type currently selected.</td>
+      <td>1. Title</td>
+      <td>Displays the title of the form component and the selected rule type. For example, 'Enter Gross Salary' is a text box component for which the 'When' rule type is selected. </td>
     </tr>
     <tr>
       <td>2. Form objects and functions</td>
-      <td>The <b>Forms Objects</b> tab shows a hierarchical view of all objects contained in the form. The <b>Functions</b> tab includes a set of built-in functions.</td>
+      <td>The <b>Forms Objects</b> tab shows a hierarchical view of all components contained in the form. The <b>Functions</b> tab includes a set of built-in functions in the rule editor.</td>
     </tr>
     <tr>
       <td>3. Form objects and functions toggle</td>
-      <td>The toggle button, when tapped, toggles the form objects and functions pane.</td>
+      <td>The toggle button alternately shows or hides the form objects and functions pane. </td>
     </tr>
     <tr>
       <td>4. Visual Rule Editor</td>
-      <td>The visual Rule Editor is the area in the visual editor mode of the Rule Editor user interface where you write rules.</td>
+      <td>The visual Rule Editor is the interface where you can create rules for the form components.</td>
     </tr>
     <tr>
       <td>5. Done and cancel buttons</td>
@@ -84,7 +86,7 @@ The visual editor of the Rule Editor opens when you click click the ![edit-rules
   </tbody>
 </table>
 
-Any existing rules on a form object are listed when you select the object. You can view the title and a preview the rule summary on the visual Rule Editor. Furthermore, you can change the order of rules, edit rules, enable/disbale rules or delete rules.
+Any existing rules on a form component are listed when you select the component. You can view the title and a preview the rule summary on the Rule Editor. Furthermore, you can change the order of rules, edit rules, enable/disbale rules or delete rules.
 
 ![show the available rules of form object](/help/edge/docs/forms/assets/rule-editor15.png)
 
@@ -102,51 +104,55 @@ The Rule Editor provides a set of predefined rule types that you can use to writ
   <tbody>
     <tr>
       <td>Set Value of</td>
-      <td>Sets the value of a form object depending on whether the specified condition is satisfied.</td>
+      <td>Sets the value of a form component depending on whether the specified condition is satisfied or not.</td>
     </tr>
     <tr>
       <td>Clear Value Of</td>
-      <td>Clears the value of the specified object.</td>
+      <td>Clears the value of the specified form component.</td>
     </tr>
     <tr>
       <td>Hide/Show</td>
-      <td>Hides or shows a form object based on whether a condition is satisfied or not.</td>
+      <td>Hides or shows a form component based on whether a condition is satisfied or not.</td>
     </tr>
     <tr>
       <td>Enable/Disable</td>
-      <td>Enables or disables a form object based on whether a condition is satisfied or not.</td>
+      <td>Enables or disables a form component based on whether a condition is satisfied or not.</td>
     </tr>
     <tr>
       <td>Validate</td>
-      <td>Validates the form or a specified object.</td>
+      <td>Checks the form component based on a condition and displays an error if the condition is not met. </td>
     </tr>
     <tr>
       <td>When</td>
-      <td>Follows the <i>condition-action-alternate</i> action rule construct or <i>condition-action</i> rule construct. It specifies a condition for evaluation followed by an action to trigger if the condition is satisfied.</td>
+      <td>It specifies a condition for evaluation followed by an action to trigger if the condition is satisfied. It follows the <i>condition-action-alternate</i> action rule construct or <i>condition-action</i> rule construct. </td>
     </tr>
     <tr>
       <td>Format</td>
-      <td>Formats a form object based on a function or regular expression.</td>
+      <td> Modifies the display value of the form component using the given expression when its value changes.</td>
     </tr>
     <tr>
       <td>Invoke Service</td>
-      <td>Invokes a service configured in a form data model (FDM).</td>
+      <td>Invokes a service configured using external APIs, Form Data Model or RESTful web services.</td>
     </tr>
     <tr>
       <td>Set Property</td>
-      <td>Sets the value of a property of the specified object based on a condition.</td>
+      <td>Sets the value of a property of the specified form component based on a condition.</td>
     </tr>
     <tr>
       <td>Set Focus</td>
-      <td>Sets focus on the specified object.</td>
+      <td>Sets focus on the specified form component.</td>
     </tr>
     <tr>
       <td>Save Form</td>
-      <td>Saves the form.</td>
+      <td>It allows user to save the form as a draft using the Drafts & Submissions Forms Portal component. </td>
     </tr>
     <tr>
-      <td>Submit/Reset Form</td>
-      <td>Submits or resets the form.</td>
+      <td>Submit Form</td>
+      <td>Submits the form.</td>
+    </tr>
+    <tr>
+      <td>Reset Form</td>
+      <td>Resets the form.</td>
     </tr>
     <tr>
       <td>Add/Remove Instance</td>
@@ -362,7 +368,9 @@ To use the custom function in the Rule Editor:
 
 1. **Preview the Form**: Preview your form with the newly implemented function.  
 
-## Related Articles
+## Additional Information
+
+This article provides limited information on the Rule Editor available in the Universal article. To learn more about the Rule Editor and custom functions, refer to the following articles:
 
 {{see-also-rule-editor}}
 
