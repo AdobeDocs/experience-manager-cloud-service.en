@@ -1003,6 +1003,7 @@ user-guide-title: AEM as a Cloud Service
     + [Redirects](/help/edge/docs/redirects.md)
   + Building Forms {#build-forms}
     + [Overview](/help/edge/docs/forms/overview.md)
+    + [How Edge Delivery Services Forms works?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
     + Get Started {#getting-started-edge-delivery-services-forms}
       + [Getting Started](/help/edge/docs/forms/tutorial.md)
       + [Create a form using Google Sheets or Microsoft Excel](/help/edge/docs/forms/create-forms.md)
