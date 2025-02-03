@@ -120,13 +120,21 @@ AI-generated video captions in Adobe Dynamic Media use artificial intelligence t
 
 ### New features in AEM Forms {#forms-new-features}
 
-* **Manage Publication**: You can use the "Manage Publication" workflow to publish or unpublish forms across environments, typically from the author instance to the publish and preview instances. It allows users to publish, unpublish, or schedule the publication of content in a streamlined manner.
+#### Manage Publication
 
-* **[Auto-save a draft for Core Components based Adaptive Forms](/help/forms/save-core-component-based-form-as-draft.md)**: Users can now benefit from an auto-save feature that saves a partially completed form as a draft automatically. They can return later to finish filling it out on the same or other device. This feature improves conversion rates for organizations by reducing form abandonment, as users do not need to start over form filling from the beginning.
+You can use the "Manage Publication" workflow to publish or unpublish forms across environments, typically from the author instance to the publish and preview instances. It allows users to publish, unpublish, or schedule the publication of content in a streamlined manner.
 
-* **[Rule editor enhancements](/help/forms/invoke-service-enhancements-rule-editor.md)**: For Adaptive Forms based on Core Components, you can use the output of Invoke Service to populate drop-down options and set repeatable or individual panels. Additionally, this output can be used to validate other fields. 
+#### Auto-save a draft for Core Components based Adaptive Forms
 
-* **[Enhance User Experience with Navigation Buttons in Panel Layouts](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button)**: You can now add navigation buttons to your panel layouts, such as Horizontal Tabs, Vertical Tabs, Accordions, or Wizard. These buttons enhance the user experience by simplifying transitions between panels, focusing on the selected panel.
+Users can now benefit from an [auto-save feature](/help/forms/save-core-component-based-form-as-draft.md) that saves a partially completed form as a draft automatically. They can return later to finish filling it out on the same or other device. This feature improves conversion rates for organizations by reducing form abandonment, as users do not need to start over form filling from the beginning.
+
+#### Rule editor enhancements
+
+For Adaptive Forms based on Core Components, you can use the [output of Invoke Service to populate drop-down options and set repeatable or individual panel](/help/forms/invoke-service-enhancements-rule-editor.md). Additionally, this output can be used to validate other fields. 
+
+#### Enhance User Experience with Navigation Buttons in Panel Layouts
+
+You can now add navigation buttons to your panel layouts, such as Horizontal Tabs, Vertical Tabs, Accordions, or Wizard. These buttons [enhance the user experience by simplifying transitions between panels, focusing on the selected panel](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button).
 
  
 ### Early Access features in AEM Forms {#forms-new-early-access-features}
@@ -135,15 +143,15 @@ The AEM Forms Early Access Program program offers a unique opportunity to you to
 
 This release notes lists the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
 
-#### [HTML email Templates in Adaptive Forms](/help/forms/html-email-templates-in-adaptive-forms.md)
+#### HTML email Templates in Adaptive Forms
 
-Adaptive Forms allows you use HTML email templates. HTML email templates enable you to send rich, personalized, and visually appealing emails when a form is submitted. These emails can be customized with form data and enhanced using various email tags, such as images and links. With Adaptive Forms, you can either upload a file containing an HTML template or use a plain-text editor to create these templates.
+Adaptive Forms allows you use [HTML email templates](/help/forms/html-email-templates-in-adaptive-forms.md). HTML email templates enable you to send rich, personalized, and visually appealing emails when a form is submitted. These emails can be customized with form data and enhanced using various email tags, such as images and links. With Adaptive Forms, you can either upload a file containing an HTML template or use a plain-text editor to create these templates.
 
 ![HTML email templates](/help/forms/assets/html-email.png)
 
 #### Enhanced Cloud Storage Support: Direct PDF Upload to Azure Blob Storage
 
-AEM Forms Document Generation APIs now support direct upload of generated PDF documents to Azure Blob Storage. This enhancement streamlines storage and retrieval, improving efficiency and integration with cloud workflows.
+AEM Forms Document Generation APIs now allows you to [directly upload generated PDF documents to Azure Blob Storage](/help/forms/early-access-ea-features.md#doc-generation-api). This enhancement streamlines storage and retrieval, improving efficiency and integration with cloud workflows.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
