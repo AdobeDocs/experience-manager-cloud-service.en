@@ -20,7 +20,7 @@ Please see the [Build section](/help/edge/developer/block-collection.md) of the 
 
 Edge Delivery leverages GitHub so you can manage and deploy code directly from your GitHub repository.
 
-Your authors can create content using either document-based authoring or content in AEM with the Universal Editor. Developers can customize the functionality of your site by using CSS and JavaScript in GitHub regardless of how the authors create their content.
+Your authors can create content using either Document-based Authoring  or content in AEM with the Universal Editor. Developers can customize the functionality of your site by using CSS and JavaScript in GitHub regardless of how the authors create their content.
 
 Websites are automatically created for each of your branches from content preview to production. Every resource that you put into your GitHub repository is available on your website without a build process.
 

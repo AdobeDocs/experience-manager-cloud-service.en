@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media newsletter archive
-description: The Dynamic Media newsletter by Experience League is a monthly newsletter. It is designed to help you get up to speed with Dynamic Media and Dynamic Media Classic so that you can realize value right away. Valuable knowledge-building resources are available in this one-stop shop newsletter. For example, there are how-to videos and solution overviews. Read about some of the key features and capabilities like image presets, viewer presets, video profiles, and more.
+description: This newsletter is designed to help you get up to speed with Dynamic Media and Dynamic Media Classic so that you can realize value right away.
 contentOwner: Rick Brough
 feature: Asset Management
 role: User

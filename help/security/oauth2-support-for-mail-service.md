@@ -1,6 +1,6 @@
 ---
 title: OAuth2 Support for the Mail Service
-description: Oauth2 Support for the Mail Service in Adobe Experience Manager as a Cloud Service
+description: OAuth2 Support for the Mail Service in Adobe Experience Manager as a Cloud.Service.
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 ---
 
@@ -27,7 +27,7 @@ For more information on the AEM as a Cloud Service Mail Service, see [Sending Em
 
    >[!NOTE]
    >
-   >Permissions configuration may evolve over time. Work with Microsoft if these do not work as expected.
+   >Permissions configuration may evolve over time. Work with Microsoft&reg; if these do not work as expected.
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
@@ -105,7 +105,7 @@ Before proceeding to configure OAuth on the AEM side, make sure to validate both
 
 >[!NOTE]
 >
-> You can get the Postman API collection from [this location](https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow).
+> You can get the Postman API collection from [this location](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow).
 >
 > See the MSFT OAuth documentation [here](https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) for more details.
 
@@ -134,7 +134,7 @@ Before proceeding to configure OAuth on the AEM side, make sure to validate both
 
    >[!NOTE]
    >
-   >Scopes may evolve over time. Work with Microsoft if these do not work as expected.
+   >Scopes may evolve over time. Work with Microsoft&reg; if these do not work as expected.
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
@@ -142,7 +142,7 @@ Before proceeding to configure OAuth on the AEM side, make sure to validate both
    * `email`
    * `profile`
 1. Create an OSGI property file `called com.day.cq.mailer.DefaultMailService.cfg.json`
-under `/apps/<my-project>/osgiconfig/config` with the syntax below. The `smtp.host` and `smtp.port` values reflects advanced networking configuration, as described in the [Email Service tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html).
+under `/apps/<my-project>/osgiconfig/config` with the syntax below. The `smtp.host` and `smtp.port` values reflects advanced networking configuration, as described in the [Email Service tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/email-service).
    
    ```
    {

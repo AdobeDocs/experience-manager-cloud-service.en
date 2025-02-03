@@ -266,6 +266,7 @@ You can run a workflow for the assets within a collection. If the collection con
 * [Manage metadata](manage-metadata.md)
 * [Search facets](search-facets.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

@@ -244,7 +244,7 @@ The application-specific metadata includes technical and descriptive metadata. I
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights].
 * PLUS - [Picture Licensing Universal System](https://www.useplus.com).
-* PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata).
+<!--THIS LINK IS 404 WITH NO SUITABLE REPLACEMENT * PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata). -->
 * PRL - PRISM Rights Language.
 * PUR - PRISM Usage Rights.
 * `xmpPlus` - Integration of PLUS with XMP.
@@ -259,7 +259,7 @@ The application-specific metadata includes technical and descriptive metadata. I
 ### Print-specific metadata {#print-specific-metadata}
 
 * PDF and PDF/X - Adobe PDF and third-party applications.
-* PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata).
+<!--THIS LINK IS 404 WITH NO SUITABLE REPLACEMENT * PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata). -->
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` - XMP metadata for paged text.
 
@@ -289,6 +289,7 @@ Creating metadata-driven workflows help you automate some processes, which impro
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

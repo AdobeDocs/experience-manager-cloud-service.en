@@ -1,8 +1,8 @@
 ---
 title: Editing Page Content with the AEM Page Editor
 description: The AEM page editor is a powerful tool for authoring your content.
+exl-id: eacfda02-ff53-42ed-b5b2-88be3879a5e9
 ---
-
 # Editing Page Content with the AEM Page Editor {#edit-content}
 
 The AEM page editor is a powerful tool for authoring the content of a page. Learn how to use it to drag-and-drop content and edit content in-place.

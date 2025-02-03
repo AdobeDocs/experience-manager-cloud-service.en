@@ -225,6 +225,7 @@ When sharing assets, the following functionalities improve the accessibility:
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 ## Provide feedback {#a11y-feedback}
 

@@ -1,10 +1,10 @@
 ---
 title: What are Forms as a Cloud Service Communication APIs?
 description: Use communication APIs to Sign, Certify, or protect your documents, to automate PDF generation processes, and to convert PDF document to another format.
-Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
-exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
+Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs.
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
+exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 ---
 # Introduction to AEM Forms as a Cloud Service Communications {#frequently-asked-questions}
 
@@ -129,6 +129,10 @@ Figure: Dividing a source document based on bookmarks into multiple documents
 
 You can use the document manipulation APIs to convert a PDF document to a PDF/A-compliant document and to determine whether a PDF document is PDF/A-compliant. PDF/A is an archival format meant for long-term preservation of the document's content. The fonts are embedded within the document, and the file is uncompressed. As a result, a PDF/A document is typically larger than a standard PDF document. Also, a PDF/A document does not contain audio and video content.
 
+>[!NOTE]
+>
+> AEM Forms offers a variety of built-in fonts that seamlessly integrate with PDF files. To see the list of supported fonts, [click here](/help/forms/supported-out-of-the-box-fonts.md).
+
 <!-- 
 
 ## Document utilities
@@ -161,24 +165,83 @@ The DocAssurance service includes the Signature and Encyption APIs:
 
 ### Signature APIs 
 
-The Signature APIs let your organization protect the security and privacy of Adobe PDF documents that it distributes and receives. This service uses digital signatures and certification to ensure that only intended recipients can alter documents. Because security features are applied to the document itself, the document remains secure and controlled for its entire life cycle. A document remains secure beyond the firewall, when it is downloaded offline, and when it is submitted back to your organization. You can accomplish the following tasks using the Signature APIs:
+The Signature APIs let your organization protect the security and privacy of Adobe PDF documents that it distributes and receives. <!--This service uses digital signatures and certification to ensure that only intended recipients can alter documents. --> The security features are applied to the document itself, the document remains secure and controlled for its entire life cycle. The document remains secure beyond the firewall, when it is downloaded offline, and when it is submitted back to your organization. You can accomplish the following tasks using the Signature APIs:
 
-* Add a signature field to a PDF document. 
+* Add a visible signature field to a PDF document. 
+* Add an invisible signature field to a PDF document. 
 * Sign the specified signature field in a PDF document. 
 * Certify a PDF document
 
 ### Encryption APIs
 
-The Encryption APIs let you encrypt and decrypt documents. When a document is encrypted, its contents become unreadable. An authorized user can decrypt the document to obtain access to the contents. If a PDF document is encrypted with a password, the user must specify the open password before the document can be viewed in Adobe Reader or Adobe Acrobat. Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.
+The Encryption APIs let you encrypt and decrypt documents. When a document is encrypted, its contents become unreadable. An authorized user can decrypt the document to obtain access to the contents. If a PDF document is encrypted with a password, the user must specify the open password before the document can be viewed in Adobe Reader or Adobe Acrobat. <!-- Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.-->
 
 You can accomplish these tasks using the Encryption APIs:
 
 * Encrypt a PDF document with a password. 
 * Remove password-based encryption from a PDF document.
-* Retrieve the type of security applied to a PDF document. 
+* Retrieve the type of security applied to a PDF document.
+* Return the security type applied to a PDF document. 
 
 Both Signature APIs and Encryption APIs are [Synchronous APIs](#types-of-communications-apis-types). 
 
+### Usage Rights APIs
+
+<span class="preview"> The Usage Rights capability is under Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+  
+The Usage Rights capability enables your organization to easily share interactive PDF documents by extending the functionality of Adobe Reader with additional usage rights. The service works with Adobe Reader 7.0 or later and adds usage rights to a PDF document. This action activates features that are not usually available when a PDF document is opened using Adobe Reader, such as adding comments to a document, filling forms, and saving the document.
+
+When PDF documents have the appropriate usage rights added, recipients can do the following activities from within Adobe Reader:
+
+* Complete PDF documents and forms online or offline, allowing recipients to save copies locally for their records and still keep added information intact.
+* Save PDF documents to a local hard drive to retain the original document and any additional comments, data, or attachments.
+* Attach files and media clips to PDF documents.
+* Sign, certify, and authenticate PDF documents by applying digital signatures using industry-standard public key infrastructure (PKI) technologies.
+* Submit completed or annotated PDF documents electronically.
+* Use PDF documents and forms as an intuitive development front end to internal databases and web services.
+* Share PDF documents with others so that reviewers can add comments by using intuitive markup tools. These tools include electronic sticky notes, stamps, highlights, and text strikethrough. The same functions are available in Acrobat.
+* Support Barcoded Forms decoding.
+
+These special usage rights capabilities are automatically activated when a rights-enabled PDF document is opened within Adobe Reader. When the user is finished working with a rights-enabled document, those functions are again disabled in Adobe Reader. They remain disabled until the user receives another rights-enabled PDF document.
+
+#### Enable or disable usage rights
+
+The various usage rights capabilities for extending PDF Reader services are:
+
+  * **Barcodes Decoding**: To decode barcodes within the PDF document.
+
+  * **Comments**: To comment offline on the PDF document.
+
+  * **Comments Online**: To comment online on the PDF document.
+
+  * **Digital Signature**: To add digital signatures to a PDF document.
+
+  * **Dynamic Form Fields**: To add form fields to a PDF document.
+
+  * **Dynamic Form Pages**: To add form pages to a PDF document.
+
+  * **Embedded Files**: To embed files within a PDF document.
+
+  * **Form Data Import**: To import form data to a PDF document.
+
+  * **Form Data Export**: To import form data to a PDF document.
+
+  * **Form Fill In**: To fill form fields within a PDF document.
+
+  * **Online Forms**: To access a web service or database from a PDF document.
+
+  * **Submit Standalone**: To submit form data offline from a PDF document.
+
+#### Extract usage rights
+
+It helps to retrieve the usage rights enabled or disabled to a PDF document for Adobe Acrobat Reader extensibility.
+
+#### Other capabilities
+
+* **Message**: The message displayed within Adobe Acrobat Reader on opening a PDF document with one or more usage rights applied.
+* **Unlock Password**: The password required for opening an encrypted PDF document. Typically, this is the document open password but if the PDF document is additionally protected by a permissions password, either may be used to open it.
+
+The [API reference documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) provides detailed information about all the parameters, authentication methods, and various services provided by APIs. The API reference documentation is also available in the .yaml format. You can download the .yaml and upload it to postman to check functionality of APIs.
 
 ## Types of communications APIs {#types}
 

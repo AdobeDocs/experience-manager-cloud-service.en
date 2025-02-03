@@ -1,8 +1,8 @@
 ---
 title: Responsive Design
 description: With responsive design, the same experiences can be effectively displayed on multiple devices in multiple orientations.
+exl-id: be645062-d6d6-45a2-97dc-d8aa235539b8
 ---
-
 # Responsive Design {#responsive-design}
 
 Design your experiences so that they adapt to the client viewport in which they are displayed. With responsive design, the same pages can be effectively displayed on multiple devices in both orientations. The following image demonstrates some ways in which a page can respond to changes in viewport size:

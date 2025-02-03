@@ -12,11 +12,9 @@ A user in the **Business Owner** or **Deployment Manager** role can follow these
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, select the program.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
 
-1. From the **Overview** page, navigate to the **Environments** screen.
-
-1. From the **Environments** screen, navigate to the **IP Allow Lists** page.
+1. From the **Overview** page, navigate to the **IP Allow Lists** page using the side navigation tab.
 
    ![IP allow lists option in the side panel](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 

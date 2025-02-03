@@ -8,8 +8,6 @@ exl-id: aee34469-37c2-4571-806b-06c439a7524a
 
 Learn how the Universal Editor publishes content and how your apps can handle the published content.
 
-{{universal-editor-status}}
-
 ## Similarities with AEM {#similarities}
 
 For users of AEM, the process to publish content with the Universal Editor works as you are accustomed: on publication in AEM, the content is replicated from the author tier to the publish tier.

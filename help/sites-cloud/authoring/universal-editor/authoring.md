@@ -8,8 +8,6 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 
 Learn how easy and intuitive it is for content authors to create content using the Universal Editor.
 
-{{universal-editor-status}}
-
 ## Introduction {#introduction}
 
 The Universal Editor enables editing any aspect of any content in any implementation so you can deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.
@@ -402,3 +400,4 @@ To learn more about the technical details of the Universal Editor, please see th
 * [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md) - Learn about the architecture of the Universal Editor and how data flows between its services and layers.
 * [Attributes and Types](/help/implementing/universal-editor/attributes-types.md) - Learn about the data attributes and types that the Universal Editor requires.
 * [Universal Editor Authentication](/help/implementing/universal-editor/authentication.md) - Learn how the Universal Editor authenticates.
+

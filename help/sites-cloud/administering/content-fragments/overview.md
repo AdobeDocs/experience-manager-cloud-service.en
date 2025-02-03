@@ -99,6 +99,8 @@ After the fragments have been created, you can:
 >* [Content Fragments Support in AEM Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [AEM GraphQL API for use with Content Fragments](/help/headless/graphql-api/content-fragments.md)
 >* [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md).
+>* The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) are also available.
+
 
 ## Main and Variations {#main-and-variations}
 

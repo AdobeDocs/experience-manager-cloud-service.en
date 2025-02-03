@@ -1,6 +1,6 @@
 ---
 title: Experience Fragments Overview
-description: Extend Adobe Experience Manager as a Cloud Service Experience Fragments.
+description: Extend Experience Fragments for Adobe Experience Manager as a Cloud Service
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
 ---
 # Experience Fragments{#experience-fragments}
@@ -63,6 +63,8 @@ Adobe recommends configuring the rewriter using an overlay. See [Overlays in AEM
 >[!CAUTION]
 >
 >***Only*** editable templates are supported for Experience Fragments.
+>
+>Experience Fragments can only be used on pages that are based on editable templates.
 
 <!-- >***Only*** [editable templates](/help/sites-developing/page-templates-editable.md) are supported for Experience Fragments.
 -->

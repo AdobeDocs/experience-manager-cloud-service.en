@@ -1,6 +1,6 @@
 ---
 title: How to connect AEM Adaptive Form to Microsoft&reg; SharePoint List?
-description: Connect an Adaptive Form to Microsoft&reg; SharePoint List. Learn how to configure the Microsoft&reg; SharePoint list and create a Form Data Model using the configuration. In addition, you earn how to integrate the FDM with your Adaptive Form.
+description: Connect an Adaptive Form to Microsoft&reg; SharePoint List. Learn how to configure the Microsoft&reg; SharePoint list and create a Form Data Model (FDM) using the configuration. In addition, you earn how to integrate the FDM with your Adaptive Form.
 role: User, Developer
 keywords: connect AEM Adaptive Form to Microsoft SharePoint List, connect Adaptive Form to Microsoft SharePoint List, integrate AEM Adaptive Form to Microsoft SharePoint List, integrate Adaptive Form to Microsoft SharePoint List, submit data from an Adaptive Form to SharePoint List, submit AEM workflow to SharePoint List.
 hide: yes
@@ -25,8 +25,8 @@ For instructions on how to integrate a **Microsoft&reg; SharePoint Document Libr
 Before connecting an Adaptive Form to Microsoft&reg; SharePoint List, perform the following steps:
 
 1. [Configure Microsoft&reg; SharePoint List](/help/forms/configure-data-sources.md#configure-microsoft-sharepoint-list)
-1. [Create a Form Data Model using Microsoft&reg; SharePoint List configuration](/help/forms/create-form-data-models.md)
-1. [Configure the Form Data Model to retrieve and send data](/help/forms/work-with-form-data-model.md#configure-services)
+1. [Create a Form Data Model (FDM) using Microsoft&reg; SharePoint List configuration](/help/forms/create-form-data-models.md)
+1. [Configure the Form Data Model (FDM) to retrieve and send data](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
 
 Now, you can:
@@ -36,18 +36,18 @@ Now, you can:
 
 ## Connect an Adaptive Form to Microsoft&reg; SharePoint List {#connect-af-sharepoint-list}
 
-To integrate Microsoft&reg; SharePoint List to your Adaptive Form [configure an Adaptive Form to use a Form Data Model](/help/forms/creating-adaptive-form-core-components.md#configure-a-schema-or-form-data-model-for-an-adaptive-formconfigure-schema-or-data-model-for-form)
+To integrate Microsoft&reg; SharePoint List to your Adaptive Form [configure an Adaptive Form to use a Form Data Model (FDM)](/help/forms/creating-adaptive-form-core-components.md#configure-a-schema-or-form-data-model-for-an-adaptive-formconfigure-schema-or-data-model-for-form)
 
-After configuring an Adaptive Form to use a Form Data Model, you can: 
+After configuring an Adaptive Form to use a Form Data Model (FDM), you can: 
 
-* [Configure Submit action using a Form Data Model](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
-* [Configure Rule Editor to invoke a Form Data Model](/help/forms/rule-editor.md#invoke-form-data-model-service-invoke)
+* [Configure Submit action using a Form Data Model (FDM)](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
+* [Configure Rule Editor to invoke a Form Data Model (FDM)](/help/forms/rule-editor.md#invoke-form-data-model-service-invoke)
 
 ## Connect Microsoft&reg; SharePoint List to an AEM workflow {#connect-sharepoint-list-workflow}
 
 To integrate Microsoft&reg; SharePoint List to an AEM Workflow:
 
-1. [Create a workflow to invoke a Form Data model](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)
+1. [Create a workflow to invoke a Form Data model (FDM)](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)
 
     <!--
     To create a workflow with the editor:
@@ -78,7 +78,7 @@ Learn how to [use AEM Workflow](https://experienceleague.adobe.com/docs/experien
 
 * [Create a Core-Component based Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
 * [Configure data sources](/help/forms/configuring-submit-actions.md)
-* [Create form data model](/help/forms/create-form-data-models.md)
+* [Create form data model (FDM)](/help/forms/create-form-data-models.md)
 * [Use Forms-centric AEM Workflows - Step Reference to automate business processes](/help/forms/aem-forms-workflow-step-reference.md)
 * [Create a custom Submit Action for Adaptive Forms](/help/forms/custom-submit-action-form.md)
 * [Create or add an Adaptive Form to an AEM Sites page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)

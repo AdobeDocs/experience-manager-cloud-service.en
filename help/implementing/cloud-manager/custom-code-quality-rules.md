@@ -156,7 +156,7 @@ public void doThis() {
   // do something with the client
 }
 
-public void orDoThis() {
+public void orDoThis () {
   URL url = new URL("http://www.google.com");
   URLConnection urlConnection = url.openConnection();
   urlConnection.setConnectTimeout(5000);

@@ -1,12 +1,12 @@
 ---
-title: What is the process to work with a Form Data Model in AEM Forms?
+title: What is the process to work with a Form Data Model (FDM) in AEM Forms?
 description: Add data model objects, services, create data model objects and child properties, configure services, work with navigation properties of OData services.
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
 ---
-# Work with Form Data Model {#work-with-form-data-model}
+# Work with Form Data Model (FDM) {#work-with-form-data-model}
 
 | Version | Article link |
 | -------- | ---------------------------- |
@@ -16,37 +16,37 @@ exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
 
  ![data-integration](do-not-localize/data-integeration.png)
 
-Form Data Model editor provides an intuitive user interface and tools for editing and configuring a form data model. Using the editor, you can add and configure data model objects, properties, and services from associated data sources in the form data model. In addition, it lets you create data model objects and properties without data sources and bind them with respective data model objects and properties later. You can also generate and edit sample data for data model object properties that you can use to prefill Adaptive Forms <!--and interactive communications--> while previewing. You can test data model objects and services configured in a Form Data Model to ensure it is properly integrated with data sources.
+Form Data Model (FDM) editor provides an intuitive user interface and tools for editing and configuring a form data model (FDM). Using the editor, you can add and configure data model objects, properties, and services from associated data sources in the form data model (FDM). In addition, it lets you create data model objects and properties without data sources and bind them with respective data model objects and properties later. You can also generate and edit sample data for data model object properties that you can use to prefill Adaptive Forms <!--and interactive communications--> while previewing. You can test data model objects and services configured in a Form Data Model (FDM) to ensure it is properly integrated with data sources.
 
-If you are new to Forms data integration and have not configured a data source or created a form data model, see the following topics:
+If you are new to Forms data integration and have not configured a data source or created a form data model (FDM), see the following topics:
 
 * [[!DNL Experience Manager Forms] Data Integration](data-integration.md)
 * [Configure data sources](configure-data-sources.md)
-* [Create form data model](create-form-data-models.md)
+* [Create form data model (FDM)](create-form-data-models.md)
 
 Read on for details about various tasks and configurations you can perform using the Form Data Model editor.
 
 >[!NOTE]
 >
->You must be a member of both **fdm-author** and **forms-user** groups to be able to create and work with form data model. Contact your [!DNL Experience Manager] administrator to become a member of the groups.
+>You must be a member of both **fdm-author** and **forms-user** groups to be able to create and work with form data model(FDM). Contact your [!DNL Experience Manager] administrator to become a member of the groups.
 
 ## Add data model objects and services {#add-data-model-objects-and-services}
 
-If you created a Form Data Model with data sources, you can use the Form Data Model editor to add data model objects and services, configure their properties, build associations between data model objects, and test the Form Data Model and services.
+If you created a Form Data Model(FDM) with data sources, you can use the Form Data Model editor to add data model objects and services, configure their properties, build associations between data model objects, and test the Form Data Model(FDM) and services.
 
-You can add data model objects and services from available data sources in the form data model. While added data model objects appear in the Model tab, added services appear in the Services tab.
+You can add data model objects and services from available data sources in the form data model(FDM). While added data model objects appear in the Model tab, added services appear in the Services tab.
 
 To add data model objects and services:
 
-1. Log into the [!DNL Experience Manager] author instance, navigate to **[!UICONTROL Forms > Data Integrations]**, and open the Form Data Model in which you want to add data model objects.
+1. Log into the [!DNL Experience Manager] author instance, navigate to **[!UICONTROL Forms > Data Integrations]**, and open the Form Data Model(FDM) in which you want to add data model objects.
 1. In the Data Sources pane, expand data sources to view available data model objects and services.
-1. Select data model objects and services you want to add to the Form Data Model and select **[!UICONTROL Add Selected]**.
+1. Select data model objects and services you want to add to the Form Data Model(FDM) and select **[!UICONTROL Add Selected]**.
 
    ![selected-objects](assets/selected-objects.png)
 
    Selected data model objects and services
 
-   The **[!UICONTROL Model]** tab displays a graphical representation of all data model objects and their properties added to the form data model. Each data model object is represented by a box in the form data model.
+   The **[!UICONTROL Model]** tab displays a graphical representation of all data model objects and their properties added to the form data model(FDM). Each data model object is represented by a box in the form data model(FDM).
 
    ![model-tab](assets/model-tab.png)
 
@@ -54,7 +54,7 @@ To add data model objects and services:
 
    >[!NOTE]
    >
-   >You can hold and drag data model object boxes around to organize them in the content area. All data model objects added in the Form Data Model are grayed out in the Data Sources pane.
+   >You can hold and drag data model object boxes around to organize them in the content area. All data model objects added in the Form Data Model(FDM) are grayed out in the Data Sources pane.
 
    The **[!UICONTROL Services]** tab lists added services.
 
@@ -70,19 +70,19 @@ To add data model objects and services:
 
    >[!NOTE]
    >
-   >You can invoke services that you configured in the Services tab of a Form Data Model using the Adaptive Form rules. The configured services are available in the Invoke services action of the rule editor For more information about using these services in Adaptive Form rules, see Invoke Services and Set Value Of rules in [rule editor](rule-editor.md).
+   >You can invoke services that you configured in the Services tab of a Form Data Model(FDM) using the Adaptive Form rules. The configured services are available in the Invoke services action of the rule editor For more information about using these services in Adaptive Form rules, see Invoke Services and Set Value Of rules in [rule editor](rule-editor.md).
 
 ## Create data model objects and child properties {#create-data-model-objects-and-child-properties}
 
 ### Create data model objects {#create-data-model-objects}
 
-While you can add data model objects from configured data sources, you can also create data model objects or entities without data sources. It is helpful especially if you have not configured data sources in the form data model.
+While you can add data model objects from configured data sources, you can also create data model objects or entities without data sources. It is helpful especially if you have not configured data sources in the form data model(FDM).
 
 To create a data model object without data sources:
 
-1. Log into the [!DNL Experience Manager] author instance, navigate to **[!UICONTROL Forms > Data Integrations]**, and open the Form Data Model in which you want to create a data model object or entity.
+1. Log into the [!DNL Experience Manager] author instance, navigate to **[!UICONTROL Forms > Data Integrations]**, and open the Form Data Model(FDM) in which you want to create a data model object or entity.
 1. Select **[!UICONTROL Create Entity]**.
-1. In the [!UICONTROL Create data Model] dialog, specify a name for the data model object and select **[!UICONTROL Add]**. A data model object is added to the form data model. The newly added data model object is not bound to a data source and does not have any properties as shown in the following image. 
+1. In the [!UICONTROL Create data Model] dialog, specify a name for the data model object and select **[!UICONTROL Add]**. A data model object is added to the form data model(FDM). The newly added data model object is not bound to a data source and does not have any properties as shown in the following image. 
 
    ![new-entity](assets/new-entity.png)
 
@@ -101,17 +101,17 @@ To create a child property:
 
    To manually bind a child property with a data model object property, select the browse icon next to the **[!UICONTROL Bind Reference]** field. The **[!UICONTROL Select Object]** dialog lists all properties from the parent data model object. Select a property to bind with and select the tick icon. You can only select a property of the same data type as the child property.
 
-1. Select **[!UICONTROL Done]** to save the child property and select **[!UICONTROL Save]** to save the form data model.. The child property is now added to the data model object.
+1. Select **[!UICONTROL Done]** to save the child property and select **[!UICONTROL Save]** to save the form data model(FDM). The child property is now added to the data model object.
 
-After you have created data model objects and properties, you can continue to create Adaptive Forms <!--and interactive communications--> based on the form data model. Later, when you have data sources available and configured, you can bind the Form Data Model with data sources. The binding automatically gets updated in associated Adaptive Forms <!--and interactive communications-->. For more information about creating Adaptive Forms <!--and interactive communications--> using form data model, see [Use form data model](using-form-data-model.md).
+After you have created data model objects and properties, you can continue to create Adaptive Forms <!--and interactive communications--> based on the form data model(FDM). Later, when you have data sources available and configured, you can bind the Form Data Model(FDM) with data sources. The binding automatically gets updated in associated Adaptive Forms <!--and interactive communications-->. For more information about creating Adaptive Forms <!--and interactive communications--> using form data model(FDM), see [Use form data model](using-form-data-model.md).
 
 ### Bind data model objects and properties {#bind-data-model-objects-and-properties}
 
-When the data sources you want to integrate with the Form Data Model are available, you can add them to the Form Data Model as described in [Update data sources](create-form-data-models.md#update). Then, do the following to bind the unbound data model objects and properties:
+When the data sources you want to integrate with the Form Data Model(FDM) are available, you can add them to the Form Data Model(FDM) as described in [Update data sources](create-form-data-models.md#update). Then, do the following to bind the unbound data model objects and properties:
 
 1. In the form data model, select the unbound data source that you want to bind with a data source.
 1. Select **[!UICONTROL Edit Properties]**. 
-1. In the **[!UICONTROL Edit Properties]** pane, select the browse icon next to the **[!UICONTROL Binding]** field. It opens the **[!UICONTROL Select Object]** dialog that lists data sources added in the form data model.
+1. In the **[!UICONTROL Edit Properties]** pane, select the browse icon next to the **[!UICONTROL Binding]** field. It opens the **[!UICONTROL Select Object]** dialog that lists data sources added in the form data model(FDM).
 
    ![select-object](assets/select-object.png)
 
@@ -138,14 +138,14 @@ To read and write data for a data model object, do the following to configure re
 
    >[!NOTE]
    >
-   >In addition to data model objects and services, OData service metadata document includes navigation properties that define association between two data model objects. When you add an OData service data source to a Form Data Model, there is a service available in Form Data Model for all navigation properties in a data model object. You can use this service to read the navigation properties of the corresponding data model object. 
+   >In addition to data model objects and services, OData service metadata document includes navigation properties that define association between two data model objects. When you add an OData service data source to a Form Data Model(FDM), there is a service available in Form Data Model(FDM) for all navigation properties in a data model object. You can use this service to read the navigation properties of the corresponding data model object. 
    >
    >
    >For more information using the service, see [Working with navigation properties of OData services](#work-with-navigation-properties-of-odata-services).
 
 1. Toggle **[!UICONTROL Top Level Object]** to specify if the data model object is a top-level model object.
 
-   Data model objects configured in a Form Data Model are available for use in the Data Model Objects tab in the Content browser of an Adaptive Form based on the form data model. When you add association between two data model objects, the data model object you are associating with is nested under the data model object you are associating from in the **[!UICONTROL Data Model Objects]** tab. If the nested data model is a top-level object, it also appears separately in the **[!UICONTROL Data Model Objects]** tab. Therefore, you see two entries of it, one inside and another outside the nested hierarchy, which might confuse form authors. To make the associated data model object appear only in the nested hierarchy, disable the Top-Level Object property. 
+   Data model objects configured in a Form Data Model(FDM) are available for use in the Data Model Objects tab in the Content browser of an Adaptive Form based on the form data model(FDM). When you add association between two data model objects, the data model object you are associating with is nested under the data model object you are associating from in the **[!UICONTROL Data Model Objects]** tab. If the nested data model is a top-level object, it also appears separately in the **[!UICONTROL Data Model Objects]** tab. Therefore, you see two entries of it, one inside and another outside the nested hierarchy, which might confuse form authors. To make the associated data model object appear only in the nested hierarchy, disable the Top-Level Object property. 
 
 1. Select Read and Write services for the selected data model objects. The arguments for the services appear.
 
@@ -154,7 +154,7 @@ To read and write data for a data model object, do the following to configure re
    Read and write services configured for employee data source
 
 1. Select ![aem_6_3_edit](assets/edit.svg) for the read service argument to [bind the argument to a User Profile Attribute, Request Attribute, or Literal value](#bindargument) and specify the binding value.
-1. Select **[!UICONTROL Done]** to save the argument, **[!UICONTROL Done]** to save the properties, and then **[!UICONTROL Save]** to save the form data model.
+1. Select **[!UICONTROL Done]** to save the argument, **[!UICONTROL Done]** to save the properties, and then **[!UICONTROL Save]** to save the form data model(FDM).
 
 ### Bind Read service arguments {#bindargument}
 
@@ -228,11 +228,11 @@ For example, specifying attribute as `petid=100` in the request retrieves proper
 
 Typically, there are associations built between data model objects in a data source. The association can be one-to-one or one-to-many. For example, there can be multiple dependents associated with an employee. It is referred to as one-to-many association and depicted by `1:n` on the line connecting associated data model objects. However, if an association returns a unique employee name for a given employee ID, it is referred to as one-to-one association.
 
-When you add associated data model objects in a data source to a form data model, their associations are retained and displayed as connected by arrow lines. You can add associations between data model objects across disparate data sources in a form data model.
+When you add associated data model objects in a data source to a form data model(FDM), their associations are retained and displayed as connected by arrow lines. You can add associations between data model objects across disparate data sources in a form data model(FDM).
 
 >[!NOTE]
 >
->Predefined associations in a JDBC data source are not retained in the form data model. You must create them manually.
+>Predefined associations in a JDBC data source are not retained in the form data model(FDM). You must create them manually.
 
 To add an association:
 
@@ -242,7 +242,7 @@ To add an association:
 
    >[!NOTE]
    >
-   >In addition to data model objects and services, OData service metadata document includes navigation properties that define association between two data model objects. You can use these navigation properties when adding associations in Form Data Model. For more information, see [Working with navigation properties of OData services](#work-with-navigation-properties-of-odata-services).
+   >In addition to data model objects and services, OData service metadata document includes navigation properties that define association between two data model objects. You can use these navigation properties when adding associations in Form Data Model(FDM). For more information, see [Working with navigation properties of OData services](#work-with-navigation-properties-of-odata-services).
 
    The [!UICONTROL Add Association] dialog opens.
 
@@ -271,7 +271,7 @@ To add an association:
 
    Select **[!UICONTROL Done]** to save the argument.
 
-1. Select **[!UICONTROL Done]** to save the association and then **[!UICONTROL Save]** to save the form data model.
+1. Select **[!UICONTROL Done]** to save the association and then **[!UICONTROL Save]** to save the form data model(FDM).
 1. Repeat the steps to create more associations as required.
 
 >[!NOTE]
@@ -284,11 +284,11 @@ To add an association:
 
 ## Edit properties {#properties}
 
-You can edit properties of data model objects, their properties, and services added in the form data model.
+You can edit properties of data model objects, their properties, and services added in the form data model(FDM).
 
 To edit properties:
 
-1. Select the check box next to a data model object, a property, or a service in the form data model.
+1. Select the check box next to a data model object, a property, or a service in the form data model(FDM).
 1. Select **[!UICONTROL Edit Properties]**. The **[!UICONTROL Edit Properties]** pane for the selected model object, property, or service opens.
 
     * **[!UICONTROL Data model object]**: Specify the read and write services and edit arguments.
@@ -299,11 +299,11 @@ To edit properties:
 
    Edit Properties dialog for a get service
 
-1. Select **[!UICONTROL Done]** to save properties and then **[!UICONTROL Save]** to save the form data model.
+1. Select **[!UICONTROL Done]** to save properties and then **[!UICONTROL Save]** to save the form data model(FDM).
 
 ### Create computed properties {#computed}
 
-A computed property is the one whose value is computed based on a rule or an expression. Using a rule, you can set the value of a computed property to a literal string, a number, result of a mathematical expression, or the value of another property in the form data model.
+A computed property is the one whose value is computed based on a rule or an expression. Using a rule, you can set the value of a computed property to a literal string, a number, result of a mathematical expression, or the value of another property in the form data model(FDM).
 
 For example, you can create a computed property **FullName** whose value is a result of concatenation the existing **FirstName** and **LastName** properties. To do so:
 
@@ -327,7 +327,7 @@ For example, you can create a computed property **FullName** whose value is a re
 
    ![rule](assets/rule.png)
 
-1. On the form data model, select **[!UICONTROL Save]**. The computed property is configured.
+1. On the form data model(FDM), select **[!UICONTROL Save]**. The computed property is configured.
 
 ## Work with navigation properties of OData services {#work-with-navigation-properties-of-odata-services}
 
@@ -361,13 +361,13 @@ For more information about navigation properties, see [OData documentation](http
 </EntityType>
 ```
 
-When you configure an OData service in a Form Data Model, all navigation properties in an entity container are made available through a service in the Form Data Model. In this example of TripPin OData service, the three navigation properties in the `Person` entity container can be read using one `GET LINK` service in the Form Data Model.
+When you configure an OData service in a Form Data Model(FDM), all navigation properties in an entity container are made available through a service in the Form Data Model(FDM). In this example of TripPin OData service, the three navigation properties in the `Person` entity container can be read using one `GET LINK` service in the Form Data Model(FDM).
 
-The following highlights the `GET LINK of Person /People` service in the Form Data Model, which is a combined service for the three navigation properties in the `Person` entity of the TripPin OData service. 
+The following highlights the `GET LINK of Person /People` service in the Form Data Model(FDM), which is a combined service for the three navigation properties in the `Person` entity of the TripPin OData service. 
 
 ![nav-prop-service](assets/nav-prop-service.png)
 
-Once you add the `GET LINK` service to the Services tab in the Form Data Model, you can edit the properties to choose the output model object and the navigation property to use in the service. For example, the following `GET LINK of Person /People` service in the following example uses Trip as the output model object and the navigation property as Trips.
+Once you add the `GET LINK` service to the Services tab in the Form Data Model(FDM), you can edit the properties to choose the output model object and the navigation property to use in the service. For example, the following `GET LINK of Person /People` service in the following example uses Trip as the output model object and the navigation property as Trips.
 
 ![edit-prop-nav-prop](assets/edit-prop-nav-prop.png)
 
@@ -379,17 +379,17 @@ In this example, you can also choose the output model object as Person and navig
 
 ![edit-prop-nav-prop2](assets/edit-prop-nav-prop2.png)
 
-Similarly, you can choose a `GET LINK` service and configure its navigation properties when adding associations in the Form Data Model. However, to be able to select a navigation property, ensure that the **[!UICONTROL Binding To field]** is set to **[!UICONTROL Literal]**.
+Similarly, you can choose a `GET LINK` service and configure its navigation properties when adding associations in the Form Data Model(FDM). However, to be able to select a navigation property, ensure that the **[!UICONTROL Binding To field]** is set to **[!UICONTROL Literal]**.
 
 ![add-association-nav-prop](assets/add-association-nav-prop.png) 
 
 ## Generate and edit sample data {#sample}
 
-Form Data Model editor lets you generate sample data for all data model object properties, including computed properties, in a form data model. It is a set of random values that comply with the data type configured for each property. You can also edit and save data, which is retained even if you regenerate the sample data.
+Form Data Model(FDM) editor lets you generate sample data for all data model object properties, including computed properties, in a form data model(FDM). It is a set of random values that comply with the data type configured for each property. You can also edit and save data, which is retained even if you regenerate the sample data.
 
 Do the following to generate and edit sample data:
 
-1. Open a Form Data Model and select **[!UICONTROL Edit Sample Data]**. It generates and displays the sample data in Edit Sample Data window.
+1. Open a Form Data Model(FDM) and select **[!UICONTROL Edit Sample Data]**. It generates and displays the sample data in Edit Sample Data window.
 
    ![Generate Sample Data](assets/form_data_model_generate_sample_data_new.png)
 
@@ -399,9 +399,9 @@ Do the following to generate and edit sample data:
 
 ## Test data model objects and services {#test-data-model-objects-and-services}
 
-Your Form Data Model is configured but before putting it in use, you may want to test if the configured data model objects and services are working as expected. To test data model objects and services:
+Your Form Data Model(FDM) is configured but before putting it in use, you may want to test if the configured data model objects and services are working as expected. To test data model objects and services:
 
-1. Select a data model object or a service in the Form Data Model and select **[!UICONTROL Test Model Object]** or **[!UICONTROL Test Service]**, respectively.
+1. Select a data model object or a service in the Form Data Model(FDM) and select **[!UICONTROL Test Model Object]** or **[!UICONTROL Test Service]**, respectively.
 
    The Test Form Data Model window opens.
 
@@ -413,11 +413,11 @@ Your Form Data Model is configured but before putting it in use, you may want to
 
    ![Test Results](assets/test_results_form_data_model_new.png)
 
-Similarly, you can test other data model objects and services in the form data model.
+Similarly, you can test other data model objects and services in the form data model(FDM).
 
 ## Automated validation of input data {#automated-validation-of-input-data}
 
-The Form Data Model validates data received as input while invoking DermisBridge API (based on validation criteria available in form data model). The validation is based on the `ValidationOptions` flag set in the query object that is used to invoke the API.
+The Form Data Model(FDM) validates data received as input while invoking DermisBridge API (based on validation criteria available in form data model). The validation is based on the `ValidationOptions` flag set in the query object that is used to invoke the API.
 
 The flag can be set to any of the following values:
 
@@ -438,7 +438,7 @@ operationOptions.setValidationOptions(ValidationOptions.FULL);
 >The value that you provide for an attribute in the input data must match the data type defined for the attribute in the metadata document.   
 >If the value does not match the data type defined for the attribute, the DermisBridge API displays an exception irrespective of the value of the `ValidationOptions` flag. If the log level is set to Debug, an error is logged to the **error.log** file.
 
-The Form Data Model validates input data based on a list of data type constraints. The list of constraints for input data can vary based on the data source.
+The Form Data Model(FDM) validates input data based on a list of data type constraints. The list of constraints for input data can vary based on the data source.
 
 The following table lists the constraints for input data based on the data source:
 
@@ -547,4 +547,4 @@ An exception is displayed if the input data does not meet the validation criteri
 
 ## Next steps {#next-steps}
 
-You have a working Form Data Model that is now ready for use in Adaptive Forms <!--and interactive communications--> workflows. For more information, see [Use form data model](using-form-data-model.md).
+You have a working Form Data Model(FDM) that is now ready for use in Adaptive Forms <!--and interactive communications--> workflows. For more information, see [Use form data model(FDM)](using-form-data-model.md).

@@ -6,7 +6,7 @@ exl-id: 92870b32-e0d5-4cb4-9b88-81f88ca8ff64
 ---
 # Reference Assets for Forms as a Cloud Service {#reference-themes}
 
-You can get the reference themes, templates, and form data models by installing the [Reference Assets package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). It help quickly start and accelerate your Adaptive Forms development. You can use [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) to deploy this package to your Forms as a Cloud Service environment. 
+You can get the reference themes, templates, and form data model (FDM) by installing the [Reference Assets package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). It help quickly start and accelerate your Adaptive Forms development. You can use [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) to deploy this package to your Forms as a Cloud Service environment. 
 The reference assets included in the package are: 
 
 ## Themes {#themes}

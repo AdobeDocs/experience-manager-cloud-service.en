@@ -1,8 +1,8 @@
 ---
 title: The AEM Page Editor
 description: The AEM page editor is a powerful tool for authoring your content.
+exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
 ---
-
 # The AEM Page Editor {#editing-page-content}
 
 Once your page is created in the [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) you can edit the content of the page using the AEM page editor, a powerful tool for authoring your content.

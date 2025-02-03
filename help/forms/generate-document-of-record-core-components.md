@@ -322,6 +322,10 @@ To localize the branding information that you enter in the Document of Record ta
          * **Accent Color**: The color in which header text and separator lines are rendered in the document of record PDF.
          * **Font Family**: Font family of the text in the Document of Record PDF.
 
+            >[!NOTE]
+            >
+            > AEM Forms offers a variety of built-in fonts that seamlessly integrate with PDF files. To see the list of supported fonts, [click here](/help/forms/supported-out-of-the-box-fonts.md).
+
           * **Include form objects that are not bound to data model**: Setting the property includes unbound fields from Schema based Adaptive Form in the Document of Record.
 
           <!-- **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.-->

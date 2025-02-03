@@ -2,6 +2,7 @@
 title: Learn how to search and discover assets in [!DNL Assets view]?
 description: Learn how to search and discover assets in AEM Assets view. The powerful search functionality lets you quickly discover the appropriate asset and help you improve your content velocity.
 role: User
+exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 ---
 # Search assets in [!DNL Assets view] {#search-assets}
 
@@ -13,7 +14,7 @@ role: User
 
 [!DNL Assets view] provides effective search, that just works by default. The search is comprehensive as it is full-text search. The powerful search functionality lets you quickly discover the appropriate asset and help you improve your content velocity. [!DNL Assets view] provides full-text search and even searches through the metadata such as smart tags, title, date created, and copyright.
 
-To search assets, 
+To search assets:
 
 * Click in the search box at the top of the page. By default, it searches within the folder that you are currently browsing. Do one of the following:
 
@@ -232,6 +233,93 @@ You can preview to check the layout and formatting of the search first homepage.
 1. Click **[!UICONTROL Close]** to close the preview screen.
 
    ![Search first homepage preview](assets/search-first-preview.gif)
+
+## Contextual Search {#contextual-search}
+
+You can also search assets available in the repository by defining text prompts. Experience Manager Assets automatically transforms those text prompts to search filters and displays the search results. You can view and modify automatic filters using the Filters Pane to further narrow down the search results.
+
+### Access Contextual Search {#access-contextual-search}
+
+To access Contextual Search in Experience Manager Assets:
+
+1. Click **[!UICONTROL Search]** in the left pane.
+
+   ![Contextual Search](assets/access-contextual-search.png)
+
+1. Define the text prompt in the Search text box and click **[!UICONTROL Contextual Search]**.
+
+   ![Contextual Search text prompt](assets/contextual-search-text-prompt.png)
+
+   [!DNL Experience Manager Assets] displays the search results.
+
+
+### Supported filters {#supported-filters}
+
+Contextual Search supports the following filters out-of-the-box. Base your text prompts on these filters to view appropriate search results.
+
+* Image height
+
+* Image width
+
+* File type: image, document, video, or folder.
+
+* MIME type: JPG, PNG, TIFF, GIF, MP4, PDF, PPTX, DOCX or XLSX
+
+* Created date
+
+* Modified date
+
+* Expiration date
+
+* Asset status: Approved, Rejected, or all
+
+* Expired assets
+
+### Examples for the text prompts {#text-prompts-examples}
+
+**Example 1**
+
+**Text Prompt**: Images created this month.
+
+[!DNL Experience Manager Assets] applies the following filters automatically and displays the search results:
+
+![Contextual Search Example 1](assets/contextual-search-example1.png)
+
+**Example 2**
+
+**Text prompt**: Images at least 200px tall and 100px wide with beach and clear sky.
+
+[!DNL Experience Manager Assets] applies the following filters automatically and displays the search results:
+
+![Contextual Search Example 2](assets/contextual-search-example2.png)
+
+**Example 3**
+
+**Text prompt**: I need images of blue sky that are 1500 and 2500 pixel height and created in the past month that are not expired and approved.
+
+[!DNL Experience Manager Assets] applies the following filters automatically and displays the search results:
+
+![Contextual Search Example 3](assets/contextual-search-example3.png)
+
+The following video illustrates the end-to-end process from accessing the Contextual Search User Interface to defining text prompts, and viewing the search results.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3428407)
+
+<!--
+### Disable Contextual Search {#disable-contextual-search}
+
+Administrators also have the option to disable Contextual Search for users in your organization. To do so, execute the following steps:
+
+1. Navigate to **[!UICONTROL Settings]** > **[!UICONTROL General Settings]**.
+
+1. In the [!UICONTROL Contextual Search] section, turn off the **[!UICONTROL Enable Contextual Search for your organization]** toggle to disable the Contextual Search feature for all users in your organization.  
+-->
+
+### Contextual Search feedback {#contextual-search-feedback}
+
+If you need to provide feedback on the Contextual Search feature, click ![Contextual Search icon](assets/do-not-localize/Smock_Help_18_N.svg) and click the Feedback icon. Select the feedback type, specify the subject and description, and click **[!UICONTROL Submit]**.
+
+![Contextual Search feedback](assets/contextual-search-feedback.png)
 
 ## Next Steps {#next-steps}
 

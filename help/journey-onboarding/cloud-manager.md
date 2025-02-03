@@ -104,8 +104,6 @@ Once you have successfully logged into Cloud Manager, you can verify that you ha
 
 1. Select your profile from the top right of the window.
 
-   ![User profile](/help/journey-onboarding/assets/setup-resources5.png)
-
 1. To display the roles assigned to your user, select **User Roles**.
 
    ![User roles](/help/journey-onboarding/assets/setup-resources6.png)

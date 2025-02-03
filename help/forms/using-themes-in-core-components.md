@@ -122,7 +122,7 @@ To clone a theme, perform the following instructions:
 1. Run the following command:
 
    ```
-         code .
+      code .
    ```
 
       ![Open the theme folder in a plain text editor](/help/forms/assets/aem-forms-theme-folder-in-vs-code.png)
@@ -131,14 +131,31 @@ To clone a theme, perform the following instructions:
 
 1. Open the `package.json` file for editing. 
 
-1. Set the values for the `name` and `description` attributes. 
+1. Set the values for the `name` and `version` attributes. 
 
-      The name attribute is used to uniquely identify the theme, such as "aem-forms-wknd-theme" and displayed in the **Style** tab of **Form Creation Wizard**. The description attribute provides additional details about the theme, including its purpose and the scenarios it is designed for. You can also specify the version, description, and license for the theme.
+    ![Canvas Theme name change image](/help/forms/assets/changename_canvastheme.png)
 
-1. Save and close the file. 
+      >[!NOTE]
+      >
+      > * The name attribute is used to uniquely identify the theme , and the specified name is displayed in the **Style** tab of the **Form Creation Wizard**. 
+      > * You have the option to select a name for your theme according to your choice, for example, `mytheme` or `customtheme`. However, for this case, we have specified the name as `aem-forms-wknd-theme`. 
 
-![Canvas Theme name change image](/help/forms/assets/changename_canvastheme.png)
+1. Open the `package-lock.json` file for editing.
+1. Set the values for the `name` and `version` attributes. Ensure that the values for the `name` and `version` attributes in the `Package-lock`.json file match those in the `Package.json` file.
+   
+    ![Canvas Theme name change image](/help/forms/assets/changename_canvastheme-package-lock.png)
 
+1. (Optional) Open the `ReadMe` file for editing and update the name of the theme. 
+   
+      ![Canvas Theme name change image](/help/forms/assets/changename_canvastheme-readme-file.png)
+
+1. Save and close the files. 
+
+**Considerations while setting name of the theme**
+
+   * It is mandatory to remove the `@aemforms` from the theme name in `Package.json` file and `Package-lock.json` file. In case, you fail to remove `@aemforms` from your customized theme name, it results in the failure of the frontend pipeline during the theme deployment.
+   * It is recommended to update the theme `version` in `Package.json` file and `Package-lock.json` file to accurately reflect changes and enhancements over time for your theme.
+   * For the important information about the usage, installation instructions, and other relevant details, it is recommended to update the name of the theme in the `ReadMe` file.
 
 #### 3. Customize a theme {#customize-the-theme}
 

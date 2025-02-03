@@ -19,7 +19,7 @@ exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
 
 * **User Experience (UX) Designer**: A User Experience (UX) Designer defines style, layout, and branding for [!DNL AEM Forms] assets.
 
-* **Forms practitioner**: A Forms practitioner creates Adaptive Forms, themes, and templates as per the style, layout, and branding provided by the UX Designer. The practitioner also creates and integrates Adaptive Form with a Form Data Model and AEM Workflows. A Forms Practitioner typically undertakes front-end related tasks.
+* **Forms practitioner**: A Forms practitioner creates Adaptive Forms, themes, and templates as per the style, layout, and branding provided by the UX Designer. The practitioner also creates and integrates Adaptive Form with a Form Data Model (FDM) and AEM Workflows. A Forms Practitioner typically undertakes front-end related tasks.
 
 * **Forms developer**: A Forms developer develops a custom forms solution. A Forms developer typically undertakes backend development like developing custom components, AEM Workflows, pre-fill services and more.
 

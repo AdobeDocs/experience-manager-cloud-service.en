@@ -8,8 +8,6 @@ exl-id: fb86c510-3c41-4511-81b7-1bdf2f5e7dd3
 
 Learn how the Universal Editor authenticates.
 
-{{universal-editor-status}}
-
 ## Options {#options}
 
 The Universal Editor uses Adobe's Identity Management System (IMS) authentication, which is provided via the Unified Shell.
@@ -36,3 +34,4 @@ To learn more about the Universal Editor, see these documents.
 * [Getting Started with the Universal Editor in AEM](getting-started.md) - Learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
 * [Universal Editor Architecture](architecture.md) - Learn about the architecture of the Universal Editor and how data flows between its services and layers.
 * [Attributes and Types](attributes-types.md) - Learn about the data attributes and types that the Universal Editor requires.
+

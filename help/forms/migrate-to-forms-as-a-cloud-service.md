@@ -122,14 +122,14 @@ Perform the following steps to make your [!DNL AEM Forms] assets compatible with
 
     <!-- 1. Install the latest [Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) to your cloned [!DNL AEM Forms] environment. -->
 
-1. Run the [Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration). While specifying parameters on the **[!UICONTROL Create Migration Set]** screen, specify the path of Adaptive Forms, themes, templates, Form Data Models, Cloud Services, Custom Components and other AEM Forms-specific assets to the **[!UICONTROL Paths to be included]** option. It adds specified [!DNL AEM Forms] assets to migration set. 
+1. Run the [Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration). While specifying parameters on the **[!UICONTROL Create Migration Set]** screen, specify the path of Adaptive Forms, themes, templates, Form Data Model (FDM), Cloud Services, Custom Components and other AEM Forms-specific assets to the **[!UICONTROL Paths to be included]** option. It adds specified [!DNL AEM Forms] assets to migration set. 
 
 ## Paths of various AEM Forms-specific assets 
 
 When you migrate from AEM Forms 6.5 to the cloud service, you can locate the AEM Forms-specific assets at:
 
 * **Adaptive Forms**: You can find Adaptive forms at `/content/dam/formsanddocuments/`and `/content/forms/af`. For example, for an adaptive form titled WKND Registration add paths `/content/dam/formsanddocuments/wknd-registration` and `/content/forms/af/wknd-registration`. 
-* **Form Data Model**: You can find all the Form Data Models at `/content/dam/formsanddocuments-fdm`. For example, `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`.
+* **Form Data Model**: You can find all the Form Data Model (FDM) at `/content/dam/formsanddocuments-fdm`. For example, `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`.
 
 * **Client libraries**: The default path of client libraries is `/etc/clientlibs/fd/theme`. 
 
@@ -137,7 +137,7 @@ When you migrate from AEM Forms 6.5 to the cloud service, you can locate the AEM
 
 * **Adaptive Form themes and Client libraries**: The default path of themes is ` /content/dam/formsanddocuments-themes/` and default path of client libraries is `/etc/clientlibs/fd/theme`. For example, for a template titled WKND Theme add path ` /content/dam/formsanddocuments-themes/wkndtheme` and client libraries for the theme at `/etc/clientlibs/reference-themes/wkndtheme-3-0`. You can also have themes and client libraries at other custom paths.
 
-* **Cloud Configurations**: You can find Cloud Configurations at `/conf/`. For example, Form Data Model cloud configuration is at `/conf/global/settings/cloudconfigs/fdm`.
+* **Cloud Configurations**: You can find Cloud Configurations at `/conf/`. For example, Form Data Model (FDM) cloud configuration is at `/conf/global/settings/cloudconfigs/fdm`.
 
 * **Workflow Model**: You can find AEM Workflow Models at `/conf/global/settings/workflow/models/`. For example, for an workflow model titled WKND Registration add path `/conf/global/settings/workflow/models/wknd-registration`
 
