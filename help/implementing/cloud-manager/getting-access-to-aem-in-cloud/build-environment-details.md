@@ -87,7 +87,7 @@ We recommend the following deployment strategy:
 
 ##### About some translation features {#translation-features}
 
-The following features might not function correctly when building with Java 21 or Java 17, and Adobe expects to resolve them by early 2025:
+The following features might not function correctly when deployed on the Java 21 runtime, and Adobe expects to resolve them by early 2025:
 
 * `XLIFF` (XML Localization Interchange File Format) fails when using Human Translation.  
 * `I18n` (Internationalization) does not properly handle language locales Hebrew (`he`), Indonesian (`in`), and Yiddish (`yi`) due to changes in the Locale constructor in newer Java versions.
