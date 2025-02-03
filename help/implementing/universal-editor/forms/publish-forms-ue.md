@@ -24,10 +24,10 @@ You can publish any **EDS-based Adaptive Form** to Edge Delivery by following th
    ![Click Publish](/help/forms/assets/click-publish.png)
 
 3. On the **Publish** screen, you can see that your form is configured with the `edge-delivery-service-configuration` along with the selected template. In this example, a **Wknd_Form** template is used. Click **Publish**, and a confirmation pop-up appears indicating that your form is published.
-   ![Publish Success](publish-success.png)
+   ![Publish Success](/help/forms/assets/publish-success.png)
 
 4. To check the form’s publish status, click **Publish** again.
-   ![Publish Status](publish-status.png)
+   ![Publish Status](/help/forms/assets/publish-status.png)
 
 5. To **unpublish** a form, click the three-dot menu in the upper-right corner and select **Unpublish**.
 
