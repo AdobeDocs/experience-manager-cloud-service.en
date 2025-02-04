@@ -79,16 +79,22 @@ To migrate to building with Java 21 or Java 17, you must first upgrade to the la
 
 When migrating your application to a new Java build version and runtime version, thoroughly test in dev and stage environments before deploying to production.
 
+We recommend the following deployment strategy:
+
+1. Run your local SDK with Java 21, which you can download from https://experience.adobe.com/#/downloads, and deploy your application to it and validate its functionality. Check the logs that there are no errors, which indicate problems with classloading or bytecode weaving.
+1. Configure a branch in your Cloud Manager repository to use Java 21 as buildtime Java version, configure a DEV pipeline to use this branch and run the pipeline. Run your validation tests.
+1. If it looks good, configure your stage/prod pipeline to use Java 21 as buildtime Java version and run the pipeline.
+
 ##### About some translation features {#translation-features}
 
-The following features might not function correctly when building with Java 21 or Java 17, and Adobe expects to resolve them by early 2025:
+The following features might not function correctly when deployed on the Java 21 runtime, and Adobe expects to resolve them by early 2025:
 
 * `XLIFF` (XML Localization Interchange File Format) fails when using Human Translation.  
 * `I18n` (Internationalization) does not properly handle language locales Hebrew (`he`), Indonesian (`in`), and Yiddish (`yi`) due to changes in the Locale constructor in newer Java versions.
 
 #### Runtime requirements {#runtime-requirements}
 
-The Java 21 runtime is used for builds with Java 21 and Java 17, and it will gradually be applied to Java 11 builds too (see the Note below). To ensure compatibility, the following adjustments are required.
+The Java 21 runtime is used for builds with Java 21 and Java 17, and it will gradually be applied to Java 11 builds too (see the Note below). An environment must be on AEM release 17098 or more recent to receive the Java 21 update. To ensure compatibility, the following adjustments are required.
 
 Library updates can be applied anytime, as they remain compatible with older Java versions.
 
