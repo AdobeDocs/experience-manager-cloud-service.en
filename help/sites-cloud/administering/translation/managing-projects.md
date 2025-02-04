@@ -280,15 +280,11 @@ You can add pages, assets, tags or i18n dictionaries to the Translation Job of y
 
 1. Click Add and I18N-Dictionary.
 
-   ![chlimage_1-251](assets/chlimage_1-251.png)
+   ![Add i18n dictionary](../assets/add-i18n.png)
 
 1. Select the **Root Directory**, and dictionary (if necessary), that you want to add, and then select **Add**.
 
-   ![i18N Dictionary](assets/tc-manage-i18n-dictionary.png)
-
-1. If requested, select the nature of the update:
-
-   ![Translate](assets/tc-manage-translate.png)
+   ![Select i18N Dictionary](../assets/select-i18n.png)
 
 Your dictionary is now in your translation job.
 
