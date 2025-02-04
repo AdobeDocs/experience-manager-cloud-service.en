@@ -21,6 +21,12 @@ Through a simple configuration, a content author can now enable progressive web 
 >
 >Before using this feature, Adobe recommends that you discuss this with your development team to define the best way to use it for your project.
 
+>[!IMPORTANT]
+>
+>The progressive web app (PWA) features for AEM Sites [have been deprecated.](/help/release-notes/release-notes-cloud/release-notes-current.md#pwa-features)
+>
+>Existing projects using this feature will continue to be supported, but new projects should not use this feature.
+
 ## Introduction {#introduction}
 
 [Progressive web apps (PWAs)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) enable immersive app-like experiences for AEM sites by allowing them to be stored locally on a user's machine and be accessible offline. A user could browse a site while on-the-go even if losing an internet connection. PWAs allow a seamless experience even if the network is lost or unstable.
