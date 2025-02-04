@@ -1344,6 +1344,7 @@ user-guide-title: AEM as a Cloud Service
     + Internationalization{#internationalization}
       + [Internationalizing Components](/help/implementing/developing/extending/i18n/components.md)
       + [Internationalizing UI Strings](/help/implementing/developing/extending/i18n/dev.md)
+      + [Using Translator to Manage Dictionaries](/help/implementing/developing/extending/i18n/translator.md)
       + [Extracting Strings for Translating](/help/implementing/developing/extending/i18n/extract.md)
   + Deploying to AEM as a Cloud Service {#deploying}
     + [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md)
