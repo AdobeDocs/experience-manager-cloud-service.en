@@ -5,6 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
 ---
+
 # Managing Taxonomy Data {#managing-taxonomy-data}
 
 Learn how to manage taxonomy data for using tags with your AEM with Edge Delivery Services sites.
@@ -71,7 +72,7 @@ You start editing a taxonomy page like any other page in AEM.
 
 The page displayed in the Page Editor is read-only because the content of the taxonomy is generated automatically from the selected tag(s) and namespace(s). They act as a kind of filter for automatically generating the content of the taxonomy. Therefore there is no reason to directly edit the page in the editor.
 
-AEM automatically updates the content of the taxonomy page when you update the underlying tag(s) and namespace(s). However you must [republish the taxonomy](#publishing) after any change to make those changes available to your users.
+AEM automatically updates the content of the taxonomy page when you update the underlying tag(s) and namespace(s). However you must [republish the taxonomy](#publishing) after any change in order to make those changes available to your users.
 
 ## Update paths.json for Taxonomy Publication {#paths-json}
 
@@ -149,6 +150,10 @@ Use the `<taxonomy-json-name>` that you defined when [mapping your taxonomy to t
       "title": "Translate"
     }
   ],
+  "columns": [
+    "tag",
+    "title"
+  ],
   ":type": "sheet"
 }
 ```
@@ -156,3 +161,48 @@ Use the `<taxonomy-json-name>` that you defined when [mapping your taxonomy to t
 This JSON data will automatically update as you update the taxonomy and republish it. Your app can programmatically access this information for your users.
 
 [If you maintain tags in multiple languages,](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages) you can access those languages by passing in the ISO2 language code as the value of a `sheet=` parameter.
+
+## Exposing Additional Tag Properties {#additional-properties}
+
+By default, your taxonomy will contain `tag` and `title` values as seen [in the previous example.](#accessing) You can configure your taxonomy to expose additional tag properties. In this example we will expose the tag description.
+
+1. Use the Sites console to select the taxonomy you created.
+1. Tap or click the **Properties** icon in the toolbar.
+1. In the **Additional Properties** section, tap or click **Add** to add a field.
+1. In the new field enter the JRC property name to expose. In this case, enter `jcr:description` for the tag description.
+1. Tap or click **Save &amp; Close**.
+1. With the taxonomy still selected, tap or click **Quick Publish** in the toolbar.
+
+Now [when you access your taxonomy,](#accessing) the tag description (or whatever property you chose to expose) is included in the JSON.
+
+```json
+
+{
+  "total": 3,
+  "offset": 0,
+  "limit": 3,
+  "data": [
+    {
+      "tag": "default:",
+      "title": "Standard Tags",
+      "jcr:description": "These are the standard tags"
+    },
+    {
+      "tag": "do-not-translate",
+      "title": "Do Not Translate",
+      "jcr:description": "Tag to mark pages that should not be translated"
+    },
+    {
+      "tag": "translate",
+      "title": "Translate",
+      "jcr:description": "Tag to mark pages that should be translated"
+    }
+  ],
+  "columns": [
+    "tag",
+    "title",
+    "jcr:description"
+  ],
+  ":type": "sheet"
+}
+```
