@@ -1,0 +1,33 @@
+---
+title: Use reCAPTCHA with Edge Delivery Services for AEM Forms as a Cloud Service
+description: Use Google reCAPTCHA in an form for Edge Delivery Services for AEM Forms 
+feature: Edge Delivery Services
+role: Admin, Architect, Developer
+hide: yes
+hidefromtoc: yes
+---
+
+# Use reCAPTCHA in WYSIWYG authoring
+
+CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) is a popular tool used to protect websites from fraudulent activities, spam, and misuse. 
+
+For example, consider a form that collects data such as start and end trip dates, room budget, estimated trip cost, and traveler information. In such cases, there is a risk of malicious users exploiting the form for purposes like sending phishing emails or flooding it with irrelevant or harmful content using spambots. Integrating CAPTCHA offers added security by verifying that submissions are from genuine users, effectively minimizing spam entries.
+
+![Google recaptcha](/help/edge/docs/forms/universal-editor/assets/google-recaptcha.png)
+
+In Edge Delivery Services Forms, the Form Block provides the capability to [connect Google reCAPTCHA with forms](#connect-your-edge-delivery-services-forms-with-recaptcha-service-by-google) using the **Captcha(Invisible)** component to distinguish between humans and bots. This feature helps users protect their website from spam and misuse.
+
+In Edge Delivery Services Forms, the  `Form` Block provides the capability to [connect Google reCAPTCHA with forms](#connect-your-edge-delivery-services-forms-with-recaptcha-service-by-google) to distinguish between humans and bots using the **Captcha(Invisible)** component. This feature allows users to protect their website from spam and misuse.
+
+## Connect your Edge Delivery Services Forms with reCAPTCHA service by Google
+
+Edge Delivery Services Forms authors can use the reCAPTCHA service offered by Google to implement reCAPTCHA in forms. Based on your requirement you can configure one of the following reCAPTCHA service for your Edge Delivery Services Forms:
+
+* reCAPTCHA Enterprise
+* reCAPTCHA 
+
+>[!NOTE]
+>
+> * Edge Delivery Services Forms supports reCAPTCHA and reCAPTCHA Enterprise. 
+> * Any other Google reCAPTCHA version is not supported.
+> * For more information on how reCAPTCHA works, see [Google reCAPTCHA](https://developers.google.com/recaptcha/). 
