@@ -286,9 +286,7 @@ You can add pages, assets, tags or i18n dictionaries to the Translation Job of y
 
    ![Select i18N Dictionary](../assets/select-i18n.png)
 
-Your dictionary is now in your translation job.
-
-![chlimage_1-253](assets/chlimage_1-253.png)
+Your dictionary is now in your translation job and the translation process can then be started to create the dictionary language copies in `/content/cq:i18n` and to send those dictionary language copies for translation. 
 
 >[!NOTE]
 >
