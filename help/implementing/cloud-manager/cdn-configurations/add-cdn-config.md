@@ -17,6 +17,8 @@ For Adobe managed CDNs, when using a DV SSL certificate, only sites with ACME va
 >
 >Have you [added a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) and [added an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md), respectively? If not, you must complete these two tasks before you can add a CDN configuration.
 
+See also [Adobe Managed CDN](https://www.aem.live/docs/byo-cdn-adobe-managed).
+
 **To add a CDN configuration:**
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
