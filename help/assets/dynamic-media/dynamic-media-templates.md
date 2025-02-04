@@ -39,6 +39,9 @@ To create a Dynamic Media template, you must have:
 
 1. Access to Dynamic Media.
 1. [Synced the images available in your AEM Assets instance with Dynamic Media to use them for creating the template](/help/assets/dynamic-media/config-dm.md).
+1. verified the following in the Touch UI:
+   * **[!UICONTROL Dynamic Media sync mode]** that is set to **[!UICONTROL Disabled by default]**, is not applied to all AEM folders (**[!UICONTROL Sync all content]** is unchecked).
+   * **[!UICONTROL Dynamic Media sync mode]** is set to **[!UICONTROL Enable for subfolder]** for the destination folder or subfolder where you will save the template after creation.
 
 ## Create Dynamic Media WYSIWYG template{#how-to-create-dynamic-media-wysiwyg-template}
 
