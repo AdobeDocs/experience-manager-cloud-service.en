@@ -24,7 +24,7 @@ Once you are ready to share your form with your customers for data collection or
 
 1. Open your Microsoft SharePoint or Google Drive account and navigate to your AEM Edge Delivery project directory.
 
-1. Open the spreadsheet that has your form. For example, the `enquiry` form Microsoft Excel workbook. 
+1. Open the spreadsheet that has your form. For example, the [enquiry](/help/edge/assets/enquiry.xlsx) form Microsoft Excel workbook. 
 
 1. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview the sheet. 
 
@@ -39,7 +39,7 @@ Once you are ready to share your form with your customers for data collection or
 
     ```JSON
 
-        https://<branch>--<repository>--<owner>.hlx.live/<form>.json
+        https://<branch>--<repository>--<owner>.aem.live/<form>.json
        
     ```
 
@@ -47,9 +47,10 @@ Once you are ready to share your form with your customers for data collection or
     * `<repository>` denotes your GitHub repository. 
     * `<owner>` refers to username of your GitHub account that hosts your GitHub repository.
 
-    For example, if your project's repository is named "portal", it's located under the account "wkndforms", and you're using the "main" branch, the URL look like the following:
+    For example, if your project's repository is named "wefinance", it's located under the account "wkndform", and you're using the "main" branch and form as "enquiry", the URL look like the following:
 
-    `https://main--portal--wkndforms.hlx.page/enquiry.json`
+    `https://main--wefinance--wkndform.aem.live/enquiry.json`
+    <!--(https://main--wefinance--wkndform.aem.live/enquiry.json)-->
 
 +++
 
@@ -62,15 +63,15 @@ To add the form to your webpage:
 
 1. Access your Microsoft SharePoint or Google Drive account and navigate to your `[AEM Edge Delivery project directory]`.
 
-1. Open a document file where you intend to embed the form. For instance, you can open the `index.docx` file, or alternatively, create a new document.
+1. Open a document file where you intend to embed the form. For example, you can open the [enquiry-form.docx](/help/edge/assets/enquiry-form.docx) file, or alternatively, create a new document.
  
 1. Identify the desired section within the document where you want to insert the form, and navigate to it accordingly.
 
-1. Add a block named 'Form' to the file, similar to the example provided below:
+1. Add a block named 'Form' to the file. For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch.
 
     | Form  |
     |---|
-    | [https://main--wefinance--wkndforms.hlx.live/enquiry.json ](https://main--wefinance--wkndforms.hlx.live/enquiry.json)  |
+    | `https://main--wefinance--wkndform.aem.live/enquiry.json`  |
 
     ![Add a block named 'Form' to the file](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
@@ -81,25 +82,29 @@ To add the form to your webpage:
      >
      > Ensure that the URL is formatted as a hyperlink rather than being displayed as plain text.
     
-    Use the preview URL (.page URL) for developmental or testing purposes, or the publish URL (.live) for production. Here's are examples with preview and publish URL: 
+    Use the preview URL (.page URL) for developmental or testing purposes, or the publish URL (.live) for production. 
+    
+    For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch.
+
+    Here's are examples with preview and publish URL: 
 
     **Preview URL**
 
     | Form  |
     |---|
-    | [https://main--wefinance--wkndforms.hlx.page/enquiry.json ](https://main--wefinance--wkndforms.hlx.page/enquiry.json)  |
+    | `https://main--wefinance--wkndform.aem.page/enquiry.json` |
 
 
     **Publish URL**
 
     | Form  |
     |---|
-    | [https://main--wefinance--wkndforms.hlx.live/enquiry.json ](https://main--wefinance--wkndforms.hlx.live/enquiry.json)  |
+    | `https://main--wefinance--wkndform.aem.live/enquiry.json`  |
 
-1. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview the webpage. The page now displays the form. For example, here is the form based on the [enquiry spreadsheet](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0): 
+1. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview the webpage. The page now displays the form. For example, here is the form based on the [enquiry spreadsheet](/help/edge/assets/enquiry-form.docx): 
 
 
-    ![A sample EDS form](/help/edge/assets/eds-form.png)
+    ![A sample EDS form](/help/edge/assets/updated-form.png)
 
 1. Use AEM Sidekick to publish the form. Now, your customers can fill out the form and submit it. 
 

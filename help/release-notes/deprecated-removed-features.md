@@ -29,6 +29,8 @@ Customers are advised to review if they use the feature/capability in their curr
 
 | Capabilities | Deprecated feature | Replacement |
 | ------------ | ------------------ | ----------- |
+|Sites|[PWA Features](/help/sites-cloud/authoring/sites-console/enable-pwa.md)|None|
+|Sites|[SPA Editor](/help/implementing/developing/hybrid/introduction.md)|The preferred editors for managing headless content in AEM are:<br>- [The Universal Editor](/help/edge/wysiwyg-authoring/authoring.md) for visual editing.<br>- [The Content Fragment Editor](/help/assets/content-fragments/content-fragments-managing.md) for form-based editing.|
 |[!DNL Sites]|[JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api)|[Java Use API](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api)|
 | [!DNL Sites]       | Experience Fragments properties for **Social Media Status**. | The feature is planned for removal soon. |
 | [!DNL Sites]       | Template-based simple content fragments. | [Model-based structured content fragments](/help/assets/content-fragments/content-fragments-models.md) now. |
@@ -504,9 +506,9 @@ Additional information about OSGI configuration can be found at [this location](
 
 ## Java runtime update to version 21 {#java-runtime-update-21}
 
-<!-- NEW but needed to be removed for now; removed 12/5/24 LEAVE HERE, DO NOT DELETE Adobe Experience Manager as a Cloud Service is transitioning to the Java 21 runtime. To ensure compatibility, updating library versions as outlined in [Runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) is essential. -->
+Adobe Experience Manager as a Cloud Service is transitioning to the Java 21 runtime. To ensure compatibility, updating library versions as outlined in [Runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) is essential.
 
-AEM as a Cloud Service will be moving to Java 21 runtime. In order to ensure compatibility, it is essential to make the following adjustments:
+<!-- (OLD Removed from here to end of topic 1/16/25 as per instruction in https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3359689801) AEM as a Cloud Service will be moving to Java 21 runtime. In order to ensure compatibility, it is essential to make the following adjustments:
 
 ### Runtime Requirements
 
@@ -578,3 +580,4 @@ The `maven-scr-plugin` is not directly compatible with Java 17 and 21. However, 
    ...
  </project>
 ```
+-->

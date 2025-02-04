@@ -18,7 +18,7 @@ Most of these traffic filter rules are available to all AEM as a Cloud Service S
 
 A subcategory of traffic filter rules requires either an Enhanced Security license or WAF-DDoS Protection license. These powerful rules are known as WAF (Web Application Firewall) traffic filter rules (or WAF rules for short) and have access to the [WAF Flags](#waf-flags-list) described later in this article.
 
-Traffic filter rules can be deployed via Cloud Manager config pipelines to dev, stage, and production environment types in production (non-sandbox) programs. The configuration file can be deployed to Rapid Developement Environments (RDEs) using command line tooling.
+Traffic filter rules can be deployed via Cloud Manager config pipelines to dev, stage, and production environment types. The configuration file can be deployed to Rapid Development Environments (RDEs) using command line tooling.
 
 [Follow through a tutorial](#tutorial) to quickly build concrete expertise on this feature.
 
@@ -178,7 +178,7 @@ A Group of Conditions is composed of multiple Simple and/or Group Conditions.
 
 | **Property**   | **Type**  | **Description**  |
 |---|---|---|
-| reqProperty  | `string`  | Request property.<br><br>One of:<br><ul><li>`path`: Returns the full path of a URL without the query parameters.</li><li>`queryString`: Returns the query part of a URL</li><li>`method`: Returns the HTTP method used in the request.</li><li>`tier`: Returns one of `author`, `preview`, or `publish`.</li><li>`domain`: Returns the domain property (as defined in the `Host` header) in lower-case</li><li>`clientIp`: Returns the client IP.</li><li>`clientCountry`: Returns a two letter code ([Regional indicator symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) that identify in which country the client is located.</li></ul> |
+| reqProperty  | `string`  | Request property.<br><br>One of:<br><ul><li>`path`: Returns the full path of a URL without the query parameters. (use `pathRaw` for the unescaped variant)</li><li>`url`: Returns the full URL including the query parameters. (use `urlRaw` for the unescaped variant)</li><li>`queryString`: Returns the query part of a URL</li><li>`method`: Returns the HTTP method used in the request.</li><li>`tier`: Returns one of `author`, `preview`, or `publish`.</li><li>`domain`: Returns the domain property (as defined in the `Host` header) in lower-case</li><li>`clientIp`: Returns the client IP.</li><li>`forwardedDomain`: Returns the first domain defined in the `X-Forwarded-Host` header in lower-case</li><li>`forwardedIp`: Returns the first IP in `X-Forwarded-For` header.</li><li>`clientCountry`: Returns a two letter code ([Regional indicator symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) that identify in which country the client is located.</li></ul> |
 | reqHeader  | `string`  | Returns Request Header with specified name  |
 | queryParam  | `string` | Returns Query Parameter with specified name  |
 | reqCookie  | `string`  | Returns Cookie with specified name  |
