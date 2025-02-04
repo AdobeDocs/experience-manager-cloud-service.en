@@ -208,10 +208,10 @@ To write rules, perform the following steps:
    1. Open a form in Universal Editor for editing.
    1. Add the following form components:
       * Tax Calculation Form (Title)
-      * Gross Salary (Text Input)
-      * Additional Deduction (Text Input)
-      * Taxable Income (Text Input)
-      * Tax Payable (Text Input)
+      * Gross Salary (Number Input)
+      * Additional Deduction (Number Input)
+      * Taxable Income (Number Input)
+      * Tax Payable (Number Input)
       * Submit (Submit Button)
    1. Hide the `Additional Deduction` form field, by opening its `Properties`.
    
