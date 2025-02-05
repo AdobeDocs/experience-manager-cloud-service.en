@@ -1,7 +1,6 @@
 ---
 title: Generate Variations
 description: Learn about Generate Variations, accessible from AEM as a Cloud Service and the Sidekick of Edge Delivery Services
-exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations
 role: Admin, Architect, Developer
 ---
@@ -437,15 +436,11 @@ Generate Variations can be accessed from the [Navigation Panel](/help/sites-clou
 
 ### Access from the AEM Sidekick {#access-aem-sidekick}
 
-Some configuration is needed before you can access Generate Variations from the Sidekick (of Edge Delivery Services). 
+Some configuration is needed before you can access Generate Variations from the Sidekick (of Edge Delivery Services).
 
->[!NOTE]
->
->See the document [Installing the AEM Sidekick](https://www.aem.live/docs/sidekick-extension) for how to install and configure the Sidekick.
+1. See the document [Installing the AEM Sidekick](https://www.aem.live/docs/sidekick-extension) for how to install and configure the Sidekick.
 
-To use the Generate Variations in the Sidekick (of Edge Delivery Services), include the following configurations in your Edge Delivery Services projects.
-
-1. Enable our app in:
+1. To use the Generate Variations in the Sidekick (of Edge Delivery Services), include the following configuration in your Edge Delivery Services projects under:
 
    * `tools/sidekick/config.json` 
 
@@ -455,92 +450,21 @@ To use the Generate Variations in the Sidekick (of Edge Delivery Services), incl
 
    ```prompt
    {
+     // ...
      "plugins": [
+       // ...
        {
-         "id": "aem-genai-variations",
-         "titleI18n": {
-           "en": "Generate with AI"
-         },
-         "environments": [
-           "preview"
-         ],
-         "includePaths": [
-           "**.docx**"
-         ],
-         "event": "aem-genai-variations-sidekick"
+         "id": "generate-variations",
+         "title": "Generate Variations",
+         "url": "https://experience.adobe.com/aem/generate-variations",
+         "passConfig": true,
+         "environments": ["preview","live", "edit"],
+         "includePaths": ["**.docx**"]
        }
+       // ...
      ]
    }
    ```
-
-1. Create:
-
-   * `/tools/sidekick/aem-genai-variations.js`
-
-   You must create this file with the following content:
-
-   ```prompt
-   (function () {
-     let isAEMGenAIVariationsAppLoaded = false;
-     function loadAEMGenAIVariationsApp() {
-       const script = document.createElement('script');
-       script.src = 'https://experience.adobe.com/solutions/aem-sites-genai-aem-genai-variations-mfe/static-assets/resources/sidekick/client.js?source=plugin';
-       script.onload = function () {
-         isAEMGenAIVariationsAppLoaded = true;
-       };
-       script.onerror = function () {
-         console.error('Error loading AEMGenAIVariationsApp.');
-       };
-       document.head.appendChild(script);
-     }
- 
-     function handlePluginButtonClick() {
-       if (!isAEMGenAIVariationsAppLoaded) {
-         loadAEMGenAIVariationsApp();
-       }
-     }
- 
-     // The code snippet for the Sidekick V1 extension, https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo?hl=en
-     const sidekick = document.querySelector('helix-sidekick');
-     if (sidekick) {
-       // sidekick already loaded
-       sidekick.addEventListener('custom:aem-genai-variations-sidekick', handlePluginButtonClick);
-     } else {
-       // wait for sidekick to be loaded
-       document.addEventListener('sidekick-ready', () => {
-         document.querySelector('helix-sidekick')
-           .addEventListener('custom:aem-genai-variations-sidekick', handlePluginButtonClick);
-       }, { once: true });
-     }
- 
-     // The code snippet for the Sidekick V2 extension, https://chromewebstore.google.com/detail/aem-sidekick/igkmdomcgoebiipaifhmpfjhbjccggml?hl=en
-     const sidekickV2 = document.querySelector('aem-sidekick');
-     if (sidekickV2) {
-       // sidekick already loaded
-       sidekickV2.addEventListener('custom:aem-genai-variations-sidekick', handlePluginButtonClick);
-     } else {
-       // wait for sidekick to be loaded
-       document.addEventListener('sidekick-ready', () => {
-         document.querySelector('aem-sidekick')
-           .addEventListener('custom:aem-genai-variations-sidekick', handlePluginButtonClick);
-       }, { once: true });
-     }
-   }());
-   ```
-
-1. Update:
-
-   * `/scripts/scripts.js` 
-
-   This must be updated to include the following statement in the `loadLazy()`function:
-
-   ```prompt
-     import('../tools/sidekick/aem-genai-variations.js');
-   ```
-
-   This ensures that `/tools/sidekick/aem-genai-variations.js` is loaded as part of the lazy loading process.
-
-   ![Generate Variations - lazy loader](assets/generate-variations-sidekick-lazyloader.png)
 
 1. You may then need to ensure that users have [Access to Experience Manager as a Cloud Service with Edge Delivery Services](#access-to-aemaacs-with-edge-delivery-services).
 
