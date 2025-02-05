@@ -250,7 +250,7 @@ You can set up a local AEM development environment for developing custom styles 
     cd <repo>
     aem up
     ```
-
+ 
 You can make local changes in the Adaptive Forms Block `blocks/form` folder for styling and coding for your forms! Edit the `.css` or `.js` files within this directory, and you can see that the changes reflected instantly in your browser.
 
 Once you have completed your changes, use Git commands to commit and push them. This updates your preview and production environments, accessible at the following URLs (replace placeholders with your project details):
