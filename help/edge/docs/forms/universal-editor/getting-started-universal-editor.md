@@ -175,7 +175,7 @@ You can open your AEM Project in the Universal Editor for WYSIWYG authoring, whe
 
     The Adaptive Form section is added. You can now begin adding form components to the AEM Project page.
 
-2. Add form components to the added Adaptive Form section. To add form components: 
+1. Add form components to the added Adaptive Form section. To add form components: 
     1. Navigate to the added Adaptive Form section in the Content tree.
    
         ![adaptive form block added](/help/edge/docs/forms/assets/adative-form-block.png)
