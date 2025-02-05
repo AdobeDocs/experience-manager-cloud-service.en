@@ -39,11 +39,22 @@ The core capabilities of Interactive Communications editor are:
 | **Cloud Integration** | Edit documents directly in AEM Forms as a Cloud Service |
 
 
-## Getting Started
+## Onboarding
 
 1. **Request Access**: Email [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address
 2. **Administrator Setup**: Adobe will enable access and provide admin privileges
 3. **Start Creating**: Begin with your first correspondence using our [intuitive editor](https://video.tv.adobe.com/v/3444094/). 
+
+## Frequently asked questions
+
+**Q: Can I import an existing XDP into the Interactive Communications editor?**
+Yes, you can import an existing XDP and use it as a starting point. Any unsupported features are highlighted during the import process.
+
+**Q: Is the Interactive Communications editor available for on-premise deployments?**
+No, the editor is only available for Forms as a Cloud Service deployments.
+
+
+
 
 
 
