@@ -58,7 +58,7 @@ Although you can go directly to a particular part of the journey, many concepts 
 
 ## What's Next {#what-is-next}
 
-You are now ready to get started on your Adobe Headless journey. We encourage you to continue on to the next part of the journey and read the article [Authoring for AEM Headless as a Cloud Service - An Introduction.](introduction.md)
+You are now ready to get started on your Adobe Headless journey. We encourage you to continue on to the next part of the journey and read the article [Authoring for AEM Headless as a Cloud Service - An Introduction](introduction.md).
 
 <!--
 ### Choose Your Own Adventure {#choose-your-path}

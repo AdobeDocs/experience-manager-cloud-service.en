@@ -12,7 +12,7 @@ Translation projects enable you to manage the translation of AEM content. A tran
 
 >[!TIP]
 >
->If you are new to translating content, see [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM's powerful translation tools, ideal for those with no AEM or translation experience.
+>If you are new to translating content, see [Sites Translation Journey](/help/journey-sites/translation/overview.md), which is guided path through translating your AEM Sites content using AEM's powerful translation tools, ideal for those with no AEM or translation experience.
 
 When resources are added to a translation project, a translation job is created for them. Jobs provide commands and status information that you use to manage the human translation and machine translation workflows that execute on the resources.
 
