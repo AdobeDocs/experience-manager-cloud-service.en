@@ -7,7 +7,7 @@ hide: yes
 hidefromtoc: yes
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 ---
-# Introduction to Rule Editor in Universal Editor 
+# Introduction to Rule Editor in WYSIWYG Authoring
 
 You can add dynamic form behaviour using the Rule Editor, which allows you to create rules. These rules enable conditional field visibility, automate calculations based on user input, and improve the overall user experience. By streamlining the form-filling process, the Rule Editor helps ensure both accuracy and efficiency.
 
@@ -225,7 +225,7 @@ To write rules, perform the following steps:
   1. Select the **[!UICONTROL Gross Salary]** component in the content tree and select ![edit-rules](/help/forms/assets/edit-rules-icon.svg). 
   ![Rule Editor example1](/help/edge/docs/forms/assets/rule-editor3.png)
   The visual Rule Editor interface appears.
-  1. Click **[!UICONTROL Create]** to launch the Rule Editor.
+  1. Click **[!UICONTROL Create]** to open the Rule Editor.
    ![Rule Editor example2](/help/edge/docs/forms/assets/rule-editor4.png)
   By default, the `Set Value Of` rule type is selected. While you cannot change or modify the selected object, you can use the rule drop-down to select another rule type.  
   ![Rule Editor example3](/help/edge/docs/forms/assets/rule-editor5.png)
@@ -258,7 +258,7 @@ To write rules, perform the following steps:
 
   Next, write a rule to compute the `Taxable Income`, which is the difference between `Gross Salary` and `Additional Deduction` (if applicable). To add calculation rule on the **[!UICONTROL Taxable Income]** field, perform the following steps:
   
-  1. In authoring mode, select the **[!UICONTROL Taxable Income]** field and select ![edit-rules](/help/forms/assets/edit-rules-icon.svg) icon. Next, select **[!UICONTROL Create]** to launch the Rule Editor.
+  1. In authoring mode, select the **[!UICONTROL Taxable Income]** field and select ![edit-rules](/help/forms/assets/edit-rules-icon.svg) icon. Next, select **[!UICONTROL Create]** to open the Rule Editor.
   ![Rule Editor example13](/help/edge/docs/forms/assets/rule-editor16.png)
   1. Select **[!UICONTROL Select Option]** and select **[!UICONTROL Mathematical Expression]**. A field to write mathematical expression opens.
     ![Rule Editor example14](/help/edge/docs/forms/assets/rule-editor17.png)
@@ -276,7 +276,7 @@ To write rules, perform the following steps:
       
       Now, add a rule for the `Tax Payable ` field, which is determined by multiplying the taxable income by the tax rate. For simplicity, assume a fixed tax rate of `10%`.
 
-  1. In authoring mode, select the **[!UICONTROL Tax Payable]** field and select ![edit-rules](/help/forms/assets/edit-rules-icon.svg) icon. Next, select **[!UICONTROL Create]** to launch the Rule Editor.
+  1. In authoring mode, select the **[!UICONTROL Tax Payable]** field and select ![edit-rules](/help/forms/assets/edit-rules-icon.svg) icon. Next, select **[!UICONTROL Create]** to open the Rule Editor.
   ![Rule Editor example16](/help/edge/docs/forms/assets/rule-editor19.png)
   1. Select **[!UICONTROL Select Option]** and select **[!UICONTROL Mathematical Expression]**. A field to write mathematical expression opens.
   ![Rule Editor example17](/help/edge/docs/forms/assets/rule-editor20.png)
@@ -370,7 +370,11 @@ To use the custom function in the Rule Editor:
 
 ## Additional Information
 
-This article provides limited information on the Rule Editor available in the Universal article. To learn more about the Rule Editor and custom functions, refer to the following articles:
+>[!NOTE]
+>
+> In Universal Editor, static and dynamic imports are not supported in custom function scripts. You need to add the complete code in the `../[blocks]/form/functions.js` file.
+
+This article provides limited information on the Rule Editor available in the Universal Editor. To learn more about the Rule Editor and custom functions, refer to the following articles:
 
 {{see-also-rule-editor}}
 
