@@ -102,7 +102,7 @@ Now that you have a GitHub project, you can proceed to create and publish a new 
        In just a few minutes, your new AEM Project is created.
 
    1. Navigate to your newly-created AEM project in the Sites console and click **Edit**. 
-   In this case, the `index.html` page is used for illustration.
+        In this case, the `index.html` page is used for illustration.
 
         ![edit AEM Site](/help/edge/docs/forms/assets/edit-site.png)
 
