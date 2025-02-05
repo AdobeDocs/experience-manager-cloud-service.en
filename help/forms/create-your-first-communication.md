@@ -1,12 +1,12 @@
 ---
-title: Create your first Interactive Communication 
+title: Create your first Interactive Communication
 description: Design Dynamic, Data-Driven Communications with Ease with AEM Forms Interactive Communications
 feature: Release Information
 role: Admin
 hide: yes
 hidefromtoc: yes
+exl-id: c58ea216-7de0-40e1-9493-9ceb472e5ef8
 ---
-
 # Create your first Interactive Communication 
 
 
@@ -95,4 +95,4 @@ Once you create all the building blocks such as form data model, document fragme
    
 
 1. Use the `@` notation to autocomplete data fields based on the connected data model. 
-1. Use the `PDF Preview` option to preview the document along with data. You require the data file in JSON Format. 
+1. Use the `PDF Preview` option to preview the document along with data. You require the data file in JSON Format.
