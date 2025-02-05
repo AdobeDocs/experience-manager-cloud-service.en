@@ -1,12 +1,12 @@
 ---
-title: Introduction to Interactive Communication 
+title: Introduction to Interactive Communication
 description: Design Dynamic, Data-Driven Communications with Ease with AEM Forms Interactive Communications
 feature: Release Information
 role: Admin
 hide: yes
 hidefromtoc: yes
+exl-id: 7656d6fb-8727-491d-8216-7770b78ff854
 ---
-
 # Interactive Communications
 
 Interactive Communications centralizes and manages the creation, assembly, and delivery of data-driven interactive correspondences such as business correspondence, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
@@ -122,4 +122,3 @@ With Interactive Communication, you can integrate PDF documents into existing wo
 * Walkthrough of interactive communications editor
 * Create a fragment
 * Preview and test a correspondence
-
