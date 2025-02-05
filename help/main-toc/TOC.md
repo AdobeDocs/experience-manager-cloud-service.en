@@ -850,6 +850,8 @@ user-guide-title: AEM as a Cloud Service
     + [Previewing a form](/help/forms/previewing-forms.md)
   + Interactive Communication {#interactive-communocation}
     + [Introduction to interactive communication](/help/forms/introduction-to-interactive-communication.md)
+    + [Create your first Interactive Communication](/help/forms/create-your-first-communication.md)
+    + [Frequently Asked Questions](/help/forms/interactive-communications-faq.md)
   + Forms Centric Workflows {#create-form-centric-workflows}
     + [Introduction to Forms-centric workflow](/help/forms/aem-forms-workflow.md)
     + [Use Forms-centric steps in a workflow + step reference](/help/forms/aem-forms-workflow-step-reference.md)

@@ -1,12 +1,12 @@
 ---
-title: Introduction to Interactive Communication
+title: Introduction to Interactive Communication 
 description: Design Dynamic, Data-Driven Communications with Ease with AEM Forms Interactive Communications
 feature: Release Information
 role: Admin
 hide: yes
 hidefromtoc: yes
-exl-id: 7656d6fb-8727-491d-8216-7770b78ff854
 ---
+
 # Interactive Communications
 
 Interactive Communications centralizes and manages the creation, assembly, and delivery of data-driven interactive correspondences such as business correspondence, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
@@ -15,11 +15,7 @@ You can use our intuitive point-and-click graphical design tool (Interactive Com
 
 From financial institutions generating account statements to government agencies streamlining benefit notices, Interactive Communications is the go-to tool for crafting high-quality, secure, and legally compliant correspondence with ease and efficiency.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444094/)
-
-<!-- ![Interactive Communication Editor](/help/assets/ic-editor.png)
-
---> 
+![Interactive Communication Editor](/help/forms/assets/ic-editor.png)
 
 ## Core Capabilities 
 
@@ -41,17 +37,9 @@ The core capabilities of Interactive Communications editor are:
 
 ## Onboarding
 
-1. **Request Access**: Email [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address
-2. **Administrator Setup**: Adobe will enable access and provide admin privileges
-3. **Start Creating**: Begin with your first correspondence using our [intuitive editor](https://video.tv.adobe.com/v/3444094/). 
+The Interactive Communications editor available under Early Access program for Forms as a Cloud Service deployments. To request access email your organization ID, and program details for your Forms as a Cloud Service deployments to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address. Once you are provided access, begin [creating your first correspondence](/help/forms/create-your-first-communication.md)
 
-## Frequently asked questions
 
-**Q: Can I import an existing XDP into the Interactive Communications editor?**
-Yes, you can import an existing XDP and use it as a starting point. Any unsupported features are highlighted during the import process.
-
-**Q: Is the Interactive Communications editor available for on-premise deployments?**
-No, the editor is only available for Forms as a Cloud Service deployments.
 
 
 
@@ -128,8 +116,10 @@ With Interactive Communication, you can integrate PDF documents into existing wo
 
 ## Next
 
-* Create your first correspondence
+* [Create your first correspondence](/help/forms/create-your-first-communication.md)
+* [Frequently asked issues](/help/forms/interactive-communications-faq.md)
 * Familiarize yourself with terminology and concepts 
 * Walkthrough of interactive communications editor
 * Create a fragment
 * Preview and test a correspondence
+
