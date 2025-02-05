@@ -25,7 +25,7 @@ Content can be of many different types, including pages, assets, and publication
 
 ![Diagram of author, publisher, and dispatchers](assets/author-publish.jpg)
 
-For further details on the technical architecture of AEM as a Cloud Service, please see the document [An Introduction to the Architecture of Adobe Experience Manager as a Cloud Service.](/help/overview/architecture.md)
+For further details on the technical architecture of AEM as a Cloud Service, please see the document [An Introduction to the Architecture of Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md).
 
 {{edge-delivery-authoring}}
 

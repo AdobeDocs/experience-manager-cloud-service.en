@@ -10,7 +10,7 @@ exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
 
 Your websites and applications access Dynamic Media services by way of URL calls. After you publish an asset, Dynamic Media activates a URL string that references the asset. You can paste these URLs into a web browser for testing.
 
-You link to URLs only if you are *not* using Adobe Experience Manager as your WCM. Linking &ndash; versus embedding &ndash; is used when you want to deliver a video player as a pop-up or modal window. If you are using Experience Manager as your WCM, [you add the assets directly on your page.](adding-dynamic-media-assets-to-pages.md)
+You link to URLs only if you are *not* using Adobe Experience Manager as your WCM. Linking &ndash; versus embedding &ndash; is used when you want to deliver a video player as a pop-up or modal window. If you are using Experience Manager as your WCM, [you add the assets directly on your page](adding-dynamic-media-assets-to-pages.md).
 
 To place these URL strings in your web pages and applications, copy them from Dynamic Media.
 

@@ -63,7 +63,7 @@ An Edge Delivery Services can be added in a number of different ways depending o
 
 The **Edge Delivery to-do list** in Cloud Manager is an onboarding task checklist meant to guide you through onboarding, managing your Edge Delivery site all the way to [Go-Live](/help/journey-onboarding/go-live-checklist.md).
 
-![Edge Delivery site to-do list in Cloud Manager](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
+![Edge Delivery site to-do list in Cloud Manager.](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
 |   | Task  | Description |
 | --- | --- | --- |
