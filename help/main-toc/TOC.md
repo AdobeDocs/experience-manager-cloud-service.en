@@ -848,6 +848,8 @@ user-guide-title: AEM as a Cloud Service
       + [Create and manage reviews for an Adaptive Form](/help/forms/review-adaptiveforms-in-sites-page.md)
     + [Adaptive forms keywords](/help/forms/adaptive-forms-keywords.md)
     + [Previewing a form](/help/forms/previewing-forms.md)
+  + Interactive Communication {#interactive-communocation}
+    +[Introduction to interactive communication](/help/forms/introduction-to-interactive-communication.md)
   + Forms Centric Workflows {#create-form-centric-workflows}
     + [Introduction to Forms-centric workflow](/help/forms/aem-forms-workflow.md)
     + [Use Forms-centric steps in a workflow + step reference](/help/forms/aem-forms-workflow-step-reference.md)
