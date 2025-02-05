@@ -131,7 +131,7 @@ A **Layout Container** is a paragraph system that:
 
 >[!NOTE]
 >
->If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page.](/help/sites-cloud/administering/responsive-layout.md)
+>If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-cloud/administering/responsive-layout.md).
 
 1. The **Layout Container** is available as a standard component in the [Components Browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser). From here you can drag it to the required location on the page after which you can see the **Drag Components here** placeholder.
 1. You can then add components to the layout container. These components will hold the actual content:
@@ -178,7 +178,7 @@ To configure the layout of a responsive grid implemented with the Layout Contain
 * By using the [mode menu in the toolbar](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) and choosing **Layout** mode
   * Select the **Layout** mode just as you would switch to **Edit** mode or **Targeting** mode.
   * **Layout** mode remains persistent and you do not leave **Layout** mode until you select another mode via the mode selector.
-* When [editing an individual component.](/help/sites-cloud/authoring/page-editor/edit-content.md#editing-component-layout)
+* When [editing an individual component](/help/sites-cloud/authoring/page-editor/edit-content.md#editing-component-layout).
   * By using the **Layout** option in the component's quick action menu, you can switch to **Layout** mode.
   * **Layout** mode persists while editing the component and reverts to **Edit** mode once focus changes to another component.
 

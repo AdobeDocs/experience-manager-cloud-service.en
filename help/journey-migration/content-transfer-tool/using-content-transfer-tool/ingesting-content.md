@@ -176,7 +176,7 @@ If "AEM Version Updates" is active (that is, updates are running or are queued t
 
 In rare instances the ingestion's target Cloud Service environment may be experiencing unexpected issues. As a result the ingestion will fail since the environment is not in the expected ready state. Check the ingestion log to reveal more details of the error state encountered. 
 
-Ensure the author environment is available and wait a few minutes before re-attemting the ingestion. If the problem persists, please reach out to customer support with the error state encountered.
+Ensure the author environment is available and wait a few minutes before re-attemting the ingestion. If the problem persists, reach out to customer support with the error state encountered.
 
 ### Top-up Ingestion Failure Due to Uniqueness Constraint Violation {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 

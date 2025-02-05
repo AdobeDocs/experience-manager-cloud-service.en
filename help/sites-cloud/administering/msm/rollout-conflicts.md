@@ -53,7 +53,7 @@ The rollout manager lets you activate or deactivate conflict management.
 
 This is done using [OSGi configuration](/help/implementing/deploying/configuring-osgi.md) of **Day CQ WCM Rollout Manager**. Set the value **Handle conflict with manually created Pages** ( `rolloutmgr.conflicthandling.enabled`) to true if the rollout manager should handle conflicts from a page created in the Live Copy with a name that exists in the blueprint.
 
-AEM has [predefined behavior when conflict management has been deactivated.](#behavior-when-conflict-handling-deactivated)
+AEM has [predefined behavior when conflict management has been deactivated](#behavior-when-conflict-handling-deactivated).
 
 ## Conflict Handlers {#conflict-handlers}
 
@@ -112,7 +112,7 @@ Customized conflict handlers can:
 
 ### Behavior When Conflict Handling is Deactivated {#behavior-when-conflict-handling-deactivated}
 
-If you manually [deactivate conflict handling,](#rollout-manager-and-conflict-handling) AEM takes no action on any conflicting pages. Non-conflicting pages are rolled out as expected.
+If you manually [deactivate conflict handling](#rollout-manager-and-conflict-handling), AEM takes no action on any conflicting pages. Non-conflicting pages are rolled out as expected.
 
 >[!CAUTION]
 >

@@ -12,19 +12,19 @@ These are the release notes for the 16 January 2025 release of the Universal Edi
 
 >[!TIP]
 >
->For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page.](/help/release-notes/release-notes-cloud/release-notes-current.md)
+>For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-## What’s New {#what-is-new}
+## What's New {#what-is-new}
 
 * **Deprecation of CORS Library < 3.0.0** - To ensure future compatibility and to enhance security, the Universal Editor now exclusively supports version 3.0.0 or higher of the 
 `@Adobe Express/universal-editor-cors` library.
-  * The library is now delivered solely via [`universal-editor-service.adobe.io/cors.js`.](http://universal-editor-service.adobe.io/cors.js)
+  * The library is now delivered solely via [`universal-editor-service.adobe.io/cors.js`](http://universal-editor-service.adobe.io/cors.js).
   * A deprecation notification appears for users when opening a page that uses older versions of the CORS library, prompting them to update.
 * **Extension Point for Landing Page** - [A new extension point](/help/implementing/universal-editor/customizing.md#extending) has been introduced for extensions to appear in the side rail of the Universal Editor's landing page.
    * Now developers can specify whether extensions are applicable to the editor, the landing page, or both, offering greater customization and usability.
 
 ## Other Improvements {#other-improvements}
 
-* **Fixed invalid URLs in Recent items on the landing page** - An issues was resolved where URLs displayed in the "Recents" list on the Universal Editor’s landing page were broken.
+* **Fixed invalid URLs in Recent items on the landing page** - An issues was resolved where URLs displayed in the "Recents" list on the Universal Editor's landing page were broken.
 * **Theme Synchronization in Unified Shell** - The Universal Editor now dynamically synchronizes the theme with the system's Unified Shell settings and automatically adjusts between light and dark modes.
   * This ensures a consistent visual appearance across micro-frontends, including fragment and asset selectors.

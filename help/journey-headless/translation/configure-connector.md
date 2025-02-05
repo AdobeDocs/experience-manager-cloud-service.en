@@ -53,7 +53,7 @@ If you choose another provider your administrator must install the connector pac
 >
 >Using the out-of-the-box Microsoft Translator in AEM does not require additional setup and works as-is without additional connector configuration.
 >
->If you choose to use the Microsoft Translator connector for testing purposes, you do not need to carry out the steps in the next two sections: [Creating a Translation Integration Configuration](#create-config) and [Associate the Configuration with Your Content.](#associate) However you are advised to read them so that you are familiar with the steps for when you need to configure your preferred connector.
+>If you choose to use the Microsoft Translator connector for testing purposes, you do not need to carry out the steps in the next two sections: [Creating a Translation Integration Configuration](#create-config) and [Associate the Configuration with Your Content](#associate). However you are advised to read them so that you are familiar with the steps for when you need to configure your preferred connector.
 >
 >The trial license of the Microsoft Translator connector is not intended for production purposes and if you decide to license it, the system administrator must follow the steps detailed in the [Additional Resources](#additional-resources) section at the end of this document so you can configure that license.
 
@@ -116,7 +116,7 @@ To do this, navigate to the language root of your content. For our example purpo
 1. Go to the global navigation and go to **Navigation** &gt; **Assets** &gt; **Files**.
 1. In the assets console, select the language root to configure and select **Properties**.
 1. Select the **Cloud Services** tab.
-1. Under **Cloud Service Configurations** in the **Add Configuration** drop-down list, select your connector. It should appear in the drop-down list when you have installed its package as [described previously.](#connect-translation-provider)
+1. Under **Cloud Service Configurations** in the **Add Configuration** drop-down list, select your connector. It should appear in the drop-down list when you have installed its package as [described previously](#connect-translation-provider).
 1. Under **Cloud Service Configurations** in the **Add Configuration** drop-down list, also select your configuration.
 1. Select **Save &amp; Close**.
 
@@ -129,7 +129,7 @@ Now that you have completed this part of the headless translation journey you sh
 * Understand the important parameters of the Translation Integration Framework in AEM.
 * Be able to set up your own connection to your translation service.
 
-Build on this knowledge and continue your AEM headless translation journey by next reviewing the document [Translate content,](translation-rules.md) where you learn how to use your configuration so far to actually translate your content.
+Build on this knowledge and continue your AEM headless translation journey by next reviewing the document [Translate content](translation-rules.md), where you learn how to use your configuration so far to actually translate your content.
 
 ## Additional Resources {#additional-resources}
 
