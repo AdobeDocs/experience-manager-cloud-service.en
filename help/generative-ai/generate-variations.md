@@ -10,16 +10,11 @@ role: Admin, Architect, Developer
 
 If you are looking for a way to optimize your digital channels and accelerate content creation, you can use Generate Variations. Generate Variations uses generative Artificial Intelligence (AI) to create content variations based on prompts; these prompts are either provided by Adobe or created, and managed, by users. After creating variations, you can use the content on your website, and also measure their success using the [Experimentation](https://www.aem.live/docs/experimentation) functionality of [Edge Delivery Services](/help/edge/overview.md).
 
-This helps accelerate content velocity by quickly creating on brand content in minutes. This in turn helps improve conversion with new copy variants.
-
 You can [access Generate Variations](#access-generate-variations) from:
 
-<!--
 * [within Adobe Experience Manager (AEM) as a Cloud Service](#access-aemaacs)
--->
-* [the Sidekick of AEM Edge Delivery Services; for document based authoring](#access-aem-sidekick)
-* [within the Universal Editor](#access-aem-universal-editor)
-* [within the Content Fragments Editor](#access-aem-content-fragment-editor)
+* [the Sidekick of AEM Edge Delivery Services](#access-aem-sidekick)
+* [within the Content Fragments Editor](/help/sites-cloud/administering/content-fragments/authoring.md#generate-variations-ai)
 
 >[!NOTE]
 >
@@ -76,7 +71,6 @@ When you open Generate Variations (and expand the left panel) you see:
 
 The interface guides you through the process of generating content. After opening the interface, the first step is to select the prompt you want to use.
 
-<!--
 ### Select Prompt {#select-prompt}
 
 From the main panel, you can select:
@@ -93,7 +87,6 @@ To differentiate:
 * Your private prompts are not specifically flagged.
 
 ![Generate Variations - prompt templates](assets/generate-variations-prompt-templates.png)
--->
 
 ### Provide Inputs {#provide-inputs}
 
@@ -204,7 +197,6 @@ Once saved they are shown under **Favorites** in the left navigation. Favorites 
 
 This section provides links to your recent activity. A **Recent** entry is added after you select **Generate**. It has the name of the prompt and a timestamp. If you select a link, it loads the prompt, populates the input fields as appropriate, and shows generated variations.
 
-<!--
 ## Edit the Prompt {#edit-the-prompt}
 
 The underlying prompt can be edited. You may want to do this:
@@ -252,6 +244,29 @@ To add a new text field titled **Tone of Voice**, use the following syntax in yo
 
 ![Generate Variations - prompt edited with tone of voice](assets/generate-variations-prompt-edited.png)
 
+<!--
+#### Example: Add new dropdown field - Page Type {#example-add-new-dropdown-field-page-type}
+
+To create an input field Page Type providing a dropdown selection:
+
+1. Create a spreadsheet named `pagetype.xls` in the top-level directory of your folder structure.
+1. Edit the spreadsheet:
+
+   1. Create two columns: **Key** and **Value**.
+   1. In the **Key** column, enter labels that will appear in the dropdown.
+   1. In the **Value** column, describe the key value so the generative AI has context.
+
+1. In your prompt, refer to the title of the spreadsheet along with the appropriate type. 
+
+   ```prompt
+   {{@page_type, 
+     label="Page Type",
+     description="Describes the type of page",
+     spreadsheet=pagetype
+   }}
+   ```
+-->
+
 ## Create a prompt {#create-prompt}
 
 When you select **New prompt** from **Prompt Templates**, a new panel will allow you to input a new prompt. You can then specify these, together with the **Temperature**, to **Generate** content.
@@ -261,6 +276,8 @@ See [Save Prompt](#save-prompt) for details of saving the prompt for future.
 See [Add prompt inputs](#add-prompt-inputs) for details about adding your own prompt inputs.
 
 If you would like to preserve formatting both in the UI, and when copied and pasted into the document based authoring flow, include the following in the prompt:
+
+<!-- CHECK - are the double-quotes needed? -->
 
 * `"Format the response as an array of valid, iterable RFC8259 compliant JSON"`
 
@@ -295,9 +312,7 @@ When selected, the **Save Prompt** dialog opens:
 >[!NOTE]
 >
 >From **Prompt Templates** you can delete prompts (using the menu accessed with the ellipse) created by yourself, or within your IMS organization.
--->
 
-<!--
 ## Audiences {#audiences}
 
 To generate personalized content the generative AI must have an understanding of the audience. Adobe provides a number of default audiences, or you can add your own.
@@ -375,7 +390,6 @@ For example, to add an audience from a file on Google Drive:
    For example:
 
    ![Generate Variations - add audience CSV file](assets/generate-variations-audiences-csv-save.png)
--->
 
 ## Generative Action Usage {#generative-action-usage}
 
@@ -415,27 +429,19 @@ Users who need access to Generate Variations must be entitled to an Experience M
 
 To grant access to specific users, assign their user account to the respective product profile. See [Assigning AEM Product Profiles for further details](/help/journey-onboarding/assign-profiles-cloud-manager.md).
 
-<!--
 ### Access from AEM as a Cloud Service {#access-aemaacs}
 
 Generate Variations can be accessed from the [Navigation Panel](/help/sites-cloud/authoring/basic-handling.md#navigation-panel) of AEM as a Cloud Service:
 
 ![Navigation panel](/help/sites-cloud/authoring/assets/basic-handling-navigation.png)
--->
 
-### Access from the AEM Sidekick for document based authoring {#access-aem-sidekick}
+### Access from the AEM Sidekick {#access-aem-sidekick}
 
-Access from the AEM Sidekick is used for document based authoring. 
+Some configuration is needed before you can access Generate Variations from the Sidekick (of Edge Delivery Services).
 
-Some configuration is needed before you can access Generate Variations from the Sidekick (of Edge Delivery Services). 
+1. See the document [Installing the AEM Sidekick](https://www.aem.live/docs/sidekick-extension) for how to install and configure the Sidekick.
 
->[!NOTE]
->
->See the document [Installing the AEM Sidekick](https://www.aem.live/docs/sidekick-extension) for how to install and configure the Sidekick.
-
-To use the Generate Variations in the Sidekick (of Edge Delivery Services), include the following configurations in your Edge Delivery Services projects.
-
-1. Enable our app in:
+1. To use the Generate Variations in the Sidekick (of Edge Delivery Services), include the following configuration in your Edge Delivery Services projects under:
 
    * `tools/sidekick/config.json` 
 
@@ -445,106 +451,27 @@ To use the Generate Variations in the Sidekick (of Edge Delivery Services), incl
 
    ```prompt
    {
+     // ...
      "plugins": [
+       // ...
        {
-         "id": "aem-genai-variations",
-         "titleI18n": {
-           "en": "Generate with AI"
-         },
-         "environments": [
-           "preview"
-         ],
-         "includePaths": [
-           "**.docx**"
-         ],
-         "event": "aem-genai-variations-sidekick"
+         "id": "generate-variations",
+         "title": "Generate Variations",
+         "url": "https://experience.adobe.com/aem/generate-variations",
+         "passConfig": true,
+         "environments": ["preview","live", "edit"],
+         "includePaths": ["**.docx**"]
        }
+       // ...
      ]
    }
    ```
-
-1. Create:
-
-   * `/tools/sidekick/aem-genai-variations.js`
-
-   You must create this file with the following content:
-
-   ```prompt
-   (function () {
-     let isAEMGenAIVariationsAppLoaded = false;
-     function loadAEMGenAIVariationsApp() {
-       const script = document.createElement('script');
-       script.src = 'https://experience.adobe.com/solutions/aem-sites-genai-aem-genai-variations-mfe/static-assets/resources/sidekick/client.js?source=plugin';
-       script.onload = function () {
-         isAEMGenAIVariationsAppLoaded = true;
-       };
-       script.onerror = function () {
-         console.error('Error loading AEMGenAIVariationsApp.');
-       };
-       document.head.appendChild(script);
-     }
- 
-     function handlePluginButtonClick() {
-       if (!isAEMGenAIVariationsAppLoaded) {
-         loadAEMGenAIVariationsApp();
-       }
-     }
- 
-     // The code snippet for the Sidekick V1 extension, https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo?hl=en
-     const sidekick = document.querySelector('helix-sidekick');
-     if (sidekick) {
-       // sidekick already loaded
-       sidekick.addEventListener('custom:aem-genai-variations-sidekick', handlePluginButtonClick);
-     } else {
-       // wait for sidekick to be loaded
-       document.addEventListener('sidekick-ready', () => {
-         document.querySelector('helix-sidekick')
-           .addEventListener('custom:aem-genai-variations-sidekick', handlePluginButtonClick);
-       }, { once: true });
-     }
- 
-     // The code snippet for the Sidekick V2 extension, https://chromewebstore.google.com/detail/aem-sidekick/igkmdomcgoebiipaifhmpfjhbjccggml?hl=en
-     const sidekickV2 = document.querySelector('aem-sidekick');
-     if (sidekickV2) {
-       // sidekick already loaded
-       sidekickV2.addEventListener('custom:aem-genai-variations-sidekick', handlePluginButtonClick);
-     } else {
-       // wait for sidekick to be loaded
-       document.addEventListener('sidekick-ready', () => {
-         document.querySelector('aem-sidekick')
-           .addEventListener('custom:aem-genai-variations-sidekick', handlePluginButtonClick);
-       }, { once: true });
-     }
-   }());
-   ```
-
-1. Update:
-
-   * `/scripts/scripts.js` 
-
-   This must be updated to include the following statement in the `loadLazy()`function:
-
-   ```prompt
-     import('../tools/sidekick/aem-genai-variations.js');
-   ```
-
-   This ensures that `/tools/sidekick/aem-genai-variations.js` is loaded as part of the lazy loading process.
-
-   ![Generate Variations - lazy loader](assets/generate-variations-sidekick-lazyloader.png)
 
 1. You may then need to ensure that users have [Access to Experience Manager as a Cloud Service with Edge Delivery Services](#access-to-aemaacs-with-edge-delivery-services).
 
 1. You can then access the feature, by selecting **Generate Variations** from the toolbar of the Sidekick:
 
    ![Generate Variations - access from AEM Sidekicj](assets/generate-variations-sidekick-toolbar.png)
-
-### Access from the AEM Universal Editor {#access-aem-universal-editor}
-
-Access from the [AEM Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) is implemented as an extension. See the [Extension Manager in AEM Experience Manager](https://developer.adobe.com/uix/docs/extension-manager/) for further details.
-
-### Access from the AEM Content Fragment Editor {#access-aem-content-fragment-editor}
-
-Access from the [AEM Content Fragment Editor](/help/sites-cloud/administering/content-fragments/authoring.md#generate-variations-ai) is implemented as an extension. See the [Extension Manager in AEM Experience Manager](https://developer.adobe.com/uix/docs/extension-manager/) for further details.
 
 ## Further Information {#further-information}
 
@@ -553,11 +480,8 @@ For further information you can also read:
 * [GenAI Generate Variations on GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Edge Delivery Services Experimentation](https://www.aem.live/docs/experimentation)
 
-<!--
 ## FAQs {#faqs}
--->
 
-<!--
 ### Formatted Output {#formatted-outpu}
 
 **The generated response isn't giving me the formatted output that I need. How do I modify the format? ex: I need a title and a sub-title but, the response is just title**
@@ -574,9 +498,7 @@ For further information you can also read:
 
    Example: "The title text must not exceed 10 words or 50 characters, including spaces."
 1. Save the prompt for future use.
--->
 
-<!--
 ### Length of Response {#length-of-response}
 
 **The generated response is too long or too short. How do I change the length?**
@@ -587,9 +509,7 @@ For further information you can also read:
    1. Example:  "The title text must not exceed 10 words or 50 characters, including spaces."
 1. Modify the requirements to fit your needs.
 1. Save the prompt for future use.
--->
 
-<!--
 ### Improve responses {#improve-responses}
 
 **The responses I'm getting aren't exactly what I'm looking for. What can I do to improve them?**
@@ -598,17 +518,13 @@ For further information you can also read:
    1. A higher temperature strays from the prompt and leads to more variation, randomness, and creativity.
    1. A lower temperature is more deterministic and adheres to what is in the prompt.
 1. Open the actual prompt in edit mode and review prompt. Pay special attention to the requirements section that describes the tone of voice and other important criteria.
--->
 
-<!--
 ### Comments in a prompt {#comments-in-prompt}
 
 **How can I use comments in a prompt?**
 
 Comments in a prompt are used to include notes, explanations, or instructions that are not meant to be part of the actual output. These comments are encapsulated within a specific syntax: they start and end with double curly braces and begin with a hash (for example, `{{# Comment Here }}`). Comments help clarify the prompt structure or intent without affecting the generated response.
--->
 
-<!--
 ### Find a shared prompt {#find-a-shared-prompt}
 
 **What can I do if I cannot find a prompt template that someone has shared?**
@@ -619,9 +535,7 @@ In this situation there are various details to check:
    For example, https://experience.adobe.com/#/aem/generate-variations
 1. Ensure the selected IMS organization is correct.
 1. Confirm the prompt was saved as Shared.
--->
 
-<!--
 ### Custom prompts in v2.0.0 {#custom-prompts-v200}
 
 **In v.2.0.0 my custom prompts have disappeared - what can I do?**
@@ -637,7 +551,6 @@ To retrieve them:
 1. Paste the prompt.
 1. Verify that the prompt works.
 1. Save the prompt.
--->
 
 ## Release History {#release-history}
 
