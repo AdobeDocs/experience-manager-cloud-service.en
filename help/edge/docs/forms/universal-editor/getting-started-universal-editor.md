@@ -168,12 +168,12 @@ You can open your AEM Project in the Universal Editor for WYSIWYG authoring, whe
 1. Add the Adaptive Form section to your AEM Project page. To add:
    1. Navigate to your AEM project in the Sites console, select the site page you want to edit, and click **Edit**. The AEM project page opens in Universal Editor for editing.
    In this case, the `index.html` page is used for illustration.
-   2. Open the Content tree and navigate to the location where you want to add the Adaptive Form section.
-   3. Click the **[!UICONTROL Add]** icon and select the **[!UICONTROL Adaptive Form]** component from the component list.
+   1. Open the Content tree and navigate to a section where you want to add the Adaptive Form section.
+   1. Click the **[!UICONTROL Add]** icon and select the **[!UICONTROL Adaptive Form]** component from the component list.
 
     ![content tree](/help/edge/docs/forms/assets/add-adaptive-form-block.png)
 
-    The Adaptive Form section is added at the specified location. You can now begin adding form components to the AEM Project page.
+    The Adaptive Form section is added. You can now begin adding form components to the AEM Project page.
 
 2. Add form components to the added Adaptive Form section. To add form components: 
     1. Navigate to the added Adaptive Form section in the Content tree.
@@ -191,25 +191,24 @@ You can open your AEM Project in the Universal Editor for WYSIWYG authoring, whe
  
         ![open properties](/help/edge/docs/forms/assets/component-properties.png)
 
-    2. Preview the form. The renditions of the components might differ based on your chosen operating system and browser. 
-
+    1. Preview the form. 
         The screenshot below displays the form authored in the AEM Project using WYSIWYG authoring:
 
         ![added form](/help/edge/docs/forms/assets/added-form-aem-sites.png)
 
         Once satisfied with the preview, the user can proceed to publish the page.
 
-    >[!NOTE]
-    >
-    > It is important to publish your AEM Project page again after making changes; otherwise, the updates are not visible in the browser.
+        >[!NOTE]
+        >
+        > It is important to publish your AEM Project page again after making changes; otherwise, the updates are not visible in the browser.
 
-3. Re-publish the AEM Project page. 
+1. Re-publish the AEM Project page. 
 
    1. Click **Publish** to publish the AEM Project page again after adding the form.
 
         ![publish form](/help/edge/docs/forms/assets/publish-form.png)
 
-   2. The **Publish** confirmation dialog appears on screen, click **Publish** to start publishing.
+   1. The **Publish** confirmation dialog appears on screen, click **Publish** to start publishing.
 
         ![publish form1](/help/edge/docs/forms/assets/publish-form1.png)
 

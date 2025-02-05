@@ -27,8 +27,7 @@ You can author Edge Delivery Services Forms to implement the reCAPTCHA service p
 
 >[!NOTE]
 >
-> * Edge Delivery Services Forms only supports **reCAPTCHA Score based** version.
-> * For more information on how reCAPTCHA works, see [Google reCAPTCHA](https://developers.google.com/recaptcha/). 
+> For more information on how reCAPTCHA works, see [Google reCAPTCHA](https://developers.google.com/recaptcha/). 
 
 ### Configure reCAPTCHA Enterprise
 
