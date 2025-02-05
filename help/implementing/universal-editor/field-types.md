@@ -152,7 +152,10 @@ An AEM content component type enables an AEM content picker, which can be used t
       "name": "reference",
       "value": "",
       "label": "AEM Content Picker",
-      "valueType": "string"
+      "valueType": "string",
+      "validation": {
+            "rootPath": "/content/refresh"
+        }
     }
   ]
 }
@@ -326,7 +329,10 @@ The Content Fragment picker can be used to select a [Content Fragment](/help/sit
         "name": "picker",
         "label": "Content Fragment Picker",
         "valueType": "string",
-        "variationName": "contentFragmentVariation"
+        "variationName": "contentFragmentVariation",
+        "validation": {
+            "rootPath": "/content/refresh"
+        }
       }
     ]
   }
