@@ -20,7 +20,7 @@ AEM comes with a variety of out-of-the-box components that provide comprehensive
 
 ## General Usage {#general-usage}
 
-The components are available on the **Components** tab of the side panel of the page editor when [editing a page.](/help/sites-cloud/authoring/page-editor/edit-content.md)
+The components are available on the **Components** tab of the side panel of the page editor when [editing a page](/help/sites-cloud/authoring/page-editor/edit-content.md).
 
 You can select a component and drag it to the required location on your page. You can then edit it using:
 
@@ -28,7 +28,7 @@ You can select a component and drag it to the required location on your page. Yo
 * [Edit Content](/help/sites-cloud/authoring/page-editor/edit-content.md)
 * [Edit Content - Full Screen Mode](/help/sites-cloud/authoring/page-editor/edit-content.md#edit-content-full-screen-mode)
 
-For more information about adding components to a page, see [Editing Page Content.](/help/sites-cloud/authoring/page-editor/edit-content.md)
+For more information about adding components to a page, see [Editing Page Content](/help/sites-cloud/authoring/page-editor/edit-content.md).
 
 ## Overview of All Components {#overview-of-all-components}
 

@@ -7,11 +7,11 @@ feature: Onboarding
 ---
 # Access Cloud Manager {#cloud-resources}
 
-In this part of the [onboarding journey,](overview.md) you learn how to access Cloud Manager so that you can set up your project resources.
+In this part of the [onboarding journey](overview.md), you learn how to access Cloud Manager so that you can set up your project resources.
 
 ## Objective {#objective}
 
-In the previous article in this onboarding journey, [Assigning Team Members to Cloud Manager Product Profiles,](assign-profiles-cloud-manager.md) you granted your AEMaaCS team the proper roles. Now learn how to access Cloud Manager so that you can set up your project resources that your team use.
+In the previous article in this onboarding journey, [Assigning Team Members to Cloud Manager Product Profiles](assign-profiles-cloud-manager.md), you granted your AEMaaCS team the proper roles. Now learn how to access Cloud Manager so that you can set up your project resources that your team use.
 
 Since you completed the previous step in this journey, your team can access Cloud Manager. Cloud Manager is used to create and manage your project resources such as programs and environments.
 
@@ -34,7 +34,7 @@ Before the team members that you assigned to the **Business Owner** role can acc
 
 1. Ensure that you, as system administrator, have the **Business Owner** role assigned.
 
-   * Return to the previous step in this journey, [Assign Team Members to Cloud Manager Product Profiles,](assign-profiles-cloud-manager.md) for more information about assigning the **Business Owner** role to the system administrator.
+   * Return to the previous step in this journey, [Assign Team Members to Cloud Manager Product Profiles](assign-profiles-cloud-manager.md), for more information about assigning the **Business Owner** role to the system administrator.
 
 1. Sign into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and be presented with the normal landing page.
 

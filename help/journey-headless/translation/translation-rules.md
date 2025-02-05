@@ -73,7 +73,7 @@ In the **Translation Configuration** UI, there are several options available for
 1. Select the context you created and then select **Edit**. This opens the **Translation Rules Editor** to configure the properties.
 ![Translation rules editor](assets/translation-rules-editor.png)
 1. By default all configurations are inherited from the parent path, in this case `/content/dam`. Uncheck the option **Inherit from `/content/dam`** so you can add additional fields to the configuration.
-1. When unchecked, under the **General** section of the list, add the property names of the Content Fragment Model(s) that you [previously identified as fields for translation.](getting-started.md#content-models)
+1. When unchecked, under the **General** section of the list, add the property names of the Content Fragment Model(s) that you [previously identified as fields for translation](getting-started.md#content-models).
    1. In the **New Property** field, enter the property name. Notice that the options **Translate** and **Inherit** are checked automatically.
    1. Select **Add**.
    1. Repeat these steps for all the fields that you must translate.
@@ -99,6 +99,6 @@ Build on this knowledge and continue your AEM headless translation journey by ne
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the headless translation journey by reviewing the document [Translate content,](translate-content.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
+While it is recommended that you move on to the next part of the headless translation journey by reviewing the document [Translate content](translate-content.md), the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
 
 * [Identifying Content to Translate](/help/sites-cloud/administering/translation/rules.md) - Learn how translation rules identify content that needs translating.

@@ -12,7 +12,7 @@ The Rich Text Editor (RTE) is a basic building block to add textual content to [
 
 ## In-place editing {#in-place-editing}
 
-Selecting a text-based component with a single click to reveal the [component toolbar.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
+Selecting a text-based component with a single click to reveal the [component toolbar](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser).
 
 ![The component toolbar](/help/sites-cloud/authoring/assets/editing-component-toolbar.png)
 

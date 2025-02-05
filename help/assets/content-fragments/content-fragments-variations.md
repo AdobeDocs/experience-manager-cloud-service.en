@@ -99,7 +99,7 @@ The full-screen text editor provides:
 
 The following actions are also available (for all the [formats](#formats)) when the full-screen editor (that is, multi-line text) is open:
 
-* Select the [format](#formats) ([Rich Text](#rich-text), [Plain Text,](#plain-text) [Markdown](#markdown))
+* Select the [format](#formats) ([Rich Text](#rich-text), [Plain Text](#plain-text), [Markdown](#markdown))
 
 * [Upload content](#uploading-content)
 

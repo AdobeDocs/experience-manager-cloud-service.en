@@ -12,7 +12,7 @@ Onboard the front-end developers into Cloud Manager so they have access to your 
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM Quick Site Creation journey, [Set Up Your Pipeline,](pipeline-setup.md) you learned how to create a front-end pipeline to manage the customization of your site's theme, and you should now:
+In the previous document of the AEM Quick Site Creation journey, [Set Up Your Pipeline](pipeline-setup.md), you learned how to create a front-end pipeline to manage the customization of your site's theme, and you should now:
 
 * Understand what a front-end pipeline is.
 * Know how to set up a front-end pipeline in Cloud Manager.
@@ -95,10 +95,10 @@ Now that you have completed this part of the AEM Quick Site Creation journey you
 * How to add a front-end developer as a user.
 * How to grant the required roles to the front-end developer.
 
-Build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Retrieve Git Repository Access Information,](retrieve-access.md) which switches perspective exclusively to the front-end developer and explains how the front-end developer users Cloud Manager to access git repository information.
+Build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Retrieve Git Repository Access Information](retrieve-access.md), which switches perspective exclusively to the front-end developer and explains how the front-end developer users Cloud Manager to access git repository information.
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the Quick Site Creation journey by reviewing the document [Retrieve Front-End Developer Credentials,](retrieve-access.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
+While it is recommended that you move on to the next part of the Quick Site Creation journey by reviewing the document [Retrieve Front-End Developer Credentials](retrieve-access.md), the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
 
 * [Onboarding Journey](/help/journey-onboarding/overview.md) - This guide serves as your starting point to ensure that your teams are set up and have access to AEM as a Cloud Service.

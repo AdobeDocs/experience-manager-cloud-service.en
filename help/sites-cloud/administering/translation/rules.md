@@ -12,11 +12,11 @@ Translation rules identify the content to translate for pages, components, and a
 
 >[!TIP]
 >
->If you are new to translating content, see [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM's powerful translation tools, ideal for those with no AEM or translation experience.
+>If you are new to translating content, see [Sites Translation Journey](/help/journey-sites/translation/overview.md), which is guided path through translating your AEM Sites content using AEM's powerful translation tools, ideal for those with no AEM or translation experience.
 
 ## Content Fragments and Translation Rules {#content-fragments}
 
-The translation rules described in this document apply to Content Fragments only if the **Enable Content Model Fields for Translation** option has not been activated at the [translation integration framework configuration level.](integration-framework.md#assets-configuration-properties)
+The translation rules described in this document apply to Content Fragments only if the **Enable Content Model Fields for Translation** option has not been activated at the [translation integration framework configuration level](integration-framework.md#assets-configuration-properties).
 
 If the **Enable Content Model Fields for Translation** option is active, AEM will use the **Translatable** field on [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) to determine if the field is to be translated and automatically creates translation rules accordingly. This option supersedes any translation rules you may have created and requires no intervention or additional steps.
 
