@@ -221,11 +221,10 @@ To write rules, perform the following steps:
 
   Once you have authored the form, write the first rule to show the `Additional Deduction` field only if the gross salary exceeds $50,000. To add a conditional rule:
 
-  1. Open a form in Universal Editor for editing.
-  1. Select the **[!UICONTROL Gross Salary]** component in the content tree and select ![edit-rules](/help/forms/assets/edit-rules-icon.svg). 
-  ![Rule Editor example1](/help/edge/docs/forms/assets/rule-editor3.png)
+  1. Open a form in Universal Editor for editing and select the **[!UICONTROL Gross Salary]** field in the content tree and select ![edit-rules](/help/forms/assets/edit-rules-icon.svg). Alternatively, you can select **[!UICONTROL Gross Salary]** field directly from the **[!UICONTROL Forms Object]** pane.
+    ![Rule Editor example1](/help/edge/docs/forms/assets/rule-editor3.png)
   The visual Rule Editor interface appears.
-  1. Click **[!UICONTROL Create]** to open the Rule Editor.
+  1. Click **[!UICONTROL Create]** to create rules.
    ![Rule Editor example2](/help/edge/docs/forms/assets/rule-editor4.png)
   By default, the `Set Value Of` rule type is selected. While you cannot change or modify the selected object, you can use the rule drop-down to select another rule type.  
   ![Rule Editor example3](/help/edge/docs/forms/assets/rule-editor5.png)
@@ -258,8 +257,9 @@ To write rules, perform the following steps:
 
   Next, write a rule to compute the `Taxable Income`, which is the difference between `Gross Salary` and `Additional Deduction` (if applicable). To add calculation rule on the **[!UICONTROL Taxable Income]** field, perform the following steps:
   
-  1. In authoring mode, select the **[!UICONTROL Taxable Income]** field and select ![edit-rules](/help/forms/assets/edit-rules-icon.svg) icon. Next, select **[!UICONTROL Create]** to open the Rule Editor.
-  ![Rule Editor example13](/help/edge/docs/forms/assets/rule-editor16.png)
+  1. In authoring mode, select the **[!UICONTROL Taxable Income]** field and select ![edit-rules](/help/forms/assets/edit-rules-icon.svg) icon. Alternatively, you can select **[!UICONTROL Taxable Income]** field directly from the **[!UICONTROL Forms Object]** pane.
+  1. Next, select **[!UICONTROL Create]** to create the rule.
+    ![Rule Editor example13](/help/edge/docs/forms/assets/rule-editor16.png)
   1. Select **[!UICONTROL Select Option]** and select **[!UICONTROL Mathematical Expression]**. A field to write mathematical expression opens.
     ![Rule Editor example14](/help/edge/docs/forms/assets/rule-editor17.png)
 
@@ -276,7 +276,7 @@ To write rules, perform the following steps:
       
       Now, add a rule for the `Tax Payable ` field, which is determined by multiplying the taxable income by the tax rate. For simplicity, assume a fixed tax rate of `10%`.
 
-  1. In authoring mode, select the **[!UICONTROL Tax Payable]** field and select ![edit-rules](/help/forms/assets/edit-rules-icon.svg) icon. Next, select **[!UICONTROL Create]** to open the Rule Editor.
+  1. In authoring mode, select the **[!UICONTROL Tax Payable]** field and select ![edit-rules](/help/forms/assets/edit-rules-icon.svg) icon. Next, select **[!UICONTROL Create]** to create rules.
   ![Rule Editor example16](/help/edge/docs/forms/assets/rule-editor19.png)
   1. Select **[!UICONTROL Select Option]** and select **[!UICONTROL Mathematical Expression]**. A field to write mathematical expression opens.
   ![Rule Editor example17](/help/edge/docs/forms/assets/rule-editor20.png)
@@ -291,7 +291,7 @@ To write rules, perform the following steps:
   1. Next, select in the highlighted area around the expression field and select **[!UICONTROL Extend Expression]**.
     ![Rule Editor example19](/help/edge/docs/forms/assets/rule-editor22.png)
   1. In the extended expression field, select **[!UICONTROL divided by]** from the **[!UICONTROL Select Operator]** field and **[!UICONTROL Number]** from the **[!UICONTROL Select Option]** field. Then, specify `100` in the number field.
-  ![Rule Editor example20](/help/edge/docs/forms/assets/rule-editor23.png)
+    ![Rule Editor example20](/help/edge/docs/forms/assets/rule-editor23.png)
   1. Select **[!UICONTROL Done]** to save the rule. 
 
 ### 4. Preview a form
