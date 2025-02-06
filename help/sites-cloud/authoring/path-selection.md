@@ -12,7 +12,7 @@ Often when authoring it is necessary to select another resource such as when def
 
 ## Path Fields {#path-fields}
 
-The example used here to illustrate is the image component. For more information about using and editing components see [Components for Page Authoring.](/help/sites-cloud/authoring/page-editor/components.md)
+The example used here to illustrate is the image component. For more information about using and editing components see [Components for Page Authoring](/help/sites-cloud/authoring/page-editor/components.md).
 
 Path fields have auto-complete and look-ahead functionality to make locating a resource easier.
 
@@ -26,7 +26,7 @@ Alternatively you can start typing in the path field and AEM will offer matching
 
 ## Path Browser {#path-browser}
 
-The path browser is organized like the [column view](/help/sites-cloud/authoring/basic-handling.md#column-view) of the [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) allowing for more detailed selection of resources.
+The path browser is organized like the [column view](/help/sites-cloud/authoring/basic-handling.md#column-view) of the [**Sites** console](/help/sites-cloud/authoring/sites-console/introduction.md), allowing for more detailed selection of resources.
 
 ![Path Browser](/help/sites-cloud/authoring/assets/path-browser.png)
 
