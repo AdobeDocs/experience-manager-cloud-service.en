@@ -12,7 +12,7 @@ Learn how to quickly create an AEM site using a site template.
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM Quick Site Creation journey, [Understand Cloud Manager and the Quick Site Creation Workflow,](cloud-manager.md) you learned about Cloud Manager and how it ties together the new Quick Site Creation process and you should now:
+In the previous document of the AEM Quick Site Creation journey, [Understand Cloud Manager and the Quick Site Creation Workflow](cloud-manager.md), you learned about Cloud Manager and how it ties together the new Quick Site Creation process and you should now:
 
 * Understand how AEM Sites and the Cloud Manager work together to facilitate front-end development
 * See how the front-end customization step is entirely decoupled from AEM and requires no AEM knowledge.
@@ -48,7 +48,7 @@ Templates are powerful because they are reusable so that your content authors ca
 
 ## Obtaining a Site Template {#obtaining-template}
 
-The simplest way to get started is to [download the latest release of the AEM Standard Site Template from its GitHub repository.](https://github.com/adobe/aem-site-template-standard/releases)
+The simplest way to get started is to [download the latest release of the AEM Standard Site Template from its GitHub repository](https://github.com/adobe/aem-site-template-standard/releases).
 
 Once downloaded you can upload it to your AEM environment as you would any other package. See the [Additional Resources section](#additional-resources) for details on how to work with packages if you need more information on this topic.
 
@@ -171,11 +171,11 @@ Now that you have completed this part of the AEM Quick Site Creation journey you
 * Learn how to create a site using a template.
 * See how to download the template from your new site to provide to the front-end developer.
 
-Build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Set Up Your Pipeline,](pipeline-setup.md) where you will create a front-end pipeline to manage the customization of your site's theme.
+Build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Set Up Your Pipeline](pipeline-setup.md), where you will create a front-end pipeline to manage the customization of your site's theme.
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the Quick Site Creation journey by reviewing the document [Set Up Your Pipeline,](pipeline-setup.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
+While it is recommended that you move on to the next part of the Quick Site Creation journey by reviewing the document [Set Up Your Pipeline](pipeline-setup.md), the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
 
 * [AEM Standard Site Template](https://github.com/adobe/aem-site-template-standard) - This is the GitHub repository of the AEM Standard Site template.
 * [Organizing Pages](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - This guide details how to organize the pages of your AEM Site.
