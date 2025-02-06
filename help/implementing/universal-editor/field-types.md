@@ -299,11 +299,13 @@ A container component type allows the grouping of components. It offers an addit
 
 #### Content Fragment {#content-fragment}
 
-The Content Fragment picker can be used to select a [Content Fragment](/help/sites-cloud/authoring/fragments/content-fragments.md) and its variations (if required). It offers an additional configuration and validation.
+The Content Fragment picker can be used to select a [Content Fragment](/help/sites-cloud/authoring/fragments/content-fragments.md) and its variations (if required). It offers an additional configuration.
 
 |Configuration|Value Type|Description|Required|
 |---|---|---|---|
 |`variationName`|`string`|Variable name to store the selected variation. If undefined, no variation picker is displayed|No|
+
+It also offers an additional validation type.
 
 |Validation Type|Value Type|Description|Required|
 |---|---|---|---|
@@ -438,11 +440,13 @@ It also offers an additional validation type.
 
 #### Experience Fragment {#experience-fragment}
 
-The Experience Fragment picker can be used to select an [Experience Fragment](/help/sites-cloud/authoring/fragments/experience-fragments.md) and its variations (if required). It offers an additional configuration and validation.
+The Experience Fragment picker can be used to select an [Experience Fragment](/help/sites-cloud/authoring/fragments/experience-fragments.md) and its variations (if required). It offers an additional configuration.
 
 |Configuration|Value Type|Description|Required|
 |---|---|---|---|
 |`variationName`|`string`|Variable name to store the selected variation. If undefined, no variation picker is displayed|No|
+
+It also offers an additional validation type.
 
 |Validation Type|Value Type|Description|Required|
 |---|---|---|---|
