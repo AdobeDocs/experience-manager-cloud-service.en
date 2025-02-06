@@ -4,8 +4,8 @@ description: AEM provides a console for managing the various translations of tex
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
+exl-id: 4b363473-3c5e-4d8e-97d6-b7b96ccf9e58
 ---
-
 # Using Translator to Manage Dictionaries{#using-translator-to-manage-dictionaries}
 
 AEM provides a console for managing the various translations of texts used in component UI. This console is available at:
