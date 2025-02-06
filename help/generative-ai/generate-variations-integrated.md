@@ -5,7 +5,7 @@ feature: Generate Variations
 role: Admin, Architect, Developer
 ---
 
-# Generate Variations - Integrated {#generate-variations-integrated}
+# Generate Variations - Integrated in AEM Editors {#generate-variations-integrated-in-aem-editors}
 
 If you are looking for a way to optimize your digital channels and accelerate content creation, you can use Generate Variations integrated into AEM editors. 
 
@@ -44,7 +44,7 @@ Your inputs to the service should be tied to a context. This context can be your
 
 You must evaluate the accuracy of any output as appropriate to your use case.
 
-Before using Generate Variations you are required to Agree to the [Adobe Generative AI User Guidelines](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+Before using Generate Variations you are recommended to read the [Adobe Experience Cloud Generative AI User Guidelines](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
 
 [Usage of Generate Variations](#generative-action-usage) is tied to the consumption of generative actions.
 
@@ -69,7 +69,7 @@ When you open Generate Variations that has been integrated into an editor you se
     * Shows your recent history of generations.
   * [Favorites](#favorites): 
     * Shows results from previous generations that you have flagged as Favorites.
-  * **Adobe Generative AI terms**: Links to the legal guidelines.
+  * **Adobe Generative AI terms**: Links to [Adobe Experience Cloud Generative AI User Guidelines](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
 
 ## Get Started with Generate {#get-started-with-Generate}
 
@@ -77,11 +77,19 @@ The interface guides you through the process of generating content. After openin
 
 ### Select the content {#select-the-content}
 
+From the main content flow (left side), select the content for which you want to generate variations. This **Selection** will be shown in the **Generate** tab.
+
 ### Describe the changes you want {#describe-the-changes-you-want}
 
-Each prompt needs you to supply certain information so that it is able to get appropriate content back from generative AI.
+To generate variations of the content you need to describe the changes you want. You can either select one of the **Suggestions**, or provide your own description.
 
-The input fields guide you through what information is needed. To help, certain fields have default values that you can use, or modify as needed, and descriptions explaining the requirements.
+You can also specify **Modifiers** to provide more context:
+
+* **Reference a web page**
+  Provide a URL for more context.
+* **Upload content brief**
+  Update a PDF or .docx file containing details of the content brief (10MB or less).
+
 
 ### Generate Copy {#generate-copy}
 
@@ -95,41 +103,34 @@ After you have described the changes you want, select **Generate** to see respon
 
 When you select a single variation, the following actions are available:
 
+* **Edit**
+  * You can edit the text of the generated variation. Persist your changes for later use.
 * **Favorite**
-  * Flag as a **Favorite** for future use (will show in [Favorites](#favorites)).
-* Thumbs Up/Thumbs Down
-  * Use the thumbs up / down indicators to notify Adobe of the quality of responses.
-* **Copy**
-  * Copy to the clipboard for use when authoring content on your website, or in an [Experiment](https://www.aem.live/docs/experimentation).
-* **Remove**
-
-If you need to refine the inputs or prompt, you can make adjustments and select **Generate** again to get a set of new responses. The new prompt and response are shown below the initial prompt and response; you can scroll up and down to view the various sets of content.
-
-Above each set of variations is the prompt that created them, along with a **Re-use** option. If you ever need to re-run a prompt with its inputs, select **Re-use** to reload them in **Inputs**.
+  * Flag this variation for future reference. Once flagged, it will be shown under the [Favorites](#favorites) tab.
+* **AI Rationale**
+  * For additional transparency, this provides a short description of why generative AI generated that particular variation.
 
 ### Use a Generated Variation {#use-a-generated-variation}
 
 To use the content generated with generative AI, you must copy the content to the clipboard for use elsewhere.
 
-This is done using the copy icons:
-
-* For text: Use the copy icon visible on the variations panel
-* For the image: mouse-over the image to see the copy icon
-
 Once copied to the clipboard, you can paste the information for use when authoring content for your website. You can also run an [experiment](https://www.aem.live/docs/experimentation).
+
+## History {#history}
+
+This section provides links to your recent activity. 
+
+After you select **Generate**. a **History** entry is added, showing the selected content. If you select a **History** entry, then **Generate**, it loads the prompt, and returns you to the **Generate** tab for further action.
 
 ## Favorites {#favorites}
 
 After reviewing the content you can save selected variations as favorites.
 
-Once saved they are shown under **Favorites** in the left navigation. Favorites are persisted (until you **Delete** them, or clear the browser cache).
+Once saved they are shown under **Favorites**. Favorites are persisted (until you **Unfavorite** them, or clear the browser cache).
 
 * Favorites and variations can be copy/pasted to the clipboard for use in your website content.
-* Favorites can be **Removed**.
-
-## History {#history}
-
-This section provides links to your recent activity. A **History** entry is added after you select **Generate**. It has the name of the prompt and a timestamp. If you select a link, it loads the prompt, populates the input fields as appropriate, and shows generated variations.
+* You can **Edit**, **Unfavorite** or show the **AI Rationale** for an entry.
+* Once a variation is selected, you can also **Export to CSV**.
 
 ## Generative Action Usage {#generative-action-usage}
 
