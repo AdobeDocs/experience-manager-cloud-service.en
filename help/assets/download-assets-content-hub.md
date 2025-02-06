@@ -28,13 +28,14 @@ To download an asset and its renditions, execute the following steps:
 
 1. Click the asset to view its properties.
 
-1. Click ![download](/help/assets/assets/download-icon.svg) to start the download process. The Download panel lists all available asset renditions (Original + other renditions).
+1. Click ![download](/help/assets/assets/download-icon.svg) to start the download process. The Download panel lists all available asset renditions.
 
    >[!NOTE]
    >
-   >The renditions display only if their visibility is enabled using the [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) User Interface.
+   >* The renditions display only if their visibility is enabled using the [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) User Interface.
+   >* You can download both [static and dynamic renditions](#types-of-renditions) while downloading an asset.
 
-1. Select the rendition(s) and click **[!UICONTROL Download]**.
+1. Select one or more renditions and click **[!UICONTROL Download]**.
 
    ![Download single asset renditions](/help/assets/assets/download-single-asset-renditions.png)
 
@@ -49,14 +50,15 @@ To download multiple assets and their renditions, execute the following steps:
 1. Click **[!UICONTROL Download]** to select from the various download options to begin download:
 
     * **Download [!UICONTROL Originals]**: Select this option to download the selected assets in the original form.
-    * **Download [!UICONTROL Renditions only]**: Select this option to download all available renditions of the assets except the original assets.
-    * **Download [!UICONTROL Originals & All renditions]**: Select this option to download both original and renditions of the selected assets. 
+    * **Download [!UICONTROL Static Renditions only]**: Select this option to download all available static renditions of assets except the original assets.
+    * **Download [!UICONTROL Originals & Static Renditions]**: Select this option to download both original and renditions of the selected assets. 
 
       ![Download multiple renditions](/help/assets/assets/download-multiple-renditions.png)
 
       >[!NOTE]
       >
-      >The renditions display only if their visibility is enabled using the [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) User Interface.
+      >* The renditions display only if their visibility is enabled using the [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) User Interface.
+      >* You can only download [static renditions](#types-of-renditions) while downloading multiple assets.
 
     If any of the selected asset is a licensed asset, click the license of the asset in left pane to see its preview, which enables you to select **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** and then click **[!UICONTROL Download]**. The preview of the license displays only if the asset is approved using Assets as a Cloud Service authoring environment. For more information, see [Manage licensed assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
@@ -95,8 +97,24 @@ The dialog box that displays depends on whether the download list includes expir
  To download non-licensed assets, select the assets and click ![download](/help/assets/assets/download-icon.svg) from the top rail.-->
 
     
+## Types of renditions {#types-of-renditions} 
+
+Asset renditions are different representations of an asset's original file. These can include thumbnails, optimized versions for web or mobile, watermarked or DRM-protected files, or even dynamic elements like smart crops. They do not need to match the original file type, instead, they serve to represent the asset in various use cases.
+
+Learn more about [view and manage renditions in Experience Manager Assets](/help/assets/renditions.md).
+
+[!DNL Experience Manager Assets] supports the following types of renditions:
+
+* [Static renditions](/help/assets/renditions.md#static-renditions): Static renditions are pre-created versions of digital assets, typically generated during the asset ingestion or modification. They are optimized for specific uses and platforms, such as web thumbnails, mobile-friendly formats for responsive designs, or high-resolution files for printing, providing a streamlined and consistent experience.
 
 
+* [Dynamic renditions](/help/assets/renditions.md#dynamic-renditions): Dynamic renditions are real-time, customized versions of assets to perform various actions, such as resizing images for different device resolutions or cropping to fit various aspect ratios. These renditions allows you to offer personalized and optimized experiences for wider requirements. Dynamic renditions of assets are created on [!DNL Adobe Experience Manager Assets] author environment.
 
+* [Smart crop](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): The smart crop focuses solely on the essential part of an asset during the cropping process. Dynamic media smart crop for leverages artificial intelligence powered by Adobe Sensei to track the point of interest, making sure our videos look like their best on all screen sizes. [!DNL Adobe Experience Manager] smart crop displays width and height of an asset renditions along with the title. 
 
+  ![Renditions types](/help/assets/assets/renditions-types.png)
 
+  
+  >[!NOTE]
+  >
+  > The users with access to the [Dynamic Media with Open API capabilities](/help/assets/dynamic-media-open-apis-overview.md) can view and download dynamic and smart crop renditions.
