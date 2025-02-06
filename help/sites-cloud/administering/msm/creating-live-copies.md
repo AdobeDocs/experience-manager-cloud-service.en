@@ -342,7 +342,7 @@ To change Live Copy content, you can:
 
 You can add components to a Live Copy page at any time. The inheritance status of the Live Copy and its paragraph system does not control your ability to add components.
 
-When the Live Copy page is synchronized with the source page, the added components remain unchanged. See also [Changing the Order of Components on a Live Copy Page.](#changing-the-order-of-components-on-a-live-copy-page)
+When the Live Copy page is synchronized with the source page, the added components remain unchanged. See also [Changing the Order of Components on a Live Copy Page](#changing-the-order-of-components-on-a-live-copy-page).
 
 >[!TIP]
 >

@@ -102,11 +102,11 @@ Select the appropriate reference type for more information. In certain situation
 
 ## Site {#site}
 
-The **Site** view of the side panel shows details of sites [created using a site template.](/help/sites-cloud/administering/site-creation/create-site.md)
+The **Site** view of the side panel shows details of sites [created using a site template](/help/sites-cloud/administering/site-creation/create-site.md).
 
 ![Site panel](assets/console-side-panel-site-paenl.png)
 
-See the document [Using the Site Panel to Manage Your Site Theme](/help/sites-cloud/administering/site-creation/site-rail.md) for more details on how you can use the panel to manage the [theme of your site.](/help/sites-cloud/administering/site-creation/site-themes.md).
+See the document [Using the Site Panel to Manage Your Site Theme](/help/sites-cloud/administering/site-creation/site-rail.md) for more details on how you can use the panel to manage the [theme of your site](/help/sites-cloud/administering/site-creation/site-themes.md).
 
 If you have not yet set up the front-end pipeline to enable theme-based site creation, the side panel will offer that option.
 
@@ -114,7 +114,7 @@ If you have not yet set up the front-end pipeline to enable theme-based site cre
 
 >[!TIP]
 >
->An end-to-end description of the process of creating a site from a template and customizing its theme can be found in the [Quick Site Creation Journey.](/help/journey-sites/quick-site/overview.md)
+>An end-to-end description of the process of creating a site from a template and customizing its theme can be found in the [Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md).
 
 ## Filter {#filter}
 
