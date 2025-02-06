@@ -31,10 +31,11 @@ The AEM internationalization framework uses dictionaries in the repository to st
 * Code is easy to read.
 * The default language is always available.
 
-Translation changes need to come from Git via the [CI/CD pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) in AEM as a cloud service.
+The [Translation tool](/help/implementing/developing/extending/i18n/translator.md) enables you to manage all dictionaries from one central location.
 
 ![i18n-components-2](/help/implementing/developing/extending/assets/i18n-comp2.png)
 
+Translation changes need to come from Git via the [CI/CD pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) in AEM as a cloud service.
 
 ### Overlaying Strings in System Dictionaries {#overlaying-strings-in-system-dictionaries}
 
