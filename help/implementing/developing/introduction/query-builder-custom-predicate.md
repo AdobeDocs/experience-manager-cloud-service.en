@@ -95,7 +95,7 @@ Grouping replication metadata predicates with a custom predicate evaluator helps
 
 >[!TIP]
 >
->The set up of new AEM projects including using maven is explained in detail by [the WKND tutorial.](develop-wknd-tutorial.md)
+>The set up of new AEM projects including using maven is explained in detail by [the WKND tutorial](develop-wknd-tutorial.md).
 
 First you need to update the Maven dependencies of your project. The `PredicateEvaluator` is part of the `cq-search` artifact so it must be added to your Maven pom file.
 

@@ -17,7 +17,7 @@ From time-to-time, Adobe contacts users regarding their AEM as a Cloud Service e
 * **Incident Notification** - These notifications are sent during an incident or when Adobe has identified a potential availability issue with your AEM as a Cloud Service environment.
 * **Proactive Notification** - These notifications are sent when an Adobe support team member wants to provide guidance on a potential optimization or recommendation that can benefit your AEM as a Cloud Service environment.
 
-Users can also receive these notifications for specific programs based on their [custom group permissions.](/help/implementing/cloud-manager/custom-permissions.md)
+Users can also receive these notifications for specific programs based on their [custom group permissions](/help/implementing/cloud-manager/custom-permissions.md).
 
 Additionally, assigning groups to proactive notification is supported and users and groups can be assigned to the product profiles directly.
 
@@ -37,7 +37,7 @@ Because user profiles are created and maintained in the Admin Console, before cr
 
 To properly set up receipt of notifications, create two user profiles. These steps are only done one time.
 
-1. Log in to Admin Console at [`https://adminconsole.adobe.com`.](https://adminconsole.adobe.com)
+1. Log in to Admin Console at [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
 1. Ensure that you are in the correct organization.
 
@@ -97,7 +97,7 @@ Follow these steps to add users for whom federated IDs have not yet been set up.
 
    ![Users](assets/product_services.png)
 
-1. If the federated ID for your team members has not yet been set up, select the **Users** tab from the top navigation, then select **Add User**. Otherwise skip to the section [Add Existing Users to Profiles.](#existing-users)
+1. If the federated ID for your team members has not yet been set up, select the **Users** tab from the top navigation, then select **Add User**. Otherwise skip to the section [Add Existing Users to Profiles](#existing-users).
 
    ![Users](assets/cloud_manager_add_user.png)
 
@@ -130,7 +130,7 @@ Follow these steps to add users for whom federated IDs already exist.
 
 1. Select the **Users** tab from the top navigation.
 
-1. If the federated ID already exists for the team member whom you want to add to a notification profile, locate that user in the list and click it. Otherwise skip to the section [Add New Users to Profiles.](#add-user)
+1. If the federated ID already exists for the team member whom you want to add to a notification profile, locate that user in the list and click it. Otherwise skip to the section [Add New Users to Profiles](#add-user).
 
 1. In the **Products** section of the user details window, click the ellipsis button and then select **Edit**.
 

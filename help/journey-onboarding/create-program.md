@@ -7,11 +7,11 @@ feature: Onboarding
 ---
 # Create a Program {#create-program}
 
-In this part of the [onboarding journey,](overview.md) you learn how to use Cloud Manager to create your first program.
+In this part of the [onboarding journey](overview.md), you learn how to use Cloud Manager to create your first program.
 
 ## Objective {#objective}
 
-After reviewing the previous document in this onboarding journey, [Access Cloud Manager,](cloud-manager.md) you have ensured you have appropriate access to Cloud Manager. Now you can create your first program.
+After reviewing the previous document in this onboarding journey, [Access Cloud Manager](cloud-manager.md), you have ensured you have appropriate access to Cloud Manager. Now you can create your first program.
 
 After reading this document, you can:
 
@@ -62,7 +62,7 @@ Once the program is complete, members of your organization assigned to the **Dev
 
 ## What's Next {#whats-next}
 
-Now that your first program is created, you can create environments for it. Continue your onboarding journey by next reviewing the document [Create Environments.](create-environments.md)
+Now that your first program is created, you can create environments for it. Continue your onboarding journey by next reviewing the document [Create Environments](create-environments.md).
 
 ## Additional Resources {#additional-resources}
 

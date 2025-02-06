@@ -12,7 +12,7 @@ Learn how you can enable the front-end pipeline for existing sites to use site t
 
 ## Overview {#overview}
 
-The front-end pipeline is a mechanism that can quickly deploy just the front-end code of your websites based on [site themes](site-themes.md) and [site templates.](site-templates.md)
+The front-end pipeline is a mechanism that can quickly deploy just the front-end code of your websites based on [site themes](site-themes.md) and [site templates](site-templates.md).
 
 This pipeline handles only front-end code, making the deployment process faster than full-stack deployments. It allows front-end developers to customize your site easily without needing knowledge of AEM.
 
@@ -38,7 +38,7 @@ When you activate the front-end pipeline for a site, AEM makes the following cha
 
 ## Requirements {#requirements}
 
-AEM can automatically adapt your existing site to use the front-end pipeline. To be able to do this workflow, your site must use [v2 or newer of the Page Component of the Core Components.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page)
+AEM can automatically adapt your existing site to use the front-end pipeline. To be able to do this workflow, your site must use [v2 or newer of the Page Component of the Core Components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page).
 
 ## Enabling Front-End Pipeline {#enabling}
 

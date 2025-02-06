@@ -1,11 +1,8 @@
 ---
-title: Introduction to Interactive Communication
+title: Introduction to Interactive Communication 
 description: Design Dynamic, Data-Driven Communications with Ease with AEM Forms Interactive Communications
 feature: Release Information
 role: Admin
-hide: yes
-hidefromtoc: yes
-exl-id: 7656d6fb-8727-491d-8216-7770b78ff854
 ---
 # Interactive Communications
 
@@ -15,12 +12,12 @@ You can use our intuitive point-and-click graphical design tool (Interactive Com
 
 From financial institutions generating account statements to government agencies streamlining benefit notices, Interactive Communications is the go-to tool for crafting high-quality, secure, and legally compliant correspondence with ease and efficiency.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444094/)
+
+[!VIDEO](https://video.tv.adobe.com/v/3444094/)
 
 <!-- ![Interactive Communication Editor](/help/assets/ic-editor.png)
 
 --> 
-
 ## Core Capabilities 
 
 The core capabilities of Interactive Communications editor are: 
