@@ -79,6 +79,8 @@ The 2025.2.0 feature activation will provide the full feature set for this maint
 * SITES-26660: Content fragment version comparison might be broken when @ContentType is of "string" type.
 * SITES-26626: Missing customErrorMessage on number & boolean fields.
 * SITES-26268: Wrong status code returned if a reference is invalid when creating a fragment.
+* FORMS-18098, FORMS-17954: Adaptive Forms fail to load in Internet Explorer mode of Microsoft Edge browser.
+* FORMS-17162: Publishing an asset leads to running of OOTB queries which degraded publish performance.
 
 ### Known Issues {#known-issues-19352}
 
