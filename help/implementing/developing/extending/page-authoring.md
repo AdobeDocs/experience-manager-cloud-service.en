@@ -48,7 +48,7 @@ You can find the MSM layer definition (for reference) in:
 
 This is a sample package showing how to create a layer (mode) for MSM view.
 
-You can find the code of this page on [GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode)
+You can find the code of this page on [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode).
 
 ## Add New Selection Category to Asset Browser {#add-new-selection-category-to-asset-browser}
 
@@ -58,7 +58,7 @@ The asset browser shows assets of various types/categories (for example, images 
 
 `aem-authoring-extension-assetfinder-flickr` is a sample package showing how to add a group to the asset finder. This example connects to [Flickr](https://www.flickr.com)'s public stream and shows them in the side panel.
 
-You can find the code of this page on [GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr)
+You can find the code of this page on [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr).
 
 ## Filtering Resources {#filtering-resources}
 
@@ -69,7 +69,7 @@ To keep the list to a reasonable size and also relevant to the use case, a filte
 * Implement the custom predicate by implementing [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/predicate/package-summary.html) interface.
 * Specify a name for the predicate, and refer that name when using the `pathbrowser`.
 
-For further detail on creating a custom predicate, see [this article.](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
+For further detail on creating a custom predicate, see [this article](/help/implementing/developing/introduction/query-builder-custom-predicate.md).
 
 ## Add New Action to a Component Toolbar {#add-new-action-to-a-component-toolbar}
 
@@ -79,7 +79,7 @@ Each component usually has a toolbar that provides access to a range of actions 
 
 `aem-authoring-extension-toolbar-screenshot` is a sample package showing how to create a custom toolbar action to render components.
 
-You can find the code of this page on [GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot)
+You can find the code of this page on [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot).
 
 ## Add New In-Place Editor {#add-new-in-place-editor}
 
@@ -150,7 +150,7 @@ To implement a new in-place editor (within your clientlib):
 
 `aem-authoring-extension-inplace-editor` is a sample package showing how to create an in-place editor in AEM.
 
-You can find the code of this page on [GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor)
+You can find the code of this page on [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor).
 
 ## Add a New Page Action {#add-a-new-page-action}
 
@@ -160,7 +160,7 @@ To add a new page action to the page toolbar, for example, a **Back to Sites** (
 
 `aem-authoring-extension-header-backtosites` is a sample package showing how to create a custom header bar action to jump back to the Sites console.
 
-You can find the code of this page on [GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites)
+You can find the code of this page on [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites).
 
 ## Customizing the Request for Activation Workflow {#customizing-the-request-for-activation-workflow}
 

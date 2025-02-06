@@ -62,7 +62,7 @@ Depending on your location, you can publish:
 
 ### Publishing from the Page Editor {#publishing-from-the-page-editor}
 
-If you are editing a page in the [page editor,](/help/sites-cloud/authoring/page-editor/introduction.md) it can be published directly from the editor.
+If you are editing a page in the [page editor](/help/sites-cloud/authoring/page-editor/introduction.md), it can be published directly from the editor.
 
 1. Select the **Page Information** icon to open the menu and then the **Publish Page** option.
 

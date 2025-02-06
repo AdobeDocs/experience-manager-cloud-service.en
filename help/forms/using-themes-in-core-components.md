@@ -59,7 +59,7 @@ Customizing a theme refers to the process of modifying, styling and personalizin
 
 * Familiarize yourself with [setting up a pipeline in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline) and having basic knowledge of how to set up a pipeline helps you efficiently manage and deploy your theme customizations. 
 * Learn how to [configure a user with the contributor role](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html). Understanding how to configure a user with the contributor role lets you grant the necessary permissions for theme customization.
-* Install the latest release of [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven is a build automation tool commonly used for Java&trade; projects. Installing the latest release ensures you have the necessary dependencies for theme customization.
+* Install the latest release of [Apache Maven](https://maven.apache.org/download.cgi). Apache Maven is a build automation tool commonly used for Java&trade; projects. Installing the latest release ensures you have the necessary dependencies for theme customization.
 * Install a plain text editor. For example, Microsoft&reg; Visual Studio Code. Using a plain text editor such as Microsoft&reg; Visual Studio Code provides a user-friendly environment for editing and modifying theme files.
 
 ### Set up your environment
@@ -371,7 +371,7 @@ Now, push the changes to the theme repository of your AEM Forms Cloud Service.
 
 ##### 5.3 Run the frontend pipeline {#run-a-frontend-pipeline}
 
-The theme is deployed using the [front-end pipeline.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html). To deploy theme, perform the following steps:
+The theme is deployed using the [front-end pipeline](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html). To deploy theme, perform the following steps:
 
 1. Log in to your AEM Cloud Manager repository.
 1. Click the **[!UICONTROL Add]** button from the **[!UICONTROL Pipelines]** section.

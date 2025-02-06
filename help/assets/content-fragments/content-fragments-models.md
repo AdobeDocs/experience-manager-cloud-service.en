@@ -8,7 +8,7 @@ solution: Experience Manager Sites
 ---
 # Content Fragment Models {#content-fragment-models}
 
-Content Fragment Models in AEM define the structure of content for your [content fragments,](/help/assets/content-fragments/content-fragments.md) serving as a foundation of your headless content.
+Content Fragment Models in AEM define the structure of content for your [content fragments](/help/assets/content-fragments/content-fragments.md), serving as a foundation of your headless content.
 
 To use Content Fragment Models you:
 
