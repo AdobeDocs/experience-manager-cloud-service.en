@@ -67,7 +67,7 @@ Support for remote assets using Dynamic Media with OpenAPI capabilities requires
 
     Learn more about [IMS authentication](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html).
 
-    For details on how to configure OSGi, please see the following documents:
+    For details on how to configure OSGi, see the following documents:
 
    * [Configuring OSGi for Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html) for AEM as a Cloud Service
    * [Configuring OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html) for AEM 6.5

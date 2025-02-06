@@ -82,7 +82,7 @@ On AEM Cloud Service author services as well as Asset Selector, the IMS Bearer T
 
 >[!NOTE]
 >
->To get more information on how to enable IMS authentication on AEM Asset Selector based integrations, please reach out to Enterprise Support
+>To get more information on how to enable IMS authentication on AEM Asset Selector based integrations, reach out to Enterprise Support
 
 1. For non-Asset Selector based experiences, AEM as a Cloud Service and Dynamic Media with OpenAPI capabilities currently support server-side-api integrations and can generate IMS Bearer tokens.
    * Follow the instructions [here](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow) to perform service-to-server API integrations that can retrieve the IMS Bearer tokens through [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)

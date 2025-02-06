@@ -18,7 +18,7 @@ This document provides an overview of a model definition and of fields and the c
 
 >[!TIP]
 >
->If you are not familiar with how to instrument your app for the Universal Editor, please see the document [Universal Editor Overview for AEM Developers.](/help/implementing/universal-editor/developer-overview.md)
+>If you are not familiar with how to instrument your app for the Universal Editor, please see the document [Universal Editor Overview for AEM Developers](/help/implementing/universal-editor/developer-overview.md).
 
 ## Model Definition Structure {#model-structure}
 
@@ -133,7 +133,7 @@ An AEM tag component type enables an AEM tag picker, which can be used to attach
 
 #### AEM Content {#aem-content}
 
-An AEM content component type enables an AEM content picker, which can be used to select any AEM resource. Unlike the [reference component,](#reference) which can only select assets, the AEM content component can reference any AEM content. It offers an additional validation type.
+An AEM content component type enables an AEM content picker, which can be used to select any AEM resource. Unlike the [reference component](#reference), which can only select assets, the AEM content component can reference any AEM content. It offers an additional validation type.
 
 |Validation Type|Value Type|Description|Required|
 |---|---|---|---|
@@ -152,7 +152,10 @@ An AEM content component type enables an AEM content picker, which can be used t
       "name": "reference",
       "value": "",
       "label": "AEM Content Picker",
-      "valueType": "string"
+      "valueType": "string",
+      "validation": {
+            "rootPath": "/content/refresh"
+        }
     }
   ]
 }
@@ -326,7 +329,10 @@ The Content Fragment picker can be used to select a [Content Fragment](/help/sit
         "name": "picker",
         "label": "Content Fragment Picker",
         "valueType": "string",
-        "variationName": "contentFragmentVariation"
+        "variationName": "contentFragmentVariation",
+        "validation": {
+            "rootPath": "/content/refresh"
+        }
       }
     ]
   }
@@ -634,7 +640,7 @@ A radio group component type allows for a mutually-exclusive selection from mult
 
 #### Reference {#reference}
 
-An reference component type enables an AEM asset picker, which can be used to select any AEM asset to reference. Unlike the [AEM content component,](#aem-content) which can select any AEM resource, the reference component can only reference assets. It offers an additional validation type.
+An reference component type enables an AEM asset picker, which can be used to select any AEM asset to reference. Unlike the [AEM content component](#aem-content), which can select any AEM resource, the reference component can only reference assets. It offers an additional validation type.
 
 A reference component type allows for a reference to another data object from the current object.
 
