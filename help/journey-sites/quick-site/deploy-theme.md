@@ -12,7 +12,7 @@ Learn how to deploy the site theme using the pipeline.
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM Quick Site Creation journey, [Customize the Site Theme,](customize-theme.md) you learned how the theme is built, how to customize it, and how to test it using live AEM content, and you should now:
+In the previous document of the AEM Quick Site Creation journey, [Customize the Site Theme](customize-theme.md), you learned how the theme is built, how to customize it, and how to test it using live AEM content, and you should now:
 
 * Understand the basic structure of the site theme and how to edit it.
 * See how to test your theme customizations using real AEM content via local proxy.
@@ -72,7 +72,7 @@ You can check the status of the pipeline to see the detail of its progress at an
 Once the pipeline is complete, you can inform the administrator to validate the changes. The administrator will then:
 
 1. Open the AEM authoring environment.
-1. Navigate to [the site the administrator previously created.](create-site.md)
+1. Navigate to [the site the administrator previously created](create-site.md).
 1. Edit one of the content pages.
 1. See the changes applied.
 

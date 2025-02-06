@@ -11,7 +11,7 @@ Learn how to use the GraphQL API for headless delivery of Content Fragment conte
 
 ## What are GraphQL and Assets REST APIs? {#what-are-the-apis}
 
-[Now that you have created some content fragments,](create-content-fragment.md) you can use AEM's APIs to deliver them headlessly.
+[Now that you have created some content fragments](create-content-fragment.md), you can use AEM's APIs to deliver them headlessly.
 
 * [The GraphQL API](/help/headless/graphql-api/content-fragments.md) lets you create requests to access and deliver Content Fragments. This API offers the most robust set of capabilities for querying and consuming Content Fragment content.
    * To use the API, [define and enable endpoints in AEM](/help/headless/graphql-api/graphql-endpoint.md), and if necessary, the [GraphiQL interface installed](/help/headless/graphql-api/graphiql-ide.md).

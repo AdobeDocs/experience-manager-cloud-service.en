@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 
 # Developing Sites with the Front-End Pipeline {#developing-site-with-front-end-pipeline}
 
-[With the front-end pipeline,](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) more independence is given to the front-end developers and the development process can gain substantial velocity. This document describes how this process works along with some considerations to be aware of so you can get the full potential out of this process.
+[With the front-end pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end), more independence is given to the front-end developers and the development process can gain substantial velocity. This document describes how this process works along with some considerations to be aware of so you can get the full potential out of this process.
 
 >[!TIP]
 >
@@ -16,7 +16,7 @@ role: Admin, Architect, Developer
 
 ## Front-End Build Contract {#front-end-build-contract}
 
-Similar to the [full-stack build environment,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) the front-end pipeline has its own environment. Developers have some flexibility using this pipeline so long as the following front-end build contract is observed.
+Similar to the [full-stack build environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md), the front-end pipeline has its own environment. Developers have some flexibility using this pipeline so long as the following front-end build contract is observed.
 
 The front-end pipeline requires the front-end Node.js project to use the `build` script directive to generate the build that it deploys. This is because Cloud Manager uses the command `npm run build` to generate the deployable project for the front-end build.
 
