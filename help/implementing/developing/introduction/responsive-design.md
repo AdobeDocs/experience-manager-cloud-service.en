@@ -67,7 +67,7 @@ The [WKND tutorial](develop-wknd-tutorial.md) uses this strategy to define style
 
 ### Using Media Queries with AEM Pages {#using-media-queries-with-aem-pages}
 
-[The WKND sample project](/help/implementing/developing/introduction/develop-wknd-tutorial.md) and [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) use the [Page Core Component,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html) which includes the clientlibs via the page policy.
+[The WKND sample project](/help/implementing/developing/introduction/develop-wknd-tutorial.md) and [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) use the [Page Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html), which includes the clientlibs via the page policy.
 
 If your own page component is not based on the Page Core Component, you can also include the client library folder in the HTL or JSP script of it. Doing so will generate and reference the CSS file with the media queries needed for the responsive grid to work.
 
