@@ -16,9 +16,9 @@ Internationalize your components and dialogs so that their UI strings can be pre
 Use the following process to internationalize your components and provide the UI in different languages:
 
 1. [Implement your components using code that internationalizes strings.](/help/implementing/developing/extending/i18n/dev.md) Your code identifies the strings to translate, and selects the language to present at runtime.
-1. Create dictionaries and add the English strings to translate.
-1. Export the dictionary to XLIFF format, translate the strings, then import the XLIFF files back into AEM.
-1. Incorporate the dictionary into the release management process of your application.
+1. [Create dictionaries](/help/implementing/developing/extending/i18n/translator.md#creating-a-dictionary) and [add](/help/implementing/developing/extending/i18n/translator.md#adding-changing-and-removing-strings) the English strings to translate.
+1. [Export](/help/implementing/developing/extending/i18n/translator.md#exporting-a-dictionary) the dictionary to XLIFF format, translate the strings, then import the XLIFF files back into AEM.
+1. [Incorporate the dictionary](/help/implementing/developing/extending/i18n/translator.md#publishing-dictionaries) into the release management process of your application.
 
 >[!NOTE]
 >
