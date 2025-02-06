@@ -98,7 +98,7 @@ After you have described the changes you want, select **Generate** to see respon
 
 ![Generate Variations - document based generate copy](assets/generate-variations-doc-based-generate-copy.png)
 
-### The Brand Score {the-brand-score}
+### The Brand Score {#the-brand-score}
 
 The brand score shows you how on-brand the generated variation is.
 
