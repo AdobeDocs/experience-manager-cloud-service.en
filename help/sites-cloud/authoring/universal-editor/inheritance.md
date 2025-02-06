@@ -36,7 +36,7 @@ To modify some content of the copies, authors break the inheritance on the affec
 
 When a page is part of MSM or a Launch and content is edited with the Universal Editor, the editor automatically disables inheritance for all changes made by authors on that page, ensuring that modified content is retained when updates are synchronized from the blueprint.
 
-The author does not need to click a button or otherwise take any other steps to disable inheritance before making local edits. As soon as a change is made, inheritance is implicitly canceled. This is in contrast to the [Page Editor.](/help/sites-cloud/authoring/page-editor/edit-content.md#inherited-components)
+The author does not need to click a button or otherwise take any other steps to disable inheritance before making local edits. As soon as a change is made, inheritance is implicitly canceled. This workflow is in contrast to the [Page Editor](/help/sites-cloud/authoring/page-editor/edit-content.md#inherited-components).
 
 The Universal Editor does not affect the underlying mechanism of inheritance. For more details on how inheritance works, please see the following documentation.
 
@@ -49,6 +49,6 @@ The Universal Editor does not affect the underlying mechanism of inheritance. Fo
   * Inheritance can only be reverted for the entire page via the
     * [Live Copy Overview Console](/help/sites-cloud/administering/msm/live-copy-overview.md) 
     * [Launches Console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-    * Using the **Reset** button on the **Live Copy** tab of the [page properties window.](/help/sites-cloud/authoring/sites-console/page-properties.md)
+    * Using the **Reset** button on the **Live Copy** tab of the [page properties window](/help/sites-cloud/authoring/sites-console/page-properties.md).
 * Authors do not have visual feedback to see which components have their inheritance disabled and which still have it preserved.
-* These features are currently limited to components in pages and do not yet apply to [Content Fragments,](/help/sites-cloud/administering/content-fragments/overview.md) despite those also having MSM and Launch capabilities.
+* These features are currently limited to components in pages and do not yet apply to [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md), despite those also having MSM and Launch capabilities.

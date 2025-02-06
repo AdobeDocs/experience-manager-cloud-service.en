@@ -11,7 +11,7 @@ Learn how you can create blocks that can be used for both WYSIWYG authoring and 
 
 ## Overview {#overview}
 
-On certain projects, you may want to support both [WYSIWYG authoring using the Universal Editor](/help/edge/wysiwyg-authoring/authoring.md) as well as [document-based authoring.](/help/edge/docs/authoring.md) To minimize development time and ensure the same site experience, you can create one set of blocks to support both use cases.
+On certain projects, you may want to support both [WYSIWYG authoring using the Universal Editor](/help/edge/wysiwyg-authoring/authoring.md) as well as [document-based authoring](/help/edge/docs/authoring.md). To minimize development time and ensure the same site experience, you can create one set of blocks to support both use cases.
 
 To do this, you must use the same content modeling approach for both your WYSIWYG authoring setup as well as your document-based authoring setup.
 
