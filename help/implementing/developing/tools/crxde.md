@@ -36,7 +36,7 @@ CRXDE Lite's user interface has many parts and has many functions.
 
 ### Top switcher bar {#top-switcher-bar}
 
-The Top Switcher Bar lets you quickly switch between CRXDE Lite and [Package Manager.](package-manager.md)
+The Top Switcher Bar lets you quickly switch between CRXDE Lite and [Package Manager](package-manager.md).
 
 ### Node Path Widget {#node-path-widget}
 
@@ -177,7 +177,7 @@ To create a folder with CRXDE Lite:
 To create a node with CRXDE Lite:
 
 1. Open CRXDE Lite in your browser.
-1. In the [**Exploerer Pane**,](#explorer-pane) right-click the node where you want to create the new node, select **Create**, then **Create Node**.
+1. In the [**Exploerer Pane**](#explorer-pane), right-click the node where you want to create the new node, select **Create**, then **Create Node**.
 1. Enter the **Name** and select the **Type**.
 1. Click **OK**.
 1. Click the [**Save All Button**](#save-all-button) to save the changes on the server.
@@ -195,7 +195,7 @@ You can now adapt the node to your needs by modifying properties or creating new
 To create a property with CRXDE Lite:
 
 1. Open CRXDE Lite in your browser.
-1. In the [**Exploerer Pane**,](#explorer-pane) select the node where you want to add the new property.
+1. In the [**Exploerer Pane**](#explorer-pane), select the node where you want to add the new property.
 1. In the [**Properties Tab**](#properties-tab) in the bottom pane, enter the **Name**, the **Type**, and the **Value**.
 1. Click **Add**.
 1. Click the [**Save All Button**](#save-all-button) to save the changes on the server.
@@ -205,10 +205,10 @@ To create a property with CRXDE Lite:
 To create a file with CRXDE Lite:
 
 1. Open CRXDE Lite in your browser.
-1. In the [**Exploerer Pane**,](#explorer-pane) right-click the component where you want to create the file, select **Create**, then **Create File**.
+1. In the [**Exploerer Pane**](#explorer-pane), right-click the component where you want to create the file, select **Create**, then **Create File**.
 1. Enter the file **Name** including its extension.
 1. Click **OK**.
-1. The new file opens as a tab in the [**Edit Pane**.](#edit-pane)
+1. The new file opens as a tab in the [**Edit Pane**](#edit-pane).
 1. Edit the file.
 1. Click the [**Save All Button**](#save-all-button) to save the changes.
 

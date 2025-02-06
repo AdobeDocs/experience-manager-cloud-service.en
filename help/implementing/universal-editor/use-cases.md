@@ -63,7 +63,7 @@ The Universal Editor works in the following way.
 1. The content author edits the page content in an intuitive WYSIWYG interface, editing in-place.
 1. The Universal Editor persists the changes automatically back to the data source.
 
-If you would like to learn more about the architecture of the Universal Editor, please see the document [Universal Editor Architecture.](/help/implementing/universal-editor/architecture.md)
+If you would like to learn more about the architecture of the Universal Editor, please see the document [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md).
 
 ## Universal Editor Concepts {#concepts}
 
