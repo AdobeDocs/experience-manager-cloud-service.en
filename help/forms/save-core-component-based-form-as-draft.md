@@ -16,7 +16,7 @@ Consider a user who begins filling out a form but needs to pause and return late
 
 ## Pre-requisites
 
-* [Enable Adaptive Forms Core Components for your environment.](/help/forms/enable-adaptive-forms-core-components.md)
+* [Enable Adaptive Forms Core Components for your environment](/help/forms/enable-adaptive-forms-core-components.md).
 
     After deploying the latest Core Components to your environment, the Forms Portal components become accessible in your authoring environment.
 
