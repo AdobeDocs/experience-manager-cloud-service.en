@@ -136,7 +136,7 @@ To generate new assets using [!DNL Adobe Firefly]:
 
    ![Firefly integration](assets/firefly-integration.png)
 
-   The new assets are successfully generated. Additionally, you can change the image description by typing the new text prompt in the description box. [Learn how to write a good AI prompt to generate extraordinary and relevant content.](https://helpx.adobe.com/in/firefly/using/tips-and-tricks.html) Alternatively, you can [edit image with various other features like changing style, image dimensions, and more.](https://helpx.adobe.com/in/firefly/using/text-to-image.html)
+   The new assets are successfully generated. Additionally, you can change the image description by typing the new text prompt in the description box. [Learn how to write a good AI prompt to generate extraordinary and relevant content](https://helpx.adobe.com/in/firefly/using/tips-and-tricks.html). Alternatively, you can [edit image with various other features like changing style, image dimensions, and more](https://helpx.adobe.com/in/firefly/using/text-to-image.html).
 
    ![Firefly integration](assets/bugatti-type-57.png)
 

@@ -15,7 +15,7 @@ The `component-definition.json` file defines the components available to your co
 
 >[!TIP]
 >
->For an overview of the content modeling process, please see the document [Content Modeling for WYSIWYG Authoring with Edge Delivery Services Projects.](/help/edge/wysiwyg-authoring/content-modeling.md)
+>For an overview of the content modeling process, please see the document [Content Modeling for WYSIWYG Authoring with Edge Delivery Services Projects](/help/edge/wysiwyg-authoring/content-modeling.md).
 
 >[!TIP]
 >
@@ -61,7 +61,7 @@ The following is a complete, but simple `component-definition.json` as an exampl
 
 ## `groups` {#groups}
 
-`groups` defines the groups of components that the author sees in the Universal Editor when clicking the **Add** icon in the properties panel of the editor to [add a new component to a page.](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) Groups help organize the components. Common groups might be **General Components** and **Advanced Components**.
+`groups` defines the groups of components that the author sees in the Universal Editor when clicking the **Add** icon in the properties panel of the editor to [add a new component to a page](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components). Groups help organize the components. Common groups might be **General Components** and **Advanced Components**.
 
 * `title` defines the textual description of the group shown in the editor UI.
 * `id` uniquely identifies the group.
@@ -88,7 +88,7 @@ The following is a complete, but simple `component-definition.json` as an exampl
 Once the `plugin` is defined, you need to indicate if it is page-related or fragment-related.
 
 * `page` indicates that the component is content on the current page.
-* `cf` indicates that the component is related to content within a [Content Fragment.](/help/assets/content-fragments/content-fragments.md)
+* `cf` indicates that the component is related to content within a [Content Fragment](/help/assets/content-fragments/content-fragments.md).
 
 ### `page` {#page}
 

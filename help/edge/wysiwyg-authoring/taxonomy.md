@@ -20,9 +20,9 @@ The Universal Editor works only with the IDs of your tags. By creating a taxonom
 
 ## Creating a Taxonomy Page {#creating}
 
-A taxonomy is created like [any other page in AEM.](/help/sites-cloud/authoring/sites-console/creating-pages.md)
+A taxonomy is created like [any other page in AEM](/help/sites-cloud/authoring/sites-console/creating-pages.md).
 
-1. Navigate to the [**Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Navigate to the [**Sites** console](/help/sites-cloud/authoring/sites-console/introduction.md).
 
 1. Select the location where you wish to create your taxonomy.
 
@@ -40,7 +40,7 @@ A taxonomy is created like [any other page in AEM.](/help/sites-cloud/authoring/
 
 1. Tap or click **Create**.
 
-The taxonomy page is created. In the **Success** dialog, you can tap or click **Done** dialog to dismiss the message or **Open** to edit the page in the [Page Editor.](/help/sites-cloud/authoring/page-editor/introduction.md)
+The taxonomy page is created. In the **Success** dialog, you can tap or click **Done** dialog to dismiss the message or **Open** to edit the page in the [Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md).
 
 Take note of the resulting page name of the taxonomy page for use in the following steps.
 
@@ -48,7 +48,7 @@ Take note of the resulting page name of the taxonomy page for use in the followi
 
 You start editing a taxonomy page like any other page in AEM.
 
-1. Navigate to the [**Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Navigate to the [**Sites** console](/help/sites-cloud/authoring/sites-console/introduction.md).
 
 1. Select the taxonomy you wish to edit.
 
@@ -76,7 +76,7 @@ AEM automatically updates the content of the taxonomy page when you update the u
 
 ## Update paths.json for Taxonomy Publication {#paths-json}
 
-Like when [managing and publishing tabular data for your Edge Delivery Services site,](/help/edge/wysiwyg-authoring/tabular-data.md) you need to update your `paths.json` file of your project to allow publication of your taxonomy data.
+Like when [managing and publishing tabular data for your Edge Delivery Services site](/help/edge/wysiwyg-authoring/tabular-data.md), you need to update your `paths.json` file of your project to allow publication of your taxonomy data.
 
 1. Open the root of your project in GitHub.
 
@@ -95,7 +95,7 @@ Like when [managing and publishing tabular data for your Edge Delivery Services 
    }
    ```
 
-   * `<taxonomy-page-name>` must match the name of the [taxonomy page you created.](#creating)
+   * `<taxonomy-page-name>` must match the name of the [taxonomy page you created](#creating).
    * `<taxonomy-json-name>` can be any valid name you choose.
 
 1. Click **Commit changes...** to save the changes to `main`.
@@ -106,20 +106,20 @@ This process only needs to be done once per taxonomy page. Once done, you can pu
 
 >[!TIP]
 >
->For more information about path mappings, please see the document [Path Mapping for Edge Delivery Services.](/help/edge/wysiwyg-authoring/path-mapping.md)
+>For more information about path mappings, please see the document [Path Mapping for Edge Delivery Services](/help/edge/wysiwyg-authoring/path-mapping.md).
 
 ## Publishing a Taxonomy {#publishing}
 
 A taxonomy is not available to the Universal Editor or your users until it is published.
 
-Taxonomy pages are published like any other page by [using the **Quick Publish** or **Manage Publication** icons in the toolbar.](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
+Taxonomy pages are published like any other page by [using the **Quick Publish** or **Manage Publication** icons in the toolbar](/help/sites-cloud/authoring/sites-console/publishing-pages.md).
 
 You must republish your taxonomy page every time you:
 
 * Edit the taxonomy page.
 * Edit or add to the tag(s) and namespace(s) included in your taxonomy page.
 
-If you create a new taxonomy page you must first [add a mapping to it to the `paths.json` file in your project.](#paths-json)
+If you create a new taxonomy page you must first [add a mapping to it to the `paths.json` file in your project](#paths-json).
 
 ## Accessing Taxonomy Information {#accessing}
 
@@ -129,7 +129,7 @@ You can access the taxonomy as JSON data at the following address.
 
 `https://<branch>--<repository>--<owner>.aem.page/<taxonomy-json-name>.json`
 
-Use the `<taxonomy-json-name>` that you defined when [mapping your taxonomy to the `paths.json` file in your project.](#paths-json) The taxonomy data is returned as JSON data like in the following example.
+Use the `<taxonomy-json-name>` that you defined when [mapping your taxonomy to the `paths.json` file in your project](#paths-json). The taxonomy data is returned as JSON data like in the following example.
 
 ```json
 {
@@ -160,11 +160,11 @@ Use the `<taxonomy-json-name>` that you defined when [mapping your taxonomy to t
 
 This JSON data will automatically update as you update the taxonomy and republish it. Your app can programmatically access this information for your users.
 
-[If you maintain tags in multiple languages,](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages) you can access those languages by passing in the ISO2 language code as the value of a `sheet=` parameter.
+[If you maintain tags in multiple languages](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages), you can access those languages by passing in the ISO2 language code as the value of a `sheet=` parameter.
 
 ## Exposing Additional Tag Properties {#additional-properties}
 
-By default, your taxonomy will contain `tag` and `title` values as seen [in the previous example.](#accessing) You can configure your taxonomy to expose additional tag properties. In this example we will expose the tag description.
+By default, your taxonomy will contain `tag` and `title` values as seen [in the previous example](#accessing). You can configure your taxonomy to expose additional tag properties. In this example we will expose the tag description.
 
 1. Use the Sites console to select the taxonomy you created.
 1. Tap or click the **Properties** icon in the toolbar.
@@ -173,7 +173,7 @@ By default, your taxonomy will contain `tag` and `title` values as seen [in the 
 1. Tap or click **Save &amp; Close**.
 1. With the taxonomy still selected, tap or click **Quick Publish** in the toolbar.
 
-Now [when you access your taxonomy,](#accessing) the tag description (or whatever property you chose to expose) is included in the JSON.
+Now [when you access your taxonomy](#accessing), the tag description (or whatever property you chose to expose) is included in the JSON.
 
 ```json
 

@@ -54,7 +54,7 @@ ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
                                 'contexthub.mystorecandidate', 0);
 ```
 
-In most cases only one candidate is necessary and the priority can be set to `0`, but if you are interested you can learn about [more advanced registrations,](contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) which allows one of few store implementations to be chosen based on javascript condition (`applies`) and candidate priority.
+In most cases only one candidate is necessary and the priority can be set to `0`, but if you are interested you can learn about [more advanced registrations](contexthub-api.md#registerstorecandidate-store-storetype-priority-applies), which allows one of few store implementations to be chosen based on javascript condition (`applies`) and candidate priority.
 
 ## Creating ContextHub UI Module Types {#creating-contexthub-ui-module-types}
 

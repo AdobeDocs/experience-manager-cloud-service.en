@@ -12,7 +12,7 @@ Create a front-end pipeline to manage the customization of your site's theme.
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM Quick Site Creation journey, [Create Site from Template,](create-site.md) you learned how to use a site template to quickly create an AEM site that can be further customized using front-end tools and now you should now:
+In the previous document of the AEM Quick Site Creation journey, [Create Site from Template](create-site.md), you learned how to use a site template to quickly create an AEM site that can be further customized using front-end tools and now you should now:
 
 * Understand how to obtain AEM Site templates.
 * Learn how to create a site using a template.
@@ -108,11 +108,11 @@ Now that you have completed this part of the AEM Quick Site Creation journey you
 * Understand what a front-end pipeline is.
 * Know how to set up a front-end pipeline in Cloud Manager.
 
-Build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Grant Access to the Front-End Developer,](grant-access.md) where you will onboard the front-end developers into Cloud Manager so they have access to your AEM site git repository and pipeline.
+Build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Grant Access to the Front-End Developer](grant-access.md), where you will onboard the front-end developers into Cloud Manager so they have access to your AEM site git repository and pipeline.
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the Quick Site Creation journey by reviewing the document [Customize the Site Theme,](customize-theme.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
+While it is recommended that you move on to the next part of the Quick Site Creation journey by reviewing the document [Customize the Site Theme](customize-theme.md), the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
 
 * [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - If you would like more details on Cloud Manager's features, you may want to directly consult the in-depth technical docs.
 * [Cloud Manager Repositories](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - If you need more information about how to set up and manage git repositories for your AEMaaCS project, see this document.
