@@ -14,7 +14,7 @@ Learn how the templates console serves as the central location to view and manag
 
 When creating a page, you need to select a template. The page template is used as the base for the new page. [AEM's editable templates](/help/implementing/developing/components/templates.md) can define the structure of the resultant page, any initial content, and the components that can be used (design properties).
 
-Content authors are presented with a selection of available templates when they [create new pages in the sites console.](/help/sites-cloud/authoring/sites-console/creating-pages.md) Templates can be used to create pages that are editable with:
+Content authors are presented with a selection of available templates when they [create new pages in the sites console](/help/sites-cloud/authoring/sites-console/creating-pages.md). Templates can be used to create pages that are editable with:
 
 * [The Page Editor](/help/sites-cloud/authoring/page-editor/templates.md) or
 * [The Universal Editor](/help/sites-cloud/authoring/universal-editor/templates.md)
@@ -67,7 +67,7 @@ If an author starts to a template created with the template editor that has alre
 
 ## Properties {#properties}
 
-You can edit the [properties of the template](/help/sites-cloud/authoring/page-editor/templates.md) much in the same way that you can [edit page properties.](/help/sites-cloud/authoring/sites-console/page-properties.md) Template properties include:
+You can edit the [properties of the template](/help/sites-cloud/authoring/page-editor/templates.md) much in the same way that you can [edit page properties](/help/sites-cloud/authoring/sites-console/page-properties.md).Template properties include:
 
 * Template title
 * Description
@@ -129,6 +129,6 @@ Select the template and then tap or click **Delete** to delete it.
 
 ## Creating Templates {#create}
 
-Use the **Create** button in the console to create a new template in your current location. For details on creating a template, please see the document [Templates to Create Pages that are Editable with the Page Editor.](/help/sites-cloud/authoring/page-editor/templates.md)
+Use the **Create** button in the console to create a new template in your current location. For details on creating a template, please see the document [Templates to Create Pages that are Editable with the Page Editor](/help/sites-cloud/authoring/page-editor/templates.md).
 
 The **Create** button is only used to create templates that are editable with the Page Editor. Please see the document [Templates to Create Pages that are Editable with the Universal Editor](/help/sites-cloud/authoring/universal-editor/templates.md) to learn about creating templates based on pages made with the Universal Editor.

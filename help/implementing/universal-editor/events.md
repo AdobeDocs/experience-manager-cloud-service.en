@@ -21,7 +21,7 @@ All events follow a naming convention.
 
 For example, `aue:content-update` and `aue:ui-select`
 
-Events include the request's and response's payload and are triggered once the corresponding call is successful. For further details about calls and examples of their payloads, please see the document [Universal Editor Calls.](/help/implementing/universal-editor/calls.md)
+Events include the request's and response's payload and are triggered once the corresponding call is successful. For further details about calls and examples of their payloads, please see the document [Universal Editor Calls](/help/implementing/universal-editor/calls.md).
 
 ## Content Update Events {#content-events}
 

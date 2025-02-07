@@ -70,7 +70,7 @@ Now that you know what roles are required, look at the chart below to see when e
 
 <br>
 
-![Horizontal bar chart showing ficticious roles and their level of involvement on the AEM Assets team.](/help/overview/assets/team_involvement2.png)
+![Horizontal bar chart showing ficticious roles and their level of involvement on the AEM Assets team](/help/overview/assets/team_involvement2.png).
 
 >[!TIP]
 >
