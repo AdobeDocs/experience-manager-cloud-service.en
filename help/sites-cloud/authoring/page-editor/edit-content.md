@@ -38,7 +38,7 @@ The component placeholder is an indicator to show where a component will be posi
 
   ![Placeholder when adding a new component to a page](assets/edit-content-component-placeholder.png)
 
-* When [moving an existing component,](#movging-components) it will appear as a blue square.
+* When [moving an existing component](#movging-components), it will appear as a blue square.
 
   ![Placeholder when moving an existing component on a page](assets/edit-content-move-placeholder.png)
 
@@ -48,8 +48,8 @@ In both cases, the target selected will appear as a blue outline below the compo
 
 You can add a new component by using the [component browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser). The [component placeholder](#component-placeholder) shows you where you are positioning the component.
 
-1. Make sure that the page editor is in [**Edit** mode.](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
-1. Open the [component browser.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
+1. Make sure that the page editor is in [**Edit** mode](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector).
+1. Open the [component browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser).
 1. Drag the required component to the [required position](#component-placeholder) and release.
 1. [Edit](#edit-content) the newly-placed component.
 
@@ -61,7 +61,7 @@ You can add a new component by using the [component browser](/help/sites-cloud/a
 
 You can add a new component by using the **Drag components here** placeholder of the paragraph system:
 
-1. Make sure that the page editor is in [**Edit** mode.](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
+1. Make sure that the page editor is in [**Edit** mode](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector).
 1. There are two ways to select and add a new component from the paragraph system:
 
     * Select the **Insert Component** option (+) from either the toolbar of an existing component or the **Drag components here** box.
@@ -81,13 +81,13 @@ You can add a new component by using the **Drag components here** placeholder of
 
 ## Adding an Asset {#adding-asset}
 
-You can also add a new component to the page by dragging an asset from the [assets browser.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser) This automatically creates a component of the appropriate type (and containing the asset).
+You can also add a new component to the page by dragging an asset from the [assets browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser). This automatically creates a component of the appropriate type (and containing the asset).
 
 This behavior can be configured for your installation. Please see the document [Components Reference Guide](/help/implementing/developing/components/reference.md#component-placeholders) for further details.
 
 To create a component by dragging one of the above asset types:
 
-1. Make sure that your page is in [**Edit** mode.](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
+1. Make sure that your page is in [**Edit** mode](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector).
 1. Open the [asset browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser).
 1. Drag the required asset to the required position. The [component placeholder](#component-placeholder) shows you where the component is positioned and a target will show were it will be inserted.
 1. Release the asset onto the target. A component, appropriate for the asset type, is created at the required location containing the selected asset.
@@ -127,7 +127,7 @@ The actions available in the component toolbar are appropriate for the selected 
 
   ![Delete button](assets/edit-content-delete.png)
 
-* **Insert component** opens the dialog to [add a new component.](#adding-a-component-from-the-paragraph-system)
+* **Insert component** opens the dialog to [add a new component](#adding-a-component-from-the-paragraph-system).
 
   ![Insert button](assets/edit-content-insert-component.png)
 
@@ -213,7 +213,7 @@ Instead of repeatedly switching from edit to [layout mode](/help/sites-cloud/aut
 
    ![The Layout button of the component toolbar](assets/edit-content-layout.png)
 
-1. Once the Layout action is selected, you can modify the layout of the component as you would in [layout mode.](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode)
+1. Once the Layout action is selected, you can modify the layout of the component as you would in [layout mode](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode).
 
     * The resizing handles for the component display.
     * The emulator toolbar is shown at the top of the screen.

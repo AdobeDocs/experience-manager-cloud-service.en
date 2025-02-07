@@ -44,7 +44,7 @@ The Externalizer service lets you centrally define the domain that can be used t
 
 >[!NOTE]
 >
->As when applying any [OSGi configurations for AEM as a Cloud Service,](/help/implementing/deploying/overview.md#osgi-configuration) the following steps should be performed on a local developer instance and then committed to your project code for deployment.
+>As when applying any [OSGi configurations for AEM as a Cloud Service](/help/implementing/deploying/overview.md#osgi-configuration), the following steps should be performed on a local developer instance and then committed to your project code for deployment.
 
 To define a domain mapping for the Externalizer service:
 

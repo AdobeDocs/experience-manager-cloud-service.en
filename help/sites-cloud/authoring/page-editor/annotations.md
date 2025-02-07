@@ -77,7 +77,7 @@ In addition to viewing the annotations, Annotate mode lets you create, edit, mov
 
 1. After you have finished editing a specific annotation, you can:
 
-    * Select the text marker to open the annotation. Once open you can view the full text, make changes, or [delete the annotation.](#deleting-annotations)
+    * Select the text marker to open the annotation. Once open you can view the full text, make changes, or [delete the annotation](#deleting-annotations).
     * Reposition the text marker.
     * Select a sketch line to select that sketch and drag it to the desired position.
     * Move or copy a component

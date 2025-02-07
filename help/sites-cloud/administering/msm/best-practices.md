@@ -93,7 +93,7 @@ Modifications to the content structure in a blueprint/source tree are reflected 
 * **Moving** pages in a blueprint will **not** result in corresponding pages being moved in Live Copies after rollout with standard rollout configuration:
   * The reason for this behavior is that a page move implicitly includes a page delete. This could potentially lead to unexpected behavior on publish, as deleting pages on author automatically deactivates corresponding content on publish. This can also have an additional effect on related items such as links, bookmarks, and others.
     * Content inheritance in the respective Live Copy pages is updated to reflect the new location of their sources in the blueprint.
-    * To fully realize a page move from a blueprint to Live Copies, consider the [page move best practices.](#page-move)
+    * To fully realize a page move from a blueprint to Live Copies, consider the [page move best practices].(#page-move)
 
 ### Page Move Best Practices {#page-move}
 
