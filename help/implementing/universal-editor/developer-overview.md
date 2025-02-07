@@ -27,17 +27,17 @@ It does this by taking a standard example that most AEM developer's are familiar
 To follow along with this overview, you need the following available.
 
 * [A local development instance of AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
-  * Your local development instance must be [configured with HTTPS for development purpose on `localhost`.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)
-  * [The WKND demo site must be installed.](https://github.com/adobe/aem-guides-wknd)
-* [Access to the Universal Editor](/help/implementing/universal-editor/getting-started.md#onboarding)
-* [A local Universal Editor service](/help/implementing/universal-editor/local-dev.md) running for development purposes
-  * Make sure to direct your browser to [accept the local services self-signed certificate.](/help/implementing/universal-editor/local-dev.md#editing)
+  * Your local development instance must be [configured with HTTPS for development purpose on `localhost`](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html).
+  * [The WKND demo site must be installed](https://github.com/adobe/aem-guides-wknd).
+* [Access to the Universal Editor](/help/implementing/universal-editor/getting-started.md#onboarding).
+* [A local Universal Editor service](/help/implementing/universal-editor/local-dev.md) running for development purposes.
+  * Make sure to direct your browser to [accept the local services self-signed certificate](/help/implementing/universal-editor/local-dev.md#editing).
 
-Beyond general familiarity with web development, this document assumes basic familiarity with AEM development. If you are not experienced with AEM development, consider reviewing [the WKND tutorial before continuing.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+Beyond general familiarity with web development, this document assumes basic familiarity with AEM development. If you are not experienced with AEM development, consider reviewing [the WKND tutorial before continuing](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 ## Start AEM and Sign In to the Universal Editor {#sign-in}
 
-If you haven't already, you must have your local AEM development instance running with WKND installed and HTTPS enabled as [detailed in the prerequisites.](#prerequisites) This overview assumes that your instance is running at `https://localhost:8443`.
+If you haven't already, you must have your local AEM development instance running with WKND installed and HTTPS enabled as [detailed in the prerequisites](#prerequisites). This overview assumes that your instance is running at `https://localhost:8443`.
 
 1. Open the main WKND English language master page in the AEM Editor.
 
@@ -183,7 +183,7 @@ However you likely noticed that you can not interact with the page in the Univer
    <meta name="urn:adobe:aue:system:aem" content="aem:https://localhost:8443">
    ```
 
-   * The latest version of the library is always recommended. If you need a prior version, please see the document [Getting Started with the Universal Editor in AEM.](/help/implementing/universal-editor/getting-started.md#alternative)
+   * The latest version of the library is always recommended. If you need a prior version, please see the document [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md#alternative).
 
 1. Add the necessary metadata for the connection to your local Universal Editor service to the end of the file.
 
@@ -566,21 +566,21 @@ Congratulations! Now you can instrument your own AEM apps to work with the Unive
 
 When you start instrumenting your own app, keep in mind the basic steps you performed in this example.
 
-1. [You set up your development environment.](#prerequisites)
+1. [You set up your development environment](#prerequisites).
    * AEM running locally on HTTPS with WKND installed
    * Universal Editor Service running locally on HTTPS
 1. You updated AEM's OSGi settings to allow its content to be loaded remotely.
    * [`org.apache.sling.engine.impl.SlingMainServlet`](#sameorigin)
    * [`com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`](#samesite-cookies)
-1. [You added the `universal-editor-embedded.js` library to the `customheaderlibs.html` file of the page component of the app.](#ue-connect-remote-frame)
-1. [You defined a connection to persist changes in the `customheaderlibs.html` file of the page component of the app.](#connection)
+1. [You added the `universal-editor-embedded.js` library to the `customheaderlibs.html` file of the page component of the app](#ue-connect-remote-frame).
+1. [You defined a connection to persist changes in the `customheaderlibs.html` file of the page component of the app](#connection).
    * You defined a connection to the local AEM development instance.
    * You also defined a connection to the local Universal Editor service.
-1. [You instrumented the teaser component.](#instrumenting-components)
-1. [You instrumented the subcomponents of the teaser.](#subcomponents)
-1. [You defined a custom authentication header so you could save changes using your local Universal Editor service.](#auth-header)
-1. [You instrumented the app to use the properties panel.](#properties-rail)
-1. [You instrumented the teaser component to use the properties panel.](#properties-rail-component)
+1. [You instrumented the teaser component](#instrumenting-components).
+1. [You instrumented the subcomponents of the teaser](#subcomponents).
+1. [You defined a custom authentication header so you could save changes using your local Universal Editor service](#auth-header).
+1. [You instrumented the app to use the properties panel](#properties-rail).
+1. [You instrumented the teaser component to use the properties panel](#properties-rail-component).
 
 You can follow these same steps to instrument your own app for use with the Universal Editor. Any properties in the JCR can be exposed to the Universal Editor.
 

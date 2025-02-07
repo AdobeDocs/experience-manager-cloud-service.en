@@ -72,7 +72,7 @@ It is simple to create a configuration in AEM using the Configuration Browser.
 
    * The **Title** should be descriptive.
    * The **Name** becomes the node name in the repository.
-     * It is automatically generated based on the title and adjusted according to [AEM naming conventions.](naming-conventions.md)
+     * It is automatically generated based on the title and adjusted according to [AEM naming conventions](naming-conventions.md).
      * It can be adjusted if necessary.
 1. Check the type of configurations that you want to allow.
    * [Context Hub Segments](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
@@ -194,7 +194,7 @@ To support this the configuration lookup, AEM has an inheritance and fallback me
 
 Configurations in AEM are based on Sling Context-Aware Configurations. The Sling bundles provide a service API that can be used to get context-aware configurations. Context-aware configurations are configurations that are related to a content resource or a resource tree as was [described in the previous example](#developer-example).
 
-For more details about Context-Aware Configurations, examples, and how to use them, see the [Sling documentation.](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html).
+For more details about Context-Aware Configurations, examples, and how to use them, see the [Sling documentation](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html).
 
 ### ConfMgr Web Console {#confmgr-web-console}
 

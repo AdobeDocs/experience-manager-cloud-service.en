@@ -17,6 +17,8 @@ For Adobe managed CDNs, when using a DV SSL certificate, only sites with ACME va
 >
 >Have you [added a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) and [added an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md), respectively? If not, you must complete these two tasks before you can add a CDN configuration.
 
+See also [Adobe Managed CDN](https://www.aem.live/docs/byo-cdn-adobe-managed).
+
 **To add a CDN configuration:**
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
@@ -25,8 +27,8 @@ For Adobe managed CDNs, when using a DV SSL certificate, only sites with ACME va
 
    | Use case | Steps |
    | --- | --- |
-   | I want to add a CDN configuration to an *existing* Edge Delivery site in Cloud Manager | a. In the left side menu, under **Services**, click **Edge Delivery Sites**.<br>b. In the Edge Delivery table, at the end of a row that does not have a domain associated with it, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).<br>c. Click **Configure CDN**. |
-   | I want to add a CDN configuration in Cloud Manager | a. In the left side menu, under **Services**, click **CDN Configurations**.<br>b. Near the upper-right corner of the CDN Configurations page, click **Add**.   |
+   | I want to add a CDN configuration to an *existing* Edge Delivery site in Cloud Manager | a. In the left side menu, under **Services**, click ![Webpages icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**.<br>b. In the Edge Delivery table, at the end of a row that does not have a domain associated with it, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).<br>c. Click **Configure CDN**. |
+   | I want to add a CDN configuration in Cloud Manager | a. In the left side menu, under **Services**, click ![Social network icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Domain Mappings**.<br>b. Near the upper-right corner of the Domain Mappings page, click **Add**.   |
 
 1. In the **Configure CDN** dialog box, in the **Origin** drop-down list, select one of the following:
 

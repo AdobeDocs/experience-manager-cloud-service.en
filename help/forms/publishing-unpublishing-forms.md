@@ -116,7 +116,7 @@ Complete the following steps to publish all the Correspondence Management assets
 
 ## Automate publishing and unpublishing for Forms &amp; Documents {#automate-publishing-and-unpublishing-for-forms-amp-documents}
 
-[!DNL AEM Forms] let you schedule asset publishing and unpublishing for Forms & Documents. You can specify the schedule in the Metadata Editor. For more information about managing form metadata, see [Managing form metadata.](manage-form-metadata.md)
+[!DNL AEM Forms] let you schedule asset publishing and unpublishing for Forms & Documents. You can specify the schedule in the Metadata Editor. For more information about managing form metadata, see [Managing form metadata](manage-form-metadata.md).
 
 Follow these steps to schedule the date and time of publishing and unpublishing Forms & Documents assets:
 

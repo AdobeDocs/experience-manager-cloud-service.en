@@ -11,7 +11,7 @@ Components are at the core of building an experience in AEM. The [Core Component
 
 >[!TIP]
 >
->Before references this document, make sure you have completed the [WKND Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) and are thus familiar with the [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) and the [AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+>Before references this document, make sure you have completed the [WKND Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) and are thus familiar with the [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) and the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html).
 
 Because the WKND Tutorial covers most use cases, this document is intended only as a supplement to those resources. It gives in-depth technical specifics about how components are structured and configured in AEM and is not intended as a getting started guide.
 
@@ -86,7 +86,7 @@ This is an abstraction that helps to ensure that even when the look and feel cha
 
 The definition of a component can be broken down as follows:
 
-* AEM components are based on [Sling.](https://sling.apache.org/documentation.html)
+* AEM components are based on [Sling](https://sling.apache.org/documentation.html).
 * AEM components are located under `/libs/core/wcm/components`.
 * Project/Site specific components are located under `/apps/<myApp>/components`.
 * AEM standard components are defined as `cq:Component` and have the key elements:
@@ -99,32 +99,32 @@ The definition of a component can be broken down as follows:
 * **Root Node**:
   * `<mycomponent> (cq:Component)` - Hierarchy node of the component.
 * **Vital Properties**:
-  * `jcr:title` - Component title; for example, used as a label when the component is listed in the [Components Browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) and [Components Console](/help/sites-cloud/authoring/components-console.md)
-  * `jcr:description` - Description for the component; used as mouse-over hint in the Components Browser and Components Console
-  * See the section [Component Icon](#component-icon) for details
+  * `jcr:title` - Component title; for example, used as a label when the component is listed in the [Components Browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) and [Components Console](/help/sites-cloud/authoring/components-console.md).
+  * `jcr:description` - Description for the component; used as mouse-over hint in the Components Browser and Components Console.
+  * See the section [Component Icon](#component-icon) for details.
 * **Vital Child Nodes**:
-  * `cq:editConfig (cq:EditConfig)` - Defines the edit properties of the component and enables the component to appear in the Components Browser
+  * `cq:editConfig (cq:EditConfig)` - Defines the edit properties of the component and enables the component to appear in the Components Browser.
     * If the component has a dialog, it will automatically appear in the Components browser or Sidekick, even if the cq:editConfig does not exist.
   * `cq:childEditConfig (cq:EditConfig)` - Controls author UI aspects for child components that do not define their own `cq:editConfig`.
   * `cq:dialog (nt:unstructured)` - Dialog for this component. Defines the interface allowing the user to configure the component and/or edit content.
-  * `cq:design_dialog (nt:unstructured)` - Design editing for this component
+  * `cq:design_dialog (nt:unstructured)` - Design editing for this component.
 
 #### Component Icon {#component-icon}
 
 The icon or abbreviation for the component is defined via JCR properties of the component when the component is created by the developer. These properties are evaluated in the following order and the first valid property found is used.
 
-1. `cq:icon` - String property pointing to a standard icon in the [Coral UI library](https://opensource.adobe.com/coral-spectrum/examples/#icon) to display in the component browser
+1. `cq:icon` - String property pointing to a standard icon in the [Coral UI library](https://opensource.adobe.com/coral-spectrum/examples/#icon) to display in the component browser.
     * Use the value of the HTML attribute of the Coral icon.
-1. `abbreviation` - String property to customize the abbreviation of the component name in the component browser
+1. `abbreviation` - String property to customize the abbreviation of the component name in the component browser.
     * The abbreviation should be limited to two characters.
     * Providing an empty string will build the abbreviation from first two characters of the `jcr:title` property.
-        * For example, "Im" for "Image"
+        * For example, "Im" for "Image".
         * The localized title is used to build the abbreviation.
     * The abbreviation is only translated if the component has an `abbreviation_commentI18n` property, which is then used as translation hint.
-1. `cq:icon.png` or `cq:icon.svg` - Icon for this component, which is shown in the Component Browser
+1. `cq:icon.png` or `cq:icon.svg` - Icon for this component, which is shown in the Component Browser.
     * 20 x 20 pixels is the size of icons of standard components.
         * Larger icons are downsized (client-side).
-    * The recommended color is rgb(112, 112, 112) &gt; #707070
+    * The recommended color is rgb(112, 112, 112) &gt; #707070.
     * The background of standard component icons is transparent.
     * Only `.png` and `.svg` files are supported.
     * If importing from the file system via Eclipse plugin, filenames need to be escaped as `_cq_icon.png` or `_cq_icon.svg` for example.
@@ -166,7 +166,7 @@ A component is a node of type `cq:Component` and has the following properties an
 |`cq:isContainer`|`Boolean`|This indicates whether the component is a container component and therefore can contain other components such as a paragraph system.|
 |`cq:dialog`|`nt:unstructured`|This is the definition of the edit dialog for the component.|
 |`cq:design_dialog`|`nt:unstructured`|This is the definition of the design dialog for the component.|
-|`cq:editConfig`|`cq:EditConfig`|This defines the [edit configuration of the component.](#edit-behavior)|
+|`cq:editConfig`|`cq:EditConfig`|This defines the [edit configuration of the component](#edit-behavior).|
 |`cq:htmlTag`|`nt:unstructured`|This returns additional tag attributes that are added to the surrounding HTML tag. Enables addition of attributes to the automatically generated divs.|
 |`cq:noDecoration`|`Boolean`|If true, the component is not rendered with automatically generated div and css classes.|
 |`cq:template`|`nt:unstructured`|If found, this node is used as a content template when the component is added from the Components Browser.|
@@ -250,7 +250,7 @@ If you consider your dialog as a simple container for a form element, then you c
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
-More specifically Granite UI provides a range of field components that are suitable for use in dialogs, or more generally speaking in [forms.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)
+More specifically Granite UI provides a range of field components that are suitable for use in dialogs, or more generally speaking in [forms](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html).
 
 Once you have created your resource type, you can instantiate your field by adding a new node in your dialog, with the property `sling:resourceType` referring to the resource type you have just introduced.
 
@@ -333,7 +333,7 @@ The typical HTL script that renders the above placeholder HTML is the following:
 
 In the previous example, `isEmpty` is a variable that is true only when the component has no content and is invisible to the author.
 
-To avoid repetition, Adobe recommends that implementers of components use an HTL template for these placeholders, [like the one provided by the Core Components.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
+To avoid repetition, Adobe recommends that implementers of components use an HTL template for these placeholders, [like the one provided by the Core Components](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html).
 
 The usage of the template in the previous link is then done with the following line of HTL:
 
@@ -344,7 +344,7 @@ The usage of the template in the previous link is then done with the following l
 
 In the previous example, `model.text` is the variable that is true only when the content has content and is visible.
 
-An example usage of this template can be seen in the Core Components, [such as in the Title Component.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
+An example usage of this template can be seen in the Core Components, [such as in the Title Component](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27).
 
 ### Configuring with cq:EditConfig Child Nodes {#configuring-with-cq-editconfig-child-nodes}
 
