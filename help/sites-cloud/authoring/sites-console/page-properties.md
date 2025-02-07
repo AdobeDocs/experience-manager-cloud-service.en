@@ -32,7 +32,7 @@ The properties are distributed across several tabs.
 
 * **Branding**
 
-  Apply a consistent brand identity across pages by appending a brand slug to each page title. This functionality requires use of the Page Component from release 2.14.0 or later of the [Core Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+  Apply a consistent brand identity across pages by appending a brand slug to each page title. This functionality requires use of the Page Component from release 2.14.0 or later of the [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
 
   * **Brand Slug** 
 

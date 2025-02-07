@@ -15,7 +15,7 @@ By default, AEM is tightly bound to your code repository, which meets the majori
 
 Rather than creating multiple GitHub repositories and running each site off a dedicated GitHub repository while keeping them in sync, AEM supports running multiple sites from the same codebase.
 
-This simplified setup, which eliminates the need for code replication is also known as ["repoless",](https://www.aem.live/docs/repoless) because all but your first site don't need a GitHub repository of their own.
+This simplified setup, which eliminates the need for code replication is also known as ["repoless"](https://www.aem.live/docs/repoless), because all but your first site don't need a GitHub repository of their own.
 
 If your project requires the repoless flexibility of code reuse across sites, you can activate the feature.
 
@@ -25,7 +25,7 @@ Regardless of how many sites you want to ultimately create in a repoless fashion
 
 To take advantage of this feature, make sure you have done the following.
 
-* Your site is already fully set up by following the document [Developer Getting Started Guide for WYSIWYG Authoring with Edge Delivery Services.](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
+* Your site is already fully set up by following the document [Developer Getting Started Guide for WYSIWYG Authoring with Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 * You are running AEM as a Cloud Service 2024.08 at a minimum.
 
 You will also need to ask Adobe to configure the following items for you. Reach out via your Slack channel or raise a support issue to request Adobe to make these changes:
@@ -64,7 +64,7 @@ Once you have your access token, it can be is passed in the header of cURL reque
 
 You need to create a site configuration and add it to your path mapping.
 
-1. Create a new page at the root of your site and choose the [**Configuration** template.](/help/edge/wysiwyg-authoring/tabular-data.md#other)
+1. Create a new page at the root of your site and choose the [**Configuration** template](/help/edge/wysiwyg-authoring/tabular-data.md#other).
    * You can leave the configuration empty with only the predefined `key` and `value` columns. You only need to create it.
 1. Create a mapping in the public configuration to the site configuration using a cURL command similar to the following.
    ```text

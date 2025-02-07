@@ -59,7 +59,7 @@ Your page can contain either a single content fragment or multiple components of
 
   >[!NOTE]
   >
-  >Although not a standard implementation, [multiple selectors are supported,](enabling-json-exporter.md#multiple-selectors) but `model` must be the first.
+  >Although not a standard implementation, [multiple selectors are supported](enabling-json-exporter.md#multiple-selectors), but `model` must be the first.
 
 ### Further Information {#further-information}
 
