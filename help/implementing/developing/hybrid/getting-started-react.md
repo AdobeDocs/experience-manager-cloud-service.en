@@ -177,7 +177,7 @@ MapTo('my-react-app/components/structure/page')(withComponentMappingContext(AppP
 
 In this example the `AppPage` class extends `Page`, which contains the inner-content methods that can then be used.
 
-The `Page` ingests the JSON representation of the page model and processes the content to wrap/decorate each element of the page. Further details on the `Page` can be found in the document [SPA Blueprint.](blueprint.md)
+The `Page` ingests the JSON representation of the page model and processes the content to wrap/decorate each element of the page. Further details on the `Page` can be found in the document [SPA Blueprint](blueprint.md).
 
 ### Image.js {#image-js}
 

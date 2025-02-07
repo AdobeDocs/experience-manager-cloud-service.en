@@ -39,9 +39,9 @@ You can restrict the allowed components per container in the Universal Editor us
 
 ### Conditionally Show and Hide Components in Properties Panel {#conditionally-hide}
 
-Although a component or components may generally be available to your authors, there may be certain situations where it does not make sense. In such cases, you can hide components in the properties panel by adding a `condition` attribute to the [fields of the component model.](/help/implementing/universal-editor/field-types.md#fields)
+Although a component or components may generally be available to your authors, there may be certain situations where it does not make sense. In such cases, you can hide components in the properties panel by adding a `condition` attribute to the [fields of the component model](/help/implementing/universal-editor/field-types.md#fields).
 
-Conditions can be defined using [JsonLogic schema.](https://jsonlogic.com/) If the condition is true, then the field will be displayed. If the condition is false, then the field will be hidden.
+Conditions can be defined using [JsonLogic schema](https://jsonlogic.com/). If the condition is true, then the field will be displayed. If the condition is false, then the field will be hidden.
 
 >[!BEGINTABS]
 
@@ -80,9 +80,9 @@ Conditions can be defined using [JsonLogic schema.](https://jsonlogic.com/) If t
 
 ### Custom Preview URLs {#custom-preview-urls}
 
-You can specify a custom preview URL via a `urn:adobe:aue:config:preview` meta configuration, which will open when clicking the **Open page** button in the [editor’s top-right toolbar.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
+You can specify a custom preview URL via a `urn:adobe:aue:config:preview` meta configuration, which will open when clicking the **Open page** button in the [editor's top-right toolbar](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
 
-This is particularly useful for applications with specific preview requirements, such as those [using Edge Delivery Services with WYSIWYG authoring.](/help/edge/wysiwyg-authoring/authoring.md)
+This is particularly useful for applications with specific preview requirements, such as those [using Edge Delivery Services with WYSIWYG authoring](/help/edge/wysiwyg-authoring/authoring.md).
 
 To do so, simply include the desired preview URL in a meta tag of the instrumented app like the following example.
 
@@ -104,6 +104,6 @@ If you would like to explore these possibilities, please see the following resou
 
 >[!TIP]
 >
->If you prefer learning by example, please see the [AEM UI extensibility tutorial.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview) Though it focuses on extending the Content Fragment console, the concepts for implementing a UI extension in the Universal Editor are the same.
+>If you prefer learning by example, please see the [AEM UI extensibility tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Though it focuses on extending the Content Fragment console, the concepts for implementing a UI extension in the Universal Editor are the same.
 
-[Using Extension Manager in AEM Sites,](https://developer.adobe.com/uix/docs/extension-manager/) you can enable or disable your extensions on a per-instance basis, access Adobe's first-party extensions including those for the Universal Editor, and much more.
+[Using Extension Manager in AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/), you can enable or disable your extensions on a per-instance basis, access Adobe's first-party extensions including those for the Universal Editor, and much more.

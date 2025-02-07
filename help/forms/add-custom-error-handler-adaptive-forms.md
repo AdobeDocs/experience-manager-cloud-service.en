@@ -290,7 +290,7 @@ The created folder structure looks like:
     ```
 -->
 
-1. [Run the pipeline.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)
+1. [Run the pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline).
 
 Once the pipeline is executed successfully, the custom error handler becomes available in your Adaptive Form rule editor. Now, let's understand how to configure and use a custom error handler using the Rule Editor's Invoke service in AEM Forms.
 
