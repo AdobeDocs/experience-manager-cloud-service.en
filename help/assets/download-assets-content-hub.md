@@ -22,6 +22,8 @@ The Content Hub lets you download and share your assets. The Content Hub User In
 
 You can download single or multiple assets and their available renditions using Content Hub.
 
+See [types of renditions available in Content Hub](#types-of-renditions).
+
 ## Download an asset and its renditions {#download-asset-renditions} 
 
 To download an asset and its renditions, execute the following steps: 
@@ -41,6 +43,10 @@ To download an asset and its renditions, execute the following steps:
 
 
 If you are downloading a licensed asset, select **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** and then click **[!UICONTROL Download]**. You can also click **[!UICONTROL terms & conditions]** to view the asset license. The preview of the license displays only if the asset is approved using Assets as a Cloud Service authoring environment. For more information, see [Manage licensed assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
+
+>[!NOTE]
+>
+> The users with access to [Dynamic Media with Open API capabilities](/help/assets/dynamic-media-open-apis-overview.md) can view and download dynamic and smart crop renditions.
 
 ## Download multiple assets and their renditions {#download-multiple-assets-renditions} 
 
@@ -110,11 +116,9 @@ Learn more about [view and manage renditions in Experience Manager Assets](/help
 
 * [Dynamic renditions](/help/assets/renditions.md#dynamic-renditions): Dynamic renditions are real-time, customized versions of assets to perform various actions, such as resizing images for different device resolutions or cropping to fit various aspect ratios. These renditions allows you to offer personalized and optimized experiences for wider requirements. Dynamic renditions of assets are created on [!DNL Adobe Experience Manager Assets] author environment.
 
-* [Smart crop](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): The smart crop focuses solely on the essential part of an asset during the cropping process. Dynamic media smart crop for leverages artificial intelligence powered by Adobe Sensei to track the point of interest, making sure our videos look like their best on all screen sizes. [!DNL Adobe Experience Manager] smart crop displays width and height of an asset renditions along with the title. 
+* [Smart crop](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): The smart crop focuses solely on the essential part of an asset during the cropping process. Dynamic media smart crop for leverages artificial intelligence powered by Adobe Sensei to track the point of interest, making sure our assets look like their best on all screen sizes. [!DNL Adobe Experience Manager] smart crop displays width and height of an asset renditions along with the title. 
 
   ![Renditions types](/help/assets/assets/renditions-types.png)
 
   
-  >[!NOTE]
-  >
-  > The users with access to the [Dynamic Media with Open API capabilities](/help/assets/dynamic-media-open-apis-overview.md) can view and download dynamic and smart crop renditions.
+  
