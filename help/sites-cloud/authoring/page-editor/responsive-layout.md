@@ -12,7 +12,11 @@ role: User
 AEM lets you have a responsive layout for your pages by using the **Layout Container** component.
 
 >[!TIP]
->This document provides an overview of the features of the Layout Container available to content authors. For developer details of the Layout Container and the responsive grid, please see the [The Responsive Design document](/help/implementing/developing/introduction/responsive-design.md) provides developer details and tips for using layout containers and responsive grid when designing your site.
+>
+>This document provides an overview of the features of the Layout Container available to content authors. Additional resources are available:
+>
+>* For site administrators, details of how to configure the layout container for your sites is described in the [Configuring the Layout Container and Layout Mode document.](/help/sites-cloud/administering/responsive-layout.md)
+>* For developers, details of the Layout Container and the responsive grid are described in the [The Responsive Design document,](/help/implementing/developing/introduction/responsive-design.md) which provides and tips for using layout containers and responsive grid when designing your site.
 
 ## Overview {#overview}
 

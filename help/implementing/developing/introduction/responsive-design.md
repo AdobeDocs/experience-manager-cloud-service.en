@@ -8,6 +8,17 @@ role: Admin, Architect, Developer
 
 # Responsive Design {#responsive-design}
 
+With responsive design, the same experiences can be effectively displayed on multiple devices in multiple orientations.
+
+>[!TIP]
+>
+>This document provides an overview of responsive design for developers and how features are realized in AEM. Additional resources are available:
+>
+>* For content authors, details of how to use responsive design features on a content page are available in the document [Responsive Layout.](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
+>* For site administrators, details of how to configure the layout container for your sites is described in the [Configuring the Layout Container and Layout Mode document.](/help/sites-cloud/administering/responsive-layout.md)
+
+## Overview {#overview}
+
 Design your experiences so that they adapt to the client viewport in which they are displayed. With responsive design, the same pages can be effectively displayed on multiple devices in both orientations. The following image demonstrates some ways in which a page can respond to changes in viewport size:
 
 * Layout: Use single-column layouts for smaller viewports, and multiple-column layouts for larger viewports.
