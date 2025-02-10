@@ -1,16 +1,22 @@
 ---
 title: Responsive Layout
-description: AEM lets you realize a responsive layout for your pages
+description: AEM lets you realize a responsive layout for your pages by using the Layout Container component.
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 solution: Experience Manager Sites
 feature: Authoring
 role: User
 ---
+
 # Responsive Layout {#responsive-layout}
 
 AEM lets you have a responsive layout for your pages by using the **Layout Container** component.
 
-This provides a paragraph system that lets you position components within a responsive grid. This grid can rearrange the layout according to the device/window size and format. The component is used in conjunction with the [**Layout** mode](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector), which lets you create and edit your responsive layout dependent on device.
+>[!TIP]
+>This document provides an overview of the features of the Layout Container available to content authors. For developer details of the Layout Container and the responsive grid, please see the [The Responsive Design document](/help/implementing/developing/introduction/responsive-design.md) provides developer details and tips for using layout containers and responsive grid when designing your site.
+
+## Overview {#overview}
+
+The **Layout Container** component provides a paragraph system that lets you position components within a responsive grid. This grid can rearrange the layout according to the device/window size and format. The component is used in conjunction with the [**Layout** mode](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector), which lets you create and edit your responsive layout dependent on device.
 
 The layout container:
 
@@ -43,10 +49,6 @@ With these responsive grid mechanisms you can:
 * Realize column control.
 
 Depending on your project, the Layout Container might be used as the default paragraph system for your pages or as a component available to be added to your page by way of the component browser (or both).
-
->[!TIP]
->
->Adobe provides [GitHub documentation](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) of the responsive layout as a reference that can be given to front-end developers allowing them to use the AEM grid outside of AEM, for example, when creating static HTML mock-ups for a future AEM site.
 
 >[!NOTE]
 >
