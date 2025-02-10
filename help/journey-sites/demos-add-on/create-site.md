@@ -11,7 +11,7 @@ Create a demo site in AEM based on a library of pre-configured templates.
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM Reference Demos Add-On journey, [Create Program,](create-program.md) you took the first configuration step to create a program for testing purposes and used a pipeline to deploy the add-on content. You should now:
+In the previous document of the AEM Reference Demos Add-On journey, [Create Program](create-program.md), you took the first configuration step to create a program for testing purposes and used a pipeline to deploy the add-on content. You should now:
 
 * Understand how to use Cloud Manager to create a program.
 * Know how to activate the Reference Demos Add-On for the new program.
@@ -99,8 +99,8 @@ Now that you have completed this part of the AEM Reference Demo Add-On journey y
 
 You can now test the features of AEM using add-on content. You have two options to continue your journey:
 
-* If you want to fully demo and test AEM Screens content, make sure that you have deployed a site based on the **We.Cafe Site Template** as described previously and continue to [Enable AEM Screens for Your Demo Site.](screens.md)
-* If you only with to demo Sites content, continue to [Manage Your Demo Sites,](manage.md) where you learn about the tools available to help you manage your demo sites and how to remove them.
+* If you want to fully demo and test AEM Screens content, make sure that you have deployed a site based on the **We.Cafe Site Template** as described previously and continue to [Enable AEM Screens for Your Demo Site](screens.md).
+* If you only with to demo Sites content, continue to [Manage Your Demo Sites](manage.md), where you learn about the tools available to help you manage your demo sites and how to remove them.
 
 ## Additional Resources {#additional-resources}
 

@@ -18,12 +18,12 @@ Learn about the Universal Editor with hands-on experience by using the SecurBank
 
 The installation of the SecurBank app is straight forward, but because it touches many areas of AEM as a Cloud Service a number of steps are involved. The following is an overview of the main steps.
 
-1. [Create a sandbox program in Cloud Manager.](#create-sandbox-program)
-1. [Clone the program's git repository and update with the SecurBank AEM project content.](#clone-and-update)
-1. [Run the pipeline to deploy the SecurBank AEM project.](#run-pipeline)
-1. [Retrieve Cloud Manager credentials for local web app development.](#retrieve-credentials)
-1. [Download and configure the SecurBank web app.](#download-web-app)
-1. [Run the SecurBank web app.](#run-web-app)
+1. [Create a sandbox program in Cloud Manager](#create-sandbox-program).
+1. [Clone the program's git repository and update with the SecurBank AEM project content](#clone-and-update).
+1. [Run the pipeline to deploy the SecurBank AEM project](#run-pipeline).
+1. [Retrieve Cloud Manager credentials for local web app development](#retrieve-credentials).
+1. [Download and configure the SecurBank web app](#download-web-app).
+1. [Run the SecurBank web app](#run-web-app).
 
 The following sections detail the individual tasks required.
 
@@ -36,13 +36,13 @@ You will need a new Cloud Manager program where you can install SecurBank.
 1. Create a new sandbox program for the SecurBank app.
 
    * Use the default options when selecting **Solutions &amp; Add-Ons**.
-   * For details on how to create a sandbox program, please see the document [Creating Sandbox Programs.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
+   * For details on how to create a sandbox program, please see the document [Creating Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md).
 
 ### Clone the program's git repository and update with the SecurBank AEM project content. {#clone-and-update}
 
 1. Once the program is created, open it and on the **Repositories** tab, tap or click the **Access Repo Info** button to open the **Repository Info** dialog and view the credentials necessary to access the git repository for the sandbox environment.
 
-   * For details on how to access your repository information, please see the document [Accessing Repositories.](/help/implementing/cloud-manager/managing-code/accessing-repos.md) 
+   * For details on how to access your repository information, please see the document [Accessing Repositories](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 1. Using the credentials in the **Repository Info** dialog, clone the repository on your local machine.
 
@@ -65,7 +65,7 @@ With the AEM project for SecurBank committed to the sandbox repository, it can b
 1. Return to the **Overview** tab of your sandbox program in Cloud Manager and run the full-stack non-production pipeline.
 
    * Uncheck all options for the pipeline run.
-   * For more information about running pipelines, please see the document [Managing Pipelines.](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)
+   * For more information about running pipelines, please see the document [Managing Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines).
 
 ### Retrieve Cloud Manager credentials for local web app development. {#retrieve-credentials}
 
