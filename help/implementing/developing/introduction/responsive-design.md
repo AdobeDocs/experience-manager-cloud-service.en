@@ -127,3 +127,60 @@ Responsive pages will dynamically adapt to the device on which they are rendered
 AEM's Layout Container allows you to efficiently and effectively implement responsive layout to adapt the dimensions of the page to the client viewport.
 
 Please see the document [Configuring Layout Container and Layout Mode](/help/sites-cloud/administering/responsive-layout.md) for more information on how the Layout Container works and how to enable responsive layouts for your content.
+
+## Nested Responsive Grids {#nested-responsive-grids}
+
+There may be occasions when you find it necessary to nest responsive grids to support your project's needs. However, keep in mind that Adobe's recommended best practice is to keep the structure as flat as possible.
+
+When you can not avoid using nested responsive grids, make sure:
+
+* All containers (containers, tabs, accordions, etc.) have the property `layout = responsiveGrid`.
+* Do not mix the property `layout = simple` in the container hierarchy. 
+
+This includes all the structural containers from the page template.
+
+The column number of the inner container should never be greater than that of the outer container. The following example satisfies this condition. While the column number of the outer container is 8 for the default (desktop) screen, the column number of the inner container is 4.
+
+>[!BEGINTABS]
+
+>[!TAB Example Node Structure]
+
+```text
+container
+  @layout = responsiveGrid
+  cq:responsive
+    default
+      @offset = 0
+      @width = 8
+  container
+  @layout = responsiveGrid
+    cq:responsive
+      default
+        @offset = 0
+        @width = 4
+    text
+      @text =" Text Column 1"
+```
+
+>[!TAB Example Resulting HTML]
+
+```html
+<div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--offset--default--0">
+  <div id="container-c9955c233c" class="cmp-container">
+    <div class="aem-Grid aem-Grid--8 aem-Grid--default--8 ">
+      <div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--offset--default--0 aem-GridColumn--default--4">
+        <div id="container-8414e95866" class="cmp-container">
+          <div class="aem-Grid aem-Grid--4 aem-Grid--default--4 ">
+            <div class="text aem-GridColumn aem-GridColumn--default--4">
+              <div data-cmp-data-layer="..." id="text-1234567890" class="cmp-text">
+                <p>Text Column 1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+>[!ENDTABS]
