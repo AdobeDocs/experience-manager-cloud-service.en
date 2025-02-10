@@ -5,6 +5,7 @@ exl-id: be645062-d6d6-45a2-97dc-d8aa235539b8
 feature: Developing
 role: Admin, Architect, Developer
 ---
+
 # Responsive Design {#responsive-design}
 
 Design your experiences so that they adapt to the client viewport in which they are displayed. With responsive design, the same pages can be effectively displayed on multiple devices in both orientations. The following image demonstrates some ways in which a page can respond to changes in viewport size:
@@ -126,7 +127,11 @@ Responsive pages will dynamically adapt to the device on which they are rendered
 
 AEM's Layout Container allows you to efficiently and effectively implement responsive layout to adapt the dimensions of the page to the client viewport.
 
-Please see the document [Configuring Layout Container and Layout Mode](/help/sites-cloud/administering/responsive-layout.md) for more information on how the Layout Container works and how to enable responsive layouts for your content.
+>[The GitHub documentation](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) of the responsive grid is a reference that can be given to front-end developers allowing them to use the AEM grid outside of AEM, for example, when creating static HTML mock-ups for a future AEM site.
+
+>[!TIP]
+>
+>Please see the document [Configuring Layout Container and Layout Mode](/help/sites-cloud/administering/responsive-layout.md) for more information on how the Layout Container works and how to enable responsive layouts for your content.
 
 ## Nested Responsive Grids {#nested-responsive-grids}
 
