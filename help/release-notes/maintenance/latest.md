@@ -50,6 +50,11 @@ The 2025.2.0 feature activation will provide the full feature set for this maint
 
 ### Fixed Issues {#fixed-issues-19352}
 
+* CQ-4356756: Do not translate support for related assets.
+* CQ-4358206: Repeat Translation Scheduler is not working for translation projects.
+* CQ-4358126: Cannot select configuration sub folder in translation cloud service.
+* FORMS-18098, FORMS-17954: Adaptive Forms fail to load in Internet Explorer mode of Microsoft Edge browser.
+* FORMS-17162: Publishing an asset leads to running of OOTB queries which degraded publish performance.
 * SITES-28415: Edge Delivery with Universal Editor: Fix Open Properties button for spreadsheets.
 * SITES-26669: Edge Delivery with Universal Editor: Fix issues when uploading CSV files encoded in UTF-8 with a BOM as spreadsheet.
 * SITES-26543: Edge Delivery with Universal Editor: Fix empty blocks without a model rendering incorrect markup.
@@ -79,8 +84,6 @@ The 2025.2.0 feature activation will provide the full feature set for this maint
 * SITES-26660: Content fragment version comparison might be broken when @ContentType is of "string" type.
 * SITES-26626: Missing customErrorMessage on number & boolean fields.
 * SITES-26268: Wrong status code returned if a reference is invalid when creating a fragment.
-* FORMS-18098, FORMS-17954: Adaptive Forms fail to load in Internet Explorer mode of Microsoft Edge browser.
-* FORMS-17162: Publishing an asset leads to running of OOTB queries which degraded publish performance.
 
 ### Known Issues {#known-issues-19352}
 
