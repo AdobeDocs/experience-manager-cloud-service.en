@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 ---
 # Getting Started with AEM Headless as a Cloud Service {#getting-started}
 
-In this part of the [AEM Headless Developer Journey,](overview.md) learn about what is required to get your own project started with AEM Headless.
+In this part of the [AEM Headless Developer Journey](overview.md), learn about what is required to get your own project started with AEM Headless.
 
 ## The Story So Far {#story-so-far}
 
@@ -59,7 +59,7 @@ At its simplest level, creating digital experiences in AEM requires the followin
 1. When this content is ready, it is replicated to the publish instance.
 1. APIs can then be called to retrieve this content.
 
-AEM Headless builds off this technical foundation by offering powerful tools to manage headless content which is [described in the next section.](#aem-headless-basics)
+AEM Headless builds off this technical foundation by offering powerful tools to manage headless content which is [described in the next section](#aem-headless-basics).
 
 ## AEM Headless Basics {#aem-headless-basics}
 
@@ -189,7 +189,7 @@ Folder hierarchy can address two major concerns with regards to content manageme
 * [Translation](#translation) - AEM manages translation of content by maintaining copies of content in locale-specific folders.
 * Organization - Folders are used to define a content hierarchy required to support translation needs and logically manage Content Fragments.
 
-AEM allows for a flexible content structure and a hierarchy can be arbitrarily large. However it is important to realize that any changes in folder structure may have unintended consequences for existing queries that [rely on the content path.](#developer) Therefore a well-defined hierarchy that is clearly set out in advance, can be helpful to your content authors.
+AEM allows for a flexible content structure and a hierarchy can be arbitrarily large. However it is important to realize that any changes in folder structure may have unintended consequences for existing queries that [rely on the content path](#developer). Therefore a well-defined hierarchy that is clearly set out in advance, can be helpful to your content authors.
 
 Folders can also be restricted to only allow certain types of content (based on Content Fragment Models). It is recommended to always explicitly specify which models are allowed for all folders in the hierarchy. Specifying allowed content for a given folder:
 
@@ -235,7 +235,7 @@ Developers should keep in mind a few basic recommendations as they plan their qu
 * For best query performance, always use persisted queries in AEM. These are discussed later in the journey.
 * GraphQL is declarative following the motto "Ask for exactly what you need, and get exactly that." This means that when creating GraphQL queries, always avoid `select *`-type queries that you might create in a relational database.
 
-For a [typical headless implementation using AEM,](#level-1) the developer requires no coding knowledge of AEM.
+For a [typical headless implementation using AEM](#level-1), the developer requires no coding knowledge of AEM.
 
 ### Performance Requirements {#performance-requirements}
 
@@ -274,7 +274,7 @@ You should continue your AEM headless journey by next reviewing the document [Pa
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the headless development journey by reviewing the document [Path to Your First Experience Using AEM Headless,](path-to-first-experience.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
+While it is recommended that you move on to the next part of the headless development journey by reviewing the document [Path to Your First Experience Using AEM Headless](path-to-first-experience.md), the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
 
 * [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md) - This documentation journey gives you a broad understanding of headless technology, how AEM serves headless content, and how you can translate it.
 * [An Introduction to the Architecture of Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Understand AEM as a Cloud Service's structure

@@ -12,7 +12,7 @@ Multilingual web sites generally provide some amount of content in multiple lang
 
 >[!TIP]
 >
->If you are new to translating content, see [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM's powerful translation tools, ideal for those with no AEM or translation experience.
+>If you are new to translating content, see [Sites Translation Journey](/help/journey-sites/translation/overview.md), which is guided path through translating your AEM Sites content using AEM's powerful translation tools, ideal for those with no AEM or translation experience.
 
 The [WKND tutorial site](/help/implementing/developing/introduction/develop-wknd-tutorial.md) includes several language branches and uses the following structure:
 

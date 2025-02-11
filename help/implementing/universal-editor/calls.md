@@ -144,7 +144,7 @@ An `add` call occurs when you place a new component in your app using the Univer
 
 Its payload includes a `path` object containing where the content should be added.
 
-It also includes a `content` object with additional objects for endpoint-specific details of the content to be stored [for each plugin.](/help/implementing/universal-editor/architecture.md) For example if your app is based on content from AEM and Magento, the payload would contain a data object for each system.
+It also includes a `content` object with additional objects for endpoint-specific details of the content to be stored [for each plugin](/help/implementing/universal-editor/architecture.md). For example if your app is based on content from AEM and Magento, the payload would contain a data object for each system.
 
 >[!BEGINTABS]
 

@@ -702,6 +702,7 @@ user-guide-title: AEM as a Cloud Service
     + [Migrate from [!DNL AEM 6.5 Forms] or earlier to [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
     + [Groups and permissions](/help/forms/forms-groups-privileges-tasks.md)
     + [Import, export, and organize Adaptive Forms, PDF forms, and other assets](/help/forms/import-export-forms-templates.md)
+    +  [Publish Adaptive Forms using Manage Publication](/help/forms/manage-publication.md)
   + Getting Started {#getting-started-forms}
     + [Use Case and setup development environment](/help/forms/create-adaptive-form-tutorial-getting-started.md)
     + [Create the loan application form](/help/forms/create-adaptive-form-tutorial.md)
@@ -847,6 +848,10 @@ user-guide-title: AEM as a Cloud Service
       + [Create and manage reviews for an Adaptive Form](/help/forms/review-adaptiveforms-in-sites-page.md)
     + [Adaptive forms keywords](/help/forms/adaptive-forms-keywords.md)
     + [Previewing a form](/help/forms/previewing-forms.md)
+  + Interactive Communication {#interactive-communocation}
+    + [Introduction to interactive communication](/help/forms/introduction-to-interactive-communication.md)
+    + [Create your first Interactive Communication](/help/forms/create-your-first-communication.md)
+    + [Frequently Asked Questions](/help/forms/interactive-communications-faq.md)
   + Forms Centric Workflows {#create-form-centric-workflows}
     + [Introduction to Forms-centric workflow](/help/forms/aem-forms-workflow.md)
     + [Use Forms-centric steps in a workflow + step reference](/help/forms/aem-forms-workflow-step-reference.md)
@@ -1016,6 +1021,8 @@ user-guide-title: AEM as a Cloud Service
       + [Use Forms Submission Service](/help/forms/forms-submission-service.md)
     + WYSIWYG {#universal-editor}
       + [Overview - Universal Editor for Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+      + [Getting Started](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+      + [Add rules to using Rule Editor](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) 
     + Capabilities {#advanced-features-edge-delivery-services-forms}
       + [Use Form fragments](/help/edge/docs/forms/form-fragments.md)
       + [Add repeatable sections to a form​](/help/edge/docs/forms/repeatable-forms.md)
@@ -1189,9 +1196,9 @@ user-guide-title: AEM as a Cloud Service
       + [Add an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
       + [Troubleshoot SSL Certificate Errors](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
       + [Manage SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-    + CDN Configurations {#cdn-configurations}
-      + [Add a CDN Configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-      + [Manage CDN Configurations](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
+    + Domain Mappings {#cdn-configurations}
+      + [Add a CDN configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+      + [Manage Domain Mappings](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
     + IP Allow Lists {#ip-allow-lists}
       + [Introduction to IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
       + [Add an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
@@ -1341,6 +1348,7 @@ user-guide-title: AEM as a Cloud Service
     + Internationalization{#internationalization}
       + [Internationalizing Components](/help/implementing/developing/extending/i18n/components.md)
       + [Internationalizing UI Strings](/help/implementing/developing/extending/i18n/dev.md)
+      + [Using Translator to Manage Dictionaries](/help/implementing/developing/extending/i18n/translator.md)
       + [Extracting Strings for Translating](/help/implementing/developing/extending/i18n/extract.md)
   + Deploying to AEM as a Cloud Service {#deploying}
     + [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md)

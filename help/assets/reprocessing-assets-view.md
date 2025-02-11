@@ -76,7 +76,7 @@ Read more about [Reprocessing metadata profiles](https://experienceleague.adobe.
 
 ### Reprocess Dynamic Media assets in a folder {#reprocessing-dynamic-media}
 
-You can reprocess assets in a folder that already has an existing Dynamic Media Image Profile or a Dynamic Media Video Profile that you later changed. For more information, visit [reprocess Dynamic Media assets in a folder.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en)
+You can reprocess assets in a folder that already has an existing Dynamic Media Image Profile or a Dynamic Media Video Profile that you later changed. For more information, visit [reprocess Dynamic Media assets in a folder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en).
 
 >[!NOTE]
 >
