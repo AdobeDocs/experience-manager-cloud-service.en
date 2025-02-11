@@ -14,7 +14,7 @@ Documentation Journeys provide a narrative structure within AEM documentation by
 
 A Documentation Journey ties together many different and complex topics and features by providing a narrative that helps the reader, who can be new to AEM, understand and solve a business problem from beginning to end, while assuming minimal prior topic or AEM knowledge.
 
-Documentation Journeys contrast with AEM's existing technical docs that primarily focus on a single feature and documentation of tasks, assuming familiarity with AEM. By focusing on the concepts and deferring in-depth details to the existing technical documentation, Documentation Journeys give readers new to AEM a place to begin understanding how the platform can be used by using best practices to address common business needs and workflows. For this reason, Documentation Journeys serve as a complement to and not a replacement for [AEM's existing technical documentation.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)
+Documentation Journeys contrast with AEM's existing technical docs that primarily focus on a single feature and documentation of tasks, assuming familiarity with AEM. By focusing on the concepts and deferring in-depth details to the existing technical documentation, Documentation Journeys give readers new to AEM a place to begin understanding how the platform can be used by using best practices to address common business needs and workflows. For this reason, Documentation Journeys serve as a complement to and not a replacement for [AEM's existing technical documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html).
 
 ### Learning By Narrative {#narrative}
 
