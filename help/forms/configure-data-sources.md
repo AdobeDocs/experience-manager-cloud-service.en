@@ -117,7 +117,10 @@ To configure the folder for cloud service configurations:
 
 ## Configure RESTful web services {#configure-restful-web-services}
 
-RESTful web services can be described using [Swagger specifications](https://swagger.io/specification/v2/) in JSON or YAML format in a [!DNL Swagger] definition file. To configure RESTful web service in [!DNL Experience Manager] as a Cloud Service, ensure that you have either the [!DNL Swagger] file ([Swagger Version 2.0](https://swagger.io/specification/v2/)) or [!DNL Swagger] file ([Swagger Version 3.0](https://swagger.io/specification/v3/)) on your file system or the URL where the file is hosted.
+RESTful web services can be described using [Swagger specifications](https://swagger.io/specification/v2/) in JSON or YAML format in a [!DNL Swagger] definition file or a Service Endpoint. 
+
+>[!NOTE]
+> To configure RESTful web service in [!DNL Experience Manager] as a Cloud Service, ensure that you have either the [!DNL Swagger] file ([Swagger Version 2.0](https://swagger.io/specification/v2/)) or [!DNL Swagger] file ([Swagger Version 3.0](https://swagger.io/specification/v3/)) on your file system or the URL where the file is hosted.
 
 ### Configure RESTful services for Open API Specification version 2.0 {#configure-restful-services-open-api-2.0}
 
@@ -171,6 +174,31 @@ Some of the operations not supported by RESTful services Open API Specification 
 * Different request bodies for different MIME types for a single operation
 
 See [OpenAPI 3.0 Specification](https://swagger.io/specification/v3/) for detailed information. 
+
+### Configure RESTful services using Service Endpoint {#configure-restful-services-service-endpoint}
+
+<span class="preview"> The Service Endpoint capability is under the Early Adopter Program and it is applicable to Core Components only. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+
+1. Go to **[!UICONTROL Tools > Cloud Services > Data Sources]**. Select to select the folder where you want to create a cloud configuration.
+
+   See [Configure folder for cloud service configurations](configure-data-sources.md#cloud-folder) for information about creating and configuring a folder for cloud service configurations.
+
+1. Select **[!UICONTROL Create]** to open the **[!UICONTROL Create Data Source Configuration wizard]**. 
+
+1. Specify a name and optionally a title for the configuration, select **[!UICONTROL RESTful Service]** from the **[!UICONTROL Service Type]** drop-down, optionally browse and select a thumbnail image for the configuration, and select **[!UICONTROL Next]**.
+
+1. On the next page select **[!UICONTROL Service Endpoint]** from the **[!UICONTROL RESTful Service dropdown]**.
+
+   ![Service Endpoint](/help/forms/assets/select-service-endpoint.png)
+
+1. Specify **[!UICONTROL Service Endpoint URL]**.
+
+   >[!NOTE]
+   > By default the Method Type is POST.
+1. Select one of the Content Type that you want to choose from the drop-down list. Content types are Multi-Part Form Data, JSON, and URL-encoded (Key-Value Pair).
+1. Now you select any one of the Authentication Type such as OAuth 2.0, Basic Authentication, API Key, Custom Authentication, from the drop-down list. 
+   ![Service Endpoint authentication type](/help/forms/assets/service-endpoint-authtype.png)
+1. Click Create.
 
 ### Form data model (FDM) HTTP client configuration to optimize performance {#fdm-http-client-configuration}
 
