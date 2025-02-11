@@ -16,9 +16,9 @@ exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=en)                  |
 | AEM as a Cloud Service     | This article         |
 
-## Overview {#overview}
+## Get Started with the AEM [!DNL Assets] HTTP API {#overview}
 
-The AEM [!DNL Assets] HTTP API enables CRUD (create, read, update, and delete) operations on digital assets through a REST interface at /`api/assets`. These operations apply to asset metadata, renditions, and comments. It includes [support for Content Fragments](/help/assets/content-fragments/assets-api-content-fragments.md).
+The AEM [!DNL Assets] HTTP API enables CRUD (create, read, update, and delete) operations on digital assets through a REST interface available at /`api/assets`. These operations apply to asset metadata, renditions, and comments. It includes [support for Content Fragments](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ The API response is a JSON file for some MIME types and a response code for all 
 >
 >All the API calls related to uploading or updating assets or binaries in general (like renditions) is deprecated for [!DNL Experience Manager] as a [!DNL Cloud Service] deployment. For uploading binaries, use [direct binary upload APIs](developer-reference-material-apis.md#asset-upload) instead.
 
-## Content Fragments {#content-fragments}
+## Manage content fragments {#content-fragments}
 
 A [Content Fragment](/help/assets/content-fragments/content-fragments.md) is a structured asset that stores text, numbers, and dates. As there are several differences to `standard` assets (such as images or documents), some additional rules apply to handling Content Fragments.
 
@@ -47,7 +47,7 @@ For more information, see [Content Fragments support in the [!DNL Experience Man
 >
 >The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) are also available.
 
-## Data model {#data-model}
+## Examine the data model {#data-model}
 
 The [!DNL Assets] HTTP API primarily exposes two elements: folders and standard assets. It also provides detailed elements for custom data models used in Content Fragments. For more details, see Content Fragment data models. See [Content Fragment data models](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) for further information.
 
@@ -55,7 +55,7 @@ The [!DNL Assets] HTTP API primarily exposes two elements: folders and standard 
 >
 >The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) are also available.
 
-### Folders {#folders}
+### Manage folders {#folders}
 
 Folders are like directories as in the traditional file systems. Folders can contain assets, subfolders, or both. Folders have the following components:
 
@@ -76,7 +76,7 @@ Folders are like directories as in the traditional file systems. Folders can con
 * `parent`: A link to the parent folder.
 * `thumbnail` (Optional): A link to a folder thumbnail image.
 
-### Assets {#assets}
+### Manage assets {#assets}
 
 In [!DNL Experience Manager] an asset contains the following elements:
 
@@ -97,7 +97,7 @@ In [!DNL Experience Manager] a folder has the following components:
 * Properties.
 * Links.
 
-## Available features {#available-features}
+## Explore available API operations {#available-features}
 
 The [!DNL Assets] HTTP API includes the following features:
 
@@ -287,7 +287,7 @@ Deletes a resource (-tree) at the provided path.
 * 412 - PRECONDITION FAILED - if root collection cannot be found or accessed.
 * 500 - INTERNAL SERVER ERROR - if something else goes wrong.
 
-## Tips, best practices, and limitations {#tips-limitations}
+## Follow best practices and note limitations {#tips-limitations}
 
 * Assets and their renditions become unavailable via the [!DNL Assets] web interface and the HTTP API when the [!UICONTROL Off Time] is reached. The API returns a 404 error if the [!UICONTROL On Time] is in the future or [!UICONTROL Off Time] is in the past.
 
@@ -295,7 +295,7 @@ Deletes a resource (-tree) at the provided path.
 
 * Some properties of folder or asset are mapped to a different prefix when updated using APIs. The `jcr` prefix of `jcr:title`, `jcr:description`, and `jcr:language` are replaced with `dc` prefix. Hence in the returned JSON, `dc:title` and `dc:description` contain the values of `jcr:title` and `jcr:description`, respectively.
 
-**See also**
+**Explore related resources**
 
 * [Translate Assets](translate-assets.md)
 * [Assets supported file formats](file-format-support.md)
