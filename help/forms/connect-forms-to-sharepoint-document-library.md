@@ -38,7 +38,8 @@ To connect AEM Forms to your Microsoft&reg; Sharepoint Document Library storage:
         >[!NOTE]
         >
         > The **client secret** field is mandatory or optional depends upon your Azure Active Directory application configuration. If your application is configured to use a client secret, it is mandatory to provide the client secret.
-    
+
+1. The `offline_access Sites.Selected` permission scope in Microsoft's Graph API that allows more granular and restricted access to SharePoint sites. The `offline_access Sites.Manage.All` permission scope in Microsoft's Graph API that allows full access to SharePoint sites.   
 1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears. 
 
 1. Now, select **SharePoint Site** > **Document Library** > **SharePoint Folder**, to save the data.
