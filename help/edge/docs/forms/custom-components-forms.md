@@ -40,7 +40,7 @@ Before you start creating your custom component, you should:
 
 Let's now understand each step in detail.
 
-Refer to the [enquiry spreadsheet](/help/edge/docs/forms/assets/enquiry.xlsx) to customize the `range` component, by following the steps as explained below.
+<!--Refer to the [enquiry spreadsheet](/help/edge/docs/forms/assets/enquiry.xlsx) to customize the `range` component, by following the steps as explained below.-->
 
 ### Add a custom function to decorate the component 
 
@@ -207,11 +207,11 @@ To add style for a component in the CSS file:
 
 ### Deploy the files and build the project
 
-Deploy the updated `range.js`, `mapping.css` and `form.css` files to your GitHub project and verify a successful build.
+Deploy the updated `range.js`, `mapping.js` and `form.css` files to your GitHub project and verify a successful build.
 
 ### Preview the form using the AEM sidekick
 
-Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview your form with the newly implemented function that styles the `range` component.
+Preview your form with the newly implemented function that styles the `range` component.
 
 ![Custom component form](/help/edge/assets/custom-componet-form.png)
 
