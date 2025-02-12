@@ -30,6 +30,7 @@ You can [access Generate Variations](#access-generate-variations) from the follo
 You can then:
 
 * [Select the content you want to work with](#select-the-content) - from existing blocks of your content
+  * The selected block steers what is shown and the actions available
 * [Describe the changes you want](#describe-the-changes-you-want)
 * [Generate variations of your content](#generate-copy), then [take further actions if wanted](#take-further-action-on-a-variation)
 * [Select and use a variation](#use-a-generated-variation)
@@ -38,6 +39,7 @@ You can then:
 
 ## Legal and Usage Note {#legal-usage-note}
 
+<!--
 Generative AI and Generate Variations for AEM are powerful tools – but **you** are responsible for use of the output.
 
 Your inputs to the service should be tied to a context. This context can be your branding materials, website content, data, schemas for such data, templates, or other trusted documents.
@@ -45,6 +47,7 @@ Your inputs to the service should be tied to a context. This context can be your
 You must evaluate the accuracy of any output as appropriate to your use case.
 
 Before using Generate Variations you are recommended to read the [Adobe Experience Cloud Generative AI User Guidelines](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+-->
 
 [Usage of Generate Variations](#generative-action-usage) is tied to the consumption of generative actions.
 
@@ -64,7 +67,7 @@ When you open Generate Variations integrated into an editor, you see the extensi
     * Provides sample **Suggestions** for changes.
     * Allows you to [describe the changes you want](#describe-the-changes-you-want).
     * Allows you to [Generate](#generate-copy) new variations.
-    * Shows the generated variations, together with their [brand score](#the-brand-score).
+    * Shows the generated variations. <!--, together with their [brand score](#the-brand-score).-->
     * [Take further actions on a variation](#take-further-action-on-a-variation).
     * [Use a generated variation](#use-a-generated-variation).
   * [History](#history):
@@ -98,9 +101,11 @@ After you have described the changes you want, select **Generate** to see respon
 
 ![Generate Variations - document based generate copy](assets/generate-variations-doc-based-generate-copy.png)
 
+<!--
 ### The Brand Score {#the-brand-score}
 
 The brand score shows you how on-brand the generated variation is.
+-->
 
 ### Take further action on a variation {#take-further-action-on-a-variation}
 
@@ -120,6 +125,10 @@ When you select a single variation, you can use the following actions:
 To use the content generated with generative AI, you must copy the content to the clipboard for use elsewhere.
 
 Once copied to the clipboard, you can paste the information elsewhere; for example, when authoring content for your website. You can also run an [experiment](https://www.aem.live/docs/experimentation).
+
+>[!NOTE]
+>
+>When Generate Variations is accessed from either [the AEM Universal Editor](#access-aem-universal-editor) or [the AEM Content Fragment Editor](#access-aem-content-fragment-editor), then the generated content can also be automatically transferred to the appropriate editor.
 
 ## History {#history}
 
