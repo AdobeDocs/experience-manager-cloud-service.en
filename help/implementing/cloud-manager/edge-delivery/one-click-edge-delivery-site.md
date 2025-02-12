@@ -1,5 +1,5 @@
 ---
-title: Create an Edge Delivery Site in Cloud Manager with One Click
+title: One Click Edge Delivery Site Creation in Cloud Manager
 description: Learn how to quickly create an Edge Delivery Site in Cloud Manager with the click of a button.
 
 feature: Cloud Manager, Developing
@@ -7,11 +7,7 @@ role: Admin, Architect, Developer
 
 ---
 
-<<<<<<< Updated upstream:help/implementing/cloud-manager/edge-delivery/one-click-edge-delivery-site.md
-# About Create an Edge Delivery Site in Cloud Manager with one click {#about-one-click-edge-delivery-site}
-=======
-# About Create an Edge Delivery Site in Cloud Manager with one click {#about-provision-edge-delivery-site}
->>>>>>> Stashed changes:help/implementing/cloud-manager/edge-delivery/provision-edge-delivery-site.md
+# About One click Edge Delivery site creation in Cloud Manager {#about-one-click-edge-delivery-site}
 
 The one click Edge Delivery site feature is designed to help you automate the onboarding and deployment of Edge Delivery sites within Cloud Manager. It greatly simplifies the process by having you click a single button. That single click provisions the required infrastructure, integrates with GitHub for version control, and configures your document and asset storage in Google Drive.
 
@@ -19,11 +15,7 @@ This automation helps reduce the manual effort that is required to set up your i
 
 ## Key concepts {#key-concepts}
 
-<<<<<<< Updated upstream:help/implementing/cloud-manager/edge-delivery/one-click-edge-delivery-site.md
 Key concepts when you use one click to create an Edge Delivery site.
-=======
-Key concepts when you use one click Edge Delivery site creation.
->>>>>>> Stashed changes:help/implementing/cloud-manager/edge-delivery/provision-edge-delivery-site.md
 
 | Key concept | Description |
 | --- | --- |
@@ -45,27 +37,17 @@ Key concepts when you use one click Edge Delivery site creation.
 | Security and governance | <ul><li>Security is provided with integrated DDoS (Distributed Denial of Service) protection and WAF (Web Application Firewall) integration.</li><li>Ensure that content is delivered securely through TLS (Transport Security Layer) encryption. </li></ul> |
 -->
 
-<<<<<<< Updated upstream:help/implementing/cloud-manager/edge-delivery/one-click-edge-delivery-site.md
 ## Create an Edge Delivery site in Cloud Manager with one click {#one-click-edge-delivery-site}
 
-To be able to create an Adobe Edge Delivery site with one click, your organization must have an available Edge Delivery Services license. This license is part of Adobe Experience Manager (AEM) and is necessary for creating Edge Delivery Services within Cloud Manager.
-=======
-## Create an Edge Delivery site with one click {#provision-edge-delivery-site}
-
-To create an Adobe Edge Delivery site with one click, your organization must have an available Edge Delivery Services license. This license is part of Adobe Experience Manager (AEM) and is necessary for provisioning Edge Delivery Services within Cloud Manager.
->>>>>>> Stashed changes:help/implementing/cloud-manager/edge-delivery/provision-edge-delivery-site.md
+To create an Adobe Edge Delivery site with one click, your organization must have an available Edge Delivery Services license. This license is part of Adobe Experience Manager (AEM) and is necessary for creating Edge Delivery Services within Cloud Manager.
 
 In terms of permissions, you must be a member of the Business Owner role or have been granted the appropriate permissions to add or edit programs in Cloud Manager. This access level lets you manage the integration of Edge Delivery Services into your programs.
 
 See also [Introduction to Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md).
 
-PROPER AEM BOT CONFIGURATIONS MUST BE IN PLACE FIRST FOR AUTOMATIC CONTENT UPDATES? TRUE? FALSE?
+<!-- PROPER AEM BOT CONFIGURATIONS MUST BE IN PLACE FIRST FOR AUTOMATIC CONTENT UPDATES? TRUE or FALSE? -->
 
-<<<<<<< Updated upstream:help/implementing/cloud-manager/edge-delivery/one-click-edge-delivery-site.md
 **To create an Edge Delivery site in Cloud Manager with one click:**
-=======
-**To create an Edge Delivery site with one click:**
->>>>>>> Stashed changes:help/implementing/cloud-manager/edge-delivery/provision-edge-delivery-site.md
 
 1. Log into Cloud Manager at [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) and select the appropriate program.
 1. In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to reveal the left side menu.
@@ -75,16 +57,16 @@ PROPER AEM BOT CONFIGURATIONS MUST BE IN PLACE FIRST FOR AUTOMATIC CONTENT UPDAT
   A toast appears near the top-center of the screen letting you know that Edge Delivery site provisioning has started.
   When provisioning is complete and your site is validated, the site name appears in the **Edge Delivery sites** area on the Edge Delivery page.
 
-<<<<<<< Updated upstream:help/implementing/cloud-manager/edge-delivery/one-click-edge-delivery-site.md
-### Explore a newly created Edge Delivery site 
-=======
-## Explore a newly provisioned Edge Delivery site 
+### Explore an Edge Delivery site created with one click {#explore-one-click-ed-site}
 
-
->>>>>>> Stashed changes:help/implementing/cloud-manager/edge-delivery/provision-edge-delivery-site.md
-
+1. Log into Cloud Manager at [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) and select the appropriate program.
+1. In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to reveal the left side menu.
+1. In the left side menu, under the **Services** heading, click ![Web page icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**.
+1. On the Edge Delivery page, in the **Edge Delivery to-do list** dialog box, in the **Complete prerequisites** group box, click **Provision**.
 
 1. Click the Git Repository link to the right of the site's name.
+
+
 
 Publish. 
 
