@@ -26,12 +26,12 @@ None.
 
 #### AEM Guides {#guides}
 
-* When updating conditions from the folder profile, all the condition groups are lost and the conditions become flattened.
-* If an external link contains a UUID, it goes in post processing and converts the external link to UUID link thereby breaking the link on editor and also on the publishing sites.
-* When copying an image from any external product (for example, MS PowerPoint) and pasting it into Guides, the functionality to upload the asset on the fly for use in the file breaks.
-* Native PDF generation fails for content with **chunk attribute** set to **to-content**.
-* When choosing **Edit properties**, the baseline dialog does not show the previously saved criteria for dynamic baseline.
-* When duplicating any folder profile, its admin user list also gets copied from the original folder profile
+* GUIDES-23526: When updating conditions from the folder profile, all the condition groups are lost and the conditions become flattened.
+* GUIDES-22574: If an external link contains a UUID, it goes in post processing and converts the external link to UUID link thereby breaking the link on editor and also on the publishing sites.
+* GUIDES-24983: When copying an image from any external product (for example, MS PowerPoint) and pasting it into Guides, the functionality to upload the asset on the fly for use in the file breaks.
+* GUIDES-21772: Native PDF generation fails for content with **chunk attribute** set to **to-content**.
+* GUIDES-23964: When choosing **Edit properties**, the baseline dialog does not show the previously saved criteria for dynamic baseline.
+* GUIDES-19067: When duplicating any folder profile, its admin user list also gets copied from the original folder profile
 
 For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/overview). 
 
