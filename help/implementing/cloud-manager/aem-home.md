@@ -18,12 +18,12 @@ Available to early adopters, AEM Launchpad offers an optimized experience focuse
 
 The [Adobe Experience Manager page](https://experience.adobe.com/#/experiencemanager) has been updated with enhanced navigation and interactive widgets. The previous collection of solution cards provided access to tools like the following: 
 
-* Universal Editor
-* Cloud Manager
-* Cloud Acceleration Manager
 * Brand Portal
-* Software Distribution and
+* Cloud Acceleration Manager
+* Cloud Manager
 * Extension Manager
+* Software Distribution
+* Universal Editor
 
 These solutions are now moved to the main navigation under **Tools**. Additionally, new navigation elements for **Sites** and **Assets** provide quick access to key Adobe Experience Manager features such as Assets, Collections, Sites, and Content Fragments. These features are available for the primary production environment that you have access to.
 
