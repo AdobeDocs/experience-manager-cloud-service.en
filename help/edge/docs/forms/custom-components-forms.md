@@ -111,7 +111,7 @@ To add a custom function:
     }
     ```
 
-4. Save the changes.
+1. Save the changes.
 
 ### Inject the decorator in the Form Block
 
@@ -357,6 +357,7 @@ Now, you can see your custom component in the WYSIWYG based authoring:
 ## See also
 
 {{see-more-forms-eds}}
+
 
 
 

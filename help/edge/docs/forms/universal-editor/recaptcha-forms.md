@@ -214,4 +214,9 @@ You can now view the form with reCAPTCHA service at the following URL:
     If modifications or changes are not visible at the published URL, ensure that the form is republished to apply the updates.
 
 * **Which reCAPTCHA service does Edge Delivery Services Forms support?**
-    **A**: Edge Delivery Services Forms supports only score-based reCAPTCHA service provided by Goole.
+    **A**: Edge Delivery Services Forms supports only score-based reCAPTCHA service provided by Google.
+
+
+## See also
+
+{{see-more-forms-eds}}

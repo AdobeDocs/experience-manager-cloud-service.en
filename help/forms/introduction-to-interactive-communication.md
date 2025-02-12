@@ -12,12 +12,14 @@ You can use our intuitive point-and-click graphical design tool (Interactive Com
 
 From financial institutions generating account statements to government agencies streamlining benefit notices, Interactive Communications is the go-to tool for crafting high-quality, secure, and legally compliant correspondence with ease and efficiency.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3444094)
 
-[!VIDEO](https://video.tv.adobe.com/v/3444094/)
+<!-- [!VIDEO](https://video.tv.adobe.com/v/3444094/)
 
-<!-- ![Interactive Communication Editor](/help/assets/ic-editor.png)
+ ![Interactive Communication Editor](/help/assets/ic-editor.png)
 
 --> 
+
 ## Core Capabilities 
 
 The core capabilities of Interactive Communications editor are: 

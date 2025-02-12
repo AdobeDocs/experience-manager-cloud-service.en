@@ -366,7 +366,7 @@ To use the custom function in the Rule Editor:
 
     ![Custom Function in Rule Editor](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 
-1. **Preview the Form**: Preview your form with the newly implemented function.  
+1. **Preview the form**: Preview your form with the newly implemented function.  
 
 ## Additional Information
 
