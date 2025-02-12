@@ -3,9 +3,9 @@ Title: How to configure submit to Rest Endpoint submit action for an Adaptive Fo
 Description: Discover the steps to set up Rest Endpoint when submitting an Adaptive Form.
 keywords: AEM Forms REST Endpoint, Submit to REST Endpoint, Post Data to REST URL, Configure REST Endpoint Action
 feature: Adaptive Forms, Core Components
-exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-title: "How to configure a Submit Action for an Adaptive Form?"
+title: How to configure a Submit Action for an Adaptive Form?
 role: User, Developer
+exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
 ---
 # Configure an Adaptive Form for REST Endpoint submit action
 
@@ -24,7 +24,7 @@ Some of the advantages of configuring the **[!UICONTROL Submit to REST endpoint]
 
 ## Configure Submit to REST Endpoint  submit action {#steps-to-configure-submit-to-restendpoint-submit-action}
 
-To configure submit action:
+To configure submit action based on Swagger Open API specification:
 
 1. Open the Content browser, and select the **[!UICONTROL Guide Container]** component of your Adaptive Form. 
 1. Click the Guide Container properties ![Guide properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box opens. 
@@ -62,6 +62,20 @@ To configure submit action:
     You can also **[!UICONTROL Enable POST request]** and provide a URL to post the request. To submit data to the AEM server hosting the form, use a relative path corresponding to the root path of the AEM server. For example, `/content/forms/af/SampleForm.html`. To submit data to any other server, use absolute path.
 
 1. Click **[!UICONTROL Done]**.
+
+### Configure submit action based on Service Rest Endpoint {#config-service-endpoint-auth}
+
+<span class="preview"> The Service Endpoint capability is under the Early Adopter Program and it is applicable to Core Components only. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+
+1. Open the Content browser, and select the **[!UICONTROL Guide Container]** component of your Adaptive Form.
+1. Click the Guide Container properties ![Guide properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box opens. 
+1. Click the  **[!UICONTROL Submission]** tab. 
+1. From the **[!UICONTROL Submit Action]** drop-down list, select **[!UICONTROL Submit to Rest endpoint]**.
+1. Enable the POST request.
+1. Specify the REST endpoint URL.
+1. Select the Configuration you have created for your Service Rest Endpoint Authentication Type and the Content Types. To know more about Authentication Type and the Content Types, visit [configure data sources](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint).
+    ![Configuring Rest Endpoint](assets/rest-service-endpoint-config.png)
+1. Click Done.
 
 ## Best Practices
 
