@@ -37,7 +37,7 @@ Before integrating [!DNL Microsoft® Dynamics 365] with AEM Forms as a Cloud Ser
    
      Follow the steps explained in the video to set up a Microsoft Dynamics 365 account. In this video, a trial account is created for demonstration purposes.
 
-    >[!VIDEO]()
+    >[!VIDEO]
 
 1. **Create an account in the Power Platform Admin Center**
     Create an account in the **Power Platform Admin Center** to: 
@@ -51,7 +51,7 @@ Before integrating [!DNL Microsoft® Dynamics 365] with AEM Forms as a Cloud Ser
 
     Follow the steps in the video to register an application for [!DNL Microsoft&reg; Dynamics 365] in Azure Active Directory.
 
-    >[!VIDEO]()
+    >[!VIDEO](https://video.tv.adobe.com/v/3444369/dynamics365integration-microsoftdynamics-apiaccess-azuread-appregistration)
 
     >[!NOTE]
     >
@@ -67,7 +67,7 @@ Once you have configured the prerequisites above, you can proceed with integrati
 
 ### 1. Configure cloud service configuration for Microsoft Dynamics
 
->[!VIDEO]()
+ >[!VIDEO](https://video.tv.adobe.com/v/3444370/cloudconfiguration-dataintegration-adobeexperiencemanager-aemforms-microsoftdynamics)
 
 Perform the following steps to configure the [!DNL Microsoft&reg; Dynamics 365] cloud service configuration:
 
@@ -116,7 +116,7 @@ Perform the following steps to configure the [!DNL Microsoft&reg; Dynamics 365] 
 
 ### 2. Create Form Data Model (FDM)
 
->[!VIDEO]()
+>[!VIDEO](https://video.tv.adobe.com/v/3444367/aemforms-adobeexperiencemanager-formdatamodel--dataintegration-digitalforms)
 
 You can use the create the Form Data Model (FDM) using the created [!DNL Microsoft&reg; Dynamics 365] cloud configuration. Perform the following steps to create Form Data Model:
 
