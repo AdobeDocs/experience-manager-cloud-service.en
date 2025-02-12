@@ -105,7 +105,19 @@ Ready to start? The following articles provides detailed instructions to use the
 
 ### HTML email Templates in Adaptive Forms
 
-Adaptive Forms allows you use HTML email templates. HTML email templates enable you to send rich, personalized, and visually appealing emails when a form is submitted. These emails can be customized with form data and enhanced using various email tags, such as images and links. With Adaptive Forms, you can either upload a file containing an HTML template or use a plain-text editor to create these templates.
+
+Adaptive Forms allows you use [HTML email templates](/help/forms/html-email-templates-in-adaptive-forms.md). HTML email templates enable you to send rich, personalized, and visually appealing emails when a form is submitted. These emails can be customized with form data and enhanced using various email tags, such as images and links. With Adaptive Forms, you can either upload a file containing an HTML template or use a plain-text editor to create these templates.
+
+![HTML email templates](/help/forms/assets/html-email.png)
+
+### RESTful Web Services Submit Action
+
+Adaptive Forms can now seamlessly send captured data to authenticated external REST endpoints with the new RESTful Web Services Submit Action: 
+
+* Standards Supported: Swagger 2.0 & 3.0 for easy API integration
+* Secure Authentication: OAuth 2.0, Basic Auth, API Key, & Custom Authentication
+* Flexible Data Formats: Multi-Part Form Data, JSON, & URL-encoded (Key-Value Pairs)
+
 
 
 ### Right-to-left (RTL) languages support

@@ -56,7 +56,7 @@ When you have fulfilled the [requirements](#requirements) above, you can install
 
 ## The AEM Perspective {#the-aem-perspective}
 
-In Eclipse, a Perspective determines the actions and views available within a window and enables task-oriented interaction with resources in Eclipse. For more details about Perspective, see the [Eclipse documentation.](https://help.eclipse.org/latest/index.jsp)
+In Eclipse, a Perspective determines the actions and views available within a window and enables task-oriented interaction with resources in Eclipse. For more details about Perspective, see the [Eclipse documentation](https://help.eclipse.org/latest/index.jsp).
 
 _Experience Manager Development Tools for Eclipse_ provide an AEM Perspective that offers you full control over your AEM Projects and instances. To open the AEM Perspective:
 
