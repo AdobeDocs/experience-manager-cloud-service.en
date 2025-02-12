@@ -223,8 +223,8 @@ Now, you can extend the created custom component for WYSIWYG based authoring.
 To enable component for WYSIWYG authoring:
 
 1. Navigate to  `[../Form Block/components]`.
-1. Locate a file named `_range.json`. if not present, create it.
-1. Add the following code in the  `_range.json` file:
+2. Locate a file named `_range.json`. if not present, create it.
+3. Add the following code in the  `_range.json` file:
 
     ```javascript
     {
@@ -286,7 +286,7 @@ To enable component for WYSIWYG authoring:
 
     ![component definition and model](/help/edge/docs/forms/universal-editor/assets/custom-component-json-file.png)
 
-1. Navigate to the `/blocks/form/_form.json` file and add the `fd:viewType` value from the `definitions[]` to the components array of the object with `id="form"`.
+4. Navigate to the `/blocks/form/_form.json` file and add the `fd:viewType` value from the `definitions[]` to the components array of the object with `id="form"`.
 
     ```javascript
 
@@ -327,7 +327,7 @@ To enable component for WYSIWYG authoring:
     
     ![component filter](/help/edge/docs/forms/universal-editor/assets/custom-component-form-file.png)
 
-1. Navigate to the `/blocks/form/mappings.js` file and add the `fd:viewType` value from the `definitions[]` array to the `customComponents[]` array.
+5. Navigate to the `/blocks/form/mappings.js` file and add the `fd:viewType` value from the `definitions[]` array to the `customComponents[]` array.
 
     ```javascript
     let customComponents = ["range"];
