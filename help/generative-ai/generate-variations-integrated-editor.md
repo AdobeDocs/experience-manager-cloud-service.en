@@ -132,9 +132,9 @@ Once copied to the clipboard, you can paste the information elsewhere; for examp
 
 ## History {#history}
 
-This section provides links to your recent activity. 
+This tab shows your past activity as after you select **Generate**. a **History** entry is added.
 
-After you select **Generate**. a **History** entry is added, showing the selected content. If you select a **History** entry, then **Generate**, it loads the prompt, and returns you to the **Generate** tab for further action.
+If, at a later point, you select the same content in the main flow and open the **History** tab, then you see all generated variations for that block.
 
 ## Favorites {#favorites}
 
