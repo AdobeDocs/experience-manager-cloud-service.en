@@ -270,6 +270,28 @@ You can add pages, assets, or tags to the translation job of your translation pr
 >
 >This method adds pages/assets and their children to the project. Select **Asset/Page (without children)** if you only want to add the parents.
 
+### Adding i18n Dictionaries to a Translation Job {#adding-i-n-dictionaries-to-a-translation-job}
+
+You can add pages, assets, tags or i18n dictionaries to the Translation Job of your Translation project. To add an i18n dictionary:
+
+1. On the bottom of the Translation Job tile of your translation project, click the ellipsis.
+
+   ![Translation job tile](../assets/translation-job.png)
+
+1. Click Add and I18N-Dictionary.
+
+   ![Add i18n dictionary](../assets/add-i18n.png)
+
+1. Select the **Root Directory**, and dictionary (if necessary), that you want to add, and then select **Add**.
+
+   ![Select i18N Dictionary](../assets/select-i18n.png)
+
+Your dictionary is now in your translation job and the translation process can then be started to create the dictionary language copies in `/content/cq:i18n` and to send those dictionary language copies for translation. 
+
+>[!NOTE]
+>
+>For more information about i18n dictionaries, read [Using Translator to Manage Dictionaries](/help/implementing/developing/extending/i18n/translator.md).
+
 ### Adding Tags to a Translation Job {#adding-tags-to-a-translation-job}
 
 You can add tags to a translation project similar to [how you add assets and pages to a project](#adding-pages-assets-to-a-translation-job). Just select **Tags** under the **Add** menu then follow the same steps.
