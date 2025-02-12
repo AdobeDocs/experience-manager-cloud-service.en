@@ -24,7 +24,7 @@ Sites created with AEM site templates allow for the easy download, customization
 
 Site themes are used in two different ways:
 
-* They are used as part of a site template to define styling when [creating a site.](create-site.md)
+* They are used as part of a site template to define styling when [creating a site](create-site.md).
 * They are downloaded after creating a site based on a site template so a front-end developer can further customize the styling.
 
 >[!TIP]
