@@ -223,8 +223,8 @@ Now, you can extend the created custom component for WYSIWYG based authoring.
 To enable component for WYSIWYG authoring:
 
 1. Navigate to  `[../Form Block/components]`.
-2. Locate a file named `_range.json`. if not present, create it.
-3. Add the following code in the  `_range.json` file:
+1. Locate a file named `_range.json`. if not present, create it.
+1. Add the following code in the  `_range.json` file:
 
     ```javascript
     {
