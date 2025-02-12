@@ -105,6 +105,9 @@ The following table outlines the features and use cases for each authoring edito
 >
 > Should you find any features missing in the Universal Editor that were previously available in the Adaptive Forms editor, you can request them by emailing mailto:aem-forms-ea@adobe.com using your official email address.
 
+## See also
+
+{{see-more-forms-eds}}
 
 
 

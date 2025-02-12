@@ -449,7 +449,19 @@ You can modify custom components using predefined markup, as explained in the [S
 
 ## Frequently Asked Question
 
-Q: 
+* **If I add styling in both component.css and forms.css, which one takes priority?**
+When styles are defined in both `component.css` and **forms.css**, `component.css` takes priority. This is because component-level styles are more specific and override global styles from `forms.css`.
+
+* **My custom component is not visible in the list of available components in Universal Editor. How can I fix this?**
+If your custom component is not appearing, check the following files to ensure the component is correctly registered:
+  * **component-definition.json**: Verify that the component is properly defined.
+  * **component-filters.json**: Ensure the component is allowed in the appropriate sections.
+  * **component-models.json**: Confirm that the component model is correctly configured.
+
+## Best Practices
+
+* It is recommended to [set up a local AEM development environment](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#set-up-local-aem-development-environment) for developing custom styles and components locally. 
+
 
 ## Extra Byte
 
@@ -485,3 +497,7 @@ The supported fieldTypes for forms are:
 * email
 * image
 * button
+
+## See also
+
+{{see-more-forms-eds}}
