@@ -90,7 +90,7 @@ You can also specify **Modifiers** to provide more context:
 * **Reference a web page**
   Provide a URL for more context.
 * **Upload content brief**
-  Update a PDF or .docx file containing details of the content brief (10MB or less).
+  Update a `.docx` file containing details of the content brief (10MB or less).
 
 ### Generate Copy {#generate-copy}
 
@@ -108,7 +108,7 @@ When you select a single variation, you can use the following actions:
 
 * **Edit**
   * You can edit the text of the generated variation. 
-  * Persist your changes for later use.
+  * Save your changes for later use.
 * **Favorite**
   * Flag this variation for future reference. 
   * Once flagged, it will be shown under the [Favorites](#favorites) tab.
