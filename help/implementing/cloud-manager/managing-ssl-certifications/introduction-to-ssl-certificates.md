@@ -14,7 +14,7 @@ Learn about the self-service tools Cloud Manager provides you to install and man
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
 >title="Manage SSL certificates"
->abstract="Learn how Cloud Manager provides you with self-service tools to install and manage SSL certificates to secure your site for your users. Cloud Manager uses a platform TLS service to manage SSL certificates and private keys owned by customers and obtained from third-party certification authorities."
+>abstract="Learn how Cloud Manager has self-service tools to install and manage SSL certificates to secure your site for your users. Cloud Manager uses a platform TLS service to manage SSL certificates and private keys owned by customers and obtained from third-party certification authorities."
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="View, Updating & Replace an SSL Certificate"
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Check Status of an SSL Certificate"
 
@@ -34,8 +34,8 @@ Cloud Manager offers self-service tools to install and manage SSL certificates, 
 
 | | Model | Description |
 | --- | --- | --- |
-| A | **[Adobe managed SSL certificate (DV)](#adobe-managed)** | Cloud Manager lets users configure DV (Domain Validation) certificates that are provided by Adobe for quick domain setup.|
-| B | **[Customer managed SSL certificate (OV/EV)](#customer-managed)** | Cloud Manager offers a platform TLS (Transport Layer Security) service to let you manage OV and EV SSL certificates that you own and private keys from third-party Certificate Authorities, such as *Let's Encrypt*. | 
+| A | **[Adobe-managed SSL certificate (DV)](#adobe-managed)** | Cloud Manager lets users configure DV (Domain Validation) certificates that are provided by Adobe for quick domain setup.|
+| B | **[Customer-managed SSL certificate (OV/EV)](#customer-managed)** | Cloud Manager offers a platform TLS (Transport Layer Security) service to let you manage OV and EV SSL certificates that you own and private keys from third-party Certificate Authorities, such as *Let's Encrypt*. | 
 
 Both models offer the following general features for managing your certificates:
 
@@ -47,13 +47,13 @@ Both models offer the following general features for managing your certificates:
 >
 >[To add and associate a custom domain with an environment](/help/implementing/cloud-manager/custom-domain-names/introduction.md), you must have a valid SSL certificate that covers the domain.
 
-### Adobe managed (DV) SSL certificates {#adobe-managed}
+### Adobe-managed (DV) SSL certificates {#adobe-managed}
 
 DV certificates are the most basic level of SSL certification and are often used for testing purposes or for securing websites with basic encryption. DV certificates are available in both [production programs and sandbox programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
 After the DV certificate is created, Adobe renews it automatically every three months, unless it is deleted. 
 
-### Customer managed OV/EV SSL certificates {#customer-managed}
+### Customer-managed (OV/EV) SSL certificates {#customer-managed}
 
 OV and EV certificates offer CA-validated information. Such information helps users assess whether the website owner, email sender, or digital signatory of code or PDF documents can be trusted. DV certificates do not allow such ownership verification.
 
@@ -67,14 +67,25 @@ OV and EV additionally offer these features over DV certificates in Cloud Manage
 >
 >If you have multiple custom domains, you may not want to upload a certificate each time you add a new domain. In that case, you could benefit from obtaining a single certificate that covers multiple domains.
 
-#### Requirements for customer managed OV/EV SSL certificates {#requirements}
+#### Requirements for customer-managed OV/EV SSL certificates {#requirements}
 
-If you choose to add your own customer managed OV/EV SSL certificate, it must meet the following requirements:
+If you choose to add your own customer-managed SSL certificate, it must meet the following updated requirements:
 
+* Domain Validation (DV) certificates and self-signed certificates are not supported.
 * The certificate must conform to OV (Organization Validation) or EV (Extended Validation) policies.
-  * Cloud Manager does not support adding your own DV (Domain Validation) certificates.
-* Self-signed certificates are not supported.
-* Any certificate must be an X.509 TLS certificate from a trusted Certificate Authority with a matching 2048-bit RSA private key.
+* The certificate must be an X.509 TLS certificate issued by a trusted Certificate Authority (CA).
+* Supported cryptographic key types include the following:
+        
+  * RSA 2048-bit, standard support. 
+    RSA keys larger than 2048-bit (such as 3072-bit or 4096-bit RSA keys) are not supported at this time.
+  * Elliptic Curve (EC) keys `prime256v1` (`secp256r1`) and `secp384r1`
+  * Elliptic Curve Digital Signature Algorithm (ECDSA) certificates. Such certificates are Adobe-recommended over RSA for improved performance, security, and efficiency.
+
+* Certificates must be formatted correctly to pass validation. Private keys must be in `PKCS#8` format.
+
+>[!NOTE]
+>If your organization requires compliance using 3072-bit RSA keys, the Adobe-recommended alternative is to use ECDSA certificates (`secp256r1` or `secp384r1`).
+
 
 #### Best practices for certificate management
 
@@ -109,7 +120,7 @@ If you choose to add your own customer managed OV/EV SSL certificate, it must me
 >For example, if your domain is `dev.adobe.com` and you have one certificate for `*.adobe.com` and another for `dev.adobe.com`, the more specific one (`dev.adobe.com`) is used.
 -->
 
-#### Format for customer managed certificates {#certificate-format}
+#### Format for customer-managed certificates {#certificate-format}
 
 SSL certificate files must be in PEM format to be installed with Cloud Manager. Common file extensions of the PEM format include `.pem,`. `crt`, `.cer`, and `.cert`. 
 
