@@ -33,7 +33,7 @@ None.
 * GUIDES-23964: When choosing **Edit properties**, the baseline dialog does not show the previously saved criteria for dynamic baseline.
 * GUIDES-19067: When duplicating any folder profile, its admin user list also gets copied from the original folder profile
 
-For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/overview). 
+For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
 
 ### Known Issues {#known-issues-X}
 
