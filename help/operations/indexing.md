@@ -353,7 +353,7 @@ At times, it becomes necessary to undo a modification in an index definition. Th
 
 ### Removing an Index {#removing-an-index}
 
-The following only applies to custom indexes, that is, to customizations of Out-of-the-box indexes and to fully custom indexes. Product/OOTB indexes may not be removed as they are used by AEM.
+The following only applies to custom indexes, that is, to customizations of Out-of-the-box indexes and fully custom indexes. Product/OOTB indexes may not be removed as they are used by AEM.
 
 To ensure system integrity and stability, indexes should never be removed from a running environment and should be considered as immutable once deployed. To achieve the effect of removing an index, you should follow a similar process as to undo a change, that is, create a new version of the custom index using a definition whose effect will be similar as if the index had been removed. 
 
