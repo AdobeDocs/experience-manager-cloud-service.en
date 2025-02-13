@@ -130,7 +130,7 @@ To inject the decorator in the Form Block:
     .... existing code ....
     if (fieldType === 'range') {
     const module = await import('./components/range.js');
-    return module.default(element,fd);;
+    return module.default(element,fd);
     }
      return null; // null should be returned to use the original markup
     }
@@ -215,7 +215,7 @@ Preview your form with the newly implemented function that styles the `range` co
 ![Custom component form](/help/edge/assets/custom-componet-form.png)
 
 The new styling for the `range` component shows the minimum, maximum, and selected values on the line by adding styles using CSS and a custom function that includes a decorator for the component.
-
+<!--
 Now, you can extend the created custom component for WYSIWYG based authoring.
 
 ## Enable Component for WYSIWYG authoring
@@ -352,7 +352,7 @@ Now, you can see your custom component in the WYSIWYG based authoring:
 
 >[!NOTE]
 >
-> For detailed steps on creating a custom component for the Universal Editor, refer to the [Create Custom Component in WYSIWYG based authoring](/help/edge/docs/forms/universal-editor/create-custom-component) article.
+> For detailed steps on creating a custom component for the Universal Editor, refer to the [Create Custom Component in WYSIWYG based authoring](/help/edge/docs/forms/universal-editor/create-custom-component) article. -->
 
 ## See also
 
