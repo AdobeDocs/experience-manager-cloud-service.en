@@ -1,13 +1,13 @@
 ---
 title: Use reCAPTCHA with Edge Delivery Services for AEM Forms as a Cloud Service
-description: Use Google reCAPTCHA in an form for Edge Delivery Services for AEM Forms 
+description: Use Google reCAPTCHA in an form for Edge Delivery Services for AEM Forms
 feature: Edge Delivery Services
-keywords: reCAPTCHA in forms, Using reCAPTCHA in Universal Editor, Add reCAPTCHA in forms  
+keywords: reCAPTCHA in forms, Using reCAPTCHA in Universal Editor, Add reCAPTCHA in forms
 role: Admin, Architect, Developer
 hide: yes
 hidefromtoc: yes
+exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
 ---
-
 # Use reCAPTCHA in WYSIWYG Authoring
 
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) is a popular tool used to protect websites from fraudulent activities, spam, and misuse. 
