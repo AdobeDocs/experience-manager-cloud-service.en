@@ -11,6 +11,14 @@ role: User
 
 Learn how the Universal Editor publishes content and how your apps can handle the published content.
 
+## Publishing Content as an Author {#publishing-content}
+
+When you as a content author are ready to publish your content, you simply need to tap or click [the **Publish** icon in the Universal Editor's tool bar.](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
+
+>[!NOTE]
+>
+>The Universal Editor supports [extensions and UI extensibility](/help/implementing/universal-editor/extending.md) to allow workflows to support your publication process.
+
 ## Similarities with AEM {#similarities}
 
 For users of AEM, the process to publish content with the Universal Editor works as you are accustomed: on publication in AEM, the content is replicated from the author tier to the publish tier.

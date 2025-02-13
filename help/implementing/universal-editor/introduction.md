@@ -47,16 +47,16 @@ This documentation is for using the Universal Editor with AEM as a Cloud Service
 
 The Universal Editor offers many features to supports a wide range of use cases for efficient content management.
 
-* **WYSIWYG**: Perform what-you-see-is-what-you-get editing of any form of web content, including plain text, rich text, media, and metadata.
-* **Composition**: Create, edit, reorder, nest, or delete content blocks of various types (titles, buttons, teasers, sections, embed, etc.).
-* **Layout**: Utilize page templates, apply visual styles, and compose layouts with blocks like columns, carousels, and accordions.
-* **Device Simulation**: Preview and optimize content for different visitor devices while editing.
+* **[WYSIWYG](/help/sites-cloud/authoring/universal-editor/authoring.md)**: Perform what-you-see-is-what-you-get editing of any form of web content, including plain text, rich text, media, and metadata.
+* **[Composition](/help/sites-cloud/authoring/universal-editor/authoring.md#editing-content)**: Create, edit, reorder, nest, or delete content blocks of various types (titles, buttons, teasers, sections, embed, etc.).
+* **[Layout](/help/sites-cloud/authoring/universal-editor/templates.md)**: Utilize page templates, apply visual styles, and compose layouts with blocks like columns, carousels, and accordions.
+* **[Device Simulation](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator)**: Preview and optimize content for different visitor devices while editing.
 * **Omnichannel**: Reuse both structured and unstructured content across multiple channels.
-* **Localization**: Streamline content translation workflows and efficiently handle localized content inheritance with Multi-Site Manager.
+* **[Localization](/help/sites-cloud/authoring/universal-editor/inheritance.md)**: Streamline content translation workflows and efficiently handle localized content inheritance with Multi-Site Manager.
 * **Consistency**: Ensure compliance with brand guidelines and maintain uniformity across all content.
-* **Security**: Enforce access control, protect content integrity, and track changes with robust versioning.
-* **Publishing**: Integrate review, approval, and publication workflows directly within the editor.
-* **Unified**: Fully integrates with AEM tools like Site Admin, Content Fragment Editor, and many more, providing a cohesive authoring experience.
+* **Security**: [Enforce access control](/help/implementing/universal-editor/authentication.md), protect content integrity, and track changes with [robust versioning.](/help/sites-cloud/authoring/sites-console/page-versions.md)
+* **[Publishing](/help/sites-cloud/authoring/universal-editor/publishing.md)**: Integrate review, approval, and publication workflows directly within the editor.
+* **Unified**: Fully integrates with AEM tools like the [Sites Console,](/help/sites-cloud/authoring/sites-console/introduction.md) [Content Fragment Editor,](/help/sites-cloud/administering/content-fragments/overview.md) and many more, providing a cohesive authoring experience.
 
 ## Extensibility {#extensibility}
 
