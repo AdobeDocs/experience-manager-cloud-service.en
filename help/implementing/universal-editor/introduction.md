@@ -25,7 +25,7 @@ In summary:
 * **Authors benefit** from the Universal Editor’s flexibility as it supports the same consistent visual editing for all forms of AEM content.
 * **Developers benefit** from Universal Editor’s versatility as it supports true decoupling of the implementation.
 
-Being a true editor-as-a-service and is overall more flexible, the Universal Editor intends to eventually supersede the [Page Editor.](help/sites-cloud/authoring/page-editor/introduction.md)
+Being a true editor-as-a-service and is overall more flexible, the Universal Editor intends to eventually supersede the [Page Editor.](/help/sites-cloud/authoring/page-editor/introduction.md)
 
 ## Supported Architectures {#supported-architectures}
 
