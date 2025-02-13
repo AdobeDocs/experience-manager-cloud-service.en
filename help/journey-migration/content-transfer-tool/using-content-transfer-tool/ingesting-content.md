@@ -252,6 +252,7 @@ At times unexpected intermittent issues could lend themselves to failed ingestio
 
 * `Atlas prescale timeout error` - The ingestion phase will attempt to prescale the target cloud database to a suitable size that aligns with the size of the migration set content being ingested. Infrequently, this operation does not complete within the expected timeframe.
 * `Exhausted mongo restore retries` - Attempts to restore a local dump of the ingested migration set contents to the cloud database has been exhausted. This indicates an overall health/network issue with MongoDB, that often heals itself after a few minutes.
+* `Mongo network error` - At times establishing a connection to mongo can occur causing the ingestion process to exit early and report it as failed. A simple retry of the ingestion should be attempted.
 
 ### Ingestion Rescinded {#ingestion-rescinded}
 
