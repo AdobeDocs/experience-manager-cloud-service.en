@@ -8,7 +8,7 @@ exl-id: 77e90657-38db-4a49-9aac-3f3774b62624
 role: Admin, Architect, Developer
 ---
 
-# Create Custom Component in WYSIWYG based Authoring
+# Create Custom Component in WYSIWYG Authoring
 
 Edge Delivery Services Forms offer customization, allowing front-end developers to build tailored form components. These custom components integrate seamlessly into the WYSIWYG authoring experience, enabling form authors to easily add, configure, and manage them within the form editor. With custom components, authors can enhance functionality while ensuring a smooth and intuitive authoring process.
 
@@ -50,7 +50,7 @@ Add new folder and files for your new custom component in your AEM Project.
         * `../blocks/form/components/range/range.css`: Defines the styling for the custom component.
         * `../blocks/form/components/range/range.js`: Customizes the custom component at runtime.
 
-            ![Adding the custom component for authoring](/help/edge/docs/forms/universal-editor/adding-custom-component.png)
+            ![Adding the custom component for authoring](/help/edge/docs/forms/universal-editor/assets/adding-custom-component.png) 
 
             >[!NOTE]
             >
