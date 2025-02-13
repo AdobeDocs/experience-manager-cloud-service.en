@@ -359,11 +359,12 @@ To ensure system integrity and stability, indexes should never be removed and sh
 
 Below we describe the two possible cases: removing customizations of OOTB index and removing a fully custom index.
 
-#### Removing all customizations of an OOTB index 
+#### Removing all customizations of an OOTB index
+
 Follow the steps described in [Undoing a change](#undoing-a-change-undoing-a-change) using the definitions of the OOTB index as the new custom index. For example, if you have already deployed `damAssetLucene-8-custom-3`, but no longer need the customizations and want to switch back to the default `damAssetLucene-8` index, then you must add an index `damAssetLucene-8-custom-4` that contains the index definition of `damAssetLucene-8`.
 
-
 #### Removing a fully custom index
+
 Follow the steps described in [Undoing a change](#undoing-a-change-undoing-a-change) using an empty index as the new custom index. An empty index is never used and does not contain any data, so the effect will be the same as if the index did not exist. For this example, you can name it `/oak:index/acme.product-custom-3`. This name replaces the index `/oak:index/acme.product-custom-2`. An example of such an empty index is:
 
 ```xml
