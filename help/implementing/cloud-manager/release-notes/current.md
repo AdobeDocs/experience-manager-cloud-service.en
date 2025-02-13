@@ -22,38 +22,49 @@ The next planned release is Thursday, March 13, 2025.
  
 ## What's new {#what-is-new}
 
-* **Update to code quality rules.** 
+* **Update to code quality rules** 
+
     Starting Thursday, February 13, 2025, the Cloud Manager code quality step now uses SonarQube 9.9.5.90363.
 
     The updated rules, available for Cloud Manager on AEM as a Cloud Service at [this link](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules), determine security scores and code quality for Cloud Manager pipelines.
 
 * SonarQube 9.9 is now the default code quality scanning engine for all customers.
 
-* **Java 17 and Java 21 build support.** 
+* **Java 17 and Java 21 build support** 
 
     Customers can now build with Java 17 or Java 21, gaining access to performance enhancements and new language features. For configuration steps, including updating your Maven project and library versions, see [Build environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). When the build version is set to Java 17 or Java 21, the runtime deployed is Java 21.
 
-* **99.99% SLA uptime reporting for Edge Delivery Services.**
+* **99.99% SLA uptime reporting for Edge Delivery Services**
+
     High-availability 99.99% uptime reporting is now available for qualifying Edge Delivery Services programs. To enable this feature, customers must successfully onboard their Edge Delivery Services sites and apply their 99.99% Service Level Agreement (SLA) within Cloud Manager.
 
     See also [SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla).
 
-* **Improved user invitation experience for Edge Delivery Services.**
+* **Improved user invitation experience for Edge Delivery Services**
+
     Improvements were made to the experience with inviting users to the content repository associated with Edge Delivery Services. <!-- CMGR-65331 -->
 
-* **Automatic creation of Admin profiles on publish instances.**
+* **Automatic creation of Admin profiles on publish instances**
+
     Previously, Cloud Manager allowed for the manual creation of admin profiles on publish instances but did not support automatic creation by default. With this update, admin profiles are now automatically created on publish instances, improving usability and reducing setup time for customers.
     
     For more details, see [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md).
 
     ![Pipeline activities filtering](/help/implementing/cloud-manager/release-notes/assets/product-profiles.png)
 
-* **Transition to OAuth for Cloud Service environments.**
+* **Transition to OAuth for Cloud Service environments**
+
     New Cloud Service environments now use OAuth-based service-to-service authentication for Adobe Developer Console integration projects instead of the previously used JWT authentication method. JWT authentication is deprecated and is planned for end-of-life in June 2025.
 
-* **Support for EC (Elliptic Curve) Private Keys (secp384r1).**
+* **Support for EC (Elliptic Curve) Private Keys (secp384r1)**
+
     Cloud Manager now supports `secp384r1` Elliptic Curve (EC) private keys, providing improved security and compliance for customer-managed OV/EV SSL certificates. 
     For more details, see [Requirements for customer-managed OV/EV SSL certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md). <!-- CMGR-63636 -->
+
+* **Specialized testing environments**
+
+    A new development environment with enhanced resources will be available for early adopters starting February 27, 2025.
+
 
 <!--
 ## Early adoption program {#early-adoption}
