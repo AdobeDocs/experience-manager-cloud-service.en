@@ -107,6 +107,8 @@ user-guide-title: AEM as a Cloud Service
       + [Maintenance Release Notes for 2023.1.0](/help/release-notes/maintenance/2023/2023-1-0.md)
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
+    + 2025 {#2025}
+      + [Release Notes for 2025.1.0](/help/implementing/cloud-manager/release-notes/2025/2025-1-0.md)
     + 2024 {#2024}
       + [Release Notes for 2024.12.0](/help/implementing/cloud-manager/release-notes/2024/2024-12-0.md)
       + [Release Notes for 2024.11.0](/help/implementing/cloud-manager/release-notes/2024/2024-11-0.md)
