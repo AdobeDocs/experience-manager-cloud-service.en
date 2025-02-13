@@ -85,4 +85,4 @@ If a "standalone" page is found, MSM chooses to rename this page, and creates a 
 
 Such a standalone page in a Live Copy subtree is typically the result of a **Detach** operation, or the former Live Copy page was manually deleted by an author and then re-created with the same name.
 
-To avoid this, use the Live Copy **Suspend** feature instead of **Detach**. More details on the **Detach** action can be found in [this article.](creating-live-copies.md)
+To avoid this, use the Live Copy **Suspend** feature instead of **Detach**. More details on the **Detach** action can be found in [this article](creating-live-copies.md).

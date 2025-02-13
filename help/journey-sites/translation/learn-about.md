@@ -57,7 +57,7 @@ Build on this knowledge and continue your AEM Sites translation journey by next 
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the sites translation journey by reviewing the document [Get started with AEM Sites translation,](getting-started.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
+While it is recommended that you move on to the next part of the sites translation journey by reviewing the document [Get started with AEM Sites translation](getting-started.md), the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
 
 * [Quick Start Guide to Authoring Pages](/help/sites-cloud/authoring/quick-start.md) - A quick overview of the most important concepts to creating content using AEM Sites
 * [MSM and Translation](/help/sites-cloud/administering/msm-and-translation.md) - The details of AEM's Multi-Site Manager and how it works with its translation tools

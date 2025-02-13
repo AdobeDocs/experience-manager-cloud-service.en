@@ -12,7 +12,7 @@ Learn how to get access to the Universal Editor and how to start instrumenting y
 
 >[!TIP]
 >
->If you would prefer to dive right into an example, you can review the [Universal Editor Sample App on GitHub.](https://github.com/adobe/universal-editor-sample-editable-app)
+>If you would prefer to dive right into an example, you can review the [Universal Editor Sample App on GitHub](https://github.com/adobe/universal-editor-sample-editable-app).
 
 Although the Universal Editor can edit content from any source, this document will use an AEM app as an example. This document will guide you through these steps.
 
@@ -116,7 +116,7 @@ If you only want to have certain extensions enabled for a page, you can set this
 
 ## Define for which content paths or `sling:resourceType`s the Universal Editor shall be opened. (Optional) {#content-paths}
 
-If you have an existing AEM project using [the page editor,](/help/sites-cloud/authoring/page-editor/introduction.md) when content authors edit pages, the pages are opened automatically with the page editor. You can define which editor AEM should open based on the content paths or the `sling:resourceType`, making the experience seamless for your authors, regardless of which editor is required for the selected content.
+If you have an existing AEM project using [the page editor](/help/sites-cloud/authoring/page-editor/introduction.md), when content authors edit pages, the pages are opened automatically with the page editor. You can define which editor AEM should open based on the content paths or the `sling:resourceType`, making the experience seamless for your authors, regardless of which editor is required for the selected content.
 
 1. Open the Configuration Manager.
 

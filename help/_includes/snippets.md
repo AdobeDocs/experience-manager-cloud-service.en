@@ -179,12 +179,12 @@ The following table demonstrates the difference between the features available i
 
 >[!IMPORTANT]
 >
->The Universal Editor is not compatible with [IP allow lists.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+>The Universal Editor is not compatible with [IP allow lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 >
 >If you want to use the Universal Editor, you must either:
 >
 >* Not enable IP Allow Lists.
->* [Run your own instance of the Universal Editor Service.](/help/implementing/universal-editor/local-dev.md)
+>* [Run your own instance of the Universal Editor Service](/help/implementing/universal-editor/local-dev.md).
 
 ## Work with Dynamic Media {#work-with-dynamic-media}
 
@@ -230,7 +230,7 @@ To log a support ticket, you must first register your Edge Delivery site in Clou
 
 >[!IMPORTANT]
 >
->The SPA Editor remains supported by Adobe, but the preferred editors for managing headless content in AEM are now:
+>The SPA Editor [has been deprecated](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-deprecated) for new projects. It remains supported by Adobe for existing projects, but should not be used for new projects. The preferred editors for managing headless content in AEM are now:
 >
 >* [The Universal Editor](/help/edge/wysiwyg-authoring/authoring.md) for visually editing headless content.
 >* [The Content Fragment Editor](/help/assets/content-fragments/content-fragments-managing.md) for form-based editing of headless content.
