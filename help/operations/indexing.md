@@ -357,7 +357,7 @@ The following only applies to custom indexes, that is, to customizations of Out-
 
 To ensure system integrity and stability, indexes should never be removed from a running environment and should be considered as immutable once deployed. To achieve the effect of removing an index, you should follow a similar process as to undo a change, that is, create a new version of the custom index using a definition whose effect will be similar as if the index had been removed. 
 
-Below we describe the two possible cases: removing customizations of OOTB index and removing a fully custom index.
+Below we describe the two possible cases: removing customizations of an OOTB index and removing a fully custom index.
 
 #### Removing all customizations of an OOTB index
 
