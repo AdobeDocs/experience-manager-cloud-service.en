@@ -63,6 +63,7 @@ Before integrating [!DNL Microsoft® Dynamics 365] with AEM Forms as a Cloud Ser
 Once you have configured the prerequisites above, you can proceed with integrating Adaptive Forms with Microsoft® Dynamics 365. To send data to Microsoft® Dynamics 365 on form submission, follow the below steps:
 
 [1. Configure cloud service configuration for Microsoft Dynamics](#1-configure-cloud-service-configuration-for-microsoft-dynamics)
+
 [2. Create Form Data Model (FDM)](#2-create-form-data-model-fdm)
 
 ### 1. Configure cloud service configuration for Microsoft Dynamics
