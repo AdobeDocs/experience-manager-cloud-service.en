@@ -12,7 +12,6 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 Learn about the release of Cloud Manager 2025.2.0 in AEM (Adobe Experience Manager) as a Cloud Service.
 
 
-
 See also the [current release notes for Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Release dates {#release-date}
@@ -23,6 +22,11 @@ The next planned release is Thursday, March 13, 2025.
  
 ## What's new {#what-is-new}
 
+* **Update to code quality rules.** 
+    Starting Thursday, February 13, 2025, the Cloud Manager code quality step now uses an upgraded SonarQube version 9.9.5.90363.
+
+    The updated rules, available for Cloud Manager on AEM as a Cloud Service at [this link](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules), determine security scores and code quality for Cloud Manager pipelines. This update may impact your quality gates, potentially blocking deployments.
+
 * **99.99% uptime reporting for Edge Delivery Services.**
     High-availability 99.99% uptime reporting is now available for qualifying Edge Delivery Services programs. To enable this feature, customers must successfully onboard their Edge Delivery Services sites and apply their 99.99% Service Level Agreement (SLA) within Cloud Manager.
 
@@ -30,7 +34,8 @@ The next planned release is Thursday, March 13, 2025.
 
 * **Improved user invitation experience for Edge Delivery Services.**
     Improvements were made to the experience with inviting users to the content repository associated with Edge Delivery Services. <!-- CMGR-65331 -->
-* **Automatic creation of Admin profiles on publish instances**
+
+* **Automatic creation of Admin profiles on publish instances.**
     Previously, Cloud Manager allowed for the manual creation of admin profiles on publish instances but did not support automatic creation by default. With this update, admin profiles are now automatically created on publish instances, improving usability and reducing setup time for customers.
     
     For more details, see [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md).
