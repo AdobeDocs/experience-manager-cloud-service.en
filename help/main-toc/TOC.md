@@ -1004,6 +1004,7 @@ user-guide-title: AEM as a Cloud Service
     + [Redirects](/help/edge/docs/redirects.md)
   + Building Forms {#build-forms}
     + [Overview](/help/edge/docs/forms/overview.md)
+    + [How Edge Delivery Services Forms works?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
     + Get Started {#getting-started-edge-delivery-services-forms}
       + [Getting Started](/help/edge/docs/forms/tutorial.md)
       + [Create a form using Google Sheets or Microsoft Excel](/help/edge/docs/forms/create-forms.md)
@@ -1018,6 +1019,10 @@ user-guide-title: AEM as a Cloud Service
       + [Use Forms Submission Service](/help/forms/forms-submission-service.md)
     + WYSIWYG {#universal-editor}
       + [Overview - Universal Editor for Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+      + [Getting Started](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+      + [Add rules to using Rule Editor](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+      + [Create Custom Components](/help/edge/docs/forms/universal-editor/create-custom-component)
+      + [Use reCAPTCHA in forms](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
       + [Submit Actions](/help/edge/docs/forms/universal-editor/submit-action-ue.md)
       + [Publish Forms](/help/edge/docs/forms/universal-editor/publish-forms-ue.md)
       + [Customize styling of forms](/help/edge/docs/forms/universal-editor/style-theme-forms-ue.md)
