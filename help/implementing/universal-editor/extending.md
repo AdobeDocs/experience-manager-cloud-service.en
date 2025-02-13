@@ -28,7 +28,7 @@ As an Adobe Experience Cloud service, the Universal Editor's UI can be extended 
 * **[Export Content Fragments to Adobe Target](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/exporting-content-fragment-to-adobe-target/)**: Export Content Fragments, created in Adobe Experience Manager as a Cloud Service to Adobe Target to be used as offers in Target activities, to test and personalize experiences at scale.
 * **[Content Fragment Workflows](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/content-fragments-workflows/)**: Initiate an AEM workflow for selected content fragments.
 
-## Extending the UI {#extending}
+## Extending the UI {#extending-ui}
 
 The Universal Editor's UI extensions are JavaScript applications built with Adobe App Builder. Using these same tools, you can also add your own buttons and actions to the header menu and properties panel as well as create your own events for the Universal Editor.
 
@@ -51,6 +51,6 @@ In addition to UI extensibility, the Universal Editor offers many other flexible
 * **[Blocks](/help/edge/developer/block-collection.md)**: In simple JSON format, projects can adjust the blocks and UE features available for content creation.
 * **3rd-Party Storage**: The Universal Editor can federate the editing of content from different sources, even when they are displayed on the same page.
 * **Custom Buttons**: Implement specific actions for general contexts or particular content types. 
-* **[Custom User Interface](#extending)**: Extensions can display necessary UI in side-panels or modal dialogs.
+* **[Custom User Interface](#extending-ui)**: Extensions can display necessary UI in side-panels or modal dialogs.
 * **Custom Data Types**: Create input methods tailored to your requirements or enable authors to reference content from proprietary backends, like a product picker.
 * **[Events](/help/implementing/universal-editor/events.md)**: Extensions receive events about the author's actions and selections on the page to respond appropriately.
