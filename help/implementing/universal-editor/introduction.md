@@ -34,6 +34,10 @@ The Universal Editor supports the following two primary AEM setups:
 1. **[Edge Delivery Services](/help/edge/overview.md)**: This is the preferred approach for its simplicity, faster time-to-value, and enhanced performance.
 1. **[Headless Implementations](/help/headless/introduction.md)**: If you have an existing headless project or specific requirements for decoupled rendering, the Universal Editor allows enterprise-grade visual editing without the need to refactor the entire project. It is compatible with virtually any architecture (SSR, CSR), web framework (Next.js, React, Astro, etc.), and hosting models ("bring your own app").
 
+>[!TIP]
+>
+>Please see the document [Universal Editor Use Cases and Learning Paths](/help/implementing/universal-editor/use-cases.md) for more details on the supported architectures.
+
 ## Supported AEM Versions {#aem-versions}
 
 The Universal Editor is supported by:
