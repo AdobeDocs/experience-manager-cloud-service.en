@@ -5,6 +5,7 @@ feature: Edge Delivery Services
 hide: yes
 hidefromtoc: yes
 role: Admin, Architect, Developer
+exl-id: 77e90657-38db-4a49-9aac-3f3774b62624
 ---
 # Create Custom Components
 
@@ -356,7 +357,3 @@ Now, you can see your custom component in the WYSIWYG based authoring:
 ## See also
 
 {{see-more-forms-eds}}
-
-
-
-
