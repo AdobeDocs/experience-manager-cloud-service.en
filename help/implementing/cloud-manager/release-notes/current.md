@@ -23,24 +23,17 @@ The next planned release is Thursday, March 13, 2025.
 ## What's new {#what-is-new}
 
 * **Update to code quality rules.** 
-    Starting Thursday, February 13, 2025, the Cloud Manager code quality step now uses an upgraded SonarQube version 9.9.5.90363.
+    Starting Thursday, February 13, 2025, the Cloud Manager code quality step now uses SonarQube 9.9.5.90363.
 
-    The updated rules, available for Cloud Manager on AEM as a Cloud Service at [this link](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules), determine security scores and code quality for Cloud Manager pipelines. This update may impact your quality gates, potentially blocking deployments.
+    The updated rules, available for Cloud Manager on AEM as a Cloud Service at [this link](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules), determine security scores and code quality for Cloud Manager pipelines.
+
+* SonarQube 9.9 is now the default code quality scanning engine for all customers.
 
 * **Java 17 and Java 21 build support.** 
 
     Customers can now build with Java 17 or Java 21, gaining access to performance enhancements and new language features. For configuration steps, including updating your Maven project and library versions, see [Build environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). When the build version is set to Java 17 or Java 21, the runtime deployed is Java 21.
 
-    * **Feature enablement**
-        * This feature will be enabled for all customers on Thursday, February 13, 2025, coinciding with the default rollout of the new SonarQube version.
-        * Customers can enable it *immediately* by setting the two variable configurations described above for upgrading the SonarQube 9.9 version.
-
-    * **Java 21 runtime deployment**
-        * The Java 21 runtime is deployed when building with Java 17 or Java 21.
-        * Gradual rollout to all Cloud Manager environments begins in February for sandboxes and development environments and extends to production environments in April.
-        * Customers building with Java 11 who wish to adopt the Java 21 runtime *earlier* can contact Adobe at [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
-
-* **99.99% uptime reporting for Edge Delivery Services.**
+* **99.99% SLA uptime reporting for Edge Delivery Services.**
     High-availability 99.99% uptime reporting is now available for qualifying Edge Delivery Services programs. To enable this feature, customers must successfully onboard their Edge Delivery Services sites and apply their 99.99% Service Level Agreement (SLA) within Cloud Manager.
 
     See also [SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla).
