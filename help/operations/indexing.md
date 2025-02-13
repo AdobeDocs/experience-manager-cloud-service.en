@@ -365,7 +365,7 @@ Follow the steps described in [Undoing a change](#undoing-a-change-undoing-a-cha
 
 #### Removing a fully custom index
 
-Follow the steps described in [Undoing a change](#undoing-a-change-undoing-a-change) using an empty index as the new custom index. An empty index is never used and does not contain any data, so the effect will be the same as if the index did not exist. For this example, you can name it `/oak:index/acme.product-custom-3`. This name replaces the index `/oak:index/acme.product-custom-2`. An example of such an empty index is:
+Follow the steps described in [Undoing a change](#undoing-a-change-undoing-a-change) using an empty index as the new version. An empty index is never used for queries and does not contain any data, so the effect is the same as if the index does not exist. For this example, you can name it `/oak:index/acme.product-custom-3`. This name replaces the index `/oak:index/acme.product-custom-2`. An example of such an empty index is:
 
 ```xml
 <acme.product-custom-3
