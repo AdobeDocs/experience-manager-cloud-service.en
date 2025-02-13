@@ -4,8 +4,8 @@ Description: This article explains how to send data from your Adaptive Form to a
 keywords: How to connnect SharePoint document library for an adpative form, Submit to SharePoint, Create a SharePoint Document Library Configuration, Use the Submit to SharePoint submit action in an Adaptive Form, AEM Forms Data Model SharePoint Document Library, Forms Data Model SharePoint Document Library, Integrate Forms Data Model to SharePoint Document Library
 feature: Adaptive Forms, Core Components
 role: User, Developer
+exl-id: a00b4a93-2324-4c2a-824f-49146dc057b0
 ---
-
 # Connect an Adaptive Form to Microsoft® SharePoint Document Library {#connect-af-sharepoint-doc-library}
 
 >[!VIDEO](https://video.tv.adobe.com/v/3444368/formautomation-productivitytools-adaptiveforms--sharepointintegration-documentlibrary/?quality=12&learn=on)
