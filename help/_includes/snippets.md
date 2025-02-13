@@ -230,7 +230,7 @@ To log a support ticket, you must first register your Edge Delivery site in Clou
 
 >[!IMPORTANT]
 >
->The SPA Editor [has been deprecated](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-deprecated) for new projects. It remains supported by Adobe for existing projects, but should not be used for new projects. The preferred editors for managing headless content in AEM are now:
+>The SPA Editor [has been deprecated](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#spa-editor) for new projects. It remains supported by Adobe for existing projects, but should not be used for new projects. The preferred editors for managing headless content in AEM are now:
 >
 >* [The Universal Editor](/help/edge/wysiwyg-authoring/authoring.md) for visually editing headless content.
 >* [The Content Fragment Editor](/help/assets/content-fragments/content-fragments-managing.md) for form-based editing of headless content.
