@@ -20,7 +20,7 @@ These are the release notes for the 16 January 2025 release of the Universal Edi
 `@Adobe Express/universal-editor-cors` library.
   * The library is now delivered solely via [`universal-editor-service.adobe.io/cors.js`](http://universal-editor-service.adobe.io/cors.js).
   * A deprecation notification appears for users when opening a page that uses older versions of the CORS library, prompting them to update.
-* **Extension Point for Landing Page** - [A new extension point](/help/implementing/universal-editor/customizing.md#extending) has been introduced for extensions to appear in the side rail of the Universal Editor's landing page.
+* **Extension Point for Landing Page** - [A new extension point](/help/implementing/universal-editor/extending.md) has been introduced for extensions to appear in the side rail of the Universal Editor's landing page.
    * Now developers can specify whether extensions are applicable to the editor, the landing page, or both, offering greater customization and usability.
 
 ## Other Improvements {#other-improvements}
