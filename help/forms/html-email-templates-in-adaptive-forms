@@ -1,0 +1,32 @@
+---
+title: HTML Email Templates in Adaptive Forms on Forms as a Cloud Service
+description: Learn to generate a template for a Document of Record (DoR) for Adaptive Forms Core Components.
+feature: Adaptive Forms, Core Components
+exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
+role: User, Developer
+---
+# HTML Email Templates in Adaptive Forms 
+
+HTML email templates enable you to send rich, personalized, and visually appealing emails when a form is submitted. These emails can be customized with form data and enhanced using various email tags, such as images and links. Adaptive Forms allows you to either upload a file containing an HTML template or use a simple plain-text editor to create these templates.
+
+## Prerequisites
+
+* Ensure you have access to Forms as a Cloud Service.
+* Verify your environment has the latest Adaptive Forms Core Components.
+* Make sure you have permissions to configure Adaptive Forms and submit actions.
+
+## Configure HTML Email Templates
+
+1. Open your Adaptive Form in the AEM Forms Editor.
+1. Go to the Submit Actions section in the properties panel.
+1. Select Send Email from the list of submit actions.
+1. Configure the email template settings:
+    * Template Type: Select "HTML" to enable this feature.
+    * Email Content: Use the default HTML template, upload your own, or customize it to meet your needs using the plain-text editor.
+    * Dynamic Fields: Insert placeholders for dynamic data, like the user's name or form details.
+1. Add the required email details:
+    * To: Recipient email address(es).
+    * Subject: Email subject.
+    * From: Sender's email address.
+    * CC/BCC: Optional additional recipients.
+1. Save the configuration and test the email notification by submitting the form.

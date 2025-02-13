@@ -13,7 +13,7 @@ Learn how you can use config pipelines to deploy different configurations AEM as
 
 A Cloud Manager config pipeline deploys configurations files (created in YAML format) to a target environment. A number of features in AEM as a Cloud Service can be configured in this way, including log forwarding, purge-related maintenance tasks, and several CDN features.
 
-Config pipelines can be deployed via Cloud Manager to dev, stage, and production environment types in production (non-sandbox) programs. The configuration files can be deployed to Rapid Development Environments (RDEs) using [command line tooling](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline).
+Config pipelines can be deployed via Cloud Manager to dev, stage, and production environment types. The configuration files can be deployed to Rapid Development Environments (RDEs) using [command line tooling](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline).
 
 This following sections of this document give an overview of important information regarding how config pipelines can be used and how configurations for them should be structured. It describes general concepts shared across either all or a subset of the features supported by config pipelines.
 
@@ -44,7 +44,7 @@ The following table offers a comprehensive list of such configurations with link
 
 ## Creating and Managing Config Pipelines {#creating-and-managing}
 
-For information on how to create and configure pipelines, please see the document [CI/CD Pipelines.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)
+For information on how to create and configure pipelines, see [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
 
 When creating a config pipeline in Cloud Manager, be sure to select a **Targeted Deployment** rather than **Full Stack Code** when configuring the pipeline.
 
@@ -89,7 +89,7 @@ or
     cdn.yaml
 ```
 
-The folder names and filenames below `/config` are arbitrary. The YAML file, however, must include a valid [`kind` property value.](#configurations)
+The folder names and filenames below `/config` are arbitrary. The YAML file, however, must include a valid [`kind` property value](#configurations).
 
 Typically, configurations are deployed to all environments. If all the property values are identical for each environment, a single YAML file will suffice. However, it is common for property values to differ between environments, for example while testing a lower environment.
 

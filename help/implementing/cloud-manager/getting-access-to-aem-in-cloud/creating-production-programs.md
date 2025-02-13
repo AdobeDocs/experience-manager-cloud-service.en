@@ -27,17 +27,17 @@ Depending on your organization's entitlements, you may see [additional options](
 
 1. In the *Let's create your program* wizard, in the **Program name** text field, type the name you want for the program.
 
-1. Under **Program Objective**, select **`Set up for production`**.
+1. Under **Program Objective**, select ![Globe icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg)**Set up for production**.
 
    ![Creating program wizard](assets/create-production-program.png)
 
-1. (Optional) In the lower-right corner of the wizard dialog box, do any one of the following:
+1. (Optional) In the lower-right corner of the wizard dialog box, do either one of the following:
 
-   * Drag and drop an image file onto the **Add a program image** target.
-   * Click **Add a program image**, then select an image from a file browser.
-   * Click the trash can icon to delete an image that you added.
+   * Drag and drop an image file onto the ![Image icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **Add a program image** target.
+   * Click ![Image icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **Add a program image**, then select an image from a file browser.
+   * Click ![Delete icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) to remove an image that you added.
    
-1. Click **Continue**. 
+1. Click **Continue**.
 
 1. In the **Solutions &amp; Add-ons** list box, select one or more solutions to include in the program.
 
@@ -46,13 +46,13 @@ Depending on your organization's entitlements, you may see [additional options](
    * Select **Edge Deliver Services** for a fully managed CDN solution that optimizes digital experiences. See [About using Edge Delivery Services to deliver your Cloud Manager project](#edge-overview)
    * If you selected the **[Enable Enhanced Security](#security)** option, you can select only as many solutions for which HIPAA entitlements are available.
 
-   ![Select solutions](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
+      ![Select solutions](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
 
-1. Click the chevron to the left of a solution name to reveal any optional add-ons, such as the **Commerce** add-on option under **Sites**.
+   * Click ![Chevron Size 300 icon](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) to the left of a solution name to reveal any optional add-ons, such as the **Commerce** add-on option under **Sites**.
 
    ![Select add-ons](assets/setup-prod-commerce.png)
 
-1. With your solutions and add-ons selected, click **Continue**.
+1. When you are done selecting your solutions and add-ons, click **Continue**.
 
 1. On the **Go-Live Date** tab, enter the date that you plan to have your production program Go Live.
 
@@ -63,7 +63,7 @@ Depending on your organization's entitlements, you may see [additional options](
 
 1. Click **Create**. Cloud Manager creates your program and displays it on the landing page for selection.
 
-![Cloud manager overview](assets/navigate-cm.png)
+   ![Cloud manager overview](assets/navigate-cm.png)
 
 ## Additional production program options {#options}
 
@@ -113,7 +113,7 @@ Beyond the required entitlements, 99.99% SLA has additional requirements for use
 
 ## Access your program {#accessing}
 
-1. When you see your program card on the landing page, click https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg to view the menu options available to you.
+1. When you see your program card on the landing page, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) to view the menu options available to you.
 
    ![Program overview](assets/program-overview.png)
 

@@ -139,7 +139,7 @@ The rules that are used to resolve these segments are summarized as follows:
 
 ## Debugging ContextHub {#debugging-contexthub}
 
-There are several options for debugging ContextHub including generating logs. See [Configuring ContextHub for more information.](configuring-contexthub.md#logging-debug-messages-for-contexthub)
+There are several options for debugging ContextHub including generating logs. See [Configuring ContextHub for more information](configuring-contexthub.md#logging-debug-messages-for-contexthub).
 
 ## See an Overview of the ContextHub Framework {#see-an-overview-of-the-contexthub-framework}
 

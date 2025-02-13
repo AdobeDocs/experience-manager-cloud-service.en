@@ -12,7 +12,7 @@ Learn how the site theme is built, how to customize, and how to test using live 
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM Quick Site Creation journey, [Retrieve Git Repository Access Information,](retrieve-access.md) you learned how the front-end developer users Cloud Manager to access git repository information, and you should now:
+In the previous document of the AEM Quick Site Creation journey, [Retrieve Git Repository Access Information](retrieve-access.md), you learned how the front-end developer users Cloud Manager to access git repository information, and you should now:
 
 * Understand at a high level what Cloud Manager is.
 * Have retrieved your credentials to access the AEM git so you can commit your customizations.
@@ -105,7 +105,7 @@ You can continue customizing the theme based on the requirements provided to you
 Once your customizations are complete, you can commit them to the AEM git repository. First you must clone the repository to your local machine.
 
 1. From the command line, navigate to where you would like to clone the repo.
-1. Execute the command you [previously retrieved from Cloud Manager.](retrieve-access.md) It should be similar to `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`. Use the git user name and password that [you retrieved in the previous part of this journey.](retrieve-access.md)
+1. Execute the command you [previously retrieved from Cloud Manager](retrieve-access.md). It should be similar to `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`. Use the git user name and password that [you retrieved in the previous part of this journey](retrieve-access.md).
 
    ![Clone repo](assets/clone-repo.png)
 
@@ -132,11 +132,11 @@ Now that you have completed this part of the AEM Quick Site Creation journey you
 * See how to test your theme customizations using real AEM content via local proxy.
 * Know how to commit your changes to the AEM git repository.
 
-Build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Deploy Your Customized Theme,](deploy-theme.md) where you learn how to deploy the theme using the front-end pipeline.
+Build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Deploy Your Customized Theme](deploy-theme.md), where you learn how to deploy the theme using the front-end pipeline.
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the Quick Site Creation journey by reviewing the document [Deploy Your Customized Theme,](deploy-theme.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
+While it is recommended that you move on to the next part of the Quick Site Creation journey by reviewing the document [Deploy Your Customized Theme](deploy-theme.md), the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
 
 * [AEM Site Theme](https://github.com/adobe/aem-site-template-standard-theme-e2e) - This is the GitHub repository of the AEM Site Theme.
 * [npm](https://www.npmjs.com) - AEM themes used to quickly build sites are based on npm.
