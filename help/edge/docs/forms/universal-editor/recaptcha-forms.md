@@ -37,7 +37,7 @@ reCAPTCHA Enterprise is a premium, enterprise-grade fraud detection and preventi
 
 Before configuring Google reCAPTCHA Enterprise for Edge Delivery Services Forms, ensure you have completed the following steps:
 
-1. Create or select a [Google Cloud project](https://cloud.google.com/recaptcha/docs/prepare-environment#before-you-begin) and retrieve the [Project ID](ttps://support.google.com/googleapi/answer/7014113?hl=en#:~:text=To%20locate%20your%20project%20ID,a%20member%20of%20are%20displayed).
+1. Create or select a [Google Cloud project](https://cloud.google.com/recaptcha/docs/prepare-environment#before-you-begin) and retrieve the [Project ID](https://support.google.com/googleapi/answer/7014113?hl=en#:~:text=To%20locate%20your%20project%20ID,a%20member%20of%20are%20displayed).
 
 1. [Enable the reCAPTCHA Enterprise API](https://cloud.google.com/recaptcha/docs/prepare-environment#enable-api) for your Google Cloud project and [create an API key](https://console.cloud.google.com/apis/credentials).
 
