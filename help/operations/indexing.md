@@ -353,9 +353,40 @@ At times, it becomes necessary to undo a modification in an index definition. Th
 
 ### Removing an Index {#removing-an-index}
 
-The following only applies to custom indexes. Product indexes may not be removed as they are used by AEM.
+The following only applies to custom indexes, that is, to customizations of Out-of-the-box indexes and to fully custom indexes. Product/OOTB indexes may not be removed as they are used by AEM.
 
-A customized index may be removed in a later version of the customer application, by removing it from the customer repository. An index which is removed from the repository is not used for queries in AEM although it might still be present in the instances for a while. There is a clean-up mechanism in place that runs periodically which cleans up older versions of indexes from the instances.
+To ensure system integrity and stability, indexes should never be removed and should be considered as immutable once deployed. To achieve the effect of removing an index, you should follow a similar process as to undo a change, that is, create a new version of the custom index using a definition whose effect will be similar as if the index had been removed. 
+
+Below we describe the two possible cases: removing customizations of OOTB index and removing a fully custom index.
+
+#### Removing all customizations of an OOTB index 
+Follow the steps described in [Undoing a change](#undoing-a-change-undoing-a-change) using the definitions of the OOTB index as the new custom index. For example, if you have already deployed `damAssetLucene-8-custom-3`, but no longer need the customizations and want to switch back to the default `damAssetLucene-8` index, then you must add an index `damAssetLucene-8-custom-4` that contains the index definition of `damAssetLucene-8`.
+
+
+#### Removing a fully custom index
+Follow the steps described in [Undoing a change](#undoing-a-change-undoing-a-change) using an empty index as the new custom index. An empty index is never used and does not contain any data, so the effect will be the same as if the index did not exist. For this example, you can name it `/oak:index/acme.product-custom-3`. This name replaces the index `/oak:index/acme.product-custom-2`. After `/oak:index/acme.product-custom-2` is removed by the system, the empty index `/oak:index/acme.product-custom-3` can then be removed. An example of such an empty index is:
+
+```xml
+<acme.product-custom-3
+        jcr:primaryType="oak:QueryIndexDefinition"
+        async="async"
+        compatVersion="2"
+        includedPaths="/dummy"
+        queryPaths="/dummy"
+        type="lucene">
+        <indexRules jcr:primaryType="nt:unstructured">
+            <rep:root jcr:primaryType="nt:unstructured">
+                <properties jcr:primaryType="nt:unstructured">
+                    <dummy
+                        jcr:primaryType="nt:unstructured"
+                        name="dummy"
+                        propertyIndex="{Boolean}true"/>
+                </properties>
+            </rep:root>
+        </indexRules>
+</acme.product-custom-3>
+```
+
 
 ## Index and Query Optimizations {#index-query-optimizations}
 
