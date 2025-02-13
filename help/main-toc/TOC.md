@@ -754,7 +754,7 @@ user-guide-title: AEM as a Cloud Service
         + [Configure Submit Action for an Adaptive Form](/help/forms/configure-submit-actions-core-components.md)
         + [Submit an Adaptive Form to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
         + [Submit an Adaptive Form to Microsoft&reg; OneDrive](/help/forms/configure-submit-action-onedrive.md)
-        + Connect an Adaptive Form to Microsoft&reg; SharePoint
+        + Connect an Adaptive Form to Microsoft&reg; SharePoint{#connect-to-sharepoint}
           + [Connect an Adaptive Form to Microsoft&reg; SharePoint](/help/forms/configure-submit-action-sharepoint.md)
           + [Submit to SharePoint Document Library](/help/forms/connect-forms-to-sharepoint-document-library.md)
           + [Submit to SharePoint List](/help/forms/connect-forms-to-sharepoint-list.md)
