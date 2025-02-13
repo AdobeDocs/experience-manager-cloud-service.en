@@ -15,6 +15,8 @@ Learn how the Universal Editor publishes content and how your apps can handle th
 
 When you as a content author are ready to publish your content, you simply need to tap or click [the **Publish** icon in the Universal Editor's tool bar.](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
 
+You can also publish [from the Sites console,](/help/sites-cloud/authoring/sites-console/publishing-pages.md) which can be useful when you wish to publish multiple pages of content.
+
 >[!NOTE]
 >
 >The Universal Editor supports [extensions and UI extensibility](/help/implementing/universal-editor/extending.md) to allow workflows to support your publication process.
