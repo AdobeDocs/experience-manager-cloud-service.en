@@ -358,8 +358,8 @@ The following only applies to customizations of out-of-the-box (OOTB) indexes an
 To ensure system integrity and stability, index definitions should be treated as immutable once deployed. To achieve the effect of removing a custom index or customization, create a new version of the custom or customized index with a definition that effectively simulates the removal of the index.
 
 Once the new version of the customized index is deployed, the older versions of the index will no longer be used by queries and 
-therefore can be safely deleted from the customer repository. This is done by removing it from the source code and deploying a new 
-version of the application. This will not delete the index data from the instances, but will make it eligible for 
+therefore can be safely deleted from the customer repository. This is done by removing the definition from the source code and 
+redeploying the application. This will not delete the index data from the instances, but will make it eligible for 
 garbage collection by a clean-up mechanism that runs periodically. After a grace period designed to allow recovery in case of mistakes 
 (currently, 7 days counting from when the indexing was removed but subject to change), this clean-up mechanism will delete 
 all the data for indexes that were removed from the repository.
