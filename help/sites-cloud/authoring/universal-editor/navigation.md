@@ -207,7 +207,7 @@ For example, the ability to unpublish a page (i.e. reverse the action of the [**
 
 The Universal Editor offers a customizable and extensible authoring experience. If you see additional buttons in the toolbar, your Universal Editor has been extended.
 
-* For details on extension possibilities, please see the [Customizing and Extending the Universal Editor](/help/implementing/universal-editor/customizing.md).
+* For details on extension possibilities, please see the [Extending the Universal Editor](/help/implementing/universal-editor/extending.md).
 * For details on how an individual extension works, please see the [Extension Manager documentation](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
 
 ### The Editor {#editor}
