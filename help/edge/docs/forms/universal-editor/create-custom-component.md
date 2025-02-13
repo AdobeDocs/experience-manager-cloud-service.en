@@ -4,11 +4,10 @@ description: Create Custom Components for an EDS Form
 feature: Edge Delivery Services
 hide: yes
 hidefromtoc: yes
-exl-id: 77e90657-38db-4a49-9aac-3f3774b62624
 role: Admin, Architect, Developer
 ---
 
-# Create Custom Component in WYSIWYG based Authoring
+# Create Custom Component in WYSIWYG Authoring
 
 Edge Delivery Services Forms offer customization, allowing front-end developers to build tailored form components. These custom components integrate seamlessly into the WYSIWYG authoring experience, enabling form authors to easily add, configure, and manage them within the form editor. With custom components, authors can enhance functionality while ensuring a smooth and intuitive authoring process.
 
@@ -19,7 +18,7 @@ This document outlines the steps to create custom components by styling the nati
 Before you start creating your custom component, you should:
 
 * Have a basic knowledge of [native HTML components](/help/edge/docs/forms/form-components.md).
-* Know how to [style form fields based on field type using the CSS selectors]()
+* Know how to [style form fields based on field type using the CSS selectors](/help/edge/docs/forms/style-theme-forms.md)
 
 ## Create a custom component
 
@@ -50,7 +49,7 @@ Add new folder and files for your new custom component in your AEM Project.
         * `../blocks/form/components/range/range.css`: Defines the styling for the custom component.
         * `../blocks/form/components/range/range.js`: Customizes the custom component at runtime.
 
-            ![Adding the custom component for authoring](/help/edge/docs/forms/universal-editor/adding-custom-component.png)
+            ![Adding the custom component for authoring](/help/edge/docs/forms/universal-editor/assets/adding-custom-component.png) 
 
             >[!NOTE]
             >
@@ -58,7 +57,7 @@ Add new folder and files for your new custom component in your AEM Project.
 
 1. Navigate to the `/blocks/form/components/range/_range.json` file and add the component definition for the custom component.
    
-2. **Add the component definition**
+1. **Add the component definition**
     
     To add the definition the fields need to be added in the `_range.json` file are:
 
@@ -158,17 +157,17 @@ The custom component includes a component model that specifies which properties 
 
     You can also [add custom properties](#adding-custom-properties-for-your-custom-component) to a custom component to extend its functionality.
 
-    #### Adding custom properties for your custom component
+#### Adding custom properties for your custom component
 
-    Custom properties enable you to define specific behaviors based on values set in the Property dialog of a component. This helps extend the component's functionality and customization options.
+Custom properties enable you to define specific behaviors based on values set in the Property dialog of a component. This helps extend the component's functionality and customization options.
 
-    In this example, we add Step Value as a custom property to the Range component.
+In this example, we add Step Value as a custom property to the Range component.
 
-    ![Step value custom property](/help/edge/docs/forms/universal-editor/assets/customcomponent-stepvalue.png)
+![Step value custom property](/help/edge/docs/forms/universal-editor/assets/customcomponent-stepvalue.png)
 
-    To add the Step Value custom property, append the component model with the following lines of code in the` _<component>.json` file:
+To add the Step Value custom property, append the component model with the following lines of code in the` _<component>.json` file:
 
-    ```javascript
+```javascript
     {
     "component": "number",
     "name": "stepValue",
@@ -176,14 +175,14 @@ The custom component includes a component model that specifies which properties 
     "valueType": "number"
     }
     ```
-    The JSON snippet defines a custom property called **Step Value** for a **Range** component. Below is a breakdown of each field:
+The JSON snippet defines a custom property called **Step Value** for a **Range** component. Below is a breakdown of each field:
 
-      * **component**: Specifies the type of input field used in the Property dialog. In this case, `number` indicates that the field accepts numeric values.
-      * **name**: The identifier for the property, used to reference it in the component’s logic. Here, the `stepValue` represents the step value setting for the range.
-      * **label**: The display name of the property as seen in the Property dialog. 
-      * **valueType**: Defines the data type expected for the property. The `number` ensures that only numeric inputs are allowed.
+* **component**: Specifies the type of input field used in the Property dialog. In this case, `number` indicates that the field accepts numeric values.
+* **name**: The identifier for the property, used to reference it in the component’s logic. Here, the `stepValue` represents the step value setting for the range.
+* **label**: The display name of the property as seen in the Property dialog. 
+* **valueType**: Defines the data type expected for the property. The `number` ensures that only numeric inputs are allowed.
 
-    You can now use `stepValue` as a custom property in the JSON properties of `range.js` and implement dynamic behavior based on its value at runtime.
+You can now use `stepValue` as a custom property in the JSON properties of `range.js` and implement dynamic behavior based on its value at runtime.
 
 Hence, the final `_range.json` file, after adding the component definition, component model and custom properties, is as follows:
 

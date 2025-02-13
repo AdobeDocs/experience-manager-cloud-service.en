@@ -7,6 +7,7 @@ hide: yes
 hidefromtoc: yes
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
 ---
+
 # Getting Started with Edge Delivery Services for AEM Forms using Universal Editor (WYSIWYG) 
 
 In today's digital age, user-friendly forms are essential for all organizations. Edge Delivery Services Forms are created using the Universal Editor, which offers WYSIWYG (what-you-see-is-what-you-get) capabilities. It provides a modern, intuitive interface for efficient form authoring.
