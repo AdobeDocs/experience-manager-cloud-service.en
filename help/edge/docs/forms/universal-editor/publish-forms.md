@@ -40,7 +40,7 @@ You can publish any **EDS-based Adaptive Form** to Edge Delivery by following th
 
 To ensure secure form submission, you need to configure a **Referrer Filter** in AEM Publisher. This filter ensures that only authorized requests from Edge Delivery can perform write operations (POST, PUT, DELETE, COPY, MOVE), preventing unauthorized modifications. Following are the steps given to configure a Referrer Filter for AEM Publisher:
 
-1. **Update the AEM Instance URL in Edge Delivery**
+### Update the AEM Instance URL in Edge Delivery
 
 Modify the `submitBaseUrl` in the **constant.js** file within the form block to specify the AEM instance URL:
 
@@ -53,7 +53,7 @@ Modify the `submitBaseUrl` in the **constant.js** file within the form block to 
   export const submitBaseUrl = 'http://localhost:4503';
   ```
 
-2. **Modify the CORS Configuration**
+### Modify the CORS Configuration
 
   Adjust the **CORS settings** to allow form submission requests from Edge Delivery domains. Refer to the [CORS Configuration Guide](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors) for details.
 
@@ -70,7 +70,7 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 ```
 For local development, refer to the [documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter) to enable CORS from your **development UI host URL**.
 
-3. **Configure the Referrer Filter**
+### Configure the Referrer Filter
 
 Set up the **Referrer Filter** in AEM Cloud Service via Cloud Manager. [Know more](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) about configuring the referrer filter on an AEM Cloud Service instance using a cloud manager.
 
@@ -98,7 +98,7 @@ Set up the **Referrer Filter** in AEM Cloud Service via Cloud Manager. [Know mor
 
 This configuration specifies which HTTP methods are filtered, which referrers are allowed, and which user agents are excluded from the filter. By implementing these configurations, **form submissions via Edge Delivery** will be secured and restricted to authorized sources only.
 
-4. **Access Your Published Adaptive Form**
+### Access Your Published Adaptive Form
 
 Your Adaptive Form is now accessible via **Edge Delivery** using the following URL format:
 
