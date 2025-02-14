@@ -59,7 +59,7 @@ The next planned release is Thursday, March 13, 2025.
 * **Support for EC (Elliptic Curve) Private Keys (secp384r1)**
 
     Cloud Manager now supports `secp384r1` Elliptic Curve (EC) private keys, providing improved security and compliance for customer-managed OV/EV SSL certificates. 
-    For more details, see [Requirements for customer-managed OV/EV SSL certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md). <!-- CMGR-63636 -->
+    For more details, see [Requirements for customer-managed OV/EV SSL certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements). <!-- CMGR-63636 -->
 
 * **Specialized testing environments**
 
