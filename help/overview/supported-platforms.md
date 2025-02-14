@@ -9,7 +9,11 @@ role: Admin
 
 # Supported Client Platforms {#supported-platforms}
 
-Adobe Experience Manager as a Cloud Service and accessing sites published with AEM.
+Learn which browsers are supported for authoring content with Adobe Experience Manager as a Cloud Service and accessing sites published with AEM.
+
+>[!TIP]
+>
+>This document covers client platforms supported by AEM as a Cloud Service. For details on the build environment for developing your AEM project, please see the document [Build Environment.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
 
 ## Support Levels {#support-levels}
 
