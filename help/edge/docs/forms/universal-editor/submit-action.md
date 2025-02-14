@@ -38,12 +38,12 @@ To configure a REST endpoint:
 1. Specify the REST endpoint URL.
 1. You can also **Enable POST request** and provide a URL to post the request. 
 
-{width=50%,height=50%}![Enable post request for adaptive forms](/help/forms/assets/enable-post-request-ue.png)
+![Enable post request for adaptive forms](/help/forms/assets/enable-post-request-ue.png)
 
->[!NOTE]
->
-> * To post data to an internal server, provide the path of the resource. The data is posted to the path of the resource. For example, `/content/restEndPoint`. For such post requests, the authentication information of the submit request is used.
-> * To post data to an external server, provide a URL. The format of the URL is `https://host:port/path_to_rest_end_point`. Ensure that you configure the path to handle the POST request anonymously. 
+  >[!NOTE]
+  >
+  > * To post data to an internal server, provide the path of the resource. The data is posted to the path of the resource. For example, `/content/restEndPoint`. For such post requests, the authentication information of the submit request is used.
+  > * To post data to an external server, provide a URL. The format of the URL is `https://host:port/path_to_rest_end_point`. Ensure that you configure the path to handle the POST request anonymously. 
 
 ### Send Email {#email-submission-ue}
 
@@ -53,7 +53,7 @@ Send Email Submit Action allows you to send an email to one or more recipients u
 1. It helps in streamlining the workflow by directly integrating form submissions into email notifications.
 1. It helps organizations customize the email content, thus making it suitable for specific communication needs.
 
-{width=50%,height=50%}![Adaptive Form properties in Universal Editor](/help/forms/assets/submit-actions-ue.png)
+![Adaptive Form properties in Universal Editor](/help/forms/assets/submit-actions-ue.png)
 
 
 To configure a submit action as an Email for your form submission:
