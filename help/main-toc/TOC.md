@@ -592,6 +592,7 @@ user-guide-title: AEM as a Cloud Service
     + [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md)
     + [Smart Imaging with client-side Device Pixel Ratio](/help/assets/dynamic-media/client-side-dpr.md)
     + [Deliver Dynamic Media assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
+    + [Dynamic Media templates](/help/assets/dynamic-media/dynamic-media-templates.md)
     + [Activate hotlink protection in Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
     + [3D Support](/help/assets/dynamic-media/assets-3d.md)
     + [Dynamic Media limitations](/help/assets/dynamic-media/limitations.md)
