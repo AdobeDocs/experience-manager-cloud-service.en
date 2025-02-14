@@ -369,7 +369,7 @@ Below we describe the two possible cases: removing customizations of an OOTB ind
 
 #### Removing Customizations of an Out-Of-The-Box Index
 
-Follow the steps described in [Undoing a change](#undoing-a-change-undoing-a-change) using the definitions of the OOTB index as the new version. For example, if you have already deployed `damAssetLucene-8-custom-3`, but no longer need the customizations and want to switch back to the default `damAssetLucene-8` index, then you need to add an index `damAssetLucene-8-custom-4` that contains the index definition of `damAssetLucene-8`.
+Follow the steps described in [undoing a change](#undoing-a-change-undoing-a-change) using the definitions of the OOTB index as the new version. For example, if you have already deployed `damAssetLucene-8-custom-3`, but no longer need the customizations and want to switch back to the default `damAssetLucene-8` index, then you need to add an index `damAssetLucene-8-custom-4` that contains the index definition of `damAssetLucene-8`.
 
 #### Removing a Fully Custom Index
 
