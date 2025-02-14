@@ -357,20 +357,21 @@ The following only applies to customizations of out-of-the-box (OOTB) indexes an
 
 To ensure system integrity and stability, index definitions should be treated as immutable once deployed. To achieve the effect of removing a custom index or customization, create a new version of the custom or customized index with a definition that effectively simulates the removal of the index.
 
-Once the new version of the customized index is deployed, the older versions of the index will no longer be used by queries and 
-therefore can be safely deleted from the customer repository. This is done by removing the definition from the source code and 
-redeploying the application. This will not delete the index data from the instances, but will make it eligible for 
-garbage collection by a clean-up mechanism that runs periodically. After a grace period designed to allow recovery in case of mistakes 
-(currently, 7 days counting from when the indexing was removed but subject to change), this clean-up mechanism will delete 
-all the data for indexes that were removed from the repository.
+Once a new version of an index is deployed, the older version of the same index will no longer be used by queries. 
+The older version will not be immediately deleted from the environment,
+but will become eligible for garbage collection by a clean-up mechanism that runs periodically. 
+After a grace period designed to allow recovery in case of mistakes 
+(currently, 7 days counting from when the indexing was removed but subject to change), 
+this clean-up mechanism will delete the unused index data,
+and will either disable or remove the old version of the index from the environment.
 
 Below we describe the two possible cases: removing customizations of an OOTB index, and removing a fully custom index.
 
-#### Removing all customizations of an OOTB index
+#### Removing Customizations of an Out-Of-The-Box Index
 
 Follow the steps described in [Undoing a change](#undoing-a-change-undoing-a-change) using the definitions of the OOTB index as the new version. For example, if you have already deployed `damAssetLucene-8-custom-3`, but no longer need the customizations and want to switch back to the default `damAssetLucene-8` index, then you need to add an index `damAssetLucene-8-custom-4` that contains the index definition of `damAssetLucene-8`.
 
-#### Removing a fully custom index
+#### Removing a Fully Custom Index
 
 Follow the steps described in [Undoing a change](#undoing-a-change-undoing-a-change) using an empty index as the new version. An empty index is never used for queries and does not contain any data, so the effect is the same as if the index does not exist. For this example, you can name it `/oak:index/acme.product-custom-3`. This name replaces the index `/oak:index/acme.product-custom-2`. An example of such an empty index is:
 
