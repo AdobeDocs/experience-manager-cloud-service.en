@@ -5,8 +5,8 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: yes
 hidefromtoc: yes
+exl-id: beee9be7-8215-496b-9fb9-61fba000a055
 ---
-
 # Adaptive Form Submit Action
 
 A Submit Action specifies the destination for the data collected through an Adaptive Form. The submission process begins when the user clicks the **[!UICONTROL Submit]** button on the form. AEM Forms offers two types of submit actions described below, and lets you create and use custom submit actions to meet your specific needs. The out-of-the-box submit actions are:
@@ -134,5 +134,3 @@ On Submit option helps you to configure a Submit Action message on Adaptive Form
 1. On click, you see the following option:
     * **[!UICONTROL On Submit]**: On Submit helps you to customize a message to be shown when a form is submitted. By default, a custom message "Thank you for submitting the form" is displayed to the user when a form is successfully submitted. 
     You can also customize the Thank You message on form submission, by selecting the option to **[!UICONTROL Show message]**, and add/edit your message in the Rich Text **Editor**.
-
-
