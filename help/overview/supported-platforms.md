@@ -33,7 +33,7 @@ The Adobe Experience Manager user interface works with the following client plat
 
 All browsers are tested with the default set of plug-ins and add-ons.
 
-|Browser|Universal Editor Support Level|Page Editor Authoring Support Level|Sidekick Support Level|
+|Browser|Universal Editor Support Level|Page Editor Support Level|Sidekick Support Level|
 |---|---|---|---|
 |Google Chrome (evergreen)|A: Supported|A: Supported|A: Supported|
 |Microsoft Edge (evergreen)|A: Supported|A: Supported|Z: Unsupported|
