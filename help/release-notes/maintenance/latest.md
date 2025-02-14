@@ -10,19 +10,23 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release X {#X}
+## Release 19556 {#19556}
 
-Summarized below are the continuous improvements for maintenance release X, which was publicly released on February 18, 2025. The previous maintenance release was release 19352.
+Summarized below are the continuous improvements for maintenance release 19556, which was publicly released on February 18, 2025. The previous maintenance release was release 19352.
 
 The 2025.2.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
 ### Enhancements {#enhancements-X}
 
-None.
+* GRANITE-56650: Content distribution should only signal blocked queue after a few retries
+* SKYOPS-89616: Allow to Create up to 40 Technical Accounts in Adobe Developer Console
 
 ### Fixed Issues {#fixed-issues-X}
 
-None.
+* CNTBF-232: Deep package nt:file nodes to include mandatory jcr:content child
+* CQ-4358930: Performance Issue During Page Properties Load with many Multifields
+* GRANITE-55960: Performance Issue with Coral Select Field on AEM as Cloud Service
+* GRANITE-56197: New TreeActivation workflow step does not batch assets in large flat folder structure
 
 #### AEM Guides {#guides}
 
@@ -49,9 +53,9 @@ AEM as a Cloud Service is dedicated to optimizing your platform's security and p
 
 ### Embedded Technologies {#embedded-tech-X}
 
-|Technology|Version|Link|
-|---|---|---|
-|AEM Oak | 1.72.0|[Oak API 1.72.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.72.0/index.html)| 
-|AEM SLING API | 2.27.6 |[Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
-|AEM HTL| 1.4.24-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
-|AEM Core Components| 2.27.0|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
+|Technology| Version      | Link                                                                                                              |
+|---|--------------|-------------------------------------------------------------------------------------------------------------------|
+|AEM Oak | 1.76.0       | [Oak API 1.76.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.76.0/index.html)                  | 
+|AEM SLING API | 2.27.6       | [Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
+|AEM HTL| 1.4.26-1.4.0 | [HTML Template Language Specification](https://github.com/adobe/htl-spec)                                         |
+|AEM Core Components| 2.27.0       | [AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)                                       |
