@@ -1284,8 +1284,6 @@ user-guide-title: AEM as a Cloud Service
       + [Developer Overview](/help/implementing/universal-editor/developer-overview.md)
       + [Local AEM Development](/help/implementing/universal-editor/local-dev.md)
       + [Calls](/help/implementing/universal-editor/calls.md) 
-      + Universal Editor {#universal-editor-for-forms}
-        + [Set Submit Actions](/help/implementing/universal-editor/forms/submit-action-ue.md)
     + [Headless Experience Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
     + Hybrid and SPA Development {#hybrid}
       + [Hybrid and SPA with AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
