@@ -16,12 +16,12 @@ Summarized below are the continuous improvements for maintenance release 19556, 
 
 The 2025.2.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-X}
+### Enhancements {#enhancements-19556}
 
 * GRANITE-56650: Content distribution should only signal blocked queue after a few retries
 * SKYOPS-89616: Allow to Create up to 40 Technical Accounts in Adobe Developer Console
 
-### Fixed Issues {#fixed-issues-X}
+### Fixed Issues {#fixed-issues-19556}
 
 * CNTBF-232: Deep package nt:file nodes to include mandatory jcr:content child
 * CQ-4358930: Performance Issue During Page Properties Load with many Multifields
@@ -39,19 +39,19 @@ The 2025.2.0 feature activation will provide the full feature set for this maint
 
 For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
 
-### Known Issues {#known-issues-X}
+### Known Issues {#known-issues-19556}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-X}
+### Deprecated Features and APIs {#deprecated-19556}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-X}
+### Security Fixes {#security-19556}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses X identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 21 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-X}
+### Embedded Technologies {#embedded-tech-19556}
 
 |Technology| Version      | Link                                                                                                              |
 |---|--------------|-------------------------------------------------------------------------------------------------------------------|
