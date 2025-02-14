@@ -353,7 +353,7 @@ At times, it becomes necessary to undo a modification in an index definition. Th
 
 ### Removing an Index {#removing-an-index}
 
-The following only applies to customizations of out-of-the-box (OOTB) indexes and fully custom indexes. Note that the original OOTB indexes can not be removed, as they are used by AEM.
+The following only applies to customizations of out-of-the-box (OOTB) indexes and to fully custom indexes. Note that the original OOTB indexes can not be removed, as they are used by AEM.
 
 To ensure system integrity and stability, index definitions should be treated as immutable once deployed. To achieve the effect of removing a custom index or customization, create a new version of the custom or customized index with a definition that effectively simulates the removal of the index.
 
@@ -373,7 +373,7 @@ Follow the steps described in [Undoing a change](#undoing-a-change-undoing-a-cha
 
 #### Removing a Fully Custom Index
 
-Follow the steps described in [undoing a change](#undoing-a-change-undoing-a-change) using a dummy index as the new version. A dummy index is never used for queries and does not contain any data, so the effect is the same as if the index does not exist. For this example, you can name it `/oak:index/acme.product-custom-3`. This name replaces the index `/oak:index/acme.product-custom-2`. An example of such a dummy index is:
+Follow the steps described in [undoing a change](#undoing-a-change-undoing-a-change) using a dummy index as the new version. A dummy index is never used for queries and does not contain any data, so the effect is the same as if the index did not exist. For this example, you can name it `/oak:index/acme.product-custom-3`. This name replaces the index `/oak:index/acme.product-custom-2`. An example of such a dummy index is:
 
 ```xml
 <acme.product-custom-3
