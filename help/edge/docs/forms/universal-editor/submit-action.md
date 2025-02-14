@@ -3,6 +3,8 @@ title: Submit Actions
 description: Configure Submit Actions for Adaptive Form.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
+hide: yes
+hidefromtoc: yes
 ---
 
 # Adaptive Form Submit Action

@@ -1023,9 +1023,9 @@ user-guide-title: AEM as a Cloud Service
       + [Add rules to using Rule Editor](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
       + [Create Custom Components](/help/edge/docs/forms/universal-editor/create-custom-component)
       + [Use reCAPTCHA in forms](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-      + [Submit Actions](/help/edge/docs/forms/universal-editor/submit-action-ue.md)
-      + [Publish Forms](/help/edge/docs/forms/universal-editor/publish-forms-ue.md)
-      + [Customize styling of forms](/help/edge/docs/forms/universal-editor/style-theme-forms-ue.md)
+      + [Submit Actions](/help/edge/docs/forms/universal-editor/submit-action.md)
+      + [Publish Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
+      + [Customize styling of forms](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
     + Capabilities {#advanced-features-edge-delivery-services-forms}
       + [Use Form fragments](/help/edge/docs/forms/form-fragments.md)
       + [Add repeatable sections to a form​](/help/edge/docs/forms/repeatable-forms.md)

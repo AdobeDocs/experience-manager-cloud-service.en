@@ -3,6 +3,8 @@ title: Customize theme and style for an Edge Delivery Services for AEM Forms
 description: Effectively customize the theme and style for AEM Forms delivered via Edge Delivery Services, ensuring a cohesive and branded user experience.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
+hide: yes
+hidefromtoc: yes
 ---
 # Customize the look of your forms
 
@@ -37,24 +39,33 @@ Understanding [fundamental CSS concepts](https://www.w3schools.com/css/css_intro
 * [Box Model](https://www.w3schools.com/css/css_boxmodel.asp): The CSS box model describes the structure of HTML elements as a content area surrounded by padding, borders, and margins.
 * Flexbox/Grid: CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) and [Grid layouts](https://www.w3schools.com/css/css_grid.asp) are powerful tools for creating responsive and flexible designs.
 
+<!--
 ## Styling a form for Adaptive Forms Block
 
 The Adaptive Forms Block offers a standardized HTML structure, simplifying the process of selecting and styling form components:
 
-* **Update default styles**: You can modify the default styles of a form by editing the `/blocks/form/form.css file`. This file provides comprehensive styling for a form, supporting multi-step wizard forms. It emphasizes using custom CSS variables for easy customization, maintenance, and uniform styling across forms. <!--For instructions on adding the Adaptive Forms Block to your project, refer to [create a form](/help/edge/docs/forms/create-forms.md).-->
-
-* **Customization**: Use the default `forms.css` as a base and customize it to modify the look and feel of your form components, making it visually appealing and user-friendly. The file's structure encourages organization and maintains styles for forms, promoting consistent designs across your website.
+* **Update default styles**: You can modify the default styles of a form by editing the `/blocks/form/form.css file`. This file provides comprehensive styling for a form, supporting multi-step wizard forms. It emphasizes using custom CSS variables for easy customization, maintenance, and uniform styling across forms. <!--For instructions on adding the Adaptive Forms Block to your project, refer to [create a form](/help/edge/docs/forms/create-forms.md).
 
 * **CSS Styling for Forms**: To ensure that your styles are applied correctly, wrap your form-specific CSS within the `main .form form` selector. This ensures that your styles target only the form elements within the main content area, avoiding conflicts with other parts of the website.
 
-Example:
+  Example:
+  ```css
+  main .form form input {
+    /* Add styles specific to input fields inside the form */
+  }
 
-```css
-main .form form {
-  /* Add your form-specific styles here */
-}
-```
+  main .form form button {
+    /* Add styles specific to buttons inside the form */
+  }
 
+  main .form form label {
+    /* Add styles specific to labels inside the form */
+  }
+  ```
+
+<!--**Customization**: Use the default `forms.css` as a base and customize it to modify the look and feel of your form components, making it visually appealing and user-friendly. The file's structure encourages organization and maintains styles for forms, promoting consistent designs across your website.-->
+
+<!--
 ## Breakdown of forms.css's structure
 
 * **Global variables:** Defined at the `:root` level, these variables (`--variable-name`) store values used throughout the style sheet for consistency and ease of updates. These variables define colors, font sizes, padding, and other properties. You can declare your own Global variables or modify existing ones to change the form's style.
@@ -68,6 +79,8 @@ main .form form {
 * **Media queries:** These provide styles for different screen sizes, adjusting layout and styling accordingly.
 
 * **Miscellaneous styling:**: This section covers styles for success or error messages, file upload areas, and other elements you might encounter in a form.
+
+-->
 
 ## Components Structure
 
@@ -166,6 +179,29 @@ main .form form .field-first-name input {
 
 ```
 
+**Styling a form for Adaptive Forms Block**
+
+The Adaptive Forms Block offers a standardized HTML structure, simplifying the process of selecting and styling form components:
+
+* **Update default styles**: You can modify the default styles of a form by editing the `/blocks/form/form.css file`. This file provides comprehensive styling for a form, supporting multi-step wizard forms. It emphasizes using custom CSS variables for easy customization, maintenance, and uniform styling across forms. <!--For instructions on adding the Adaptive Forms Block to your project, refer to [create a form](/help/edge/docs/forms/create-forms.md).
+
+* **CSS Styling for Forms**: To ensure that your styles are applied correctly, wrap your form-specific CSS within the `main .form form` selector. This ensures that your styles target only the form elements within the main content area, avoiding conflicts with other parts of the website.
+
+  Example:
+  ```css
+  main .form form input {
+    /* Add styles specific to input fields inside the form */
+  }
+
+  main .form form button {
+    /* Add styles specific to buttons inside the form */
+  }
+
+  main .form form label {
+    /* Add styles specific to labels inside the form */
+  }
+  ```
+
 +++
 
 ### Dropdown Component
@@ -176,9 +212,9 @@ For dropdown menus, the `select` element is used instead of an `input` element:
 
 ```HTML
 
-<div class="{Type}-wrapper field-{Name} field-wrapper" data-required={required}>
+<div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
    <label for="{FieldId}" class="field-label">First Name</label>
-   <select id="{FieldId}" name="{Name}"><option></option><option></option></select>
+   <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
    <div class="field-description" aria-live="polite" id="{FieldId}-description">
     Hint - First name should be minimum 3 characters and a maximum of 10 characters.
    </div>
@@ -224,34 +260,6 @@ main .form form .drop-down-wrapper {
 main .form form .drop-down-wrapper .field-label {
   margin-bottom: 5px;
   font-weight: bold;
-}
-
-/* Style the dropdown itself */
-main .form form .drop-down-wrapper select {
-  border: 1px solid #ccc;
-  padding: 8px;
-  border-radius: 4px;
-  background-color: white; /* Ensure a consistent background */
-  /* Adjust arrow appearance as needed */
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-/* Optional: Style the dropdown arrow */
-main .form form .drop-down-wrapper select::-ms-expand {
-  display: none; /* Hide the default arrow for IE11 */
-}
-
-main .form form .drop-down-wrapper select::after {
-  content: "\25BC";
-  font-size: 12px;
-  color: #ccc;
-  /* Adjust positioning as needed */
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 ```
@@ -822,20 +830,6 @@ main .form form .file-wrapper .files-list .file-description {
 main .form form .file-wrapper .files-list .file-description .file-description-name {
   /* Add your styles here (e.g., font-weight) */
   font-weight: bold;
-}
-
-/* Target the file size within the description */
-main .form form .file-wrapper .files-list .file-description .file-description-size {
-  /* Add your styles here (e.g., font-size) */
-  font-size: 0.8em;
-}
-
-/* Target the remove button within the description */
-main .form form .file-wrapper .files-list .file-description .file-description-remove {
-  /* Add your styles here (e.g., background color, hover effect) */
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
 }
 
 
