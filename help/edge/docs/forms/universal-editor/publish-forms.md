@@ -33,7 +33,7 @@ You can publish any **EDS-based Adaptive Form** to Edge Delivery by following th
 1. To check the form’s publish status, click **Publish** again.
    ![Publish Status](/help/forms/assets/publish-status.png)
 
-1. To **unpublish** a form, open your form in the editor, click the three-dot menu in the upper-right corner and select **Unpublish**.
+1. To **unpublish** a form, open your form in the editor, click the three-dot menu in the upper-right corner and click **Unpublish**.
 ![Unpublish](/help/forms/assets/unpublish--form.png)
 
 ## Enable Form Submission on Edge Delivery by Configuring a Referrer Filter for AEM Publisher
