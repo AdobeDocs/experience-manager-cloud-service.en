@@ -3,6 +3,8 @@ title: Publish AEM Forms for Edge Delivery Services.
 description: Publish your Edge Delivery Services forms quickly and seamlessly. 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
+hide: yes
+hidefromtoc: yes
 ---
 # Publish your Adaptive Form to Edge Delivery Services
 
@@ -10,36 +12,39 @@ When your form is finalized and ready for use, you can publish it to make it acc
 
 ## Prerequisites
 
-* Ensure that Edge Delivery is configured for your Form AEM.
-* A form created using the **Edge Delivery Services (EDS) template**. [Learn more] about creating an EDS-based form.
+* A form created using the **Edge Delivery Services (EDS) template**. [Learn more](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) about creating an EDS-based form.
 
 ## Publish Your Form
 
 You can publish any **EDS-based Adaptive Form** to Edge Delivery by following these steps:
 
-1. Select the **Adaptive Form** that you want to publish and click the **Edit** (![edit icon](/help/forms/assets/edit.svg)) icon.
-   ![Select EDS-Based Form](/help/forms/assets/select-eds-based-form.png)
+  <!--1. Select the **Adaptive Form** that you want to publish and click the **Edit** ![edit icon](/help/forms/assets/edit.svg) icon.
+   ![Select EDS-Based Form](/help/forms/assets/select-eds-based-form.png)-->
 
-2. In the editor, select the **Adaptive Form Block** and click **Publish**.
-   ![Click Publish](/help/forms/assets/click-publish.png)
+1. Open your adaptive form in the editor and click the **Publish** icon on the upper rail.
+   ![Click Publish](/help/forms/assets/publish-icon-eds-form.png)
 
-3. On the **Publish** screen, you can see that your form is configured with the `edge-delivery-service-configuration` along with the selected template. In this example, a **Wknd_Form** template is used. Click **Publish**, and a confirmation pop-up appears indicating that your form is published.
+1. When you click **Publish**, a screen or pop-up appears that shows the publishing assets, including the form's title. In this example, the **Wknd_Form** template is used.
+    ![On Click Publish](/help/forms/assets/on-click-publish.png)
+
+1. Click **Publish** again, and a confirmation pop-up appears, indicating that your form is now published.
    ![Publish Success](/help/forms/assets/publish-success.png)
 
-4. To check the form’s publish status, click **Publish** again.
+1. To check the form’s publish status, click **Publish** again.
    ![Publish Status](/help/forms/assets/publish-status.png)
 
-5. To **unpublish** a form, click the three-dot menu in the upper-right corner and select **Unpublish**.
+1. To **unpublish** a form, open your form in the editor, click the three-dot menu in the upper-right corner and select **Unpublish**.
+![Unpublish](/help/forms/assets/unpublish--form.png)
 
 ## Enable Form Submission on Edge Delivery by Configuring a Referrer Filter for AEM Publisher
 
 To ensure secure form submission, you need to configure a **Referrer Filter** in AEM Publisher. This filter ensures that only authorized requests from Edge Delivery can perform write operations (POST, PUT, DELETE, COPY, MOVE), preventing unauthorized modifications. Following are the steps given to configure a Referrer Filter for AEM Publisher:
 
-### 1. Update the AEM Instance URL in Edge Delivery
+1. **Update the AEM Instance URL in Edge Delivery**
 
 Modify the `submitBaseUrl` in the **constant.js** file within the form block to specify the AEM instance URL:
 
-**For Cloud Setup:**
+  **For Cloud Setup:**
   ```js
   export const submitBaseUrl = 'https://publish-p120-e12.adobeaemcloud.com';
   ```
@@ -48,11 +53,11 @@ Modify the `submitBaseUrl` in the **constant.js** file within the form block to 
   export const submitBaseUrl = 'http://localhost:4503';
   ```
 
-### 2. Modify the CORS Configuration
+2. **Modify the CORS Configuration**
 
-Adjust the **CORS settings** to allow form submission requests from Edge Delivery domains. Refer to the [CORS Configuration Guide](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors) for details.
+  Adjust the **CORS settings** to allow form submission requests from Edge Delivery domains. Refer to the [CORS Configuration Guide](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors) for details.
 
-**Sample CORS Configuration:**
+ **Sample CORS Configuration:**
 ```apache
 # Developer Localhost
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http://localhost(:\d+)?$)#" CORSTrusted=true
@@ -65,7 +70,7 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 ```
 For local development, refer to the [documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter) to enable CORS from your **development UI host URL**.
 
-### 3. Configure the Referrer Filter
+3. **Configure the Referrer Filter**
 
 Set up the **Referrer Filter** in AEM Cloud Service via Cloud Manager. [Know more](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) about configuring the referrer filter on an AEM Cloud Service instance using a cloud manager.
 
@@ -93,7 +98,7 @@ Set up the **Referrer Filter** in AEM Cloud Service via Cloud Manager. [Know mor
 
 This configuration specifies which HTTP methods are filtered, which referrers are allowed, and which user agents are excluded from the filter. By implementing these configurations, **form submissions via Edge Delivery** will be secured and restricted to authorized sources only.
 
-### Access Your Published Adaptive Form
+4. **Access Your Published Adaptive Form**
 
 Your Adaptive Form is now accessible via **Edge Delivery** using the following URL format:
 
@@ -105,8 +110,6 @@ For example, the URL for the **Wknd-Form** is:
 ```
 https://main--universaleditor--wkndforms.aem.live/content/forms/af/wknd-form
 ```
-
----
 
 
 
