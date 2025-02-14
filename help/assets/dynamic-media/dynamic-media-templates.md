@@ -86,7 +86,7 @@ To [create a folder](/help/assets/add-delete-assets-view.md) under **[!UICONTROL
 * ![template to create banners rapidly](/help/assets/assets/redo.svg): Click to redo the last action or press **Ctrl** + **Y** (Windows) or **Cmd** + **Y** (Mac).
 * ![template to create flyers rapidly](/help/assets/assets/zoom-in.svg): Click to zoom in the canvas or press **Ctrl** + **+** (Windows) or Cmd + **+** (Mac).
 * ![template to create banners rapidly](/help/assets/assets/Zoom-out.svg): Click to zoom out the canvas or press **Ctrl** + **-** (Windows) or **Cmd** + **-** (Mac).
-* Press **Backspace** or **delete** to delete the selected layer if no text or property is being edited.
+* Press **Backspace** or **delete** to delete the selected layer if no text or property is being edited..
 
 Click ![template to create flyers rapidly](/help/assets/assets/show-layers-list.svg) **>** more options (![](/help/assets/assets/three-dots.svg)) on the Canvas layer to edit the canvas dimensions anytime while creating the template.
 ![](/help/assets/assets/edit-canvas1.png)
