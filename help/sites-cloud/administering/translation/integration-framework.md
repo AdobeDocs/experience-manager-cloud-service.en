@@ -10,15 +10,15 @@ solution: Experience Manager Sites
 
 The Translation Integration Framework integrates with third-party translation services to orchestrate the translation of AEM content. It involves three basic steps.
 
-1. [Connect to your translation service provider.](#connecting-to-a-translation-service-provider)
-1. [Create a Translation Integration Framework configuration.](#creating-a-translation-integration-configuration)
-1. [Associate the cloud configurations with your pages.](#configuring-pages-for-translation)
+1. [Connect to your translation service provider](#connecting-to-a-translation-service-provider).
+1. [Create a Translation Integration Framework configuration](#creating-a-translation-integration-configuration).
+1. [Associate the cloud configurations with your pages](#configuring-pages-for-translation).
 
 For an overview of the content translation features in AEM, see [Translating Content for Multilingual Sites](overview.md).
 
 >[!TIP]
 >
->If you are new to translating content, see [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM's powerful translation tools, ideal for those with no AEM or translation experience.
+>If you are new to translating content, see [Sites Translation Journey](/help/journey-sites/translation/overview.md), which is guided path through translating your AEM Sites content using AEM's powerful translation tools, ideal for those with no AEM or translation experience.
 
 ## Connecting to a Translation Service Provider {#connecting-to-a-translation-service-provider}
 
@@ -52,7 +52,7 @@ After you configure a translation integration framework, you can [associate it w
 
 A single configuration of the framework controls how page content and assets are translated. To create a translation configuration:
 
-1. In the [global navigation menu,](/help/sites-cloud/authoring/basic-handling.md#global-navigation) select **Tools &gt; Cloud Services &amp; Translation Cloud Services**.
+1. In the [global navigation menu](/help/sites-cloud/authoring/basic-handling.md#global-navigation), select **Tools &gt; Cloud Services &amp; Translation Cloud Services**.
 1. Navigate to where you want to create the configuration in your content structure. This is often based on a particular site or can be global.
 1. Provide the following information in the fields and then select **Create**.:
    1. Select **Configuration Type** in the drop-down.

@@ -15,8 +15,8 @@ When editing content for the Universal Editor, you of course can select assets f
 
 To ensure this seamless behavior, AEM and Edge Delivery Services must have proper access to the DAM in order to publish. This includes:
 
-* [Ensuring that assets folders are accessible.](#accessible)
-* [Ensuring that the assets folder is assigned the proper configuration (as required).](#configuration)
+* [Ensuring that assets folders are accessible](#accessible).
+* [Ensuring that the assets folder is assigned the proper configuration (as required)](#configuration).
 
 ## Ensuring Assets Folders are Accessible {#accessible}
 
