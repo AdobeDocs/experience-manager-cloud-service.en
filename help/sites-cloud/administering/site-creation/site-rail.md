@@ -28,7 +28,7 @@ The Site panel is used to manage theme and template related information for your
 
 ## Downloading Theme Sources {#downloading-theme-sources}
 
-When you create a site in AEM based on a [site template,](site-templates.md) you can download your [site theme](site-themes.md) using the Site panel.
+When you create a site in AEM based on a [site template](site-templates.md), you can download your [site theme](site-themes.md) using the Site panel.
 
 With the Site panel showing in the sites console, select the root of your site to reveal theme information about the site.
 
@@ -38,7 +38,7 @@ Select **Download Theme Sources** to download a local copy of the site theme as 
 
 ## Downloading Template Resources {#downloading-template-resources}
 
-[Site templates](site-templates.md) can contain information in addition to your site content structure and [site theme.](site-themes.md) Site templates can contain wireframe designs or other site-related files for example.
+[Site templates](site-templates.md) can contain information in addition to your site content structure and [site theme](site-themes.md). Site templates can contain wireframe designs or other site-related files for example.
 
 If your site is based on a site template, with the Site panel showing in the sites console, select the root of your site to reveal theme information about the site, including additional site resources.
 
@@ -78,4 +78,4 @@ With the Site panel showing in the sites console, select the root of your site t
 
 ![Enabling front-end pipeline](/help/sites-cloud/administering/assets/enable-fep.png)
 
-For more information, see the document [Enabling the Front-End Pipeline.](enable-front-end-pipeline.md)
+For more information, see the document [Enabling the Front-End Pipeline](enable-front-end-pipeline.md).

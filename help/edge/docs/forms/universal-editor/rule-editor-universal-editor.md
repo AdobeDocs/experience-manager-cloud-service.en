@@ -7,7 +7,8 @@ hide: yes
 hidefromtoc: yes
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 ---
-# Introduction to Rule Editor in Universal Editor 
+
+# Introduction to Rule Editor in WYSIWYG Authoring
 
 You can add dynamic form behaviour using the Rule Editor, which allows you to create rules. These rules enable conditional field visibility, automate calculations based on user input, and improve the overall user experience. By streamlining the form-filling process, the Rule Editor helps ensure both accuracy and efficiency.
 
@@ -35,21 +36,23 @@ For detailed step-by-step instructions, see the [add a conditional rule](#2-add-
 
 ## How to enable Rule Editor extension?
 
-In Universal Editor, the Rule Editor is not enabled by default. To enable the Rule Editor extension for your environment, send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) with your request.
+In Universal Editor, the Rule Editor extension is not enabled by default. To enable the Rule Editor extension write to us at [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official email id.
 
 After the Rule Editor extension is enabled for your environment, the ![edit-rules](/help/forms/assets/edit-rules-icon.svg) icon appears in the upper-right corner of the editor.
 
 ![Universal Editor rule editor](/help/edge/docs/forms/assets/universal-editor-rule-editor.png)
 
-Select the form object for which you want to write a rule, and click the ![edit-rules](/help/forms/assets/edit-rules-icon.svg) icon. The Rule Editor user interface appears.
+Select the form component for which you want to write a rule, and click the ![edit-rules](/help/forms/assets/edit-rules-icon.svg) icon. The Rule Editor user interface appears.
 
 ![Rule Editor user interface](/help/edge/docs/forms/assets/rule-editor-for-field.png)
+
+In this article, `form object` and `form component` are used interchangeably.
 
 Now, you can start writing rules or business logic for the selected form field by using the [available rule types in the Rule Editor](#available-rule-types-in-rule-editor).
 
 ## Understanding Rule Editor User Interface
 
-The visual editor of the Rule Editor opens when you click click the ![edit-rules](/help/forms/assets/edit-rules-icon.svg) icon:
+The editor of the Rule Editor opens when you click the ![edit-rules](/help/forms/assets/edit-rules-icon.svg) icon:
 
 ![Rule Editor user Interface](/help/edge/docs/forms/assets/rule-editor-interface.png)
 
@@ -62,20 +65,20 @@ The visual editor of the Rule Editor opens when you click click the ![edit-rules
   </thead>
   <tbody>
     <tr>
-      <td>1. Component-rule display</td>
-      <td>Displays the title of the form object through which you launched the Rule Editor and the rule type currently selected.</td>
+      <td>1. Title</td>
+      <td>Displays the title of the form component and the selected rule type. For example, 'Enter Gross Salary' is a text box component for which the 'When' rule type is selected. </td>
     </tr>
     <tr>
       <td>2. Form objects and functions</td>
-      <td>The <b>Forms Objects</b> tab shows a hierarchical view of all objects contained in the form. The <b>Functions</b> tab includes a set of built-in functions.</td>
+      <td>The <b>Forms Objects</b> tab shows a hierarchical view of all components contained in the form. The <b>Functions</b> tab includes a set of built-in functions in the rule editor.</td>
     </tr>
     <tr>
       <td>3. Form objects and functions toggle</td>
-      <td>The toggle button, when tapped, toggles the form objects and functions pane.</td>
+      <td>The toggle button alternately shows or hides the form objects and functions pane. </td>
     </tr>
     <tr>
       <td>4. Visual Rule Editor</td>
-      <td>The visual Rule Editor is the area in the visual editor mode of the Rule Editor user interface where you write rules.</td>
+      <td>The visual Rule Editor is the interface where you can create rules for the form components.</td>
     </tr>
     <tr>
       <td>5. Done and cancel buttons</td>
@@ -84,7 +87,7 @@ The visual editor of the Rule Editor opens when you click click the ![edit-rules
   </tbody>
 </table>
 
-Any existing rules on a form object are listed when you select the object. You can view the title and a preview the rule summary on the visual Rule Editor. Furthermore, you can change the order of rules, edit rules, enable/disbale rules or delete rules.
+Any existing rules on a form component are listed when you select the component. You can view the title and a preview the rule summary on the Rule Editor. Furthermore, you can change the order of rules, edit rules, enable/disbale rules or delete rules.
 
 ![show the available rules of form object](/help/edge/docs/forms/assets/rule-editor15.png)
 
@@ -102,51 +105,55 @@ The Rule Editor provides a set of predefined rule types that you can use to writ
   <tbody>
     <tr>
       <td>Set Value of</td>
-      <td>Sets the value of a form object depending on whether the specified condition is satisfied.</td>
+      <td>Sets the value of a form component depending on whether the specified condition is satisfied or not.</td>
     </tr>
     <tr>
       <td>Clear Value Of</td>
-      <td>Clears the value of the specified object.</td>
+      <td>Clears the value of the specified form component.</td>
     </tr>
     <tr>
       <td>Hide/Show</td>
-      <td>Hides or shows a form object based on whether a condition is satisfied or not.</td>
+      <td>Hides or shows a form component based on whether a condition is satisfied or not.</td>
     </tr>
     <tr>
       <td>Enable/Disable</td>
-      <td>Enables or disables a form object based on whether a condition is satisfied or not.</td>
+      <td>Enables or disables a form component based on whether a condition is satisfied or not.</td>
     </tr>
     <tr>
       <td>Validate</td>
-      <td>Validates the form or a specified object.</td>
+      <td>Checks the form component based on a condition and displays an error if the condition is not met. </td>
     </tr>
     <tr>
       <td>When</td>
-      <td>Follows the <i>condition-action-alternate</i> action rule construct or <i>condition-action</i> rule construct. It specifies a condition for evaluation followed by an action to trigger if the condition is satisfied.</td>
+      <td>It specifies a condition for evaluation followed by an action to trigger if the condition is satisfied. It follows the <i>condition-action-alternate</i> action rule construct or <i>condition-action</i> rule construct. </td>
     </tr>
     <tr>
       <td>Format</td>
-      <td>Formats a form object based on a function or regular expression.</td>
+      <td> Modifies the display value of the form component using the given expression when its value changes.</td>
     </tr>
     <tr>
       <td>Invoke Service</td>
-      <td>Invokes a service configured in a form data model (FDM).</td>
+      <td>Invokes a service configured using external APIs, Form Data Model or RESTful web services.</td>
     </tr>
     <tr>
       <td>Set Property</td>
-      <td>Sets the value of a property of the specified object based on a condition.</td>
+      <td>Sets the value of a property of the specified form component based on a condition.</td>
     </tr>
     <tr>
       <td>Set Focus</td>
-      <td>Sets focus on the specified object.</td>
+      <td>Sets focus on the specified form component.</td>
     </tr>
     <tr>
       <td>Save Form</td>
-      <td>Saves the form.</td>
+      <td>It allows user to save the form as a draft using the Drafts & Submissions Forms Portal component. </td>
     </tr>
     <tr>
-      <td>Submit/Reset Form</td>
-      <td>Submits or resets the form.</td>
+      <td>Submit Form</td>
+      <td>Submits the form.</td>
+    </tr>
+    <tr>
+      <td>Reset Form</td>
+      <td>Resets the form.</td>
     </tr>
     <tr>
       <td>Add/Remove Instance</td>
@@ -202,10 +209,10 @@ To write rules, perform the following steps:
    1. Open a form in Universal Editor for editing.
    1. Add the following form components:
       * Tax Calculation Form (Title)
-      * Gross Salary (Text Input)
-      * Additional Deduction (Text Input)
-      * Taxable Income (Text Input)
-      * Tax Payable (Text Input)
+      * Gross Salary (Number Input)
+      * Additional Deduction (Number Input)
+      * Taxable Income (Number Input)
+      * Tax Payable (Number Input)
       * Submit (Submit Button)
    1. Hide the `Additional Deduction` form field, by opening its `Properties`.
    
@@ -215,11 +222,10 @@ To write rules, perform the following steps:
 
   Once you have authored the form, write the first rule to show the `Additional Deduction` field only if the gross salary exceeds $50,000. To add a conditional rule:
 
-  1. Open a form in Universal Editor for editing.
-  1. Select the **[!UICONTROL Gross Salary]** component in the content tree and select ![edit-rules](/help/forms/assets/edit-rules-icon.svg). 
-  ![Rule Editor example1](/help/edge/docs/forms/assets/rule-editor3.png)
+  1. Open a form in Universal Editor for editing and select the **[!UICONTROL Gross Salary]** field in the content tree and select ![edit-rules](/help/forms/assets/edit-rules-icon.svg). Alternatively, you can select **[!UICONTROL Gross Salary]** field directly from the **[!UICONTROL Forms Object]** pane.
+    ![Rule Editor example1](/help/edge/docs/forms/assets/rule-editor3.png)
   The visual Rule Editor interface appears.
-  1. Click **[!UICONTROL Create]** to launch the Rule Editor.
+  1. Click **[!UICONTROL Create]** to create rules.
    ![Rule Editor example2](/help/edge/docs/forms/assets/rule-editor4.png)
   By default, the `Set Value Of` rule type is selected. While you cannot change or modify the selected object, you can use the rule drop-down to select another rule type.  
   ![Rule Editor example3](/help/edge/docs/forms/assets/rule-editor5.png)
@@ -252,8 +258,9 @@ To write rules, perform the following steps:
 
   Next, write a rule to compute the `Taxable Income`, which is the difference between `Gross Salary` and `Additional Deduction` (if applicable). To add calculation rule on the **[!UICONTROL Taxable Income]** field, perform the following steps:
   
-  1. In authoring mode, select the **[!UICONTROL Taxable Income]** field and select ![edit-rules](/help/forms/assets/edit-rules-icon.svg) icon. Next, select **[!UICONTROL Create]** to launch the Rule Editor.
-  ![Rule Editor example13](/help/edge/docs/forms/assets/rule-editor16.png)
+  1. In authoring mode, select the **[!UICONTROL Taxable Income]** field and select ![edit-rules](/help/forms/assets/edit-rules-icon.svg) icon. Alternatively, you can select **[!UICONTROL Taxable Income]** field directly from the **[!UICONTROL Forms Object]** pane.
+  1. Next, select **[!UICONTROL Create]** to create the rule.
+    ![Rule Editor example13](/help/edge/docs/forms/assets/rule-editor16.png)
   1. Select **[!UICONTROL Select Option]** and select **[!UICONTROL Mathematical Expression]**. A field to write mathematical expression opens.
     ![Rule Editor example14](/help/edge/docs/forms/assets/rule-editor17.png)
 
@@ -270,7 +277,7 @@ To write rules, perform the following steps:
       
       Now, add a rule for the `Tax Payable ` field, which is determined by multiplying the taxable income by the tax rate. For simplicity, assume a fixed tax rate of `10%`.
 
-  1. In authoring mode, select the **[!UICONTROL Tax Payable]** field and select ![edit-rules](/help/forms/assets/edit-rules-icon.svg) icon. Next, select **[!UICONTROL Create]** to launch the Rule Editor.
+  1. In authoring mode, select the **[!UICONTROL Tax Payable]** field and select ![edit-rules](/help/forms/assets/edit-rules-icon.svg) icon. Next, select **[!UICONTROL Create]** to create rules.
   ![Rule Editor example16](/help/edge/docs/forms/assets/rule-editor19.png)
   1. Select **[!UICONTROL Select Option]** and select **[!UICONTROL Mathematical Expression]**. A field to write mathematical expression opens.
   ![Rule Editor example17](/help/edge/docs/forms/assets/rule-editor20.png)
@@ -285,7 +292,7 @@ To write rules, perform the following steps:
   1. Next, select in the highlighted area around the expression field and select **[!UICONTROL Extend Expression]**.
     ![Rule Editor example19](/help/edge/docs/forms/assets/rule-editor22.png)
   1. In the extended expression field, select **[!UICONTROL divided by]** from the **[!UICONTROL Select Operator]** field and **[!UICONTROL Number]** from the **[!UICONTROL Select Option]** field. Then, specify `100` in the number field.
-  ![Rule Editor example20](/help/edge/docs/forms/assets/rule-editor23.png)
+    ![Rule Editor example20](/help/edge/docs/forms/assets/rule-editor23.png)
   1. Select **[!UICONTROL Done]** to save the rule. 
 
 ### 4. Preview a form
@@ -360,9 +367,15 @@ To use the custom function in the Rule Editor:
 
     ![Custom Function in Rule Editor](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 
-1. **Preview the Form**: Preview your form with the newly implemented function.  
+1. **Preview the form**: Preview your form with the newly implemented function.  
 
-## Related Articles
+## Additional Information
+
+>[!NOTE]
+>
+> In Universal Editor, static and dynamic imports are not supported in custom function scripts. You need to add the complete code in the `../[blocks]/form/functions.js` file.
+
+This article provides limited information on the Rule Editor available in the Universal Editor. To learn more about the Rule Editor and custom functions, refer to the following articles:
 
 {{see-also-rule-editor}}
 
