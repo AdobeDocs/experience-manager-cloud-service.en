@@ -34,7 +34,7 @@ The native PDF Doc Cloud viewer has the following components in AEM Assets:
 
 * **Page Up/Page Down** Use Page Up ![Page Up](/help/assets/assets/ArrowUp.svg) or Page Down ![Page Down](/help/assets/assets/ArrowDown.svg) to scroll through the document.
 
-* **Zoom Out/Zoom In** Use Zoom Out ![Zoom Out](/help/assets/assets/ZoomOut.svg) or Zoom In ![Zoom In](/help/assets/assets/ZoomIn.svg) to streak the document.
+* **Zoom Out/Zoom In** Use Zoom Out ![Zoom Out](/help/assets/assets/zoomout.svg) or Zoom In ![Zoom In](/help/assets/assets/Zoomin.svg) to streak the document.
 
 * **Page Fit** Use width or height dimensions to fit the document as per your screen size. 
 
