@@ -369,11 +369,11 @@ Below we describe the two possible cases: removing customizations of an OOTB ind
 
 #### Removing Customizations of an Out-Of-The-Box Index
 
-Follow the steps described in [undoing a change](#undoing-a-change-undoing-a-change) using the definitions of the OOTB index as the new version. For example, if you have already deployed `damAssetLucene-8-custom-3`, but no longer need the customizations and want to switch back to the default `damAssetLucene-8` index, then you need to add an index `damAssetLucene-8-custom-4` that contains the index definition of `damAssetLucene-8`.
+Follow the steps described in [Undoing a Change](#undoing-a-change-undoing-a-change) using the definitions of the OOTB index as the new version. For example, if you have already deployed `damAssetLucene-8-custom-3`, but no longer need the customizations and want to switch back to the default `damAssetLucene-8` index, then you need to add an index `damAssetLucene-8-custom-4` that contains the index definition of `damAssetLucene-8`.
 
 #### Removing a Fully Custom Index
 
-Follow the steps described in [undoing a change](#undoing-a-change-undoing-a-change) using a dummy index as the new version. A dummy index is never used for queries and does not contain any data, so the effect is the same as if the index did not exist. For this example, you can name it `/oak:index/acme.product-custom-3`. This name replaces the index `/oak:index/acme.product-custom-2`. An example of such a dummy index is:
+Follow the steps described in [Undoing a Change](#undoing-a-change-undoing-a-change) using a dummy index as the new version. A dummy index is never used for queries and does not contain any data, so the effect is the same as if the index did not exist. For this example, you can name it `/oak:index/acme.product-custom-3`. This name replaces the index `/oak:index/acme.product-custom-2`. An example of such a dummy index is:
 
 ```xml
 <acme.product-custom-3
