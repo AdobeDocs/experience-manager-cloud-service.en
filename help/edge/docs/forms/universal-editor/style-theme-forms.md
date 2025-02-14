@@ -5,6 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: yes
 hidefromtoc: yes
+exl-id: ac780399-34fe-457d-aaf4-b675656c024d
 ---
 # Customize the look of your forms
 
@@ -978,5 +979,3 @@ The Adaptive Forms Block offers a standardized HTML structure, simplifying the p
 * **Miscellaneous styling:**: This section covers styles for success or error messages, file upload areas, and other elements you might encounter in a form.
 
 -->
-
-
