@@ -15,6 +15,7 @@ user-guide-title: AEM as a Cloud Service
   + [What is New and What is Different](/help/overview/what-is-new-and-different.md)
   + [Terminology - New for the Cloud](/help/overview/terminology.md)
   + [An Introduction to the Architecture of AEM as a Cloud Service](/help/overview/architecture.md)
+  + [Supported Client Platforms](/help/overview/supported-platforms.md)
   + [SEO and URL Management](/help/overview/seo-and-url-management.md)
   + [AEM as a Cloud Service on Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md)
   + [Assessing KPIs](/help/overview/assessing-kpis.md)
