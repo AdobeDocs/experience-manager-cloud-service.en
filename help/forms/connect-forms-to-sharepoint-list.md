@@ -3,10 +3,10 @@ Title: How to send data to a SharePoint List storage on submission of an Adaptiv
 Description: Learn how to send data from your Adaptive Form to a SharePoint storage like a SharePoint list when you submit the form.
 keywords: How to connect SharePoint list for an adpative form?, Submit to SharePoint, Create a SharePoint List Configuration, Use the Submit to SharePoint submit action in an Adaptive Form, Connect an Adaptive Form to Microsoft&reg; SharePoint List.
 feature: Adaptive Forms, Core Components
-title: "How to configure a Submit Action for an Adaptive Form?"
+title: How to configure a Submit Action for an Adaptive Form?
 role: User, Developer
+exl-id: 9ac3e7be-c6fa-4dbc-9aba-b81741ba6c55
 ---
-
 # Connect an Adaptive Form to Microsoft&reg; SharePoint List {#connect-af-sharepoint-list}
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)

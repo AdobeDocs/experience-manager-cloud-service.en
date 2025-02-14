@@ -3,8 +3,8 @@ title: How to configure Salesforce out of the box form data models for Adaptive 
 description: Learn how to integrate Salesforce with Adaptive Forms.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+exl-id: 184db05b-7237-4dce-8059-03c39b93d7d7
 ---
-
 # Configure Salesforce for AEM Forms {#configure-azure-storage}
 
 [[!DNL Experience Manager Forms] Data Integration](data-integration.md) provides [!DNL Salesforce] Cloud Services to integrate Adaptive Forms with OOTB Form Data Model (FDM). The Adaptive Forms can then interact with [!DNL Salesforce] servers to enable business workflows. For example:
