@@ -137,28 +137,28 @@ main .form form .field-first-name input {
 
 ```
 
-**Styling a form for Adaptive Forms Block**
+  **Styling a form for Adaptive Forms Block**
 
-The Adaptive Forms Block offers a standardized HTML structure, simplifying the process of selecting and styling form components:
+  The Adaptive Forms Block offers a standardized HTML structure, simplifying the process of selecting and styling form components:
 
-* **Update default styles**: You can modify the default styles of a form by editing the `/blocks/form/form.css file`. This file provides comprehensive styling for a form, supporting multi-step wizard forms. It emphasizes using custom CSS variables for easy customization, maintenance, and uniform styling across forms. <!--For instructions on adding the Adaptive Forms Block to your project, refer to [create a form](/help/edge/docs/forms/create-forms.md).
+  * **Update default styles**: You can modify the default styles of a form by editing the `/blocks/form/form.css file`. This file provides comprehensive styling for a form, supporting multi-step wizard forms. It emphasizes using custom CSS variables for easy customization, maintenance, and uniform styling across forms. <!--For instructions on adding the Adaptive Forms Block to your project, refer to [create a form](/help/edge/docs/forms/create-forms.md).
 
-* **CSS Styling for Forms**: To ensure that your styles are applied correctly, wrap your form-specific CSS within the `main .form form` selector. This ensures that your styles target only the form elements within the main content area, avoiding conflicts with other parts of the website.
+  * **CSS Styling for Forms**: To ensure that your styles are applied correctly, wrap your form-specific CSS within the `main .form form` selector. This ensures that your styles target only the form elements within the main content area, avoiding conflicts with other parts of the website.
 
-  Example:
-  ```css
-  main .form form input {
-    /* Add styles specific to input fields inside the form */
-  }
+    Example:
+    ```css
+    main .form form input {
+      /* Add styles specific to input fields inside the form */
+    }
 
-  main .form form button {
-    /* Add styles specific to buttons inside the form */
-  }
+    main .form form button {
+      /* Add styles specific to buttons inside the form */
+    }
 
-  main .form form label {
-    /* Add styles specific to labels inside the form */
-  }
-  ```
+    main .form form label {
+      /* Add styles specific to labels inside the form */
+    }
+    ```
 
 +++
 
