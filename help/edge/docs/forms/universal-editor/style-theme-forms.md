@@ -40,6 +40,28 @@ Understanding [fundamental CSS concepts](https://www.w3schools.com/css/css_intro
 * [Box Model](https://www.w3schools.com/css/css_boxmodel.asp): The CSS box model describes the structure of HTML elements as a content area surrounded by padding, borders, and margins.
 * Flexbox/Grid: CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) and [Grid layouts](https://www.w3schools.com/css/css_grid.asp) are powerful tools for creating responsive and flexible designs.
 
+## Styling a form for Adaptive Forms Block
+
+  The Adaptive Forms Block offers a standardized HTML structure, simplifying the process of selecting and styling form components:
+
+  * **Update default styles**: You can modify the default styles of a form by editing the `/blocks/form/form.css file`. This file provides comprehensive styling for a form, supporting multi-step wizard forms. It emphasizes using custom CSS variables for easy customization, maintenance, and uniform styling across forms. <!--For instructions on adding the Adaptive Forms Block to your project, refer to [create a form](/help/edge/docs/forms/create-forms.md).
+
+  * **CSS Styling for Forms**: To ensure that your styles are applied correctly, wrap your form-specific CSS within the `main .form form` selector. This ensures that your styles target only the form elements within the main content area, avoiding conflicts with other parts of the website.
+
+    Example:
+    ```css
+    main .form form input {
+      /* Add styles specific to input fields inside the form */
+    }
+
+    main .form form button {
+      /* Add styles specific to buttons inside the form */
+    }
+
+    main .form form label {
+      /* Add styles specific to labels inside the form */
+    }
+    ```
 
 ## Components Structure
 
@@ -137,29 +159,6 @@ main .form form .field-first-name input {
 }
 
 ```
-
-  **Styling a form for Adaptive Forms Block**
-
-  The Adaptive Forms Block offers a standardized HTML structure, simplifying the process of selecting and styling form components:
-
-  * **Update default styles**: You can modify the default styles of a form by editing the `/blocks/form/form.css file`. This file provides comprehensive styling for a form, supporting multi-step wizard forms. It emphasizes using custom CSS variables for easy customization, maintenance, and uniform styling across forms. <!--For instructions on adding the Adaptive Forms Block to your project, refer to [create a form](/help/edge/docs/forms/create-forms.md).
-
-  * **CSS Styling for Forms**: To ensure that your styles are applied correctly, wrap your form-specific CSS within the `main .form form` selector. This ensures that your styles target only the form elements within the main content area, avoiding conflicts with other parts of the website.
-
-    Example:
-    ```css
-    main .form form input {
-      /* Add styles specific to input fields inside the form */
-    }
-
-    main .form form button {
-      /* Add styles specific to buttons inside the form */
-    }
-
-    main .form form label {
-      /* Add styles specific to labels inside the form */
-    }
-    ```
 
 +++
 
