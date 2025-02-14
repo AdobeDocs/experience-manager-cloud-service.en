@@ -5,8 +5,8 @@ topic-tags: platform
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
+exl-id: 7ddd0a75-621a-4499-91d1-7b3408a68269
 ---
-
 # Supported Client Platforms {#supported-platforms}
 
 Learn which browsers are supported for authoring content with Adobe Experience Manager as a Cloud Service and accessing sites published with AEM.
