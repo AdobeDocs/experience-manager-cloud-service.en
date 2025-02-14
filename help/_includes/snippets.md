@@ -36,7 +36,8 @@
 ## Adaptive Form Submit Actions {#af-submit-action}
 
 * [Send email](/help/forms/configure-submit-action-send-email.md)
-* [Submit to SharePoint](/help/forms/configure-submit-action-sharepoint.md)
+* [Submit to SharePoint Document Library](/help/forms/connect-forms-to-sharepoint-document-library.md)
+* [Submit to SharePoint List](/help/forms/connect-forms-to-sharepoint-list.md)
 * [Submit using Form Data Model](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
 * [Submit to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [Submit to REST endpoint](/help/forms/configure-submit-action-restpoint.md)
@@ -45,7 +46,7 @@
 * [Submit to Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Submit to Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Connect Adaptive Form to Salesforce application](/help/forms/aem-forms-salesforce-integration.md)
-* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+* [Connect an Adaptive Form to Microsoft&reg; Dynamics](/help/forms/configure-msdynamics.md)
 * [Connect an Adaptive Form to Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 * [Create custom submit action](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 

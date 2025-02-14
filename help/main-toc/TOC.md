@@ -106,6 +106,8 @@ user-guide-title: AEM as a Cloud Service
       + [Maintenance Release Notes for 2023.1.0](/help/release-notes/maintenance/2023/2023-1-0.md)
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
+    + 2025 {#2025}
+      + [Release Notes for 2025.1.0](/help/implementing/cloud-manager/release-notes/2025/2025-1-0.md)
     + 2024 {#2024}
       + [Release Notes for 2024.12.0](/help/implementing/cloud-manager/release-notes/2024/2024-12-0.md)
       + [Release Notes for 2024.11.0](/help/implementing/cloud-manager/release-notes/2024/2024-11-0.md)
@@ -726,7 +728,8 @@ user-guide-title: AEM as a Cloud Service
       + [Configure [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
       + [Connect Adaptive Form to Salesforce application using OAuth 2.0 client credential flow](/help/forms/aem-forms-salesforce-integration.md)
       + [Configure [!DNL Azure] storage](/help/forms/configure-azure-storage.md)
-      + [Configure [!DNL Microsoft Dynamics 365] and [!DNL Salesforce] cloud services](/help/forms/configure-msdynamics-salesforce.md)
+      + [Configure [!DNL Microsoft Dynamics 365] cloud services](/help/forms/configure-msdynamics.md)
+      + [Configure Salesforce cloud services](/help/forms/configure-salesforce.md)
       + [Create Form Data Model](/help/forms/create-form-data-models.md)
       + [Work with Form Data Model](/help/forms/work-with-form-data-model.md)
       + [Use Form Data Model](/help/forms/using-form-data-model.md)
@@ -750,8 +753,11 @@ user-guide-title: AEM as a Cloud Service
         + [Configure Submit Action for an Adaptive Form](/help/forms/configure-submit-actions-core-components.md)
         + [Submit an Adaptive Form to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
         + [Submit an Adaptive Form to Microsoft&reg; OneDrive](/help/forms/configure-submit-action-onedrive.md)
-        + [Connect an Adaptive Form to Microsoft&reg; SharePoint](/help/forms/configure-submit-action-sharepoint.md)
-        + [Configure SharePoint Site with limited access using authorization scope](/help/forms/configure-sharepoint-site-limited-access.md)
+        + Connect an Adaptive Form to Microsoft&reg; SharePoint{#connect-to-sharepoint}
+          + [Connect an Adaptive Form to Microsoft&reg; SharePoint](/help/forms/configure-submit-action-sharepoint.md)
+          + [Submit to SharePoint Document Library](/help/forms/connect-forms-to-sharepoint-document-library.md)
+          + [Submit to SharePoint List](/help/forms/connect-forms-to-sharepoint-list.md)
+          + [Configure SharePoint Site with limited access using authorization scope](/help/forms/configure-sharepoint-site-limited-access.md)
         + [Integrate AEM Adaptive Form with AEM Workflow](/help/forms/configure-submit-action-workflow.md)
         + [Configure Submit to REST Endpoint submit action for Adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
         + [Configure the Send Email submit action for an Adaptive Form](/help/forms/configure-submit-action-send-email.md)
@@ -1021,7 +1027,7 @@ user-guide-title: AEM as a Cloud Service
       + [Overview - Universal Editor for Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
       + [Getting Started](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
       + [Add rules to using Rule Editor](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-      + [Create Custom Components](/help/edge/docs/forms/universal-editor/create-custom-component)
+      + [Create Custom Components](/help/edge/docs/forms/universal-editor/create-custom-component.md)
       + [Use reCAPTCHA in forms](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
       + [Submit Actions](/help/edge/docs/forms/universal-editor/submit-action.md)
       + [Publish Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
