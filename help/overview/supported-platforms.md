@@ -1,6 +1,6 @@
 ---
 title: Supported Client Platforms
-description: Learn which browsers are supported for authoring content with AEM and accessing sites published with AEM.
+description: Learn which browsers are supported for authoring content with Adobe Experience Manager as a Cloud Service and accessing sites published with AEM.
 topic-tags: platform
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
@@ -9,7 +9,7 @@ role: Admin
 
 # Supported Client Platforms {#supported-platforms}
 
-Learn which browsers are supported for authoring content with AEM and accessing sites published with AEM.
+Adobe Experience Manager as a Cloud Service and accessing sites published with AEM.
 
 ## Support Levels {#support-levels}
 
@@ -21,7 +21,7 @@ Adobe defines the following levels of support for AEM's client platforms.
 |R: Restricted Support|Support requires a formal request to Adobe to use the configuration in a project. Once confirmed by Adobe, Adobe provides full support within the restricted support program. For more information, contact Adobe Customer Care.|
 |Z: Unsupported|The configuration is not supported. Adobe does not make statements about whether the configuration works, and does not support it.|
 
-## Supported Browsers for Authoring Content{#authoring}
+## Supported Browsers for Authoring Content {#authoring}
 
 The AEM user interface is optimized for larger screens found in notebooks, desktop computers, and tablet devices (such as Apple iPad or Microsoft Surface). The phone form factor is not supported for any authoring use case.
 
@@ -29,11 +29,11 @@ The Adobe Experience Manager user interface works with the following client plat
 
 * [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
 * [Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md)
-* [Document based-authoring](/help/edge/docs/authoring.md) using the [Sidekick](/help/edge/docs/sidekick.md)
+* [Document-based authoring](/help/edge/docs/authoring.md) using the [Sidekick](/help/edge/docs/sidekick.md)
 
 All browsers are tested with the default set of plug-ins and add-ons.
 
-|Browser|Universal Editor Support Level|Sites Editor Authoring Support Level|Sidekick Support Level|
+|Browser|Universal Editor Support Level|Page Editor Authoring Support Level|Sidekick Support Level|
 |---|---|---|---|
 |Google Chrome (evergreen)|A: Supported|A: Supported|A: Supported|
 |Microsoft Edge (evergreen)|A: Supported|A: Supported|Z: Unsupported|
@@ -55,4 +55,4 @@ All browsers are tested with the default set of plug-ins and add-ons.
 
 Browser support for websites rendered by AEM depends on the implementation of AEM page templates, blocks, design, and component output. Therefore your developers who implement your project are ultimately in control of your site's compatibility.
 
-The AEM project boilerplate, Core Components, and WKND sample site are all compatible with all modern browsers.
+The AEM [project boilerplate,](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md#create-github-project) [Core Components,](/help/implementing/developing/components/overview.md#aem-core-components) and [WKND sample site](/help/implementing/developing/introduction/develop-wknd-tutorial.md) are all compatible with all modern browsers.
