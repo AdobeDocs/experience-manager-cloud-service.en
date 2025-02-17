@@ -75,8 +75,6 @@ After provisioning, your organization will be provided with the following proper
 >
 >Without these properties, you cannot run the installation steps.
 
-<!-- -->
-
 ## Installation {#installation}
 
 The Content Fragment Selector is available via both:
@@ -116,7 +114,7 @@ Once the Content Fragment Selector is set up and authenticated to use the Conten
 
 <!-- SCREENSHOT -->
 
-   ![using-content-fragment-selector](assets/using-content-fragment-selector.png)
+![Using Content Fragment Selector](/help/headless/assets/content-fragment-selector-using.png)
 
 * **1**: [Hide/Show panel](#hide-show-panel)
 * **2**: [Repository switcher](#repository-switcher)
@@ -152,7 +150,7 @@ The Content Fragment Selector also provides out-of-the-box filter options to ref
 
 <!-- SCREENSHOT -->
 
-![rail-view-example](assets/filters-asset-selector.png) 
+![Rail view example](/help/headless/assets/content-selector-filters.png) 
 
 ### Custom search {#custom-search}
 
@@ -160,7 +158,7 @@ In addition to the full-text search, the Content Fragment Selector lets you sear
 
 <!-- SCREENSHOT -->
 
-![custom-search](assets/custom-search1.png)
+![Custom Search](/help/headless/assets/content-selector-custom-search.png)
 
 You can also create a default search filter to save the for future use. To create custom search filtersfor your Content Fragments, you can use `filterSchema` property.
 
