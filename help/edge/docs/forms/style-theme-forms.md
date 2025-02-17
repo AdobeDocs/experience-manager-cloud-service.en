@@ -44,23 +44,23 @@ Understanding [fundamental CSS concepts](https://www.w3schools.com/css/css_intro
 
 The Adaptive Forms Block offers a standardized HTML structure, simplifying the process of selecting and styling form components:
 
-* **Update default styles**: You can modify the default styles of a form by editing the `/blocks/form/form.css file`. This file provides comprehensive styling for a form, supporting multi-step wizard forms. It emphasizes using custom CSS variables for easy customization, maintenance, and uniform styling across forms. For instructions on adding the Adaptive Forms Block to your project, refer to [create a form](/help/edge/docs/forms/create-forms.md).
+  * **Update default styles**: You can modify the default styles of a form by editing the `/blocks/form/form.css file`. This file provides comprehensive styling for a form, supporting multi-step wizard forms. It emphasizes using custom CSS variables for easy customization, maintenance, and uniform styling across forms. For instructions on adding the Adaptive Forms Block to your project, refer to [create a form](/help/edge/docs/forms/create-forms.md).
 
-* **Customization**: Use the default `forms.css` as a base and customize it to modify the look and feel of your form components, making it visually appealing and user-friendly. The file's structure encourages organization and maintains styles for forms, promoting consistent designs across your website.
+  * **Customization**: Use the default `forms.css` as a base and customize it to modify the look and feel of your form components, making it visually appealing and user-friendly. The file's structure encourages organization and maintains styles for forms, promoting consistent designs across your website.
 
 ## Breakdown of forms.css's structure
 
-* **Global variables:** Defined at the `:root` level, these variables (`--variable-name`) store values used throughout the style sheet for consistency and ease of updates. These variables define colors, font sizes, padding, and other properties. You can declare your own Global variables or modify existing ones to change the form's style.
+  * **Global variables:** Defined at the `:root` level, these variables (`--variable-name`) store values used throughout the style sheet for consistency and ease of updates. These variables define colors, font sizes, padding, and other properties. You can declare your own Global variables or modify existing ones to change the form's style.
 
-* **Universal selector styles:** The `*` selector matches every element in the form, ensuring styles are applied to all components by default, including setting the `box-sizing` property to `border-box`.
+  * **Universal selector styles:** The `*` selector matches every element in the form, ensuring styles are applied to all components by default, including setting the `box-sizing` property to `border-box`.
 
-* **Form styling:** This section focuses on styling form components using selectors to target specific HTML elements. It defines styles for input fields, text areas, checkboxes, radio buttons, file inputs, form labels, and descriptions.
+  * **Form styling:** This section focuses on styling form components using selectors to target specific HTML elements. It defines styles for input fields, text areas, checkboxes, radio buttons, file inputs, form labels, and descriptions.
 
-* **Wizard styling (if applicable):** This section is dedicated to styling the wizard layout, a multi-step form where each step is displayed one at a time. It defines styles for the wizard container, fieldsets, legends, navigation buttons, and responsive layouts.
+  * **Wizard styling (if applicable):** This section is dedicated to styling the wizard layout, a multi-step form where each step is displayed one at a time. It defines styles for the wizard container, fieldsets, legends, navigation buttons, and responsive layouts.
 
-* **Media queries:** These provide styles for different screen sizes, adjusting layout and styling accordingly.
+  * **Media queries:** These provide styles for different screen sizes, adjusting layout and styling accordingly.
 
-* **Miscellaneous styling:**: This section covers styles for success or error messages, file upload areas, and other elements you might encounter in a form.
+  * **Miscellaneous styling:**: This section covers styles for success or error messages, file upload areas, and other elements you might encounter in a form.
 
 
 ## Components Structure
