@@ -319,6 +319,10 @@ After completing the above steps, the custom component appears in the form's com
 
 ![range component](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
 
+The screenshot below shows the properties of the `range` component added to the component model, which specifies the properties the form author can configure.:
+
+![Properties of range component](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
+
 You can now define the runtime behavior of your custom component by adding styling and functionality.
 
 ### 5. Adding the runtime behaviour for your custom component
