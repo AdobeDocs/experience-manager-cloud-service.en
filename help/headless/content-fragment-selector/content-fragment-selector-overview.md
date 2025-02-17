@@ -168,9 +168,9 @@ You can sort fragments in the Content Fragment Selector by various properties. Y
 
 ### Types of view {#types-of-view}
 
-Content Fragment Selector lets you view the asset in four different views:
+Content Fragment Selector lets you view the fragment in four different views:
 
-* ![list view](assets/do-not-localize/list-view.png) [**List View**] The list view displays scrollable files and folders in a single column.
-* ![grid view](assets/do-not-localize/grid-view.png) [**Grid View**] The grid view displays scrollable files and folders in a grid of rows and columns.
-* ![gallery view](assets/do-not-localize/gallery-view.png) [**Gallery View**] The gallery view displays files or folders in a center-locked horizontal list.
-* ![waterfall view](assets/do-not-localize/waterfall-view.png) [**Waterfall** View] The waterfall view displays files or folders in the form of a Bridge.
+* ![list view](/help/headless/assets/list-view.png) [**List View**] The list view displays scrollable files and folders in a single column.
+* ![grid view](/help/headless/assets/grid-view.png) [**Grid View**] The grid view displays scrollable files and folders in a grid of rows and columns.
+* ![gallery view](/help/headless/assets/gallery-view.png) [**Gallery View**] The gallery view displays files or folders in a center-locked horizontal list.
+* ![waterfall view](/help/headless/assets/waterfall-view.png) [**Waterfall** View] The waterfall view displays files or folders in the form of a Bridge.
