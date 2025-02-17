@@ -114,17 +114,19 @@ For example:
 
 Once the Content Fragment Selector is set up and authenticated to use the Content Fragment Selector with your AEM as a Cloud Service application, you can select Content Fragments or perform various other operations to search for your fragments in the repository.
 
+<!-- SCREENSHOT -->
 
    ![using-content-fragment-selector](assets/using-content-fragment-selector.png)
 
-* **A**: [Hide/Show panel](#hide-show-panel)
-* **B**: [Repository switcher](#repository-switcher)
-* **C**: [Content Fragments](#repository)
-* **D**: [Filters](#filters)
-* **E**: [Search bar](#search-bar)
-* **F**: [Sorting](#sorting)
-* **G**: [Sorting in ascending or descending order](#sorting)
-* **H**: [View](#types-of-view)
+* **1**: [Hide/Show panel](#hide-show-panel)
+* **2**: [Repository switcher](#repository-switcher)
+* **3**: [Content Fragments](#content-fragments-repository)
+* **4**: [Filters](#out-of-the-box-filters)
+* **5**: [Search bar](#custom-search)
+* **6**: [Search bar](#search-bar)
+* **7**: [Sorting](#sorting)
+* **8**: [Sorting in ascending or descending order](#sorting)
+* **9**: [View](#types-of-view)
 
 ### Hide/Show panel {#hide-show-panel}
 
@@ -148,11 +150,15 @@ The Content Fragment Selector also provides out-of-the-box filter options to ref
 
 * **Status**: the current state of the fragment; `all`, `published`, `unpublished`, or `no status`
 
+<!-- SCREENSHOT -->
+
 ![rail-view-example](assets/filters-asset-selector.png) 
 
-### Custom search
+### Custom search {#custom-search}
 
 In addition to the full-text search, the Content Fragment Selector lets you search the content within fragments using customized search. You can use custom search filters in both Modal view and Rail view modes.
+
+<!-- SCREENSHOT -->
 
 ![custom-search](assets/custom-search1.png)
 
@@ -170,7 +176,7 @@ You can sort fragments in the Content Fragment Selector by various properties. Y
 
 Content Fragment Selector lets you view the fragment in four different views:
 
-* ![list view](/help/headless/assets/list-view.png) [**List View**] The list view displays scrollable files and folders in a single column.
-* ![grid view](/help/headless/assets/grid-view.png) [**Grid View**] The grid view displays scrollable files and folders in a grid of rows and columns.
-* ![gallery view](/help/headless/assets/gallery-view.png) [**Gallery View**] The gallery view displays files or folders in a center-locked horizontal list.
-* ![waterfall view](/help/headless/assets/waterfall-view.png) [**Waterfall** View] The waterfall view displays files or folders in the form of a Bridge.
+* ![list view](/help/headless/assets/list-view.png) **List View** The list view displays scrollable files and folders in a single column.
+* ![grid view](/help/headless/assets/grid-view.png) **Grid View** The grid view displays scrollable files and folders in a grid of rows and columns.
+* ![gallery view](/help/headless/assets/gallery-view.png) **Gallery View** The gallery view displays files or folders in a center-locked horizontal list.
+* ![waterfall view](/help/headless/assets/waterfall-view.png) **Waterfall** View The waterfall view displays files or folders in the form of a Bridge.
