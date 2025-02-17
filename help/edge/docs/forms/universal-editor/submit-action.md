@@ -134,3 +134,8 @@ On Submit option helps you to configure a Submit Action message on Adaptive Form
 1. On click, you see the following option:
     * **[!UICONTROL On Submit]**: On Submit helps you to customize a message to be shown when a form is submitted. By default, a custom message "Thank you for submitting the form" is displayed to the user when a form is successfully submitted. 
     You can also customize the Thank You message on form submission, by selecting the option to **[!UICONTROL Show message]**, and add/edit your message in the Rich Text **Editor**.
+
+
+## See also
+
+{{see-more-forms-eds}}
