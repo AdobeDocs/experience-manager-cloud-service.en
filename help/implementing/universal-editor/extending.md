@@ -45,8 +45,5 @@ If you would like to explore the possibilities of creating your own extensions, 
 In addition to UI extensibility, the Universal Editor offers many other flexible extension points to enable seamless integration of custom business requirements.
 
 * **[Blocks](/help/edge/developer/block-collection.md)**: In simple JSON format, projects can adjust the blocks and UE features available for content creation.
-* **3rd-Party Storage**: The Universal Editor can federate the editing of content from different sources, even when they are displayed on the same page.
-* **Custom Buttons**: Implement specific actions for general contexts or particular content types. 
 * **[Custom User Interface](#extending-ui)**: Extensions can display necessary UI in side-panels or modal dialogs.
-* **Custom Data Types**: Create input methods tailored to your requirements or enable authors to reference content from proprietary backends, like a product picker.
 * **[Events](/help/implementing/universal-editor/events.md)**: Extensions receive events about the author's actions and selections on the page to respond appropriately.
