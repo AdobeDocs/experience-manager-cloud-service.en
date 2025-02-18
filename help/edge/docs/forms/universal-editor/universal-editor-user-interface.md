@@ -5,9 +5,8 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: Yes
 hide from TOC: Yes
-
+exl-id: 90321e81-bb55-48b2-b329-4944bf926309
 ---
-
 # Exploring the Universal Editor (WYSIWYG) Interface
 
 The [Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) offers a simple, visual, and intuitive What You See Is What You Get (WYSIWYG) interface for Adobe Edge Delivery Services (EDS) Forms. It provides a modern interface with drag-and-drop functionality for efficient form authoring. 
@@ -238,5 +237,3 @@ The editor allows you to edit the form, and the form specified in the location b
 * [Show a custom thank you message after form submission​](/help/edge/docs/forms/thank-you-page-form.md)
 * [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
 * [Real Use Monitoring](https://www.aem.live/developer/rum#authentication)
-
-
