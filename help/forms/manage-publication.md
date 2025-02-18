@@ -34,7 +34,7 @@ The **Publish** option lets you immediately publish a form. To publish an Experi
     Once the form and its related assets are successfully published, a **Success** dialog appears. 
 1. Click **Close**.
 
-    ![Success dialog](/help/forms/assets/publish-success.png)
+    ![Success dialog](/help/forms/assets/publish-success1.png)
 
 ### Unpublish the form
 
