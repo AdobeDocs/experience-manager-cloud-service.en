@@ -45,7 +45,7 @@ The Universal Editor is supported by:
 * AEM as a Cloud Service (release `2023.8.13099` or higher)
 * AEM 6.5 (service pack 21 or 22 plus a feature pack)
 
-This documentation is for using the Universal Editor with AEM as a Cloud Service. For using the Universal Editor with AEM 6.5, [please see the AEM 6.5 documentation.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction?lang=en)
+This documentation is for using the Universal Editor with AEM as a Cloud Service. For using the Universal Editor with AEM 6.5, [please see the AEM 6.5 documentation.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
 
 ## Features {#features}
 
