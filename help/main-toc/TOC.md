@@ -367,10 +367,10 @@ user-guide-title: AEM as a Cloud Service
       + [Style System](/help/sites-cloud/authoring/page-editor/style-system.md)
       + [Undo Redo Limitations](/help/sites-cloud/authoring/page-editor/undo-redo.md)
     + Universal Editor {#universal-editor}
-      + [Navigating the Universal Editor](/help/sites-cloud/authoring/universal-editor/navigation.md)
-      + [Authoring Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
-      + [Publishing Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
-      + [Content Inheritance in the Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+      + [Navigation](/help/sites-cloud/authoring/universal-editor/navigation.md)
+      + [Authoring](/help/sites-cloud/authoring/universal-editor/authoring.md)
+      + [Publishing](/help/sites-cloud/authoring/universal-editor/publishing.md)
+      + [Inheritance](/help/sites-cloud/authoring/universal-editor/inheritance.md)
       + [Page Templates](/help/sites-cloud/authoring/universal-editor/templates.md)
     + Fragments {#fragments}
       + [Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md)
@@ -1279,6 +1279,7 @@ user-guide-title: AEM as a Cloud Service
       + [Attributes and Item Types](/help/implementing/universal-editor/attributes-types.md)
       + [Component Definition](/help/implementing/universal-editor/component-definition.md)
       + [Model Definitions, Fields, and Component Types](/help/implementing/universal-editor/field-types.md)
+      + [Publishing](/help/implementing/universal-editor/publishing.md)
       + [SecurBank Sample App](/help/implementing/universal-editor/securbank.md)
       + [Events](/help/implementing/universal-editor/events.md)
       + [Filtering Components](/help/implementing/universal-editor/filtering.md)
