@@ -8,6 +8,7 @@ hide: yes
 hidefromtoc: yes
 exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
 ---
+
 # Use reCAPTCHA in WYSIWYG Authoring
 
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) is a popular tool used to protect websites from fraudulent activities, spam, and misuse. 
