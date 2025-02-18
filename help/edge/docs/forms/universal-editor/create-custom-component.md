@@ -167,14 +167,14 @@ In this example, we add Step Value as a custom property to the Range component.
 
 To add the Step Value custom property, append the component model with the following lines of code in the` _<component>.json` file:
 
-    ```javascript
+```javascript
       {
       "component": "number",
       "name": "stepValue",
       "label": "Step Value",
       "valueType": "number"
       }
-     ```
+```
 
 The JSON snippet defines a custom property called **Step Value** for a **Range** component. Below is a breakdown of each field:
 
