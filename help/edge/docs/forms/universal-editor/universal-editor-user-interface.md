@@ -8,9 +8,9 @@ hide from TOC: Yes
 
 ---
 
-# Exploring the Universal Editor Interface
+# Exploring the Universal Editor (WYSIWYG) Interface
 
-[Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) allows form authors to perform what-you-see-is-what-you-get (WYSIWYG) editing to create user-friendly and intuitive forms. It provides a modern interface with drag-and-drop functionality for efficient form authoring.
+The [Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) offers a simple, visual, and intuitive What You See Is What You Get (WYSIWYG) interface for Adobe Edge Delivery Services (EDS) Forms. It provides a modern interface with drag-and-drop functionality for efficient form authoring. 
 
 ![Universal Editor User Interface](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 
