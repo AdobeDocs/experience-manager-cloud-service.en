@@ -50,7 +50,7 @@ You can also publish [from the Sites console,](/help/sites-cloud/authoring/sites
 
 ## Similarities with the Page Editor {#similarities}
 
-For users of the [AEM Page Editor,]() the process to publish content with the Universal Editor works as you are accustomed: on publication in AEM, the content is replicated from the author tier to the publish tier.
+For users of the [AEM Page Editor,](/help/sites-cloud/authoring/page-editor/introduction.md) the process to publish content with the Universal Editor works as you are accustomed: on publication in AEM, the content is replicated from the author tier to the publish tier.
 
 ## Differences {#differences}
 
