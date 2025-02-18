@@ -3,8 +3,8 @@ title: Extending the Universal Editor
 description: Learn about the different options to extend the capabilities of Universal Editor to support the needs of your content authors.
 feature: Developing
 role: Admin, Architect, Developer
+exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
 ---
-
 # Extending the Universal Editor {#extending}
 
 Learn about the different options to extend the capabilities of Universal Editor to support the needs of your content authors.
