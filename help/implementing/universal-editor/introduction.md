@@ -98,7 +98,7 @@ As you explore the Universal Editor and move forward implementing it in your own
 * AEM as a Cloud Service and [AEM 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) are the only supported AEM backends.
 * Release `2023.8.13099` or higher is required for AEM as a Cloud Service.
 * Content authors must have their own individual Experience Cloud accounts.
-* As part of AEM, the Universal Editor supports the same desktop browsers as AEM.
+* As part of AEM, the Universal Editor [supports the same desktop browsers as AEM.](/help/overview/supported-platforms.md)
   * Mobile versions of these browsers are not supported.
 
 {{ue-ip-allow-lists}}
