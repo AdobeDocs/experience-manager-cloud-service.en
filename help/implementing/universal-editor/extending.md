@@ -17,10 +17,6 @@ Learn about the different options to extend the capabilities of Universal Editor
 
 As an Adobe Experience Cloud service, the Universal Editor's UI can be extended using the App Builder and Experience Manager. Adobe offers many ready-made extensions that you can use for your project.
 
-* **Generate Variations**: Optimize any content by effortlessly creating multiple variations directly within the editor.
-* **Experimentation**: Start A/B tests or content personalization directly within the editor, including status tracking and detailed reporting.
-* **Workfront**: Streamline task management and collaboration by viewing and managing Workfront items the editor.
-* **Workflow**: Initiate review and publish workflows with integrated AEM workflows.
 * **[AEM Product Picker for Universal Editor](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/ue-product-picker/)**: Integrate Adobe Commerce data by selecting or removing product data from the editor.
 * **[Universal Editor Content Drafts](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/universal-editor-content-drafts/)**: Create, edit, and manage multiple drafts of content.
 * **[Configurable Asset Picker](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/)**: Enable asset selection from repositories other than the one used by the edited page.
