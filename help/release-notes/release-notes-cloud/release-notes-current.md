@@ -32,22 +32,13 @@ You can find the latest maintenance release notes [here](/help/release-notes/mai
 
 ## Release Video {#release-video}
 
-Have a look at the January 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
+Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
-
-**Content Fragment Editor Commenting now generally available**
-
-Easily collaborate with coworkers when authoring AEM Content Fragments by using the new and modernized commenting service in the AEM Content Fragment Editor. 
-[Read more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring?#commenting-on-your-fragment).
-
-**Content Fragment Editor and Admin User Interfaces, updated AEM as a Cloud Service version support**
-
-Minimum supported AEM as a Cloud Service version for new Content Fragment Admin and Editor user interfaces is now 2023.8.13099. Earlier versions from before the general availability release of the new user interfaces are not supported anymore 
 
 ### Early Adopter Program {#sites-early-adopter}
 
@@ -58,21 +49,6 @@ Enhanced [Content Fragment referencing with unique ID-based references](/help/he
 **AEM REST OpenAPI for Content Fragment Delivery**
 
 The [AEM REST OpenAPI for Content Fragment Delivery](/help/headless/aem-rest-openapi-content-fragment-delivery.md) is available now for AEM as a Cloud Service.
-
-### Deprecated Features {#sites-deprecated}
-
-#### SPA Editor {#spa-editor}
-
-[The SPA Editor](/help/implementing/developing/hybrid/introduction.md) has been deprecated for new projects starting with release 2025.1.0. The SPA Editor remains supported for existing projects, but should not be used for new projects.
-
-The preferred editors for managing headless content in AEM are now:
-
-* [The Universal Editor](/help/edge/wysiwyg-authoring/authoring.md) for visual editing.
-* [The Content Fragment Editor](/help/assets/content-fragments/content-fragments-managing.md) for form-based editing.
-
-#### PWA Features {#pwa-features}
-
-[The progressive web app (PWA) features](/help/sites-cloud/authoring/sites-console/enable-pwa.md) for AEM Sites are now deprecated for new projects starting with release 2025.1.0. This feature remains supported for existing projects, but should not be used for new projects
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
