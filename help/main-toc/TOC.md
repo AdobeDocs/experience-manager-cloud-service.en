@@ -205,6 +205,8 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Generate Variations](/help/generative-ai/release-notes-generate-variations.md)
   + Release Notes for Universal Editor {#univeral-editor}
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
+    + 2025 {#2025}
+      + [2025.01.16 Release Notes](/help/release-notes/universal-editor/2025/2025-01-16.md)
     + 2024 {#2024}
       + [2024.12.02 Release Notes](/help/release-notes/universal-editor/2024/2024-12-02.md)
       + [2024.11.13 Release Notes](/help/release-notes/universal-editor/2024/2024-11-13.md)
@@ -1281,7 +1283,8 @@ user-guide-title: AEM as a Cloud Service
       + [SecurBank Sample App](/help/implementing/universal-editor/securbank.md)
       + [Events](/help/implementing/universal-editor/events.md)
       + [Filtering Components](/help/implementing/universal-editor/filtering.md)
-      + [Customizing](/help/implementing/universal-editor/customizing.md)     
+      + [Customizing](/help/implementing/universal-editor/customizing.md)  
+      + [Extending](/help/implementing/universal-editor/extending.md)   
       + [Architecture](/help/implementing/universal-editor/architecture.md)
       + [Authentication](/help/implementing/universal-editor/authentication.md)
       + [Getting Started](/help/implementing/universal-editor/getting-started.md)
