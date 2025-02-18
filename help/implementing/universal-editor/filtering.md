@@ -47,4 +47,7 @@ Setting the `components` attribute in a filter definition to `null` allows all c
 
 >[!TIP]
 >
->Learn about other customization and extension options available to the Universal Editor in the document [Customizing and Extending the Universal Editor](/help/implementing/universal-editor/customizing.md).
+>Learn about other customization and extension options available to the Universal Editor in the documents:
+>
+>* [Customizing the Universal Editor](/help/implementing/universal-editor/customizing.md)
+>* [Extending the Universal Editor](/help/implementing/universal-editor/extending.md)
