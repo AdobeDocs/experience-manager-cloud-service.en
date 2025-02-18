@@ -10,18 +10,18 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 19556 {#19556}
+## Release 19567 {#19567}
 
-Summarized below are the continuous improvements for maintenance release 19556, which was publicly released on February 18, 2025. The previous maintenance release was release 19352.
+Summarized below are the continuous improvements for maintenance release 19567, which was publicly released on February 18, 2025. The previous maintenance release was release 19352.
 
 The 2025.2.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-19556}
+### Enhancements {#enhancements-19567}
 
 * GRANITE-56650: Content distribution should only signal blocked queue after a few retries
 * SKYOPS-89616: Allow to Create up to 40 Technical Accounts in Adobe Developer Console
 
-### Fixed Issues {#fixed-issues-19556}
+### Fixed Issues {#fixed-issues-19567}
 
 * CNTBF-232: Deep package nt:file nodes to include mandatory jcr:content child
 * CQ-4358930: Performance Issue During Page Properties Load with many Multifields
@@ -39,19 +39,19 @@ The 2025.2.0 feature activation will provide the full feature set for this maint
 
 For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
 
-### Known Issues {#known-issues-19556}
+### Known Issues {#known-issues-19567}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-19556}
+### Deprecated Features and APIs {#deprecated-19567}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-19556}
+### Security Fixes {#security-19567}
 
 AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 21 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-19556}
+### Embedded Technologies {#embedded-tech-19567}
 
 |Technology| Version      | Link                                                                                                              |
 |---|--------------|-------------------------------------------------------------------------------------------------------------------|
