@@ -135,7 +135,7 @@ To publish or unpublish a page using Manage Publication:
 
    * **Destination** 
 
-     Choose if you wish to publish to your publish service (default) or your preview service. Only available if you have a [preview service configured.](//help/sites-cloud/authoring/sites-console/previewing-content.md)
+     Choose if you wish to publish to your publish service (default) or your preview service. Only available if you have a [preview service configured.](/help/sites-cloud/authoring/sites-console/previewing-content.md)
 
    * **Scheduling**
 
