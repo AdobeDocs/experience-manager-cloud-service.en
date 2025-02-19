@@ -151,6 +151,7 @@ The custom component includes a component model that specifies which properties 
     }
     ]
     ```
+    
     >[!NOTE]
     >
     > To add a new field to the **Property** dialog of a custom component, adhere to the [defined schema](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#loading-model).
