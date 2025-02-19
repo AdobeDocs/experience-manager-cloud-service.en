@@ -23,7 +23,7 @@ By the end of the article:
 
 ## Understanding Form Field Types
 
-Before diving into styling, let's review the common form [field types](/help/edge/docs/forms/universal-editor/style-theme-forms.md) supported by the Adaptive Forms Block:
+Before diving into styling, let's review the common form [field types](/help/edge/docs/forms/universal-editor/create-custom-component.md#supported-fieldtypes) supported by the Adaptive Forms Block:
 
 * Input Fields: These include text inputs, email inputs, password inputs, and more.
 * Checkbox Groups: Used for selecting multiple options.
