@@ -19,6 +19,25 @@ Whether you're managing lightweight client-side rendering, ensuring cross-browse
 
 ## Key Features of Universal Editor for EDS Forms
 
+<style>
+
+.ribbon {
+  position: absolute;
+  top: 10px;
+  left: -40px;
+  background-color: #ff5c5c; /* Red background */
+  color: white;
+  padding: 5px 40px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transform: rotate(-45deg);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  pointer-events: none; /* So it doesn't block clicks on the card */
+}
+
+</style>
+
 
 <div>
  <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/universal-editor-user-interface" target="_blank" style="text-decoration: none; color: inherit;">
@@ -70,11 +89,14 @@ Whether you're managing lightweight client-side rendering, ensuring cross-browse
     <p>Styling with CSS enables developers to customize the appearance of form elements and create a visually appealing design that aligns with the website aesthetics.</p>
   </div>
 </a>
-    <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/prefill-services.svg" alt="Pre-fill Services">
-    <h3>Pre-fill Services</h3>
-    <p>Pre-fill Services automatically populate form fields with relevant user data from various sources, reducing manual input and enhancing user experience.</p>
-  </div>
+    <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; position: relative;">
+  <span style="position: absolute; top: 10px; left: -40px; background-color: #ff5c5c; color: white; padding: 5px 40px; font-size: 12px; font-weight: bold; text-transform: uppercase; transform: rotate(-45deg); box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); pointer-events: none;">
+    COMING SOON
+  </span>
+  <img src="/help/edge/docs/forms/universal-editor/assets/prefill-services.svg" alt="Pre-fill Services">
+  <h3>Pre-fill Services</h3>
+  <p>Pre-fill Services automatically populate form fields with relevant user data from various sources, reducing manual input and enhancing user experience.</p>
+</div>
   <a href="https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md" target="_blank" style="text-decoration: none; color: inherit;">
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
     <img src="/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg" alt="A/B Testing">
