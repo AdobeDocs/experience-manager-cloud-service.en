@@ -43,18 +43,7 @@ You can link a model to a component in two ways: using the [component definition
 
 This is the preferred method of linking the model to the component. Doing so allows you to maintain the link centrally in the component definition and enables dragging components across containers.
 
-Simply include the `model` property in the `template` directive in the component-definition.json file.
-
-```json
-...
-"template":{
-                  "text":"Default Text",
-                  "name":"Text",
-                  "model":"text",
-                  ...
-           }
-...
-```
+Simply include the `model` property in the component object in the `components` array in the `component-definition.json` file.
 
 For details, please see the document [Component Definition.](/help/implementing/universal-editor/component-definition.md)
 
