@@ -187,7 +187,7 @@ Select the open app preview icon to open the page you are currently editing in i
 
 #### Publish {#publish}
 
-Select the publish button so you can publish the changes to the content live for consumption by your readers.
+Select the publish button so you can publish the changes to the content live for consumption by your readers or to a preview environment for review.
 
 ![Publish button](assets/publish.png)
 
