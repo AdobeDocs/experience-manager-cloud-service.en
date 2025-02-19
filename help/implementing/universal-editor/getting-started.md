@@ -133,7 +133,7 @@ If you have an existing AEM project using [the page editor](/help/sites-cloud/au
 
 1. Click **Save**.
 
-1. Check your [externalizer configuration](/help/implementing/developing/tools/externalizer.md) and ensure at a minimum you have the local, author, and publish environments set.
+1. Check your [externalizer configuration](/help/implementing/developing/tools/externalizer.md) and ensure at a minimum you have the local, author, and publish environments set as in the following example.
 
    ```text
    "local $[env:AEM_EXTERNALIZER_LOCAL;default=http://localhost:4502]",
