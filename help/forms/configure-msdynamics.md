@@ -46,6 +46,7 @@ Before integrating [!DNL Microsoft® Dynamics 365] with AEM Forms as a Cloud Ser
     * Enable Microsoft Dynamics 365 aaplications
     
     Follow the steps in the video to create an account in the Power Platform Admin Center. In this video, a trial account has been created for demonstration purposes.
+    
     >[!VIDEO](https://video.tv.adobe.com/v/3444388)
 
 1. **Register an application for [!DNL Microsoft&reg; Dynamics 365] in Azure Active Directory**
