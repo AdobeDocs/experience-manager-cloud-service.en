@@ -27,6 +27,10 @@ You can [access Generate Variations](#access-generate-variations) from the follo
 >
 >In all cases, to use Generate Variations you must ensure that the [access prerequisites](#access-prerequisites) are fulfilled.
 
+>[!NOTE]
+>
+>The standalone version of [Generate Variations can still be directly accessed](/help/generative-ai/generate-variations.md).
+
 You can then:
 
 * [Select the content you want to work with](#select-the-content) - from existing blocks of your content
@@ -182,7 +186,7 @@ To grant access to specific users, assign their user account to the respective p
 
 ### Access from the AEM Sidekick for document based authoring {#access-aem-sidekick}
 
-Access from the AEM Sidekick is used for document based authoring. 
+Access from the AEM Sidekick is used for [document based authoring](/help/edge/wysiwyg-authoring/authoring.md). 
 
 Some configuration is needed before you can access Generate Variations from the Sidekick (of Edge Delivery Services). 
 
