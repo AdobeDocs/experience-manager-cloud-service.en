@@ -229,7 +229,7 @@ Actions are prioritized according to their types in the following table, which i
 
 The `wafFlags` property, which can be used in the licensable WAF traffic filter rules, may reference the following:
 
-#### Attacks
+#### Malicious Traffic
 
 | **Flag ID**  | **Flag Name** | **Description**  |
 |---|---|---|
@@ -245,7 +245,7 @@ The `wafFlags` property, which can be used in the licensable WAF traffic filter 
 | LOG4J-JNDI  | Log4J JNDI  |  Log4J JNDI attacks attempt to exploit the [Log4Shell vulnerability](https://en.wikipedia.org/wiki/Log4Shell) present in Log4J versions earlier than 2.16.0 |
 | CVE | CVE | Flag to identify a CVE. Is always combined with a flag `CVE-<CVE Number>`. Contact Adobe to learn more about which CVEs Adobe will protect you from.|
 
-#### Anomalies
+#### Suspicious Traffic
 
 | **Flag ID**  | **Flag Name** | **Description**  |
 |---|---|---|
@@ -265,7 +265,7 @@ The `wafFlags` property, which can be used in the licensable WAF traffic filter 
 | PRIVATEFILE  | Private files  | Private files are confidential in nature, such as an Apache `.htaccess` file, or a configuration file which could leak sensitive information  |
 | SCANNER  |  Scanner | Identifies popular scanning services and tools  |
 
-#### Informational
+#### Miscellaneous Traffic
 
 | **Flag ID**  | **Flag Name** | **Description**  |
 |---|---|---|
@@ -274,7 +274,6 @@ The `wafFlags` property, which can be used in the licensable WAF traffic filter 
 | JSON-ERROR  | JSON Encoding Error  | A POST, PUT, or PATCH request body that is specified as containing JSON within the "Content-Type" request header but contains JSON parsing errors. This is often related to a programming error or an automated or malicious request.  |
 | TORNODE  |  Tor Traffic | Tor is software that conceals a user's identity. A spike in Tor traffic can indicate an attacker trying to mask their location.  |
 | XML-ERROR  | XML Encoding Error  | A POST, PUT, or PATCH request body that is specified as containing XML within the "Content-Type" request header but contains XML parsing errors. This is often related to a programming error or an automated or malicious request.  |
-
 
 ## Considerations {#considerations}
 
