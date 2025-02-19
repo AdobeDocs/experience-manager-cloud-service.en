@@ -45,6 +45,7 @@ To add footnote in Adaptive Forms, perform the following steps:
     >* If there are duplicate footnotes, then numeration is same for all the duplicate footnotes. 
 
 1. From the component browser, drag-drop the **[!UICONTROL Footnote Placeholder]** component onto the Adaptive Form.
+    
     >[!NOTE]
     >
     >* At the publish instance, footnotes are displayed at the position where **[!UICONTROL Footnote Placeholder]** component is placed onto the Adaptive Form.  
