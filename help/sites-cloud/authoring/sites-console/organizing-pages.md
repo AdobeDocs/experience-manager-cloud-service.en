@@ -9,7 +9,7 @@ role: User
 
 # Organizing Pages {#creating-and-organizing-pages}
 
-Learn how to organize your website with AEM. Once you understand how you need to organize your pages, you can [create new pages](/help/sites-cloud/authoring/sites-console/creating-pages.md) and [manage exiting pages.](/help/sites-cloud/authoring/sites-console/managing-pages.md)
+Learn how to organize your website with AEM. Once you understand how you need to organize your pages, you can [create new pages](/help/sites-cloud/authoring/sites-console/creating-pages.md) and [manage exiting pages](/help/sites-cloud/authoring/sites-console/managing-pages.md).
 
 {{edge-delivery-authoring}}
 
@@ -45,7 +45,7 @@ The following shows an example from the [WKND Tutorial](https://experienceleague
    /...
 ```
 
-This structure can be viewed From the [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) where you can navigate through the pages of your website and perform actions on the pages.
+This structure can be viewed From the [**Sites** console](/help/sites-cloud/authoring/sites-console/introduction.md), where you can navigate through the pages of your website and perform actions on the pages.
 
 ## Page Naming Conventions {#page-naming-conventions}
 
@@ -124,7 +124,7 @@ AEM comes with several templates provided out-of-the-box. The templates availabl
 
 ## Components {#components}
 
-[Components](/help/implementing/developing/components/overview.md) are the elements provided by AEM so that you can add specific types of content. AEM comes with a range of out-of-the-box components, called [the Core Components,](/help/implementing/developing/components/overview.md#core-components) that provide comprehensive functionality. Some examples of the components are:
+[Components](/help/implementing/developing/components/overview.md) are the elements provided by AEM so that you can add specific types of content. AEM comes with a range of out-of-the-box components, called [the Core Components](/help/implementing/developing/components/overview.md#core-components), that provide comprehensive functionality. Some examples of the components are:
 
 * Text
 * Image

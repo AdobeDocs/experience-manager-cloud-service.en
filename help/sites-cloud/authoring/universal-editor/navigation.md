@@ -18,8 +18,8 @@ To do this, the Universal Editor provides content authors with an intuitive UI t
 
 >[!TIP]
 >
->* For details on authoring using the Universal Editor, see the document [Authoring Content with the Universal Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
->* For a more detailed introduction to the Universal Editor, see the document [Universal Editor Introduction.](/help/implementing/universal-editor/introduction.md)
+>* For details on authoring using the Universal Editor, see the document [Authoring Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md).
+>* For a more detailed introduction to the Universal Editor, see [Universal Editor Introduction](/help/implementing/universal-editor/introduction.md).
 
 ## Prepare the App {#prepare-app}
 
@@ -42,13 +42,13 @@ Once the app is instrumented to work with the Universal Editor, the Universal Ed
 
 >[!NOTE]
 >
->When editing a page in the [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) the console will open the editor appropriate to the page's [template:](/help/sites-cloud/authoring/page-editor/templates.md) either the Universal Editor described in this document, or the [page editor.](/help/sites-cloud/authoring/page-editor/introduction.md)
+>When editing a page in the [**Sites** console](/help/sites-cloud/authoring/sites-console/introduction.md), the console will open the editor appropriate to the page's [template](/help/sites-cloud/authoring/page-editor/templates.md) either the Universal Editor described in this document, or the [page editor](/help/sites-cloud/authoring/page-editor/introduction.md).
 
 ### Accessing Directly {#accessing-directly}
 
-1. Sign into the Universal Editor. You need an Adobe ID to sign in and [have access to the Universal Editor.](/help/implementing/universal-editor/getting-started.md#request-access)
+1. Sign into the Universal Editor. You need an Adobe ID to sign in and [have access to the Universal Editor](/help/implementing/universal-editor/getting-started.md#request-access).
 
-1. After you are signed in, enter the URL of the page you want to edit in the [location bar.](#location-bar) so you can start editing content such as text content or media content.
+1. After you are signed in, enter the URL of the page you want to edit in the [location bar](#location-bar), so you can start editing content such as text content or media content.
 
 ## Understand The UI {#ui}
 
@@ -69,7 +69,7 @@ The Experience Cloud header is always present at the top of the screen. It is an
 
 #### Experience Manager {#experience-manager}
 
-Select the Adobe Experience Cloud link at the left of the header to navigate to the root of your Experience Manager solution to access tools such as [Cloud Manager,](/help/onboarding/cloud-manager-introduction.md) [Cloud Acceleration Manager,](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) and [Software Distribution.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
+Select the Adobe Experience Cloud link at the left of the header to navigate to the root of your Experience Manager solution to access tools such as [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md), and [Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
 
 ![Global Navigation button](assets/global-navigation.png)
 
@@ -93,7 +93,7 @@ The help icon provides quick access to learning and support resources.
 
 #### Notifications {#notifications}
 
-This icon is badged with the number of currently assigned incomplete [notifications.](/help/implementing/cloud-manager/notifications.md)
+This icon is badged with the number of currently assigned incomplete [notifications](/help/implementing/cloud-manager/notifications.md).
 
 ![Notifications](assets/notifications.png)
 
@@ -105,7 +105,7 @@ Select the icon representing your user to access your user settings. If you do n
 
 ### The Universal Editor Toolbar {#universal-editor-toolbar}
 
-The Universal Editor toolbar is always present at the top of the screen just below [the Experience Cloud header.](#experience-cloud-header) It gives you quick access to navigate to another page to edit and to publish the current page.
+The Universal Editor toolbar is always present at the top of the screen just below [the Experience Cloud header](#experience-cloud-header). It gives you quick access to navigate to another page to edit and to publish the current page.
 
 ![The Universal Editor toolbar](assets/universal-editor-toolbar.png)
 
@@ -121,7 +121,7 @@ On the start page you can enter the URL of the site you want to edit with the Un
 
 >[!NOTE]
 >
->Any page that you want to edit with the Universal Editor must be [instrumented to support he Universal Editor.](/help/implementing/universal-editor/getting-started.md)
+>Any page that you want to edit with the Universal Editor must be [instrumented to support he Universal Editor](/help/implementing/universal-editor/getting-started.md).
 
 #### Location Bar {#location-bar}
 
@@ -135,11 +135,11 @@ The location bar shows you the address of the page you are editing. Select to en
 
 >[!NOTE]
 >
->Any page that you want to edit with the Universal Editor must be [instrumented to support he Universal Editor.](/help/implementing/universal-editor/getting-started.md)
+>Any page that you want to edit with the Universal Editor must be [instrumented to support he Universal Editor](/help/implementing/universal-editor/getting-started.md).
 
 #### Authentication Header Settings {#authentication-settings}
 
-Select the authentication header settings icon if you need to [set a custom authentication header for local development purposes.](/help/implementing/universal-editor/developer-overview.md#auth-header)
+Select the authentication header settings icon if you need to [set a custom authentication header for local development purposes](/help/implementing/universal-editor/developer-overview.md#auth-header).
 
 ![Authentication heder settings button](assets/authentication-header-settings.png)
 
@@ -183,11 +183,11 @@ Select the open app preview icon to open the page you are currently editing in i
 
 >[!TIP]
 >
->The preview URL for your app [can be customized.](/help/implementing/universal-editor/customizing.md#custom-preview-urls)
+>The preview URL for your app [can be customized](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
 
 #### Publish {#publish}
 
-Select the publish button so you can publish the changes to the content live for consumption by your readers.
+Select the publish button so you can publish the changes to the content live for consumption by your readers or to a preview environment for review.
 
 ![Publish button](assets/publish.png)
 
@@ -207,8 +207,8 @@ For example, the ability to unpublish a page (i.e. reverse the action of the [**
 
 The Universal Editor offers a customizable and extensible authoring experience. If you see additional buttons in the toolbar, your Universal Editor has been extended.
 
-* For details on extension possibilities, please see the [Customizing and Extending the Universal Editor.](/help/implementing/universal-editor/customizing.md)
-* For details on how an individual extension works, please see the [Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
+* For details on extension possibilities, please see the [Extending the Universal Editor](/help/implementing/universal-editor/extending.md).
+* For details on how an individual extension works, please see the [Extension Manager documentation](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
 
 ### The Editor {#editor}
 
@@ -216,7 +216,7 @@ The editor occupies most of the window and is where the page specified in [the l
 
 ![Editor](assets/editor.png)
 
-If the editor is in [preview mode,](#preview-mode) the content will be navigable and you can follow links, but you cannot edit the content.
+If the editor is in [preview mode](#preview-mode), the content will be navigable and you can follow links, but you cannot edit the content.
 
 ### Properties Panel {#properties-rail}
 
@@ -274,7 +274,7 @@ If you select a container component either in the content tree or in the editor,
 
 ![Add icon](assets/ue-add-component-icon.png)
 
-Tapping or clicking the add button opens a drop-down menu of components that are available to [add to the selected container.](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)
+Tapping or clicking the add button opens a drop-down menu of components that are available to [add to the selected container](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components).
 
 ![Add context menu](assets/add-context-menu.png)
 
@@ -288,7 +288,7 @@ If you select a component within a container component either in the content tre
 
 ![Duplicate icon](assets/duplicate.png)
 
-Tapping or clicking the duplicate button [duplicates the selected component.](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components)
+Tapping or clicking the duplicate button [duplicates the selected component](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components).
 
 ##### Delete {#delete}
 
@@ -296,19 +296,19 @@ If you select a component within a container component either in the content tre
 
 ![Delete icon](assets/ue-delete-component-icon.png)
 
-Tapping or clicking the delete button [deletes the component.](/help/sites-cloud/authoring/universal-editor/authoring.md#deleting-components)
+Tapping or clicking the delete button [deletes the component](/help/sites-cloud/authoring/universal-editor/authoring.md#deleting-components).
 
 >[!TIP]
 >
 >Use the hot key `Shift+Backspace` to delete a selected component from a container.
 
-#### Additional Buttons {#additional-properties-rail-buttons}
+## Additional Features {#additional-features}
 
-The Universal Editor offers a customizable and extensible authoring experience. If you see additional buttons in the properties panel, your Universal Editor has been extended.
+The Universal Editor offers a customizable and an extensible authoring experience. If you see additional buttons or options in the properties panel or toolbar, your Universal Editor has been extended.
 
-* For details on extension possibilities, please see the [Customizing and Extending the Universal Editor.](/help/implementing/universal-editor/customizing.md)
-* For details on how an individual extension works, please see the [Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
+* For details on extension possibilities, please see the [Customizing and Extending the Universal Editor](/help/implementing/universal-editor/customizing.md).
+* For details on how an individual extension works, please see the [Extension Manager documentation](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
 
 ## Next Steps {#next-steps}
 
-Now that you know how to access and navigate the Universal Editor, you are ready to [author content using it.](/help/sites-cloud/authoring/universal-editor/authoring.md)
+Now that you know how to access and navigate the Universal Editor, you are ready to [author content using it](/help/sites-cloud/authoring/universal-editor/authoring.md).
