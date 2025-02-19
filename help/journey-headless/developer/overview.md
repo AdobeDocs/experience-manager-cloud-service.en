@@ -71,7 +71,7 @@ Although you can go directly to a particular part of the journey, many concepts 
 
 ## What's Next {#what-is-next}
 
-Get started by checking out the next article: [Learn about CMS Headless Development.](learn-about.md)
+Get started by checking out the next article: [Learn about CMS Headless Development](learn-about.md),
 
 ### Choose Your Own Adventure {#choose-your-path}
 

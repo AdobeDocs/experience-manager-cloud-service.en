@@ -70,7 +70,7 @@ You receive a message that the project was created.
 
 >[!NOTE]
 >
->It is assumed that the necessary language structure for the translations languages has already been created as part of the [definition of your content structure.](getting-started.md#content-structure) This should be done in collaboration with the content architect.
+>It is assumed that the necessary language structure for the translations languages has already been created as part of the [definition of your content structure](getting-started.md#content-structure). This should be done in collaboration with the content architect.
 >
 >If the language folders are not created ahead of time, you will not be able to create language copies as described in the previous steps.
 
@@ -120,7 +120,7 @@ The project is divided into multiple cards.
 
 * **Summary** - This card shows the basic header information of the project including the owner, language, and translation provider.
 * **Translation Job** - This card or these cards show(s) provide an overview of the actual translation job including the status, number of assets, and so on. Generally there is one job per language with the ISO-2 language code appended to the job name.
-  * When [automatically creating translation jobs,](#automatically-creating) AEM creates the jobs asynchronously and they may not appear immediately within the project.
+  * When [automatically creating translation jobs](#automatically-creating), AEM creates the jobs asynchronously and they may not appear immediately within the project.
 * **Team** - This card shows the users who are collaborating on this translation project. This journey does not cover this topic.
 * **Tasks** - Additional tasks associated with translating the content such as to do items or workflow items. This journey does not cover this topic.
 
@@ -169,7 +169,7 @@ Machine translations automatically return with a state of **Approved**. Human tr
 
 >[!NOTE]
 >
->If you did not deactivate the project option **Delete Launch After Promotion** as [described in the previous section,](#using-translation-project) translated items will appear with the **Deleted** state. This is normal as AEM automatically discards the translation records once the translated items arrive. The translated items have been imported as language copies, only the translation records have been deleted as they are no longer needed.
+>If you did not deactivate the project option **Delete Launch After Promotion** as [described in the previous section](#using-translation-project), translated items will appear with the **Deleted** state. This is normal as AEM automatically discards the translation records once the translated items arrive. The translated items have been imported as language copies, only the translation records have been deleted as they are no longer needed.
 >
 >Don't worry if this is unclear. These are in-depth details of how AEM works and does not affect your understanding of the journey. If you want to dive deeper on how AEM processes translations, see [additional resources](#additional-resources) section at the end of this article.
 
@@ -207,7 +207,7 @@ To add content to a translation job:
 >
 >The path browser is a powerful tool allowing you to search, filter, and navigate your content. Select the **Content Only/Filters** button to toggle the side panel and reveal advanced filters such as **Modified Date** or **Translation Status**.
 >
->You can learn more about the path browser in the [additional resources section.](#additional-resources)
+>You can learn more about the path browser in the [additional resources section](#additional-resources).
 
 You can use the prior steps to add the necessary content to all languages (jobs) for the project. After you have selected all the content, you can start the translation.
 
@@ -229,13 +229,13 @@ Machine translations automatically return with a state of **Approved**. Human tr
 
 >[!NOTE]
 >
->If you did not deactivate the project option **Delete Launch After Promotion** as [described in the previous section,](#using-translation-project) translated items will appear with the **Deleted** state. This is normal as AEM automatically discards the translation records once the translated items arrive. The translated items have been imported as language copies, only the translation records have been deleted as they are no longer needed.
+>If you did not deactivate the project option **Delete Launch After Promotion** as [described in the previous section](#using-translation-project), translated items will appear with the **Deleted** state. This is normal as AEM automatically discards the translation records once the translated items arrive. The translated items have been imported as language copies, only the translation records have been deleted as they are no longer needed.
 >
 >Don't worry if this is unclear. These are in-depth details of how AEM works and does not affect your understanding of the journey. If you want to dive deeper on how AEM processes translations, see [additional resources](#additional-resources) section at the end of this article.
 
 ## Reviewing Translated Content {#reviewing}
 
-[As previously seen,](#using-translation-project) machine translated content flows back into AEM with the status of **Approved** since the assumption is that because machine translation is being used, no human intervention is required. However, it is still possible to review the translated content.
+[As previously seen](#using-translation-project), machine translated content flows back into AEM with the status of **Approved** since the assumption is that because machine translation is being used, no human intervention is required. However, it is still possible to review the translated content.
 
 Simply go to the completed translation job and select a line item by tapping or clicking the checkbox. The icon **Preview in Sites** is shown in the tool bar.
 
@@ -279,7 +279,7 @@ Build on this knowledge and continue your AEM Sites translation journey by next 
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the translation journey by reviewing the document [Publish translated content,](publish-content.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
+While it is recommended that you move on to the next part of the translation journey by reviewing the document [Publish translated content](publish-content.md), the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
 
 * [Managing Translation Projects](/help/sites-cloud/administering/translation/managing-projects.md) - Learn the details of translation projects and additional features such as human translation workflows and multi-language projects.
 * [Authoring Environment and Tools](/help/sites-cloud/authoring/path-selection.md#path-selection) - AEM provides various mechanisms for organizing and editing your content including a robust path browser.

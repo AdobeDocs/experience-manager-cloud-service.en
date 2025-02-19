@@ -18,7 +18,7 @@ This document provides an overview of a model definition and of fields and the c
 
 >[!TIP]
 >
->If you are not familiar with how to instrument your app for the Universal Editor, please see the document [Universal Editor Overview for AEM Developers.](/help/implementing/universal-editor/developer-overview.md)
+>If you are not familiar with how to instrument your app for the Universal Editor, please see the document [Universal Editor Overview for AEM Developers](/help/implementing/universal-editor/developer-overview.md).
 
 ## Model Definition Structure {#model-structure}
 
@@ -37,11 +37,30 @@ The model definition is a JSON structure, starting with an array of models.
 
 See the **[Fields](#fields)** section of this document for more information about how to define your `fields` array.
 
+You can link a model to a component in two ways: using the [component definition](#component-definition) or [via the instrumentation.](#instrumentation)
+
+### Linking Using the Component Definition {#component-definition}
+
+This is the preferred method of linking the model to the component. Doing so allows you to maintain the link centrally in the component definition and enables dragging components across containers.
+
+Simply include the `model` property in the component object in the `components` array in the `component-definition.json` file.
+
+For details, please see the document [Component Definition.](/help/implementing/universal-editor/component-definition.md)
+
+### Linking Using Instrumentation {#instrumentation}
+
 To use the model definition with a component, the `data-aue-model` attribute can be used.
 
 ```html
 <div data-aue-resource="urn:datasource:/content/path" data-aue-type="component"  data-aue-model="model-id">Click me</div>
 ```
+
+>[!NOTE]
+>
+>The Universal Editor first checks if a model is linked via the instrumentation and uses that before checking the component definition. This means:
+>
+>* Projects that have implemented the link to the model via the instrumentation will continue to work as-is with no need for change.
+>* If you define the model in the [component definition](#component-definition) as well as in the instrumentation, the instrumentation will always be used.
 
 ## Loading a Model Definition {#loading-model}
 
@@ -133,7 +152,7 @@ An AEM tag component type enables an AEM tag picker, which can be used to attach
 
 #### AEM Content {#aem-content}
 
-An AEM content component type enables an AEM content picker, which can be used to select any AEM resource. Unlike the [reference component,](#reference) which can only select assets, the AEM content component can reference any AEM content. It offers an additional validation type.
+An AEM content component type enables an AEM content picker, which can be used to select any AEM resource. Unlike the [reference component](#reference), which can only select assets, the AEM content component can reference any AEM content. It offers an additional validation type.
 
 |Validation Type|Value Type|Description|Required|
 |---|---|---|---|
@@ -152,7 +171,10 @@ An AEM content component type enables an AEM content picker, which can be used t
       "name": "reference",
       "value": "",
       "label": "AEM Content Picker",
-      "valueType": "string"
+      "valueType": "string",
+      "validation": {
+            "rootPath": "/content/refresh"
+        }
     }
   ]
 }
@@ -296,11 +318,13 @@ A container component type allows the grouping of components. It offers an addit
 
 #### Content Fragment {#content-fragment}
 
-The Content Fragment picker can be used to select a [Content Fragment](/help/sites-cloud/authoring/fragments/content-fragments.md) and its variations (if required). It offers an additional configuration and validation.
+The Content Fragment picker can be used to select a [Content Fragment](/help/sites-cloud/authoring/fragments/content-fragments.md) and its variations (if required). It offers an additional configuration.
 
 |Configuration|Value Type|Description|Required|
 |---|---|---|---|
 |`variationName`|`string`|Variable name to store the selected variation. If undefined, no variation picker is displayed|No|
+
+It also offers an additional validation type.
 
 |Validation Type|Value Type|Description|Required|
 |---|---|---|---|
@@ -326,7 +350,10 @@ The Content Fragment picker can be used to select a [Content Fragment](/help/sit
         "name": "picker",
         "label": "Content Fragment Picker",
         "valueType": "string",
-        "variationName": "contentFragmentVariation"
+        "variationName": "contentFragmentVariation",
+        "validation": {
+            "rootPath": "/content/refresh"
+        }
       }
     ]
   }
@@ -432,11 +459,13 @@ It also offers an additional validation type.
 
 #### Experience Fragment {#experience-fragment}
 
-The Experience Fragment picker can be used to select an [Experience Fragment](/help/sites-cloud/authoring/fragments/experience-fragments.md) and its variations (if required). It offers an additional configuration and validation.
+The Experience Fragment picker can be used to select an [Experience Fragment](/help/sites-cloud/authoring/fragments/experience-fragments.md) and its variations (if required). It offers an additional configuration.
 
 |Configuration|Value Type|Description|Required|
 |---|---|---|---|
 |`variationName`|`string`|Variable name to store the selected variation. If undefined, no variation picker is displayed|No|
+
+It also offers an additional validation type.
 
 |Validation Type|Value Type|Description|Required|
 |---|---|---|---|
@@ -634,7 +663,7 @@ A radio group component type allows for a mutually-exclusive selection from mult
 
 #### Reference {#reference}
 
-An reference component type enables an AEM asset picker, which can be used to select any AEM asset to reference. Unlike the [AEM content component,](#aem-content) which can select any AEM resource, the reference component can only reference assets. It offers an additional validation type.
+An reference component type enables an AEM asset picker, which can be used to select any AEM asset to reference. Unlike the [AEM content component](#aem-content), which can select any AEM resource, the reference component can only reference assets. It offers an additional validation type.
 
 A reference component type allows for a reference to another data object from the current object.
 

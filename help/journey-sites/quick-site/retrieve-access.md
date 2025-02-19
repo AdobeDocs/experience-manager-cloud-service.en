@@ -14,7 +14,7 @@ Learn how the front-end developer uses Cloud Manager to access git repository in
 
 If you are a front-end developer only responsible for the customization of the site theme, you do not need any knowledge of how AEM was set up and can skip to the [Objective](#objective) section of this document.
 
-If you also serve the role of Cloud Manager or AEM administrator and front-end developer, you learned in the previous document of the AEM Quick Site Creation journey, [Grant Access to the Front-End Developer,](grant-access.md) how to onboard the front-end developer so they have access to the git repository, and you should now know:
+If you also serve the role of Cloud Manager or AEM administrator and front-end developer, you learned in the previous document of the AEM Quick Site Creation journey, [Grant Access to the Front-End Developer](grant-access.md), how to onboard the front-end developer so they have access to the git repository, and you should now know:
 
 * How to add a front-end developer as a user.
 * How to grant the required roles to the front-end developer.
@@ -108,10 +108,10 @@ Now that you have completed this part of the AEM Quick Site Creation journey you
 * Understand at a high level what Cloud Manager is.
 * Have retrieved your credentials to access the AEM git so you can commit your customizations.
 
-Build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Customize the Site Theme,](customize-theme.md) where you learn how the site theme is built, how to customize, and how to test using live AEM content.
+Build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Customize the Site Theme](customize-theme.md), where you learn how the site theme is built, how to customize, and how to test using live AEM content.
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the Quick Site Creation journey by reviewing the document [Customize the Site Theme,](customize-theme.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
+While it is recommended that you move on to the next part of the Quick Site Creation journey by reviewing the document [Customize the Site Theme](customize-theme.md), the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
 
 * [Adobe Experience Manager Cloud Manager Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) - Explore the Cloud Manager documentation for full details of its features.
