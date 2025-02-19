@@ -35,15 +35,15 @@ The following is a complete, but simple `component-definition.json` as an exampl
         {
           "title":"Text",
           "id":"text",
+          "model": "text",
+          "filter": "texts",
           "plugins":{
             "aem":{
               "page":{
                 "resourceType":"wknd/components/text",
                 "template":{
                   "text":"Default Text",
-                  "name":"Text",
-                  "model":"text",
-                  "filter":"texts"
+                  "name":"Text"
                 }
               }
             },
@@ -52,9 +52,7 @@ The following is a complete, but simple `component-definition.json` as an exampl
                 "resourceType":"wknd/components/text",
                 "template":{
                   "text":"Default Text",
-                  "name":"Text",
-                  "model":"text",
-                  "filter":"texts"
+                  "name":"Text"
                 }
               }
             }
@@ -81,6 +79,10 @@ The following is a complete, but simple `component-definition.json` as an exampl
 * `id` uniquely identifies the component.
   * The [component model](/help/implementing/universal-editor/field-types.md#model-structure) of the same `id` defines the fields of the component.
   * Because it is unique it can be used, for example, in a [filter definition](/help/implementing/universal-editor/filtering.md) to determine which components can be added to a container.
+* `model` defines which [model](/help/implementing/universal-editor/field-types.md#model-structure) is used with the component.
+  * The model is thereby maintained centrally in the component definition and doesn't need to be [specified the instrumentation.](/help/implementing/universal-editor/field-types.md#instrumentation)
+  * This allows you to move components across containers.
+* `filter` defines which [filter](/help/implementing/universal-editor/filtering.md) should be used with the component.
 
 ## `plugins` {#plugins}
 
@@ -108,11 +110,6 @@ If the component is content on the page, you can provide the following informati
 #### `template` {#template}
 
 By providing optional key/value pairs, `template` can automatically write these to the new component. Additionally, the following optional values can also be specified.
-
-* `model` defines which [model](/help/implementing/universal-editor/field-types.md#model-structure) is used with the component.
-  * The model is thereby maintained centrally in the component definition and doesn't need to be [specified the instrumentation.](/help/implementing/universal-editor/field-types.md#instrumentation)
-  * This allows you to move components across containers.
-* `filter` defines which [filter](/help/implementing/universal-editor/filtering.md) should be used with the component.
 
 ### `cf` {#cf}
 
