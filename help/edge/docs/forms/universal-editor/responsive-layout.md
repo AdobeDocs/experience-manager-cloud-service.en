@@ -18,16 +18,16 @@ The responsive mode enables developers to design layouts that automatically adap
 
 ## Preview Forms in Responsive Mode for Different Devices 
 
-The Universal Editor provides an **Emulator** icon ![Emulator icon](/help/edge/docs/forms/universal-editor/assets/emulator.png){height-3%,width=3%} located at the top-right corner of the screen that allows you to preview pages across different device sizes and test the behavior of your responsive design for a better user experience.
+The Universal Editor provides an **Emulator** icon located at the top-right corner of the screen that allows you to preview pages across different device sizes and test the behavior of your responsive design for a better user experience.
 
 To see how the Universal Editor renders forms on different screen sizes, perform the following steps:
 
 1. Open the form in Universal editor for editing.
-1. Select the ![Emulator icon](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=3%,width=3%} available on the Universal Editor Toolbar and click the emulator icon to reveals the option.
+2. Select the ![Emulator icon](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=2%,width=2%} available on the Universal Editor Toolbar and click the emulator icon to display the option.
 
     ![Responsive Mode](/help/edge/docs/forms/universal-editor/assets/universal-editor-emulator.png)
 
-1. Select the option to emulate a mobile device and within the Universal Editor
+3. Select the option to emulate a mobile device and within the Universal Editor
 
     ![Responsive mode](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png){width=40%,height=40%}
 
@@ -42,19 +42,19 @@ The Universal Editor provides different emulators to preview forms on various de
     </tr>
     <tr>
         <td>Desktop</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="Desktop Emulator"></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="Desktop Emulator" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td>Tablet</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="Tablet Emulator"></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="Tablet Emulator" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td>Mobile</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="Mobile Emulator""></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="Mobile Emulator" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td>Custom Device</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="Custom Device Emulator"></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="Custom Device Emulator" style="width: auto; height: auto"></td>
     </tr>
 </table>
 
