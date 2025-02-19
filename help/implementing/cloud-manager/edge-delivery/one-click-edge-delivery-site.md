@@ -51,79 +51,27 @@ See also [Introduction to Edge Delivery Services in Cloud Manager](/help/impleme
 
 1. Log into Cloud Manager at [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) and select the appropriate program.
 1. In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to reveal the left side menu.
-1. In the left side menu, under the **Services** heading, click ![Web page icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**.
-1. On the Edge Delivery page, in the **Edge Delivery to-do list** dialog box, in the **Complete prerequisites** group box, click **Provision**.
-1. In the **Provision Edge Delivery site** dialog box, in the **Project name** text field, enter the name of your site, then click **Provision**.
-  A toast appears near the top-center of the screen letting you know that Edge Delivery site provisioning has started.
-  When provisioning is complete and your site is validated, the site name appears in the **Edge Delivery sites** area on the Edge Delivery page.
+1. In the left side menu, under the **Program** heading, click **Overview**.
+1. On the **Program Overview** page, click the **Edge Delivery** tab.
+1. On the Edge Delivery page, In the **Edge Delivery to-do list** dialog box, in the **Complete prerequisites** group box, click **Provision**.
+1. In the **Provision Edge Delivery site** dialog box, in the **Project Name** text field, enter the name of your site, then click **Provision**.
+
+    A toast appears near the top-center of the screen letting you know that Edge Delivery site provisioning has started.
+
+  When provisioning is complete and your site is validated by Cloud Manager, the **Site name** (the project name you entered earlier) appears in the **Edge Delivery sites** list box on the Edge Delivery page. Also, a green check mark appears to the left of the repository URL.
+
 
 ### Explore an Edge Delivery site created with one click {#explore-one-click-ed-site}
 
 1. Log into Cloud Manager at [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) and select the appropriate program.
 1. In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to reveal the left side menu.
-1. In the left side menu, under the **Services** heading, click ![Web page icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**.
-1. On the Edge Delivery page, in the **Edge Delivery to-do list** dialog box, in the **Complete prerequisites** group box, click **Provision**.
+1. In the left side menu, under the **Program** heading, click **Overview**.
+1. On the **Program Overview** page, click the **Edge Delivery** tab.
+1. On the Edge Delivery page, do any one of the following:
 
-1. Click the Git Repository link to the right of the site's name.
-
-
-
-Publish. 
-
-Click Site name, 
-
-make some changes, then publish
-
-View page in Preview, then change URL to view Live version.
-
-Add collaborators.
-
-
-## Preview a one click Edge Delivery site
-
-## Publish a one click Edge Delivery site
-
-
-
-
-
-## Add collaborators to a one click Edge Delivery site
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  These enhancements aim to improve automation, simplify setup processes, and enhance collaboration for Edge Delivery Services users. <!-- CMGR-59362 -->
-
-  ![Create an Edge Delivery Site with one click](/help/implementing/cloud-manager/release-notes/assets/eds-one-click-60.png)
-
-  ![Provision Edge Delivery site dialog box](/help/implementing/cloud-manager/release-notes/assets/eds-provision-60.png)
+    | What to explore | Steps |
+    | --- | --- |
+    | GitHub repository of a site | <ul><li>In the **Edge Delivery sites** list box, under the **Repository** column heading, click the URL of the site you just created.</li> |
+    | Publish a site | <ul><li> In the **Edge Delivery sites** list box, to the far right of your site's name, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) to open the drop-down menu.</li><li>Click ![Bell icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) **Publish site** in the drop-down menu.<br>A toast message appears letting you know that publishing of the site was successfully started.</li></ul> |
+    | Preview a published site | <ul><li>In the **Edge Delivery sites** list box, under the **Site name** column heading, click the URL of the site you just created and published.<br>In the URL Address bar of your browser, note that the site's URL ends with `.page` indicating that you are seeing a preview of the site.</li><li>To see the site live, manually change `.page` to `.live` in the URL Address bar.</li></ul> | 
+    | Add a collaborator to your site | <ul><li> In the **Edge Delivery sites** list box, to the far right of your site's name, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) to open the drop-down menu.</li><li>Click ![Add Circle icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Gain access** in the drop-down menu.</li><li>In the **Add a collaborator to your site** dialog box, enter the email address of a contributor, then click **Add collaborator**.<br>A toast message appears letting you know that the collaborator was successfully added to the site.<br>The collaborator receives an email invitation to contribute to a shared Google drive folder by clicking **Open** in the email; there is no need to log in. They can edit and update files in the shared folder, then click **Publish site** in Cloud Manager, as described above. They can also preview the changes made, as described above.</li></ul> |
