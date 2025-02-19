@@ -118,7 +118,9 @@ If you only want to have certain extensions enabled for a page, you can set this
 
 If you have an existing AEM project using [the page editor](/help/sites-cloud/authoring/page-editor/introduction.md), when content authors edit pages, the pages are opened automatically with the page editor. You can define which editor AEM should open based on the content paths or the `sling:resourceType`, making the experience seamless for your authors, regardless of which editor is required for the selected content.
 
-1. Open the Configuration Manager.
+1. To take advantage of this configuration feature, reach out to Adobe Customer care to activate access to the Universal Editor URL Service for your program.
+
+1. Once Customer Care has activated access to the Universal Editor URL service, open the Configuration Manager.
 
    `http://<host>:<port>/system/console/configMgr`
 
@@ -131,7 +133,15 @@ If you have an existing AEM project using [the page editor](/help/sites-cloud/au
 
 1. Click **Save**.
 
-AEM will open the Universal Editor for pages based on this configuration in the following order.
+1. Check your [externalizer configuration](/help/implementing/developing/tools/externalizer.md) and ensure at a minimum you have the local, author, and publish environments set as in the following example.
+
+   ```text
+   "local $[env:AEM_EXTERNALIZER_LOCAL;default=http://localhost:4502]",
+   "author $[env:AEM_EXTERNALIZER_AUTHOR;default=http://localhost:4502]",
+   "publish $[env:AEM_EXTERNALIZER_PUBLISH;default=http://localhost:4503]"
+   ```
+
+Once those configuration steps are complete, AEM will open the Universal Editor for pages in the following order.
 
 1. AEM will check the mappings under `Universal Editor Opening Mapping` and if the content is under any paths defined there, the Universal Editor is opened for it.
 1. For content not under paths defined in `Universal Editor Opening Mapping`, AEM checks if the `resourceType` of the content matches those defined in **Sling:resourceTypes which shall be opened by Universal Editor** and if the content matches one of those types, the Universal Editor is opened for it at `${author}${path}.html`.
