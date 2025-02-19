@@ -125,6 +125,7 @@ The developer uploads and applies to the updated template to the adaptive form. 
 ![Binding Error](assets/we-retail-binding-error.png)
 
 The form developer binds Adaptive Forms fields with corresponding Document of Record template.
+
 >[!VIDEO](assets/we-retail-binding.mp4)
 
 Now, when the Adaptive Form is submitted an updated  Document of Record of record is created.
