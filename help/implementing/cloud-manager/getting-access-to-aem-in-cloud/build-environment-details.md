@@ -110,6 +110,9 @@ Update the usage of the Java packages `org.apache.groovy` or `org.codehaus.groov
 
   This bundle can be indirectly included by adding third party dependencies such as the AEM Groovy Console.
 
+* **Minimum version of Aries SPIFly:**
+Update the usage of the Java package `org.apache.aries.spifly.dynamic.bundle` to version 1.3.6 or newer to ensure support for newer JVM runtimes.
+
 The AEM Cloud Service SDK is compatible with Java 21 and can be used to validate the compatibility of your project with Java 21 before executing a Cloud Manager pipeline.
 
 * **Edit a runtime parameter:**
