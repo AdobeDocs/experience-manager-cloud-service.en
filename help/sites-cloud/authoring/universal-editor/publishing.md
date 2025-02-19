@@ -11,19 +11,46 @@ role: User
 
 Learn how the Universal Editor publishes content and how your apps can handle the published content.
 
-## Publishing Content as an Author {#publishing-content}
-
-When you as a content author are ready to publish your content, you simply need to tap or click [the **Publish** icon in the Universal Editor's tool bar.](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
-
-You can also publish [from the Sites console,](/help/sites-cloud/authoring/sites-console/publishing-pages.md) which can be useful when you wish to publish multiple pages of content.
-
->[!NOTE]
+>[!TIP]
 >
->The Universal Editor supports [extensions and UI extensibility](/help/implementing/universal-editor/extending.md) to allow workflows to support your publication process.
+>The publication process described here is the standard out-of-the-box feature of the Universal Editor.
+>
+>The Universal Editor also supports [extensions and UI extensibility](/help/implementing/universal-editor/extending.md) to allow workflows to support your publication process, so your publication flow may vary.
 
-## Similarities with AEM {#similarities}
+## Publishing Content from the Universal Editor {#publishing-content}
 
-For users of AEM, the process to publish content with the Universal Editor works as you are accustomed: on publication in AEM, the content is replicated from the author tier to the publish tier.
+When you as a content author are ready to publish your content, you simply need to tap or click the **Publish** icon in the Universal Editor's tool bar.
+
+![Publishing pages](assets/publish-menu.png)
+
+1. In the Universal Editor, tap or click [the **Publish** icon in the Universal Editor's tool bar.](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
+1. If you have a [preview service](/help/sites-cloud/authoring/sites-console/previewing-content.md) available, you can choose where you publish your content, either to **Preview** or **Publish**.
+1. The **Items** section lists the content that is included in the publication including:
+   * **New** items that have not yet been published.
+   * **Mofified** content that has been published, but modified since the last publication.
+   * **Published** content that has been published and not modified since that publication.
+
+   Tap or click the checkboxes next to those items to include/exclude them from publication as required. Tap or click **Extend** to see individual items included in the totals for the three categories and to be able to in/exclude them individually.
+
+   ![Publish items](assets/publish-items.png)
+
+   Tap or click the back arrow next to the **Items** heading to return to the overview.
+
+1. Tap or click **Publish** to publish or **Cancel** to abort.
+
+## Unpublishing Content from the Universal Editor {#unpublishing-content}
+
+Unpublishing content works in a similar fashion to publishing content. When you as a content author are ready to remove content from publication, tap or click the ellipsis icon in the Universal Editor's tool bar and then **Unpublish**.
+
+You then have the same options to unpublish content as you did when [publishing content.](#publishing-content) including unpublishing from a preview instance if available and which items to include in unpublication.
+
+## Publishing and Unpublishing from the Sites Console {#publishing-sites-console}
+
+You can also publish [from the Sites console,](/help/sites-cloud/authoring/sites-console/publishing-pages.md) which can be useful when you wish to publish multiple pages of content or schedule publication or unpublication.
+
+## Similarities with the Page Editor {#similarities}
+
+For users of the [AEM Page Editor,](/help/sites-cloud/authoring/page-editor/introduction.md) the process to publish content with the Universal Editor works as you are accustomed: on publication in AEM, the content is replicated from the author tier to the publish tier.
 
 ## Differences {#differences}
 
