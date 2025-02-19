@@ -1,3 +1,11 @@
+---
+title: Understanding Universal Editor - Responsive mode
+description: This article explains how to preview forms using different emulators in the Universal Editor to visualize their look and feel during authoring.
+feature: Edge Delivery Services
+role: Admin, Architect, Developer
+hide: Yes
+hide from TOC: Yes
+---
 
 # Responsive Mode in WYSIWYG Authoring
 
