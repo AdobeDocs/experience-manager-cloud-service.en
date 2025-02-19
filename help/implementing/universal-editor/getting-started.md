@@ -171,7 +171,7 @@ To learn more about the Universal Editor, see these documents.
 
 * [Universal Editor Introduction](introduction.md) - Learn how the Universal Editor enables editing any aspect of any content in any implementation so you can deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.
 * [Authoring Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) - Learn how easy and intuitive it is for content authors to create content using the Universal Editor.
-* [Publishing Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md) - Learn how the Universal Editor publishes content and how your apps can handle the published content.
+* [Publishing Content with the Universal Editor](/help/implementing/universal-editor/publishing.md) - Learn how the Universal Editor publishes content and how your apps can handle the published content.
 * [Universal Editor Architecture](architecture.md) - Learn about the architecture of the Universal Editor and how data flows between its services and layers.
 * [Attributes and Types](attributes-types.md) - Learn about the data attributes and types that the Universal Editor requires.
 * [Universal Editor Authentication](authentication.md) - Learn how the Universal Editor authenticates.
