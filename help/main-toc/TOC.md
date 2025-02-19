@@ -15,6 +15,7 @@ user-guide-title: AEM as a Cloud Service
   + [What is New and What is Different](/help/overview/what-is-new-and-different.md)
   + [Terminology - New for the Cloud](/help/overview/terminology.md)
   + [An Introduction to the Architecture of AEM as a Cloud Service](/help/overview/architecture.md)
+  + [Supported Client Platforms](/help/overview/supported-platforms.md)
   + [SEO and URL Management](/help/overview/seo-and-url-management.md)
   + [AEM as a Cloud Service on Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md)
   + [Assessing KPIs](/help/overview/assessing-kpis.md)
@@ -82,6 +83,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2025 {#2025}
+      + [Maintenance Release Notes for 2025.2.0](/help/release-notes/maintenance/2025/2025-2-0.md)
       + [Maintenance Release Notes for 2025.1.0](/help/release-notes/maintenance/2025/2025-1-0.md)
     + 2024 {#2024}
       + [Maintenance Release Notes for 2024.11.0](/help/release-notes/maintenance/2024/2024-11-0.md)
@@ -204,6 +206,8 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Generate Variations](/help/generative-ai/release-notes-generate-variations.md)
   + Release Notes for Universal Editor {#univeral-editor}
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
+    + 2025 {#2025}
+      + [2025.01.16 Release Notes](/help/release-notes/universal-editor/2025/2025-01-16.md)
     + 2024 {#2024}
       + [2024.12.02 Release Notes](/help/release-notes/universal-editor/2024/2024-12-02.md)
       + [2024.11.13 Release Notes](/help/release-notes/universal-editor/2024/2024-11-13.md)
@@ -364,10 +368,10 @@ user-guide-title: AEM as a Cloud Service
       + [Style System](/help/sites-cloud/authoring/page-editor/style-system.md)
       + [Undo Redo Limitations](/help/sites-cloud/authoring/page-editor/undo-redo.md)
     + Universal Editor {#universal-editor}
-      + [Navigating the Universal Editor](/help/sites-cloud/authoring/universal-editor/navigation.md)
-      + [Authoring Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
-      + [Publishing Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
-      + [Content Inheritance in the Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+      + [Navigation](/help/sites-cloud/authoring/universal-editor/navigation.md)
+      + [Authoring](/help/sites-cloud/authoring/universal-editor/authoring.md)
+      + [Publishing](/help/sites-cloud/authoring/universal-editor/publishing.md)
+      + [Inheritance](/help/sites-cloud/authoring/universal-editor/inheritance.md)
       + [Page Templates](/help/sites-cloud/authoring/universal-editor/templates.md)
     + Fragments {#fragments}
       + [Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md)
@@ -591,6 +595,7 @@ user-guide-title: AEM as a Cloud Service
     + [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md)
     + [Smart Imaging with client-side Device Pixel Ratio](/help/assets/dynamic-media/client-side-dpr.md)
     + [Deliver Dynamic Media assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
+    + [Dynamic Media templates](/help/assets/dynamic-media/dynamic-media-templates.md)
     + [Activate hotlink protection in Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
     + [3D Support](/help/assets/dynamic-media/assets-3d.md)
     + [Dynamic Media limitations](/help/assets/dynamic-media/limitations.md)
@@ -772,6 +777,7 @@ user-guide-title: AEM as a Cloud Service
         +  [Create custom submit action](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
         +  [Converting Adaptive Forms based on foundation components to Core Component-based forms using migration utility tool](/help/forms/migration-utility-tool-for-af-core-components.md)
         + [Email Templates in Adaptive Forms](/help/forms/html-email-templates-in-adaptive-forms.md)
+        + [​Manage Publication in Experience Manager Forms](/help/forms/manage-publication.md)
         + Introduction to Rule Editor for Adaptive Forms based on Core Components{#rule-editor-core-components}
              +  [Introduction to Rule Editor for Adaptive Forms based on Core Components](/help/forms/rule-editor-core-components.md)
              +  [Rule Editor user interface for Adaptive Forms based on Core Components](/help/forms/rule-editor-core-components-user-interface.md)
@@ -1026,6 +1032,7 @@ user-guide-title: AEM as a Cloud Service
     + WYSIWYG {#universal-editor}
       + [Overview - Universal Editor for Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
       + [Getting Started](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+      + [Understanding WYSIWYG Interface](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
       + [Add rules to using Rule Editor](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
       + [Create Custom Components](/help/edge/docs/forms/universal-editor/create-custom-component.md)
       + [Use reCAPTCHA in forms](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
@@ -1275,10 +1282,12 @@ user-guide-title: AEM as a Cloud Service
       + [Attributes and Item Types](/help/implementing/universal-editor/attributes-types.md)
       + [Component Definition](/help/implementing/universal-editor/component-definition.md)
       + [Model Definitions, Fields, and Component Types](/help/implementing/universal-editor/field-types.md)
+      + [Publishing](/help/implementing/universal-editor/publishing.md)
       + [SecurBank Sample App](/help/implementing/universal-editor/securbank.md)
       + [Events](/help/implementing/universal-editor/events.md)
       + [Filtering Components](/help/implementing/universal-editor/filtering.md)
-      + [Customizing](/help/implementing/universal-editor/customizing.md)     
+      + [Customizing](/help/implementing/universal-editor/customizing.md)  
+      + [Extending](/help/implementing/universal-editor/extending.md)   
       + [Architecture](/help/implementing/universal-editor/architecture.md)
       + [Authentication](/help/implementing/universal-editor/authentication.md)
       + [Getting Started](/help/implementing/universal-editor/getting-started.md)

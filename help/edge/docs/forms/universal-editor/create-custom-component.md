@@ -168,13 +168,14 @@ In this example, we add Step Value as a custom property to the Range component.
 To add the Step Value custom property, append the component model with the following lines of code in the` _<component>.json` file:
 
 ```javascript
-    {
-    "component": "number",
-    "name": "stepValue",
-    "label": "Step Value",
-    "valueType": "number"
-    }
-    ```
+      {
+      "component": "number",
+      "name": "stepValue",
+      "label": "Step Value",
+      "valueType": "number"
+      }
+```
+
 The JSON snippet defines a custom property called **Step Value** for a **Range** component. Below is a breakdown of each field:
 
 * **component**: Specifies the type of input field used in the Property dialog. In this case, `number` indicates that the field accepts numeric values.
@@ -317,6 +318,10 @@ const OOTBComponentDecorators = ['file-input',
 After completing the above steps, the custom component appears in the form's component list within the Universal Editor. You can then drag and drop it into your form section.
 
 ![range component](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
+
+The screenshot below shows the properties of the `range` component added to the component model, which specifies the properties the form author can configure.:
+
+![Properties of range component](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
 
 You can now define the runtime behavior of your custom component by adding styling and functionality.
 
