@@ -20,109 +20,33 @@ Whether you're managing lightweight client-side rendering, ensuring cross-browse
 ## Key Features of Universal Editor for EDS Forms
 
 
-<div>
- <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/universal-editor-user-interface" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG Interface"> 
-    <h3>WYSIWYG Interface</h3>
-    <p>Universal Editor provides a WYSIWYG interface for form design with a pre-built component library, responsive design, template-based creation, and real-time field modifications.</p>
-  </div>
-</a>
-<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/rule-editor-universal-editor" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/rule-editor.svg" alt="Rule Editor">
-    <h3>Rule Editor</h3>
-    <p>The rule editor lets users create dynamic form interactions using event-driven rules, instant validation, and error handling via lightweight JavaScript and JSON.</p>
-  </div>
-</a>
-<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/submit-action" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="Submit Actions">
-    <h3>Submit Actions</h3>
-    <p>Submit Actions support backend integration, conditional submission logic, secure endpoints, and pre-processors, streamlining submission workflows.</p>
-  </div>
-</a>
-<div>
-<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/publish-forms" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="Publishing/Unpublishing">
-    <h3>Publishing/Unpublishing</h3>
-    <p>Easily control the visibility of your forms—publish or unpublish them directly from the editor with just a few clicks, allowing you to dynamically manage availability and content updates in real time.</p>
-  </div>
-</a>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/responsive.svg" alt="Responsive Mode">
-    <h3>Responsive Mode </h3>
-    <p>Design forms that adapt seamlessly across devices (desktops, tablets, and mobile). Use the responsive mode to preview and test forms for various screen sizes.</p>
-  </div>
-<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/create-custom-component" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/custom-components.svg" alt="Custom Components">
-    <h3>Custom Components</h3>
-    <p>Custom components allow developers to extend form capabilities by creating unique elements tailored to specific organizational use cases.</p>
-  </div>
-</a>
-</div>
-<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/style-theme-forms" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/personalization.svg" alt="Styling">
-    <h3>Styling</h3>
-    <p>Styling with CSS enables developers to customize the appearance of form elements and create a visually appealing design that aligns with the website aesthetics.</p>
-  </div>
-</a>
-    <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/prefill-services.svg" alt="Pre-fill Services">
-    <h3>Pre-fill Services</h3>
-    <p>Pre-fill Services automatically populate form fields with relevant user data from various sources, reducing manual input and enhancing user experience.</p>
-  </div>
-  <a href="https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg" alt="A/B Testing">
-    <h3>A/B Testing</h3>
-    <p>A/B testing (experimentation) enables organizations to experiment with different form designs, layouts, and features to identify the best-performing variants.</p>
-  </div>
-</a>
-</div>
-<div>
-  <a href="https://www.aem.live/developer/martech-integration" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg" alt="Analytics & Tracking">
-    <h3>Analytics & Tracking</h3>
-    <p>Gain insights into user behavior, form interactions, and submission rates with built-in analytics and tracking to enable data-driven form optimization.</p>
-  </div>
-</a>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg" alt="Integration with Adobe Workfront">
-    <h3> Task Management </h3>
-    <p>Integration with Adobe Workfront lets teams manage tasks for form creation and maintenance, ensuring streamlined workflows.</p>
-  </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/data-binding.svg" alt="Data Binding">
-    <h3>Data Binding</h3>
-    <p>Data binding enables direct connections between form fields and backend data sources, supporting real-time updates and advanced data mapping for structured complaint data storage.</p>
-  </div>
-</div>
 
-<div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="Editor Customization">
-    <h3>Editor Customization</h3>
-    <p>Developers can extend the functionality of the editor through UI extensions, enabling tailored solutions that fit specific organizational needs.</p>
-  </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="Embedding Forms">
-    <h3>Embedding Forms</h3>
-    <p>Embed forms directly into Edge Delivery Services Sites pages using the Universal Editor's built-in embed component for a seamless user experience.</p>
-  </div>
-  <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/submit-action#submit-action-message-ue" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/thank-you.svg" alt="Thank You Configuration">
-    <h3>Thank You Configuration</h3>
-    <p>Easily customize the acknowledgment message or page shown to users after successful form submission.</p>
-  </div>
-</a>
-</div>
-</div>
+Here's the layout with equal-width cards (using fixed-width columns):
+
+| ![WYSIWYG Interface](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg) |  ![Rule Editor](/help/edge/docs/forms/universal-editor/assets/rule-editor.svg) | ![Submit Actions](/help/edge/docs/forms/universal-editor/assets/submit-actions.svg) |
+|:-------------:|:-------------:|:-------------:|
+| [**WYSIWYG Interface**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/universal-editor-user-interface) | [**Rule Editor**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/rule-editor-universal-editor) | [**Submit Actions**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/submit-action) |
+| Universal Editor provides a WYSIWYG interface for form design with a pre-built component library, responsive design, template-based creation, and real-time field modifications. | The rule editor lets users create dynamic form interactions using event-driven rules, instant validation, and error handling via lightweight JavaScript and JSON. | Submit Actions support backend integration, conditional submission logic, secure endpoints, and pre-processors, streamlining submission workflows. |
+
+| ![Publishing/Unpublishing](/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg) | ![Responsive Mode](/help/edge/docs/forms/universal-editor/assets/responsive.svg) | ![Custom Components](/help/edge/docs/forms/universal-editor/assets/custom-components.svg) |
+|:-------------:|:-------------:|:-------------:|
+| [**Publishing/Unpublishing**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/publish-forms) | **Responsive Mode** | [**Custom Components**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/create-custom-component) |
+| Easily control the visibility of your forms—publish or unpublish them directly from the editor with just a few clicks. | Design forms that adapt seamlessly across devices (desktops, tablets, and mobile). Use the responsive mode to preview and test forms for various screen sizes. | Custom components allow developers to extend form capabilities by creating unique elements tailored to specific organizational use cases. |
+
+| ![Styling](/help/edge/docs/forms/universal-editor/assets/personalization.svg) | ![Pre-fill Services](/help/edge/docs/forms/universal-editor/assets/prefill-services.svg) | ![A/B Testing](/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg) |
+|:-------------:|:-------------:|:-------------:|
+| [**Styling**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/style-theme-forms) | **Pre-fill Services** (Coming Soon) | [**A/B Testing**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
+| Styling with CSS enables developers to customize the appearance of form elements and create a visually appealing design that aligns with the website aesthetics. | Pre-fill Services automatically populate form fields with relevant user data from various sources, reducing manual input and enhancing user experience. | A/B testing enables organizations to experiment with different form designs, layouts, and features to identify the best-performing variants. |
+
+| ![Analytics & Tracking](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![Task Management](/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg) | ![Data Binding](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
+|:-------------:|:-------------:|:-------------:|
+| [**Analytics & Tracking**](https://www.aem.live/developer/martech-integration) | **Task Management** | **Data Binding** |
+| Gain insights into user behavior, form interactions, and submission rates with built-in analytics and tracking to enable data-driven form optimization. | Integration with Adobe Workfront lets teams manage tasks for form creation and maintenance, ensuring streamlined workflows. | Data binding enables direct connections between form fields and backend data sources, supporting real-time updates and advanced data mapping. |
+
+| ![Editor Customization](/help/edge/docs/forms/universal-editor/assets/editor-customization.svg) | ![Embedding Forms](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![Thank You Configuration](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
+|:-------------:|:-------------:|:-------------:|
+| **Editor Customization** | **Embedding Forms** | [**Thank You Configuration**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/submit-action#submit-action-message-ue) |
+| Developers can extend the functionality of the editor through UI extensions, enabling tailored solutions that fit specific organizational needs. | Embed forms directly into Edge Delivery Services Sites pages using the Universal Editor's built-in embed component. | Easily customize the acknowledgment message or page shown to users after successful form submission. |
 
 
 <!-- ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg)  **WYSIWYG interface for Form creation**: Universal Editor provides a WYSIWYG interface for form design. It provides pre-built component library, responsive design support, and template-based form creation. You can instantly add or remove form fields and modify field properties (like label, data binding, validation). You can also plugin custom form components to Universal Editor.
