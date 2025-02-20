@@ -505,4 +505,7 @@ The supported fieldTypes for forms are:
 
 ## See also
 
+## See also
+
 {{see-more-forms-eds}}
+{{universal-editor-see-also}}

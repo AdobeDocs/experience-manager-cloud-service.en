@@ -220,4 +220,5 @@ You can now view the form with reCAPTCHA service at the following URL:
 
 ## See also
 
-{{see-more-forms-eds}}
+{{universal-editor-see-also}}
+
