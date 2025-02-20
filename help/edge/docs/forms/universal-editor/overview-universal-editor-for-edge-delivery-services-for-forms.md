@@ -30,7 +30,6 @@ Here's the layout with equal-width cards (using fixed-width columns):
 
 | ![Publishing/Unpublishing](/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg) | ![Responsive Mode](/help/edge/docs/forms/universal-editor/assets/responsive.svg) | ![Custom Components](/help/edge/docs/forms/universal-editor/assets/custom-components.svg) |
 |:-------------:|:-------------:|:-------------:|
-
 | [**Publishing/Unpublishing**](/help/edge/docs/forms/universal-editor/publish-forms.md) | [**Responsive Mode**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**Custom Components**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
 | Easily control the visibility of your forms—publish or unpublish them directly from the editor with just a few clicks. | Design forms that adapt seamlessly across devices (desktops, tablets, and mobile). Use the responsive mode to preview and test forms for various screen sizes. | Custom components allow developers to extend form capabilities by creating unique elements tailored to specific organizational use cases. |
 
@@ -46,7 +45,6 @@ Here's the layout with equal-width cards (using fixed-width columns):
 
 | ![CAPTCHA](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![Embedding Forms](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![Thank You Configuration](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-
 | **Editor Customization** | **Embedding Forms** | [**Thank You Configuration**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
 | Developers can extend the functionality of the editor through UI extensions, enabling tailored solutions that fit specific organizational needs. | Embed forms directly into Edge Delivery Services Sites pages using the Universal Editor's built-in embed component. | Easily customize the acknowledgment message or page shown to users after successful form submission. |
 
@@ -240,13 +238,5 @@ The Universal Editor includes built-in analytics and tracking tools to monitor u
 
 ## Start creating forms
 
-* [Get started with Edge Delivery Services for AEM Forms](/help/edge/docs/forms/tutorial.md)
-* [Create a form using Google Sheets or Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-* [Set up your Google Sheets or Microsoft Excel files to start accepting data​](/help/edge/docs/forms/submit-forms.md)
-* [Publish your form and start collecting data](/help/edge/docs/forms/publish-forms.md)
-* [Customize the look of your forms​](/help/edge/docs/forms/style-theme-forms.md)
-* [Add repeatable sections to a form​](/help/edge/docs/forms/repeatable-forms.md)
-* [Show a custom thank you message after form submission​](/help/edge/docs/forms/thank-you-page-form.md)
-* [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
-* [Real Use Monitoring](https://www.aem.live/developer/rum#authentication)
+{{universal-editor-see-also}}
 
