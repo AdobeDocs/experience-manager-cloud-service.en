@@ -61,6 +61,10 @@ The UI is divided into these main areas.
 
 ![The Universal Editor UI](assets/ui.png)
 
+>[!TIP]
+>
+>The Universal Editor offers a number of [customization options](/help/implementing/universal-editor/customizing.md) and [extension points](/help/implementing/universal-editor/extending.md) that can modify and add to the functionality of the editor. For this reason, you may see different options than the standard ones documented here.
+
 ### The Experience Cloud Header {#experience-cloud-header}
 
 The Experience Cloud header is always present at the top of the screen. It is an anchor that tells you where you are within Experience Cloud and helps you navigate to other Experience Cloud apps.

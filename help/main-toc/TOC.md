@@ -1039,6 +1039,7 @@ user-guide-title: AEM as a Cloud Service
       + [Submit Actions](/help/edge/docs/forms/universal-editor/submit-action.md)
       + [Publish Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
       + [Customize styling of forms](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+      + [Responsive Mode](/help/edge/docs/forms/universal-editor/responsive-layout.md)
     + Capabilities {#advanced-features-edge-delivery-services-forms}
       + [Use Form fragments](/help/edge/docs/forms/form-fragments.md)
       + [Add repeatable sections to a form​](/help/edge/docs/forms/repeatable-forms.md)
