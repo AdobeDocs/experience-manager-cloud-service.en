@@ -23,11 +23,11 @@ The Universal Editor provides an **Emulator** icon located at the top-right corn
 To see how the Universal Editor renders forms on different screen sizes, perform the following steps:
 
 1. Open the form in Universal editor for editing.
-2. Select the ![Emulator icon](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=2%,width=2%} available on the Universal Editor Toolbar and click the emulator icon to display the option.
+1. Select the ![Emulator icon](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=2%,width=2%} available on the Universal Editor Toolbar and click the emulator icon to display the option.
 
     ![Responsive Mode](/help/edge/docs/forms/universal-editor/assets/universal-editor-emulator.png)
 
-3. Select the option to emulate a mobile device and within the Universal Editor
+1. Select an option to emulate a form in the Universal Editor on a selected device: Desktop, Tablet, Mobile.
 
     ![Responsive mode](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png){width=40%,height=40%}
 
@@ -37,39 +37,32 @@ The Universal Editor provides different emulators to preview forms on various de
 
 <table border="1" style= text-align: left; border-collapse: collapse;">
     <tr>
-        <th>Type of Emulator</th>
-        <th>Device Image</th>
+        <th style="width: 20%">Type of Emulator</th>
+        <th style="width: 80%">Device Image</th>
     </tr>
     <tr>
-        <td>Desktop</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="Desktop Emulator" style="width: auto; height: auto"></td>
+        <td style="width: 20%">Desktop</td>
+        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="Desktop Emulator" style="width: auto; height: auto"></td>
     </tr>
     <tr>
-        <td>Tablet</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="Tablet Emulator" style="width: auto; height: auto"></td>
+        <td style="width: 20%">Tablet</td>
+        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="Tablet Emulator" style="width: auto; height: auto"></td>
     </tr>
     <tr>
-        <td>Mobile</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="Mobile Emulator" style="width: auto; height: auto"></td>
+        <td style="width: 20%">Mobile</td>
+        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="Mobile Emulator" style="width: auto; height: auto"></td>
     </tr>
     <tr>
-        <td>Custom Device</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="Custom Device Emulator" style="width: auto; height: auto"></td>
+        <td style="width: 20%">Custom Device</td>
+        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="Custom Device Emulator" style="width: auto; height: auto"></td>
     </tr>
 </table>
 
 You can use the **Screen Rotator** icon to toggle between portrait and landscape orientations when previewing a form on different devices. It helps developers test how the responsive design adapts to screen rotations on various devices.
 
-## See Also
+## See also
 
-* [Get started with Edge Delivery Services for AEM Forms](/help/edge/docs/forms/tutorial.md)
-* [Create a form using Google Sheets or Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-* [Set up your Google Sheets or Microsoft Excel files to start accepting data​](/help/edge/docs/forms/submit-forms.md)
-* [Publish your form and start collecting data](/help/edge/docs/forms/publish-forms.md)
-* [Customize the look of your forms​](/help/edge/docs/forms/style-theme-forms.md)
-* [Add repeatable sections to a form​](/help/edge/docs/forms/repeatable-forms.md)
-* [Show a custom thank you message after form submission​](/help/edge/docs/forms/thank-you-page-form.md)
-* [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
-* [Real Use Monitoring](https://www.aem.live/developer/rum#authentication)
+{{universal-editor-see-also}}
+
 
 
