@@ -122,7 +122,7 @@ AI-generated video captions in Adobe Dynamic Media use artificial intelligence t
 
 #### Manage Publication
 
-You can use the "Manage Publication" workflow to publish or unpublish forms across environments, typically from the author instance to the publish and preview instances. It allows users to publish, unpublish, or schedule the publication of content in a streamlined manner.
+You can use the [Manage Publication](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option) workflow to publish or unpublish forms across environments, typically from the author instance to the publish and preview instances. It allows users to publish, unpublish, or schedule the publication of content in a streamlined manner.
 
 #### Auto-save a draft for Core Components based Adaptive Forms
 
