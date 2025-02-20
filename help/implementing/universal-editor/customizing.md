@@ -24,6 +24,16 @@ The **Publish** button can therefore be suppressed entirely in an app by adding 
 <meta name="urn:adobe:aue:config:disable" content="publish"/>
 ```
 
+## Disabling Publishing to Preview {#publish-preview}
+
+Certain authoring workflows might preclude the publication to the [preview service](/help/sites-cloud/authoring/sites-console/previewing-content.md) (if available).
+
+The **Preview** option in the publish window can therefore be suppressed entirely in an app by adding the following metadata.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
+```
+
 ## Filtering Components {#filtering-components}
 
 You can restrict the allowed components per container in the Universal Editor using component filters. Please see the document [Filtering Components](/help/implementing/universal-editor/filtering.md) for more information.
