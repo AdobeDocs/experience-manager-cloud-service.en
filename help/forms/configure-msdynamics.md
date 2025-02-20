@@ -5,6 +5,7 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 29ee324c-cd4c-403b-bb3d-b1eda8e8ad88
 ---
+
 # Configure Microsoft&reg; Dynamics 365 for AEM Forms 
 
 Adobe Experience Manager Forms Data Integration provides a cloud service configuration to integrate forms with Microsoft Dynamics server. It enables you to create Form Data Model (FDM) based on the entities, attributes, and services defined in Microsoft Dynamics service. The Form Data Model (FDM) can be used to create Adaptive Forms that interact with Microsoft Dynamics server to enable business workflows. For example:
@@ -45,6 +46,7 @@ Before integrating [!DNL Microsoft® Dynamics 365] with AEM Forms as a Cloud Ser
     * Enable Microsoft Dynamics 365 aaplications
     
     Follow the steps in the video to create an account in the Power Platform Admin Center. In this video, a trial account has been created for demonstration purposes.
+    
     >[!VIDEO](https://video.tv.adobe.com/v/3444388)
 
 1. **Register an application for [!DNL Microsoft&reg; Dynamics 365] in Azure Active Directory**
