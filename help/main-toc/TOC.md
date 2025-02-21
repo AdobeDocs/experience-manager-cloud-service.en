@@ -1039,6 +1039,7 @@ user-guide-title: AEM as a Cloud Service
       + [Submit Actions](/help/edge/docs/forms/universal-editor/submit-action.md)
       + [Publish Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
       + [Customize styling of forms](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+      + [Responsive Mode](/help/edge/docs/forms/universal-editor/responsive-layout.md)
     + Capabilities {#advanced-features-edge-delivery-services-forms}
       + [Use Form fragments](/help/edge/docs/forms/form-fragments.md)
       + [Add repeatable sections to a form​](/help/edge/docs/forms/repeatable-forms.md)
@@ -1057,7 +1058,7 @@ user-guide-title: AEM as a Cloud Service
       + [Sidekick Library](/help/edge/docs/sidekick-library.md)
     + [FAQ](/help/edge/docs/faq.md)
     + [Admin API](https://www.aem.live/docs/admin.html)
-    + [AEM Status](https://www.aemstatus.net)
+    + [AEM Status](https://status.adobe.com)
     + Tools {#tools}
       + [AEM Sidekick Chrome Extension](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
       + [Github Bot](https://github.com/apps/aem-code-sync)
