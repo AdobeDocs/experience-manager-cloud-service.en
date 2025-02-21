@@ -126,13 +126,13 @@ When you select a single variation, you can use the following actions:
 
 ### Use a generated variation {#use-a-generated-variation}
 
-To use the content generated with generative AI, you must copy the content to the clipboard for use elsewhere.
+To use the content generated with generative AI, you must first select and  **Export to CSV**.
 
-Once copied to the clipboard, you can paste the information elsewhere; for example, when authoring content for your website. You can also run an [experiment](https://www.aem.live/docs/experimentation).
+After exporting, you can use the content elsewhere; for example, when authoring content for your website. You can also run an [experiment](https://www.aem.live/docs/experimentation).
 
 >[!NOTE]
 >
->When Generate Variations is accessed from either [the AEM Universal Editor](#access-aem-universal-editor) or [the AEM Content Fragment Editor](#access-aem-content-fragment-editor), then the generated content can also be automatically transferred to the appropriate editor.
+>When Generate Variations is accessed from either [the AEM Universal Editor](#access-aem-universal-editor) or [the AEM Content Fragment Editor](#access-aem-content-fragment-editor), then the selected generated content is automatically saved to AEM.
 
 ## History {#history}
 
@@ -146,7 +146,6 @@ After reviewing the content you can save selected variations as favorites.
 
 Once saved they are shown under **Favorites**. Favorites are persisted (until you **Unfavorite** them, or clear the browser cache).
 
-* Favorites and variations can be copy/pasted to the clipboard for use in your website content.
 * You can **Edit**, **Unfavorite** or show the **AI Rationale** for an entry.
 * Once a variation is selected, you can also **Export to CSV**.
 
