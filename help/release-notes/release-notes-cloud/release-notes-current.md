@@ -40,15 +40,29 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Early Adopter Program {#sites-early-adopter}
 
-**Enhanced Content Fragments** 
+### New features in AEM Sites {#new-features-sites}
 
-Enhanced [Content Fragment referencing with unique ID-based references](/help/headless/graphql-api/uuid-reference-upgrade.md), helping to ensure GraphQL queries for individual content fragments can remain stable even if the fragment was moved to another location. This is now possible with "ByID" queries. While paths can change, potentially breaking "ByPath" queries, UUIDs are stable. The new IDs can also be returned as properties in any query or other applicable API request. Current limitation (2025.1): Page references are not yet supported with unique IDs. If pages are referenced in Content Fragments, this capability should not be used. The limitation is planned to be removed in the next AEM as a Cloud Service release. 
+** Modernized Content Fragment Model User Interface **
 
-**AEM REST OpenAPI for Content Fragment Delivery**
+Aligning with the modernized, client-side implementations of AEM user interfaces for browsing, managing and editing Content Fragments, a new user interface for browsing and managing Content Fragment Models is now avaiable as well. 
 
-The [AEM REST OpenAPI for Content Fragment Delivery](/help/headless/aem-rest-openapi-content-fragment-delivery.md) is available now for AEM as a Cloud Service.
+** Content Fragment Auto-Tagging ** 
+
+When creating Content Fragments, it is now possible to automatically inherit tags that were assigned to the content model. This allows for powerful automatic classification of content stored in Content Fragments.
+
+** Content Fragment UUID Support ** 
+
+Content Fragment UUID support is now GA. The new capability does not alter the path-based behavior of operations within AEM, such as move, rename, rollout, where paths are automatically being adjusted, but it can make external consumption of Content Fragments easier and more stable, especiallhy when using GraphQL queries that directly target indivitual fragments with ByPath queries. Such queries can break if a fragment path changes. When using the new ById query type, the query now remains stable as the UUID of a fragment does not change in cases where paths do. 
+
+** Dynamic Media with OpenAPI support in Content Fragment Editor and GraphQL ** 
+
+Assets that are stored in different AEM as a Cloud Service Programs than Content Fragments, and that are enabled with the new Dynamic Media with OpenAPI capability, can now be used in Content Fragments. The image selector in the new Content Fragment Editor does now allow selecting "remote" repositories as the source for image assets to be referenced in the fragment. And on delivery of such content fragments using AEM GraphQL, the JSON response now includes required properties for remote assets (assetId, repositoryId) so client applications can create respective Dynamic Media with OpenAPI URLs to fetch the image. 
+
+** Translation HTTP API ** 
+
+The AEM Translation HTTP REST API that has been in early adopter mode for a while is now GA. Documentation can be found [here](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/). The API allows automating required steps in the  translation management process for content in AEM. 
+
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
