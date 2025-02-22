@@ -78,3 +78,5 @@ See also [Introduction to Edge Delivery Services in Cloud Manager](/help/impleme
     | Give users access to the base repository on GitHub | <ul><li> In the **Edge Delivery sites** list box, to the far right of your site's name, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) to open the drop-down menu.</li><li>Click ![Code icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) **Gain access to the base repository** in the drop-down menu.</li><li>In the **Access the base repository for your site** dialog box, enter the GitHub username of a collaborator, then click ![Checkmark icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg).</li><li>Continue adding GitHub usernames, as necessary.</li><li>When you are finished, click **Add collaborators**.</li>Users must grant access to their own GitHub username to view the repository. |
 
     
+
+    
