@@ -151,6 +151,7 @@ The custom component includes a component model that specifies which properties 
     }
     ]
     ```
+    
     >[!NOTE]
     >
     > To add a new field to the **Property** dialog of a custom component, adhere to the [defined schema](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#loading-model).
@@ -167,14 +168,14 @@ In this example, we add Step Value as a custom property to the Range component.
 
 To add the Step Value custom property, append the component model with the following lines of code in the` _<component>.json` file:
 
-    ```javascript
+```javascript
       {
       "component": "number",
       "name": "stepValue",
       "label": "Step Value",
       "valueType": "number"
       }
-     ```
+```
 
 The JSON snippet defines a custom property called **Step Value** for a **Range** component. Below is a breakdown of each field:
 
@@ -504,4 +505,4 @@ The supported fieldTypes for forms are:
 
 ## See also
 
-{{see-more-forms-eds}}
+{{universal-editor-see-also}}
