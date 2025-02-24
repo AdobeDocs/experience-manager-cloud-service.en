@@ -1,33 +1,28 @@
 ---
-title: Universal Editor 2024.12.02 Release Notes
-description: These are the release notes for the 2024.12.02 release of the Universal Editor.
+title: Universal Editor 2025.02.17 Release Notes
+description: These are the release notes for the 2025.02.17 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2024.12.02 Release Notes {#release-notes}
+# Universal Editor 2025.02.17 Release Notes {#release-notes}
 
-These are the release notes for the 2 December 2024 release of the Universal Editor.
+These are the release notes for the 17 February 2025 release of the Universal Editor.
 
 >[!TIP]
 >
->For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page.](/help/release-notes/release-notes-cloud/release-notes-current.md)
+>For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-## What’s New {#what-is-new}
+## What's New {#what-is-new}
 
-* **Keyboard Navigation of Content Tree**: [The content tree,](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) available in the side panel, is now fully accessible via keyboard.
-  * Authors can navigate and interact with tree view items using standard keyboard controls, adhering to [WCAG 2.1 guidelines](/help/sites-cloud/authoring/page-editor/accessible-content.md) for accessibility.
-  * This enhancement ensures that all interactive elements within the tree are keyboard-operable, improving inclusivity for users who rely on keyboard navigation.
-* **Deselection of Editables**: Authors can now deselect previously selected editable elements on the page.
-  * This eliminates distractions when authors want to view the page without active selection borders.
-* **Fragment Selector**: On AEM as a Cloud Service instances, fragment references now open the fragment selector as content picker, delivering improved functionality such obeying allowed Content Fragment models, search of Content Fragments, and an improved overall experience.
-  * This aligns with other Adobe UIs and enhances consistency.
-  * [For AEM 6.5 environments,](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) the existing content picker remains in use.
-* **Container Description**: [The container component](/help/implementing/universal-editor/field-types.md#container) used in the [properties panel,](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel-properties-rail) to reference content, now supports a description attribute, displayed above the container fields.
-  * This addition enhances clarity by providing authors with context about the grouped fields they are editing.
+* **Publish to preview** - [When publishing (or unpublishing) your content](/help/sites-cloud/authoring/universal-editor/publishing.md) using the Universal Editor, you can now choose if you wish to publish to your [preview environment](/help/sites-cloud/authoring/sites-console/previewing-content.md) in addition to your publish environment
+  * This allows review of your content before public publication.
+* **Model and filter can be defined in the component definition** - You can now define what model and filter a component uses [in the component definition.](/help/implementing/universal-editor/component-definition.md#template)
+  * This information can be maintained centrally in the definition and doesn't need to be specified the instrumentation.
+  * This allows you to move components across containers.
+* **Child elements of containers are implicitly considered components** - If [an item with `data-aue-resource`](/help/implementing/universal-editor/attributes-types.md#data-properties) is placed as direct child into a container it is considered a component and can be moved without having to specify `data-aue-behavior="component"`.
 
 ## Other Improvements {#other-improvements}
 
-* **Rich Text Field Synchronization**: Synchronization of raw and rendered content within rich text fields in the properties panel was improved, addressing issues within Edge Delivery Services projects where rich text content and rendered representation can differ.
-* **Editing Mode Events**: The Universal Editor now reliably emits editing mode events, including after reloading remote apps.
+* **AEM 6.5 Asset Selector** - The 6.5 asset selector now opens properly when [running the Universal Editor with AEM 6.5.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)

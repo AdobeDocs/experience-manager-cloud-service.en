@@ -10,7 +10,9 @@ role: User, Developer
 ---
 # Add Custom Error Handlers in AEM Adaptive Forms {#error-handlers-in-adaptive-form}
 
-<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
+>[!NOTE]
+>
+> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components.
 
 | Version | Article link |
 | -------- | ---------------------------- |
@@ -288,7 +290,7 @@ The created folder structure looks like:
     ```
 -->
 
-1. [Run the pipeline.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)
+1. [Run the pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline).
 
 Once the pipeline is executed successfully, the custom error handler becomes available in your Adaptive Form rule editor. Now, let's understand how to configure and use a custom error handler using the Rule Editor's Invoke service in AEM Forms.
 

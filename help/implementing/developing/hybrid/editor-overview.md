@@ -11,6 +11,8 @@ Single page applications (SPAs) can offer compelling experiences for website use
 
 The SPA Editor offers a comprehensive solution for supporting SPAs within AEM. This page gives an overview of how SPA support is structured in AEM, how the SPA Editor works, and how the SPA framework and AEM keep in synch.
 
+{{ue-over-spa}}
+
 ## Introduction {#introduction}
 
 Sites built using common SPA frameworks such as React and Angular load their content via dynamic JSON and do not provide the HTML structure that is necessary for the AEM Page Editor to be able to place edit controls.

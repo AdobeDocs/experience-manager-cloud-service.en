@@ -20,7 +20,7 @@ You can use MSM to create an entire content structure for your brand across loca
 To configure MSM in a repoless use case, you must first complete a number of tasks.
 
 * This document assumes that you have already created a site for your project based on the [Developer Getting Started Guide for WYSIWYG Authoring with Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) guide.
-* You must have already [enabled the repoless feature for your project.](/help/edge/wysiwyg-authoring/repoless.md)
+* You must have already [enabled the repoless feature for your project](/help/edge/wysiwyg-authoring/repoless.md).
 
 ## Use Case {#use-case}
 
@@ -49,9 +49,9 @@ Content in `language-masters` is the source of Live Copies for the localized sit
 
 There are several steps to configuring the MSM repoless use case.
 
-1. [Update AEM site configurations.](#update-aem-configurations)
-1. [Create new Edge Delivery Services sites for your localized pages.](#create-edge-sites)
-1. [Update cloud configuration in AEM for your localized sites.](#update-cloud-configurations)
+1. [Update AEM site configurations](#update-aem-configurations).
+1. [Create new Edge Delivery Services sites for your localized pages](#create-edge-sites).
+1. [Update cloud configuration in AEM for your localized sites](#update-cloud-configurations).
 
 ### Update AEM Site Configurations {#update-aem-configurations}
 
@@ -106,6 +106,10 @@ For this example, we will create the site `wknd-ch` for the Swiss presence of wk
    * The `code` configuration should be the same as you used for the initial project creation.
    * The `content` > `source` > `url` must be adapted to the name of the new site you are creating. In this example, it is `wknd-ch`.
    * I.e., the site name in POST URL and the `content` > `source` > `url` must be the same.
+   * Adapt the `admin` block to define the users who should have full administrative access to the site.
+     * It is an array of email addresses.
+     * The wildcard `*` can be used.
+     * See the document [Configuring Authentication for Authors](https://www.aem.live/docs/authentication-setup-authoring#default-roles) for more information.
 
    ```text
    curl --request POST \
@@ -132,9 +136,9 @@ For this example, we will create the site `wknd-ch` for the Swiss presence of wk
            "admin": {
                "role": {
                    "admin": [
-                       "*@adobe.com"
+                       "<email>@<domain>.<tld>"
                    ],
-                   "publish": [
+                   "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"
                    ]
                },

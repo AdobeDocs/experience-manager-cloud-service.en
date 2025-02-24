@@ -13,6 +13,8 @@ When composite components are properly implemented within the AEM Single Page Ap
 
 This article demonstrates how you can add a composite component to your single page application to work seamlessly with the AEM SPA Editor.
 
+{{ue-over-spa}}
+
 ## Use Case {#use-case}
 
 This article will use the typical card component as its example use case. Cards are a common UI element for many digital experiences and are typically made up of an image and associated text or caption. An author wants to be able to drag-and-drop the whole card, but be able to individually edit the card's image and customize the associated text.
@@ -22,16 +24,16 @@ This article will use the typical card component as its example use case. Cards 
 The following models for supporting the composite component use cases require the following prerequisites.
 
 * Your AEM development instance is running locally on port 4502 with a sample project.
-* You have a working external React app [enabled for editing in AEM.](editing-external-spa.md)
-* The React app is loaded in the AEM editor [using the RemotePage component.](remote-page.md)
+* You have a working external React app [enabled for editing in AEM](editing-external-spa.md).
+* The React app is loaded in the AEM editor [using the RemotePage component](remote-page.md).
 
 ## Adding Composite Components to a SPA {#adding-composite-components}
 
 There are three different models for implementing your composite component depending on your SPA implementation within AEM.
 
-* [The component does not exist in your AEM project.](#component-does-not-exist)
-* [The component exists in your AEM project but its required content does not.](#content-does-not-exist)
-* [The component and its required content both exist in your AEM project.](#both-exist)
+* [The component does not exist in your AEM project](#component-does-not-exist).
+* [The component exists in your AEM project but its required content does not](#content-does-not-exist).
+* [The component and its required content both exist in your AEM project](#both-exist).
 
 The following sections give examples of implementing each case using the card component as an example.
 
@@ -126,7 +128,7 @@ In this case, the card component is already created in your AEM project containi
 
 You can then add it to your SPA and retrieve its content.
 
-1. Create a corresponding component in the SPA for this. Ensure that the child components are mapped to their corresponding AEM resource types within the SPA project. In this example we use the same `AEMText` and `AEMImage` components as detailed [in the previous case.](#component-does-not-exist)
+1. Create a corresponding component in the SPA for this. Ensure that the child components are mapped to their corresponding AEM resource types within the SPA project. In this example we use the same `AEMText` and `AEMImage` components as detailed [in the previous case](#component-does-not-exist).
 
    ```javascript
    import React from 'react';
@@ -170,4 +172,4 @@ If the content exists in AEM, it can be directly included in the SPA by providin
 
 ![Composite path in node structure](assets/composite-path.png)
 
-The `AEMCard` component is the same as defined [in the previous use case.](#content-does-not-exist) Here the content defined in the above location in the AEM project is included in the SPA.
+The `AEMCard` component is the same as defined [in the previous use case](#content-does-not-exist). Here the content defined in the above location in the AEM project is included in the SPA.

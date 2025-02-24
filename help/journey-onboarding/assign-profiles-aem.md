@@ -12,11 +12,11 @@ exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 >title="Assign AEM Product Profiles"
 >abstract="You are not entitled to use Experience Manager Assets. Contact your administrator."
 
-In this part of the [onboarding journey,](overview.md) you learn how to grant you team access to AEM using AEM product profiles.
+In this part of the [onboarding journey](overview.md), you learn how to grant you team access to AEM using AEM product profiles.
 
 ## Objective {#objective}
 
-After you have read the previous document in this onboarding journey, [Create Environments,](create-environments.md) and have your cloud resources configured, grant your team access to AEM itself using AEM product profiles. As the system administrator, you do this by assigning AEM product profiles.
+After you have read the previous document in this onboarding journey, [Create Environments](create-environments.md), and have your cloud resources configured, grant your team access to AEM itself using AEM product profiles. As the system administrator, you do this by assigning AEM product profiles.
 
 After reading this document, you should understand:
 
@@ -58,7 +58,7 @@ Before you start reading this section, you should have the following information
 
 Follow these steps to see the AEM product profiles from the Admin Console.
 
-1. Log in to Admin Console at [`https://adminconsole.adobe.com`.](https://adminconsole.adobe.com)
+1. Log in to Admin Console at [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
 1. From the **Overview** page, select **Adobe Experience Manager as a Cloud Service** from the **Products and services** card.
 

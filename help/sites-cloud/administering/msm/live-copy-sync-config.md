@@ -40,7 +40,7 @@ Each rollout configuration uses a rollout trigger that causes the rollout to occ
 
 The following table lists the rollout configurations that are provided out-of-the-box with AEM. The table includes the trigger and synchronization actions of each rollout configuration. 
 
-If the installed rollout configuration actions do not meet your requirements, you can [create a rollout configuration.](#creating-a-rollout-configuration)
+If the installed rollout configuration actions do not meet your requirements, you can [create a rollout configuration](#creating-a-rollout-configuration).
 
 |Name|Description|Trigger|[Synchronization Actions](#synchronization-actions)|
 |---|---|---|---|
@@ -55,7 +55,7 @@ If the installed rollout configuration actions do not meet your requirements, yo
 
 The following table lists the synchronization actions that are provided out-of-the-box with AEM.
 
-If the installed actions do not meet your requirements, you can [Create a New Synchronization Action.](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action)
+If the installed actions do not meet your requirements, you can [Create a New Synchronization Action](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action).
 
 |Action Name|Description|Properties|
 |---|---|---|
@@ -82,7 +82,7 @@ If the installed actions do not meet your requirements, you can [Create a New Sy
 You can [create a rollout configuration](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration) when the installed rollout configurations do not meet your application requirements by performing the following steps.
 
 1. [Create the rollout configuration-](/help/implementing/developing/extending/msm.md#create-the-rollout-configuration)
-1. [Add synchronization actions to the rollout configuration.](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration)
+1. [Add synchronization actions to the rollout configuration](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration).
 
 The new rollout configuration is then available to you when configuring rollout configurations on a blueprint or Live Copy page.
 

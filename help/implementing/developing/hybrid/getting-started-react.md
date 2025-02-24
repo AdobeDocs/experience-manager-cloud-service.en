@@ -15,6 +15,8 @@ The SPA authoring feature offers a comprehensive solution for supporting SPAs wi
 >
 >This article is based on the React framework. For the corresponding document for the Angular framework see [Getting Started with SPAs in AEM - Angular](getting-started-angular.md).
 
+{{ue-over-spa}}
+
 ## Introduction {#introduction}
 
 This article summarizes the basic functioning of a simple SPA and the minimum that you need to know to get yours running.
@@ -175,7 +177,7 @@ MapTo('my-react-app/components/structure/page')(withComponentMappingContext(AppP
 
 In this example the `AppPage` class extends `Page`, which contains the inner-content methods that can then be used.
 
-The `Page` ingests the JSON representation of the page model and processes the content to wrap/decorate each element of the page. Further details on the `Page` can be found in the document [SPA Blueprint.](blueprint.md)
+The `Page` ingests the JSON representation of the page model and processes the content to wrap/decorate each element of the page. Further details on the `Page` can be found in the document [SPA Blueprint](blueprint.md).
 
 ### Image.js {#image-js}
 

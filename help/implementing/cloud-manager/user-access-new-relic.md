@@ -43,7 +43,7 @@ For a newly created program, a New Relic One sub-account is created for you. How
 
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, click the program for which you want to manage your New Relic One users.
 
-1. At the bottom of the **Environments** card on the program overview page, click https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg and select **Activate New Relic**.
+1. At the bottom of the **Environments** card on the program overview page, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) and select **Activate New Relic**.
 
    ![Manage users](assets/newrelic-activate-sub-account.png)
 
@@ -65,13 +65,13 @@ Follow these steps to define the users of your New Relic One sub-account associa
 
 1. Click the program for which you want to manage your New Relic One users.
 
-1. At the bottom of the **Environments** card on the program overview page, click https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg and select **Manage users**.
+1. At the bottom of the **Environments** card on the program overview page, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) and select **Manage users**.
 
    ![Manage users](assets/newrelic-manage-users.png)
 
    * You can also access the **Manage users** option. At the top of the **Environments** screen of your program, click ![Smock more icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
 
-1. In the **Manage New Relic users** dialog, enter the first and last name of the user you want to add, and click the **Add** button. Repeat this step for all users that you want to add.
+1. In the **Manage New Relic users** dialog box, enter the first and last name of the user you want to add, and click the **Add** button. Repeat this step for all users that you want to add.
 
    ![Add users](assets/newrelic-add-users.png)
 
@@ -115,7 +115,7 @@ Once you have [activated your New Relic account](#activate-account), you can acc
 
 1. Click the program for which you want to access New Relic One.
 
-1. At the bottom of the **Environments** card on the program overview page, click https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg and select **Open New Relic**.
+1. At the bottom of the **Environments** card on the program overview page, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) and select **Open New Relic**.
 
    ![Manage users](assets/newrelic-access.png)
 
@@ -168,7 +168,7 @@ If you do not receive an email from New Relic, do the following:
 The following limitations apply to adding users to New Relic One:
 
 * A maximum of 30 users can be added. If the maximum number of users has been reached, remove users to be able to add new users.
-* Users added to New Relic are of the type **Restricted**. See the [New Relic documentation for details](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&text=One%20or%20more%20individuals%20who,change).
+* Users added to New Relic are of the type **Restricted**. See the [New Relic documentation for details](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/introduction-managing-users/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&text=One%20or%20more%20individuals%20who,change).
 * AEM as a Cloud Service only offers the New Relic One APM solution and does not provide support for alerting, logging, or API integrations.
 
 >[!NOTE]
@@ -187,15 +187,15 @@ Adobe monitors the AEM as a Cloud Service author, publish and preview (where ava
 
 Your New Relic One account is attached to a primary Adobe-maintained account and has multiple applications reporting into it: three per AEM as a Cloud Service Environment. 
 
-* One application for the author service per environment
-* One application for the publish service per environment (including Golden Publish)
-* One application for the preview service per environment
+* One application for the Author service per environment
+* One application for the `Publish` service per environment (including Golden Publish)
+* One application for the Preview service per environment
 
 Note:
 
 * Each application uses one license key.
 * AEM as a Cloud Service environments report to only one New Relic One account.
-* Full monitoring metrics and events for both New Relic One are retained for seven days.
+* Full monitoring metrics and events for both New Relic One are retained for three months. <!-- CQDOC-22238 - Updated from seven days to three months. >
 +++
 
 +++**Does Adobe send alert notifications from New Relic One?** {#alerting-new-relic}

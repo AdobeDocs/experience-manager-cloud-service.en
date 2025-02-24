@@ -19,7 +19,7 @@ Also configurable at the CDN are Traffic Filter Rules (including WAF), which con
 
 Additionally, if the CDN cannot contact its origin, you can write a rule that references a self-hosted custom error page (which is then rendered). Learn more about this by reading the [Configuring CDN error pages](/help/implementing/dispatcher/cdn-error-pages.md) article.
 
-All these rules, declared in a configuration file in source control, are deployed by using the Cloud Manager [config pipeline.](/help/operations/config-pipeline.md) Be aware that the cumulative size of the configuration file, including traffic filter rules, cannot exceed 100KB.
+All these rules, declared in a configuration file in source control, are deployed by using the Cloud Manager [config pipeline](/help/operations/config-pipeline.md). Be aware that the cumulative size of the configuration file, including traffic filter rules, cannot exceed 100KB.
 
 ## Order of Evaluation {#order-of-evaluation}
 
@@ -153,6 +153,7 @@ Explained in the table below are the available actions.
 | **unset** |reqProperty|Removes a specified request parameter (only "path" property supported), or request header, query parameter, or cookie, to a given value, which could be a string literal or request parameter.|
 |         |var|Removes a specified variable.|
 |         |queryParamMatch|Removes all query parameters that match a specified regular expression.|
+|         |queryParamDoesNotMatch|Removes all query parameters that do not match a specified regular expression.|
 | **transform** |op:replace, (reqProperty or reqHeader or queryParam or reqCookie or var), match, replacement  | Replaces part of the request parameter (only "path" property supported), or request header, or query parameter, or cookie, or variable with a new value. |
 |              |op:tolower, (reqProperty or reqHeader or queryParam or reqCookie or var) | Sets the request parameter (only "path" property supported), or request header, or query parameter, or cookie, or variable to its lowercase value. |
 
@@ -452,7 +453,7 @@ redirects:
       action:
         type: redirect
         location:
-          reqProperty: path
+          reqProperty: url
           transform:
             - op: replace
               match: '^/(.*)$'

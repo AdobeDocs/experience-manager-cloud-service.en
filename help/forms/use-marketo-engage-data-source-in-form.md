@@ -30,16 +30,18 @@ Prerequisite to use Marketo Engage data source with forms:
 
 ## How to configure existing Adaptive Form for Marketo Engage data source?
 
+>[!VIDEO](https://video.tv.adobe.com/v/3442871/marketo-aem-forms-aem-marketo-engage)
+
 To configure an Adaptive Form with the Marketo Engage data source, perform the following steps:
 1. Log in to your [!DNL Experience Manager Forms] Author instance. 
 
-1. Open the Adaptive Form for editing.
-1. Open the Content Tree and select the **[!UICONTROL Guide Container]**. 
-1. Click the Adaptive Form Container properties ![Adaptive Form Container properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box to configure data source opens. 
-1. Open the **[!UICONTROL Data Model]** tab and select a form model as **Connector**.
-1. Select the **[!UICONTROL Connector]** from the drop-down list. 
+2. Open the Adaptive Form for editing.
+3. Open the Content Tree and select the **[!UICONTROL Guide Container]**. 
+4. Click the Adaptive Form Container properties ![Adaptive Form Container properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box to configure data source opens. 
+5. Open the **[!UICONTROL Data Model]** tab and select a form model as **Connector**.
+6. Select the **[!UICONTROL Connector]** from the drop-down list. 
 
-1. After selecting the **[!UICONTROL Connector]**, you can select the cloud configuration.
+7. After selecting the **[!UICONTROL Connector]**, you can select the cloud configuration.
 
     ![Select Marketo Connector](/help/forms/assets/select-marketo-connector.png)
 
@@ -47,7 +49,7 @@ To configure an Adaptive Form with the Marketo Engage data source, perform the f
 
     ![Marketo Data Source](/help/forms/assets/marketo-engage-data-source.png)
 
-1. Click **[!UICONTROL Done]**.
+8. Click **[!UICONTROL Done]**.
    
 Alternatively, you can also edit the Adaptive Form properties to change its associated configuration.
 

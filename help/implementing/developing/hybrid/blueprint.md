@@ -9,6 +9,8 @@ role: Admin, Architect, Developer
 
 To enable the author to use the AEM SPA Editor to edit the content of an SPA, there are requirements that the SPA must fulfill.
 
+{{ue-over-spa}}
+
 ## Introduction {#introduction}
 
 This document describes the general contract that any SPA framework should fulfill (that is, the kind of AEM support layer) so you can implement editable SPA components within AEM.
@@ -73,7 +75,7 @@ The page model uses the JSON Model Exporter, which is itself based on the [Sling
 * `:itemsOrder`: Ordered list of the children. The JSON map object does not guaranty the order of its fields. By having both the map and the current array the consumer of the API has the benefits of both structures
 * `:path`: Content path of an item (present on items representing a page)
 
-See also [Getting Started with AEM Content Services.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+See also [Getting Started with AEM Content Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html).
 
 ### Framework-Specific Module {#framework-specific-module}
 

@@ -19,11 +19,11 @@ To do this, the Universal Editor provides content authors with an intuitive UI t
 
 >[!NOTE]
 >
->This document assumes you are already familiar with how to access and navigate the Universal Editor. If you are not, please see the document [Accessing and Navigating the Universal Editor.](/help/sites-cloud/authoring/universal-editor/navigation.md)
+>This document assumes you are already familiar with how to access and navigate the Universal Editor. If you are not, see [Accessing and Navigating the Universal Editor](/help/sites-cloud/authoring/universal-editor/navigation.md).
 
 >[!TIP]
 >
->For a more detailed introduction to the Universal Editor, see the document [Universal Editor Introduction.](/help/implementing/universal-editor/introduction.md)
+>For a more detailed introduction to the Universal Editor, see [Universal Editor Introduction](/help/implementing/universal-editor/introduction.md).
 
 ## Editing Content {#editing-content}
 
@@ -33,9 +33,9 @@ Editing content is simple and intuitive. As you mouse over content in the editor
 
 >[!TIP]
 >
->By default, tapping or clicking on content selects it for editing. If you want to navigate your content by following links, switch to [preview mode.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
+>By default, tapping or clicking on content selects it for editing. If you want to navigate your content by following links, switch to [preview mode](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode).
 
-Depending on the content you select, you may have different in-place editing options and you may additional information and options for the content in the [properties panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Depending on the content you select, you may have different in-place editing options and you may additional information and options for the content in the [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail).
 
 ### Editing Plain Text {#edit-plain-text}
 
@@ -45,7 +45,7 @@ You can edit the text in place by double-clicking or double-tapping the componen
 
 The thin blue outline turns to a heavy blue outline to indicate select and a cursor appears. Make your changes and then press enter/return or select outside of the text box to save your changes.
 
-When you select to select the text component, its details are shown in the [properties panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) You can also edit the text in the panel.
+When you select to select the text component, its details are shown in the [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail). You can also edit the text in the panel.
 
 ![Editing text in the properties panel](assets/ue-editing-text-component-rail.png)
 
@@ -77,7 +77,7 @@ Tap or click **Cancel** or **Done** to discard or save the changes, respectively
 
 ### Editing Media {#edit-media}
 
-You can view its details in the [properties panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+You can view its details in the [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail).
 
 ![Editing media](assets/ue-edit-media.png)
 
@@ -90,7 +90,7 @@ Changes are saved to your content automatically.
 
 ### Editing Content Fragments {#edit-content-fragment}
 
-If you select a [Content Fragment,](/help/sites-cloud/administering/content-fragments/overview.md) you can edit its details in the [properties panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+If you select a [Content Fragment](/help/sites-cloud/administering/content-fragments/overview.md), you can edit its details in the [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail).
 
 ![Editing a Content Fragment](assets/ue-edit-cf.png)
 
@@ -117,9 +117,12 @@ Depending on the needs of your workflow, you may want to edit the Content Fragme
 ### Adding Components to Containers {#adding-components}
 
 1. Select a container component in the [content tree](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) or in the editor.
-1. Then select the add icon in the properties panel.
 
    ![Selecting a component to add to a container](assets/ue-add-component.png)
+
+1. Then select the add icon in the properties panel.
+
+   ![Select add icon](assets/add-icon.png)
 
 The component is inserted into the container and can be edited in the editor.
 
@@ -154,7 +157,7 @@ The selected component deleted.
 
 ### Reordering Components in Containers {#reordering-components}
 
-1. If not already in [content tree mode,](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) switch to it.
+1. If not already in [content tree mode](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode), switch to it.
 1. Select a container component in the content tree or in the editor.
 1. Select the chevron icon of the container to expand its contents in the content tree.
 1. Drag handle icons next to the components within the container show that you can rearrange them. Drag the components to reorder them within the container.
@@ -167,13 +170,13 @@ The components are reordered in both the content tree and in the editor.
 
 >[!NOTE]
 >
->Components can not be moved between containers if a different [component filter](/help/implementing/universal-editor/customizing.md#filtering-components) is set between the source and target containers.
+>Components can not be moved between containers if a different [component filter](/help/implementing/universal-editor/filtering.md) is set between the source and target containers.
 
 ## Previewing Content {#previewing-content}
 
 When you are finished editing content, you often want to navigate it to see how it looks in the content of other pages. In [preview mode](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode) you can click links to navigate your content as a reader would. The content is rendered in the editor as it would be published.
 
-In preview mode, tapping or clicking on content reacts as it would to a reader of the content. If you want to select the content for editing, toggle out of [preview mode.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
+In preview mode, tapping or clicking on content reacts as it would to a reader of the content. If you want to select the content for editing, toggle out of [preview mode](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode).
 
 ## Additional Resources {#additional-resources}
 
@@ -195,4 +198,4 @@ Inheritance is the mechanism where content can be linked such that changing one 
 
 Using the Universal Editor, you can cancel inheritance for content by simply updating the content. The editor automatically disables inheritance for all changes made by authors on that page, ensuring that modified content is retained when updates are synchronized from the blueprint.
 
-For more details on how inheritance works using the Universal Editor, please see the document [Content Inheritance in the Universal Editor.](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+For more details on how inheritance works using the Universal Editor, see [Content Inheritance in the Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md).

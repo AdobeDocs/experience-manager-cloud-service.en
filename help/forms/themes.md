@@ -7,7 +7,9 @@ role: User, Developer, Admin
 ---
 # Creating and using themes {#creating-and-using-themes}
 
-<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
+>[!NOTE]
+>
+> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components.
 
 | Version | Article link |
 | -------- | ---------------------------- |
@@ -487,7 +489,7 @@ You can now use fonts available in a web-service in an Adaptive Form <!-- or int
 
 To configure Adobe Fonts in Experience Manager, perform the following steps:
 
-1. In the author instance, click ![Adobe Experience Manager](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Tools]** ![hammer](assets/hammer.png) &gt; **[!UICONTROL Deployment]** &gt; **[!UICONTROL Cloud Services]**.
+1. In the author instance, click ![Adobe Experience Manager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Tools]** ![hammer](assets/hammer.png) &gt; **[!UICONTROL Deployment]** &gt; **[!UICONTROL Cloud Services]**.
 1. On the **[!UICONTROL Cloud Services]** page, navigate to  and open the **[!UICONTROL Adobe Fonts]** option. Open the configuration folder, and click **[!UICONTROL Create]**. 
 1. On the **[!UICONTROL Create Configuration]** dialog, specify a title for the configuration, and click **[!UICONTROL Create]**.
 

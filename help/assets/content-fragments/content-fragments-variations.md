@@ -99,7 +99,7 @@ The full-screen text editor provides:
 
 The following actions are also available (for all the [formats](#formats)) when the full-screen editor (that is, multi-line text) is open:
 
-* Select the [format](#formats) ([Rich Text](#rich-text), [Plain Text,](#plain-text) [Markdown](#markdown))
+* Select the [format](#formats) ([Rich Text](#rich-text), [Plain Text](#plain-text), [Markdown](#markdown))
 
 * [Upload content](#uploading-content)
 
@@ -308,6 +308,10 @@ To annotate a fragment:
 1. Close the full-screen editor, annotations are still highlighted. If selected, a dialog box opens so that you can edit the annotation further.
 
    ![annotate](assets/cfm-variations-07c.png)
+
+>[!NOTE]
+>
+>The Annotations feature does not show comments entered in the new [Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md#commenting-on-your-fragment).
 
 ### Viewing, Editing, Deleting Annotations {#viewing-editing-deleting-annotations}
 

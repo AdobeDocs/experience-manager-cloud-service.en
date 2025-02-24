@@ -11,7 +11,7 @@ In today's digital age, creating user-friendly forms is essential for any organi
 
 These forms submit data directly to a Microsoft Excel or Google Sheets file, enabling you to use vibrant ecosystem and robust APIs of Google Sheets, Microsoft Excel, and Microsoft SharePoint to easily process submitted data or to initiate an existing business workflow.
 
-AEM Forms provide a block, known as Adaptive Forms Block, to help you easily create forms to capture and store captured data. You can [create a new AEM project pre-configured with Adaptive Forms Block](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) or [add the Adaptive Forms Block to an existing AEM project](#add-adaptive-forms-block-to-your-existing-aem-project). 
+AEM Forms provide a block, known as Adaptive Forms Block, to help you easily create forms to capture and store captured data. You can [create a new AEM project pre-configured with Adaptive Forms Block](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) <!--or [add the Adaptive Forms Block to an existing AEM project](#add-adaptive-forms-block-to-your-existing-aem-project)-->. 
 
 This AEM Forms tutorial guides you through creating, previewing, and publishing your own custom form with a new Adobe Experience Manager (AEM) Forms project.
 
@@ -55,27 +55,26 @@ The AEM Forms Boilerplate template gets you started quickly with an AEM project 
     >
     > If you are using GitHub Enterprise with IP filtering, you can add the following IP to the allowlist: 3.227.118.73
 
-    Congratulations! You have a new website running on `https://<branch>--<repo>--<owner>.hlx.page/`. 
+    Congratulations! You have a new website running on `https://<branch>--<repo>--<owner>.aem.page/`. 
 
     * `<branch>` refers to the branch of your GitHub repository. 
     * `<repository>` denotes your GitHub repository. 
     * `<owner>` refers to username of your GitHub account that hosts your GitHub repository.
 
-    For example, if the branch name is `main`, repository is `wefinance`, and owner is `wkndforms`, the website would be up and running at [https://main--wefinance--wkndforms.hlx.page/](https://main--wefinance--wkndforms.hlx.page/).
-
-
+    For example, if the branch name is `main`, repository is `wefinance`, and owner is `wkndforms`, the website would be up and running at `https://main--wefinance--wkndforms.aem.page`
+    <!--(https://main--wefinance--wkndform.aem.page)-->
 
 ### Link your own content source
 
-Your newly created GitHub repository points to [example content stored in a Google Drive folder](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). This read-only content provides a great starting point for your forms. Feel free to copy it into your own Google Drive and customize it to fit your needs.
+<!--Your newly created GitHub repository points to [example content stored in a Google Drive folder](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). This read-only content provides a great starting point for your forms. Feel free to copy it into your own Google Drive and customize it to fit your needs.
 
-![Sample Content on Google Drive](/help/edge/assets/folder-with-sample-content.png)
+![Sample Content on Google Drive](/help/edge/assets/folder-with-sample-content.png)-->
 
 To copy the sample content to your own content folder and point your GitHub repository to your own content folder:  
 
 1. Create a new folder specifically for your AEM content in Google Drive or Microsoft SharePoint. This document uses a folder created on Microsoft SharePoint.
 
-1. Share the folder with the Adobe Experience Manager user (helix@adobe.com).
+1. Share the folder with the Adobe Experience Manager user (forms@adobe.com).
 
     ![Use Manage Access option to share folder with AEM User - SharePoint](/help/edge/assets/share-folder-with-aem-user.png)
 
@@ -84,13 +83,13 @@ To copy the sample content to your own content folder and point your GitHub repo
 
     Ensure that you have provided editing rights on the folder to the Adobe Experience Manager user. 
 
-    ![Share folder with AEM User, provide editing rights-SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png)
+    ![Share folder with AEM User, provide editing rights-SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png){width=50%}
 
-    ![Share folder with AEM User, provide editing rights- Google Drive](/help/edge/assets/add-aem-user-google-folder.png)
+    ![Share folder with AEM User, provide editing rights- Google Drive](/help/edge/assets/add-aem-user-google-folder.png){width=50%}
 
-1. Copy the [example content stored in the Google Drive folder](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_) to your folder. To copy:
+1. Copy the [example content](/help/edge/assets/wefinance1.zip) to your folder. To copy:
 
-    1. Download the files together or download individual files. 
+    1. Unzip the downloaded folder and copy the content. 
 
         ![Download Sample Content](/help/edge/assets/download-sample-content.png)
 
@@ -107,7 +106,7 @@ To copy the sample content to your own content folder and point your GitHub repo
 
     1. Go to the GitHub repository that you created eariler using AEM Forms Boilerplate.
     1. Open the `fstab.yaml` for editing.
-    1. Replace the existing reference with the path to the folder that you shared with the AEM user (helix@adobe.com).
+    1. Replace the existing reference with the path to the folder that you shared with the AEM user (forms@adobe.com).
 
         ![Sample Content on Google Drive](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -133,8 +132,6 @@ To copy the sample content to your own content folder and point your GitHub repo
       
     1. Commit the updated `fsatb.yaml` file, once you've updated the reference and everything looks good. If you encounter any build issues, see [Troubleshooting GitHub build issues](#troubleshooting-github-build-issues). 
     
-    
-
         ![Commit updated fsatab.yaml file](/help/edge/assets/commit-updated-fstab-yaml.png)
 
         This connects your content folder to your website. After updating the reference, you might experience "404 Not Found" errors initially. This is because your content is not been previewed yet. The next section explains how to start authoring and previewing your content.
@@ -174,7 +171,7 @@ To preview unpublished content:
 
     ```HTML
 
-    https://<branch>--<repository>--<owner>.hlx.live
+    https://<branch>--<repository>--<owner>.aem.live
        
     ```
 
@@ -183,11 +180,10 @@ To preview unpublished content:
     * `<owner>` refers to username of your GitHub account that hosts your GitHub repository.
 
     
-    `https://<branch>--<repo>--<owner>.hlx.page/enquiry` URL. 
+    `https://<branch>--<repo>--<owner>.aem.page/enquiry` URL. 
 
-    For example, if your project's repository is named "wefinance", it's located under the account owner "wkndforms", and you're using the "main" branch, the URL is: 
-
-    [https://main--wefinance--wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).  
+    For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch and form name as `enquiry`, the URL is: `https://main--wefinance--wkndform.aem.live/enquiry`.
+    <!--(https://main--wefinance--wkndform.aem.live/enquiry).-->
 
 ### Create a form
 
@@ -195,13 +191,13 @@ The sample content includes an "enquiry" sheet that serves as a template for the
 
 ![Enquiry form](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
 
-Let's start with updating a field label. Open the 'enquiry' sheet for editing, change the label of submit button to `Let's Chat` and use AEM Sidekick to preview and publish the file. 
+Let's start with updating a field label. Open the 'enquiry' sheet for editing, change the label of submit button to `Let's Talk` and use AEM Sidekick to preview and publish the file. 
 
  ![Enquiry form](/help/edge/assets/enquiry-form-preview-publish.png)
 
- When you preview or publish the file, a JSON version of the file appears in a new tab. Copy the preview (.hlx.page) or publish (.hlx.live) URL of the file. 
+ When you preview or publish the file, a JSON version of the file appears in a new tab. Copy the preview (.aem.page) or publish (.aem.live) URL of the file. 
 
- ![JSON of the form spreadsheet](/help/edge/assets//preview-and-publish-enquiry-form.png)
+ ![JSON of the form spreadsheet](/help/edge/assets/preview-and-publish-enquiry-form.png)
 
  Open the `enquiry` file, and replace the URL in the form block with URL of file copied in the previous step. Ensure that the URL is a hyper link. 
 
@@ -217,13 +213,19 @@ To preview the updated enquiry form go to the following URL:
 
 ```HTML
 
-    https://<branch>--<repository>--<owner>.hlx.page/enquiry
+    https://<branch>--<repository>--<owner>.aem.page/enquiry
        
 ``` 
 
-The label of the submit button is updated to `Let's Chat`. 
+The label of the submit button is updated to `Let's Talk`. 
 
 ![Enquiry form](/help/edge/assets/updated-form.png)
+
+<!--(https://main--wefinance--wkndform.aem.live/enquiry)-->
+
+URL: `https://main--wefinance--wkndform.aem.live/enquiry` 
+<!--(https://main--wefinance--wkndform.aem.live/enquiry)-->
+
 
 For detailed information about creating and publishing a new form, head over to the [create a form](/help/edge/docs/forms/create-forms.md) guide.
 
@@ -261,13 +263,13 @@ The Adaptive Forms Block `blocks/form` folder is your playground for styling and
 
 Ready to showcase your creation? Use Git to commit and push your changes. This updates your preview and production environments accessible at these URLs (replace placeholders with your project details):
 
-Preview: `https://<branch>--<repo>--<owner>.hlx.page/`
-Production: `https://<branch>--<repo>--<owner>.hlx.live/`
+Preview: `https://<branch>--<repo>--<owner>.aem.page/`
+Production: `https://<branch>--<repo>--<owner>.aem.live/`
 
 Congratulations! You've successfully set up your local development environment and deployed your changes.
 
 
-
+<!--
 ## Add Adaptive Forms Block to your existing AEM project
 
 
@@ -282,15 +284,33 @@ If you have an existing AEM Project, you can integrate the Adaptive Forms Block 
 
 To Integrate:
 
-1. Clone the Adaptive Forms Block repository: [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms) to your computer. 
+1. **Add required files and folders**
+   1. Copy and paste the following folders and files from the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) into your AEM Project:
 
-1. Inside the downloaded folder, find the `blocks/form` folder. Copy this folder. Now, navigate to your AEM project's local `blocks` folder and paste the copied form folder here.
+      * [form block](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)  folder
+       * [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common)  folder
+       * [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components) folder
+       * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) file
+       * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) file
 
-1. Commit and push these changes to your AEM project on GitHub.
+1. **Update component definitions and models files**
+    1. Navigate to the `../models/_component-definition.json` file in your AEM Project and update it with the changes from the [_component-definition.json file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48).
+    
+    1. Navigate to the `../models/_component-models.json` file in your AEM Project and update it with the changes from the [_component-models.json file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)
 
+1. **Add Form Editor in editor script**
+    1. Navigate to the `../scripts/editor-support.js` file in your AEM Project and update it with the changes from the [editor-support.js file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)
+1. **Update ESLint configuration file**
+    1. Navigate to the `../.eslintignore` file in your AEM Project and add the following line of codes to prevent errors related to the Form Block rule engine:
+        ```
+            blocks/form/rules/formula/*
+            blocks/form/rules/model/*
+        ```
+
+1. Commit and push these changes to your AEM Project repository on GitHub.
 
 That's it! The Adaptive Forms Block is now part of your AEM project. You can start creating and adding forms to your AEM pages.
-
+-->
 
 ## Troubleshooting GitHub build issues 
 

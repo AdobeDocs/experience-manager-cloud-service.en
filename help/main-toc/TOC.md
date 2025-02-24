@@ -15,6 +15,7 @@ user-guide-title: AEM as a Cloud Service
   + [What is New and What is Different](/help/overview/what-is-new-and-different.md)
   + [Terminology - New for the Cloud](/help/overview/terminology.md)
   + [An Introduction to the Architecture of AEM as a Cloud Service](/help/overview/architecture.md)
+  + [Supported Client Platforms](/help/overview/supported-platforms.md)
   + [SEO and URL Management](/help/overview/seo-and-url-management.md)
   + [AEM as a Cloud Service on Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md)
   + [Assessing KPIs](/help/overview/assessing-kpis.md)
@@ -81,6 +82,9 @@ user-guide-title: AEM as a Cloud Service
       + [Release Notes for 2020.2.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
+    + 2025 {#2025}
+      + [Maintenance Release Notes for 2025.2.0](/help/release-notes/maintenance/2025/2025-2-0.md)
+      + [Maintenance Release Notes for 2025.1.0](/help/release-notes/maintenance/2025/2025-1-0.md)
     + 2024 {#2024}
       + [Maintenance Release Notes for 2024.11.0](/help/release-notes/maintenance/2024/2024-11-0.md)
       + [Maintenance Release Notes for 2024.10.0](/help/release-notes/maintenance/2024/2024-10-0.md)
@@ -104,7 +108,10 @@ user-guide-title: AEM as a Cloud Service
       + [Maintenance Release Notes for 2023.1.0](/help/release-notes/maintenance/2023/2023-1-0.md)
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
+    + 2025 {#2025}
+      + [Release Notes for 2025.1.0](/help/implementing/cloud-manager/release-notes/2025/2025-1-0.md)
     + 2024 {#2024}
+      + [Release Notes for 2024.12.0](/help/implementing/cloud-manager/release-notes/2024/2024-12-0.md)
       + [Release Notes for 2024.11.0](/help/implementing/cloud-manager/release-notes/2024/2024-11-0.md)
       + [Release Notes for 2024.10.0](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md)
       + [Release Notes for 2024.9.0](/help/implementing/cloud-manager/release-notes/2024/2024-9-0.md)
@@ -199,7 +206,10 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Generate Variations](/help/generative-ai/release-notes-generate-variations.md)
   + Release Notes for Universal Editor {#univeral-editor}
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
+    + 2025 {#2025}
+      + [2025.01.16 Release Notes](/help/release-notes/universal-editor/2025/2025-01-16.md)
     + 2024 {#2024}
+      + [2024.12.02 Release Notes](/help/release-notes/universal-editor/2024/2024-12-02.md)
       + [2024.11.13 Release Notes](/help/release-notes/universal-editor/2024/2024-11-13.md)
       + [2024.11.05 Release Notes](/help/release-notes/universal-editor/2024/2024-11-05.md)
       + [2024.10.29 Release Notes](/help/release-notes/universal-editor/2024/2024-10-29.md)
@@ -218,6 +228,7 @@ user-guide-title: AEM as a Cloud Service
   + [Security Overview for AEM as a Cloud Service](/help/security/cloud-service-security-overview.md)
   + [Configuring Advanced Networking for AEM as a Cloud Service](/help/security/configuring-advanced-networking.md)
   + [IMS Support for AEM as a Cloud Service](/help/security/ims-support.md)
+  + [Changes in User Group and Product Profile Synchronization](/help/security/changes-in-user-group-and-product-profile-synchronization.md)
   + [Same Site Cookie Support for AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
   + [OAuth2 Support for the mail Service](/help/security/oauth2-support-for-mail-service.md)
   + [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md)
@@ -225,6 +236,7 @@ user-guide-title: AEM as a Cloud Service
   + [JWT Credentials Deprecation in Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
   + [Setting Up IMS Integrations for AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
   + [Best Practices for Sling Service User Mapping and Service User Definition](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
+  + [Customer Managed Keys for Adobe as a Cloud Service](/help/security/customer-managed-keys.md)
 + Onboarding {#onboarding}
   + [Start Here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
   + Onboarding Journey {#journey}
@@ -357,10 +369,10 @@ user-guide-title: AEM as a Cloud Service
       + [Style System](/help/sites-cloud/authoring/page-editor/style-system.md)
       + [Undo Redo Limitations](/help/sites-cloud/authoring/page-editor/undo-redo.md)
     + Universal Editor {#universal-editor}
-      + [Navigating the Universal Editor](/help/sites-cloud/authoring/universal-editor/navigation.md)
-      + [Authoring Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
-      + [Publishing Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
-      + [Content Inheritance in the Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+      + [Navigation](/help/sites-cloud/authoring/universal-editor/navigation.md)
+      + [Authoring](/help/sites-cloud/authoring/universal-editor/authoring.md)
+      + [Publishing](/help/sites-cloud/authoring/universal-editor/publishing.md)
+      + [Inheritance](/help/sites-cloud/authoring/universal-editor/inheritance.md)
       + [Page Templates](/help/sites-cloud/authoring/universal-editor/templates.md)
     + Fragments {#fragments}
       + [Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md)
@@ -584,6 +596,7 @@ user-guide-title: AEM as a Cloud Service
     + [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md)
     + [Smart Imaging with client-side Device Pixel Ratio](/help/assets/dynamic-media/client-side-dpr.md)
     + [Deliver Dynamic Media assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
+    + [Dynamic Media templates](/help/assets/dynamic-media/dynamic-media-templates.md)
     + [Activate hotlink protection in Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
     + [3D Support](/help/assets/dynamic-media/assets-3d.md)
     + [Dynamic Media limitations](/help/assets/dynamic-media/limitations.md)
@@ -641,6 +654,7 @@ user-guide-title: AEM as a Cloud Service
     + [Manage collections](/help/assets/manage-collections-assets-view.md)
     + [Watch asset, folders, and collections](/help/assets/manage-notifications-assets-view.md)
     + [Manage reports](/help/assets/manage-reports-assets-view.md)
+    + [Reprocessing](/help/assets/reprocessing-assets-view.md)
     + [Manage tags](/help/assets/tagging-management-assets-view.md)
     + [Content Credentials](/help/assets/content-credentials.md)
     + [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
@@ -720,7 +734,8 @@ user-guide-title: AEM as a Cloud Service
       + [Configure [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
       + [Connect Adaptive Form to Salesforce application using OAuth 2.0 client credential flow](/help/forms/aem-forms-salesforce-integration.md)
       + [Configure [!DNL Azure] storage](/help/forms/configure-azure-storage.md)
-      + [Configure [!DNL Microsoft Dynamics 365] and [!DNL Salesforce] cloud services](/help/forms/configure-msdynamics-salesforce.md)
+      + [Configure [!DNL Microsoft Dynamics 365] cloud services](/help/forms/configure-msdynamics.md)
+      + [Configure Salesforce cloud services](/help/forms/configure-salesforce.md)
       + [Create Form Data Model](/help/forms/create-form-data-models.md)
       + [Work with Form Data Model](/help/forms/work-with-form-data-model.md)
       + [Use Form Data Model](/help/forms/using-form-data-model.md)
@@ -744,8 +759,11 @@ user-guide-title: AEM as a Cloud Service
         + [Configure Submit Action for an Adaptive Form](/help/forms/configure-submit-actions-core-components.md)
         + [Submit an Adaptive Form to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
         + [Submit an Adaptive Form to Microsoft&reg; OneDrive](/help/forms/configure-submit-action-onedrive.md)
-        + [Connect an Adaptive Form to Microsoft&reg; SharePoint](/help/forms/configure-submit-action-sharepoint.md)
-        + [Configure SharePoint Site with limited access using authorization scope](/help/forms/configure-sharepoint-site-limited-access.md)
+        + Connect an Adaptive Form to Microsoft&reg; SharePoint{#connect-to-sharepoint}
+          + [Connect an Adaptive Form to Microsoft&reg; SharePoint](/help/forms/configure-submit-action-sharepoint.md)
+          + [Submit to SharePoint Document Library](/help/forms/connect-forms-to-sharepoint-document-library.md)
+          + [Submit to SharePoint List](/help/forms/connect-forms-to-sharepoint-list.md)
+          + [Configure SharePoint Site with limited access using authorization scope](/help/forms/configure-sharepoint-site-limited-access.md)
         + [Integrate AEM Adaptive Form with AEM Workflow](/help/forms/configure-submit-action-workflow.md)
         + [Configure Submit to REST Endpoint submit action for Adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
         + [Configure the Send Email submit action for an Adaptive Form](/help/forms/configure-submit-action-send-email.md)
@@ -759,7 +777,9 @@ user-guide-title: AEM as a Cloud Service
         +  [Compare Adaptive Forms](/help/forms/compare-forms.md) 
         +  [Create custom submit action](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
         +  [Converting Adaptive Forms based on foundation components to Core Component-based forms using migration utility tool](/help/forms/migration-utility-tool-for-af-core-components.md)
-        +  Introduction to Rule Editor for Adaptive Forms based on Core Components{#rule-editor-core-components}
+        + [Email Templates in Adaptive Forms](/help/forms/html-email-templates-in-adaptive-forms.md)
+        + [​Manage Publication in Experience Manager Forms](/help/forms/manage-publication.md)
+        + Introduction to Rule Editor for Adaptive Forms based on Core Components{#rule-editor-core-components}
              +  [Introduction to Rule Editor for Adaptive Forms based on Core Components](/help/forms/rule-editor-core-components.md)
              +  [Rule Editor user interface for Adaptive Forms based on Core Components](/help/forms/rule-editor-core-components-user-interface.md)
               +  [Difference between Foundation Rule Editor and Core Component Rule Editor](/help/forms/rule-editor-core-components-difference-tables.md)
@@ -838,6 +858,10 @@ user-guide-title: AEM as a Cloud Service
       + [Create and manage reviews for an Adaptive Form](/help/forms/review-adaptiveforms-in-sites-page.md)
     + [Adaptive forms keywords](/help/forms/adaptive-forms-keywords.md)
     + [Previewing a form](/help/forms/previewing-forms.md)
+  + Interactive Communication {#interactive-communocation}
+    + [Introduction to interactive communication](/help/forms/introduction-to-interactive-communication.md)
+    + [Create your first Interactive Communication](/help/forms/create-your-first-communication.md)
+    + [Frequently Asked Questions](/help/forms/interactive-communications-faq.md)
   + Forms Centric Workflows {#create-form-centric-workflows}
     + [Introduction to Forms-centric workflow](/help/forms/aem-forms-workflow.md)
     + [Use Forms-centric steps in a workflow + step reference](/help/forms/aem-forms-workflow-step-reference.md)
@@ -993,6 +1017,7 @@ user-guide-title: AEM as a Cloud Service
     + [Redirects](/help/edge/docs/redirects.md)
   + Building Forms {#build-forms}
     + [Overview](/help/edge/docs/forms/overview.md)
+    + [How Edge Delivery Services Forms works?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
     + Get Started {#getting-started-edge-delivery-services-forms}
       + [Getting Started](/help/edge/docs/forms/tutorial.md)
       + [Create a form using Google Sheets or Microsoft Excel](/help/edge/docs/forms/create-forms.md)
@@ -1004,6 +1029,18 @@ user-guide-title: AEM as a Cloud Service
       + [Use rules to add dynamic behavior to a form](/help/edge/docs/forms/rules-forms.md)
       + [Regex expressions for validations](/help/edge/docs/forms/regex-forms.md)
       + [Show a custom thank you message after form submission](/help/edge/docs/forms/thank-you-page-form.md)
+      + [Use Forms Submission Service](/help/forms/forms-submission-service.md)
+    + WYSIWYG {#universal-editor}
+      + [Overview - Universal Editor for Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+      + [Getting Started](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+      + [Understanding WYSIWYG Interface](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
+      + [Add rules to using Rule Editor](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+      + [Create Custom Components](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+      + [Use reCAPTCHA in forms](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+      + [Submit Actions](/help/edge/docs/forms/universal-editor/submit-action.md)
+      + [Publish Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
+      + [Customize styling of forms](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+      + [Responsive Mode](/help/edge/docs/forms/universal-editor/responsive-layout.md)
     + Capabilities {#advanced-features-edge-delivery-services-forms}
       + [Use Form fragments](/help/edge/docs/forms/form-fragments.md)
       + [Add repeatable sections to a form​](/help/edge/docs/forms/repeatable-forms.md)
@@ -1011,6 +1048,7 @@ user-guide-title: AEM as a Cloud Service
       + [Use reCAPTCHA to protect your forms](/help/edge/docs/forms/recaptacha-forms.md)
       + [Custom Components](/help/edge/docs/forms/custom-components-forms.md)
       + [Real Use Monitoring for forms](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+      + [Publishing Forms for Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md)
     + References {#forms-references}
       + [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
   + Edge Delivery Resources {#resources}
@@ -1021,7 +1059,7 @@ user-guide-title: AEM as a Cloud Service
       + [Sidekick Library](/help/edge/docs/sidekick-library.md)
     + [FAQ](/help/edge/docs/faq.md)
     + [Admin API](https://www.aem.live/docs/admin.html)
-    + [AEM Status](https://www.aemstatus.net)
+    + [AEM Status](https://status.adobe.com)
     + Tools {#tools}
       + [AEM Sidekick Chrome Extension](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
       + [Github Bot](https://github.com/apps/aem-code-sync)
@@ -1163,6 +1201,7 @@ user-guide-title: AEM as a Cloud Service
     + Edge Delivery Sites {#edge-delivery-sites}
       + [Introduction to Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
       + [Add an Edge Delivery Site to Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
+      + [Create an Edge Delivery Site in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
       + [Setup Push Validation for an Edge Delivery site](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
       + [Manage Edge Delivery Sites in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
     + Domain Settings {#custom-domain-names}
@@ -1207,6 +1246,7 @@ user-guide-title: AEM as a Cloud Service
     + [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
     + [Customizing Site Templates and Themes](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
     + [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md)
+    + [Disallow the Serialization of ResourceResolvers via Sling Model Exporter](/help/implementing/developing/disallow-resourceresolver-serialization.md)
     + Full Stack AEM Development {#full-stack}
       + [Getting Started Developing AEM Sites - WKND Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
       + [Structure of the AEM UI](/help/implementing/developing/introduction/ui-structure.md)
@@ -1242,10 +1282,14 @@ user-guide-title: AEM as a Cloud Service
       + [Introduction](/help/implementing/universal-editor/introduction.md)
       + [Use Cases](/help/implementing/universal-editor/use-cases.md)
       + [Attributes and Item Types](/help/implementing/universal-editor/attributes-types.md)
+      + [Component Definition](/help/implementing/universal-editor/component-definition.md)
       + [Model Definitions, Fields, and Component Types](/help/implementing/universal-editor/field-types.md)
+      + [Publishing](/help/implementing/universal-editor/publishing.md)
       + [SecurBank Sample App](/help/implementing/universal-editor/securbank.md)
       + [Events](/help/implementing/universal-editor/events.md)
-      + [Customizing](/help/implementing/universal-editor/customizing.md)     
+      + [Filtering Components](/help/implementing/universal-editor/filtering.md)
+      + [Customizing](/help/implementing/universal-editor/customizing.md)  
+      + [Extending](/help/implementing/universal-editor/extending.md)   
       + [Architecture](/help/implementing/universal-editor/architecture.md)
       + [Authentication](/help/implementing/universal-editor/authentication.md)
       + [Getting Started](/help/implementing/universal-editor/getting-started.md)
@@ -1270,11 +1314,9 @@ user-guide-title: AEM as a Cloud Service
       + [The RemotePage Component](/help/implementing/developing/hybrid/remote-page.md)
       + [Editing an External SPA within AEM](/help/implementing/developing/hybrid/editing-external-spa.md)
       + [Composite Components in SPAs](/help/implementing/developing/hybrid/composite-components.md)
-      + [Server Side Rendering](/help/implementing/developing/hybrid/ssr.md)
       + [Enabling JSON Export for a Component](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
       + [Launch Integration](/help/implementing/developing/hybrid/launch-integration.md)
       + [SPA Reference Documents](/help/implementing/developing/hybrid/reference-materials.md)
-      + [Disallow the Serialization of ResourceResolvers via Sling Model Exporter](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)
   + Developer Tools {#developer-tools}
     + [Developer Mode](/help/implementing/developing/tools/developer-mode.md)
     + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
@@ -1327,6 +1369,7 @@ user-guide-title: AEM as a Cloud Service
     + Internationalization{#internationalization}
       + [Internationalizing Components](/help/implementing/developing/extending/i18n/components.md)
       + [Internationalizing UI Strings](/help/implementing/developing/extending/i18n/dev.md)
+      + [Using Translator to Manage Dictionaries](/help/implementing/developing/extending/i18n/translator.md)
       + [Extracting Strings for Translating](/help/implementing/developing/extending/i18n/extract.md)
   + Deploying to AEM as a Cloud Service {#deploying}
     + [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md)
