@@ -139,13 +139,14 @@ To view this information, go to Cloud Acceleration Manager. Click your project c
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-You see a dialog with the summary information. Use the help icons to read a more full description. Click the **Download report** button to download the full comma-separated (CSV) report.  Also note that at the end of this report is the User Report, which can be used for post-migration user management.
+You see a dialog with the summary information. Use the help icons to read a more full description. To download the full comma-separated (CSV) Principal Migration Report select **Principal Migration Report** from the dropdown list under **Download a file...** and click the **Download** button. Also note that at the end of this report is the User Report, which can be used for post-migration user management.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 
 The Principal Migration report will report:
 
 * Each group migrated and the first content path that triggered that group to be migrated; the group could also be on other paths, but only the first one found for a given group is reported. It also reports whether it was found in an ACL or a CUG policy.
+* Each group migrated as a local group will have the word "local" indicated on the group's line.
 * Each group not migrated, and the reason it was not migrated.  Typically it will be one of these reasons:
     * It is a built-in group
     * It is already on the target system
