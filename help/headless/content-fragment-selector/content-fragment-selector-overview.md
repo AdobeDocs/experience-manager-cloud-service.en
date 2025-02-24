@@ -4,7 +4,7 @@ description: Use the Micro-Frontend Content Fragment Selector to search, find, a
 role: Admin, User
 ---
 
-# Micro-Frontend Content Fragment Selector {#micro-frontend-content-fragment-selector}
+# Micro-Frontend Content Fragment Selector
 
 The Micro-Frontend Content Fragment Selector provides a user interface that easily integrates with the Adobe Experience Manager (AEM) as a Cloud Service repository. The interface allows you to browse or search Content Fragments in the repository, and use them in your application.
 
