@@ -37,11 +37,30 @@ The model definition is a JSON structure, starting with an array of models.
 
 See the **[Fields](#fields)** section of this document for more information about how to define your `fields` array.
 
+You can link a model to a component in two ways: using the [component definition](#component-definition) or [via the instrumentation.](#instrumentation)
+
+### Linking Using the Component Definition {#component-definition}
+
+This is the preferred method of linking the model to the component. Doing so allows you to maintain the link centrally in the component definition and enables dragging components across containers.
+
+Simply include the `model` property in the component object in the `components` array in the `component-definition.json` file.
+
+For details, please see the document [Component Definition.](/help/implementing/universal-editor/component-definition.md)
+
+### Linking Using Instrumentation {#instrumentation}
+
 To use the model definition with a component, the `data-aue-model` attribute can be used.
 
 ```html
 <div data-aue-resource="urn:datasource:/content/path" data-aue-type="component"  data-aue-model="model-id">Click me</div>
 ```
+
+>[!NOTE]
+>
+>The Universal Editor first checks if a model is linked via the instrumentation and uses that before checking the component definition. This means:
+>
+>* Projects that have implemented the link to the model via the instrumentation will continue to work as-is with no need for change.
+>* If you define the model in the [component definition](#component-definition) as well as in the instrumentation, the instrumentation will always be used.
 
 ## Loading a Model Definition {#loading-model}
 
