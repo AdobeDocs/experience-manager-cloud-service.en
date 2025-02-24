@@ -92,6 +92,7 @@ The parent of the panel should contain a delete button to delete instance of the
     * To create a delete panel button, specify `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`
 
     Click **Done**.
+
 >[!VIDEO](https://video.tv.adobe.com/v/3421620/adaptive-forms-repeatable-sections)
 
 >[!NOTE]
