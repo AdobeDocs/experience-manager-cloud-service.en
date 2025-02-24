@@ -489,7 +489,7 @@ You can now use fonts available in a web-service in an Adaptive Form <!-- or int
 
 To configure Adobe Fonts in Experience Manager, perform the following steps:
 
-1. In the author instance, click ![Adobe Experience Manager](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Tools]** ![hammer](assets/hammer.png) &gt; **[!UICONTROL Deployment]** &gt; **[!UICONTROL Cloud Services]**.
+1. In the author instance, click ![Adobe Experience Manager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Tools]** ![hammer](assets/hammer.png) &gt; **[!UICONTROL Deployment]** &gt; **[!UICONTROL Cloud Services]**.
 1. On the **[!UICONTROL Cloud Services]** page, navigate to  and open the **[!UICONTROL Adobe Fonts]** option. Open the configuration folder, and click **[!UICONTROL Create]**. 
 1. On the **[!UICONTROL Create Configuration]** dialog, specify a title for the configuration, and click **[!UICONTROL Create]**.
 

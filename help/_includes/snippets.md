@@ -50,6 +50,17 @@
 * [Connect an Adaptive Form to Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 * [Create custom submit action](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
+## Universal Editor{#universal-editor-see-also}
+
+* [Get started with Edge Delivery Services for AEM Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [Publish your form](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [Submit your form](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [Customize the look of your forms](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [Create rules for your form](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [Use reCAPTCHA in your form](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+* [Create a custom component for your form](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [Preview form in responsive mode](/help/edge/docs/forms/universal-editor/responsive-layout.md) 
+
 ## See also {#see-more-forms-eds}
 
 * [Get started with Edge Delivery Services for AEM Forms](/help/edge/docs/forms/tutorial.md)

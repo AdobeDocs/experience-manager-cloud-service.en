@@ -83,8 +83,10 @@ Once the Turnstile Captcha service is configured, it is available for use in an 
         * On a user action.
     * **[!UICONTROL Captcha Service]:** Select your Captcha service, here you select Cloudfare Turnstile Captcha service.
     * **[!UICONTROL Captcha Configuration]:** Select a Cloud Configuration configured for Turnstile. for example, here you select the **managed key**.
+        
         >[!NOTE]
-        >You can have multiple Cloud Configurations in your environment for a similar purpose. So, choose the service carefully. If no service is listed, see [Connect your AEM Forms environment with Turnstile](#connect-your-forms-environment-with-turnstile-service) to learn how to create a Cloud Service that connects your AEM Forms environment with Turnstile service.
+        >
+        > You can have multiple Cloud Configurations in your environment for a similar purpose. So, choose the service carefully. If no service is listed, see [Connect your AEM Forms environment with Turnstile](#connect-your-forms-environment-with-turnstile-service) to learn how to create a Cloud Service that connects your AEM Forms environment with Turnstile service.
 
     * **Error Message:** Provide the error message to display to the user when the Captcha submission fails.
     * **Captcha Size:** You select the display size of the Turnstile challenge dialog. Use the **[!UICONTROL Compact]** option to display a small sized and the **[!UICONTROL Normal]** option to display a relatively large-size Turnstile challenge dialog.
