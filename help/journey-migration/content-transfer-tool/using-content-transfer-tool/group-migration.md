@@ -54,24 +54,48 @@ CTT version 3.0.20 and later includes an option to disable the migration of grou
 * Uncheck **Include Groups in migration** to disable group migrations
 * Click **Save** to ensure the configuration is saved and active on the server
 
-With this setting disabled, groups will not be migrated, and there will be no Principal Migration report or User Report.
+With this setting disabled, groups will not be migrated, and there will be no Principal Migration report or User Report (see below).
 
-## User Report {#user-report}
+## Principal Migration Report and User Report {#principal-migration-report}
 
-During migration users are not migrated, but the user-group relationships on the source system are lost unless they are somehow captured.  The User Report captures some of this information in text format in a User Report. In it, each user is reported (one per line) along with a list of groups it is a member of (but groups not migrated are not put in this list), unless its list of groups is empty, in which case the user does not appear. The groups reported along with each user are those the user is a member of directly or indirectly in the source system; since groups in the source system may be nested while in the target system they are not, this list of groups supports the new flattened group structure in IMS.
+When groups are included during migration (the default), a Principal Migration Report is saved which outlines what happens to each group during the migration.  To download this report after a successful ingestion:
+* In CAM, go to Content Transfer and select Ingestion Jobs.
+* Click the ellipsis (...) on the line of the Ingestion in question, and choose "View principal summary".
+* On the dialog that appears, select select "Principal Migration Report" from the dropdown list under "Download a file..." and click the Download button.
+* Save the resulting CSV file.
 
-In the case of a wipe and then a non-wipe ingestion, the groups in a user's list will include those groups migrated in either phase.
+Some of the information recorded per group is:
+* If migrated, the path to the first ACL or CUG that caused the group to be migrated.
+* Whether the group was previously migrated; if the current ingestion was a non-wipe ingestion, some groups may have been migrated during a previous ingestion.
+* Whether the group is a built-in group; these groups are not migrated because they are always on the target AEMaaCS environment.
+* If the group was not part of an ACL or a CUG on the migrated content, it would not have been migrated.
+* If the group was a local group, such as a group created by an Assets Collection, it may have been migrated, and in this case the word "local" is added to the report for that group.
 
-In addition to the groups for each user, there is a field in the report where notes may be added for the user (and a detailed description of the note's meaning is also in the report).  Possilble notes are:
+During migration users are not migrated, but the user-group relationships on the source system would be lost unless they were somehow captured. The Ingestion process captures some of this information in text format in a User Report, which is at the end of the Principal Migration Report. 
 
-* Users which are referenced directly in an ACL will have *Note-A* in their notes section, as this is not a recommended use case or best practice.
-* Users which are direct members of a built-in group will have *Note-B* in their notes section, as this is also not a recommended use case or best practice.
+### User Report ###
+In the User Report section users are reported (one per line) along with their email address and a list of IMS-enabled groups that were migrated during this ingestion.  Groups that were not migrated, were migrated during a previous ingestion, or are local groups, are not included in the list.   If a user is not in any migrated IMS-enabled group, and it has no extra notes indicating it is a special case (see **Notes** below), that user does _not_ appear in the report. The groups reported along with each user are those the user is a member of, directly or indirectly, in the source system; since groups in the source system may be nested while in the target system they are not, this list of groups supports the new flattened group structure in IMS.
 
-These cases can occur simultaneously, and also at the same time as the earlier cases.
+In the case of a wipe and then a non-wipe ingestion, the groups in a user's list from the non-wipe ingestion will only be those groups migrated during the non-wipe phase.
 
-The User Report is added onto the end of (and is therefore part of) the Principal Migration Report (see [Final Summary and Report](#final-summary-and-report) below).  The information in this report, including the groups reported for each user, can be used to create a bulk user upload file which can be used in Admin Console to create many users in IMS in bulk.  Existing IMS users can also be edited in bulk.
+#### Notes ####
+In addition to the groups for each user, there is a field in the User Report where notes about the user may be provided (and a detailed description of the note's meaning is also in the report) for information purposes.  Possible notes are:
 
-See [Manage multiple users | Bulk CSV upload](https://helpx.adobe.com/ca/enterprise/using/bulk-upload-users.html) for details about creating or editing users in bulk via the Admin Console.
+* **Note-A** Users which are referenced directly in an ACL will have *Note-A* in their notes section, as this is not a recommended use case or best practice.
+* **Note-B** Users which are direct members of a built-in group will have *Note-B* in their notes section, as this is also not a recommended use case or best practice.
+* **Note-C** Users which are direct of indirect members of a migrated local group (such as a group created by an Assets Collection) will have *Note-C* in their notes section, as local groups are not configured to be managed by IMS.
+
+These cases can occur simultaneously, and also at the same time as the earlier cases.  _For additional information about which groups each Note refers to for each user, check the Ingestion log; it reports this information for each user._
+
+The User Report is added onto the end of (and is therefore part of) the Principal Migration Report (see [Final Summary and Report](#final-summary-and-report) below) to give customers a more complete understanding of the groups and users, and their relationships.
+
+## Bulk Upload Files {#bulk-upload-files}
+
+Since groups are migrated only to AEM as a Cloud Service, they still must also be added to IMS so they can work properly with AEM in the cloud. Additionally, users are not migrated, so they also need to be added to IMS. The CTT/CAM migration tooling does not perform this step, but the Ingestion process creates two bulk upload files, one for groups and one for users. These files can be edited and then used, along with the Admin Console's bulk upload functionality, to create IMS groups and users based on your AEM groups and users.
+
+See [Bulk Group and User Uploading to IMS](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/bulk-principal-uploading.md) for details about how to use bulk upload files to create users and groups using the Admin Console.
+
+Also see [Manage users](https://helpx.adobe.com/ca/enterprise/using/users.html) for additional details about managing AEM as a Cloud Service users.
 
 ## Additional Considerations {#additional-considerations}
 

@@ -299,6 +299,7 @@ user-guide-title: AEM as a Cloud Service
       + [Deleting a Migration Set](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
       + [Running the Content Transfer Tool on a Publish Instance](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
       + [Managing Principals After Migration](/help/journey-migration/managing-principals-after-migration.md)
+      + [Bulk Upload of Principals to IMS after Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/bulk-principal-uploading.md)
       + [Troubleshooting Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
       + Legacy User Mapping Tool (Legacy){#legacy-user-mapping-tool}
         + [Overview](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
