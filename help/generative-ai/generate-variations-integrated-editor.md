@@ -117,6 +117,9 @@ When you select a single variation, you can use the following actions:
 
 * **Edit**
   * You can edit the text of the generated variation. 
+
+    * Your updates can be previewed in the web page.
+
   * Save your changes for later use.
 * **Favorite**
   * Flag this variation for future reference. 
