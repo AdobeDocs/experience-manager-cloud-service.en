@@ -36,7 +36,8 @@
 ## Adaptive Form Submit Actions {#af-submit-action}
 
 * [Send email](/help/forms/configure-submit-action-send-email.md)
-* [Submit to SharePoint](/help/forms/configure-submit-action-sharepoint.md)
+* [Submit to SharePoint Document Library](/help/forms/connect-forms-to-sharepoint-document-library.md)
+* [Submit to SharePoint List](/help/forms/connect-forms-to-sharepoint-list.md)
 * [Submit using Form Data Model](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
 * [Submit to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [Submit to REST endpoint](/help/forms/configure-submit-action-restpoint.md)
@@ -45,9 +46,20 @@
 * [Submit to Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Submit to Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Connect Adaptive Form to Salesforce application](/help/forms/aem-forms-salesforce-integration.md)
-* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+* [Connect an Adaptive Form to Microsoft&reg; Dynamics](/help/forms/configure-msdynamics.md)
 * [Connect an Adaptive Form to Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 * [Create custom submit action](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
+
+## Universal Editor{#universal-editor-see-also}
+
+* [Get started with Edge Delivery Services for AEM Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [Publish your form](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [Submit your form](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [Customize the look of your forms](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [Create rules for your form](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [Use reCAPTCHA in your form](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+* [Create a custom component for your form](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [Preview form in responsive mode](/help/edge/docs/forms/universal-editor/responsive-layout.md) 
 
 ## See also {#see-more-forms-eds}
 
@@ -59,6 +71,7 @@
 * [Add repeatable sections to a form​](/help/edge/docs/forms/repeatable-forms.md)
 * [Show a custom thank you message after form submission​](/help/edge/docs/forms/thank-you-page-form.md)
 * [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
+* [Using Form Submission Service](/help/forms/forms-submission-service.md)
 
 
 ## Difference between Rule Editor in Core Components and Rule Editor in Foundation Components {#rule-editor-diff}
@@ -178,12 +191,12 @@ The following table demonstrates the difference between the features available i
 
 >[!IMPORTANT]
 >
->The Universal Editor is not compatible with [IP allow lists.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+>The Universal Editor is not compatible with [IP allow lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 >
 >If you want to use the Universal Editor, you must either:
 >
 >* Not enable IP Allow Lists.
->* [Run your own instance of the Universal Editor Service.](/help/implementing/universal-editor/local-dev.md)
+>* [Run your own instance of the Universal Editor Service](/help/implementing/universal-editor/local-dev.md).
 
 ## Work with Dynamic Media {#work-with-dynamic-media}
 
@@ -225,3 +238,11 @@ To log a support ticket, you must first register your Edge Delivery site in Clou
     * URL of the live website. For example: `www.mydomain.com`.
     * URL of the origin website (`.hlx` URL).
 
+## Universal Editor is Preferred over SPA Editor {#ue-over-spa}
+
+>[!IMPORTANT]
+>
+>The SPA Editor [has been deprecated](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-deprecated) for new projects. It remains supported by Adobe for existing projects, but should not be used for new projects. The preferred editors for managing headless content in AEM are now:
+>
+>* [The Universal Editor](/help/edge/wysiwyg-authoring/authoring.md) for visually editing headless content.
+>* [The Content Fragment Editor](/help/assets/content-fragments/content-fragments-managing.md) for form-based editing of headless content.

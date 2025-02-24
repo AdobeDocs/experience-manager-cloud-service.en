@@ -16,9 +16,9 @@ This guide provides step-by-step instructions for how to create blocks instrumen
 
 This guide necessarily requires existing knowledge of WYSIWYG authoring with Edge Delivery Services projects as well as the Universal Editor. Before beginning this guide, you should already have access to Edge Delivery Services and be familiar with its basics including:
 
-* You have completed the [Edge Delivery Service tutorial.](/help/edge/developer/tutorial.md)
-* You have access to an [AEM Cloud Service sandbox.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
-* You have [enabled the Universal Editor on the same sandbox environment.](/help/implementing/universal-editor/getting-started.md)
+* You have completed the [Edge Delivery Service tutorial](/help/edge/developer/tutorial.md).
+* You have access to an [AEM Cloud Service sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
+* You have [enabled the Universal Editor on the same sandbox environment](/help/implementing/universal-editor/getting-started.md).
 * You have completed the [Developer Getting Started Guide for WYSIWYG authoring with Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) guide.
 
 This guide builds on the work done in the [Developer Getting Started Guide for WYSIWYG authoring with Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) guide.
@@ -45,7 +45,7 @@ The following quote block example follows this approach.
 
    ![Cloning the project](assets/create-block/clone.png)
 
-2\. Edit the `component-definition.json` file at the root of the project and add the following definition for your new quote block and save the file.
+2\. Edit the [`component-definition.json` file](/help/implementing/universal-editor/component-definition.md) at the root of the project and add the following definition for your new quote block and save the file.
 
 >[!BEGINTABS]
 
@@ -113,7 +113,7 @@ The following quote block example follows this approach.
 
 >[!ENDTABS]
 
-4\. Edit the `component-filters.json` file at the root of the project and add the quote block to the [filter definition](/help/implementing/universal-editor/customizing.md#filtering-components) to allow the block to be added to any section and save the file.
+4\. Edit the [`component-filters.json` file](/help/implementing/universal-editor/filtering.md) at the root of the project and add the quote block to the [filter definition](/help/implementing/universal-editor/filtering.md) to allow the block to be added to any section and save the file.
 
 >[!BEGINTABS]
 
@@ -149,7 +149,7 @@ The following quote block example follows this approach.
 
 Now that your basic quote block is defined and committed to the sample project, you can add a quote block to an existing page.
 
-1. In a browser, sign into AEM as a Cloud Service. [Using the Sites console,](/help/sites-cloud/authoring/basic-handling.md) navigate to the site that you created in the [Developer Getting Started Guide for WYSIWYG authoring with Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) guide and select a page.
+1. In a browser, sign into AEM as a Cloud Service. [Using the Sites console](/help/sites-cloud/authoring/basic-handling.md), navigate to the site that you created in the [Developer Getting Started Guide for WYSIWYG authoring with Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) guide and select a page.
 
    * In this case, `index` is used for illustrative purposes.
 
@@ -275,7 +275,7 @@ Congratulations! You now have a fully working and styled quote block. You can us
 
 ### Block Options {#block-options}
 
-If you need a block to look or behave slightly differently based on certain circumstances, but not different enough to become a new block in itself, you can let authors choose from [block options.](content-modeling.md#type-inference)
+If you need a block to look or behave slightly differently based on certain circumstances, but not different enough to become a new block in itself, you can let authors choose from [block options](content-modeling.md#type-inference).
 
 By adding a `classes` property to the block, the property rendered in the table header for simple blocks, or as value list for items in a container block.
 
@@ -337,4 +337,4 @@ Please see the document [Content Modeling for WYSIWYG authoring with Edge Delive
 
 >[!TIP]
 >
->For an end-to-end walkthrough of creating a new Edge Delivery Services project that is enabled for WYSIWYG authoring with AEM as a Cloud Service as a content source, please view [this AEM GEMs webinar.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>For an end-to-end walkthrough of creating a new Edge Delivery Services project that is enabled for WYSIWYG authoring with AEM as a Cloud Service as a content source, please view [this AEM GEMs webinar](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery).

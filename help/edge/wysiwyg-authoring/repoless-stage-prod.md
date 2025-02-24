@@ -11,7 +11,7 @@ Learn how to set up a separate sites for your staging and production environment
 
 ## Overview {#overview}
 
-You may wish to set up a site for your production environment separate from your staging environment. Setting up a second site for a separate staging and production setup is similar to the [setup required for multi site management.](/help/edge/wysiwyg-authoring/repoless-msm.md) In fact, it can be combined with MSM site structures if required.
+You may wish to set up a site for your production environment separate from your staging environment. Setting up a second site for a separate staging and production setup is similar to the [setup required for multi site management](/help/edge/wysiwyg-authoring/repoless-msm.md). In fact, it can be combined with MSM site structures if required.
 
 This document uses the typical example of separate staging and production environments. You can create separate environments for any environments you wish.
 
@@ -27,8 +27,8 @@ In this example, we are assuming that a production site has already been created
 
 There are two steps to configuring a separate production site.
 
-1. [Create new Edge Delivery Services sites for your production environment.](#create-edge-site)
-1. [Update cloud configuration in AEM for your production site.](#update-cloud-configuration)
+1. [Create new Edge Delivery Services sites for your production environment](#create-edge-site).
+1. [Update cloud configuration in AEM for your production site](#update-cloud-configuration).
 
 ### Create New Edge Delivery Services Sites for Your Production Environment {#create-edge-site}
 
@@ -39,6 +39,10 @@ There are two steps to configuring a separate production site.
    * The `code` configuration should be the same as you used for the initial project creation.
    * The `content` > `source` > `url` must be adapted to the name of the new site you are creating. In this example, it is `wknd-prod`.
    * I.e., the site name in POST URL and the `content` > `source` > `url` must be the same.
+   * Adapt the `admin` block to define the users who should have full administrative access to the site.
+     * It is an array of email addresses.
+     * The wildcard `*` can be used.
+     * See the document [Configuring Authentication for Authors](https://www.aem.live/docs/authentication-setup-authoring#default-roles) for more information.
 
    ```text
    curl --request POST \
@@ -65,9 +69,9 @@ There are two steps to configuring a separate production site.
            "admin": {
                "role": {
                    "admin": [
-                       "*@adobe.com"
+                       "<email>@<domain>.<tld>"
                    ],
-                   "publish": [
+                   "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"
                    ]
                },

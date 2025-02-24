@@ -32,7 +32,7 @@ An administrator would only need to create folders occasionally to organize cont
    ![Create folder](../assets/assets-folder-create.png)
 1. Select the folder you created by hovering and tapping the check mark. Then select **Properties** from the toolbar (or use the `p` [keyboard shortcut](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)).
 1. In the **Properties** window, select the **Cloud Services** tab.
-1. For the **Cloud Configuration** Select the [configuration you created previously.](create-configuration.md)
+1. For the **Cloud Configuration** Select the [configuration you created previously](create-configuration.md).
    ![Configure assets folder](../assets/assets-folder-configure.png)
 1. Select **Save &amp; Close**.
 1. Select **OK** in the confirmation window.

@@ -1,5 +1,5 @@
 ---
-title: Adobe Experience Manager Launchpad
+title: About AEM Launchpad &ndash; Early Adopter
 description: Learn about the Adobe Experience Manager Launchpad page.
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -8,7 +8,7 @@ hide: yes
 hidefromtoc: yes
 exl-id: 1bfa47e1-fb2f-4b68-ac69-4618a9e4a5f4
 ---
-# About Adobe Experience Manager Launchpad {#aem-launchpad}
+# About AEM Launchpad &ndash; Early Adopter {#aem-launchpad}
 
 AEM Launchpad introduces a centralized starting point for managing content, assets, and sites within Adobe Experience Manager. Designed to deliver a personalized experience, AEM Launchpad lets you navigate the AEM ecosystem seamlessly according to your roles and goals. Acting as a guide, it provides key insights and recommended actions to help you achieve your objectives efficiently. With a clear, persona-driven layout, AEM Launchpad ensures quick access to essential tools, supporting a streamlined and effective experience across all AEM features.
 
@@ -18,18 +18,18 @@ Available to early adopters, AEM Launchpad offers an optimized experience focuse
 
 The [Adobe Experience Manager page](https://experience.adobe.com/#/experiencemanager) has been updated with enhanced navigation and interactive widgets. The previous collection of solution cards provided access to tools like the following: 
 
-* Universal Editor
-* Cloud Manager
-* Cloud Acceleration Manager
 * Brand Portal
-* Software Distribution and
+* Cloud Acceleration Manager
+* Cloud Manager
 * Extension Manager
+* Software Distribution
+* Universal Editor
 
 These solutions are now moved to the main navigation under **Tools**. Additionally, new navigation elements for **Sites** and **Assets** provide quick access to key Adobe Experience Manager features such as Assets, Collections, Sites, and Content Fragments. These features are available for the primary production environment that you have access to.
 
 ![AEM Launchpad environments](/help/implementing/cloud-manager/assets/aem-launchpad-author-environments.png)
 
-Serving as the central hub for Adobe Experience Manager, the AEM Launchpad page expands to feature additional widgets and actions tailored to each user role. Fully customizable, the page lets you choose the optimal layout for your screen. Widgets can be filtered so that only selected ones appear on the main page, ensuring a personalized experience.
+Serving as the central hub for Adobe Experience Manager, the AEM Launchpad page expands to feature additional widgets and actions tailored to each user role. Fully customizable, the page lets you choose the optimal layout for your screen. Widgets can be filtered so that only selected ones appear on the main page, ensuring a personalized experience. 
 
 ![AEM Launchpad customized](/help/implementing/cloud-manager/assets/aem-launchpad-custom.png)
 

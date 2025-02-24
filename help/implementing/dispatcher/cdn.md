@@ -17,12 +17,12 @@ AEM as a Cloud Service comes with an integrated CDN, designed to reduce latency 
 
 The AEM-managed CDN meets most customers' performance and security needs. For the publish tier, customers can choose to route traffic through their own CDN, which they must manage. This option is available on a case-by-case basis, particularly when customers have existing legacy integrations with a CDN provider that are hard to replace.
 
-Customers looking to publish to the Edge Delivery Services tier can take advantage of Adobe's managed CDN. See [Adobe managed CDN](#aem-managed-cdn). <!-- CQDOC-21758, 5b -->
+Customers looking to publish to the Edge Delivery Services tier can take advantage of Adobe's managed CDN. See [Adobe Managed CDN](#aem-managed-cdn). <!-- CQDOC-21758, 5b -->
 
 
 <!-- ERROR: NEITHER URL IS FOUND (HTTP ERROR 404) Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) and [Cloud 5 AEM CDN Part 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) for additional information about CDN in AEM as a Cloud Service. -->
 
-## Adobe managed CDN {#aem-managed-cdn}
+## Adobe Managed CDN {#aem-managed-cdn}
 
 <!-- CQDOC-21758, 5a -->
 
@@ -31,7 +31,7 @@ To prepare for content delivery using AEM's built-in CDN through Cloud Manager's
 * [Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
 * [Introduction to custom domain names](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 * [Introduction to SSL certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
-* [Add a CDN Configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+* [Configure a CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
 
 **Restricting traffic**
 
@@ -116,7 +116,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->When using your own CDN, you do not need to install domains and certificates in Cloud Manager. The routing in the Adobe CDN is done by using the default domain `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`, which should be sent in the request `Host` header. Overwriting the request `Host` header with a custom domain name may route the request incorrectly through the Adobe CDN.
+>When using your own CDN, you do not need to install domains and certificates in Cloud Manager. The routing in the Adobe CDN is done by using the default domain `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`, which should be sent in the request `Host` header. Overwriting the request `Host` header with a custom domain name may route the request incorrectly through the Adobe CDN or result in 421 errors.
 
 >[!NOTE]
 >
@@ -130,7 +130,33 @@ The extra hop between the customer CDN and the AEM CDN is only needed if there i
 
 This customer CDN configuration is supported for the publish tier, but not in front of the author tier.
 
-### Sample CDN vendor configurations {#sample-configurations}
+### Debugging configuration
+
+To debug a BYOCDN configuration, use the `x-aem-debug` header with a value of `edge=true`. For example:
+
+In Linux&reg;:
+
+```
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" -H "x-aem-debug: edge=true"
+
+```
+
+In Windows:
+
+```
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" --header "x-aem-debug: edge=true"
+
+```
+
+This process reflects certain properties used in the request in the `x-aem-debug` response header. For example:
+
+```
+x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-Edge-Key=set,host=publish-p87058-e257304-cmstg.adobeaemcloud.com,x-forwarded-host=wknd.site,adobe_unlocked_byocdn=true
+```
+
+This process allows verification of details such as the host values, edge authentication configuration, and the x-forwarded-host header value. It also identifies whether an edge key is set and which key is used if a match exists.
+
+### Sample CDN Vendor Configurations {#sample-configurations}
 
 Presented below are several configuration examples from several leading CDN vendors.
 
@@ -149,13 +175,17 @@ Presented below are several configuration examples from several leading CDN vend
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
 
-### Common errors {#common-errors}
+### Common Errors {#common-errors}
 
 The sample configurations provided show the base settings needed. However, a customer configuration may have other impacting rules that remove, edit, or re-arrange the headers needed for AEM as a Cloud Service to serve the traffic. Below are common errors that occur when configuring a customer managed CDN to point to AEM as a Cloud Service.
 
 **Redirection to the publish service endpoint**
 
 When a request receives a 403 forbidden response, it means that the request is missing some required headers. A common cause for this is that the CDN is managing both apex and `www` domain traffic, but is not adding the correct header for the `www` domain. This problem can be triaged by checking your AEM as a Cloud Service CDN logs and verifying the needed request headers.
+
+**Error 421 Misdirected redirect**
+
+A 421 error with the message `Requested host does not match any Subject Alternative Names (SANs) on TLS certificate` indicates that the HTTP `Host` does not match any hosts listed on the certificate. This issue usually indicates that either `Host` or the SNI setting is wrong. Make sure that both `Host` as well as SNI settings point to the publish-p<PROGRAM_ID>-e.adobeaemcloud.com host.
 
 **Too many redirects Loop**
 

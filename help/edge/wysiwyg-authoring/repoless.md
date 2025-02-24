@@ -15,7 +15,7 @@ By default, AEM is tightly bound to your code repository, which meets the majori
 
 Rather than creating multiple GitHub repositories and running each site off a dedicated GitHub repository while keeping them in sync, AEM supports running multiple sites from the same codebase.
 
-This simplified setup, which eliminates the need for code replication is also known as ["repoless",](https://www.aem.live/docs/repoless) because all but your first site don't need a GitHub repository of their own.
+This simplified setup, which eliminates the need for code replication is also known as ["repoless"](https://www.aem.live/docs/repoless), because all but your first site don't need a GitHub repository of their own.
 
 If your project requires the repoless flexibility of code reuse across sites, you can activate the feature.
 
@@ -25,13 +25,14 @@ Regardless of how many sites you want to ultimately create in a repoless fashion
 
 To take advantage of this feature, make sure you have done the following.
 
-* Your site is already fully set up by following the document [Developer Getting Started Guide for WYSIWYG Authoring with Edge Delivery Services.](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
+* Your site is already fully set up by following the document [Developer Getting Started Guide for WYSIWYG Authoring with Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 * You are running AEM as a Cloud Service 2024.08 at a minimum.
 
-You will also need to ask Adobe to configure two items for you. Reach out to Adobe via your Slack channel or raise a support issue to make these requests.
+You will also need to ask Adobe to configure the following items for you. Reach out via your Slack channel or raise a support issue to request Adobe to make these changes:
 
-* The [aem.live configuration service](https://www.aem.live/docs/config-service-setup#prerequisites) is active for your environment and you are configured as an administrator.
-* The repoless feature must be enabled for your program by Adobe.
+* Ask to activate the [aem.live configuration service](https://www.aem.live/docs/config-service-setup#prerequisites) for your environment and that you are configured as an administrator.
+* Ask to enable the repoless feature for your program by Adobe.
+* Ask Adobe to create the org for you.
 
 ## Activate Repoless Feature {#activate}
 
@@ -59,72 +60,11 @@ Once you have your access token, it can be is passed in the header of cURL reque
 --header 'x-auth-token: <your-token>'
 ```
 
-### Configure Your Configuration Service {#config-service}
-
-As mentioned in the [prerequisites,](#prerequisites) the configuration service must be enabled for your environment. You can check your configuration service setup with this cURL command.
-
-```text
-curl  --location 'https://admin.hlx.page/config/<your-github-org>.json' \
---header 'x-auth-token: <your-token>'
-```
-
-If the configuration service is set up properly, JSON similar to the following will be returned.
-
-```json
-{
-  "title": "<your-github-org>",
-  "description": "Your GitHub Org",
-  "lastModified": "2024-11-14T12:14:04.230Z",
-  "created": "2024-11-14T12:13:37.032Z",
-  "version": 1,
-  "users": [
-    {
-      "email": "justthisguyyouknow@adobe.com",
-      "roles": [
-        "admin"
-      ],
-      "id": "<your-id>"
-    }
-  ]
-}
-```
-
-Reach out to Adobe via your project Slack channel or raise a support issue if your configuration service is not enabled. Once you have your token and verified that the configuration service is enabled, you can continue the configuration.
-
-1. Check that your content source is set up properly.
-
-   ```text
-   curl --request GET \
-   --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>.json \
-   --header 'x-auth-token: <your-token>'
-   ```
-
-1. Add a path mapping to the public configuration.
-
-   ```text
-   curl --request POST \
-     --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>/public.json \
-     --header 'x-auth-token: <your-token>' \
-     --header 'Content-Type: application/json' \
-     --data '{
-       "paths": {
-           "mappings": [
-               "/content/<your-site-content>/:/"
-      ],
-           "includes": [
-               "/content/<your-site-content>/"
-           ]
-       }
-   }'
-   ```
-
-Once the public configuration is created, you can access it via a URL similar to `https://main--<your-aem-project>--<your-github-org>.aem.page/config.json` in order to verify it.
-
 ### Add Path Mapping for Site Configuration and Set Technical Account {#access-control}
 
 You need to create a site configuration and add it to your path mapping.
 
-1. Create a new page at the root of your site and choose the [**Configuration** template.](/help/edge/wysiwyg-authoring/tabular-data.md#other)
+1. Create a new page at the root of your site and choose the [**Configuration** template](/help/edge/wysiwyg-authoring/tabular-data.md#other).
    * You can leave the configuration empty with only the predefined `key` and `value` columns. You only need to create it.
 1. Create a mapping in the public configuration to the site configuration using a cURL command similar to the following.
    ```text
@@ -174,6 +114,12 @@ Once the site configuration is mapped, you can configure access control by defin
    ```
 
 1. Set the technical account in your configuration with a cURL command similar to the following.
+
+   * Adapt the `admin` block to define the users who should have full administrative access to the site.
+     * It is an array of email addresses.
+     * The wildcard `*` can be used.
+     * See the document [Configuring Authentication for Authors](https://www.aem.live/docs/authentication-setup-authoring#default-roles) for more information.
+
    ```text
    curl --request POST \
      --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>/access.json \
@@ -183,7 +129,7 @@ Once the site configuration is mapped, you can configure access control by defin
        "admin": {
            "role": {
                "admin": [
-                   "*@adobe.com"
+                   "<email>@<domain>.<tld>"
                ],
                "config_admin": [
                    "<tech-account-id>@techacct.adobe.com"
