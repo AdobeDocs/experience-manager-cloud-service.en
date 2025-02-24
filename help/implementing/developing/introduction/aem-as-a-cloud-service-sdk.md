@@ -97,3 +97,4 @@ By default, AEM is configured to store the key data within the data folder of a 
 * The first time you started up an instance, create a package that contains a filter for the root "`/etc/key`." This package holds the secret to be reused across all environments for which you would want them to be reused.
 * Export any mutable content containing secrets. Or, look up the encrypted values by way of `/crx/de` so you can add it to the package that is reused across installations.
 * Whenever you spin up a fresh instance (either to replace with a new version or as multiple development environments should share the credentials for testing), install the package produced in step 2 and 3. Doing so lets you reuse the content without the need to manually reconfigure. The reason is because now the cryptokey is in synch.
+
