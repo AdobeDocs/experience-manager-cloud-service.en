@@ -6,7 +6,6 @@ role: Admin, Architect, Developer
 hide: yes
 hidefromtoc: yes
 ---
-
 # Responsive Mode in WYSIWYG Authoring
 
 The [Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) allows you to preview Edge Delivery Services Forms with different emulators to see the look and feel of the form during authoring.
@@ -64,6 +63,3 @@ You can use the **Screen Rotator** icon to toggle between portrait and landscape
 ## See also
 
 {{universal-editor-see-also}}
-
-
-
