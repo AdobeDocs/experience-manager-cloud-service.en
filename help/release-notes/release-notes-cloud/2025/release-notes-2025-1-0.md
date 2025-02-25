@@ -118,7 +118,7 @@ AI-generated video captions in Adobe Dynamic Media use artificial intelligence t
 
 ### New features in AEM Forms {#forms-new-features}
 
-* **Manage Publication**: You can use the "Manage Publication" workflow to publish or unpublish forms across environments, typically from the author instance to the publish and preview instances. It allows users to publish, unpublish, or schedule the publication of content in a streamlined manner.
+* **Manage Publication**: You can use the [Manage Publication](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option))workflow to publish or unpublish forms across environments, typically from the author instance to the publish and preview instances. It allows users to publish, unpublish, or schedule the publication of content in a streamlined manner.
 
 * **[Auto-save a draft for Core Components based Adaptive Forms](/help/forms/save-core-component-based-form-as-draft.md)**: Users can now benefit from an auto-save feature that saves a partially completed form as a draft automatically. They can return later to finish filling it out on the same or other device. This feature improves conversion rates for organizations by reducing form abandonment, as users do not need to start over form filling from the beginning.
 
