@@ -173,7 +173,7 @@ The following limitations apply to adding users to New Relic One:
 
 >[!NOTE]
 >
->If no activity is detected in your New Relic One sub-account for 90 days or more, the APM agent is stopped.
+>If no activity is detected in your New Relic One sub-account for 30 days or more, the APM agent is stopped.
 >
 >Follow the same steps in the [Activate Your New Relic One Sub-Account](#activate-sub-account) section of this document to re-activate your New Relic One sub-account.
 
@@ -185,7 +185,7 @@ For more help or additional guidance on New Relic One offerings for your AEM as 
 
 Adobe monitors the AEM as a Cloud Service author, publish and preview (where available) services via New Relic One's Java plug-in. Adobe enables custom New Relic One APM telemetry and monitoring across non-production and production AEM as a Cloud Service environments. 
 
-Your New Relic One account is attached to a primary Adobe-maintained account and has multiple applications reporting into it: three per AEM as a Cloud Service Environment. 
+Your New Relic One account is attached to a primary Adobe-maintained account and has multiple applications reporting into it; three per AEM as a Cloud Service Environment. 
 
 * One application for the Author service per environment
 * One application for the `Publish` service per environment (including Golden Publish)
@@ -195,7 +195,8 @@ Note:
 
 * Each application uses one license key.
 * AEM as a Cloud Service environments report to only one New Relic One account.
-* Full monitoring metrics and events for both New Relic One are retained for three months. <!-- CQDOC-22238 - Updated from seven days to three months. >
+* Full monitoring metrics and events for both New Relic One are retained for three months.
+
 +++
 
 +++**Does Adobe send alert notifications from New Relic One?** {#alerting-new-relic}
@@ -229,5 +230,5 @@ Adobe support monitors AEM as a Cloud Service with New Relic One and other tools
 
 +++**The APM agent for my New Relic One account is stopped. What happened?** {#deactivated}
 
-[APM agents are stopped](#limitations) if no activity is detected for 90 days or more. Follow the same steps in the [Activate Your New Relic One Sub-Account](#activate-sub-account) section of this document to re-activate your New Relic One sub-account.
+[APM agents are stopped](#limitations) if no activity is detected for 30 days or more. Follow the same steps in the [Activate Your New Relic One Sub-Account](#activate-sub-account) section of this document to re-activate your New Relic One sub-account.
 +++
