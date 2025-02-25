@@ -88,5 +88,6 @@ The following steps are generally recommended when making changes to the HTML or
 
 * Adobe provides an AEM Site Theme Builder as a set of scripts for creating new site themes.
 
-   See [AEM Site Theme Builder](https://github.com/adobe/aem-site-theme-builder).
+   See [AEM Site Theme Builder](https://github.com/adobe/aem-site-theme-builder)
+
 
