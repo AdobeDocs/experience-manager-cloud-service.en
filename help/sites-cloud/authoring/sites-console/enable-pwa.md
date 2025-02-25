@@ -23,7 +23,7 @@ Through a simple configuration, a content author can now enable progressive web 
 
 >[!IMPORTANT]
 >
->The progressive web app (PWA) features for AEM Sites [has been deprecated.](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features)
+>The progressive web app (PWA) features for AEM Sites [has been deprecated.](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features
 >
 >Existing projects using this feature will continue to be supported, but new projects should not use this feature.
 
@@ -40,7 +40,7 @@ With PWA, the user has a local copy of the site, giving an app-like experience e
 
 >[!NOTE]
 >
->Progressive web apps are an evolving technology and support for local app installation and other features [depends on which browser you use.](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary)
+>Progressive web apps are an evolving technology and support for local app installation and other features [depends on which browser you use](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary).
 
 ## Prerequisites {#prerequisites}
 
@@ -57,9 +57,9 @@ Core Components release 2.15.0 and later fully support the PWA features of AEM s
 
 >[!NOTE]
 >
->Adobe does not recommend using the PWA features on custom components or components not [extended from the Core Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
+>Adobe does not recommend using the PWA features on custom components or components not [extended from the Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html).
 <!--
-Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker,](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) which supports the PWA features.
+Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API), which supports the PWA features.
 
  To do this, the developer adds the following link to the `customheaderlibs.html` file of your page component.
 
@@ -102,7 +102,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 ## Enabling PWA for Your Site {#enabling-pwa-for-your-site}
 
-With [the prerequisites](#prerequisites) met, it is easy for a content author to enable PWA features to a site. The following is a basic outline of how to do this. Individual options are detailed in the section [Detailed Options.](#detailed-options)
+With [the prerequisites](#prerequisites) met, it is easy for a content author to enable PWA features to a site. The following is a basic outline of how to do this. Individual options are detailed in the section [Detailed Options](#detailed-options).
 
 1. Log into AEM.
 1. From the main menu, select **Navigation** &gt; **Sites**.
@@ -128,11 +128,11 @@ With [the prerequisites](#prerequisites) met, it is easy for a content author to
 
 1. Select **Save &amp; Close**.
 
-Your site is now configured and you can [install it as a local app.](#using-pwa-enabled-site)
+Your site is now configured and you can [install it as a local app](#using-pwa-enabled-site).
 
 ## Using Your PWA-Enabled Site {#using-pwa-enabled-site}
 
-Now that you have [configured your site to support PWA,](#enabling-pwa-for-your-site) you can experience it for yourself.
+Now that you have [configured your site to support PWA](#enabling-pwa-for-your-site), you can experience it for yourself.
 
 1. Access the site in a [supported browser](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary).
 1. You see a new icon in the address bar of the browser, indicating that the site can be installed as a local app.
@@ -143,7 +143,7 @@ Now that you have [configured your site to support PWA,](#enabling-pwa-for-your-
 
 ## Detailed Options {#detailed-options}
 
-The following section provides more detail on the options available when [configuring your site for PWA.](#enabling-pwa-for-your-site)
+The following section provides more detail on the options available when [configuring your site for PWA](#enabling-pwa-for-your-site).
 
 ### Configure Installable Experience {#configure-installable-experience}
 

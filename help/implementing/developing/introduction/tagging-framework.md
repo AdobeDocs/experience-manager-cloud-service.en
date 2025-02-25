@@ -18,9 +18,9 @@ This article focuses on the underlying framework which supports tagging in AEM a
 
 To tag content and use the AEM Tagging infrastructure :
 
-* The tag must exist as a node of type [`cq:Tag`](#cq-tag-node-type) under the [taxonomy root node.](#taxonomy-root-node)
+* The tag must exist as a node of type [`cq:Tag`](#cq-tag-node-type) under the [taxonomy root node](#taxonomy-root-node).
 * The tagged content node's `NodeType` must include the [`cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin.
-* The [`TagID`](#tagid) is added to the content node's [`cq:tags`](#cq-tags-property) property and resolves to a node of type [`cq:Tag`.](#cq-tag-node-type)
+* The [`TagID`](#tagid) is added to the content node's [`cq:tags`](#cq-tags-property) property and resolves to a node of type [`cq:Tag`](#cq-tag-node-type).
 
 ## cq:Tag Node Type {#cq-tag-node-type}
 
@@ -35,18 +35,18 @@ The tagging framework also restricts authors and site visitors to use only speci
 ### Tag Characteristics {#tag-characteristics}
 
 * The node type is `cq:Tag`.
-* The node name is a component of the [`TagID`.](#tagid)
-* The [`TagID`](#tagid) always includes a [namespace.](#tag-namespace)
+* The node name is a component of the [`TagID`](#tagid).
+* The [`TagID`](#tagid) always includes a [namespace](#tag-namespace).
 * The `jcr:title` property (the Title to display in the UI) is optional.
 * The `jcr:description` property is optional.
-* When containing child nodes, is referred to as a [container tag.](#container-tags)
-* The tag is stored in the repository below a base path called the [taxonomy root node.](#taxonomy-root-node)
+* When containing child nodes, is referred to as a [container tag](#container-tags).
+* The tag is stored in the repository below a base path called the [taxonomy root node](#taxonomy-root-node).
 
 ### TagID {#tagid}
 
 A `TagID` identifies a path which resolves to a tag node in the repository.
 
-Typically, the `TagID` is a shorthand `TagID` starting with the namespace or it can be an absolute `TagID` starting from the [taxonomy root node.](#taxonomy-root-node)
+Typically, the `TagID` is a shorthand `TagID` starting with the namespace or it can be an absolute `TagID` starting from the [taxonomy root node](#taxonomy-root-node).
 
 When content is tagged, if it does not yet exist, the [`cq:tags`](#cq-tags-property) property is added to the content node and the `TagID` is added to the property's `String` array value.
 
@@ -62,7 +62,7 @@ In AEM, the base path is `/content/cq:tags` and the root node is of type `cq:Fol
 
 Namespaces let you group things. The most typical use-case is to have a namespace per site (for example, public versus internal) or per larger application (for example, Sites or Assets), but namespaces can be used for various other needs. Namespaces are used in the user interface to show only the subset of tags (that is, tags of a certain namespace) that is applicable to the current content.
 
-The tag's namespace is the first level in the taxonomy subtree, which is the node immediately below the [taxonomy root node.](#taxonomy-root-node) A namespace is a node of type `cq:Tag` whose parent is not a `cq:Tag` node type.
+The tag's namespace is the first level in the taxonomy subtree, which is the node immediately below the [taxonomy root node](#taxonomy-root-node). A namespace is a node of type `cq:Tag` whose parent is not a `cq:Tag` node type.
 
 All tags have a namespace. If no namespace is specified, the tag is assigned to the default namespace, which is `TagID` `default`, that is, `/content/cq:tags/default`. The Title defaults to `Standard Tags`in such cases.
 
@@ -101,7 +101,7 @@ For more details, see the following:
 
 ### Access Control {#access-control}
 
-Tags exist as nodes in the repository under the [taxonomy root node.](#taxonomy-root-node) Allowing or denying authors and site visitors to create tags in a given namespace can be achieved by setting appropriate ACLs in the repository.
+Tags exist as nodes in the repository under the [taxonomy root node](#taxonomy-root-node). Allowing or denying authors and site visitors to create tags in a given namespace can be achieved by setting appropriate ACLs in the repository.
 
 Denying read permissions for certain tags or namespaces controls the ability to apply tags to specific content.
 

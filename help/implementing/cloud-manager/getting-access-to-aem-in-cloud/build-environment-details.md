@@ -12,6 +12,10 @@ role: Admin, Architect, Developer
 
 Learn about Cloud Manager's build environment and how it builds and tests your code.
 
+>[!TIP]
+>
+>This document covers Cloud Manager's build environment for developing your AEM as a Cloud Service project. For details on client platforms supported by AEM as a Cloud Service for content authoring, please see the document [Supported Client Platforms.](/help/overview/supported-platforms.md)
+
 ## Build environment details {#build-environment-details}
 
 Cloud Manager builds and tests your code using a specialized build environment.
@@ -87,7 +91,7 @@ We recommend the following deployment strategy:
 
 ##### About some translation features {#translation-features}
 
-The following features might not function correctly when building with Java 21 or Java 17, and Adobe expects to resolve them by early 2025:
+The following features might not function correctly when deployed on the Java 21 runtime, and Adobe expects to resolve them by early 2025:
 
 * `XLIFF` (XML Localization Interchange File Format) fails when using Human Translation.  
 * `I18n` (Internationalization) does not properly handle language locales Hebrew (`he`), Indonesian (`in`), and Yiddish (`yi`) due to changes in the Locale constructor in newer Java versions.
@@ -105,6 +109,9 @@ Update the usage of  the Java package`org.objectweb.asm`, often bundled in `org.
 Update the usage of the Java packages `org.apache.groovy` or `org.codehaus.groovy` to version 4.0.22 or higher to ensure support for newer JVM runtimes.
 
   This bundle can be indirectly included by adding third party dependencies such as the AEM Groovy Console.
+
+* **Minimum version of Aries SPIFly:**
+Update the usage of the Java package `org.apache.aries.spifly.dynamic.bundle` to version 1.3.6 or newer to ensure support for newer JVM runtimes.
 
 The AEM Cloud Service SDK is compatible with Java 21 and can be used to validate the compatibility of your project with Java 21 before executing a Cloud Manager pipeline.
 
