@@ -3,7 +3,6 @@ title: Configuring Site Authentication for Content Authoring
 description: Learn how AEM Live supports token-based authentication and how you can configure AEM to use authentication with WYSIWYG authoring.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
 ---
 
 # Configuring Site Authentication for Content Authoring {#site-authentication}
