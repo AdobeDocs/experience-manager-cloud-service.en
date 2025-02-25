@@ -5,6 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: yes
 hidefromtoc: yes
+exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
 ---
 # Responsive Mode in WYSIWYG Authoring
 
