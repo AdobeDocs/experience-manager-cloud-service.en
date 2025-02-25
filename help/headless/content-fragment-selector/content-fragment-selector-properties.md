@@ -4,7 +4,7 @@ description: Properties to configure the Micro-Frontend Content Fragment Selecto
 role: Admin, User
 ---
 
-# Content Fragment Selector - Related Properties
+# Content Fragment Selector - Related Properties {#content-fragment-selector-related-properties}
 
 The Micro-Frontend Content Fragment Selector allows you to browse or search Content Fragments in the repository, and use them in your application.
 
