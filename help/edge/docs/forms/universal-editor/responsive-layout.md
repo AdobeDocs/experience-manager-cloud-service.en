@@ -3,15 +3,15 @@ title: Understanding Universal Editor - Responsive mode
 description: This article explains how to preview forms using different emulators in the Universal Editor to visualize their look and feel during authoring.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: Yes
-hide from TOC: Yes
-exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
+hide: yes
+hidefromtoc: yes
 ---
 # Responsive Mode in WYSIWYG Authoring
 
 The [Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) allows you to preview Edge Delivery Services Forms with different emulators to see the look and feel of the form during authoring.
 
 The responsive mode enables developers to design layouts that automatically adapt to different screen sizes, including desktops, tablets, and mobile devices. The Universal Editor supports emulators for desktop, tablet, and mobile devices. You can set the height and width according to your screen size and perform the following actions:
+
    * Set the orientation
    * Specify the width and height
    * Change the orientation
