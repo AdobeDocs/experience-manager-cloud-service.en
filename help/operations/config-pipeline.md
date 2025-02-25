@@ -44,7 +44,7 @@ The following table offers a comprehensive list of such configurations with link
 
 ## Creating and Managing Config Pipelines {#creating-and-managing}
 
-For information on how to create and configure pipelines, please see the document [CI/CD Pipelines.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)
+For information on how to create and configure pipelines, see [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
 
 When creating a config pipeline in Cloud Manager, be sure to select a **Targeted Deployment** rather than **Full Stack Code** when configuring the pipeline.
 
@@ -89,7 +89,7 @@ or
     cdn.yaml
 ```
 
-The folder names and filenames below `/config` are arbitrary. The YAML file, however, must include a valid [`kind` property value.](#configurations)
+The folder names and filenames below `/config` are arbitrary. The YAML file, however, must include a valid [`kind` property value](#configurations).
 
 Typically, configurations are deployed to all environments. If all the property values are identical for each environment, a single YAML file will suffice. However, it is common for property values to differ between environments, for example while testing a lower environment.
 

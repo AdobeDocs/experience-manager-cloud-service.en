@@ -31,7 +31,7 @@ This is the classic editor for authoring content in AEM, tried and trusted for t
 
 The AEM page editor presents an integrated environment for authoring your content using a what-you-see-is-what-you-get (WYSIWYG) interface. Drag-and-drop predefined components to build your page and edit content in-place.
 
-To learn more about the AEM page editor, please see the document [The AEM Page Editor.](/help/sites-cloud/authoring/page-editor/introduction.md)
+To learn more about the AEM page editor, please see the document [The AEM Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md).
 
 ## WYSIWYG Authoring using the Universal Editor {#universal-editor}
 
@@ -41,17 +41,17 @@ The Universal Editor is a modern UI that allows you to author AEM content in a c
 
 The Universal Editor is accessed through the Sites console within AEM, but offers the power and content-agnostic flexibility to author not only your AEM content, but also properly-instrumented external content.
 
-To learn more about the Universal Editor, please see the document [Authoring Content with the Universal Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
+To learn more about the Universal Editor, please see the document [Authoring Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md).
 
 ## Document-Based Authoring  {#document-based}
 
-If you use Edge Delivery services, you can choose to author your content as conventional documents such as Microsoft Word or Google Docs entirely outside of the [AEM **Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
+If you use Edge Delivery services, you can choose to author your content as conventional documents such as Microsoft Word or Google Docs entirely outside of the [AEM **Sites** console](/help/sites-cloud/authoring/sites-console/introduction.md).
 
 ![Editing document-based content](assets/authoring-methods-document.jpg)
 
 With document-based authoring, authors can use the tools they already know and still benefit from the speed and performance of AEM's Edge Delivery Services to publish their content. Document-based authoring requires no use of the AEM console.
 
-To learn more about document-based authoring, please see the document [Authoring and Publishing Content.](/help/edge/docs/authoring.md)
+To learn more about document-based authoring, see [Authoring and Publishing Content](/help/edge/docs/authoring.md).
 
 ## AEM Content Fragment Editor {#cf-editor}
 

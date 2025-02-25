@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 
 Use the Adobe Content Package Maven plugin to integrate package deployment and management tasks into your Maven projects.
 
-The deployment of the constructed packages to AEM is performed by the Adobe Content Package Maven plugin and enables the automation of tasks normally performed using AEM [Package Manager:](/help/implementing/developing/tools/package-manager.md)
+The deployment of the constructed packages to AEM is performed by the Adobe Content Package Maven plugin and enables the automation of tasks normally performed using AEM [Package Manager](/help/implementing/developing/tools/package-manager.md)
 
 * Create new packages from files in the file system.
 * Install and uninstall packages on AEM.
@@ -17,7 +17,7 @@ The deployment of the constructed packages to AEM is performed by the Adobe Cont
 * Obtain a list of packages that are installed on AEM.
 * Remove a package from AEM.
 
-This document details how to use the Maven to manage these tasks. However it is also important to understand [how AEM projects and their packages are structured.](#aem-project-structure)
+This document details how to use the Maven to manage these tasks. However it is also important to understand [how AEM projects and their packages are structured](#aem-project-structure).
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ This document details how to use the Maven to manage these tasks. However it is 
 
 >[!NOTE]
 >
->Package **creation** is now owned by the [Apache Jackrabbit FileVault Package Maven plugin.](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
+>Package **creation** is now owned by the [Apache Jackrabbit FileVault Package Maven plugin](https://jackrabbit.apache.org/filevault-package-maven-plugin/).
 >
 >This article describes the **deployment** of the constructed packages to AEM as performed by the Adobe Content Package Maven plugin.
 
@@ -39,7 +39,7 @@ AEM as a Cloud Service adheres to the latest best practices for package manageme
 
 ## Obtaining the Content Package Maven Plugin {#obtaining-the-content-package-maven-plugin}
 
-The plugin is available from the [Maven Central Repository.](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public)
+The plugin is available from the [Maven Central Repository](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public).
 
 ## Content Package Maven Plugin Goals and Parameters
 

@@ -12,7 +12,7 @@ Learn how to use the prerelease channel to get a preview of upcoming features to
 
 ## Introduction {#introduction}
 
-Adobe Experience Manager as a Cloud Service delivers new features on a regular cadence, according to the [Experience Manager releases roadmap.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
+Adobe Experience Manager as a Cloud Service delivers new features on a regular cadence, according to the [Experience Manager releases roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service).
 
 To become familiar with the features scheduled to go live the following feature release, you can subscribe to the prerelease channel, which is accessible by configuring your development environments or any sandbox environments. You can preview changes accessible by way of the AEM user interface and build code against any new prerelease APIs.
 
@@ -44,7 +44,7 @@ Effectively taking advantage of the prerelease channel requires four steps.
 
 ## Mark Your Calendars {#mark-calendars}
 
-Feature releases are scheduled well in advance and the feature release activation dates are published on [Adobe Experience League.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
+Feature releases are scheduled well in advance and the feature release activation dates are published on [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service).
 
 Take note of the release dates so you can plan time to review and test the upcoming features.
 
@@ -77,7 +77,7 @@ To update a cloud environment to use the prerelease, you must add a new environm
  
 1. Select the environment where you want to enable prerelease and access its configuraiton via **Program** &gt; **Environment** &gt; **Environment Configuration**.
 
-1. Add a new [environment variable:](../implementing/cloud-manager/environment-variables.md)
+1. Add a new [environment variable](../implementing/cloud-manager/environment-variables.md)
 
     | Name | Value | Service Applied | Type |
     |------|-------|-----------------|------|
@@ -91,7 +91,7 @@ To update a cloud environment to use the prerelease, you must add a new environm
 
 You can also use the Cloud Manager API and CLI to update the environment variables.
 
-* Using [Cloud Manager API's environment variables endpoint,](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables) set the `AEM_RELEASE_CHANNEL` environment variable to the value `prerelease`. 
+* Using [Cloud Manager API's environment variables endpoint](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables), set the `AEM_RELEASE_CHANNEL` environment variable to the value `prerelease`. 
 
     ```text
     PATCH /program/{programId}/environment/{environmentId}/variables
