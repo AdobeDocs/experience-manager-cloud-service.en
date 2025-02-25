@@ -18,14 +18,12 @@ AEM Live supports token-based authentication. Site authentication is usually app
 >
 >If you choose to activate site authentication, you must configure it in your AEM authoring environments as well
 
-## Prerequisites {#prerequisites}
+## Requirements {#requirements}
 
-To take advantage of this feature, make sure you have done the following.
+To configure site authentication for use with content authoring, you must first complete the following tasks:
 
-* Your site is already fully set up by following the document [Developer Getting Started Guide for WYSIWYG Authoring with Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
-* Ask Adobe to activate the [aem.live configuration service](https://www.aem.live/docs/config-service-setup#prerequisites) for your environment and that you are configured as an administrator.
-  * Reach out via your Slack channel or raise a support issue.
-  * If you have already had the aem.live configuration service activated for another feature such as [repoless usage,](/help/edge/wysiwyg-authoring/repoless.md) you do not need to to this.
+* This document assumes that you have already created a site for your project based on the [Developer Getting Started Guide for WYSIWYG Authoring with Edge Delivery Services guide.](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
+* You must have already [enabled the repoless feature for your project.](/help/edge/wysiwyg-authoring/repoless.md)
 
 ## Configure Site Authentication {#configure-authentication}
 
