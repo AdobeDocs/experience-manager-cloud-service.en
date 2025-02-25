@@ -3,8 +3,8 @@ title: Understanding Universal Editor - Developer Tutorial
 description: This tutorial helps you get up and running with the Universal Editor interface. It guides you in understanding the user interface to create your own Edge Delivery Services forms in Universal Editor.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: Yes
-hide from TOC: Yes
+hide: yes
+hidefromtoc: yes
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
 ---
 # Exploring the Universal Editor (WYSIWYG) Interface
@@ -37,7 +37,7 @@ The Experience Cloud header is located at the top of the console. It provides in
 ![Universal Editor Experience Cloud Header](/help/edge/docs/forms/universal-editor/assets/universal-editor-experience-manager-header.png)
 
 
-Let’s understand each of its components.
+Let's understand each of its components.
 
 * **Adobe Experience Cloud**
     
@@ -80,7 +80,7 @@ Let’s understand each of its components.
 The toolbar enables you to navigate to and edit other forms. It also allows them to publish or unpublish the form, edit the form's properties, and access the rule editor.
 ![Universal Editor Toolbar](/help/edge/docs/forms/universal-editor/assets/ue-toolbar.png)
 
-Let’s understand each of its components.
+Let's understand each of its components.
 
 * **Home Button**
     The home button allows you to navigate to the start page of the Universal Editor. You can also directly enter the URL of the form they want to edit using the Universal Editor.
@@ -146,7 +146,7 @@ The **Properties Panel** is located on the right side of the editor. It displays
 ![ue-properties panel](/help/edge/docs/forms/universal-editor/assets/ue-properties-panel.png){width=50%,height=50%}
 
 
-Let’s understand each of its components.
+Let's understand each of its components.
 
 
 * **Properties Mode**
@@ -156,7 +156,7 @@ Let’s understand each of its components.
 
 
 * **Content Tree** 
-    The **Content Tree** option displays the form’s hierarchy. When the author clicks on an item in the content tree, the editor selects it and scrolls to that component. The shortcut key to toggle between the content tree view is key `f`.
+    The **Content Tree** option displays the form's hierarchy. When the author clicks on an item in the content tree, the editor selects it and scrolls to that component. The shortcut key to toggle between the content tree view is key `f`.
 
     ![Content tree](/help/edge/docs/forms/universal-editor/assets/ue-contenttree.png){width=50%,height=50%}
 
