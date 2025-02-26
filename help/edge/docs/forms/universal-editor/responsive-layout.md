@@ -3,11 +3,11 @@ title: Understanding Universal Editor - Responsive mode
 description: This article explains how to preview forms using different emulators in the Universal Editor to visualize their look and feel during authoring.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: yes
-hidefromtoc: yes
-exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
 ---
 # Responsive Mode in WYSIWYG Authoring
+
+<span class="preview"> This feature is available through the early access program. To request access, send an email from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> with your GitHub organization name and repository name. For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
+
 
 The [Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) allows you to preview Edge Delivery Services Forms with different emulators to see the look and feel of the form during authoring.
 
