@@ -11,6 +11,9 @@ exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
 
 # Use reCAPTCHA in WYSIWYG Authoring
 
+<span class="preview"> This feature is available through the early access program. To request access, send an email from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> with your GitHub organization name and repository name. For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
+
+
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) is a popular tool used to protect websites from fraudulent activities, spam, and misuse. 
 
 For example, consider a form that calculates the tax based on additional deductions and the tax rate. In such cases, there is a risk of malicious users exploiting the form for purposes like sending phishing emails or flooding it with irrelevant or harmful content using spambots. Integrating CAPTCHA offers added security by verifying that submissions are from genuine users, effectively minimizing spam entries.

@@ -8,6 +8,9 @@ hidefromtoc: yes
 ---
 # Responsive Mode in WYSIWYG Authoring
 
+<span class="preview"> This feature is available through the early access program. To request access, send an email from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> with your GitHub organization name and repository name. For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
+
+
 The [Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) allows you to preview Edge Delivery Services Forms with different emulators to see the look and feel of the form during authoring.
 
 The responsive mode enables developers to design layouts that automatically adapt to different screen sizes, including desktops, tablets, and mobile devices. The Universal Editor supports emulators for desktop, tablet, and mobile devices. You can set the height and width according to your screen size and perform the following actions:

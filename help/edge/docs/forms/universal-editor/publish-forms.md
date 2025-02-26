@@ -9,6 +9,9 @@ exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
 ---
 # Publish your Adaptive Form to Edge Delivery Services
 
+<span class="preview"> This feature is available through the early access program. To request access, send an email from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> with your GitHub organization name and repository name. For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
+
+
 When your form is finalized and ready for use, you can publish it to make it accessible to your customers for data collection and submission. Publishing ensures that the form is available on Edge Delivery, enabling users to interact with it seamlessly. This process allows customers to fill out and submit the form in real time, ensuring efficient data capture and streamlined processing.
 
 ## Prerequisites
@@ -31,7 +34,7 @@ You can publish any **EDS-based Adaptive Form** to Edge Delivery by following th
 1. Click **Publish** again, and a confirmation pop-up appears, indicating that your form is now published.
    ![Publish Success](/help/forms/assets/publish-success.png)
 
-1. To check the form’s publish status, click **Publish** again.
+1. To check the form's publish status, click **Publish** again.
    ![Publish Status](/help/forms/assets/publish-status.png)
 
 1. To **unpublish** a form, open your form in the editor, click the three-dot menu in the upper-right corner and click **Unpublish**.

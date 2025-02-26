@@ -1017,7 +1017,7 @@ user-guide-title: AEM as a Cloud Service
   + Building Forms {#build-forms}
     + [Overview](/help/edge/docs/forms/overview.md)
     + [How Edge Delivery Services Forms works?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
-    + Get Started {#getting-started-edge-delivery-services-forms}
+    + Document-based authoring {#getting-started-edge-delivery-services-forms}
       + [Getting Started](/help/edge/docs/forms/tutorial.md)
       + [Create a form using Google Sheets or Microsoft Excel](/help/edge/docs/forms/create-forms.md)
       + [Set up your Google Sheets or Microsoft Excel files to start accepting data​](/help/edge/docs/forms/submit-forms.md)
@@ -1030,16 +1030,16 @@ user-guide-title: AEM as a Cloud Service
       + [Show a custom thank you message after form submission](/help/edge/docs/forms/thank-you-page-form.md)
       + [Use Forms Submission Service](/help/forms/forms-submission-service.md)
     + WYSIWYG {#universal-editor}
-      + [Overview - Universal Editor for Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-      + [Getting Started](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-      + [Understanding WYSIWYG Interface](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-      + [Add rules to using Rule Editor](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-      + [Create Custom Components](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-      + [Use reCAPTCHA in forms](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-      + [Submit Actions](/help/edge/docs/forms/universal-editor/submit-action.md)
-      + [Publish Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
-      + [Customize styling of forms](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-      + [Responsive Mode](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+      + [Introduction to Forms Universal Editor for Edge Delivery Services - Complete Guide](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+      + [How to Create Your First Form Using Universal Editor - Step by Step Tutorial](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+      + [Universal Editor Interface Guide: Tools, Features, and Navigation Explained](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
+      + [Make Your Forms Mobile-Friendly: Responsive Design in Universal Editor](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+      + [Design Beautiful Forms: Styling and Theming Guide for Universal Edito](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+      + [Add Dynamic Behavior to Forms: Complete Guide to Rule Editor](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+      + [Form Submission Guide: Configure and Customize Form Submit Actions](/help/edge/docs/forms/universal-editor/submit-action.md)
+      + [Protect Your Forms from Spam: Adding reCAPTCHA Security](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+      + [How to Publish and Deploy Forms: Universal Editor Publishing Guide](/help/edge/docs/forms/universal-editor/publish-forms.md)
+      + [Build Custom Form Components: Developer's Guide to Universal Editor](/help/edge/docs/forms/universal-editor/create-custom-component.md)
     + Capabilities {#advanced-features-edge-delivery-services-forms}
       + [Use Form fragments](/help/edge/docs/forms/form-fragments.md)
       + [Add repeatable sections to a form​](/help/edge/docs/forms/repeatable-forms.md)
