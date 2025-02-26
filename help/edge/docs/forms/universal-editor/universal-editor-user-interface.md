@@ -3,8 +3,6 @@ title: Understanding Universal Editor - Developer Tutorial
 description: This tutorial helps you get up and running with the Universal Editor interface. It guides you in understanding the user interface to create your own Edge Delivery Services forms in Universal Editor.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: yes
-hidefromtoc: yes
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
 ---
 # Exploring the Universal Editor (WYSIWYG) Interface
