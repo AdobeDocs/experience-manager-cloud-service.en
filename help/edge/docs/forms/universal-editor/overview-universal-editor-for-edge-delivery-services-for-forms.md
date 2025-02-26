@@ -7,7 +7,10 @@ hide: yes
 hidefromtoc: yes
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
 ---
+
 # Universal Editor for Edge Delivery Services for Forms (EDS Forms Block)
+
+<span class="preview"> This feature is available through the early access program. To request access, send an email from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> with your GitHub organization name and repository name. For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
 
 The Universal Editor revolutionizes form creation for Adobe Edge Delivery Services (EDS) by offering a simple, visual, and intuitive What You See Is What You Get (WYSIWYG) interface. Designed for content creators and form authors, it eliminates the complexity of traditional form-building processes, making it accessible even to non-technical users.
 
