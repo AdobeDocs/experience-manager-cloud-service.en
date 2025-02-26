@@ -4,12 +4,13 @@ description: Use Google reCAPTCHA in an form for Edge Delivery Services for AEM 
 feature: Edge Delivery Services
 keywords: reCAPTCHA in forms, Using reCAPTCHA in Universal Editor, Add reCAPTCHA in forms
 role: Admin, Architect, Developer
-hide: yes
-hidefromtoc: yes
 exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
 ---
 
 # Use reCAPTCHA in WYSIWYG Authoring
+
+<span class="preview"> This feature is available through the early access program. To request access, send an email from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> with your GitHub organization name and repository name. For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
+
 
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) is a popular tool used to protect websites from fraudulent activities, spam, and misuse. 
 
