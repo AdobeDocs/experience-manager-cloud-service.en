@@ -52,14 +52,13 @@
 
 ## Universal Editor{#universal-editor-see-also}
 
-* [Get started with Edge Delivery Services for AEM Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-* [Publish your form](/help/edge/docs/forms/universal-editor/publish-forms.md)
-* [Submit your form](/help/edge/docs/forms/universal-editor/submit-action.md)
-* [Customize the look of your forms](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-* [Create rules for your form](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-* [Use reCAPTCHA in your form](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-* [Create a custom component for your form](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-* [Preview form in responsive mode](/help/edge/docs/forms/universal-editor/responsive-layout.md) 
+* [Create Your First Form Using Universal Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [Add Dynamic Behavior to Forms](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [Configure and Customize Form Submit Actions](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [Publish and Deploy Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [Design Beautiful Forms: Styling and Theming Guide](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [Build Custom Form Components](help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [Protect Your Forms from Spam: Adding reCAPTCHA Security](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
 ## See also {#see-more-forms-eds}
 
