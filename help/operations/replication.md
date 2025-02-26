@@ -92,7 +92,7 @@ Create a Workflow Model that uses the `TreeActivation` process step:
 
 | Name          | description                                 |
 | ------------- | ------------------------------------------- |
-| onlyModified  | Nodes that were modified since last publish |
+| onlyModified  | Nodes (new and pre-existing) that were modified since last publish |
 | onlyActivated | Nodes that were published before            |
 
 
