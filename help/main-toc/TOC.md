@@ -984,10 +984,11 @@ user-guide-title: AEM as a Cloud Service
     + [Managing Taxonomy Data](/help/edge/wysiwyg-authoring/taxonomy.md)
     + [WYSIWYG and Doc-Based Blocks](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
     + [Pages with DAM Assets](/help/edge/wysiwyg-authoring/dam-assets.md)
-    + [WIP Sites Features](/help/edge/wysiwyg-authoring/wip-features.md)
     + [Reusing Code Across Sites](/help/edge/wysiwyg-authoring/repoless.md)
     + [Repoless Multi Site Management](/help/edge/wysiwyg-authoring/repoless-msm.md)
     + [Repoless Stage and Prod Environments](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+    + [Configuring Site Authentication](/help/edge/wysiwyg-authoring/site-authentication.md)
+    + [WIP Sites Features](/help/edge/wysiwyg-authoring/wip-features.md)
   + Document-Based Authoring {#document-authoring}
     + [Authoring](/help/edge/docs/authoring.md)
     + [Bulk Metadata](/help/edge/docs/bulk-metadata.md)
