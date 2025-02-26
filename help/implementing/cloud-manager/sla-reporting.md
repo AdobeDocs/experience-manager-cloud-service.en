@@ -34,7 +34,7 @@ The line graph of a selected year includes data points for each month from Janua
 
 1. Click **SLA Reports**. 
 
-    ![SLA report line graph](/help/implementing/cloud-manager/assets/cm-sla-report.png)
+    ![SLA report line graph](/help/implementing/cloud-manager/assets/cm-sla-report2.png)
 
 1. Click the year desired to see a line graph of SLA data.
 
@@ -43,8 +43,6 @@ The line graph of a selected year includes data points for each month from Janua
     * Roll your cursor over a data point in the line graph to show the specific values for that point.
     * Below the line graph's year, click the Download icon to save a PNG image file of the line graph.
     * Click a metric name to see just that metric's data. Or, press `Shift` on the keyboard while selecting or deselecting one or more metric names.  
-
-    ![Showing detailed data](/help/implementing/cloud-manager/assets/cm-sla-download.png)
 
 ## Event Analysis {#event-analysis}
 
