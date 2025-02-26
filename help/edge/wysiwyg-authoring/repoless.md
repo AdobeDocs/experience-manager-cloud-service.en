@@ -167,6 +167,7 @@ Now that your base site is configured for repoless usage, you can create additio
 
 * [Repoless Multi Site Management](/help/edge/wysiwyg-authoring/repoless-msm.md)
 * [Repoless Stage and Prod Environments](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+* [Site Authentication for content authoring](/help/edge/wysiwyg-authoring/site-authentication.md)
 
 ## Troubleshooting {#troubleshooting}
 
