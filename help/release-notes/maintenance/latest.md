@@ -22,7 +22,7 @@ None.
 
 ### Fixed Issues {#fixed-issues-19687}
 
-* SKYOPS-97524: feature toggle state might be incorrect intermittently affecting various AEM features
+* SKYOPS-97524: feature toggle state might be incorrect intermittently affecting various AEM features.
 
 ### Known Issues {#known-issues-19687}
 
