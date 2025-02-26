@@ -43,10 +43,6 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ### New features in AEM Sites {#new-features-sites}
 
-** Modernized Content Fragment Model User Interface **
-
-Aligning with the modernized, client-side implementations of AEM user interfaces for browsing, managing and editing Content Fragments, a new user interface for browsing and managing Content Fragment Models is now avaiable as well. 
-
 ** Content Fragment Auto-Tagging ** 
 
 When creating Content Fragments, it is now possible to automatically inherit tags that were assigned to the content model. This allows for powerful automatic classification of content stored in Content Fragments.
