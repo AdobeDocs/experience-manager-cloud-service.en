@@ -3,8 +3,6 @@ title: Publish AEM Forms for Edge Delivery Services.
 description: Publish your Edge Delivery Services forms quickly and seamlessly.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: yes
-hidefromtoc: yes
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
 ---
 # Publish your Adaptive Form to Edge Delivery Services

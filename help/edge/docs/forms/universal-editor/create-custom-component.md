@@ -2,8 +2,6 @@
 title: Create Custom Components for an EDS Form
 description: Create Custom Components for an EDS Form
 feature: Edge Delivery Services
-hide: yes
-hidefromtoc: yes
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
 ---

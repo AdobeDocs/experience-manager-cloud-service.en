@@ -4,8 +4,6 @@ description: Use Google reCAPTCHA in an form for Edge Delivery Services for AEM 
 feature: Edge Delivery Services
 keywords: reCAPTCHA in forms, Using reCAPTCHA in Universal Editor, Add reCAPTCHA in forms
 role: Admin, Architect, Developer
-hide: yes
-hidefromtoc: yes
 exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
 ---
 

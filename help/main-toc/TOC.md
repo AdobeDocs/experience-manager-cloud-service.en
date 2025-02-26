@@ -1042,7 +1042,7 @@ user-guide-title: AEM as a Cloud Service
       + [How to Create Your First Form Using Universal Editor - Step by Step Tutorial](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
       + [Universal Editor Interface Guide: Tools, Features, and Navigation Explained](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
       + [Make Your Forms Mobile-Friendly: Responsive Design in Universal Editor](/help/edge/docs/forms/universal-editor/responsive-layout.md)
-      + [Design Beautiful Forms: Styling and Theming Guide for Universal Edito](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+      + [Design Beautiful Forms: Styling and Theming Guide for Universal Editor](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
       + [Add Dynamic Behavior to Forms: Complete Guide to Rule Editor](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
       + [Form Submission Guide: Configure and Customize Form Submit Actions](/help/edge/docs/forms/universal-editor/submit-action.md)
       + [Protect Your Forms from Spam: Adding reCAPTCHA Security](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
