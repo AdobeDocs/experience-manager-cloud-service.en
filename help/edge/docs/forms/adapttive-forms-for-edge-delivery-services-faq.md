@@ -1,32 +1,8 @@
 ---
-Title: AEM Forms with Edge Delivery Services: Frequently Asked Questions (FAQ)
-Description: "Get answers to common questions about AEM Forms with Edge Delivery Services and Universal Editor. Learn about multilingual forms, global templates, form fragments, analytics, and data integration capabilities.
-Keywords:
-    - AEM Forms FAQ
-    - Edge Delivery Services Forms
-    - Universal Editor Forms
-    - Forms translation
-    - Form fragments
-    - Form templates
-    - Form analytics
-    - Form data integration
-    - EDS Forms
-    - AEM Forms documentation
-Additional_metadata:
-    Article_type: FAQ
-    Experience_level: All Levels
-    Reading_time: 10 minutes
-    Last_updated: [Current Date]
-    Primary_audience:
-      - Form Developers
-      - AEM Administrators
-      - Content Authors
-    Secondary_tags:
-      - Technical Documentation
-      - Self-Help
-      - Getting Started
+title: AEM Forms with Edge Delivery Services: Frequently Asked Questions (FAQ)
+description: "Get answers to common questions about AEM Forms with Edge Delivery Services and Universal Editor. Learn about multilingual forms, global templates, form fragments, analytics, and data integration capabilities.
 feature: Edge Delivery Services
-Role: User, Developer
+role: User, Developer
 hide: yes
 hidefromtoc: yes
 ---
