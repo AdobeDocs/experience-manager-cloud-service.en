@@ -109,7 +109,7 @@ To proceed with form creation:
 
 +++
 
-+++ Step 2: Preview the form using your Edge Delivery Services (EDS) page.
++++ Step 2: Preview the form using your Edge Delivery Services page.
 
 
 Till now, you have prepared the structure of the form. Now, to preview the form:

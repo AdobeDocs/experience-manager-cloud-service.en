@@ -18,6 +18,10 @@ These tags are useful not only for you and your authors in organizing your conte
 
 The Universal Editor works only with the IDs of your tags. By creating a taxonomy page for your content, you expose the descriptions of these tags in all languages to the Universal Editor so it can use that information when rendering content.
 
+>[!TIP]
+>
+>Please see the document [Model Definitions, Fields, and Component Types](/help/implementing/universal-editor/field-types.md) for more information about the AEM Tag field available to the Universal Editor, which can work with your taxonomy.
+
 ## Creating a Taxonomy Page {#creating}
 
 A taxonomy is created like [any other page in AEM](/help/sites-cloud/authoring/sites-console/creating-pages.md).
