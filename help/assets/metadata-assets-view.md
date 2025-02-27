@@ -178,6 +178,33 @@ Follow the steps below to use link component on metadata form:
    * Click ![edit icon](assets/do-not-localize/edit.svg) to edit the URL.
 1. Click **[!UICONTROL Save]** to save the changes.
 
+
+### Working with Tags component in metadata form {#tag-component-metadata-form}
+
+The root element represents the tree structure of the tags that you can associate with the assets, helping to identify the asset based on the tag assigned to it. Additionally, you can restrict the access of a specific taxonomy while configuring the metadata form in metadata editor.
+
+#### Tags component configuration {#tags-component-configuration}
+
+Configure the tags component by executing the following steps:
+
+1. Go to the metadata editor and navigate to **[!UICONTROL Tags]** and place it on the canvas.
+1. Rename the component on the canvas. To do this, go to **[!UICONTROL Label]** under the [!UICONTROL Metadata property] in the settings panel and add the text for its identification.
+1. Under the [!UICONTROL Metadata property] in the settings panel, search for the metadata property that you want to assign to the component.
+1. Click **[!UICONTROL Restrict to specific taxonomy]** to restrict root path of the taxonomy. To do this, browse tags and choose the taxonomy to the particular path.
+1. Click **[!UICONTROL Save]** to save the changes.
+
+   ![Root tags configuration](assets/root-tag-config.png)
+
+#### Mapping between assets and taxonomy {#asset-taxonomy-mapping}
+
+See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the steps below to perform mapping between folder and taxonomy:
+
+1. Go back to the Settings and click **[!UICONTROL Metadata forms]** 
+1. Select a Metadata form that needs mapping. 
+1. Click **[!UICONTROL Assign to folder(s)]**. **[!UICONTROL Select Folder(s)]** screen appears. 
+1. Navigate to the folder that you want to assign to the metadata form. You can select multiple folders.
+1. Click **[!UICONTROL Assign]**.
+
 ## Next Steps {#next-steps}
 
 * [Watch a video to manage metadata forms in Assets view](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
