@@ -195,6 +195,9 @@ Configure the tags component by executing the following steps:
 
    ![Root tags configuration](assets/root-tag-config.png)
 
+1. [Assign metadata form to folders](#assign-metadata-form-folder).
+
+<!--
 #### Mapping between assets and taxonomy {#asset-taxonomy-mapping}
 
 See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the steps below to perform mapping between folder and taxonomy:
@@ -204,6 +207,7 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 1. Click **[!UICONTROL Assign to folder(s)]**. **[!UICONTROL Select Folder(s)]** screen appears. 
 1. Navigate to the folder that you want to assign to the metadata form. You can select multiple folders.
 1. Click **[!UICONTROL Assign]**.
+-->
 
 To view the configured root tags, go to the asset's details page where the mapping between the metadata form and root tags is performed.
 
