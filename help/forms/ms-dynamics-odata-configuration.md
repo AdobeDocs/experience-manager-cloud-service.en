@@ -5,6 +5,8 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
+hide: yes
+hidefromtoc: yes
 ---
 # [!DNL Microsoft Dynamics] OData configuration {#microsoft-dynamics-odata-configuration}
 

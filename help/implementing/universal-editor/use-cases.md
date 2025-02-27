@@ -75,4 +75,5 @@ For a page or app to be editable by the Universal Editor, it must be properly in
 
 The Universal editor can also be adapted to your project needs.
 
-* [Customizing the Universal Editor Authoring Experience](/help/implementing/universal-editor/customizing.md) - The Universal Editor experience can be adapted by filtering various aspects of the editor or by extending the functionality of the editor.
+* [Customizing the Universal Editor](/help/implementing/universal-editor/customizing.md) - The Universal Editor experience can be adapted by filtering various aspects of the editor or by extending the functionality of the editor.
+* [Extending the Universal Editor](/help/implementing/universal-editor/extending.md) - The UI of the Universal Editor can be extending to expand its capabilities to meet your project needs.
