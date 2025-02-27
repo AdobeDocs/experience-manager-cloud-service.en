@@ -205,6 +205,8 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 1. Navigate to the folder that you want to assign to the metadata form. You can select multiple folders.
 1. Click **[!UICONTROL Assign]**.
 
+To view the configured root tags, go to the asset's details page where the mapping between the metadata form and root tags is performed.
+
 ## Next Steps {#next-steps}
 
 * [Watch a video to manage metadata forms in Assets view](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
