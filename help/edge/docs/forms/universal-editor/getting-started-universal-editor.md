@@ -3,11 +3,13 @@ title: Getting Started with Edge Delivery Services for AEM Forms in Universal Ed
 description: This tutorial helps get you up-and-running with a new Adobe Experience Manager Forms (AEM) project. In ten to twenty minutes, you will have created your own Edge Delivery Services Forms in Universal Editor.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: yes
-hidefromtoc: yes
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
 ---
+
 # Getting Started with Edge Delivery Services for AEM Forms using Universal Editor (WYSIWYG) 
+
+<span class="preview"> This feature is available through the early access program. To request access, send an email from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> with your GitHub organization name and repository name. For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
+
 
 In today's digital age, user-friendly forms are essential for all organizations. Edge Delivery Services Forms are created using the Universal Editor, which offers WYSIWYG (what-you-see-is-what-you-get) capabilities. It provides a modern, intuitive interface for efficient form authoring.
 
@@ -19,7 +21,6 @@ This tutorial guides you through creating, previewing, and publishing your own f
 ## Prerequisites
 
 * You have a GitHub account, and understand Git basics.
-* You have a Google or Microsoft SharePoint account.
 * You understand the basics of HTML, CSS, and JavaScript.
 * You have Node/npm installed for local development.
 
@@ -103,7 +104,7 @@ Now that you have a GitHub project, you can proceed to create and publish a new 
        In just a few minutes, your new AEM Project is created.
 
    1. Navigate to your newly-created AEM project in the Sites console and click **Edit**. 
-   In this case, the `index.html` page is used for illustration.
+        In this case, the `index.html` page is used for illustration.
 
         ![edit AEM Site](/help/edge/docs/forms/assets/edit-site.png)
 
@@ -150,14 +151,32 @@ If you have an existing AEM Project, you can integrate the Adaptive Forms Block 
 >[!NOTE]
 >
 >
-> This step applies to projects built with the [AEM Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-xwalk). If you created your AEM project using the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms), you can skip this step.
+> This step applies to projects built with the [AEM Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-xwalk). If you created your AEM Project using the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms), you can skip this step.
 
-To Integrate:
+To integrate:
+1. **Add required files and folders**
+   1. Copy and paste the following folders and files from the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) into your AEM Project:
 
-1. Clone the Adaptive Forms Block GitHub repository: [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms) to your computer. 
-1. Inside the downloaded folder, find the `blocks/form` folder and copy this folder.
-1. Clone your AEM Project GitHub repository to your computer.  
-1. Now, navigate to the `blocks` folder in your local AEM Project repository and paste the copied form folder there.
+      * [form block](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)  folder
+       * [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common)  folder
+       * [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components) folder
+       * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) file
+       * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) file
+
+1. **Update component definitions and models files**
+    1. Navigate to the `../models/_component-definition.json` file in your AEM Project and update it with the changes from the [_component-definition.json file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48).
+    
+    1. Navigate to the `../models/_component-models.json` file in your AEM Project and update it with the changes from the [_component-models.json file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)
+
+1. **Add Form Editor in editor script**
+    1. Navigate to the `../scripts/editor-support.js` file in your AEM Project and update it with the changes from the [editor-support.js file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)
+1. **Update ESLint configuration file**
+    1. Navigate to the `../.eslintignore` file in your AEM Project and add the following line of codes to prevent errors related to the Form Block rule engine:
+        ```
+            blocks/form/rules/formula/*
+            blocks/form/rules/model/*
+        ```
+
 1. Commit and push these changes to your AEM Project repository on GitHub.
 
 That's it! The Adaptive Forms Block is now part of your AEM Project. You can [start creating and adding forms to your AEM Project](#add-edge-delivery-services-forms-to-aem-site-project).
@@ -165,16 +184,16 @@ That's it! The Adaptive Forms Block is now part of your AEM Project. You can [st
 ## Author AEM Forms using WYSIWYG
 
 You can open your AEM Project in the Universal Editor for WYSIWYG authoring, where you can edit the project and add the Adaptive Form section to include Edge Delivery Services forms on AEM Project pages.
-
+   
 1. Add the Adaptive Form section to your AEM Project page. To add:
-   1. Navigate to your AEM Project in the Sites console and click **Edit**. The AEM Project page opens in Universal Editor for editing. 
+   1. Navigate to your AEM project in the Sites console, select the site page you want to edit, and click **Edit**. The AEM project page opens in Universal Editor for editing.
    In this case, the `index.html` page is used for illustration.
-   1. Open the Content tree and navigate to the location where you want to add the Adaptive Form section.
+   1. Open the Content tree and navigate to a section where you want to add the Adaptive Form section.
    1. Click the **[!UICONTROL Add]** icon and select the **[!UICONTROL Adaptive Form]** component from the component list.
 
     ![content tree](/help/edge/docs/forms/assets/add-adaptive-form-block.png)
 
-    The Adaptive Form section is added at the specified location. You can now begin adding form components to the AEM Project page.
+    The Adaptive Form section is added. You can now begin adding form components to the AEM Project page.
 
 1. Add form components to the added Adaptive Form section. To add form components: 
     1. Navigate to the added Adaptive Form section in the Content tree.
@@ -192,13 +211,16 @@ You can open your AEM Project in the Universal Editor for WYSIWYG authoring, whe
  
         ![open properties](/help/edge/docs/forms/assets/component-properties.png)
 
+    1. Preview the form. 
         The screenshot below displays the form authored in the AEM Project using WYSIWYG authoring:
 
         ![added form](/help/edge/docs/forms/assets/added-form-aem-sites.png)
 
-    >[!NOTE]
-    >
-    > It is important to publish your AEM Project page again after making changes; otherwise, the updates are not visible in the browser.
+        Once satisfied with the preview, the user can proceed to publish the page.
+
+        >[!NOTE]
+        >
+        > It is important to publish your AEM Project page again after making changes; otherwise, the updates are not visible in the browser.
 
 1. Re-publish the AEM Project page. 
 
@@ -248,12 +270,13 @@ You can set up a local AEM development environment for developing custom styles 
     cd <repo>
     aem up
     ```
-
+ 
 You can make local changes in the Adaptive Forms Block `blocks/form` folder for styling and coding for your forms! Edit the `.css` or `.js` files within this directory, and you can see that the changes reflected instantly in your browser.
 
 Once you have completed your changes, use Git commands to commit and push them. This updates your preview and production environments, accessible at the following URLs (replace placeholders with your project details):
 
 Preview: `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>`
+
 Production: `https://<branch>--<repo>--<owner>.aem.live/content/<site-name>`
 
 
@@ -264,5 +287,9 @@ Ensure a smooth GitHub build process by addressing potential issues:
 * **Handle Linting Errors:**
     Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from `"lint": "npm run lint:js && npm run lint:css"` to `"lint": "echo 'skipping linting for now'"`. Save the file and commit the changes to your GitHub project.
 
-<!-- * **Resolve Module Path Error:**
-    If you encounter the error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", navigate to the [EDS Project]/blocks/forms/form.js file. Update the import statement by replacing the lib-franklin.js file with the aem.js file. -->
+* **Resolve Module Path Error:**
+    If you encounter the error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", navigate to the [EDS Project]/blocks/forms/form.js file. Update the import statement by replacing the lib-franklin.js file with the aem.js file. 
+
+## See also
+
+{{universal-editor-see-also}}
