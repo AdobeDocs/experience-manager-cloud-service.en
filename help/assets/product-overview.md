@@ -78,7 +78,7 @@ Follow these steps to setup Content Hub for your team:
 
 1. [Approved assets in Experience Manager Assets as a DAM author or administrator](approve-assets.md). 
 
-1. [Configure Content Hub user interface for other users as an administrator](configure-content-hub-ui-options.md)..
+1. [Configure Content Hub user interface for other users as an administrator](configure-content-hub-ui-options.md).
 
 1. [Grant Content Hub access to more users from the team ](deploy-content-hub.md#onboard-content-hub-consumer-users).
 
