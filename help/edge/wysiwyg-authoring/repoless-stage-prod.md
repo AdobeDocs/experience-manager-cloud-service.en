@@ -15,6 +15,13 @@ You may wish to set up a site for your production environment separate from your
 
 This document uses the typical example of separate staging and production environments. You can create separate environments for any environments you wish.
 
+## Requirements {#requirements}
+
+To configure repoless stage and production environments, you must first complete the following tasks:
+
+* This document assumes that you have already created a site for your project based on the [Developer Getting Started Guide for WYSIWYG Authoring with Edge Delivery Services guide.](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
+* You must have already [enabled the repoless feature for your project.](/help/edge/wysiwyg-authoring/repoless.md)
+
 ## Configuration {#configuration}
 
 This document describes how to set up a separate production site for your project using the same code base. The following assumptions are made.
