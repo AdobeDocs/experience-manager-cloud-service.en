@@ -57,7 +57,7 @@
 * [Configure and Customize Form Submit Actions](/help/edge/docs/forms/universal-editor/submit-action.md)
 * [Publish and Deploy Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
 * [Design Beautiful Forms: Styling and Theming Guide](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-* [Build Custom Form Components](help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [Build Custom Form Components](/help/edge/docs/forms/universal-editor/create-custom-component.md)
 * [Protect Your Forms from Spam: Adding reCAPTCHA Security](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
 ## See also {#see-more-forms-eds}
