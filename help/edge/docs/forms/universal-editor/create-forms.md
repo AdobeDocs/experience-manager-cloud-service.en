@@ -5,7 +5,6 @@ feature: Edge Delivery Services
 role: User
 hide: yes
 hidefromtoc: yes
-exl-id: b90c27e3-22ea-4b18-b16e-a5c5a0ed58b8
 ---
 
 # Author Adaptive Forms using Universal Editor (WYSIWYG)
@@ -40,15 +39,15 @@ To author an Adaptive Form using Universal Editor, perform the followng steps:
 1. **Create an Adaptive Form on AEM Forms author instance**
 
    1. Access your AEM Forms as a Cloud Service author instance.
-   2. Select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.1.  Select **[!UICONTROL Create]**  &gt; **[!UICONTROL Adaptive Forms]**. The Wizard opens. 
-   3. In the **Source** tab, select a Edge Delivery Services based form template:
+   1. Select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.1.  Select **[!UICONTROL Create]**  &gt; **[!UICONTROL Adaptive Forms]**. The Wizard opens. 
+   1. In the **Source** tab, select a Edge Delivery Services based form template:
 
         ![Create EDS Forms](/help/edge/assets/create-eds-forms.png)
 
-   4. Click **[!UICONTROL Create]** and the **Create Form** wizard appears.
-   5. Specify the **GitHub URL**. For example, if your GitHub repository is named "edsforms", it's located under the account "wkndforms",the URL is:
+   1. Click **[!UICONTROL Create]** and the **Create Form** wizard appears.
+   1. Specify the **GitHub URL**. For example, if your GitHub repository is named "edsforms", it's located under the account "wkndforms",the URL is:
     `https://github.com/wkndforms/edsforms`
-   6. Click **[!UICONTROL Create]**.
+   1. Click **[!UICONTROL Create]**.
 
         ![Create Form wizard](/help/edge/assets/create-form-wizard.png)
 
@@ -65,18 +64,18 @@ To author an Adaptive Form using Universal Editor, perform the followng steps:
    1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Edge Delivery Services Configuration]** on your AEM Forms as a Cloud Service author instance.
 
         ![Select Edge Delivery Services Configuration](/help/edge/assets/select-eds-conf.png)
-   2. Select the folder that matches the form's name. For example, if your form is called 'contactus' choose the folder `forms/contactus` and selct the configuration and publish the configuration:
+   1. Select the folder that matches the form's name. For example, if your form is called 'contactus' choose the folder `forms/contactus` and selct the configuration and publish the configuration:
 
         ![Edge Delivery Services Configuration](/help/edge/assets/aem-instance-eds-configuration.png)
 
-   3. Click **[!UICONTROL Properties]** to see the configuration.   
+   1. Click **[!UICONTROL Properties]** to see the configuration.   
         ![Automatically created configuration](/help/edge/assets/aem-forms-create-configuration-github.png)
 
         You can leave the Edge Host option as it is. The form would be published to both preview (.page) and live (.live) environments. 
 
-   4. Click **[!UICONTROL Save and Close]**. The configuration is saved. 
+   1. Click **[!UICONTROL Save and Close]**. The configuration is saved. 
 
-2. **Author the form in the Universal Editor**
+1. **Author the form in the Universal Editor**
 
     When you click **[!UICONTROL Create]**, the form opens in the Universal Editor for authoring. 
 
@@ -84,11 +83,11 @@ To author an Adaptive Form using Universal Editor, perform the followng steps:
 
         ![content tree](/help/edge/assets/content-tree.png)
 
-   2. Click the **[!UICONTROL Add]** icon and add the desired components from the **Adaptive Form Components** list. 
+   1. Click the **[!UICONTROL Add]** icon and add the desired components from the **Adaptive Form Components** list. 
    
         ![add component](/help/edge/assets/add-component.png)
 
-   3. Select the added Adaptive Form component and update its properties using **[!UICONTROL Properties]**.
+   1. Select the added Adaptive Form component and update its properties using **[!UICONTROL Properties]**.
  
         ![open properties](/help/edge/assets/component-properties.png)
 
