@@ -3,8 +3,8 @@ title: How the Universal Editor Publishes Content
 description: Learn how how the Universal Editor publishes its content, how it differs from the process in the Sites Console, and considerations when developing your own apps to work with it.
 feature: Developing
 role: Admin, Architect, Developer
+exl-id: 60f0bb4a-ee60-4f73-83ae-8568735474ad
 ---
-
 # How the Universal Editor Publishes Content {#publishing}
 
 Learn how how the Universal Editor publishes its content, how it differs from the process in the Sites Console, and considerations when developing your own apps to work with it.

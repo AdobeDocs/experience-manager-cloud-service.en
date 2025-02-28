@@ -15,7 +15,19 @@ This page documents the release notes for Generate Variations, accessible from A
 
 ## Release Highlights {#release-highlights}
 
-The current release is version 2.2.0.
+The current release is version 3.0.0.
+
+### 3.0.0 {#release-notes-3-0-0}
+
+You can [access Generate Variations](/help/generative-ai/generate-variations-integrated-editor.md#access-generate-variations) from the following editors ([once they have been configured](#access-generate-variations)):
+
+* [within the Sidekick of AEM Edge Delivery Services; for document based authoring](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-sidekick)
+* [within the Universal Editor](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-universal-editor)
+* [within the Content Fragments Editor](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-content-fragment-editor)
+
+>[!NOTE]
+>
+>The previous version of [Generate Variations can still be directly accessed](/help/generative-ai/generate-variations.md).
 
 ### 2.2.0 {#release-notes-2-2-0}
 

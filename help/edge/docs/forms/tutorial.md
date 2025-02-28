@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 ---
 # Getting Started - Developer Tutorial 
 
-In today's digital age, creating user-friendly forms is essential for any organization. Edge Delivery Services for AEM Forms (EDS) lets you create forms using familiar tools like Google Docs and Microsoft Office. 
+In today's digital age, creating user-friendly forms is essential for any organization. Edge Delivery Services for AEM Forms lets you create forms using familiar tools like Google Docs and Microsoft Office. 
 
 These forms submit data directly to a Microsoft Excel or Google Sheets file, enabling you to use vibrant ecosystem and robust APIs of Google Sheets, Microsoft Excel, and Microsoft SharePoint to easily process submitted data or to initiate an existing business workflow.
 
