@@ -172,7 +172,7 @@ The components are reordered in both the content tree and in the editor.
 >
 >Components can not be moved between containers if a different [component filter](/help/implementing/universal-editor/filtering.md) is set between the source and target containers.
 
-### Create content using GenAI with Generate Variations {#generate-variations-ai}
+### Create variations using GenAI with Generate Variations {#generate-variations-ai}
 
 Use Generative Variations to leverage Generative AI to accelerate content creation.
 
