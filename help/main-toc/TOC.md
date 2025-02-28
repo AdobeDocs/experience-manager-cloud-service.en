@@ -207,6 +207,7 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Universal Editor {#univeral-editor}
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + 2025 {#2025}
+      + [2025.02.17 Release Notes](/help/release-notes/universal-editor/2025/2025-02-17.md)
       + [2025.01.16 Release Notes](/help/release-notes/universal-editor/2025/2025-01-16.md)
     + 2024 {#2024}
       + [2024.12.02 Release Notes](/help/release-notes/universal-editor/2024/2024-12-02.md)
@@ -1143,6 +1144,7 @@ user-guide-title: AEM as a Cloud Service
       + [Learn about defining Metadata and Tagging for Content Fragments](/help/journey-headless/author/metadata-tagging.md)
 + Generative AI {#generative-ai}
   + [Generate Variations](/help/generative-ai/generate-variations.md)
+  + [Generate Variations - Integrated in AEM Editors](/help/generative-ai/generate-variations-integrated-editor.md)
   + [Assistant (Limited Beta)](/help/implementing/cloud-manager/aem-ai-assistant.md)
 + Implementing {#implementing}
   + [Implementing Applications for AEM as a Cloud Service](/help/implementing/home.md)
