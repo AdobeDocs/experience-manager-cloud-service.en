@@ -2,12 +2,13 @@
 title: Create Custom Components for an EDS Form
 description: Create Custom Components for an EDS Form
 feature: Edge Delivery Services
-hide: yes
-hidefromtoc: yes
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
 ---
 # Create Custom Component in WYSIWYG Authoring
+
+<span class="preview"> This feature is available through the early access program. To request access, send an email from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> with your GitHub organization name and repository name. For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
+
 
 Edge Delivery Services Forms offer customization, allowing front-end developers to build tailored form components. These custom components integrate seamlessly into the WYSIWYG authoring experience, enabling form authors to easily add, configure, and manage them within the form editor. With custom components, authors can enhance functionality while ensuring a smooth and intuitive authoring process.
 
@@ -65,7 +66,7 @@ Add new folder and files for your new custom component in your AEM Project.
       * **id**: A unique identifier of the component.
       * **fieldType**: Forms support various **fieldType** to capture specific types of user input. You can find the [supported fieldType in the Extra Byte section](#supported-fieldtypes).
       * **resourceType**: Each custom component has an associated resource type based on its fieldType. You can find the [supported resourceType in the Extra Byte section](#supported-resourcetype).
-      * **jcr:title**: It is similar to a title, but it is stored within the component’s structure.
+      * **jcr:title**: It is similar to a title, but it is stored within the component's structure.
       * **fd:viewType**: It represents the name of the custom component. It is the unique identifier for the component. It is required to create a customized view for the component.
 
 The `_range.json` file, after adding the component definition, is as follows:
@@ -180,7 +181,7 @@ To add the Step Value custom property, append the component model with the follo
 The JSON snippet defines a custom property called **Step Value** for a **Range** component. Below is a breakdown of each field:
 
 * **component**: Specifies the type of input field used in the Property dialog. In this case, `number` indicates that the field accepts numeric values.
-* **name**: The identifier for the property, used to reference it in the component’s logic. Here, the `stepValue` represents the step value setting for the range.
+* **name**: The identifier for the property, used to reference it in the component's logic. Here, the `stepValue` represents the step value setting for the range.
 * **label**: The display name of the property as seen in the Property dialog. 
 * **valueType**: Defines the data type expected for the property. The `number` ensures that only numeric inputs are allowed.
 
