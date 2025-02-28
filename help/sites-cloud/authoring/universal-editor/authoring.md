@@ -172,6 +172,14 @@ The components are reordered in both the content tree and in the editor.
 >
 >Components can not be moved between containers if a different [component filter](/help/implementing/universal-editor/filtering.md) is set between the source and target containers.
 
+### Create variations using GenAI with Generate Variations {#generate-variations-ai}
+
+Use Generative Variations to leverage Generative AI to accelerate content creation.
+
+Open the Universal Editor to find the entry point to Generate Variations.
+
+See [Generate Variations - Integrated in AEM Editors](/help/generative-ai/generate-variations-integrated-editor.md) to learn more.
+
 ## Previewing Content {#previewing-content}
 
 When you are finished editing content, you often want to navigate it to see how it looks in the content of other pages. In [preview mode](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode) you can click links to navigate your content as a reader would. The content is rendered in the editor as it would be published.
