@@ -3,8 +3,8 @@ title: Generate Variations
 description: Learn about Generate Variations, accessible from various editors within AEM as a Cloud Service
 feature: Generate Variations
 role: Admin, Architect, Developer, User
+exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
 ---
-
 # Generate Variations - Integrated in AEM Editors {#generate-variations-integrated-in-aem-editors}
 
 If you are looking for a way to optimize your digital channels and accelerate content creation, you can use Generate Variations integrated into the AEM editors. 
@@ -318,4 +318,4 @@ For further information you can also read:
 
 ## Release History {#release-history}
 
-For details of the current, and previous, releases see the [Release Notes for Generate Variations](/help/generative-ai/release-notes-generate-variations.md)  
+For details of the current, and previous, releases see the [Release Notes for Generate Variations](/help/generative-ai/release-notes-generate-variations.md)
