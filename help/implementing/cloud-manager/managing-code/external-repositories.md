@@ -43,8 +43,8 @@ Configuration of an external repository in Cloud Manager consists of three steps
     | Field | Description |
     | --- | --- |
     | **Repository Name** | Required. An expressive name for your new repository. | 
-    | **Repository URL** | Required. The URL of the repository.<br><br> If you are using a GitHub-hosted repository, the path must end in `.git`.<br>For example, *`https://github.com/org-name/repo-name.git`* (URL path is for illustration purposes only).<br><br>If you are using an external repository, it must use the following URL path format:<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> or<br>`https://self-hosted-domain/org-name/repo-name.git`<br>And match your Git vendor. |
-    | S**elect Repository Type** | Required. Select the repository type that you are using: **GitHub**, **GitLab**, or **BitBucket**. If the repository URL path above includes the Git vendor name, such as GitLab or Bitbucket, the repository type is already pre-selected for you. |
+    | **Repository URL** | Required. The URL of the repository.<br><br>If you are using a GitHub-hosted repository, the path must end in `.git`.<br>For example, *`https://github.com/org-name/repo-name.git`* (URL path is for illustration purposes only).<br><br>If you are using an external repository, it must use the following URL path format:<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> or<br>`https://self-hosted-domain/org-name/repo-name.git`<br>And match your Git vendor. |
+    | **Select Repository Type** | Required. Select the repository type that you are using: **GitHub**, **GitLab**, or **BitBucket**. If the repository URL path above includes the Git vendor name, such as GitLab or Bitbucket, the repository type is already pre-selected for you. |
     | **Description** | Optional. A detailed description of the repository. |
 
 1. Select **Save** to add the repository.
@@ -58,7 +58,7 @@ Configuration of an external repository in Cloud Manager consists of three steps
     | --- | --- |
     | **Use existing Access Token** | If you have already provided a repository access token for your organization and have access to multiple repositories, you can select an existing token. Use the **Token Name** drop-down list to choose the token you want to apply to the repository. Otherwise, add a new access token. |
     | **Add new Access Token** |**Repository type: GitHub**<br>&bull; In the **Token Name** text field, type a name for the access token you are creating.<br>&bull; Create a personal access token by following the instructions in the [GitHub documentation](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<br>&bull; Permissions required:<br>&nbsp;&nbsp;&bull; `Read access to metadata`.<br>&nbsp;&nbsp;&bull; `Read and write access to code and pull requests`.<br>&bull; In the **Access Token** field, paste the token you just created. | 
-    |  | **Repository type: GitLab**<br>&bull; In the **Token Name** text field, type a name for the access token you are creating.<br>&bull; Create a personal access token by following the instruction in the [GitLab documentation](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html).<br>&bull; Permissions required:<br>&nbsp;&nbsp;&bull; `api`<br>&nbsp;&nbsp;&bull; `read_api`<br>&nbsp;&nbsp;&bull; `read_repository`<br>&nbsp;&nbsp;&bull; `write_repository`<br>&bull; In the **Access Token** field, paste the token you just created. |    
+    |  | **Repository type: GitLab**<br>&bull; In the **Token Name** text field, type a name for the access token you are creating.<br>&bull; Create a personal access token by following the instruction in the [GitLab documentation](https://docs.gitlab.com/user/profile/personal_access_tokens/).<br>&bull; Permissions required:<br>&nbsp;&nbsp;&bull; `api`<br>&nbsp;&nbsp;&bull; `read_api`<br>&nbsp;&nbsp;&bull; `read_repository`<br>&nbsp;&nbsp;&bull; `write_repository`<br>&bull; In the **Access Token** field, paste the token you just created. |    
     |  | **Repository type: Bitbucket**<br>&bull; In the **Token Name** text field, type a name for the access token you are creating.<br>&bull; Create a repository access token using the [Bitbucket documentation](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<br>&bull; Permissions required:<br>&nbsp;&nbsp;&bull; `Read and write access to code and pull requests`. |
 
     >[!NOTE]
@@ -93,7 +93,9 @@ After validation, the external repository is ready to use and link to a pipeline
 
 ## Limitations
 
-External repositories cannot be linked to Configuration pipelines.
+* External repositories cannot be linked to Configuration pipelines.
+* Pipelines with external repositories (not hosted on GitHub) and the "On Git Changes" trigger do not start automatically. They can only be initiated manually.
+
 
 <!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
 * Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
