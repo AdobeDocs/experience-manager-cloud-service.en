@@ -14,7 +14,7 @@ When your form is finalized and ready for use, you can publish it to make it acc
 
 ## Prerequisites
 
-* A form created using the **Edge Delivery Services (EDS) template**. [Learn more](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) about creating an EDS-based form.
+* A form created using the **Edge Delivery Services template**. [Learn more](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) about creating an EDS-based form.
 
 ## Publish Your Form
 

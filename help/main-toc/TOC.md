@@ -207,6 +207,7 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Universal Editor {#univeral-editor}
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + 2025 {#2025}
+      + [2025.02.17 Release Notes](/help/release-notes/universal-editor/2025/2025-02-17.md)
       + [2025.01.16 Release Notes](/help/release-notes/universal-editor/2025/2025-01-16.md)
     + 2024 {#2024}
       + [2024.12.02 Release Notes](/help/release-notes/universal-editor/2024/2024-12-02.md)
@@ -1018,6 +1019,7 @@ user-guide-title: AEM as a Cloud Service
   + Building Forms {#build-forms}
     + [Overview](/help/edge/docs/forms/overview.md)
     + [How Edge Delivery Services Forms works?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
+    + [FAQ](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
     + Document-based authoring {#getting-started-edge-delivery-services-forms}
       + [Build Your First Form: Quick Start Guide with Google Sheets and Excel](/help/edge/docs/forms/tutorial.md)
       + [How to Create Forms Using Google Sheets or Excel: Step-by-Step Guide](/help/edge/docs/forms/create-forms.md)
@@ -1037,7 +1039,7 @@ user-guide-title: AEM as a Cloud Service
       + [Build Custom Form Components: Developer's Guide](/help/edge/docs/forms/custom-components-forms.md)
       + [Monitor Form Performance: Real Use Monitoring Guide](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
       + [Deploy Forms on Edge: Publishing Guide for Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md)
-    + WYSIWYG {#universal-editor}
+    + WYSIWYG Authoring {#universal-editor}
       + [Introduction to Forms Universal Editor for Edge Delivery Services - Complete Guide](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
       + [How to Create Your First Form Using Universal Editor - Step by Step Tutorial](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
       + [Universal Editor Interface Guide: Tools, Features, and Navigation Explained](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
