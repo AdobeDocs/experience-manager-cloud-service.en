@@ -53,6 +53,7 @@ For further information see:
 * [Integrate the Content Fragment Selector with a non-Adobe app](/help/assets/integrate-asset-selector-non-adobe-app.md)
 -->
 
+<!--
 ### Provisioning {#provisioning}
 
 Before attempting to install or use the Content Fragment Selector, you must ensure that your organization has been provisioned for access to the Content Fragment Selector as part of the Experience Manager as a Cloud Service profile. 
@@ -74,12 +75,15 @@ After provisioning, your organization will be provided with the following proper
 >[!IMPORTANT]
 >
 >Without these properties, you cannot run the installation steps.
+-->
 
 ## Installation {#installation}
 
-The Content Fragment Selector is available via both:
+<!--
+The Content Fragment Selector is available via:
 
 * [UMD](https://github.com/umdjs/umd) version (recommended)
+
 * ESM CDN; for example, [esm.sh](https://esm.sh/) and [skypack](https://www.skypack.dev/) 
 
 For example:
@@ -107,6 +111,31 @@ For example:
   ```html
   import { ContentFragmentSelector } from 'https://experience.adobe.com/solutions/CQ-content-fragments-selectors/static-content-fragments/resources/@content-fragments/selectors/index.js'
   ```
+-->
+
+Use the `ContentFragmentSelector` component. There are several installation options:
+
+1. NPM Registry (Private Adobe Registry)
+
+   * Add the following to `.npmrc`:
+
+     ```html
+     @aem-sites:registry=https://artifactory.corp.adobe.com/artifactory/api/npm/npm-aem-sites-release/
+     ```
+
+   * Then install
+
+     ```html
+     npm install @aem-sites/content-fragment-selector
+     ```
+
+1. Git Repository
+
+   * Add the following to `package.json` dependencies:
+
+     ```html
+     "@aem-sites/content-fragment-selector": "git+https://github.com/adobe/private-repo-url.git#version"
+     ```
 
 ## Using the Content Fragment Selector {#using-the-Content-Fragment-selector}
 
