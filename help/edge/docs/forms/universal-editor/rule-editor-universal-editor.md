@@ -3,12 +3,13 @@ title: How to use the rule editor to apply rules to form fields, enabling dynami
 description: The rule editor in Universal Editor allows you to add dynamic behavior and build complex logic into forms without coding or scripting.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: yes
-hidefromtoc: yes
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 ---
 
 # Introduction to Rule Editor in WYSIWYG Authoring
+
+<span class="preview"> This feature is available through the early access program. To request access, send an email from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> with your GitHub organization name and repository name. For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
+
 
 You can add dynamic form behaviour using the Rule Editor, which allows you to create rules. These rules enable conditional field visibility, automate calculations based on user input, and improve the overall user experience. By streamlining the form-filling process, the Rule Editor helps ensure both accuracy and efficiency.
 
@@ -179,7 +180,7 @@ Now, let's explore how to [write rules in the Rule Editor](#write-rules).
 
 ## Write Rules
 
-To understand how to write rules in Visual Rule Editor, let’s consider an simple example of a tax calculation form: 
+To understand how to write rules in Visual Rule Editor, let's consider an simple example of a tax calculation form: 
 
 ![Rule Editor example](/help/edge/docs/forms/assets/rule-editor-1.png)
 
