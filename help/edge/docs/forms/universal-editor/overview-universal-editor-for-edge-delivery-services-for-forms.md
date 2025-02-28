@@ -1,15 +1,16 @@
 ---
-title: Universal Editor for Edge Delivery Services for Forms (EDS Forms Block)
-description: Use Universal Editor for Edge Delivery Services for Forms (EDS Forms Block) to create Adaptive Forms.
+title: Universal Editor for Edge Delivery Services for Forms 
+description: Use Universal Editor for Edge Delivery Services for Forms to create Adaptive Forms.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: yes
-hidefromtoc: yes
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
 ---
-# Universal Editor for Edge Delivery Services for Forms (EDS Forms Block)
 
-The Universal Editor revolutionizes form creation for Adobe Edge Delivery Services (EDS) by offering a simple, visual, and intuitive What You See Is What You Get (WYSIWYG) interface. Designed for content creators and form authors, it eliminates the complexity of traditional form-building processes, making it accessible even to non-technical users.
+# Universal Editor for Edge Delivery Services for Forms
+
+<span class="preview"> This feature is available through the early access program. To request access, send an email from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> with your GitHub organization name and repository name. For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
+
+The Universal Editor revolutionizes form creation for Adobe Edge Delivery Services by offering a simple, visual, and intuitive What You See Is What You Get (WYSIWYG) interface. Designed for content creators and form authors, it eliminates the complexity of traditional form-building processes, making it accessible even to non-technical users.
 
 With the Universal Editor, you can quickly design responsive, interactive forms using pre-built components like text fields, checkboxes, and radio buttons. Its robust feature set supports dynamic rules, seamless data integration, and advanced personalization, ensuring every form is tailored to your needs.
 
@@ -17,7 +18,7 @@ Whether you're managing lightweight client-side rendering, ensuring cross-browse
 
 ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center} --> 
 
-## Key Features of Universal Editor for EDS Forms
+## Key Features of Universal Editor for Edge Delivery Services for Forms
 
 
 
@@ -38,15 +39,15 @@ Here's the layout with equal-width cards (using fixed-width columns):
 | [**Styling**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **Pre-fill Services** (Coming Soon) | [**A/B Testing**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
 | Styling with CSS enables developers to customize the appearance of form elements and create a visually appealing design that aligns with the website aesthetics. | Pre-fill Services automatically populate form fields with relevant user data from various sources, reducing manual input and enhancing user experience. | A/B testing enables organizations to experiment with different form designs, layouts, and features to identify the best-performing variants. |
 
-| ![Analytics & Tracking](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![Task Management](/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg) | ![Data Binding](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
+| ![Analytics & Tracking](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![Form Fragments](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![Data Binding](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**Analytics & Tracking**](https://www.aem.live/developer/martech-integration) | **Task Management** | **Data Binding** |
-| Gain insights into user behavior, form interactions, and submission rates with built-in analytics and tracking to enable data-driven form optimization. | Integration with Adobe Workfront lets teams manage tasks for form creation and maintenance, ensuring streamlined workflows. | Data binding enables direct connections between form fields and backend data sources, supporting real-time updates and advanced data mapping. |
+| [**Analytics & Tracking**](https://www.aem.live/developer/martech-integration) | **Form Fragments** (Coming Soon)| **Data Binding** (Coming Soon) |
+| Gain insights into user behavior, form interactions, and submission rates with built-in analytics and tracking to enable data-driven form optimization. | Form Fragments enable reusability by allowing commonly used sections to be created once and reused across multiple forms, ensuring consistency and reducing maintenance effort.| Data binding enables direct connections between form fields and backend data sources, supporting real-time updates and advanced data mapping. |
 
 | ![CAPTCHA](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![Embedding Forms](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![Thank You Configuration](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-| **Editor Customization** | **Embedding Forms** | [**Thank You Configuration**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
-| Developers can extend the functionality of the editor through UI extensions, enabling tailored solutions that fit specific organizational needs. | Embed forms directly into Edge Delivery Services Sites pages using the Universal Editor's built-in embed component. | Easily customize the acknowledgment message or page shown to users after successful form submission. |
+| [**CAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **Embedding Forms** (Coming Soon)| [**Thank You Configuration**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
+| Use reCAPTCHA to protect forms from automated bots, ensuring secure and reliable data collection. | Embed forms directly into Edge Delivery Services Sites pages using the Universal Editor's built-in embed component. | Easily customize the acknowledgment message or page shown to users after successful form submission. |
 
 
 <!-- ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg)  **WYSIWYG interface for Form creation**: Universal Editor provides a WYSIWYG interface for form design. It provides pre-built component library, responsive design support, and template-based form creation. You can instantly add or remove form fields and modify field properties (like label, data binding, validation). You can also plugin custom form components to Universal Editor.
