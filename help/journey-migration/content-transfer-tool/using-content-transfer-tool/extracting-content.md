@@ -31,11 +31,11 @@ Follow the steps below to extract your migration set from the Content Transfer T
    >[!IMPORTANT]
    >
    >Make sure that the Extraction key is valid and is not near its expiration. If it is close to its expiration date, you can renew the Extraction key by selecting the migration set and clicking Properties. Click **Renew**. This takes you to the Cloud Acceleration Manager where you can click **Copy Extraction Key**. Every time you click **Copy Extraction Key**, a new Extraction key is generated which is valid for 14 days from the time of creation.
-   >![image](/help/journey-migration/content-transfer-tool/assets-ctt/migration set details.png)
+   >![image](/help/journey-migration/content-transfer-tool/assets-ctt/migrationSetDetails.png)
 
 1. This brings up the Extraction dialog. Click **Extract** to start the extraction phase.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/migration set extraction.png) 
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/migrationSetExtraction.png) 
 
    >[!NOTE]
    >You can optionally overwrite the staging container during the extraction phase. If **Overwrite staging container** is disabled, it can speed up extractions for subsequent migrations where the content paths or include versions settings have not changed. However, if the content paths or include versions settings have changed, then **Overwrite staging container** should be enabled.

@@ -131,7 +131,7 @@ To populate the migration set you created in the Cloud Acceleration Manager, ins
 
    1. **Include Version**: Select as required. When versions are included, the path `/var/audit` is automatically included to migrate audit events.
 
-      ![image](/help/journey-migration/content-transfer-tool/assets-ctt/include version.png)
+      ![image](/help/journey-migration/content-transfer-tool/assets-ctt/includeVersion.png)
 
       >[!NOTE]
       >If you intend to include versions as part of a migration set, and are performing top-ups with `wipe=false`, then you must disable version purging due to a current limitation in the Content Transfer Tool. If you prefer to keep version purge enabled and are performing top-ups into a migration set, then you must perform the ingestion as `wipe=true`.
@@ -147,23 +147,23 @@ To populate the migration set you created in the Cloud Acceleration Manager, ins
       >* `/home`
       >* `/etc` (some `/etc` paths are allowed to be selected in CTT)
 
-      ![image](/help/journey-migration/content-transfer-tool/assets-ctt/include and exclude path.png)
+      ![image](/help/journey-migration/content-transfer-tool/assets-ctt/includeAndExcludePath.png)
 
       1. Only path selection is allowed, and at least one path must be present.If no path is selected, a server error will occur.
 
-         ![image](/help/journey-migration/content-transfer-tool/assets-ctt/Server error.png)
+         ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ServerError.png)
 
       1. When using the **CSV upload option**, the CSV file must contain valid paths.
 
          ![image](/![image](/help/journey-migration/content-transfer-tool/assets-ctt/valid csv upload.png))
 
-         ![image](/help/journey-migration/content-transfer-tool/assets-ctt/valid csv upload.png)
+         ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validCsvUpload.png)
 
       1. To switch back to the path picker, users need to refresh the page and start over.
 
       1. If **invalid paths** are found in the uploaded CSV, a separate dialog will display the invalid paths.
 
-         ![image](/help/journey-migration/content-transfer-tool/assets-ctt/invalid paths in csv.png)
+         ![image](/help/journey-migration/content-transfer-tool/assets-ctt/invalidPathsInCsv.png)
 
       1. Users must correct the CSV file and upload it again or refresh the UI to select paths via the path picker.
 
@@ -203,7 +203,7 @@ Follow the steps below to run a size check:
 
 1. This opens up the **Check Size** dialog.  
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/check migration set size.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/checkMigrationSetSize.png)
 
 1. Click **Check Size** to start the process. You will then return to the migration set list view, and you should see a message indicating that **Check Size** is running.
 
