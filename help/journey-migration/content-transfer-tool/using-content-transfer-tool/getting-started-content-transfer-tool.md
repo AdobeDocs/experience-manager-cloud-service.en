@@ -155,8 +155,6 @@ To populate the migration set you created in the Cloud Acceleration Manager, ins
 
       1. When using the **CSV upload option**, the CSV file must contain valid paths.
 
-         ![image](/![image](/help/journey-migration/content-transfer-tool/assets-ctt/valid csv upload.png))
-
          ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validCsvUpload.png)
 
       1. To switch back to the path picker, users need to refresh the page and start over.
