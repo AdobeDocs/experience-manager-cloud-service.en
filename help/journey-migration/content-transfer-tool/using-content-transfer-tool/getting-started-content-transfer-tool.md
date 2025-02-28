@@ -125,26 +125,51 @@ To populate the migration set you created in the Cloud Acceleration Manager, ins
    >
    >Make sure that the extraction key is valid and is not near its expiration. You can get this information in the **Create Migration Set** dialog after you paste the extraction key. If you get a connection error, see [Source Environment Connectivity](#source-environment-connectivity) for more information.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/createMigrationSet.png)
 
 1. Next, select the following Parameters to create a Migration Set:
 
    1. **Include Version**: Select as required. When versions are included, the path `/var/audit` is automatically included to migrate audit events.
 
-      ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam7.png)
+      ![image](/help/journey-migration/content-transfer-tool/assets-ctt/include version.png)
 
       >[!NOTE]
       >If you intend to include versions as part of a migration set, and are performing top-ups with `wipe=false`, then you must disable version purging due to a current limitation in the Content Transfer Tool. If you prefer to keep version purge enabled and are performing top-ups into a migration set, then you must perform the ingestion as `wipe=true`.
 
+      >[!NOTE]
+      >Starting from CTT Version (3.0.24), new features have been included to the Content Transfer Tool, enhancing the process of including and excluding paths. Previously, paths had to be selected one by one, which was tedious and time-consuming. Now, users can include paths directly from the UI or upload a CSV file according to their preference.
 
-   1. **Paths to be included**: Use path browser to select paths which need to be migrated. Path picker accepts input by typing or by selection. 
-
+   1. **Paths to be included**: Use path browser to select paths which need to be migrated. Path picker accepts input by typing or by selection. Users can select only one option for including paths: either from the UI or by uploading a CSV file.
       >[!IMPORTANT]
       >Following paths are restricted while creating a migration set:
       >* `/apps`
       >* `/libs`
       >* `/home`
       >* `/etc` (some `/etc` paths are allowed to be selected in CTT)
+
+      ![image](/help/journey-migration/content-transfer-tool/assets-ctt/include and exclude path.png)
+
+      1. Only path selection is allowed, and at least one path must be present.If no path is selected, a server error will occur.
+
+         ![image](/help/journey-migration/content-transfer-tool/assets-ctt/Server error.png)
+
+      1. When using the **CSV upload option**, the CSV file must contain valid paths.
+
+         ![image](/![image](/help/journey-migration/content-transfer-tool/assets-ctt/valid csv upload.png))
+
+         ![image](/help/journey-migration/content-transfer-tool/assets-ctt/valid csv upload.png)
+
+      1. To switch back to the path picker, users need to refresh the page and start over.
+
+      1. If **invalid paths** are found in the uploaded CSV, a separate dialog will display the invalid paths.
+
+         ![image](/help/journey-migration/content-transfer-tool/assets-ctt/invalid paths in csv.png)
+
+      1. Users must correct the CSV file and upload it again or refresh the UI to select paths via the path picker.
+
+   1. **Paths to be excluded**: A new feature allows users to exclude specific paths if they don't want them included. For instance, if the path in the include section is /content/dam, users can now exclude paths such as /content/dam/catalogs.
+
+       ![image](/help/journey-migration/content-transfer-tool/assets-ctt/excludePathHighlighted.png)
 
 1. Click **Save** after you populate all the fields in the **Create Migration Set** details screen.
 
@@ -178,7 +203,7 @@ Follow the steps below to run a size check:
 
 1. This opens up the **Check Size** dialog.  
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/check migration set size.png)
 
 1. Click **Check Size** to start the process. You will then return to the migration set list view, and you should see a message indicating that **Check Size** is running.
 
@@ -186,7 +211,7 @@ Follow the steps below to run a size check:
 
 1. After **Check Size** process is completed, the status changes to **FINISHED**. Select the same migration set and click **Check Size** to view results. Below is an example of **Check Size** results with no warnings.
  
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/checkSizeAfterFinished.png)
    
  1. If the **Check Size** results indicate that either there is insufficient disk space, or the migration set exceeds product limits, or both, a **WARNING** status is displayed.
 
