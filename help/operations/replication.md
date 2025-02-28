@@ -90,10 +90,10 @@ Create a Workflow Model that uses the `TreeActivation` process step:
 
 **Support Filters**
 
-| Name          | description                                 |
+| Name          | Description                                 |
 | ------------- | ------------------------------------------- |
-| onlyModified  | Nodes that were modified since last publish |
-| onlyActivated | Nodes that were published before            |
+| onlyModified  | Nodes: both new, and pre-existing that have been modified since the last publish |
+| onlyActivated | Nodes: that have been published before the last publish |
 
 
 **Resume Support**

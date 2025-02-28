@@ -32,6 +32,9 @@ Configuration of a private GitHub repository in Cloud Manager consists of two st
 1. [Add a private GitHub repository](#add-repo) to a selected program.
 1. Then, [validate ownership of the private GitHub repository](#validate-ownership).
 
+>[!NOTE]
+>Cloud Manager supports private repositories on GitHub Cloud (github.com) only. <!-- As per request in https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=DMSArchitecture&title=%5B2025%5D+Cloud+Manager+-+Bring+Your+Own+Git+-+Pull+Request+validator+for+multiple+vendors -->
+
 ### Add a private GitHub repository to a program {#add-repo}
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
@@ -62,7 +65,6 @@ Configuration of a private GitHub repository in Cloud Manager consists of two st
 >[!TIP]
 >
 >For details about managing repositories in Cloud Manager, see [Cloud Manager Repositories](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
-
 
 
 ### Validate ownership of a private GitHub repository {#validate-ownership}
@@ -143,7 +145,7 @@ Certain limitations apply when using private repositories with Cloud Manager.
 * Web tier and config pipelines are not supported with private repositories.
 * No Git tag is created and pushed when using private repositories on production full stack pipelines.
 * If the Adobe GitHub app is removed from your GitHub organization, it removes the pull requests validation feature for all repositories.
-* Pipelines using private repositories and the on-commit build trigger are not started automatically when a new commit is pushed into the selected branch.
+* Pipelines using private repositories and the "on-commit" build trigger are not started automatically when a new commit is pushed into the selected branch.
 * [Artifact reuse functionality](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) does not apply to private repositories.
 * You cannot pause the pull request validation using the GitHub check from Cloud Manager.
 If the GitHub repository is validated in Cloud Manager, Cloud Manager always tries to validate the pull requests created for that repository.
