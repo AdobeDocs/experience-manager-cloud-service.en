@@ -1,12 +1,10 @@
 ---
 title: Create an Edge Delivery Site in Cloud Manager
 description: Learn how to create an Edge Delivery site quickly in Cloud Manager with the click of a button.
-
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-
+exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
 ---
-
 # About Create an Edge Delivery site in Cloud Manager {#about-one-click-edge-delivery-site}
 
 The Create an Edge Delivery site feature is designed to help you automate the onboarding and deployment of Edge Delivery sites within Cloud Manager. It greatly simplifies the process by having you click a single button. That single click provisions the required infrastructure, integrates with GitHub for version control, and configures your document and asset storage in Google Drive.
@@ -76,7 +74,3 @@ See also [Introduction to Edge Delivery Services in Cloud Manager](/help/impleme
     | Preview a published site | <ul><li>In the **Edge Delivery sites** list box, under the **Site name** column heading, click the URL of the site you just created and published.<br>In the URL Address bar of your browser, note that the site's URL ends with `.page` indicating that you are seeing a preview of the site.</li><li>To see the site live, manually change `.page` to `.live` in the URL Address bar.</li></ul> | 
     | Give users access to the content repository on Google Drive | <ul><li> In the **Edge Delivery sites** list box, to the far right of your site's name, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) to open the drop-down menu.</li><li>Click ![Users Add icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_UsersAdd_18_N.svg) **Gain access to the content repository** in the drop-down menu.</li><li>In the **Add collaborators to your site** dialog box, enter the email address of a contributor, then click ![Checkmark icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg).</li><li>Continue adding contributor emails, as necessary.</li><li>When you are finished, click **Add collaborators**.</li><li>To share the link with your content collaborators, in the **Collaboration added successfully** dialog box, click **OK**.</li><li>In the Collaboration added successfully dialog box, click ![Copy icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) to copy the link and share it with your collaborators.<br>Before sharing the link, confirm that collaborators are logged in with the email address associated with their IMS account. If their IMS email account is unavailable, they must use the email address added as a collaborator. Doing so ensures that collaborators can access the link and see the content to edit or update on Google Drive.</li><li>When done editing, click **Publish site** in Cloud Manager, as described above.<br>Or, preview the changes made, as described above.</li></ul> |
     | Give users access to the base repository on GitHub | <ul><li> In the **Edge Delivery sites** list box, to the far right of your site's name, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) to open the drop-down menu.</li><li>Click ![Code icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) **Gain access to the base repository** in the drop-down menu.</li><li>In the **Access the base repository for your site** dialog box, enter the GitHub username of a collaborator, then click ![Checkmark icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg).</li><li>Continue adding GitHub usernames, as necessary.</li><li>When you are finished, click **Add collaborators**.</li>Users must grant access to their own GitHub username to view the repository. |
-
-    
-
-    
