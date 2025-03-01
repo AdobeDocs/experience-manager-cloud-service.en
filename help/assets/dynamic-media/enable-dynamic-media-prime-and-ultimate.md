@@ -25,6 +25,8 @@ Execute the following steps in your cloud service environment to enable [!DNL Dy
 1. [Configure custom domain in delivery tier](#configure-custom-domain-in-delivery-tier) 
 1. [Onboard API keys using the [!DNL AEM] [!DNL Dynamic Media] API card](#onboard-api-keys)
 
+If you need to enable [!DNL Dynamic Media Prime], see quick links provided in [Enable [!DNL Dynamic Media Prime]](#enable-dynamic-media-prime).
+
 ### Activate [!DNL Dynamic Media with OpenAPI] {#activate-dynamic-media-with-openapi}
 
 Dynamic Media with OpenAPI capabilities puts DAM at the core of an agile and efficient content supply chain ecosystem to ensure asset governance and delivery.
@@ -225,7 +227,8 @@ TBD: Wiki in progress.
 
 ## Enable [!DNL Dynamic Media] Prime {#enable-dynamic-media-prime}
 
-Execute the following configurations in your cloud service environment to use the capabilities offered by Dynamic Media Prime: 
+Execute the following steps in your cloud service environment to enable [!DNL Dynamic Media] Prime:
+
 1. [Activate Dynamic Media with OpenAPI](#activate-dynamic-media-with-openapi) 
-1. [Configure custom domain in delivery tier](#configure-custom-domain-in-delivery-tier) 
+1. [Optional: Configure custom domain in delivery tier](#configure-custom-domain-in-delivery-tier) 
 1. [Onboard API keys using the AEM Dynamic Media API card](#onboarding-api-keys)
