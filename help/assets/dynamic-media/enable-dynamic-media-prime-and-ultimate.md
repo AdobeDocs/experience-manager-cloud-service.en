@@ -10,7 +10,7 @@ role: User, Admin
 | ------------- | --------------------------- |---------|----|-----|
 
 
-Adobe Experience Manager as a Cloud Service enables you to access Dynamic Media Prime and Ultimate offerings to streamline your digital workflows and optimize content management. See this article to understand thier benefits and the key fifferences between them.
+Adobe Experience Manager as a Cloud Service enables you to access Dynamic Media Prime and Ultimate offerings to streamline your digital workflows and optimize content management. See this article to understand thier benefits and the key differences between them.
 
 This article describes the end-to-end workflow to enable the Dynamic Media Prime and Ultimate offerings.
 
@@ -27,28 +27,33 @@ Execute the following steps in your cloud service environment to enable [!DNL Dy
 
 ### Activate [!DNL Dynamic Media with OpenAPI] {#activate-dynamic-media-with-openapi}
 
-Enable Dynamic Media with OPenAPI in your Cloud Service environment to use the capabilities of [Dynamic Media with OpenAPI](/help/assets/dynamic-media-open-apis-overview.md).
+Dynamic Media with OpenAPI capabilities puts DAM at the core of an agile and efficient content supply chain ecosystem to ensure asset governance and delivery.
 
-### Prepare yourself to get started {#prerequisites}
+The first step in the process of enabling Dynamic Media Ultimate is to activate [Dynamic Media with OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) for your Cloud Service environment.
 
-Ensure you have the following before starting activation:
+#### Prepare yourself to get started {#prerequisites}
+
+Ensure that you fulfill the folowing requirements before starting the activation process:
+
 1. [Access to Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 1. [Your program includes [!DNL Dynamic Media] solutions](#configure-dynamic-media-solutions).
 1. Your organization has Dynamic Media with OpenAPI credits. 
 
-### Enable [!DNL Dynamic Media with OpenAPI] capabilities in your Cloud Service environment {#enable-dynamic-media-with-openapi-capabilites-in-your-CS-environment}
-Execute these steps to enable [!DNL Dynamic Media with OpenAPI] in your cloud service environment:
+#### Enable [!DNL Dynamic Media with OpenAPI] capabilities in your Cloud Service environment {#enable-dynamic-media-with-openapi-capabilites-in-your-CS-environment}
+
+Execute these steps to enable [!DNL Dynamic Media with OpenAPI] for your cloud service environment:
+
 1. [Navigate to the Cloud Manager UI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager). 
-1. [Create an environment](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments) if you do not have already.
+1. [Create an environment](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments) if you do not have access to an existing one.
 1. Select **[!UICONTROL Click to activate]** in the **[!UICONTROL Dynamic Media]** row of the **[!UICONTROL Environment Information]** section on the Environment details page.
 ![activate dynamic media with OpenAPI capabilities](/help/assets/assets/activate-adv-capabiliites-of-dm-openAPI.png){width="700" align="center"}
-1. Click **[!UICONTROL Activate]** to start the [!DNL Dynamic Media with OpenAPI] activation process. After successful activation the Cloud Manager displays the following status updates:
+1. Click **[!UICONTROL Activate]** on the confirmation dialog to start the [!DNL Dynamic Media with OpenAPI] activation process. After successful activation, the Cloud Manager displays the following status updates:
     1. **[!UICONTROL Environment stage]**: **[!UICONTROL Running]**
     1. ![DM activated](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media]**: **[!UICONTROL OpenAPI capabilities are activated]**
-    1. ![author service running](/help/assets/assets/author-service.svg)**[!UICONTROL Author Service]**: **[!UICONTROL Running]**
-![activation successful](/help/assets/assets/activation-successful.png){width="700" align="center"}
+    
+   ![activation successful](/help/assets/assets/activation-successful.png){width="700" align="center"}
 
-### Retry activation {#retry-activation}
+#### Retry activation {#retry-activation}
 
 If activation fails, the Cloud Manager displays the following status updates:
 
@@ -59,45 +64,49 @@ If activation fails, the Cloud Manager displays the following status updates:
 Select **[!UICONTROL Click to retry]** to restart activation.
 
 Alternatively, execute these steps to restart the activation process:
-1. Navigate to the **[!UICONTROL List environment page]**.
+
+1. Navigate to the page which lists all environments.
 1. Click more options (![more options](/help/assets/assets/three-dots.svg)) at the end of your environment row.
 1. Select **[!UICONTROL Retry DM with OpenAPI Activation]** to restart activation.
 ![retry activation from environment details page](/help/assets/assets/restart-activation-process-from-list-environment-page.png)
 
-## Configure [!DNL Dynamic Media] solutions {#configure-dynamic-media-solutions}
+### Configure [!DNL Dynamic Media] solutions {#configure-dynamic-media-solutions}
 
-Configure [!UICONTROL Dynamic Media] solutions to use the basic and advanced capabilities of [Dynamic Media with OpenAPI](/help/assets/dynamic-media-open-apis-overview.md).
+Configure [!UICONTROL Dynamic Media] solutions to use the basic and advanced capabilities of [Dynamic Media with OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) on existing or new enviroments available in Cloud Manager.
 
-### Prepare yourself to get started {#prerequisites-to-configure-dynamic-media-solutions}
+#### Prepare yourself to get started {#prerequisites-to-configure-dynamic-media-solutions}
 
 Ensure you have the following to configure [!UICONTROL Dynamic Media] solutions:
+
 1. [Access to Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 1. Your organization has [!DNL Dynamic Media with OpenAPI] credits.
 
-## Configure [!DNL Dynamic Media] solutions for asset delivery {#configure-dynamic-media-solutions-for-asset-delivery}
+#### Configure [!DNL Dynamic Media] solutions for asset delivery {#configure-dynamic-media-solutions-for-asset-delivery}
 
-Execute these configuration steps of [!DNL Dynamic Media] solutions:
+Execute the following steps:
 
-1. [Create a new program](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-program) or navigate to an existing program and click **[!UICONTROL Edit]**. The **[!UICONTROL Set up for production]** page displays the **[!UICONTROL SOLUTIONS & ADD-ONS]** table. 
+1. [Create a new program](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-program) or navigate to an existing program and click **[!UICONTROL Edit]**. The **[!UICONTROL Set up for production]** page displays the **[!UICONTROL Solutions & Add-ons]** tab. 
 1. Select **[!UICONTROL Assets]**, **[!UICONTROL Assets Prime]**, **[!UICONTROL Assets Ultimate]** or **[!UICONTROL Sites]** to add the **[!UICONTROL Dynamic Media]** solution to your program.
-1. Select **[!UICONTROL Dynamic Media]** solution and click **[!UICONTROL Continue]** to add **[!UICONTROL Dynamic Media]** solution to your program. This action restarts all existing environments in your program and adds the [!DNL Dynamic Media] solution to them. Also, any new environment that you create under your program automatically gets [!DNL Dynamic Media] solutions.
+1. Select **[!UICONTROL Dynamic Media]** solution and click **[!UICONTROL Continue]** to add **[!UICONTROL Dynamic Media]** solution to your program. This action restarts all existing environments in your program and adds the [!DNL Dynamic Media] solution to them. Also, any new environment that you create under your program automatically gets [!DNL Dynamic Media].
 
 ![set up for production](/help/assets/assets/set-up-for-prod.png){width="500" align="center"}
-See [Activate [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi) to use the capabilities of [!DNL Dynamic Media] with OpenAPI capabilities on your environment.
+See [Activate [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi) to start using the capabilities of [!DNL Dynamic Media] with OpenAPI capabilities on your environment.
 
-## Create and list [!DNL Dynamic Media] companies {#create-and-list-dynamic-media-companies}
+### Create and list [!DNL Dynamic Media] companies {#create-and-list-dynamic-media-companies}
 
 Create and list [!DNL Dynamic Media] companies in your AEM cloud service environment to manage configurations within your AEM environment. 
 
-### Prepare yourself to get started {#prerequisites-to-create-and-list-dynamic-media-companies}
+#### Prepare yourself to get started {#prerequisites-to-create-and-list-dynamic-media-companies}
 
 To see the existing companies (accounts) or add a new [!DNL Dynamic Media] company (account) in your IMS org, you must have: 
 
 1. [Access to Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 1. [!DNL Dynamic Media with OpenAPI] credits in your organization.
 
-### Create and list Dynamic Media companies in your IMS organization {#create-and-list-dynamic-media-companies-in-your-ims-organisation}
+#### Create and list Dynamic Media companies in your IMS organization {#create-and-list-dynamic-media-companies-in-your-ims-organisation}
+
 Execute these steps to create and list a new [!DNL Dynamic Media] company (account) that can be configured within your [!DNL AEM] environment:
+
 1. Navigate to the [Cloud Manager license page](https://experience-stage.adobe.com/#/@ssahnichstage/cloud-manager/license).
 1. Click **[!UICONTROL Add Company]**, the **[!UICONTROL Create Dynamic Media Company]** dialog box displays. 
 1. Specify a unique [!DNL Dynamic Media] company name, select a company region and add a list of company admin email IDs separated by commas.
@@ -107,12 +116,13 @@ Execute these steps to create and list a new [!DNL Dynamic Media] company (accou
 1. **Optional:** Click ![info icon](/help/assets/assets/info-icon-solid-black%202.svg) to see the company's details. The **[!UICONTROL STATUS]** updates to **[!UICONTROL Ready]**, when the company is created. 
 
    ![Dynamic Media company information](/help/assets/assets/dm-company-information.png)
-1. Check your mailbox for a welcome email that includes a list of steps to configure [!DNL Dynamic Media] company in your [!DNL AEM] Cloud Service environment to get started.
+1. [Dynamic Media Administrators] Check your mailbox for a welcome email that includes a list of steps to [configure [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#architecture-diagram-of-dynamic-media) company in your [!DNL AEM] Cloud Service environment to get started.
 ![welcome email](/help/assets/assets/welcome-email.png)
 
-### Retry company creation {#retry-company-creation}
+#### Retry company creation {#retry-company-creation}
 
-If [!DNL Dynamic Media] company creation fails, execute the following workaround based on the status:
+If [!DNL Dynamic Media] company creation fails, execute the following steps based on the failure status:
+
 1. If **[!UICONTROL Status]** is Pending, then raise the issue to the customer support team for resolution.
 ![pending status](/help/assets/assets/company-creation-pending-status.png){width="350" align="center"}
 1. If **[!UICONTROL Status]** is failed, then retry based on the reason of failure.
