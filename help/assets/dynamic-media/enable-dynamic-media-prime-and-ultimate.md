@@ -128,21 +128,22 @@ If [!DNL Dynamic Media] company creation fails, execute the following steps base
 1. If **[!UICONTROL Status]** is failed, then retry based on the reason of failure.
 ![failed status](/help/assets/assets/company-creation-failure-status.png){width="380" align="center"}
 
-## Configure custom domain in delivery tier {#configure-custom-domain-in-delivery-tier}
+### Optional: Configure custom domain in delivery tier {#configure-custom-domain-in-delivery-tier}
 
-In your Cloud Manager, configure a custom domain in the delivery tier to use it in the delivery URL. 
+While AEM as a Cloud Service comes with a default domain, you can customize it as per your needs. Attach a custom domain to the delivery tier using Cloud Manager.
 
-### Prepare yourself to get started {#prerequisites-to-configure-custom-domain-in-delivery-tier}
+#### Prepare yourself to get started {#prerequisites-to-configure-custom-domain-in-delivery-tier}
 
-Ensure you have the following before starting the configuration:
+Ensure that you fulfill the folowing requirements before starting the activation process:
+
 1. [Access to Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 1. [Already activated [!DNL Dynamic Media with OpenAPI] in your environment](#activate-dynamic-media-with-openapi).
 1. Enabled [!DNL Dynamic Media with OpenAPI] in ready state.
 1. EV or OV type certificate for the domain to be used for delivery tier. See [Introduction to SSL certificates](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates) for more details.
 
-### Configure custom domain in delivery tier using Cloud Manager {#configure-custom-domain-in-delivery-tier-using-cloud-manager}
+#### Configure custom domain in delivery tier using Cloud Manager {#configure-custom-domain-in-delivery-tier-using-cloud-manager}
 
-Execute the following steps in your Cloud Manager environment to configure a custom domain in your delivery tier: 
+Execute the following steps in Cloud Manager to configure a custom domain in the delivery tier: 
 
 1. [Add a customer managed SSL certificate](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate#add-customer-managed-ssl-cert).
 1. [Add a custom domain name](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name#adding-cdn-settings).
@@ -159,11 +160,11 @@ Execute the following steps in your Cloud Manager environment to configure a cus
 
 ![Configure CDN](/help/assets/assets/cdn-configurations-varified.png)
 
-## Onboard API keys {#onboarding-api-keys}
+### Onboard API keys {#onboarding-api-keys}
 
 Create an API key to access [!DNL Dynamic Media] with OpenAPIs and the delivery tier backed Asset Selector.
 
-### Prepare yourself for API keys onboarding process {#prerequisites-for-onboarding-api-keys} 
+#### Prepare yourself for API keys onboarding process {#prerequisites-for-onboarding-api-keys} 
 
 To start the API keys onboarding process, ensure you have:
 
@@ -171,24 +172,27 @@ To start the API keys onboarding process, ensure you have:
 1. [Activated [!DNL Dynamic Media with OpenAPI] in your environment](#activate-dynamic-media-with-openapi).
 1. [Access to the Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#create-adobe-developer-console-adc-project).
 
-### Onboard the API keys using [!DNL AEM Dynamic Media] API card {##onboarding-api-keys-using-aem-dynamic-media-api-card}
+#### Onboard the API keys using [!DNL AEM Dynamic Media] API card {#onboarding-api-keys-using-aem-dynamic-media-api-card}
 
-Use [Adobe Dev Console](https://developer.adobe.com/developer-console/) to onboard the API keys to:
+Use [Adobe Developer Console](https://developer.adobe.com/developer-console/) to onboard the API keys to:
 
 1. [Access Dynamic Media APIs](#access-dynamic-media-apis)
 1. [Access Delivery tier backed Asset Selector](#access-delivery-tier-backed-asset-selector)
 
-### Access [!DNL Dynamic Media] APIs {#access-dynamic-media-apis}
+#### Create an API key to cccess [!DNL Dynamic Media] with OpenAPIs {#access-dynamic-media-apis}
 
 Execute the following steps to create an API key to access [!DNL Dynamic Media] with OpenAPIs:
 
 1. Navigate to the **[!UICONTROL Admin Console]**. The Admin Console displays the **[!UICONTROL author]**, **[!UICONTROL delivery]** and **[!UICONTROL publish]** instances.
 ![instances on admin console](/help/assets/assets/delivery-instance-admin-console.png)
 1. Select the **[!UICONTROL delivery]** instance to display the product profile with **[!UICONTROL [!DNL AEM Dynamic Media] enable API Services]** enabled by default. The product profile looks like this: **[!UICONTROL AEM Assets DM OpenAPI Users - delivery  - Program [ID Number] - Environment [ID Number]]**. 
-![product profile on admin console](/help/assets/assets/admin-console-product-profile.png)
+
+   ![product profile on admin console](/help/assets/assets/admin-console-product-profile.png)
+
    >[!NOTE]
    >
    >This delivery instance is common for [!DNL Content Hub] and [!DNL Dynamic Media] with OpenAPI capabilities.
+
 1. Navigate to the [Adobe Developer console](https://developer.adobe.com/console) and [create a new project](https://developer.adobe.com/dep/guides/dev-console/create-project/). See [Invoke OpenAPI-based AEM APIs for server to server authentication](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) to learn about creating a new project.
 1. Select **[!UICONTROL AEM Dynamic Media API]** to access to the [!DNL Dynamic Media] with OpenAPI capabilities and click **[!UICONTROL Next]**.
 ![adobe developer console](/help/assets/assets/adobe-developer-console.png)
