@@ -164,6 +164,7 @@ To start the API keys onboarding process, ensure you have:
 ### Onboard the API keys using [!DNL AEM Dynamic Media] API card {##onboarding-api-keys-using-aem-dynamic-media-api-card}
 
 Use [Adobe Dev Console](https://developer.adobe.com/developer-console/) to onboard the API keys to:
+
 1. [Access Dynamic Media APIs](#access-dynamic-media-apis)
 1. [Access Delivery tier backed Asset Selector](#access-delivery-tier-backed-asset-selector)
 
