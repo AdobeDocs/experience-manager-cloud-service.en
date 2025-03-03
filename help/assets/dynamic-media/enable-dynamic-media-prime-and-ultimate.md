@@ -224,6 +224,7 @@ See [Search Assets API](https://experienceleague.adobe.com/en/docs/experience-ma
 
 TBD: Wiki in progress.
 -->
+
 ## Enable [!DNL Dynamic Media] Prime {#enable-dynamic-media-prime}
 
 Execute the following steps in your cloud service environment to enable [!DNL Dynamic Media] Prime:
