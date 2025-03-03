@@ -9,11 +9,9 @@ role: User, Admin
 | [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
 | ------------- | --------------------------- |---------|----|-----|
 
-
 Adobe Experience Manager as a Cloud Service enables you to access Dynamic Media Prime and Ultimate offerings to streamline your digital workflows and optimize content management. See this article to understand their benefits and the key differences between them.
 
 This article describes the end-to-end workflow to enable the Dynamic Media Prime and Ultimate offerings.
-
 
 ## Enable [!DNL Dynamic Media] Ultimate {#enable-dynamic-media-ultimate}
 
