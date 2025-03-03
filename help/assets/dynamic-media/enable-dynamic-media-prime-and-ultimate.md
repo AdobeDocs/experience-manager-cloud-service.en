@@ -21,8 +21,9 @@ Execute the following steps in your cloud service environment to enable [!DNL Dy
 1. [Configure [!DNL Dynamic Media] solutions](#configure-dynamic-media-solutions) 
 1. [Create and list [!DNL Dynamic Media] companies](#create-and-list-dynamic-media-companies)
 1. [Configure custom domain in delivery tier](#configure-custom-domain-in-delivery-tier) 
+<!--
 1. [Onboard API keys using the [!DNL AEM] [!DNL Dynamic Media] API card](#onboarding-api-keys)
-
+-->
 If you need to enable [!DNL Dynamic Media Prime], see quick links provided in [Enable [!DNL Dynamic Media Prime]](#enable-dynamic-media-prime).
 
 ### Activate [!DNL Dynamic Media with OpenAPI] {#activate-dynamic-media-with-openapi}
@@ -159,7 +160,7 @@ Execute the following steps in Cloud Manager to configure a custom domain in the
 1. Click **[!UICONTROL Ok]**, the **[!UICONTROL STATUS]** updates to **[!UICONTROL Verified]**. The custom domain is ready to use in the delivery URL. 
 
 ![Configure CDN](/help/assets/assets/cdn-configurations-varified.png)
-
+<!--
 ### Onboard API keys {#onboarding-api-keys}
 
 Create an API key to access [!DNL Dynamic Media] with OpenAPIs and the delivery tier backed Asset Selector.
@@ -222,11 +223,13 @@ See [Search Assets API](https://experienceleague.adobe.com/en/docs/experience-ma
 ### Access Delivery tier backed Asset Selector {#access-delivery-tier-backed-asset-selector}
 
 TBD: Wiki in progress.
-
+-->
 ## Enable [!DNL Dynamic Media] Prime {#enable-dynamic-media-prime}
 
 Execute the following steps in your cloud service environment to enable [!DNL Dynamic Media] Prime:
 
 1. [Activate Dynamic Media with OpenAPI](#activate-dynamic-media-with-openapi) 
 1. [Optional: Configure custom domain in delivery tier](#configure-custom-domain-in-delivery-tier) 
+<!--
 1. [Onboard API keys using the AEM Dynamic Media API card](#onboarding-api-keys)
+-->
