@@ -10,7 +10,7 @@ role: User, Admin
 | ------------- | --------------------------- |---------|----|-----|
 
 
-Adobe Experience Manager as a Cloud Service enables you to access Dynamic Media Prime and Ultimate offerings to streamline your digital workflows and optimize content management. See this article to understand thier benefits and the key differences between them.
+Adobe Experience Manager as a Cloud Service enables you to access Dynamic Media Prime and Ultimate offerings to streamline your digital workflows and optimize content management. See this article to understand their benefits and the key differences between them.
 
 This article describes the end-to-end workflow to enable the Dynamic Media Prime and Ultimate offerings.
 
@@ -35,7 +35,7 @@ The first step in the process of enabling Dynamic Media Ultimate is to activate 
 
 #### Prepare yourself to get started {#prerequisites}
 
-Ensure that you fulfill the folowing requirements before starting the activation process:
+Ensure that you fulfil the following requirements before starting the activation process:
 
 1. [Access to Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 1. [Your program includes [!DNL Dynamic Media] solutions](#configure-dynamic-media-solutions).
@@ -74,7 +74,7 @@ Alternatively, execute these steps to restart the activation process:
 
 ### Configure [!DNL Dynamic Media] solutions {#configure-dynamic-media-solutions}
 
-Configure [!UICONTROL Dynamic Media] solutions to use the basic and advanced capabilities of [Dynamic Media with OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) on existing or new enviroments available in Cloud Manager.
+Configure [!UICONTROL Dynamic Media] solutions to use the basic and advanced capabilities of [Dynamic Media with OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) on existing or new environments available in Cloud Manager.
 
 #### Prepare yourself to get started {#prerequisites-to-configure-dynamic-media-solutions}
 
@@ -136,7 +136,7 @@ While AEM as a Cloud Service comes with a default domain, you can customize it a
 
 #### Prepare yourself to get started {#prerequisites-to-configure-custom-domain-in-delivery-tier}
 
-Ensure that you fulfill the folowing requirements before starting the activation process:
+Ensure that you fulfil the following requirements before starting the activation process:
 
 1. [Access to Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 1. [Already activated [!DNL Dynamic Media with OpenAPI] in your environment](#activate-dynamic-media-with-openapi).
@@ -181,7 +181,7 @@ Use [Adobe Developer Console](https://developer.adobe.com/developer-console/) to
 1. [Access Dynamic Media APIs](#access-dynamic-media-apis)
 1. [Access Delivery tier backed Asset Selector](#access-delivery-tier-backed-asset-selector)
 
-#### Create an API key to cccess [!DNL Dynamic Media] with OpenAPIs {#access-dynamic-media-apis}
+#### Create an API key to access [!DNL Dynamic Media] with OpenAPIs {#access-dynamic-media-apis}
 
 Execute the following steps to create an API key to access [!DNL Dynamic Media] with OpenAPIs:
 
