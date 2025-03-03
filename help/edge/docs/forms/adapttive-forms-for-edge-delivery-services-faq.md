@@ -5,9 +5,8 @@ feature: Edge Delivery Services
 role: User, Developer
 hide: yes
 hidefromtoc: yes
+exl-id: b39601a1-7f37-4a7d-a4c8-7e79dca074e5
 ---
-
-
 # Frequently Asked Questions (FAQ)
 
 ## Multi-Language Support and Global Usage
@@ -49,4 +48,3 @@ hidefromtoc: yes
 - Forms Crosswalk Documentation
 - Standard AEM Sites documentation for translation workflows
 - Universal Editor documentation for form authoring
-

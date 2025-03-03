@@ -3,8 +3,6 @@ title: Universal Editor for Edge Delivery Services for Forms
 description: Use Universal Editor for Edge Delivery Services for Forms to create Adaptive Forms.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: yes
-hidefromtoc: yes
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
 ---
 
@@ -41,14 +39,14 @@ Here's the layout with equal-width cards (using fixed-width columns):
 | [**Styling**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **Pre-fill Services** (Coming Soon) | [**A/B Testing**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
 | Styling with CSS enables developers to customize the appearance of form elements and create a visually appealing design that aligns with the website aesthetics. | Pre-fill Services automatically populate form fields with relevant user data from various sources, reducing manual input and enhancing user experience. | A/B testing enables organizations to experiment with different form designs, layouts, and features to identify the best-performing variants. |
 
-| ![Analytics & Tracking](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![Task Management](/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg) | ![Data Binding](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
+| ![Analytics & Tracking](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![Form Fragments](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![Data Binding](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**Analytics & Tracking**](https://www.aem.live/developer/martech-integration) | **Task Management** (Coming Soon)| **Data Binding** (Coming Soon) |
-| Gain insights into user behavior, form interactions, and submission rates with built-in analytics and tracking to enable data-driven form optimization. | Integration with Adobe Workfront lets teams manage tasks for form creation and maintenance, ensuring streamlined workflows. | Data binding enables direct connections between form fields and backend data sources, supporting real-time updates and advanced data mapping. |
+| [**Analytics & Tracking**](https://www.aem.live/developer/martech-integration) | **Form Fragments** (Coming Soon)| **Data Binding** (Coming Soon) |
+| Gain insights into user behavior, form interactions, and submission rates with built-in analytics and tracking to enable data-driven form optimization. | Form Fragments enable reusability by allowing commonly used sections to be created once and reused across multiple forms, ensuring consistency and reducing maintenance effort.| Data binding enables direct connections between form fields and backend data sources, supporting real-time updates and advanced data mapping. |
 
 | ![CAPTCHA](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![Embedding Forms](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![Thank You Configuration](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**CAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **Embedding Forms** | [**Thank You Configuration**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
+| [**CAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **Embedding Forms** (Coming Soon)| [**Thank You Configuration**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
 | Use reCAPTCHA to protect forms from automated bots, ensuring secure and reliable data collection. | Embed forms directly into Edge Delivery Services Sites pages using the Universal Editor's built-in embed component. | Easily customize the acknowledgment message or page shown to users after successful form submission. |
 
 

@@ -41,7 +41,7 @@ For a graphical illustration of this, see the following examples:
 
 * **Extraction (Overwrite)**
 
-  ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
+  ![image](/help/journey-migration/content-transfer-tool/assets-ctt/example1-extraction.png)
 
 * **Ingestion (Wipe)**
 
@@ -55,7 +55,7 @@ For a graphical illustration of this, see the following examples:
 
 * **Extraction**
 
-  ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
+  ![image](/help/journey-migration/content-transfer-tool/assets-ctt/example2-extraction.png)
 
 * **Ingestion**
 
