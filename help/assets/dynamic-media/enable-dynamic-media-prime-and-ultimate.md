@@ -1,6 +1,6 @@
 ---
-title: Enable Dynamic Media Prime and Ultimate
-description: Learn how to enable Dynamic Media Prime and Ultimate offerings.
+title: Enable [!DNL Dynamic Media] Prime and Ultimate
+description: Learn how to enable [!DNL Dynamic Media] Prime and Ultimate offerings.
 feature: Asset Management
 role: User, Admin
 ---
@@ -9,9 +9,9 @@ role: User, Admin
 | [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
 | ------------- | --------------------------- |---------|----|-----|
 
-Adobe Experience Manager as a Cloud Service enables you to access Dynamic Media Prime and Ultimate offerings to streamline your digital workflows and optimize content management. See this article to understand their benefits and the key differences between them.
+[!DNL Adobe Experience Manager] as a Cloud Service enables you to access [!DNL Dynamic Media] Prime and Ultimate offerings to streamline your digital workflows and optimize content management. See [Dynamic Media Prime and Ultimate](link to overview article) to understand their benefits and the key differences between them.
 
-This article describes the end-to-end workflow to enable the Dynamic Media Prime and Ultimate offerings.
+This article describes the end-to-end workflow to enable the [!DNL Dynamic Media] Prime and Ultimate offerings.
 
 ## Enable [!DNL Dynamic Media] Ultimate {#enable-dynamic-media-ultimate}
 
@@ -21,15 +21,15 @@ Execute the following steps in your cloud service environment to enable [!DNL Dy
 1. [Configure [!DNL Dynamic Media] solutions](#configure-dynamic-media-solutions) 
 1. [Create and list [!DNL Dynamic Media] companies](#create-and-list-dynamic-media-companies)
 1. [Configure custom domain in delivery tier](#configure-custom-domain-in-delivery-tier) 
-1. [Onboard API keys using the [!DNL AEM] [!DNL Dynamic Media] API card](#onboard-api-keys)
+1. [Onboard API keys using the [!DNL AEM] [!DNL Dynamic Media] API card](#onboarding-api-keys)
 
 If you need to enable [!DNL Dynamic Media Prime], see quick links provided in [Enable [!DNL Dynamic Media Prime]](#enable-dynamic-media-prime).
 
 ### Activate [!DNL Dynamic Media with OpenAPI] {#activate-dynamic-media-with-openapi}
 
-Dynamic Media with OpenAPI capabilities puts DAM at the core of an agile and efficient content supply chain ecosystem to ensure asset governance and delivery.
+[!DNL Dynamic Media] with OpenAPI capabilities puts DAM at the core of an agile and efficient content supply chain ecosystem to ensure asset governance and delivery.
 
-The first step in the process of enabling Dynamic Media Ultimate is to activate [Dynamic Media with OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) for your Cloud Service environment.
+The first step in the process of enabling [!DNL Dynamic Media] Ultimate is to activate [[!DNL Dynamic Media] with OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) for your Cloud Service environment.
 
 #### Prepare yourself to get started {#prerequisites}
 
@@ -37,7 +37,7 @@ Ensure that you fulfil the following requirements before starting the activation
 
 1. [Access to Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 1. [Your program includes [!DNL Dynamic Media] solutions](#configure-dynamic-media-solutions).
-1. Your organization has Dynamic Media with OpenAPI credits. 
+1. Your organization has [!DNL Dynamic Media] with OpenAPI credits. 
 
 #### Enable [!DNL Dynamic Media with OpenAPI] capabilities in your Cloud Service environment {#enable-dynamic-media-with-openapi-capabilites-in-your-CS-environment}
 
@@ -90,7 +90,7 @@ Execute the following steps:
 1. Select **[!UICONTROL Dynamic Media]** solution and click **[!UICONTROL Continue]** to add **[!UICONTROL Dynamic Media]** solution to your program. This action restarts all existing environments in your program and adds the [!DNL Dynamic Media] solution to them. Also, any new environment that you create under your program automatically gets [!DNL Dynamic Media].
 
 ![set up for production](/help/assets/assets/set-up-for-prod.png){width="500" align="center"}
-See [Activate [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi) to start using the capabilities of [!DNL Dynamic Media] with OpenAPI capabilities on your environment.
+See [Activate [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi) to start using the capabilities of [!DNL Dynamic Media] with OpenAPI capabilities in your environment.
 
 ### Create and list [!DNL Dynamic Media] companies {#create-and-list-dynamic-media-companies}
 
@@ -103,7 +103,7 @@ To see the existing companies (accounts) or add a new [!DNL Dynamic Media] compa
 1. [Access to Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 1. [!DNL Dynamic Media with OpenAPI] credits in your organization.
 
-#### Create and list Dynamic Media companies in your IMS organization {#create-and-list-dynamic-media-companies-in-your-ims-organisation}
+#### Create and list [!DNL Dynamic Media] companies in your IMS organization {#create-and-list-dynamic-media-companies-in-your-ims-organisation}
 
 Execute these steps to create and list a new [!DNL Dynamic Media] company (account) that can be configured within your [!DNL AEM] environment:
 
@@ -113,10 +113,10 @@ Execute these steps to create and list a new [!DNL Dynamic Media] company (accou
  ![Create Dynamic Media company](/help/assets/assets/create-dynamic-media-company.png){width="500" align="center"}
 1. Click **[!UICONTROL Create]** to start creating your company. This action adds a new row to **[!UICONTROL [!DNL Dynamic Media] companies]** section and displays **[!UICONTROL Setting up]** as the company's **[!UICONTROL STATUS]**.
 ![initiated Dynamic Media company creation](/help/assets/assets/dm-company-creation-initiated.png)
-1. **Optional:** Click ![info icon](/help/assets/assets/info-icon-solid-black%202.svg) to see the company's details. The **[!UICONTROL STATUS]** updates to **[!UICONTROL Ready]**, when the company is created. 
+1. **Optional:** Click ![info icon](/help/assets/assets/info-icon-solid-black.svg) to see the company's details. The **[!UICONTROL STATUS]** updates to **[!UICONTROL Ready]**, when the company is created. 
 
    ![Dynamic Media company information](/help/assets/assets/dm-company-information.png)
-1. [Dynamic Media Administrators] Check your mailbox for a welcome email that includes a list of steps to [configure [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#architecture-diagram-of-dynamic-media) company in your [!DNL AEM] Cloud Service environment to get started.
+1. As a Dynamic Media Administrator check your mailbox for a welcome email that includes a list of steps to [configure [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#architecture-diagram-of-dynamic-media) company in your [!DNL AEM] Cloud Service environment to get started.
 ![welcome email](/help/assets/assets/welcome-email.png)
 
 #### Retry company creation {#retry-company-creation}
@@ -174,7 +174,7 @@ To start the API keys onboarding process, ensure you have:
 
 #### Onboard the API keys using [!DNL AEM Dynamic Media] API card {#onboarding-api-keys-using-aem-dynamic-media-api-card}
 
-Use [Adobe Developer Console](https://developer.adobe.com/developer-console/) to onboard the API keys to:
+Use the [Adobe Developer Console](https://developer.adobe.com/developer-console/) to onboard the API keys to:
 
 1. [Access Dynamic Media APIs](#access-dynamic-media-apis)
 1. [Access Delivery tier backed Asset Selector](#access-delivery-tier-backed-asset-selector)
@@ -185,7 +185,7 @@ Execute the following steps to create an API key to access [!DNL Dynamic Media] 
 
 1. Navigate to the **[!UICONTROL Admin Console]**. The Admin Console displays the **[!UICONTROL author]**, **[!UICONTROL delivery]** and **[!UICONTROL publish]** instances.
 ![instances on admin console](/help/assets/assets/delivery-instance-admin-console.png)
-1. Select the **[!UICONTROL delivery]** instance to display the product profile with **[!UICONTROL [!DNL AEM Dynamic Media] enable API Services]** enabled by default. The product profile looks like this: **[!UICONTROL AEM Assets DM OpenAPI Users - delivery  - Program [ID Number] - Environment [ID Number]]**. 
+1. Select the **[!UICONTROL delivery]** instance to display the product profile with **[!UICONTROL AEM Dynamic Media enable API Services]** enabled by default. The product profile looks like this: **[!UICONTROL AEM Assets DM OpenAPI Users - delivery  - Program [ID Number] - Environment [ID Number]]**. 
 
    ![product profile on admin console](/help/assets/assets/admin-console-product-profile.png)
 
@@ -194,7 +194,7 @@ Execute the following steps to create an API key to access [!DNL Dynamic Media] 
    >This delivery instance is common for [!DNL Content Hub] and [!DNL Dynamic Media] with OpenAPI capabilities.
 
 1. Navigate to the [Adobe Developer console](https://developer.adobe.com/console) and [create a new project](https://developer.adobe.com/dep/guides/dev-console/create-project/). See [Invoke OpenAPI-based AEM APIs for server to server authentication](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) to learn about creating a new project.
-1. Select **[!UICONTROL AEM Dynamic Media API]** to access to the [!DNL Dynamic Media] with OpenAPI capabilities and click **[!UICONTROL Next]**.
+1. Select **[!UICONTROL AEM Dynamic Media API]** to access to the [!DNL Dynamic Media with OpenAPI capabilities] and click **[!UICONTROL Next]**.
 ![adobe developer console](/help/assets/assets/adobe-developer-console.png)
 1. Select **[!UICONTROL Server-to-Server Authentication]** and click **[!UICONTROL Next]**. See [Server to Server authentication](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/) to learn more about this authentication type.
 ![server-to-server-authentication](/help/assets/assets/server-to-server-authentication.png)
