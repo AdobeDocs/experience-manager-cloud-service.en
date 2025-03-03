@@ -1,5 +1,5 @@
 ---
-title: Adobe Experience Manager Launchpad (Early Adopter)
+title: About AEM Launchpad &ndash; Early Adopter
 description: Learn about the Adobe Experience Manager Launchpad page.
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -8,7 +8,7 @@ hide: yes
 hidefromtoc: yes
 exl-id: 1bfa47e1-fb2f-4b68-ac69-4618a9e4a5f4
 ---
-# About Adobe Experience Manager Launchpad {#aem-launchpad}
+# About AEM Launchpad &ndash; Early Adopter {#aem-launchpad}
 
 AEM Launchpad introduces a centralized starting point for managing content, assets, and sites within Adobe Experience Manager. Designed to deliver a personalized experience, AEM Launchpad lets you navigate the AEM ecosystem seamlessly according to your roles and goals. Acting as a guide, it provides key insights and recommended actions to help you achieve your objectives efficiently. With a clear, persona-driven layout, AEM Launchpad ensures quick access to essential tools, supporting a streamlined and effective experience across all AEM features.
 
