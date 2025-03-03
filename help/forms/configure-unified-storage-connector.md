@@ -67,5 +67,5 @@ The following are the guidelines when you are using AEM Workflows and storing da
 >
 >* [Configure data sources for AEM Forms](/help/forms/configure-data-sources.md)
 >* [Configure Azure storage for AEM Forms](/help/forms/configure-azure-storage.md)
->* [Integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
+>* [Integrate Microsoft Dynamics 365](/help/forms/configure-msdynamics.md)
 >  [Add Forms Portal to an AEM Sites page](/help/forms/configure-forms-portal.md)

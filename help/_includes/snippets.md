@@ -36,7 +36,8 @@
 ## Adaptive Form Submit Actions {#af-submit-action}
 
 * [Send email](/help/forms/configure-submit-action-send-email.md)
-* [Submit to SharePoint](/help/forms/configure-submit-action-sharepoint.md)
+* [Submit to SharePoint Document Library](/help/forms/connect-forms-to-sharepoint-document-library.md)
+* [Submit to SharePoint List](/help/forms/connect-forms-to-sharepoint-list.md)
 * [Submit using Form Data Model](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
 * [Submit to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [Submit to REST endpoint](/help/forms/configure-submit-action-restpoint.md)
@@ -45,9 +46,19 @@
 * [Submit to Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Submit to Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Connect Adaptive Form to Salesforce application](/help/forms/aem-forms-salesforce-integration.md)
-* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+* [Connect an Adaptive Form to Microsoft&reg; Dynamics](/help/forms/configure-msdynamics.md)
 * [Connect an Adaptive Form to Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 * [Create custom submit action](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
+
+## Universal Editor{#universal-editor-see-also}
+
+* [Create Your First Form Using Universal Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [Add Dynamic Behavior to Forms](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [Configure and Customize Form Submit Actions](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [Publish and Deploy Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [Design Beautiful Forms: Styling and Theming Guide](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [Build Custom Form Components](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [Protect Your Forms from Spam: Adding reCAPTCHA Security](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
 ## See also {#see-more-forms-eds}
 
