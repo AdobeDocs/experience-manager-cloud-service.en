@@ -18,11 +18,25 @@ The 2025.3.0 feature activation will provide the full feature set for this maint
 
 ### Enhancements {#enhancements-19756}
 
-None.
+* ASSETS-46491 - OSGI event handler for asset processing status change.
+* ASSETS-45613 - Send unpublish events when assets are deleted or moved.
+* ASSETS-45131 - Custom tag property support in Content Hub.
 
 ### Fixed Issues {#fixed-issues-19756}
 
-None.
+* ASSETS-20433 - Dynamic Media ingestion issues with password-protected PDFs.
+* ASSETS-24675 - Image processing options not shown for swatch-only image profile.
+* ASSETS-41257 - Asset version comparison renders asset with incorrect aspect ratio. Asset versions shown in incorrect order in timeline.
+* ASSETS-44894 - Assets view bookmarks might not be clickable.
+* ASSETS-45015 - Smart crop width and hight set as zero if smart crop asset handle not found.
+* ASSETS-45192 - Reduce pulse request frequency.
+* ASSETS-45724 - Ensure DM upload is retried if upload job is not assigned .
+* ASSETS-46425 - Adobe Stock integration search issues.
+* ASSETS-27400 - Folder preview generator might attempt to open original.
+* CQ-4358722 - handle different locale codes in Java 11 and Java 17.
+* SITES-29369 - Page Published/Unpublished Events triggered on Asset activation / deactivation.
+* SITES-24074 - Fix keyboard accessibility under unified shell.
+* SITES-28058 - Assets folder title not carried over to live copy.
 
 ### Known Issues {#known-issues-19756}
 
