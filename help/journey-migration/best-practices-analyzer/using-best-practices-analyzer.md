@@ -76,6 +76,7 @@ Follow this section to learn how to view the Best Practices Analyzer report:
 >[!NOTE]
 > Starting from BPA version 2.1.54, a new feature has been introduced to obtain the Lighthouse Score.
 
+
 1. After clicking **Generate Report**, a pop-up will appear requesting the AEM Public Site URL for the Lighthouse Score. The user need to enter a valid URL in the provided field.
 
     ![image](/help/journey-migration/best-practices-analyzer/assets/bpa_popup_url.png)
