@@ -35,7 +35,7 @@ To download an asset and its renditions, execute the following steps:
    >[!NOTE]
    >
    >* The renditions display only if their visibility is enabled using the [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) User Interface.
-   >* You can download both [static and dynamic renditions](#types-of-renditions) while downloading an asset.
+   >* You can download all [static, dynamic, and smart crop renditions](#types-of-renditions) while downloading an asset.
 
 1. Select one or more renditions and click **[!UICONTROL Download]**.
 
@@ -57,7 +57,7 @@ To download multiple assets and their renditions, execute the following steps:
 
     * **Download [!UICONTROL Originals]**: Select this option to download the selected assets in the original form.
     * **Download [!UICONTROL Static Renditions only]**: Select this option to download all available static renditions of assets except the original assets.
-    * **Download [!UICONTROL Originals & Static Renditions]**: Select this option to download both original and renditions of the selected assets. 
+    * **Download [!UICONTROL Originals & Static Renditions]**: Select this option to download both original and static renditions of the selected assets. 
 
       ![Download multiple renditions](/help/assets/assets/download-multiple-renditions.png)
 
