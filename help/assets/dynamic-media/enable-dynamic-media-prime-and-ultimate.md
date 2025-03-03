@@ -135,7 +135,7 @@ While AEM as a Cloud Service comes with a default domain, you can customize it a
 
 #### Prepare yourself to get started {#prerequisites-to-configure-custom-domain-in-delivery-tier}
 
-Ensure that you fulfil the following requirements before starting the activation process:
+Ensure that you fulfil the following requirements before starting the configuration process:
 
 1. [Access to Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 1. [Already activated [!DNL Dynamic Media with OpenAPI] in your environment](#activate-dynamic-media-with-openapi).
