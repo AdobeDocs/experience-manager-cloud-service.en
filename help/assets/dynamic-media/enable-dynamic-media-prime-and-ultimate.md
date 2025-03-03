@@ -116,7 +116,7 @@ Execute these steps to create and list a new [!DNL Dynamic Media] company (accou
 1. **Optional:** Click ![info icon](/help/assets/assets/info-icon-solid-black.svg) to see the company's details. The **[!UICONTROL STATUS]** updates to **[!UICONTROL Ready]**, when the company is created. 
 
    ![Dynamic Media company information](/help/assets/assets/dm-company-information.png)
-1. As a Dynamic Media Administrator check your mailbox for a welcome email that includes a list of steps to [configure [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#architecture-diagram-of-dynamic-media) company in your [!DNL AEM] Cloud Service environment to get started.
+1. As a Dynamic Media Administrator, check your mailbox for a welcome email that includes a list of steps to [configure [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#architecture-diagram-of-dynamic-media) company in your [!DNL AEM] Cloud Service environment to get started.
 ![welcome email](/help/assets/assets/welcome-email.png)
 
 #### Retry company creation {#retry-company-creation}
