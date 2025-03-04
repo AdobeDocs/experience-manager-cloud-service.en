@@ -18,7 +18,7 @@ Dynamic Media Prime is an activation service for Experience Manager Assets, whic
 
 If you need Dynamic Media basic as well as advanced capabilities and access to Dynamic Media solution in AEM as a Cloud Service, see [Dynamic Media Ultimate](#dynamic-media-ultimate).
 
-Some of the other key benefits of Dynamic Media Prime include:
+Some of the other key benefits of Dynamic Media Prime include
 
 * Centralized management of digital assets
 
