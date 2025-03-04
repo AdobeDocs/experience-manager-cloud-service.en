@@ -1,14 +1,12 @@
 ---
-title: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Current release notes for [!DNL Adobe Experience Manager] as a Cloud Service.
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: Release Notes for 2025.1.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Release Notes for 2025.1.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
 ---
-# Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# 2025.1.0 Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-The following section outlines the feature release notes for the current (latest) version of [!DNL Experience Manager] as a Cloud Service.
+The following section outlines the feature release notes for the 2025.1.0 version of [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -22,7 +20,7 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2025.2.0) is March 4, 2025. The next feature release (2025.3.0) is planned for March 27, 2025.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2025.1.0) is January 30, 2025. The next feature release (2025.2.0) is planned for March 4, 2025.
 
 ## Maintenance Release Notes {#maintenance}
 
@@ -32,7 +30,7 @@ You can find the latest maintenance release notes [here](/help/release-notes/mai
 
 ## Release Video {#release-video}
 
-Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
+Have a look at the January 2025 Release Overview video for a summary of the features added in the 2025.1.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
@@ -40,60 +38,72 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
+**Content Fragment Editor Commenting now generally available**
 
-### New features in AEM Sites {#new-features-sites}
+Easily collaborate with coworkers when authoring AEM Content Fragments by using the new and modernized commenting service in the AEM Content Fragment Editor. 
+[Read more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring?#commenting-on-your-fragment).
 
-** Content Fragment Auto-Tagging ** 
+**Content Fragment Editor and Admin User Interfaces, updated AEM as a Cloud Service version support**
 
-When creating Content Fragments, it is now possible to automatically inherit tags that were assigned to the content model. This allows for powerful automatic classification of content stored in Content Fragments.
+Minimum supported AEM as a Cloud Service version for new Content Fragment Admin and Editor user interfaces is now 2023.8.13099. Earlier versions from before the general availability release of the new user interfaces are not supported anymore 
 
-** Content Fragment UUID Support ** 
+### Early Adopter Program {#sites-early-adopter}
 
-Content Fragment UUID support is now GA. The new capability does not alter the path-based behavior of operations within AEM, such as move, rename, rollout, where paths are automatically being adjusted, but it can make external consumption of Content Fragments easier and more stable, especially when using GraphQL queries that directly target individual fragments with ByPath queries. Such queries can break if a fragment path changes. When using the new ById query type, the query now remains stable as the UUID of a fragment does not change in cases where paths do.
+**Enhanced Content Fragments** 
 
-** Dynamic Media with OpenAPI support in Content Fragment Editor and GraphQL ** 
+Enhanced [Content Fragment referencing with unique ID-based references](/help/headless/graphql-api/uuid-reference-upgrade.md), helping to ensure GraphQL queries for individual content fragments can remain stable even if the fragment was moved to another location. This is now possible with "ByID" queries. While paths can change, potentially breaking "ByPath" queries, UUIDs are stable. The new IDs can also be returned as properties in any query or other applicable API request. Current limitation (2025.1): Page references are not yet supported with unique IDs. If pages are referenced in Content Fragments, this capability should not be used. The limitation is planned to be removed in the next AEM as a Cloud Service release. 
 
-Assets that are stored in different AEM as a Cloud Service Programs than Content Fragments, and that are enabled with the new Dynamic Media with OpenAPI capability, can now be used in Content Fragments. The image selector in the new Content Fragment Editor does now allow selecting "remote" repositories as the source for image assets to be referenced in the fragment. And on delivery of such content fragments using AEM GraphQL, the JSON response now includes required properties for remote assets (assetId, repositoryId) so client applications can create respective Dynamic Media with OpenAPI URLs to fetch the image.
+**AEM REST OpenAPI for Content Fragment Delivery**
 
-** Translation HTTP API ** 
+The [AEM REST OpenAPI for Content Fragment Delivery](/help/headless/aem-rest-openapi-content-fragment-delivery.md) is available now for AEM as a Cloud Service.
 
-The AEM Translation HTTP REST API that has been in early adopter mode for a while is now GA. Documentation can be found [here](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/). The API allows automating required steps in the translation management process for content in AEM.
+### Deprecated Features {#sites-deprecated}
 
+#### SPA Editor {#spa-editor}
+
+[The SPA Editor](/help/implementing/developing/hybrid/introduction.md) has been deprecated for new projects starting with release 2025.1.0. The SPA Editor remains supported for existing projects, but should not be used for new projects.
+
+The preferred editors for managing headless content in AEM are now:
+
+* [The Universal Editor](/help/edge/wysiwyg-authoring/authoring.md) for visual editing.
+* [The Content Fragment Editor](/help/assets/content-fragments/content-fragments-managing.md) for form-based editing.
+
+#### PWA Features {#pwa-features}
+
+[The progressive web app (PWA) features](/help/sites-cloud/authoring/sites-console/enable-pwa.md) for AEM Sites are now deprecated for new projects starting with release 2025.1.0. This feature remains supported for existing projects, but should not be used for new projects
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New features in AEM Assets {#new-features-assets}
-
-**Dynamic Media new packaging structure**
-
-A refreshed Dynamic Media packaging structure is now available to better align with market expectations and support tracking. The new packaging structure comprises:
-
-* Dynamic Media Prime, which includes Dynamic Media with OpenAPIs and video to enhance delivery.
-
-* Dynamic Media Ultimate adds delivery and transformation features to meet heavier usage requirements.
-
-You must have Assets as a Cloud Service Prime or Ultimate to benefit from the new packaging structure.
-
-**AI-generated video captions** 
-
-AI-generated video captions in Adobe Dynamic Media use artificial intelligence to generate captions automatically for video content. This feature is designed to improve accessibility and enhance the user experience by providing accurate captions. Captions are generated from the original audio, any additional audio tracks, or extra captions are provided in the "Captions and Audio" tab on the video properties page. With support for more than 60 languages, captions can be reviewed and previewed before publishing the video.
+### New features in AEM Assets view {#new-features-assets}
 
 **Customize search filters**
 
 Custom Search filters enhance the precision and efficiency of finding relevant information. It allows for more tailored searches, filtering data according to specific attributes such as brand, product, category, or other key identifiers. This improves organization, reduces time spent sifting through irrelevant results, and enables quicker decision-making. It also supports scalability, as large datasets become easier to navigate and analyze.
 
-![customize search filters](/help/assets/assets/custom-search-filters.png)
+![custom search filters](/help/assets/assets/custom-search-filters.png)
 
+### New features in Content Hub {#new-features-content-hub}
 
-### Early Access features in Content Hub {#early-access-content-hub}
+Description
 
-Content Hub now allows you to view and download Dynamic and Smart Crop renditions in addition to the existing static renditions. As a Content Hub administrator, you can also configure the availability of these renditions to users using the Configuration User Interface.
+### Early Access features in AEM Assets {#early-access-features-assets}
 
-![dynamic renditions](/help/assets/assets/download-single-asset-renditions-dynamic.png)
+**AI-generated video captions** 
 
-
+AI-generated video captions in Adobe Dynamic Media use artificial intelligence to generate captions automatically for video content. This feature is designed to improve accessibility and enhance the user experience by providing accurate, real-time captions. Captions are generated from the original audio, any additional audio tracks, or extra captions provided in the "Captions and Audio" tab on the video properties page. With support for more than 60 languages, captions can be reviewed and previewed before publishing the video.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+
+### New features in AEM Forms {#forms-new-features}
+
+* **Manage Publication**: You can use the [Manage Publication](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option))workflow to publish or unpublish forms across environments, typically from the author instance to the publish and preview instances. It allows users to publish, unpublish, or schedule the publication of content in a streamlined manner.
+
+* **[Auto-save a draft for Core Components based Adaptive Forms](/help/forms/save-core-component-based-form-as-draft.md)**: Users can now benefit from an auto-save feature that saves a partially completed form as a draft automatically. They can return later to finish filling it out on the same or other device. This feature improves conversion rates for organizations by reducing form abandonment, as users do not need to start over form filling from the beginning.
+
+* **[Rule editor enhancements](/help/forms/invoke-service-enhancements-rule-editor.md)**: For Adaptive Forms based on Core Components, you can use the output of Invoke Service to populate drop-down options and set repeatable or individual panels. Additionally, this output can be used to validate other fields. 
+
+* **[Enhance User Experience with Navigation Buttons in Panel Layouts](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button)**: You can now add navigation buttons to your panel layouts, such as Horizontal Tabs, Vertical Tabs, Accordions, or Wizard. These buttons enhance the user experience by simplifying transitions between panels, focusing on the selected panel.
+
  
 ### Early Access features in AEM Forms {#forms-new-early-access-features}
 
@@ -101,16 +111,15 @@ The AEM Forms Early Access Program program offers a unique opportunity to you to
 
 This release notes lists the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
 
-#### HTML Email Templates in Adaptive Forms
+#### [HTML email Templates in Adaptive Forms](/help/forms/html-email-templates-in-adaptive-forms.md)
 
-Adaptive Forms allows you to use [HTML email templates](/help/forms/html-email-templates-in-adaptive-forms.md). HTML email templates enable you to send rich, personalized, and visually appealing emails when a form is submitted. These emails can be customized with form data and enhanced using various email tags, such as images and links. With Adaptive Forms, you can either upload a file containing an HTML template or use a plain-text editor to create these templates.
+Adaptive Forms allows you use HTML email templates. HTML email templates enable you to send rich, personalized, and visually appealing emails when a form is submitted. These emails can be customized with form data and enhanced using various email tags, such as images and links. With Adaptive Forms, you can either upload a file containing an HTML template or use a plain-text editor to create these templates.
 
 ![HTML email templates](/help/forms/assets/html-email.png)
 
 #### Enhanced Cloud Storage Support: Direct PDF Upload to Azure Blob Storage
 
-AEM Forms Document Generation APIs now allows you to [directly upload generated PDF documents](/help/forms/early-access-ea-features.md#doc-generation-api) to Azure Blob Storage. This enhancement streamlines storage and retrieval, improving efficiency and integration with cloud workflows.
-
+AEM Forms Document Generation APIs now support direct upload of generated PDF documents to Azure Blob Storage. This enhancement streamlines storage and retrieval, improving efficiency and integration with cloud workflows.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
