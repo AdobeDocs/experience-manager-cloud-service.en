@@ -122,7 +122,7 @@ Learn more about [view and manage renditions in Experience Manager Assets](/help
   
 >[!NOTE]
 > 
-> * To get early access to the Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+> * Dynamic and Smart Crop renditions feature is in Early Adopter phase. To get access to the capability, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 > * Newly onboarded customers on [Dynamic Media Open API services](/help/assets/dynamic-media-open-apis-overview.md) must revise their existing image presets for approval.
 
 
