@@ -9,7 +9,7 @@ role: User, Admin
 | [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
 | ------------- | --------------------------- |---------|----|-----|
 
-[!DNL Adobe Experience Manager] as a Cloud Service enables you to access [!DNL Dynamic Media] Prime and Ultimate offerings to streamline your digital workflows and optimize content management. See [Dynamic Media Prime and Ultimate](link to overview article) to understand their benefits and the key differences between them.
+[!DNL Adobe Experience Manager] as a Cloud Service enables you to access [!DNL Dynamic Media] Prime and Ultimate offerings to streamline your digital workflows and optimize content management. See [Dynamic Media Prime and Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md) to understand their benefits and the key differences between them.
 
 This article describes the end-to-end workflow to enable the [!DNL Dynamic Media] Prime and Ultimate offerings.
 
