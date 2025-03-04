@@ -85,7 +85,11 @@ Custom Search filters enhance the precision and efficiency of finding relevant i
 ![customize search filters](/help/assets/assets/custom-search-filters.png)
 
 
-### Early Access features in AEM Assets {#early-access-features-assets}
+### Early Access features in Content Hub {#early-access-content-hub}
+
+Content Hub now allows you to view and download Dynamic and Smart Crop renditions in addition to the existing static renditions. As a Content Hub administrator, you can also configure the availability of these renditions to users using the Configuration User Interface.
+
+![dynamic renditions](/help/assets/assets/download-single-asset-renditions-dynamic.png)
 
 
 
