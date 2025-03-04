@@ -644,6 +644,7 @@ user-guide-title: AEM as a Cloud Service
     + [Upload and add assets](/help/assets/add-delete-assets-view.md)
     + [Bulk import assets](/help/assets/bulk-import-assets-view.md)
     + [Search and discover assets](/help/assets/search-assets-view.md)
+    + [Custom search filters](/help/assets/custom-search-filters.md)
     + [Asset management tasks](/help/assets/manage-organize-assets-view.md)
     + [Edit images](/help/assets/edit-images-assets-view.md)
     + [Edit videos](/help/assets/edit-videos-assets-view.md)
