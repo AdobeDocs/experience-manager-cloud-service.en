@@ -223,19 +223,17 @@ If the visibility of expired assets is enabled, Content Hub also highlights asse
 
 Renditions are customized versions of digital assets, such as images, documents, and so on designed for different devices and platforms to ensure optimal performance. See more about [renditions in Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
-Content Hub allows downloading static renditions. Static renditions are different representations of an asset's original file that are generated natively. Examples include thumbnails or mobile optimized renditions. Administrators can manage and control the availability of asset renditions; and manage whether you can download original assets or not.
-
 To do so, execute the following steps:
 
 On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Renditions]**. The following options are available:
 
-* Enable  the [!UICONTROL Enable availability of static renditions] toggle to make all static renditions visible on Content Hub.
+* Enable  the [!UICONTROL Enable availability of renditions] toggle to make all renditions visible on Content Hub.
 
 * Enable or disable **[!UICONTROL Allow users to download original assets]** toggle to control the availability to download original assets.
 
    ![Configure renditions on Content Hub](assets/config-renditions.png)
 
-For information on how to view and download static renditions in Content Hub, see [download assets in Content Hub](/help/assets/download-assets-content-hub.md).
+For information on how to view and download renditions in Content Hub, see [download assets in Content Hub](/help/assets/download-assets-content-hub.md).
 
 ### Custom Links {#configure-custom-links-content-hub}
 

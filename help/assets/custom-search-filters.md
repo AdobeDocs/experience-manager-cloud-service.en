@@ -2,6 +2,7 @@
 title: Custom search filters
 description: Learn about customizing search filters form
 role: User, Leader, Developer
+exl-id: 383e8165-439e-447b-a19d-d5446238a13f
 ---
 # Customize search filters {#customize-search-filters}
 
@@ -369,7 +370,7 @@ Each filter element is associated with a set of properties. Following properties
         <ul>
         <li>Click <b>add</b> to add a new value. 
         <li>Click <span>&#9998;</span> to edit the label. 
-        <li>Click  <img src=assets/do-not-localize/delete.svg> to delete the option value. 
+        <li>Click  <img src=assets/do-not-localize/delete-icon.png> to delete the option value. 
         <li>Click <b>Edit</b> to modify the edit options. 
         <li>You can also change the sequence of options by holding them.
         </td>
