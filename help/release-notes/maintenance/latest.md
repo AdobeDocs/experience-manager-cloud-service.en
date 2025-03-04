@@ -10,19 +10,19 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 19756 {#19756}
+## Release 19823 {#19823}
 
-Summarized below are the continuous improvements for maintenance release 19756, which was publicly released on March 4, 2025. The previous maintenance release was release 19687.
+Summarized below are the continuous improvements for maintenance release 19823, which was publicly released on March 4, 2025. The previous maintenance release was release 19687.
 
 The 2025.3.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-19756}
+### Enhancements {#enhancements-19823}
 
 * ASSETS-46491: OSGI event handler for asset processing status change.
 * ASSETS-45613: Send unpublish events when assets are deleted or moved.
 * ASSETS-45131: Custom tag property support in Content Hub.
 
-### Fixed Issues {#fixed-issues-19756}
+### Fixed Issues {#fixed-issues-19823}
 
 * ASSETS-20433: Dynamic Media ingestion issues with password-protected PDFs.
 * ASSETS-24675: Image processing options not shown for swatch-only image profile.
@@ -38,19 +38,19 @@ The 2025.3.0 feature activation will provide the full feature set for this maint
 * SITES-24074: Fix keyboard accessibility under unified shell.
 * SITES-28058: Assets folder title not carried over to live copy.
 
-### Known Issues {#known-issues-19756}
+### Known Issues {#known-issues-19823}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-19756}
+### Deprecated Features and APIs {#deprecated-19823}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-19756}
+### Security Fixes {#security-19823}
 
 AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 6 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-19756}
+### Embedded Technologies {#embedded-tech-19823}
 
 |Technology|Version|Link|
 |---|---|---|
