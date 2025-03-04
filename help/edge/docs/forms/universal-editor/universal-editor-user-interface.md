@@ -3,13 +3,11 @@ title: Understanding Universal Editor - Developer Tutorial
 description: This tutorial helps you get up and running with the Universal Editor interface. It guides you in understanding the user interface to create your own Edge Delivery Services forms in Universal Editor.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: yes
-hidefromtoc: yes
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
 ---
 # Exploring the Universal Editor (WYSIWYG) Interface
 
-The [Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) offers a simple, visual, and intuitive What You See Is What You Get (WYSIWYG) interface for Adobe Edge Delivery Services (EDS) Forms. It provides a modern interface with drag-and-drop functionality for efficient form authoring. 
+The [Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) offers a simple, visual, and intuitive What You See Is What You Get (WYSIWYG) interface for Adobe Edge Delivery Services Forms. It provides a modern interface with drag-and-drop functionality for efficient form authoring. 
 
 ![Universal Editor User Interface](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 
