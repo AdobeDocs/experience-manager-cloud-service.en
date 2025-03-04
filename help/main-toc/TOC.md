@@ -577,6 +577,8 @@ user-guide-title: AEM as a Cloud Service
     + [Set up Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
     + [Work with Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
     + [Configure Dynamic Media](/help/assets/dynamic-media/config-dm.md)
+    + [Dynamic Media Prime and Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)
+    + [Enable Dynamic Media Prime and Ultimate](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md)
     + [Optional - Configure Dynamic Media, General Settings](/help/assets/dynamic-media/dm-general-settings.md)
     + [Optional - Configure Dynamic Media, Publish Setup](/help/assets/dynamic-media/dm-publish-settings.md)
     + [Troubleshoot Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md)
