@@ -33,7 +33,7 @@ The 2025.3.0 feature activation will provide the full feature set for this maint
 * ASSETS-45724 - Ensure DM upload is retried if upload job is not assigned .
 * ASSETS-46425 - Adobe Stock integration search issues.
 * ASSETS-27400 - Folder preview generator might attempt to open original.
-* CQ-4358722 - handle different locale codes in Java 11 and Java 17.
+* CQ-4358722 - Handle different locale codes in Java 11 and Java 17.
 * SITES-29369 - Page Published/Unpublished Events triggered on Asset activation / deactivation.
 * SITES-24074 - Fix keyboard accessibility under unified shell.
 * SITES-28058 - Assets folder title not carried over to live copy.
