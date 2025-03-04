@@ -12,7 +12,7 @@ The following section outlines the technical release notes for the current maint
 
 ## Release 19756 {#19756}
 
-Summarized below are the continuous improvements for maintenance release 19756 , which was publicly released on March 5, 2025. The previous maintenance release was release 19687.
+Summarized below are the continuous improvements for maintenance release 19756, which was publicly released on March 5, 2025. The previous maintenance release was release 19687.
 
 The 2025.3.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
@@ -28,7 +28,7 @@ The 2025.3.0 feature activation will provide the full feature set for this maint
 * ASSETS-24675: Image processing options not shown for swatch-only image profile.
 * ASSETS-41257: Asset version comparison renders asset with incorrect aspect ratio. Asset versions shown in incorrect order in timeline.
 * ASSETS-44894: Assets view bookmarks might not be clickable.
-* ASSETS-45015: Smart crop width and hight set as zero if smart crop asset handle not found.
+* ASSETS-45015: Smart crop width and height set as zero if smart crop asset handle not found.
 * ASSETS-45192: Reduce pulse request frequency.
 * ASSETS-45724: Ensure DM upload is retried if upload job is not assigned.
 * ASSETS-46425: Adobe Stock integration search issues.
