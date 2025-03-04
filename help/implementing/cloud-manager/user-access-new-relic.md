@@ -169,11 +169,11 @@ The following limitations apply to adding users to New Relic One:
 
 * A maximum of 30 users can be added. If the maximum number of users has been reached, remove users to be able to add new users.
 * Users added to New Relic are of the type **Restricted**. See the [New Relic documentation for details](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/introduction-managing-users/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&text=One%20or%20more%20individuals%20who,change).
-* AEM as a Cloud Service only offers the New Relic One APM solution and does not provide support for alerting, logging, or API integrations.
+* AEM as a Cloud Service only offers the **New Relic One APM** solution and does not provide support for infrastructure monitoring, alerting, logging, or API integrations.
 
 >[!NOTE]
 >
->If no activity is detected in your New Relic One sub-account for 90 days or more, the APM agent is stopped.
+>If no **user login** activity is detected in your New Relic One sub-account for 30 days or more, the APM agent is stopped and data will not be sent from AEM Cloud Service to New Relic.  **Data will not be sent again until your sub-account is reactivated.**
 >
 >Follow the same steps in the [Activate Your New Relic One Sub-Account](#activate-sub-account) section of this document to re-activate your New Relic One sub-account.
 
@@ -181,11 +181,11 @@ For more help or additional guidance on New Relic One offerings for your AEM as 
 
 ## Frequently asked questions {#faqs}
 
-+++**What does Adobe monitor with New Relic One?** {#adobe-monitor}
++++**What does Adobe monitor with New Relic One?**
 
 Adobe monitors the AEM as a Cloud Service author, publish and preview (where available) services via New Relic One's Java plug-in. Adobe enables custom New Relic One APM telemetry and monitoring across non-production and production AEM as a Cloud Service environments. 
 
-Your New Relic One account is attached to a primary Adobe-maintained account and has multiple applications reporting into it: three per AEM as a Cloud Service Environment. 
+Your New Relic One account is attached to a primary Adobe-maintained account and has multiple applications reporting into it; three per AEM as a Cloud Service Environment. 
 
 * One application for the Author service per environment
 * One application for the `Publish` service per environment (including Golden Publish)
@@ -195,25 +195,26 @@ Note:
 
 * Each application uses one license key.
 * AEM as a Cloud Service environments report to only one New Relic One account.
-* Full monitoring metrics and events for both New Relic One are retained for three months. <!-- CQDOC-22238 - Updated from seven days to three months. >
+* Full monitoring metrics and events for both New Relic One are retained for three months.
+
 +++
 
-+++**Does Adobe send alert notifications from New Relic One?** {#alerting-new-relic}
++++**Does Adobe send alert notifications from New Relic One?**
 
 Adobe provides New Relic One access for observability purposes only and does not use it for customer alerting or internal operational alerting. Notifications for any incidents are sent using [user notification profiles](/help/journey-onboarding/notification-profiles.md).
 +++
 
-+++**Who can access the New Relic One cloud service data?** {#access-new-relic-cloud}
++++**Who can access the New Relic One cloud service data?**
 
 Full read access is granted for up to 30 members of your team. Read access includes all APM metrics collected by the New Relic One agent.
 +++
 
-+++**Is custom SSO configuration supported?** {#custom-sso}
++++**Is custom SSO configuration supported?**
 
 Custom SSO configuration is not supported for the New Relic One account provisioned by Adobe.
 +++
 
-+++**What if I already have an on-premises New Relic subscription?** {#new-relic-subscription}
++++**What if I already have an on-premises New Relic subscription?**
 
 New Relic One is the new observability platform from New Relic and it enables Adobe support and your teams to observe, monitor, and view metrics and events, all in one place.
 
@@ -227,7 +228,7 @@ Adobe support monitors AEM as a Cloud Service with New Relic One and other tools
 
 +++
 
-+++**The APM agent for my New Relic One account is stopped. What happened?** {#deactivated}
++++**The APM agent for my New Relic One account is stopped. What happened?**
 
-[APM agents are stopped](#limitations) if no activity is detected for 90 days or more. Follow the same steps in the [Activate Your New Relic One Sub-Account](#activate-sub-account) section of this document to re-activate your New Relic One sub-account.
+[APM agents are stopped](#limitations) if no activity is detected for 30 days or more. Follow the same steps in the [Activate Your New Relic One Sub-Account](#activate-sub-account) section of this document to re-activate your New Relic One sub-account.
 +++
