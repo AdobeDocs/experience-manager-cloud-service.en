@@ -12,7 +12,7 @@ The following section outlines the technical release notes for the current maint
 
 ## Release 19756 {#19756}
 
-Summarized below are the continuous improvements for maintenance release 19756, which was publicly released on March 5, 2025. The previous maintenance release was release 19687.
+Summarized below are the continuous improvements for maintenance release 19756, which was publicly released on March 4, 2025. The previous maintenance release was release 19687.
 
 The 2025.3.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
