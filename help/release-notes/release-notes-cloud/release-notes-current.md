@@ -64,15 +64,25 @@ The AEM Translation HTTP REST API that has been in early adopter mode for a whil
 
 ### New features in AEM Assets {#new-features-assets}
 
+**Dynamic Media new packaging structure**
+
+A refreshed Dynamic Media packaging structure is now available to better align with market expectations and support tracking. The new packaging structure comprises:
+
+* Dynamic Media Prime, which includes Dynamic Media with OpenAPIs and video to enhance delivery.
+
+* Dynamic Media Ultimate adds delivery and transformation features to meet heavier usage requirements.
+
+You must have Assets as a Cloud Service Prime or Ultimate to benefit from the new packaging structure.
+
+**AI-generated video captions** 
+
+AI-generated video captions in Adobe Dynamic Media use artificial intelligence to generate captions automatically for video content. This feature is designed to improve accessibility and enhance the user experience by providing accurate captions. Captions are generated from the original audio, any additional audio tracks, or extra captions are provided in the "Captions and Audio" tab on the video properties page. With support for more than 60 languages, captions can be reviewed and previewed before publishing the video.
+
 **Customize search filters**
 
 Custom Search filters enhance the precision and efficiency of finding relevant information. It allows for more tailored searches, filtering data according to specific attributes such as brand, product, category, or other key identifiers. This improves organization, reduces time spent sifting through irrelevant results, and enables quicker decision-making. It also supports scalability, as large datasets become easier to navigate and analyze.
 
 ![customize search filters](/help/assets/assets/custom-search-filters.png)
-
-**AI-generated video captions** 
-
-AI-generated video captions in Adobe Dynamic Media use artificial intelligence to generate captions automatically for video content. This feature is designed to improve accessibility and enhance the user experience by providing accurate, real-time captions. Captions are generated from the original audio, any additional audio tracks, or extra captions are provided in the "Captions and Audio" tab on the video properties page. With support for more than 60 languages, captions can be reviewed and previewed before publishing the video.
 
 
 ### Early Access features in AEM Assets {#early-access-features-assets}
