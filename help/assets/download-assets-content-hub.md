@@ -113,7 +113,6 @@ Learn more about [view and manage renditions in Experience Manager Assets](/help
 
 * [Static renditions](/help/assets/renditions.md#static-renditions): Static renditions are pre-created versions of digital assets, typically generated during the asset ingestion or modification. They are optimized for specific uses and platforms, such as web thumbnails, mobile-friendly formats for responsive designs, or high-resolution files for printing, providing a streamlined and consistent experience.
 
-
 * [Dynamic renditions](/help/assets/renditions.md#dynamic-renditions): Dynamic renditions are real-time, customized versions of assets to perform various actions, such as resizing images for different device resolutions or cropping to fit various aspect ratios. These renditions allows you to offer personalized and optimized experiences for wider requirements. Dynamic renditions of assets are created on [!DNL Adobe Experience Manager Assets] author environment.
 
 * [Smart crop](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): The smart crop focuses solely on the essential part of an asset during the cropping process. Dynamic media smart crop for leverages artificial intelligence powered by Adobe Sensei to track the point of interest, making sure our assets look like their best on all screen sizes. [!DNL Adobe Experience Manager] smart crop displays width and height of an asset renditions along with the title. See more at [using Smart Crop with AEM Assets Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
@@ -121,4 +120,10 @@ Learn more about [view and manage renditions in Experience Manager Assets](/help
   ![Renditions types](/help/assets/assets/renditions-types.png)
 
   
-  
+>[!NOTE]
+> 
+> * To get early access to the Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+> * Newly onboarded customers on [Dynamic Media Open API services](/help/assets/dynamic-media-open-apis-overview.md) must revise their existing image presets for approval.
+
+
+
