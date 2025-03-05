@@ -1881,6 +1881,10 @@ For the delivery of the URL to a Dynamic Media asset
 
 * See [Sample query for Dynamic Media asset delivery by URL - Multiple References](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
+For the delivery of remote assets, that are not local to the current AEM instance, from the Content Fragment Editor. 
+
+* See [Sample query for Dynamic Media for OpenAPI asset support (Remote Assets)](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-for-openapi-asset-support)
+
 ## The Sample Content Fragment Structure (used with GraphQL) {#content-fragment-structure-graphql}
 
 The sample queries are based on the following structure, which uses:
