@@ -17,6 +17,12 @@ To use Content Fragment Models you:
 1. [Enable your Content Fragment Models](#enabling-disabling-a-content-fragment-model) for use when creating Content Fragments 
 1. [Allow your Content Fragment Models on the required Assets folders](#allowing-content-fragment-models-assets-folder) by configuring **Policies**.
 
+>[!NOTE]
+>
+>Content Fragments are a Sites feature, but are stored as **Assets**. 
+>
+>Content Fragments and Content Fragment Models are now primarily managed with the **[Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** console, though Content Fragments can still be managed from the **Assets** console, and Content Fragment Models from the **Tools** console. This section covers management from the **Assets** and **Tools** consoles.
+
 ## Creating a Content Fragment Model {#creating-a-content-fragment-model}
 
 1. Navigate to **Tools**, **General**, then open **Content Fragment Models**.
