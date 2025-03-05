@@ -16,13 +16,11 @@ With the Universal Editor, you can quickly design responsive, interactive forms 
 
 Whether you're managing lightweight client-side rendering, ensuring cross-browser compatibility, or adhering to strict accessibility standards, the Universal Editor delivers a streamlined solution for creating and managing forms.
 
-![Universal Editor](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center} --> 
+![Universal Editor](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center} 
 
 ## Key Features of Universal Editor for Edge Delivery Services for Forms
 
 
-
-Here's the layout with equal-width cards (using fixed-width columns):
 
 | ![WYSIWYG Interface](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg) |  ![Rule Editor](/help/edge/docs/forms/universal-editor/assets/rule-editor.svg) | ![Submit Actions](/help/edge/docs/forms/universal-editor/assets/submit-actions.svg) |
 |:-------------:|:-------------:|:-------------:|
