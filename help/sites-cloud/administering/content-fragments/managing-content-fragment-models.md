@@ -4,6 +4,7 @@ description: Learn how to manage Content Fragment Models; these serve as a found
 feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
+exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
 ---
 # Managing Content Fragment Models {#managing-content-fragment-models}
 
