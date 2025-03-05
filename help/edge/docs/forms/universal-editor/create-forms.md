@@ -5,8 +5,8 @@ feature: Edge Delivery Services
 role: User
 hide: yes
 hidefromtoc: yes
+exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 ---
-
 # Author standalone forms using the Universal Editor (WYSIWYG)
 
 <span class="preview"> This feature is available through the early access program. To request access, send an email from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> with your GitHub organization name and repository name. For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
@@ -157,5 +157,3 @@ Having trouble loading your form? Here are some common issues and how to fix the
 ## Start creating forms
 
 {{universal-editor-see-also}}
-
-
