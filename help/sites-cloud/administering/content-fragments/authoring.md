@@ -44,7 +44,7 @@ When you first open the Content Fragment Editor, you see four main areas:
 * top toolbar: for key information, and actions
   * a link to the Content Fragment Console (Home icon)
   * information about the model, and folder
-  * links to [Preview (if the Default Preview URL Pattern is configured for the model)](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties)
+  * links to [Preview (if the Default Preview URL Pattern is configured for the model)](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)
   * [Publish](#publish-content-fragment), and [Unpublish](#unpublish-content-fragment) actions
   * an option to show all **Parent References** (link icon)
   * the fragment **[Status](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**, and last saved information
@@ -502,7 +502,7 @@ The Content Fragment editor provides authors with the option to preview their ed
 To use this feature, you first need to:
 
 * Work with your IT team to set up the external frontend application that will render the Content Fragment by consuming its JSON output. 
-* When the external frontend application is set up, the **Default Preview URL Pattern** must be defined as a [property of the appropriate Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties).
+* When the external frontend application is set up, the **Default Preview URL Pattern** must be defined as a [property of the appropriate Content Fragment Model](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties).
 
 When the URL has been defined, the **Preview** button is active. You can select this button to launch the external application (in a separate tab) to render the Content Fragment. 
 
