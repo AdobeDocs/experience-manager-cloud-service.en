@@ -111,21 +111,21 @@ Now that you have learned the basics, the next step is to start creating your ow
 
 * [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md)
  
-  * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+  * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 
-    * [Defining your Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#defining-your-content-fragment-model)
+    * [Defining your Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
-    * [Enabling or Disabling a Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#enabling-disabling-a-content-fragment-model)
+    * [Enabling or Disabling a Content Fragment Model](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#enabling-disabling-a-content-fragment-model)
 
-    * [Allowing Content Fragment Models on your Assets Folder](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)
+    * [Allowing Content Fragment Models on your Assets Folder](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder)
 
-    * [Deleting a Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#deleting-a-content-fragment-model)
+    * [Deleting a Content Fragment Model](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#deleting-a-content-fragment-model)
 
-    * [Publishing a Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#publishing-a-content-fragment-model)
+    * [Publishing a Content Fragment Model](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model)
 
-    * [Unpublishing a Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#unpublishing-a-content-fragment-model)
+    * [Unpublishing a Content Fragment Model](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#unpublishing-a-content-fragment-model)
 
-    * [Locked (Published) Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#locked-published-content-fragment-models)
+    * [Locked Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#locked-content-fragment-models)
 
 * Getting Started Guides
   

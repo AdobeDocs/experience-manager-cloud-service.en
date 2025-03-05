@@ -26,6 +26,8 @@ user-guide-title: AEM as a Cloud Service
   + [Release Information](/help/release-notes/home.md)
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
+    + 2025 {#2025}
+      + [Release Notes for 2025.1.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md) 
     + 2024 {#2024}
       + [Release Notes for 2024.10.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-10-0.md)
       + [Release Notes for 2024.9.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-9-0.md)
@@ -411,7 +413,8 @@ user-guide-title: AEM as a Cloud Service
       + [Overview and Concepts](/help/sites-cloud/administering/content-fragments/overview.md)
       + [Headless Delivery with GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)
       + [Content Fragment Setup](/help/sites-cloud/administering/content-fragments/setup.md)
-      + [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+      + [Managing Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
+      + [Defining Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
       + [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md)
       + [Authoring Fragment Content](/help/sites-cloud/administering/content-fragments/authoring.md)
       + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
