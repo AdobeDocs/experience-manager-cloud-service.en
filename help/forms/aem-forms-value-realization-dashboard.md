@@ -12,18 +12,20 @@ exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
 ![Fvalue realization dashboard](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
 
 
-<span class="preview"> This feature is a beta feature, enabled only for a few selected customers. </span>
+<span class="preview"> This feature is available through the early access program. To request access, send an email from your official address to aem-forms-ea@adobe.com. <span>
+
 
 Welcome to your one-stop shop for understanding the value that your forms are bringing! This dashboard equips you with valuable insights to optimize your forms, streamline workflows, and ultimately achieve your goals faster.
 
-This article provides a conceptual overview of the Value Realization Dashboard and its benefits. For detailed usage instructions and metrics interpretation, see [Interpreting Form Usage insights using the Value Realization dashboard](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md).
+This article provides a conceptual overview of the Value Realization Dashboard and its benefits. For detailed usage instructions and metrics interpretation, see [Interpreting Form Usage insights using the Value Realization dashboard](/help/forms/using-the-value-realization-dashboard.md).
 
 
-![value realization dashboard](/help/forms/assets/forms-usage-insights.png)
+
 
 ## What's on the dashboard? {#content-of-dashboard}
 
 This dashboard is your window into the world of your form usage. Here's a breakdown of the key sections:
+
 
 ### Form & Documents activity over time
 
@@ -38,8 +40,6 @@ This dashboard is your window into the world of your form usage. Here's a breakd
 * **Form Fragment Re-use**: Gauge how often these fragments are being used across different forms.
 
 
-
-
 ## How does this benefit you? {#benefits-to-you}
 
 This dashboard empowers you to make data-driven decisions about your forms. Here's how:
@@ -47,6 +47,8 @@ This dashboard empowers you to make data-driven decisions about your forms. Here
 * **Identify Popular Forms**: High submission rates indicate valuable forms. Analyze these for best practices to replicate in others.
 * **Optimize Form Creation**: Reduce creation times by identifying bottlenecks. Explore pre-built templates or streamlining workflows.
 * **Boost Fragment Reuse**: Encourage collaboration and discoverability of reusable fragments. Well-organized fragment libraries can significantly improve efficiency.
+
+    ![value realization dashboard](/help/forms/assets/forms-usage-insights.png)
 
 
 ## Turning insights into action {#turning-insights-into-actions}
@@ -69,4 +71,4 @@ Remember, this dashboard is your ally! By using it effectively, you can transfor
 
 ## See also
 
-* [Interpreting usage insights](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)
+* [Using the Dashboard to Analyze Forms & Documents Usage Trends](/help/forms/using-the-value-realization-dashboard.md)
