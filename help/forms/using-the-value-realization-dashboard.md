@@ -1,14 +1,14 @@
 ---
-title: Interpreting Form Usage insights using the Value Realization Dashboard
+title: Using the value realization dashboard to analyze forms & documents usage trends
 description: Learn how to use the Forms Usage Insights dashboard to monitor and understand the performance of your forms and form fragments.
 role: User, Developer
 level: Intermediate
 feature: Adaptive Forms, Foundation Components, Core Components
 hide: yes
 hidefromtoc: yes
-exl-id: c57e548b-a254-4fe8-82e2-762ec1a81cfd
 ---
-# Interpreting Forms Usage insights using the Value Realization dashboard
+
+# Using the value realization dashboard to analyze forms & documents usage trends
 
 <span class="preview"> This feature is available through the early access program. To request access, send an email from your official address to aem-forms-ea@adobe.com. <span>
 
@@ -17,7 +17,7 @@ exl-id: c57e548b-a254-4fe8-82e2-762ec1a81cfd
 
 By regularly monitoring the metrics presented in the "Forms Usage Insights" dashboard, you can gain valuable insights into the performance of your forms, documents, and form fragments. Use this data to make informed decisions about form design, fragment management, and overall form strategy.
 
-This article provides detailed usage instructions and metrics interpretation for the Value Realization Dashboard. For a conceptual overview and benefits of the dashboard, see [Understanding your value realization dashboard](/help/forms/aem-forms-value-realization-dashboard.md).
+This article provides detailed usage instructions and metrics interpretation for the Value Realization Dashboard. For a conceptual overview and benefits of the dashboard, see [understanding your value realization dashboard](/help/forms/aem-forms-value-realization-dashboard.md).
 
 
 ## Accessing the usage insights dashboard
@@ -27,7 +27,7 @@ To access the Forms Usage Insights dashboard:
 1. Navigate to the **Forms** > **Forms and Documents** 
 1. Click **Insights Dashboard**. The dashboard opens in a new window. 
 
-![Value realization dashboard](/help/forms/assets/forms-usage-insights.png)
+    ![Value realization dashboard](/help/forms/assets/forms-usage-insights.png)
 
 ## Overview
 
