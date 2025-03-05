@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160px" height="160px" viewBox="0 0 160 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Question Icon</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle fill="#F5F7F9" cx="80" cy="80" r="80"></circle>
+        <g transform="translate(40, 30)" fill="#1473E6" fill-rule="nonzero">
+            <path d="M40,0 C17.92,0 0,17.92 0,40 C0,62.08 17.92,80 40,80 C62.08,80 80,62.08 80,40 C80,17.92 62.08,0 40,0 Z M40,72 C35.6,72 32,68.4 32,64 C32,59.6 35.6,56 40,56 C44.4,56 48,59.6 48,64 C48,68.4 44.4,72 40,72 Z M48,48 C48,48 40,48 40,48 C40,48 40,40 40,40 C40,40 44,40 44,40 C44,40 48,36 48,32 C48,28 44,24 40,24 C36,24 32,28 32,32 L24,32 C24,23.16 31.16,16 40,16 C48.84,16 56,23.16 56,32 C56,38.28 52.68,43.72 48,46.12 L48,48 Z"></path>
+        </g>
+    </g>
+</svg> 
