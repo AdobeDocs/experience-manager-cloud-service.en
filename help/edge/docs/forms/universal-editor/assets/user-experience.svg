@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160px" height="160px" viewBox="0 0 160 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>User Experience Icon</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle fill="#F5F7F9" cx="80" cy="80" r="80"></circle>
+        <g transform="translate(40, 30)" fill="#1473E6" fill-rule="nonzero">
+            <path d="M40,0 C17.92,0 0,17.92 0,40 C0,62.08 17.92,80 40,80 C62.08,80 80,62.08 80,40 C80,17.92 62.08,0 40,0 Z M40,12 C46.64,12 52,17.36 52,24 C52,30.64 46.64,36 40,36 C33.36,36 28,30.64 28,24 C28,17.36 33.36,12 40,12 Z M40,68.8 C30,68.8 21.16,63.68 16,55.84 C16.12,47.92 32,43.6 40,43.6 C47.96,43.6 63.88,47.92 64,55.84 C58.84,63.68 50,68.8 40,68.8 Z"></path>
+        </g>
+        <g transform="translate(100, 30)" fill="#1473E6" fill-rule="nonzero">
+            <circle cx="20" cy="20" r="20"></circle>
+            <path d="M12,20 L18,26 L28,16" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg> 
