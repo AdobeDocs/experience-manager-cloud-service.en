@@ -306,10 +306,11 @@ Alternatively you can [select **Create new fragment** to open the **Create** dia
 
 #### Reference Images {#reference-images}
 
-In **Content Reference** fields you can both:
+In **Content Reference** fields you can:
 
-* reference assets that already exist in the repository
-* upload them directly to the field; this avoids the need to use the **Assets** console to upload
+* reference assets that already exist in your local repository
+* reference assets that reside in a remote repository
+* upload assets directly to the field; this avoids the need to use the **Assets** console to upload
 
   >[!NOTE]
   >
@@ -318,12 +319,48 @@ In **Content Reference** fields you can both:
   >* have a **Root Path** defined (in the [Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference)). This specifies where the image will be stored.
   >* include **Image** in the list of accepted content types
 
-To add an asset, you can either:
+##### Reference Local Assets {#reference-local-assets}
+
+To reference a local asset, you can either:
 
 * drag and drop the new asset file directly (for example, from your file system) into the **Content Reference** field
 * use the **Add asset** action, then select either **Browse Assets** or **Upload** to open the appropriate selector for you to use:
 
   ![Content Fragment Editor - Add asset options](assets/cf-authoring-add-asset-options.png)
+
+##### Reference Remote Assets {#reference-remote-assets}
+
+To reference remote assets: 
+
+1. Specify the remote **Repository** when browsing for assets:
+
+   ![Content Fragment Editor - Select Asset from remote](assets/cf-authoring-remote-asset-01.png)
+
+2. After selection the location can be seen in the asset information: 
+  
+   ![Content Fragment Editor - Asset from remote repository](assets/cf-authoring-remote-asset-02.png)
+
+###### Remote Assets - Limitations {#remote-assets-limitations}
+
+There are some limitations when referencing remote assets:
+
+* Only [Approved](/help/assets/approve-assets.md) assets are available for reference from a remote Asset repository.
+
+* If a referenced asset is removed from the remote repository, this results in a broken Content Reference.
+
+* All Delivery Asset Repositories to which the user has access are available for selection, the available list cannot be limited.
+
+* Both the AEM instance and remote asset repository instances must be at the same version.
+
+* No Asset metadata is exposed via the either Management API or the Delivery API. You have to use the Asset Metadata API to retrieve the asset metadata details:
+
+  * the individual asset metadata: [https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata)
+  
+  * get bulk metadata information using the search API (experimental): [https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search)
+
+>[!NOTE]
+>
+>See also [AEM GraphQL API for use with Content Fragments - Dynamic Media for OpenAPI asset support (Remote Assets)](/help/headless/graphql-api/content-fragments.md#dynamic-media-for-openapi-asset-support)
 
 #### Reference Pages {#reference-pages}
 
