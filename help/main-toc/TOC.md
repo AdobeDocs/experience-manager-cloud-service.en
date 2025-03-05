@@ -886,7 +886,9 @@ user-guide-title: AEM as a Cloud Service
   + Transaction Reports {#using-communications}
     + [Transaction Reports Billable APIs ](/help/forms/transaction-reports-billable-apis.md)
     + [Record a transaction for a custom implementation](/help/forms/record-transaction-custom-implementation.md)
-    + [Understanding Your Value Realization Dashboard](/help/forms/aem-forms-value-realization-dashboard.md)
+  + Value realization dashboard  {#vr-dashboard}
+    + [Understanding your value realization dashboard](/help/forms/aem-forms-value-realization-dashboard.md)
+    + [Interpreting usage insights](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)
   + Developer API Reference {#aem-forms-developer-api-reference}
     + [Adaptive Forms API reference](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
     + [AEM Forms Cloud Service Communications API Reference](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
