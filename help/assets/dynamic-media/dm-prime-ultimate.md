@@ -14,7 +14,7 @@ Adobe Experience Manager as a Cloud Service enables you to access Dynamic Media 
 
 ## Dynamic Media Prime {#dynamic-media-prime}
 
-Dynamic Media Prime is an activation service for Experience Manager Assets, which offers [Dynamic Media with OpenAPI basic capabilities](/help/assets/dynamic-media-open-apis-overview.md) enabling organizations to integrate AEM Assets with Adobe or non-Adobe applications. It supports transformation (rotate, crop, flip, size, preferwebp, height, width, quality) and optimized delivery.
+Dynamic Media Prime is an activation service for Experience Manager Assets, which offers [Dynamic Media with OpenAPI basic capabilities](/help/assets/dynamic-media-open-apis-overview.md) enabling organizations to integrate AEM Assets, AEM Sites, AEM Assets Prime and AEM Assets Ultimate with Adobe or non-Adobe applications. It supports transformation (rotate, crop, flip, size, preferwebp, height, width, quality) and optimized delivery.
 
 If you need Dynamic Media basic as well as advanced capabilities and access to Dynamic Media solution in AEM as a Cloud Service, see [Dynamic Media Ultimate](#dynamic-media-ultimate).
 
