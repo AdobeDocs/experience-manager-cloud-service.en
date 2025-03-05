@@ -6,8 +6,8 @@ level: Intermediate
 feature: Adaptive Forms, Foundation Components, Core Components
 hide: yes
 hidefromtoc: yes
+exl-id: c57e548b-a254-4fe8-82e2-762ec1a81cfd
 ---
-
 # Interpreting Forms Usage insights using the Value Realization dashboard
 
 <span class="preview"> This feature is available through the early access program. To request access, send an email from your official address to aem-forms-ea@adobe.com. <span>
