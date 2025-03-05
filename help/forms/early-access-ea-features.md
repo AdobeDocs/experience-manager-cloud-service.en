@@ -101,6 +101,28 @@ Ready to start? The following articles provides detailed instructions to use the
 * [Configure Marketo Engage ad data source for existing Adaptive Forms](/help/forms/use-marketo-engage-data-source-in-form.md)
 * [Submit an existing Adaptive Form to Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
+### Value Realization Dashboard
+
+Track and analyze your forms' performance with the Value Realization Dashboard. This analytics tool helps you make data-driven decisions to optimize your forms strategy.
+
+![Forms Usage Insights Dashboard](/help/forms/assets/forms-usage-insights.png)
+
+**Key features:**
+
+* Monitor form submissions, document renditions, and form creation/publication metrics
+* Track form fragment usage and reuse across your organization
+* Identify trends, peak periods, and improvement opportunities
+
+The dashboard provides insights through two main sections:
+
+* **Form & Documents activity over time**: Tracks submissions, renditions, and form creation/publication
+* **Fragment Usage**: Monitors fragment adoption and reuse
+
+For detailed information:
+
+* [Understanding your value realization dashboard](/help/forms/aem-forms-value-realization-dashboard.md)
+* [Interpreting form & documents usage insights](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)
+
 ## Additional Early Access Innovations
 
 ### HTML email Templates in Adaptive Forms
