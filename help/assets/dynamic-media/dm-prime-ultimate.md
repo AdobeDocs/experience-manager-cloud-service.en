@@ -37,6 +37,7 @@ Some of the other key benefits of Dynamic Media Prime include:
 * [AEM Assets as a Cloud Service](/help/assets/overview.md)
 
 * [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
+* [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
 
 ## Dynamic Media Ultimate {#dynamic-media-ultimate}
 
@@ -58,9 +59,8 @@ In addition to the Dynamic Media Prime features such as AEM Assets integration w
 ### Prerequisites {#pre-requisites-dm-ultimate}
 
 * [AEM Sites as a Cloud Service](/help/sites-cloud/authoring/quick-start.md)
-
 * [AEM Assets as a Cloud Service](/help/assets/overview.md)
-
+* [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
 * [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
 
 For more information on the complete list of capabilities, see [Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md) and [Working with Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
