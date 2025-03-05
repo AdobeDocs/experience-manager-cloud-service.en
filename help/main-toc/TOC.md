@@ -26,6 +26,8 @@ user-guide-title: AEM as a Cloud Service
   + [Release Information](/help/release-notes/home.md)
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
+    + 2025 {#2025}
+      + [Release Notes for 2025.1.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md) 
     + 2024 {#2024}
       + [Release Notes for 2024.10.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-10-0.md)
       + [Release Notes for 2024.9.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-9-0.md)
@@ -411,7 +413,8 @@ user-guide-title: AEM as a Cloud Service
       + [Overview and Concepts](/help/sites-cloud/administering/content-fragments/overview.md)
       + [Headless Delivery with GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)
       + [Content Fragment Setup](/help/sites-cloud/administering/content-fragments/setup.md)
-      + [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+      + [Managing Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
+      + [Defining Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
       + [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md)
       + [Authoring Fragment Content](/help/sites-cloud/administering/content-fragments/authoring.md)
       + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
@@ -1039,10 +1042,10 @@ user-guide-title: AEM as a Cloud Service
       + [Protect Your Forms: Adding reCAPTCHA Security](/help/edge/docs/forms/recaptacha-forms.md)
       + [Build Custom Form Components: Developer's Guide](/help/edge/docs/forms/custom-components-forms.md)
       + [Monitor Form Performance: Real Use Monitoring Guide](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
-      + [Deploy Forms on Edge: Publishing Guide for Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md)
     + WYSIWYG Authoring {#universal-editor}
       + [Introduction to Forms Universal Editor for Edge Delivery Services - Complete Guide](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-      + [How to Create Your First Form Using Universal Editor - Step by Step Tutorial](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+      + [How to Start Authoring Using Universal Editor - Step by Step Tutorial](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+      + [How to Create Your First Form Using Universal Editor](/help/edge/docs/forms/universal-editor/create-forms.md)
       + [Universal Editor Interface Guide: Tools, Features, and Navigation Explained](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
       + [Make Your Forms Mobile-Friendly: Responsive Design in Universal Editor](/help/edge/docs/forms/universal-editor/responsive-layout.md)
       + [Design Beautiful Forms: Styling and Theming Guide for Universal Editor](/help/edge/docs/forms/universal-editor/style-theme-forms.md)

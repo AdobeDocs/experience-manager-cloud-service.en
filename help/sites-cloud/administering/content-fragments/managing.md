@@ -16,9 +16,18 @@ solution: Experience Manager Sites
 
 Learn how to manage your **Content Fragments** in Adobe Experience Manager (AEM) as a Cloud Service, from the dedicated [Content Fragments console](#content-fragments-console), and [Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor). These Content Fragments can be used as the basis of your headless content, or for page authoring.
 
+>[!IMPORTANT]
+>
+>Various features of the Content Fragment Console are available through the Early Adopter Program.
+>
+>To see the status, and how to apply if you are interested, check the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md).
+
 >[!NOTE]
 >
->Your project team can customize the console and editor if necessary. See [Customizing the Content Fragment Console and Editor](/help/implementing/developing/extending/content-fragments-console-and-editor.md) for further details.
+>This page covers the section of the console that (only) displays Content Fragments. For other panels see:
+>
+>* [Managing Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) 
+>* [Viewing and Managing Assets in the Content Fragments Console](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 
 After defining your [Content Fragment Models](#creating-a-content-model) you can use these to:
 
@@ -39,41 +48,13 @@ After defining your [Content Fragment Models](#creating-a-content-model) you can
 >
 >Content Fragments are stored as **Assets**. They are primarily managed from the **Content Fragments** console, but can also be managed from the [Assets](/help/assets/content-fragments/content-fragments-managing.md) console.
 
-## The Content Fragments Console {#content-fragments-console}
+## Basic Structure and Handling of Content Fragments in the Console {#basic-structure-handling-content-fragments-console}
 
-The Content Fragments console is dedicated to managing, searching for, and creating Content Fragments. It has been optimized for use in a Headless context, but is also used when creating Content Fragments for use in page authoring.
+You can use the far left panel of the [Content Fragments console](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) to select  **Content Fragments** as the resource type to view, browse and manage:
 
-The Content Fragments console provides direct access to your fragments, and related tasks. The console can be directly accessed from the top level of the Global Navigation.
-
-![Global Navigation - Content Fragments console](assets/cf-managing-global-navigation.png)
-
-For detailed further information see:
-
-* [Basic Structure and Handling of the Content Fragments Console](#basic-structure-handling-content-fragments-console)
-
-* [The Information provided about your Content Fragments](#information-content-fragments)
-
-* [Actions for a Content Fragment in the Content Fragments Console](#actions-selected-content-fragment)
-
-* [Select columns shown in the console](#select-columns-console)
-
-* [Search and Filter in the Content Fragments Console](#filtering-fragments)
-
-* A selection of [keyboard shortcuts](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) are available for use in this console
-
->[!NOTE]
->
->This console only displays Content Fragments. It does not display other asset types such as images and videos. 
-
->[!CAUTION]
->
->This console is *only* available in the online Adobe Experience Manager (AEM) as a Cloud Service.
-
-### Basic Structure and Handling of the Console {#basic-structure-handling-content-fragments-console}
+![Content Fragments console - navigation](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
 
 Selecting **Content Fragments** opens the console in a new tab. 
-
-<!-- CQDOC-21349: screenshot -->
 
 ![Content Fragments console - Overview](assets/cf-managing-console-overview.png)
 
@@ -84,10 +65,11 @@ Here you can see that there are three main areas:
   * Also shows your IMS organization
   * Provides various [actions](#actions-unselected)
 * The left panel
+  * Here you can compress, or expand, links to the panels
   * Here you can hide, or reveal, the folder tree
   * You can select a specific branch of the tree
   * This can be resized to show nested folders
-  * You can select between viewing Content Fragments or [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+  * As well as Content Fragments, you can view [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) or [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md); you can also compress, or expand, links to the panels
 * The main/right panel - from here you can:
   * See the list of all Content Fragments in the selected branch of the tree:
     * Content Fragments from the selected folder, and all child folders will be shown:
@@ -99,7 +81,7 @@ Here you can see that there are three main areas:
       * Show information about references
       * Show information about language versions of the fragment
     * [Certain other fields of information](#information-content-fragments) about a Content Fragment can be used for [Fast Filtering](#fast-filtering):
-      * Select a value in the column and is immediately applied as a filter
+      * Select a value in the column and it is immediately applied as a filter
       * Fast filtering is supported for the **Model**, **Status**, **Modified By**, **Tags** and **Published By** columns.
     * By using mouse-over on the column headers a drop-down action selector, and width sliders, will be shown. These allow you to:
       * Sort - select the appropriate action for either ascending or descending
@@ -108,58 +90,9 @@ Here you can see that there are three main areas:
     * Select one, or more, fragments for further [action](#actions-selected-content-fragment)
   * Use the [Search](#searching-fragments) box
   * Open the [Filter panel](#filtering-fragments)
+  * A selection of [keyboard shortcuts](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) are available for use in this console
 
-### Actions {#actions}
-
-Within the console there is a range of actions that you can use, either directly, or after selecting a specific fragment:
-
-* Various actions are directly [available from the console](#actions-unselected)
-* You can [select one, or more, Content Fragments to show appropriate actions](#actions-selected-content-fragment)
-
-#### Actions (unselected) {#actions-unselected}
-
-Certain actions are available from the console - without selecting a specific Content Fragment:
-
-* **[Create](#creating-a-content-fragment)** a new Content Fragment
-* [Filter](#filtering-fragments) the Content Fragments according to a selection of predicates, and save the filter for future use
-* [Search](#searching-fragments) the Content Fragments 
-* [Customize the table view to show selected columns of information](#select-columns-console)
-* Use **Open in Assets** to directly open the current location in the **Assets** console
-
-  >[!NOTE]
-  >
-  >The **Assets** console is used to access assets, such as images, videos, and so on.  This console can be accessed:
-  >
-  >* using the **Open in Assets** link (in the Content Fragments console)
-  >* directly from the global **Navigation** pane
-
-#### Actions for a (selected) Content Fragment {#actions-selected-content-fragment}
-
-Selecting a specific fragment opens a toolbar focused on the actions available for that fragment. You can also select multiple fragments - the selection of actions will be adjusted accordingly.
-
-<!-- CQDOC-21349: screenshot -->
-
-![Content Fragments console - toolbar for a selected fragment](assets/cf-managing-console-fragment-toolbar.png)
-
-* **[Open in new Editor](#editing-the-content-of-your-fragment)**
-* **[Open](/help/assets/content-fragments/content-fragments-variations.md)** (in original editor)
-* **[Publish](#publishing-and-previewing-a-fragment)** (and **[Unpublish](#unpublishing-a-fragment)**)
-* **[Manage Tags](#manage-tags)**
-* **[Copy](/help/assets/manage-digital-assets.md)**
-* **[Move](/help/assets/manage-digital-assets.md)**
-* **[Rename](/help/assets/manage-digital-assets.md)**
-* **[Delete](#deleting-a-fragment)**
-* **[Replace](#find-and-replace)**
-
->[!NOTE]
->
->Use **Open** to open the selected fragment in the *original* editor.
-
->[!NOTE]
->
->Actions such as Publish, Unpublish, Delete, Move, Rename, and Copy each trigger an asynchronous job. The progress of that job can be monitored via the AEM Async Jobs UI.
-
-### The Information provided about your Content Fragments {#information-content-fragments}
+## The Information provided about your Content Fragments {#information-content-fragments}
 
 The main/right panel (table view) of the console provides a range of information about your Content Fragments. Some items also provide direct links to further actions and/or information:
 
@@ -208,6 +141,53 @@ The main/right panel (table view) of the console provides a range of information
 
     ![Content Fragments console - Language dialog](assets/cf-managing-console-languages-dialog.png)
 
+## Actions {#actions}
+
+Within the console there is a range of actions that you can use, either directly, or after selecting a specific fragment:
+
+* Various actions are directly [available from the console](#actions-unselected)
+* You can [select one, or more, Content Fragments to show appropriate actions](#actions-selected-content-fragment)
+
+### Actions (unselected) {#actions-unselected}
+
+Certain actions are available from the console - without selecting a specific Content Fragment:
+
+* **[Create](#creating-a-content-fragment)** a new Content Fragment
+* [Filter](#filtering-fragments) the Content Fragments according to a selection of predicates, and save the filter for future use
+* [Search](#searching-fragments) the Content Fragments 
+* [Customize the table view to show selected columns of information](#select-columns-console)
+* Use **Open in Assets** to directly open the current location in the **Assets** console
+
+  >[!NOTE]
+  >
+  >The **Assets** console is used to access assets, such as images, videos, and so on.  This console can be accessed:
+  >
+  >* using the **Open in Assets** link (in the Content Fragments console)
+  >* directly from the global **Navigation** pane
+
+### Actions for a (selected) Content Fragment {#actions-selected-content-fragment}
+
+Selecting a specific fragment opens a toolbar focused on the actions available for that fragment. You can also select multiple fragments - the selection of actions will be adjusted accordingly.
+
+![Content Fragments console - toolbar for a selected fragment](assets/cf-managing-console-fragment-toolbar.png)
+
+* **[Open in new Editor](#editing-the-content-of-your-fragment)**
+* **[Open](/help/assets/content-fragments/content-fragments-variations.md)** (in original editor)
+* **[Publish](#publishing-and-previewing-a-fragment)** (and **[Unpublish](#unpublishing-a-fragment)**)
+* **[Manage Tags](#manage-tags)**
+* **[Copy](/help/assets/manage-digital-assets.md)**
+* **[Move](/help/assets/manage-digital-assets.md)**
+* **[Rename](/help/assets/manage-digital-assets.md)**
+* **[Delete](#deleting-a-fragment)**
+* **[Replace](#find-and-replace)**
+
+>[!NOTE]
+>
+>Use **Open** to open the selected fragment in the *original* editor.
+
+>[!NOTE]
+>
+>Actions such as Publish, Unpublish, Delete, Move, Rename, and Copy each trigger an asynchronous job. The progress of that job can be monitored via the AEM Async Jobs UI.
 
 ## Creating Content Fragments {#creating-content-fragments}
 
@@ -215,7 +195,7 @@ Before creating your Content Fragment, the underlying Content Fragment Model mus
 
 ### Creating a Content Model {#creating-a-content-model}
 
-[Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) must be enabled and created, prior to creating content fragments with structured content.
+[Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) must be enabled and created, prior to creating content fragments with structured content.
 
 ### Creating a Content Fragment {#creating-a-content-fragment}
 
@@ -231,6 +211,7 @@ To create a content fragment:
 
    * **Location** - Auto-completed with the current location, but you can select a different location if necessary.
    * **Content Fragment Model** - Select the model to be used as a basis of the fragment from the drop-down list.
+   * **Auto Tag** - When you select this option, all tags assigned to the Content Fragment Model are inherited by, and added to, the new Content Fragment.
    * **Title**
    * **Name** - Auto-completed based on the **Title**, but you can edit it, if necessary.
    * **Description** 
@@ -241,7 +222,7 @@ To create a content fragment:
 
 ## Statuses of Content Fragments {#statuses-content-fragments}
 
-During its existence a Content Fragment can have several statuses, as shown in the [Content Fragment Console](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) and [Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md):
+During its existence a Content Fragment can have several statuses, as shown in the [Content Fragment Console](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) and [Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md):
 
 * **New** (grey)
   A new Content Fragment has been created, but has no content as it has never edited, nor opened, in the Content Fragment editor.
@@ -312,7 +293,7 @@ You can publish your Content Fragments to:
 
 >[!CAUTION]
 >
->If your fragment is based on a model, then you should ensure that the [model has been published](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#publishing-a-content-fragment-model).
+>If your fragment is based on a model, then you should ensure that the [model has been published](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model).
 >
 >If you publish a content fragment for which the model has not yet been published, a selection list will indicate this and the model will be published with the fragment.
 
@@ -375,8 +356,6 @@ When the relevant dialog opens you can select the appropriate service:
 
 ## Find and Replace {#find-and-replace}
 
-<!-- CQDOC-21349: screenshot -->
-
 The **Replace** action is available (in the top toolbar) to find, and replace, specified text in your selected Content Fragments. 
 
 ![Find and Replace](assets/cf-managing-find-replace.png)
@@ -388,8 +367,6 @@ Before replacement, validation criteria are checked and you are informed of any 
 >The find and replace action can only be performed on a maximum of 20 selected Content Fragments (at a time). 
 >
 >If you select more than 20 Content Fragments, you will see the message **Unable to find and replace**.
-
-<!-- CQDOC-21349: screenshot -->
 
 ![Confirm Replace](assets/cf-managing-confirm-replace.png)
 
@@ -457,8 +434,6 @@ The Filter panel offers:
 
  Once selected, the **Filtering by** options are shown (under the Search box). They can be deselected from there. For example:
 
-<!-- CQDOC-21349: screenshot -->
-
 ![Content Fragments console - Filtering](assets/cf-managing-console-filter.png)
 
 ### Fast Filtering {#fast-filtering}
@@ -481,13 +456,9 @@ Once selected, this will be shown as a filter predicate, and the list will be fi
 
 The search box supports full-text search. Entering your search terms in the search box:
 
-<!-- CQDOC-21349: screenshot -->
-
 ![Content Fragments console - Searching](assets/cf-managing-console-search-specification.png)
 
 Will provide the selected results:
-
-<!-- CQDOC-21349: screenshot -->
 
 ![Content Fragments console - Search Results](assets/cf-managing-console-search-results.png)
 
