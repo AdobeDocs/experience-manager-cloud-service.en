@@ -91,29 +91,14 @@ You need to create a site configuration and add it to your path mapping.
 
 Once the site configuration is mapped, you can configure access control by defining your technical account so it has privileges to publish.
 
-1. In your browser, retrieve the technical account in the response of the following link.
-   ```text
-   https://author-p<programID>-e<envionmentID>.adobeaemcloud.com/bin/franklin.delivery/<your-github-org>/<your-aem-project>/main/.helix/config.json
-   ```
+1. Sign into the AEM author instance and go to **Tools** -&gt; **Cloud Services** -&gt; **Edge Delivery Services Configuration** and select the configuration that was automatically created for your site and tap or click **Properties** in the tool bar.
 
-1. The response will be similar to the following.
+1. In the **Edge Delivery Services Configuration** window, select the **Authentication** tab and copy the value for  **The technical account ID**.
 
-   ```json
-   {
-     "total": 1,
-     "offset": 0,
-     "limit": 1,
-     "data": [
-       {
-         "key": "admin.role.publish",
-         "value": "<tech-account-id>@techacct.adobe.com"
-       }
-     ],
-     ":type": "sheet"
-   }
-   ```
+   * It will look similar to `<tech-account-id>@techacct.adobe.com`
+   * The technical account is the same for all sites on a single AEM author environment.
 
-1. Set the technical account in your configuration with a cURL command similar to the following.
+1. Set the technical account for your repoless configuration with a cURL command similar to the following, using the technical account ID that you copied.
 
    * Adapt the `admin` block to define the users who should have full administrative access to the site.
      * It is an array of email addresses.
