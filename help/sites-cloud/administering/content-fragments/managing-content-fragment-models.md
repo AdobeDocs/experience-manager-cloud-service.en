@@ -44,7 +44,7 @@ As a very quick overview, to work with Content Fragment Models you:
 
 You can use the far left panel of the [Content Fragments console](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) to select  **Content Fragment Models** as the resource type to view, browse and manage:
 
-![Content Fragments console - navigation](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
+![Content Fragments console - navigation](/help/sites-cloud/administering/content-fragments/assets/cf-console-models-navigation.png)
 
 This will open the view for Content Fragment Models:
 
