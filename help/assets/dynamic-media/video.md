@@ -240,10 +240,6 @@ The following table describes the device, browser, and playback method of videos
  </tbody>
 </table>
 
->[!IMPORTANT]
->
->To use DASH for your videos, Adobe Technical Support must first enable it on your account. See [Enable DASH on your account](#enable-dash).
-
 <!--  THIS LINE WAS REMOVED FROM THE TABLE ABOVE ON FEB 28, 2022 BASED ON CQDOC 18692 -RSB <tr>
    <td>Mobile</td>
    <td>BlackBerry&reg;</td>
