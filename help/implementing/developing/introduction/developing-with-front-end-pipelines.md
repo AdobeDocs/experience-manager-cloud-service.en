@@ -26,9 +26,9 @@ The resulting content of the `dist` folder is what Cloud Manager ultimately depl
 
 The front-end build environment supports the following `Node.js` versions:
 
-* 23
+<!-- * 23
 * 22
-* 20
+* 20 -->
 * 18
 * 16
 * 14 (default)

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160px" height="160px" viewBox="0 0 160 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Answer Icon</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle fill="#F5F7F9" cx="80" cy="80" r="80"></circle>
+        <g transform="translate(40, 30)" fill="#1473E6" fill-rule="nonzero">
+            <path d="M32,80 L48,80 L48,68 L32,68 L32,80 Z M40,0 C17.92,0 0,17.92 0,40 C0,54.8 8.28,67.72 20,74.88 L20,60 C13.48,54.24 10,47.52 10,40 C10,23.44 23.44,10 40,10 C56.56,10 70,23.44 70,40 C70,47.52 66.52,54.24 60,60 L60,74.88 C71.72,67.72 80,54.8 80,40 C80,17.92 62.08,0 40,0 Z M30,48 L50,48 L50,28 L30,28 L30,48 Z M20,60 L60,60 L60,56 L20,56 L20,60 Z M24,64 L56,64 L56,60 L24,60 L24,64 Z M28,68 L52,68 L52,64 L28,64 L28,68 Z"></path>
+        </g>
+    </g>
+</svg> 

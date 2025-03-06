@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160px" height="160px" viewBox="0 0 160 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Enterprise Icon</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle fill="#F5F7F9" cx="80" cy="80" r="80"></circle>
+        <g transform="translate(40, 30)" fill="#1473E6" fill-rule="nonzero">
+            <path d="M76,72 L76,28 C76,25.8 74.2,24 72,24 L56,24 L56,8 C56,5.8 54.2,4 52,4 L28,4 C25.8,4 24,5.8 24,8 L24,24 L8,24 C5.8,24 4,25.8 4,28 L4,72 L0,72 L0,80 L80,80 L80,72 L76,72 Z M32,16 L48,16 L48,72 L32,72 L32,16 Z M16,36 L24,36 L24,44 L16,44 L16,36 Z M16,52 L24,52 L24,60 L16,60 L16,52 Z M56,36 L64,36 L64,44 L56,44 L56,36 Z M56,52 L64,52 L64,60 L56,60 L56,52 Z"></path>
+        </g>
+    </g>
+</svg> 
