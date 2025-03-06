@@ -160,6 +160,7 @@ Execute the following steps in Cloud Manager to configure a custom domain in the
 1. Click **[!UICONTROL Ok]**, the **[!UICONTROL STATUS]** updates to **[!UICONTROL Verified]**. The custom domain is ready to use in the delivery URL. 
 
 ![Configure CDN](/help/assets/assets/cdn-configurations-varified.png)
+
 <!--
 ### Onboard API keys {#onboarding-api-keys}
 
@@ -231,6 +232,7 @@ Execute the following steps in your cloud service environment to enable [!DNL Dy
 
 1. [Activate Dynamic Media with OpenAPI](#activate-dynamic-media-with-openapi) 
 1. [Optional: Configure custom domain in delivery tier](#configure-custom-domain-in-delivery-tier) 
+
 <!--
 1. [Onboard API keys using the AEM Dynamic Media API card](#onboarding-api-keys)
 -->
