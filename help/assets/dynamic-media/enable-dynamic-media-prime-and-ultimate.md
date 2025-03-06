@@ -45,7 +45,7 @@ Ensure that you fulfil the following requirements before starting the activation
 Execute these steps to enable [!DNL Dynamic Media with OpenAPI] for your cloud service environment:
 
 1. [Navigate to the Cloud Manager UI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager). 
-1. [Create an environment](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments) if you do not have access to an existing one.
+1. [Create an environment](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments), if you do not have access to an existing one.
 1. Select **[!UICONTROL Click to activate]** in the **[!UICONTROL Dynamic Media]** row of the **[!UICONTROL Environment Information]** section on the Environment details page.
 ![activate dynamic media with OpenAPI capabilities](/help/assets/assets/activate-adv-capabiliites-of-dm-openAPI.png){width="700" align="center"}
 1. Click **[!UICONTROL Activate]** on the confirmation dialog to start the [!DNL Dynamic Media with OpenAPI] activation process. After successful activation, the Cloud Manager displays the following status updates:
