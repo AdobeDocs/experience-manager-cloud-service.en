@@ -64,4 +64,3 @@ In addition to the Dynamic Media Prime features such as AEM Assets integration w
 * [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
 
 For more information on the complete list of capabilities, see [Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md) and [Working with Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
-
