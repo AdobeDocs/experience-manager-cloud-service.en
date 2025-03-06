@@ -57,7 +57,7 @@ Here you can see that there are three main areas:
   * Also shows your IMS organization
   * Provides various [actions](#actions-unselected)
 * The left panel
-  * Shows all [configurations](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) listed as folders
+  * Shows the [paths to all configurations](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) listed as folders
   * Here you can hide, or reveal, the folder tree
   * You can select a specific folder of the tree
   * This can be resized to show nested folders (sub-configurations)
@@ -70,7 +70,7 @@ Here you can see that there are three main areas:
       * [You can select which columns to show](#select-columns-console)
     * [Various fields of information](#information-content-fragment-models) about a Content Fragment Model provide links; depending on the field, these can:
       * Open the appropriate model in the editor
-      * Show information about the configuration
+      * Show information about the path to the configuration
       * Show information about the status of the model
     * [Certain other fields of information](#information-content-fragments) about a Content Fragment Model can be used for [Fast Filtering](#fast-filtering):
       * Select a value in the column and it is immediately applied as a filter
@@ -91,8 +91,8 @@ The main/right panel (table view) of the console provides a range of information
   * Provides a link to open the model in the editor.
 * Locked
   * When the model is locked, this is indicated with a padlock icon.
-* **Configuration**
-  * Provides a link to open the configuration in the console.
+* **Path**
+  * Provides the path as a link to open the configuration in the console.
     Hovering over the folder name will show the JCR path.
 * **Status**
   * Information only.
@@ -118,7 +118,7 @@ When you select a specific model, the properties of that model are shown (as def
 
 ![Content Fragments console - Information for a selected Content Fragment Model](assets/cf-managing-content-fragment-models-selected.png)
 
-* **[Configuration](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)**
+* **[Path](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)**
 * **[Status](#enabling-a-content-fragment-model)**
 * **Title**
 * **Tags**
@@ -228,7 +228,7 @@ For example, select **Enabled** in the **Status** column. Once selected, this wi
    >* If the [use of Content Fragment Models has been enabled](/help/sites-cloud/administering/content-fragments/setup.md)
    >* when you have selected the folder where you want to create the model.
 
-1. Select the **Configuration** and specify the **Name**.
+1. Select the **Path** to the configuration and specify the **Name**.
 
    >[!NOTE]
    >
