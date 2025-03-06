@@ -888,7 +888,7 @@ user-guide-title: AEM as a Cloud Service
   + Transaction Reports {#using-communications}
     + [Transaction Reports Billable APIs ](/help/forms/transaction-reports-billable-apis.md)
     + [Record a transaction for a custom implementation](/help/forms/record-transaction-custom-implementation.md)
-  + Value realization dashboard  {#vr-dashboard}
+  + Value Realization Dashboard  {#vr-dashboard}
     + [Understanding your value realization dashboard](/help/forms/aem-forms-value-realization-dashboard.md)
     + [Using the value realization dashboard to analyze forms & documents usage trends](/help/forms/using-the-value-realization-dashboard.md)
   + Developer API Reference {#aem-forms-developer-api-reference}
