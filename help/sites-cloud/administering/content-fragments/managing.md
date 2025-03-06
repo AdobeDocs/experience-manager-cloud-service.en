@@ -52,7 +52,7 @@ After defining your [Content Fragment Models](#creating-a-content-model) you can
 
 You can use the far left panel of the [Content Fragments console](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) to select  **Content Fragments** as the resource type to view, browse and manage:
 
-![Content Fragments console - navigation](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
+![Content Fragments console - navigation](/help/sites-cloud/administering/content-fragments/assets/cf-console-fragments-navigation.png)
 
 Selecting **Content Fragments** opens the console in a new tab. 
 
