@@ -26,6 +26,8 @@ user-guide-title: AEM as a Cloud Service
   + [Release Information](/help/release-notes/home.md)
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
+    + 2025 {#2025}
+      + [Release Notes for 2025.1.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md) 
     + 2024 {#2024}
       + [Release Notes for 2024.10.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-10-0.md)
       + [Release Notes for 2024.9.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-9-0.md)
@@ -411,7 +413,8 @@ user-guide-title: AEM as a Cloud Service
       + [Overview and Concepts](/help/sites-cloud/administering/content-fragments/overview.md)
       + [Headless Delivery with GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)
       + [Content Fragment Setup](/help/sites-cloud/administering/content-fragments/setup.md)
-      + [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+      + [Managing Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
+      + [Defining Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
       + [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md)
       + [Authoring Fragment Content](/help/sites-cloud/administering/content-fragments/authoring.md)
       + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
@@ -577,6 +580,8 @@ user-guide-title: AEM as a Cloud Service
     + [Set up Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
     + [Work with Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
     + [Configure Dynamic Media](/help/assets/dynamic-media/config-dm.md)
+    + [Dynamic Media Prime and Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)
+    + [Enable Dynamic Media Prime and Ultimate](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md)
     + [Optional - Configure Dynamic Media, General Settings](/help/assets/dynamic-media/dm-general-settings.md)
     + [Optional - Configure Dynamic Media, Publish Setup](/help/assets/dynamic-media/dm-publish-settings.md)
     + [Troubleshoot Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md)
@@ -643,6 +648,7 @@ user-guide-title: AEM as a Cloud Service
     + [Upload and add assets](/help/assets/add-delete-assets-view.md)
     + [Bulk import assets](/help/assets/bulk-import-assets-view.md)
     + [Search and discover assets](/help/assets/search-assets-view.md)
+    + [Custom search filters](/help/assets/custom-search-filters.md)
     + [Asset management tasks](/help/assets/manage-organize-assets-view.md)
     + [Edit images](/help/assets/edit-images-assets-view.md)
     + [Edit videos](/help/assets/edit-videos-assets-view.md)
@@ -724,7 +730,7 @@ user-guide-title: AEM as a Cloud Service
       + [Embed adaptive form based on Core Components to an external web page](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
       + [Embed adaptive form based on Foundation Components to an external web page](/help/forms/embed-adaptive-form-external-web-page.md)
       + Integrate Adaptive Forms with Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage} 
-          +  [Integrate Adobe Marketo Engage with AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
+          + [Integrate Adobe Marketo Engage with AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
           + [Configure new form to integrate with Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md) 
           + [Configure Adobe Marketo Engage data source for existing Adaptive Forms](/help/forms/use-marketo-engage-data-source-in-form.md)
           + [Configure the submit action to Marketo Engage for existing forms](/help/forms/submit-adaptive-form-to-marketo-engage.md)
@@ -882,7 +888,9 @@ user-guide-title: AEM as a Cloud Service
   + Transaction Reports {#using-communications}
     + [Transaction Reports Billable APIs ](/help/forms/transaction-reports-billable-apis.md)
     + [Record a transaction for a custom implementation](/help/forms/record-transaction-custom-implementation.md)
-    + [Understanding Your Value Realization Dashboard](/help/forms/aem-forms-value-realization-dashboard.md)
+  + Value Realization Dashboard  {#vr-dashboard}
+    + [Understanding your value realization dashboard](/help/forms/aem-forms-value-realization-dashboard.md)
+    + [Using the value realization dashboard to analyze forms & documents usage trends](/help/forms/using-the-value-realization-dashboard.md)
   + Developer API Reference {#aem-forms-developer-api-reference}
     + [Adaptive Forms API reference](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
     + [AEM Forms Cloud Service Communications API Reference](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
@@ -1020,9 +1028,22 @@ user-guide-title: AEM as a Cloud Service
     + [Overview](/help/edge/docs/forms/overview.md)
     + [How Edge Delivery Services Forms works?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
     + [FAQ](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
+    + WYSIWYG Authoring {#universal-editor}
+      + [Introduction to Forms Universal Editor for Edge Delivery Services - Complete Guide](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+      + [How to Start Authoring Using Universal Editor - Step by Step Tutorial](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+      + [How to Create Your First Form Using Universal Editor](/help/edge/docs/forms/universal-editor/create-forms.md)
+      + [Universal Editor Interface Guide: Tools, Features, and Navigation Explained](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
+      + [Make Your Forms Mobile-Friendly: Responsive Design in Universal Editor](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+      + [Design Beautiful Forms: Styling and Theming Guide for Universal Editor](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+      + [Add Dynamic Behavior to Forms: Complete Guide to Rule Editor](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+      + [Form Submission Guide: Configure and Customize Form Submit Actions](/help/edge/docs/forms/universal-editor/submit-action.md)
+      + [Protect Your Forms from Spam: Adding reCAPTCHA Security](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+      + [How to Publish and Deploy Forms: Universal Editor Publishing Guide](/help/edge/docs/forms/universal-editor/publish-forms.md)
+      + [Build Custom Form Components: Developer's Guide to Universal Editor](/help/edge/docs/forms/universal-editor/create-custom-component.md)      
     + Document-based authoring {#getting-started-edge-delivery-services-forms}
       + [Build Your First Form: Quick Start Guide with Google Sheets and Excel](/help/edge/docs/forms/tutorial.md)
       + [How to Create Forms Using Google Sheets or Excel: Step-by-Step Guide](/help/edge/docs/forms/create-forms.md)
+      + [Various components of Adaptive Form Block](/help/edge/docs/forms/form-components.md)
       + [Connect Your Form to Google Sheets: Data Collection Setup Guide](/help/edge/docs/forms/submit-forms.md)
       + [Make Your Form Live: Publishing and Data Collection Guide](/help/edge/docs/forms/publish-forms.md)
       + [Form Field Validation: Add Error Checks to Your Forms](/help/edge/docs/forms/validate-forms.md)
@@ -1037,21 +1058,7 @@ user-guide-title: AEM as a Cloud Service
       + [Make Your Form Global: Form Translation Guide](/help/edge/docs/forms/translate-forms.md)
       + [Protect Your Forms: Adding reCAPTCHA Security](/help/edge/docs/forms/recaptacha-forms.md)
       + [Build Custom Form Components: Developer's Guide](/help/edge/docs/forms/custom-components-forms.md)
-      + [Monitor Form Performance: Real Use Monitoring Guide](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
-      + [Deploy Forms on Edge: Publishing Guide for Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md)
-    + WYSIWYG Authoring {#universal-editor}
-      + [Introduction to Forms Universal Editor for Edge Delivery Services - Complete Guide](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-      + [How to Create Your First Form Using Universal Editor - Step by Step Tutorial](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-      + [Universal Editor Interface Guide: Tools, Features, and Navigation Explained](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-      + [Make Your Forms Mobile-Friendly: Responsive Design in Universal Editor](/help/edge/docs/forms/universal-editor/responsive-layout.md)
-      + [Design Beautiful Forms: Styling and Theming Guide for Universal Editor](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-      + [Add Dynamic Behavior to Forms: Complete Guide to Rule Editor](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-      + [Form Submission Guide: Configure and Customize Form Submit Actions](/help/edge/docs/forms/universal-editor/submit-action.md)
-      + [Protect Your Forms from Spam: Adding reCAPTCHA Security](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-      + [How to Publish and Deploy Forms: Universal Editor Publishing Guide](/help/edge/docs/forms/universal-editor/publish-forms.md)
-      + [Build Custom Form Components: Developer's Guide to Universal Editor](/help/edge/docs/forms/universal-editor/create-custom-component.md)      
-    + References {#forms-references}
-      + [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
+      + [Monitor Form Performance: Real Use Monitoring Guides](/help/edge/docs/forms/real-use-monitoring-for-forms.md)     
   + Edge Delivery Resources {#resources}
     + Sidekick {#sidekick}
       + [Using Sidekick](/help/edge/docs/sidekick.md)
@@ -1143,6 +1150,7 @@ user-guide-title: AEM as a Cloud Service
       + [Learn about defining Metadata and Tagging for Content Fragments](/help/journey-headless/author/metadata-tagging.md)
 + Generative AI {#generative-ai}
   + [Generate Variations](/help/generative-ai/generate-variations.md)
+  + [Generate Variations - Integrated in AEM Editors](/help/generative-ai/generate-variations-integrated-editor.md)
   + [Assistant (Limited Beta)](/help/implementing/cloud-manager/aem-ai-assistant.md)
 + Implementing {#implementing}
   + [Implementing Applications for AEM as a Cloud Service](/help/implementing/home.md)
