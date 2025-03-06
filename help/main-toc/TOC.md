@@ -581,6 +581,8 @@ user-guide-title: AEM as a Cloud Service
     + [Set up Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
     + [Work with Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
     + [Configure Dynamic Media](/help/assets/dynamic-media/config-dm.md)
+    + [Dynamic Media Prime and Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)
+    + [Enable Dynamic Media Prime and Ultimate](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md)
     + [Optional - Configure Dynamic Media, General Settings](/help/assets/dynamic-media/dm-general-settings.md)
     + [Optional - Configure Dynamic Media, Publish Setup](/help/assets/dynamic-media/dm-publish-settings.md)
     + [Troubleshoot Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md)
@@ -887,9 +889,9 @@ user-guide-title: AEM as a Cloud Service
   + Transaction Reports {#using-communications}
     + [Transaction Reports Billable APIs ](/help/forms/transaction-reports-billable-apis.md)
     + [Record a transaction for a custom implementation](/help/forms/record-transaction-custom-implementation.md)
-  + Value realization dashboard  {#vr-dashboard}
+  + Value Realization Dashboard  {#vr-dashboard}
     + [Understanding your value realization dashboard](/help/forms/aem-forms-value-realization-dashboard.md)
-    + [Interpreting usage insights](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)
+    + [Using the value realization dashboard to analyze forms & documents usage trends](/help/forms/using-the-value-realization-dashboard.md)
   + Developer API Reference {#aem-forms-developer-api-reference}
     + [Adaptive Forms API reference](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
     + [AEM Forms Cloud Service Communications API Reference](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)

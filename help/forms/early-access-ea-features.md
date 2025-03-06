@@ -141,7 +141,7 @@ The dashboard provides insights through two main sections:
 For detailed information:
 
 * [Understanding your value realization dashboard](/help/forms/aem-forms-value-realization-dashboard.md)
-* [Interpreting form & documents usage insights](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)
+* [Interpreting form & documents usage insights](/help/forms/using-the-value-realization-dashboard.md)
 
 ## Additional Early Access Innovations
 
