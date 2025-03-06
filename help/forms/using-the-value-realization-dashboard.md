@@ -6,14 +6,12 @@ level: Intermediate
 feature: Adaptive Forms, Foundation Components, Core Components
 hide: yes
 hidefromtoc: yes
-exl-id: f58aa2df-dfb6-4eb4-b20d-e81bb01be8a7
 ---
 # Using the value realization dashboard to analyze forms & documents usage trends
 
 <span class="preview"> This feature is available through the early access program. To request access, send an email from your official address to aem-forms-ea@adobe.com. <span>
 
-![Value realization dashboard](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
-
+![Value Realization Dashboard](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
 
 By regularly monitoring the metrics presented in the "Forms Usage Insights" dashboard, you can gain valuable insights into the performance of your forms, documents, and form fragments. Use this data to make informed decisions about form design, fragment management, and overall form strategy.
 
@@ -27,7 +25,7 @@ To access the Forms Usage Insights dashboard:
 1. Navigate to the **Forms** > **Forms and Documents** 
 1. Click **Insights Dashboard**. The dashboard opens in a new window. 
 
-    ![Value realization dashboard](/help/forms/assets/forms-usage-insights.png)
+    ![Value Realization Dashboard](/help/forms/assets/forms-usage-insights.png)
 
 ## Overview
 
