@@ -302,13 +302,13 @@ Now that you have learned the basics, the next step is to [Learn how about Refer
 
       * [Publishing and Previewing a Content Fragment](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment)
 
-  * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+  * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 
     * [Content Fragment Models - Data Types](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
   
     * [Content Fragment Models - Properties](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)
 
-    *  [Content Fragment Models - Allowing Content Fragment Models on your Assets Folder](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)
+    * [Content Fragment Models - Allowing Content Fragment Models on your Assets Folder](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder)
 
 * [Content Fragments - original editor, from the Assets Console](/help/assets/content-fragments/content-fragments-variations.md)
 
