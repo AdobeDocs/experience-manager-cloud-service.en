@@ -65,4 +65,4 @@ Now that you have defined the structures of your Content Fragments by creating m
 
 >[!TIP]
 >
->For complete details about Content Fragment Models, see the [Content Fragment Models documentation](/help/sites-cloud/administering/content-fragments/content-fragment-models.md).
+>For complete details about Content Fragment Models, see the [Content Fragment Models documentation](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md).

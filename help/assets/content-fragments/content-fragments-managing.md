@@ -33,7 +33,7 @@ The [Content Fragment Editor](#opening-the-fragment-editor) provides various [mo
 >
 >Content Fragments are a Sites feature, but are stored as **Assets**. 
 >
->They are now primarily managed with the **[Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** console, though they can still be managed from the **Assets** console. This section covers management from the **Assets** console.
+>They are now primarily managed with the **[Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** console, though they can still be managed from the **Assets** console. This section covers management from the **Assets** console.
 >
 >There are two editors for authoring Content Fragments; although the basic functionality is the same, there are some differences. This section covers the original editor, primarily accessed from the **Assets** console. See the Sites documentation, [Content Fragments - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), for details of the new editor (primarily accessed from the **Content Fragments** console). Both editors have a toggle switch in the top toolbar to provide quick access to the other editor.
 
@@ -192,7 +192,7 @@ Some features in the top toolbar are available from multiple modes:
   * **Modified**: orange
   * **Deactivated**: red
 
-* A button enables you to **Try New Editor**, by directly opening the *new* [Content Fragment Editor](/help/sites-cloud/administering/content-fragments/authoring.md) that is accessible via the [Content Fragments console](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
+* A button enables you to **Try New Editor**, by directly opening the *new* [Content Fragment Editor](/help/sites-cloud/administering/content-fragments/authoring.md) that is accessible via the [Content Fragments console](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console).
 
   >[!WARNING]
   >

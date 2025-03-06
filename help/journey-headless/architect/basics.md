@@ -146,7 +146,7 @@ Now that you have learned the basics, the next step is to [Learn about Creating 
 
 ## Additional Resources {#additional-resources}
 
-* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 
   * [Content Fragment Models - Data Types](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
