@@ -2,6 +2,7 @@
 title: Dynamic Media Prime and Ultimate
 description: Learn more about Dynamic Media Prime and Ultimate, their benefits, and differences between the two.
 role: User
+exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
 ---
 # Dynamic Media Prime and Ultimate {#dynamic-media-prime-ultimate}
 
