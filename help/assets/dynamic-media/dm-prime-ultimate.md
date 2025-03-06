@@ -51,7 +51,11 @@ In addition to the Dynamic Media Prime features such as AEM Assets integration w
 
    * [Content automation](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-automation/overview) 
    
-   * [Dynamic Media templates](/help/assets/dynamic-media/dynamic-media-templates.md).
+   * [Dynamic Media templates](/help/assets/dynamic-media/dynamic-media-templates.md)
+
+   * [Template Basics](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
+
+   * [Visual Configuration](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
 
 ### Prerequisites {#pre-requisites-dm-ultimate}
 
