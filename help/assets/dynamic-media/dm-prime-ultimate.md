@@ -2,6 +2,7 @@
 title: Dynamic Media Prime and Ultimate
 description: Learn more about Dynamic Media Prime and Ultimate, their benefits, and differences between the two.
 role: User
+exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
 ---
 # Dynamic Media Prime and Ultimate {#dynamic-media-prime-ultimate}
 
@@ -64,4 +65,3 @@ In addition to the Dynamic Media Prime features such as AEM Assets integration w
 * [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
 
 For more information on the complete list of capabilities, see [Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md) and [Working with Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
-
