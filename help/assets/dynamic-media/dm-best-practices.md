@@ -340,11 +340,6 @@ To ensure the best quality and engagement for your videos, consider implementing
         It uses protocols like HLS (HTTP Live Streaming) or DASH (`Dynamic Adaptive Streaming over HTTP`) to ensure optimal playback quality.
         Unlike progressive streaming, which delivers videos linearly, adaptive streaming minimizes buffering and offers a seamless viewing experience.
 
-* **Enable DASH on your account (Digital Adaptive Streaming over HTTP):**
-        DASH dynamically serves video content by way of adaptive streaming.
-        To enable DASH, create a support ticket for your environment.
-        Want to learn more? Go to [Enable DASH on your Dynamic Media account](/help/assets/dynamic-media/video.md#enable-dash).
-
 ### Internationalizing videos for multilingual consumption
 
 **Business case:** *Make videos ready for multilingual consumption.*
