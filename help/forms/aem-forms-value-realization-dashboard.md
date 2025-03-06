@@ -1,6 +1,6 @@
 ---
-title: AEM Forms value realization dashboard
-description: Effortlessly monitor form submissions on your AEM Forms instances with our intuitive tracking dashboard.
+title: AEM Forms Value Realization Dashboard
+description: Effortlessly monitor form submissions on your AEM Forms instances with an intuitive tracking dashboard.
 feature: Adaptive Forms, Foundation Components, Core Components
 role: Admin, Developer, Leader, User
 hide: yes
@@ -17,9 +17,7 @@ exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
 
 Welcome to your one-stop shop for understanding the value that your forms are bringing! This dashboard equips you with valuable insights to optimize your forms, streamline workflows, and ultimately achieve your goals faster.
 
-This article provides a conceptual overview of the Value Realization Dashboard and its benefits. For detailed usage instructions and metrics interpretation, see [Interpreting Form Usage insights using the Value Realization dashboard](/help/forms/using-the-value-realization-dashboard.md).
-
-
+This article provides a conceptual overview of the Value Realization Dashboard and its benefits. For detailed usage instructions and metrics interpretation, see [using the value realization dashboard to analyze forms & documents usage trends](/help/forms/using-the-value-realization-dashboard.md).
 
 
 ## What's on the dashboard? {#content-of-dashboard}
@@ -44,7 +42,7 @@ This dashboard is your window into the world of your form usage. Here's a breakd
 
 This dashboard empowers you to make data-driven decisions about your forms. Here's how:
 
-* **Identify Popular Forms**: High submission rates indicate valuable forms. Analyze these for best practices to replicate in others.
+* **Identify Popular Forms**: High submission rates indicate valuable forms. Analyze these forms for best practices to replicate in others.
 * **Optimize Form Creation**: Reduce creation times by identifying bottlenecks. Explore pre-built templates or streamlining workflows.
 * **Boost Fragment Reuse**: Encourage collaboration and discoverability of reusable fragments. Well-organized fragment libraries can significantly improve efficiency.
 
@@ -71,4 +69,4 @@ Remember, this dashboard is your ally! By using it effectively, you can transfor
 
 ## See also
 
-* [Using the Dashboard to Analyze Forms & Documents Usage Trends](/help/forms/using-the-value-realization-dashboard.md)
+* [Using the dashboard to analyze Forms & Documents usage trends](/help/forms/using-the-value-realization-dashboard.md)
