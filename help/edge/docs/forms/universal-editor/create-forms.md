@@ -9,7 +9,7 @@ exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 ---
 # Author standalone forms using the Universal Editor (WYSIWYG)
 
-<span class="preview"> This feature is available through the early access program. To request access, send an email from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> with your GitHub organization name and repository name. For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
+<span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
 
 This article guides you through the process of authoring the standalone forms with the Universal Editor by selecting an Edge Delivery Services-based template from the Form Creation Wizard. You can also publish the authored forms with Universal Editor to AEM Edge Delivery Services.
 
