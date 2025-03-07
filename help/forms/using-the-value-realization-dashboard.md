@@ -6,6 +6,7 @@ level: Intermediate
 feature: Adaptive Forms, Foundation Components, Core Components
 hide: yes
 hidefromtoc: yes
+exl-id: f58aa2df-dfb6-4eb4-b20d-e81bb01be8a7
 ---
 # Using the value realization dashboard to analyze forms & documents usage trends
 
