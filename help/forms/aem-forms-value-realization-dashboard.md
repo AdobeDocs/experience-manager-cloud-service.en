@@ -30,7 +30,6 @@ This dashboard is your window into the world of your form usage. Here's a breakd
 * **Form Submissions**: See trends in how often your forms are being completed.
 * **Document Renditions**: Track the number of documents rendered over time.
 * **Forms Created & Published**: Monitor the rate at which new forms are being built and deployed.
-* **Form Creation & Publication Times**: Analyze the average times for creating and publishing forms to identify areas for improvement.
 
 ### Fragment Usage
 
