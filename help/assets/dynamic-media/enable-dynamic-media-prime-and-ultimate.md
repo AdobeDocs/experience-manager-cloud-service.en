@@ -22,9 +22,11 @@ Execute the following steps in your cloud service environment to enable [!DNL Dy
 1. [Configure [!DNL Dynamic Media] solutions](#configure-dynamic-media-solutions) 
 1. [Create and list [!DNL Dynamic Media] companies](#create-and-list-dynamic-media-companies)
 1. [Configure custom domain in delivery tier](#configure-custom-domain-in-delivery-tier) 
+
 <!--
 1. [Onboard API keys using the [!DNL AEM] [!DNL Dynamic Media] API card](#onboarding-api-keys)
 -->
+
 If you need to enable [!DNL Dynamic Media Prime], see quick links provided in [Enable [!DNL Dynamic Media Prime]](#enable-dynamic-media-prime).
 
 ### Activate [!DNL Dynamic Media with OpenAPI] {#activate-dynamic-media-with-openapi}
