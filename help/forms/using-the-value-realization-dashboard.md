@@ -6,7 +6,6 @@ level: Intermediate
 feature: Adaptive Forms, Foundation Components, Core Components
 hide: yes
 hidefromtoc: yes
-exl-id: f58aa2df-dfb6-4eb4-b20d-e81bb01be8a7
 ---
 # Using the value realization dashboard to analyze forms & documents usage trends
 
@@ -24,7 +23,7 @@ This article provides detailed usage instructions and metrics interpretation for
 To access the Forms Usage Insights dashboard:
 
 1. Navigate to the **Forms** > **Forms and Documents** 
-1. Click **Insights Dashboard**. The dashboard opens in a new window. 
+1. Click **InProduct Dashboard**. The dashboard opens in a new window. 
 
     ![Value Realization Dashboard](/help/forms/assets/forms-usage-insights.png)
 
