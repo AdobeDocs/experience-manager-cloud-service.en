@@ -41,13 +41,14 @@ In addition, using Cloud Manager lets you use [Adobe managed CDN](/help/implemen
 
 ## About adding Edge Delivery Services to a production program or sandbox program
 
-An Edge Delivery Services can be added in a number of different ways depending on how you began your project.
+An Edge Delivery Services can be added in a number of different ways depending on how you began your project or when you want to create the site.
 
 | Use case | Description |
 | --- | --- |
 | I want to add Edge Delivery Services to a new production program. | See [Create production programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).<br>In the wizard, under the **Solutions & Add-ons** tab, select **Edge Delivery Services**. |
 | I want to add Edge Delivery Services to an existing production program. | See [Edit programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).<br>In the **Edit Program** dialog box, under the **Solutions & Add-ons** tab, select **Edge Delivery Services**. |
 | I want to add an Edge Delivery site to Cloud Manager | See [Add an Edge Delivery site](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md). |
+| I want to create an Edge Delivery site now | See [Create an Edge Delivery site quickly in Cloud Manager with the click of a button](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md). |
 | I want to add Edge Delivery Services to a new or existing sandbox program. | See [Create sandbox programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md).<br>When you create a sandbox program, Edge Delivery Services is added to the program by default; you do not need to select it.<br>Existing sandbox programs prior to the general availability of Edge Delivery, inherit Edge Delivery Services automatically. |
 
 >[!NOTE]
@@ -69,7 +70,7 @@ The **Edge Delivery to-do list** in Cloud Manager is an onboarding task checklis
 | --- | --- | --- |
 | 1 | Join the product collaboration channel | Clicking **Submit request now** submits a request to Adobe to create a channel for your company. If the channel already exists, you are forwarded to your company's channel. |
 | 2 | Complete prerequisites | See [View Getting Started tutorial](https://www.aem.live/developer/tutorial). |
-| 3 | Add Edge Delivery Site | See [Add an Edge Delivery site](#eds-add-site). |
+| 3 | Add Edge Delivery Site OR <br>Create site now | See [Add an Edge Delivery site](#eds-add-site).<br>See [Create an Edge Delivery site in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md). |
 | 4 | Add domain | See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 | 5 | Add SSL certificate | See [Add SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
 | 6 | Configure the CDN of your Edge Delivery site | See [Add a CDN configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md). |
