@@ -34,7 +34,7 @@ You can use the following properties to customize how the Content Fragment Selec
 | Property | Type | Required | Default | Description |
 |--- |--- |--- |--- |--- |
 | `imsToken` | string | No | | IMS token used for authentication.  |
-| `repoId` | string  | Yes | | Repository ID used for authentication. |
+| `repoId` | string  | No | | Repository ID used for authentication. |
 | `orgId` | string | Yes | | Organization ID used for authentication. |
 | `locale` | string | No | | Locale data. |
 | `env` | Environment | No | | Content Fragment Selector deployment environment. |
