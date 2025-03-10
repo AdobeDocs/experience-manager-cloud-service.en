@@ -14,7 +14,11 @@ The Micro-Frontend user interface is made available in your application using th
 
 The Content Fragment Selector provides many benefits, such as:
 
+<!--
 * Ease of integration, with any of the Adobe, or non-Adobe, applications using the Vanilla JavaScript library.
+-->
+
+* Ease of integration with any of the Adobe applications.
 * Easy to maintain, as updates to the Content Fragment Selector package are automatically deployed to the Content Fragment Selector available to your application. This means that your application does not need to take action to load the latest modifications.
 * Ease of customization, using properties that control the Content Fragment Selector display within your application.
 * Full-text search, together with customizable filters, allow the quick navigation of Content Fragments within the authoring experience.
@@ -175,21 +179,25 @@ The Content Fragments repository is a collection of Content Fragment folders tha
 
 The Content Fragment Selector also provides out-of-the-box filter options to refine your search results. The following filters are available:
 
-* **Status**: the current state of the fragment; `all`, `published`, `unpublished`, or `no status`
+* **Status**: the current state of the fragment; `New`, `Draft`, `Published`, `Modified`, `Unpublished`
 
 <!-- SCREENSHOT -->
 
 ![Rail view example](/help/headless/assets/content-selector-filters.png) 
 
+<!--
 ### Custom search {#custom-search}
 
 In addition to the full-text search, the Content Fragment Selector lets you search the content within fragments using customized search. You can use custom search filters in both Modal view and Rail view modes.
+-->
 
 <!-- SCREENSHOT -->
 
+<!--
 ![Custom Search](/help/headless/assets/content-selector-custom-search.png)
+-->
 
-You can also create a default search filter to save the for future use. To create custom search filtersfor your Content Fragments, you can use `filterSchema` property.
+You can also create a default search filter to save for future use. To create custom search filters for your Content Fragments, you can use the `filterSchema` property.
 
 ### Search bar {#search-bar}
 
@@ -201,9 +209,15 @@ You can sort fragments in the Content Fragment Selector by various properties. Y
 
 ### Types of view {#types-of-view}
 
+Content Fragment Selector lets you view the fragment in the:
+
+* ![Table view](/help/headless/assets/table-view.png) **Table View**: displays your Content Fragments in rows and columns
+
+<!--
 Content Fragment Selector lets you view the fragment in four different views:
 
 * ![list view](/help/headless/assets/list-view.png) **List View** The list view displays scrollable files and folders in a single column.
 * ![grid view](/help/headless/assets/grid-view.png) **Grid View** The grid view displays scrollable files and folders in a grid of rows and columns.
 * ![gallery view](/help/headless/assets/gallery-view.png) **Gallery View** The gallery view displays files or folders in a center-locked horizontal list.
 * ![waterfall view](/help/headless/assets/waterfall-view.png) **Waterfall** View The waterfall view displays files or folders in the form of a Bridge.
+-->
