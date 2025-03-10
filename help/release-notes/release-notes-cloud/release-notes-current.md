@@ -40,25 +40,23 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-
 ### New features in AEM Sites {#new-features-sites}
 
-** Content Fragment Auto-Tagging ** 
+**Content Fragment Auto-Tagging** 
 
 When creating Content Fragments, it is now possible to automatically inherit tags that were assigned to the content model. This allows for powerful automatic classification of content stored in Content Fragments.
 
-** Content Fragment UUID Support ** 
+**Content Fragment UUID Support** 
 
 Content Fragment UUID support is now GA. The new capability does not alter the path-based behavior of operations within AEM, such as move, rename, rollout, where paths are automatically being adjusted, but it can make external consumption of Content Fragments easier and more stable, especially when using GraphQL queries that directly target individual fragments with ByPath queries. Such queries can break if a fragment path changes. When using the new ById query type, the query now remains stable as the UUID of a fragment does not change in cases where paths do.
 
-** Dynamic Media with OpenAPI support in Content Fragment Editor and GraphQL ** 
+**Dynamic Media with OpenAPI support in Content Fragment Editor and GraphQL** 
 
 Assets that are stored in different AEM as a Cloud Service Programs than Content Fragments, and that are enabled with the new Dynamic Media with OpenAPI capability, can now be used in Content Fragments. The image selector in the new Content Fragment Editor does now allow selecting "remote" repositories as the source for image assets to be referenced in the fragment. And on delivery of such content fragments using AEM GraphQL, the JSON response now includes required properties for remote assets (assetId, repositoryId) so client applications can create respective Dynamic Media with OpenAPI URLs to fetch the image.
 
-** Translation HTTP API ** 
+**Translation HTTP API** 
 
 The AEM Translation HTTP REST API that has been in early adopter mode for a while is now GA. Documentation can be found [here](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/). The API allows automating required steps in the translation management process for content in AEM.
-
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -116,19 +114,27 @@ AEM Forms Document Generation APIs now allows you to [directly upload generated 
 
 ### Java 21 support {#java21}
 
-You can now build code with Java 21, which includes new features (e.g., pattern matching for switch statements, sealed classes) and performance improvements; Java 17 builds are newly supported as well. For configuration steps, including updating your Maven project and library versions, see the [Build environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) article.
+As mentioned in the January release notes, you can now build code with Java 21, which includes new features (e.g., pattern matching for switch statements, sealed classes) and performance improvements; Java 17 builds are newly supported as well. For configuration steps, including updating your Maven project and library versions, see the [Build environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) article.
 
 The more performant Java 21 **runtime** will be automatically deployed when a Java 17 or 21 build is detected. However, we also recommend opting into the Java 21 runtime for environments built with Java 11, by emailing [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com). Learn about [Java 21 runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
 
 >[!IMPORTANT] 
 >
-> Java 21 **runtime** will be gradually deployed to **all** environments (aside from those already built with Java 17 or 21, which already have Java 21 runtime), starting with sandboxes and dev/RDE in February, and then stage/production in April. 
+> In February, the Java 21 **runtime** was deployed to dev/RDE environments (aside from those already built with Java 17 or 21, which already have Java 21 runtime). Java 21 will be applied to stage/production environments in April. 
 
-### Sandbox programs support config pipelines {#sandbox-config-pipelines}
+### Edge Computing - Request for Feedback! {#edge-computing-feedback}
 
-Sandbox programs now support config pipelines, which can be configured in Cloud Manager to deploy yaml files persisted in git. 
+Edge computing brings data processing closer to the browser, which has benefits including reduced latency. Adobe would like to hear if you find this technology useful for AEM Publish Delivery and Edge Delivery Services projects. Additionally, let us know what you envision using it for as input into the product roadmap. 
 
-[Learn more](/help/operations/config-pipeline.md) about config pipelines, which allow for configuration of the CDN, log forwarding, and version purge/audit log purge maintenance tasks.
+Some possible use cases:
+* Authentication with an IdP to gate access to content
+* Rendering dynamic (personalized, localized) content based on geolocation, device type, user attributes, etc.
+* Advanced image manipulation 
+* Middleware between the CDN and an origin
+* A layer between the browser and a third-party API, perhaps to reformat the API response
+* Aggregating data from multiple origins to make it easier for the client browser to render it
+
+Email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with questions and comments!
 
 ### OpenAPI-based APIs - Early Adopter Program {#open-apis-earlyadopter}
 
@@ -142,10 +148,6 @@ Concretely, the API endpoints listed below are available as part of an early ado
 * [Assets APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
 * [Sites and Assets Folders APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/)
 * [Forms Communications APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
-
-### Edge Computing - Request for Feedback! {#edge-computing-feedback}
-
-Edge computing brings data processing closer to the browser, which has benefits including reduced latency. Adobe would love to hear if you find this technology useful for AEM Publish Delivery and Edge Delivery Services projects. Additionally, let us know what you envision using it for as input into the product roadmap. Email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with questions and comments!
 
 ### New AEM Developer Console (Public Beta) {#aem-developer-console-beta}
 

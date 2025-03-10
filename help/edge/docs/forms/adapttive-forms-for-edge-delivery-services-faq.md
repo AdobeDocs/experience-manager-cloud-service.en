@@ -9,6 +9,7 @@ exl-id: b39601a1-7f37-4a7d-a4c8-7e79dca074e5
 ---
 # Frequently Asked Questions (FAQ)
 
+
 ## Multi-Language Support and Global Usage
 
 ### Q: How are multilingual forms handled in EDS and Universal Editor?
