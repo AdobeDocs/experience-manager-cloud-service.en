@@ -1,6 +1,6 @@
 ---
-title: Customize theme and style for an Edge Delivery Services for AEM Forms
-description: Customize theme and style for an Edge Delivery Services for AEM Forms
+title: Customize theme and styles for Edge Delivery Services for AEM Forms
+description: Customize theme and styles for Edge Delivery Services for AEM Forms
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
 role: Admin, Architect, Developer
@@ -8,47 +8,47 @@ role: Admin, Architect, Developer
 
 # Customize the look of your forms
 
-Forms are crucial for user interaction on websites, allowing them to input data. You can use Cascading Style Sheets (CSS) to style fields of a form, enhancing the visual presentation of your forms, and improving the user experience. 
+Forms are crucial for user interaction on websites, allowing them to input data. You can use Cascading Style Sheets (CSS) to style form fields, enhance the visual presentation of your forms, and improve the user experience. 
 
-The Adaptive Forms Block produces a consistent structure for all form fields. The consistent structure makes it easier to develop CSS Selectors to select and style form fields based on field type and field names. 
+The Adaptive Forms Block produces a consistent structure for all form fields. This consistent structure makes it easier to develop CSS Selectors to select and style form fields based on field type and field names. 
 
-This document outlines the HTML Structure for various form components, helps you build an understanding of how to create CSS Selectors for various form fields to style form fields of an Adaptive Forms Block. 
+This document outlines the HTML Structure for various form components and helps you build an understanding of how to create CSS Selectors for various form fields to style form fields of an Adaptive Forms Block. 
 
-By the end of the article:
+By the end of the article, you will:
 
-* You build an understanding of the structure of the default CSS file included with Adaptive Forms Block. 
-* You build an understanding the HTML structure of form components provided by the Adaptive Forms Block, including general components and specific components like dropdowns, radio groups, and checkbox groups.
-* You learn how to style form fields based on field type and field names using CSS Selectors, allowing for consistent or unique styling based on requirements.
+* Build an understanding of the structure of the default CSS file included with Adaptive Forms Block 
+* Build an understanding of the HTML structure of form components provided by the Adaptive Forms Block, including general components and specific components like dropdowns, radio groups, and checkbox groups
+* Learn how to style form fields based on field type and field names using CSS Selectors, allowing for consistent or unique styling based on requirements
 
 
 ## Understanding Form Field Types
 
 Before diving into styling, let's review the common form [field types](/help/edge/docs/forms/form-components.md) supported by the Adaptive Forms Block:
 
-* Input Fields: These include text inputs, email inputs, password inputs, and more.
-* Checkbox Groups: Used for selecting multiple options.
-* Radio Groups: Used for selecting only one option from a group.
-* Dropdowns: Also known as select boxes, used for selecting one option from a list.
-* Panels/Containers: Used to group related form elements together.
+* Input Fields: These include text inputs, email inputs, password inputs, and more
+* Checkbox Groups: Used for selecting multiple options
+* Radio Groups: Used for selecting only one option from a group
+* Dropdowns: Also known as select boxes, used for selecting one option from a list
+* Panels/Containers: Used to group related form elements together
 
 ## Basic Styling Principles
 
 Understanding [fundamental CSS concepts](https://www.w3schools.com/css/css_intro.asp) is crucial before styling specific form fields:
 
-* [Selectors](https://www.w3schools.com/css/css_selectors.asp): CSS Selectors allow you to target specific HTML elements for styling. You can use element selectors, class selectors, or ID selectors.
-* [Properties](https://www.w3schools.com/css/css_syntax.asp): CSS properties define the visual appearance of elements. Common properties for styling form fields include color, background-color, border, padding, margin, and more.
-* [Box Model](https://www.w3schools.com/css/css_boxmodel.asp): The CSS box model describes the structure of HTML elements as a content area surrounded by padding, borders, and margins.
-* Flexbox/Grid: CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) and [Grid layouts](https://www.w3schools.com/css/css_grid.asp) are powerful tools for creating responsive and flexible designs.
+* [Selectors](https://www.w3schools.com/css/css_selectors.asp): CSS Selectors allow you to target specific HTML elements for styling. You can use element selectors, class selectors, or ID selectors
+* [Properties](https://www.w3schools.com/css/css_syntax.asp): CSS properties define the visual appearance of elements. Common properties for styling form fields include color, background-color, border, padding, margin, and more
+* [Box Model](https://www.w3schools.com/css/css_boxmodel.asp): The CSS box model describes the structure of HTML elements as a content area surrounded by padding, borders, and margins
+* Flexbox/Grid: CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) and [Grid layouts](https://www.w3schools.com/css/css_grid.asp) are powerful tools for creating responsive and flexible designs
 
 ## Styling a form for Adaptive Forms Block
 
 The Adaptive Forms Block offers a standardized HTML structure, simplifying the process of selecting and styling form components:
 
-  * **Update default styles**: You can modify the default styles of a form by editing the `/blocks/form/form.css file`. This file provides comprehensive styling for a form, supporting multi-step wizard forms. It emphasizes using custom CSS variables for easy customization, maintenance, and uniform styling across forms. For instructions on adding the Adaptive Forms Block to your project, refer to [create a form](/help/edge/docs/forms/create-forms.md).
+  * **Update default styles**: You can modify the default styles of a form by editing the `/blocks/form/form.css` file. This file provides comprehensive styling for a form, supporting multi-step wizard forms. It emphasizes using custom CSS variables for easy customization, maintenance, and uniform styling across forms. For instructions on adding the Adaptive Forms Block to your project, refer to [create a form](/help/edge/docs/forms/create-forms.md).
 
-  * **Customization**: Use the default `forms.css` as a base and customize it to modify the look and feel of your form components, making it visually appealing and user-friendly. The file's structure encourages organization and maintains styles for forms, promoting consistent designs across your website.
+  * **Customization**: Use the default `forms.css` as a base and customize it to modify the look and feel of your form components, making them visually appealing and user-friendly. The file's structure encourages organization and maintains styles for forms, promoting consistent designs across your website.
 
-## Breakdown of forms.css's structure
+## Breakdown of forms.css structure
 
   * **Global variables:** Defined at the `:root` level, these variables (`--variable-name`) store values used throughout the style sheet for consistency and ease of updates. These variables define colors, font sizes, padding, and other properties. You can declare your own Global variables or modify existing ones to change the form's style.
 
@@ -60,7 +60,7 @@ The Adaptive Forms Block offers a standardized HTML structure, simplifying the p
 
   * **Media queries:** These provide styles for different screen sizes, adjusting layout and styling accordingly.
 
-  * **Miscellaneous styling:**: This section covers styles for success or error messages, file upload areas, and other elements you might encounter in a form.
+  * **Miscellaneous styling:** This section covers styles for success or error messages, file upload areas, and other elements you might encounter in a form.
 
 
 ## Components Structure
@@ -69,35 +69,32 @@ The Adaptive Forms Block offers a consistent HTML structure for various form ele
 
 ### General Components (except dropdowns, radio groups, and checkbox groups):
 
-All form fields, except for dropdowns, radio groups, and checkbox groups, has the following HTML structure:
+All form fields, except for dropdowns, radio groups, and checkbox groups, have the following HTML structure:
 
 +++ HTML Structure of General Components
 
 ```HTML
-
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
    <label for="{FieldId}" class="field-label">First Name</label>
-   <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
+   <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id="{FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
    <div class="field-description" aria-live="polite" id="{FieldId}-description">
-    Hint - First name should be minimum 3 characters and a maximum of 10 characters.
+    Hint - First name should be a minimum of 3 characters and a maximum of 10 characters.
    </div>
 </div>
-
 ```
 
 * Classes: The div element has several classes for targeting specific elements and styling. You require the `{Type}-wrapper` or `field-{Name}` classes to develop a CSS Selector to style a form field:
-   * {Type}: Identifies the component by field type. For example, text (text-wrapper), number (number-wrapper), date (date-wrapper).
-   * {Name}: Identifies the component by name. The name of the field can have only alphanumeric characters, the multiple consecutive dashes in the name are replaced with a single dash `(-)`, and starting and ending dashes in a field name are removed. For example, first-name (field-first-name field-wrapper).
-   * {FieldId}: It is unique identifier for the field, automatically generated.
-   * {Required}: It is a boolean indicating if the field is required.
-* Label: The `label` element provides a descriptive text for the field and associates it with the input element using the `for` attribute.
-* Input: The `input` element defines the type of data to be entered. For example, text, number, email.
-* Description (Optional): The `div` with class `field-description` provides additional information or instructions for the user.
+   * {Type}: Identifies the component by field type. For example, text (text-wrapper), number (number-wrapper), date (date-wrapper)
+   * {Name}: Identifies the component by name. The name of the field can have only alphanumeric characters; multiple consecutive dashes in the name are replaced with a single dash `(-)`, and starting and ending dashes in a field name are removed. For example, first-name (field-first-name field-wrapper)
+   * {FieldId}: It is a unique identifier for the field, automatically generated
+   * {Required}: It is a boolean indicating if the field is required
+* Label: The `label` element provides descriptive text for the field and associates it with the input element using the `for` attribute
+* Input: The `input` element defines the type of data to be entered. For example, text, number, email
+* Description (Optional): The `div` with class `field-description` provides additional information or instructions for the user
 
 **Example of HTML Structure**
 
 ```HTML
-
 <div class="text-wrapper field-first-name field-wrapper" data-required="true">
   <label for="firstName" class="field-label">First Name</label>
   <input type="text" placeholder="Enter your first name" maxlength="50" id="firstName" name="firstName" aria-describedby="firstName-description">
@@ -105,7 +102,6 @@ All form fields, except for dropdowns, radio groups, and checkbox groups, has th
     Please enter your legal first name.
   </div>
 </div>
-
 ```
 
 +++
@@ -113,85 +109,71 @@ All form fields, except for dropdowns, radio groups, and checkbox groups, has th
 +++ CSS Selector for General Components
 
 ```CSS
-  
-  /* Target all input fields within any .{Type}-wrapper  */
-  .{Type}-wrapper  {
-    /* Add your styles here */
-    border: 1px solid #ccc;
-    padding: 8px;
-    border-radius: 4px;
-  }
-  
-  /* Target all input fields within any .{Type}-wrapper  */
-  .{Type}-wrapper input {
-    /* Add your styles here */
-    border: 1px solid #ccc;
-    padding: 8px;
-    border-radius: 4px;
-  }
-  
-  /* Target any element with the class field-{Name}  */
-  .field-{Name} {
-    /* Add your styles here */
-    /* This could be used for styles specific to all elements with   field-{Name} class, not just inputs */
-  }
-  
-  
-  ```
-  
-  * `.{Type}-wrapper`: Targets the outer `div` element based on    the field type. For example, `.text-wrapper` targets all text    fields.
-  * `.field-{Name}`: Further selects the element based on the    specific field name. For example, `.field-first-name` targets    the "First Name" text field. While this selector can be used for   targeting elements with the field-{Name} class, it's important   to be cautious. In this specific case, it wouldn't be useful for styling input fields because it would target not only    the input itself but also the label and description elements. It's recommended to use more specific selectors like the ones you have for targeting text input fields (.text-wrapper   input).
-  
-  
-  
-  **Example CSS Selectors for General Components**
-  
-  ```CSS
-  
-  /*Target all text input fields */
-  
-  text-wrapper input {
-    border: 1px solid #ccc;
-    padding: 8px;
-    border-radius: 4px;
-  }
-  
-  /*Target all fields with name first-name*/
-  
-  first-name input {
-    border: 1px solid #ccc;
-    padding: 8px;
-    border-radius: 4px;
-  }
-  
-  
-  ```
-+++ 
+/* Target all input fields within any .{Type}-wrapper */
+.{Type}-wrapper {
+  /* Add your styles here */
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* Target all input fields within any .{Type}-wrapper */
+.{Type}-wrapper input {
+  /* Add your styles here */
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* Target any element with the class field-{Name} */
+.field-{Name} {
+  /* Add your styles here */
+  /* This could be used for styles specific to all elements with field-{Name} class, not just inputs */
+}
+```
+
+* `.{Type}-wrapper`: Targets the outer `div` element based on the field type. For example, `.text-wrapper` targets all text fields
+* `.field-{Name}`: Further selects the element based on the specific field name. For example, `.field-first-name` targets the "First Name" text field. While this selector can be used for targeting elements with the field-{Name} class, it's important to be cautious. In this specific case, it wouldn't be useful for styling input fields because it would target not only the input itself but also the label and description elements. It's recommended to use more specific selectors like the ones you have for targeting text input fields (.text-wrapper input)
+
+**Example CSS Selectors for General Components**
+
+```CSS
+/* Target all text input fields */
+.text-wrapper input {
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* Target all fields with name first-name */
+.field-first-name input {
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+}
+```
+
++++
 
 ### Dropdown Component
 
 For dropdown menus, the `select` element is used instead of an `input` element:
 
-
-
 +++ HTML Structure of Dropdown Component
 
 ```HTML
-
-<div class="{Type}-wrapper field-{Name} field-wrapper" data-required={required}>
-   <label for="{FieldId}" class="field-label">First Name</label>
+<div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
+   <label for="{FieldId}" class="field-label">Country</label>
    <select id="{FieldId}" name="{Name}"><option></option><option></option></select>
    <div class="field-description" aria-live="polite" id="{FieldId}-description">
-    Hint - First name should be minimum 3 characters and a maximum of 10 characters.
+    Please select your country from the list.
    </div>
 </div>
-
 ```
 
 **Example HTML Structure**
 
 ```HTML
-
 <div class="drop-down-wrapper field-country field-wrapper" data-required="true">
   <label for="country" class="field-label">Country</label>
   <select id="country" name="country">
@@ -203,18 +185,13 @@ For dropdown menus, the `select` element is used instead of an `input` element:
     Please select your country of residence.
   </div>
 </div>
-
-
 ```
 
-+++ 
++++
 
-+++ CSS Selectors for dropdown component
-
-The following CSS lists some example CSS Selectors for dropdown components.
++++ CSS Selectors for Dropdown Component
 
 ```CSS
-
 /* Target the outer wrapper */
 .drop-down-wrapper {
   /* Add your styles here */
@@ -248,24 +225,8 @@ The following CSS lists some example CSS Selectors for dropdown components.
 
 .drop-down-wrapper select::after {
   content: "\25BC";
-  font-size: 12px;
-  color: #ccc;
-  /* Adjust positioning as needed */
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
 }
-
-
 ```
-
-   * Target the Wrapper: The first selector (`.drop-down-wrapper`) targets the outer wrapper element, ensuring styles apply to the entire dropdown component.
-   * Flexbox Layout: Flexbox arranges the label, dropdown, and description vertically for a clean layout.
-   * Label Styling: The label stands out with bolder font weight and a slight margin.
-   * Dropdown Styling: The `select` element receives a border, padding, and rounded corners for a polished look.
-   * Background Color: A consistent background color is set for visual harmony.
-   * Arrow Customization: Optional styles hide the default dropdown arrow and create a custom arrow using a Unicode character and positioning.
 
 +++
 
