@@ -41,7 +41,7 @@ Ensure that you fulfil the following requirements before starting the activation
 
 1. [Access to Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 1. [Your program includes [!DNL Dynamic Media] solutions](#configure-dynamic-media-solutions).
-1. Your organization has [!DNL Dynamic Media] with OpenAPI credits. 
+1. You have [!DNL Dynamic Media] Prime or Ultimate license.
 
 #### Enable [!DNL Dynamic Media with OpenAPI] capabilities in your Cloud Service environment {#enable-dynamic-media-with-openapi-capabilites-in-your-CS-environment}
 
@@ -91,7 +91,7 @@ Configure [!UICONTROL Dynamic Media] solutions to use the basic and advanced cap
 Ensure you have the following to configure [!UICONTROL Dynamic Media] solutions:
 
 1. [Access to Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
-1. Your organization has [!DNL Dynamic Media with OpenAPI] credits.
+1. You have [!DNL Dynamic Media] Ultimate license.
 
 #### Configure [!DNL Dynamic Media] solutions for asset delivery {#configure-dynamic-media-solutions-for-asset-delivery}
 
