@@ -73,12 +73,14 @@ Some of the information recorded per group is:
 
 During migration users are not migrated, but the user-group relationships on the source system would be lost unless they were somehow captured. The Ingestion process captures some of this information in text format in a User Report, which is at the end of the Principal Migration Report. 
 
-### User Report ###
+### User Report {#user-report} ###
+
 In the User Report section users are reported (one per line) along with their email address and a list of IMS-enabled groups that were migrated during this ingestion.  Groups that were not migrated, were migrated during a previous ingestion, or are local groups, are not included in the list.   If a user is not in any migrated IMS-enabled group, and it has no extra notes indicating it is a special case (see **Notes** below), that user does _not_ appear in the report. The groups reported along with each user are those the user is a member of, directly or indirectly, in the source system; since groups in the source system may be nested while in the target system they are not, this list of groups supports the new flattened group structure in IMS.
 
 In the case of a wipe and then a non-wipe ingestion, the groups in a user's list from the non-wipe ingestion will only be those groups migrated during the non-wipe phase.
 
-#### Notes ####
+#### Notes {#user-report-notes} ####
+
 In addition to the groups for each user, there is a field in the User Report where notes about the user may be provided (and a detailed description of the note's meaning is also in the report) for information purposes.  Possible notes are:
 
 * **Note-A** Users which are referenced directly in an ACL will have *Note-A* in their notes section, as this is not a recommended use case or best practice.
