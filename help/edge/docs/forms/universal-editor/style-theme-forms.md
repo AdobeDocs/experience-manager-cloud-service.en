@@ -3,11 +3,12 @@ title: Customize theme and style for an Edge Delivery Services for AEM Forms
 description: Effectively customize the theme and style for AEM Forms delivered via Edge Delivery Services, ensuring a cohesive and branded user experience.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: yes
-hidefromtoc: yes
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
 ---
 # Customize the look of your forms
+
+<span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
+
 
 Forms are crucial for user interaction on websites, allowing them to input data. You can use Cascading Style Sheets (CSS) to style fields of a form, enhancing the visual presentation of your forms, and improving the user experience. 
 

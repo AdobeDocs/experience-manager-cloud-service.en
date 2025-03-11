@@ -1,11 +1,11 @@
 ---
-title: Data Protection and Data Privacy Regulations - Adobe Experience Manager as a Cloud Service Sites Readiness
-description: Learn about Adobe Experience Manager as a Cloud Service Sites support for the various Data Protection and Data Privacy Regulations; including the EU General Data Protection Regulation (GDPR), the California Consumer Privacy Act and how to comply when implementing a new AEM as a Cloud Service project.
+title: Data Protection and Data Privacy Regulations - AEM Sites Readiness
+description: Learn about Experience Manager as a Cloud Service Sites support for the various Data Protection and Data Privacy Regulations; including the EU General Data Protection Regulation (GDPR), the California Consumer Privacy Act and how to comply when implementing a new AEM as a Cloud Service project.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 feature: Compliance
 role: Admin, Architect, Developer, Leader
 ---
-# Adobe Experience Manager as a Cloud Service Sites Readiness for Data Protection and Data Privacy Regulations {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
+# Experience Manager Sites readiness for data protection and data privacy regulations {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >

@@ -73,6 +73,22 @@ Follow this section to learn how to view the Best Practices Analyzer report:
 
    ![Generate Report](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
+>[!NOTE]
+> Starting from BPA version 2.1.54, a new feature has been introduced to obtain the Lighthouse Score.
+
+
+1. After clicking **Generate Report**, a pop-up will appear requesting the AEM Public Site URL for the Lighthouse Score. The user need to enter a valid URL in the provided field.
+
+    ![image](/help/journey-migration/best-practices-analyzer/assets/bpa_popup_url.png)
+
+    1. If the URL is valid, a success message will be displayed.
+
+       ![image](/help/journey-migration/best-practices-analyzer/assets/valid_url.png)
+
+    1. If the URL is invalid, an error message will be shown.
+
+       ![image](/help/journey-migration/best-practices-analyzer/assets/invalid_url.png)
+
 1. Provide the BPA upload key to automatically upload the generated BPA report to [Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md). To get the upload key, navigate to the [Best Practices Analysis in CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
 
    ![Set BPA Upload Key](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)

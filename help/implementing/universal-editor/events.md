@@ -172,29 +172,6 @@ Response Payload
 
 ## UI Events {#ui-events}
 
-### aue:ui-publish {#ui-publish}
-
-The `aue:ui-publish` event is triggered when content is published (with invocation at the `BODY` level).
-
-The payload is a list of item IDs and their publication status.
-
-### aue:ui-select {#ui-select}
-
-The `aue:ui-select` event is triggered when a component is selected.
-
-The payload is the item ID, item properties, and item type of the selected component.
-
-```json
-{
-    details: {
-        resource: string;       // resource of the selected
-        prop: string;           // prop of the selected
-        type: string;           // type of the selected
-        selected: boolean;      // was selected or unselected
-    }
-}
-```
-
 ### aue:ui-preview {#ui-preview}
 
 The `aue:ui-preview` event is triggered when the editing mode of the page is changed to **Preview**.
@@ -263,7 +240,6 @@ The payload is empty for this event.
 
 |Event|Behavior|
 |---|---|
-|`aue:ui-publish`|Do nothing|
 |`aue:ui-select`|Scroll to the selected element|
 |`aue:ui-preview`|Add `class="adobe-ue-preview"` to HTML tag|
 |`aue:ui-edit`|Add `class=adobe-ue-edit"` to HTML tag|
