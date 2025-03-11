@@ -59,7 +59,7 @@ Execute these steps to enable [!DNL Dynamic Media with OpenAPI] for your cloud s
     1. **[!UICONTROL Environment stage]**: **[!UICONTROL Running]**
     1. ![DM activated](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media]**: **[!UICONTROL OpenAPI capabilities are activated]**
     
-       ![activation successful](/help/assets/assets/activation-successful.png){width="700" align="center"}
+       ![activation successful](/help/assets/assets/activation-successful.png){width="700" align="left"}
 
 #### Retry activation {#retry-activation}
 
@@ -68,7 +68,7 @@ If activation fails, the Cloud Manager displays the following status updates:
 * **[!UICONTROL Environment stage]**: **[!UICONTROL DM with OpenAPI Failed]**
 * ![DM activated](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media]**: **[!UICONTROL OpenAPI capabilities failed to activate]**
 
-  ![retry activation](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="center"}
+  ![retry activation](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="left"}
 
 Select **[!UICONTROL Click to retry]** to restart activation.
 
@@ -103,7 +103,7 @@ Execute the following steps:
 
 1. Select **[!UICONTROL Dynamic Media]** solution and click **[!UICONTROL Continue]** to add **[!UICONTROL Dynamic Media]** solution to your program. This action restarts all existing environments in your program and adds the [!DNL Dynamic Media] solution to them. Also, any new environment that you create under your program automatically gets [!DNL Dynamic Media].
 
-   ![set up for production](/help/assets/assets/set-up-for-prod.png){width="500" align="center"}
+   ![set up for production](/help/assets/assets/set-up-for-prod.png){width="500" align="left"}
 
 See [Activate [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi) to start using the capabilities of [!DNL Dynamic Media] with OpenAPI capabilities in your environment.
 
@@ -129,7 +129,7 @@ Execute these steps to create and list a new [!DNL Dynamic Media] company (accou
 
 1. Specify a unique [!DNL Dynamic Media] company name, select a company region and add a list of company admin email IDs separated by commas.
 
-   ![Create Dynamic Media company](/help/assets/assets/create-dynamic-media-company.png){width="500" align="center"}
+   ![Create Dynamic Media company](/help/assets/assets/create-dynamic-media-company.png){width="500" align="left"}
 
 1. Click **[!UICONTROL Create]** to start creating your company. This action adds a new row to **[!UICONTROL [!DNL Dynamic Media] companies]** section and displays **[!UICONTROL Setting up]** as the company's **[!UICONTROL STATUS]**.
 
@@ -149,11 +149,11 @@ If [!DNL Dynamic Media] company creation fails, execute the following steps base
 
 1. If **[!UICONTROL Status]** is Pending, then raise the issue to the customer support team for resolution.
 
-   ![pending status](/help/assets/assets/company-creation-pending-status.png){width="350" align="center"}
+   ![pending status](/help/assets/assets/company-creation-pending-status.png){width="350" align="left"}
 
 1. If **[!UICONTROL Status]** is failed, then retry based on the reason of failure.
 
-   ![failed status](/help/assets/assets/company-creation-failure-status.png){width="380" align="center"}
+   ![failed status](/help/assets/assets/company-creation-failure-status.png){width="380" align="left"}
 
 ### Optional: Configure custom domain in delivery tier {#configure-custom-domain-in-delivery-tier}
 
@@ -190,7 +190,7 @@ Execute the following steps in Cloud Manager to configure a custom domain in the
 
 1. Execute the **[!UICONTROL Configure CNAME]** steps to map [cdn.adobeaemcloud.com](http://cdn.adobeaemcloud.com/) (CNAME record) in the DNS record of the DNS service provider. This mapping ensures that requests received at the custom domain are redirected to Adobe's CDN. 
 
-   ![go live readiness dialogbox](/help/assets/assets/go-live-readiness-dialogbox.png){width="500" align="center"}
+   ![go live readiness dialogbox](/help/assets/assets/go-live-readiness-dialogbox.png){width="500" align="left"}
 
 1. Click **[!UICONTROL Ok]**, the **[!UICONTROL STATUS]** updates to **[!UICONTROL Verified]**. The custom domain is ready to use in the delivery URL. 
 
