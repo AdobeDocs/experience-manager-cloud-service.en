@@ -130,6 +130,9 @@ For all other external repositories that are onboarded with an access token, suc
     Paste the secret in a plain text file. The copied secret is required for your Git vendor's Webhook settings.
 1. Click **Close**. 
 1. Navigate to your Git vendor solution (GitHub Enterprise, GitLab, or Bitbucket).
+
+    All the details on the webhook configuration and the events that are required for each vendor are available in [Add an external repository](#add-ext-repo). Under step 8, see the table.
+
 1. Locate the solution's **Webhook** Settings section.
 1. Paste the Webhook URL that you copied earlier into the URL text field.
     1. Replace the `api_key` query parameter in the Webhook URL with your own real API key.
@@ -139,11 +142,6 @@ For all other external repositories that are onboarded with an access token, suc
 1. Paste the Webhook Secret that you copied earlier into the **Secret** (or **Secret key**, or **Secret token**) text field.
 1. Configure the webhook to send the appropriate events that Cloud Manager expects.
 
-    All the details on the webhook configuration and the events that are required for each vendor are available at the following:
-
-    * [Set up webhooks for GitHub Enterprise Server](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-github-pat?id=webhook-events).
-    * [Set up webhooks for GitLab](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-gitlab-pat?id=webhook-events).
-    * [Set up webhooks for Bitbucket](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-bitbucket-pat?id=webhook-events).
 
 ### Validation of pull requests with webhooks
 
