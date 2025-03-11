@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1350 270">
+  <!-- Generator: Adobe Illustrator 29.3.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 151)  -->
+  <defs>
+    <style>
+      .st0 {
+        stroke: #666;
+        stroke-width: 1.5px;
+      }
+
+      .st0, .st1, .st2, .st3, .st4 {
+        fill: none;
+      }
+
+      .st5, .st6 {
+        fill: #ff8a00;
+      }
+
+      .st7 {
+        font-size: 20px;
+      }
+
+      .st7, .st8, .st9, .st10, .st11 {
+        fill: #fff;
+      }
+
+      .st7, .st12 {
+        font-family: Arial-BoldMT, Arial;
+        font-weight: 700;
+      }
+
+      .st7, .st12, .st13, .st14 {
+        isolation: isolate;
+      }
+
+      .st6, .st15, .st16 {
+        fill-opacity: .2;
+      }
+
+      .st15, .st17 {
+        fill: #2ecc71;
+      }
+
+      .st16, .st18 {
+        fill: #1473e6;
+      }
+
+      .st19 {
+        fill: #9b59b6;
+      }
+
+      .st8, .st2, .st3, .st4, .st10, .st11 {
+        stroke-width: 2px;
+      }
+
+      .st8, .st4 {
+        stroke: #ff8a00;
+      }
+
+      .st9 {
+        stroke: #ddd;
+      }
+
+      .st1 {
+        stroke: #eee;
+      }
+
+      .st2, .st10 {
+        stroke: #1473e6;
+      }
+
+      .st3, .st11 {
+        stroke: #2ecc71;
+      }
+
+      .st20 {
+        fill: #f5f7f9;
+      }
+
+      .st12 {
+        font-size: 16px;
+      }
+
+      .st12, .st13 {
+        fill: #333;
+      }
+
+      .st13, .st14 {
+        font-family: ArialMT, Arial;
+        font-size: 10px;
+      }
+
+      .st21 {
+        fill: #eee;
+      }
+
+      .st14 {
+        fill: #666;
+      }
+    </style>
+  </defs>
+  <rect class="st20" width="1350" height="270" rx="8" ry="8"/>
+  <rect class="st18" x="20" y="15" width="1310" height="40" rx="8" ry="8"/>
+  <text class="st7" transform="translate(515.5 42)"><tspan x="0" y="0">Forms Usage Insights Dashboard</tspan></text>
+  <rect class="st9" x="20" y="70" width="320" height="185" rx="8" ry="8"/>
+  <text class="st12" transform="translate(108 95)"><tspan x="0" y="0">Form Submissions</tspan></text>
+  <line class="st1" x1="50" y1="210" x2="290" y2="210"/>
+  <line class="st1" x1="50" y1="180" x2="290" y2="180"/>
+  <line class="st1" x1="50" y1="150" x2="290" y2="150"/>
+  <line class="st1" x1="50" y1="120" x2="290" y2="120"/>
+  <text class="st14" transform="translate(39.4 210)"><tspan x="0" y="0">0</tspan></text>
+  <text class="st14" transform="translate(33.9 180)"><tspan x="0" y="0">25</tspan></text>
+  <text class="st14" transform="translate(33.9 150)"><tspan x="0" y="0">50</tspan></text>
+  <text class="st14" transform="translate(33.9 120)"><tspan x="0" y="0">75</tspan></text>
+  <text class="st14" transform="translate(41.9 225)"><tspan x="0" y="0">Jan</tspan></text>
+  <text class="st14" transform="translate(81.4 225)"><tspan x="0" y="0">Feb</tspan></text>
+  <text class="st14" transform="translate(121.4 225)"><tspan x="0" y="0">Mar</tspan></text>
+  <text class="st14" transform="translate(162.2 225)"><tspan x="0" y="0">Apr</tspan></text>
+  <text class="st14" transform="translate(200.6 225)"><tspan x="0" y="0">May</tspan></text>
+  <text class="st14" transform="translate(241.9 225)"><tspan x="0" y="0">Jun</tspan></text>
+  <text class="st14" transform="translate(283.6 225)"><tspan x="0" y="0">Jul</tspan></text>
+  <line class="st0" x1="50" y1="110" x2="50" y2="210"/>
+  <line class="st0" x1="50" y1="210" x2="290" y2="210"/>
+  <path class="st2" d="M50,180l40-10,40,15,40-45,40,10,40-30,40,10"/>
+  <path class="st16" d="M50,180l40-10,40,15,40-45,40,10,40-30,40,10v80H50v-30Z"/>
+  <circle class="st10" cx="50" cy="180" r="4"/>
+  <circle class="st10" cx="90" cy="170" r="4"/>
+  <circle class="st10" cx="130" cy="185" r="4"/>
+  <circle class="st10" cx="170" cy="140" r="4"/>
+  <circle class="st10" cx="210" cy="150" r="4"/>
+  <circle class="st10" cx="250" cy="120" r="4"/>
+  <circle class="st10" cx="290" cy="130" r="4"/>
+  <rect class="st9" x="350" y="70" width="320" height="185" rx="8" ry="8"/>
+  <text class="st12" transform="translate(427.3 95)"><tspan x="0" y="0">Document Renditions</tspan></text>
+  <line class="st1" x1="380" y1="210" x2="620" y2="210"/>
+  <line class="st1" x1="380" y1="180" x2="620" y2="180"/>
+  <line class="st1" x1="380" y1="150" x2="620" y2="150"/>
+  <line class="st1" x1="380" y1="120" x2="620" y2="120"/>
+  <text class="st14" transform="translate(369.4 210)"><tspan x="0" y="0">0</tspan></text>
+  <text class="st14" transform="translate(363.9 180)"><tspan x="0" y="0">25</tspan></text>
+  <text class="st14" transform="translate(363.9 150)"><tspan x="0" y="0">50</tspan></text>
+  <text class="st14" transform="translate(363.9 120)"><tspan x="0" y="0">75</tspan></text>
+  <text class="st14" transform="translate(371.9 225)"><tspan x="0" y="0">Jan</tspan></text>
+  <text class="st14" transform="translate(411.4 225)"><tspan x="0" y="0">Feb</tspan></text>
+  <text class="st14" transform="translate(451.4 225)"><tspan x="0" y="0">Mar</tspan></text>
+  <text class="st14" transform="translate(492.2 225)"><tspan x="0" y="0">Apr</tspan></text>
+  <text class="st14" transform="translate(530.6 225)"><tspan x="0" y="0">May</tspan></text>
+  <text class="st14" transform="translate(571.9 225)"><tspan x="0" y="0">Jun</tspan></text>
+  <text class="st14" transform="translate(613.6 225)"><tspan x="0" y="0">Jul</tspan></text>
+  <line class="st0" x1="380" y1="110" x2="380" y2="210"/>
+  <line class="st0" x1="380" y1="210" x2="620" y2="210"/>
+  <path class="st4" d="M380,190l40-20,40-10,40,15,40-20,40-10,40,5"/>
+  <path class="st6" d="M380,190l40-20,40-10,40,15,40-20,40-10,40,5v60h-240v-20Z"/>
+  <circle class="st8" cx="380" cy="190" r="4"/>
+  <circle class="st8" cx="420" cy="170" r="4"/>
+  <circle class="st8" cx="460" cy="160" r="4"/>
+  <circle class="st8" cx="500" cy="175" r="4"/>
+  <circle class="st8" cx="540" cy="155" r="4"/>
+  <circle class="st8" cx="580" cy="145" r="4"/>
+  <circle class="st8" cx="620" cy="150" r="4"/>
+  <rect class="st9" x="680" y="70" width="320" height="185" rx="8" ry="8"/>
+  <text class="st12" transform="translate(783.5 95)"><tspan x="0" y="0">Forms Created</tspan></text>
+  <line class="st1" x1="710" y1="210" x2="950" y2="210"/>
+  <line class="st1" x1="710" y1="180" x2="950" y2="180"/>
+  <line class="st1" x1="710" y1="150" x2="950" y2="150"/>
+  <line class="st1" x1="710" y1="120" x2="950" y2="120"/>
+  <text class="st14" transform="translate(699.4 210)"><tspan x="0" y="0">0</tspan></text>
+  <text class="st14" transform="translate(693.9 180)"><tspan x="0" y="0">25</tspan></text>
+  <text class="st14" transform="translate(693.9 150)"><tspan x="0" y="0">50</tspan></text>
+  <text class="st14" transform="translate(693.9 120)"><tspan x="0" y="0">75</tspan></text>
+  <text class="st14" transform="translate(701.9 225)"><tspan x="0" y="0">Jan</tspan></text>
+  <text class="st14" transform="translate(741.4 225)"><tspan x="0" y="0">Feb</tspan></text>
+  <text class="st14" transform="translate(781.4 225)"><tspan x="0" y="0">Mar</tspan></text>
+  <text class="st14" transform="translate(822.2 225)"><tspan x="0" y="0">Apr</tspan></text>
+  <text class="st14" transform="translate(860.6 225)"><tspan x="0" y="0">May</tspan></text>
+  <text class="st14" transform="translate(901.9 225)"><tspan x="0" y="0">Jun</tspan></text>
+  <text class="st14" transform="translate(943.6 225)"><tspan x="0" y="0">Jul</tspan></text>
+  <line class="st0" x1="710" y1="110" x2="710" y2="210"/>
+  <line class="st0" x1="710" y1="210" x2="950" y2="210"/>
+  <path class="st3" d="M710,165l40-10,40-10,40-10,40-10,40,5,40-10"/>
+  <path class="st15" d="M710,165l40-10,40-10,40-10,40-10,40,5,40-10v90h-240v-45Z"/>
+  <circle class="st11" cx="710" cy="165" r="4"/>
+  <circle class="st11" cx="750" cy="155" r="4"/>
+  <circle class="st11" cx="790" cy="145" r="4"/>
+  <circle class="st11" cx="830" cy="135" r="4"/>
+  <circle class="st11" cx="870" cy="125" r="4"/>
+  <circle class="st11" cx="910" cy="130" r="4"/>
+  <circle class="st11" cx="950" cy="120" r="4"/>
+  <rect class="st9" x="1010" y="70" width="320" height="185" rx="8" ry="8"/>
+  <text class="st12" transform="translate(1032.2 95)"><tspan x="0" y="0">Fragment Usage &amp; Forms Published</tspan></text>
+  <circle class="st21" cx="1080" cy="155" r="45"/>
+  <path class="st18" d="M1080,155v-45c22.5,3,39.2,22.3,39,45h-39Z"/>
+  <path class="st5" d="M1080,155h39c.2,22.7-16.5,42-39,45v-45Z"/>
+  <path class="st17" d="M1080,155v45c-22.5-3-39.2-22.3-39-45h39Z"/>
+  <path class="st19" d="M1080,155h-39c-.2-22.7,16.5-42,39-45v45Z"/>
+  <rect class="st18" x="1040" y="210" width="10" height="10"/>
+  <text class="st13" transform="translate(1055 219)"><tspan x="0" y="0">Header (35%)</tspan></text>
+  <rect class="st5" x="1040" y="230" width="10" height="10"/>
+  <text class="st13" transform="translate(1055 239)"><tspan x="0" y="0">Footer (25%)</tspan></text>
+  <rect class="st17" x="1130" y="210" width="10" height="10"/>
+  <text class="st13" transform="translate(1145 219)"><tspan x="0" y="0">T&amp;C (20%)</tspan></text>
+  <rect class="st19" x="1130" y="230" width="10" height="10"/>
+  <text class="st13" transform="translate(1145 239)"><tspan x="0" y="0">Address (20%)</tspan></text>
+  <rect class="st19" x="1200" y="120" width="20" height="90" rx="2" ry="2"/>
+  <rect class="st19" x="1230" y="140" width="20" height="70" rx="2" ry="2"/>
+  <rect class="st19" x="1260" y="130" width="20" height="80" rx="2" ry="2"/>
+  <rect class="st19" x="1290" y="110" width="20" height="100" rx="2" ry="2"/>
+  <text class="st14" transform="translate(1203.3 220)"><tspan x="0" y="0">Q1</tspan></text>
+  <text class="st14" transform="translate(1233.3 220)"><tspan x="0" y="0">Q2</tspan></text>
+  <text class="st14" transform="translate(1263.3 220)"><tspan x="0" y="0">Q3</tspan></text>
+  <text class="st14" transform="translate(1293.3 220)"><tspan x="0" y="0">Q4</tspan></text>
+</svg>

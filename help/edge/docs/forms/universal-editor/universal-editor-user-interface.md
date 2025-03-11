@@ -1,21 +1,29 @@
 ---
-title: Understanding Universal Editor - Developer Tutorial
+title: Understanding Universal Editor
 description: This tutorial helps you get up and running with the Universal Editor interface. It guides you in understanding the user interface to create your own Edge Delivery Services forms in Universal Editor.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: Yes
-hide from TOC: Yes
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
 ---
+
 # Exploring the Universal Editor (WYSIWYG) Interface
 
-The [Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) offers a simple, visual, and intuitive What You See Is What You Get (WYSIWYG) interface for Adobe Edge Delivery Services (EDS) Forms. It provides a modern interface with drag-and-drop functionality for efficient form authoring. 
+The [Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) offers a simple, visual, and intuitive What You See Is What You Get (WYSIWYG) interface for Adobe Edge Delivery Services Forms. It provides a modern interface with drag-and-drop functionality for efficient form authoring.
 
 ![Universal Editor User Interface](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 
-## Understanding Universal Editor Interface
+## What You'll Learn
 
-When the form author edits the form using the Universal Editor, the console opens an interactive WYSIWYG interface, allowing the user to start editing the form.
+By the end of this tutorial, you'll:
+
+- Understand the main components of the Universal Editor interface
+- Navigate confidently through the different interface sections
+- Know how to access and use essential form-building tools
+- Be familiar with keyboard shortcuts that increase productivity
+
+## Understanding the Universal Editor Interface
+
+When you edit a form using the Universal Editor, the console opens an interactive WYSIWYG interface that allows you to immediately start editing. This interface provides real-time visual feedback as you work, showing exactly how your form will appear to end users.
 
 >[!NOTE]
 >
@@ -23,209 +31,233 @@ When the form author edits the form using the Universal Editor, the console open
 
 ![Universal Editor User Interface](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface1.png)
 
-The Universal Editor interface is divided into four parts:
+The Universal Editor interface is divided into four logical parts:
 
-* **[A: Experience Cloud Header](#experience-cloud-header)**
-* **[B: Universal Editor Toolbar](#universal-editor-toolbar)**
-* **[C: Properties Panel](#properties-panel)**
-* **[D: Editor](#editor)**
+- **[A: Experience Cloud Header](#experience-cloud-header)**
+- **[B: Universal Editor Toolbar](#universal-editor-toolbar)**
+- **[C: Properties Panel](#properties-panel)**
+- **[D: Editor](#editor)**
+
+Let's explore each section in detail.
 
 ### Experience Cloud Header
 
-The Experience Cloud header is located at the top of the console. It provides information about the current location within Experience Cloud. It also allows you to navigate to other Experience Cloud applications.
+The Experience Cloud Header appears at the top of the console and provides navigation context within the broader Adobe Experience Cloud ecosystem. It shows your current location and allows quick access to other Experience Cloud applications.
 
 ![Universal Editor Experience Cloud Header](/help/edge/docs/forms/universal-editor/assets/universal-editor-experience-manager-header.png)
 
+Let's examine each component:
 
-Let’s understand each of its components.
-
-* **Adobe Experience Cloud**
+- **Adobe Experience Cloud**
     
-    You can click the **Adobe Experience Cloud** link on the left side of the screen to navigate to the root of the Experience Manager solution and access tools such as Experience Manager Sites, Experience Manager Assets, and Experience Manager Guides.
+    Clicking the **Adobe Experience Cloud** link on the left side of the screen allows you to navigate to the root of the Experience Manager solution. From there, you can access other tools such as Experience Manager Sites, Experience Manager Assets, and Experience Manager Guides.
 
-    ![Adobe Experience Manager](/help/edge/docs/forms/universal-editor/assets/universal-editor-experience-manager.png){width=50%,height=50%}
+    ![Adobe Experience Manager](/help/edge/docs/forms/universal-editor/assets/universal-editor-experience-manager.png)
 
-* **Organization name**
+- **Organization Name**
     
-    The **Organization name** displays the name of the IMS organization you are currently signed into. You can switch to another IMS organization, if they have access to other organizations, by selecting from the drop-down list. For example, the currently selected IMS organization name is `AEM Forms Internal01`.
+    The **Organization Name** displays the name of the Identity Management System (IMS) organization you're currently signed into. If you have access to multiple organizations, you can switch between them using this dropdown menu. For example, in the screenshot, the currently selected IMS organization is "AEM Forms Internal01."
 
-    ![Organization](/help/edge/docs/forms/universal-editor/assets/universal-editor-organization.png){width=50%,height=50%}
+    ![Organization](/help/edge/docs/forms/universal-editor/assets/universal-editor-organization.png)
 
+- **Help**
 
-* **Help**
-
-    The help icon provides quick access to learning and support resources. The form author can also add the feedback in the **Help** section.
-    ![Help](/help/edge/docs/forms/universal-editor/assets/ue-help.png){width=50%,height=50%}
+    The Help icon provides quick access to learning and support resources. This is particularly valuable when you encounter challenges or need guidance on specific features. You can also submit feedback through this section.
     
+    ![Help](/help/edge/docs/forms/universal-editor/assets/ue-help.png)
 
-* **Notifications**
+- **Notifications**
     
-    The **Notification** section displays the number of currently assigned incomplete notifications, the requests and, current tasks in the IMS organization.
+    The **Notifications** section displays the number of currently assigned incomplete notifications, requests, and current tasks in your IMS organization. Keeping an eye on this section helps you stay on top of your workflow.
 
-    ![Notification](/help/edge/docs/forms/universal-editor/assets/ue-notification.png){width=50%,height=50%}
+    ![Notification](/help/edge/docs/forms/universal-editor/assets/ue-notification.png)
 
-
-* **Solutions**
+- **Solutions**
   
-    You can switch to other Experience Cloud solutions using the **Solutions** link.
-    ![Solutions](/help/edge/docs/forms/universal-editor/assets/ue-solutions.png){width=50%,height=50%}
+    The **Solutions** menu allows you to switch to other Adobe Experience Cloud solutions, making it easy to move between different tools in your workflow.
+    
+    ![Solutions](/help/edge/docs/forms/universal-editor/assets/ue-solutions.png)
 
-
-* **Author**
-    The icon represents the details of the form author, along with the name of the IMS organization in which the author is currently signed in.
-    ![Author](/help/edge/docs/forms/universal-editor/assets/ue-author.png){width=50%,height=50%}
+- **User Profile**
+    
+    This icon displays your profile information, along with the name of the IMS organization you're currently signed into. Click this icon to access account settings and sign-out options.
+    
+    ![Author](/help/edge/docs/forms/universal-editor/assets/ue-author.png)
 
 ### Universal Editor Toolbar
 
-The toolbar enables you to navigate to and edit other forms. It also allows them to publish or unpublish the form, edit the form's properties, and access the rule editor.
+The toolbar provides essential navigation and editing tools. With it, you can move between forms, publish or unpublish forms, edit form properties, and access the rule editor for adding dynamic behaviors.
+
 ![Universal Editor Toolbar](/help/edge/docs/forms/universal-editor/assets/ue-toolbar.png)
 
-Let’s understand each of its components.
+Here's what each component offers:
 
-* **Home Button**
-    The home button allows you to navigate to the start page of the Universal Editor. You can also directly enter the URL of the form they want to edit using the Universal Editor.
+- **Home Button**
+    
+    The Home button returns you to the start page of the Universal Editor. This is useful when you need to start working on a different form. You can also directly enter a URL in the location bar to navigate to any form you want to edit.
+    
     ![Universal Editor Home](/help/edge/docs/forms/universal-editor/assets/ue-home.png)
 
-
-
-* **Location Bar**
-      The **location bar** displays the address of the form that the author is editing. You can also enter another form URL by clicking on the location bar. The shortcut key to open the location bar is key `l`.
-    ![Location Bar](/help/edge/docs/forms/universal-editor/assets/ue-locationbar.png){width=50%,height=50%}
-
-
-
-* **Rule Editor**
+- **Location Bar**
     
-    The **Rule Editor** offers an intuitive visual interface for creating and managing rules. You can add dynamic form behaviour using the Rule Editor.
+    The **Location Bar** displays the address of the form you're currently editing. To switch to a different form, simply click the location bar and enter its URL. The keyboard shortcut to focus the location bar is `l`.
+    
+    ![Location Bar](/help/edge/docs/forms/universal-editor/assets/ue-locationbar.png)
+
+- **Rule Editor**
+    
+    The **Rule Editor** enables you to add dynamic behaviors to your forms through an intuitive visual interface. With it, you can create conditions, validations, and actions that respond to user input, making your forms interactive and intelligent.
 
     ![Rule Editor](/help/edge/docs/forms/universal-editor/assets/ue-ruleeditor.png)
 
     >[!NOTE]
     >
-    > * In Universal Editor, the Rule Editor extension is not enabled by default. To enable the Rule Editor extension write to us at [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official email id.
-    > * To learn how to create rules, refer to the article [Introduction to Rule Editor in WYSIWYG Authoring](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md).
+    > - The Rule Editor extension is not enabled by default in Universal Editor. To enable this powerful feature, contact us at [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official email address.
+    > - To learn how to create and manage rules, refer to the article [Introduction to Rule Editor in WYSIWYG Authoring](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md).
 
-* **Edit Form Properties**
-     You can edit the form properties, such as the form data model and publish date, by clicking the **Edit Form Properties** option.
+- **Edit Form Properties**
+    
+     The **Edit Form Properties** option allows you to configure important form settings such as the Form Data Model (FDM) and publication date. These properties influence how your form behaves and integrates with back-end systems.
+    
     ![Edit Form Properties](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
 
-   
+- **Authentication Header Settings**
+    
+    The **Authentication Header Settings** option lets you set custom authentication headers for local development purposes. This is particularly useful when testing forms that require authentication credentials.
+    
+    ![Authentication Header](/help/edge/docs/forms/universal-editor/assets/ue-authenticationheader.png)
 
-* **Authentication Header Settings**
-    The **authentication header settings** allows the author to set a custom authentication header for local development purposes.
-    ![authentication header](/help/edge/docs/forms/universal-editor/assets/ue-authenticationheader.png){width=50%,height=50%}
- 
+- **Responsive Mode**
+    
+    The **Responsive Mode** feature allows you to test how your form will appear on different devices. By default, the editor opens in desktop layout, but you can switch to mobile view to ensure your form remains usable and attractive on smaller screens.
 
+    ![Responsive mode](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png)
 
-* **Responsive Mode**
-    **Responsive Mode** option allows you to define how the Universal Editor renders the form. By default, the editor opens in a desktop layout, where the height and width are automatically determined by the browser. Alternatively, you can choose to emulate a mobile device and check how the form appears on mobile devices.
-
-    ![Responsive mode](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png){width=50%,height=50%}
-
-
-* **Preview Mode**
-      In preview mode, the form appears in the editor exactly as it is published. This allows the author to navigate the form by clicking links and buttons. Once satisfied with the edits, the author can publish the form for live users. The shortcut key to toggle between edit and preview mode is `p`.
+- **Preview Mode**
+    
+    **Preview Mode** shows your form exactly as it will appear when published. This allows you to interact with the form by clicking links and buttons, just as your users would. This is an essential step before publishing to verify everything works as expected. Toggle between edit and preview modes using the keyboard shortcut `p`.
+    
     ![Preview](/help/edge/docs/forms/universal-editor/assets/ue-preview.png)
 
-* **Open Page**
-    The **Open Page** option opens the form in a new tab for preview. The shortcut key to open the form in preview mode in a new tab is `o`.
+- **Open Page**
+    
+    The **Open Page** button opens your form in a new browser tab for preview. This gives you a full-screen view of your form without the editor interface. The keyboard shortcut for this action is `o`.
+    
     ![Open Page](/help/edge/docs/forms/universal-editor/assets/ue-openpage.png)
 
-* **Publish**
+- **Publish**
     
-    You can make the form available to live users using the **Publish** button. 
-    ![Publish](/help/edge/docs/forms/universal-editor/assets/ue-publish.png){width=50%,height=50%}
+    Once your form is ready for users, the **Publish** button makes it live and available to your audience. This is the final step in your form creation workflow.
+    
+    ![Publish](/help/edge/docs/forms/universal-editor/assets/ue-publish.png)
 
-* **Ellipsis**
-    When the author clicks the (…) ellipsis option, the **Unpublish** option appears. You can unpublish a form by using the **Unpublish** option.
-    ![Ellipsis](/help/edge/docs/forms/universal-editor/assets/ue-ellipsis.png){width=50%,height=50%}
+- **Ellipsis Menu**
+    
+    Clicking the ellipsis (…) reveals additional options, including the ability to **Unpublish** a form that's currently live. This is useful when you need to temporarily remove a form from public access or replace it with an updated version.
+    
+    ![Ellipsis](/help/edge/docs/forms/universal-editor/assets/ue-ellipsis.png)
 
 ### Properties Panel
 
-The **Properties Panel** is located on the right side of the editor. It displays the details of the component selected in the hierarchy of the form. It is the default structure when no component is selected.
-![ue-properties panel](/help/edge/docs/forms/universal-editor/assets/ue-properties-panel.png){width=50%,height=50%}
+The **Properties Panel** appears on the right side of the interface and displays contextual information based on what you've selected in the form. When no component is selected, it shows the overall form structure.
 
+![Properties Panel](/help/edge/docs/forms/universal-editor/assets/ue-properties-panel.png)
 
-Let’s understand each of its components.
+Let's explore its key components:
 
+- **Properties Mode**
+    
+    The **Properties** mode displays settings and options for your currently selected component. This is where you customize individual elements of your form to meet your specific requirements. The keyboard shortcut to open properties of a selected component is `d`.
 
-* **Properties Mode**
-    In **Properties** option shows the properties of the selected component in the editor. For example, the image displays the properties of the selected number input component. You can modify the properties of the component using this option. The shortcut key to open properties of the component is `d`.
+    ![Properties](/help/edge/docs/forms/universal-editor/assets/ue-properties.png)
 
-    ![ue-properties](/help/edge/docs/forms/universal-editor/assets/ue-properties.png){width=50%,height=50%}
+- **Content Tree** 
+    
+    The **Content Tree** displays your form's hierarchical structure. This visual representation helps you understand how components are nested within one another. Clicking any item in the tree selects it in the editor and scrolls to its location. This is especially helpful in complex forms. Toggle the content tree view with the keyboard shortcut `f`.
 
+    ![Content tree](/help/edge/docs/forms/universal-editor/assets/ue-contenttree.png)
 
-* **Content Tree** 
-    The **Content Tree** option displays the form’s hierarchy. When the author clicks on an item in the content tree, the editor selects it and scrolls to that component. The shortcut key to toggle between the content tree view is key `f`.
+- **Generate Variations**
+    
+    The **Generate Variations** feature harnesses artificial intelligence to create different versions of your form based on specific prompts. This helps you experiment with different approaches and designs without manually creating each variation. Prompts can be provided by Adobe or customized by you.
 
-    ![Content tree](/help/edge/docs/forms/universal-editor/assets/ue-contenttree.png){width=50%,height=50%}
-
-
-* **Generate Variations**
-    **Generate Variations** uses artificial intelligence to produce different versions of forms based on specific prompts. These prompts can either be supplied by Adobe or crafted and managed by the form author. 
-
-    ![variation](/help/edge/docs/forms/universal-editor/assets/ue-variations.png){width=50%,height=50%}
-
+    ![Generate Variations](/help/edge/docs/forms/universal-editor/assets/ue-variations.png)
  
     >[!NOTE]
     >
-    > For instructions on using Generate Variations for forms, refer to the [Generate Variations](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations) article
+    > For detailed instructions on using Generate Variations for forms, refer to the [Generate Variations](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations) article.
 
-* **Experimentation**: 
+- **Experimentation**
 
-    **Experimentation** refer to techniques used to test different variations of forms and layout  to optimize user experience and performance.
-    ![experimentation](/help/edge/docs/forms/universal-editor/assets/ue-experimentation.png){width=50%,height=50%}
-
-
-* **Personalization**
-    The **Personalization** option configures the settings to establish a connection between the forms and Adobe Experience Platform (AEP) that are part of the Adobe ecosystem or external applications.
-    ![Personalization](/help/edge/docs/forms/universal-editor/assets/ue-personalizaton.png){width=50%,height=50%}
-
-
-* **A/B Testing**: 
-    **A/B Testing** refer to techniques used to test different variations of forms and layout  to optimize user experience and performance.
-    ![A/B Testing](/help/edge/docs/forms/universal-editor/assets/ue-abtesting.png){width=50%,height=50%}
-
-
-
-* **Task Management**:
-    The **Task Management** feature enables you to streamline workflows and enhance collaboration by allowing teams to manage, track, and execute tasks related to the customization and optimization of forms
-    ![task management](/help/edge/docs/forms/universal-editor/assets/ue-taskmanagement.png){width=50%,height=50%}
-
-.
-* **Content Drafts**
+    The **Experimentation** feature allows you to run controlled tests comparing different form designs and layouts. By analyzing how users interact with each variant, you can make data-driven decisions to optimize conversion rates and user experience.
     
-    The **Content Drafts** option allows you to create drafts for rich text elements. Drafts can be created using existing form text or from scratch. You can edit or delete drafts as needed. By default, only three drafts are visible, but clicking **Show All** displays the rest.
+    ![Experimentation](/help/edge/docs/forms/universal-editor/assets/ue-experimentation.png)
 
-    ![task management](/help/edge/docs/forms/universal-editor/assets/ue-contentdraft.png){width=50%,height=50%}
-
-
-* **Data Source**
+- **Personalization**
     
-    The **Data Source** option allows you to configure data sources and select them when creating a Form Data Model (FDM). It makes all data model objects, properties, and services from the selected data sources available for use in the Form Data Model.
-    ![Data Source](/help/edge/docs/forms/universal-editor/assets/ue-datasource.png){width=50%,height=50%}
-
-* **Add**
-
-    The **Add** option opens a drop-down list of components that can be added to the selected container. For example, in an Adaptive Form section, the list displays the available components that can be added to a form. The shortcut key to open the list of components is `a`.
-    ![Add icon](/help/edge/docs/forms/universal-editor/assets/ue-add.png){width=50%,height=50%}
-
-* **Duplicate**
+    The **Personalization** settings allow you to connect your forms with Adobe Experience Platform (AEP) or external applications. This connection enables you to create tailored form experiences based on user data and behaviors, increasing relevance and engagement.
     
-    The **Duplicate** option creates a copy of the component, which is selected either in the content tree or the editor.
-    ![Duplicate icon](/help/edge/docs/forms/universal-editor/assets/ue-duplicate.png){width=50%,height=50%}
+    ![Personalization](/help/edge/docs/forms/universal-editor/assets/ue-personalizaton.png)
 
+- **A/B Testing**
+    
+    **A/B Testing** helps you compare specific variations of your form to determine which performs better. Unlike broader experimentation, A/B tests typically focus on comparing specific elements or changes to identify the most effective option.
+    
+    ![A/B Testing](/help/edge/docs/forms/universal-editor/assets/ue-abtesting.png)
 
-* **Delete** 
-    The **Delete** option deletes a component, which is selected either in the content tree or the editor.
+- **Task Management**
+    
+    The **Task Management** feature streamlines collaboration by helping your team organize, track, and complete tasks related to form creation and optimization. This keeps projects moving forward efficiently with clear accountability.
+    
+    ![Task Management](/help/edge/docs/forms/universal-editor/assets/ue-taskmanagement.png)
 
-    ![Delete](/help/edge/docs/forms/universal-editor/assets/ue-delete.png){width=50%,height=50%}
+- **Content Drafts**
+    
+    The **Content Drafts** feature allows you to create and save preliminary versions of text elements in your form. You can create drafts using existing form text or start from scratch, then edit or delete them as needed. By default, you'll see three drafts, but clicking **Show All** reveals additional drafts.
+
+    ![Content Drafts](/help/edge/docs/forms/universal-editor/assets/ue-contentdraft.png)
+
+- **Data Source**
+    
+    The **Data Source** option lets you configure and select the data sources for your Form Data Model (FDM). This integration makes all data model objects, properties, and services from your selected sources available for use in the form, enabling dynamic data retrieval and submission.
+    
+    ![Data Source](/help/edge/docs/forms/universal-editor/assets/ue-datasource.png)
+
+- **Add**
+
+    The **Add** button reveals a dropdown list of components that can be added to the currently selected container. For example, when an Adaptive Form section is selected, this list shows all components that can be added to that section. The keyboard shortcut to open this component list is `a`.
+    
+    ![Add Icon](/help/edge/docs/forms/universal-editor/assets/ue-add.png)
+
+- **Duplicate**
+    
+    The **Duplicate** option creates an exact copy of your selected component. This saves time when you need multiple similar elements, as you can duplicate and then modify instead of creating from scratch.
+    
+    ![Duplicate Icon](/help/edge/docs/forms/universal-editor/assets/ue-duplicate.png)
+
+- **Delete** 
+    
+    The **Delete** option removes the selected component from your form. Be careful when using this option, as it immediately removes the element without a confirmation prompt.
+
+    ![Delete](/help/edge/docs/forms/universal-editor/assets/ue-delete.png)
 
 ### Editor
 
-The editor allows you to edit the form, and the form specified in the location bar is rendered in the editing area. If the editor is in preview mode, you can navigate the form using the available buttons and links.
-![Editor](/help/edge/docs/forms/universal-editor/assets/ue-editor.png){width=50%,height=50%}
+The Editor is the central workspace where you create and modify your form. It displays the form specified in the location bar and provides a WYSIWYG experience that shows exactly how your form will appear to users. In preview mode, you can interact with the form just as your users would, testing navigation through buttons and links.
 
-## See also
+![Editor](/help/edge/docs/forms/universal-editor/assets/ue-editor.png)
 
-{{universal-editor-see-also}}
+The Editor is where you'll spend most of your time, adding components, configuring their properties, and arranging them to create an intuitive, effective form experience.
+
+## Keyboard Shortcuts Summary
+
+To boost your productivity, remember these essential keyboard shortcuts:
+
+- `l` - Focus the location bar
+- `p` - Toggle between edit and preview modes
+- `o` - Open the form in a new tab
+- `d` - Open properties of the selected component
+- `f` - Toggle the content tree view
+- `a` - Open the list of components to add
+
+
