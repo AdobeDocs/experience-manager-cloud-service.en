@@ -117,7 +117,7 @@ To see the existing companies (accounts) or add a new [!DNL Dynamic Media] compa
 
 1. [Access to Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 
-1. [!DNL Dynamic Media with OpenAPI] credits in your organization.
+1. You have [!DNL Dynamic Media] Ultimate license.
 
 #### Create and list [!DNL Dynamic Media] companies in your IMS organization {#create-and-list-dynamic-media-companies-in-your-ims-organisation}
 
