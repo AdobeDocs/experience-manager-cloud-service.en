@@ -29,7 +29,7 @@ In the Universal Editor, you can create:
 * [Schema-based form](#schema-based-form): A schema-based form uses a data source configured during form creation in the **Data** tab, automatically binding data to form fields.
 * [Non-schema-based form](#non-schema-based-form): A non-schema-based form requires you to manually add a data source and bind each field from the content tree. 
 
-![Types of Form in Universal Editor](/help/edge/docs/forms/universal-editor/assets/form-types.png)
+![Types of Form in Universal Editor](/help/edge/docs/forms/universal-editor/assets/form-types.png){width="50%" align="center" height="50%"}
  
 These methods give you the flexibility to connect data models with forms based on your needs.
 
@@ -103,7 +103,7 @@ When you create a non-schema-based form, no data source is configured. You can e
 
     When you select the Form Data Model (FDM), the warning dialog appears. Click **OK** to close the dialog.
 
-    ![Form  Model Wizard](/help/edge/docs/forms/universal-editor/assets/form-model-wizard.png){width="100%" align="center"}
+    ![Form  Model Wizard](/help/edge/docs/forms/universal-editor/assets/form-model-wizard.png)
 
 1. Click **[!UICONTROL Save & Close]**.
 1. Open the form for editing. The form opens in the Universal Editor for authoring.
