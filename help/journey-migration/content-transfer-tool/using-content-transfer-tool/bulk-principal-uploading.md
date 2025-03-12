@@ -85,33 +85,32 @@ The Admin Console includes two separate actions for uploading and editing user d
 To use the Admin Console's bulk user upload functionality, follow these steps:
 
 1. Download the bulk user file from CAM
-1. In CAM, go to **Content Transfer** and select **Ingestion Jobs**. 
-1. Click the ellipsis (...) on the line of the Ingestion in question, and choose **View principal summary**.
-1. On the dialog that appears, select **Bulk User File** from the dropdown list under **Download a file...** and click the **Download** button.
-1. Save the resulting CSV file
+   1. In CAM, go to **Content Transfer** and select **Ingestion Jobs**. 
+   1. Click the ellipsis (...) on the line of the Ingestion in question, and choose **View principal summary**.
+   1. On the dialog that appears, select **Bulk User File** from the dropdown list under **Download a file...** and click the **Download** button.
+   1. Save the resulting CSV file
 1. Edit the bulk user file
+   * Each line represents a user to be uploaded, and has fifteen fields (the fields' names make up the file's first line). Some fields are optional and are not described here. Refer to [Bulk User CSV format](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format).  The fields are:
 
-  * Each line represents a user to be uploaded, and has fifteen fields (the fields' names make up the file's first line). Some fields are optional and are not described here. Refer to [Bulk User CSV format](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format).  The fields are:
+      * _Identity Type_ - Optional.  If not specified, it will be created as an Adobe ID
+      * _Username_ - Optional, and not used for Adobe ID uploads
+      * _Domain_ - Optional, and not used for Adobe ID uploads
+      * _Email_ - Required.  The email address will be used for verification the first time the user logs in
+      * _First Name_ - Optional.  Should be used because it appears, with Last Name, in several places
+      * _Last Name_ - Optional.  Should be used because it appears in several places
+      * _Country Code_ - Optional, and not used for Adobe ID uploads
+      * _ID_ - Optional, and not used for Adobe ID uploads
+      * _Product Configurations_ - Optional. This field will also be inherited from any groups the user is a member of
+      * _Admin Roles_ -  Optional. Use this field if the user is an Administrator. See [Bulk User CSV format](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) for details
+      * _Product Configurations Administered_ - Optional.  See [Bulk User CSV format](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) for details. This field will also be inherited from any groups the user is a member of
+      * _User Groups_ - Optional. A list of groups the user should be assigned to as a member. Each group must be an already existing IMS group. When the bulk user file is downloaded from CAM, this field is pre-populated with names of IMS-enabled group the user was a member of (directly or indirectly) before the migration
+      * _User Groups Administered_ - Optional.  See [Bulk User CSV format](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) for details. This field will also be inherited from any groups the user is a member of
+      * _Products Administered_ - Optional.  See [Bulk User CSV format](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) for details. This field will also be inherited from any groups the user is a member of
+      * _Contracts Administered_ - Optional.  See [Bulk User CSV format](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) for details
+      * _Developer Access_ - Optional.  See [Bulk User CSV format](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) for details
+      * _Auto Assigned Products_ - Optional.  See [Bulk User CSV format](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) for details
 
-    * _Identity Type_ - Optional.  If not specified, it will be created as an Adobe ID
-    * _Username_ - Optional, and not used for Adobe ID uploads
-    * _Domain_ - Optional, and not used for Adobe ID uploads
-    * _Email_ - Required.  The email address will be used for verification the first time the user logs in
-    * _First Name_ - Optional.  Should be used because it appears, with Last Name, in several places
-    * _Last Name_ - Optional.  Should be used because it appears in several places
-    * _Country Code_ - Optional, and not used for Adobe ID uploads
-    * _ID_ - Optional, and not used for Adobe ID uploads
-    * _Product Configurations_ - Optional. This field will also be inherited from any groups the user is a member of
-    * _Admin Roles_ -  Optional. Use this field if the user is an Administrator. See [Bulk User CSV format](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) for details
-    * _Product Configurations Administered_ - Optional.  See [Bulk User CSV format](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) for details. This field will also be inherited from any groups the user is a member of
-    * _User Groups_ - Optional. A list of groups the user should be assigned to as a member. Each group must be an already existing IMS group. When the bulk user file is downloaded from CAM, this field is pre-populated with names of IMS-enabled group the user was a member of (directly or indirectly) before the migration
-    * _User Groups Administered_ - Optional.  See [Bulk User CSV format](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) for details. This field will also be inherited from any groups the user is a member of
-    * _Products Administered_ - Optional.  See [Bulk User CSV format](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) for details. This field will also be inherited from any groups the user is a member of
-    * _Contracts Administered_ - Optional.  See [Bulk User CSV format](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) for details
-    * _Developer Access_ - Optional.  See [Bulk User CSV format](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) for details
-    * _Auto Assigned Products_ - Optional.  See [Bulk User CSV format](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) for details
-
-* When editing the CSV some applications may add additional quotes upon saving, which causes the processing to fail. It is good practice to inspect the raw CSV in a simple text editor to ensure that each field has only one opening and one closing quote (and they should not be "smart quotes")
+   * When editing the CSV some applications may add additional quotes upon saving, which causes the processing to fail. It is good practice to inspect the raw CSV in a simple text editor to ensure that each field has only one opening and one closing quote (and they should not be "smart quotes")
 
 1. Use the Admin Console to import the bulk user file
 
