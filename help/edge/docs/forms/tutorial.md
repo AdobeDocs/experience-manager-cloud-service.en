@@ -1,6 +1,6 @@
 ---
 title: Getting Started with Edge Delivery Services for AEM Forms - Developer Tutorial
-description: This tutorial helps get you up-and-running with a new Adobe Experience Manager Forms (AEM) project. In ten to twenty minutes, you will have created your own forms.s
+description: This tutorial helps get you up-and-running with a new Adobe Experience Manager Forms (AEM) project. In ten to twenty minutes, you will have created your own forms.
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
@@ -268,12 +268,10 @@ Production: `https://<branch>--<repo>--<owner>.aem.live/`
 
 Congratulations! You've successfully set up your local development environment and deployed your changes.
 
-
-<!--
 ## Add Adaptive Forms Block to your existing AEM project
 
-
->[!VIDEO](https://video.tv.adobe.com/v/3427789)
+<!--
+>[!VIDEO](https://video.tv.adobe.com/v/3427789)-->
 
 If you have an existing AEM Project, you can integrate the Adaptive Forms Block into your current project to get started on form creation. 
 
@@ -310,7 +308,6 @@ To Integrate:
 1. Commit and push these changes to your AEM Project repository on GitHub.
 
 That's it! The Adaptive Forms Block is now part of your AEM project. You can start creating and adding forms to your AEM pages.
--->
 
 ## Troubleshooting GitHub build issues 
 
