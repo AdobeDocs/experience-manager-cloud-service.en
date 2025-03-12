@@ -11,7 +11,7 @@ exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
 | Version | Article link |
 | -------- | ---------------------------- |
 | Universal Editor-based Authoring  |    This article                  |
-| Document-based authoring     | [Click here](/help/edge/docs/forms/tutorial.md)   |
+| Document-based Authoring     | [Click here](/help/edge/docs/forms/tutorial.md)   |
 
 
 <span class="preview"> This feature is available through the early access program. To request access, send an email from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> with your GitHub organization name and repository name. For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
