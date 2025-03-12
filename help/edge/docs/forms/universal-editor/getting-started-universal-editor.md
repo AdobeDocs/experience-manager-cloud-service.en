@@ -16,7 +16,6 @@ exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
 
 <span class="preview"> This feature is available through the early access program. To request access, send an email from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> with your GitHub organization name and repository name. For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
 
-
 In today's digital age, user-friendly forms are essential for all organizations. Edge Delivery Services Forms are created using the Universal Editor, which offers WYSIWYG (what-you-see-is-what-you-get) capabilities. It provides a modern, intuitive interface for efficient form authoring.
 
 AEM Forms provide a block, known as the Adaptive Forms Block, to help you easily create Edge Delivery Services Forms to capture and store data. You can [create a new AEM Project pre-configured with the Adaptive Forms Block](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) or [add the Adaptive Forms Block to an existing AEM Project](#add-adaptive-forms-block-to-your-existing-aem-project).
