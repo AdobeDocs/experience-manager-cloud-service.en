@@ -136,8 +136,6 @@ To copy the sample content to your own content folder and point your GitHub repo
 
         This connects your content folder to your website. After updating the reference, you might experience "404 Not Found" errors initially. This is because your content is not been previewed yet. The next section explains how to start authoring and previewing your content.
 
-
-
 ### Preview and publish your content
 
 After completing the last step, your new content source isn't empty, but it won't be visible on your website until it's promoted to the preview or live stages. Currently, this might cause 404 errors.
