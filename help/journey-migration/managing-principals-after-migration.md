@@ -53,4 +53,4 @@ Since these groups are not in IMS, the bulk upload tool cannot be used to create
 * Add (or bulk upload) users to the new group(s) in Admin Console.
 * When the user logs in for the first time, their IMS user will be created in AEM and they should have access to the new group(s) and thereby the original collection groups.
 
-Note: For bulk assigning of users, the above steps must be used to create the users in IMS; users that already exist in IMS cannot be created again via bulk upload, though the bulk editor can be used to make those kinds of changes (See [Admin Console Bulk User upload](https://helpx.adobe.com/ca/enterprise/using/bulk-upload-users.html) under **Edit user details**).
+Note: For bulk assigning of users, the above steps must be used to create the users in IMS; users that already exist in IMS cannot be created again via bulk upload, though the bulk editor can be used to make those kinds of changes (See [Admin Console Bulk User upload](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html) under **Edit user details**).
