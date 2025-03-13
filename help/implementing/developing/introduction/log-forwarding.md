@@ -191,13 +191,15 @@ Configurations for the supported logging destinations are listed below, along wi
     awsS3:
       default:
         enabled: true
-        region: "eu-central-1"
+        region: "your-bucket-region"
         bucket: "your_bucket_name"
         accessKey: "${{AWS_S3_ACCESS_KEY}}"
         secretAccessKey: "${{AWS_S3_SECRET_ACCESS_KEY}}"
   ```
 
-In order to use the S3 Log Forwarder, you will need to preconfigure an AWS IAM user with appropriate policy for accessing your S3 bucket.  The IAM policy should allow the user to use `s3:putObject`.  For example:
+In order to use the S3 Log Forwarder, you will need to preconfigure an AWS IAM user with appropriate policy for accessing your S3 bucket.  See [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) for how to create IAM user credetials.
+
+The IAM policy should allow the user to use `s3:putObject`.  For example:
 
  ```json
  {
@@ -215,7 +217,7 @@ In order to use the S3 Log Forwarder, you will need to preconfigure an AWS IAM u
 See [here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) for more information on AWS Bucket Policy implementation.
 
 >![NOTE]
->Logs written to S3 periodically, every 10 minutes for each log file type.  This may result in an initial delay for logs being written to S3 once the feature is toggled. 
+>Logs written to S3 periodically, every 10 minutes for each log file type.  This may result in an initial delay for logs being written to S3 once the feature is toggled.
 
 ### Azure Blob Storage {#azureblob}
 
