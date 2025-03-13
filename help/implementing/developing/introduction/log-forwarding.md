@@ -13,6 +13,7 @@ role: Admin, Architect, Developer
 
 Customers with a license with a logging vendor or who host a logging product can have AEM logs (including Apache/Dispatcher) and CDN logs forwarded to the associated logging destination. AEM as a Cloud Service supports the following logging destinations:
 
+* Amazon S3
 * Azure Blob Storage
 * Datadog
 * Elasticsearch or OpenSearch
@@ -180,6 +181,38 @@ For CDN logs, you can allow-list the IP addresses, as described in [Fastly docum
 ## Logging Destination Configuration {#logging-destinations}
 
 Configurations for the supported logging destinations are listed below, along with any specific considerations.
+
+### Amazon S3 {#amazons3}
+
+  ```yaml
+  kind: "LogForwarding"
+  version: "1.0"
+  data:
+    awsS3:
+      default:
+        enabled: true
+        region: "eu-central-1"
+        bucket: "your_bucket_name"
+        accessKey: "${{AWS_S3_ACCESS_KEY}}"
+        secretAccessKey: "${{AWS_S3_SECRET_ACCESS_KEY}}"
+  ```
+
+In order to use the S3 Log Forwarder, you will need to preconfigure an AWS IAM user with appropriate policy for accessing your S3 bucket.  The IAM policy should allow the user to use `s3:putObject`.  For example:
+
+ ```json
+ {
+    "Version": "2012-10-17",
+    "Statement": [{
+        "Effect": "Allow",
+        "Action": [
+            "s3:PutObject"
+        ],
+        "Resource": "arn:aws:s3:::your_bucket_name/*"
+    }]
+}
+```
+
+See [here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) for more information on AWS Bucket Policy implementation.
 
 ### Azure Blob Storage {#azureblob}
 
