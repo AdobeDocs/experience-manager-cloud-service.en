@@ -24,7 +24,7 @@ This article provides detailed usage instructions and metrics interpretation for
 To access the Forms Usage Insights dashboard:
 
 1. Navigate to the **Forms** > **Forms and Documents** 
-1. Click **Insights Dashboard**. The dashboard opens in a new window. 
+1. Click **InProduct Dashboard**. The dashboard opens in a new window. 
 
     ![Value Realization Dashboard](/help/forms/assets/forms-usage-insights.png)
 

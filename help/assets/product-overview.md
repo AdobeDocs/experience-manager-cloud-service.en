@@ -1,9 +1,9 @@
 ---
-title: Explore Content Hub
+title: Content Hub Overview
 description: Learn more about Content Hub, its key benefits, how to access it, and how to provide feedback around the options available in Content Hub.
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
 ---
-# Explore Content Hub {#overview-content-hub}
+# Content Hub Overview {#overview-content-hub}
 
 | [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
 | ------------- | --------------------------- |----|-----|
