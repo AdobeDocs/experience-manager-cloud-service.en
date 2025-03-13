@@ -1,3 +1,19 @@
+
+Comments:  in each section where it says to run a POST and PUT command can we put an example?  For instance, 
+
+curl -X PUT https://cloudmanager.adobe.io/api/program/{programId}/environment/{environmentId}/advancedNetworking \
+-H 'x-gw-ims-org-id: <ORGANIZATION_ID>' \
+-H 'x-api-key: <CLIENT_ID>' \
+-H 'Authorization: Bearer <ACCESS_TOKEN>' \
+-H 'Content-Type: application/json' \
+-d @./vpn-configure.json
+
+These details are in the VPN tutorial but it is confusing to have to bounce back and forth between the articles.
+
+https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/vpn
+
+In this document it lists 'POST `/program/<programId>/networkInfrastructures` but leaves out the fact that  you need to to go to 'https://cloudmanager.adobe.io/api etc..'
+
 ---
 title: Configuring Advanced Networking for AEM as a Cloud Service
 description: Learn how to configure advanced networking features like VPN or a flexible or dedicated egress IP address for AEM as a Cloud Service
