@@ -13,7 +13,7 @@ role: Admin, Architect, Developer
 
 Customers with a license with a logging vendor or who host a logging product can have AEM logs (including Apache/Dispatcher) and CDN logs forwarded to the associated logging destination. AEM as a Cloud Service supports the following logging destinations:
 
-* Amazon S3[^1]
+* Amazon S3 (private beta, see [^1])
 * Azure Blob Storage
 * Datadog
 * Elasticsearch or OpenSearch
