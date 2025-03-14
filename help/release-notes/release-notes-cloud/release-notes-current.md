@@ -54,6 +54,10 @@ Content Fragment UUID support is now GA. The new capability does not alter the p
 
 Assets that are stored in different AEM as a Cloud Service Programs than Content Fragments, and that are enabled with the new Dynamic Media with OpenAPI capability, can now be used in Content Fragments. The image selector in the new Content Fragment Editor does now allow selecting "remote" repositories as the source for image assets to be referenced in the fragment. And on delivery of such content fragments using AEM GraphQL, the JSON response now includes required properties for remote assets (assetId, repositoryId) so client applications can create respective Dynamic Media with OpenAPI URLs to fetch the image.
 
+**Content Fragment Editor Rollout**
+
+We will continue enabling the new Spectrum UI-based Content Fragment Editor in AEM as a Cloud Service. After becoming the default for all Cloud Service Developer environments in November 2024, it will be set as default for all Stage environments on April 1, 2025, and for all Production environments on May 1, 2025. In all cases, users will still have the option to revert to the traditional Content Fragment Editor in AEM Touch UI.
+
 **Translation HTTP API** 
 
 The AEM Translation HTTP REST API that has been in early adopter mode for a while is now GA. Documentation can be found [here](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/). The API allows automating required steps in the translation management process for content in AEM.
