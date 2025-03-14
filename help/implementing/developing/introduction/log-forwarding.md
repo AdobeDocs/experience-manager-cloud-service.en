@@ -19,6 +19,7 @@ Customers with a license with a logging vendor or who host a logging product can
 * Elasticsearch or OpenSearch
 * HTTPS
 * Splunk
+* Sumo Logic (private beta, see [^1])
 
 Log forwarding is configured in a self-service manner by declaring a configuration in Git, and can be deployed via Cloud Manager config pipelines to dev, stage, and production environment types. The configuration file can be deployed to Rapid Development Environments (RDEs) using command line tooling.
 
@@ -26,7 +27,7 @@ There is an option for the AEM and Apache/Dispatcher logs to be routed through A
 
 Note that the network bandwidth associated with logs sent to the logging destination are considered part of your organization's Network I/O usage.
 
-[^1] Amazon S3 is in Private Beta and only supports AEM logs (including Apache/Dispatcher). Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to request access.
+[^1] Amazon S3 and Sumo Logic are in Private Beta and only support AEM logs (including Apache/Dispatcher). Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to request access.
 
 ## How This Article is Organized {#how-organized}
 
@@ -429,24 +430,30 @@ Considerations:
 >
 > [If migrating](#legacy-migration) from legacy Log Forwarding to this self-serve model, the `sourcetype` field's values sent to your Splunk index may have changed, so adjust accordingly.
 
-<!--
 ### Sumo Logic {#sumologic}
 
-   ```yaml
-   kind: "LogForwarding"
-   version: "1"
-   metadata:
-     envTypes: ["dev"]
-   data:
-     splunk:
-       default:
-         enabled: true
-         host: "https://collectors.de.sumologic.com"
-         uri: "/receiver/v1/http"
-         privateKey: "${{SomeOtherToken}}"
-   
-   ```   
--->
+When configuring Sumo Logic for data ingestion you will be presented with an "HTTP Source Address" which provides the host, receiverURI and the private key in a single string.  For example:
+
+`https://collectors.de.sumologic.com/receiver/v1/http/ZaVnC...`
+
+You will need to copy the last section of the URL (without the preceeding `/`) and add that as a [CloudManager Secret Environment Variable](/help/operations/config-pipeline.md#secret-env-vars) as described in the [Setup](#setup) section above, then reference that variable in your configuration.  An example is provided below.
+
+  ```yaml
+  kind: "LogForwarding"
+  version: "1"
+  metadata:
+    envTypes: ["dev"]
+  data:
+    sumologic:
+      default:
+        enabled: true
+        collectorURL: "https://collectors.de.sumologic.com/receiver/v1/http"
+        privateKey: "${{SUMOLOGIC_PRIVATE_KEY}}"
+        index: "aem-logs"
+  ```
+
+>![NOTE]
+> You will require a Sumo Logic Enterprise subscription to take advantage of the "index" field functionality.  Non-Enterprise subscriptions will have their logs routed to the `sumologic_default` partion as standard.  See the [Sumo Logic Paritioning Documentation](https://help.sumologic.com/docs/search/optimize-search-partitions/) for more information.
 
 ## Log Entry Formats {#log-formats}
 
