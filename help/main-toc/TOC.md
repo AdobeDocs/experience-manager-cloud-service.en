@@ -692,16 +692,14 @@ user-guide-title: AEM as a Cloud Service
     + [Remove external dependencies for existing installations](/help/assets/remove-external-dependencies.md)
     + [Configure [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
     + [Update [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
-
-   + Integration with Adobe Express {#integration-adobe-express}
+  + Integration with Adobe Express {#integration-adobe-express}
       + [Native integration with Adobe Express](/help/assets/native-integration-adobe-express.md)    
-
   + Integration with Creative Cloud {#integration-creative-cloud}
-      + [Connect AEM Assets to Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)  
-      
+      + [Connect AEM Assets to Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)     
 + Forms {#forms}
   + Overview {#forms-overview}
     + [Introduction](/help/forms/home.md)
+    + [Introduction](/help/forms/home2.md)
     + [Top Adobe Experience Manager Forms innovations](/help/forms/latest-innovations.md)
     + [Early Access (EA) capabilities](/help/forms/early-access-ea-features.md)
     + [Notable changes](/help/forms/notable-changes.md)
