@@ -26,7 +26,7 @@ There is an option for the AEM and Apache/Dispatcher logs to be routed through A
 
 Note that the network bandwidth associated with logs sent to the logging destination are considered part of your organization's Network I/O usage.
 
-[^1] Amazon S3 is in Early Access/Beta and only supports AEM logs at this time.
+[^1] Amazon S3 is in Private Beta and only supports AEM logs (including Apache/Dispatcher). Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to request access.
 
 ## How This Article is Organized {#how-organized}
 
