@@ -6,9 +6,9 @@ role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
 hide: yes
 hidefromtoc: yes
-exl-id: 50d7ce19-7d76-4ea1-a54c-8ca0e5379982
 ---
-# Introduction to AEM Forms as a Cloud Service {#introduction}
+
+# AEM Forms as a Cloud Service {#introduction}
 
 <!-- Version Navigation -->
 <div class="version-selector">
