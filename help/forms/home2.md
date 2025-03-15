@@ -19,534 +19,299 @@ hidefromtoc: yes
   </ul>
 </div>
 
-<div class="aem-forms-hero">
-  <h2>AEM Forms as a Cloud Service</h2>
-  <p>Adobe's cloud-native solution for creating, managing, and delivering intelligent forms, automated workflows, and personalized customer communications.</p>
-</div>
+## What is AEM Forms as a Cloud Service?
 
-<div class="solutions-grid">
-  <div class="solution-card">
-    <div class="solution-icon">📝</div>
-    <h3>Adaptive Forms</h3>
-    <p>Provide a seamless form filling experience for end-user's digital enrollment processes</p>
-  </div>
-  <div class="solution-card">
-    <div class="solution-icon">🔄</div>
-    <h3>Workflows</h3>
-    <p>Automate business specific processes with configurable workflows like routing data</p>
-  </div>
-  <div class="solution-card">
-    <div class="solution-icon">📨</div>
-    <h3>Customer Communications</h3>
-    <p>Increase customer loyalty with ongoing personalized outbound communications</p>
-  </div>
-  <div class="solution-card">
-    <div class="solution-icon">🌐</div>
-    <h3>Headless Forms</h3>
-    <p>Make enrollment and registration seamless across channels</p>
-  </div>
-  <div class="solution-card">
-    <div class="solution-icon">✍️</div>
-    <h3>Acrobat Sign Integration</h3>
-    <p>Capture e-signatures that are legally binding and globally secure across devices</p>
-  </div>
-  <div class="solution-card">
-    <div class="solution-icon">🔄</div>
-    <h3>Automated Forms Conversion</h3>
-    <p>Convert legacy PDF-based forms into Adaptive Forms that can be easily managed and distributed online</p>
+AEM Forms as a Cloud Service is Adobe's cloud-native solution for creating, managing, and delivering digital forms and communications. It enables organizations to transform complex transactions into simple, digital experiences across the entire customer journey.
+
+<div class="card-container">
+  <div class="card">
+    <div class="card-header">
+      <h3>Adaptive Forms</h3>
+    </div>
+    <div class="card-body">
+      <p>Create responsive, dynamic forms that adapt to user input and device type:</p>
+      <ul>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components">Create Adaptive Forms</a> - Build forms that automatically adjust to different screen sizes and user inputs</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type">Rich Component Library</a> - Use a variety of input fields and UI components</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components">Style Adaptive Forms</a> - Apply consistent branding and visual design to your forms</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html">Use Pre-built Themes and Templates</a> - Accelerate development with ready-to-use components</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/rule-editor-core-components/rule-editor-core-components">Form Validation</a> - Implement client-side and server-side validation rules</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html">Submit Actions</a> - Configure what happens when users submit forms</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/generate-document-of-record-core-components">Document of Record</a> - Create permanent records of submitted form data</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page">Add Forms to AEM Sites Pages</a> - Seamlessly integrate forms into your website</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/embed-adaptive-form-core-components-external-web-page">Add Forms to a third-party website pages</a> - Seamlessly integrate forms into your website</li>
+      </ul>
+    </div>
   </div>
 
-</div>
+  <div class="card">
+    <div class="card-header">
+      <h3>Edge Delivery Services for Forms</h3>
+    </div>
+    <div class="card-body">
+      <p>Create and deliver forms using Edge Delivery Services:</p>
+      <ul>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/overview">Edge Delivery Forms Overview</a> - Learn about forms with Edge Delivery Services</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/getting-started-universal-editor">Universal Editor for Forms</a> - Create forms using the WYSIWYG Universal Editor</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial">Document-based Authoring</a> - Create forms using Microsoft Word or Google Docs</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/style-theme-forms">Style Edge Delivery Forms</a> - Apply custom styling to your forms</li>
+      </ul>
+    </div>
+  </div>
 
-## Features and Capabilities {#features}
+  <div class="card">
+    <div class="card-header">
+      <h3>Headless Forms</h3>
+    </div>
+    <div class="card-body">
+      <p>Deliver form experiences across any channel or frontend framework:</p>
+      <ul>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html">Introduction to Headless Forms</a> - Learn about the headless approach to forms</li>
+        <li>Build forms using React or other frontend frameworks</li>
+        <li>Integrate forms into mobile apps, websites, and chat applications</li>
+        <li>Leverage your existing UI components with forms functionality</li>
+        <li>Maintain backend form logic while having frontend flexibility</li>
+      </ul>
+    </div>
+  </div>
 
-<div class="features-section">
-  <h3>Form Creation and Authoring {#form-creation}</h3>
-  <div class="feature-category">
-    <div class="feature-item">
-      <h4>Adaptive Forms</h4>
-      <p>Create and manage interactive, dynamic, responsive, mobile-friendly, and data-driven forms:</p>
-      <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html">Create an Adaptive Form</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html">Style an Adaptive Form</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=en">Add an Adaptive Form to an AEM Sites Page</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html">Use ready-to-use themes and templates</a></li>
-      </ul>
+ <div class="card">
+    <div class="card-header">
+      <h3>Communication APIs</h3>
     </div>
-    
-   <div class="feature-item">
-      <h4>Headless Adaptive Forms</h4>
-      <p>Build and natively render forms in any website, application, or non-visual interactions:</p>
+    <div class="card-body">
+      <p>Generate, manipulate, and secure documents programmatically:</p>
       <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html">Introduction to Headless Adaptive Forms</a></li>
-        <li>Build forms in your preferred programming language (For example, React)</li>
-        <li>Integrate forms natively into desktop and mobile apps, websites, and chat applications</li>
-        <li>Reuse your proprietary UI components with forms applications</li>
-        <li>Leverage the power of Adobe Experience Manager Forms with frontend flexibility</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?#document-generation">Generate Personalized Communications</a> - Create customized documents based on templates and data</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?#document-manipulation">Assemble and Manipulate PDFs</a> - Combine, split, and modify PDF documents</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#convert-to-and-validate-pdfa-compliant-documents">Create PDF/A Documents</a> - Generate archival-quality documents</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html#flatten-interactive-pdf-documents">Flatten Interactive PDFs</a> - Convert interactive fields to non-interactive elements</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#signature-apis">Apply Signatures</a> - Secure documents with signatures</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#encryption-apis">Encrypt and Decrypt PDFs</a> - Protect sensitive document content</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#create-PS-PCL-ZPL-documents">Convert XDP to PostScript</a> - Transform XDP documents to PostScript format</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#create-PS-PCL-ZPL-documents">Convert XDP to PCL</a> - Transform XDP documents to Printer Command Language</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#create-PS-PCL-ZPL-documents">Convert XDP to ZPL</a> - Transform XDP documents to Zebra Printing Language</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#convert-to-and-validate-pdfa-compliant-documents">Convert PDF to PDF/A Standards</a> - Create archival-compliant PDF documents</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#convert-pdf-documents-to-pdf-x-standards">Add Digital Signatures</a> - Digitally sign documents for authentication</li>
       </ul>
     </div>
   </div>
-  
-  <div class="feature-category">
-    <div class="feature-item">
-      <h4>Edge Delivery Services for Forms</h4>
-      <p>Create and deliver high-performance forms with exceptional user experience:</p>
-      <ul>
-        <li><a href="/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md">WYSIWYG Authoring with Universal Editor</a> - powerful visual interface for building forms</li>
-        <li><a href="/help/edge/docs/forms/create-forms.md">Document-based Authoring</a> - create forms using familiar tools like Microsoft Excel and Google Sheets</li>
-        <li>Advanced rules editor for creating complex form logic</li>
-        <li>Achieve near-perfect Google Lighthouse scores with optimized form loading</li>
-        <li>Deploy forms faster with minimal development time</li>
-      </ul>
+
+  <div class="card">
+    <div class="card-header">
+      <h3>Workflow Automation</h3>
     </div>
-    
-   <div class="feature-item">
-      <h4>Automated Forms Conversion Service</h4>
-      <p>Convert legacy PDF-based forms into Adaptive Forms:</p>
+    <div class="card-body">
+      <p>Automate business processes involving forms and documents:</p>
       <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html">Configure Automated Forms Conversion Service</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html">Convert PDF forms to Adaptive Forms</a></li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference#assign-task-step">Create business processes</a> - Route forms for approval or feedback, post-submission workflows, or backend workflows to manage enrollment processe</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference#sign-document-step">Use Adobe Sign in an AEM Workflow</a> -  Send a document for signing </li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference#generate-document-of-record-step">Generate a Document of Record </a> - Generate on-demand or on form submission</li>
       </ul>
     </div>
   </div>
-  
-  
-  <h3>Document Processing and Communications {#document-processing}</h3>
-  <div class="feature-category">
-    <div class="feature-item">
-      <h4>Communications APIs</h4>
-      <p>Automate creation, management, and delivery of personalized communications:</p>
-      <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?#document-generation">Generate personalized communications</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?#document-manipulation">Assemble or disassemble PDF documents</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?#convert-to-and-validate-pdf%2Fa-compliant-documents">Create PDF/A-compliant documents</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html">Protect your documents with DocAssurance APIs</a></li>
-      </ul>
+
+  <div class="card">
+    <div class="card-header">
+      <h3>E-Signatures</h3>
     </div>
-    
-   <div class="feature-item">
-      <h4>Document of Record</h4>
-      <p>Create and manage records of submitted forms for archival and compliance:</p>
+    <div class="card-body">
+      <p>Add legally binding electronic signatures to your forms and documents:</p>
       <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html">Create a record of the form for long-term archival</a></li>
-        <li>Server-side extensibility for custom functionalities</li>
-        <li>Document of record functionality for tamper-proof archives</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms">Adobe Sign Integration</a> - Enable e-signatures in Adaptive Forms</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#sign-document-step">Add E-Signatures to Workflows</a> - Include signature steps in business processes</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#generate-document-of-record-step">Document of Record with Signatures</a> - Generate signed records of form submissions</li>
       </ul>
     </div>
   </div>
-  
-  <h3>Workflow and Process Automation {#workflow}</h3>
-  <div class="feature-category">
-    <div class="feature-item">
-      <h4>Forms Workflows</h4>
-      <p>Automate business processes involving forms and document services:</p>
-      <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html">Send a form or document for review</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#assign-task-step">Create an approval rejection Workflow</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#enabling-server-side-validation-br">Submit data to a data store or a workflow</a></li>
-      </ul>
+
+  <div class="card">
+    <div class="card-header">
+      <h3>Analytics and Insights</h3>
     </div>
-    
-   <div class="feature-item">
-      <h4>E-Signatures</h4>
-      <p>Integrate with Adobe Sign for e-signatures:</p>
+    <div class="card-body">
+      <p>Gain insights into form usage and performance:</p>
       <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html">E-sign an Adaptive Form with Adobe Sign</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#generate-document-of-record-step">Add Document of Record</a> or <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#sign-document-step">e-sign</a> steps to a business workflow</li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=en#sign-document-step">E-sign a document with Adobe Sign and AEM Workflows</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.html">Enable Adobe Analytics</a> - Track form usage and performance</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-aem-forms-with-adobe-analytics.html">Manual Analytics Integration</a> - Set up analytics for detailed tracking</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/view-understand-aem-forms-analytics-reports.html">View Analytics Reports</a> - Analyze form performance and user behavior</li>
       </ul>
     </div>
   </div>
-  
-  <h3>Data Integration and Analytics {#data-integration}</h3>
-  <div class="feature-category">
-    <div class="feature-item">
-      <h4>Forms Analytics</h4>
-      <p>Use Adobe Analytics to gain valuable insights into user behavior:</p>
-      <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.html">Enable Adobe Analytics for an Adaptive Form</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-aem-forms-with-adobe-analytics.html">Integrate AEM Forms with Adobe Analytics (Manual Method)</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/view-understand-aem-forms-analytics-reports.html">View and understand Adaptive Forms analytics reports</a></li>
-      </ul>
+
+ <div class="card">
+    <div class="card-header">
+      <h3>Data Integration</h3>
     </div>
-    
-   <div class="feature-item">
-      <h4>Adobe Integrations</h4>
-      <p>Connect your forms with other Adobe solutions:</p>
+    <div class="card-body">
+      <p>Connect forms to your existing data sources and systems:</p>
+      <h4>Adobe Ecosystem</h4>
       <ul>
-        <li><a href="/help/forms/submit-adaptive-form-to-workfront-fusion.md">Connect to Adobe Workfront Fusion</a> and submit data to Workfront scenarios</li>
-        <li><a href="/help/forms/integrate-form-to-marketo-engage.md">Connect to Adobe Marketo Engage</a> and <a href="/help/forms/submit-adaptive-form-to-marketo-engage.md">submit data to Marketo</a></li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign">Adobe Sign</a> - Send for electronic signatures via Adobe Sign</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-adaptive-form-with-market-engage/integrate-form-to-marketo-engage">Marketo Engage</a> - Integrate forms with Adobe Marketo Engage</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#invoke-an-aem-workflow">AEM Workflow</a> - Trigger AEM workflows with form submissions</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions#workfront-fusion">Workfront</a> - Submit an Adaptive Form to Adobe Workfront Fusion</li>
       </ul>
-    </div>
-  </div>
-  
-  <div class="feature-category">
-    <div class="feature-item">
       <h4>Microsoft Integrations</h4>
-      <p>Connect your forms with Microsoft services:</p>
       <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en">Connect to Microsoft&reg; Dynamics 365</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=en">Connect to Microsoft&reg; Azure Blob Storage</a> and <a href="/help/forms/configure-submit-action-azure-blob-storage.md">submit data to Azure Blob Storage</a></li>
-        <li><a href="/help/forms/connect-forms-to-sharepoint-document-library.md">Connect to Microsoft&reg; SharePoint Document Library</a> and <a href="/help/forms/configure-submit-action-sharepoint.md">submit data to SharePoint</a></li>
-        <li><a href="/help/forms/configure-submit-action-onedrive.md">Connect to Microsoft&reg; OneDrive</a> and submit data to OneDrive</li>
-        <li><a href="/help/forms/forms-microsoft-power-automate-integration.md">Connect to Microsoft&reg; Power Automate</a> and trigger flows on form submission</li>
-        <li><a href="/help/forms/ms-dynamics-odata-configuration.md">Connect to Microsoft&reg; Dynamics OData</a></li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics">Microsoft Dynamics 365</a> - Integrate with Microsoft's CRM</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=en">Azure Blob Storage</a> - Store form data in Microsoft's cloud storage</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/connect-to-sharepoint/connect-forms-to-sharepoint-document-library">SharePoint Document Library</a> - Connect to Microsoft SharePoint document libraries</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions#connect-af-sharepoint-list">SharePoint List</a> - Connect to Microsoft SharePoint list</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions#submit-to-onedrive">OneDrive</a> - Connect to Microsoft OneDrive</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/forms-microsoft-power-automate-integration">Microsoft Power Automate</a> - Trigger Microsoft Power Automate flows</li>
       </ul>
-    </div>
-    
-   <div class="feature-item">
-      <h4>Other Data Sources</h4>
-      <p>Connect to additional data sources and endpoints:</p>
+      <h4>Other Data Sources & Services</h4>
       <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=en">Connect to an RDBMS or Rest endpoint</a></li>
-        <li><a href="/help/forms/aem-forms-salesforce-integration.md">Connect to Salesforce</a> and submit data to Salesforce</li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#submit-to-rest-endpoint">Submit to REST endpoint</a></li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/aem-forms-salesforce-integration">Salesforce</a> - Integrate with Salesforce CRM</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#submit-to-rest-endpoint">RESTful Services</a> - Connect to any REST API endpoint</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=en">RDBMS Databases</a> - Connect to relational databases</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions#send-email">Email</a> - Send form data via email</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/introduction-to-forms-portal/save-core-component-based-form-as-draft">Forms Portal</a> - Submit to Forms Portal to save draft</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#send-pdf-via-email">Send PDF via Email</a> - Email a PDF version of the submitted form</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#submit-using-form-data-model">Submit using Form Data Model</a> - Submit data using a Form Data Model</li>
       </ul>
     </div>
   </div>
 </div>
 
+## Getting Started with AEM Forms as a Cloud Service
 
-<!-- 
-## Start Quickly with AEM Forms {#quick-start}
+<div class="card-container">
+  <div class="card">
+    <div class="card-header">
+      <h3>For Business Users</h3>
+    </div>
+    <div class="card-body">
+      <ol>
+        <li><strong>Understand the basics</strong>: Learn about <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/introduction-forms-authoring.html">Adaptive Forms</a> and how they can help digitize your business processes.</li>
+        <li><strong>Explore templates</strong>: Browse the <a href="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html">pre-built templates and themes</a> to get a head start on your form projects.</li>
+        <li><strong>Learn form authoring</strong>: Follow the <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html">form authoring guide</a> to create your first form.</li>
+      </ol>
+    </div>
+  </div>
 
-<div class="quick-start-grid">
-  <div class="quick-start-card">
-    <div class="quick-start-icon">
-      <img src="assets/create-form-icon.svg" alt="Create Form Icon">
+  <div class="card">
+    <div class="card-header">
+      <h3>For Developers</h3>
     </div>
-    <h3>Create your first form</h3>
-    <p>Build an adaptive form in minutes using our step-by-step guide</p>
-    <a href="/help/forms/creating-adaptive-form-core-components.md" class="quick-start-link">Get Started</a>
-  </div>
-  
-  <div class="quick-start-card">
-    <div class="quick-start-icon">
-      <img src="assets/templates-icon.svg" alt="Templates Icon">
+    <div class="card-body">
+      <ol>
+        <li><strong>Set up your environment</strong>: Configure your <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment.html">local development environment</a> for AEM Forms.</li>
+        <li><strong>Learn the architecture</strong>: Understand the <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture">architecture of AEM Forms as a Cloud Service</a>.</li>
+        <li><strong>Explore APIs</strong>: Familiarize yourself with the <a href="https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/"> available APIs </a> and SDKs for extending and integrating Forms.</li>
+      </ol>
     </div>
-    <h3>Explore ready-to-use templates</h3>
-    <p>Browse our library of pre-built templates and themes to accelerate development</p>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html" class="quick-start-link">View Templates</a>
   </div>
-  
-  <div class="quick-start-card">
-    <div class="quick-start-icon">
-      <img src="assets/setup-icon.svg" alt="Setup Icon">
-    </div>
-    <h3>Set up your environment</h3>
-    <p>Configure your local or cloud environment for AEM Forms development</p>
-    <a href="/help/forms/setup-local-development-environment.md" class="quick-start-link">Configure Now</a>
-  </div>
-  
-  <div class="quick-start-card">
-    <div class="quick-start-icon">
-      <img src="assets/data-icon.svg" alt="Data Icon">
-    </div>
-    <h3>Connect to data sources</h3>
-    <p>Learn how to integrate forms with your existing data systems</p>
-    <a href="/help/forms/create-form-data-models.md" class="quick-start-link">Connect Data</a>
-  </div>
-  
-  <div class="quick-start-card">
-    <div class="quick-start-icon">
-      <img src="assets/migrate-icon.svg" alt="Migrate Icon">
-    </div>
-    <h3>Migrate from AEM 6.5</h3>
-    <p>Follow our comprehensive guide to move from AEM 6.5 Forms to Cloud Service</p>
-    <a href="/help/forms/migrate-to-forms-as-a-cloud-service.md" class="quick-start-link">Migrate Now</a>
-  </div>
-</div> 
 
---> 
-
-## Early Adopter Features {#early-adopter-features}
-
-<div class="early-adopter-section">
-  <p>The <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features">AEM Forms Early Access Program</a> offers exclusive access to cutting-edge features before they're generally available, including:</p>
-  
-  <ul class="early-adopter-list">
-    <li><strong>AEM Forms AI Assistant (Gen AI)</strong> - Create forms faster with AI-powered suggestions</li>
-    <li><strong>AEM Forms Workfront Fusion Connector</strong> - Automate workflows triggered by form submissions</li>
-    <li><strong>Conversational Forms</strong> - Create chat-style form experiences on any AEM Sites page</li>
-    <li><strong>WYSIWYG Authoring for Edge Delivery</strong> - Build forms with the Universal Editor for Edge Delivery Services</li>
-    <li><strong>AEM Forms to Marketo Connector</strong> - Integrate form submissions with Marketo Engage</li>
-  </ul>
-  
-  <p>For a complete list of early access innovations and detailed documentation, visit the <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features">AEM Forms Early Access Program page</a>.</p>
+  <div class="card">
+    <div class="card-header">
+      <h3>For Administrators</h3>
+    </div>
+    <div class="card-body">
+      <ol>
+        <li><strong>Onboard to Cloud Service</strong>: Follow the <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service.html">onboarding guide</a> to set up AEM Forms as a Cloud Service.</li>
+        <li><strong>Configure services</strong>: Set up <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.html">integrations with other Adobe services</a> like Adobe Analytics.</li>
+        <li><strong>Migrate from AEM 6.5</strong>: If you're coming from AEM 6.5, follow the <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/migrate-to-forms-as-a-cloud-service.html">migration guide</a> to move to Cloud Service.</li>
+      </ol>
+    </div>
+  </div>
 </div>
 
-## Ready to Transform Your Digital Experiences? {#get-started}
+## Early Adopter Features
 
-<div class="get-started-section">
-  <p>Start creating engaging, responsive, and intelligent forms today!</p>
-  <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service" class="get-started-button">Onboard to AEM Forms as a Cloud Service</a>
+<div class="card">
+  <div class="card-header">
+    <h3>AEM Forms Early Access Program</h3>
+  </div>
+  <div class="card-body">
+    <p>The <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features">AEM Forms Early Access Program</a> offers exclusive access to cutting-edge features before they're generally available, including:</p>
+    <ul>
+      <li><strong>AEM Forms AI Assistant (Gen AI)</strong> - Create forms faster with AI-powered suggestions</li>
+      <li><strong>AEM Forms Workfront Fusion Connector</strong> - Automate workflows triggered by form submissions</li>
+      <li><strong>Conversational Forms</strong> - Create chat-style form experiences on any AEM Sites page</li>
+      <li><strong>WYSIWYG Authoring for Edge Delivery</strong> - Build forms with the Universal Editor for Edge Delivery Services</li>
+      <li><strong>AEM Forms to Marketo Connector</strong> - Integrate form submissions with Marketo Engage</li>
+    </ul>
+    <p>For a complete list of early access innovations and detailed documentation, visit the <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features">AEM Forms Early Access Program page</a>.</p>
+  </div>
+</div>
+
+<div class="cta-card">
+  <h3>Ready to Get Started?</h3>
+  <p><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service">Onboard to AEM Forms as a Cloud Service</a> today and transform your organization's digital forms experience.</p>
 </div>
 
 <style>
-/* Overall styling */
-body {
-  font-family: 'Adobe Clean', Arial, sans-serif;
-  line-height: 1.6;
-  color: #2c2c2c;
-}
-
-h2, h3, h4 {
-  font-weight: 600;
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-}
-
-h2 {
-  font-size: 1.8em;
-  border-bottom: 1px solid #eaeaea;
-  padding-bottom: 0.5em;
-}
-
-h3 {
-  font-size: 1.4em;
-  color: #2c2c2c;
-}
-
-h4 {
-  font-size: 1.2em;
-  color: #2c2c2c;
-}
-
-a {
-  color: #1473E6;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-ul {
-  padding-left: 1.5em;
-}
-
-li {
-  margin-bottom: 0.5em;
-}
-
-/* Hero section */
-.aem-forms-hero {
-  background-color: #f5f5f5;
-  padding: 2em;
-  border-radius: 8px;
-  margin-bottom: 2em;
-  text-align: center;
-}
-
-.aem-forms-hero h2 {
-  font-size: 2em;
-  margin-top: 0;
-  border-bottom: none;
-  color: #2c2c2c;
-}
-
-.aem-forms-hero p {
-  font-size: 1.2em;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* Solutions grid */
-.solutions-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1.5em;
-  margin-bottom: 2em;
-}
-
-.solution-card {
-  background-color: #ffffff;
-  border: 1px solid #e1e1e1;
-  border-radius: 8px;
-  padding: 1.5em;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.solution-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-.solution-icon {
-  font-size: 2em;
-  margin-bottom: 0.5em;
-}
-
-.solution-card h3 {
-  margin-top: 0;
-  font-size: 1.2em;
-}
-
-.solution-card p {
-  margin-bottom: 0;
-  font-size: 0.95em;
-}
-
-/* Features section */
-.features-section {
+.card-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 20px;
+  margin-bottom: 30px;
 }
 
-.feature-category {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5em;
-  margin-bottom: 2em;
-}
-
-.feature-item {
-  background-color: #ffffff;
+.card {
+  flex: 1 1 calc(50% - 20px);
+  min-width: 300px;
   border: 1px solid #e1e1e1;
   border-radius: 8px;
-  padding: 1.5em;
-}
-
-.feature-item h4 {
-  margin-top: 0;
-  color: #2c2c2c;
-}
-
-.feature-item ul {
-  margin-bottom: 0;
-}
-
-/* Quick start grid */
-.quick-start-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 1.5em;
-  margin: 2em 0;
-}
-
-.quick-start-card {
-  background-color: #ffffff;
-  border: 1px solid #e1e1e1;
-  border-radius: 8px;
-  padding: 1.5em;
-  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.quick-start-card:hover {
+.card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
-.quick-start-icon {
-  margin-bottom: 1em;
-}
-
-.quick-start-icon img {
-  width: 50px;
-  height: 50px;
-}
-
-.quick-start-card h3 {
-  margin-top: 0;
-  font-size: 1.2em;
-}
-
-.quick-start-link {
-  display: inline-block;
-  margin-top: 1em;
-  font-weight: 600;
-}
-
-/* Early adopter section */
-.early-adopter-section {
+.card-header {
   background-color: #f5f5f5;
-  padding: 1.5em;
-  border-radius: 8px;
-  margin: 2em 0;
+  padding: 15px 20px;
+  border-bottom: 1px solid #e1e1e1;
 }
 
-.early-adopter-list {
-  margin-bottom: 0;
+.card-header h3 {
+  margin: 0;
+  color: #2c2c2c;
+  font-size: 1.25rem;
 }
 
-/* Get started section */
-.get-started-section {
-  text-align: center;
-  margin: 3em 0 1em;
+.card-body {
+  padding: 20px;
+  background-color: #ffffff;
 }
 
-.get-started-section p {
-  font-size: 1.2em;
-  margin-bottom: 1em;
+.card-body ul, .card-body ol {
+  margin-top: 10px;
+  padding-left: 25px;
 }
 
-.get-started-button {
-  display: inline-block;
-  background-color: #1473E6;
-  color: white;
-  padding: 0.8em 1.5em;
+.card-body li {
+  margin-bottom: 8px;
+}
+
+.cta-card {
+  background-color: #f0f7ff;
+  border-left: 4px solid #1473e6;
+  padding: 20px;
+  margin: 30px 0;
   border-radius: 4px;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
 }
 
-.get-started-button:hover {
-  background-color: #0d66d0;
-  text-decoration: none;
-}
-
-/* Version selector */
-.version-selector {
-  background-color: #f5f5f5;
-  padding: 1em;
-  border-radius: 8px;
-  margin-bottom: 2em;
-}
-
-.version-selector p {
+.cta-card h3 {
   margin-top: 0;
-  font-weight: 600;
+  color: #1473e6;
 }
 
-.version-selector ul {
-  margin-bottom: 0;
-}
-
-/* Responsive adjustments */
-@media (max-width: 1200px) {
-  .feature-category {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .quick-start-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.cta-card a {
+  font-weight: bold;
+  color: #1473e6;
 }
 
 @media (max-width: 768px) {
-  .feature-category {
-    grid-template-columns: 1fr;
-  }
-  
-  .solutions-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .quick-start-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .card {
+    flex: 1 1 100%;
   }
 }
-
-@media (max-width: 480px) {
-  .solutions-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .quick-start-grid {
-    grid-template-columns: 1fr;
-  }
-}
-</style>
 </style>
