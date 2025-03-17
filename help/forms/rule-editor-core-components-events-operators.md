@@ -31,8 +31,8 @@ The rule editor provides the following logical operators and events using which 
 * **Has Selected** – Returns true when a user selects a specific checkbox, drop-down, or radio button option.
 * **Is Initialized (event)** – Returns true when a form object is rendered in the browser.
 * **Is Changed (event)** – Returns true when a user modifies the value or selection of a form object.
-* **Is Valid** – Checks if the a form object meets validation criteria.
-* **Is Not Valid** – Checks if the a form object fails validation criteria.
+* **Is Valid** – Checks if a form object meets validation criteria.
+* **Is Not Valid** – Checks if a form object fails validation criteria.
 
 
 <!--

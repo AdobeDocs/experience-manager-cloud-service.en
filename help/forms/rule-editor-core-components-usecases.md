@@ -19,11 +19,11 @@ Imagine a multi-step application form using a Wizard layout. You must complete t
 
 You can create a rule on the `Next` button to validate the first panel:
 
+![Rule for Next button](/help/forms/assets/next-rule.png){width=50%}
 
+When you click the **Next** button, the **Personal Information** panel is validated. If the details entered are correct, the focus shifts to the **Account Security** panel; otherwise, an error message prompts you to fill in the missing details.
 
-Imagine a **Registration Form** where you fill out the **Personal Information** panel before moving to **Account Security**. When you click the **Next** button, the **Personal Information** panel is validated. If the details entered are correct, the focus shifts to the **Account Security** panel; otherwise, an error message prompts you to fill in the missing details.
-
-
+![Video]()
 
 ## Navigating among panels using button 
 
