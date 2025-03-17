@@ -5,8 +5,8 @@ feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 hide: yes
 hidefromtoc: yes
+exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
 ---
-
 # Integrate forms with Form Data Model in Universal Editor
 
 Integrating forms with a Form Data Model (FDM) in Universal Editor allows you to use diverse backend data sources to create a Form Data Model (FDM). You can use the Form Data Model (FDM) as a schema in various form workflows. Configure the data sources and create a Form Data Model (FDM) based on the data model objects and services available in data sources.
