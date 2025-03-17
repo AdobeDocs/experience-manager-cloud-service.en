@@ -52,7 +52,13 @@ To author a standalone Adaptive Form using Universal Editor, perform the followi
 
         ![Create EDS Forms](/help/edge/assets/create-eds-forms.png)
 
+
+      When you select a Edge Delivery Services based template, the **[!UICONTROL Create]** button is enabled. 
+   1. (Optional) In the **[!UICONTROL Data Source]** or **[!UICONTROL Submission]** tabs, you can select a data source or submit action.
+   1. (Optional) In the **[!UICONTROL Delivery]** tab, you can specify a publishing or unpublishing date for an Adaptive Form. 
+
    1. Click **[!UICONTROL Create]** and the **Create Form** wizard appears.
+   1. Specify the **Name** and **Title**. 
    1. Specify the **GitHub URL**. For example, if your GitHub repository is named `edsforms`, it is located under the account `wkndforms`,the URL is:
     `https://github.com/wkndforms/edsforms`
    1. Click **[!UICONTROL Create]**.
