@@ -188,7 +188,7 @@ To integrate:
 
 That's it! The Adaptive Forms Block is now part of your AEM Project. You can [start creating and adding forms to your AEM Project](#add-edge-delivery-services-forms-to-aem-site-project).
 
-## Author AEM Forms using WYSIWYG
+## Author Forms using WYSIWYG
 
 You can open your AEM Project in the Universal Editor for WYSIWYG authoring, where you can edit the project and add the Adaptive Form section to include Edge Delivery Services forms on AEM Project pages.
    
