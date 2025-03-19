@@ -63,11 +63,8 @@ To create a form fragment in Universal Editor, perform the following steps:
 1. Select the Egde Delivery Services  based template from the **Select Template** tab and click **[!UICONTROL Next]**.
    ![Select Edge Delivery Services template](/help/edge/docs/forms/universal-editor/assets/create-form-fragment.png)
 
-1. Specify title, name, description, GitHub URL and tags for the fragment. Ensure that you specify a unique name for the fragment. If another fragment exists with the same name, the fragment fails to create.
-
-    >[!NOTE]
-    >
-    > If your GitHub repository is named `edsforms`, it is located under the account `wkndforms`,the URL is `https://github.com/wkndforms/edsforms`
+1. Specify title, name, description and tags for the fragment. Ensure that you specify a unique name for the fragment. If another fragment exists with the same name, the fragment fails to create. 
+1. Specify the **GitHub URL**. For example, if your GitHub repository is named `edsforms`, it is located under the account `wkndforms`,the URL is `https://github.com/wkndforms/edsforms`.
 
     ![basic properties](/help/edge/docs/forms/universal-editor/assets/fragment-basic-properties.png)
 
