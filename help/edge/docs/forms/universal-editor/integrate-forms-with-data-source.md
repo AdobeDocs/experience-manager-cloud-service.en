@@ -1,5 +1,5 @@
 ---
-title: How to create Form Data Model (FDM) for a form in Universal Editor?
+title: How to integrate Form Data Model (FDM) for a form in Universal Editor?
 description: Learn to create forms based on a form data model(FDM). Generate and edit sample data for data model objects in the FDM.
 feature: Edge Delivery Services, Form Data Model
 role: Admin, User
@@ -122,7 +122,7 @@ When you create a non-schema-based form, no data source is configured. You can e
 
     ![Build form](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
-    You can also manually add data binding to a form element by specifying it in the **Bind Reference** properties of the form element. 
+    You have to manually add data binding to a form element by specifying it in the **Bind Reference** properties of the form element. 
     For example, let’s add a data binding reference to the **Pet Name** text box that is already present in the form:
 
     ![Manually add data dinding for a form field](/help/edge/docs/forms/universal-editor/assets/non-schema-add-data-binding.png)
