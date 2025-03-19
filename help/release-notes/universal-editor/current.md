@@ -16,9 +16,9 @@ These are the release notes for the 10 March 2025 release of the Universal Edito
 
 ## What's New {#what-is-new}
 
-* [Moving components between containers](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) now observes the component filter of the target container.
+* **Moving Components:** [Moving components between containers](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) now observes the component filter of the target container.
   * There is no longer a requirement to have the same [filter definition](/help/implementing/universal-editor/filtering.md) in place for both target and destination containers in order to move the component between the containers.
-* Universal Editor Service observes the [lock status of a page](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) and only writes to pages which are not locked or are locked by the user.
+* **Locked Pages:** Universal Editor Service observes the [lock status of a page](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) and only writes to pages which are not locked or are locked by the user.
 
 ## Other Improvements {#other-improvements}
 
