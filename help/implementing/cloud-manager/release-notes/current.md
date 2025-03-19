@@ -1,70 +1,44 @@
 ---
-title: Release Notes for Cloud Manager 2025.2.0 in Adobe Experience Manager as a Cloud Service
-description: Learn about the release of Cloud Manager 2025.2.0 in AEM as a Cloud Service.
+title: Release Notes for Cloud Manager 2025.3.0 in Adobe Experience Manager as a Cloud Service
+description: Learn about the release of Cloud Manager 2025.3.0 in AEM as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 ---
-# Release notes for Cloud Manager 2025.2.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Release notes for Cloud Manager 2025.3.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-<!-- https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3389843928 -->
+<!-- https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.03.0+Release -->
 
-Learn about the release of Cloud Manager 2025.2.0 in AEM (Adobe Experience Manager) as a Cloud Service.
+Learn about the release of Cloud Manager 2025.3.0 in AEM (Adobe Experience Manager) as a Cloud Service.
 
 
 See also the [current release notes for Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Release dates {#release-date}
 
-The release date for Cloud Manager 2025.2.0 in AEM as a Cloud Service is Thursday, February 13, 2025. 
+The release date for Cloud Manager 2025.3.0 in AEM as a Cloud Service is Thursday, March 13, 2025. 
 
-The next planned release is Thursday, March 13, 2025.
+The next planned release is Thursday, April 10, 2025.
  
 ## What's new {#what-is-new}
 
-* **Update to code quality rules** 
+* **Run multiple pipelines**
 
-    Starting Thursday, February 13, 2025, the Cloud Manager code quality step now uses SonarQube 9.9.5.90363.
+    The ability to run multiple pipelines simultaneously has been introduced on the Pipelines page. Users must select at least one pipeline but no more than ten. Near the upper-right corner on the Pipelines page, click **Run selected (x)**. A modal dialog box appears that lists any pipelines that cannot be started. Click **Run** to initiate all valid pipelines.
 
-    The updated rules, available for Cloud Manager on AEM as a Cloud Service at [this link](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules), determine security scores and code quality for Cloud Manager pipelines.
+    ![Run selected pipelines dialog box](/help/implementing/cloud-manager/release-notes/assets/run-selected-pipelines.png)
 
-* SonarQube 9.9 is now the default code quality scanning engine for all customers.
+    See also [Run multiple pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#run-multiple-pipelines)
 
-* **Java 17 and Java 21 build support** 
+* **Support extended to Node.js versions**
 
-    Customers can now build with Java 17 or Java 21, gaining access to performance enhancements and new language features. For configuration steps, including updating your Maven project and library versions, see [Build environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). When the build version is set to Java 17 or Java 21, the runtime deployed is Java 21.
+    The front-end build environment now supports the following `Node.js` versions:
 
-* **99.99% SLA uptime reporting for Edge Delivery Services**
+    * 23
+    * 22
+    * 20
 
-    High-availability 99.99% uptime reporting is now available for qualifying Edge Delivery Services programs. To enable this feature, customers must successfully onboard their Edge Delivery Services sites and apply their 99.99% Service Level Agreement (SLA) within Cloud Manager.
-
-    See also [SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla).
-
-* **Improved user invitation experience for Edge Delivery Services**
-
-    Improvements were made to the experience with inviting users to the content repository associated with Edge Delivery Services. <!-- CMGR-65331 -->
-
-* **Automatic creation of Admin profiles on publish instances**
-
-    Previously, Cloud Manager allowed for the manual creation of admin profiles on publish instances but did not support automatic creation by default. With this update, admin profiles are now automatically created on publish instances, improving usability and reducing setup time for customers.
-    
-    For more details, see [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md).
-
-    ![Pipeline activities filtering](/help/implementing/cloud-manager/release-notes/assets/product-profiles.png)
-
-* **Transition to OAuth for Cloud Service environments**
-
-    New Cloud Service environments now use OAuth-based service-to-service authentication for Adobe Developer Console integration projects instead of the previously used JWT authentication method. JWT authentication is deprecated and is planned for end-of-life in June 2025.
-
-* **Support for EC (Elliptic Curve) Private Keys (secp384r1)**
-
-    Cloud Manager now supports `secp384r1` Elliptic Curve (EC) private keys, providing improved security and compliance for customer-managed OV/EV SSL certificates. 
-    For more details, see [Requirements for customer-managed OV/EV SSL certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements). <!-- CMGR-63636 -->
-
-* **Specialized testing environments**
-
-    A new development environment with enhanced resources will be available for early adopters starting February 27, 2025.
-
+    See also [Develop Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md#node-versions). <!-- CMGR-65307 -->
 
 <!--
 ## Early adoption program {#early-adoption}
@@ -74,16 +48,13 @@ Be a part of Cloud Manager's early adoption program and have a chance to test up
 
 ## Bug fixes
 
-* **(UI) Fixed an issue preventing CDN configuration for domains in Cloud Manager.**
-    Customers attempting to add a CDN configuration in Cloud Manager encountered a screen error when they selected a domain from the drop-down menu. This user interface bug prevented domain mapping in production environments, blocking the configuration process.
+* **(UI) Fix for 'Advanced Network Configuration' updates in Cloud Manager**  
 
-    Additionally, some domains remained inaccessible in the backend, despite being removed from the user interface. This issue led to conflicts with existing CDN configurations. 
-    
-    With this fix, you can now successfully select a domain from the drop-down without encountering an error. Backend inconsistencies that prevented domain reconfiguration have been addressed. And finally, improved validation now ensures that conflicting domains are properly removed before re-adding them.<!-- CMGR-64888 -->
-* **(Backend) Fixed an issue causing SSL expiry notifications to be sent multiple times.**
-    A bug was identified where the SSL expiry notification scheduler, which is designed to run once daily at midnight, was incorrectly triggering twice per day-once at midnight and again at 12:30 AM. This issue resulted in multiple redundant notifications being sent regarding expiring SSL certificates.
+    A rare issue that prevented updates to the **Advanced Network Configuration** when an "Update available" notification was present has been resolved. Previously, Cloud Manager locked configuration modifications, including advanced networking settings, to prevent conflicts during an update. Customers can now manually trigger the pending update to apply the necessary changes without restrictions. <!-- CMGR-65913 and CMGR-65788 -->
 
-    The notification scheduler now correctly runs only once per day as intended. And, you no longer receive duplicate SSL expiry notifications. <!-- CMGR-64748 -->
+* **(UI) Fix for IP allow list updates stuck in "Updating" state**  
+
+    A rare issue where IP allow list updates in Cloud Manager remained stuck in the "Updating" state due to duplicate active domain configuration for an environment has been resolved. Previously, customers experienced indefinite processing delays when updating IP allow lists, preventing necessary network access adjustments. This fix ensures that IP allow list updates can now complete successfully without getting stuck. <!-- CMGR-65786 -->
 
 
 
