@@ -67,8 +67,7 @@ To create a form fragment in Universal Editor, perform the following steps:
 
     >[!NOTE]
     >
-    > If your GitHub repository is named `edsforms`, it is located under the account `wkndforms`,the URL is:
-    `https://github.com/wkndforms/edsforms`
+    > If your GitHub repository is named `edsforms`, it is located under the account `wkndforms`,the URL is `https://github.com/wkndforms/edsforms`
 
     ![basic properties](/help/edge/docs/forms/universal-editor/assets/fragment-basic-properties.png)
 
