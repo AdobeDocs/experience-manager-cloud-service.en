@@ -1041,7 +1041,8 @@ user-guide-title: AEM as a Cloud Service
       + [Protect Your Forms from Spam: Adding reCAPTCHA Security](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
       + [How to Publish and Deploy Forms: Universal Editor Publishing Guide](/help/edge/docs/forms/universal-editor/publish-forms.md)
       + [Build Custom Form Components: Developer's Guide to Universal Editor](/help/edge/docs/forms/universal-editor/create-custom-component.md) 
-      + [Form Data Model Integration: Integrating Forms with the Form Data Model](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)   
+      + [Form Data Model Integration: Integrating Forms with the Form Data Model](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
+      + [Reusable, modular, and standalone segments: Creating and using Form Fragments in forms](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)   
     + Document-based authoring {#getting-started-edge-delivery-services-forms}
       + [Build Your First Form: Quick Start Guide with Google Sheets and Excel](/help/edge/docs/forms/tutorial.md)
       + [How to Create Forms Using Google Sheets or Excel: Step-by-Step Guide](/help/edge/docs/forms/create-forms.md)
