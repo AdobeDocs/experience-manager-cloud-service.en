@@ -155,7 +155,7 @@ The selected component deleted.
 >
 >Use the hot key `Shift+Backspace` to delete the selected component from its container.
 
-### Reordering Components in Containers {#reordering-components}
+### Reordering Components {#reordering-components}
 
 1. If not already in [content tree mode](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode), switch to it.
 1. Select a container component in the content tree or in the editor.
@@ -170,7 +170,7 @@ The components are reordered in both the content tree and in the editor.
 
 >[!NOTE]
 >
->Components can not be moved between containers if a different [component filter](/help/implementing/universal-editor/filtering.md) is set between the source and target containers.
+>Components can only be moved between containers if the target containers [component filter](/help/implementing/universal-editor/filtering.md) allows the selected component.
 
 ### Create variations using GenAI with Generate Variations {#generate-variations-ai}
 
