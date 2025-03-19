@@ -11,11 +11,11 @@ The Extension Manager in Adobe Experience Manager (AEM) as a Cloud Service enabl
 
 With the Extension Manager, you can:
 
-* Enable or disable extensions on a per-instance basis;
-* Configure extension parameters;
-* Preview extensions and generate a shareable preview link;
-* Discover UI extensibility features via interactive demos;
-* Access Adobe’s experimental features through first-party extensions.
+* enable or disable extensions on a per-instance basis
+* configure extension parameters
+* preview extensions and generate a shareable preview link
+* discover UI extensibility features via interactive demos
+* access Adobe’s experimental features through first-party extensions
 
 ![Extension Manager in AEM](/help/implementing/developing/extending/assets/homepage.png)
 
