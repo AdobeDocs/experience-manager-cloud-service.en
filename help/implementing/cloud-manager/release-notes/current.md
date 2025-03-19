@@ -28,6 +28,8 @@ The next planned release is Thursday, April 10, 2025.
 
     ![Run selected pipelines dialog box](/help/implementing/cloud-manager/release-notes/assets/run-selected-pipelines.png)
 
+    See also [Run multiple pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#run-multiple-pipelines)
+
 * **Support extended to Node.js versions**
 
     The front-end build environment now supports the following `Node.js` versions:
