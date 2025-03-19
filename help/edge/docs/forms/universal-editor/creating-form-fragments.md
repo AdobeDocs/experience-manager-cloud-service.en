@@ -54,16 +54,16 @@ You can create Edge Delivery Services Form Fragments in the Universal Editor and
 To create a form fragment in Universal Editor, perform the following steps:
 
 1. Login into your AEM Forms as a Cloud Service author instance.
-2. Select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
-3. Click **Create &gt; Adaptive Form Fragment**.
+1. Select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
+1. Click **Create &gt; Adaptive Form Fragment**.
 
    ![Create fragment](/help/edge/docs/forms/universal-editor/assets/create-fragment.png)
 
    The **Create Adaptive Form Fragment** wizard appears.
-4. Select the Egde Delivery Services  based template from the **Select Template** tab and click **[!UICONTROL Next]**.
+1. Select the Egde Delivery Services  based template from the **Select Template** tab and click **[!UICONTROL Next]**.
    ![Select Edge Delivery Services template](/help/edge/docs/forms/universal-editor/assets/create-form-fragment.png)
 
-5. Specify title, name, description, GitHub URL and tags for the fragment. Ensure that you specify a unique name for the fragment. If another fragment exists with the same name, the fragment fails to create.
+1. Specify title, name, description, GitHub URL and tags for the fragment. Ensure that you specify a unique name for the fragment. If another fragment exists with the same name, the fragment fails to create.
 
     >[!NOTE]
     >
@@ -72,7 +72,7 @@ To create a form fragment in Universal Editor, perform the following steps:
 
     ![basic properties](/help/edge/docs/forms/universal-editor/assets/fragment-basic-properties.png)
 
-6. (Optional) Click to open the **Form Model** tab, and from the **Select From** drop-down menu, select one of the following models for the fragment:
+1. (Optional) Click to open the **Form Model** tab, and from the **Select From** drop-down menu, select one of the following models for the fragment:
 
    ![Displays model type in the Form Model tab](/help/edge/docs/forms/universal-editor/assets/select-fdm-for-fragment.png)
 
@@ -85,14 +85,14 @@ To create a form fragment in Universal Editor, perform the following steps:
     >
     > To learn how to integrate forms or fragments with a Form Data Model (FDM) in the Universal Editor to use diverse backend data sources, [click here](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md).
 
-7. (Optional) Specify the **Publish Date** or **Unpublish Date** for the fragment in the **Advanced** tab.
+1. (Optional) Specify the **Publish Date** or **Unpublish Date** for the fragment in the **Advanced** tab.
 
     ![Adavanced tab](/help/edge/docs/forms/universal-editor/assets/advanced-properties-fragment.png)
-8. Click **Create** and a wizard appears. 
+1. Click **Create** and a wizard appears. 
 
     ![Edit fragment](/help/edge/docs/forms/universal-editor/assets/edit-fragment.png)
 
-9. Click **Edit** and the created fragment with a default template opens in Universal Editor for authoring. 
+1. Click **Edit** and the created fragment with a default template opens in Universal Editor for authoring. 
 
     ![Fragment in Univerasal Editor for authoring](/help/edge/docs/forms/universal-editor/assets/fragment-in-ue.png)
 
