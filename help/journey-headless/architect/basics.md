@@ -96,11 +96,11 @@ AEM provides the following data types for you to model your content:
 
 Two data types provide references to content outside a specific fragment:
 
-* **Content Reference** / **Content Reference (UUID)**
+* **Content Reference**/**Content Reference (UUID)**
   This provides a simple reference to other content of any type.
   For example, you can reference an image at a specified location.
 
-* **Fragment Reference** / **Fragment Reference (UUID)**
+* **Fragment Reference**/**Fragment Reference (UUID)**
   This provides references to other Content Fragments.
   This type of reference is used to create nested content, introducing the relationships needed to model your content.
   The data type can be configured to allow fragment authors to:
