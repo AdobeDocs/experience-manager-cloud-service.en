@@ -12,7 +12,7 @@ role: Admin, Architect, Developer
 
 At the beginning of the [AEM Headless Content Author Journey](overview.md) the [Content Modeling Basics for Headless with AEM](basics.md) covered the basic concepts and terminology relevant to authoring for headless.
 
-This article builds on these so you understand how to create your own Content Fragment Models for your AEM headless project.
+This article builds on these principles so that you understand how to create your own Content Fragment Models for your AEM headless project.
 
 ## Objective {#objective}
 
@@ -76,7 +76,7 @@ You can drag instances of the **Data Types** onto the left space - you are alrea
 
 ![Defining fields](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png) 
 
-After you add a data type you are required to define the **Properties** for that field. These depend on the type being used. For example:
+After you add a data type you are required to define the **Properties** for that field. These properties depend on the type being used. For example:
 
 ![Data Properties](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png) 
 
@@ -99,7 +99,7 @@ Your content authors do not see the actual Data Types and Properties that you ha
 Managing your Content Fragment Models involves:
 
 * Enabling (or disabling) them - this makes them available for authors when creating Content Fragments.
-* Deleting - deletion is always needed, but you need to be aware of deleting a model that is already used for Content Fragments, in particular fragments that are already published.
+* Deleting - deletion is always needed, but you need to be aware of deleting a model that is already used for Content Fragments; in particular fragments that are already published.
 
 ## Publishing {#publishing}
 
@@ -109,7 +109,7 @@ Content fragment models need to be published when/before any dependent content f
 
 >[!NOTE]
 >
->If an author tries to publish a content fragment for which the model has not yet been published, a selection list indicates this and the model is published with the fragment.
+>If an author tries to publish a content fragment for which the model has not yet been published, a selection list indicates this, and the model is published with the fragment.
 
 As soon as a model is published it is *locked* into a READ-ONLY mode on author. This aims to prevent changes that would result in errors to existing GraphQL schemas and queries, especially on the publish environment. It is indicated in the console by **Locked**. 
 

@@ -12,7 +12,7 @@ role: Admin, Architect, Developer
 
 At the beginning of the [AEM Headless Content Architect Journey](overview.md) the [Introduction](introduction.md) covered the basic concepts and terminology relevant to modeling content for headless.
 
-This article builds on these so you understand how to model your content for your AEM headless project.
+This article builds on these principles so that you understand how to model your content for your AEM headless project.
 
 ## Objective {#objective}
 
