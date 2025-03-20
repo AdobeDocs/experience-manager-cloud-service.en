@@ -28,7 +28,7 @@ There is an option for the AEM and Apache/Dispatcher logs to be routed through A
 
 Note that the network bandwidth associated with logs sent to the logging destination are considered part of your organization's Network I/O usage.
 
-[^1] Amazon S3 and Sumo Logic are in Private Beta and only support AEM logs (including Apache/Dispatcher). Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to request access.
+[^1] Amazon S3 and Sumo Logic are in Private Beta and only support AEM logs (including Apache/Dispatcher). Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to request access.  S3 implementation differs slightly from other log technologies, see the [Amazon AWS S3](#amazons3) section for more information.
 
 [^2] New Relic Log API is in beta and requires specific header configuration.  See [New Relic Log API](#newrelic-https) for more information.
 
@@ -223,7 +223,7 @@ The IAM policy should allow the user to use `s3:putObject`.  For example:
 See [here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) for more information on AWS Bucket Policy implementation.
 
 >![NOTE]
->Logs written to S3 periodically, every 10 minutes for each log file type.  This may result in an initial delay for logs being written to S3 once the feature is toggled.
+>Logs written to S3 periodically, every 10 minutes for each log file type.  This may result in an initial delay for logs being written to S3 once the feature is toggled.  More information on why this behaviour exists can be found [here](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs).
 
 ### Azure Blob Storage {#azureblob}
 
