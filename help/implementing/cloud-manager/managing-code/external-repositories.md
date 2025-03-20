@@ -1,13 +1,13 @@
 ---
 title: Add External Repositories in Cloud Manager - Limited beta
-description: Learn how to add an external repository into Cloud Manager. Cloud Manager supports integration with GitHub, GitLab, and Bitbucket repositories.
+description: Learn how to add an external repository into Cloud Manager. Cloud Manager supports integration with GitHub Enterprise Server, GitLab, and Bitbucket repositories.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
 ---
 # Add external repositories in Cloud Manager - Limited beta {#external-repositories}
 
-Learn how to add an external repository into Cloud Manager. Cloud Manager supports integration with GitHub, GitLab, and Bitbucket repositories.
+Learn how to add an external repository into Cloud Manager. Cloud Manager supports integration with GitHub Enterprise Server, GitLab, and Bitbucket repositories.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ Configuration of an external repository in Cloud Manager consists of three steps
  
    ![Add own repository](/help/implementing/cloud-manager/managing-code/assets/repositories-private-repo-type.png)
 
-1. In each respective field, provide the following details about your repository:
+1. In each respective field, provide the following details about your repository: 
 
     | Field | Description |
     | --- | --- |
@@ -58,9 +58,9 @@ Configuration of an external repository in Cloud Manager consists of three steps
     | Token type | Description |
     | --- | --- |
     | **Use existing Access Token** | If you have already provided a repository access token for your organization and have access to multiple repositories, you can select an existing token. Use the **Token Name** drop-down list to choose the token you want to apply to the repository. Otherwise, add a new access token. |
-    | **Add new Access Token** |**Repository type: GitHub**<br>&bull; In the **Token Name** text field, type a name for the access token you are creating.<br>&bull; Create a personal access token by following the instructions in the [GitHub documentation](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<br>&bull; For required permissions, see [Create new PAT for GitHub](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-github-pat).<br>&bull; In the **Access Token** field, paste the token you just created. | 
-    |  | **Repository type: GitLab**<br>&bull; In the **Token Name** text field, type a name for the access token you are creating.<br>&bull; Create a personal access token by following the instruction in the [GitLab documentation](https://docs.gitlab.com/user/profile/personal_access_tokens/).<br>&bull; For required permissions, see [Create a new PAT for GitLab](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-gitlab-pat).<br>&bull; In the **Access Token** field, paste the token you just created. |    
-    |  | **Repository type: Bitbucket**<br>&bull; In the **Token Name** text field, type a name for the access token you are creating.<br>&bull; Create a repository access token using the [Bitbucket documentation](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<br>&bull; For required permissions, see [Create a new PAT for Bitbucket](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-bitbucket-pat). |
+    | **Add new Access Token** |**Repository type: GitHub**<br>&bull; In the **Token Name** text field, type a name for the access token you are creating.<br>&bull; Create a personal access token by following the instructions in the [GitHub documentation](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<br>&bull; For required permissions, see the following information: ![Create new PAT for GitHub](/help/implementing/cloud-manager/managing-code/assets/webhook-github-enterprise-server.png)<br>&bull; In the **Access Token** field, paste the token you just created. | 
+    |  | **Repository type: GitLab**<br>&bull; In the **Token Name** text field, type a name for the access token you are creating.<br>&bull; Create a personal access token by following the instruction in the [GitLab documentation](https://docs.gitlab.com/user/profile/personal_access_tokens/).<br>&bull; For required permissions, see the following information: ![Create a new PAT for GitLab](/help/implementing/cloud-manager/managing-code/assets/webhook-gitlab.png)<br>&bull; In the **Access Token** field, paste the token you just created. |    
+    |  | **Repository type: Bitbucket**<br>&bull; In the **Token Name** text field, type a name for the access token you are creating.<br>&bull; Create a repository access token using the [Bitbucket documentation](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<br>&bull; For required permissions, see the following information ![Create a new PAT for Bitbucket](/help/implementing/cloud-manager/managing-code/assets/webhook-bitbucket.png). |
 
     >[!NOTE]
     >
@@ -130,6 +130,9 @@ For all other external repositories that are onboarded with an access token, suc
     Paste the secret in a plain text file. The copied secret is required for your Git vendor's Webhook settings.
 1. Click **Close**. 
 1. Navigate to your Git vendor solution (GitHub Enterprise, GitLab, or Bitbucket).
+
+    All the details on the webhook configuration and the events that are required for each vendor are available in [Add an external repository](#add-ext-repo). Under step 8, see the table.
+
 1. Locate the solution's **Webhook** Settings section.
 1. Paste the Webhook URL that you copied earlier into the URL text field.
     1. Replace the `api_key` query parameter in the Webhook URL with your own real API key.
@@ -139,11 +142,6 @@ For all other external repositories that are onboarded with an access token, suc
 1. Paste the Webhook Secret that you copied earlier into the **Secret** (or **Secret key**, or **Secret token**) text field.
 1. Configure the webhook to send the appropriate events that Cloud Manager expects.
 
-    All the details on the webhook configuration and the events that are required for each vendor are available at the following:
-
-    * [Set up webhooks for GitHub Enterprise Server](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-github-pat?id=webhook-events).
-    * [Set up webhooks for GitLab](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-gitlab-pat?id=webhook-events).
-    * [Set up webhooks for Bitbucket](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-bitbucket-pat?id=webhook-events).
 
 ### Validation of pull requests with webhooks
 

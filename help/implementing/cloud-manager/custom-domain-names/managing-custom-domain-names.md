@@ -33,7 +33,7 @@ In Adobe Cloud Manager, you might want to edit a custom domain name configuratio
 
 1. Click **Edit**.
 
-1. In the **Edit CDN configuration** dialog box, do the following:
+1. In the **Edit Domain configuration** dialog box, do the following:
 
     * In the **Tier** drop-down list, select the tier (Publish or Preview) you want to use.
     * In the **SSL certificate** drop-down list, select the SSL certificate that you want to use.
@@ -106,7 +106,7 @@ A user with the **Business Owner** or **Deployment Manager** role can use Cloud 
 
 1. From the **Environments** page, navigate to a details screen of the environment of interest.
 
-1. From the domain names table, identify the row of the custom domain name you want to delete.
+1. From the Domain Mappings table, identify the row of the custom domain name you want to delete.
 
 1. Click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) at the far right end of the row.
 
