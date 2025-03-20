@@ -30,7 +30,7 @@ Note that the network bandwidth associated with logs sent to the logging destina
 
 [^1] Amazon S3 and Sumo Logic are in Private Beta and only support AEM logs (including Apache/Dispatcher). Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to request access.  S3 implementation differs slightly from other log technologies, see the [Amazon AWS S3](#amazons3) section for more information.
 
-[^2] New Relic Log API is in beta and requires specific header configuration.  See [New Relic Log API](#newrelic-https) for more information.
+[^2] New Relic Log API is in beta and only supports AEM logs (including Apache/Dispatcher), it also requires specific header configuration.  See [New Relic Log API](#newrelic-https) for more information.
 
 ## How This Article is Organized {#how-organized}
 
