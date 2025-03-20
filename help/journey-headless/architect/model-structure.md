@@ -36,6 +36,21 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## Creating Content Fragment Models {#creating-content-fragment-models}
 
+Then the Content Fragments Models can be created and the structure defined.
+
+1. In the Content Fragment Console, select the panel for Content Fragment Models.
+
+1. Navigate to the folder appropriate to your configuration, or subconfiguration.
+
+1. Use **Create** to open the **New Content Fragment Model** dialog.
+
+   ![Title and description](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-create.png)
+
+1. Complete the details
+
+1. Use **Create** to save the empty model, or **Create and open**.
+
+<!--
 Then the Content Fragments Models can be created and the structure defined. This can be done under **Tools** > **General** > **Content Fragment Models**. 
 
 ![Content Fragment Models in Tools](assets/cfm-tools.png)
@@ -47,6 +62,7 @@ The option **Enable model** is activated by default. This means that your model 
 ![Create Content Fragment Model](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
 
 Confirm with **Create** and you can then **Open** your model to start defining the structure.
+-->
 
 ## Defining Content Fragment Models {#defining-content-fragment-models}
 
