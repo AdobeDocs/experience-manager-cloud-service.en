@@ -18,6 +18,7 @@ Customers with a license with a logging vendor or who host a logging product can
 * Datadog
 * Elasticsearch or OpenSearch
 * HTTPS
+  * NewRelic Log API (beta, see [^2])
 * Splunk
 * Sumo Logic (private beta, see [^1])
 
@@ -28,6 +29,8 @@ There is an option for the AEM and Apache/Dispatcher logs to be routed through A
 Note that the network bandwidth associated with logs sent to the logging destination are considered part of your organization's Network I/O usage.
 
 [^1] Amazon S3 and Sumo Logic are in Private Beta and only support AEM logs (including Apache/Dispatcher). Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to request access.
+
+[^2] New Relic Log API is in beta and requires specific header configuration.  See [New Relic Log API](#newrelic-https) for more information.
 
 ## How This Article is Organized {#how-organized}
 
@@ -379,6 +382,30 @@ Considerations:
 
 * The url string must include **https://** or validation will fail.
 * The url may include a port. For example, `https://example.com:8443/aem_logs/aem`. If no port is included in the url string, port 443 (the default HTTPS port) is assumed.
+
+#### New Relic Log API {#newrelic-https}
+
+>![NOTE]
+>This functionality is currently in Open Beta, and payload fields may be subject to change.
+
+The New Relic Log Ingestion service requires the `Api-Key` header to be set in AEMaaCS Log Forwarding config, see below for an example:
+
+  ```yaml
+  kind: "LogForwarding"
+  version: "1"
+  metadata:
+    envTypes: ["dev"]
+  data:
+    https:
+      default:
+        enabled: true
+        url: "https://log-api.newrelic.com/log/v1"
+        authHeaderName: "Api-Key"
+        authHeaderValue: "${{NR_API_KEY}}"
+  ```
+
+>![NOTE]
+>New Relic provide region specific endpoints based on where your New Relic account is provisioned.  See [here](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint) for New Relic documentation.
 
 #### HTTPS CDN logs {#https-cdn}
 
