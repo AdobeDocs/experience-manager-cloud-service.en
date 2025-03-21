@@ -18,7 +18,7 @@ After editing the content, you can publish it to Edge Delivery Services.
 
 ## Integrating [!DNL AEM Assets] with Document-Based Authoring flows for [!DNL Edge Delivery Services] {#integrate-aem-assets-with-document-based-authoring-tools}
 
-When [!DNL AEM Assets] is integrated with the Document-Based Authoring tools, such as [!DNL Microsoft Word] or [!DNL Google Docs], it provides an asset selector in your editor. Use this asset selector to access to the [!DNL AEM Assets], and insert approved assets into your document.
+When [!DNL AEM Assets] integrates with your Document-Based Authoring tools, such as [!DNL Microsoft Word] or [!DNL Google Docs], it provides an asset selector in your authoring tool. Use this asset selector to access [!DNL AEM Assets], and insert approved assets into your document.
 If you already have an [!DNL Edge Delivery Services] website, see [[!DNL AEM Assets] plugin](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) documentation to learn how to integrate [!DNL AEM Assets] with your existing [!DNL AEM] project. 
 Follow the following [Prerequisites](#integrate-aem-assets-with-microsoft-word-and-google-docs) and [Integrating [!DNL AEM Assets] with Document-Based Authoring environment](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs) sections if you do not have an [!DNL Edge Delivery Services] website to publish your [!DNL AEM Assets] inclusive content authored in document based authoring tools.
 
@@ -54,7 +54,7 @@ To use asset reference, you must have:
 
 * Entitlement to an Assets Cloud Service environment where [!DNL Dynamic Media with Open API capabilities] is enabled.
 * A [!DNL Dynamic Media] license.
-* The [!DNL AEM Assets sidekick plugin] enabled with copy reference for image assets enabled. For more details, see [this](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin#copymode) for Document-Based Authoring and see [this](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) for Universal Editor based authoring.
+* The [!DNL AEM Assets sidekick plugin] enabled with copy reference for image assets enabled. For more details, see [this documentation](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin#copymode) for Document-Based Authoring and see [this documentation](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) for Universal Editor based authoring.
 * Assets that are approved. Approved assets have `dam:status=Approved` via the Assets Cloud Services backend or UI actions.
 
 ### Use assets delivered using [!DNL Dynamic Media with OpenAPI capabilities]{#how-to-use-Dynamic-Media-with-OpenAPI-assets}
