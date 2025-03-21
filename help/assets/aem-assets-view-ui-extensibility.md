@@ -10,9 +10,7 @@ exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
 | [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
 | ------------- | --------------------------- |---------|----|-----|
 
-[!DNL AEM Assets View] supports UI extensibility enabling you to add custom UI components to your [!DNL Assets View] UI for specific workflows and business requirements that are not met by the out-of-the-box capabilities of [!DNL AEM Assets View]. This UI extensibility capability of [!DNL AEM Assets View] enhances its flexibility, enabling organizations to adapt the interface for specific workflows and requirements. 
-
-Enable UI extensibility in your [!DNL AEM Assets View] to add custom UI components to your [!DNL Assets View] UI to meet specific business requirements that are not met by the out-of-the-box capabilities of [!DNL AEM Assets View].  
+[!DNL AEM Assets View] supports UI extensibility enabling you to add custom UI components to your [!DNL Assets View] UI for specific workflows and business requirements that are not met by the out-of-the-box capabilities of [!DNL AEM Assets View]. This UI extensibility capability of [!DNL AEM Assets View] enhances its flexibility, enabling organizations to adapt the interface for specific workflows and requirements.  
 You can add your extensions to **Asset**, **Folder** and **Collection** level. The added extension displays on a dedicated panel on the **Asset**, **Collection**, or **Folder** **[!UICONTROL Details]** page.
 
 >[!IMPORTANT]
