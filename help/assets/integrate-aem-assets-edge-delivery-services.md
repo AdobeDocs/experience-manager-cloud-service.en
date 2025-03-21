@@ -5,7 +5,7 @@ exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
 ---
 # Integrate AEM Assets while authoring content for Edge Delivery Services {#integrate-aem-assets-while-authoring-for-edge-delivery-services}
 
-![EDS2](/help/assets/assets/EDS2.png)
+![AEM assets with UE](/help/assets/assets/EDS2.png)
 
 [Edge Delivery Services](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview) is a composable set of services that allows for a high degree of flexibility in how you author and deliver content on your website. You can use both [AEM content management](/help/sites-cloud/authoring/author-publish.md) and [WYSIWYG authoring using the Universal Editor as well as Document-Based Authoring](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring).
 
@@ -34,7 +34,7 @@ Configure the AEM Assets Sidekick plugin to use assets while authoring content i
 
 * See [Adobe Experience Manager Assets Sidekick Plugin](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-experience-manager-assets-for-website-authors) to learn how to access and use AEM Assets in Microsoft Word or Google Docs.
 * See [Configuring Adobe Experience Manager Assets Sidekick Plugin](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin) for configuration details.
-![my-assets-sidebar](/help/assets/assets/my-assets-sidebar.png)
+![use dynamic media with openAPI capabilities in ms word and google docs](/help/assets/assets/my-assets-sidebar.png)
 
 ## Deliver assets using Dynamic Media with OpenAPI capabilities {#integrate-Dynamic-Media-with-OpenAPI-capabilities-with-Microsoft-Word-Google-Docs-and-universal-editor}
 
