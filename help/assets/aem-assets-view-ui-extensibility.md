@@ -10,7 +10,9 @@ exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
 | [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
 | ------------- | --------------------------- |---------|----|-----|
 
-[!DNL AEM Assets View] has UI extensibility capability. This capability to add custom UI components to [!DNL Assets View] UI enhances the flexibility of [!DNL AEM Assets View], enabling organizations to adapt the interface for specific workflows and requirements. Enable UI extensibility in your [!DNL AEM Assets View] to add custom UI components to your [!DNL Assets View] UI to meet specific business requirements that are not met by the out-of-the-box capabilities of [!DNL AEM Assets View].  
+[!DNL AEM Assets View] supports UI extensibility enabling you to add custom UI components to your [!DNL Assets View] UI for specific workflows and business requirements that are not met by the out-of-the-box capabilities of [!DNL AEM Assets View]. This UI extensibility capability of [!DNL AEM Assets View] enhances its flexibility, enabling organizations to adapt the interface for specific workflows and requirements. 
+
+Enable UI extensibility in your [!DNL AEM Assets View] to add custom UI components to your [!DNL Assets View] UI to meet specific business requirements that are not met by the out-of-the-box capabilities of [!DNL AEM Assets View].  
 You can add your extensions to **Asset**, **Folder** and **Collection** level. The added extension displays on a dedicated panel on the **Asset**, **Collection**, or **Folder** **[!UICONTROL Details]** page.
 
 >[!IMPORTANT]
@@ -29,7 +31,7 @@ Follow the steps mentioned in the below image to access the [!DNL Assets View]:
 Within [!DNL Assets View], navigate to the **[!UICONTROL Details]** page of an asset, folder or a collection. The **[!UICONTROL Details]** page displays the added UI extension on a dedicated panel.
 ![my workspace](/help/assets/assets/my-workspace-assets-view3.png)
 
-## Prerequisites for adding the extensibility component{#ui-extensibility-in-assets-view}
+## Prerequisites for adding the extensibility component{#assets-view-ui-extensibility}
 
 Fulfil the following requirements to start adding the extensibility component on your [!DNL Assets View UI]:
 
