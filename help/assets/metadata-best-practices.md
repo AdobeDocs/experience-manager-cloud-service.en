@@ -35,9 +35,6 @@ experience manager metadata-->
             <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
         </td>
         <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
-        </td>
-        <td>
             <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
         </td>
         <td>
