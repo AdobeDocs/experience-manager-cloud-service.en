@@ -13,9 +13,6 @@ exl-id: 3ae96cd2-e0ac-43a5-a0bf-bebb1a028b10
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime and Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets integration with Edge Delivery Services</b></a>
         </td>
         <td>
@@ -24,11 +21,11 @@ exl-id: 3ae96cd2-e0ac-43a5-a0bf-bebb1a028b10
           <td>
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Enable Dynamic Media Prime and Ultimate</b></a>
         </td>
-    </tr>
-    <tr>
         <td>
             <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
         </td>
+    </tr>
+    <tr>
         <td>
             <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
         </td>

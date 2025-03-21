@@ -28,9 +28,6 @@ role: User
     </tr>
     <tr>
         <td>
-            <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
-        </td>
-        <td>
             <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
         </td>
         <td>

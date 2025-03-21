@@ -35,9 +35,6 @@ exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
             <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
         </td>
         <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media with OpenAPI capabilities</b></a>
-        </td>
-        <td>
             <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets developer documentation</b></a>
         </td>
     </tr>

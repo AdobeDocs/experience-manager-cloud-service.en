@@ -31,9 +31,6 @@ exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
             <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
         </td>
         <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
             <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media with OpenAPI capabilities</b></a>
         </td>
         <td>
