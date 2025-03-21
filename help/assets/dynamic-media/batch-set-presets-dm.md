@@ -8,6 +8,43 @@ exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
 ---
 # About Batch Set Presets {#about-bsp}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime and Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets integration with Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI Extensibility</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Enable Dynamic Media Prime and Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media with OpenAPI capabilities</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets developer documentation</b></a>
+        </td>
+    </tr>
+</table>
+
 Use **[!UICONTROL Batch Set Presets]** to create and organize multiple assets in an image set or spin set at the time you upload asset files to a folder either individually or using bulk ingestion. You can have the preset run alongside the asset import jobs you schedule in [!DNL Dynamic Media]. Each preset is a uniquely named, self-contained set of instructions that defines how to construct the image set or spin set using images that match the defined naming conventions in the preset recipe.
 
 >[!IMPORTANT]
@@ -38,7 +75,7 @@ You can create many batch set presets so you cover all asset ingest jobs you req
 
 The **[!UICONTROL Asset Naming Convention]** area on the **[!UICONTROL Batch Set Preset]** page has two elements that you can use to define your batch set preset: **[!UICONTROL Match]** and **[!UICONTROL Base Name]**. These elements let you define a naming convention and identify the part of the convention used to name the set in which they are contained. <!-- While **[!UICONTROL Match]** is required, **[!UICONTROL Base Name]** is mandatory only if the **[!UICONTROL Match]** field does not already specify a base name through the use of a bracket grouping. -->
 
-A company’s individual naming convention often uses one or more lines of definition from each of these two elements. You can use as many lines for your unique definition and group them into distinct elements, such as for Main Image, Color element, Alternate View element, and Swatch element.
+A company's individual naming convention often uses one or more lines of definition from each of these two elements. You can use as many lines for your unique definition and group them into distinct elements, such as for Main Image, Color element, Alternate View element, and Swatch element.
  
 For example, the syntax for a literal match regular expression could look like the following:
 
@@ -103,8 +140,8 @@ See [Create a batch set preset for an image set or a spin set](#creating-bsp) or
    | --- | --- |
    | Preset Name | Read-only. The name you specified when you first created the batch set. If you must rename the preset, you can copy the existing batch set preset and specify a new name. See [Copy an existing batch set preset](#copy-bsp). |
    | Type | Read-only. The type was specified when you first created the batch set. Copying an existing batch set preset does not let you change its [!UICONTROL Type]; you must create a preset instead. |
-   | Include Derived Assets | Optional. To have [!DNL Dynamic Media]’s IPS (Image Production System) include generated or “derived” images with your Spin Set or Image Set, select **[!UICONTROL Yes]** (default). A derived asset is an image that was not directly uploaded by a user. Instead, the asset was produced by IPS when a master asset was uploaded. For example, an image asset that IPS generated from a page in a PDF, at the time the PDF was uploaded in [!DNL Dynamic Media], is considered a derived asset. |
-   | Destination Folder | Optional. If you define large numbers of image sets or spin sets, Adobe recommends you keep these sets separate from the folders that contain the assets themselves. As such, consider creating an Image Sets or Spin Sets folder and redirect the application to place batch set generated sets here.<br>In such case, specify which folder within the Experience Manager Assets folder structure (`/content/dam`) has the batch set preset active. Be sure that the folder is enabled for [!DNL Dynamic Media] synchronization to allow it as a destination folder. See [Configure selective publishing at the folder level in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder).<br>More than one folder can have a given batch set preset assigned to it, if you apply the preset by way of the folder’s **[!UICONTROL Properties]**. See [Apply batch set presets from an asset folder's Properties page](#apply-bsp-to-folders-via-properties).<br>If you do not specify a folder, the batch set preset generated image set or spin set is created in the same folder as the asset folder you uploaded to. |
+   | Include Derived Assets | Optional. To have [!DNL Dynamic Media]'s IPS (Image Production System) include generated or "derived" images with your Spin Set or Image Set, select **[!UICONTROL Yes]** (default). A derived asset is an image that was not directly uploaded by a user. Instead, the asset was produced by IPS when a master asset was uploaded. For example, an image asset that IPS generated from a page in a PDF, at the time the PDF was uploaded in [!DNL Dynamic Media], is considered a derived asset. |
+   | Destination Folder | Optional. If you define large numbers of image sets or spin sets, Adobe recommends you keep these sets separate from the folders that contain the assets themselves. As such, consider creating an Image Sets or Spin Sets folder and redirect the application to place batch set generated sets here.<br>In such case, specify which folder within the Experience Manager Assets folder structure (`/content/dam`) has the batch set preset active. Be sure that the folder is enabled for [!DNL Dynamic Media] synchronization to allow it as a destination folder. See [Configure selective publishing at the folder level in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder).<br>More than one folder can have a given batch set preset assigned to it, if you apply the preset by way of the folder's **[!UICONTROL Properties]**. See [Apply batch set presets from an asset folder's Properties page](#apply-bsp-to-folders-via-properties).<br>If you do not specify a folder, the batch set preset generated image set or spin set is created in the same folder as the asset folder you uploaded to. |
    | **[!UICONTROL Set Naming Convention]** |  |
    | Prefix<br>or<br>Suffix | Optional. Enter either a prefix, suffix, or both in the respective fields.<br>The prefix and suffix fields let you create many batch set presets using an alternate, custom file naming convention for a particular set of content. This method is especially useful in cases where there is an exception to a company's defined default naming scheme.<br>The prefix or suffix is added to the **[!UICONTROL Base Name]** you define in the **[!UICONTROL Asset Naming Convention]** area. By adding a prefix or suffix, you ensure that your image set or spin set gets created exclusively and independently from other assets. It can also serve to further help others identify file types. For example, to determine a color mode used, you could add as a prefix or suffix `rgb` or `cmyk`.<br>While specifying a set naming convention is not required to use batch set preset functionality, best practice recommends that you use the set naming convention. This practice lets you define as many elements of your naming convention that you want grouped in a set to help streamline batch set creation. |
    | **[!UICONTROL Rule Results - RegX]** |  |
