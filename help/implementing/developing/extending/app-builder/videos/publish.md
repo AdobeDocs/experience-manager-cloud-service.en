@@ -1,7 +1,7 @@
 ---
 title: Publishing App Builder applications
 description: Learn how to publish, and run an App Builder application.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
 role: Developer, Architect
