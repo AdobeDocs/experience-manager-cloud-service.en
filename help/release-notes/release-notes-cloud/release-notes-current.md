@@ -120,7 +120,7 @@ The more performant Java 21 **runtime** will be automatically deployed when a Ja
 
 >[!IMPORTANT] 
 >
-> In February, the Java 21 **runtime** was deployed to dev/RDE environments (aside from those already built with Java 17 or 21, which already have Java 21 runtime). Java 21 will be applied to stage/production environments in April. 
+> The Java 21 **runtime** was deployed to your dev/RDE environments in February; it will be applied to your stage/production environments in **April**. Note that **building code** with Java 21 (or Java 17) is independent of the Java 21 runtime -- you must explicitly take steps to build code with Java 21 (or Java 17).
 
 ### Edge Computing - Request for Feedback! {#edge-computing-feedback}
 
