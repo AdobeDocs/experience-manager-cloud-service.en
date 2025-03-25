@@ -3,8 +3,6 @@ title: Submit Actions
 description: Configure Submit Actions for Adaptive Form.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: yes
-hidefromtoc: yes
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
 ---
 # Adaptive Form Submit Action
@@ -138,4 +136,5 @@ On Submit option helps you to configure a Submit Action message on Adaptive Form
 
 ## See also
 
-{{see-more-forms-eds}}
+{{universal-editor-see-also}}
+

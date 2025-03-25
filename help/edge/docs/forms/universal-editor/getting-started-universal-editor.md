@@ -3,16 +3,24 @@ title: Getting Started with Edge Delivery Services for AEM Forms in Universal Ed
 description: This tutorial helps get you up-and-running with a new Adobe Experience Manager Forms (AEM) project. In ten to twenty minutes, you will have created your own Edge Delivery Services Forms in Universal Editor.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: yes
-hidefromtoc: yes
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
 ---
 
 # Getting Started with Edge Delivery Services for AEM Forms using Universal Editor (WYSIWYG) 
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| Universal Editor-based Authoring  |    This article                  |
+| Document-based Authoring     | [Click here](/help/edge/docs/forms/tutorial.md)   |
+
+
+<span class="preview"> This feature is available through the early access program. To request access, send an email from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> with your GitHub organization name and repository name. For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
+
 In today's digital age, user-friendly forms are essential for all organizations. Edge Delivery Services Forms are created using the Universal Editor, which offers WYSIWYG (what-you-see-is-what-you-get) capabilities. It provides a modern, intuitive interface for efficient form authoring.
 
 AEM Forms provide a block, known as the Adaptive Forms Block, to help you easily create Edge Delivery Services Forms to capture and store data. You can [create a new AEM Project pre-configured with the Adaptive Forms Block](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) or [add the Adaptive Forms Block to an existing AEM Project](#add-adaptive-forms-block-to-your-existing-aem-project).
+
+![Github Repository Workflow](/help/edge/assets/repo-workflow.png){width="50%" align="center" height="50%"}
 
 This tutorial guides you through creating, previewing, and publishing your own form with a new or existing Adobe Experience Manager Site project using Universal Editor's WYSIWYG authoring.
 
@@ -180,7 +188,7 @@ To integrate:
 
 That's it! The Adaptive Forms Block is now part of your AEM Project. You can [start creating and adding forms to your AEM Project](#add-edge-delivery-services-forms-to-aem-site-project).
 
-## Author AEM Forms using WYSIWYG
+## Author Forms using WYSIWYG
 
 You can open your AEM Project in the Universal Editor for WYSIWYG authoring, where you can edit the project and add the Adaptive Form section to include Edge Delivery Services forms on AEM Project pages.
    
@@ -245,6 +253,10 @@ You can open your AEM Project in the Universal Editor for WYSIWYG authoring, whe
 
 You can style the Edge Delivery Services Forms by editing the `.css` and `.js` files in the Adaptive Forms Block and [setting up a local AEM development environment](#set-up-local-aem-development-environment) to view the changes instantly in your browser.
 
+>[!NOTE]
+>
+> You can also [author a standalone form in Universal Editor and publish it to Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md).
+
 ## Set up local AEM development environment
 
 You can set up a local AEM development environment for developing custom styles and components locally. To be up and running with a local AEM development environment:
@@ -291,4 +303,4 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 ## See also
 
-{{see-more-forms-eds}}
+{{universal-editor-see-also}}

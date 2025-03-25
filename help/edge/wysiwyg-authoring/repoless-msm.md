@@ -17,7 +17,7 @@ You can use MSM to create an entire content structure for your brand across loca
 
 ## Requirements {#requirements}
 
-To configure MSM in a repoless use case, you must first complete a number of tasks.
+To configure MSM in a repoless use case, you must first complete the following tasks:
 
 * This document assumes that you have already created a site for your project based on the [Developer Getting Started Guide for WYSIWYG Authoring with Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) guide.
 * You must have already [enabled the repoless feature for your project](/help/edge/wysiwyg-authoring/repoless.md).

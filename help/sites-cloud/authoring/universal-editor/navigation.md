@@ -61,6 +61,10 @@ The UI is divided into these main areas.
 
 ![The Universal Editor UI](assets/ui.png)
 
+>[!TIP]
+>
+>The Universal Editor offers a number of [customization options](/help/implementing/universal-editor/customizing.md) and [extension points](/help/implementing/universal-editor/extending.md) that can modify and add to the functionality of the editor. For this reason, you may see different options than the standard ones documented here.
+
 ### The Experience Cloud Header {#experience-cloud-header}
 
 The Experience Cloud header is always present at the top of the screen. It is an anchor that tells you where you are within Experience Cloud and helps you navigate to other Experience Cloud apps.
@@ -187,7 +191,7 @@ Select the open app preview icon to open the page you are currently editing in i
 
 #### Publish {#publish}
 
-Select the publish button so you can publish the changes to the content live for consumption by your readers.
+Select the publish button so you can publish the changes to the content live for consumption by your readers or to a preview environment for review.
 
 ![Publish button](assets/publish.png)
 
@@ -207,7 +211,7 @@ For example, the ability to unpublish a page (i.e. reverse the action of the [**
 
 The Universal Editor offers a customizable and extensible authoring experience. If you see additional buttons in the toolbar, your Universal Editor has been extended.
 
-* For details on extension possibilities, please see the [Customizing and Extending the Universal Editor](/help/implementing/universal-editor/customizing.md).
+* For details on extension possibilities, please see the [Extending the Universal Editor](/help/implementing/universal-editor/extending.md).
 * For details on how an individual extension works, please see the [Extension Manager documentation](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
 
 ### The Editor {#editor}
@@ -302,9 +306,9 @@ Tapping or clicking the delete button [deletes the component](/help/sites-cloud/
 >
 >Use the hot key `Shift+Backspace` to delete a selected component from a container.
 
-#### Additional Buttons {#additional-properties-rail-buttons}
+## Additional Features {#additional-features}
 
-The Universal Editor offers a customizable and extensible authoring experience. If you see additional buttons in the properties panel, your Universal Editor has been extended.
+The Universal Editor offers a customizable and an extensible authoring experience. If you see additional buttons or options in the properties panel or toolbar, your Universal Editor has been extended.
 
 * For details on extension possibilities, please see the [Customizing and Extending the Universal Editor](/help/implementing/universal-editor/customizing.md).
 * For details on how an individual extension works, please see the [Extension Manager documentation](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).

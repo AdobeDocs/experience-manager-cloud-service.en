@@ -147,6 +147,6 @@ While it is recommended that you move on to the next part of the headless develo
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) -  This GitHub project includes example applications that highlight AEM's GraphQL APIs.
 * [Introduction to the Architecture of Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - A complete overview of AEM's architecture
 * [Headless Setup](/help/headless/introduction.md#getting-started) - A quick introduction to AEM's headless features for users already knowledgeable of AEM.
-* [Create Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - Technical documentation on Content Fragment Models
+* [Create Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) - Technical documentation on Content Fragment Models
 * [Create Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments) - Technical documentation on Content Fragments
 * [Query content with GraphQL](/help/headless/graphql-api/content-fragments.md) - Technical documentation on the GraphQL API

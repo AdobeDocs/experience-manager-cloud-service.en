@@ -38,7 +38,7 @@ AEM as a Cloud Service is a flexible tool for the headless implementation model 
 1. **Content Fragments**
    * A Content Fragment is created based on a Content Fragment Model.
    * Content Fragments are created by content authors, using the AEM Content Fragment editor.
-   * Content Fragments are stored as AEM Assets, but can be managed through either the Assets Console, or the [Content Fragments Console](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
+   * Content Fragments are stored as AEM Assets, but can be managed through either the Assets Console, or the [Content Fragments Console](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console).
 1. **Content API for delivery**
    * See [AEM APIs for Structured Content Delivery and Management](/help/headless/apis-headless-and-content-fragments.md) for an overview of the various APIs available and comparison of some of the concepts involved.
 

@@ -31,11 +31,11 @@ Follow the steps below to extract your migration set from the Content Transfer T
    >[!IMPORTANT]
    >
    >Make sure that the Extraction key is valid and is not near its expiration. If it is close to its expiration date, you can renew the Extraction key by selecting the migration set and clicking Properties. Click **Renew**. This takes you to the Cloud Acceleration Manager where you can click **Copy Extraction Key**. Every time you click **Copy Extraction Key**, a new Extraction key is generated which is valid for 14 days from the time of creation.
-   >![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
+   >![image](/help/journey-migration/content-transfer-tool/assets-ctt/migrationSetDetails.png)
 
 1. This brings up the Extraction dialog. Click **Extract** to start the extraction phase.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14c.png) 
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/migrationSetExtraction.png) 
 
    >[!NOTE]
    >You can optionally overwrite the staging container during the extraction phase. If **Overwrite staging container** is disabled, it can speed up extractions for subsequent migrations where the content paths or include versions settings have not changed. However, if the content paths or include versions settings have changed, then **Overwrite staging container** should be enabled.
@@ -46,7 +46,7 @@ Follow the steps below to extract your migration set from the Content Transfer T
 
    You can click **View Progress** to get a granular view of the on-going extraction.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam16.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/viewProgress.png)
 
    You can also monitor the Extraction phase progress from Cloud Acceleration Manager by visiting the Content Transfer page, and see it in more detail by clicking **...** > **View details**.
 
@@ -65,6 +65,12 @@ The Content Transfer Tool has a feature that supports differential content top-u
 >After the initial content transfer, it is recommended to do frequent differential content top-ups to shorten the content freeze period for the final differential content transfer before going live on Cloud Service. If you have used the pre-copy step for the first full extraction, you can skip pre-copy for subsequent top-up extractions (if the top-up migration set size is less than 200 GB). The reason is because it may add time to the entire process.
 >Also, it is essential that the content structure of existing content is not changed from the time the initial extraction is taken to when the top-up extraction is run. Top-ups cannot be run on content whose structure has been changed since the initial extraction. Ensure that you restrict this during the migration process.
 
+>[!NOTE]
+>Once content paths are migrated to the staging container, those paths or any subpaths within them cannot be removed or excluded from subsequent top-up migrations.
+>Example: Initial Migration: content/dam/weRetail,
+>Next Top-up Exclusion Attempt: content/dam/weRetail/ab.
+>In this scenario, excluding content/dam/weRetail/ab is not possible because the data has already been migrated to the staging container.
+
 Once the extraction process is complete, you can transfer delta content, by using the top-up extraction method. 
 
 Follow the steps below:
@@ -77,7 +83,7 @@ Follow the steps below:
 
    >[!IMPORTANT]
    >You should disable the **Overwrite staging container during extraction** option.
-   >![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam20.png)
+   >![image](/help/journey-migration/content-transfer-tool/assets-ctt/overwriteStagingContainer.png)
 
 
 ## What's Next {#whats-next}
