@@ -2,7 +2,7 @@
 title: Product Recommendations
 description: Adobe Commerce features a recommendation engine powered by Adobe Sensei. Learn how to dynamically insert these product recommendations in an Adobe Experience Manager (AEM) storefront.
 sub-product: Commerce
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: feature-video
 activity: grow
 audience: marketer
