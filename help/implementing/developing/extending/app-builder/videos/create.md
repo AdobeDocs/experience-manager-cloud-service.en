@@ -1,7 +1,7 @@
 ---
 title: Create an App Builder application
 description: Learn how to create and bootstrap a new App Builder application.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
 role: Developer, Architect

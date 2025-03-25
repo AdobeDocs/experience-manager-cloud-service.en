@@ -2,7 +2,7 @@
 title: Commerce Multi-Store Setup
 description: Learn how to map multiple store views from Adobe Commerce to Adobe Experience Manager. This allows projects to support multi-tenant and multi-lingual use cases.
 sub-product: Commerce
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: technical-video
 activity: setup
 audience: administrator
