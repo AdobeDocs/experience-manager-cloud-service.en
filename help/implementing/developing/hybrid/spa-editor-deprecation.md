@@ -45,7 +45,7 @@ The most suitable replacement for the SPA Editor depends on your projects needs.
 * **[The Universal Editor](/help/edge/wysiwyg-authoring/authoring.md)** is the best direct replacement for the SPA Editor.
   * The Universal Editor is also a visual editor and was designed specifically for decoupled implementations, incorporating all of Adobe's experience from the SPA Editor.
   * The Universal Editor has also been [released for AEM 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) (with release 2024.11.05 of AEM 6.5) and therefore supports AMS and on-prem use-cases in addition to Cloud Services.
-* **[The Content Fragment Editor](/help/assets/content-fragments/content-fragments-managing.md)** is alternative for those who prefer a form-based editor.
+* **[The Content Fragment Editor](/help/assets/content-fragments/content-fragments-managing.md)** is an alternative for those who prefer a form-based editor.
   * The Content Fragment Editor is best suited when your content is structured as Content Fragments rather than as pages.
 
 Structuring content with Content Fragments does not exclude the use of the Universal Editor as a visual editor, and both editors can be used together.
@@ -73,7 +73,7 @@ With these technical differences in mind, Adobe's recommendation is to:
 * Keep existing SPA Editor sites as they are, since support continues.
 * Adopt the Universal Editor for all new developments, including new sites, sections, or pages.
 
-Keep in mind even though there is no direct implementation of certain SPA Editor features in the Universal Editor, there are new ways to solve the same problems using the new flexibility of the Universal Editor.
+Keep in mind that even though there is no direct implementation of certain SPA Editor features in the Universal Editor, there are new ways to solve the same problems using the new flexibility of the Universal Editor.
 
 ## Comparing the SPA Editor and the Universal Editor {#spa-vs-ue}
 
@@ -85,8 +85,8 @@ The Universal Editor offers much more freedom to implementers of web apps, as il
 |---|---|---|
 |**Theming**|App must implement layout with AEM's grid CSS.|App can use any modern CSS technique for layout.|
 |**Rendering**|App must follow SPA Editor's routing structure.|App can be implemented freely, without imposed rules or patterns to follow.|
-|**SDK**|Implementation must tightly integrate SDK.|On author tier, app just loads `corlib.js` and instructs the Universal Editor via HTML annotations.|
-|**Framework**|App must use supported version of React or Angular.|App can use any framework or architecture.|
+|**SDK**|Implementation must tightly integrate the SDK.|On author tier, app just loads `corlib.js` and instructs the Universal Editor via HTML annotations.|
+|**Framework**|App must use a supported version of React or Angular.|App can use any framework or architecture.|
 |**Hosting**|App must be hosted on AEM's domain.|App can be fully decoupled and hosted anywhere.|
 |**API**|App must retrieve content from the `model.json` API.|App can use any APIs including custom ones.|
 |**Persistence**|SPA Editor only supports page content for visual editing.|Universal Editor natively supports visual editing of pages and Content Fragments.|
