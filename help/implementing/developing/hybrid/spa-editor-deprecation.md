@@ -91,4 +91,4 @@ The Universal Editor offers much more freedom to implementers of web apps, as il
 |**API**|App must retrieve content from the `model.json` API.|App can use any APIs including custom ones.|
 |**Persistence**|SPA Editor only supports page content for visual editing.|Universal Editor natively supports visual editing of pages and Content Fragments.|
 |||Universal Editor can be extended to edit external content with the same visual capabilities.|
-||Developers must deploy Sling Models and `cq:Dialog`s in AE.|Developers need little to no AEM experience and they don't need to write any Java.|
+||Developers must deploy Sling Models and `cq:Dialog`s in AEM.|Developers need little to no AEM experience and they don't need to write any Java.|
