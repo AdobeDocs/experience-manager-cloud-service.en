@@ -11,11 +11,11 @@ Though the SPA Editor remains supported by Adobe, learn what its deprecation mea
 
 ## Summary {#summary}
 
-Adobe deprecated the SPA Editor with [release 2025.01 of AEM as a Cloud Service,](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#spa-editor) meaning that no further enhancements or updates will be made to its SDKs. You are encouraged to adobe the [Universal Editor](/help/implementing/universal-editor/introduction.md) for any new projects to take advantage of AEM’s latest innovations.
+Adobe deprecated the SPA Editor with [release 2025.01 of AEM as a Cloud Service,](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#spa-editor) meaning that no further enhancements or updates will be made to its SDKs. Adobe encourages you to use the [Universal Editor](/help/implementing/universal-editor/introduction.md) for any new projects in order to take advantage of AEM’s latest innovations.
 
 ## Details of Deprecation {#details}
 
-The deprecation of the SPA Editor **does not mean immediate removal**, and if you have existing implementations, **you can continue using it as long as it meets your needs.** However, please be aware of the following implications of the deprecation.
+The deprecation of the SPA Editor **does not mean immediate removal**, and if you have existing implementations, **you can continue using it as long as it meets your needs.** However, please be aware of the following implications of its deprecation.
 
 * Going forward Adobe will only address P1 and P2 issues and security vulnerabilities.
 * No further developments, enhancements, or updates will be made to its SDKs.
@@ -40,15 +40,15 @@ The deprecation means that the following SDKs are now in feature freeze.
 
 ## Alternatives to the SPA Editor {#alternatives}
 
-The most suitable replacement for the SPA Editor depends on you project needs.
+The most suitable replacement for the SPA Editor depends on your projects needs.
 
 * **[The Universal Editor](/help/edge/wysiwyg-authoring/authoring.md)** is the best direct replacement for the SPA Editor.
-  * It is also a visual editor and was designed specifically for decoupled implementations, incorporating all the learnings from the SPA Editor.
-  * The Universal Editor has also been released for 6.5 with release 2024.11.05, therefore supporting AMS and on-prem use-cases, in addition to Cloud Services.
-* **[The Content Fragment Editor](/help/assets/content-fragments/content-fragments-managing.md)** is another alternative for those who prefer a form-based editor.
-  * The Content Fragment Editor is best suited when the content is structured as Content Fragments rather than as pages.
+  * The Universal Editor is also a visual editor and was designed specifically for decoupled implementations, incorporating all of Adobe's experience from the SPA Editor.
+  * The Universal Editor has also been [released for AEM 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) (with release 2024.11.05 of AEM 6.5) and therefore supports AMS and on-prem use-cases in addition to Cloud Services.
+* **[The Content Fragment Editor](/help/assets/content-fragments/content-fragments-managing.md)** is alternative for those who prefer a form-based editor.
+  * The Content Fragment Editor is best suited when your content is structured as Content Fragments rather than as pages.
 
-Both editors can be used together, as structuring content with Content Fragments does not exclude the use of the Universal Editor as a visual editor.
+Structuring content with Content Fragments does not exclude the use of the Universal Editor as a visual editor, and both editors can be used together.
 
 ## Migrating to the Universal Editor {#migrate-ue}
 
@@ -58,7 +58,7 @@ The Universal Editor offers many advantages, making migration to it a great solu
 * **Future-Proofing:** AEM’s roadmap prioritizes the Universal Editor as visual editor. Adopting it ensures access to the latest innovations and enhancements.
 * **Simpler Integration:** No AEM-specific SDK is required to use the Universal Editor, reducing tech stack lock-in.
 * **Bring Your Own App:** The Universal Editor supports any web framework or architecture, allowing adoption without requiring complex refactoring.
-* **Extensibility:** The Universal Editor benefits from a robust extension framework, including integrations with GenAI, Workfront, and more.
+* **Extensibility:** The Universal Editor benefits from a robust [extension framework,](/help/implementing/universal-editor/extending.md) including integrations with GenAI, Workfront, and more.
 
 There is no direct migration path from the SPA Editor to the Universal Editor. This is due to fundamental differences in the two technologies.
 
@@ -68,7 +68,7 @@ There is no direct migration path from the SPA Editor to the Universal Editor. T
   * This prevents automatic conversion of component dialogs from the Page Editor.
   * This affects many areas of the dialogs, like custom widgets, field validation, show/hide rules, and template-based customizations.
 
-With these technical differences in mind, Adobe recommendation is to:
+With these technical differences in mind, Adobe's recommendation is to:
 
 * Keep existing SPA Editor sites as they are, since support continues.
 * Adopt the Universal Editor for all new developments, including new sites, sections, or pages.
