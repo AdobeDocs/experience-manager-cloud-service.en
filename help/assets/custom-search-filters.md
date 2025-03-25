@@ -4,12 +4,50 @@ description: Learn about customizing search filters form
 role: User, Leader, Developer
 exl-id: 383e8165-439e-447b-a19d-d5446238a13f
 ---
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime and Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets integration with Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI Extensibility</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Enable Dynamic Media Prime and Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media with OpenAPI capabilities</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets developer documentation</b></a>
+        </td>
+    </tr>
+</table>
+
 # Customize search filters {#customize-search-filters}
 
 Search filters allow you to refine search results based on various parameters such as date, file type, tags, and relevance, enhancing the precision of search queries. By applying filters, you can quickly sift through the most relevant results efficiently. This not only saves time but also improves the overall search experience by tailoring results to specific preferences and needs.
 See more about [search](search-assets-view.md).
 
-Custom search filters can only be mapped to entries in your Searchable Property Index. Ensure that any custom metadata is included before configuring your custom filter experience. [!DNL Assets view] helps customizing search filters to streamline the search process. To customize the search filters template, execute the following steps:
+Customize search filters AEM Assets can only be mapped to entries in your Searchable Property Index. Ensure that any custom metadata is included before configuring your custom filter experience. [!DNL Assets view] helps customizing search filters to streamline the search process. To customize the AEM Assets custom search filters, execute the following steps:
 
 1. Navigate to **[!UICONTROL Settings]** > **[!UICONTROL General Settings]**.
 1. Go to the **[!UICONTROL Search]** tab. Click **[!UICONTROL Customize]** to configure your search form. 
@@ -33,7 +71,7 @@ Assets view provides the following custom filters that are reconfigurable as per
 
 ### Filter elements {#filter-elements}
 
-You can use a collection of filter elements on your custom search filters canvas. These elements are reconfigurable based on the usability of search property attributes. However, you can customize the [filter properties](#filter-properties) as per your requirements. The following filter elements are available in [!DNL Assets view]:
+Custom filters AEM Assets allows you to use a collection of filter elements on your custom search filters canvas. These elements are reconfigurable based on the usability of search property attributes. However, you can customize the [filter properties](#filter-properties) as per your requirements. The following filter elements are available in [!DNL Assets view]:
 
 <table>
     <tr>
@@ -322,7 +360,7 @@ The preconfigured filters are preset settings that allow you to use them directl
 
 #### Filter properties {#filter-properties}
 
-Each filter element is associated with a set of properties. Following properties are used in the filter and preconfigured elements:
+Each filter element is associated with a set of properties. AEM Assets customize search filters use the following properties in the filter and preconfigured elements:
 
 <table>
     <tr>
