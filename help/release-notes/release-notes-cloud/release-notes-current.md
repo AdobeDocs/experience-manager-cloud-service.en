@@ -122,6 +122,14 @@ The more performant Java 21 **runtime** will be automatically deployed when a Ja
 >
 > The Java 21 **runtime** was deployed to your dev/RDE environments in February; it will be applied to your stage/production environments in **April**. Note that **building code** with Java 21 (or Java 17) is independent of the Java 21 runtime -- you must explicitly take steps to build code with Java 21 (or Java 17).
 
+### AEM Log-Forwarding to more destinations - Beta Program {#log-forwarding-earlyadopter}
+
+Now in beta, you can forward AEM logs to New Relic (using HTTPS), Amazon S3, and Sumo Logic. Note that AEM logs (including Apache/Dispatcher) are supported, but not CDN logs. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) for access.
+
+While logs can be downloaded from Cloud Manager, many organizations find it beneficial to stream those logs to a preferred logging destination. AEM already supports (GA) AEM and CDN log forwarding to Azure Blob Storage, Datadog, HTTPS, Elasticsearch (and OpenSearch), and Splunk. This feature is configured in a self-serve manner, and deployed using the Config Pipeline.
+
+Learn more in the [log forwarding documentation](/help/implementing/developing/introduction/log-forwarding.md)
+
 ### Edge Computing - Request for Feedback! {#edge-computing-feedback}
 
 Edge computing brings data processing closer to the browser, which has benefits including reduced latency. Adobe would like to hear if you find this technology useful for AEM Publish Delivery and Edge Delivery Services projects. Additionally, let us know what you envision using it for as input into the product roadmap. 
