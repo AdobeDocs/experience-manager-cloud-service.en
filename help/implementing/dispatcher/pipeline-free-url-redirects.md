@@ -85,7 +85,7 @@ Keep in mind the following:
 
 ## Tutorial
 
-- [Implementing pipeline-free URL redirects](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)
+1. [Implementing pipeline-free URL redirects](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)
 - [URL redirects](url-redirection.md)
 
 
