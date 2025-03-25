@@ -2,7 +2,7 @@
 title: Set up AEM with multiple commerce systems
 description: Learn how to set up Adobe Experience Manager with Multiple Commerce Systems. This allows projects to support a single experience management layer that connects to multiple Adobe or third-party commerce backends for multi-brand, multi-region storefronts.
 sub-product: Commerce
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: technical-video
 activity: setup
 feature: Commerce Integration Framework

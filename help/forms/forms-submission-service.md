@@ -8,6 +8,8 @@ exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
 ---
 # Forms Submission Service with Edge Delivery Services Forms
 
+<span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
+
 Forms Submission service allows you to store data from the form submissions in any spreadsheet, such as OneDrive, SharePoint, or Google Sheets, allowing you to easily access and manage form data within your preferred spreadsheet platform.
 
 ![Forms submission service](/help/forms/assets/form-submission-service.png)

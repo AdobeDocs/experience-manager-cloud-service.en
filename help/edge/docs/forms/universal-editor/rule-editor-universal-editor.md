@@ -3,12 +3,13 @@ title: How to use the rule editor to apply rules to form fields, enabling dynami
 description: The rule editor in Universal Editor allows you to add dynamic behavior and build complex logic into forms without coding or scripting.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: yes
-hidefromtoc: yes
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 ---
 
 # Introduction to Rule Editor in WYSIWYG Authoring
+
+<span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
+
 
 You can add dynamic form behaviour using the Rule Editor, which allows you to create rules. These rules enable conditional field visibility, automate calculations based on user input, and improve the overall user experience. By streamlining the form-filling process, the Rule Editor helps ensure both accuracy and efficiency.
 
@@ -179,7 +180,7 @@ Now, let's explore how to [write rules in the Rule Editor](#write-rules).
 
 ## Write Rules
 
-To understand how to write rules in Visual Rule Editor, let’s consider an simple example of a tax calculation form: 
+To understand how to write rules in Visual Rule Editor, let's consider an simple example of a tax calculation form: 
 
 ![Rule Editor example](/help/edge/docs/forms/assets/rule-editor-1.png)
 
@@ -379,14 +380,6 @@ This article provides limited information on the Rule Editor available in the Un
 
 {{see-also-rule-editor}}
 
-## See Also
+## See also
 
-* [Get started with Edge Delivery Services for AEM Forms](/help/edge/docs/forms/tutorial.md)
-* [Create a form using Google Sheets or Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-* [Set up your Google Sheets or Microsoft Excel files to start accepting data​](/help/edge/docs/forms/submit-forms.md)
-* [Publish your form and start collecting data](/help/edge/docs/forms/publish-forms.md)
-* [Customize the look of your forms​](/help/edge/docs/forms/style-theme-forms.md)
-* [Add repeatable sections to a form​](/help/edge/docs/forms/repeatable-forms.md)
-* [Show a custom thank you message after form submission​](/help/edge/docs/forms/thank-you-page-form.md)
-* [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
-* [Real Use Monitoring](https://www.aem.live/developer/rum#authentication)
+{{universal-editor-see-also}}

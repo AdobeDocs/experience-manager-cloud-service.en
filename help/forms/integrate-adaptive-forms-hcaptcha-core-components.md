@@ -85,8 +85,10 @@ To integrate AEM Forms with hCaptcha&reg; service, perform the following steps:
     * **Captcha Size:** You can select the display size of the hCaptcha&reg; challenge dialog. Use the **[!UICONTROL Compact]** option to display a small sized and the **[!UICONTROL Normal]** option to display a relatively large-size hCaptcha&reg; challenge dialog.<!-- or **[!UICONTROL Invisible]** to validate hCaptcha&reg; without explicitly rendering the checkbox widget on the user interface. -->
     * **[!UICONTROL Validation Message]:** Provide a validation message for your Captcha validation on form submission.
     * **[!UICONTROL Script Validation Message]** - This option allows you to enter a message to be displayed if the script validation fails.
+        
         >[!NOTE]
         >You can have multiple Cloud Configurations in your environment for a similar purpose. So, choose the service carefully. If no service is listed, see [Connect your AEM Forms environment with hCaptcha&reg;](#connect-your-forms-environment-with-hcaptcha-service) to learn how to create a Cloud Service that connects your AEM Forms environment with hCaptcha&reg; service.
+    
     <!--* **Error Message:** Provide the error message to display to the user when the Captcha submission fails.-->
 
 1. Select **[!UICONTROL Done]**.
