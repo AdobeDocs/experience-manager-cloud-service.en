@@ -49,7 +49,7 @@ The Real Use Monitoring service is designed to prevent the collection of persona
 * The checkpoint, or name, of a particular event in the sequence of loading the page. Or, interacting with it as a visitor
 * The source, or identifier, of the DOM element that the user interacts with for the checkpoint mentioned above. For instance, it could be an image
 * The target, or link to an external page or resource that the user interacts with for the checkpoint mentioned above. For example: `https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
-* The Core Web Vitals (CWV) performance metrics, including the Largest Contentful Paint (LCP), First Input Delay (FID), Cumulative Layout Shift (CLS), and Time To First Byte (TTFB) that describe the visitor's quality of experience.
+* The [Core Web Vitals (CWV)](https://web.dev/articles/lcp) performance metrics [Largest Contentful Paint (LCP)](https://web.dev/articles/lcp), [Interaction to Next Paint (INP)](https://web.dev/articles/inp) and [Cumulative Layout Shift (CLS)](https://web.dev/articles/cls) that describe the visitor's quality of experience.
 
 ## How Real Use Monitoring works for a customer {#how-rum-works-for-a-customer}
 

@@ -9,7 +9,7 @@ exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 ---
 # Author standalone forms using the Universal Editor (WYSIWYG)
 
-<span class="preview"> This feature is available through the early access program. To request access, send an email from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> with your GitHub organization name and repository name. For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
+<span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
 
 This article guides you through the process of authoring the standalone forms with the Universal Editor by selecting an Edge Delivery Services-based template from the Form Creation Wizard. You can also publish the authored forms with Universal Editor to AEM Edge Delivery Services.
 
@@ -46,13 +46,20 @@ To author a standalone Adaptive Form using Universal Editor, perform the followi
 
 1. **Create an Adaptive Form on AEM Forms author instance**
 
-   1. Access your AEM Forms as a Cloud Service author instance.
-   1. Select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.1.  Select **[!UICONTROL Create]**  &gt; **[!UICONTROL Adaptive Forms]**. The Wizard opens. 
+   1. Login into your AEM Forms as a Cloud Service author instance.
+   1. Select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
+   1. Select **[!UICONTROL Create]**  &gt; **[!UICONTROL Adaptive Forms]**. The Wizard opens. 
    1. In the **Source** tab, select a Edge Delivery Services based form template:
 
         ![Create EDS Forms](/help/edge/assets/create-eds-forms.png)
 
+
+      When you select a Edge Delivery Services based template, the **[!UICONTROL Create]** button is enabled. 
+   1. (Optional) In the **[!UICONTROL Data Source]** or **[!UICONTROL Submission]** tabs, you can select a data source or submit action.
+   1. (Optional) In the **[!UICONTROL Delivery]** tab, you can specify a publishing or unpublishing date for an Adaptive Form. 
+
    1. Click **[!UICONTROL Create]** and the **Create Form** wizard appears.
+   1. Specify the **Name** and **Title**. 
    1. Specify the **GitHub URL**. For example, if your GitHub repository is named `edsforms`, it is located under the account `wkndforms`,the URL is:
     `https://github.com/wkndforms/edsforms`
    1. Click **[!UICONTROL Create]**.
@@ -138,6 +145,63 @@ Here's how to access the form on Edge Delivery Services:
 The URL structure remains the same for both staged and live versions. However, the content you see differs based on the context:
 
 ![View published form](/help/edge/assets/eds-view-publish-form.png)
+
+## Manage forms
+
+You can perform several operations on form using the AEM Forms user interface.
+
+1. Login into your AEM Forms as a Cloud Service author instance.
+1. Select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
+
+1. Select a form and the toolbar displays the following operations you can perform on the selected form.
+
+<table>
+ <tbody>
+  <tr>
+   <td><p><strong>Operation</strong></p> </td>
+   <td><p><strong>Description</strong></p> </td>
+  </tr>
+  <tr>
+   <td><p>Edit</p> </td>
+   <td><p>Opens the form in edit mode.<br /> <br /> </p> </td>
+  </tr>
+    <tr>
+   <td><p>Properties</p> </td>
+   <td><p>Provides options to modify the properties of the form.<br /> <br /> </p> </td>
+  </tr>
+  <td><p>Copy</p> </td>
+   <td><p> Provides options to copy the form  and paste it at the desired location. <br /> <br /> </p> </td>
+  </tr>
+   <tr>
+   <td><p>Preview</p> </td>
+   <td><p>Provides options to preview the form as HTML or perform a custom preview by merging data from an XML file with the form. <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Download</p> </td>
+   <td><p>Downloads the selected form.<br /> <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Start Review/Manage Review</p> </td>
+   <td><p>Allows initiating and managing a review of the selected form.<br /> <br /> </p> </td>
+  </tr>
+  <!--<tr>
+   <td><p>Add Dictionary</p> </td>
+   <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
+  </tr>-->
+  <tr>
+   <td><p>Publish / Unpublish</p> </td>
+   <td><p>Publishes / unpublishes the selected form.<br /> <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Delete</p> </td>
+   <td><p>Deletes the selected form.<br /> <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Compare</p> </td>
+   <td><p>Compares two different form for previewing purposes.<br /> <br /> </p> </td>
+  </tr>
+ </tbody>
+</table> 
 
 ## Troubleshooting 
 

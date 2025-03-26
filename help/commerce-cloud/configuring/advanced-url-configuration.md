@@ -2,7 +2,7 @@
 title: Advanced URL Configurations
 description: Learn how to customize the URLs for product and category pages. Customizing allows implementations to optimize URLs for search engines and promote discovery.
 sub-product: Commerce
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: technical-video
 activity: setup
 audience: administrator

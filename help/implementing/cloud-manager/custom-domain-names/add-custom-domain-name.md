@@ -7,7 +7,7 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 ---
 
-# Add a custom domain name {#adding-cdn}
+# Add a custom domain name {#adding-custom-domain-name}
 
 Learn how to add a custom domain name using **Domain Settings** in Cloud Manager.
 
@@ -23,7 +23,7 @@ Fulfill these requirements before adding a custom domain name in Cloud Manager.
 >
 >If you use an Adobe managed CDN, you still need to add your domain to Cloud Manager.
 
-## Where to add custom domain names {#where-to-add-cdn}
+## Where to add custom domain names {#where-to-add-custom-domain-name}
 
 You can add a custom domain name from the [Domain Settings page](#adding-cdn-settings) in Cloud Manager.
 
@@ -31,7 +31,7 @@ When adding a custom domain name, the domain is served using the most specific, 
 
 The steps for either method described in this document are based on Fastly. If you used a different CDN (Content Delivery Network), configure your domain with the CDN you have chosen to use.
 
-## Add a custom domain name {#adding-cdn-settings}
+## Add a custom domain name {#adding-custom-domain-name-settings}
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
@@ -69,7 +69,7 @@ The steps for either method described in this document are based on Fastly. If y
 
       >[!NOTE]
       >
-      >If you use your own customer managed (OV/EV or DV) SSL certificate, and intend to use a customer managed CDN ***provider***, you can skip adding an SSL certificate. Instead, go directly to [Add a CDN configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) when ready.
+      >If you use your own customer-managed (OV/EV or DV) SSL certificate, you do not need to add an SSL certificate. This rule also applies if you plan to use a customer-managed CDN (Content Delivery Network) ***provider***. Instead, go directly to [Add a CDN configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) when ready.
 
 
 ### Adobe managed certificate steps {#adobe-managed-cert-steps}
@@ -194,4 +194,5 @@ Now that you created your TXT entry, you can verify your domain name status. Pro
 ><!-- The TXT entry and the CNAME or A Record can be set simultaneously on the governing DNS server, thus saving time. -->
 >
 ><!-- To do this, review the entire process of setting up a custom domain name as detailed in the document [Introduction to custom domain names](/help/implementing/cloud-manager/custom-domain-names/introduction.md) taking special note of the document [help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) and update your DNS settings appropriately. -->
+
 
