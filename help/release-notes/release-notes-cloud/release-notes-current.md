@@ -60,36 +60,18 @@ The AEM Translation HTTP REST API that has been in early adopter mode for a whil
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New features in AEM Assets {#new-features-assets}
+### New features in Dynamic Media {#new-features-dynamic-media}
 
-**Dynamic Media new packaging structure**
+**Long form support for videos delivered using Dynamic Media with Open API**
 
-A refreshed Dynamic Media packaging structure is now available to better align with market expectations and support tracking. The new packaging structure comprises:
+Dynamic Media with OpenAPI now supports long form videos. The long form videos can support upto 50 GB and 2 hours. 
 
-* Dynamic Media Prime, which includes Dynamic Media with OpenAPIs and video to enhance delivery.
-
-* Dynamic Media Ultimate adds delivery and transformation features to meet heavier usage requirements.
-
-You must have Assets as a Cloud Service Prime or Ultimate to benefit from the new packaging structure.
-
-**AI-generated video captions** 
-
-AI-generated video captions in Adobe Dynamic Media use artificial intelligence to generate captions automatically for video content. This feature is designed to improve accessibility and enhance the user experience by providing accurate captions. Captions are generated from the original audio, any additional audio tracks, or extra captions are provided in the "Captions and Audio" tab on the video properties page. With support for more than 60 languages, captions can be reviewed and previewed before publishing the video.
-
-**Customize search filters**
-
-Custom Search filters enhance the precision and efficiency of finding relevant information. It allows for more tailored searches, filtering data according to specific attributes such as brand, product, category, or other key identifiers. This improves organization, reduces time spent sifting through irrelevant results, and enables quicker decision-making. It also supports scalability, as large datasets become easier to navigate and analyze.
-
-![customize search filters](/help/assets/assets/custom-search-filters.png)
+### New features in Assets view {#new-features-assets-view}
 
 
-### Early Access features in Content Hub {#early-access-content-hub}
+**Support for root tags**
 
-Content Hub now allows you to view and download Dynamic and Smart Crop renditions in addition to the existing static renditions. As a Content Hub administrator, you can also configure the availability of these renditions to users using the Configuration User Interface.
-
-![dynamic renditions](/help/assets/assets/download-single-asset-renditions-dynamic.png)
-
-
+AEM Assets now supports mapping a tag property in a metadata form to custom metadata. In addition, as an administrator, you can restrict the availability of tags to users by restricting access to a specific root tag and the tags that exist under the root tag.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
  
