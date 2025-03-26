@@ -40,9 +40,9 @@ With the Universal Editor, you can easily create responsive and interactive stan
 ### Create a form
 
    1. Login into your AEM Forms as a Cloud Service author instance.
-   2. Select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
-   3. Select **[!UICONTROL Create]**  &gt; **[!UICONTROL Adaptive Forms]**. The Wizard opens. 
-   4. In the **Source** tab, select a Edge Delivery Services based form template:
+   1. Select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
+   1. Select **[!UICONTROL Create]**  &gt; **[!UICONTROL Adaptive Forms]**. The Wizard opens. 
+   1. In the **Source** tab, select a Edge Delivery Services based form template:
 
         ![Create EDS Forms](/help/edge/assets/create-eds-forms.png)
 
