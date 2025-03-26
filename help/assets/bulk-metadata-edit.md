@@ -1,5 +1,5 @@
 ---
-title: Bulk metadata edit in [DNL! Assets View]
+title: Bulk metadata edit in [!DNL Assets View]
 description: Learn how you can update a predefined set of standard metadata fields for multiple assets available on the [DNL! Assets View] simultaneously.
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
 ---
