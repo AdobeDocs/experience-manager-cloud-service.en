@@ -110,7 +110,7 @@ Now in beta, you can forward AEM logs to New Relic (using HTTPS), Amazon S3, and
 
 While logs can be downloaded from Cloud Manager, many organizations find it beneficial to stream those logs to a preferred logging destination. AEM already supports (GA) AEM and CDN log forwarding to Azure Blob Storage, Datadog, HTTPS, Elasticsearch (and OpenSearch), and Splunk. This feature is configured in a self-serve manner, and deployed using the Config Pipeline.
 
-Learn more in the [log forwarding documentation](/help/implementing/developing/introduction/log-forwarding.md)
+Learn more in the [log forwarding documentation](/help/implementing/developing/introduction/log-forwarding.md).
 
 ### Edge Computing - Request for Feedback! {#edge-computing-feedback}
 
