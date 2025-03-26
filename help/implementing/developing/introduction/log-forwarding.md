@@ -18,7 +18,6 @@ Customers with a license with a logging vendor or who host a logging product can
 * Datadog
 * Elasticsearch or OpenSearch
 * HTTPS
-  * NewRelic Log API (beta, see [^2])
 * Splunk
 * Sumo Logic (private beta, see [^1])
 
@@ -28,9 +27,7 @@ There is an option for the AEM and Apache/Dispatcher logs to be routed through A
 
 Note that the network bandwidth associated with logs sent to the logging destination are considered part of your organization's Network I/O usage.
 
-[^1] Amazon S3 and Sumo Logic are in Private Beta and only support AEM logs (including Apache/Dispatcher). Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to request access.  S3 implementation differs slightly from other log technologies, see the [Amazon AWS S3](#amazons3) section for more information.
-
-[^2] New Relic Log API is in beta and only supports AEM logs (including Apache/Dispatcher), it also requires specific header configuration.  See [New Relic Log API](#newrelic-https) for more information.
+[^1] Amazon S3 and Sumo Logic are in Private Beta and only support AEM logs (including Apache/Dispatcher).  New Relic over HTTPS is also in private beta. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to request access.  
 
 ## How This Article is Organized {#how-organized}
 
@@ -190,6 +187,9 @@ Configurations for the supported logging destinations are listed below, along wi
 
 ### Amazon S3 {#amazons3}
 
+>![NOTE]
+>Logs written to S3 periodically, every 10 minutes for each log file type.  This may result in an initial delay for logs being written to S3 once the feature is toggled.  More information on why this behaviour exists can be found [here](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs).
+
   ```yaml
   kind: "LogForwarding"
   version: "1.0"
@@ -221,9 +221,6 @@ The IAM policy should allow the user to use `s3:putObject`.  For example:
 ```
 
 See [here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) for more information on AWS Bucket Policy implementation.
-
->![NOTE]
->Logs written to S3 periodically, every 10 minutes for each log file type.  This may result in an initial delay for logs being written to S3 once the feature is toggled.  More information on why this behaviour exists can be found [here](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs).
 
 ### Azure Blob Storage {#azureblob}
 
@@ -385,24 +382,7 @@ Considerations:
 
 #### New Relic Log API {#newrelic-https}
 
->![NOTE]
->This functionality is currently in Open Beta, and payload fields may be subject to change.
-
-The New Relic Log Ingestion service requires the `Api-Key` header to be set in AEMaaCS Log Forwarding config, see below for an example:
-
-  ```yaml
-  kind: "LogForwarding"
-  version: "1"
-  metadata:
-    envTypes: ["dev"]
-  data:
-    https:
-      default:
-        enabled: true
-        url: "https://log-api.newrelic.com/log/v1"
-        authHeaderName: "Api-Key"
-        authHeaderValue: "${{NR_API_KEY}}"
-  ```
+Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to request access.
 
 >![NOTE]
 >New Relic provide region specific endpoints based on where your New Relic account is provisioned.  See [here](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint) for New Relic documentation.
@@ -480,7 +460,7 @@ You will need to copy the last section of the URL (without the preceeding `/`) a
   ```
 
 >![NOTE]
-> You will require a Sumo Logic Enterprise subscription to take advantage of the "index" field functionality.  Non-Enterprise subscriptions will have their logs routed to the `sumologic_default` partion as standard.  See the [Sumo Logic Paritioning Documentation](https://help.sumologic.com/docs/search/optimize-search-partitions/) for more information.
+> You will require a Sumo Logic Enterprise subscription to take advantage of the "index" field functionality.  Non-Enterprise subscriptions will have their logs routed to the `sumologic_default` partition as standard.  See the [Sumo Logic Partitioning Documentation](https://help.sumologic.com/docs/search/optimize-search-partitions/) for more information.
 
 ## Log Entry Formats {#log-formats}
 
