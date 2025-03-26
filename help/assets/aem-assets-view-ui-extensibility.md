@@ -42,7 +42,7 @@ exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
 </table>
 
 [!DNL AEM Assets View] supports UI extensibility enabling you to add custom UI components to your [!DNL Assets View] UI for specific workflows and business requirements that are not met by the out-of-the-box capabilities of [!DNL AEM Assets View]. This UI extensibility capability of [!DNL AEM Assets View] enhances its flexibility, enabling organizations to adapt the interface for specific workflows and requirements.  
-You can add your extensions to **Asset**, **Folder** and **Collection** level. The added extension displays on a dedicated panel on the **Asset**, **Collection**, or **Folder** **[!UICONTROL Details]** page..
+You can add your extensions to **Asset**, **Folder** and **Collection** level. The added extension displays on a dedicated panel on the **Asset**, **Collection**, or **Folder** **[!UICONTROL Details]** page.
 
 >[!IMPORTANT]
 >
