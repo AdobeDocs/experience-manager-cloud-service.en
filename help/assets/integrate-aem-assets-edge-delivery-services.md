@@ -39,7 +39,7 @@ exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
     </tr>
 </table>
 
-![AEM assets with UE](/help/assets/assets/EDS2.png)
+![AEM assets integration with Universal editor](/help/assets/assets/EDS2.png)
 
 [[!DNL Edge Delivery Services]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview) is a composable set of services that allows for a high degree of flexibility in how you author and deliver content on your website. You can use both [AEM content management](/help/sites-cloud/authoring/author-publish.md) and [WYSIWYG authoring using the [!DNL Universal Editor] as well as Document-Based Authoring](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring).
 
@@ -52,7 +52,7 @@ After editing the content, you can publish it to Edge Delivery Services.
 
 ## Integrating [!DNL AEM Assets] with Document-Based Authoring flows for [!DNL Edge Delivery Services] {#integrate-aem-assets-with-document-based-authoring-tools}
 
-When [!DNL AEM Assets] integrates with your Document-Based Authoring tools, such as [!DNL Microsoft Word] or [!DNL Google Docs], it provides an asset selector in your authoring tool. Use this asset selector to access [!DNL AEM Assets], and insert approved assets into your content..
+When [!DNL AEM Assets] integrates with your Document-Based Authoring tools, such as [!DNL Microsoft Word] or [!DNL Google Docs], it provides an asset selector in your authoring tool. Use this asset selector to access [!DNL AEM Assets], and insert approved assets into your content.
 If you already have an [!DNL Edge Delivery Services] website, see [[!DNL AEM Assets] plugin](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) documentation to learn how to integrate [!DNL AEM Assets] with your existing [!DNL AEM] project. 
 Follow the following [Prerequisites](#integrate-aem-assets-with-microsoft-word-and-google-docs) and [Integrating [!DNL AEM Assets] with Document-Based Authoring environment](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs) sections if you do not have an [!DNL Edge Delivery Services] website to publish your [!DNL AEM Assets] inclusive content authored in document based authoring tools.
 
