@@ -102,7 +102,7 @@ The more performant Java 21 **runtime** will be automatically deployed when a Ja
 
 >[!IMPORTANT] 
 >
-> The Java 21 **runtime** was deployed to your dev/RDE environments in February; it will be applied to your stage/production environments in **April**. Note that **building code** with Java 21 (or Java 17) is independent of the Java 21 runtime -- you must explicitly take steps to build code with Java 21 (or Java 17).
+> The Java 21 **runtime** was deployed to your dev/RDE environments in February; it will be applied to your stage/production environments on **April 28th and 29th**. Note that **building code** with Java 21 (or Java 17) is independent of the Java 21 runtime -- you must explicitly take steps to build code with Java 21 (or Java 17).
 
 ### AEM Log-Forwarding to more destinations - Beta Program {#log-forwarding-earlyadopter}
 
