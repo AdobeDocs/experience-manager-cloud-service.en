@@ -1312,6 +1312,7 @@ user-guide-title: AEM as a Cloud Service
     + Hybrid and SPA Development {#hybrid}
       + [Hybrid and SPA with AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
       + [Enabling JSON Export for a Component](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+      + [SPA Editor Deprecation](/help/implementing/developing/hybrid/spa-editor-deprecation.md)
       + [SPA Introduction and Walkthrough](/help/implementing/developing/hybrid/introduction.md)
       + [SPA WKND Tutorial](/help/implementing/developing/hybrid/wknd-tutorial.md)
       + [Getting Started using React](/help/implementing/developing/hybrid/getting-started-react.md)
@@ -1383,6 +1384,7 @@ user-guide-title: AEM as a Cloud Service
       + [Internationalizing UI Strings](/help/implementing/developing/extending/i18n/dev.md)
       + [Using Translator to Manage Dictionaries](/help/implementing/developing/extending/i18n/translator.md)
       + [Extracting Strings for Translating](/help/implementing/developing/extending/i18n/extract.md)
+    + [Extensions and the Extension Manager](/help/implementing/developing/extending/extension-manager.md)
   + Deploying to AEM as a Cloud Service {#deploying}
     + [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md)
     + [AEM Version Updates](/help/implementing/deploying/aem-version-updates.md)

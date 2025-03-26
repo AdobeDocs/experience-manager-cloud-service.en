@@ -1,7 +1,7 @@
 ---
 title: App Builder storage libraries
 description: Learn about state and file storage libraries for App Builder applications.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
 role: Developer, Architect

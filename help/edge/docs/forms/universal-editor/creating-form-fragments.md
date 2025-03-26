@@ -5,8 +5,8 @@ feature: Edge Delivery Services
 role: Admin, User, Developer
 hide: yes
 hidefromtoc: yes
+exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
 ---
-
 # Creating and using Edge Delivery Services Form Fragments in Universal Editor
 
 Forms often include common sections like contact information, identification details, or consent agreements. The form developers create these sections every time they build a new form, which is repetitive and time-consuming. 
