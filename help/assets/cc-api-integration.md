@@ -131,6 +131,8 @@ To process the existing assets, select the assets, select **[!UICONTROL Reproces
 
 * [!DNL Experience Manager] limits the asset processing to 300 requests per minute per environment and 700 requests per minute per organization.
 * File size is limited to 4 GB for [!DNL Adobe Photoshop] API operations, and 1 GB for [!DNL Adobe Lightroom] operations.
+* PDF renditions of Microsoft Office documents (".docx", ".doc", ".ppt", ".pptx", ".xls", ".xlsx") are limited to files 100MB or less.
+* Video transcoding is limited to input files 15GB or less.
 
 **See also**
 
