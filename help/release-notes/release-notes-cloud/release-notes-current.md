@@ -40,25 +40,27 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-
 ### New features in AEM Sites {#new-features-sites}
 
-** Content Fragment Auto-Tagging ** 
+**Content Fragment Auto-Tagging** 
 
 When creating Content Fragments, it is now possible to automatically inherit tags that were assigned to the content model. This allows for powerful automatic classification of content stored in Content Fragments.
 
-** Content Fragment UUID Support ** 
+**Content Fragment UUID Support** 
 
 Content Fragment UUID support is now GA. The new capability does not alter the path-based behavior of operations within AEM, such as move, rename, rollout, where paths are automatically being adjusted, but it can make external consumption of Content Fragments easier and more stable, especially when using GraphQL queries that directly target individual fragments with ByPath queries. Such queries can break if a fragment path changes. When using the new ById query type, the query now remains stable as the UUID of a fragment does not change in cases where paths do.
 
-** Dynamic Media with OpenAPI support in Content Fragment Editor and GraphQL ** 
+**Dynamic Media with OpenAPI support in Content Fragment Editor and GraphQL** 
 
 Assets that are stored in different AEM as a Cloud Service Programs than Content Fragments, and that are enabled with the new Dynamic Media with OpenAPI capability, can now be used in Content Fragments. The image selector in the new Content Fragment Editor does now allow selecting "remote" repositories as the source for image assets to be referenced in the fragment. And on delivery of such content fragments using AEM GraphQL, the JSON response now includes required properties for remote assets (assetId, repositoryId) so client applications can create respective Dynamic Media with OpenAPI URLs to fetch the image.
 
-** Translation HTTP API ** 
+**Content Fragment Editor Rollout**
+
+We will continue enabling the new Spectrum UI-based Content Fragment Editor in AEM as a Cloud Service. After becoming the default for all Cloud Service Developer environments in November 2024, it will be set as default for all Stage environments on April 1, 2025, and for all Production environments on May 1, 2025. In all cases, users will still have the option to revert to the traditional Content Fragment Editor in AEM Touch UI.
+
+**Translation HTTP API** 
 
 The AEM Translation HTTP REST API that has been in early adopter mode for a while is now GA. Documentation can be found [here](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/). The API allows automating required steps in the translation management process for content in AEM.
-
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

@@ -6,9 +6,6 @@ exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
 ---
 # Dynamic Media Prime and Ultimate {#dynamic-media-prime-ultimate}
 
-| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
-| ------------- | --------------------------- |---------|----|-----|
-
 ![Dynamic Media banner](/help/assets/assets/dm-pnp-banner.png)
 
 Adobe Experience Manager as a Cloud Service enables you to access Dynamic Media Prime and Ultimate offerings to streamline your digital workflows and optimize content management. This article introduces each offering, outlines their benefits, and also highlights key differences between the two.
@@ -22,13 +19,9 @@ If you need Dynamic Media basic as well as advanced capabilities and access to D
 Some of the other key benefits of Dynamic Media Prime include:
 
 * Centralized management of digital assets
-
 * Real-time updates reflected in the delivery URLs
-
 * Brand consistency
-
 * Web-optimized image delivery
-
 * Adaptive video streaming
 
 ### Prerequisites {#pre-requisites-dm-prime}
@@ -51,9 +44,7 @@ In addition to the Dynamic Media Prime features such as AEM Assets integration w
 * [Dynamic Media solution in AEM as a Cloud Service](/help/assets/dynamic-media/dynamic-media.md), which also includes the following key capabilities: 
    
    * [Dynamic Media templates](/help/assets/dynamic-media/dynamic-media-templates.md)
-
    * [Template Basics](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
-
    * [Visual Configuration](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
 
 ### Prerequisites {#pre-requisites-dm-ultimate}
@@ -65,4 +56,3 @@ In addition to the Dynamic Media Prime features such as AEM Assets integration w
 For more information on the complete list of capabilities, see [Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md) and [Working with Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
 
 For information on how to enable Dynamic Media Prime and Ultimate for your AEM as a Cloud Service environment, see [Enable Dynamic Media Prime and Ultimate](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md).
-

@@ -312,7 +312,7 @@ You can upload and deliver GIFs through Dynamic Media. To render an animated GIF
     * **Link directly:**
     Use the provided URL to link directly to the video. Hyperlink it appropriately on your marketing site.
     * **Embed the video:**
-    Copy the embed code provided and paste it into the HTML of your web page where you want the video to appear. Doing so allows the video to play directly on your site.
+    Copy the embedded code provided and paste it into the HTML of your web page where you want the video to appear. Doing so allows the video to play directly on your site.
 
 Want to learn more? Go to [Video](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video). 
 
@@ -356,7 +356,7 @@ Internationalizing videos for multilingual consumption is essential for reaching
      * Organize, browse, and search video assets within AEM.
      * Preview and publish video assets.
      * View the source video and its encoded renditions along with associated thumbnails.
-     * Edit video properties such as title, description, and tags2.
+     * Edit video properties, such as title, description, and tags2.
 
 * **Localization:**
      * For each target geography/language, create audio tracks and subtitles.
@@ -367,7 +367,7 @@ Internationalizing videos for multilingual consumption is essential for reaching
      * If you are using AEM as your Web Content Management (WCM) system, you can directly add videos to your web pages.
      * If you are using a third-party WCM system, you can link or embed videos on your web pages using URLs or embed codes.
 
-Want to learn more? Go to [About multiple caption and audio track support for videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) or watch [Add multiple captions and audio tracks to a video](https://delivery-p106302-e1008131.adobeaemcloud.com/adobe/assets/urn:aaid:aem:daf9a222-9f7f-4333-b167-98cb4c63a1f8/play) (1 minutes, 41 seconds). 
+Want to learn more? Go to [About multiple caption and audio track support for videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma).
 
 
 ## Deliver assets to customers
