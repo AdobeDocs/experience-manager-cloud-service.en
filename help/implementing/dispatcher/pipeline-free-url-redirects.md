@@ -74,7 +74,6 @@ RewriteRule ^(.*)$ ${map.foo:$1|/} [L,R=301]
 
 ```
 
-
 ## Considerations {#considerations}
 
 Keep in mind the following:
@@ -83,9 +82,7 @@ Keep in mind the following:
 * To change the frequency between loads, add `ttl: <integer>` to the `managed-rewrite-maps.yaml` file. For example: `ttl: 120`.
 * Apache has a 1024 length limit for RewriteMap single entries.
 
-## Tutorial
+## Tutorials {#tutorials}
 
 1. [Implementing pipeline-free URL redirects](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)
 1. [URL redirects](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection)
-
-
