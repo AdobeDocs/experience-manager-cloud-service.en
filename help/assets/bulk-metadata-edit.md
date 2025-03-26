@@ -42,7 +42,7 @@ exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
     </tr>
 </table>
 
-The **[!DNL Bulk Metadata Edit]** capability of [!DNL Assets View] enables you to edit a predefined set of standard metadata fields for multiple asset files simultaneously. Select multiple assets and bulk update their predefined set of standard metadata at once rather than updating those standard metadata for each asset individually. This capability to bulk edit the standard set of metadata properties for multiple assets at once maintains the efficiency, consistency, and accuracy of those standard metadata properties across the large set of assets, improving the searchability and organization of those assets.  
+The **[!DNL Bulk Metadata Edit]** capability of [!DNL Assets View] enables you to edit a predefined set of standard metadata fields for multiple asset files simultaneously. Select multiple assets and bulk update their predefined set of standard metadata at once rather than updating those standard metadata for each asset individually. This capability maintains the efficiency, consistency, and accuracy of the set of standard metadata properties across the large sets of assets, improving the searchability and organization of those assets.  
 
 ## Bulk edit asset metadata {#how-to-bulk-edit-the-metadata-of-multiple-assets-on-assets-view}
 
