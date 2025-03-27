@@ -15,7 +15,7 @@ This article guides you through the process of creating and authoring the standa
 
 AEM Forms provide a block, known as the Adaptive Forms Block, to help you easily create Edge Delivery Services Forms to capture and store data. You can [create a new AEM Project pre-configured with the Adaptive Forms Block](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) or [add the Adaptive Forms Block to an existing AEM Site Project](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project).
 
-![Github Repository Workflow](/help/edge/assets/repo-workflow.png)
+![Github Repository Workflow](/help/edge/assets/repo-workflow.png){width=50%}
 
 ## Pre-requisites
 
