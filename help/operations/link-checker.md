@@ -3,8 +3,8 @@ title: Link Checker
 description: Learn how the Link Checker helps authors by validating links as they are added to content and what configuration options it offers.
 feature: Operations
 role: Admin
+exl-id: f5f71e2f-69e3-44f9-812d-71fe417896f8
 ---
-
 # Link Checker {#link-checker}
 
 Learn how the Link Checker helps authors by validating links as they are added to content and what configuration options it offers.
