@@ -1,18 +1,45 @@
 ---
-title: Configuring Advanced Networking for AEM as a Cloud Service
+title: Configure Advanced Networking for AEM as a Cloud Service
 description: Learn how to configure advanced networking features like VPN or a flexible or dedicated egress IP address for AEM as a Cloud Service.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
 ---
 
-# Configuring Advanced Networking for AEM as a Cloud Service {#configuring-advanced-networking}
+# Configure Advanced Networking for AEM as a Cloud Service {#configuring-advanced-networking}
 
-This article introduces the different advanced networking features in AEM as a Cloud Service, including self-service and API provisioning of VPN, non-standard ports, and dedicated egress IP addresses.
+This article introduces the advanced networking features available in AEM as a Cloud Service. These features include self-service and API provisioning of VPN, non-standard ports, and dedicated egress IP addresses.
 
->[!TIP]
+In addition to this documentation, there is also a series of tutorials designed to walk you through each of the advanced networking options. See [Advanced networking](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/advanced-networking).
+
+>[!IMPORTANT]
 >
->In addition to this documentation, there is also a series of tutorials designed to walk you through each of the advanced networking options at this [location](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/advanced-networking).
+>You can configure advanced networking in AEM as a Cloud Service either through the Cloud Manager UI or by using the Cloud Manager API (for example, cURL). 
+>
+>This article focuses on using the UI method. If you prefer to automate configuration through the API, see the [Virtual Private Network (VPN) tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/vpn).
+>
+>**Automating advanced networking with the API**
+>To automate advanced networking setup (such as VPN creation), you can use the Cloud Manager API:
+>
+>```bash
+>curl -X POST https://cloudmanager.adobe.io/api/program/{PROGRAM_ID}/environment/{ENV_ID}/vpn \
+>  -H "Authorization: Bearer {ACCESS_TOKEN}" \
+>  -H "x-api-key: {API_KEY}" \
+>  -H "Content-Type: application/json" \
+>  -d '{
+>    "providerId": "aws",
+>    "portMappings": [
+>      {
+>        "name": "SSH",
+>        "protocol": "TCP",
+>        "port": 22
+>      }
+>    ]
+>  }'
+>```
+>
+>See the full tutorial and more API examples in the [Virtual Private Network (VPN) tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/vpn).
+>
 
 ## Overview {#overview}
 
@@ -36,12 +63,12 @@ When configuring advanced networking features, the following restrictions apply.
 
 * A program can provision a single advanced networking option (flexible port egress, dedicated egress IP address, or VPN).
 * Advanced networking is not available for [sandbox programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
-* A user in must have the **Administrator** role to add and configure network infrastructure in your program.
+* A user must have the **Administrator** role to add and configure network infrastructure in your program.
 * The production environment must be created before network infrastructure can be added in your program.
 * Your network infrastructure must be in the same region as your production environment's primary region.
   * In the case where your production environment has [extra publish regions](/help/implementing/cloud-manager/manage-environments.md#multiple-regions), you may create another network infrastructure mirroring each additional region.
   * You are not allowed to create more network infrastructures than the maximum number of regions configured in your production environment.
-  * You can define as many network infrastructures as available regions in your production environment, but new infrastructure must be the same type as the previously created infrastructure.
+  * You can define as many network infrastructures as available regions in your production environment, but the new infrastructure must be the same type as the previously created infrastructure.
   * When creating multiple infrastructures, you are permitted to select from only those regions in which advanced networking infrastructure has not been created.
 
 ### Configuring and Enabling Advanced Networking {#configuring-enabling}
@@ -63,7 +90,7 @@ This advanced networking feature lets you configure AEM as a Cloud Service to eg
 
 >[!TIP]
 >
->When deciding between flexible port egress and dedicated egress IP address, it is recommended you choose flexible port egress if a specific IP address is not required. The reason is because Adobe can optimize performance of flexible port egress traffic.
+>When deciding between flexible port egress and dedicated egress IP address, it is recommended you choose flexible port egress if a specific IP address is not required. The reason is because Adobe can optimize the performance of flexible port egress traffic.
 
 >[!NOTE]
 >
@@ -79,7 +106,8 @@ This advanced networking feature lets you configure AEM as a Cloud Service to eg
 
    ![Adding network infrastructure](assets/advanced-networking-ui-network-infrastructure.png)
 
-1. In the **Add network infrastructure** wizard, select **Flexible port egress** and the region where it should be created from the **Region** drop-down menu and click **Continue**.
+1. In the **Add network infrastructure** wizard, select **Flexible port egress**. 
+1. From the **Region** drop-down menu, choose the desired region, then click **Continue**.
 
    ![Configuring flexible port egress](assets/advanced-networking-ui-flexible-port-egress.png)
 
@@ -87,7 +115,7 @@ This advanced networking feature lets you configure AEM as a Cloud Service to eg
 
    ![Confirming configuration of flexible port egress](assets/advanced-networking-ui-flexible-port-egress-confirmation.png)
 
-A new record appears below the **Network Infrastructure** heading in the side panel including details of the type of infrastructure, status, region, and environments on which it has been enabled.
+A new record appears below the **Network Infrastructure** heading in the side panel. It includes details such as the type of infrastructure, status, region, and the environments where it is enabled.
 
 ![New entry under Network Infrastructure](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
 
@@ -109,8 +137,8 @@ Once called, it typically takes approximately 15 minutes for the networking infr
 
 For http or https traffic going to ports other than 80 or 443 a proxy should be configured using the following host and port environment variables:
 
-* for HTTP: `AEM_PROXY_HOST` / `AEM_HTTP_PROXY_PORT ` (default to `proxy.tunnel:3128` in AEM releases < 6094)
-* for HTTPS: `AEM_PROXY_HOST` / `AEM_HTTPS_PROXY_PORT ` (default to `proxy.tunnel:3128` in AEM releases < 6094)
+* for HTTP: `AEM_PROXY_HOST`/ `AEM_HTTP_PROXY_PORT ` (default to `proxy.tunnel:3128` in AEM releases < 6094)
+* for HTTPS: `AEM_PROXY_HOST`/ `AEM_HTTPS_PROXY_PORT ` (default to `proxy.tunnel:3128` in AEM releases < 6094)
 
 For example, here's sample code to send a request to `www.example.com:8443`:
 
@@ -190,7 +218,7 @@ The table below describes traffic routing:
 
 #### Apache / Dispatcher Configuration {#apache-dispatcher}
 
-The AEM Cloud Service Apache/Dispatcher tier's `mod_proxy` directive can be configured using the properties described above.
+The AEM Cloud Service Apache / Dispatcher tier's `mod_proxy` directive can be configured using the properties described above.
 
 ```
 ProxyRemote "http://example.com:8080" "http://${AEM_PROXY_HOST}:3128"
@@ -208,23 +236,23 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 ## Dedicated Egress IP Address {#dedicated-egress-ip-address}
 
-A dedicated IP address can enhance security when integrating with SaaS vendors (like a CRM vendor) or other integrations outside of AEM as a Cloud Service that offer an allowlist of IP addresses. By adding the dedicated IP address to the allowlist, it ensures that only traffic from the AEM Cloud Service is permitted to flow into the external service. This is in addition to traffic from any other IPs allowed.
+A dedicated IP address can enhance security when integrating with SaaS vendors (like a CRM vendor) or other integrations outside of AEM as a Cloud Service that offer an allowlist of IP addresses. By adding the dedicated IP address to the allowlist, it ensures that only traffic from the AEM Cloud Service is permitted to flow into the external service. This approach is in addition to traffic from any other IPs allowed.
 
 The same dedicated IP is applied to all environments in a program, and applies to both Author and Publish services.
 
-Without the dedicated IP address feature enabled, traffic coming out of AEM as a Cloud Service flows through a set of IPs shared with other customers of AEM as a Cloud Service.
+Without the dedicated IP address feature enabled, traffic from AEM as a Cloud Service flows through a shared set of IPs. These IPs are used by other customers of AEM as a Cloud Service.
 
-Configuring dedicated egress IP address is similar to [flexible port egress](#flexible-port-egress). The main difference is that after configuration, traffic will always egress from a dedicated, unique IP. To find that IP, use a DNS resolver to identify the IP address associated with `p{PROGRAM_ID}.external.adobeaemcloud.com`. The IP address is not expected to change, but if it must change, advanced notification is provided.
+Configuring a dedicated egress IP address is similar to [flexible port egress](#flexible-port-egress). The main difference is that after configuration, traffic will always egress from a dedicated, unique IP. To find that IP, use a DNS resolver to identify the IP address associated with `p{PROGRAM_ID}.external.adobeaemcloud.com`. The IP address is not expected to change, but if it must change, advanced notification is provided.
 
 >[!TIP]
 >
->When deciding between flexible port egress and dedicated egress IP address, choose flexible port egress if a specific IP address is not required. The reason is because Adobe can optimize performance of flexible port egress traffic.
+>When deciding between flexible port egress and dedicated egress IP address, choose flexible port egress if a specific IP address is not required. The reason is because Adobe can optimize the performance of flexible port egress traffic.
 
 >[!NOTE]
 >
 >If you were provisioned with a dedicated egress IP before 2021.09.30 (that is, before the September 2021 release), your dedicated egress IP feature only supports HTTP and HTTPS ports.
 >
->This includes HTTP/1.1, and HTTP/2 when encrypted. Also, one dedicated egress endpoint can talk to any target only over HTTP/HTTPS on ports 80/443 respectively.
+>This outcome includes HTTP/1.1, and HTTP/2 when encrypted. Also, one dedicated egress endpoint can talk to any target only over HTTP / HTTPS on ports 80/443 respectively.
 
 >[!NOTE]
 >
@@ -240,7 +268,8 @@ Configuring dedicated egress IP address is similar to [flexible port egress](#fl
 
    ![Adding network infrastructure](assets/advanced-networking-ui-network-infrastructure.png)
 
-1. In the **Add network infrastructure** wizard that starts, select **Dedicated egress IP address** and the region where it should be created from the **Region** drop-down menu and click **Continue**.
+1. In the **Add network infrastructure** wizard that opens, click **Dedicated egress IP address**. 
+1. From the **Region** drop-down menu, choose the desired region, then click **Continue**.
 
    ![Configuring dedicated egress IP address](assets/advanced-networking-ui-dedicated-egress.png)
 
@@ -248,7 +277,7 @@ Configuring dedicated egress IP address is similar to [flexible port egress](#fl
 
    ![Confirming configuration of flexible port egress](assets/advanced-networking-ui-dedicated-egress-confirmation.png)
 
-A new record appears below the **Network Infrastructure** heading in the side panel including details of the type of infrastructure, status, region, and environments on which it has been enabled.
+A new record appears below the **Network Infrastructure** heading in the side panel. It includes details such as the type of infrastructure, status, region, and the environments where it is enabled.
 
 ![New entry under Network Infrastructure](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
 
@@ -310,7 +339,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
   </tr>
   <tr>
     <td></td>
-    <td>Through http proxy configuration, configured by default for http/s traffic using standard Java&trade; HTTP client library</td>
+    <td>Through http proxy configuration, configured by default for http/s traffic using the standard Java&trade; HTTP client library</td>
     <td>Any</td>
     <td>Through the dedicated egress IP</td>
     <td></td>
@@ -348,7 +377,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 
 ### Feature Usage {#feature-usage}
 
-The feature is compatible with Java&trade; code or libraries that result in outbound traffic, provided they use standard Java&trade; system properties for proxy configurations. In practice, this should include most common libraries. 
+The feature is compatible with Java&trade; code or libraries that result in outbound traffic, provided they use standard Java&trade; system properties for proxy configurations. In practice, this approach should include most common libraries. 
 
 Below is a code sample:
 
@@ -392,7 +421,7 @@ To validate that traffic is indeed outgoing on the expected dedicated IP address
 
 ## Virtual Private Network (VPN) {#vpn}
 
-A VPN allows connecting to an on-premise infrastructure or data center from the author, publish, or preview instances. This can be useful, for example, to secure access to a database. It also allows connecting to SaaS vendors such as a CRM vendor that supports VPN.
+A VPN allows connecting to an on-premise infrastructure or data center from the author, publish, or preview instances. This ability can be useful, for example, to secure access to a database. It also allows connecting to SaaS vendors such as a CRM vendor that supports VPN.
 
 Most VPN devices with IPSec technology are supported. Consult the information in the **RouteBased configuration instructions** column in [this list of devices](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable). Configure the device as described in the table.
 
@@ -415,13 +444,13 @@ Most VPN devices with IPSec technology are supported. Consult the information in
 
 1. In the **Add network infrastructure** wizard that starts, select **Virtual private network** and provide the necessary information before clicking **Continue**.
 
-   * **Region** - This is the region in which infrastructure should be created.
+   * **Region** - The region in which the infrastructure should be created.
    * **Address Space** - The address space can only be one /26 CIDR (64 IP addresses) or larger IP range in your own space.
      * This value can't be changed later.
-   * **DNS Information** - This is a list of remote DNS resolvers.
+   * **DNS Information** - A list of remote DNS resolvers.
      * Press `Enter` after inputting a DNS server address to add another.
      * Click the `X` after an address to remove it.
-   * **Shared Key** - This is your VPN preshared key.
+   * **Shared Key** - Your VPN preshared key.
      * Select **Show shared key** to reveal the key so you can double-check its value.
 
    ![Configuring vpn](assets/advanced-networking-ui-vpn.png)
@@ -430,18 +459,18 @@ Most VPN devices with IPSec technology are supported. Consult the information in
 
    ![Add connection](assets/advanced-networking-ui-vpn-add-connection.png)
 
-1. In the **Add connection** dialog, define your VPN connection, then click **Save**.
+1. In the **Add connection** dialog box, define your VPN connection, then click **Save**.
 
-   * **Connection name** - This is a descriptive name of your VPN connection, which you provided in the previous step and can be updated here.
-   * **Address** - This is the VPN device IP address.
-   * **Address space** - These are the IP address ranges to route through the VPN.
+   * **Connection name** - A descriptive name of your VPN connection, which you provided in the previous step and can be updated here.
+   * **Address** - The VPN device IP address.
+   * **Address space** - The IP address ranges to route through the VPN.
      * Press `Enter` after inputting a range to add another.
      * Click the `X` after a range to remove it.
    * **IP Security Policy** - Adjust from the default values as required
 
    ![Adding a VPN connection](assets/advanced-networking-ui-vpn-adding-connection.png)
 
-1. The dialog closes and you return to the **Connections** tab of the wizard. Click **Continue**.
+1. The dialog box closes and you return to the **Connections** tab of the wizard. Click **Continue**.
 
    ![A VPN connection is added](assets/advanced-networking-ui-vpn-connection-added.png)
 
@@ -449,13 +478,13 @@ Most VPN devices with IPSec technology are supported. Consult the information in
 
    ![Confirming configuration of flexible port egress](assets/advanced-networking-ui-vpn-confirm.png)
 
-A new record appears below the **Network Infrastructure** heading in the side panel including details of the type of infrastructure, status, region, and environments on which it has been enabled.
+A new record appears below the **Network Infrastructure** heading in the side panel. It includes details such as the type of infrastructure, status, region, and the environments where it is enabled.
 
 ### API Configuration {#configuring-vpn-api}
 
-Once per program, the POST `/program/<programId>/networkInfrastructures` endpoint is invoked. It passes in a payload of configuration information. That information includes the value of **vpn** for the `kind` parameter, region, address space (list of CIDRs - note that this cannot be modified later), DNS resolvers (for resolving names in your network). It also includes VPN connection information such as gateway configuration, shared VPN key, and the IP Security policy. The endpoint responds with the `network_id`, and other information including the status. 
+Once per program, the POST `/program/<programId>/networkInfrastructures` endpoint is invoked. It passes in a payload of configuration information. That information includes the value of **vpn** for the `kind` parameter, region, address space (list of CIDRs - note that this value cannot be modified later), DNS resolvers (for resolving names in your network). It also includes VPN connection information such as gateway configuration, shared VPN key, and the IP Security policy. The endpoint responds with the `network_id`, and other information including the status. 
 
-Once called, it typically takes from 45 through 60 minutes for the networking infrastructure to be provisioned. The GET method in the API can be called to return the status, which eventually flips from `creating` to `ready`. Consult the API documentation for all states.
+Once called, it typically takes from 45 to 60 minutes for the networking infrastructure to be provisioned. The GET method in the API can be called to return the status, which eventually flips from `creating` to `ready`. Consult the API documentation for all states.
 
 >[!TIP]
 >
@@ -499,21 +528,21 @@ The table below describes traffic routing.
   </tr>
   <tr>
     <td></td>
-    <td>If the IP falls in the <i>VPN gateway address</i> space range, and through http proxy configuration (configured by default for http/s traffic using standard Java&trade; HTTP client library)</td>
+    <td>If the IP falls in the <i>VPN gateway address</i> space range, and through http proxy configuration (configured by default for http/s traffic using the standard Java&trade; HTTP client library)</td>
     <td>Any</td>
     <td>Through the VPN</td>
     <td><code>10.0.0.1:443</code><br>It can be a hostname as well.</td>
   </tr>
   <tr>
     <td></td>
-    <td>If the IP does not fall in the <i>VPN gateway address space</i> range, and through http proxy configuration (configured by default for http/s traffic using standard Java&trade; HTTP client library)</td>
+    <td>If the IP does not fall in the <i>VPN gateway address space</i> range, and through http proxy configuration (configured by default for http/s traffic using the standard Java&trade; HTTP client library)</td>
     <td>Any</td>
     <td>Through the dedicated egress IP</td>
     <td></td>
   </tr>
   <tr>
     <td></td>
-    <td>Ignores http proxy configuration (for example, if explicitly removed from standard Java&trade; HTTP client library or if using Java&trade; library that ignores standard proxy configuration)
+    <td>Ignores http proxy configuration (for example, if explicitly removed from the standard Java&trade; HTTP client library or if using a Java&trade; library that ignores standard proxy configuration)
 </td>
     <td>80 or 443</td>
     <td>Through the shared cluster IPs</td>
@@ -521,7 +550,7 @@ The table below describes traffic routing.
   </tr>
   <tr>
     <td></td>
-    <td>Ignores http proxy configuration (for example, if explicitly removed from standard Java&trade; HTTP client library or if using Java&trade; library that ignores standard proxy configuration)</td>
+    <td>Ignores http proxy configuration (for example, if explicitly removed from the standard Java&trade; HTTP client library or if using a Java&trade; library that ignores standard proxy configuration)</td>
     <td>Ports outside 80 or 443</td>
     <td>Blocked</td>
     <td></td>
@@ -568,12 +597,12 @@ The diagram below provides a visual representation of a set of domains and assoc
   <tr>
     <td><code>p{PROGRAM_ID}.external.adobeaemcloud.com</code></td>
     <td>Dedicated egress IP address for traffic going to the Internet rather than through private networks </td>
-    <td>Connections from the VPN would show at the CDN as coming from this IP. To only allow connections from the VPN to go into AEM, configure Cloud Manager to only allow this IP and block everything else. See the "Restrict ingress to VPN connections" section for more details.</td>
+    <td>Connections from the VPN would show at the CDN as coming from this IP. To allow only connections from the VPN to go into AEM, configure Cloud Manager to allow only this IP and block everything else. See the "Restrict ingress to VPN connections" section for more details.</td>
   </tr>
   <tr>
     <td><code>p{PROGRAM_ID}.{REGION}-gateway.external.adobeaemcloud.com</code></td>
     <td>N/A</td>
-    <td>The IP of the VPN gateway on the AEM side. Your network engineering team can use this to allow only VPN connections to your VPN gateway from a specific IP address. </td>
+    <td>The IP of the VPN gateway on the AEM side. Your network engineering team can use this IP to allow only VPN connections to your VPN gateway from a specific IP address. </td>
   </tr>
 </tbody>
 </table>
@@ -584,14 +613,14 @@ Once you have configured an advanced networking option for a program, whether [f
 
 When you enable an advanced networking configuration for an environment, you can also enable optional port forwarding and non-proxy hosts. Parameters are configurable per environment to offer flexibility.
 
-* **Port Forwarding** - Port forwarding rules should be declared for any destination ports other than 80/443, but only if not using http or https protocol.
+* **Port Forwarding** - Port forwarding rules should be declared for any destination ports other than 80/443, but only if not using the http or https protocol.
   * Port forwarding rules are defined by specifying the set of destination hosts (names or IP and ports). 
-  * The client connection that uses port 80/443 over http/https must still use proxy settings in their connection to have the properties of advanced networking applied to the connection.
+  * The client connection that uses port 80/443 over http / https must still use proxy settings in their connection to have the properties of advanced networking applied to the connection.
   * For each destination host, you must map the intended destination port to a port from 30000 through 30999.
   * Port forwarding rules are available for all advanced networking types.
  
 * **Non-Proxy Hosts** - Non-proxy hosts let you declare a set of hosts that should route through a shared IPs address range rather than the dedicated IP.
-  * This may be useful since traffic egressing through shared IPs may be further optimized.
+  * This approach may be useful since traffic egressing through shared IPs may be further optimized.
   * Non-proxy hosts are only available for dedicated egress IP address and VPN advanced networking types.
 
 >[!NOTE]
@@ -608,7 +637,7 @@ When you enable an advanced networking configuration for an environment, you can
 
    ![Selecting environment so you can enable advanced networking](assets/advanced-networking-ui-enable-environments.png)
 
-1. The **Configure advanced networking** dialog opens.
+1. The **Configure advanced networking** dialog box opens.
 
 1. On the **Non-proxy hosts** tab, for dedicated egress IP addresses and VPNs, you can optionally define a set of hosts. These defined hosts should be routed through a shared IPs address range rather than the dedicated IP, by providing the host name in the **Non-Proxy Host** field and clicking **Add**.
 
@@ -641,7 +670,7 @@ The API should respond in just a few seconds, indicating a status of `updating`.
 
 Per environment port forwarding rules can be updated by invoking the `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` endpoint, and including the full set of configuration parameters, rather than a subset.
 
-Dedicated egress IP address and VPN advanced networking types support a `nonProxyHosts` parameter. This lets you declare a set of hosts that should route through a shared IPs address range rather than the dedicated IP. The `nonProxyHost` URLs may follow the patterns of `example.com` or `*.example.com`, where the wildcard is only supported at the start of the domain.
+Dedicated egress IP address and VPN advanced networking types support a `nonProxyHosts` parameter. This support lets you declare a set of hosts that should route through a shared IPs address range rather than the dedicated IP. The `nonProxyHost` URLs may follow the patterns of `example.com` or `*.example.com`, where the wildcard is only supported at the start of the domain.
 
 Even if there are no environment traffic routing rules (hosts or bypasses), `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` must still be called, just with an empty payload.
 
@@ -670,7 +699,7 @@ After [enabling advanced networking configurations to environments](#enabling), 
 1. In the ellipsis menu, select either **Edit** or **Delete**.
 
    * If you choose **Edit**, update the information per the steps described in the previous section, [Enabling Using the UI](#enabling-ui), and click **Save**.
-   * If you choose **Delete**, confirm the deletion in the **Delete network configuration** dialog with **Delete** or abort with **Cancel**.
+   * If you choose **Delete**, confirm the deletion in the **Delete network configuration** dialog box with **Delete** or abort with **Cancel**.
 
 The changes are reflected on the **Environments** tab.
 
@@ -701,15 +730,19 @@ Once network infrastructure is created for a program, only limited properties ca
 
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
 
-1. From the **Program Overview** page, navigate to the **Environments** tab and select **Network Infrastructure** heading in the left panel. Then click the ellipsis button next to the infrastructure that you want to delete.
+1. From the **Program Overview** page, navigate to the **Environments** tab.
+1. In the left panel, click **Network Infrastructure**.
+1. Click ![More icon, ellipsis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to the infrastructure that you want to delete.
 
    ![Selecting edit or delete of advanced networking at the program level](assets/advanced-networking-ui-delete-infrastructure.png)
 
-1. In the ellipsis menu, select either **Edit** or **Delete**.
+1. Click either **Edit** or **Delete**.
 
-1. If you choose **Edit**, the **Edit network infrastructure** wizard opens. Edit as required following the steps as described when creating the infrastructure.
+1. Do one of the following:
 
-1. If you choose **Delete**, confirm the deletion in the **Delete network configuration** dialog box with **Delete** or abort with **Cancel**.
+    * If you chose **Edit**, the **Edit network infrastructure** wizard opens. Edit as required following the steps as described when creating the infrastructure.
+
+    * If you chose **Delete**, confirm the deletion in the **Delete network configuration** dialog box with **Delete** or abort with **Cancel**.
 
 The changes are reflected on the **Environments** tab.
 
@@ -719,7 +752,7 @@ To **delete** the network infrastructure for a program, invoke `DELETE /program/
 
 ## Changing a Program's Advanced Networking Infrastructure Type {#changing-program}
 
-It is only possible to have one type of advanced networking infrastructure configured for a program at a time, The advanced networking infrastructure must either flexible port egress, dedicated egress IP address, or VPN.
+It is only possible to have one type of advanced networking infrastructure configured for a program at a time. The advanced networking infrastructure must be either flexible port egress, dedicated egress IP address, or VPN.
 
 If you decide that you need another advanced networking infrastructure type than the one you have already configured, delete the existing one, and create another one. Do the following:
 
@@ -735,7 +768,7 @@ If you decide that you need another advanced networking infrastructure type than
 
 ## Advanced Networking Configuration for Other Publish Regions {#advanced-networking-configuration-for-additional-publish-regions}
 
-When an additional region is added to an environment that already has advanced networking configured, traffic from the additional publish region that matches the advanced networking rules route through the primary region by default. However, if the primary region becomes unavailable, the advanced networking traffic is dropped if advanced networking hasn't been enabled in the additional region. If you want to optimize latency and increase availability in case one of the regions undergoes an outage, it is necessary to enable advanced networking for the additional publish regions. Two different scenarios are described in the following sections.
+When an additional region is added to an environment with advanced networking already configured, traffic from the additional publish region follows the existing rules. By default, matching traffic is routed through the primary region. However, if the primary region becomes unavailable, the advanced networking traffic is dropped if advanced networking hasn't been enabled in the additional region. If you want to optimize latency and increase availability in case one of the regions undergoes an outage, it is necessary to enable advanced networking for the additional publish regions. Two different scenarios are described in the following sections.
 
 >[!NOTE]
 >
@@ -747,22 +780,22 @@ When an additional region is added to an environment that already has advanced n
 
 If an advanced networking configuration is already enabled in the primary region, follow these steps:
 
-1. If you locked down your infrastructure such that the dedicated AEM IP address is allowlisted, temporarily disable any deny rules in that infrastructure. If this is not done, there is a short period where requests from the new region's IP addresses are denied by your own infrastructure. This is not necessary if you have locked down your infrastructure by way of a FullyQualified Domain Name (FQDN), (`p1234.external.adobeaemcloud.com`, for example), because all AEM regions egress advanced networking traffic from the same FQDN
+1. If you locked down your infrastructure such that the dedicated AEM IP address is allowlisted, temporarily disable any deny rules in that infrastructure. If you skip this step, your infrastructure temporarily denies requests from the new region's IP addresses. This step is not necessary if you have locked down your infrastructure using a Fully Qualified Domain Name (FQDN), such as `p1234.external.adobeaemcloud.com`. All AEM regions egress advanced networking traffic from the same FQDN.
 1. Create the program-scoped networking infrastructure for the secondary region through a POST call to the Cloud Manager Create Network Infrastructure API, as described in advanced networking documentation. The only difference in the payload's JSON configuration relative to primary region is the region property
-1. If your infrastructure must be locked down by IP to allow AEM traffic, add the IPs that match `p1234.external.adobeaemcloud.com`. There should be one per region. 
+1. If you need to lock down your infrastructure by IP to allow AEM traffic, add the IPs that correspond to `p1234.external.adobeaemcloud.com`. There should be one per region. 
 
 #### Advanced networking not yet configured in any region {#not-yet-configured}
 
 The procedure is mostly similar to the previous instructions. However, if the production environment has not yet been enabled for advanced networking, there is an opportunity to test the configuration by first enabling it in a staging environment:
 
-1. Create networking infrastructure for all regions through POST call to the [Cloud Manager Create Network Infrastructure API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). The only difference in the payload's JSON configuration relative to primary region is the region property.
+1. Create networking infrastructure for all regions through a POST call to the [Cloud Manager Create Network Infrastructure API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). The only difference in the payload's JSON configuration relative to the primary region is the region property.
 1. For the staging environment, enable and configure the environment scoped advanced networking by running `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`. For more information, see [the API documentation](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
 1. If necessary, lock down external infrastructure, preferably by FQDN (for example, `p1234.external.adobeaemcloud.com`). You can otherwise do it by IP address
 1. If the staging environment works as expected, enable and configure the environment-scoped advanced networking configuration for production. 
 
 #### VPN {#vpn-regions}
 
-The procedure is nearly identical to the dedicated egress IP addresses instructions. The only difference is that in addition to the region property being configured differently from the primary region, the `connections.gateway` field can optionally be configured. The configuration can route to a different VPN endpoint operated by your organization, geographically closer to the new region.
+The procedure is nearly identical to the dedicated egress IP addresses instructions. The only difference is that the region property is configured differently from the primary region. Additionally, you can optionally configure the `connections.gateway` field. The configuration can route to a different VPN endpoint operated by your organization, geographically closer to the new region.
 
 ## Troubleshooting
 
@@ -770,33 +803,33 @@ Please be advised that the following points are provided as informative guidelin
 
 ### Connection pooling {#connection-pooling-advanced-networking}
 
-Connection pooling is a technique tailored to create and sustain a repository of connections, which stand ready for immediate use by any thread that may require them. Numerous connection pooling techniques can be found across various online platforms and resources, each with its unique merits and considerations. We encourage our customers to investigate these methodologies to identify the one most compatible with their system's architecture.
+Connection pooling is a technique tailored to create and sustain a repository of connections, which stand ready for immediate use by any thread that may require them. Numerous connection pooling techniques can be found across various online platforms and resources, each with its unique merits and considerations. Adobe encourages customers to investigate these methodologies to identify the one most compatible with their system's architecture.
 
-Implementing an appropriate connection pooling strategy is a proactive measure to correct a common oversight in system configuration, which often leads to suboptimal performance. By correctly establishing a connection pool, Adobe Experience Manager (AEM) can improve the efficiency of external calls. This not only reduces resource consumption but also mitigates the risk of service disruptions and decreases the probability of encountering failed requests when communicating with upstream servers.
+Implementing an appropriate connection pooling strategy is a proactive measure to correct a common oversight in system configuration, which often leads to suboptimal performance. By correctly establishing a connection pool, Adobe Experience Manager (AEM) can improve the efficiency of external calls. This approach not only reduces resource consumption but also mitigates the risk of service disruptions and decreases the probability of encountering failed requests when communicating with upstream servers.
 
-In light of this information, Adobe advises reassessing your current AEM configuration and consider the deliberate incorporation of connection pooling in conjunction with Advanced Networking settings. By managing the number of parallel connections and minimizing the possibility of stale connections, these measures lead to a reduction in the risk of proxy servers reaching their connection limits. Consequently, this strategic implementation is designed to decrease the likelihood of requests failing to reach external endpoints.
+Based on this information, Adobe recommends reviewing your current AEM configuration. Also consider intentionally using connection pooling alongside your advanced networking settings. Managing the number of parallel connections and reducing stale connections helps optimize network performance. These actions lower the risk of proxy servers reaching their connection limits. Consequently, this strategic implementation is designed to decrease the likelihood of requests failing to reach external endpoints.
 
 #### Connection Limits FAQ
 
-When using Advanced Networking the number of connections is limited in order to ensure stability across environments and to prevent that lower environments from exhausting the available connections.
+When using advanced networking, the number of connections is limited to ensure stability across environments and to prevent lower environments from exhausting the available connections.
 
 The connections are limited to 1000 per AEM instance and alerts are sent to customers when the number reaches 750.
 
 ##### Is the connection limit applied only to outbound traffic out of non-standard ports or to all outbound traffic?
 
-The limit is only for connections using Advanced Networking (egress on non-standard ports, using dedicated egress IP, or VPN).
+The limit is only for connections using advanced networking (egress on non-standard ports, using dedicated egress IP, or VPN).
 
-##### We do not see a significant difference in the number of outgoing connections. Why are we receiving the notification now?
+##### There doesn't appear to be a significant increase in the number of outgoing connections. Why is the notification being received now?
 
 If the customer creates connections dynamically (for example, one or more for each request), an increase in traffic can cause the connections to spike.
 
-##### Is it possible that we experienced a similar situation in the past without being alerted?
+##### Could a similar situation have occurred in the past without triggering an alert?
 
 Alerts are only sent when the soft limit is reached.
 
 ##### What happens if the maximum limit is reached?
 
-When the hard limit is reached, new egress connections from AEM through Advanced Networking (egress on non-standard ports, using dedicated egress IP, or VPN) will be dropped to protect against a DoS attack.
+When the hard limit is reached, new egress connections from AEM through advanced networking (egress on non-standard ports, using dedicated egress IP, or VPN) is dropped to protect against a DoS attack.
 
 ##### Can the limit be raised?
 
@@ -804,20 +837,20 @@ No, having a large number of connections can cause a significant performance imp
 
 ##### Are the connections automatically closed by the AEM system after a certain period?
 
-Yes, connections are closed at the JVM level and different points in the networking infrastructure. However, this will be too late for any production service. Connections should be explicitly closed when no longer needed or returned to the pool when using connection pooling. Otherwise, the resource consumption will be too high and can cause exhaustion of resources.
+Yes, connections are closed at the JVM level and at different points in the networking infrastructure. However, this workflow is too late for any production service. Connections should be explicitly closed when no longer needed or returned to the pool when using connection pooling. Otherwise, the resource consumption is too high and can cause exhaustion of resources.
 
 ##### If the maximum connection limit is reached, does it affect any licenses and result in extra costs?
 
 No, there is no license or cost associated with this limit. It is a technical limit.
 
-##### How close are we to the limit? What is the maximum limit?
+##### How close is the current usage to the limit? What is the maximum allowed limit?
 
 The alert is triggered when connections exceed 750. The maximum limit is 1000 connections per AEM instance.
 
 ##### Is this limit applicable to VPNs?
 
-Yes, the limit applies to connections using Advanced Networking, including VPNs.
+Yes, the limit applies to connections using advanced networking, including VPNs.
 
-##### If we use a Dedicated Egress IP, will this limit still be applicable?
+##### Does the limit still apply when using a Dedicated Egress IP?
 
 Yes, the limit is still applicable if using a dedicated egress IP. 
