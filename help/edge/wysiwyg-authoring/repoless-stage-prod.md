@@ -135,3 +135,9 @@ Now that you have made all of the necessary configuration changes, verify that e
 1. Visit your new Edge Delivery Services site for that page at `https://main--wknd-prod--<your-github-org>.aem.page`.
 
 If you see the changes that you made, your separate production site setup is working properly.
+
+## Usage {#usage}
+
+Once you have configured your project with repoless staging and production environments, you can manage code for them independently. The following diagram illustrates the relationship of the content in your various environments in AEM, Edge Delivery Services sites, and your GitHub repositories.
+
+![Illustration of AEM environments and repoless prod/stage environments](assets/repoless/aem-edge-github.png)
