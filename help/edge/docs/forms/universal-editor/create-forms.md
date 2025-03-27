@@ -1,31 +1,21 @@
 ---
-title: How to create standalone Adaptive Forms using Universal Editor?
-description: This article explains how to create Adaptive Forms using Form Creation wizard in AEM author instance and publish forms to AEM Edge Delivery Services.
+title: How to create standalone forms based on Edge Delivery Services template using Universal Editor?
+description: This article explains how to use the Universal Editor to create forms by selecting an Edge Delivery Services-based template in the Form Creation Wizard. You can also publish the forms to AEM Edge Delivery Services.
 feature: Edge Delivery Services
 role: User
 hide: yes
 hidefromtoc: yes
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 ---
-# Author standalone forms using the Universal Editor (WYSIWYG)
+# Step-by-Step guide to creating standalone forms in Universal Editor
 
 <span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
 
-This article guides you through the process of authoring the standalone forms with the Universal Editor by selecting an Edge Delivery Services-based template from the Form Creation Wizard. You can also publish the authored forms with Universal Editor to AEM Edge Delivery Services.
+This article guides you through the process of creating and authoring the standalone forms with the Universal Editor by selecting an Edge Delivery Services-based template from the Form Creation Wizard. You can also publish the authored forms with Universal Editor to AEM Edge Delivery Services.
 
-<!--To publish forms to Edge Delivery Services, you must first establish a connection between your AEM environment and your GitHub repository. Once connected, you can author the forms using the Universal Editor, which follows a WYSIWYG (What You See Is What You Get) approach for a seamless and consistent user experience with Sites.-->
+AEM Forms provide a block, known as the Adaptive Forms Block, to help you easily create Edge Delivery Services Forms to capture and store data. You can [create a new AEM Project pre-configured with the Adaptive Forms Block](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) or [add the Adaptive Forms Block to an existing AEM Site Project](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project).
 
-Before you start, learn about the type of Forms components available to you: 
-
-* [Edge Delivery Services for AEM Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) is a composable set of services that enables a rapid development environment where authors can update, publish, and launch new forms rapidly using Universal Editor. The Universal Editor simplifies form creation for Adobe Edge Delivery Services with a user-friendly, visual WYSIWYG interface. 
-
-* [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en): These are standardized data capture components. These components provide customization capabilities, reduced development time, and lower maintenance costs for your digital enrollment experiences. A developer can easily customize and style these components. You can visit [https://aemcomponents.dev/](https://aemcomponents.dev/) to view available core components in action **Adobe recommends using these modern and extensible components to develop Adaptive Forms**.  
-
-* [Adaptive Forms Foundation Components](/help/forms/creating-adaptive-form.md): These are classic (old) data capture components. You can continue to use these to edit your existing foundation components based Adaptive Form. If you are creating new forms, Adobe recommends using  [Adaptive Forms Core Components to create an Adaptive Forms](#create-an-adaptive-form-core-components).
-
-AEM Forms provide a block, known as the Adaptive Forms Block, to help you easily create Edge Delivery Services Forms to capture and store data. You can [create a new AEM Project pre-configured with the Adaptive Forms Block](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) or [add the Adaptive Forms Block to an existing AEM Site Project](#add-adaptive-forms-block-to-your-existing-aem-project).
-
-![Github Repository Workflow](/help/edge/assets/repo-workflow.png)
+![Github Repository Workflow](/help/edge/assets/repo-workflow.png){width=50%}
 
 ## Pre-requisites
 
@@ -33,26 +23,36 @@ AEM Forms provide a block, known as the Adaptive Forms Block, to help you easily
 * If you are already using Edge Delivery Services, add the latest version of the [Adaptive Forms block](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) to your GitHub repository. 
 * The AEM Forms Author instance includes a template based on Edge Delivery Services. Ensure the [latest version of Core Components](https://github.com/adobe/aem-core-forms-components) is installed in your environment.
 * Keep the URL of your AEM Forms as a Cloud Service author instance and your GitHub Repository handy. 
- 
-## Author an Adaptive Form using Universal Editor
 
-With the Universal Editor, you can easily create responsive and interactive standalone forms using ready-made components like text fields, checkboxes, and radio buttons. It offers powerful features such as dynamic rules, smooth data integration, and customization options, allowing you to build forms according to your exact requirements.
+## Working with forms in Universal Editor 
+
+With the Universal Editor, you can easily create responsive and interactive standalone forms using ready-made components like text fields, checkboxes, and radio buttons. It offers powerful features such as dynamic rules, smooth data integration, and customization options, allowing you to build forms according to your exact requirements. You can also publish the forms to AEM Edge Delivery Services. You can perform the following actions on forms in Universal Editor:
+* [Create a form](#create-a-form)
+* [Author a form](#author-a-form)
+* [Publish a form](#publish-a-form)
+* [Manage a form](#manage-a-form)
 
 >[!NOTE]
 >
 > You can also [author a form in AEM Site using the Edge Delivery Services Site template in Universal Editor and publish it to Edge Delivery Services](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project).
 
-To author a standalone Adaptive Form using Universal Editor, perform the following steps:
 
-1. **Create an Adaptive Form on AEM Forms author instance**
+### Create a form
 
-   1. Access your AEM Forms as a Cloud Service author instance.
-   1. Select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.1.  Select **[!UICONTROL Create]**  &gt; **[!UICONTROL Adaptive Forms]**. The Wizard opens. 
+   1. Login into your AEM Forms as a Cloud Service author instance.
+   1. Select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
+   1. Select **[!UICONTROL Create]**  &gt; **[!UICONTROL Adaptive Forms]**. The Wizard opens. 
    1. In the **Source** tab, select a Edge Delivery Services based form template:
 
         ![Create EDS Forms](/help/edge/assets/create-eds-forms.png)
 
+
+      When you select a Edge Delivery Services based template, the **[!UICONTROL Create]** button is enabled. 
+   1. (Optional) In the **[!UICONTROL Data Source]** or **[!UICONTROL Submission]** tabs, you can select a data source or submit action.
+   1. (Optional) In the **[!UICONTROL Delivery]** tab, you can specify a publishing or unpublishing date for a form. 
+
    1. Click **[!UICONTROL Create]** and the **Create Form** wizard appears.
+   1. Specify the **Name** and **Title**. 
    1. Specify the **GitHub URL**. For example, if your GitHub repository is named `edsforms`, it is located under the account `wkndforms`,the URL is:
     `https://github.com/wkndforms/edsforms`
    1. Click **[!UICONTROL Create]**.
@@ -69,7 +69,7 @@ To author a standalone Adaptive Form using Universal Editor, perform the followi
 
         When you click **[!UICONTROL Create]**, the form opens in the Universal Editor for authoring. 
 
-1. **Author the form in the Universal Editor**
+### Author a form 
 
    1. Open the Content browser, and navigate to the **[!UICONTROL Adaptive Form]** component in the **Content tree**.
 
@@ -109,7 +109,7 @@ To author a standalone Adaptive Form using Universal Editor, perform the followi
 
    1. Click **[!UICONTROL Save and Close]**. The configuration is saved. -->
 
-## Publish the form
+### Publish a form
     
 Now, publish the standalone form to Edge Delivery Services by clicking the **[!UICONTROL Publish]** button in the upper-right corner of the Universal Editor.
 
@@ -138,6 +138,63 @@ Here's how to access the form on Edge Delivery Services:
 The URL structure remains the same for both staged and live versions. However, the content you see differs based on the context:
 
 ![View published form](/help/edge/assets/eds-view-publish-form.png)
+
+### Manage a form
+
+You can perform several operations on form using the AEM Forms user interface.
+
+1. Login into your AEM Forms as a Cloud Service author instance.
+1. Select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
+
+1. Select a form and the toolbar displays the following operations you can perform on the selected form.
+
+<table>
+ <tbody>
+  <tr>
+   <td><p><strong>Operation</strong></p> </td>
+   <td><p><strong>Description</strong></p> </td>
+  </tr>
+  <tr>
+   <td><p>Edit</p> </td>
+   <td><p>Opens the form in edit mode.<br /> <br /> </p> </td>
+  </tr>
+    <tr>
+   <td><p>Properties</p> </td>
+   <td><p>Provides options to modify the properties of the form.<br /> <br /> </p> </td>
+  </tr>
+  <td><p>Copy</p> </td>
+   <td><p> Provides options to copy the form  and paste it at the desired location. <br /> <br /> </p> </td>
+  </tr>
+   <tr>
+   <td><p>Preview</p> </td>
+   <td><p>Provides options to preview the form as HTML or perform a custom preview by merging data from an XML file with the form. <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Download</p> </td>
+   <td><p>Downloads the selected form.<br /> <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Start Review/Manage Review</p> </td>
+   <td><p>Allows initiating and managing a review of the selected form.<br /> <br /> </p> </td>
+  </tr>
+  <!--<tr>
+   <td><p>Add Dictionary</p> </td>
+   <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
+  </tr>-->
+  <tr>
+   <td><p>Publish / Unpublish</p> </td>
+   <td><p>Publishes / unpublishes the selected form.<br /> <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Delete</p> </td>
+   <td><p>Deletes the selected form.<br /> <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Compare</p> </td>
+   <td><p>Compares two different form for previewing purposes.<br /> <br /> </p> </td>
+  </tr>
+ </tbody>
+</table> 
 
 ## Troubleshooting 
 
