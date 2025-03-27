@@ -58,12 +58,45 @@ External links are validated for syntax and by checking their availability. This
 
 ![Link Checker checking external links](assets/link-checker-external.png)
 
+### How the External Link Checker Works {#external-details}
+
 The External Link Checker relies on several services and understanding how they work helps you understand how to [configure the Link Checker to meet your needs.](#configuring)
 
 1. Whenever a content author saves any link to a page, an event handler is triggered.
 1. The event handler traverse all content under `/content` and checks for new or updated links and adds them to a cache for the Link Checker.
 1. The **Day CQ Link Checker Service** then executes on a regular schedule to check the entries in the cache for valid syntax.
+1. The syntax-validated links then appear in the [External Link Checker window.](#external-using) However they will be in a **Pending** state.
 1. The **Day CQ Link Checker Task** then executes on a regular basis to validate the links by making a GET call.
+1. The **Day CQ Link Checker Task** then updates the entries in the [External Link Checker window](#external-using) with the results of the GET calls.
+
+### Using the External Link Checker {#external-using}
+
+To use the External Link Checker:
+
+1. From the Global Navigation, select **Tools** -&gt; **Sites**.
+1. Select **External Link Checker** and a list of all external links is displayed.
+
+![External link checker](assets/external-link-checker.png)
+
+Each entry in the table represents an external link detected by the Link Checker service. The following columns are displayed:
+
+* **Status** - The validation status of the link which can be one of the following:
+  * **Valid** - The external link is reachable by the Link Checker.
+  * **Pending** - The external link was added to site content, but has not yet been validated by the Link Checker.
+  * **Invalid** - The external link is not reach able by the Link Checker.
+* **URL** - The external link
+* **Referrer** - The content page that contains the external link
+  * This is only populated [if configured.](#configuring)
+* **Last Checked** - The last time the Link Checker validated the external link
+  * How often links are checked [is configurable.](#configuring)
+* **Last Status** - The last HTML status code returned when the Link Checked last checked the external link
+* **Last Available** - Time since the link was last available to the Link Checker
+* **Last Accessed** - Time since the page with the external link was last accessed in the authoring interface
+
+You can manipulate the content of the window by using the two buttons at the top of the list of links:
+
+* **Refresh** - To refresh the content of the list
+* **Check** - To check an individual external link selected in the list
 
 ## Configuring the Link Checker {#configuring}
 
