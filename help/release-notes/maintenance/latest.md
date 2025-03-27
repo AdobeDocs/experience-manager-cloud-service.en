@@ -18,11 +18,39 @@ The 2025.4.0 feature activation will provide the full feature set for this maint
 
 ### Enhancements {#enhancements-X}
 
-None.
+FORMS-19068: Added support for AEP Connector submit actions in Forms Manager APIs to enhance form data integration capabilities.
+
+FORMS-18513: Implemented data tree transformation support in AEP Connector to enhance wizard functionality and data handling capabilities.
+
+FORMS-18432: Implemented form-specific (regex-based) client-side prefill configuration to enable selective prefill functionality without OSGI-level changes.
+
+FORMS-17551: Added Document of Record (DoR) support for SharePoint list integrations.
 
 ### Fixed Issues {#fixed-issues-X}
 
-None.
+FORMS-19028: Client-side prefill functionality breaks form event handling, preventing Value commit and DOMContentLoaded events from triggering properly on form load.
+
+FORMS-18360: Enhanced SharePoint list scope management for teams sites in Forms Document Management to improve data organization and access control.
+
+FORMS-18325: Added Adobe Experience Platform (AEP) Cloud configuration to enhance form data integration and processing capabilities.
+
+FORMS-18213: Implemented functionality to hide/exclude disabled fields from Document of Record (DoR) to improve document clarity and user experience.
+
+FORMS-18189: Modified custom function handling to prevent error logging for empty client libraries and improve error display in UI.
+
+FORMS-18426: SharePoint list lookup functionality fails when list names contain special characters (For example, '-'), affecting form integration with SharePoint lists.
+
+FORMS-18375: Foundation Components based forms incorrectly select recaptcha configurations from `conf/global` folder when no specific configuration container is selected.
+
+FORMS-18304: PDF/A-1b documents passing validation in Acrobat and LiveCycle ES4 are incorrectly flagged as non-compliant in AEM 6.5 Forms due to device-dependent color errors.
+
+FORMS-18271: Forms Theme Editor displays unlocalized error messages, affecting user experience in form configuration and theme customization.
+
+FORMS-18068: Bold text rendering issues in Document of Record (DoR) for radio button and checkbox groups using rich text fields.
+
+FORMS-7016: Keyboard focus order in Form Editor does not follow logical navigation.
+
+FORMS-6950: Added required ARIA roles and attributes to file system navigator treeview components to improve screen reader accessibility and comply with WCAG 4.1.2 Name, Role, Value (Level A) standard.
 
 ### Known Issues {#known-issues-X}
 
