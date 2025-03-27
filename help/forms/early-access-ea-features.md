@@ -68,9 +68,9 @@ Here's what more Conversational Forms bring:
 Conversational Forms are more than just a new look – they're a game-changer for user experience.  Boost engagement, reduce form abandonment, and make interacting with your website a more enjoyable experience for everyone.
 
 
-### WYSIWYG Authoring for Edge Delivery Services
+### WYSIWYG Authoring (Universal Editor) for Edge Delivery Services for Forms
 
-WYSIWYG Authoring provides WYSIWYG interfaces (Universal Editor and Adaptive Forms Editor) to build and publish adaptive forms to Edge Delivery Services. WYSIWYG Authoring offers all the capabilities of [Document-based Authoring](/help/edge/docs/forms/overview.md#document-based-authoring-features), plus a wide range of additional features:
+The Universal Editor provides a powerful WYSIWYG interface to build and publish [adaptive forms to Edge Delivery Services](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md), combining visual design simplicity with advanced functionality. WYSIWYG Authoring offers all the capabilities of [Document-based Authoring](/help/edge/docs/forms/create-forms.md), plus a wide range of additional features:
 
 * Advanced rules editor for creating complex logic.
 * Server-side extensibility for custom functionalities.
@@ -80,6 +80,26 @@ WYSIWYG Authoring provides WYSIWYG interfaces (Universal Editor and Adaptive For
 * Integration with various data sources for pre-populating forms and submitting data.
 * Form Data Model (FDM) for defining data structure and interactions with various data sources.
 * Ability to choose from multiple submit actions for handling form submissions, including submitting data to Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics, and many more data sources.
+
+ ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/universal-editor.png) 
+
+**Benefits:**
+
+* **Accelerated Time-to-Value (TTV)**: Launch forms faster with intuitive visual authoring that eliminates complex coding requirements. 
+* **Reduced Development Costs**: Lower the total cost of ownership by empowering business users to create and modify forms with minimal IT involvement.
+* **Simplified Development**: Create custom components using only HTML, CSS, and JavaScript—no specialized framework knowledge required.
+* **Modern Web Stack**: Built on web standards and modern technologies familiar to front-end developers. 
+* **Rapid Prototyping**: Quickly build and test form concepts before investing in full development
+
+
+**Explore documentation to learn more:**
+
+| | | |
+|:----------------------:|:---------------------:|:----------------------:|
+| [**Key features**](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md#key-features-of-universal-editor-for-edge-delivery-services-for-forms) | [**Use Responsive layouts**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**Configure submit actions**](/help/edge/docs/forms/universal-editor/submit-action.md) |
+| [**Get started with Universal Editor for Adaptive Forms**](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) | [**Style your forms**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | [**Add reCAPTCHA security**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) |
+| [**Create your first form**](/help/edge/docs/forms/universal-editor/create-forms.md) | [**Use the rule editor**](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) | [**Publish forms**](/help/edge/docs/forms/universal-editor/publish-forms.md) |
+| [**Understand the user interface**](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md) | | [**Create custom components**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
 
 
 ### AEM Forms to Marketo Connector
@@ -100,6 +120,28 @@ Ready to start? The following articles provides detailed instructions to use the
 * [Integrate an Adaptive Form with Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md) 
 * [Configure Marketo Engage ad data source for existing Adaptive Forms](/help/forms/use-marketo-engage-data-source-in-form.md)
 * [Submit an existing Adaptive Form to Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+
+### Value Realization Dashboard
+
+Track and analyze your forms' performance with the Value Realization Dashboard. This analytics tool helps you make data-driven decisions to optimize your forms strategy.
+
+![Forms Usage Insights Dashboard](/help/forms/assets/forms-usage-insights.png)
+
+**Key features:**
+
+* Monitor form submissions, document renditions, and form creation/publication metrics
+* Track form fragment usage and reuse across your organization
+* Identify trends, peak periods, and improvement opportunities
+
+The dashboard provides insights through two main sections:
+
+* **Form & Documents activity over time**: Tracks submissions, renditions, and form creation/publication
+* **Fragment Usage**: Monitors fragment adoption and reuse
+
+For detailed information:
+
+* [Understanding your value realization dashboard](/help/forms/aem-forms-value-realization-dashboard.md)
+* [Interpreting form & documents usage insights](/help/forms/using-the-value-realization-dashboard.md)
 
 ## Additional Early Access Innovations
 

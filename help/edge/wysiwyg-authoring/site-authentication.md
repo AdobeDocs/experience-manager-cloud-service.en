@@ -40,11 +40,13 @@ These items are required to complete the configuration of site authentication fo
 Once site authentication is configured, you can enable it in your AEM authoring environment.
 
 1. Sign into the AEM author instance and go to **Tools** -&gt; **Cloud Services** -&gt; **Edge Delivery Services Configuration** and select the configuration that was automatically created for your site and tap or click **Properties** in the tool bar.
-1. In the **Edge Delivery Services Configuration** window, select the **Authentication** tab and provide the following values, which you noted when you configured site authentication.
-
-   * **The technical account ID**
-   * **Site Authentication Token**
+1. In the **Edge Delivery Services Configuration** window, select the **Authentication** tab, provide the **Site Authentication Token**, which you copied previously.
 
    ![Edge Delivery Services Configuration](/help/edge/wysiwyg-authoring/assets/site-authentication/configure-aem-author.png)
+
+1. Verify that the **The technical account ID** matches the one you copied previously.
+
+   * This field is read-only and predefined.
+   * The technical account is the same for all sites on a single AEM author environment.
 
 1. Tap or click **Save &amp; Close**.

@@ -6,7 +6,7 @@ index: y
 type: Documentation
 solution: Experience Manager, Experience Manager as a Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager, Experience Manager Screens
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 cloud: Experience Cloud
 recommendations: noDisplay
 ---

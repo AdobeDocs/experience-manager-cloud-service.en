@@ -33,8 +33,8 @@ With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow 
 
 Content fragments contain structured content:
 
-* Each fragment is based on a [Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md).
-  * The Content Fragment Model defines the structure of the resulting fragment.
+* Each fragment is based on a [Content Fragment Model](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md).
+  * The [Content Fragment Model defines the structure](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) of the resulting fragment.
 * Every fragment consists of:
   * **[Main](#main-and-variations)** - an integral part of the fragment that holds the core content; always exists, cannot be deleted
   * **[Variations](#main-and-variations)** - one, or more, permutations of the content, created by the author
@@ -86,7 +86,7 @@ These Content Fragments can then be assembled to provide experiences over a vari
 This and the following pages cover the tasks for creating, configuring, maintaining, and using your Content Fragments:
 
 * [Enable Content Fragment functionality for your instance](/help/sites-cloud/administering/content-fragments/setup.md)
-* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - enabling, creating, and defining your models
+* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) - enabling, creating, and [defining](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) your models
 * [Create your Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment) (using the Content Fragment Console)
 
 After the fragments have been created, you can:
@@ -173,7 +173,7 @@ Content fragments are:
 
 * Stored as **Assets**:
 
-  * Content fragments (and their variations) can be created and maintained from the [Content Fragments console](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
+  * Content fragments (and their variations) can be created and maintained from the [Content Fragments console](#content-fragments-console).
   * Authored and edited in the [Content Fragment Editor](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 * Accessible for content delivery using the [AEM GraphQL API](/help/headless/graphql-api/content-fragments.md).
@@ -205,7 +205,7 @@ The Content Fragment assets are made up of the following parts (either directly 
 * **Fragment Elements**
 
   * Elements correlate to the data fields holding content.
-  * You use a [Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) to create the Content fragment. The elements (fields) specified in the model define the structure of the fragment. These elements (fields) can be of a variety of data-types.
+  * You use a [Content Fragment Model](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) to create the Content fragment. The elements (fields) [specified in the model define the structure of the fragment](/help/sites-cloud/administering/content-fragments/content-fragment-models.md). These elements (fields) can be of a variety of data-types.
 
 * **Fragment Paragraphs**
 
@@ -241,7 +241,7 @@ To create Content Fragments you need:
 * **Content Model**
 
   * Are [enabled using the Configuration Browser](/help/sites-cloud/administering/content-fragments/setup.md).
-  * Are [created using Tools](/help/sites-cloud/administering/content-fragments/content-fragment-models.md).
+  * Are [created using the Content Fragment Console](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model).
   * Required to [create a fragment](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments).
   * Defines the structure of a fragment (title, content elements, tag definitions).
   * Content Fragment Model definitions require a title and one data element; everything else is optional. 
@@ -268,6 +268,34 @@ To use your Content Fragments for page authoring you also need:
   * Fragments need one or more dedicated components to define layout and deliver some or all elements/variations and associated content.
   * Dragging a fragment onto a page in authoring automatically associates the required component.
   * See the [Content Fragment Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html).
+
+## The Content Fragments Console {#content-fragments-console}
+
+The Content Fragments console is dedicated to managing, searching for, and creating [Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md), [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) and [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md). It has been optimized for use in a Headless context, but is also used when creating Content Fragments and Content Fragment Models for use in page authoring.
+
+The console can be directly accessed from the top level of the Global Navigation.
+
+![Global Navigation - Content Fragments console](assets/cf-managing-global-navigation.png)
+
+You can use the far left panel to select the resource type to view, browse and manage:
+
+![Content Fragments console - navigation](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
+
+For detailed information see:
+
+* [Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md)
+* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
+* [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+
+* A selection of [keyboard shortcuts](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) are available for use in this console
+
+>[!CAUTION]
+>
+>This console is *only* available in the online Adobe Experience Manager (AEM) as a Cloud Service.
+
+>[!NOTE]
+>
+>Your project team can customize the console and editor if necessary. See [Customizing the Content Fragment Console and Editor](/help/implementing/developing/extending/content-fragments-console-and-editor.md) for further details.
 
 ## Example Usage {#example-usage}
 
