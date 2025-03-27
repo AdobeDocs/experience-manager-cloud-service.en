@@ -113,6 +113,8 @@ The properties are distributed across several tabs.
 * **Template Settings**
 
   * **Allowed Templates** - [Defines the list of templates that are available](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author) within this sub-branch
+  * **Use Page as Template** - [Create a new template based on the current page.](/help/sites-cloud/authoring/universal-editor/templates.md)
+    * Only applies to pages created for use with the Universal Editor leveraging Edge Delivery Services.
 
 * **Authentication Requirement**
 

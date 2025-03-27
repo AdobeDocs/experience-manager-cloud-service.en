@@ -171,16 +171,17 @@ For example:
 
 AEM provides the following data types for you to model your content:
 
-* Single-line text
-* Multi-line text
+* Single line text
+* Multi line text
 * Number
 * Boolean
 * Date and time
 * Enumeration
 * Tags
-* Content Reference
-* Fragment Reference
+* Fragment Reference / Fragment Reference UUID
+* Content Reference / Content Reference UUID
 * JSON Object
+* Tab Placeholder
 
 ### References and Nested Content {#references-nested-content}
 
@@ -207,7 +208,9 @@ At the start, you must enable Content Fragment Models for your site. This is don
 >
 >See Additional Resources - Content Fragments in the Configuration Browser
 
-Then the Content Fragments Models can be created and the structure defined. This can be done under **Tools** > **General** > **Content Fragment Models**. For example:
+Then the Content Fragments Models can be created and the structure defined. This can all be done in the Content Fragment Console. From the console select the panel for Content Fragment Models, navigate to the appropriate folder, then use **Create** to open the **New Content Fragment Model** dialog. 
+
+Once created you can edit your model. For example:
 
 ![Content Fragment Model](assets/cfm-model.png)
 
@@ -221,9 +224,7 @@ Content Fragments are always based on a Content Fragment Model. The model provid
 
 ### Selecting the appropriate model {#select-model}
 
-The first step to actually creating your content is to create a Content Fragment. This is done using Create > Content Fragment in the required folder under Assets > Files. The wizard guides you through the steps.
-
-A Content Fragment is based on a specific Content Fragment Model, that you select as the first step of the creation process.
+The first step to actually creating your content is to create a Content Fragment. This is done using **Create** from the **Content Fragments** tab of the Content Fragments Console.
 
 ### Creating, and editing, structured content {#create-edit-structured-content}
 
@@ -241,7 +242,7 @@ Once your fragment has been created, you can open it in the Content Fragment Edi
 
 After selecting the appropriate model, a Content Fragment is opened for editing in the Content Fragment Editor:
 
-![Content Fragment Editor](assets/cfm-editor.png)
+![Content Fragment Editor - Overview](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 >[!NOTE]
 >
@@ -265,7 +266,7 @@ Now that you have learned how to model your structure, and create content depend
 
 * [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md) - the lead-in page for Content Fragments
   * [Content Fragments in the Configuration Browser](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) - enable Content Fragment functionality in the Configuration Browser
-  * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - creating and editing Content Fragment Models
+  * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) - creating and editing Content Fragment Models
   * [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md) - creating and authoring Content Fragments; this page leads you to other detailed sections
 * [AEM GraphQL Schemas](access-your-content.md) - how GraphQL realizes models
 * [The Sample Content Fragment Structure](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)

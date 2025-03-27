@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160px" height="160px" viewBox="0 0 160 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Security Icon</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle fill="#F5F7F9" cx="80" cy="80" r="80"></circle>
+        <g transform="translate(40, 30)" fill="#1473E6" fill-rule="nonzero">
+            <path d="M40,0 C26.4,5.6 13.6,8.4 0,8.4 L0,48.4 C0,68.4 16.8,86.8 40,100 C63.2,86.8 80,68.4 80,48.4 L80,8.4 C66.4,8.4 53.6,5.6 40,0 Z M40,50 C34.4,50 30,45.6 30,40 C30,34.4 34.4,30 40,30 C45.6,30 50,34.4 50,40 C50,45.6 45.6,50 40,50 Z M40,20 C29.2,20 20,29.2 20,40 C20,50.8 29.2,60 40,60 C50.8,60 60,50.8 60,40 C60,29.2 50.8,20 40,20 Z M40,54 C37.6,54 36,52.4 36,50 L44,50 C44,52.4 42.4,54 40,54 Z"></path>
+        </g>
+    </g>
+</svg> 

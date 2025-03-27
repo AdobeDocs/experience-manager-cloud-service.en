@@ -89,12 +89,12 @@ When a template is created, it is by default either in a **Draft** state (for te
 
 A template must be enabled before it can be used by content authors to create pages. If a template is no longer needed, it can be disabled so that it no longer displays in the page creation wizard.
 
-* Select the template and click or tap **Disable** to disable the template.
-* Select the template and click or tap **Enable** to enable the template.
+* Select the template and click **Disable** to disable the template.
+* Select the template and click **Enable** to enable the template.
 
 ## Publishing {#publish}
 
-A template created with the template editor can only be used once it is published. Select the template and click or tap **Publish** to publish.
+A template created with the template editor can only be used once it is published. Select the template and click **Publish** to publish.
 
 Templates created with the Universal Editor do not need to be published in order to be used.
 

@@ -57,7 +57,7 @@ Adobe Experience Manager offers and supports multiple editors to author a Form. 
 
 The Universal Editor is a versatile visual editor that offers a what-you-see-is-what-you-get (WYSIWYG) feature, ensuring an intuitive form creation experience. It is recommended to use the Universal Editor when creating new forms, as it provides a modern, user-friendly design and a convenient drag-and-drop interface.
 
-To create forms using the Universal Editor, Edge Delivery Services templates available in the AEM environment are used. These forms inherit their look and feel from the configurations in the Edge Delivery Services GitHub repository. [A connection between your AEM environment and the Edge Delivery Services GitHub repository](/help/edge/docs/forms/publishing-forms.md) is established to enable the publishing of these forms on Edge Delivery Services.
+To create forms using the Universal Editor, Edge Delivery Services templates available in the AEM environment are used. These forms inherit their look and feel from the configurations in the Edge Delivery Services GitHub repository. [A connection between your AEM environment and the Edge Delivery Services GitHub repository](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) is established to enable the publishing of these forms on Edge Delivery Services.
 
 For detailed steps on how to author using the Universal Editor, refer to the [Authoring Content with the Universal Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/universal-editor/authoring) article.
 
