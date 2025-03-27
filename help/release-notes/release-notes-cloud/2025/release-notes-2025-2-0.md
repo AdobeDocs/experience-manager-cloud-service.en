@@ -3,6 +3,7 @@ title: Release Notes for 2025.2.0 release of [!DNL Adobe Experience Manager] as 
 description: Release Notes for 2025.2.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
+exl-id: b893663d-35f1-43ae-a029-4c249b117f2d
 ---
 # 2025.2.0 Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
