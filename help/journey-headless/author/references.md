@@ -30,7 +30,6 @@ This article builds on these so you understand how to use references to author y
 
 References are simply a mechanism for connecting your resources, be it other content, assets (as in images), or other fragments. Although very similar, there are some differences.
 
-
 Some references have dedicated data-types (for example, Content References and Fragment References), whereas others are simply added as a reference within a text block (asset references and improvised references).
 
 ![Content Fragments - References](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
