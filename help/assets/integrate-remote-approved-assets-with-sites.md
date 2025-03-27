@@ -172,4 +172,4 @@ You can either choose **[!UICONTROL Local]** or **[!UICONTROL Remote]** DAM repo
 
 ### Access remote assets in Edge Delivery Services {#access-assets-eds}
 
-You can also access remote assets in Edge Delivery Services. For more information, see [Utilizing assets from Assets as a Cloud Service delivered using Dynamic Media with OpenAPI capabilities](https://www.aem.live/docs/aem-assets-sidekick-plugin#utilizing-assets-from-assets-cloud-services-delivered-via-dynamic-media-with-openapi).
+You can access remote assets while authoring content in Microsoft Word, Google Docs, or Universal Editor and then publish the content to Edge Delivery Services. You can also use Dynamic Media with OpenAPI to deliver brand-approved assets and utilize many other benefits that it offers. For more information, see [Integrate AEM Assets while authoring content for Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md).
