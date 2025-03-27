@@ -11,20 +11,19 @@ Learn how the Link Checker helps authors by validating links as they are added t
 
 ## Overview {#overview}
 
-Content authors should not have to concern themselves with validating every link that they include in their content.
-
-The Link Checker runs automatically to assist content authors with their links including:
+Content authors should not have to concern themselves with validating every link that they include in their content. The Link Checker runs automatically to assist content authors with their links including:
 
 * Validating links as they are added to content
+* Showing a list of all external links in the content
 * Performing link transformations
 
-The Link Checker has several [configuration options](#configuring) such as defining the validation internal, allowing certain links or link patters to be omitted from validation, and defining link rewriting rules.
+The Link Checker has several [configuration options](#configuring) such as defining the validation of internal links, allowing certain links or link patters to be omitted from validation, and defining link rewriting rules.
 
-The Link Checker validates both internal links and external links.
+The Link Checker validates both [internal links](#internal) and [external links.](#external)
 
 >[!NOTE]
 >
->Because the Link Checker checks every content page’s links, the Link Checker can impact performance on large repositories. In such cases, you may need to [configure how often the Link Checker runs](#configuring) or [disable it.](#disabling)
+>Because the Link Checker checks every content page's links, the Link Checker can impact performance on large repositories. In such cases, you may need to [configure how often the Link Checker runs](#configuring) or [disable it.](#disabling)
 
 ## Internal Link Checking {#internal}
 
@@ -63,7 +62,7 @@ External links are validated for syntax and by checking their availability. This
 The External Link Checker relies on several services and understanding how they work helps you understand how to [configure the Link Checker to meet your needs.](#configuring)
 
 1. Whenever a content author saves any link to a page, an event handler is triggered.
-1. The event handler traverse all content under `/content` and checks for new or updated links and adds them to a cache for the Link Checker.
+1. The event handler traverses all content under `/content` and checks for new or updated links and adds them to a cache for the Link Checker.
 1. The **Day CQ Link Checker Service** then executes on a regular schedule to check the entries in the cache for valid syntax.
 1. The syntax-validated links then appear in the [External Link Checker window.](#external-using) However they will be in a **Pending** state.
 1. The **Day CQ Link Checker Task** then executes on a regular basis to validate the links by making a GET call.
@@ -71,7 +70,7 @@ The External Link Checker relies on several services and understanding how they 
 
 ### Using the External Link Checker {#external-using}
 
-To use the External Link Checker:
+The External Link Checker is a console that provides an overview of all external links in your AEM content. To use the External Link Checker:
 
 1. From the Global Navigation, select **Tools** -&gt; **Sites**.
 1. Select **External Link Checker** and a list of all external links is displayed.
@@ -97,6 +96,8 @@ You can manipulate the content of the window by using the two buttons at the top
 
 * **Refresh** - To refresh the content of the list
 * **Check** - To check an individual external link selected in the list
+
+All other icons in the External Link Checker window are inactive.
 
 ## Configuring the Link Checker {#configuring}
 
