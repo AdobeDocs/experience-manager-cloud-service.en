@@ -73,7 +73,7 @@ Once the Content Fragment Selector is set up and authenticated to use the Conten
   * Select Content Fragments
   * Search for Content Fragments
   * Sort the current list according to various columns; both ascending or descending
-  * Change the view format
+  * See the view format indicator
   * Show, hide, and specify filters
 
 ### Hide/Show panel {#hide-show-panel}
@@ -119,9 +119,8 @@ The Content Fragment Selector lets you perform a full text search of fragments w
 
 You can sort fragments in the Content Fragment Selector by various properties. You can also sort the fragments in ascending or descending order.
 
-### Types of view {#types-of-view}
+### View Type {#view-type}
 
 Content Fragment Selector lets you view the fragment in the:
 
-* **List View**
 * **Table View**
