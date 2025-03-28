@@ -183,6 +183,6 @@ The AEM SPA Editor SDK is fully supported by Adobe and it continues to be enhanc
 * Edit configs (for example, listeners)
 * Undo / Redo
 * Page diff and Time Warp
-* Features performing HTML rewriting server-side such as Link Checker, CDN rewriter service, URL shortening and so on.
+* Features performing HTML rewriting server-side such as [Link Checker,](/help/operations/link-checker.md) CDN rewriter service, URL shortening and so on.
 * Developer mode
 * AEM Launches

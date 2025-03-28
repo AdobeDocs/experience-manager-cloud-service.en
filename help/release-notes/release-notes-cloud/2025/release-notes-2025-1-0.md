@@ -75,17 +75,33 @@ The preferred editors for managing headless content in AEM are now:
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New features in AEM Assets view {#new-features-assets}
+### New features in AEM Assets {#new-features-assets}
 
-**Customize search filters**
+**Dynamic Media delivery reports**
 
-Custom Search filters enhance the precision and efficiency of finding relevant information. It allows for more tailored searches, filtering data according to specific attributes such as brand, product, category, or other key identifiers. This improves organization, reduces time spent sifting through irrelevant results, and enables quicker decision-making. It also supports scalability, as large datasets become easier to navigate and analyze.
+Gain delivery insights for assets delivered through Dynamic Media, including asset-level delivery counts, referrer details, asset paths in AEM Assets, and unique asset IDs. Generate reports for all assets in the AEM Assets repository or specific folder hierarchies. These insights let you measure the ROI of delivered assets, evaluate channel performance, and make informed decisions for asset management.
 
-![custom search filters](/help/assets/assets/custom-search-filters.png)
+![dynamic renditions](/help/assets/assets/referrer.png)
 
-### New features in Content Hub {#new-features-content-hub}
+**Dynamic Media Multi-audio and caption**
 
-Description
+[Multi-caption and multi-audio track support for videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) - You can now easily add multiple captions and multiple audio tracks to a primary video. This capability means that your videos are accessible to a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the captions and audio tracks from a single tab in the user interface.
+
+**Dynamic Adaptive Streaming over HTTP support**
+
+New protocol support launched (DASH - Dynamic Adaptive Streaming over HTTP) for Adaptive streaming in Dynamic Media video delivery (with CMAF enabled):
+
+* Adaptive streaming (DASH/HLS) ensures better user viewing experience for videos.
+
+* DASH is the international standard protocol for adaptive video streaming and is widely adopted in the industry
+
+**Asset relations**
+
+The Assets View now supports viewing and editing asset relations in a simplified asset Details panel. Easily add relationships like Source and Derivative to content so that uses can more effectively find relevant hero content.
+
+**Reprocess assets**
+
+Assets view now supports reprocessing assets available in a folder. You can select to either use the **Full Process** option or use advanced options, such as, default preview renditions, metadata, post-processing workflow, and processing profile.
 
 ### Early Access features in AEM Assets {#early-access-features-assets}
 

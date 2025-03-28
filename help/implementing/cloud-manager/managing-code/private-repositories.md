@@ -5,9 +5,19 @@ exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 ---
-# Add a private GitHub repository in Cloud Manager {#private-repositories}
+# Add a private GitHub Cloud repository in Cloud Manager {#private-repositories}
 
-By setting up Cloud Manager to integrate with your private GitHub repositories, you can validate your code directly within GitHub using Cloud Manager. This configuration removes the requirement to sync your code regularly with the Adobe repository. 
+By setting up Cloud Manager to integrate with your private GitHub Cloud (repositories hosted on `github.com`), you can validate your code directly within GitHub using Cloud Manager. This configuration removes the requirement to sync your code regularly with the Adobe repository. 
+
+>[!NOTE]
+>
+>You can also add the following repository types with webhooks:
+>
+>* GitHub Enterprise Server (self-hosted version of GitHub) repositories 
+>* GitLab (both `gitlab.com` and self-hosted versions of GitLab) repositories 
+>* Bitbucket (both `bitbucket.org` and Bitbucket Server, the self-hosted version of BitBucket) repositories 
+>
+>See [Add External Repositories in Cloud Manager - Limited beta](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
 <!-- CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
 
@@ -19,23 +29,22 @@ By setting up Cloud Manager to integrate with your private GitHub repositories, 
 
 * **CI/CD Pipelines**: Teams can still benefit from Adobe Cloud Manager's automated build, test, and deployment processes, as the integration allows the CI/CD pipelines to pull code from the organization's own GitHub repository.
 
-In essence, a "Build your own GitHub" in Adobe Cloud Manager empowers teams to manage their own GitHub repositories while still using the robust deployment and validation capabilities of Cloud Manager. -->
+In essence, a "Build your own GitHub" in Adobe Cloud Manager empowers teams to manage their own GitHub repositories while still using the robust deployment and validation capabilities of Cloud Manager.
 
 >[!NOTE]
 >
->This feature is exclusive to public GitHub. Support for self-hosted GitHub is not available.
+>This feature is exclusive to public GitHub. Support for self-hosted GitHub is not available. -->
 
 ## Configuration {#configuration}
 
-Configuration of a private GitHub repository in Cloud Manager consists of two steps:
+Configuration of a private GitHub Cloud repository in Cloud Manager consists of two steps:
 
-1. [Add a private GitHub repository](#add-repo) to a selected program.
-1. Then, [validate ownership of the private GitHub repository](#validate-ownership).
+1. [Add a private GitHub Cloud repository](#add-repo) to a selected program.
+1. Then, [validate ownership of the private GitHub Cloud repository](#validate-ownership).
 
->[!NOTE]
->Cloud Manager supports private repositories on GitHub Cloud (github.com) only. <!-- As per request in https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=DMSArchitecture&title=%5B2025%5D+Cloud+Manager+-+Bring+Your+Own+Git+-+Pull+Request+validator+for+multiple+vendors -->
 
-### Add a private GitHub repository to a program {#add-repo}
+
+### Add a private GitHub Cloud repository to a program {#add-repo}
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
@@ -104,11 +113,11 @@ If you need to return to the repository later to complete the validation, on the
 
 
 
-## Use private GitHub repositories with Cloud Manager {#using}
+## Use private GitHub Cloud repositories with Cloud Manager {#using}
 
 After the GitHub repository is validated in Cloud Manager, the integration is complete. You can use the repository with Cloud Manager.
 
-**To use private repositories with Cloud Manager:**
+**To use private GitHub Cloud repositories with Cloud Manager:**
 
 1. When you create a pull request, a GitHub check starts automatically.
 
@@ -132,7 +141,7 @@ When the pull request is merged or closed, the full stack code quality pipeline 
 
 
 
-## Associate private repositories with pipelines {#pipelines}
+## Associate private GitHub Cloud repositories with pipelines {#pipelines}
 
 Validated private repositories can be associated with [full-stack and frontend pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
@@ -140,12 +149,12 @@ Validated private repositories can be associated with [full-stack and frontend p
 
 ## Limitations {#limitations}
 
-Certain limitations apply when using private repositories with Cloud Manager.
+Certain limitations apply when using private GitHub Cloud repositories with Cloud Manager.
 
 * Web tier and config pipelines are not supported with private repositories.
 * No Git tag is created and pushed when using private repositories on production full stack pipelines.
 * If the Adobe GitHub app is removed from your GitHub organization, it removes the pull requests validation feature for all repositories.
-* Pipelines using private repositories and the "on-commit" build trigger are not started automatically when a new commit is pushed into the selected branch.
+* Pipelines using private GitHub Cloud repositories and the "on-commit" build trigger are not started automatically when a new commit is pushed into the selected branch.
 * [Artifact reuse functionality](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) does not apply to private repositories.
 * You cannot pause the pull request validation using the GitHub check from Cloud Manager.
 If the GitHub repository is validated in Cloud Manager, Cloud Manager always tries to validate the pull requests created for that repository.
