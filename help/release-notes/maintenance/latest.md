@@ -10,47 +10,61 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 19823 {#19823}
+## Release X {#X}
 
-Summarized below are the continuous improvements for maintenance release 19823, which was publicly released on March 4, 2025. The previous maintenance release was release 19687.
+Summarized below are the continuous improvements for maintenance release X, which was publicly released on April 1, 2025. The previous maintenance release was release 19823.
 
-The 2025.3.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
+The 2025.4.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-19823}
+### Enhancements {#enhancements-X}
 
-* ASSETS-46491: OSGI event handler for asset processing status change.
-* ASSETS-45613: Send unpublish events when assets are deleted or moved.
-* ASSETS-45131: Custom tag property support in Content Hub.
+FORMS-19068: Added support for AEP Connector submit actions in Forms Manager APIs to enhance form data integration capabilities.
 
-### Fixed Issues {#fixed-issues-19823}
+FORMS-18513: Implemented data tree transformation support in AEP Connector to enhance wizard functionality and data handling capabilities.
 
-* ASSETS-20433: Dynamic Media ingestion issues with password-protected PDFs.
-* ASSETS-24675: Image processing options not shown for swatch-only image profile.
-* ASSETS-41257: Asset version comparison renders asset with incorrect aspect ratio. Asset versions shown in incorrect order in timeline.
-* ASSETS-44894: Assets view bookmarks might not be clickable.
-* ASSETS-45015: Smart crop width and height set as zero if smart crop asset handle not found.
-* ASSETS-45192: Reduce pulse request frequency.
-* ASSETS-45724: Ensure DM upload is retried if upload job is not assigned.
-* ASSETS-46425: Adobe Stock integration search issues.
-* ASSETS-27400: Folder preview generator might attempt to open original.
-* CQ-4358722: Handle different locale codes in Java 11 and Java 17.
-* SITES-29369: Page Published/Unpublished Events triggered on Asset activation/deactivation.
-* SITES-24074: Fix keyboard accessibility under unified shell.
-* SITES-28058: Assets folder title not carried over to live copy.
+FORMS-18432: Implemented form-specific (regex-based) client-side prefill configuration to enable selective prefill functionality without OSGI-level changes.
 
-### Known Issues {#known-issues-19823}
+FORMS-17551: Added Document of Record (DoR) support for SharePoint list integrations.
+
+### Fixed Issues {#fixed-issues-X}
+
+FORMS-19028: Client-side prefill functionality breaks form event handling, preventing Value commit and DOMContentLoaded events from triggering properly on form load.
+
+FORMS-18360: Enhanced SharePoint list scope management for teams sites in Forms Document Management to improve data organization and access control.
+
+FORMS-18325: Added Adobe Experience Platform (AEP) Cloud configuration to enhance form data integration and processing capabilities.
+
+FORMS-18213: Implemented functionality to hide/exclude disabled fields from Document of Record (DoR) to improve document clarity and user experience.
+
+FORMS-18189: Modified custom function handling to prevent error logging for empty client libraries and improve error display in UI.
+
+FORMS-18426: SharePoint list lookup functionality fails when list names contain special characters (For example, '-'), affecting form integration with SharePoint lists.
+
+FORMS-18375: Foundation Components based forms incorrectly select recaptcha configurations from `conf/global` folder when no specific configuration container is selected.
+
+FORMS-18304: PDF/A-1b documents passing validation in Acrobat and LiveCycle ES4 are incorrectly flagged as non-compliant in AEM 6.5 Forms due to device-dependent color errors.
+
+FORMS-18271: Forms Theme Editor displays unlocalized error messages, affecting user experience in form configuration and theme customization.
+
+FORMS-18068: Bold text rendering issues in Document of Record (DoR) for radio button and checkbox groups using rich text fields.
+
+FORMS-7016: Keyboard focus order in Form Editor does not follow logical navigation.
+
+FORMS-6950: Added required ARIA roles and attributes to file system navigator treeview components to improve screen reader accessibility and comply with WCAG 4.1.2 Name, Role, Value (Level A) standard.
+
+### Known Issues {#known-issues-X}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-19823}
+### Deprecated Features and APIs {#deprecated-X}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-19823}
+### Security Fixes {#security-X}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 6 identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses X identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-19823}
+### Embedded Technologies {#embedded-tech-X}
 
 |Technology|Version|Link|
 |---|---|---|

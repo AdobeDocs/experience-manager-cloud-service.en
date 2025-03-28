@@ -27,6 +27,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2025 {#2025}
+      + [Release Notes for 2025.3.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-3-0.md)
       + [Release Notes for 2025.2.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-2-0.md) 
       + [Release Notes for 2025.1.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md)
     + 2024 {#2024}
@@ -86,6 +87,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2025 {#2025}
+      + [Maintenance Release Notes for 2025.3.0](/help/release-notes/maintenance/2025/2025-3-0.md)
       + [Maintenance Release Notes for 2025.2.0](/help/release-notes/maintenance/2025/2025-2-0.md)
       + [Maintenance Release Notes for 2025.1.0](/help/release-notes/maintenance/2025/2025-1-0.md)
     + 2024 {#2024}
