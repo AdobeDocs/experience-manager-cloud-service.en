@@ -22,7 +22,7 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2025.2.0) is March 4, 2025. The next feature release (2025.3.0) is planned for March 27, 2025.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2025.3.0) is March 27, 2025. The next feature release (2025.4.0) is planned for April 24, 2025.
 
 ## Maintenance Release Notes {#maintenance}
 
@@ -38,58 +38,20 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 -->
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
-
-### New features in AEM Sites {#new-features-sites}
-
-**Content Fragment Auto-Tagging** 
-
-When creating Content Fragments, it is now possible to automatically inherit tags that were assigned to the content model. This allows for powerful automatic classification of content stored in Content Fragments.
-
-**Content Fragment UUID Support** 
-
-Content Fragment UUID support is now GA. The new capability does not alter the path-based behavior of operations within AEM, such as move, rename, rollout, where paths are automatically being adjusted, but it can make external consumption of Content Fragments easier and more stable, especially when using GraphQL queries that directly target individual fragments with ByPath queries. Such queries can break if a fragment path changes. When using the new ById query type, the query now remains stable as the UUID of a fragment does not change in cases where paths do.
-
-**Dynamic Media with OpenAPI support in Content Fragment Editor and GraphQL** 
-
-Assets that are stored in different AEM as a Cloud Service Programs than Content Fragments, and that are enabled with the new Dynamic Media with OpenAPI capability, can now be used in Content Fragments. The image selector in the new Content Fragment Editor does now allow selecting "remote" repositories as the source for image assets to be referenced in the fragment. And on delivery of such content fragments using AEM GraphQL, the JSON response now includes required properties for remote assets (assetId, repositoryId) so client applications can create respective Dynamic Media with OpenAPI URLs to fetch the image.
-
-**Translation HTTP API** 
-
-The AEM Translation HTTP REST API that has been in early adopter mode for a while is now GA. Documentation can be found [here](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/). The API allows automating required steps in the translation management process for content in AEM.
-
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New features in AEM Assets {#new-features-assets}
+### New features in Dynamic Media {#new-features-dynamic-media}
 
-**Dynamic Media new packaging structure**
+**Long form support for videos delivered using Dynamic Media with Open API**
 
-A refreshed Dynamic Media packaging structure is now available to better align with market expectations and support tracking. The new packaging structure comprises:
+Dynamic Media with OpenAPI now supports long form videos. The long form videos can support upto 50 GB and 2 hours. 
 
-* Dynamic Media Prime, which includes Dynamic Media with OpenAPIs and video to enhance delivery.
-
-* Dynamic Media Ultimate adds delivery and transformation features to meet heavier usage requirements.
-
-You must have Assets as a Cloud Service Prime or Ultimate to benefit from the new packaging structure.
-
-**AI-generated video captions** 
-
-AI-generated video captions in Adobe Dynamic Media use artificial intelligence to generate captions automatically for video content. This feature is designed to improve accessibility and enhance the user experience by providing accurate captions. Captions are generated from the original audio, any additional audio tracks, or extra captions are provided in the "Captions and Audio" tab on the video properties page. With support for more than 60 languages, captions can be reviewed and previewed before publishing the video.
-
-**Customize search filters**
-
-Custom Search filters enhance the precision and efficiency of finding relevant information. It allows for more tailored searches, filtering data according to specific attributes such as brand, product, category, or other key identifiers. This improves organization, reduces time spent sifting through irrelevant results, and enables quicker decision-making. It also supports scalability, as large datasets become easier to navigate and analyze.
-
-![customize search filters](/help/assets/assets/custom-search-filters.png)
+### New features in Assets view {#new-features-assets-view}
 
 
-### Early Access features in Content Hub {#early-access-content-hub}
+**Support for root tags**
 
-Content Hub now allows you to view and download Dynamic and Smart Crop renditions in addition to the existing static renditions. As a Content Hub administrator, you can also configure the availability of these renditions to users using the Configuration User Interface.
-
-![dynamic renditions](/help/assets/assets/download-single-asset-renditions-dynamic.png)
-
-
+AEM Assets now supports mapping a tag property in a metadata form to custom metadata. In addition, as an administrator, you can restrict the availability of tags to users by restricting access to a specific root tag and the tags that exist under the root tag.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
  
@@ -109,7 +71,6 @@ Adaptive Forms allows you to use [HTML email templates](/help/forms/html-email-t
 
 AEM Forms Document Generation APIs now allows you to [directly upload generated PDF documents](/help/forms/early-access-ea-features.md#doc-generation-api) to Azure Blob Storage. This enhancement streamlines storage and retrieval, improving efficiency and integration with cloud workflows.
 
-
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### Java 21 support {#java21}
@@ -120,7 +81,15 @@ The more performant Java 21 **runtime** will be automatically deployed when a Ja
 
 >[!IMPORTANT] 
 >
-> In February, the Java 21 **runtime** was deployed to dev/RDE environments (aside from those already built with Java 17 or 21, which already have Java 21 runtime). Java 21 will be applied to stage/production environments in April. 
+> The Java 21 **runtime** was deployed to your dev/RDE environments in February; it will be applied to your stage/production environments on **April 28th and 29th**. Note that **building code** with Java 21 (or Java 17) is independent of the Java 21 runtime -- you must explicitly take steps to build code with Java 21 (or Java 17).
+
+### AEM Log-Forwarding to more destinations - Beta Program {#log-forwarding-earlyadopter}
+
+Now in beta, you can forward AEM logs to New Relic (using HTTPS), Amazon S3, and Sumo Logic. Note that AEM logs (including Apache/Dispatcher) are supported, but not CDN logs. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) for access.
+
+While logs can be downloaded from Cloud Manager, many organizations find it beneficial to stream those logs to a preferred logging destination. AEM already supports (GA) AEM and CDN log forwarding to Azure Blob Storage, Datadog, HTTPS, Elasticsearch (and OpenSearch), and Splunk. This feature is configured in a self-serve manner, and deployed using the Config Pipeline.
+
+Learn more in the [log forwarding documentation](/help/implementing/developing/introduction/log-forwarding.md).
 
 ### Edge Computing - Request for Feedback! {#edge-computing-feedback}
 
