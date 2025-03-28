@@ -14,29 +14,12 @@ The Micro-Frontend user interface is made available in your application using th
 
 The Content Fragment Selector provides many benefits, such as:
 
-<!--
-* Ease of integration, with any of the Adobe, or non-Adobe, applications using the Vanilla JavaScript library.
--->
-
 * Ease of integration with any of the Adobe applications.
 * Easy to maintain, as updates to the Content Fragment Selector package are automatically deployed to the Content Fragment Selector available to your application. This means that your application does not need to take action to load the latest modifications.
 * Ease of customization, using properties that control the Content Fragment Selector display within your application.
 * Full-text search, together with customizable filters, allow the quick navigation of Content Fragments within the authoring experience.
 * Ability to switch repositories within an IMS organization for Content Fragment selection.
-* Ability to sort Content Fragments, and view them in List, Grid, Gallery, or Waterfall view.
-
-<!--Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets] repository:
-
-1. [Install Asset Selector](#installation)
-2. [Integrate Asset Selector using Vanilla JS](#integration-using-vanilla-js)
-3. [Use Asset Selector](#using-asset-selector)
--->
-
-<!--
-## Setting up Asset Selector {#asset-selector-setup}
-
-![Asset Selector set up](assets/asset-selector-prereqs.png)
--->
+* Ability to sort Content Fragments, and view them in your selected view.
 
 ## Prerequisites {#prerequisites}
 
@@ -50,72 +33,7 @@ If you require the IMS authentication workflow you must ensure that:
 
 Alternatively, if your application is already authenticated with the IMS workflow, you can add the appropriate IMS information instead. 
 
-<!--
-For further information see:
-
-* [Integrate the Content Fragment Selector with an Adobe app](/help/assets/integrate-asset-selector-adobe-app.md)
-* [Integrate the Content Fragment Selector with a non-Adobe app](/help/assets/integrate-asset-selector-non-adobe-app.md)
--->
-
-<!--
-### Provisioning {#provisioning}
-
-Before attempting to install or use the Content Fragment Selector, you must ensure that your organization has been provisioned for access to the Content Fragment Selector as part of the Experience Manager as a Cloud Service profile. 
-
-If your organization has not been provisioned, you cannot integrate or use these components. 
-
->[!NOTE] 
->
->To request provisioning, your program administrator should raise a support ticket marked as `P2` from the Admin Console and include the following information:
->
->* Domain names: where the integrating application is hosted.
-
-After provisioning, your organization will be provided with the following properties for your environment:
-
-* `imsClientId`
-* `imsScope`
-* `redirectUrl` 
-
->[!IMPORTANT]
->
->Without these properties, you cannot run the installation steps.
--->
-
 ## Installation {#installation}
-
-<!--
-The Content Fragment Selector is available via:
-
-* [UMD](https://github.com/umdjs/umd) version (recommended)
-
-* ESM CDN; for example, [esm.sh](https://esm.sh/) and [skypack](https://www.skypack.dev/) 
-
-For example:
-
-* In browsers using **UMD version** (recommended):
-
-  ```html
-  <script src="https://experience.adobe.com/solutions/CQ-content-fragments-selectors/static-content-fragments/resources/content-fragments-selectors.js"></script>
-
-  <script>
-    const { renderContentFragmentSelector } = PureJSSelectors;
-  </script>
-  ```
-
-* In browsers with `import maps` support using **ESM CDN version**:
-
-  ```html
-  <script type="module">
-    import { ContentFragmentSelector } from 'https://experience.adobe.com/solutions/CQ-content-fragments-selectors/static-content-fragments/resources/@content-fragments/selectors/index.js'
-  </script>
-  ```
-
-* In Deno/Webpack Module Federation using **ESM CDN version**:
-
-  ```html
-  import { ContentFragmentSelector } from 'https://experience.adobe.com/solutions/CQ-content-fragments-selectors/static-content-fragments/resources/@content-fragments/selectors/index.js'
-  ```
--->
 
 Use the `ContentFragmentSelector` component. There are several installation options:
 
@@ -143,21 +61,20 @@ Use the `ContentFragmentSelector` component. There are several installation opti
 
 ## Using the Content Fragment Selector {#using-the-Content-Fragment-selector}
 
-Once the Content Fragment Selector is set up and authenticated to use the Content Fragment Selector with your AEM as a Cloud Service application, you can select Content Fragments or perform various other operations to search for your fragments in the repository.
+Once the Content Fragment Selector is set up and authenticated to use the Content Fragment Selector with your AEM as a Cloud Service application, you can select Content Fragments or perform various other operations to search for your fragments in the repository:
 
-<!-- SCREENSHOT -->
+![The Content Fragment Selector](/help/headless/assets/content-fragment-selector-using.png)
 
-![Using Content Fragment Selector](/help/headless/assets/content-fragment-selector-using.png)
-
-* **1**: [Hide/Show panel](#hide-show-panel)
-* **2**: [Repository switcher](#repository-switcher)
-* **3**: [Content Fragments](#content-fragments-repository)
-* **4**: [Filters](#out-of-the-box-filters)
-* **5**: [Search bar](#custom-search)
-* **6**: [Search bar](#search-bar)
-* **7**: [Sorting](#sorting)
-* **8**: [Sorting in ascending or descending order](#sorting)
-* **9**: [View](#types-of-view)
+* With the **Repository** selector at the top right, you can select the repository you want to use
+* In the far left panel you can:
+  * Hide, or show, folders from the selected repository
+  * Select a specific folder to show Content Fragments in that folder
+* In the main panel you can:
+  * Select Content Fragments
+  * Search for Content Fragments
+  * Sort the current list according to various columns; both ascending or descending
+  * Change the view format
+  * Show, hide, and specify filters
 
 ### Hide/Show panel {#hide-show-panel}
 
@@ -167,35 +84,26 @@ To hide folders in the left navigation, click the **Hide folders** icon. To undo
 
 The Content Fragment Selector lets you select a repository for fragment selection. 
 
-You can select the repository of your choice from the drop-down available in the left panel. The repository options available in the drop-down list are based on the `repositoryId` property defined in the `index.html` file. This property is based on the environment from the selected IMS org accessed by the user currently logged in. 
+You can select the repository of your choice from the **Repository** drop-down, available at the top of the main panel. The repository options available in the drop-down list are based on the `repositoryId` property defined in the `index.html` file. This property is based on the environment from the selected IMS org accessed by the user currently logged in. 
 
 Consumers can pass a preferred `repositoryID` to render fragments from a specific repository, and stop rendering the repository switcher.
 
-### Content Fragments repository {#content-fragments-repository}
+### Content Fragments folders {#content-fragments-folders}
 
 The Content Fragments repository is a collection of Content Fragment folders that you can use to perform operations. 
 
-### Out-of-the-box filters {#out-of-the-box-filters}
+### Filters {#filters}
 
-The Content Fragment Selector also provides out-of-the-box filter options to refine your search results. The following filters are available:
+The Content Fragment Selector also provides out-of-the-box filter options to refine your search results. Various filters are available, including:
 
+* **Fragment model**
+* **Localization**
 * **Status**: the current state of the fragment; `New`, `Draft`, `Published`, `Modified`, `Unpublished`
+* Tags
+* Users
+* Times and dates
 
-<!-- SCREENSHOT -->
-
-![Rail view example](/help/headless/assets/content-selector-filters.png) 
-
-<!--
-### Custom search {#custom-search}
-
-In addition to the full-text search, the Content Fragment Selector lets you search the content within fragments using customized search. You can use custom search filters in both Modal view and Rail view modes.
--->
-
-<!-- SCREENSHOT -->
-
-<!--
-![Custom Search](/help/headless/assets/content-selector-custom-search.png)
--->
+![Filter options](/help/headless/assets/content-selector-filters.png) 
 
 You can also create a default search filter to save for future use. To create custom search filters for your Content Fragments, you can use the `filterSchema` property.
 
@@ -211,13 +119,5 @@ You can sort fragments in the Content Fragment Selector by various properties. Y
 
 Content Fragment Selector lets you view the fragment in the:
 
-* ![Table view](/help/headless/assets/table-view.png) **Table View**: displays your Content Fragments in rows and columns
-
-<!--
-Content Fragment Selector lets you view the fragment in four different views:
-
-* ![list view](/help/headless/assets/list-view.png) **List View** The list view displays scrollable files and folders in a single column.
-* ![grid view](/help/headless/assets/grid-view.png) **Grid View** The grid view displays scrollable files and folders in a grid of rows and columns.
-* ![gallery view](/help/headless/assets/gallery-view.png) **Gallery View** The gallery view displays files or folders in a center-locked horizontal list.
-* ![waterfall view](/help/headless/assets/waterfall-view.png) **Waterfall** View The waterfall view displays files or folders in the form of a Bridge.
--->
+* **List View**
+* **Table View**
