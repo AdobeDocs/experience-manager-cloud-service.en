@@ -84,7 +84,11 @@ To hide folders in the left navigation, click the **Hide folders** icon. To undo
 
 The Content Fragment Selector lets you select a repository for fragment selection. 
 
-You can select the repository of your choice from the **Repository** drop-down, available at the top of the main panel. The repository options available in the drop-down list are based on the `repositoryId` property defined in the `index.html` file. This property is based on the environment from the selected IMS org accessed by the user currently logged in. 
+You can select the repository of your choice from the **Repository** drop-down, available at the top of the main panel. 
+
+![The Content Fragment Selector](/help/headless/assets/content-fragment-repository-selector.png)
+
+The repository options available in the drop-down list are based on the `repositoryId` property defined in the `index.html` file. This property is based on the environment from the selected IMS org accessed by the user currently logged in. 
 
 Consumers can pass a preferred `repositoryID` to render fragments from a specific repository, and stop rendering the repository switcher.
 
