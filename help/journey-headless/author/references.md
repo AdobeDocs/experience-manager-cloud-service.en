@@ -38,6 +38,13 @@ Some references have dedicated data-types (for example, Content References and F
 
 Content References do just that - they allow you to reference any other content. This opens a browser that lets you select the content item.
 
+There are two types:
+
+* **Content Reference**
+  * specifies the path to the referenced resource 
+* **Content Reference (UUID)**
+  * In the editor, the reference specifies the path to the referenced resource; internally the reference is held as a universally unique ID (UUID) that references the resource 
+
 ## Asset/Media References {#assets-media-references}
 
 Assets (for example, images or media) can be referenced within a Text block by using the **Insert asset** option. This opens a browser that lets you select the asset.
@@ -69,6 +76,13 @@ And that's just for starters. Depending on the complexity, an Award could be Com
 Representing these interrelationships can be achieved with Fragment References, as they are understood by both you (the author) and the headless applications.
 
 As an author you are not responsible for defining these relationships (that is done by the Content Architect when creating the Content Fragment Model), but you need to know how to recognize and edit the references.
+
+There are two sorts:
+
+* **Fragment Reference**
+  * specifies the path to the referenced resource 
+* **Fragment Reference (UUID)**
+  * In the editor, the reference specifies the path to the referenced resource; internally the reference is held as a universally unique ID (UUID) that references the resource 
 
 <!--
 ![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
