@@ -42,7 +42,7 @@ Most groups migrated are configured to be managed by IMS.  This means that a gro
 
 Note that migrated groups are no longer considered AEM "local groups"; they are IMS-ready groups in AEM though they may not yet exist in IMS.  They must be separately re-created in IMS so that they can be synchronized between AEM and IMS.  Groups can be created in IMS via Admin Console, among other methods, individually or in bulk.  See [Manage user groups](https://helpx.adobe.com/enterprise/using/user-groups.html) for details about creating groups individually or in bulk on the Admin Console.
 
-The exception to this IMS configuration is with groups created by Assets Collections. When a collection is created on AEM, groups are created for access to that collection; such groups are migrated to the cloud system, but they are not configured to be managed by IMS.  In order to add IMS users to these groups, they must be added in the Group Properties page in the Assets UI, either individually or collectively as part of another IMS group.
+The exception to this IMS configuration is with groups created by Assets Collections and Private Folders. When a collection or a private folder is created on AEM, groups are created for access to that content; such groups are migrated to the cloud system, but they are not configured to be managed by IMS.  In order to add IMS users to these groups, they must be added in the Group Properties page in the Assets UI, either individually or collectively as part of another IMS group.
 
 
 ## Opt Out of Group Migration {#group-migration-option}
