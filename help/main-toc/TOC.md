@@ -27,7 +27,8 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2025 {#2025}
-      + [Release Notes for 2025.1.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md) 
+      + [Release Notes for 2025.2.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-2-0.md) 
+      + [Release Notes for 2025.1.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md)
     + 2024 {#2024}
       + [Release Notes for 2024.10.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-10-0.md)
       + [Release Notes for 2024.9.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-9-0.md)
@@ -111,6 +112,7 @@ user-guide-title: AEM as a Cloud Service
   + Cloud Manager Release Notes {#cloud-manager}
     + [Current](/help/implementing/cloud-manager/release-notes/current.md)
     + 2025 {#2025}
+      + [2025.2.0](/help/implementing/cloud-manager/release-notes/2025/2025-2-0.md)
       + [2025.1.0](/help/implementing/cloud-manager/release-notes/2025/2025-1-0.md)
     + 2024 {#2024}
       + [2024.12.0](/help/implementing/cloud-manager/release-notes/2024/2024-12-0.md)
@@ -209,6 +211,7 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Universal Editor {#univeral-editor}
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + 2025 {#2025}
+      + [2025.02.25 Release Notes](/help/release-notes/universal-editor/2025/2025-02-25.md)
       + [2025.02.17 Release Notes](/help/release-notes/universal-editor/2025/2025-02-17.md)
       + [2025.01.16 Release Notes](/help/release-notes/universal-editor/2025/2025-01-16.md)
     + 2024 {#2024}
@@ -691,16 +694,14 @@ user-guide-title: AEM as a Cloud Service
     + [Remove external dependencies for existing installations](/help/assets/remove-external-dependencies.md)
     + [Configure [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
     + [Update [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
-
-   + Integration with Adobe Express {#integration-adobe-express}
+  + Integration with Adobe Express {#integration-adobe-express}
       + [Native integration with Adobe Express](/help/assets/native-integration-adobe-express.md)    
-
   + Integration with Creative Cloud {#integration-creative-cloud}
-      + [Connect AEM Assets to Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)  
-      
+      + [Connect AEM Assets to Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)     
 + Forms {#forms}
   + Overview {#forms-overview}
     + [Introduction](/help/forms/home.md)
+    + [Introduction](/help/forms/home2.md)
     + [Top Adobe Experience Manager Forms innovations](/help/forms/latest-innovations.md)
     + [Early Access (EA) capabilities](/help/forms/early-access-ea-features.md)
     + [Notable changes](/help/forms/notable-changes.md)
@@ -1032,7 +1033,7 @@ user-guide-title: AEM as a Cloud Service
     + WYSIWYG Authoring {#universal-editor}
       + [Introduction to Forms Universal Editor for Edge Delivery Services - Complete Guide](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
       + [How to Start Authoring Using Universal Editor - Step by Step Tutorial](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-      + [How to Create Your First Form Using Universal Editor](/help/edge/docs/forms/universal-editor/create-forms.md)
+      + [How to Create Your First Form Using Universal Editor - Step by Step Tutorial](/help/edge/docs/forms/universal-editor/create-forms.md)
       + [Universal Editor Interface Guide: Tools, Features, and Navigation Explained](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
       + [Make Your Forms Mobile-Friendly: Responsive Design in Universal Editor](/help/edge/docs/forms/universal-editor/responsive-layout.md)
       + [Design Beautiful Forms: Styling and Theming Guide for Universal Editor](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
@@ -1040,7 +1041,9 @@ user-guide-title: AEM as a Cloud Service
       + [Form Submission Guide: Configure and Customize Form Submit Actions](/help/edge/docs/forms/universal-editor/submit-action.md)
       + [Protect Your Forms from Spam: Adding reCAPTCHA Security](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
       + [How to Publish and Deploy Forms: Universal Editor Publishing Guide](/help/edge/docs/forms/universal-editor/publish-forms.md)
-      + [Build Custom Form Components: Developer's Guide to Universal Editor](/help/edge/docs/forms/universal-editor/create-custom-component.md)      
+      + [Build Custom Form Components: Developer's Guide to Universal Editor](/help/edge/docs/forms/universal-editor/create-custom-component.md) 
+      + [Form Data Model Integration: Integrating Forms with the Form Data Model](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
+      + [Reusable, modular, and standalone segments: Creating and using Form Fragments in forms](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)   
     + Document-based authoring {#getting-started-edge-delivery-services-forms}
       + [Build Your First Form: Quick Start Guide with Google Sheets and Excel](/help/edge/docs/forms/tutorial.md)
       + [How to Create Forms Using Google Sheets or Excel: Step-by-Step Guide](/help/edge/docs/forms/create-forms.md)
@@ -1310,11 +1313,12 @@ user-guide-title: AEM as a Cloud Service
     + Hybrid and SPA Development {#hybrid}
       + [Hybrid and SPA with AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
       + [Enabling JSON Export for a Component](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+      + [SPA Editor Deprecation](/help/implementing/developing/hybrid/spa-editor-deprecation.md)
       + [SPA Introduction and Walkthrough](/help/implementing/developing/hybrid/introduction.md)
       + [SPA WKND Tutorial](/help/implementing/developing/hybrid/wknd-tutorial.md)
       + [Getting Started using React](/help/implementing/developing/hybrid/getting-started-react.md)
       + [Getting Started using Angular](/help/implementing/developing/hybrid/getting-started-angular.md)
-      + [SPA Deep Dives](/help/implementing/developing/hybrid/deep-dives.md)
+      + [SPA Deep Dives](/help/implementing/developing/hybrid/deep-dives-gems.md)
       + [Developing SPAs for AEM](/help/implementing/developing/hybrid/developing.md)
       + [SPA Editor Overview](/help/implementing/developing/hybrid/editor-overview.md)
       + [SPA Blueprint](/help/implementing/developing/hybrid/blueprint.md)
@@ -1381,6 +1385,7 @@ user-guide-title: AEM as a Cloud Service
       + [Internationalizing UI Strings](/help/implementing/developing/extending/i18n/dev.md)
       + [Using Translator to Manage Dictionaries](/help/implementing/developing/extending/i18n/translator.md)
       + [Extracting Strings for Translating](/help/implementing/developing/extending/i18n/extract.md)
+    + [Extensions and the Extension Manager](/help/implementing/developing/extending/extension-manager.md)
   + Deploying to AEM as a Cloud Service {#deploying}
     + [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md)
     + [AEM Version Updates](/help/implementing/deploying/aem-version-updates.md)
@@ -1419,7 +1424,8 @@ user-guide-title: AEM as a Cloud Service
   + [Asynchronous Jobs](/help/operations/asynchronous-jobs.md)
   + [Using Config Pipelines](/help/operations/config-pipeline.md)
   + [Removal of the generic lucene index](/help/operations/removal-generic-lucene-index.md)
-  + [Query and Indexing Best Practices](/help/operations/query-and-indexing-best-practices.md)  
+  + [Query and Indexing Best Practices](/help/operations/query-and-indexing-best-practices.md)
+  + [Link Checker](/help/operations/link-checker.md)  
 + Compliance {#compliance}
   + [Compliance in AEM as a Cloud Service](/help/compliance/home.md)
   + Data Privacy and Protection Readiness {#data-privacy}

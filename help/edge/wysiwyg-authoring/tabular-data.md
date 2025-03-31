@@ -174,10 +174,10 @@ The redirects spreadsheet is now published and publicly-accessible.
 
 Now that you know how to create a redirects spreadsheet, you can create any other standard spreadsheet type:
 
-* Placeholders
-* Metadata
-* Headers
-* Configuration
+* [Placeholders](https://www.aem.live/docs/placeholders)
+* [Metadata](https://www.aem.live/docs/bulk-metadata)
+* [Headers](https://www.aem.live/docs/custom-headers)
+* [Configuration](https://www.aem.live/docs/configuration) - Such as for [cache invalidation](https://www.aem.live/docs/byo-cdn-adobe-managed#setup-push-invalidation)
 * [Taxonomy](/help/edge/wysiwyg-authoring/taxonomy.md)
 
 Simply follow the same steps in the sections [Create Spreadsheet](#spreadsheet) and [Update paths.json](#paths-json) and choose the appropriate template and update the `paths.json` file appropriately.
