@@ -10,8 +10,6 @@ role: Admin, Architect, Developer
 
 Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to use them on your first headless project.
 
-{{headless-trials-promotion}}
-
 ## Introduction {#introduction}
 
 Headless implementation is increasingly becoming important for delivering experiences to your audience, wherever they are and regardless of channel.
