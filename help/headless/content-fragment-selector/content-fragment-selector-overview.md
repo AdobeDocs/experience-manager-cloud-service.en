@@ -56,7 +56,7 @@ Use the `ContentFragmentSelector` component. There are several installation opti
    * Add the following to `package.json` dependencies:
 
      ```html
-     "@aem-sites/content-fragment-selector": "git+https://github.com/adobe/private-repo-url.git#version"
+     "@aem-sites/content-fragment-selector": "git+https://github.com/adobe/<your-private-repo-url>.git#version"
      ```
 
 ## Using the Content Fragment Selector {#using-the-Content-Fragment-selector}
