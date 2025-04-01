@@ -32,7 +32,7 @@ Once the content is migrated to the AEM as a Cloud Service environment, the thir
 
 During the ingestion phase of the migration, groups are migrated if they are required to satisfy the ACLs or CUG policies on the migrated content.  See [Group Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) for more details.
 
-Migrated groups (those not created by Assets Collection creation &mdash; see Collections below) are configured as IMS groups.  What this means is that any group of the same name created in IMS (via the Admin Console, for instance) will be linked to the group in AEM, and users which are members of the IMS group will become members of the group in AEM as well.  In order for this linking to happen, the group must also be created in IMS first.  Use the Admin Console to create groups, individually or in bulk, in your AEM instance, as described in [Managing Principals in IMS with the Admin Console](/help/journey-migration/managing-principals.md).
+Migrated groups (those not created by Assets Collection or Private Folder creation &mdash; see Collections and Private Folders below) are configured as IMS groups.  What this means is that any group of the same name created in IMS (via the Admin Console, for instance) will be linked to the group in AEM, and users which are members of the IMS group will become members of the group in AEM as well.  In order for this linking to happen, the group must also be created in IMS first.  Use the Admin Console to create groups, individually or in bulk, in your AEM instance, as described in [Managing Principals in IMS with the Admin Console](/help/journey-migration/managing-principals.md).
 
 Use the AEM Security UI to assign IMS groups to local AEM groups. To do this, go to the Tools page in AEM, click on Security, and choose Groups.
 
@@ -42,15 +42,15 @@ Since users are not migrated, they must be created in IMS so that they can be us
 
 To know which groups each user should belong to, you can make use of the User Report (see [Group Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)).  This report lists the groups each user should be a member of, and this list will normally be included in the Bulk User input file for use with the Admin Console bulk upload functionality.
 
-### Collections
+### Collections and Private Folders
 
-Creation of an Assets Collection also automatically creates some groups to manage access to that collection.  These groups are migrated if they are mentioned on migrated collections, but they are not configured to link to IMS groups directly; in AEM they remain "local groups", and they cannot be managed via IMS.
+Creation of an Assets Collection or Private Folder also automatically creates some groups to manage access to that Assets content.  These groups are migrated if they are mentioned on the migrated content, but they are not configured to link to IMS groups directly; in AEM they remain "local groups", and they cannot be managed via IMS.
 
 Since these groups are not in IMS, the bulk upload tool cannot be used to create users as their direct members.  IMS users which are also in AEM can be added to these groups individually, but doing this in bulk requires an extra step.  Here is one way this can be done:
-* Create a new group or groups in Admin Console/IMS for access to collections and configure them for AEM.
+* Create a new group or groups in Admin Console/IMS for access to collections/private folders and configure them for AEM.
 * Log in as a member of the group(s) so the group(s) are created in AEM.
-* For the migrated collections, use the Assets Collections UI to add the new group as editor/owner/viewer.
+* For the migrated collections or private folders, use the Assets UI to add the new group as editor/owner/viewer.
 * Add (or bulk upload) users to the new group(s) in Admin Console.
-* When the user logs in for the first time, their IMS user will be created in AEM and they should have access to the new group(s) and thereby the original collection groups.
+* When the user logs in for the first time, their IMS user will be created in AEM and they should have access to the new group(s) and thereby the original collection or private folder groups.
 
 Note: For bulk assigning of users, the above steps must be used to create the users in IMS; users that already exist in IMS cannot be created again via bulk upload, though the bulk editor can be used to make those kinds of changes (See [Admin Console Bulk User upload](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html) under **Edit user details**).

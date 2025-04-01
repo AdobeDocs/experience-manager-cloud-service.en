@@ -74,7 +74,7 @@ Here you can see that there are three main areas:
       * Show information about the status of the model
     * [Certain other fields of information](#information-content-fragments) about a Content Fragment Model can be used for [Fast Filtering](#fast-filtering):
       * Select a value in the column and it is immediately applied as a filter
-      * Fast filtering is supported for the **Modified By**, **Published By** and **Status** column.s
+      * Fast filtering is supported for the **Modified By**, **Published By** and **Status** columns.
     * By using mouse-over on the column headers a drop-down action selector, and width sliders, will be shown. These allow you to:
       * Sort - select the appropriate action for either ascending or descending
         This will sort the entire table according to that column. Sorting is only available on appropriate columns.
@@ -89,7 +89,7 @@ The main/right panel (table view) of the console provides a range of information
 
 * **Name**
   * Provides a link to open the model in the editor.
-* Locked
+* **Locked** (Padlock icon)
   * When the model is locked, this is indicated with a padlock icon.
 * **Path**
   * Provides the path as a link to open the configuration in the console.
