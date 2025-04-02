@@ -19,7 +19,7 @@ The 2025.4.0 feature activation will provide the full feature set for this maint
 ### Enhancements {#enhancements-20133}
 
 * ASSETS-47850: Restrict adding Scene7 configurations if AEM CS is ES enabled.
-* CQ-4359547: Full removal of Guava from https://git.corp.adobe.com/target-sdk/tsdk-core repository.
+* CQ-4359547: Full removal of Guava from git repository.
 * FORMS-17551: Added Document of Record (DoR) support for SharePoint list integrations.
 * FORMS-18432: Implemented form-specific (regex-based) client-side prefill configuration to enable selective prefill functionality without OSGI-level changes.
 * FORMS-18513: Implemented data tree transformation support in AEP Connector to enhance wizard functionality and data handling capabilities.
@@ -53,14 +53,14 @@ The 2025.4.0 feature activation will provide the full feature set for this maint
 * SITES-29031: Improved logic for PATCH-ing fragments, thus providing better performance.
 * SITES-29169: Resources in status PUBLISHED will be republished if they reference a resource that was moved, renamed or deleted.
 * SITES-29376: Add Code toggle to validation of published resource deletion.
-* SITES-29417: Update /libs/cq/Page/proxy.jsp to forward request to jcr:content node instead of including.
+* SITES-29417: Update `/libs/cq/Page/proxy.jsp` to forward request to jcr:content node instead of including.
 * SITES-2947: Create/modify kibana visualization to compare publish rasp.
 * SITES-29733: Increased performance of model search by tags of Content Fragments.
 * SITES-8316: Content Policies: Cache the ContentPolicyManager.
-* SITES-24906: Edge Delivery with Universal Editor: Support author-created spreadsheets without a mapping (early access)
-* SITES-24907: Edge Delivery with Universal Editor: Support publishing Assets to multiple sites for MSM use cases (early access)
-* SITES-27956: Edge Delivery with Universal Editor: Improve publishing throughput (early access)
-* SITES-27956: Edge Delivery with Universal Editor: Improve error handling for publishing to Edge Delivery Services (early access)
+* SITES-24906: Edge Delivery with Universal Editor: Support author-created spreadsheets without a mapping (early access).
+* SITES-24907: Edge Delivery with Universal Editor: Support publishing Assets to multiple sites for MSM use cases (early access).
+* SITES-27956: Edge Delivery with Universal Editor: Improve publishing throughput (early access).
+* SITES-27956: Edge Delivery with Universal Editor: Improve error handling for publishing to Edge Delivery Services (early access).
 
 ### Fixed Issues {#fixed-issues-20133}
 
