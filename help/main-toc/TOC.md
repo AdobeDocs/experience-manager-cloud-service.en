@@ -384,7 +384,6 @@ user-guide-title: AEM as a Cloud Service
     + Fragments {#fragments}
       + [Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md)
       + [Experience Fragments](/help/sites-cloud/authoring/fragments/experience-fragments.md)
-      + [Headless Content Author Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
     + Projects {#projects}
       + [Working with Projects](/help/sites-cloud/authoring/projects/overview.md)
       + [Managing Projects](/help/sites-cloud/authoring/projects/managing.md)
