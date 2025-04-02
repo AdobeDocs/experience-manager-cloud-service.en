@@ -51,7 +51,7 @@ The 2025.4.0 feature activation will provide the full feature set for this maint
 * SITES-28549: Create `/cf/domains` to return the domain id based on AEM tier.
 * SITES-29026: Added an optional parameter that specifies the locale of the Content Fragment, using a language and country code.
 * SITES-29031: Improved logic for PATCH-ing fragments, thus providing better performance.
-* SITES-29169: All published resources (no matter if they are in PUBLISHED or MODIFIED status) will be republished if they reference a resource that was moved, renamed or deleted.
+* SITES-29169: Resources in status PUBLISHED will be republished if they reference a resource that was moved, renamed or deleted.
 * SITES-29376: Add Code toggle to validation of published resource deletion.
 * SITES-29417: Update /libs/cq/Page/proxy.jsp to forward request to jcr:content node instead of including.
 * SITES-2947: Create/modify kibana visualization to compare publish rasp.
