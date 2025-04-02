@@ -47,7 +47,7 @@ This article provides the end-to-end workflow to enable the [!DNL Dynamic Media]
 
 ## Enable [!DNL Dynamic Media] Ultimate {#enable-dynamic-media-ultimate}
 
-Execute the following steps in your cloud service environment to enable [!DNL Dynamic Media] Ultimate:
+To enable [!DNL Dynamic Media] Ultimate:
 
 1. [Activate [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi) 
 1. [Configure [!DNL Dynamic Media] solutions](#configure-dynamic-media-solutions) 
@@ -180,11 +180,14 @@ If [!DNL Dynamic Media] company creation fails, execute the following steps base
 
 1. If **[!UICONTROL Status]** is Pending, then raise the issue to the customer support team for resolution.
 
-   ![pending status](/help/assets/assets/company-creation-pending-status.png){width="350" align="left"}
+
+   ![pending status](/help/assets/assets/company-creation-pending-status.png){width="350" align="center"}
+
+   
 
 1. If **[!UICONTROL Status]** is failed, then retry based on the reason of failure.
 
-   ![failed status](/help/assets/assets/company-creation-failure-status.png){width="380" align="left"}
+   ![failed status](/help/assets/assets/company-creation-failure-status.png){width="380" align="center"}
 
 ### Optional: Configure custom domain in delivery tier {#configure-custom-domain-in-delivery-tier}
 
@@ -297,7 +300,7 @@ TBD: Wiki in progress..
 
 ## Enable [!DNL Dynamic Media] Prime {#enable-dynamic-media-prime}
 
-Execute the following steps in your cloud service environment to enable [!DNL Dynamic Media] Prime:
+To enable [!DNL Dynamic Media] Prime:
 
 1. [Activate Dynamic Media with OpenAPI](#activate-dynamic-media-with-openapi) 
 1. [Optional: Configure custom domain in delivery tier](#configure-custom-domain-in-delivery-tier) 
