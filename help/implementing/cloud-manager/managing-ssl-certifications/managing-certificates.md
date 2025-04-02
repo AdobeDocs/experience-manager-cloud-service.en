@@ -34,6 +34,10 @@ When a customer managed certificate expires any domains that are in use with the
 
 A user must be a member of the **Business Owner** or **Deployment Manager** role to complete this task.
 
+>[!IMPORTANT]
+>
+>When adding or updating an SSL certificate, do not include the new certificate in the certificate chain. Including it prevents the upload from completing successfully. 
+
 **To update an expired customer managed SSL certificate:**
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate program.
