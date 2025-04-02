@@ -61,11 +61,33 @@ The steps for editing a CDN configuration from the **Environments** page are nea
 
 1. Click **Update**.
 
+ 
+## Go live readiness: Configure DNS settings for a custom domain {#go-live-readiness} 
 
-<!-- ## Go live readiness {#go-live-readiness} 
+Before a custom domain can serve traffic, you must complete DNS configuration with your DNS provider. After deploying a domain mapping, and clicking **Go live**, Cloud Manager displays a dialog box that guides you through the DNS record setup process. You have the option to go live by adding either a CNAME record type or an A record type.
 
-1. ADD STEPS -->
+<!-- See also [APEX record](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-cname-record#adobe-managed-cert-apex-record) and [CNAME record](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-cname-record). -->
 
+**To configure Go live readiness:**
+
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+1. In the left side menu, under **Services**, click ![Social network icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Domain Mappings**.
+1. In the Domain Mappings table, click **Go live** near the end of a row that corresponds to a CDN whose go live readiness you want to configure.
+
+    ![Go live readiness dialog box](/help/implementing/cloud-manager/assets/domain-mappings-go-live-readiness.png)
+
+1. In the **Go live readiness** dialog box, do one of the following:
+
+    | Option  | Steps |
+    | --- | --- |
+    | Configure A RECORD | Recommended for root domains like `example.com`<br><ol><li>Log in to your DNS service provider's portal.<li>Go to the DNS Records section.<li>Create an A record to point to all the listed IP addresses.</li></ol> |
+    | Configure CNAME | Recommended for custom domains like `www.example.com`<br><ol><li>Log in to your DMS service provider's portal.<li>Go to the DNS Records section.<li>Map [cdn.adobeaemcloud.com](https://cdn.adobeaemcloud.com/) (CNAME record) in the DNS record of the DNS service provider (your custom domain). This mapping ensures that requests received at the custom domain are redirected to Adobe's CDN.</li></ol> |
+
+1. In the **Go live readiness** dialog box, click **OK** to save the record. 
+
+    Wait for DNS propagation; it may take several minutes to a few hours. 
+
+    When the **[!UICONTROL Status]** column in the Domain Mappings table updates to **[!UICONTROL Verified]**, the custom domain is ready to use. You may need to click ![Refresh icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) to update the status.
 
 ## Delete a CDN configuration {#delete-cdn}
 

@@ -28,7 +28,7 @@ A Form Data Model (FDM) is an extension of JSON schema that you can use to:
 * [Create Adaptive Forms and fragments](#create-af)
 <!--* [Create interactive communications and building blocks like text, list, and condition fragments](#create-ic)-->
 * [Preview with sample data](#preview-ic)
-* [using Form Data Model service](#prefill)
+* [Using Form Data Model service](#prefill)
 * [Write submitted Adaptive Form data back into data sources](#write-af)
 * [Invoke services using Adaptive Form rules](#invoke-services)
 
