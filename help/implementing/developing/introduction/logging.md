@@ -13,7 +13,7 @@ AEM as a Cloud Service logging settings and log levels are managed in configurat
 
 * AEM logging, which performs logging at the AEM application level
 * Apache HTTPD Web Server/Dispatcher logging, which performs logging of the web server and Dispatcher on the Publish tier.
-* CDN logging, which as its name indicates, performs logging at the CDN. This feature is being gradually rolled out to customers in early September.
+* CDN logging, which as its name indicates, performs logging at the CDN.
 
 ## AEM Logging {#aem-logging}
 
