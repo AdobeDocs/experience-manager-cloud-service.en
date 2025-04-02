@@ -13,7 +13,7 @@ exl-id: 4aeafba9-8f9e-4ecb-9e37-8d048b0474cc
 
 Newer AEM as a Cloud Service APIs follow the OpenAPI specification, and thus produce consistent, well-documented, and user-friendly APIs. In-depth information is available in the following pages:
 
-* An [end-to-end tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) about how to configure and invoke OpenAPI-based AEM APIs using a server-side credential.
+* An [end-to-end tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) about how to configure and invoke OpenAPI-based AEM APIs using server-to-server authentication.
 * Informational [Guides](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/), including [API concepts and syntax](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/).
 * API-endpoint [reference documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/), where some of the APIs are OpenAPI-based, such as [this Sites API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/). Reference documentation also includes an API playground, which makes it simple to try out an endpoint using a bearer token generated with the Adobe Developer Console.
 
