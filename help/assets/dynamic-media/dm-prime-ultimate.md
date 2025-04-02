@@ -6,9 +6,6 @@ exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
 ---
 # Dynamic Media Prime and Ultimate {#dynamic-media-prime-ultimate}
 
-| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
-| ------------- | --------------------------- |---------|----|-----|
-
 ![Dynamic Media banner](/help/assets/assets/dm-pnp-banner.png)
 
 Adobe Experience Manager as a Cloud Service enables you to access Dynamic Media Prime and Ultimate offerings to streamline your digital workflows and optimize content management. This article introduces each offering, outlines their benefits, and also highlights key differences between the two.

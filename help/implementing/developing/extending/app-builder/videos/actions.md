@@ -1,7 +1,7 @@
 ---
 title: App Builder actions
 description: Learn about Adobe Runtime actions and to use them App Builder applications.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
 role: Developer, Architect

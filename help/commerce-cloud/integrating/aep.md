@@ -2,7 +2,7 @@
 title: AEM-CIF core components and Adobe Experience Platform integration
 description: Learn how to send storefront event data from an AEM-rendered product page to the Experience Platform using the CIF - Experience Platform Connector.
 sub-product: Commerce
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 activity: setup
 feature: Commerce Integration Framework
 topic: Commerce

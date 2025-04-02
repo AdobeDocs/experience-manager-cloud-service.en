@@ -1,8 +1,6 @@
 # Snippets {#snippets}
 
-## Headless Trials Promotion {#headless-trials-promotion}
-
-[![Get to know our headless CMS with 30 day trial](./assets/aem-headless-trial-promo.png){align="left"}](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&cli=headless_exl_banner_campaign&co=US&lang=en)
+## Headless Trials (Program has been sunset) {#headless-trials-promotion}
 
 ## Edge Delivery Services Authoring {#edge-delivery-authoring}
 
@@ -241,7 +239,7 @@ To log a support ticket, you must first register your Edge Delivery site in Clou
 
 >[!IMPORTANT]
 >
->The SPA Editor [has been deprecated](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#spa-editor) for new projects. It remains supported by Adobe for existing projects, but should not be used for new projects. The preferred editors for managing headless content in AEM are now:
+>The SPA Editor [has been deprecated](/help/implementing/developing/hybrid/spa-editor-deprecation.md) for new projects. It remains supported by Adobe for existing projects, but should not be used for new projects. The preferred editors for managing headless content in AEM are now:
 >
 >* [The Universal Editor](/help/edge/wysiwyg-authoring/authoring.md) for visually editing headless content.
 >* [The Content Fragment Editor](/help/assets/content-fragments/content-fragments-managing.md) for form-based editing of headless content.
