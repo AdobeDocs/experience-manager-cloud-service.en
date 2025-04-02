@@ -30,13 +30,11 @@ The 2025.4.0 feature activation will provide the full feature set for this maint
 * SITES-25433: Support full page rendering when comparing old versions.
 * SITES-25923: LinkInfoStorageImpl can block when no urls are stored anymore.
 * SITES-26208: Deleting a Content Fragment via workflow now allows the option to update referencing resources by removing the newly deleted fragment.
-* SITES-26400: Lower barrier to adopt Edge Delivery Service by improving, simplifying, and hardening Crosswalk
 * SITES-26500: Adding the option to move Content Fragments via workflow - `move-fragments`.
 * SITES-26711: Rollout Trigger - Links are not updating.
 * SITES-27583: Experience Fragments losing Version History after being moved.
 * SITES-27618: Searching references of a fragment in pages does not return all the results.
 * SITES-27781: Implemented model-level validation for Content Fragment references, allowing validation of referenced fragments against their model constraints and required tag.
-* SITES-27782: Build Crosswalk specific Publisher & Subscriber Agent.
 * SITES-27784: Update SQL query generation to use PATH function instead of `jcr:path`.
 * SITES-28040: Adobe Target ExperienceFragmentsReplicationListener is broken.
 * SITES-28051: Get the current user's permissions on a Content Fragment: GET /cf/fragments/{fragmentId}/permissions.
@@ -59,6 +57,10 @@ The 2025.4.0 feature activation will provide the full feature set for this maint
 * SITES-2947: Create/modify kibana visualization to compare publish rasp.
 * SITES-29733: Increased performance of model search by tags of Content Fragments.
 * SITES-8316: Content Policies: Cache the ContentPolicyManager.
+* SITES-24906: Edge Delivery with Universal Editor: Support author-created spreadsheets without a mapping (early access)
+* SITES-24907: Edge Delivery with Universal Editor: Support publishing Assets to multiple sites for MSM use cases (early access)
+* SITES-27956: Edge Delivery with Universal Editor: Improve publishing throughput (early access)
+* SITES-27956: Edge Delivery with Universal Editor: Improve error handling for publishing to Edge Delivery Services (early access)
 
 ### Fixed Issues {#fixed-issues-20133}
 
@@ -84,7 +86,7 @@ The 2025.4.0 feature activation will provide the full feature set for this maint
 * SITES-26881: AEMaaCS Accessibility Bug - Incorrect Role is provided for the "Three dots" Icon Which beside comment input field.
 * SITES-26956: Follow up on SITES-24920 Unable to Move Page in Production Environment.
 * SITES-27707: Content Finder asset listing fails due to issues with asset names (6.5 SP22 regression).
-* SITES-27757: Icon rewrite no accurate with helix-html-pipeline.
+* SITES-27757: Edge Delivery with Universal Editor: rewrite icons according to helix-html-pipeline semantics.
 * SITES-27780: Unexpected &lt;br&gt; Tag Appears in RTE with Plaintext DefaultPasteMode on SP22.
 * SITES-27958: Linkchecker throws "This session has been closed" errors.
 * SITES-28149: Custom ExperienceFragmentLinkRewriterProvider Not Triggered During XF Export to Target.
