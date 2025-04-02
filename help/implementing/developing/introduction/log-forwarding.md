@@ -13,13 +13,13 @@ role: Admin, Architect, Developer
 
 Customers with a license with a logging vendor or who host a logging product can have AEM logs (including Apache/Dispatcher) and CDN logs forwarded to the associated logging destination. AEM as a Cloud Service supports the following logging destinations:
 
-* Amazon S3 (private beta, see [^1])
+* Amazon S3 (private beta, see note below)
 * Azure Blob Storage
 * Datadog
 * Elasticsearch or OpenSearch
 * HTTPS
 * Splunk
-* Sumo Logic (private beta, see [^1])
+* Sumo Logic (private beta, see note below)
 
 Log forwarding is configured in a self-service manner by declaring a configuration in Git, and can be deployed via Cloud Manager config pipelines to dev, stage, and production environment types. The configuration file can be deployed to Rapid Development Environments (RDEs) using command line tooling.
 
@@ -27,7 +27,9 @@ There is an option for the AEM and Apache/Dispatcher logs to be routed through A
 
 Note that the network bandwidth associated with logs sent to the logging destination are considered part of your organization's Network I/O usage.
 
-[^1] Amazon S3 and Sumo Logic are in Private Beta and only support AEM logs (including Apache/Dispatcher).  New Relic over HTTPS is also in private beta. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to request access.  
+>[!NOTE]
+>
+>Amazon S3 and Sumo Logic are in Private Beta and only support AEM logs (including Apache/Dispatcher).  New Relic over HTTPS is also in private beta. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to request access.  
 
 ## How This Article is Organized {#how-organized}
 
@@ -187,7 +189,8 @@ Configurations for the supported logging destinations are listed below, along wi
 
 ### Amazon S3 {#amazons3}
 
->![NOTE]
+>[!NOTE]
+>
 >Logs written to S3 periodically, every 10 minutes for each log file type.  This may result in an initial delay for logs being written to S3 once the feature is toggled.  More information on why this behaviour exists can be found [here](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs).
 
   ```yaml
@@ -384,7 +387,7 @@ Considerations:
 
 Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to request access.
 
->![NOTE]
+>[!NOTE]
 >New Relic provide region specific endpoints based on where your New Relic account is provisioned.  See [here](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint) for New Relic documentation.
 
 #### HTTPS CDN logs {#https-cdn}
@@ -459,7 +462,7 @@ You will need to copy the last section of the URL (without the preceeding `/`) a
         index: "aem-logs"
   ```
 
->![NOTE]
+>[!NOTE]
 > You will require a Sumo Logic Enterprise subscription to take advantage of the "index" field functionality.  Non-Enterprise subscriptions will have their logs routed to the `sumologic_default` partition as standard.  See the [Sumo Logic Partitioning Documentation](https://help.sumologic.com/docs/search/optimize-search-partitions/) for more information.
 
 ## Log Entry Formats {#log-formats}
