@@ -1,5 +1,5 @@
 ---
-title: Properties that can be used with the Micro-Frontend Content Fragment Selector for Adobe Experience Manager as a Cloud Service
+title: Micro-Frontend Content Fragment Selector Properties for Adobe Experience Manager as a Cloud Service
 description: Properties to configure the Micro-Frontend Content Fragment Selector to search, find, and retrieve content fragments from your application.
 role: Admin, User
 ---
