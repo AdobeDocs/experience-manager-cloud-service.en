@@ -7,15 +7,17 @@ hide: yes
 hidefromtoc: yes
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 ---
-# Step-by-Step guide to creating standalone forms in Universal Editor
+# Creating Adaptive Forms using Universal Editor
 
 <span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
 
-This article guides you through the process of creating and authoring the standalone forms with the Universal Editor by selecting an Edge Delivery Services-based template from the Form Creation Wizard. You can also publish the authored forms with Universal Editor to AEM Edge Delivery Services.
+Universal Editor is a versatile visual editor that provides a what-you-see-is-what-you-get (WYSIWYG) experience for editing forms. It simplifies the creation of responsive and user-friendly forms with a drag-and-drop feature, using available Adaptive Forms components like text boxes, radio buttons, and checkboxes.
 
-AEM Forms provide a block, known as the Adaptive Forms Block, to help you easily create Edge Delivery Services Forms to capture and store data. You can [create a new AEM Project pre-configured with the Adaptive Forms Block](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) or [add the Adaptive Forms Block to an existing AEM Site Project](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project).
+AEM provides a block, known as the Adaptive Forms Block, to help you easily create Edge Delivery Services Forms to capture and store data uing Universal Editor. You can [create a new AEM Project pre-configured with the Adaptive Forms Block](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) or [add the Adaptive Forms Block to an existing AEM Site Project](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project).
 
-![Github Repository Workflow](/help/edge/assets/repo-workflow.png){width=50%}
+![Github Repository Workflow](/help/edge/assets/repo-workflow.png){width=50%, align=centre}
+
+This article guides you through the process of creating and authoring the standalone forms with the Universal Editor by selecting an Edge Delivery Services-based template from the Form Creation Wizard. 
 
 ## Pre-requisites
 
@@ -26,7 +28,7 @@ AEM Forms provide a block, known as the Adaptive Forms Block, to help you easily
 
 ## Working with forms in Universal Editor 
 
-With the Universal Editor, you can easily create responsive and interactive standalone forms using ready-made components like text fields, checkboxes, and radio buttons. It offers powerful features such as dynamic rules, smooth data integration, and customization options, allowing you to build forms according to your exact requirements. You can also publish the forms to AEM Edge Delivery Services. You can perform the following actions on forms in Universal Editor:
+With the Universal Editor, you can easily create responsive and interactive standalone forms. You can perform the following actions on forms in Universal Editor:
 * [Create a form](#create-a-form)
 * [Author a form](#author-a-form)
 * [Publish a form](#publish-a-form)
@@ -87,7 +89,7 @@ With the Universal Editor, you can easily create responsive and interactive stan
 
         ![contact us form](/help/edge/assets/contact-us.png)
 
-        Now you can [configure and customize Form Submit Actions](/help/edge/docs/forms/universal-editor/submit-action.md).
+        Now you can [configure and customize the submit actions for forms](/help/edge/docs/forms/universal-editor/submit-action.md).
 
 
 <!--
