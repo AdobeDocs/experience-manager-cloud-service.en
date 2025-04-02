@@ -384,7 +384,6 @@ user-guide-title: AEM as a Cloud Service
     + Fragments {#fragments}
       + [Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md)
       + [Experience Fragments](/help/sites-cloud/authoring/fragments/experience-fragments.md)
-      + [Headless Content Author Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
     + Projects {#projects}
       + [Working with Projects](/help/sites-cloud/authoring/projects/overview.md)
       + [Managing Projects](/help/sites-cloud/authoring/projects/managing.md)
@@ -1098,6 +1097,9 @@ user-guide-title: AEM as a Cloud Service
       + [Markdown editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
     + [Structure Tree](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
     + [JSON Preview](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html)
+  + Content Fragment Selector {#content-fragment-selector}
+    + [Micro-Frontend Content Fragment Selector - Overview](/help/headless/content-fragment-selector/overview.md)
+    + [Content Fragment Selector - Related Properties](/help/headless/content-fragment-selector/properties.md)
   + [AEM APIs for Structured Content Delivery and Management](/help/headless/apis-headless-and-content-fragments.md)
   + GraphQL API {#graphql-api}
     + [GraphQL API for Content Fragments](/help/headless/graphql-api/content-fragments.md)
