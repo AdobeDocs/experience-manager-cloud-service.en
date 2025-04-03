@@ -24,14 +24,6 @@ None.
 
 None.
 
-#### AEM Guides {#guides}
-
-* GUIDES-21734: New ids fail to generate for elements when such elements are added via snippets or created via templates, even when the auto generate ID option is enabled in `XMLEditorConfig`.
-* GUIDES-25969 : If the `scope=external` attribute is missing from external links in a DITA topic, HTML5 publishing fails without indicating the files where this attribute is missing in the error logs, especially when the microservice is enabled.
-* GUIDES-27288 : Unable to pass the metadata properties to map landing pages generated using new AEM Sites publishing.
-
-For more information about the new and enhanced features, and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
-
 ### Known Issues {#known-issues-X}
 
 None.
