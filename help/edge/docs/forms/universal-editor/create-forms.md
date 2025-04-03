@@ -15,7 +15,7 @@ Universal Editor is a versatile visual editor that provides a what-you-see-is-wh
 
 AEM provides a block, known as the Adaptive Forms Block, to help you easily create Edge Delivery Services Forms to capture and store data uing Universal Editor. You can [create a new AEM Project pre-configured with the Adaptive Forms Block](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) or [add the Adaptive Forms Block to an existing AEM Site Project](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project).
 
-![Github Repository Workflow](/help/edge/assets/repo-workflow.png){width=50%, align=centre}
+![Github Repository Workflow](/help/edge/assets/repo-workflow.png)
 
 This article guides you through the process of creating and authoring the standalone forms with the Universal Editor by selecting an Edge Delivery Services-based template from the Form Creation Wizard. 
 
