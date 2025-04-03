@@ -133,6 +133,12 @@ As a DAM user, you might not have permissions to [approve assets](approve-assets
 
 +++
 
++++**What is the supported file size for videos?**
+
+Dynamic Media with OpenAPI capabilities supports long form videos. The videos can support upto 50 GB and 2 hours.
+
++++
+
 +++**How Dynamic Media with OpenAPI capabilities is different from Dynamic Media solution?**
 
 Dynamic Media with OpenAPI capabilities and Dynamic Media represent distinct solutions, each offering its specialized delivery capabilities. It is imperative to thoroughly review your specific requirements to determine the most fitting solution that aligns with your needs.
