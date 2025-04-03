@@ -69,6 +69,8 @@ The following table illustrates the usage of the various available Delivery APIs
 | [Player container for the video asset](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoPlayerDelivery) |Returns the player container for the video asset. You can  embed the player in to an iframe HTML element and play the video.|
 | [Playback manifests in the selected output format](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoManifestDelivery) | Returns the playback manifest file for the specified video asset in the selected output format. You must build a custom player capable of adaptive streaming through HLS or DASH protocols to be able to pull the playback manifest file and play the video.|
 
+Dynamic Media with OpenAPI capabilities also supports long form videos. The videos can support upto 50 GB and 2 hours.
+
 For information on the available Dynamic Media offerings and their capabilities, see [Dynamic Media Prime and Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md).
 
 ## Delivery APIs endpoints {#delivery-apis-endpoint}
