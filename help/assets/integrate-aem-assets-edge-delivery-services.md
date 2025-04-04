@@ -1,7 +1,6 @@
 ---
 title: Integrate [!DNL AEM Assets] while authoring content for [!DNL Edge Delivery Services]
-description: Explore this article to learn -
-How to use [!DNL  AEM Assets] with [!DNL Edge Delivery Services].
+description: Explore this article to learn - How to use [!DNL  AEM Assets] with [!DNL Edge Delivery Services].
 How to use [!DNL AEM Assets] with [!DNL Universal Editor].
 How to use [!DNL Dynamic Media with OpenAPI capabilities] with [!DNL Edge Delivery Services].
 How to use [!DNL Dynamic Media with OpenAPI capabilities] in [!DNL Universal Editor].
