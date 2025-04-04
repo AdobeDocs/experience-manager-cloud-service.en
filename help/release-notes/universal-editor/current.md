@@ -19,6 +19,11 @@ These are the release notes for the 10 March 2025 release of the Universal Edito
 * **Moving Components:** [Moving components between containers](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) now observes the component filter of the target container.
   * There is no longer a requirement to have the same [filter definition](/help/implementing/universal-editor/filtering.md) in place for both target and destination containers in order to move the component between the containers.
 * **Locked Pages:** Universal Editor Service observes the [lock status of a page](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) and only writes to pages which are not locked or are locked by the user.
+
+## New Extensions for the Universal Editor {#extensions}
+
+A number of new extensions have been released on [Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/) for the Universal Editor, enhancing the authoring experience.
+
 * **MSM Extension**: You can now break and re-instantiate inheritance of components/blocks using this extension.
 * **Page Properties Extension**: Access the page properties window of the page directly from the Universal Editor using this extension.
 * **Workflow Extension**: Use workflows on pages and Content Fragments which are instrumented on the page using this extension.
