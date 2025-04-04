@@ -200,16 +200,9 @@ The following behaviors apply:
 * If PR validation or pipeline triggers are not working, verify that the Webhook Secret is up to date in both Cloud Manager and your Git vendor.
 
 
-
-
-
-
-
-
-## Limitations
+## Limitation
 
 * External repositories cannot be linked to Configuration pipelines.
-* Pipelines with external repositories (not hosted on GitHub) and the "On Git Changes" trigger do not start automatically. They can only be initiated manually.
 
 
 <!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
