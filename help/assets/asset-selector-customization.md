@@ -51,6 +51,7 @@ Asset Selector allows you to customize various components according to preferenc
 * [Selection of Assets](#selection-of-assets)
 * [Customize expired assets](#customize-expired-assets)
 * [Contextual invocation filter](#contextual-invocation-filter)
+* [dragOptions property](#drag-options-property)
 
 You need to define the prerequisites in the **index.html** file or a similar file within your application implementation to define the authentication details to access the [!DNL Experience Manager Assets] repository. Once done, you can add code snippets as per your requirement.
 
@@ -635,6 +636,18 @@ const ControlledUploadExample = () => {
         </Flex>
     )
 }
+```
+
+### dragOptions Property {#drag-options-property}
+
+```
+dragOptions: {
+            allowList: {
+                '*': true,          // allow all types to be dragged
+                'folder': false,    // except those explicitly set to disallow
+                'image/jpeg': false // or those with specific mimeTypes
+            },
+         }
 ```
 
 >[!MORELIKETHIS]
