@@ -1,9 +1,9 @@
 ---
 title: Integrate [!DNL AEM Assets] while authoring content for [!DNL Edge Delivery Services]
-description: Learn how to integrate the [!DNL AEM Assets] with [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] with [!DNL Microsoft Word] and [!DNL Google Docs], integrate [!DNL AEM Assets] with [!DNL Universal Editor], integrate [!DNL Dynamic Media with OpenAPI capabilities] with [!DNL Universal Editor] and integrate [!DNL Dynamic Media with OpenAPI capabilities] with [!DNL Microsoft Word] and [!DNL Google Docs].
+description: Learn how to integrate the [!DNL AEM Assets] with [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] with [!DNL Microsoft Word] and [!DNL Google Docs], integrate [!DNL AEM Assets] with [!DNL Universal Editor], integrate [!DNL Dynamic Media] with [!DNL Edge Delivery Services], integrate [!DNL Dynamic Media with OpenAPI capabilities] with [!DNL Universal Editor] and integrate [!DNL Dynamic Media with OpenAPI capabilities] with [!DNL Microsoft Word] and [!DNL Google Docs].
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
 ---
-# Integrate [!DNL AEM Assets] while authoring content for [!DNL Edge Delivery Services] {#integrate-aem-assets-while-authoring-for-edge-delivery-services}
+# Integrate [!DNL AEM Assets] while authoring content for [!DNL Edge Delivery Services] {#integrate-aem-assets-with-edge-delivery-services}
 
 <table>
     <tr>
@@ -45,12 +45,12 @@ exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
 
 You can edit content in:
 
-* [[!DNL Microsoft Word] or [!DNL Google Docs]](#integrate-aem-assets-with-document-based-authoring-tools)
-* [[!DNL Universal Editor]](#integrate-aem-assets-with-UE-universal-editor)
+* [[!DNL Microsoft Word] or [!DNL Google Docs]](#integrate-dynamic-media-with-edge-delivery-services)
+* [[!DNL Universal Editor]](#integrate-aem-assets-with-universal-editor-UE)
 
 After editing the content, you can publish it to Edge Delivery Services.
 
-## Integrating [!DNL AEM Assets] with Document-Based Authoring flows for [!DNL Edge Delivery Services] {#integrate-aem-assets-with-document-based-authoring-tools}
+## Integrating [!DNL AEM Assets] with Document-Based Authoring flows for [!DNL Edge Delivery Services] {#integrate-dynamic-media-with-edge-delivery-services}
 
 When [!DNL AEM Assets] integrates with your Document-Based Authoring tools, such as [!DNL Microsoft Word] or [!DNL Google Docs], it provides an asset selector in your authoring tool. Use this asset selector to access [!DNL AEM Assets], and insert approved assets into your content.
 If you already have an [!DNL Edge Delivery Services] website, see [[!DNL AEM Assets] plugin](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) documentation to learn how to integrate [!DNL AEM Assets] with your existing [!DNL AEM] project. 
@@ -82,7 +82,7 @@ You can also use assets delivered using [!DNL Dynamic Media with OpenAPI capabil
 
 For more details on the capabilities, see [[!DNL Dynamic Media with OpenAPI capabilities]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview) documentation.
 
-### Prerequisites {#prerequisites-for-dm-with-openapi-capabilities-to-use-aem-assets}  
+### Prerequisites {#dynamic-media-with-universal-editor-and-edge-delivery-services}
 
 To use asset reference, you must have:
 
@@ -91,7 +91,7 @@ To use asset reference, you must have:
 * The [!DNL AEM Assets sidekick plugin] enabled with copy reference for image assets enabled. For more details, see [this documentation](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin#copymode) for Document-Based Authoring and see [this documentation](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) for Universal Editor based authoring.
 * Assets that are approved. Approved assets have `dam:status=Approved` via the Assets Cloud Services backend or UI actions.
 
-### Use assets delivered using [!DNL Dynamic Media with OpenAPI capabilities]{#how-to-use-Dynamic-Media-with-OpenAPI-assets}
+### Use assets delivered using [!DNL Dynamic Media with OpenAPI capabilities]{#Using-Dynamic-Media-with-edge-delivery-services}
 
 Select the following links to learn how to use [!DNL Dynamic Media with OpenAPI capabilities] to deliver images, videos and other asset types in your content:
 
@@ -103,11 +103,11 @@ See this video to learn how to deliver assets in your content using Dynamic Medi
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441155)
 
-## Sample [!DNL Edge Delivery Services] site{#example-of-an-Edge-Delivery-Services-site} 
+## Sample [!DNL Edge Delivery Services] site{#dynamic-media-with-google-docs-and-ms-word} 
 
 See [WKND Travel](http://bit.ly/3DExLnf), a site that is built using the Document-Based Authoring capabilities of [!DNL Edge Delivery Services]. The site's content is authored in [Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT) and [!DNL Dynamic Media with OpenAPI capabilities] is used to deliver assets in the content. After authoring, the content is published from the document directly. Explore this [Git repository](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks) to know about all the essential files, folders, configurations, website's styling and functionality codes that are used to create the Document-Based Authoring setup for this [!DNL Edge Delivery Services (EDS)] site.
 
-## Integrating [!DNL AEM Assets] with [!DNL Universal Editor] based authoring flows for [!DNL Edge Delivery Services] {#integrate-aem-assets-with-UE-universal-editor}
+## Integrating [!DNL AEM Assets] with [!DNL Universal Editor] based authoring flows for [!DNL Edge Delivery Services] {#integrate-aem-assets-with-universal-editor-UE}
 
 Set up the [!DNL Universal Editor] to integrate with [!DNL AEM Assets]. This integration enables you to use [!DNL Dynamic Media with OpenAPI capabilities] to deliver assets.
 
