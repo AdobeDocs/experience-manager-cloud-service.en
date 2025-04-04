@@ -13,7 +13,7 @@ exl-id: 4aeafba9-8f9e-4ecb-9e37-8d048b0474cc
 
 Newer AEM as a Cloud Service APIs follow the OpenAPI specification, and thus produce consistent, well-documented, and user-friendly APIs. In-depth information is available in the following pages:
 
-* An [end-to-end tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) about how to configure and invoke OpenAPI-based AEM APIs.
+* An [end-to-end tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) about how to configure and invoke OpenAPI-based AEM APIs using server-to-server authentication.
 * Informational [Guides](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/), including [API concepts and syntax](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/).
 * API-endpoint [reference documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/), where some of the APIs are OpenAPI-based, such as [this Sites API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/). Reference documentation also includes an API playground, which makes it simple to try out an endpoint using a bearer token generated with the Adobe Developer Console.
 
@@ -28,12 +28,14 @@ Supported API authentication types differ based on the endpoint, but may be OAut
 
 ## Configuring API Access {#configuring-api-access}
 
-Many OpenAPI-based AEM APIs require authentication, which requires credentials to be generated using [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/). Configuration involves the following steps, which are illustrated in the tutorial:
+Many OpenAPI-based AEM APIs require authentication, which requires credentials to be generated using [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/). Configuration involves the following steps:
 
 1. Ensure your AEM program's [product profiles are updated](/help/onboarding/aem-cs-team-product-profiles.md#aem-product-profiles) and have an appropriate service enabled to access the desired API.
 1. Create a new project in Adobe Developer Console and add the desired API(s) to the project, also selecting the appropriate authentication type.
-1. Generate the credential, which will later be used to exchange fora bearer token when invoking the API.
+1. Generate the credential, which will later be used to exchange for a bearer token when invoking the API.
 1. Register the client ID with the environment by configuring a YAML file, which is deployed using the Config Pipeline (or commandline for RDEs). 
+
+See the [Set up OpenAPI-based APIs tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/setup) for step-by-step instructions. 
 
 ## Registering a Client ID {#registering-a-client-id}
 

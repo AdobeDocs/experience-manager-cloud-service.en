@@ -126,19 +126,21 @@ These Content Fragment Models:
 
 ### Fragment References {#fragment-references}
 
-The **Fragment Reference**:
+**Fragment Reference** and **Fragment Reference UUID**:
 
-* Is a specific data type available when defining a Content Fragment Model.
+* Are specific data types available when defining a Content Fragment Model.
 * References another fragment, dependent on a specific Content Fragment Model.
 * Lets you create, and then retrieve, structured data.
 
   * When defined as a **multifeed**, multiple sub-fragments can be referenced (retrieved) by the prime fragment.
 
+<!--
 ### JSON Preview {#json-preview}
 
 To help with designing and developing your Content Fragment Models, you can preview JSON output in the Content Fragment Editor.
 
 ![JSON Preview](assets/cfm-model-json-preview.png "JSON Preview")
+-->
 
 <!--
 ## GraphQL Schema Generation from Content Fragments {#graphql-schema-generation-content-fragments}

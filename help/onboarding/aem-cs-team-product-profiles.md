@@ -34,7 +34,7 @@ AEM as a Cloud Service is a fully cloud-native offering that delivers AEM as a s
 
 >[!NOTE]
 >
-> Some of the Product Instances and Product Profiles described in this article may only appear for newly created environments. A future mechanism will allow existing environments to be updated as well.
+> Some of the Product Instances and Product Profiles described in this article may only appear for newly created environments. See the [Adding Product Profiles for Existing Environments section](#adding-product-profiles-for-existing-environments) for how to modernize your environments.
 
 When Adobe processes the licensing of an AEM solution for the first time, two Product Instances will appear in Adobe Admin Console, under the Adobe Experience Manager as a Cloud Service Product:
 
@@ -272,7 +272,7 @@ The following image represents the AEM groups reflecting the AEM Sites Content M
 
 ### Adding Product Profiles for Existing Environments {#adding-product-profiles-for-existing-environments}
 
-Environments created before early November 2024 may be missing the Org-Level product instance described in sections above, as well as certain product profiles. Existing product profiles will also be missing the service toggles. It is recommended to update those product profiles, which is a prerequisite for accessing some future APIs. 
+Environments created before early April 2024 may be missing the Org-Level product instance described in sections above, as well as certain product profiles. Existing product profiles will also be missing the service toggles. It is recommended to update those product profiles, which is a prerequisite for accessing some future APIs. 
 
 If one or more environments in a program needs its product profiles updated, Cloud Manager will show the notice below. Note that an environment must be on the latest AEM version before its product profiles can be updated.
 
