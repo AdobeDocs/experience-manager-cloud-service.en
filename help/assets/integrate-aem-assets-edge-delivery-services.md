@@ -13,6 +13,7 @@ How to use [!DNL Dynamic Media with OpenAPI capabilities] in [!DNL Microsoft wor
 How to use [!DNL Dynamic Media] for asset delivery in document based authoring tools and [!DNL Universal Editor].
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
 ---
+
 # Integrate [!DNL AEM Assets] while authoring content for [!DNL Edge Delivery Services] {#integrate-aem-assets-with-edge-delivery-services}
 
 <table>
