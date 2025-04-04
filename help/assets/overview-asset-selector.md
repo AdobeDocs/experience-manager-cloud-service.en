@@ -75,7 +75,11 @@ Asset Selector provides many benefits, such as:
 
 You must ensure the following communication methods:
 
-* The application is running on HTTPS.
+* The host application is running on HTTPS.
+* You cannot run the application on `localhost`. If you want to integrate the Asset Selector on your local machine, you need to create a custom domain for example `[https://<your_campany>.localhost.com:<port_number>]` and add this custom domain in the `redirectUrl list`.
+* You can configure and add `ADOBE_PROVIDED_CLIENT_ID` into the AEM Cloud Service environment variable with the respective `imsClientId`.
+    ![Asset Selector IMS Client id environment](assets/asset-selector-ims-client-id-env.png)
+* The list of IMS scopes needs to be defined in the environment configuration. 
 * The URL of the application is in the IMS client's allowed list of redirect URLs.
 * The IMS login flow is configured and rendered using a popup on the web browser. Therefore, popups should be enabled or allowed on the target browser.
 
@@ -85,7 +89,7 @@ Use the above prerequisites if you require the IMS authentication workflow of As
 
 * [Integrate Asset Selector with an Adobe app](/help/assets/integrate-asset-selector-adobe-app.md)
 * [Integrate Asset Selector with a non-Adobe app](/help/assets/integrate-asset-selector-non-adobe-app.md)
-* [Integrate Asset Selector dynamic media open APIs](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+* [Integrate Asset Selector Dynamic Media Open APIs](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 
 >[!IMPORTANT]
@@ -194,9 +198,6 @@ Asset Selector lets you view the asset in four different views:
 * ![grid view](assets/do-not-localize/grid-view.png) [!UICONTROL **Grid View**] The grid view displays scrollable files and folders in a grid of rows and columns.
 * ![gallery view](assets/do-not-localize/gallery-view.png) [!UICONTROL **Gallery View**] The gallery view displays files or folders in a center-locked horizontal list.
 * ![waterfall view](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Waterfall** View] The waterfall view displays files or folders in the form of a Bridge.
-
-**Overview Graphic**
-
 
 ## Learn more on key capabilities {#key-capabilities-asset-selector}
 
