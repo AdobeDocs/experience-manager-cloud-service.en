@@ -129,7 +129,7 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
   ![Option to upload a new version of an asset from the version history](assets/view-asset-versions2.png)
 
-### View and compare versions of an asset {#view-versions}
+### View and compare versions of an asset {#view-and-compare-versions}
 
 Upload a duplicate copy or a modified copy of an asset, to create its versions. Versioning lets you review historical assets and revert to a previous version if needed.
 
