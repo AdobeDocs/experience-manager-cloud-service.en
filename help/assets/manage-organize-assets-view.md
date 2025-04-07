@@ -129,17 +129,30 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
   ![Option to upload a new version of an asset from the version history](assets/view-asset-versions2.png)
 
-### View versions of an asset {#view-versions}
+### View and compare versions of an asset {#view-versions}
 
-When uploading a duplicate copy or a modified copy of an asset, you can create its versions. Versioning lets you review historical assets and revert to a previous version if needed.
+Upload a duplicate copy or a modified copy of an asset, to create its versions. Versioning lets you review historical assets and revert to a previous version if needed.
 
-To view versions, open an asset's preview and click **[!UICONTROL Versions]** ![Versions icon](assets/do-not-localize/versions-clock-icon.png) from the right sidebar. To preview a specific version, select it. To revert to it, click **[!UICONTROL Make Latest]**.
+To see an asset version, navigate to the asset's details page and click ![Versions](/help/assets/assets/Clock.svg) available in the right pane to display the thumbnail of original asset and its uploaded versions in the **[!UICONTROL Versions]** panel. Select a version to preview it.
 
+Select a version except the latest and click **[!UICONTROL Make Latest]** to revert to its previous version.
+
+To compare a version with the original asset, select it from the panel and use the slider on the preview to compare the original asset with its selected version.
+![compare versions of asset](/help/assets/assets/version-compare2.png) 
+
+<!-- old content
+To view versions, open an asset's preview and click **[!UICONTROL Versions]** ![Versions icon](assets/do-not-localize/versions-clock-icon.png) from the right sidebar. To preview a specific version, select it. To revert to it, click **[!UICONTROL Make Latest]**. 
+-->
+
+Select the latest version, click **[!UICONTROL New Version]**, upload a new copy of the asset from your local file system to create an asset version from the versions timeline. 
+
+<!-- old content
 You can also create versions from the versions timeline. Select the latest version, click **[!UICONTROL New Version]**, and upload a new copy of the asset from your local file system.
 
 ![View versions of an asset](assets/view-asset-versions1.png)
 
-*Figure: View versions of an asset, revert to a previous version, or upload another new version.*
+*Figure: View versions of an asset, revert to a previous version, or upload another new version.* 
+-->
 
 ## Manage asset status {#manage-asset-status}
 
