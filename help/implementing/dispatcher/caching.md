@@ -14,9 +14,11 @@ This page also describes how the Dispatcher cache is invalidated and how caching
 
 ## Caching {#caching}
 
-Caching of HTTP responses in AEM as a Cloud Service’s CDN is controlled by the following HTTP response headers from the origin `Cache-Control`, `Surrogate-Control`, or `Expires`. These cache headers are typically set in AEM Dispatcher vhost configurations using mod_headers, but can also be set in custom Java™ code running in AEM Publish itself (see [How to enable CDN caching](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/enable-caching)).
+Caching of HTTP responses in AEM as a Cloud Service’s CDN is controlled by the following HTTP response headers from the origin: `Cache-Control`, `Surrogate-Control`, or `Expires`. 
 
-The cache key for CDN resources contain the full request url, including query parameters, so every different query parameter will produce a different cache entry. Consider removing unwanted query paramters [see below](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching#marketing-parameters) for improving cache hit ratio.
+These cache headers are typically set in AEM Dispatcher vhost configurations using mod_headers, but can also be set in custom Java™ code running in AEM Publish itself (see [How to enable CDN caching](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/enable-caching)).
+
+The cache key for CDN resources contains the full request url, including query parameters, so every different query parameter will produce a different cache entry. Consider removing unwanted query parameters; [see below](#marketing-parameters) for improving cache hit ratio.
 
 Origin responses that contain `private`, `no-cache` or `no-store` in  `Cache-Control` are not cached by the AEM as a Cloud Service’s CDN (see [How to disable CDN caching
 ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching) for more details).  Also, responses that are setting cookies, i.e. have a `Set-Cookie` response header are not cached by the CDN.
