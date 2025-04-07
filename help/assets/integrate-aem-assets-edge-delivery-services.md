@@ -1,24 +1,7 @@
 ---
 title: Integrate [!DNL AEM Assets] while authoring content for [!DNL Edge Delivery Services]
 description: Learn how to integrate the [!DNL AEM Assets] with [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] with [!DNL Microsoft Word] and [!DNL Google Docs], integrate [!DNL AEM Assets] with [!DNL Universal Editor], integrate [!DNL Dynamic Media] with [!DNL Edge Delivery Services], integrate [!DNL Dynamic Media with OpenAPI capabilities] with [!DNL Universal Editor] and integrate [!DNL Dynamic Media with OpenAPI capabilities] with [!DNL Microsoft Word] and [!DNL Google Docs].
-tags:
- - "AEM Assets"
- - "Edge Delivery Services"
- - "Dynamic Media"
- - "Dynamic Media with OpenAPI capabilities"
- - "Universal Editor"
- - "Edge Delivery Services with Universal Editor"
-features:
-  - "How to use [!DNL  AEM Assets] with [!DNL Edge Delivery Services]"
-  - "How to use [!DNL AEM Assets] with [!DNL Universal Editor]"
-  - "How to use [!DNL Dynamic Media with OpenAPI capabilities] with [!DNL Edge Delivery Services]"
-  - "How to use [!DNL Dynamic Media with OpenAPI capabilities] in [!DNL Universal Editor]"
-  - "How to integrate [!DNL Universal Editor] with [!DNL Edge Delivery Services] and [!DNL AEM Assets]"
-  - "How to use [!DNL Dynamic Media with OpenAPI capabilities] in document based authoring tools"
-  - "How to use [!DNL AEM Assets] in [!DNL Microsoft word] and [!DNL Google docs]"
-  - "How to use [!DNL Universal Editor] with [!DNL Edge Delivery Services]"
-  - "How to use [!DNL Dynamic Media with OpenAPI capabilities] in [!DNL Microsoft word] and [!DNL Google docs]"
-  - "How to use [!DNL Dynamic Media] for asset delivery in document based authoring tools and [!DNL Universal Editor]"
+tags: AEM Assets, Edge Delivery Services, Dynamic Media, Dynamic Media with OpenAPI capabilities, Universal Editor, Edge Delivery Services with Universal Editor
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
 ---
 
