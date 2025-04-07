@@ -10,6 +10,10 @@ role: Admin, Architect, Developer
 
 Learn how you can run your own Universal Editor Service either for local development or as part of your own infrastructure.
 
+>[!NOTE]
+>
+>Local Universal Editor Services are not required or supported for projects using AEM authoring with Edge Delivery Services.
+
 ## Overview {#overview}
 
 The Universal Editor Service is what binds the Universal Editor and the backend system. To be able to develop locally for the Universal Editor, you must run a local copy of the Universal Editor Service. This is because:
