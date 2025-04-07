@@ -135,7 +135,7 @@ Upload a duplicate copy or a modified copy of an asset, to create its versions. 
 
 To see an asset version, navigate to the asset's details page and click ![Versions](/help/assets/assets/Clock.svg) available in the right pane to display the thumbnail of original asset and its uploaded versions in the **[!UICONTROL Versions]** panel. Select a version to preview it.
 
-Select a version except the latest and click **[!UICONTROL Make Latest]** to revert to its previous version.
+Select a version except the latest version and click **[!UICONTROL Make Latest]** to revert to its previous version.
 
 To compare a version with the original asset, select it from the panel and use the slider on the preview to compare the original asset with its selected version.
 ![compare versions of asset](/help/assets/assets/version-compare2.png) 
@@ -144,7 +144,7 @@ To compare a version with the original asset, select it from the panel and use t
 To view versions, open an asset's preview and click **[!UICONTROL Versions]** ![Versions icon](assets/do-not-localize/versions-clock-icon.png) from the right sidebar. To preview a specific version, select it. To revert to it, click **[!UICONTROL Make Latest]**. 
 -->
 
-Select the latest version, click **[!UICONTROL New Version]**, upload a new copy of the asset from your local file system to create an asset version from the versions timeline. 
+Select the latest version, click **[!UICONTROL New Version]** and upload a new copy of the asset from your local file system to create an asset version from the versions timeline. 
 
 <!-- old content
 You can also create versions from the versions timeline. Select the latest version, click **[!UICONTROL New Version]**, and upload a new copy of the asset from your local file system.
