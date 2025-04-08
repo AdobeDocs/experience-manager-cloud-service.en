@@ -1,6 +1,6 @@
 ---
-title: Related assets
-description: Learn how to relate digital assets that share some common attributes. Also create source-derived relationships between digital assets.
+title: Asset relations
+description: Learn how to relate digital assets that share some common attributes. Also create source-derived relationships between digital assets using asset relations.
 role: User
 feature: Collaboration,Asset Management
 solution: Experience Manager, Experience Manager Assets
