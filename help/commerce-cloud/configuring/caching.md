@@ -2,6 +2,8 @@
 title: Caching & Performance
 description: Learn about the different configurations available to enable GraphQL and content caching to optimize the performance of your commerce implementation.
 exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6
+feature: Commerce Integration Framework
+role: Admin
 ---
 # Caching & Performance {#caching}
 

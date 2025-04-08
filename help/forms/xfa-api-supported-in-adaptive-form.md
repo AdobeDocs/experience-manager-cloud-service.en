@@ -4,9 +4,12 @@ description: Lists supported XFA events, properties, scripts, and validation in 
 uuid: 75d3c292-cfed-438f-afdb-4071d95a08b7
 topic-tags: develop
 discoiquuid: 05303b29-9058-4723-b134-4ba605fe40c7
-
+feature: Adaptive Forms
+role: User
+hide: yes
+hidefromtoc: yes
+exl-id: 59ae0eed-d832-4f46-9f99-7bcca9f82306
 ---
-
 # XFA support in XDP-based Adaptive Forms{#xfa-support-in-xdp-based-adaptive-forms}
 
 ## Introduction {#introduction}
@@ -258,4 +261,3 @@ The following table captures how XFA validations map to validations in Adaptive 
 >[!NOTE]
 >
 >You cannot override mandatory property for Adaptive Form radio button and check box group that are bound to XFA check buttons.
-

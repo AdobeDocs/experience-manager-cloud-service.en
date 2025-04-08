@@ -5,6 +5,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 feature: Adaptive Forms, Foundation Components
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
+role: User, Developer
 ---
 # Creating accessible Adaptive Forms{#creating-accessible-adaptive-forms}
 

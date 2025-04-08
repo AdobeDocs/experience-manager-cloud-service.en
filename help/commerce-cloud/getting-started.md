@@ -3,11 +3,12 @@ title: Getting started with AEM Commerce as a Cloud Service
 description: Learn how to deploy an Adobe Experience Manager (AEM) commerce project, using Adobe Cloud Manager, a CI/CD pipeline, and the Venia reference storefront.
 topics: Commerce
 feature: Commerce Integration Framework, Cloud Manager
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
+role: Admin
 ---
 # Getting started with AEM Commerce as a Cloud Service {#start}
 

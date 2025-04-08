@@ -8,7 +8,9 @@ exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
 ---
 # About configuring Dynamic Media Cloud Service {#configuring-dynamic-media}
 
-If you use Adobe Experience Manager for different environments, such as development, staging, and live production, configure Dynamic Media Cloud Services for each of those environments.
+{{work-with-dynamic-media}}
+
+If you use Adobe Experience Manager as a Cloud Service for different environments, such as development, staging, and live production, configure Dynamic Media Cloud Services for each of those environments.
 
 See also [Configure a Dynamic Media company alias account](/help/assets/dynamic-media/dm-alias-account.md)
 
@@ -192,13 +194,15 @@ To further customize the configuration and setup of Dynamic Media, or optimize i
 
 -->
 
+<!-- Removed as per CQDOC-20701 - May need to revisit and update. In Adobe Experience Manager (AEM) as a Cloud Service, enabling Access Control List (ACL) permissions for Dynamic Media requires a different approach compared to on-premise versions (which was described below), as direct editing of OSGi configurations via the UI is not supported. Not sure how this is done now. For example, you can manage ACLs using tools like the Netcentric Access Control Tool (AC Tool), which simplifies the specification and deployment of complex ACLs in AEM but I doubt that's the recommended method.
+
 ### (Optional) Enable Access Control List permissions in Dynamic Media {#optional-enable-acl}
 
-When you run Dynamic Media on AEM, it currently forwards `/is/image` requests to Secure Preview Image Serving without checking ACL (Access Control List) permissions on the PlatformServerServlet. You can, however, _enable_ ACL permissions. Doing so forwards the authorized `/is/image` requests. If a user is not authorized to access the asset, a "403 - Forbidden" error is displayed.
+When you run Dynamic Media on AEM as a Cloud Service, it currently forwards `/is/image` requests to Secure Preview Image Serving without checking ACL (Access Control List) permissions on the PlatformServerServlet. You can, however, _enable_ ACL permissions. Doing so forwards the authorized `/is/image` requests. If a user is not authorized to access the asset, a "403 - Forbidden" error is displayed.
 
-**To enable ACL permissions in Dynamic Media:**
+**To enable Access Control List permissions in Dynamic Media on AEM as a Cloud Service:**
 
-1. From Experience Manager, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. From Adobe Experience Manager, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
@@ -218,6 +222,7 @@ When you run Dynamic Media on AEM, it currently forwards `/is/image` requests to
    ![Enable Access Control List settings in Dynamic Media - Scene7 mode](/help/assets/dynamic-media/assets/acl.png)
 
 1. Near the lower-right corner of the page, select **[!UICONTROL Save]**.
+-->
 
 ### (Optional) Setup and configuration of Dynamic Media settings {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings}
 

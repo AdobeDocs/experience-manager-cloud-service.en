@@ -2,6 +2,8 @@
 title: How to integrate DocuSign with an Adaptive Form?
 description: Learn how to use DocuSign with an adaptive form to collect e-signatures.
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
+feature: Adaptive Forms, Acrobat Sign
+role: User, Developer
 ---
 # Using DocuSign with an adaptive form {#integrate-aem-forms-with-DocuSign}
 
@@ -177,7 +179,7 @@ To create a sign-enabled Adaptive Form:
 
    - If you do not have a custom form template, select the **[!UICONTROL Generate Document of Record]** option. When you use the option, the document sent for signing displays all the fields of the Adaptive Form.
 
-1. Select **[!UICONTROL Create.]** A sign-enabled Adaptive Form is created. You can add your [!DNL DocuSign] fields to the form and send it for signing.
+1. Select **[!UICONTROL Create]**. A sign-enabled Adaptive Form is created. You can add your [!DNL DocuSign] fields to the form and send it for signing.
 1. Open the adaptive form in edit mode. In the **[!UICONTROL Content]** tab, select the **[!UICONTROL Form Container]** and select ![Configure](assets/configure-icon.svg).
 
 1. In the **[!UICONTROL Submission]** section, select **[!UICONTROL Submit with DocuSign electronic signatures]** from the **[!UICONTROL Submit Action]** drop-down list.

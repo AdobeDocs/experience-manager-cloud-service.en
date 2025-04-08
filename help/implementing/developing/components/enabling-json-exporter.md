@@ -2,6 +2,8 @@
 title: Enabling JSON Export for a Component
 description: Components can be adapted to generate JSON export of their content based on a modeler framework.
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Enabling JSON Export for a Component {#enabling-json-export-for-a-component}
 
@@ -71,6 +73,6 @@ For an example, see the Sling Model implementation of the Image Core Component a
 ## Related Documentation {#related-documentation}
 
 * [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md)
-* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [Authoring with Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md)
 * [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) and the [Content Fragment component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)

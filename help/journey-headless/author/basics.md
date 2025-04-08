@@ -2,6 +2,9 @@
 title: Learn Authoring Basics
 description: Learn about the concepts and mechanics of authoring content for your Headless CMS using Content Fragments.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
+solution: Experience Manager
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Architect, Developer
 ---
 # Authoring Basics for Headless with AEM {#author-headless-basics}
 
@@ -299,13 +302,13 @@ Now that you have learned the basics, the next step is to [Learn how about Refer
 
       * [Publishing and Previewing a Content Fragment](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment)
 
-  * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+  * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 
     * [Content Fragment Models - Data Types](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
   
     * [Content Fragment Models - Properties](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)
 
-    *  [Content Fragment Models - Allowing Content Fragment Models on your Assets Folder](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)
+    * [Content Fragment Models - Allowing Content Fragment Models on your Assets Folder](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder)
 
 * [Content Fragments - original editor, from the Assets Console](/help/assets/content-fragments/content-fragments-variations.md)
 

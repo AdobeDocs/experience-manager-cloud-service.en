@@ -1,7 +1,7 @@
 ---
 title: Effortless Bulk PDF Creation - Master the Art with Batch Processing – Your Self-Help Guide to Generating Millions of PDF Documents!
 description: How to create brand-oriented and personalized communications?
-feature: Adaptive Forms, APIs
+feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
 ---
@@ -72,9 +72,10 @@ Before using a batch operation:
 * Create Batch Data Store configuration
 * Upload templates and other assets to your Experience Manager Forms Cloud Service instance
 
-### Upload customer data (XML files) to Azure Storage {#upload-customer-data-to-Azure-Storage}
+### Upload customer data (XML files) to Azure Storage
 
 On your Microsoft Azure Storage, create [containers](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs) and [upload customer data (XML)](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs#managing-blobs-in-a-blob-container) to the [folders](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal) inside the containers.  
+
 >[!NOTE]
 >
 >You can configure Microsoft Azure storage to automatically clean input folder or move content of output folder to a different location at scheduled intervals. However, ensure that folders are not cleaned when a batch operation referencing the folders is still running.

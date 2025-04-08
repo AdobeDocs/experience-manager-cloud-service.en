@@ -2,6 +2,9 @@
 title: Promoting Launches
 description: You need to promote launch pages to move the content back into the source (production) before publishing.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
+solution: Experience Manager Sites
+feature: Authoring, Launches
+role: User
 ---
 # Promoting Launches {#promoting-launches}
 
@@ -65,7 +68,9 @@ You can promote launches from either the **Sites** console or the **Launches** c
       >[!NOTE]
       >
       >This covers a single launch, if you have nested launches see [Promoting a Nested Launch](#promoting-a-nested-launch).
+
 1. Select **Next** to proceed.
+
 1. You can review the pages to be promoted; these will depend on the range of pages you have chosen:
 
    ![Review promotion](/help/sites-cloud/authoring/assets/launches-promote-review.png)

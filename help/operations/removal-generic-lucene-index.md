@@ -2,6 +2,8 @@
 title: Generic Lucene Index Removal
 description: Learn about the planned removal of generic Lucene indexes and how you may be affected.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
+feature: Operations
+role: Admin
 ---
 # Generic Lucene Index Removal {#generic-lucene-index-removal}
 

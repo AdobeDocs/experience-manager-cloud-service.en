@@ -2,11 +2,14 @@
 title: Organizing Pages
 description: Learn how to organize your website with AEM.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 
 # Organizing Pages {#creating-and-organizing-pages}
 
-Learn how to organize your website with AEM. Once you understand how you need to organize your pages, you can [create new pages](/help/sites-cloud/authoring/sites-console/creating-pages.md) and [manage exiting pages.](/help/sites-cloud/authoring/sites-console/managing-pages.md)
+Learn how to organize your website with AEM. Once you understand how you need to organize your pages, you can [create new pages](/help/sites-cloud/authoring/sites-console/creating-pages.md) and [manage exiting pages](/help/sites-cloud/authoring/sites-console/managing-pages.md).
 
 {{edge-delivery-authoring}}
 
@@ -42,7 +45,7 @@ The following shows an example from the [WKND Tutorial](https://experienceleague
    /...
 ```
 
-This structure can be viewed From the [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) where you can navigate through the pages of your website and perform actions on the pages.
+This structure can be viewed From the [**Sites** console](/help/sites-cloud/authoring/sites-console/introduction.md), where you can navigate through the pages of your website and perform actions on the pages.
 
 ## Page Naming Conventions {#page-naming-conventions}
 
@@ -109,7 +112,7 @@ When you supply a page **Name** when creating a page, AEM [validates the name ac
 
 ## Templates {#templates}
 
-In AEM, a [template](/help/sites-cloud/authoring/sites-console/templates.md) is a specialized type of page used as the basis for any new page being created.
+In AEM, a [template](/help/sites-cloud/authoring/page-editor/templates.md) is a specialized type of page used as the basis for any new page being created.
 
 The template defines the structure of a page including a thumbnail image and other properties. For example, you may have separate templates for product pages, sitemaps, and contact information. Templates are comprised of [components](#components).
 
@@ -121,7 +124,7 @@ AEM comes with several templates provided out-of-the-box. The templates availabl
 
 ## Components {#components}
 
-[Components](/help/implementing/developing/components/overview.md) are the elements provided by AEM so that you can add specific types of content. AEM comes with a range of out-of-the-box components, called [the Core Components,](/help/implementing/developing/components/overview.md#core-components) that provide comprehensive functionality. Some examples of the components are:
+[Components](/help/implementing/developing/components/overview.md) are the elements provided by AEM so that you can add specific types of content. AEM comes with a range of out-of-the-box components, called [the Core Components](/help/implementing/developing/components/overview.md#core-components), that provide comprehensive functionality. Some examples of the components are:
 
 * Text
 * Image

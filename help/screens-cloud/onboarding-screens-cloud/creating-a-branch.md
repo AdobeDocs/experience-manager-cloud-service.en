@@ -2,6 +2,8 @@
 title: Creating a Branch
 description: This page describes creating a branch in Cloud Manager for Screens as a Cloud Service.
 exl-id: bcfdcb45-8547-4160-ba47-4f47916ca48a
+feature: Screens Deployments
+role: Admin, Developer, User
 ---
 # Creating a Branch in Cloud Manager {#create-branch-screens-cloud}
 

@@ -2,6 +2,8 @@
 title: Extending ContextHub
 description: Define new types of ContextHub stores and modules when the ones provided do not meet your solution requirements
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
+feature: Developing, Personalization
+role: Admin, Architect, Developer
 ---
 # Extending ContextHub {#extending-contexthub}
 
@@ -52,7 +54,7 @@ ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
                                 'contexthub.mystorecandidate', 0);
 ```
 
-In most cases only one candidate is necessary and the priority can be set to `0`, but if you are interested you can learn about [more advanced registrations,](contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) which allows one of few store implementations to be chosen based on javascript condition (`applies`) and candidate priority.
+In most cases only one candidate is necessary and the priority can be set to `0`, but if you are interested you can learn about [more advanced registrations](contexthub-api.md#registerstorecandidate-store-storetype-priority-applies), which allows one of few store implementations to be chosen based on javascript condition (`applies`) and candidate priority.
 
 ## Creating ContextHub UI Module Types {#creating-contexthub-ui-module-types}
 

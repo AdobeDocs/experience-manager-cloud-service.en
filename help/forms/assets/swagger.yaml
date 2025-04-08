@@ -450,22 +450,22 @@ components:
         The end-to-end workflow for retrieving and using the token to authenticate a request is:
 
         - [Retrieve credentials on AEM as a Cloud Service from the Developer
-        Console.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en)
+        Console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en).
 
         - [Install credentials on AEM as a Cloud Service on your
-        environment.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en)
+        environment](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en).
         (Application Server, Web Server, or other non-AEM servers) configured to
         send requests to (make calls) the cloud service.
 
         - [Generate a JWT token and exchanged it with Adobe IMS APIs for an
         access
-        token.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#create-a-jwt-and-exchange-for-an-access-token)
+        token](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#create-a-jwt-and-exchange-for-an-access-token).
 
         - Run the AEM API with the access token as a Bearer Authentication
         token.
 
         - [Set appropriate permissions for the technical account user in the AEM
-        environment.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem)
+        environment](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
     Basic authentication:
       type: https
       scheme: basic

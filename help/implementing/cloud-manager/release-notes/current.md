@@ -1,70 +1,62 @@
 ---
-title: Release Notes for Cloud Manager 2024.4.0 in Adobe Experience Manager as a Cloud Service
-description: These are the release notes for Cloud Manager 2024.4.0 in AEM as a Cloud Service.
+title: Release Notes for Cloud Manager 2025.3.0 in Adobe Experience Manager as a Cloud Service
+description: Learn about the release of Cloud Manager 2025.3.0 in AEM as a Cloud Service.
 feature: Release Information
-exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
+role: Admin
+exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 ---
+# Release notes for Cloud Manager 2025.3.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-# Release Notes for Cloud Manager 2024.4.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+<!-- https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.03.0+Release -->
 
-This page documents the release notes for Cloud Manager release 2024.4.0 in AEM as a Cloud Service.
+Learn about the release of Cloud Manager 2025.3.0 in AEM (Adobe Experience Manager) as a Cloud Service.
 
->[!NOTE]
->
->See [this page](/help/release-notes/release-notes-cloud/release-notes-current.md) for the current release notes for Adobe Experience Manager as a Cloud Service.
 
-## Release Date {#release-date}
+See also the [current release notes for Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-The release date for Cloud Manager release 2024.4.0 in AEM as a Cloud Service is 10 April 2024. The next release is planned for 9 May 2024.
+## Release dates {#release-date}
 
-## What's New {#what-is-new}
+The release date for Cloud Manager 2025.3.0 in AEM as a Cloud Service is Thursday, March 13, 2025. 
 
-* The deletion operation has been improved for [Edge Delivery](/help/edge/overview.md) websites by updating the domain mappings from the program which is related to that site.
-  * If no more sites are mapped, the mapping is deleted.
-* Deployment tracking has been enhanced by providing real-time status updates during the critical startup phase of an AEM instance.
-  * This feature ensures that you have complete visibility into your deployment progress, enabling better decision-making and operational efficiency.
-* The [network infrastructure](/help/security/configuring-advanced-networking.md) listing has been enhanced to display all connected environments without region-based filtering to provide a more comprehensive view.
-* Enhanced error messages for code build issues allow easier identification of root causes and next actionable steps.
+The next planned release is Thursday, April 10, 2025.
+ 
+## What's new {#what-is-new}
 
-## Early Adoption Program {#early-adoption}
+* **Run multiple pipelines**
 
-For a chance to test some upcoming features, be a part of Adobe's early adoption program.
+    The ability to run multiple pipelines simultaneously has been introduced on the Pipelines page. Users must select at least one pipeline but no more than ten. Near the upper-right corner on the Pipelines page, click **Run selected (x)**. A modal dialog box appears that lists any pipelines that cannot be started. Click **Run** to initiate all valid pipelines.
 
-### Client-Side Collection via Real User Monitoring (RUM) {#rum}
+    ![Run selected pipelines dialog box](/help/implementing/cloud-manager/release-notes/assets/run-selected-pipelines.png)
 
-You can leverage the [Real User Monitoring (RUM) Data Service](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) to enable client-side collection for AEM as a Cloud Service.
+    See also [Run multiple pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#run-multiple-pipelines)
 
-Real User Monitoring (RUM) Data Service offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. It is a great opportunity to gain advanced insights into your page performance. This is beneficial for customers who use either Adobe-managed CDN or non-Adobe managed CDN. For customers using a non-Adobe managed CDN, automated traffic reporting can now be enabled for them, thus removing the need to share any traffic report with Adobe.
+* **Support extended to Node.js versions**
 
-If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-rum-adopter@adobe.com` from the email address associated with your Adobe ID. Please include the domain name for production, stage, and dev environments in your email.  Availability of the early adopter program of this feature is limited.
+    The front-end build environment now supports the following `Node.js` versions:
 
-### Bring your own GitHub {#byo-github}
+    * 23
+    * 22
+    * 20
 
-If you use GitHub to manage your repositories, [you can now validate code directly within your GitHub repositories through Cloud Manager.](/help/implementing/cloud-manager/managing-code/byo-github.md) This integration eliminates the need to consistently sync code with the Adobe repository and allows you to verify pull requests before merging them into the main branches. This feature is exclusive to public GitHub. Support for self-hosted GitHub is not available.
+    See also [Develop Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md#node-versions). <!-- CMGR-65307 -->
 
-If you are interested in testing this new feature and sharing your feedback, send an email to `Grp-CloudManager_BYOG@adobe.com` from your email address associated with your Adobe ID.
+<!--
+## Early adoption program {#early-adoption}
 
-### Self-Service Content Restore {#content-restore}
+Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features. -->
 
-[A new self-service content restore feature](/help/operations/restore.md) now provides backup restoration for up to seven days and is available to early adopters for evaluation purposes featuring:
 
-* Point-in-time backup restoration for the previous 24 hours
-* Fixed time restorations for up to seven days
+## Bug fixes
 
-If you are interested in testing this new feature and sharing your feedback, send an email to `aemcs-restorefrombackup-adopter@adobe.com` from your email associated with your Adobe ID.
+* **(UI) Fix for 'Advanced Network Configuration' updates in Cloud Manager**  
 
-* The early adopter program is limited to development environments only.
-* Availability of the early adopter program of this feature is limited.
-* This feature is for recovering accidentally deleted content and is not intended for disaster recovery.
+    A rare issue that prevented updates to the **Advanced Network Configuration** when an "Update available" notification was present has been resolved. Previously, Cloud Manager locked configuration modifications, including advanced networking settings, to prevent conflicts during an update. Customers can now manually trigger the pending update to apply the necessary changes without restrictions. <!-- CMGR-65913 and CMGR-65788 -->
 
-### Experience Audit Dashboard {#experience-audit-dashboard}
+* **(UI) Fix for IP allow list updates stuck in "Updating" state**  
 
-[The Cloud Manager Experience Audit dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md) includes a trended view of your page performance scores along with insights and recommendations to help you improve them. Experience Audit is included as a step in the Cloud Manager production pipeline.
+    A rare issue where IP allow list updates in Cloud Manager remained stuck in the "Updating" state due to duplicate active domain configuration for an environment has been resolved. Previously, customers experienced indefinite processing delays when updating IP allow lists, preventing necessary network access adjustments. This fix ensures that IP allow list updates can now complete successfully without getting stuck. <!-- CMGR-65786 -->
 
-The dashboard uses Google Lighthouse, an open-source, automated tool for improving the quality of your web apps. You can run it against any web page, public, or requiring authentication. It has audits for performance, accessibility, progressive web apps, SEO, and more.
 
-Interested in test-driving the new dashboard? To get started, send an email to `aem-lighthouse-pilot@adobe.com` from your email associated with your Adobe ID.
 
-## Bug Fixes {#bug-fixes}
 
-* A bug where Cloud Manager reused artifacts with the wrong commit hash has been addressed.
+<!-- ## Known issues {#known-issues} -->

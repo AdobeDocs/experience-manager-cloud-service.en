@@ -1,11 +1,18 @@
 ---
 title: Authoring Content Fragments
-description: Understand how to author content for your Content Fragments, and create variations of that content according to purpose. This provides added flexibility for both headless delivery and page authoring.
+description: Understand how to author content for your Content Fragments, and create variations of that content according to purpose. Content Fragments provide added flexibility for both headless delivery and page authoring.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
+solution: Experience Manager Sites
 ---
 # Authoring Content Fragments {#authoring-content-fragments}
+
+>[!IMPORTANT]
+>
+>Various features of the Content Fragment Editor are available through the Early Adopter Program.
+>
+>To see the status, and how to apply if you are interested, check the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 Authoring your Content Fragments is focused on both headless delivery and page authoring.
 
@@ -18,6 +25,7 @@ This editor provides:
 
 * [Auto-saving](#saving-autosaving), to prevent accidental loss of edits.
 * [In-line uploading of assets as content references](#reference-images), without having to upload them to the Asset DAM first.
+* [Generate Variations](#generate-variations-ai) to use the Generative AI to accelerate content creation based on prompts.
 * [Preview](#preview-content-fragment) of the rendered experience delivered by the Content Fragment.
 * Ability to [Publish](#publish-content-fragment) and [Unpublish](#unpublish-content-fragment) from the editor.
 * Ability to [view, and open, associated language copies](#view-language-copies) in the editor.
@@ -36,7 +44,7 @@ When you first open the Content Fragment Editor, you see four main areas:
 * top toolbar: for key information, and actions
   * a link to the Content Fragment Console (Home icon)
   * information about the model, and folder
-  * links to [Preview (if the Default Preview URL Pattern is configured for the model)](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties)
+  * links to [Preview (if the Default Preview URL Pattern is configured for the model)](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)
   * [Publish](#publish-content-fragment), and [Unpublish](#unpublish-content-fragment) actions
   * an option to show all **Parent References** (link icon)
   * the fragment **[Status](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**, and last saved information
@@ -50,9 +58,13 @@ When you first open the Content Fragment Editor, you see four main areas:
   * these links can be used to [navigate the Content Fragment structure](#navigate-structure)
 * right panel: presents tabs [showing the properties (metadata) and tags](#view-properties-tags), information about the [version history](#view-version-history), and information related to any [language copies](#view-language-copies)
   * in the **Properties** tab you can update the **Title** and **Description** for the fragment, or **Variation**
+  * In the **Comments** tab you can add, and read, comments to help you collaborate with other authors
 * central panel: shows the actual fields, and content, of the selected variation
   * allows you to edit the content
-  * if **Tab Placeholder** fields are defined within the model they are shown here, and can be used for navigating; they will either be presented horizontally, or as a drop-down list.
+    * when configured (as multiple) in the model, various data types allow you to **Add** instances of the relevant field
+  * if **Tab Placeholder** fields are defined within the model they are shown here and:
+    * can be used for navigating
+    * will either be shown horizontally, or as a drop-down list
 
   >[!NOTE]
   >
@@ -77,7 +89,7 @@ In the left panel you can see:
 
 * the list of **[Variations](#variations)** that have been created for this fragment:
   * **Main** is the Variation that is present when the Content Fragment is first created, you can add others later
-  * you can select and open a Variation for editing
+  * you can use Generate Variations(#generate-variations) to use a prompt based template that Adobe has created for a specific use case.
   * you can also [create a Variation](#create-variation)
 * the **Fields** within the fragment, and its variations:
   * the icon indicates the [Data Type](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
@@ -86,7 +98,7 @@ In the left panel you can see:
 
 ### Follow Links {#follow-links}
 
-In various parts of the editor you can see the link icon. This can be used to open the item shown; for example, a Content Fragment Model, a Parent Reference, or a fragment being referenced:
+In various parts of the editor you can see the link icon. This icon can be used to open the item shown; for example, a Content Fragment Model, a Parent Reference, or a fragment that is referenced:
 
 ![Content Fragment Editor - Link Icon](assets/cf-authoring-link-icon.png)
 
@@ -113,6 +125,8 @@ With every update that you make, the Content Fragment is automatically saved. Th
 From the editor you can:
 
 * [Create variations](#create-variation) of the **Main** content
+
+* [Use Generate Variations AI](#generate-variations-ai) to use Generative AI to use a prompt based template that Adobe has created for a specific use case.
 
 * Select the required variation for editing the content
 
@@ -150,14 +164,21 @@ To rename a **Variation**:
 
 1. Either press **Return** or move to another field to auto-save the change. The title is updated in the **Variations** panel on the left.
 
+### Create variations using GenAI with Generate Variations {#generate-variations-ai}
+
+Use Generative Variations to leverage Generative AI to accelerate content creation.
+
+Open the Content Fragment Editor to find the entry point to Generate Variations.
+
+See [Generate Variations - Integrated in AEM Editors](/help/generative-ai/generate-variations-integrated-editor.md) to learn more.
 
 ### Delete a variation {#delete-variation}
 
 To delete a Variation of your Content Fragment:
 
->[!NOTE]
->
->You cannot delete **Main**.
+    >[!NOTE]
+    >
+    >You cannot delete **Main**.
 
 1. Select the Variation.
 
@@ -285,10 +306,11 @@ Alternatively you can [select **Create new fragment** to open the **Create** dia
 
 #### Reference Images {#reference-images}
 
-In **Content Reference** fields you can both:
+In **Content Reference** fields you can:
 
-* reference assets that already exist in the repository
-* upload them directly to the field; this avoids the need to use the **Assets** console to upload
+* reference assets that already exist in your local repository
+* reference assets that reside in a remote repository
+* upload assets directly to the field; this avoids the need to use the **Assets** console to upload
 
   >[!NOTE]
   >
@@ -297,22 +319,65 @@ In **Content Reference** fields you can both:
   >* have a **Root Path** defined (in the [Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference)). This specifies where the image will be stored.
   >* include **Image** in the list of accepted content types
 
-To add an asset, you can either:
+##### Reference Local Assets {#reference-local-assets}
+
+To reference a local asset, you can either:
 
 * drag and drop the new asset file directly (for example, from your file system) into the **Content Reference** field
 * use the **Add asset** action, then select either **Browse Assets** or **Upload** to open the appropriate selector for you to use:
 
   ![Content Fragment Editor - Add asset options](assets/cf-authoring-add-asset-options.png)
 
+##### Reference Remote Assets {#reference-remote-assets}
+
+To reference remote assets: 
+
+1. Specify the remote **Repository** when browsing for assets:
+
+   ![Content Fragment Editor - Select Asset from remote](assets/cf-authoring-remote-asset-01.png)
+
+2. After selection the location can be seen in the asset information: 
+  
+   ![Content Fragment Editor - Asset from remote repository](assets/cf-authoring-remote-asset-02.png)
+
+###### Remote Assets - Limitations {#remote-assets-limitations}
+
+There are some limitations when referencing remote assets:
+
+* Only [Approved](/help/assets/approve-assets.md) assets are available for reference from a remote Asset repository.
+
+* If a referenced asset is removed from the remote repository, this results in a broken Content Reference.
+
+* All Delivery Asset Repositories to which the user has access are available for selection, the available list cannot be limited.
+
+* Both the AEM instance and remote asset repository instances must be at the same version.
+
+* No Asset metadata is exposed via the either Management API or the Delivery API. You have to use the Asset Metadata API to retrieve the asset metadata details:
+
+  * the individual asset metadata: [https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata)
+  
+  * get bulk metadata information using the search API (experimental): [https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search)
+
+>[!NOTE]
+>
+>See also [AEM GraphQL API for use with Content Fragments - Dynamic Media for OpenAPI asset support (Remote Assets)](/help/headless/graphql-api/content-fragments.md#dynamic-media-for-openapi-asset-support)
+
 #### Reference Pages {#reference-pages}
 
-To add references to AEM pages, Experience Fragments, or other content types:
+To add references to AEM pages, Experience Fragments, or other such content types:
 
 1. Select **Add content path**.
 
 1. Add the required path in the input field.
 
 1. Confirm with **Add**.
+
+>[!NOTE]
+>
+>This should not be used for references to:
+>
+>* Content Fragments - use a [Fragment Reference](#fragment-references)
+>* Images - use [Reference Images](#reference-images)
 
 ### View Parent References {#view-parent-references}
 
@@ -410,6 +475,25 @@ For example:
 >
 >For more details about translating a Content Fragment, and creating language copies, see the [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md).
 
+## Commenting on your Fragment {#commenting-on-your-fragment}
+
+To enable you to collaborate in-product and in-context, the **Comments** tab in the right panel provides the following capabilities:
+
+* Add a new comment
+* Tag specific users in a comment
+  * They will receive a notification, with a link to open the fragment directly
+* Like an existing comment
+* Reply to a comment
+* Format your comments; basic formatting is available
+* Perform a text search through existing comments
+* Edit an existing comment
+* Delete comments
+
+![Content Fragment Editor - Comments tab](assets/cf-authoring-comments.png)
+
+>[!NOTE]
+>
+>These comments are not visible as [Annotations in the original editor](/help/assets/content-fragments/content-fragments-managing.md#annotating-a-content-fragment), nor in the [Timeline of the Assets console](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
 ## Preview your Fragment {#preview-content-fragment}
 
@@ -418,7 +502,7 @@ The Content Fragment editor provides authors with the option to preview their ed
 To use this feature, you first need to:
 
 * Work with your IT team to set up the external frontend application that will render the Content Fragment by consuming its JSON output. 
-* When the external frontend application is set up, the **Default Preview URL Pattern** must be defined as a [property of the appropriate Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties).
+* When the external frontend application is set up, the **Default Preview URL Pattern** must be defined as a [property of the appropriate Content Fragment Model](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties).
 
 When the URL has been defined, the **Preview** button is active. You can select this button to launch the external application (in a separate tab) to render the Content Fragment. 
 

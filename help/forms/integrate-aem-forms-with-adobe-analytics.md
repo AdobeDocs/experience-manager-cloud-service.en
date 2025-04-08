@@ -3,6 +3,8 @@ title: How to integrate AEM Forms with Adobe Analytics?
 seo-title: Learn how to integrate AEM Forms with Adobe Analytics.
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
 hidefromtoc: yes
+feature: Adaptive Forms, Acrobat Sign
+role: User, Developer
 ---
 # Integrate AEM Forms with [!DNL Adobe Analytics] {#integrate-aem-forms-with-adobe-analytics}
 
@@ -110,7 +112,7 @@ Perform the following steps to configure data elements:
 
 1. Select **[!UICONTROL Save]** to save the data element.
 
-   >[!VIDEO](https://video.tv.adobe.com/v/337472)
+>[!VIDEO](https://video.tv.adobe.com/v/337472)
 
 ### Configure rules {#configure-rules}
 
@@ -172,7 +174,7 @@ Perform the following steps to create rules based on the **[!UICONTROL Adobe Exp
    
    You can create rules for all event types, such as Abandon, Error, Field Visit, Help, Render, Save, and Submit.
 
-   >[!VIDEO](https://video.tv.adobe.com/v/337425)
+>[!VIDEO](https://video.tv.adobe.com/v/337425)
 
 
 ### Publish flows {#publish-flow}

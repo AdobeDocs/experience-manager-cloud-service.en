@@ -5,9 +5,12 @@ uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
-
+feature: Adaptive Forms
+role: User
+hide: yes
+hidefromtoc: yes
+exl-id: 92130660-9942-426f-ae2f-4f3300f9735c
 ---
-
 # Manage Forms applications and tasks in AEM Inbox{#manage-forms-applications-and-tasks-in-aem-inbox}
 
 One of the many ways to launch or trigger a Forms-centric workflow is through applications in AEM Inbox. You need to create a workflow application to make a Forms Workflow available as an application in Inbox. For more information about workflow application and other ways to launch Forms workflows, see [Launch a Forms-centric workflow on OSGi](aem-forms-workflow.md#launch).
@@ -145,4 +148,3 @@ A workflow model owner is unable to view items related to AEM Workflow in AEM In
 1. [Create a Property Index and set it to true](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=en#the-property-index). 
 
 1. After configuring indices in CRX DE or deploying via a package, [re-index the repository](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex).
-

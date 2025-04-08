@@ -4,8 +4,12 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: Use AEM Forms Workflow to automate and rapidly build business process workflows. For example, review and approval, PDF Generation, Adobe Sign workflows.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
+feature: Adaptive Forms
+role: User, Developer
+hide: yes
+hidefromtoc: yes
+exl-id: f0fec4a9-b214-4931-bf09-5898b082481e
 ---
-
 # Forms-centric workflow on OSGi {#forms-centric-workflow-on-osgi}
 
  ![Hero Image](do-not-localize/header.png)
@@ -68,7 +72,7 @@ The example creates a workflow model a mortgage application to be filled by a fr
 1. Enable email notifications. You can configure Forms-centric workflow on OSGi to send email notifications to the users or assignees. Perform the following configurations to enable email notifications:
 
     1. Go to AEM configuration manager at `https://[server]:[port]/system/console/configMgr`.
-    1. Open the **[!UICONTROL Day CQ Mail Service]** configuration. Specify a value for the **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port,]** and **[!UICONTROL "From" address]** fields. Click **[!UICONTROL Save]**.
+    1. Open the **[!UICONTROL Day CQ Mail Service]** configuration. Specify a value for the **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port]**, and **[!UICONTROL "From" address]** fields. Click **[!UICONTROL Save]**.
     1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]** field, specify the actual hostname/IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**.
 
 1. Create workflow stages. A workflow can have multiple stages. These stages are displayed in the AEM Inbox and report progress of the workflow.
@@ -191,7 +195,7 @@ You can launch or trigger a Forms-centric workflow by:
 
 ### Submitting an application from AEM Inbox {#inbox}
 
-The workflow application you created is available as an application in Inbox. Users who are members of [!DNL workflow-users] group can fill and submit the application that triggers the associated workflow. For information about using AEM Inbox to submit applications and manage tasks, see [Manage Forms applications and tasks in AEM Inbox](manage-applications-/help/sites-cloud/authoring/inbox.md).
+The workflow application you created is available as an application in Inbox. Users who are members of [!DNL workflow-users] group can fill and submit the application that triggers the associated workflow. 
 
 <!-- ### Submitting an application from [!DNL AEM Forms] App {#afa}
 
@@ -258,15 +262,9 @@ You can associate and execute a Forms-centric workflow on OSGi on submission of 
 You can use the Assign Task and Send Email steps of AEM Workflows to send an email. Perform the following steps to specify email servers and other configurations required to send email:
 
 1. Go to AEM configuration manager at `https://[server]:[port]/system/console/configMgr`.
-1. Open the **[!UICONTROL Day CQ Mail Service]** configuration. Specify a value for the **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port,]** and **[!UICONTROL "From" address]** fields. Click **[!UICONTROL Save]**.
+1. Open the **[!UICONTROL Day CQ Mail Service]** configuration. Specify a value for the **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port]**, and **[!UICONTROL "From" address]** fields. Click **[!UICONTROL Save]**.
 1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]** field, specify the actual hostname/IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**. -->
 
 ### Purge workflow instances {#purge-workflow-instances}
 
 Minimizing the number of workflow instances increases the performance of the workflow engine, so you can regularly purge completed or running workflow instances from the repository. For detailed information see, [Regular Purging of Workflow Instances](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html) purging of workflow instances
-
-
->[!MORELIKETHIS]
->
->* [Use AEM translation workflow to localize Adaptive Forms and Document of Record](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms.md)
->* [Variables in Forms-centric AEM Workflows](/help/forms/variable-in-aem-workflows.md)

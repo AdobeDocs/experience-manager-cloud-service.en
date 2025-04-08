@@ -2,6 +2,8 @@
 title: AEM Project Repository Structure Package  
 description: Maven projects on Adobe Experience Manager as a Cloud Service require a Repository Structure Subpackage definition whose sole purpose is to define the JCR repository roots in which the project's Code subpackages deploy into.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # AEM Project Repository Structure Package
 
@@ -156,7 +158,7 @@ For example:
 + Code package A deploys into `/apps/a`
 + Code package B deploys into `/apps/a/b`
 
-If a package-level dependency is not established from code package B on code package A, code package B may deploy first into `/apps/a`. It would then be followed by code package B, which deploys into `/apps/a`. The result is a removal of the previously installed `/apps/a/b`.
+If a package-level dependency is not established from code package B on code package A, code package B may deploy first into `/apps/a`. If it is then followed by code package A, which deploys into `/apps/a`, the result is a removal of the previously installed `/apps/a/b`.
 
 In this case:
 

@@ -2,6 +2,9 @@
 title: Learn about defining Metadata and Tagging for Content Fragments
 description: Learn about defining Metadata and Tagging for Content Fragments
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
+solution: Experience Manager
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Architect, Developer
 ---
 # Learn about defining Metadata and Tagging for Content Fragments {#author-headless-metadata-tagging}
 
@@ -34,4 +37,4 @@ Now you can put all this knowledge to use and start creating Content Fragments f
   
 * [Using Tags](/help/sites-cloud/authoring/sites-console/tags.md)
 
-* [Content Fragment Models - Allowing Content Fragment Models on your Assets Folder](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)
+* [Content Fragment Models - Allowing Content Fragment Models on your Assets Folder](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder)

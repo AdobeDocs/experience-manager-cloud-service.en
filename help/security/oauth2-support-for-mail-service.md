@@ -2,6 +2,8 @@
 title: OAuth2 Support for the Mail Service
 description: OAuth2 Support for the Mail Service in Adobe Experience Manager as a Cloud.Service.
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
+feature: Security
+role: Admin
 ---
 
 # OAuth2 Support for the Mail Service {#oauth2-support-for-the-mail-service}
@@ -107,7 +109,7 @@ Before proceeding to configure OAuth on the AEM side, make sure to validate both
 >
 > You can get the Postman API collection from [this location](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow).
 >
-> See the MSFT OAuth documentation [here](https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) for more details.
+> See the [MSFT OAuth documentation](https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) for more details.
 
 ### Integration with AEM as a Cloud Service {#integration-with-aem-as-a-cloud-service}
 
@@ -160,7 +162,7 @@ under `/apps/<my-project>/osgiconfig/config` with the syntax below. The `smtp.ho
    ```
 
 1. For outlook, the `smtp.host` configuration value is `smtp.office365.com`
-1. At runtime, pass in the `refreshToken values` and `clientSecret` secrets using the Cloud Manager variables API as described [here](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) or by using [Cloud Manager to add variables.](/help/implementing/cloud-manager/environment-variables.md) The values for the variables `SECRET_SMTP_OAUTH_REFRESH_TOKEN`  and `SECRET_SMTP_OAUTH_CLIENT_SECRET` should be defined.
+1. At runtime, pass in the `refreshToken values` and `clientSecret` secrets using the [Cloud Manager variables API](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) or by using [Cloud Manager to add variables](/help/implementing/cloud-manager/environment-variables.md). The values for the variables `SECRET_SMTP_OAUTH_REFRESH_TOKEN`  and `SECRET_SMTP_OAUTH_CLIENT_SECRET` should be defined.
    
 ### Troubleshooting {#troubleshooting}
 

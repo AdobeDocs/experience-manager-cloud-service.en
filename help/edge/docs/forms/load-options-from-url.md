@@ -1,11 +1,12 @@
 ---
-title: Load Dropdown List Options from URL 
+title: Load Dropdown List Options from a URL or another sheet for Edge Delivery Services for AEM Forms as a Cloud Service
 description: The dropdown list options are included in a distinct spreadsheet and then imported into the primary spreadsheet via the provided URL.
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
+role: Admin, Architect, Developer
 ---
 
-# Load dropdown list options from URL 
+# Options from a URL or another sheet for Edge Delivery Services for AEM Forms as a Cloud Service 
 
 Forms often include dropdown menus for users to select from predefined options. These options are typically defined within the form itself, but managing long lists can be cumbersome. This guide outlines how to improve form authoring by loading dropdown options from a separate spreadsheet via a URL.
 
@@ -14,9 +15,6 @@ Benefits of loading a dropdown options from a separate spreadsheet are:
 
 * Simplified Management: Maintain dropdown options in a centralized location for easier updates and additions.
 * Improved Efficiency: Eliminate the need to manually add long option lists within the form definition.
-
-
-
 
 ![Drop-down options](/help/forms/assets/drop-down-options.png)
 
@@ -49,10 +47,11 @@ Defining Options in a Separate Spreadsheet
 
    ![Drop-down for country](/help/forms/assets/drop-down-country-options.png)
 
-1. Preview and publish the `shared-country` sheet using [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content). 
-  
-   Refer to the URL which showcases the `shared-country` sheet:
-   https://main--wefinance--wkndforms.hlx.live/enquiry.json?sheet=country  
+1. Preview and publish the `shared-country` sheet using [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+
+   For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch, the URL which showcases the `shared-country` sheet:
+   `https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country` 
+   <!--(https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country)  -->
 
 >[!NOTE]
 >
@@ -72,13 +71,15 @@ The `Options` property of a `select` field accepts a URL. The URL returns a JSON
 
    ![Drop-down for country](/help/forms/assets/load-dropdown-options-form.png)
 
-You can refer to the [enquiry spreadsheet](/help/forms/assets/enquiry-options.xlsx) to add the URL to load drop-down list options.
+You can refer to the [enquiry spreadsheet](/help/edge/assets/enquiry.xlsx) to add the URL to load drop-down list options.
 
 After integrating the URL into the form definition to load drop-down list options, the options for the `Destination` drop-down start appearing from the URL.
 
-Refer to the URL below, which displays the `enquiry` form displaying the options saved in the separate sheet:
+For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch, the below URL displays the `enquiry` form displaying the options saved in the separate sheet:
 
-https://main--wefinance--wkndforms.hlx.live/enquiry-form 
+`https://main--wefinance--wkndform.aem.live/enquiry-form`
+<!--(https://main--wefinance--wkndform.aem.live/enquiry-form) 
+-->
 
 ## See also
 

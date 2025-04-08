@@ -2,6 +2,8 @@
 title: Externalizing URLs
 description: The Externalizer is an OSGi service that lets you programmatically transform a resource path into an external and absolute URL.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Externalizing URLs {#externalizing-urls}
 
@@ -42,7 +44,7 @@ The Externalizer service lets you centrally define the domain that can be used t
 
 >[!NOTE]
 >
->As when applying any [OSGi configurations for AEM as a Cloud Service,](/help/implementing/deploying/overview.md#osgi-configuration) the following steps should be performed on a local developer instance and then committed to your project code for deployment.
+>As when applying any [OSGi configurations for AEM as a Cloud Service](/help/implementing/deploying/overview.md#osgi-configuration), the following steps should be performed on a local developer instance and then committed to your project code for deployment.
 
 To define a domain mapping for the Externalizer service:
 

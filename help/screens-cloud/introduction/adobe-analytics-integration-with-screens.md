@@ -9,6 +9,7 @@ docset: aem65
 role: Admin, Developer
 level: Intermediate
 exl-id: e22242ce-e5ce-4486-bba4-e6a89ac4fb5e
+feature: Screens Deployments
 ---
 # Adobe Analytics Integration with AEM Screens Cloud {#adobe-analytics-integration-with-aem-screens}
 

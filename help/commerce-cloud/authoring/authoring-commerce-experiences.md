@@ -2,6 +2,8 @@
 title: Authoring Commerce Experiences
 description: Learn how to author and build commerce-related experiences efficiently by getting access to product data and content without leaving the context.
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
+feature: Commerce Integration Framework
+role: Admin
 ---
 # Authoring Commerce Experiences {#authoring-commerce-experiences}
 
@@ -63,9 +65,9 @@ CIF product catalog pages are virtual pages that get rendered on the fly. Thus, 
 
 ![RTE](../assets/authoring/RTE.png)
 
-    >[!NOTE]
-    >
-    > If both category and product gets selected, the product is taken.
+>[!NOTE]
+>
+> If both category and product gets selected, the product is taken.
 
 This creates a placeholder link that gets replaced with a real link when the page gets rendered.
 

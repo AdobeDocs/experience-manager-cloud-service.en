@@ -2,6 +2,8 @@
 title: Getting Started with Cloud Acceleration Manager
 description: This page provides an overview on how to use and get started with Cloud Acceleration Manager.
 exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
+feature: Migration
+role: Admin
 ---
 # Getting Started with Cloud Acceleration Manager {#get-started-cam}
 
@@ -88,6 +90,10 @@ Follow the steps below to delete your project:
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-4.png)
 
 1. Click **Delete** to confirm the step.
+
+   >[!NOTE]
+   >Projects will automatically expire and be deleted after 1 year of migration inactivity. Projects will remain active by editing the project name or description, uploading a BPA report, creating or editing a migration set, running an extraction or running an ingestion.
+
 
 ## What's Next {#whats-next}
 

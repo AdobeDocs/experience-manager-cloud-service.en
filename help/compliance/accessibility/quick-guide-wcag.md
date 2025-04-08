@@ -2,6 +2,8 @@
 title: A Quick Guide to WCAG 2.1
 description: A Quick Guide to the Web Content Accessibility Guidelines (WCAG) version 2.1.
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
+feature: Compliance
+role: Admin, Architect, Developer, Leader
 ---
 # A Quick Guide to WCAG 2.1 {#quick-guide-to-wcag}
 
@@ -15,7 +17,9 @@ The [Web Content Accessibility Guidelines (WCAG) version 2.1](https://www.w3.org
 
 >[!NOTE]
 >
->An [updated version of the guidelines, WCAG 2.2,](https://www.w3.org/TR/WCAG22/) is currently in development, but will not be considered at this point in time.
+>Since these documents were written the [updated version of the guidelines, WCAG 2.2](https://www.w3.org/TR/WCAG/) was made available in October 2023. 
+>
+>See [Comparison with WCAG 2.1](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1) and [New Features in WCAG 2.2](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2).
 
 WCAG 2.1 consists of a set of technology independent guidelines and success criteria to help make web content accessible to, and usable by, persons with disabilities. They provide advice to web content authors, designers and developers on ensuring that the resources they produce are as accessible as possible to as many people as possible, regardless of any disability they have; for example, visual impairment, hearing loss, learning difficulties, age related limitations, amongst others.
 

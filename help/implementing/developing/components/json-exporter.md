@@ -2,6 +2,8 @@
 title: JSON Exporter for Content Services
 description: AEM Content Services are designed to generalize the description and delivery of content in/from AEM beyond a focus on web pages. They provide the delivery of content to channels that are not traditional AEM web pages, using standardized methods that can be consumed by any client.
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # JSON Exporter for Content Services {#json-exporter-for-content-services}
 
@@ -57,7 +59,7 @@ Your page can contain either a single content fragment or multiple components of
 
   >[!NOTE]
   >
-  >Although not a standard implementation, [multiple selectors are supported,](enabling-json-exporter.md#multiple-selectors) but `model` must be the first.
+  >Although not a standard implementation, [multiple selectors are supported](enabling-json-exporter.md#multiple-selectors), but `model` must be the first.
 
 ### Further Information {#further-information}
 
@@ -71,6 +73,6 @@ Your page can contain either a single content fragment or multiple components of
 ## Related Documentation {#related-documentation}
 
 * [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md)
-* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [Authoring with Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md)
 * [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) and the [Content Fragment component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)

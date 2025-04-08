@@ -1,8 +1,9 @@
 ---
 title: Dispatcher endpoint configuration with AEM Headless
 description: The Dispatcher is a caching and security layer in front of Adobe Experience Manager Publish environments. Several configurations are used to open GraphQL endpoints to headless applications.
-feature: Dispatcher, GraphQL API
+feature: Headless, Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
+role: Admin, Developer
 ---
 
 # Dispatcher - Endpoint configuration with AEM Headless
@@ -33,4 +34,4 @@ The request for Persisted queries is made against a different endpoint. As part 
 /0061 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
 ```
 
-Persisted queries can be requested using `GET`, by caching the response at the Dispatcher and CDN level. More details about caching and cache invalidation can be found [here](/help/implementing/dispatcher/caching.md).
+Persisted queries can be requested using `GET`, by caching the response at the Dispatcher and CDN level. More details about caching and cache invalidation can be found under [the Introduction to Caching in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md).

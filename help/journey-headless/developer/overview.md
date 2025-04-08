@@ -3,14 +3,15 @@ title: AEM Headless CMS Developer Journey
 description: Learn about headless development using Adobe Experience Manager (AEM) as a Headless CMS. Learn how to use features like Content Models, Content Fragments, and a GraphQL API to power headless content delivery.
 landing-page-description: Get an understanding of headless content delivery and implementation. Learn more about developing your strategy within your business. 
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
+solution: Experience Manager
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Architect, Developer
 ---
 # AEM Headless CMS Developer Journey {#aem-headless-developer-journey}
 
 Welcome to the documentation for developers who are new to Adobe Experience Manager headless CMS!
 
 Learn about the powerful and flexible headless features, their capabilities, and how to use them on your first headless development project. This journey provides you with all the information you need to develop your first headless application.
-
-{{headless-trials-promotion}}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_developer_resources"
@@ -68,7 +69,7 @@ Although you can go directly to a particular part of the journey, many concepts 
 
 ## What's Next {#what-is-next}
 
-Get started by checking out the next article: [Learn about CMS Headless Development.](learn-about.md)
+Get started by checking out the next article: [Learn about CMS Headless Development](learn-about.md),
 
 ### Choose Your Own Adventure {#choose-your-path}
 

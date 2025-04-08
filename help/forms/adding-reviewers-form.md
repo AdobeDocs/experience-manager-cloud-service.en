@@ -5,10 +5,12 @@ uuid: 58c8c8fb-9262-4c37-b9b2-e46fe21b77d9
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 71d1aa10-d191-49bc-a50f-1098324f1cfe
-docset: aem65
-
+feature: Adaptive Forms
+role: User, Developer
+hide: yes
+hidefromtoc: yes
+exl-id: 27c52969-1213-4fd3-8e16-988caafb4ad6
 ---
-
 # Associating submission reviewers with a form {#associating-submission-reviewers-with-a-form}
 
 When you create a form, you can specify users who review the submissions of the form via forms portal and provide feedback. Your organization can collect feedback and rework on the submitted forms.

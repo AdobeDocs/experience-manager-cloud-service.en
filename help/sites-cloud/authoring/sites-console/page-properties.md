@@ -2,6 +2,9 @@
 title: Editing Page Properties
 description: Learn how to define the properties required for managing a page in AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Editing Page Properties {#editing-page-properties}
 
@@ -29,7 +32,7 @@ The properties are distributed across several tabs.
 
 * **Branding**
 
-  Apply a consistent brand identity across pages by appending a brand slug to each page title. This functionality requires use of the Page Component from release 2.14.0 or later of the [Core Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+  Apply a consistent brand identity across pages by appending a brand slug to each page title. This functionality requires use of the Page Component from release 2.14.0 or later of the [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
 
   * **Brand Slug** 
 
@@ -46,7 +49,7 @@ The properties are distributed across several tabs.
 
   * **Page Title** - A title to be used on the page. Typically used by title components. If empty, the **Title** is used.
   * **Navigation Title** - You can specify a separate title for use in the navigation (for example, if you want something more concise). If empty, the **Title** is used.
-  * **Subtitle** - A subtitle for use on the page.
+  * **Caption** - A subtitle for use on the page.
   * **Description** - Your description of the page, its purpose, or any other details you want to add.
 
 * **On/Off Time**
@@ -109,7 +112,9 @@ The properties are distributed across several tabs.
 
 * **Template Settings**
 
-  * **Allowed Templates** - [Defines the list of templates that are available](/help/sites-cloud/authoring/sites-console/templates.md#enabling-and-allowing-a-template-template-author) within this sub-branch
+  * **Allowed Templates** - [Defines the list of templates that are available](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author) within this sub-branch
+  * **Use Page as Template** - [Create a new template based on the current page.](/help/sites-cloud/authoring/universal-editor/templates.md)
+    * Only applies to pages created for use with the Universal Editor leveraging Edge Delivery Services.
 
 * **Authentication Requirement**
 

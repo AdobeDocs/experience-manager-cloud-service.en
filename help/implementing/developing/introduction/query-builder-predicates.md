@@ -2,6 +2,8 @@
 title: Query Builder Predicate Reference
 description: Predicate reference for the Query Builder API in AEM as a Cloud Service.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Query Builder Predicate Reference {#query-builder-predicate-reference}
 
@@ -163,7 +165,7 @@ It does not support facet extraction.
 
 ### hasPermission {#haspermission}
 
-This predicate restricts the result to items where the current session has the specified [JCR privileges.](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+This predicate restricts the result to items where the current session has the specified [JCR privileges](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges).
 
 A filtering-only predicate and cannot use a search index. It does not support facet extraction.
 

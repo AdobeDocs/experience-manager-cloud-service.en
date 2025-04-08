@@ -2,6 +2,8 @@
 title: Introduction to Adobe Experience Manager as a Cloud Service - Terminology
 description: Introduction to Adobe Experience Manager as a Cloud Service - Terminology.
 exl-id: a76f68f1-4f84-4844-a099-0952707cd96d
+feature: Release Information
+role: Admin
 ---
 # Adobe Experience Manager as a Cloud Service - Terminology {#adobe-experience-manager-as-a-cloud-service-terminology}
 

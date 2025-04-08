@@ -2,6 +2,9 @@
 title: Understand Cloud Manager and the Quick Site Creation Workflow
 description: Learn about Cloud Manager and how it ties together the new Quick Site Creation process.
 exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
 ---
 # Understand Cloud Manager and the Quick Site Creation Workflow {#understand-cloud-manager}
 
@@ -22,7 +25,7 @@ This document helps you understand how the AEM Quick Site Creation tool works an
 
 This document focuses on understanding these fundamental pieces of the Quick Site creation solution before moving on to the next step of the journey where you begin configuration.
 
-Although it is recommended to proceed through this journey step-by-step, if you already understand AEM Sites and Cloud Manager work together and want to start directly with configuration, you can [skip to the next step of the journey.](create-site.md)
+Although it is recommended to proceed through this journey step-by-step, if you already understand AEM Sites and Cloud Manager work together and want to start directly with configuration, you can [skip to the next step of the journey](create-site.md).
 
 ## Responsible Role {#responsible-role}
 
@@ -102,7 +105,9 @@ The overall flow is simple and intuitive even if you do not yet have extensive e
 
 ![Quick Site Creation flow](assets/qsc-flow.png)
 
-The major advantage of using the Quick Site Creation tool is that the pure front-end developer is only responsible the actual customization. The front-end developer has no interaction with AEM or needs any knowledge of AEM.
+The major advantage of using the Quick Site Creation tool is that the pure front-end developer is only responsible the actual customization. The front-end developer has no interaction with AEM or needs any knowledge of AEM. 
+
+{{add-cm-allowlist-frontend-pipeline}}
 
 ## What's Next {#what-is-next}
 
@@ -111,11 +116,11 @@ Now that you have completed this part of the AEM Quick Site Creation journey you
 * Understand how AEM Sites and the Cloud Manager work together to facilitate front-end development
 * See how the front-end customization step is entirely decoupled from AEM and requires no AEM knowledge.
 
-Build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Create Site from Template,](create-site.md) where you learn how to quickly create an new AEM site using a template.
+Build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Create Site from Template](create-site.md), where you learn how to quickly create an new AEM site using a template.
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the Quick Site Creation journey by reviewing the document [Create Site from Template,](create-site.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
+While it is recommended that you move on to the next part of the Quick Site Creation journey by reviewing the document [Create Site from Template](create-site.md), the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
 
 * [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - If you would like more details on Cloud Manager's features, you may want to directly consult the in-depth technical docs.
 * [Role Based Permissions](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager has pre-configured roles with appropriate permissions. See this document for details of these roles and how to administer them.

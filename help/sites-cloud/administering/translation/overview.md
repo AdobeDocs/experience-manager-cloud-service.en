@@ -4,6 +4,7 @@ description: Get an overview of how to translate content for multilingual sites.
 feature: Language Copy
 role: Admin
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
+solution: Experience Manager Sites
 ---
 # Translating Content for Multilingual Sites {#translating-content-for-multilingual-sites}
 
@@ -14,7 +15,7 @@ Automate the translation of page content and assets to create and maintain multi
 
 >[!TIP]
 >
->If you are new to translating content, see [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM’s powerful translation tools, ideal for those with no AEM or translation experience.
+>If you are new to translating content, see [Sites Translation Journey](/help/journey-sites/translation/overview.md), which is guided path through translating your AEM Sites content using AEM's powerful translation tools, ideal for those with no AEM or translation experience.
 
 Translating content involves the following steps:
 

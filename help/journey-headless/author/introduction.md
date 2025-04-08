@@ -2,12 +2,13 @@
 title: Authoring for AEM as a Headless CMS - An Introduction
 description: An introduction to using the features of Adobe Experience Manager as a Cloud Service as a Headless CMS to author content for your project.
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
+solution: Experience Manager
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Architect, Developer
 ---
 # Authoring for AEM as a Headless CMS - An Introduction {#author-headless-introduction}
 
 In this part of the [AEM Headless Content Author Journey](overview.md), you can learn the (basic) concepts and terminology necessary to understand authoring content when using Adobe Experience Manager (AEM) as a Cloud Service as a Headless CMS. This involves structuring, and creating, your content for headless content delivery.
-
-{{headless-trials-promotion}}
 
 ## Objective {#objective}
 

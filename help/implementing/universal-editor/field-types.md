@@ -1,26 +1,28 @@
 ---
 title: Model Definitions, Fields, and Component Types
-description: Learn about fields and the component types that the Universal Editor can edit in the properties rail with examples. Understand how you can instrument your own app by creating a model definition and linking to the component.
+description: Learn about fields and the component types that the Universal Editor can edit in the properties panel with examples. Understand how you can instrument your own app by creating a model definition and linking to the component.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
+feature: Developing
+role: Admin, Architect, Developer
 ---
 
 # Model Definitions, Fields, and Component Types {#field-types}
 
-Learn about fields and the component types that the Universal Editor can edit in the properties rail with examples. Understand how you can instrument your own app by creating a model definition and linking to the component.
+Learn about fields and the component types that the Universal Editor can edit in the properties panel with examples. Understand how you can instrument your own app by creating a model definition and linking to the component.
 
 ## Overview {#overview}
 
-When adapting your own apps for use with the Universal Editor, you must instrument the components and define what fields and component types they can manipulate in the properties rail of the editor. You do this by creating a model and linking to that from the component.
+When adapting your own apps for use with the Universal Editor, you must instrument the components and define what fields and component types they can manipulate in the properties panel of the editor. You do this by creating a model and linking to that from the component.
 
 This document provides an overview of a model definition and of fields and the component types available to you along with example configurations.
 
 >[!TIP]
 >
->If you are not familiar with how to instrument your app for the Universal Editor, please see the document [Universal Editor Overview for AEM Developers.](/help/implementing/universal-editor/developer-overview.md)
+>If you are not familiar with how to instrument your app for the Universal Editor, please see the document [Universal Editor Overview for AEM Developers](/help/implementing/universal-editor/developer-overview.md).
 
 ## Model Definition Structure {#model-structure}
 
-In order to configure a component via the properties rail in the Universal Editor, a model definition has to exist and be linked to the component.
+In order to configure a component via the properties panel in the Universal Editor, a model definition has to exist and be linked to the component.
 
 The model definition is a JSON structure, starting with an array of models.
 
@@ -28,18 +30,37 @@ The model definition is a JSON structure, starting with an array of models.
 [
   {
     "id": "model-id",        // must be unique
-    "fields": []             // array of fields which shall be rendered in the properties rail
+    "fields": []             // array of fields which shall be rendered in the properties panel
   }
 ]
 ```
 
 See the **[Fields](#fields)** section of this document for more information about how to define your `fields` array.
 
+You can link a model to a component in two ways: using the [component definition](#component-definition) or [via the instrumentation.](#instrumentation)
+
+### Linking Using the Component Definition {#component-definition}
+
+This is the preferred method of linking the model to the component. Doing so allows you to maintain the link centrally in the component definition and enables dragging components across containers.
+
+Simply include the `model` property in the component object in the `components` array in the `component-definition.json` file.
+
+For details, please see the document [Component Definition.](/help/implementing/universal-editor/component-definition.md)
+
+### Linking Using Instrumentation {#instrumentation}
+
 To use the model definition with a component, the `data-aue-model` attribute can be used.
 
 ```html
 <div data-aue-resource="urn:datasource:/content/path" data-aue-type="component"  data-aue-model="model-id">Click me</div>
 ```
+
+>[!NOTE]
+>
+>The Universal Editor first checks if a model is linked via the instrumentation and uses that before checking the component definition. This means:
+>
+>* Projects that have implemented the link to the model via the instrumentation will continue to work as-is with no need for change.
+>* If you define the model in the [component definition](#component-definition) as well as in the instrumentation, the instrumentation will always be used.
 
 ## Loading a Model Definition {#loading-model}
 
@@ -91,11 +112,12 @@ The following are the component types that are possible to use for rendering fie
 |[Container](#container)|`container`|
 |[Content Fragment](#content-fragment)|`aem-content-fragment`|
 |[Date Time](#date-time)|`date-time`|
+|[Experience Fragment](#experience-fragment)|`aem-experience-fragment`|
 |[Multiselect](#multiselect)|`multiselect`|
 |[Number](#number)|`number`|
 |[Radio Group](#radio-group)|`radio-group`|
 |[Reference](#reference)|`reference`|
-|[Rich Text](#rich-text)|`rich-text`|
+|[Rich Text](#rich-text)|`richtext`|
 |[Select](#select)|`select`|
 |[Tab](#tab)|`tab`|
 |[Text](#text)|`text`|
@@ -128,9 +150,17 @@ An AEM tag component type enables an AEM tag picker, which can be used to attach
 
 >[!ENDTABS]
 
+>[!TIP]
+>
+>Please see the document [Managing Taxonomy Data](/help/edge/wysiwyg-authoring/taxonomy.md) for more information about how you can use spreadsheets to manage your taxonomy data for your Edge Delivery Services project.
+
 #### AEM Content {#aem-content}
 
-An AEM content component type type enables an AEM content picker, which can be used to set content references.
+An AEM content component type enables an AEM content picker, which can be used to select any AEM resource. Unlike the [reference component](#reference), which can only select assets, the AEM content component can reference any AEM content. It offers an additional validation type.
+
+|Validation Type|Value Type|Description|Required|
+|---|---|---|---|
+|`rootPath`|`string`|Path that the content picker will open for the user to select AEM content, limiting selection to that directory and subdirectories|No|
 
 >[!BEGINTABS]
 
@@ -145,7 +175,10 @@ An AEM content component type type enables an AEM content picker, which can be u
       "name": "reference",
       "value": "",
       "label": "AEM Content Picker",
-      "valueType": "string"
+      "valueType": "string",
+      "validation": {
+            "rootPath": "/content/refresh"
+        }
     }
   ]
 }
@@ -295,6 +328,18 @@ The Content Fragment picker can be used to select a [Content Fragment](/help/sit
 |---|---|---|---|
 |`variationName`|`string`|Variable name to store the selected variation. If undefined, no variation picker is displayed|No|
 
+It also offers an additional validation type.
+
+|Validation Type|Value Type|Description|Required|
+|---|---|---|---|
+|`rootPath`|`string`|Path that the content picker will open for the user to select the Content Fragment, limiting selection to that directory and subdirectories|No|
+
+>[!NOTE]
+>
+>The Universal Editor [validates Content Fragment fields based on their models](/help/assets/content-fragments/content-fragments-models.md#validation) allowing you to enforce data integrity rules such as regex patterns and uniqueness constraints.
+>
+>This ensures that your content meets specific business requirements before it's published.
+
 >[!BEGINTABS]
 
 >[!TAB Sample 1]
@@ -309,7 +354,10 @@ The Content Fragment picker can be used to select a [Content Fragment](/help/sit
         "name": "picker",
         "label": "Content Fragment Picker",
         "valueType": "string",
-        "variationName": "contentFragmentVariation"
+        "variationName": "contentFragmentVariation",
+        "validation": {
+            "rootPath": "/content/refresh"
+        }
       }
     ]
   }
@@ -421,6 +469,12 @@ The Experience Fragment picker can be used to select an [Experience Fragment](/h
 |---|---|---|---|
 |`variationName`|`string`|Variable name to store the selected variation. If undefined, no variation picker is displayed|No|
 
+It also offers an additional validation type.
+
+|Validation Type|Value Type|Description|Required|
+|---|---|---|---|
+|`rootPath`|`string`|Path that the content picker will open for the user to select the Experience Fragment, limiting selection to that directory and subdirectories|No|
+
 >[!BEGINTABS]
 
 >[!TAB Sample 1]
@@ -428,14 +482,17 @@ The Experience Fragment picker can be used to select an [Experience Fragment](/h
 ```json
 [
   {
-    "id": "aem-experience-fragment",
+    "id": "experience-fragment",
     "fields": [
       {
         "component": "aem-experience-fragment",
-        "name": "picker",
-        "label": "Experience Fragment Picker",
         "valueType": "string",
-        "variationName": "experienceFragmentVariation"
+        "name": "experience-fragment",
+        "label": "experience-fragment",
+        "variationName": "experienceFragmentVariation",
+        "validation": {
+            "rootPath": "/content/refresh"
+        }
       }
     ]
   }
@@ -609,6 +666,8 @@ A radio group component type allows for a mutually-exclusive selection from mult
 >[!ENDTABS]
 
 #### Reference {#reference}
+
+An reference component type enables an AEM asset picker, which can be used to select any AEM asset to reference. Unlike the [AEM content component](#aem-content), which can select any AEM resource, the reference component can only reference assets. It offers an additional validation type.
 
 A reference component type allows for a reference to another data object from the current object.
 

@@ -2,11 +2,48 @@
 title: Supported file formats and MIME types
 description: File formats and MIME types supported by [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
 contentOwner: AG
-feature: Asset Management,Renditions
-role: User,Admin
+feature: Asset Management, Renditions
+role: User, Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
 ---
 # [!DNL Assets] supported file formats {#supported-file-formats}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime and Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets integration with Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI Extensibility</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Enable Dynamic Media Prime and Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media with OpenAPI capabilities</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets developer documentation</b></a>
+        </td>
+    </tr>
+</table>
 
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] supports basic content management capabilities &mdash; storage, managing metadata online, versioning, upload and download, and so on &mdash; for any binary file, independent of its format. [!DNL Adobe Experience Manager Assets] supports a wide range of file formats and each product feature has varied support for different formats.
 
@@ -76,8 +113,8 @@ See also [Work with 3D assets in Dynamic Media](/help/assets/dynamic-media/asset
 | gLTF | &#10003; | &#10003; | &#10003; |- | &#10003; |- | &#10003; |- |
 | OBJ | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
 | STL | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |- | &#10003; | &#10003; |
-| FBX | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |- |
-| 3DS | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |- |
+| FBX | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | - |- |
+| 3DS | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | - |- |
 | USDz |&#10003;| &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |- | &#10003; |
 | SBSAR |&#10003;| &#10003; | &#10003; |- | &#10003; | &#10003; |- |- |
 
@@ -141,31 +178,31 @@ The document formats supported for asset management features are as follows.
 
 ## Video formats {#video-formats}
 
-| File format | Thumbnail generation | Metadata extraction | Width/Height | Preview |
-| ----------- | -------------------- | ------------------- | ------------ | ------- |
-| 3G2         | -                    | &#10003;            | -            | -       |
-| 3GP         | -                    | &#10003;            | -            | -       |
-| AVI         | &#10003;             | &#10003;            | &#10003;     | &#10003;|
-| DIVX        | &#10003;             |  -                  | &#10003;     | &#10003;|
-| F4V         | &#10003;             | &#10003;            | &#10003;     | &#10003;|
-| FLV         | &#10003;             | &#10003;            | &#10003;     | &#10003;|
-| M2T         | &#10003;             | -                   | &#10003;     | &#10003;|
-| M2TS        | &#10003;             | -                   | &#10003;     | &#10003;|
-| M2V         | &#10003;             | -                   | &#10003;     | &#10003;|
-| M4V         | &#10003;             | &#10003;            | &#10003;     | &#10003;|
-| MKV         | &#10003;             | -                   | &#10003;     | &#10003;|
-| MOV         | &#10003;             | &#10003;            | &#10003;     | &#10003;|
-| MP4         | &#10003;             | &#10003;            | &#10003;     | &#10003;|
-| MPEG        | &#10003;             | &#10003;            | &#10003;     | &#10003;|
-| MPG         | &#10003;             | &#10003;            | &#10003;     | &#10003;|
-| MTS         | &#10003;             | -                   | &#10003;     | &#10003;|
-| MXF         | &#10003;             | -                   | &#10003;     | &#10003;|
-| OGV         | &#10003;             | -                   | &#10003;     | &#10003;|
-| QT          | &#10003;             | -                   | &#10003;     | &#10003;|
-| R3D         | -                    | &#10003;            | &#10003;     | &#10003;|
-| SWF         | &#10003;             | -                   | &#10003;     | &#10003;|
-| WebM        | &#10003;             | -                   | &#10003;     | &#10003;|
-| WMV         | &#10003;             | &#10003;            | &#10003;     | &#10003;|
+| File format | Thumbnail generation | Metadata extraction | Width/Height | Preview | Output |
+| ----------- | -------------------- | ------------------- | ------------ | ------- | ------- |
+| 3G2         | -                    | &#10003;            | -            | -       |  -           |
+| 3GP         | -                    | &#10003;            | -            | -       | -            |
+| AVI         | &#10003;             | &#10003;            | &#10003;     | &#10003;| -            |
+| DIVX        | &#10003;             |  -                  | &#10003;     | &#10003;| -             |
+| F4V         | &#10003;             | &#10003;            | &#10003;     | &#10003;| -             |
+| FLV         | &#10003;             | &#10003;            | &#10003;     | &#10003;| -             |
+| M2T         | &#10003;             | -                   | &#10003;     | &#10003;| -             |
+| M2TS        | &#10003;             | -                   | &#10003;     | &#10003;| -             |
+| M2V         | &#10003;             | -                   | &#10003;     | &#10003;| -             |
+| M4V         | &#10003;             | &#10003;            | &#10003;     | &#10003;| -             |
+| MKV         | &#10003;             | -                   | &#10003;     | &#10003;| -             |
+| MOV         | &#10003;             | &#10003;            | &#10003;     | &#10003;| -             |
+| MP4         | &#10003;             | &#10003;            | &#10003;     | &#10003;| &#10003;            |
+| MPEG        | &#10003;             | &#10003;            | &#10003;     | &#10003;| -             |
+| MPG         | &#10003;             | &#10003;            | &#10003;     | &#10003;| -             |
+| MTS         | &#10003;             | -                   | &#10003;     | &#10003;| -             |
+| MXF         | &#10003;             | -                   | &#10003;     | &#10003;| -             |
+| OGV         | &#10003;             | -                   | &#10003;     | &#10003;| -             |
+| QT          | &#10003;             | -                   | &#10003;     | &#10003;| -             |
+| R3D         | -                    | &#10003;            | &#10003;     | &#10003;| -             |
+| SWF         | &#10003;             | -                   | &#10003;     | &#10003;| -             |
+| WebM        | &#10003;             | -                   | &#10003;     | &#10003;| &#10003;             |
+| WMV         | &#10003;             | &#10003;            | &#10003;     | &#10003;| -             |
 
 ## Audio formats {#audio-formats}
 
@@ -233,6 +270,7 @@ The document formats supported for asset management features are as follows.
 | PSD &Dagger; | &#10003;| &minus; | &minus; | &minus; | &minus; | &minus; |
 | TIFF | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | [Image](/help/assets/dynamic-media/image-sets.md), [Mixed Media](/help/assets/dynamic-media/mixed-media-sets.md), and [Spin](/help/assets/dynamic-media/spin-sets.md) |
 | WEBP | &minus; | &minus; | &minus; | &#10003; | &minus; | &minus; | 
+
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
 
 ‡ The merged image is extracted from the PSD file. It is an image that is generated by [!DNL Adobe Photoshop] and is included in the PSD file. Depending on the settings, the merged image may or may not be the actual image.
@@ -276,5 +314,5 @@ See also [3D formats supported](/help/assets/file-format-support.md#support-3d-f
 
 >[!MORELIKETHIS]
 >
->* [Asset processing using asset microservices](asset-microservices-overview.md)
+>* [Asset processing using asset microservices](asset-microservices-overview.md).
 >* [Supported file formats for smart tagging of text-based assets](/help/assets/smart-tags.md#smart-tags-supported-file-formats)

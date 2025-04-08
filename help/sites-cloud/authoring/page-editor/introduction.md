@@ -2,14 +2,17 @@
 title: The AEM Page Editor
 description: The AEM page editor is a powerful tool for authoring your content.
 exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # The AEM Page Editor {#editing-page-content}
 
-Once your page is created in the [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) you can edit the content of the page using the AEM page editor, a powerful tool for authoring your content.
+Once your page is created in the [**Sites** console](/help/sites-cloud/authoring/sites-console/introduction.md), you can edit the content of the page using the AEM page editor, a powerful tool for authoring your content.
 
 >[!NOTE]
 >
->When editing a page in the [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) the console will open the editor appropriate to the page's [template:](/help/sites-cloud/authoring/sites-console/templates.md) either the page editor described in this document, or the [Universal Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
+>When editing a page in the [**Sites** console](/help/sites-cloud/authoring/sites-console/introduction.md), the console will open the editor appropriate to the page's [template](/help/sites-cloud/authoring/page-editor/templates.md) either the page editor described in this document, or the [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md).
 
 >[!NOTE]
 >
@@ -35,7 +38,7 @@ The page toolbar offers access to context-appropriate functionality, dependent o
 
 #### Side Panel {#side-panel-button}
 
-This opens/closes the [side panel,](/help/sites-cloud/authoring/page-editor/editor-side-panel.md) which holds the Asset Browser, Component Browser, and Content Tree.
+This opens/closes the [side panel](/help/sites-cloud/authoring/page-editor/editor-side-panel.md), which holds the Asset Browser, Component Browser, and Content Tree.
 
 ![Side Panel toggle](assets/page-editor-side-panel-toggle.png)
 
@@ -53,7 +56,7 @@ This provides access to detailed page information including page details and act
 * [Lock Page](/help/sites-cloud/authoring/page-editor/introduction.md#locking-unlocking)
 * [Publish Page](/help/sites-cloud/authoring/sites-console/publishing-pages.md#publishing-pages-1)
 * [Unpublish Page](/help/sites-cloud/authoring/sites-console/publishing-pages.md#unpublishing-pages)
-* [Edit Template](/help/sites-cloud/authoring/sites-console/templates.md)
+* [Edit Template](/help/sites-cloud/authoring/page-editor/templates.md)
 * [View as Published](/help/sites-cloud/authoring/page-editor/introduction.md#view-as-published)
 * [View in Admin](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)
 * [Help](/help/sites-cloud/authoring/basic-handling.md#accessing-help)
@@ -69,7 +72,7 @@ This toggles the [emulator toolbar](/help/sites-cloud/authoring/page-editor/resp
 
 #### ContextHub {#context-hub}
 
-This opens the [ContextHub.](/help/sites-cloud/authoring/personalization/contexthub.md) It is only available in **Preview** mode.
+This opens the [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md). It is only available in **Preview** mode.
 
 ![Context Hub button](assets/page-editor-context-hub.png)
 
@@ -105,7 +108,7 @@ There are various modes when editing a page allowing for different actions:
 
 #### Preview {#preview}
 
-The **Preview** button enables [preview mode.](#preview-mode), displaying the page as it will appear when published.
+The **Preview** button enables [preview mode](#preview-mode), displaying the page as it will appear when published.
 
 ![Preview button](assets/page-editor-preview.png)
 

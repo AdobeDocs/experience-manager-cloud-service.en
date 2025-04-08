@@ -2,6 +2,8 @@
 title: Understand Reference Demo Add-on Installation
 description: Learn about Cloud Manager and how it is used to install the add-on.
 exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
+feature: Onboarding
+role: Admin, User, Developer
 ---
 # Understand Reference Demo Add-on Installation {#understand-installation}
 
@@ -96,7 +98,7 @@ Now that you have completed this part of the AEM Reference Demos Add-on journey 
 * Understand how pipelines deliver content and configuration to AEM.
 * See how templates can create sites prepopulated with demo content with just a few clicks.
 
-Build on this knowledge and continue your AEM Quick Site Creation journey by reviewing [Create a Program and a Pipeline,](create-program.md) where you learn how to set up a new program and pipeline to deploy the add-on.
+Build on this knowledge and continue your AEM Quick Site Creation journey by reviewing [Create a Program and a Pipeline](create-program.md), where you learn how to set up a new program and pipeline to deploy the add-on.
 
 ## Additional Resources {#additional-resources}
 

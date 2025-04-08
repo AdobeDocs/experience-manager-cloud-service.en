@@ -3,10 +3,13 @@ title: How to generate a document of record (DoR) for AEM Forms?
 description: Learn to generate a template for a Document of Record (DoR) for Adaptive Forms.
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
+role: User, Developer
 ---
 # Generate Document of Record for Adaptive Forms
 
-<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
+>[!NOTE]
+>
+> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components.
 
 
 | Version | Article link |
@@ -46,7 +49,7 @@ Upload your XFA template (XDP file) to your AEM Forms instance. Perform the foll
 1. In the Properties window, select **[!UICONTROL Form Model]**.
 1. On the  **[!UICONTROL Form Model]** tab, in the **[!UICONTROL Select From]** drop-down, select **[!UICONTROL Schema]** or **[!UICONTROL None]**. You can also select a form model when you create a form.
 1. In the Document of Record Template Configuration section of the Form Model tab, select **Associate Form Template as Document of Record Template**. On selecting this option, all XFA template (XDP files) available on your machine are displayed. Select the appropriate file. Also, ensure same schema (data schema) is used for Adaptive Form and selected XFA template (XDP file).  
-1. Click **[!UICONTROL Done.]**
+1. Click **[!UICONTROL Done]**
 
 Your Adaptive Form is now configured to use an XDP file as template for Document of Record. The next step is to [bind Adaptive Form components with corresponding template fields](#bind-adaptive-form-components-with-template-fields).
 
@@ -59,7 +62,7 @@ Upload your Adobe Acrobat PDF (Acroform) to your AEM Forms instance. Perform the
 1. In the Properties window, select **[!UICONTROL Form Model]**.
 1. On the  **[!UICONTROL Form Model]** tab, in the **[!UICONTROL Select From]** drop-down, select **[!UICONTROL Schema]** or **[!UICONTROL None]**. You can also select a form model when you create a form.
 1. In the Document of Record Template Configuration section of the Form Model tab, select **Associate Form Template as Document of Record Template**. On selecting this option, all Acrobat PDF (Acroform) available on your machine are displayed. Select the appropriate file.
-1. Click **[!UICONTROL Done.]**
+1. Click **[!UICONTROL Done]**
 
 Your Adaptive Form is now configured to use an Acroform as template for Document of Record. The next step is to [bind Adaptive Form components with corresponding template fields](#bind-adaptive-form-components-with-template-fields).
 
@@ -80,7 +83,7 @@ Perform the following steps to configure an Adaptive Form to automatically gener
 1. In the Properties window, select **[!UICONTROL Form Model]**.
 1. On the  **[!UICONTROL Form Model]** tab, in the **[!UICONTROL Select From]** drop-down, select **[!UICONTROL Schema]** or **[!UICONTROL None]**. You can also select a form model when you create a form.
 1. In the Document of Record Template Configuration section of the Form Model tab, select **Generate Document of Record**.
-1. Click **[!UICONTROL Done.]**
+1. Click **[!UICONTROL Done]**
 
 ## Bind Adaptive Form components with template fields {#bind-adaptive-form-components-with-template-fields}
 
@@ -122,6 +125,7 @@ The developer uploads and applies to the updated template to the adaptive form. 
 ![Binding Error](assets/we-retail-binding-error.png)
 
 The form developer binds Adaptive Forms fields with corresponding Document of Record template.
+
 >[!VIDEO](assets/we-retail-binding.mp4)
 
 Now, when the Adaptive Form is submitted an updated  Document of Record of record is created.

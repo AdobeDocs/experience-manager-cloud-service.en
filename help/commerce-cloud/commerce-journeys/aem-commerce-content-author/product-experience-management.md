@@ -2,6 +2,8 @@
 title: Building Product Experiences
 description: Learn how to build product content that can then be used in various channels to create an immersive shopping experience.
 exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
+feature: Commerce Integration Framework
+role: Admin
 ---
 # Building Product Experiences {#building-experiences}
 

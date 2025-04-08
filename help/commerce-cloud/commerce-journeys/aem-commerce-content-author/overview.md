@@ -2,6 +2,8 @@
 title: AEM Commerce Content Author Journey
 description: Start here for a guided journey through AEM Commerce Authoring
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
+feature: Commerce Integration Framework
+role: Admin
 ---
 # AEM Content and Commerce Content Author Journey {#aem-commerce-author-journey}
 

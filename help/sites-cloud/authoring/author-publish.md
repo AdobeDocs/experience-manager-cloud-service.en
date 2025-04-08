@@ -2,6 +2,9 @@
 title: Authoring and Publishing Concepts
 description: Learn the concepts of authoring in AEM, using the author, preview, and publish environments.
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 
 # Authoring and Publishing Concepts {#authoring-publishing}
@@ -22,7 +25,7 @@ Content can be of many different types, including pages, assets, and publication
 
 ![Diagram of author, publisher, and dispatchers](assets/author-publish.jpg)
 
-For further details on the technical architecture of AEM as a Cloud Service, please see the document [An Introduction to the Architecture of Adobe Experience Manager as a Cloud Service.](/help/overview/architecture.md)
+For further details on the technical architecture of AEM as a Cloud Service, please see the document [An Introduction to the Architecture of Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md).
 
 {{edge-delivery-authoring}}
 

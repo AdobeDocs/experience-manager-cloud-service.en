@@ -3,7 +3,7 @@ title: Style Adobe Experience Manager CIF Core Components
 description: Learn how to style Adobe Experience Manager (AEM) CIF Core Components. The tutorial covers how Client-Side Libraries or clientlibs are used to deploy and manage CSS and JavaScript for an AEM Commerce implementation. This tutorial also covers how the ui.frontend module and a webpack project are integrated into the end-to-end build process.
 sub-product: Commerce
 topics: Development
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
@@ -11,6 +11,7 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
+role: Admin
 ---
 # Style AEM CIF Core Components {#style-aem-cif-core-components}
 
@@ -429,7 +430,7 @@ Return to the IDE and the generated project.
 
     ![Webpack Dev Server teaser changes](../assets/style-cif-component/webpack-dev-server-teaser-changes.png)
 
-    However, the changes have not been deployed to AEM yet. You can download the [solution file here](../assets/style-cif-component/_productteaser.scss).
+    However, the changes have not been deployed to AEM yet. You can [download the solution file here](../assets/style-cif-component/_productteaser.scss).
 
 1. Deploy the updates to AEM using your Maven skills, from a command-line terminal:
 

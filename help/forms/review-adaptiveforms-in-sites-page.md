@@ -4,8 +4,9 @@ description: Review is a mechanism that allows reviewer to perform different tas
 feature: Adaptive Forms
 hide: yes
 hidefromtoc: yes
+role: User
+exl-id: e53535a8-cd6b-4f30-9523-773243098757
 ---
-
 # Create and manage reviews for an Adaptive Form {#review-step-forms-aem-sites-page}
 
 Using the [Assign step](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html#assign-task-step) of the AEM workflow, the reviewer reviews the submitted form and performs action on it. To review the submitted form using the Assign task step, follow these steps:

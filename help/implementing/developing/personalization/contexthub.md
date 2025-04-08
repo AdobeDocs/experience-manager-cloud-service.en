@@ -2,6 +2,8 @@
 title: ContextHub
 description: ContextHub is a framework for storing, manipulating, and presenting context data
 exl-id: 604477c6-d96a-441f-b5fc-5def93832478
+feature: Developing, Personalization
+role: Admin, Architect, Developer
 ---
 # ContextHub {#contexthub}
 
@@ -17,7 +19,7 @@ The client-side JavaScript API enables you to access the data for personalizing 
 
 ## Presentation {#presentation}
 
-The [ContextHub toolbar](/help/sites-cloud/authoring/personalization/contexthub.md) enables marketers and authors to see and manipulate store data for simulating the user experience when authoring pages. The toolbar consists of groups of UI modules that provide access to [ContextHub stores,](#persistence) which persist ContextHub data on the client.
+The [ContextHub toolbar](/help/sites-cloud/authoring/personalization/contexthub.md) enables marketers and authors to see and manipulate store data for simulating the user experience when authoring pages. The toolbar consists of groups of UI modules that provide access to [ContextHub stores](#persistence), which persist ContextHub data on the client.
 
 Each ContextHub UI module is an instance of a predefined module type:
 

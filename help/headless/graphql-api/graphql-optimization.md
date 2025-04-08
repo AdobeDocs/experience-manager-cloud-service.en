@@ -2,6 +2,8 @@
 title: Optimizing GraphQL queries
 description: Learn how to optimize your GraphQL queries when Filtering, Paging and Sorting your Content Fragments in Adobe Experience Manager as a Cloud Service for headless content delivery.
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Developer
 ---
 # Optimizing GraphQL Queries {#optimizing-graphql-queries}
 
@@ -74,16 +76,6 @@ See:
 
 * [Caching your persisted queries](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries)
 * [Managing cache for your persisted queries](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
-
-#### Use AEM GraphQL pre-caching {#use-aem-graphql-pre-caching}
-
-**Recommendation**
-
-This capability allows AEM to further cache content within the scope of GraphQL queries that can then be assembled as blocks in JSON output rather than line by line. 
-
-**Further Reference**
-
-Contact Adobe to enable this capability for your AEM Cloud Service program and environments. 
 
 ### GraphQL Query optimization {#graphql-query-optimization}
 

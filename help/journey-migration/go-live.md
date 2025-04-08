@@ -2,6 +2,8 @@
 title: Go-Live
 description: Learn how to perform the migration once the code and the content are cloud ready
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
+feature: Migration
+role: Admin
 ---
 # Go-Live {#go-live}
 
@@ -93,7 +95,6 @@ Take into account that the entire ingestion fails if any of the following limita
 
 * A JCR Node that has a name longer than 150 characters
 * A JCR Node that is larger than 16 MB
-* Any User / Group with `rep:AuthorizableID` being ingested that is already present on AEM as a Cloud Service
 * If any asset that is extracted and ingested moves into a different path either on source or destination before the next iteration of the migration.
 
 ## Asset Health {#asset-health}

@@ -1,12 +1,19 @@
 ---
 title: Learning to use GraphQL with AEM - Sample Content and Queries
 description: Learn to use GraphQL with AEM so you can serve content headlessly by exploring sample content and queries.
-feature: Content Fragments,GraphQL API
+feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
+role: Admin, Developer
 ---
 # Learning to use GraphQL with AEM - Sample Content and Queries {#learn-graphql-with-aem-sample-content-queries}
 
 Learn to use GraphQL with AEM so you can serve content headlessly by exploring sample content and queries.
+
+>[!IMPORTANT]
+>
+>Various features of the GraphQL API for use with Content Fragments are available through the Early Adopter Program.
+>
+>To see the status, and how to apply if you are interested, check the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 >[!NOTE]
 >
@@ -1479,6 +1486,77 @@ The following query returns all `attachments` - a specific field (subgroup) of t
 }
 ```
 
+### Sample Queries for a Content Fragment of a specific Model using UUID references {#sample-wknd-fragment-specific-model-uuid-references}
+
+These queries interrogate:
+
+* the UUID for a Content Fragment, and for referenced Content Fragments or assets
+* the result is returned through the JSON property `_id`
+
+#### Sample Query for a Content Fragment of a specific Model using a UUID reference {#sample-wknd-fragment-specific-model-using-a-uuid-reference}
+
+The following query returns all content references by using `_id` and `_path`:
+
+```graphql
+{
+  articleList {
+    items {
+        _id
+        _path
+        title
+        featuredImage {
+          ... on ImageRef {
+            _id
+            _path           
+          }
+        }
+        authorFragment {
+          firstName
+          lastName
+          profilePicture {
+            ... on ImageRef {
+              _id
+              _path
+            }
+          }
+        }
+      }
+  }
+}
+```
+
+#### Sample Query for Content Fragments by UUID reference {#sample-wknd-fragment-specific-model-by-uuid-reference}
+
+The following query returns all content references related to a specific `_id`:
+
+```graphql
+{
+  articleById(_id: "3ce2bf53-7436-4d3e-b19a-2793bc2ca63e") {
+    item {
+      _id
+      _path
+      title
+      featuredImage {
+        ... on ImageRef {
+          _id
+          _path
+        }
+      }
+      authorFragment {
+        firstName
+        lastName
+        profilePicture {
+          ... on ImageRef {
+            _id
+            _path
+          }
+        }
+      }
+    }
+  }
+}
+```
+
 ### Sample Query for a single Content Fragment with RTE Inline Reference {#sample-wknd-single-fragment-rte-inline-reference}
 
 This query interrogates:
@@ -1788,6 +1866,24 @@ This query interrogates:
   }
 } 
 ```
+
+## Sample Queries for Delivery of DAM and Dynamic Media Assets {#sample-queries-delivery-DAM-DM}
+
+For web-optimized image delivery (of DAM assets):
+
+* [Sample Query for web-optimized image delivery with full parameters](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-full-parameters)
+
+* [Sample Query for web-optimized image delivery with a single specified parameter](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-single-query-variable)
+
+For the delivery of the URL to a Dynamic Media asset
+
+* See [Sample query for Dynamic Media asset delivery by URL - Image Reference](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+
+* See [Sample query for Dynamic Media asset delivery by URL - Multiple References](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+
+For the delivery of remote assets, that are not local to the current AEM instance, from the Content Fragment Editor. 
+
+* See [Sample query for Dynamic Media for OpenAPI asset support (Remote Assets)](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-for-openapi-asset-support)
 
 ## The Sample Content Fragment Structure (used with GraphQL) {#content-fragment-structure-graphql}
 

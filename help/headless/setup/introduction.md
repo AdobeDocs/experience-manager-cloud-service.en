@@ -2,6 +2,8 @@
 title: Headless Setup
 description: With this quick start guide, learn the essentials of AEM as a Cloud Service's powerful headless capabilities like Content Models, Content Fragments, and the GraphQL API.
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
+feature: Headless
+role: Admin, Developer
 ---
 # Headless Setup {#introduction}
 
@@ -36,4 +38,4 @@ However in a production situation, the tasks are performed by different personas
 
 ## Next Step {#next-step}
 
-Ready to learn more? Then get started by reading the first part of the Headless Setup: [Creating a Configuration.](create-configuration.md)
+Ready to learn more? Then get started by reading the first part of the Headless Setup: [Creating a Configuration](create-configuration.md).

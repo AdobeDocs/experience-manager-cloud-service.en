@@ -31,7 +31,7 @@ AEM Forms provide **[!UICONTROL Adaptive Form Container]** and **[!UICONTROL Ada
 Using **[!UICONTROL Adaptive Forms – Embed(v2)]** in AEM Page Editor lets you create seamless data capture experiences within a Sites page using the power of Adaptive Forms components including dynamic behavior, validations, data integration, generate document of record and business process automation. It also lets you use various features of AEM Sites pages like, versioning, targeting, translation, and multi-site manager, enhancing the overall form creation and management experience. Let's explore some of these features:
 
 * **Versioning:** AEM Sites pages offer [robust versioning capabilities](/help/sites-cloud/authoring/sites-console/page-versions.md), allowing you to track and manage different versions of your forms. This enables you to make changes and enhancements to forms while maintaining the ability to roll back to previous versions if needed. Versioning ensures a controlled and organized approach to form development and evolution.
-* **Targeting (Integration with Adobe Target):** With AEM Sites pages targeting capabilities, you can also [personalize the form experience for different audiences](/help/sites-cloud/integrating/integration-adobe-target-ims.md). By using user segments and targeting criteria, you can tailor the form's content, design, or behavior to specific groups of users. This enables you to provide a personalized and relevant form experience, increasing engagement and conversion rates.
+* **Targeting (Integration with Adobe Target):** With AEM Sites pages targeting capabilities, you can also [personalize the form experience for different audiences](/help/sites-cloud/integrating/integrating-adobe-target.md). By using user segments and targeting criteria, you can tailor the form's content, design, or behavior to specific groups of users. This enables you to provide a personalized and relevant form experience, increasing engagement and conversion rates.
 * **Translation:** AEM Sites [seamless integration with translation services](/help/sites-cloud/administering/translation/overview.md), allowing you to translate forms into multiple languages easily. This feature simplifies the localization process, ensuring that your forms are accessible to a global audience. You can manage translations efficiently within AEM translation projects, reducing time and effort required for multilingual form support. See considerations section for more information on translation.  
 * **Multi-site Management and Live Copy:** AEM Sites provide robust [Multi-site Management and Live Copy capabilities](/help/sites-cloud/administering/msm/overview.md), enabling you to create and manage multiple websites within a single environment. This feature now lets you reuse forms across different sites, ensuring consistency and reducing duplication efforts. With centralized control and management, you can efficiently maintain and update forms across multiple websites.
 * **Themes:** AEM Sites pages provide a framework for designing and maintaining consistent visual styles across multiple web pages. These define colors, fonts, style sheets, and other visual elements that contribute to the overall look and feel of the website. [You can use the themes designed for an AEM Sites page for an Adaptive Form, saving time and effort](/help/sites-cloud/administering/site-creation/site-themes.md#using-site-themes-using-themes). 
@@ -69,13 +69,11 @@ You can take full advantage of this feature by using the following options:
 
 Before you start embedding a new Adaptive Form or a pre-existing Adaptive Form using **[!UICONTROL Adaptive Forms – Embed(v2)]**, enable **Adaptive Forms Core Components** and add **Adaptive Forms Client Libraries** to your AEM Sites page:
 
-+++  Enable Adaptive Forms Core Components for your AEM Cloud Service environment
+### Enable Adaptive Forms Core Components for your AEM Cloud Service environment
 
 Ensure that the [Adaptive Forms Core Components are enabled for your AEM Forms as a Cloud Service environment](enable-adaptive-forms-core-components.md). 
 
-+++ 
-
-+++  Add Adaptive Forms Client Libraries to your AEM Sites page or Experience Fragment 
+### Add Adaptive Forms Client Libraries to your AEM Sites page or Experience Fragment 
 
 When the **[!UICONTROL When form covers entire width of a page]** option is selected in the **[!UICONTROL Form Containers]** configure dialog box and Adaptive Forms using Core Components are used, it is necessary to include the client libraries on your corresponding Site's page. 
 
@@ -123,10 +121,8 @@ Add the **Customheaderlibs** and **Customfooterlibs** client libraries to your A
       ```
 
   1. [Run the deployment pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) to deploy the client libraries to your AEM as a Cloud Service environment. 
-
-+++ 
-
-+++ Enable **[!UICONTROL Adaptive Forms – Embed(v2)]** for your AEM Sites page or Experience Fragment 
+ 
+### Enable Adaptive Forms – Embed(v2) for your AEM Sites page or Experience Fragment 
 
 To enable **[!UICONTROL Adaptive Forms – Embed(v2)]** component in template's policy, perform the following steps:
 
@@ -135,9 +131,7 @@ To enable **[!UICONTROL Adaptive Forms – Embed(v2)]** component in template's 
   1. In the Structure view, click the **[!UICONTROL Policy]** ![Policy](/help/forms/assets/Smock_FeedManagement_18_N.svg) icon in the menu bar. In the **[!UICONTROL Allowed Components]** list and select the **[!UICONTROL Adaptive Forms – Embed(v2)]**  checkbox under the **[AEM Archetype Project Name] - Adaptive Form**.
   1. Click **[!UICONTROL Done]**.
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3419369?quality=12&learn=on)
-
-+++
+>[!VIDEO](https://video.tv.adobe.com/v/3419369?quality=12&learn=on)
 
 ## Embed an Adaptive Form using the Adaptive Forms - Embed(v2) component {#embed-an-adaptive-form-in-sites-editor-or-experience-fragment}
 

@@ -2,6 +2,8 @@
 title: Adding Screens Add-on to a New Program in Cloud Manager
 description: Learn about adding a Screens add-on to a new program in Cloud Manager for Screens as a Cloud Service.
 exl-id: 36d1e1e9-5272-4138-9e0d-8476edc729f0
+feature: Screens Deployments
+role: Admin, Developer, User
 ---
 # Adding Screens as an Add-on to a New Program in Cloud Manager {#create-programs-screens-cloud}
 

@@ -2,6 +2,8 @@
 title: ContextHub JavaScript API Reference
 description: The ContextHub JavaScript API is available to your scripts when the ContextHub component has been added to the page
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
+feature: Developing, Personalization
+role: Admin, Architect, Developer
 ---
 # ContextHub JavaScript API Reference {#contexthub-javascript-api-reference}
 
@@ -475,7 +477,7 @@ Resolves the given parameter.
 
 ## ContextHub.Store.PersistedJSONPStore {#contexthub-store-persistedjsonpstore}
 
-`ContextHub.Store.PersistedJSONPStore` extends [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore) so it inherits all functions of that class. However, the data that is retrieved from the JSONP service is persisted according to the configuration of ContextHub persistence. (See [Persistence Modes:](adding-contexthub.md#persistence-modes))
+`ContextHub.Store.PersistedJSONPStore` extends [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore) so it inherits all functions of that class. However, the data that is retrieved from the JSONP service is persisted according to the configuration of ContextHub persistence. (See [Persistence Modes](adding-contexthub.md#persistence-modes))
 
 ## ContextHub.Store.PersistedStore {#contexthub-store-persistedstore}
 
@@ -1025,7 +1027,7 @@ ContextHub.Utils.JSON.tree.sanitizeKey(key)
 
 #### setItem(tree, key, value) {#setitem-tree-key-value}
 
-Adds a key/value pair to the data tree of a copy of an object. For information about data trees, see [Persistence.](contexthub.md#persistence)
+Adds a key/value pair to the data tree of a copy of an object. For information about data trees, see [Persistence](contexthub.md#persistence).
 
 ##### Parameters {#parameters-setitem-2}
 

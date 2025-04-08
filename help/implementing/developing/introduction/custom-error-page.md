@@ -2,6 +2,8 @@
 title: Custom Error Pages
 description: AEM comes with a standard error handler for handling HTTP errors, which can be customized.
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Customizing Error Pages {#customizing-error-pages}
 
@@ -13,7 +15,7 @@ To respond to errors, AEM provides a `404.jsp` script under `/libs/sling/servlet
 
 >[!TIP]
 >
->Because AEM is based on Apache Sling, further information is available [in the Apache error handling documentation.](https://sling.apache.org/documentation/the-sling-engine/errorhandling.html)
+>Because AEM is based on Apache Sling, further information is available [in the Apache error handling documentation](https://sling.apache.org/documentation/the-sling-engine/errorhandling.html).
 
 >[!NOTE]
 >

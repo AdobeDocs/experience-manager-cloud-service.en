@@ -3,8 +3,46 @@ title: Edit videos
 description: Edit videos using [!DNL Adobe Express] powered options and save updated videos as versions.
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
+feature: Best Practices, Video, Interactive Videos
 ---
 # Edit videos in [!DNL Assets view] {#edit-videos}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime and Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets integration with Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI Extensibility</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Enable Dynamic Media Prime and Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media with OpenAPI capabilities</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets developer documentation</b></a>
+        </td>
+    </tr>
+</table>
 
 Creating variations of video content is easy for Assets users with the embedded [!DNL Adobe Express] quick actions for video. Quick actions in [!DNL Assets view] powered by [!DNL Adobe Express] provides user-friendly video editing options including crop video, resize video, trim video, and convert video to GIF.
 
@@ -77,7 +115,7 @@ Your video is available in GIF format for download. You can either save the edit
 
 * Only videos in the MP4 format are supported for editing.
 
-* The maximum source file size supported is 200 MB.
+* The maximum source file size supported is 1GB.
 
 * Supported videos are larger than 46 pixels and smaller than 3840 pixels on any side.
 
@@ -87,11 +125,11 @@ Your video is available in GIF format for download. You can either save the edit
 
 ### Next Steps {#next-steps}
 
-* Provide product feedback using the [!UICONTROL Feedback] option available on the Assets view user interface
+* Provide product feedback using the [!UICONTROL Feedback] option available on the Assets view user interface.
 
-* Provide documentation feedback using [!UICONTROL Edit this page] ![edit the page](assets/do-not-localize/edit-page.png) or [!UICONTROL Log an issue] ![create a GitHub issue](assets/do-not-localize/github-issue.png) available on the right sidebar
+* Provide documentation feedback using [!UICONTROL Edit this page] ![edit the page](assets/do-not-localize/edit-page.png) or [!UICONTROL Log an issue] ![create a GitHub issue](assets/do-not-localize/github-issue.png) available on the right sidebar.
 
-* Contact [Customer Care](https://experienceleague.adobe.com/?support-solution=General#support)
+* Contact [Customer Care](https://experienceleague.adobe.com/?support-solution=General#support).
 
 >[!MORELIKETHIS]
 >

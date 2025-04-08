@@ -4,6 +4,7 @@ description: Learn about using the Language Copy Wizard in AEM.
 feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
+solution: Experience Manager Sites
 ---
 # Language Copy Wizard {#language-copy-wizard}
 
@@ -11,7 +12,7 @@ The Language Copy Wizard is a guided experience for creating and instrumenting m
 
 >[!TIP]
 >
->If you are new to translating content, see [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM’s powerful translation tools, ideal for those with no AEM or translation experience.
+>If you are new to translating content, see [Sites Translation Journey](/help/journey-sites/translation/overview.md), which is guided path through translating your AEM Sites content using AEM's powerful translation tools, ideal for those with no AEM or translation experience.
 
 >[!NOTE]
 >

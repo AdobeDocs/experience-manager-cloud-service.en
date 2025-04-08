@@ -2,6 +2,8 @@
 title: Using Content Transformer
 description: Learn how to transform your content structure in preparation for migrating to AEM as a Cloud Service.
 exl-id: 40516ff7-5686-42e6-bdd1-c9c6de432b09
+feature: Migration
+role: Admin
 ---
 # Using Content Transformer {#using-ct}
 

@@ -2,6 +2,8 @@
 title: Query Builder API
 description: The functionality of the Asset Share Query Builder is exposed through a Java&trade; API and a REST API.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Query Builder API {#query-builder-api}
 
@@ -479,7 +481,7 @@ Use the AEM Query Builder debugger to generate an explainable XPath query.
 >
 >The configuration of the loggers is described in the document [Logging](/help/implementing/developing/introduction/logging.md).
 
-The log output (INFO level) of the query builder implementation when executing the query described in the previous section [Testing and Debugging:](#testing-and-debugging)
+The log output (INFO level) of the query builder implementation when executing the query described in the previous section [Testing and Debugging](#testing-and-debugging)
 
 ```xml
 com.day.cq.search.impl.builder.QueryImpl executing query (predicate tree):

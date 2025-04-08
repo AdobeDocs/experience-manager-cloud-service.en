@@ -3,6 +3,7 @@ title: Release Notes for Migration Tools in AEM as a Cloud Service Release 2023.
 description: Release Notes for Migration Tools in AEM as a Cloud Service Release 2023.08.0
 feature: Release Information
 exl-id: 1c822ece-620a-4866-be5a-065cb6a90204
+role: Admin
 ---
 # Release Notes for Migration Tools in AEM as a Cloud Service Release 2023.08.0 {#release-notes}
 

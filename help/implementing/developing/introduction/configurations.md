@@ -2,6 +2,8 @@
 title: Configurations and the Configuration Browser
 description: Understand Adobe Experience Manager (AEM) configurations and how they manage workspace settings in AEM.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Configurations and the Configuration Browser {#configuration-browser}
 
@@ -28,8 +30,8 @@ The AEM administrator and authors can consider configurations as workspaces. The
 Configurations can be created for many different features within AEM.
 
 * [Context Hub Segments](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-* [Editable Templates](/help/sites-cloud/authoring/sites-console/templates.md)
+* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
+* [Editable Templates](/help/sites-cloud/authoring/page-editor/templates.md)
 * various Cloud Configurations
 
 ### Example {#administrator-example}
@@ -70,12 +72,12 @@ It is simple to create a configuration in AEM using the Configuration Browser.
 
    * The **Title** should be descriptive.
    * The **Name** becomes the node name in the repository.
-     * It is automatically generated based on the title and adjusted according to [AEM naming conventions.](naming-conventions.md)
+     * It is automatically generated based on the title and adjusted according to [AEM naming conventions](naming-conventions.md).
      * It can be adjusted if necessary.
 1. Check the type of configurations that you want to allow.
    * [Context Hub Segments](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-   * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-   * [Editable Templates](/help/sites-cloud/authoring/sites-console/templates.md)
+   * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
+   * [Editable Templates](/help/sites-cloud/authoring/page-editor/templates.md)
    * various Cloud Configurations
 1. Select **Create**.
 
@@ -192,7 +194,7 @@ To support this the configuration lookup, AEM has an inheritance and fallback me
 
 Configurations in AEM are based on Sling Context-Aware Configurations. The Sling bundles provide a service API that can be used to get context-aware configurations. Context-aware configurations are configurations that are related to a content resource or a resource tree as was [described in the previous example](#developer-example).
 
-For more details about Context-Aware Configurations, examples, and how to use them, see the [Sling documentation.](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html).
+For more details about Context-Aware Configurations, examples, and how to use them, see the [Sling documentation](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html).
 
 ### ConfMgr Web Console {#confmgr-web-console}
 
