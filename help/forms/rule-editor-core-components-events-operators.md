@@ -50,7 +50,7 @@ The rule editor provides a set of predefined rule types that you can use to writ
 
 The **[!UICONTROL When]** rule type follows the **condition-action-alternate action** rule construct, or sometimes, just the **condition-action** construct. In this rule type, you first specify a condition for evaluation followed by an action to trigger if the condition is satisfied ( `True`). While using the When rule type, you can use multiple AND and OR operators to create [nested expressions](/help/forms/rule-editor-core-components-usecases.md#nested-expressions).
 
-Using the When rule type, you can evaluate a condition on a form object and perform actions on one or more objects. You can also add multiple conditions to the button click. 
+Using the When rule type, you can evaluate a condition on a form object and perform actions on one or more objects.  
 
 In plain words, a typical When rule is structured as follows:
 
@@ -110,6 +110,10 @@ _
 * Ensure that the [core component is set to version 3.0.14 or later](https://github.com/adobe/aem-core-forms-components) to use this feature in the rule editor.
 * If rules are applied to different fields within the When condition, the rule triggers even if only one of those fields is changed.
 * You can only add the multiple fields in the **When** condition for an **AND** rule. It is not possible for an **OR** rule.
+
+>[!NOTE]
+>
+> To add multiple conditions that include a button click, make sure the button click event is placed as the first condition. For example, `When button is clicked AND text input equals '5'` is valid, whereas `When text input equals '5' AND button is clicked` is not supported.
   
 <!--
 * It is not possible to add multiple fields in the When condition while applying rules to a button.
