@@ -17,7 +17,7 @@ When an author creates a page, they must select a template, which is used as the
 
 >[!NOTE]
 >
->[Templates are also available for creating pages that are editable with the Universal Editor.](/help/sites-cloud/authoring/universal-editor/templates.md)
+>[Templates are also available for creating pages that are editable with the Universal Editor](/help/sites-cloud/authoring/universal-editor/templates.md).
 
 With the **Template Editor**, creating and maintaining templates is not developer-only task. A type of power-user, who is called a **template author**, can create templates. Developers are required to setup the environment, create client libraries, and create the components to be used, but once these basics are in place the **template author** has the flexibility to create and configure templates without involving a developer.
 
@@ -89,7 +89,7 @@ When creating an editable template you:
 >
 >Never enter any information that must be [internationalized](/help/implementing/developing/extending/i18n/dev.md) into a template.
 >
->For template elements such as headers and footers that must be localized, use the [localization features of the core components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
+>For template elements such as headers and footers that must be localized, use the [localization features of the core components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
 
 ### Creating a Template Folder - Admin {#creating-a-template-folder-admin}
 
@@ -204,7 +204,7 @@ A template can be made available or unavailable for certain page branches.
 
 As the template is referenced when a page is rendered, the fully configured template must be published so that it is available on the publish environment.
 
-Publish templates using the **[Templates Console.](/help/sites-cloud/administering/templates-console.md)**
+Publish templates using the **[Templates Console](/help/sites-cloud/administering/templates-console.md)**.
 
 ## Editing Templates - Template Authors {#editing-templates-template-authors}
 
@@ -299,7 +299,7 @@ Once added, each component is marked with:
 
 >[!NOTE]
 >
->Although not identical, adding components and assets to a template has many similarities to similar actions when [page authoring.](/help/sites-cloud/authoring/page-editor/edit-content.md)
+>Although not identical, adding components and assets to a template has many similarities to similar actions when [page authoring](/help/sites-cloud/authoring/page-editor/edit-content.md).
 
 #### Component Actions {#component-actions}
 
@@ -641,4 +641,4 @@ When creating templates you should consider:
    >AEM gives explicit warnings when changing the lock status of components on templates that are no longer drafts.
 
 1. [Creating your own folders](#creating-a-template-folder-admin) for your site-specific templates.
-1. [Publish your templates](#publishing-a-template-template-author) from the **[Templates console.]**(/help/sites-cloud/administering/templates-console.md)
+1. [Publish your templates](#publishing-a-template-template-author) from the **[Templates console]**(/help/sites-cloud/administering/templates-console.md).

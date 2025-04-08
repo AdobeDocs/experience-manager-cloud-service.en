@@ -47,8 +47,8 @@ The Forms Conversion Utility converts Adaptive Forms that are based on older Fou
 
 ## Pre-requisites to use AEM Modernize Tools
 
-* [Set up local development environment for AEM Forms](/help/forms/setup-local-development-environment.md)
-* [Enable Adaptive Forms Core Components for your environment.](/help/forms/enable-adaptive-forms-core-components.md)
+* [Set up local development environment for AEM Forms](/help/forms/setup-local-development-environment.md).
+* [Enable Adaptive Forms Core Components for your environment](/help/forms/enable-adaptive-forms-core-components.md).
 * Add your users to the [!DNL forms-users] group. The members of the [!DNL forms-users] group have permissions to create an Adaptive Form. 
 * Users with the following roles have the permissions to install the AEM Modernize Tools within an AEM environment:
 

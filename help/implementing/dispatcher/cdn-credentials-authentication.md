@@ -8,7 +8,7 @@ role: Admin
 
 # Configuring CDN Credentials and Authentication {#cdn-credentials-authentication}
 
-The Adobe-provided CDN has several features and services, some of which rely on credentials and authentication in order to ensure an appropriate level of enterprise security. By declaring rules in a configuration file deployed by using the Cloud Manager [config pipeline,](/help/operations/config-pipeline.md) customers can configure, in a self-service way, the following:
+The Adobe-provided CDN has several features and services, some of which rely on credentials and authentication in order to ensure an appropriate level of enterprise security. By declaring rules in a configuration file deployed by using the Cloud Manager [config pipeline](/help/operations/config-pipeline.md), customers can configure, in a self-service way, the following:
 
 * The X-AEM-Edge-Key HTTP header value used by the Adobe CDN to validate requests coming from a Customer-managed CDN.
 * The API token used to purge resources in the CDN cache.

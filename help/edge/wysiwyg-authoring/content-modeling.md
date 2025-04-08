@@ -12,7 +12,7 @@ Learn how content modeling works for WYSIWYG Authoring with Edge Delivery Servic
 
 ## Prerequisites {#prerequisites}
 
-Projects using WYSIWYG Authoring with Edge Delivery Services inherit the majority of the mechanics of any other Edge Delivery Services project, independent of the content source or [authoring method.](/help/edge/wysiwyg-authoring/authoring.md)
+Projects using WYSIWYG Authoring with Edge Delivery Services inherit the majority of the mechanics of any other Edge Delivery Services project, independent of the content source or [authoring method](/help/edge/wysiwyg-authoring/authoring.md).
 
 Before you begin modeling content for your project, make sure you first read the following documentation.
 
@@ -33,7 +33,7 @@ In AEM, this content is implemented as components with very simple, pre-defined 
 * **Image**: Source, description
 * **Button**: Text, title, url, type (default, primary, secondary)
 
-The model of these components is part of the [Boilerplate for WYSIWYG authoring with Edge Delivery Services.](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)
+The model of these components is part of the [Boilerplate for WYSIWYG authoring with Edge Delivery Services](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112).
 
 ## Blocks {#blocks}
 
@@ -105,9 +105,9 @@ For each block, the developer:
 * Must use the `core/franklin/components/block/v1/block` resource type, the generic implementation of the block logic in AEM.
 * Must define the block name, which will be rendered in the block's table header.
   * The block name is used to fetch the right style and script to decorate the block.
-* Can define a [model ID.](/help/implementing/universal-editor/field-types.md#model-structure)
+* Can define a [model ID](/help/implementing/universal-editor/field-types.md#model-structure).
   * The model ID is a reference to the component's model, which defines the fields available to the author in the properties panel.
-* Can define a [filter ID.](/help/implementing/universal-editor/filtering.md)
+* Can define a [filter ID](/help/implementing/universal-editor/filtering.md).
   * The filter ID is a reference to the component's filter, which allows to change the authoring behavior, for example by limiting which children can be added to the block or section, or which RTE features are enabled.
 
 All this information is stored in AEM when a block is added to a page. If either the resource type or block name are missing, the block will not render on the page.
@@ -175,7 +175,7 @@ In the following example, the image is defined first in the model and the text s
 
 >[!ENDTABS]
 
-You may notice that some types of values allow inferring semantics in the markup, and properties are combined into in single cells. This behavior is described in the section [Type Inference.](#type-inference)
+You may notice that some types of values allow inferring semantics in the markup, and properties are combined into in single cells. This behavior is described in the section [Type Inference](#type-inference).
 
 #### Key-Value Block {#key-value}
 
@@ -183,7 +183,7 @@ In many cases, it it recommended to decorate the rendered semantic markup, add C
 
 In other cases however, the block is read as a key-value pair-like configuration.
 
-An example of this is the [section metadata.](/help/edge/developer/markup-sections-blocks.md#sections) In this use case, the block can be configured to render as key-value pair table. Please see the section [Sections and Section Metadata](#sections-metadata) for more information.
+An example of this is the [section metadata](/help/edge/developer/markup-sections-blocks.md#sections). In this use case, the block can be configured to render as key-value pair table. Please see the section [Sections and Section Metadata](#sections-metadata) for more information.
 
 >[!BEGINTABS]
 
@@ -316,9 +316,9 @@ In the following example, a block accepts a list of linked icons as children, wh
 
 ### Creating Semantic Content Models for Blocks {#creating-content-models}
 
-With the [mechanics of block structure explained,](#block-structure) it is possible to create a content model that maps content persisted in AEM one-to-one to the delivery tier. 
+With the [mechanics of block structure explained](#block-structure), it is possible to create a content model that maps content persisted in AEM one-to-one to the delivery tier. 
 
-Early in every project, a content model must be carefully considered for every block. It must be agnostic to the content source and authoring experience in order to allow authors to switch or combine them while reusing block implementations and styles. More details and general guidance can be found in [David's Model (take 2).](https://www.aem.live/docs/davidsmodel) More specifically, the [block collection](/help/edge/developer/block-collection.md) contains a extensive set of content models for specific use cases of common user interface patterns.
+Early in every project, a content model must be carefully considered for every block. It must be agnostic to the content source and authoring experience in order to allow authors to switch or combine them while reusing block implementations and styles. More details and general guidance can be found in [David's Model (take 2)](https://www.aem.live/docs/davidsmodel). More specifically, the [block collection](/help/edge/developer/block-collection.md) contains a extensive set of content models for specific use cases of common user interface patterns.
 
 For WYSIWYG authoring with Edge Delivery Services, this raises the question how to serve a compelling semantic content model when the information is authored with forms composed of multiple fields instead of editing semantic markup in-context like rich text.
 
@@ -339,7 +339,7 @@ For some values we can infer the semantic meaning from the values itself. Such v
 * **Images** - If a reference to a resource in AEM is an asset with a MIME type starting with `image/`,  the reference is rendered as `<picture><img src="${reference}"></picture>`.
 * **Links** - If a reference exists in AEM and is not an image, or if the value starts with `https?://`  or `#`,  the reference is rendered as `<a href="${reference}">${reference}</a>` .
 * **Rich Text** - If a trimmed value starts with a paragraph (`p`, `ul`, `ol`, `h1`-`h6`, etc.), the value is rendered as rich text.
-* **Class Names** - The `classes` property is treated as [block options](/help/edge/developer/markup-sections-blocks.md#block-options) and rendered in the table header for [simple blocks,](#simple) or as value list for items in a [container block.](#container) It is useful if you wish to [style a block differently,](/help/edge/wysiwyg-authoring/create-block.md#block-options) but don't need to create an entirely new block.
+* **Class Names** - The `classes` property is treated as [block options](/help/edge/developer/markup-sections-blocks.md#block-options) and rendered in the table header for [simple blocks](#simple), or as value list for items in a [container block](#container). It is useful if you want to [style a block differently](/help/edge/wysiwyg-authoring/create-block.md#block-options), but don't need to create an entirely new block.
 * **Value Lists** - If a value is a multi-value property and the first value is none of the previous, all values are concatenated as comma-separated list.
 
 Everything else will be rendered as plain text.
@@ -526,11 +526,11 @@ Element grouping uses a naming convention, where the group name is separated fro
 
 ## Sections and Section Metadata {#sections-metadata}
 
-The same way a developer can define and model multiple [blocks,](#blocks) they can define different sections.
+The same way a developer can define and model multiple [blocks](#blocks), they can define different sections.
 
 The content model of Edge Delivery Services deliberately allows only a single level of nesting, which is any default content or block contained by a section. This means in order to have more complex visual components that can contain other components, they have to be modelled as sections and combined together using auto-blocking client side. Typical examples of this are tabs and collapsible sections like accordions.
 
-A section can be defined in the same way as a block, but with the resource type of `core/franklin/components/section/v1/section`. Sections can have a name and a [filter ID,](/help/implementing/universal-editor/filtering.md) which are used by the [Universal Editor](/help/implementing/universal-editor/introduction.md) only, as well as a [model ID,](/help/implementing/universal-editor/field-types.md#model-structure) which is used to render the section metadata. The model is in this way the model of the section metadata block, which will automatically be appended to a section as key-value block if it is not empty.
+A section can be defined in the same way as a block, but with the resource type of `core/franklin/components/section/v1/section`. Sections can have a name and a [filter ID](/help/implementing/universal-editor/filtering.md), which are used by the [Universal Editor](/help/implementing/universal-editor/introduction.md) only, as well as a [model ID](/help/implementing/universal-editor/field-types.md#model-structure), which is used to render the section metadata. The model is in this way the model of the section metadata block, which will automatically be appended to a section as key-value block if it is not empty.
 
 The [model ID](/help/implementing/universal-editor/field-types.md#model-structure) and [filter ID](/help/implementing/universal-editor/filtering.md) of the default section is `section`. It can be used to alter the behavior of the default section. The following example adds some styles and and a background image to the section metadata model.
 
@@ -589,7 +589,7 @@ The following example defines a tab section, which can be used to create a tabs 
 
 ## Page Metadata {#page-metadata}
 
-Documents can have a page [metadata block,](https://www.aem.live/developer/block-collection/metadata) which is used to define which `<meta>` elements are rendered in the `<head>` of a page. The page properties of pages in AEM as a Cloud Service map to those that are available out-of-the-box for Edge Delivery Services, like `title`, `description`, `keywords`, etc.
+Documents can have a page [metadata block](https://www.aem.live/developer/block-collection/metadata), which is used to define which `<meta>` elements are rendered in the `<head>` of a page. The page properties of pages in AEM as a Cloud Service map to those that are available out-of-the-box for Edge Delivery Services, like `title`, `description`, `keywords`, etc.
 
 Before further exploring how to define your own metadata, please review the following documents to understand the concept of page metadata first.
 
@@ -639,5 +639,5 @@ If you are already familiar with creating blocks, please see the document [Devel
 
 >[!TIP]
 >
->For an end-to-end walkthrough of creating a new Edge Delivery Services project that is enabled for WYSIWYG authoring with AEM as a Cloud Service as a content source, please view [this AEM GEMs webinar.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)
+>For an end-to-end walkthrough of creating a new Edge Delivery Services project that is enabled for WYSIWYG authoring with AEM as a Cloud Service as a content source, please view [this AEM GEMs webinar](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery).
 

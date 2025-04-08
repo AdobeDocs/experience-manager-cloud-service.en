@@ -87,7 +87,7 @@ To create a sign-enabled Adaptive Form:
 
     * If you do not have a custom form template, select the **[!UICONTROL Generate Document of Record]** option. When you use the option, the document sent for signing displays all the fields of the Adaptive Form.
 
-1. Select **[!UICONTROL Create.]** A sign-enabled Adaptive Form is created. You can add your [!DNL Adobe Sign] fields to the form and send it for signing.
+1. Select **[!UICONTROL Create]**. A sign-enabled Adaptive Form is created. You can add your [!DNL Adobe Sign] fields to the form and send it for signing.
 
 #### Enable [!DNL Adobe Sign] for an Adaptive Form {#editafsign}
 

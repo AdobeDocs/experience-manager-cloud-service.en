@@ -15,7 +15,7 @@ By default, AEM is tightly bound to your code repository, which meets the majori
 
 Rather than creating multiple GitHub repositories and running each site off a dedicated GitHub repository while keeping them in sync, AEM supports running multiple sites from the same codebase.
 
-This simplified setup, which eliminates the need for code replication is also known as ["repoless",](https://www.aem.live/docs/repoless) because all but your first site don't need a GitHub repository of their own.
+This simplified setup, which eliminates the need for code replication is also known as ["repoless"](https://www.aem.live/docs/repoless), because all but your first site don't need a GitHub repository of their own.
 
 If your project requires the repoless flexibility of code reuse across sites, you can activate the feature.
 
@@ -25,7 +25,7 @@ Regardless of how many sites you want to ultimately create in a repoless fashion
 
 To take advantage of this feature, make sure you have done the following.
 
-* Your site is already fully set up by following the document [Developer Getting Started Guide for WYSIWYG Authoring with Edge Delivery Services.](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
+* Your site is already fully set up by following the document [Developer Getting Started Guide for WYSIWYG Authoring with Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 * You are running AEM as a Cloud Service 2024.08 at a minimum.
 
 You will also need to ask Adobe to configure the following items for you. Reach out via your Slack channel or raise a support issue to request Adobe to make these changes:
@@ -64,7 +64,7 @@ Once you have your access token, it can be is passed in the header of cURL reque
 
 You need to create a site configuration and add it to your path mapping.
 
-1. Create a new page at the root of your site and choose the [**Configuration** template.](/help/edge/wysiwyg-authoring/tabular-data.md#other)
+1. Create a new page at the root of your site and choose the [**Configuration** template](/help/edge/wysiwyg-authoring/tabular-data.md#other).
    * You can leave the configuration empty with only the predefined `key` and `value` columns. You only need to create it.
 1. Create a mapping in the public configuration to the site configuration using a cURL command similar to the following.
    ```text
@@ -91,29 +91,14 @@ You need to create a site configuration and add it to your path mapping.
 
 Once the site configuration is mapped, you can configure access control by defining your technical account so it has privileges to publish.
 
-1. In your browser, retrieve the technical account in the response of the following link.
-   ```text
-   https://author-p<programID>-e<envionmentID>.adobeaemcloud.com/bin/franklin.delivery/<your-github-org>/<your-aem-project>/main/.helix/config.json
-   ```
+1. Sign into the AEM author instance and go to **Tools** -&gt; **Cloud Services** -&gt; **Edge Delivery Services Configuration** and select the configuration that was automatically created for your site and tap or click **Properties** in the tool bar.
 
-1. The response will be similar to the following.
+1. In the **Edge Delivery Services Configuration** window, select the **Authentication** tab and copy the value for  **The technical account ID**.
 
-   ```json
-   {
-     "total": 1,
-     "offset": 0,
-     "limit": 1,
-     "data": [
-       {
-         "key": "admin.role.publish",
-         "value": "<tech-account-id>@techacct.adobe.com"
-       }
-     ],
-     ":type": "sheet"
-   }
-   ```
+   * It will look similar to `<tech-account-id>@techacct.adobe.com`
+   * The technical account is the same for all sites on a single AEM author environment.
 
-1. Set the technical account in your configuration with a cURL command similar to the following.
+1. Set the technical account for your repoless configuration with a cURL command similar to the following, using the technical account ID that you copied.
 
    * Adapt the `admin` block to define the users who should have full administrative access to the site.
      * It is an array of email addresses.
@@ -167,6 +152,7 @@ Now that your base site is configured for repoless usage, you can create additio
 
 * [Repoless Multi Site Management](/help/edge/wysiwyg-authoring/repoless-msm.md)
 * [Repoless Stage and Prod Environments](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+* [Site Authentication for content authoring](/help/edge/wysiwyg-authoring/site-authentication.md)
 
 ## Troubleshooting {#troubleshooting}
 

@@ -48,7 +48,7 @@ Your first consideration should be how you want to deliver your content. Edge De
 This can help you decide if you need:
 
 * [AEM as a headless CMS](/help/headless/introduction.md) using the Content Fragment Editor and/or Universal Editor.
-* AEM Edge Delivery Services using the [document-based editing](/help/edge/docs/authoring.md) or [WYSIWYG authoring with the Universal Editor.](/help/edge/wysiwyg-authoring/authoring.md)
+* AEM Edge Delivery Services using the [document-based editing](/help/edge/docs/authoring.md) or [WYSIWYG authoring with the Universal Editor](/help/edge/wysiwyg-authoring/authoring.md).
 
 ## Content Authoring Preferences {#content-authoring}
 
@@ -58,8 +58,8 @@ Your next consideration should be how you want to author your content. The follo
 
 This can help you decide if you need:
 
-* AEM Edge Delivery Services using the [document-based editing.](/help/edge/docs/authoring.md)
-* [WYSIWYG authoring with the Universal Editor.](/help/edge/wysiwyg-authoring/authoring.md)
+* AEM Edge Delivery Services using the [document-based editing](/help/edge/docs/authoring.md).
+* [WYSIWYG authoring with the Universal Editor](/help/edge/wysiwyg-authoring/authoring.md).
 
 ## Project Goals {#project-goals}
 

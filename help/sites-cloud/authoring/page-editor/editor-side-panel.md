@@ -73,7 +73,7 @@ For a more detailed description of the component, you can select the information
 
 ![Component Browser information](assets/editor-side-panel-component-description.png)
 
-For more detailed information about the components available to you see the [Component Console.](/help/sites-cloud/authoring/components-console.md)
+For more detailed information about the components available to you see the [Component Console](/help/sites-cloud/authoring/components-console.md)
 
 ## Assets Browser {#assets-browser}
 
@@ -176,4 +176,4 @@ A page that is part of a [livecopy](/help/sites-cloud/administering/msm/overview
 
 ## Associated Content Browser {#associated-content-browser}
 
-If your page contains Content Fragments, you also have access to the [browser for Associated Content.](/help/sites-cloud/authoring/fragments/content-fragments.md#using-associated-content)
+If your page contains Content Fragments, you also have access to the [browser for Associated Content](/help/sites-cloud/authoring/fragments/content-fragments.md#using-associated-content).

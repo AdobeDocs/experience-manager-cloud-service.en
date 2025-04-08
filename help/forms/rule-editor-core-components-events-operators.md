@@ -105,8 +105,8 @@ _
 
 * Ensure that the [core component is set to version 3.0.14 or later](https://github.com/adobe/aem-core-forms-components) to use this feature in the rule editor.
 * If rules are applied to different fields within the When condition, the rule triggers even if only one of those fields is changed.
-
-
+* You can only add the multiple fields in the **When** condition for an **AND** rule. It is not possible for an **OR** rule.
+  
 <!--
 * It is not possible to add multiple fields in the When condition while applying rules to a button.
 

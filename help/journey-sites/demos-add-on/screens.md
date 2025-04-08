@@ -15,7 +15,7 @@ Learn the steps enabling the full AEM Screens as a Cloud Service experience on y
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM Reference Demos Add-on journey, [Create Demo Site,](create-site.md) you created a demo site based on the templates of the Reference Demo Add-on. You should now:
+In the previous document of the AEM Reference Demos Add-on journey, [Create Demo Site](create-site.md), you created a demo site based on the templates of the Reference Demo Add-on. You should now:
 
 * Understand how to access the AEM authoring environment.
 * Know how to create a site based on a template.
@@ -98,8 +98,8 @@ After the wizard completes, you find the content deployed under Sites and you ca
 
 Now that you have We.Cafe demo content, you have a choice about how you want to test AEM Screens:
 
-* If you only want to explore the content within the AEM Sites console, simply start exploring and discover more in the [Additional Resources](#additional-resources) section! no more action is required.
-* If you want to experience the full dynamic features of AEM Screens, continue to the next section, [Dynamically Change Screens Content.](#dynamically-change)
+* If you only want to explore the content within the AEM Sites console, simply start exploring and discover more in the [Additional Resources](#additional-resources) section; no more action is required.
+* If you want to experience the full dynamic features of AEM Screens, continue to the next section, [Dynamically Change Screens Content](#dynamically-change).
 
 ## Dynamically Change Screens Content {#dynamically-change}
 
@@ -384,7 +384,7 @@ Now that you have completed this part of the AEM Reference Demo Add-on journey y
 * Understand the We.Cafe demo content.
 * Know how to configure AEM Screens for We.Cafe.
 
-You are now ready to explore the capabilities of AEM Screens using your own demo sites. Continue to the next section of the journey, [Manage Your Demo Sites,](manage.md) where you learn about the tools available to help you manage your demo sites and how to remove them.
+You are now ready to explore the capabilities of AEM Screens using your own demo sites. Continue to the next section of the journey, [Manage Your Demo Sites](manage.md), where you learn about the tools available to help you manage your demo sites and how to remove them.
 
 You can also check out some of the additional resources available in the [Additional Resources section](#additional-resources) to learn more about the features you saw in this journey.
 

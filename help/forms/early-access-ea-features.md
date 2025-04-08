@@ -101,7 +101,57 @@ Ready to start? The following articles provides detailed instructions to use the
 * [Configure Marketo Engage ad data source for existing Adaptive Forms](/help/forms/use-marketo-engage-data-source-in-form.md)
 * [Submit an existing Adaptive Form to Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
+### Interactive Communications on Cloud
+
+Interactive Communications on Cloud is a powerful solution for creating, managing, and delivering data-driven interactive correspondences such as business correspondence, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
+
+![Interactive Communication Editor](/help/forms/assets/ic-editor.png)
+
+#### Key Features:
+
+* **Cloud-Based Editor**: Unlike AEM Forms Desktop Designer which can only be installed on Windows machines, the Interactive Communications editor runs in any modern browser with no installation required. This cloud-based approach eliminates installation hassles, provides cross-platform accessibility, and enables collaboration from any location with internet access.
+
+* **User-Friendly Design**: Intuitive point-and-click interface requiring minimal technical knowledge.
+
+* **Data Integration**: Connect to schemas, databases, and web services for dynamic content generation.
+
+* **Rich Media**: Incorporate text, images, and interactive elements seamlessly.
+
+* **Document Fragments**: Reuse modular content blocks across multiple documents for consistency and efficiency.
+
+* **Multi-Channel Output**: Create unified experiences across print and digital formats with regulatory compliance.
+
+* **Dynamic Content**: Generate personalized content using business logic and data binding.
+
+* **Format Flexibility**: Output to PDF, HTML, PCL, PostScript&reg;, and ZPL formats.
+
+#### Use Cases:
+
+* Financial institutions generating account statements
+* Government agencies streamlining benefit notices
+* Creating high-quality, secure, and legally compliant correspondence
+* Managing the creation, assembly, and delivery of data-driven interactive correspondences
+
+Ready to start? The Interactive Communications editor is available under the Early Access program for Forms as a Cloud Service deployments. To request access, email your organization ID and program details to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address.
+
 ## Additional Early Access Innovations
+
+### HTML email Templates in Adaptive Forms
+
+
+Adaptive Forms allows you use [HTML email templates](/help/forms/html-email-templates-in-adaptive-forms.md). HTML email templates enable you to send rich, personalized, and visually appealing emails when a form is submitted. These emails can be customized with form data and enhanced using various email tags, such as images and links. With Adaptive Forms, you can either upload a file containing an HTML template or use a plain-text editor to create these templates.
+
+![HTML email templates](/help/forms/assets/html-email.png)
+
+### RESTful Web Services Submit Action
+
+Adaptive Forms can now seamlessly send captured data to authenticated external REST endpoints with the new RESTful Web Services Submit Action: 
+
+* Standards Supported: Swagger 2.0 & 3.0 for easy API integration
+* Secure Authentication: OAuth 2.0, Basic Auth, API Key, & Custom Authentication
+* Flexible Data Formats: Multi-Part Form Data, JSON, & URL-encoded (Key-Value Pairs)
+
+
 
 ### Right-to-left (RTL) languages support
 
@@ -164,6 +214,20 @@ Forms service generates interactive PDF forms for data capture. It can also be u
 * **Data Extraction and Import**: Import data into an existing PDF form as well as extract data from a filled PDF form. Both XDP and XML data formats are supported, and importing to non-XFA PDF forms (also known as AcroForms) additionally supports FDF and XFDF data.
 
 * **Data Validation**: : Validate submitted data, in XDP or XML format, against a template created using AEM Forms Designer.
+
+### Doc Generation API
+
+The document generation API includes an optional feature that allows the direct upload of generated PDFs to Azure Blob Storage. Some key benefits of uploading PDFs directly to Azure Blob Storage using the document generation API are:
+
+* **Seamless Integration with Cloud Storage**:
+Directly uploading generated PDFs to Azure Blob Storage eliminates the need for additional manual or programmatic steps to transfer files, streamlining workflows and enhancing efficiency.
+
+* **Centralized Document Management**:
+Storing PDFs in Azure Blob Storage allows for centralized management of documents, making it easier to organize, retrieve, and manage generated files across various use cases.
+
+* **Improved Security**: By leveraging Azure's built-in security features, such as encryption at rest and role-based access control (RBAC), sensitive documents remain protected during storage.
+
+* **Customizable Storage Paths**: The ability to define custom directory paths ensures generated PDFs are stored in organized and application-specific locations, improving file management.
 
 ## See also
 

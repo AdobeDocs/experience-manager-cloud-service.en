@@ -1,8 +1,6 @@
 # Snippets {#snippets}
 
-## Headless Trials Promotion {#headless-trials-promotion}
-
-[![Get to know our headless CMS with 30 day trial](./assets/aem-headless-trial-promo.png){align="left"}](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&cli=headless_exl_banner_campaign&co=US&lang=en)
+## Headless Trials (Program has been sunset) {#headless-trials-promotion}
 
 ## Edge Delivery Services Authoring {#edge-delivery-authoring}
 
@@ -36,7 +34,8 @@
 ## Adaptive Form Submit Actions {#af-submit-action}
 
 * [Send email](/help/forms/configure-submit-action-send-email.md)
-* [Submit to SharePoint](/help/forms/configure-submit-action-sharepoint.md)
+* [Submit to SharePoint Document Library](/help/forms/connect-forms-to-sharepoint-document-library.md)
+* [Submit to SharePoint List](/help/forms/connect-forms-to-sharepoint-list.md)
 * [Submit using Form Data Model](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
 * [Submit to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [Submit to REST endpoint](/help/forms/configure-submit-action-restpoint.md)
@@ -45,9 +44,19 @@
 * [Submit to Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Submit to Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Connect Adaptive Form to Salesforce application](/help/forms/aem-forms-salesforce-integration.md)
-* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+* [Connect an Adaptive Form to Microsoft&reg; Dynamics](/help/forms/configure-msdynamics.md)
 * [Connect an Adaptive Form to Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 * [Create custom submit action](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
+
+## Universal Editor{#universal-editor-see-also}
+
+* [Create Your First Form Using Universal Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [Add Dynamic Behavior to Forms](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [Configure and Customize Form Submit Actions](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [Publish and Deploy Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [Design Beautiful Forms: Styling and Theming Guide](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [Build Custom Form Components](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [Protect Your Forms from Spam: Adding reCAPTCHA Security](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
 ## See also {#see-more-forms-eds}
 
@@ -126,7 +135,7 @@ The following table demonstrates the difference between the features available i
 * [Rule Editor User Interface for Adaptive Forms based on Core Components](/help/forms/rule-editor-core-components-user-interface.md)
 * [Different use cases of Rule Editor for an Adaptive Form Based on Core Components](/help/forms/rule-editor-core-components-usecases.md)
 * [Difference in various editions of Rule editor](/help/forms/rule-editor-core-components-difference-tables.md)
-*  [Using asynchronous functions in an Adaptive Form](/help/forms/using-async-funct-in-rule-editor.md)
+* [Using asynchronous functions in an Adaptive Form](/help/forms/using-async-funct-in-rule-editor.md)
 * [Invoke Service enhancements in the Visual Rule Editor for forms based on Core Components](/help/forms/invoke-service-enhancements-rule-editor.md)
 * [Introduction to Custom Functions for Adaptive Forms based on Core Components](/help/forms/create-and-use-custom-functions.md)
 * [Create a Custom Function for an Adaptive Form based on Core Components](/help/forms/custom-function-core-component-create-function.md)
@@ -179,12 +188,12 @@ The following table demonstrates the difference between the features available i
 
 >[!IMPORTANT]
 >
->The Universal Editor is not compatible with [IP allow lists.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+>The Universal Editor is not compatible with [IP allow lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 >
 >If you want to use the Universal Editor, you must either:
 >
 >* Not enable IP Allow Lists.
->* [Run your own instance of the Universal Editor Service.](/help/implementing/universal-editor/local-dev.md)
+>* [Run your own instance of the Universal Editor Service](/help/implementing/universal-editor/local-dev.md).
 
 ## Work with Dynamic Media {#work-with-dynamic-media}
 
@@ -230,7 +239,29 @@ To log a support ticket, you must first register your Edge Delivery site in Clou
 
 >[!IMPORTANT]
 >
->The SPA Editor remains supported by Adobe, but the preferred editors for managing headless content in AEM are now:
+>The SPA Editor [has been deprecated](/help/implementing/developing/hybrid/spa-editor-deprecation.md) for new projects. It remains supported by Adobe for existing projects, but should not be used for new projects. The preferred editors for managing headless content in AEM are now:
 >
 >* [The Universal Editor](/help/edge/wysiwyg-authoring/authoring.md) for visually editing headless content.
 >* [The Content Fragment Editor](/help/assets/content-fragments/content-fragments-managing.md) for form-based editing of headless content.
+
+## Universal Editor{#ue-see-also}
+
+* [Create Your First Form Using Universal Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [Add Dynamic Behavior to Forms](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [Configure and Customize Form Submit Actions](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [Publish and Deploy Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [Design Beautiful Forms: Styling and Theming Guide](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [Build Custom Form Components](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [Protect Your Forms from Spam: Adding reCAPTCHA Security](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+
+## See also {#see-more-eds-forms}
+
+* [Get started with Edge Delivery Services for AEM Forms](/help/edge/docs/forms/tutorial.md)
+* [Create a form using Google Sheets or Microsoft Excel](/help/edge/docs/forms/create-forms.md)
+* [Set up your Google Sheets or Microsoft Excel files to start accepting data​](/help/edge/docs/forms/submit-forms.md)
+* [Publish your form and start collecting data](/help/edge/docs/forms/publish-forms.md)
+* [Customize the look of your forms​](/help/edge/docs/forms/style-theme-forms.md)
+* [Add repeatable sections to a form​](/help/edge/docs/forms/repeatable-forms.md)
+* [Show a custom thank you message after form submission​](/help/edge/docs/forms/thank-you-page-form.md)
+* [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
+* [Using Form Submission Service](/help/forms/forms-submission-service.md)

@@ -1057,7 +1057,7 @@ To learn about RDE in AEM as a Cloud Service, see the video tutorial that demons
 
 ### How to obtain the latest AEM version for an existing RDE {#get-latest-aem-version}
 
-Upon creation, RDEs are set to the most recently available Adobe Experience Manager (AEM) version. An [RDE reset,](#reset-rde) which can be performed using Cloud Manager or the `aio aem:rde:reset` command, cycles the RDE and set it to the most recently-available AEM version.
+Upon creation, RDEs are set to the most recently available Adobe Experience Manager (AEM) version. An [RDE reset](#reset-rde), which can be performed using Cloud Manager or the `aio aem:rde:reset` command, cycles the RDE and set it to the most recently-available AEM version.
 
 ## aio RDE plugin troubleshooting {#aio-rde-plugin-troubleshooting}
 

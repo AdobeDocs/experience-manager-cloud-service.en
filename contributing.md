@@ -23,7 +23,7 @@ Which method you choose depends on how comfortable you are editing the documenta
 
 >[!NOTE]
 >
->Contributions that you submit are covered by the [Adobe terms of use.](https://www.adobe.com/legal/terms.html)
+>Contributions that you submit are covered by the [Adobe terms of use](https://www.adobe.com/legal/terms.html).
 
 ### Create an Issue {#create-an-issue}
 
@@ -35,7 +35,7 @@ Issues allow you to easily describe your idea for improvement to the docs and an
 
 If you see a problem and know exactly how to fix it, consider creating a pull request. Pull requests allow you to make your own edits to the documentation, which are then reviewed for inclusion by an AEM Docs Team member. Simply click **[!UICONTROL Edit this page]** link at the top of the right navigation panel on any page to make your suggested changes and create the pull request.
 
-All pull requests must be accompanied by a signed [contributor license agreement or CLA.](https://opensource.adobe.com/cla.html)  This gives Adobe permission to redistribute your contributions as part of the project. You only need to submit an Adobe CLA one time, so if you have submitted one previously, you are good to go!
+All pull requests must be accompanied by a signed [contributor license agreement or CLA](https://opensource.adobe.com/cla.html). This gives Adobe permission to redistribute your contributions as part of the project. You only need to submit an Adobe CLA one time, so if you have submitted one previously, you are good to go!
 
 ### Quick Video Introduction
 

@@ -72,9 +72,10 @@ Before using a batch operation:
 * Create Batch Data Store configuration
 * Upload templates and other assets to your Experience Manager Forms Cloud Service instance
 
-### Upload customer data (XML files) to Azure Storage {#upload-customer-data-to-Azure-Storage}
+### Upload customer data (XML files) to Azure Storage
 
 On your Microsoft Azure Storage, create [containers](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs) and [upload customer data (XML)](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs#managing-blobs-in-a-blob-container) to the [folders](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal) inside the containers.  
+
 >[!NOTE]
 >
 >You can configure Microsoft Azure storage to automatically clean input folder or move content of output folder to a different location at scheduled intervals. However, ensure that folders are not cleaned when a batch operation referencing the folders is still running.

@@ -174,7 +174,7 @@ The code and configuration for AEM projects is stored in a code repository, from
   * For storing server-side Java code and OSGI configurations for the AEM author and publish tiers.
 * AEM front end:
   * For storing client-side JS, CSS and HTML code for the AEM author and publish tiers. 
-    For more details on clientlibs, see [Using Client-Side Libraries on AEM as a Cloud Service.](/help/implementing/developing/introduction/clientlibs.md)
+    For more details on clientlibs, see [Using Client-Side Libraries on AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 * AEM web tier:
   * Stores the dispatcher configuration files for the AEM publish tier.
 * AEM configuration:

@@ -20,11 +20,11 @@ Hibernation can occur either automatically or manually.
 
 It may take up to a few minutes for sandbox program environments to enter hibernation mode. Data is preserved during hibernation.
 
-### Manually hibernate a sandbox program environment {#using-manual-hibernation}
+### Hibernate a sandbox program environment manually {#using-manual-hibernation}
 
 You can manually hibernate your sandbox program from the Developer Console. Access to the Developer Console for a sandbox program is available to any user of Cloud Manager.
 
-**To manually hibernate a sandbox program environment:**
+**To hibernate a sandbox program environment manually:**
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
@@ -54,7 +54,7 @@ In the Developer Console, click the **Environments** link in the breadcrumbs abo
 
 ![List of environments to hibernate](assets/hibernate-1b.png)
 
-## Manually de-hibernate a sandbox program from the Developer Console {#de-hibernation-introduction}
+## De-hibernate a sandbox program from the Developer Console manually {#de-hibernation-introduction}
 
 You can manually hibernate your sandbox program from the Developer Console. 
 
@@ -62,13 +62,13 @@ You can manually hibernate your sandbox program from the Developer Console.
 >
 >A user with a **Developer** role can de-hibernate a sandbox program environment.
 
-**To manually de-hibernate a sandbox program from the Developer Console:**
+**To de-hibernate a sandbox program from the Developer Console manually:**
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, click the program you want to de-hibernate to show its details.
 
-1. On the **Environments** card, click https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg and click **Developer Console**. 
+1. On the **Environments** card, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) and click **Developer Console**. 
 
    * See [Accessing Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) for additional details about the Developer Console.
 

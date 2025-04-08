@@ -18,7 +18,7 @@ Content fragments in Adobe Experience Manager (AEM) as a Cloud Service are [crea
 >
 >Content Fragments are a **Sites** feature, but are stored as **Assets**. 
 >
->They are now primarily managed with the **[Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** console, though they can still be managed from the **[Assets](/help/assets/content-fragments/content-fragments-managing.md)** console.
+>They are now primarily managed with the **[Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** console, though they can still be managed from the **[Assets](/help/assets/content-fragments/content-fragments-managing.md)** console.
 >
 >There are two editors for authoring Content Fragments:
 >
@@ -123,8 +123,8 @@ This lets you add extra content [in-between (that is, in-between content)](/help
 
 For in-between content you can:
 
-* Add components from the [Components browser.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
-* Add assets from the [Assets browser.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
+* Add components from the [Components browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
+* Add assets from the [Assets browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
 * Use [Associated Content](#using-associated-content) as a source for in-between content.
 
 >[!CAUTION]

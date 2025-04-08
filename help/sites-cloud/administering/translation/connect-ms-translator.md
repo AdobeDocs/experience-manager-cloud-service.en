@@ -12,7 +12,7 @@ AEM provides a built-in connector for [Microsoft Translator](https://www.microso
 
 >[!TIP]
 >
->If you are new to translating content, see [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM's powerful translation tools, ideal for those with no AEM or translation experience.
+>If you are new to translating content, see [Sites Translation Journey](/help/journey-sites/translation/overview.md), which is guided path through translating your AEM Sites content using AEM's powerful translation tools, ideal for those with no AEM or translation experience.
 
 |Property|Description|
 |---|---|
@@ -23,7 +23,7 @@ AEM provides a built-in connector for [Microsoft Translator](https://www.microso
 
 The following procedure creates a Microsoft Translator configuration.
 
-1. In the [navigation panel,](/help/sites-cloud/authoring/basic-handling.md#first-steps) select **Tools** &gt; **Cloud Services** &gt; **Translation Cloud Services**.
+1. In the [navigation panel](/help/sites-cloud/authoring/basic-handling.md#first-steps), select **Tools** &gt; **Cloud Services** &gt; **Translation Cloud Services**.
 1. Navigate to where you want to create the configuration. Normally this is in your site root or it can be a global, default configuration.
 1. Select the **Create** button.
 1. Define your configuration.

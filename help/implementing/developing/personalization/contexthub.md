@@ -19,7 +19,7 @@ The client-side JavaScript API enables you to access the data for personalizing 
 
 ## Presentation {#presentation}
 
-The [ContextHub toolbar](/help/sites-cloud/authoring/personalization/contexthub.md) enables marketers and authors to see and manipulate store data for simulating the user experience when authoring pages. The toolbar consists of groups of UI modules that provide access to [ContextHub stores,](#persistence) which persist ContextHub data on the client.
+The [ContextHub toolbar](/help/sites-cloud/authoring/personalization/contexthub.md) enables marketers and authors to see and manipulate store data for simulating the user experience when authoring pages. The toolbar consists of groups of UI modules that provide access to [ContextHub stores](#persistence), which persist ContextHub data on the client.
 
 Each ContextHub UI module is an instance of a predefined module type:
 

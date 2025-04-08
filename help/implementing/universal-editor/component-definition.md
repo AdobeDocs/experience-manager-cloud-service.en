@@ -15,7 +15,7 @@ The `component-definition.json` file defines the components available to your co
 
 >[!TIP]
 >
->For an overview of the content modeling process, please see the document [Content Modeling for WYSIWYG Authoring with Edge Delivery Services Projects.](/help/edge/wysiwyg-authoring/content-modeling.md)
+>For an overview of the content modeling process, please see the document [Content Modeling for WYSIWYG Authoring with Edge Delivery Services Projects](/help/edge/wysiwyg-authoring/content-modeling.md).
 
 >[!TIP]
 >
@@ -27,41 +27,46 @@ The following is a complete, but simple `component-definition.json` as an exampl
 
 ```json
 {
-  "groups": [
+  "groups":[
     {
-      "title": "General Components",
-      "id": "general",
-      "components": [
+      "title":"General Components",
+      "id":"general",
+      "components":[
         {
-          "title": "Text",
-          "id": "text",
-          "plugins": {
-            "aem": {
-              "page": {
-                "resourceType": "wknd/components/text",
-                "template": {
-                  "text": "Default Text"
+          "title":"Text",
+          "id":"text",
+          "model": "text",
+          "filter": "texts",
+          "plugins":{
+            "aem":{
+              "page":{
+                "resourceType":"wknd/components/text",
+                "template":{
+                  "text":"Default Text",
+                  "name":"Text"
                 }
               }
             },
-            "aem65": {
-              "page": {
-                "resourceType": "wknd/components/text",
-                "template": {
-                  "text": "Default Text"
+            "aem65":{
+              "page":{
+                "resourceType":"wknd/components/text",
+                "template":{
+                  "text":"Default Text",
+                  "name":"Text"
                 }
               }
             }
           }
-        },
-      }
-   ]
+        }
+      ]
+    }
+  ]
 }
 ```
 
 ## `groups` {#groups}
 
-`groups` defines the groups of components that the author sees in the Universal Editor when clicking the **Add** icon in the properties panel of the editor to [add a new component to a page.](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) Groups help organize the components. Common groups might be **General Components** and **Advanced Components**.
+`groups` defines the groups of components that the author sees in the Universal Editor when clicking the **Add** icon in the properties panel of the editor to [add a new component to a page](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components). Groups help organize the components. Common groups might be **General Components** and **Advanced Components**.
 
 * `title` defines the textual description of the group shown in the editor UI.
 * `id` uniquely identifies the group.
@@ -74,6 +79,10 @@ The following is a complete, but simple `component-definition.json` as an exampl
 * `id` uniquely identifies the component.
   * The [component model](/help/implementing/universal-editor/field-types.md#model-structure) of the same `id` defines the fields of the component.
   * Because it is unique it can be used, for example, in a [filter definition](/help/implementing/universal-editor/filtering.md) to determine which components can be added to a container.
+* `model` defines which [model](/help/implementing/universal-editor/field-types.md#model-structure) is used with the component.
+  * The model is thereby maintained centrally in the component definition and doesn't need to be [specified the instrumentation.](/help/implementing/universal-editor/field-types.md#instrumentation)
+  * This allows you to move components across containers.
+* `filter` defines which [filter](/help/implementing/universal-editor/filtering.md) should be used with the component.
 
 ## `plugins` {#plugins}
 
@@ -88,17 +97,19 @@ The following is a complete, but simple `component-definition.json` as an exampl
 Once the `plugin` is defined, you need to indicate if it is page-related or fragment-related.
 
 * `page` indicates that the component is content on the current page.
-* `cf` indicates that the component is related to content within a [Content Fragment.](/help/assets/content-fragments/content-fragments.md)
+* `cf` indicates that the component is related to content within a [Content Fragment](/help/assets/content-fragments/content-fragments.md).
 
 ### `page` {#page}
 
 If the component is content on the page, you can provide the following information.
 
-* `name` defines an optional name saved to the JCR for the newly-created component.
-  * Informative only and not generally shown in the UI as the `title` is.
 * `resourceType` defines the [Sling](/help/implementing/developing/introduction/sling-cheatsheet.md) `resourceType` used for rendering the component.
-* `template` defines optional key/values to be automatically written to the newly-created component.
+* `template` defines optional key/values to be automatically written to the newly-created component and defines which filter and/or model should be applied to the component.
   * Useful for explanatory, sample, or placeholder text.
+
+#### `template` {#template}
+
+By providing optional key/value pairs, `template` can automatically write these to the new component. Additionally, the following optional values can also be specified.
 
 ### `cf` {#cf}
 

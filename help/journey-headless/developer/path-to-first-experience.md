@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 ---
 # Path to Your First Experience Using AEM Headless {#path-to-first-experience}
 
-In this part of the [AEM Headless Developer Journey,](overview.md) you will understand the steps to implementing your first headless experience in AEM including planning considerations and also learn best practices to make your path as smooth as possible.
+In this part of the [AEM Headless Developer Journey](overview.md), you will understand the steps to implementing your first headless experience in AEM including planning considerations and also learn best practices to make your path as smooth as possible.
 
 ## The Story So Far {#story-so-far}
 
@@ -71,7 +71,7 @@ Content authors create content based on the content models that have been define
 
 ## Setup {#setup}
 
-Before you get started with headless in AEM, you need to make sure all required features are enabled. This section outlines what is required. The actual steps to fulfill these steps are detailed later in the [AEM Headless Developer Journey.](#overview.md)
+Before you get started with headless in AEM, you need to make sure all required features are enabled. This section outlines what is required. The actual steps to fulfill these steps are detailed later in the [AEM Headless Developer Journey](#overview.md).
 
 You can also optionally see [additional resources](#additional-resources) for more information on the individual topics.
 
@@ -137,7 +137,7 @@ No matter what your learning style, Adobe wants you to succeed as you get starte
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the headless development journey by reviewing the document [How to Model Your Content as AEM Content Models,](model-your-content.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
+While it is recommended that you move on to the next part of the headless development journey by reviewing the document [How to Model Your Content as AEM Content Models](model-your-content.md), the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
 
 * [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md) - This documentation journey gives you a broad understanding of headless technology, how AEM serves headless content, and how you can translate it.
 * [Headless Development for AEM Sites as a Cloud Service](/help/headless/introduction.md) - A quick introduction to orient the AEM Headless developer with the necessary features
@@ -147,6 +147,6 @@ While it is recommended that you move on to the next part of the headless develo
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) -  This GitHub project includes example applications that highlight AEM's GraphQL APIs.
 * [Introduction to the Architecture of Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - A complete overview of AEM's architecture
 * [Headless Setup](/help/headless/introduction.md#getting-started) - A quick introduction to AEM's headless features for users already knowledgeable of AEM.
-* [Create Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - Technical documentation on Content Fragment Models
+* [Create Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) - Technical documentation on Content Fragment Models
 * [Create Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments) - Technical documentation on Content Fragments
 * [Query content with GraphQL](/help/headless/graphql-api/content-fragments.md) - Technical documentation on the GraphQL API
