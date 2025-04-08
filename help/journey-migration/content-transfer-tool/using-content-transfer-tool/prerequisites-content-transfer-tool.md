@@ -2,7 +2,10 @@
 title: Prerequisites for Content Transfer Tool
 description: Familiarize yourself with the prerequisites for Content Transfer Tool
 exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
+feature: Migration
+role: Admin
 ---
+
 # Prerequisites for Content Transfer Tool {#prerequisites}
 
 >[!CONTEXTUALHELP]
@@ -12,7 +15,7 @@ exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html" text="Important Considerations for Using Content Transfer Tool"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#best-practices" text="Best Practices and Guidelines"
 
-The following table summarizes the prerequisites for using Content Transfer Tool. 
+The following table summarizes the prerequisites for using Content Transfer Tool.
 
 Review all the considerations listed below:
 
