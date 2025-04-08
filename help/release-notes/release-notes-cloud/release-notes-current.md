@@ -48,6 +48,8 @@ Dynamic Media with OpenAPI now supports long form videos. The long form videos c
 
 ### Dynamic Media Classic {#dmc}
 
+<!-- CARRY OVER TO APRIL 2025 RELEASE NOTES -->
+
 The Bandwidth tab in the Dynamic Media Classic reporting dashboard is no longer supported as of April 2025. 
 
 See [Bandwidth and Storage, Types of reports](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports). 
