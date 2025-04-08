@@ -2,6 +2,8 @@
 title: Indexing after Migrating Content
 description: Learn how the migration process will index the ingested content on the destination Cloud Service instance.
 exl-id: a13d5df4-b351-410a-9336-1b34a8af21b6
+feature: Migration
+role: Admin
 ---
 # Indexing after Migrating Content {#Indexing-content}
 

@@ -2,6 +2,9 @@
 title: Components
 description: Components are the fundamental authoring building block of content pages in AEM
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Components {#components}
 
@@ -17,7 +20,7 @@ AEM comes with a variety of out-of-the-box components that provide comprehensive
 
 ## General Usage {#general-usage}
 
-The components are available on the **Components** tab of the side panel of the page editor when [editing a page.](/help/sites-cloud/authoring/page-editor/edit-content.md)
+The components are available on the **Components** tab of the side panel of the page editor when [editing a page](/help/sites-cloud/authoring/page-editor/edit-content.md).
 
 You can select a component and drag it to the required location on your page. You can then edit it using:
 
@@ -25,7 +28,7 @@ You can select a component and drag it to the required location on your page. Yo
 * [Edit Content](/help/sites-cloud/authoring/page-editor/edit-content.md)
 * [Edit Content - Full Screen Mode](/help/sites-cloud/authoring/page-editor/edit-content.md#edit-content-full-screen-mode)
 
-For more information about adding components to a page, see [Editing Page Content.](/help/sites-cloud/authoring/page-editor/edit-content.md)
+For more information about adding components to a page, see [Editing Page Content](/help/sites-cloud/authoring/page-editor/edit-content.md).
 
 ## Overview of All Components {#overview-of-all-components}
 
@@ -35,10 +38,10 @@ The [Components Console](/help/sites-cloud/authoring/components-console.md) give
 
 The [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) offer flexible and feature-rich authoring functionality, which provide essential content types to create pages.
 
-They are build using AEM best practices and are the foundation of the AEM authoring experience. Core Components can be easily extended by developers to meet specific project needs.
+They are built using AEM best practices and are the foundation of the AEM authoring experience. Core Components can be easily extended by developers to meet specific project needs.
 
 Along with the WCM Core Components, you can also use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features). These Core Components provide a standard and easier methods to [create or add forms to an AEM Sites Page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 
 
 ### Configuring Templates {#configuring-templates}
 
-If your page is based on the recommended, modern, editable template, you can [edit the template](/help/sites-cloud/authoring/sites-console/templates.md) enable/disable these and edit parameters for specific components.
+If your page is based on the recommended, modern, editable template, you can [edit the template](/help/sites-cloud/authoring/page-editor/templates.md) enable/disable these and edit parameters for specific components.

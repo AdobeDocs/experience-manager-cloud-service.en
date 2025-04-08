@@ -2,6 +2,8 @@
 title: Screens as a Cloud Service FAQs
 description: This page describes Screens as a Cloud Service frequently asked questions.
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
+feature: Administering Screens
+role: Admin, Developer, User
 ---
 # Screens as a Cloud Service FAQs {#screens-cloud-faqs}
 

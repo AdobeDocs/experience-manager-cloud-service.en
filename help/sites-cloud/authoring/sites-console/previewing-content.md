@@ -2,6 +2,9 @@
 title: Previewing Content
 description: Learn how to use the AEM preview service to preview content before going live.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 
 # Previewing Content {#previewing-content}

@@ -1,8 +1,9 @@
 ---
 title: Adobe Experience Manager as a Cloud Service Content Fragments Support in the Assets HTTP API
 description: Learn about support for Content Fragments in the Assets HTTP API, an important piece of Adobe Experience Manager's headless delivery feature.
-feature: Content Fragments,Assets HTTP API
+feature: Content Fragments, Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
+role: User, Admin
 ---
 # Content Fragments Support in the AEM Assets HTTP API {#content-fragments-support-in-aem-assets-http-api}
 
@@ -17,6 +18,8 @@ Learn about support for Content Fragments in the Assets HTTP API, an important p
 
 >[!NOTE]
 >
+>See [AEM APIs for Structured Content Delivery and Management](/help/headless/apis-headless-and-content-fragments.md) for an overview of the various APIs available and comparison of some of the concepts involved.
+>
 >The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) are also available.
 
 >[!NOTE]
@@ -30,7 +33,7 @@ Learn about support for Content Fragments in the Assets HTTP API, an important p
 
 >[!NOTE]
 >
->For the latest information about Experience Manager APIs, please also visit [Adobe Experience Manager as a Cloud Service APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+>For the latest information about Experience Manager APIs, visit [Adobe Experience Manager as a Cloud Service APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 The [Assets REST API](/help/assets/mac-api-assets.md) allows developers for Adobe Experience Manager as a Cloud Service to access content (stored in AEM) directly over the HTTP API, by way of CRUD (Create, Read, Update, Delete) operations.
 

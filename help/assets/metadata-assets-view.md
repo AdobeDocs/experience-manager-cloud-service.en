@@ -1,11 +1,49 @@
 ---
 title: How to manage metadata in Assets view?
 description: Learn how to manage metadata in Assets view. Better metadata management makes an asset more accessible, easier to manage, and complete.
-role: User,Leader,Admin,Architect,Developer
+role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
+feature: Metadata
 ---
 # Metadata in Assets View {#metadata}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime and Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets integration with Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI Extensibility</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Enable Dynamic Media Prime and Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media with OpenAPI capabilities</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets developer documentation</b></a>
+        </td>
+    </tr>
+</table>
 
 Metadata means data or description about the data. For example, your images as an asset can contain information about the camera it was clicked with or any copyright information. This information is metadata of the image. Metadata is critical for efficient asset management. Metadata is the collection of all the data available for an asset but it may not necessarily be contained in that asset.
 
@@ -161,6 +199,52 @@ To remove a metadata form from a folder:
 
 You can also navigate to the folder details page and select **[!UICONTROL System mapped Metadata Form]** from the **[!UICONTROL Metadata Forms]** field to remove the assigned metadata form from a folder.
 
+### Working with Link component in metadata form {#link-component-metadata-form}
+
+The link component is used to enable external URLs including storage links, copyright information, contact forms, and so on. To use link component on metadata form, you need to [configure metadata form](#metadata-forms).
+
+Follow the steps below to use link component on metadata form:
+
+1. Go to asset details page and navigate to **[!UICONTROL Link URL]**.
+1. Add a URL that you want to use to redirect for the selected asset.
+1. Click **[!UICONTROL Add link]**. Perform one of the following actions:
+   * Click ![copy icon](assets/do-not-localize/copy.svg) to copy the URL.
+   * Click ![edit icon](assets/do-not-localize/edit.svg) to edit the URL.
+1. Click **[!UICONTROL Save]** to save the changes.
+
+
+### Working with Tags component in metadata form {#tag-component-metadata-form}
+
+The root element represents the tree structure of the tags that you can associate with the assets, helping to identify the asset based on the tag assigned to it. Additionally, you can restrict the access of a specific taxonomy while configuring the metadata form in metadata editor.
+
+#### Tags component configuration {#tags-component-configuration}
+
+Configure the tags component by executing the following steps:
+
+1. Go to the metadata editor and navigate to **[!UICONTROL Tags]** and place it on the canvas.
+1. Rename the component on the canvas. To do this, go to **[!UICONTROL Label]** under the [!UICONTROL Metadata property] in the settings panel and add the text for its identification.
+1. Under the [!UICONTROL Metadata property] in the settings panel, search for the metadata property that you want to assign to the component.
+1. Click **[!UICONTROL Restrict to specific taxonomy]** to restrict root path of the taxonomy. To do this, browse tags and choose the taxonomy to the particular path.
+1. Click **[!UICONTROL Save]** to save the changes.
+
+   ![Root tags configuration](assets/root-tag-config.png)
+
+1. [Assign metadata form to folders](#assign-metadata-form-folder).
+
+<!--
+#### Mapping between assets and taxonomy {#asset-taxonomy-mapping}
+
+See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the steps below to perform mapping between folder and taxonomy:
+
+1. Go back to the Settings and click **[!UICONTROL Metadata forms]** 
+1. Select a Metadata form that needs mapping. 
+1. Click **[!UICONTROL Assign to folder(s)]**. **[!UICONTROL Select Folder(s)]** screen appears. 
+1. Navigate to the folder that you want to assign to the metadata form. You can select multiple folders.
+1. Click **[!UICONTROL Assign]**.
+-->
+
+To view the configured root tags, go to the asset's details page where the mapping between the metadata form and root tags is performed.
+
 ## Next Steps {#next-steps}
 
 * [Watch a video to manage metadata forms in Assets view](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
@@ -200,3 +284,4 @@ How can one search based strictly on the metadata. Similar to AEM Assets GQL que
 >
 >* [Search assets](search.md).
 -->
+

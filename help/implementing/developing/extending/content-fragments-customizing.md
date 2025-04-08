@@ -2,6 +2,8 @@
 title: Customizing and Extending Content Fragments
 description: A content fragment extends a standard asset. Learn how you can customize them.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
+feature: Developing, Content Fragments
+role: Admin, Architect, Developer
 ---
 # Customizing and Extending Content Fragments{#customizing-and-extending-content-fragments}
 

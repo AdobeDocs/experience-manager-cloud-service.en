@@ -2,6 +2,8 @@
 title: Infrastructure and Service Monitoring in AEM as a Cloud Service
 description: Infrastructure and Service Monitoring in AEM as a Cloud Service
 exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
+feature: Operations
+role: Admin
 ---
 # Infrastructure and Service Monitoring in AEM as a Cloud Service {#monitoring-in-aem-as-a-cloud-service}
 
@@ -29,7 +31,7 @@ With Custom monitoring, customers can optionally provide up to five distinct web
 
 >[!NOTE]
 >
-> This functionality is only offered for production environments and customers with [Advanced Cloud Support.](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) If you have any questions, contact your Adobe account team.
+> This functionality is only offered for production environments and customers with [Advanced Cloud Support](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons). If you have any questions, contact your Adobe account team.
 
 ## Internal Module Monitoring {#module-monitoring}
 

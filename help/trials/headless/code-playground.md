@@ -4,6 +4,8 @@ description: Explore fetching JSON content from your trial environment with a Co
 hidefromtoc: yes
 index: no
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
+feature: Headless
+role: Admin, User, Developer
 ---
 
 # Render Your Content in a Simple App {#render-content-simple-app}

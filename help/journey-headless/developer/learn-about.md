@@ -2,10 +2,13 @@
 title: Learn About CMS Headless Development
 description: In this part of the AEM Headless Developer Journey, learn about headless technology and why you would use it.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
+solution: Experience Manager
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Architect, Developer
 ---
 # Learn About CMS Headless Development {#learn-about}
 
-In this part of the [AEM Headless Developer Journey,](overview.md) learn about headless technology and why you would use it.
+In this part of the [AEM Headless Developer Journey](overview.md), learn about headless technology and why you would use it.
 
 ## Objective {#objective}
 
@@ -118,7 +121,7 @@ Build on this knowledge and continue your AEM headless journey by next reviewing
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the headless development journey by reviewing the document [Getting Started with AEM Headless as a Cloud Service,](getting-started.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
+While it is recommended that you move on to the next part of the headless development journey by reviewing the document [Getting Started with AEM Headless as a Cloud Service](getting-started.md), the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
 
 * [An Introduction to the Architecture of Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Understand AEM as a Cloud Service's structure
 * An [Introduction to AEM as a Headless CMS](/help/headless/introduction.md)

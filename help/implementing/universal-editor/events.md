@@ -2,6 +2,8 @@
 title: Universal Editor Events
 description: Learn about the different events that the Universal Editor sends that you can use to react to content or UI changes in your remote app.
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Universal Editor Events {#events}
 
@@ -19,7 +21,7 @@ All events follow a naming convention.
 
 For example, `aue:content-update` and `aue:ui-select`
 
-Events include the request's and response's payload and are triggered once the corresponding call is successful. For further details about calls and examples of their payloads, please see the document [Universal Editor Calls.](/help/implementing/universal-editor/calls.md)
+Events include the request's and response's payload and are triggered once the corresponding call is successful. For further details about calls and examples of their payloads, please see the document [Universal Editor Calls](/help/implementing/universal-editor/calls.md).
 
 ## Content Update Events {#content-events}
 
@@ -47,7 +49,7 @@ The payload is content from the Universal Editor service, with fallback content 
 
 ### aue:content-details {#content-details}
 
-The `aue:content-details` event is triggered when a component is loaded in the properties rail.
+The `aue:content-details` event is triggered when a component is loaded in the properties panel.
 
 The payload is the component's content and optionally its schema.
 
@@ -83,7 +85,7 @@ The payload is the component, source container, and target container.
 
 ### aue:content-patch {#content-patch}
 
-The `aue:content-patch` event is triggered when a component's data is updated in properties rail.
+The `aue:content-patch` event is triggered when a component's data is updated in properties panel.
 
 The payload is a JSON patch of the updated properties.
 
@@ -170,29 +172,6 @@ Response Payload
 
 ## UI Events {#ui-events}
 
-### aue:ui-publish {#ui-publish}
-
-The `aue:ui-publish` event is triggered when content is published (with invocation at the `BODY` level).
-
-The payload is a list of item IDs and their publication status.
-
-### aue:ui-select {#ui-select}
-
-The `aue:ui-select` event is triggered when a component is selected.
-
-The payload is the item ID, item properties, and item type of the selected component.
-
-```json
-{
-    details: {
-        resource: string;       // resource of the selected
-        prop: string;           // prop of the selected
-        type: string;           // type of the selected
-        selected: boolean;      // was selected or unselected
-    }
-}
-```
-
 ### aue:ui-preview {#ui-preview}
 
 The `aue:ui-preview` event is triggered when the editing mode of the page is changed to **Preview**.
@@ -261,7 +240,6 @@ The payload is empty for this event.
 
 |Event|Behavior|
 |---|---|
-|`aue:ui-publish`|Do nothing|
 |`aue:ui-select`|Scroll to the selected element|
 |`aue:ui-preview`|Add `class="adobe-ue-preview"` to HTML tag|
 |`aue:ui-edit`|Add `class=adobe-ue-edit"` to HTML tag|

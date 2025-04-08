@@ -5,6 +5,7 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
+role: Admin
 ---
 # Getting started with AEM Extension for PWA Studio {#getting-started-pwa}
 

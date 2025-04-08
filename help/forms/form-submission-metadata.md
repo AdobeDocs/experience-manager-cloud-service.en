@@ -4,8 +4,10 @@ description: Learn how to add information to metadata of a submitted form with u
 feature: Adaptive Forms
 role: User
 level: Intermediate
+hide: yes
+hidefromtoc: yes
+exl-id: 12c54be1-378d-4dbe-9129-93ddc7c343a4
 ---
-
 # Add information from user data to form submission metadata {#adding-information-from-user-data-to-form-submission-metadata}
 
 You can use values entered in an element of your form to compute metadata fields of a draft or a form submission. Metadata lets you filter content based on user data. For example, a user enters John Doe in the name field of your form. You can use this information to compute metadata that can categorize this submission under the initials JD.

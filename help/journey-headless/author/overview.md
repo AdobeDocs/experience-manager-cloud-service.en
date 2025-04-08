@@ -2,6 +2,9 @@
 title: AEM Headless Content Author Journey
 description: Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to author content for your project.
 exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
+solution: Experience Manager
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Architect, Developer
 ---
 # AEM Headless Content Author Journey {#aem-headless-author-journey}
 
@@ -55,7 +58,7 @@ Although you can go directly to a particular part of the journey, many concepts 
 
 ## What's Next {#what-is-next}
 
-You are now ready to get started on your Adobe Headless journey. We encourage you to continue on to the next part of the journey and read the article [Authoring for AEM Headless as a Cloud Service - An Introduction.](introduction.md)
+You are now ready to get started on your Adobe Headless journey. We encourage you to continue on to the next part of the journey and read the article [Authoring for AEM Headless as a Cloud Service - An Introduction](introduction.md).
 
 <!--
 ### Choose Your Own Adventure {#choose-your-path}

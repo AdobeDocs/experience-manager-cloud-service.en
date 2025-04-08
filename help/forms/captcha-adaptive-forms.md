@@ -6,12 +6,14 @@ contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 feature: Adaptive Forms, Foundation Components
+role: User, Developer
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
 ---
-
 # Use reCAPTCHA in Adaptive Forms {#using-reCAPTCHA-in-adaptive-forms}
 
-<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
+>[!NOTE]
+>
+> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components.
 
 
 | Version | Article link |
@@ -23,17 +25,15 @@ exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
 
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) is a program commonly used in online transactions to distinguish between humans and automated programs or bots. It poses a challenge and evaluates user response to determine if it's a human or a bot interacting with the site. It prevents the user to proceed if the test fails and helps make online transactions secure by keeping bots from posting spam or malicious purposes.
 
-[!DNL AEM Forms] support reCAPTCHA in Adaptive Forms. You can use reCAPTCHA service by Google to implement CAPTCHA.
+AEM Forms as a Cloud Service supports the following CAPTCHA solutions: 
 
->[!NOTE]
->
->* [!DNL AEM Forms] support reCaptcha v2 and reCaptcha Enterprise. Any other version is not supported.
->* reCAPTCHA in Adaptive Forms is not supported in offline mode on [!DNL AEM Forms] app.
->
+* [Google reCAPTCHA](#configure-recaptcha-service-by-google)
+* [Cloudflare Turnstile](/help/forms/integrate-adaptive-forms-turnstile.md)
+* [hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha.md)   
 
 ## Configure reCAPTCHA service by Google {#google-reCAPTCHA}
 
-Form authors can use the reCAPTCHA service by Google to implement reCAPTCHA in Adaptive Forms. It offers advance CAPTCHA capabilities to protect your site. For more information on how reCAPTCHA works, see [Google reCAPTCHA](https://developers.google.com/recaptcha/). reCAPTCHA service includes [!DNL reCAPTCHA v2] and [!DNL reCAPTCHA Enterprise] which you can integrate into [!DNL AEM Forms]. Based on your requirement you can configure reCAPTCHA service to enable:
+Form authors can use the reCAPTCHA service by Google to implement reCAPTCHA in Adaptive Forms. It offers advance CAPTCHA capabilities to protect your site. For more information on how reCAPTCHA works, see [Google reCAPTCHA](https://developers.google.com/recaptcha/). AEM Forms supports [!DNL reCAPTCHA v2] and [!DNL reCAPTCHA Enterprise]. Any other version is not supported. Also notice, reCAPTCHA in Adaptive Forms is not supported in offline mode on [!DNL AEM Forms] app. Based on your requirement you can configure reCAPTCHA service to enable:
 
 ![reCAPTCHA](/help/forms/assets/recaptcha_new.png)
 
@@ -94,9 +94,9 @@ Once the reCAPTCHA Enterprise service is enabled, it is available for use in ada
 <!--![reCAPTCHA v2](/help/forms/assets/recaptcha-v2.png)-->
 
 
-## Use reCAPTCHA in adaptive forms {#using-reCAPTCHA}
+## Use Google reCAPTCHA in adaptive forms {#using-reCAPTCHA}
 
-To use reCAPTCHA in adaptive forms:
+To use Google reCAPTCHA in an adaptive form:
 
 1. Open an adaptive form in edit mode.
 

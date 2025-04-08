@@ -12,10 +12,47 @@ exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
 ---
 # Configure transcription in [!DNL Experience Manager Assets] {#configure-transcription-service}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime and Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets integration with Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI Extensibility</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Enable Dynamic Media Prime and Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media with OpenAPI capabilities</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets developer documentation</b></a>
+        </td>
+    </tr>
+</table>
+
 Transcription is the process of translating the audio from an audio or video file into text (speech to text) using the speech recognition technology. 
 [!DNL Adobe Experience Manager Assets] is configured with [!DNL Azure Media Services] which automatically generates text transcript of the spoken language in a supported audio or video file in the WebVTT (.vtt) format. When an audio or video asset is processed in [!DNL Experience Manager Assets], the transcription service automatically generates the text transcript rendition of the audio or video asset and stores it at the same location within your Assets repository where the original asset resides. The [!DNL Experience Manager Assets] transcription service allows marketers to effectively manage their audio and video content with added discoverability of the text content and increase the ROI of these assets by supporting accessibility and localization.
 
-Transcripts are text versions of spoken content; an example is a movie that you are watching on any OTT platform which often includes caption or subtitles to help with accessibility or consuming the content in other languages. Or any audio or video file used for marketing, learning, or entertainment purpose. These experiences start with a transcription that is then formatted or translated as appropriate. Transcribing audio or video is a time intensive and error-prone process when performed manually. It is also a challenge to scale the manual process, given the ever-increasing need for audio-video content. [!DNL Experience Manager Assets] uses the Azure's AI-based transcription which allows high-scale processing of the audio and video assets and generates the text transcripts (.vtt files) along with the timestamp details. Along with Assets, the transcription feature is also supported with Dynamic Media.
+Transcripts are text versions of spoken content; an example is a movie that you are watching on any OTT platform which often includes captions to help with accessibility or consuming the content in other languages. Or any audio or video file used for marketing, learning, or entertainment purpose. These experiences start with a transcription that is then formatted or translated as appropriate. Transcribing audio or video is a time intensive and error-prone process when performed manually. It is also a challenge to scale the manual process, given the ever-increasing need for audio-video content. [!DNL Experience Manager Assets] uses the Azure's AI-based transcription which allows high-scale processing of the audio and video assets and generates the text transcripts (.vtt files) along with the timestamp details. Along with Assets, the transcription feature is also supported with Dynamic Media.
 
 The transcription feature is available without any cost in [!DNL Experience Manager Assets]. However, the administrators require the user's Azure credentials to configure the transcription service in [!DNL Experience Manager Assets]. You can also [get the trial credentials](https://azure.microsoft.com/en-us/pricing/details/media-services/) directly from Microsoft&reg; to experience the audio or video transcription feature in Assets.
 

@@ -2,6 +2,9 @@
 title: Authoring a Page for Mobile Devices
 description: When authoring for mobile, you can switch between several emulators to see what the end-user sees
 exl-id: fabd4468-3304-402f-9522-342da3bbae94
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Authoring a Page for Mobile Devices {#authoring-a-page-for-mobile-devices}
 

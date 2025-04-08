@@ -2,6 +2,8 @@
 title: The Content Copy Tool
 description: The content copy tool enables users to copy mutable content on-demand from their production environments on AEM as a Cloud Service to lower environments for testing purposes.
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # The Content Copy Tool {#content-copy}
 

@@ -2,12 +2,16 @@
 title: Developing SPAs for AEM
 description: This article presents important questions to consider when engaging a front-end developer to develop a SPA for AEM. It also gives an overview of the architecture of AEM concerning SPAs to keep in mind when deploying a developed SPA on AEM.
 exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Developing SPAs for AEM {#developing-spas-for-aem}
 
 Single page applications (SPAs) can offer compelling experiences for website users. Developers want to be able to build sites using SPA frameworks and authors want to seamlessly edit content within AEM for a site built using such frameworks.
 
 This article presents important questions to consider when engaging a front-end developer to develop a SPA for AEM and gives an overview of the architecture of AEM concerning deploying SPAs on AEM.
+
+{{ue-over-spa}}
 
 ## SPA Development Principles for AEM {#spa-development-principles-for-aem}
 

@@ -2,6 +2,8 @@
 title: Create an API Request - Headless Setup
 description: Learn how to use the GraphQL API for headless delivery of Content Fragment content and AEM's Assets REST API to manage Content Fragments.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Developer
 ---
 # Create an API Request - Headless Setup {#accessing-delivering-content-fragments}
 
@@ -9,7 +11,7 @@ Learn how to use the GraphQL API for headless delivery of Content Fragment conte
 
 ## What are GraphQL and Assets REST APIs? {#what-are-the-apis}
 
-[Now that you have created some content fragments,](create-content-fragment.md) you can use AEM's APIs to deliver them headlessly.
+[Now that you have created some content fragments](create-content-fragment.md), you can use AEM's APIs to deliver them headlessly.
 
 * [The GraphQL API](/help/headless/graphql-api/content-fragments.md) lets you create requests to access and deliver Content Fragments. This API offers the most robust set of capabilities for querying and consuming Content Fragment content.
    * To use the API, [define and enable endpoints in AEM](/help/headless/graphql-api/graphql-endpoint.md), and if necessary, the [GraphiQL interface installed](/help/headless/graphql-api/graphiql-ide.md).
@@ -37,7 +39,7 @@ Before the GraphQL APIs can be used, a GraphQL endpoint must be created.
     /content/cq:graphql/<configuration-name>/endpoint
     ```
 
-More details about enabling [GraphQL endpoints can be found here](/help/headless/graphql-api/graphql-endpoint.md).
+For more details about enabling GraphQL endpoints see [Manage GraphQL endpoints in AEM](/help/headless/graphql-api/graphql-endpoint.md).
 
 ## Query content using GraphQL with GraphiQL
 

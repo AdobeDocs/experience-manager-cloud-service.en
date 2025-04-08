@@ -2,6 +2,9 @@
 title: Experience Fragments
 description: Use Experience Fragments in Adobe Experience Manager as a Cloud Service to make your experiences reusable and flexible.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
+solution: Experience Manager Sites
+feature: Authoring, Experience Fragments
+role: User
 ---
 # Experience Fragments {#experience-fragments}
 
@@ -86,7 +89,7 @@ Creating folders lets you:
 
   >[!NOTE]
   >
-  >You can use the [template editor](/help/sites-cloud/authoring/sites-console/templates.md) to create your own template. 
+  >You can use the [template editor](/help/sites-cloud/authoring/page-editor/templates.md) to create your own template. 
 
 The WKND project structures some Experience Fragments according to `Contributors`. The structure used also illustrates how other features, such as Multi Site Management (including language copies), can be used. 
 

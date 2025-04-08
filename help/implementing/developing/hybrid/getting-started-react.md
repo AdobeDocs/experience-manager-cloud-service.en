@@ -2,6 +2,8 @@
 title: Getting Started with SPAs in AEM Using React
 description: This article presents a sample SPA application, explains how it is put together, and lets you get up-and-running with your own SPA quickly using the React framework.
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Getting Started with SPAs in AEM Using React {#getting-started-with-spas-in-aem-using-react}
 
@@ -12,6 +14,8 @@ The SPA authoring feature offers a comprehensive solution for supporting SPAs wi
 >[!NOTE]
 >
 >This article is based on the React framework. For the corresponding document for the Angular framework see [Getting Started with SPAs in AEM - Angular](getting-started-angular.md).
+
+{{ue-over-spa}}
 
 ## Introduction {#introduction}
 
@@ -58,7 +62,7 @@ The `aem-clientlib-generator` is used to make the creation of client libraries a
 
 `"aem-clientlib-generator": "^1.4.1",`
 
-Further details about it can be found [on GitHub here](https://github.com/wcm-io-frontend/aem-clientlib-generator).
+For further details see [aem-clientlib-generator on GitHub](https://github.com/wcm-io-frontend/aem-clientlib-generator).
 
 The `aem-clientlib-generator` is configured in the `clientlib.config.js` file as follows.
 
@@ -173,7 +177,7 @@ MapTo('my-react-app/components/structure/page')(withComponentMappingContext(AppP
 
 In this example the `AppPage` class extends `Page`, which contains the inner-content methods that can then be used.
 
-The `Page` ingests the JSON representation of the page model and processes the content to wrap/decorate each element of the page. Further details on the `Page` can be found in the document [SPA Blueprint.](blueprint.md)
+The `Page` ingests the JSON representation of the page model and processes the content to wrap/decorate each element of the page. Further details on the `Page` can be found in the document [SPA Blueprint](blueprint.md).
 
 ### Image.js {#image-js}
 

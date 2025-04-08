@@ -2,6 +2,9 @@
 title: Understanding Segmentation
 description: Segmentation is a key consideration when creating a campaign
 exl-id: 36a9623a-bb19-498a-a0e9-ef80582b1fcf
+solution: Experience Manager Sites
+feature: Authoring, Personalization
+role: User
 ---
 # Understanding Segmentation {#understanding-segmentation}
 

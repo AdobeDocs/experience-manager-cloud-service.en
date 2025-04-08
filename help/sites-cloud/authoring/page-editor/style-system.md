@@ -2,6 +2,9 @@
 title: Style System
 description: The Style System allows a template author to define style classes in the content policy of a component so that a content author is able to select them when editing the component on a page. These styles can be alternative visual variations of a component, making it more flexible.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Style System{#style-system}
 
@@ -104,7 +107,7 @@ If you want to use the Style System for your own components do the following:
 
 Core Components version 2 and later are fully enabled to take advantage of the Style System and require no additional configuration.
 
-The following steps are only necessary to enable the Style System for your own custom components or to [enable the optional Styles tab in the Edit dialog.](#enable-styles-tab-edit)
+The following steps are only necessary to enable the Style System for your own custom components or to [enable the optional Styles tab in the Edit dialog](#enable-styles-tab-edit).
 
 ### Enable Style Tab in Design Dialog {#enable-styles-tab-design}
 

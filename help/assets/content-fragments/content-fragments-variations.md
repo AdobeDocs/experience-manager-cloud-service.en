@@ -2,16 +2,19 @@
 title: Variations - Authoring Fragment Content (Assets - Content Fragments)
 description: Understand how Content Fragment variations allow you to author content for the fragment, then create variations of that content according to purpose, therefore increasing the flexibility. 
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
+feature: Content Fragments
+role: User
+solution: Experience Manager Sites
 ---
 # Variations - Authoring Fragment Content{#variations-authoring-fragment-content}
 
-[Variations](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) are a significant feature of Content Fragments in Adobe Expoerience Manager (AEM) as a Cloud Service. This is because they let you create and edit copies of the **Master** content for use on specific channels and scenarios. IN particular this makes headless content delivery even more flexible.
+[Variations](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) are a significant feature of Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service. This is because they let you create and edit copies of the **Master** content for use on specific channels and scenarios. IN particular this makes headless content delivery even more flexible.
 
 >[!NOTE]
 >
 >Content Fragments are a Sites feature, but are stored as **Assets**. 
 >
->There are two editors for authoring Content Fragments. This section covers the original editor, primarily accessed from the **Assets** console. See the Sites documentation, [Content Fragments - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), for details of the new editor (primarily accessed from the **Content Fragments** console).
+>There are two editors for authoring Content Fragments; although the basic functionality is the same, there are some differences. This section covers the original editor, primarily accessed from the **Assets** console. See the Sites documentation, [Content Fragments - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), for details of the new editor (primarily accessed from the **Content Fragments** console).
 
 From the **Variations** tab you can do the following:
 
@@ -48,6 +51,8 @@ You can:
 
 * Make edits to your content directly in the **Variations** tab; each data type provides different editing options, for example:
 
+  * when configured (as multiple) in the model, various data types allow you to **Add** instances of the relevant field
+  
   * for **Multi-line text** fields, you can also open the [full-screen editor](#full-screen-editor) to:
 
     * select the [Format](#formats)
@@ -94,7 +99,7 @@ The full-screen text editor provides:
 
 The following actions are also available (for all the [formats](#formats)) when the full-screen editor (that is, multi-line text) is open:
 
-* Select the [format](#formats) ([Rich Text](#rich-text), [Plain Text,](#plain-text) [Markdown](#markdown))
+* Select the [format](#formats) ([Rich Text](#rich-text), [Plain Text](#plain-text), [Markdown](#markdown))
 
 * [Upload content](#uploading-content)
 
@@ -303,6 +308,10 @@ To annotate a fragment:
 1. Close the full-screen editor, annotations are still highlighted. If selected, a dialog box opens so that you can edit the annotation further.
 
    ![annotate](assets/cfm-variations-07c.png)
+
+>[!NOTE]
+>
+>The Annotations feature does not show comments entered in the new [Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md#commenting-on-your-fragment).
 
 ### Viewing, Editing, Deleting Annotations {#viewing-editing-deleting-annotations}
 

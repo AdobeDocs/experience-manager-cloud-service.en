@@ -3,6 +3,7 @@ description: ​​The AEM sidekick provides content authors with a toolbar offe
 title: Installing the AEM Sidekick
 feature: Edge Delivery Services
 exl-id: ec72939d-feb9-446e-9020-0b988ca96f54
+role: Admin, Architect, Developer
 ---
 # Installing the AEM Sidekick
 

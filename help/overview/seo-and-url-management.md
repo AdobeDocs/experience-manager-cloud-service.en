@@ -2,6 +2,8 @@
 title: SEO and URL Management Best Practices for Adobe Experience Manager as a Cloud Service
 description: SEO and URL Management Best Practices for Adobe Experience Manager as a Cloud Service
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
+feature: Release Information
+role: Admin
 ---
 # SEO and URL Management Best Practices for Adobe Experience Manager as a Cloud Service{#seo-and-url-management-best-practices-for-aem}
 

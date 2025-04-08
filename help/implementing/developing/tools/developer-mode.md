@@ -4,6 +4,8 @@ seo-title: Developer Mode
 description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Developer Mode {#developer-mode}
 

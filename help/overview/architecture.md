@@ -2,6 +2,8 @@
 title: Introduction to the Architecture of Adobe Experience Manager as a Cloud Service
 description: Introduction to the Architecture of Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
+feature: Release Information
+role: Admin
 ---
 # An Introduction to the Architecture of Adobe Experience Manager as a Cloud Service {#an-introduction-to-the-architecture-adobe-experience-manager-as-a-cloud-service}
 
@@ -172,7 +174,7 @@ The code and configuration for AEM projects is stored in a code repository, from
   * For storing server-side Java code and OSGI configurations for the AEM author and publish tiers.
 * AEM front end:
   * For storing client-side JS, CSS and HTML code for the AEM author and publish tiers. 
-    For more details on clientlibs, see [Using Client-Side Libraries on AEM as a Cloud Service.](/help/implementing/developing/introduction/clientlibs.md)
+    For more details on clientlibs, see [Using Client-Side Libraries on AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 * AEM web tier:
   * Stores the dispatcher configuration files for the AEM publish tier.
 * AEM configuration:
@@ -225,7 +227,7 @@ The latest architecture for AEM as a Cloud Service introduces some fundamental c
   * [Onboarding Journey](/help/journey-onboarding/overview.md)
   * [Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 * Development Architecture
-  * [Cloud Manager Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
+  * [Cloud Manager Repositories](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
   * [CI/CD Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
   * [Code Quality Testing](/help/implementing/cloud-manager/code-quality-testing.md)
 * Edge Delivery Services:

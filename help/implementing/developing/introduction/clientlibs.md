@@ -2,11 +2,13 @@
 title: Using Client-Side Libraries on AEM as a Cloud Service
 description: AEM provides Client-side Library Folders, which allow you to store your client-side code (clientlibs) in the repository, organize it into categories, and define when and how each category of code is to be served to the client
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
+feature: Developing
+role: Admin, Architect, Developer
 ---
 
 # Using Client-Side Libraries on AEM as a Cloud Service {#using-client-side-libraries}
 
-Digital experiences rely heavily on client-side processing driven by complex JavaScript and CSS code. AEM Client-Side Libraries (clientlibs) allow you to organize and centrally store these client-side libraries within the repository. Coupled with the [front-end build process in the AEM Project archetype,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) managing your front-end code for your AEM project becomes simple.
+Digital experiences rely heavily on client-side processing driven by complex JavaScript and CSS code. AEM Client-Side Libraries (clientlibs) allow you to organize and centrally store these client-side libraries within the repository. Coupled with the [front-end build process in the AEM Project archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html), managing your front-end code for your AEM project becomes simple.
 
 Advantages of using clientlibs in AEM include:
 
@@ -19,7 +21,7 @@ Clientlibs are the built-in solution for delivering CSS and JavaScript from AEM.
 
 >[!TIP]
 >
->Front-end developers who are creating CSS and JavaScript for AEM projects should also familiarize themselves with the [AEM Project Archetype and its automated front-end build process.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
+>Front-end developers who are creating CSS and JavaScript for AEM projects should also familiarize themselves with the [AEM Project Archetype and its automated front-end build process](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html).
 
 ## What Are Client-Side Libraries {#what-are-clientlibs}
 
@@ -29,7 +31,7 @@ AEM collects the site's CSS and JavaScript into a single file, in a central loca
 
 ## Front-End Development for AEM as a Cloud Service {#fed-for-aemaacs}
 
-All JavaScript, CSS, and other front-end assets should be maintained in the [ui.frontend module of the AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) The flexibility of the archetype lets you use your modern web tools of choice to create and manage these resources.
+All JavaScript, CSS, and other front-end assets should be maintained in the [ui.frontend module of the AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html). The flexibility of the archetype lets you use your modern web tools of choice to create and manage these resources.
 
 The archetype can then compile the resources into single CSS and JS files, embedding them automatically into a `cq:clientLibraryFolder` in the repository.
 
@@ -84,7 +86,7 @@ In order for the client libraries under `/apps` to be accessible, a proxy servel
 1. If you need to manage static resources, create a subfolder named `resources` below the client library folder.
    * If you store static resources anywhere other than under the folder `resources`, theycannot be referenced on a publish instance.
 1. Add source files to the library folder.
-   * This is typically done by the front-end build process of the [AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
+   * This is typically done by the front-end build process of the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html).
    * You can organize source files in subfolders if desired.
 1. Select the client library folder and click **Create &gt; Create file**.
 1. In the file name box, type one of the following file names and click OK:
@@ -101,7 +103,7 @@ In order for the client libraries under `/apps` to be accessible, a proxy servel
 
 ## Serving Client-Side Libraries {#serving-clientlibs}
 
-Once your client library folder is [configured as required,](#creating-clientlib-folders) your clientlibs can be requested via proxy. As an example:
+Once your client library folder is [configured as required](#creating-clientlib-folders), your clientlibs can be requested via proxy. As an example:
 
 * You have a clientlib in `/apps/myproject/clientlibs/foo`
 * You have a static image in `/apps/myprojects/clientlibs/foo/resources/icon.png`
@@ -129,7 +131,7 @@ This is possible. Still need detail.
 
 ## Client Libraries on Author versus Publish {#clientlibs-author-publish}
 
-Most clientlibs are required on the AEM publish instance. That is, most clientlibs' purposes are to produce the end-user experience of the content. For clientlibs on publish instances, [front-end build tools](#fed-for-aemaacs) can be used and deployed via [client library folders as described above.](#creating-clientlib-folders)
+Most clientlibs are required on the AEM publish instance. That is, most clientlibs' purposes are to produce the end-user experience of the content. For clientlibs on publish instances, [front-end build tools](#fed-for-aemaacs) can be used and deployed via [client library folders as described above](#creating-clientlib-folders).
 
 However there are times when client libraries may be necessary to customize the authoring experience. For example, customizing a dialog might require deploying small bits of CSS or JS to the AEM authoring instance.
 
@@ -339,7 +341,7 @@ For more details on GCC options, see [GCC documentation](https://developers.goog
 
 YUI is set as the default minifier in AEM. To change this to GCC, follow these steps.
 
-1. Go to Apache Felix Config Manager at (`http://<host>:<portY/system/console/configMgr`)
+1. Go to Apache Felix Config Manager at (`http://<host>:<port/system/console/configMgr`)
 1. Find and edit the **Adobe Granite HTML Library Manager**.
 1. Enable the **Minify** option (if not already enabled).
 1. Set the value **JS Processor Default Configs** to `min:gcc`.

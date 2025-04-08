@@ -2,6 +2,9 @@
 title: Preview the Future using your Launch
 description: With Timewarp, you can view your content based on your launches.
 exl-id: 3e19f11c-53cc-491b-8d9b-1e82745caebc
+solution: Experience Manager Sites
+feature: Authoring, Launches
+role: User
 ---
 # Preview with Timewarp {#preview-with-timewarp}
 

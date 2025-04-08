@@ -4,38 +4,27 @@ description: Learn how to configure the Translation Integration Framework to int
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
+solution: Experience Manager Sites
 ---
 # Configuring the Translation Integration Framework {#configuring-the-translation-integration-framework}
 
 The Translation Integration Framework integrates with third-party translation services to orchestrate the translation of AEM content. It involves three basic steps.
 
-1. [Connect to your translation service provider.](#connecting-to-a-translation-service-provider)
-1. [Create a Translation Integration Framework configuration.](#creating-a-translation-integration-configuration)
-1. [Associate the cloud configurations with your pages.](#configuring-pages-for-translation)
+1. [Connect to your translation service provider](#connecting-to-a-translation-service-provider).
+1. [Create a Translation Integration Framework configuration](#creating-a-translation-integration-configuration).
+1. [Associate the cloud configurations with your pages](#configuring-pages-for-translation).
 
 For an overview of the content translation features in AEM, see [Translating Content for Multilingual Sites](overview.md).
 
 >[!TIP]
 >
->If you are new to translating content, see [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM's powerful translation tools, ideal for those with no AEM or translation experience.
+>If you are new to translating content, see [Sites Translation Journey](/help/journey-sites/translation/overview.md), which is guided path through translating your AEM Sites content using AEM's powerful translation tools, ideal for those with no AEM or translation experience.
 
 ## Connecting to a Translation Service Provider {#connecting-to-a-translation-service-provider}
 
-Create a cloud configuration that connects AEM to your translation service provider. AEM includes the capability to [connect to Microsoft&reg; Translator](connect-ms-translator.md) by default.
+Create a cloud configuration that connects AEM to your translation service provider. 
 
-The following translation vendors provide an implementation of the AEM API for translation projects.
-
-* [Microsoft&reg; Translator](connect-ms-translator.md)
-* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html)
-* [Clay Tablet Technologies](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
-* [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
-* [Memsource](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
-* [Cloudwords](https://exchange.adobe.com/experiencecloud.details.90019.html)
-* [XTM Cloud](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
-* [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
-<!-- THIS URL IS 404 * [RWS](https://partners.adobe.com/exchangeprogram/experiencecloud/exchange.details.108277.html) -->
-* [Smartling](https://www.smartling.com/software/integrations/adobe-experience-manager/)
-* [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
+AEM includes the capability to [connect to Microsoft&reg; Translator](connect-ms-translator.md) by default. Other translation technology vendors with AEM connectors who are members of the Adobe Exchange partner program can be found [here](https://exchange.adobe.com/apps/browse/ec?page=1&partnerLevel=All&product=AEM&q=experience+manager+translation&sort=RELEVANCE).  
 
 After you install a connector package, you can create a cloud configuration for the connector. Typically, you must provide your credentials for authenticating with the translation service. For information about adding a cloud configuration for the Microsoft&reg; Translator connector, see [Integrating with Microsoft&reg; Translator](connect-ms-translator.md).
 
@@ -63,7 +52,7 @@ After you configure a translation integration framework, you can [associate it w
 
 A single configuration of the framework controls how page content and assets are translated. To create a translation configuration:
 
-1. In the [global navigation menu,](/help/sites-cloud/authoring/basic-handling.md#global-navigation) select **Tools &gt; Cloud Services &amp; Translation Cloud Services**.
+1. In the [global navigation menu](/help/sites-cloud/authoring/basic-handling.md#global-navigation), select **Tools &gt; Cloud Services &amp; Translation Cloud Services**.
 1. Navigate to where you want to create the configuration in your content structure. This is often based on a particular site or can be global.
 1. Provide the following information in the fields and then select **Create**.:
    1. Select **Configuration Type** in the drop-down.

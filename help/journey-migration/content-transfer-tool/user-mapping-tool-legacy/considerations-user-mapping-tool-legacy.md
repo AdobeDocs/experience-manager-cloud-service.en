@@ -4,12 +4,14 @@ description: Important Considerations for User Mapping Tool (Legacy)
 exl-id: 0d39a5be-93e1-4b00-ac92-c2593c02b740
 hide: yes
 hidefromtoc: yes
+feature: Migration
+role: Admin
 ---
 # Important Considerations for User Mapping Tool (Legacy) {#important-considerations}
 
 >[!INFO]
 >
->This documentation refers to a deprecated version of the tool. For more information on the latest version, see [User Mapping and Principal Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
+>This documentation refers to a deprecated version of the tool. For more information on the latest version, see [Group Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md).
 
 ## Exceptional cases {#exceptional-cases}
 

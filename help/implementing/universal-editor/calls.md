@@ -2,6 +2,8 @@
 title: Universal Editor Calls
 description: Learn about the different types of calls made to your app by the Universal Editor to help you when debugging.
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
+feature: Developing
+role: Admin, Architect, Developer
 ---
 
 # Universal Editor Calls {#calls}
@@ -142,7 +144,7 @@ An `add` call occurs when you place a new component in your app using the Univer
 
 Its payload includes a `path` object containing where the content should be added.
 
-It also includes a `content` object with additional objects for endpoint-specific details of the content to be stored [for each plugin.](/help/implementing/universal-editor/architecture.md) For example if your app is based on content from AEM and Magento, the payload would contain a data object for each system.
+It also includes a `content` object with additional objects for endpoint-specific details of the content to be stored [for each plugin](/help/implementing/universal-editor/architecture.md). For example if your app is based on content from AEM and Magento, the payload would contain a data object for each system.
 
 >[!BEGINTABS]
 

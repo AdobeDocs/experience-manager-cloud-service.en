@@ -2,6 +2,8 @@
 title: Generate Variations
 description: Learn about Generate Variations, accessible from AEM as a Cloud Service and the Sidekick of Edge Delivery Services
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
+feature: Generate Variations
+role: Admin, Architect, Developer
 ---
 
 # Generate Variations {#generate-variations}
@@ -12,10 +14,15 @@ You can [access Generate Variations](#access-generate-variations) from:
 
 * [within Adobe Experience Manager (AEM) as a Cloud Service](#access-aemaacs)
 * [the Sidekick of AEM Edge Delivery Services](#access-aem-sidekick)
+* [within the Content Fragments Editor](/help/sites-cloud/administering/content-fragments/authoring.md#generate-variations-ai)
 
 >[!NOTE]
 >
 >In all cases, to use Generate Variations you must ensure that the [access prerequisites](#access-prerequisites) are fulfilled.
+
+>[!NOTE]
+>
+>You can also access [Generate Variations integrated into AEM editors](/help/generative-ai/generate-variations-integrated-editor.md).
 
 You can then:
 

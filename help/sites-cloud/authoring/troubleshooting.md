@@ -2,6 +2,9 @@
 title: Troubleshooting AEM when Authoring
 description: Some issues that you might encounter when using AEM
 exl-id: b9c0584d-255e-486d-b829-09e07499ecd2
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Troubleshooting AEM when Authoring {#troubleshooting-aem-when-authoring}
 

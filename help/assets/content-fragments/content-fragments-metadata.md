@@ -2,6 +2,9 @@
 title: Metadata - Fragment Properties (Assets - Content Fragments)
 description: See how you can view and edit the metadata properties for Content Fragments.
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
+feature: Content Fragments
+role: User
+solution: Experience Manager Sites
 ---
 # Metadata - Fragment Properties {#metadata-fragment-properties}
 
@@ -11,7 +14,7 @@ See how you can view and edit the metadata properties for Content Fragments in A
 >
 >Content Fragments are a Sites feature, but are stored as **Assets**. 
 >
->There are two editors for authoring Content Fragments. This section covers the original editor, primarily accessed from the **Assets** console. See the Sites documentation, [Content Fragments - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), for details of the new editor (primarily accessed from the **Content Fragments** console).
+>There are two editors for authoring Content Fragments; although the basic functionality is the same, there are some differences. This section covers the original editor, primarily accessed from the **Assets** console. See the Sites documentation, [Content Fragments - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), for details of the new editor (primarily accessed from the **Content Fragments** console).
 
 ## Editing Properties / Meta data {#editing-properties-meta-data}
 

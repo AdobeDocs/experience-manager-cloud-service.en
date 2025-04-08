@@ -2,6 +2,8 @@
 title: Securing the Author Tier
 description: Learn how to configure the network policies to secure the access to your author tier.
 exl-id: f5be90a4-266a-4d23-8e8b-94156f0264d5
+feature: Configuring
+role: Admin
 ---
 # Securing the Author Tier {#securing-the-author-tier}
 

@@ -2,6 +2,8 @@
 title: Extending the Multi Site Manager
 description: Learn how to extend the functionality of the Multi Site Manager.
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Extending the Multi Site Manager {#extending-the-multi-site-manager}
 
@@ -13,7 +15,7 @@ This document helps you understand how to extend the functionality of the Multi 
 
 >[!TIP]
 >
->This page is more easily understood in the context of the document [Reusing Content: Multi Site Manager.](/help/sites-cloud/administering/msm/overview.md)
+>This page is more easily understood in the context of the document [Reusing Content: Multi Site Manager](/help/sites-cloud/administering/msm/overview.md).
 
 >[!CAUTION]
 >
@@ -247,7 +249,7 @@ The following procedure requires that you have added the `adobe-public` profile 
     * **`artifactName`**: `MyLiveActionFactory package`
     * **`packageGroup`**: `myPackages`
 
-1. Start Eclipse and [import the Maven project.](/help/implementing/developing/tools/eclipse.md#import-the-maven-project-into-eclipse)
+1. Start Eclipse and [import the Maven project](/help/implementing/developing/tools/eclipse.md#import-the-maven-project-into-eclipse).
 
 ### Add Dependencies to the POM File {#add-dependencies-to-the-pom-file}
 

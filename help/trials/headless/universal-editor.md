@@ -4,6 +4,8 @@ description: Explore how you can use the Universal Editor to edit any aspect of 
 hidefromtoc: yes
 index: no
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
+feature: Headless
+role: Admin, User, Developer
 ---
 
 # Edit in Context with the Universal Editor {#editing-in-context}

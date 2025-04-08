@@ -1,11 +1,18 @@
 ---
 title: AEM GraphQL API for use with Content Fragments
 description: Learn how to use Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service with the AEM GraphQL API for headless content delivery.
-feature: Content Fragments,GraphQL API
+feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
+role: Admin, Developer
 ---
 
 # AEM GraphQL API for use with Content Fragments {#graphql-api-for-use-with-content-fragments}
+
+>[!IMPORTANT]
+>
+>Various features of the GraphQL API for use with Content Fragments are available through the Early Adopter Program.
+>
+>To see the status, and how to apply if you are interested, check the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 Learn how to use Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service with the AEM GraphQL API for headless content delivery.
 
@@ -23,6 +30,10 @@ Using the GraphQL API in AEM enables the efficient delivery of Content Fragments
 >
 >* [AEM Commerce consumes data from a Commerce platform via GraphQL](/help/commerce-cloud/integrating/magento.md).
 >* AEM Content Fragments work together with the AEM GraphQL API (a customized implementation, based on standard GraphQL), to deliver structured content for use in your applications.
+
+>[!NOTE]
+>
+>See [AEM APIs for Structured Content Delivery and Management](/help/headless/apis-headless-and-content-fragments.md) for an overview of the various APIs available and comparison of some of the concepts involved.
 
 >[!NOTE]
 >
@@ -162,7 +173,7 @@ GraphQL is a strongly-typed API, which means that data must be clearly structure
 
 The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating data on a certain instance. To do this, a client must fetch the [Schema](#schema-generation), which contains all the types necessary for a query. 
 
-For Content Fragments, the GraphQL schemas (structure and types) are based on **Enabled** [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) and their data types.
+For Content Fragments, the GraphQL schemas (structure and types) are based on **Enabled** [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) and their data types.
 
 >[!CAUTION]
 >
@@ -251,7 +262,9 @@ GraphQL for AEM supports a list of types. All the supported Content Fragment Mod
 | Enumeration | `String` | Used to display an option from a list of options defined at model creation |
 | Tags | `[String]` | Used to display a list of Strings representing Tags used in AEM |
 | Content Reference | `String`, `[String]` | Used to display the path towards another asset in AEM |
+| Content Reference (UUID) | `String`, `[String]` | Used to display the path, represented by a UUID towards another asset in AEM |
 | Fragment Reference | *A model type* <br><br>Single field: `Model` - Model type, referenced directly <br><br>Multifield, with one referenced type: `[Model]` - Array of type `Model`, referenced directly from array <br><br>Multifield, with multiple referenced types: `[AllFragmentModels]` - Array of all model types, referenced from array with union type | Used to reference one, or more, Content Fragments of certain Model Types, defined when the model was created |
+| Fragment Reference (UUID) | *A model type* <br><br>Single field: `Model` - Model type, referenced directly <br><br>Multifield, with one referenced type: `[Model]` - Array of type `Model`, referenced directly from array <br><br>Multifield, with multiple referenced types: `[AllFragmentModels]` - Array of all model types, referenced from array with union type | Used to reference one, or more, Content Fragments of certain Model Types, defined when the model was created |
 
 {style="table-layout:auto"}
 
@@ -295,6 +308,27 @@ To retrieve a single Content Fragment of a specific type, you also need to deter
 ```
 
 See [Sample Query - A Single Specific City Fragment](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment).
+
+#### ID (UUID) {#id-uuid}
+
+The ID field is also used as an identifier in AEM GraphQL. It represents the path of the Content Fragment asset inside the AEM repository, but instead of holding the actual path it holds a UUID representing the resource. We have chosen this as the identifier of a Content Fragment, because it:
+
+* is unique within AEM,
+* can be easily fetched,
+* does not change when the resource is moved.
+
+The UUID for a Content Fragment and for a referenced Content Fragment, or asset, can be returned through the JSON property `_id`.
+
+```graphql
+{
+  articleList {
+    items {
+        _id
+        _path
+    }
+  }
+}
+```
 
 #### Metadata {#metadata}
 
@@ -739,7 +773,7 @@ The solution in GraphQL means you can:
 >* `_dynamicUrl` : a DAM asset
 >* `_dmS7Url` : a Dynamic Media asset
 > 
->If the image referenced is a DAM asset then the value for `_dmS7Url` will be `null`. See [Dynamic Media asset delivery by URL in GraphQL queries](#dynamic-media-asset-delivery-by-url).
+>If the asset referenced is a DAM asset then the value for `_dmS7Url` will be `null`. See [Dynamic Media asset delivery by URL in GraphQL queries](#dynamic-media-asset-delivery-by-url).
 
 ### Structure of the Transformation Request {#structure-transformation-request}
 
@@ -919,13 +953,18 @@ The following limitations exist:
 
 GraphQL for AEM Content Fragments allows you to request a URL to an AEM Dynamic Media (Scene7) asset (referenced by a **Content Reference**).
 
->[!CAUTION]
->
->Only *image* assets from Dynamic Media can be referenced.
-
 The solution in GraphQL means you can:
 
 * use `_dmS7Url` on the `ImageRef` reference
+  * see [Sample query for Dynamic Media asset delivery by URL - Image Reference](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+* use `_dmS7Url` on multiple references; `ImageRef`, `MultimediaRef` and `DocumentRef`
+  * see [Sample query for Dynamic Media asset delivery by URL - Multiple References](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+
+* use `_dmS7Url` with Smart Crop functionality
+
+  * The `_smartCrops` property exposes the Smart Crop configurations available for a specific asset
+
+  * see [Sample query for Dynamic Media asset delivery by URL - with Smart Crop](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
 
 >[!NOTE]
 >
@@ -940,12 +979,12 @@ The solution in GraphQL means you can:
 >* `_dmS7Url` : a Dynamic Media asset
 >* `_dynamicUrl` : a DAM asset
 > 
->If the image referenced is a Dynamic Media asset then the value for `_dynamicURL` will be `null`. See [web-optimized image delivery in GraphQL queries](#web-optimized-image-delivery-in-graphql-queries).
+>If the asset referenced is a Dynamic Media asset then the value for `_dynamicURL` will be `null`. See [web-optimized image delivery in GraphQL queries](#web-optimized-image-delivery-in-graphql-queries).
 
-### Sample query for Dynamic Media asset delivery by URL {#sample-query-dynamic-media-asset-delivery-by-url}
+### Sample query for Dynamic Media asset delivery by URL - Image Reference{#sample-query-dynamic-media-asset-delivery-by-url-imageref}
 
 The following is a sample query:
-* for multiple Content Fragments of type `team` and `person`
+* for multiple Content Fragments of type `team` and `person`, returning an `ImageRef`
 
 ```graphql
 query allTeams {
@@ -968,6 +1007,181 @@ query allTeams {
   }
 } 
 ```
+
+### Sample query for Dynamic Media asset delivery by URL - Multiple References{#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs}
+
+The following is a sample query:
+* for multiple Content Fragments of type `team` and `person`, returning an `ImageRef`, `MultimediaRef` and `DocumentRef`:
+
+```graphql
+query allTeams {
+  teamList {
+    items {
+      _path
+      title
+      teamMembers {
+        fullName
+        profilePicture {
+          __typename
+          ... on ImageRef{
+            _dmS7Url
+            height
+            width
+          }
+        }
+       featureVideo {
+          __typename
+          ... on MultimediaRef{
+            _dmS7Url
+            size
+          }
+        }
+      about-me {
+          __typename
+          ... on DocumentRef{
+            _dmS7Url
+            _path
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+### Sample query for Dynamic Media asset delivery by URL - with Smart Crop {#sample-query-dynamic-media-asset-delivery-by-url-smart-crop}
+
+The following is a sample query:
+
+* to expose the Smart Crop configurations available for the requested assets
+
+```graphql
+query allTeams {
+  teamList {
+    items {
+      title
+      teamMembers {
+        profilePicture {
+          ... on ImageRef {
+            height
+            width
+            _dmS7Url
+            _smartCrops {
+              width
+              height
+              name
+            }
+          }
+        }
+      }
+    }
+  }
+} 
+```
+
+## Dynamic Media for OpenAPI asset support (Remote Assets) {#dynamic-media-for-openapi-asset-support}
+
+[Remote assets](/help/sites-cloud/administering/content-fragments/authoring.md#reference-remote-assets) integration allows you to reference Assets, that are not local to the current AEM instance, from the Content Fragment Editor. It is implemented by Dynamic Media for OpenAPI asset support in Content Fragment Editor and GraphQL JSON.
+
+### Sample query for Dynamic Media for OpenAPI asset support (Remote Assets) {#sample-query-dynamic-media-for-openapi-asset-support}
+
+The following is a sample request:
+
+* to illustrate the concept of referencing remote assets
+
+  ```graphql
+  {
+    testModelList {
+      items {
+        remoteasset {
+          ... on RemoteRef {
+              repositoryId
+                  assetId
+          }
+        }
+        multiplecontent {
+          ... on ImageRef {
+            _path
+            _authorUrl
+            _publishUrl
+          }
+          ... on RemoteRef {
+              repositoryId
+              assetId
+          }
+        }
+      }
+      _references {
+        ... on ImageRef {
+            _path
+            _authorUrl
+            _publishUrl
+          }
+          ... on RemoteRef {
+              repositoryId
+              assetId
+          }
+      }
+    }
+  }
+  ```
+
+* the response
+
+  ```graphql
+  {
+    "data": {
+      "testModelList": {
+        "items": [
+          {
+            "remoteasset": {
+              "repositoryId": "delivery-p123456-e123456.adobeaemcloud.com",
+              "assetId": "urn:aaid:aem:1fb05fe4-c12b-4f85-b1ca-aa92cdbd6a62"
+            },
+            "multiplecontent": [
+              {
+                "repositoryId": "delivery-p123456-e123456.adobeaemcloud.com",
+                "assetId": "urn:aaid:aem:1fb05fe4-c12b-4f85-b1ca-aa92cdbd6a62"
+              },
+              {
+                "_path": "/content/dam/test-folder/test.jpg",
+                "_authorUrl": "http://localhost:4502/content/dam/test-folder/test.jpg",
+                "_publishUrl": "http://localhost:4503/content/dam/test-folder/test.jpg"
+              }
+            ]
+          }
+        ],
+        "_references": [
+          {
+            "repositoryId": "delivery-p123456-e123456.adobeaemcloud.com",
+            "assetId": "urn:aaid:aem:1fb05fe4-c12b-4f85-b1ca-aa92cdbd6a62"
+          },
+          {
+            "_path": "/content/dam/test-folder/test.jpg",
+            "_authorUrl": "http://localhost:4502/content/dam/test-folder/test.jpg",
+            "_publishUrl": "http://localhost:4503/content/dam/test-folder/test.jpg"
+          }
+        ]
+      }
+    }
+  }  
+  ```
+
+**Limitations**
+
+The current limitations are:
+
+* GraphQL delivery supports only `repositoryId` and `assetId` (other asset metadata is not returned)
+
+  >[!NOTE]
+  >
+  >The full URL then needs to be constructed on the client side, based on the [Asset delivery API](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat).
+
+* Only *Approved* assets will be available for reference from the remote repositories
+* If an asset that is referenced is removed from the remote repository, this will result in a broken Content Fragment Asset reference.
+* All Delivery Asset Repositories to which the user has access, will be available for selection, the available list cannot be limited.
+* Both the AEM instance and the Remote Asset Repository instances must be the same version.
+* No Asset Metadata is exposed via the [Management API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/) and [Delivery API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/). You have to use the Asset Metadata API to retrieve the asset metadata details. 
 
 ## GraphQL for AEM - Summary of Extensions {#graphql-extensions}
 
@@ -1026,6 +1240,11 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
     * `_path` : the path to your Content Fragment within the repository
       * See [Sample Query - A Single Specific City Fragment](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
 
+    * `_id` : the UUID for your Content Fragment within the repository
+
+      * See [Sample Query for a Content Fragment of a specific Model with UUID references](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-references)
+      * [See Sample Query for Content Fragments by UUID reference](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-reference)
+
     * `_reference` : to reveal references; including inline references in the Rich Text Editor
       * See [Sample Query for multiple Content Fragments with Prefetched References](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-prefetched-references)
 
@@ -1064,7 +1283,9 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 
     * `_dmS7Url`: on the `ImageRef` reference for the delivery of the URL to a [Dynamic Media asset](#dynamic-media-asset-delivery-by-url)
 
-      * See [Sample query for Dynamic Media asset delivery by URL](#sample-query-dynamic-media-asset-delivery-by-url)
+      * See [Sample query for Dynamic Media asset delivery by URL - ImageRef](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+
+      * See [Sample query for Dynamic Media asset delivery by URL - Multiple References](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
   * `_tags`: to reveal the IDs of Content Fragments or Variations that contain tags; this is an array of `cq:tags` identifiers. 
 
@@ -1108,6 +1329,14 @@ To access the GraphQL endpoint from an external website you need to configure th
 ## Authentication {#authentication}
 
 See [Authentication for Remote AEM GraphQL Queries on Content Fragments](/help/headless/security/authentication.md).
+
+## Automated Testing {#automated-testing}
+
+When running a deployment pipeline in AEM Cloud Manager, automated tests are run during pipeline execution. 
+
+To provide accurate results, your AEM as a Cloud Service **Stage** environment should mirror your **Production** environment as closely as possible. This is especially important for content.
+
+You can achieve this by using the AEM as a Cloud Service [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) to copy your Production content to the Stage environment.
 
 ## Limitations {#limitations}
 

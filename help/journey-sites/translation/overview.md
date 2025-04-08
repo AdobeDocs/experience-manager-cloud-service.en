@@ -5,6 +5,9 @@ index: yes
 hide: no
 hidefromtoc: no
 exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
+solution: Experience Manager Sites
+feature: Translation
+role: Admin
 ---
 # AEM Sites Translation Journey {#aem-sites-translation-journey}
 
@@ -16,7 +19,7 @@ AEM Sites is a powerful tool set for creating and managing digital experiences. 
 
 AEM offers equally powerful tools to translate your content allowing you to deliver it as quickly as possible to your audiences in other regions or locales. This documentation journey introduces you to the authoring tools so you understand how content is created and managed in AEM and then dives into what you need to know to manage your own translation project.
 
-If you are already familiar with AEM Sites and your translation requirements, you may already have the foundational knowledge of this journey. If so, consider referring to our technical documentation linked under the [additional resources section below.](#additional-resources)
+If you are already familiar with AEM Sites and your translation requirements, you may already have the foundational knowledge of this journey. If so, consider referring to our technical documentation linked under the [additional resources section below](#additional-resources).
 
 ## AEM Documentation Journeys {#documentation-journeys}
 

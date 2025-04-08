@@ -2,7 +2,7 @@
 title: Creating Multiple Category and Product Pages
 description: Learn how to enrich Category Landing and Product Detail pages with targeted marketing content.
 sub-product: Commerce
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: feature-video
 activity: use
 audience: marketer
@@ -10,6 +10,7 @@ feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e
+role: Admin
 ---
 # Creating Multiple Category and Product Pages {#multiple}
 

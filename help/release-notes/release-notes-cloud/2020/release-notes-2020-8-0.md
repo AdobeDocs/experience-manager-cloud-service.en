@@ -2,6 +2,8 @@
 title: Release Notes for 2020.8.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] as a Cloud Service Release Notes for 2020.8.0."
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
+feature: Release Information
+role: Admin
 ---
 # Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
 
@@ -76,7 +78,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
   >[!NOTE]
   >Content Audit has since been renamed to Experience Audit.
 
-   See [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
+   See [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-dashboard.md) for more details.
 
 * Newlycreated environments in Assets programs will now be automatically configured with Smart Content Services.
 

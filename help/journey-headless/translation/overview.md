@@ -2,6 +2,9 @@
 title: AEM Headless Translation Journey
 description: Start here for a guided journey through translating your headless content using AEM's powerful translation tools.
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
+solution: Experience Manager
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Architect, Developer
 ---
 # AEM Headless Translation Journey {#aem-headless-translation-journey}
 
@@ -22,7 +25,7 @@ This guide leads you through the most important headless translation topics so t
 
 The goal is to give you a broad understanding of headless technology, how AEM serves headless content, and how you can translate it. If you are not familiar with any of these topics, this is your ideal place to start.
 
-If you are already familiar with AEM, headless, and translation, you may already have the foundational knowledge of this journey. Consider referring to our technical documentation linked under the [additional resources section below.](#additional-resources)
+If you are already familiar with AEM, headless, and translation, you may already have the foundational knowledge of this journey. Consider referring to our technical documentation linked under the [additional resources section below](#additional-resources).
 
 ## AEM Documentation Journeys {#documentation-journeys}
 

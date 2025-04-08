@@ -2,12 +2,17 @@
 title: Launches
 description: Launches enable you to efficiently develop content for a future release. They allow you to make changes ready for future publication, while maintaining your current pages
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
+solution: Experience Manager Sites
+feature: Authoring, Launches
+role: User
 ---
 # Launches {#launches}
 
 Launches enable you to efficiently develop content for a future release.
 
-A launch is created to allow you to make changes ready for future publication (while maintaining your current pages). After editing and updating your launch pages you promote them back to the source, then activate the source pages (top-level). Promoting duplicates the launch content back to the source pages and can be done either manually or automatically (dependent on fields set when creating and editing the launch).
+A *Launch* is created to allow you to make changes in preparation for future publication, at the same time as maintaining your current pages. This means that you are effectively editing two versions at the same time: pages that are currently published, and a version of those pages, to be published at a time in the future. Once that time arrives you can replace the original pages and publish the new version.  
+
+You create a *Launch*, then after editing and updating your *Launch* pages you *Promote* them back to the *Source*. You can then activate these *Source* pages (top-level). Promoting duplicates the launch content back to the source pages and can be done either manually or automatically (dependent on fields set when creating and editing the launch).
 
 For example, the seasonal product pages of your online store are updated quarterly so that the featured products align with the current season. To prepare for the next quarterly update, you can create a launch of the appropriate web pages. Throughout the quarter, the following changes are accumulated in the launch copy:
 
@@ -96,9 +101,13 @@ Launches allow you to:
 
 ## The Launches Console {#the-launches-console}
 
-The Launches console provides an overview of your launches and lets you act on those listed. The console can be accessed by:
+The Launches console provides an overview of your launches and lets you act on those listed. 
 
-* The **Tools** Console: **Tools**, **Sites**, **Launches**.
+![Launch Console - Manage Content](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
+
+The console can be accessed by:
+
+* The **Tools** Console: **Tools**, **General**, **Launches**.
 
 * **Launches Console** at the bottom of the **Launches** section of the **References** rail when navigating source content in the Sites console.
 
@@ -107,6 +116,3 @@ The Launches console provides an overview of your launches and lets you act on t
 * The **Launches** button at the top right, when navigating launch content in the Sites console:
 
   ![Launches option in Sites console](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
-
-* Or directly; for example, with:
-   `https://<host>:<port>/libs/launches/content/launches.html`

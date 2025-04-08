@@ -2,6 +2,9 @@
 title: Previewing Pages Using ContextHub Data
 description: The ContextHub toolbar displays data from ContextHub stores and enables you to change store data and  is useful for previewing content
 exl-id: 9c0536c5-900e-4814-9e31-f9fee5adc17c
+solution: Experience Manager Sites
+feature: Authoring, Personalization
+role: User
 ---
 # Previewing Pages Using ContextHub Data  {#previewing-pages-using-contexthub-data}
 

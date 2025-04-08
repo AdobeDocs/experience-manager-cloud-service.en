@@ -2,6 +2,8 @@
 title: Implementation Phase
 description: Making sure your code and content are ready for the migration to the cloud
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
+feature: Migration
+role: Admin
 ---
 # Implementation Phase {#implementation-phase}
 
@@ -41,7 +43,7 @@ The exact steps of your transition to Cloud Service depend on the systems you ha
 
 The following figure shows the main steps involved in the phase that involves converting your code and content for use with AEM as a Cloud Service:
 
-![image](/help/journey-migration/assets/exec-image1.png)
+![Conversion steps](/help/journey-migration/assets/exec-image1.png)
 
 We will start detailing the tools you must use so you can achieve this in the chapters below.
 
@@ -209,7 +211,7 @@ The following table illustrates a functional migration tracker:
 
 The following section shows the important steps and associated tasks that can be used to formulate a content migration strategy and timeline.
 
-![image](/help/journey-migration/assets/content-migration2.png)
+![Steps to formulate a migration strategy](/help/journey-migration/assets/content-migration2.png)
 
 ### Fitment {#fitment}
 

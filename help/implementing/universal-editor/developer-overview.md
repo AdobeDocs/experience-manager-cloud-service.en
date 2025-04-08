@@ -2,6 +2,8 @@
 title: Universal Editor Overview for AEM Developers
 description: If you are an AEM developer interested in how the Universal Editor works and how to use it in your project, this document gives you an end-to-end introduction by leading you through instrumenting the WKND project to work with the Universal Editor.
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
+feature: Developing
+role: Admin, Architect, Developer
 ---
 
 # Universal Editor Overview for AEM Developers {#developer-overview}
@@ -25,17 +27,17 @@ It does this by taking a standard example that most AEM developer's are familiar
 To follow along with this overview, you need the following available.
 
 * [A local development instance of AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
-  * Your local development instance must be [configured with HTTPS for development purpose on `localhost`.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)
-  * [The WKND demo site must be installed.](https://github.com/adobe/aem-guides-wknd)
-* [Access to the Universal Editor](/help/implementing/universal-editor/getting-started.md#onboarding)
-* [A local Universal Editor service](/help/implementing/universal-editor/local-dev.md) running for development purposes
-  * Make sure to direct your browser to [accept the local services self-signed certificate.](/help/implementing/universal-editor/local-dev.md#editing)
+  * Your local development instance must be [configured with HTTPS for development purpose on `localhost`](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html).
+  * [The WKND demo site must be installed](https://github.com/adobe/aem-guides-wknd).
+* [Access to the Universal Editor](/help/implementing/universal-editor/getting-started.md#onboarding).
+* [A local Universal Editor service](/help/implementing/universal-editor/local-dev.md) running for development purposes.
+  * Make sure to direct your browser to [accept the local services self-signed certificate](/help/implementing/universal-editor/local-dev.md#editing).
 
-Beyond general familiarity with web development, this document assumes basic familiarity with AEM development. If you are not experienced with AEM development, consider reviewing [the WKND tutorial before continuing.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+Beyond general familiarity with web development, this document assumes basic familiarity with AEM development. If you are not experienced with AEM development, consider reviewing [the WKND tutorial before continuing](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 ## Start AEM and Sign In to the Universal Editor {#sign-in}
 
-If you haven't already, you must have your local AEM development instance running with WKND installed and HTTPS enabled as [detailed in the prerequisites.](#prerequisites) This overview assumes that your instance is running at `https://localhost:8443`.
+If you haven't already, you must have your local AEM development instance running with WKND installed and HTTPS enabled as [detailed in the prerequisites](#prerequisites). This overview assumes that your instance is running at `https://localhost:8443`.
 
 1. Open the main WKND English language master page in the AEM Editor.
 
@@ -142,7 +144,7 @@ You must add the necessary JavaScript library to the page component of the WKND 
 1. Add the JavaScript library to the end of the file.
 
    ```html
-   <script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>
+   <script src="https://universal-editor-service.adobe.io/cors.js" async></script>
    ```
 
 1. Click **Save All** and then reload the Universal Editor.
@@ -152,7 +154,12 @@ The page now loads with the proper JavaScript library to allow the Universal Edi
 >[!TIP]
 >
 >* The library can be loaded either in the header or the footer.
->* The `universal-editor-embedded.js` library [is available on NPM](https://www.npmjs.com/package/@adobe/universal-editor-cors) and you can host it yourself if that is required or place it directly into your application.
+
+>[!NOTE]
+>
+>The previously-recommend method to include the JavaScript library, `<script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>` or via npmjs.com is no longer recommended as the package has been deprecated.
+>
+>If an app still uses the deprecated package, the Universal Editor will display a warning in the UI that an outdated package is detected.
 
 ## Defining a Connection to Persist Changes {#connection}
 
@@ -176,7 +183,7 @@ However you likely noticed that you can not interact with the page in the Univer
    <meta name="urn:adobe:aue:system:aem" content="aem:https://localhost:8443">
    ```
 
-   * The latest version of the library is always recommended. If you need a prior version, please see the document [Getting Started with the Universal Editor in AEM.](/help/implementing/universal-editor/getting-started.md#alternative)
+   * The latest version of the library is always recommended. If you need a prior version, please see the document [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md#alternative).
 
 1. Add the necessary metadata for the connection to your local Universal Editor service to the end of the file.
 
@@ -232,7 +239,7 @@ Your components must also be instrumented to be editable with the Universal Edit
 
 1. In the Universal Editor, click the teaser component at the top of the page and see that you can now select it.
 
-1. If you click the **Content tree** icon in the properties rail of the Universal Editor, you can see that the editor recognized all the teasers on the page now that you have instrumented it. The teaser you selected is the one highlighted.
+1. If you click the **Content tree** icon in the properties panel of the Universal Editor, you can see that the editor recognized all the teasers on the page now that you have instrumented it. The teaser you selected is the one highlighted.
 
    ![Selecting the instrumented teaser component](assets/dev-select-teaser.png)
 
@@ -347,13 +354,13 @@ You can see the change persisted in the JCR.
 >
 >The basic authentication header example `Basic YWRtaW46YWRtaW4=` is for the user/password combination of `admin:admin` as is common for local AEM development.
 
-## Instrumenting the App for the Properties Rail {#properties-rail}
+## Instrumenting the App for the Properties Panel {#properties-rail}
 
 You now have an app that is instrumented to be editable using the Universal Editor!
 
-Editing is currently limited to in-line editing of the teaser's title. However, there are cases when editing in-place is not sufficient. Text such as the title of the teaser can be edited where it is with keyboard input. However more complicated items need to be able to display and allow editing of structured data separate from how it is rendered in the browser. This is what the properties rail is for.
+Editing is currently limited to in-line editing of the teaser's title. However, there are cases when editing in-place is not sufficient. Text such as the title of the teaser can be edited where it is with keyboard input. However more complicated items need to be able to display and allow editing of structured data separate from how it is rendered in the browser. This is what the properties panel is for.
 
-To update your app to use the properties rail for editing, return to the header file of the page component of your app. This is where you already established the connections to your local AEM development instance and your local Universal Editor service. Here you must define the components that are editable in the app and their data models.
+To update your app to use the properties panel for editing, return to the header file of the page component of your app. This is where you already established the connections to your local AEM development instance and your local Universal Editor service. Here you must define the components that are editable in the app and their data models.
 
 1. Open CRXDE Lite.
 
@@ -454,7 +461,7 @@ To update your app to use the properties rail for editing, return to the header 
 
 ## What does it all mean? {#what-does-it-mean-2}
 
-To be editable using the properties rail, the components must be assigned to `groups`, so each definition begins as a list of groups containing the components.
+To be editable using the properties panel, the components must be assigned to `groups`, so each definition begins as a list of groups containing the components.
 
 * `title` is the name of the group.
 * `id` is the unique identifier of the group, in this case general components that compose the page content as opposed to advanced components for page layout, for example.
@@ -479,7 +486,7 @@ Each component then must be mapped to a `model` to define the individual editabl
 * `label` is the description of the field that appears in the editor UI.
 * `valueType` is the type of data.
 
-## Instrumenting the Component for the Properties Rail {#properties-rail-component}
+## Instrumenting the Component for the Properties Panel {#properties-rail-component}
 
 You also need to define at the component level, which model the component should use.
 
@@ -501,17 +508,17 @@ You also need to define at the component level, which model the component should
 
 1. Click **Save All** in the toolbar and reload the Universal Editor.
 
-Now you are ready to test out the properties rail instrumented for your component.
+Now you are ready to test out the properties panel instrumented for your component.
 
 1. In the Universal Editor, click the title of the teaser to edit it once more.
 
-1. Click the properties rail to show the properties tab and see the fields that you just instrumented.
+1. Click the properties panel to show the properties tab and see the fields that you just instrumented.
 
-   ![The instrumented properties rail](assets/dev-properties-rail-instrumented.png)
+   ![The instrumented properties panel](assets/dev-properties-rail-instrumented.png)
 
-You can now edit the title of the teaser either in-line as you had before, or in the properties rail. In both cases, the changes are persisted back to your local AEM development instance.
+You can now edit the title of the teaser either in-line as you had before, or in the properties panel. In both cases, the changes are persisted back to your local AEM development instance.
 
-## Add Additional Fields to the Properties Rail {#add-fields}
+## Add Additional Fields to the Properties Panel {#add-fields}
 
 Using the basic structure of the data model for the component that you already implemented, you can add additional fields, following the same model.
 
@@ -547,9 +554,9 @@ For example, you can add a field to adjust the styling of the component.
 
 1. Click the title of the teaser to edit it once more.
 
-1. Click the properties rail and see that there is a new field to adjust the style of the component.
+1. Click the properties panel and see that there is a new field to adjust the style of the component.
 
-   ![The instrumented properties rail with the style field](assets/dev-style-instrumented.png)
+   ![The instrumented properties panel with the style field](assets/dev-style-instrumented.png)
 
 Any field in the JCR for the component can be exposed in the Universal Editor in this way.
 
@@ -559,21 +566,21 @@ Congratulations! Now you can instrument your own AEM apps to work with the Unive
 
 When you start instrumenting your own app, keep in mind the basic steps you performed in this example.
 
-1. [You set up your development environment.](#prerequisites)
+1. [You set up your development environment](#prerequisites).
    * AEM running locally on HTTPS with WKND installed
    * Universal Editor Service running locally on HTTPS
 1. You updated AEM's OSGi settings to allow its content to be loaded remotely.
    * [`org.apache.sling.engine.impl.SlingMainServlet`](#sameorigin)
    * [`com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`](#samesite-cookies)
-1. [You added the `universal-editor-embedded.js` library to the `customheaderlibs.html` file of the page component of the app.](#ue-connect-remote-frame)
-1. [You defined a connection to persist changes in the `customheaderlibs.html` file of the page component of the app.](#connection)
+1. [You added the `universal-editor-embedded.js` library to the `customheaderlibs.html` file of the page component of the app](#ue-connect-remote-frame).
+1. [You defined a connection to persist changes in the `customheaderlibs.html` file of the page component of the app](#connection).
    * You defined a connection to the local AEM development instance.
    * You also defined a connection to the local Universal Editor service.
-1. [You instrumented the teaser component.](#instrumenting-components)
-1. [You instrumented the subcomponents of the teaser.](#subcomponents)
-1. [You defined a custom authentication header so you could save changes using your local Universal Editor service.](#auth-header)
-1. [You instrumented the app to use the properties rail.](#properties-rail)
-1. [You instrumented the teaser component to use the properties rail.](#properties-rail-component)
+1. [You instrumented the teaser component](#instrumenting-components).
+1. [You instrumented the subcomponents of the teaser](#subcomponents).
+1. [You defined a custom authentication header so you could save changes using your local Universal Editor service](#auth-header).
+1. [You instrumented the app to use the properties panel](#properties-rail).
+1. [You instrumented the teaser component to use the properties panel](#properties-rail-component).
 
 You can follow these same steps to instrument your own app for use with the Universal Editor. Any properties in the JCR can be exposed to the Universal Editor.
 

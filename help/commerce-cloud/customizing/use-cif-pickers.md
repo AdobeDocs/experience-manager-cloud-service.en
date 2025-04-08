@@ -3,11 +3,12 @@ title: Usage of CIF product & category picker
 description: Learn how to use CIF product & category picker in your customer commerce components to support authors and marketers to efficiently work with commerce product and catalog data.
 sub-product: Commerce
 topics: Development
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 activity: develop
 audience: developer
 feature: Commerce Integration Framework
 exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
+role: Admin
 ---
 # AEM Content & Commerce Authoring Pickers {#cif-pickers}
 

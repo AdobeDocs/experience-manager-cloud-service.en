@@ -2,6 +2,8 @@
 title: Overview to Best Practices Analyzer
 description: Learn how to use the Best Practices Analyzer to asses the adherence of your AEM implementation to the recommended best practices
 exl-id: 46c567f8-91e2-4d85-98bd-61d183b887d5
+feature: Migration
+role: Admin
 ---
 # Overview {#overview-best-practices-analyzer}
 

@@ -4,6 +4,7 @@ description: Learn how to create and synchronize Live Copies to reuse your conte
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
+solution: Experience Manager Sites
 ---
 # Creating and Synchronizing Live Copies {#creating-and-synchronizing-live-copies}
 
@@ -341,7 +342,7 @@ To change Live Copy content, you can:
 
 You can add components to a Live Copy page at any time. The inheritance status of the Live Copy and its paragraph system does not control your ability to add components.
 
-When the Live Copy page is synchronized with the source page, the added components remain unchanged. See also [Changing the Order of Components on a Live Copy Page.](#changing-the-order-of-components-on-a-live-copy-page)
+When the Live Copy page is synchronized with the source page, the added components remain unchanged. See also [Changing the Order of Components on a Live Copy Page](#changing-the-order-of-components-on-a-live-copy-page).
 
 >[!TIP]
 >

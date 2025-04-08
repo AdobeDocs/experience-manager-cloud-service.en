@@ -5,6 +5,9 @@ index: yes
 hide: no
 hidefromtoc: no
 exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
+solution: Experience Manager Sites
+feature: Translation
+role: Admin
 ---
 # Configure Translation Rules {#configure-translation-rules}
 
@@ -95,6 +98,6 @@ Build on this knowledge and continue your AEM Sites translation journey by next 
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the translation journey by reviewing the document [Translate content,](translate-content.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
+While it is recommended that you move on to the next part of the translation journey by reviewing the document [Translate content](translate-content.md), the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
 
 * [Identifying Content to Translate](/help/sites-cloud/administering/translation/rules.md) - Learn how translation rules identify content that needs translating.

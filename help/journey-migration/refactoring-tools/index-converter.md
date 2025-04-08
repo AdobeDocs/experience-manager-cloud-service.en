@@ -2,6 +2,8 @@
 title: Index Converter
 description: Learn how to migrate your Index Definitions in preparation for the move to AEM as a Cloud Service.
 exl-id: ac02ca41-eb35-4f24-bf17-d00ce318423d
+feature: Migration
+role: Admin
 ---
 # Index Converter {#index-converter}
 

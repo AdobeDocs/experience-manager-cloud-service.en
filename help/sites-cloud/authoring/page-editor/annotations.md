@@ -2,6 +2,9 @@
 title: Adding Page Annotations
 description: Use annotation mode to leave annotations and sketches on pages as you would use sticky notes to assist your content review process
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Adding Page Annotations {#adding-page-annotations}
 
@@ -74,7 +77,7 @@ In addition to viewing the annotations, Annotate mode lets you create, edit, mov
 
 1. After you have finished editing a specific annotation, you can:
 
-    * Select the text marker to open the annotation. Once open you can view the full text, make changes, or [delete the annotation.](#deleting-annotations)
+    * Select the text marker to open the annotation. Once open you can view the full text, make changes, or [delete the annotation](#deleting-annotations).
     * Reposition the text marker.
     * Select a sketch line to select that sketch and drag it to the desired position.
     * Move or copy a component

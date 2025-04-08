@@ -2,6 +2,9 @@
 title: Learn about Creating Content Fragment Models in AEM
 description: Learn about the concepts and mechanics of modeling content for your Headless CMS using Content Fragments Models.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
+solution: Experience Manager
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Architect, Developer
 ---
 # Learn about Creating Content Fragment Models in AEM {#architect-headless-content-fragment-models}
 
@@ -9,7 +12,7 @@ exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 
 At the beginning of the [AEM Headless Content Author Journey](overview.md) the [Content Modeling Basics for Headless with AEM](basics.md) covered the basic concepts and terminology relevant to authoring for headless.
 
-This article builds on these so you understand how to create your own Content Fragment Models for your AEM headless project.
+This article builds on these principles so that you understand how to create your own Content Fragment Models for your AEM headless project.
 
 ## Objective {#objective}
 
@@ -33,6 +36,21 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## Creating Content Fragment Models {#creating-content-fragment-models}
 
+Then the Content Fragments Models can be created and the structure defined.
+
+1. In the Content Fragment Console, select the panel for Content Fragment Models.
+
+1. Navigate to the folder appropriate to your configuration, or subconfiguration.
+
+1. Use **Create** to open the **New Content Fragment Model** dialog.
+
+   ![Title and description](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-create.png)
+
+1. Complete the details
+
+1. Use **Create** to save the empty model, or **Create and open**.
+
+<!--
 Then the Content Fragments Models can be created and the structure defined. This can be done under **Tools** > **General** > **Content Fragment Models**. 
 
 ![Content Fragment Models in Tools](assets/cfm-tools.png)
@@ -44,6 +62,7 @@ The option **Enable model** is activated by default. This means that your model 
 ![Create Content Fragment Model](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
 
 Confirm with **Create** and you can then **Open** your model to start defining the structure.
+-->
 
 ## Defining Content Fragment Models {#defining-content-fragment-models}
 
@@ -57,7 +76,7 @@ You can drag instances of the **Data Types** onto the left space - you are alrea
 
 ![Defining fields](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png) 
 
-After you add a data type you are required to define the **Properties** for that field. These depend on the type being used. For example:
+After you add a data type you are required to define the **Properties** for that field. These properties depend on the type being used. For example:
 
 ![Data Properties](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png) 
 
@@ -80,7 +99,7 @@ Your content authors do not see the actual Data Types and Properties that you ha
 Managing your Content Fragment Models involves:
 
 * Enabling (or disabling) them - this makes them available for authors when creating Content Fragments.
-* Deleting - deletion is always needed, but you need to be aware of deleting a model that is already used for Content Fragments, in particular fragments that are already published.
+* Deleting - deletion is always needed, but you need to be aware of deleting a model that is already used for Content Fragments; in particular fragments that are already published.
 
 ## Publishing {#publishing}
 
@@ -90,7 +109,7 @@ Content fragment models need to be published when/before any dependent content f
 
 >[!NOTE]
 >
->If an author tries to publish a content fragment for which the model has not yet been published, a selection list indicates this and the model is published with the fragment.
+>If an author tries to publish a content fragment for which the model has not yet been published, a selection list indicates this, and the model is published with the fragment.
 
 As soon as a model is published it is *locked* into a READ-ONLY mode on author. This aims to prevent changes that would result in errors to existing GraphQL schemas and queries, especially on the publish environment. It is indicated in the console by **Locked**. 
 
@@ -108,21 +127,21 @@ Now that you have learned the basics, the next step is to start creating your ow
 
 * [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md)
  
-  * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+  * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 
-    * [Defining your Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#defining-your-content-fragment-model)
+    * [Defining your Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
-    * [Enabling or Disabling a Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#enabling-disabling-a-content-fragment-model)
+    * [Enabling or Disabling a Content Fragment Model](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#enabling-disabling-a-content-fragment-model)
 
-    * [Allowing Content Fragment Models on your Assets Folder](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)
+    * [Allowing Content Fragment Models on your Assets Folder](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder)
 
-    * [Deleting a Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#deleting-a-content-fragment-model)
+    * [Deleting a Content Fragment Model](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#deleting-a-content-fragment-model)
 
-    * [Publishing a Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#publishing-a-content-fragment-model)
+    * [Publishing a Content Fragment Model](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model)
 
-    * [Unpublishing a Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#unpublishing-a-content-fragment-model)
+    * [Unpublishing a Content Fragment Model](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#unpublishing-a-content-fragment-model)
 
-    * [Locked (Published) Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#locked-published-content-fragment-models)
+    * [Locked Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#locked-content-fragment-models)
 
 * Getting Started Guides
   

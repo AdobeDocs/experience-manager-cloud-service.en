@@ -2,12 +2,16 @@
 title: SPA Introduction and Walkthrough
 description: This article introduces the concepts of a SPA and walks through using a basic SPA application for authoring, showing how it relates to the underlying AEM SPA Editor.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # SPA Introduction and Walkthrough {#spa-introduction}
 
 Single page applications (SPAs) can offer compelling experiences for website users. Developers want to be able to build sites using SPA frameworks and authors want to seamlessly edit content within AEM for a site built using such frameworks.
 
 The SPA Editor offers a comprehensive solution for supporting SPAs within AEM. This article walks through using a basic SPA application for authoring and shows how it relates to the underlying AEM SPA Editor.
+
+{{ue-over-spa}}
 
 ## Introduction {#introduction}
 

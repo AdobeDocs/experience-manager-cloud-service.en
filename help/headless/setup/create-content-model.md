@@ -2,6 +2,8 @@
 title: Creating Content Fragment Models - Headless Setup
 description: Define the structure of the content you will create and serve using AEM's headless capabilities by using Content Fragment Models.
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Architect, Developer
 ---
 # Creating Content Fragment Models - Headless Setup {#creating-content-fragment-models}
 
@@ -9,7 +11,7 @@ Define the structure of the content you will create and serve using AEM's headle
 
 ## What are Content Fragment Models? {#what-are-content-fragment-models}
 
-[Now that you have created a configuration,](create-configuration.md) you can use it to create Content Fragment Models.
+[Now that you have created a configuration](create-configuration.md), you can use it to create Content Fragment Models.
 
 Content Fragment Models define the structure of the data and content that you will create and manage in AEM. They serve as a kind of scaffolding for your content. When choosing to create content, your authors will select from the Content Fragment Models you define, which guides them in creating content.
 
@@ -59,8 +61,8 @@ You can create multiple models. Models can reference other content fragments. Us
 
 ## Next Steps {#next-steps}
 
-Now that you have defined the structures of your Content Fragments by creating models, you can move on to the third part of the getting started guide and [create folders where you will store the fragments themselves.](create-assets-folder.md)
+Now that you have defined the structures of your Content Fragments by creating models, you can move on to the third part of the getting started guide and [create folders where you will store the fragments themselves](create-assets-folder.md).
 
 >[!TIP]
 >
->For complete details about Content Fragment Models, see the [Content Fragment Models documentation](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+>For complete details about Content Fragment Models, see the [Content Fragment Models documentation](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md).

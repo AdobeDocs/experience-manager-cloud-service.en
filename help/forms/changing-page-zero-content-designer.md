@@ -3,10 +3,10 @@ title: How to change Page Zero content in Designer?
 description: Change the message displayed on Page Zero of an XFA PDF for non-Adobe PDF viewers.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-docset: aem65
-
+feature: Adaptive Forms
+role: User
+exl-id: 726ba8a8-bfa4-44ac-8e74-e86a32505f36
 ---
-
 # Changing Page Zero content in Designer {#changing-page-zero-content-in-designer}
 
 Page Zero content is displayed by default when a non-Adobe PDF viewer, such as the default PDF viewer in [!DNL Chrome] or [!DNL Firefox], cannot read the content of the PDF/XFA form. The default Page Zero message is shown below.

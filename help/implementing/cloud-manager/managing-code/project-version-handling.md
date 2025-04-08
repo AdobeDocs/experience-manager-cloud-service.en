@@ -2,6 +2,9 @@
 title: Maven Project Version Handling
 description: For staging and production deployments of AEM as a Cloud Service, Cloud Manager generates a unique, incrementing version. 
 exl-id: 658bcbed-0733-45da-a3e3-9a5f817099c5
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 
 # Maven Project Version Handling {#maven-project-version-handling} 

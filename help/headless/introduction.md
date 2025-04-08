@@ -3,6 +3,8 @@ title: Introduction to Headless for AEM
 description: Learn about Headless in Adobe Experience Manager (AEM) with a combination of detailed documentation and headless journeys. Learn how features like Content Fragment Models, Content Fragments, and a GraphQL API are used to power headless experiences. 
 landing-page-description: Understand how to use and administer Headless in Adobe Experience Manager as a Cloud Service.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
+feature: Headless
+role: Admin, Developer
 ---
 
 # Introduction to Adobe Experience Manager as a Headless CMS {#introduction-aem-headless}
@@ -14,8 +16,6 @@ You can read detailed documentation of the various features involved and/or foll
 >[!NOTE]
 >
 >See also [What is Headless?](/help/headless/what-is-headless.md) for an introduction to Headless concepts and terminology.
-
-{{headless-trials-promotion}}
 
 ## Overview {#overview}
 
@@ -36,10 +36,10 @@ AEM as a Cloud Service is a flexible tool for the headless implementation model 
 1. **Content Fragments**
    * A Content Fragment is created based on a Content Fragment Model.
    * Content Fragments are created by content authors, using the AEM Content Fragment editor.
-   * Content Fragments are stored as AEM Assets, but can be managed through either the Assets Console, or the [Content Fragments Console](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
+   * Content Fragments are stored as AEM Assets, but can be managed through either the Assets Console, or the [Content Fragments Console](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console).
 1. **Content API for delivery**
-   * The AEM GraphQL API supports Content Fragment delivery.
-   * The AEM Assets REST API supports Content Fragment CRUD operations.
+   * See [AEM APIs for Structured Content Delivery and Management](/help/headless/apis-headless-and-content-fragments.md) for an overview of the various APIs available and comparison of some of the concepts involved.
+
    * Direct content delivery is also possible with the [JSON export of the Content Fragment Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html).
 
 ## Your First Steps {#first-steps}

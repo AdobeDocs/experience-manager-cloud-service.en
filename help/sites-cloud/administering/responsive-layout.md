@@ -2,10 +2,25 @@
 title: Configuring the Layout Container and Layout Mode
 description: Learn how to configure layout container and layout mode to enable responsive layouts for your content authors.
 exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
+solution: Experience Manager Sites
+feature: Administering
+role: Admin
 ---
+
 # Configuring the Layout Container and Layout Mode {#configuring-layout-container-and-layout-mode}
 
-[Responsive Layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md) is a mechanism for realizing [responsive web design.](https://en.wikipedia.org/wiki/Responsive_web_design) This allows the content author to create web pages that have a layout and dimensions dependent on the devices their users use.
+Learn how to configure layout container and layout mode to enable responsive layouts for your content authors.
+
+>[!TIP]
+>
+>This document describes how a site administrator can configure the layout container to support responsive web design. Additional resources are available:
+>
+>* For content authors, details of how to use responsive design features on a content page are available in the document [Responsive Layout.](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
+>* For developers, details of the Layout Container and the responsive grid are described in the [The Responsive Design document,](/help/implementing/developing/introduction/responsive-design.md) which provides and tips for using layout containers and responsive grid when designing your site.
+
+## Overview {#overview}
+
+Responsive Layout is a mechanism for realizing [responsive web design](https://en.wikipedia.org/wiki/Responsive_web_design). This allows the content author to create web pages that have a layout and dimensions dependent on the devices their users use.
 
 AEM realizes responsive layout for your pages using a combination of mechanisms:
 
@@ -214,9 +229,15 @@ For effective responsive layout, the content author must be able to drag instanc
 
 To allow authors to add further responsive grids to the content pages you need to enable the Layout Container component for your page. You can do this using either:
 
-* **Via the Author Environment** - [Edit your page templates](/help/sites-cloud/authoring/sites-console/templates.md) to enable the Layout Container for a page.
+* **Via the Author Environment** - [Edit your page templates](/help/sites-cloud/authoring/page-editor/templates.md) to enable the Layout Container for a page.
 * **Component Definition** - Use `allowedComponent` or a static include when defining the component.
 
 ### Configure the Grid of the Layout Container {#configure-the-grid-of-the-layout-container}
 
-You can configure the number of columns available for each specific instance of layout container [by editing your page templates.](/help/sites-cloud/authoring/sites-console/templates.md)
+You can configure the number of columns available for each specific instance of layout container [by editing your page templates](/help/sites-cloud/authoring/page-editor/templates.md).
+
+### Nested Responsive Grids {#nested-responsive-grids}
+
+Adobe's recommended best practice is to keep the structure as flat as possible.
+
+When you can not avoid using nested responsive grids, please see the developer document [Responsive Design.](/help/implementing/developing/introduction/responsive-design.md#nested-responsive-grids)

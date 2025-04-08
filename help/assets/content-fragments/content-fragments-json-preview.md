@@ -2,6 +2,9 @@
 title: Preview - JSON Representation (Assets - Content Fragments)
 description: Learn how to easily preview a JSON representation of your Content Fragments when implementing your AEM headless solution.
 exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
+feature: Content Fragments
+role: User
+solution: Experience Manager Sites
 ---
 # Preview - JSON Representation {#preview-json-representation}
 
@@ -11,7 +14,7 @@ When developing the models for Content Fragments as part of your AEM headless im
 >
 >Content Fragments are a Sites feature, but are stored as **Assets**. 
 >
->There are two editors for authoring Content Fragments. This section covers the original editor, primarily accessed from the **Assets** console. See the Sites documentation, [Content Fragments - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), for details of the new editor (primarily accessed from the **Content Fragments** console).
+>There are two editors for authoring Content Fragments; although the basic functionality is the same, there are some differences. This section covers the original editor, primarily accessed from the **Assets** console. See the Sites documentation, [Content Fragments - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), for details of the new editor (primarily accessed from the **Content Fragments** console).
 
 Using the **Preview** icon:
 
