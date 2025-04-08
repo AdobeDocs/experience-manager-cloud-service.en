@@ -663,6 +663,7 @@ user-guide-title: AEM as a Cloud Service
     + [Bulk metadata edit](/help/assets/bulk-metadata-edit.md)
     + [Share assets](/help/assets/share-links-for-assets-view.md)
     + [Manage collections](/help/assets/manage-collections-assets-view.md)
+    + [Asset Relations](/help/assets/related-assets-for-assets-view.md)
     + [Watch asset, folders, and collections](/help/assets/manage-notifications-assets-view.md)
     + [Manage reports](/help/assets/manage-reports-assets-view.md)
     + [Reprocessing](/help/assets/reprocessing-assets-view.md)
