@@ -54,6 +54,6 @@ See [Translate assets in AEM](/help/assets/translate-assets.md).
 
 >[!MORELIKETHIS]
 >
->* [View versions of an asset](/help/assets/manage-organize-assets-view.md#view-versions).
+>* [View versions of an asset](/help/assets/manage-organize-assets-view.md#view-versions)
 >* [Translate assets in AEM](/help/assets/translate-assets.md)
 >* [Supported File Formats in Assets View](/help/assets/supported-file-formats-assets-view.md).
