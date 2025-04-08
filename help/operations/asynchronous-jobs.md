@@ -97,7 +97,7 @@ If the number of assets or folders to be deleted exceeds the threshold number, t
 
 1. Log in to the AEM SDK Quickstart Jar's AEM Web console at `https://<host>:<port>/system/console` as the admin user.
 1. Navigate to **OSGi** &gt; **Configuration**
-1. From the web console, open the **[!UICONTROL Async Process Default Queue Configuration.]**
+1. From the web console, open the **[!UICONTROL Async Process Default Queue Configuration]**.
 1. In the **[!UICONTROL Threshold number of assets]** box, specify the threshold number of assets/folders for asynchronous processing of delete operations.
 
    ![Asset delete threshold](assets/async-delete-threshold.png)
@@ -111,7 +111,7 @@ If the number of assets/folders or references to be moved exceeds the threshold 
 
 1. Log in to the AEM SDK Quickstart Jar's AEM Web console at `https://<host>:<port>/system/console` as the admin user.
 1. Navigate to **OSGi** &gt; **Configuration**
-1. From the web console, open the **[!UICONTROL Async Move Operation Job Processing Configuration.]**
+1. From the web console, open the **[!UICONTROL Async Move Operation Job Processing Configuration]**.
 1. In the **[!UICONTROL Threshold number of assets/references]** box, specify the threshold number of assets/folders or references for asynchronous processing of move operations.
 
    ![Asset move threshold](assets/async-move-threshold.png)
@@ -123,7 +123,7 @@ If the number of assets/folders or references to be moved exceeds the threshold 
 
 1. Log in to the AEM SDK Quickstart Jar's AEM Web console at `https://<host>:<port>/system/console` as the admin user.
 1. Navigate to **OSGi** &gt; **Configuration**
-1. From the web console, open the **[!UICONTROL Async Page Move Operation Job Processing Configuration.]**
+1. From the web console, open the **[!UICONTROL Async Page Move Operation Job Processing Configuration]**.
 1. Check the option **Enable email notification** to receive email notifications for this job status. For example, success, failed.
 
    ![MSM config](assets/async-msm.png)

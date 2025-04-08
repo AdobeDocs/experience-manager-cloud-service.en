@@ -59,6 +59,7 @@ To integrate AEM Forms with the Turnstile service, perform the following steps:
         ![Configure the Cloud Service to connect your AEM Forms environment with Turnstile](assets/config-turntstile-cc.png)
 
     >[!NOTE]
+    >
     > Users need not to modify Client-side JavaScript validation URL and Server-side validation URL as they are already prefilled for Turnstile validation.
 
    Once the Turnstile Captcha service is configured, it is available for use in an [Adaptive Form based on Core Components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction).
@@ -84,13 +85,17 @@ To integrate AEM Forms with the Turnstile service, perform the following steps:
     * **[!UICONTROL Name]:** Specify the name for your Captcha component, you can identify a form component easily with its unique name both in the form and in the rule editor.
     * **[!UICONTROL Title]:** Specify the title for your Captcha component. you can allow Rich Text for the title and also you can hide the title, by ticking the checkboxes.
     * **[!UICONTROL Configuration Settings]:** Select a Cloud Configuration configured for Turnstile Captcha service.
+        
         >[!NOTE]
+        >
         >* You can have multiple Cloud Configurations in your environment for a similar purpose. So, choose the service carefully. If no service is listed, see the section, [Configure Turnstile](#steps-to-configure-hcaptcha), to learn how to create a Configuration Container to connect your AEM Forms environment with Turnstile service.
 
     * **[!UICONTROL Validation]:** Provide Captcha validation in the form of an error message:
 
         * **Error Message:** Provide the error message to display to the user when the Captcha submission fails. 
+            
             >[!NOTE]
+            >
             >* An error message appears only if the CAPTCHA is filled on the client side.
             
 1. Click **[!UICONTROL Done]**.

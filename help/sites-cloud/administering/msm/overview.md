@@ -116,7 +116,7 @@ MSM is directly accessible in the UI using various options from the appropriate 
 
 * **Create Live Copy** (**Sites**)
 
-  * MSM lets you [create an ad-hoc (one-off) Live Copy of an individual page or sub-branch of a website.](creating-live-copies.md#creating-a-live-copy-of-a-page) For example, duplicating a sub-branch to provide information about a new/updated version of a product. Creating a Live Copy in this manner:
+  * MSM lets you [create an ad-hoc (one-off) Live Copy of an individual page or sub-branch of a website](creating-live-copies.md#creating-a-live-copy-of-a-page). For example, duplicating a sub-branch to provide information about a new/updated version of a product. Creating a Live Copy in this manner:
     * Creates an ad-hoc Live Copy (no blueprint configuration required).
     * Can be used to (immediately) create a Live Copy of any page/branch.
     * Requires **Synchronize** (does not provide the **Rollout** button).
@@ -131,11 +131,11 @@ MSM is directly accessible in the UI using various options from the appropriate 
 
 * **Live Copy Overview** (**Sites**)
 
-  * This console lets you [view and manage your blueprint and its Live Copies.](live-copy-overview.md)
+  * This console lets you [view and manage your blueprint and its Live Copies](live-copy-overview.md).
 
 * **Blueprints** (**Tools** - **Sites**)
 
-  * This console lets you [create and manage your blueprint configurations.](creating-live-copies.md#creating-a-blueprint-configuration)
+  * This console lets you [create and manage your blueprint configurations](creating-live-copies.md#creating-a-blueprint-configuration).
 
 >[!NOTE]
 >
@@ -287,7 +287,7 @@ Rollout configurations can be reused, so that more than one Live Copy can use th
 
 ### Rollout Conflicts {#rollout-conflicts}
 
-Rollouts can become complicated, especially when authors are editing content in both the source and the Live Copy. So it is useful to be aware of how AEM handles any [conflicts that might occur during rollout.](rollout-conflicts.md)
+Rollouts can become complicated, especially when authors are editing content in both the source and the Live Copy. So it is useful to be aware of how AEM handles any [conflicts that might occur during rollout](rollout-conflicts.md).
 
 ### Suspending and Cancelling Inheritance and Synchronization {#suspending-and-cancelling-inheritance-and-synchronization}
 
@@ -323,7 +323,7 @@ The following steps describe the standard procedure for using MSM to reuse conte
 
 1. Determine where you need to [specify the rollout configurations to use](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) and configure as required.
 1. If necessary, [create a blueprint configuration](creating-live-copies.md#creating-a-blueprint-configuration) that identifies the source content of the Live Copy.
-1. [Create a Live Copy.](creating-live-copies.md#creating-a-live-copy)
+1. [Create a Live Copy](creating-live-copies.md#creating-a-live-copy).
 1. Make changes to the source content as required. You should employ the normal content review and approval process that your organization has established.
 1. [Roll out](creating-live-copies.md#rolling-out-a-blueprint) the blueprint, or [synchronize the Live Copy](creating-live-copies.md#synchronizing-a-live-copy) with the changes.
 

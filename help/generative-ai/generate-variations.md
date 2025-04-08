@@ -20,6 +20,10 @@ You can [access Generate Variations](#access-generate-variations) from:
 >
 >In all cases, to use Generate Variations you must ensure that the [access prerequisites](#access-prerequisites) are fulfilled.
 
+>[!NOTE]
+>
+>You can also access [Generate Variations integrated into AEM editors](/help/generative-ai/generate-variations-integrated-editor.md).
+
 You can then:
 
 * [Get started](#get-started) using a prompt template that Adobe has created for a specific use case.

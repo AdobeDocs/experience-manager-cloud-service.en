@@ -18,7 +18,7 @@ Organizations may license up to three additional publish regions.
 >[!NOTE]
 >
 >* This feature is available for the Sites and Forms solutions.
->* This feature cannot be applied to [sandbox programs.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+>* This feature cannot be applied to [sandbox programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
 >* This feature requires your program to be updated to AEM release version 12142 or higher.
 
 ## Use Cases {#use-cases}

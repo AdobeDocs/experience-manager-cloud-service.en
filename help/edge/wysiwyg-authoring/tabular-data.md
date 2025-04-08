@@ -28,11 +28,11 @@ This document uses the example of redirects to illustrate how to create such spr
 
 >[!TIP]
 >
->For more information on how spreadsheets in general work with Edge Delivery Services, please see the document [Spreadsheets and JSON.](/help/edge/developer/spreadsheets.md)
+>For more information on how spreadsheets in general work with Edge Delivery Services, please see the document [Spreadsheets and JSON](/help/edge/developer/spreadsheets.md).
 
 >[!TIP]
 >
->Spreadsheets should only be used to maintain tabular data. For storing structured data, [check out AEM's headless features.](/help/headless/introduction.md)
+>Spreadsheets should only be used to maintain tabular data. For storing structured data, [check out AEM's headless features](/help/headless/introduction.md).
 
 ## Prerequisites {#prerequisites}
 
@@ -144,7 +144,7 @@ In order for AEM to be able to publish the data in your spreadsheet, you additio
 
    >[!NOTE]
    >
-   >This `paths.json` entry is based on the example of creating redirects using tabular data. Make sure to update the path appropriate to the [type of spreadsheet you are creating.](#other)
+   >This `paths.json` entry is based on the example of creating redirects using tabular data. Make sure to update the path appropriate to the [type of spreadsheet you are creating](#other).
 
 1. Click **Commit changes...** to save the changes to `main`.
 
@@ -168,16 +168,16 @@ The redirects spreadsheet is now published and publicly-accessible.
 
 >[!TIP]
 >
->For more information about path mappings, please see the document [Path Mapping for Edge Delivery Services.](/help/edge/wysiwyg-authoring/path-mapping.md)
+>For more information about path mappings, please see the document [Path Mapping for Edge Delivery Services](/help/edge/wysiwyg-authoring/path-mapping.md).
 
 ## Other Spreadsheet Types {#other}
 
 Now that you know how to create a redirects spreadsheet, you can create any other standard spreadsheet type:
 
-* Placeholders
-* Metadata
-* Headers
-* Configuration
+* [Placeholders](https://www.aem.live/docs/placeholders)
+* [Metadata](https://www.aem.live/docs/bulk-metadata)
+* [Headers](https://www.aem.live/docs/custom-headers)
+* [Configuration](https://www.aem.live/docs/configuration) - Such as for [cache invalidation](https://www.aem.live/docs/byo-cdn-adobe-managed#setup-push-invalidation)
 * [Taxonomy](/help/edge/wysiwyg-authoring/taxonomy.md)
 
 Simply follow the same steps in the sections [Create Spreadsheet](#spreadsheet) and [Update paths.json](#paths-json) and choose the appropriate template and update the `paths.json` file appropriately.
@@ -199,7 +199,7 @@ Additionally, you can [create your own spreadsheet](#own-spreadsheet) with arbit
 
 ## Creating Your Own Spreadsheet {#own-spreadsheet}
 
-1. Follow the same steps in the section [Create Spreadsheet.](#spreadsheet)
+1. Follow the same steps in the section [Create Spreadsheet](#spreadsheet).
 
 1. When selecting the template, choose **Spreadsheet**.
 

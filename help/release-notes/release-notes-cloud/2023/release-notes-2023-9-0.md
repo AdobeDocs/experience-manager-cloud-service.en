@@ -112,7 +112,7 @@ You can now assign metadata form to a specific folder within your deployment. Al
 
 ### New CDN caching behavior for campaign-related URL parameters {#cache-url-params}
 
-For new environments, the CDN will remove marketing related query parameters by default to increase marketing campaign performance and cache hit ratios. Existing environments are unaffected. [Learn more.](/help/implementing/dispatcher/caching.md#marketing-parameters)
+For new environments, the CDN will remove marketing related query parameters by default to increase marketing campaign performance and cache hit ratios. Existing environments are unaffected. [Learn more](/help/implementing/dispatcher/caching.md#marketing-parameters).
 
 ### Traffic Filter Rules (including WAF Rules) early adopter program {#waf-early-adopter}
 

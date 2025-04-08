@@ -50,7 +50,7 @@ To add support for a new locale at the Adaptive Forms runtime:
 #### 1. Clone the repository {#clone-the-repository}
 
 1. From the command line, navigate to where you would like to clone the Forms Cloud Service repository.
-1. Execute the command that you [retrieved from Cloud Manager.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) It is similar to `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`. 
+1. Execute the command that you [retrieved from Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git). It is similar to `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`. 
 1. Use the git user name and password to clone the repository. 
 1. Open the cloned Forms Cloud Service repository folder in your preferred editor. 
 

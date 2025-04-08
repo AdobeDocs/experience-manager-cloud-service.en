@@ -7,11 +7,11 @@ feature: Onboarding
 ---
 # Create Environments {#create-environments}
 
-In this part of the [onboarding journey,](overview.md) you learn how to use Cloud Manager to create your first environments.
+In this part of the [onboarding journey](overview.md), you learn how to use Cloud Manager to create your first environments.
 
 ## Objective {#objective}
 
-After reading the previous document in this onboarding journey, [Creating Programs,](create-program.md) you now have your own Cloud Manager program. Now you can lean how to use Cloud Manager to create your first environments for that program.
+After reading the previous document in this onboarding journey, [Creating Programs](create-program.md), you now have your own Cloud Manager program. Now you can lean how to use Cloud Manager to create your first environments for that program.
 
 After reading this document, you will:
 

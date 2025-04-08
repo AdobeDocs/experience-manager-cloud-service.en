@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 ---
 # How to Access Your Content via AEM Delivery APIs {#access-your-content}
 
-In this part of the [AEM Headless Developer Journey,](overview.md) you can learn how to use GraphQL queries to access the content of your Content Fragments and feed it to your app (headless delivery).
+In this part of the [AEM Headless Developer Journey](overview.md), you can learn how to use GraphQL queries to access the content of your Content Fragments and feed it to your app (headless delivery).
 
 ## The Story So Far {#story-so-far}
 
@@ -126,19 +126,21 @@ These Content Fragment Models:
 
 ### Fragment References {#fragment-references}
 
-The **Fragment Reference**:
+**Fragment Reference** and **Fragment Reference UUID**:
 
-* Is a specific data type available when defining a Content Fragment Model.
+* Are specific data types available when defining a Content Fragment Model.
 * References another fragment, dependent on a specific Content Fragment Model.
 * Lets you create, and then retrieve, structured data.
 
   * When defined as a **multifeed**, multiple sub-fragments can be referenced (retrieved) by the prime fragment.
 
+<!--
 ### JSON Preview {#json-preview}
 
 To help with designing and developing your Content Fragment Models, you can preview JSON output in the Content Fragment Editor.
 
 ![JSON Preview](assets/cfm-model-json-preview.png "JSON Preview")
+-->
 
 <!--
 ## GraphQL Schema Generation from Content Fragments {#graphql-schema-generation-content-fragments}
@@ -369,7 +371,7 @@ Now that you have learned how to access and query your headless content using th
   * [Sample Query - All Cities with a Named Variation](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
 * [Enable Content Fragment Functionality in Configuration Browser](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)
 * [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md)
-  * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+  * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
   * [JSON output](/help/assets/content-fragments/content-fragments-json-preview.md)
 * [Understand Cross-Origin Resource Sharing (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors))
 * [GraphQL Persisted Queries - enabling caching in the Dispatcher](/help/headless/deployment/dispatcher-caching.md)

@@ -31,7 +31,7 @@ To prepare for content delivery using AEM's built-in CDN through Cloud Manager's
 * [Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
 * [Introduction to custom domain names](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 * [Introduction to SSL certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
-* [Add a CDN Configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+* [Configure a CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
 
 **Restricting traffic**
 
@@ -132,7 +132,7 @@ This customer CDN configuration is supported for the publish tier, but not in fr
 
 ### Debugging configuration
 
-In order to debug a BYOCDN configuration, please use the `x-aem-debug` header with a value of `edge=true`. For example:
+To debug a BYOCDN configuration, use the `x-aem-debug` header with a value of `edge=true`. For example:
 
 In Linux&reg;:
 
@@ -148,13 +148,13 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v --header "X-Fo
 
 ```
 
-This will reflect certain properties used in the request in the `x-aem-debug` response header. For example:
+This process reflects certain properties used in the request in the `x-aem-debug` response header. For example:
 
 ```
 x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-Edge-Key=set,host=publish-p87058-e257304-cmstg.adobeaemcloud.com,x-forwarded-host=wknd.site,adobe_unlocked_byocdn=true
 ```
 
-Using this one can verify for example the values of host, if the edge authentication is configured, as well as the x-forwarded-host header value, if an edge key is set and which key is used (in case one key matches).
+This process allows verification of details such as the host values, edge authentication configuration, and the x-forwarded-host header value. It also identifies whether an edge key is set and which key is used if a match exists.
 
 ### Sample CDN Vendor Configurations {#sample-configurations}
 
@@ -185,8 +185,7 @@ When a request receives a 403 forbidden response, it means that the request is m
 
 **Error 421 Misdirected redirect**
 
-When a request receives a 421 error with a body around `Requested host does not match any Subject Alternative Names (SANs) on TLS certificate` it indicates that the HTTP `Host` set does not match any hosts on the certificates for the host. This usually indicates that either `Host` or the SNI setting is wrong. Make sure that both `Host` as well as SNI settings point to the publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com host.
-
+A 421 error with the message `Requested host does not match any Subject Alternative Names (SANs) on TLS certificate` indicates that the HTTP `Host` does not match any hosts listed on the certificate. This issue usually indicates that either `Host` or the SNI setting is wrong. Make sure that both `Host` as well as SNI settings point to the publish-p<PROGRAM_ID>-e.adobeaemcloud.com host.
 
 **Too many redirects Loop**
 

@@ -20,7 +20,7 @@ By eliminating any developer knowledge for site creation, eliminating AEM knowle
 
 ## Video Overview {#video-overview}
 
-For a quick overview of this feature in action, [you can watch this five minute introduction.](https://www.youtube.com/watch?v=NQeQ1jZ7ZBw)
+For a quick overview of this feature in action, [you can watch this five minute introduction](https://www.youtube.com/watch?v=NQeQ1jZ7ZBw).
 
 This documentation journey will take you through all the features in the video  step-by-step and in detail so you understand the workflow and can recreate the process in your own environment.
 
@@ -64,7 +64,7 @@ You are now ready to get started on your Adobe Quick Site Creation journey.
 
 * If you are an AEM or Cloud Manager administrator, or if you serve both front-end developer and administrator roles, or if you simply want to understand the end-to-end process in AEM, start at the beginning of the journey with [Understand Cloud Manager](cloud-manager.md) as laid out below.
 * If you are only responsible for front-end development and will interact with the AEM and Cloud Manager administrators, you can skip directly to [Retrieve git repository access information](retrieve-access.md) to get access to the AEM git repository and start customizing.
-* If you already understand AEM Sites and Cloud Manager work together and want to start directly with configuration, you can [skip directly to creating a site from a template.](create-site.md)
+* If you already understand AEM Sites and Cloud Manager work together and want to start directly with configuration, you can [skip directly to creating a site from a template](create-site.md).
 
 ## Additional Resources {#additional-resources}
 

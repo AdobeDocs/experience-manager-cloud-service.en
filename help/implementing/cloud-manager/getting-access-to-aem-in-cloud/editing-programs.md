@@ -15,12 +15,12 @@ From the **Program Overview**, users with the requisite permissions can edit [pr
 
 * Add Sites solution to an existing program with Assets and conversely.
 * Remove Sites or Assets from an existing program with both Sites and Assets.
-* Add a second, unused solution entitlement, to either an existing program or as a new Program.
+* Add an unused solution entitlement to an existing program or create a new program.
 * Delete sandbox programs.
 
 ## Permissions {#permissions}
 
-You must be a member of the **Business Owner** role to edit programs or delete sandbox programs and to access the License Dashboard.
+You must have the **Business Owner** role to edit programs, delete sandbox programs, and access the License Dashboard.
 
 ## Edit a program {#editing}
 
@@ -40,7 +40,7 @@ Anytime a program is edited, including adding or removing a solution or add-on, 
 
    ![General tab](assets/edit-program-prod1.png)
 
-1. The options available for editing the program are the same as those when creating the program.
+1. The options available for editing the program are the same options for program creation.
    * See [Create Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) and [Create Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) for details on the individual options. 
    * [Additional options](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) may be available for your production program depending on the entitlements of your organization.
 
@@ -64,7 +64,7 @@ Deleting a sandbox program removes all environments and pipelines associated wit
 
    ![Delete program option](assets/delete-sandbox1.png)
 
-Alternatively, you can click https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg on your program's card from the Cloud Manager overview page and select **Delete Program**.
+Alternatively, you can click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) on your program's card from the Cloud Manager overview page and select **Delete Program**.
 
 ![Delete sandbox from program card](assets/delete-sandbox2.png)
 
