@@ -133,11 +133,15 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
 Upload a duplicate copy or a modified copy of an asset, to create its versions. Versioning lets you review historical assets and revert to a previous version if needed.
 
-To see an asset version, navigate to the asset's details page and click ![Versions](/help/assets/assets/Clock.svg) available in the right pane to display the thumbnail of original asset and its uploaded versions in the **[!UICONTROL Versions]** panel. Select a version to preview it.
+To view and compare versions:
+
+1. Navigate to the asset's details page.
+1. Click ![Versions](/help/assets/assets/Clock.svg) in the right pane to display the **[!UICONTROL Versions]** panel. The thumbnails of the original asset and its uploaded versions displays on this panel. 
+1. Select a version on this panel to preview it in the preview area.
+1. Drag the slider in the preview towards left and right to quickly see the selected version of an image and the original image in a single preview. This enables you to quickly compare the selected version of an image with the original image in a single view.
 
 Select a version except the latest version and click **[!UICONTROL Make Latest]** to revert to its previous version.
 
-To compare a version with the original asset, select it from the panel and use the slider on the preview to compare the original asset with its selected version.
 ![compare versions of asset](/help/assets/assets/version-compare2.png) 
 
 <!-- old content
