@@ -81,7 +81,7 @@ Before a custom domain can serve traffic, you must complete DNS configuration wi
     | Option  | Steps |
     | --- | --- |
     | Configure A RECORD | Recommended for root domains like `example.com`<br><ol><li>Log in to your DNS service provider's portal.<li>Go to the DNS Records section.<li>Create an A record to point to all the listed IP addresses.</li></ol> |
-    | Configure CNAME | Recommended for custom domains like `www.example.com`<br><ol><li>Log in to your DMS service provider's portal.<li>Go to the DNS Records section.<li>Map [cdn.adobeaemcloud.com](https://cdn.adobeaemcloud.com/) (CNAME record) in the DNS record of the DNS service provider (your custom domain). This mapping ensures that requests received at the custom domain are redirected to Adobe's CDN.</li></ol> |
+    | Configure CNAME | Recommended for custom domains like `www.example.com`<br><ol><li>Log in to your DMS service provider's portal.<li>Go to the DNS Records section.<li>Map `cdn.adobeaemcloud.com` (CNAME record) in the DNS record of the DNS service provider (your custom domain). This mapping ensures that requests received at the custom domain are redirected to Adobe's CDN.</li></ol> |
 
 1. In the **Go live readiness** dialog box, click **OK** to save the record. 
 

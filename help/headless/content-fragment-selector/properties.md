@@ -2,8 +2,8 @@
 title: Micro-Frontend Content Fragment Selector Properties for Adobe Experience Manager as a Cloud Service
 description: Properties to configure the Micro-Frontend Content Fragment Selector to search, find, and retrieve content fragments from your application.
 role: Admin, User
+exl-id: c81b5256-09fb-41ce-9581-f6d1ad316ca4
 ---
-
 # Content Fragment Selector - Related Properties {#content-fragment-selector-related-properties}
 
 The Micro-Frontend Content Fragment Selector allows you to browse or search Content Fragments in the repository, and use them in your application.
@@ -22,10 +22,10 @@ You can use the following properties to customize how the Content Fragment Selec
 | `filters` | FragmentFilter | No | | Filters to be applied for the list of content fragments. By default, fragments under `/content/dam` will be displayed. Default value: `{ folder: "/content/dam" }` |
 | `isOpen` | boolean | Yes | `false` | Flag to trigger opening or closing the selector. |
 | `onDismiss` | () => void | Yes | | Function to be called when **Dismiss** is selected. |
-| `onSubmit` | ({ contentFragments: `{id: string, path: string}[]`, domainNames: `string[]` }) => void | Function to be called when **Select** is used after selecting one or more Content Fragments. <br><br>The function will receive:<br><ul><li> the selected Content Fragments with `id` and `path` fields</li><li>and domain names related to the repository's program id and environment id, which have the status `ready` and the `tier` Publish</li></ul><br>If there are no domain names it will be use the Publish instance as a fallback domain. |
-| `theme` | "light" | "dark" | No | | Theme of the Content Fragment Selector. Default theme is set to the theme of the UnifiedShell environment. |
-| `selectionType` | "single" | "multiple" | No | `single` | Selection type that can be used to restrict selection for the FragmentSelector. |
-| `dialogSize` | "fullscreen" | "fullscreenTakeover" | No | `fullscreen`   | Optional property to control the dialog size. |
+| `onSubmit` | ({ contentFragments: `{id: string, path: string}[]`, domainNames: `string[]` }) => void | Yes | | Function to be called when **Select** is used after selecting one or more Content Fragments. <br><br>The function will receive:<br><ul><li> the selected Content Fragments with `id` and `path` fields</li><li>and domain names related to the repository's program id and environment id, which have the status `ready` and the `tier` Publish</li></ul><br>If there are no domain names it will be use the Publish instance as a fallback domain. |
+| `theme` | "light" or "dark" | No | | Theme of the Content Fragment Selector. Default theme is set to the theme of the UnifiedShell environment. |
+| `selectionType` | "single" or "multiple" | No | `single` | Selection type that can be used to restrict selection for the FragmentSelector. |
+| `dialogSize` | "fullscreen" or "fullscreenTakeover" | No | `fullscreen`   | Optional property to control the dialog size. |
 | `waitForImsToken` | boolean | No | `false` | Indicates whether the Content Fragment Selector is rendered in the context of SUSI flow, and needs to wait for the `imsToken` to be ready. |
 | `imsAuthInfo` | ImsAuthInfo | No | | Object containing the IMS authentication information of the logged in user. |
 | `runningInUnifiedShell` | boolean | No | | Indicates whether the Content Fragment Selector is running under UnifiedShell or standalone. |
