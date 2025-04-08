@@ -46,7 +46,7 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 Dynamic Media with OpenAPI now supports long form videos. The long form videos can support up to 50GB and 2 hours.
 
-### Dynamic Media Classic {#dmc}
+### Dynamic Media Classic {#dmc} 
 
 <!-- CARRY OVER TO APRIL 2025 RELEASE NOTES -->
 
