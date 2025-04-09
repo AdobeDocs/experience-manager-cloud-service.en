@@ -69,7 +69,7 @@ You can use the Asset Selector properties to customize the way the Asset Selecto
 | *onClose* | Function | No | | Invoked when `Close` button in modal view is pressed. This is only called in `modal` view and disregarded in `rail` view. |
 | *onFilterSubmit* | Function | No | | Invoked with filter items as user changes different filter criteria. |
 | *selectionType* | String | No | Single | Configuration for `single` or `multiple` selection of assets at a time. |
-| *dragOptions.allowList* | boolean | No | | The property is used to allow or deny the dragging of assets that are not selectable. |
+| *dragOptions.allowList* | boolean | No | | The property is used to allow or deny the dragging of assets that are not selectable. See [dragOptions Property](/help/assets/asset-selector-customization.md#drag-options-property) |
 | *aemTierType* | String | No |  | It allows you to select whether you want to show assets from delivery tier, author tier, or both. <br><br> Syntax: `aemTierType:[0]: "author" 1: "delivery"` <br><br> For example, if both `["author","delivery"]` are used, then the repository switcher displays options for both author and delivery. |
 | *handleNavigateToAsset* | Function | No | | It is a Callback function to handle selection of an asset. |
 | *noWrap* | Boolean | No | | The *noWrap* property helps rendering Asset Selector in the side rail panel. If this property is not mentioned, it renders the *Dialog view* by default. | 
