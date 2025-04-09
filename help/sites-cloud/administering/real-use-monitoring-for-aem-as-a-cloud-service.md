@@ -21,13 +21,7 @@ The RUM (Real Use Monitoring) service is a performance monitoring technology tha
 
 ## Who can benefit from a Real Use Monitoring service? {#who-can-benefit-from-rum-service}
 
-Real Use Monitoring helps customers and Adobe to understand how end-users interact with AEM sites. Real Use Monitoring diagnoses performance issues, and measure the effectiveness of experiments. Real Use Monitoring preserves the privacy of visitors through sampling - only a small portion of all page views is monitored - and no personally identifiable information (PII) is collected.
-
-## Real Use Monitoring service and privacy {#rum-service-and-privacy}
-
-The Real Use Monitoring service in AEM preserves visitor privacy and minimize data collection. As a visitor, it means that the site you are visiting or made available to Adobe, does not collect any personal information. 
-
-As a site operator, no additional opt-in is required to enable monitoring through this feature. There is no additional pop-up or consent form for the end users to accept for enabling RUM. 
+Real Use Monitoring helps customers and Adobe to understand how end-users interact with AEM sites. Real Use Monitoring preserves the privacy of visitors through limited data collection and sampling - only a small portion of all page views is monitored.
 
 ## Real Use Monitoring service data sampling {#rum-service-data-sampling}
 
@@ -37,7 +31,7 @@ As the decision of whether the data is collected, it is made on a page view by p
 
 ## What data is collected? {#what-data-is-being-collected}
 
-The Real Use Monitoring service is designed to prevent the collection of personally identifiable information. The full set of information collected by RUM is listed below:
+ The Real Use Monitoring service is designed to minimize data collection. The full set of information collected by RUM is listed below:
 
 * The host name of the site being visited, for example: `experienceleague.adobe.com`
 * The broad user agent type and operating system that is used to display the page, such as: `desktop:windows` or `mobile:ios`
@@ -99,7 +93,7 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
    The RUM library and the RUM collection do not count as content requests and do not increase the reported number of page views or API calls. Additionally, for customers who use out-of-the-box CDN with AEM as a Cloud Service, [server-side collection](#serverside-collection) is the basis for content requests.
    
-1. **How can I opt out?**
+1. **How can I disable RUM?**
 
    Adobe recommends using the Real Use Monitoring (RUM) due to its significant benefits and that it will allow Adobe to help you optimize your digital experiences by improving website performance. The service is designed to be seamless and has no impact on your website's performance.
 

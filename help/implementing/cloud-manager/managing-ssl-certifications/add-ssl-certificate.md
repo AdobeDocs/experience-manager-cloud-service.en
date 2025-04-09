@@ -87,6 +87,10 @@ You are now ready to add a [CDN configuration](/help/implementing/cloud-manager/
 
 Need help with choosing whether to use an Adobe managed SSL certificate (recommended) or a customer managed SSL certificate with your domain? See [Choosing which SSL certificate to add](#which-ssl-to-add) 
 
+>[!IMPORTANT]
+>
+>When adding or updating an SSL certificate, do not include the new certificate in the certificate chain. Including it prevents the upload from completing successfully.
+
 **To add a customer managed (OV/EV) SSL certificate:**
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate program.
