@@ -28,7 +28,7 @@ Using this feature, you have the flexibility to share a low resolution PDF file 
     * To relate a derived file, select **[!UICONTROL Add Derived]** from the list. You can associate multiple assets in this category.
     * To create a two-way relationship between the assets, select **[!UICONTROL Add Other]** from the list. You can associate multiple assets in this category.
 
-1. From the **[!UICONTROL Select Assets]** screen, navigate to the location of the asset you want to relate, and select it. You can select one asset at a time that could be [Supported File Formats in Assets View](/help/assets/supported-file-formats-assets-view.md).
+1. From the **[!UICONTROL Select Assets]** screen, navigate to the location of the asset you want to relate, and select it. You can select a single asset at a time or multiple assets by holding the shift key while clicking, which may include any of the [supported file formats in Assets View](/help/assets/supported-file-formats-assets-view.md).
 
    ![add related asset](assets/add-related-asset.png)
 
