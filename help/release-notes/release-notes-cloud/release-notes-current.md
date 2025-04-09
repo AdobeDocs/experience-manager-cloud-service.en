@@ -48,7 +48,6 @@ Dynamic Media with OpenAPI now supports long form videos. The long form videos c
 
 ### New features in Assets view {#new-features-assets-view}
 
-
 **Support for root tags**
 
 AEM Assets now supports mapping a tag property in a metadata form to custom metadata. In addition, as an administrator, you can restrict the availability of tags to users by restricting access to a specific root tag and the tags that exist under the root tag.
@@ -70,6 +69,20 @@ Adaptive Forms allows you to use [HTML email templates](/help/forms/html-email-t
 #### Enhanced Cloud Storage Support: Direct PDF Upload to Azure Blob Storage
 
 AEM Forms Document Generation APIs now allows you to [directly upload generated PDF documents](/help/forms/early-access-ea-features.md#doc-generation-api) to Azure Blob Storage. This enhancement streamlines storage and retrieval, improving efficiency and integration with cloud workflows.
+
+## CIF Add-on {#cloud-services-cif}
+
+### Enhancements {#enhancements-cif}
+
+* Adding product variant selection for CIF  product reference data type
+* [Experimental]: JSON+LD in CIF Core Components in PDPs
+* [Experimental]: CIF ability to clear cache
+
+### Bug fixes {#bug-fixes-cif}
+
+* Fix search issue on product field
+* Product url format not working as expected for #variant_sku
+* Unable to Add More Than 20 SKUs to Product List Component
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
