@@ -307,7 +307,7 @@ Turn a template layer into a clickable link by adding a CTA link that directs us
 1. Navigate to your template location, select the template and click ![edit](/help/assets/assets/edit-1.svg) **[!UICONTROL Edit Template]**. The template displays on the canvas.
 1. Select the template layer and [navigate to its properties panel](#edit-or-delete-a-layer) to add a CTA link to it.
 1. On the properties panel, select **[!UICONTROL Add CTA]**, specify the destination URL in the **[!UICONTROL URL]** field and click **[!UICONTROL Save]**. 
-1. Click **[!UICONTROL Preview]** to preview your template and its defined parameters. 
+1. Click **[!UICONTROL Preview]** to preview your template and see its defined parameters. 
 1. Click **[!UICONTROL Publish]** and select **[!UICONTROL Yes]** to publish your template, if not published earlier. 
 1. Go back to your template location, select the template and click ![details page](/help/assets/assets/details-page-icon.svg) **[!UICONTROL Details]**. The details page displays.
 1. Click **[!UICONTROL Copy Options]** and select **[!UICONTROL Copy Embed Code]**.
