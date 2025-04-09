@@ -300,6 +300,27 @@ Edit the template by following these steps:
 3. Select the template.
 4. Click **[!UICONTROL Edit Template]**. The template canvas displays the template and the list of all its layers in the Layers panel. Start editing your template as per your requirements.
 
+## Add call-to-action link to your template layer{#add-CTA-link-to-your-template-layer}
+
+Turn a template layer into a clickable link by adding a CTA link that directs users to a target page. Execute these steps to add a CTA link to a layer:
+
+1. Navigate to your template location, select the template and click ![edit](/help/assets/assets/edit-1.svg) **[!UICONTROL Edit Template]**. The template displays on the canvas.
+1. Select the template layer and [navigate to its properties panel](#edit-or-delete-a-layer) to add a CTA link to it.
+1. On the properties panel, select **[!UICONTROL Add CTA]**, specify the destination URL in the **[!UICONTROL URL]** field and click **[!UICONTROL Save]**. 
+1. Click **[!UICONTROL Preview]** to preview your template and its defined parameters. 
+1. Click **[!UICONTROL Publish]** and select **[!UICONTROL Yes]** to publish your template, if not published earlier. 
+1. Go back to your template location, select the template and click ![details page](/help/assets/assets/details-page-icon.svg) **[!UICONTROL Details]**. The details page displays.
+1. Click **[!UICONTROL Copy Options]** and select **[!UICONTROL Copy Embed Code]**.
+![copy embed code](/help/assets/assets/copy-options1.png){width="300" align="left"}
+
+1. Add the copied embed code to your site's HTML file and and run it in your browser. The template displays in your browser.
+
+Hover over the CTA element to see the destination URL, and click it to navigate to the destination page.
+
+Watch this video to learn how to add a CTA link to a template layer step by step.
+
+>[!VIDEO]()
+
 ## Important points to note {#important-points-to-note}
 
 * After creating a template with parameterized image layers for dynamic updates, ensure that the images intended for future updates share the same dimensions as the parameterized images. This ensures the images fit perfectly within the layers without overflowing or leaving empty spaces. Currently, the template does not support automatic dimension adjustments to fit images into the layers.
