@@ -36,7 +36,7 @@ Using this feature, you have the flexibility to share a low resolution PDF file 
 
    ![Assets relation example](assets/asset-relations-example.png)
 
-1. Click **[!UICONTROL Unrelate]** ![unrelate assets](assets/do-not-localize/link-unrelate-icon.png) to un-relate an asset.
+1. Click **[!UICONTROL Unrelate]** ![unrelate assets](assets/do-not-localize/link-unrelate-icon.png) available for all the related assets in each section ([!UICONTROL Source], [!UICONTROL Derived], and [!UICONTROL Other]) to un-relate an asset.
 
 ## Translate related assets {#translating-related-assets}
 
