@@ -313,7 +313,7 @@ Turn a template layer into a clickable link by adding a CTA link that directs us
 1. Click **[!UICONTROL Copy Options]** and select **[!UICONTROL Copy Embed Code]**.
 ![copy embed code](/help/assets/assets/copy-options1.png){width="300" align="left"}
 
-1. Add the copied embed code to your site's HTML file and and run it in your browser. The template displays in your browser.
+1. Add the copied embed code to your site's HTML file and and run it in your browser. The template displays in the browser.
 
 Hover over the CTA element to see the destination URL, and click it to navigate to the destination page.
 
