@@ -138,7 +138,7 @@ To view and compare versions:
 1. Navigate to the asset's details page.
 1. Click ![Versions](/help/assets/assets/Clock.svg) in the right pane to display the **[!UICONTROL Versions]** panel. The thumbnails of the original asset and its uploaded versions displays on this panel. 
 1. Select a version on this panel to preview it in the preview area.
-1. Drag the slider in the preview towards left and right to quickly see the selected version of an image and the original image in a single preview. This enables you to quickly compare the selected version of an image with the original image in a single view.
+1. Drag the slider in the preview towards left and right to quickly see the selected version of an image and the original image in a single preview. This enables you to quickly compare the selected version of an image with the original image.
 
 Select a version except the latest version and click **[!UICONTROL Make Latest]** to revert to its previous version.
 
