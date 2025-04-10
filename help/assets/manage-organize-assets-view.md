@@ -141,7 +141,11 @@ To view and compare versions:
 1. Select any version other than the latest, and click **[!UICONTROL Make Latest]** to set it as the latest version.
 1. Drag the slider in the preview towards left and right to quickly see the selected version of an image and its latest version in a single preview. This enables you to quickly compare the selected version of the image with its latest version.
 
-![compare versions of asset](/help/assets/assets/version-compare2.png) 
+   >[!NOTE]
+   >
+   > Version compare is enabled only for image assets.
+
+   ![compare versions of asset](/help/assets/assets/version-compare2.png) 
 
 <!-- old content
 To view versions, open an asset's preview and click **[!UICONTROL Versions]** ![Versions icon](assets/do-not-localize/versions-clock-icon.png) from the right sidebar. To preview a specific version, select it. To revert to it, click **[!UICONTROL Make Latest]**. 
