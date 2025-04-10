@@ -67,7 +67,6 @@ If you are interested in testing this new capability and sharing your feedback, 
 * The role that best fits your profile: Content author, Developer, Business owner, Admin, or Other (provide a description).
 * Your primary AEM access surface: AEM Sites, AEM Assets, AEM Forms, Cloud Manager, or Other (provide a description).
 
-
 ## Bug fixes
 
 * **Issue with certificates missing Common Name (CN) field** 
@@ -84,3 +83,4 @@ If you are interested in testing this new capability and sharing your feedback, 
 
 
 <!-- ## Known issues {#known-issues} -->
+
