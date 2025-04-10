@@ -131,7 +131,7 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
 ### View and compare versions of an asset {#view-and-compare-versions}
 
-Upload a duplicate copy or a modified copy of an asset, to create its versions. Versioning lets you review historical assets and revert to a previous version if needed.
+Upload a duplicate copy or a modified copy of an asset, to create its versions. Versioning lets you track the modifications to an asset over time and revert to a previous version if needed.
 
 To view and compare versions:
 
