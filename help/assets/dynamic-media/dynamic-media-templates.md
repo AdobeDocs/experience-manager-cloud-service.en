@@ -302,7 +302,7 @@ Edit the template by following these steps:
 
 ## Add Call to Action link to your template layer{#add-CTA-in-dynamic-media-templates}
 
-Turn any image or text layer in your Dynamic Media template into a hyperlink by adding a CTA link to it that directs users to a target page. Execute these steps to add a CTA link to a layer:
+Turn any image or text layer of your Dynamic Media template into a hyperlink by adding a CTA link to it that directs users to a target page. Execute these steps to add a CTA link to a layer:
 
 1. Navigate to your template location, select the template and click ![edit](/help/assets/assets/edit-pen.svg) **[!UICONTROL Edit Template]**. The template displays on the canvas.
 1. Select the template layer and [navigate to its properties panel](#edit-or-delete-a-layer) to add a CTA link to it.
