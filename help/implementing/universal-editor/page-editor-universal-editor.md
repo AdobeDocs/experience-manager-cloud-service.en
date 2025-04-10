@@ -13,11 +13,11 @@ The Page Editor remains supported by Adobe, but the Universal Editor bring exiti
 
 Adobe introduced the [Universal Editor](/help/implementing/universal-editor/introduction.md) in 2024 as a streamlined editor embracing a modern Javascript-based development approach. The Universal Editor is Adobe's vision for a seamless and extensible graphical content authoring experience.
 
-Recognizing the Page Editor's rich feature set and innumerable projects investing in it over the long history of AEM, Adobe continues to fully support the Page Editor, though innovation will be focused on the Universal Editor.
+Recognizing the [Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md)'s rich feature set and innumerable projects investing in it over the long history of AEM, Adobe continues to fully support the Page Editor, though innovation will be focused on the Universal Editor.
 
 ## Recommendation {#recommendation}
 
-Though quickly narrowing, there remains a feature gap between the Universal Editor and Page Editor (a feature comparison can be found in the next section). For this reason, no general recommendation can be made for which editor to use for your project. 
+Though quickly narrowing, there remains a feature gap between the Universal Editor and Page Editor ([a feature comparison can be found in the next section](#feature-comparison)). For this reason, no general recommendation can be made for which editor to use for your project. 
 
 As a rule of thumb:
 
@@ -34,46 +34,46 @@ Because the feature gap between the two editors is constantly shrinking, be sure
 
 ||Page Editor|Notes|Universal Editor|Notes|
 |---|---|---|---|---|
-|Classic AEM Delivery|[!BADGE Available]{type=Positive}|Recommended for use with the Core Components|[!BADGE Unavailable]{type=Negative}|Classic AEM pages typically rely on several Page Editor-specific features not available OotB with the Universal Editor.|
-|Edge Delivery|[!BADGE Unavailable]{type=Negative}||[!BADGE Available]{type=Positive}||
-|Headless Delivery|[!BADGE Partially Available]{type=Caution}|Only with [the SPA Editor,](/help/implementing/developing/hybrid/introduction.md) which was [deprecated](/help/implementing/developing/hybrid/spa-editor-deprecation.md) in favor of the Universal Editor in headless use cases|[!BADGE Available]{type=Positive}|The UE allows developers to bring their own web app without imposing any specific framework or implementation style.|
+|[Classic AEM Delivery](/help/sites-cloud/authoring/author-publish.md)|[!BADGE Available]{type=Positive}|Recommended for use with the Core Components|[!BADGE Unavailable]{type=Negative}|Classic AEM pages typically rely on several Page Editor-specific features not available OotB with the Universal Editor.|
+|[Edge Delivery](/help/edge/overview.md)|[!BADGE Unavailable]{type=Negative}||[!BADGE Available]{type=Positive}||
+|[Headless Delivery](/help/headless/introduction.md)|[!BADGE Partially Available]{type=Caution}|Only with [the SPA Editor,](/help/implementing/developing/hybrid/introduction.md) which was [deprecated](/help/implementing/developing/hybrid/spa-editor-deprecation.md) in favor of the Universal Editor in headless use cases|[!BADGE Available]{type=Positive}|The Universal Editor allows developers to bring their own web app without imposing any specific framework or implementation style.|
 
 ### Persistence {#persistence}
 
 ||Page Editor|Note|Universal Editor|Notes|
 |---|---|---|---|---|
-|Editing Page Components|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
-|Editing Content Fragments|[!BADGE Unavailable]{type=Negative}||[!BADGE Available]{type=Positive}|Including inserting new and reordering fragments|
+|Editing Page components|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
+|Editing [Content Fragments](/help/assets/content-fragments/content-fragments.md)|[!BADGE Unavailable]{type=Negative}||[!BADGE Available]{type=Positive}|Including inserting new and reordering fragments|
 
 ### Capabilities {#capabilities}
 
 ||Page Editor|Note|Universal Editor|Notes|
 |---|---|---|---|---|
-|Page Templates|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|The Universal Editor is agnostic of the template system used.<br>- For Edge Delivery, templates are defined in code and don't require AEM's Editable Template system<br>- For headless implementations, the Universal Editor works with any template approach chosen by the frontend, as it doesn’t impose AEM-specific mechanisms.|
-|Editable Templates|[!BADGE Available]{type=Positive}|Authors can adjust some template options.|[!BADGE Unavailable]{type=Negative}|Templates are adjusted by developers, not authors. For this reason, there are no plans to introduce Editable Templates.|
+|Page Templates|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|The Universal Editor is agnostic of the template system used.<br>- For Edge Delivery, templates are defined in code and don't require AEM's [Editable Template system](/help/sites-cloud/authoring/page-editor/templates.md)<br>- For headless implementations, the Universal Editor works with any template approach chosen by the frontend, as it doesn’t impose AEM-specific mechanisms.|
+|[Editable Templates](/help/sites-cloud/authoring/page-editor/templates.md)|[!BADGE Available]{type=Positive}|Authors can adjust some template options.|[!BADGE Unavailable]{type=Negative}|Templates are adjusted by developers, not authors. For this reason, there are no plans to introduce Editable Templates.|
 |WYSIWYG Editing|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
-|Generate Variations|[!BADGE Unavailable]{type=Negative}||[!BADGE Available]{type=Positive}|Available as an extension|
+|[Generate Variations](/help/generative-ai/generate-variations.md)|[!BADGE Unavailable]{type=Negative}||[!BADGE Available]{type=Positive}|[Available as an extension](/help/implementing/universal-editor/extending.md)|
 |Insert new block|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
 |Reorder Block|[!BADGE Available]{type=Positive}|Possible with in-context drag-and-drop, but not in the "tree view" side panel|[!BADGE Available]{type=Positive}|Possible via drag-and-drop in the "tree view" side panel, but not yet in-context (planned)|
 |Cut/Copy-Paste Block|[!BADGE Available]{type=Positive}||[!BADGE Unavailable]{type=Negative}|Planned|
-|Apply Styles|[!BADGE Available]{type=Positive}|Styles can be applied to components using the Style System.|[!BADGE Available]{type=Positive}|Styles can be applied using regular component (or Content Fragment) properties, using the multiselect widget a very similar UX can be achieved, however the Style System is not supported.|
-|Apply Layout|[!BADGE Available]{type=Positive}|Sites must implement the AEM Responsive Grid to enable authors to resize components across three predefined breakpoints.|[!BADGE Available]{type=Positive}|Layouts can be applied using regular component (or Content Fragment) properties, however the Responsive Grid is not supported.|
+|Apply Styles|[!BADGE Available]{type=Positive}|Styles can be applied to components using [the Style System.](/help/sites-cloud/authoring/page-editor/style-system.md)|[!BADGE Available]{type=Positive}|Styles can be applied using regular component (or Content Fragment) properties, using the multiselect widget a very similar UX can be achieved, however the Style System is not supported.|
+|Apply Layout|[!BADGE Available]{type=Positive}|Sites must implement the [AEM Responsive Grid](/help/implementing/developing/introduction/responsive-design.md) to enable authors to resize components across three predefined breakpoints.|[!BADGE Available]{type=Positive}|Layouts can be applied using regular component (or Content Fragment) properties, however the Responsive Grid is not supported.|
 |Undo-Redo|[!BADGE Available]{type=Positive}||[!BADGE Unavailable]{type=Negative}|Planned|
 |Publish|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
-|Publish to preview|[!BADGE Unavailable]{type=Negative}||[!BADGE Available]{type=Positive}||
-|Start workflow|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Available as an extension|
-|Commenting|[!BADGE Available]{type=Positive}||[!BADGE Unavailable]{type=Negative}|Planned as an extension|
+|Publish to preview|[!BADGE Unavailable]{type=Negative}|From the editor and the [Sites Console](/help/sites-cloud/authoring/sites-console/previewing-content.md)|[!BADGE Available]{type=Positive}|From the editor and the [Sites Console](/help/sites-cloud/authoring/sites-console/previewing-content.md)|
+|[Start workflow](/help/sites-cloud/authoring/workflows/overview.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Available as an extension|
+|Commenting|[!BADGE Available]{type=Positive}|Using [annotations](/help/sites-cloud/authoring/page-editor/annotations.md)|[!BADGE Unavailable]{type=Negative}|Planned as an extension|
 |Workfront integration|[!BADGE Unavailable]{type=Negative}||[!BADGE Available]{type=Positive}|Available as an extension|
-|MSM and Launches|[!BADGE Available]{type=Positive}|Allows managing inheritance per component|[!BADGE Available]{type=Positive}|Managing inheritance by component is available as an extension for pages only.|
-|Experimentation and personalization|[!BADGE Available]{type=Positive}|Using Target mode|[!BADGE Available]{type=Positive}|Available as an extension|
+|[MSM and Launches](/help/sites-cloud/administering/msm-and-translation.md)|[!BADGE Available]{type=Positive}|Allows managing inheritance per component|[!BADGE Available]{type=Positive}|Managing inheritance by component is available as an extension for pages only.|
+|Experimentation and personalization|[!BADGE Available]{type=Positive}|Using [Target mode](/help/sites-cloud/authoring/personalization/targeted-content.md)|[!BADGE Available]{type=Positive}|Available as an extension|
 |Content tree|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Also allows reordering within the tree|
-|Device simulation|[!BADGE Available]{type=Positive}|Configurable devices and breakpoints, but the user cannot manually enter any different screen dimensions to simulate|[!BADGE Available]{type=Positive}|Any screen dimensions to simulate can be manually entered, but default breakpoints can not be configured.|
-|Page locking|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Available for pages as an extension|
-|Page properties|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Available for pages as an extension to allow opening the properties in a new browser tab|
+|Device simulation|[!BADGE Available]{type=Positive}|[Configurable devices and breakpoints,](/help/sites-cloud/administering/responsive-layout.md) but the user cannot manually enter any different screen dimensions to simulate|[!BADGE Available]{type=Positive}|[Any screen dimensions to simulate can be manually entered,](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator) but default breakpoints can not be configured.|
+|[Page locking](/help/sites-cloud/authoring/sites-console/managing-pages.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Respects lock status set in Sites Console with extension available to lock/unlock pages from the editor|
+|[Page properties](/help/sites-cloud/authoring/sites-console/page-properties.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Available for pages as an extension to allow opening the properties in a new browser tab|
 |Multi-field properties|[!BADGE Available]{type=Positive}||[!BADGE Unavailable]{type=Negative}|Planned|
 |Remote DAM|[!BADGE Available]{type=Positive}||[!BADGE Partially Available]{type=Caution}|Full availability planned|
-|Content versioning|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
-|TimeWarp and Diff View|[!BADGE Available]{type=Positive}||[!BADGE Unavailable]{type=Negative}|Planned|
+|[Page versioning](/help/sites-cloud/authoring/sites-console/page-versions.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
+|[TimeWarp](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) and [Diff View](/help/sites-cloud/authoring/sites-console/page-diff.md)|[!BADGE Available]{type=Positive}||[!BADGE Unavailable]{type=Negative}|Planned|
 |View in admin|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Available as an extension for pages|
 |View page status|[!BADGE Available]{type=Positive}||[!BADGE Unavailable]{type=Negative}|Available in the Sites Console|
 |Extensibility|[!BADGE Available]{type=Positive}|As AEM overlays|[!BADGE Available]{type=Positive}|As clearly-defined extension points using the App Builder and very little AEM-specific knowledge|
