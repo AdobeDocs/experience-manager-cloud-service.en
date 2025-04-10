@@ -300,24 +300,25 @@ Edit the template by following these steps:
 3. Select the template.
 4. Click **[!UICONTROL Edit Template]**. The template canvas displays the template and the list of all its layers in the Layers panel. Start editing your template as per your requirements.
 
-## Add call-to-action link to your template layer{#add-CTA-link-to-your-template-layer}
+## Add Call to Action link to your template layer{#add-CTA-in-dynamic-media-templates}
 
-Turn a template layer into a clickable link by adding a CTA link that directs users to a target page. Execute these steps to add a CTA link to a layer:
+Turn any image or text layer in your Dynamic Media template into a hyperlink by adding a CTA link to it that directs users to a target page. Execute these steps to add a CTA link to a layer:
 
-1. Navigate to your template location, select the template and click ![edit](/help/assets/assets/edit-1.svg) **[!UICONTROL Edit Template]**. The template displays on the canvas.
+1. Navigate to your template location, select the template and click ![edit](/help/assets/assets/edit-pen.svg) **[!UICONTROL Edit Template]**. The template displays on the canvas.
 1. Select the template layer and [navigate to its properties panel](#edit-or-delete-a-layer) to add a CTA link to it.
 1. On the properties panel, select **[!UICONTROL Add CTA]**, specify the destination URL in the **[!UICONTROL URL]** field and click **[!UICONTROL Save]**. 
+![add CTA](/help/assets/assets/add-cta.png){width="300" align="center"}
 1. Click **[!UICONTROL Preview]** to preview your template and see its defined parameters. 
 1. Click **[!UICONTROL Publish]** and select **[!UICONTROL Yes]** to publish your template, if not published earlier. 
-1. Go back to your template location, select the template and click ![details page](/help/assets/assets/details-page-icon.svg) **[!UICONTROL Details]**. The details page displays.
+1. Go back to your template location, select the template and click ![details page](/help/assets/assets/details-page-icon.svg) **[!UICONTROL Details]**.
 1. Click **[!UICONTROL Copy Options]** and select **[!UICONTROL Copy Embed Code]**.
-![copy embed code](/help/assets/assets/copy-options1.png){width="300" align="left"}
+![copy embed code](/help/assets/assets/copy-options1.png){width="300" align="center"}
 
-1. Add the copied embed code to your site's HTML file and and run it in your browser. The template displays in the browser.
+1. Add the copied embed code to your site's HTML file and run it in your browser to display the template.
 
-Hover over the CTA element to see the destination URL, and click it to navigate to the destination page.
+Click the CTA element on the template to navigate to the destination page.
 
-Watch this video to learn how to add a CTA link to a template layer step by step.
+Watch this step by step video to learn how to add a CTA link to a template layer.
 
 >[!VIDEO]()
 
