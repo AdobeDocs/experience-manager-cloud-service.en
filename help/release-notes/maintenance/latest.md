@@ -115,7 +115,7 @@ The 2025.4.0 feature activation will provide the full feature set for this maint
 
 ### Known Issues {#known-issues-20133}
 
-* SITES-30727: drag and drop may fail for sub-components within the AEM editor
+* SITES-30727: drag and drop may fail for sub-components within the AEM editor.
 
 ### Deprecated Features and APIs {#deprecated-20133}
 
