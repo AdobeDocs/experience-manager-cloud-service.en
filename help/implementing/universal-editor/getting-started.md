@@ -118,9 +118,7 @@ If you only want to have certain extensions enabled for a page, you can set this
 
 If you have an existing AEM project using [the page editor](/help/sites-cloud/authoring/page-editor/introduction.md), when content authors edit pages, the pages are opened automatically with the page editor. You can define which editor AEM should open based on the content paths or the `sling:resourceType`, making the experience seamless for your authors, regardless of which editor is required for the selected content.
 
-1. To take advantage of this configuration feature, reach out to Adobe Customer care to activate access to the Universal Editor URL Service for your program.
-
-1. Once Customer Care has activated access to the Universal Editor URL service, open the Configuration Manager.
+1. Open the Configuration Manager.
 
    `http://<host>:<port>/system/console/configMgr`
 
