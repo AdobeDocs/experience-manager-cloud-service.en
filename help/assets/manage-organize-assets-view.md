@@ -137,10 +137,9 @@ To view and compare versions:
 
 1. Navigate to the asset's details page.
 1. Click ![Versions](/help/assets/assets/Clock.svg) in the right pane to display the **[!UICONTROL Versions]** panel. The thumbnails of the original asset and its uploaded versions displays on this panel. 
-1. Select a version on this panel to preview it in the preview area.
-1. Drag the slider in the preview towards left and right to quickly see the selected version of an image and the original image in a single preview. This enables you to quickly compare the selected version of an image with the original image.
-
-Select a version except the latest version and click **[!UICONTROL Make Latest]** to revert to its previous version.
+1. Select a version on the panel to preview it in the preview area.
+1. Select any version other than the latest, and click **[!UICONTROL Make Latest]** to set it as the latest version.
+1. Drag the slider in the preview towards left and right to quickly see the selected version of an image and its latest version in a single preview. This enables you to quickly compare the selected version of the image with its latest version.
 
 ![compare versions of asset](/help/assets/assets/version-compare2.png) 
 
@@ -148,7 +147,7 @@ Select a version except the latest version and click **[!UICONTROL Make Latest]*
 To view versions, open an asset's preview and click **[!UICONTROL Versions]** ![Versions icon](assets/do-not-localize/versions-clock-icon.png) from the right sidebar. To preview a specific version, select it. To revert to it, click **[!UICONTROL Make Latest]**. 
 -->
 
-Select the latest version, click **[!UICONTROL New Version]** and upload a new copy of the asset from your local file system to create an asset version from the versions timeline. 
+Select the latest version and click **[!UICONTROL New Version]** to upload a new copy of the asset from your local file system to create an asset version. 
 
 <!-- old content
 You can also create versions from the versions timeline. Select the latest version, click **[!UICONTROL New Version]**, and upload a new copy of the asset from your local file system.
