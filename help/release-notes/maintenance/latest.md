@@ -22,7 +22,7 @@ None.
 
 ### Fixed Issues {#fixed-issues-X}
 
-None.
+* SITES-30727: drag and drop may fail for sub-components within the AEM editor.
 
 ### Known Issues {#known-issues-X}
 
