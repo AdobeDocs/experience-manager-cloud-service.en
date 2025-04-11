@@ -1,6 +1,6 @@
 ---
-title: Release Notes for Cloud Manager 2025.4.0 in Adobe Experience Manager as a Cloud Service
-description: Learn about the release of Cloud Manager 2025.4.0 in AEM as a Cloud Service.
+title: Release Notes for Cloud Manager 2025.4.0
+description: Learn about the release of Cloud Manager 2025.4.0 in Adobe Experience Manager as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
