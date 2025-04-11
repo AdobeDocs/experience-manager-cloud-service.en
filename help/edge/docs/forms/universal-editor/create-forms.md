@@ -216,3 +216,58 @@ Having trouble loading your form? Here are some common issues and how to fix the
 ## Start creating forms
 
 {{universal-editor-see-also}}
+
+
+
+
+
+---
+title: How to create standalone forms based on Core Component or Edge Delivery Services templates and publish them on Edge Delivery Services
+description: This article explains how to create Adaptive Forms by selecting a Core Component-based or Edge Delivery Services-based templates in the Form Creation Wizard. You can also publish the forms to AEM Edge Delivery Services.
+feature: Edge Delivery Services
+role: User, Author
+hide: yes
+hidefromtoc: yes
+---
+
+## Creating forms in AEM and publishing them to Edge Delivery Services
+
+## Prerequisites
+
+## Authoring Forms
+
+### Using Edge Delivery Services Templates
+
+### Using Core Component-Based Templates
+
+#### Creating an Edge Delivery Services Configuration
+
+## Publishing Forms to Edge Delivery Services
+
+## Accessing forms on Edge Delivery Services
+
+## Managing Forms
+
+## Best Practices
+
+## Troubleshooting
+
+## See Also
+
+
+
+## How Edge Delivery Services Forms Work?
+
+Users can author Edge Delivery Services Forms using document-based authoring tools such as Google Drive, SharePoint, or the Universal Editor (WYSIWYG authoring), while leveraging the basic styling, behaviour and components available in the GitHub repository. Once authored, Edge Delivery Services Forms can send data to any platform using the Forms Submission Service.
+
+![How Edge Delivery Services Forms works](/help/edge/docs/forms/assets/eds-forms-working.png)
+
+### Key components of Edge Delivery Services Forms
+
+The key components of Edge Delivery Servies Forms are:
+
+* **GitHub Repository**: The GitHub repository serves as a boilerplate for creating Edge Delivery Services Forms. The forms leverage basic styling and functionality from the repository and allow users to add customizations and custom components to the Edge Delivery Services Forms.
+
+* **Form Authoring**: Edge Delivery Services Forms support two types of authoring: WYSIWYG and document-based authoring. Document-based authoring enables users to create forms using familiar tools like Google Docs and Microsoft Office. WYSIWYG authoring allows users to design forms visually using the Universal Editor, making it easy for non-technical users to create and manage forms. Universal Editor offers an intuitive form creation experience and provides access to numerous form capabilities.
+
+* **Forms Submission Service**: The Forms Submission Service allows you to store data from forms submissions on any platform, such as OneDrive, SharePoint, or Google Sheets, making it easy to access and manage form data within your preferred system.
