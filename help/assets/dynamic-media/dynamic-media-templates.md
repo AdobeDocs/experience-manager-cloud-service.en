@@ -311,8 +311,13 @@ Turn any image or text layer of your Dynamic Media template into a hyperlink by 
 1. Click **[!UICONTROL Preview]** to preview your template and see its defined parameters. 
 1. Click **[!UICONTROL Publish]** and select **[!UICONTROL Yes]** to publish your template, if not published earlier. 
 1. Navigate to the folder where this template is saved, select this template and click ![details page](/help/assets/assets/details-page-icon.svg) **[!UICONTROL Details]**.
-1. Click **[!UICONTROL Copy Options]** and select **[!UICONTROL Copy Embed Code]**. The embed code looks like this: 
-    ```
+1. Click **[!UICONTROL Copy Options]** and select **[!UICONTROL Copy Embed Code]**. 
+    
+   ![copy embed code](/help/assets/assets/copy-options1.png){width="300" align="center"}
+
+   The following is an example of the Embed Code:
+
+   ```
     <div class="adobe-dynamicmedia-template-embed-container">
     <img id="adobe-dynamicmedia-template-image" src="http://s7ap1.scene7.com/is/image/abcd/dm-template-cta-v2?wid=800&hei=300&qlt=100&fit=constrain&cache=off" alt="adobe dynamicmedia template" usemap="#adobe-dynamicmedia-template-map" width="800" height="300">
     <map name="adobe-dynamicmedia-template-map">
@@ -321,7 +326,6 @@ Turn any image or text layer of your Dynamic Media template into a hyperlink by 
     </map>
     </div>
     ```
-   ![copy embed code](/help/assets/assets/copy-options1.png){width="300" align="center"}
 
 1. Add the copied embed code to your site's HTML file and run it in your browser to display the template.
 
@@ -329,7 +333,7 @@ Click the CTA element on the template to navigate to the destination page.
 
 Watch this step by step video to learn how to add a CTA link to a template layer.
 
->[!VIDEO]()
+>[!VIDEO](https://video.tv.adobe.com/v/3457577)
 
 ## Important points to note {#important-points-to-note}
 
