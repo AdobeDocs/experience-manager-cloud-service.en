@@ -61,6 +61,10 @@ The 2025.4.0 feature activation will provide the full feature set for this maint
 * SITES-24907: Edge Delivery with Universal Editor: Support publishing Assets to multiple sites for MSM use cases (early access).
 * SITES-27956: Edge Delivery with Universal Editor: Improve publishing throughput (early access).
 * SITES-27956: Edge Delivery with Universal Editor: Improve error handling for publishing to Edge Delivery Services (early access).
+* SITES-29602: CIF: Guava usage removal in core-cif-components-core.
+* SITES-25785: CIF: Adding product variant selection for CIF  product reference data type.
+* SITES-26392: CIF[Experimental]: JSON+LD in CIF Core Components in PDPs.
+* SITES-21278: CIF[Experimental]: CIF ability to clear cache.
 
 ### Fixed Issues {#fixed-issues-20133}
 
@@ -105,10 +109,13 @@ The 2025.4.0 feature activation will provide the full feature set for this maint
 * SITES-29363: Reset live copy button is not working for nested live copy content hierarchy.
 * SITES-29369: Assets Event Issue in AIO | Incorrectly Triggering Page Published/Unpublished Events.
 * SITES-29972: Delete and Rename actions sometimes produce untrue workflow comment.
+* SITES-24631: CIF: Search issue on product field.
+* SITES-24902: CIF: Product url format not working as expected for #variant_sku.
+* SITES-29191: CIF: Unable to Add More Than 20 SKUs to Product List Component.
 
 ### Known Issues {#known-issues-20133}
 
-None.
+* SITES-30727: drag and drop may fail for sub-components within the AEM editor.
 
 ### Deprecated Features and APIs {#deprecated-20133}
 
