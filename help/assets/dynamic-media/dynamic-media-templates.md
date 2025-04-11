@@ -308,7 +308,7 @@ Turn any image or text layer of your Dynamic Media template into a hyperlink by 
 1. Select the template layer and [navigate to its properties panel](#edit-or-delete-a-layer) to add a CTA link to it.
 1. On the properties panel, select **[!UICONTROL Add CTA]**, specify the destination URL in the **[!UICONTROL URL]** field and click **[!UICONTROL Save]**. 
 
-![add CTA](/help/assets/assets/add-cta.png)
+   ![add CTA](/help/assets/assets/add-cta.png)
 
 1. Click **[!UICONTROL Preview]** to preview your template and see its defined parameters. 
 1. Click **[!UICONTROL Publish]** and select **[!UICONTROL Yes]** to publish your template, if not published earlier. 
@@ -321,7 +321,7 @@ Turn any image or text layer of your Dynamic Media template into a hyperlink by 
 
       ``` json
        <div class="adobe-dynamicmedia-template-embed-container">
-       <img id="adobe-dynamicmedia-template-image" src="http://s7ap1.scene7.com/is/image/abcd/dm-template-cta-v2?wid=800&hei=300&qlt=100&fit=constrain&cache=off" alt="adobe dynamicmedia template" usemap="#adobe-dynamicmedia-template-map" width="800" height="300">
+       <img id="<Image ID>>" src="<Image Source>>" alt="adobe dynamicmedia template" usemap="#adobe-dynamicmedia-template-map" width="800" height="300">
        <map name="adobe-dynamicmedia-template-map">
        <area shape="rect" coords="417,-60,817,340" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
        <area shape="rect" coords="6,206.57,129,231.43" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
