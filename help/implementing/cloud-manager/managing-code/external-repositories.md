@@ -1,5 +1,5 @@
 ---
-title: Add External Repositories in Cloud Manager - Limited beta
+title: Add External Repositories in Cloud Manager - Limited Beta
 description: Learn how to add an external repository into Cloud Manager. Cloud Manager supports integration with GitHub Enterprise, GitLab, and Bitbucket repositories.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
@@ -46,7 +46,7 @@ Configuration of an external repository in Cloud Manager consists of three steps
     | --- | --- |
     | **Repository Name** | Required. An expressive name for your new repository. | 
     | **Repository URL** | Required. The URL of the repository.<br><br>If you are using a GitHub-hosted repository, the path must end in `.git`.<br>For example, *`https://github.com/org-name/repo-name.git`* (URL path is for illustration purposes only).<br><br>If you are using an external repository, it must use the following URL path format:<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> or<br>`https://self-hosted-domain/org-name/repo-name.git`<br>And match your Git vendor. |
-    | **Select Repository Type** | Required. Select the repository type that you are using:<ul><li>**GitHub** (GitHub Enterprise and the self-hosted version of GitHub)</li><li>**GitLab** (both `gitlab.com` and the self-hosted version of GitLab) </li><li>**Bitbucket** (both `bitbucket.org` and Bitbucket server, and the self-hosted version of Bitbucket)</li></ul>If the repository URL path above includes the Git vendor name, such as GitLab or Bitbucket, the repository type is already pre-selected for you. |
+    | **Select Repository Type** | Required. Select the repository type that you are using:<ul><li>**GitHub** (GitHub Enterprise and the self-hosted version of GitHub)</li><li>**GitLab** (both `gitlab.com` and the self-hosted version of GitLab) </li><li>**Bitbucket** (only `bitbucket.org` (cloud version) is supported. The self-hosted version of Bitbucket was deprecated starting February 15, 2024.)</li></ul>If the repository URL path above includes the Git vendor name, such as GitLab or Bitbucket, the repository type is already pre-selected for you. |
     | **Description** | Optional. A detailed description of the repository. |
 
 1. Select **Save** to add the repository.

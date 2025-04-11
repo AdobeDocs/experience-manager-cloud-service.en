@@ -77,8 +77,9 @@ You must ensure the following communication methods:
 
 * The host application is running on HTTPS.
 * You cannot run the application on `localhost`. If you want to integrate the Asset Selector on your local machine, you need to create a custom domain for example `[https://<your_campany>.localhost.com:<port_number>]` and add this custom domain in the `redirectUrl list`.
-* You can configure and add `ADOBE_PROVIDED_CLIENT_ID` into the AEM Cloud Service environment variable with the respective `imsClientId`.
-    ![Asset Selector IMS Client id environment](assets/asset-selector-ims-client-id-env.png)
+* You can configure and add clientID into the AEM Cloud Service environment variable with the respective `imsClientId`.
+<!--* You can configure and add `ADOBE_PROVIDED_CLIENT_ID` into the AEM Cloud Service environment variable with the respective `imsClientId`.
+![Asset Selector IMS Client id environment](assets/asset-selector-ims-client-id-env.png)-->
 * The list of IMS scopes needs to be defined in the environment configuration. 
 * The URL of the application is in the IMS client's allowed list of redirect URLs.
 * The IMS login flow is configured and rendered using a popup on the web browser. Therefore, popups should be enabled or allowed on the target browser.
