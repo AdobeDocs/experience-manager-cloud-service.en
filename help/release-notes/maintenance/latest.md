@@ -39,13 +39,13 @@ The 2025.4.0 feature activation will provide the full feature set for this maint
 * ASSETS-44956: Can't Select Any Dynamic Media Rendition - script tags should be loaded in top level component.
 * CNTBF-410: CheckJob getId null pointer in ContentCopy Bundle.
 * CNTBF-341: ContentCopy export Index Out Of Bounds.
-* CQ-4355411:[AEM]: Tooltips remain on the display in "User Preferences" dialog.
+* CQ-4355411: Tooltips remain on the display in "User Preferences" dialog.
 * GRANITE-57265: Dropdown selection values are not getting selected.
 * GRANITE-57067 - Missing effective policies on UI.
 * SITES-30727: drag and drop may fail for sub-components within the AEM editor.
 * SKYOPS-90607: Sling Jobs are executed in inactive deployment / mutable content.
-* SKYOPS-95722: Remove MaxPermSize size from quickstart flags in AEM-SDK.
-* SKYOPS-103569: Certain images cannot be loaded with Java 21: javax.imageio.IIOException: Cannot create Sun JPEGImageReader backend.
+* SKYOPS-95722: Remove `MaxPermSize` size from quickstart flags in AEM-SDK.
+* SKYOPS-103569: Certain images cannot be loaded with Java 21: `javax.imageio.IIOException: Cannot create Sun JPEGImageReader backend`.
 
 ### Known Issues {#known-issues-20454}
 
