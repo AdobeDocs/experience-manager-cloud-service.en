@@ -81,6 +81,7 @@ To create a Dynamic Media template, you must have:
 
 To create a DM template, follow these steps:
 
+1. Navigate to your [!DNL AEM Assets] homepage and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them for creating the template. 
 1. [Create a blank canvas](#create-a-canvas)
 1. [Add images to the canvas](#add-images-to-the-canvas)
 1. [Add text layers to the canvas](#add-text-to-the-canvas)
@@ -276,7 +277,7 @@ To copy the URL of the published template displayed in preview:
 1. Use this URL for rapid merchandising of your products or services. You can share this URL with your customers or integrate it into your website or any downstream third-party application to display the banner and make real-time updates to it to reflect the ongoing offers.
 
 Learn to create a Dynamic Media template step by step in this video.
->[!VIDEO](https://video.tv.adobe.com/v/3443281)
+>[!VIDEO](https://video.tv.adobe.com/v/3457616)
 
 ## Make real-time updates to the template from the URL{#update-the-template-from-the-url}
 
