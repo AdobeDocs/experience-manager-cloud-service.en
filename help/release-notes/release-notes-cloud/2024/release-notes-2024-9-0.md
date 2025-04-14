@@ -130,7 +130,7 @@ The Adobe Managed CDN now supports [Edge Side Includes (ESI)](/help/implementing
 
 Protect certain content resources by popping up a basic auth dialog requiring a username and password. This feature primarily targets light authentication use cases, like business stakeholders reviewing content, rather than serving as a comprehensive solution for end-user access rights. The list of username and passwords is managed through a configuration file in Git that is deployed via Config Pipeline, with a reference to secret-type Cloud Manager environment variables. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
 
-### Client-Side Redirects {#client-side-redirects}
+### Server-Side Redirects {#client-side-redirects}
 
 Declare [browser redirects](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) in a configuration file Git that are deployed to and evaluated at the CDN. This can be useful for scenarios including deleting pages, changed site structure, and SEO optimization.
 
