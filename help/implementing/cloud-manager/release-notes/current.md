@@ -1,62 +1,86 @@
 ---
-title: Release Notes for Cloud Manager 2025.3.0 in Adobe Experience Manager as a Cloud Service
-description: Learn about the release of Cloud Manager 2025.3.0 in AEM as a Cloud Service.
+title: Release Notes for Cloud Manager 2025.4.0
+description: Learn about the release of Cloud Manager 2025.4.0 in Adobe Experience Manager as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 ---
-# Release notes for Cloud Manager 2025.3.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Release notes for Cloud Manager 2025.4.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
 <!-- https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.03.0+Release -->
 
-Learn about the release of Cloud Manager 2025.3.0 in AEM (Adobe Experience Manager) as a Cloud Service.
+Learn about the release of Cloud Manager 2025.4.0 in AEM (Adobe Experience Manager) as a Cloud Service.
 
 
 See also the [current release notes for Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Release dates {#release-date}
 
-The release date for Cloud Manager 2025.3.0 in AEM as a Cloud Service is Thursday, March 13, 2025. 
+The release date for Cloud Manager 2025.4.0 in AEM as a Cloud Service is Thursday, April 10, 2025. 
 
-The next planned release is Thursday, April 10, 2025.
+The next planned release is Thursday, May 8, 2025.
  
 ## What's new {#what-is-new}
 
-* **Run multiple pipelines**
+* **(UI) Improved deployment visibility**
 
-    The ability to run multiple pipelines simultaneously has been introduced on the Pipelines page. Users must select at least one pipeline but no more than ten. Near the upper-right corner on the Pipelines page, click **Run selected (x)**. A modal dialog box appears that lists any pipelines that cannot be started. Click **Run** to initiate all valid pipelines.
+    The pipeline execution details page in Cloud Manager now shows a status message ("*Waiting - other update in progress*") when a deployment is waiting for another deployment to finish. This workflow makes it easier to understand sequencing during environment deployment.  <!-- CMGR-66890 -->
 
-    ![Run selected pipelines dialog box](/help/implementing/cloud-manager/release-notes/assets/run-selected-pipelines.png)
+    ![Development deployment dialog box showing details and breakdown](/help/implementing/cloud-manager/release-notes/assets/dev-deployment.png)
 
-    See also [Run multiple pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#run-multiple-pipelines)
+* **(UI) Domain validation enhancement**
 
-* **Support extended to Node.js versions**
+    When adding a domain, Cloud Manager now displays an error if the domain is already installed in a Fastly account: "*The domain is already installed in a Fastly account. Please remove it first from there before adding to Cloud Service.*"
 
-    The front-end build environment now supports the following `Node.js` versions:
-
-    * 23
-    * 22
-    * 20
-
-    See also [Develop Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md#node-versions). <!-- CMGR-65307 -->
-
-<!--
 ## Early adoption program {#early-adoption}
 
-Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features. -->
+Participate in Cloud Manager's Early Adoption Program to get exclusive access to upcoming features before their general release.
 
+The following early adoption opportunities are currently available:
+
+### Bring Your Own Git - now with support for GitLab and Bitbucket {#gitlab-bitbucket}
+
+<!-- BOTH CS & AMS -->
+
+The **Bring Your Own Git** feature has been expanded to include support for external repositories, such as GitLab and Bitbucket. This new support is in addition to the already existing support for private and enterprise GitHub repositories. When you add these new repos, you can also link them directly to your pipelines. You can host these repositories on public cloud platforms or within your private cloud or infrastructure. This integration also removes the need for constant code synchronization with the Adobe repository and provides the ability to validate pull requests before merging them into a main branch.
+
+Pipelines using external repositories (excluding GitHub-hosted ones) and the **Deployment Trigger** set to **On Git Changes** now start automatically.
+
+See [Add external repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+
+![Add Repository dialog box](/help/implementing/cloud-manager/release-notes/assets/repositories-add-release-notes.png)
+
+>[!NOTE]
+>
+>Currently, the out-of-the-box pull request code quality checks are exclusive to GitHub-hosted repositories, but an update to extend this functionality to other Git vendors is in the works.
+
+If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure.
+
+### AEM Home {#aem-home}
+
+AEM Home introduces a centralized starting point for managing content, assets, and sites within Adobe Experience Manager. Designed to deliver a personalized experience, AEM Home lets you navigate the AEM ecosystem seamlessly according to your roles and goals. Acting as a guide, it provides key insights and recommended actions to help you achieve your objectives efficiently. With a clear, persona-driven layout, AEM Home ensures quick access to essential tools, supporting a streamlined and effective experience across all AEM features.
+
+Available to early adopters, AEM Home offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence AEM Home's development by providing feedback that helps shape its future and enhances its value for the entire AEM community.
+
+If you are interested in testing this new capability and sharing your feedback, send an email to [Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com) from your email address associated with your Adobe ID. Be sure to include the following information:
+
+* The role that best fits your profile: Content author, Developer, Business owner, Admin, or Other (provide a description).
+* Your primary AEM access surface: AEM Sites, AEM Assets, AEM Forms, Cloud Manager, or Other (provide a description).
 
 ## Bug fixes
 
-* **(UI) Fix for 'Advanced Network Configuration' updates in Cloud Manager**  
+* **Issue with certificates missing Common Name (CN) field** 
 
-    A rare issue that prevented updates to the **Advanced Network Configuration** when an "Update available" notification was present has been resolved. Previously, Cloud Manager locked configuration modifications, including advanced networking settings, to prevent conflicts during an update. Customers can now manually trigger the pending update to apply the necessary changes without restrictions. <!-- CMGR-65913 and CMGR-65788 -->
+    Cloud Manager no longer throws a NullPointerException (NPE) and 500 HTTP response when processing EV/OV certificates that do not include a Common Name (CN) in the Subject field. Modern certificates often omit CN and instead use Subject Alternative Name (SAN). This fix ensures that the absence of CN no longer causes a failure during the configuration build process when SAN is present. <!-- CMGR-67548 -->
 
-* **(UI) Fix for IP allow list updates stuck in "Updating" state**  
+* **Domain verification issue with incorrect certificate matching**  
 
-    A rare issue where IP allow list updates in Cloud Manager remained stuck in the "Updating" state due to duplicate active domain configuration for an environment has been resolved. Previously, customers experienced indefinite processing delays when updating IP allow lists, preventing necessary network access adjustments. This fix ensures that IP allow list updates can now complete successfully without getting stuck. <!-- CMGR-65786 -->
+    Cloud Manager no longer incorrectly verifies domains using the wrong certificates. Previously, the validation logic used pattern-based matching instead of exact matching, which caused domains like `should-not-be-verified.example.com` to appear as verified due to overlap with valid certificates for `example.com`. This fix ensures that domain validation now checks for exact matches, preventing erroneous certificate associations. <!-- CMGR-67225 -->
 
+* **Enforced uniqueness for Advanced Networking port forward names**  
 
+    Cloud Manager now enforces unique naming for Advanced Networking port forwards. Previously, duplicate names were allowed, which could lead to conflicts. This fix ensures that each port forward entry has a distinct name, aligning with best practices for network configuration integrity. <!-- CMGR-67082 -->
 
 
 <!-- ## Known issues {#known-issues} -->
+
