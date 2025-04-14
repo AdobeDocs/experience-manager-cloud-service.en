@@ -30,6 +30,9 @@ Configuration of an external repository in Cloud Manager consists of three steps
 >
 >External repositories cannot be linked to Configuration pipelines.
 
+<!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
+* Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
+
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
@@ -203,15 +206,6 @@ The following behaviors apply:
 * Ensure that the Webhook URL includes a valid API key.
 * Check that webhook events are correctly configured in your Git vendor settings.
 * If PR validation or pipeline triggers are not working, verify that the Webhook Secret is up to date in both Cloud Manager and your Git vendor.
-
-
-## Limitation
-
-* External repositories cannot be linked to Configuration pipelines.
-
-
-<!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
-* Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
 
 
 ## Deploy to a Rapid Development Environment from GitHub Enterprise, GitLab, or Bitbucket {#deploy-to-rde}
