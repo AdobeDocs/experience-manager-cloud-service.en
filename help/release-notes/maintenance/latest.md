@@ -24,13 +24,13 @@ The 2025.4.0 feature activation will provide the full feature set for this maint
 * GRANITE-57863: Update Filevault to version 3.8.4.
 * GRANITE-56154: Configure exponential retries in oak-segment-azure.
 * GRANITE-55999: Improve performance of UserPropertiesService.
-* GRANITE-55781: Avoid redundant reconfiguration of user membership
+* GRANITE-55781: Avoid redundant reconfiguration of user membership.
 * GRANITE-53956: Upgrade Azure SDK V8 to V12 for oak-segment-azure.
 * GRANITE-50654: On principal permissions tab, remove "everyone" load by default on the front end.
 * SKYOPS-103444: Update to Sling ResourceResolver 1.12.6.
 * SKYOPS-101147: Update caconfig impl.
 * SKYOPS-97124: Add analyser warnings for outdated versions of the SPIFly bundle.
-* SKYOPS-95826: Update runtime Java versions to 11.0.26 and 21.0.6
+* SKYOPS-95826: Update runtime Java versions to 11.0.26 and 21.0.6.
 * SKYOPS-53671: Use customer installed artifacts from feature models on (RDE) AEM restarts.
 
 ### Fixed Issues {#fixed-issues-20454}
