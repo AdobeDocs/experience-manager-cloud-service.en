@@ -180,9 +180,9 @@ In the unlikely event that the CDN cannot route traffic to the AEM origin, a cus
 
 ### Early Adopter Programs {#foundation-early-adopter}
 
-#### Client-side redirects (Early Adopter Program) {#client-side-redirects-early-adopter}
+#### Server-side redirects (Early Adopter Program) {#server-side-redirects-early-adopter}
 
-Configure 301/302 client-side redirects in source control, and deploy to the CDN. [Learn more](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**.
+Configure 301/302 server-side redirects in source control, and deploy to the CDN. [Learn more](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**.
 
 #### Traffic Filter Rules Alerts (Early Adopter Program) {#traffic-filter-rules-alerts-early-adopter}
 
