@@ -15,7 +15,7 @@ Scenarios include:
 * A renamed HTML page.
 * SEO optimization.
 
-AEM as a Cloud Service offers [several approaches](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection) to implement client-side redirects, but the strategy described in this article, pipeline-free redirects, is a good choice when:
+AEM as a Cloud Service offers [several approaches](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection) to implement server-side redirects, but the strategy described in this article, pipeline-free redirects, is a good choice when:
 
 * The people maintaining the redirects are business users, who do not have the necessary access to commit file changes to source control or the possibility to execute a Cloud Manager web-tier configuration pipeline.
 * The number of redirects ranges from a few to tens of thousands.
