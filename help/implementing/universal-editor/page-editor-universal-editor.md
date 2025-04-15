@@ -50,7 +50,6 @@ Because the feature gap between the two editors is constantly shrinking, be sure
 ||Page Editor|Note|Universal Editor|Notes|
 |---|---|---|---|---|
 |Page Templates|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|The Universal Editor is agnostic of the template system used. However, the typical implementation pattern favors developer-defined templates, as modern frontend tooling makes it much easier for developers to define and maintain template logic directly in code. |
-|[Editable Templates](/help/sites-cloud/authoring/page-editor/templates.md)|[!BADGE Available]{type=Positive}|Authors can adjust some template options.|[!BADGE Unavailable]{type=Negative}|Templates are adjusted by developers, not authors. For this reason, there are no plans to introduce Editable Templates.|
 |WYSIWYG Editing|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
 |[Generate Variations](/help/generative-ai/generate-variations.md)|[!BADGE Unavailable]{type=Negative}||[!BADGE Available]{type=Positive}|[Available as an extension](/help/implementing/universal-editor/extending.md)|
 |Insert new block|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
