@@ -34,7 +34,7 @@ Because the feature gap between the two editors is constantly shrinking, be sure
 
 ||Page Editor|Notes|Universal Editor|Notes|
 |---|---|---|---|---|
-|[Classic AEM Delivery](/help/sites-cloud/authoring/author-publish.md)|[!BADGE Available]{type=Positive}|Recommended for use with the Core Components|[!BADGE Unavailable]{type=Negative}|Classic AEM pages typically rely on several Page Editor-specific features not available OotB with the Universal Editor.|
+|[Classic AEM Delivery](/help/sites-cloud/authoring/author-publish.md)|[!BADGE Available]{type=Positive}|Recommended for use with the Core Components|[!BADGE Unavailable]{type=Negative}|Classic AEM pages typically rely on several Page Editor-specific features that are difficult to replicate as-is with the Universal Editor.|
 |[Edge Delivery](/help/edge/overview.md)|[!BADGE Unavailable]{type=Negative}||[!BADGE Available]{type=Positive}||
 |[Headless Delivery](/help/headless/introduction.md)|[!BADGE Partially Available]{type=Caution}|Only with [the SPA Editor,](/help/implementing/developing/hybrid/introduction.md) which was [deprecated](/help/implementing/developing/hybrid/spa-editor-deprecation.md) in favor of the Universal Editor in headless use cases|[!BADGE Available]{type=Positive}|The Universal Editor allows developers to bring their own web app without imposing any specific framework or implementation style.|
 
