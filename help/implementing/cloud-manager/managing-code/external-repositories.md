@@ -233,7 +233,7 @@ Deploying to RDEs from an external Git repository requires the following:
 
 1. **Trigger deployment using a comment.**
 
-    To initiate the deployment, add a comment to the PR in the following format:
+    To initiate the deployment, add a comment to the PR in the following format: `deploy on rde-environment-<envName>`
 
     ![Trigger deployment using a comment](/help/implementing/cloud-manager/managing-code/assets/rde-trigger-deployment-using-comment.png)
 
