@@ -78,7 +78,7 @@ Because the feature gap between the two editors is constantly shrinking, be sure
 
 ## Adopting the Universal Editor {#adopt-ue}
 
-The Universal Editor offers many advantages, making migration to it a great solution for new projects.
+The Universal Editor offers many advantages, making it a great solution for new projects.
 
 * **Visual Editing:** Like for the Page Editor, authors can edit content directly within the preview and instantly see how their changes affect the visitor experience.
 * **Future-Proofing:** AEM’s roadmap prioritizes the Universal Editor as visual editor. Adopting it ensures access to the latest innovations and enhancements.
