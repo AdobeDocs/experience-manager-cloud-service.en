@@ -21,7 +21,7 @@ Though quickly narrowing, there remains a feature gap between the Universal Edit
 
 As a rule of thumb:
 
-* **New projects** should default to leveraging the Universal Editor unless there is a compelling reason to use the Page Editor.
+* **New projects** should default to leveraging the Universal Editor.
 * **Existing projects** should continue to use the Page Editor as long as it meets your project's needs.
 
 **Which editor you choose should be driven entirely by your individual project's needs.**
