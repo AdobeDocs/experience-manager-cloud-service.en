@@ -76,7 +76,7 @@ Because the feature gap between the two editors is constantly shrinking, be sure
 |View page status|[!BADGE Available]{type=Positive}||[!BADGE Unavailable]{type=Negative}|Available in the Sites Console|
 |Extensibility|[!BADGE Available]{type=Positive}|As AEM overlays|[!BADGE Available]{type=Positive}|As clearly-defined extension points using the App Builder and very little AEM-specific knowledge|
 
-## Migrating to the Universal Editor {#migrate-ue}
+## Adopting the Universal Editor {#adopt-ue}
 
 The Universal Editor offers many advantages, making migration to it a great solution for new projects.
 
