@@ -50,7 +50,7 @@ Because the feature gap between the two editors is constantly shrinking, be sure
 ||Page Editor|Note|Universal Editor|Notes|
 |---|---|---|---|---|
 |Page Templates|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|The Universal Editor is agnostic of the template system used. However, the typical implementation pattern favors developer-defined templates, as modern frontend tooling makes it much easier for developers to define and maintain template logic directly in code. |
-|WYSIWYG Editing|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
+|WYSIWYG Editing|[!BADGE Available]{type=Positive} Limited to Pages||[!BADGE Available]{type=Positive}|Supporting Pages and Content Fragments|
 |[Generate Variations](/help/generative-ai/generate-variations.md)|[!BADGE Unavailable]{type=Negative}||[!BADGE Available]{type=Positive}|[Available as an extension](/help/implementing/universal-editor/extending.md)|
 |Insert new block|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
 |Reorder Block|[!BADGE Available]{type=Positive}|Possible with in-context drag-and-drop, but not in the "tree view" side panel|[!BADGE Available]{type=Positive}|Possible via drag-and-drop in the "tree view" side panel, but not yet in-context (planned)|
