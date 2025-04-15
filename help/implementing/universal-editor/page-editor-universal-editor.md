@@ -62,7 +62,7 @@ Because the feature gap between the two editors is constantly shrinking, be sure
 |[Start workflow](/help/sites-cloud/authoring/workflows/overview.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Available as an extension|
 |Commenting|[!BADGE Available]{type=Positive}|Using [annotations](/help/sites-cloud/authoring/page-editor/annotations.md)|[!BADGE Unavailable]{type=Negative}|Planned|
 |Workfront integration|[!BADGE Unavailable]{type=Negative}||[!BADGE Available]{type=Positive}|Available as an extension|
-|[MSM and Launches](/help/sites-cloud/administering/msm-and-translation.md)|[!BADGE Available]{type=Positive}|Allows managing inheritance per component|[!BADGE Available]{type=Positive}|Managing inheritance by component is available as an extension for pages only.|
+|[MSM and Launches](/help/sites-cloud/administering/msm-and-translation.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Available as an extension for pages|
 |Experimentation and personalization|[!BADGE Available]{type=Positive}|Using [Target mode](/help/sites-cloud/authoring/personalization/targeted-content.md)|[!BADGE Available]{type=Positive}|Available as an extension|
 |Content tree|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Also allows reordering within the tree|
 |Device simulation|[!BADGE Available]{type=Positive}|[Configurable devices and breakpoints,](/help/sites-cloud/administering/responsive-layout.md) but the user cannot manually enter any different screen dimensions to simulate|[!BADGE Available]{type=Positive}|[Any screen dimensions to simulate can be manually entered,](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator) but default breakpoints can not be configured.|
