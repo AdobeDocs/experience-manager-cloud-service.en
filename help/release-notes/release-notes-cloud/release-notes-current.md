@@ -37,6 +37,14 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 >[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### New features in Experience Manager Sites {#enhancements-sites}
+
+**New Content Fragment Model Admin UII**
+
+Further completing the list new, client-side user interfaces when working with AEM Content Fragments, a new admin UI is now avaiable for content fragment models. The new UI provides a clean and modern list view that allows searching models with filters, and that shows model tags and which content fragments exist that are based on a certain model. Documentation can be found [here](/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing-content-fragment-models). 
+
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
