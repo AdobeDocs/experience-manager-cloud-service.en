@@ -10,13 +10,13 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 20454 {#20454}
+## Release 20476 {#20476}
 
-Summarized below are the continuous improvements for maintenance release 20454, which was publicly released on April 15, 2025. The previous maintenance release was release 20133.
+Summarized below are the continuous improvements for maintenance release 20476, which was publicly released on April 15, 2025. The previous maintenance release was release 20133.
 
 The 2025.4.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-20454}
+### Enhancements {#enhancements-20476}
 
 * CNTBF-411: Add possibility to delete sling job in case it is dropped by JCR.
 * CQ-4359813: AEM Translation Kit: March 20.
@@ -33,7 +33,7 @@ The 2025.4.0 feature activation will provide the full feature set for this maint
 * SKYOPS-95826: Update runtime Java versions to 11.0.26 and 21.0.6.
 * SKYOPS-53671: Use customer installed artifacts from feature models on (RDE) AEM restarts.
 
-### Fixed Issues {#fixed-issues-20454}
+### Fixed Issues {#fixed-issues-20476}
 
 * ASSETS-49027: [Regression] The AemRequestEventFilter breaks POST requests to the OSGI web console.
 * ASSETS-44956: Can't Select Any Dynamic Media Rendition - script tags should be loaded in top level component.
@@ -47,19 +47,19 @@ The 2025.4.0 feature activation will provide the full feature set for this maint
 * SKYOPS-95722: Remove `MaxPermSize` size from quickstart flags in AEM-SDK.
 * SKYOPS-103569: Certain images cannot be loaded with Java 21: `javax.imageio.IIOException: Cannot create Sun JPEGImageReader backend`.
 
-### Known Issues {#known-issues-20454}
+### Known Issues {#known-issues-20476}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-20454}
+### Deprecated Features and APIs {#deprecated-20476}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-20454}
+### Security Fixes {#security-20476}
 
 AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 5 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-20454}
+### Embedded Technologies {#embedded-tech-20476}
 
 |Technology|Version|Link|
 |---|---|---|
