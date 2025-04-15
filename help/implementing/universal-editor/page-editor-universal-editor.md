@@ -94,7 +94,7 @@ There is no direct migration path from the Page Editor to the Universal Editor. 
   * These use cases can now be handled more efficiently with lean frontend CSS and Javascript in Edge Delivery Services or headless projects.
 * Since the  Universal Editor is an editor-as-a-service, it can not allow implementors to inject CSS or JS into the component dialogs.
   * This prevents automatic conversion of component dialogs from the Page Editor.
-  * This affects many areas of the dialogs, like custom widgets, field validation, show/hide rules, and template-based customizations.
+  * This affects many areas of the dialogs, like custom widgets, field validation, show/hide rules, and template-based customizations. While such capabilities are still possible, the Universal Editor solves them through configuration, instead of custom JavaScript deployed in dialogs.
 
 While the Universal Editor can technically enable editing for classic AEM pages (e.g. built with the Core Components), these sites typically rely on several Page Editor-specific features, such as the Style System, Responsive Grid, Editable Templates, and custom Javascript within dialogs.
 
