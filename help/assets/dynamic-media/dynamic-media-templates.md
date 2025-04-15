@@ -81,6 +81,7 @@ To create a Dynamic Media template, you must have:
 
 To create a DM template, follow these steps:
 
+1. Navigate to your [!DNL AEM Assets] homepage and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them for creating the template. 
 1. [Create a blank canvas](#create-a-canvas)
 1. [Add images to the canvas](#add-images-to-the-canvas)
 1. [Add text layers to the canvas](#add-text-to-the-canvas)
@@ -300,7 +301,7 @@ Edit the template by following these steps:
 3. Select the template.
 4. Click **[!UICONTROL Edit Template]**. The template canvas displays the template and the list of all its layers in the Layers panel. Start editing your template as per your requirements.
 
-## Add Call to Action link to your template layer{#add-CTA-in-dynamic-media-templates}
+## Add Call to Action (CTA) link to your template layer{#add-CTA-in-dynamic-media-templates}
 
 Turn any image or text layer of your Dynamic Media template into a hyperlink by adding a CTA link to it that directs users to a target page. Execute these steps to add a CTA link to a layer:
 
@@ -335,7 +336,7 @@ Click the CTA element on the template to navigate to the destination page.
 
 Watch this step by step video to learn how to add a CTA link to a template layer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3457577)
+>[!VIDEO](https://video.tv.adobe.com/v/3457616)
 
 ## Important points to note {#important-points-to-note}
 
