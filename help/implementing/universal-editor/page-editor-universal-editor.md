@@ -67,7 +67,7 @@ Because the feature gap between the two editors is constantly shrinking, be sure
 |Content tree|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Also allows reordering within the tree|
 |Device simulation|[!BADGE Available]{type=Positive}|[Configurable devices and breakpoints,](/help/sites-cloud/administering/responsive-layout.md) but the user cannot manually enter any different screen dimensions to simulate|[!BADGE Available]{type=Positive}|[Any screen dimensions to simulate can be manually entered,](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator) but default breakpoints can not be configured|
 |[Page locking](/help/sites-cloud/authoring/sites-console/managing-pages.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Respects lock status set in Sites Console with extension available to lock/unlock pages from the editor|
-|[Page properties](/help/sites-cloud/authoring/sites-console/page-properties.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Available for pages as an extension to allow opening the properties in a new browser tab|
+|[Page properties](/help/sites-cloud/authoring/sites-console/page-properties.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Available from the Site Admin, with extension to also access the properties of pages from the editor|
 |Multi-field properties|[!BADGE Available]{type=Positive}||[!BADGE Unavailable]{type=Negative}|Planned|
 |Remote DAM|[!BADGE Available]{type=Positive}||[!BADGE Partially Available]{type=Caution}|Full availability planned|
 |[Page versioning](/help/sites-cloud/authoring/sites-console/page-versions.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
