@@ -16,10 +16,10 @@ These are the release notes for the 4 April 2025 release of the Universal Editor
 
 ## What's New {#what-is-new}
 
-## New Extensions for the Universal Editor {#extensions}
-
-A number of new extensions have been released on [Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/) for the Universal Editor, enhancing the authoring experience.
+* **Dynamic Media with OpenAPI support** - Universal Editor's asset picker now supports [Dynamic Media with OpenAPI and remote assets](/help/assets/integrate-remote-approved-assets-with-sites.md)
 
 ## Other Improvements {#other-improvements}
 
-## Deprecation {#deprecation}
+* Remove layout context was fixed.
+* Improvements were made to e2e testing.
+* Dependency updates and code cleanup was performed.
