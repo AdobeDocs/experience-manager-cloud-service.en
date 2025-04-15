@@ -60,7 +60,7 @@ Because the feature gap between the two editors is constantly shrinking, be sure
 |Undo-Redo|[!BADGE Available]{type=Positive}||[!BADGE Unavailable]{type=Negative}|Planned|
 |Publish (also to preview)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
 |[Start workflow](/help/sites-cloud/authoring/workflows/overview.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Available as an extension|
-|Commenting|[!BADGE Available]{type=Positive}|Using [annotations](/help/sites-cloud/authoring/page-editor/annotations.md)|[!BADGE Unavailable]{type=Negative}|Planned as an extension|
+|Commenting|[!BADGE Available]{type=Positive}|Using [annotations](/help/sites-cloud/authoring/page-editor/annotations.md)|[!BADGE Unavailable]{type=Negative}|Planned|
 |Workfront integration|[!BADGE Unavailable]{type=Negative}||[!BADGE Available]{type=Positive}|Available as an extension|
 |[MSM and Launches](/help/sites-cloud/administering/msm-and-translation.md)|[!BADGE Available]{type=Positive}|Allows managing inheritance per component|[!BADGE Available]{type=Positive}|Managing inheritance by component is available as an extension for pages only.|
 |Experimentation and personalization|[!BADGE Available]{type=Positive}|Using [Target mode](/help/sites-cloud/authoring/personalization/targeted-content.md)|[!BADGE Available]{type=Positive}|Available as an extension|
