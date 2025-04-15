@@ -12,7 +12,7 @@ AEM as a Cloud Service offers a collection of features configurable at the [Adob
 
 * [Request transformations](#request-transformations) - modify aspects of incoming requests, including headers, paths and parameters.
 * [Response transformations](#response-transformations) - modify headers that are on the way back to the client (for example, a web browser).
-* [Client-side redirects](#client-side-redirectors) - trigger a browser redirect.
+* [Server-side redirects](#server-side-redirectors) - trigger a browser redirect.
 * [Origin selectors](#origin-selectors) - proxy to a different origin backend.
 
 Also configurable at the CDN are Traffic Filter Rules (including WAF), which control what traffic is allowed or denied by the CDN. This feature is already released and you can learn more about it in the [Traffic Filter Rules including WAF rules](/help/security/traffic-filter-rules-including-waf.md) page.
@@ -394,7 +394,7 @@ data:
 > Since the Adobe Managed CDN is used, make sure to configure push invalidation in **managed** mode, by following the Edge Delivery Services [Setup push invalidation documentation](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
 
 
-## Client-side Redirects {#client-side-redirectors}
+## Server-side Redirects {#server-side-redirectors}
 
 You can use client side redirect rules for 301, 302 and similar client side redirects. If a rule matches, the CDN responds with a status line that includes the status code and message (for example, HTTP/1.1 301 Moved Permanently), as well as the location header set.
 
