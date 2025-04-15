@@ -16,7 +16,7 @@ These are the release notes for the 4 April 2025 release of the Universal Editor
 
 ## What's New {#what-is-new}
 
-* **Dynamic Media with OpenAPI support** - [The asset picker](/help/assets/overview-asset-selector.md#repository-switcher) in the Universal Editor now supports [Dynamic Media with OpenAPI and remote assets](/help/assets/integrate-remote-approved-assets-with-sites.md)
+* **Dynamic Media with OpenAPI support** - [The asset selector](/help/assets/overview-asset-selector.md#repository-switcher) in the Universal Editor now supports [Dynamic Media with OpenAPI and remote assets](/help/assets/integrate-remote-approved-assets-with-sites.md)
 
 ## Other Improvements {#other-improvements}
 
