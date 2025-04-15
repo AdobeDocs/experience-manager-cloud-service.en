@@ -17,7 +17,7 @@ Recognizing the [Page Editor](/help/sites-cloud/authoring/page-editor/introducti
 
 ## Recommendation {#recommendation}
 
-Though quickly narrowing, there remains a feature gap between the Universal Editor and Page Editor ([a feature comparison can be found in the next section](#feature-comparison)). For this reason, no general recommendation can be made for which editor to use for your project. 
+Though quickly narrowing, there remains a feature gap between the Universal Editor and Page Editor ([a feature comparison can be found in the next section](#feature-comparison)). 
 
 As a rule of thumb:
 
