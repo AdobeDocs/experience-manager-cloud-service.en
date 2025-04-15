@@ -69,7 +69,7 @@ Because the feature gap between the two editors is constantly shrinking, be sure
 |[Page locking](/help/sites-cloud/authoring/sites-console/managing-pages.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Respects lock status set in Sites Console with extension available to lock/unlock pages from the editor|
 |[Page properties](/help/sites-cloud/authoring/sites-console/page-properties.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Available from the Site Admin, with extension to also access the properties of pages from the editor|
 |Multi-field properties|[!BADGE Available]{type=Positive}||[!BADGE Unavailable]{type=Negative}|Planned|
-|Remote DAM|[!BADGE Available]{type=Positive}||[!BADGE Partially Available]{type=Caution}|Full availability planned|
+|Remote DAM|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
 |[Page versioning](/help/sites-cloud/authoring/sites-console/page-versions.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
 |[TimeWarp](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) and [Diff View](/help/sites-cloud/authoring/sites-console/page-diff.md)|[!BADGE Available]{type=Positive}||[!BADGE Unavailable]{type=Negative}|Planned|
 |View in admin|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Available as an extension for pages|
