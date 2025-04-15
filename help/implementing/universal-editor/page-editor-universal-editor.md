@@ -11,7 +11,7 @@ The Page Editor remains supported by Adobe, but the Universal Editor bring exiti
 
 ## Background {#background}
 
-Adobe introduced the [Universal Editor](/help/implementing/universal-editor/introduction.md) in 2024 as a streamlined editor embracing a modern Javascript-based development approach. The Universal Editor is Adobe's vision for a seamless and extensible graphical content authoring experience.
+Adobe introduced the [Universal Editor](/help/implementing/universal-editor/introduction.md) in 2024 as a streamlined editor embracing a modern Javascript-based development approach. The Universal Editor is Adobe's vision for a seamless and extensible visual content authoring experience.
 
 Recognizing the [Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md)'s rich feature set and innumerable projects investing in it over the long history of AEM, Adobe continues to fully support the Page Editor, though innovation will be focused on the Universal Editor.
 
