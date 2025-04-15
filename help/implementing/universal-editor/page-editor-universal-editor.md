@@ -86,6 +86,8 @@ The Universal Editor offers many advantages, making it a great solution for new 
 * **Bring Your Own App:** The Universal Editor supports any web framework or architecture, allowing adoption without requiring complex refactoring.
 * **Extensibility:** The Universal Editor benefits from a robust [extension framework,](/help/implementing/universal-editor/extending.md) including integrations with GenAI, Workfront, and more.
 
+### Migrating to the Universal Editor {#migrate-ue}
+
 There is no direct migration path from the Page Editor to the Universal Editor. This is due to fundamental differences in the two technologies.
 
 * The Universal Editor does not reintroduce features like the Template Editor, Style System, or Responsive Grid. 
