@@ -17,7 +17,11 @@ By the end of the article, you learn how to create and use fragments in forms us
 ## Features of Edge Delivery Services Form Fragments
 
 * **Maintaining consistency with form fragments**
-    You can integrate fragments into different forms, helping you maintain consistent layouts and standardized content. With a "change once, reflect everywhere" approach, any update made to a fragment automatically applies to all forms.
+    You can integrate fragments into different forms, helping you maintain consistent layouts and standardized content. 
+    
+    >[!NOTE]
+    >
+    > With a "change once, reflect everywhere" approach, any update made to a fragment automatically applies to all forms at Preview mode. However, in the Publish mode, you must publish the fragment or republish the form for the changes to reflect.
 
 * **Adding form fragments multiple times within form**
     You can add a form fragment multiple times within a form and configure its data binding properties to data sources or schemas. 
@@ -32,14 +36,14 @@ By the end of the article, you learn how to create and use fragments in forms us
 ## Considerations while using Edge Delivery Services Form Fragments
 
 * You need to add the same GitHub URL in both the fragment and the form where you intend to use the fragment.
-* You cannot edit a form fragment, which is inserted by reference, from within an form. To edit, modify the stand-alone form fragment.
+* You cannot edit a form fragment within a form. To make changes, modify the standalone form fragment.
 
 ## Prerequisites for creating Edge Delivery Services Form Fragments
 
 * [Set up your GitHub repository](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template) to establish a connection between your AEM environment and the GitHub repository.
 * If you are already using Edge Delivery Services, add the latest version of the [Adaptive Forms block](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) to your GitHub repository. 
-* The AEM Forms Author instance includes a template based on Edge Delivery Services. Ensure the [latest version of Core Components](https://github.com/adobe/aem-core-forms-components) is installed in your environment.
-*  Keep the URL of your AEM Forms as a Cloud Service author instance and your GitHub Repository handy. 
+* The AEM Forms Author instance includes a template based on Edge Delivery Services. 
+* Keep the URL of your AEM Forms as a Cloud Service author instance and your GitHub Repository handy. 
 
 ## Working with Edge Delivery Services Form Fragments
 
@@ -102,7 +106,7 @@ To create a form fragment in Universal Editor, perform the following steps:
 
 ### Adding form fragments to a form
 
-Let’s create a simple `Employee Details` form that includes both employee and supervisor information. You can use the `Contact Details` fragment in both the employee and supervisor panels. To use the form fragment in your form, perform the following steps:
+Let's create a simple `Employee Details` form that includes both employee and supervisor information. You can use the `Contact Details` fragment in both the employee and supervisor panels. To use the form fragment in your form, perform the following steps:
 
 1. Open the form in edit mode.
 1. Add the Form Fragment component to the form.
@@ -126,7 +130,7 @@ Let’s create a simple `Employee Details` form that includes both employee and 
 
 1. Click **[!UICONTROL Select]**.
 
-    The form fragment is added by reference to the form and remains in synchronized with the standalone form fragment. This implies that any modifications made to the fragment are mirrored across all instances where the fragment is incorporated within forms.
+    The form fragment is added by reference to the form and remains in synchronized with the standalone form fragment.
 
     ![Fragment in form](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
