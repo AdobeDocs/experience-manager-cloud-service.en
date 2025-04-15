@@ -277,7 +277,7 @@ To copy the URL of the published template displayed in preview:
 1. Use this URL for rapid merchandising of your products or services. You can share this URL with your customers or integrate it into your website or any downstream third-party application to display the banner and make real-time updates to it to reflect the ongoing offers.
 
 Learn to create a Dynamic Media template step by step in this video.
->[!VIDEO](https://video.tv.adobe.com/v/3457616)
+>[!VIDEO](https://video.tv.adobe.com/v/3443281)
 
 ## Make real-time updates to the template from the URL{#update-the-template-from-the-url}
 
@@ -301,7 +301,7 @@ Edit the template by following these steps:
 3. Select the template.
 4. Click **[!UICONTROL Edit Template]**. The template canvas displays the template and the list of all its layers in the Layers panel. Start editing your template as per your requirements.
 
-## Add Call to Action link to your template layer{#add-CTA-in-dynamic-media-templates}
+## Add Call to Action (CTA) link to your template layer{#add-CTA-in-dynamic-media-templates}
 
 Turn any image or text layer of your Dynamic Media template into a hyperlink by adding a CTA link to it that directs users to a target page. Execute these steps to add a CTA link to a layer:
 
@@ -336,7 +336,7 @@ Click the CTA element on the template to navigate to the destination page.
 
 Watch this step by step video to learn how to add a CTA link to a template layer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3457577)
+>[!VIDEO](https://video.tv.adobe.com/v/3457616)
 
 ## Important points to note {#important-points-to-note}
 
