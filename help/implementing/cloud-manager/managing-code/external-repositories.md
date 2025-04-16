@@ -210,7 +210,7 @@ The following behaviors apply:
 
 ## Deploy to a Rapid Development Environment from GitHub Enterprise, GitLab, or Bitbucket {#deploy-to-rde}
 
-Cloud Manager supports deploying code to Rapid Development Environments (RDEs) directly from external Git providers (GitHub Enterprise, GitLab, Bitbucket) when using the Bring Your Own Git (BYOG) configuration. 
+Cloud Manager supports deploying code to Rapid Development Environments (RDEs) directly from external Git providers when using the Bring Your Own Git (BYOG) configuration. 
 
 Deploying to RDEs from an external Git repository requires the following:
 
@@ -228,8 +228,10 @@ Deploying to RDEs from an external Git repository requires the following:
     ![Code quality validation message on GitHub Enterprise](/help/implementing/cloud-manager/managing-code/assets/rde-github-enterprise-code-quality-validation-message.png)
 
     How it looks on GitLab:
-    ![Code quality validation message on GitLab](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-code-quality-validation-message.png)     
+    ![Code quality validation message on GitLab](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-code-quality-validation-message.png)
 
+    How it looks on Bitbucket:
+    ![Code quality validation message on Bitbucket](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-code-quality-validation-message.png)     
 
 1. **Trigger deployment using a comment.**
 
@@ -243,6 +245,9 @@ Deploying to RDEs from an external Git repository requires the following:
 
     ![Environment not ready to deploy](/help/implementing/cloud-manager/managing-code/assets/rde-environment-not-ready.png)
 
+
+
+
 1. **Environment check and artifact deployment.**
 
     If the RDE is ready, Cloud Manager posts a new check to the PR.
@@ -251,9 +256,13 @@ Deploying to RDEs from an external Git repository requires the following:
 
     ![Status of the environment on GitHub](/help/implementing/cloud-manager/managing-code/assets/rde-github-environment-status-is-ready.png) 
        
-    How it looks on GitLab,
+    How it looks on GitLab:
 
     ![Status of the environment on GitLab](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-deployment-1.png)
+
+    How it looks on Bitbucket:
+
+    ![Status of the environment on Bitbucket](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-deployment-1.png)
 
 
 1. **Successful deployment message.**
@@ -264,10 +273,14 @@ Deploying to RDEs from an external Git repository requires the following:
     
     ![Deployment status of the environment on GitHub](/help/implementing/cloud-manager/managing-code/assets/rde-github-environment-deployed-artifacts.png)
 
-
     How it looks on GitLab:
 
     ![Deployment status of environment on GitLab](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-deployment-2.png)
+
+    How it looks on Bitbucket:
+
+    ![Deployment status of environment on Bitbucket](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-deployment-2.png)
+
 
 ### Usage notes
 
