@@ -1116,7 +1116,7 @@ user-guide-title: AEM as a Cloud Service
     + [Upgrading your Content Fragments for UUID References](/help/headless/graphql-api/uuid-reference-upgrade.md)
     + [Sample GraphQL queries](/help/headless/graphql-api/sample-queries.md)
     + [Troubleshoot GraphQL queries](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-  + [AEM REST OpenAPI for Content Fragment Delivery](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
+  + [AEM Content Fragment Delivery with OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)
   + [Content Fragments and Models OpenAPIs](/help/headless/content-fragment-openapis.md)
   + [Content Fragments support in Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
   + Security {#security}
@@ -1302,6 +1302,7 @@ user-guide-title: AEM as a Cloud Service
     + Universal Editor {#universal-editor}
       + [Introduction](/help/implementing/universal-editor/introduction.md)
       + [Use Cases](/help/implementing/universal-editor/use-cases.md)
+      + [The Universal Editor and the Sites Editor](/help/implementing/universal-editor/page-editor-universal-editor.md)
       + [Attributes and Item Types](/help/implementing/universal-editor/attributes-types.md)
       + [Component Definition](/help/implementing/universal-editor/component-definition.md)
       + [Model Definitions, Fields, and Component Types](/help/implementing/universal-editor/field-types.md)
