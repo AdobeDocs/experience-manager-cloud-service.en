@@ -1,11 +1,11 @@
 ---
-title: Add External Repositories in Cloud Manager - Limited Beta
+title: Add External Repositories in Cloud Manager - Early Adopter
 description: Learn how to add an external repository into Cloud Manager. Cloud Manager supports integration with GitHub Enterprise, GitLab, and Bitbucket repositories.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
 ---
-# Add external repositories in Cloud Manager - Limited beta {#external-repositories}
+# Add external repositories in Cloud Manager - Early Adopter {#external-repositories}
 
 Learn how to add an external repository into Cloud Manager. Cloud Manager supports integration with GitHub Enterprise, GitLab, and Bitbucket repositories.
 
@@ -214,12 +214,11 @@ The following behaviors apply:
 >
 >This feature is available through the Early Adopter program. If you are interested in testing this new feature and sharing your feedback, send an email to [CloudManager_BYOG@adobe.com](mailto:cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure.
 
-Cloud Manager supports deploying code to Rapid Development Environments (RDEs) directly from external Git providers when using the Bring Your Own Git (BYOG) configuration. 
+Cloud Manager supports deploying code to Rapid Development Environments (RDEs) directly from external Git providers when using the [Bring Your Own Git (BYOG) configuration](/help/implementing/cloud-manager/managing-code/external-repositories.md). 
 
 Deploying to RDEs from an external Git repository requires the following:
 
 * The use of an external Git repository integrated with Cloud Manager (BYOG setup).
-    See [Add External Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md)
 * Your project must have one or more RDE environments provisioned.
 * If you are using `github.com`, you must review and accept the updated GitHub app installation to grant the required new permissions.
 
