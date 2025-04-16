@@ -81,8 +81,8 @@ To create a [!DNL Dynamic Media] template, you must have:
 
 Execute the following steps to create a [!DNL Dynamic Media] template:
 
-1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in **[!UICONTROL Assets]**. The folder tree in **[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Use this [!UICONTROL Dynamic Media Assets] folder to save your [!DNL Dynamic Media] template later.
-1. Select **[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them for creating the template. 
+1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. The folder tree in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Save your [!DNL Dynamic Media] template in this [!UICONTROL Dynamic Media Assets] folder.
+1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them for creating the template. 
 1. [Create a blank canvas](#create-a-canvas)
 1. [Add images to the canvas](#add-images-to-the-canvas)
 1. [Add text layers to the canvas](#add-text-to-the-canvas)
@@ -91,15 +91,17 @@ Execute the following steps to create a [!DNL Dynamic Media] template:
 
 ### Create a blank canvas{#create-a-canvas}
 
-Execute these steps to create a blank canvas:
+Execute these steps to create a blank canvas: 
 
-1. Navigate to [!DNL Assets View] and select **[!UICONTROL Dynamic Media Assets]** available in the left panel.
+1. Navigate to [!DNL Assets View], select **[!UICONTROL Dynamic Media Assets]** available in the left panel and navigate to your folder to save your template in that folder.
 
    ![Dynamic Media templates](/help/assets/assets/DM-Assets1.png)
 
-1. Select **[!UICONTROL Create Template]** on this page, or navigate to your **[!UICONTROL Dynamic Media Assets]** folder and select **[!UICONTROL Create Template]**. The template is saved in the location where you create it—either in the root folder such as **[!UICONTROL Dynamic Media Assets]** or in a folder within the root. After you select **[!UICONTROL Create Template]** the **[!UICONTROL New Template]** dialog box displays.
+1. Select **[!UICONTROL Create Template]**. The **[!UICONTROL New Template]** dialog box displays.
 ![how to create dynamic templates that can be customised in real time](/help/assets/assets/new-template.png)
-
+   >[!NOTE]
+   >
+   >  The template is saved in the location where you create it. On [!DNL Assets View] home page, select **[!UICONTROL Dynamic Media Assets]** and click **[!UICONTROL Create Template]** to save the template in **[!UICONTROL Dynamic Media Assets]** root folder.
 1. Specify a template name, define the canvas width and height, and click **[!UICONTROL Create]**. A blank canvas displays with menu options on both sides to use for creating the template. Hover over the menu options to see their tooltip. 
 ![real-time customizable template](/help/assets/assets/blank-canvas-page.png)
 
@@ -261,7 +263,7 @@ Execute these steps to preview and publish the template and copy the delivery UR
    ![creating content on the fly](/help/assets/assets/dm-templates-publish-status.png)
    You can also toggle **[!UICONTROL Include all parameters]** to edit all of the displayed parameter values and see the updates in the template preview.
    <br>
-1. To publish the template on the preview page, click **[!UICONTROL Publish]**  and confirm to publish. Publish Complete message displays and the publish status updates to Published.
+1. To publish the template on the preview page, click **[!UICONTROL Publish]**  and confirm to publish. **[!UICONTROL Publish Complete]** message displays and the publish status updates to **[!UICONTROL Published]**.
 
  >[!NOTE]
  >
