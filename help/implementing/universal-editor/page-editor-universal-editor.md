@@ -62,14 +62,14 @@ Because the feature gap between the two editors is constantly shrinking, be sure
 |[Start workflow](/help/sites-cloud/authoring/workflows/overview.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Available as an extension|
 |Commenting|[!BADGE Available]{type=Positive}|Using [annotations](/help/sites-cloud/authoring/page-editor/annotations.md)|[!BADGE Unavailable]{type=Negative}|Planned|
 |Workfront integration|[!BADGE Unavailable]{type=Negative}||[!BADGE Available]{type=Positive}|Available as an extension|
-|[MSM and Launches](/help/sites-cloud/administering/msm-and-translation.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Available as an extension for pages|
+|[MSM and Launches](/help/sites-cloud/administering/msm-and-translation.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Available for pages as an extension|
 |Experimentation and personalization|[!BADGE Available]{type=Positive}|Using [Target mode](/help/sites-cloud/authoring/personalization/targeted-content.md)|[!BADGE Available]{type=Positive}|Available as an extension for Edge Delivery Services|
 |Content tree|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Also allows reordering within the tree|
-|Device simulation|[!BADGE Available]{type=Positive}|[Configurable devices and breakpoints,](/help/sites-cloud/administering/responsive-layout.md) but the user cannot manually enter any different screen dimensions to simulate|[!BADGE Available]{type=Positive}|[Any screen dimensions to simulate can be manually entered,](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator) but default breakpoints can not be configured|
+|Device simulation|[!BADGE Available]{type=Positive}|[Configured devices can be simulated,](/help/sites-cloud/administering/responsive-layout.md) but the user cannot manually enter any different screen dimensions to simulate.|[!BADGE Available]{type=Positive}|[Any screen dimensions to simulate can be manually entered,](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator) but default breakpoints can not be configured.|
 |[Page locking](/help/sites-cloud/authoring/sites-console/managing-pages.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Respects lock status set in Sites Console with extension available to lock/unlock pages from the editor|
 |[Page properties](/help/sites-cloud/authoring/sites-console/page-properties.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Available from the Site Admin, with extension to also access the properties of pages from the editor|
 |Multi-field properties|[!BADGE Available]{type=Positive}||[!BADGE Unavailable]{type=Negative}|Planned|
-|Remote DAM|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
+|[Remote DAM](/help/assets/dynamic-media-open-apis-overview.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
 |[Page versioning](/help/sites-cloud/authoring/sites-console/page-versions.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
 |[TimeWarp](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) and [Diff View](/help/sites-cloud/authoring/sites-console/page-diff.md)|[!BADGE Available]{type=Positive}||[!BADGE Unavailable]{type=Negative}|Planned|
 |View in admin|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Available as an extension for pages|
@@ -94,7 +94,8 @@ There is no direct migration path from the Page Editor to the Universal Editor. 
   * These use cases can now be handled more efficiently with lean frontend CSS and Javascript in Edge Delivery Services or headless projects.
 * Since the  Universal Editor is an editor-as-a-service, it can not allow implementors to inject CSS or JS into the component dialogs.
   * This prevents automatic conversion of component dialogs from the Page Editor.
-  * This affects many areas of the dialogs, like custom widgets, field validation, show/hide rules, and template-based customizations. While such capabilities are still possible, the Universal Editor solves them through configuration, instead of custom JavaScript deployed in dialogs.
+  * This affects many areas of the dialogs, like custom widgets, field validation, show/hide rules, and template-based customizations.
+    * While such capabilities are still possible, the Universal Editor solves them through configuration, instead of custom JavaScript deployed in dialogs.
 
 While the Universal Editor can technically enable editing for classic AEM pages (e.g. built with the Core Components), these sites typically rely on several Page Editor-specific features, such as the Style System, Responsive Grid, Editable Templates, and custom Javascript within dialogs.
 
