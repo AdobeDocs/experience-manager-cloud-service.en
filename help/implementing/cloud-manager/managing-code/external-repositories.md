@@ -208,13 +208,18 @@ The following behaviors apply:
 * If PR validation or pipeline triggers are not working, verify that the Webhook Secret is up to date in both Cloud Manager and your Git vendor.
 
 
-## Deploy to a Rapid Development Environment from GitHub Enterprise, GitLab, or Bitbucket {#deploy-to-rde}
+## Deploy to a Rapid Development Environment from external Git providers {#deploy-to-rde}
+
+>[!NOTE]
+>
+>This feature is available through the Early Adopter program. If you are interested in testing this new feature and sharing your feedback, send an email to [CloudManager_BYOG@adobe.com](mailto:cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure.
 
 Cloud Manager supports deploying code to Rapid Development Environments (RDEs) directly from external Git providers when using the Bring Your Own Git (BYOG) configuration. 
 
 Deploying to RDEs from an external Git repository requires the following:
 
 * The use of an external Git repository integrated with Cloud Manager (BYOG setup).
+    See [Add External Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md)
 * Your project must have one or more RDE environments provisioned.
 * If you are using `github.com`, you must review and accept the updated GitHub app installation to grant the required new permissions.
 
