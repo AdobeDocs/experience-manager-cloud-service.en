@@ -1302,6 +1302,7 @@ user-guide-title: AEM as a Cloud Service
     + Universal Editor {#universal-editor}
       + [Introduction](/help/implementing/universal-editor/introduction.md)
       + [Use Cases](/help/implementing/universal-editor/use-cases.md)
+      + [The Universal Editor and the Sites Editor](/help/implementing/universal-editor/page-editor-universal-editor.md)
       + [Attributes and Item Types](/help/implementing/universal-editor/attributes-types.md)
       + [Component Definition](/help/implementing/universal-editor/component-definition.md)
       + [Model Definitions, Fields, and Component Types](/help/implementing/universal-editor/field-types.md)
