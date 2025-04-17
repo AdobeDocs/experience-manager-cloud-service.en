@@ -1,17 +1,17 @@
 ---
-title: Add External Repositories in Cloud Manager - Limited Beta
+title: Add External Repositories in Cloud Manager - Early Adopter
 description: Learn how to add an external repository into Cloud Manager. Cloud Manager supports integration with GitHub Enterprise, GitLab, and Bitbucket repositories.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
 ---
-# Add external repositories in Cloud Manager - Limited beta {#external-repositories}
+# Add external repositories in Cloud Manager - Early Adopter {#external-repositories}
 
 Learn how to add an external repository into Cloud Manager. Cloud Manager supports integration with GitHub Enterprise, GitLab, and Bitbucket repositories.
 
 >[!NOTE]
 >
->This feature is only available through the early adoption program. For more details and to sign up as an early adopter, see [Bring Your Own Git - now with support for GitLab and Bitbucket](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md#gitlab-bitbucket).
+>The features described in this article are only available through the early adoption program. For more details and to sign up as an early adopter, see [Bring Your Own Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
 
 ## Configure an external repository
 
@@ -25,6 +25,14 @@ Configuration of an external repository in Cloud Manager consists of three steps
 
 
 ## Add an external repository {#add-ext-repo}
+
+>[!NOTE]
+>
+>External repositories cannot be linked to Configuration pipelines.
+
+<!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
+* Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
+
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
@@ -200,12 +208,88 @@ The following behaviors apply:
 * If PR validation or pipeline triggers are not working, verify that the Webhook Secret is up to date in both Cloud Manager and your Git vendor.
 
 
-## Limitation
+## Deploy to a Rapid Development Environment from external Git providers {#deploy-to-rde}
 
-* External repositories cannot be linked to Configuration pipelines.
+>[!NOTE]
+>
+>This feature is available through the Early Adopter program. If you are interested in testing this new feature and sharing your feedback, send an email to [CloudManager_BYOG@adobe.com](mailto:cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure.
+
+Cloud Manager supports deploying code to Rapid Development Environments (RDEs) directly from external Git providers when using the [Bring Your Own Git (BYOG) configuration](/help/implementing/cloud-manager/managing-code/external-repositories.md). 
+
+Deploying to RDEs from an external Git repository requires the following:
+
+* The use of an external Git repository integrated with Cloud Manager (BYOG setup).
+* Your project must have one or more RDE environments provisioned.
+* If you are using `github.com`, you must review and accept the updated GitHub app installation to grant the required new permissions.
+
+**Usage notes**
+
+* Deployment to RDE is currently supported only for AEM content and Dispatcher packages.
+* Deployment of other package types (for example, full AEM application packages) is not yet supported.
+* Currently, resetting an RDE environment using a comment is not supported. Customers must use the existing AIO CLI commands, as [described here](/help/implementing/developing/introduction/rapid-development-environments.md).
+
+**How it works**
+
+1. **Code quality validation message.**
+
+    When a pull request (PR) triggers a code quality pipeline run, the validation results indicate whether the deployment can proceed to an RDE environment.
+
+    How it looks on GitHub Enterprise:
+    ![Code quality validation message on GitHub Enterprise](/help/implementing/cloud-manager/managing-code/assets/rde-github-enterprise-code-quality-validation-message.png)
+
+    How it looks on GitLab:
+    ![Code quality validation message on GitLab](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-code-quality-validation-message.png)
+
+    How it looks on Bitbucket:
+    ![Code quality validation message on Bitbucket](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-code-quality-validation-message.png)     
+
+1. **Trigger deployment using a comment.**
+
+    To initiate the deployment, add a comment to the PR in the following format: `deploy on rde-environment-<envName>`
+
+    ![Trigger deployment using a comment](/help/implementing/cloud-manager/managing-code/assets/rde-trigger-deployment-using-comment.png)
+
+    The `<envName>` must match the name of an existing RDE environment. If the name is not found, a comment is returned indicating that the environment is invalid.
+
+    If the environment status is not ready, you get the following comment:
+
+    ![Environment not ready to deploy](/help/implementing/cloud-manager/managing-code/assets/rde-environment-not-ready.png)
 
 
-<!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
-* Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
+
+
+1. **Environment check and artifact deployment.**
+
+    If the RDE is ready, Cloud Manager posts a new check to the PR.
+    
+    How it looks on GitHub Enterprise:
+
+    ![Status of the environment on GitHub](/help/implementing/cloud-manager/managing-code/assets/rde-github-environment-status-is-ready.png) 
+       
+    How it looks on GitLab:
+
+    ![Status of the environment on GitLab](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-deployment-1.png)
+
+    How it looks on Bitbucket:
+
+    ![Status of the environment on Bitbucket](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-deployment-1.png)
+
+
+1. **Successful deployment message.**
+
+    When the deployment completes, Cloud Manager posts a success message summarizing the artifacts deployed to the target environment.
+
+    How it looks on GitHub Enterprise:
+    
+    ![Deployment status of the environment on GitHub](/help/implementing/cloud-manager/managing-code/assets/rde-github-environment-deployed-artifacts.png)
+
+    How it looks on GitLab:
+
+    ![Deployment status of environment on GitLab](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-deployment-2.png)
+
+    How it looks on Bitbucket:
+
+    ![Deployment status of environment on Bitbucket](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-deployment-2.png)
+
 
 
