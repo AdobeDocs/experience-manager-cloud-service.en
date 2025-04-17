@@ -8,6 +8,9 @@ role: User, Developer
 
 # Save forms as drafts and list them on Sites page
 
+
+This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).
+
 Consider a user who begins filling out a form but needs to pause and return later. AEM offers a `save-as-draft` option, allowing the user to save the form as a draft for future completion. To facilitate this, AEM provides the **Drafts & Submissions** Forms Portal component out of the box, which displays drafts and submissions on AEM Sites pages. The component lists forms that have been saved as drafts for later completion, as well as those that have been submitted. Only logged-in users can edit their drafts or view their submitted forms. However, if an anonymous user navigates through the list of forms using the **Search & Lister** component and saves a form as a draft, that draft is not listed by the **Drafts & Submissions** component. To view drafts and submissions, users must be logged in at the time of form submission.
 
 ![Drafts icon](assets/drafts-component.png)
