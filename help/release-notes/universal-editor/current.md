@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2025.03.10 Release Notes
-description: These are the release notes for the 2025.03.10 release of the Universal Editor.
+title: Universal Editor 2025.04.04 Release Notes
+description: These are the release notes for the 2025.04.04 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2025.03.10 Release Notes {#release-notes}
+# Universal Editor 2025.04.04 Release Notes {#release-notes}
 
-These are the release notes for the 10 March 2025 release of the Universal Editor.
+These are the release notes for the 4 April 2025 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -16,26 +16,11 @@ These are the release notes for the 10 March 2025 release of the Universal Edito
 
 ## What's New {#what-is-new}
 
-* **Moving Components:** [Moving components between containers](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) now observes the component filter of the target container.
-  * There is no longer a requirement to have the same [filter definition](/help/implementing/universal-editor/filtering.md) in place for both target and destination containers in order to move the component between the containers.
-* **Locked Pages:** Universal Editor Service observes the [lock status of a page](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) and only writes to pages which are not locked or are locked by the user.
-
-## New Extensions for the Universal Editor {#extensions}
-
-A number of new extensions have been released on [Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/) for the Universal Editor, enhancing the authoring experience.
-
-* **MSM Extension**: You can now break and re-instantiate inheritance of components/blocks using this extension.
-* **Page Properties Extension**: Access the page properties window of the page directly from the Universal Editor using this extension.
-* **Workflow Extension**: Use workflows on pages and Content Fragments which are instrumented on the page using this extension.
-* **Page Lock Extension**: Use this extension to lock and unlock a page directly from the Universal Editor.
+* **Dynamic Media with OpenAPI support** - [The asset selector](/help/assets/overview-asset-selector.md#repository-switcher) in the Universal Editor now supports [Dynamic Media with OpenAPI and remote assets](/help/assets/integrate-remote-approved-assets-with-sites.md)
+* **IP Allow Listing** - The Universal Editor now supports [IP allow lists.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) You can check the IPs of the Universal Editor Service using [this endpoint.](http://universal-editor-service.adobe.io/ip-ranges)
 
 ## Other Improvements {#other-improvements}
 
-* Fixes were made to correct validation for headless-canvas.
-
-## Deprecation {#deprecation}
-
-* The `universal-editor-cors` library provided via npm or `https://unviersal-editor-service.experiencecloud.live/corslib/*` should no longer be used.
-  * A script tag pointing to `https://universal-editor-service.adobe.io/cors.js` should be used instead.
-  * See the [Universal Editor Overview for AEM Developers](/help/implementing/universal-editor/developer-overview.md) for details on how to properly instrument your page for use with the Universal Editor.
-  * Users will see a deprecation message once per day if the wrong method is used.
+* Remove layout context was fixed.
+* Improvements were made to e2e testing.
+* Dependency updates and code cleanup was performed.
