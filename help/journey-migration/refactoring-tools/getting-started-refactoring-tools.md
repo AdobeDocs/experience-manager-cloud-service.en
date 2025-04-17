@@ -71,9 +71,9 @@ When you click the **Refactoring Job** tab, you will see a list of existing jobs
 
 ### 1. Create a New Refactoring Job
 
-* Click the **Create New Job** button.
-* Select the desired refactoring tool(s).
-* Click **Start** to initiate the refactoring process.
+- Click the **Create New Job** button.
+- Select the desired refactoring tool(s).
+- Click **Start** to initiate the refactoring process.
 
 ![image](/help/journey-migration/refactoring-tools/assets/rscam7.png)
 
@@ -84,16 +84,17 @@ When you click the **Refactoring Job** tab, you will see a list of existing jobs
 
 ### 2. Job Status
 
-* **Running** – The job is currently in progress. Status updates automatically upon completion or failure.
-* **Completed** – The job finished successfully. You can now review results or download the refactored code.
-* **Failed** – The job encountered an error. Click on the job to view detailed logs and troubleshoot the issue.
+- **Running** – The job is currently in progress. Status updates automatically upon completion or failure.
+- **Completed** – The job finished successfully. You can now review results or download the refactored code.
+- **Failed** – The job encountered an error. Click on the job to view detailed logs and troubleshoot the issue.
 
 ![image](/help/journey-migration/refactoring-tools/assets/rscam8.png)
 
 When the job is completed successfully, the **Download** button becomes available, allowing you to retrieve:
-* The refactored project
-* Activity logs
-* Findings report
+
+- The refactored project
+- Activity logs
+- Findings report
 
 ![image](/help/journey-migration/refactoring-tools/assets/rscam9.png)
 
