@@ -68,21 +68,36 @@ AEM supports multiple authoring methods, each suited for different user needs, t
 
 The following table provides a detailed comparison of key features across different AEM form authoring methods, assisting in selecting the most suitable approach for your requirements.​
 
-| **Feature**                          | **Foundation Components** | **Core Components** | **Universal Editor (WYSIWYG)** | **Document-based Authoring** | **Headless Authoring** |
+| **Capability**                          | **Foundation Components** | **Core Components** | **Universal Editor (WYSIWYG)** | **Document-based Authoring** | **Headless Authoring** |
 |-----------------------------------------|---------------------------|---------------------|-------------------------------|-----------------------------|------------------------|
-| **Attachment Support**                  | ✅                        | ✅                  | ✅                            | ❌           | ❌                     |
-| **CAPTCHA Support**                     | reCAPTCHA v2/Enterprise, hCaptcha (EA), Turnstile (EA) | reCAPTCHA v2/Enterprise, hCaptcha (EA) | reCAPTCHA v2/Enterprise       | reCAPTCHA Enterprise   | Requires custom integration |
+| **Unified Composition with Sites**      | ❌                        | ✅                  | ✅                            | ❌                          | ❌                     |
+| **Embedding Form Support**              | ✅                        | ✅                  | ✅                            | ✅                          | ✅                     |
+| **Rules (Dynamic Behavior)**            | Advanced rules editor with custom functions | Advanced rules editor with custom functions | Advanced rules editor with custom functions | Limited: Show/hide, compute value, custom functions | Limited: Requires custom implementation |
+| **Attachment Support**                  | ✅                        | ✅                  | ✅                            | ℹ️ (Early Access)           | ❌                     |
+| **CAPTCHA Support**                     | reCAPTCHA v2/Enterprise, hCaptcha (EA), Turnstile (EA) | reCAPTCHA v2/Enterprise, hCaptcha (EA) | reCAPTCHA Enterprise       | reCAPTCHA Enterprise   | Requires custom integration |
 | **Submission Features**                 | REST endpoint, Email, Form Data Model (FDM), Invoke AEM Workflow, SharePoint, OneDrive, Azure Blob Storage, Power Automate, Workfront Fusion (EA) | REST endpoint, Email, Form Data Model (FDM), Invoke AEM Workflow, SharePoint, OneDrive, Azure Blob Storage, Power Automate, Workfront Fusion (EA) | REST endpoint, Email, Form Data Model (FDM), Invoke AEM Workflow, SharePoint, OneDrive, Azure Blob Storage, Power Automate, Workfront Fusion (EA) | Only Spreadsheet        | Custom API endpoints   |
 | **Data Schema**                         | FDM, Custom               | FDM, Custom         | FDM, Custom                   | Custom                      | Custom                 |
+| **Pre-fill**                            | ✅                        | ✅                  | 💡 (via Wizard)               | ✅                          | Custom implementation  |
+| **Fragments**                           | ✅                        | ✅                  | ✅                            | ✅                          | ❌                     |
 | **Visual Rule Editor**                  | ✅                        | ✅                  | ✅                            | ❌                          | ❌                     |
-| **Theme**                               | ✅                        | ✅                  | ❌           | ❌        | Custom implementation  |
+| **Localization**                        | ✅                        | ✅                  | 💡 (via Sites)                | ℹ️ (Excel - Manual, Google Sheets Function) | Custom implementation |
+| **Data Schema (Data Tree)**             | ✅                        | ✅                  | 💡 (via UI Extension)         | ❌                          | Custom implementation  |
+| **Template Support**                    | ✅                        | ✅                  | Only Initial Content, No Policy | ❌                          | Custom implementation  |
+| **Portal**                              | ✅                        | ✅                  | ❌                            | ❌                          | ❌                     |
+| **DoR Authoring**                       | ✅                        | ✅                  | 💡 (via Derlina)              | ❌                          | ❌                     |
+| **DoR Generation**                      | ✅                        | ✅                  | 💡 (FORMS-2475 New)           | ❌                          | ❌                     |
+| **Theme**                               | ✅                        | ✅                  | ℹ️ (at project level)          | ℹ️ (at project level)        | Custom implementation  |
 | **Custom Component**                    | ✅                        | ✅                  | ✅                            | ✅                          | ✅                     |
 | **OOTB & Custom Functions**             | ✅                        | ✅                  | ✅                            | ✅                          | ✅                     |
-| **Fragment Reference**                  | ✅                        | ✅                   | ✅                             | ❌                          | ❌                     |
-| **Sign Integration**                    | ✅                        | ✅                  | ❌                            | ❌                          | ❌                     |
+| **Fragment Reference**                  | ✅                        | ❌                  | ❌                            | ❌                          | ❌                     |
+| **Sign Integration**                    | ✅                        | ❌                  | ❌                            | ❌                          | ❌                     |
+| **RTL Support**                         | ❌                        | ✅                  | 💡                            | 💡                          | Custom implementation  |
 | **Experimentation**                     | ❌                        | ❌                  | ✅                            | ✅                          | Custom implementation  |
 | **Task Management via Workfront**       | ❌                        | ❌                  | ✅                            | ❌                          | ❌                     |
+| **Personalization Extension**           | ❌                        | ❌                  | 💡                            | ❌                          | Custom implementation  |
+| **Editor Customization**                | ❌                        | ❌                  | ✅ (via UI Extension)          | ❌                          | Custom implementation  |
 | **Submit Action**                       | ✅                        | ✅                  | ✅                            | Only Spreadsheet            | Custom implementation  |
+
 
 ## Related Article
 
