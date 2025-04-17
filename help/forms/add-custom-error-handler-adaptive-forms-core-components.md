@@ -164,7 +164,7 @@ You can view the value of dataRef in the **[!UICONTROL Properties]** window of a
 
 Before you add an error handler using the Rule Editor's Invoke service:
 
-* [Enable Adaptive Forms Core Components for your AEM Cloud Service environment](enable-adaptive-forms-core-components.md). 
+* Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment.
 
 * Learn how to [create custom functions](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#write-rules).
 

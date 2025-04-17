@@ -21,7 +21,7 @@ Adaptive Forms provides first-class components to layout and design the forms ef
 
 ## Pre-requisite
 
-Before exploring the various capabilities of a layout, ensure that core components are enabled for your environment. For detailed instructions on how to enable core components for your environment, [click here](/help/forms/enable-adaptive-forms-core-components.md).
+Before exploring the various capabilities of a layout, ensure that core components are enabled for your environment. Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment.
 
 ## Adaptive Forms layout types
 
@@ -99,7 +99,7 @@ It is important to select the right Adaptive Form layout to optimize user experi
 |--------------------------|-----------------------------------------------------|----------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------|--------|
 | **Purpose**             | Groups related content into distinct sections | Guides users through a multi-step process or form | Allows switching between sections/views on the same page | Similar to top tabs but arranged vertically on the left | Organizes content into collapsible sections           |
 | **Structure**         |  Distinct sections   | Sequential steps/pages                             | Horizontal tabs at the top                         | Vertical tabs on the left                           | Collapsible panels/sections                            |
-| **Navigation**        |  Click on the panel headers to navigate| - Forward: “Next” button<br>- Backward: “Back” button<br>- Optional skipping steps |  Click on tabs to switch sections                  |  Click on tabs to switch sections                   |  Click headers to expand/collapse sections           |
+| **Navigation**        |  Click on the panel headers to navigate| - Forward: "Next" button<br>- Backward: "Back" button<br>- Optional skipping steps |  Click on tabs to switch sections                  |  Click on tabs to switch sections                   |  Click headers to expand/collapse sections           |
 | **User Experience**     | Organizes large amounts of content in a manageable way | Step-by-step guidance, reducing overwhelm          | Clear, accessible switching between views          | Efficient use of vertical space, always visible tabs| Compact view with expanded/collapsed sections         |
 | **Use Case**            |Complex forms with categorized sections | Setup processes, complex forms                     | Organizing settings or content categories          | Dashboards, complex data views                      | FAQs, settings menus, detailed content sections       |
 
