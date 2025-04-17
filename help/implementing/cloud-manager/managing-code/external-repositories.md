@@ -222,6 +222,12 @@ Deploying to RDEs from an external Git repository requires the following:
 * Your project must have one or more RDE environments provisioned.
 * If you are using `github.com`, you must review and accept the updated GitHub app installation to grant the required new permissions.
 
+**Usage notes**
+
+* Deployment to RDE is currently supported only for AEM content and Dispatcher packages.
+* Deployment of other package types (for example, full AEM application packages) is not yet supported.
+* Currently, resetting an RDE environment using a comment is not supported. Customers must use the existing AIO CLI commands, as [described here](/help/implementing/developing/introduction/rapid-development-environments.md).
+
 **How it works**
 
 1. **Code quality validation message.**
@@ -285,11 +291,5 @@ Deploying to RDEs from an external Git repository requires the following:
 
     ![Deployment status of environment on Bitbucket](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-deployment-2.png)
 
-
-### Usage notes
-
-* Deployment to RDE is currently supported only for AEM content and Dispatcher packages.
-* Deployment of other package types (for example, full AEM application packages) is not yet supported.
-* Currently, resetting an RDE environment using a comment is not supported. Customers must use the existing AIO CLI commands, as [described here](/help/implementing/developing/introduction/rapid-development-environments.md).
 
 
