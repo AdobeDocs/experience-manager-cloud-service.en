@@ -57,11 +57,11 @@ Below are the prerequisites you must satisfy before using **Invoke Service** in 
 
 * Make sure you have configured a data source. For instructions on configuring a data source, [click here](/help/forms/configure-data-sources.md).
 * Create a Form Data Model using the configured data source. For guidance on creating a Form Data Model, [click here](/help/forms/create-form-data-models.md).
-* Ensure that Core Components are enabled for your environment. For detailed instructions on how to enable Core Components for your environment, [click here](/help/forms/enable-adaptive-forms-core-components.md).
+* Ensure that Core Components are enabled for your environment. Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment.
 
 ## Exploring Invoke Service through different use cases
 
-The Visual rule editor’s **Invoke Service** allows you to perform several useful operations. You can use it to populate dropdown options, set repeatable or simple panels, and validate form fields, all based on the output response of the **Invoke Service**. Thus, enhancing the flexibility and interactivity of your forms.
+The Visual rule editor's **Invoke Service** allows you to perform several useful operations. You can use it to populate dropdown options, set repeatable or simple panels, and validate form fields, all based on the output response of the **Invoke Service**. Thus, enhancing the flexibility and interactivity of your forms.
 
 The table below describes a few scenarios in which the **Invoke Service** can be used:
 
