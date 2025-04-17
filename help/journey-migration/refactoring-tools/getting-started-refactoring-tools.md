@@ -1,7 +1,6 @@
 ---
 title: Getting Started with Refactoring Tools
 description: Learn how to get started with Refactoring Tools in AEM as a Cloud Service
-exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 ---
 # Getting Started with Refactoring Tools {#getting-started-refactoring-tools}
 
@@ -17,12 +16,12 @@ exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 
 Use the Refactoring Tool to migrate your code for compatibility with AEM as a Cloud Service.
 
-1. If you haven’t created a CAM project yet, refer to [Creating and Managing a Project in CAM](#).
-2. Click the **Code Refactoring** card to upload the source code.
+1. If you haven’t created a CAM project yet, refer to [Creating and Managing a Project in CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md#create-project).
+1. Click the **Code Refactoring** card to upload the source code.
 
    ![image](/help/journey-migration/refactoring-tools/assets/rscam1.png)
 
-3. When you first access the **Source Code View**, you'll see an empty state prompting you to upload your source code.
+1. When you first access the **Source Code View**, you will see an empty state prompting you to upload your source code.
 
    ![image](/help/journey-migration/refactoring-tools/assets/rscam2.png)
 
@@ -37,18 +36,18 @@ When customers first access the **Refactoring Tools**, they are presented with a
 
    ![image](/help/journey-migration/refactoring-tools/assets/rscam2.png)
 
-2. **Upload Your Source Code**
+1. **Upload Your Source Code**
     - In the upload dialog, select your source code ZIP file.
     - Click **Upload** to begin.
     - The upload progress will be displayed in the dialog. Duration depends on your project's size.
 
    ![image](/help/journey-migration/refactoring-tools/assets/rscam3.png)
 
-3. **Inspection Process**
+1. **Inspection Process**
     - After uploading, the **Inspection Process** begins automatically in the background.
     - The **Source Code View** will now display your uploaded project and its inspection status.
 
-4. **Inspection Status**  
+1. **Inspection Status**  
    The inspection will show one of the following statuses:
     - **Running** – The inspection is in progress.
     - **Ready** – The inspection is complete; you may now run refactoring tools.
@@ -66,34 +65,35 @@ When customers first access the **Refactoring Tools**, they are presented with a
 
 ## Refactoring Jobs {#refactoring-jobs}
 
-When users click the **Refactoring Job** tab, they will see a list of existing jobs. If no jobs have been created yet, an empty state will be displayed prompting job creation.
+When you click the **Refactoring Job** tab, you will see a list of existing jobs. If no jobs have been created yet, an empty state will be displayed prompting job creation.
 
 ![image](/help/journey-migration/refactoring-tools/assets/rscam6.png)
 
 ### 1. Create a New Refactoring Job
-- Click the **Create New Job** button.
-- Select the desired refactoring tool(s).
-- Click **Start** to initiate the refactoring process.
+
+* Click the **Create New Job** button.
+* Select the desired refactoring tool(s).
+* Click **Start** to initiate the refactoring process.
 
 ![image](/help/journey-migration/refactoring-tools/assets/rscam7.png)
 
 >[!NOTE]
->Users can trigger individual refactoring jobs or execute all available tools in one go using the **All Tools Together** option.
+>You can trigger individual refactoring jobs or execute all available tools in one go using the **All Tools Together** option.
 
 ---
 
 ### 2. Job Status
 
-- **Running** – The job is currently in progress. Status updates automatically upon completion or failure.
-- **Completed** – The job finished successfully. You can now review results or download the refactored code.
-- **Failed** – The job encountered an error. Click on the job to view detailed logs and troubleshoot the issue.
+* **Running** – The job is currently in progress. Status updates automatically upon completion or failure.
+* **Completed** – The job finished successfully. You can now review results or download the refactored code.
+* **Failed** – The job encountered an error. Click on the job to view detailed logs and troubleshoot the issue.
 
 ![image](/help/journey-migration/refactoring-tools/assets/rscam8.png)
 
-When the job is completed successfully, the **Download** button becomes available, allowing users to retrieve:
-- Refactored project
-- Activity logs
-- Findings report
+When the job is completed successfully, the **Download** button becomes available, allowing you to retrieve:
+* The refactored project
+* Activity logs
+* Findings report
 
 ![image](/help/journey-migration/refactoring-tools/assets/rscam9.png)
 
