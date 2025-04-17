@@ -23,9 +23,10 @@ Previously available only as CLI utilities, Refactoring Tools now provide a unif
 The **Inspection Workflow** simplifies the preparation process for running refactoring tools.
 
 ### Key Features:
-- **Automatic Trigger** – Uploading a project automatically starts the inspection.
-- **Configuration Generation** – The tools inspect the uploaded source code and generate the necessary configurations.
-- **Payload Submission** – These configurations are passed directly to the selected tools for execution.
+
+* **Automatic Trigger** – Uploading a project automatically starts the inspection.
+* **Configuration Generation** – The tools inspect the uploaded source code and generate the necessary configurations.
+* **Payload Submission** – These configurations are passed directly to the selected tools for execution.
 
 ---
 
@@ -59,9 +60,9 @@ The Refactoring Tools follow a structured two-phase process:
 
 After a successful inspection, you can run one or more refactoring tools:
 
-- **Run Repository Modernizer** – Executes repository modernization.
-- **Run Code Transformer** – Runs code transformation based on inspection output.
-- **Run All Tools Together** – Executes all available tools in a single operation.
+* **Run Repository Modernizer** – Executes repository modernization.
+* **Run Code Transformer** – Runs code transformation based on inspection output.
+* **Run All Tools Together** – Executes all available tools in a single operation.
 
 >[!NOTE]
 >Refactoring jobs can only be started after the source code has been successfully uploaded and inspected.
