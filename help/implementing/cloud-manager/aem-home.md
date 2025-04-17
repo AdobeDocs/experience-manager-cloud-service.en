@@ -4,8 +4,8 @@ description: Learn about the Adobe Experience Manager Launchpad page.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-hide: yes
-hidefromtoc: yes
+hide: no
+hidefromtoc: no
 exl-id: 1bfa47e1-fb2f-4b68-ac69-4618a9e4a5f4
 ---
 # About AEM Launchpad {#aem-launchpad}
