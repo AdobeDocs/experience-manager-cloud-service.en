@@ -111,6 +111,10 @@ Watch this video to learn how to configure an authenticated API for later usage:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3457510?quality=12&learn=on)
 
+### Block traffic based on region, continent, and organization {#blocktraffic}
+
+Using Traffic Filter Rules, block traffic based on [newly exposed request properties](/help/security/traffic-filter-rules-including-waf.md#condition-structure):`clientRegion` and `clientContinent` augment the already-supported `clientCountry` to match based on geography, while `clientAsName` and `clientAsNumber` match Autonomous Systems to identify laerge ISPs, companies, or cloud providers.
+
 ### Java 21 support {#java21}
 
 As of the January release, you can build code with Java 21 and Java 17. You gain access to new features like pattern matching, sealed classes, and various performance improvements. For configuration steps, including updating your Maven project and library versions, see the [Build Environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) article.
@@ -136,19 +140,13 @@ Edge computing brings data processing closer to the browser, which has benefits 
 Some possible use cases:
 
 * Authentication with an IdP to gate access to content
-* Rendering dynamic (personalized, localized) content based on geolocation, device type, user attributes, etc.
+* Personalization by rendering dynamic content based on geolocation, device type, user attributes, etc.
 * Advanced image manipulation 
 * Middleware between the CDN and an origin
 * A layer between the browser and a third-party API, perhaps to reformat the API response
 * Aggregating data from multiple origins to make it easier for the client browser to render it
 
 Email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with questions and comments!
-
-### New AEM Developer Console (Public Beta) {#aem-developer-console-beta}
-
-Try out a revamped [AEM Developer Console](/help/implementing/developing/introduction/aem-developer-console.md), which offers a more interactive experience for debugging code in Cloud environments.
-
-Anyone can access the public beta by clicking the *New Console Available* button in the current AEM Developer Console. Adobe welcomes feedback, which you can email to [aemcs-new-devconsole-ui-beta@adobe.com](mailto:aemcs-new-devconsole-ui-beta@adobe.com)
 
 ## [!DNL Experience Manager] Guides {#guides}
 
