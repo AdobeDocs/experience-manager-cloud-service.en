@@ -16,7 +16,7 @@ Adobe Experience Manager (AEM) lets you create forms that are engaging, responsi
 
 This article focuses on the approach where forms are authored within the AEM environment and published through Edge Delivery Services. Forms built using Core Component-based templates can be published on both AEM and Edge Delivery Services, offering flexibility in deployment. In contrast, forms authored using Edge Delivery Services-based templates can only be published on Edge Delivery Services.​
 
-![Author and Publish Adaptive Form](/help/edge/docs/forms/universal-editor/assets/author-publish-af.png){width=auto}
+![Author and Publish Adaptive Form](/help/edge/docs/forms/universal-editor/assets/author-publish-af.png){width=50% align=center}
 
 ## Advantages of authoring forms in AEM and publishing using Edge Delivery Services:
 
