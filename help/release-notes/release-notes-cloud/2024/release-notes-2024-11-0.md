@@ -51,7 +51,7 @@ Enhanced [Content Fragment referencing with unique ID-based references](/help/he
 
 **AEM REST OpenAPI for Content Fragment Delivery**
 
-The [AEM REST OpenAPI for Content Fragment Delivery](/help/headless/aem-rest-openapi-content-fragment-delivery.md), is available now for AEM as a Cloud Service. 
+The [AEM REST OpenAPI for Content Fragment Delivery](/help/headless/aem-content-fragment-delivery-with-openapi.md), is available now for AEM as a Cloud Service. 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
