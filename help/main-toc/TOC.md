@@ -329,6 +329,7 @@ user-guide-title: AEM as a Cloud Service
         + [Important Considerations](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
         + [Using User Mapping Tool](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
   + Code Refactoring Tools {#refactoring-tools}
+    + [Getting Started with Refactoring Tools](/help/journey-migration/refactoring-tools/getting-started-refactoring-tools.md)
     + [Unified Experience](/help/journey-migration/unified-experience.md)
     + [Repository Modernizer](/help/journey-migration/refactoring-tools/repo-modernizer.md)
     + [Index Converter](/help/journey-migration/refactoring-tools/index-converter.md)
