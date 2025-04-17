@@ -1,13 +1,13 @@
 ---
 title: Using Config Pipelines
-description: Learn how you can use config pipelines to deploy different configurations AEM as a Cloud Service such as log forwarding settings, purge-related maintenance tasks, and various CDN configurations.
+description: Learn how you can use config pipelines to deploy different configurations in AEM as a Cloud Service such as log forwarding settings, purge-related maintenance tasks, and various CDN configurations.
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
 ---
 # Using Config Pipelines {#config-pipelines}
 
-Learn how you can use config pipelines to deploy different configurations AEM as a Cloud Service such as log forwarding settings, purge-related maintenance tasks, and various CDN configurations.
+Learn how you can use config pipelines to deploy different configurations in AEM as a Cloud Service such as log forwarding settings, purge-related maintenance tasks, and various CDN configurations.
 
 ## Overview {#overview}
 
@@ -40,7 +40,8 @@ The following table offers a comprehensive list of such configurations with link
 | [Basic authentication](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Declare the usernames and passwords for a basic auth dialog protecting certain URLs. |
 | [Version Purge Maintenance Task](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimize the AEM repository by declaring rules around when content versions should be purged |
 | [Audit log Purge Maintenance Task](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimize the AEM audit log for increased performance by declaring rules around when logs should be purged |
-| [Log forwarding](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Configure the endpoints and credentials for forwarding logs to various destinations, including Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk) |
+| [Log forwarding](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Configure the endpoints and credentials for forwarding logs to various destinations, including Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk |
+| [Registering a Client ID](/help/implementing/developing/open-api-based-apis.md) | `API` | Scope Adobe Developer Console API projects to a specific AEM environments by registering the client ID. This is needed for usage of OpenAPI-based APIs that require authentication |
 
 ## Creating and Managing Config Pipelines {#creating-and-managing}
 
