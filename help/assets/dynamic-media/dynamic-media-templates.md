@@ -44,7 +44,7 @@ exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
     </tr>
 </table>
 
-Create real time customizable templates for your banners and flyers using [!DNL Dynamic Media] templates, a WYSIWYG template editor. Use your [!DNL Dynamic Media] template in downstream applications. A [!DNL Dynamic Media] template includes image and text layers. Add parameters to the image and text layers of the template and use [[!DNL Dynamic Media] URLs](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) to reposition and resize the layer and update its content in real-time. 
+Create real time customizable templates for your banners and flyers using [!DNL Dynamic Media] templates, a WYSIWYG template editor. Publish your [!DNL Dynamic Media] template and use it in downstream applications. A [!DNL Dynamic Media] template includes image and text layers. Add parameters to the image and text layers of the template and use [[!DNL Dynamic Media] URLs](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) to reposition and resize the layer and update its content in real-time. 
 
 Some of the key features include:
 
@@ -102,6 +102,7 @@ Execute these steps to create a blank canvas:
    >[!NOTE]
    >
    >  The template is saved in the location where you create it. On [!DNL Assets View] home page, select **[!UICONTROL Dynamic Media Assets]** and click **[!UICONTROL Create Template]** to save the template in **[!UICONTROL Dynamic Media Assets]** root folder.
+ 
 1. Specify a template name, define the canvas width and height, and click **[!UICONTROL Create]**. A blank canvas displays with menu options on both sides to use for creating the template. Hover over the menu options to see their tooltip. 
 ![real-time customizable template](/help/assets/assets/blank-canvas-page.png)
 
