@@ -494,25 +494,25 @@ Deploying to RDEs from an external Git repository requires the following:
     When a pull request (PR) triggers a code quality pipeline run, the validation results indicate whether the deployment can proceed to an RDE environment.
 
     How it looks on GitHub Enterprise:
-    ![Code quality validation message on GitHub Enterprise](/help/implementing/cloud-manager/managing-code/assets/rde-github-enterprise-code-quality-validation-message.png)
+    ![Code quality validation message on GitHub Enterprise](/help/implementing/developing/introduction/assets/rde-gitlab-code-quality-validation-message.png)
 
     How it looks on GitLab:
-    ![Code quality validation message on GitLab](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-code-quality-validation-message.png)
+    ![Code quality validation message on GitLab](/help/implementing/developing/introduction/assets/rde-gitlab-code-quality-validation-message.png)
 
     How it looks on Bitbucket:
-    ![Code quality validation message on Bitbucket](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-code-quality-validation-message.png)     
+    ![Code quality validation message on Bitbucket](/help/implementing/developing/introduction/assets/rde-bitbucket-code-quality-validation-message.png)     
 
 1. **Trigger deployment using a comment.**
 
     To initiate the deployment, add a comment to the PR in the following format: `deploy on rde-environment-<envName>`
 
-    ![Trigger deployment using a comment](/help/implementing/cloud-manager/managing-code/assets/rde-trigger-deployment-using-comment.png)
+    ![Trigger deployment using a comment](/help/implementing/developing/introduction/assets/rde-trigger-deployment-using-comment.png)
 
     The `<envName>` must match the name of an existing RDE environment. If the name is not found, a comment is returned indicating that the environment is invalid.
 
     If the environment status is not ready, you get the following comment:
 
-    ![Environment not ready to deploy](/help/implementing/cloud-manager/managing-code/assets/rde-environment-not-ready.png)
+    ![Environment not ready to deploy](/help/implementing/developing/introduction/assets/rde-environment-not-ready.png)
 
 1. **Environment check and artifact deployment.**
 
@@ -520,15 +520,15 @@ Deploying to RDEs from an external Git repository requires the following:
     
     How it looks on GitHub Enterprise:
 
-    ![Status of the environment on GitHub](/help/implementing/cloud-manager/managing-code/assets/rde-github-environment-status-is-ready.png) 
+    ![Status of the environment on GitHub](/help/implementing/developing/introduction/assets/rde-github-environment-status-is-ready.png) 
        
     How it looks on GitLab:
 
-    ![Status of the environment on GitLab](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-deployment-1.png)
+    ![Status of the environment on GitLab](/help/implementing/developing/introduction/assets/rde-gitlab-deployment-1.png)
 
     How it looks on Bitbucket:
 
-    ![Status of the environment on Bitbucket](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-deployment-1.png)
+    ![Status of the environment on Bitbucket](/help/implementing/developing/introduction/assets/rde-bitbucket-deployment-1.png)
 
 1. **Successful deployment message.**
 
@@ -536,15 +536,15 @@ Deploying to RDEs from an external Git repository requires the following:
 
     How it looks on GitHub Enterprise:
     
-    ![Deployment status of the environment on GitHub](/help/implementing/cloud-manager/managing-code/assets/rde-github-environment-deployed-artifacts.png)
+    ![Deployment status of the environment on GitHub](/help/implementing/developing/introduction/assets/rde-github-environment-deployed-artifacts.png)
 
     How it looks on GitLab:
 
-    ![Deployment status of environment on GitLab](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-deployment-2.png)
+    ![Deployment status of environment on GitLab](/help/implementing/developing/introduction/assets/rde-gitlab-deployment-2.png)
 
     How it looks on Bitbucket:
 
-    ![Deployment status of environment on Bitbucket](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-deployment-2.png)
+    ![Deployment status of environment on Bitbucket](/help/implementing/developing/introduction/assets/rde-bitbucket-deployment-2.png)
 
 
 ### Check the status of the RDE {#checking-rde-status}
