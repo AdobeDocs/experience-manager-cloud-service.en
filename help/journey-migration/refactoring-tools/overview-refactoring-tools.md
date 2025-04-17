@@ -48,8 +48,8 @@ The Refactoring Tools follow a structured two-phase process:
 
 ### Phase 1: Upload Your Source Code
 
-- Upload your source code (in ZIP format) using the CAM interface.
-- Once uploaded, the **Inspection Workflow** is automatically triggered to analyze the project and prepare it for tool execution.
+* Upload your source code (in ZIP format) using the CAM interface.
+* Once uploaded, the **Inspection Workflow** is automatically triggered to analyze the project and prepare it for tool execution.
 
 >[!NOTE]
 >During the inspection process, uploading another project is not permitted.
