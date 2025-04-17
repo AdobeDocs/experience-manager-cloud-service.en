@@ -6,11 +6,15 @@ description: Learn how to get started with Refactoring Tools in AEM as a Cloud S
 
 ## Availability {#availability}
 
+<!-- Alexandru: duplicate contextualhelp id, drafting this for now
+
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_download"
 >title="Download"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html" text="Release Notes"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
+
+-->
 
 ## Running the Refactoring Tools {#running-refactoring-tools}
 
