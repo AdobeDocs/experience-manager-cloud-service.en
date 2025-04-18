@@ -75,18 +75,18 @@ After you have added an RDE for your program using Cloud Manager, you can intera
 
 >[!IMPORTANT]
 >
->Make sure you have version 20 of [Node and NPM installed](https://nodejs.org/en/download/) for Adobe I/O CLI and related plugins to work properly.
+>Make sure you have version 20 of [Node and NPM installed](https://nodejs.org/en/download/) for Adobe I/O (AIO) CLI and related plugins to work properly.
 
 
-1. Install the Adobe I/O CLI tools according to this [procedure](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
-1. Install the Adobe I/O CLI tools AEM RDE plugin:
+1. Install the AIO CLI tools according to this [procedure](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
+1. Install the AIO CLI tools AEM RDE plugin:
 
    ```
    aio plugins:install @adobe/aio-cli-plugin-aem-rde
    aio plugins:update
    ```
 
-1. Login using the aio client. 
+1. Login using the Adobe I/O (AIO) client. 
 
    ```
    aio login
@@ -467,6 +467,61 @@ Logs:
 >
 >If you created your RDE before April 2023 and encounter the `UNEXPECTED_API_ERROR` when using the front-end feature for the first time, it may be due to an outdated setup. To resolve this issue, delete the environment and create a new one.
 
+### Check the status of the RDE {#checking-rde-status}
+
+You can use the RDE CLI to check if the environment is ready to be deployed to, as what deployments have been made by way of the RDE plug-in.
+
+Running the following:
+
+`aio aem:rde:status`
+
+Returns with the following:
+
+```
+Info for cm-p12345-e987654
+Environment: Ready
+- Bundles Author:
+ com.adobe.granite.sample.demo-1.0.0.SNAPSHOT
+- Bundles Publish:
+ com.adobe.granite.sample.demo-1.0.0.SNAPSHOT
+- Configurations Author:
+ com.adobe.granite.demo.MyServlet
+- Configurations Publish:
+ com.adobe.granite.demo.MyServlet
+
+```
+
+If the command returns a note about instances deploying, you can still go ahead and perform the next update, but your last one might not yet be visible on the instance.
+
+### Show deployment history {#show-deployment-history}
+
+You can check the history of deployments made to the RDE by running:
+
+`aio aem:rde:history`
+
+Which returns a response in the form of:
+
+`#1: deploy completed for content-package aem-guides-wknd.all-2.1.0.zip on author,publish - done by 029039A55D4DE16A0A494025@AdobeID at 2022-09-12T14:41:55.393Z`
+
+### Delete from RDE {#deleting-from-rde}
+
+You can use the CLI tooling to delete configurations and bundles that you previously deployed to the RDE. Use the `status` command for a list of what can be deleted, which includes the `bsn` for bundles and `pid` for configurations to reference in the delete command.
+
+For example, if `com.adobe.granite.demo.MyServlet.cfg.json` has been installed, the `bsn` is just `com.adobe.granite.demo.MyServlet`, without the **cfg.json** suffix.
+
+Deletion of content packages or content files is not supported. To remove them, reset the RDE, which returns it to a default state.
+
+See the example below for more details:
+
+```
+aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
+#13: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on author - done by karl at 2022-09-12T22:01:01.955Z
+#14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
+```
+
+For more information and demonstration, see the video tutorial [how to use RDE commands (10:01)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use).
+
+
 ## Deploy to an RDE from external Git providers {#deploy-to-rde}
 
 >[!NOTE]
@@ -485,7 +540,7 @@ Deploying to RDEs from an external Git repository requires the following:
 
 * Deployment to RDE is currently supported only for AEM content and Dispatcher packages.
 * Deployment of other package types (for example, full AEM application packages) is not yet supported.
-* Currently, resetting an RDE environment using a comment is not supported. Customers must use the existing AIO CLI commands, as [described here](/help/implementing/developing/introduction/rapid-development-environments.md).
+* Currently, resetting an RDE environment using a comment is not supported. Instead, you must use the existing AIO CLI reset command, as [described here](/help/implementing/developing/introduction/rapid-development-environments.md#reset-the-rde-command-line).
 
 **How it works**
 
@@ -547,59 +602,7 @@ Deploying to RDEs from an external Git repository requires the following:
     ![Deployment status of environment on Bitbucket](/help/implementing/developing/introduction/assets/rde-bitbucket-deployment-2.png)
 
 
-### Check the status of the RDE {#checking-rde-status}
 
-You can use the RDE CLI to check if the environment is ready to be deployed to, as what deployments have been made by way of the RDE plug-in.
-
-Running the following:
-
-`aio aem:rde:status`
-
-Returns with the following:
-
-```
-Info for cm-p12345-e987654
-Environment: Ready
-- Bundles Author:
- com.adobe.granite.sample.demo-1.0.0.SNAPSHOT
-- Bundles Publish:
- com.adobe.granite.sample.demo-1.0.0.SNAPSHOT
-- Configurations Author:
- com.adobe.granite.demo.MyServlet
-- Configurations Publish:
- com.adobe.granite.demo.MyServlet
-
-```
-
-If the command returns a note about instances deploying, you can still go ahead and perform the next update, but your last one might not yet be visible on the instance.
-
-### Show deployment history {#show-deployment-history}
-
-You can check the history of deployments made to the RDE by running:
-
-`aio aem:rde:history`
-
-Which returns a response in the form of:
-
-`#1: deploy completed for content-package aem-guides-wknd.all-2.1.0.zip on author,publish - done by 029039A55D4DE16A0A494025@AdobeID at 2022-09-12T14:41:55.393Z`
-
-### Deleting from RDE {#deleting-from-rde}
-
-You can use the CLI tooling to delete configurations and bundles that you previously deployed to the RDE. Use the `status` command for a list of what can be deleted, which includes the `bsn` for bundles and `pid` for configurations to reference in the delete command.
-
-For example, if `com.adobe.granite.demo.MyServlet.cfg.json` has been installed, the `bsn` is just `com.adobe.granite.demo.MyServlet`, without the **cfg.json** suffix.
-
-Deletion of content packages or content files is not supported. To remove them, reset the RDE, which returns it to a default state.
-
-See the example below for more details:
-
-```
-aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
-#13: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on author - done by karl at 2022-09-12T22:01:01.955Z
-#14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
-```
-
-For more information and demonstration, see the video tutorial [how to use RDE commands (10:01)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use).
 
 ## Logs {#rde-logging}
 
