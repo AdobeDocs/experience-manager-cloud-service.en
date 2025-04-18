@@ -163,9 +163,7 @@ If you do not receive an email from New Relic, do the following:
 * If applicable, [add New Relic to your email allowlist](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
 * If neither suggestion helps, provide feedback on the support ticket.
 
-## Limitations {#limitations}
-
-The following limitations apply to adding users to New Relic One:
+## Usage notes {#usage-notes}
 
 * A maximum of 30 users can be added. If the maximum number of users has been reached, remove users to be able to add new users.
 * Users added to New Relic are of the type **Basic**. See the [New Relic documentation for details](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-type/).
@@ -173,7 +171,7 @@ The following limitations apply to adding users to New Relic One:
 
 >[!NOTE]
 >
->If no **user login** activity is detected in your New Relic One sub-account for 30 days or more, the APM agent is stopped and data will not be sent from AEM Cloud Service to New Relic.  **Data will not be sent again until your sub-account is reactivated.**
+>If no **user login** activity is detected in your New Relic One sub-account for 30 days or more, the APM agent is stopped. Data is not sent from AEM Cloud Service to New Relic. *Data is not sent again until your sub-account is reactivated.*
 >
 >Follow the same steps in the [Activate Your New Relic One Sub-Account](#activate-sub-account) section of this document to re-activate your New Relic One sub-account.
 
