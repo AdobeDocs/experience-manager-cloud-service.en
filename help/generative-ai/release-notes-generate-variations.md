@@ -27,7 +27,7 @@ You can [access Generate Variations](/help/generative-ai/generate-variations-int
 
 >[!NOTE]
 >
->The previous version of [Generate Variations can still be directly accessed](/help/generative-ai/generate-variations.md).
+>It is recommended that you use version 3.0.0, as although the previous version of [Generate Variations can still be directly accessed](/help/generative-ai/generate-variations.md), it will be deprecated in the future.
 
 ### 2.2.0 {#release-notes-2-2-0}
 
