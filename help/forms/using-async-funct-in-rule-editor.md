@@ -33,8 +33,6 @@ You can implement the asynchronous functions for Adaptive Forms using the follow
 
 ## How to use the Async Function Call rule type?
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
-
 You can write the [custom functions](/help/forms/custom-function-core-component-create-function.md) for asynchronous operations and configure the asynchronous functions using the **[!UICONTROL Async Function Call]** rule type in the rule editor.
 
 ### Exploring the Async Function Call rule type through a use case
