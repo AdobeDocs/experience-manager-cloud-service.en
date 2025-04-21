@@ -153,7 +153,7 @@ Execute these steps to add text layers to the canvas:
 1. Select **[!UICONTROL Smart Text Resize]** in the Properties panel to  automatically adjust the text length and font size to optimally fit in the designated area. 
 ![best customizable banners](/help/assets/assets/add-text-layer.png)
 
-See the [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) to reposition, resize, rotate or delete the layer. Format your text to the required font, size, color, style, alignment (in the layer) by changing their values in the respective fields under the **[!UICONTROL Text]** section of the panel. See [step 3 in Create [!DNL Dynamic Media] template](#how-to-create-dynamic-media-template) section for font related information. 
+See the [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) to reposition, resize, rotate or delete the layer. Format your text to the required font, size, color, style, alignment (in the layer) by changing their values in the respective fields under the **[!UICONTROL Text]** section of the panel. The **[!UICONTROL Font Family]** displays the older fonts that were reprocessed and the newly uploaded and published fonts. See [step 3 in Create [!DNL Dynamic Media] template](#how-to-create-dynamic-media-template) section above for more information.
 
 ### Edit or delete a layer {#edit-or-delete-a-layer}
 
