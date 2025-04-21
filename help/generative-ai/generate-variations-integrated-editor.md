@@ -29,7 +29,7 @@ You can [access Generate Variations](#access-generate-variations) from the follo
 
 >[!NOTE]
 >
->The standalone version of [Generate Variations can still be directly accessed](/help/generative-ai/generate-variations.md).
+>It is recommended that you use this version, as although the standalone version of [Generate Variations can still be directly accessed](/help/generative-ai/generate-variations.md), it will be deprecated in the future.
 
 You can then:
 
