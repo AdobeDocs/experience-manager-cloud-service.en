@@ -9,7 +9,7 @@ description: Learn how to get started with Refactoring Tools in AEM as a Cloud S
 <!-- Alexandru: duplicate contextualhelp id, drafting this for now
 
 >[!CONTEXTUALHELP]
->id="aemcloud_ctt_download"
+>id="aemcloud_rs_upload"
 >title="Download"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html" text="Release Notes"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
@@ -38,26 +38,27 @@ When customers first access the **Refactoring Tools**, they are presented with a
 1. **Access the Project Upload Page**  
    Click on the **Project Upload** button in the empty state to start the upload process.
 
-   ![image](/help/journey-migration/refactoring-tools/assets/rscam2.png)
+   ![image](/help/journey-migration/refactoring-tools/assets/rscam3.png)
 
 1. **Upload Your Source Code**
     - In the upload dialog, select your source code ZIP file.
     - Click **Upload** to begin.
     - The upload progress will be displayed in the dialog. Duration depends on your project's size.
 
-   ![image](/help/journey-migration/refactoring-tools/assets/rscam3.png)
+   ![image](/help/journey-migration/refactoring-tools/assets/rscam4.png)
 
 1. **Inspection Process**
     - After uploading, the **Inspection Process** begins automatically in the background.
     - The **Source Code View** will now display your uploaded project and its inspection status.
 
-1. **Inspection Status**  
+1. **Inspection Status**  The inspection process is designed to simplify the execution of refactoring tools by reducing the overhead of manual configurations.
+
    The inspection will show one of the following statuses:
     - **Running** – The inspection is in progress.
     - **Ready** – The inspection is complete; you may now run refactoring tools.
     - **Failed** – An error occurred. Click the project to review the inspection report and resolve any issues.
 
-   ![image](/help/journey-migration/refactoring-tools/assets/rscam4.png)
+   ![image](/help/journey-migration/refactoring-tools/assets/rscam5.png)
 
 >[!NOTE]
 >Uploading a new project will delete the existing one. Ensure any necessary data is saved before proceeding.
@@ -96,9 +97,9 @@ When you click the **Refactoring Job** tab, you will see a list of existing jobs
 
 When the job is completed successfully, the **Download** button becomes available, allowing you to retrieve:
 
-- The refactored project
-- Activity logs
-- Findings report
+- **The Refactored Project**: This is the updated code after the transformation is applied. Customers can download the latest code for their project.
+- **Activity Logs**: During the job execution, all steps performed by the tool and the changes made are logged as part of this.
+- **Findings Report**: This report contains items that were not fully executed by the tool but still need to be addressed. All such changes are logged here.
 
 ![image](/help/journey-migration/refactoring-tools/assets/rscam9.png)
 
