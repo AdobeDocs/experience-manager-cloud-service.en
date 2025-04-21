@@ -17,6 +17,7 @@ See also [Configure a Dynamic Media Company alias account](/help/assets/dynamic-
 >[!IMPORTANT]
 >
 >**Dynamic Media (Scene7) not supported in Enhanced Security environments**
+>
 >Dynamic Media (Scene7) on AEM as a Cloud Service is not HIPAA-ready and cannot be used in AEM environments where Enhanced Security is enabled.
 >
 >Starting with the April 2025 AEM as a Cloud Service release, a technical restriction prevents Dynamic Media (Scene7) from being configured in these environments. This restriction includes the following:
