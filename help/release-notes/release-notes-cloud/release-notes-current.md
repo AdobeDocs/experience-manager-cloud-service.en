@@ -68,22 +68,27 @@ See [Bandwidth and Storage, Types of reports](https://experienceleague.adobe.com
 AEM Assets now supports mapping a tag property in a metadata form to custom metadata. In addition, as an administrator, you can restrict the availability of tags to users by restricting access to a specific root tag and the tags that exist under the root tag.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+
+### Pre-release features 
+
+* **Universal Editor - Form Fragments**: The Universal Editor now allows you to create and reuse Form Fragments for Adaptive Forms. These fragments are reusable form sections (e.g., contact details, consent fields) that can be built once and applied across multiple forms. This feature streamlines form creation, ensures consistency, and improves authoring efficiency.
  
+* **SharePoint Document Library - Save Attachments with Original Filenames**: You now have the option to save form attachments using their original filenames when storing them in a SharePoint Document Library. This enhancement simplifies the identification and management of uploaded files.
+
+* **Rule Editor**:
+    * **Binary Condition with Click Event in "When" Clause:** The Rule Editor now allows combining a button click event (_Is Clicked_) with other conditions within the "When" clause. This enables more precise control over rule execution based on user interaction and other factors. Note: When using multiple conditions, the click event must be the first condition listed.
+    * **Validation Conditions for Fields and Panels**: The Rule Editor now includes _IsValid_ and _IsNotValid_ conditions. These allow you to check the validation status of specific fields or entire panels (including layouts like Horizontal Tabs, Vertical Tabs, Accordions, and Wizards), facilitating improved form navigation and user experience based on validation results.
+
 ### Early Access features in AEM Forms {#forms-new-early-access-features}
 
 The AEM Forms Early Access Program program offers a unique opportunity to you to get exclusive access to cutting-edge innovations, and help shape their development.
 
 This release notes lists the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
 
-#### HTML Email Templates in Adaptive Forms
+#### Adobe Experience Platform (AEP) Integration with Forms
 
-Adaptive Forms allows you to use [HTML email templates](/help/forms/html-email-templates-in-adaptive-forms.md). HTML email templates enable you to send rich, personalized, and visually appealing emails when a form is submitted. These emails can be customized with form data and enhanced using various email tags, such as images and links. With Adaptive Forms, you can either upload a file containing an HTML template or use a plain-text editor to create these templates.
+Integration capabilities between Forms and AEP are now available for early adopters.
 
-![HTML email templates](/help/forms/assets/html-email.png)
-
-#### Enhanced Cloud Storage Support: Direct PDF Upload to Azure Blob Storage
-
-AEM Forms Document Generation APIs now let you [directly upload generated PDF documents](/help/forms/early-access-ea-features.md#doc-generation-api) to Azure Blob Storage. This enhancement streamlines storage and retrieval, improving efficiency and integration with cloud workflows.
 
 ## CIF Add-on {#cloud-services-cif}
 
