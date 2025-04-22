@@ -50,22 +50,22 @@ Further completing the list new, client-side user interfaces when working with A
 
 ### New features in Dynamic Media {#new-features-dynamic-media}
 
-**Long form support for videos delivered using Dynamic Media with Open API**
-
-Dynamic Media with OpenAPI now supports long form videos. The long form videos can support up to 50GB and 2 hours.
-
-### Dynamic Media Classic {#dmc} 
-
-The Bandwidth tab in the Dynamic Media Classic reporting dashboard is no longer supported as of April 2025. 
-
-See [Bandwidth and Storage, Types of reports](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports). 
+Rick to update the note for Scene 7 HIPAA customers
 
 
 ## New features in Assets view {#new-features-assets-view}
 
-**Support for root tags**
+**Asset relations**
 
-AEM Assets now supports mapping a tag property in a metadata form to custom metadata. In addition, as an administrator, you can restrict the availability of tags to users by restricting access to a specific root tag and the tags that exist under the root tag.
+The Assets View now supports viewing and editing asset relations in a simplified asset Details panel. Easily add relationships like Source and Derivative to content so that users can more effectively find relevant hero content.
+
+![Assets relation example](/help/assets/assets/asset-relations-example.png)
+
+**Compare versions of an asset**
+
+You can now quickly select and compare any version of an asset with its latest version using Assets view.
+
+![compare versions of asset](/help/assets/assets/version-compare2.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
  
