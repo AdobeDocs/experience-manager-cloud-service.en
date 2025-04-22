@@ -71,3 +71,13 @@ When you [add the IP Allow List](/help/implementing/cloud-manager/ip-allow-lists
 To avoid disruption of running the front-end pipeline, ensure that this Cloud Manager IP Allow List is added. Then, apply the list to the Author environment *before* you enable the pipeline.
 
 See [Apply IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) and [Enable front-end pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) for more information.
+
+### The Universal Editor and IP Allow Lists {#universal-editor}
+
+If you intend to use the Universal Editor to author your content, you must add the IP addresses that the Universal Editor Service uses to an Allow List and apply it.
+
+1. Retrieve the IP addresses used by the Universal Editor Service from the following API endpoint: `http://universal-editor-service.adobe.io/ip-ranges`.
+1. Create an allow list with those IP addresses, naming it `Universal Editor Service` or similar.
+1. Apply the `Universal Editor Service` allow list.
+
+The list of IP addresses used by the Universal Editor Service is subject to change and you must update your allow list accordingly.
