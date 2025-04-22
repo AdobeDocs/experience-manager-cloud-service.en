@@ -4,6 +4,9 @@ description: Learn how to manage taxonomy data for using tags with your AEM with
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 
 # Managing Taxonomy Data {#managing-taxonomy-data}
