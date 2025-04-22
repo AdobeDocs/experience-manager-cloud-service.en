@@ -30,11 +30,7 @@ After adding, [IP Allow Lists can be applied or unapplied](/help/implementing/cl
 >
 >If no IP Allow List is applied, by default all IP addresses are allowed. When an IP Allow List is applied, no IP addresses are allowed except for addresses on the IP Allow List.
 
-## Limitations {#limitations}
-
-Before using IP Allow Lists, understand the following limitations in their functionality, usage, and effect on other features.
-
-### General Limitations of IP Allow Lists {#general}
+## Usage notes {#usage-notes}
 
 * A maximum of 50 IP Allow Lists can be added to your program.
 * A maximum of 50 IP/CIDR addresses can be added to each IP Allow List.
@@ -75,7 +71,3 @@ When you [add the IP Allow List](/help/implementing/cloud-manager/ip-allow-lists
 To avoid disruption of running the front-end pipeline, ensure that this Cloud Manager IP Allow List is added. Then, apply the list to the Author environment *before* you enable the pipeline.
 
 See [Apply IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) and [Enable front-end pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) for more information.
-
-### Universal Editor and IP Allow Lists {#universal-editor}
-
-{{ip-allow-lists-ue}}

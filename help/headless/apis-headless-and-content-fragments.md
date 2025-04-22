@@ -9,7 +9,7 @@ exl-id: 95aecd30-566a-42a9-b97a-7efe45fd389c
 
 Adobe Experience Manager (AEM) as a Cloud Service offers multiple APIs for both structured content delivery from Content Fragments and Content Fragment management. See the individual pages for further details of the specific APIs.
 
-* [AEM REST OpenAPI for Content Fragment Delivery](/help/headless/aem-rest-openapi-content-fragment-delivery.md )
+* [AEM Content Fragment Delivery with OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)
   * This API creates JSON responses for delivering structured content from Content Fragments in AEM. 
   * It uses a path to a content fragment as endpoint. 
   * This API is REST based.
