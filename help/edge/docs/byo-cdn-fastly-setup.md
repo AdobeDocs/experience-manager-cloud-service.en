@@ -4,6 +4,9 @@ title: Fastly Setup
 feature: Edge Delivery Services
 exl-id: 90986139-9c7f-4b63-b24d-c199b4d4dff0
 role: Admin, Architect, Developer
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 # Fastly Setup
 

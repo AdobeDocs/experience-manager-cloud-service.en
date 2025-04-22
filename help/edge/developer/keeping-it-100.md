@@ -4,6 +4,9 @@ title: Keeping It 100, Web Performance
 feature: Edge Delivery Services
 exl-id: f808ae16-15b7-48ce-a477-76268ba005ec
 role: Admin, Architect, Developer
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 # Keeping It 100, Web Performance
 
