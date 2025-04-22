@@ -44,13 +44,27 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 **New Content Fragment Model Admin UII**
 
-Further completing the list new, client-side user interfaces when working with AEM Content Fragments, a new admin UI is now avaiable for content fragment models. The new UI provides a clean and modern list view that allows searching models with filters, and that shows model tags and which content fragments exist that are based on a certain model. Documentation can be found [here](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md). 
+Further completing the list of new, client-side user interfaces when working with AEM Content Fragments, a new admin UI is now available for content fragment models. The new UI provides a clean and modern list view that allows searching models with filters, and that shows model tags and which content fragments exist that are based on a certain model. Documentation can be found [here](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md). 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New features in Dynamic Media {#new-features-dynamic-media}
+### Dynamic Media (Scene7) {#dynamic-media-scene7}
 
-Rick to update the note for Scene 7 HIPAA customers
+**Dynamic Media (Scene7) not supported in Enhanced Security environments**
+
+Dynamic Media (Scene7) on AEM as a Cloud Service is not HIPAA-ready and cannot be used in AEM environments where Enhanced Security is enabled.
+
+Starting with the April 2025 AEM as a Cloud Service release, a technical restriction prevents Dynamic Media (Scene7) from being configured in environments with Enhanced Security. As a result, the **Dynamic Media Configuration** card under **Tools** > **Cloud Services** is no longer visible in these environments.
+
+Additionally, customers using AEM 6.5 should be aware that the Dynamic Media (Scene7) stack is not HIPAA-ready.
+
+### Dynamic Media Classic {#dynamic-media-classic}
+
+**Reporting**
+
+The Bandwidth tab in the Dynamic Media Classic reporting dashboard is no longer supported as of April 2025. 
+
+See [Bandwidth and Storage, Types of reports](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports). 
 
 
 ## New features in Assets view {#new-features-assets-view}
@@ -63,7 +77,7 @@ The Assets View now supports viewing and editing asset relations in a simplified
 
 **Compare versions of an asset**
 
-You can now quickly select and compare any version of an asset with its latest version using Assets view.
+You can now quickly select and compare any version of an asset with its latest version using the Assets view.
 
 ![compare versions of asset](/help/assets/assets/version-compare2.png)
 
@@ -89,13 +103,13 @@ AEM Forms Document Generation APIs now let you [directly upload generated PDF do
 
 ### Enhancements {#enhancements-cif}
 
-* Adding product variant selection for CIF  product reference data type
+* Adding product variant selection for CIF product reference data type
 * [Experimental]: JSON+LD in CIF Core Components in PDPs
 * [Experimental]: CIF ability to clear cache
 
 ### Bug fixes {#bug-fixes-cif}
 
-* Fix search issue on product field
+* Fix search issue in product field
 * Product url format not working as expected for #variant_sku
 * Unable to Add More Than 20 SKUs to Product List Component
 
@@ -113,7 +127,7 @@ Watch this video to learn how to configure an authenticated API for later usage:
 
 ### Block traffic based on region, continent, and organization {#blocktraffic}
 
-Using Traffic Filter Rules, block traffic based on [newly exposed request properties](/help/security/traffic-filter-rules-including-waf.md#condition-structure):`clientRegion` and `clientContinent` augment the already-supported `clientCountry` to match based on geography, while `clientAsName` and `clientAsNumber` match Autonomous Systems to identify laerge ISPs, companies, or cloud providers.
+Using Traffic Filter Rules, block traffic based on [newly exposed request properties](/help/security/traffic-filter-rules-including-waf.md#condition-structure):`clientRegion` and `clientContinent` augment the already-supported `clientCountry` to match based on geography, while `clientAsName` and `clientAsNumber` match Autonomous Systems to identify large ISPs, companies, or cloud providers.
 
 ### Java 21 support {#java21}
 
