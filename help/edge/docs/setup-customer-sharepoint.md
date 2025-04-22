@@ -4,6 +4,9 @@ title: How to use Sharepoint
 feature: Edge Delivery Services
 exl-id: c0feb7bc-5418-4f93-bcfc-072cfe2e97bd
 role: Admin, Architect, Developer
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 # How to use Sharepoint
 
