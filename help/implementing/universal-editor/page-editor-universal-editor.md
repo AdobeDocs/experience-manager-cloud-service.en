@@ -1,13 +1,13 @@
 ---
 title: Page Editor and Universal Editor
-description: The Page Editor remains supported by Adobe, but the Universal Editor bring exiting possibilities to your new projects.
+description: The Page Editor remains supported by Adobe, but the Universal Editor bring exciting possibilities to your new projects.
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
 ---
 # Page Editor and Universal Editor {#page-editor-universal-editor}
 
-The Page Editor remains supported by Adobe, but the Universal Editor bring exiting possibilities to your new projects.
+The Page Editor remains supported by Adobe, but the Universal Editor bring exciting possibilities to your new projects.
 
 ## Background {#background}
 
@@ -40,17 +40,17 @@ Because the feature gap between the two editors is constantly shrinking, be sure
 
 ### Persistence {#persistence}
 
-||Page Editor|Note|Universal Editor|Notes|
+||Page Editor|Notes|Universal Editor|Notes|
 |---|---|---|---|---|
 |Editing Page components|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
 |Editing [Content Fragments](/help/assets/content-fragments/content-fragments.md)|[!BADGE Unavailable]{type=Negative}||[!BADGE Available]{type=Positive}|Including inserting new and reordering fragments|
 
 ### Capabilities {#capabilities}
 
-||Page Editor|Note|Universal Editor|Notes|
+||Page Editor|Notes|Universal Editor|Notes|
 |---|---|---|---|---|
 |Page Templates|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|The Universal Editor is agnostic of the template system used. However, the typical implementation pattern favors developer-defined templates, as modern frontend tooling makes it much easier for developers to define and maintain template logic directly in code. |
-|WYSIWYG Editing|[!BADGE Available]{type=Positive} Limited to Pages||[!BADGE Available]{type=Positive}|Supporting Pages and Content Fragments|
+|WYSIWYG Editing|[!BADGE Available]{type=Positive}|Limited to Pages|[!BADGE Available]{type=Positive}|Supporting Pages and Content Fragments|
 |[Generate Variations](/help/generative-ai/generate-variations.md)|[!BADGE Unavailable]{type=Negative}||[!BADGE Available]{type=Positive}|[Available as an extension](/help/implementing/universal-editor/extending.md)|
 |Insert new block|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
 |Reorder Block|[!BADGE Available]{type=Positive}|Possible with in-context drag-and-drop, but not in the "tree view" side panel|[!BADGE Available]{type=Positive}|Possible via drag-and-drop in the "tree view" side panel, but not yet in-context (planned)|
