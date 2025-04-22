@@ -1072,14 +1072,9 @@ user-guide-title: AEM as a Cloud Service
     + Sidekick {#sidekick}
       + [Using Sidekick](/help/edge/docs/sidekick.md)
       + [Installing Extension](/help/edge/docs/sidekick-extension.md)
-      + [Project Configurator](https://www.aem.live/tools/sidekick/)
       + [Sidekick Library](/help/edge/docs/sidekick-library.md)
     + [FAQ](/help/edge/docs/faq.md)
-    + [Admin API](https://www.aem.live/docs/admin.html)
-    + [AEM Status](https://status.adobe.com)
     + Tools {#tools}
-      + [AEM Sidekick Chrome Extension](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
-      + [Github Bot](https://github.com/apps/aem-code-sync)
       + [Audit Log](/help/edge/docs/auditlog.md)
 + Headless {#headless}
   + [What is a Headless CMS?](/help/headless/what-is-headless.md)
