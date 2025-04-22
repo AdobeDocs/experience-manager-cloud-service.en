@@ -4,6 +4,9 @@ description: Learn best practice recommendations on how to set up a project in a
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 # Repoless Multi Site Management {#repoless-msm}
 

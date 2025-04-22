@@ -4,6 +4,9 @@ description: Learn how to set up a separate sites for your staging and productio
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 # Repoless Stage and Prod Environments {#repoless-stage-prod}
 
