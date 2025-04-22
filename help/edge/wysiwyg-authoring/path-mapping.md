@@ -4,6 +4,9 @@ description: Learn how to map page paths used on the AEM authoring instance to p
 feature: Edge Delivery Services
 role: User
 exl-id: 3d68135d-e84c-4bf4-93d1-38a0be70ce4a
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 # Path Mapping for Edge Delivery Services {#path-mapping}
 

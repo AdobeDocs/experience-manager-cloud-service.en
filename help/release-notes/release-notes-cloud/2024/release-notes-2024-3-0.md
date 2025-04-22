@@ -199,7 +199,7 @@ Now you can email **<aemcs-cdn-config-adopter@adobe.com>** to join the early ado
 
 In addition to the recently released [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md), which include the optionally licensable Web Application Firewall (WAF) rules, there's an opportunity to use the Configuration Pipeline to declare and deploy other types of CDN configuration. [Learn more](/help/implementing/dispatcher/cdn-configuring-traffic.md) and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>** to gain access to:
 
-* 301/302 client-side redirects
+* 301/302 server-side redirects
 * proxying requests at the edge to arbitrary origins (such as non-AEM applications)
 * URL transformations
 * setting or modifying request or response headers
