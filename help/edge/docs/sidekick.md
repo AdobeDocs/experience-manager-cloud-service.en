@@ -4,6 +4,9 @@ title: Using the AEM Sidekick
 feature: Edge Delivery Services
 exl-id: 9a833adc-0b69-4f58-94d3-7a25cf774703
 role: Admin, Architect, Developer
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 # Using the AEM Sidekick
 
