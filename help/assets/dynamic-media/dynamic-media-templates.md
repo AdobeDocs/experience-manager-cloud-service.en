@@ -44,7 +44,7 @@ exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
     </tr>
 </table>
 
-Create real time customizable templates for your banners and flyers using [!DNL Dynamic Media] templates, a WYSIWYG template editor. Use your [!DNL Dynamic Media] template in downstream applications. A [!DNL Dynamic Media] template includes image and text layers. Add parameters to the image and text layers of the template and use [[!DNL Dynamic Media] URLs](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) to reposition and resize the layer and update its content in real-time. 
+Create real time customizable templates for your banners and flyers using [!DNL Dynamic Media] templates, a WYSIWYG template editor. Publish your [!DNL Dynamic Media] template and use it in downstream applications. A [!DNL Dynamic Media] template includes image and text layers. Add parameters to the image and text layers of the template and use [[!DNL Dynamic Media] URLs](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) to reposition and resize the layer and update its content in real-time. 
 
 Some of the key features include:
 
@@ -77,12 +77,13 @@ To create a [!DNL Dynamic Media] template, you must have:
    * On the **[!UICONTROL Edit [!DNL Dynamic Media] Configuration page]**, **[!UICONTROL [!DNL Dynamic Media] sync mode]** that is set to **[!UICONTROL Disabled by default]**, is not applied to all AEM folders (**[!UICONTROL Sync all content]** is unchecked). See [configuring Dynamic Media Cloud Service](/help/assets/dynamic-media/config-dm.md) for more information.
    * **[!UICONTROL [!DNL Dynamic Media] sync mode]** is set to **[!UICONTROL Enable for subfolders]** for the destination folder or subfolder where you will save the template after creation. See [configuring [!DNL Dynamic Media] Cloud Service](/help/assets/dynamic-media/config-dm.md) for more information.
 
-## Create [!DNL Dynamic Media] WYSIWYG template{#how-to-create-dynamic-media-wysiwyg-template}
+## Create [!DNL Dynamic Media] template{#how-to-create-dynamic-media-template}
 
 Execute the following steps to create a [!DNL Dynamic Media] template:
 
 1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. The folder tree in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Save your [!DNL Dynamic Media] template in this [!UICONTROL Dynamic Media Assets] folder.
-1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them for creating the template. 
+1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them in creating the template. Publishing images is required to generate the template's delivery URL, after creating the template, which can be used in downstream applications.
+1. [Execute the asset uploading and publishing steps](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) to upload and publish your font file simultaneously to AEM and Dynamic Media to use a font other than the default Adobe Sans F2 font family in the text layer. [The supported font file formats are, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the older fonts (On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**) to use them in creating the template. See [Fonts](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) to know more about fonts.
 1. [Create a blank canvas](#create-a-canvas)
 1. [Add images to the canvas](#add-images-to-the-canvas)
 1. [Add text layers to the canvas](#add-text-to-the-canvas)
@@ -102,6 +103,7 @@ Execute these steps to create a blank canvas:
    >[!NOTE]
    >
    >  The template is saved in the location where you create it. On [!DNL Assets View] home page, select **[!UICONTROL Dynamic Media Assets]** and click **[!UICONTROL Create Template]** to save the template in **[!UICONTROL Dynamic Media Assets]** root folder.
+ 
 1. Specify a template name, define the canvas width and height, and click **[!UICONTROL Create]**. A blank canvas displays with menu options on both sides to use for creating the template. Hover over the menu options to see their tooltip. 
 ![real-time customizable template](/help/assets/assets/blank-canvas-page.png)
 
@@ -115,18 +117,18 @@ Execute these steps to create a blank canvas:
 * ![customizable templates](/help/assets/assets/add-text.svg): Click to add texts to the canvas.
 * ![customizable templates](/help/assets/assets/show-layers-list.svg): Click to see the list of all layers (image and text) on the canvas. Every image and text added to the canvas is represented as a separate layer.
 
-**Menu options on the left pane:** Use these options for common editor actions as mentioned below.
+**Menu options on the left pane:** Use these options for the following common editor actions.
 
-* ![DM Templates](/help/assets/assets/layer-selector.svg): Select a layer.
-* ![templates that support customization](/help/assets/assets/bring-forward.svg): Click to bring a selected layer forward or press **Ctrl** + **]** (Windows) or **Cmd** + **]** (Mac).
-* ![how to create a template that can be customized easily](/help/assets/assets/send-backward.svg): Click to send a selected layer backward or press **Ctrl** + **[** (Windows) or **Cmd** + **[** (Mac).
-* ![create a template that can be customized instantly](/help/assets/assets/undo.svg): Click to undo the last action or press **Ctrl** + **Z** (Windows) or **Cmd** + **Z** (Mac).
-* ![template to create banners rapidly](/help/assets/assets/redo.svg): Click to redo the last action or press **Ctrl** + **Y** (Windows) or **Cmd** + **Y** (Mac).
-* ![template to create flyers rapidly](/help/assets/assets/zoom-in.svg): Click to zoom in the canvas or press **Ctrl** + **+** (Windows) or Cmd + **+** (Mac).
-* ![template to create banners rapidly](/help/assets/assets/Zoom-out.svg): Click to zoom out the canvas or press **Ctrl** + **-** (Windows) or **Cmd** + **-** (Mac).
+* ![DM Templates](/help/assets/assets/layer-selector.svg): Select ![DM Templates](/help/assets/assets/layer-selector.svg) and click a layer on the canvas to select it.
+* ![templates that support customization](/help/assets/assets/bring-forward.svg): Click ![templates that support customization](/help/assets/assets/bring-forward.svg) or use keyboard shortcut, **Ctrl** + **]** (Windows) or **Cmd** + **]** (Mac) to bring a selected layer forward. 
+* ![how to create a template that can be customized easily](/help/assets/assets/send-backward.svg): Click ![how to create a template that can be customized easily](/help/assets/assets/send-backward.svg) or use keyboard shortcut, **Ctrl** + **[** (Windows) or **Cmd** + **[** (Mac) to send a selected layer backward.
+* ![create a template that can be customized instantly](/help/assets/assets/undo.svg): Click ![create a template that can be customized instantly](/help/assets/assets/undo.svg) or use keyboard shortcut, **Ctrl** + **Z** (Windows) or **Cmd** + **Z** (Mac) to undo the last action.
+* ![template to create banners rapidly](/help/assets/assets/redo.svg): Click ![template to create banners rapidly](/help/assets/assets/redo.svg) or use keyboard shortcut, **Ctrl** + **Y** (Windows) or **Cmd** + **Y** (Mac) to redo the last action.
+* ![template to create flyers rapidly](/help/assets/assets/zoom-in.svg): Click ![template to create flyers rapidly](/help/assets/assets/zoom-in.svg) or use keyboard shortcut, **Ctrl** + **+** (Windows) or **Cmd** + **+** (Mac) to zoom in the canvas.
+* ![template to create banners rapidly](/help/assets/assets/Zoom-out.svg): Click ![template to create banners rapidly](/help/assets/assets/Zoom-out.svg) or use keyboard shortcut, **Ctrl** + **-** (Windows) or **Cmd** + **-** (Mac) to zoom out the canvas.
 * Press **Backspace** or **delete** to delete the selected layer if no text or property is being edited.
 
-Click ![template to create flyers rapidly](/help/assets/assets/show-layers-list.svg) **>** more options (![](/help/assets/assets/three-dots.svg)) on the Canvas layer to edit the canvas dimensions anytime while creating the template.
+Click ![template to create flyers rapidly](/help/assets/assets/show-layers-list.svg) and select more options (![](/help/assets/assets/three-dots.svg)) on the Canvas layer to edit the canvas dimensions anytime while creating the template.
 ![](/help/assets/assets/edit-canvas1.png)
 
    >[!NOTE]
@@ -137,7 +139,7 @@ Click ![template to create flyers rapidly](/help/assets/assets/show-layers-list.
 
 Execute these steps to add images to the canvas:
 
-1. Click ![create a banner in no time](/help/assets/assets/add-image.svg) to display the [Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) panel. The panel displays the images in your AEM Assets instance that are synced to [!DNL Dynamic Media]. 
+1. Click ![create a banner in no time](/help/assets/assets/add-image.svg) to open the [Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) panel. The panel displays the images in your AEM Assets instance that are synced to [!DNL Dynamic Media]. 
 1. Browse the panel or use keywords in the search bar to find a specific image.
 1. Drag and drop an image on the canvas to use it. See the [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) for resizing or repositioning a layer on the canvas.
 ![create a banner within seconds](/help/assets/assets/add-image-to-canvas.png)
@@ -151,11 +153,7 @@ Execute these steps to add text layers to the canvas:
 1. Select **[!UICONTROL Smart Text Resize]** in the Properties panel to  automatically adjust the text length and font size to optimally fit in the designated area. 
 ![best customizable banners](/help/assets/assets/add-text-layer.png)
 
-See the [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) to reposition, resize, rotate or delete the layer. Format your text to the required font, size, color, style, alignment (in the layer) by changing their values in the respective fields under the **[!UICONTROL Text]** section of the panel.
-
-   >[!NOTE]
-   >
-   > To use a font other than the default Adobe Sans F2 font family, you need to upload and publish the font file to [!AEM Assets] and [!DNL Dynamic Media]. If you have some old fonts in your instance, ensure to [reprocess](/help/assets/reprocessing-assets-view.md) to view them in the Template editor.
+See the [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) to reposition, resize, rotate or delete the layer. Format your text to the required font, size, color, style, alignment (in the layer) by changing their values in the respective fields under the **[!UICONTROL Text]** section of the panel. See [step 3 in Create [!DNL Dynamic Media] template](#how-to-create-dynamic-media-template) section for font related information. 
 
 ### Edit or delete a layer {#edit-or-delete-a-layer}
 
@@ -354,3 +352,5 @@ Watch this step by step video to learn how to add a CTA link to a template layer
 
 1. Explore [[!DNL Dynamic Media] and its capabilities](/help/assets/dynamic-media/dynamic-media.md)
 1. Explore [[!DNL Dynamic Media] with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)
+
+
