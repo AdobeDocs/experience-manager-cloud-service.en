@@ -12,7 +12,6 @@ role: Admin, Architect, Developer
 When applying IP Allow Lists, all IP ranges included in the list's definition are associated with an author or publish service within an environment. Unapplying a list is the inverse to this process. 
 
 {{add-cm-allowlist-frontend-pipeline}}
-
 {{ip-allow-lists-ue}}
 
 ## Apply IP Allow Lists {#applying}

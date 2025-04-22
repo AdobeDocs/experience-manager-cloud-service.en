@@ -4,6 +4,9 @@ title: What is the Sidekick Library?
 feature: Edge Delivery Services
 exl-id: 013f67b7-9841-48dd-a9e5-9971ba75d515
 role: Admin, Architect, Developer
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 # What is the Sidekick Library?
 

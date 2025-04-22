@@ -4,6 +4,9 @@ title: Cloudflare Setup
 feature: Edge Delivery Services
 exl-id: b8240a05-091e-46ba-b0e7-d04737bd63e3
 role: Admin, Architect, Developer
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 # Cloudflare Setup
 

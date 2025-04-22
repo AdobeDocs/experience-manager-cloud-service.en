@@ -4,6 +4,9 @@ title: Placeholders
 feature: Edge Delivery Services
 exl-id: 392e2323-8d6f-40eb-a68e-51baeee7fc2d
 role: Admin, Architect, Developer
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 # Placeholders
 

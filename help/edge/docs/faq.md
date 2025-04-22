@@ -4,6 +4,9 @@ title: Frequently Asked Questions
 feature: Edge Delivery Services
 exl-id: 1fd0f7a2-dcc8-4600-8353-7750ed6a2937
 role: Admin, Architect, Developer
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 # Frequently Asked Questions
 
