@@ -20,10 +20,9 @@ See also [Configure a Dynamic Media Company alias account](/help/assets/dynamic-
 >
 >Dynamic Media (Scene7) on AEM as a Cloud Service is not HIPAA-ready and cannot be used in AEM environments where Enhanced Security is enabled.
 >
->Starting with the April 2025 AEM as a Cloud Service release, a technical restriction prevents Dynamic Media (Scene7) from being configured in these environments. This restriction includes the following:
+>Starting with the April 2025 AEM as a Cloud Service release, a technical restriction prevents Dynamic Media (Scene7) from being configured in environments with Enhanced Security. As a result, the **Dynamic Media Configuration** card under **Tools** > **Cloud Services** is no longer visible in these environments.
 >
->* A UI block that disables the ability to select Dynamic Media (Scene7) when Enhanced Security is enabled.
->* A back-end safeguard that prevents Dynamic Media (Scene7) from being configured using any other means in these environments.
+>Additionally, customers using AEM 6.5 should be aware that the Dynamic Media (Scene7) stack is not HIPAA-ready.
 
 ## Architecture diagram of Dynamic Media {#architecture-diagram-of-dynamic-media}
 
