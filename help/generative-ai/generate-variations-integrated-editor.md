@@ -55,6 +55,10 @@ Before using Generate Variations you are recommended to read the [Adobe Experien
 
 [Usage of Generate Variations](#generative-action-usage) is tied to the consumption of generative actions.
 
+>[!NOTE]
+>
+>See the [Security Fact Sheet for details related to Generate Variation in AEM](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-sites-generate-variations-security-fact-sheet.pdf).
+
 ## Overview {#overview}
 
 When you open Generate Variations integrated into an editor, you see the extension as a floating panel that has three tabs.  
