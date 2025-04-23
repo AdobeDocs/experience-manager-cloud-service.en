@@ -1,13 +1,13 @@
 ---
 title: Page Editor and Universal Editor
-description: The Page Editor remains supported by Adobe, but the Universal Editor bring exciting possibilities to your new projects.
+description: The Page Editor remains supported by Adobe, but the Universal Editor brings exciting possibilities to your new projects.
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
 ---
 # Page Editor and Universal Editor {#page-editor-universal-editor}
 
-The Page Editor remains supported by Adobe, but the Universal Editor bring exciting possibilities to your new projects.
+The Page Editor remains supported by Adobe, but the Universal Editor brings exciting possibilities to your new projects.
 
 ## Background {#background}
 
