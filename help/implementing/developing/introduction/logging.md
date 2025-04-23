@@ -89,7 +89,7 @@ When ERROR logging is active, only statements indicating failures are logged. ER
 </tr>
 </table>
 
-While Java logging supports several other levels of logging granularity, AEM as a Cloud Service recommends using the three levels described above. 
+While Java logging supports several other levels of logging granularity, AEM as a Cloud Service recommends using the three levels described above.
 
 AEM Log levels are set per environment type via OSGi configuration, which in turn are committed to Git, and deployed via Cloud Manager to AEM as a Cloud Service. Because of this, it is best to keep log statements consistent and well known for environment types to ensure the logs available via AEM as Cloud Service are available at the optimal log level without requiring redeployment of application with the updated log level configuration.
 
@@ -405,7 +405,7 @@ To set the log level per environment, use the appropriate conditional branch in 
 
 ```
 Define REWRITE_LOG_LEVEL debug
-  
+
 <IfDefine ENVIRONMENT_STAGE>
   ...
   Define REWRITE_LOG_LEVEL warn
@@ -483,7 +483,7 @@ To set the log level per environment, use the appropriate conditional branch in 
 
 ```
 Define DISP_LOG_LEVEL debug
-  
+
 <IfDefine ENVIRONMENT_STAGE>
   ...
   Define DISP_LOG_LEVEL warn
@@ -547,7 +547,8 @@ AEM as a Cloud Service provides access to CDN logs, which are useful for use cas
  | *res_age*  | The amount of time (in seconds) a response has been cached (in all nodes).  |
  | *pop*  | Datacenter of the CDN cache server.  |
  | *rules*  | The names of any matching [traffic filter rules](/help/security/traffic-filter-rules-including-waf.md) and WAF flags, also indicating if the match resulted in a block. Empty if no rules matched.  |
- 
+
+ The CDN logs can be extended with your own properties using [request/response transformations](/help/implementing/dispatcher/cdn-configuring-traffic.md#logproperty).
 
 ## How to Access Logs {#how-to-access-logs}
 
@@ -576,7 +577,7 @@ AEM logs are located in the folder `crx-quickstart/logs`, where the following lo
 * AEM HTTP Request log: `request.log`
 * AEM HTTP Access log: `access.log`
 
-Apache layer logs, including dispatcher, are in the Docker container which holds the Dispatcher. See the [Dispatcher documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) for information on how to start the Dispatcher. 
+Apache layer logs, including dispatcher, are in the Docker container which holds the Dispatcher. See the [Dispatcher documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) for information on how to start the Dispatcher.
 
 To retrieve the logs:
 
@@ -595,9 +596,9 @@ Logs are also directly printed to the terminal output. Most of the time, these l
 
 ## Debugging Production and Stage {#debugging-production-and-stage}
 
-In exceptional circumstances, log levels need to be changed to log at a finer granularity in Stage or Production environments. 
+In exceptional circumstances, log levels need to be changed to log at a finer granularity in Stage or Production environments.
 
-While this is possible, it requires changes to the log levels in the configuration files in Git from Warn and Error to Debug, and performing a deployment to AEM as a Cloud Service to register these configuration changes with the environments. 
+While this is possible, it requires changes to the log levels in the configuration files in Git from Warn and Error to Debug, and performing a deployment to AEM as a Cloud Service to register these configuration changes with the environments.
 
 Depending on the traffic and the amount of log statement written by Debug, this may result in an adverse performance impact on the environment, therefore, it's recommended that changes to Stage and Production debug levels are:
 
