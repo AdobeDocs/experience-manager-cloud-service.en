@@ -35,7 +35,7 @@ The [Content Fragment Editor](#opening-the-fragment-editor) provides various [mo
 >
 >They are primarily managed with the **[Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** console, though they can still be managed from the **[Assets](/help/assets/content-fragments/content-fragments-managing.md)** console.
 >
->There are two editors for authoring Content Fragments - the new editor and the original editor; although the basic functionality is the same, there are some differences. 
+>There are two editors for authoring Content Fragments - the new editor and the original editor. The new editor is the default. Although the basic functionality is the same, there are some differences. 
 >
 >This section covers the original editor. 
 >
@@ -134,23 +134,23 @@ Select the fragment to reveal the toolbar with applicable actions:
 
 ## Opening the Fragment Editor {#opening-the-fragment-editor}
 
-To open your fragment for editing:
+To open your fragment for editing in the original editor:
 
 >[!CAUTION]
 >
 >To edit a content fragment you need [the appropriate permissions](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Contact your system administrator if you are experiencing issues.
 
-1. Use the **Assets** console to navigate to the location of your content fragment.
-1. Open the fragment for editing, by either:
+1. Navigate to the location of your content fragment.
 
-   * Clicking/tapping on the fragment or fragment link (this is dependent on the console view).
-   * Selecting the fragment, then **Edit** from the toolbar.
+1. Open the fragment for editing.
 
-1. The fragment editor opens in the new editor. Deactivate the **New Editor** switch to open the original editor, then make your changes as required:
+1. The fragment opens in the new editor. Deactivate the **New Editor** switch (top right) to open the original editor:
 
    ![Fragment editor](assets/cfm-managing-03.png)
 
-1. After making changes, use **Save**, **Save & close** or **Close** as required.
+1. Make your changes as required.
+
+1. When ready, use **Save**, **Save & close** or **Close** as required.
 
    >[!NOTE]
    >
