@@ -29,7 +29,7 @@ You can [access Generate Variations](#access-generate-variations) from the follo
 
 >[!NOTE]
 >
->The standalone version of [Generate Variations can still be directly accessed](/help/generative-ai/generate-variations.md).
+>It is recommended that you use this version, as although the standalone version of [Generate Variations can still be directly accessed](/help/generative-ai/generate-variations.md), it will be deprecated in the future.
 
 You can then:
 
@@ -54,6 +54,10 @@ Before using Generate Variations you are recommended to read the [Adobe Experien
 -->
 
 [Usage of Generate Variations](#generative-action-usage) is tied to the consumption of generative actions.
+
+>[!NOTE]
+>
+>See the [Security Fact Sheet for details related to Generate Variation in AEM](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-sites-generate-variations-security-fact-sheet.pdf).
 
 ## Overview {#overview}
 

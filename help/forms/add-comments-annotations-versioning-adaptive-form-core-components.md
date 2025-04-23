@@ -13,9 +13,6 @@ https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/cont
 
 <!--Adaptive Form Core Components facilitates to add versionings, comments, and annotations to a form. These features helps form authors and users to enhance the form development process where they can create multiple versions of a form, collaborate and add their comments to a form, and add annotations to form components.-->
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
-
-
 Adaptive Form Core Components provide functionality that enables form authors to incorporate versioning, commenting, and annotations into forms. These features serve to streamline the form development process by allowing users to create and manage multiple versions of a form, engage in collaborative discussions through comments, and attach annotations to specific form components, thereby enhancing the overall form-building experience.
 
 
