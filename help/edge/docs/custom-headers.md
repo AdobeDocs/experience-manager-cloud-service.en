@@ -4,6 +4,9 @@ title: Custom HTTP Response Headers
 feature: Edge Delivery Services
 exl-id: ae386f02-05fd-4a6a-8285-58f207fed7bc
 role: Admin, Architect, Developer
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 # Custom HTTP Response Headers
 
