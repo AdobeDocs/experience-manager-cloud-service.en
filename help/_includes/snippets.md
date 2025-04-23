@@ -180,7 +180,7 @@ The following table demonstrates the difference between the features available i
 
 >[!IMPORTANT]
 >
->If you use the [The Universal Editor for content authoring,](/help/implementing/universal-editor/introduction.md) you must also [add and apply an allow list with the IP addresses of the Universal Editor Service.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
+>If you use the [The Universal Editor for content authoring,](/help/implementing/universal-editor/introduction.md) and wish to also use [IP allow lists,](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) you must also [add and apply an allow list with the IP addresses of the Universal Editor Service.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
 
 ## Work with Dynamic Media {#work-with-dynamic-media}
 
