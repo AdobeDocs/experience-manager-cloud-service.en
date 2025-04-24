@@ -37,9 +37,9 @@ Before you begin authoring forms in AEM and publishing them through Edge Deliver
   * If you have a repository, Add the Adaptive Forms Block to your existing repository. Detailed instructions are available in the [Getting Started with Edge Delivery Services for AEM Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project).
 * Establish a connection between your AEM environment and GitHub repository. [How to do it?](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template)
 
-A decision flow diagram to guide the setup and publishing of Adaptive Forms:
+<!--A decision flow diagram to guide the setup and publishing of Adaptive Forms:
 
-![Github Repository Workflow](/help/edge/assets/repo-workflow.png){width=auto}
+![Github Repository Workflow](/help/forms/assets/repo-workflow.png){width=auto}-->
 
 ## Authoring forms in AEM and publishing them to Edge Delivery Services
 
@@ -161,9 +161,13 @@ Perform the following steps to author forms using the Universal Editor for Edge 
 
 >[!ENDTABS]
 
-### Create an Edge Delivery Services Configuration
+### Publish the Form
 
-To publish an Adaptive Form on Edge Delivery Services, you need to create an Edge Delivery Services Configuration on an AEM instance. Perform the following steps to create the Edge Delivery Services Configuration:
+To publish an Adaptive Form on Edge Delivery Services, you need to [create an Edge Delivery Services Configuration on an AEM](#create-an-edge-delivery-services-configuration) instance. 
+
+#### Create an Edge Delivery Services Configuration
+
+Perform the following steps to create the Edge Delivery Services Configuration:
 
 >[!BEGINTABS]
 >[!TAB For forms created using the Edge Delivery Services-based template]
@@ -202,11 +206,9 @@ To publish an Adaptive Form on Edge Delivery Services, you need to create an Edg
 
 >[!ENDTABS]
 
-### Publish a Form
+#### Access the form on Edge Delivery Services
 
-To access the form on Edge Delivery Services, it is mandatory to publish the form.
-
-Perform the following steps to publish the form:
+To access the form on Edge Delivery Services, it is mandatory to publish the form. Perform the following steps to publish the form:
 
 >[!BEGINTABS]
 >[!TAB On Universal Editor]
@@ -232,8 +234,6 @@ Perform the following steps to publish the form:
   > Refer to the [Manage Publication in Experience Manager Forms](/help/forms/manage-publication.md) article to learn how to publish a form on Adaptive Form Editor.
 
 >[!ENDTABS]
-
-## Access the form on Edge Delivery Services
 
 * **Staged Version (for testing)**: The staged version displays the unpublished, working version of the form for testing purposes. Use the following URL format to preview the form before it goes live:
 
