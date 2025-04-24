@@ -68,116 +68,135 @@ Perform the following steps to choose the template and create the form:
 1. Select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
 1. Select **[!UICONTROL Create]**  &gt; **[!UICONTROL Adaptive Forms]**. The Wizard opens.
 1. Select the template. You can select one of the following: 
+    
+    >[!BEGINTABS]
+    >[!TAB Edge Delivery Services]
+     
      * In the **Source** tab, select an **Edge Delivery Services-based template**:
 
           ![Create EDS Forms](/help/edge/assets/create-eds-forms.png)
 
           When you select an **Edge Delivery Services-based template**, the **[!UICONTROL Create]** button is enabled. 
+    
+    >[!TAB Core Component]
+
      * In the **Source** tab, select a **Core Component based template** and a **theme**, the **[!UICONTROL Create]** button is enabled.:
           
           ![Core Component based template](/help/forms/assets/core-component-based-template.png)
 
+    >[!ENDTABS]
+
 1. (Optional) In the **[!UICONTROL Data Source]** or **[!UICONTROL Submission]** tabs, you can select a data source or submit action.
 1. (Optional) In the **[!UICONTROL Delivery]** tab, you can specify a publishing or unpublishing date for a form. 
 1. Click **[!UICONTROL Create]** and the **Create Form** wizard appears for:
-     * **Edge Delivery Services template-based forms**:
-        1. Specify the **Name** and **Title**. 
-        1. Specify the **GitHub URL**. For example, if your GitHub repository is named `edsforms`, it is located under the account `wkndforms`,the URL is:
+   
+   >[!BEGINTABS]
+   >[!TAB Edge Delivery Services template-based forms]
+    
+   1. Specify the **Name** and **Title**. 
+   1. Specify the **GitHub URL**. For example, if your GitHub repository is named `edsforms`, it is located under the account `wkndforms`,the URL is:
           `https://github.com/wkndforms/edsforms`
 
-          ![Create Form wizard](/help/edge/assets/create-form-wizard.png)
+   ![Create Form wizard](/help/edge/assets/create-form-wizard.png)
 
-          When you click **[!UICONTROL Create]**, the form opens in the Universal Editor for authoring.
+   When you click **[!UICONTROL Create]**, the form opens in the Universal Editor for authoring.
 
-          ![author the form](/help/edge/assets/author-form.png)
+   ![author the form](/help/edge/assets/author-form.png)
 
-     * **For Core Component template-based forms** 
-          1. Specify the **Name** and **Title**.
-          1. Specify the location in the **Path** field where the Adaptive Form is to be saved.
+   >[!TAB Core Component template-based forms]
+   
+   1. Specify the **Name** and **Title**.
+   1. Specify the location in the **Path** field where the Adaptive Form is to be saved.
           
-          ![Create Form Wizard](/help/forms/assets/create-cc-form.png)
+      ![Create Form Wizard](/help/forms/assets/create-cc-form.png)
 
-          When you click **[!UICONTROL Create]**, the form opens in the Adaptive Form Editor for authoring. 
+    When you click **[!UICONTROL Create]**, the form opens in the Adaptive Form Editor for authoring. 
 
-          ![Adaptive Form Editor](/help/forms/assets/af-editor-form.png)
-          
+    ![Adaptive Form Editor](/help/forms/assets/af-editor-form.png)
+
+   >[!ENDTABS]
+
 1. Click **[!UICONTROL Create]** to create the form. Now, you can author the form using the Universal Editor or Adaptive Form Editor.
 
 ### Author the form
 
 The forms created using the Edge Delivery Services-based template open in the [Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) for authoring. However, the forms created using the Core Component-based template open in the Adaptive Form Editor for authoring.
 
-Perform the following steps to:
+Perform the following steps to author forms using the Universal Editor for Edge Delivery Services-based template or using Adaptive Form Editor for  Core Component based template:
 
-+++ **Author forms using the Universal Editor for Edge Delivery Services-based template**
+>[!BEGINTABS]
+
+>[!TAB Edge Delivery Services-based template]
   
-1. Open the Content browser, and navigate to the **[!UICONTROL Adaptive Form]** component in the **Content tree**.
 
-     ![content tree](/help/edge/assets/content-tree.png)
+ 1. Open the Content browser, and navigate to the **[!UICONTROL Adaptive Form]** component in the **Content tree**.
 
-1. Click the **[!UICONTROL Add]** icon and add the desired components from the **Adaptive Form Components** list. 
+    ![content tree](/help/edge/assets/content-tree.png)
+
+ 1. Click the **[!UICONTROL Add]** icon and add the desired components from the **Adaptive Form Components** list. 
     ![add component](/help/edge/assets/add-component.png)
 
      The screenshot below displays the `Registration Form` authored in the Universal Editor:
 
      ![contact us form](/help/edge/assets/contact-us.png)
 
-    >[!NOTE]
-    >
-    > For detailed instructions on authoring an Adaptive Form using the Universal Editor, [click here](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg).
+  >[!NOTE]
+  >
+  > For detailed instructions on authoring an Adaptive Form using the Universal Editor, [click here](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg).
 
-    Now you can [configure and customize the submit actions for forms](/help/edge/docs/forms/universal-editor/submit-action.md).
+  Now you can [configure and customize the submit actions for forms](/help/edge/docs/forms/universal-editor/submit-action.md).
 
-+++
+>[!TAB Core Component-based template]
 
-+++ **Author forms using the Adaptive Form Editor for Core Component-based template**
+  1. Click **[!UICONTROL Insert component]** in the **Drag components here** section.
 
-1. Click **[!UICONTROL Insert component]** in the **Drag components here** section.
+     ![Drag components here](/help/forms/assets/drag-components-af-editor.png)
 
-    ![Drag components here](/help/forms/assets/drag-components-af-editor.png)
+  1. Add the desired components from the **Adaptive Form Components** list. 
 
-1. Add the desired components from the **Adaptive Form Components** list. 
+     ![Add components](/help/forms/assets/add-component-af.png)
 
-    ![Add components](/help/forms/assets/add-component-af.png)
+   The screenshot below displays the `Enrollment Form` authored in the Adaptive Form Editor:
 
-    The screenshot below displays the `Enrollment Form` authored in the Adaptive Form Editor:
+   ![Adaptive Form Editor](/help/forms/assets/af-editor-form.png)
 
-    ![Adaptive Form Editor](/help/forms/assets/af-editor-form.png)
+  >[!NOTE]
+  >
+  > For detailed guidance on creating an Adaptive Form based on the Core Component template, [click here](/help/forms/creating-adaptive-form-core-components.md).
 
-    >[!NOTE]
-    >
-    > For detailed guidance on creating an Adaptive Form based on the Core Component template, [click here](/help/forms/creating-adaptive-form-core-components.md).
+  Now you can [configure the submit actions for forms](/help/forms/configure-submit-actions-core-components.md).
 
-    Now you can [configure the submit actions for forms](/help/forms/configure-submit-actions-core-components.md).
+>[!ENDTABS]
 
 ### Create an Edge Delivery Services Configuration
 
 To publish an Adaptive Form on Edge Delivery Services, you need to create an Edge Delivery Services Configuration on an AEM instance. Perform the following steps to create the Edge Delivery Services Configuration:
 
-+++ **For forms created using the Edge Delivery Services-based template**
-The Edge Delivery Services configuration for forms based on the Edge Delivery Services-based template is created automatically in the form's configuration container.
+>[!BEGINTABS]
+>[!TAB For forms created using the Edge Delivery Services-based template]
 
-![Edge Delivery Services Configuration](/help/edge/assets/aem-instance-eds-configuration.png)
 
-+++
+  The Edge Delivery Services configuration for forms based on the Edge Delivery Services-based template is created automatically in the form's configuration container.
 
-+++ **For forms created using the Core Component-based template**
+  ![Edge Delivery Services Configuration](/help/edge/assets/aem-instance-eds-configuration.png)
 
-1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Edge Delivery Services Configuration]** on your AEM Forms as a Cloud Service author instance.
+>[!TAB For forms created using the Core Component-based template]
 
-    ![Select Edge Delivery Services Configuration](/help/edge/assets/select-eds-conf.png)
+  1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Edge Delivery Services Configuration]** on your AEM Forms as a Cloud Service author instance.
 
-1. Select the folder that matches the form's name. For example, if your form is called `enrollment-form`, choose the folder `forms/enrollment-form` and click **[!UICONTROL Create]** > **[!UICONTROL Configuration]**:
+     ![Select Edge Delivery Services Configuration](/help/edge/assets/select-eds-conf.png)
 
-    ![Edge Delivery Services Configuration](/help/forms/assets/create-eds-conf.png)
+  1. Select the folder that matches the form's name. For example, if your form is called `enrollment-form`, choose the folder `forms/enrollment-form` and click **[!UICONTROL Create]** > **[!UICONTROL Configuration]**:
 
-1. Click the **[!UICONTROL Edge Delivery Services Configuration]** and click **[!UICONTROL Properties]** to open the properties:   
+     ![Edge Delivery Services Configuration](/help/forms/assets/create-eds-conf.png)
+
+  1. Click the **[!UICONTROL Edge Delivery Services Configuration]** and click **[!UICONTROL Properties]** to open the properties:   
      
-    ![Automatically created configuration](/help/forms/assets/eds-conf.png)
+     ![Automatically created configuration](/help/forms/assets/eds-conf.png)
 
-    The Edge Delivery Services Configuration appears.
+     The Edge Delivery Services Configuration appears.
 
-1. Specify the following in the Edge Delivery Services Configuration:
+  1. Specify the following in the Edge Delivery Services Configuration:
 
      * **Organization**: Specify your GitHub organization name.
 
@@ -186,7 +205,9 @@ The Edge Delivery Services configuration for forms based on the Edge Delivery Se
      * **(Optional) Edge Host**: Leave the Edge Host option as it is. The form is published to both preview (.page) and live (.live) environments.
      * **(Optional) Site Authentication Token**: Use the Site Authentication Token to securely authenticate requests between your AEM instance and Edge Delivery Services.
 
-1. Click **[!UICONTROL Save and Close]**. The configuration is created.
+  1. Click **[!UICONTROL Save and Close]**. The configuration is created.
+
+>[!ENDTABS]
 
 ### Publish a Form
 
@@ -194,29 +215,30 @@ To access the form on Edge Delivery Services, it is mandatory to publish the for
 
 Perform the following steps to publish the form:
 
-+++ **On Universal Editor**
+>[!BEGINTABS]
+>[!TAB On Universal Editor]
 
-1. Publish the form by clicking the **[!UICONTROL Publish]** button in the upper-right corner of the Universal Editor.
+   1. Publish the form by clicking the **[!UICONTROL Publish]** button in the upper-right corner of the Universal Editor.
 
-![publish form](/help/edge/assets/publish-form.png)
+  ![publish form](/help/edge/assets/publish-form.png)
 
->[!NOTE]
->
-> Refer to the [Publish and Deploy](/help/edge/docs/forms/universal-editor/publish-forms.md) article to learn how to publish a form to Edge Delivery Services.
+   >[!NOTE]
+   >
+   > Refer to the [Publish and Deploy](/help/edge/docs/forms/universal-editor/publish-forms.md) article to learn how to publish a form to Edge Delivery Services.
 
-+++ 
+>[!TAB On Adaptive Form Editor]
 
-+++ **On Adaptive Form Editor**
+  1. From the Experience Manager Forms console, navigate to the parent folder and select a form that you want to publish.
 
-1. From the Experience Manager Forms console, navigate to the parent folder and select a form that you want to publish.
+  1. Click **[!UICONTROL Publish]**  option from the toolbar, take a look at all the reference assets that would be published with form.
 
-1. Click **[!UICONTROL Publish]**  option from the toolbar, take a look at all the reference assets that would be published with form.
+  ![Publish Form on Adaptive Form Editor](/help/forms/assets/publish-af-editor.png)
 
-![Publish Form on Adaptive Form Editor](/help/forms/assets/publish-af-editor.png)
+  >[!NOTE]
+  >
+  > Refer to the [Manage Publication in Experience Manager Forms](/help/forms/manage-publication.md) article to learn how to publish a form on Adaptive Form Editor.
 
->[!NOTE]
->
-> Refer to the [Manage Publication in Experience Manager Forms](/help/forms/manage-publication.md) article to learn how to publish a form on Adaptive Form Editor.
+>[!ENDTABS]
 
 ## Access the form on Edge Delivery Services
 
@@ -234,16 +256,17 @@ Perform the following steps to publish the form:
 
 The below screenshots compares staged and live form URLs and visual previews for forms created using Edge Delivery Services-based and Core Component-based templates:
 
-+++ **Accessing forms created using Edge Delivery Services-based Template**
+>[!BEGINTABS]
+>[!TAB Accessing forms created using Edge Delivery Services-based Template]
 
-<table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
-  <thead>
+  <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+    <thead>
     <tr>
       <th style="width: 20%;"><strong>Version</strong></th>
       <th style="width: 80%;"><strong>Image</strong></th>
     </tr>
-  </thead>
-  <tbody>
+    </thead>
+    <tbody>
     <tr>
       <td>Staged Version</td>
       <td><img src="/help/forms/assets/registration-form-staged-version.png" alt="Staged version of registration form" style="width: 100%; height: auto;" /></td>
@@ -252,14 +275,12 @@ The below screenshots compares staged and live form URLs and visual previews for
       <td>Live Version</td>
       <td><img src="/help/forms/assets/registration-form-live-version.png" alt="Live version of registration form" style="width: 100%; height: auto;" /></td>
     </tr>
-  </tbody>
-</table>
+    </tbody>
+  </table>
 
-+++
+>[!TAB Accessing forms created using Core Component-based Template]
 
-+++ **Accessing forms created using Core Component-based Template**
-
-<table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+  <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
   <thead>
     <tr>
       <th style="width: 20%;"><strong>Version</strong></th>
@@ -276,7 +297,9 @@ The below screenshots compares staged and live form URLs and visual previews for
       <td><img src="/help/forms/assets/enrollment-form-live-version.png" alt="Live version of enrollment form" style="width: 100%; height: auto;" /></td>
     </tr>
   </tbody>
-</table>
+  </table>
+
+>[!ENDTABS]
 
 ## Troubleshooting 
 
