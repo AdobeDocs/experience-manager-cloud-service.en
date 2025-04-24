@@ -20,7 +20,8 @@ In today's digital age, user-friendly forms are essential for all organizations.
 
 AEM Forms provide a block, known as the Adaptive Forms Block, to help you easily create Edge Delivery Services Forms to capture and store data. You can [create a new AEM Project pre-configured with the Adaptive Forms Block](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) or [add the Adaptive Forms Block to an existing AEM Project](#add-adaptive-forms-block-to-your-existing-aem-project).
 
-![Github Repository Workflow](/help/edge/assets/repo-workflow.png){width="50%" align="center" height="50%"}
+<!--
+![Github Repository Workflow](/help/edge/assets/repo-workflow.png){width="50%" align="center" height="50%"}-->
 
 This tutorial guides you through creating, previewing, and publishing your own form with a new or existing Adobe Experience Manager Site project using Universal Editor's WYSIWYG authoring.
 
