@@ -2,7 +2,7 @@
 title: How to create standalone forms based on Core Component or Edge Delivery Services templates and publish them on Edge Delivery Services
 description: This article explains how to create Adaptive Forms by selecting a Core Component-based or Edge Delivery Services-based templates in the Form Creation Wizard. You can also publish the forms to AEM Edge Delivery Services.
 feature: Edge Delivery Services
-role: User, Author
+role: User
 hide: yes
 hidefromtoc: yes
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
