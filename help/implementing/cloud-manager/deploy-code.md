@@ -128,7 +128,7 @@ In such circumstances where a re-execution is possible, the production pipeline 
 >
 >In a re-execution, the build step is labeled in the UI to reflect that it is copying artifacts, not re-building.
 
-### Limitations {#limitations}
+### Usage notes {#usage-notes}
 
 * Re-executing the production deployment step is only available for the last execution.
 * Re-execution is not available for push update executions. If the last execution is a push update execution, re-execution is not possible.
