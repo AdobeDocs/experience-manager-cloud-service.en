@@ -4,6 +4,9 @@ description: If you have many similar sites that mostly look and behave the same
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 # Reusing Code Across Sites {#repoless}
 

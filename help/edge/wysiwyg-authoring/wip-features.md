@@ -5,6 +5,9 @@ solution: Experience Manager Sites
 feature: Edge Delivery Services
 role: User
 exl-id: 21745f53-a7ef-4eec-9170-b267c2f4314e
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 # Work-In-Progress Sites Features for Edge Delivery Services {#wip-sites-features}
 

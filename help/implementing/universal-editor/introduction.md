@@ -102,7 +102,7 @@ As you explore the Universal Editor and move forward implementing it in your own
 * As part of AEM, the Universal Editor [supports the same desktop browsers as AEM.](/help/overview/supported-platforms.md)
   * Mobile versions of these browsers are not supported.
 
-{{ue-ip-allow-lists}}
+{{ip-allow-lists-ue}}
 
 ## Next Steps {#next-steps}
 

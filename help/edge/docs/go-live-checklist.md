@@ -4,6 +4,9 @@ title: Go-Live Checklist
 feature: Edge Delivery Services
 exl-id: 7f22d7f5-39b8-4b91-a1ef-24f89b5ded14
 role: Admin, Architect, Developer
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 # Go-Live Checklist
 
