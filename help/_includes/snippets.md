@@ -180,20 +180,7 @@ The following table demonstrates the difference between the features available i
 
 >[!IMPORTANT]
 >
->[The Universal Editor](/help/implementing/universal-editor/introduction.md) is not compatible with IP allow lists.
->
->If you want to use the Universal Editor, IP allow lists must not be enabled.
-
-## Universal Editor and IP Allow Lists {#ue-ip-allow-lists}
-
->[!IMPORTANT]
->
->The Universal Editor is not compatible with [IP allow lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
->
->If you want to use the Universal Editor, you must either:
->
->* Not enable IP Allow Lists.
->* [Run your own instance of the Universal Editor Service](/help/implementing/universal-editor/local-dev.md).
+>If you use the [The Universal Editor for content authoring,](/help/implementing/universal-editor/introduction.md) and wish to also use [IP allow lists,](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) you must also [add and apply an allow list with the IP addresses of the Universal Editor Service.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
 
 ## Work with Dynamic Media {#work-with-dynamic-media}
 

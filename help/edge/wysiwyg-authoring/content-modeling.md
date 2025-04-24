@@ -4,6 +4,9 @@ description: Learn how content modeling works for WYSIWYG Authoring with Edge De
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 
 # Content Modeling for WYSIWYG Authoring with Edge Delivery Services Projects {#content-modeling}
