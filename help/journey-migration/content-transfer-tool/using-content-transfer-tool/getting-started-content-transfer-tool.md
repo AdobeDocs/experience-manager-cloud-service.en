@@ -95,7 +95,7 @@ The following section applies to the new version of the Content Transfer Tool. F
 
    >[!NOTE]
    >
-   >The name must follow the same conventions of an AEM node so cannot contain any of these characters: . / : [ ] | * < > ^ ? { } % # ` nor any unusual symbols or emojis.
+   >The name must follow the same conventions of an AEM node so cannot contain any of these characters: `. / : [ ] | * < > ^ ? { } % # `` nor any unusual symbols or emojis.
 
 1. You should now see your migration list in the list view. Select the three dots symbol (**...**) to open the drop-down and select **Copy Extraction key**. You need this key during the Extraction phase. Copy this Extraction key.
 
