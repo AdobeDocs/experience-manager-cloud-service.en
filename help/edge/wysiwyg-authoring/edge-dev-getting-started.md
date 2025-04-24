@@ -4,6 +4,9 @@ description: This guide will get you up-and-running with a new Adobe Experience 
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 role: Admin, Architect, Developer
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 
 # Developer Getting Started Guide for WYSIWYG Authoring with Edge Delivery Services {#edge-dev-getting-started}
