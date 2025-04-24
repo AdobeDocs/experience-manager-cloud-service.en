@@ -7,12 +7,6 @@ exl-id: b298db37-1033-4849-bc12-7db29fb77777
 ---
 # AEM Content Fragment Delivery with OpenAPI {#aem-content-fragment-delivery-with-openapi}
 
->[!IMPORTANT]
->
->This API is available through the Early Adopter Program.
->
->To see the status, and how to apply if you are interested, check the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md).
-
 In Adobe Experience Manager (AEM) as a Cloud Service, the AEM OpenAPI for Content Fragment Delivery:
 
 * is a HTTP REST API on [AEM Edge Delivery Services](/help/edge/overview.md), designed to deliver structured content from Content Fragments in JSON format
@@ -28,7 +22,7 @@ This API:
 
 * is a HTTP REST alternative to the [AEM GraphQL API for use with Content Fragments](/help/headless/graphql-api/content-fragments.md) 
 
-For full documentation see [AEM Sites API Schemas - Content Fragments Delivery API (2024.07-experimental)](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/). 
+For full documentation see [AEM Content Fragment Delivery with OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/). 
 
 >[!NOTE]
 >
