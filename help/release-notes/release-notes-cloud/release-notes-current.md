@@ -67,7 +67,7 @@ The Bandwidth tab in the Dynamic Media Classic reporting dashboard is no longer 
 See [Bandwidth and Storage, Types of reports](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports). 
 
 
-## New features in Assets view {#new-features-assets-view}
+## New features in Assets View {#new-features-assets-view}
 
 **Asset relations**
 
@@ -83,7 +83,7 @@ You can now quickly select and compare any version of an asset with its latest v
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Pre-release features 
+### Pre-release Features 
 
 * [Universal Editor - Form Fragments](/help/edge/docs/forms/universal-editor/creating-form-fragments.md): The Universal Editor now allows you to create and reuse Form Fragments for Adaptive Forms. These fragments are reusable form sections (e.g., contact details, consent fields) that can be built once and applied across multiple forms. This feature streamlines form creation, ensures consistency, and improves authoring efficiency.
  
@@ -95,7 +95,7 @@ You can now quickly select and compare any version of an asset with its latest v
 * **Improved Scope Management for SharePoint Lists**: SharePoint sites now support all managed paths, for example, /sites and /teams. This enhancement enables broader integration across various SharePoint site structures, offering greater flexibility in connecting to organizational content.
 * **Support for Saving Document of Record to SharePoint List**: Forms created using a SharePoint List–based Form Data Model (FDM) can now save the Document of Record (DoR) to SharePoint Lists by configuring the Document of Record Bind Reference field property. This enhancement enables seamless integration of supported form data and documents with SharePoint storage.
 
-### Early Access features in AEM Forms {#forms-new-early-access-features}
+### Early Access Features in AEM Forms {#forms-new-early-access-features}
 
 The AEM Forms Early Access Program program offers a unique opportunity to you to get exclusive access to cutting-edge innovations, and help shape their development.
 
@@ -104,7 +104,6 @@ This release notes lists the innovations delivered in the current release. For t
 #### Adobe Experience Platform (AEP) Integration with Forms
 
 Integration capabilities between Forms and AEP are now available for early adopters.
-
 
 ## CIF Add-on {#cloud-services-cif}
 
@@ -132,23 +131,23 @@ Watch this video to learn how to configure an authenticated API for later usage:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3457510?quality=12&learn=on)
 
-### CDN configuration-related enhancements {#cdn-enhancements}
+### CDN Configuration-related Enhancements {#cdn-enhancements}
 
 The Adobe-Managed CDN offers flexible configuration options, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#configurations). Here are a few recent features:
 
-#### Include additional properties in CDN logs {#props-in-cdnlogs}
+#### Include Additional Properties in CDN Logs {#props-in-cdnlogs}
 
 Useful for scenarios including debugging and data analysis, you can include more information in your CDN logs beyond the default properties by setting the `logProperty` action in [request and response transformations](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations).
 
-#### Region, continent, and organization properties as matching conditions {#matching-conditions}
+#### Region, Continent, and Organization Properties as Matching Conditions {#matching-conditions}
 
 CDN rules can now match based on region, continent, and organization for use cases including blocking traffic and redirects. `clientRegion` and `clientContinent` augment the already-supported `clientCountry` to match based on geography, while `clientAsName` and `clientAsNumber` match Autonomous Systems to identify large ISPs, companies, or cloud providers. Learn more about these [newly exposed request properties](/help/security/traffic-filter-rules-including-waf.md#condition-structure).
 
-#### Set cookie value {#props-in-cdnlogs}
+#### Set Cookie Value {#cookie-attributes}
 
 You can set cookie attributes in [response tranformations](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations).
 
-### Java 21 support {#java21}
+### Java 21 Support {#java21}
 
 As of the January release, you can build code with Java 21 and Java 17. You gain access to new features like pattern matching, sealed classes, and various performance improvements. For configuration steps, including updating your Maven project and library versions, see the [Build Environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) article.
 
@@ -158,7 +157,7 @@ The more performant Java 21 **runtime** is automatically deployed when a Java 17
 >
 > The Java 21 **runtime** was deployed to your dev/RDE environments in February; it will be applied to your stage/production environments on **April 28 and 29**. Note that **building code** with Java 21 (or Java 17) is independent of the Java 21 runtime -- you must explicitly take steps to build code with Java 21 (or Java 17).
 
-### AEM Log-Forwarding to more destinations - Beta Program {#log-forwarding-earlyadopter}
+### AEM Log-Forwarding to More Destinations - Beta Program {#log-forwarding-earlyadopter}
 
 Now in beta, you can forward AEM logs to New Relic (using HTTPS), Amazon S3, and Sumo Logic. Note that AEM logs (including Apache/Dispatcher) are supported, but not CDN logs. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) for access.
 
@@ -183,10 +182,7 @@ Email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@a
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-You can find a complete list of new and enhanced features of the latest release of Adobe Experience Manager Guides [here](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2025-releases/2502-release/whats-new-2025-02-0).
-
-<!-- THE FOLLOWING URL WAS USED ABOVE BUT IT WAS 404. IT WAS REPLACED WITH THE URL ABOVE 
-(https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0). -->
+You can find a complete list of new and enhanced features of the latest release of Adobe Experience Manager Guides [here](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
