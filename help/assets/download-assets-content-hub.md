@@ -147,17 +147,31 @@ Learn more about [view and manage renditions in Experience Manager Assets](/help
 
 * [Static renditions](/help/assets/renditions.md#static-renditions): Static renditions are pre-created versions of digital assets, typically generated during the asset ingestion or modification. They are optimized for specific uses and platforms, such as web thumbnails, mobile-friendly formats for responsive designs, or high-resolution files for printing, providing a streamlined and consistent experience.
 
-* [Dynamic renditions](/help/assets/renditions.md#dynamic-renditions): Dynamic renditions are real-time, customized versions of assets to perform various actions, such as resizing images for different device resolutions or cropping to fit various aspect ratios. These renditions allows you to offer personalized and optimized experiences for wider requirements. Dynamic renditions of assets are created on [!DNL Adobe Experience Manager Assets] author environment.
+* [Dynamic renditions](/help/assets/renditions.md#dynamic-renditions): Dynamic renditions are real-time, customized versions of assets to perform various actions, such as resizing images for different device resolutions or cropping to fit various aspect ratios. These renditions allows you to offer personalized and optimized experiences for wider requirements. Dynamic renditions of assets are created on [!DNL Adobe Experience Manager Assets] author environment. For information on steps required to enable Dynamic renditions, see [Enable Dynamic renditions](#enable-dynamic-media-renditions).
 
 * [Smart crop](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): The smart crop focuses solely on the essential part of an asset during the cropping process. Dynamic media smart crop for leverages artificial intelligence powered by Adobe Sensei to track the point of interest, making sure our assets look like their best on all screen sizes. [!DNL Adobe Experience Manager] smart crop displays width and height of an asset renditions along with the title. See more at [using Smart Crop with AEM Assets Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 
+   Smart Crop renditions display and are available for download only if you have access to [Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md). Smart Crop renditions are available only for image assets.
+
   ![Renditions types](/help/assets/assets/renditions-types.png)
 
+### Enable Dynamic renditions {#enable-dynamic-media-renditions}
+
+To enable Dynamic renditions:
+
+1. Ensure that you have access to [Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md).
+
+1. Enable  the **[!UICONTROL Enable availability of renditions]** toggle available in the **[!UICONTROL Renditions]** tab of the [Configuration](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub) User Interface.
+
+1. Re-save the existing image presets to make them available on Content Hub. It is applicable only if you have newly onboarded to Dynamic Media with OpenAPI.
+
+   To re-save the existing image presets, navigate to Admin view and select **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**. Select a preset, click **[!UICONTROL Edit]** and then click **[!UICONTROL Save]**.
+
+1. Navigate to Assets view and set the [approval target of the asset](/help/assets/approve-assets-content-hub.md#set-approval-target) to **Content Hub**.
   
->[!NOTE]
-> 
-> * Dynamic and Smart Crop renditions feature is in Early Adopter phase. To get access to the capability, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
-> * Newly onboarded customers on [Dynamic Media Open API services](/help/assets/dynamic-media-open-apis-overview.md) must revise their existing image presets for approval.
+   >[!NOTE]
+   > 
+   > Dynamic renditions are available only for image assets.
 
 
 
