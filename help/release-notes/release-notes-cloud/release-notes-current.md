@@ -130,9 +130,21 @@ Watch this video to learn how to configure an authenticated API for later usage:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3457510?quality=12&learn=on)
 
-### Block traffic based on region, continent, and organization {#blocktraffic}
+### CDN configuration-related enhancements {#cdn-enhancements}
 
-Using Traffic Filter Rules, block traffic based on [newly exposed request properties](/help/security/traffic-filter-rules-including-waf.md#condition-structure):`clientRegion` and `clientContinent` augment the already-supported `clientCountry` to match based on geography, while `clientAsName` and `clientAsNumber` match Autonomous Systems to identify large ISPs, companies, or cloud providers.
+The Adobe-Managed CDN offers flexible configuration options, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#configurations). Here are a few recent features:
+
+#### Include additional properties in CDN logs {#props-in-cdnlogs}
+
+Useful for scenarios including debugging and data analysis, you can include more information in your CDN logs beyond the default properties by setting the `logProperty` action in [request and response transformations](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations).
+
+#### Region, continent, and organization properties as matching conditions {#matching-conditions}
+
+CDN rules can now match based on region, continent, and organization for use cases including blocking traffic and redirects. `clientRegion` and `clientContinent` augment the already-supported `clientCountry` to match based on geography, while `clientAsName` and `clientAsNumber` match Autonomous Systems to identify large ISPs, companies, or cloud providers. Learn more about these [newly exposed request properties](/help/security/traffic-filter-rules-including-waf.md#condition-structure).
+
+#### Set cookie value {#props-in-cdnlogs}
+
+You can set cookie attributes in [response tranformations](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations).
 
 ### Java 21 support {#java21}
 
