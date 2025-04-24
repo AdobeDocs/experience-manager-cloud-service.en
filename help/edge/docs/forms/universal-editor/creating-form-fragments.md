@@ -3,11 +3,9 @@ title: How to Create Form Fragments for WYSIWYG-Based Authoring
 description: Learn how to create form fragments in the Universal Editor and add them to forms.
 feature: Edge Delivery Services
 role: Admin, User, Developer
-hide: yes
-hidefromtoc: yes
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
 ---
-# Creating and using Edge Delivery Services Form Fragments in Universal Editor
+# Creating Form Fragments in Universal Editor
 
 Forms often include common sections like contact information, identification details, or consent agreements. The form developers create these sections every time they build a new form, which is repetitive and time-consuming. 
 To eliminate this duplication of effort, Universal Editor provides a way to create reusable form segments, such as panels or groups of fields, just once and reuse them across various forms. These reusable, modular, and standalone segments are called form fragments. For example, the same emergency contact fragment can be used in different sections of a form, such as for employee and supervisor contact details.
@@ -38,7 +36,7 @@ By the end of the article, you learn how to create and use fragments in forms us
 * You need to add the same GitHub URL in both the fragment and the form where you intend to use the fragment.
 * You cannot edit a form fragment within a form. To make changes, modify the standalone form fragment.
 
-## Prerequisites for creating Edge Delivery Services Form Fragments
+## Prerequisites
 
 * [Set up your GitHub repository](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template) to establish a connection between your AEM environment and the GitHub repository.
 * If you are already using Edge Delivery Services, add the latest version of the [Adaptive Forms block](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) to your GitHub repository. 

@@ -32,26 +32,27 @@ This article focuses on the approach where forms are authored within the AEM env
 
 Before you begin authoring forms in AEM and publishing them through Edge Delivery Services, ensure the following prerequisites are met:
 
-* **Set Up Your GitHub Repository**: Establish a connection between your AEM environment and GitHub by creating a repository using the AEM Forms Boilerplate template.
+* Ensure that you have a Github Repository configured for Edge Delivery Services.
+  * If you do not have a repository, [new AEM project pre-configured with the Adaptive Forms Block](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block).
+  * If you have a repository, Add the Adaptive Forms Block to your existing repository. Detailed instructions are available in the [Getting Started with Edge Delivery Services for AEM Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project).
+* Establish a connection between your AEM environment and GitHub repository. [How to do it?](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template)
 
-* **Integrate the Adaptive Forms Block**: To create forms compatible with Edge Delivery Services, integrate the Adaptive Forms Block into your project. You can either:
+A decision flow diagram to guide the setup and publishing of Adaptive Forms:
 
-     * Create [new AEM project pre-configured with the Adaptive Forms Block](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block).​
-
-     * Add the Adaptive Forms Block to an existing AEM Sites project. Detailed instructions are available in the [Getting Started with Edge Delivery Services for AEM Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project).
-
-     A decision flow diagram to guide the setup and publishing of Adaptive Forms:
-
-     ![Github Repository Workflow](/help/edge/assets/repo-workflow.png){width=auto}
+![Github Repository Workflow](/help/edge/assets/repo-workflow.png){width=auto}
 
 ## Authoring forms in AEM and publishing them to Edge Delivery Services
 
 Follow these steps to author forms in AEM and publish them on Edge Delivery Services:
 
 [1. Choose a template and create the form](#choose-a-template-and-create-the-form)
+
 [2. Author the form](#author-the-form)
+
 [3. Create an Edge Delivery Services configuration](#create-an-edge-delivery-services-configuration)
+
 [4. Publish a form](#publish-a-form)
+
 [5. Access the form on Edge Delivery Services](#access-the-form-on-edge-delivery-services)
 
 ### Choose a template and create the form 
