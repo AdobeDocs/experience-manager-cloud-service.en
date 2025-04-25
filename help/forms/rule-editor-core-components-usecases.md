@@ -11,6 +11,21 @@ exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
 The article provides detailed examples of a Rule Editor for an Adaptive Form based on core components, providing insights into its proper implementation for different scenarios. The rule editor allows developers to define and manage the logic controlling the behavior of forms. 
 Now, let us discuss the different implementations for a rule editor.
 
+## Set focus to another panel on button click if the first panel is valid
+
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
+The rule editor allows you to validate a panel layouts, such as Horizontal Tabs, Vertical Tabs, Accordions, or Wizard on button click and set focus to a form object in another panel. You can use this functionality to improve form navigation and user experience.
+
+Imagine a multi-step application form using a Wizard layout. You must complete the `Personal Information` panel before moving to `Employment Details`. When you click the `Next` button, the rule editor validates the `Personal Information` panel. If all required fields are filled correctly, the form automatically shifts focus to the `Employment Details` panel. Otherwise, it displays an error message prompting users to complete the missing fields.
+
+You can create a rule on the `Next` button to validate the first panel:
+
+![Rule for Next button](/help/forms/assets/next-rule.png){width=50%}
+
+When you click the **Next** button, the **Personal Information** panel is validated. If the details entered are correct, the focus shifts to the **Account Security** panel; otherwise, an error message prompts you to fill in the missing details.
+
+<!--![Video]()-->
 
 ## Navigating among panels using button 
 
