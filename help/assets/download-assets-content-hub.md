@@ -161,13 +161,17 @@ To enable Dynamic renditions:
 
 1. Ensure that you have access to [Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md).
 
+   Once you have access to Dynamic Media with OpenAPI capabilities, all assets marked as `Approved` are available for public delivery using Dynamic Media.
+
+1. Set the [approval target of the asset]((/help/assets/approve-assets-content-hub.md#set-approval-target)) to Content Hub to approve assets only for Content Hub.
+
 1. Enable  the **[!UICONTROL Enable availability of renditions]** toggle available in the **[!UICONTROL Renditions]** tab of the [Configuration](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub) User Interface.
 
 1. Re-save the existing image presets to make them available on Content Hub. It is applicable only if you have newly onboarded to Dynamic Media with OpenAPI.
 
    To re-save the existing image presets, navigate to Admin view and select **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**. Select a preset, click **[!UICONTROL Edit]** and then click **[!UICONTROL Save]**.
 
-1. Navigate to Assets view and set the [approval target of the asset](/help/assets/approve-assets-content-hub.md#set-approval-target) to **Content Hub**.
+
   
    >[!NOTE]
    > 
