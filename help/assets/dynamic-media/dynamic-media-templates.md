@@ -316,8 +316,7 @@ Execute these steps to add a CTA link to a layer:
 
    ![add CTA](/help/assets/assets/add-cta.png)
 
-1. Click **[!UICONTROL Preview]** to preview your template and see its defined parameters. 
-1. Click **[!UICONTROL Publish]** and select **[!UICONTROL Yes]** to publish your template, if not published earlier. 
+1. Click **[!UICONTROL Preview]** and select **[!UICONTROL Publish]** to publish your template, if not published earlier. 
 1. Navigate to the folder where this template is saved, select this template and click ![details page](/help/assets/assets/details-page-icon.svg) **[!UICONTROL Details]**.
 1. Click **[!UICONTROL Copy Options]** and select **[!UICONTROL Copy Embed Code]**. Ensure to publish the template images to [!DNL AEM and Dynamic Media] to copy the embed code.
     
