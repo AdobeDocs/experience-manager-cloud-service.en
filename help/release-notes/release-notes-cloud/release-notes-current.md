@@ -157,6 +157,20 @@ The more performant Java 21 **runtime** is automatically deployed when a Java 17
 >
 > The Java 21 **runtime** was deployed to your dev/RDE environments in February; it will be applied to your stage/production environments on **April 28 and 29**. Note that **building code** with Java 21 (or Java 17) is independent of the Java 21 runtime -- you must explicitly take steps to build code with Java 21 (or Java 17).
 
+### Enforcement of AEM's Logging Configuration Policy {#logconfig-policy}
+
+To ensure effective monitoring of customer environments, AEM Java logs must maintain a consistent format and should not be overridden by custom configurations. Log output must remain directed to the default files. For AEM product code, default log levels must be preserved. However, it is acceptable to adjust log levels for customer-developed code.
+
+To that end, changes should not be made to the following OSGi properties:
+* **Apache Sling Log Configuration** (PID: `org.apache.sling.commons.log.LogManager`) — *all properties*
+* **Apache Sling Logging Logger Configuration** (Factory PID: `org.apache.sling.commons.log.LogManager.factory.config`):
+  * `org.apache.sling.commons.log.file`
+  * `org.apache.sling.commons.log.pattern`
+
+In mid-May, AEM will enforce a policy where any custom modifications to these properties will be ignored. Please review and adjust your downstream processes accordingly. For example, if you use the log forwarding feature:
+* If your logging destination expects a custom (non-default) log format, you may need to update your ingestion rules.
+* If changes to log levels reduced log verbosity, be aware that the default log levels may result in a significant increase in log volume.
+
 ### AEM Log-Forwarding to More Destinations - Beta Program {#log-forwarding-earlyadopter}
 
 Now in beta, you can forward AEM logs to New Relic (using HTTPS), Amazon S3, and Sumo Logic. Note that AEM logs (including Apache/Dispatcher) are supported, but not CDN logs. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) for access.
