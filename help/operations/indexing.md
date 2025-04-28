@@ -25,9 +25,9 @@ Below is a list of the main changes compared to AEM 6.5 and earlier versions:
 
 Limitations:
 
-* Currently, index management on AEM as a Cloud Service is only supported for indexes of type `lucene`.
-* Only standard analyzers are supported (that is, those analyzers that are shipped with the product). Custom analyzers are not supported.
+* Currently, index management on AEM as a Cloud Service is only supported for indexes of type `lucene`. This means that all index customisations must be of type `lucene`.
 * Internally, other indexes might be configured and used for queries. For example, queries that are written against the `damAssetLucene` index might, on Skyline,  in fact be executed against an Elasticsearch version of this index. This difference is typically not visible to the application and user, however, certain tools such as the `explain` feature report a different index. For differences between Lucene indexes and Elastic indexes, see [the Elastic documentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Customers do not need to, and cannot, configure Elasticsearch indexes directly.
+* Only standard analyzers are supported (that is, those analyzers that are shipped with the product). Custom analyzers are not supported.
 * Search by similar feature vectors (`useInSimilarity = true`) is not supported.  
 
 >[!TIP]
@@ -72,6 +72,8 @@ For customizations of an OOTB index, prepare a new package that contains the act
 For a fully customized index, prepare a new index definition package that contains the index definition that follows this naming pattern:
 
 `<prefix>.<indexName>-<productVersion>-custom-<customVersion>`
+
+As mentioned in the limitations sections, the `type` of the customised index definition must always be set to `lucene` even if the extracted index definition using Package Manager is of a different type (e.g `elasticsearch`).
 
 <!-- Alexandru: temporarily drafting this statement due to CQDOC-17701
 
