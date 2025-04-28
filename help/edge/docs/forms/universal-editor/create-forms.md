@@ -37,9 +37,9 @@ Before you begin authoring forms in AEM and publishing them through Edge Deliver
   * If you have a repository, Add the Adaptive Forms Block to your existing repository. Detailed instructions are available in the [Getting Started with Edge Delivery Services for AEM Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project).
 * Establish a connection between your AEM environment and GitHub repository. [How to do it?](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template)
 
-<!--A decision flow diagram to guide the setup and publishing of Adaptive Forms:
+A decision flow diagram to guide the setup and publishing of Adaptive Forms:
 
-![Github Repository Workflow](/help/forms/assets/repo-workflow.png){width=auto}-->
+![Github Repository Workflow](/help/forms/assets/repo-workflow.png){width=auto}
 
 ## Authoring forms in AEM and publishing them to Edge Delivery Services
 
@@ -49,67 +49,67 @@ Follow these steps to author forms in AEM and publish them on Edge Delivery Serv
 
 [2. Author the form](#author-the-form)
 
-[3. Create an Edge Delivery Services configuration](#create-an-edge-delivery-services-configuration)
-
-[4. Publish a form](#publish-a-form)
-
-[5. Access the form on Edge Delivery Services](#access-the-form-on-edge-delivery-services)
+[3. Publish a form](#publish-a-form)
 
 ### Choose a template and create the form 
 
 You can create forms on an AEM instance for publishing to Edge Delivery Services using:
 
-* Edge Delivery Services-based templates
-* Core Component-based templates
+>[!BEGINTABS]
+
+>[!TAB Edge Delivery Services-based template]
 
 Perform the following steps to choose the template and create the form:
 
 1. Login in to your AEM Forms as a Cloud Service author instance.
 1. Select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
 1. Select **[!UICONTROL Create]**  &gt; **[!UICONTROL Adaptive Forms]**. The Wizard opens.
-1. Select the template. You can select one of the following: 
-     * **For Edge Delivery Services-based template**
+1. In the **Source** tab, select an **Edge Delivery Services-based template**:
 
-        In the **Source** tab, select an **Edge Delivery Services-based template**:
+      ![Create EDS Forms](/help/edge/assets/create-eds-forms.png)
 
-        ![Create EDS Forms](/help/edge/assets/create-eds-forms.png)
+      When you select an **Edge Delivery Services-based template**, the **[!UICONTROL Create]** button is enabled. 
+1. (Optional) In the **[!UICONTROL Data Source]** or **[!UICONTROL Submission]** tabs, you can select a data source or submit action.
+1. (Optional) In the **[!UICONTROL Delivery]** tab, you can specify a publishing or unpublishing date for a form. 
+1. Click **[!UICONTROL Create]** and the **Create Form** wizard appears:
+   
+    1. Specify the **Name** and **Title**. 
+    1. Specify the **GitHub URL**. For example, if your GitHub repository is named `edsforms`, it is located under the account `wkndforms`,the URL is:
+    `https://github.com/wkndforms/edsforms`
 
-        When you select an **Edge Delivery Services-based template**, the **[!UICONTROL Create]** button is enabled. 
-    
-       * **For Core Component based template**
+    ![Create Form wizard](/help/edge/assets/create-form-wizard.png)
 
-        In the **Source** tab, select a **Core Component based template** and a **theme**, the **[!UICONTROL Create]** button is enabled.:
+    When you click **[!UICONTROL Create]**, the form opens in the Universal Editor for authoring.
+
+    ![author the form](/help/edge/assets/author-form.png)
+1. Click **[!UICONTROL Create]** to create the form. Now, you can [author the form using the Universal Editor](#author-the-form).
+
+>[!TAB Core Component-based template]
+
+Perform the following steps to choose the template and create the form:
+
+1. Login in to your AEM Forms as a Cloud Service author instance.
+1. Select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
+1. Select **[!UICONTROL Create]**  &gt; **[!UICONTROL Adaptive Forms]**. The Wizard opens.
+1. In the **Source** tab, select a **Core Component based template** and a **theme**, the **[!UICONTROL Create]** button is enabled.:
           
-          ![Core Component based template](/help/forms/assets/core-component-based-template.png)
+  ![Core Component based template](/help/forms/assets/core-component-based-template.png)
 
 1. (Optional) In the **[!UICONTROL Data Source]** or **[!UICONTROL Submission]** tabs, you can select a data source or submit action.
 1. (Optional) In the **[!UICONTROL Delivery]** tab, you can specify a publishing or unpublishing date for a form. 
 1. Click **[!UICONTROL Create]** and the **Create Form** wizard appears for:
-   
-     * **Edge Delivery Services template-based forms**
-    
-       1. Specify the **Name** and **Title**. 
-       2. Specify the **GitHub URL**. For example, if your GitHub repository is named `edsforms`, it is located under the account `wkndforms`,the URL is:
-          `https://github.com/wkndforms/edsforms`
-
-          ![Create Form wizard](/help/edge/assets/create-form-wizard.png)
-
-          When you click **[!UICONTROL Create]**, the form opens in the Universal Editor for authoring.
-
-          ![author the form](/help/edge/assets/author-form.png)
-
-     * **Core Component template-based forms**
-   
-       1. Specify the **Name** and **Title**.
-       1. Specify the location in the **Path** field where the Adaptive Form is to be saved.
+     1. Specify the **Name** and **Title**.
+     2. Specify the location in the **Path** field where the Adaptive Form is to be saved.
           
-          ![Create Form Wizard](/help/forms/assets/create-cc-form.png)
+      ![Create Form Wizard](/help/forms/assets/create-cc-form.png)
 
-          When you click **[!UICONTROL Create]**, the form opens in the Adaptive Form Editor for authoring. 
+      When you click **[!UICONTROL Create]**, the form opens in the Adaptive Form Editor for authoring. 
 
-          ![Adaptive Form Editor](/help/forms/assets/af-editor-form.png)
+      ![Adaptive Form Editor](/help/forms/assets/af-editor-form.png)
 
-1. Click **[!UICONTROL Create]** to create the form. Now, you can author the form using the Universal Editor or Adaptive Form Editor.
+1. Click **[!UICONTROL Create]** to create the form. Now, you can [author the form using the Adaptive Form Editor](#author-the-form).
+
+>[!ENDTABS]
 
 ### Author the form
 
