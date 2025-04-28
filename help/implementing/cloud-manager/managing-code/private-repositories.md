@@ -147,9 +147,7 @@ Validated private repositories can be associated with [full-stack and frontend p
 
 
 
-## Limitations {#limitations}
-
-Certain limitations apply when using private GitHub Cloud repositories with Cloud Manager.
+## Usage notes {#usage-notes}
 
 * Web tier and config pipelines are not supported with private repositories.
 * No Git tag is created and pushed when using private repositories on production full stack pipelines.

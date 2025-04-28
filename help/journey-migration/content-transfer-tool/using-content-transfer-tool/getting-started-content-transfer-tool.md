@@ -88,12 +88,14 @@ The following section applies to the new version of the Content Transfer Tool. F
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
    The following dialog box is presented. Notice that a migration set will expire after a prolonged period of inactivity. After warnings are displayed on the project card and the migration job table rows for a time period, the migration set will expire and its data will no longer be available. Review [Migration Set Expiry](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) for details.
+   
+   During migration set creation you can pick the geographic region in which the temporary migration data will be stored.  It is recommended you choose the region closest to your target cloud environment to ensure optimal performance during ingestions.  The region cannot be changed after migration set creation; to use a different region you will need to create a new migration set.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
    >[!NOTE]
    >
-   >The name must follow the same conventions of an AEM node so cannot contain any of these characters: . / : [ ] | *
+   >The name must follow the same conventions of an AEM node so cannot contain any of these characters: `. / : [ ] | * < > ^ ? { } % # `` nor any unusual symbols or emojis.
 
 1. You should now see your migration list in the list view. Select the three dots symbol (**...**) to open the drop-down and select **Copy Extraction key**. You need this key during the Extraction phase. Copy this Extraction key.
 

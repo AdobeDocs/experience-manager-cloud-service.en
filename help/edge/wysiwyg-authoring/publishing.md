@@ -4,6 +4,9 @@ description: Learn how content publishing works with Edge Delivery Services and 
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
 role: User
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 
 # Publishing Content for Edge Delivery Services {#publishing-edge}
