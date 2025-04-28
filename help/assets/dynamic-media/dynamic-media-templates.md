@@ -67,6 +67,9 @@ Some of the key benefits of [!DNL Dynamic Media] templates include:
 >
 >Customers with subscriptions to the Enhanced Security SKU cannot use any [!DNL Dynamic Media] capabilities, including [!DNL Dynamic Media] Templates, on that Cloud Services program.
 
+Learn to create a [!DNL Dynamic Media] template step by step in this video.
+>[!VIDEO](https://video.tv.adobe.com/v/3443281)
+
 ## Before you begin{#prerequisites-for-dynamic-media-wysiwyg-template}
 
 Fulfil the following requirements to create a [!DNL Dynamic Media] template and generate its delivery URL:
@@ -278,9 +281,6 @@ Execute the following steps to copy the delivery URL of the template:
 1. Click **[!UICONTROL Copy URL]**. The **[!UICONTROL Copy URL]** dialog box displays. Select and copy the displayed URL. The first parameter in the URL starts after a question mark **([!UICONTROL ?])** and a key-value pair starts with **[!UICONTROL $]** and ends with **[!UICONTROL &]**. The key and value are separated by an equals sign **([!UICONTROL =])**, with the key on the left and the value on the right. 
 1. Paste this URL in your browser tab and see your live template. Customize the template in real time by updating the required parameter's value (Key's value) in the URL directly as demonstrated in [step 2](#preview-and-publish-template-and-copy-template-deliver-url) of **Preview and Publish** section.  
 1. Use this URL for rapid merchandising of your products or services. You can share this URL with your customers or integrate it into your website or any downstream third-party application to display the banner and make real-time updates to it to reflect the ongoing offers.
-
-Learn to create a [!DNL Dynamic Media] template step by step in this video.
->[!VIDEO](https://video.tv.adobe.com/v/3443281)
 
 ## Make real-time updates to the template from the URL{#update-the-template-from-the-url}
 
