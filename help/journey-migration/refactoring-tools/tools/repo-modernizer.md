@@ -1,7 +1,6 @@
 ---
 title: Repository Modernizer
 description: Learn how to restructure existing project packages and make them compatible with the project structure defined for Adobe Experience Manager as a Cloud Service.
-exl-id: 
 feature: Migration
 role: Admin
 ---
