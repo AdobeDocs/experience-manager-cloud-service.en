@@ -4,6 +4,9 @@ title: Spreadsheets and JSON
 feature: Edge Delivery Services
 exl-id: 032ae9aa-577c-44b1-8f5f-fb3d2885013e
 role: Admin, Architect, Developer
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 # Spreadsheets and JSON
 

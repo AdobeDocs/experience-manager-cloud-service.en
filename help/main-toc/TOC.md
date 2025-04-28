@@ -27,6 +27,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2025 {#2025}
+      + [Release Notes for 2025.3.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-3-0.md) 
       + [Release Notes for 2025.2.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-2-0.md) 
       + [Release Notes for 2025.1.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md)
     + 2024 {#2024}
@@ -1033,7 +1034,6 @@ user-guide-title: AEM as a Cloud Service
     + [Redirects](/help/edge/docs/redirects.md)
   + Building Forms {#build-forms}
     + [Overview](/help/edge/docs/forms/overview.md)
-    + [How Edge Delivery Services Forms works?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
     + [FAQ](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
     + WYSIWYG Authoring {#universal-editor}
       + [Introduction to Forms Universal Editor for Edge Delivery Services - Complete Guide](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
@@ -1072,14 +1072,9 @@ user-guide-title: AEM as a Cloud Service
     + Sidekick {#sidekick}
       + [Using Sidekick](/help/edge/docs/sidekick.md)
       + [Installing Extension](/help/edge/docs/sidekick-extension.md)
-      + [Project Configurator](https://www.aem.live/tools/sidekick/)
       + [Sidekick Library](/help/edge/docs/sidekick-library.md)
     + [FAQ](/help/edge/docs/faq.md)
-    + [Admin API](https://www.aem.live/docs/admin.html)
-    + [AEM Status](https://status.adobe.com)
     + Tools {#tools}
-      + [AEM Sidekick Chrome Extension](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
-      + [Github Bot](https://github.com/apps/aem-code-sync)
       + [Audit Log](/help/edge/docs/auditlog.md)
 + Headless {#headless}
   + [What is a Headless CMS?](/help/headless/what-is-headless.md)
@@ -1187,7 +1182,7 @@ user-guide-title: AEM as a Cloud Service
       + [Manage Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
       + [Add an Adobe Repository](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
       + [Add a Private Repository](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-      + [Add an External Repository (Limited Beta)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+      + [Add an External Repository (Early Adopter)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
       + [Access Repositories](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
       + [Git Submodule Support](/help/implementing/cloud-manager/managing-code/git-submodules.md)
       + [Use Git with Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
