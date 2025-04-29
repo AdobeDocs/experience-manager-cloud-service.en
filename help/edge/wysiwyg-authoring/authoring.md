@@ -4,6 +4,9 @@ description: Learn how content authoring works with Edge Delivery Services and h
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 
 # WYSIWYG Content Authoring for Edge Delivery Services {#authoring-edge}
