@@ -40,7 +40,7 @@ The 2025.5.0 feature activation will provide the full feature set for this maint
 * ASSETS-28106, ASSETS-49404: Improve robustness of full text searching.
 * ASSETS-50006, ASSETS-50423: Improve search and traversal performance within a large folder.
 * ASSETS-46021: Improve video display for Safari and mobile browsers.
-* ASSETS-49002: Improved handling of editing Dynamic Media Templates.
+* ASSETS-49002: Improve handling of editing Dynamic Media Templates.
 * ASSETS-48376: Miscellaneous improvements in Content Hub UI.
 * ASSETS-48504, ASSETS-49378: Miscellaneous improvements to UI behavior.
 * ASSETS-49540: Move Asset Relations OpenAPI out of experimental phase.
