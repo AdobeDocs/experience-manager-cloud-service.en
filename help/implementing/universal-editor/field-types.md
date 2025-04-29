@@ -697,12 +697,7 @@ A reference component type allows for a reference to another data object from th
 
 #### Rich Text {#rich-text}
 
-Rich text allows for multi-line, rich text input. It offers additional validation types.
-
-|Validation Type|Value Type|Description|Required|
-|---|---|---|---|
-|`maxSize`|`number`|Maximum number characters allowed|No|
-|`customErrorMsg`|`string`|Message that will display if `maxSize` is exceeded|No|
+Rich text allows for multi-line, rich text input.
 
 >[!BEGINTABS]
 
@@ -717,26 +712,6 @@ Rich text allows for multi-line, rich text input. It offers additional validatio
       "name": "rte",
       "label": "Rich Text",
       "valueType": "string"
-    }
-  ]
-}
-```
-
->[!TAB Sample 2]
-
-```json
-{
-  "id": "another-richtext",
-  "fields": [
-    {
-      "component": "richtext",
-      "name": "rte",
-      "label": "Rich Text",
-      "valueType": "string",
-      "validation": {
-        "maxSize": 1000,
-        "customErrorMsg": "That's about as funny as a screen door on a battleship."
-      }
     }
   ]
 }
