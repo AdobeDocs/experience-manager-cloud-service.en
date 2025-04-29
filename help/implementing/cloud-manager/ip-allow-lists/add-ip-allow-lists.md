@@ -14,6 +14,7 @@ Learn how to add your own IP Allow List using Cloud Manager.
 A user in the **Business Owner** or **Deployment Manager** role can follow these steps to add an IP Allow List.
 
 {{add-cm-allowlist-frontend-pipeline}}
+{{ip-allow-lists-ue}}
 
 **To add an IP Allow List:**
 
