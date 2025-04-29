@@ -18,11 +18,34 @@ The 2025.5.0 feature activation will provide the full feature set for this maint
 
 ### Enhancements {#enhancements-20626}
 
-None.
+* ASSETS-46413, ASSETS-46580: Added a new review status “Preview”.
+* ASSETS-49542: Expansion of supported languages for video and audio transcribe and translate.
+* ASSETS-48264: Expansion of PNG quality support for renditions.
 
 ### Fixed Issues {#fixed-issues-20626}
 
-None.
+* ASSETS-50387: Correct Content Fragment default thumbnail for use in GenStudio.
+* ASSETS-49006: Display video properties when the user does not have write permissions.
+* ASSETS-46757, ASSETS-46997: Improve Accessibility in the smart crop editor.
+* ASSETS-48018: Improve asset reference tracking in the Assets Publish Report.
+* ASSETS-35846: Improve consistency of access between author and delivery tier.
+* ASSETS-48171: Improve consistency of Dynamic Media Templating with Canvas.
+* ASSETS-49813: Improve Expiration Notification.
+* ASSETS-47768, ASSETS-49825, ASSETS-49008, ASSETS-48287: Improve management and visibility into bulk operations.
+* ASSETS-50003, ASSETS-50004: Improve naming and control over the renditions included in an asset download.
+* ASSETS-47939: Improve organization of responses for Content Hub.
+* ASSETS-46738: Improve performance for very large collections.
+* ASSETS-50121: Improve reliability of asset published events.
+* ASSETS-48490: Improve resiliency of automated processing during image ingestion.
+* ASSETS-28106, ASSETS-49404: Improve robustness of full text searching.
+* ASSETS-50006, ASSETS-50423: Improve search and traversal performance within a large folder.
+* ASSETS-46021: Improve video display for Safari and mobile browsers.
+* ASSETS-49002: Improved handling of editing Dynamic Media Templates.
+* ASSETS-48376: Miscellaneous improvements in Content Hub UI.
+* ASSETS-48504, ASSETS-49378: Miscellaneous improvements to UI behavior.
+* ASSETS-49540: Move Asset Relations OpenAPI out of experimental phase.
+* ASSETS-40284: Update documentation around Adobe Stock integration.
+* ASSETS-49739: Work to integrate Figma from Asset Selector. 
 
 #### AEM Guides {#guides}
 
