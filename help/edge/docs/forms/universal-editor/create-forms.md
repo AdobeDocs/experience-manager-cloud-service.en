@@ -3,8 +3,6 @@ title: How to create standalone forms based on Core Component or Edge Delivery S
 description: This article explains how to create Adaptive Forms by selecting a Core Component-based or Edge Delivery Services-based templates in the Form Creation Wizard. You can also publish the forms to AEM Edge Delivery Services.
 feature: Edge Delivery Services
 role: User
-hide: yes
-hidefromtoc: yes
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 ---
 
@@ -37,7 +35,7 @@ Before you begin authoring forms in AEM and publishing them through Edge Deliver
   * If you have a repository, Add the Adaptive Forms Block to your existing repository. Detailed instructions are available in the [Getting Started with Edge Delivery Services for AEM Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project).
 * Establish a connection between your AEM environment and GitHub repository. [How to do it?](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template)
 
-<!--A decision flow diagram to guide the setup and publishing of Adaptive Forms:
+A decision flow diagram to guide the setup and publishing of Adaptive Forms:
 
 ![Github Repository Workflow](/help/forms/assets/repo-workflow.png){width=auto}
 
