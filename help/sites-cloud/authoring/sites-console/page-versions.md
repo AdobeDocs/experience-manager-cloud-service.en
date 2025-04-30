@@ -20,6 +20,13 @@ Versioning creates a "snapshot" of a page at a specific point in time. With vers
   * Differences in the text and images are highlighted.
 * Timewarp uses the page versions to determine the state of the publish environment.
 
+>[!NOTE]
+>
+>Only content is versioned in the AEM repository. Dynamic resources such as code, CSS, and JavaScript are not versioned.
+>
+>* When viewing versions, the content is viewed with the current code, CSS, and JavaScript of the repository.
+>* When restoring versions, only the content is restored and the current code, CSS, and JavaScript of the repository is applied to it.
+
 ## Creating a New Version {#creating-a-new-version}
 
 You can create a version of your resource from:
