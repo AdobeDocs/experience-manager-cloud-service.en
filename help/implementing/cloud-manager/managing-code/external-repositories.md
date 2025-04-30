@@ -16,7 +16,7 @@ Learn how to add an external repository into Cloud Manager. Cloud Manager suppor
 
 ## Configure an external repository
 
-Configuration of an external repository in Cloud Manager consists of three steps:
+Configuration of an external repository in Cloud Manager consists of the following steps:
 
 1. [Add an external repository](#add-external-repo) to a selected program.
 1. Provide an access token to the external repository.
