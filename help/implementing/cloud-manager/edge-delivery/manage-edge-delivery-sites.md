@@ -122,7 +122,6 @@ PUT /api/program/{programId}/site/{siteId}
 **json**
 
 ```json
-
 {
   "sitename": "test-site-new-helix4",
   "branchName": "branch",
@@ -141,14 +140,12 @@ Returns an Edge Delivery Site with the following origin URL:
 **http**
 
 ```http
-
 PUT /api/program/{programId}/site/{siteId}
 ```
 
 **json**
 
 ```json
-
 {
   "sitename": "test-reposless-website",
   "branchName": "main",
