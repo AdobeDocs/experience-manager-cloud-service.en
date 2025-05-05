@@ -5,8 +5,8 @@ contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
+exl-id: b0eb19d3-0297-4583-8471-edbb7257ded4
 ---
-
 # AEM Forms Integration with Adobe Experience Platform (AEP) {#aem-forms-aep-integration}
 
 <span class="preview"> The capability to connect Adaptive Forms (AEM Forms) with Adobe Experience Platform (AEP) is under the early access program. To request access to the capability, simply send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com?subject=Request%20for%20Early%20Access%20to%20AEP%20Connector%20\(AEM%20Forms%20Integration%20with%20Adobe%20Experience%20Platform\)&body=Dear%20AEM%20Forms%20Team%2C%0D%0A%0D%0AI%20hope%20this%20message%20finds%20you%20well.%0D%0A%0D%0AI%20am%20writing%20to%20request%20access%20to%20the%20Early%20Access%20Program%20for%20the%20AEP%20Connector%2C%20which%20enables%20integration%20between%20AEM%20Forms%20and%20Adobe%20Experience%20Platform.%0D%0A%0D%0AOrganization%20Name%3A%20%5BYour%20organization%20name%5D%0D%0AOrganization%20ID%3A%20%5BYour%20organization%20ID%2C%20if%20available%5D%0D%0AUse%20Case%3A%20%5BBriefly%20describe%20your%20intended%20use%20case%2C%20including%20goals%20or%20benefits%20you%20aim%20to%20achieve%20with%20the%20integration%5D%0D%0A%0D%0AThank%20you%20for%20your%20time%20and%20consideration.%0D%0A%0D%0ABest%20regards%2C%0D%0A%5BYour%20Full%20Name%5D%0D%0A%5BYour%20Job%20Title%2C%20if%20applicable%5D%0D%0A%5BYour%20Contact%20Information%2C%20if%20appropriate%5D). You can also visit the <a href="/help/forms/early-access-ea-features.md">Early Access Program </a>page to discover all the available innovations and capabilities. . </span>
@@ -223,5 +223,3 @@ Schema markup for technical documentation
   "keywords": "AEM Forms, Adobe Experience Platform, XDM schema, data integration, form submission, customer profiles, personalization"
 }
 -->
-
-
