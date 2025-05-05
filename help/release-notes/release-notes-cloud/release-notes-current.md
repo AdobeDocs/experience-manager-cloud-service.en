@@ -22,7 +22,7 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2025.4.0) is April 24, 2025. The next feature release (2025.5.0) is planned for May 29, 2025.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2025.4.0) is April 24, 2025. The next feature release (2025.5.0) is planned for June 5, 2025.
 
 ## Maintenance Release Notes {#maintenance}
 
@@ -92,8 +92,8 @@ You can now quickly select and compare any version of an asset with its latest v
 * **Rule Editor**:
     * [Binary Condition with Click Event in "When" Clause](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor): The Rule Editor now allows combining a button click event (_Is Clicked_) with other conditions within the "When" clause. This enables more precise control over rule execution based on user interaction and other factors. Note: When using multiple conditions, the click event must be the first condition listed.
     * [Validation Conditions for Fields and Panels](/help/forms/rule-editor-core-components-usecases.md): The Rule Editor now includes _IsValid_ and _IsNotValid_ conditions. These allow you to check the validation status of specific fields or entire panels (including layouts like Horizontal Tabs, Vertical Tabs, Accordions, and Wizards), facilitating improved form navigation and user experience based on validation results.
-* **Improved Scope Management for SharePoint Lists**: SharePoint sites now support all managed paths, for example, /sites and /teams. This enhancement enables broader integration across various SharePoint site structures, offering greater flexibility in connecting to organizational content.
-* **Support for Saving Document of Record to SharePoint List**: Forms created using a SharePoint List–based Form Data Model (FDM) can now save the Document of Record (DoR) to SharePoint Lists by configuring the Document of Record Bind Reference field property. This enhancement enables seamless integration of supported form data and documents with SharePoint storage.
+* [Improved Scope Management for SharePoint Lists](/help/forms/connect-forms-to-sharepoint-list.md): SharePoint sites now support all managed paths, for example, /sites and /teams. This enhancement enables broader integration across various SharePoint site structures, offering greater flexibility in connecting to organizational content.
+* [Support for Saving Document of Record to SharePoint List](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields): Forms created using a SharePoint List–based Form Data Model (FDM) can now save the Document of Record (DoR) to SharePoint Lists by configuring the Document of Record Bind Reference field property. This enhancement enables seamless integration of supported form data and documents with SharePoint storage.
 
 ### Early Access Features in AEM Forms {#forms-new-early-access-features}
 
@@ -156,6 +156,20 @@ The more performant Java 21 **runtime** is automatically deployed when a Java 17
 >[!IMPORTANT] 
 >
 > The Java 21 **runtime** was deployed to your dev/RDE environments in February; it will be applied to your stage/production environments on **April 28 and 29**. Note that **building code** with Java 21 (or Java 17) is independent of the Java 21 runtime -- you must explicitly take steps to build code with Java 21 (or Java 17).
+
+### Enforcement of AEM's Logging Configuration Policy {#logconfig-policy}
+
+To ensure effective monitoring of customer environments, AEM Java logs must maintain a consistent format and should not be overridden by custom configurations. Log output must remain directed to the default files. For AEM product code, default log levels must be preserved. However, it is acceptable to adjust log levels for customer-developed code.
+
+To that end, changes should not be made to the following OSGi properties:
+* **Apache Sling Log Configuration** (PID: `org.apache.sling.commons.log.LogManager`) — *all properties*
+* **Apache Sling Logging Logger Configuration** (Factory PID: `org.apache.sling.commons.log.LogManager.factory.config`):
+  * `org.apache.sling.commons.log.file`
+  * `org.apache.sling.commons.log.pattern`
+
+In mid-May, AEM will enforce a policy where any custom modifications to these properties will be ignored. Please review and adjust your downstream processes accordingly. For example, if you use the log forwarding feature:
+* If your logging destination expects a custom (non-default) log format, you may need to update your ingestion rules.
+* If changes to log levels reduced log verbosity, be aware that the default log levels may result in a significant increase in log volume.
 
 ### AEM Log-Forwarding to More Destinations - Beta Program {#log-forwarding-earlyadopter}
 

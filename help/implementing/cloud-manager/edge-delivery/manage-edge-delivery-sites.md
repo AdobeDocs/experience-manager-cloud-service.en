@@ -56,6 +56,109 @@ If you delete an Edge Delivery Services site, any associated CDN configurations 
 
         ![Add Edge Delivery Site from the Edge Delivery Sites button](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
 
+## Manage an Edge Delivery site between Helix 4 and Helix 5
+
+Use the `/program/{programId}/site/{siteId}` API endpoint to migrate an Edge Delivery site between Helix 4 and Helix 5.
+
+CDN configurations for Helix 4 websites cannot be migrated to Helix 5 automatically. This limitation exists because customer production sites may still run on Helix 4, while their Helix 5 versions are still in development.
+
+**Prerequisites**
+
+* The `sitename` must already exist.
+* Know the appropriate `branchName`, Helix `version`, and `repo` values.
+* Migration only modifies `branchName`, Helix `version`, and `repo`. The owner field cannot be changed.
+
+**API format**
+
+```http
+PUT /api/program/{programId}/site/{siteId}
+```
+
+**Request body parameters**
+Creates an override for an Edge Delivery site to enforce the origin specified in the request body.
+
+```json
+{
+  "sitename": "<required site name>",
+  "branchName": "<git branch>",
+  "version": "v4" | "v5",
+  "repo": "<git repository name>"
+}
+```
+
+### Example 1: Migrate to Helix 5
+
+**http**
+
+```http
+PUT /api/program/{programId}/site/{siteId}
+```
+
+**json**
+
+```json
+{
+  "sitename": "test-site-new-helix5",
+  "branchName": "branch",
+  "version": "v5",
+  "repo": "my-website"
+}
+```
+
+**Origin URL result**
+Returns an Edge Delivery site with the following origin URL:
+
+`"origin": "branch--my-website–Teo48.aem.live"`
+
+
+### Example 2: Migrate to Helix 4
+
+**http**
+
+```http
+PUT /api/program/{programId}/site/{siteId}
+```
+
+**json**
+
+```json
+{
+  "sitename": "test-site-new-helix4",
+  "branchName": "branch",
+  "version": "v4",
+  "repo": "my-website"
+}
+```
+
+**Origin URL result**
+Returns an Edge Delivery Site with the following origin URL:
+ 
+`"origin": "branch--my-website--Teo48.hlx.live"`
+
+### Example 3: Migrate repoless site to Helix 5
+
+**http**
+
+```http
+PUT /api/program/{programId}/site/{siteId}
+```
+
+**json**
+
+```json
+{
+  "sitename": "test-reposless-website",
+  "branchName": "main",
+  "version": "v5",
+  "repo": "my-reposless-website"
+}
+```
+
+**Origin URL result**
+Returns an Edge Delivery site with the following origin URL:
+ 
+`"origin": "main--my-repoless-website--Teo48.aem.live"`
+
 ## Log a support ticket {#eds-support-ticket}
 
 {{support-ticket}}
