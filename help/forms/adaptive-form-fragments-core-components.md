@@ -113,15 +113,13 @@ You can use a none-based and schema-based form fragment multiple times in an Ada
 
 ![using multiple fragment in adaptive form](/help/forms/assets/using-multiple-fragment-af.gif)
 
-<!--
-
 ## Auto mapping of fragments for data binding {#auto-mapping-of-fragments-for-data-binding}
 
-When you create an Adaptive Form fragment using an XFA form template or XSD complex type and drag-drop the fragment to an Adaptive Form, the XFA fragment or the XSD complex type is automatically replaced by the corresponding Adaptive Form fragment whose fragment model root is mapped to the XFA fragment or XSD complex Type.
+When you create an Adaptive Form fragment using an XFA form template or XSD complex type and drag-drop the fragment to an Adaptive Form, the XFA fragment or the XSD complex type is automatically replaced by the corresponding Adaptive Form fragment whose fragment model root is mapped to the XFA fragment or XSD complex Type. You can change the fragment asset and its bindings from the Edit component dialog.
 
-You can change the fragment asset and its bindings from the Edit component dialog.
+   ![Drag and drop a fragment](/help/forms/assets/fragment.png)
 
-You can also drag-drop a bound Adaptive Form fragment from Adaptive Form Fragment library in AEM content finder and provide the correct bind reference from the Edit component dialog of the Adaptive Form fragment panel. -->
+You can also drag-drop a bound Adaptive Form fragment from Adaptive Form Fragment library in AEM content finder and provide the correct bind reference from the Edit component dialog of the Adaptive Form fragment panel.
 
 ## Manage fragments {#manage-fragments}
 
