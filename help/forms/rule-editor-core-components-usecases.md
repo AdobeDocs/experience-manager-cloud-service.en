@@ -25,7 +25,8 @@ You can create a rule on the `Next` button to validate the first panel:
 
 When you click the **Next** button, the **Personal Information** panel is validated. If the details entered are correct, the focus shifts to the **Account Security** panel; otherwise, an error message prompts you to fill in the missing details.
 
-<!--![Video]()-->
+>[!VIDEO](https://video.tv.adobe.com/v/3457767)
+
 
 ## Navigating among panels using button 
 
