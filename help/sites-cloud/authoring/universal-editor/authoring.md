@@ -186,6 +186,48 @@ When you are finished editing content, you often want to navigate it to see how 
 
 In preview mode, tapping or clicking on content reacts as it would to a reader of the content. If you want to select the content for editing, toggle out of [preview mode](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode).
 
+## Managing Page Content {#managing-page-content}
+
+Additional features are available as extensions to help you further manage your page content and your pages. [These extensions must be enabled in your program by an administrator](/help/implementing/universal-editor/extending.md) before they are visible to you as a content author in [the Universal Editor toolbar.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
+
+### Inheritance {#inheritance}
+
+The **AEM Multi Site Management (MSM) Extension** both displays the current inheritance status of the selected component as well as allows you to [break or reinstate inheritance.](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+
+The **Inheritance Installed** icon shows that inheritance is still active for the selected component.
+
+![Inheritance installed icon](assets/inheritance-installed-icon.png)
+
+Tap or click the icon to break inheritance for the selected component. Inheritance is automatically broken if you edit the component.
+
+The **Inheritance Broken** icon shows that inheritance has been broken for the selected component.
+
+![Inheritance broken icon](assets/inheritance-broken-icon.png)
+
+Tap or click the icon to reinstate inheritance for the selected component. You will need to reload the page to refresh the content to show the inherited content.
+
+For information on how to enable this extension, please see the extension documentation.
+
+>[!NOTE]
+>
+>The **Inheritance Installed** and **Inheritance Broken** icons only display when a component has been selected and the page is based on a blueprint.
+
+>[!NOTE]
+>
+>The **AEM Multi Site Management (MSM) Extension** only works for pages, not Content Fragments.
+
+### Developer Login {#developer-login}
+
+The **AEM Universal Editor Dev Login Extension** is useful for developers who are developing locally, enabling them a convenient way to authenticate to their local SDK for testing purposes.
+
+![Developer login icon](assets/developer-login-icon.png)
+
+When tapping or clicking the icon, the developer can provide their local login credentials to sign into the local AEM SDK.
+
+![Developer login modal](assets/developer-login.png)
+
+For information on how to enable this extension, please see the extension documentation.
+
 ## Additional Resources {#additional-resources}
 
 To learn how to publish content with the universal editor, please see this document.
