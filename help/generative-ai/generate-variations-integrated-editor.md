@@ -319,6 +319,9 @@ For further information you can also read:
 
 * [GenAI Generate Variations on GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Edge Delivery Services Experimentation](https://www.aem.live/docs/experimentation)
+* [Generative AI in Experience Cloud products](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
+
+  * [Generative AI in Experience Cloud products - Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)
 
 ## Release History {#release-history}
 
