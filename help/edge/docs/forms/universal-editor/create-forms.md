@@ -3,8 +3,6 @@ title: How to create standalone forms based on Core Component or Edge Delivery S
 description: This article explains how to create Adaptive Forms by selecting a Core Component-based or Edge Delivery Services-based templates in the Form Creation Wizard. You can also publish the forms to AEM Edge Delivery Services.
 feature: Edge Delivery Services
 role: User
-hide: yes
-hidefromtoc: yes
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 ---
 
@@ -37,7 +35,7 @@ Before you begin authoring forms in AEM and publishing them through Edge Deliver
   * If you have a repository, Add the Adaptive Forms Block to your existing repository. Detailed instructions are available in the [Getting Started with Edge Delivery Services for AEM Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project).
 * Establish a connection between your AEM environment and GitHub repository. [How to do it?](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template)
 
-<!--A decision flow diagram to guide the setup and publishing of Adaptive Forms:
+A decision flow diagram to guide the setup and publishing of Adaptive Forms:
 
 ![Github Repository Workflow](/help/forms/assets/repo-workflow.png){width=auto}
 
@@ -93,13 +91,13 @@ Perform the following steps to choose the template and create the form:
 1. Select **[!UICONTROL Create]**  &gt; **[!UICONTROL Adaptive Forms]**. The Wizard opens.
 1. In the **Source** tab, select a **Core Component based template** and a **theme**, the **[!UICONTROL Create]** button is enabled.:
           
-  ![Core Component based template](/help/forms/assets/core-component-based-template.png)
+    ![Core Component based template](/help/forms/assets/core-component-based-template.png)
 
 1. (Optional) In the **[!UICONTROL Data Source]** or **[!UICONTROL Submission]** tabs, you can select a data source or submit action.
 1. (Optional) In the **[!UICONTROL Delivery]** tab, you can specify a publishing or unpublishing date for a form. 
 1. Click **[!UICONTROL Create]** and the **Create Form** wizard appears for:
      1. Specify the **Name** and **Title**.
-     2. Specify the location in the **Path** field where the Adaptive Form is to be saved.
+     1. Specify the location in the **Path** field where the Adaptive Form is to be saved.
           
       ![Create Form Wizard](/help/forms/assets/create-cc-form.png)
 
@@ -170,30 +168,30 @@ To publish an Adaptive Form on Edge Delivery Services, you need to [create an Ed
 Perform the following steps to create the Edge Delivery Services Configuration:
 
 >[!BEGINTABS]
->[!TAB For forms created using the Edge Delivery Services-based template]
+>[!TAB Edge Delivery Services-based template]
 
 
   The Edge Delivery Services configuration for forms based on the Edge Delivery Services-based template is created automatically in the form's configuration container.
 
   ![Edge Delivery Services Configuration](/help/edge/assets/aem-instance-eds-configuration.png)
 
->[!TAB For forms created using the Core Component-based template]
+>[!TAB Core Component-based template]
 
   1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Edge Delivery Services Configuration]** on your AEM Forms as a Cloud Service author instance.
 
      ![Select Edge Delivery Services Configuration](/help/edge/assets/select-eds-conf.png)
 
-  1. Select the folder that matches the form's name. For example, if your form is called `enrollment-form`, choose the folder `forms/enrollment-form` and click **[!UICONTROL Create]** > **[!UICONTROL Configuration]**:
+  2. Select the folder that matches the form's name. For example, if your form is called `enrollment-form`, choose the folder `forms/enrollment-form` and click **[!UICONTROL Create]** > **[!UICONTROL Configuration]**:
 
      ![Edge Delivery Services Configuration](/help/forms/assets/create-eds-conf.png)
 
-  1. Click the **[!UICONTROL Edge Delivery Services Configuration]** and click **[!UICONTROL Properties]** to open the properties:   
+  3. Click the **[!UICONTROL Edge Delivery Services Configuration]** and click **[!UICONTROL Properties]** to open the properties:   
      
      ![Automatically created configuration](/help/forms/assets/eds-conf.png)
 
      The Edge Delivery Services Configuration appears.
 
-  1. Specify the following in the Edge Delivery Services Configuration:
+  4. Specify the following in the Edge Delivery Services Configuration:
 
      * **Organization**: Specify your GitHub organization name.
 
@@ -202,7 +200,7 @@ Perform the following steps to create the Edge Delivery Services Configuration:
      * **(Optional) Edge Host**: Leave the Edge Host option as it is. The form is published to both preview (.page) and live (.live) environments.
      * **(Optional) Site Authentication Token**: Use the Site Authentication Token to securely authenticate requests between your AEM instance and Edge Delivery Services.
 
-  1. Click **[!UICONTROL Save and Close]**. The configuration is created.
+  5. Click **[!UICONTROL Save and Close]**. The configuration is created.
 
 >[!ENDTABS]
 
@@ -250,7 +248,7 @@ To access the form on Edge Delivery Services, it is mandatory to publish the for
 The below screenshots compares staged and live form URLs and visual previews for forms created using Edge Delivery Services-based and Core Component-based templates:
 
 >[!BEGINTABS]
->[!TAB Accessing forms created using Edge Delivery Services-based Template]
+>[!TAB Edge Delivery Services-based Template]
 
   <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
     <thead>
@@ -271,7 +269,7 @@ The below screenshots compares staged and live form URLs and visual previews for
     </tbody>
   </table>
 
->[!TAB Accessing forms created using Core Component-based Template]
+>[!TAB Core Component-based Template]
 
   <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
   <thead>
