@@ -66,7 +66,7 @@ To create a form fragment in Universal Editor, perform the following steps:
    ![Create fragment](/help/edge/docs/forms/universal-editor/assets/create-fragment.png)
 
    The **Create Adaptive Form Fragment** wizard appears.
-1. Select the Egde Delivery Services  based template from the **Select Template** tab and click **[!UICONTROL Next]**.
+1. Select the Edge Delivery Services  based template from the **Select Template** tab and click **[!UICONTROL Next]**.
    ![Select Edge Delivery Services template](/help/edge/docs/forms/universal-editor/assets/create-form-fragment.png)
 
 1. Specify title, name, description and tags for the fragment. Ensure that you specify a unique name for the fragment. If another fragment exists with the same name, the fragment fails to create. 
