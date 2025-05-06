@@ -39,7 +39,7 @@ The dashboard is divided into three sections showing you:
 * **Add-ons** - Which add-ons to your licensed solutions that you have available.
 * **Other Entitlements** - What sandbox and dev environment and other entitlements that can be consumed within your tenant.
 
-Each section summarizes what is available and how it is used, if at all. Currently only Sites and Assets solutions are displayed even if other solutions exist in the tenant.
+Each section summarizes what is available and how it is used, if at all. Currently, only Sites and Assets solutions are displayed even if other solutions exist in the tenant.
 
 * The **Status** column displays the number of entitlements unused versus the total available for the tenant.
 * The **Configured on** column indicates the programs on which the solution entitlement has been applied.
@@ -94,7 +94,7 @@ The right side of the window presents an area chart showing the usage broken dow
 
 ## Frequently asked questions {#faq}
 
-+++**What is a content request?** {#what-is-a-content-request}
++++**What is a content request?**{#what-is-a-content-request}
 
 A content request is any request directed to AEM Sites or a customer-provided caching system, like a content delivery network. It retrieves content or data in HTML format for page views. Or, in JSON format for API calls.
 
@@ -105,7 +105,7 @@ Content Requests exclude requests or activities initiated by or on behalf of Ado
 See also [Understand Cloud Service content requests](/help/implementing/cloud-manager/content-requests.md).
 +++
 
-+++**How does Adobe Experience Manager measure content requests?** {#how-are-content-requests-measured}
++++**How does Adobe Experience Manager measure content requests?**{#how-are-content-requests-measured}
 
 Content requests are tracked on AEM as a Cloud Service's edge servers. Origin traffic does not count towards content requests. The CDN built into AEM as a Cloud Service tracks valid HTML and JSON requests.
 
@@ -114,18 +114,18 @@ AEM also has rules in place to exclude well-known bots, including well-known ser
 See also [Understanding Cloud Service Content Requests](/help/implementing/cloud-manager/content-requests.md).
 +++
 
-+++**Why does my Analytics report show different results than the AEM Content Requests?** {#why-are-reports-different}
++++**Why does my Analytics report show different results than the AEM content requests?**{#why-are-reports-different}
 
 Content Requests can have variances with an organization's Analytics reporting tools. For more information, see [Understanding Cloud Service Content Requests](/help/implementing/cloud-manager/content-requests.md).
 +++
 
-+++**What if I would like to learn more about my content request volume?** {#current-request-volumes}
++++**What if I would like to learn more about my content request volume?**{#current-request-volumes}
 
 If you would like additional insights into the content request volume shown in the License dashboard, your Adobe team can provide a report that shows the top volume drivers of content requests. Reach out to your Adobe team or to Adobe Customer Support to request a top usage report.
 +++
 
-+++**What if I am using my own CDN?** {#using-own-cdn}
++++**What if I am using my own CDN?**{#using-own-cdn}
 
-The License dashboard only shows data tracked by the Cloud Service CDN. If you choose to bring your own CDN (BYOCDN), you report your content request volume back to Adobe on an annual basis, as stated in your contract. 
+The License dashboard only shows data tracked by the Cloud Service CDN. If you choose to Bring Your Own CDN (BYOCDN), you report your content request volume back to Adobe on an annual basis, as stated in your contract. 
 +++
 
