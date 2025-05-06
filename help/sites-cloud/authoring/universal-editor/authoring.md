@@ -188,11 +188,11 @@ In preview mode, tapping or clicking on content reacts as it would to a reader o
 
 ## Managing Page Content {#managing-page-content}
 
-Additional features are available as extensions to help you further manage your page content and your pages. [These extensions must be enabled in your program by an administrator](/help/implementing/universal-editor/extending.md) before they are visible to you as a content author in [the Universal Editor toolbar.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
+Additional features are available as extensions to the Universal Editor to help you further manage your pages and content. [These extensions must be enabled in your program by an administrator](/help/implementing/universal-editor/extending.md) before they are visible to you as a content author in [the Universal Editor toolbar.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
 
 ### Inheritance {#inheritance}
 
-The **AEM Multi Site Management (MSM) Extension** both displays the current inheritance status of the selected component as well as allows you to [break or reinstate inheritance.](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+The **AEM Multi-Site-Management (MSM) Extension** displays the current inheritance status of the selected component and allows you to [break or reinstate inheritance.](/help/sites-cloud/authoring/universal-editor/inheritance.md)
 
 The **Inheritance Installed** icon in the Universal Editor toolbar shows that inheritance is still active for the selected component.
 
@@ -204,7 +204,7 @@ The **Inheritance Broken** icon shows that inheritance has been broken for the s
 
 ![Inheritance broken icon](assets/inheritance-broken-icon.png)
 
-Tap or click the icon to reinstate inheritance for the selected component. You will need to reload the page to refresh the content to show the inherited content.
+Tap or click the icon to reinstate inheritance for the selected component. You will need to reload the page to refresh the content in order to show the inherited content.
 
 For information on how to enable this extension, please see the extension documentation.
 
@@ -214,7 +214,7 @@ For information on how to enable this extension, please see the extension docume
 
 >[!NOTE]
 >
->The **AEM Multi Site Management (MSM) Extension** only works for pages, not Content Fragments.
+>The **AEM Multi-Site-Management (MSM) Extension** only works for pages, not Content Fragments.
 
 ### Accessing Page Properties {#page-properties}
 
@@ -232,7 +232,7 @@ For information on how to enable this extension, please see the extension docume
 
 ### Access Sites Console {#sites-console}
 
-The **AEM Site Admin Extension** allows quick access to the page being edited within the [Sites Console of AEM,](/help/sites-cloud/authoring/sites-console/introduction.md) allowing the author to navigate the site tree or perform page-level actions in the console.
+The **AEM Site Admin Extension** allows quick access to the page being edited within the [Sites Console of AEM,](/help/sites-cloud/authoring/sites-console/introduction.md) allowing you to navigate the site tree or perform page-level actions in the console.
 
 ![Open in site admin icon](assets/open-in-site-admin-icon.png)
 
@@ -242,7 +242,7 @@ For information on how to enable this extension, please see the extension docume
 
 ### Locking and Unlocking Pages {#locking-pages}
 
-The **AEM Page Lock Extension** both displays the current lock status of the page in the editor and allows you to [lock or unlock the page.](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page)
+The **AEM Page Lock Extension** displays the current lock status of the page in the editor and allows you to [lock or unlock the page.](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page)
 
 The **Unlocked** icon in the Universal Editor toolbar shows that the page currently in the editor is not locked.
 
