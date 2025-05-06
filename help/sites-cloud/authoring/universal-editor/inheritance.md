@@ -38,6 +38,12 @@ When a page is part of MSM or a Launch and content is edited with the Universal 
 
 The author does not need to click a button or otherwise take any other steps to disable inheritance before making local edits. As soon as a change is made, inheritance is implicitly canceled. This workflow is in contrast to the [Page Editor](/help/sites-cloud/authoring/page-editor/edit-content.md#inherited-components).
 
+Inheritance can be reverted for the entire page via the: 
+
+  * [Live Copy Overview Console](/help/sites-cloud/administering/msm/live-copy-overview.md) 
+  * [Launches Console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
+  * Using the **Reset** button on the **Live Copy** tab of the [page properties window](/help/sites-cloud/authoring/sites-console/page-properties.md).
+
 The Universal Editor does not affect the underlying mechanism of inheritance. For more details on how inheritance works, please see the following documentation.
 
 * [Multi Site Management (MSM)](/help/sites-cloud/administering/msm/overview.md)
@@ -51,10 +57,6 @@ Please see the [authoring documentation for more information.](/help/sites-cloud
 
 ## Limitations {#limitations}
 
-* Inheritance can be reverted for the entire page via the
-  * [Live Copy Overview Console](/help/sites-cloud/administering/msm/live-copy-overview.md) 
-  * [Launches Console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-  * Using the **Reset** button on the **Live Copy** tab of the [page properties window](/help/sites-cloud/authoring/sites-console/page-properties.md).
 * To revert inheritance for single components, the **AEM Multi-Site-Management (MSM) Extension** must be enabled.
 * For visual feedback to see which components have their inheritance disabled and which still have it preserved, the **AEM Multi-Site-Management (MSM) Extension** must be enabled.
 * These features are currently limited to components in pages and do not yet apply to [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md), despite those also having MSM and Launch capabilities.
