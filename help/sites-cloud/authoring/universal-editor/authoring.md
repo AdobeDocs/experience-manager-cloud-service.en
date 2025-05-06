@@ -194,7 +194,7 @@ Additional features are available as extensions to help you further manage your 
 
 The **AEM Multi Site Management (MSM) Extension** both displays the current inheritance status of the selected component as well as allows you to [break or reinstate inheritance.](/help/sites-cloud/authoring/universal-editor/inheritance.md)
 
-The **Inheritance Installed** icon shows that inheritance is still active for the selected component.
+The **Inheritance Installed** icon in the Universal Editor toolbar shows that inheritance is still active for the selected component.
 
 ![Inheritance installed icon](assets/inheritance-installed-icon.png)
 
@@ -216,13 +216,71 @@ For information on how to enable this extension, please see the extension docume
 >
 >The **AEM Multi Site Management (MSM) Extension** only works for pages, not Content Fragments.
 
+### Accessing Page Properties {#page-properties}
+
+The **AEM Page Properties Extension** allows quick access to the [Page Properties window](/help/sites-cloud/authoring/sites-console/page-properties.md) for the page currently being edited.
+
+![Page properties icon](assets/page-properties-icon.png)
+
+Tap or click the **Page Properties** icon in the Universal Editor toolbar to open the page properties for the page in a new browser tab.
+
+For information on how to enable this extension, please see the extension documentation.
+
+>[!NOTE]
+>
+>The **AEM Page Properties Extension** only works for pages, not Content Fragments.
+
+### Access Sites Console {#sites-console}
+
+The **AEM Site Admin Extension** allows quick access to the page being edited within the [Sites Console of AEM,](/help/sites-cloud/authoring/sites-console/introduction.md) allowing the author to navigate the site tree or perform page-level actions in the console.
+
+![Open in site admin icon](assets/open-in-site-admin-icon.png)
+
+Tap or click the icon to open the Sites Console in a new browser tab, navigated to the page currently in the editor.
+
+For information on how to enable this extension, please see the extension documentation.
+
+### Locking and Unlocking Pages {#locking-pages}
+
+The **AEM Page Lock Extension** both displays the current lock status of the page in the editor and allows you to [lock or unlock the page.](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page)
+
+The **Unlocked** icon in the Universal Editor toolbar shows that the page currently in the editor is not locked.
+
+![Unlocked icon](assets/unlocked-icon.png)
+
+Tap or click the icon to lock the page.
+
+The **Locked** icon in the Universal Editor toolbar shows that the page currently in the editor is locked. Hover your mouse over the icon for a tooltip indicating the user who locked the page.
+
+![Locked icon](assets/locked-icon.png)
+
+Tap or click the icon to unlock the page if you are the user who locked it.
+
+For information on how to enable this extension, please see the extension documentation.
+
+>[!NOTE]
+>
+>The **AEM Page Lock Extension** only works for pages, not Content Fragments.
+
+### Workflows {#workflows}
+
+The **AEM Workflows Extension** allows you to [start a workflow](/help/sites-cloud/authoring/workflows/overview.md) on the page currently in the editor.
+
+![Workflows icon](assets/workflows-icon.png)
+
+Tap or click the **Workflows** icon in the Universal Editor toolbar to open the **Start a workflow** modal. The window lists the possible content to which you can apply a workflow. Choose to which content to apply the workflow and then select the workflow.
+
+![Start a workflow modal](assets/start-a-workflow.png)
+
+For information on how to enable this extension, please see the extension documentation.
+
 ### Developer Login {#developer-login}
 
-The **AEM Universal Editor Dev Login Extension** is useful for developers who are developing locally, enabling them a convenient way to authenticate to their local SDK for testing purposes.
+The **AEM Universal Editor Dev Login Extension** is useful for developers who are developing locally, enabling a convenient way to authenticate to a local AEM SDK for testing purposes.
 
 ![Developer login icon](assets/developer-login-icon.png)
 
-When tapping or clicking the icon, the developer can provide their local login credentials to sign into the local AEM SDK.
+Tap or click the **Developer Logon** icon in the Universal Editor toolbar to provide your local login credentials to sign into your local AEM SDK.
 
 ![Developer login modal](assets/developer-login.png)
 
