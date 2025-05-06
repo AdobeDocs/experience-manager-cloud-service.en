@@ -3,8 +3,6 @@ title: How to author forms in AEM?
 description: Learn about the various form authoring platforms available in Adobe Experience Manager (AEM) and how to choose the right one based on your requirements.
 feature: Edge Delivery Services, Adaptive Forms, Core Components
 role: User, Developer
-hide: yes
-hidefromtoc: yes
 ---
 
 # How to Author Forms in Adobe Experience Manager (AEM)?
