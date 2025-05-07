@@ -17,6 +17,12 @@ Learn about the different options to extend the capabilities of Universal Editor
 
 As an Adobe Experience Cloud service, the Universal Editor's UI can be extended using the App Builder and Experience Manager. Adobe offers many ready-made extensions that you can use for your project.
 
+* **[AEM Multi-Site-Management (MSM) Extension](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)**: Break or reinstate inheritance at the component level
+* **[AEM Page Properties Extension](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)**: Access the page properties window of the page in the Universal Editor
+* **[AEM Site Admin Extension](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console)**: Open the Sites Console to the location of the page in the Universal Editor
+* **[AEM Page Lock Extension](/help/sites-cloud/authoring/universal-editor/authoring.md#locking-pages)**: View and change the page lock status from the Universal Editor
+* **[AEM Workflows Extension](/help/sites-cloud/authoring/universal-editor/authoring.md#workflows)**: Start workflows on the page and page content from the Universal Editor
+* **[AEM Universal Editor Dev Login Extension](/help/sites-cloud/authoring/universal-editor/authoring.md#developer-login)**: Easily authenticate to your local AEM SDK when developing locally
 * **[AEM Product Picker for Universal Editor](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/ue-product-picker/)**: Integrate Adobe Commerce data by selecting or removing product data from the editor.
 * **[Universal Editor Content Drafts](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/universal-editor-content-drafts/)**: Create, edit, and manage multiple drafts of content.
 * **[Configurable Asset Picker](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/)**: Enable asset selection from repositories other than the one used by the edited page.
