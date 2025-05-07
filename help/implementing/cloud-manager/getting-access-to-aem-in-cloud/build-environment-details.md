@@ -79,7 +79,7 @@ To set the Maven execution JDK, create a file named `.cloudmanager/java-version`
 
 #### Prerequisites for migrating to building with Java 21 or Java 17 {#prereq-for-building}
 
-To migrate to building with Java 21 or Java 17, you must first upgrade to the latest SonarQube version. For details, see the [Release Notes for Cloud Manager 2025.1.0](/help/implementing/cloud-manager/release-notes/current.md#what-is-new).
+To build with Java 21 or Java 17, Cloud Manager now uses SonarQube 9.9, which is compatible with these Java versions. This change was introduced in Cloud Manager release 2025.1.0. No customer action is required to upgrade SonarQube. For more details and to understand the change, see the [Release Notes for Cloud Manager 2025.1.0](/help/implementing/cloud-manager/release-notes/2025/2025-1-0.md).
 
 When migrating your application to a new Java build version and runtime version, thoroughly test in dev and stage environments before deploying to production.
 
@@ -98,7 +98,7 @@ The following features might not function correctly when deployed on the Java 21
 
 #### Runtime requirements {#runtime-requirements}
 
-The Java 21 runtime is used for builds with Java 21 and Java 17, and it will gradually be applied to Java 11 builds too (see the Note below). An environment must be on AEM release 17098 or more recent to receive the Java 21 update. To ensure compatibility, the following adjustments are required.
+The Java 21 runtime is used for builds with Java 21 and Java 17, and it will be applied gradually to Java 11 builds too (see the Note below). An environment must be on AEM release 17098 or more recent to receive the Java 21 update. To ensure compatibility, the following adjustments are required.
 
 Library updates can be applied anytime, as they remain compatible with older Java versions.
 
