@@ -60,7 +60,9 @@ If you delete an Edge Delivery Services site, any associated CDN configurations 
 
 Use the `/program/{programId}/site/{siteId}` API endpoint to migrate an Edge Delivery site between Helix 4 and Helix 5.
 
-CDN configurations for Helix 4 websites cannot be migrated to Helix 5 automatically. This limitation exists because customer production sites may still run on Helix 4, while their Helix 5 versions are still in development.
+>[!IMPORTANT]
+>
+>CDN configurations for Helix 4 websites cannot be migrated to Helix 5 automatically. This limitation exists because customer production sites may still run on Helix 4, while their Helix 5 versions are still in development.
 
 **Prerequisites**
 
