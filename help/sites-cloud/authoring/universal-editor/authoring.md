@@ -196,8 +196,7 @@ If the **AEM Multi-Site-Management (MSM) Extension** is enabled for your program
 
 For more details on how inheritance works using the Universal Editor, see [Content Inheritance in the Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md).
 
-
-## Optional Toolbar Options{#toolbar-options}
+## Optional Toolbar Features {#toolbar-options}
 
 Additional features are available as extensions to the Universal Editor to help you further manage your pages and content. [These extensions must be enabled in your program by an administrator](/help/implementing/universal-editor/extending.md) before they are visible to you as a content author in [the Universal Editor toolbar.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
 
@@ -299,6 +298,20 @@ The **AEM Universal Editor Dev Login Extension** is useful for developers who ar
 Tap or click the **Developer Logon** icon in the Universal Editor toolbar to provide your local login credentials to sign into your local AEM SDK.
 
 ![Developer login modal](assets/developer-login.png)
+
+For information on how to enable this extension, [please see the Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/)
+
+## Optional Properties Panel Features {#properties-panel-options}
+
+Additional features are available as extensions to the Universal Editor to help you further manage your page content. [These extensions must be enabled in your program by an administrator](/help/implementing/universal-editor/extending.md) before they are visible to you as a content author in [the Universal Editor properties panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+
+### Generate Variations {#generate-variations}
+
+The **Generate Variations** extension allows you to use generative artificial intelligence (AI) to create variations for your content directly in the properties panel.
+
+![Generate variations icon](assets/generate-variations-icon.png)
+
+Tap or click the **Generate Variations** icon in the Universal Editor properties panel to receive recommendations and create variations. Please see the document [Generate Variations - Integrated in AEM Editors](/help/generative-ai/generate-variations-integrated-editor.md) for more details on how generating variations works.
 
 For information on how to enable this extension, [please see the Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/)
 
