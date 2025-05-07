@@ -87,7 +87,13 @@ sandboxes associated with the tags.
 
 1. The Fragment External References extension is available as a tab in the right panel. Select the tab to open the extension:
 
-   <!-- screenshot -->
+   ![Fragment External References extension](/help/sites-cloud/administering/content-fragments/assets/cf-ajo-fragment-external-references-extension.png)
+
+   Once a reference type is selected the extension displays the corresponding external references as a table with the columns: 
+
+   * **Name**: the name of the reference where the Content fragment is used
+   * **Preview** select this link to start the preview
+   * **Status**: the status of the reference
 
 1. You can select the **Reference Type** from the drop-down to switch between three reference types: 
 
@@ -101,12 +107,6 @@ sandboxes associated with the tags.
    * **Template** 
      * displays related Templates.
        You can then select and [preview a selected Template](#preview-ajo-templates).
-
-1. Once a reference type is selected the extension displays the corresponding external references as a table with the columns: 
-
-   * **Name**: the name of the reference where the Content fragment is used
-   * **Preview** select this link to start the preview
-   * **Status**: the status of the reference
 
 ### Preview AJO Campaigns {#preview-ajo-campaigns}
 
