@@ -10,60 +10,68 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 20476 {#20476}
+## Release 20626 {#20626}
 
-Summarized below are the continuous improvements for maintenance release 20476, which was publicly released on April 15, 2025. The previous maintenance release was release 20133.
+Summarized below are the continuous improvements for maintenance release 20626, which was publicly released on April 29, 2025. The previous maintenance release was release 20476.
 
-The 2025.4.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
+The 2025.5.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-20476}
+### Enhancements {#enhancements-20626}
 
-* CNTBF-411: Add possibility to delete sling job in case it is dropped by JCR.
-* CQ-4359813: AEM Translation Kit: March 20.
-* CQ-4359811: Granite Translation Kit: March 20.
-* GRANITE-57863: Update Filevault to version 3.8.4.
-* GRANITE-56154: Configure exponential retries in oak-segment-azure.
-* GRANITE-55999: Improve performance of UserPropertiesService.
-* GRANITE-55781: Avoid redundant reconfiguration of user membership.
-* GRANITE-53956: Upgrade Azure SDK V8 to V12 for oak-segment-azure.
-* GRANITE-50654: On principal permissions tab, remove "everyone" load by default on the front end.
-* SKYOPS-103444: Update to Sling ResourceResolver 1.12.6.
-* SKYOPS-101147: Update caconfig impl.
-* SKYOPS-97124: Add analyser warnings for outdated versions of the SPIFly bundle.
-* SKYOPS-95826: Update runtime Java versions to 11.0.26 and 21.0.6.
-* SKYOPS-53671: Use customer installed artifacts from feature models on (RDE) AEM restarts.
+* ASSETS-46413, ASSETS-46580: Added a new review status “Preview”.
+* ASSETS-49542: Expansion of supported languages for video and audio transcribe and translate.
+* ASSETS-48264: Expansion of PNG quality support for renditions.
 
-### Fixed Issues {#fixed-issues-20476}
+### Fixed Issues {#fixed-issues-20626}
 
-* ASSETS-49027: [Regression] The AemRequestEventFilter breaks POST requests to the OSGI web console.
-* ASSETS-44956: Can't Select Any Dynamic Media Rendition - script tags should be loaded in top level component.
-* CNTBF-410: CheckJob getId null pointer in ContentCopy Bundle.
-* CNTBF-341: ContentCopy export Index Out Of Bounds.
-* CQ-4355411: Tooltips remain on the display in "User Preferences" dialog.
-* GRANITE-57265: Dropdown selection values are not getting selected.
-* GRANITE-57067 - Missing effective policies on UI.
-* SITES-30727: drag and drop may fail for sub-components within the AEM editor.
-* SKYOPS-90607: Sling Jobs are executed in inactive deployment / mutable content.
-* SKYOPS-95722: Remove `MaxPermSize` size from quickstart flags in AEM-SDK.
-* SKYOPS-103569: Certain images cannot be loaded with Java 21: `javax.imageio.IIOException: Cannot create Sun JPEGImageReader backend`.
+* ASSETS-50387: Correct Content Fragment default thumbnail for use in GenStudio.
+* ASSETS-49006: Display video properties when the user does not have write permissions.
+* ASSETS-46757, ASSETS-46997: Improve Accessibility in the smart crop editor.
+* ASSETS-48018: Improve asset reference tracking in the Assets Publish Report.
+* ASSETS-35846: Improve consistency of access between author and delivery tier.
+* ASSETS-48171: Improve consistency of Dynamic Media Templating with Canvas.
+* ASSETS-49813: Improve Expiration Notification.
+* ASSETS-47768, ASSETS-49825, ASSETS-49008, ASSETS-48287: Improve management and visibility into bulk operations.
+* ASSETS-50003, ASSETS-50004: Improve naming and control over the renditions included in an asset download.
+* ASSETS-47939: Improve organization of responses for Content Hub.
+* ASSETS-46738: Improve performance for very large collections.
+* ASSETS-50121: Improve reliability of asset published events.
+* ASSETS-48490: Improve resiliency of automated processing during image ingestion.
+* ASSETS-28106, ASSETS-49404: Improve robustness of full text searching.
+* ASSETS-50006, ASSETS-50423: Improve search and traversal performance within a large folder.
+* ASSETS-46021: Improve video display for Safari and mobile browsers.
+* ASSETS-49002: Improve handling of editing Dynamic Media Templates.
+* ASSETS-48376: Miscellaneous improvements in Content Hub UI.
+* ASSETS-48504, ASSETS-49378: Miscellaneous improvements to UI behavior.
+* ASSETS-49540: Move Asset Relations OpenAPI out of experimental phase.
+* ASSETS-40284: Update documentation around Adobe Stock integration.
+* ASSETS-49739: Work to integrate Figma from Asset Selector. 
 
-### Known Issues {#known-issues-20476}
+#### AEM Guides {#guides}
+
+* GUIDES-21734: New IDs fail to generate for elements when such elements are added via snippets or created via templates, even when the auto generate ID option is enabled in XMLEditorConfig.
+* GUIDES-25969: If the `scope=external` attribute is missing from external links in a DITA topic, HTML5 publishing fails without indicating the files where this attribute is missing in the error logs, especially when the microservice is enabled.
+* GUIDES-27288: Unable to pass the metadata properties to map landing pages generated using new AEM Sites publishing.
+
+For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
+
+### Known Issues {#known-issues-20626}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-20476}
+### Deprecated Features and APIs {#deprecated-20626}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-20476}
+### Security Fixes {#security-20626}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 5 identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 11 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-20476}
+### Embedded Technologies {#embedded-tech-20626}
 
 |Technology|Version|Link|
 |---|---|---|
 |AEM Oak | 1.78.0|[Oak API 1.78.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.78.0/index.html)| 
 |AEM SLING API | 2.27.6 |[Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL| 1.4.26-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
-|AEM Core Components| 2.28.0|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
+|AEM Core Components| 2.29.0|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
