@@ -93,6 +93,10 @@ While Java logging supports several other levels of logging granularity, AEM as 
 
 AEM Log levels are set per environment type via OSGi configuration, which in turn are committed to Git, and deployed via Cloud Manager to AEM as a Cloud Service. Because of this, it is best to keep log statements consistent and well known for environment types to ensure the logs available via AEM as Cloud Service are available at the optimal log level without requiring redeployment of application with the updated log level configuration.
 
+>[!NOTE]
+>
+>To ensure effective monitoring of customer environments, do not change the default log level. In addition, do not modify the default logging format. Log output must remain directed to the default files. See [the section below](#configuration-loggers) for specific guidelines.
+
 **Example Log Output**
 
 ```
@@ -147,6 +151,19 @@ Configure java logging for custom Java packages via OSGi configurations for the 
 | `org.apache.sling.commons.log.file`| Specify the target for the output: `logs/error.log`|
 
 Changing other LogManager OSGi configuration properties may result in availability issues in AEM as a Cloud Service.
+
+As noted in a previous section, to ensure effective monitoring of customer environments:
+* Java logs for AEM's product code must preserve their default log level "INFO" and must not be overridden by custom configurations.
+* It is acceptable to set the log levels to DEBUG for product code, but use it sparingly to prevent performance degradation and restore back to INFO when it is no longer needed.
+* It is acceptable to adjust log levels for customer-developed code.
+* All logs -- for both AEM product code and customer-developed code -- must maintain the default logging format.
+* Log output must remain directed to the default file "logs/error.log".
+
+To that end, changes must not be made to the following OSGi properties:
+* **Apache Sling Log Configuration** (PID: `org.apache.sling.commons.log.LogManager`) — *all properties*
+* **Apache Sling Logging Logger Configuration** (Factory PID: `org.apache.sling.commons.log.LogManager.factory.config`):
+  * `org.apache.sling.commons.log.file`
+  * `org.apache.sling.commons.log.pattern`
 
 The following are examples of the recommended logging configurations (using the placeholder Java package of `com.example`) for the three AEM as a Cloud Service environment types.
 
