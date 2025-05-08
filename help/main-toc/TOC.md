@@ -736,6 +736,7 @@ user-guide-title: AEM as a Cloud Service
       + [Integrate an Adaptive Form with Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
       + [Embed an Adaptive Forms in an AEM Sites page](/help/forms/embed-adaptive-form-aem-sites.md)
       + [Embed adaptive form based on Core Components to an external web page](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+      + [AEM Forms Integration with Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
       + [Embed adaptive form based on Foundation Components to an external web page](/help/forms/embed-adaptive-form-external-web-page.md)
       + Integrate Adaptive Forms with Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage} 
           + [Integrate Adobe Marketo Engage with AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
@@ -756,6 +757,7 @@ user-guide-title: AEM as a Cloud Service
       + [Design XML Schema for an Adaptive Form](/help/forms/adaptive-form-xml-schema-form-model.md)
   + Adaptive Forms {#adaptive-forms-authoring}
     + [Create an Adaptive Form](/help/forms/create-an-adaptive-form.md)
+    + [Which Adaptive Forms are best for you?](/help/edge/docs/forms/authoring-a-form.md) 
     + [Create an Adaptive Form fragment](/help/forms/adaptive-form-fragments.md)
     + [Add an Adaptive Form to an AEM Sites page or Experience Fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
     + Core Components {#authoring-adaptive-forms-core-components}
