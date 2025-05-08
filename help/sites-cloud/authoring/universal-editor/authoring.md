@@ -208,7 +208,7 @@ The **Inheritance Broken** icon shows that inheritance has been broken for the s
 
 Tap or click the icon to reinstate inheritance for the selected component. You will need to reload the page to refresh the content in order to show the inherited content.
 
-For information on how to enable this extension, [please see the Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/)
+For information on how to enable this extension, [please see the Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 >[!NOTE]
 >
@@ -226,7 +226,7 @@ The **AEM Page Properties Extension** allows quick access to the [Page Propertie
 
 Tap or click the **Page Properties** icon in the Universal Editor toolbar to open the page properties for the page in a new browser tab.
 
-For information on how to enable this extension, [please see the Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/)
+For information on how to enable this extension, [please see the Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 >[!NOTE]
 >
@@ -240,7 +240,7 @@ The **AEM Site Admin Extension** allows quick access to the page being edited wi
 
 Tap or click the icon to open the Sites Console in a new browser tab, navigated to the page currently in the editor.
 
-For information on how to enable this extension, [please see the Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/)
+For information on how to enable this extension, [please see the Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ### Locking and Unlocking Pages {#locking-pages}
 
@@ -258,7 +258,7 @@ The **Locked** icon in the Universal Editor toolbar shows that the page currentl
 
 Tap or click the icon to unlock the page if you are the user who locked it.
 
-For information on how to enable this extension, [please see the Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/)
+For information on how to enable this extension, [please see the Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 >[!NOTE]
 >
@@ -279,7 +279,7 @@ Tap or click the **Workflows** icon in the Universal Editor toolbar to open the 
 1. In the **Content to include in workflow** list, use the checkboxes to define which content to include in the workflow.
 1. Tap or click **Start Workflow** to start the workflow or **Close** to abort.
 
-For information on how to enable this extension, [please see the Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/)
+For information on how to enable this extension, [please see the Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ### Developer Login {#developer-login}
 
@@ -291,7 +291,7 @@ Tap or click the **Developer Logon** icon in the Universal Editor toolbar to pro
 
 ![Developer login modal](assets/developer-login.png)
 
-For information on how to enable this extension, [please see the Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/)
+For information on how to enable this extension, [please see the Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## Optional Properties Panel Features {#properties-panel-options}
 
@@ -305,7 +305,7 @@ The **Generate Variations** extension allows you to use generative artificial in
 
 Tap or click the **Generate Variations** icon in the Universal Editor properties panel to receive recommendations and create variations. Please see the document [Generate Variations - Integrated in AEM Editors](/help/generative-ai/generate-variations-integrated-editor.md) for more details on how generating variations works.
 
-For information on how to enable this extension, [please see the Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/)
+For information on how to enable this extension, [please see the Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## Additional Resources {#additional-resources}
 
