@@ -843,6 +843,7 @@ Text allows for a single line of text input.  It includes additional validation 
       "name": "text",
       "label": "Simple Text",
       "valueType": "string",
+      "valueFormat": "regexp",
       "description": "This is a text input with validation.",
       "required": true,
       "validation": {
