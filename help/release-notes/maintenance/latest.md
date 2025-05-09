@@ -24,25 +24,28 @@ The 2025.5.0 feature activation will provide the full feature set for this maint
 * FORMS-19125: The Core Component Adaptive Form editor is enhanced to support automatic mapping of available Adaptive Form fragments when a corresponding section from the data source tree is dropped into the form canvas. This brings a key productivity feature from the foundation editor to core components.
 * FORMS-17887: AEM Forms now provides the capability to generate documents in AFP (Advanced Function Presentation) format through its output service. This enhancement caters to customer needs for high-speed, high-volume printing environments typically using AFP.
 * FORMS-15089: AEM Forms has introduced the capability for a form to be versioned upon publishing in such a way that all its constituent fragments are inlined (embedded) into that specific published version. This ensures an exact, self-contained representation of the form as it appeared at the time of publishing, which can be critical for archival, legal, or compliance purposes.
-* SITES-27775: Optimized reference search during publication
-* SITES-30885: Optimized JSON processing in persisted queries
-* SITES-25433: Edge Delivery with Universal Editor: Support full page rendering when comparing old versions
-* SITES-27792: Edge Delivery with Universal Editor: Move EDS configuration fully to CA Config
-* SITES-19754: Edge Delivery with Universal Editor: compelling error message when the setup is broken
-* SITES-30267: Edge Delivery with Universal Editor: Sheet V2 (Early Access)
-* SITES-30328: Edge Delivery with Universal Editor: Preview from Sidekick support
-* SITES-23499: Edge Delivery with Universal Editor: allow multiple fields to be used for block options
-* SITES-29987: Add capability to set `previewUrlPattern` when creating content fragment models
-* SITES-29874: Add support for LongTextField references in Content Fragment API
-* SITES-29601: Add validation for content fragments referenced via LongText fields
-* SITES-24623: Make ETags returned by GET and SEARCH fragments API usable for patch
-* SITES-28557: Allow URL parameter `references` in PATCH Content Fragment
-* SITES-5358: [OpenAPI] Copy Content Fragments with children
-* SITES-29614: GET workflow endpoint
-* SITES-29615: List batch requests API endpoint
+* SITES-27775: Optimized reference search during publication.
+* SITES-30885: Optimized JSON processing in persisted queries.
+* SITES-25433: Edge Delivery with Universal Editor: Support full page rendering when comparing old versions.
+* SITES-27792: Edge Delivery with Universal Editor: Move EDS configuration fully to CA Config.
+* SITES-19754: Edge Delivery with Universal Editor: compelling error message when the setup is broken.
+* SITES-30267: Edge Delivery with Universal Editor: Sheet V2 (Early Access).
+* SITES-30328: Edge Delivery with Universal Editor: Preview from Sidekick support.
+* SITES-23499: Edge Delivery with Universal Editor: allow multiple fields to be used for block options.
+* SITES-29987: Add capability to set `previewUrlPattern` when creating content fragment models.
+* SITES-29874: Add support for LongTextField references in Content Fragment API.
+* SITES-29601: Add validation for content fragments referenced via LongText fields.
+* SITES-24623: Make ETags returned by GET and SEARCH fragments API usable for patch.
+* SITES-28557: Allow URL parameter `references` in PATCH Content Fragment.
+* SITES-5358: [OpenAPI] Copy Content Fragments with children.
+* SITES-29614: GET workflow endpoint.
+* SITES-29615: List batch requests API endpoint.
 
 ### Fixed Issues {#fixed-issues-20783}
 
+* CQ-4358591: Missing Projects for few languages when Language copies are created from sites reference panel with "Create Translation Projects(s)" Option.
+* CQ-4359108: XLIFF 2.0 format is failing while using Human Translation Import/Export.
+* CQ-4358722: Localization is not working for legacy ISO codes due to different locale codes in Java 11 & Java 17.
 * FORMS-19808: When saving a large form which includes fragments enabled with lazy loading, drafts cannot be pulled by the user.
 * FORMS-19887: A drop-down field in an XFA form, initially set to readOnly access, fails to change to an open/editable status when the form is rendered in HTML5. The field remains readOnly and prevents user interaction, unlike in PDF rendering where it functions as expected.
 * FORMS-19651: In the Rule Editor, a rule does not function correctly when a button click is used in a binary condition and the same button is also utilized in the 'then' statement of that rule.
@@ -58,23 +61,19 @@ The 2025.5.0 feature activation will provide the full feature set for this maint
 * FORMS-19380: The introduction of versioning support for Core Component Adaptive Forms has unintentionally enabled versioning capabilities for various other asset types (e.g., Foundation Forms, PDF files, Themes, FDM) without specific design or testing for those asset types. This unintended side-effect is under investigation.
 * FORMS-17707: The AEP (Adobe Experience Platform) connector is not functioning correctly when configured to connect to AEP platform 'stage' environments.
 * SITES-30752: Do not use `If-modified-since`/`last-modified` headers when generating persisted query response.
-* SITES-30353: GraphQL DataFetchingExceptions for “src” Field in AEM Content Fragments
-* SITES-30333: Read asset metadata from jcr to avoid xmp parsing problems
-* SITES-30140: Dual window issue when creating content fragment reference
-* SITES-29748: Correct renderconditions to show managepublication/quickpublish actions inside the CF editor
-* SITES-15452: Unique CF elements should not be checked against their copies in the launch
-* CQ-4358591: Missing Projects for few languages when Language copies are created from sites reference panel with "Create Translation Projects(s)" Option
-* CQ-4359108: XLIFF 2.0 format is failing while using Human Translation Import/Export.
-* CQ-4358722: Localization is not working for legacy ISO codes due to different locale codes in Java 11 & Java 17
-* SITES-30386: Edge Delivery with Universal Editor: duplicated UE cors.js causes UE to duplicate sections when adding content
-* SITES-29745: Fixed an rare issue where variations of references were not hydrated
-* SITES-30585: Unable to set 'previewUrlPattern' upon creating models with references
-* SITES-30327: Publishing content fragments without permissions creates separate workflows for each payload resource
-* SITES-29528: ETag cannot be used for caching on publish instance
-* SITES-30583: Find & Replace tool changing all characters to lower case
-* SITES-31157: Patch fails due to inconsistent ETag
-* SITES-31327: [OpenAPI] Get content fragment request on author instance can respond with 304
-
+* SITES-30353: GraphQL DataFetchingExceptions for “src” Field in AEM Content Fragments.
+* SITES-30333: Read asset metadata from jcr to avoid xmp parsing problems.
+* SITES-30140: Dual window issue when creating content fragment reference.
+* SITES-29748: Correct renderconditions to show managepublication/quickpublish actions inside the CF editor.
+* SITES-15452: Unique CF elements should not be checked against their copies in the launch.
+* SITES-30386: Edge Delivery with Universal Editor: duplicated UE cors.js causes UE to duplicate sections when adding content.
+* SITES-29745: Fixed an rare issue where variations of references were not hydrated.
+* SITES-30585: Unable to set 'previewUrlPattern' upon creating models with references.
+* SITES-30327: Publishing content fragments without permissions creates separate workflows for each payload resource.
+* SITES-29528: ETag cannot be used for caching on publish instance.
+* SITES-30583: Find & Replace tool changing all characters to lower case.
+* SITES-31157: Patch fails due to inconsistent ETag.
+* SITES-31327: [OpenAPI] Get content fragment request on author instance can respond with 304.
 
 ### Known Issues {#known-issues-20783}
 
@@ -86,7 +85,7 @@ Deprecated and removed features and APIs in AEM as a Cloud Service are detailed 
 
 ### Security Fixes {#security-20783}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses X identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 19 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
 ### Embedded Technologies {#embedded-tech-20783}
 
