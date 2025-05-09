@@ -252,3 +252,9 @@ To log a support ticket, you must first register your Edge Delivery site in Clou
 * [Show a custom thank you message after form submission​](/help/edge/docs/forms/thank-you-page-form.md)
 * [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
 * [Using Form Submission Service](/help/forms/forms-submission-service.md)
+
+## Universal Editor Headless Authentication {#ue-headless-auth}
+
+>[!NOTE]
+>
+>If you are using the Universal Editor in a headless use case, your headless app must manage its own authentication.

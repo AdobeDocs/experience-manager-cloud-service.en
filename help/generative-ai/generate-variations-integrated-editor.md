@@ -307,7 +307,10 @@ To use the Generate Variations in the Sidekick (of Edge Delivery Services), incl
 
 ### Access from the AEM Universal Editor {#access-aem-universal-editor}
 
-Access from the [AEM Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) is implemented as an extension. See the [Extension Manager in AEM Experience Manager](https://developer.adobe.com/uix/docs/extension-manager/) for further details.
+Access from the [AEM Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) is implemented as an extension.
+
+* For details on how to access Generate Variations from the Universal Editor, please see the document [Authoring Content with the Universal Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md#generate-variations)
+* For details on how to enable the extension, please see the document [Extension Manager in AEM Experience Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
 
 ### Access from the AEM Content Fragment Editor {#access-aem-content-fragment-editor}
 
