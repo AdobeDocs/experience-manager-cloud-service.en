@@ -40,6 +40,10 @@ The 2025.5.0 feature activation will provide the full feature set for this maint
 * SITES-5358: [OpenAPI] Copy Content Fragments with children.
 * SITES-29614: GET workflow endpoint.
 * SITES-29615: List batch requests API endpoint.
+* SITES-25130: Upgrade Core Components to 2.28.0
+* SITES-10575: "MSM Blueprint Bloomfilter Loader" tries to load >100'000 rows.
+* SITES-26711: Links for RTE text fields are not udated to point to the live copy on MSM rollout
+* SITES-25976: Links inside Experience Fragments not adapting after MSM rollout
 
 ### Fixed Issues {#fixed-issues-20783}
 
@@ -77,6 +81,15 @@ The 2025.5.0 feature activation will provide the full feature set for this maint
 * SITES-29691: NullPointerException when attempting to Move Page.
 * SITES-30728: OnTime/OffTime does not Publish/UnPublish as expected when configured on asset properties.
 * SITES-29789: Component Link Change on Copied Root Pages in AEM.
+* GRANITE-58276: OSGi dependency cycles prevent the HTL script engine factory to work correctly.
+* SITES-29191: Unable to Add More Than 20 SKUs to Product List Component.
+* SITES-30372: Smart Crop not functioning on AEM’s Image(V2) core component.
+* SITES-28693: Teaser Component Renders Broken HTML When Title is Empty.
+* SITES-28668: Unable to Promote Launch with LaunchPromotionParameters.
+* SITES-31005: Enhance Rollout Job UI to show the customer the progress.
+* SITES-31020: Enhance Create Live Copy Job UI to show the customer the progress.
+* SITES-29816: "Resource Not Found" Error While Creating Live Copy of Experience Fragment.
+* SITES-29363: Reset live copy button is not working for nested live copy content hierarchy.
 
 ### Known Issues {#known-issues-20783}
 
