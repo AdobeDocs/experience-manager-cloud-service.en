@@ -42,8 +42,8 @@ The 2025.5.0 feature activation will provide the full feature set for this maint
 * SITES-29615: List batch requests API endpoint.
 * SITES-25130: Upgrade Core Components to 2.28.0
 * SITES-10575: "MSM Blueprint Bloomfilter Loader" tries to load >100'000 rows.
-* SITES-26711: Links for RTE text fields are not udated to point to the live copy on MSM rollout
-* SITES-25976: Links inside Experience Fragments not adapting after MSM rollout
+* SITES-26711: Links for RTE text fields are not udated to point to the live copy on MSM rollout.
+* SITES-25976: Links inside Experience Fragments not adapting after MSM rollout.
 
 ### Fixed Issues {#fixed-issues-20783}
 
