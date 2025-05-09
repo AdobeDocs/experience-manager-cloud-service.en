@@ -21,11 +21,13 @@ The next planned release is Thursday, June 5, 2025.
  
 ## What's new {#what-is-new}
 
+<!--
 * **AI-powered build summaries now available for internal use**
 
     Internal users can now use AI-powered build summaries to simplify build log analysis. The feature provides actionable recommendations and helps identify the root causes of build failures.
 
     ![Build Summary dialog box](/help/implementing/cloud-manager/release-notes/assets/build-summary.png)
+-->
 
 
 ## Early adopter program {#early-adoption}
