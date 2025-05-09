@@ -137,11 +137,10 @@ The following table describes a list of the possible Product Profiles below an e
         <td>AEM Assets Collaborator Users</td>
         <td>
         <ul>
-                <li>Intended for read-only access to the DAM. Users in this product profile will be members of the "Contributors" AEM group automatically created in AEM.
+                <li>Work with assets from Experience manager via integrations of Assets available to your organization in other Adobe products and non-Adobe applications.
                 </li>
-                <li>
-                Also, it provides the Adobe Express entitlements to create asset variations.
-                </li>
+                <li>Create and edit assets using built-in Adobe Express and Firefly leveraging professionally designed templates, brand kits, Adobe Stock assets, and so on.</li>
+                <li>Access and leverage approved assets from your organization using AEM Assets Content Hub portal.</li>
           <ul>
     </tr>
     <tr>
@@ -150,11 +149,11 @@ The following table describes a list of the possible Product Profiles below an e
         <td>AEM Assets Power Users</td>
 <td>
         <ul>
-                <li>Intended for read-only access to the DAM. Users in this product profile will be members of the "Contributors" AEM group automatically created in AEM.
+                <li>Access all AEM Assets capabilities including managing assets, metadata and the overall governance and automation around digital assets.</li>
+                <li>Work with assets from Experience manager via integrations of Assets available to your organization in other Adobe products and non-Adobe applications.
                 </li>
-                <li>
-                Also, it provides the Adobe Express entitlements to create asset variations.
-                </li>
+                <li>Create and edit assets using built-in Adobe Express and Firefly leveraging professionally designed templates, brand kits, Adobe Stock assets, and so on.</li>
+                <li>Access and leverage approved assets from your organization using AEM Assets Content Hub portal.</li>
           <ul>
 </td>
     </tr>
