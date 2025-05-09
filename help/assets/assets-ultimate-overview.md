@@ -132,6 +132,6 @@ The following table summarizes the available AEM Assets user types, the privileg
 | AEM > Production Author instance > AEM Administrators | &minus;  | &minus; | &minus;  |&#10003;|
 | **More information**          | See [Enable Content Hub](/help/assets/enable-assets-ultimate.md##enable-assets-ultimate-new-users) | See [Onboard Collaborator Users](/help/assets/enable-assets-ultimate.md#onboard-collaborator-users)  | See [Onboard Power Users](/help/assets/enable-assets-ultimate.md#onboard-power-users)    |- |
 
-For information on how to get started with Assets Ultimate, see [Enable AEM Assets Ultimate](/help/assets/enable-assets-ultimate.md).
+For information on how to get started with Assets Ultimate, see [Enable AEM Assets Ultimate](/help/assets/enable-assets-ultimate.md). If existing AEM Assets users have queries on when you can upgrade to Assets Ultimate, contact your Adobe account representative. You can also see [Enable Assets Ultimate for existing customers](/help/assets/enable-assets-ultimate.md#enable-assets-ultimate-existing-customers) for more information.
 
 AEM Assets also provides a lighter weight DAM for customers who do not have advanced requirements such as, UI extensibility, API-driven automation, and custom code deployment. For more information, see [AEM Assets Prime](/help/assets/assets-prime.md).
