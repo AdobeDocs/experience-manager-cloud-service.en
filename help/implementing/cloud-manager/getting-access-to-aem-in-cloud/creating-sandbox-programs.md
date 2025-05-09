@@ -37,7 +37,7 @@ Learn more about program types in the document [Understanding Program and Progra
 1. In the **Solutions &amp; Add-ons** list box, select one or more solutions to include in the program.
    
    * Click the chevron to the left of a solution name to reveal any available optional add-ons that you want to include with a selected solution.
-   * The **Sites**, **Assets**, and **Edge Deliver Services** solutions are always selected by default when you create a sandbox program. You cannot de-select them.
+   * The **Sites**, **Assets**, and **Edge Delivery Services** solutions are always selected by default when you create a sandbox program. You cannot de-select them.
 
    ![Select solutions and add-ons for a sandbox](assets/sandbox-solutions-add-ons.png)
 
