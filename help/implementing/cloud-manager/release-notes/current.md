@@ -40,7 +40,11 @@ The following early adopter opportunities are currently available:
 
 ![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png)
 
+<<<<<<< Updated upstream
 If you are interested in testing this new feature and sharing your feedback, send an email to [emailaddress](mailto:emailaddress) from your email address associated with your Adobe ID.
+=======
+If you are interested in testing this new feature and sharing your feedback, send an email to [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) from your email address associated with your Adobe ID.
+>>>>>>> Stashed changes
 
 ### Bring Your Own Git - now with support for Azure DevOps {#gitlab-bitbucket-azure-vsts}
 
