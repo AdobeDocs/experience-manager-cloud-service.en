@@ -11,7 +11,6 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 
 Learn about the release of Cloud Manager 2025.5.0 in AEM (Adobe Experience Manager) as a Cloud Service.
 
-
 See also the [current release notes for Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Release dates {#release-date}
@@ -22,33 +21,41 @@ The next planned release is Thursday, June 5, 2025.
  
 ## What's new {#what-is-new}
 
-* u
+* **AI-powered build summaries now available for internal use**
 
-* u
+    Internal users can now use AI-powered build summaries to simplify build log analysis. The feature provides actionable recommendations and helps identify the root causes of build failures.
+
+    ![Build Summary dialog box](/help/implementing/cloud-manager/release-notes/assets/build-summary.png)
 
 
+## Early adopter program {#early-adoption}
 
-## Early adoption program {#early-adoption}
+Participate in Cloud Manager's Early Adopter Program to get exclusive access to upcoming features before their general release.
 
-Participate in Cloud Manager's Early Adoption Program to get exclusive access to upcoming features before their general release.
+The following early adopter opportunities are currently available:
 
-The following early adoption opportunity is currently available:
+### Add Edge Delivery Pipeline
 
-### Bring Your Own Git - now with support for GitLab and Bitbucket {#gitlab-bitbucket}
+**Pipelines** are now supported for sites built with Edge Delivery Services, expanding this capability beyond just Cloud Service environments. You can use **Pipelines** to manage settings such as traffic filtering rules and Web Application Firewall (WAF) configurations, where applicable. See [Supported Configurations](/help/operations/config-pipeline.md#configurations).
+
+![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png)
+
+If you are interested in testing this new feature and sharing your feedback, send an email to [emailaddress](mailto:emailaddress) from your email address associated with your Adobe ID.
+
+### Bring Your Own Git - now with support for Azure DevOps {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 
-The **Bring Your Own Git** feature has been expanded to include support for external repositories, such as GitLab and Bitbucket. This new support is in addition to the already existing support for private and enterprise GitHub repositories. When you add these new repos, you can also link them directly to your pipelines. You can host these repositories on public cloud platforms or within your private cloud or infrastructure. This integration also removes the need for constant code synchronization with the Adobe repository and provides the ability to validate pull requests before merging them into a main branch.
+Customers can now onboard their Azure DevOps Git repositories into Cloud Manager, with support for both modern Azure DevOps and legacy VSTS (Visual Studio Team Services) repositories.
 
-Pipelines using external repositories (excluding GitHub-hosted ones) and the **Deployment Trigger** set to **On Git Changes** now start automatically.
+* For Edge Delivery Services users, the onboarded repository can be used to sync and deploy site code.
+* For AEM as a Cloud Service and Adobe Managed Services (AMS) users, the repository can be linked to both full-stack and frontend pipelines.
+
+Support for additional pipeline types and pull request validation through code quality pipelines is coming soon.
 
 See [Add external repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
-![Add Repository dialog box](/help/implementing/cloud-manager/release-notes/assets/repositories-add-release-notes.png)
-
->[!NOTE]
->
->Currently, the out-of-the-box pull request code quality checks are exclusive to GitHub-hosted repositories, but an update to extend this functionality to other Git vendors is in the works.
+![Add Repository dialog box](/help/implementing/cloud-manager/release-notes/assets/azure-repo.png)
 
 If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure.
 
