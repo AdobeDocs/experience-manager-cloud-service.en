@@ -111,6 +111,8 @@ Select the icon representing your user to access your user settings. If you do n
 
 The Universal Editor toolbar is always present at the top of the screen just below [the Experience Cloud header](#experience-cloud-header). It gives you quick access to navigate to another page to edit and to publish the current page.
 
+Depending on the configuration of your program, it can also present [additional features that have been enabled as extensions by your administrator.](#additional-toolbar-buttons)
+
 ![The Universal Editor toolbar](assets/universal-editor-toolbar.png)
 
 #### The Home Button {#home-button}
@@ -211,8 +213,9 @@ For example, the ability to unpublish a page (i.e. reverse the action of the [**
 
 The Universal Editor offers a customizable and extensible authoring experience. If you see additional buttons in the toolbar, your Universal Editor has been extended.
 
+* For details on how an individual extension works, [please see the Universal Editor authoring documentation.](/help/sites-cloud/authoring/universal-editor/authoring.md#managing-page-content)
 * For details on extension possibilities, please see the [Extending the Universal Editor](/help/implementing/universal-editor/extending.md).
-* For details on how an individual extension works, please see the [Extension Manager documentation](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
+* For details on how to install an individual extension, please see the [Extension Manager documentation](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
 
 ### The Editor {#editor}
 
