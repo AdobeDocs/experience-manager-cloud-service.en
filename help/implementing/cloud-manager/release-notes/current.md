@@ -36,7 +36,7 @@ Participate in Cloud Manager's Early Adopter Program to get exclusive access to 
 
 The following early adopter opportunities are currently available:
 
-### Add Edge Delivery Pipeline
+### Add Edge Delivery Pipeline {#add-eds-pipeline}
 
 **Pipelines** are now supported for sites built with Edge Delivery Services, expanding this capability beyond just Cloud Service environments. You can use **Pipelines** to manage settings such as traffic filtering rules and Web Application Firewall (WAF) configurations, where applicable. See [Supported Configurations](/help/operations/config-pipeline.md#configurations).
 
