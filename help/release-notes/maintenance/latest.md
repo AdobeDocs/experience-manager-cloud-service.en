@@ -74,6 +74,9 @@ The 2025.5.0 feature activation will provide the full feature set for this maint
 * SITES-30583: Find & Replace tool changing all characters to lower case.
 * SITES-31157: Patch fails due to inconsistent ETag.
 * SITES-31327: [OpenAPI] Get content fragment request on author instance can respond with 304.
+* SITES-29691: NullPointerException when attempting to Move Page.
+* SITES-30728: OnTime/OffTime does not Publish/UnPublish as expected when configured on asset properties.
+* SITES-29789: Component Link Change on Copied Root Pages in AEM.
 
 ### Known Issues {#known-issues-20783}
 
