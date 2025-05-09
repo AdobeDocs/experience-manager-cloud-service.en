@@ -47,6 +47,7 @@ The 2025.5.0 feature activation will provide the full feature set for this maint
 
 ### Fixed Issues {#fixed-issues-20783}
 
+* ASSETS-50994: Incoming traffic blocked at AemRequestEventFilter.
 * CQ-4358591: Missing Projects for few languages when Language copies are created from sites reference panel with "Create Translation Projects(s)" Option.
 * CQ-4359108: XLIFF 2.0 format is failing while using Human Translation Import/Export.
 * CQ-4358722: Localization is not working for legacy ISO codes due to different locale codes in Java 11 & Java 17.
@@ -64,6 +65,7 @@ The 2025.5.0 feature activation will provide the full feature set for this maint
 * FORMS-19629: The JSON schema parser is producing invalid results or misinterpreting certain customer-provided JSON schemas. This issue can negatively affect functionalities that rely on correct schema parsing, such as the automatic mapping of fragments.
 * FORMS-19380: The introduction of versioning support for Core Component Adaptive Forms has unintentionally enabled versioning capabilities for various other asset types (e.g., Foundation Forms, PDF files, Themes, FDM) without specific design or testing for those asset types. This unintended side-effect is under investigation.
 * FORMS-17707: The AEP (Adobe Experience Platform) connector is not functioning correctly when configured to connect to AEP platform 'stage' environments.
+* OAK-11673: Oak-segment-azure v12 CPU increase caused by refreshLease.
 * SITES-30752: Do not use `If-modified-since`/`last-modified` headers when generating persisted query response.
 * SITES-30353: GraphQL DataFetchingExceptions for “src” Field in AEM Content Fragments.
 * SITES-30333: Read asset metadata from jcr to avoid xmp parsing problems.
@@ -90,6 +92,7 @@ The 2025.5.0 feature activation will provide the full feature set for this maint
 * SITES-31020: Enhance Create Live Copy Job UI to show the customer the progress.
 * SITES-29816: "Resource Not Found" Error While Creating Live Copy of Experience Fragment.
 * SITES-29363: Reset live copy button is not working for nested live copy content hierarchy.
+* SKYOPS-106509: Add supplementary add-opens flags to support GSON reflective access on Java 21.
 
 ### Known Issues {#known-issues-20783}
 
