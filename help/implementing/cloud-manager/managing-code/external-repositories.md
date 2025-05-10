@@ -90,8 +90,9 @@ After validation, the external repository is ready to use and link to a pipeline
 1. Add or edit a pipeline:
     * [Add a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
     * [Add a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-   <!-- * [Add an Edge Delivery Pipeline]() -->
     * [Edit a pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#editing-pipelines)
+
+   <!-- Add an Edge Delivery Pipeline -->
 
     ![Pipeline's source code repository and Git branch](/help/implementing/cloud-manager/managing-code/assets/pipeline-repo-gitbranch.png)
     *Add Non-Production Pipeline dialog box with selected repository and Git branch,*  
