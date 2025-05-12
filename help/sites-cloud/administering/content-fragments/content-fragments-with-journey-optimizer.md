@@ -12,7 +12,7 @@ solution: Experience Manager Sites
 
 ## Configure AEM {#configure-aem}
 
-For integration, and preparation for use, several steps need to be completed:
+For integration, and preparation for use, several steps need to be completed in AEM:
 
 * [Create the AEM tag for AJO synchronization](#create-the-aem-tag-for-AJO-synchronization)
 * [Create a Content Fragment Model](#create-a-content-fragment-model)
@@ -47,11 +47,13 @@ To [create the tag](/help/sites-cloud/administering/tags.md#creating-new-tags):
 
 [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) define the structure of your Content Fragment.
 
+When creating your model, you must assign the [tag used for synchronization](#create-the-aem-tag-for-AJO-synchronization) to [your model](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)
+
 ## Create and Publish your Content Fragment {#create-and-publish-your-content-fragment}
 
 ### Create your Content Fragment {#create-your-content-fragment}
 
-When [creating your fragment](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment) select the **Auto Tag** option to automatically inherit all tags applied to the model.
+[Create your Content Fragment](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment). You must select the **Auto Tag** option to automatically inherit all tags that you applied to the model (in particular the [tag used for synchronization](#create-the-aem-tag-for-AJO-synchronization)).
 
 ### Author content for your Content Fragment {#author-content-for-your-content-fragment}
 
@@ -59,7 +61,7 @@ When [creating your fragment](/help/sites-cloud/administering/content-fragments/
 
 ### Publish your Content Fragment
 
-[Publish your Content Fragment](/help/sites-cloud/administering/content-fragments/managing.md#publishing) to make it available to AJO.
+If required, [publish your Content Fragment](/help/sites-cloud/administering/content-fragments/managing.md#publishing) to make it available to AJO.
 
 ## Use your Content Fragment in Journey Optimizer {#use-your-content-fragment-in-journey-optimizer}
 
