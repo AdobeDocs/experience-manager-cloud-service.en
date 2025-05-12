@@ -131,3 +131,6 @@ Congratulations! You should now see the SecurBank app successfully running in yo
 If the content does not yet appear, make sure that the **Deploy to Dev** pipeline that you ran completed successfully.
 
 ![SecurBank app in the browser](assets/securbank.png)
+
+{{ue-headless-auth}}
+
