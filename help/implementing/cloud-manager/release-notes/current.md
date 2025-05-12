@@ -34,7 +34,7 @@ The content source configuration differs between Helix 4 and Helix 5 in the foll
 
 This article provides comprehensive configuration steps, examples, and validation instructions for both versions.
 
-B**efore you start**
+**Before you start**
 
 If you use [one click Edge Delivery in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site), your site is Helix 5 with a single repository. Follow the Helix 5 instructions and use the provided Helix 4 YAML version as a fallback.
 
@@ -125,7 +125,7 @@ Use the Configuration Service API.
 1. Authenticate through an API key or access token.
 1. Make the following `PUT` API call:
 
-    ```bash
+    ```bash {.line-numbering}
     PUT /api/{program}/{programId}/site/{siteId}
     Content-Type: application/json
 
@@ -187,7 +187,7 @@ See [Add external repositories in Cloud Manager](/help/implementing/cloud-manage
 
 ![Add Repository dialog box](/help/implementing/cloud-manager/release-notes/assets/azure-repo.png)
 
-If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure.
+If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure. 
 
 <!--
 ## Bug fixes
