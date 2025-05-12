@@ -24,7 +24,7 @@ Cloud Manager in AEM as a Cloud Service lets you enable Edge Delivery Service fo
 
 ## About Edge Delivery Services in Cloud Manager {#edge-in-cloud-manager}
 
-If you have licensed Edge Delivery Services as part of Adobe Experience Manager Sites, you can onboard your site with Edge Delivery Services directly in Cloud Manager and go live [using a guided, self-service experience](/help/implementing/cloud-manager/managing-code/private-repositories.md).
+If you have licensed Edge Delivery Services as part of Adobe Experience Manager Sites, you can onboard your site with Edge Delivery Services directly in Cloud Manager and go live [using a guided, self-service experience](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
 Additionally, you can access a unified experience for managing all your AEM properties while ensuring consistency across key workflows. These workflows include domain name management, SSL certificate management, and CDN mappings.
 
