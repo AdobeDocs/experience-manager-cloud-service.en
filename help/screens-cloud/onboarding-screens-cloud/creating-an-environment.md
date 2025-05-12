@@ -16,7 +16,7 @@ This section describes how to create an environment for your program in Cloud Ma
 
 The following section describes how to create an environment for your program in Cloud Manager.
 
-## Steps to create an Environment for your Screens Project in Cloud Manager {#steps-branch-creation}
+## Steps to create an Environment for your project in Cloud Manager {#steps-branch-creation}
 
 After the project creation is successfully completed, you can see the call-to-action card update in Cloud Manager's Overview page. 
 
