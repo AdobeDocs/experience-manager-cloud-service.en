@@ -125,7 +125,7 @@ Use the Configuration Service API.
 1. Authenticate through an API key or access token.
 1. Make the following `PUT` API call:
 
-    ```bash
+    ```bash {.line-numbering}
     PUT /api/{program}/{programId}/site/{siteId}
     Content-Type: application/json
 
