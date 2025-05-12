@@ -34,7 +34,7 @@ The content source configuration differs between Helix 4 and Helix 5 in the foll
 
 This article provides comprehensive configuration steps, examples, and validation instructions for both versions.
 
-B**efore you start**
+**Before you start**
 
 If you use [one click Edge Delivery in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site), your site is Helix 5 with a single repository. Follow the Helix 5 instructions and use the provided Helix 4 YAML version as a fallback.
 
