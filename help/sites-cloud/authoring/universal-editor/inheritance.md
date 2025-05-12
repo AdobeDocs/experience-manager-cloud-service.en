@@ -53,7 +53,9 @@ The Universal Editor does not affect the underlying mechanism of inheritance. Fo
 
 If installed, the **AEM Multi-Site-Management (MSM) Extension** both displays the current inheritance status of the selected component as well as allows you to break or reinstate inheritance at the component level.
 
-Please see the [authoring documentation for more information.](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)
+Please see the [authoring documentation for more information on how to use this extension.](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)
+
+For information on how to enable this extension, [please see the Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## Limitations {#limitations}
 
