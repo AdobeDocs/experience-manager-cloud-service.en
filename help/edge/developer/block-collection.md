@@ -4,6 +4,9 @@ title: Block Collection
 feature: Edge Delivery Services
 exl-id: ea7c071a-1ce9-4af0-a6dc-a2ba9bdbbef0
 role: Admin, Architect, Developer
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 # Block Collection
 

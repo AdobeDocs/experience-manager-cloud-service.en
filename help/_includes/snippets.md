@@ -180,20 +180,7 @@ The following table demonstrates the difference between the features available i
 
 >[!IMPORTANT]
 >
->[The Universal Editor](/help/implementing/universal-editor/introduction.md) is not compatible with IP allow lists.
->
->If you want to use the Universal Editor, IP allow lists must not be enabled.
-
-## Universal Editor and IP Allow Lists {#ue-ip-allow-lists}
-
->[!IMPORTANT]
->
->The Universal Editor is not compatible with [IP allow lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
->
->If you want to use the Universal Editor, you must either:
->
->* Not enable IP Allow Lists.
->* [Run your own instance of the Universal Editor Service](/help/implementing/universal-editor/local-dev.md).
+>If you use the [The Universal Editor for content authoring,](/help/implementing/universal-editor/introduction.md) and wish to also use [IP allow lists,](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) you must also [add and apply an allow list with the IP addresses of the Universal Editor Service.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
 
 ## Work with Dynamic Media {#work-with-dynamic-media}
 
@@ -265,3 +252,17 @@ To log a support ticket, you must first register your Edge Delivery site in Clou
 * [Show a custom thank you message after form submission​](/help/edge/docs/forms/thank-you-page-form.md)
 * [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
 * [Using Form Submission Service](/help/forms/forms-submission-service.md)
+
+## Universal Editor Headless Authentication {#ue-headless-auth}
+
+>[!NOTE]
+>
+>If you are using the Universal Editor in a headless use case, your headless app must manage its own authentication.
+
+## PWA Deprecation {#pwa-deprecation}
+
+>[!IMPORTANT]
+>
+>The progressive web app (PWA) features for AEM Sites [has been deprecated](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features).
+>
+>Existing projects using this feature will continue to be supported, but new projects should not use this feature.
