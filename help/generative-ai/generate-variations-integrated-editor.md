@@ -55,6 +55,10 @@ Before using Generate Variations you are recommended to read the [Adobe Experien
 
 [Usage of Generate Variations](#generative-action-usage) is tied to the consumption of generative actions.
 
+>[!NOTE]
+>
+>See the [Security Fact Sheet for details related to Generate Variation in AEM](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-sites-generate-variations-security-fact-sheet.pdf).
+
 ## Overview {#overview}
 
 When you open Generate Variations integrated into an editor, you see the extension as a floating panel that has three tabs.  
@@ -303,7 +307,10 @@ To use the Generate Variations in the Sidekick (of Edge Delivery Services), incl
 
 ### Access from the AEM Universal Editor {#access-aem-universal-editor}
 
-Access from the [AEM Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) is implemented as an extension. See the [Extension Manager in AEM Experience Manager](https://developer.adobe.com/uix/docs/extension-manager/) for further details.
+Access from the [AEM Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) is implemented as an extension.
+
+* For details on how to access Generate Variations from the Universal Editor, please see the document [Authoring Content with the Universal Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md#generate-variations)
+* For details on how to enable the extension, please see the document [Extension Manager in AEM Experience Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
 
 ### Access from the AEM Content Fragment Editor {#access-aem-content-fragment-editor}
 
@@ -315,6 +322,9 @@ For further information you can also read:
 
 * [GenAI Generate Variations on GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Edge Delivery Services Experimentation](https://www.aem.live/docs/experimentation)
+* [Generative AI in Experience Cloud products](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
+
+  * [Generative AI in Experience Cloud products - Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)
 
 ## Release History {#release-history}
 
