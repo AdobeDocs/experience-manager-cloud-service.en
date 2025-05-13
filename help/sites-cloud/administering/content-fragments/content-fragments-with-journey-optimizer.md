@@ -112,6 +112,21 @@ To use the extension:
 
 ### Preview AJO Campaigns {#preview-ajo-campaigns}
 
+For full information see:
+
+* [Get started with AJO Campaigns](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/get-started-with-campaigns)
+* [Preview and test your content](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/test/preview-test/preview-test)
+
 ### Preview AJO Journeys {#preview-ajo-journeys}
 
+For full information see:
+
+* [Get started with AJO Journeys](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/journey).
+* [Preview and test your content](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/test/preview-test/preview-test)
+
 ### Preview AJO Template {#preview-ajo-templates}
+
+For full information see:
+
+* [Get started with AJO Content Templates](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-templates/content-templates).
+* [Preview and test your content](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/test/preview-test/preview-test)
