@@ -19,7 +19,7 @@ For integration, and preparation for use, several steps need to be completed in 
 
 >[!IMPORTANT]
 >
->You also need to [configure AJO](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/integrations/aem-fragments).
+>You must also [configure AJO](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/integrations/aem-fragments).
 
 ### Create the AEM tag for AJO synchronization {#create-the-aem-tag-for-AJO-synchronization}
 
@@ -53,7 +53,7 @@ When creating your model, you must assign the [tag used for synchronization](#cr
 
 ### Create your Content Fragment {#create-your-content-fragment}
 
-[Create your Content Fragment](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment). You must select the **Auto Tag** option to automatically inherit all tags that you applied to the model (in particular the [tag used for synchronization](#create-the-aem-tag-for-AJO-synchronization)).
+[Create your Content Fragment](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment). You must select the **Auto Tag** option to automatically inherit all tags that you applied to the model (in particular, the [tag used for synchronization](#create-the-aem-tag-for-AJO-synchronization)).
 
 ### Author content for your Content Fragment {#author-content-for-your-content-fragment}
 
@@ -73,13 +73,13 @@ To preview AJO experiences from AEM, you need to enable the UI extension:
 
 * Fragment External References 
 
+The Fragment External References extension functions by fetching references to Content Fragment from all AJO organizations and sandboxes associated with the AJO-enabled tags. The extension then shows details, dependent on whether the reference is a Campaign, a Journey or a Template.
+
 >[!NOTE]
 >
 >For details on how to enable the extension, please see the document [Extension Manager in AEM Experience Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
 
-The Fragment External References extension supports multiple AJO-enabled tags
-functionality by fetching fragment references data from all organizations and
-sandboxes associated with the tags.
+To use the extension:
 
 1. Open the [Content Fragments Console](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console).
 
@@ -101,14 +101,14 @@ sandboxes associated with the tags.
 
    * **Campaign**
      * Displays a list of all Campaigns with links to the current Content Fragment. 
-       You can then [preview a selected Campaign](#preview-ajo-campaigns)
+     * You can then [preview a selected Campaign](#preview-ajo-campaigns)
      * Default
    * **Journey**
      * Displays the latest Journey. 
-       You can then select and [preview a selected Journey](#preview-ajo-journeys).
+     * You can then select and [preview a selected Journey](#preview-ajo-journeys).
    * **Template** 
-     * displays related Templates.
-       You can then select and [preview a selected Template](#preview-ajo-templates).
+     * Displays Templates related to the Content Fragment.
+     * You can then select and [preview a selected Template](#preview-ajo-templates).
 
 ### Preview AJO Campaigns {#preview-ajo-campaigns}
 
