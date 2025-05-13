@@ -25,15 +25,10 @@ For integration, and preparation for use, several steps need to be completed in 
 
 For synchronization, the integration of AEM and AJO uses [tags defined in AEM](/help/sites-cloud/administering/tags.md). The tag must:
 
-* have the specific format:
-
-  * ajo-enabled:{AJO-OrgId}/{AJO-SandboxName}
-
-* built of:
-
-  * it must be in the namespace: ajo-enable
-  * include the AJO organization name
-  * include the AJO sandbox name
+* Have the specific format: ajo-enabled:{AJO-OrgId}/{AJO-SandboxName}
+  * Be in the namespace: ajo-enable
+  * Include the AJO organization name
+  * Include the AJO sandbox name
 
 For example: AJO Enabled: MyOrganization-AJO / MySandbox
 
@@ -47,7 +42,7 @@ To [create the tag](/help/sites-cloud/administering/tags.md#creating-new-tags):
 
 [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) define the structure of your Content Fragment.
 
-When creating your model, you must assign the [tag used for synchronization](#create-the-aem-tag-for-AJO-synchronization) to [your model](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)
+After creating your model, you must assign the [tag used for synchronization](#create-the-aem-tag-for-AJO-synchronization) to [your model](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)
 
 ## Create and Publish your Content Fragment {#create-and-publish-your-content-fragment}
 
