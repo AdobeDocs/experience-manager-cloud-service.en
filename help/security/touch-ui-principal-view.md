@@ -19,9 +19,9 @@ The new UI-based permissions management is accessed through the Permissions card
 
 The new view makes it easier to look at the whole set of privileges and restrictions for a given principal at all paths where Permissions have been granted explicitly. This removes the need to go to
 
-CRXDE to manage advanced privileges and restrictions. It has been consolidated in the same view. The view defaults to the Group "everyone".
+CRXDE to manage advanced privileges and restrictions. It has been consolidated in the same view. 
 
-![View of "everyone" group](assets/unu-1.png)
+![Permission View](assets/permissionView.png)
 
 There is a filter that allows the user to select the type of principals to look at **Users**, **Groups**, or **All **and search for any principal**.**
 
@@ -35,7 +35,7 @@ The frame on the left allows users to scroll down to find any principal or searc
 
 Clicking the name shows the assigned permissions on the right. The permissions pane shows the list of Access Control Entries on specific paths along with configured restrictions.
 
-![View ACL List](assets/trei-1.png)
+![View ACL List](assets/permissionsList.png)
 
 ## Adding new Access Control Entry for a Principal {#adding-new-access-control-entry-for-a-principal}
 
@@ -118,11 +118,26 @@ You can access the Permissions Touch UI view by clicking on **Tools - Security -
 
 ![Permissions Touch UI card](assets/image-2025-2-5_15-37-59.png)
 
-Once you launch the Permissions view,, you can click on **Node View** or **Filtered View** in the upper right corner of the screen depending on your viewing preference.
+Once you launch the Permissions view, you can click on **Node View** or **Filtered View** in the upper right corner of the screen depending on your viewing preference.
+
+#### Node View
+
+In this view, ACLs are presented for each individual Node(path). It provides information on:
+
+Local ACLs for the selected Node.
+Effective ACLs, which includes ACLs applied to each parent Node up to the root ("/").
+Users have the option to add, remove, or update ACLs. When a path is clicked, the left pane displays its children, while the right side presents a table view of all ACLs associated with that path.
 
 ![Node View](assets/image-2025-2-5_15-26-2.png)
 
-### The Reppository Browser Permissions View {#the-repository-browser-permissions-view}
+#### Filtered View
+
+This view allow users to efficiently search for permissions on a specified path and principals. In this view, users can easily determine the type of permissions granted to a group of principals for the selected path.
+Additionally, the Filtered View provides insights into Effective ACLs. It displays the ACLs associated with the parent node of the selected path, considering the selected principal and any common principals.
+
+![Filter View](assets/FilteredView.png)
+
+### The Repository Browser Permissions View {#the-repository-browser-permissions-view}
 
 The permissions view can also be accessed via the [Repository Browser](/help/implementing/developing/tools/repository-browser.md).
 
@@ -135,6 +150,8 @@ You can access it by:
 1. Once in the Repository Browser, click on the **Permissions** tab
 
    ![Permissions tab](assets/image-2025-2-5_15-29-33.png)
+
+**Note**: To view the permissions, administrator rights are required. Follow the steps mentioned [here](/help/implementing/developing/tools/repository-browser.md#navigate-the-hierarchy-navigate-the-hierarchy)  to access the permissions.
 
 ## Classic UI Privilege Combinations {#classic-ui-privilege-combinations}
 
