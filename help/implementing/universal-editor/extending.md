@@ -15,7 +15,7 @@ Learn about the different options to extend the capabilities of Universal Editor
 
 ## Extensions {#extensions}
 
-As an Adobe Experience Cloud service, the Universal Editor's UI can be extended using the App Builder and Experience Manager. Adobe offers many ready-made extensions that you can use for your project.
+As an Adobe Experience Cloud service, the Universal Editor's UI can be extended using the App Builder and Experience Manager. Adobe offers many ready-made extensions available through the [Extension Manager](https://experience.adobe.com/aem/extension-manager) that you can use for your project.
 
 * **[AEM Multi-Site-Management (MSM) Extension](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)**: Break or reinstate inheritance at the component level
 * **[AEM Page Properties Extension](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)**: Access the page properties window of the page in the Universal Editor
@@ -30,6 +30,8 @@ As an Adobe Experience Cloud service, the Universal Editor's UI can be extended 
 * **Forms Rule Editor**: Add dynamic behavior to AEM Forms fields visually, without coding.
 * **[Export Content Fragments to Adobe Target](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/exporting-content-fragment-to-adobe-target/)**: Export Content Fragments, created in Adobe Experience Manager as a Cloud Service to Adobe Target to be used as offers in Target activities, to test and personalize experiences at scale.
 * **[Content Fragment Workflows](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/content-fragments-workflows/)**: Initiate an AEM workflow for selected content fragments.
+
+For information on how to enable these extensions, [please see the Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## Extending the UI {#extending-ui}
 
