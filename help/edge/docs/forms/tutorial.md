@@ -34,10 +34,10 @@ The AEM Forms Boilerplate template gets you started quickly with an AEM project 
 1. Create a GitHub repository for your AEM Project. To create repository:  
     1. Go to [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms). 
 
-        ![AEM Forms Boilerplate](/help/edge/assets/aem-forms-boilerplate.png)
+        ![AEM Forms Boilerplate](/help/edge/docs/forms/assets/eds-form-boilerplate.png)
     1. Click the **Use this template** option and select the **Create a new repository** option. The create a new repository screen opens.  
 
-        ![Create new repository using AEM Forms Boilerplate](/help/edge/assets/create-new-repository-using-aem-forms-boilerplate.png)
+        ![Create new repository using AEM Forms Boilerplate](/help/edge/docs/forms/assets/use-eds-form-template.png)
     
     1. On the create a new repository screen, select the **owner**, and specify **Repository name** . Adobe recommends that the repository is set to **Public**. So, select the **public** option, and click **Create Repository**. 
 
@@ -278,30 +278,52 @@ If you have an existing AEM Project, you can integrate the Adaptive Forms Block 
 >
 > This step applies to projects built with the [AEM Boilerplate](https://github.com/adobe/aem-boilerplate). If you created your AEM project using the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms), you can skip this step.
 
-To Integrate:
+To integrate:
 
-1. **Add required files and folders**
-   1. Copy and paste the following folders and files from the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) into your AEM Project:
+1. Clone your AEM Project repository from GitHub using the following command, replacing <owner> with the repository owner and <repo> with the repository name:
 
-      * [form block](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)  folder
-       * [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common)  folder
-       * [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components) folder
-       * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) file
-       * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) file
+    ```
+    git clone https://github.com/<owner>/<repo>
+    ```
 
-1. **Update component definitions and models files**
-    1. Navigate to the `../models/_component-definition.json` file in your AEM Project and update it with the changes from the [_component-definition.json file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48).
+1. Navigate to the AEM Project repository folder on your local system.
+   
+1. Run the following command:
+
+   ```
+      code .
+   ```
+
+    The folder opens in the text editor. 
+
+1. Copy and paste the following folders and files from the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) into your AEM Project:
+
+   * [form block](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) folder
+   * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) file
+   * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) file
+1. Navigate to the `../scripts/editor-support.js` file in your AEM Project and update it with the [editor-support.js file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)
+1. Navigate to the `../models/_section.json` in your AEM Project and add the following line of codes to the `filter` object:
     
-    1. Navigate to the `../models/_component-models.json` file in your AEM Project and update it with the changes from the [_component-models.json file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)
+    ```
+        "filters": [
+        {
+      "id": "section",
+      "components": [
+        .
+        .
+        .
+        "form",
+        "embed-adaptive-form"
+      ]
+     }]
+    ```
 
-1. **Add Form Editor in editor script**
-    1. Navigate to the `../scripts/editor-support.js` file in your AEM Project and update it with the changes from the [editor-support.js file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)
-1. **Update ESLint configuration file**
-    1. Navigate to the `../.eslintignore` file in your AEM Project and add the following line of codes to prevent errors related to the Form Block rule engine:
-        ```
-            blocks/form/rules/formula/*
-            blocks/form/rules/model/*
-        ```
+1. Open the terminal and run the below commands:
+    
+    ```
+    npm i
+    npm run build:json
+    ```
 
 1. Commit and push these changes to your AEM Project repository on GitHub.
 
