@@ -1,4 +1,4 @@
-# Enable Feature Toggle  on local cloud-ready setup
+# Enable Feature Toggle  on Local Cloud-Ready Setup
 
 ## Introduction
 
@@ -6,14 +6,40 @@ Feature Toggle in AEM allows administrators to dynamically enable or disable spe
 
 ### Enable Feature Toggle
 
-1. Feature Toggles for early adopters or new features can be configured through the AEM Web Console Configuration by following the steps below:
+Feature Toggles for early adopters or new features can be configured through the AEM Web Console Configuration by following the steps below:
 Log in to your AEM Forms instance.
-1. Navigate to http://<author-instance-url>:portnumber/system/console/configMgr.
+
+1. Navigate to [Adobe Experience Manager Web Console
+Configuration](http://localhost:4502/system/console/configMgr) (http://<author-instance-url>:portnumber/system/console/configMgr).
+
+![Feature Toggle](/help/forms/assets/aem-web-console-confi.png)
+
+2.Search for Adobe Granite Dynamic Toggle Provider in the Configuration Manager.
+
+3.Click the icon  .
+4.In the Enabled Toggles section, click  .
+5.Add the feature toggle id for the feature as shown in the image below.
+6.Click Save
+
+>[!NOTE] You can find the feature toggle id in the document    
+> 
+>specific to the early adopter features.
+
+![Feature Toggle](/help/forms/assets/feature-toggle.png)
+
+![Feature Toggle](/help/forms/assets/aem-web-console-bundle.png)
+
+![Feature Toggle](/help/forms/assets/adaptive-form%202.png)
+
+### Disable Feature Toggle
+
+1. To disable the feature toggle(s) for features whose toggle(s) are enabled, follow the steps below:
+1. Log in to your AEM Forms instance.
+Navigate to http://<author-instance-url>:portnumber/system/console/configMgr.
 1. Search for Adobe Granite Dynamic Toggle Provider in the Configuration Manager.
-1. Click the icon  .
-1. In the Enabled Toggles section, click  .
-1. Add the feature toggle id for the feature as shown in the image below.
-1. Click Save
+1. Click the icon.
+1. In the Disabled Toggles section, click.
+1. Add the toggle number for the feature to be disabled.
 
 ## Technical Consideration
 
