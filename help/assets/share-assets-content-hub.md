@@ -51,11 +51,11 @@ exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
 >
 >[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
-Sharing assets through a link is a convenient way of making the resources available to [!DNL the Content Hub] users. The functionality allows authorized users to access and download the assets shared with them. When downloading assets from a shared link, [!DNL the Content Hub] uses an asynchronous service that offers faster and uninterrupted download.
+Sharing assets through a link is a convenient way of making the resources available to the [!DNL Content Hub] users. The functionality allows authorized users to access and download the assets shared with them. When downloading assets from a shared link, [!DNL the Content Hub] uses an asynchronous service that offers faster and uninterrupted download.
 
 ## Prerequisites {#prerequisites}
 
-[Content Hub users](deploy-content-hub.md#onboard-content-hub-users) can perform actions mentioned in this article.
+[Content Hub users](deploy-content-hub.md#onboard-content-hub-users) can perform the actions mentioned in this article.
 
 ## Share a single asset {#share-a-single-asset}
 
@@ -79,7 +79,7 @@ You can share a single asset by executing the following steps:
 
     ![Sharing multiple assets](assets/sharing-multiple-assets.png)
 
-1. In preview section, you can also delete assets as per your requirements. Use the **[!UICONTROL Expiration]** field to specify an expiration date for the link. Select one of the available options, such as, 24 hours, 1 week, 30 days, 90 days, 1 year or specify a custom date.  
+1. In the preview section, you can also delete assets as per your requirements. Use the **[!UICONTROL Expiration]** field to specify an expiration date for the link. Select one of the available options, such as, 24 hours, 1 week, 30 days, 90 days, 1 year or specify a custom date.  
 
 1. Click **[!UICONTROL Copy share link]**. You can then share the copied link with the recipient. 
 
@@ -99,18 +99,16 @@ Click the shared link and click the download icon available on the asset card to
 
 ![Access Shared Links](assets/content-hub-access-shared-links.png)
 
-## Share assets with unauthenticated users {#share-assets-with-unauthenticated-users}
+## Share assets with non [!DNL Content Hub] users {#share-assets-with-non-Content-Hub-users}
 
-[Content Hub users](deploy-content-hub.md#onboard-content-hub-users) can share asset files with unauthenticated ![DNL Content hub] users. Execute the following steps to share the asset files:
+[Content Hub users](deploy-content-hub.md#onboard-content-hub-users) can share asset files with non [!DNL Content Hub] users. Execute the following steps to share the asset files:
 
-1. On the ![DNL Content hub] homepage, select the asset files and click ![share](/help/assets/assets/share.svg) **[!UICONTROL Share]**. A **[!UICONTROL Share assets]** dialog box displaying the selected assets displays. You can also share assets available in ![collections](/help/assets/assets/Smock_Collection_18_N.svg) **[!UICONTROL Collections]**.
+1. On the [!DNL Content Hub] homepage, select the asset files and click ![share](/help/assets/assets/share.svg) **[!UICONTROL Share]**. A **[!UICONTROL Share assets]** dialog box displaying the selected assets displays. You can also share assets available in ![collections](/help/assets/assets/Smock_Collection_18_N.svg) **[!UICONTROL Collections]**.
 
 1. Enable the **[!UICONTROL Public Link]** toggle, click **[!UICONTROL Period of expiration]** and select a duration after which the recipient cannot access the shared assets. 
 
 1. Click **[!UICONTROL Generate public share link]** to create a sharable link to the selected assets.
-![](/help/assets/assets/share-assets-using-public-link-share.png)
+![public link sharing in content hub](/help/assets/assets/share-assets-using-public-link-share.png)
 1. Copy the link and share with the user. 
 
-This link takes the user to a page that displays the selected assets. Selecting the assets on that page and clicking ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** downloads the selected assets. Double clicking an asset displays the asset details.
-
-Open the link in your browser to see a page displaying the selected assets. Select the assets on that page and click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** to download the selected assets. Double click an asset to display its details.
+Open the link in your browser, a page displaying the selected assets displays. Select the assets and click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** to download them. Double click an asset to see its details.
