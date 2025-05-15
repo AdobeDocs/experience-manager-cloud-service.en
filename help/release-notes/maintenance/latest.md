@@ -18,12 +18,8 @@ The 2025.5.0 feature activation will provide the full feature set for this maint
 
 ### Enhancements {#enhancements-20783}
 
-* FORMS-18455: The AEM Forms Core Component Adaptive Form editor enhanced to display visual indicators (dots) for data objects already used or mapped in the form within the data source tree, a feature that helps authors easily identify utilized data elements.
-* FORMS-18450: The product is enhanced by migrating the reCaptcha V2 domain logic to the `AdaptiveFormConfigurationServiceImpl`. This change aims to centralize configuration and can align with adding support for invisible reCaptcha V2 in Core Components.
-* FORMS-19630: The AEM 6.5 quickstart uber-jar is updated to include the latest Adaptive Forms Core Components package, ensuring that the quickstart environment reflects the most current Adaptive Forms functionalities and replaces legacy code.
 * FORMS-19125: The Core Component Adaptive Form editor is enhanced to support automatic mapping of available Adaptive Form fragments when a corresponding section from the data source tree is dropped into the form canvas. This brings a key productivity feature from the foundation editor to core components.
-* FORMS-17887: AEM Forms now provides the capability to generate documents in AFP (Advanced Function Presentation) format through its output service. This enhancement caters to customer needs for high-speed, high-volume printing environments typically using AFP.
-* FORMS-15089: AEM Forms has introduced the capability for a form to be versioned upon publishing in such a way that all its constituent fragments are inlined (embedded) into that specific published version. This ensures an exact, self-contained representation of the form as it appeared at the time of publishing, which can be critical for archival, legal, or compliance purposes.
+* FORMS-17107: AEM Forms now offers enhanced client-side custom function parsing. This includes support for modern JavaScript features (ECMAScript ES10+), such as optional chaining, and introduces the capability to use static imports within custom function scripts. This allows developers to better organize code, utilize ESM modules, and remove previous limitations encountered with custom functions in Adaptive Forms based on Core Components and Edge Delivery Services, particularly for users who previously required workarounds for these capabilities.
 * SITES-27775: Optimized reference search during publication.
 * SITES-30885: Optimized JSON processing in persisted queries.
 * SITES-25433: Edge Delivery with Universal Editor: Support full page rendering when comparing old versions.
@@ -58,16 +54,15 @@ The 2025.5.0 feature activation will provide the full feature set for this maint
 * FORMS-18526: When a rule containing multiple fields in its conditions is copied from one field to another, a fixed field reference within these conditions incorrectly retains its reference to the original source field instead of updating to the new field where the rule is copied.
 * FORMS-19047: After an Adaptive Form is modified and republished on AEM Forms (specifically 6.5.22.0), translations for certain form elements, particularly text boxes, may be missing.
 * FORMS-19234: The timeline feature for PDFs in AEM Forms, which allows users to view details about a PDF's creation and versioning, stops working after any PDF is uploaded under the 'Forms and Documents' section.
-* FORMS-19373: Replication errors are incorrectly reported during a 'golden publish' process in environments that do not have any replication agents configured.
 * FORMS-18196: The `generatePrintedOutput` (or `generatePdfOutput`) sync HTTP API incorrectly returns a 200 (Success) response code instead of the expected 400 (Bad Request) error code when optional field data required by the XDP template is left empty in the request.
 * FORMS-19336: In the Core Component Adaptive Form editor (AF2 editor), the search functionality within the Data Source Tree does not work correctly or as expected, hindering users from easily finding specific data elements.
-* FORMS-19629: The JSON schema parser is producing invalid results or misinterpreting certain customer-provided JSON schemas. This issue can negatively affect functionalities that rely on correct schema parsing, such as the automatic mapping of fragments.
-* FORMS-19380: The introduction of versioning support for Core Component Adaptive Forms has unintentionally enabled versioning capabilities for various other asset types (e.g., Foundation Forms, PDF files, Themes, FDM) without specific design or testing for those asset types. This unintended side-effect is under investigation.
 * FORMS-17707: The AEP (Adobe Experience Platform) connector is not functioning correctly when configured to connect to AEP platform 'stage' environments.
+* FORMS-18526: When copying a rule that has conditions based on multiple fields, a field referenced within the rule's conditions or actions (that is not the primary field triggering the rule) does not update to correctly reference the new field to which the rule is being copied. Instead, it continues to reference the original source field from where the rule was copied.
+* FORMS-18474: A rule designed to set focus on a specific panel or component when a particular field's value changes (e.g., field 'A') is incorrectly triggered by a change in any field on the form. For instance, if field 'B' is modified, the focus is still set to the designated panel, even though the rule was configured only for changes to field 'A'.
 * GRANITE-58276: OSGi dependency cycles prevent the HTL script engine factory to work correctly.
 * OAK-11673: Oak-segment-azure v12 CPU increase caused by refreshLease.
 * SITES-30752: Do not use `If-modified-since`/`last-modified` headers when generating persisted query response.
-* SITES-30353: GraphQL DataFetchingExceptions for “src” Field in AEM Content Fragments.
+* SITES-30353: GraphQL DataFetchingExceptions for "src" Field in AEM Content Fragments.
 * SITES-30333: Read asset metadata from jcr to avoid xmp parsing problems.
 * SITES-30140: Dual window issue when creating content fragment reference.
 * SITES-29748: Correct renderconditions to show managepublication/quickpublish actions inside the CF editor.
@@ -84,7 +79,7 @@ The 2025.5.0 feature activation will provide the full feature set for this maint
 * SITES-30728: OnTime/OffTime does not Publish/UnPublish as expected when configured on asset properties.
 * SITES-29789: Component Link Change on Copied Root Pages in AEM.
 * SITES-29191: Unable to Add More Than 20 SKUs to Product List Component.
-* SITES-30372: Smart Crop not functioning on AEM’s Image(V2) core component.
+* SITES-30372: Smart Crop not functioning on AEM's Image(V2) core component.
 * SITES-28693: Teaser Component Renders Broken HTML When Title is Empty.
 * SITES-28668: Unable to Promote Launch with LaunchPromotionParameters.
 * SITES-31005: Enhance Rollout Job UI to show the customer the progress.
