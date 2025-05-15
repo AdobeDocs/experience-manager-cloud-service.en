@@ -1,5 +1,5 @@
 ---
-title: Create an Edge Delivery Site in Cloud Manager
+title: Create an Edge Delivery Site in Cloud Manager with one click
 description: Learn how to create an Edge Delivery site quickly in Cloud Manager with the click of a button.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
@@ -10,18 +10,6 @@ exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
 The Create an Edge Delivery site feature is designed to help you automate the onboarding and deployment of Edge Delivery sites within Cloud Manager. It greatly simplifies the process by having you click a single button. That single click provisions the required infrastructure, integrates with GitHub for version control, and configures your document and asset storage in Google Drive.
 
 This automation helps reduce the manual effort that is required to set up your initial site. It ensures seamless workflows, scalability, and improves the performance of your teams when it comes to managing content at the edge.
-
-## Key concepts {#key-concepts}
-
-Key concepts when you create an Edge Delivery site in Cloud Manager with one click.
-
-| Key concept | Description |
-| --- | --- |
-| Automated Edge deployment | <ul><li>Users can create and configure Edge Delivery sites instantly.</li><li>By using Cloud Manager's integration with CI/CD workflow, it reduces or eliminates the need for manual onboarding processes.</li><li>Integrated with Cloud Manager for seamless CI/CD workflows.</li></ul> |
-| Integration with Cloud Manager | <ul><li>Uses Cloud Manager's user interface to trigger the One Click Edge Delivery process.</li><li>Provide access to automated repository creation and deployment.</li></ul> |
-| GitHub-based version control | <ul><li>Creates a GitHub repository within an organization using pre-defined boilerplate templates to standardize deployments.</li><li>Links with AEM Bot for content updates.</li></ul> |
-| Document and asset storage integration | <ul><li>Generates a Google Drive folder for storage.<li>Installs the AEM Code Sync application on the repository, ensuring seamless synchronization and deployment.</li></li><li>Collaborators can manage documents easily.</li></ul> |
-| Security and scalability | <ul><li>Ensures compliance with enterprise security standards.</li><li>Supports multiple Edge Delivery sites under different Cloud Manager tenants.</li></ul> |
 
 <!-- >
 ## Practical use cases {#use-cases}

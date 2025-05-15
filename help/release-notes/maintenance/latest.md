@@ -27,9 +27,8 @@ The 2025.5.0 feature activation will provide the full feature set for this maint
 * SITES-27775: Optimized reference search during publication.
 * SITES-30885: Optimized JSON processing in persisted queries.
 * SITES-25433: Edge Delivery with Universal Editor: Support full page rendering when comparing old versions.
-* SITES-27792: Edge Delivery with Universal Editor: Move EDS configuration fully to CA Config.
+* SITES-27792: Edge Delivery with Universal Editor: Add specific template for Edge Delivery Service configurations
 * SITES-19754: Edge Delivery with Universal Editor: compelling error message when the setup is broken.
-* SITES-30267: Edge Delivery with Universal Editor: Sheet V2 (Early Access).
 * SITES-30328: Edge Delivery with Universal Editor: Preview from Sidekick support.
 * SITES-23499: Edge Delivery with Universal Editor: allow multiple fields to be used for block options.
 * SITES-29987: Add capability to set `previewUrlPattern` when creating content fragment models.
