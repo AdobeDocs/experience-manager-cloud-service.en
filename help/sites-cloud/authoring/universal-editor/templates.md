@@ -75,7 +75,7 @@ Complete the wizard as you would for any other page and you have created your ne
 
 Page templates only define the initial content of pages. Pages are then entirely editable with the Universal Editor.
 
-* Pages created from pages templates are independent copies of the template.
+* Pages created from page templates are independent copies of the template.
 * If the template changes, the existing pages based on that template do not change.
 * The content author can modify and update the content of the resulting page as necessary with no restrictions from the template.
 
@@ -83,4 +83,4 @@ Page templates only define the initial content of pages. Pages are then entirely
 
 Pages created with the [Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md) can also be based on templates. Templates used to create pages for the Universal Editor and the Page Editor both leverage AEM's [editable templates](/help/implementing/developing/components/templates.md).
 
-Templates used to create pages editable with the Page Editor make use of all features of editable templates. Templates usd to create pages editable with the Universal Editor only use the initial content feature.
+Templates used to create pages editable with the Page Editor make use of all features of editable templates. Templates used to create pages editable with the Universal Editor only use the initial content feature.
