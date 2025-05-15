@@ -7,13 +7,11 @@ exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
 ---
 # Integrate forms with Form Data Model in Universal Editor
 
-<span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
-
 Integrating forms with a Form Data Model (FDM) in Universal Editor allows you to use diverse backend data sources to create a Form Data Model (FDM). You can use the Form Data Model (FDM) as a schema in various form workflows. Configure the data sources and create a Form Data Model (FDM) based on the data model objects and services available in data sources.
 
 ## Considerations
 
-* If you do not see the **Data Source** icon in your Universal Editor interface or **Bind Reference** property in the form field, enable the **Data Source** extension in the **Extension Manager**.
+* If you do not see the **Data Sources** icon in your Universal Editor interface or **Bind Reference** property in the right property panel, enable the **Data source** extension in the **Extension Manager**.
 
     ![extension manager](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
 

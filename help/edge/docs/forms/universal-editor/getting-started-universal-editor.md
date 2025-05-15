@@ -159,33 +159,19 @@ If you have an existing AEM Project, you can integrate the Adaptive Forms Block 
 >[!NOTE]
 >
 >
-> This step applies to projects built with the [AEM Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-xwalk). If you created your AEM Project using the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms), you can skip this step.
+> This step applies to projects built with the [AEM Boilerplate XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk). If you created your AEM Project using the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms), you can skip this step.
 
 To integrate:
 
-1. Clone your AEM Project repository from GitHub using the following command, replacing <owner> with the repository owner and <repo> with the repository name:
-
-    ```
-    git clone https://github.com/<owner>/<repo>
-    ```
-
 1. Navigate to the AEM Project repository folder on your local system.
-   
-1. Run the following command:
-
-   ```
-      code .
-   ```
-
-    The folder opens in the text editor. 
 
 1. Copy and paste the following folders and files from the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) into your AEM Project:
 
    * [form block](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) folder
    * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) file
    * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) file
-1. Navigate to the `../scripts/editor-support.js` file in your AEM Project and update it with the [editor-support.js file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)
-1. Navigate to the `../models/_section.json` in your AEM Project and add the following line of codes to the `filter` object:
+1. Navigate to the `/scripts/editor-support.js` file in your AEM Project and update it with the [editor-support.js file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)
+1. Navigate to the `/models/_section.json` in your AEM Project and append "form" and "embed-adaptive-form" to the components array of the `filters` object:
     
     ```
         "filters": [
@@ -201,7 +187,7 @@ To integrate:
      }]
     ```
 
-1. (Optional) Navigate to `../.eslintignore` in your AEM Project and add below lines of code:
+1. (Optional) Navigate to `/.eslintignore` in your AEM Project and add below lines of code:
     
     ```
     blocks/form/rules/formula/*
@@ -211,7 +197,7 @@ To integrate:
     scripts/editor-support-rte.js
     ```
 
-1. (Optional) Navigate to `../.eslintrc.js` in your AEM Project and add below lines of code in the `rules` object:
+1. (Optional) Navigate to `/.eslintrc.js` in your AEM Project and add below lines of code in the `rules` object:
     
     ```
     'xwalk/max-cells': ['error', {
@@ -250,6 +236,10 @@ To integrate:
     npm i
     npm run build:json
     ```
+
+    >[!NOTE]
+    >
+    > Before pushing the changes to your AEM Project repository on GitHub, ensure that the `component-definition.json`, `component-models.json`, and `component-filters.json` files located at the root level of the AEM project are updated with the form-related objects.
 
 1. Commit and push these changes to your AEM Project repository on GitHub.
 
@@ -380,7 +370,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
     Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from `"lint": "npm run lint:js && npm run lint:css"` to `"lint": "echo 'skipping linting for now'"`. Save the file and commit the changes to your GitHub project.
 
 * **Resolve Module Path Error:**
-    If you encounter the error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", navigate to the [EDS Project]/blocks/forms/form.js file. Update the import statement by replacing the lib-franklin.js file with the aem.js file. 
+    If you encounter the error "Unable to resolve path to module "'/scripts/lib-franklin.js'", navigate to the [EDS Project]/blocks/forms/form.js file. Update the import statement by replacing the lib-franklin.js file with the aem.js file. 
 
 ## See also
 
