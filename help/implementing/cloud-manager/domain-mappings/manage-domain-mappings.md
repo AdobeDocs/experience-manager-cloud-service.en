@@ -6,7 +6,7 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
 ---
-# Manage Domain Mappings {#manage-cdn-configurations}
+# Manage Domain Mappings {#manage-domain-mappings}
 
 Learn about how to use Cloud Manager to edit or delete CDN configurations for an Edge Delivery site or a Cloud Manager environment.
 
