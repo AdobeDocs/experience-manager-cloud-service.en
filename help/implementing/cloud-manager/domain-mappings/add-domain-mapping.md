@@ -11,7 +11,7 @@ exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
 
 To link a domain with an SSL certificate on the Adobe-managed CDN within your program, you must add a CDN (Content Delivery Network) configuration.
 
-For Adobe managed CDNs, when using a DV SSL certificate, only sites with ACME validation are permitted. 
+For Adobe managed CDNs, when using a DV SSL certificate, only sites with ACME validation are permitted.
 
 >[!IMPORTANT]
 >
