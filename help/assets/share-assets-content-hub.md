@@ -111,4 +111,4 @@ Click the shared link and click the download icon available on the asset card to
 ![public link sharing in content hub](/help/assets/assets/share-assets-using-public-link-share.png)
 1. Copy the link and share with the user. 
 
-Click the link to see how it works. A page displaying the selected assets opens. Select the assets and click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** to download them. Double click an asset to see its details.
+Click the link to preview the shared assets. A page displaying the selected assets opens. Select the assets and click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** to download them. Double click an asset to see its details.
