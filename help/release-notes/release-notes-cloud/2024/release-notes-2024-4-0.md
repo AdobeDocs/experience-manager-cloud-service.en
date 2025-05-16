@@ -164,7 +164,7 @@ Real Use Monitoring (RUM) Data Service offers a more precise reflection of user 
      
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### CDN Configuration {#cdn-config}
+### Domain Mapping {#cdn-config}
 
 Configure traffic at the Adobe CDN in the following ways:
 
