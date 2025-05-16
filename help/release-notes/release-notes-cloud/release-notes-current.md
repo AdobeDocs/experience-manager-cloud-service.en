@@ -131,7 +131,7 @@ Watch this video to learn how to configure an authenticated API for later usage:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3457510?quality=12&learn=on)
 
-### CDN Configuration-related Enhancements {#cdn-enhancements}
+### Domain Mapping-related Enhancements {#cdn-enhancements}
 
 The Adobe-Managed CDN offers flexible configuration options, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#configurations). Here are a few recent features:
 
