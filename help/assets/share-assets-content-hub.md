@@ -105,10 +105,10 @@ Click the shared link and click the download icon available on the asset card to
 
 1. On the [!DNL Content Hub] homepage, select the asset files and click ![share](/help/assets/assets/share.svg) **[!UICONTROL Share]**. A **[!UICONTROL Share assets]** dialog box displaying the selected assets displays. You can also share assets available in ![collections](/help/assets/assets/Smock_Collection_18_N.svg) **[!UICONTROL Collections]**.
 
-1. Enable the **[!UICONTROL Public Link]** toggle, click **[!UICONTROL Period of expiration]** and select a duration after which the recipient cannot access the shared assets. 
+1. Enable the **[!UICONTROL Public Link]** toggle, click **[!UICONTROL Period of expiration]** and select a duration after which the recipient cannot access the selected assets. 
 
 1. Click **[!UICONTROL Generate public share link]** to create a sharable link to the selected assets.
 ![public link sharing in content hub](/help/assets/assets/share-assets-using-public-link-share.png)
 1. Copy the link and share with the user. 
 
-Open the link in your browser, a page displaying the selected assets displays. Select the assets and click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** to download them. Double click an asset to see its details.
+Click the link to see how it works. A page displaying the selected assets opens. Select the assets and click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** to download them. Double click an asset to see its details.
