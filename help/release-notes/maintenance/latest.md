@@ -39,7 +39,7 @@ None.
 
 ### Deprecated Features and APIs {#deprecated-X}
 
-* [Experience Cloud Setup Automation](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
+* The [Experience Cloud Setup Automation](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) functionality has been deprecated.
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
