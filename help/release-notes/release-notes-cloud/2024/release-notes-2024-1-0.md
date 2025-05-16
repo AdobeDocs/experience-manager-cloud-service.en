@@ -104,7 +104,7 @@ Dynatrace customers may monitor their AEM usage. [Read how](/help/implementing/c
 
 [Rapid Development Environments (RDEs)](/help/implementing/developing/introduction/rapid-development-environments.md) now support front-end code based on [site themes](/help/sites-cloud/administering/site-creation/site-themes.md) and [site templates](/help/sites-cloud/administering/site-creation/site-templates.md), for early adopters. With RDEs, this is done using a command line directive, rather than a [front-end pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Please reach out to **aemcs-rde-support@adobe.com** to try it out and provide feedback.
 
-### CDN Configuration Early Adopter Program {#cdn-config-early-adopter}
+### Domain Mapping Early Adopter Program {#cdn-config-early-adopter}
 
 In addition to the recently released [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md), which includes the optionally licensable Web Application Firewall (WAF) rules, there's an opportunity to use the Configuration Pipeline to declare and deploy [other types of CDN configuration](/help/implementing/dispatcher/cdn-configuring-traffic.md). Join the early adopter program by emailing **aemcs-cdn-config-adopter@adobe.com** to gain access to:
 * 301/302 client-side redirects

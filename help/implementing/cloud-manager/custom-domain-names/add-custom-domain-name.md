@@ -69,7 +69,7 @@ The steps for either method described in this document are based on Fastly. If y
 
       >[!NOTE]
       >
-      >If you use your own customer-managed (OV/EV or DV) SSL certificate, you do not need to add an SSL certificate. This rule also applies if you plan to use a customer-managed CDN (Content Delivery Network) ***provider***. Instead, go directly to [Add a CDN configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) when ready.
+      >If you use your own customer-managed (OV/EV or DV) SSL certificate, you do not need to add an SSL certificate. This rule also applies if you plan to use a customer-managed CDN (Content Delivery Network) ***provider***. Instead, go directly to [Add a Domain Mapping](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md) when ready.
 
 
 ### Adobe managed certificate steps {#adobe-managed-cert-steps}
