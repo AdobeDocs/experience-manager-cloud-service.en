@@ -1,15 +1,17 @@
 ---
-title: Create an Edge Delivery Site in Cloud Manager with one click
+title: Create your First Edge Delivery Site with One Click
 description: Learn how to create an Edge Delivery site quickly in Cloud Manager with the click of a button.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
 ---
-# About create an Edge Delivery site in Cloud Manager with one click{#about-one-click-edge-delivery-site}
+# Create your first Edge Delivery site with one click{#about-one-click-edge-delivery-site}
 
-The Create an Edge Delivery site feature is designed to help you automate the onboarding and deployment of Edge Delivery sites within Cloud Manager. It greatly simplifies the process by having you click a single button. That single click provisions the required infrastructure, integrates with GitHub for version control, and configures your document and asset storage in Google Drive.
+Creating your first Edge Delivery site with one click is designed to help you automate the onboarding and deployment of Edge Delivery sites within Cloud Manager. It greatly simplifies the process by having you click a single button. That single click provisions the required infrastructure, integrates with GitHub for version control, and configures your document and asset storage in Google Drive.
 
 This automation helps reduce the manual effort that is required to set up your initial site. It ensures seamless workflows, scalability, and improves the performance of your teams when it comes to managing content at the edge.
+
+<!-- ADD LINK TO DORU'S VIDEO DEMO -->
 
 <!-- >
 ## Practical use cases {#use-cases}
