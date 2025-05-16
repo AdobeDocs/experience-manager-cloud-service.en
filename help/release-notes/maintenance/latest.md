@@ -24,11 +24,22 @@ None.
 
 None.
 
+#### AEM Guides {#guides}
+
+* GUIDES-26919 : When opening a DITA map with the unified shell enabled, the editor refreshes intermittently.
+* GUIDES-26282: Failing to close JCR session connections while updating or creating topics result in memory leaks and service downtime.
+* GUIDES-26434: Native PDF publishing continues indefinitely, if the DITA content has a weblink without having scope as `external`.
+* GUIDES-26516:  Publishing of Native PDFs and AEM sites stalls and gets queued, when there are errors in the content.
+
+For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
+
 ### Known Issues {#known-issues-X}
 
 None.
 
 ### Deprecated Features and APIs {#deprecated-X}
+
+* [Experience Cloud Setup Automation](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
