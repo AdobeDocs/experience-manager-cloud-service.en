@@ -1235,7 +1235,7 @@ user-guide-title: AEM as a Cloud Service
       + [Add an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
       + [Troubleshoot SSL Certificate Errors](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
       + [Manage SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-    + Domain Mappings {#cdn-configurations}
+    + Domain Mappings {#domain-mappings}
       + [Add a Domain Mapping](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)
       + [Manage Domain Mappings](/help/implementing/cloud-manager/domain-mappings/manage-domain-mappings.md)
     + IP Allow Lists {#ip-allow-lists}
