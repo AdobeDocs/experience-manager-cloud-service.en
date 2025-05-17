@@ -10,7 +10,7 @@ exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
 
 Learn about how to use Cloud Manager to edit or delete CDN configurations for an Edge Delivery site or a Cloud Manager environment.
 
-## Edit a CDN configuration from the Domain Mappings page {#edit-cdn}
+## Edit a CDN configuration from the Domain Mappings page {#edit-domain-mapping}
 
 In Adobe Cloud Manager, you may want to edit a CDN (Content Delivery Network) configuration, including the environment tier (Publish or Preview) and SSL certificate, for several reasons.
 
