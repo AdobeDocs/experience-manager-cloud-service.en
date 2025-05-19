@@ -3,7 +3,7 @@ title: Configure Your Content Source
 description: Learn how to configure the content source for your Edge Delivery site using either fstab.yaml in Helix 4 or the Edge Delivery Services UI (or Configuration Service API) in Helix 5.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-
+exl-id: f82eafc0-03d0-4c69-9b28-e769a012531b
 ---
 # Configure your content source in one click for Edge Delivery Services {#config-content-source}
 
