@@ -52,18 +52,36 @@ Responses are then cached, based on predefined caching headers (cannot be config
 
 AEM also comes with active CDN cache invalidation. This means that whenever content is updated, or published, the corresponding JSON OpenAPI responses are automatically invalidated, via a soft purge request to Fastly. This allows you to see changes reflected in the JSON output, before the actual CDN cache age (`s-maxage`) is reached.
 
-<!--
-## How to enable Content Fragment Delivery with OpenAPI {#how-to-enable-content-fragment-delivery-with-openapi}
+## Availability {#availability}
+
+The Content Fragment Delivery with OpenAPI is available on Preview and Publish tiers. The OpenAPI delivers Content Fragments in JSON for delivery purposes, for both previewing and live delivery use-cases.
+
+To simulate delivery of content from the AEM author directly, the Content Fragment Delivery with OpenAPI can be configured to enable auto-synchronizing of Content Fragments from the AEM author environment to the Preview tier. 
 
 >[!NOTE]
 >
->Before submitting a request to enable Content Fragment Delivery with OpenAPI on AEM as a Cloud Service, ensure that it is not already enabled.
+>The auto-synchronizing from AEM Author to Preview is turned off by default. Contact your Support representative if you want it to be enabled.
+>
+>Whenever the auto-sync capability is enabled, we recommend making sure that proper IP allowlisting rules are in place to protect content on the Preview tier.
 
-To enable Content Fragment Delivery with OpenAPI on AEM as a Cloud Service you should submit an Adobe Support ticket with:
+<!-- Where in the documentation? -->
+<!--
+>Refer to our documentation for managing the Preview service for that matter.
+-->
 
-* the title **Enable Content Fragment Delivery with OpenAPI** 
-* and specifying:
-  * the Cloud Service program and environment ID
-  * details of the use-case you want to solve with the Content Fragment Delivery OpenAPI
-  * the customer contacts who will be involved in the integration project
+When auto-syncing is not enabled the Content Fragment authors:
+
+* have control over how and when Content Fragments are available on the Preview service
+* rely on the Publish to Preview operation to manually synchronize Content Fragments to be previewed.
+
+<!-- 
+## CORS {#cors}
+-->
+
+<!-- 
+## API Rate Limits {#api-rate-limits}
+-->
+
+<!-- 
+## Limitations {#limitations}
 -->
