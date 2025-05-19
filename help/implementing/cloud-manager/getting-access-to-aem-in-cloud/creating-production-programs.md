@@ -44,7 +44,7 @@ See [Additional production program options](#options).
 
    * If you are not sure if you need one or more programs for the various solutions you have available, select the one most of interest to you. You can activate additional solutions by [editing the program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) later. See the [Introduction to Production Programs document](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) for more program setup recommendations.
    * At least one solution is required for program creation.
-   * Select **Edge Deliver Services** for a fully managed CDN solution that optimizes digital experiences. See [About using Edge Delivery Services to deliver your Cloud Manager project](#edge-overview)
+   * Select **Edge Delivery Services** for a fully managed CDN solution that optimizes digital experiences. See [About using Edge Delivery Services to deliver your Cloud Manager project](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
    * If you selected the **[Enable Enhanced Security](#security)** option, you can select only as many solutions for which HIPAA entitlements are available.
 
       ![Select solutions](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
