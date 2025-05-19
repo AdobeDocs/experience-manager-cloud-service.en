@@ -2,14 +2,23 @@
 
 ## Introduction
 
-As organizations adopt agile development practices and cloud-native architectures, the ability to control feature releases becomes critical. Feature toggles (or feature flags) allow developers to enable or disable features without deploying new code. When implemented correctly, they can dramatically improve development workflows, testing efficiency, and release management.
+Feature Toggle in AEM lets administrators dynamically enable or disable specific features—ideal for managing Early Adopter and Prerelease features without code changes. As agile and cloud-native practices grow, feature toggles help control releases, improve testing, and simplify deployment. This article explains how to enable them in a local cloud-ready setup for AEM Forms adaptive components.
 
-This article guides you on enabling feature toggles in a local cloud-ready setup, particularly for Adobe Experience Manager (AEM) Forms adaptive components.
+## Prerequisites
+
+Before enabling feature toggles in your local cloud-ready setup, ensure the following:
+
+- AEM 6.5 or later is installed and running locally
+- Access to CRX/DE and OSGi Console
+- Basic knowledge of AEM run modes and configurations
+- Permissions to modify OSGi configurations
 
 ## What is a Feature Toggle?
+
 A feature toggle is a mechanism that lets you control the availability of features in your application at runtime. Instead of pushing new code every time you want to activate a feature, you can flip a switch through configuration or external services.
 
 ## Why Use Feature Toggles in a Cloud-Ready Setup?
+
 When working in a cloud-ready local environment (e.g., containerized AEM setups), feature toggles help:
 
 * Test experimental features safely.
@@ -36,14 +45,14 @@ Configuration](http://localhost:4502/system/console/configMgr/com.adobe.aemds.co
 
 2.Search for Adobe Granite Dynamic Toggle Provider in the Configuration Manager.
 
-3.Click the icon  .
-4.In the Enabled Toggles section, click  .
+3.Click the icon  ✏️ .
+4.In the Enabled Toggles section, click➕ .
 5.Add the feature toggle id for the feature as shown in the image below.
 6.Click Save
 
 >[!NOTE] You can find the feature toggle id in the document    
 > 
->specific to the early adopter features.
+>You can find the feature toggle id in the document specific to the early adopter features..
 
 ![Feature Toggle](/help/forms/assets/feature-toggle.png)
 
@@ -55,15 +64,15 @@ Configuration](http://localhost:4502/system/console/configMgr/com.adobe.aemds.co
 1. Log in to your AEM Forms instance.
 Navigate to http://<author-instance-url>:portnumber/system/console/configMgr.
 1. Search for Adobe Granite Dynamic Toggle Provider in the Configuration Manager.
-1. Click the icon.
-1. In the Disabled Toggles section, click.
+1. Click the icon ✏️.
+1. In the Disabled Toggles section, click ➕.
 1. Add the toggle number for the feature to be disabled.
 
 ### Technical Consideration
 
-Adobe recommends using feature toggles only in development and testing environments, unless required for controlled rollout in production.
+Feature toggles are runtime-managed and best suited for development or testing setups. Adobe recommends limiting their use in production unless needed for controlled rollouts. 
 
-Ensure toggle configurations are included in version control and synchronized with CI/CD pipelines.
+In a local cloud-ready setup, ensure toggles are version-controlled and synced with CI/CD. Page refresh or cache clearing may be needed for changes to reflect.
 
 ## Conclusion
 Enabling feature toggles in a local cloud-ready setup empowers teams to build and test flexibly without compromising stability. In the case of AEM's Adaptive Forms Core Components, Adobe's feature toggle framework offers a controlled, scalable way to introduce new features with minimal risk.
