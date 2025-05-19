@@ -210,7 +210,7 @@ Execute the following steps in Cloud Manager to configure a custom domain in the
 
 1. [Add a custom domain name](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name#adding-cdn-settings).
 
-1. Navigate to the environment details page and [add a CDN configuration](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cdn-configurations/add-cdn-config). While adding the configuration, select **[!UICONTROL Delivery]** in the **[!UICONTROL Tier]** field in the **[!UICONTROL Configure CDN]** dialog box.
+1. Navigate to the environment details page and [add a CDN configuration](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping). While adding the configuration, select **[!UICONTROL Delivery]** in the **[!UICONTROL Tier]** field in the **[!UICONTROL Configure CDN]** dialog box.
 
    ![Configure CDN](/help/assets/assets/select-delivery-tier-in-configure-cdn-form.png)
 

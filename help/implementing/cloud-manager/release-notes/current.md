@@ -21,13 +21,13 @@ The next planned release is Thursday, June 5, 2025.
  
 ## What's new {#what-is-new}
 
-### How to change the content source in one click for Edge Delivery Services
+### Configure the content source in one click for Edge Delivery Services
 
 Adobe Experience Manager (AEM) Edge Delivery Services allows content delivery from multiple sources such as Google Drive, SharePoint, or AEM itself, using a fast, globally distributed edge network.
 
 The content source configuration differs between Helix 4 and Helix 5 in the following way:
 
-| Version | Configuration method |
+| Version | Content source configuration method |
 | --- | --- |
 | Helix 4 | YAML file (`fstab.yaml`) |
 | Helix 5 | Configuration Service API (*no `fstab.yaml`*) |
@@ -36,7 +36,7 @@ This article provides comprehensive configuration steps, examples, and validatio
 
 **Before you start**
 
-If you use [one click Edge Delivery in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site), your site is Helix 5 with a single repository. Follow the Helix 5 instructions and use the provided Helix 4 YAML version as a fallback.
+If you use [one click Edge Delivery in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site), your site is Helix 5 with a single repository. Follow the Helix 5 instructions and use the provided Helix 4 YAML version of the instructions as a fallback.
 
 **Determine your Helix version**
 
@@ -45,20 +45,18 @@ If you use [one click Edge Delivery in Cloud Manager](/help/implementing/cloud-m
 
 Confirm through repository metadata or consult your administrator if you are still uncertain.
 
-#### Configure the content source (Helix 4)
+#### Configure the content source for Helix 4
 
-In Helix 4, content source is defined in a YAML configuration file named `fstab.yaml` located at your GitHub repository's root.
-
-##### YAML file format
-
-The `fstab.yaml` file defines mountpoints (URL path prefixes mapped to content source URLs) similar to the following example (for illustration purposes only):
+In Helix 4, the fstab.yaml file defines the content source for your site. Located at the root of your GitHub repository, this file maps URL path prefixes (called mountpoints) to external content sources. A typical example looks like the following:
 
 ```yaml
 mountpoints:
   /: https://drive.google.com/drive/folders/your-folder-id
 ```
 
-##### Change the content source
+This example is for illustration only. The actual URL should point to your content source, such as a Google Drive folder, SharePoint directory, or AEM path.
+
+**To configure the content source for Helix 4:**
 
 Steps vary by the source system that you use.
 
@@ -107,22 +105,20 @@ Steps vary by the source system that you use.
 * Using the AEM Sidekick Chrome Extension, click **Preview** > **Publish** > **Test the live site**.
 * Validate URL: `https://main--<repo>--<org>.hlx.page/`
 
-#### Configure content source (Helix 5)
+#### Configure the content source for Helix 5
 
-Helix 5 is repoless, does not use `fstab.yaml` and supports multiple sites sharing the same directory. Configuration is managed through the Configuration Service API or the Edge Delivery Services UI. Configuration is site-level (not repository-level).
+Helix 5 is repoless, does not use `fstab.yaml`, and supports multiple sites sharing the same directory. Configuration is managed through the Configuration Service API or the Edge Delivery Services UI. Configuration is site-level (not repository-level).
 
-##### Conceptual differences
+Conceptual differences are the following:
 
 | Aspect | Helix 4 | Helix 5 |
 | --- | --- | --- |
-| Config File | `fstab.yaml` | API or UI configuration |
-| Mountpoints | YAML-defined | Not required (implicit root) |
+| Configuration | Done through `fstab.yaml` | Done through the API or UI instead of YAML. |
+| Mountpoints | Defined in `fstab.yaml`. | Not required. The root is implicitly understood. |
 
-##### Change the content source
+**To configure the content source for Helix 5:**
 
-Use the Configuration Service API.
-
-1. Authenticate through an API key or access token.
+1. Using the Configuration Service API, authenticate through an API key or access token.
 1. Make the following `PUT` API call:
 
     ```bash {.line-numbering}
@@ -164,11 +160,11 @@ Participate in Cloud Manager's Early Adopter Program to get exclusive access to 
 
 The following early adopter opportunities are currently available:
 
-### Add Edge Delivery Pipeline {#add-eds-pipeline}
+### Add Edge Delivery Config Pipeline {#add-eds-pipeline}
 
-**Pipelines** are now supported for sites built with Edge Delivery Services, expanding this capability beyond just Cloud Service environments. You can use **Pipelines** to manage settings such as traffic filtering rules and Web Application Firewall (WAF) configurations, where applicable. See [Supported Configurations](/help/operations/config-pipeline.md#configurations).
+Config Pipelines are now supported for sites built with Edge Delivery Services, expanding this capability beyond just Cloud Service environments. You can use **Config Pipelines** to manage settings such as traffic filtering rules and Web Application Firewall (WAF) configurations, where applicable. See [Supported Configurations](/help/operations/config-pipeline.md#configurations).
 
-<!-- ![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png) -->
+![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png)
 
 If you are interested in testing this new feature and sharing your feedback, send an email to [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) from your email address associated with your Adobe ID.
 
@@ -188,6 +184,16 @@ See [Add external repositories in Cloud Manager](/help/implementing/cloud-manage
 ![Add Repository dialog box](/help/implementing/cloud-manager/release-notes/assets/azure-repo.png)
 
 If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure. 
+
+#### Frequently asked questions about Bring Your Own Git
+
+| Question | Answer |
+|---|---|
+| *How can a project switch back to the Adobe-managed Git repository if needed?* | Switching back is straightforward. [Update the pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) to point to the Adobe repository and remove the external repository if it is no longer required. |
+| *Is it possible to configure different repositories for different environments (for example, non-production versus production) to allow testing in non-production first?* | Yes, different repositories can be configured for separate environments. For example, the dev or code quality pipeline can point to an external repository while the production pipeline remains connected to the Adobe repository. Make sure that the sync job between the two repositories remains active during this configuration. |
+| *Do existing settings like IP allow lists continue to work?* | Yes, existing IP allow lists continue to work as usual. However, if the external Git repository is protected by a firewall, the necessary [Adobe IP addresses must be added to the allow list](/help/implementing/cloud-manager/ip-allow-lists/introduction.md). |
+| *Do all GitLab repository URLs work? The repository URL in use follows the format `https://gitlab_dedicated_url.com/path/repo-name.git`, which differs from the example in the documentation.* | Yes, any GitLab repository that supports API V3 or V4 is supported, including self-hosted GitLab URLs like the one described in [Add external repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) (`https://git-vendor-name.com/org-name/repo-name.git`). |
+
 
 <!--
 ## Bug fixes
