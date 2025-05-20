@@ -21,7 +21,7 @@ The connection between Content Fragments and AJO simplifies the process of acces
 
 For further details see:
 
-* [Using Content Fragments in AJO](https://experienceleague-review.corp.adobe.com/docs/journey-optimizer/using/integrations/aem-fragments.html#integrations)
+* [Using Content Fragments in AJO](https://experienceleague.adobe.com/docs/journey-optimizer/using/integrations/aem-fragments.html#integrations)
 * [Integration AJO Offers with Content Fragment](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/managing-offers-in-the-offer-library/configure-offers/add-representations#urls)
 * The [AJO External References extension](/help/sites-cloud/administering/content-fragments/extension-content-fragment-external-references.md) 
 
