@@ -8,8 +8,25 @@ solution: Experience Manager Sites
 
 # Content Fragments with Adobe Journey Optimizer {#content-fragments-with-journey-optimizer}
 
-[Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/get-started) helps you deliver connected, contextual, and personalized experiences to your customers. By integrating Adobe Experience Manager (AEM) as a Cloud Service with Adobe Journey Optimizer (AJO), you can reuse AEM content in your AJO outbound channels. For example, you can seamlessly incorporate your [AEM Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md) into your [Journey Optimizer email](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/get-started-email) content. You can also preview the AJO experience directly from inside AEM. The connection between Content Fragments and AJO simplifies the process of accessing and leveraging AEM content, enabling the creation of personalized and dynamic campaigns and journeys.
+[Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/get-started) helps you deliver connected, contextual, and personalized experiences to your customers. By integrating Adobe Experience Manager (AEM) as a Cloud Service with Adobe Journey Optimizer (AJO), you can reuse AEM content in your AJO outbound channels. 
 
+For example, you can:
+
+* seamlessly incorporate your [AEM Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md) into your [Journey Optimizer email](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/get-started-email) content
+* preview the AJO experience directly from inside AEM. 
+
+The connection between Content Fragments and AJO simplifies the process of accessing and leveraging AEM content, enabling the creation of personalized and dynamic campaigns and journeys.
+
+## Further Information {#further-information}
+
+For further details see:
+
+* [Using Content Fragments in AJO](https://experienceleague-review.corp.adobe.com/docs/journey-optimizer/using/integrations/aem-fragments.html#integrations)
+* [Integration AJO Offers with Content Fragment](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/managing-offers-in-the-offer-library/configure-offers/add-representations#urls)
+* The [AJO External References extension](/help/sites-cloud/administering/content-fragments/extension-content-fragment-external-references.md) 
+
+<!-- Original draft text - under review with the AJO team -->
+<!--
 ## Configure AEM {#configure-aem}
 
 For integration, and preparation for use, several steps need to be completed in AEM:
@@ -132,3 +149,4 @@ Be aware that:
 
 * Variations created by you are not considered. Only **Main** is used. 
 * Any Content Fragment that appears in AJO from a connected AEM instance is considered approved and ready for use. There is currently no concept of [Content Fragment status](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments) enforced within AJO.
+-->
