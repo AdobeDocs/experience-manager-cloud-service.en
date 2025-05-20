@@ -2,20 +2,11 @@
 
 ## Introduction
 
-Feature Toggle in AEM lets administrators dynamically enable or disable specific features—ideal for managing Early Adopter and Prerelease features without code changes. As agile and cloud-native practices grow, feature toggles help control releases, improve testing, and simplify deployment. This article explains how to enable them in a local cloud-ready setup for AEM Forms adaptive components.
+Feature Toggle in AEM lets administrators dynamically enable or disable specific features—ideal for managing Early Adopter and Prerelease features without requiring code changes. A Feature Toggle acts as a switch within the application, allowing developers to control feature visibility and behavior at runtime. This is especially useful for gradual rollouts, A/B testing, or turning off unstable features quickly.
 
-## Prerequisites
+As agile and cloud-native practices grow, feature toggles help control releases, improve testing, and simplify deployment.
 
-Before enabling feature toggles in your local cloud-ready setup, ensure the following:
-
-- AEM 6.5 or later is installed and running locally
-- Access to CRX/DE and OSGi Console
-- Basic knowledge of AEM run modes and configurations
-- Permissions to modify OSGi configurations
-
-## What is a Feature Toggle?
-
-A feature toggle is a mechanism that lets you control the availability of features in your application at runtime. Instead of pushing new code every time you want to activate a feature, you can flip a switch through configuration or external services.
+This article explains how to enable them in a local cloud-ready setup that mimics Adobe AEM as a Cloud Service using the SDK and Dispatcher tools, allowing easier local development and testing before deployment.
 
 ## Why Use Feature Toggles in a Cloud-Ready Setup?
 
@@ -29,44 +20,51 @@ When working in a cloud-ready local environment (e.g., containerized AEM setups)
 
 * Reduce risk during deployments and upgrades.
 
+## Prerequisites
+
+Before enabling feature toggles in your local cloud-ready setup, ensure the following:
+
+- Required bundles are active
+
+![Feature Toggle](/help/forms/assets/aem-web-console-bundle.png)
+
+- Permissions to modify OSGi configurations
+
 ### Steps to Enable Feature Toggle Locally
 
 Follow these steps to enable feature toggles in your local AEM cloud-ready instance:
 
-1.  Update the OSGi Configuration
-Navigate to: [Adobe Experience Manager Web Console
-Configuration](http://localhost:4502/system/console/configMgr/com.adobe.aemds.config.FeatureToggleServiceImpl) (http://localhost:4502/system/console/configMgr/com.adobe.aemds.config.FeatureToggleServiceImpl).
+1. Log in to your AEM Forms instance.
+
+1. Navigate to http://<author-instance-url>:portnumber/system/console/configMgr.
+
+1. Search for Adobe Granite Dynamic Toggle Provider in the Configuration Manager.
 
 ![Feature Toggle](/help/forms/assets/aem-web-console-confi.png)
 
-1. Select OSGI -> Bundles
-
-![Feature Toggle](/help/forms/assets/aem-web-console-bundle.png)
-
-2.Search for Adobe Granite Dynamic Toggle Provider in the Configuration Manager.
-
-3.Click the icon  ✏️ .
-4.In the Enabled Toggles section, click➕ .
-5.Add the feature toggle id for the feature as shown in the image below.
-6.Click Save
-
->[!NOTE] You can find the feature toggle id in the document    
-> 
->You can find the feature toggle id in the document specific to the early adopter features..
+1. Click the icon  ✏️ .
+1. In the Enabled Toggles section, click➕ .
 
 ![Feature Toggle](/help/forms/assets/feature-toggle.png)
 
-![Feature Toggle](/help/forms/assets/adaptive-form%202.png)
+1. Add the feature toggle id for the feature as shown in the image below.
+1. Click Save
+
+>[!NOTE] You can find the feature toggle id in the document    
+> 
+>You can find the feature toggle id in the document specific to the early adopter features.
 
 ### Disable Feature Toggle
 
-1. To disable the feature toggle(s) for features whose toggle(s) are enabled, follow the steps below:
+To disable the feature toggle(s) for features whose toggle(s) are enabled, follow the steps below:
 1. Log in to your AEM Forms instance.
-Navigate to http://<author-instance-url>:portnumber/system/console/configMgr.
+1. Navigate to http://<author-instance-url>:portnumber/system/console/configMgr.
 1. Search for Adobe Granite Dynamic Toggle Provider in the Configuration Manager.
 1. Click the icon ✏️.
 1. In the Disabled Toggles section, click ➕.
 1. Add the toggle number for the feature to be disabled.
+
+![Feature Toggle](/help/forms/assets/disable-toggle-feature.png)
 
 ### Technical Consideration
 
