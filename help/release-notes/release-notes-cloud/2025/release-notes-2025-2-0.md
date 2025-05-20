@@ -55,7 +55,7 @@ We will continue enabling the new Spectrum UI-based Content Fragment Editor in A
 
 **Translation HTTP API** 
 
-The AEM Translation HTTP REST API that has been in early adopter mode for a while is now GA. Documentation can be found [here](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/). The API allows automating required steps in the translation management process for content in AEM.
+The AEM Translation HTTP REST API that has been in early adopter mode for a while is now GA. Documentation can be found [here.](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/translation/) The API allows automating required steps in the translation management process for content in AEM.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
