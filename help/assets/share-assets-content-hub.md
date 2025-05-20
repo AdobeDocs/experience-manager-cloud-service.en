@@ -51,11 +51,54 @@ exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
 >
 >[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
-Sharing assets through a link is a convenient way of making the resources available to the [!DNL Content Hub] users. The functionality allows authorized users to access and download the assets shared with them. When downloading assets from a shared link, [!DNL the Content Hub] uses an asynchronous service that offers faster and uninterrupted download.
+Create a shareable link to selected assets to quickly share them with others. As an authorized [!DNL Content Hub] user, select the assets, generate a shareable link, and send it to other authorized or public users. Authorized users must sign in to [!DNL Content Hub] to access and download the shared assets. Public users, as guests, can access and download the shared assets without signing in. [!DNL Content Hub] uses an asynchronous service to download assets from a shared link, ensuring faster and uninterrupted downloads.
 
 ## Prerequisites {#prerequisites}
 
-[Content Hub users](deploy-content-hub.md#onboard-content-hub-users) can perform the actions mentioned in this article.
+You must be an authorized [Content Hub user](deploy-content-hub.md#onboard-content-hub-users) to share assets with other authorized or public users.
+
+## Share assets {#share-assets}
+
+Execute the following steps to share a single asset or multiple assets with authorized or public users.
+1. Navigate to the [!DNL Content Hub] homepage and select the assets to share. You can also select assets available in ![collections](/help/assets/assets/Smock_Collection_18_N.svg) **[!UICONTROL Collections]**.
+1. Select 
+
+1. Navigate to the [!DNL Content Hub] homepage, select a single asset file or multiple asset files and click ![share](/help/assets/assets/share.svg) **[!UICONTROL Share]**. A **[!UICONTROL Share assets]** dialog box displaying a sigle selected asset or a list of multiple selected asset files displays. You can also select and share asset files available in ![collections](/help/assets/assets/Smock_Collection_18_N.svg) **[!UICONTROL Collections]**.
+1. **Optional:** View a single asset or review the list of selected assets available in the dialog box and click ![unselect](/help/assets/assets/Close.svg) to unselct an asset from the list.
+
+See the following sections to share a single asset or multiple assets with [authorized users](#share-assets-with-authorized-users) and [public users](#share-assets-with-public-users). 
+
+### Share assets with authorized users {#share-assets-with-authorized-users}
+
+On the **[!UICONTROL Share assets]** dialog box execute the following steps to share a single selected asset or multiple selected assets with authorized [!DNL Content Hub] users:
+
+1. Click the dropdown in the **[!UICONTROL Period of expiration]** field and select a duration after which the recipient cannot access the selected assets. 
+1. Select **[!UICONTROL Generate share link]** to generate a link and copy it to your clipboard. 
+
+Share this link with your authorized users. See [Preview the shared assets](#Preview-the-shared-assets) to know about the page previewing the shared assets.
+
+### Share assets with public users {#share-assets-with-public-users}
+
+On the **[!UICONTROL Share assets]** dialog box execute the following steps to share a single selected asset or multiple selected assets with public users:
+1. Enable the **[!UICONTROL Public Link]** toggle, click **[!UICONTROL Period of expiration]** and select a duration after which the recipient cannot access the selected assets. 
+1. Click **[!UICONTROL Generate public share link]** to create a sharable link copy it to your clipboard.
+![public link sharing in content hub](/help/assets/assets/share-assets-using-public-link-share.png)
+
+Share this link with public users. See [Preview the shared assets](#Preview-the-shared-assets) to see how the page previewing the shared assets looks like.
+
+## Share an asset from its preview page
+
+Execuet the following steps to share an asset while previewing it:
+
+1. Navigate to the [!DNL Content Hub] homepage and click the asset thumbnail. The asset preview displays with menu options available on the right pane.
+1. Select ![share](/help/assets/assets/share.svg), the **[!UICONTROL Share]** panel displays.
+1. Select a duration after which the recipient cannot access the selected assets and click **[!UICONTROL Generate share link]** to share the link with the authorized users or enable the **[!UICONTROL Public Link]** toggle, select a **[!UICONTROL Period of expiration]** and click **[!UICONTROL Generate public share link]** to create a sharable link to share with the public user.
+
+You can also select assets available in ![collections](/help/assets/assets/Smock_Collection_18_N.svg) **[!UICONTROL Collections]**. 
+
+## Preview the shared assets {#Preview-the-shared-assets}
+
+Click the link to preview the shared assets. A page displaying the selected assets opens. Select the assets and click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** to download them. Double click an asset to see its details.
 
 ## Share a single asset {#share-a-single-asset}
 
