@@ -23,7 +23,7 @@ For further details see:
 
 * [Using Content Fragments in AJO](https://experienceleague.adobe.com/docs/journey-optimizer/using/integrations/aem-fragments.html#integrations)
 * [Integration AJO Offers with Content Fragment](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/managing-offers-in-the-offer-library/configure-offers/add-representations#urls)
-* The [AJO External References extension](/help/sites-cloud/administering/content-fragments/extension-content-fragment-external-references.md) 
+* The [AJO External References extension](/help/sites-cloud/administering/content-fragments/extension-content-fragment-ajo-external-references.md) 
 
 <!-- Original draft text - under review with the AJO team -->
 <!--
