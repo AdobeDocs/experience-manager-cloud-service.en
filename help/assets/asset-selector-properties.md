@@ -88,7 +88,8 @@ You can use the Asset Selector properties to customize the way the Asset Selecto
 | *onFilesChange* | Function | No | | It is a callback function which is used to show the behavior of upload when a file is changed. It passes the new array of files pending for upload and the source type of the upload. Source type can be null in case of error. The syntax is `(newFiles: File[], uploadType: UploadType) => void` |
 | *uploadingPlaceholder* | String | | | It is a placeholder image that replaces the metadata form when an upload of the asset is initiated. The syntax is `{ href: string; alt: string; } `|
 | *uploadConfig* | Object | | | It is an object that contains customized configuration for the upload. |
-| *featureSet* | Array | String | | The `featureSet:[ ]` property is used to enable or disable a particular functionaly in the Asset Selector application. To enable the component or a feature, you can pass a string value in the array or leave the array empty to disable that component. For example, you want to enable upload functionality in the Asset Selector, use the syntax `featureSet:[0:"upload"]`. |
+| *featureSet* | Array | String | | The `featureSet:[ ]` property is used to enable or disable a particular functionaly in the Asset Selector application. To enable the component or a feature, you can pass a string value in the array or leave the array empty to disable that component. For example, you want to enable upload functionality in the Asset Selector, use the syntax `featureSet:[0:"upload"]`. Similarly, you can use `featureSet:[0:"collections"]` to enable collections in the Asset Selector. Addidionally, use `featureSet:[0:"detail-panel"]` to enable [details panel](overview-asset-selector.md#asset-details-and-metadata) of an asset. Also, `featureSet:[0:"dm-renditions"]` to show Dynamic Media renditions of an asset.|
+| *selectedRendition* | Object | | | This property allows users to define and control which renditions of an asset are displayed when the panel is accessed. This customization enhances user experience by filtering out unnecessary renditions and showcasing only the most relevant renditions. For example, `CopyUrlHref` allows you to use Dynamic Media renditions in your Asset Selector application (delivery URL). |
 
 <!--
 | *rootPath* | String | No | /content/dam/ | Folder path from which Asset Selector displays your assets. `rootPath` can also be used in the form of encapsulation. For example, given the following path, `/content/dam/marketing/subfolder/`, Asset Selector does not allow you to traverse through any parent folder, but only displays the children folders. |
@@ -96,3 +97,10 @@ You can use the Asset Selector properties to customize the way the Asset Selecto
 | *expirationDate* | Function | No | | This function is used to set the usability period of an asset. |
 | *disableDefaultBehaviour* | Boolean | No | False | It is a function that is used to enable or disable the selection of an expired asset. You can customize the default behavior of an asset that is set to expire. See [customize expired assets](/help/assets/asset-selector-customization.md#customize-expired-assets). |
 -->
+
+>[!MORELIKETHIS]
+>
+>* [Asset Selector customizations](/help/assets/asset-selector-customization.md)
+>* [Integrate Asset Selector with various applications](/help/assets/integrate-asset-selector.md)
+>* [Integrate Asset Selector with Dynamic Media with OpenAPI capabilities](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [Integrate Asset Selector with third party applications](/help/assets/integrate-asset-selector-non-adobe-app.md)
