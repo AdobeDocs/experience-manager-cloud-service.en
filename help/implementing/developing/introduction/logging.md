@@ -148,7 +148,6 @@ Configure java logging for custom Java packages via OSGi configurations for the 
 |---|---|
 | `org.apache.sling.commons.log.names` | The Java packages for which to collect log statements.  |
 | `org.apache.sling.commons.log.level` | The log level at which to log the Java packages, specified by `org.apache.sling.commons.log.names`  |
-| `org.apache.sling.commons.log.file`| Specify the target for the output: `logs/error.log`|
 
 Changing other LogManager OSGi configuration properties may result in availability issues in AEM as a Cloud Service.
 
