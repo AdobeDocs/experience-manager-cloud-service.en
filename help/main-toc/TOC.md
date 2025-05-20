@@ -433,7 +433,7 @@ user-guide-title: AEM as a Cloud Service
       + [Analyzing Structure](/help/sites-cloud/administering/content-fragments/analysis.md)
       + [Assets in the Content Fragments Console](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
       + [Content Fragments with Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
-      + [Content Fragment External References Extension](/help/sites-cloud/administering/content-fragments/extension-content-fragment-external-references.md)
+      + [Content Fragment AJO External References Extension](/help/sites-cloud/administering/content-fragments/extension-content-fragment-ajo-external-references.md)
       + [Keyboard Shortcuts](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
     + Site Creation {#site-creation}
       + [Creating a New Site](/help/sites-cloud/administering/site-creation/create-site.md)
