@@ -1221,8 +1221,9 @@ user-guide-title: AEM as a Cloud Service
     + Edge Delivery Sites {#edge-delivery-sites}
       + [Introduction to Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
       + [Add an Edge Delivery Site to Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
-      + [Create an Edge Delivery Site in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
+      + [Create Your First Edge Delivery Site with One Click](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
       + [Setup Push Validation for an Edge Delivery site](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
+      + [Configure Your Content Source](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md)
       + [Manage Edge Delivery Sites in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
     + Domain Settings {#custom-domain-names}
       + [Introduction to Domain Settings](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
@@ -1235,9 +1236,9 @@ user-guide-title: AEM as a Cloud Service
       + [Add an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
       + [Troubleshoot SSL Certificate Errors](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
       + [Manage SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-    + Domain Mappings {#cdn-configurations}
-      + [Add a Domain Mapping](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-      + [Manage Domain Mappings](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
+    + Domain Mappings {#domain-mappings}
+      + [Add a Domain Mapping](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)
+      + [Manage Domain Mappings](/help/implementing/cloud-manager/domain-mappings/manage-domain-mappings.md)
     + IP Allow Lists {#ip-allow-lists}
       + [Introduction to IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
       + [Add an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)

@@ -12,7 +12,7 @@ The following section outlines the technical release notes for the current maint
 
 ## Release X {#X}
 
-Summarized below are the continuous improvements for maintenance release X, which was publicly released on May 27, 2025. The previous maintenance release was release 20783.
+Summarized below are the continuous improvements for maintenance release X, which was publicly released on May 27, 2025. The previous maintenance release was release 20936.
 
 The 2025.5.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
