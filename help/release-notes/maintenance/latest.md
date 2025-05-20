@@ -10,68 +10,106 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 20626 {#20626}
+## Release 20936 {#20936}
 
-Summarized below are the continuous improvements for maintenance release 20626, which was publicly released on April 29, 2025. The previous maintenance release was release 20476.
+Summarized below are the continuous improvements for maintenance release 20936, which was publicly released on May 19, 2025. The previous maintenance release was release 20626.
 
 The 2025.5.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-20626}
+>[!NOTE]
+>
+>Release 20783 has been made private on May 19, and has been replaced by release 20936.
 
-* ASSETS-46413, ASSETS-46580: Added a new review status “Preview”.
-* ASSETS-49542: Expansion of supported languages for video and audio transcribe and translate.
-* ASSETS-48264: Expansion of PNG quality support for renditions.
+### Enhancements {#enhancements-20936}
 
-### Fixed Issues {#fixed-issues-20626}
+* FORMS-19125: The Core Component Adaptive Form editor is enhanced to support automatic mapping of available Adaptive Form fragments when a corresponding section from the data source tree is dropped into the form canvas. This brings a key productivity feature from the foundation editor to core components.
+* FORMS-17107: AEM Forms now offers enhanced client-side custom function parsing. This includes support for modern JavaScript features (ECMAScript ES10+), such as optional chaining, and introduces the capability to use static imports within custom function scripts. This allows developers to better organize code, utilize ESM modules, and remove previous limitations encountered with custom functions in Adaptive Forms based on Core Components and Edge Delivery Services, particularly for users who previously required workarounds for these capabilities.
+* SITES-27775: Optimized reference search during publication.
+* SITES-30885: Optimized JSON processing in persisted queries.
+* SITES-25433: Edge Delivery with Universal Editor: Support full page rendering when comparing old versions.
+* SITES-27792: Edge Delivery with Universal Editor: Add specific template for Edge Delivery Service configurations
+* SITES-19754: Edge Delivery with Universal Editor: compelling error message when the setup is broken.
+* SITES-30328: Edge Delivery with Universal Editor: Preview from Sidekick support.
+* SITES-23499: Edge Delivery with Universal Editor: allow multiple fields to be used for block options.
+* SITES-29987: Add capability to set `previewUrlPattern` when creating content fragment models.
+* SITES-29874: Add support for LongTextField references in Content Fragment API.
+* SITES-29601: Add validation for content fragments referenced via LongText fields.
+* SITES-24623: Make ETags returned by GET and SEARCH fragments API usable for patch.
+* SITES-28557: Allow URL parameter `references` in PATCH Content Fragment.
+* SITES-5358: [OpenAPI] Copy Content Fragments with children.
+* SITES-29614: GET workflow endpoint.
+* SITES-29615: List batch requests API endpoint.
+* SITES-25130: Upgrade Core Components to 2.28.0
+* SITES-10575: "MSM Blueprint Bloomfilter Loader" tries to load >100'000 rows.
+* SITES-26711: Links for RTE text fields are not udated to point to the live copy on MSM rollout.
+* SITES-25976: Links inside Experience Fragments not adapting after MSM rollout.
 
-* ASSETS-50387: Correct Content Fragment default thumbnail for use in GenStudio.
-* ASSETS-49006: Display video properties when the user does not have write permissions.
-* ASSETS-46757, ASSETS-46997: Improve Accessibility in the smart crop editor.
-* ASSETS-48018: Improve asset reference tracking in the Assets Publish Report.
-* ASSETS-35846: Improve consistency of access between author and delivery tier.
-* ASSETS-48171: Improve consistency of Dynamic Media Templating with Canvas.
-* ASSETS-49813: Improve Expiration Notification.
-* ASSETS-47768, ASSETS-49825, ASSETS-49008, ASSETS-48287: Improve management and visibility into bulk operations.
-* ASSETS-50003, ASSETS-50004: Improve naming and control over the renditions included in an asset download.
-* ASSETS-47939: Improve organization of responses for Content Hub.
-* ASSETS-46738: Improve performance for very large collections.
-* ASSETS-50121: Improve reliability of asset published events.
-* ASSETS-48490: Improve resiliency of automated processing during image ingestion.
-* ASSETS-28106, ASSETS-49404: Improve robustness of full text searching.
-* ASSETS-50006, ASSETS-50423: Improve search and traversal performance within a large folder.
-* ASSETS-46021: Improve video display for Safari and mobile browsers.
-* ASSETS-49002: Improve handling of editing Dynamic Media Templates.
-* ASSETS-48376: Miscellaneous improvements in Content Hub UI.
-* ASSETS-48504, ASSETS-49378: Miscellaneous improvements to UI behavior.
-* ASSETS-49540: Move Asset Relations OpenAPI out of experimental phase.
-* ASSETS-40284: Update documentation around Adobe Stock integration.
-* ASSETS-49739: Work to integrate Figma from Asset Selector. 
+### Fixed Issues {#fixed-issues-20936}
 
-#### AEM Guides {#guides}
+* ASSETS-50994: Incoming traffic blocked at AemRequestEventFilter.
+* CQ-4358591: Missing Projects for few languages when Language copies are created from sites reference panel with "Create Translation Projects(s)" Option.
+* CQ-4359108: XLIFF 2.0 format is failing while using Human Translation Import/Export.
+* CQ-4358722: Localization is not working for legacy ISO codes due to different locale codes in Java 11 & Java 17.
+* FORMS-19808: When saving a large form which includes fragments enabled with lazy loading, drafts cannot be pulled by the user.
+* FORMS-19887: A drop-down field in an XFA form, initially set to readOnly access, fails to change to an open/editable status when the form is rendered in HTML5. The field remains readOnly and prevents user interaction, unlike in PDF rendering where it functions as expected.
+* FORMS-19651: In the Rule Editor, a rule does not function correctly when a button click is used in a binary condition and the same button is also utilized in the 'then' statement of that rule.
+* FORMS-19628: In auto-generated Document of Record (DoR) for Core Component based Adaptive Forms, excluding a nested panel's title from the DoR also incorrectly hides the root panel's title if the root panel has the 'Allow Rich Text for Title' option enabled.
+* FORMS-18977: PDFs generated by the Document of Record (DoR) service are missing the document title. This can lead to non-compliance with PDF/UA and WCAG 2.1 accessibility standards as the document title is a required attribute for accessible PDFs.
+* FORMS-18526: When a rule containing multiple fields in its conditions is copied from one field to another, a fixed field reference within these conditions incorrectly retains its reference to the original source field instead of updating to the new field where the rule is copied.
+* FORMS-19047: After an Adaptive Form is modified and republished on AEM Forms (specifically 6.5.22.0), translations for certain form elements, particularly text boxes, may be missing.
+* FORMS-19234: The timeline feature for PDFs in AEM Forms, which allows users to view details about a PDF's creation and versioning, stops working after any PDF is uploaded under the 'Forms and Documents' section.
+* FORMS-18196: The `generatePrintedOutput` (or `generatePdfOutput`) sync HTTP API incorrectly returns a 200 (Success) response code instead of the expected 400 (Bad Request) error code when optional field data required by the XDP template is left empty in the request.
+* FORMS-19336: In the Core Component Adaptive Form editor (AF2 editor), the search functionality within the Data Source Tree does not work correctly or as expected, hindering users from easily finding specific data elements.
+* FORMS-17707: The AEP (Adobe Experience Platform) connector is not functioning correctly when configured to connect to AEP platform 'stage' environments.
+* FORMS-18526: When copying a rule that has conditions based on multiple fields, a field referenced within the rule's conditions or actions (that is not the primary field triggering the rule) does not update to correctly reference the new field to which the rule is being copied. Instead, it continues to reference the original source field from where the rule was copied.
+* FORMS-18474: A rule designed to set focus on a specific panel or component when a particular field's value changes (e.g., field 'A') is incorrectly triggered by a change in any field on the form. For instance, if field 'B' is modified, the focus is still set to the designated panel, even though the rule was configured only for changes to field 'A'.
+* GRANITE-58276: OSGi dependency cycles prevent the HTL script engine factory to work correctly.
+* OAK-11673: Oak-segment-azure v12 CPU increase caused by refreshLease.
+* SITES-30752: Do not use `If-modified-since`/`last-modified` headers when generating persisted query response.
+* SITES-30353: GraphQL DataFetchingExceptions for "src" Field in AEM Content Fragments.
+* SITES-30333: Read asset metadata from jcr to avoid xmp parsing problems.
+* SITES-30140: Dual window issue when creating content fragment reference.
+* SITES-29748: Correct renderconditions to show managepublication/quickpublish actions inside the CF editor.
+* SITES-15452: Unique CF elements should not be checked against their copies in the launch.
+* SITES-30386: Edge Delivery with Universal Editor: duplicated UE cors.js causes UE to duplicate sections when adding content.
+* SITES-29745: Fixed an rare issue where variations of references were not hydrated.
+* SITES-30585: Unable to set 'previewUrlPattern' upon creating models with references.
+* SITES-30327: Publishing content fragments without permissions creates separate workflows for each payload resource.
+* SITES-29528: ETag cannot be used for caching on publish instance.
+* SITES-30583: Find & Replace tool changing all characters to lower case.
+* SITES-31157: Patch fails due to inconsistent ETag.
+* SITES-31327: [OpenAPI] Get content fragment request on author instance can respond with 304.
+* SITES-29691: NullPointerException when attempting to Move Page.
+* SITES-30728: OnTime/OffTime does not Publish/UnPublish as expected when configured on asset properties.
+* SITES-29789: Component Link Change on Copied Root Pages in AEM.
+* SITES-29191: Unable to Add More Than 20 SKUs to Product List Component.
+* SITES-30372: Smart Crop not functioning on AEM's Image(V2) core component.
+* SITES-28693: Teaser Component Renders Broken HTML When Title is Empty.
+* SITES-28668: Unable to Promote Launch with LaunchPromotionParameters.
+* SITES-31005: Enhance Rollout Job UI to show the customer the progress.
+* SITES-31020: Enhance Create Live Copy Job UI to show the customer the progress.
+* SITES-29816: "Resource Not Found" Error While Creating Live Copy of Experience Fragment.
+* SITES-29363: Reset live copy button is not working for nested live copy content hierarchy.
+* SITES-31467: JS errors from `contexthub.authoring-hook.js` in the page editor.
+* SKYOPS-106509: Add supplementary add-opens flags to support GSON reflective access on Java 21.
 
-* GUIDES-21734: New IDs fail to generate for elements when such elements are added via snippets or created via templates, even when the auto generate ID option is enabled in XMLEditorConfig.
-* GUIDES-25969: If the `scope=external` attribute is missing from external links in a DITA topic, HTML5 publishing fails without indicating the files where this attribute is missing in the error logs, especially when the microservice is enabled.
-* GUIDES-27288: Unable to pass the metadata properties to map landing pages generated using new AEM Sites publishing.
+### Known Issues {#known-issues-20936}
 
-For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
+* SITES-28030: Start Target option missing on selecting targeting option.
 
-### Known Issues {#known-issues-20626}
-
-None.
-
-### Deprecated Features and APIs {#deprecated-20626}
+### Deprecated Features and APIs {#deprecated-20936}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-20626}
+### Security Fixes {#security-20936}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 11 identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 19 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-20626}
+### Embedded Technologies {#embedded-tech-20936}
 
 |Technology|Version|Link|
 |---|---|---|
-|AEM Oak | 1.78.0|[Oak API 1.78.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.78.0/index.html)| 
+|AEM Oak | 1.78.1-T20250429061757|[Oak API 1.78.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.78.0/index.html)| 
 |AEM SLING API | 2.27.6 |[Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL| 1.4.26-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
 |AEM Core Components| 2.29.0|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|

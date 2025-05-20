@@ -1,17 +1,17 @@
 ---
-title: Add a CDN Configuration
-description: Learn about how to add a CDN configuration for an Edge Delivery site or a Cloud Manager environment.
+title: Add a Domain Mapping
+description: Learn about how to add a domain mapping for an Edge Delivery site or a Cloud Manager environment.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
 ---
 
-# Add a CDN configuration {#add-cdn}
+# Add a domain mapping {#add-domain-mapping}
 
 To link a domain with an SSL certificate on the Adobe-managed CDN within your program, you must add a CDN (Content Delivery Network) configuration.
 
-For Adobe managed CDNs, when using a DV SSL certificate, only sites with ACME validation are permitted. 
+For Adobe managed CDNs, when using a DV SSL certificate, only sites with ACME validation are permitted.
 
 >[!IMPORTANT]
 >
@@ -19,7 +19,7 @@ For Adobe managed CDNs, when using a DV SSL certificate, only sites with ACME va
 
 See also [Adobe Managed CDN](https://www.aem.live/docs/byo-cdn-adobe-managed).
 
-**To add a CDN configuration:**
+**To add a domain mapping:**
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
