@@ -30,7 +30,7 @@ Before enabling feature toggles in your local cloud-ready setup, ensure the foll
 
 - Permissions to modify OSGi configurations
 
-### Steps to Enable Feature Toggle Locally
+### Enable Feature Toggle
 
 Follow these steps to enable feature toggles in your local AEM cloud-ready instance:
 
