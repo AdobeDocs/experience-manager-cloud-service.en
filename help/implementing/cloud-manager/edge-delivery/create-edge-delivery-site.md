@@ -11,9 +11,9 @@ Creating your first Edge Delivery site with one click is designed to help you au
 
 This automation helps reduce the manual effort that is required to set up your initial site. It ensures seamless workflows, scalability, and improves the performance of your teams when it comes to managing content at the edge.
 
-Check out this quick 2-minute video for a step-by-step walkthrough on creating your first Edge Delivery site—no hassle, just one click.
+<!-- Check out this quick 2-minute video for a step-by-step walkthrough on creating your first Edge Delivery site—no hassle, just one click.
 
->[!VIDEO](https://video.tv.adobe.com/v/3458975?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3458975?quality=12&learn=on) -->
 
 
 <!-- >
