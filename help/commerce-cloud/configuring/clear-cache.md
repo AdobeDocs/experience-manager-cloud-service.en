@@ -57,6 +57,11 @@ If everything goes well, the new changes will be reflected in every instance. If
 
 ## Clear Cache Invalidation API {#clear-cache-api}
 
+| Parameter| Value| Required/Mandatory| Comment |
+|---------------------------------|-------------------|---|
+| `Content-Type`                           | `application/json`            | Required | |
+| `Authorization`                      | Corresponding Author's User credentials (Auth Type: Basic Auth)  | Required | Add the corresponding username and password |
+
 ## Extensibility {#clear-cache-extensibility}
 
 This feature not only delivers its core functionality but also offers extensibility, allowing developers to build upon and customize it further as needed.
