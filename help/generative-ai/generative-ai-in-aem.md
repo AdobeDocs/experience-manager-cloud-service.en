@@ -17,6 +17,8 @@ Generative AI is used throughout AEM:
 
 * [Generate Variations - Integrated in AEM Editors](/help/generative-ai/generate-variations-integrated-editor.md)
 
+  Generate Variations uses generative Artificial Intelligence (AI) to create content variations based on your input. After creating variations, you can use the content on your website, and also measure their success using the Experimentation functionality of Edge Delivery Services.
+
   * And the previous version [Generate Variations](/help/generative-ai/generate-variations.md)
 
     >[!NOTE]
@@ -26,6 +28,8 @@ Generative AI is used throughout AEM:
   * [Release Notes for Generate Variations](/help/generative-ai/release-notes-generate-variations.md)
 
 * [Content Hub Overview](/help/assets/product-overview.md)
+
+  Content Hub allows you to create new content with Adobe Express (if you have Adobe Express entitlements). You can edit existing content with easy to use tools, produce on-brand variations with templates and brand elements, and create new content with the latest GenAI capabilities from Adobe Firefly.
 
 <!-- 
   * [AI Assistant in Adobe Experience Manager](/help/implementing/cloud-manager/aem-ai-assistant.md)
