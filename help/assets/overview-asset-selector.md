@@ -208,11 +208,13 @@ To view details of an asset and metadata, execute the steps below:
 
 1. Open Asset Selector MFE and navigate to an asset.
 1. Hover the asset and click ![info icon](/help/assets/assets/info-icon-solid-black.svg).
-1. Go to the **[!UICONTROL Info]** tab to see the asset's details. Otherwise, go to the **[Renditions](#asset-renditions)** tab to see renditions of an asset.
+1. Go to the **[!UICONTROL Info]** tab to see the asset's details. <!--Otherwise, go to the **[Renditions](#asset-renditions)** tab to see renditions of an asset.-->
 
 To customize the details view panel of an asset, see [Customize information in modal view](asset-selector-customization.md#customize-info-in-modal-view).
 
 ![Asset details](assets/asset-details.png)
+
+<!--
 
 #### Asset renditions {#asset-renditions}
 
@@ -235,6 +237,8 @@ Additionally, see [Asset Selector user interface for Dynamic Media with OpenAPI 
 ##### Add modifiers {#modifiers-dm-media-renditions}
 
 Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
+
+-->
 
 ## Learn more on key capabilities {#key-capabilities-asset-selector}
 
