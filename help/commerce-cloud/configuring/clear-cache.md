@@ -34,7 +34,7 @@ To verify that everything is set up properly:
 * Verify that a node has been created under the following path in author instances: `/var/cif/cacheinvalidation`. The node name will follow this pattern: `cmd_{{timestamp}}`.
 * Verify the same node has been created in each publish instances too.
 
-Now, to check whether the cache are getting cleared properly:
+Now, to check whether the caches are getting cleared properly:
 1. Navigate to the corresponding PLP and PDP pages.
 2. Update a product or category name in the commerce engine. The changes will not be reflected in AEM immediately based on cache configurations.
 3. Trigger the servlet API as shown here:
