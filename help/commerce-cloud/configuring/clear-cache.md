@@ -31,7 +31,7 @@ By default, the clear-cache feature will be disabled in CIF configuration. To en
 To verify that everything is set up properly:
 
 * Trigger the corresponding servlet to the Author Instance AEM, for example [http://localhost:4502/bin/cif/invalidate-cache](http://localhost:4502/bin/cif/invalidate-cache) and you should get a 200 HTTP response.
-* Verify that a node has been created under the following path in author instances: `/var/cif/cacheinvalidation'. The node name will follow this pattern: `cmd_{{timestamp}}`.
+* Verify that a node has been created under the following path in author instances: `/var/cif/cacheinvalidation`. The node name will follow this pattern: `cmd_{{timestamp}}`.
 * Verify the same node has been created in each publish instances too.
 
 Now, to check whether the cache are getting cleared properly:
