@@ -4,14 +4,14 @@ description: Learn about Generative AI in Adobe Experience Manager as a Cloud Se
 feature: Generative AI
 role: Admin, Architect, Developer, User
 ---
-# Generative AI in AEM as a Cloud Service {#generative-ai-in-aem-as-a-sloud-service}
+# Generative AI in AEM as a Cloud Service {#generative-ai-in-aem-as-a-cloud-service}
 
 Adobe Generative AI for Adobe Experience Manager (AEM) as a Cloud Service enables brands to create high performance experiences with both copy and image generation all within the editing interface. With generative AI, you can autonomously create content that is:
 
 * Brand aware - Create content that incorporates brand tone of voice, style guidelines and other specific requirements.
-* Personalised by audience - Leverage granular content performance insights to tailor content for any persona across all channels.
-* Region specific - Go beyond translation and adapt your content based on regional preferences and behaviour patterns.
-* Continually optimised - Run experiments to determine which variations perform best and use insights to improve future AI-generated content.
+* Personalized by audience - Leverage granular content performance insights to tailor content for any persona across all channels.
+* Region specific - Go beyond translation and adapt your content based on regional preferences and behavior patterns.
+* Continually optimized - Run experiments to determine which variations perform best and use insights to improve future AI-generated content.
 
 Generative AI is used throughout AEM:
 
