@@ -88,6 +88,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2025 {#2025}
+      + [Maintenance Release Notes for 2025.5.0](/help/release-notes/maintenance/2025/2025-5-0.md)
       + [Maintenance Release Notes for 2025.4.0](/help/release-notes/maintenance/2025/2025-4-0.md)
       + [Maintenance Release Notes for 2025.3.0](/help/release-notes/maintenance/2025/2025-3-0.md)
       + [Maintenance Release Notes for 2025.2.0](/help/release-notes/maintenance/2025/2025-2-0.md)
@@ -116,6 +117,7 @@ user-guide-title: AEM as a Cloud Service
   + Cloud Manager Release Notes {#cloud-manager}
     + [Current](/help/implementing/cloud-manager/release-notes/current.md)
     + 2025 {#2025}
+      + [2025.4.0](/help/implementing/cloud-manager/release-notes/2025/2025-4-0.md)
       + [2025.3.0](/help/implementing/cloud-manager/release-notes/2025/2025-3-0.md)
       + [2025.2.0](/help/implementing/cloud-manager/release-notes/2025/2025-2-0.md)
       + [2025.1.0](/help/implementing/cloud-manager/release-notes/2025/2025-1-0.md)
@@ -757,6 +759,7 @@ user-guide-title: AEM as a Cloud Service
       + [Design XML Schema for an Adaptive Form](/help/forms/adaptive-form-xml-schema-form-model.md)
   + Adaptive Forms {#adaptive-forms-authoring}
     + [Create an Adaptive Form](/help/forms/create-an-adaptive-form.md)
+    + [Which Adaptive Forms are best for you?](/help/edge/docs/forms/authoring-a-form.md) 
     + [Create an Adaptive Form fragment](/help/forms/adaptive-form-fragments.md)
     + [Add an Adaptive Form to an AEM Sites page or Experience Fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
     + Core Components {#authoring-adaptive-forms-core-components}
@@ -795,18 +798,18 @@ user-guide-title: AEM as a Cloud Service
         + [Email Templates in Adaptive Forms](/help/forms/html-email-templates-in-adaptive-forms.md)
         + [​Manage Publication in Experience Manager Forms](/help/forms/manage-publication.md)
         + Introduction to Rule Editor for Adaptive Forms based on Core Components{#rule-editor-core-components}
-             +  [Introduction to Rule Editor for Adaptive Forms based on Core Components](/help/forms/rule-editor-core-components.md)
-             +  [Rule Editor user interface for Adaptive Forms based on Core Components](/help/forms/rule-editor-core-components-user-interface.md)
-              +  [Difference between Foundation Rule Editor and Core Component Rule Editor](/help/forms/rule-editor-core-components-difference-tables.md)
-              +  [Operator and events types available in rule editor for an Adaptive Form based on Core Components](/help/forms/rule-editor-core-components-events-operators.md)
-              +  [Examples for a Rule Editor for an Adaptive Form Based on Core Components](/help/forms/rule-editor-core-components-usecases.md)
-              +  [Using asynchronous functions in an Adaptive Form](/help/forms/using-async-funct-in-rule-editor.md)
-              +  [Invoke Service enhancements in the Visual Rule Editor for forms based on Core Components](/help/forms/invoke-service-enhancements-rule-editor.md)
-        +  Introduction to Custom Functions for Adaptive Forms based on Core Components{#create-and-use-custom-function-core-component}
-           +  [Introduction to Custom Functions for Adaptive Forms based on Core Components](/help/forms/create-and-use-custom-functions.md)
-           +  [Create and use a Custom Function for an Adaptive Form based on Core Components](/help/forms/custom-function-core-component-create-function.md)
-           +  [Scope object in custom functions](/help/forms/custom-function-core-component-scope-function.md)
-           +  [Examples of Custom Functions for an Adaptive Form Based on Core Components](/help/forms/custom-function-core-components-use-cases.md)
+          + [Introduction to Rule Editor for Adaptive Forms based on Core Components](/help/forms/rule-editor-core-components.md)
+          + [Rule Editor user interface for Adaptive Forms based on Core Components](/help/forms/rule-editor-core-components-user-interface.md)
+          + [Difference between Foundation Rule Editor and Core Component Rule Editor](/help/forms/rule-editor-core-components-difference-tables.md)
+          + [Operator and events types available in rule editor for an Adaptive Form based on Core Components](/help/forms/rule-editor-core-components-events-operators.md)
+          + [Examples for a Rule Editor for an Adaptive Form Based on Core Components](/help/forms/rule-editor-core-components-usecases.md)
+          + [Using asynchronous functions in an Adaptive Form](/help/forms/using-async-funct-in-rule-editor.md)
+          + [Invoke Service enhancements in the Visual Rule Editor for forms based on Core Components](/help/forms/invoke-service-enhancements-rule-editor.md)
+        + Introduction to Custom Functions for Adaptive Forms based on Core Components{#create-and-use-custom-function-core-component}
+          + [Introduction to Custom Functions for Adaptive Forms based on Core Components](/help/forms/create-and-use-custom-functions.md)
+          + [Create and use a Custom Function for an Adaptive Form based on Core Components](/help/forms/custom-function-core-component-create-function.md)
+          + [Scope object in custom functions](/help/forms/custom-function-core-component-scope-function.md)
+          + [Examples of Custom Functions for an Adaptive Form Based on Core Components](/help/forms/custom-function-core-components-use-cases.md)
         + Introduction to Forms Portal and its components{#introduction-to-forms-portal}
           + [Introduction to Forms Portal component](/help/forms/configure-forms-portal.md)
           +  [List forms on the Sites page using the Search & Lister component](/help/forms/list-forms-on-sites-page.md)
@@ -1220,8 +1223,9 @@ user-guide-title: AEM as a Cloud Service
     + Edge Delivery Sites {#edge-delivery-sites}
       + [Introduction to Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
       + [Add an Edge Delivery Site to Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
-      + [Create an Edge Delivery Site in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
+      + [Create Your First Edge Delivery Site with One Click](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
       + [Setup Push Validation for an Edge Delivery site](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
+      + [Configure Your Content Source](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md)
       + [Manage Edge Delivery Sites in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
     + Domain Settings {#custom-domain-names}
       + [Introduction to Domain Settings](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
@@ -1234,9 +1238,9 @@ user-guide-title: AEM as a Cloud Service
       + [Add an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
       + [Troubleshoot SSL Certificate Errors](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
       + [Manage SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-    + CDN Configurations {#cdn-configurations}
-      + [Add a CDN Configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-      + [Manage CDN Configurations](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
+    + Domain Mappings {#domain-mappings}
+      + [Add a Domain Mapping](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)
+      + [Manage Domain Mappings](/help/implementing/cloud-manager/domain-mappings/manage-domain-mappings.md)
     + IP Allow Lists {#ip-allow-lists}
       + [Introduction to IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
       + [Add an IP Allow List](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)

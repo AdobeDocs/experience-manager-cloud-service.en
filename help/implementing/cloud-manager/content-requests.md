@@ -14,6 +14,10 @@ Content requests include requests sent to AEM Sites. These requests may route th
 
 The system counts content requests when a user views a page using HTML or JSON. It measures the request at the point where the first caching system receives it. Certain HTTP requests are included or excluded for purposes of counting content requests. See the full list of HTTP [included content requests](#included-content-requests) and [excluded content requests](#excluded-content-request).
 
+>[!NOTE]
+>
+>Data shown in the Content Requests view is refreshed every 24 hours.
+
 ## About Cloud Service content requests {#understanding-cloud-service-content-requests}
 
 A *page request* refers to an HTTP request that retrieves core structured content (for example, HTML or JSON) necessary to render the main page experience. It does not include requests for assets, such as images or scripts.
