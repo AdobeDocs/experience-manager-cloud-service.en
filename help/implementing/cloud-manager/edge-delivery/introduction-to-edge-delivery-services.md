@@ -37,7 +37,9 @@ Maximize your benefits from Adobe by accessing and consuming your Edge Delivery 
 * [Access SLA reporting](/help/implementing/cloud-manager/sla-reporting.md) (*coming soon*)
 * [Gain access to Adobe support](/help/edge/overview.md#support-ticket) for your registered production programs.
 
-In addition, using Cloud Manager lets you use [Adobe managed CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) for your Edge Delivery site and take advantage of key benefits such as self-service CDN management, including the configuration and addition of DV certificates. Additionally, after a DV certificate is created, Adobe renews it automatically every three months, unless it is deleted. If you do not have an Edge Delivery Services license with Adobe and choose to use your own self-managed CDN, that setup must run on the [`aem.live` platform](https://www.aem.live/docs/go-live-checklist#cdn-configuration).
+If you have an Edge Delivery Services (EDS) license, you can use an [Adobe managed CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) for your Edge Delivery site and take advantage of features like self-service CDN management and automatic renewal of DV certificates every three months, unless it is deleted. 
+
+Alternatively, if you choose to use your CDN (that is, a non-Adobe-managed CDN), regardless of your Edge Delivery Services licensing, you must configure it on the `aem.live` platform. See [BYO CDN Setup](https://www.aem.live/docs/byo-cdn-setup). 
 
 
 ## About adding Edge Delivery Services to a production program or sandbox program
