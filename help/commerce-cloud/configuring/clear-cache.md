@@ -63,7 +63,7 @@ This feature not only delivers its core functionality but also offers extensibil
 
 ### Extending the Existing Attribute {#existing-attribute}
 
-In cases where the cache needs to be cleared that are not currently covered by the existing attribute-based functionality (such as `categoryUids`), you can refer to [this reference file](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/ExtendedCategoryUidInvalidation.java.
+In cases where the cache needs to be cleared that are not currently covered by the existing attribute-based functionality (such as `categoryUids`), you can refer to [this reference file](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/ExtendedCategoryUidInvalidation.java
 ) to add new patterns and define additional `invalidatePaths` that should be cleared from the cache beyond what the current implementation handles.
 
 ### Adding New Custom Attribute {#new-custom-attribute}
