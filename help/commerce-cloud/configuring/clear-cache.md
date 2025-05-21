@@ -28,6 +28,50 @@ By default, the clear-cache feature will be disabled in CIF configuration. To en
 
 ## Verifying Clear Cache Feature {#verify-clear-cache}
 
+To verify that everything is set up properly:
+
+* Trigger the corresponding servlet to the Author Instance AEM, for example [http://localhost:4502/bin/cif/invalidate-cache](http://localhost:4502/bin/cif/invalidate-cache) and you should get a 200 HTTP response.
+* Verify that a node has been created under the following path in author instances: `/var/cif/cacheinvalidation'. The node name will follow this pattern: `cmd_{{timestamp}}`.
+* Verify the same node has been created in each publish instances too.
+
+Now, to check whether the cache are getting cleared properly:
+1. Navigate to the corresponding PLP and PDP pages.
+2. Update a product or category name in the commerce engine. The changes will not be reflected in AEM immediately based on cache configurations.
+3. Trigger the servlet API as shown here:
+   ```
+   curl --location '{Author AEM Instance Url}/bin/cif/invalidate-cache' \
+   --header 'Content-Type: application/json' \
+   --header 'Authorization: ••••••' \ // Mandatory
+   --header 'Cookie: private_content_version=0299c5e4368a1577a6f454a61370317b' \
+   --data '{
+       "productSkus": ["Sku1", "Sku2"], // Optional: Pass the corresponding sku which got updated
+       "categoryUids":["CategoryUid"], // Optional : Pass the corresponding category-uid which got updated.
+       "storePath": "/content/venia/us/en", // Mandatory : Needs to given in order to know for which site we are removing the clear cache
+   }'
+   ```
+If everything goes well, the new changes will be reflected in every instance. If changes are not reflected for the publish instance, please check in the private window for corresponding PLP and PDP pages.
+
+>[!NOTE]
+>
+> Publish instances can have multiple level of cache layers. The feature is only responsible for clear cache from AEM internal memory and dispatcher. 
+
 ## Clear Cache Invalidation API {#clear-cache-api}
 
 ## Extensibility {#clear-cache-extensibility}
+
+This feature not only delivers its core functionality but also offers extensibility, allowing developers to build upon and customize it further as needed.
+
+### Extending the Existing Attribute {#existing-attribute}
+
+In cases where the cache needs to be cleared that are not currently covered by the existing attribute-based functionality (such as `categoryUids`), you can refer to [this reference file](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/ExtendedCategoryUidInvalidation.java.
+) to add new patterns and define additional `invalidatePaths` that should be cleared from the cache beyond what the current implementation handles.
+
+### Adding New Custom Attribute {#new-custom-attribute}
+
+If for example you don't want to use the existing attribute for clearing the cache, then you have the flexibility to create your own attribute and define its corresponding functionality.
+
+* If you only need to clear cache from the internal memory of AEM (the graphql response), then you need to follow [this reference](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/CustomInvalidation.java).
+* If you need to clear cache from the internal memory and the dispatcher cache, then you need to follow [this reference](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/CustomDispatcherInvalidation.java).
+   >[!NOTE]
+   >
+   > You can ignore the internal clear cache by returning `null` for the `getPatterns()` method.
