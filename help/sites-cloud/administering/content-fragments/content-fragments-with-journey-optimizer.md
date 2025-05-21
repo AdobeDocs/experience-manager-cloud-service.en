@@ -83,9 +83,9 @@ You can now [use your fragment in AJO](https://experienceleague.adobe.com/en/doc
 
 To preview AJO experiences from AEM, you need to enable the UI extension:
 
-* Fragment External References 
+* AJO External References 
 
-The Fragment External References extension functions by fetching references to Content Fragment from all AJO organizations and sandboxes associated with the AJO-enabled tags. The extension then shows details, dependent on whether the reference is a Campaign, a Journey or a Template.
+The AJO External References extension functions by fetching references to Content Fragment from all AJO organizations and sandboxes associated with the AJO-enabled tags. The extension then shows details, dependent on whether the reference is a Campaign, a Journey or a Template.
 
 >[!NOTE]
 >
@@ -99,9 +99,9 @@ To use the extension:
 
 1. Open your Content Fragment in the [editor](/help/sites-cloud/administering/content-fragments/managing.md#editing-the-content-of-your-fragment).
 
-1. The Fragment External References extension is available as a tab in the right panel. Select the tab to open the extension:
+1. The AJO External References extension is available as a tab in the right panel. Select the tab to open the extension:
 
-   ![Fragment External References extension](/help/sites-cloud/administering/content-fragments/assets/cf-ajo-fragment-external-references-extension.png)
+   ![AJO External References extension](/help/sites-cloud/administering/content-fragments/assets/cf-ajo-fragment-external-references-extension.png)
 
    Once a reference type is selected the extension displays the corresponding external references as a table with the columns: 
 
