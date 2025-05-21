@@ -1,6 +1,6 @@
 ---
-title: Using the Fragment External References Extension
-description: Learn about the Content Fragment External References Extension
+title: Using the Content Fragments AJO External References Extension
+description: Learn about the Content Fragment AJO External References Extension
 feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
@@ -32,9 +32,9 @@ For example, to use the extension with AJO:
 
 1. Open your Content Fragment in the [editor](/help/sites-cloud/administering/content-fragments/managing.md#editing-the-content-of-your-fragment).
 
-1. The Fragment External References extension is available as a tab in the right panel. Select the tab to open the extension:
+1. The AJO External References extension is available as a tab in the right panel. Select the tab to open the extension:
 
-   ![Fragment External References extension](/help/sites-cloud/administering/content-fragments/assets/cf-ajo-fragment-external-references-extension.png)
+   ![AJO External References extension](/help/sites-cloud/administering/content-fragments/assets/cf-ajo-fragment-external-references-extension.png)
 
    Once a reference type is selected the extension displays the corresponding external references as a table with the columns: 
 
