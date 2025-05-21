@@ -9,7 +9,7 @@ exl-id: b298db37-1033-4849-bc12-7db29fb77777
 
 In Adobe Experience Manager (AEM) as a Cloud Service, the AEM OpenAPI for Content Fragment Delivery:
 
-* is a HTTP REST API on [AEM Edge Delivery Services](/help/edge/overview.md), designed to deliver structured content from Content Fragments in JSON format
+* is an OpenAPI that is optimized for live delivery of AEM Content Fragments in JSON format
 * offers a modern CDN integration that allows active content invalidation 
 * focuses on content delivery (performance, scalability, CDN integration, optimized JSON control and output) 
 * includes the ability to hydrate JSON for referenced fragments and assets
