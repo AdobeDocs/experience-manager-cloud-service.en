@@ -2,11 +2,9 @@
 
 ## Introduction
 
-Feature Toggle in AEM lets administrators dynamically enable or disable specific features—ideal for managing Early Adopter and Prerelease features without requiring code changes. A Feature Toggle acts as a switch within the application, allowing developers to control feature visibility and behavior at runtime. This is especially useful for gradual rollouts, A/B testing, or turning off unstable features quickly.
+Feature Toggle in AEM allows administrators to enable or disable features at runtime—ideal for managing Early Adopter and Prerelease features without code changes. It supports gradual rollouts, A/B testing, and quick deactivation of unstable features.
 
-As agile and cloud-native practices grow, feature toggles help control releases, improve testing, and simplify deployment.
-
-This article explains how to enable them in a local cloud-ready setup that mimics Adobe AEM as a Cloud Service using the SDK and Dispatcher tools, allowing easier local development and testing before deployment.
+This article covers how to enable feature toggles in a local cloud-ready setup, which simulates AEM as a Cloud Service using the SDK and Dispatcher. This setup helps teams test in a production-like environment before deploying to the cloud.
 
 ## Why Use Feature Toggles in a Cloud-Ready Setup?
 
@@ -26,7 +24,7 @@ Before enabling feature toggles in your local cloud-ready setup, ensure the foll
 
 - Required bundles are active
 
-![Feature Toggle](/help/forms/assets/aem-web-console-bundle.png)
+    ![Feature Toggle](/help/forms/assets/aem-web-console-bundle.png)
 
 - Permissions to modify OSGi configurations
 
@@ -40,12 +38,12 @@ Follow these steps to enable feature toggles in your local AEM cloud-ready insta
 
 1. Search for Adobe Granite Dynamic Toggle Provider in the Configuration Manager.
 
-![Feature Toggle](/help/forms/assets/aem-web-console-confi.png)
+    ![Feature Toggle](/help/forms/assets/aem-web-console-confi.png)
 
 1. Click the icon  ✏️ .
 1. In the Enabled Toggles section, click➕ .
 
-![Feature Toggle](/help/forms/assets/feature-toggle.png)
+    ![Feature Toggle](/help/forms/assets/feature-toggle.png)
 
 1. Add the feature toggle id for the feature as shown in the image below.
 1. Click Save
@@ -64,15 +62,8 @@ To disable the feature toggle(s) for features whose toggle(s) are enabled, follo
 1. In the Disabled Toggles section, click ➕.
 1. Add the toggle number for the feature to be disabled.
 
-![Feature Toggle](/help/forms/assets/disable-toggle-feature.png)
+    ![Feature Toggle](/help/forms/assets/disable-toggle-feature.png)
 
 ### Technical Consideration
 
-Feature toggles are runtime-managed and best suited for development or testing setups. Adobe recommends limiting their use in production unless needed for controlled rollouts. 
-
-In a local cloud-ready setup, ensure toggles are version-controlled and synced with CI/CD. Page refresh or cache clearing may be needed for changes to reflect.
-
-## Conclusion
-Enabling feature toggles in a local cloud-ready setup empowers teams to build and test flexibly without compromising stability. In the case of AEM's Adaptive Forms Core Components, Adobe's feature toggle framework offers a controlled, scalable way to introduce new features with minimal risk.
-
-Whether you're working in Adobe's ecosystem or any other modern cloud-ready stack, feature toggles are essential tools for safer and faster innovation.
+Feature toggles are runtime-managed and best suited for development or testing setups. In a local cloud-ready setup, ensure toggles are version-controlled and synced with CI/CD. Page refresh or cache clearing may be needed for changes to reflect.
