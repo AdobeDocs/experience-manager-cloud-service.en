@@ -11,7 +11,7 @@ role: Admin, Architect, Developer
 Edge Delivery Services is a composable set of services that allows for a high degree of flexibility in how you author content on your website. This ability lets you do the following:
 
 * Create fast sites with a perfect Lighthouse Score.
-* Continuously monitor performance through RUM (Real Use Monitoring).
+* Continuously monitor performance through Operational Telemetry.
 * Increase authoring efficiency by decoupling content sources.
 
 You can use both AEM content management and WYSIWYG authoring using the Universal Editor and document-based authoring.
