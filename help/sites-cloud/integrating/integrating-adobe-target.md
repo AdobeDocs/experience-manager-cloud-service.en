@@ -21,6 +21,10 @@ For the export of Experience Fragments and/or Content Fragments to Target, you n
 >
 >Customers who do not have an existing Target account, can request access to the Target Foundation Pack for Experience Cloud. The Foundation Pack provides volume limited use of Target.
 
+>[!NOTE]
+>
+>See also the Adobe Target documentation: [Integrate Target with Adobe Experience Manager (AEM)](https://experienceleague.adobe.com/en/docs/target/using/integrate/aem/aem-target-integration).
+
 ## Creating the Adobe Target Configuration {#create-configuration}
 
 1. Navigate to **Tools** → **Cloud Services**.
