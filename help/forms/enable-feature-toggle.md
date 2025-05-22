@@ -38,7 +38,7 @@ Follow these steps to enable feature toggles in your local AEM cloud-ready insta
 
 1. Log in to your AEM Forms instance.
 
-1. Navigate to http://<author-instance-url>:portnumber/system/console/configMgr.
+1. Navigate to `http://author-instance-url:portnumber/system/console/configMgr`.
 
 1. Search for Adobe Granite Dynamic Toggle Provider in the Configuration Manager.
 
@@ -51,16 +51,17 @@ Follow these steps to enable feature toggles in your local AEM cloud-ready insta
 
 1. Click Save
 
->[!NOTE] You can find the feature toggle id in the document    
-> 
->You can find the feature toggle id in the document specific to the early adopter features.
+>[!NOTE] 
+>
+> You can find the feature toggle id in the document specific to the early adopter features.    
+
 
 ### Disable Feature Toggle
 
 To disable the feature toggle(s) for features whose toggle(s) are enabled, follow the steps below:
 
 1. Log in to your AEM Forms instance.
-1. Navigate to http://<author-instance-url>:portnumber/system/console/configMgr.
+1. Navigate to `http://author-instance-url:portnumber/system/console/configMgr`.
 1. Search for Adobe Granite Dynamic Toggle Provider in the Configuration Manager.
 1. Click the icon ✏️.
 1. In the Disabled Toggles section, click ➕.
