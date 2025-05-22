@@ -249,6 +249,7 @@ user-guide-title: AEM as a Cloud Service
   + [AEM as a Cloud Service Security Considerations](/help/security/security-considerations.md)
   + [JWT Credentials Deprecation in Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
   + [Setting Up IMS Integrations for AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
+  + [Principal View for Permissions Management](/help/security/touch-ui-principal-view.md)
   + [Best Practices for Sling Service User Mapping and Service User Definition](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
   + [Customer Managed Keys for Adobe as a Cloud Service](/help/security/customer-managed-keys.md)
 + Onboarding {#onboarding}
