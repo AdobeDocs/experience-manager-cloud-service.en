@@ -489,7 +489,7 @@ user-guide-title: AEM as a Cloud Service
     + [Exporting Content Fragments to Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
     + [Exporting Experience Fragments to Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
     + [Integrating with Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-  + [Operational Telemetry for AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-monitoring-for-aem-as-a-cloud-service.md)
+  + [Operational Telemetry for AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
   + [Overview and what's new](/help/assets/overview.md)
   + [Notable Changes to [!DNL Assets] as a [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
