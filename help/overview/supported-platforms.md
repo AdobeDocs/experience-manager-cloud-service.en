@@ -29,7 +29,7 @@ Adobe defines the following levels of support for AEM's client platforms.
 
 The AEM user interface is optimized for larger screens found in notebooks, desktop computers, and tablet devices (such as Apple iPad or Microsoft Surface). The phone form factor is not supported for any authoring use case.
 
-The Adobe Experience Manager user interface works with the following client platforms depending on [authoring method.](/help/edge/authoring-methods.md)
+The Adobe Experience Manager user interface works with the following client platforms depending on [authoring method.](/help/edge/overview.md#authoring-method)
 
 * [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
 * [Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md)
