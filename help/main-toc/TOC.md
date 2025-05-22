@@ -489,7 +489,7 @@ user-guide-title: AEM as a Cloud Service
     + [Exporting Content Fragments to Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
     + [Exporting Experience Fragments to Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
     + [Integrating with Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-  + [Real Use Monitoring for AEM as a Cloud Service](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)
+  + [Operational Telemetry for AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-monitoring-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
   + [Overview and what's new](/help/assets/overview.md)
   + [Notable Changes to [!DNL Assets] as a [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
@@ -1072,7 +1072,7 @@ user-guide-title: AEM as a Cloud Service
       + [Make Your Form Global: Form Translation Guide](/help/edge/docs/forms/translate-forms.md)
       + [Protect Your Forms: Adding reCAPTCHA Security](/help/edge/docs/forms/recaptacha-forms.md)
       + [Build Custom Form Components: Developer's Guide](/help/edge/docs/forms/custom-components-forms.md)
-      + [Monitor Form Performance: Real Use Monitoring Guides](/help/edge/docs/forms/real-use-monitoring-for-forms.md)     
+      + [Monitor Form Performance: Operational Telemetry Guides](/help/edge/docs/forms/operational-telemetry-for-forms.md)     
   + Edge Delivery Resources {#resources}
     + Sidekick {#sidekick}
       + [Using Sidekick](/help/edge/docs/sidekick.md)
