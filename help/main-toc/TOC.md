@@ -1161,8 +1161,8 @@ user-guide-title: AEM as a Cloud Service
       + [Learn about defining Metadata and Tagging for Content Fragments](/help/journey-headless/author/metadata-tagging.md)
 + Generative AI {#generative-ai}
   + [Generative in AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
-  + [Generate Variations](/help/generative-ai/generate-variations.md)
   + [Generate Variations - Integrated in AEM Editors](/help/generative-ai/generate-variations-integrated-editor.md)
+  + [Generate Variations](/help/generative-ai/generate-variations.md)
   + [Assistant (Limited Beta)](/help/implementing/cloud-manager/aem-ai-assistant.md)
 + Implementing {#implementing}
   + [Implementing Applications for AEM as a Cloud Service](/help/implementing/home.md)
