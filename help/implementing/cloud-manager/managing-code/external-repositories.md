@@ -1,21 +1,27 @@
 ---
-title: Add External Repositories in Cloud Manager - Early Adopter
-description: Learn how to add an external repository into Cloud Manager. Cloud Manager supports integration with GitHub Enterprise, GitLab, and Bitbucket repositories.
+title: Add External Repositories in Cloud Manager
+description: Learn how to add an external repository into Cloud Manager. Cloud Manager supports integration with GitHub Enterprise, GitLab, Bitbucket, and Azure DevOps repositories.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
+badge: label="Early Adopter" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket" 
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
 ---
-# Add external repositories in Cloud Manager - Early Adopter {#external-repositories}
+# Add external repositories in Cloud Manager {#external-repositories}
 
 Learn how to add an external repository into Cloud Manager. Cloud Manager supports integration with GitHub Enterprise, GitLab, and Bitbucket repositories.
 
+Customers can now also onboard their Azure DevOps Git repositories into Cloud Manager, with support for both modern Azure DevOps and legacy VSTS (Visual Studio Team Services) repositories.
+
+* For Edge Delivery Services users, the onboarded repository can be used to sync and deploy site code.
+* For AEM as a Cloud Service and Adobe Managed Services (AMS) users, the repository can be linked to both full-stack and frontend pipelines.
+'
 >[!NOTE]
 >
 >The features described in this article are only available through the early adoption program. For more details and to sign up as an early adopter, see [Bring Your Own Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
 
 ## Configure an external repository
 
-Configuration of an external repository in Cloud Manager consists of three steps:
+Configuration of an external repository in Cloud Manager consists of the following steps:
 
 1. [Add an external repository](#add-external-repo) to a selected program.
 1. Provide an access token to the external repository.
@@ -53,7 +59,7 @@ Configuration of an external repository in Cloud Manager consists of three steps
     | --- | --- |
     | **Repository Name** | Required. An expressive name for your new repository. | 
     | **Repository URL** | Required. The URL of the repository.<br><br>If you are using a GitHub-hosted repository, the path must end in `.git`.<br>For example, *`https://github.com/org-name/repo-name.git`* (URL path is for illustration purposes only).<br><br>If you are using an external repository, it must use the following URL path format:<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> or<br>`https://self-hosted-domain/org-name/repo-name.git`<br>And match your Git vendor. |
-    | **Select Repository Type** | Required. Select the repository type that you are using:<ul><li>**GitHub** (GitHub Enterprise and the self-hosted version of GitHub)</li><li>**GitLab** (both `gitlab.com` and the self-hosted version of GitLab) </li><li>**Bitbucket** (only `bitbucket.org` (cloud version) is supported. The self-hosted version of Bitbucket was deprecated starting February 15, 2024.)</li></ul>If the repository URL path above includes the Git vendor name, such as GitLab or Bitbucket, the repository type is already pre-selected for you. |
+    | **Select Repository Type** | Required. Select the repository type that you are using. If the repository URL path includes the Git vendor name, such as GitLab or Bitbucket, the repository type is already pre-selected for you.:<ul><li>**GitHub** (GitHub Enterprise and the self-hosted version of GitHub)</li><li>**GitLab** (both `gitlab.com` and the self-hosted version of GitLab) </li><li>**Bitbucket** (only `bitbucket.org` - cloud version) is supported. The self-hosted version of Bitbucket was deprecated starting February 15, 2024.)</li><li>**Azure DevOps** (`dev.azure.com`) </ul> |
     | **Description** | Optional. A detailed description of the repository. |
 
 1. Select **Save** to add the repository.
@@ -69,10 +75,11 @@ Configuration of an external repository in Cloud Manager consists of three steps
     | **Add new Access Token** |**Repository type: GitHub Enterprise**<br><ul><li> In the **Token Name** text field, type a name for the access token you are creating.<li>Create a personal access token by following the instructions in the [GitHub documentation](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<li>Required permissions for the GitHub Enterprise Personal Access Token (PAT)<br>These permissions ensure that Cloud Manager can validate pull requests, manage commit status checks, and access necessary repo details.<br>When you generate the PAT in GitHub Enterprise, make sure it includes the following repository permissions:<ul><li>Pull request (read and write)<li>Commit statuses (read and write)<li>Repository metadata (read-only)</li></li></ul></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. |
     | | **Repository type: GitLab**<ul><li>In the **Token Name** text field, type a name for the access token you are creating.<li>Create a personal access token by following the instruction in the [GitLab documentation](https://docs.gitlab.com/user/profile/personal_access_tokens/).<li>Required permissions for the GitLab Personal Access Token (PAT)<br>These scopes allow Cloud Manager to access repository data and user information as needed for validation and webhook integration.<br>When you generate the PAT in GitLab, make sure it includes the following token scopes:<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. | 
     | |**Repository type: Bitbucket**<ul><li>In the **Token Name** text field, type a name for the access token you are creating.<li>Create a repository access token using the [Bitbucket documentation](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Required permissions for the Bitbucket Personal Access Token (PAT)<br>These permissions allow Cloud Manager to access repository content, manage pull requests, and configure or react to webhook events.<br>When you create the app password in Bitbucket, make sure it includes the following required app password permissions:<ul><li>Repository (read-only)<li>Pull requests (read and write)<li>Webhooks (read and write)</li></li></ul></li></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. |
+    | |**Repository type: Azure DevOps**<ul><li>In the **Token Name** text field, type a name for the access token you are creating.<li>Create a repository access token using the [Azure DevOps documentation](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows).<li>Required permissions for the Azure DevOps Personal Access Token (PAT).<br>These permissions allow Cloud Manager to access repository content, manage pull requests, and configure or react to webhook events.<br>When you create the app password in Azure DevOps, make sure it includes the following required app password permissions:<ul><li>Repository (read-only)</li></ul></li></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. |
 
-    >[!NOTE]
+    >[!IMPORTANT]
     >
-    >The feature **Add new Access Token** is currently in the Early Adopters phase. Additional functionalities are being planned. As a result, the required permissions for access tokens may change. Additionally, the user interface for managing tokens may be updated, potentially including features like token expiration dates. And, automated checks to ensure that tokens linked to repositories remain valid. 
+    >The feature **Add new Access Token** is currently in the Early Adopter phase. Additional functionalities are being planned. As a result, the required permissions for access tokens may change. Additionally, the user interface for managing tokens may be updated, potentially including features like token expiration dates. And, automated checks to ensure that tokens linked to repositories remain valid. 
 
 1. Click **Validate**.
 
@@ -81,9 +88,11 @@ After validation, the external repository is ready to use and link to a pipeline
 ## Link a validated external repository to a pipeline {#validate-ext-repo}
 
 1. Add or edit a pipeline:
-    * [Add a production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
-    * [Add a non-production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+    * [Add a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+    * [Add a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
     * [Edit a pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#editing-pipelines)
+
+   <!-- Add an Edge Delivery Pipeline -->
 
     ![Pipeline's source code repository and Git branch](/help/implementing/cloud-manager/managing-code/assets/pipeline-repo-gitbranch.png)
     *Add Non-Production Pipeline dialog box with selected repository and Git branch,*  
@@ -156,6 +165,7 @@ For all other external repositories that are onboarded with an access token, suc
     | GitHub Enterprise | These events allow Cloud Manager to respond to GitHub activity, such as pull request validation, push-based triggers for pipelines, or Edge Delivery Services code sync.<br>Make sure that the webhook is set up to trigger on the following required webhook events:<ul><li>Pull requests<li>Pushes<li>Issue comments</li></li></li></ul></ul></ul> |
     | GitLab | These webhook events allow Cloud Manager to trigger pipelines when code is pushed or a merge request is submitted. They also track comments related to pull request validation (through note events).<br>Make sure that the webhook is set up to trigger on the following required webhook events<ul><li>Push events<li>Merge request events<li>Note events</li></li></li></ul></ul></ul> | 
     | Bitbucket | These events ensure that Cloud Manager can validate pull requests, respond to code pushes, and interact with comments for pipeline coordination.<br>Make sure that the webhook is set up to trigger on the following required webhook events<ul><li>Pull request: Created<li>Pull request: Updated<li>Pull requests: Merged<li>Pull request: Comment<li>Repository: Push</li></li></li></ul></ul></ul> |
+    | Azure DevOps | These events ensure that Cloud Manager can validate pull requests, respond to code pushes, and interact with comments for pipeline coordination.<br>Make sure that the webhook is set up to trigger on the following required webhook events<ul><li>Repository: Push</li></li></ul></ul></ul> |
 
 ### Validation of pull requests with webhooks
 

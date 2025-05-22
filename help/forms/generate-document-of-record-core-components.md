@@ -97,6 +97,9 @@ You can use submit actions such as "Send Email", "Invoke an AEM workflow", "Invo
 ![Image Submit Actions](/help/forms/assets/submit-actions-img.png)
 
 
+>[!NOTE]
+>
+> You can save the Document of Record for any Form Data Model by using **[!UICONTROL Document of Record Bind Reference field]** property.
 
 ## Incremental updates to Document of Record template {#document-of-record-template-incremental-updates}
 

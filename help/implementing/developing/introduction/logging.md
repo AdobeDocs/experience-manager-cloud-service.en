@@ -89,9 +89,13 @@ When ERROR logging is active, only statements indicating failures are logged. ER
 </tr>
 </table>
 
-While Java logging supports several other levels of logging granularity, AEM as a Cloud Service recommends using the three levels described above. 
+While Java logging supports several other levels of logging granularity, AEM as a Cloud Service recommends using the three levels described above.
 
 AEM Log levels are set per environment type via OSGi configuration, which in turn are committed to Git, and deployed via Cloud Manager to AEM as a Cloud Service. Because of this, it is best to keep log statements consistent and well known for environment types to ensure the logs available via AEM as Cloud Service are available at the optimal log level without requiring redeployment of application with the updated log level configuration.
+
+>[!NOTE]
+>
+>To ensure effective monitoring of customer environments, do not change the default log level. In addition, do not modify the default logging format. Log output must remain directed to the default files. See [the section below](#configuration-loggers) for specific guidelines.
 
 **Example Log Output**
 
@@ -144,9 +148,21 @@ Configure java logging for custom Java packages via OSGi configurations for the 
 |---|---|
 | `org.apache.sling.commons.log.names` | The Java packages for which to collect log statements.  |
 | `org.apache.sling.commons.log.level` | The log level at which to log the Java packages, specified by `org.apache.sling.commons.log.names`  |
-| `org.apache.sling.commons.log.file`| Specify the target for the output: `logs/error.log`|
 
 Changing other LogManager OSGi configuration properties may result in availability issues in AEM as a Cloud Service.
+
+As noted in a previous section, to ensure effective monitoring of customer environments:
+* Java logs for AEM's product code must preserve their default log level "INFO" and must not be overridden by custom configurations.
+* It is acceptable to set the log levels to DEBUG for product code, but use it sparingly to prevent performance degradation and restore back to INFO when it is no longer needed.
+* It is acceptable to adjust log levels for customer-developed code.
+* All logs -- for both AEM product code and customer-developed code -- must maintain the default logging format.
+* Log output must remain directed to the default file "logs/error.log".
+
+To that end, changes must not be made to the following OSGi properties:
+* **Apache Sling Log Configuration** (PID: `org.apache.sling.commons.log.LogManager`) — *all properties*
+* **Apache Sling Logging Logger Configuration** (Factory PID: `org.apache.sling.commons.log.LogManager.factory.config`):
+  * `org.apache.sling.commons.log.file`
+  * `org.apache.sling.commons.log.pattern`
 
 The following are examples of the recommended logging configurations (using the placeholder Java package of `com.example`) for the three AEM as a Cloud Service environment types.
 
@@ -405,7 +421,7 @@ To set the log level per environment, use the appropriate conditional branch in 
 
 ```
 Define REWRITE_LOG_LEVEL debug
-  
+
 <IfDefine ENVIRONMENT_STAGE>
   ...
   Define REWRITE_LOG_LEVEL warn
@@ -483,7 +499,7 @@ To set the log level per environment, use the appropriate conditional branch in 
 
 ```
 Define DISP_LOG_LEVEL debug
-  
+
 <IfDefine ENVIRONMENT_STAGE>
   ...
   Define DISP_LOG_LEVEL warn
@@ -547,7 +563,8 @@ AEM as a Cloud Service provides access to CDN logs, which are useful for use cas
  | *res_age*  | The amount of time (in seconds) a response has been cached (in all nodes).  |
  | *pop*  | Datacenter of the CDN cache server.  |
  | *rules*  | The names of any matching [traffic filter rules](/help/security/traffic-filter-rules-including-waf.md) and WAF flags, also indicating if the match resulted in a block. Empty if no rules matched.  |
- 
+
+ The CDN logs can be extended with your own properties using [request/response transformations](/help/implementing/dispatcher/cdn-configuring-traffic.md#logproperty).
 
 ## How to Access Logs {#how-to-access-logs}
 
@@ -576,7 +593,7 @@ AEM logs are located in the folder `crx-quickstart/logs`, where the following lo
 * AEM HTTP Request log: `request.log`
 * AEM HTTP Access log: `access.log`
 
-Apache layer logs, including dispatcher, are in the Docker container which holds the Dispatcher. See the [Dispatcher documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) for information on how to start the Dispatcher. 
+Apache layer logs, including dispatcher, are in the Docker container which holds the Dispatcher. See the [Dispatcher documentation](/help/implementing/dispatcher/disp-overview.md) for information on how to start the Dispatcher.
 
 To retrieve the logs:
 
@@ -595,9 +612,9 @@ Logs are also directly printed to the terminal output. Most of the time, these l
 
 ## Debugging Production and Stage {#debugging-production-and-stage}
 
-In exceptional circumstances, log levels need to be changed to log at a finer granularity in Stage or Production environments. 
+In exceptional circumstances, log levels need to be changed to log at a finer granularity in Stage or Production environments.
 
-While this is possible, it requires changes to the log levels in the configuration files in Git from Warn and Error to Debug, and performing a deployment to AEM as a Cloud Service to register these configuration changes with the environments. 
+While this is possible, it requires changes to the log levels in the configuration files in Git from Warn and Error to Debug, and performing a deployment to AEM as a Cloud Service to register these configuration changes with the environments.
 
 Depending on the traffic and the amount of log statement written by Debug, this may result in an adverse performance impact on the environment, therefore, it's recommended that changes to Stage and Production debug levels are:
 
