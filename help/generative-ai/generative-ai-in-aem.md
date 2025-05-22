@@ -3,6 +3,7 @@ title: Generative AI in AEM as a Cloud Service
 description: Learn about Generative AI in Adobe Experience Manager as a Cloud Service
 feature: Generative AI
 role: Admin, Architect, Developer, User
+exl-id: 740d9a5b-bd83-4723-a43e-0ead475c3392
 ---
 # Generative AI in AEM as a Cloud Service {#generative-ai-in-aem-as-a-cloud-service}
 
