@@ -1,17 +1,17 @@
 ---
-title: Real Use Monitoring (RUM) for Edge Delivery Services for AEM Forms as a Cloud Service
-description: Real Use Monitoring (RUM) for Edge Delivery Services for AEM Forms as a Cloud Service involves the ongoing tracking and analysis of user interactions with forms.
+title: Operational Telemetry for Edge Delivery Services for AEM Forms as a Cloud Service
+description: Operational Telemetry for Edge Delivery Services for AEM Forms as a Cloud Service involves the ongoing tracking and analysis of user interactions with forms.
 feature: Edge Delivery Services
 hide: yes
 hidefromtoc: yes
 role: Admin, Architect, Developer
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
 ---
-# Real Use Monitoring (RUM) for Edge Delivery Services for AEM Forms as a Cloud Service
+# Operational Telemetry for Edge Delivery Services for AEM Forms as a Cloud Service
 
-Real Use Monitoring (RUM) empowers you to gain real-world insights into how visitors interact with your Adobe Experience Manager (AEM) websites. This built-in tool provides valuable data to understand user behavior, diagnose performance issues, and measure the effectiveness of website experiments. RUM goes beyond synthetic testing by capturing Real Use interactions, offering a more accurate picture of your site's performance.
+Operational Telemetry empowers you to gain real-world insights into how visitors interact with your Adobe Experience Manager (AEM) websites. This built-in tool provides valuable data to understand user behavior, diagnose performance issues, and measure the effectiveness of website experiments. Operational Telemetry goes beyond synthetic testing by capturing Real Use interactions, offering a more accurate picture of your site's performance.
 
-However, RUM prioritizes visitor privacy. It utilizes sampling techniques to collect data from a representative subset of users, ensuring no personally identifiable information (PII) is ever captured. Additionally, RUM is designed with data minimization in mind, collecting only the essential metrics required for performance analysis. This approach allows you to optimize your AEM sites while maintaining user trust.
+However, Operational Telemetry prioritizes visitor privacy. It utilizes sampling techniques to collect data from a representative subset of users, ensuring no personally identifiable information (PII) is ever captured. Additionally, Operational Telemetry is designed with data minimization in mind, collecting only the essential metrics required for performance analysis. This approach allows you to optimize your AEM sites while maintaining user trust.
 
 
 ## Pre-requisites
@@ -20,7 +20,7 @@ You can view the monitoring dashboard for Edge Delivery Services for AEM Forms a
 
 https://data.aem.live/?ext=forms
 
-![RUM Login Screen for Edge Delivery Services for Forms](/help/edge/assets/rum-login-screen.png)
+![Operational Telemetry Login Screen for Edge Delivery Services for Forms](/help/edge/assets/rum-login-screen.png)
 
 To log in to the monitoring dashboard for Edge Delivery Services for AEM Forms as a Cloud Service, enter the following:
 
@@ -34,9 +34,9 @@ After entering the URL and domain keys into the login screen, you gain access to
 
 The below illustration demonstrates the dashboard for Edge Delivery Services for AEM Forms as a Cloud Service:
 
-![RUM Forms Dashboard](/help/edge/assets/rum-forms-dashboard.png)
+![Operational Telemetry Forms Dashboard](/help/edge/assets/rum-forms-dashboard.png)
 
-### Different key metrics of dashboard for Forms {#different-metrics-rum-dashboard-forms}
+### Different key metrics of dashboard for Forms {#different-metrics-operational-telemetry-dashboard-forms}
 
 This dashboard provides key insights into how visitors interact with forms on your Adobe Experience Manager (AEM) website. By monitoring these metrics, you can identify areas for improvement and optimize your forms for better user experience and conversion rates:
 
