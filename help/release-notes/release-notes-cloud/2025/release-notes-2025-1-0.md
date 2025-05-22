@@ -91,9 +91,6 @@ New protocol support launched (DASH - Dynamic Adaptive Streaming over HTTP) for 
 
 * DASH is the international standard protocol for adaptive video streaming and is widely adopted in the industry
 
-**Asset relations**
-
-The Assets View now supports viewing and editing asset relations in a simplified asset Details panel. Easily add relationships like Source and Derivative to content so that uses can more effectively find relevant hero content.
 
 **Reprocess assets**
 

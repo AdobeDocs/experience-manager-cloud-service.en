@@ -24,7 +24,7 @@ Cloud Manager in AEM as a Cloud Service lets you enable Edge Delivery Service fo
 
 ## About Edge Delivery Services in Cloud Manager {#edge-in-cloud-manager}
 
-If you have licensed Edge Delivery Services as part of Adobe Experience Manager Sites, you can onboard your site with Edge Delivery Services directly in Cloud Manager and go live [using a guided, self-service experience](/help/implementing/cloud-manager/managing-code/private-repositories.md).
+If you have licensed Edge Delivery Services as part of Adobe Experience Manager Sites, you can onboard your site with Edge Delivery Services directly in Cloud Manager and go live [using a guided, self-service experience](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
 Additionally, you can access a unified experience for managing all your AEM properties while ensuring consistency across key workflows. These workflows include domain name management, SSL certificate management, and CDN mappings.
 
@@ -37,7 +37,10 @@ Maximize your benefits from Adobe by accessing and consuming your Edge Delivery 
 * [Access SLA reporting](/help/implementing/cloud-manager/sla-reporting.md) (*coming soon*)
 * [Gain access to Adobe support](/help/edge/overview.md#support-ticket) for your registered production programs.
 
-In addition, using Cloud Manager lets you use [Adobe managed CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) for your Edge Delivery site and take advantage of key benefits such as self-service CDN management, including the configuration and addition of DV certificates. Additionally, after a DV certificate is created, Adobe renews it automatically every three months, unless it is deleted. If you do not have an Edge Delivery Services license with Adobe and decide to bypass these benefits, you can only use your own self-managed CDN. This setup must be on the [`aem.live` platform](https://www.aem.live/docs/go-live-checklist#cdn-configuration).
+If you have an Edge Delivery Services (EDS) license, you can use an [Adobe managed CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) for your Edge Delivery site and take advantage of features like self-service CDN management and automatic renewal of DV certificates every three months, unless it is deleted. 
+
+Alternatively, if you choose to use your CDN (that is, a non-Adobe-managed CDN), regardless of your Edge Delivery Services licensing, you must configure it on the `aem.live` platform. See [BYO CDN Setup](https://www.aem.live/docs/byo-cdn-setup). 
+
 
 ## About adding Edge Delivery Services to a production program or sandbox program
 
@@ -73,7 +76,7 @@ The **Edge Delivery to-do list** in Cloud Manager is an onboarding task checklis
 | 3 | Add Edge Delivery Site OR <br>Create site now | See [Add an Edge Delivery site](#eds-add-site).<br>See [Create an Edge Delivery site in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md). |
 | 4 | Add domain | See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 | 5 | Add SSL certificate | See [Add SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
-| 6 | Configure the CDN of your Edge Delivery site | See [Add a CDN configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md). |
+| 6 | Configure the CDN of your Edge Delivery site | See [Add a Domain Mapping](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md). |
 | 7 | Setup push validation | See [Setup push validation for an Edge Delivery site](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 8 | Go-Live | See [Go-Live checklist](/help/edge/docs/go-live-checklist.md). |
 

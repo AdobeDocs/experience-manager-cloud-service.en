@@ -8,19 +8,7 @@ solution: Experience Manager Sites
 ---
 # Managing Content Fragments {#managing-content-fragments}
 
->[!IMPORTANT]
->
->Various features of the Content Fragments and Content Fragment Models are available through the Early Adopter Program.
->
->To see the status, and how to apply if you are interested, check the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md).
-
 Learn how to manage your **Content Fragments** in Adobe Experience Manager (AEM) as a Cloud Service, from the dedicated [Content Fragments console](#content-fragments-console), and [Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor). These Content Fragments can be used as the basis of your headless content, or for page authoring.
-
->[!IMPORTANT]
->
->Various features of the Content Fragment Console are available through the Early Adopter Program.
->
->To see the status, and how to apply if you are interested, check the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 >[!NOTE]
 >
@@ -172,14 +160,14 @@ Selecting a specific fragment opens a toolbar focused on the actions available f
 ![Content Fragments console - toolbar for a selected fragment](assets/cf-managing-console-fragment-toolbar.png)
 
 * **[Open in new Editor](#editing-the-content-of-your-fragment)**
-* **[Open](/help/assets/content-fragments/content-fragments-variations.md)** (in original editor)
 * **[Publish](#publishing-and-previewing-a-fragment)** (and **[Unpublish](#unpublishing-a-fragment)**)
 * **[Manage Tags](#manage-tags)**
-* **[Copy](/help/assets/manage-digital-assets.md)**
-* **[Move](/help/assets/manage-digital-assets.md)**
-* **[Rename](/help/assets/manage-digital-assets.md)**
-* **[Delete](#deleting-a-fragment)**
+* **Copy**
 * **[Replace](#find-and-replace)**
+* **Move**
+* **Rename**
+* **[Delete](#deleting-a-fragment)** (only available for unpublished fragments)
+
 
 >[!NOTE]
 >
