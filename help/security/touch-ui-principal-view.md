@@ -3,8 +3,8 @@ title: Principal View for Permissions Management
 description: Learn about the new Touch UI interface that facilitates permissions management.
 feature: Security
 role: Admin
+exl-id: 855e112a-39f7-4aee-9e29-ece1aa9acf0a
 ---
-
 # Principal View for Permissions Management {#principal-view-for-permissions-management}
 
 ## Overview {#overview}
