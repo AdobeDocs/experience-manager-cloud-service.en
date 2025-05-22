@@ -38,3 +38,7 @@ Generative AI is used throughout AEM:
 ## Further Information {#further-information}
 
 * [Adobe AI Overview](https://www.adobe.com/ai/overview.html)
+
+* [Generative AI in Experience Cloud products](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
+
+  * [Generative AI in Experience Cloud products - Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)
