@@ -9,10 +9,13 @@ exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
 
 >[!IMPORTANT]
 >
->Learn why you must onboard your Edge Deliver Services site to Cloud Manager. See [Benefits of using the Adobe recommended path for Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds).
+>Learn why you must onboard your Edge Delivery Services site to Cloud Manager.
+>See [Benefits of using the Adobe recommended path for Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds).
 
 **To add an Edge Delivery site to Cloud Manager:**
 
+1. Be sure you have first created your program with an Edge Delivery Services license before you onboard an Edge Delivery site in Cloud Manager.
+    See [Create a production program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 1. Log into Cloud Manager at [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) and select the appropriate program.
 1. Do one of the following:
 
