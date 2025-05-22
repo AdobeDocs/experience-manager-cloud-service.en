@@ -1,15 +1,20 @@
 ---
 title: Configure Your Content Source
-description: Learn how to configure the content source for your Edge Delivery site using either fstab.yaml in Helix 4 or using the guided wizard in Cloud Manager (or Configuration Service API) in Helix 5.
+description: Learn how to configure the content source for your Edge Delivery site. Use `fstab.yaml` with the Helix 4 architecture, or use the guided wizard in Cloud Manager (or the Configuration Service API) with the Helix 5 architecture.
+
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: f82eafc0-03d0-4c69-9b28-e769a012531b
 ---
 # Configure your content source in one click for Edge Delivery Services {#config-content-source}
 
+>[!IMPORTANT]
+>
+>*Helix* is the internal name for the underlying architecture powering AEM Sites with document-based authoring. It is not a feature or product name. In this article, *Helix* refers to the architecture version used by your Edge Delivery Sites. Helix 5 is the current version of the underlying architecture; Helix 4 is the previous version.
+
 Adobe Experience Manager (AEM) Edge Delivery Services allows content delivery from multiple sources such as Google Drive, SharePoint, or AEM itself, using a fast, globally distributed edge network.
 
-The content source configuration differs between Helix 4 and Helix 5 in the following way:
+The content source configuration differs between the two architecture versions in the following way:
 
 | Version | Content source configuration method |
 | --- | --- |
@@ -20,7 +25,7 @@ This article provides comprehensive configuration steps, examples, and validatio
 
 **Before you start**
 
-If you use [one click Edge Delivery in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site), your site is Helix 5 with a single repository. [Follow the Helix 5 instructions](#config-helix5) and use the provided Helix 4 YAML version of the instructions as a fallback.
+If you use [one click Edge Delivery in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site), your site is using Helix 5 with a single repository. [Follow the Helix 5 instructions](#config-helix5) and use the provided Helix 4 YAML version of the instructions as a fallback.
 
 **Determine your Helix version**
 
@@ -31,14 +36,14 @@ Confirm through repository metadata or consult your administrator if you are sti
 
 ## Configure the content source for Helix 4
 
-In Helix 4, the fstab.yaml file defines the content source for your site. Located at the root of your GitHub repository, this file maps URL path prefixes (called mountpoints) to external content sources. A typical example looks like the following:
+In Helix 4, the `fstab.yaml` file defines the content source for your site. Located at the root of your GitHub repository, this file maps URL path prefixes (called mountpoints) to external content sources. A typical example looks like the following:
 
 ```yaml
 mountpoints:
   /: https://drive.google.com/drive/folders/your-folder-id
 ```
 
-This example is for illustration only. The actual URL should point to your content source, such as a Google Drive folder, SharePoint directory, or AEM path.
+The example above is for illustration only. The actual URL should point to your content source, such as a Google Drive folder, SharePoint directory, or AEM path.
 
 **To configure the content source for Helix 4:**
 
@@ -91,7 +96,7 @@ Steps vary by the source system that you use.
 
 ## Configure the content source for Helix 5 {#config-helix5}
 
-Helix 5 is repoless, does not use `fstab.yaml`, and supports multiple sites sharing the same directory. Configuration is managed through the Configuration Service API or the Edge Delivery Services UI. Configuration is site-level (not repository-level).
+Helix 5 is repoless, does not use `fstab.yaml`, and supports multiple sites sharing the same directory. Configuration is managed through the Configuration Service API or the Edge Delivery Sites user interface. Configuration is site-level (not repository-level).
 
 Conceptual differences are the following:
 
