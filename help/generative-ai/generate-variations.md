@@ -484,6 +484,7 @@ For further information you can also read:
 
 * [GenAI Generate Variations on GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Edge Delivery Services Experimentation](https://www.aem.live/docs/experimentation)
+* [Generative in AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
 
 ## FAQs {#faqs}
 
