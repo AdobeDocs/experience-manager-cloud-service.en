@@ -53,9 +53,9 @@ Content translation actions and workflows now trigger events to allow tracking r
 * `TRANSLATION_JOB_CANCELLED`
 * `TRANSLATION_JOB_ERROR`
 
-#### Real Use Monitoring (RUM) Data Service {#real-use-monitoring}
+#### Operational Telemetry Service {#real-use-monitoring}
 
-* **[Real Use Monitoring (RUM) Data Service is now GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** enabling client-side collection of data for AEM as a Cloud Service.
+* **[Operational Telemetry Service is now GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** enabling client-side collection of data for AEM as a Cloud Service.
 The Real Use Monitoring service, the client-side collection, offers a more precise reflection of interactions, ensuring a reliable measure of website engagement. It enables customers with advanced insights into their page traffic and performance. It is a great opportunity to learn more about your page performance and gain insights to improve it.
 
 #### AEM Authoring for Edge Delivery Services {#edge-enhancements}
