@@ -43,13 +43,18 @@ See [Additional production program options](#options).
 1. In the **Solutions &amp; Add-ons** list box, select one or more solutions to include in the program.
 
    * If you are not sure if you need one or more programs for the various solutions you have available, select the one most of interest to you. You can activate additional solutions by [editing the program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) later. See the [Introduction to Production Programs document](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) for more program setup recommendations.
-   * At least one solution is required for program creation.
-   * Select **Edge Delivery Services** for a fully managed CDN solution that optimizes digital experiences. See [About using Edge Delivery Services to deliver your Cloud Manager project](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
-   * If you selected the **[Enable Enhanced Security](#security)** option, you can select only as many solutions for which HIPAA entitlements are available.
+   * It is required that you select at least one solution for program creation. For example, you can choose to select **Edge Delivery Services** for a fully managed CDN solution that optimizes digital experiences. See [About using Edge Delivery Services to deliver your Cloud Manager project](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
 
-      ![Select solutions](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
+   ![Select solutions](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/add-production-program-with-edge-v2.png)
 
-   * Click ![Chevron Size 300 icon](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) to the left of a solution name to reveal any optional add-ons, such as the **Commerce** add-on option under **Sites**.
+
+
+
+   <!-- * If you selected the **[Enable Enhanced Security](#security)** option, you can select only as many solutions for which HIPAA entitlements are available. -->
+
+   
+
+   * Click ![Chevron Size 300 icon](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) to the left of a solution name to reveal any optional add-ons. <!-- such as the **Commerce** add-on option under **Sites**. -->
 
    ![Select add-ons](assets/setup-prod-commerce.png)
 
