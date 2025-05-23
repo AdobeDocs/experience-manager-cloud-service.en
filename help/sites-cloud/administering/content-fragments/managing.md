@@ -160,14 +160,14 @@ Selecting a specific fragment opens a toolbar focused on the actions available f
 ![Content Fragments console - toolbar for a selected fragment](assets/cf-managing-console-fragment-toolbar.png)
 
 * **[Open in new Editor](#editing-the-content-of-your-fragment)**
-* **[Open](/help/assets/content-fragments/content-fragments-variations.md)** (in original editor)
 * **[Publish](#publishing-and-previewing-a-fragment)** (and **[Unpublish](#unpublishing-a-fragment)**)
 * **[Manage Tags](#manage-tags)**
-* **[Copy](/help/assets/manage-digital-assets.md)**
-* **[Move](/help/assets/manage-digital-assets.md)**
-* **[Rename](/help/assets/manage-digital-assets.md)**
-* **[Delete](#deleting-a-fragment)**
+* **Copy**
 * **[Replace](#find-and-replace)**
+* **Move**
+* **Rename**
+* **[Delete](#deleting-a-fragment)** (only available for unpublished fragments)
+
 
 >[!NOTE]
 >

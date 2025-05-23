@@ -1,15 +1,21 @@
 ---
-title: Create an Edge Delivery Site in Cloud Manager with one click
+title: Create your First Edge Delivery Site with One Click
 description: Learn how to create an Edge Delivery site quickly in Cloud Manager with the click of a button.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
 ---
-# About create an Edge Delivery site in Cloud Manager with one click{#about-one-click-edge-delivery-site}
+# Create your first Edge Delivery site with one click{#about-one-click-edge-delivery-site}
 
-The Create an Edge Delivery site feature is designed to help you automate the onboarding and deployment of Edge Delivery sites within Cloud Manager. It greatly simplifies the process by having you click a single button. That single click provisions the required infrastructure, integrates with GitHub for version control, and configures your document and asset storage in Google Drive.
+Creating your first Edge Delivery site with one click is designed to help you automate the onboarding and deployment of Edge Delivery sites within Cloud Manager. It greatly simplifies the process by having you click a single button. That single click provisions the required infrastructure, integrates with GitHub for version control, and configures your document and asset storage in Google Drive.
 
 This automation helps reduce the manual effort that is required to set up your initial site. It ensures seamless workflows, scalability, and improves the performance of your teams when it comes to managing content at the edge.
+
+<!-- Check out this quick 2-minute video for a step-by-step walkthrough on creating your first Edge Delivery site—no hassle, just one click.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3458975?quality=12&learn=on) -->
+
+
 
 <!-- >
 ## Practical use cases {#use-cases}
@@ -22,6 +28,10 @@ This automation helps reduce the manual effort that is required to set up your i
 | Edge computing workloads | <ul><li>Support serverless computing to process workloads closer to users.</li><li>Reduce latency and enhance performance. </li></ul> |
 | Security and governance | <ul><li>Security is provided with integrated DDoS (Distributed Denial of Service) protection and WAF (Web Application Firewall) integration.</li><li>Ensure that content is delivered securely through TLS (Transport Security Layer) encryption. </li></ul> |
 -->
+
+
+
+
 
 ## Create an Edge Delivery site in Cloud Manager with one click {#one-click-edge-delivery-site}
 
