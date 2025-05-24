@@ -1,14 +1,16 @@
 ---
 title: Headless Content Delivery using Content Fragments with GraphQL (Assets - Content Fragments)
 description: Learn the basic concepts of realizing an AEM Headless CMS using Content Fragments with GraphQL for headless content delivery.
-feature: Content Fragments, GraphQL API
+feature: Content Fragments
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
+role: User
+solution: Experience Manager Sites
 ---
 # Headless Content Delivery using Content Fragments with GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
 With Content Fragments and the GraphQL API you can use Adobe Experience Manager (AEM) as a Cloud Service as a Headless Content Management System (CMS). 
 
-This is achieved using Content Fragments, together with the AEM GraphQL API (a customized implementation, based on standard GraphQL), to headlessly deliver structured content for use in your applications. The ability to customize a single API query allows you to retrieve and deliver the specific content that you want/need to render (as the response to the single API query).
+This is achieved using Content Fragments, together with the AEM GraphQL API (a customized implementation, based on standard GraphQL), to headlessly deliver structured content for use in your applications. The ability to customize a single API query lets you retrieve and deliver the specific content that you want/need to render (as the response to the single API query).
 
 >[!NOTE]
 >
@@ -33,7 +35,7 @@ In terms of authoring Content Fragments in AEM this means that:
 
 * You can use Content Fragments to author content that is not primarily intended to be directly published (1:1) on formatted pages.
 
-* The content of your Content Fragments will be structured in a predetermined manner - according to the Content Fragment Models. This simplifies access for your applications, which will further process your content. 
+* The content of your Content Fragments is structured in a predetermined manner - according to the Content Fragment Models. This simplifies access for your applications, which will further process your content. 
 
 ## GraphQL - An Overview {#graphql-overview}
 
@@ -43,7 +45,7 @@ GraphQL is:
 
   See [GraphQL.org](https://graphql.org)
 
-The [AEM GraphQL API](#aem-graphql-api) allows you to perform (complex) queries on your [Content Fragments](/help/assets/content-fragments/content-fragments.md); with each query being according to a specific model type. The content returned can then be used by your applications. 
+The [AEM GraphQL API](#aem-graphql-api) lets you perform (complex) queries on your [Content Fragments](/help/assets/content-fragments/content-fragments.md); with each query being according to a specific model type. The content returned can then be used by your applications. 
 
 ## AEM GraphQL API {#aem-graphql-api}
 
@@ -89,7 +91,7 @@ The **[Fragment Reference](/help/assets/content-fragments/content-fragments-mode
 
 * References another fragment, dependent on a specific Content Fragment Model.
 
-* Allows you to retrieve structured data.
+* Lets you retrieve structured data.
 
   * When defined as a **multifeed**, multiple sub-fragments can be referenced (retrieved) by the prime fragment.
 
@@ -103,4 +105,4 @@ See [Learning to use GraphQL with AEM - Sample Content and Queries](/help/headle
 
 ## Tutorial - Getting Started with AEM Headless and GraphQL
 
-Looking for a hands-on tutorial? Check out [Getting Started with AEM Headless and GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) end-to-end tutorial illustrating how to build-out and expose content using AEM’s GraphQL APIs and consumed by an external app, in a headless CMS scenario.
+Looking for a hands-on tutorial? Check out [Getting Started with AEM Headless and GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) end-to-end tutorial illustrating how to build-out and expose content using AEM's GraphQL APIs and consumed by an external app, in a headless CMS scenario.

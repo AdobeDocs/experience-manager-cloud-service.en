@@ -2,6 +2,8 @@
 title: Building Tagging into AEM Applications
 description: Programmatically work with tags or extending tags within a custom AEM application
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Building Tagging into AEM Applications {#building-tagging-into-aem-applications}
 
@@ -15,8 +17,8 @@ that interacts with the
 
 For related information regarding tagging:
 
-* See [Using Tags](/help/sites-cloud/authoring/features/tags.md) for information about tagging content as a content author.
-* See Administering Tags for an administrator?s perspective about creating and managing tags, as well as to which content tags have been applied.
+* See [Using Tags](/help/sites-cloud/authoring/sites-console/tags.md) for information about tagging content as a content author.
+* See Administering Tags for an administrator?s perspective about creating and managing tags, and to which content tags have been applied.
 
 ## Overview of the Tagging API {#overview-of-the-tagging-api}
 
@@ -45,7 +47,7 @@ TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
 
 ### Retrieving a Tag object {#retrieving-a-tag-object}
 
-A `Tag` can be retrieved through the `TagManager`, by either resolving an existing tag or creating a new one:
+A `Tag` can be retrieved through the `TagManager`, by either resolving an existing tag or creating one:
 
 ```java
 Tag tag = tagManager.resolve("my/tag"); // for existing tags
@@ -115,7 +117,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## The Tag Garbage Collector {#the-tag-garbage-collector}
 
-The tag garbage collector is a background service that cleans up the tags that are hidden and unused. Hidden and unused tags are tags below `/content/cq:tags` that have a `cq:movedTo` property and are not used on a content node. They have a count of zero. By using this lazy deletion process, the content node (i.e. the `cq:tags` property) does not have to be updated as part of the move or the merge operation. The references in the `cq:tags` property are automatically updated when the `cq:tags` property is updated, for example, through the page properties dialog.
+The tag garbage collector is a background service that cleans up the tags that are hidden and unused. Hidden and unused tags are tags below `/content/cq:tags` that have a `cq:movedTo` property and are not used on a content node. They have a count of zero. By using this lazy deletion process, the content node (that is, the `cq:tags` property) does not have to be updated as part of the move or the merge operation. The references in the `cq:tags` property are automatically updated when the `cq:tags` property is updated, for example, through the page properties dialog.
 
 The tag garbage collector runs by default once a day. This can be configured at:
 
@@ -132,7 +134,7 @@ The search for tags and the tag listing work as follows:
 
 A tag `title` can be defined in different languages. A language sensitive property is then added to the tag node. This property has the format `jcr:title.<locale>`, for example, `jcr:title.fr` for the French translation. `<locale>` must be a lower case ISO locale string and use underscore (`_`) instead of hyphen/dash (`-`), for example: `de_ch`.
 
-For example when the **Animals** tag is added to the **Products** page, the value `stockphotography:animals` is added to the property `cq:tags` of the node `/content/wknd/en/products/jcr:content`. The translation is referenced from the tag node.
+For example, when the **Animals** tag is added to the **Products** page, the value `stockphotography:animals` is added to the property `cq:tags` of the node `/content/wknd/en/products/jcr:content`. The translation is referenced from the tag node.
 
 The server-side API has localized `title`-related methods:
 
@@ -162,4 +164,4 @@ Finnish is now available in the tag dialog of the page properties and in the **E
 
 >[!NOTE]
 >
->The new language needs to be one of the AEM recognized languages, i.e. it needs to be available as a node below `/libs/wcm/core/resources/languages`.
+>The new language must be one of the AEM recognized languages. That is, it must be available as a node below `/libs/wcm/core/resources/languages`.

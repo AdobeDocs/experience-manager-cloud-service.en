@@ -1,7 +1,9 @@
 ---
 title: Troubleshooting Content Transfer Tool
-description: Troubleshooting Content Transfer Tool
+description: Learn how to troubleshoot the Content Transfer Tool
 exl-id: 01bc9be7-a576-45eb-90a0-386ea951040d
+feature: Migration
+role: Admin
 ---
 # Troubleshooting Content Transfer Tool {#troubleshoot-content-transfer-tool}
 
@@ -30,7 +32,7 @@ java -jar oak-run.jar datastore --check-consistency [<SEGMENT_STORE_PATH>|<MONGO
 
 ```
 
-Refer to [Oak Runnable Jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) for more details.
+See [Oak Runnable Jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) for more details.
 
 The files created in the *OUT_DIR* specified above for consistency can then be checked for paths missing binaries and appropriate action taken like restoring from a backup, deleting the paths, re-indexing, and so on.
 

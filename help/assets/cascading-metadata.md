@@ -3,10 +3,47 @@ title: Cascading metadata
 description: This article describes how to define cascading metadata for assets.
 contentOwner: AG
 feature: Metadata
-role: User,Admin
+role: Admin, User
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
 ---
 # Cascading Metadata {#cascading-metadata}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime and Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets integration with Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI Extensibility</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Enable Dynamic Media Prime and Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media with OpenAPI capabilities</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets developer documentation</b></a>
+        </td>
+    </tr>
+</table>
 
 When capturing the metadata information of an asset, users provide information in the various available fields. You can display specific metadata fields or field values that are dependent on the options selected in the other fields. Such conditional display of metadata is called cascading metadata. In other words, you can create a dependency between a particular metadata field/value and one or more fields and/or their values.
 
@@ -30,14 +67,14 @@ Consider a scenario where you want to display cascading metadata based on the ty
 
 Irrespective of the asset type chosen, display the copyright information as a required field.
 
-1. Tap/click the [!DNL Experience Manager] logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
-1. In the **[!UICONTROL Schema Forms]** page, select a schema form and then tap/click **[!UICONTROL Edit]** from the toolbar to edit the schema.
+1. Select the [!DNL Experience Manager] logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
+1. In the **[!UICONTROL Schema Forms]** page, select a schema form and then select **[!UICONTROL Edit]** from the toolbar to edit the schema.
 
    ![select_form](assets/select_form.png)
 
-1. (Optional) In the metadata schema editor, create a new field to conditionalize. Specify a name and property path in the **[!UICONTROL Settings]** tab.
+1. (Optional) In the metadata schema editor, create a field to conditionalize. Specify a name and property path in the **[!UICONTROL Settings]** tab.
 
-   To create a new tab, tap/click `+` to add a tab and then add a metadata field.
+   To create a tab, select `+` to add a tab and then add a metadata field.
 
    ![add_tab](assets/add_tab.png)
 
@@ -47,7 +84,7 @@ Irrespective of the asset type chosen, display the copyright information as a re
 
 1. Key-values pairs are the options provided to a form-user. You can provide the key-value pairs either manually or from a JSON file.
 
-    * To specify the values manually, select **[!UICONTROL Add Manually]**, and tap/click **[!UICONTROL Add Choice]** and specify the option text and value. For example, specify Video, PDF, Word, and Image asset types.
+    * To specify the values manually, select **[!UICONTROL Add Manually]**, and select **[!UICONTROL Add Choice]** and specify the option text and value. For example, specify Video, PDF, Word, and Image asset types.
 
     * To fetch the values from a JSON file dynamically, select **[!UICONTROL Add Through JSON Path]** and provide the path of the JSON file. [!DNL Experience Manager] fetches the key-value pairs in the real time when the form is presented to the user.
 
@@ -61,7 +98,7 @@ Irrespective of the asset type chosen, display the copyright information as a re
 
    >[!NOTE]
    >
-   >When adding choices, if you click the pop-up field, the interface is distorted and the delete icon for the choices stops working. Do not click on the dropdown till you save the changes. If you face this issue, save the schema and open it again to continue editing.
+   >When adding choices, if you click the pop-up field, the interface is distorted and the delete icon for the choices stops working. Do not click the drop-down until you save the changes. If you face this issue, save the schema and open it again to continue editing.
 
 1. (Optional) Add the other required fields. For example, format, codec, and duration for the asset type video.
 
@@ -74,7 +111,7 @@ Irrespective of the asset type chosen, display the copyright information as a re
    ![select_dependentfield](assets/select_dependentfield.png)
 
 1. Under **[!UICONTROL Requirement]**, choose the **[!UICONTROL Required, based on new rule]** option.
-1. Tap/click **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Also choose the field value upon which to create the dependency. In this case, choose **[!UICONTROL Video]**. Tap/click **[!UICONTROL Done]** to save the changes.
+1. Select **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Also choose the field value on which to create the dependency. In this case, choose **[!UICONTROL Video]**. Select **[!UICONTROL Done]** to save the changes.
 
    ![define_rule](assets/define_rule.png)
 
@@ -84,13 +121,13 @@ Irrespective of the asset type chosen, display the copyright information as a re
 
 1. Under **[!UICONTROL Visibility]**, choose the **[!UICONTROL Visible, based on new rule]** option.
 
-1. Tap/click **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Also choose the field value upon which to create the dependency. In this case, choose **[!UICONTROL Video]**. Tap/click **[!UICONTROL Done]** to save the changes.
+1. Select **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Also choose the field value upon which to create the dependency. In this case, choose **[!UICONTROL Video]**. Select **[!UICONTROL Done]** to save the changes.
 
    ![define_visibilityrule](assets/define_visibilityrule.png)
 
    >[!CAUTION]
    >
-   >To reset the values, click or tap on whitespace or anywhere on the interface other than the values. If the values are reset, select the values again.
+   >To reset the values, select anywhere on the interface other than the values. If the values are reset, select the values again.
 
    >[!NOTE]
    >
@@ -122,3 +159,4 @@ Irrespective of the asset type chosen, display the copyright information as a re
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

@@ -1,11 +1,13 @@
 ---
 title: Configuring ContextHub
-description: Learn how to configure Context Hub.
+description: Learn how to configure Context Hub, a framework for storing, manipulating, and presenting context data.
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
+feature: Developing, Personalization
+role: Admin, Architect, Developer
 ---
 # Configuring ContextHub {#configuring-contexthub}
 
-ContextHub is a framework for storing, manipulating, and presenting context data. For more detail on ContextHub, please see the [ContextHub developer overview](contexthub.md).
+ContextHub is a framework for storing, manipulating, and presenting context data. For more detail on ContextHub, see [ContextHub developer overview](contexthub.md).
 
 You can configure the ContextHub toolbar to control whether it appears in Preview mode, to create ContextHub stores, and add UI modules.
 
@@ -37,20 +39,20 @@ Icons are references from the [Coral UI icon library](https://helpx.adobe.com/ex
 
 Add a UI mode to group related ContextHub modules. When you create the UI mode, you provide the title and icon that appear in the ContextHub toolbar.
 
-1. On the Experience Manager rail, click or tap Tools &gt; Sites &gt; Context Hub.
-1. Click or tap the default Configuration Container.
-1. Click or tap the Context Hub Configuration.
-1. Click or tap the Create button, and then click or tap Context Hub UI Mode.
+1. On the Experience Manager rail, select Tools &gt; Sites &gt; Context Hub.
+1. Select the default Configuration Container.
+1. Select the Context Hub Configuration.
+1. Select the Create button, and then select Context Hub UI Mode.
 
    ![Add UI mode](assets/contexthub-ui-mode.png)
 
 1. Provide values for the following properties:
 
     * UI Mode Title: The title that identifies the UI mode
-    * Mode Icon: The selector for the [Coral UI icon](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) to use, for example `coral-Icon--user`
+    * Mode Icon: The selector for the [Coral UI icon](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) to use, for example, `coral-Icon--user`
     * Enabled: Select to show the UI mode in the ContextHub toolbar
 
-1. Click or tap Save.
+1. Select Save.
 
 ### Adding a UI Module {#adding-a-ui-module}
 
@@ -65,16 +67,16 @@ The UI module properties include a detail configuration where you can provide va
 | [contexthub.base](sample-modules.md#contexthub-base-ui-module-type) |A generic UI module type |Configured in the UI module properties |
 | [contexthub.browserinfo](sample-modules.md#contexthub-browserinfo-ui-module-type) |Displays information about the browser |`surferinfo` |
 | [contexthub.datetime](sample-modules.md#contexthub-datetime-ui-module-type) |Displays date and time information |`datetime` |
-| [contexthub.location](sample-modules.md#contexthub-location-ui-module-type) |Displays the latitude and longitude of the client, as well as the location on a map. Enables you to change the location. |`geolocation` |
+| [contexthub.location](sample-modules.md#contexthub-location-ui-module-type) |Displays the latitude and longitude of the client, and the location on a map. Enables you to change the location. |`geolocation` |
 | [contexthub.screen-orientation](sample-modules.md#contexthub-screen-orientation-ui-module-type) |Displays the screen orientation of the device (landscape or portrait) |`emulators` |
 | [contexthub.tagcloud](sample-modules.md#contexthub-tagcloud-ui-module-type) |Displays statistics about page tags |`tagcloud` |
 | [granite.profile](sample-modules.md#granite-profile-ui-module-type) |Displays the profile information for the current user, including `authorizableID`, `displayName` and `familyName`. You can change the value of `displayName` and `familyName`. |`profile` |
 
-1. On the Experience Manager rail, click or tap Tools &gt; Sites &gt; ContextHub.
-1. Click or tap the Configuration Container to which you want to add a UI module.
-1. Click or typ the ContextHub Configuration to which you want to add the UI module.
-1. Click or tap the UI mode to which you are adding the UI module.
-1. Click or tap the Create button, then click or tap ContextHub UI Module (generic).
+1. On the Experience Manager rail, select Tools &gt; Sites &gt; ContextHub.
+1. Select the Configuration Container to which you want to add a UI module.
+1. Select or type the ContextHub Configuration to which you want to add the UI module.
+1. Select the UI mode to which you are adding the UI module.
+1. Select the Create button, then select ContextHub UI Module (generic).
 
    ![ContextHub UI module](assets/contexthub-ui-module.png)
 
@@ -85,7 +87,7 @@ The UI module properties include a detail configuration where you can provide va
     * Enabled: Select to show the UI module in the ContextHub toolbar
 
 1. (Optional) To override the default store configuration, enter a JSON object to configure the UI Module.
-1. Click or tap Save.
+1. Select Save.
 
 ## Creating a ContextHub Store {#creating-a-contexthub-store}
 
@@ -105,18 +107,18 @@ AEM provides the following sample store candidates upon which you can base a sto
 |---|---|
 | [aem.segmentation](sample-stores.md#aem-segmentation-sample-store-candidate) |Store for resolved and unresolved ContextHub segments. Automatically retrieves segments from the ContextHub SegmentManager |
 | [contexthub.geolocation](sample-stores.md#contexthub-geolocation-sample-store-candidate) |Stores the latitude and longitude of the browser location. |
-| [granite.emulators](sample-stores.md#granite-emulators-sample-store-candidate) |Defines properties and capabilities for a number of devices, and detects the current client device |
+| [granite.emulators](sample-stores.md#granite-emulators-sample-store-candidate) |Defines properties and capabilities for several devices, and detects the current client device |
 | [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) |Stores profile data for the current user |
 | [contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate) |Stores information about the client, such as device information, browser type, and window orientation |
 
-1. On the Experience Manager rail, click or tap Tools &gt; Sites &gt; ContextHub.
-1. Click or tap the default configuration container.
-1. Click or tap Contexthub Configuration
-1. To add a store, click or tap the Create icon and then click or tap ContextHub Store Configuration.
+1. On the Experience Manager rail, select Tools &gt; Sites &gt; ContextHub.
+1. Select the default configuration container.
+1. Select Contexthub Configuration
+1. To add a store, select the Create icon and then select ContextHub Store Configuration.
 
    ![ContextHub store configuration](assets/contexthub-store-configuration.png)
 
-1. Provide values for the basic configuration properties and then click or tap Next:
+1. Provide values for the basic configuration properties and then select Next:
 
     * **Configuration Title:** The title that identifies the store
     * **Store Type:** The value of the storeType property of the store candidate upon which to base the store
@@ -124,7 +126,7 @@ AEM provides the following sample store candidates upon which you can base a sto
     * **Enabled:** Select to enable the store
 
 1. (Optional) To override the default store configuration, enter a JSON object in the Detail Configuration (JSON) box.
-1. Click or tap Save.
+1. Select Save.
 
 ## Example: Using a JSONP Service  {#example-using-a-jsonp-service}
 
@@ -143,7 +145,7 @@ A contexthub.generic-jsonp store is configured so that it stores data for the se
 
 The contexthub.generic-jsonp sample store candidate enables you to retrieve data from a JSONP service or a web service that returns JSON data. For this store candidate, use the store configuration to provide details about the JSONP service to use.
 
-The [init](contexthub-api.md#init-name-config) function of the `ContextHub.Store.JSONPStore` Javascript class defines a `config` object that initializes this store candidate. The `config` object contains a `service` object that includes details about the JSONP service. To configure the store, you provide the `service` object in JSON format as the value for the Detail Configuration property.
+The [init](contexthub-api.md#init-name-config) function of the `ContextHub.Store.JSONPStore` JavaScript class defines a `config` object that initializes this store candidate. The `config` object contains a `service` object that includes details about the JSONP service. To configure the store, you provide the `service` object in JSON format as the value for the Detail Configuration property.
 
 To save data from the MD5 service of the jsontest.com site, use the procedure in [Creating a ContextHub Store](#creating-a-contexthub-store) using the following properties:
 
@@ -199,10 +201,10 @@ A debugging mode for the ContextHub can be enabled to allow for troubleshooting.
 
 Edit the ContextHub's configuration and check the option **Debug**
 
-1. In the rail click or tap **Tools &gt; Sites &gt; ContextHub**
-1. Click or tap the default **Configuration Container**
-1. Select the **ContextHub Configuration** and click or tap **Edit Selected Element**
-1. Click or tap **Debug** and click or tap **Save**
+1. In the rail select **Tools &gt; Sites &gt; ContextHub**
+1. Select the default **Configuration Container**
+1. Select the **ContextHub Configuration** and select **Edit Selected Element**
+1. Select **Debug** and select **Save**
 
 ### Via CRXDE {#via-crxde}
 
@@ -224,7 +226,7 @@ To configure the service you can either use the [Web Console](/help/implementing
 
 Silent mode suppresses all debug information. Unlike the normal debug option, which can be set independently for each ContextHub configuration, silent mode is a global setting which takes precedent over any debug settings on the ContextHub configuration level.
 
-This is useful for your publish instance, where you don't want any debug information at all. Because it is a global setting, it is enabled via OSGi.
+This is useful for your publish instance, where you do not want any debug information at all. Because it is a global setting, it is enabled via OSGi.
 
 1. Open the **Adobe Experience Manager Web Console Configuration** at `http://<host>:<port>/system/console/configMgr`
 1. Search for **Adobe Granite ContextHub**
@@ -237,10 +239,10 @@ ContextHub can be disabled to prevent it from loading js/css and initializing. T
 
 * Edit the ContextHub's configuration and check the option **Disable ContextHub**
 
-    1. In the rail click or tap **Tools &gt; Sites &gt; ContextHub**
-    1. Click or tap the default **Configuration Container**
-    1. Select the **ContextHub Configuration** and click or tap **Edit Selected Element**
-    1. Click or tap **Disable ContextHub** and click or tap **Save**
+    1. In the rail select **Tools &gt; Sites &gt; ContextHub**
+    1. Select the default **Configuration Container**
+    1. Select the **ContextHub Configuration** and select **Edit Selected Element**
+    1. Select **Disable ContextHub** and select **Save**
 
 or
 

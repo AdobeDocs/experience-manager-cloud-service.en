@@ -2,6 +2,8 @@
 title: Sample ContextHub UI Module Types
 description: ContextHub provides several sample UI modules that you can use in your solutions
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
+feature: Developing, Personalization
+role: Admin, Architect, Developer
 ---
 # Sample ContextHub UI Module Types {#sample-contexthub-ui-module-types}
 
@@ -29,7 +31,7 @@ The source code is located at `/libs/granite/contexthub/code/ui/container/js/Con
 
 ### Configuration {#configuration}
 
-Configure the contexthub.base UI module using a Javascript object in JSON format. Include any of the following properties to configure the UI module features:
+Configure the contexthub.base UI module using a JavaScript object in JSON format. Include any of the following properties to configure the UI module features:
 
 * **image:** A URL to an image to display as the icon.
 * **icon:** The name of a [Coral UI icon](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) class. If you specify a value for both the icon and image properties, the image is used.
@@ -164,7 +166,7 @@ The source of the UI module is located at `/libs/granite/contexthub/components/m
 
 ### Configuration {#configuration-5}
 
-Instances of the `contexthub.screen-orientation` UI module do not require a value for the Detail Configuration. The following JSON text represents the default configuration of the module. Note that the `clickable` property is `false` by default. If you override the default configuration to set `clickable` to `true`, clicking the module reveals a popup where you can select the orientation.
+Instances of the `contexthub.screen-orientation` UI module do not require a value for the Detail Configuration. The following JSON text represents the default configuration of the module. The `clickable` property is `false` by default. If you override the default configuration to set `clickable` to `true`, clicking the module reveals a pop-up where you can select the orientation.
 
 ```javascript
 {
@@ -180,7 +182,7 @@ Instances of the `contexthub.screen-orientation` UI module do not require a valu
 
 ## contexthub.tagcloud UI Module Type {#contexthub-tagcloud-ui-module-type}
 
-The `contexthub.tagcloud` UI module displays information about tags. On the toolbar the UI module shows the number of tags. The popup reveals a tagcloud and a texbox for adding new tags. The UI module obtains information from a ContextHub store named tagcloud that is based on the `contexthub.tagcloud` store candidate.
+The `contexthub.tagcloud` UI module displays information about tags. On the toolbar the UI module shows the number of tags. The pop-up reveals a tagcloud and a texbox for adding new tags. The UI module obtains information from a ContextHub store named tagcloud that is based on the `contexthub.tagcloud` store candidate.
 
 ![contexthub.tagcloud module](assets/tagcloud-module.png)
 
@@ -204,7 +206,7 @@ Instances of the `contexthub.tagcloud` UI module do not require a value for the 
 
 ## granite.profile UI Module Type {#granite-profile-ui-module-type}
 
-The `granite.profile` ContextHub UI module displays the display name of the current user. The popup reveals the login name of the user and enables you to change the value of the display name. The UI module obtains information from a ContextHub store named profile that is based on the [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) store candidate.
+The `granite.profile` ContextHub UI module displays the display name of the current user. The pop-up reveals the login name of the user and enables you to change the value of the display name. The UI module obtains information from a ContextHub store named profile that is based on the [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) store candidate.
 
 ![granite.profile module](assets/profile-module.png)
 

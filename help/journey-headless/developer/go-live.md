@@ -2,6 +2,9 @@
 title: How to Go Live with Your Headless Application
 description: In this part of the AEM Headless Developer Journey, learn how to deploy a headless application live by taking your local code in Git and moving it to Cloud Manager Git for the CI/CD pipeline.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
+solution: Experience Manager
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Architect, Developer
 ---
 # How to Go Live with Your Headless Application {#go-live}
 
@@ -36,7 +39,7 @@ To get your AEM headless application ready for launch, follow the best practices
 
 * Avoid creating queries that output more than 15kb of JSON (gzip compressed). Long JSON files are resource intensive for client application to parse.
 * Avoid more than five nested levels of fragment hierarchies. Additional levels make it hard for content authors to consider the impact of their changes.
-* Use multi-object queries instead of modeling queries with dependency hierarchies within the models. This allows more long-term flexibility to restructure JSON output without having to do a lot of content changes.
+* Use multi-object queries instead of modeling queries with dependency hierarchies within the models. This allows more long-term flexibility to restructure JSON output without having to do many content changes.
 
 ## Maximize CDN Cache-Hit Ratio {#maximize-cdn}
 
@@ -44,7 +47,7 @@ To get your AEM headless application ready for launch, follow the best practices
   * Use persisted queries whenever possible.
   * Provide CDN TTL above 600 seconds in order for the CDN to cache them.
   * AEM can calculate the impact of a model change to existing queries.
-* Split JSON files/GraphQL queries between low and high content change rate in order to reduce client traffic to CDN and assign higher TTL. This minimizes the CDN revalidating the JSON with the origin server.
+* Split JSON files/GraphQL queries between low and high content change rate so you can reduce client traffic to CDN and assign higher TTL. This minimizes the CDN revalidating the JSON with the origin server.
 * To actively invalidate content from the CDN use Soft Purge. This allows the CDN to redownload the content without causing a cache miss.
 
 ## Improve Time to Download Headless Content {#improve-download-time}
@@ -61,7 +64,7 @@ Once you make sure that everything has been tested and is working properly, you 
 
 After the updates have been uploaded to Cloud Manager, they can be deployed to AEM as a Cloud Service using [Cloud Manager's CI/CD pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html).
 
-You can start deploying your code by leveraging the Cloud Manager CI/CD pipeline, which is covered extensively [here](/help/implementing/deploying/overview.md).
+You can start deploying your code by using the Cloud Manager CI/CD pipeline, which is covered extensively under [Deploying Content Packages by way of Cloud Manager and Package Manager ](/help/implementing/deploying/overview.md).
 
 ## Performance Monitoring {#performance-monitoring}
 
@@ -77,7 +80,7 @@ For users to have the best possible experience when using the AEM headless appli
     * Check number of users, requests and load
 * Access App and space specific performance reports
   * Once the server is up, check whether the general metrics are green/orange/red, then identify specific app issues
-  * Open same reports above filtered to app or space (for example Photoshop desktop, paywall)
+  * Open same reports above filtered to app or space (for example, Photoshop desktop, paywall)
   * Use Splunk log APIs to access service and application performance
   * Contact Customer Support in case there are other issues.
 
@@ -95,7 +98,7 @@ Follow these best practices as a general approach to debugging:
 
 ### Logging a Bug with Support {#logging-a-bug-with-support}
 
-In order to efficiently log a bug with Support in case you need further assistance, follow the below steps:
+To efficiently log a bug with Support in case you need further assistance, do the following:
 
 * Take screenshots of the problem, if necessary
 * Document a way to reproduce the issue
@@ -118,12 +121,15 @@ You have either already launched your first AEM Headless project or now have all
 
 ### Explore Single Page Applications {#explore-spa}
 
-The headless stores in AEM doesn't need to stop here, though. You might remember in the [Getting Started part of the journey](getting-started.md#integration-levels) we discussed briefly how AEM not only supports headless delivery and traditional full-stack models, but also can support hybrid models that combine the advantages of both.
+The headless stores in AEM does not need to stop here, though. You might remember in the [Getting Started part of the journey](getting-started.md#integration-levels) we discussed briefly how AEM not only supports headless delivery and traditional full-stack models, but can also support hybrid models that combine the advantages of both.
 
-If this kind of flexibility is something you need for your project, continue on to the optional, additional part of the journey, [How to Create Single Page Applications (SPAs) with AEM.](create-spa.md)
+If this kind of flexibility is something you need for your project, continue on to the optional, additional part of the journey, [How to Create Single Page Applications (SPAs) with AEM](create-spa.md).
 
 ## Additional Resources {#additional-resources}
 
+* [Introduction to AEM as a Headless CMS](/help/headless/introduction.md)
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [Tutorials for Headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) 
 * [An Overview of Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md)
 * [Use Cloud Manager to Deploy Your Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
 * [Integrate the Cloud Manager Git Repository with an External Git Repository and Deploy a Project to AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html)

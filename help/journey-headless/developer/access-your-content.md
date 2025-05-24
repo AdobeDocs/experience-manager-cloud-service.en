@@ -2,10 +2,13 @@
 title: How to Access Your Content via AEM Delivery APIs
 description: In this part of the AEM Headless Developer Journey, learn how to use GraphQL queries to access your Content Fragments content.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
+solution: Experience Manager
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Architect, Developer
 ---
 # How to Access Your Content via AEM Delivery APIs {#access-your-content}
 
-In this part of the [AEM Headless Developer Journey,](overview.md) you can learn how to use GraphQL queries to access the content of your Content Fragments and feed it to your app (headless delivery).
+In this part of the [AEM Headless Developer Journey](overview.md), you can learn how to use GraphQL queries to access the content of your Content Fragments and feed it to your app (headless delivery).
 
 ## The Story So Far {#story-so-far}
 
@@ -24,9 +27,9 @@ This article builds on those fundamentals so you understand how to access your e
   * Dive into the details of the AEM GraphQL API.
   * Look at some sample queries to see how things work in practice.
 
-## So You'd Like to Access Your Content? {#so-youd-like-to-access-your-content}
+## So You Would Like to Access Your Content? {#so-youd-like-to-access-your-content}
 
-So...you've got all this content, neatly structured (in Content Fragments), and just waiting to feed your new app. Question is - how to get it there?
+So...you have got all this content, neatly structured (in Content Fragments), and just waiting to feed your new app. Question is - how to get it there?
 
 What you need is a way to target specific content, select what you need and return it to your app for further processing.
 
@@ -43,7 +46,7 @@ GraphQL is an open-source specification that provides:
 * a query language that enables you to select specific content from structured objects.
 * a runtime to fulfill these queries with your structured content.
 
-GraphQL is a *strongly* typed API. This means that *all* content must be clearly structured and organized by type, so that GraphQL *understands* what to access and how. The data fields are defined within GraphQL schemas, that define the structure of your content objects.
+GraphQL is a strongly-typed API. This means that *all* content must be clearly structured and organized by type, so that GraphQL *understands* what to access and how. The data fields are defined within GraphQL schemas, that define the structure of your content objects.
 
 GraphQL endpoints then provide the paths that respond to the GraphQL queries.
 
@@ -123,24 +126,26 @@ These Content Fragment Models:
 
 ### Fragment References {#fragment-references}
 
-The **Fragment Reference**:
+**Fragment Reference** and **Fragment Reference UUID**:
 
-* Is a specific data type available when defining a Content Fragment Model.
+* Are specific data types available when defining a Content Fragment Model.
 * References another fragment, dependent on a specific Content Fragment Model.
-* Allows you to create, and then retrieve, structured data.
+* Lets you create, and then retrieve, structured data.
 
   * When defined as a **multifeed**, multiple sub-fragments can be referenced (retrieved) by the prime fragment.
 
+<!--
 ### JSON Preview {#json-preview}
 
 To help with designing and developing your Content Fragment Models, you can preview JSON output in the Content Fragment Editor.
 
 ![JSON Preview](assets/cfm-model-json-preview.png "JSON Preview")
+-->
 
 <!--
 ## GraphQL Schema Generation from Content Fragments {#graphql-schema-generation-content-fragments}
 
-GraphQL is a strongly typed API, which means that content must be clearly structured and organized by type. The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating content on a certain instance. To do this, a client needs to fetch the Schema, which contains all the types necessary for a query. 
+GraphQL is a strongly-typed API, which means that content must be clearly structured and organized by type. The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating content on a certain instance. To do this, a client must fetch the Schema, which contains all the types necessary for a query. 
 
 For Content Fragments, the GraphQL schemas (structure and types) are based on **Enabled** Content Fragment Models and their data types.
 
@@ -175,7 +180,7 @@ So for example, if you:
 
 1. Install a package containing `Content-Fragment-Model-1` and `Content-Fragment-Model-2`:
  
-   1. GraphQL types for `Model-1` and `Model-2` will be generated.
+   1. GraphQL types for `Model-1` and `Model-2` are generated.
 
 1. Then modify `Content-Fragment-Model-2`:
 
@@ -236,7 +241,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 Before starting with queries on your content you need to:
 
 * Enable your endpoint
-  * Use Tools -> General -> GraphQL
+  * Use Tools > General > GraphQL
   * [Enabling your GraphQL Endpoint](/help/headless/graphql-api/graphql-endpoint.md)
     * This will also enable the GraphiQL IDE.
   
@@ -254,7 +259,7 @@ To actually use the AEM GraphQL API in a query, we can use the two very basic Co
 
 As you can see, the CEO and Employees fields, reference the Person fragments.
 
-The fragment models will be used:
+The fragment models are used:
 
 * when creating the content in the Content Fragment Editor
 * to generate the GraphQL schemas that you will query
@@ -263,7 +268,7 @@ The fragment models will be used:
 
 The queries can be entered in the GraphiQL interface. You can access the query editor from either: 
 
-* **Tools** -> **General** -> **GraphQL Query Editor**
+* **Tools** > **General** > **GraphQL Query Editor**
 * directly; for example, `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL Interface](assets/graphiql-interface.png "GraphiQL Interface")
@@ -350,6 +355,7 @@ Now that you have learned how to access and query your headless content using th
 
 ## Additional Resources {#additional-resources}
 
+* [Adobe Experience Manager as a Cloud Service APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
 * [GraphQL.org](https://graphql.org)
   * [Schemas](https://graphql.org/learn/schema/)
   * [Variables](https://graphql.org/learn/queries/#variables)
@@ -363,10 +369,11 @@ Now that you have learned how to access and query your headless content using th
   * [Sample Query - A Single Specific City Fragment](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
   * [Sample Query for Metadata - List the Metadata for Awards titled GB](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
   * [Sample Query - All Cities with a Named Variation](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
-* [Enable Content Fragment Functionality in Configuration Browser](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
-* [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)
-  * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
-  * [JSON output](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
-* [Understand Cross-Origin Resource Sharing (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors))
+* [Enable Content Fragment Functionality in Configuration Browser](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)
+* [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md)
+  * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
+  * [JSON output](/help/assets/content-fragments/content-fragments-json-preview.md)
+* [Understand Cross-Origin Resource Sharing (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors))
+* [GraphQL Persisted Queries - enabling caching in the Dispatcher](/help/headless/deployment/dispatcher-caching.md)
 * [Generating Access Tokens for Server Side APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
 * [Getting Started with AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - A short video tutorial series giving an overview of using AEM's headless features, including content modeling and GraphQL.

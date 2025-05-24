@@ -2,6 +2,9 @@
 title: Learn about using references in Content Fragments
 description: Learn about using references in Content Fragments, for content, other fragments and other assets (media). Introduce the necessity for, and the mechanics of, nested fragments for Headless CMS Authoring.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
+solution: Experience Manager
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Architect, Developer
 ---
 # Learn about using references in Content Fragments {#author-headless-references}
 
@@ -21,23 +24,30 @@ This article builds on these so you understand how to use references to author y
   * Content References
   * Asset/Media References
   * Fragment References
-  * Ad hoc references from within a text block
+  * Improvised references from within a text block
 
 ## What are references {#what-are-references}
 
 References are simply a mechanism for connecting your resources, be it other content, assets (as in images), or other fragments. Although very similar, there are some differences.
 
-Some references have dedicated data-types (for example, Content References and Fragment References), whereas others are simply added as a reference within a text block (asset references and ad hoc references).
+Some references have dedicated data-types (for example, Content References and Fragment References), whereas others are simply added as a reference within a text block (asset references and improvised references).
 
-![Content Fragments - References](/help/journey-headless/author/assets/headless-journey-author-references-01.png)
+![Content Fragments - References](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## Content References {#content-references}
 
-Content References do just that - they allow you to reference any other content. This will open a browser that allows you to select the content item.
+Content References do just that - they allow you to reference any other content. This opens a browser that lets you select the content item.
+
+There are two types:
+
+* **Content Reference**
+  * specifies the path to the referenced resource 
+* **Content Reference (UUID)**
+  * In the editor, the reference specifies the path to the referenced resource; internally the reference is held as a universally unique ID (UUID) that references the resource 
 
 ## Asset/Media References {#assets-media-references}
 
-Assets (for example, images or media) can be referenced within a Text block by using the **Insert asset** option. This will open a browser that allows you to select the asset.
+Assets (for example, images or media) can be referenced within a Text block by using the **Insert asset** option. This opens a browser that lets you select the asset.
 
 ![Content Fragments - Insert Asset](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
@@ -52,7 +62,7 @@ For example, you might have the following Content Fragment Models defined:
 * Person
 * Awards
 
-Seems pretty straightforward, but of course a Company has both a CEO and Employees....and these are all people, each defined as a Person.
+Seems pretty straightforward, but a Company has both a CEO and Employees....and these are all people, each defined as a Person.
 
 And a Person can have an Award (or maybe two).
 
@@ -65,7 +75,14 @@ And that's just for starters. Depending on the complexity, an Award could be Com
 
 Representing these interrelationships can be achieved with Fragment References, as they are understood by both you (the author) and the headless applications.
 
-As an author you're not responsible for defining these relationships (that's done by the Content Architect when creating the Content Fragment Model), but you need to know how to recognize and edit the references.
+As an author you are not responsible for defining these relationships (that is done by the Content Architect when creating the Content Fragment Model), but you need to know how to recognize and edit the references.
+
+There are two sorts:
+
+* **Fragment Reference**
+  * specifies the path to the referenced resource 
+* **Fragment Reference (UUID)**
+  * In the editor, the reference specifies the path to the referenced resource; internally the reference is held as a universally unique ID (UUID) that references the resource 
 
 <!--
 ![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
@@ -73,7 +90,7 @@ As an author you're not responsible for defining these relationships (that's don
 
 ### How to author nested fragments {#author-nested-fragment}
 
-Authoring Fragment References is fairly straightforward (though usually the field will not be labelled as **Fragment Reference**). You can either type in the reference directly, or (more likely) select the folder icon to open a browser that allows you to navigate and select the fragment you need. 
+Authoring Fragment References is fairly straightforward (though usually the field will not be labelled as **Fragment Reference**). You can either type in the reference directly, or (more likely) select the folder icon to open a browser that lets you navigate and select the fragment you need. 
 
 ![Content Fragments - References](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 
@@ -86,15 +103,11 @@ The definition of the Content Fragment Model controls:
 
 Using the **Structure Tree** tab of the Content Fragment Editor you can navigate through the fragments referenced by your fragment, and then through any references they may contain. Selecting a reference opens that fragment for editing.
 
->[!NOTE]
->
->Using the breadcrumbs in the main panel you can navigate back to your starting point.
-
-![Content Fragment Structure Tree](/help/sites-cloud/administering/content-fragments/assets/cfm-structuretree-02.png)
+![Content Fragment Structure Tree](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-structure-tree.png)
 
 ## Ad Hoc References {#adhoc-references}
 
-Ad hoc references can be added as a simple link within a block of text:
+Improvised references can be added as a simple link within a block of text:
 
 ![Content Fragments - Ad Hoc References](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
 
@@ -104,21 +117,21 @@ Now that you have learned about references and structure in Content Fragments, t
 
 ## Additional Resources {#additional-resources}
 
-* [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md)
  
-  * [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
+  * [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md)
 
-    * [Apply the Configuration to your Assets Folder](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+    * [Apply the Configuration to your Assets Folder](/help/sites-cloud/administering/content-fragments/setup.md#apply-the-configuration-to-your-folder)
   
-    * [Creating a Content Fragment](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+    * [Creating a Content Fragment](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)
   
-  * [Variations - Authoring Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
+  * [Authoring Content Fragments](/help/sites-cloud/administering/content-fragments/authoring.md)
 
-  * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+  * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 
-    * [Content Fragment Models - Data Types](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
+    * [Content Fragment Models - Data Types](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
   
-    * [Content Fragment Models - Properties](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
+    * [Content Fragment Models - Properties](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)
 
 * Getting Started Guides
   * [Creating an Assets Folder - Headless Setup](/help/headless/setup/create-assets-folder.md)

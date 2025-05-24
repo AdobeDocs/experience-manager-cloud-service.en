@@ -1,8 +1,8 @@
 ---
 title: Enrich Product Data with Associated AEM Content
-description: Learn how marketers can enrich product data with associated content from Adobe Experience Manager. Content, like assets and Experience Fragments in AEM can be associated with commerce products. Once associated, these content types can be dynamically inserted on to a placeholder within a product page or category page. This opens up a wide range of possibilities for marketers to target specific product page with additional content like images and video.
+description: Learn how marketers can enrich product data with associated content from Adobe Experience Manager, by dynamically adding marketing content to product pages. This opens up a wide range of possibilities for marketers to target specific product pages with additional content such as images and video.
 sub-product: Commerce
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: feature-video
 activity: use
 audience: marketer
@@ -10,6 +10,7 @@ feature: Commerce Integration Framework
 kt: 7065
 thumbnail: 333205.jpg
 exl-id: d0062779-7e90-4f09-8878-eded877580ef
+role: Admin
 ---
 # Enrich Product Data with Associated AEM Content
 

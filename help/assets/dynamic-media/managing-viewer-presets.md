@@ -108,7 +108,7 @@ Administrators can add and customize the following rich media types when creatin
    <td><p>The Panoramic Image and PanoramicVR viewers render spherical panoramic images to immerse users in a 360° viewing experience of a room, property, location, or landscape.</p> <p>For an uploaded image to qualify as a spherical panorama, it must have either one or both of the following:</p>
     <ul>
      <li>An aspect ratio of 2:1.</li>
-     <li>Tagged with the keywords <code>equirectangular</code>, or <code>spherical</code> and <code>panorama</code>, or <code>spherical </code>and <code>panoramic</code>. See <a href="/help/sites-cloud/authoring/features/tags.md">Using Tags</a>.</li>
+     <li>Tagged with the keywords <code>equirectangular</code>, or <code>spherical</code> and <code>panorama</code>, or <code>spherical </code>and <code>panoramic</code>. See <a href="/help/sites-cloud/authoring/sites-console/tags.md">Using Tags</a>.</li>
     </ul> <p>Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the "Panoramic Media" WCM component.</p></td>
   </tr>
     <tr>
@@ -324,13 +324,13 @@ The following table identifies the mobile viewer gestures that are supported on 
    <td><p>Pans</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Tap</strong></p> </td>
+   <td><p><strong>Select</strong></p> </td>
    <td><p>Shows flyout window</p> </td>
    <td><p>Shows or hides the user interface</p> </td>
    <td><p>Shows or hides the user interface</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Double-tap</strong></p> </td>
+   <td><p><strong>Double-select</strong></p> </td>
    <td><p>Does not apply</p> </td>
    <td><p>Zooms in or resets</p> </td>
    <td><p>Zooms in or resets</p> </td>
@@ -378,7 +378,7 @@ Experience Manager shows a wide variety of viewer presets when viewing assets fr
 
    ![chlimage_1-222](/help/assets/dynamic-media/assets/chlimage_1-222.png)
 
-1. In the limit property, change the number to the desired number, for example `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
+1. In the limit property, change the number to the desired number, for example, `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Select **[!UICONTROL Save All]**.
 
 ## Create viewer presets {#creating-a-new-viewer-preset}
@@ -442,10 +442,6 @@ For example, for the *VideoPlayer* type, under **[!UICONTROL Modifiers]** > **[!
      * If the browser supports DASH, then DASH streaming is used, first. 
      * If the browser does not support DASH, then HLS streaming is used, second.
      * If the browser does not support either DASH or HLS, then progressive playback is used, lastly.
-
-   >[!NOTE]
-   >
-   >To see and use the **[!UICONTROL dash]** option, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](/help/assets/dynamic-media/video.md#enable-dash).
 
 1. From the **[!UICONTROL Selected Type]** pull-down menu, select a component whose behaviors you want to change.
 

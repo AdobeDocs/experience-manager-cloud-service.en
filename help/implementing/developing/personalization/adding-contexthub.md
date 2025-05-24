@@ -1,23 +1,25 @@
 ---
 title: Adding ContextHub to Pages and Accessing Stores
-description: Add ContextHub to your pages to enable the ContextHub features and to link to the ContextHub Javascript libraries
+description: Add ContextHub to your pages to enable the ContextHub features and to link to the ContextHub JavaScript libraries
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
+feature: Developing, Personalization
+role: Admin, Architect, Developer
 ---
 # Adding ContextHub to Pages and Accessing Stores {#adding-contexthub-to-pages-and-accessing-stores}
 
-Add ContextHub to your pages to enable the ContextHub features and to link to the ContextHub Javascript libraries.
+Add ContextHub to your pages to enable the ContextHub features and to link to the ContextHub JavaScript libraries.
 
-The ContextHub Javascript API provides access to the context data that ContextHub manages. This page briefly describes the main features of the API for accessing and manipulating context data. Follow links to the API reference documentation to see detailed information and code examples.
+The ContextHub JavaScript API provides access to the context data that ContextHub manages. This page briefly describes the main features of the API for accessing and manipulating context data. Follow links to the API reference documentation to see detailed information and code examples.
 
 ## Adding ContextHub to a Page Component {#adding-contexthub-to-a-page-component}
 
-To enable the ContextHub features and to link to the ContextHub Javascript libraries, include the `contexthub` component in the `head` section of your page. The HTL code for your page component should resemble the following example:
+To enable the ContextHub features and to link to the ContextHub JavaScript libraries, include the `contexthub` component in the `head` section of your page. The HTL code for your page component should resemble the following example:
 
 ```xml
 <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>
 ```
 
-Note that you also need to configure whether the ContextHub toolbar appears in Preview mode. See [Showing and Hiding the ContextHub UI](configuring-contexthub.md#showing-and-hiding-the-contexthub-ui).
+You also need to configure whether the ContextHub toolbar appears in Preview mode. See [Showing and Hiding the ContextHub UI](configuring-contexthub.md#showing-and-hiding-the-contexthub-ui).
 
 ## About ContextHub Stores {#about-contexthub-stores}
 
@@ -28,7 +30,7 @@ Use ContextHub stores to persist context data. ContextHub provides the following
 * [JSONPStore](contexthub-api.md#contexthub-store-persistedjsonpstore)
 * [PersistedJSONPStore](contexthub-api.md#contexthub-store-persistedstore)
 
-All store types are extensions of the [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) class. For information about creating a new store type, see [Creating Custom Stores](extending-contexthub.md#creating-custom-store-candidates). For information about sample store types, see [Sample ContextHub Store Candidates](sample-stores.md).
+All store types are extensions of the [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) class. For information about creating a store type, see [Creating Custom Stores](extending-contexthub.md#creating-custom-store-candidates). For information about sample store types, see [Sample ContextHub Store Candidates](sample-stores.md).
 
 ### Persistence Modes {#persistence-modes}
 
@@ -38,7 +40,7 @@ Context Hub stores use one of the following persistence modes:
 * **Session:** Uses HTML5 sessionStorage to persist data. Session storage is persisted for the duration of the browser session and is available to all browser windows.
 * **Cookie:** Uses the browser's native support of cookies for data storage. Cookie data is sent to and from the server in HTTP requests.
 * **Window.name:** Uses the window.name property to persist data.
-* **Memory:** Uses a Javascript object to persist data.
+* **Memory:** Uses a JavaScript object to persist data.
 
 By default, Context Hub uses the Local persistence mode. If the browser does not support or allow HTML5 localStorage, Session persistence is used. If the browser does not support or allow HTML5 sessionStorage, Window.name persistence is used.
 
@@ -77,17 +79,17 @@ The tree structure defines data items in the store as key/value pairs. In the ab
 
 ### Manipulating Objects {#manipulating-objects}
 
-ContextHub provides the [`ContextHub.Utils.JSON.tree`](contexthub-api.md#contexthub-utils-json-tree) class for manipulating Javascript objects. Use the functions of this class for manipulating Javascript objects before you add them to a store, or after you obtain them from a store.
+ContextHub provides the [`ContextHub.Utils.JSON.tree`](contexthub-api.md#contexthub-utils-json-tree) class for manipulating JavaScript objects. Use the functions of this class for manipulating JavaScript objects before you add them to a store, or after you obtain them from a store.
 
-Additionally, the [`ContextHub.Utils.JSON`](contexthub-api.md#contexthub-utils-json) class provides functions for serializing objects to stings, and deserializing strings to objects. Use this class for handling JSON data to support browsers that do not natively include the `JSON.parse` and `JSON.stringify` functions.
+Also, the [`ContextHub.Utils.JSON`](contexthub-api.md#contexthub-utils-json) class provides functions for serializing objects to stings, and deserializing strings to objects. Use this class for handling JSON data to support browsers that do not natively include the `JSON.parse` and `JSON.stringify` functions.
 
 ## Interacting with ContextHub Stores {#interacting-with-contexthub-stores}
 
-Use the [`ContextHub`](contexthub-api.md#ui-event-constants) Javascript object to obtain a store as a Javascript object. Once you obtain the store object you can manipulate the data that it contains. Use the [`getAllStores`](contexthub-api.md#getallstores) or the [`getStore`](contexthub-api.md#getstore-name) function to obtain the store.
+Use the [`ContextHub`](contexthub-api.md#ui-event-constants) JavaScript object to obtain a store as a JavaScript object. Once you obtain the store object you can manipulate the data that it contains. Use the [`getAllStores`](contexthub-api.md#getallstores) or the [`getStore`](contexthub-api.md#getstore-name) function to obtain the store.
 
 ### Accessing Store Data {#accessing-store-data}
 
-The [`ContexHub.Store.Core`](contexthub-api.md#contexthub-store-core) Javascript class defines several functions for interacting with store data. The following functions store and retrieve multiple data items that are contained in objects:
+The [`ContexHub.Store.Core`](contexthub-api.md#contexthub-store-core) JavaScript class defines several functions for interacting with store data. The following functions store and retrieve multiple data items that are contained in objects:
 
 * [addAllItems](contexthub-api.md#addallitems-tree-options)
 * [getTree](contexthub-api.md#gettree-includeinternals)
@@ -97,21 +99,21 @@ Individual data items are stored as a set of key/value pairs. To store and retri
 * [getItem](contexthub-api.md#getitem-key)
 * [setItem](contexthub-api.md#setitem-key-value-options)
 
-Note that custom store candidates can define additional functions that provide access to store data.
+Custom store candidates can define additional functions that provide access to store data.
 
 >[!NOTE]
 >
->ContextHub is not by default aware of the currently logged in used on publish servers and such users are regarded by ContextHub as “Anonymous.”
+>ContextHub is not by default aware of the currently logged in used on publish servers and such users are regarded by ContextHub as "Anonymous."
 >
->You can make ContextHub aware of logged in users by loading the profile store. Refer to [sample code on GitHub here](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
+>You can make ContextHub aware of logged in users by loading the profile store. See the sample code: [aem-sample-we-retail on GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
 
 ### ContextHub Eventing {#contexthub-eventing}
 
-ContextHub includes an event framework that enables you to automatically react to store events. Each store object contains a [`ContextHub.Utils.Eventing`](contexthub-api.md#contexthub-utils-eventing) object that is available as the store's [`eventing`](contexthub-api.md#eventing) property. Use the [`on`](contexthub-api.md#on-name-handler-selector-triggerforpastevents) or [`once`](contexthub-api.md#once-name-handler-selector-triggerforpastevents) function to bind a Javascript function to a store event.
+ContextHub includes an event framework that enables you to automatically react to store events. Each store object contains a [`ContextHub.Utils.Eventing`](contexthub-api.md#contexthub-utils-eventing) object that is available as the store's [`eventing`](contexthub-api.md#eventing) property. Use the [`on`](contexthub-api.md#on-name-handler-selector-triggerforpastevents) or [`once`](contexthub-api.md#once-name-handler-selector-triggerforpastevents) function to bind a JavaScript function to a store event.
 
 ## Using Context Hub to Manipulate Cookies {#using-context-hub-to-manipulate-cookies}
 
-The Context Hub Javascript API provides cross-browser support for handling browser cookies. The [`ContextHub.Utils.Cookie`](contexthub-api.md#contexthub-utils-cookie) namespace defines several functions for creating, manipulating, and deleting cookies.
+The Context Hub JavaScript API provides cross-browser support for handling browser cookies. The [`ContextHub.Utils.Cookie`](contexthub-api.md#contexthub-utils-cookie) namespace defines several functions for creating, manipulating, and deleting cookies.
 
 ## Determining Resolved ContextHub Segments {#determining-resolved-contexthub-segments}
 
@@ -121,7 +123,7 @@ The ContextHub segment engine enables you to determine which of the registered s
 
 ContextHub segments are installed below the `/conf/<site>/settings/wcm/segments` node.
 
-The following segments are installed with the [WKND tutorial site.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+The following segments are installed with the [WKND tutorial site](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 * summer  
 * winter  
@@ -133,11 +135,11 @@ The rules that are used to resolve these segments are summarized as follows:
 
 >[!WARNING]
 >
->The installed segments are provided as reference configurations to help you build your own dedicated configuration for your project and as such should not be used directly.
+>The installed segments are provided as reference configurations to help you build your own dedicated configuration for your project. Do not use them directly.
 
 ## Debugging ContextHub {#debugging-contexthub}
 
-There are a number of options for debugging ContextHub including generating logs. See [Configuring ContextHub for more information.](configuring-contexthub.md#logging-debug-messages-for-contexthub)
+There are several options for debugging ContextHub including generating logs. See [Configuring ContextHub for more information](configuring-contexthub.md#logging-debug-messages-for-contexthub).
 
 ## See an Overview of the ContextHub Framework {#see-an-overview-of-the-contexthub-framework}
 

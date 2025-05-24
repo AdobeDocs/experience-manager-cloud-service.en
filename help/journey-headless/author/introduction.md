@@ -2,12 +2,13 @@
 title: Authoring for AEM as a Headless CMS - An Introduction
 description: An introduction to using the features of Adobe Experience Manager as a Cloud Service as a Headless CMS to author content for your project.
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
+solution: Experience Manager
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Architect, Developer
 ---
 # Authoring for AEM as a Headless CMS - An Introduction {#author-headless-introduction}
 
 In this part of the [AEM Headless Content Author Journey](overview.md), you can learn the (basic) concepts and terminology necessary to understand authoring content when using Adobe Experience Manager (AEM) as a Cloud Service as a Headless CMS. This involves structuring, and creating, your content for headless content delivery.
-
-{{headless-trials-promotion}}
 
 ## Objective {#objective}
 
@@ -49,13 +50,13 @@ This all means that it can be used as a:
   (And as a double-whammy, these fragments can also be used when constructing AEM web pages - if you want.)
 
 * "Traditional" CMS
-  * Content is authored for web pages, using a range of components that define how the content will be rendered on your website. Even here AEM is extremely flexible as your project team can develop customized components.
+  * Content is authored for web pages, using a range of components that define how the content is rendered on your website. Even here AEM is extremely flexible as your project team can develop customized components.
 
 ## Content Modeling {#content-modeling}
 
 So content modeling (also known as data modeling) is another technical term - why should it interest you as an author?
 
-For the headless applications to be able to access your content, and do something with it, your content really needs to have a predefined structure. It would be possible to have your content as free-form, but it would make life *very* complicated for the applications.
+For the headless applications to be able to access your content, and do something with it, your content really must have a predefined structure. It would be possible to have your content as free-form, but it would make life *very* complicated for the applications.
 
 Basically the process of defining the structure for your content to adhere to involves designing a model - and this is called data modeling. 
 
@@ -71,10 +72,16 @@ Now that you have learned the concepts and terminology, the next step is to [Lea
 
 ## Additional Resources {#additional-resources}
 
+* [Introduction to AEM as a Headless CMS](/help/headless/introduction.md)
+
+* [Tutorials for Headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+
 * AEM Headless Developer Journey
   * [Learn About CMS Headless Development](/help/journey-headless/developer/learn-about.md)
   * [Learn how to Model Your Content](/help/journey-headless/developer/model-your-content.md)
 
-* AEM Headless Content Architect Journey
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 
-* AEM Headless Content Translation Journey
+* [AEM Headless Content Architect Journey](/help/journey-headless/architect/overview.md)
+
+* [AEM Headless Content Translation Journey](/help/journey-headless/translation/overview.md)

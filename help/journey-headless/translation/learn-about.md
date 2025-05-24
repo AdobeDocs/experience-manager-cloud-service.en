@@ -2,6 +2,9 @@
 title: Learn About Headless Content and Translating it in AEM
 description: Learn headless concepts, how they map to AEM, and the theory of AEM translation.
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
+solution: Experience Manager
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Architect, Developer
 ---
 # Learn about headless content and how to translate it in AEM {#learn-about}
 
@@ -16,11 +19,11 @@ This document helps you understand headless content delivery, how AEM supports h
 
 ## Full-Stack Content Delivery {#full-stack}
 
-Ever since the rise of easy-to-use, large-scale content management systems (CMSes), organizations have leveraged them as a central location to manage messaging, branding, and communications. Using the CMS as a central point for administering experiences improved efficiency by eliminating the need to duplicate tasks in disparate systems.
+Ever since the rise of easy-to-use, large-scale content management systems (CMSes), organizations have used them as a central location to manage messaging, branding, and communications. Using the CMS as a central point for administering experiences improved efficiency by eliminating the need to duplicate tasks in disparate systems.
 
 ![The classic full-stack CMS](/help/journey-headless/developer/assets/full-stack.png)
 
-In a full-stack CMS, all of the functionality for manipulating content is in the CMS. Features of the system make up different components of the CMS stack. The full-stack solution has many advantages.
+In a full-stack CMS, the functionality for manipulating content is in the CMS. Features of the system make up different components of the CMS stack. The full-stack solution has many advantages.
 
 * There is one system to maintain.
 * Content is managed centrally.
@@ -41,7 +44,7 @@ When we talk about a headless CMS, the CMS manages the content and continues to 
 
 ![Headless CMS](/help/journey-headless/developer/assets/headless-cms.png)
 
-The consuming services, be they AR experiences, a web shop, mobile experiences, progressive web apps (PWAs), etc., take in content from the headless CMS and provide their own rendering. They take care of providing their own heads for your content.
+The consuming services, be they AR experiences, a web shop, mobile experiences, progressive web apps (PWAs), and so on, take in content from the headless CMS and provide their own rendering. They take care of providing their own heads for your content.
 
 Omitting the head simplifies the CMS by removing complexity. Doing this also shifts the responsibility of rendering the content to the services that actually need the content and are often better suited to such rendering.
 
@@ -51,7 +54,7 @@ In addition to offering robust tools to create, manage, and deliver traditional 
 
 The power of AEM allows it to deliver content either headlessly, full-stack, or in both models at the same time. For the translation specialist, the same set of translation tools can be applied to both types of content, giving you a unified approach for translating your content.
 
-Further in the journey you will learn the details about how AEM translates content, but at a high level, the concept is simple:
+Further in the journey you learn the details about how AEM translates content, but at a high level, the concept is simple:
 
 1. Define a connection to a translation service by configuring the translation integration framework.
 1. Define which content should be translated using translation rules.
@@ -69,6 +72,8 @@ Build on this knowledge and continue your AEM headless translation journey by ne
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the headless translation journey by reviewing the document [Get started with AEM headless translation,](getting-started.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
+While it is recommended that you move on to the next part of the headless translation journey by reviewing the document [Get started with AEM headless translation](getting-started.md), the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
 
 * [MSM and Translation](/help/sites-cloud/administering/msm-and-translation.md) - The details of AEM's Multi-Site Manager and how it works with its translation tools
+* [Introduction to AEM as a Headless CMS](/help/headless/introduction.md)
+* [Tutorials for Headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

@@ -4,12 +4,19 @@ description: Understand how the Content Fragment editor uses markdown syntax to 
 feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
+solution: Experience Manager Sites
 ---
 # Markdown {#markdown}
 
-When you are [authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), the content fragment editor uses *markdown* syntax to allow you to easily write headless content:
+When you are [authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), the content fragment editor uses *markdown* syntax to allow you to easily write content for either headless delivery or page authoring:
 
-![markdown editor](/help/assets/content-fragments/assets/cfm-markdown-01.png)
+>[!NOTE]
+>
+>Content Fragments are a Sites feature, but are stored as **Assets**. 
+>
+>There are two editors for authoring Content Fragments; although the basic functionality is the same, there are some differences. This section covers the original editor, primarily accessed from the **Assets** console. See the Sites documentation, [Content Fragments - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), for details of the new editor (primarily accessed from the **Content Fragments** console).
+
+![Markdown editor](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
 You can define:
 
@@ -25,7 +32,7 @@ You can define:
 
 ## Heading Notation {#heading-notation}
 
-To create a header by placing a hash tag (#) in front of the heading. One hash tag (#) is used for an H1, two hash tags (##) for a H2 etc. You can use up to 6 hash tags. For example:
+To create a header by placing a hash tag (#) in front of the heading. One hash tag (#) is used for an H1, two hash tags (##) for a H2 and so on. You can use up to 6 hash tags. For example:
 
 &nbsp;&nbsp;&nbsp;&nbsp;`## This is an H2`
 
@@ -93,7 +100,7 @@ A Reference-style image has the following syntax:
 
 &nbsp;&nbsp;&nbsp;&nbsp;`![Alt text][id]`
 
-Where “id” is the name of a defined image reference. Image references are defined using syntax identical to link references:
+Where "id" is the name of a defined image reference. Image references are defined using syntax identical to link references:
 
 &nbsp;&nbsp;&nbsp;&nbsp;`[id]: url/to/image "Optional title attribute"`
 

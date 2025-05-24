@@ -2,6 +2,8 @@
 title: Content Fragments Configuring Components for Rendering
 description: Content Fragments Configuring Components for Rendering
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
+feature: Developing, Content Fragments
+role: Admin, Architect, Developer
 ---
 # Content Fragments Configuring Components for Rendering{#content-fragments-configuring-components-for-rendering}
 
@@ -12,9 +14,9 @@ This is done by configuring the [OSGi Service - Content Fragment Component Confi
 This information is required when:
 
 * You need to implement your own Content Fragment-based component,
-* And need to make use of the advanced services.
+* And need to use the advanced services.
 
-It is recommended to use the Core Components.
+Adobe recommends using the Core Components.
 
 >[!CAUTION]
 >
@@ -30,7 +32,7 @@ It is recommended to use the Core Components.
 
 The services that require the registration of a component are:
 
-* Determining dependencies correctly during publication (i.e. ensure that fragments & models can be automatically published with a page if they have changed since last publication).
+* Determining dependencies correctly during publication (that is, ensure that fragments & models can be automatically published with a page if they have changed since last publication).
 * Support for content fragments in full text search.
 * The management/handling of *in-between content.*
 * The management/handling of *mixed media assets.*
@@ -41,7 +43,7 @@ If you need one or more of these features, then (typically) it is easier to use 
 
 ## OSGi Service - Content Fragment Component Configuration {#osgi-service-content-fragment-component-configuration}
 
-The configuration needs to be bound to the OSGi service **Content Fragment Component Configuration**:
+The configuration must be bound to the OSGi service **Content Fragment Component Configuration**:
 
 `com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl`
 
@@ -87,7 +89,7 @@ The OSGi configuration is:
  </tbody>
 </table>
 
-For some functionality your component will have to adhere to predefined conventions. The following table details the properties that need to be defined, by your component, for each paragraph (i.e. `jcr:paragraph` for each component instance) so that the services can detect and process them correctly. 
+For some functionality your component will have to adhere to predefined conventions. The following table details the properties that need to be defined, by your component, for each paragraph (that is, `jcr:paragraph` for each component instance) so that the services can detect and process them correctly. 
 
 <table>
  <thead>

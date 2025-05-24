@@ -2,10 +2,14 @@
 title: SPA Model Routing
 description: For single page applications in AEM, the app is responsible for the routing. This document describes the routing mechanism, the contract, and options available.
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # SPA Model Routing{#spa-model-routing}
 
 For single page applications in AEM, the app is responsible for the routing. This document describes the routing mechanism, the contract, and options available.
+
+{{ue-over-spa}}
 
 ## Project Routing {#project-routing}
 
@@ -13,7 +17,7 @@ The App owns the routing and is then implemented by the project front end develo
 
 ## Architecture {#architecture}
 
-For a detailed description, please refer to the [PageModelManager](blueprint.md#pagemodelmanager) section of the SPA Blueprint document.
+For a detailed description, see [PageModelManager](blueprint.md#pagemodelmanager) section of the SPA Blueprint document.
 
 ## ModelRouter {#modelrouter}
 
@@ -25,7 +29,7 @@ The `ModelRouter` automates the fetching of fragments of the model. But as any a
 
 >[!CAUTION]
 >
->The current version of the `ModelRouter` only support the use of URLs that points to the actual resource path of Sling Model entry points. It doesn't support the use of Vanity URLs or aliases.
+>The current version of the `ModelRouter` only support the use of URLs that points to the actual resource path of Sling Model entry points. It does not support the use of Vanity URLs or aliases.
 
 ## Routing Contract {#routing-contract}
 
@@ -41,7 +45,7 @@ By default, this behavior is automatically enabled. To disable it, the SPA shoul
 <meta property="cq:pagemodel_router" content="disabled"\>
 ```
 
-Note that every route of the SPA should correspond to an accessible resource in AEM (for example, " `/content/mysite/mypage"`) since the `PageModelManager` will automatically try to load the corresponding page model once the route is selected. Though, if needed, the SPA can also define a "block list" of routes that should be ignored by the `PageModelManager`:
+Every route of the SPA should correspond to an accessible resource in AEM (for example, " `/content/mysite/mypage"`) since the `PageModelManager` will automatically try to load the corresponding page model once the route is selected. Though, if needed, the SPA can also define a "block list" of routes that should be ignored by the `PageModelManager`:
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>

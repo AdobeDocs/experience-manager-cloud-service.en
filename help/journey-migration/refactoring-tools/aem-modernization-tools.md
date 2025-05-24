@@ -1,7 +1,9 @@
 ---
 title: AEM Modernization Tools
-description: AEM Modernization Tools
+description: Learn about the suite of utilities which can be used to convert legacy AEM features to the modern and supported capabilities of AEM as a Cloud Service.
 exl-id: d541fae0-6386-403f-99c9-373dc978ad13
+feature: Migration
+role: Admin
 ---
 # AEM Modernization Tools {#aem-moderization-tools}
 
@@ -20,8 +22,8 @@ AEM Modernization Tools allow for the easy conversion of:
 >[!NOTE]
 >AEM Modernize Tools are a community effort and are not supported or warrantied by Adobe.
 
-Refer to **[Introducing AEM Modernization Tools](https://opensource.adobe.com/aem-modernize-tools/)** to learn more about planning, configuration, and  development for AEM Modernization suite of tools.
+See **[Introducing AEM Modernization Tools](https://opensource.adobe.com/aem-modernize-tools/)** to learn more about planning, configuration, and  development for AEM Modernization suite of tools.
 
 ## Installation and Implementing AEM Modernization Tool Suite {#installing-implementing}
 
-Refer to **[Git Resource: AEM Modernize Tools Suite](https://github.com/adobe/aem-modernize-tools)** to learn about installation and implementation.
+See **[Git Resource: AEM Modernize Tools Suite](https://github.com/adobe/aem-modernize-tools)** to learn about installation and implementation.

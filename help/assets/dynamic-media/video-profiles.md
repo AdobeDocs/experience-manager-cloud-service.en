@@ -2,7 +2,7 @@
 title: Dynamic Media Video Profiles
 description: Dynamic Media already comes with a predefined Adaptive Video Encoding profile. The settings in this out-of-the-box profile are optimized to give your customers the best viewing experience possible. You can also add smart crop to your videos.
 contentOwner: Rick Brough
-feature: Asset Management,Video Profiles,Renditions
+feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
 ---
@@ -145,7 +145,7 @@ See also [Best practices for video encoding](/help/assets/dynamic-media/video.md
 
 To define advanced processing parameters for other asset types, see [Configure asset processing](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
-**To create a Video Profile for adaptive bitrate streaming**,
+**To create a Video Profile for adaptive bitrate streaming:**
 
 1. Select the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. Select **[!UICONTROL Create]**.
@@ -186,7 +186,7 @@ You can now apply the profile to folders that contain videos. See [Applying a Vi
 
 If you choose not to use the option **[!UICONTROL Encode for adaptive streaming]**, all encoding presets that you add to the profile are treated as individual video renditions for single-bitrate streaming or progressive video delivery. Also, there is no validation to ensure that all the video renditions have the same aspect ratio.
 
-The supported video format codecs are H.264 (.mp4) and WebM.
+The supported video format codec is H.264 (.mp4). <!-- use to also include WebM but was requested for removal by Riya Midha in email dated October 14, 2024 -->
 
 See also [Create a video encoding profile for adaptive bitrate streaming](#creating-a-video-encoding-profile-for-adaptive-streaming).
 
@@ -268,7 +268,7 @@ You can edit an existing encoding profile for video to take advantage of advance
    <td><code>keyframe</code></td>
    <td>The target number of frames between keyframes. Calculate this value so you can generate a keyframe every 2-10 seconds. For example, at 30 frames per second, the keyframe interval is 60-300.<br /> <br /> Lower keyframe intervals improve stream seeking and stream switching behavior for adaptive video encodings and can also improve the quality for videos that have lot of motion. However, because keyframes increase a file's size, a lower keyframe interval usually results in lower overall video quality at a given bitrate.</td>
    <td><code>String</code></td>
-   <td><p>Positive number.</p> <p>Default is 300.</p> <p>Recommended value for HLS or DASH (adaptive bitrate streaming) is 60-90. (To use DASH for your videos, it must first be enabled by Adobe Technical Support on your account. See <a href="/help/assets/dynamic-media/video.md#enable-dash">Enable DASH on your account</a>.)</p> </td>
+   <td><p>Positive number.</p> <p>Default is 300.</p> <p>Recommended value for HLS or DASH (adaptive bitrate streaming) is 60-90.</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
@@ -286,7 +286,7 @@ You can edit an existing encoding profile for video to take advantage of advance
    <td><code>audioBitrateCustom</code></td>
    <td>Set value to <code>true</code> to force a constant bitrate for the audio stream, if supported by audio codec.</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>Default is <code>false</code>.</p> <p>Recommended value for HLS or DASH is <code>false</code>. (To use DASH for your videos, it must first be enabled by Adobe Technical Support on your account. See <a href="/help/assets/dynamic-media/video.md#enable-dash">Enable DASH on your account</a>.)</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>Default is <code>false</code>.</p> <p>Recommended value for HLS or DASH is <code>false</code>.</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>

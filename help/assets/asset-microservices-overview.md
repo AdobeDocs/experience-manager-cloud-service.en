@@ -2,13 +2,50 @@
 title: Process assets using asset microservices
 description: Process your digital assets using cloud-native and scalable asset processing microservices.
 contentOwner: AG
-feature: Asset Compute Microservices,Workflow,Release Information,Asset Processing
-role: Architect,Admin
+feature: Asset Compute Microservices, Asset Ingestion, Asset Processing
+role: Architect, Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
 ---
 # Overview of asset ingestion and processing with asset microservices {#asset-microservices-overview}
 
-Adobe Experience Manager as a [!DNL Cloud Service] provides a cloud-native method to leverage Experience Manager applications and capabilities. One of the key elements of this new architecture is asset ingestion and processing, powered by asset microservices. Asset microservices provide a scalable and resilient processing of assets using cloud services. Adobe manages the cloud services for optimal handling of different asset types and processing options. The key benefits of cloud-native asset microservices are:
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime and Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets integration with Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI Extensibility</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Enable Dynamic Media Prime and Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media with OpenAPI capabilities</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets developer documentation</b></a>
+        </td>
+    </tr>
+</table>
+
+Adobe Experience Manager as a [!DNL Cloud Service] provides a cloud-native method to use Experience Manager applications and capabilities. One of the key elements of this new architecture is asset ingestion and processing, powered by asset microservices. Asset microservices provide a scalable and resilient processing of assets using cloud services. Adobe manages the cloud services for optimal handling of different asset types and processing options. The key benefits of cloud-native asset microservices are:
 
 * Scalable architecture that allows for seamless processing for resource-intensive operations.
 * Efficient indexing and text extractions that does not impact the performance of your Experience Manager environments.
@@ -84,6 +121,7 @@ Adobe Experience Manager can be configured to automatically trigger the post-pro
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

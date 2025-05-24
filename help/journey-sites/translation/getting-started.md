@@ -5,6 +5,9 @@ index: yes
 hide: no
 hidefromtoc: no
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
+solution: Experience Manager Sites
+feature: Translation
+role: Admin
 ---
 # Get Started with AEM Sites Translation {#getting-started}
 
@@ -29,7 +32,7 @@ This document helps you understand how to get started translating sites content 
 
 ## Requirements and Prerequisites {#requirements-prerequisites}
 
-There are a number of requirements before you begin translating your AEM content.
+There are several requirements before you begin translating your AEM content.
 
 ### Knowledge {#knowledge}
 
@@ -41,7 +44,7 @@ There are a number of requirements before you begin translating your AEM content
 
 >[!TIP]
 >
->If you are not familiar with using a large-scale CMS like AEM, consider reviewing the [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) documentation before proceeding. The Basic Handling documentation is not part of the journey, so please return to this page when complete.
+>If you are not familiar with using a large-scale CMS like AEM, consider reviewing the [Basic Handling](/help/sites-cloud/authoring/basic-handling.md) documentation before proceeding. The Basic Handling documentation is not part of the journey. As such, return to this page when complete.
 
 ### Tools {#tools}
 
@@ -51,15 +54,15 @@ There are a number of requirements before you begin translating your AEM content
 
 ## How AEM Stores Content {#content-in-aem}
 
-For the translation specialist, it is not important to understand in-depth how AEM manages content. However being familiar with the basic concepts and terminology will be helpful as you later use AEM's translation tools. Most importantly you need to understand your own content and how it is structured in order to effectively translate it.
+For the translation specialist, it is not important to understand in-depth how AEM manages content. However, being familiar with the basic concepts and terminology is helpful as you later use AEM's translation tools. Most importantly, you need to understand your own content and how it is structured to effectively translate it.
 
 ### Sites Console {#sites-console}
 
-The sites console provides an overview of the structure of your content making it easy to navigate your content as well as manage it by creating new pages, moving and copying pages, as well as publishing content.
+The sites console provides an overview of the structure of your content making it easy to navigate your content and manage it by creating new pages, moving and copying pages, and publishing content.
 
 To access the sites console:
 
-1. In the global navigation menu, click or tap **Navigation** -&gt; **Sites**.
+1. In the global navigation menu, select **Navigation** &gt; **Sites**.
 1. The sites console opens to the top level of your content.
 1. Make sure that the **Column View** is selected using the view selector at the top-right of the window.
 
@@ -69,7 +72,7 @@ To access the sites console:
 
    ![Content hierarchy](assets/sites-console-hierarchy.png)
 
-1. By tapping or clicking the checkbox of an item in a column, it selects that item and shows the selected item's details in the column to the right as well as revealing a number of actions available for the selected item in the toolbar above.
+1. By tapping or clicking the checkbox of an item in a column, it selects that item and shows the selected item's details in the column to the right and revealing several actions available for the selected item in the toolbar above.
 
    ![Content selection](assets/sites-console-selection.png)
 
@@ -87,21 +90,21 @@ Using these simple tools you can intuitively navigate your content structure.
 
 ### Page Editor {#page-editor}
 
-The sites console allows you to navigate your content and provides an overview of its structure. To see the details of an individual page, you need to use the sites editor.
+The sites console lets you navigate your content and provides an overview of its structure. To see the details of an individual page, you need to use the sites editor.
 
 To edit a page:
 
-1. Use the sites console to locate and select a page. Remember that you need to tap or click the check box of an individual page in order to select it.
+1. Use the sites console to locate and select a page. Remember that you need to select the check box of an individual page to select it.
 
    ![Selecting a page to edit](assets/sites-editor-select-page.png)
 
-1. Tap the **Edit** option in the toolbar.
+1. Select the **Edit** option in the toolbar.
 1. The sites editor opens with the selected page loaded for editing in a new browser tab.
 1. Mousing over or tapping content reveals selectors for individual components. Components are the drag-and-drop building blocks that make up the page.
 
    ![Editing a page](assets/sites-editor-title.png)
 
-You can return to the sites console by switching back to that tab in your browser at any time. Using the sites editor you can quickly view the content of the page as the content authors and your audience will see it.
+You can return to the sites console by switching back to that tab in your browser at any time. Using the sites editor you can quickly view the content of the page as the content authors and your audience can see it.
 
 >[!NOTE]
 >
@@ -169,7 +172,7 @@ The final structure may look something like the following.
     |- ...
 ```
 
-You should take note of the specific path of your content as it will be required later to configure your translation.
+You should take note of the specific path of your content because it is required later to configure your translation.
 
 >[!NOTE]
 >
@@ -195,13 +198,13 @@ Now that you have completed this part of the AEM Sites translation journey you s
 * Understand how AEM stores content.
 * Be familiar with AEM's translation tools.
 
-Build on this knowledge and continue your AEM Sites translation journey by next reviewing the document [Configure the translation connector](configure-connector.md) where you will learn how to connect AEM to a translation service.|
+Build on this knowledge and continue your AEM Sites translation journey by next reviewing the document [Configure the translation connector](configure-connector.md) where you learn how to connect AEM to a translation service.|
 
 ## Additional Resources {#additional-resources}
 
 While it is recommended that you move on to the next part of the translation journey by reviewing the document [Configure the translation connector](configure-connector.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
 
-* [AEM Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) - Learn the basics of the AEM UI to be able to comfortably navigate and perform essential tasks such as finding your content.
+* [AEM Basic Handling](/help/sites-cloud/authoring/basic-handling.md) - Learn the basics of the AEM UI to be able to comfortably navigate and perform essential tasks such as finding your content.
 * [Identifying Content to Translate](/help/sites-cloud/administering/translation/rules.md) - Learn how translation rules identify content that needs translating.
 * [Configuring the Translation Integration Framework](/help/sites-cloud/administering/translation/integration-framework.md) - Learn how to configure the Translation Integration Framework to integrate with third-party translation services.
 * [Managing Translation Projects](/help/sites-cloud/administering/translation/managing-projects.md) - Learn how to create and manage both machine and human translation projects in AEM.

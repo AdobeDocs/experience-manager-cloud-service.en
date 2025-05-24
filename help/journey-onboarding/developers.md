@@ -8,11 +8,11 @@ exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 
 # Developer and Deployment Manager Tasks {#developer-deployment-manager}
 
-In this optional part of the [onboarding journey,](overview.md) you will learn how developers and deployment managers can access git to develop applications and use pipelines to deploy them.
+In this optional part of the [onboarding journey](overview.md), you learn how developers and deployment managers can access git to develop applications and use pipelines to deploy them.
 
 ## The Story So Far {#story-so-far}
 
-You have come a long way in your onboarding journey! Congratulations! The system administrator has completed the onboarding journey by setting up the necessary cloud resources and granting access in the document [Assigning AEM Product Profiles.](assign-profiles-aem.md) 
+You have come a long way in your onboarding journey! Congratulations! The system administrator has completed the onboarding journey by setting up the necessary cloud resources and granting access in the document [Assigning AEM Product Profiles](assign-profiles-aem.md).
 
 At this point your developers and deployment managers can begin creating your own applications while your AEM users can start creating content. In this sense, your onboarding is complete and now it is time to use your new AEM as a Cloud Service system, which this document will illustrate.
 
@@ -45,7 +45,7 @@ Depending on your organizational needs, the same user(s) can have both roles.
 Before you begin the tasks described in this document as a developer or deployment manager, ensure that your system administrator has completed all the steps in this onboarding journey. This means that:
  
 * Your system administrator has assigned developers and deployment managers to their respective product profiles.
-* Developers must additionally be assigned to **AEM Users** or **AEM Administrators** product profiles in order to also use AEM.
+* Developers must additionally be assigned to **AEM Users** or **AEM Administrators** product profiles ito also use AEM.
 * Cloud resources have been set up.
 
 ## Accessing git {#accessing-git}
@@ -58,7 +58,7 @@ You can access and manage your git repositories using self-service git account m
 
    ![Access Repo Info button on Environments card](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-1. Click on the **View Repo Info** button to open a dialog to view:
+1. Click the **View Repo Info** button to open a dialog to view:
 
    * The URL to the Cloud Manager git repository.
    * The git username.
@@ -76,7 +76,7 @@ Follow these steps to create your first non-production deployment pipeline.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. Access the **Pipelines** card from the Cloud Manager home screen. Click on **+Add** and select **Add Non-Production Pipeline**. 
+1. Access the **Pipelines** card from the Cloud Manager home screen. Click **+Add** and select **Add Non-Production Pipeline**. 
 
    ![Add non-production pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
@@ -113,7 +113,7 @@ Now that developers have added their custom code to the git repositories and you
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. Navigate to the **Pipelines** card from the **Program Overview** page and click on the ellipsis button next to the pipeline you created in the previous section and select **Run** from the menu.
+1. Navigate to the **Pipelines** card from the **Program Overview** page and click the ellipsis button next to the pipeline you created in the previous section and select **Run** from the menu.
 
 1. The pipeline run begins and is indicated by the **Status** column. 
 
@@ -121,7 +121,7 @@ You can see the details of the run by clicking the ellipsis button again and sel
 
 Congratulations! You have now deployed code from your git repository to a non-production environment!
 
-## What’s Next {#whats-next}
+## What's Next {#whats-next}
 
 Now that you have read this document you should:
 
@@ -130,7 +130,7 @@ Now that you have read this document you should:
 
 You have hit the ground running as a developer or deployment manager with not only working knowledge of Cloud Manager but also working environments, repositories, and pipelines! But there is more to learn about AEM as a Cloud Service's powerful CI/CD tools. Check out the [Additional Resources](#additional-resources) section for more details.
 
-If you are interested in how content authors access and use AEM as a Cloud service, continue on to the final part of the onboarding journey, [AEM User Tasks.](aem-users.md)
+If you are interested in how content authors access and use AEM as a Cloud service, continue on to the final part of the onboarding journey, [AEM User Tasks](aem-users.md).
 
 >[!TIP]
 >
@@ -144,6 +144,6 @@ The following are additional, optional resources if you would like to go beyond 
 * [Using git with Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) - Learn how to use Cloud Manager's git repositories and how to integrate your own on-premise customer-managed git repository with Cloud Manager.
 * [Local Development Environment Set up](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) - This tutorial walks you through setting up a local development environment for Adobe Experience Manager (AEM) using the AEM as a Cloud Service SDK. 
 * [Getting Started with AEM Sites - WKND Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) - This multi-part tutorial is designed for developers new to Adobe Experience Manager (AEM). This tutorial walks through the implementation of an AEM site for a fictitious lifestyle brand the WKND. The tutorial covers fundamental topics like project setup, Core Components, Editable Templates, Client-side libraries, and component development with Adobe Experience Manager Sites.
-* [Getting Started with SPAs in AEM Using React](/help/implementing/developing/hybrid/getting-started-react.md) - This article presents a sample SPA application, explains how it is put together, and allows you to get up-and-running with your own SPA quickly using the React framework.
-* [Getting Started with SPAs in AEM Using Angular](/help/implementing/developing/hybrid/getting-started-angular.md) - This article presents a sample SPA application, explains how it is put together, and allows you to get up-and-running with your own SPA quickly using the Angular framework.
+* [Getting Started with SPAs in AEM Using React](/help/implementing/developing/hybrid/getting-started-react.md) - This article presents a sample SPA application, explains how it is put together, and lets you get up-and-running with your own SPA quickly using the React framework.
+* [Getting Started with SPAs in AEM Using Angular](/help/implementing/developing/hybrid/getting-started-angular.md) - This article presents a sample SPA application, explains how it is put together, and lets you get up-and-running with your own SPA quickly using the Angular framework.
 * [Headless Developer Journey](/help/journey-headless/developer/overview.md) - Start here for a guided course for developing headless applications with AEM.

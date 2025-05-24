@@ -2,10 +2,13 @@
 title: Projects
 description: Projects let you group resources into one entity whose common, shared environment makes it easy to manage your projects
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Projects {#projects}
 
-Projects let you group resources into one entity. A common, shared environment makes it easy to manage your projects. The types of resources you can associate with a project are referred to in AEM as Tiles. Tiles may include project and team information, assets, workflows, and other types of information, as described in detail in [Project Tiles.](#project-tiles)
+Projects let you group resources into one entity. A common, shared environment makes it easy to manage your projects. The types of resources you can associate with a project are referred to in AEM as Tiles. Tiles may include project and team information, assets, workflows, and other types of information, as described in detail in [Project Tiles](#project-tiles).
 
 >[!CAUTION]
 >
@@ -31,7 +34,7 @@ The projects console is where you access and manage your projects within AEM.
 ![The Projects console](/help/sites-cloud/authoring/assets/projects-console.png)
 
 * Select **Timeline** and then a project to view its timeline.
-* Click/tap **Select** to enter selection mode.
+* Select **Select** to enter selection mode.
 * Click **Create** to add projects.
 * **Toggle Active Projects** lets you switch between all projects and only those that are active.
 * **Show Statistics View** lets you see project statistics concerning task completions.
@@ -89,7 +92,7 @@ The Links tile lets you associate external links with your project.
 
 ![Links](/help/sites-cloud/authoring/assets/project-links.png)
 
-You can name the link with an easy-to-recognize name as well as change the thumbnail.
+You can name the link with an easy-to-recognize name and change the thumbnail.
 
 ![Add link](/help/sites-cloud/authoring/assets/projects-add-link.png)
 
@@ -99,7 +102,7 @@ The Project Information tile provides general information on the project includi
 
 ![Project info](/help/sites-cloud/authoring/assets/project-info.png)
 
-Team members can be assigned and deleted from this tile (or have their roles changed) as well as the Team tile.
+Team members can be assigned and deleted from this tile (or have their roles changed) and the Team tile.
 
 ![Add team members to project](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
@@ -131,11 +134,11 @@ You can assign your project to follow certain workflows. If any workflows are ru
 
 You can assign your project to follow certain workflows. Depending on which project you choose you have different workflows available.
 
-These are described in [Working with Project Workflows.](/help/sites-cloud/authoring/projects/workflows.md)
+These are described in [Working with Project Workflows](/help/sites-cloud/authoring/projects/workflows.md).
 
 ### Launches {#launches}
 
-The Launches tile shows any launches that have been requested with a [Request Launch workflow.](/help/sites-cloud/authoring/projects/workflows.md)
+The Launches tile shows any launches that have been requested with a [Request Launch workflow](/help/sites-cloud/authoring/projects/workflows.md).
 
 ![Launches](/help/sites-cloud/authoring/assets/project-launches.png)
 
@@ -172,4 +175,4 @@ All projects support the following default roles to let you administer security 
 
 >[!NOTE]
 >
->When you create the project and add users to the various roles, groups associated with the project are automatically created to manage associated permissions. For example, a project called Myproject would have three groups **Myproject Owners**, **Myproject Editors**, **Myproject Observers**. However, if the project is deleted, those groups are not automatically deleted. An administrator needs to manually delete the groups in **Tools** &gt; **Security** &gt; **Groups**.
+>When you create the project and add users to the various roles, groups associated with the project are automatically created to manage associated permissions. For example, a project called Myproject would have three groups **Myproject Owners**, **Myproject Editors**, **Myproject Observers**. However, if the project is deleted, those groups are not automatically deleted. An administrator must manually delete the groups in **Tools** &gt; **Security** &gt; **Groups**.

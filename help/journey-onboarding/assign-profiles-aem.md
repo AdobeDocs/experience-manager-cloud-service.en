@@ -1,6 +1,6 @@
 ---
 title: Assigning AEM Product Profiles
-description: Once you have your cloud resources configured, you will need to grant your team access to AEM itself using AEM product profiles.
+description: After you have your cloud resources configured, grant your team access to AEM itself using AEM product profiles.
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
@@ -10,15 +10,15 @@ exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 >[!CONTEXTUALHELP]
 >id="assets_user_entitlements"
 >title="Assign AEM Product Profiles"
->abstract="You are not entitled to use Experience Manager Assets. Please contact your administrator."
+>abstract="You are not entitled to use Experience Manager Assets. Contact your administrator."
 
-In this part of the [onboarding journey,](overview.md) you will learn how to grant you team access to AEM using AEM product profiles.
+In this part of the [onboarding journey](overview.md), you learn how to grant you team access to AEM using AEM product profiles.
 
 ## Objective {#objective}
 
-Once you have read the previous document in this onboarding journey, [Create Environments,](create-environments.md) and have your cloud resources configured, you will need to grant your team access to AEM itself using AEM product profiles. As the system administrator, you do this by assigning AEM product profiles.
+After you have read the previous document in this onboarding journey, [Create Environments](create-environments.md), and have your cloud resources configured, grant your team access to AEM itself using AEM product profiles. As the system administrator, you do this by assigning AEM product profiles.
 
-After reading this document you should understand:
+After reading this document, you should understand:
 
 * What AEM product profiles are. 
 * How to add team members to AEM User product profile.
@@ -31,7 +31,12 @@ To use AEM, your team members must be assigned to at least one AEM product profi
 * `AEM Users` - This group includes normal users who perform everyday content authoring tasks.
 * `AEM Administrators` - This group includes users who are responsible for advanced features or AEM.
 
-Every user assigned to an AEM product profile will also gain read-only access to Cloud Manager. Write access to Cloud Manager may be granted via other product profiles.
+>[!NOTE]
+>
+>Every user assigned to an AEM as a Cloud Service product profile has read-only access to Cloud Manager via the **Cloud Manager User** role.
+>
+>Users with the **Cloud Manager** User role only can log into Cloud Manager and navigate to the AEM author environments (if they exist) by using the Programs menu options. The **Cloud Manager User** role is not sufficient to access program details. If such access is needed, users must be granted additional roles by their system administrator.
+>See the [Additional Resources section below](#additional-resources) for more information about Cloud Manager user roles.
 
 >[!CAUTION]
 >
@@ -47,13 +52,13 @@ Before you start reading this section, you should have the following information
 
 >[!TIP]
 >
->For the purpose of onboarding, we recommend that you initially add users who will participate in the immediate tasks, such as administrators, developers and content authors. You can continue the rest of the onboarding without adding all users. After you have finished onboarding, you can scale to a larger number of users later.
+>For the purpose of onboarding, Adobe recommends that you initially add users who will participate in the immediate tasks, such as administrators, developers and content authors. You can continue the rest of the onboarding without adding all users. After you have finished onboarding, you can scale to a larger number of users later.
 
 ## View AEM Product Profiles {#view-profiles}
 
 Follow these steps to see the AEM product profiles from the Admin Console.
 
-1. Log in to Admin Console at [`https://adminconsole.adobe.com`.](https://adminconsole.adobe.com)
+1. Log in to Admin Console at [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
 1. From the **Overview** page, select **Adobe Experience Manager as a Cloud Service** from the **Products and services** card.
 
@@ -63,7 +68,7 @@ Follow these steps to see the AEM product profiles from the Admin Console.
 
    ![Select instance](/help/journey-onboarding/assets/cloud-profiles-1.png)
 
-1. You will see the list of AEM as a Cloud Service product profiles that can be assigned to a user based on their roles.
+1. You can see the list of AEM as a Cloud Service product profiles that can be assigned to a user based on their roles.
 
    ![Product profiles](/help/journey-onboarding/assets/cloud-profiles-2.png)
 
@@ -77,11 +82,11 @@ These tasks require you to be a system administrator with the **Business Owner**
 
    ![Mange access](/help/journey-onboarding/assets/add-team1.png)
 
-1. A new tab navigates you to the Admin Console from where you have access to the author instance of the environment. Select **AEM Administrators** or **AEM Users** based on the permissions this individual needs to be given.
+1. A new tab navigates you to the Admin Console from where you have access to the author instance of the environment. Select **AEM Administrators** or **AEM Users** based on the permissions this individual must be given.
 
    ![Assign access](/help/journey-onboarding/assets/add-team2.png)
 
-1. Select `AEM Administrator` or `AEM User` and click on **Add User** as shown below and submit the necessary details to complete adding the team member.
+1. Select `AEM Administrator` or `AEM User` and click **Add User** as shown below and submit the necessary details to complete adding the team member.
 
    ![Add team member](/help/journey-onboarding/assets/add-team3.png)
 
@@ -95,13 +100,14 @@ Congratulations! The users that you assigned to AEM as a Cloud Service product p
 
 However if you would like to better understand how authors and developers use the system, you can continue on with two optional parts of this onboarding journey:
 
-* [Developer and Deployment Manager Tasks](developers.md) - Where you will learn how developers access git to store their custom code and deploy it using Cloud Manager pipelines.
-* [AEM User Tasks](aem-users.md) - Where you will learn how to access the AEM environment where you can start creating content.
+* [Developer and Deployment Manager Tasks](developers.md) - Where you learn how developers access git to store their custom code and deploy it using Cloud Manager pipelines.
+* [AEM User Tasks](aem-users.md) - Where you learn how to access the AEM environment where you can start creating content.
 
 ## Additional Resources {#additional-resources}
 
 The following are additional, optional resources if you would like to go beyond the content of the onboarding journey.
 
+* [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md) - Learn how AEM as a Cloud Service team and product profiles can grant and limit access to your licensed Adobe solutions.
 * [Managing Products and User Access in Admin Console](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) - Learn how to use the Admin Console to manage use access.
-* [Configuring access to AEM walk-through](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=en) - Check out this abridged walk-though to learn about configuring Adobe IMS users, user groups, and product profiles in the Admin Console.
+* [Configuring access to AEM walk-through](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html) - Check out this abridged walk-though to learn about configuring Adobe IMS users, user groups, and product profiles in the Admin Console.
 

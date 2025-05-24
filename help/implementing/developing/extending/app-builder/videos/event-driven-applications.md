@@ -1,8 +1,8 @@
 ---
 title: Event-driven App Builder applications
 description: Learn how to build event-driven App Builder applications.
-version: Cloud Service
-feature: App Builder
+version: Experience Manager as a Cloud Service
+feature: App Builder, Developing
 topic: Integrations, Development
 role: Developer, Architect
 level: Beginner

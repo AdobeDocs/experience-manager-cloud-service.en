@@ -1,9 +1,20 @@
 ---
-title: Create and use themes to stylize an Adaptive Form
-description: You can use themes to stylize and provide a visual identity to an Adaptive Form. You can share a theme across any number of Adaptive Forms.
+title: How can we create and use themes to style an adaptive form?
+description: Use Adaptive Form themes to style and provide a visual identity to an Adaptive Form. You can share a theme across any number of Adaptive Forms.
+feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
+role: User, Developer, Admin
 ---
 # Creating and using themes {#creating-and-using-themes}
+
+>[!NOTE]
+>
+> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components.
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html)                  |
+| AEM as a Cloud Service     | This article        |
 
 You can create and apply themes to stylize an Adaptive Form<!-- or an interactive communication-->. A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components. Theme is managed independently without a reference to an Adaptive Form<!-- or interactive communication -->.
 
@@ -211,7 +222,7 @@ The Theme Editor is divided in two panels:
       When you customize all the field components with a specific background color, all the fields such as age, name, and address inherit the background color. When you select a numeric box, such as age, and reduce its width, width of all the numeric boxes such as age, number of people in a family is reduced. Width of text boxes is not changed.
 
     * **State:** Lets you customize styles of an object in a specific state. For example, you can specify appearance of an object when it is in default, focus, disabled, hover, or error state.
-    * **Property Categories:** Styling properties are divided in various categories. For example Dimension & Position, Text, Background, Border, and Effects. Under each category, you provide styling information. For example, under Background, you can provide Background Color, and Image & Gradient.
+    * **Property Categories:** Styling properties are divided in various categories. For example, Dimension & Position, Text, Background, Border, and Effects. Under each category, you provide styling information. For example, under Background, you can provide Background Color, and Image & Gradient.
 
     * **Advanced:** Lets you add custom CSS to an object, which overrides the properties visual controls define if there is an overlap.
 
@@ -351,7 +362,7 @@ When you select a component in the Canvas, you see the component toolbar on top 
 * **[!UICONTROL Numeric Box Widget]**: Lets you select the component to customize its look in sidebar.
 * **[!UICONTROL Field Widget]**: Lets you select the generic component for styling. In this example, all text input components (text box/numeric box/numeric stepper/date input) are selected for styling.
 
-* ![field-level](assets/select_parent_icon.svg): Lets you select the parent component for styling. If you select numeric box and tap this icon, field component is selected. If you select field component and tap this icon, panel is selected. If you keep tapping this icon for selection, you end up selecting the layout for styling.
+* ![field-level](assets/select_parent_icon.svg): Lets you select the parent component for styling. If you select numeric box and select this icon, field component is selected. If you select field component and select this icon, panel is selected. If you keep tapping this icon for selection, you end up selecting the layout for styling.
 
 >[!NOTE]
 >
@@ -478,7 +489,7 @@ You can now use fonts available in a web-service in an Adaptive Form <!-- or int
 
 To configure Adobe Fonts in Experience Manager, perform the following steps:
 
-1. In the author instance, click ![Adobe Experience Manager](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Tools]** ![hammer](assets/hammer.png) &gt; **[!UICONTROL Deployment]** &gt; **[!UICONTROL Cloud Services]**.
+1. In the author instance, click ![Adobe Experience Manager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Tools]** ![hammer](assets/hammer.png) &gt; **[!UICONTROL Deployment]** &gt; **[!UICONTROL Cloud Services]**.
 1. On the **[!UICONTROL Cloud Services]** page, navigate to  and open the **[!UICONTROL Adobe Fonts]** option. Open the configuration folder, and click **[!UICONTROL Create]**. 
 1. On the **[!UICONTROL Create Configuration]** dialog, specify a title for the configuration, and click **[!UICONTROL Create]**.
 
@@ -577,7 +588,7 @@ To copy a theme, perform the following steps:
 
 1. In authoring instance, navigate to **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Themes]**.
 1. Open the Theme Library folder.
-1. In the Theme Library folder, hover pointer over the corresponding out-of-the-box theme and tap **[!UICONTROL Copy]**.
+1. In the Theme Library folder, hover pointer over the corresponding out-of-the-box theme and select **[!UICONTROL Copy]**.
 1. Paste the copied theme outside the Theme Library folder.
 1. Customize the copied theme.
 
@@ -640,7 +651,7 @@ You can see the generated CSS using the following options:
 
     * **Theme Editor:**
 
-      The Theme Editor lets you create themes to style your form <!-- or interactive communication -->. You can specify styling of components in a theme, that enable consistency in look and feel among multiple forms <!-- or interactive communications --> you develop. Specifying styling information in a theme, and then applying the theme to a form is recommended.
+      The Theme Editor lets you create themes to style your form <!-- or interactive communication -->. You can specify styling of components in a theme, that enable consistency in look and feel among multiple forms you develop. Specifying styling information in a theme, and then applying the theme to a form is recommended.
 
     * **Inline styling:**
 
@@ -658,3 +669,8 @@ You can see the generated CSS using the following options:
 
   Use theme editor if you want to style header and footer using styling options such as font style, background, and transparency.
   If you want to provide information such as a logo image, company name in header, and copyright information in the footer, use the form editor options.
+
+
+## See Also {#see-also}
+
+{{see-also}}

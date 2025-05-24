@@ -1,12 +1,14 @@
 ---
 title: Manage Dynamic Media assets
-description: Learn how to work with Dynamic Media assets.
+description: Learn how to work with and manage Dynamic Media assets by using workflows such as previewing, downloading, or publishing.
 contentOwner: Rick Brough
 feature: Asset Management
 role: Admin,User
 exl-id: 0dc6d577-a8ee-4dd5-8643-28862bb1394c
 ---
 # Manage Dynamic Media assets {#managing-assets}
+
+{{work-with-dynamic-media}}
 
 Managing Dynamic Media assets &ndash; images, video, and interactive assets &ndash; after they are uploaded, involves many tasks including previewing, downloading, or publishing.
 

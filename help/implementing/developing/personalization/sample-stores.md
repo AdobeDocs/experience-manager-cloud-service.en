@@ -2,6 +2,8 @@
 title: Sample ContextHub Store Candidates
 description: ContextHub provides several sample store candidates that you can use in your solutions
 exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
+feature: Developing, Personalization
+role: Admin, Architect, Developer
 ---
 # Sample ContextHub Store Candidates {#sample-contexthub-store-candidates}
 
@@ -13,7 +15,7 @@ ContextHub provides several sample store candidates that you can use in your sol
 
 >[!WARNING]
 >
->The sample store candidates are provided as reference configurations to help you build your own dedicated configuration for your project and as such should not be used directly.
+>The sample store candidates are provided as reference configurations to help you build your own dedicated configuration for your project. Do not use them directly.
 
 ## aem.segmentation Sample Store Candidate {#aem-segmentation-sample-store-candidate}
 
@@ -97,7 +99,7 @@ The store uses a data tree that is similar to the following example:
 
 >[!NOTE]
 >
->A security policy introduced in Chrome 50.x requires that that all geolocation related calls are made over a secured connection. Therefore AEM forces https usage for geolocation API calls if AEM is running over https as well. Otherwise http is used in order to comply with the policy of same origin.
+>A security policy introduced in Chrome 50.x requires that that all geolocation related calls are made over a secured connection. Therefore AEM forces https usage for geolocation API calls if AEM is running over https as well. Otherwise, http is used to comply with the policy of same origin.
 >
 >See [this Google blog post](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) for more details on the change in Chrome.
 

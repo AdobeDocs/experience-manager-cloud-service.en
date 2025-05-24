@@ -1,8 +1,8 @@
 ---
 title: Adobe Developer Console for App Builder
 description: Learn about Adobe Developer Console and App Builder projects.
-version: Cloud Service
-feature: App Builder
+version: Experience Manager as a Cloud Service
+feature: App Builder, Developing
 topic: Integrations, Development
 role: Developer, Architect
 level: Beginner

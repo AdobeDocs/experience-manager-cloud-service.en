@@ -1,7 +1,9 @@
 ---
 title: Replication
-description: Distribution and troubleshooting replication.
+description: Learn about distribution and troubleshooting replication in AEM as a Cloud Service.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
+feature: Operations
+role: Admin
 ---
 # Replication {#replication}
 
@@ -15,21 +17,20 @@ Adobe Experience Manager as a Cloud Service uses the [Sling Content Distribution
 
 >[!NOTE]
 >
->If you are interested in bulk publishing content, use the [Publish Content Tree Workflow](#publish-content-tree-workflow). 
->This workflow step is built specifically for Cloud Service and can efficiently handle large payloads. 
+>If you are interested in bulk publishing content, create a workflow using the [Tree Activation Workflow Step](#tree-activation), which can efficiently handle large payloads. 
 >It is not recommended to build your own bulk publishing custom code. 
->If you must customize for whatever reason, you can trigger this workflow / workflow step by using existing Workflow APIs. 
->It is always a good practice to only publish content that must be published. And, be prudent about not trying to publish large numbers of content, if not necessary. However, there are no limits as to how much content you can send through the Publish Content Tree Workflow.
+>If you must customize for whatever reason, you can trigger a workflow with this step by using existing Workflow APIs. 
+>It is always a good practice to only publish content that must be published. And be prudent about not trying to publish large numbers of content, if not necessary. However, there are no limits as to how much content you can send through workflows with the Tree Activation Workflow Step.
 
 ### Quick Un/Publish - Planned Un/Publish {#publish-unpublish}
 
 This feature lets you publish the selected pages immediately, without the additional options possible through the Manage Publication approach.
 
-For more information, see [Manage Publication](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
+For more information, see [Manage Publication](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication).
 
 ### On and Off Times - Trigger Configuration {#on-and-off-times-trigger-configuration}
 
-The additional possibilities of **On Time** and **Off Time** are available from the [Basic tab of Page Properties](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic).
+The additional possibilities of **On Time** and **Off Time** are available from the [Basic tab of Page Properties](/help/sites-cloud/authoring/sites-console/page-properties.md#basic).
 
 To realize the automatic replication for this feature, enable **Auto Replicate** in the [OSGi configuration](/help/implementing/deploying/configuring-osgi.md) **On Off Trigger Configuration**: 
 
@@ -41,24 +42,101 @@ Manage Publication offers more options than Quick Publish, allowing for the incl
 
 Including a folder's children for the "publish later" option invokes the Publish Content Tree workflow, described in this article.
 
-You can find more detailed information on Manage Publication on the [Publishing Fundamentals documentation](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
+You can find more detailed information on Manage Publication on the [Publishing Fundamentals documentation](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication).
 
-### Publish Content Tree Workflow {#publish-content-tree-workflow}
+### Tree Activation Workflow Step {#tree-activation}
 
-You can trigger a tree replication by choosing **Tools - Workflow - Models** and copying the **Publish Content Tree** out-of-the-box workflow model, as shown below:
+The Tree Activaton workflow step is intended to performantly replicate a deep hierarchy of content nodes. It automatically pauses when the queue grows too large in order to allow other replications to proceed in parallel with minimal latency. 
 
-![](/help/operations/assets/publishcontenttreeworkflow.png)
-
-Do not modify or invoke the original model. Instead, make sure to first copy the model and then modify or invoke that copy.
-
-Like all workflows, it can also be invoked via API. For more information, see [Interacting with Workflows Programmatically](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=en#extending-aem).
-
-Alternatively, you can create a Workflow Model that uses the `Publish Content Tree` process step:
+Create a Workflow Model that uses the `TreeActivation` process step:
 
 1. From the AEM as a Cloud Service homepage, go to **Tools - Workflow - Models**.
 1. In the Workflow Models page, press **Create** in the upper right corner of the screen.
 1. Add a title and a name to your model. For more information, see [Creating Workflow Models](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html).
-1. Select the newly created model from the list, and press **Edit**
+1. Select the created model from the list, and press **Edit**
+1. In the following window, delete the Step that appears by default
+1. Drag and drop the Process Step to the current model flow:
+   
+   ![Process Step](/help/operations/assets/processstep.png)
+
+1. Select the Process step in the flow and select **Configure** by pressing the wrench icon.
+1. Select the **Process** tab and select `Publish Content Tree` from the drop-down list, then check the **Handler Advance** check box
+   
+   ![Treeactivation](/help/operations/assets/new-treeactivationstep.png)
+
+1. Set any additional parameters in the **Arguments** field. Multiple comma-separated arguments can be strung together. For example:
+   
+   `enableVersion=false,agentId=publish,chunkSize=50,maxTreeSize=500000,dryRun=false,filters=onlyModified,maxQueueSize=10`  
+   
+   >[!NOTE]
+   >
+   >For the list of parameters, see the **Parameters** section below.
+
+1. Press **Done** to save the Workflow model.
+
+**Parameters**
+
+| Name           | default | description                                                     |
+| -------------- | ------- | --------------------------------------------------------------- |
+| path           |         | root path to start from                                         |
+| agentId        | publish | Replication agent name to use                                   |
+| chunkSize      | 50      | Number of paths to bundle into a single replication             |
+| maxTreeSize    | 500000  | Maximum number of nodes for a tree to be considered small       |
+| maxQueueSize   | 10      | Maximum number of items in replication queue                    |
+| enableVersion  | false   | Enable versioning                                               |
+| dryRun         | false   | When set to true replication is not acutally called             |
+| userId         |         | only for job. On workflow the user calling the workflow is used |
+| filters        |         | List of node filter names. See supported filter below           |
+
+**Support Filters**
+
+| Name          | Description                                 |
+| ------------- | ------------------------------------------- |
+| onlyModified  | Nodes: both new, and pre-existing that have been modified since the last publish |
+| onlyActivated | Nodes: that have been published before the last publish |
+
+
+**Resume Support**
+
+The workflow processes content in chunks, each of which represents a subset of the full content to be published.  If the workflow is stopped by the system, it will continue where it left off. 
+
+**Monitoring Workflow Progress**
+
+1. From the AEM as a Cloud Service homepage, go to **Tools - General - Jobs**.
+1. Look at the row corresponding to your workflow. The *progress* column gives an indication of how the replication is progressing. For example, it may display 41/564 and upon refreshing, it may be updated to 52/564.
+
+   ![Treeactivation progress](/help/operations/assets/treeactivation-progress.png)
+
+
+1. Selecting the row and opening it will provide additional details about the status of the workflow execution.
+
+   ![Treeactivation status details](/help/operations/assets/treeactivation-progress-details.png)
+
+
+
+### Publish Content Tree Workflow {#publish-content-tree-workflow}
+
+>[!NOTE]
+>
+>This feature is deprecated in favor of the more performant Tree Activation step, which can be included in a custom workflow.  
+
+<details>
+<summary>Click here to learn more about this deprecated feature.</summary>
+   
+You can trigger a tree replication by choosing **Tools - Workflow - Models** and copying the **Publish Content Tree** out-of-the-box workflow model, as shown below:
+
+![The Publish Content Tree Workflow Card](/help/operations/assets/publishcontenttreeworkflow.png)
+
+Do not invoke the original model. Instead, make sure to first copy the model and invoke that copy.
+
+Like all workflows, it can also be invoked via API. For more information, see [Interacting with Workflows Programmatically](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
+
+Alternatively, you can create a Workflow Model that uses the `Publish Content Tree` process step. 
+
+1. From the AEM as a Cloud Service homepage, go to **Tools - Workflow - Models**.
+1. In the Workflow Models page, press **Create** in the upper right corner of the screen.
+1. Add a title and a name to your model. For more information, see [Creating Workflow Models](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html).
+1. Select the created model from the list, and press **Edit**
 1. In the following window, drag and drop the Process Step to the current model flow:
    
    ![Process Step](/help/operations/assets/processstep.png)
@@ -83,7 +161,7 @@ Alternatively, you can create a Workflow Model that uses the `Publish Content Tr
 
 * `includeChildren` (boolean value, default: `false`). The value `false` means that only the path is published; `true` means that children are published too.
 * `replicateAsParticipant` (boolean value, default: `false`). If configured as `true`, the replication is using the `userid` of the principal which performed the participant step.
-* `enableVersion` (boolean value, default: `true`). This parameter determines if a new version is created upon replication.
+* `enableVersion` (boolean value, default: `false`). This parameter determines if a new version is created upon replication.
 * `agentId` (string value, default means only agents for publish are used). It is recommended to be explicit about the agentId; for example, setting it the value: publish. Setting the agent to `preview` publishes to the preview service.
 * `filters` (string value, default means that all paths are activated). Available values are: 
   * `onlyActivated` - only activate pages that have (already) been activated. Acts as a form of reactivation.
@@ -109,10 +187,7 @@ The following are examples of logs that are generated during a sample publish co
 ```
 21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
 ```
-
-**Resume Support**
-
-The workflow processes content in chunks, each of which represents a subset of the full content to be published. If the workflow is stopped by the system, it restarts and processes the chunk that was not yet processed. A log statement states that content was resumed from a specific path.
+</details>
 
 ### Replication API {#replication-api}
 
@@ -176,7 +251,7 @@ The overall `ReplicationStatus` of a resource is only modified if the replicatio
 
 ### Methods of Invalidating Content {#invalidating-content}
 
-You can directly invalidate content by using either Sling Content Invalidation (SCD) from author (the preferred method) or by using the Replication API to invoke the publish Dispatcher flush replication agent. Refer to the [Caching](/help/implementing/dispatcher/caching.md) page for further details.
+You can directly invalidate content by using either Sling Content Invalidation (SCD) from author (the preferred method) or by using the Replication API to invoke the publish Dispatcher flush replication agent. See [Caching](/help/implementing/dispatcher/caching.md) page for further details.
 
 **Replication API capacity limits**
 
@@ -190,14 +265,17 @@ The size of the content transmitted per replication call must not exceed `10 MB`
 
 To troubleshoot replication, navigate to the Replication Queues in the AEM Author Service Web UI:
 
-1. From the AEM Start Menu, navigate to **Tools > Deployment > Distribution**
-2. Select the card **publish**
-![Status](assets/publish-status.png "Status")
-3. Check the queue status which should be green
-4. You can test the connection to the replication service
-5. Select the **Logs** tab which shows the history of content publications
+1. From the AEM Start Menu, navigate to **Tools** > **Deployment** > **Distribution**
+1. Select the card **publish**
+
+   ![Status](assets/publish-status.png "Status")
+
+1. Check the queue status which should be green
+1. You can test the connection to the replication service
+1. Select the **Logs** tab which shows the history of content publications
 
 ![Logs](assets/publish-logs.png "Logs")
 
 If the content couldn't be published, the whole publication is reverted from the AEM Publish Service.
+
 In that case, the main, editable queue shows a red status and should be reviewed to identify which items caused the cancelation of the publication. By clicking that queue, its pending items show up, from which a single item or all items can be cleared if needed.

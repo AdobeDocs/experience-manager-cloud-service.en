@@ -10,7 +10,7 @@ exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
 
 To add the Dynamic Media functionality to assets that you use on your websites, you can add the **Dynamic Media**, **Interactive Media**, **Panoramic Media**, or **Video 360 Media** component directly on the page. You enter Layout mode and enable the Dynamic Media components. Then you add these components to the page and add assets to the component. The Dynamic Media components are smart - they know whether you are adding an image or a video and the configuration options available change accordingly.
 
-You add Dynamic Media assets directly to the page if you are using [!DNL Adobe Experience Manager] as your WCM. If you are using a third party for your WCM, either [link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) or [embed](/help/assets/dynamic-media/embed-code.md) your assets. For a responsive third-party website, see [delivering optimized images to a responsive site](/help/assets/dynamic-media/responsive-site.md).
+You add Dynamic Media assets directly to the page if you are using [!DNL Adobe Experience Manager] as your WCM. If you are using a third-party for your WCM, either [link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) or [embed](/help/assets/dynamic-media/embed-code.md) your assets. For a responsive third-party website, see [delivering optimized images to a responsive site](/help/assets/dynamic-media/responsive-site.md).
 
 >[!NOTE]
 >
@@ -141,9 +141,9 @@ You can edit the following Dynamic Media Settings by selecting the **[!UICONTROL
 
   This option is the only one available if you are viewing image sets, spin sets, or mixed media sets. The viewer presets displayed are also smart&ndash;only relevant viewer presets appear.
 
-* **[!UICONTROL Viewer modifiers]** - Viewer modifiers take the form of name=value pair with a & delimiter and let you change viewers as outlined in the Viewers Reference Guide. An example of a viewer modifier is `posterimage=img.jpg&caption=text.vtt,1` which sets a different image for the video thumbnail and associates a closed caption/subtitle file with the video.
+* **[!UICONTROL Viewer modifiers]** - Viewer modifiers take the form of name=value pair with a & delimiter and let you change viewers as outlined in the Viewers Reference Guide. An example of a viewer modifier is `posterimage=img.jpg&caption=text.vtt,1` which sets a different image for the video thumbnail and associates a closed caption file with the video.
 
-* **[!UICONTROL Image preset]** - Select an existing image preset from the drop-down list. If the image preset you are looking for is not visible, you must make it visible. See Managing Image Presets. You cannot select a viewer preset if you are using an image preset and conversely.
+* **[!UICONTROL Image preset]** - Select an existing image preset from the drop-down list. If the image preset you are looking for is not visible, you must make it visible. See [Manage Image Presets](/help/assets/dynamic-media/managing-image-presets.md). You cannot select a viewer preset if you are using an image preset and conversely.
 
   This option is not available if you are viewing image sets, spin sets, or mixed media sets.
 
@@ -233,7 +233,7 @@ You can edit the following Dynamic Media Setting by selecting **[!UICONTROL Edit
 
     You can edit the following Advanced Settings by selecting **[!UICONTROL Edit]** in the component.
 
-* **[!UICONTROL Enable Aspect Ration match]** - To let Dynamic Media pick a smart crop rendition with an aspect ratio that best matches the aspect ratio of the original image, select this option.
+* **[!UICONTROL Enable Aspect Ratio match]** - To let Dynamic Media pick a smart crop rendition with an aspect ratio that best matches the aspect ratio of the original image, select this option.
 
 * **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization.
 
@@ -303,7 +303,7 @@ You can edit the following **[!UICONTROL General]** settings by selecting **[!UI
 Panoramic Media component is for those assets that are spherical panoramic images. Such images provide a 360° viewing experience of a room, property, location, or landscape. For an image to qualify as a spherical panorama, it must have either one OR both of the following:
 
 * An aspect ratio of 2:1.
-* Tagged with the keywords `equirectangular` or (`spherical` + `panorama`) or (`spherical` + `panoramic`). See [Using Tags](/help/sites-cloud/authoring/features/tags.md).
+* Tagged with the keywords `equirectangular` or (`spherical` + `panorama`) or (`spherical` + `panoramic`). See [Using Tags](/help/sites-cloud/authoring/sites-console/tags.md).
 
 Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the **[!UICONTROL Panoramic Media]** WCM component.
 

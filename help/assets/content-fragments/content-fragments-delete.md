@@ -2,6 +2,9 @@
 title: Content Fragments - Delete Considerations (Assets - Content Fragments)
 description: Review these important considerations before defining your Content Fragments deletion policies in AEM. Content Fragments are a powerful tool for delivering headless content, and the implications of deleting them must be carefully considered.
 exl-id: 69c08f2f-4d51-4aea-957e-ee81c4604377
+feature: Content Fragments
+role: User
+solution: Experience Manager Sites
 ---
 # Content Fragments - Delete Considerations {#content-fragments-delete-considerations}
 
@@ -15,14 +18,14 @@ In relation to delete permissions, Content Fragments must be considered at two l
 
 1. **The Content Fragment as a single entity.**
 
-    * **Use case**: A user who needs to edit/update a content fragment - **and delete an entire fragment**.
+    * **Use case**: A user who must edit/update a content fragment - **and delete an entire fragment**.
     * **Permissions**: The Delete permission can be assigned through User and/or Group Management. <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
 2. **The multiple sub-entities that make up a content fragment; for example, variations, sub-nodes.**
 
    Basic operation of the content fragment editor requires that such transient sub-elements can be deleted. For example, when manipulating variations; also when editing metadata or managing associated content.
 
-    * **Use case**: A user who needs to edit/update a content fragment - **without being allowed to delete an entire fragment**.
+    * **Use case**: A user who must edit/update a content fragment - **without being allowed to delete an entire fragment**.
     * **Permissions**: See [Permissions Required for Editor Functionality Only](#permissions-required-for-editor-functionality-only).
 
 >[!NOTE]
@@ -43,7 +46,7 @@ For example, when manipulating variations; also when editing metadata or managin
 >
 >The delete permissions, required to edit/update a Content Fragment, are included in the Delete permission assigned through User and/or Group Management. <!-- The delete permissions, required to edit/update a Content Fragment, are included in the Delete permission [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
-The permissions needed to edit/update a fragment need to be applied to either the node containing the content fragment, or an appropriate parent node (at any level under `/content/dam`). When assigned to such a parent node, the permissions will be applied to all nodes within that branch.
+The permissions needed to edit/update a fragment need to be applied to either the node containing the content fragment, or an appropriate parent node (at any level under `/content/dam`). When assigned to such a parent node, the permissions are applied to all nodes within that branch.
 
 For example, a folder that will hold all content fragments, such as:
 
@@ -82,5 +85,5 @@ The `add` and `modify` privileges can also be administered in CRXDE Lite, or usi
 
 For example, the definition of the `remove` privileges for a group `content-authors-no-delete`:
 
-![cf-delete-03](assets/cf-delete-03.png)
+![Remove privileges](assets/cf-delete-03.png)
 -->

@@ -1,0 +1,190 @@
+---
+title: Approve assets for Content Hub
+description: Learn how to approve assets in Assets as a Cloud Service to make them available in Content Hub.
+exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
+---
+# Approve assets for Content Hub {#approve-assets-content-hub}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime and Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets integration with Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI Extensibility</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Enable Dynamic Media Prime and Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media with OpenAPI capabilities</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets developer documentation</b></a>
+        </td>
+    </tr>
+</table>
+
+![Approve assets for Content Hub](assets/content-hub-approve-assets.png)
+
+>[!AVAILABILITY]
+>
+>Content Hub guide is now available in PDF format. Download the entire guide and use Adobe Acrobat AI Assistant to answer your queries. 
+>
+>[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+
+Brand Managers and Marketers maintain strict control over brand assets. Only approved and latest version of the asset is available for use within Content Hub, ensuring brand consistency across all channels and applications. 
+
+You can approve assets using AEM Assets as a Cloud Service to streamline asset management, ensuring a controlled and efficient process for handling assets.
+
+## Before you begin {#pre-requisites}
+
+Before you begin, you should have:
+
+* Access to AEM Assets as a Cloud Service
+
+* Write permissions to edit asset metadata to be able to edit the **[!UICONTROL Status]** field available in [asset properties](/help/assets/manage-organize-assets-view.md##manage-asset-status) for an asset.
+
+## Approve assets for Content Hub{#approve-assets-for-content-hub}
+
+The assets marked as `approved` in Assets as a Cloud Service are automatically available in Content Hub.
+
+>[!NOTE]
+>
+>Assets as a Cloud Service and Content Hub must use the same organization for the assets to display in Content Hub.
+
+To set the asset status as `approved` using Assets view within AEM as a Cloud Service:
+
+1. Select the asset, and click **[!UICONTROL Details]** in the toolbar.
+
+1. In the **[!UICONTROL Basic]** tab, select the asset status as `approved` from the **[!UICONTROL Status]** drop-down list.
+1. Click **[!UICONTROL Save]**.
+
+   >[!VIDEO](https://video.tv.adobe.com/v/3433172)
+
+If you need to approve assets using Admin view, see [Approve assets using Admin view](/help/assets/approve-assets.md#approve-assets).
+
+## Bulk Approve assets for Content Hub using Assets view {#bulk-approve-assets-content-hub}
+
+Bulk approve assets using Assets view for AEM Assets as a Cloud Service. All assets, approved in bulk, then become available in Content Hub.
+
+To bulk approve assets within a folder in Assets view:
+
+1. Select the asset(s) and click **[!UICONTROL Bulk Metadata Edit]**.
+
+1. Select **[!UICONTROL Approved]** in the **[!UICONTROL Status]** field available in the [!UICONTROL Properties] section in the right pane.
+
+1. Click **[!UICONTROL Save]**.
+
+## Set approval target {#set-approval-target}
+
+Assets view enables you to publish approved assets to Dynamic Media with OpenAPI capabilities, Content Hub, or both based on the value that you set in the **Approval Target** field available on the Asset Details page.
+
+To set approval target:
+
+1. Select the asset, and click **[!UICONTROL Details]** in the toolbar.
+
+1. In the **[!UICONTROL Basic]** tab, select the asset status from the **[!UICONTROL Status]** drop-down list. The possible values include Approved, Rejected, and No Status (default).
+
+1. If you select **Approved** in step 2, select an approval target. The possible values include Delivery and Content Hub. 
+
+   * **Delivery** is the default option selected in the drop-down menu and it publishes the asset to both [Dynamic Media with OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) and [Content Hub](/help/assets/product-overview.md), if both are enabled for Experience Manager Assets. 
+
+   * Selecting **Content Hub** publishes the asset just to Content Hub. Content Hub displays as an option only if it is enabled for Experience Manager Assets.
+
+   * If you do not select an option from the drop-down list, the default option enabled for your AEM as a Cloud Service environment is automatically applied to the asset.
+
+
+   For more information on the available options, see [Default Approval Target and publish destinations for approved assets](#default-approval-target-options-publish-destinations).
+
+   >[!NOTE]
+   >
+   >Setting an approval target is a limited availability feature. You can get it enabled or disabled by creating a support ticket. If you have Dynamic Media with OpenAPI enabled, it is enabled by default.
+
+   ![Approval status](/help/assets/assets/approval-status-delivery.png)
+
+1. Specify other asset properties and click **[!UICONTROL Save]**.
+
+Some additional points to note include:
+
+* When you are not using the default metadata form and cannot view the **[!UICONTROL Approval Target]** field, [edit your metadata form](/help/assets/metadata-assets-view.md#metadata-forms) to drag the **[!UICONTROL Approval for]** field from the available components to your metadata form and click **[!UICONTROL Save]**.
+
+* When you select the approval target as `Content Hub` using the Assets view, the assets are made available in Content Hub to the users that are part of the same organization.
+
+### Default Approval Target and publish destinations for approved assets {#default-approval-target-options-publish-destinations}
+
+The following table illustrates the prerequisites for display of `Approval Target` dropdown list and default approval target based on the enablement of DM with OpenAPI and Content Hub on your AEM as a Cloud Service environment:
+
+| Dynamic Media with OpenAPI| Content Hub | Approval Target dropdown list displays?| Default approval target for approved assets | Publish destination |
+| --- | --- | --- | --- |---|
+| Enabled | Enabled | Yes | Delivery | Dynamic Media with OpenAPI and Content Hub |
+| Not enabled | Enabled | Yes | Content Hub | Content Hub |
+| Enabled | Not enabled | Yes | Delivery | Dynamic Media with OpenAPI|
+| Not enabled | Not enabled | No | N/A | N/A |
+
+## Automate approval for newly ingested assets in Admin view {#automate-approval-newly-ingested-assets}
+
+After switching from Assets view to Admin view, you can set up folder settings so that all new assets added to the folder get approved automatically.
+
+You can switch between Admin and Assets views in the following ways:
+![My Workspace overview](assets/assets-view.png)
+
+Follow these steps to automate approval for newly ingested assets in [!DNL Experience Manager Admin view]:
+
+1. Create a folder in the author environment (https://author-pXXX-eYYY.adobeaemcloud.com). Replace _XXX_ with your program ID and _YYY_ with the environment ID from the Experience Manager.
+1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]**.
+1. Click **[!UICONTROL Create]** in the top right side of the page.
+1. Add a Profile title and click **[!UICONTROL Create]**. The metadata profile is successfully created.
+1. Select the newly created metadata profile and click **[!UICONTROL Edit _(e)_]**. <br>The **[!UICONTROL Edit Metadata Profile]** form opens with the **[!UICONTROL Basic]** tab highlighted. 
+1. Drag and drop a **[!UICONTROL Single Line Text Field]** from the **[!UICONTROL Build Form]** section in right side to Metadata section in the form.
+1. Click the newly added field, and then do the following updates in the **[!UICONTROL Settings]** panel:
+    1. Change the **[!UICONTROL Field Label]** to _Approved Assets_.
+    1. Update the **[!UICONTROL Map to property]** to _./jcr:content/metadata/dam:status_. 
+    1. Change the Default value to _approved_.
+
+1. Similar to Step 6, drag a **[!UICONTROL Single Line Text Field]** from the **[!UICONTROL Build Form]** section in right side to Metadata section in the form.
+1. Click the newly added field, and then do the following updates in the **[!UICONTROL Settings]** panel:
+    1. Change the **[!UICONTROL Field Label]** to _Activation Target_.
+    1. Update the **[!UICONTROL Map to property]** to _./jcr:content/metadata/dam:activationTarget_. 
+    1. Change the Default value to _contenthub_.
+    
+1. Click **[!UICONTROL Save]**.
+1. In the **[!UICONTROL Metadata Profiles]** page, select the newly created metadata profile.
+1. Click **[!UICONTROL Apply Metadata Profile to Folder(s)]** from the top action bar.
+1. Select the folder(s) you need to approve and click **[!UICONTROL Apply]**.
+<br> The permission for the entire folder is set for approval and any assets uploaded to this folder is automatically approved.
+   
+   >[!VIDEO](https://video.tv.adobe.com/v/3427431)
+
+>[!NOTE]
+> 
+>This approach approves the newly created assets in the folder. For existing assets in the folder, you need to manually select and approve them.
+
+## Manage assets uploaded using Content Hub {#manage-assets-uploaded-using-content-hub}
+
+[Content Hub users with rights to add assets](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) can [add assets to the Content Hub](/help/assets/upload-brand-approved-assets.md) either from local file system or import assets from OneDrive or Dropbox data sources. All assets display at the top-level in Content Hub irrespective of the folder structure available on your local file system or OneDrive and Dropbox data sources to enhance the search capabilities.
+
+The display of assets uploaded using Content Hub depends on if you have [enabled the Auto-approval toggle](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub):
+
+* If the **[!UICONTROL Auto-approval]** toggle is enabled, the assets that you upload using Content Hub are automatically available.
+
+* If the **[!UICONTROL Auto-approval]** toggle is disabled, the assets that you upload using Content Hub do not display automatically. The assets are available in the `hydrated-assets` folder of your Assets as a Cloud Service environment. Navigate to the folder and [bulk edit](#bulk-approve-assets-content-hub) the status of those assets to `Approved` for those assets to display in Content Hub.
+
+![Content Hub approval process](/help/assets/assets/content-hub-approval.png)

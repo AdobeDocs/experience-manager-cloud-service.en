@@ -3,6 +3,8 @@ title: Generating Access Tokens for Server-Side APIs (Legacy)
 description: Learn how to facilitate communication between a third-party server and AEM as a Cloud Service by generating a secure JWT Token
 hidefromtoc: yes
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Generating Access Tokens for Server-Side APIs (Legacy) {#generating-access-tokens-for-server-side-apis-legacy}
 
@@ -13,11 +15,11 @@ The server-to-server flow is described below, along with a simplified flow for d
 <!-- ERROR: Not Found (HTTP error 404)
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
 
 ## The Server-to-server Flow {#the-server-to-server-flow}
 
-A user with an IMS org administrator role, and who is also a member of the AEM Users or AEM Administrators Product Profile on AEM Author, can generate an AEM as a Cloud Service credential. That credential can later be retrieved by a user with the AEM as a Cloud Service Environment administrator role and should be installed on the server and needs be treated carefully as a secret key. This JSON format file contains all the data required to integrate with an AEM as a Cloud Service API. The data is used to create a signed JWT token, which is exchanged with IMS for an IMS access token. This access token can then be used as a Bearer authentication token to make requests to AEM as a Cloud Service. The credentials expire after one year by default, but they can be refreshed when needed, as described [here](#refresh-credentials).
+A user with an IMS org administrator role, and who is also a member of the AEM Users or AEM Administrators Product Profile on AEM Author, can generate an AEM as a Cloud Service credential. That credential can later be retrieved by a user with the AEM as a Cloud Service Environment administrator role and should be installed on the server and needs be treated carefully as a secret key. This JSON format file contains all the data required to integrate with an AEM as a Cloud Service API. The data is used to create a signed JWT token, which is exchanged with IMS for an IMS access token. This access token can then be used as a Bearer authentication token to make requests to AEM as a Cloud Service. The credentials expire after one year by default, but they can be refreshed when needed, see [Refresh Credentials](#refresh-credentials).
 
 The server-to-server flow involves the following steps:
 
@@ -142,7 +144,7 @@ By default, credential on AEM as a Cloud Service expire after a year. To ensure 
 
 ![Credential Refresh](assets/credential-refresh.png)
 
-After pressing the button, a new set of credentials will be generated. You can update your secret storage with the new credentials and validate that they work as they should.
+After pressing the button, a new set of credentials is generated. You can update your secret storage with the new credentials and validate that they work as they should.
 
 >[!NOTE]
 >

@@ -1,11 +1,14 @@
 ---
 title: Content Fragment Models (Assets - Content Fragments)
-description: Learn how Content Fragment Models serve as a foundation for your headless content in AEM and how to create Content Fragments with structured content.
+description: Learn how Content Fragment Models serve as a foundation for your headless content in AEM, allowing you to create Content Fragments with structured content.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
+feature: Content Fragments, GraphQL API
+role: User, Admin, Architect
+solution: Experience Manager Sites
 ---
 # Content Fragment Models {#content-fragment-models}
 
-Content Fragment Models in AEM define the structure of content for your [content fragments,](/help/assets/content-fragments/content-fragments.md) serving as a foundation of your headless content.
+Content Fragment Models in AEM define the structure of content for your [content fragments](/help/assets/content-fragments/content-fragments.md), serving as a foundation of your headless content.
 
 To use Content Fragment Models you:
 
@@ -13,6 +16,12 @@ To use Content Fragment Models you:
 1. [Create](#creating-a-content-fragment-model), and [configure](#defining-your-content-fragment-model), your Content Fragment Models
 1. [Enable your Content Fragment Models](#enabling-disabling-a-content-fragment-model) for use when creating Content Fragments 
 1. [Allow your Content Fragment Models on the required Assets folders](#allowing-content-fragment-models-assets-folder) by configuring **Policies**.
+
+>[!NOTE]
+>
+>Content Fragments are a Sites feature, but are stored as **Assets**. 
+>
+>Content Fragments and Content Fragment Models are now primarily managed with the **[Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** console, though Content Fragments can still be managed from the **Assets** console, and Content Fragment Models from the **Tools** console. This section covers management from the **Assets** and **Tools** consoles.
 
 ## Creating a Content Fragment Model {#creating-a-content-fragment-model}
 
@@ -24,7 +33,12 @@ To use Content Fragment Models you:
    >
    >If the [use of content fragment models have not been enabled](/help/assets/content-fragments/content-fragments-configuration-browser.md), the **Create** option will not be available.
 
-1. Specify the **Model Title**. You can also add **Tags**, a **Description**, and select **Enable model** to [enable the model](#enabling-disabling-a-content-fragment-model) if required.
+1. Specify the **Model Title**. 
+   You can also define various properties; for example, add **Tags**, a **Description**, and select **Enable model** to [enable the model](#enabling-disabling-a-content-fragment-model) if necessary. 
+
+    >[!NOTE]
+    >
+    >For details about the **Default Preview URL Pattern** see [Content Fragment Model - Properties](#content-fragment-model-properties).
 
    ![title and description](assets/cfm-models-02.png)
 
@@ -50,7 +64,7 @@ The content fragment model effectively defines the structure of the resulting co
 
    >[!NOTE]
    >
-   >When a field as **Required**, the **Label** indicated in the left pane will be marked with an asterix (**&#42;**).
+   >When a field as **Required**, the **Label** indicated in the left pane is marked with an asterix (**&#42;**).
 
   ![properties](assets/cfm-models-03.png)
 
@@ -69,7 +83,7 @@ The content fragment model effectively defines the structure of the resulting co
        >
        >When manually updating the property **Property Name** for a data type, note that names must contain only A-Z, a-z, 0-9 and underscore "_" as special character.
        >
-       >If models created in earlier versions of AEM contain illegal characters, please remove or update those characters.
+       >If models created in earlier versions of AEM contain illegal characters, remove or update those characters.
 
      For example:
 
@@ -77,7 +91,7 @@ The content fragment model effectively defines the structure of the resulting co
 
 1. **To Remove a Field**
 
-   Select the required field, then click/tap the trash-can icon. You will be asked to confirm the action.
+   Select the required field, then select the trash-can icon. You are asked to confirm the action.
 
    ![remove](assets/cfm-models-06.png)
 
@@ -92,36 +106,59 @@ The content fragment model effectively defines the structure of the resulting co
 A selection of data types is available for defining your model:
 
 * **Single line text**
-  * Add one, or more, fields of a single line of text; the maximum length can be defined
+  * Add a field for a single line of text; the maximum length can be defined
+  * The field can be configured to allow fragment authors to create new instances of the field  
+
 * **Multi line text**
-  * A text area that can be Rich Text, Plain Text or Markdown
+  * A text area that can be Rich Text, Plain Text, or Markdown
+  * The field can be configured to allow fragment authors to create new instances of the field  
+
+  >[!NOTE]
+  >
+  >Whether the text area is Rich Text, Plain Text, or Markdown, is defined in the model by the property **Default Type**. 
+  >
+  >This format cannot be changed from the [Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md), but only from the Model.
+
 * **Number**
-  * Add one, or more, numerical fields
+  * Add a numerical field
+  * The field can be configured to allow fragment authors to create new instances of the field  
+
 * **Boolean**
   * Add a boolean checkbox
+
 * **Date and time**
-  * Add a date and/or time
+  * Add a date and/or time field
+
 * **Enumeration**
-  * Add a set of checkbox, radio button(s), or dropdown fields
+  * Add a set of Checkbox, Radio Button, or Dropdown fields
+    * You can specify the options available to the fragment author
+
 * **Tags**
   * Allows fragment authors to access and select areas of tags
+
 * **Content Reference**
   * References other content, of any type; can be used to [create nested content](#using-references-to-form-nested-content)
   * If an image is referenced, you can opt to show a thumbnail
+  * The field can be configured to allow fragment authors to create new instances of the field  
+
 * **Fragment Reference**
-  * References other content fragments; can be used to [create nested content](#using-references-to-form-nested-content)
-  * The data type can be configured to allow fragment authors to:
-    * Edit the referenced fragment directly.
-    * Create a new content fragment, based on the appropriate model  
+  * References other Content Fragments; can be used to [create nested content](#using-references-to-form-nested-content)
+  * The field can be configured to allow fragment authors to:
+    * Edit the referenced fragment directly
+    * Create a new Content Fragment, based on the appropriate model 
+    * Create new instances of the field 
+
 * **JSON Object**
-  * Allows the content fragment author to enter JSON syntax into the corresponding elements of a fragment. 
+  * Allows the Content Fragment author to enter JSON syntax into the corresponding elements of a fragment. 
     * To allow AEM to store direct JSON that you have copy/pasted from another service.
-    * The JSON will be passed through, and output as JSON in GraphQL.
-    * Includes JSON syntax-highlighting, auto-complete and error-highlighting in the content fragment editor.
+    * The JSON is passed through, and output as JSON in GraphQL.
+    * Includes JSON syntax-highlighting, auto-complete, and error-highlighting in the Content Fragment editor.
+
 * **Tab Placeholder**
   * Allows the introduction of tabs for use when editing the Content Fragment content.
-    This will be shown as a divider in the model editor, separating sections of the list of content data types. Each instance represents the start of a new tab.
-    In the fragment editor each instance will appear as a tab.
+    * These are shown as dividers in the model editor, separating sections of the list of content data types. Each instance represents the start of a new tab.
+    * In the fragment editor each instance appears as a tab.
+
     >[!NOTE]
     >
     >This data type is purely used for formatting, it is ignored by the AEM GraphQL schema.
@@ -136,13 +173,13 @@ Many properties are self-explanatory, for certain properties additional details 
 
   >[!CAUTION]
   >
-  >If models created in earlier versions of AEM contain illegal characters, please remove or update those characters.
+  >If models created in earlier versions of AEM contain illegal characters, remove or update those characters.
 
 * **Render As**
-  The various options for realizing/rendering the field in a fragment. Often this allows you to define whether the author will see a single instance of the field, or will be allowed to create multiple instances.
+  The various options for realizing/rendering the field in a fragment. Often this property lets you define whether the author sees a single instance of the field, or is allowed to create multiple instances. When **Multiple Field** is used you can define the minimum and maximum number of items - see [Validation](#validation) for further details. 
 
 * **Field Label**
-  Entering a **Field Label** will autogenerate a **Property Name**, which can then be manually updated if required.
+  Entering a **Field Label** will autogenerate a **Property Name**, which can then be manually updated if necessary.
 
 * **Validation**
   Basic validation is available by mechanisms such as the **Required** property. Some data types have addition validation fields. See [Validation](#validation) for further details.
@@ -162,7 +199,7 @@ Many properties are self-explanatory, for certain properties additional details 
 
   This is used to ensure that content authors cannot repeat content already added in another fragment of the same model. 
 
-  For example, a **Single line text** field called `Country` in the Content Fragment Model cannot have the value `Japan` in two dependent Content Fragments. A warning will be issued when the second instance is attempted.
+  For example, a **Single line text** field called `Country` in the Content Fragment Model cannot have the value `Japan` in two dependent Content Fragments. A warning is issued when the second instance is attempted.
 
   >[!NOTE]
   >
@@ -171,6 +208,10 @@ Many properties are self-explanatory, for certain properties additional details 
   >[!NOTE]
   >
   >Variations can have the same *unique* value as variations of the same fragment, but not the same value as used in any variation of other fragments.
+
+  >[!CAUTION]
+  >
+  >If you want to use MSM (which creates copies of Content Fragments), then any **Unique** constraints should be removed from any Data Types used in the respective Content Fragment Models.
 
 * See **[Content Reference](#content-reference)** for more details about that specific data type and its properties.
 
@@ -197,6 +238,17 @@ Various data types now include the possibility to define validation requirements
   * Only images within a predefined range of width and/or height (in pixels) can be referenced. 
 * **Fragment Reference**
   * Test for a specific content fragment model.
+* **Min Number of Items** / **Max Number of Items**
+
+  Fields that have been defined as a **Multiple Field** (set with **Render As**) have the options:
+
+  * **Min Number of Items**
+  * **Max Number of Items**
+
+  These are validated:
+  
+  * The max value is validated in the [original Content Fragment Editor](/help/assets/content-fragments/content-fragments-variations.md).
+  * Both are validated in the [Content Fragment Editor](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 ## Using References to form Nested Content {#using-references-to-form-nested-content}
 
@@ -208,7 +260,8 @@ Content Fragments can form nested content, using either of the following data ty
 
 * **[Fragment Reference](#fragment-reference-nested-fragments)** (Nested Fragments)
   * References other fragments, dependent on the specific models specified.
-  * Allows you to include/retrieve structured data.
+  * Lets you include/retrieve structured data.
+
     >[!NOTE]
     >
     >This method is of particular interest in conjunction with [Headless Content Delivery using Content Fragments with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
@@ -226,7 +279,7 @@ Content Fragments can form nested content, using either of the following data ty
 
 ### Content Reference {#content-reference}
 
-The Content Reference allows you to render content from another source; for example, image or content fragment.
+The Content Reference lets you render content from another source; for example, image or content fragment.
 
 In addition to standard properties you can specify:
 
@@ -241,7 +294,7 @@ In addition to standard properties you can specify:
 
 ### Fragment Reference (Nested Fragments) {#fragment-reference-nested-fragments}
 
-The Fragment Reference references one, or more, content fragments. This feature of particular interest when retrieving content for use in your app, as it allows you to retrieve structured data with multiple layers.
+The Fragment Reference references one, or more, content fragments. This feature of particular interest when retrieving content for use in your app, as it lets you retrieve structured data with multiple layers.
 
 For example:
 
@@ -282,7 +335,7 @@ In addition to standard properties you can define:
 
 * **Allow Fragment Creation**
 
-  This will allow the fragment author to create a new fragment based on the appropriate model.
+  This allows the fragment author to create a fragment based on the appropriate model.
 
   * **fragmentreferencecomposite** - allows the fragment author to build a composite, by selecting multiple fragments
 
@@ -303,6 +356,12 @@ You can edit the **Properties** of a Content Fragment Model:
   * **Tags**
   * **Description**
   * **Upload Image**
+  * **Default Preview URL Pattern**
+    
+    >[!NOTE]
+    >
+    >This is only used by the *new* Content Fragment Editor. See [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties) for further information.
+
 
 ## Enabling or Disabling a Content Fragment Model {#enabling-disabling-a-content-fragment-model}
 
@@ -310,9 +369,9 @@ For full control over the use of your Content Fragment Models they have a status
 
 ### Enabling a Content Fragment Model {#enabling-a-content-fragment-model}
 
-Once a model has been created it needs to be enabled so that it:
+When a model is created it must be enabled so that it:
 
-* Is available for selection when creating a new Content Fragment.
+* Is available for selection when creating a Content Fragment.
 * Can be referenced from within a Content Fragment Model.
 * Is available to GraphQL; so the schema is generated.
 
@@ -351,7 +410,7 @@ To implement content governance, you can configure **Policies** on Assets folder
 
 >[!NOTE]
 >
->The mechanism is similar to [allowing page templates](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) for a page, and its children, in advanced properties of a page. 
+>The mechanism is similar to [allowing page templates](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author) for a page, and its children, in advanced properties of a page. 
 
 To configure the **Policies** for **Allowed Content Fragment Models**:
 
@@ -376,6 +435,7 @@ To configure the **Policies** for **Allowed Content Fragment Models**:
 1. **Save** any changes.
 
 The Content Fragment Models allowed for a folder are resolved as follows:
+
 * The **Policies** for **Allowed Content Fragment Models**.
 * If empty, then try to determine the policy using the inheritance rules.
 * If the inheritance chain does not deliver a result, then look at the **Cloud Services** configuration for that folder (also first directly and then via inheritance).
@@ -396,7 +456,7 @@ To delete a content fragment model:
 
    >[!NOTE]
    >
-   >If the model is referenced a warning will be given. Take action appropriately.
+   >If the model is referenced, a warning is given. Take action appropriately.
 
 ## Publishing a Content Fragment Model {#publishing-a-content-fragment-model}
 
@@ -408,11 +468,11 @@ To publish a content fragment model:
 
 1. Navigate to the folder holding your content fragment model.
 1. Select your model, followed by **Publish** from the toolbar.
-   The published status will be indicated in the console. 
+   The published status is indicated in the console. 
 
    >[!NOTE]
    >
-   >If you publish a content fragment for which the model has not yet been published, a selection list will indicate this and the model will be published with the fragment.
+   >If you publish a content fragment for which the model has not yet been published, a selection list indicates this and the model is published with the fragment.
 
 ## Unpublishing a Content Fragment Model {#unpublishing-a-content-fragment-model}
 
@@ -424,13 +484,13 @@ To unpublish a content fragment model:
 
 1. Navigate to the folder holding your content fragment model.
 1. Select your model, followed by **Unpublish** from the toolbar.
-   The published status will be indicated in the console. 
+   The published status is indicated in the console. 
 
 If you try to unpublish a model that is currently used by one or more fragments, then an error warning will inform you of this: 
 
 ![Content Fragment Model error message when unpublishing a model that is in use](assets/cfm-model-unpublish-error.png)
 
-The message will suggest that you check the [References](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) panel to investigate further:
+The message will suggest that you check the [References](/help/sites-cloud/authoring/basic-handling.md#references) panel to investigate further:
 
 ![Content Fragment Model in References](assets/cfm-model-references.png)
 
@@ -452,7 +512,7 @@ This feature provides governance for Content Fragment Models that have been publ
 
 ### The Requirements {#the-requirements}
 
-* To make users aware of the risks when editing models that are already used for live content delivery - in other words, models that have been published). 
+* To make users aware of the risks when editing models that are already used for live content delivery - in other words, models that have been published.
 
 * Also, to avoid unintended changes. 
 
@@ -476,7 +536,7 @@ You can manage **Locked** models from either the console, or the model editor:
 
   * You can **Unlock** a model to enable edits.
   
-    If you select **Unlock** a warning will be shown, and you must confirm the **Unlock** action:
+    If you select **Unlock**, a warning is shown, and you must confirm the **Unlock** action:
     ![Message when unlocking Content Fragment Model](assets/cfm-model-unlock-message.png)
 
     You can then open the model for editing.
@@ -486,7 +546,7 @@ You can manage **Locked** models from either the console, or the model editor:
 
 * Model Editor
 
-  * When you open a model that is locked you will be warned, and presented with three actions: **Cancel**, **View Read Only**, **Edit**:
+  * When you open a model that is locked, you are warned, and presented with three actions: **Cancel**, **View Read Only**, **Edit**:
 
     ![Message when viewing a locked Content Fragment Model](assets/cfm-model-editor-lock-message.png)
 

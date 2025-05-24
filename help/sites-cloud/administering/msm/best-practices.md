@@ -4,6 +4,7 @@ description: Learn the best practices compiled by Adobe engineering and consulti
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
+solution: Experience Manager Sites
 ---
 # MSM Best Practices {#msm-best-practices}
 
@@ -23,17 +24,17 @@ Keep in mind that a Live Copy can be created using either [regular pages](creati
 
 The additional benefits of using a blueprint configuration are that they:
 
-* Allow the author to use the **Rollout** option on a blueprint in order to explicitly push modifications to Live Copies that inherit from this blueprint.
-* Allow the author to use **Create Site** in order to easily select languages and configure the structure of the Live Copy.
+* Allow the author to use the **Rollout** option on a blueprint to explicitly push modifications to Live Copies that inherit from this blueprint.
+* Allow the author to use **Create Site** to easily select languages and configure the structure of the Live Copy.
 * Define a default rollout configuration for Live Copies that have a relationship with the blueprint.
 
 In the case that a blueprint configuration is not referenced, rollouts can only be initiated from the Live Copies themselves, essentially pulling content from source.
 
-When creating a new site with Live Copy, it is advantageous to create blueprint configurations to ensure the availability of the full MSM feature set.
+When creating a site with Live Copy, it is advantageous to create blueprint configurations to ensure the availability of the full MSM feature set.
 
 >[!NOTE]
 >
-> Note that CUGs in the Permissions tab cannot be rolled out to Live Copies from Blueprints. Please plan around this when configuring Live Copy.
+>CUGs in the Permissions tab cannot be rolled out to Live Copies from Blueprints. Plan around this rule when configuring Live Copy.
 
 ## Components and Container Synchronization {#components-and-container-synchronization}
 
@@ -42,7 +43,7 @@ In general, the rollout rule in MSM regarding the synchronization of components 
 * Components are rolled out syncing any resources contained in the blueprint.
 * Containers synchronize only the current resource.
 
-This means that components are treated as an aggregate, and in a rollout the component itself and all its children are replaced with those in the blueprints. This means that if a resource is added to such a component locally, it will be lost to the content of the blueprint at rollout.
+This means that components are treated as an aggregate, and in a rollout the component itself and all its children are replaced with those in the blueprints. This means that if a resource is added to such a component locally, it is lost to the content of the blueprint at rollout.
 
 To support the nesting of components such that locally added components are maintained in a rollout, the component must be declared as a container.
 
@@ -60,7 +61,7 @@ Notice that AEM has two main approaches for creating Live Copies:
 
 The following are a few considerations to keep in mind when creating a site:
 
-* To create a new site, you need a [blueprint configuration](creating-live-copies.md#managing-blueprint-configurations).
+* To create a site, you need a [blueprint configuration](creating-live-copies.md#managing-blueprint-configurations).
 * To allow the selection of language paths to create in a new site, the corresponding language roots must exist in the blueprint (source).
 * Once a [new site has been created as a Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (using **Create**, then **Site**), the first two levels of this Live Copy are *shallow*. Children of the page do not belong to the live-relationship, but a roll-out will still descend if a live-relationship that matches the trigger is found.
 
@@ -75,13 +76,13 @@ MSM can assist in the creation of multilingual websites in two ways:
 
 When creating language masters keep in mind the following:
 
-* While MSM itself **does not provide content translation**, it can be integrated with third-party translation connectors that do. Please note that:
-  * MSM allows you to cancel inheritance at the page and/or component level. This helps prevent overwriting translated content (from a Live Copy, with not-yet-translated content from a blueprint) on the next rollout.
+* While MSM itself **does not provide content translation**, it can be integrated with third-party translation connectors that do. Note the following:
+  * MSM lets you cancel inheritance at the page and/or component level. This helps prevent overwriting translated content (from a Live Copy, with not-yet-translated content from a blueprint) on the next rollout.
     * Some third-party translation connectors automate this management of MSM inheritances.
-    * Please check with your translation service provider for more information.
+    * Check with your translation service provider for more information.
     * An alternative approach for creating and translating language masters is to use language copies in conjunction with AEM's out-of-the-box translation integration framework.
 
-For more information see [Translating Content for Multilingual Sites](/help/sites-cloud/administering/translation/overview.md) and the [Translation Best Practices.](/help/sites-cloud/administering/translation/best-practices.md)
+For more information see [Translating Content for Multilingual Sites](/help/sites-cloud/administering/translation/overview.md) and the [Translation Best Practices](/help/sites-cloud/administering/translation/best-practices.md).
 
 ## Structure Changes and Rollouts {#structure-changes-and-rollouts}
 
@@ -92,7 +93,7 @@ Modifications to the content structure in a blueprint/source tree are reflected 
 * **Moving** pages in a blueprint will **not** result in corresponding pages being moved in Live Copies after rollout with standard rollout configuration:
   * The reason for this behavior is that a page move implicitly includes a page delete. This could potentially lead to unexpected behavior on publish, as deleting pages on author automatically deactivates corresponding content on publish. This can also have an additional effect on related items such as links, bookmarks, and others.
     * Content inheritance in the respective Live Copy pages is updated to reflect the new location of their sources in the blueprint.
-    * To fully realize a page move from a blueprint to Live Copies, consider the [page move best practices.](#page-move)
+    * To fully realize a page move from a blueprint to Live Copies, consider the [page move best practices].(#page-move)
 
 ### Page Move Best Practices {#page-move}
 
@@ -107,13 +108,13 @@ When considering moving pages in a Live Copy, consider the following best practi
    * Do not add other actions to this configuration.
 1. Position the new configuration.
    * To fully roll out the page move while deleting respective pages at their old location in the Live Copy:
-     * Position the newly created configuration before the standard rollout configuration. The standard rollout configuration will take care of deleting the pages in their old locations.
+     * Position the created configuration before the standard rollout configuration. The standard rollout configuration will take care of deleting the pages in their old locations.
      * To roll out the page move while keeping respective pages in their old locations in the Live Copies (essentially duplicating the content):
-       * Position the newly created configuration after the standard rollout configuration. This will ensure no content is deleted in the Live Copy or deactivated from publish.
+       * Position the created configuration after the standard rollout configuration. This will ensure no content is deleted in the Live Copy or deactivated from publish.
 
 ## Customizing Rollouts {#customizing-rollouts}
 
-MSM rollout configurations are highly customizable. You should be aware that automating rollouts can have far reaching consequences. As a best practice, you should plan very carefully before engaging in the following activities:
+MSM rollout configurations are highly customizable. Automating rollouts can have far reaching consequences. As a best practice, you should plan very carefully before engaging in the following activities:
 
 * Automating rollouts such as with [onModify triggers](#onmodify)
 * Customizing [node types/properties](#node-types-properties)
@@ -134,11 +135,11 @@ Therefore, it is recommended that you only use `onModify` triggers if the benefi
 
 ### Node Types/Properties {#node-types-properties}
 
-In addition to customizing rollout actions, MSM also allows you to customize node properties that are being rolled out. The [MSM OSGi configuration allows you to exclude node types](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) from being copied from the source to the Live Copy.
+In addition to customizing rollout actions, MSM also lets you customize node properties that are being rolled out. The [MSM OSGi configuration lets you exclude node types](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) from being copied from the source to the Live Copy.
 
 ## Further Information {#further-information}
 
-Refer to the following articles for more details on MSM and Live Copy.
+See the following articles for more details on MSM and Live Copy.
 
 * [Creating and Synchronizing Live Copies](creating-live-copies.md)
 * [Live Copy Overview Console](live-copy-overview.md)

@@ -1,7 +1,9 @@
 ---
 title: Introduction to Adobe Experience Manager as a Cloud Service
-description: Introduction to Adobe Experience Manager (AEM) as a Cloud Service.
+description: Learn how Experience Manager as a Cloud Service works and what the software can do for you.
 exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
+feature: Release Information
+role: Admin
 ---
 # An Introduction to Adobe Experience Manager as a Cloud Service {#an-introduction-to-adobe-experience-manager-as-a-cloud-service}
 
@@ -23,7 +25,7 @@ AEM as a Cloud Service lets you capitalize on the AEM applications in a cloud-na
 
 * Ensure maximum resilience and efficiency backed by optimized performance topologies.
 
-* Take advantage of AEM as a Cloud Service’s deep integration with the Adobe Experience Cloud to provide better customer experiences with online marketing and web analytics products.
+* Take advantage of AEM as a Cloud Service's deep integration with the Adobe Experience Cloud to provide better customer experiences with online marketing and web analytics products.
 
 * Utilize tools that help accelerate the migration tasks, such as code refactoring, transfer of content, and more.
 
@@ -72,6 +74,6 @@ AEM achieves these goals by adopting the main characteristics of modern cloud se
 
 >[!TIP]
 >
->Once you have an overview of AEM as a Cloud Service, you can onboard quickly by reviewing the [Onboarding Journey.](/help/journey-onboarding/overview.md)
+>Once you have an overview of AEM as a Cloud Service, you can onboard quickly by reviewing the [Onboarding Journey](/help/journey-onboarding/overview.md).
 >
 >Already onboarded or ready to dive into testing AEM's features? Install the [AEM Reference Demos Add-On](/help/journey-sites/demos-add-on/overview.md) to explore AEM's powerful features using rich examples.

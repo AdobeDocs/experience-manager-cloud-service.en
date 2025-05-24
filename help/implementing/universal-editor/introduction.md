@@ -1,63 +1,83 @@
 ---
-title: Universal Visual Editor Introduction
-description: Learn how the Universal Visual Editor (a.k.a. Universal Editor) enables what-you-see-is-what-you-get (WYSIWYG) editing of any headless and headful experience. Understand how it can help content authors deliver exceptional experiences, increase their content velocity, and how provides a state-of-the-art developer experience.
+title: Universal Editor Introduction
+description: The Universal Editor is a modern visual authoring tool designed to empower your marketing organization to produce impactful web experiences. 
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
+feature: Developing
+role: Admin, Architect, Developer
 ---
-# Universal Visual Editor Introduction {#introduction}
 
-Learn how the Universal Visual Editor (a.k.a. Universal Editor) enables what-you-see-is-what-you-get (WYSIWYG) editing of any headless and headful experience. Understand how it can help content authors deliver exceptional experiences, increase their content velocity, and how provides a state-of-the-art developer experience.
+# Universal Editor Introduction {#introduction}
 
-## Background {#background}
+The Universal Editor is a modern visual authoring tool designed to empower your marketing organization to produce impactful web experiences. 
 
-The most powerful tool to the AEM content author has been the page editor. The page editor offers an intuitive, visual, in-context WYSIWYG authoring experience that requires minimal training and shows authors exactly how the content will appear.
+## Overview {#overview}
 
-However the page editor can only edit AEM page content, structure, and the components contained therein. Content today, however, is rarely sourced from one location. The Universal Editor offers the same in-place editing experience as the page editor but for any aspect of any content in any implementation.
+The Universal Editor is a versatile visual editor that is part of Adobe Experience Manager Sites. It enables authors to perform what-you-see-is-what-you-get (WYSIWYG) editing of any headless or headful experience. It offers:
 
-## Truly Universal {#universal}
+* **Instant Editing**: Authors can edit content directly within the preview experience, eliminating the need to locate and navigate to individual content sources.  
+* **Visual Editing**: While making changes, authors instantly see how they affect the actual visitor experience, minimizing friction. 
+* **Discoverable Options**: Clearly labeled options and an intuitive UI empower authors to configure metadata and compose layouts with ease. 
+* **Non-Technical**: No specialized expertise is required to make edits, while corporate brand guidelines are automatically enforced, facilitating the scaling of content tasks across your organization. 
+* **Integration and Extensibility**: Fully integrated with AEM, the Universal Editor’s flexible [extension points](#extensibility) allow all essential tools to be unified within a single, cohesive interface. From AI-powered features to custom extensions tailored to your unique business needs, it empowers teams to streamline workflows and enhance productivity effortlessly.
 
-The Universal Editor can be instrumented for any implementation, for any content, and for any aspect of the content.
+In summary:
 
-![What makes it universal](assets/universal.png)
+* **Authors benefit** from the Universal Editor’s flexibility as it supports the same consistent visual editing for all forms of AEM content.
+* **Developers benefit** from Universal Editor’s versatility as it supports true decoupling of the implementation.
 
-### Any Implementation {#any-implementation}
+Being a true editor-as-a-service and is overall more flexible, the Universal Editor intends to eventually supersede the [Page Editor.](/help/sites-cloud/authoring/page-editor/introduction.md)
 
-Because experiences can be built in many different ways, any implementation can leverage the Universal Editor so authors can perform in-context editing.
+## Supported Architectures {#supported-architectures}
 
-Users often think that a headless implementation limits the authors to editing all content in a form-based UI, but his isn’t true with the Universal Editor
+The Universal Editor supports the following two primary AEM setups: 
 
-The requirements for an implementation to leverage the Universal Editor is very straight-forward and supports:
+1. **[Edge Delivery Services](/help/edge/overview.md)**: This is the preferred approach for its simplicity, faster time-to-value, and enhanced performance.
+1. **[Headless Implementations](/help/headless/introduction.md)**: If you have an existing headless project or specific requirements for decoupled rendering, the Universal Editor allows enterprise-grade visual editing without the need to refactor the entire project. It is compatible with virtually any architecture (SSR, CSR), web framework (Next.js, React, Astro, etc.), and hosting models ("bring your own app").
 
-* **Any Architecture** - Server-side rendering, edge-side rendering, client-side rendering, etc.
-* **Any Framework** - Vanilla AEM, or any third-party framework like React, Next.js, Angular, etc.
-* **Any Hosting** - Can be hosted locally to AEM, or on a remote domain
+>[!TIP]
+>
+>Please see the document [Universal Editor Use Cases and Learning Paths](/help/implementing/universal-editor/use-cases.md) for more details on the supported architectures.
 
-### Any Content {#any-content}
+## Supported AEM Versions {#aem-versions}
 
-A content author should have the same powerful editing experience formerly offered by the AEM page editor. But the Universal Editor allows content authors to edit **any** content visually and in-context and supports:
+The Universal Editor is supported by:
 
-* **AEM Page Structures** - Nested `cq:Components` of `cq:Pages`, including Experience Fragments
-* **AEM Content Fragments** - Edit content from Content Fragments as they appear in-context of the experience.
-* **Documents** - Proof of concepts have shown that also Word, Excel, Google Docs or Markdown documents can also be edited the same way (this is WIP).
+* AEM as a Cloud Service (release `2023.8.13099` or higher)
+* AEM 6.5 (service pack 21 or 22 plus a feature pack)
+  * Both on-premises and AMS hosting are supported.
 
-### Any Aspect {#any-aspect}
+This documentation is for using the Universal Editor with AEM as a Cloud Service. For using the Universal Editor with AEM 6.5, [please see the AEM 6.5 documentation.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
 
-For a content author, content is not just about the information contained, but how it is rendered and received. Content comes with additional meta-data and instrumentation rules, which the Universal Editor can understand and edit including:
+## Features {#features}
 
-* **Applying Layout &amp; Style** - By using a style system, the marketing practitioner and content author can apply different styles to their content and create different layouts for the content such as columns, carousels, tabs, accordions, etc.
+The Universal Editor offers many features to supports a wide range of use cases for efficient content management.
 
-## Value {#value}
+* **[WYSIWYG](/help/sites-cloud/authoring/universal-editor/authoring.md)**: Perform what-you-see-is-what-you-get editing of any form of web content, including plain text, rich text, media, and metadata.
+* **[Composition](/help/sites-cloud/authoring/universal-editor/authoring.md#editing-content)**: Create, edit, reorder, nest, or delete content blocks of various types (titles, buttons, teasers, sections, embed, etc.).
+* **[Layout](/help/sites-cloud/authoring/universal-editor/templates.md)**: Utilize page templates, apply visual styles, and compose layouts with blocks like columns, carousels, and accordions.
+* **[Device Simulation](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator)**: Preview and optimize content for different visitor devices while editing.
+* **Omnichannel**: Reuse both structured and unstructured content across multiple channels.
+* **[Localization](/help/sites-cloud/authoring/universal-editor/inheritance.md)**: Streamline content translation workflows and efficiently handle localized content inheritance with Multi-Site Manager.
+* **Consistency**: Ensure compliance with brand guidelines and maintain uniformity across all content.
+* **Security**: [Enforce access control](/help/implementing/universal-editor/authentication.md), protect content integrity, and track changes with [robust versioning.](/help/sites-cloud/authoring/sites-console/page-versions.md)
+* **[Publishing](/help/sites-cloud/authoring/universal-editor/publishing.md)**: Integrate review, approval, and publication workflows directly within the editor.
+* **Unified**: Fully integrates with AEM tools like the [Sites Console,](/help/sites-cloud/authoring/sites-console/introduction.md) [Content Fragment Editor,](/help/sites-cloud/administering/content-fragments/overview.md) and many more, providing a cohesive authoring experience.
 
-By decoupling the content editing experience from any particular content delivery system, the editor becomes truly universal and flexible allowing the content author to delivery exceptional experiences, increase content velocity, and provides a state-of-the-art developer experience.
+## Extensibility {#extensibility}
 
-![The value of the Universal Editor](assets/value.png)
+The Universal Editor is not only very capable out-of-the-box, but offers a number of extension possibilities.
 
-* **Deliver Exceptional Experiences** - In order to enable practitioners to create a compelling experience for visitors, the Universal Editor allows practitioners to create and edit the content in the context of the preview. This allows them to create content that fits the design of the experience and that constitutes a meaningful journey for visitors.
-* **Increase Content Velocity** - To streamline the management workflow of practitioners, the Universal Editor allows editing content within the preview to guide practitioners by showing only the options that are relevant to that context and makes the workflow independent from the content sources.
-* **State-of-the-art Developer Experience** - To support real-world heterogeneous application landscape, the Universal Editor is completely fully decoupled and technology-agnostic, allowing developers to use their preferred technology stack to implement the experience.
+* **Extensions** are numerous and ready-made to support requirements such as supporting workflows, generating variations, and enabling experimentation to name a few.
+* **An Extensible UI** allows you to create your own extensions using the same underlying frameworks that the ready-made extensions leverage enabling ultimate flexibility to adapt to your project needs.
+* **Extension Points** such as blocks, custom data types, and events allow for seamless integration of custom business requirements beyond the UI.
 
-## Universal Visual Editor and the Content Fragment Editor {#universal-editor-content-fragment-editor}
+>[!TIP]
+>
+>For more information on the extensibility of the Universal Editor, please see the document [Extending the Universal Editor.](/help/implementing/universal-editor/extending.md)
 
-At first glance, it might seem like the Universal Visual Editor and the Content Fragment Editor provide similar editing capabilities. However, these editors offer very different capabilities and they accomplish different jobs of the marketing practitioner.
+## Universal Editor and the Content Fragment Editor {#universal-editor-content-fragment-editor}
+
+At first glance, it might seem like the Universal Editor and the Content Fragment Editor provide similar editing capabilities. However, these editors offer very different capabilities and they accomplish different jobs of the marketing practitioner.
 
 ### Content Fragment Editor {#content-fragment-editor} 
 
@@ -65,25 +85,25 @@ A marketing practitioner wants to create content without having to care about it
 
 * The underlying job to accomplish is to scale the content strategy.
 
-### Universal Visual Editor {#universal-editor}
+### Universal Editor {#universal-editor}
 
 A marketing practitioner wants to create content that is tailored to the layout of a given context to deliver an exceptional experience.
 
 * The underlying job to accomplish is to convincingly connect with the readers.
 
-## Road Map {#road-map}
+## Limitations {#limitations}
 
-It is important to note that the Universal Editor is a work in progress and some of the capabilities laid out in this document are a vision of the final editor and not necessarily representative of its current capabilities.
+As you explore the Universal Editor and move forward implementing it in your own projects, please keep the following limitations in mind.
 
-Please speak with your Adobe contact for details on the upcoming features planned for the Universal Editor.
+* No more than 25 AEM resources (Content Fragments, pages, Experience Fragments, Assets, etc.) should be references as instrumentation on a single page.
+* AEM as a Cloud Service and [AEM 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) are the only supported AEM backends.
+* Release `2023.8.13099` or higher is required for AEM as a Cloud Service.
+* Content authors must have their own individual Experience Cloud accounts.
+* As part of AEM, the Universal Editor [supports the same desktop browsers as AEM.](/help/overview/supported-platforms.md)
+  * Mobile versions of these browsers are not supported.
 
-## Additional Resources {#additional-resources}
+{{ip-allow-lists-ue}}
 
-To learn more about the Universal Editor, see these documents.
+## Next Steps {#next-steps}
 
-* [Authoring Content with the Universal Editor](authoring.md) - Learn how easy and intuitive it is for content authors to create content using the Universal Editor.
-* [Publishing Content with the Universal Editor](publishing.md) - Learn how the Universal Visual Editor publishes content and how your apps can handle the published content.
-* [Getting Started with the Universal Editor in AEM](getting-started.md) - Learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
-* [Universal Editor Architecture](architecture.md) - Learn about the architecture of the Universal Editor and how data flows between its services and layers.
-* [Attributes and Types](attributes-types.md) - Learn about the data attributes and types that the Universal Editor requires.
-* [Universal Editor Authentication](authentication.md) - Learn how the Universal Editor authenticates.
+Please see the document [Universal Editor Use Cases and Learning Paths](/help/implementing/universal-editor/use-cases.md) to learn more about common use cases for the Universal Editor and to discover the right documentation resources to support you in your project.

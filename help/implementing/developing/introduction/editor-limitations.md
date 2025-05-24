@@ -2,6 +2,8 @@
 title: Editor Limitations
 description: The editor in the touch-enabled UI makes use of overlays to interact with content confined in an iframe. This interaction creates some limitations in both usage of the editor and also for developers.
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Editor Limitations {#editor-limitations}
 
@@ -13,13 +15,13 @@ An author may encounter the following functional limitations when using the edit
 
 ### Links Not Active {#links-not-active}
 
-When [editing a page](/help/sites-cloud/authoring/fundamentals/editing-content.md), links are not active.
+When [editing a page](/help/sites-cloud/authoring/page-editor/edit-content.md), links are not active.
 
-* [Switch to **Preview** mode](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode) to navigate using the links in your content.
+* [Switch to **Preview** mode](/help/sites-cloud/authoring/page-editor/introduction.md#preview-mode) to navigate using the links in your content.
 
 ### Structure Pages {#structure-pages}
 
-Pages can not be named `structure`. Pages that are named `structure` will not be editable in the page editor.
+Pagescannot be named `structure`. Pages that are named `structure` will not be editable in the page editor.
 
 ## CSS Limitations {#css-limitations}
 
@@ -45,7 +47,7 @@ Fixed background images may not be displayed as fixed when scrolling due to the 
 
 100% height is not supported on a page's body element.
 
-* A work-around is possible in order to implement a full screen body by "stretching" the body element as follows:
+* A work-around is possible to implement a full screen body by "stretching" the body element as follows:
 
 ```xml
 body {

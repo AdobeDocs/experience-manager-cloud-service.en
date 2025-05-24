@@ -1,15 +1,17 @@
 ---
 title: Externalizing URLs
-description: The Externalizer is an OSGi service that allows you to programmatically transform a resource path into an external and absolute URL.
+description: The Externalizer is an OSGi service that lets you programmatically transform a resource path into an external and absolute URL.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Externalizing URLs {#externalizing-urls}
 
-In AEM, the **Externalizer** is an OSGi service that allows you to programmatically transform a resource path (for example, `/path/to/my/page`) into an external and absolute URL (for example, `https://www.mycompany.com/path/to/my/page`) by prefixing the path with a pre-configured DNS.
+In AEM, the **Externalizer** is an OSGi service that lets you programmatically transform a resource path (for example, `/path/to/my/page`) into an external and absolute URL (for example, `https://www.mycompany.com/path/to/my/page`) by prefixing the path with a pre-configured DNS.
 
 Because an AEM as a Cloud Service instance cannot know its externally visible URL and because sometimes a link has to be created outside of the request scope, this service provides a central place to configure those external URLs and build them.
 
-This article explains how to configure the Externalizer service and how to use it. For technical details of the service, please refer to the [Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).
+This article explains how to configure the Externalizer service and how to use it. For technical details of the service, see [Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Default Behavior of the Externalizer and How to Override {#default-behavior}
 
@@ -38,11 +40,11 @@ To override the `preview` and `publish` values, use Cloud Manager environment va
 
 ## Configuring the Externalizer Service {#configuring-the-externalizer-service}
 
-The Externalizer service allows you to centrally define the domain that can be used to programmatically prefix resource paths. The Externalizer service should only be used for applications with a single domain.
+The Externalizer service lets you centrally define the domain that can be used to programmatically prefix resource paths. The Externalizer service should only be used for applications with a single domain.
 
 >[!NOTE]
 >
->As when applying any [OSGi configurations for AEM as a Cloud Service,](/help/implementing/deploying/overview.md#osgi-configuration) the following steps should be performed on a local developer instance and then committed to your project code for deployment.
+>As when applying any [OSGi configurations for AEM as a Cloud Service](/help/implementing/deploying/overview.md#osgi-configuration), the following steps should be performed on a local developer instance and then committed to your project code for deployment.
 
 To define a domain mapping for the Externalizer service:
 
@@ -66,8 +68,8 @@ To define a domain mapping for the Externalizer service:
 
     * **`scheme`** is usually http or https, but can be another protocol.
 
-        * It is recommended to use https to enforce https links.
-        * It will be used if the client code does not override the scheme when asking for externalization of a URL.
+        * Adobe recommends using https to enforce https links.
+        * It is used if the client code does not override the scheme when asking for externalization of a URL.
 
     * **`server`** is the host name (either a domain name or ip address).
     * **`port`** (optional) is the port number.
@@ -83,7 +85,7 @@ To define a domain mapping for the Externalizer service:
 
    >[!NOTE]
    >
-   >A custom configuration allows you to add a new category, such as `production`, `staging` or even external non-AEM systems such as `my-internal-webservice`. It is useful to avoid hard coding such URLs across different places in a project's codebase.
+   >A custom configuration lets you add a new category, such as `production`, `staging` or even external non-AEM systems such as `my-internal-webservice`. It is useful to avoid hard coding such URLs across different places in a project's codebase.
 
 1. Click **Save** to save your changes.
 
@@ -93,7 +95,7 @@ This section shows a few examples of how the Externalizer service can be used.
 
 >[!NOTE]
 >
->No absolute links should be created in the context of HTML. Therefore this utility should not be used in such cases.
+>No absolute links should be created in the context of HTML. Therefore, do not use this utility in such cases.
 
 * **To externalize a path with the 'publish' domain:**
 

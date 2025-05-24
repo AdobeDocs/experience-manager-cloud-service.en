@@ -2,6 +2,8 @@
 title: Asynchronous Jobs
 description: Adobe Experience Manager optimizes performance by asynchronously completing some resource-intensive tasks as background operations.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
+feature: Operations
+role: Admin
 ---
 # Asynchronous Operations {#asynchronous-operations}
 
@@ -13,10 +15,9 @@ These operations include:
 * Moving many assets or assets with many references
 * Exporting/importing asset metadata in bulk
 * Fetching assets, which are above the threshold limit set, from a remote Experience Manager deployment
-* Moving pages
 * Rolling out Live Copies
 
-You can view the status of asynchronous jobs from the **[!UICONTROL Background Operations]** dashboard at **Global Navigation** -&gt; **Tools** -&gt; **General** -&gt; **Jobs**.
+You can view the status of asynchronous jobs from the **[!UICONTROL Background Operations]** dashboard at **Global Navigation** &gt; **Tools** &gt; **General** &gt; **Jobs**.
 
 >[!NOTE]
 >
@@ -26,11 +27,11 @@ You can view the status of asynchronous jobs from the **[!UICONTROL Background O
 
 ## Monitor the Status of Asynchronous Operations {#monitor-the-status-of-asynchronous-operations}
 
-Whenever AEM processes an operation asynchronously, you receive a notification in your [inbox](/help/sites-cloud/authoring/getting-started/inbox.md) and via email (if enabled).
+Whenever AEM processes an operation asynchronously, you receive a notification in your [inbox](/help/sites-cloud/authoring/inbox.md) and via email (if enabled).
 
 To view the status of the asynchronous operations in detail, navigate to the **[!UICONTROL Background Operations]** page.
 
-1. In the Experience Manager interface select **Global Navigation** -&gt; **Tools** -&gt; **General** -&gt; **Jobs**.
+1. In the Experience Manager interface select **Global Navigation** &gt; **Tools** &gt; **General** &gt; **Jobs**.
 
 1. In the **[!UICONTROL Background Operations]** page, review the details of the operations.
 
@@ -50,7 +51,7 @@ To view the status of the asynchronous operations in detail, navigate to the **[
 
    ![stop_icon](assets/async-stop-icon.png)
 
-1. To view extra details, for example description and logs, select the operation and click **[!UICONTROL Open]** from the toolbar.
+1. To view extra details, for example, description and logs, select the operation and click **[!UICONTROL Open]** from the toolbar.
 
    ![open_icon](assets/async-open-icon.png)
 
@@ -66,7 +67,7 @@ To view the status of the asynchronous operations in detail, navigate to the **[
 
 ## Configuring Asynchronous Job Processing Options {#configure}
 
-There are a number of options around asynchronous jobs that can be configured. The following examples show how this can be done using the configuration manager on a local development system.
+There are several options around asynchronous jobs that can be configured. The following examples show how this can be done using the configuration manager on a local development system.
 
 >[!NOTE]
 >
@@ -96,7 +97,7 @@ If the number of assets or folders to be deleted exceeds the threshold number, t
 
 1. Log in to the AEM SDK Quickstart Jar's AEM Web console at `https://<host>:<port>/system/console` as the admin user.
 1. Navigate to **OSGi** &gt; **Configuration**
-1. From the web console, open the **[!UICONTROL Async Process Default Queue Configuration.]**
+1. From the web console, open the **[!UICONTROL Async Process Default Queue Configuration]**.
 1. In the **[!UICONTROL Threshold number of assets]** box, specify the threshold number of assets/folders for asynchronous processing of delete operations.
 
    ![Asset delete threshold](assets/async-delete-threshold.png)
@@ -110,24 +111,10 @@ If the number of assets/folders or references to be moved exceeds the threshold 
 
 1. Log in to the AEM SDK Quickstart Jar's AEM Web console at `https://<host>:<port>/system/console` as the admin user.
 1. Navigate to **OSGi** &gt; **Configuration**
-1. From the web console, open the **[!UICONTROL Async Move Operation Job Processing Configuration.]**
+1. From the web console, open the **[!UICONTROL Async Move Operation Job Processing Configuration]**.
 1. In the **[!UICONTROL Threshold number of assets/references]** box, specify the threshold number of assets/folders or references for asynchronous processing of move operations.
 
    ![Asset move threshold](assets/async-move-threshold.png)
-
-1. Check the option **Enable email notification** to receive email notifications for this job status. For example, success, failed.
-1. Save the changes.
-
-### Configure Asynchronous Page Move Operations {#configuring-asynchronous-page-move-operations}
-
-If the number of references to the page(s) to be moved exceeds the threshold number, the move operation is performed asynchronously.
-
-1. Log in to the AEM SDK Quickstart Jar's AEM Web console at `https://<host>:<port>/system/console` as the admin user.
-1. Navigate to **OSGi** &gt; **Configuration**
-1. From the web console, open the **[!UICONTROL Async Page Move Operation Job Processing Configuration.]**
-1. In the **[!UICONTROL Threshold number of references]** field, specify the threshold number of references for asynchronous processing of page move operations.
-
-   ![Page move threshold](assets/async-page-move.png)
 
 1. Check the option **Enable email notification** to receive email notifications for this job status. For example, success, failed.
 1. Save the changes.
@@ -136,7 +123,7 @@ If the number of references to the page(s) to be moved exceeds the threshold num
 
 1. Log in to the AEM SDK Quickstart Jar's AEM Web console at `https://<host>:<port>/system/console` as the admin user.
 1. Navigate to **OSGi** &gt; **Configuration**
-1. From the web console, open the **[!UICONTROL Async Page Move Operation Job Processing Configuration.]**
+1. From the web console, open the **[!UICONTROL Async Page Move Operation Job Processing Configuration]**.
 1. Check the option **Enable email notification** to receive email notifications for this job status. For example, success, failed.
 
    ![MSM config](assets/async-msm.png)
@@ -145,6 +132,6 @@ If the number of references to the page(s) to be moved exceeds the threshold num
 
 >[!MORELIKETHIS]
 >
->* [Creating and Organizing Pages](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
+>* [Managing Pages](/help/sites-cloud/authoring/sites-console/managing-pages.md)
 >* [Import and export asset metadata in bulk](/help/assets/metadata-import-export.md).
 >* [Use Connected Assets to share DAM assets from remote deployments](/help/assets/use-assets-across-connected-assets-instances.md).

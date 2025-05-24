@@ -26,7 +26,7 @@ See also [Use Interactive Video with Dynamic Media](https://experienceleague.ado
 
 <!-- 
 
-There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video
+There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This must now call a new interactive video
 
 -->
 
@@ -256,7 +256,7 @@ You add timeline segments to a video using the in-place visual editor on the Cre
 
 After you add timeline segments, you add thumbnail images within each segment. For each thumbnail that you add, you apply an action to it. For example, you can apply a Quickview to the thumbnail, or you can assign a hyperlink to it, or an Experience Fragment.
 
-See [Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
+See [Experience Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!NOTE]
 >
@@ -426,7 +426,7 @@ After you save your interactive video, the video is immediately opened into Prev
       <td>To associate the selected thumbnail image with an Experience Fragment</td> 
       <td><p>Under Action Type, select <strong>Experience Fragment</strong>, then do the following:<p> 
        <ul> 
-       <li>If you are an Experience Manager Sites customer, select the Search icon (magnifying glass) to open the Experience Fragment page. Select the Experience Fragment you want to use, then select <strong>To return to the Actions panel on the previous page, select </strong>in the upper-right corner of the page.<br /> See <a href="/help/sites-cloud/authoring/fundamentals/experience-fragments.md">Experience Fragments</a>.</li> 
+       <li>If you are an Experience Manager Sites customer, select the Search icon (magnifying glass) to open the Experience Fragment page. Select the Experience Fragment you want to use, then select <strong>To return to the Actions panel on the previous page, select </strong>in the upper-right corner of the page.<br /> See <a href="/help/sites-cloud/authoring/fragments/content-fragments.md">Experience Fragments</a>.</li> 
       </ul> 
        <ul> 
        <li>Specify the width and height of the Experience Fragment as it appears on the video.</li>
@@ -581,7 +581,7 @@ The existing Quickview implementation normally represents a chain of inter-relat
 1. The backend logic returns the corresponding Quickview data or content back to the front-end code.
 1. The front-end code loads the Quickview data or content.
 1. Optionally, the front-end code converts the loaded Quickview data into an HTML representation.
-1. The front-end code displays a modal dialog box or panel and renders the HTML content on the screen for the end user.
+1. The front-end code displays a modal dialog box or panel and renders the HTML content on the screen for the user.
 
 These calls do not represent independent public API calls which can be called by the web page logic from an arbitrary step. Instead, it is a chained call where every next step is hidden in the last phase (callback) of the previous step.
 
@@ -593,7 +593,7 @@ In such an event handler, the front-end code does the following:
 * Constructs a Quickview URL based on the thumbnail data.
 * Triggers the process of loading the Quickview from the backend and rendering it on the screen for display.
 
-In addition, the Interactive Video viewer supports full screen operation mode. The end user triggers Quick views by selecting a thumbnail without leaving the full screen. To achieve this functionality, you alter the front-end code so that the Quickview modal dialog box is attached to the viewer's container. Do not add document BODY or some other web page element that is not available when the viewer is in full-screen mode. The code that performs this job listens to one more viewer callback that is sent after the viewer loads on the page.
+In addition, the Interactive Video viewer supports full screen operation mode. The user triggers Quick views by selecting a thumbnail without leaving the full screen. To achieve this functionality, you alter the front-end code so that the Quickview modal dialog box is attached to the viewer's container. Do not add document BODY or some other web page element that is not available when the viewer is in full-screen mode. The code that performs this job listens to one more viewer callback that is sent after the viewer loads on the page.
 
 The embed code returned by Experience Manager already has a ready-to-use event handler in place. It is commented out as seen in the following highlighted code snippet:
 
@@ -626,10 +626,10 @@ The embed code returned by Experience Manager already has a ready-to-use event h
      var sku=inData.sku; //SKU for product ID
     //To pass other parameter from the hotspot, you need to add custom parameter during the hotspot setup as parameterName=value
     loadQuickView(sku); //Replace this call with your quickview plugin
-    //Please refer to your quickviewer plugin for the quickview call
+    //See your quickviewer plugin for the quickview call
     },
 "initComplete":function() {
-    //--- Attach quickview popup to viewer container so popup will work in fullscreen mode ---
+    //--- Attach quickview pop-up to viewer container so pop-up works in fullscreen mode ---
     var popup = document.getElementById('quickview_div'); // get custom quickview container
     popup.parentNode.removeChild(popup); // remove it from current DOM
     var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
@@ -752,7 +752,7 @@ The complete source code is as follows:
     loadQuickView(quickViewUrl);
     },
    "initComplete":function() {
-    //--- Attach quickview popup to viewer container so popup will work in fullscreen mode ---
+    //--- Attach quickview pop-up to viewer container so pop-up works in fullscreen mode ---
     var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
     var inner_container = document.getElementById(sdkContainerId);
     inner_container.appendChild(document.getElementById("quickview-modal"));

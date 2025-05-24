@@ -2,6 +2,8 @@
 title: Release Notes for 2021.4.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Release Notes for 2021.4.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
+feature: Release Information
+role: Admin
 ---
 # Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -35,7 +37,7 @@ The following release (2021.5.0) will be on May 27, 2021.
 
 * Content Models, enhanced Tags data type - it is now possible to configure the Tags data type to allow authoring single or multiple tags. 
 
-* Content Models, new Tab Placeholder data type - the new Tab Placeholder data type allows grouping data types into sections that will be rendered under tabs in the content fragment editor. 
+* Content Models, new Tab Placeholder data type - the new Tab Placeholder data type allows grouping data types into sections that are rendered under tabs in the content fragment editor. 
 
 ### Bug fixes in [!DNL Sites] {#bug-fixes-sites}
 
@@ -61,7 +63,7 @@ The following release (2021.5.0) will be on May 27, 2021.
 
 * When editing a metadata schema, a data type is added that provides a free-form text area in the metadata editor. Users can use this text area to enter free-form text as metadata of an asset. See [metadata schema editor](/help/assets/metadata-schemas.md).
 
-* Metadata of many assets can be imported in bulk using a CSV file and can be exported to a CSV file. The default date format is now `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Users can leverage a different format by updating the column header. For example, add `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` as the column header in the CSV file instead of the word `Date`.
+* Metadata of many assets can be imported in bulk using a CSV file and can be exported to a CSV file. The default date format is now `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Users can use a different format by updating the column header. For example, add `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` as the column header in the CSV file instead of the word `Date`.
 
 * When browsing assets in Column view, a visual indicator displays the approved or rejected status of each asset.
 
@@ -77,7 +79,7 @@ The following release (2021.5.0) will be on May 27, 2021.
 
 * When a selection is made in the Properties page to update metadata, the interface is slow to respond when there are many options provided by the schema. (CQ-4318538)
 
-* While updating and saving metadata value in a single-line text field, the values in the dropdown menu get deleted, even if edits are disabled on the dropdown menu. (CQ-4317077)
+* While updating and saving metadata value in a single-line text field, the values in the drop-down list menu get deleted, even if edits are disabled on the drop-down list menu. (CQ-4317077)
 
 * You can use ellipsis as an annotation to review assets. When a small ellipse is used, the ellipse overlaps with the number of the annotation in the print version. (CQ-4316792)
 
@@ -89,9 +91,9 @@ The following release (2021.5.0) will be on May 27, 2021.
 
 * **Use Government ID identity authentication method in Adobe Sign enabled Adaptive Forms**
 
-  Powered by advanced machine learning algorithms, Adobe Sign’s Government ID process empowers companies across the globe with the ability to secure a high-quality authentication of their recipient's identity. Now, you can use Government ID identity authentication method in Adobe Sign enabled Adaptive Forms.
+  Powered by advanced machine learning algorithms, Adobe Sign's Government ID process empowers companies across the globe with the ability to secure a high-quality authentication of their recipient's identity. Now, you can use Government ID identity authentication method in Adobe Sign enabled Adaptive Forms.
 
-  Government ID is a premium identity authentication method that instructs the recipient to [upload the image of a government-issued identity document (driver’s license, national ID, passport)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html), and then evaluates that document to ensure it's authentic.
+  Government ID is a premium identity authentication method that instructs the recipient to [upload the image of a government-issued identity document (driver's license, national ID, passport)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html), and then evaluates that document to ensure it's authentic.
 
 * **Support to use in-form signing experience for asynchronous adaptive form submissions**
 
@@ -103,7 +105,7 @@ The following release (2021.5.0) will be on May 27, 2021.
 
 * **Support to use the literal option to set value for a JSON type variable**
 
-  You can use literal option to set value for a JSON type variable in the set variable step of an AEM Workflow. The literal option allows you to specify a JSON in the form of a string.
+  You can use literal option to set value for a JSON type variable in the set variable step of an AEM Workflow. The literal option lets you specify a JSON in the form of a string.
 
 * **Use local development environment to create Document of Record (DoR)**
 
@@ -122,7 +124,7 @@ The following release (2021.5.0) will be on May 27, 2021.
 
 ### What is New {#what-is-new-commerce}
 
-* Support for category UID - This unlocks 3rd party commerce integrations for systems that use Strings for category ids
+* Support for category UID - This unlocks third-party commerce integrations for systems that use Strings for category ids
 
 * AEM extension for PWA Studio incl. example integration
 
@@ -159,7 +161,7 @@ The next release is planned for May 06, 2021.
 
 * Projects in the Adobe I/O Developer Console created by Cloud Manager can no longer be unintentionally edited or deleted.
 
-* When a user adds a new environment they will be informed that once an environment is created it cannot be moved to a different region. 
+* When a user adds a new environment they are informed that after an environment is created, it cannot be moved to a different region. 
 
 * Environment variables can now be scoped to a specific service, either author or publish. Requires AEM Version 2021.03.5104.20210328T185548Z or higher. 
 

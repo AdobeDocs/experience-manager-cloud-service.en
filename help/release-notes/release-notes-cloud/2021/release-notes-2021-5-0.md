@@ -2,6 +2,8 @@
 title: Release Notes for 2021.5.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Release Notes for 2021.5.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
+feature: Release Information
+role: Admin
 ---
 # Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -25,7 +27,7 @@ The following release (2021.6.0) will be on June 28, 2021.
 
 * [Prerelease Channel](/help/release-notes/prerelease.md): Preview upcoming features for a full month before they go live in production!
 
-* [API Deprecation](/help/release-notes/deprecated-apis.md): a list of the latest deprecated APIs for AEM as a Cloud Service is available. 
+* [API Deprecation](/help/release-notes/deprecated-removed-features.md): a list of the latest deprecated APIs for AEM as a Cloud Service is available. 
 
 * [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html):  Update your maven projects to the latest version, which includes a deprecated Java API check and other improvements. 
 
@@ -33,13 +35,13 @@ The following release (2021.6.0) will be on June 28, 2021.
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
 
-* You will soon be able to verify content on a new [Preview tier](/help/sites-cloud/authoring/fundamentals/previewing-content.md) to simulate the final experience look and feel as you would on the Publish tier. This is enabled by the AEM Sites Managed Publication wizard which is now allowing you to choose a publish destination between Publish or Preview. Experiences on Preview can then be accessed via a dedicated URL. After validation on Preview, content can be published from Author to Publish as usual. Enabling the Preview Service in AEM as a Cloud Service environments will be gradually rolled out in the next few weeks.
+* You will soon be able to verify content on a new [Preview tier](/help/sites-cloud/authoring/sites-console/previewing-content.md) to simulate the final experience look and feel as you would on the Publish tier. This is enabled by the AEM Sites Managed Publication wizard which is now allowing you to choose a publish destination between Publish or Preview. Experiences on Preview can then be accessed via a dedicated URL. After validation on Preview, content can be published from Author to Publish as usual. Enabling the Preview Service in AEM as a Cloud Service environments will be gradually rolled out in the next few weeks.
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* You can download the assets shared using the Link Share functionality. This download now uses an asynchronous service that offers faster and and uninterrupted downloads, even for very large downloads. See [download assets](/help/assets/download-assets-from-aem.md#link-share-download).
+* You can download the assets shared using the Link Share functionality. This download now uses an asynchronous service that offers faster and uninterrupted downloads, even for very large downloads. See [download assets](/help/assets/download-assets-from-aem.md#link-share-download).
 
   ![Download inbox](/help/assets/assets/download-inbox.png)
 
@@ -62,7 +64,7 @@ The following release (2021.6.0) will be on June 28, 2021.
 
 #### What is new in Dynamic Media {#what-is-new-dm}
 
-* Smart Imaging DPR (Device Pixel Ratio) and network bandwidth optimization enables you to deliver best quality images efficiently, on devices with high resolution displays and constrained network bandwidth. For more information, see [Smart imaging FAQs](/help/assets/dynamic-media/imaging-faq.md) and [Image optimization with next generation image formats WebP and AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+* Smart Imaging DPR (Device Pixel Ratio) and network bandwidth optimization enables you to deliver best quality images efficiently, on devices with high resolution displays and constrained network bandwidth. For more information, see [Smart imaging FAQs](/help/assets/dynamic-media/imaging-faq.md) and [Image optimization with next generation image formats WebP and AVIF](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4).
 * Introduced support for next generation image format AVIF in Dynamic Media delivery (fmt URL modifier).
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -74,7 +76,7 @@ The following release (2021.6.0) will be on June 28, 2021.
 
 ### Upcoming beta feature of [!DNL Forms] {#what-is-new-forms-prerelease}
 
-Output as a Cloud service: Output service helps you combine XDP templates and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous and asynchronous batch mode. Output service enables you to create applications that let you:
+Output as a Cloud service: Output service helps you combine XDP templates and XML data to generate print documents in various formats. The service lets you generate documents in synchronous and asynchronous batch mode. Output service enables you to create applications that let you:
 
 * Generate final form documents by populating template files with XML data.
 * Generate output forms in various formats, including non-interactive PDF print streams.
@@ -100,11 +102,11 @@ The next release is planned for June 03, 2021.
 
 ### What's New {#what-is-new-may}
 
-* The PackageOverlaps quality rule now detects cases where the same package was deployed multiple times, i.e. in multiple embedded locations, in the same deployed package set.
+* The PackageOverlaps quality rule now detects cases where the same package was deployed multiple times, that is, in multiple embedded locations, in the same deployed package set.
 
 * The repository endpoint in the Public API now includes the Git URL.
 
-* Deployment log downloaded by a Cloud Manager user will be more insightful and will now include details about failures and success scenarios.
+* Deployment log downloaded by a Cloud Manager user are more insightful and include details about failures and success scenarios.
 
 * Intermittent failures encountered while pushing code to Adobe git have now been resolved.
 
@@ -140,9 +142,9 @@ The Release Date for Content Transfer Tool v1.4.6 is May 27, 2021.
 
 ### What's New {#what-is-new-ctt-latest}
 
-* New logging statement was added to the quickstart's error log, if the user doesn't have execute permission on the Java executable.
+* New logging statement was added to the quickstart's error log, if the user does not have run permission on the Java executable.
 
-* When a user deletes a migration set from the CTT UI, where an extraction was performed, the `tmp` folder associated with that migration set will be deleted to save space.
+* When a user deletes a migration set from the CTT user interface, where an extraction was performed, the `tmp` folder associated with that migration set is deleted to save space.
 
 ### Bug Fixes {#bug-fixes-ctt-latest}
 

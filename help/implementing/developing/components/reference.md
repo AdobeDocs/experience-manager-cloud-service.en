@@ -2,14 +2,16 @@
 title: Components Reference Guide
 description: A developer reference guide to the details of components and their structure
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Components Reference Guide {#components-reference-guide}
 
-Components are at the core of building an experience in AEM. The [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) and the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) make it simple to get started with a tool set of ready-made, robust components. The [WKND Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) takes the developer through how to use these tools and how to build custom components in order to create a new AEM site.
+Components are at the core of building an experience in AEM. The [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) and the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) make it simple to get started with a tool set of ready-made, robust components. The [WKND Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) takes the developer through how to use these tools and how to build custom components to create an AEM site.
 
 >[!TIP]
 >
->Before references this document, make sure you have completed the [WKND Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) and are thus familiar with the [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) and the [AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+>Before references this document, make sure you have completed the [WKND Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) and are thus familiar with the [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) and the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html).
 
 Because the WKND Tutorial covers most use cases, this document is intended only as a supplement to those resources. It gives in-depth technical specifics about how components are structured and configured in AEM and is not intended as a getting started guide.
 
@@ -49,16 +51,16 @@ This means you only need to redefine the required differences, as opposed to red
 
 ### Content Logic and Rendering Markup  {#content-logic-and-rendering-markup}
 
-Your component will be rendered with [HTML.](https://www.w3schools.com/htmL/html_intro.asp) Your component needs to define the HTML needed to take the required content and then render it as required, on both the author and publish environments.
+Your component is rendered with [HTML](https://www.w3schools.com/htmL/html_intro.asp). Your component must define the HTML needed to take the required content and then render it as required, on both the author and publish environments.
 
 It is recommended to keep the code responsible for markup and rendering separate from the code that controls the logic used to select the component's content.
 
-This philosophy is supported by [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), a templating language that is purposely limited to ensure a real programming language is used to define the underlying business logic. This mechanism highlights the code that is called for a given view and, if required, allows specific logic for different views of the same component.
+This philosophy is supported by [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), a templating language that is purposely limited to ensure a real programming language is used to define the underlying business logic. This mechanism highlights the code that is called for a given view and, if necessary, allows specific logic for different views of the same component.
 
 This (optional) logic can be implemented in different ways and is invoked from HTL with specific commands:
 
-* Using Java - [The HTL Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html) enables an HTL file to access helper methods in a custom Java class. This allows you to use Java code to implement the logic for selecting and configuring the component content.
-* Using JavaScript - [The HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) enables a HTL file to access helper code written in JavaScript. This allows you to use JavaScript code to implement the logic for selecting and configuring the component content.
+* Using Java - [The HTL Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html) enables an HTL file to access helper methods in a custom Java class. This lets you use Java code to implement the logic for selecting and configuring the component content.
+* Using JavaScript - [The HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) enables a HTL file to access helper code written in JavaScript. This lets you use JavaScript code to implement the logic for selecting and configuring the component content.
 * Using Client-Side Libraries - Modern websites rely heavily on client-side processing driven by complex JavaScript and CSS code. See the document [Using Client-Side Libraries on AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md) for more information.
 
 ## Component Structure {#structure}
@@ -84,7 +86,7 @@ This is an abstraction that helps to ensure that even when the look and feel cha
 
 The definition of a component can be broken down as follows:
 
-* AEM components are based on [Sling.](https://sling.apache.org/documentation.html)
+* AEM components are based on [Sling](https://sling.apache.org/documentation.html).
 * AEM components are located under `/libs/core/wcm/components`.
 * Project/Site specific components are located under `/apps/<myApp>/components`.
 * AEM standard components are defined as `cq:Component` and have the key elements:
@@ -97,32 +99,32 @@ The definition of a component can be broken down as follows:
 * **Root Node**:
   * `<mycomponent> (cq:Component)` - Hierarchy node of the component.
 * **Vital Properties**:
-  * `jcr:title` - Component title; for example, used as a label when the component is listed in the [Components Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) and [Components Console](/help/sites-cloud/authoring/features/components-console.md)
-  * `jcr:description` - Description for the component; used as mouse-over hint in the Components Browser and Components Console
-  * See the section [Component Icon](#component-icon) for details
+  * `jcr:title` - Component title; for example, used as a label when the component is listed in the [Components Browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) and [Components Console](/help/sites-cloud/authoring/components-console.md).
+  * `jcr:description` - Description for the component; used as mouse-over hint in the Components Browser and Components Console.
+  * See the section [Component Icon](#component-icon) for details.
 * **Vital Child Nodes**:
-  * `cq:editConfig (cq:EditConfig)` - Defines the edit properties of the component and enables the component to appear in the Components Browser
+  * `cq:editConfig (cq:EditConfig)` - Defines the edit properties of the component and enables the component to appear in the Components Browser.
     * If the component has a dialog, it will automatically appear in the Components browser or Sidekick, even if the cq:editConfig does not exist.
   * `cq:childEditConfig (cq:EditConfig)` - Controls author UI aspects for child components that do not define their own `cq:editConfig`.
   * `cq:dialog (nt:unstructured)` - Dialog for this component. Defines the interface allowing the user to configure the component and/or edit content.
-  * `cq:design_dialog (nt:unstructured)` - Design editing for this component
+  * `cq:design_dialog (nt:unstructured)` - Design editing for this component.
 
 #### Component Icon {#component-icon}
 
 The icon or abbreviation for the component is defined via JCR properties of the component when the component is created by the developer. These properties are evaluated in the following order and the first valid property found is used.
 
-1. `cq:icon` - String property pointing to a standard icon in the [Coral UI library](https://opensource.adobe.com/coral-spectrum/examples/#icon) to display in the component browser
+1. `cq:icon` - String property pointing to a standard icon in the [Coral UI library](https://opensource.adobe.com/coral-spectrum/examples/#icon) to display in the component browser.
     * Use the value of the HTML attribute of the Coral icon.
-1. `abbreviation` - String property to customize the abbreviation of the component name in the component browser
+1. `abbreviation` - String property to customize the abbreviation of the component name in the component browser.
     * The abbreviation should be limited to two characters.
     * Providing an empty string will build the abbreviation from first two characters of the `jcr:title` property.
-        * For example "Im" for "Image"
-        * The localized title will be used to build the abbreviation.
+        * For example, "Im" for "Image".
+        * The localized title is used to build the abbreviation.
     * The abbreviation is only translated if the component has an `abbreviation_commentI18n` property, which is then used as translation hint.
-1. `cq:icon.png` or `cq:icon.svg` - Icon for this component, which is shown in the Component Browser
+1. `cq:icon.png` or `cq:icon.svg` - Icon for this component, which is shown in the Component Browser.
     * 20 x 20 pixels is the size of icons of standard components.
-        * Larger icons will be downsized (client-side).
-    * The recommended color is rgb(112, 112, 112) &gt; #707070
+        * Larger icons are downsized (client-side).
+    * The recommended color is rgb(112, 112, 112) &gt; #707070.
     * The background of standard component icons is transparent.
     * Only `.png` and `.svg` files are supported.
     * If importing from the file system via Eclipse plugin, filenames need to be escaped as `_cq_icon.png` or `_cq_icon.svg` for example.
@@ -135,7 +137,7 @@ If none of the above properties (`cq:icon`, `abbreviation`, `cq:icon.png` or `cq
 
 To cancel the inheritance of icons from super components, setting an empty `abbreviation` property on the component will revert to the default behavior.
 
-The [Component Console](/help/sites-cloud/authoring/features/components-console.md#component-details) displays how the icon for a particular component is defined.
+The [Component Console](/help/sites-cloud/authoring/components-console.md#component-details) displays how the icon for a particular component is defined.
 
 #### SVG Icon Example {#svg-icon-example}
 
@@ -160,14 +162,14 @@ A component is a node of type `cq:Component` and has the following properties an
 |Name|Type|Description|
 |---|---|---|
 |`.`|`cq:Component`|This represents the current component. A component is of node type `cq:Component`.|
-|`componentGroup`|`String`|This represents the group under which the component can be selected in the [Components Browser.](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) A value beginning with `.` is used for components that are not available for selection from the UI such as base components from which other components inherit.|
+|`componentGroup`|`String`|This represents the group under which the component can be selected in the [Components Browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser). A value beginning with `.` is used for components that are not available for selection from the UI such as base components from which other components inherit.|
 |`cq:isContainer`|`Boolean`|This indicates whether the component is a container component and therefore can contain other components such as a paragraph system.|
 |`cq:dialog`|`nt:unstructured`|This is the definition of the edit dialog for the component.|
 |`cq:design_dialog`|`nt:unstructured`|This is the definition of the design dialog for the component.|
-|`cq:editConfig`|`cq:EditConfig`|This defines the [edit configuration of the component.](#edit-behavior)|
+|`cq:editConfig`|`cq:EditConfig`|This defines the [edit configuration of the component](#edit-behavior).|
 |`cq:htmlTag`|`nt:unstructured`|This returns additional tag attributes that are added to the surrounding HTML tag. Enables addition of attributes to the automatically generated divs.|
 |`cq:noDecoration`|`Boolean`|If true, the component is not rendered with automatically generated div and css classes.|
-|`cq:template`|`nt:unstructured`|If found, this node will be used as a content template when the component is added from the Components Browser.|
+|`cq:template`|`nt:unstructured`|If found, this node is used as a content template when the component is added from the Components Browser.|
 |`jcr:created`|`Date`|This is the date of creation of the component.|
 |`jcr:description`|`String`|This is the description of the component.|
 |`jcr:title`|`String`|This is the title of the component.|
@@ -175,7 +177,7 @@ A component is a node of type `cq:Component` and has the following properties an
 |`component.html`|`nt:file`|This is the HTL script file of the component.|
 |`cq:icon`|`String`|This value points to the [icon of the component](#component-icon) and appears in the Components Browser.|
 
-If we look at the **Text** component, we can see a number of these elements:
+If you look at the **Text** component, you can see several of these elements:
 
 ![Text Component structure](assets/components-text.png)
 
@@ -193,7 +195,7 @@ Child nodes of particular interest include:
 
 ### Dialogs {#dialogs}
 
-Dialogs are a key element of your component as they provide an interface for authors to configure the component on a content page and provide input for that component. See the [authoring documentation](/help/sites-cloud/authoring/fundamentals/editing-content.md) for details on how content authors interact with components.
+Dialogs are a key element of your component as they provide an interface for authors to configure the component on a content page and provide input for that component. See the [authoring documentation](/help/sites-cloud/authoring/page-editor/edit-content.md) for details on how content authors interact with components.
 
 Depending on the complexity of the component your dialog may need one or more tabs.
 
@@ -215,9 +217,9 @@ Within the dialog, individual fields are defined:
 
 ### Design Dialogs {#design-dialogs}
 
-Design dialogs are similar to the dialogs used to edit and configure content, but they provide the interface for template authors to pro-configure and provide design details for that component on a page template. Page templates are then used by the content authors to create content pages. See the [template documentation](/help/sites-cloud/authoring/features/templates.md) for details on how templates are created.
+Design dialogs are similar to the dialogs used to edit and configure content, but they provide the interface for template authors to pro-configure and provide design details for that component on a page template. Page templates are then used by the content authors to create content pages. See the [template documentation](/help/sites-cloud/authoring/page-editor/templates.md) for details on how templates are created.
 
-[Design dialogs are used when editing a page template](/help/sites-cloud/authoring/features/templates.md), though they are not needed for all components. For example the **Title** and **Image Components** both have design dialogs, whereas the **Social Media Sharing Component** does not.
+[Design dialogs are used when editing a page template](/help/sites-cloud/authoring/page-editor/templates.md), though they are not needed for all components. For example, the **Title** and **Image Components** both have design dialogs, whereas the **Social Media Sharing Component** does not.
 
 ### Coral UI and Granite UI {#coral-and-granite}
 
@@ -242,13 +244,13 @@ Content not found
 >See the [AEM Gems session](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html) on customizing dialog fields.
 -->
 
-To create a new widget for use in a component dialog requires you to create a new Granite UI field component.
+To create a widget for use in a component dialog requires you to create a Granite UI field component.
 
-If you consider your dialog as a simple container for a form element, then you can also see the primary content of your dialog content as form fields. Creating a new form field requires you to create a resource type; this is equivalent to creating a new component. To help you in that task, Granite UI offers a generic field component to inherit from (using `sling:resourceSuperType`):
+If you consider your dialog as a simple container for a form element, then you can also see the primary content of your dialog content as form fields. Creating a new form field requires you to create a resource type; this is equivalent to creating a component. To help you in that task, Granite UI offers a generic field component to inherit from (using `sling:resourceSuperType`):
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
-More specifically Granite UI provides a range of field components that are suitable for use in dialogs, or more generally speaking in [forms.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)
+More specifically Granite UI provides a range of field components that are suitable for use in dialogs, or more generally speaking in [forms](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html).
 
 Once you have created your resource type, you can instantiate your field by adding a new node in your dialog, with the property `sling:resourceType` referring to the resource type you have just introduced.
 
@@ -266,13 +268,13 @@ You can also use render conditions (`rendercondition`) to control who has access
 
 ## Using Components {#using-components}
 
-Once you have create a component, you need to enable it in order to use it. Using it shows how the structure of the component relates to the structure of the resulting content in the repository.
+After you have create a component, you must enable it to use it. Using it shows how the structure of the component relates to the structure of the resulting content in the repository.
 
 ### Adding your Component to the Template {#adding-your-component-to-the-template}
 
-Once a component has been defined it must be made available for use. To make a component available for use in a template, you must enable the component in the policy of the layout container of the template.
+After a component has been defined it must be made available for use. To make a component available for use in a template, you must enable the component in the policy of the layout container of the template.
 
-See the [template documentation](/help/sites-cloud/authoring/features/templates.md) for details on how templates are created.
+See the [template documentation](/help/sites-cloud/authoring/page-editor/templates.md) for details on how templates are created.
 
 ### Components and the Content They Create {#components-and-the-content-they-create}
 
@@ -315,7 +317,7 @@ There are many existing configurations in AEM. You can easily search for specifi
 
 Components must always render some HTML that is visible to the author, even when the component has no content. Otherwise it might visually disappear from the editor's interface, making it technically present but invisible on the page and in the editor. In such a case the authors won't be able to select and interact with the empty component.
 
-For this reason, components should render a placeholder as long as they don't render any visible output when the page is rendered in the page editor (when the WCM mode is `edit` or `preview`).
+For this reason, components should render a placeholder as long as they do not render any visible output when the page is rendered in the page editor (when the WCM mode is `edit` or `preview`).
 The typical HTML markup for a placeholder is the following:
 
 ```HTML
@@ -331,7 +333,7 @@ The typical HTL script that renders the above placeholder HTML is the following:
 
 In the previous example, `isEmpty` is a variable that is true only when the component has no content and is invisible to the author.
 
-To avoid repetition, Adobe recommends that implementers of components use an HTL template for these placeholders, [like the one provided by the Core Components.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
+To avoid repetition, Adobe recommends that implementers of components use an HTL template for these placeholders, [like the one provided by the Core Components](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html).
 
 The usage of the template in the previous link is then done with the following line of HTL:
 
@@ -342,7 +344,7 @@ The usage of the template in the previous link is then done with the following l
 
 In the previous example, `model.text` is the variable that is true only when the content has content and is visible.
 
-An example usage of this template can be seen in the Core Components, [such as in the Title Component.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
+An example usage of this template can be seen in the Core Components, [such as in the Title Component](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27).
 
 ### Configuring with cq:EditConfig Child Nodes {#configuring-with-cq-editconfig-child-nodes}
 
@@ -377,7 +379,7 @@ The following configuration enables the in-place editing of the component and de
 
 ### Handling Field Events - cq:listeners {#cq-listeners}
 
-The method of handling events on dialog fields is done with listeners in a custom [client library.](/help/implementing/developing/introduction/clientlibs.md)
+The method of handling events on dialog fields is done with listeners in a custom [client library](/help/implementing/developing/introduction/clientlibs.md).
 
 To inject logic into your field, you should:
 
@@ -410,7 +412,7 @@ The `cq:listeners` node (node type `cq:EditListenersConfig`) defines what happen
 >* `aftermove`
 >* `aftercopy`
 
-The event handler can be implemented with a custom implementation. For example (where `project.customerAction` is a static method):
+The event handler can be implemented with a custom implementation. For example, (where `project.customerAction` is a static method):
 
 `afteredit = "project.customerAction"`
 
@@ -435,7 +437,7 @@ Field validation in Granite UI and the Granite UI widgets is done by using the `
 
 ### Detecting Availability of the Dialog {#dialog-ready}
 
-If you have a custom JavaScript that needs to be executed only when the dialog is available and ready, you should listen for the `dialog-ready` event.
+If you have a custom JavaScript that must be run only when the dialog is available and ready, you should listen for the `dialog-ready` event.
 
 This event is triggered  whenever the dialog loads (or re-loads) and is ready for use, which means whenever there is a change (create/update) in the DOM of the dialog.
 
@@ -463,8 +465,8 @@ All you need to do is place a `README.md` file in the component structure.
 
 ![README.md in component structure](assets/components-documentation.png)
 
-This markdown will then be displayed in the [Component Console.](/help/sites-cloud/authoring/features/components-console.md)
+This markdown will then be displayed in the [Component Console](/help/sites-cloud/authoring/components-console.md).
 
 ![README.md visible in the Components Console](assets/components-documentation-console.png)
 
-The supported markdown is the same as that for [Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md).
+The supported markdown is the same as that for [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md).

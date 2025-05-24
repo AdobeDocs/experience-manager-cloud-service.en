@@ -1,33 +1,39 @@
 ---
 title: Introduction to authoring Adaptive Forms
-seo-title: Introduction to authoring Adaptive Forms
 description: AEM Forms provide easy-to-use yet powerful interface for authoring Adaptive Forms. It provides a host of components and tools that you can use to build forms.
-seo-description: AEM Forms provide easy-to-use yet powerful interface for authoring Adaptive Forms. It provides a host of components and tools that you can use to build forms.
-uuid: 3b150507-41b9-47c2-a94c-f85b903b2274
 content-type: reference
 topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
-docset: aem65
+feature: Adaptive Forms, Foundation Components
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
+role: User, Developer
 ---
 # Adaptive Forms editor {#introduction-to-authoring-adaptive-forms}
+
+>[!NOTE]
+>
+> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components.
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html)                  |
+| AEM as a Cloud Service     | This article        |
 
 ## Overview {#overview}
 
 Adaptive Forms allow you to create forms that are engaging, responsive, dynamic, and adaptive. [!DNL AEM Forms] provides an intuitive user interface and out-of-the-box components for creating and working with Adaptive Forms. You can choose to create an Adaptive Form based on a form model or schema or without a form model. It is important to carefully choose the form model that not only suits your requirements but extends your existing infrastructural investments and assets. You get to choose from the following options to create an Adaptive Form:
 
-* **Using a form data model**
-  [Data integration](data-integration.md) lets you integrate entities and services from disparate data sources in to a Form Data Model that you can use to create Adaptive Forms. Choose Form Data Model if the Adaptive Form you are creating involves fetching and write data from and to multiple data source. 
+* **Using a form data model (FDM)**
+  [Data integration](data-integration.md) lets you integrate entities and services from disparate data sources in to a Form Data Model (FDM) that you can use to create Adaptive Forms. Choose Form Data Model (FDM)if the Adaptive Form you are creating involves fetching and write data from and to multiple data source. 
 
 * **Using an XDP Form Template**
   It is an ideal form model if you have investments in XFA-based or XDP forms. It provides a direct way to convert your XFA-based forms into Adaptive Forms. Any existing XFA rules are retained in the associated Adaptive Forms. The resulting Adaptive Forms support XFA constructs, such as validations, events, properties, and patterns.
 
 * **Using an XML Schema Definition (XSD) or a JSON Schema**
-  XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema will be available for use in the Data Model Objects tab of the Content browser when authoring Adaptive Forms.
+  XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema are available for use in the Data Model Objects tab of the Content browser when authoring Adaptive Forms.
 
 * **Using none or without a form model**
-  Adaptive Forms created with this option don't use any form model. The data XML generated from such forms has flat structure with fields and corresponding values.
+  Adaptive Forms created with this option does not use any form model. The data XML generated from such forms has flat structure with fields and corresponding values.
 
   >[!NOTE]
   >
@@ -43,7 +49,7 @@ The touch-optimized UI for authoring Adaptive Forms is intuitive, and provides:
 * Standard form components
 * Integrated repository for assets
 
-When you create a new or edit an existing Adaptive Form, you use the following UI elements:
+When you create or edit an existing Adaptive Form, you use the following UI elements:
 
 * [Sidebar](#sidebar)
 * [Page toolbar](#page-toolbar)
@@ -56,7 +62,7 @@ When you create a new or edit an existing Adaptive Form, you use the following U
 
 ### Sidebar {#sidebar}
 
-The Sidebar allows you to
+The Sidebar lets you
 
 * Search, view, and use assets in your AEM Digital Asset Management (DAM) repository.
 * See form content such as panels, components, fields, and layout.
@@ -81,13 +87,13 @@ The sidebar comprises the following browsers:
 
   * **Data Model Objects**
       Lets you see the form model hierarchy.
-      It allows you to drag and drop form-model elements on the Adaptive Form. The added elements automatically get converted into form components while retaining their original properties. You can see data model objects when your form uses XML schema, JSON schema, or XDP template.
+      It lets you drag and drop form-model elements on the Adaptive Form. The added elements automatically get converted into form components while retaining their original properties. You can see data model objects when your form uses XML schema, JSON schema, or XDP template.
 
 * **Properties browser**
 
   Lets you edit the properties of a component. Properties change according to a component. To see properties of the Adaptive Form container:
 
-  Select a component, then tap ![field-level](assets/Smock_SelectContainer_18_N.svg) &gt; **[!UICONTROL Adaptive Form Container]**, and then tap ![properties](assets/Smock_Wrench_18_N.svg).
+  Select a component, then select ![field-level](assets/Smock_SelectContainer_18_N.svg) &gt; **[!UICONTROL Adaptive Form Container]**, and then select ![properties](assets/Smock_Wrench_18_N.svg).
 
 * **Assets browser**
 
@@ -145,7 +151,7 @@ The sidebar comprises the following browsers:
   </tr>
   <tr>
    <td>Email</td>
-   <td><p>Adds a field to capture email address. The Email component, by default, validates email addresses using the following regular expression.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Adds a field to capture email address. The Email component, by default, validates email addresses using the following regular expression.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>File attachment</td>
@@ -165,7 +171,7 @@ The sidebar comprises the following browsers:
   </tr>
   <tr>
    <td>Image</td>
-   <td>Allows you to insert an image.</td>
+   <td>Lets you insert an image.</td>
   </tr>
   <tr>
    <td>Image Choice</td>
@@ -221,7 +227,7 @@ The sidebar comprises the following browsers:
   </tr>
   <tr>
    <td>Text</td>
-   <td>Allows you to specify static text.</td>
+   <td>Lets you specify static text.</td>
   </tr>
   <tr>
    <td>Submit Button</td>
@@ -298,7 +304,7 @@ The page toolbar on the top provides options that let you preview the form, chan
 
 When you select a component, you see a toolbar that lets you work it. You get options to cut, paste, move, and specify properties of the components. Your options are:
 
-A.**Configure**: When you tap **[!UICONTROL Configure]**, component properties are visible in the sidebar. Configuring these properties let you customize the data capturing experience. You can change the element name of the component, specify the label text in the Title field of the component. Element name lets you capture values users enter using the component. In the component properties, you specify the behavior of the component, and manage user input. Configure properties in the sidebar to capture user data and use it for further processing. Properties for Adaptive Form container let you specify Client libraries, Layouts, Themes, Document of Record settings, save settings, submission settings, and metadata settings.
+A.**Configure**: When you select **[!UICONTROL Configure]**, component properties are visible in the sidebar. Configuring these properties let you customize the data capturing experience. You can change the element name of the component, specify the label text in the Title field of the component. Element name lets you capture values users enter using the component. In the component properties, you specify the behavior of the component, and manage user input. Configure properties in the sidebar to capture user data and use it for further processing. Properties for Adaptive Form container let you specify Client libraries, Layouts, Themes, Document of Record settings, save settings, submission settings, and metadata settings.
 
 B.**Copy**: You can use the copy option to copy a component and paste it in other places in the form. When you paste a component, the pasted component gets a new element name but retains the properties of the copied component.
 
@@ -316,7 +322,7 @@ H. **Group**: Lets you select multiple components if you want to cut, copy, or p
 
 I. **Parent**: Lets you select the parent of a component. For example, a text field lies within a sub-section, which resides in a section. The section resides in the guide root panel, and the Adaptive Form container is the parent of a guide root panel. For a component, you can see all the options with the hierarchy sorted bottoms-up.
 
-For example, if you tap **[!UICONTROL Parent]** for a text box, you can see:
+For example, if you select **[!UICONTROL Parent]** for a text box, you can see:
 
 * Sub-section
 * Section
@@ -351,3 +357,7 @@ The content structure typically contains the following primary components:
 * **toolbar:** An Adaptive Form container has an associated global toolbar, which is global to the form. This toolbar can be added using the **[!UICONTROL Add Toolbar]** action in the edit bar, which allows authors to add actions, such as Submit, Save, Reset, and so on.
 
 * **assets:** This node contains additional information used for form authoring. For example, form model details, localization details, and so on.
+
+## See Also {#see-also}
+
+{{see-also}}

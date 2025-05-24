@@ -2,6 +2,8 @@
 title: Using CRXDE Lite
 description: CRXDE Lite is part of the AEM quickstart and is available to you to access and modify the repository in your local development environments within the browser.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Using CRXDE Lite {#using-crxde-lite}
 
@@ -26,7 +28,7 @@ The CRXDE Lite User Interface appears as follows in your browser:
 
 >[!TIP]
 >
->You can also access CRXDE Lite from the AEM menu. From the main menu select **Tools** -&gt; **General** -&gt; **CRXDE Lite**.
+>You can also access CRXDE Lite from the AEM menu. From the main menu select **Tools** &gt; **General** &gt; **CRXDE Lite**.
 
 ## Overview of the User Interface {#overview-of-the-user-interface}
 
@@ -34,7 +36,7 @@ CRXDE Lite's user interface has many parts and has many functions.
 
 ### Top switcher bar {#top-switcher-bar}
 
-The Top Switcher Bar allows you to quickly switch between CRXDE Lite and [Package Manager.](package-manager.md)
+The Top Switcher Bar lets you quickly switch between CRXDE Lite and [Package Manager](package-manager.md).
 
 ### Node Path Widget {#node-path-widget}
 
@@ -42,7 +44,7 @@ The Node Path Widget displays the path to the currently selected node.
 
 You can also use it to jump to a node by entering the path by hand or pasting it from somewhere else and pressing Enter.
 
-It also provides support for looking for nodes with specific node name. Enter the name of the node you would like to find, and wait (or select the search icon on the right-hand side). If a given node or nodes is loaded into the explorer pane, the list will be displayed, and you can select the path and press Enter to navigate to it. Note that it only works for the nodes currently loaded into the CRXDE client application in browser. If you want to search the whole repository, use **Tools** -&gt: **Query**.
+It also provides support for looking for nodes with specific node name. Enter the name of the node you would like to find, and wait (or select the search icon on the right-hand side). If a given node or nodes is loaded into the explorer pane, the list is displayed, and you can select the path and press Enter to navigate to it. It only works for the nodes currently loaded into the CRXDE client application in browser. If you want to search the whole repository, use **Tools** -&gt: **Query**.
 
 ### Explorer Pane {#explorer-pane}
 
@@ -54,7 +56,7 @@ Tree Navigation Filter (the binoculars icon) enables you to filter the nodes in 
 
 ### Edit Pane {#edit-pane}
 
-The **Edit Pane** allows you to view the content of the currently-selected file in the repository. Each file opened will be represented as its own tab in the pane.
+The **Edit Pane** lets you view the content of the currently-selected file in the repository. Each file opened is represented as its own tab in the pane.
 
 The **Home** tab lets you search content and/or documentation and access developer documentation and Adobe support.
 
@@ -65,7 +67,7 @@ Once a file is edited in the **Edit Pane**, the following tools are available on
 * **Show in tree** - Shows the file in the repository tree.
 * **Search/Replace** - Performs a search or replace.
 
-Double-click on the status line of the **Edit Pane** opens the **Go to line** dialog so you can enter a specific line number.
+Double-click the status line of the **Edit Pane** opens the **Go to line** dialog so you can enter a specific line number.
 
 ### Properties Tab {#properties-tab}
 
@@ -103,7 +105,7 @@ The **Refresh Button** refreshes the current selection. Changes from other users
 
 ### Save All Button {#save-all-button}
 
-The **Save All Button** saves all the changes you have made. Until you choose to save, the changes are temporary, and will be lost when you exit the console.
+The **Save All Button** saves all the changes you have made. Until you choose to save, the changes are temporary, and are lost when you exit the console.
 
 * **Revert** - Discards all the changes that you have made on the selected node since the last save action, then reloads the current state of the repository for the selected node
 * **Revert All** - Discards all the changes that you have made throughout the entire repository since the last save action, then reloads the current state of the repository
@@ -138,7 +140,7 @@ The **Rename Button** renames the selected node.
 
 ### Mixins {#mixins-button}
 
-The **Mixins Button** allows you to add mixin types to the node type. The mixin types are mostly used to add advanced features.
+The **Mixins Button** lets you add mixin types to the node type. The mixin types are mostly used to add advanced features.
 
 ### Tools {#tools-button}
 
@@ -157,7 +159,7 @@ The **Login Widget** displays the currently logged-in user.
 
 Click it to log in or re-login as another user. The `@crx.default` represents that you are in the default (and only) workspace in the repository.
 
-The **Preferences** option can be used to set your UI language and to view and customize the hot keys for various actions such as save, search, create note, etc.
+The **Preferences** option can be used to set your UI language and to view and customize the hot keys for various actions such as save, search, create note, and so on.
 
 ## Creating a Folder {#creating-a-folder}
 
@@ -175,7 +177,7 @@ To create a folder with CRXDE Lite:
 To create a node with CRXDE Lite:
 
 1. Open CRXDE Lite in your browser.
-1. In the [**Exploerer Pane**,](#explorer-pane) right-click the node where you want to create the new node, select **Create**, then **Create Node**.
+1. In the [**Exploerer Pane**](#explorer-pane), right-click the node where you want to create the new node, select **Create**, then **Create Node**.
 1. Enter the **Name** and select the **Type**.
 1. Click **OK**.
 1. Click the [**Save All Button**](#save-all-button) to save the changes on the server.
@@ -186,27 +188,27 @@ You can now adapt the node to your needs by modifying properties or creating new
 >
 >Most of the edit operations, including **Create Node**, keeps all the changes in memory, and only stores them in the repository upon saving (using the [**Save All Button**](#save-all-button)). However some operations such as move are automatically persisted.
 >
->The validation with regard to whether the newly created node is allowed by the node type of the parent node is also carried out by the repository when saving changes. If you receive an error message while saving a node, please check if the content structure is valid (for example, you cannot create an `nt:unstructured` node as a child of `nt:folder` node).
+>The validation with regard to whether the created node is allowed by the node type of the parent node is also carried out by the repository when saving changes. If you receive an error message while saving a node, check if the content structure is valid (for example, you cannot create an `nt:unstructured` node as a child of `nt:folder` node).
 
 ## Creating a Property {#creating-a-property}
 
 To create a property with CRXDE Lite:
 
 1. Open CRXDE Lite in your browser.
-1. In the [**Exploerer Pane**,](#explorer-pane) select the node where you want to add the new property.
+1. In the [**Exploerer Pane**](#explorer-pane), select the node where you want to add the new property.
 1. In the [**Properties Tab**](#properties-tab) in the bottom pane, enter the **Name**, the **Type**, and the **Value**.
 1. Click **Add**.
 1. Click the [**Save All Button**](#save-all-button) to save the changes on the server.
 
 ## Creating a File {#creating-a-file}
 
-To create a new file with CRXDE Lite:
+To create a file with CRXDE Lite:
 
 1. Open CRXDE Lite in your browser.
-1. In the [**Exploerer Pane**,](#explorer-pane) right-click the component where you want to create the file, select **Create**, then **Create File**.
+1. In the [**Exploerer Pane**](#explorer-pane), right-click the component where you want to create the file, select **Create**, then **Create File**.
 1. Enter the file **Name** including its extension.
 1. Click **OK**.
-1. The new file opens as a tab in the [**Edit Pane**.](#edit-pane)
+1. The new file opens as a tab in the [**Edit Pane**](#edit-pane).
 1. Edit the file.
 1. Click the [**Save All Button**](#save-all-button) to save the changes.
 
@@ -219,8 +221,8 @@ To export a node type definition in CRXDE Lite:
 1. Open CRXDE Lite in your browser.
 1. Select your required node.
 1. Select **Tools** then **Export Node Type**.
-1. The definition will be displayed in CND notation in a new tab in your browser.
-1. Save the information if required.
+1. The definition is displayed in CND notation in a new tab in your browser.
+1. Save the information if necessary.
 
 To import a node type definition:
 
@@ -236,7 +238,7 @@ To import a node type definition:
 With CRXDE Lite you can display the file `error.log` that is located on the file system at `<aem-install-dir>/crx-quickstart/logs` and filter it with the appropriate log level. Proceed as follows:
 
 1. Open CRXDE Lite in your browser.
-1. In the in the drop-down menu on the right of the [**Console Tab**](#console-tab) at the bottom of the window, select **Server Logs**.
+1. In the drop-down menu on the right of the [**Console Tab**](#console-tab) at the bottom of the window, select **Server Logs**.
 1. Click the **Stop** icon to display the messages.
 
 You can:

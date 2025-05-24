@@ -1,37 +1,46 @@
 ---
-title: Configuring Production Pipelines
-description: Learn how to configuring production pipelines to build and deploy your code to production environments.
+title: Add a Production Pipeline
+description: Learn how to add a production pipeline to build and deploy your code to production environments.
 index: yes
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 
-# Configuring a Production Pipeline {#configure-production-pipeline}
+# Add a production pipeline {#configure-production-pipeline}
 
-Learn how to configuring Production pipelines to build and deploy your code to Production environments. A Production pipeline deploys code first to Stage environment, and upon approval deploys the same code to the Production environment.
+Learn how to configure production pipelines to build and deploy your code to production environments. A production pipeline deploys code first to the stage environment. On approval, it deploys the same code to the production environment.
 
 A user must have the **[Deployment Manager](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** role to configure production pipelines.
 
 >[!NOTE]
 >
->A production pipeline can not be set up until program creation is complete, a git repository has at least one branch, and a production and staging environment set is created.
+>A production pipeline cannot be set up until the following has happened: 
+>
+>* The program is created.
+>* The Git repository has at least one branch.
+>* The production and staging environments are created.
 
-Before you start to deploy your code, you must configure your pipeline settings from the [!UICONTROL Cloud Manager].
+Before you start to deploy your code, configure your pipeline settings from the [!UICONTROL Cloud Manager].
 
 >[!NOTE]
 >
 >You can [edit pipeline settings](managing-pipelines.md) after the initial setup.
 
-## Adding a New Production Pipeline {#adding-production-pipeline}
+## Add a new production pipeline {#adding-production-pipeline}
 
 Once you have set up your program and have at least one environment using the [!UICONTROL Cloud Manager] UI, you are ready to add a production pipeline by following these steps.
 
 >[!TIP]
 >
->Before you configure a front-end pipeline, see the [AEM Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md) for an end-to-end guide though the easy-to-use AEM Quick Site Creation tool. This journey will help you streamline the front-end development of your AEM Site, allowing you to quickly customize your site with no AEM back-end knowledge.
+>Before you configure a front-end pipeline, see the [AEM Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md) for an end-to-end guide through the easy-to-use AEM Quick Site Creation tool. This journey can help you streamline the front-end development of your AEM Site, letting you customize your site quickly with no AEM back-end knowledge.
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization
 
-1. Navigate to the **Pipelines** card from the **Program Overview** page and click on **Add** to select **Add Production Pipeline**. 
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
+
+1. Navigate to the **Pipelines** card from the **Program Overview** page and click **Add** to select **Add Production Pipeline**. 
 
    ![The Pipelines card on the Program Manager overview](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
 
@@ -39,73 +48,49 @@ Once you have set up your program and have at least one environment using the [!
 
    **Deployment Trigger** - You have the following options when defining the deployment triggers to start the pipeline.
       
-      * **Manual** - Use this option to manually start the pipeline.
-      * **On Git Changes** - This options starts the CI/CD pipeline whenever commits are added to the configured git branch. With this option, you can still start the pipeline manually as required.  
+      * **Manual** - Start the pipeline manually.
+      * **On Git Changes** - Starts the CI/CD pipeline whenever commits are added to the configured Git branch. With this option, you can still start the pipeline manually as required.  
 
     **Important Metric Failures Behavior** - During pipeline setup or edit, the **Deployment Manager** has the option of defining the behavior of the pipeline when an important failure is encountered in any of the quality gates. The available options are:
 
-    * **Ask every time** - This is the default setting and requires manual intervention on any important failure.
-    * **Fail Immediately** - If selected, the pipeline will be cancelled whenever an important failure occurs. This is essentially emulating a user manually rejecting each failure.
-    * **Continue Immediately** - If selected, the pipeline will proceed automatically whenever an important failure occurs. This is essentially emulating a user manually approving each failure.
+    * **Ask every time** - Default setting. It requires manual intervention in any important failure.
+    * **Fail Immediately** - If selected, the pipeline is canceled whenever an important failure occurs. This process is essentially emulating a user manually rejecting each failure.
+    * **Continue Immediately** - If selected, the pipeline proceeds automatically whenever an important failure occurs. This process is essentially emulating a user manually approving each failure.
 
     ![Production pipeline configuration](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
 
-1. On the **Source Code** tab you must define where the pipeline should retrieve its code and what type of code it is.
+1. On the **Source Code** tab, select which type of code the pipeline should process.
 
-   * **[Front End Code](#front-end-code)**
-   * **[Full Stack Code](#full-stack-code)**
-   * **[Web Tier Config](#web-tier-config)**
+   * **[Configure a full stack code pipeline](#full-stack-code)**
+   * **[Configure a targeted deployment pipeline](#targeted-deployment)**
 
-The steps to complete the creation of your production pipeline vary depending on the option for **Source Code** you selected. Follow the links above to jump to the next section of this document to complete the configuration of your pipeline.
+See [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) for more information about the types of pipelines.
 
-### Front End Code {#front-end-code}
+The steps to complete the creation of your production pipeline vary depending on the type of source code you selected. Follow the links above to jump to the next section of this document so you can complete the configuration of your pipeline.
 
-A front-end code pipeline deploys front-end code builds containing one or more client-side UI applications. See the document [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) for more information about this type of pipeline.
+### Configure a full stack code pipeline {#full-stack-code}
 
-To finish the configuration of the front end code production pipeline, follow these steps.
-
-1. On the **Source Code** tab, you must define the following options.
-
-   * **Repository** - This option defines from which git repo the pipeline should retrieve the code.
-   
-   >[!TIP]
-   > 
-   >See the document [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) to learn how to add and manage repositories in Cloud Manager.
-
-   * **Git Branch** - This option defines from which branch in the selected the pipeline should retrieve the code.
-     * Enter the first few characters of the branch name and the auto-complete feature of this field will find the matching branches to help you select.
-   * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
-   * **Pause before deploying to Production** - This option pauses the pipeline before deploying to production.
-
-   ![Front end code](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-frontend.png)
-
-1. Click **Save** to save your pipeline.
-
-The pipeline is saved and you can now [manage your pipelines](managing-pipelines.md) on the **Pipelines** card on the **Program Overview** page.
-
-### Full Stack Code {#full-stack-code}
-
-A full-stack code pipeline simultaneously deploys back-end and front-end code builds containing one or more AEM server applications along with HTTPD/Dispatcher configuration. See the document [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline) for more information about this type of pipeline.
+A full-stack code pipeline simultaneously deploys back-end and front-end code builds containing one or more AEM server applications along with HTTPD/Dispatcher configuration.
 
 >[!NOTE]
 >
->If a full-stack code pipeline already exists for the selected environment, this selection will be disabled.
+>If a full-stack code pipeline already exists for the selected environment, this selection is disabled.
 
-To finish the configuration of the full-stack code production pipeline, follow these steps.
+**To configure a full stack code pipeline:**
 
-1. On the **Source Code** tab, you must define the following options.
+1. On the **Source Code** tab, define the following options.
 
-   * **Repository** - This option defines from which git repo the pipeline should retrieve the code.
+   * **Repository** - Defines from which Git repository that the pipeline should retrieve the code.
 
    >[!TIP]
    > 
-   >See the document [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) to learn how to add and manage repositories in Cloud Manager.
+   >See [Add and Manage Repositories](/help/implementing/cloud-manager/managing-code/managing-repositories.md) to learn how to add and manage repositories in Cloud Manager.
 
-   * **Git Branch** - This option defines from which branch in the selected the pipeline should retrieve the code.
-     * Enter the first few characters of the branch name and the auto-complete feature of this field will find the matching branches to help you select.
-   * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
-   * **Pause before deploying to Production** - This option pauses the pipeline before deploying to production.
-   * **Scheduled** - This option allows the user to enable the scheduled production deployment.
+   * **Git Branch** - Defines from which branch the selected pipeline should retrieve the code.
+  Enter the first few characters of the branch name and the auto-complete feature of this field finds the matching branches to help you select.
+   * **Ignore Web Tier Configuration** - When checked, the pipeline does not deploy your web tier configuration.
+   * **Pause before deploying to Production** - Pauses the pipeline before deploying to production.
+   * **Scheduled** - Lets the user enable the scheduled production deployment.
 
    ![Full stack code](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-fullstack.png)
 
@@ -113,71 +98,71 @@ To finish the configuration of the full-stack code production pipeline, follow t
 
    ![Add Experience Audit](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
   
-1. Provide a path to be included in the Experience Audit.
+1. Provide paths to be included in the Experience Audit.
 
-   * Page paths must start with `/`.
-   * For example, if you would like to include `https://wknd.site/us/en/about-us.html` in the Experience Audit, enter the path `/us/en/about-us.html`.
-
-   ![Defining a path for the Experience Audit](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
-
-1. Click **Add Page** and the path will be auto-completed with the address of your environment and added to the table of paths.
-
-   ![Saving path to the table](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
-
-1. Continue to add paths as necessary by repeating the previous two steps.
-
-   * You can add a maximum of 25 paths.
-   * If you don't define any paths, the homepage of the site will be included in the Experience Audit by default.
-
-1. Click on **Save** to save your pipeline.
-
-Paths configured for the Experience Audit will be submitted to the service and evaluated according to the performance, accessibility, SEO (Search Engine Optimization), best practice, and PWA (Progressive Web App) tests when the pipeline runs. Refer to [Understanding Experience Audit Results](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
-
-The pipeline is saved and you can now [manage your pipelines](managing-pipelines.md) on the **Pipelines** card on the **Program Overview** page.
-
-### Web Tier Config {#web-tier-config}
-
-A web tier config pipeline Deploys HTTPD/Dispatcher configurations. See the document [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipeline) for more information about this type of pipeline.
-
-To finish the configuration of the full-stack code production pipeline, follow these steps.
-   
-1. On the **Source Code** tab, you must define the following options.
-
-   * **Repository** - This option defines from which git repo the pipeline should retrieve the code.
-   
-   >[!TIP]
-   > 
-   >See the document [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) to learn how to add and manage repositories in Cloud Manager.
-   
-   * **Git Branch** - This option defines from which branch in the selected the pipeline should retrieve the code.
-     * Enter the first few characters of the branch name and the auto-complete feature of this field will find the matching branches to help you select.
-   * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
-     * For web tier config pipelines this is usually the path containing `conf.d`, `conf.dispatcher.d`, and `opt-in` directories.
-     * For example, if the project structure was generated from the [AEM Project Archetype,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) the path would be `/dispatcher/src`.
-   * **Pause before deploying to Production** - This option pauses the pipeline before deploying to production.
-   * **Scheduled** - This option allows the user to enable the scheduled production deployment.
-
-   ![Web tier code](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-webtier.png)
+   * See [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-dashboard.md#configuration) for details.
 
 1. Click **Save** to save your pipeline.
 
->[!NOTE]
->
->If you have an existing full-stack pipeline deploying to an environment, creating a web tier config pipeline for the same environment will case the existing web tier configuration in the full-stack pipeline to be ignored.
+When the pipeline runs, paths configured for the Experience Audit are submitted and evaluated based on performance, accessibility, SEO, best practices, and PWA tests. For more details, see [Understanding Experience Audit Results](/help/implementing/cloud-manager/experience-audit-dashboard.md).
 
 The pipeline is saved and you can now [manage your pipelines](managing-pipelines.md) on the **Pipelines** card on the **Program Overview** page.
 
-## Developing Sites with the Front-End Pipeline {#developing-with-front-end-pipeline}
+### Configure a targeted deployment pipeline {#targeted-deployment}
 
-With front-end pipelines, more independence is given to front-end developers and the development process can be accelerated.
+A targeted deployment deploys code only for selected parts of your AEM application. In such a deployment, you can choose to **Include** one of the following types of code:
 
-Please refer to the document [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) for how this process works along with some considerations to be aware of in order to get the full potential out of this process.
+* **Config** - Configure settings for various features in your AEM environment.
+  * See [Using Config Pipelines](/help/operations/config-pipeline.md) for a list of supported configurations, which includes log forwarding, purge-related maintenance tasks, and various CDN configurations, and to manage them in your repository so they are deployed properly.
+  * When running a targeted deployment pipeline, configurations are deployed, provided they were saved to the environment, repository, and branch defined in the pipeline.
+  * At any time, there can only be one config pipeline per environment. 
+* **Front End Code** - Configure JavaScript and CSS for the front end of your AEM application.
+  * With front-end pipelines, more independence is given to front-end developers and the development process can be accelerated.
+  * See the document [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) for how this process works along with some considerations to be aware of to get the full potential out of this process.
+* **Web Tier Config** - Configure Dispatcher properties to store, process, and delivery web pages to the client.
+  * See the document [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) for more details.
+  * If a web-tier code pipeline exists for the selected environment, this selection is disabled.
+  * If you create a web tier config pipeline for an environment with an existing full-stack pipeline, the web tier configuration in the full-stack pipeline is ignored. This change affects only the web tier configuration in that environment.
 
-## Skip Dispatcher Packages {#skip-dispatcher-packages}
+>[!NOTE]
+>
+>Web tier and config pipelines are not supported with private repositories. See [Adding Private Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) for details and the full list of limitations.
 
-If you want dispatcher packages built as part of your pipeline, but do not want them published to build storage, you can disable publishing them, which may reduce pipeline run duration.
+**To configure a targeted deployment pipeline:**
 
-The following configuration to disable publishing dispatcher packages must be added via your project `pom.xml` file. It is based on an environment variable, which serves as a flag you can set in the Cloud Manager build container to define when dispatcher packages should be ignored.
+1. Choose which deployment type you require.
+
+![Targeted deployment options](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-targeted-deployment.png)
+
+1. Define the **Eligible Deployment Environments**.
+
+   * If your pipeline is a deployment pipeline, you must select to which environments it should deploy.
+
+1. Under **Source Code**, define the following options:
+
+   * **Repository** - This option defines from which git repo that the pipeline should retrieve the code.
+
+   >[!TIP]
+   > 
+   >See [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/managing-repositories.md) so you can learn how to add and manage repositories in Cloud Manager.
+
+   * **Git Branch** - This option defines from which branch in the selected pipeline should retrieve the code.
+     * Enter the first few characters of the branch name and the auto-complete feature of this field. It finds the matching branches that you can select.
+   * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
+   * **Pause before deploying to Production** - This option pauses the pipeline before deploying to production.
+   * **Scheduled** - Lets the user enable the scheduled production deployment. Only available for web tier targeted deployments.
+   
+   ![Config pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
+
+1. Click **Save**.
+
+The pipeline is saved and you can now [manage your pipelines](managing-pipelines.md) on the **Pipelines** card on the **Program Overview** page.
+
+## Skip Dispatcher packages {#skip-dispatcher-packages}
+
+To build Dispatcher packages in your pipeline without publishing them to build storage, you can disable the publishing option. Doing so may help reduce the pipeline's run time.
+
+The following configuration to disable publishing Dispatcher packages must be added via your project `pom.xml` file. An environment variable serves as a flag that you set in the Cloud Manager build container to determine when to ignore Dispatcher packages.
 
 ```xml
 <profile>

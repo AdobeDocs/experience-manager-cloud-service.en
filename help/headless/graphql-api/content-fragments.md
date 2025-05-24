@@ -1,8 +1,9 @@
 ---
 title: AEM GraphQL API for use with Content Fragments
 description: Learn how to use Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service with the AEM GraphQL API for headless content delivery.
-feature: Content Fragments,GraphQL API
+feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
+role: Admin, Developer
 ---
 
 # AEM GraphQL API for use with Content Fragments {#graphql-api-for-use-with-content-fragments}
@@ -24,6 +25,14 @@ Using the GraphQL API in AEM enables the efficient delivery of Content Fragments
 >* [AEM Commerce consumes data from a Commerce platform via GraphQL](/help/commerce-cloud/integrating/magento.md).
 >* AEM Content Fragments work together with the AEM GraphQL API (a customized implementation, based on standard GraphQL), to deliver structured content for use in your applications.
 
+>[!NOTE]
+>
+>See [AEM APIs for Structured Content Delivery and Management](/help/headless/apis-headless-and-content-fragments.md) for an overview of the various APIs available and comparison of some of the concepts involved.
+
+>[!NOTE]
+>
+>For the latest information about Experience Manager APIs, please also visit [Adobe Experience Manager as a Cloud Service APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+
 ## The GraphQL API {#graphql-api}
 
 GraphQL is:
@@ -41,10 +50,10 @@ GraphQL is:
   See [GraphQL Foundation](https://foundation.graphql.org/).
 
 <!--
-"*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
+"*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world the tools they need to understand and adopt GraphQL.*". 
 -->
 
-For further information about the GraphQL API, see the following sections (amongst many other resources):
+For  information about the GraphQL API, see the following sections (amongst many other resources):
 
 * At [graphql.org](https://graphql.org):
 
@@ -109,7 +118,9 @@ The [Persisted Queries](/help/headless/graphql-api/persisted-queries.md) are the
 
 GraphQL queries using POST requests are not recommended as they are not cached, so on a default instance the Dispatcher is configured to block such queries.
 
-While GraphQL also supports GET requests, these can hit limits (for example the length of the URL) that can be avoided using Persisted Queries.
+While GraphQL also supports GET requests, these can hit limits (for example, the length of the URL) that can be avoided using Persisted Queries.
+
+See [Enable caching of persisted queries](/help/headless/deployment/dispatcher-caching.md) for further details.
 
 >[!NOTE]
 >
@@ -126,12 +137,16 @@ While GraphQL also supports GET requests, these can hit limits (for example the 
 
 You can test and debug GraphQL queries using the [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md).
 
-## Use Cases for Author and Publish Environments {#use-cases-author-publish-environments}
+## Use Cases for Author, Preview and Publish {#use-cases-author-preview-publish}
 
 The use cases can depend on the type of AEM as a Cloud Service environment:
 
 * Publish environment; used to: 
   * Query data for JS application (standard use-case)
+
+* Preview environment; used to: 
+  * Preview queries prior to deploying on the Publish environment
+    * Query data for JS application (standard use-case)
 
 * Author environment; used to: 
   * Query data for "content management purposes":
@@ -144,15 +159,15 @@ The permissions are those required for accessing Assets.
 
 GraphQL queries are executed with the permission of the AEM user of the underlying request. If the user does not have read access to some fragments (stored as Assets), they will not become part of the result set. 
 
-Also, the user needs to have access to a GraphQL endpoint to be able to execute GraphQL queries. 
+Also, the user must have access to a GraphQL endpoint to be able to execute GraphQL queries. 
 
 ## Schema Generation {#schema-generation}
 
-GraphQL is a strongly typed API, which means that data must be clearly structured and organized by type.
+GraphQL is a strongly-typed API, which means that data must be clearly structured and organized by type.
 
-The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating data on a certain instance. To do this, a client needs to fetch the [Schema](#schema-generation), which contains all the types necessary for a query. 
+The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating data on a certain instance. To do this, a client must fetch the [Schema](#schema-generation), which contains all the types necessary for a query. 
 
-For Content Fragments, the GraphQL schemas (structure and types) are based on **Enabled** [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) and their data types.
+For Content Fragments, the GraphQL schemas (structure and types) are based on **Enabled** [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) and their data types.
 
 >[!CAUTION]
 >
@@ -189,7 +204,7 @@ So for example, if you:
 
 1. Install a package containing `Content-Fragment-Model-1` and `Content-Fragment-Model-2`:
  
-   1. GraphQL types for `Model-1` and `Model-2` will be generated.
+   1. GraphQL types for `Model-1` and `Model-2` are generated.
 
 1. Then modify `Content-Fragment-Model-2`:
 
@@ -223,9 +238,9 @@ Within the schema there are individual fields, of two basic categories:
 
   A selection of [Data Types](#Data-types) are used to create fields based on how you configure your Content Fragment Model. The field names are taken from the **Property Name** field of the **Data Type** tab.
   
-  * There is also the **Render As** setting to take into consideration, as users can configure certain data types. For example, a single line text field can be configured to contain multiple single line texts by choosing `multifield` from the dropdown.
+  * There is also the **Render As** setting to take into consideration, as users can configure certain data types. For example, a single line text field can be configured to contain multiple single line texts by choosing `multifield` from the drop-down list.
 
-* GraphQL for AEM also generates a number of [helper fields](#helper-fields).
+* GraphQL for AEM also generates several [helper fields](#helper-fields).
 
 ### Data Types {#data-types}
 
@@ -233,7 +248,7 @@ GraphQL for AEM supports a list of types. All the supported Content Fragment Mod
 
 | Content Fragment Model - Data Type | GraphQL Type | Description |
 |--- |--- |--- |
-| Single line Text | `String`, `[String]` | Used for simple strings such as author names, location names, etc. |
+| Single line Text | `String`, `[String]` | Used for simple strings such as author names, location names, and so on. |
 | Multi line Text | `String`, `[String]` | Used for outputting text such as the body of an article |
 | Number | `Float`, `[Float]` | Used to display floating point number and regular numbers |
 | Boolean | `Boolean` | Used to display checkboxes → simple true/false statements |
@@ -241,13 +256,15 @@ GraphQL for AEM supports a list of types. All the supported Content Fragment Mod
 | Enumeration | `String` | Used to display an option from a list of options defined at model creation |
 | Tags | `[String]` | Used to display a list of Strings representing Tags used in AEM |
 | Content Reference | `String`, `[String]` | Used to display the path towards another asset in AEM |
+| Content Reference (UUID) | `String`, `[String]` | Used to display the path, represented by a UUID towards another asset in AEM |
 | Fragment Reference | *A model type* <br><br>Single field: `Model` - Model type, referenced directly <br><br>Multifield, with one referenced type: `[Model]` - Array of type `Model`, referenced directly from array <br><br>Multifield, with multiple referenced types: `[AllFragmentModels]` - Array of all model types, referenced from array with union type | Used to reference one, or more, Content Fragments of certain Model Types, defined when the model was created |
+| Fragment Reference (UUID) | *A model type* <br><br>Single field: `Model` - Model type, referenced directly <br><br>Multifield, with one referenced type: `[Model]` - Array of type `Model`, referenced directly from array <br><br>Multifield, with multiple referenced types: `[AllFragmentModels]` - Array of all model types, referenced from array with union type | Used to reference one, or more, Content Fragments of certain Model Types, defined when the model was created |
 
 {style="table-layout:auto"}
 
 ### Helper Fields {#helper-fields}
 
-In addition to the data types for user generated fields, GraphQL for AEM also generates a number of *helper* fields in order to help identify a Content Fragment, or to provide additional information about a Content Fragment.
+In addition to the data types for user generated fields, GraphQL for AEM also generates several *helper* fields to help identify a Content Fragment, or to provide additional information about a Content Fragment.
 
 These [helper fields](#helper-fields) are marked with a preceding `_` to distinguish between what has been defined by the user and what has been auto-generated.
 
@@ -285,6 +302,27 @@ To retrieve a single Content Fragment of a specific type, you also need to deter
 ```
 
 See [Sample Query - A Single Specific City Fragment](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment).
+
+#### ID (UUID) {#id-uuid}
+
+The ID field is also used as an identifier in AEM GraphQL. It represents the path of the Content Fragment asset inside the AEM repository, but instead of holding the actual path it holds a UUID representing the resource. We have chosen this as the identifier of a Content Fragment, because it:
+
+* is unique within AEM,
+* can be easily fetched,
+* does not change when the resource is moved.
+
+The UUID for a Content Fragment and for a referenced Content Fragment, or asset, can be returned through the JSON property `_id`.
+
+```graphql
+{
+  articleList {
+    items {
+        _id
+        _path
+    }
+  }
+}
+```
 
 #### Metadata {#metadata}
 
@@ -353,13 +391,13 @@ The `_variations` field has been implemented to simplify querying the variations
 
 >[!NOTE]
 >
->Note that the `_variations` field does not contain a `master` variation, as technically the original data (referenced as *Master* in the UI) is not considered an explicit variation.
+>The `_variations` field does not contain a `master` variation, as technically the original data (referenced as *Master* in the UI) is not considered an explicit variation.
 
 See [Sample Query - All Cities with a Named Variation](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation).
 
 >[!NOTE]
 >
->If the given variation does not exist for a Content Fragment, then the original data (also known as the master variation) will be returned as a (fallback) default.
+>If the given variation does not exist for a Content Fragment, then the original data (also known as the master variation) is returned as a (fallback) default.
 
 <!--
 ## Security Considerations {#security-considerations}
@@ -367,7 +405,7 @@ See [Sample Query - All Cities with a Named Variation](/help/headless/graphql-ap
 
 ## GraphQL Variables {#graphql-variables}
 
-GraphQL permits variables to be placed in the query. For more information you can see the [GraphQL documentation for Variables](https://graphql.org/learn/queries/#variables).
+GraphQL permits variables to be placed in the query. For more information, see [GraphQL documentation for Variables](https://graphql.org/learn/queries/#variables).
 
 For example, to get all Content Fragments of type `Author` in a specific variation (if available), you can specify the argument `variation` in GraphiQL.
 
@@ -397,7 +435,7 @@ query($variation: String!) {
 
 This query will return the full list of authors. Authors without the `another` variation will fall back to the original data (`_variation` will report `master` in this case).
 
-If you want to restrict the list to authors that provide the specified variation (and skip authors that would fall back to the original data), you'll need to apply a [filter](#filtering):
+Apply a [filter](#filtering), if you want to restrict the list to authors that provide the specified variation (and skip authors that would fall back to the original data):
 
 ```graphql
 query($variation: String!) {
@@ -421,7 +459,7 @@ query($variation: String!) {
 
 In GraphQL there is a possibility to change the query based on variables, called GraphQL Directives.
 
-For example there you can include the `adventurePrice` field in a query for all the `AdventureModels`, based on a variable `includePrice`.
+For example, there you can include the `adventurePrice` field in a query for all the `AdventureModels`, based on a variable `includePrice`.
 
 ![GraphQL Directives](assets/cfm-graphqlapi-04.png "GraphQL Directives")
 
@@ -487,11 +525,11 @@ The following operators can be used to compare fields to a certain value:
 | `AFTER` | `Calendar`, `Date`, `Time` | ... the point in time denoted by the value is after the point in time denoted by the content of the field |
 | `AT_OR_AFTER` | `Calendar`, `Date`, `Time` | ... the point in time denoted by the value is after or at the same point in time denoted by the content of the field |
 
-Some types also allow to specify additional options that modify how an expression is evaluated:
+Some types also let you specify additional options that modify how an expression is evaluated:
 
 | Option | Type(s) | Description |
 |--- |--- |--- |
-| `_ignoreCase` | `String` | Ignores the case of a string, e.g. a value of `time` will match `TIME`, `time`, `tImE`, ... |
+| `_ignoreCase` | `String` | Ignores the case of a string, for example, a value of `time` matches `TIME`, `time`, `tImE`, ... |
 | `_sensitiveness` | `Float` | Allows a certain margin for `float` values to be considered the same (to work around technical limitations due to the internal representation of `float` values; should be avoided, as this option might have a negative impact on performance |
 
 Expressions can be combined to a set with the help of a logical operator (`_logOp`):
@@ -503,11 +541,11 @@ Each field can be filtered by its own set of expressions. The expression sets of
 
 A filter definition (passed as the `filter` argument to a query) contains:
 
-* A sub-definition for each field (the field can be accessed through its name, e.g. there's a `lastName` field in the filter for the `lastName` field in the Data (field) Type)
+* A sub-definition for each field (the field can be accessed through its name, for example, there's a `lastName` field in the filter for the `lastName` field in the Data (field) Type)
 * Each sub-definition contains the `_expressions` array, providing the expression set, and the `_logOp` field that defines the logical operator the expressions should be combined with
 * Each expression is defined by the value (`value` field) and the operator (`_operator` field) the content of a field should be compared to
 
-Note that you can omit `_logOp` if you want to combine items with `AND` and `_operator` if you want to check for equality, as these are the default values.
+You can omit `_logOp` if you want to combine items with `AND` and `_operator` if you want to check for equality, as these are the default values.
 
 The following example demonstrates a full query that filters all persons that have a `lastName` of `Provo` or containing `sjö`, independent of the case:
 
@@ -554,13 +592,13 @@ For further examples, see:
 >
 >For best performance consider [Updating your Content Fragments for Paging and Sorting in GraphQL Filtering](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
 
-This feature allows you to sort the query results according to a specified field.
+This feature lets you sort the query results according to a specified field.
 
 The sorting criteria:
 
 * is a comma separated list of values representing the field path
-  * the first field in the list will define the primary sort order, the second field will be used if two values of the primary sort criterion are equal, the third one if the first two criteria are equal, etc.
-  * dotted notation, i.e field1.subfield.subfield etc...
+  * the first field in the list will define the primary sort order, the second field is used if two values of the primary sort criterion are equal, the third one if the first two criteria are equal, and so on.
+  * dotted notation, that is, field1.subfield.subfield and so on...
 * with an optional order direction
   * ASC (ascending) or DESC (descending); as default ASC is applied
   * the direction can be specified per field; this means that you can sort one field in ascending order, another one in descending order (name, firstName DESC)
@@ -621,7 +659,7 @@ query {
 >
 >For best performance consider [Updating your Content Fragments for Paging and Sorting in GraphQL Filtering](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
 
-This feature allows you to perform paging on query types that returns a list. Two methods are provided:
+This feature lets you perform paging on query types that returns a list. Two methods are provided:
 
 * `offset` and `limit` in a `List` query
 * `first` and `after` in a `Paginated` query
@@ -654,7 +692,7 @@ query {
 
 >[!NOTE]
 >
->* Paging requires a stable sort order to work correctly across multiple queries requesting different pages of the same result set. By default it uses the repository path of each item of the result set to make sure the order is always the same. If a different sort order is used, and if that sorting cannot be done at JCR query level, then there will be a negative performance impact as the entire result set must be loaded into memory before the pages can be determined.
+>* Paging requires a stable sort order to work correctly across multiple queries requesting different pages of the same result set. By default it uses the repository path of each item of the result set to make sure the order is always the same. If a different sort order is used, and if that sorting cannot be done at JCR query level, then there is a negative performance impact as the entire result set must be loaded into memory before the pages can be determined.
 >
 >* The higher the offset, the more time it will take to skip the items from the complete JCR query result set. An alternative solution for large result sets is to use the Paginated query with `first` and `after` method.
 
@@ -697,9 +735,9 @@ query {
 
 ## Web-optimized image delivery in GraphQL queries {#web-optimized-image-delivery-in-graphql-queries}
 
-Web-optimized image delivery allows you to use a Graphql query to:
+Web-optimized image delivery lets you use a Graphql query to:
 
-* Request a URL to an AEM Asset image
+* Request a URL to a DAM asset image (referenced by a **Content Reference**)
 
 * Pass parameters with the query, so that a specific rendition of the image is automatically generated and returned
   
@@ -715,13 +753,21 @@ You can use AEM to:
 
 This means that the commands get applied during query execution, in the same way as URL parameters on GET requests for those images.
 
-This allows you to dynamically create image renditions for JSON delivery, which avoids having to manually create and store those renditions in the repository.
+This lets you dynamically create image renditions for JSON delivery, which avoids having to manually create and store those renditions in the repository.
 
 The solution in GraphQL means you can:
 
-* use `_dynamicUrl` on the `ImageRef` reference
+* Request a URL: use `_dynamicUrl` on the `ImageRef` reference
 
-* add `_assetTransform` to the list header where your filters are defined
+* Pass parameters: add `_assetTransform` to the list header where your filters are defined
+
+>[!NOTE]
+>
+>A **Content Reference** can be used for both DAM assets and Dynamic Media assets. Retrieving the appropriate URL uses different parameters:
+>* `_dynamicUrl` : a DAM asset
+>* `_dmS7Url` : a Dynamic Media asset
+> 
+>If the asset referenced is a DAM asset then the value for `_dmS7Url` will be `null`. See [Dynamic Media asset delivery by URL in GraphQL queries](#dynamic-media-asset-delivery-by-url).
 
 ### Structure of the Transformation Request {#structure-transformation-request}
 
@@ -730,7 +776,7 @@ The solution in GraphQL means you can:
 The structure and syntax is:
 
 * `format`: an enumeration with all supported formats by its extension: GIF, PNG, PNG8, JPG, PJPG, BJPG, WEBP, WEBPLL or WEBPLY
-* `seoName`: a string that will be used as file name instead of the node name
+* `seoName`: a string that is used as file name instead of the node name
 * `crop`: a frame sub structure, if width or height is omitted then the height or width is used as the same value
   * `xOrigin`: the x origin of the frame and is mandatory
   * `yOrigin`: the y origin of the frame and is mandatory
@@ -741,8 +787,8 @@ The structure and syntax is:
   * `height`: the height of the dimension
 * `rotation`: an enumeration of all supported rotations: R90, R180, R270
 * `flip`: an enumeration of HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL
-* `quality`: an integer between 1 and 100 notating the percentage of the image quality
-* `width`: an integer that defines the width of the output image but will be ignored by the Image Generator
+* `quality`: an integer from 1&ndash;100 notating the percentage of the image quality
+* `width`: an integer that defines the width of the output image but is ignored by the Image Generator
 * `preferWebp`: a boolean that indicates if webp is preferred (default value is false)
 
 The URL transform is available for all query types: by path, list or paginated.
@@ -886,7 +932,7 @@ For example, to directly execute the previous samples (saved as persisted querie
     >
     >The trailing `;`is mandatory to cleanly terminate the list of parameters.
 
-### Limitations of Image Delivery {#image-delivery-limitations}
+### Limitations of web-optimized image delivery {#web-optimized-image-delivery-limitations}
 
 The following limitations exist:
 
@@ -897,12 +943,246 @@ The following limitations exist:
   * No caching on author
   * Caching on publish - max-age of 10 minutes (cannot be changed by client)
 
+## Dynamic Media asset delivery by URL in GraphQL queries{#dynamic-media-asset-delivery-by-url}
+
+GraphQL for AEM Content Fragments allows you to request a URL to an AEM Dynamic Media (Scene7) asset (referenced by a **Content Reference**).
+
+The solution in GraphQL means you can:
+
+* use `_dmS7Url` on the `ImageRef` reference
+  * see [Sample query for Dynamic Media asset delivery by URL - Image Reference](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+* use `_dmS7Url` on multiple references; `ImageRef`, `MultimediaRef` and `DocumentRef`
+  * see [Sample query for Dynamic Media asset delivery by URL - Multiple References](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+
+* use `_dmS7Url` with Smart Crop functionality
+
+  * The `_smartCrops` property exposes the Smart Crop configurations available for a specific asset
+
+  * see [Sample query for Dynamic Media asset delivery by URL - with Smart Crop](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
+
+>[!NOTE]
+>
+>For this you need to have a [Dynamic Media Cloud Configuration](/help/assets/dynamic-media/config-dm.md). 
+>
+>This adds the `dam:scene7File` and `dam:scene7Domain` attributes on the asset's metadata when it is created.
+
+>[!NOTE]
+>
+>A **Content Reference** can be used for both DAM assets and Dynamic Media assets. Retrieving the appropriate URL uses different parameters:
+>
+>* `_dmS7Url` : a Dynamic Media asset
+>* `_dynamicUrl` : a DAM asset
+> 
+>If the asset referenced is a Dynamic Media asset then the value for `_dynamicURL` will be `null`. See [web-optimized image delivery in GraphQL queries](#web-optimized-image-delivery-in-graphql-queries).
+
+### Sample query for Dynamic Media asset delivery by URL - Image Reference{#sample-query-dynamic-media-asset-delivery-by-url-imageref}
+
+The following is a sample query:
+* for multiple Content Fragments of type `team` and `person`, returning an `ImageRef`
+
+```graphql
+query allTeams {
+  teamList {
+    items {
+      _path
+      title
+      teamMembers {
+        fullName
+        profilePicture {
+          __typename
+          ... on ImageRef{
+            _dmS7Url
+            height
+            width
+          }
+        }
+      }
+    }
+  }
+} 
+```
+
+### Sample query for Dynamic Media asset delivery by URL - Multiple References{#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs}
+
+The following is a sample query:
+* for multiple Content Fragments of type `team` and `person`, returning an `ImageRef`, `MultimediaRef` and `DocumentRef`:
+
+```graphql
+query allTeams {
+  teamList {
+    items {
+      _path
+      title
+      teamMembers {
+        fullName
+        profilePicture {
+          __typename
+          ... on ImageRef{
+            _dmS7Url
+            height
+            width
+          }
+        }
+       featureVideo {
+          __typename
+          ... on MultimediaRef{
+            _dmS7Url
+            size
+          }
+        }
+      about-me {
+          __typename
+          ... on DocumentRef{
+            _dmS7Url
+            _path
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+### Sample query for Dynamic Media asset delivery by URL - with Smart Crop {#sample-query-dynamic-media-asset-delivery-by-url-smart-crop}
+
+The following is a sample query:
+
+* to expose the Smart Crop configurations available for the requested assets
+
+```graphql
+query allTeams {
+  teamList {
+    items {
+      title
+      teamMembers {
+        profilePicture {
+          ... on ImageRef {
+            height
+            width
+            _dmS7Url
+            _smartCrops {
+              width
+              height
+              name
+            }
+          }
+        }
+      }
+    }
+  }
+} 
+```
+
+## Dynamic Media for OpenAPI asset support (Remote Assets) {#dynamic-media-for-openapi-asset-support}
+
+[Remote assets](/help/sites-cloud/administering/content-fragments/authoring.md#reference-remote-assets) integration allows you to reference Assets, that are not local to the current AEM instance, from the Content Fragment Editor. It is implemented by Dynamic Media for OpenAPI asset support in Content Fragment Editor and GraphQL JSON.
+
+### Sample query for Dynamic Media for OpenAPI asset support (Remote Assets) {#sample-query-dynamic-media-for-openapi-asset-support}
+
+The following is a sample request:
+
+* to illustrate the concept of referencing remote assets
+
+  ```graphql
+  {
+    testModelList {
+      items {
+        remoteasset {
+          ... on RemoteRef {
+              repositoryId
+                  assetId
+          }
+        }
+        multiplecontent {
+          ... on ImageRef {
+            _path
+            _authorUrl
+            _publishUrl
+          }
+          ... on RemoteRef {
+              repositoryId
+              assetId
+          }
+        }
+      }
+      _references {
+        ... on ImageRef {
+            _path
+            _authorUrl
+            _publishUrl
+          }
+          ... on RemoteRef {
+              repositoryId
+              assetId
+          }
+      }
+    }
+  }
+  ```
+
+* the response
+
+  ```graphql
+  {
+    "data": {
+      "testModelList": {
+        "items": [
+          {
+            "remoteasset": {
+              "repositoryId": "delivery-p123456-e123456.adobeaemcloud.com",
+              "assetId": "urn:aaid:aem:1fb05fe4-c12b-4f85-b1ca-aa92cdbd6a62"
+            },
+            "multiplecontent": [
+              {
+                "repositoryId": "delivery-p123456-e123456.adobeaemcloud.com",
+                "assetId": "urn:aaid:aem:1fb05fe4-c12b-4f85-b1ca-aa92cdbd6a62"
+              },
+              {
+                "_path": "/content/dam/test-folder/test.jpg",
+                "_authorUrl": "http://localhost:4502/content/dam/test-folder/test.jpg",
+                "_publishUrl": "http://localhost:4503/content/dam/test-folder/test.jpg"
+              }
+            ]
+          }
+        ],
+        "_references": [
+          {
+            "repositoryId": "delivery-p123456-e123456.adobeaemcloud.com",
+            "assetId": "urn:aaid:aem:1fb05fe4-c12b-4f85-b1ca-aa92cdbd6a62"
+          },
+          {
+            "_path": "/content/dam/test-folder/test.jpg",
+            "_authorUrl": "http://localhost:4502/content/dam/test-folder/test.jpg",
+            "_publishUrl": "http://localhost:4503/content/dam/test-folder/test.jpg"
+          }
+        ]
+      }
+    }
+  }  
+  ```
+
+**Limitations**
+
+The current limitations are:
+
+* GraphQL delivery supports only `repositoryId` and `assetId` (other asset metadata is not returned)
+
+  >[!NOTE]
+  >
+  >The full URL then needs to be constructed on the client side, based on the [Asset delivery API](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat).
+
+* Only *Approved* assets will be available for reference from the remote repositories
+* If an asset that is referenced is removed from the remote repository, this will result in a broken Content Fragment Asset reference.
+* All Delivery Asset Repositories to which the user has access, will be available for selection, the available list cannot be limited.
+* Both the AEM instance and the Remote Asset Repository instances must be the same version.
+* No Asset Metadata is exposed via the [Management Sites API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/) and the [AEM Content Fragment Delivery with OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/). You have to use the Asset Metadata API to retrieve the asset metadata details. 
+
 ## GraphQL for AEM - Summary of Extensions {#graphql-extensions}
 
 The basic operation of queries with GraphQL for AEM adhere to the standard GraphQL specification. For GraphQL queries with AEM there are a few extensions:
 
 * If you require a single result:
-  * use the model name; eg city
+  * use the model name; for example, city
 
 * If you expect a list of results:
   * add `List` to the model name; for example,  `cityList`
@@ -919,7 +1199,15 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 
     * [A List query with offset and limit](#list-offset-limit)
     * [A Paginated query with first and after](#paginated-first-after)
+
   * See [Sample Query - All Information about All Cities](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
+
+* The filter `includeVariations` is included in the `List` and `Paginated` query types.  To retrieve Content Fragment Variations in the query results, then the `includeVariations` filter must be set to `true`.
+
+  * See [Sample Query for multiple Content Fragments, and their Variations, of a given Model](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
+
+  >[!CAUTION]
+  >The filter `includeVariations` and the system-generated field `_variation` cannot be used together in the same query definition.
 
 * If you want to use a logical OR:
   * use ` _logOp: OR`
@@ -946,6 +1234,11 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
     * `_path` : the path to your Content Fragment within the repository
       * See [Sample Query - A Single Specific City Fragment](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
 
+    * `_id` : the UUID for your Content Fragment within the repository
+
+      * See [Sample Query for a Content Fragment of a specific Model with UUID references](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-references)
+      * [See Sample Query for Content Fragments by UUID reference](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-reference)
+
     * `_reference` : to reveal references; including inline references in the Rich Text Editor
       * See [Sample Query for multiple Content Fragments with Prefetched References](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-prefetched-references)
 
@@ -953,21 +1246,51 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 
       >[!NOTE]
       >
-      >If the given variation does not exist for a Content Fragment, then the master variation will be returned as a (fallback) default.
+      >If the given variation does not exist for a Content Fragment, then the master variation is returned as a (fallback) default.
+
+      >[!CAUTION]
+      >
+      >The system-generated field `_variation` cannot be used together with the filter `includeVariations`.
 
       * See [Sample Query - All Cities with a Named Variation](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
 
-  * For [image delivery](#image-delivery):
+  * For image delivery:
 
-    * `_dynamicUrl`: on the `ImageRef` reference
+    * `_authorURL`: the full URL to the image asset on AEM Author 
+    * `_publishURL`: the full URL to the image asset on AEM Publish 
+ 
+    * For [web-optimized image delivery](#web-optimized-image-delivery-in-graphql-queries) (of DAM assets):
 
-    * `_assetTransform`: on the list header where your filters are defined
+      * `_dynamicUrl`: the full URL to the web-optimized DAM asset on the `ImageRef` reference
 
-    * See:
-    
-      * [Sample Query for Image Delivery with full parameters](#image-delivery-full-parameters)
+        >[!NOTE]
+        >
+        >`_dynamicUrl` is the preferred URL to use for web-optimized DAM assets and should replace the use of `_path`, `_authorUrl`, and `_publishUrl` whenever possible.
 
-      * [Sample Query for Image Delivery with a single specified parameter](#image-delivery-single-specified-parameter)
+      * `_assetTransform`: to pass parameters on the list header where your filters are defined
+
+      * See:
+
+        * [Sample Query for web-optimized image delivery with full parameters](#web-optimized-image-delivery-full-parameters)
+
+        * [Sample Query for web-optimized image delivery with a single specified parameter](#web-optimized-image-delivery-single-query-variable)
+
+    * `_dmS7Url`: on the `ImageRef` reference for the delivery of the URL to a [Dynamic Media asset](#dynamic-media-asset-delivery-by-url)
+
+      * See [Sample query for Dynamic Media asset delivery by URL - ImageRef](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+
+      * See [Sample query for Dynamic Media asset delivery by URL - Multiple References](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+
+  * `_tags`: to reveal the IDs of Content Fragments or Variations that contain tags; this is an array of `cq:tags` identifiers. 
+
+    * See [Sample Query - Names of All Cities Tagged as City Breaks](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
+    * See [Sample Query for Content Fragment Variations of a given Model that have a specific tag attached](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag)
+    * See [Sample Query with filtering by _tags ID and excluding variatons](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
+    * See [Sample Query with filtering by _tags ID and including variatons](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-with-variations)
+
+    >[!NOTE]
+    >
+    >Tags can also be queried by listing the Metadata of a Content Fragment.
 
   * And operations:
   
@@ -1001,6 +1324,47 @@ To access the GraphQL endpoint from an external website you need to configure th
 
 See [Authentication for Remote AEM GraphQL Queries on Content Fragments](/help/headless/security/authentication.md).
 
+## Automated Testing {#automated-testing}
+
+When running a deployment pipeline in AEM Cloud Manager, automated tests are run during pipeline execution. 
+
+To provide accurate results, your AEM as a Cloud Service **Stage** environment should mirror your **Production** environment as closely as possible. This is especially important for content.
+
+You can achieve this by using the AEM as a Cloud Service [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) to copy your Production content to the Stage environment.
+
+## Limitations {#limitations}
+
+To protect against potential problems there are default limitations imposed on your queries:
+
+* The query cannot contain more than 1M (1024 * 1024) characters
+* The query cannot contain more than 15000 tokens 
+* The query cannot contain more than 200000 whitespace tokens
+
+You also need to aware of:
+
+* A field conflict error will be returned when your GraphQL query contains fields with the same name in two (or more) models, and the following conditions are met:
+
+  * So where:
+
+    * Two (or more models) are used as possible references; when they are defined as an allowed **Model Type** in the Content Fragment reference.
+
+    and:
+
+    * These two models have fields having a common name; that means the same name occurs in both models.
+
+    and
+
+    * Those fields are of different data types.
+
+  * For example:
+
+    * When two (or more) fragments with different models (for example, `M1`, `M2`) are used as possible references (Content Reference or Fragment Reference) from another fragment; for example, `Fragment1` `MultiField/List`
+    * And these two fragments with different models (`M1`, `M2`) have fields with the same name, but different types.
+      To illustrate:
+      * `M1.Title` as `Text` 
+      * `M2.Title` as `Text/MultiField`
+    * Then a field conflict error will occur if the GraphQL query contains the `Title` field.
+
 ## FAQs {#faqs}
 
 Questions that have arisen:
@@ -1013,4 +1377,4 @@ Questions that have arisen:
 
 ## Tutorial - Getting Started with AEM Headless and GraphQL {#tutorial}
 
-Looking for a hands-on tutorial? Check out [Getting Started with AEM Headless and GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) end-to-end tutorial illustrating how to build-out and expose content using AEM’s GraphQL APIs and consumed by an external app, in a headless CMS scenario.
+Looking for a hands-on tutorial? Check out [Getting Started with AEM Headless and GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) end-to-end tutorial illustrating how to build-out and expose content using AEM's GraphQL APIs and consumed by an external app, in a headless CMS scenario.

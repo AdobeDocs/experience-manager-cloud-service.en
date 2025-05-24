@@ -2,6 +2,8 @@
 title: Release Notes for 2023.1.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Release Notes for 2023.1.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: f134fdbc-224b-404c-b20f-44cae8bad681
+feature: Release Information
+role: Admin
 ---
 # 2023.1.0 Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -37,7 +39,7 @@ Have a look at the January 2023 Release Overview video for a summary of the feat
 
 ### New features in [!DNL Assets] {#assets-features}
 
-* Assets Reports now includes the ability for Administrators to [generate assets download reports](/help/assets/asset-reports.md) from the Experience Manager Assets as a Cloud Service deployment. This data further empowers Admins to derive insights from key success metrics in order to measure the adoption of Assets within your enterprise and by customers.
+* Assets Reports now includes the ability for Administrators to [generate assets download reports](/help/assets/asset-reports.md) from the Experience Manager Assets as a Cloud Service deployment. This data further empowers Admins to derive insights from key success metrics to measure the adoption of Assets within your enterprise and by customers.
 
    ![PDF rendition for other formats](/help/release-notes/assets/choose_report.png)
 
@@ -58,7 +60,7 @@ Have a look at the January 2023 Release Overview video for a summary of the feat
 
 ### New features in [!DNL Forms] prerelease {#prerelease-features-forms}
 
-* **[Use data capture core components to build Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en)**: [Use Adaptive Forms editor](/help/forms/creating-adaptive-form-core-components.md) to create forms based on standardized data capture components (Core Components). These components provide customization capabilities, reduced development time, and lower maintenance costs for your digital enrolment experiences.
+* **[Use data capture core components to build Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)**: [Use Adaptive Forms editor](/help/forms/creating-adaptive-form-core-components.md) to create forms based on standardized data capture components (Core Components). These components provide customization capabilities, reduced development time, and lower maintenance costs for your digital enrolment experiences.
 * **[Frontend pipeline support for styling core component based Adaptive Forms](/help/forms/using-themes-in-core-components.md)**: Utilize easily customizable BEM-based themes for Core Components-based Adaptive Forms by deploying them with Frontend Deployment pipeline to enhance the look and feel of your forms.
 * **[Generate Document of Record for core component based Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)**: Create a record for core component based Adaptive Form on submission for long term archival, in print or in the document format. 
 
@@ -96,7 +98,7 @@ You can find the latest maintenance release notes [here](/help/release-notes/mai
 
 ## Cloud Manager {#cloud-manager}
 
-You can find a complete list of Cloud Manager monthly releases [here.](/help/implementing/cloud-manager/release-notes/current.md)
+You can find a complete list of Cloud Manager monthly releases [here](/help/implementing/cloud-manager/release-notes/current.md).
 
 ## Migration Tools {#migration-tools}
 

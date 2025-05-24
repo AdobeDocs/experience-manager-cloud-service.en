@@ -3,10 +3,12 @@ title: Configure the Rich Text Editor to author content in [!DNL Adobe Experienc
 description: Configure Rich Text Editor to author content in [!DNL Adobe Experience Manager] as a Cloud Service.
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Configure the Rich Text Editor {#configure-the-rich-text-editor}
 
-The Rich Text Editor (RTE) provides authors with a wide range of functionality to edit text content. Icons, selection boxes, toolbar, and menus are provided for a WYSIWYG text-editing experience. Administrators configure the RTE to enable, disable, and extend the features available in the authoring components. See how authors [use RTE for authoring](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) web content.
+The Rich Text Editor (RTE) provides authors with a wide range of functionality to edit text content. Icons, selection boxes, toolbar, and menus are provided for a WYSIWYG text-editing experience. Administrators configure the RTE to enable, disable, and extend the features available in the authoring components. See how authors [use RTE for authoring](/help/sites-cloud/authoring/page-editor/rich-text-editor.md) web content.
 
 The RTE concepts and steps required to configure it are listed below.
 
@@ -18,7 +20,7 @@ The RTE concepts and steps required to configure it are listed below.
 
 ## Understand the user interface available to authors {#understand-rte-ui}
 
-The RTE interface offers a [responsive design](/help/sites-cloud/authoring/features/responsive-layout.md) for authoring environment. The interface is designed for use on touch and desktop devices.
+The RTE interface offers a [responsive design](/help/sites-cloud/authoring/page-editor/responsive-layout.md) for authoring environment. The interface is designed for use on touch and desktop devices.
 
 ![Rich Text Editor toolbar](assets/rte-toolbar-full-screen-mode.png)
 
@@ -146,7 +148,7 @@ For detailed configurations of the RTE plug-ins, see [how to activate and config
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-The [Core Components text component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) lets template editors to configure many RTE plug-ins using the user interface as content policies, eliminating the need for technical configuration. Content policies can work with RTE UI configurations as described in this document. For more information, see [create page templates](/help/sites-cloud/authoring/features/templates.md) and the [Core Components developer documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
+The [Core Components text component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) lets template editors to configure many RTE plug-ins using the user interface as content policies, eliminating the need for technical configuration. Content policies can work with RTE UI configurations as described in this document. For more information, see [create page templates](/help/sites-cloud/authoring/page-editor/templates.md) and the [Core Components developer documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
 >For reference purposes, the default Text components (delivered as part of a standard installation) can be found at:
 >
@@ -157,7 +159,7 @@ The [Core Components text component](https://experienceleague.adobe.com/docs/exp
 
 ## Configure RTE toolbar {#dialogfullscreen}
 
-[!DNL Experience Manager] lets you to configure the interface for the Rich Text Editor differently for the different editing modes. The default settings are provided below. You can override these defaults based on your requirements. You customize only the toolbar features that you want to provide to your authors. You need not specify all the toolbar configurations.
+[!DNL Experience Manager] lets you configure the interface for the Rich Text Editor differently for the different editing modes. The default settings are provided below. You can override these defaults based on your requirements. You customize only the toolbar features that you want to provide to your authors. You need not specify all the toolbar configurations.
 
 To configure the toolbar for `dialogFullScreen`, use the following sample configuration.
 
@@ -212,12 +214,12 @@ The pop-up node under inline or full-screen mode contains a list of the pop over
 
 ## RTE user interface settings and content policies {#rtecontentpolicies}
 
-Administrators can control the RTE options using content policies, say instead of doing the configuration as described above. Content policies define the design properties of a component when used as part of an [editable template](/help/sites-cloud/authoring/features/templates.md). For example, if a text component that uses the RTE is used with an editable template, the content policy can define that the bold option be available and a few paragraph formatting options be available. Content policies are reusable and can be applied across multiple templates.
+Administrators can control the RTE options using content policies, say instead of doing the configuration as described above. Content policies define the design properties of a component when used as part of an [editable template](/help/sites-cloud/authoring/page-editor/templates.md). For example, if a text component that uses the RTE is used with an editable template, the content policy can define that the bold option be available and a few paragraph formatting options be available. Content policies are reusable and can be applied across multiple templates.
 
 The available options in the RTE flow downstream from the user interface configurations to the content policies.
 
 * User interface configuration settings define which options are available to the content policies.
-* If the user interface configuration of the RTE removed or doesn't enable an item, the content policy cannot configure it.
+* If the user interface configuration of the RTE removed or does not enable an item, the content policy cannot configure it.
 * An author has access to only such functionality as is made available by the user interface configurations and the content policies.
 
 As an example, you can see the [Text Core Component documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor).
@@ -274,5 +276,5 @@ Below is a sample snippet to map the command `Bold` to the Coral icon named `tex
 >[!MORELIKETHIS]
 >
 >* [Configure RTE plug-ins](configure-rich-text-editor-plug-ins.md)
->* [Use Rich Text Editor for authoring](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
+>* [Use Rich Text Editor for authoring](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)
 >* [Configure RTE for accessible sites](rte-accessible-content.md)

@@ -153,7 +153,7 @@ While the functionality of each viewer differs, the process of creating a Quickv
 
       The variables from the Quickview are mapped. The function call is in place. And the browser console writes the variable value to the browser console. It does this using the sample function provided.
 
-1. You can now use a function to invoke a simple pop-up in the Quickview. The following example uses a `DIV` for a popup.
+1. You can now use a function to invoke a simple pop-up in the Quickview. The following example uses a `DIV` for a pop-up.
 1. Style the pop-up `DIV` in the following manner. Add extra styling as desired.
 
    ```xml {.line-numbers}
@@ -185,7 +185,7 @@ While the functionality of each viewer differs, the process of creating a Quickv
    <script type="text/javascript">
        function loadQuickView(sku){
            document.getElementById("txtSku").setAttribute("value",sku); // write sku value
-           document.getElementById("quickview_div").style.display="block"; // show popup
+           document.getElementById("quickview_div").style.display="block"; // show pop-up
        }
    </script>
    ```

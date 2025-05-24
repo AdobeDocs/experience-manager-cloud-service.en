@@ -1,10 +1,22 @@
 ---
-title: Layout capabilities of Adaptive Forms
-seo-title: Layout capabilities of Adaptive Forms
+title: What are the layout capabilities of Adaptive Forms?
 description: Layout and appearances of Adaptive Forms on various devices are governed by the layout settings. Understand the various layouts and how to apply them.
+feature: Adaptive Forms, Foundation Components
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
+role: User, Developer
 ---
 # Layout capabilities of Adaptive Forms {#layout-capabilities-of-adaptive-forms}
+
+>[!NOTE]
+>
+> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components.
+
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html)                  |
+| AEM as a Cloud Service (Core Components)    | [Click here](/help/forms/layout-capabilities-adaptive-forms-core-components.md)         |
+| AEM as a Cloud Service (Foundation Components)    | This article       |
 
 [!DNL Adobe Experience Manager] lets you create easy-to-use Adaptive Forms that offer dynamic experiences to end users. The form layout controls how items or components are displayed in an Adaptive Form.
 
@@ -30,7 +42,7 @@ To change the layout of an Adaptive Form, use the Authoring Mode in [!DNL Experi
 
 A form author can associate a layout with each panel of an Adaptive Form, including the root panel.
 
-The Panel layouts are available at `/libs/fd/af/layouts/panel` location. Tap the panel and select ![cmppr1](assets/configure-icon.svg) to view the panel properties.
+The Panel layouts are available at `/libs/fd/af/layouts/panel` location. Select the panel and select ![cmppr1](assets/configure-icon.svg) to view the panel properties.
 
 ![List of panel layouts for root panel of an Adaptive Form](assets/layouts.png)
 
@@ -58,7 +70,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 Using this layout, you can place the **[!UICONTROL Panel Adaptive Form]** component in a panel with accordion style navigation. Using this layout, you can also create repeatable panels. Repeatable panels enable you to dynamically add or remove panels as needed. You can define the minimum and the maximum number of times a panel repeats. Also, the title of the panel can be determined dynamically, based on the information provided in the panel items.
 
-Summary expression can be used to show the values provided by the end user in the title of the minimized panel.
+Summary expression can be used to show the values provided by the user in the title of the minimized panel.
 
 ![Repeatable panels using Accordion layout in Adaptive Forms](assets/accordion-layout.png)
 
@@ -102,6 +114,11 @@ This layout, as the name suggests, shows only the navigation menu and navigation
 
 ![Mobile layouts without panel titles in the form headers](assets/mobile-layout2.png)
 
+## See Also {#see-also}
+
+{{see-also}}
+
+
 <!-- ## Toolbar layouts {#toolbar-layouts}
 
 A Toolbar Layout controls positioning and display of any action buttons that you add to your Adaptive Forms. The layout can be added at a form level or at a panel level.
@@ -133,3 +150,5 @@ For the Mobile layout, you can add action buttons using icons.
 ![Mobile fixed layout for toolbar](assets/toolbar_layout_mobile_fixed.png)
 
 Mobile fixed layout for toolbar-->
+
+

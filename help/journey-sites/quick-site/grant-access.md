@@ -2,6 +2,9 @@
 title: Grant Access to the Front-End Developer
 description: Onboard the front-end developers into Cloud Manager so they have access to your AEM site git repository and pipeline.
 exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
 ---
 # Grant Access to the Front-End Developer {#grant-fed-access}
 
@@ -9,7 +12,7 @@ Onboard the front-end developers into Cloud Manager so they have access to your 
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM Quick Site Creation journey, [Set Up Your Pipeline,](pipeline-setup.md) you learned how to create a front-end pipeline to manage the customization of your site's theme, and you should now:
+In the previous document of the AEM Quick Site Creation journey, [Set Up Your Pipeline](pipeline-setup.md), you learned how to create a front-end pipeline to manage the customization of your site's theme, and you should now:
 
 * Understand what a front-end pipeline is.
 * Know how to set up a front-end pipeline in Cloud Manager.
@@ -59,7 +62,7 @@ First you need to add the front-end developer as a user by using the Admin Conso
 
    ![Product profiles](assets/product-profiles.png)
 
-1. To assign the front-end developer to the correct profiles, tap or click on the **Users** tab and then the **Add User** button.
+1. To assign the front-end developer to the correct profiles, select the **Users** tab and then the **Add User** button.
 
    ![Add user](assets/add-user.png)
 
@@ -67,11 +70,11 @@ First you need to add the front-end developer as a user by using the Admin Conso
 
    ![Add user to team](assets/add-to-team.png)
 
-1. In the **Product** selection, tap or click the plus sign and then select **Adobe Experience Manager as a Cloud Service** and assign the **Deployment Manager** and **Developer** product profiles to the user.
+1. In the **Product** selection, select the plus sign and then select **Adobe Experience Manager as a Cloud Service** and assign the **Deployment Manager** and **Developer** product profiles to the user.
 
    ![Assign team profiles](assets/assign-team.png)
 
-1. Tap or click **Save** and a welcome email is sent to the front-end developer you added as a user.
+1. Select **Save** and a welcome email is sent to the front-end developer you added as a user.
 
 The invited front-end developer can access Cloud Manager by clicking the link in the welcome email and signing in using their Adobe ID.
 
@@ -92,10 +95,10 @@ Now that you have completed this part of the AEM Quick Site Creation journey you
 * How to add a front-end developer as a user.
 * How to grant the required roles to the front-end developer.
 
-Build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Retrieve Git Repository Access Information,](retrieve-access.md) which switches perspective exclusively to the front-end developer and explains how the front-end developer users Cloud Manager to access git repository information.
+Build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Retrieve Git Repository Access Information](retrieve-access.md), which switches perspective exclusively to the front-end developer and explains how the front-end developer users Cloud Manager to access git repository information.
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the Quick Site Creation journey by reviewing the document [Retrieve Front-End Developer Credentials,](retrieve-access.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
+While it is recommended that you move on to the next part of the Quick Site Creation journey by reviewing the document [Retrieve Front-End Developer Credentials](retrieve-access.md), the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
 
 * [Onboarding Journey](/help/journey-onboarding/overview.md) - This guide serves as your starting point to ensure that your teams are set up and have access to AEM as a Cloud Service.

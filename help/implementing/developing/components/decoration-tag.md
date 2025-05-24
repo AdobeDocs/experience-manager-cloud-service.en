@@ -2,6 +2,8 @@
 title: Decoration Tag
 description: When a component in a web page is rendered, an HTML element can be generated, wrapping the rendered component within itself. For developers, AEM offers clear and simple logic controlling the decoration tags that wrap included components.
 exl-id: a90fd619-eff6-466f-9178-90374f988b5d
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Decoration Tag {#decoration-tag}
 
@@ -33,7 +35,7 @@ The following properties and nodes can be applied to the components to control t
 * **`cq:htmlTag` node :** This node can be added under a component and can have the following properties:
   * **`cq:tagName {String}` :** This can be used to specify a custom HTML tag to be used for wrapping the components instead of the default DIV element.
   * **`class {String}` :** This can be used to specify css class names to be added to the wrapper.
-  * Other property names will be added as HTML attributes with the same String value as provided.
+  * Other property names are added as HTML attributes with the same String value as provided.
 
 ## Script Controls {#script-controls}
 
@@ -49,7 +51,7 @@ The behavior of the wrapper can also be fully controlled.
 
 It is possible to fully control the behavior of the wrapper tags from HTL scripts and their associated logic.
 
-For further information about developing in HTL see the [HTL documentation](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html).
+For more information about developing in HTL see the [HTL documentation](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html).
 
 ### Decision Tree {#decision-tree}
 
@@ -84,7 +86,7 @@ All examples that follow assume following content structure, and components:
 
 #### Use Case 1: Include a Component for Code Reuse {#use-case-include-a-component-for-code-reuse}
 
-The most typical use case is when a component includes another component for code reuse reasons. In that case, the included component isn't desired to be editable with its own toolbar and dialog, so no wrapper is needed, and the component's `cq:htmlTag` will be ignored. This can be considered the default behavior.
+The most typical use case is when a component includes another component for code reuse reasons. In that case, the included component is not desired to be editable with its own toolbar and dialog, so no wrapper is needed, and the component's `cq:htmlTag` is ignored. This can be considered the default behavior.
 
 `one.html: <sly data-sly-resource="child"></sly>`
 

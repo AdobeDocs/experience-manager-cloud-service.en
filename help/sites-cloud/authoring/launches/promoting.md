@@ -2,6 +2,9 @@
 title: Promoting Launches
 description: You need to promote launch pages to move the content back into the source (production) before publishing.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
+solution: Experience Manager Sites
+feature: Authoring, Launches
+role: User
 ---
 # Promoting Launches {#promoting-launches}
 
@@ -38,15 +41,15 @@ You can promote launches from either the **Sites** console or the **Launches** c
 
 1. Open:
    * The **Sites** console when navigating source pages:
-     1. Open the [references rail](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) and select the required source page using [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md) (or select and open the references rail, the order is not important). All references will be shown.
+     1. Open the [references rail](/help/sites-cloud/authoring/sites-console/console-side-panel.md#references) and select the required source page using [selection mode](/help/sites-cloud/authoring/basic-handling.md) (or select and open the references rail, the order is not important). All references are shown.
      1. Select **Launches** (for example, Launches (1)) to show a list of the specific launches.
      1. Select the specific launch to show the actions available.
      1. Select **Promote launch** to open the wizard.
    * The **Sites** console when navigating launch pages:
-     1. Select the required launch page using [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md).
-     1. The **Promote** action will be available in the toolbar.
+     1. Select the required launch page using [selection mode](/help/sites-cloud/authoring/basic-handling.md).
+     1. The **Promote** action is available in the toolbar.
    * The **Launches** console:
-     1. Select your launch (tap/click on the thumbnail).
+     1. Select your launch (select the thumbnail).
      1. Select **Promote**.
 1. In the first step you can specify:
     * **Target**
@@ -65,7 +68,9 @@ You can promote launches from either the **Sites** console or the **Launches** c
       >[!NOTE]
       >
       >This covers a single launch, if you have nested launches see [Promoting a Nested Launch](#promoting-a-nested-launch).
+
 1. Select **Next** to proceed.
+
 1. You can review the pages to be promoted; these will depend on the range of pages you have chosen:
 
    ![Review promotion](/help/sites-cloud/authoring/assets/launches-promote-review.png)
@@ -74,7 +79,7 @@ You can promote launches from either the **Sites** console or the **Launches** c
 
 ## Promoting Launch Pages when Editing {#promoting-launch-pages-when-editing}
 
-When you are editing a launch page, the **Promote Launch** action is also available from **Page Information**. This will open the wizard to collect the information needed.
+When you are editing a launch page, the **Promote Launch** action is also available from **Page Information**. This opens the wizard to collect the information needed.
 
 ![Promote launch from site info](/help/sites-cloud/authoring/assets/launches-promote-page-info.png)
 
@@ -93,7 +98,7 @@ After creating a nested launch you can promote it back to any of the sources, in
 1. Enter the required details:
    * **Target**
      * **Promotion target** - You can promote to any of the sources.
-     * **Delete launch after promotion** - After promotion the selected launch, and any launches nested within it, will be deleted.
+     * **Delete launch after promotion** - After promotion, the selected launch, and any launches nested within it, are deleted.
    * **Scope** - Here you can select whether to promote the entire launch, or only pages that have actually been edited. If the latter, you can then select to include/exclude sub-pages. The default configuration is to only promote page changes for the current page:
       * **Promote full launch**
       * **Promote modified pages**
@@ -112,7 +117,7 @@ After creating a nested launch you can promote it back to any of the sources, in
    >
    >The pages listed will depend on the **Scope** defined and possibly the pages that have actually been edited.
 
-1. Your changes will be promoted and reflected in the **Launches** console:
+1. Your changes are promoted and reflected in the **Launches** console:
 
    ![In launches console](/help/sites-cloud/authoring/assets/launches-console.png)
 

@@ -2,12 +2,15 @@
 title: Working with Project Workflows
 description: A variety of project workflows are available out of the box.
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Working with Project Workflows {#working-with-project-workflows}
 
 The project workflows available out of the box include the following:
 
-* **Project Approval Workflow** - This workflow allows you to assign content to a user, review, then approve.
+* **Project Approval Workflow** - This workflow lets you assign content to a user, review, then approve.
 * **Request Launch** - A workflow the requests a launch.
 * **Request Landing Page** - This workflow requests a landing page.
 * **Request Email** - Workflow for requesting an email.
@@ -26,7 +29,7 @@ Depending on which Project template you select, you have certain workflows avail
 
 >[!NOTE]
 >
->&ast; These workflows are not started from the **Workflow** tile in Projects. See [Creating Language Copies for Assets.](/help/sites-cloud/administering/translation/managing-projects.md)
+>&ast; These workflows are not started from the **Workflow** tile in Projects. See [Creating Language Copies for Assets](/help/sites-cloud/administering/translation/managing-projects.md).
 
 The steps for starting and completing workflows are the same no matter which workflow you choose. Only the steps change.
 
@@ -64,4 +67,4 @@ This workflow lets you request a launch.
 
 ## Create (and Translate) Language Copy Workflow for Assets {#create-and-translate-language-copy-workflow-for-assets}
 
-The **Create Language Copy** and the **Create and Translate Language Copy** workflows are covered in detail in [creating language copies for assets.](/help/assets/translate-assets.md)
+The **Create Language Copy** and the **Create and Translate Language Copy** workflows are covered in detail in [creating language copies for assets](/help/assets/translate-assets.md).

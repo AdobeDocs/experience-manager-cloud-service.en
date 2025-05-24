@@ -2,6 +2,9 @@
 title: Working with Tasks
 description: Tasks represent items of work to be done on content and are used in projects to determine the level of completeness of current tasks
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Working with Tasks {#working-with-tasks}
 
@@ -17,7 +20,7 @@ You can track project progress by looking at the active/completed tasks inside a
 
 * **Task List:** When clicking the Task tile, a list of tasks is displayed. This list has detailed information about all the tasks related to the project.
 
-Both list workflow tasks as well as tasks you create directly in the **Tasks** tile.
+Both list workflow tasks and tasks you create directly in the **Tasks** tile.
 
 ### Task Tile {#task-tile}
 
@@ -41,7 +44,7 @@ Click the ellipsis (...) in the Task tile to display the list of the tasks relat
 
 #### Task Details {#task-details}
 
-For more information on a particular task, in the Task List, tap/click the task and **Open**.
+For more information on a particular task, in the Task List, select the task and **Open**.
 
 ![Task details](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
@@ -57,12 +60,12 @@ You can add new tasks to projects. These tasks then appear in the Tasks tile and
 
 To add a task:
 
-1. In the project, in the **Tasks** tile, tap/click the + icon. The **Add Task** window opens.
+1. In the project, in the **Tasks** tile, select the + icon. The **Add Task** window opens.
 1. Enter information about the task. The title of the task and which group it is assigned to are mandatory. Additional information such as the content path, description, task priority, and due date are optional. In addition, you can select the **Advanced** tab to enter the name of the task, which is used to name the URL.
 
    ![Add a task](/help/sites-cloud/authoring/assets/projects-add-task.png)
 
-1. Tap/click **Create**.
+1. Select **Create**.
 
 ## Working with Tasks in the Inbox {#working-with-tasks-in-the-inbox}
 
@@ -70,6 +73,6 @@ Another way to access tasks is from the Inbox. From the inbox, you can open the 
 
 ![Tasks in the inbox](/help/sites-cloud/authoring/assets/projects-task-inbox.png)
 
-To complete a task, select the task and click **Complete**. Add information to the task and then click **Done**. See [Your Inbox](/help/sites-cloud/authoring/getting-started/inbox.md) for more information.
+To complete a task, select the task and click **Complete**. Add information to the task and then click **Done**. See [Your Inbox](/help/sites-cloud/authoring/inbox.md) for more information.
 
 ![Task notifications](/help/sites-cloud/authoring/assets/projects-task-notifications.png)

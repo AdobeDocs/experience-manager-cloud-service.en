@@ -2,6 +2,9 @@
 title: Project Creation Wizard
 description: Learn about the project creation wizard to help you quickly set up your project after creating your production program.
 exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 # Project Creation Wizard {#project-creation-wizard}
 
@@ -19,7 +22,7 @@ Follow these steps to create an AEM application project in Cloud Manager using t
 
    ![Create a branch and project](assets/create-wizard2.png)
 
-1. Optionally, click on the divider to reveal the additional parameters of your project. The default values are provided by the AEM Project Archetype and generally do not need to be changed.
+1. Optionally, click the divider to reveal the additional parameters of your project. The default values are provided by the AEM Project Archetype and generally do not need to be changed.
 
    ![Additional project parameters](assets/create-wizard5.png)
 
@@ -36,7 +39,7 @@ Once program creation is complete, an **Add Environment** card replaces the **Pr
 
 You now have an AEM project based on the AEM archetype added to your git repository to serve as a basis for development for your own project. Next you can create your environments where you can deploy the project code.
 
-Please refer to the document [Managing your Environments](/help/implementing/cloud-manager/manage-environments.md) to learn how to add or manage environments.
+See [Managing your Environments](/help/implementing/cloud-manager/manage-environments.md) to learn how to add or manage environments.
 
 >[!NOTE]
 >

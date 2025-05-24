@@ -1,39 +1,44 @@
 ---
-title: Hibernating and De-hibernating Sandbox Environments 
-description: Learn how environments of a sandbox program automatically enter a hibernation mode and how you can de-hibernate them.
+title: Hibernate and De-Hibernate Sandbox Environments 
+description: Learn how the environments of a sandbox program automatically enter a hibernation mode and how you can de-hibernate them.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
 ---
 
-# Hibernating and De-Hibernating Sandbox Environments {#hibernating-introduction}
+# Hibernate and De-Hibernate Sandbox Environments {#hibernating-introduction}
 
-Environments of a sandbox program enter a hibernation mode if no activity is detected for eight hours.Hibernation is unique to sandbox program environments. Production program environments do not hibernate.
+Environments of a sandbox program enter a hibernation mode if no activity is detected for eight hours. Hibernation is unique to sandbox program environments. Production program environments cannot be hibernated.
 
 ## Hibernation {#hibernation-introduction}
 
 Hibernation can occur either automatically or manually. 
 
-* **Automatic** - Sandbox program environments are automatically hibernated after eight hours of inactivity. Inactivity is defined as neither the author service nor preview or publish services receive requests.
-* **Manual** - As a user you may manually hibernate a sandbox program environment. There is no requirement to do so since hibernation will occur automatically as previously described.
+* **Automatic** - Sandbox program environments are automatically hibernated after eight hours of inactivity. Inactivity is defined as the absence of requests to the author, preview, and publish services.
+* **Manual** - As a user you may manually hibernate a sandbox program environment. There is no requirement to do so because hibernation occurs automatically as previously described.
 
 It may take up to a few minutes for sandbox program environments to enter hibernation mode. Data is preserved during hibernation.
 
-### Using Manual Hibernation {#using-manual-hibernation}
+### Hibernate a sandbox program environment manually {#using-manual-hibernation}
 
-You can manually hibernate your sandbox program from the Developer Console. Access to Developer Console for a sandbox program is available to any user of Cloud Manager.
+You can manually hibernate your sandbox program from the Developer Console. Access to the Developer Console for a sandbox program is available to any user of Cloud Manager.
 
-Follow these steps to manually hibernate your sandbox program environments.
+**To hibernate a sandbox program environment manually:**
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. Click on the program you wish to hibernate to show its details.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, click a *sandbox program* that you want to hibernate to show its details.
 
-1. On the **Environments** card, click the ellipsis button and select **Developer Console**. 
+1. On the **Environments** card, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) and click **Developer Console**. 
 
-   * Refer to the document [Accessing Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) for additional details about the Developer Console.
+   * See [Accessing Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) for additional details about the Developer Console.
 
-   ![Developer Console menu option](assets/developer-console-menu-option.png)
+   ![Developer Console menu option](/help/implementing/cloud-manager/assets/developer-console-menu-option.png)
 
-1. In the Developer Console, click **Hibernate**.
+1. On the **Developer Console** page, click **Hibernate**.
+
+<!-- UPDATE THESE SCREENSHOTS WHEN NEW AEM DEVELOPER CONSOLE UI IS RELEASED. AS OF OCTOBER 14, 2024, NEW UI IS STILL IN BETA -->
 
    ![Hibernate button](assets/hibernate-1.png)
 
@@ -41,31 +46,33 @@ Follow these steps to manually hibernate your sandbox program environments.
 
    ![Confirm hibernation](assets/hibernate-2.png)
 
-When the hibernation is successful, you will see the hibernation process complete notification for your environment in the **Developer Console** screen.
+When the hibernation is successful, you see the hibernation process complete notification for your environment in the **Developer Console** screen.
 
 ![Hibernation confirmation](assets/hibernate-4.png)
 
-In the Developer Console you can also click the **Environments** link in the breadcrumbs above the **Pod** dropdown for a list of environments to hibernate.
+In the Developer Console, click the **Environments** link in the breadcrumbs above the **Pod** drop-down list to view environments available for hibernation.
 
 ![List of environments to hibernate](assets/hibernate-1b.png)
 
-## De-Hibernation {#de-hibernation-introduction}
+## De-hibernate a sandbox program from the Developer Console manually {#de-hibernation-introduction}
 
-You can manually hibernate your Sandbox Program from the Developer Console. 
+You can manually hibernate your sandbox program from the Developer Console. 
 
 >[!IMPORTANT]
 >
 >A user with a **Developer** role can de-hibernate a sandbox program environment.
 
+**To de-hibernate a sandbox program from the Developer Console manually:**
+
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. Click on the program you wish to hibernate to show its details.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, click the program you want to de-hibernate to show its details.
 
-1. On the **Environments** card, click the ellipsis button and select **Developer Console**. 
+1. On the **Environments** card, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) and click **Developer Console**. 
 
-   * Refer to the document [Accessing Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) for additional details about the Developer Console.
+   * See [Accessing Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) for additional details about the Developer Console.
 
-1. Click on **De-hibernate**.
+1. Click **De-hibernate**.
 
     ![De-hibernate button](assets/de-hibernation-img1.png)
     
@@ -81,35 +88,34 @@ You can manually hibernate your Sandbox Program from the Developer Console.
  
    ![De-hibernation complete](assets/de-hibernation-img4.png)
 
-
-In the Developer Console you can also click the **Environments** link in the breadcrumbs above the **Pod** dropdown for a list of environments to de-hibernate.
+In the Developer Console, click the **Environments** link in the breadcrumbs above the **Pod** drop-down list to access environments available for de-hibernation.
  
 ![List of hibernated pods](assets/de-hibernate-1b.png)
 
-### Permissions to De-Hibernate {#permissions-de-hibernate}
+### Permissions to de-hibernate {#permissions-de-hibernate}
 
 Any user with a product profile giving them access to AEM as a Cloud Service should be able to access the **Developer Console**, allowing them to de-hibernate the environment. 
 
-## Accessing a Hibernated Environment {#accessing-hibernated-environment}
+## Access a hibernated environment {#accessing-hibernated-environment}
 
-When making any browser requests against the author, preview, or publish service of a hibernated environment, the user will encounter a landing page describing the hibernated status of the environment along with a link to the Developer Console where the service can be de-hibernated.
+When a user makes a browser request to the author, preview, or publish service of a hibernated environment, they encounter a landing page. This page explains the environment's hibernated status and provides a link to the Developer Console for de-hibernation.
 
 ![Hibernated service landing page](assets/de-hibernation-img5.png)
 
-## Deployments and AEM Updates {#deployments-updates}
+## Deployments and AEM updates {#deployments-updates}
 
 Hibernated environments still allow for deployments and manual AEM upgrades.
 
-* A user may use a pipeline to deploy custom code to hibernated environments. The environment will remain hibernated and the new code will appear in the environment once de-hibernated.
+* A user may use a pipeline to deploy custom code to hibernated environments. The environment remains hibernated and the new code appears in the environment once de-hibernated.
 
-* AEM upgrades can be applied to hibernated environments and can be manually triggered from Cloud Manager. The environment will remain hibernated and the new release will appear in the environment once de-hibernated.
+* AEM upgrades can be applied to hibernated environments and can be manually triggered from Cloud Manager. The environment remains hibernated and the new release appears in the environment once de-hibernated.
 
-## Hibernation and Deletion {#hibernation-deletion}
+## Hibernation and deletion {#hibernation-deletion}
 
 * Environments in a sandbox program are automatically hibernated after eight hours of inactivity. 
-  * Inactivity is defined as neither the author service nor preview or publish services receive requests.
-  * Once hibernated, they can be [manually de-hibernated.](#de-hibernation-introduction)
-* Sandbox programs are deleted after six months of being in continuous hibernation mode, after which time, they can be recreated.
+  * Inactivity is defined as the absence of requests to the author, preview, and publish services.
+  * Once hibernated, they can be [manually de-hibernated](#de-hibernation-introduction).
+* Sandbox programs are deleted after six months of being in continuous hibernation mode, after which time they can be recreated.
 
 >[!NOTE]
 >

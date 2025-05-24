@@ -1,16 +1,14 @@
 ---
-title: Authoring in-context help for form fields
-seo-title: Authoring in-context help for form fields
-description: AEM Forms allows you to add in-context help to Adaptive Form fields and panels, as text or rich media, including videos.
-seo-description: AEM Forms allows you to add in-context help to Adaptive Form fields and panels, as text or rich media, including videos.
-uuid: 1865bf7b-66fc-4f89-bd98-904daa409320
+title: How to add help text for AEM Adaptive Forms fields?
+description: AEM Forms lets you add in-context help to Adaptive Form fields and panels, as text or rich media, including videos.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 78000342-a6a7-4c2e-acab-a88851b82c2a
-docset: aem65
-
+feature: Adaptive Forms, Foundation Components
+role: User
+hide: yes
+hidefromtoc: yes
+exl-id: 9abc6e42-3b53-4dca-bd6a-ced5cf6c6ac4
 ---
-
 # Authoring in-context help for form fields{#authoring-in-context-help-for-form-fields}
 
 ## Introduction {#introduction}
@@ -63,4 +61,3 @@ In addition to the in-context help for form fields, you can specify help at a pa
 Adding help for panel displays a **?** icon next to the panel description. Clicking the icon displays the content added in the Help Content section of the panel edit dialog.
 
 ![Example of in-context help at form panel level](assets/photoshop-1.png)
-
