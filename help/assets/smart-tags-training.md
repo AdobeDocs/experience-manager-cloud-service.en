@@ -1,10 +1,8 @@
 ---
 title: Auto-tag assets with [!DNL Adobe Sensei] smart service
 description: Tag assets with an artificially intelligent service that applies contextual and descriptive business tags.
-contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
-exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 ---
 
 # Smart Tags Training
@@ -156,8 +154,8 @@ To check whether the Smart Tags service is trained on your tags in the training 
 
 >[!NOTE]
 >
->**Question:** What if I want to transfer Smart Tags traning from one instance to another via an export?
->**Answer:** You do not need to export Smart Tags training if the environment belongs to the same IMS org. It is automatically shared. If the environment is across IMS orgs, then there is no way to share or export Smart Tags training.
+>What if I want to transfer Smart Tags traning from one instance to another via an export?
+>You do not need to export Smart Tags training if the environment belongs to the same IMS org. It is automatically shared. If the environment is across IMS orgs, then there is no way to share or export Smart Tags training.
 
 ## Limitations and best practices related to smart tags {#limitations-smart-tags-training}
 
