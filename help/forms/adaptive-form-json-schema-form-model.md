@@ -1,12 +1,28 @@
 ---
-title: Design JSON Schema for an Adaptive Form
-description: Learn how to create Adaptive Forms using JSON schema as form model. You can use existing JSON schemas to create Adaptive Forms. Dig deeper with a sample of a JSON schema, pre-configure fields in JSON schema definition, limit acceptable values for an Adaptive Form component, and learn non-supported constructs.
-feature: Adaptive Forms
+title: How to design JSON Schema for an Adaptive Form?
+description: Learn to create a JSON schema for an Adaptive Form and create an Adaptive Form based on the schema to produce schema complaint data.
+feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
 ---
 # Design JSON Schema for an Adaptive Form {#creating-adaptive-forms-using-json-schema}
+
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| Core Components  |    [Click here](/help/forms/adaptive-form-core-components-json-schema-form-model.md)                  |
+| Foundation    | This article        |
+
+>[!NOTE]
+>
+> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components.
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html)                  |
+| AEM as a Cloud Service     | This article        |
+
 
 ## Prerequisites {#prerequisites}
 
@@ -24,6 +40,7 @@ The key features of using a JSON Schema are:
 * The structure of the JSON is displayed as a tree in the Content Finder tab in the authoring mode for an Adaptive Form. You can drag and add element from the JSON hierarchy to the Adaptive Form.
 * You can pre-populate the form using JSON that is compliant with the associated schema.
 * On submission, the data entered by the user is submitted as JSON that aligns with the associated schema.
+* You can also create the form based on the JSON schema according to the specifications of the [2012-20 version](https://json-schema.org/draft/2020-12/release-notes).
 
 A JSON Schema consists of simple and complex element types. The elements have attributes that add rules to the element. When these elements and attributes are dragged onto an Adaptive Form, they are automatically mapped to the corresponding Adaptive Form component.
 
@@ -46,6 +63,7 @@ This mapping of JSON elements with Adaptive Form components is as follows:
                 "validatePictureClause": "date{DD MMMM, YYYY}",
                 "validatePictureClauseMessage": "Date must be in DD MMMM, YYYY format."
               }
+  }
 ```
 
 <table>
@@ -115,60 +133,62 @@ Adaptive Form uses information available in JSON Schema to map each generated fi
 
 ## Sample JSON Schema {#sample-json-schema}
 
-Here's an example of a JSON Schema.
+>[!BEGINTABS]
 
-```json
-{
- "$schema": "https://json-schema.org/draft-04/schema#",
- "definitions": {
-  "employee": {
-   "type": "object",
-   "properties": {
-    "userName": {
-     "type": "string"
-    },
-    "dateOfBirth": {
-     "type": "string",
-     "format": "date"
-    },
-    "email": {
-     "type": "string",
-     "format": "email"
-    },
-    "language": {
-     "type": "string"
-    },
-    "personalDetails": {
-     "$ref": "#/definitions/personalDetails"
-    },
-    "projectDetails": {
-     "$ref": "#/definitions/projectDetails"
-    }
-   },
-   "required": [
-    "userName",
-    "dateOfBirth",
-    "language"
-   ]
-  },
-  "personalDetails": {
-   "type": "object",
-   "properties": {
-    "GeneralDetails": {
-     "$ref": "#/definitions/GeneralDetails"
-    },
-    "Family": {
-     "$ref": "#/definitions/Family"
-    },
-    "Income": {
-     "$ref": "#/definitions/Income"
-    }
-   }
-  },
-  "projectDetails": {
-   "type": "array",
-   "items": {
+>[!TAB JSON Schema v4]
+  
+  ```json 
+  {
+  "$schema": "https://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "employee": {
+    "type": "object",
     "properties": {
+      "userName": {
+       "type": "string"
+     },
+      "dateOfBirth": {
+       "type": "string",
+       "format": "date"
+      },
+      "email": {
+      "type": "string",
+      "format": "email"
+      },
+      "language": {
+       "type": "string"
+     },
+      "personalDetails": {
+       "$ref": "#/definitions/personalDetails"
+     },
+      "projectDetails": {
+       "$ref": "#/definitions/projectDetails"
+      }
+    },
+    "required": [
+     "userName",
+     "dateOfBirth",
+     "language"
+    ]
+    },
+      "personalDetails": {
+     "type": "object",
+    "properties": {
+       "GeneralDetails": {
+      "$ref": "#/definitions/GeneralDetails"
+     },
+      "Family": {
+       "$ref": "#/definitions/Family"
+      },
+      "Income": {
+       "$ref": "#/definitions/Income"
+     }
+     }
+       },
+    "projectDetails": {
+     "type": "array",
+     "items": {
+     "properties": {
      "name": {
       "type": "string"
      },
@@ -294,6 +314,141 @@ Here's an example of a JSON Schema.
  }
 }
 ```
+
+
+>[!TAB JSON Schema 2012-20]
+
+    
+```json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/employee.schema.json",
+  "$defs": {
+    "employee": {
+      "type": "object",
+      "properties": {
+        "userName": {
+          "type": "string"
+        },
+        "dateOfBirth": {
+          "type": "string",
+          "format": "date"
+        },
+        "email": {
+          "type": "string",
+          "format": "email"
+        },
+        "language": {
+          "type": "string"
+        },
+        "personalDetails": {
+          "$ref": "#/$defs/personalDetails"
+        },
+        "projectDetails": {
+          "$ref": "#/$defs/projectDetails"
+        }
+      },
+      "required": [
+        "userName",
+        "dateOfBirth",
+        "language"
+      ]
+    },
+    "personalDetails": {
+      "type": "object",
+      "properties": {
+        "GeneralDetails": {
+          "$ref": "#/$defs/GeneralDetails"
+        },
+        "Family": {
+          "$ref": "#/$defs/Family"
+        },
+        "Income": {
+          "$ref": "#/$defs/Income"
+        }
+      }
+    },
+    "projectDetails": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "age": {
+            "type": "number"
+          },
+          "projects": {
+            "$ref": "#/$defs/projects"
+          }
+        }
+      },
+      "minItems": 1,
+      "maxItems": 4
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "age": {
+            "type": "number"
+          },
+          "projectsAdditional": {
+            "$ref": "#/$defs/projectsAdditional"
+          }
+        }
+      },
+      "minItems": 1,
+      "maxItems": 4
+    },
+    "projectsAdditional": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "Additional_name": {
+            "type": "string"
+          },
+          "Additional_areacode": {
+            "type": "number"
+          }
+        }
+      },
+      "minItems": 1,
+      "maxItems": 4
+    },
+    "GeneralDetails": {
+      "type": "object",
+      "properties": {
+        "age": {
+          "type": "number"
+        },
+        "married": {
+          "type": "boolean"
+        },
+        "phone": {
+          "type": "number",
+          "aem:afProperties": {
+            "sling:resourceType": "/libs/fd/af/components/guidetelephone",
+            "guideNodeClass": "guideTelephone"
+          }
+        },
+        "address": {
+          "type": "string"
+        }
+      }
+      }
+  }
+  }
+  ```
+  
+>[!ENDTABS]
+
+The key changes from JSON Schema V4 to version 2020-12 specifications are:
+* Id is declared as `$id`
+* definitions is declared as `$defs`
 
 ### Reusable schema definitions {#reusable-schema-definitions}
 
@@ -719,6 +874,20 @@ You can add the following restrictions to JSON Schema elements to limit the valu
  </tbody>
 </table>
 
+
+## Enable schema compliant data {#enablig-schema-compliant-data}
+
+To enable all JSON schema-based Adaptive Forms to generate schema-compliant data upon form submission, follow these steps:
+
+1. Go to Experience Manager web console at `https://server:host/system/console/configMgr`.
+1. Locate **[!UICONTROL Adaptive Form and Interactice Communication Web Channel Configuration]**. 
+1. Select to open the configuration in edit mode.
+1. Select the **[!UICONTROL Generate Schema Compliant Data]** checkbox.
+1. Save the settings.
+
+  ![adaptive form and interactive communication web channel configuration](/help/forms/assets/af-ic-web-channel-configuration.png)
+
+
 ## Non-supported constructs  {#non-supported-constructs}
 
 Adaptive Forms do not support the following JSON Schema constructs:
@@ -727,6 +896,7 @@ Adaptive Forms do not support the following JSON Schema constructs:
 * Union types such as any, and
 * OneOf, AnyOf, AllOf, and NOT
 * Only Homogenous arrays are supported. So, the items constraint must be an object and not be an array.
+* URI references in $ref 
 
 ## Frequently asked questions {#frequently-asked-questions}
 
@@ -744,3 +914,15 @@ You have two options:
 **What should be the extension of the JSON schema file?**
 
 The extension of JSON Schema file must be .schema.json. For example, &lt;filename&gt;.schema.json.
+
+## See Also {#see-also}
+
+{{see-also}}
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Design XML Schema for an Adaptive Form](/help/forms/adaptive-form-xml-schema-form-model.md)
+
+-->

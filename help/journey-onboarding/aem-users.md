@@ -8,11 +8,11 @@ exl-id: 86700cce-139f-451e-9c21-b38b6332f773
 
 # AEM User Tasks {#aem-user-tasks}
 
-In this optional part of the [onboarding journey,](overview.md) you will learn how AEM users can access AEM as a Cloud Service to author content.
+In this optional part of the [onboarding journey](overview.md), you learn how AEM users can access AEM as a Cloud Service to author content.
 
 ## The Story So Far {#story-so-far}
 
-You have come a long way in your onboarding journey! Congratulations! The system administrator has completed the onboarding journey by setting up the necessary cloud resources and granting access in the document [Assigning AEM Product Profiles.](assign-profiles-aem.md)
+You have come a long way in your onboarding journey! Congratulations! The system administrator has completed the onboarding journey by setting up the necessary cloud resources and granting access in the document [Assigning AEM Product Profiles](assign-profiles-aem.md).
 
 At this point, your AEM users can start creating content. In this sense, your onboarding is complete and now it is time to use your new AEM as a Cloud Service system, which this document illustrates.
 
@@ -42,11 +42,11 @@ Before you begin the tasks described in this document as an AEM user, ensure tha
 
 As an AEM author, you need to log into AEM to begin creating content.
 
-1. Navigate to Cloud Manager's login page at [`https://my.cloudmanager.adobe.com`.](https://my.cloudmanager.adobe.com/)
+1. Navigate to Cloud Manager's login page at [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/).
 
-1. Select the appropriate program from Cloud Manager’s **Programs and Products** page to launch the **Overview** page. Ask your system administrator if you are uncertain which program to access.
+1. Select the appropriate program from Cloud Manager's **Programs and Products** page to launch the **Overview** page. Ask your system administrator if you are uncertain which program to access.
 
-1. From the **Overview** page in Cloud Manager, click on the author link from the **Environments** card.
+1. From the **Overview** page in Cloud Manager, click the author link from the **Environments** card.
 
    ![Environment card](/help/journey-onboarding/assets/author-environ.png)
 
@@ -58,16 +58,16 @@ Congratulations! You have now successfully logged in to Author.
 >
 >Bookmark the link to the AEM author instance and you can open it directly instead of going through Cloud Manager every time.
 
-## What’s Next {#whats-next}
+## What's Next {#whats-next}
 
 Now that you have read this document you should know how to:
 
 * Access Cloud Manager.
 * Sign into an AEM as a Cloud Service instance.
 
-Congratulations! You are now ready to author and publish AEM content. Refer to the [Additional Resources](#additional-resources) section for more details on how to author content in AEM and how to administer it.
+Congratulations! You are now ready to author and publish AEM content. See [Additional Resources](#additional-resources) section for more details on how to author content in AEM and how to administer it.
 
-If you are interested in how developers and deployment managers create and manage custom applications for AEM as a Cloud service, continue on to second optional part of the onboarding journey, [AEM Developer Tasks.](developers.md)
+If you are interested in how developers and deployment managers create and manage custom applications for AEM as a Cloud service, continue on to second optional part of the onboarding journey, [AEM Developer Tasks](developers.md).
 
 >[!TIP]
 >
@@ -77,5 +77,5 @@ If you are interested in how developers and deployment managers create and manag
 
 The following are additional, optional resources if you would like to go beyond the content of the onboarding journey.
 
-[Quick Start Guide to Authoring Pages](/help/sites-cloud/authoring/getting-started/quick-start.md) - Start here for a quick overview of authoring fundamentals in AEM.
+[Quick Start Guide to Authoring Pages](/help/sites-cloud/authoring/quick-start.md) - Start here for a quick overview of authoring fundamentals in AEM.
 [Headless Authoring Journey](/help/journey-headless/author/overview.md) - If you want to author headless content, follow this guided introduction.

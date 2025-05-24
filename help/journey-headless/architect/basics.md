@@ -2,6 +2,9 @@
 title: Learn Content Modeling Basics
 description: Learn the basic of modeling content for your Headless CMS using Content Fragments.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
+solution: Experience Manager
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Architect, Developer
 ---
 # Learn the Content Modeling Basics for Headless with AEM {#content-modeling-headless-basics}
 
@@ -9,7 +12,7 @@ exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 
 At the beginning of the [AEM Headless Content Architect Journey](overview.md) the [Introduction](introduction.md) covered the basic concepts and terminology relevant to modeling content for headless.
 
-This article builds on these so you understand how to model your content for your AEM headless project.
+This article builds on these principles so that you understand how to model your content for your AEM headless project.
 
 ## Objective {#objective}
 
@@ -61,7 +64,7 @@ Within a model:
 1. **Data Types** allow you to define the individual attributes.
    For example, define the field holding a teacher's name as **Text** and their years of service as **Number**.
 1. The data types **Content Reference** and **Fragment Reference** allow you to create relationships to other content within AEM.
-1. The **Fragment Reference** data type allows you to realize multiple levels of structure by nesting your Content Fragments (according to the model type). This is vital for your content modeling.
+1. The **Fragment Reference** data type lets you realize multiple levels of structure by nesting your Content Fragments (according to the model type). This is vital for your content modeling.
 
 For example:
 
@@ -78,9 +81,12 @@ AEM provides the following data types for you to model your content:
 * Date and time
 * Enumeration
 * Tags
-* Content Reference
 * Fragment Reference
+* Fragment Reference (UUID)
+* Content Reference
+* Content Reference (UUID)
 * JSON Object
+* Tab Placeholder
 
 >[!NOTE]
 >
@@ -90,11 +96,11 @@ AEM provides the following data types for you to model your content:
 
 Two data types provide references to content outside a specific fragment:
 
-* **Content Reference**
+* **Content Reference**/**Content Reference (UUID)**
   This provides a simple reference to other content of any type.
   For example, you can reference an image at a specified location.
 
-* **Fragment Reference**
+* **Fragment Reference**/**Fragment Reference (UUID)**
   This provides references to other Content Fragments.
   This type of reference is used to create nested content, introducing the relationships needed to model your content.
   The data type can be configured to allow fragment authors to:
@@ -103,11 +109,15 @@ Two data types provide references to content outside a specific fragment:
 
 >[!NOTE]
 >
->You can also create ad hoc references by using links within Text blocks.
+>You can also create improvised references by using links within Text blocks.
+
+>[!NOTE]
+>
+>In the editor the UUID references specify the path to the referenced resource; internally such references are held as universally unique IDs (UUID) that reference the resources.
 
 ## Levels of Structure (Nested Fragments) {#levels-of-structure-nested-fragments}
 
-For content modeling the **Fragment Reference** data type allows you to create multiple levels of structure and relationships.
+For content modeling the **Fragment Reference** data type lets you create multiple levels of structure and relationships.
 
 With this reference you can *connect* various Content Fragment Models to represent interrelationships. This allows the headless application to follow the connections and access the content as necessary.
 
@@ -124,7 +134,7 @@ For example, you might have the following Content Fragment Models defined:
 * Person
 * Awards
 
-Seems pretty straightforward, but of course a Company has both a CEO and Employees....and these are all people, each defined as a Person.
+Seems pretty straightforward, but a Company has both a CEO and Employees....and these are all people, each defined as a Person.
 
 And a Person can have an Award (or maybe two).
 
@@ -143,12 +153,12 @@ Now that you have learned the basics, the next step is to [Learn about Creating 
 
 ## Additional Resources {#additional-resources}
 
-* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 
-  * [Content Fragment Models - Data Types](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
+  * [Content Fragment Models - Data Types](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
-* [Authoring Concepts](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [Authoring Concepts](/help/sites-cloud/authoring/author-publish.md)
 
-* [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) - this page is primarily based on the **Sites** console, but many/most features are also relevant for authoring **Content Fragments** under the **Assets** console.
+* [Basic Handling](/help/sites-cloud/authoring/basic-handling.md) - this page is primarily based on the **Sites** console, but many/most features are also relevant for authoring **Content Fragments** under the **Assets** console.
 
-* [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md)

@@ -1,11 +1,14 @@
 ---
 title: Applying Workflows to Pages
-description: When authoring, you can invoke workflows to take action on your pages; it is also possible to apply more than one workflow..
+description: When authoring, you can invoke workflows to act on your pages; it is also possible to apply more than one workflow..
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
+solution: Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Applying Workflows to Pages {#applying-workflows-to-pages}
 
-When authoring, you can invoke workflows to take action on your pages; it is also possible to apply more than one workflow.
+When authoring, you can invoke workflows to act on your pages; it is also possible to apply more than one workflow.
 
 When you apply the workflow, you specify the following information:
 
@@ -46,9 +49,7 @@ You can start a workflow from either:
 * [the Create option of the Sites toolbar](#starting-a-workflow-from-the-sites-toolbar).
 * [the Timeline rail of the Sites console](#starting-a-workflow-from-the-timeline).
 
-In both cases you will need to:
-
-* [Specify the Workflow Details in the Create Workflow Wizard](#specifying-workflow-details-in-the-create-workflow-wizard).
+In both cases, you must [Specify the Workflow Details in the Create Workflow Wizard](#specifying-workflow-details-in-the-create-workflow-wizard).
 
 ### Starting a Workflow from the Sites Toolbar {#starting-a-workflow-from-the-sites-toolbar}
 
@@ -66,7 +67,7 @@ You can start a workflow from the toolbar of the **Sites** console:
 
 From the **Timeline** you can start a workflow to be applied to your selected resource.
 
-1. [Select the resource](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) and open [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) (or open Timeline and then select the resource).
+1. [Select the resource](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources) and open [Timeline](/help/sites-cloud/authoring/basic-handling.md#timeline) (or open Timeline and then select the resource).
 1. The arrowhead by the comment field can be used to reveal **Start Workflow**:
 
    ![Create workflow from the timeline](/help/sites-cloud/authoring/assets/workflows-create-from-timeline.png)
@@ -112,12 +113,12 @@ You can specify details:
 
 1. In the **Scope** step you can select:
 
-    * **Add Content** to open the [path browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) and select additional resources; when in the browser, click/tap **Select** to add the content to the workflow instance.
+    * **Add Content** to open the [path browser](/help/sites-cloud/authoring/path-selection.md) and select additional resources; when in the browser, select **Select** to add the content to the workflow instance.
 
     * An existing resource to see additional actions:
 
-        * **Include children** to specify that children of that resource will be included in the workflow.
-          A dialog will open allowing you to refine the selection according to:
+        * **Include children** to specify that children of that resource are included in the workflow.
+          A dialog box opens to let you refine the selection according to:
 
             * Include only immediate children.
             * Include only modified pages.
@@ -137,6 +138,6 @@ You can specify details:
 
 ## Starting a Workflow from the Page Editor {#starting-a-workflow-from-the-page-editor}
 
-When editing a page you can select **Page Information** from the toolbar. The drop down menu has the option **Start in Workflow**. This will open a dialog where you can specify the required workflow, together with a title if required:
+When editing a page you can select **Page Information** from the toolbar. The drop-down menu has the option **Start in Workflow**. This opens a dialog where you can specify the required workflow, together with a title if necessary:
 
 ![Starting a workflow from the page editor](/help/sites-cloud/authoring/assets/workflows-create-page-editor.png)

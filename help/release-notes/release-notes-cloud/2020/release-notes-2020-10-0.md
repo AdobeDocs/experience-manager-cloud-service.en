@@ -2,6 +2,8 @@
 title: Release Notes for 2020.10.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] as a Cloud Service Release Notes for 2020.10.0."
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
+feature: Release Information
+role: Admin
 ---
 # Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 {#release-notes}
 
@@ -18,7 +20,7 @@ The following release (2020.11.0) will be on December 1, 2020.
 
 * **[Core Components 2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)**: Adobe Experience Manager as a Cloud Service benefits from automatic updates to the latest release of the Core Components. Release 2.12.0 includes the latest improvements contributed by the community. Improvements include [a new POST form handler;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data) the ability to include custom CSS, JavaScript, and metadata [tags via context aware configuration;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) and a [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components) utility to simplify Adobe Data Layer integration in custom components. See the [list of changes](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) in 2.12.0.
 
-* **[Project Archetype 24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)**: The recommended foundation to start a new Experience Manager project got better. It now includes the new [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html), option to [deliver site in AMP,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) and new [extension points to add project CSS/JS.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)
+* **[Project Archetype 24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)**: The recommended foundation to start a new Experience Manager project got better. It now includes the new [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html), option to [deliver site in AMP](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html), and new [extension points to add project CSS/JS](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading).
 
 * **[ContextHub Folders](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md#organizing-segments)**: Ability to create audience folders to easily organize, find, and select audience segments to use for ContextHub offer targeting capabilities.
 
@@ -41,7 +43,7 @@ The following release (2020.11.0) will be on December 1, 2020.
 
 ### What is new in [!DNL Forms] {#what-is-new-forms-oct-2021}
 
-* **Analytics for Adaptive Forms**: You can now capture and track behavior of both logged-in and not logged-in (anonymous) via Adobe Analytics for Adaptive Forms to gather end user insights. It helps business users make informed decisions about adaptive form content, layout, and style based on the gathered insights. 
+* **Analytics for Adaptive Forms**: You can now capture and track behavior of both logged-in and not logged-in (anonymous) by way of Adobe Analytics for Adaptive Forms to gather user insights. It helps business users make informed decisions about adaptive form content, layout, and style based on the gathered insights. 
 
 ### New features available in [!DNL Forms] prerelease channel {#prerelease-features-forms-oct-2021}
 
@@ -49,7 +51,7 @@ The following release (2020.11.0) will be on December 1, 2020.
 
 ### Beta features of [!DNL Forms]  {#sep-what-is-new-forms-oct-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) help you combine a template and XML data to generate  documents in various formats. The service allows you to generate documents in synchronous and batch mode.
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) help you combine a template and XML data to generate  documents in various formats. The service lets you generate documents in synchronous and batch mode.
 
 You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
@@ -57,9 +59,9 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
 ### What is New {#what-is-new-commerce}
 
-* Released CIF Venia Reference Site - 2020.10.2 that includes the latest CIF Core Components version v1.4.0. Refer to [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) for more details.
+* Released CIF Venia Reference Site - 2020.10.2 that includes the latest CIF Core Components version v1.4.0. See [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) for more details.
 
-* Released CIF Core Components v1.4.0. Refer to [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) for more details.
+* Released CIF Core Components v1.4.0. See [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) for more details.
 
 ### Bug Fixes {#bug-fixes-commerce}
 
@@ -79,12 +81,12 @@ The Release Date for Cloud Manager in Experience Manager as a Cloud Service 2020
 
 * Hibernated environments now show a discrete status in Cloud Manager when they are hibernated.
 
-* The Cloud Manager "build container" now supports compiling projects using either Java™ 8 or Java™ 11. Support for Java™ 11 is provided by the Maven toolchains system.
+* The Cloud Manager "build container" now supports compiling projects using either Java&trade; 8 or Java&trade; 11. Support for Java&trade; 11 is provided by the Maven toolchains system.
 
 * The number of environment variables per environment has been increased to 200.
 
 * The Environment card on the Overview page now lists up to three environments. Users can select the **Show All** button to navigate to the Environment summary page to view a table with a complete list of environments.
-   Refer to [Viewing Environment](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) for more details.
+   See [Viewing Environment](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) for more details.
 
 ### Bug Fixes {#bug-fixes-cloud-manager}
 

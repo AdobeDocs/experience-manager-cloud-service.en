@@ -1,8 +1,10 @@
 ---
 title: Shopping Cart and Dispatcher Setup
 description: Shopping Cart and Dispatcher Setup
+feature: Commerce Integration Framework
+role: Admin
+exl-id: 2ce424a7-6bf4-4482-b5cb-5a7998a294e9
 ---
-
 # Shopping Cart and Dispatcher Setup
 
 [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) comes with an out of the box [shopping cart](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/minicart/v1/minicart) which renders a cart and checkout form. The shopping cart requires an [AEM Dispatcher with GraphQL](https://github.com/adobe/aem-core-cif-components/blob/master/dispatcher) routing setup. The following video details a local configuration and setup using a Docker image.

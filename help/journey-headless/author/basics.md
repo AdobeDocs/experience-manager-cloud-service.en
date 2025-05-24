@@ -2,6 +2,9 @@
 title: Learn Authoring Basics
 description: Learn about the concepts and mechanics of authoring content for your Headless CMS using Content Fragments.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
+solution: Experience Manager
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Architect, Developer
 ---
 # Authoring Basics for Headless with AEM {#author-headless-basics}
 
@@ -22,32 +25,35 @@ This article builds on these so you understand how to author your own content fo
 
 Before you get to grips with Content Fragments, here is a (very) quick introduction to using AEM....but nothing really replaces the experience of signing in and trying to use the system.
 
-### Author and Publish {#author-preview-publish}
+### Author, Preview, and Publish {#author-preview-publish}
 
-An AEM installation generally consists of at least two environments:
+An AEM installation generally consists of three environments:
 
 * Author
 * Publish
+* Preview
 
 You log into, and use the author environment to generate your content. When ready you then publish your content so that it becomes generally available. For headless this would be to other applications, for web pages this would be to readers on the web.
 
 For more details see the Authoring Concepts.
 
+From the **Content Fragments** console, you can also publish to the **Preview Service**, for testing and previewing, prior to Publish. See Publishing and Previewing a Fragment.
+
 ### Signing In {#signing-in}
 
-As with most systems you will need to login. As an author you will be provided with:
+As with most systems, you need to log on. As an author you are provided with:
 
 * User (account) name
 * Password
 * Link to access the login screen
 
-Your account will have been configured with any privileges that you need. If you have any issues, we recommend that you contact your in-house project support team.
+Your account will have been configured with any privileges that you need. If you have any issues, Adobe recommends that you contact your in-house project support team.
 
 ### Navigation {#navigation}
 
 The first time you log in a small online tutorial will highlight some of the main features of the user interface.
 
-You can then use the Navigation Panel to access key areas of AEM. For Content Fragments you will be using the **Content Fragments** console (for some actions you will also use the **Assets** console). 
+You can then use the Navigation Panel to access key areas of AEM. For Content Fragments, you use the **Content Fragments** console (for some actions you will also use the **Assets** console). 
 
 The Navigation Panel can be opened by selecting the Adobe icon at the top left, followed by the small compass icon.
 
@@ -62,7 +68,7 @@ The Navigation Panel can be opened by selecting Adobe icon at the top left, foll
 
 Within the console you can select folders in the left panel to navigate to your Content Fragment. You can also filter and/or search.
 
-![Content Fragments console](/help/sites-cloud/administering/content-fragments/assets/cfc-console-filter.png)
+![Content Fragments console](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-filter.png)
 
 ### Actions, Selecting, Viewing {#actions-selecting-viewing}
 
@@ -112,7 +118,7 @@ You can view additional information about items using the Rail Selector. This al
 
 ## Authoring Content Fragments {#authoring-content-fragments}
 
-So, that was a very quick introduction to the AEM User Interface (UI), but hopefully you've had a chance to try it out. Now we get down to your real interest - Content Fragments for Headless.
+So, that was a very quick introduction to the AEM User Interface (UI), but hopefully you have had a chance to try it out. Now we get down to your real interest - Content Fragments for Headless.
 
 We'll have to go through things from start to finish, but your instance might already have folders and/or fragments created, and these might be in different locations. The principles are the same.
 
@@ -126,13 +132,13 @@ You can do this by creating a series of folders within **Files** section of the 
 
 ![Create Folder option](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-A dialog will open where you can enter the details, then confirm with **Create**:
+A dialog opens where you can enter the details, then confirm with **Create**:
 
 ![Create Folder dialog](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
 #### Using Paths and Tags to limit Content Fragment Models available in the Folder {#tags-paths-for-models-in-folder}
 
-This section is slightly more advanced. You don't really need it if you're just starting out and trying things, but it is *very* useful when you have a lot of fragments. So it's good to know about - even if you don't use it quite yet.
+This section is slightly more advanced. You do not really need it if you are just starting out and trying things, but it is *very* useful when you have many fragments. So it is good to know about - even if you do not use it quite yet.
 
 Your Content Architect will have created all the Content Fragment Models required for your current project, and maybe some other projects too. To help keep things simple for yourself, and other authors, you can limit the list of models available for a specific folder.
 
@@ -174,43 +180,44 @@ Specify the:
 
 Then confirm with either **Create** or **Create and open**.
 
-<!--
-Creating a Content Fragment is very similar - you just use the **Content Fragment** option instead:
-
-![Create Content Fragment option](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
-
-This time a wizard opens. The first step is to select the Content Fragment Model that your fragment will be based on:
-
-![Create Content Fragment - select Model](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
-
-After continuing with **Next** you can supply the details (**Basic** and **Advanced**) for your fragment:
-
-![Create Content Fragment - provide Name](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
-
-Confirm with **Create** and you can then **Open** your fragment in the editor.
--->
-
 ### Editing a Fragment {#editing-fragment}
 
 You can open a fragment immediately after creating it, or by selecting it from the Content Fragments console (also from the Assets console).
 
-When the editor first opens you'll see:
+>[!NOTE]
+>
+>Content Fragments are a Sites feature, but are stored as **Assets**. 
+>
+>There are two editors for authoring Content Fragments. 
+>
+>* The new editor, primarily accessed from the **Content Fragments** console.
+>* The original editor, primarily accessed from the **Assets** console. 
 
-* A list of icons at the left side - this gives you access to various areas of functionality. The editor opens in the **Variations** tab, this is where most of the editing happens. You might also be interested in the **Annotations** and **Metadata** tabs.
+When the editor first opens you see:
 
-* A header with information about the fragment, and access to various actions.
+* top toolbar: for key information, and actions
+  * a link to the Content Fragment Console (Home icon)
+  * information about the model, and folder
+  * links to Preview; if the Default Preview URL Pattern is configured for the model
+  * Publish, and Unpublish actions
+  * an option to show all **Parent References** (link icon)
+  * the fragment **Status**, and last saved information
+  * a toggle to switch to the original (Assets-based) editor
+* left panel: shows the **Variations** for the Content Fragment, and its **Fields**:
+  * these links can be used to navigate the Content Fragment structure
+* right panel: presents tabs showing the properties (metadata) and tags, information about the version history, and information related to any language copies
+  * in the **Properties** tab you can update the **Title** and **Description** for the fragment, or **Variation**
+* central panel: shows the actual fields, and content, of the selected variation
+  * allows you to edit the content
+  * if **Tab Placeholder** fields are defined within the model they are shown here, and can be used for navigating
 
-* The main editing area - this depends on the model used to create your fragment.
+As example, a fragment can:
 
-As examples:
+* Require multiple pieces of information, some with a specific type. For headless content, references are key (you learn about these later in your journey).
 
-* A fragment that only requires multiple pieces of information, some with a specific type. For headless content, references are key, you'll learn about these later in your journey.
+* Allow you to write a long section of text. Here there are additional options for managing, and formatting the text. You can even open the individual text fields in a full screen editor (using the small screen-like icon at the right)
   
-  ![Content Fragment Editor - My Fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
-
-* A fragment that allows you to write a long section of text. Here there are additional options for managing, and formatting the text. You can even open the individual text fields in a full screen editor (using the small screen-like icon at the right)
-  
-  ![Content Fragment Editor - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
+![Content Fragment Editor - Alaska Spirits](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 >[!NOTE]
 >
@@ -224,32 +231,18 @@ Confirm your updates with either **Save** or **Save & close**.
 >
 >For more details you can read Variations - Authoring Content Fragments.
 
-#### What you (probably) don't need to worry about {#what-you-probably-do-not-need-to-worry-about}
+#### What you (probably) do not need to worry about {#what-you-probably-do-not-need-to-worry-about}
 
-OK, this might seem a slightly strange section, but once you open the Content Fragment Editor and start exploring you'll see various options that (probably) do not apply for your headless journey as a Content Author. So this is just a quick heads-up on what you should be able ignore in the headless context:
+OK, this might seem a slightly strange section, but as soon as you open the Content Fragment Editor and start exploring you can see various options that (probably) do not apply for your headless journey as a Content Author. So this is just a quick heads-up on what you should be able ignore in the headless context:
 
 * **Content Fragment Models**
 
-  You will see the name of the Content Fragment Model at the top of the editor - directly under the fragment name. This is also a link that takes you to the model editor.
+  You can see the name of the Content Fragment Model in the right panel of the editor. This is also a link that takes you to the model editor.
   Content Fragment Models are actually vital to your Content Fragments as they define the structure that you use. However, creating and editing them is (usually) the responsibility of another persona, the Content Architect. 
 
   >[!NOTE]
   >
   >If you want to learn more, you can read the AEM Headless Content Architect Journey.
-
-* **Associated Content**
-
-  This one is quite obvious as it's a tab in the editor.
-
-  Content Fragments have been available in AEM for quite a few versions. Originally they were made available for "traditional" use when authoring pages....and they are still used in this context. This can involve associating assets (for example images) that although not embedded in the fragment, needs to be available to the author when authoring a page.
-
-* **Preview**
-
-  This is another tab in the editor and provides a technical view, primarily intended for developers.
-
-* **Update page references**
-
-  This action is available from the **...** (ellipses) drop down. It is not interesting for headless authors as it relates to page authoring.
 
 ### Publishing {#publishing}
 
@@ -257,9 +250,13 @@ OK, this might seem a slightly strange section, but once you open the Content Fr
 
 Once you have completed your fragment you can **Publish** it so that it is available to the headless applications.
 
-The publish actions are available in the editor (or from the toolbar of either the **Content Fragments** console or the **Assets** console):
+The publish actions are available in the editor:
 
 ![Content Fragment Editor - My Fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
+
+>[!NOTE]
+>
+>You can also publish your fragment from either the **Assets** or **Content Fragments** console.
 
 ## What's Next {#whats-next}
 
@@ -267,45 +264,53 @@ Now that you have learned the basics, the next step is to [Learn how about Refer
 
 ## Additional Resources {#additional-resources}
 
-* [Authoring Concepts](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [Authoring Concepts](/help/sites-cloud/authoring/author-publish.md)
 
-* [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) - this page is primarily based on the **Sites** console, but many/most features are also relevant for authoring **Content Fragments** under the **Assets** console.
+* [Basic Handling](/help/sites-cloud/authoring/basic-handling.md) - this page is primarily based on the **Sites** console, but many/most features are also relevant for authoring **Content Fragments** under the **Assets** console.
 
-  * [Navigation Panel](/help/sites-cloud/authoring/getting-started/basic-handling.md#navigation-panel)
+  * [Navigation Panel](/help/sites-cloud/authoring/basic-handling.md#navigation-panel)
 
-  * [The Header](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header)
+  * [The Header](/help/sites-cloud/authoring/basic-handling.md#the-header)
   
-  * [Action Toolbar](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)
+  * [Action Toolbar](/help/sites-cloud/authoring/basic-handling.md#actions-toolbar)
 
-  * [Quick Actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
+  * [Quick Actions](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
   
-  * [Viewing and Selecting Resources](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+  * [Viewing and Selecting Resources](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)
   
-  * [Rail Selector](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+  * [Rail Selector](/help/sites-cloud/authoring/basic-handling.md#rail-selector)
+
+* [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md)
+ 
+  * [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md)
+
+  * [Apply the Configuration to your Assets Folder](/help/sites-cloud/administering/content-fragments/setup.md#apply-the-configuration-to-your-folder)
+  
+  * [Creating a Content Fragment](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)
+  
+  * [Authoring Content Fragments](/help/sites-cloud/administering/content-fragments/authoring.md)
 
   * Publishing
 
-    * [Quick Publish](/help/assets/manage-publication.md#quick-publish)
+    * From the editor, or **Assets** console
 
-    * [Manage Publication](/help/assets/manage-publication.md#manage-publication) 
+      * [Quick Publish](/help/assets/manage-publication.md#quick-publish)
 
-* [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)
- 
-  * [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
+      * [Manage Publication](/help/assets/manage-publication.md#manage-publication) 
 
-    * [Apply the Configuration to your Assets Folder](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+    * From the **Content Fragments** Console
+
+      * [Publishing and Previewing a Content Fragment](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment)
+
+  * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
+
+    * [Content Fragment Models - Data Types](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
   
-    * [Creating a Content Fragment](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
-  
-  * [Variations - Authoring Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
+    * [Content Fragment Models - Properties](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)
 
-  * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+    * [Content Fragment Models - Allowing Content Fragment Models on your Assets Folder](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder)
 
-    * [Content Fragment Models - Data Types](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
-  
-    * [Content Fragment Models - Properties](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
-
-    *  [Content Fragment Models - Allowing Content Fragment Models on your Assets Folder](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+* [Content Fragments - original editor, from the Assets Console](/help/assets/content-fragments/content-fragments-variations.md)
 
 * Getting Started Guides
   * [Creating an Assets Folder Headless Setup](/help/headless/setup/create-assets-folder.md)

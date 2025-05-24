@@ -2,12 +2,15 @@
 title: Creating Launches
 description: You can create a launch to enable the updating of a new version of existing web pages for future activation.
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
+solution: Experience Manager Sites
+feature: Authoring, Launches
+role: User
 ---
 # Creating Launches {#creating-launches}
 
 Create a launch to enable the updating of a new version of existing web pages for future activation. When you create a Launch, you specify a title and the source page:
 
-* The title appears in the [References](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) rail, from where authors can access them to work on them.
+* The title appears in the [References](/help/sites-cloud/authoring/sites-console/console-side-panel.md#references) rail, from where authors can access them to work on them.
 * The child pages of the source page are included in the launch by default. You can use only the source page if desired.
 * By default, [Live Copy](/help/sites-cloud/administering/msm/overview.md) automatically updates the launch pages as the source pages change. You can specify that a static copy is created to prevent automatic changes.
 
@@ -19,7 +22,7 @@ Optionally, you can specify the **Launch Date** (and time) to define when the la
 >
 >* `/libs/launches/templates/outofscope`
 >
->These pages cannot be edited. You will see the message: 
+>These pages cannot be edited. You see the message: 
 >
 >* **This page is not part of the launch. Go to production page**
 
@@ -42,7 +45,7 @@ You can create a launch from either the Sites or Launches console:
 
    >[!NOTE]
    >
-   >In the **Sites** console you can also use [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) to select a page before selecting **Create**.
+   >In the **Sites** console you can also use [selection mode](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources) to select a page before selecting **Create**.
    >
    >This will use the selected page as the initial source page.
 
@@ -56,7 +59,7 @@ You can create a launch from either the Sites or Launches console:
 
    >[!NOTE]
    >
-   >To add pages and/or branches to a launch they must be within a site; i.e. below a common top-level root.
+   >To add pages and/or branches to a launch they must be within a site; that is, below a common top-level root.
    >
    >If a site contains language roots below the top level, the pages and branches for a launch must be below a common language root.
 
@@ -73,7 +76,7 @@ You can create a launch from either the Sites or Launches console:
 1. In the **Properties** step of the wizard you can specify:
 
     * **Launch Title**: The name of the Launch. The name should be meaningful for authors.
-    * **with existing content**: the original content will be used to create the launch.
+    * **with existing content**: the original content is used to create the launch.
     * **use a new template to replace the page**: See [Create Launch with New Template](#create-launch-with-new-template) for more details.
     * **Inherit source page live data**: Select this option to automatically update the content of launch pages when the source pages change. This option achieves this by making the launch a [Live Copy](/help/sites-cloud/administering/msm/overview.md). By default, this option is selected.-->
     * **Launch Date**: The date and time when the launch copy is to be activated (dependent on the **Production Ready** flag; see [Launches - the Order of Events](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)).
@@ -106,9 +109,9 @@ Selecting this will:
 
 >[!CAUTION]
 >
->As a different template is used the new page will be empty. Due to the different page structure no content will be copied over.
+>As a different template is used, the new page is empty. Due to the different page structure no content is copied over.
 >
->This mechanism can be used to change the template of an [existing page](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) - though the loss of content must be considered.
+>This mechanism can be used to change the template of an [existing page](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) - though the loss of content must be considered.
 
 ### Creating a Nested Launch {#creating-a-nested-launch}
 
@@ -144,7 +147,16 @@ To create a nested launch from the **Sites** console - based on an existing laun
 
 If you select **Done**, you are returned to the **References** rail of the **Sites** console, if you select the appropriate page your new launch is shown.
 
-### Deleting a Launch {#deleting-a-launch}
+### Cloning a Launch {#cloning-a-launch}
+
+You can clone a launch from the [launches console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
+
+* Select the launch, by tapping/clicking on the thumbnail.
+* The toolbar will appear - select Clone.
+  * The clone will be created and shown in the console. 
+  * The **Launch Title** will indicate that it is a clone. You can update the title by editing the [Launch Configuration](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration) (**Properties**).
+
+## Deleting a Launch {#deleting-a-launch}
 
 You can delete a launch from the [launches console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
 

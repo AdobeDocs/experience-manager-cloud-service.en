@@ -2,6 +2,8 @@
 title: Extending ContextHub
 description: Define new types of ContextHub stores and modules when the ones provided do not meet your solution requirements
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
+feature: Developing, Personalization
+role: Admin, Architect, Developer
 ---
 # Extending ContextHub {#extending-contexthub}
 
@@ -28,7 +30,7 @@ To create a store candidate, you use the [`ContextHub.Utils.inheritance.inherit`
 * [`ContextHub.Store.JSONPStore`](contexthub-api.md#contexthub-store-jsonpstore)
 * [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore)
 
-Note that each base store extends the [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) store.
+Each base store extends the [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) store.
 
 The following example creates the simplest extension of the `ContextHub.Store.PersistedStore` store candidate:
 
@@ -52,11 +54,11 @@ ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
                                 'contexthub.mystorecandidate', 0);
 ```
 
-In most cases only one candidate is necessary and the priority can be set to `0`, but if you are interested you can learn about [more advanced registrations,](contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) which allows one of few store implementations to be chosen based on javascript condition (`applies`) and candidate priority.
+In most cases only one candidate is necessary and the priority can be set to `0`, but if you are interested you can learn about [more advanced registrations](contexthub-api.md#registerstorecandidate-store-storetype-priority-applies), which allows one of few store implementations to be chosen based on javascript condition (`applies`) and candidate priority.
 
 ## Creating ContextHub UI Module Types {#creating-contexthub-ui-module-types}
 
-Create custom UI module types when the ones that are [installed with ContextHub](sample-modules.md) do not meet your requirements. To create a UI module type, create a new UI module renderer by extending the `ContextHub.UI.BaseModuleRenderer` class and then registering it with `ContextHub.UI`.
+Create custom UI module types when the ones that are [installed with ContextHub](sample-modules.md) do not meet your requirements. To create a UI module type, create a UI module renderer by extending the `ContextHub.UI.BaseModuleRenderer` class and then registering it with `ContextHub.UI`.
 
 To create a UI module renderer, create a `Class` object that contains the logic that renders the UI module. At a minimum, your class must perform the following actions:
 

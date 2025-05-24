@@ -112,7 +112,7 @@ When you add assets to your set, they are automatically added in alphanumeric or
 
 1. To delete an asset, select the corresponding check box and select **[!UICONTROL Delete Asset]**.
 1. To apply a preset, select **[!UICONTROL Preset]** in the upper right corner and select a preset to apply to the assets.
-1. Select **[!UICONTROL Save]**. Your newly created Mixed Media Set appears in the folder you created it in.
+1. Select **[!UICONTROL Save]**. Your created Mixed Media Set appears in the folder you created it in.
 
 ## Edit Mixed Media Sets {#editing-mixed-media-sets}
 
@@ -152,7 +152,7 @@ You can perform various editing tasks to assets in Mixed Media Sets directly in 
 
     >[!NOTE]
     >
-    >* To edit the assets in a Mixed Media Set - Navigate to the Mixed Media Set. Tap (do not select) the set so you can open it in the Experience Manager Set Preview page. In the left rail, select the down caret to open the drop-down list, then select **[!UICONTROL Set Members]**. In the Set Members page, hover on an asset, then select **[!UICONTROL Edit]** (pencil icon) to open the editing page.
+    >* To edit the assets in a Mixed Media Set - Navigate to the Mixed Media Set. Select (do not select) the set so you can open it in the Experience Manager Set Preview page. In the left rail, select the down caret to open the drop-down list, then select **[!UICONTROL Set Members]**. In the Set Members page, hover on an asset, then select **[!UICONTROL Edit]** (pencil icon) to open the editing page.
     >
     >* To delete an entire Mixed Media Set - From any viewing mode (such as Card view or Column view), navigate to the Mixed Media Set. Hover on the set, then select **[!UICONTROL Select]** (checkmark icon). Press **[!UICONTROL Backspace]** on your keyboard, or select **[!UICONTROL More]** (row of three dots), then select **[!UICONTROL Delete]**.
 

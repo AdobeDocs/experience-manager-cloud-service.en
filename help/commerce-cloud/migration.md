@@ -2,6 +2,8 @@
 title: Migration to the AEM Commerce Integration Framework (CIF) add-on
 description: How to migrate to the AEM Commerce Integration Framework (CIF) add-on from an old version
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
+feature: Commerce Integration Framework
+role: Admin
 ---
 # Migration guide for the Experience Manager Cloud Service {#cif-migration}
 
@@ -9,7 +11,7 @@ This guide helps identify the areas you need to update for the Experience Manage
 
 ## CIF add-on
 
-For Experience Manager as a Cloud Service the CIF add-on is the only supported commerce integration solution for Adobe Commerce and 3rd party commerce solutions. The CIF add-on is deployed automatically for customers on Experience Manager as a Cloud Service, no manual deployment is needed. See [Getting started with AEM Commerce as a Cloud Service](getting-started.md).
+For Experience Manager as a Cloud Service the CIF add-on is the only supported commerce integration solution for Adobe Commerce and third-party commerce solutions. The CIF add-on is deployed automatically for customers on Experience Manager as a Cloud Service, no manual deployment is needed. See [Getting started with AEM Commerce as a Cloud Service](getting-started.md).
 
 To support projects deploying CIF Adobe provide [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components).
 

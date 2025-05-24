@@ -2,6 +2,8 @@
 title: Implementation Phase
 description: Making sure your code and content are ready for the migration to the cloud
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
+feature: Migration
+role: Admin
 ---
 # Implementation Phase {#implementation-phase}
 
@@ -9,7 +11,7 @@ In the implementation phase of the journey, you will explore the tools through w
 
 ## The Story So Far {#story-so-far}
 
-In the previous parts of the journey, you've went through [getting familiar with the changes in AEM as a Cloud Service](/help/journey-migration/getting-started.md), as well as determining if your deployment is ready to be moved to the cloud with the [readiness phase](/help/journey-migration/readiness.md).
+In the previous parts of the journey, you have gone through [getting familiar with the changes in AEM as a Cloud Service](/help/journey-migration/getting-started.md), and determined if your deployment is ready to be moved to the cloud with the [readiness phase](/help/journey-migration/readiness.md).
 
 This article continues on with advice on how to use Adobe provided tools to make sure that your code and content are ready to be moved to the cloud.
 
@@ -19,7 +21,7 @@ This document aims to:
 
 * Introduce you to Cloud Manager, AEM's continuous integration and delivery framework used to deploy code to AEM as a Cloud Service
 * Get you up to speed with the content transfer tool
-* Describe the code refactoring tools you have to use in order to modernize your code for AEM as a Cloud Service
+* Describe the code refactoring tools you have to use so you can modernize your code for AEM as a Cloud Service
 
 ## Using Cloud Manager {#using-cloud-manager}
 
@@ -41,9 +43,9 @@ The exact steps of your transition to Cloud Service depend on the systems you ha
 
 The following figure shows the main steps involved in the phase that involves converting your code and content for use with AEM as a Cloud Service:
 
-![image](/help/journey-migration/assets/exec-image1.png)
+![Conversion steps](/help/journey-migration/assets/exec-image1.png)
 
-We will start detailing the tools you need to use in order to achieve this in the chapters below.
+We will start detailing the tools you must use so you can achieve this in the chapters below.
 
 ## Content Migration {#content-migration}
 
@@ -53,7 +55,7 @@ With this tool, you can specify the desired content subset that you want to tran
 
 Content Migration is a multi-step process that requires planning, tracking, and collaboration between different teams. 
 
-For a complete detail on how the tool works and how we recommend you use it, see the [Content Transfer Tool documentation](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
+For a complete detail on how the tool works and how Adobe recommends that you use it, see the [Content Transfer Tool documentation](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
 
 ## Code Refactoring {#code-refactor}
 
@@ -61,15 +63,15 @@ For a complete detail on how the tool works and how we recommend you use it, see
 
 It is time to start refactoring the existing features to be compatible with Cloud Services.
 
-In order to do this, you need to take a look at the documentation detailing the basic tooling you will need to start refactoring your code:
+First, look at the documentation detailing the basic tooling, and start refactoring your code:
 
 
-* During planning, it is a good idea to have a list of areas that must be refactored in order to be compatible with AEM as a Cloud Service. You can review [Development Guidelines](/help/implementing/developing/introduction/development-guidelines.md) for more details on how to refactor and optimize code for Cloud Service.  
-* Read up on how to [Manage Configurations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html?lang=en#what-is-a-configuration) in AEM as a Cloud Service.
-* Learn how to set up a Local Development Environment by downloading the [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en)
+* During planning, it is a good idea to have a list of areas that must be refactored to be compatible with AEM as a Cloud Service. You can review [Development Guidelines](/help/implementing/developing/introduction/development-guidelines.md) for more details on how to refactor and optimize code for Cloud Service.  
+* Read up on how to [Manage Configurations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html#what-is-a-configuration) in AEM as a Cloud Service.
+* Learn how to set up a Local Development Environment by downloading the [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html)
 * Finally, familiarize yourself with the [AEM as a Cloud Service Java API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
 
-Additionally, you can also:
+Also, you can also:
 
 * Watch this video to understand how to install the Dispatcher SDK locally:
 
@@ -98,15 +100,15 @@ Adobe provides several tools to help accelerate some of your code refactoring ta
 
 * [Asset Workflow Migration](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md), a tool that is used to automatically migrate asset processing workflows
 * [Dispatcher Converter](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md), a tool that converts your existing Dispatcher configurations into a format that is ready for AEM as a Cloud Service.
-* [Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html?lang=en), a tool that takes an AEM Multimode project as input and converts it into an AEM as a Cloud Service one
-* [Index Converter](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html?lang=en), a tool that converts indexes into a form compatible with AEM as a Cloud Service
+* [Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html), a tool that takes an AEM Multimode project as input and converts it into an AEM as a Cloud Service one
+* [Index Converter](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html), a tool that converts indexes into a form compatible with AEM as a Cloud Service
 * [Modernization Tools](/help/journey-migration/refactoring-tools/aem-modernization-tools.md), a suite of utilities which can be used to convert legacy AEM features to the modern and supported capabilities of AEM as a Cloud Service.
 
 Once you have set up the local development environment, get familiar with the AEM as a Cloud Service SDK by consulting the [documentation](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 
 ### Schedule a Code Freeze {#schedule-a-code-freeze}  
 
-To manage your on-going code development on your active AEM along with the code refactoring tasks as part of your transition journey, we recommended you schedule a code freeze period until you have completed restructuring your Maven project to be compatible with AEM as a Cloud Service.
+To manage your on-going code development on your active AEM along with the code refactoring tasks as part of your transition journey, Adobe recommends that you schedule a code freeze period until you have completed restructuring your Maven project to be compatible with AEM as a Cloud Service.
 
 Once the project restructuring is done, you can resume new code development based on this new structure. This reduces Cloud Manager pipeline failures during code deployment and testing.
 
@@ -157,7 +159,7 @@ Gathering data can help you plan the migration activities and associated tasks. 
 
 <!-- Alexandru: hiding this for now
 
-One more important datapoint is the amount of time it takes to complete the [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md), if this is coupled with the content migration. You can take this data point into consideration for more realistic estimates, since it will be added to the overall extraction timeline and it may not be required to run it during top-ups.
+One more important datapoint is the amount of time it takes to complete the [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md), if this is coupled with the content migration. You can take this data point into consideration for more realistic estimates, because it is added to the overall extraction timeline and it may not be required to run it during top-ups.
 
 -->
 
@@ -209,7 +211,7 @@ The following table illustrates a functional migration tracker:
 
 The following section shows the important steps and associated tasks that can be used to formulate a content migration strategy and timeline.
 
-![image](/help/journey-migration/assets/content-migration2.png)
+![Steps to formulate a migration strategy](/help/journey-migration/assets/content-migration2.png)
 
 ### Fitment {#fitment}
 
@@ -235,7 +237,7 @@ The following section shows the important steps and associated tasks that can be
   * Is in the same network zone
   * Will provide production content like users and groups
   * Clones author and publish - one node each in case of a cluster or publish farm
-* Choose a subset of the content that will be migrated so that:
+* Choose a subset of the content that is migrated so that:
   * It is a mix of all the available content types
   * Contains all users and groups
 * Includes either 25% of the content or up to 1 TB of content, whichever is less.
@@ -250,4 +252,4 @@ The following section shows the important steps and associated tasks that can be
 
 ## What's Next {#what-is-next}
 
-Once you've fully understood how to assess if your AEM installation is ready to be moved to the cloud, as we as learn how to use the tools needed to make it ready, it's time to move on to the [go-live phase](/help/journey-migration/go-live.md).
+After you have fully understood how to assess if your AEM installation is ready to be moved to the cloud, as we as learn how to use the tools needed to make it ready, it's time to move on to the [go-live phase](/help/journey-migration/go-live.md).

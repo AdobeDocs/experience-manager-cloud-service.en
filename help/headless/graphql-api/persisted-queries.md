@@ -1,10 +1,11 @@
 ---
 title: Persisted GraphQL queries
-description: Learn how to to persist GraphQL queries in Adobe Experience Manager as a Cloud Service to optimize performance. Persisted queries can be requested by client applications using HTTP GET method and the response can be cached at the dispatcher and CDN layers, ultimately improving the performance of the client applications.
-feature: Content Fragments,GraphQL API
+description: Learn how to persist GraphQL queries in Adobe Experience Manager as a Cloud Service to optimize performance. Persisted queries can be requested by client applications using HTTP GET method and the response can be cached at the dispatcher and CDN layers, ultimately improving the performance of the client applications.
+feature: Headless, Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
+role: Admin, Developer
 ---
-# Persisted GraphQL queries {#persisted-queries-caching}
+# Persisted GraphQL queries {#persisted-graphql-queries}
 
 Persisted queries are GraphQL queries that are created and stored on the Adobe Experience Manager (AEM) as a Cloud Service server. They can be requested with a GET request by client applications. The response of a GET request can be cached at the dispatcher and CDN layers, ultimately improving the performance of the requesting client application. This differs from standard GraphQL queries, which are executed using POST requests where the response cannot easily be cached.
 
@@ -26,15 +27,15 @@ Persisted queries must always use the endpoint related to the [appropriate Sites
 
 >[!NOTE]
 >
->See [Enable Content Fragment Functionality in Configuration Browser](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) for more details.
+>See [Enable Content Fragment Functionality in Configuration Browser](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) for more details.
 >
 >The **GraphQL Persisted Queries** need to be enabled, for the appropriate Sites configuration. 
 
 For example, if there is a particular query called `my-query`, which uses a model `my-model` from the Sites configuration `my-conf`:
 
-* You can create a query using the `my-conf` specific endpoint, and then the query will be saved as following: 
+* You can create a query using the `my-conf` specific endpoint, and then the query is saved as following: 
 `/conf/my-conf/settings/graphql/persistentQueries/my-query`
-* You can create the same query using `global` endpoint, but then the query will be saved as following:
+* You can create the same query using `global` endpoint, but then the query is saved as following:
 `/conf/global/settings/graphql/persistentQueries/my-query`
 
 >[!NOTE]
@@ -190,7 +191,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 
 Where `PERSISTENT_PATH` is a shortened path to where the Persisted query is saved.
 
-1. For example `wknd` is the configuration name and `plain-article-query` is the name of the Persisted query. To execute the query:
+1. For example, `wknd` is the configuration name and `plain-article-query` is the name of the Persisted query. To execute the query:
 
    ```shell
    $ curl -X GET \
@@ -222,7 +223,7 @@ The pattern looks like the following:
 <AEM_HOST>/graphql/execute.json/<PERSISTENT_QUERY_PATH>;variable1=value1;variable2=value2
 ```
 
-For example the following query contains a variable `activity` to filter a list based on an activity value:
+For example, the following query contains a variable `activity` to filter a list based on an activity value:
 
 ```graphql
 query getAdventuresByActivity($activity: String!) {
@@ -251,7 +252,37 @@ This query can be persisted under a path `wknd/adventures-by-activity`. To call 
 <AEM_HOST>/graphql/execute.json/wknd/adventures-by-activity%3Bactivity%3DCamping
 ```
 
-Note that `%3B` is the UTF-8 encoding for `;` and `%3D` is the encoding for `=`. The query variables and any special characters must be [encoded properly](#encoding-query-url) for the Persisted query to execute.
+The UTF-8 encoding `%3B` is for `;` and `%3D` is the encoding for `=`. The query variables and any special characters must be [encoded properly](#encoding-query-url) for the Persisted query to execute.
+
+### Using query variables - Best Practices {#query-variables-best-practices}
+
+When using variables in your queries there are a few best practices that should be followed:
+
+* Encoding
+  As a general approach, it is always recommended to encode all special characters; for example, `;`, `=`, `?`, `&`, among others.
+
+* Semicolon
+  Persisted queries that use multiple variables (that are separated by semicolons) need to have either:
+  * the semicolons encoded (`%3B`); encoding the URL will also achieve this
+  * or a trailing semicolon added to the end of the query
+
+* `CACHE_GRAPHQL_PERSISTED_QUERIES`
+  When `CACHE_GRAPHQL_PERSISTED_QUERIES` is enabled for the Dispatcher, then parameters that contain the `/` or `\` characters in their value, are encoded twice at the Dispatcher level. 
+  To avoid this situation:
+
+  * Enable `DispatcherNoCanonURL` on the Dispatcher.
+    This will instruct the Dispatcher to forward the original URL to AEM, so preventing duplicated encodings. 
+    However this setting currently only works on the `vhost` level, so if you already have Dispatcher configurations to rewrite URLs (e.g. when using shortened URLs) you might need a separate `vhost` for persisted query URLs.
+
+  * Send `/` or `\` characters unencoded.
+    When calling the persisted query URL ensure that all `/` or `\` characters remain unencoded in the value of persisted query variables.
+    >[!NOTE]
+    >
+    >This option is only recommended for when the `DispatcherNoCanonURL` solution cannot be implemented for any reason.
+
+* `CACHE_GRAPHQL_PERSISTED_QUERIES`
+
+   When `CACHE_GRAPHQL_PERSISTED_QUERIES` is enabled for the Dispatcher, then the `;` character cannot be used in the value of a variable.
 
 ## Caching your persisted queries {#caching-persisted-queries}
 
@@ -349,7 +380,11 @@ To manage the cache globally, you can [configure the OSGi settings](/help/implem
 
 >[!NOTE]
 >
->The OSGi configuration is only appropriate for publish instances. The configuration exists on author instances, but is ignored.
+>For cache control, the OSGi configuration is only appropriate for publish instances. The configuration exists on author instances, but is ignored.
+
+>[!NOTE]
+>
+>The **Persisted Query Service Configuration** is also used for [configuring the query response code](#configuring-query-response-code).
 
 The default OSGi configuration for publish instances:
 
@@ -366,9 +401,38 @@ The default OSGi configuration for publish instances:
 
 * and if not available, the OSGi configuration uses the [default values for publish instances](#publish-instances).
 
+## Configuring the query response code {#configuring-query-response-code}
+
+By default the `PersistedQueryServlet` sends a `200` response when it executes a query, regardless of the actual result.
+
+You can [configure the OSGi settings](/help/implementing/deploying/configuring-osgi.md) for the **Persisted Query Service Configuration** to control whether more detailed status codes are returned by the `/execute.json/persisted-query` endpoint, when there is an error in the persisted query.
+
+>[!NOTE]
+>
+>The **Persisted Query Service Configuration** is also used for [managing cache](#cache-osgi-configration).
+
+The field `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) can be defined as required:
+
+* `false` (default value):
+  It does not matter whether the persisted query is successful or not. The `Content-Type` header returned is `application/json`, and the `/execute.json/persisted-query` *always* returns the status code `200`.
+
+* `true`:
+  The returned `Content-Type` is `application/graphql-response+json`, and the endpoint will return the appropriate response code when there is any form of error upon running the persisted query: 
+
+  | Code | Description |
+  |--- |--- |
+  | 200 | Successful response |
+  | 400 | Indicates that there are missing headers, or an issue with the persisted query path. For example, configuration name not specified, suffix is not specified, and others.<br>See [Troubleshooting - GraphQL endpoint not configured](/help/headless/graphql-api/persisted-queries-troubleshoot.md#missing-path-query-url). |
+  | 404 | The requested resource cannot be found. For example, the Graphql endpoint is not available on the server.<br>See [Troubleshooting - Missing path in the GraphQL persisted query URL](/help/headless/graphql-api/persisted-queries-troubleshoot.md#graphql-endpoint-not-configured). |
+  | 500 | Internal server error. For example, validation errors, persistence error, and others. |
+
+  >[!NOTE]
+  >
+  >See also https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
+
 ## Encoding the query URL for use by an app {#encoding-query-url}
 
-For use by an application, any special characters used when constructing query variables (i.e semicolons (`;`), equal sign (`=`), slashes `/`) must be converted to use the corresponding UTF-8 encoding.
+For use by an application, any special characters used when constructing query variables (that is, semicolons (`;`), equal sign (`=`), slashes `/`) must be converted to use the corresponding UTF-8 encoding.
 
 For example:
 
@@ -407,12 +471,12 @@ Persisted queries can be built into [AEM Packages](/help/implementing/developing
 To create a Package:
 
 1. Navigate to **Tools** > **Deployment** > **Packages**.
-1. Create a new package by tapping **Create Package**. This will open a dialog to define the Package.
+1. Create a new package by tapping **Create Package**. This opens a dialog to define the Package.
 1. In the Package Definition Dialog, under **General** enter a **Name** like "wknd-persistent-queries".
 1. Enter a version number like "1.0".
-1. Under **Filters** add a new **Filter**. Use the Path Finder to select the `persistentQueries` folder beneath the configuration. For example for the `wknd` configuration the full path will be `/conf/wknd/settings/graphql/persistentQueries`.
-1. Tap **Save** to save the new Package definition and close the dialog.
-1. Tap the **Build** button in the newly created Package definition.
+1. Under **Filters** add a new **Filter**. Use the Path Finder to select the `persistentQueries` folder beneath the configuration. For example, for the `wknd` configuration, the full path is `/conf/wknd/settings/graphql/persistentQueries`.
+1. Select **Save** to save the new Package definition and close the dialog.
+1. Select the **Build** button in the created Package definition.
 
 After the package has been built you can: 
 

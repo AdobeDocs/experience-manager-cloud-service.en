@@ -1,13 +1,21 @@
 ---
-title: Prefill Adaptive Form fields
-seo-title: Prefill Adaptive Form fields
-description: Use existing data to prefill fields of an Adaptive Form.
-seo-description: With Adaptive Forms, you users can prefill basic information in a form by logging in with their social profiles. This article describes how you can accomplish this.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+title: How to prefill Adaptive Form fields?
+description: Use existing data to prefill fields of an Adaptive Form, Users can prefill basic information in a form by logging in with their social profiles.
 topic-tags: develop
+feature: Adaptive Forms, Foundation Components
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
+role: User, Developer
 ---
 # Prefill Adaptive Form fields{#prefill-adaptive-form-fields}
+
+>[!NOTE]
+>
+> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components.
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html)                  |
+| AEM as a Cloud Service     | This article         |
 
 ## Introduction {#introduction}
 
@@ -256,7 +264,7 @@ Generally, bound (form schema) and unbound fields are authored in the same Adapt
 
 >[!NOTE]
 >
-> As a rule of thumb, do not mix bound and unbound fields if they are intersected in data filled by the end user in unbound fields. If possible, you should modify the schema or the XFA form template and add an entry for unbound fields, so that it also becomes bound and its data is available like other fields in submitted data.
+> As a rule of thumb, do not mix bound and unbound fields if they are intersected in data filled by the user in unbound fields. If possible, you should modify the schema or the XFA form template and add an entry for unbound fields, so that it also becomes bound and its data is available like other fields in submitted data.
 
 ## Supported protocols for prefilling user data {#supported-protocols-for-prefilling-user-data}
 
@@ -299,7 +307,7 @@ https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service:
 
 ```
 
-- SERVICE_NAME refers to the name of the OSGI prefill service. Refer [Create and run a prefill service](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
+- SERVICE_NAME refers to the name of the OSGI prefill service. See [Create and run a prefill service](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
 - IDENTIFIER refers to any metadata required by the OSGI prefill service to fetch the prefill data. An identifier to the logged-in user is an example of metadata that could be used.
 
 >[!NOTE]

@@ -2,11 +2,48 @@
 title: Manage video assets
 description: Upload, preview, annotate, and publish video assets in [!DNL Adobe Experience Manager].
 contentOwner: AG
-feature: Asset Management,Publishing,Collaboration,Video
+feature: Asset Management, Publishing, Collaboration, Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
 ---
 # Manage video assets {#manage-video-assets}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime and Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets integration with Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI Extensibility</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Enable Dynamic Media Prime and Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media with OpenAPI capabilities</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets developer documentation</b></a>
+        </td>
+    </tr>
+</table>
 
 | Version | Article link |
 | -------- | ---------------------------- |
@@ -19,12 +56,34 @@ Learn how to manage and edit the video assets in [!DNL Adobe Experience Manager 
 
 ## Upload and preview video assets {#upload-and-preview-video-assets}
 
-[!DNL Adobe Experience Manager Assets] generates previews for video assets with the extension MP4. You can preview the renditions in the [!DNL Assets] user interface.
+You can upload and preview video assets of supported format to [!DNL Experience Manager Assets]. 
+<!-- It generates previews for video assets with the extension MP4. -->
 
-1. In the digital assets folder or subfolders, navigate to the location where you want to add digital assets.
-1. To upload the asset, click **[!UICONTROL Create]** from the toolbar and choose **[!UICONTROL Files]**. Alternatively, drag a file on the user interface. See [upload assets](manage-digital-assets.md#uploading-assets) for details.
-1. To preview a video in the card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
-1. To preview the video in the asset details page, select **[!UICONTROL Edit]** on the card. The video plays in the native video player of the browser. You can play, pause, control the volume, and zoom the video to full screen.
+### Upload video assets
+
+To upload a video asset, follow these steps:
+
+1. In the digital assets folder or subfolders, navigate to the location where you need to add the asset.
+1. Click **[!UICONTROL Create]** from the toolbar and choose **[!UICONTROL Files]**. <br>Alternatively, drag a file on the user interface. 
+Learn more about [uploading assets](manage-digital-assets.md#uploading-assets) in [!DNL Experience Manager Assets].
+
+<!-- 1. To preview a video in the card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
+1. To preview the video in the asset details page, select **[!UICONTROL Edit]** on the card. The video plays in the native video player of the browser. You can play, pause, control the volume, and zoom the video to full screen. -->
+
+### Preview video assets
+
+You can preview videos in supported renditions in the [!DNL Assets] user interface. To preview a video asset, follow these steps:
+
+1. Upload a video asset of a supported format to [!DNL Experience Manager Assets]. Learn more about the [supported video formats](file-format-support.md#video-formats). <br>Once uploaded, the video asset is processed, and a preview rendition is generated.
+1. Click the asset, and select ![details option](assets/do-not-localize/details_icon.svg) **[!UICONTROL Details]**  from the top toolbar. The video asset opens in the video viewer.
+1. Click the ![play option](assets/do-not-localize/play.png) icon on the video thumbnail. <br>You can play, pause, control the volume, and zoom the video to full screen.
+
+For existing video assets in [!DNL Experience Manager Assets], you need to **[!UICONTROL Reprocess]** the assets in [!DNL Experience Manager] to enable the video preview feature. Learn how to [reprocess digital assets](reprocessing.md) in [!DNL Experience Manager].
+
+### Limitations of video preview
+
+* MXF files do not show video previews even though the rendition is generated.
+* WebM files do not generate preview renditions as they are playable natively by web browsers.
 
 ## Publish video assets {#publish-video-assets}
 
@@ -68,7 +127,6 @@ Google periodically changes their user interface. As such, the steps to publish 
 **To configure Google Cloud settings:**
 
 1. Create a Google account.
-   [https://accounts.google.com/signup/v2?service=mail&flowName=GlifWebSignIn&flowEntry=SignUp](https://accounts.google.com/signup/v2?service=mail&flowName=GlifWebSignIn&flowEntry=SignUp)
 
    If you already have a Google account, you can skip to the next step.
 
@@ -170,7 +228,7 @@ Publishing videos to YouTube requires that you have one or more channels. If you
 
 ### Add tags for publishing {#adding-tags-for-publishing}
 
-To publish to your videos to YouTube, Experience Manager associates tags to one or more YouTube channels. To add tags for publishing, see [Administer Tags](/help/sites-cloud/authoring/features/tags.md).
+To publish to your videos to YouTube, Experience Manager associates tags to one or more YouTube channels. To add tags for publishing, see [Administer Tags](/help/sites-cloud/authoring/sites-console/tags.md).
 
 Or, if you intend to use the default tags in Experience Manager, you can skip this task and go to [Set up YouTube in Experience Manager](#setting-up-youtube-in-aem).
 
@@ -566,7 +624,7 @@ For YouTube publishing jobs, do the following:
 
 ## Transcode using Processing Profile {#transcode-video}
 
-[!DNL Experience Manager] as a [!DNL Cloud Service] lets you do basic transcoding of MP4 video files using Processing Profiles. The functionality allows you to not just upload but also preview and scale a MP4 video file.
+[!DNL Experience Manager] as a [!DNL Cloud Service] lets you do basic transcoding of MP4 video files using Processing Profiles. The functionality lets you not just upload but also preview and scale a MP4 video file.
 
 ![Create Processing Profile for video transcoding in [!DNL Experience Manager]](assets/video-processing-profile-for-mp4.png)
 
@@ -619,6 +677,7 @@ You can add annotations to video assets. While annotating videos, the player pau
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

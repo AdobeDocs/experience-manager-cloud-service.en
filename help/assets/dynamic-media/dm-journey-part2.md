@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
 content-type: reference
-feature: Image Profiles
+feature: Image Profiles,Best Practices
 role: User, Admin
 mini-toc-levels: 4
 hide: no
@@ -14,11 +14,13 @@ exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
 ---
 # Dynamic Media Journey: The Basics, part II  {#dm-journey-part2}
 
+{{see-also-dm}}
+
 Welcome to Dynamic Media Journey: The Basics, Part II where you can expect to learn the following:
 
-* Anatomy of a Dynamic Media URL and how Dynamic Media delivers content
-* Fundamentals of creating image presets to render assets
-* Image sets, spin sets, and mixed media sets
+* Anatomy of a Dynamic Media URL and how Dynamic Media delivers content.
+* Fundamentals of creating image presets to render assets.
+* Image sets, spin sets, and mixed media sets.
 
 See also [Dynamic Media Journey; The Basics, Part I](/help/assets/dynamic-media/dm-journey-part1.md).
 
@@ -77,7 +79,7 @@ Now imagine the Creative Director looks at the images and says,
 
 _"I really wanted this shot so that the large hand is pointing at the four, and the small hand is pointing at the 1 to make the watch dial easier to see."_
 
-The creative would have to reshoot all of these new static images again.
+The creative would have to reshoot all new static images again.
 
 But, with Dynamic Media, if you have different image presets, you can use those images wherever you need them. The image presets enforce standards.
 
@@ -115,9 +117,9 @@ _Creating an image preset by selecting options from the Advanced tab._
 
 You recall in [Anatomy of a Dynamic Media URL](#dm-journey-d) earlier, that you read about the Dynamic Media URL and how that is built. The **[!UICONTROL Image Modifier]** text box is where you can type any additional image processing parameters that you want. The parameters get included in the preset name of the URL when your images are delivered, using the preset. In the screenshot above, the parameter `bgc=451B15` was added. That is, a dark brown background color was added.
 
-You can think of an image preset as a recipe for your images. It's going to deliver any images that use the preset, consistently, every time; it's going to be the same. The parameter `&op_brightness=+10` was also added to increase the brightness slightly.  
+You can think of an image preset as a recipe for your images. It is going to deliver any images that use the preset, consistently, every time; it's going to be the same. The parameter `&op_brightness=+10` was also added to increase the brightness slightly.  
 
-When you are finished, you save the preset, and now it is available for all images that you have. In this case, we want to apply the _Medium_ image preset to an image of a bowl of liquid chocolate.
+When you are finished, you save the preset, and now it is available for all images that you have. In this case, you want to apply the _Medium_ image preset to an image of a bowl of liquid chocolate.
 
 ![Applying the image preset *Medium* to generate a rendition of an image](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _Applying the image preset Medium to generate a rendition of an image._
@@ -135,7 +137,7 @@ If you look again at the watch image below, you can see that there is a `Cart` i
 ![Static and dynamic image presets](/help/assets/dynamic-media/assets/dm-image-presets.png)
 _Static and Dynamic image presets. The watch image was rendered using the `PDP-page` image preset._
 
-But what if you have to change an image on your website? For example, suppose you have done some testing, and found that the image of 120 x 120 (the `Cart` image preset) is not being received as well as you thought. You must make the image larger by increasing the width to 175 pixels and increasing the height to 175 pixels. Traditionally, you would have to go into Adobe Photoshop and re-create all of those cart images. But with Dynamic Media, you simply edit the image preset by updating the Width and Height values to 175 and save your preset, as seen in the example below.
+But what if you have to change an image on your website? For example, suppose you have done some testing, and found that the image of 120 x 120 (the `Cart` image preset) is not being received as you thought. You must make the image larger by increasing the width to 175 pixels and increasing the height to 175 pixels. Traditionally, you would have to go into Adobe Photoshop and re-create all of those cart images. But with Dynamic Media, you simply edit the image preset by updating the Width and Height values to 175 and save your preset, as seen in the example below.
 
 ![Editing an image preset](/help/assets/dynamic-media/assets/dm-edit-image-preset.png)
 _Editing the Width and Height of the `Cart` image preset._
@@ -148,7 +150,7 @@ Some of the more popular uses of Dynamic Media, is the ability for you to create
 
 Image sets are typically made up of a series of image assets that are presented as a single entity. These kinds of sets give users an integrated viewing experience, where users can see different views of an item by clicking a thumbnail image. Image sets let you present alternative views of something and the viewer offers zooming tools for examining images closely. [View an image set called "Running" that uses the Flyout viewer](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running).
 
-Here inside Dynamic Media you can see several images of running shoes. It's a product line series that sales and marketing want customers to view as a single presentation; an Image set.
+Here inside Dynamic Media you can see several images of running shoes. It is a product line series that sales and marketing want customers to view as a single presentation; an Image set.
 
 ![Creating an image set](/help/assets/dynamic-media/assets/dm-create-image-set.png)
 _The start of creating an Image set._
@@ -187,13 +189,13 @@ The single URL lets you use the image set and viewer where you need them on your
 
 The Flyout viewer is a default, out-of-box viewer whose properties you can edit. Or, just like creating an image preset, you can create your own, custom viewer.
 
-Now, supposed your sales and marketing team doesn't like the Flyout viewer. They like the zoom feature but they want customers to see the zoom effect directly over the shoes. In such case, you simply apply the InlineZoom viewer to the image set and copy and paste its URL in your browser to see how it behaves. [Try it](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&config=jpearldemo/InlineZoom){target="_blank"}.
+Now, supposed your sales and marketing team does not like the Flyout viewer. They like the zoom feature but they want customers to see the zoom effect directly over the shoes. In such case, you simply apply the InlineZoom viewer to the image set and copy and paste its URL in your browser to see how it behaves. [Try it](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&config=jpearldemo/InlineZoom){target="_blank"}.
 
 When you move the mouse pointer over the shoe, you zoom in to that image, and you can see more detail as you move the pointer around. And the reason for that is simply the size of the image that was initially uploaded into Dynamic Media.
 
 As you consider living as a consumer, or as you work in your day-to-day role, and as you go to different websites, you see things like this. Think about how that's being done, and how you can use the power of Dynamic Media in your own work and on your company's website. 
 
-You just read a little bit about image sets and viewers. Let's look at a couple of other viewers and try them out on single assets. To reset the viewer, click the **[!UICONTROL Refresh]** button in the lower-left corner.
+You just read about image sets and viewers. Let's look at a couple of other viewers and try them out on single assets. To reset the viewer, click the **[!UICONTROL Refresh]** button in the lower-left corner.
 
 <!-- LEAVE THIS HIDDEN PATH IN THE DOCUMENTATION FOR DEMO PURPOSES [Flyout viewer with image set](http://www.partycity.com/girls-little-old-lady-costume-P750948.html) -->
 
@@ -202,8 +204,9 @@ You just read a little bit about image sets and viewers. Let's look at a couple 
 
 ## Optional - Learn more
 
-If you'd like to learn more about what you just read, use the materials below to explore concepts in greater detail. Otherwise, your Dynamic Media Journey is complete!
+If to learn more about what you just read, use the materials below to explore concepts in greater detail. Otherwise, your Dynamic Media Journey is complete!
 
+<!--
 _Dynamic Media Help topics_
 
 * [How to create image presets](/help/assets/dynamic-media/image-presets.md)
@@ -212,7 +215,7 @@ _Dynamic Media Help topics_
 * [How to preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
 * [How to create Image sets](/help/assets/dynamic-media/image-sets.md)
 * [How to create Spin sets](/help/assets/dynamic-media/spin-sets.md)
-* [How to create Mixed Media sets](/help/assets/dynamic-media/mixed-media-sets.md)
+* [How to create Mixed Media sets](/help/assets/dynamic-media/mixed-media-sets.md) -->
 
 _Dynamic Media tutorials_
 

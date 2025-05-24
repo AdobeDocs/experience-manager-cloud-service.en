@@ -2,6 +2,8 @@
 title: Getting Started Developing AEM Sites - WKND Tutorial
 description: New to developing AEM? Need a refresher on best practices? This is the place to start! The goal for this multi-part tutorial is to teach a developer who is new to AEM how to implement a website in AEM using the latest standards and technologies.
 exl-id: 3110e492-95bd-4571-a347-198aa8d9bbb3
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Getting Started Developing AEM Sites - WKND Tutorial{#getting-started-developing-aem-sites-wknd-tutorial}
 
@@ -19,7 +21,7 @@ The goal for this multi-part tutorial is to teach a developer who is new to AEM 
 
 ## Core Concepts {#core-concepts}
 
-The tutorial implementation leverages many powerful features of AEM. The site will be implemented using:
+The tutorial implementation uses many powerful features of AEM. The site is implemented using:
 
 * [Maven AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 * [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)

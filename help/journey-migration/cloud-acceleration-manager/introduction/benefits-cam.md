@@ -2,6 +2,8 @@
 title: Benefits of using Cloud Acceleration Manager
 description: This page highlights the key benefits of using Cloud Acceleration Manager.
 exl-id: d7a6c4f6-0f50-4f44-8a62-4a5769c76bd5
+feature: Migration
+role: Admin
 ---
 # Benefits of using Cloud Acceleration Manager {#benefits-cam}
 
@@ -33,4 +35,4 @@ The key benefits of using Cloud Acceleration Manager are:
 
 ## What’s Next {#whats-next}
 
-Once you have learnt what is Cloud Acceleration Manager, you are now ready to use and [Get Started with Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en).
+Once you have learnt what is Cloud Acceleration Manager, you are now ready to use and [Get Started with Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html).

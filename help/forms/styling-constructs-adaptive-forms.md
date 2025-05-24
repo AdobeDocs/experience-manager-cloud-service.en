@@ -1,16 +1,10 @@
 ---
-title: Styling constructs for Adaptive Forms
-seo-title: Styling constructs for Adaptive Forms
-description: Use LESS framework to customize appearance of Adaptive Forms.
-seo-description: Use LESS framework to customize appearance of Adaptive Forms.
-uuid: d2e45ad9-7322-43ce-a1dd-ad97e2eea742
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: develop
-discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
-docset: aem65
-
+title: How to customize appearance of adaptive forms?
+description: Use LESS framework for Adaptive Forms to customize appearance of Adaptive Forms.
+feature: Adaptive Forms, Foundation Components
+role: User
+exl-id: efe59f3c-ca69-4bb5-a3ab-e7d8ea3c768e
 ---
-
 # Styling constructs for Adaptive Forms{#styling-constructs-for-adaptive-forms}
 
 ## Prerequisites {#prerequisites}
@@ -19,7 +13,7 @@ Knowledge of CSS and the LESS framework.
 
 ## What can be customized {#what-can-be-customized}
 
-The article lists publicly available css classes of Adaptive Forms. You can leverage these classes to style various components of an Adaptive Form. The styling of authoring components, such as dialogs and status bars that display warnings are beyond the scope of this article. Use these styling constructs to create styles (using CSS or Less) only when you are unable to style components using [theme editor](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
+The article lists publicly available css classes of Adaptive Forms. You can use these classes to style various components of an Adaptive Form. The styling of authoring components, such as dialogs and status bars that display warnings are beyond the scope of this article. Use these styling constructs to create styles (using CSS or Less) only when you are unable to style components using [theme editor](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
 
 ## Customizing styles in Adaptive Forms {#customizing-styles-in-adaptive-forms}
 
@@ -50,7 +44,7 @@ Currently, LESS variables are defined only for these properties of the various e
 
 ## Changing component style {#changing-component-style}
 
-You can make changes to the appearance, layout, positioning, and visibility of elements. To achieve this task, create or update your custom .css files to include the styling constructs listed in this article.
+You can change the appearance, layout, positioning, and visibility of elements. To achieve this task, create or update your custom .css files to include the styling constructs listed in this article.
 
 To apply a style to an Adaptive Form, open the Adaptive Form in for editing, open properties of Adaptive Form conatiner, specify the path of custom CSS File in the basic tab. Defaut styling constructs of the Adaptive Form and overridden with the constructs listed in the custom .css file.
 
@@ -197,7 +191,7 @@ Depending on their type, widgets also include classes. Commonly, widgets include
   </tr>
   <tr>
    <td><p><code>widgets-bg-color</code></p> </td>
-   <td>Background color for the widgets (Doesn't work for check box and radio button)</td>
+   <td>Background color for the widgets (does not work for check box and radio button)</td>
   </tr>
   <tr>
    <td><p><code>widgets-border-color</code></p> </td>
@@ -265,7 +259,7 @@ Depending on their type, widgets also include classes. Commonly, widgets include
   </tr>
   <tr>
    <td><p><code>widget-height</code></p> </td>
-   <td>Height of the widget (Doesn't work for checkbox and radio button)</td>
+   <td>Height of the widget (Does not work for checkbox and radio button)</td>
   </tr>
   <tr>
    <td><p><code>checkbutton-height</code></p> </td>
@@ -273,7 +267,7 @@ Depending on their type, widgets also include classes. Commonly, widgets include
   </tr>
   <tr>
    <td><p><code>listboxwidget-height</code></p> </td>
-   <td><p>Maximum height for a multi-select dropdown</p> </td>
+   <td><p>Maximum height for a multi-select drop-down list</p> </td>
   </tr>
  </tbody>
 </table>
@@ -683,7 +677,7 @@ Tab navigator on top:
 
 `}`
 
-Additionally, there are classes to style tab navigators (both left and top) based on whether they have nested/child/sub navigators.
+Also, there are classes to style tab navigators (both left and top) based on whether they have nested/child/sub navigators.
 
 <table>
  <tbody>
@@ -697,7 +691,7 @@ Additionally, there are classes to style tab navigators (both left and top) base
   </tr>
   <tr>
    <td><p><code>nested_false</code></p> </td>
-   <td><p>Tab navigators (left and top) that don't have nested/child/sub navigators</p> </td>
+   <td><p>Tab navigators (left and top) that do not have nested/child/sub navigators</p> </td>
   </tr>
  </tbody>
 </table>
@@ -936,9 +930,9 @@ A Panel includes an optional toolbar and its content.
  </tbody>
 </table>
 
-The panel node is divided into navigators and content. There `` `` is no separate styling component for the content. The variables described are applied on navigator as well as content.
+The panel node is divided into navigators and content. There `` `` is no separate styling component for the content. The variables described are applied on navigator and content.
 
-The topmost panel (RootPanel) doesn't have this class.
+The topmost panel (RootPanel) does not have this class.
 
 ## Mobile styling {#mobile-styling}
 
@@ -1124,4 +1118,3 @@ The **Simple enrollment** theme at /etc/clientlibs/fd/af/guidetheme/simpleEnroll
   </tr>
  </tbody>
 </table>
-

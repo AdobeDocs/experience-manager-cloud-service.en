@@ -1,7 +1,8 @@
 ---
 title: HTTP2 Delivery of Content FAQ
-description: Learn about HTTP2 content delivery.
+description: Learn about HTTP2 content delivery and how it improves communication between browsers and servers for faster information transfer.
 contentOwner: Rick Brough
+feature: Dynamic Media,Configuration,FAQ
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
 ---
@@ -67,7 +68,7 @@ To use HTTP/2, you must meet the following requirements:
 
      1. Customer Support adds you to the HTTP/2 customer waitlist based on the order in which requests were submitted.
      1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate the transition and set a target date.
-     1. You will be notified after completion and can verify a successful transition over to HTTP2.
+     1. You are notified after completion and can verify a successful transition over to HTTP2.
 
 ## When can I expect to be transitioned over to HTTP/2? {#when-can-i-expect-to-be-transitioned-over-to-http}
 

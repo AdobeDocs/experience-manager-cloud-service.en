@@ -2,12 +2,17 @@
 title: Launches
 description: Launches enable you to efficiently develop content for a future release. They allow you to make changes ready for future publication, while maintaining your current pages
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
+solution: Experience Manager Sites
+feature: Authoring, Launches
+role: User
 ---
 # Launches {#launches}
 
 Launches enable you to efficiently develop content for a future release.
 
-A launch is created to allow you to make changes ready for future publication (while maintaining your current pages). After editing and updating your launch pages you promote them back to the source, then activate the source pages (top-level). Promoting duplicates the launch content back to the source pages and can be done either manually or automatically (dependent on fields set when creating and editing the launch).
+A *Launch* is created to allow you to make changes in preparation for future publication, at the same time as maintaining your current pages. This means that you are effectively editing two versions at the same time: pages that are currently published, and a version of those pages, to be published at a time in the future. Once that time arrives you can replace the original pages and publish the new version.  
+
+You create a *Launch*, then after editing and updating your *Launch* pages you *Promote* them back to the *Source*. You can then activate these *Source* pages (top-level). Promoting duplicates the launch content back to the source pages and can be done either manually or automatically (dependent on fields set when creating and editing the launch).
 
 For example, the seasonal product pages of your online store are updated quarterly so that the featured products align with the current season. To prepare for the next quarterly update, you can create a launch of the appropriate web pages. Throughout the quarter, the following changes are accumulated in the launch copy:
 
@@ -23,7 +28,7 @@ When the next quarter arrives, you promote the launch pages so that you can publ
 
 Launches can also be:
 
-* Created for multiple root branches. While you could create the launch for the entire site (and do the changes there) this can be impractical as the whole site needs to be copied. When hundreds or even thousands of pages are involved, the system requirements and performance are impacted by both the copy action and later the comparisons required for the promotion tasks.
+* Created for multiple root branches. While you could create the launch for the entire site (and do the changes there) this can be impractical as the whole site must be copied. When hundreds or even thousands of pages are involved, the system requirements and performance are impacted by both the copy action and later the comparisons required for the promotion tasks.
 * Nested (a launch within a launch) to give you the ability to create a launch from an existing launch so that authors can take advantage of changes already made, rather than having to make the same changes multiple times for each launch.
 
 This section describes how to create, edit and promote (and if necessary [delete](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) launch pages from within the Sites console or [the Launches console](#the-launches-console):
@@ -58,10 +63,10 @@ Launches allow you to:
   * Automatically - this involves the following:
     * The **Launch**(**Live**) **date** field: this can be set when creating or editing a launch.  
     * The **Production Ready** flag: this can only be set when editing a launch.
-    * If the **Production Ready** flag is set, the launch will be automatically promoted to the production pages on the specified **Launch**(**Live**) **date**. After the promotion, the production pages are automatically published.  
+    * If the **Production Ready** flag is set, the launch is automatically promoted to the production pages on the specified **Launch**(**Live**) **date**. After the promotion, the production pages are automatically published.  
           If no date has been set, the flag will have no effect.
 * Update your source and launch pages in parallel:
-  * Changes to the source pages are automatically implemented in the launch copy (if set up as with inheritance; i.e. as a live copy).  
+  * Changes to the source pages are automatically implemented in the launch copy (if set up as with inheritance; that is, as a live copy).  
   * Changes to your launch copy can be made without disrupting these automatic updates or the source pages.
 
   ![Actions in parallel](/help/sites-cloud/authoring/assets/launches-parallel.png)
@@ -80,25 +85,29 @@ Launches allow you to:
 >
 >Creating and editing launches requires access rights to `/content/launches` - as with the default group `content-authors`.
 >
->Please contact your system administrator if you experience any problems.
+>Contact your system administrator if you experience any problems.
 
 ## Launches in References (Sites Console) {#launches-in-references-sites-console}
 
 1. In the **Sites** console, navigate to the source of the launch(es).
 1. Open the **References** rail and select the source page.
-1. Select **Launches**, the existing launch(es) will be listed, together with access to the **Launches Console**:
+1. Select **Launches**, the existing launches are listed, together with access to the **Launches Console**:
 
    ![References of launches in sites console](/help/sites-cloud/authoring/assets/launches-references.png)
 
-1. Tap/click on the appropriate launch, the list of possible actions will be displayed:
+1. Select the appropriate launch, the list of possible actions are displayed:
 
    ![Actions to take on launches in sites console](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 
 ## The Launches Console {#the-launches-console}
 
-The Launches console provides an overview of your launches and allows you to take actions on those listed. The console can be accessed by:
+The Launches console provides an overview of your launches and lets you act on those listed. 
 
-* The **Tools** Console: **Tools**, **Sites**, **Launches**.
+![Launch Console - Manage Content](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
+
+The console can be accessed by:
+
+* The **Tools** Console: **Tools**, **General**, **Launches**.
 
 * **Launches Console** at the bottom of the **Launches** section of the **References** rail when navigating source content in the Sites console.
 
@@ -107,6 +116,3 @@ The Launches console provides an overview of your launches and allows you to tak
 * The **Launches** button at the top right, when navigating launch content in the Sites console:
 
   ![Launches option in Sites console](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
-
-* Or directly; for example, with:
-   `https://<host>:<port>/libs/launches/content/launches.html`

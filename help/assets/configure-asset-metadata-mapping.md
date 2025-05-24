@@ -2,8 +2,47 @@
 title: Configure asset metadata mapping between Workfront and Experience Manager Assets
 description: Map the asset metadata fields between Adobe Workfront and Experience Manager as a Cloud Service applications. As a result of mapping metadata fields, when you send an asset from Workfront to Experience Manager Assets, you can view the mapped asset metadata in Experience Manager Assets.
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
+feature: Metadata, Workfront Integrations and Apps
+role: User, Admin
 ---
 # Configure asset metadata mapping between Adobe Workfront and Experience Manager Assets {#asset-metadata-mapping-workfront-aem-assets}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime and Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets integration with Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI Extensibility</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Enable Dynamic Media Prime and Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media with OpenAPI capabilities</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets developer documentation</b></a>
+        </td>
+    </tr>
+</table>
 
 You can map the asset metadata fields between Adobe Workfront and Experience Manager as a Cloud Service applications. As a result of mapping metadata fields, when you send an asset from Workfront to Experience Manager Assets, you can view the mapped asset metadata in Experience Manager Assets.
 
@@ -35,7 +74,7 @@ To set metadata mapping for the Project Name, Document Name, and Document Descri
 
 1. Select the Experience Manager Assets integration and click **[!UICONTROL Edit]**.
 
-1. Click **[!UICONTROL Metadata]**. In the **[!UICONTROL Assets]** tab, map the [!UICONTROL Project] > [!UICONTROL Name] Workfront field to the `wm:projectName` Experience Manager Assets field. If you do not find the exact match, Adobe recommends to look for the best match to map the Workfront and Experience Manager Assets field. You can avoid mapping fields of different data types. For example, mapping a date Workfront field to a description Assets field.
+1. Click **[!UICONTROL Metadata]**. In the **[!UICONTROL Assets]** tab, map the [!UICONTROL Project] > [!UICONTROL Name] Workfront field to the `wm:projectName` Experience Manager Assets field. If you do not find the exact match, Adobe recommends that you look for the best match to map the Workfront and Experience Manager Assets field. You can avoid mapping fields of different data types. For example, mapping a date Workfront field to a description Assets field.
 1. Map the [!UICONTROL Document] > [!UICONTROL Name] Workfront field to the `wm:documentName` Experience Manager Assets field.
 
    ![Mapping in Workfront](assets/workfront-metadata-mapping.png)
@@ -50,7 +89,7 @@ To send the image from Workfront to Experience Manager Assets:
 
 1. Click the Main Menu icon ![Show Menu](assets/show-menu.svg) available in the upper-right corner of the Adobe Workfront application, then click **[!UICONTROL Projects]**.
 
-1. Click **[!UICONTROL New Project]** to create a new project.
+1. Click **[!UICONTROL New Project]** to create a project.
 
 1. Click **[!UICONTROL Documents]** option available in the left pane, drag and then select the image that you need to send to Experience Manager Assets.
 
@@ -76,7 +115,7 @@ To configure metadata mapping using a new metadata form in Experience Manager As
 
 1. Select the schema form and click **[!UICONTROL Edit]**.
 
-1. (Optional) On the Metadata Schema Form Editor, click `+` to create a new tab for the Workfront fields.
+1. (Optional) On the Metadata Schema Form Editor, click `+` to create a tab for the Workfront fields.
 
 1. Click the **[!UICONTROL Build Form]** tab and drag the **[!UICONTROL Single Line Text]** component to the form. Click the component in the form. In the **[!UICONTROL Build Form]** tab:
 
@@ -117,7 +156,7 @@ To apply metadata settings to the image folder:
 
 1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
 
-1. Select the metadata schema from the available list and click **[!UICONTROL Apply to Folder(s)]**.
+1. Select the metadata schema from the available list and click **[!UICONTROL Apply to Folders]**.
 
 1. Select the destination folder to which [the image is sent from the Adobe Workfront application](#send-image-workfront-assets) and click **[!UICONTROL Apply]**.
 
@@ -137,3 +176,4 @@ You can navigate to the image in Experience Manager Assets and view the metadata
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

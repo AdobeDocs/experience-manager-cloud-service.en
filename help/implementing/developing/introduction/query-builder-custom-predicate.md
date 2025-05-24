@@ -2,6 +2,8 @@
 title: Implementing a Custom Predicate Evaluator for the Query Builder
 description: The Query Builder in AEM offers an easy, customizable way to query the content repository
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Implementing a Custom Predicate Evaluator for the Query Builder {#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
@@ -93,13 +95,13 @@ Grouping replication metadata predicates with a custom predicate evaluator helps
 
 >[!TIP]
 >
->The set up of new AEM projects including using maven is explained in detail by [the WKND tutorial.](develop-wknd-tutorial.md)
+>The set up of new AEM projects including using maven is explained in detail by [the WKND tutorial](develop-wknd-tutorial.md).
 
-First you need to update the Maven dependencies of your project. The `PredicateEvaluator` is part of the `cq-search` artifact so it needs to be added to your Maven pom file.
+First you need to update the Maven dependencies of your project. The `PredicateEvaluator` is part of the `cq-search` artifact so it must be added to your Maven pom file.
 
 >[!NOTE]
 >
->The scope of the `cq-search` dependency is set to `provided` because `cq-search` will be provided by the `OSGi` container.
+>The scope of the `cq-search` dependency is set to `provided` because `cq-search` is provided by the `OSGi` container.
 
 The following snippet shows the differences in the `pom.xml` file, in [unified diff format](https://en.wikipedia.org/wiki/Diff#Unified_format)
 

@@ -2,12 +2,16 @@
 title: SPA Introduction and Walkthrough
 description: This article introduces the concepts of a SPA and walks through using a basic SPA application for authoring, showing how it relates to the underlying AEM SPA Editor.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # SPA Introduction and Walkthrough {#spa-introduction}
 
 Single page applications (SPAs) can offer compelling experiences for website users. Developers want to be able to build sites using SPA frameworks and authors want to seamlessly edit content within AEM for a site built using such frameworks.
 
 The SPA Editor offers a comprehensive solution for supporting SPAs within AEM. This article walks through using a basic SPA application for authoring and shows how it relates to the underlying AEM SPA Editor.
+
+{{ue-over-spa}}
 
 ## Introduction {#introduction}
 
@@ -32,15 +36,15 @@ The walkthrough is based on standard AEM functionality and the sample WKND SPA P
 
 >[!CAUTION]
 >
->This document uses the [WKND SPA Project app](https://github.com/adobe/aem-guides-wknd-spa) for demonstration purposes only. It should not be used for any project work.
+>This document uses the [WKND SPA Project app](https://github.com/adobe/aem-guides-wknd-spa) for demonstration purposes only. Do not use it for any project work.
 
 >[!TIP]
 >
->Any AEM project should leverage the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), which supports SPA projects using React or Angular and leverages the SPA SDK.
+>Any AEM project should use the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), which supports SPA projects using React or Angular and uses the SPA SDK.
 
 ### What is a SPA? {#what-is-a-spa}
 
-A single-page application (SPA) differs from a conventional page in that it is rendered client-side and is primarily Javascript-driven, relying on Ajax calls to load data and dynamically update the page. Most or all content is retrieved once in a single page load with additional resources loaded asynchronously as needed based on user interaction with the page.
+A single-page application (SPA) differs from a conventional page in that it is rendered client-side and is primarily JavaScript-driven, relying on Ajax calls to load data and dynamically update the page. Most or all content is retrieved once in a single page load with additional resources loaded asynchronously as needed based on user interaction with the page.
 
 This reduces the need for page refreshes and presents an experience to the user that is seamless, fast, and feels more like a native app experience.
 
@@ -65,11 +69,11 @@ By being faster, fluid, and more like a native application, a SPA becomes a very
 #### Developers {#developers}
 
 * Developers want a clean separation of concerns between content and presentation.
-* Clean separation makes the system more extensible as well as allow for independent front-end development.
+* Clean separation makes the system more extensible and allows for independent front-end development.
 
 ### How Does a SPA Work? {#how-does-a-spa-work}
 
-The primary idea behind a SPA is that calls to and dependency on a server are reduced in order to minimize delays caused by server latency so that the SPA approaches the responsiveness of a native application.
+The primary idea behind a SPA is that calls to, and dependency on, a server are reduced to minimize delays caused by server latency so that the SPA approaches the responsiveness of a native application.
 
 In a traditional, sequential webpage, only the data needed for the immediate page is loaded. This means that when the visitor moves to another page, the server is called for the additional resources. Additional calls might be necessary as the visitor interacts with elements on the page. These multiple calls can give a sense of lag or delay as the page has to catch up with the visitor's requests.
 
@@ -90,7 +94,7 @@ By rendering on the client side, page elements react faster, and interactions wi
 
 ## Content Editing Experience with SPA {#content-editing-experience-with-spa}
 
-When a SPA is built to leverage the AEM SPA Editor, the content author notices no difference when editing and creating content. Common AEM functionality is available and no changes to the author's workflow is required.
+When a SPA is built to use the AEM SPA Editor, the content author notices no difference when editing and creating content. Common AEM functionality is available and no changes to the author's workflow is required.
 
 1. Edit the WKND SPA Project app in AEM.
 
@@ -124,7 +128,7 @@ Additional authoring tools such as dragging-and-dropping additional components o
 
 ## SPA Apps and the AEM SPA Editor {#spa-apps-and-the-aem-spa-editor}
 
-Experiencing how a SPA behaves for the end user and then inspecting the SPA page helps to better understand how a SAP app works with the SPA Editor in AEM.
+Experiencing how a SPA behaves for the user and then inspecting the SPA page helps to better understand how a SAP app works with the SPA Editor in AEM.
 
 ### Using an SPA Application {#using-an-spa-application}
 
@@ -161,7 +165,7 @@ The next section, [Loading a SPA Application](#loading-a-spa-application), digs 
    ![WKND SPA Project preview](assets/wknd-preview.png)
 
 1. Use the built-in tool of your browser to view the source of the page.
-1. Note that the content of the source is limited.
+1. The content of the source is limited.
    * The page does not have any content within its body. It is primarily made up of stylesheets and a call to various scripts such as `clientlib-react.min.js`.
    * These scripts are the primary drivers of this application and are responsible for rendering all content.
 
@@ -171,7 +175,7 @@ The next section, [Loading a SPA Application](#loading-a-spa-application), digs 
 
 1. Switch to the Network tab in the Inspector and reload the page.
 
-   Ignoring image requests, note that the primary resources loaded for the page are the page itself, CSS, the React Javascript, its dependencies, as well as JSON data for the page.
+   Ignoring image requests, note that the primary resources loaded for the page are the page itself, CSS, the React JavaScript, its dependencies, and JSON data for the page.
 
    ![WKND SPA Project network activity](assets/wknd-network.png)
 
@@ -181,9 +185,9 @@ The next section, [Loading a SPA Application](#loading-a-spa-application), digs 
 
    ![JSON of the WKND SPA Project home page](assets/wknd-json.png)
 
-   The AEM SPA Editor leverages [AEM Content Services](/help/sites-cloud/administering/content-fragments/content-fragments.md) to deliver the entire content of the page as a JSON model.
+   The AEM SPA Editor uses [AEM Content Services](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-and-content-services) to deliver the entire content of the page as a JSON model.
 
-   By implementing specific interfaces, Sling Models provide the information necessary to the SPA. The delivery of the JSON data is delegated downward to each component (from page, to paragraph, to component, etc.).
+   By implementing specific interfaces, Sling Models provide the information necessary to the SPA. The delivery of the JSON data is delegated downward to each component (from page, to paragraph, to component, and so on).
 
    Each component chooses what it exposes and how it is rendered (server-side with HTL or client-side with React or Angular). This article focuses on client-side rendering with React.
 
@@ -201,9 +205,9 @@ The next section, [Loading a SPA Application](#loading-a-spa-application), digs 
 
 ### Interaction with the SPA Editor {#interaction-with-the-spa-editor}
 
-Using the sample WKND SPA Project application, it is clear how the app behaves and is loaded when published, leveraging content services for JSON content delivery as well as asynchronous loading of resources.
+Using the sample WKND SPA Project application, it is clear how the app behaves and is loaded when published, using content services for JSON content delivery and asynchronous loading of resources.
 
-Additionally, for the content author, content creation using a SPA editor is seamless within AEM.
+Also, for the content author, content creation using a SPA editor is seamless within AEM.
 
 In the following section we will explore the contract that allows the SPA Editor to relate components within the SPA to AEM components and achieve this seamless editing experience.
 
@@ -213,7 +217,7 @@ In the following section we will explore the contract that allows the SPA Editor
 
 1. Using your browser's built-in developer tools, inspect the content of the page. Using the selection tool, select an editable component on the page and view the element detail.
 
-   Note that the component has a new data attribute `data-cq-data-path`.
+   The component has a new data attribute `data-cq-data-path`.
 
    ![Inspecting WKND SPA Project elements](assets/wknd-inspector.png)
 
@@ -223,7 +227,7 @@ In the following section we will explore the contract that allows the SPA Editor
 
    This path allows the retrieval and association of the edit context configuration object of each component.
 
-   This is the only markup attribute required for the editor to recognize this as an editable component within the SPA. Based on this attribute, the SPA Editor will determine which editable configuration is associated with the component, so that the correct frame, toolbar, etc. is loaded.
+   This is the only markup attribute required for the editor to recognize this as an editable component within the SPA. Based on this attribute, the SPA Editor will determine which editable configuration is associated with the component, so that the correct frame, toolbar, and so on is loaded.
 
    Some specific class names are also added for marking placeholders and for asset drag-and-drop functionality.
 
@@ -235,7 +239,7 @@ In the following section we will explore the contract that allows the SPA Editor
 
 ## Headful and Headless in AEM {#headful-headless}
 
-SPAs can be enabled with flexible levels of integration within AEM including SPAs developed and maintained outside of AEM. Additionally, SPAs can be leveraged within AEM while also using AEM to deliver content to additional endpoints headlessly.
+SPAs can be enabled with flexible levels of integration within AEM including SPAs developed and maintained outside of AEM. Also, SPAs can be used within AEM while also using AEM to deliver content to additional endpoints headlessly.
 
 >[!TIP]
 >
@@ -248,4 +252,4 @@ Now that you understand the SPA editing experience in AEM and how a SPA relates 
 * [Getting Started with SPAs in AEM using React](getting-started-react.md) shows how a basic SPA is built to work with the SPA Editor in AEM using React
 * [Getting Started with SPAs in AEM using Angular](getting-started-angular.md) shows how a basic SPA is built to work with the SPA Editor in AEM using Angular
 * [SPA Editor Overview](editor-overview.md) goes into more depth into the communication model between AEM and the SPA.
-* [Developing SPAs for AEM](developing.md) describes how to engage front-end developers to develop a SPA for AEM as well as how SPAs interact with AEM's architecture.
+* [Developing SPAs for AEM](developing.md) describes how to engage front-end developers to develop a SPA for AEM and how SPAs interact with AEM's architecture.

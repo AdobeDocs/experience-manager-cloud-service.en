@@ -1,19 +1,56 @@
 ---
 title: Configure AEM Assets as a [!DNL Cloud Service] with Brand Portal
-description: Configure AEM Assets with Brand Portal.
-contentOwner: Vishabh Gupta
-feature: Brand Portal,Asset Distribution,Configuration
+description: Learn how to configure AEM Assets with Brand Portal. The configuration allows you to publish approved brand assets from an AEM instance to Brand Portal and distribute them to the Brand Portal users.
+contentOwner: AK
+feature: Brand Portal, Asset Distribution, Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
 ---
 # Configure Experience Manager Assets with Brand Portal {#configure-aem-assets-with-brand-portal}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime and Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets integration with Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI Extensibility</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Enable Dynamic Media Prime and Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media with OpenAPI capabilities</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets developer documentation</b></a>
+        </td>
+    </tr>
+</table>
 
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=en)                  |
 | AEM as a Cloud Service     | This article         |
 
-Configuring Adobe Experience Manager Assets Brand Portal allows you to publish approved brand assets from Adobe Experience Manager Assets as a [!DNL Cloud Service] instance to Brand Portal and distribute them to the Brand Portal users.
+Configuring Adobe Experience Manager Assets Brand Portal lets you publish approved brand assets from Adobe Experience Manager Assets as a [!DNL Cloud Service] instance to Brand Portal and distribute them to the Brand Portal users.
 
 ## Activate Brand Portal using Cloud Manager {#activate-brand-portal}
 
@@ -42,7 +79,7 @@ You can activate Brand Portal while creating the production environments for you
 
    Brand Portal is entitled to one of the available environments and is reflected under the **[!UICONTROL Environment Information]**.
 
-   Once you find the environment associated with Brand Portal, click on the **[!UICONTROL Activate Brand Portal]** button to begin the activation workflow.
+   Once you find the environment associated with Brand Portal, click the **[!UICONTROL Activate Brand Portal]** button to begin the activation workflow.
 
    ![Activate Brand Portal](assets/create-environment4.png)
 
@@ -55,7 +92,7 @@ You can activate Brand Portal while creating the production environments for you
 >
 >Brand Portal must be activated on the same IMS org as of the Experience Manager Assets as a [!DNL Cloud Service] instance.
 >
->If you have an existing Brand Portal cloud configuration ([manually configured using Adobe Developer Console](#manual-configuration)) for an IMS org (org1-existing) and your Experience Manager Assets as a [!DNL Cloud Service] instance is configured for another IMS org (org2-new), activating Brand Portal from the Cloud Manager resets the Brand Portal IMS org to `org2-new`. Although the manually configured cloud configuration on `org1-existing` will be visible in the Experience Manager Assets author instance but will no longer be in use after activating Brand Portal from the Cloud Manager. 
+>If you have an existing Brand Portal cloud configuration ([manually configured using Adobe Developer Console](#manual-configuration)) for an IMS org (org1-existing) and your Experience Manager Assets as a [!DNL Cloud Service] instance is configured for another IMS org (org2-new), activating Brand Portal from the Cloud Manager resets the Brand Portal IMS org to `org2-new`. Although the manually configured cloud configuration on `org1-existing` is visible in the Experience Manager Assets author instance but will no longer be in use after activating Brand Portal from the Cloud Manager. 
 >
 >If the existing Brand Portal cloud configuration and Experience Manager Assets as a [!DNL Cloud Service] instance are using the same IMS org (org1), you only have to activate Brand Portal from the Cloud Manager. 
 >
@@ -76,11 +113,12 @@ The default URL of your Brand Portal tenant is: `https://<tenant-id>.brand-porta
 
 Wherein, the Tenant id is the IMS org.
 
+
 Perform the following steps if you are not sure of the Brand Portal URL:
 
 1. Login to [Admin Console](https://adminconsole.adobe.com/) and navigate to **[!UICONTROL Products]**.
 1. From the left panel, select **[!UICONTROL Adobe Experience Manager Brand Portal – Brand Portal]**.
-1. Click on **[!UICONTROL Go to Brand Portal]** to directly open Brand Portal in the browser.
+1. Click **[!UICONTROL Go to Brand Portal]** to directly open Brand Portal in the browser.
 
    Or copy the Brand Portal tenant URL from the **[!UICONTROL Go to Brand Portal]** link and paste it in your browser to open the Brand Portal interface.
 
@@ -95,12 +133,11 @@ Perform the following steps to validate the connection between your Experience M
 
 1. From the **Tools** panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
-    ![](assets/test-bpconfig1.png)
+    ![Navigate to the distribution option](assets/test-bpconfig1.png)
 
    A Brand Portal distribution agent (**[!UICONTROL bpdistributionagent0]**) is created under **[!UICONTROL Publish to Brand Portal]**.
 
-   ![](assets/test-bpconfig2.png)
-
+   ![Create distribution agent](assets/test-bpconfig2.png)
 
 1. Click **[!UICONTROL Publish to Brand Portal]** to open the distribution agent. 
 
@@ -115,11 +152,11 @@ Perform the following steps to validate the connection between your Experience M
    >
    >It is recommended to review the failures and  clear the **error-queue** periodically.  
 
-   ![](assets/test-bpconfig3.png)
+   ![Processing queue for the distribution of assets](assets/test-bpconfig3.png)
 
-1. To verify the connection between Experience Manager Assets as a [!DNL Cloud Service] and Brand Portal, click on the **[!UICONTROL Test Connection]** icon.
+1. To verify the connection between Experience Manager Assets as a [!DNL Cloud Service] and Brand Portal, click the **[!UICONTROL Test Connection]** icon.
 
-   ![](assets/test-bpconfig4.png)
+   ![Verify connection between AEM and Brand Portal](assets/test-bpconfig4.png)
 
    A message appears that your *test package is successfully delivered*.
 
@@ -150,7 +187,7 @@ Let us now publish an asset from Experience Manager Assets to Brand Portal and s
 1. Follow the steps (from 1 to 4) as shown in the **Test connection** section and navigate to the distribution agent page.
 1. Click **[!UICONTROL Logs]** to view the processing and error logs.
 
-   ![](assets/test-bpconfig5.png)
+   ![Processing and error logs](assets/test-bpconfig5.png)
 
 The distribution agent has generated the following logs:
 
@@ -183,15 +220,20 @@ Along with the automation workflow to activate Brand Portal on Experience Manage
 
 ## Manual configuration using Adobe Developer Console {#manual-configuration}
 
+>[!NOTE]
+>
+> You cannot create new JWT credentials from June 2024 onwards. Henceforth, only OAuth credentials are created.
+> See more [creating an OAuth configuration](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a).
+
 The following section describes how to manually configure Experience Manager Assets as a [!DNL Cloud Service] with Brand Portal using Adobe Developer Console. 
 
-Earlier, Experience Manager Assets as a [!DNL Cloud Service] was manually configured with Brand Portal via Adobe Developer Console, which procures an Adobe Identity Management Services (IMS) account token for authorization of the Brand Portal tenant. It requires configurations in both, Experience Manager Assets as well as Adobe Developer Console.
+Earlier, Experience Manager Assets as a [!DNL Cloud Service] was manually configured with Brand Portal via Adobe Developer Console, which procures an Adobe Identity Management Services (IMS) account token for authorization of the Brand Portal tenant. It requires configurations in both, Experience Manager Assets and Adobe Developer Console.
 
-1. In Experience Manager Assets, create an IMS account and generate a public key (certificate).
-1. In Adobe Developer Console, create a project for your Brand Portal tenant (organization).
-1. Under the project, configure an API using the public key to create a service account connection.
+<!--1. In Experience Manager Assets, create an IMS account and generate a public key (certificate).-->
+<!--1. Under the project, configure an API using the public key to create a service account connection.
 1. Get the service account credentials and JSON Web Token (JWT) payload information.
-1. In Experience Manager Assets, configure the IMS account using the service account credentials and JWT payload.
+1. In Experience Manager Assets, configure the IMS account using the service account credentials and JWT payload.-->
+1. In Adobe Developer Console, create a project for your Brand Portal tenant (organization).
 1. In Experience Manager Assets, configure the Brand Portal cloud service using the IMS account and Brand Portal endpoint (organization URL).
 1. Test your configuration by publishing an asset from Experience Manager Assets to Brand Portal.
 
@@ -210,12 +252,15 @@ You require the following to configure Experience Manager Assets with Brand Port
 ## Create configuration {#create-new-configuration}
 
 Perform the following steps in the specified sequence to configure Experience Manager Assets with Brand Portal.
- 
-1. [Obtain public certificate](#public-certificate)
-1. [Create service account (JWT) connection](#createnewintegration) 
-1. [Configure IMS account](#create-ims-account-configuration)
-1. [Configure cloud service](#configure-the-cloud-service)
 
+1. [Configure the OAuth credentials in the Adobe Developer Console](#config-oauth)
+1. [Create a new Adobe IMS Integration using OAuth](#create-ims-account-configuration)
+1. [Configure cloud service](#configure-cloud-service)
+<!--1. [Obtain public certificate](#public-certificate)-->
+<!--1. [Create service account (JWT) connection](#createnewintegration) 
+1. [Configure IMS account](#create-ims-account-configuration)-->
+
+<!--
 ### Create IMS configuration {#create-ims-configuration}
 
 The IMS configuration authenticates your Experience Manager Assets as a [!DNL Cloud Service] instance with the Brand Portal tenant. 
@@ -224,6 +269,8 @@ IMS configuration includes two steps:
 
 * [Obtain public certificate](#public-certificate) 
 * [Configure IMS account](#create-ims-account-configuration)
+-->
+<!--
 
 ### Obtain public certificate {#public-certificate}
 
@@ -232,7 +279,7 @@ The public key (certificate) authenticates your profile on Adobe Developer Conso
 1. Login to Experience Manager Assets.
 1. From the **Tools** panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 1. In Adobe IMS Configurations page, click **[!UICONTROL Create]**. It will redirect to the **[!UICONTROL Adobe IMS Technical Account Configuration]** page. By default, the **Certificate** tab opens.
-1. Select **[!UICONTROL Adobe Brand Portal]** in the **[!UICONTROL Cloud Solution]** dropdown list.  
+1. Select **[!UICONTROL Adobe Brand Portal]** in the **[!UICONTROL Cloud Solution]** drop-down list.  
 1. Select the **[!UICONTROL Create new certificate]** check box and specify an **alias** for the public key. The alias serves as name of the public key. 
 1. Click **[!UICONTROL Create certificate]**. Then, click **[!UICONTROL OK]** to generate the public key.
 
@@ -249,6 +296,8 @@ The public key (certificate) authenticates your profile on Adobe Developer Conso
     In the **Account** tab, Adobe IMS account is created which requires the service account credentials that are generated in Adobe Developer Console. Keep this page open for now.
 
     Open a new tab and [create a service account (JWT) connection in Adobe Developer Console](#createnewintegration) to get the credentials and JWT payload for configuring the IMS account. 
+-->
+<!--
 
 ### Create service account (JWT) connection {#createnewintegration}
 
@@ -261,7 +310,7 @@ Perform the following steps to generate the service account credentials and JWT 
 
    >[!NOTE]
    >
-   >Ensure that you have selected the correct IMS organization (Brand Portal tenant) from the dropdown (organization) list located at the upper-right corner.
+   >Ensure that you have selected the correct IMS organization (Brand Portal tenant) from the drop-down (organization) list located at the upper-right corner.
 
 1. Click **[!UICONTROL Create new project]**. A blank project with a system-generated name is created for your organization. 
 
@@ -285,11 +334,12 @@ Perform the following steps to generate the service account credentials and JWT 
 
    ![Select Product Profile](assets/service-account4.png)
 
-1. Once the API is configured, you are redirected to the API overview page. From the left navigation under **[!UICONTROL Credentials]**, click on the **[!UICONTROL Service Account (JWT)]** option.
+1. Once the API is configured, you are redirected to the API overview page. From the left navigation under **[!UICONTROL Credentials]**, click the **[!UICONTROL Service Account (JWT)]** option.
 
-   >[!NOTE]
+   >[!NOTE] 
    >
-   >You can view the credentials and perform actions such as generate JWT tokens, copy credential details, retrieve client secret, and so on.
+   >* You can view the credentials and perform actions such as generate JWT tokens, copy credential details, retrieve client secret, and so on.
+   >* Currently, only the Adobe's Developer Console Service Account (JWT) credential type is supported. Do not use the `OAuth Server-to-Server` credential type until it is supported in mid-April. Read more at [JWT Credentials Deprecation in Adobe Developer Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
 
 1. From the **[!UICONTROL Client Credentials]** tab, copy the **[!UICONTROL client ID]**. 
 
@@ -300,7 +350,7 @@ Perform the following steps to generate the service account credentials and JWT 
 1. Navigate to the **[!UICONTROL Generate JWT]** tab and copy the **[!UICONTROL JWT Payload]** information. 
 
 You can now use the client ID (API key), client secret, and JWT payload to [configure the IMS account](#create-ims-account-configuration) in Experience Manager Assets.
-
+-->
 <!--
 1. Click **[!UICONTROL Create Integration]**.
 
@@ -308,7 +358,7 @@ You can now use the client ID (API key), client secret, and JWT payload to [conf
 
    ![Create New Integration](assets/create-new-integration1.png)
 
-1. Create a new integration page opens. 
+1. Create an integration page. 
    
    Select your organization from the drop-down list.
 
@@ -334,47 +384,56 @@ You can now use the client ID (API key), client secret, and JWT payload to [conf
 
 1. Navigate to **[!UICONTROL JWT]** tab, and copy the **[!UICONTROL JWT payload]**.
 
-   The API Key, Client Secret key, and JWT payload information will be used to create IMS account configuration.
+   The API Key, Client Secret key, and JWT payload information is used to create IMS account configuration.
 
 -->
 
-### Configure IMS account {#create-ims-account-configuration}
+### Configure the OAuth credentials in the Adobe Developer Console {#config-oauth}
 
+[Configure the OAuth credentials in the Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#credentials-in-the-developer-console) and select Brand Portal API.
+
+### Create new Adobe IMS integration using OAuth {#create-ims-account-configuration}
+
+[Create a new Adobe IMS Integration using OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration) and select Brand Portal from the drop down under Cloud Solution.
+
+<!--
 Ensure that you have performed the following steps:
 
 * [Obtain public certificate](#public-certificate)
 * [Create service account (JWT) connection](#createnewintegration)
+-->
 
-Perform the following steps to configure the IMS account. 
-
-1. Open the IMS Configuration and navigate to the **[!UICONTROL Account]** tab. You kept the page open while [obtaining the public certificate](#public-certificate).
+<!--1. Open the IMS Configuration and navigate to the **[!UICONTROL Account]** tab. Keep the page open while [obtaining the public certificate](#public-certificate).
 
 1. Specify a **[!UICONTROL Title]** for the IMS account.
 
    In the **[!UICONTROL Authorization Server]** field, specify the URL: [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)  
-
-   Specify client ID in the **[!UICONTROL API key]** field, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]** (JWT payload) that you have copied while [creating the service account (JWT) connection](#createnewintegration).
-
-   Click **[!UICONTROL Create]**.
+-->
+<!--
+1. Complete the configuration based on details from the [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/). Click **[!UICONTROL Create]**.
+-->
+   <!--Specify client ID in the **[!UICONTROL API key]** field, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]** (JWT payload) that you have copied while [creating the service account (JWT) connection](#createnewintegration).
 
    The IMS account is configured. 
 
    ![IMS Account configuration](assets/create-new-integration6.png)
 
-   
+ <!--  
 1. Select the IMS account configuration and click **[!UICONTROL Check Health]**.
 
    Click **[!UICONTROL Check]** in the dialog box. On successful configuration, a message appears that the *Token is retrieved successfully*.
 
-   ![](assets/create-new-integration5.png)
-
+   ![Adobe IMS Configurations Check Health.](assets/create-new-integration5.png)
+-->
+<!--
 >[!CAUTION]
 >
 >You must have only one IMS configuration.
 >
->Ensure that the IMS configuration passes the health check. If the configuration does not pass the health check, it is invalid. You must delete it and create a new, valid configuration.
+>Ensure that the IMS configuration passes the health check. If the configuration does not pass the health check, it is invalid. You must delete it and create another valid configuration.
+-->
 
-### Configure cloud service {#configure-the-cloud-service}
+### Configure cloud service {#configure-cloud-service}
 
 Perform the following steps to configure the Brand Portal cloud service:
 
@@ -390,7 +449,7 @@ Perform the following steps to configure the Brand Portal cloud service:
    
    In the **[!UICONTROL Service URL]** field, specify your Brand Portal tenant (organization) URL.   
    
-    ![](assets/create-cloud-service.png)
+    ![Brand Portal Configuration dialog box.](assets/create-cloud-service.png)
 
 1. Click **[!UICONTROL Save & Close]**. The cloud configuration is created. 
 
@@ -399,7 +458,7 @@ Perform the following steps to configure the Brand Portal cloud service:
 You can now test the configuration by checking the distribution agent and publishing assets to Brand Portal.
 
 **Allowlist Egress IPs in SPS if secure preview enabled**
-If using Dynamic Media-Scene7 with [secure preview enabled](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) for a company), then it is advised that Scene7 company administrator [allowlist the public egress IPs](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) for respective regions using SPS (Scene7 Publishing System) flash UI.
+If using Dynamic Media-Scene7 with [secure preview enabled](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) for a company, then it is advised that Scene7 company administrator [allowlist the public egress IPs](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) for respective regions using SPS (Scene7 Publishing System) flash UI.
 The egress IPs are as follows:
 
 | **Region**  | **Egress IP** |
@@ -417,11 +476,11 @@ Perform the following steps to validate the configuration:
 
 1. From the **Tools** panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
-    ![](assets/test-bpconfig1.png)
+    ![test-bpconfig1](assets/test-bpconfig1.png)
 
    A Brand Portal distribution agent (**[!UICONTROL bpdistributionagent0]**) is created under **[!UICONTROL Publish to Brand Portal]**.
 
-   ![](assets/test-bpconfig2.png)
+   ![test-bpconfig2](assets/test-bpconfig2.png)
 
 
 1. Click **[!UICONTROL Publish to Brand Portal]** to open the distribution agent. 
@@ -437,11 +496,11 @@ Perform the following steps to validate the configuration:
    >
    >It is recommended to review the failures and  clear the **error-queue** periodically.  
 
-   ![](assets/test-bpconfig3.png)
+   ![test-bpconfig3](assets/test-bpconfig3.png)
 
-1. To verify the connection between AEM Assets as a [!DNL Cloud Service] and Brand Portal, click on the **[!UICONTROL Test Connection]** icon.
+1. To verify the connection between AEM Assets as a [!DNL Cloud Service] and Brand Portal, click the **[!UICONTROL Test Connection]** icon.
 
-   ![](assets/test-bpconfig4.png)
+   ![test-bpconfig4](assets/test-bpconfig4.png)
 
    A message appears that your *test package is successfully delivered*.
 
@@ -469,7 +528,7 @@ For example, we have published an asset from AEM Assets to Brand Portal to valid
 1. Follow the steps (from 1 to 4) as shown in the [Test Configuration](#test-configuration) section and navigate to the distribution agent page.
 1. Click **[!UICONTROL Logs]** to view the processing and error logs.
 
-   ![](assets/test-bpconfig5.png)
+   ![ctest-bpconfig4](assets/ctest-bpconfig4.png)
 
 The distribution agent has generated the following logs:
 
@@ -539,3 +598,4 @@ Go to `/system/console/slingmetrics` for statistics related to the distributed c
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

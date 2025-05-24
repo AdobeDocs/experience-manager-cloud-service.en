@@ -2,6 +2,8 @@
 title: Release Notes for 2021.10.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Release Notes for 2021.10.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
+feature: Release Information
+role: Admin
 ---
 # Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -38,7 +40,7 @@ Have a look at the [October 2021 Release Overview](https://video.tv.adobe.com/v/
 
 ### New feature in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
 
-* [!DNL Dynamic Media] Image Smart Crop and Swatch is now powered by latest Sensei services, that generates improved crops and swatches. Also, an enhancement has been launched to generate different crop content, for same aspect ratio but across different resolutions. In addition, any manual edits will be preserved on reprocessing, if there is no change in the width and height in the Image Profile.
+* [!DNL Dynamic Media] Image Smart Crop and Swatch is now powered by latest Sensei services, that generates improved crops and swatches. Also, an enhancement has been launched to generate different crop content, for same aspect ratio but across different resolutions. In addition, any manual edits are preserved on reprocessing, if there is no change in the width and height in the Image Profile.
 
 * Smart Tags are automatically applied to the assets using asset microservices, instead of Smart Content Services. The underlying model is updated to improve tagging results and reduce bias. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
@@ -52,7 +54,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### What is new in [!DNL Forms] {#what-is-new-forms-oct-2021}
 
-* **Analytics for Adaptive Forms**: You can now capture and track behavior of both logged-in and not logged-in (Anonymous) via Adobe Analytics for Adaptive Forms to gather end user insights. It helps make informed decisions based on data to improve end user experience.
+* **Analytics for Adaptive Forms**: You can now capture and track behavior of both logged-in and not logged-in (Anonymous) by way of Adobe Analytics for Adaptive Forms to gather user insights. It helps make informed decisions based on data to improve user experience.
 
 ### New features available in [!DNL Forms] prerelease channel {#prerelease-features-forms-oct-2021}
 
@@ -60,7 +62,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### Beta features of [!DNL Forms]  {#what-is-new-forms-oct2021-beta}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) help you combine a template and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous and batch modes. The APIs enables you to create applications that let you:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) help you combine a template and XML data to generate print documents in various formats. The service lets you generate documents in synchronous and batch modes. The APIs enables you to create applications that let you:
 
   * Generate documents by populating template files (PDF and XDP) with XML data.
   * Generate output forms in various formats, including non-interactive PDF print streams.
@@ -73,7 +75,7 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
 * The CIF add-on supports latest Commerce v2.4.3 with new GraphQL APIs and schemas
 
-* Authors can add links to product and catalog pages in text fields using the rich text editor (RTE). A CIF icon has been added to the RTE toolbar that will open up the pickers to quickly search and select the product or category without leaving the context.
+* Authors can add links to product and catalog pages in text fields using the rich text editor (RTE). A CIF icon has been added to the RTE toolbar that opens up the pickers to quickly search and select the product or category without leaving the context.
 
 * Existing pop-up shopping cart and checkout have been replaced with dedicated AEM shopping cart and checkout pages. The components on these pages are built using Adobe Commerce's extensible Peregrine components
 
@@ -92,10 +94,10 @@ The next release is planned for December 09, 2021.
 
 ### What's New {#what-is-new-cm-nov}
 
-* Users can now leverage new Front End pipelines to exclusively deploy front end code in an accelerated manner. See [Cloud Manager Front End Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) to learn more.
+* Users can now use new Front End pipelines to exclusively deploy front end code in an accelerated manner. See [Cloud Manager Front End Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) to learn more.
 
    >[!IMPORTANT]
-   >You must be on AEM version `2021.10.5933.20211012T154732Z` to leverage new Front End pipelines.
+   >You must be on AEM version `2021.10.5933.20211012T154732Z` to use new Front End pipelines.
 
 * Code Quality pipeline duration is significantly reduced by performing the code analysis in a more efficient way without the need of building a whole AEM image. This change will roll out progressively over the weeks following the release.
 

@@ -1,11 +1,13 @@
 ---
 title: Headful and Headless in AEM
-description: AEM projects can be implemented in a headful and headless model, but the choice isn't binary. AEM offers the flexibility to exploit the advantages of both models in one project.
+description: AEM projects can be implemented in a headful and headless model, but the choice is not binary. AEM offers the flexibility to exploit the advantages of both models in one project.
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Headful and Headless in AEM {#headful-headless}
 
-Adobe Experience Manager projects can be implemented in both headful and headless models, but the choice isn't binary. AEM offers the flexibility to exploit the advantages of both models in one project. This document provides and overview of the different models and describes the levels of SPA integration.
+Adobe Experience Manager projects can be implemented in both headful and headless models, but the choice is not binary. AEM offers the flexibility to exploit the advantages of both models in one project. This document provides and overview of the different models and describes the levels of SPA integration.
 
 ## Overview {#overview}
 
@@ -13,19 +15,19 @@ AEM offers powerful tools to manage both the creation of content and its deliver
 
 AEM can also be used to simply manage content, allowing presentation and delivery of the content to be managed by another platform. This is the "headless" model of content management, where the content authors and developers work on different platforms to deliver experience to the content consumers.
 
-But this need not be a binary choice. AEM offers unprecedented flexibility, allowing you to exploit the advantages of both models for your project.
+But this does not need to be a binary choice. AEM offers unprecedented flexibility, allowing you to exploit the advantages of both models for your project.
 
 ![AEM Implementation Models](/help/headless/assets/aem-implementation-models.png)
 
-In a headful or full-stack model, the content is managed in the AEM repository and AEM components based on Java, HTL, etc. are used to render the content for the user experience. In this model, creating the content, styling it, presenting it, and delivering it all happen in AEM.
+In a headful or full-stack model, the content is managed in the AEM repository and AEM components based on Java, HTL, and so on are used to render the content for the user experience. In this model, creating the content, styling it, presenting it, and delivering it all happen in AEM.
 
 In a headless model, the content is managed in the AEM repository, but delivered via APIs such as REST and GraphQL to another system to render the content for the user experience. In this model, content is created in AEM, but styling it, presenting it, and delivering it all happen on another platform.
 
-Single Page Applications (SPAs) are often the destination for content delivered headlessly by AEM. However, these SPAs need not be entirely external to AEM. AEM allows you to decide to what degree your SPAs are integrated into AEM. Let's take an example.
+Single Page Applications (SPAs) are often the destination for content delivered headlessly by AEM. However, these SPAs do not need to be entirely external to AEM. AEM lets you decide to what degree your SPAs are integrated into AEM. Let's take an example.
 
 ## Web Shop Example {#web-shop-example}
 
-Let's say that you have an existing web shop for your company as an SPA. In it you have all your product details and images. Then you introduce AEM in order to power your marketing efforts such as promotional sites, blogs, and campaign content. How do you integrate the two? AEM enables a spectrum of options:
+Let's say that you have an existing web shop for your company as an SPA. In it you have all your product details and images. Then you introduce AEM to power your marketing efforts such as promotional sites, blogs, and campaign content. How do you integrate the two? AEM enables a spectrum of options:
 
 * **Allow the systems to operate independently.**
 * **Supply the web shop with limited content from AEM via GraphQL.** Content can be created by authors in AEM, but only seen via the web shop SPA.
@@ -37,7 +39,7 @@ The next section explores these levels of integration in more detail.
 
 >[!NOTE]
 >
->Of course you could also re-implement the web shop SPA as a fully-functioning AEM SPA [using the AEM SPA Editor framework.](/help/implementing/developing/hybrid/introduction.md) If you already have AEM and wish to create a new web shop or other SPA, this is the recommended method, but it out of the scope of this document.
+>Of course you could also re-implement the web shop SPA as a fully functioning AEM SPA [using the AEM SPA Editor framework](/help/implementing/developing/hybrid/introduction.md). If you already have AEM and want to create a web shop or other SPA, this is the recommended method, but it out of the scope of this document.
 
 ## SPA Integration Levels {#integration-levels}
 
@@ -47,19 +49,19 @@ SPA integration falls on a spectrum of four levels in AEM.
   * The SPA and AEM exist separately and exchange no information.
   * Content is created, managed, and delivered independently in two separate systems.
 * **Level 1: Content fragment integration**
-  * [Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md) are used in AEM to create and manage limited content for the SPA.
-  * The SPA retrieves this content via AEM's [GraphQL API.](/help/headless/graphql-api/content-fragments.md)
+  * [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md) are used in AEM to create and manage limited content for the SPA.
+  * The SPA retrieves this content via AEM's [GraphQL API](/help/headless/graphql-api/content-fragments.md).
   * Some content is managed in AEM and some in an external system.
   * Content can only be viewed in the SPA.
 * **Level 2: Embed the SPA in AEM**
-  * [Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md) are used in AEM to create and manage content for the SPA.
-  * The SPA retrieves this content via AEM's [GraphQL API.](/help/headless/graphql-api/content-fragments.md)
+  * [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md) are used in AEM to create and manage content for the SPA.
+  * The SPA retrieves this content via AEM's [GraphQL API](/help/headless/graphql-api/content-fragments.md).
   * Some content is managed in AEM and some in an external system.
   * Content can be viewed in-context within AEM.
   * Limited content can be edited within AEM.
 * **Level 3: Embed and fully enable SPA in AEM**
-  * [Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md) are used in AEM to create and manage content for the SPA.
-  * The SPA retrieves this content via AEM's [GraphQL API.](/help/headless/graphql-api/content-fragments.md)
+  * [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md) are used in AEM to create and manage content for the SPA.
+  * The SPA retrieves this content via AEM's [GraphQL API](/help/headless/graphql-api/content-fragments.md).
   * Content can be viewed in-context within AEM.
   * Most content can be edited within AEM.
 
@@ -74,6 +76,6 @@ There are different tools in AEM available depending on what integration level y
 * **Level 1:** Content Fragments and the [AEM headless framework](/help/headless/introduction.md) can be used to deliver AEM content to the SPA.
 * **Level 2:** In addition to level one:
   * [The RemotePage component](/help/implementing/developing/hybrid/remote-page.md) can be used to embed the external SPA into AEM where AEM content can be viewed in-context.
-  * Certain points on the SPA can also be enabled to [allow limited editing in AEM.](/help/implementing/developing/hybrid/editing-external-spa.md)
+  * Certain points on the SPA can also be enabled to [allow limited editing in AEM](/help/implementing/developing/hybrid/editing-external-spa.md).
 * **Level 3:** In addition to level two:
   * Entire zones of the SPA can be enabled to allow comprehensive editing in AEM.

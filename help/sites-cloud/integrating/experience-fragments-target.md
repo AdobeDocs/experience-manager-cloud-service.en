@@ -1,7 +1,10 @@
 ---
 title: Exporting Experience Fragments to Adobe Target
-description: Exporting Experience Fragments to Adobe Target
+description: Learn how to export your Experience Fragments to Adobe Target, to test and personalize experiences.
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
+solution: Experience Manager Sites
+feature: Integration
+role: Admin
 ---
 # Exporting Experience Fragments to Adobe Target{#exporting-experience-fragments-to-adobe-target}
 
@@ -10,7 +13,7 @@ exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
 >* The AEM Experience Fragments are exported into the default workspace of Adobe Target.
 >* AEM must be integrated with Adobe Target according to the instructions under [Integrating with Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
-You can export [Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md), created in Adobe Experience Manager as a Cloud Service (AEM), to Adobe Target (Target). They can then be used as offers in Target activities, to test and personalize experiences at scale.
+You can export [Experience Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md), created in Adobe Experience Manager as a Cloud Service (AEM), to Adobe Target (Target). They can then be used as offers in Target activities, to test and personalize experiences at scale.
 
 There are three options available for exporting an Experience Fragment to Adobe Target:
 
@@ -42,11 +45,11 @@ Experience Fragments can be exported to the default workspace in Adobe Target, o
 
 >[!NOTE]
 >
->For further information see also:
+>For more information, see the following:
 >
 >* [Adobe Target development](https://developers.adobetarget.com/)
 >* [Core Components - Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
->* [Adobe Target - How Do I Use Adobe Experience Manager (AEM) Experience Fragments?](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=en)
+>* [Adobe Target - How Do I Use Adobe Experience Manager (AEM) Experience Fragments?](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html)
 >* [AEM 6.5 - Manually Configuring the Integration with Adobe Target - Creating a Target Cloud Configuration](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html#creating-a-target-cloud-configuration)
 
 ## Prerequisites {#prerequisites}
@@ -69,7 +72,7 @@ Before exporting a fragment you need to add the **Cloud Configuration** for **Ad
 * select a Target workspace as destination
 * select an externalizer domain for rewriting references in the Experience Fragment (optional)
 
-The required options can be selected in **Page Properties** of the required folder and/or fragment; the specification will be inherited as necessary.
+The required options can be selected in **Page Properties** of the required folder, or fragment, or both; the specification is inherited as necessary.
 
 1. Navigate to the **Experience Fragments** console.
 
@@ -96,7 +99,7 @@ The required options can be selected in **Page Properties** of the required fold
    * the appropriate configuration
    * the required format option
    * an Adobe Target workspace
-   * if required - the externalizer domain
+   * if necessary - the externalizer domain
 
    >[!CAUTION]
    >
@@ -159,7 +162,7 @@ You can now select the new configuration for editing.
    >1. Navigate to **Tools** &gt; **General** &gt; **CRXDE Lite**.
    >1. Navigate to **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
    >1. Set the property **disable** to **false**.
-   >1. Tap or click **Save All**.
+   >1. Select **Save All**.
 
    -->
 
@@ -171,7 +174,7 @@ You can now select the new configuration for editing.
 
    * **Tenant ID**: the tenant ID
 
-   * **IMS Configuration**: select the required configuration from the drop down list
+   * **IMS Configuration**: select the required configuration from the drop-down list
 
    * **API Type**: defaults to REST (XML is deprecated)
 
@@ -183,7 +186,7 @@ You can now select the new configuration for editing.
 
    * **Use accurate targeting:** By default this check box is selected. If selected, the cloud service configuration will wait for the context to load before loading content. See note that follows.
 
-   * **Synchronize Segments from Adobe Target:** Select this option to download segments that are defined in Target to use them in AEM. You must select this option when the API Type property is REST, because inline segments are not supported and you always need to use segments from Target. (Note that the AEM term of 'segment' is equivalent to the Target 'audience'.)
+   * **Synchronize Segments from Adobe Target:** Select this option to download segments that are defined in Target to use them in AEM. Select this option when the API Type property is REST, because inline segments are not supported and you always need to use segments from Target. (The AEM term of 'segment' is equivalent to the Target 'audience'.)
 
    * **Client library:** this defaults to AT.js (mbox.js is deprecated)
 
@@ -236,7 +239,7 @@ You can create multiple frameworks for a single Target configuration. Multiple f
 
    The framework page opens. Sidekick provides components that represent information from the [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md) that you can map.
 
-   <!-- ![chlimage_1-162](assets/chlimage_1-162.png) -->
+   <!-- ![Framework](assets/chlimage_1-162.png) -->
 
 1. Drag the Client Context component that represents the data that you want to use for mapping to the drop target. Alternatively, drag the **ContextHub Store** component to the framework.
 
@@ -246,11 +249,11 @@ You can create multiple frameworks for a single Target configuration. Multiple f
 
    For example, to use **Profile Data** about your site vistors to control your Target campaign, drag the **Profile Data** component to the page. The profile data variables that are available for mapping to Target parameters appear.
 
-   <!-- ![chlimage_1-163](assets/chlimage_1-163.png) -->
+   <!-- ![Profile Data](assets/chlimage_1-163.png) -->
 
 1. Select the variables that you want to make visible to the Adobe Target system by selecting the **Share** checkbox in the appropriate columns.
 
-   <!-- ![chlimage_1-164](assets/chlimage_1-164.png) -->
+   <!-- ![Share](assets/chlimage_1-164.png) -->
 
    >[!NOTE]
    >
@@ -282,12 +285,12 @@ After you create a Target framework in AEM, associate your web pages with the fr
 When you associate a page with the framework, the child pages inherit the association.
 
 1. In the **Sites** console, navigate to the site that you want to configure.
-1. Using either [quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) or [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources), select **View Properties.**
+1. Using either [quick actions](/help/sites-cloud/authoring/basic-handling.md#quick-actions) or [selection mode](/help/sites-cloud/authoring/basic-handling.md#selecting-resources), select **View Properties.**
 1. Select the **Cloud Services** tab.
-1. Tap/click **Edit**.
-1. Tap/click **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
+1. Select **Edit**.
+1. Select **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
 
-  ![chlimage_1-165](assets/chlimage_1-165.png)
+  ![Cloud Service Configuration](assets/chlimage_1-165.png)
 
 1. Select the framework you want under **Configuration Reference**.
 
@@ -295,12 +298,12 @@ When you associate a page with the framework, the child pages inherit the associ
    >
    >Make sure that you select the specific **framework** that you created and not the Target cloud configuration under which it was created.
 
-1. Tap/click **Done**.
-1. Activate the root page of the website to replicate it to the publish server. (See [How To Publish Pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).)
+1. Select **Done**.
+1. Activate the root page of the website to replicate it to the publish server. (See [How To Publish Pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md).)
 
    >[!NOTE]
    >
-   >If the framework you attached to the page was not activated yet, a wizard opens which allows you to publish it as well.
+   >If the framework you attached to the page was not activated yet, a wizard opens which lets you publish it as well.
 --> 
 
 ## Exporting an Experience Fragment to Adobe Target {#exporting-an-experience-fragment-to-adobe-target}
@@ -309,7 +312,7 @@ When you associate a page with the framework, the child pages inherit the associ
 >
 >For media assets, such as images, only a reference is exported to Target. The asset itself remains stored in AEM Assets and is delivered from the AEM publish instance.
 >
->Due to this the Experience Fragment, with all related assets, needs to be published before exporting to Target.
+>Due to this the Experience Fragment, with all related assets, must be published before exporting to Target.
 
 To export an experience fragment from AEM to Target (after specifying the Cloud Configuration):
 
@@ -320,25 +323,25 @@ To export an experience fragment from AEM to Target (after specifying the Cloud 
    >
    >It has to be an Experience Fragment Web variation.
 
-1. Tap/click **Export to Adobe Target**.
+1. Select **Export to Adobe Target**.
 
    >[!NOTE]
    >
    >If the Experience Fragment has already been exported, select **Update in Adobe Target**.
 
-1. Tap/click **Export without publishing** or **Publish** as required.
+1. Select **Export without publishing** or **Publish** as required.
 
    >[!NOTE]
    >
    >Selecting **Publish** will publish the experience fragment right away and send it to Target.
 
-1. Tap/click **OK** in the confirmation dialog.
+1. Select **OK** in the confirmation dialog.
 
    Your experience fragment should now be in Target.
 
    >[!NOTE]
    >
-   >[Various details](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#details-of-your-experience-fragment) of the export can be seen in **List View** of the console and **Properties**.
+   >[Various details](/help/sites-cloud/authoring/fragments/content-fragments.md#details-of-your-experience-fragment) of the export can be seen in **List View** of the console and **Properties**.
 
    >[!NOTE]
    >
@@ -346,11 +349,11 @@ To export an experience fragment from AEM to Target (after specifying the Cloud 
 
 >[!NOTE]
 >
->Alternatively, you can perform the export from the page editor, using comparable commands in the [Page Information](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) menu.
+>Alternatively, you can perform the export from the page editor, using comparable commands in the [Page Information](/help/sites-cloud/authoring/page-editor/introduction.md#page-information) menu.
 
 ## Using your Experience Fragments in Adobe Target {#using-your-experience-fragments-in-adobe-target}
 
-After performing the preceding tasks, the experience fragment displays on the Offers page in Target. Please have a look at the [specific Target documentation](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html) to learn about what you can achieve there.
+After performing the preceding tasks, the experience fragment displays on the Offers page in Target. See [specific Target documentation](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html) to learn about what you can achieve there.
 
 >[!NOTE]
 >

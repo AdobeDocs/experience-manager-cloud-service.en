@@ -2,6 +2,8 @@
 title: Release Notes for 2021.6.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Release Notes for 2021.6.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
+feature: Release Information
+role: Admin
 ---
 # Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -42,7 +44,7 @@ The next release is planned for July 15, 2021.
 
 ### What's New {#what-is-new-junecm}
 
-* Preview Service will be deployed on a rolling basis to all Programs. Customers will be notified in-product when their Program is enabled for Preview Service. Refer to [Accessing Preview Service](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) for more details.
+* Preview Service will be deployed on a rolling basis to all Programs. Customers are notified in-product when their Program is enabled for Preview Service. See [Accessing Preview Service](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) for more details.
 
 * Maven Dependencies downloaded during the build step will now be cached between pipeline executions. This feature will be enabled for customers over the next several weeks.
 
@@ -54,15 +56,15 @@ The next release is planned for July 15, 2021.
 
 * The quality rule `ImmutableMutableMixCheck` has been updated to classify `/oak:index` nodes as being immutable. 
 
-* The quality rules `CQBP-84` and `CQBP-84--dependencies` have been consolidated into a single rule. As part of this consolidation, the scanning of dependencies more accurately identifies issues in third party dependencies which are being deployed to the AEM runtime.
+* The quality rules `CQBP-84` and `CQBP-84--dependencies` have been consolidated into a single rule. As part of this consolidation, the scanning of dependencies more accurately identifies issues in third-party dependencies which are being deployed to the AEM runtime.
 
 * To avoid confusion, the Publish AEM and Publish Dispatcher segment rows on the Environment Details page have been consolidated.
 
-   ![](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
+   ![Dispatcher environments](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
 
-* A new code quality rule has been added to validate the structure of `damAssetLucene` indexes. Refer to [Custom DAM Asset Lucene Oak Indexes](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) for more details.
+* A new code quality rule has been added to validate the structure of `damAssetLucene` indexes. See [Custom DAM Asset Lucene Oak Indexes](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) for more details.
 
-* Environment details page will now display multiple domain names for Publish and Preview services (as applicable). Refer to [Environment Details](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) to more details.
+* Environment details page will now display multiple domain names for Publish and Preview services (as applicable). See [Environment Details](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) to more details.
 
 ### Bug Fixes {#bug-fixes-junecm}
 
@@ -82,7 +84,7 @@ The next release is planned for July 15, 2021.
 
 ### New features in [!DNL Assets] {#ga-features-assets}
 
-* Content Automation functionality lets [!DNL Experience Manager Assets] leverage the [!DNL Adobe Creative Cloud] APIs to automate asset production at scale. It improves content velocity by dramatically decreasing the time taken and iterations required to create variations of same asset. The functionality does not require any code and works from within the DAM.
+* Content Automation functionality lets [!DNL Experience Manager Assets] use the [!DNL Adobe Creative Cloud] APIs to automate asset production at scale. It improves content velocity by dramatically decreasing the time taken and iterations required to create variations of same asset. The functionality does not require any code and works from within the DAM.
 * [!DNL Adobe Asset Link] v3.0 for [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign] and [!DNL Adobe Asset Link] v2.0 for [!DNL Adobe XD] is released. It provides:
 
   * Support for [!DNL Assets Essentials].
@@ -96,7 +98,7 @@ The next release is planned for July 15, 2021.
 * The view settings are enhanced to let users choose a default view and a default sorting parameter.
 * The Linkshare download functionality uses asynchronous downloads that boosts the download speed.
 * Users can search and filter the folders based on property predicates.
-* [!DNL Experience Manager Assets] embeds the the PDF Viewer powered by [!DNL Adobe Document Cloud] to preview the supported documents. This feature lets users preview PDF and other multi-page files without any complex processing. This improves the feature parity with [!DNL Experience Manager] 6.5.
+* [!DNL Experience Manager Assets] embeds the PDF Viewer powered by [!DNL Adobe Document Cloud] to preview the supported documents. This feature lets users preview PDF and other multi-page files without any complex processing. This improves the feature parity with [!DNL Experience Manager] 6.5.
 
 ### Bugs fixed in [!DNL Assets] {#bugs-fixed-assets}
 
@@ -122,7 +124,7 @@ The next release is planned for July 15, 2021.
 
 ### Beta feature of [!DNL Forms]  {#what-is-new-forms-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: Communication APIs helps you combine XDP templates and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous mode. The APIs enables you to create applications that let you:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: Communication APIs helps you combine XDP templates and XML data to generate print documents in various formats. The service lets you generate documents in synchronous mode. The APIs enables you to create applications that let you:
   * Generate final form documents by populating template files with XML data.
   * Generate output forms in various formats, including non-interactive PDF print streams.
   * Generate print PDFs from an XFA form PDF and Adobe Acrobat Form (AcroForm).
@@ -147,7 +149,7 @@ The Release Date for AEM Screens as a Cloud Service is June 24, 2021.
 ### What's New {#what-is-new-screens-june}
 
 >[!NOTE]
->See [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=en) Guide for foundational knowledge required for successfully installing, configuring, and running Screens as a Cloud Service and link out to detailed concepts technical documentation.
+>See [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html) Guide for foundational knowledge required for successfully installing, configuring, and running Screens as a Cloud Service and link out to detailed concepts technical documentation.
 
 * Bulk Device Registration Management means that provisioning massive amounts of player devices is faster and more efficient.
 
@@ -176,7 +178,7 @@ The Release Date for Content Transfer Tool v1.5.4 is June 28, 2021.
 
 ### What's New {#what-is-new-ctt-latest}
 
-* Support for an optional [pre-copy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) step added to use with CTT. The pre-copy step can be used to significantly speed up the extraction and ingestion phases of the content transfer activity when the source AEM instance is configured to use an Amazon S3 or Azure Blob Storage data store.
+* Support for an optional [pre-copy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) step added to use with CTT. The pre-copy step can be used to significantly speed up the extraction and ingestion phases of the content transfer activity when the source AEM instance is configured to use an Amazon S3 or Azure Blob Storage data store.
 
 * Guardrail added to CTT to prevent users from stopping an ingestion and potentially corrupting data once it has reached the critical point during the ingestion phase.
 

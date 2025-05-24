@@ -1,16 +1,19 @@
 ---
 title: Logging for AEM as a Cloud Service
-description: Learn how to use Logging for AEM as a Cloud Service in order to configure global parameters for the central logging service, specific settings for the individual services or how to request data logging.
+description: Learn how to use Logging for AEM as a Cloud Service to configure global parameters for the central logging service, specific settings for the individual services or how to request data logging.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
+feature: Log Files, Developing
+role: Admin, Architect, Developer
 ---
 # Logging for AEM as a Cloud Service {#logging-for-aem-as-a-cloud-service}
 
-AEM as a Cloud Service is a platform for customers to include custom code to create unique experiences for their customer base. With this in mind, the logging service is a critical function in order to debug and understand code execution on local development, and cloud environments, particularly the AEM as a Cloud Service's Dev environments.
+AEM as a Cloud Service is a platform for customers to include custom code to create unique experiences for their customer base. With this in mind, the logging service is a critical function to debug and understand code execution on local development, and cloud environments, particularly the AEM as a Cloud Service's Dev environments.
 
-AEM as a Cloud Service logging settings and log levels are managed in configuration files that are stored as part of the AEM project in Git, and deployed as part of the AEM project via Cloud Manager. Logging in AEM as a Cloud Service can be broken into two logical sets:
+AEM as a Cloud Service logging settings and log levels are managed in configuration files that are stored as part of the AEM project in Git, and deployed as part of the AEM project via Cloud Manager. Logging in AEM as a Cloud Service can be broken into three logical sets:
 
 * AEM logging, which performs logging at the AEM application level
 * Apache HTTPD Web Server/Dispatcher logging, which performs logging of the web server and Dispatcher on the Publish tier.
+* CDN logging, which as its name indicates, performs logging at the CDN.
 
 ## AEM Logging {#aem-logging}
 
@@ -46,7 +49,7 @@ Development</td>
 DEBUG</td>
 <td>
 Describes what is happening in the application.<br>
-When DEBUG logging is active, statements providing a clear picture of what activities occur as well as any key parameters that affect processing are logged.</td>
+When DEBUG logging is active, statements providing a clear picture of what activities occur and any key parameters that affect processing are logged.</td>
 <td>
 <ul>
 <li> Local Development</li>
@@ -86,9 +89,13 @@ When ERROR logging is active, only statements indicating failures are logged. ER
 </tr>
 </table>
 
-While Java logging supports several other levels of logging granularity, AEM as a Cloud Service recommends using the three levels described above. 
+While Java logging supports several other levels of logging granularity, AEM as a Cloud Service recommends using the three levels described above.
 
-AEM Log levels are set per environment type via OSGi configuration, which in turn are committed to Git, and deployed via Cloud Manager to AEM as a Cloud Service. Because of this, it is best to keep log statements consistent and well known for environment types, in order to ensure the logs available via AEM as Cloud Service are available at the optimal log level without requiring redeployment of application with the updated log level configuration.
+AEM Log levels are set per environment type via OSGi configuration, which in turn are committed to Git, and deployed via Cloud Manager to AEM as a Cloud Service. Because of this, it is best to keep log statements consistent and well known for environment types to ensure the logs available via AEM as Cloud Service are available at the optimal log level without requiring redeployment of application with the updated log level configuration.
+
+>[!NOTE]
+>
+>To ensure effective monitoring of customer environments, do not change the default log level. In addition, do not modify the default logging format. Log output must remain directed to the default files. See [the section below](#configuration-loggers) for specific guidelines.
 
 **Example Log Output**
 
@@ -135,14 +142,27 @@ AEM Log levels are set per environment type via OSGi configuration, which in tur
 
 AEM Java logs are defined as OSGi configuration, and thus target specific AEM as a Cloud Service environments using run mode folders.
 
-Configure java logging for custom Java packages via OSGi configurations for the Sling LogManager factory. There are two supported configuration properties:
+Configure java logging for custom Java packages via OSGi configurations for the Sling LogManager factory. There are three supported configuration properties:
 
 | OSGi Configuration property  | Description  |
 |---|---|
-| org.apache.sling.commons.log.names | The Java packages for which to collect log statements.  |
-| org.apache.sling.commons.log.level | The log level at which to log the Java packages, specified by org.apache.sling.commons.log.names  |
+| `org.apache.sling.commons.log.names` | The Java packages for which to collect log statements.  |
+| `org.apache.sling.commons.log.level` | The log level at which to log the Java packages, specified by `org.apache.sling.commons.log.names`  |
 
 Changing other LogManager OSGi configuration properties may result in availability issues in AEM as a Cloud Service.
+
+As noted in a previous section, to ensure effective monitoring of customer environments:
+* Java logs for AEM's product code must preserve their default log level "INFO" and must not be overridden by custom configurations.
+* It is acceptable to set the log levels to DEBUG for product code, but use it sparingly to prevent performance degradation and restore back to INFO when it is no longer needed.
+* It is acceptable to adjust log levels for customer-developed code.
+* All logs -- for both AEM product code and customer-developed code -- must maintain the default logging format.
+* Log output must remain directed to the default file "logs/error.log".
+
+To that end, changes must not be made to the following OSGi properties:
+* **Apache Sling Log Configuration** (PID: `org.apache.sling.commons.log.LogManager`) — *all properties*
+* **Apache Sling Logging Logger Configuration** (Factory PID: `org.apache.sling.commons.log.LogManager.factory.config`):
+  * `org.apache.sling.commons.log.file`
+  * `org.apache.sling.commons.log.pattern`
 
 The following are examples of the recommended logging configurations (using the placeholder Java package of `com.example`) for the three AEM as a Cloud Service environment types.
 
@@ -154,6 +174,7 @@ The following are examples of the recommended logging configurations (using the 
 {
     "org.apache.sling.commons.log.names": ["com.example"],
     "org.apache.sling.commons.log.level": "debug"
+    "org.apache.sling.commons.log.file": "logs/error.log"
 }
 ```
 
@@ -165,6 +186,7 @@ The following are examples of the recommended logging configurations (using the 
 {
     "org.apache.sling.commons.log.names": ["com.example"],
     "org.apache.sling.commons.log.level": "warn"
+    "org.apache.sling.commons.log.file": "logs/error.log"
 }
 ```
 
@@ -176,6 +198,7 @@ The following are examples of the recommended logging configurations (using the 
 {
     "org.apache.sling.commons.log.names": ["com.example"],
     "org.apache.sling.commons.log.level": "error"
+    "org.apache.sling.commons.log.file": "logs/error.log"
 }
 ```
 
@@ -183,14 +206,14 @@ The following are examples of the recommended logging configurations (using the 
 
 AEM as a Cloud Service's HTTP request logging provides insight into the HTTP requests made to AEM and their HTTP responses in time order. This log is helpful to understand the HTTP Requests made to AEM and the order they are processed and responded to.
 
-The key to understanding this log is mapping the HTTP request and response pairs by their IDs, denoted by the numeric value in the brackets. Note that often requests and their corresponding responses have other HTTP requests and responses interjected between them in the log.
+The key to understanding this log is mapping the HTTP request and response pairs by their IDs, denoted by the numeric value in the brackets. Often requests and their corresponding responses have other HTTP requests and responses interjected between them in the log.
 
 **Example Log**
 
 ```
-29/Apr/2020:19:14:21 +0000 [137] -> POST /conf/global/settings/dam/adminui-extension/metadataprofile/ HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+29/Apr/2020:19:14:21 +0000 [137] > POST /conf/global/settings/dam/adminui-extension/metadataprofile/ HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
-29/Apr/2020:19:14:22 +0000 [139] -> GET /mnt/overlay/dam/gui/content/processingprofilepage/metadataprofiles/editor.html/conf/global/settings/dam/adminui-extension/metadataprofile/main HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+29/Apr/2020:19:14:22 +0000 [139] > GET /mnt/overlay/dam/gui/content/processingprofilepage/metadataprofiles/editor.html/conf/global/settings/dam/adminui-extension/metadataprofile/main HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
 29/Apr/2020:19:14:21 +0000 [137] <- 201 text/html 111ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
@@ -272,13 +295,13 @@ AEM as a Cloud Service provides three logs for the Apache Web Servers and dispat
 * Apache HTTPD Web Server Error log
 * Dispatcher log
 
-Note that these logs are only available for the Publish tier.
+These logs are only available for the Publish tier.
 
 This set of logs provides insights into HTTP requests to the AEM as a Cloud Service Publish tier prior to those requests reaching the AEM application. This is important to understand as, ideally, most HTTP requests to the Publish tier servers are served by content that is cached by the Apache HTTPD Web Server and AEM Dispatcher, and never reach the AEM application itself. Thus there are no log statements for these requests in AEM's Java, Request or Access logs.
 
 ### Apache HTTPD Web Server Access Log {#apache-httpd-web-server-access-log}
 
-The Apache HTTP Web Server access log provides statements for each HTTP request that reaches the Publish tier's Web server/Dispatcher. Note that requests that are served from an upstream CDN are not reflected in these logs.
+The Apache HTTP Web Server access log provides statements for each HTTP request that reaches the Publish tier's Web server/Dispatcher. Requests that are served from an upstream CDN are not reflected in these logs.
 
 See information about the error log format in the [official apache documentation](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
@@ -390,7 +413,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 
 The mod_rewrite log levels are defined by the variable REWRITE_LOG_LEVEL in the file `conf.d/variables/global.var`.
 
-It can be set to error, warn, info, debug and trace1 - trace8, with a default value of warn. To debug your RewriteRules, it is recommended to raise the log level to trace2.
+It can be set to error, warn, info, debug and trace1 - trace8, with a default value of warn. To debug your RewriteRules, it is recommended to raise the log level to trace2. It's recommended to debug rewrite rules using the [Dispatcher SDK](../../dispatcher/validation-debug.md). The maximal log level for AEM as a Cloud Service is `debug`. Thus it is currently not effectively possible to debug rewrite rules in the cloud.
 
 See the [mod_rewrite module documentation](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging) for more information.
 
@@ -398,7 +421,7 @@ To set the log level per environment, use the appropriate conditional branch in 
 
 ```
 Define REWRITE_LOG_LEVEL debug
-  
+
 <IfDefine ENVIRONMENT_STAGE>
   ...
   Define REWRITE_LOG_LEVEL warn
@@ -476,7 +499,7 @@ To set the log level per environment, use the appropriate conditional branch in 
 
 ```
 Define DISP_LOG_LEVEL debug
-  
+
 <IfDefine ENVIRONMENT_STAGE>
   ...
   Define DISP_LOG_LEVEL warn
@@ -493,11 +516,72 @@ Define DISP_LOG_LEVEL debug
 >
 >For AEM as a Cloud Service environments, debug is the maximal verbosity level. The trace log level is not supported so you should avoid setting it when working in cloud environments.
 
+## CDN Log {#cdn-log}
+
+AEM as a Cloud Service provides access to CDN logs, which are useful for use cases including cache hit ratio optimization. The CDN log format cannot be customized and there is no concept of setting it to different modes such as info, warn, or error.
+
+ **Example**
+
+ ```
+ {
+ "timestamp": "2023-05-26T09:20:01+0000",
+ "ttfb": 19,
+ "cli_ip": "147.160.230.112",
+ "cli_country": "CH",
+ "rid": "974e67f6",
+ "req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+ "host": "example.com",
+ "url": "/content/hello.png",
+ "method": "GET",
+ "res_ctype": "image/png",
+ "cache": "PASS",
+ "status": 200,
+ "res_age": 0,
+ "pop": "PAR",
+ "rules": "match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked"
+ }
+ ```
+
+ **Log Format**
+
+ The CDN logs are distinct from the other logs in that it adheres to a json format.
+
+ | **Field Name**  | **Description**  |
+ |---|---|
+ | *timestamp*  | The time the request started, after TLS termination  |
+ | *ttfb*  | Abbreviation for *Time To First Byte*. The time interval between the request started up to the point before the response body started being streamed. |
+ | *cli_ip*  |  The client IP address. |
+ | *cli_country* | Two-letter [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) alpha-2 country code for the client country. |
+ | *rid* |  The value of the request header used to uniquely identify the request. |
+ | *req_ua* |  The user agent responsible for making a given HTTP request. |
+ | *host*  | The authority that the request is intended for.   |
+ | *url*  | The full path, including query parameters.  |
+ | *method*  |  HTTP method sent by the client, such as "GET" or "POST". |
+ | *res_ctype*  | The Content-Type used to indicate the original media type of the resource.  |
+ | *cache*  |  State of the cache. Possible values are HIT, MISS, or PASS |
+ | *status*  | The HTTP status code as an integer value.  |
+ | *res_age*  | The amount of time (in seconds) a response has been cached (in all nodes).  |
+ | *pop*  | Datacenter of the CDN cache server.  |
+ | *rules*  | The names of any matching [traffic filter rules](/help/security/traffic-filter-rules-including-waf.md) and WAF flags, also indicating if the match resulted in a block. Empty if no rules matched.  |
+
+ The CDN logs can be extended with your own properties using [request/response transformations](/help/implementing/dispatcher/cdn-configuring-traffic.md#logproperty).
+
 ## How to Access Logs {#how-to-access-logs}
 
 ### Cloud Environments {#cloud-environments}
 
 AEM as a Cloud Service logs for cloud services can be accessed either by downloading through the Cloud Manager interface or by tailing logs at the command line using the using the Adobe I/O command line interface. For more information, see the [Cloud Manager logging documentation](/help/implementing/cloud-manager/manage-logs.md).
+
+### Logs for Additional Publish Regions {#logs-for-additional-publish-regions}
+
+If additional publish regions are enabled for a particular environment, logs for each region will be available to download from Cloud Manager, as mentioned above.
+
+The AEM logs and the dispatcher logs for the additional publish regions will specify the region in the first 3 letters after the environment id, as exemplified by **nld2** in the sample below, which refers to an additional AEM publish instance located in the Netherlands:
+
+```
+cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:11 +0000 "HEAD /libs/granite/security/currentuser.json HTTP/1.1" 200 - "-" "Java/11.0.19"
+
+```
 
 ### Local SDK {#local-sdk}
 
@@ -509,7 +593,7 @@ AEM logs are located in the folder `crx-quickstart/logs`, where the following lo
 * AEM HTTP Request log: `request.log`
 * AEM HTTP Access log: `access.log`
 
-Apache layer logs, including dispatcher, are in the Docker container which holds the Dispatcher. See the [Dispatcher documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) for information on how to start the Dispatcher. 
+Apache layer logs, including dispatcher, are in the Docker container which holds the Dispatcher. See the [Dispatcher documentation](/help/implementing/dispatcher/disp-overview.md) for information on how to start the Dispatcher.
 
 To retrieve the logs:
 
@@ -528,83 +612,27 @@ Logs are also directly printed to the terminal output. Most of the time, these l
 
 ## Debugging Production and Stage {#debugging-production-and-stage}
 
-In exceptional circumstances, log levels need to be changed to log at a finer granularity in Stage or Production environments. 
+In exceptional circumstances, log levels need to be changed to log at a finer granularity in Stage or Production environments.
 
-While this is possible, it requires changes to the log levels in the configuration files in Git from Warn and Error to Debug, and performing a deployment to AEM as a Cloud Service to register these configuration changes with the environments. 
+While this is possible, it requires changes to the log levels in the configuration files in Git from Warn and Error to Debug, and performing a deployment to AEM as a Cloud Service to register these configuration changes with the environments.
 
 Depending on the traffic and the amount of log statement written by Debug, this may result in an adverse performance impact on the environment, therefore, it's recommended that changes to Stage and Production debug levels are:
 
 * Done judiciously, and only when absolutely necessary
 * Reverted to the appropriate levels and re-deployed as soon as possible
 
-## Splunk Logs {#splunk-logs}
+## Log Forwarding {#log-forwarding}
 
-Customers who have Splunk accounts may request via customer support ticket that their AEM Cloud Service logs are forwarded to the appropriate index. The logging data is equivalent to what is available through the Cloud Manager log downloads, but customers may find it convenient to leverage the query features available in the Splunk product.
+While logs can be downloaded from Cloud Manager, some organizations find it benficial to forward those logs to a preferred logging destination. AEM supports streaming logs to the following destinations:
 
-The network bandwidth associated with logs sent to Splunk are considered part of the customer's Network I/O usage.
+* Azure Blob Storage
+* Datadog
+* HTTPD
+* Elasticsearch (and OpenSearch)
+* Splunk
 
-### Enabling Splunk Forwarding {#enabling-splunk-forwarding}
-
-In the support request, customers should indicate:
-
-* Splunk HEC endpoint address. This endpoint must have a valid SSL certificate and be publicly accessible.
-* The Splunk index
-* The Splunk port 
-* The Splunk HEC token. See [this page](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) for more information.
-
-The properties above should be specified for each relevant program/environment type combination. For example, if a customer wanted dev, staging, and production environments, they should provide three sets of information, as indicated below. 
+Refer to the [Log Forwarding article](/help/implementing/developing/introduction/log-forwarding.md) for details on how to configure this feature.
 
 >[!NOTE]
 >
->Splunk forwarding for sandbox program environments is not supported.
-
->[!NOTE]
->
->The Splunk forwarding capability is not possible from a dedicated egress IP address.
-
-You should make sure that the initial request includes all dev environment that should be enabled, in addition to the stage/prod environments. Splunk must have an SSL certificate, and be public facing. 
-
-If any new dev environments created after the initial request are intended to have Splunk forwarding, but don't have it enabled, an additional request should be made.
-
-Also note that if dev environments have been requested, it is possible that other dev environments not in the request or even sandbox environments will have Splunk forwarding enabled and will share a Splunk index. Customers can use the `aem_env_id` field to distinguish between these environments.
-
-Below you will find a sample customer support request:
-
-Program 123, Production Env
-
-* Splunk HEC endpoint address: `splunk-hec-ext.acme.com`
-* Splunk index: acme_123prod (customer can choose whatever naming convention it wishes)
-* Splunk port: 443
-* Splunk HEC token: ABC123
-
-Program 123, Stage Env
-
-* Splunk HEC endpoint address: `splunk-hec-ext.acme.com`
-* Splunk index: acme_123stage
-* Splunk port: 443
-* Splunk HEC token: ABC123
-
-Program 123, Dev Envs
-
-* Splunk HEC endpoint address: `splunk-hec-ext.acme.com`
-* Splunk index: acme_123dev
-* Splunk port: 443
-* Splunk HEC token: ABC123
-
-It may be sufficient for the same Splunk index to be used for each environment, in which case either the `aem_env_type` field can be used to differentiate based on the values dev, stage, and prod. If there are multiple dev environments, the `aem_env_id` field can also be used. Some organizations may choose a separate index for the production environment's logs if the associated index limits access to a reduced set of Splunk users. 
-
-Here is an example log entry:
-
-```
-aem_env_id: 1242
-aem_env_type: dev
-aem_program_id: 12314
-aem_tier: author
-file_path: /var/log/aem/error.log
-host: 172.34.200.12 
-level: INFO
-msg: [FelixLogListener] com.adobe.granite.repository Service [5091, [org.apache.jackrabbit.oak.api.jmx.SessionMBean]] ServiceEvent REGISTERED
-orig_time: 16.07.2020 08:35:32.346
-pod_name: aemloggingall-aem-author-77797d55d4-74zvt
-splunk_customer: true
-```
+>Log forwarding for sandbox program environments is not supported.

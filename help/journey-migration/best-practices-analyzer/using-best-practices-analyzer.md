@@ -1,7 +1,9 @@
 ---
 title: Using Best Practices Analyzer
-description: Using Best Practices Analyzer
+description: Learn how to use the Best Practices Analyzer to understand upgrade readiness.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
+feature: Migration
+role: Admin
 ---
 # Using Best Practices Analyzer {#using-best-practices-analyzer}
 
@@ -22,12 +24,12 @@ Follow the section below to understand the important considerations for running 
 * BPA is supported on AEM instances with version 6.1 and above.
 
    >[!NOTE]
-   >Please see [Installing on AEM 6.1](#installing-on-aem61) for special requirements for installing BPA on AEM 6.1.
+   >See [Installing on AEM 6.1](#installing-on-aem61) for special requirements for installing BPA on AEM 6.1.
 
 * BPA can run on any environment, but it is preferred to have it run on a *Stage* environment.
 
    >[!NOTE]
-   >In order to avoid an impact on business critical instances, it is recommended that you run BPA on an *Author* environment that is as close as possible to the *Production* environment in the areas of customizations, configurations, content and user applications. Alternatively, it can be run on a clone of the production *Author* environment.
+   >To avoid an impact on business critical instances, it is recommended that you run BPA on an *Stage* environment that is as close as possible to the *Production* environment in the areas of customizations, configurations, content and user applications. Alternatively, it can be run on a clone of the production *Author* environment.
 
 * The generation of BPA report contents can take a significant amount of time, from several minutes to a few hours. The amount of time required is highly dependent on the size and nature of the AEM repository content, the AEM version, and other factors.
 
@@ -45,63 +47,101 @@ The Best Practices Analyzer can be downloaded as a zip file from the Software Di
 >[!NOTE]
 >Download the Best Practices Analyzer from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal.
 
+## Source Environment Connectivity {#source-environment-connectivity}
+
+The source AEM instance may be running behind a firewall where it can only reach certain hosts which have been added to an Allow List. To automatically upload the BPA generated report to Cloud Acceleration Manager successfully, the following endpoints need to be accessible from the instance that is running AEM:
+
+* The Azure blob storage service: `casstorageprod.blob.core.windows.net`
+
+
 ## Viewing the Best Practices Analyzer Report {#viewing-report}
 
 ### Adobe Experience Manager 6.3.0 and later {#aem-later-versions}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_bpa_upload_setup"
+>title="Automatically upload Best Practices Analyzer report to CAM"
+>abstract="Provide the BPA upload key to automatically upload the generated BPA report to Cloud Acceleration Manager (CAM)."
+
 Follow this section to learn how to view the Best Practices Analyzer report:
 
-1. Select Adobe Experience Manager and navigate to tools -> **Operations** -> **Best Practices Analyzer**.
+1. Select Adobe Experience Manager and navigate to tools > **Operations** > **Best Practices Analyzer**.
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
+   ![Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
-1. Click on **Generate Report** to execute the Best Practices Analyzer. 
+1. Click **Generate Report** to execute the Best Practices Analyzer. 
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
+   ![Generate Report](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
-1. While the BPA is generating the report, you can see the progress made by the tool on the screen. It displays the number of items analyzed and also displays the number of findings found. 
+>[!NOTE]
+> Starting from BPA version 2.1.54, a new feature has been introduced to obtain the Lighthouse Score.
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
 
-1. Once the BPA report is generated, it displays a summary and the number of the findings in a tabular format organized by the type of finding and the importance level. To get more details about a particular finding, you can click on the number that corresponds to the type of finding in the table. 
+1. After clicking **Generate Report**, a pop-up will appear requesting the AEM Public Site URL for the Lighthouse Score. The user need to enter a valid URL in the provided field.
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
+    ![image](/help/journey-migration/best-practices-analyzer/assets/bpa_popup_url.png)
 
-   The above action will automatically scroll to the location of that finding in the report.
+    1. If the URL is valid, a success message will be displayed.
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic5.png)
+       ![image](/help/journey-migration/best-practices-analyzer/assets/valid_url.png)
 
-1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **Export to CSV**, as shown in the figure below.
+    1. If the URL is invalid, an error message will be shown.
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic6.png)
+       ![image](/help/journey-migration/best-practices-analyzer/assets/invalid_url.png)
 
-   >[!NOTE]
-   >You may force the BPA to clear its cache and regenerate the report by clicking **Refresh Report**. 
+1. Provide the BPA upload key to automatically upload the generated BPA report to [Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md). To get the upload key, navigate to the [Best Practices Analysis in CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic7.png)
+   ![Set BPA Upload Key](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
 
-   >[!NOTE]
-   >While the report is being regenerated, it displays the progress in terms of percentage completed as shown in the image below.
+>[!NOTE]
+>You have the option to skip the automatic upload to CAM by selecting **Skip report auto upload to CAM**. If you choose to skip, you will need to manually download the BPA report as a comma-separated value file and then upload the file in CAM. It is recommended to use the upload key option since it streamlines the operation. 
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic8.png)
+>[!IMPORTANT]
+>When manually uploading to CAM, report sizes are restricted to approximately 200MB. For larger reports you will need to leverage the automatic upload. 
+ 
+1. The **Generate** button becomes active when a valid key is provided. Click on **Generate** to initiate report generation.
+
+   ![Generate Report](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
+ 
+1. While the BPA is generating the report, you can see the progress made by the tool on the screen. It displays the progress in terms of percentage completed. It also displays the number of items analyzed and also displays the number of findings found. 
+
+   ![Generating Report](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
+
+>[!NOTE]
+>The BPA upload key expiration timestamp is displayed on the top right corner. You should renew the BPA upload key when it's near its expiration. To renew the key, you can click on **Renew** to navigate to CAM to renew the key.
+
+1. After the BPA report is generated, it displays a summary and the number of the findings in a tabular format organized by the type of finding and the importance level. To get more details about a particular finding, you can click the number that corresponds to the type of finding in the table. 
+
+   ![Report overview](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
+
+1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **Export to CSV**. You also have the option to view the report in CAM by clicking on **Go to CAM**. This will take you to the [Best Practices Analysis](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis) page in CAM. 
+
+You may force the BPA to clear its cache and regenerate the report by clicking **Refresh Report**.
+
+   ![Refresh report](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)   
+
+1. If the cache expires, you have the option of viewing the last generated report in CAM by clicking on **View the last generated report in CAM** or initiate a new report generation by clicking on **Generate New Report**. 
+
+ ![No report](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)   
+
 
 #### Using Filters in the Best Practices Analyzer Report {#bpa-filters}
 
 To filter out findings related to [ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), follow the steps below:
 
-1. Click on the left rail icon on the left-hand side of the page. This will display the **ACS Commons Filter**. Click on the **ACS Commons Filter** to display the interactive checkbox as shown in the image below.
+1. Click the left rail icon on the left-hand side of the page. This will display the **ACS Commons Filter**. Click the **ACS Commons Filter** to display the interactive checkbox as shown in the image below.
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
+   ![ACS Commons Filter](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
    >The left rail icon will appear only if the BPA detects usage of ACS Commons.
 
 1. Unselect the box to filter out all findings related to ACS Commons. You should see a **Filtered Finding Count** on the report as shown in the image below. The filter is also applied to the report when it is exported in a comma-separated-value (CSV) format.
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
+   ![Filtered Finding Count](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-   >The ACS Commons findings should not be ignored. Refer to [documentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) to determine compatibility with AEM as a Cloud Service. 
+   >The ACS Commons findings should not be ignored. See [documentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) to determine compatibility with AEM as a Cloud Service. 
 
 <!--
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
@@ -120,8 +160,8 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >id="aemcloud_bpa_interpreting"
 >title="Interpreting the Best Practices Analyzer Report"
 >abstract="There are two options for viewing BPA report outputs: UI and CSV. When the Best Practices Analyzer tool is run in the AEM instance, the UI report is displayed as results in the tool window. The CSV format of the report includes information that is generated from the Pattern Detector output, sorted and organized by category type, sub-type, and importance level."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#analysis-report" text="Reviewing Best Practices Analysis Report"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="Understanding Best Practices Analyzer Report categories"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#analysis-report" text="Reviewing Best Practices Analysis Report"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html" text="Understanding Best Practices Analyzer Report categories"
 
 When the Best Practices Analyzer tool is run in the AEM instance, the report is displayed as results in the tool window. 
 
@@ -138,7 +178,7 @@ The format of the report is:
 An importance level is assigned to each finding to indicate a rough priority for action. 
 
 >[!NOTE]
->To learn more about each Finding Category, refer to [Pattern Detector Categories](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
+>To learn more about each Finding Category, see [Pattern Detector Categories](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
 
 Follow the table below to understand the importance levels:
 
@@ -151,11 +191,11 @@ Follow the table below to understand the importance levels:
 
 ## Interpreting the Best Practices Analyzer CSV Report {#cra-csv-report}
 
-When you click the **CSV** option from your AEM instance, the CSV format of the Best Practices Analyzer report is built from the content cache and returned to your browser. Depending on your browser settings, this report will be automatically downloaded as a file with a default name of `results.csv`. 
+When you click the **CSV** option from your AEM instance, the CSV format of the Best Practices Analyzer report is built from the content cache and returned to your browser. Depending on your browser settings, this report is automatically downloaded as a file with a default name of `results.csv`. 
 
-If the cache has expired then the report will be regenerated before the CSV file is built and downloaded.
+If the cache has expired, then the report is regenerated before the CSV file is built and downloaded.
 
-The CSV format of the report includes information that is generated from the Pattern Detector output, sorted and organized by category type, sub-type, and importance level. Its format is suitable for viewing and editing in an application such as Microsoft Excel. It is intended to provide all of the finding information in a repeatable format that can be helpful when comparing reports over time to measure progress.
+The CSV format of the report includes information that is generated from the Pattern Detector output, sorted and organized by category type, sub-type, and importance level. Its format is suitable for viewing and editing in an application such as Microsoft Excel. It is intended to provide allthe finding information in a repeatable format that can be helpful when comparing reports over time to measure progress.
 
 The columns of the CSV format report are:
 
@@ -186,7 +226,7 @@ The HTTP interface may be used in a variety of methods.
 
 One simple way is to open a browser tab in the same browser in which you have already signed in to AEM as an administrator. You can enter the URL in the browser tab and have the results displayed or downloaded by the browser.
 
-You may also use a command-line tool such as `curl` or `wget` as well as any HTTP client application. When not using a browser tab with an authenticated session, you must supply an administrative user name and password as part of the comment. 
+You may also use a command-line tool such as `curl` or `wget` and any HTTP client application. When not using a browser tab with an authenticated session, you must supply an administrative user name and password as part of the comment. 
 
 The following is an example of how this can be done:
 `curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.csv' > report.csv`.
@@ -201,11 +241,11 @@ The following HTTP headers are used by this interface:
 
 The following HTTP query parameters are available as a convenience for when HTTP headers might not be easily used:
 
-* `max-age` (number, optional): Specifies the cache freshness lifetime in seconds. This number must be 0 or greater. The default freshness lifetime is 86400 seconds. Without this parameter or the corresponding header a fresh cache will be used to serve requests for 24 hours, at which point the cache must be regenerated. Using `max-age=0` will force the cache to be cleared and initiate a regeneration of the report, using the previous non-zero freshness lifetime for the newly generated cache.
+* `max-age` (number, optional): Specifies the cache freshness lifetime in seconds. This number must be 0 or greater. The default freshness lifetime is 86400 seconds. Without this parameter or the corresponding header, a fresh cache is used to serve requests for 24 hours, at which point the cache must be regenerated. Using `max-age=0` will force the cache to be cleared and initiate a regeneration of the report, using the previous non-zero freshness lifetime for the newly generated cache.
 * `respond-async` (boolean, optional): Specifies that the response should be provided asynchronously. Using `respond-async=true` when the cache is stale will cause the server to return a response of `202 Accepted` without waiting for the cache to be refreshed and for the report to be generated. If the cache is fresh then this parameter has no effect. The default value is `false`. Without this parameter or the corresponding header the server will respond synchronously, which may require a significant amount of time and require an adjustment to the maximum response time for the HTTP client.
-* `may-refresh-cache` (boolean, optional): Specifies that the server may refresh the cache in response to a request if the current cache is empty, stale, or soon to be stale. If `may-refresh-cache=true`, or if it is not specified, then the server may initiate a background task which will invoke the Pattern Detector and refresh the cache. If `may-refresh-cache=false` then the server will not initiate any refresh task that would otherwise have been done if the cache is empty or stale, in which case the report will be empty. Any refresh task which is already in process will not be affected by this parameter.
-* `return-minimal` (boolean, optional): Specifies that the response from the server should only include the status containing the progress indication and cache status in the JSON format. If `return-minimal=true`, then the response body will be limited to the status object. If `return-minimal=false`, or if it is not specified, then a complete response will be provided.
-* `log-findings` (boolean, optional): Specifies that the server should log the contents of the cache when it is first built or refreshed. Each finding from the cache will be logged as a JSON string. This logging will only occur if `log-findings=true` and the request generates a new cache.
+* `may-refresh-cache` (boolean, optional): Specifies that the server may refresh the cache in response to a request if the current cache is empty, stale, or soon to be stale. If `may-refresh-cache=true`, or if it is not specified, then the server may initiate a background task which will invoke the Pattern Detector and refresh the cache. If `may-refresh-cache=false` then the server will not initiate any refresh task that would otherwise have been done if the cache is empty or stale, in which case the report is empty. Any refresh task which is already in process will not be affected by this parameter.
+* `return-minimal` (boolean, optional): Specifies that the response from the server should only include the status containing the progress indication and cache status in the JSON format. If `return-minimal=true`, then the response body is limited to the status object. If `return-minimal=false`, or if it is not specified, then a complete response is provided.
+* `log-findings` (boolean, optional): Specifies that the server should log the contents of the cache when it is first built or refreshed. Each finding from the cache is logged as a JSON string. This logging will only occur if `log-findings=true` and the request generates a new cache.
 
 When both an HTTP header and corresponding query parameter are present, the query parameter will take precedence.
 
@@ -229,7 +269,7 @@ The following response values are possible:
 
 ### Cache Lifetime Adjustment {#cache-adjustment}
 
-The default BPA cache lifetime is 24 hours. With the option for refreshing a report, and regenerating the cache, in both the AEM instance and the HTTP interface, this default value is likely to be appropriate for most uses of the BPA. If the report generation time is particularly long for your AEM instance, you may wish to adjust the cache lifetime in order to minimize the regeneration of the report.
+The default BPA cache lifetime is 24 hours. With the option for refreshing a report, and regenerating the cache, in both the AEM instance and the HTTP interface, this default value is likely to be appropriate for most uses of the BPA. If the report generation time is particularly long for your AEM instance, you may want to adjust the cache lifetime to minimize the regeneration of the report.
 
 The cache lifetime value is stored as the `maxCacheAge` property on the following repository node:
 `/apps/best-practices-analyzer/content/BestPracticesReport/jcr:content`

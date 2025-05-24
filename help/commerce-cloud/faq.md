@@ -2,6 +2,8 @@
 title: AEM - Commerce Integration using Commerce Integration Framework FAQ
 description: AEM - Commerce Integration using Commerce Integration Framework FAQ
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
+feature: Commerce Integration Framework
+role: Admin, Architect, User
 ---
 # AEM - Commerce Integration using Commerce Integration Framework FAQ
 
@@ -41,7 +43,7 @@ Dynamic data such as price or inventory is not cached on the Dispatcher. Dynamic
 
 ## 9. How does cache invalidation for AEM Dispatcher work with AEM and commerce?
 
-We recommend setting up TTL-based cache invalidation for pages cached on the Dispatcher. For dynamic information such as price or stock, we recommend rendering the data client-side. For more information about TTL-based cache invalidation, see [Optimizing the Dispatcher cache](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html) and [AEM Performance optimization](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/performance.html).
+Adobe recommends setting up TTL-based cache invalidation for pages cached on the Dispatcher. For dynamic information such as price or stock, Adobe recommends rendering the data client-side. For more information about TTL-based cache invalidation, see [Optimizing the Dispatcher cache](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html) and [AEM Performance optimization](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/performance.html).
 
 ## 10. Is there any recommendation on unified search across AEM content with Commerce?
 
@@ -57,11 +59,11 @@ Product data is already translated in PIM or in Adobe Commerce. The AEM - Adobe 
 
 ## 13. Is there a way to enhance the product data with commercial text? Where do you do this? In AEM or in the commerce solution?
 
-We recommend managing marketing related data and content in AEM. Decorate product data from your commerce solution with additional attributes using Content Fragments or create and link Experience Fragments for unstructured content with your products.
+Adobe recommends managing marketing related data and content in AEM. Decorate product data from your commerce solution with additional attributes using Content Fragments or create and link Experience Fragments for unstructured content with your products.
 
-## 14. How can we ensure PCI compliance when using AEM for the entire presentation layer?
+## 14. How can PCI compliance be ensured when using AEM for the entire presentation layer?
 
-We recommend using abstracted payment methods. This puts the browser client in direct communication with the payment gateway provider so that neither Adobe or the commerce solutions hold or pass cardholder data. This approach requires only a level 3 PCI compliance. However, there are additional things to consider to be fully PCI-compliant such as how employees interact with the system and data. For more information about Adobe Commerce PCI compliance, please refer to [PCI Compliance Requirements](https://business.adobe.com/products/magento/pci-compliance.html).
+Adobe recommends using abstracted payment methods. This puts the browser client in direct communication with the payment gateway provider so that neither Adobe or the commerce solutions hold or pass cardholder data. This approach requires only a level 3 PCI compliance. However, there are additional things to consider to be fully PCI-compliant such as how employees interact with the system and data. For more information about Adobe Commerce PCI compliance, see [PCI Compliance Requirements](https://business.adobe.com/products/magento/pci-compliance.html).
 
 ## 15. If I use AEM and Adobe Commerce cloud versions, is this joint solution PCI compliant?
 
@@ -69,4 +71,4 @@ Yes, Self-Assessment Questionnaire D and Attestation of Compliance are available
 
 ## 16. How can I request for an I/O Runtime trial license?
 
-You can request for a trial license to use I/O Runtime [here](https://developer.adobe.com/app-builder/trial/).
+See [Getting Access](https://developer.adobe.com/runtime/docs/guides/overview/getting_access/) for details of requesting a trial license to use I/O Runtime.

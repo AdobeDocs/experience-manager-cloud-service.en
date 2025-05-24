@@ -1,8 +1,11 @@
 ---
 title: Universal Editor Authentication
-description: Learn how the Universal Editor authenticates.
+description: Learn how the Universal Editor uses Adobe's Identity Management System (IMS) for authentication.
 exl-id: fb86c510-3c41-4511-81b7-1bdf2f5e7dd3
+feature: Developing
+role: Admin, Architect, Developer
 ---
+
 # Universal Editor Authentication {#authentication}
 
 Learn how the Universal Editor authenticates.
@@ -23,13 +26,6 @@ Whenever a user performs a CRUD operation, a call is sent to the Universal Edito
 
 ![Standard authentication flow](assets/standard-flow.png)
 
-## Additional Resources {#additional-resources}
+This diagram and article describe the internal authentication of the Universal Editor itself.
 
-To learn more about the Universal Editor, see these documents.
-
-* [Universal Editor Introduction](introduction.md) - Learn how the Universal Editor enables editing any aspect of any content in any implementation in order to deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.
-* [Authoring Content with the Universal Editor](authoring.md) - Learn how easy and intuitive it is for content authors to create content using the Universal Editor.
-* [Publishing Content with the Universal Editor](publishing.md) - Learn how the Universal Visual Editor publishes content and how your apps can handle the published content.
-* [Getting Started with the Universal Editor in AEM](getting-started.md) - Learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
-* [Universal Editor Architecture](architecture.md) - Learn about the architecture of the Universal Editor and how data flows between its services and layers.
-* [Attributes and Types](attributes-types.md) - Learn about the data attributes and types that the Universal Editor requires.
+{{ue-headless-auth}}

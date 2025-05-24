@@ -2,6 +2,8 @@
 title: Release Notes for 2020.7.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] as a Cloud Service Release Notes for 2020.7.0."
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
+feature: Release Information
+role: Admin
 ---
 # Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 {#release-notes}
 
@@ -33,7 +35,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 * Publishing of assets to [!DNL Dynamic Media] is simplified and made more robust by making it an integral part of overall asset processing pipeline using asset microservices and improving the batch publishing backend.
 
-* Workflow steps that are not compatible with a Cloud Service deployment are now marked with a warning in the [!UICONTROL workflow model] editor. Additionally, when executing the existing workflows on Cloud Service environment, the incompatible workflow steps are skipped.
+* Workflow steps that are not compatible with a Cloud Service deployment are now marked with a warning in the [!UICONTROL workflow model] editor. Also, when executing the existing workflows on Cloud Service environment, the incompatible workflow steps are skipped.
 
 * Workflow models created by customers that are deployed to `/conf/global` in the Git project associated with the environment in [!DNL Cloud Manager] are automatically deployed to `/var` and thus available in [!DNL Experience Manager]. The product workflow models under `/libs` that were changed by customer are not automatically deployed to `/var`.
 
@@ -49,7 +51,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 AEM Commerce is now available on Cloud Service.
 
-  Refer to [Getting started with AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html) for more details.
+  See [Getting started with AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html) for more details.
 
 ## Core Components {#core-components}
 
@@ -60,7 +62,7 @@ Release 2.11.0 of the [AEM Core Components](https://experienceleague.adobe.com/d
 * Introduction of a new [PDF Viewer Component](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html).
 
 * Accelerated Mobile Pages (AMP) support of Core Components is now available. It helps to produce faster customer experiences by making the page transition instantaneously when entering the site from a Google mobile search result, which improves user engagement and SEO.
-   Refer to [AMP Support for the Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) for more details.
+   See [AMP Support for the Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) for more details.
 
 * Compatibility with version 1.0.2 of the [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html).
 
@@ -82,12 +84,12 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 202
 
 * Cloud Manager pipelines now support customer-set variables and secrets. 
 
-   Refer to Pipeline Variables for more details.
+   See Pipeline Variables for more details.
 
 * Authentication-bound Private Maven Repositories are now supported.
 
 * The Cloud Manager build container now supports both Java 8 and Java 11.
-  Refer to Using Java 11 Support for more details.
+  See Using Java 11 Support for more details.
 
 ### Bug Fixes {#bug-fixes-cm}
 
@@ -99,7 +101,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 202
 
 * Certain failures in the code quality process could result in the log file not being generated correctly.
 
-* When creating a new program, the suggested name would sometimes return a duplicate of an existing program name.
+* When creating a program, the suggested name would sometimes return a duplicate of an existing program name.
 
 * Some large pipeline step logs could not be consistently downloaded through the user interface.
 
@@ -115,7 +117,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 202
 
 ### What's New {#what-is-new-foundations}
 
-* [Logs can be forwarded to Splunk accounts](/help/implementing/developing/introduction/logging.md#splunk-logs), which allows organizations to leverage their Splunk investment.
+* [Logs can be forwarded to Splunk accounts](/help/implementing/developing/introduction/logging.md#splunk-logs), which allows organizations to use their Splunk investment.
 
 * [A static, dedicated egress IP address](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address) can be assigned for outbound traffic programmed in Java code, which may be useful for some integrations.
 
@@ -131,7 +133,7 @@ Follow this section to learn about what is new and the updates for Cloud Readine
 
 * Earlier version of the CRA could not be run on Adobe Experience Manager (AEM) 6.1. Explicit support to allow users in the administrators group was added.
 
-   Refer to [Installing CRA on AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) for more details.
+   See [Installing CRA on AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) for more details.
 
 * The expiration timestamp displayed on the summary report was incorrect.
 

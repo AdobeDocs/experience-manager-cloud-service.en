@@ -1,16 +1,18 @@
 ---
 title: Overview to Best Practices Analyzer
-description: Overview to Best Practices Analyzer
+description: Learn how to use the Best Practices Analyzer to asses the adherence of your AEM implementation to the recommended best practices
 exl-id: 46c567f8-91e2-4d85-98bd-61d183b887d5
+feature: Migration
+role: Admin
 ---
 # Overview {#overview-best-practices-analyzer}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_overview"
 >title="Best Practices Analyzer overview"
->abstract="The Best Practices Analyzer provides an assessment of your current AEM implementation by indicating areas that are not following AEM best practices. It also provides guidance on next steps to adopt AEM best practices. Additionally, it helps accelerate the processes of assessing readiness to move from an existing Adobe Experience Manager (AEM) deployment to AEM as a Cloud Service."
+>abstract="The Best Practices Analyzer provides an assessment of your current AEM implementation by indicating areas that are not following AEM best practices. It also provides guidance on next steps to adopt AEM best practices. Also, it helps accelerate the processes of assessing readiness to move from an existing Adobe Experience Manager (AEM) deployment to AEM as a Cloud Service."
 
-The Best Practices Analyzer provides an assessment of your current AEM implementation by indicating areas that are not following AEM best practices. It also provides guidance on next steps to adopt AEM best practices. Additionally, it helps accelerate the processes of assessing readiness to move from an existing Adobe Experience Manager (AEM) deployment to AEM as a Cloud Service.
+The Best Practices Analyzer provides an assessment of your current AEM implementation by indicating areas that are not following AEM best practices. It also provides guidance on next steps to adopt AEM best practices. Also, it helps accelerate the processes of assessing readiness to move from an existing Adobe Experience Manager (AEM) deployment to AEM as a Cloud Service.
  
 This tool generates a report that identifies areas of potential refactoring, which is the first step in the transition journey to AEM as a Cloud Service.
 
@@ -31,4 +33,4 @@ Additional information about the categories and possible implications and soluti
 >[!NOTE]
 >The Best Practices Analyzer Report speeds up the process of estimating the time and cost that is required to transition to AEM as a Cloud Service by providing information that would otherwise have to be manually gathered and evaluated.
  
-You can also download the Best Practices Analyzer report from your AEM instance. Refer to [Viewing the Best Practices Analyzer Report](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) for more details.
+You can also download the Best Practices Analyzer report from your AEM instance. See [Viewing the Best Practices Analyzer Report](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) for more details.

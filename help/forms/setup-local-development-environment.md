@@ -1,9 +1,11 @@
 ---
-title: Set up a local development environment for Adobe Experience Manager Forms as a Cloud Service
+title: How do I set up a local development environment for AEM Forms?
 description: Set up a local development environment for Adobe Experience Manager Forms as a Cloud Service
+role: Admin, Developer, User
+feature: Adaptive Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
 ---
-# Set up a local development environment and initial development project {#overview}
+# Set up local development environment for AEM Forms {#overview}
 
 When you set up and configure an [!DNL  Adobe Experience Manager Forms] as a [!DNL  Cloud Service] environment, you set up development, staging, and production environments on cloud. In addition, you can also set up and configure a local development environment.
 
@@ -82,8 +84,13 @@ To download latest version of Adobe Experience Manager as a Cloud Service SDK, E
 
 1. Navigate to the **[!UICONTROL AEM as a Cloud Service]** tab.
 1. Sort by published date in descending order.
-1. Click on the latest Adobe Experience Manager as a Cloud Service SDK, Experience Manager Forms feature archive (AEM Forms add-on), forms reference assets, or Forms Designer.
-1. Review and accept the EULA. Tap the **[!UICONTROL Download]** button.
+1. Click the latest Adobe Experience Manager as a Cloud Service SDK, Experience Manager Forms feature archive (AEM Forms add-on), forms reference assets, or Forms Designer.
+
+    >[!NOTE]
+    >
+    > It is recommended to download the latest version of Experience Manager Forms feature archive (AEM Forms add-on), forms reference assets, or Forms Designer for a seamless compatibility with Adobe Experience Manager as a Cloud Service SDK.
+
+1. Review and accept the EULA. Select the **[!UICONTROL Download]** button.
 
 ## Set up development tools for AEM Projects {#setup-development-tools-for-AEM-projects}
 
@@ -122,7 +129,19 @@ Adobe Experience Manager Forms as a Cloud Service feature archive provides tools
 
 1. Navigate to the crx-quickstart/install directory. If the folder does not exist, create it.
 
-1. Stop your  AEM instance, place the [!DNL AEM Forms] add-on feature archive, `aem-forms-addon-<version>.far`,  in the install folder, and restart the instance.
+1. Stop your  AEM instance, place the [!DNL AEM Forms] add-on feature archive, `aem-forms-addon-<version>.far`, in the install folder.
+1. Go to active command window and press `Ctrl + C` command to restart the SDK. 
+
+    >[!NOTE]
+    >
+    > It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
+
+<!--**Q**: I've set up a Aem as a Cloud Service environment and added the Forms Add-On for a project. After the .far file addition, the bundles are not in the active state and are in installed state only due to the missing dependencies. How to make the bundles in the active state?
+**A**: To resolve the issue:
+1. Start the AEM and wait for it to start completely (all bundles up)
+1. Stop aem (ctrl + c). Place the forms far in the install folder.
+1. Restart AEM.-->
+
 
 ### Configure users and permissions {#configure-users-and-permissions}
 
@@ -195,22 +214,38 @@ AEM Forms as a Cloud Services provides a docker-based SDK environment for easier
     > managed by Docker when using WSL2 (modern). You have to
     > explicitly configure file sharing while using  Hyper-V (legacy).  
 
-1. Create a folder, say aem-sdk, in parallel to your author and publish instances. For example C:\aem-sdk.  
+1. Create a folder, say aem-sdk, in parallel to your author and publish instances. For example, C:\aem-sdk.  
 
 1. Extract the `aem-forms-addon-<version>.zip\aem-forms-addon-native-<version>.zip` file.
 
    ![extracted aem forms add on native](assets/microservice-docker.png)
 
-1. Create an environment variable AEM_HOME and point to local AEM Author installation. For example C:\aem\author\.
+1. Create an environment variable AEM_HOME and point to local AEM Author installation. For example, C:\aem\author\.
 
-1. Open sdk.bat or sdk.sh for editing. Set the AEM_HOME to point to local AEM Author installation. For example C:\aem\author\.
+1. Open sdk.bat or sdk.sh for editing. Set the AEM_HOME to point to local AEM Author installation. For example, C:\aem\author\.
 
 1. Open command prompt and navigate to the `aem-forms-addon-native-<version>` folder.
 
-1. Ensure that your local AEM Author instance is up and running. Run the following command to start the SDK:
+1. Ensure that your local AEM Author instance is up and running. Run the following commands to start the SDK:
 
-    * (on Microsoft&reg; Windows) `sdk.bat start`
-    * (on Linux&reg; or Apple macOS) `AEM_HOME=[local AEM Author installation] ./sdk.sh start`
+    * On Microsoft&reg; Windows
+        
+        ```shell
+        
+        sdk.bat start
+        
+        ```
+
+
+    * Linux&reg; or Apple macOS 
+    
+        ```Shell
+
+        % export AEM_HOME=[local AEM Author installation]
+        % ./sdk.sh start
+    
+        ```
+
 
     >[!NOTE]
     >
@@ -224,7 +259,7 @@ You can now use the local development environment to render Document of Record. 
 
 Use this project to create Adaptive Forms, deploy configuration updates, overlays, create custom Adaptive Form components, test, and custom code on local [!DNL Experience Manager Forms] SDK. After testing locally, you can deploy the project to  [!DNL Experience Manager Forms] as a Cloud Service production and non-production environments. When you deploy the project, the following AEM Forms assets are also deployed:
 
-|Themes | Templates | Form Data Models |
+|Themes | Templates | Form Data Model (FDM) |
 ---------|----------|---------
 | Canvas 3.0 | Basic | Microsoft&reg; Dynamics 365 |
 | Tranquil   | Blank | Salesforce |
@@ -234,7 +269,7 @@ Use this project to create Adaptive Forms, deploy configuration updates, overlay
 
 >[!NOTE]
 >
-> Setup AEM Archetype version 30 or later based project to get and use Microsoft&reg; Dynamics 365 and Salesforce Form Data Models with AEM Forms as a Cloud Service.
+> Setup AEM Archetype version 30 or later based project to get and use Microsoft&reg; Dynamics 365 and Salesforce Form Data Model (FDM) with AEM Forms as a Cloud Service.
 > Setup AEM Archetype version 32 or later based project to get and use Tranquil, Urbane, and Ultramarine themes with AEM Forms as a Cloud Service.
 
 To set up the project:
@@ -262,6 +297,10 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
     * Use the `includeFormscommunications=y` option to include Forms Core Components and dependencies required to include Customer Communications functionality.
 
+        >[!WARNING]
+        >
+        >* When creating an Archetype project with version 45, the [AEM Archetype Project Folder]/pom.xml initially sets the forms core components version to 2.0.64. Prior to building or deploying the Archetype project, update the forms core components version to 2.0.62.
+
 1. Deploy the project to your local development environment. You can use the following command to deploy to your local development environment
 
     `mvn -PautoInstallPackage clean install`
@@ -278,7 +317,7 @@ Perform the following steps to configure local Dispatcher and then add Forms-spe
 
 ### Set up local Dispatcher {#setup-local-dispatcher}
 
-The [!DNL Experience Manager] as a Cloud Service SDK includes the recommended Dispatcher Tools version, that facilitates configuring, validating, and simulating Dispatcher locally. Dispatcher Tools are Docker-based and provide command-line tools to transpile Apache HTTP Web Server and Dispatcher configuration files into a compatible format and deploy them to Dispatcher running in the Docker container.
+The [!DNL Experience Manager] as a Cloud Service SDK includes the recommended Dispatcher Tools version that facilitates configuring, validating, and simulating Dispatcher locally. Dispatcher Tools are Docker-based and provide command-line tools to transpile Apache HTTP Web Server and Dispatcher configuration files into a compatible format and deploy them to Dispatcher running in the Docker container.
 
 Caching on Dispatcher allows [!DNL AEM Forms] to prefill Adaptive Forms at a client. It improves rendering speed of prefilled forms.
 
@@ -290,7 +329,7 @@ Perform the following steps to configure Dispatcher cache for Experience Manager
 
 1. Open your AEM Project and navigate to `\src\conf.dispatcher.d\available_farms`
 1. Create a copy of the `default.farm` file. For example, `forms.farm`.
-1. Open the newly created `forms.farm` file for editing and replace the following code:
+1. Open the created `forms.farm` file for editing and replace the following code:
 
     ```json
     #/ignoreUrlParams {
@@ -327,7 +366,7 @@ Your local development environment is ready.
 
 ## Enable Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment
 
-Enabling Adaptive Forms Core Components on AEM Forms as a Cloud Service, allows you to start creating, publishing, and delivering Core Components based Adaptive Forms and Headless Forms using your AEM Forms Cloud Service instances to multiple channels. You require Adaptive Forms Core Components enabled environment to use Headless Adaptive Forms.
+Enabling Adaptive Forms Core Components on AEM Forms as a Cloud Service, lets you start creating, publishing, and delivering Core Components based Adaptive Forms and Headless Forms using your AEM Forms Cloud Service instances to multiple channels. You require Adaptive Forms Core Components enabled environment to use Headless Adaptive Forms.
 
 For instructions, see [Enable Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment](/help/forms/enable-adaptive-forms-core-components.md)
 
@@ -372,7 +411,7 @@ To back up and move assets from existing SDK to a new SDK environment:
 
 ### Create a backup of your existing content {#create-backup-of-your-existing-content}
 
-Back up your Adaptive Forms, templates, form data model, theme, configurations, and custom code. You can perform the following action to create backup:
+Back up your Adaptive Forms, templates, form data model (FDM), theme, configurations, and custom code. You can perform the following action to create backup:
 
 1. [Download](import-export-forms-templates.md#manage-forms-and-related-assets) Adaptive Forms, themes, and PDF forms.
 1. Export Adaptive Form templates.

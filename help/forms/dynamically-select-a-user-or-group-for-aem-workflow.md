@@ -1,11 +1,15 @@
 ---
-title: Dynamically select a user or group for AEM Forms-centric workflow steps
-description: Learn how to select a user or group for an [!DNL AEM Forms] workflow at the runtime. 
+title: How to select users in AEM Workflow?
+description: Learn how to select a user or group for an [!DNL AEM Forms] workflow at the runtime.
 content-type: troubleshooting
 topic-tags: publish
+feature: Adaptive Forms
+role: User
+hide: yes
+hidefromtoc: yes
+exl-id: 597fa30c-6fb7-46c2-8ee1-2986c4860266
 ---
-
-# Dynamically select a user or group for AEM Forms-centric workflow steps {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
+# Dynamic User or Group Selection in AEM Workflow {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
 
 Learn how to select a user or group for an [!DNL AEM Forms] workflow at the runtime. 
 
@@ -341,3 +345,7 @@ public class DummyRecipientChoser implements RecipientInfoSpecifier {
 
 }
 ```
+
+>[!MORELIKETHIS]
+>
+>* [Use AEM Forms workflow for business process automation](/help/forms/aem-forms-workflow.md)

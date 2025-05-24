@@ -2,6 +2,9 @@
 title: Managing Pages in your Launch
 description: You can create new pages within your Launch. You can also delete unwanted pages.
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
+solution: Experience Manager Sites
+feature: Authoring, Launches
+role: User
 ---
 # Managing Pages within your Launch {#managing-pages-in-launch}
 
@@ -33,17 +36,18 @@ You can navigate through the structure of your launch from:
 
 * The **Sites** Console:
   If you select a specific source page and open **References**, you can then select **Launches** followed by **Manage Content**:
+  
   ![Launch Console - Manage Content](/help/sites-cloud/authoring/assets/launches-navigate-sites-console.png)
   
   >[!NOTE]
   >
   >You can also select **Launches Console** to access **Manage Content** (and other actions).
   
-All of these entry points will open the launch in the Sites console, where you can:
+All of these entry points opens the launch in the Sites console, where you can:
 
 * Navigate, 
 * **Create** new pages,
-* Select existing pages and take action; for example, **Edit**, open **Properties**, **Lock**, **Copy**, **Paste** and **Delete**
+* Select existing pages and act; for example, **Edit**, open **Properties**, **Lock**, **Copy**, **Paste** and **Delete**
   ![Navigate launch in Sites Console from Manage Content](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
 * Use the **References** rail to return to the **Launch Source** pages:
     ![Sites Console - Launch Source](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
@@ -54,7 +58,7 @@ To add new pages to your launch:
 
 1. [Navigate to the required location in your launch](#navigate-structure-of-launch).
 
-1. Select **Create** to [create a page](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) as usual.
+1. Select **Create** to [create a page](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) as usual.
 
 ## Remove Pages from Your Launch {#remove-pages-from-launch}
 
@@ -62,4 +66,4 @@ To remove pages from your launch:
 
 1. [Navigate to the required location in your launch](#navigate-structure-of-launch).
 
-1. Select **Delete** to [delete a page](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page) as usual.
+1. Select **Delete** to [delete a page](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) as usual.

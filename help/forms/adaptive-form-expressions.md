@@ -1,15 +1,17 @@
 ---
-title: Adaptive Form Expressions
-seo-title: Adaptive Form Expressions
+title: What are Adaptive Form Expressions?
 description: Use Adaptive Forms expressions to add automatic validation, calculation, and turn visibility of a section on or off.
-
+feature: Adaptive Forms, Foundation Components
+role: User
+hide: yes
+hidefromtoc: yes
+exl-id: e5b77cc1-5fb1-4f73-afe6-64f1c407e42b
 ---
-
 # Adaptive Form Expressions {#adaptive-form-expressions}
 
-Adaptive Forms provide optimized and simplified form filling experience for end users with dynamic scripting capabilities. It allows you to write expressions to add various behaviors such as dynamic show/hide fields and panels. It also lets you add calculated fields, make fields read-only, add validation logic, and many more. The dynamic behavior is based on the user input or prefilled data.
+Adaptive Forms provide optimized and simplified form filling experience for end users with dynamic scripting capabilities. It lets you write expressions to add various behaviors such as dynamic show/hide fields and panels. It also lets you add calculated fields, make fields read-only, add validation logic, and many more. The dynamic behavior is based on the user input or prefilled data.
 
-JavaScript™ is the expression language of Adaptive Forms. All the expressions are valid JavaScript™ expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript™ Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
+JavaScript&trade; is the expression language of Adaptive Forms. All the expressions are valid JavaScript&trade; expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript&trade; Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 ## Best practices for writing expressions {#best-practices-for-writing-expressions}
 
@@ -24,7 +26,7 @@ Repeating panels are instances of a panel that are added or removed dynamically,
 * To create a repeating panel, in the panel dialog, open settings, and set value of the max count field to more than 1.
 * The min count value of panel repeat settings can be one or more but cannot be more than max count value.
 * When an expression refers to a field of repeating panel, the field names in the expression are resolved to the closest repeating element.
-* Adaptive Forms provide a few special functions to simplify computation for repeatable panels such as sum, count, min, max, filter, and many more. For the complete list of functions, see [JavaScript™ Library API reference for Adaptive Forms](https://helpx.adobe.com/aem-forms/6/javascript-api/af.html)
+* Adaptive Forms provide a few special functions to simplify computation for repeatable panels such as sum, count, min, max, filter, and many more. For the complete list of functions, see [JavaScript&trade; Library API reference for Adaptive Forms](https://helpx.adobe.com/aem-forms/6/javascript-api/af.html)
 * APIs for manipulating instances of repeating panel are:
 
     * To add a panel instance: `panel1.instanceManager.addInstance()`
@@ -105,7 +107,7 @@ The options expression is used to dynamically fill options of a drop-down list f
 
 **`marital_status.value == "married" ? ["1=One", "2=two"] : ["0=Zero"]`.**
 
-Whenever the value of **marital_status** field changes, the expression is retriggered. You can also populate the dropdown from a REST service. <!-- For detailed information, see [Dynamically populating dropdowns](dynamically-populate-dropdowns.md). -->
+Whenever the value of **marital_status** field changes, the expression is retriggered. You can also populate the drop-down list from a REST service. <!-- For detailed information, see [Dynamically populating dropdowns](dynamically-populate-dropdowns.md). -->
 
 ### Summary Expression {#summary}
 
@@ -117,7 +119,7 @@ The Summary expression is typically used for repeating children of an accordion 
 
 **Return Type:** The expression returns a String that becomes the title of the accordion.
 
-**Example:** “Account number : “ + textbox1.value
+**Example:** "Account number : " + textbox1.value
 
 ### Validate Expression {#validate-expression}
 
@@ -183,7 +185,7 @@ The methods to add validations on a field are:
 
 ### Required {#required}
 
-To make a component mandatory, in the **Edit** dialog of the component, you can select option **Title and Text &gt; Required**. You can also add the appropriate required message (optional) . .
+To make a component mandatory, in the **Edit** dialog of the component, you can select option **Title and Text &gt; Required**. You can also add the appropriate required message (optional).
 
 ### Validation Patterns {#validation-patterns}
 
@@ -201,7 +203,7 @@ Display Format can be used to display the data in different formats. For example
 
 ### GuideBridge - APIs and Events {#guidebridge-apis-and-events}
 
-GuideBridge is collection of APIs’ that can be used to interact with Adaptive Forms in memory model in a browser. For detailed introduction to Guide Bridge API, class methods, events exposed, see [JavaScript™ Library API reference for Adaptive Forms](https://helpx.adobe.com/aem-forms/6/javascript-api/).
+GuideBridge is collection of APIs' that can be used to interact with Adaptive Forms in memory model in a browser. For detailed introduction to Guide Bridge API, class methods, events exposed, see [JavaScript&trade; Library API reference for Adaptive Forms](https://helpx.adobe.com/aem-forms/6/javascript-api/).
 
 >[!NOTE]
 >
@@ -211,7 +213,7 @@ GuideBridge is collection of APIs’ that can be used to interact with Adaptive 
 
 * To reset form fields, you can trigger `guideBridge.reset()` API on the click expression of a button. Similarly there is a submit API which can be called as a click expression `guideBridge.submit()`**.**
 
-* You can use the `setFocus()` API to set focus across various fields or panels (for panel focus is set to the first field automatically). `setFocus()`provides a wide range of options to navigate such as navigation across panels, previous/next traversal, setting focus to a particular field, and many more. For example, to move to the next panel, you can use: `guideBridge.setFocus(this.panel.somExpression, 'nextItem').`
+* You can use the `setFocus()` API to set focus across various fields or panels (for panel focus is set to the first field automatically). `setFocus()`provides a wide range of options to navigate such as navigation across panels, previous/next traversal, setting focus to a particular field, and many more. For example, to move to the next panel, you can use: `guideBridge.setFocus(this.panel.somExpression, 'nextItem').
 
 * To validate an Adaptive Form or its specific panels, use `guideBridge.validate(errorList, somExpression).`
 
@@ -232,7 +234,7 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 
      gb.connect(function (){
 
-        //this function will be called after Adaptive Form is initialized
+        //this function is called after Adaptive Form is initialized
 
      })
 
@@ -247,7 +249,7 @@ To use GuideBridge after the form is initialized (the `bridgeInitializeComplete`
 
 #### GuideBridge Events {#guidebridge-events}
 
-GuideBridge also provides certain events for external scripts on the hosting page. External scripts can listen to these events and perform various operations. For example, whenever the user name in a form change, the name shown in the header of the page also changes. For more details about such events, see [JavaScript™ Library API reference for Adaptive Forms](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
+GuideBridge also provides certain events for external scripts on the hosting page. External scripts can listen to these events and perform various operations. For example, whenever the user name in a form change, the name shown in the header of the page also changes. For more details about such events, see [JavaScript&trade; Library API reference for Adaptive Forms](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
 
 Use the following code to register handlers:
 
@@ -271,9 +273,8 @@ Perform the following steps to create a custom pattern for a specific field type
 
 1. The value of this property varies depending on the field for which you want to define the patterns. For numeric field, the value of the `guideComponentType` property is *fd/af/components/formatter/guideNumericBox*. The value for the Datepicker field is *fd/af/components/formatter/guideDatepicker*.
    ``
-1. You can add a custom pattern by assigning a property to the `textboxpatterns` node. Add a property with a name (for example `pattern1`), and set its value to the pattern you want to add. For example, add a property `pattern1` with value Fax=text{99-999-9999999}. The pattern is available for all the Text Boxes that you use in Adaptive Forms.
+1. You can add a custom pattern by assigning a property to the `textboxpatterns` node. Add a property with a name (for example, `pattern1`), and set its value to the pattern you want to add. For example, add a property `pattern1` with value Fax=text{99-999-9999999}. The pattern is available for all the Text Boxes that you use in Adaptive Forms.
 
    ![Creating custom patterns for fields in CrxDe](assets/creating-custom-patterns.png)
 
    Creating custom patterns
-

@@ -8,17 +8,17 @@ exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
 
 # Assign Team Members to Cloud Manager Product Profiles {#assign-team-members}
 
-In this part of the [onboarding journey,](overview.md) you will learn how to assign team members to Cloud Manager product profiles.
+In this part of the [onboarding journey](overview.md), you learn how to assign team members to Cloud Manager product profiles.
 
 ## Objective {#objective}
 
-In the previous step in this journey, [Accessing the Admin Console,](admin-console.md) you learned now log in to the Admin Console and verify your privileges as a system administrator. You are now ready to allow your team members access to Cloud Manager. You do this by assigning product profiles.
+In the previous step in this journey, [Accessing the Admin Console](admin-console.md), you learned now log in to the Admin Console and verify your privileges as a system administrator. You are now ready to allow your team members access to Cloud Manager. You do this by assigning product profiles.
 
 When granting users access to an Adobe solution, you do not necessarily want to give them full access. Product profiles enable each solution to have its own set of user permissions. You use the Admin Console to assign product profiles.
 
 Your first step is to grant users access to Cloud Manager. Cloud manager support you with enterprise development setups and its purpose-built CI/CD pipelines, which are equipped to ensure thorough testing and highest code quality to deliver exceptional experiences.
 
-After reading this document you should:
+After reading this document, you should:
 
 * Understand what product profiles are.
 * Understand what Cloud Manager is.
@@ -27,7 +27,7 @@ After reading this document you should:
 
 ## Prerequisites {#prerequisites}
 
-To assign team members to product profiles, you will need to have details about your team members, who will need to access AEM as a Cloud Service, including:
+To assign team members to product profiles, you need to have details about your team members, who must access AEM as a Cloud Service, including:
 
 * Names
 * Email addresses
@@ -67,7 +67,7 @@ Using the Admin Console you can see the list of Cloud Manager profiles.
 
     ![Cloud Manager](/help/journey-onboarding/assets/assign-team2.png)
 
-1. You will see the list of pre-configured Cloud Manager product profiles. 
+1. You can see the list of pre-configured Cloud Manager product profiles. 
    
    ![Product profiles](/help/journey-onboarding/assets/assign-team3.png)
 
@@ -83,9 +83,9 @@ Knowing what these roles are and what they do, review your list of team members 
 
 You are now ready to add users and assign them to the **Business Owner** product profile.
 
-1. Identify the user(s) who need to manage Cloud Manager programs. These will be your **Business Owners**.
+1. Identify the users who need to manage Cloud Manager programs. These are your **Business Owners**.
 
-1. Log in to the Admin Console at `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)` and on the **Overview** page, select **Adobe Experience Manager as a Cloud Service** product from **Products and services** card.
+1. Log on to the Admin Console at `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)` and on the **Overview** page, select **Adobe Experience Manager as a Cloud Service** product from **Products and services** card.
 
    ![Products and services](/help/journey-onboarding/assets/assign-team1.png)
 
@@ -160,7 +160,7 @@ Your **Deployment Manager**s have been assigned and can now access Cloud Manager
 
 Your **Developer**s have been assigned and can now access Cloud Manager. Depending on your future responsibilities, you may or may not need to also assign yourself as the system administrator to the **Developer** profile.
 
-## What’s Next {#whats-next}
+## What's Next {#whats-next}
 
 Congratulations! Your newly formed Cloud Manager team (including yourself assigned to the **Business Owner** profile) has been set up. In the role of **Business Owner**, you are now just one step away from logging in to Cloud Manager and enabling the creation of your cloud resources.
 
@@ -171,13 +171,13 @@ In this part of the onboarding journey you learned about assigning your team mem
 * Know the three important Cloud Manager product profiles: **Business Owner**, **Deployment Manager**, and **Developer**.
 * Be able to assign team members to Cloud Manager product profiles.
 
-You are now ready to continue your onboarding journey by next reviewing the document [Access Cloud Manager,](cloud-manager.md) where you will learn how to access Cloud Manager and create your project resources.
+You are now ready to continue your onboarding journey by next reviewing the document [Access Cloud Manager](cloud-manager.md), where you learn how to access Cloud Manager and create your project resources.
 
 ## Additional Resources {#additional-resources}
 
-It is recommend to continue on the onboarding journey as described previously. These are some additional resources if you wish to do a deep dive on a particular topic from this journey.
+It is recommended that you continue the onboarding journey as described previously. These are some additional resources if you want to do a deep dive on a particular topic from this journey.
 
 * [Cloud Manager Introduction](/help/onboarding/cloud-manager-introduction.md) - Learn about Cloud Manager, Cloud Manager programs, and environments.
 * [Cloud Manager Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md) - Learn about AEM as a Cloud Service team and product profiles.
-* [Identity types on Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/identity.ug.html) - Adobe’s identity management system helps admins create and manage user's access to applications and services. Adobe offers these identities types or accounts to authenticate and authorize users.
+* [Identity types on Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/identity.ug.html) - Adobe's identity management system helps admins create and manage user's access to applications and services. Adobe offers these identities types or accounts to authenticate and authorize users.
 

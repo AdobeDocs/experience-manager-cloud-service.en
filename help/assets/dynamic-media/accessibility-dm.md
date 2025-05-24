@@ -1,6 +1,6 @@
 ---
 title: Accessibility in Dynamic Media
-description: Learn how to work with video in Dynamic Media such as best practices for encoding videos, publishing videos to YouTube, and viewing video reports. Also learn how to add closed captioning, subtitles, or chapter markers to videos.
+description: Learn how to work with video in Dynamic Media such as best practices for encoding videos, publishing videos to YouTube, and viewing video reports. Also learn how to add closed captioning, captions, or chapter markers to videos.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
@@ -9,6 +9,8 @@ role: Admin,User
 exl-id: f8d2dcbf-f61a-4b27-a3fc-406e3662adcb
 ---
 # Accessibility in Dynamic Media {#accessibility-in-dm}
+
+{{work-with-dynamic-media}}
 
 Dynamic Media supports keyboard control and assistive technologies, such as JAWS and NVDA screen readers, across the authoring user interface.
 
@@ -33,7 +35,7 @@ The focus traversal follows the natural user interface element location on the s
 
 <!-- Keyboarding is the same because Dynamic Media is using the same UI library (Coral 3 (Experience Manager 6.5) or Coral Spectrum (in Skyline)) as entire Experience Manager Assets.  -->
 
-<!-- In the Hotspot editor, Dynamic Media lets you use arrow keys to control the position of a hot spot. See [Carousel Banners](/help/assets/dynamic-media/carousel-banners.md##adding-hotspots-or-image-maps-to-an-image-banner) or [Interactive Images](/help/assets/dynamic-media/interactive-images.md#adding-hotspots-to-an-image-banner)  --> 
+<!-- In the Hotspot editor, Dynamic Media lets you use arrow keys to control the position of a hot spot. See [Carousel Banners](/help/assets/dynamic-media/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner) or [Interactive Images](/help/assets/dynamic-media/interactive-images.md#adding-hotspots-to-an-image-banner)  --> 
 
  <!-- I think we should definitely mention this in the DM-specific area of documentation for keyboard support. -->
 
@@ -58,7 +60,7 @@ See the **Assistive technology support** Help topic in any customizing viewer to
 
 Dynamic Media supports the delivery of videos and adaptive video sets with closed captioning. The captions must be displayed on top of the video content.
 
-See [Video in Dynamic Media - Add closed captions or subtitles to video](/help/assets/dynamic-media/video.md#adding-captions-to-video).
+See [Video in Dynamic Media - Add closed captions to video](/help/assets/dynamic-media/video.md#adding-captions-to-video).
 
 
 >[!MORELIKETHIS]

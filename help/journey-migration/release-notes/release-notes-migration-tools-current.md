@@ -1,40 +1,45 @@
 ---
-title: Release Notes for Migration Tools in AEM as a Cloud Service Release 2023.03.0
-description: Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.03.0
+title: Release Notes for Migration Tools in AEM as a Cloud Service Release 2024.09
+description: Release Notes for Migration Tools in AEM as a Cloud Service Release 2024.09.0
 feature: Release Information
-exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
+exl-id: 52709511-eab2-47a7-8bea-1b707cd568a1
+role: Admin
 ---
-# Release Notes for Migration Tools in AEM as a Cloud Service Release 2023.03.0 {#release-notes}
+# Release Notes for Migration Tools in AEM as a Cloud Service Release 2024.09.0 {#release-notes}
 
-This page outlines the Release Notes for Migration Tools in AEM as a Cloud Service 2022.03.0.
-
-## Best Practices Analyzer {#bpa-release}
-
-### Release Date {#release-date-bpa}
-
-The Release Date for Best Practices Analyzer v2.1.40 is March 03, 2023. 
-
-### What's New {#what-is-new-bpa}
-
-* BPA can now detect and report on conflicting nodes - nodes with the same `jcr:uuid`. Such findings are flagged as critical since it can lead to content ingestion failures when moving content to AEM as a Cloud Service.  
-* BPA can now detect and report on the usage of Event Listeners. It is recommended to refactor this type of event handing mechanism to sling jobs when moving to AEM as a Cloud Service. 
-
-### Bug Fixes {#bug-fixes-bpa}
-
-* BPA was reporting false positives on `grouprendercondition`. This has been fixed.
+This page outlines the Release Notes for Migration Tools in AEM as a Cloud Service 2024.09.0.
 
 ## Content Transfer Tool {#ctt-release}
 
 ### Release Date {#release-date-ctt}
 
-The Release Date for Content Transfer Tool v2.0.16 is March 08, 2022.
+The Release Date for Content Transfer Tool v3.0.20 is August 28, 2024.
 
 ### What's New {#what-is-new-ctt}
 
-* User mapping has been streamlined and integrated into the content extraction step. No setup is needed and by default user mapping will be done automatically when the user initiates content extraction. User has the option to disable user mapping if needed. Learn more [here.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html?lang=en#user-mapping-detail)
-* The precopy step using [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) has been integrated with the Content Transfer Tool to speed up content extractions significantly. Precopy is automatically configured and installed when this version of the CTT is installed. By default, when extraction is initiated, precopy will run automatically for migration sets larger than 200GB. User has the option to disable it if needed. Learn more [here.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en)
-* CTT can now be used on Windows servers.
+* Users will no longer be ingested with this release and for that reason the User Mapping optional capability has been removed.
+* An OSGI config option has been added to disable or enable the migration of principals during extraction and ingestion (the default setting is to enable it)
 
-### Bug Fixes {#bug-fixes-ctt}
+### Bug fixes {#bug-fixes-ctt}
 
-* Multiple bug fixes to improve content extraction resiliency.
+* CTT was improved to prevent an error while unprotecting a secret key in azcopy config
+* CTT now gracefully handles any error while copying AzCopy logs in validation phase
+* Change azcopy log directory created during extraction process
+
+## Best Practices Analyzer {#bpa-release}
+
+### Release Date {#release-date-bpa}
+
+The Release Date for Best Practices Analyzer v2.1.52 is September 4, 2024
+
+### What's New {#what-is-new-bpa}
+
+* A new pattern was introduced to detect JCR based eventing in AEM
+
+### Bug fixes {#bug-fixes-bpa}
+
+* Fixed false positives
+* Improved robustness to handle redirected response from dispatcher
+* Fixed non-reporting of NCC finding for all languages under /apps/wcm/core/resources/languages/
+* added a check to detect if a multi-property of a node has no values
+

@@ -1,15 +1,19 @@
 ---
 title: SPA Blueprint
-description: This document describes the general, framework-independent contract that any SPA framework should fulfill in order to implement editable SPA components within AEM.
+description: This document describes the general, framework-independent contract that any SPA framework should fulfill so you can implement editable SPA components within AEM.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # SPA Blueprint {#spa-blueprint}
 
 To enable the author to use the AEM SPA Editor to edit the content of an SPA, there are requirements that the SPA must fulfill.
 
+{{ue-over-spa}}
+
 ## Introduction {#introduction}
 
-This document describes the general contract that any SPA framework should fulfill (i.e. the kind of AEM support layer) in order to implement editable SPA components within AEM.
+This document describes the general contract that any SPA framework should fulfill (that is, the kind of AEM support layer) so you can implement editable SPA components within AEM.
 
 To enable the author to use the AEM Page Editor to edit the data exposed by an Single Page Application framework, a project must be able to interpret the structure of the model representing the semantic of the data stored for an application within the AEM repository. To achieve this goal, two framework-agnostic libraries are provided: the `PageModelManager` and the `ComponentMapping`.
 
@@ -17,7 +21,7 @@ To enable the author to use the AEM Page Editor to edit the data exposed by an S
 >
 >The following requirements are framework-independent. If these requirements are fulfilled, a framework-specific layer composed of modules, components, and services can be provided.
 >
->**These requirements are already met for the React and Angular frameworks in AEM.** The requirements in this blueprint are only relevant if you wish to implement another framework for use with AEM.
+>**These requirements are already met for the React and Angular frameworks in AEM.** The requirements in this blueprint are only relevant if you want to implement another framework for use with AEM.
 
 >[!CAUTION]
 >
@@ -43,7 +47,7 @@ Each items present in the model contains a `:type` field that exposes an AEM res
 
 #### Dynamic Model to Component Mapping {#dynamic-model-to-component-mapping}
 
-For details about how the dynamic model to component mapping occurs in the Javascript SPA SDK for AEM see the article [Dynamic Model to Component Mapping for SPAs](model-to-component-mapping.md).
+For details about how the dynamic model to component mapping occurs in the JavaScript SPA SDK for AEM see the article [Dynamic Model to Component Mapping for SPAs](model-to-component-mapping.md).
 
 ### Framework-Specific Layer {#framework-specific-layer}
 
@@ -57,21 +61,21 @@ The remainder of this document describes the requirements of this intermediary f
 
 The content structure of the page is stored in AEM. The model of the page is used to map and instantiate SPA components. The SPA developers create SPA components which they map to AEM components. To do this, they use the resource type (or path to the AEM component) as a unique key.
 
-The SPA components must be in sync with the page model and be updated with any changes to its content accordingly. A pattern leveraging dynamic components must be used to instantiate components on the fly following the provided page model structure.
+The SPA components must be in sync with the page model and be updated with any changes to its content accordingly. A pattern using dynamic components must be used to instantiate components on the fly following the provided page model structure.
 
 ### Meta Fields {#meta-fields}
 
-The page model leverages the JSON Model Exporter, which is itself based on the [Sling Model](https://sling.apache.org/documentation/bundles/models.html) API. The exportable sling models expose the following list of fields in order to enable the underlying libraries interpret the data model:
+The page model uses the JSON Model Exporter, which is itself based on the [Sling Model](https://sling.apache.org/documentation/bundles/models.html) API. The exportable sling models expose the following list of fields to enable the underlying libraries interpret the data model:
 
 * `:type`: Type of the AEM resource (default = resource type)
 * `:children`: Hierarchical children of the current resource. Children are not part of the inner content of the current resource (can be found on items representing a page)
 * `:hierarchyType`: Hierarchical type of a resource. The `PageModelManager` currently supports the page type
 
 * `:items`: Child content resources of the current resource (nested structure, only present on containers)
-* `:itemsOrder`: Ordered list of the children. The JSON map object doesn't guaranty the order of its fields. By having both the map and the current array the consumer of the API has the benefits of both structures
+* `:itemsOrder`: Ordered list of the children. The JSON map object does not guaranty the order of its fields. By having both the map and the current array the consumer of the API has the benefits of both structures
 * `:path`: Content path of an item (present on items representing a page)
 
-See also [Getting Started with AEM Content Services.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+See also [Getting Started with AEM Content Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html).
 
 ### Framework-Specific Module {#framework-specific-module}
 
@@ -100,7 +104,7 @@ The following entities should be implemented in accordance with the guidelines s
 
 Project components must delegate access to the fragments of a model to a Model Provider. The Model Provider is then in charge of listening for changes made to the specified fragment of the model and return the updated model to the delegating component.
 
-To do this, the Model Provider must register to the [`PageModelManager`](#pagemodelmanager). Then when a change occurs it receives and and pass the updated data to the delegating component. By convention, the property made available to the delegating component that will carry the fragment of model is named `cqModel`. The implementation is free to provide this property to the component but should consider aspects such as the integration with framework architecture, discoverability, and ease of use.
+To do this, the Model Provider must register to the [`PageModelManager`](#pagemodelmanager). Then when a change occurs it receives and pass the updated data to the delegating component. By convention, the property made available to the delegating component that will carry the fragment of model is named `cqModel`. The implementation is free to provide this property to the component but should consider aspects such as the integration with framework architecture, discoverability, and ease of use.
 
 ### The Component HTML Decorator {#the-component-html-decorator}
 
@@ -140,7 +144,7 @@ The `Page` component extends the `Container` component. A container is a compone
 
 ### Responsive Grid {#responsive-grid}
 
-The Responsive Grid component is a container. It contains an specific variant of the Model Provider representing its columns. The Responsive Grid and its columns are responsible for decorating the outer HTML element of the project's component with the specific class names contained in the model.
+The Responsive Grid component is a container. It contains a specific variant of the Model Provider representing its columns. The Responsive Grid and its columns are responsible for decorating the outer HTML element of the project's component with the specific class names contained in the model.
 
 The Responsive Grid component should come pre-mapped to its AEM counterpart as this component is complex and rarely customized.
 
@@ -197,7 +201,7 @@ In the above implementation, the project component is extended with the emptines
 
 ```javascript
 /**
- * Configuration object in charge of providing the necessary data expected by the page editor to initiate the authoring. The provided data will be decorating the associated component
+ * Configuration object in charge of providing the necessary data expected by the page editor to initiate the authoring. The provided data is decorating the associated component
  *
  * @typedef {{}} EditConfig
  * @property {String} [dragDropName]       If defined, adds a specific class name enabling the drag and drop functionality
@@ -253,7 +257,7 @@ The following fragment illustrates the typical HTML representation of a page con
 
 ## Navigation and Routing {#navigation-and-routing}
 
-The App owns the routing. The front end developer first needs to implement a Navigation component (mapped to an AEM navigation component). This component would render URL links to be used in conjunction with a series of routes that will display or hide fragments of content.
+The App owns the routing. The front end developer first must implement a Navigation component (mapped to an AEM navigation component). This component would render URL links to be used in conjunction with a series of routes that will display or hide fragments of content.
 
 The underlying [`PageModelManager`](#pagemodelmanager) library and its [`ModelRouter`](routing.md) module (enabled by default) are responsible for pre-fetching and providing access to the model associated with a given resource path.
 

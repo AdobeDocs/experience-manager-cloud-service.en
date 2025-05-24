@@ -235,7 +235,7 @@ You can add hotspots or image maps to a banner using the Carousel Set editor.
 
 When you add hotspots or image maps, you can define them as a Quick view pop-up display, as a hyperlink, or an Experience Fragment.
 
-See [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
+See [Experience Fragment](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!NOTE]
 >
@@ -307,7 +307,7 @@ See [(Optional) Preview Carousel Banners](#optional-previewing-carousel-banners)
     * Select **[!UICONTROL Experience Fragment]**.
 
         * If you are an Experience Manager Sites customer, select the Search icon (magnifying glass) to open the Experience Fragment page. To return to the Hotspot management page, select the Experience Fragment you want to use, then in the upper-right corner of the page, select **[!UICONTROL Select]**.
-          See [Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
+          See [Experience Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
         * Specify the width and height of the Experience Fragment as it appears on the banner.
 
@@ -438,7 +438,7 @@ The existing Quickview implementation normally represents a chain of inter-relat
 1. The back-end logic returns the corresponding Quick view data or content back to the front-end code.
 1. The front-end code loads the Quick view data or content.
 1. Optionally, the front-end code converts the loaded Quick view data into an HTML representation.
-1. The front-end code displays a modal dialog box or panel and renders the HTML content on the screen for the end user.
+1. The front-end code displays a modal dialog box or panel and renders the HTML content on the screen for the user.
 
 These calls do not represent independent public API calls which can be called by the web page logic from an arbitrary step. Instead, it is a chained call where every next step is hidden in the last phase (callback) of the previous step.
 

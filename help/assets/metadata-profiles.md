@@ -3,10 +3,47 @@ title: Metadata profiles
 description: Know about metadata profiles for assets. Learn how to create a metadata profile and apply it to folder assets.
 contentOwner: AG
 feature: Metadata
-role: User,Admin
+role: User, Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
 ---
 # Metadata profiles {#metadata-profiles}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime and Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets integration with Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI Extensibility</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Enable Dynamic Media Prime and Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media with OpenAPI capabilities</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets developer documentation</b></a>
+        </td>
+    </tr>
+</table>
 
 | Version | Article link |
 | -------- | ---------------------------- |
@@ -21,7 +58,7 @@ By using consistent and appropriate file and folder naming strategies, and good 
 ## Add a metadata profile {#adding-a-metadata-profile}
 
 1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]**, and then click **[!UICONTROL Create]**.
-1. Enter a title for the Metadata Profile, for example Sample Metadata, and tap **[!UICONTROL Submit]**. The Edit Form for the Metadata Profile is displayed.
+1. Enter a title for the Metadata Profile, for example, Sample Metadata, and select **[!UICONTROL Submit]**. The Edit Form for the Metadata Profile is displayed.
 1. Click a component and configure its properties in the **[!UICONTROL Settings]** tab. For example, click the **[!UICONTROL Description]** component and edit its properties.
    Edit the following properties for the **[!UICONTROL Description]** component:
 
@@ -34,7 +71,7 @@ By using consistent and appropriate file and folder naming strategies, and good 
 
       >[!NOTE]
       >
-      >Adding a default value to a new metadata property (which doesn't exist at `/jcr:content/metadata` node) does not display the property and its value on the asset's Properties page by default. To view the new property on the [!UICONTROL Properties] page, modify the corresponding schema form.
+      >Adding a default value to a new metadata property (which does not exist at `/jcr:content/metadata` node) does not display the property and its value on the asset's Properties page by default. To view the new property on the [!UICONTROL Properties] page, modify the corresponding schema form.
 
 1. (Optional) Add more components to the Edit Form from the **[!UICONTROL Build Form]** tab, and configure their properties in the **[!UICONTROL Settings]** tab. The following properties are available from the **[!UICONTROL Build Form]** tab:
 
@@ -84,12 +121,12 @@ You can reprocess assets in a folder that already has an existing video profile 
 
 1. Navigate to **[!UICONTROL Tools > Assets > Metadata Profiles]**.
 1. Select the metadata profile that you want to apply to a folder or multiple folders.
-1. Click **[!UICONTROL Apply Metadata Profile to Folder(s)]** and select the folder or multiple folders you want use to receive the newly uploaded assets and Click **[!UICONTROL Done]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
+1. Click **[!UICONTROL Apply Metadata Profile to Folders]** and select the folder or multiple folders you want use to receive the newly uploaded assets and Click **[!UICONTROL Done]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 
 #### Apply metadata profiles to folders from Properties {#applying-metadata-profiles-to-folders-from-properties}
 
 1. In the left rail, Click **[!UICONTROL Assets]** then navigate to the folder that you want to apply a metadata profile to.
-1. On the folder, Click or click the check mark to select it and then Click or click **Properties**.  
+1. On the folder, select the check mark to select it and then select **Properties**.  
 1. Select the **[!UICONTROL Metadata Profiles]** tab and select the profile from the drop-down menu and Click **[!UICONTROL Save]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 
 ### Apply a metadata profile globally {#applying-a-metadata-profile-globally}
@@ -114,7 +151,7 @@ You can remove a metadata profile from a folder from within the **Tools** menu o
 
 1. Click the Experience Manager logo and navigate to **[!UICONTROL Tools > Assets > Metadata Profiles]**.
 1. Select the metadata profile that you want to remove from a folder or multiple folders.
-1. Click **[!UICONTROL Remove Metadata Profile from Folder(s)]** and select the folder or multiple folders you want use to remove a profile from and click **[!UICONTROL Done]**.
+1. Click **[!UICONTROL Remove Metadata Profile from Folders]** and select the folder or multiple folders you want use to remove a profile from and click **[!UICONTROL Done]**.
 
    You can confirm that the metadata profile is no longer applied to a folder because the name no longer appears below the folder name.
 
@@ -138,3 +175,4 @@ You can remove a metadata profile from a folder from within the **Tools** menu o
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

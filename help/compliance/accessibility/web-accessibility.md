@@ -2,6 +2,8 @@
 title: Adobe Experience Manager as a Cloud Service and the Web Accessibility Guidelines
 description: An Introduction to Adobe Experience Manager as a Cloud Service and the Web Accessibility Guidelines
 exl-id: ad7627cd-3c97-47b7-8a13-0aae39aa8169
+feature: Compliance
+role: Admin, Architect, Developer, Leader
 ---
 # Adobe Experience Manager as a Cloud Service and the Web Accessibility Guidelines{#aem-and-the-web-accessibility-guidelines}
  
@@ -39,7 +41,7 @@ Using Adobe Experience Manager, content authors and/or website owners can create
  
 * Specific aspects of WCAG 2.1 are highlighted in our [quick guide to WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md).
  
-* [Creating Accessible Content](/help/sites-cloud/authoring/fundamentals/accessible-content.md) details how they relate to AEM. 
+* [Creating Accessible Content](/help/sites-cloud/authoring/page-editor/accessible-content.md) details how they relate to AEM. 
  
 >[!NOTE]
 >
@@ -53,9 +55,9 @@ Using Adobe Experience Manager, content authors and/or website owners can create
 <!--
 * [Accessibility in Assets](/help/assets/accessibility.md)
 * [Creating Accessible Adaptive Forms](/help/forms/using/creating-accessible-adaptive-forms.md)
-  Adobe Experience Manager (AEM) includes a number of features and capabilities that enhance the usability of adaptive forms for users with different abilities. The solution also assists form authors in creating accessible adaptive forms.
+  Adobe Experience Manager (AEM) includes several features and capabilities that enhance the usability of adaptive forms for users with different abilities. The solution also assists form authors in creating accessible adaptive forms.
 -->
  
 ## Accessibility at Adobe {#accessibility-at-adobe}
  
-For additional information, please visit the [Adobe Accessibility Resource Center](https://www.adobe.com/accessibility/).
+For additional information, see the [Adobe Accessibility Resource Center](https://www.adobe.com/accessibility/).

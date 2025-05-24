@@ -1,9 +1,12 @@
 ---
 title: Introduction and overview
-description: Introduction and overview of content and commerce. Experience Manager Commerce Integration Framework (CIF) is Adobe's recommended pattern to integrate and extend commerce services from Adobe Commerce and other third-party commerce solutions with the Experience Cloud.
+description: Understand how to use and administer Experience Manager Content and Commerce as a Cloud Service.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
+feature: Commerce Integration Framework
+role: Admin
 ---
+
 # Content and Commerce {#content-commerce}
 
 With Adobe Experience Manager content and commerce, brands can scale and innovate faster to differentiate commerce experiences and capture accelerating online spend. AEM Content and Commerce combines the immersive, omnichannel, and personalized experiences in Experience Manager with any number of commerce solutions to bring differentiated experiences to all parts of the shopping journey, reducing time to value and driving higher conversion.
@@ -12,7 +15,7 @@ With Adobe Experience Manager content and commerce, brands can scale and innovat
 
 With ever-increasing customer expectations for online commerce experiences, brands are pressured to deliver differentiated experiences and more content faster. However, implementing a content management platform often requires heavy time and budget investments in developing foundational elements, such as custom components and authoring tools, and accrues costs in maintenance and upgrades. Experience Manager Sites offers Content and Commerce as an add-on module for Experience Manager as a Cloud Service that provides out-of-the-box commerce core components, authoring tools, and a reference storefront to accelerate go-live, enable seamless collaboration across teams, and drive conversion.
 
-Brands can integrate Experience Manager with Adobe Commerce, part of Adobe Experience Cloud, as well as any commerce engine of choice. With Experience Manager Content and Commerce, brands can:
+Brands can integrate Experience Manager with Adobe Commerce, part of Adobe Experience Cloud, and any commerce engine of choice. With Experience Manager Content and Commerce, brands can:
 
 * Scale and innovate faster
 * Personalize experiences to drive conversion
@@ -25,7 +28,7 @@ Brands can integrate Experience Manager with Adobe Commerce, part of Adobe Exper
 As these projects have to deal with the complexity of integrating a commerce solution. A commerce solution can be anything from a commercial solution such as the Adobe Commerce Cloud to a set of custom commerce services. The integration is highly dependent on the use-cases and ecosystem. It usually touches various places and comes in many different flavors:
 
 * Integration of a complex and dynamic ecosystem (example product catalogs)
-* Business needs to manage product content with its own lifecycle in an efficient and omnichannel way
+* Business must manage product content with its own lifecycle in an efficient and omnichannel way
 * Building complex and personalized shopping journeys for various heads
 * Ability to quickly adapt and innovate on the back- and front-end
 * Running a scalable and stable E2E infrastructure that is built for peak performance (Flash sale, Black Friday, ...). This includes unified search and cache management.
@@ -36,11 +39,11 @@ This complexity opens up the door to potential point of failures, increased TCO,
 
 ## CIF Successfully Supporting Customers since 2013 {#support}
 
-With over 200 customers, CIF has established itself as a successful ingredient for a successful content & commerce project. This provides value for IT and business today and in the future. Recent customer projects describe CIF as a “Great accelerator and a huge time saver with a lot of value”.
+With over 200 customers, CIF has established itself as a successful ingredient for a successful content & commerce project. This provides value for IT and business today and in the future. Recent customer projects describe CIF as a "Great accelerator and a huge time saver with lots of value".
 
 ## CIF Benefits {#cif-benefits}
 
-CIF provides out-of-the-box commerce core components that reduce the need for custom code, accelerating the time to market for brands. All core components are integrated out of the box with Adobe’s client-side data layer to hydrate customer profiles, such as the unified profile. This profile captures in detail a visitor’s behavior, which can be used to predict and personalize the customer journey in real time.
+CIF provides out-of-the-box commerce core components that reduce the need for custom code, accelerating the time to market for brands. All core components are integrated out of the box with Adobe's client-side data layer to hydrate customer profiles, such as the unified profile. This profile captures in detail a visitor's behavior, which can be used to predict and personalize the customer journey in real time.
 
 The CIF add-on brings product context into Experience Manager and provides authoring tools such as a product console and product/category pickers that empower the marketer to create and deliver shoppable experiences in Experience Manager without relying on the developer. Advantages include:
 
@@ -73,6 +76,6 @@ CIF supports customers with standardized integration patterns based on best prac
 
 ## Journey {#journey}
 
-If you are following a Commerce Journey, please go to the next step:
+If you are following a Commerce Journey, go to the next step:
 
 * The [AEM Content Author journey](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)

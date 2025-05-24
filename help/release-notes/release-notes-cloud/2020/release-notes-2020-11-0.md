@@ -2,6 +2,8 @@
 title: Release Notes for 2020.11.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] as a Cloud Service Release Notes for 2020.11.0."
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
+feature: Release Information
+role: Admin
 ---
 # Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -26,9 +28,9 @@ The following release (2020.12.0) will be on December 17, 2020
 
 ### What is new in [!DNL Assets] and [!DNL Dynamic Media] {#what-is-new-assets}
 
-* **Bulk asset ingestion**: Provide customers with a scalable, cloud-native ingestion service that leverages [!DNL Experience Manager] as a Cloud Service architecture including asset microservices. Key use cases include ingestion at scale with monitoring, reporting, and scheduling, while allowing for initial transfer of assets to cloud data stores using common cloud upload tooling. See [asset bulk ingestor tool](/help/assets/add-assets.md#asset-bulk-ingestor).
+* **Bulk asset ingestion**: Provide customers with a scalable, cloud-native ingestion service that uses [!DNL Experience Manager] as a Cloud Service architecture including asset microservices. Key use cases include ingestion at scale with monitoring, reporting, and scheduling, while allowing for initial transfer of assets to cloud data stores using common cloud upload tooling. See [asset bulk ingestor tool](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-  This tool is for system administrator, consultant, or implementation partner personas. This feature allows for large scale ingestion and is ideally used during initial ingestion or occasional large ingestion. For smaller ingestion jobs, use the [[!DNL Experience Manager] desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) or [upload using Assets user interface](/help/assets/add-assets.md#upload-assets).
+  This tool is for system administrator, consultant, or implementation partner personas. This feature allows for large scale ingestion and is ideally used during initial ingestion or occasional large ingestion. For smaller ingestion jobs, use the [[!DNL Experience Manager] desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html) or [upload using Assets user interface](/help/assets/add-assets.md#upload-assets).
 
   ![Configuration of bulk importer](/help/assets/assets/bulk-import-config-low-res.png)
 
@@ -56,7 +58,7 @@ The following release (2020.12.0) will be on December 17, 2020
   * Users can navigate the Email link dialog using the `Tab` key.
   * The workflow to create video encoding profiles is more user-friendly given the screen reader enhancement.
   * When navigating using `Tab` key, the focus moves to the appropriate user interface elements in the workflow to create an interactive video.
-  * The Publish page, Edit Asset page, Edit Smart Crops page, and Image Set Editor page are improved to comply with web standards. Assistive technology (AT) users can now navigate these pages easily and take actions such as cropping images.
+  * The Publish page, Edit Asset page, Edit Smart Crops page, and Image Set Editor page are improved to comply with web standards. Assistive technology (AT) users can now navigate these pages easily and act on them such as cropping images.
   * Viewers are improved to let users navigate using a keyboard.
   * The keyboard and screen reader users can use the crop functionality.
   * The keyboard users can better manage the hotspots.
@@ -67,9 +69,9 @@ The following release (2020.12.0) will be on December 17, 2020
 
 ### What is New {#what-is-new-commerce}
 
-* Released CIF Venia Reference Site - 2020.11.05 that includes the lastest CIF Core Components version v1.5.0. Refer to [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) for more details.
+* Released CIF Venia Reference Site - 2020.11.05 that includes the lastest CIF Core Components version v1.5.0. See [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) for more details.
 
-* Released CIF Core Components v1.5.0. Refer to [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) for more details.
+* Released CIF Core Components v1.5.0. See [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) for more details.
 
 ### Bug Fixes {#bug-fixes-commerce}
 
@@ -84,7 +86,7 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2020.11.0 is Novemb
 ### What is new in [!DNL Cloud Manager] {#what-is-new-cm}
 
 * A new menu option **Local Login** is now be available to users from the environment menu options on the **Environments** card and **Environments** summary pages. 
-   Refer to [Managing Environments](/help/implementing/cloud-manager/manage-environments.md#login-locally) for more details.
+   See [Managing Environments](/help/implementing/cloud-manager/manage-environments.md#login-locally) for more details.
 
 * The **Learn** tab in Cloud Manager has been refreshed with new images in the UI.
 
@@ -93,7 +95,7 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2020.11.0 is Novemb
 * The loading of dependencies done prior to build execution required downloading a Maven plugin.
 * The link from the Cloud Manager footer to select a language will now navigate to the correct location.
 * Sometimes during the code scanning, the SonarQube process would not start. This will now be auto-detected and a restart attempted.
-* All existing production pipelines will be automatically enabled with the Experience Audit step. 
+* All existing production pipelines are automatically enabled with the Experience Audit step. 
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
 
@@ -107,11 +109,11 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2020.11.0 is Novemb
 
 ### SDK Build Analyzers {#analyzers}
 
-The AEM as a Cloud Service SDK Build Analyzer Maven Plugin detects problems in a maven project, including missing dependencies. It gives developers an opportunity to discover issues during local development, well before deploying to Cloud environments with Cloud Manager. For more information, see the documentation [here](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing) and [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#building-for-the-sdk).
+The AEM as a Cloud Service SDK Build Analyzer Maven Plugin detects problems in a maven project, including missing dependencies. It gives developers an opportunity to discover issues during local development, well before deploying to Cloud environments with Cloud Manager. For more information, see the documentation [here](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html#developing) and [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html#building-for-the-sdk).
 
 ### Others {#others-foundation}
 
-New [“httpd -t” syntax](/help/implementing/dispatcher/disp-overview.md#local-validation) check for apache and dispatcher configuration executed during Cloud Manager build, which can also be run using AEM as a Cloud Service SDK’s Dispatcher Tools.
+New ["httpd -t" syntax](/help/implementing/dispatcher/disp-overview.md#local-validation) check for apache and dispatcher configuration executed during Cloud Manager build, which can also be run using AEM as a Cloud Service SDK's Dispatcher Tools.
 
 ## Content Transfer Tool {#content-transfer-tool}
 

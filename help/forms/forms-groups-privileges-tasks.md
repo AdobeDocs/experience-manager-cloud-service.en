@@ -1,9 +1,16 @@
 ---
-title: In-built [!DNL AEM Forms] as a Cloud Service  Groups 
-description: List of out of the box user groups and permissions assigned to each group 
+title: What user groups are available out of the box in AEM Forms as a Cloud Service?
+description: List of out of the box user groups and permissions assigned to each group
+role: Admin, Developer, User
+feature: Adaptive Forms
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
 ---
 # Groups and permissions {#aem-forms-on-osgi-groups-and-privileges}
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html)                |
+| AEM as a Cloud Service     | This article        |
 
 You can [create groups](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) and assign policies and [users](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) to the groups. These policies control permissions of the users that are part of the group.
 
@@ -25,19 +32,19 @@ Once you setup [!DNL AEM Forms] as a Cloud Service, the groups listed in the bel
      <li>Create themes</li> 
     </ul> </td> 
   </tr>
-  <tr>
+  <!-- <tr>
    <td>[!DNL forms-power-user]</td> 
    <td>
     <ul> 
      <li>Create, preview, publish, and submit Adaptive Forms</li> 
-     <!-- <li>Create, preview, and publish interactive communications and document fragments</li> 
-     <li>Create scripts for Adaptive Forms using code editor</li> -->
+     <li>Create, preview, and publish interactive communications and document fragments</li> 
+     <li>Create scripts for Adaptive Forms using code editor</li> 
      <li>Upload assets including scripts</li> 
      <li>Create themes</li> 
      <li>Import packages containing XDP</li> 
     </ul> </td> 
   </tr>
-  <!-- <tr>
+ <tr>
    <td>forms-submission-reviewers</td> 
    <td>
     <ul> 
@@ -94,3 +101,19 @@ Once you setup [!DNL AEM Forms] as a Cloud Service, the groups listed in the bel
   </tr>
  </tbody>
 </table>
+
+## See also
+
+* [Onboard to a Cloud Service environment](/help/forms/setup-forms-cloud-service.md)
+* [Setup a local development environment](/help/forms/setup-local-development-environment.md)
+* [Migrate from AEM 6.5 Forms to Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+* [Create a standalone Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
+* [Add an Adaptive Form to AEM Sites page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Use AEM Forms workflow for business process automation](/help/forms/aem-forms-workflow.md)
+
+-->

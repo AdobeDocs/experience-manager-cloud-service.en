@@ -1,9 +1,9 @@
 ---
-title: Known issues and limitations
-description: Known issues and limitations of  [!DNL AEM Forms] as a Cloud Service environment
+title: What are the known issues and limitations of AEM Forms as a Cloud Service environment?
+description: Known issues and limitations of  [!DNL AEM Forms] as a Cloud Service environment.
 contentOwner: khsingh
-role: User, Developer
-level: Intermediate
+role: Admin, Developer, User
+feature: Adaptive Forms
 topic: Administration
 exl-id: 871f294d-f251-4966-a021-39df65b613f0
 ---
@@ -27,6 +27,7 @@ Before you begin using [!DNL AEM Forms] as a Cloud Service, review the following
 
     ![Forms Thumbnail known issue](/help/forms/assets/forms-tumbnail-known-issue.png)
 
+* When you use a schema with repeatable elements to create a Core Components based Adaptive Form, the option to drag-and-drop repeatable elements from data model tree in the Adaptive Forms Editor does not work.
 
 ## Limitations {#limitations}
 

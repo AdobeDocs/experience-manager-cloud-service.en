@@ -2,52 +2,103 @@
 title: Assets HTTP API
 description: Create, read, update, delete, manage digital assets using HTTP API in [!DNL Experience Manager Assets].
 contentOwner: AG
-feature: Assets HTTP API,APIs
-role: Developer,Architect,Admin
+feature: Assets HTTP API
+role: Developer, Architect, Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
 ---
-# [!DNL Adobe Experience Manager Assets] HTTP API {#assets-http-api}
+# Manage digital assets with the [!DNL Adobe Experience Manager Assets] HTTP API{#assets-http-api}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime and Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets integration with Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI Extensibility</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Enable Dynamic Media Prime and Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media with OpenAPI capabilities</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets developer documentation</b></a>
+        </td>
+    </tr>
+</table>
 
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=en)                  |
 | AEM as a Cloud Service     | This article         |
 
-## Overview {#overview}
+## Get Started with the AEM [!DNL Assets] HTTP API {#overview}
 
-The [!DNL Assets] HTTP API allows for create-read-update-delete (CRUD) operations on digital assets, including on metadata, on renditions, and on comments, together with structured content using [!DNL Experience Manager] Content Fragments. It is exposed at `/api/assets` and is implemented as REST API. It includes [support for Content Fragments](/help/assets/content-fragments/assets-api-content-fragments.md).
+The AEM [!DNL Assets] HTTP API enables CRUD (create, read, update, and delete) operations on digital assets through a REST interface available at /`api/assets`. These operations apply to asset metadata, renditions, and comments. It includes [support for Content Fragments](/help/assets/content-fragments/assets-api-content-fragments.md).
+
+>[!NOTE]
+>
+> A modernized OpenAPI implementation of the Content Fragment Management API is available. For full documentation see [Content Fragment Management API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/). It is recommended to use the new OpenAPI implementation. The existing usage of Assets HTTP API for Content Fragments should be migrated to the new Content Fragment Management OpenAPI.
 
 To access the API:
 
 1. Open the API service document at `https://[hostname]:[port]/api.json`.
 1. Follow the [!DNL Assets] service link leading to `https://[hostname]:[server]/api/assets.json`.
 
-The API response is a JSON file for some MIME types and a response code for all MIME types. The JSON response is optional and may not be available, for example for PDF files. Rely on the response code for further analysis or actions.
+The API response is a JSON file for some MIME types and a response code for all MIME types. The JSON response is optional and may not be available, for example, for PDF files. Rely on the response code for further analysis or actions.
 
 >[!NOTE]
 >
 >All the API calls related to uploading or updating assets or binaries in general (like renditions) is deprecated for [!DNL Experience Manager] as a [!DNL Cloud Service] deployment. For uploading binaries, use [direct binary upload APIs](developer-reference-material-apis.md#asset-upload) instead.
 
-## Content Fragments {#content-fragments}
+## Manage content fragments {#content-fragments}
 
-A [Content Fragment](/help/assets/content-fragments/content-fragments.md) is a special type of asset. It can be used to access structured data, such as texts, numbers, dates, among others. As there are several differences to `standard` assets (such as images or documents), some additional rules apply to handling Content Fragments.
+A [Content Fragment](/help/assets/content-fragments/content-fragments.md) is a structured asset that stores text, numbers, and dates. As there are several differences to `standard` assets (such as images or documents), some additional rules apply to handling Content Fragments.
 
-For further information, see [Content Fragments support in the [!DNL Experience Manager Assets] HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md).
+For more information, see [Content Fragments support in the [!DNL Experience Manager Assets] HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md).
 
-## Data model {#data-model}
+>[!NOTE]
+>
+>See [AEM APIs for Structured Content Delivery and Management](/help/headless/apis-headless-and-content-fragments.md) for an overview of the various APIs available and comparison of some of the concepts involved.
+>
+>The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) are also available.
 
-The [!DNL Assets] HTTP API exposes two major elements, folders and assets (for standard assets). Also, it exposes more detailed elements for the custom data models that describe structured content in Content Fragments. See [Content Fragment data models](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) for further information.
+## Examine the data model {#data-model}
 
-### Folders {#folders}
+The [!DNL Assets] HTTP API primarily exposes two elements: folders and standard assets. It also provides detailed elements for custom data models used in Content Fragments. For more details, see Content Fragment data models. See [Content Fragment data models](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) for further information.
 
-Folders are like directories as in the traditional file systems. Folder can contain just assets, just folders, or folders and assets. Folders have the following components:
+>[!NOTE]
+>
+>The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) are also available.
+
+### Manage folders {#folders}
+
+Folders are like directories as in the traditional file systems. Folders can contain assets, subfolders, or both. Folders have the following components:
 
 **Entities**: The entities of a folder are its child elements, which can be folders and assets.
 
 **Properties**:
 
-* `name` is the name of the folder. This is the same as the last segment in the URL path without the extension.
-* `title` is an optional title of the folder which can be displayed instead of its name.
+* `name`: The folder's name (the last segment of the URL path, without the extension).
+* `title`: An optional title displayed in place of the folder name.
 
 >[!NOTE]
 >
@@ -55,20 +106,24 @@ Folders are like directories as in the traditional file systems. Folder can cont
 
 **Links** Folders expose three links:
 
-* `self`: Link to itself.
-* `parent`: Link to the parent folder.
-* `thumbnail`: (Optional) link to a folder thumbnail image.
+* `self`: A link to the folder itself.
+* `parent`: A link to the parent folder.
+* `thumbnail` (Optional): A link to a folder thumbnail image.
 
-### Assets {#assets}
+### Manage assets {#assets}
 
 In [!DNL Experience Manager] an asset contains the following elements:
 
-* The properties and metadata of the asset.
-* Originally uploaded binary file of the asset. 
-* Multiple renditions as configured. These can be images of different sizes, videos of different encodings, or extracted pages from PDF or [!DNL Adobe InDesign] files.
-* Optional comments.
+* **Properties and metadata:** Descriptive information about the asset.
+* **Binary file:** The originally uploaded file.
+* **Renditions:** Multiple configured renditions (such as, images in various sizes, different video encodings, or extracted pages from PDFs/Adobe InDesign files).
+* **Comments (optional):** User-provided remarks.
 
 For information about elements in Content Fragments see [Content Fragments Support in Experience Manager Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md).
+
+>[!NOTE]
+>
+>The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) are also available.
 
 In [!DNL Experience Manager] a folder has the following components:
 
@@ -76,7 +131,7 @@ In [!DNL Experience Manager] a folder has the following components:
 * Properties.
 * Links.
 
-## Available features {#available-features}
+## Explore available API operations {#available-features}
 
 The [!DNL Assets] HTTP API includes the following features:
 
@@ -117,7 +172,7 @@ Retrieves a Siren representation of an existing folder and of its child entities
 * 404 - NOT FOUND - folder does not exist or is not accessible.
 * 500 - INTERNAL SERVER ERROR - if something else goes wrong.
 
-**Response**: The class of the entity returned is an asset or a folder. The properties of contained entities are a subset of the full set of properties of each entity. In order to obtain a full representation of the entity, clients should retrieve the contents of the URL pointed to by the link with a `rel` of `self`.
+**Response**: The class of the entity returned is an asset or a folder. The properties of contained entities are a subset of the full set of properties of each entity. To obtain a full representation of the entity, clients should retrieve the contents of the URL pointed to by the link with a `rel` of `self`.
 
 ## Create a folder {#create-a-folder}
 
@@ -146,7 +201,7 @@ An API call fails with a `500` response code if the parent node of the provided 
 
 ## Create an asset {#create-an-asset}
 
-See [asset upload](developer-reference-material-apis.md) for information on how to create an asset. You cannot create an asset using the HTTP API.
+Asset creation is not supported via this HTTP API. For asset creation, use the [asset upload](developer-reference-material-apis.md) API.
 
 ## Update an asset binary {#update-asset-binary}
 
@@ -154,7 +209,7 @@ See [asset upload](developer-reference-material-apis.md) for information on how 
 
 ## Update metadata of an asset {#update-asset-metadata}
 
-Updates the Asset metadata properties. If you update any property in the `dc:` namespace, the API updates the same property in the `jcr` namespace. The API does not sync the properties under the two namespaces.
+This operation updates the asset's metadata. When updating properties in the `dc:` namespace, the corresponding `jcr:` property is updated. However, the API does not sync the properties under the two namespaces.
 
 **Request**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
 
@@ -169,7 +224,10 @@ Updates the Asset metadata properties. If you update any property in the `dc:` n
 
 Create a rendition for an asset. If request parameter name is not provided, the file name is used as rendition name.
 
-**Parameters**: The parameters are `name` for name of the rendition and `file` as a file reference.
+**Parameters**: The parameters are:
+
+`name`: for the rendition name.
+`file`: The binary file for the rendition as a reference. 
 
 **Request**
 
@@ -263,15 +321,15 @@ Deletes a resource (-tree) at the provided path.
 * 412 - PRECONDITION FAILED - if root collection cannot be found or accessed.
 * 500 - INTERNAL SERVER ERROR - if something else goes wrong.
 
-## Tips, best practices, and limitations {#tips-limitations}
+## Follow best practices and note limitations {#tips-limitations}
 
-* After the [!UICONTROL Off Time], an asset and its renditions are not available via the [!DNL Assets] web interface and through the HTTP API. The API returns 404 error message if the [!UICONTROL On Time] is in the future or [!UICONTROL Off Time] is in the past.
+* Assets and their renditions become unavailable via the [!DNL Assets] web interface and the HTTP API when the [!UICONTROL Off Time] is reached. The API returns a 404 error if the [!UICONTROL On Time] is in the future or [!UICONTROL Off Time] is in the past.
 
-* Assets HTTP API does not return the complete metadata. The namespaces are hardcoded and only those namespaces are returned. For complete metadata, see the asset path `/jcr_content/metadata.json`.
+* The Assets HTTP API returns only a subset of metadata. The namespaces are hardcoded and only those namespaces are returned. For complete metadata, see the asset path `/jcr_content/metadata.json`.
 
 * Some properties of folder or asset are mapped to a different prefix when updated using APIs. The `jcr` prefix of `jcr:title`, `jcr:description`, and `jcr:language` are replaced with `dc` prefix. Hence in the returned JSON, `dc:title` and `dc:description` contain the values of `jcr:title` and `jcr:description`, respectively.
 
-**See also**
+**Explore related resources**
 
 * [Translate Assets](translate-assets.md)
 * [Assets supported file formats](file-format-support.md)
@@ -284,6 +342,7 @@ Deletes a resource (-tree) at the provided path.
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

@@ -2,10 +2,12 @@
 title: Configuring Search Forms
 description: Configuring Search Forms for Adobe Experience Manager as a Cloud Service.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Configuring Search Forms {#configuring-search-forms}
 
-Adobe Experience Manager as a Cloud Service comes with a powerful [Search](/help/sites-cloud/authoring/getting-started/search.md) mechanism. 
+Adobe Experience Manager as a Cloud Service comes with a powerful [Search](/help/sites-cloud/authoring/search.md) mechanism. 
 
 In combination with this there are a also set of predefined options to help you to filter your content. These hold predefined facets such as **Modified Date**, **Publish Status**, or **Livecopy Status** to help you quickly drill down to the resources you need.
 
@@ -13,9 +15,9 @@ In combination with this there are a also set of predefined options to help you 
 
 Together these aim to help you locate your content quickly and easily from:
 
-* [Search and Filter](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
-* [Rail Selector](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
-* the [Assets Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) (when editing pages)
+* [Search and Filter](/help/sites-cloud/authoring/search.md#search-and-filter)
+* [Rail Selector](/help/sites-cloud/authoring/basic-handling.md#rail-selector)
+* the [Assets Browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser) (when editing pages)
 
 >[!NOTE]
 >
@@ -31,7 +33,7 @@ The **Search Forms** provide an out-of-the-box selection of [predicates](#predic
 
 ## Default Forms {#default-forms}
 
-When you first access the **Search Forms** console you can see that all the configurations have a padlock symbol. This indicates that the corresponding configuration is the default (out-of-the-box) configuration - and cannot be deleted. Once you have customized, and saved, a configuration the lock will disappear. It will reappear when you [delete your customized configuration](#deleting-a-configuration-to-reinstate-the-default), in which case the default (and the padlock indicator) will be reinstated.
+When you first access the **Search Forms** console you can see that all the configurations have a padlock symbol. This indicates that the corresponding configuration is the default (out-of-the-box) configuration - and cannot be deleted. Once you have customized, and saved, a configuration the lock will disappear. It will reappear when you [delete your customized configuration](#deleting-a-configuration-to-reinstate-the-default), in which case the default (and the padlock indicator) is reinstated.
 
 ![configuring search forms overview](assets/csf-overview.png)
 
@@ -58,7 +60,7 @@ The default configurations (listed alphabetically) available are:
 
 >[!NOTE]
 >
->For further details about Asset related search forms, see [Assets - Search Facets](/help/assets/search-facets.md)
+>For more details about Asset related search forms, see [Assets - Search Facets](/help/assets/search-facets.md).
 
 
 ## Predicates and Their Settings {#predicates-and-their-settings}
@@ -129,7 +131,7 @@ The following predicates are available, dependent on the configuration:
   </tr>
   <tr>
    <td>Components</td>
-   <td>Allows an author to search/filter for pages that have a specific component on it. For example an image gallery.<br /> </td>
+   <td>Allows an author to search/filter for pages that have a specific component on it. For example, an image gallery.<br /> </td>
    <td>
     <ul>
      <li>Placeholder</li>
@@ -474,7 +476,7 @@ The following predicates are available, dependent on the configuration:
 >The common search predicates are defined in:
 >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->This information is for reference only, you must not make changes to `/libs`.
+>This information is for reference only, you must not change `/libs`.
 
 <!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
@@ -521,7 +523,7 @@ Dependent on the predicate a selection of settings are available for configurati
 
 * **Option Path**
 
-  The user can select the path using the Path Browser in the predicate setting tab. After selecting the **+** icon is used to add the selection to the list of valid options (then the **-** icon to remove if required).
+  The user can select the path using the Path Browser in the predicate setting tab. After selecting the **+** icon is used to add the selection to the list of valid options (then the **-** icon to remove if necessary).
 
   The options are content nodes created by the user, having the following structure:
 
@@ -569,7 +571,7 @@ You can add or edit fields and define/update their settings:
 
     * You are adding a new field:
 
-      After adding the predicate the **Settings** tab will open and show the properties that can be defined.
+      After adding the predicate, the **Settings** tab opens and shows the properties that can be defined.
 
     * You want to update an existing predicate:
 
@@ -587,7 +589,7 @@ You can add or edit fields and define/update their settings:
 
    ![preview icon](assets/csf-preview-icon.png)
 
-1. This will display the search forms as they will be shown (fully expanded) in the Search column of the appropriate console.
+1. Displays the search forms as they are shown (fully expanded) in the Search column of the appropriate console.
 
    ![preview form](assets/csf-preview-form.png)
 
@@ -618,7 +620,7 @@ Deleting a customized configuration is done from the console:
 
    ![restore default](assets/csf-restore-default.png)
 
-1. The customized configuration will be deleted and the default reinstated (this is indicated by the reappearance of the padlock symbol in the console).
+1. The customized configuration is deleted and the default reinstated (this is indicated by the reappearance of the padlock symbol in the console).
 
 ### Adding Options Predicates {#adding-options-predicates}
 
@@ -628,7 +630,7 @@ The following example (to search according to the template used to create a page
 
 1. Create the node defining the property to be searched on.
 
-   You will need a root node holding definitions of the individual options to be available to the user.
+   You need a root node holding definitions of the individual options to be available to the user.
 
    The nodes for the individual options need the properties:
 
@@ -669,7 +671,7 @@ The following example (to search according to the template used to create a page
    ![Option predicates](assets/csf-options-predicate-02.png)
 
 1. Select **Done** to save your configuration.
-1. Navigate to the appropriate console (in this example, **Sites**) and open the **Search - Filters** rail. The newly defined search forms, together with the various options will be visible. Select the required option to see the search results.
+1. Navigate to the appropriate console (in this example, **Sites**) and open the **Search - Filters** rail. The newly defined search forms, together with the various options are visible. Select the required option to see the search results.
 
    ![options being used](assets/csf-options-usage.png)
 

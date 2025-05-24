@@ -4,6 +4,7 @@ description: Learn how translation rules identify content that needs translating
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
+solution: Experience Manager Sites
 ---
 # Identifying Content to Translate {#identifying-content-to-translate}
 
@@ -11,15 +12,15 @@ Translation rules identify the content to translate for pages, components, and a
 
 >[!TIP]
 >
->If you are new to translating content, please refer to our [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM’s powerful translation tools, ideal for those with no AEM or translation experience.
+>If you are new to translating content, see [Sites Translation Journey](/help/journey-sites/translation/overview.md), which is guided path through translating your AEM Sites content using AEM's powerful translation tools, ideal for those with no AEM or translation experience.
 
 ## Content Fragments and Translation Rules {#content-fragments}
 
-The translation rules described in this document apply to Content Fragments only if the **Enable Content Model Fields for Translation** option has not been activated at the [translation integration framework configuration level.](integration-framework.md#assets-configuration-properties)
+The translation rules described in this document apply to Content Fragments only if the **Enable Content Model Fields for Translation** option has not been activated at the [translation integration framework configuration level](integration-framework.md#assets-configuration-properties).
 
-If the **Enable Content Model Fields for Translation** option is active, AEM will use the **Translatable** field on [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties) to determine if the field is to be translated and automatically creates translation rules accordingly. This option supersedes any translation rules you may have created and requires no intervention or additional steps.
+If the **Enable Content Model Fields for Translation** option is active, AEM will use the **Translatable** field on [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) to determine if the field is to be translated and automatically creates translation rules accordingly. This option supersedes any translation rules you may have created and requires no intervention or additional steps.
 
-If you wish to use translation rules for translating your Content Fragments, the **Enable Content Model Fields for Translation** option on the translation integration framework configuration must be disabled and you need to follow the steps outlined below to create your rules.
+If you want to use translation rules for translating your Content Fragments, the **Enable Content Model Fields for Translation** option on the translation integration framework configuration must be disabled and you need to follow the steps outlined below to create your rules.
 
 ## Overview {#overview}
 
@@ -119,11 +120,11 @@ The `translation_rules.xml` file consists of a `nodelist` element with several c
 
 ```xml
 <nodelist>
-     <node path="/content”>
+     <node path="/content">
            <property name="text" />
      </node>
-     <node path=“/content/mysite/en”>
-          <property name=“text” translate=“false" />
+     <node path="/content/mysite/en">
+          <property name="text" translate="false" />
      </node>
 <nodelist>
 ```
@@ -136,7 +137,7 @@ For example, the following rules cause all content in `text` properties to be tr
 
 ```xml
 <nodelist>
-    <node path="/content”>
+    <node path="/content">
      <filter>
    <node containsProperty="draft" propertyValue="true" />
      </filter>
@@ -157,15 +158,15 @@ To access it:
 
 In the translation rules UI you can:
 
-1. **Add Context**, which allows you to add a path.
+1. **Add Context**, which lets you add a path.
 
    ![Add translation context](../assets/add-translation-context.png)
 
-1. Use the path browser to select the required context and tap or click the **Confirm** button to save.
+1. Use the path browser to select the required context and select the **Confirm** button to save.
 
    ![Select context](../assets/select-context.png)
 
-1. Then you need to select your context and then click **Edit**. This will open the Translation Rules Editor.
+1. Then you need to select your context and then click **Edit**. This opens the Translation Rules Editor.
 
    ![Translation Rules Editor](../assets/translation-rules-editor.png)
 
@@ -180,7 +181,7 @@ There are four attributes that you can change via the UI:
 
 **`isDeep`**  is applicable on node filters and is true by default. It checks if the node (or its ancestors) contains that property with the specified property value in the filter. If false, it only checks at the current node.
 
-For example, child nodes are added to a translation job even when the parent node haa the property `draftOnly` set to true in order to flag draft content. Here `isDeep` comes into play and checks if the parent nodes have property `draftOnly` as true and excludes those child nodes.
+For example, child nodes are added to a translation job even when the parent node has the property `draftOnly` set to true to flag draft content. Here `isDeep` comes into play and checks if the parent nodes have property `draftOnly` as true and excludes those child nodes.
 
 In the editor, you can check/uncheck **Is Deep** in the **Filters** tab.
 
@@ -208,7 +209,7 @@ In the UI, you can check/uncheck **Translate** in the **Properties** tab.
 
 ### updateDestinationLanguage {#updatedestinationlanguage}
 
-**`updateDestinationLanguage`** is used for properties that do not have text but language codes, for example `jcr:language`. The user is not translating text but the language locale from source to destination. Such properties are not sent for translation.
+**`updateDestinationLanguage`** is used for properties that do not have text but language codes, for example, `jcr:language`. The user is not translating text but the language locale from source to destination. Such properties are not sent for translation.
 
 In the UI, you can check/uncheck **Translate** in the **Properties** tab to modify this value, but for the specific properties that have language codes as value.
 

@@ -2,12 +2,82 @@
 title: Optimizing GraphQL queries
 description: Learn how to optimize your GraphQL queries when Filtering, Paging and Sorting your Content Fragments in Adobe Experience Manager as a Cloud Service for headless content delivery.
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Developer
 ---
 # Optimizing GraphQL Queries {#optimizing-graphql-queries}
 
 >[!NOTE]
 >
 >Prior to applying these optimization recommendations consider [Updating your Content Fragments for Paging and Sorting in GraphQL Filtering](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md) for best performance.
+
+These guidelines are provided to help prevent performance issues with your GraphQL queries. 
+
+## GraphQL Checklist {#graphql-checklist}
+
+The following checklist aims to help you optimize the configuration and use of GraphQL in Adobe Experience Manager (AEM) as a Cloud Service.
+
+### First Principles {#first-principles}
+
+#### Use persisted GraphQL queries {#use-persisted-graphql-queries}
+
+**Recommendation**
+
+Use of persisted GraphQL queries is strongly recommended.
+
+Persisted GraphQL queries help reduce query execution performance by utilizing the Content Delivery Network (CDN). Client applications request persisted queries with GET requests for fast edge-enabled execution. 
+
+**Further Reference**
+
+See:
+
+* [Persisted GraphQL queries](/help/headless/graphql-api/persisted-queries.md).
+* [Learning to use GraphQL with AEM - Sample Content and Queries](/help/headless/graphql-api/sample-queries.md)
+
+### Cache Strategy {#cache-strategy}
+
+Various methods of caching can also be used for optimization.
+
+#### Enable AEM Dispatcher caching {#enable-aem-dispatcher-caching}
+
+**Recommendation**
+
+[AEM Dispatcher](/help/implementing/dispatcher/overview.md) is the first level cache within the AEM service, before CDN cache. 
+
+**Further Reference**
+
+See:
+
+* [GraphQL Persisted Queries - enabling caching in the Dispatcher](/help/headless/deployment/dispatcher-caching.md)
+
+#### Use a Content Delivery Network (CDN) {#use-cdn}
+
+**Recommendation**
+
+GraphQL queries and their JSON responses can be cached if targeted as `GET` requests when using a CDN. In contrast, uncached requests can be very (resource) expensive and slow to process, with the potential for further detrimental effects on the origin's resources. 
+
+**Further Reference**
+
+See:
+
+* [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
+
+#### Set HTTP cache control headers {#set-http-cache-control-headers}
+
+**Recommendation**
+
+When using persisted GraphQL queries with a CDN, it is recommended to set appropriate HTTP cache control headers. 
+
+Each persisted query can have its own specific set of cache control headers. The headers can be set over the [GraphQL API](/help/headless/graphql-api/content-fragments.md) or the [AEM GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md). 
+
+**Further Reference**
+
+See:
+
+* [Caching your persisted queries](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries)
+* [Managing cache for your persisted queries](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
+
+### GraphQL Query optimization {#graphql-query-optimization}
 
 On an AEM instance with a high number of Content Fragments that share the same model, GraphQL list queries can become costly (in terms of resources).
 
@@ -19,14 +89,16 @@ To reduce performance and memory issues, this initial result set has to be kept 
 
 AEM provides two approaches for optimizing GraphQL queries:
 
-* [Hybrid filtering](#hybrid-filtering)
-* [Paging](#paging) (or pagination)
+* [Hybrid filtering](#use-aem-graphql-hybrid-filtering)
+* [Paging](#use-aem-graphql-pagination) (or pagination)
 
-  * [Sorting](#sorting) is not directly related to optimization, but is related to paging
+  * [Sorting](#use-graphql-sorting) is not directly related to optimization, but is related to paging
 
-Each approach has its own use-cases and limitations. This document provides information on Hybrid Filtering and Paging, with some [best practices](#best-practices) to optimize GraphQL queries.
+Each approach has its own use-cases and limitations. This section provides information on Hybrid Filtering and Paging, together with some of the [best practices](#best-practices) for use in optimizing GraphQL queries.
 
-## Hybrid filtering {#hybrid-filtering}
+#### Use AEM GraphQL hybrid filtering {#use-aem-graphql-hybrid-filtering}
+
+**Recommendation**
 
 Hybrid filtering combines JCR filtering with AEM filtering.
 
@@ -34,11 +106,26 @@ It applies a JCR filter (in the form of a query constraint) before loading the r
 
 >[!NOTE]
 >
->For technical reasons (e.g. flexibility, nesting of fragments), AEM cannot delegate the entire filtering to JCR. 
+>For technical reasons (for example, flexibility, nesting of fragments), AEM cannot delegate the entire filtering to JCR. 
 
 This technique keeps the flexibility that GraphQL filters provide, while delegating as much of the filtering as possible to JCR.
 
-## Paging {#paging}
+>[!NOTE]
+>
+>AEM Hybrid Filtering requires updating existing Content Fragments
+
+**Further Reference**
+
+See:
+
+* [Updating your Content Fragments for Paging and Sorting in GraphQL Filtering](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
+* [Sample Query with filtering by _tags ID and excluding variations](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
+
+#### Use GraphQL pagination {#use-aem-graphql-pagination}
+
+**Recommendation**
+
+The response time of complex queries, with large result sets, can be improved by segmenting responses into chunks using pagination, a GraphQL standard. 
 
 GraphQL in AEM provides support for two types of pagination:
 
@@ -58,7 +145,17 @@ GraphQL in AEM provides support for two types of pagination:
   >
   >Backward paging (using `before`/`last` parameters) is not supported.
 
-## Sorting {#sorting}
+**Further Reference**
+
+See:
+
+* [Sample Pagination Query using first and after](/help/headless/graphql-api/sample-queries.md#sample-pagination-first-after)
+
+#### Use GraphQL sorting {#use-graphql-sorting}
+
+**Recommendation**
+
+Also a GraphQL standard, sorting enables clients to receive JSON content in sorted order. This can reduce the need for further processing on the client. 
 
 Sorting can only be efficient if all sort criteria are related to top-level fragments.
 
@@ -68,9 +165,15 @@ Sorting can only be efficient if all sort criteria are related to top-level frag
 >
 >Sorting on top-level fields also has an (albeit small) impact on performance.
 
+**Further Reference**
+
+See:
+
+* [Sample Query with filtering by _tags ID and excluding variations, and sort by name](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
+
 ## Best Practices {#best-practices}
 
-The main goal of all optimizations is to reduce the initial result set. The best practices listed here provide ways to do so. They can (and should) be combined.
+The main goal of all optimization recommendations is to reduce the initial result set. The best practices listed here provide ways to do so. They can (and should) be combined.
 
 ### Filter on top-level properties only {#filter-top-level-properties-only}
 
@@ -123,7 +226,7 @@ If you are primarily interested in only retrieving the first few pages, there is
 
 ### Logical operations in filter expressions {#logical-operations-in-filter-expressions}
 
-If you are filtering on nested fragments, you can still leverage JCR filtering by providing an accompanying filter on a top-level field that is combined using the `AND` operator.
+If you are filtering on nested fragments, you can still apply JCR filtering by providing an accompanying filter on a top-level field that is combined using the `AND` operator.
 
 A typical use-case would be to restrict the scope of the query using a filter on the `_path` field of the top-level fragment, and then filter on additional fields that might be on the top-level, or on a nested fragment.
 
@@ -160,3 +263,27 @@ There are several other situations where a filter expression cannot be evaluated
 * Filter expressions using the `CONTAINS_NOT` operator.
 
 * Filter expressions on a `Calendar`, `Date` or `Time` value that use the `NOT_AT` operator.
+
+### Minimize Content Fragment Nesting {#minimize-content-fragment-nesting}
+
+Nesting Content Fragments is a great way to model custom content structures. You can even have a fragment with a nested fragment, that also has a nested fragment, that has...and so on. 
+
+However, creating a structure with too many levels can increase the processing times for a GraphQL query, as GraphQL has to traverse the entire hierarchy of all nested Content Fragments. 
+
+Deep nesting can also have adverse effects on content governance. In general, it is recommended to limit Content Fragment nesting to below five or six levels.
+
+### Do not output all formats (Multi line text elements) {#do-not-output-all-formats}
+
+AEM GraphQL can return text, authored in the **[Multi line text](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** data type, in multiple formats: Rich Text, Simple Text, and Markdown. 
+
+Outputting all three formats increases the size of text output in JSON by a factor of three. That, combined with generally large result sets from very broad queries, can produce very large JSON responses that therefore take a long time to compute. It is better to limit the output to only the text formats required for rendering the content.
+
+### Modifying Content Fragments {#modifying-content-fragments}
+
+Only modify Content Fragments, and their resources, using the AEM UI or APIs. Do not make modifications directly in JCR.
+
+### Test your queries {#test-your-queries}
+
+Processing GraphQL queries is similar to processing search queries, and is significantly more complex than simple GET-all-content API requests. 
+
+Carefully planning, testing, and optimizing your queries in a controlled non-production environment is key for later success when used in production. 

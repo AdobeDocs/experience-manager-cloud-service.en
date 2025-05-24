@@ -1,6 +1,6 @@
 ---
 title: Deliver Dynamic Media Assets
-description: Learn how to deliver Dynamic Media assets.
+description: Learn how to deliver Dynamic Media assets to your web pages through embedded video and images, or linking URLs to your web application.
 contentOwner: Rick Brough
 feature: Asset Management
 role: User

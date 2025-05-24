@@ -2,10 +2,13 @@
 title: Set up Dynamic Media
 description: To set up Dynamic Media, you must configure Dynamic Media and manage image and viewer presets.
 contentOwner: Rick Brough
+feature: Configuration,Viewer Presets,Image Presets,Dynamic Media
 role: Admin,User
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
 ---
 # Set up Dynamic Media {#setting-up-dynamic-media}
+
+{{work-with-dynamic-media}}
 
 [Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) helps you manage assets by delivering rich visual merchandising and marketing assets on demand, automatically scaled for consumption on web, mobile, and social sites. Using a set of primary source assets, Dynamic Media generates and delivers multiple variations of rich content in real time through its global, scalable, performance-optimized network.
 

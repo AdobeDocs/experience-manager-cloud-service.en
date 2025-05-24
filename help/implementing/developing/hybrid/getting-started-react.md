@@ -1,7 +1,9 @@
 ---
 title: Getting Started with SPAs in AEM Using React
-description: This article presents a sample SPA application, explains how it is put together, and allows you to get up-and-running with your own SPA quickly using the React framework.
+description: This article presents a sample SPA application, explains how it is put together, and lets you get up-and-running with your own SPA quickly using the React framework.
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
+feature: Developing
+role: Admin, Architect, Developer
 ---
 # Getting Started with SPAs in AEM Using React {#getting-started-with-spas-in-aem-using-react}
 
@@ -12,6 +14,8 @@ The SPA authoring feature offers a comprehensive solution for supporting SPAs wi
 >[!NOTE]
 >
 >This article is based on the React framework. For the corresponding document for the Angular framework see [Getting Started with SPAs in AEM - Angular](getting-started-angular.md).
+
+{{ue-over-spa}}
 
 ## Introduction {#introduction}
 
@@ -25,7 +29,7 @@ For more detail on how SPAs work in AEM, see the following documents:
 
 >[!NOTE]
 >
->In order to be able to author content within a SPA, the content must be stored in AEM and be exposed by the content model.
+>To be able to author content within a SPA, the content must be stored in AEM and be exposed by the content model.
 >
 >A SPA developed outside of AEM will not be authorable if it does not respect the content model contract.
 
@@ -33,7 +37,7 @@ This document will walk through the structure of a simplified SPA created using 
 
 ## Dependencies, Configuration, and Building {#dependencies-configuration-and-building}
 
-In addition to the expected React dependency, the sample SPA can leverage additional libraries to make the creation of the SPA more efficient.
+In addition to the expected React dependency, the sample SPA can use additional libraries to make the creation of the SPA more efficient.
 
 ### Dependencies {#dependencies}
 
@@ -54,11 +58,11 @@ Because this example is based on the React framework, there are two React-specif
  react-dom
 ```
 
-The `aem-clientlib-generator` is leveraged to make the creation of client libraries automatic as part of the build process.
+The `aem-clientlib-generator` is used to make the creation of client libraries automatic as part of the build process.
 
 `"aem-clientlib-generator": "^1.4.1",`
 
-Further details about it can be found [on GitHub here](https://github.com/wcm-io-frontend/aem-clientlib-generator).
+For further details see [aem-clientlib-generator on GitHub](https://github.com/wcm-io-frontend/aem-clientlib-generator).
 
 The `aem-clientlib-generator` is configured in the `clientlib.config.js` file as follows.
 
@@ -91,7 +95,7 @@ module.exports = {
 
 ### Building {#building}
 
-Actually building the app leverages [Webpack](https://webpack.js.org/) for transpilation in addition to the aem-clientlib-generator for automatic client library creation. Therefore the build command will resemble:
+Actually building the app uses [Webpack](https://webpack.js.org/) for transpilation in addition to the aem-clientlib-generator for automatic client library creation. Therefore the build command will resemble:
 
 `"build": "webpack && clientlib --verbose"`
 
@@ -99,7 +103,7 @@ Once built, the package can be uploaded to an AEM instance.
 
 ### AEM Project Archetype {#aem-project-archetype}
 
-Any AEM project should leverage the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), which supports SPA projects using React or Angular and leverages the SPA SDK.
+Any AEM project should use the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), which supports SPA projects using React or Angular and uses the SPA SDK.
 
 ## Application Structure {#application-structure}
 
@@ -111,7 +115,7 @@ A simplified image component is used as an example, but all components of the ap
 
 ### index.js {#index-js}
 
-The entry point into the SPA is of course the `index.js` file shown here simplified to focus on the important content.
+The entry point into the SPA is the `index.js` file shown here simplified to focus on the important content.
 
 ```
 import ReactDOM from 'react-dom';
@@ -128,7 +132,7 @@ ReactDOM.render(
 });
 ```
 
-The main function of `index.js` is to leverage the `ReactDOM.render` function to determine where in the DOM to inject the application.
+The main function of `index.js` is to use the `ReactDOM.render` function to determine where in the DOM to inject the application.
 
 This is a standard use of this function, not unique to this example app.
 
@@ -173,7 +177,7 @@ MapTo('my-react-app/components/structure/page')(withComponentMappingContext(AppP
 
 In this example the `AppPage` class extends `Page`, which contains the inner-content methods that can then be used.
 
-The `Page` ingests the JSON representation of the page model and processes the content to wrap/decorate each element of the page. Further details on the `Page` can be found in the document [SPA Blueprint.](blueprint.md)
+The `Page` ingests the JSON representation of the page model and processes the content to wrap/decorate each element of the page. Further details on the `Page` can be found in the document [SPA Blueprint](blueprint.md).
 
 ### Image.js {#image-js}
 
@@ -204,7 +208,7 @@ class Image extends Component {
 MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);
 ```
 
-The central idea of SPAs in AEM is the idea of mapping SPA components to AEM components and updating the component when the content is modified (and vice versa). See the document [SPA Editor Overview](editor-overview.md) for a summary of this communication model.
+The central idea of SPAs in AEM is the idea of mapping SPA components to AEM components and updating the component when the content is modified (and conversely). See the document [SPA Editor Overview](editor-overview.md) for a summary of this communication model.
 
 `MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);`
 
@@ -251,7 +255,7 @@ For more information see the [SPA Blueprint document](blueprint.md).
 
 It is regularly necessary for components within a single-page application to share information. There are several recommended ways of doing this, listed as follows in increasing order of complexity.
 
-* **Option 1:** Centralize the logic and broadcast to the necessary components for example by using React Context.
+* **Option 1:** Centralize the logic and broadcast to the necessary components for example, by using React Context.
 * **Option 2:** Share component states by using a state library such as Redux.
 * **Option 3:** Leverage the object hierarchy by customizing and extending the container component.
 
@@ -261,4 +265,4 @@ It is regularly necessary for components within a single-page application to sha
 * [SPA Editor Overview](editor-overview.md) goes into more depth into the communication model between AEM and the SPA.
 * [WKND SPA Project](wknd-tutorial.md) is a step-by step tutorial implementing a simple SPA project in AEM.
 * [Dynamic Model to Component Mapping for SPAs](model-to-component-mapping.md) explains the dynamic model to component mapping and how it works within SPAs in AEM.
-* [SPA Blueprint](blueprint.md) offers a deep dive into how the SPA SDK for AEM works in case you wish to implement SPAs in AEM for a framework other than React or Angular or simply would like a deeper understanding.
+* [SPA Blueprint](blueprint.md) offers a deep dive into how the SPA SDK for AEM works in case you want to implement SPAs in AEM for a framework other than React or Angular or simply would like a deeper understanding.

@@ -2,12 +2,14 @@
 title: Creating and Managing Displays in Screens as a Cloud Service
 description: This page describes how to create and manage displays in Screens as a Cloud Service.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
+feature: Authoring Screens
+role: Admin, Developer, User
 ---
 # Creating and Managing Displays in Screens as a Cloud Service {#create-displays-screens-cloud}
 
 Once you have published your channel, it is now time to create your display in the Screens Services Provider.
 
-A Display is a virtual grouping of screens that are usually positioned next to each other. The display is usually permanent in respect to an installation. This will be the object content authors will work with and always reference to as logical display rather than their physical counter part(s).
+A Display is a virtual grouping of screens that are usually positioned next to each other. The display is usually permanent in respect to an installation. This object content is what authors work with and always reference to as logical display rather than their physical counter parts.
 
 ## Objective {#objective}
 
@@ -21,7 +23,7 @@ This document helps you understand how to create and manage displays in the Scre
 Follow the steps below to create the display from the Screens Services Provider:
 
 1. Navigate to Screens Services Provider from your AEM Cloud Service instance.
-1. Select **Displays** from the left navigation panel and click on **Create** from the top right corner of the screen.
+1. Select **Displays** from the left navigation panel and click **Create** from the upper-right corner of the screen.
 
    ![image](/help/screens-cloud/assets/display/disp-1.png)
 
@@ -29,7 +31,7 @@ Follow the steps below to create the display from the Screens Services Provider:
 
    ![image](/help/screens-cloud/assets/display/disp-2.png)
 
-1. Enter the title as **LoopingChannelDisplay** in **Display Name** and click on **Create**.
+1. Enter the title as **LoopingChannelDisplay** in **Display Name** and click **Create**.
 
    ![image](/help/screens-cloud/assets/display/disp3.png)
 
@@ -41,7 +43,7 @@ Follow the steps below to create the display from the Screens Services Provider:
 
 You can delete a display from Screens Services Provider.
 
-Select the display and click on **Delete** from the bottom of the panel, as shown in the figure below.
+Select the display and click **Delete** from the bottom of the panel, as shown in the figure below.
 
    ![image](/help/screens-cloud/assets/display/disp-5.png)
 
@@ -61,7 +63,7 @@ You can switch the folder rail from displaying all the folders to specific folde
 
 1. Select **Hide Folders** to close it again.
 
-## How to create a new folder {#create-folder}
+## How to create a folder {#create-folder}
 
 You can create folders to better organize your displays.
 
@@ -80,7 +82,7 @@ You can create folders to better organize your displays.
 
    ![image](/help/screens-cloud/assets/display/Createfolder2.png)
 
-## How to create a new nested folder {#nested-folder}
+## How to create a nested folder {#nested-folder}
 
 1. Navigate to the displays inventory view.
 
@@ -112,7 +114,7 @@ You can move content to your new folders to better organize your displays.
 
  ![image](/help/screens-cloud/assets/display/movetofolder.png)
 
-**Note**: The folder should be selected in the folder side rail. Additionally, the breadcrumb navigation should show the current folder name next to **Displays**.
+**Note**: The folder should be selected in the folder side rail. Also, the breadcrumb navigation should show the current folder name next to **Displays**.
 
 ## How to delete content from a folder {#delete-folder}
 
@@ -122,9 +124,9 @@ All folder operations are accessible via the selection action bar in inventory v
 
 1. In the inventory view, select the desired child folder you want to delete and ensure it is empty.
 
-1. Click the **Delete** action in the selection action bar. The action will be disabled if the folder is not empty.
+1. Click **Delete** action in the selection action bar. The action is disabled if the folder is not empty.
 
 
 ## What's Next {#whats-next}
 
-Now, that you have learnt how to create and manage displays for your project, you should continue your Screens as a Cloud Service journey by next reviewing the document [Assigning Channel to a Display in Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=en).
+Now, that you have learnt how to create and manage displays for your project, you should continue your Screens as a Cloud Service journey by next reviewing the document [Assigning Channel to a Display in Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html).

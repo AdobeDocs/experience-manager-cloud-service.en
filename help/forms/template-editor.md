@@ -1,9 +1,20 @@
 ---
-title: How to create an Adaptive Form template?
+title: How can we create an Adaptive Form template?
 description: Create Adaptive Form templates to define the basic structure and initial content using the Template Editor.
+feature: Adaptive Forms, Foundation Components
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
+role: User, Developer, Admin
 ---
 # Create an Adaptive Form template {#adaptive-form-templates}
+
+>[!NOTE]
+>
+> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components.
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html)                  |
+| AEM as a Cloud Service     | This article        |
 
 When you author a form, you add fields and components to define form structure, content, and actions in the editor. You add fields and components in the `guideRootPanel` of the form container. With Template Editor, you can create a template that contains basic structure and initial content that authors can use to create forms.
 
@@ -25,13 +36,13 @@ Experience Manager provides a global folder to organize templates. However, it i
 
 After you have created a folder, open the folder and perform the following steps to create a template:
 
-1. Tap **[!UICONTROL Create]** inside the folder you have created.
-1. In the Pick a Template Type section, select **[!UICONTROL Adaptive Form template]** and tap **[!UICONTROL Next]**.
+1. Select **[!UICONTROL Create]** inside the folder you have created.
+1. In the Pick a Template Type section, select **[!UICONTROL Adaptive Form template]** and select **[!UICONTROL Next]**.
 
-1. In the Template Details section, provide a Template Title and tap **[!UICONTROL Create]**.
+1. In the Template Details section, provide a Template Title and select **[!UICONTROL Create]**.
    You can also provide a description.
 
-1. Tap **[!UICONTROL Done]** to return to the console, or tap **[!UICONTROL Open]** to open the template in the editor.
+1. Select **[!UICONTROL Done]** to return to the console, or select **[!UICONTROL Open]** to open the template in the editor.
 
 ### Template editor UI {#template-editor-ui}
 
@@ -82,7 +93,7 @@ Header and footer added in the Structure layer
 
 When you edit the template with structure layer selected, you can unlock the header and footer of the template. If a component is unlocked in the template, form authors can edit the component in the Adaptive Form that uses the template. Locking a component prevents form authors from editing it in the Adaptive Form. Lock option is available in the component toolbar.
 
-For example, you add the header component in the template. When you select the component, you can see a lock option in the component toolbar. Typically, header includes company name and logo, and you don't want form authors to change the logo and header in a template. In an Adaptive Form created using the template with the header component locked, form authors cannot change the logo and company name.
+For example, you add the header component in the template. When you select the component, you can see a lock option in the component toolbar. Typically, header includes company name and logo, and you do not want form authors to change the logo and header in a template. In an Adaptive Form created using the template with the header component locked, form authors cannot change the logo and company name.
 
 >[!NOTE]
 >
@@ -92,7 +103,7 @@ For example, you add the header component in the template. When you select the c
 
 When the Initial Content option is selected, the Adaptive Form Container of the template opens like an Adaptive Form for editing. Like authoring an Adaptive Form, you can specify initial settings, such as selecting a theme and Submit Actions.
 
-Form authors use it as a base to create a form. Content flow structure is specified in the Initial Content layer of the template. To switch to editing initial content of the form template, before Preview in the page toolbar, tap ![canvas-drop-down](assets/canvas-drop-down.png) **&gt;** **[!UICONTROL Initial Content]**.
+Form authors use it as a base to create a form. Content flow structure is specified in the Initial Content layer of the template. To switch to editing initial content of the form template, before Preview in the page toolbar, select ![canvas-drop-down](assets/canvas-drop-down.png) **&gt;** **[!UICONTROL Initial Content]**.
 
 
 In the Initial Content layer, you create the Adaptive Form template that your authors use as a base. Authoring a template is similar to authoring a form, you use options available in the Sidebar. Sidebar provides content, properties, assets, and components browsers.
@@ -119,7 +130,7 @@ Change the layer from Structure to Initial Content, and start adding content to 
 * You can drag-drop the panel component from the components browser in the sidebar.
 * You can add child panel of the `guideRootPanel` from the component toolbar.
 
-To create the General Information and Professional Information tabs, add two panels in the child panel of the `guideRootPanel`. Select the panels and tap ![cmppr](assets/configure-icon.svg) to open the properties in the sidebar. Change the element names as `general-info` and `professional-info`, and titles as General Information and Professional Information respectively. In the sidebar, tap content to open the content browser. In the Form Objects tab, select `guideRootPanel`. In the editor, the guideRootPanel is selected. Tap ![cmppr](assets/configure-icon.svg) in the component toolbar to open its properties. In the Panel Layout field, select **[!UICONTROL Tabs on Top]** and tap **[!UICONTROL Done]**. The tabbed template structure is applied.
+To create the General Information and Professional Information tabs, add two panels in the child panel of the `guideRootPanel`. Select the panels and select ![cmppr](assets/configure-icon.svg) to open the properties in the sidebar. Change the element names as `general-info` and `professional-info`, and titles as General Information and Professional Information respectively. In the sidebar, select content to open the content browser. In the Form Objects tab, select `guideRootPanel`. In the editor, the guideRootPanel is selected. Select ![cmppr](assets/configure-icon.svg) in the component toolbar to open its properties. In the Panel Layout field, select **[!UICONTROL Tabs on Top]** and select **[!UICONTROL Done]**. The tabbed template structure is applied.
 
 #### Adding content in tabs {#adding-content-in-tabs}
 
@@ -138,7 +149,7 @@ When you create a template, it is added as a draft. Enable the template to use i
 1. Navigate to **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Tools]** &gt; **[!UICONTROL Templates]**, and open the folder in which you have created the template.
 
 1. The template you have created is marked as Draft.
-1. Select the template and tap **[!UICONTROL Enable]** in the toolbar.
+1. Select the template and select **[!UICONTROL Enable]** in the toolbar.
    When you create an Adaptive Form, you can see the template listed when you are asked to choose a template.
 
 ## Importing or exporting a template {#importing-or-exporting-a-template}
@@ -154,7 +165,7 @@ A form works with its template. When you download an Adaptive Form created using
 
 Authors can associate a [!UICONTROL Form Data Model Schema] to an Adaptive Form template in the template editor. It allows authors to select a schema from the template editor. When you associate a schema to a template and a form author creates a form based on the template, the schema is pre-selected for the form. It helps forms authors regulate the use of schema and saves time for forms author also. To select a form data model schema in template editor:
 
-1. Tap **[!UICONTROL Content Browser]** located on the left hand side.
+1. Select **[!UICONTROL Content Browser]** located on the left hand side.
 1. Go to the form container **[!UICONTROL Setting]**.
 1. Select **[!UICONTROL Data Model]**. 
 1. Choose your form data model through **[!UICONTROL Select Form Data Model]** and save the configuration.
@@ -184,7 +195,7 @@ Perform the following steps to show and hide templates:
 1. Locate and open the **FormsManager Configuration** settings:
 
     * To show or hide out of the box Adaptive Forms template, check or uncheck the **Include Out of the box AF and AD Templates** option.
-    * To show or hide out of the box Adaptive Form templates that were added in AEM 6.0 Forms or AEM 6.1 Forms releases but are now deprecated, check or uncheck the **Include AEM 6.0 AF Templates** option. If this option is checked, in order to take effect, it requires the **Include Out of the box AF and AD Templates** configuration to be enabled.
+    * To show or hide out of the box Adaptive Form templates that were added in AEM 6.0 Forms or AEM 6.1 Forms releases but are now deprecated, check or uncheck the **Include AEM 6.0 AF Templates** option. If this option is checked, and you want it to take effect, it requires the **Include Out of the box AF and AD Templates** configuration to be enabled.
 
 1. Click **Save**. The display options for the out of the box templates are changed. -->
 
@@ -210,3 +221,8 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 * When you modify properties of the form in template editor, do not use the BindReference property.
 * If you want to add a breakpoint, create it when you author an Adaptive Form template.
   For more information on breakpoints, see [Responsive Layout](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html#authoring).
+
+
+## See Also {#see-also}
+
+{{see-also}}

@@ -4,10 +4,11 @@ description: Learn how to create and synchronize Live Copies to reuse your conte
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
+solution: Experience Manager Sites
 ---
 # Creating and Synchronizing Live Copies {#creating-and-synchronizing-live-copies}
 
-You can create a Live Copy from a page or blueprint configuration in order to reuse that content across your site. Manage inheritance and synchronization, you can control how changes to the content are propagated.
+You can create a Live Copy from a page or blueprint configuration to reuse that content across your site. Manage inheritance and synchronization, you can control how changes to the content are propagated.
 
 ## Managing Blueprint Configurations {#managing-blueprint-configurations}
 
@@ -39,7 +40,7 @@ When your blueprint configuration is used, you can associate it with a rollout c
 
 Blueprint configurations are considered immutable data and as such are not editable at runtime. For this reason, any configuration changes must be deployed via Git using the CI/CD pipeline.
 
-More information can be found in the article [Notable Changes to Adobe Experience Manager (AEM) as a Cloud Service.](/help/release-notes/aem-cloud-changes.md)
+More information can be found in the article [Notable Changes to Adobe Experience Manager (AEM) as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
 
 The following steps are available to an administrator on a local development instance only for testing and development purposes. These options are not available in any AEMaaCS cloud instance.
 
@@ -47,7 +48,7 @@ The following steps are available to an administrator on a local development ins
 
 To create a blueprint configuration:
 
-1. [Navigate](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) to the **Tools** menu, then select the **Sites** menu.
+1. [Navigate](/help/sites-cloud/authoring/basic-handling.md#global-navigation) to the **Tools** menu, then select the **Sites** menu.
 1. Select **Blueprints** to open the **Blueprint Configurations** console:
 
    ![Blueprint configurations](../assets/blueprint-configurations.png)
@@ -66,19 +67,19 @@ To create a blueprint configuration:
 
 You can edit or delete an existing blueprint configuration:
 
-1. [Navigate](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) to the **Tools** menu, then select the **Sites** menu.
+1. [Navigate](/help/sites-cloud/authoring/basic-handling.md#global-navigation) to the **Tools** menu, then select the **Sites** menu.
 1. Select **Blueprints** to open the **Blueprint Configurations** console:
 
    ![Blueprint configurations](../assets/blueprint-configurations.png)
 
-1. Select the required blueprint configuration - the appropriate actions will become available in the toolbar:
+1. Select the required blueprint configuration - the appropriate actions become available in the toolbar:
 
     * **Properties**; you can use this to view and then edit the properties of the configuration.
     * **Delete**
 
 ## Creating a Live Copy {#creating-a-live-copy}
 
-There are a number of ways to create a Live Copy.
+There are several ways to create a Live Copy.
 
 ### Creating a Live Copy of a Page {#creating-a-live-copy-of-a-page}
 
@@ -95,7 +96,7 @@ You can create a Live Copy of any page:
 
 The only difference is that availability of the **Rollout** command on the source/blueprint pages is dependent on whether source is referenced by a blueprint configuration:
 
-* If you create the Live Copy from a source page that **is** referenced in a blueprint configuration, then the Rollout command will be available on the source/blueprint page(s).
+* If you create the Live Copy from a source page that **is** referenced in a blueprint configuration, then the Rollout command is available on the source/blueprint page(s).
 * If you create the Live Copy from a source page that **is not** referenced in a blueprint configuration, then the Rollout command will not be available on the source/blueprint page(s).
 
 To create a Live Copy:
@@ -104,11 +105,11 @@ To create a Live Copy:
 
    ![Create Live Copy](../assets/create-live-copy.png)
 
-1. Select the source page then click or tap **Next**. For example:
+1. Select the source page then select **Next**. For example:
 
    ![Select Live Copy source](../assets/live-copy-from.png)
 
-1. Specify the destination path of the Live Copy (open the parent folder/page of the Live Copy) and then click or tap **Next**.
+1. Specify the destination path of the Live Copy (open the parent folder/page of the Live Copy) and then select **Next**.
 
    ![Select Live Copy destination](../assets/live-copy-to.png)
 
@@ -128,8 +129,8 @@ To create a Live Copy:
     * Selected: create a Live Copy of the selected page only (shallow Live Copy)
     * Not Selected: create a Live Copy that includes all descendants of the selected page (deep Live Copy)
 
-1. (Optional) To specify one or more rollout configurations to use for the Live Copy, use the **Rollout Configs** drop-down list to select them. Selected configurations will be shown underneath the drop-down selector.
-1. Click or tap **Create**. A confirmation message will be shown, from here you can select either **Open** or **Done**.
+1. (Optional) To specify one or more rollout configurations to use for the Live Copy, use the **Rollout Configs** drop-down list to select them. Selected configurations are shown underneath the drop-down selector.
+1. Select **Create**. A confirmation message is shown, from here you can select either **Open** or **Done**.
 
    >[!NOTE]
    >
@@ -158,14 +159,14 @@ When you create the site, provide values for the following properties:
 
 To create a Live Copy of a site from a blueprint configuration:
 
-1. In the **Sites** console, select **Create**, then **Site** from the drop down selector.
+1. In the **Sites** console, select **Create**, then **Site** from the drop-down selector.
 1. Select the blueprint configuration to use as the source of the Live Copy and proceed with **Next**:
 
    ![Create site from blueprint](../assets/create-site-from-blueprint.png)
 
-1. Use the **Initial Languages** selector to specify the language(s) of the blueprint site to use for the Live Copy.
+1. Use the **Initial Languages** selector to specify the languages of the blueprint site to use for the Live Copy.
 
-   All available languages are selected by default. To remove a language, click or tap the **X** that appears next to the language.
+   All available languages are selected by default. To remove a language, select the **X** that appears next to the language.
 
    For example:
 
@@ -205,13 +206,13 @@ To view the properties:
 
 ### Seeing the Live Copies of a Blueprint Page {#seeing-the-live-copies-of-a-blueprint-page}
 
-Blueprint pages (that are referenced in a blueprint configuration) provide you with a list of the Live Copy pages that use the current (blueprint) page as the source. Use this list to keep track of the Live Copies. The list appears on the **Blueprint** tab of the [page properties](/help/sites-cloud/authoring/fundamentals/page-properties.md).
+Blueprint pages (that are referenced in a blueprint configuration) provide you with a list of the Live Copy pages that use the current (blueprint) page as the source. Use this list to keep track of the Live Copies. The list appears on the **Blueprint** tab of the [page properties](/help/sites-cloud/authoring/sites-console/page-properties.md).
 
 ![Blueprint tab of page properties](../assets/live-copy-blueprint-tab.png)
 
 ## Synchronizing your Live Copy {#synchronizing-your-live-copy}
 
-There are a number of ways to synchronize your Live Copy.
+There are several ways to synchronize your Live Copy.
 
 ### Rolling Out a Blueprint {#rolling-out-a-blueprint}
 
@@ -239,18 +240,18 @@ Roll out a blueprint page to push content changes to Live Copies. A **Rollout** 
 
    ![Define rollout time](../assets/rollout-now-later.png)
 
-Rollouts are processed as asynchronous jobs and can be checked on the [***Async Jobs Status** page.](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
+Rollouts are processed as asynchronous jobs and can be checked on the [***Async Jobs Status** page](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 #### Roll Out a Blueprint from the Reference Rail {#roll-out-a-blueprint-from-the-reference-rail}
 
-1. In the **Sites** console, select the page in the live copy and open the **[References](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** panel (from the toolbar).
+1. In the **Sites** console, select the page in the live copy and open the **[References](/help/sites-cloud/authoring/basic-handling.md#references)** panel (from the toolbar).
 1. Select the **Blueprint** option from the list, to show the blueprints associated with this page.
 1. Select the required blueprint from the list.
-1. Click or tap **Rollout**.
+1. Select **Rollout**.
 
    ![Rollout blueprint from references rail](../assets/rollout-blueprint-from-references.png)
 
-1. You will be asked to confirm details of the rollout:
+1. You are asked to confirm details of the rollout:
 
     * **Rollout scope**:
 
@@ -264,7 +265,7 @@ Rollouts are processed as asynchronous jobs and can be checked on the [***Async 
 
 1. After confirming these details, select **Rollout** to perform the action.
 
-Rollouts are processed as asynchronous jobs and can be checked on the [**Async Jobs Status** page.](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
+Rollouts are processed as asynchronous jobs and can be checked on the [**Async Jobs Status** page](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 #### Roll Out a Blueprint from the Live Copy Overview {#roll-out-a-blueprint-from-the-live-copy-overview}
 
@@ -283,7 +284,7 @@ The [**Rollout** action is also available from the Live Copy Overview](live-copy
 
    ![Define rollout schedule](../assets/rollout-now-later.png)
 
-Rollouts are processed as asynchronous jobs and can be checked on the [**Async Jobs Status** page.](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
+Rollouts are processed as asynchronous jobs and can be checked on the [**Async Jobs Status** page](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 ### Synchronizing a Live Copy {#synchronizing-a-live-copy}
 
@@ -299,11 +300,11 @@ Synchronize a Live Copy to pull changes from the source to the Live Copy.
 
 1. In the **Sites** console, select the Live Copy page and open the properties.
 1. Open the **Live Copy** tab.
-1. Click or tap **Synchronize**.
+1. Select **Synchronize**.
 
    ![Synchronize button](../assets/synchronize.png)
 
-   Confirmation will be requested, use **Sync** to proceed.
+   Confirmation is requested, use **Sync** to proceed.
 
 #### Synchronize a Live Copy from the Live Copy Overview {#synchronize-a-live-copy-from-the-live-copy-overview}
 
@@ -327,9 +328,9 @@ To change Live Copy content, you can:
 
 >[!TIP]
 >
->If you manually create a new page in the Live Copy, the new page is local to the Live Copy, meaning it does not have a corresponding source page to which it is attached.
+>If you manually create a page in the Live Copy, the new page is local to the Live Copy, meaning it does not have a corresponding source page to which it is attached.
 >
->As a best practice in order to create a local page that is part of the relationship is to create the local page in the source and perform a deep rollout. This will create the page locally as Live Copies.
+>As a best practice so you can create a local page that is part of the relationship is to create the local page in the source and perform a deep rollout. This will create the page locally as Live Copies.
 
 >[!NOTE]
 >
@@ -341,7 +342,7 @@ To change Live Copy content, you can:
 
 You can add components to a Live Copy page at any time. The inheritance status of the Live Copy and its paragraph system does not control your ability to add components.
 
-When the Live Copy page is synchronized with the source page, the added components remain unchanged. See also [Changing the Order of Components on a Live Copy Page.](#changing-the-order-of-components-on-a-live-copy-page)
+When the Live Copy page is synchronized with the source page, the added components remain unchanged. See also [Changing the Order of Components on a Live Copy Page](#changing-the-order-of-components-on-a-live-copy-page).
 
 >[!TIP]
 >
@@ -362,7 +363,7 @@ You can suspend the Live Copy inheritance for a Live Copy page so that you can c
 To suspend inheritance on a page:
 
 1. Open the properties of the Live Copy page either using the **View Properties** command of the **Sites** console or using **Page Information** on the page toolbar.
-1. Click or tap the **Live Copy** tab.
+1. Select the **Live Copy** tab.
 1. Select **Suspend** from the toolbar. You can then select either:
 
     * **Suspend**: to suspend current page only.
@@ -411,19 +412,19 @@ Once [suspended](#suspending-inheritance-from-page-properties) the **Resume** ac
 
 ![Resume button](../assets/resume.png)
 
-When selected, the dialog will be shown. You can select a synchronization, if required, then confirm the action.
+When selected, the dialog box is shown. You can select a synchronization, if necessary, then confirm the action.
 
 #### Resume a Live Copy Page from the Live Copy Overview {#resume-a-live-copy-page-from-the-live-copy-overview}
 
 The [Resume action is also available from the Live Copy Overview](live-copy-overview.md#using-the-live-copy-overview), when a Live Copy page is selected.
 
-1. Open the [Live Copy Overview](live-copy-overview.md#using-the-live-copy-overview) and select a Live Copy Page that has been suspended. The page will be shown as **INHERITANCE CANCELLED**.
+1. Open the [Live Copy Overview](live-copy-overview.md#using-the-live-copy-overview) and select a suspended Live Copy Page. The page is shown as **INHERITANCE CANCELLED**.
 1. Select **Resume** from the toolbar.
 1. Indicate whether you want to synchronize the page after reverting inheritance, then confirm the **Resume** action in the **Resume Live Copy** dialog.
 
 ### Changing Inheritance Depth (Shallow/Deep) {#changing-inheritance-depth-shallow-deep}
 
-On an existing Live Copy you can change the depth for a page, i.e. whether child pages are included.
+On an existing Live Copy you can change the depth for a page, that is, whether child pages are included.
 
 * Switching to a shallow Live Copy:
 
@@ -445,7 +446,7 @@ On an existing Live Copy you can change the depth for a page, i.e. whether child
 To specify or change the depth:
 
 1. Open the properties of the Live Copy page either using the **View Properties** command of the **Sites** console or using **Page Information** on the page toolbar.
-1. Click or tap the **Live Copy** tab.
+1. Select the **Live Copy** tab.
 1. In the **Configuration** section, set or clear the **Live Copy Inheritance** option depending on whether child pages are included:
 
     * Checked - a deep Live Copy (the child pages are included)
@@ -457,11 +458,11 @@ To specify or change the depth:
    >
    >See [Live Copies - Composition](overview.md#live-copies-composition) for more information.
 
-1. Click or tap **Save** to persist your updates.
+1. Select **Save** to persist your updates.
 
 ### Cancelling Inheritance for a Component {#cancelling-inheritance-for-a-component}
 
-Cancel the Live Copy inheritance for a component so that the component is no longer synchronized with the source component. You can enable inheritance at a later point if required.
+Cancel the Live Copy inheritance for a component so that the component is no longer synchronized with the source component. You can enable inheritance at a later point if necessary.
 
 >[!NOTE]
 >
@@ -469,11 +470,11 @@ Cancel the Live Copy inheritance for a component so that the component is no lon
 
 Cancel inheritance to change the component content or delete the component:
 
-1. Click or tap the component for which you want to cancel inheritance.
+1. Select the component for which you want to cancel inheritance.
 
    ![Inheritance in the component toolbar](../assets/inheritance-toolbar.png)
 
-1. On the component toolbar, click or tap the **Cancel Inheritance** icon.
+1. On the component toolbar, select the **Cancel Inheritance** icon.
 
    ![Cancel inheritance icon](../assets/cancel-inheritance-icon.png)
 
@@ -483,7 +484,7 @@ Cancel inheritance to change the component content or delete the component:
 
 ### Re-Enabling Inheritance for a Component {#re-enabling-inheritance-for-a-component}
 
-To enable inheritance for a component, click or tap the **Re-enable Inheritance** icon on the component toolbar.
+To enable inheritance for a component, select the **Re-enable Inheritance** icon on the component toolbar.
 
 ![Re-enable inheritance icon](../assets/re-enable-inheritance-icon.png)
 
@@ -492,7 +493,7 @@ To enable inheritance for a component, click or tap the **Re-enable Inheritance*
 If a Live Copy contains components that are part of a paragraph system, the inheritance of that paragraph system observes the following rules:
 
 * The order of components in an inherited paragraph system can be modified, even with inheritance established.
-* On rollout, the order of the components will be restored from the blueprint. If new components were added to the Live Copy before rollout, they will be reordered along with the components above which they were added.
+* On rollout, the order of the components are restored from the blueprint. If new components were added to the Live Copy before rollout, they are reordered along with the components above which they were added.
 * If inheritance of the paragraph system is cancelled, the order of components will not be restored on rollout and will remain as-is in the Live Copy.
 
 >[!NOTE]
@@ -517,28 +518,28 @@ When you cancel inheritance, you can change the property value. A broken-link ic
 
 ![Properties not inherited](../assets/properties-not-inherited.png)
 
-You can later re-enable inheritance for a property if required.
+You can later re-enable inheritance for a property if necessary.
 
 >[!NOTE]
 >
 >When you re-enable inheritance, the Live Copy page property is not automatically synchronized with the source property. You can manually request a synchronization if this is required.
 
 1. Open the properties of the Live Copy page using either the **View Properties** option of the **Sites** console or **Page Information** icon on the page toolbar.
-1. To cancel inheritance of a property, click or tap the link icon that appears to the right of the property.
+1. To cancel inheritance of a property, select the link icon that appears to the right of the property.
 
    ![Cancel inheritance button](../assets/cancel-inheritance-button.png)
 
-1. In the **Cancel Inheritance** confirmation dialog, click or tap **Yes**.
+1. In the **Cancel Inheritance** confirmation dialog, select **Yes**.
 
 ### Revert Properties of a Live Copy Page {#revert-properties-of-a-live-copy-page}
 
-To enable inheritance for a property, click or tap the **Revert Inheritance** icon that appears next to the property.
+To enable inheritance for a property, select the **Revert Inheritance** icon that appears next to the property.
 
 ![Revert inheritance button](../assets/revert-inheritance-button.png)
 
 ### Resetting a Live Copy Page {#resetting-a-live-copy-page}
 
-You can reset a Live Copy page in order to:
+You can reset a Live Copy page to do the following:
 
 * Remove all inheritance cancellations and
 * Return the page to the same state as the source page.
@@ -569,8 +570,8 @@ The [**Reset** action is also available from the Live Copy Overview](live-copy-o
 
 To track the changes you have made, you can view the blueprint page in **References** and compare it with its Live Copy page:
 
-1. In the **Sites** console, [navigate to a blueprint or Live Copy page and select it.](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
-1. Open the **[References](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** panel and depending on context select either:
+1. In the **Sites** console, [navigate to a blueprint or Live Copy page and select it](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Open the **[References](/help/sites-cloud/authoring/basic-handling.md#references)** panel and depending on context select either:
 
     * **Blueprint**
     * **Live Copies**
@@ -584,9 +585,9 @@ To track the changes you have made, you can view the blueprint page in **Referen
 
    ![Comparing Live Copies](../assets/compare-live-copy.png)
 
-1. The Live Copy and blueprint pages will be opened side-by-side.
+1. The Live Copy and blueprint pages are opened side-by-side.
 
-   For full information about using the comparison feature see [Page Diff](/help/sites-cloud/authoring/features/page-diff.md).
+   For full information about using the comparison feature see [Page Diff](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 ## Detaching a Live Copy {#detaching-a-live-copy}
 
@@ -629,13 +630,13 @@ There are implications on where within the tree that you use **Detach**:
 
 To detach a Live Copy:
 
-1. In the **Sites** console, select the Live Copy page and click or tap **View Properties**.
+1. In the **Sites** console, select the Live Copy page and select **View Properties**.
 1. Open the **Live Copy** tab.
 1. On the toolbar, select **Detach**.
 
    ![Detach button](../assets/detach-button.png)
 
-1. A confirmation dialog will be shown, select **Detach** to complete the action.
+1. A confirmation dialo box is shown, select **Detach** to complete the action.
 
 ### Detach a Live Copy Page from the Live Copy Overview {#detach-a-live-copy-page-from-the-live-copy-overview}
 

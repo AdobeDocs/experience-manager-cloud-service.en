@@ -2,20 +2,23 @@
 title: Configuring Segmentation with ContextHub
 description: Learn how to configure segmentation using ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
+solution: Experience Manager Sites
+feature: Authoring, Personalization
+role: User
 ---
 # Configuring Segmentation with ContextHub{#configuring-segmentation-with-contexthub}
 
 Segmentation is a key consideration when creating a campaign. See [Understanding Segmentation](segmentation.md) for information on how segmentation works and key terms.
 
-Depending on the information you have already collected about your site visitors and the goals you want to achieve, you will need to define the segments and strategies needed for your targeted content.
+Depending on the information you have already collected about your site visitors and the goals you want to achieve, define the segments and strategies needed for your targeted content.
 
 These segments are then used to provide a visitor with specifically targeted content. [Activities](activities.md) defined here can be included on any page and define which visitor segment the specialized content is applicable for.
 
-AEM allows you to easily personalize your users' experiences. It also allows you to verify the results of your segment definitions.
+AEM lets you easily personalize your users' experiences. It also lets you verify the results of your segment definitions.
 
 ## Accessing Segments {#accessing-segments}
 
-The [Audiences](audiences.md) console is used to manage segments for ContextHub as well as audiences for your Adobe Target account. This documentation covers managing segments for ContextHub.
+The [Audiences](audiences.md) console is used to manage segments for ContextHub and audiences for your Adobe Target account. This documentation covers managing segments for ContextHub.
 
 To access your segments, in global navigation select **Navigation &gt; Personalization &gt; Audiences**. Select your configuration (for example, WKND Site) to see your segments:
 
@@ -23,8 +26,8 @@ To access your segments, in global navigation select **Navigation &gt; Personali
 
 ## Segment Editor {#segment-editor}
 
-<!--The **Segment Editor** allows you to easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
-The **Segment Editor** allows you to easily modify a segment. To edit a segment, select a segment in the list of segments and click the **Edit** button.
+<!--The **Segment Editor** lets you easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
+The **Segment Editor** lets you easily modify a segment. To edit a segment, select a segment in the list of segments and click the **Edit** button.
 
 ![Segment editor](../assets/contexthub-segment-editor.png)
 
@@ -59,13 +62,13 @@ The following segment comparisons are available out-of-the-box to evaluate segme
 
 >[!NOTE]
 >
->When comparing values, if the data type of the comparison is not set (i.e. set to auto detect), ContextHub's segmentation engine will simply compare the values as javascript would. It does not cast values to their expected types, which can lead to misleading results. For example:
+>When comparing values, if the data type of the comparison is not set (that is, set to auto detect), ContextHub's segmentation engine will simply compare the values as javascript would. It does not cast values to their expected types, which can lead to misleading results. For example:
 >
 >`null < 30 // will return true`
 >
 >Therefore when [creating a segment](#creating-a-new-segment), you should select a **data type** whenever the types of compared values are known. For example:
 >
->When comparing the property `profile/age`, you already know that the compared type will be **number**, so even if `profile/age` is not set, a comparison `profile/age` less-than 30 will return **false**, as you would expect.
+>When comparing the property `profile/age`, you already know that the compared type is a **number**, so even if `profile/age` is not set, a comparison `profile/age` less-than 30 is returned **false**, as you would expect.
 
 ### References {#references}
 
@@ -82,22 +85,22 @@ To define your new segment:
 
 1. After [accessing the segments](#accessing-segments), [navigate to the folder](#organizing-segments) where you would like to create the segment.
 
-1. Tap or click the **Create** button and select **Create ContextHub Segment**.
+1. Select the **Create** button and select **Create ContextHub Segment**.
 
    ![Add segment](../assets/contexthub-create-segment.png)
 
-1. In the **New ContextHub Segment**, enter a title for the segment as well as a boost value if required and then tap or click **Create**.
+1. In the **New ContextHub Segment**, enter a title for the segment and a boost value if necessary and then select **Create**.
 
    ![New segment](../assets/contexthub-new-segment.png)
 
-   Each segment has a boost parameter that is used as a weighting factor. A higher number indicates that the segment will be selected in preference to a segment with a lower number in instances where multiple segments are valid.
+   Each segment has a boost parameter that is used as a weighting factor. A higher number indicates that the segment is selected in preference to a segment with a lower number in instances where multiple segments are valid.
 
     * Minimum value: `0`
     * Maximum value: `1000000`
 
-1. From the segments console, edit your newly-created segment to open it in the segment editor.
+1. From the segments console, edit your created segment to open it in the segment editor.
 1. Drag a comparison or reference to the segment editor it will appear in the default AND container.
-1. Double-click on or tap the configure option of the new reference or segment to edit the specific parameters. In this example, we are testing for people in Basel.
+1. Double-select the configure option of the new reference or segment to edit the specific parameters. In this example, we are testing for people in Basel.
 
    ![Testing for people in Basel](../assets/contexthub-comparing-property-value.png)
 
@@ -169,7 +172,7 @@ By using the Script Reference component, the evaluation of a segment property ca
 
 1. Register the script with `ContextHub.SegmentEngine.ScriptManager.register`.
 
-If the script depends on additional properties, the script should call `this.dependOn()`. For example if the script depends on `profile/age`:
+If the script depends on additional properties, the script should call `this.dependOn()`. For example, if the script depends on `profile/age`:
 
 ```javascript
 this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
@@ -187,36 +190,36 @@ If you have many segments, they can become hard to manage as a flat list. In suc
 
 ### Create a New Folder {#create-folder}
 
-1. After [accessing the segments](#accessing-segments), click or tap the **Create** button and select **Folder**.
+1. After [accessing the segments](#accessing-segments), select the **Create** button and select **Folder**.
 
    ![Add folder](../assets/contexthub-create-segment.png)
 
 1. Provide a **Title** and a **Name** for your folder.
    * The **Title** should be descriptive.
-   * The **Name** will become the node name in the repository.
-      * It will be automatically generated based on the title and adjusted according to [AEM naming conventions.](/help/implementing/developing/introduction/naming-conventions.md)
+   * The **Name** becomes the node name in the repository.
+      * It is automatically generated based on the title and adjusted according to [AEM naming conventions](/help/implementing/developing/introduction/naming-conventions.md).
       * It can be adjusted if necessary.
 
     ![Create folder](../assets/contexthub-create-folder.png)
 
-1. Tap or click **Create**.
+1. Select **Create**.
 
    ![Confirm folder](../assets/contexthub-confirm-folder.png)
 
 1. The folder will appear in the list of segments.
    * How you sort your columns will affect where in the list the new folder appears.
-   * You can tap or click the column headings to adjust your sort.
+   * You can select the column headings to adjust your sort.
    ![The new folder](../assets/contexthub-folder.png)
 
 ### Modify Existing Folders {#modify-folders}
 
-1. After [accessing the segments](#accessing-segments), click or tap the folder you wish to modify to select it.
+1. After [accessing the segments](#accessing-segments), select the folder you want to modify to select it.
 
    ![Select folder](../assets/contexthub-select-folder.png)
 
-1. Tap or click **Rename** in the toolbar to rename the folder.
+1. Select **Rename** in the toolbar to rename the folder.
 
-1. Provide a new **Folder Title** and tap or click **Save**.
+1. Provide a new **Folder Title** and select **Save**.
 
    ![Rename folder](../assets/contexthub-rename-folder.png)
 
@@ -226,25 +229,25 @@ If you have many segments, they can become hard to manage as a flat list. In suc
 
 ### Delete a Folder
 
-1. After [accessing the segments](#accessing-segments), click or tap the folder you wish to modify to select it.
+1. After [accessing the segments](#accessing-segments), select the folder you want to modify to select it.
 
    ![Select folder](../assets/contexthub-select-folder.png)
 
-1. Tap or click **Delete** in the toolbar to delete the folder.
+1. Select **Delete** in the toolbar to delete the folder.
 
 1. A dialog presents a list of folders selected for deletion.
 
    ![Confirm delete](../assets/contexthub-confirm-segment-delete.png)
 
-   * Tap or click **Delete** to confirm.
-   * Tap or click **Cancel** to abort.
+   * Select **Delete** to confirm.
+   * Select **Cancel** to abort.
 
 1. If any of the selected folders contains subfolders or segments, their deletion must be confirmed.
 
    ![Confirm deletion of children](../assets/contexthub-confirm-segment-child-delete.png)
 
-   * Tap or click **Force Delete** to confirm.
-   * Tap or click **Cancel** to abort.
+   * Select **Force Delete** to confirm.
+   * Select **Cancel** to abort.
 
 >[!NOTE]
 >
@@ -265,7 +268,7 @@ For example, our simple segment definition to identify users in Basel is based o
 
 Or if it is not resolved:
 
-![Segment that doesn't resolve](../assets/contexthub-segment-doesnt-resolve.png)
+![Segment that does not resolve](../assets/contexthub-segment-doesnt-resolve.png)
 
 >[!NOTE]
 >
@@ -273,7 +276,7 @@ Or if it is not resolved:
 
 Such tests can also be performed on content pages and in combination with targeted content and related **Activities** and **Experiences**.
 
-If you have set up an activity and experience, you can easily test your segment with the activity. For details about setting up an activity, please see the related [documentation on authoring targeted content](targeted-content.md).
+If you have set up an activity and experience, you can easily test your segment with the activity. For details about setting up an activity, see the [documentation on authoring targeted content](targeted-content.md).
 
 1. In editing mode of a page where you have set up targeted content, you can see that the content is targeted via arrow icon on the content.
 1. Switch to preview mode and using the context hub, switch to a persona that does not match the segmentation configured for the experience.

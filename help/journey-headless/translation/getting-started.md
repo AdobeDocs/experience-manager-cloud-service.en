@@ -2,6 +2,9 @@
 title: Get Started with AEM Headless Translation
 description: Get to know how to organize your headless content and how AEM's translation tools work.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
+solution: Experience Manager
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Architect, Developer
 ---
 # Get Started with AEM Headless Translation {#getting-started}
 
@@ -26,7 +29,7 @@ This document helps you understand how to get started translating headless conte
 
 ## Requirements and Prerequisites {#requirements-prerequisites}
 
-There are a number of requirements before you begin translating your headless AEM content.
+There are several requirements before you begin translating your headless AEM content.
 
 ### Knowledge {#knowledge}
 
@@ -38,7 +41,7 @@ There are a number of requirements before you begin translating your headless AE
 
 >[!TIP]
 >
->If you are not familiar with using a large-scale CMS like AEM, consider reviewing the [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) documentation before proceeding. The Basic Handling documentation is not part of the journey, so please return to this page when complete.
+>If you are not familiar with using a large-scale CMS like AEM, consider reviewing the [Basic Handling](/help/sites-cloud/authoring/basic-handling.md) documentation before proceeding. The Basic Handling documentation is not part of the journey. As such, return to this page when complete.
 
 ### Tools {#tools}
 
@@ -58,7 +61,7 @@ AEM's content, be it headless or traditional web pages, is driven by its structu
 
 ## How AEM Stores Headless Content {#headless-content-in-aem}
 
-For the translation specialist, it is not important to understand in-depth how AEM manages headless content. However being familiar with the basic concepts and terminology will be helpful as you later use AEM's translation tools. Most importantly you need to understand your own content and how it is structured in order to effectively translate it.
+For the translation specialist, it is not important to understand in-depth how AEM manages headless content. However being familiar with the basic concepts and terminology is helpful as you later use AEM's translation tools. Most importantly you need to understand your own content and how it is structured so you can effectively translate it.
 
 ### Content Models {#content-models}
 
@@ -72,17 +75,17 @@ The content architect works early in the project to define this structure. As th
 
 Because the Content Models define the structure of your content, you need to know which fields of your models must be translated. Generally you work with the content architect to define this. To browse the fields of your content models, follow the steps below.
 
-1. Navigate to **Tools** -&gt; **General** -&gt; **Content Fragment Models**.
-1. Content Fragment Models are generally stored in a folder structure. Tap or click on the folder for your project.
-1. The models are listed. Tap or click on the model to see the details.
+1. Navigate to **Tools** &gt; **General** &gt; **Content Fragment Models**.
+1. Content Fragment Models are generally stored in a folder structure. Select the folder for your project.
+1. The models are listed. Select the model to see the details.
 ![Content Fragment Models](assets/content-fragment-models.png)
 1. The **Content Fragment Model Editor** opens.
    1. The left column contains the fields of the model. This column interests us.
    1. The right column contains the fields that can be added to the model. This column we can ignore.
 ![Content Fragment Model Editor](assets/content-fragment-model-editor.png)
-1. Tap or click one of the fields of the model. AEM marks it and the details of that field are shown in the right column.
+1. Select one of the fields of the model. AEM marks it and the details of that field are shown in the right column.
 ![Content Fragment Model Editor detail](assets/content-fragment-model-editor-detail.png)
-1. The content architect enables the **Translatable** field on every Content Model field that needs to be translated.
+1. The content architect enables the **Translatable** field on every Content Model field that must be translated.
 
 >[!TIP]
 >
@@ -147,7 +150,7 @@ The final structure may look something like the following.
         |- ...
 ```
 
-You should take note of the specific path of your content as it will be required later to configure your translation.
+You should take note of the specific path of your content as it is required later to configure your translation.
 
 >[!NOTE]
 >
@@ -172,13 +175,15 @@ Now that you have completed this part of the headless translation journey you sh
 * Understand how AEM stores headless content.
 * Be familiar with AEM's translation tools.
 
-Build on this knowledge and continue your AEM headless translation journey by next reviewing the document [Configure the translation connector](configure-connector.md) where you will learn how to connect AEM to a translation service.|
+Build on this knowledge and continue your AEM headless translation journey by next reviewing the document [Configure the translation integration](configure-connector.md) where you learn how to connect AEM to a translation service.|
 
 ## Additional Resources {#additional-resources}
 
 While it is recommended that you move on to the next part of the headless translation journey by reviewing the document [Configure the translation connector](configure-connector.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
 
-* [AEM Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) - Learn the basics of the AEM UI to be able to comfortably navigate and perform essential tasks such as finding your content.
+* [AEM Basic Handling](/help/sites-cloud/authoring/basic-handling.md) - Learn the basics of the AEM UI to be able to comfortably navigate and perform essential tasks such as finding your content.
 * [Identifying Content to Translate](/help/sites-cloud/administering/translation/rules.md) - Learn how translation rules identify content that needs translating.
 * [Configuring the Translation Integration Framework](/help/sites-cloud/administering/translation/integration-framework.md) - Learn how to configure the Translation Integration Framework to integrate with third-party translation services.
 * [Managing Translation Projects](/help/sites-cloud/administering/translation/managing-projects.md) - Learn how to create and manage both machine and human translation projects in AEM.
+* [Introduction to AEM as a Headless CMS](/help/headless/introduction.md)
+* [Tutorials for Headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
