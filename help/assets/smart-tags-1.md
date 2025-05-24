@@ -1,19 +1,19 @@
 ---
 title: Auto-tag assets with [!DNL Adobe Sensei] smart service
 description: Tag assets with an artificially intelligent service that applies contextual and descriptive business tags.
-contentOwner: 
 feature: Smart Tags,Tagging
 role: Admin,User
-exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 ---
 
 # Smart Tags for AEM Assets {#using-smart-tags}
 
-Organizations have many digital assets and these are growing continuously. Searching the desired asset while dealing with such enormous amount of data is a significant challenge. To deal with this challenge, *metadata* and *tags* are used to enhance the search capability of digital assets. Organizations use taxonomy-controlled vocabulary in asset metadata. Essentially, it includes a list of keywords that employees, partners, and customers commonly use to refer to and search for their digital assets. The Smart Tags are the keywords that appear in the text but the ones that best describe the asset. Tagging assets with taxonomy-controlled vocabulary ensures that the assets can be easily identified and retrieved in searches.
+Organizations possess numerous digital assets, and this number continues to grow rapidly. Searching for a specific asset amidst such a vast amount of data poses a significant challenge. To address this, `metadata` and `tags` are employed to enhance the searchability of digital assets. Organizations use taxonomy-controlled vocabularies in asset metadata. These typically consist of keyword lists that employees, partners, and customers commonly use to refer to and locate digital assets.
 
-For an instance, the words saved in the dictionary in an alphabetical order are easier in search, rather than searching the scattered words. Tagging also solves the same purpose. It aligns assets based on business taxonomy and ensures that the most relevant assets appear in searches. For example, a car manufacturer can tag car images with model names so only relevant images are displayed when searched to design a promotion campaign.Therefore, whether you are tagging "runners" or "running" shoes, you do not need to worry about typos, wrong spellings, or alternative search terms as Smart Tags know it already!
+Smart Tags are keywords that not only appear in the text but also best describe the asset. Tagging assets with taxonomy-controlled vocabulary ensures they can be easily identified and retrieved through search.
 
-In the background, the functionality uses the artificially intelligent framework of [Adobe Sensei](https://business.adobe.com/products/sensei/adobe-sensei.html) to automatically apply smart tags to uploaded assets, by default, along with the text related to business taxonomy.
+For instance, words arranged alphabetically in a dictionary are easier to find than randomly scattered ones. Tagging serves a similar purpose. It organizes assets according to business taxonomy, ensuring that the most relevant ones appear in search results. For example, a car manufacturer can tag car images with model names, so that only relevant images are displayed when designing a promotional campaign. Whether tagging "runners" or "running shoes," users do not need to worry about typos, spelling variations, or alternate search terms—Smart Tags recognize them all.
+
+In the background, the functionality uses the artificially intelligent framework of [Adobe Sensei](https://business.adobe.com/products/sensei/adobe-sensei.html) automatically applies Smart Tags to uploaded assets—by default—along with text aligned to the business taxonomy.
 
 ## Prerequisites and configuration {#smart-tags-prereqs-config}
 
@@ -21,7 +21,7 @@ Smart Tags is automatically provisioned for [!DNL Adobe Experience Manager] as a
 
 ## Smart Tags workflow {#smart-tags-workflow}
 
-[!DNL Adobe Sensei] powered smart tagging uses artificial intelligence models to analyze content and add tags to the assets. Thereby-reducing time for DAM users to deliver rich experiences to their customers. The Smart Tags are displayed in descending order of their [confidence score](#confidence-score) in asset [!UICONTROL Properties].
+[!DNL Adobe Sensei] powered smart tagging uses artificial intelligence models to analyze content and add tags to the assets. Thereby-reducing time for DAM users to deliver rich experiences to their customers. The Smart Tags are displayed in descending order of their [confidence score](#confidence-score) in asset properties.
 
 * **Image-based assets**
   For images, the Smart Tags are based on some visual aspect. Images in many formats are tagged using smart content services. Smart Tags are applied to the [supported file types](#supported-file-formats) that generate renditions in JPG and PNG format.
@@ -35,9 +35,9 @@ Smart Tags is automatically provisioned for [!DNL Adobe Experience Manager] as a
   For supported assets, [!DNL Experience Manager] already extracts the text, which is then indexed and is used to search for the assets. However, Smart Tags based on keywords in the text provide a dedicated, structured, and higher priority search facet. The latter helps improve asset discovery as compared to a search index.
   For text-based assets, the efficacy of Smart Tags does not depend on the amount of text in the asset but on the relevant keywords or entities present in the text of the asset. 
 
-![Smart-tag-types](assets/smart-tags-types.png)
+  ![Smart-tag-types](assets/smart-tags-types.png)
 
-<br/>Smart Tags are implemented in AEM Assets using the following workflow:
+Smart Tags are implemented in AEM Assets using the following workflow:
 
 1. Create or upload an asset in AEM. Out of the box tags are generated for image, video, and text based Assets.
 
@@ -155,9 +155,9 @@ To moderate the Smart Tags of your digital assets:
 
 1. Select an asset, and then select ![Manage tags icon](assets/do-not-localize/manage-tags-icon.png) from the toolbar.
 
-1. From the **[!UICONTROL Manage Tags]** page, inspect the tags. If you do not want the asset to be searched based on a specific tag, then select the tag and select ![Delete icon](assets/do-not-localize/delete-icon.png) from the toolbar. Alternatively, select `X` symbol next to the label.
+1. From the **[!UICONTROL Manage Tags]** page, inspect the tags. If you do not want the asset to be searched based on a specific tag, then select the tag and select ![Delete icon](assets/do-not-localize/delete-icon.svg) from the toolbar. Alternatively, select ![close icon](assets/do-not-localize/close_icon.svg) next to the label.
 
-1. To assign a higher rank to a tag, select the tag and select ![Promote icon](assets/do-not-localize/promote-icon.png) from the toolbar. The tag you promote is moved to the **[!UICONTROL Tags]** section.
+1. To assign a higher rank to a tag, select the tag and select ![Promote icon](assets/do-not-localize/promote-icon.svg) from the toolbar. The tag you promote is moved to the **[!UICONTROL Tags]** section.
 
 1. Select **[!UICONTROL Save]** and then select **[!UICONTROL OK]** to close the [!UICONTROL Success] dialog.
 
@@ -207,7 +207,34 @@ Following are the benefits of using Smart Tags in your AEM Assets:
 *  Helps your assets to become organized and categorized.
 -->
 
-## Limitations and best practices related to Smart Tags {#limitations}
+## Enhancing Content Discovery with AI-Generated Smart Tags {#ai-smart-tags}
+
+Instead of relying on manual input, AI automatically assigns descriptive tags to digital assets. These AI-generated tags enhance metadata quality, making the assets easier to search, categorize, and recommend. This approach not only improves efficiency by eliminating manual tagging but also ensures consistency and scalability across large volumes of digital content. For example, if the asset is an image, AI can identify objects, scenes, emotions, or even brand logos within it and generate relevant tags such as "sunset," "beach," "vacation," or "smiling." <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
+
+  ![Enhanced smart tags](assets/enhanced-smart-tags.png)
+
+### Using enhanced smart tags {#using-enhanced-smart-tags}
+
+<!--[!NOTE]
+>
+>The enhanced smart tags capability is available only for the newly uploaded assets.
+-->
+
+To use the enhanced smart tags feature, execute the following steps:
+
+1. In the [!DNL Experience Manager] interface, go to the desired folder and click **[!UICONTROL Add Assets]**. Alternatively, to update enhanced smart tags in an existing content, click **[!UICONTROL reprocess]**. The compatible image file formats are `png`, `jpg`, `jpeg`, `psd`, `tiff`, `gif`, `webp`, `crw`,  `cr2`, and `bmp`.
+
+1. Wait until the newly uploaded asset is processed. Once done, go to asset details.
+
+1. Go to **[!UICONTROL AI-Generated]** tab. The following fields are there:
+
+    * **[!UICONTROL Generated title]:** The title provides a clear and concise headline that captures the core idea of an uploaded asset, making it easy to understand at a glance. The field shows up when `dc:title` is enabled.
+   * **[!UICONTROL Generated description]:** The description gives a brief yet informative summary of what the asset is about, helping users and search module to quickly grasp its relevance.
+    * **[!UICONTROL Generated keywords]:** The keywords are targeted terms that represent the main themes of an asset, aiding in tagging and content filtering.
+
+1. [Optional] You may add additional tags or create your own if you feel any relevant tags are missing. To do this, write your tags in the  **[!UICONTROL Generated keywords]** field and click **[!UICONTROL Save]**.
+
+## Limitations and best practices related to Smart Tags {#limitations-best-practices-smart-tags}
 
 These models are not always perfect at identifying tags. The current version of the Smart Tags has the following limitations:
 
@@ -222,7 +249,7 @@ These models are not always perfect at identifying tags. The current version of 
 * To search for files with Smart Tags (regular or enhanced), use the [!DNL Assets] search (full-text search). There is no separate search predicate for Smart Tags.
 * In comparison of general tags, the assets that are tagged using business taxonomy are easier to identify and retrieve by tag-based searches.
 
-## Frequently asked questions
+## Frequently asked questions{#faq-smart-tags}
 
 +++**How do Smart Tags improve search experience of an asset?**
   
@@ -250,15 +277,13 @@ These models are not always perfect at identifying tags. The current version of 
 
 +++**How may I know that tagging needs training?**
   
-  Refer to [Determining the requirement of Smart Tags training](#smart-tag-training-requirement).
+  Refer to [Determining the requirement of Smart Tags training](smart-tags-training.md#smart-tag-training-requirement).
 
 +++
 
 +++**What are the supported file formats for tagging an asset?**
   
   Refer to [Supported file formats](#supported-file-formats).
-
-+++
 
 +++
 
@@ -270,6 +295,6 @@ These models are not always perfect at identifying tags. The current version of 
 
 +++**I do not want to use Smart Tagging anymore.**
 
-You can [opt out Smart Tagging](#opt-out-smart-tagging) anytime you want to discontinue.
+You can [opt out Smart Tagging](opt-out-smart-tagging) anytime you want to discontinue.
 
 +++
