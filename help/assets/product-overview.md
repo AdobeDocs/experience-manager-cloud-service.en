@@ -71,7 +71,7 @@ Content Hub allows you to create new content with Adobe Express (if you have Ado
 
 ## Content Hub demo {#content-hub-demo}
 
->[!VIDEO](https://video.tv.adobe.com/v/3459544)
+>[!VIDEO](https://video.tv.adobe.com/v/3459547)
 
 ## Prerequisites {#prerequisites-content-hub}
 
