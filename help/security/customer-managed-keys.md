@@ -9,21 +9,21 @@ exl-id: 100ddbf2-9c63-406f-a78d-22862501a085
 ---
 # Customer Managed Keys Setup for AEM as a Cloud Service {#cusomer-managed-keys-for-aem-as-a-cloud-service}
 
-AEM as a Cloud Service currently stores customer data in Azure Blob Storage and MongoDB, utilizing provider-managed encryption keys by default to secure data. While this setup meets the security needs of many organizations, businesses in regulated industries or those requiring enhanced data sovereignty may seek greater control over their encryption practices. For organizations that prioritize data security, compliance, and the ability to manage their encryption keys, the Customer-Managed Keys (CMK) solution offers a critical enhancement.
+AEM as a Cloud Service currently stores customer data in Azure Blob Storage and MongoDB, utilizing provider-managed encryption keys by default to secure data. While this setup meets the security needs of many organizations, businesses in regulated industries or those requiring enhanced data security may seek greater control over their encryption practices. For organizations that prioritize data security, compliance, and the ability to manage their encryption keys, the Customer-Managed Keys (CMK) solution offers a critical enhancement.
 
 ## The Problem Being Solved {#the-problem-being-solved}
 
-Provider managed keys can create concerns for businesses in sectors such as finance, healthcare, and government, where strict regulations demand comprehensive control over data security. Without control over key management, organizations face challenges in meeting compliance requirements, implementing custom security policies, and ensuring complete data sovereignty.
+Provider managed keys can create concerns for businesses that require additional privacy and integrity. Without control over key management, organizations face challenges in meeting compliance requirements, implementing custom security policies, and ensuring complete data security.
 
 The introduction of Customer-Managed Keys (CMK) addresses these concerns by empowering AEM customers with full control over their encryption keys. By authenticating via Microsoft Entra ID (formerly Azure Active Directory), AEM CS securely connects to the customer's Azure Key Vault, allowing them to manage the lifecycle of their encryption keys—covering key creation, rotation, and revocation.
 
 CMK provides several advantages:
 
-* **Enhanced Security:** Customers can ensure their encryption practices meet specific security requirements, giving them peace of mind over data protection.
-* **Compliance Flexibility:** With full control over the key lifecycle, businesses can easily adapt to evolving regulatory standards such as GDPR, HIPAA, or CCPA, ensuring their compliance posture remains strong.
-* **Seamless Integration:** The CMK solution integrates directly with Azure Blob Storage and MongoDB in AEM CS, ensuring no disruption to storage operations or usability while providing customers with powerful encryption capabilities.
+* **Control Data and Application Encryption:** Heighten security with direct governance of your AEM application and data cryptographic keys.
+* **Raise Confidentiality and Integrity:** Reduce the likelihood of inadvertent access and disclosure of sensitive or proprietary data with complete encryption management.
+* **Azure Key Vault Support:** Use of Azure Key Vault allows for key storage, processing secrets operations, and performing key rotations.
 
-By adopting CMK, customers can increase control over their data security and encryption practices, enhancing compliance and mitigating risks, all while continuing to enjoy the scalability and flexibility of AEM CS.
+By adopting CMK, customers can increase control over their data security and encryption practices, enhancing security and mitigating risks, all while continuing to enjoy the scalability and flexibility of AEM CS.
 
 AEM as a Cloud Service allows you to bring your own encryption keys for encrypting data at rest. This guide provides steps for setting up a customer managed key (CMK) in Azure Key Vault for AEM as a Cloud Service.
 
