@@ -57,6 +57,9 @@ The when clause determines whether a rule will be evaluated, based on properties
 
 The details of the actions node differ per rule type, and are outlined in the individual sections below.
 
+In configuration rules one can reference secrets defined as environment variables (see [Configuration Secrets](/help/implementing/dispatcher/cdn-credentials-authentication.md)).
+
+
 ## Request Transformations {#request-transformations}
 
 Request transformation rules allow you to modify incoming requests. The rules support setting, unsetting, and altering paths, query parameters, and headers (including cookies) based on various matching conditions, including regular expressions. You can also set variables, which can then be referenced later in the evaluation sequence.
