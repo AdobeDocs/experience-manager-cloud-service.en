@@ -97,7 +97,7 @@ az keyvault create `
   --public-network-access Enabled
 ```
 
-## Grant Adobe Access to the Key Vault {#grant-adone-access-to-the-key-vault}
+## Grant Adobe Access to the Key Vault {#grant-adobe-access-to-the-key-vault}
 
 In this step you will allow Adobe to access your key vault via an Entra application. The ID of the Entra application should have been already provided by Adobe.
 
