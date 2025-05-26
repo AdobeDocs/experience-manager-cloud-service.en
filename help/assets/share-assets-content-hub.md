@@ -104,7 +104,7 @@ If you sign in to [!DNL Content Hub] to access the page, you can do the followin
 * Select one or more assets and click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** to download the selected assets from the **[!UICONTROL Download assets]** dialog box.
 * Click the asset thumbnail to preview the asset and display the asset metadata in the **[!UICONTROL Asset details]** panel. Select ![download](/help/assets/assets/download-icon.svg) to see the available asset renditions such as, the original, dynamic and smart crop renditions in the **[!UICONTROL Download]** panel. Select and download the renditions. See [view and manage renditions in Experience Manager Assets](/help/assets/renditions.md) article to view and manage renditions on this panel.  
     ![download asset renditions](/help/assets/assets/private-link-download-assets-rendition.png)
-* Click ![download](/help/assets/assets/download-icon.svg) available on the asset card to display the available asset renditions in the **[!UICONTROL Download assets]** dialog box. Select and download the renditions. See [view and manage renditions in Experience Manager Assets](/help/assets/renditions.md) article to view and manage renditions on this panel. 
+* Click ![download](/help/assets/assets/download-icon.svg) available on the asset card to display the asset renditions in the **[!UICONTROL Download assets]** dialog box. Select and download the renditions. See [view and manage renditions in Experience Manager Assets](/help/assets/renditions.md) article to view and manage renditions on this panel. 
     ![download asset rendition from asset card](/help/assets/assets/download-assets-rendition-from-asset-card.png)
 
 
