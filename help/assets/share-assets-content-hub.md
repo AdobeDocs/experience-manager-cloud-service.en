@@ -84,7 +84,7 @@ Public users, as guests, access and download the shared assets without signing i
 
 Execute the following steps to share an asset while previewing it:
 
-1. Navigate to the [!DNL Content Hub] homepage and click the asset thumbnail to display the asset preview and the menu options available on the right pane of the dialog box.
+1. Navigate to the [!DNL Content Hub] homepage and click the asset thumbnail to preview the asset and display the menu options on the right pane of the dialog box.
 1. Select ![share](/help/assets/assets/share.svg) to display the **[!UICONTROL Share]** panel.
 ![share asset while previewing it](/help/assets/assets/share-asset-link-from-preview.png)
 1. Generate and share the asset link from this panel by following the steps in [share assets with [!DNL Content Hub] users](#share-assets-with-content-hub-users) or [share assets with public users](#share-assets-with-public-users) sections.
@@ -97,14 +97,14 @@ If you access the page without signing in, you can do the following:
 
 * Select one or more assets and click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** to download them. 
 * Select ![download](/help/assets/assets/download-icon.svg) available on the asset card to download the asset.
-* Click the asset thumbnail to preview the asset and display the asset metadata in the **[!UICONTROL Asset details]** panel. Click ![download](/help/assets/assets/download-icon.svg) to display the asset's static renditions in the **[!UICONTROL Download]** panel. Select the renditions and click **[!UICONTROL Download]** to download them.
+* Click the asset thumbnail to preview the asset and display the asset metadata in the **[!UICONTROL Asset details]** panel. Click ![download](/help/assets/assets/download-icon.svg) to display the asset's static renditions in the **[!UICONTROL Download]** panel. Select and download the renditions on the panel.
 
 If you sign in to [!DNL Content Hub] to access the page, you can do the following:
 
 * Select one or more assets and click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** to download the selected assets from the **[!UICONTROL Download assets]** dialog box.
-* Click the asset thumbnail to preview the asset and display the asset metadata in the **[!UICONTROL Asset details]** panel. Select ![download](/help/assets/assets/download-icon.svg) to see the available asset renditions such as, the original, dynamic and smart crop renditions in the **[!UICONTROL Download]** panel. See [view and manage renditions in Experience Manager Assets](/help/assets/renditions.md) article to learn how to make renditions available on this panel. Select and download the renditions on the panel.
+* Click the asset thumbnail to preview the asset and display the asset metadata in the **[!UICONTROL Asset details]** panel. Select ![download](/help/assets/assets/download-icon.svg) to see the available asset renditions such as, the original, dynamic and smart crop renditions in the **[!UICONTROL Download]** panel. Select and download the renditions. See [view and manage renditions in Experience Manager Assets](/help/assets/renditions.md) article to view and manage renditions on this panel.  
     ![download asset renditions](/help/assets/assets/private-link-download-assets-rendition.png)
-* Click ![download](/help/assets/assets/download-icon.svg) available on the asset card to display the available asset renditions in the **[!UICONTROL Download assets]** dialog box. See [view and manage renditions in Experience Manager Assets](/help/assets/renditions.md) article to learn how to make renditions available on this panel. Select and download the renditions on the panel. 
+* Click ![download](/help/assets/assets/download-icon.svg) available on the asset card to display the available asset renditions in the **[!UICONTROL Download assets]** dialog box. Select and download the renditions. See [view and manage renditions in Experience Manager Assets](/help/assets/renditions.md) article to view and manage renditions on this panel. 
     ![download asset rendition from asset card](/help/assets/assets/download-assets-rendition-from-asset-card.png)
 
 
