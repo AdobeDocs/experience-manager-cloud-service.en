@@ -217,6 +217,12 @@ Below is an extensive list of deprecated AEM APIs and their expected removal dat
     <td>9/23/2024</td>
     <td>8/31/2025</td>
   </tr>
+  <tr>
+    <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
+    <td>Usage of this API is not supported in AEM as a Cloud Service.</td>
+    <td>10/31/2022</td>
+    <td>8/31/2025</td>
+  </tr>
 </tbody>
 </table>
 </details>
