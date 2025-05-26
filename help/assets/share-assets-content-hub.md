@@ -73,7 +73,7 @@ View an asset or review the list of assets available in this dialog box. Click !
 
 ### Share assets with public users {#share-assets-with-public-users}
 
-Public users, as guests, access and download the shared assets without signing in. Execute the following steps to share one or more assets available in the **[!UICONTROL Share assets]** dialog box with public users:
+Public users, as guests, access and download the shared assets without signing in to [!DNL Content Hub]. Execute the following steps to share one or more assets available in the **[!UICONTROL Share assets]** dialog box with public users:
 
 1. Enable the **[!UICONTROL Public Link]** toggle, click the dropdown in the **[!UICONTROL Period of expiration]** field and select a duration after which the recipient cannot access the selected assets. 
 1. Click **[!UICONTROL Generate public share link]** to generate a link and copy it subsequently.
