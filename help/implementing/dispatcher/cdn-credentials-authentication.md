@@ -21,6 +21,9 @@ There is a section on how to [rotate keys](#rotating-secrets), which is a good s
 >[!NOTE]
 > Secrets defined as environment variables should be considered immutable. Instead of changing their value one should create a new secret with a new name and reference that in the configuration. Failing to do that will result in unreliable update of the secrets.
 
+>[!WARNING]
+>Do not remove the environment variables that are referenced in your CDN configuration. Doing that might cause failures in updating your CDN configuration (eg. updating rules or custom domains and certificates).
+
 ## Customer-managed CDN HTTP header value {#CDN-HTTP-value}
 
 As described in the [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) page, customers may choose to route traffic through their own CDN, which is referred to as the Customer CDN (also sometimes called BYOCDN).
