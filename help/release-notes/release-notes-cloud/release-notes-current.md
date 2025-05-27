@@ -173,6 +173,10 @@ Please review and adjust your downstream processes accordingly. For example, if 
 * If your logging destination expects a custom (non-default) log format, you may need to update your ingestion rules.
 * If changes to log levels reduced log verbosity, be aware that the default log levels may result in a significant increase in log volume.
 
+### Default for Version Purge and Audit Log Purge Maintenance Tasks {#mt-defaults}
+
+In July 2025, newly created environments will have default values applied for Version Purge and Audit Log Purge Maintenance Tasks. See details in the [Maintenance Tasks article](/help/operations/maintenance.md#default). Work in progress...
+
 ### CDN configuraton for Edge Delivery Services (Beta) {#cdn-eds-beta}
 
 The Adobe-Managed CDN offers flexible configuration options, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#configurations). 
@@ -186,10 +190,6 @@ Now in beta, you can forward AEM logs to New Relic (using HTTPS), Amazon S3, and
 While logs can be downloaded from Cloud Manager, many organizations find it beneficial to stream those logs to a preferred logging destination. AEM already supports (GA) AEM and CDN log forwarding to Azure Blob Storage, Datadog, HTTPS, Elasticsearch (and OpenSearch), and Splunk. This feature is configured in a self-serve manner, and deployed using the Config Pipeline.
 
 Learn more in the [log forwarding documentation](/help/implementing/developing/introduction/log-forwarding.md).
-
-### Default for Version Purge and Audit Log Purge Maintenance Tasks {#mt-defaults}
-
-In July 2025, newly created environments will have default values applied for Version Purge and Audit Log Purge Maintenance Tasks. See details in the [Maintenance Tasks article](/help/operations/maintenance.md#default). Work in progress...
 
 ### Edge Computing - Request for Feedback! {#edge-computing-feedback}
 
