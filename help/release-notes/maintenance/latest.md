@@ -47,6 +47,28 @@ Deprecated and removed features and APIs in AEM as a Cloud Service are detailed 
 
 AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses X identified vulnerabilities, reinforcing our commitment to robust system protection.
 
+### Change Notice {#change-notice-X}
+
+**Actions Required**
+
+#### Update aem-cloud-testing-clients {#update-aem-cloud-testing-clients-X}
+
+Upcoming changes will require the library [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) used in your custom functional tests to be updated to at least version **1.2.1** (Recommended: latest version 1.2.9)
+
+Make sure that your dependency in `it.tests/pom.xml` has been updated.
+
+```xml
+<dependency>
+   <groupId>com.adobe.cq</groupId>
+   <artifactId>aem-cloud-testing-clients</artifactId>
+   <version>1.2.9</version>
+</dependency>
+```
+
+This change needs to be performed before June 15, 2025.
+
+Failing to update the dependency library will result in pipeline failures at the "Custom Functional Testing" step.
+
 ### Embedded Technologies {#embedded-tech-X}
 
 |Technology|Version|Link|
