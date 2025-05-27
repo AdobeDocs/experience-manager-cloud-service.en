@@ -187,6 +187,10 @@ While logs can be downloaded from Cloud Manager, many organizations find it bene
 
 Learn more in the [log forwarding documentation](/help/implementing/developing/introduction/log-forwarding.md).
 
+### Default for Version Purge and Audit Log Purge Maintenance Tasks {#mt-defaults}
+
+In July 2025, newly created environments will have default values applied for Version Purge and Audit Log Purge Maintenance Tasks. See details in the [Maintenance Tasks article](/help/operations/maintenance.md#default). Work in progress...
+
 ### Edge Computing - Request for Feedback! {#edge-computing-feedback}
 
 Edge computing brings data processing closer to the browser, which has benefits including reduced latency. Adobe would like to hear if you find this technology useful for AEM Publish Delivery and Edge Delivery Services projects. Additionally, let us know what you envision using it for as input into the product roadmap. 
