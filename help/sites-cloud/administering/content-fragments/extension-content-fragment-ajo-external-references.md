@@ -10,7 +10,7 @@ solution: Experience Manager Sites
 
 To preview experiences from AEM on another Adobe product, you can enable the UI extension:
 
-* AJO External References 
+* **AJO External References** 
 
 The AJO External References extension functions by fetching references to Content Fragment from all organizations and sandboxes associated with predefined tags. The extension then shows details. 
 
@@ -18,7 +18,7 @@ For example, for an integration with Adobe Journey Optimizer (AJO) the details a
 
 >[!NOTE]
 >
->For details on how to enable the extension, please see the document [Extension Manager in AEM Experience Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+>For details oF how to enable the extension, see [Extension Manager in AEM Experience Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
 
 For example, to use the extension with AJO:
 

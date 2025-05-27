@@ -13,16 +13,19 @@ solution: Experience Manager Sites
 For example, you can:
 
 * seamlessly incorporate your [AEM Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md) into your [Journey Optimizer email](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/get-started-email) content
-* preview the AJO experience directly from inside AEM. 
+* preview the AJO experience directly from AEM
 
 The connection between Content Fragments and AJO simplifies the process of accessing and leveraging AEM content, enabling the creation of personalized and dynamic campaigns and journeys.
 
-## Further Information {#further-information}
-
-For further details see:
+For details start with the AJO documentation:
 
 * [Using Content Fragments in AJO](https://experienceleague.adobe.com/docs/journey-optimizer/using/integrations/aem-fragments.html#integrations)
 * [Integration AJO Offers with Content Fragment](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/managing-offers-in-the-offer-library/configure-offers/add-representations#urls)
+
+## Further Information {#further-information}
+
+For further information see:
+
 * The [AJO External References extension](/help/sites-cloud/administering/content-fragments/extension-content-fragment-ajo-external-references.md) 
 
 <!-- Original draft text - under review with the AJO team -->
