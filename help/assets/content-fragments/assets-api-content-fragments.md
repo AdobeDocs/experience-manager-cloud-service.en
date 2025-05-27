@@ -16,7 +16,9 @@ role: User, Admin
 
 >[!CAUTION]
 >
->[Content Fragment Support in Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md) is now [deprecated](/help/release-notes/deprecated-removed-features.md). It has been replaced by [Content Fragment Delivery with OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md).
+>Content Fragment Support in Assets HTTP API is now [deprecated](/help/release-notes/deprecated-removed-features.md). 
+>
+>It has been replaced by [Content Fragment Delivery with OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md).
 
 Learn about support for Content Fragments in the Assets HTTP API, an important piece of Adobe Experience Manager's (AEM) headless delivery feature.
 
