@@ -34,6 +34,15 @@ The 2025.5.0 feature activation will provide the full feature set for this maint
 * GRANITE-58276, SLING-12755: Fixed OSGi dependency cycles that could prevent the HTL Script Engine factory from starting correctly, causing intermittent server-side rendering errors.
 * SKYOPS-83910, SKYOPS-82371 - Fixed JSP compilation concurrency issues.
 
+#### AEM Guides {#guides}
+
+* GUIDES-26919 : When opening a DITA map with the unified shell enabled, the editor refreshes intermittently.
+* GUIDES-26282: Failing to close JCR session connections while updating or creating topics result in memory leaks and service downtime.
+* GUIDES-26434: Native PDF publishing continues indefinitely, if the DITA content has a weblink without having scope as `external`.
+* GUIDES-26516:  Publishing of Native PDFs and AEM sites stalls and gets queued, when there are errors in the content.
+
+For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
+
 ### Known Issues {#known-issues-21005}
 
 None.
