@@ -19,21 +19,21 @@ The 2025.5.0 feature activation will provide the full feature set for this maint
 ### Enhancements {#enhancements-21005}
 
 * GRANITE-56327: Added Tree Activation API.
-* GRANITE-58800: Update Apache Commons Collections to version 4.5.0.
-* GRANITE-58866: Update of Oak to 1.80.0.
 * GRANITE-58927: Semantic Search toggle improvements.
 * SKYOPS-106509: Enhanced GSON compatibility via reflective access in Java 21.
+* GRANITE-58800: Update of Apache Commons Collections to version 4.5.0.
+* GRANITE-58866: Update of Oak to 1.80.0.
 * SKYOPS-107761: Update of Sling Models Jackson Exporter to 1.1.6.
 * SKYOPS-107813: Update to Sling ResourceResolver 1.12.8.
 
 ### Fixed Issues {#fixed-issues-21005}
 
-* CNTBF-443: Fix SearchSlingJob EVENT_JOB_TOPIC property.
-* GRANITE-57853:  Fix dropdown alignment issues in UI.
+* CNTBF-443: Fixed SearchSlingJob EVENT_JOB_TOPIC property.
+* GRANITE-57853: Fixed dropdown alignment issues in UI.
 * GRANITE-58107: Fixed 404 errors on Publish by disabling user-based pod affinity in OAuth handler.
-* SKYOPS-105151: Fix NPE when accessing bundle list.
+* SKYOPS-105151: Fixed NPE when accessing bundle list.
 * GRANITE-58276, SLING-12755: Fixed OSGi dependency cycles that could prevent the HTL Script Engine factory from starting correctly, causing intermittent server-side rendering errors.
-* SKYOPS-83910, SKYOPS-82371 - Fix JSP compilation concurrency issues.
+* SKYOPS-83910, SKYOPS-82371 - Fixed JSP compilation concurrency issues.
 
 ### Known Issues {#known-issues-21005}
 
@@ -41,9 +41,9 @@ None.
 
 ### Deprecated Features and APIs {#deprecated-21005}
 
-* GRANITE-54164: Remove `org.apache.jackrabbit.oak.plugins.blob` from public API.
-* GRANITE-54280: Remove `org.apache.jackrabbit.oak.cache` from public API.
-* GRANITE-58332: Deprecate `org.apache.jackrabbit.oak.plugins.memory` in public API.
+* GRANITE-54164: Removed `org.apache.jackrabbit.oak.plugins.blob` from public API.
+* GRANITE-54280: Removed `org.apache.jackrabbit.oak.cache` from public API.
+* GRANITE-58332: Deprecated `org.apache.jackrabbit.oak.plugins.memory` in public API.
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
