@@ -37,7 +37,7 @@ exl-id: b39601a1-7f37-4a7d-a4c8-7e79dca074e5
 **A:** There are several options for analytics and tracking:
 
 - Adobe Experience Platform Web SDK (primary recommendation)
-- Real User Monitoring (RUM) for sampled metrics
+- Operational Telemetry for sampled metrics
 - Integration with other analytics systems as needed
 
 ## Documentation and Resources
