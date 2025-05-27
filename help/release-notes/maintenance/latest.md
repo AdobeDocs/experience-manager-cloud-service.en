@@ -18,7 +18,6 @@ The 2025.5.0 feature activation will provide the full feature set for this maint
 
 ### Enhancements {#enhancements-21005}
 
-* GRANITE-56327: Added Tree Activation API.
 * GRANITE-58927: Semantic Search toggle improvements.
 * SKYOPS-106509: Enhanced GSON compatibility via reflective access in Java 21.
 * GRANITE-58800: Update of Apache Commons Collections to version 4.5.0.
