@@ -12,7 +12,7 @@ With Edge Delivery Services, AEM delivers exceptional experiences that drive eng
 
 By using Edge Delivery Services, you can:
 
-* Create fast sites with a perfect Lighthouse Score and continuously monitor your site performance through real use monitoring (RUM).
+* Create fast sites with a perfect Lighthouse Score and continuously monitor your site performance through Operational Telemetry.
 * Increase authoring efficiency by decoupling content sources. Out of the box you can use both AEM authoring with the Universal Editor and document-based authoring. As such, you can work with multiple content sources on the same website.
 * Use a built-in experimentation framework that allows quick test creation, execution without performance impact and fast release to production of a test winner.
 
@@ -96,7 +96,7 @@ Edge Delivery Services are part of Adobe Experience Manager. As such, Edge Deliv
 
 See the document [Getting Started - Universal Editor Developer Tutorial](https://www.aem.live/developer/ue-tutorial) in the aem.live documentation to learn how to start your own project to author with AEM and Edge Delivery Services.
 
-You can also use Edge Delivery Services with [Adobe Target](https://www.aem.live/developer/target-integration), [Real Use Monitoring (RUM)](https://www.aem.live/developer/rum) to diagnose usage and performance of your sites, and [Launch.](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
+You can also use Edge Delivery Services with [Adobe Target](https://www.aem.live/developer/target-integration), [Operational Telemetry](https://www.aem.live/developer/rum) to diagnose usage and performance of your sites, and [Launch.](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
 
 ## Getting Help from Adobe {#getting-help}
 
