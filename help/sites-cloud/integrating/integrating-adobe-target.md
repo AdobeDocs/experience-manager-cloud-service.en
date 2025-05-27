@@ -8,7 +8,7 @@ solution: Experience Manager Sites
 ---
 # Integrating with Adobe Target{#integrating-with-adobe-target}
 
-As part of the Adobe Experience Cloud, Adobe Target lets you increase content relevance through targeting and measuring across all channels. Integrating Adobe Target and AEM as a Cloud Service requires:
+As part of the Adobe Experience Cloud, [Adobe Target](https://experienceleague.adobe.com/en/docs/target) lets you increase content relevance through targeting and measuring across all channels. Integrating Adobe Target and AEM as a Cloud Service requires:
 
 * using the Touch UI to create a Target Configuration in AEM as a Cloud Service (IMS configuration required).
 * adding and configuring Adobe Target as an extension in [Adobe Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html).
@@ -20,6 +20,10 @@ For the export of Experience Fragments and/or Content Fragments to Target, you n
 >[!NOTE]
 >
 >Customers who do not have an existing Target account, can request access to the Target Foundation Pack for Experience Cloud. The Foundation Pack provides volume limited use of Target.
+
+>[!NOTE]
+>
+>See also the Adobe Target documentation: [Integrate Target with Adobe Experience Manager (AEM)](https://experienceleague.adobe.com/en/docs/target/using/integrate/aem/aem-target-integration).
 
 ## Creating the Adobe Target Configuration {#create-configuration}
 
