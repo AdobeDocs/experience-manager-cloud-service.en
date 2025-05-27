@@ -65,12 +65,7 @@ To simulate delivery of content from the AEM author directly, the Content Fragme
 >
 >The auto-synchronizing from AEM Author to Preview is turned off by default. Contact your Support representative if you want it to be enabled.
 >
->Whenever the auto-sync capability is enabled, we recommend making sure that proper IP allowlisting rules are in place to protect content on the Preview tier.
-
-<!-- Where in the documentation? -->
-<!--
->Refer to our documentation for managing the Preview service for that matter.
--->
+>Whenever the auto-sync capability is enabled, we recommend making sure that [proper IP allowlisting rules are in place to protect content on the Preview tier](/help/sites-cloud/authoring/sites-console/previewing-content.md).
 
 When auto-syncing is not enabled the Content Fragment authors:
 
