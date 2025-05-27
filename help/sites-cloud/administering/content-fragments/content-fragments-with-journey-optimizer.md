@@ -28,7 +28,7 @@ For further information see:
 
 * The [AJO External References extension](/help/sites-cloud/administering/content-fragments/extension-content-fragment-ajo-external-references.md) 
 
-<!-- Original draft text - under review with the AJO team -->
+<!-- Original draft text - relocated to the AJO doc set -->
 <!--
 ## Configure AEM {#configure-aem}
 

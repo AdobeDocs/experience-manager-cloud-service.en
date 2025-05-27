@@ -18,7 +18,7 @@ For example, for an integration with Adobe Journey Optimizer (AJO) the details a
 
 >[!NOTE]
 >
->For details oF how to enable the extension, see [Extension Manager in AEM Experience Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+>For details of how to enable the extension, see [Extension Manager in AEM Experience Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
 
 For example, to use the extension with AJO:
 
