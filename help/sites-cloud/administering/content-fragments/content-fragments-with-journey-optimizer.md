@@ -4,8 +4,8 @@ description: Learn how Content Fragments can be integrated and used with Adobe J
 feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
+exl-id: 4090ee41-80f1-4389-8961-e4af891f01ff
 ---
-
 # Content Fragments with Adobe Journey Optimizer {#content-fragments-with-journey-optimizer}
 
 [Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/get-started) helps you deliver connected, contextual, and personalized experiences to your customers. By integrating Adobe Experience Manager (AEM) as a Cloud Service with Adobe Journey Optimizer (AJO), you can reuse AEM content in your AJO outbound channels, including web, SMS, and email. 

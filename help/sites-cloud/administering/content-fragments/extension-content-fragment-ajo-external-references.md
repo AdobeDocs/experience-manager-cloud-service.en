@@ -4,8 +4,8 @@ description: Learn about the Content Fragment AJO External References Extension
 feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
+exl-id: 79c90e6b-91da-4f5a-ac96-a98ef7f8d4cd
 ---
-
 # The Content Fragment AJO External References Extension {#content-fragment-external-references-extension}
 
 To preview experiences from AEM on another Adobe product, you can enable the UI extension:
