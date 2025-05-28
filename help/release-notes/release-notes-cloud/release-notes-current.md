@@ -124,11 +124,14 @@ Integration capabilities between Forms and AEP are now available for early adopt
 
 ###  Updated Deprecation Process {#updated-deprecation-process}
 
-Adobe regularly reviews features, libraries, APIs, and configurations to ensure they meet standards for performance, security, and value. Occasionally, capabilities are marked for deprecation, and usage must stop by the specified removal date. Adobe communicates these deprecations by sending email notifications, pausing Cloud Manager builds (which you can resume after acknowledging the notice), and eventually failing those builds until references to deprecated items are removed. After the removal date, continued usage may result in delayed AEM upgrades, potentially impacting your environment’s security, performance, reliability, and availability.
+Adobe regularly reviews features, libraries, APIs, and configurations to ensure they meet standards for performance, security, and value. Occasionally, capabilities are marked for deprecation, and usage must stop by the specified removal date. Until references to deprecated items are removed, Adobe will remind customers by sending email notifications, pausing Cloud Manager builds, and eventually failing those builds and delaying AEM upgrades, which may impact which implies that guarantees cannot be met around security, performance, reliability, and availability.
+
+See the [deprecation article](/help/release-notes/deprecated-removed-features.md) for further information.
+
 
 #### Deprecated Java APIs and OSGi configuration nearing removal dates {#deprecated-near-removals}
 
-Expand the list below see the list of deprecated APIs and OSGi configuration which must be removed within the next few weeks. The deprecation article (list) has more details, including the removal date.
+Expand the list below see the list of deprecated APIs and OSGi configuration which must be removed within the next few weeks. The deprecation article has more details, including the removal date.
 
 <details>
   <summary>Expand to see the deprecations</summary>
