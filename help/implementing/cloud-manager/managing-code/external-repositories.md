@@ -14,7 +14,7 @@ Customers can now also onboard their Azure DevOps Git repositories into Cloud Ma
 
 * For Edge Delivery Services users, the onboarded repository can be used to sync and deploy site code.
 * For AEM as a Cloud Service and Adobe Managed Services (AMS) users, the repository can be linked to both full-stack and frontend pipelines.
-'
+
 >[!NOTE]
 >
 >The features described in this article are only available through the early adoption program. For more details and to sign up as an early adopter, see [Bring Your Own Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
