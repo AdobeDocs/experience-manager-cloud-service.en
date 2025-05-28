@@ -122,9 +122,11 @@ Integration capabilities between Forms and AEP are now available for early adopt
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-###  Updated Deprecation Process #{#updated-deprecation-process}
+###  Updated Deprecation Process {#updated-deprecation-process}
 
 Adobe regularly reviews features, libraries, APIs, and configurations to ensure they meet standards for performance, security, and value. Occasionally, capabilities are marked for deprecation, and usage must stop by the specified removal date. Adobe communicates these deprecations by sending email notifications, pausing Cloud Manager builds (which you can resume after acknowledging the notice), and eventually failing those builds until references to deprecated items are removed. After the removal date, continued usage may result in delayed AEM upgrades, potentially impacting your environment’s security, performance, reliability, and availability.
+
+#### Deprecated Java APIs and OSGi configuration nearing removal dates {#deprecated-near-removals}
 
 Expand the list below see the list of deprecated APIs and OSGi configuration which must be removed within the next few weeks. The deprecation article (list) has more details, including the removal date.
 
