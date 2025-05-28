@@ -33,7 +33,7 @@ For full documentation see [AEM Content Fragment Delivery with OpenAPI](https://
 >[!IMPORTANT]
 >
 >To enable Content Fragment Delivery with OpenAPI on AEM as a Cloud Service you should ensure that it is not already enabled, then submit an Adobe Support ticket with the title **Enable Content Fragment Delivery with OpenAPI** and specifying:
->* the Cloud Service program and environment ID
+>* the Cloud Service program and environment ID(s)
 >* details of the use-case you want to solve with the Content Fragment Delivery OpenAPI
 >* the customer contacts who will be involved in the integration project
 >* details of the [HTTP allowed origins](#cors) that will trigger requests to the Content Fragment Delivery API 
