@@ -33,6 +33,10 @@ Participate in Cloud Manager's Early Adopter Program to get exclusive access to 
 
 The following early adopter opportunities are currently available:
 
+### Edge compute{#edge-compute}
+
+
+
 ### Specialized Testing Environment {#specialized-test-environment}
 
 Cloud Manager now supports the addition of a new environment type called **Specialized Testing Environment**. The environment is designed to help teams validate features under near-production conditions before going live. This environment type is distinct from *Production + Stage*, *Development*, or *Rapid Development* environments and offers a focused space for running advanced validation scenarios. 
@@ -77,6 +81,8 @@ Config Pipelines are now supported for sites built with Edge Delivery Services, 
 ![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png)
 
 If you are interested in testing this new feature and sharing your feedback, send an email to [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) from your email address associated with your Adobe ID.
+
+
 
 
 <!--
