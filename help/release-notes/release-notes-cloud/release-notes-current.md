@@ -173,7 +173,7 @@ Note that the Java 21 runtime is independent of whether your code is built with 
 
 As detailed in April release notes, to ensure effective monitoring of customer environments, AEM Java logs must maintain a consistent format and must not be overridden by custom configurations. Log output must remain directed to the default files. For AEM product code, default log levels must be preserved. However, it is acceptable to adjust log levels for customer-developed code. See details in the [Logging article](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-AEM will enforce a policy in mid-June for most customers, where any custom modifications to these properties will be ignored. Adobe will send an email to customers who, based on our records, may be relying on custom modifications; for those customers, custom configuration will be ignored in September.
+Going forward, any of these custom overrides will be ignored for customers, who based on our analysis will not be impacted. Adobe will reach out to those who our analysis suggests may be relying on overrides and thus may be impacted; custom configuration will be ignored in early September for these customers.
 
 Please review and adjust your downstream processes accordingly. For example, if you use the log forwarding feature:
 * If your logging destination expects a custom (non-default) log format, you may need to update your ingestion rules.
