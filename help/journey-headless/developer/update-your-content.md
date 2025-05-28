@@ -44,7 +44,7 @@ Adobe Experience Manager (AEM) as a Cloud Service offers multiple APIs for both 
 
 >[!NOTE]
 >
->[Content Fragment Support in Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md) is now [deprecated](/help/release-notes/deprecated-removed-features.md). It has been replaced by [Content Fragment Delivery with OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md).
+>[Content Fragment Support in Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md) is now [deprecated](/help/release-notes/deprecated-removed-features.md). It has been replaced by replaced by [Content Fragment Delivery with OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md) together with [Content Fragments and Content Fragment Models Management OpenAPIs](/help/headless/content-fragment-openapis.md).
 
 ## What's Next {#whats-next}
 
