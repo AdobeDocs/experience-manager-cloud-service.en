@@ -57,10 +57,27 @@ If everything goes well, the new changes will be reflected in every instance. If
 
 ## Clear Cache Invalidation API {#clear-cache-api}
 
+This is the API which clients needs to trigger whenever they wanted to clear cache of commerce related data from AEM.
+
+Request Type: `POST`
+
+### Headers
+
 | Parameter| Value| Required/Mandatory| Comment |
 |------------------------------|-------------------|---|---|
 | `Content-Type`                           | `application/json`            | Required | |
 | `Authorization`                      | Corresponding Author's User credentials (Auth Type: Basic Auth)  | Required | Add the corresponding username and password |
+
+
+>[!NOTE]
+>
+> Below are existing attributes which the feature is giving out of the Box.
+
+
+
+### Payload
+
+This InvalidateType needs to be given in combination of Mandatory attribute (i.e storePath)
 
 ## Extensibility {#clear-cache-extensibility}
 
