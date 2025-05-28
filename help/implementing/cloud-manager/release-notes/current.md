@@ -45,7 +45,7 @@ See [Adding a Specialized Testing Environment](/help/implementing/cloud-manager/
 
 ![Add environment dialog box with Specialized Testing Environment radio button selected](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
 
-If you are interested in testing this new feature and sharing your feedback, send an email to [???@adobe.com](mailto:???@adobe.com) from your email address associated with your Adobe ID.
+If you are interested in testing this new feature and sharing your feedback, send an email to [] from your email address associated with your Adobe ID.
 
 
 ### Bring Your Own Git - now with support for Azure DevOps {#gitlab-bitbucket-azure-vsts}
