@@ -144,7 +144,8 @@ Java APIs:
 * `org.slf4j.event`
 * `org.apache.log4j`
 * `com.google.common`
-* `com.drew.*`
+* `com.drew`
+* `org.bson`
 * `org.apache.jackrabbit.oak.plugins.blob`
 * `org.apache.jackrabbit.oak.plugins.memory`
 
