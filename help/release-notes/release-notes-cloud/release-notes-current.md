@@ -132,26 +132,26 @@ Expand the list below see the list of deprecated APIs and OSGi configuration whi
   <summary>Expand to see the deprecations</summary>
 
 Java APIs:
-- org.apache.sling.commons.auth
-- org.apache.felix.webconsole
-- org.eclipse.jetty
-- com.mongodb
-- org.apache.abdera
-- org.apache.felix.http.whiteboard
-- org.apache.cocoon.xml
-- ch.qos.logback
-- org.slf4j.spi
-- org.slf4j.event
-- org.apache.log4j
-- com.google.common
-- com.drew.*
-- org.apache.jackrabbit.oak.plugins.blob
-- org.apache.jackrabbit.oak.plugins.memory 
+* `org.apache.sling.commons.auth`
+* `org.apache.felix.webconsole`
+* `org.eclipse.jetty`
+* `com.mongodb`
+* `org.apache.abdera`
+* `org.apache.felix.http.whiteboard`
+* `org.apache.cocoon.xml`
+* `ch.qos.logback`
+* `org.slf4j.spi`
+* `org.slf4j.event`
+* `org.apache.log4j`
+* `com.google.common`
+* `com.drew.*`
+* `org.apache.jackrabbit.oak.plugins.blob`
+* `org.apache.jackrabbit.oak.plugins.memory`
 
 OSGi properties:
 
-- org.apache.sling.commons.log.LogManager (all properties)
-- org.apache.sling.commons.log.LogManager.factory.config (org.apache.sling.commons.log.file, org.apache.sling.commons.log.pattern)
+* `org.apache.sling.commons.log.LogManager` (all properties)
+* `org.apache.sling.commons.log.LogManager.factory.config` (`org.apache.sling.commons.log.file`, `org.apache.sling.commons.log.pattern`)
  
 </details>
 
