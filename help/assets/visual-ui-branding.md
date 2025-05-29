@@ -55,4 +55,4 @@ Primary color apply to the following places on the [!DNL Content Hub] [!UICONTRO
 
 * Selecting a row from the table on the configuration pages.
 * Toggle color across all configuration pages.
-* The **[!UICONTROL Confirm]** option in Edit dialog boxes on all configuration pages..
+* The **[!UICONTROL Confirm]** option in Edit dialog boxes on all configuration pages.
