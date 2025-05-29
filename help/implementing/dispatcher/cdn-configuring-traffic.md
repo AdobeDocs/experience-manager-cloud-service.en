@@ -53,12 +53,11 @@ The rule types in the sections below share a common syntax.
 
 A rule is referenced by a name, a conditional "when clause", and actions.
 
-The when clause determines whether a rule will be evaluated, based on properties including domain, path, query strings, headers, and cookies. The syntax is the same across rule types; for details, see the [Condition Structure section](/help/security/traffic-filter-rules-including-waf.md#condition-structure) in the Traffic Filter Rules article.
+The "when" clause determines whether a rule will be evaluated, based on properties including domain, path, query strings, headers, and cookies. The syntax is the same across rule types; for details, see the [Condition Structure section](/help/security/traffic-filter-rules-including-waf.md#condition-structure) in the Traffic Filter Rules article.
 
 The details of the actions node differ per rule type, and are outlined in the individual sections below.
 
-In configuration rules one can reference secrets defined as environment variables (see [Configuration Secrets](/help/implementing/dispatcher/cdn-credentials-authentication.md)).
-
+In the configuration rules, you can reference secrets defined as environment variables (see [Configuration Secrets](/help/implementing/dispatcher/cdn-credentials-authentication.md)).
 
 ## Request Transformations {#request-transformations}
 
