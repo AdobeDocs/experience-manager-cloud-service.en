@@ -1,5 +1,5 @@
 ---
-title: Asset Selector for [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
+title: Integrate Asset Selector with [!DNL Adobe] application
 description: Integrate Asset selector with various Adobe, non-Adobe, and third party applications.
 role: Admin, User
 exl-id: a0c030e2-2213-406b-ad92-4761f1e2ee9f
