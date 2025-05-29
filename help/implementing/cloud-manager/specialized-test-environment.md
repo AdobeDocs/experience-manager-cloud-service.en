@@ -13,21 +13,33 @@ badge: label="Early Adopter" type="Positive" url="/help/implementing/cloud-manag
 >
 >>The feature described in this article is only available through the early adoption program. To sign up as an early adopter, see [Specialized Testing Environment](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
 
-Cloud Manager now supports a new environment type called Specialized Testing Environment, designed to help teams validate features under near-production conditions before going live. This environment type is distinct from traditional Development, Rapid Development, or Production environments and offers a focused space for executing advanced validation scenarios.
+The Specialized Testing Environment, or DevXL, is a new type of Cloud Manager environment that you can create. It is designed to support advanced use cases such as User Acceptance Testing (UAT) and performance validation. Unlike traditional Development, Rapid Development, or Staging environments, DevXL environments operate outside of the production deployment pipeline. As such, they offer you greater flexibility while maintaining strict isolation to prevent interference with production workflows. 
 
-Specialized Testing Environments allow you to simulate real-world user conditions with greater control, making them ideal for stress testing, configuration validation, and feature rollout checks. These environments can be selected at the time of creation through the Cloud Manager UI. Once created, the primary region of the environment (e.g., "United States (West US)") is locked and cannot be changed.
+DevXL is built to mirror the size, scalability, and configurations of a typical Staging environment. This approach ensures that tests performed in DevXL can yield realistic insights into how code and content perform in production-like conditions. The environment also supports direct content copying from Production or Stage. It also maintains parity with Development environments in terms of deployment workflows, access controls, and network configurations.
 
-This environment type shares the same base provisioning infrastructure as other non-production environments but is configured for more rigorous test conditions. It can be integrated into complex CI/CD workflows or used for isolated validation without disrupting ongoing development.
+## Key features and configurations {#key-features}
 
-For organizations requiring robust pre-deployment testing workflows, this addition provides a high-fidelity testing layer between Development and Production environments.
+| Category | DevXL behavior |
+| --- | --- |
+| Purpose | UAT and performance testing. |
+| Pipeline Type | Not in the production pipeline. |
+| Environment Size | Matches Stage environment. |
+| Isolation | Fully isolated from other environments. |
+| Code Pipelines | Same as the Development environment (Validation, Build, Deploy). |
+| Content Copy | Allowed from Production or Stage environment. |
+| Content Restore | Same as the Development environment. |
+| Access Logs | Same as the Development environment. |
+| Developer Console | Same as the Development environment. |
+| IP Allow List | Same as the Development environment. |
+| Networking | Same as the Development environment (Services, Domain name, SSL certificates, Advanced network). |
 
 See also [Manage Environments](/help/implementing/cloud-manager/manage-environments.md)
 
-## Add a Specialized Testing Environment {#add-specialize-testing-environment}
+## Add a Specialized Testing Environment {#add-specialized-testing-environment}
 
 To add or edit an environment, a user must be a member of the **Business Owner** role.
 
-**To add a Specialized Testing Eenvironment:**
+**To add a Specialized Testing Environment:**
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
@@ -47,15 +59,14 @@ To add or edit an environment, a user must be a member of the **Business Owner**
    
 1. In the **Add environment** dialog box, do the following:
    
-   * Select an [**environment type**](#environment-types). The number of available/used environments is displayed in parentheses behind the environment type name.
+   * Click [**Specialized Test Environment**](#environment-types).
    * Provide an environment **Name**. The environment name cannot be changed after the environment is created.
-   * Provide an optional **Description** for the environment.
-   * If you are adding a **Production + Stage** environment, you must provide an environment name and description for both your production and staging environments.
-   * Select a **Primary region** from the drop-down. The primary region cannot be changed after creation. Also, depending on your available entitlements, you may be able to configure [multiple regions](#multiple-regions).
+   * (Optional) Provide a **Description** for the environment.
+   * Select a **Primary region** from the drop-down list. Once created, the primary region of the DevXL environment (for example, *United States (West US)*) is locked and cannot be changed.
   
    ![Add environment dialog box with Specialized Testing Environment radio button selected](assets/specialized-test-environment.png)
 
 1. Click **Save**.
 
-The **Overview** page now displays your new environment in the **Environments** card. You can now set up pipelines for your new environment.
+   The **Overview** page now displays your new environment in the **Environments** card. You can now set up pipelines for your new environment.
 
