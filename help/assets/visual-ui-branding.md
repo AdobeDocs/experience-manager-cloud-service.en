@@ -3,6 +3,8 @@ Customize your content hub UI as per your brand's theme. To do the customization
 1. [Update the title and body text on the banner and change the text color from Banner section](#Add-Title-and-Body-text-to-your-banner-and-change-the-text-color)
 1. [Change the primary and secondary color from the Colors section](#Change-the-primary-and-secondary-color)
 
+Select Reset Defaults option to revert your changes and restore the default theme.
+
 # Change the banner image{#Change-the-banner-image}
 
 On the Branding page, execute the following steps to change the banner image of your content hub:
@@ -17,17 +19,35 @@ Click the sqare box next to the Banner text color to select a color from the col
 
 # Change the primary and secondary color{#Change-the-primary-and-secondary-color}
 
-Primary color applies to the background and text color of main buttons, selected elements and accents. Secondary color applies to the background and text color of secondary buttons, background elements and containers.
+Color applies to the background, texts and icons of UI options and the border color of selected UI elements on selecting them.
 
-Primary color applies to the search bar border color and the magnifying glass in the search bar. 
-Primary color applies to selection checkbox after selecting it.
+On the Content Hub home page the primary color applies to: 
 
-On the Content Hub home page, navigate to All assets:
+* the magnifying glass icon inside the search bar.
+* the search bar border color on selecting it.
+* the selection checkboxes after selecting them.
+* The toggle color and the date input fields.
+* All the UI options on the main UI such as Add assets on All assets page and Create collection on Collections page.
+* On selecting an asset card from the main UI and collection card from the Add to collection panel or dialog box. On All assets page, click + available on the asset card or select the asset card and click + Add to collection to display the Add to collection dialog box. Click the asset thumbnail and click + to display the Add to collection panel. 
+* the Upload option on the Add approved assets dialog box. Click Add assets within All assets page to display the Add approved assets dialog box.
+* The pane that displays after selecting an asset card from All assets page or collections page displaying the selected assets count. 
+* Hovering and selecting a rendition from the Download panel. Click the asset thumbnail and select ![](/help/assets/assets/download-icon.svg) from the menu options in the right pane.
 
-Primary color:
+On the Content Hub home page the secondary color applies to: 
 
-* Add assets option: Backgrond color of this option and text and icon color.
-* The background and border color of an asset card after selecting it. 
-* The color of the pane that displays after selecting an asset card that shows the count of selected assets and other options.
-* On clicking the asset tumbnail on the asset card, navigating to the download panel by clicking ![](/help/assets/assets/download-icon.svg) from the right pane, the color of the rendition box on hovering and selecting the rendition.
-* On clicking the asset tumbnail on the asset card, navigating to the Add to collection panel by clicking ![add to collection]() from the right pane, the border color of the search box and the magnifying glass icon inside it. Also the highlighted border and fill color of collection card on selcting it from the list of available collections. 
+* the input fields in the dialog boxes except the input fields in the Add approved assets dialog box. The Add approved assets dialog box displays on clicking Add assets within the All assets page.
+* All the UI options including Download, Generate share link and Add to collections that are available on various dialog boxes except the Upload option on the Add approved assets dialog box. Click Add assets within All assets page to display the Add approved assets dialog box.
+
+Primary and secondary color also applies on the following options on the Configuration page:
+
+Secondary color applies to:
+
+* All configuration options including Import, Filter, Asset details, Asset Card, Search, Branding, Expired Assets, Renditions and Custom Links available on the configuration page.
+* Options including, Add filters on Filter page, Add link on Custom Link page and Add metadata on Import, Asset details, Asset Card, Search pages.  
+* Input fields available in the Add metadata, Add link, Add filters dialog boxes.
+
+Primary color aplies to:
+
+* Selecting a row from the table available in the configuration pages.
+* Toggle color available on all pages.
+* The Confirm option available on the Edit dialog box of all pages.
