@@ -200,6 +200,46 @@ Asset Selector lets you view the asset in four different views:
 * ![gallery view](assets/do-not-localize/gallery-view.png) [!UICONTROL **Gallery View**] The gallery view displays files or folders in a center-locked horizontal list.
 * ![waterfall view](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Waterfall** View] The waterfall view displays files or folders in the form of a Bridge.
 
+### Asset details and metadata {#asset-details-and-metadata}
+
+The Asset Details Page provides a comprehensive view of a specific asset, consolidating all key information in one place. It includes an overview with the name, file format, status, and a brief description, along with a preview or thumbnail for easy visual identification. It also includes metadata of an asset such as creation date, author, size, color scheme, and so on. These attributes help efficient search, filtering, and classification of an asset. The asset details panel is available in both rail and modal view of Asset Selector. In the rail view, it is required to enable and configure `onDrop` property to return an asset. Alternatively, in the modal view, `handleSelection` property returns an asset. See [Asset Selector Properties](asset-selector-properties.md).
+
+To view details of an asset and metadata, execute the steps below:
+
+1. Open Asset Selector MFE and navigate to an asset.
+1. Hover the asset and click ![info icon](/help/assets/assets/info-icon-solid-black.svg).
+1. Go to the **[!UICONTROL Info]** tab to see the asset's details. <!--Otherwise, go to the **[Renditions](#asset-renditions)** tab to see renditions of an asset.-->
+
+To customize the details view panel of an asset, see [Customize information in modal view](asset-selector-customization.md#customize-info-in-modal-view).
+
+![Asset details](assets/asset-details.png)
+
+<!--
+
+#### Asset renditions {#asset-renditions}
+
+Renditions in Adobe Experience Manager (AEM) are customized versions of digital assets, such as images, designed for different devices and platforms to ensure optimal performance. See [Dynamic Media renditions](/help/assets/renditions.md#dynamic-media-renditions).
+
+>[!NOTE]
+>
+>* Prerequisites to [Dynamic Media with OpenAPI Capabilities renditions](/help/assets/renditions.md##prereqs-dm-with-openapi-renditions).
+>* Renditions tab in the details panel of an asset shows up if `featureSet`  props is set to `['detail-panel', 'dm-renditions']`.
+>* An asset should be approved to see Dynamic Media with OpenAPI renditions and/or ensure processing/publishing of the asset to Dynamic Media is complete (for images only).
+
+![Asset details dynamic media renditions](assets/asset-details-dm-renditions.png)
+
+For assets that are approved and have renditions enabled, you see the **Dynamic Media with Open API** badge. 
+
+![Dynamic Media Open API stamp](assets/dm-open-api-stamp.png)
+
+Additionally, see [Asset Selector user interface for Dynamic Media with OpenAPI capabilities](integrate-asset-selector-dynamic-media-open-api.md##interface-dynamic-media-open-api).
+
+##### Add modifiers {#modifiers-dm-media-renditions}
+
+Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
+
+-->
+
 ## Learn more on key capabilities {#key-capabilities-asset-selector}
 
 <table>
@@ -213,39 +253,39 @@ Asset Selector lets you view the asset in four different views:
      </td>
     <td>
         <img src="assets/with-adobe-app.gif" width="70px" height="70px" alt="Integrate Asset Selector with Adobe applications graphic"><br/>
-        <a href="integrate-asset-selector.md">Integrate Asset Selector with Adobe applications</a>
+        <a href="integrate-asset-selector-adobe-app.md">Integrate Asset Selector with Adobe applications</a>
         <p>
         <em>Discover how to integrate Asset Selector with various Adobe applications.</em>
         </p>
     </td>
     <td>
         <img src="assets/third-party-app.gif" width="70px" height="70px" alt="Integrate Asset Selector graphic"><br/>
-        <a href="integrate-asset-selector.md">Integrate Asset Selector with third party applications</a>
+        <a href="integrate-asset-selector-non-adobe-app.md">Integrate Asset Selector with third party applications</a>
         <p>
         <em>Dig up the capabilities to integrate Asset Selector with non-Adobe applications.</em>
         </p>
     </td>
     <td>
         <img src="assets/with-dynamic-media-open-api.gif" width="70px" height="70px" alt="Integrate Asset Selector graphic"><br/>
-        <a href="integrate-asset-selector.md">Integrate Asset Selector with Dynamic Media Open APIs</a>
+        <a href="integrate-asset-selector-dynamic-media-open-api.md">Integrate Asset Selector with Dynamic Media Open APIs</a>
         <p>
         <em>Understand how to integrate Asset Selector with Dynamic Media Open APIs.</em>
         </p>
      </td>
      <td>
-        <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="Asset Selector properties graphic"><br/>
-        <a href="asset-selector-customization.md">Asset Selector Properties</a>
+        <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="Asset Selector examples graphic"><br/>
+        <a href="asset-selector-properties.md">Asset Selector Properties</a>
         <p>
-        <em>Learn the basics of customizing various components of Asset Selector, such as filters, selection of assets, expired assets, and much more. </em>
+        <em>Understand the usage of properties in a practical manner. </em>
         </p>
     </td>
 </tr>
 <tr>
     <td>
-        <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="Asset Selector examples graphic"><br/>
-        <a href="asset-selector-customization.md">Asset Selector Examples</a>
+        <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="Asset Selector properties graphic"><br/>
+        <a href="asset-selector-examples.md">Asset Selector Examples</a>
         <p>
-        <em>Understand the usage of properties in a practical manner. </em>
+        <em>Learn the basics of customizing various components of Asset Selector, such as filters, selection of assets, expired assets, and much more. </em>
         </p>
     </td>
     <td>
@@ -266,7 +306,7 @@ Asset Selector lets you view the asset in four different views:
         <img src="assets/asset-selector-collections.gif" width="70px" height="70px" alt="Asset Selector collections graphic"><br/>
         <a href="asset-selector-collections.md">Asset Selector Collections</a>
         <p>
-        <em>Learn how to use collections inside Asset Selector using Experience Manager repository. </em>
+        <em>Learn how to use collections inside Asset Selector using the Experience Manager repository. </em>
         </p>
     </td>
     <td>
