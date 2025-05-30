@@ -21,7 +21,7 @@ Click the sqare box next to the **[!UICONTROL Banner text color]** to select a t
 
 On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** page, use the **[!UICONTROL Colors]** section to set primary and secondary colors. These colors customize the background, text, and icon colors of UI elements in your [!DNL Content Hub]. The selected colors also highlight certain elements when selected.
 
-See the following sections to know the places on the [!DNL Content Hub] home page and the **[!UICONTROL Configuration]** page where both these colors apply:
+See the following sections to know the places on the [[!DNL Content Hub] home page](#primary-and-secondary-color-on-the-content-hub-home-page) and [[!UICONTROL Configuration]](#primary-and-secondary-color-on-the-content-hub-configuration-page) page where both these colors apply:
 
 ## Apply primary and secondary color on the [!DNL Content Hub] home page{#primary-and-secondary-color-on-the-content-hub-home-page}
 
