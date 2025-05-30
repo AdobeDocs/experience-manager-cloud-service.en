@@ -26,21 +26,23 @@ graph TD
     A[Content Hub Interface] --> B[Content Hub home page]
     A --> C[Configuration Page]
     
-    B --> D[Primary color elements]
-    B --> E[Secondary color elements]
+    %% Making boxes on 3rd layer same width
+    B --> D[Primary color elements                    ]
+    B --> E[Secondary color elements                  ]
     
-    C --> F[Primary color elements]
-    C --> G[Secondary color elements]
+    C --> F[Primary color elements                    ]
+    C --> G[Secondary color elements                  ]
     
-    D --> |Search & Selection| H[Search bar,<br>Checkboxes,<br>Toggle switches &<br>Pane displaying asset count on selecting asset card]
-    D --> |Asset Management| I[Add assets option on All Assets page &<br>Create collection option on Collections page<br>]
-    D --> |Actions| J[Upload option,<br>Asset card selection &<br>Rendition selection]
+    %% Standardizing bottom boxes with original content
+    D ---->|Search &<br>Selection| H[Search bar,<br>Checkboxes,<br>Toggle switches &<br>Pane displaying asset count on selecting asset card<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]
+    D ---->|Asset<br>Management| I[Add assets option on All Assets page &<br>Create collection option on Collections page<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]
+    D ---->|Actions| J[Upload option,<br>Asset card selection &<br>Rendition selection<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]
     
-    E --> |Dialog Elements| K[Input fields<br>Download options<br>Share options]
+    E ---->|Dialog<br>Elements| K[Input fields<br>Download options<br>Share options<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]
     
-    F --> |Interactive Elements| L[Selected table rows<br>Toggle switches<br>Confirm options]
+    F ---->|Interactive<br>Elements| L[Selected table rows<br>Toggle switches<br>Confirm options<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]
     
-    G --> |Configuration Options| M[Import, Filters, Search,<br>Asset details, Branding<br>Input fields in dialog boxes]
+    G ---->|Configuration<br>Options| M[Import, Filters, Search,<br>Asset details, Branding<br>Input fields in dialog boxes<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]
 
     style A fill:#4682B4,color:#fff
     style B fill:#E6EEF4,color:#000
@@ -55,6 +57,10 @@ graph TD
     style K fill:#FFF8DC,color:#000
     style L fill:#F0F8FF,color:#000
     style M fill:#FFF8DC,color:#000
+
+    %% Styling for better alignment
+    linkStyle default stroke-width:2px,fill:none,stroke:gray,curve
+    classDef default rx:10,ry:10
 ```
 
 See the following table to know the places where both these colors apply:
