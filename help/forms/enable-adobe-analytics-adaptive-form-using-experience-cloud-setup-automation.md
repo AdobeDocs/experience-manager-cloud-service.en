@@ -8,6 +8,10 @@ exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
 ---
 # Enable Adobe Analytics for an Adaptive Form using Experience Cloud Setup Automation {#integrate-adobe-analytics-to-aem-forms-with-experience-cloud-setup-automation}
 
+>[!CAUTION]
+>
+>The Experience Cloud Setup Automation functionality is deprecated.
+
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service     | This article   |
