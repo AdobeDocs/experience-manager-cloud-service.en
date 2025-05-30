@@ -57,140 +57,155 @@ Primary color apply to the following places on the [!DNL Content Hub] [!UICONTRO
 * Toggle color across all configuration pages.
 * The **[!UICONTROL Confirm]** option in Edit dialog boxes on all configuration pages.
 
-| Location                 | Color Type | UI Element                                                                 | Navigation Path                                                                                   |
-|--------------------------|------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| Content Hub home page    | Primary    | Magnifying glass icon in search bar                                        | Content Hub home page > Search bar                                                                |
-|                          |            | Search bar border when selected                                            | Content Hub home page > Click inside Search bar                                                   |
-|                          |            | Selection checkboxes after selection                                       | Content Hub home page > Select asset cards                                                        |
-|                          |            | Toggle switches and date input fields                                      | Content Hub home page > Filters or relevant forms                                                 |
-|                          |            | [!UICONTROL Add assets] option                                             | Content Hub home page > [!UICONTROL All Assets]                                                   |
-|                          |            | [!UICONTROL Create collection] option                                      | Content Hub home page > [!UICONTROL Collections]                                                  |
-|                          |            | Selecting asset cards                                                      | Content Hub home page > [!UICONTROL All Assets] > Select asset card                               |
-|                          |            | Selecting collection tiles                                                 | Content Hub home page > Add to collection dialog box or panel                                     |
-|                          |            | [!UICONTROL Upload] option                                                 | Content Hub home page > [!UICONTROL Add approved assets] dialog box                               |
-|                          |            | Pane showing selected assets count                                         | Content Hub home page > Select asset card                                                         |
-|                          |            | Hovering/selecting a rendition                                             | Content Hub home page > Click asset thumbnail > [!UICONTROL Download] panel                       |
-|                          | Secondary  | Input fields in dialog boxes (excluding [!UICONTROL Add approved assets])  | Content Hub home page > Any dialog box (except Add approved assets)                               |
-|                          |            | [!UICONTROL Download], [!UICONTROL Generate share link], [!UICONTROL Add to collection] | Content Hub home page > Select asset card > Open relevant dialog                    |
-| Configuration page       | Primary    | Selecting a row in configuration tables                                    | Content Hub home page > [!UICONTROL Configuration] > Select table row                             |
-|                          |            | Toggle switches                                                            | Content Hub home page > [!UICONTROL Configuration] > Toggle switch                                |
-|                          |            | [!UICONTROL Confirm] option in Edit dialogs                                | Content Hub home page > [!UICONTROL Configuration] > Edit dialog                                  |
-|                          | Secondary  | All configuration options ([!UICONTROL Import], [!UICONTROL Filters], etc.)| Content Hub home page > [!UICONTROL Configuration]                                                 |
-|                          |            | [!UICONTROL Add filters], [!UICONTROL Add link], [!UICONTROL Add metadata] | Content Hub home page > [!UICONTROL Configuration] > Relevant page                                |
-|                          |            | Input fields in Add filters/link/metadata dialog boxes                     | Content Hub home page > [!UICONTROL Configuration] > Open dialog box                              |
-
-----
-
-<table>
-  <thead>
-    <tr>
-      <th>Location</th>
-      <th>Color Type</th>
-      <th>UI Element</th>
-      <th>Navigation Path</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowspan="13" align="center">Content Hub home page</td>
-      <td rowspan="13" align="center">Primary</td>
-      <td>Magnifying glass icon in search bar</td>
-      <td>Content Hub home page > Search bar</td>
-    </tr>
-    <tr>
-      <td>Search bar border when selected</td>
-      <td>Content Hub home page > Click inside Search bar</td>
-    </tr>
-    <tr>
-      <td>Selection checkboxes after selection</td>
-      <td>Content Hub home page > Select asset cards</td>
-    </tr>
-    <tr>
-      <td>Toggle switches and date input fields</td>
-      <td>Content Hub home page > Filters or relevant forms</td>
-    </tr>
-    <tr>
-      <td>[!UICONTROL Add assets] option</td>
-      <td>Content Hub home page > [!UICONTROL All Assets]</td>
-    </tr>
-    <tr>
-      <td>[!UICONTROL Create collection] option</td>
-      <td>Content Hub home page > [!UICONTROL Collections]</td>
-    </tr>
-    <tr>
-      <td>Selecting asset cards</td>
-      <td>Content Hub home page > [!UICONTROL All Assets] > Select asset card</td>
-    </tr>
-    <tr>
-      <td>Selecting collection tiles</td>
-      <td>Content Hub home page > Add to collection dialog box or panel</td>
-    </tr>
-    <tr>
-      <td>[!UICONTROL Upload] option</td>
-      <td>Content Hub home page > [!UICONTROL Add approved assets] dialog box</td>
-    </tr>
-    <tr>
-      <td>Pane showing selected assets count</td>
-      <td>Content Hub home page > Select asset card</td>
-    </tr>
-    <tr>
-      <td>Hovering/selecting a rendition</td>
-      <td>Content Hub home page > Click asset thumbnail > [!UICONTROL Download] panel</td>
-    </tr>
-    <tr>
-      <td rowspan="2">Input fields in dialog boxes (excluding Add approved assets)</td>
-      <td>Content Hub home page > Any dialog box (except Add approved assets)</td>
-    </tr>
-    <tr>
-      <td>[!UICONTROL Download], [!UICONTROL Generate share link], [!UICONTROL Add to collection]</td>
-      <td>Content Hub home page > Select asset card > Open relevant dialog</td>
-    </tr>
-    <tr>
-      <td rowspan="6" align="center">Configuration page</td>
-      <td rowspan="3" align="center">Primary</td>
-      <td>Selecting a row in configuration tables</td>
-      <td>Content Hub home page > [!UICONTROL Configuration] > Select table row</td>
-    </tr>
-    <tr>
-      <td>Toggle switches</td>
-      <td>Content Hub home page > [!UICONTROL Configuration] > Toggle switch</td>
-    </tr>
-    <tr>
-      <td>[!UICONTROL Confirm] option in Edit dialogs</td>
-      <td>Content Hub home page > [!UICONTROL Configuration] > Edit dialog</td>
-    </tr>
-    <tr>
-      <td rowspan="3" align="center">Secondary</td>
-      <td>All configuration options</td>
-      <td>Content Hub home page > [!UICONTROL Configuration]</td>
-    </tr>
-    <tr>
-      <td>Add filters/link/metadata options</td>
-      <td>Content Hub home page > [!UICONTROL Configuration] > Relevant page</td>
-    </tr>
-    <tr>
-      <td>Input fields in Add filters/link/metadata dialog boxes</td>
-      <td>Content Hub home page > [!UICONTROL Configuration] > Open dialog box</td>
-    </tr>
-  </tbody>
+<table style="border-collapse: separate; border-spacing: 0; width: 100%; border-radius: 8px; overflow: hidden;">
+  <tr style="background-color: #4682B4;">
+    <th style="padding: 12px; color: white; font-weight: bold; text-align: left;">Location</th>
+    <th style="padding: 12px; color: white; font-weight: bold; text-align: left;">Color</th>
+    <th style="padding: 12px; color: white; font-weight: bold; text-align: left;">UI Element</th>
+    <th style="padding: 12px; color: white; font-weight: bold; text-align: left;">Navigation Path</th>
+  </tr>
+  <tr>
+    <td rowspan="13" style="padding: 12px; border: 1px solid #d0d0d0; background-color: #E6EEF4; font-weight: bold;">Content Hub home page</td>
+    <td rowspan="11" style="padding: 12px; border: 1px solid #d0d0d0; background-color: #B0C4DE;">Primary</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">Magnifying glass icon in search bar</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">Content Hub home page > Search bar</td>
+  </tr>
+  <tr>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">Search bar border when selected</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">Content Hub home page > Click inside Search bar</td>
+  </tr>
+  <tr>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">Selection checkboxes after selection</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">Content Hub home page > Select asset cards</td>
+  </tr>
+  <tr>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">Toggle switches and date input fields</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">Content Hub home page > Filters or relevant forms</td>
+  </tr>
+  <tr>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">[!UICONTROL Add assets] option</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">Content Hub home page > [!UICONTROL All Assets]</td>
+  </tr>
+  <tr>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">[!UICONTROL Create collection] option</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">Content Hub home page > [!UICONTROL Collections]</td>
+  </tr>
+  <tr>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">Selecting asset cards</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">Content Hub home page > [!UICONTROL All Assets] > Select asset card</td>
+  </tr>
+  <tr>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">Selecting collection tiles</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">Content Hub home page > Add to collection dialog box or panel</td>
+  </tr>
+  <tr>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">[!UICONTROL Upload] option</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">Content Hub home page > [!UICONTROL Add approved assets] dialog box</td>
+  </tr>
+  <tr>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">Pane showing selected assets count</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">Content Hub home page > Select asset card</td>
+  </tr>
+  <tr>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">Hovering/selecting a rendition</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">Content Hub home page > Click asset thumbnail > [!UICONTROL Download] panel</td>
+  </tr>
+  <tr>
+    <td rowspan="2" style="padding: 12px; border: 1px solid #d0d0d0; background-color: #DEB887;">Secondary</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #FFF8DC;">Input fields in dialog boxes (excluding Add approved assets)</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">Content Hub home page > Any dialog box (except Add approved assets)</td>
+  </tr>
+  <tr>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #FFF8DC;">[!UICONTROL Download], [!UICONTROL Generate share link], [!UICONTROL Add to collection]</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">Content Hub home page > Select asset card > Open relevant dialog</td>
+  </tr>
+  <tr>
+    <td rowspan="6" style="padding: 12px; border: 1px solid #d0d0d0; background-color: #E6EEF4; font-weight: bold;">Configuration page</td>
+    <td rowspan="3" style="padding: 12px; border: 1px solid #d0d0d0; background-color: #B0C4DE;">Primary</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">Selecting a row in configuration tables</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">Content Hub home page > [!UICONTROL Configuration] > Select table row</td>
+  </tr>
+  <tr>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">Toggle switches</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">Content Hub home page > [!UICONTROL Configuration] > Toggle switch</td>
+  </tr>
+  <tr>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">[!UICONTROL Confirm] option in Edit dialogs</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">Content Hub home page > [!UICONTROL Configuration] > Edit dialog</td>
+  </tr>
+  <tr>
+    <td rowspan="3" style="padding: 12px; border: 1px solid #d0d0d0; background-color: #DEB887;">Secondary</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #FFF8DC;">All configuration options ([!UICONTROL Import], [!UICONTROL Filters], etc.)</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">Content Hub home page > [!UICONTROL Configuration]</td>
+  </tr>
+  <tr>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #FFF8DC;">Add filters/link/metadata options</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">Content Hub home page > [!UICONTROL Configuration] > Relevant page</td>
+  </tr>
+  <tr>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #FFF8DC;">Input fields in Add filters/link/metadata dialog boxes</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">Content Hub home page > [!UICONTROL Configuration] > Open dialog box</td>
+  </tr>
 </table>
 
+## Color Application Guide
 
----
+The following flowchart illustrates where primary and secondary colors are applied in the Content Hub interface:
 
-I'll help you create a clear and organized table that shows where primary and secondary colors are applied in the Content Hub interface. I'll create this using markdown table format.
+```mermaid
+graph TD
+    A[Content Hub Interface] --> B[Home Page]
+    A --> C[Configuration Page]
+    
+    B --> D[Primary Color Elements]
+    B --> E[Secondary Color Elements]
+    
+    C --> F[Primary Color Elements]
+    C --> G[Secondary Color Elements]
+    
+    D --> |Search & Selection| H[Search bar & border<br>Checkboxes<br>Toggle switches]
+    D --> |Asset Management| I[Add assets option<br>Create collection<br>Selected asset cards]
+    D --> |Actions| J[Upload option<br>Asset count pane<br>Rendition selection]
+    
+    E --> |Dialog Elements| K[Input fields<br>Download options<br>Share options]
+    
+    F --> |Interactive Elements| L[Selected table rows<br>Toggle switches<br>Confirm buttons]
+    
+    G --> |Configuration Options| M[Import, Filters, Search<br>Asset details, Branding<br>Input fields in dialogs]
 
-| Location | Primary Color | Secondary Color |
-|----------|--------------|-----------------|
-| **Home Page** | | |
-| Search Bar | * Magnifying glass icon<br>* Border color when selected | - |
-| Selection Elements | * Checkboxes after selection<br>* Toggle switches<br>* Date input fields | - |
-| Asset Management | * "Add assets" on All Assets page<br>* "Create collection" on Collections page<br>* Selected asset cards on All Assets page | * Input fields in dialog boxes (except Add approved assets)<br>* Download, Generate share link, and Add to collection options |
-| Collection Management | * Selected collection tiles in Add asset/Add to collection dialogs<br>* Selected assets count pane | - |
-| Upload/Download | * Upload option in Add approved assets dialog<br>* Hovering/selecting rendition in Download panel | - |
-| **Configuration Page** | | |
-| Navigation & Options | * Selected table rows<br>* Toggle switches across all pages<br>* "Confirm" option in Edit dialog boxes | * All configuration options (Import, Filters, Asset details, etc.)<br>* Add filters, Add link, Add metadata options |
-| Input Elements | - | * Input fields in Add metadata dialog<br>* Input fields in Add link dialog<br>* Input fields in Add filters dialog |
-| Configuration Options | - | * Import<br>* Filters<br>* Asset details<br>* Asset Card<br>* Search<br>* Branding<br>* Expired Assets<br>* Renditions<br>* Custom Links |
+    style A fill:#4682B4,color:#fff
+    style B fill:#E6EEF4,color:#000
+    style C fill:#E6EEF4,color:#000
+    style D fill:#B0C4DE,color:#000
+    style E fill:#DEB887,color:#000
+    style F fill:#B0C4DE,color:#000
+    style G fill:#DEB887,color:#000
+    style H fill:#F0F8FF,color:#000
+    style I fill:#F0F8FF,color:#000
+    style J fill:#F0F8FF,color:#000
+    style K fill:#FFF8DC,color:#000
+    style L fill:#F0F8FF,color:#000
+    style M fill:#FFF8DC,color:#000
+```
 
-This table organizes the color applications by page and functional area, making it easier to understand where each color is used. The primary color is generally used for interactive elements and selection states, while the secondary color is used for configuration options and input fields.
+### Quick Navigation Guide:
+
+**Primary Color Elements:**
+- **Home Page:**
+  - Search and selection features
+  - Asset management options
+  - Action buttons and indicators
+- **Configuration Page:**
+  - Selected rows in tables
+  - Toggle switches
+  - Confirmation buttons
+
+**Secondary Color Elements:**
+- **Home Page:**
+  - Dialog box input fields
+  - Download and share options
+- **Configuration Page:**
+  - All configuration menu options
+  - Input fields in configuration dialogs
+
+
