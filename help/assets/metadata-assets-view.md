@@ -251,7 +251,7 @@ Instead of relying on manual input, AI automatically assigns descriptive tags to
 
   ![Enhanced smart tags](assets/enhanced-smart-tags.png)
 
-### Using AI-Generated smart tags {#using-ai-generated-smart-tags}
+### Using AI-Generated Smart Tags {#using-ai-generated-smart-tags}
 
 <!--[!NOTE]
 >
