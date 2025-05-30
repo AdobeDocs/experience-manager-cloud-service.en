@@ -91,10 +91,9 @@ Primary color apply to the following places on the [!DNL Content Hub] [!UICONTRO
     </tr>
   </thead>
   <tbody>
-    <!-- Content Hub home page - Primary -->
     <tr>
       <td rowspan="13" align="center">Content Hub home page</td>
-      <td rowspan="10" align="center">Primary</td>
+      <td rowspan="13" align="center">Primary</td>
       <td>Magnifying glass icon in search bar</td>
       <td>Content Hub home page > Search bar</td>
     </tr>
@@ -134,22 +133,18 @@ Primary color apply to the following places on the [!DNL Content Hub] [!UICONTRO
       <td>Pane showing selected assets count</td>
       <td>Content Hub home page > Select asset card</td>
     </tr>
-    <!-- Content Hub home page - Secondary -->
     <tr>
-      <td rowspan="3" align="center">Secondary</td>
-      <td>Input fields in dialog boxes (excluding Add approved assets)</td>
+      <td>Hovering/selecting a rendition</td>
+      <td>Content Hub home page > Click asset thumbnail > [!UICONTROL Download] panel</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Input fields in dialog boxes (excluding Add approved assets)</td>
       <td>Content Hub home page > Any dialog box (except Add approved assets)</td>
     </tr>
     <tr>
       <td>[!UICONTROL Download], [!UICONTROL Generate share link], [!UICONTROL Add to collection]</td>
       <td>Content Hub home page > Select asset card > Open relevant dialog</td>
     </tr>
-    <tr>
-      <td>Hovering/selecting a rendition</td>
-      <td>Content Hub home page > Click asset thumbnail > [!UICONTROL Download] panel</td>
-    </tr>
-
-    <!-- Configuration page - Primary -->
     <tr>
       <td rowspan="6" align="center">Configuration page</td>
       <td rowspan="3" align="center">Primary</td>
@@ -164,8 +159,6 @@ Primary color apply to the following places on the [!DNL Content Hub] [!UICONTRO
       <td>[!UICONTROL Confirm] option in Edit dialogs</td>
       <td>Content Hub home page > [!UICONTROL Configuration] > Edit dialog</td>
     </tr>
-
-    <!-- Configuration page - Secondary -->
     <tr>
       <td rowspan="3" align="center">Secondary</td>
       <td>All configuration options</td>
@@ -181,3 +174,23 @@ Primary color apply to the following places on the [!DNL Content Hub] [!UICONTRO
     </tr>
   </tbody>
 </table>
+
+
+---
+
+I'll help you create a clear and organized table that shows where primary and secondary colors are applied in the Content Hub interface. I'll create this using markdown table format.
+
+| Location | Primary Color | Secondary Color |
+|----------|--------------|-----------------|
+| **Home Page** | | |
+| Search Bar | * Magnifying glass icon<br>* Border color when selected | - |
+| Selection Elements | * Checkboxes after selection<br>* Toggle switches<br>* Date input fields | - |
+| Asset Management | * "Add assets" on All Assets page<br>* "Create collection" on Collections page<br>* Selected asset cards on All Assets page | * Input fields in dialog boxes (except Add approved assets)<br>* Download, Generate share link, and Add to collection options |
+| Collection Management | * Selected collection tiles in Add asset/Add to collection dialogs<br>* Selected assets count pane | - |
+| Upload/Download | * Upload option in Add approved assets dialog<br>* Hovering/selecting rendition in Download panel | - |
+| **Configuration Page** | | |
+| Navigation & Options | * Selected table rows<br>* Toggle switches across all pages<br>* "Confirm" option in Edit dialog boxes | * All configuration options (Import, Filters, Asset details, etc.)<br>* Add filters, Add link, Add metadata options |
+| Input Elements | - | * Input fields in Add metadata dialog<br>* Input fields in Add link dialog<br>* Input fields in Add filters dialog |
+| Configuration Options | - | * Import<br>* Filters<br>* Asset details<br>* Asset Card<br>* Search<br>* Branding<br>* Expired Assets<br>* Renditions<br>* Custom Links |
+
+This table organizes the color applications by page and functional area, making it easier to understand where each color is used. The primary color is generally used for interactive elements and selection states, while the secondary color is used for configuration options and input fields.
