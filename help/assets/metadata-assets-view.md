@@ -251,7 +251,7 @@ Instead of relying on manual input, AI automatically assigns descriptive tags to
 
   ![Enhanced smart tags](assets/enhanced-smart-tags.png)
 
-### Using enhanced smart tags {#using-enhanced-smart-tags}
+### Using AI-Generated smart tags {#using-ai-generated-smart-tags}
 
 <!--[!NOTE]
 >
@@ -260,13 +260,13 @@ Instead of relying on manual input, AI automatically assigns descriptive tags to
 
 To use the enhanced smart tags feature, execute the following steps:
 
-1. In the [!DNL Experience Manager] interface, go to the desired folder and click **[!UICONTROL Add Assets]**. <!--Alternatively, to update enhanced smart tags in an existing content, click **[!UICONTROL reprocess]**.--> The compatible image file formats are `png`, `jpg`, `jpeg`, `psd`, `tiff`, `gif`, `webp`, `crw`,  `cr2`, and `bmp`.
+1. In the [!DNL Experience Manager] interface, go to the desired folder and click **[!UICONTROL Add Assets]**. <!--Alternatively, to update enhanced smart tags in an existing content, click **[!UICONTROL reprocess]**.--> The compatible image file formats are `png`, `jpg`, `jpeg`,`psd`, `tiff`, `gif`, `webp`, `crw`, `cr2`, `3fr`, `nef`, `arw`, and `bmp`.
 
 1. Wait until the newly uploaded asset is processed. Once done, go to asset details.
 
-1. Go to **[!UICONTROL AI-Generated]** tab. If [!DNL Experience Manager] version is incompatible or not updated, then this tab is not visible. The following fields are there:
+1. Go to **[!UICONTROL AI-Generated]** tab. If [!DNL Experience Manager] version is incompatible or not updated, then this tab is not visible. The minimum AEM release version required is `20626`. The following fields are there:
 
-    * **[!UICONTROL Generated title]:** The title provides a clear and concise headline that captures the core idea of an uploaded asset, making it easy to understand at a glance. When adding an asset, if you provide a title, it will be displayed in the asset details pane. If left blank, an AI-generated title will be assigned automatically.
+    * **[!UICONTROL Generated title]:** The title provides a clear and concise headline that captures the core idea of an uploaded asset, making it easy to understand at a glance. When adding an asset, if you provide a title (in `dc:title`), it will be displayed in the assets browse view. If left blank, an AI-generated title will be assigned automatically.
     * **[!UICONTROL Generated description]:** The description gives a brief yet informative summary of what the asset is about, helping users and search module to quickly grasp its relevance.
     * **[!UICONTROL Generated keywords]:** The keywords are targeted terms that represent the main themes of an asset, aiding in tagging and content filtering.
 
