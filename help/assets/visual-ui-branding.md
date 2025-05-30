@@ -14,7 +14,7 @@ On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]
 
 # Add title and body text to your banner and change the text color{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
 
-On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** page, add title and body texts to your banner from the respective fileds in the **[!UICONTROL Banner]** section. 
+Add title and body texts to your banner using the respective fileds in the **[!UICONTROL Banner]** section available on the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** page. 
 Click the sqare box next to the **[!UICONTROL Banner text color]** to select a text color from the color picker for your banner text  or specify the color's hex code in the field next to the color picker sqaure box.
 
 # Change the primary and secondary color{#Change-the-primary-and-secondary-color}
@@ -33,15 +33,15 @@ Primary color apply to the following places on the [!DNL Content Hub] home page:
 * Toggle switches ![](/help/assets/assets/toogle.svg) and date input fields.
 * UI options such as ![](/help/assets/assets/add-image.svg) **[!UICONTROL Add assets]** on the **[!UICONTROL All Assets]** page and ![](/help/assets/assets/CollectionAdd.svg) **[!UICONTROL Create collection]** on the ![](/help/assets/assets/Collection.svg) **[!UICONTROL Collections]** page.
 * selecting Asset cards from the **[!UICONTROL All Assets]** page. 
-* Selecting collection tiles from the **[!UICONTROL Add aaset to collection]** dialog box or **[!UICONTROL Add to collection]** panel. **[!UICONTROL Add aaset to collection]** dialog box displays when you select ![](/help/assets/assets/add-circle.svg) from the asset card or select ![](/help/assets/assets/add-circle.svg) **[!UICONTROL Add to collection]** after selecting one or more asset card. **[!UICONTROL Add to collection]** panel displays when you click asset thumbnail on an asset card and select ![](/help/assets/assets/add-circle.svg) from the menu options in the right pane.
-* The **[!UICONTROL Upload]** option in the **[!UICONTROL Add approved assets]** dialog box. **[!UICONTROL Add approved assets]** dialog box displays when you select ![](/help/assets/assets/add-image.svg) **[!UICONTROL Add assets]** on the **[!UICONTROL All Assets]** page.
+* Selecting collection tiles from the **[!UICONTROL Add aaset to collection]** dialog box or **[!UICONTROL Add to collection]** panel. **[!UICONTROL Add aaset to collection]** dialog box displays when you select ![](/help/assets/assets/add-circle.svg) available on the asset card or select ![](/help/assets/assets/add-circle.svg) **[!UICONTROL Add to collection]** after selecting one or more asset cards. **[!UICONTROL Add to collection]** panel displays when you click asset thumbnail on an asset card and select ![](/help/assets/assets/add-circle.svg) from the menu options in the right pane.
+* The **[!UICONTROL Upload]** option in the **[!UICONTROL Add approved assets]** dialog box. **[!UICONTROL Add approved assets]** dialog box displays when you select ![](/help/assets/assets/add-image.svg) **[!UICONTROL Add assets]** available on the **[!UICONTROL All Assets]** page.
 * The pane displaying the count of selected assets after selecting an asset card from the **[!UICONTROL All Assets]** or ![](/help/assets/assets/Collection.svg) **[!UICONTROL Collections]** page.
 * Hovering over or selecting a rendition from the **[!UICONTROL Download]** panel. **[!UICONTROL Download]** panel displays when you click asset thumbnail on an asset card and select ![](/help/assets/assets/download-icon.svg) from the menu options in the right pane. 
 
 Secondary color apply to the following places on the [!DNL Content Hub] home page: 
 
-* Input fields in dialog boxes, excluding those in the **[!UICONTROL Add approved assets]** dialog box. **[!UICONTROL Add approved assets]** dialog box displays on clicking ![](/help/assets/assets/add-image.svg) **[!UICONTROL Add assets]** on the **[!UICONTROL All Assets]** page.
-* UI options such as **[!UICONTROL Download]**, **[!UICONTROL Generate share link]**, and ![](/help/assets/assets/add-circle.svg) **[!UICONTROL Add to collection]** in various dialog boxes, excluding the **[!UICONTROL Upload]** option in the **[!UICONTROL Add approved assets]** dialog box.
+* Input fields in dialog boxes, excluding those in the **[!UICONTROL Add approved assets]** dialog box. **[!UICONTROL Add approved assets]** dialog box displays on clicking ![](/help/assets/assets/add-image.svg) **[!UICONTROL Add assets]** available on the **[!UICONTROL All Assets]** page.
+* Options such as **[!UICONTROL Download]**, **[!UICONTROL Generate share link]**, and ![](/help/assets/assets/add-circle.svg) **[!UICONTROL Add to collection]** available in various dialog boxes, excluding the **[!UICONTROL Upload]** option in the **[!UICONTROL Add approved assets]** dialog box.
 
 ## Apply primary and secondary color on the [!DNL Content Hub] [!UICONTROL configuration] page{#primary-and-secondary-color-on-the-content-hub-configuration-page}
 
