@@ -3,8 +3,8 @@ title: Auto-tag assets with [!DNL Adobe Sensei] smart service
 description: Tag assets with an artificially intelligent service that applies contextual and descriptive business tags.
 feature: Smart Tags,Tagging
 role: Admin,User
+exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 ---
-
 # Smart Tags for AEM Assets {#using-smart-tags}
 
 Organizations possess numerous digital assets, and this number continues to grow rapidly. Searching for a specific asset amidst such a vast amount of data poses a significant challenge. To address this, `metadata` and `tags` are employed to enhance the searchability of digital assets. Organizations use taxonomy-controlled vocabularies in asset metadata. These typically consist of keyword lists that employees, partners, and customers commonly use to refer to and locate digital assets.
