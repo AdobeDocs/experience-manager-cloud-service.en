@@ -295,6 +295,6 @@ These models are not always perfect at identifying tags. The current version of 
 
 +++**I do not want to use Smart Tagging anymore.**
 
-You can [opt out Smart Tagging](opt-out-smart-tagging) anytime you want to discontinue.
+You can [opt out Smart Tagging](#opt-out-smart-tagging) anytime you want to discontinue.
 
 +++
