@@ -23,14 +23,24 @@ On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]
 
 ```mermaid
 graph TD
+    A[Content Hub Interface] --> B[Content Hub home page]
     A --> C[Configuration Page]
     
+    B --> D[Primary color elements]
+    B --> E[Secondary color elements]
     
+    C --> F[Primary color elements]
+    C --> G[Secondary color elements]
     
+    D --> |Search & Selection| H[Search bar,<br>Checkboxes,<br>Toggle switches &<br>Pane displaying asset count on selecting asset card]
+    D --> |Asset Management| I[Add assets option on All Assets page &<br>Create collection option on Collections page<br>]
+    D --> |Actions| J[Upload option,<br>Asset card selection &<br>Rendition selection]
     
     E --> |Dialog Elements| K[Input fields<br>Download options<br>Share options]
     
+    F --> |Interactive Elements| L[Selected table rows<br>Toggle switches<br>Confirm options]
     
+    G --> |Configuration Options| M[Import, Filters, Search,<br>Asset details, Branding<br>Input fields in dialog boxes]
 
     style A fill:#4682B4,color:#fff
     style B fill:#E6EEF4,color:#000
