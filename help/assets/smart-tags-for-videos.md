@@ -1,9 +1,8 @@
 ---
 title: Smart tag your video assets
 description: Experience Manager automatically adds contextual and descriptive Smart Tags to videos using [!DNL Adobe Sensei].
-feature: Smart Tags
-role: Admin, User
-exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
+feature: Smart Tags,Tagging
+role: Admin,User
 ---
 # Smart tag your video assets {#video-smart-tags}
 
@@ -50,7 +49,7 @@ Video tagging is enabled by default in [!DNL Adobe Experience Manager] as a [!DN
 
 ## Smart tagging videos on upload {#smart-tag-assets-on-ingestion}
 
-When you [upload video assets](add-assets.md#upload-assets) to [!DNL Adobe Experience Manager] as a [!DNL Cloud Service], the videos are processed. Once the processing is complete, see the [!UICONTROL Basic] tab of asset [!UICONTROL Properties] page. Smart tags are automatically added to the video under [!UICONTROL Smart Tags]. Asset microservices uses [!DNL Adobe Sensei] to create these smart tags.
+When you [upload video assets](add-assets.md#upload-assets) to [!DNL Adobe Experience Manager] as a [!DNL Cloud Service], the videos are processed. Once the processing is complete, see the [!UICONTROL Basic] tab of asset [!UICONTROL Properties] page. Smart tags are automatically added to the video under [!UICONTROL Smart Tags]. Asset microservices leverages [!DNL Adobe Sensei] to create these smart tags.
 
 ![Smart Tags are added to videos and seen in Basic tab of asset Properties](assets/smart-tags-added-to-videos.png)
 
@@ -98,7 +97,7 @@ Your search results are a combination of video assets with searched keywords in 
 
 ## Moderate video smart tags {#moderate-video-smart-tags}
 
-[!DNL Adobe Experience Manager] lets you curate the smart tags to:
+[!DNL Adobe Experience Manager] allows you to curate the smart tags to:
 
 * remove inaccurate tags assigned to your brand videos.
 
@@ -164,22 +163,6 @@ To add the confidence score OSGI configuration to the project deployed to [!DNL 
 * Only the videos smaller than 300 MB in file size are auto-tagged. The [!DNL Adobe Sensei] service skips video files that are larger in size.
 
 * Only the videos in the file formats and supported codecs mentioned in [Smart Tags](/help/assets/smart-tags.md#smart-tags-supported-file-formats) are tagged.
-
-**See also**
-
-* [Translate Assets](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [Assets supported file formats](file-format-support.md)
-* [Search assets](search-assets.md)
-* [Connected assets](use-assets-across-connected-assets-instances.md)
-* [Asset reports](asset-reports.md)
-* [Metadata schemas](metadata-schemas.md)
-* [Download assets](download-assets-from-aem.md)
-* [Manage metadata](manage-metadata.md)
-* [Search facets](search-facets.md)
-* [Manage collections](manage-collections.md)
-* [Bulk metadata import](metadata-import-export.md)
-* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
