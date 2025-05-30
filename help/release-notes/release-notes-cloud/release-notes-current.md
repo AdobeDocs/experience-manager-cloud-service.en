@@ -124,7 +124,7 @@ Integration capabilities between Forms and AEP are now available for early adopt
 
 ###  Updated Deprecation Process {#updated-deprecation-process}
 
-Adobe regularly reviews features, libraries, APIs, and configurations to ensure they meet standards for performance, security, and value. Occasionally, capabilities are marked for deprecation, and usage must stop by the specified removal date. Until references to deprecated items are removed, Adobe will remind customers by sending email notifications, pausing Cloud Manager builds, and eventually failing those builds and delaying AEM upgrades, which may impact which implies that guarantees cannot be met around security, performance, reliability, and availability.
+Adobe regularly reviews features, libraries, APIs, and configurations to ensure they meet standards for performance, security, and value. When capabilities no longer meet these standards, they are marked for deprecation and usage must stop by a specified removal date. Leading up to this date, Adobe will remind customers with email notifications and actions that need to be taken in Cloud Manager before proceeding with or deploying new builds. Failure to take the necessary action may result in an inability to upgrade to new versions of AEM leading to potential impacts around security, performance, reliability, and availability.
 
 See the [deprecation article](/help/release-notes/deprecated-removed-features.md) for further information.
 
