@@ -75,6 +75,8 @@ Before setting up the AEP Connector in AEM Forms, ensure you have completed the 
     * Client Secret (obtained from developer console)
     * OAuth URL (There is a default URL but it can be obtained from the developer console also) 
 
+    ![AEP Cloud Configuration](/help/forms/assets/aep-cloud-configuration.png)
+
 1. Click **Connect** to establish the connection. After establishing the connection, configure these additional settings:
     * Base URL: platform.adobe.io (This is a default URL and can be obtained from the developer console also, the oauth and platform URLs are defaulted to prod URLs. In case, you are required to connect to stage - stage URLs should be used.)
     * Organization ID (This is obtained from the developer console along with client ID/secret)
@@ -88,13 +90,18 @@ Before setting up the AEP Connector in AEM Forms, ensure you have completed the 
 1. In the **source** tab, select a template
 1. In the **Data** tab, select the **Adobe Experience Platform** option.
 
-1. In the properties pane, select your cloud configuration. The system loads all available schemas from Adobe Experience Platform
+1. In the properties pane, select your cloud configuration. 
+
+    ![](/help/forms/assets/xdm-schema-integration.png)
+
+    The system loads all available schemas from Adobe Experience Platform
 
     >[!NOTE]
     >
     >
     > * Only profile-enabled and non-system-generated schemas are fetched.
     > * Initial schema loading may take some time on first-time setup.
+
 1. Select the appropriate/required fields of the schema. (See video for detailed steps)
 1. In the submission tab:
     * Select the **Submit to Adobe Experience Platform** submit action
