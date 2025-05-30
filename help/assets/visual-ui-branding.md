@@ -110,11 +110,11 @@ See the following table to know the places where both these colors apply:
   </tr>
   <tr>
     <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">Selected asset cards</td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > **[!UICONTROL All Assets]** > Select asset card</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > <b>[!UICONTROL All Assets]</b>  > Select asset card</td>
   </tr>
   <tr>
     <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">Selected collection tiles</td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > **[!UICONTROL Add asset to collection]** dialog</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > <b>[!UICONTROL Add asset to collection]</b>  dialog</td>
   </tr>
   <tr>
     <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;"><b>[!UICONTROL Upload]</b> option</td>
