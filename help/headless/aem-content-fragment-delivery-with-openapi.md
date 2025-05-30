@@ -32,10 +32,11 @@ For full documentation see [AEM Content Fragment Delivery with OpenAPI](https://
 
 >[!IMPORTANT]
 >
->To enable Content Fragment Delivery with OpenAPI on AEM as a Cloud Service you should ensure that it is not already enabled, then submit an Adobe Support ticket with the title **Enable Content Fragment Delivery with OpenAPI** and specifying:
+>To enable Content Fragment Delivery with OpenAPI on AEM as a Cloud Service please ensure that it is not already enabled, then submit an Adobe Support ticket with the title **Enable Content Fragment Delivery with OpenAPI** and specifying:
+>
 >* the Cloud Service program and environment ID(s)
 >* details of the use-case you want to solve with the Content Fragment Delivery OpenAPI
->* the customer contacts who will be involved in the integration project
+>* details of all your contacts that Adobe should respond to, and keep informed about the request, and project (if required)
 >* details of the [HTTP allowed origins](#cors) that will trigger requests to the Content Fragment Delivery API 
 
 ## Caching {#caching}
@@ -53,24 +54,17 @@ Responses are then cached, based on predefined caching headers (cannot be config
 * Stale content can be served, by error, for up to 1 day 
   * `stale-on-error`=`86400`
 
-AEM also comes with active CDN cache invalidation. This means that whenever content is updated, or published, the corresponding JSON OpenAPI responses are automatically invalidated, via a soft purge request to Fastly. This allows you to see changes reflected in the JSON output, before the actual CDN cache age (`s-maxage`) is reached.
+Content Fragment Delivery with OpenAPI supports active CDN cache invalidation. This means that whenever content is updated, or published, the corresponding JSON OpenAPI responses are automatically invalidated, via a soft purge request to Fastly. This allows you to see changes reflected in the JSON output, before the actual CDN cache age (`s-maxage`) is reached.
 
 ## Availability {#availability}
 
-The Content Fragment Delivery with OpenAPI is available on Preview and Publish tiers. The OpenAPI delivers Content Fragments in JSON for delivery purposes, for both previewing and live delivery use-cases.
+The Content Fragment Delivery with OpenAPI is available on Preview and Publish tiers. The OpenAPI delivers Content Fragments in JSON format, for both preview and live delivery.
 
-To simulate delivery of content from the AEM author directly, the Content Fragment Delivery with OpenAPI can be configured to enable auto-synchronizing of Content Fragments from the AEM author environment to the Preview tier. 
+For preview the Content Fragment Delivery with OpenAPI can:
 
->[!NOTE]
->
->The auto-synchronizing from AEM Author to Preview is turned off by default. Contact your Support representative if you want it to be enabled.
->
->Whenever the auto-sync capability is enabled, we recommend making sure that [proper IP allowlisting rules are in place to protect content on the Preview tier](/help/sites-cloud/authoring/sites-console/previewing-content.md).
-
-When auto-syncing is not enabled the Content Fragment authors:
-
-* have control over how and when Content Fragments are available on the Preview service
-* rely on the Publish to Preview operation to manually synchronize Content Fragments to be previewed.
+* publish to Preview
+* enable access to preview with IP allow list
+* get the preview URL
 
 ## CORS {#cors}
 
@@ -80,7 +74,7 @@ When auto-syncing is not enabled the Content Fragment authors:
 [CORS allowed origins](/help/headless/deployment/cross-origin-resource-sharing.md) allow customers to define the origins that can call the API. The origins are defined in AEM as an OSGi configuration.
 -->
 
-[CORS allowed origins](/help/headless/deployment/cross-origin-resource-sharing.md) define the origins that can call the API. Allowed origins are managed manually by Adobe, but need information from the customer. For this, Adobe requires customers to share the allowed origins that must be configured. This information should be provided as part of the initial request (Adobe Support ticket) to enable the API.
+[CORS allowed origins](/help/headless/deployment/cross-origin-resource-sharing.md) define the origins that can call the API. Currently, allowed origins must be configured by Adobe. Please provide information about origins that should be allowed, as part of your initial request (Adobe Support ticket) to enable the API.
 
 The CORS allowed origins defined on the dispatcher configuration side, specifically for GraphQL, are not taken into consideration by this API.
 
