@@ -75,7 +75,9 @@ See the following table to know the places where both these colors apply:
   <tr>
     <td rowspan="13" style="padding: 12px; border: 1px solid #d0d0d0; background-color: #E6EEF4; font-weight: bold;">[!DNL Content Hub] home page</td>
     <td rowspan="11" style="padding: 12px; border: 1px solid #d0d0d0; background-color: #B0C4DE;">Primary</td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">![](/help/assets/assets/Magnify.svg) Magnifying glass icon in search bar</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">
+       <img alt="Magnifying glass icon" src="/help/assets/assets/Magnify.svg" /> Magnifying glass icon in search bar
+    </td>
     <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > Search bar</td>
   </tr>
   <tr>
@@ -83,20 +85,28 @@ See the following table to know the places where both these colors apply:
     <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > Click inside Search bar</td>
   </tr>
   <tr>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">![](/help/assets/assets/SelectBox.svg) Selection checkboxes after selection</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">
+       <img alt="Selection checkboxes" src="/help/assets/assets/SelectBox.svg" /> Selection checkboxes after selection
+    </td>
     <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > Select asset cards</td>
   </tr>
   <tr>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">![](/help/assets/assets/toogle.svg) Toggle switches and date input fields</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">
+       <img alt="Toggle switches" src="/help/assets/assets/toogle.svg" /> Toggle switches and date input fields
+    </td>
     <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > Filters or relevant forms</td>
   </tr>
   <tr>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">![](/help/assets/assets/add-image.svg) **[!UICONTROL Add assets]** option</td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > **[!UICONTROL All Assets]**</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">
+       <img alt="Add assets" src="/help/assets/assets/add-image.svg" /> <b>[!UICONTROL Add assets]</b> option
+    </td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > <b>[!UICONTROL All Assets]</b></td>
   </tr>
   <tr>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">![](/help/assets/assets/CollectionAdd.svg) **[!UICONTROL Create collection]** option</td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > **[!UICONTROL Collections]**</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">
+       <img alt="Create collection" src="/help/assets/assets/CollectionAdd.svg" /> <b>[!UICONTROL Create collection]</b> option
+    </td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > <b>[!UICONTROL Collections]</b></td>
   </tr>
   <tr>
     <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">Selected asset cards</td>
@@ -107,16 +117,18 @@ See the following table to know the places where both these colors apply:
     <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > **[!UICONTROL Add asset to collection]** dialog</td>
   </tr>
   <tr>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">**[!UICONTROL Upload]** option</td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > **[!UICONTROL Add approved assets]** dialog</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;"><b>[!UICONTROL Upload]</b> option</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > <b>[!UICONTROL Add approved assets]</b> dialog</td>
   </tr>
   <tr>
     <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">Selected assets count pane</td>
     <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > Select asset card</td>
   </tr>
   <tr>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">![](/help/assets/assets/download-icon.svg) Hovering/selecting renditions</td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > **[!UICONTROL Download]** panel</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">
+       <img alt="Download icon" src="/help/assets/assets/download-icon.svg" /> Hovering/selecting renditions
+    </td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > <b>[!UICONTROL Download]</b> panel</td>
   </tr>
   <tr>
     <td rowspan="2" style="padding: 12px; border: 1px solid #d0d0d0; background-color: #DEB887;">Secondary</td>
@@ -124,35 +136,47 @@ See the following table to know the places where both these colors apply:
     <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > Any dialog box</td>
   </tr>
   <tr>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #FFF8DC;">**[!UICONTROL Download]**, **[!UICONTROL Generate share link]**, ![](/help/assets/assets/add-circle.svg) **[!UICONTROL Add to collection]**</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #FFF8DC;"><b>[!UICONTROL Download]</b>, <b>[!UICONTROL Generate share link]</b>, 
+       <img alt="Add to collection" src="/help/assets/assets/add-circle.svg" /> <b>[!UICONTROL Add to collection]</b>
+    </td>
     <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > Dialog options</td>
   </tr>
   <tr>
     <td rowspan="6" style="padding: 12px; border: 1px solid #d0d0d0; background-color: #E6EEF4; font-weight: bold;">[!DNL Content Hub] [!UICONTROL configuration] page</td>
     <td rowspan="3" style="padding: 12px; border: 1px solid #d0d0d0; background-color: #B0C4DE;">Primary</td>
     <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">Selected table rows</td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] > **[!UICONTROL Configuration]** > Select row</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] > <b>[!UICONTROL Configuration]</b> > Select row</td>
   </tr>
   <tr>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">![](/help/assets/assets/toogle.svg) Toggle switches</td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] > **[!UICONTROL Configuration]** > Toggle switch</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">
+       <img alt="Toggle switch" src="/help/assets/assets/toogle.svg" /> Toggle switches
+    </td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] > <b>[!UICONTROL Configuration]</b> > Toggle switch</td>
   </tr>
   <tr>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">**[!UICONTROL Confirm]** option</td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] > **[!UICONTROL Configuration]** > Edit dialog</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;"><b>[!UICONTROL Confirm]</b> option</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] > <b>[!UICONTROL Configuration]</b> > Edit dialog</td>
   </tr>
   <tr>
     <td rowspan="3" style="padding: 12px; border: 1px solid #d0d0d0; background-color: #DEB887;">Secondary</td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #FFF8DC;">![](/help/assets/assets/import.svg) **[!UICONTROL Import]**, ![](/help/assets/assets/filter.svg) **[!UICONTROL Filters]**, ![](/help/assets/assets/info-icon.svg) **[!UICONTROL Asset details]**</td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] > **[!UICONTROL Configuration]**</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #FFF8DC;">
+       <img alt="Import" src="/help/assets/assets/import.svg" /> <b>[!UICONTROL Import]</b>, 
+       <img alt="Filters" src="/help/assets/assets/filter.svg" /> <b>[!UICONTROL Filters]</b>, 
+       <img alt="Asset details" src="/help/assets/assets/info-icon.svg" /> <b>[!UICONTROL Asset details]</b>
+    </td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] > <b>[!UICONTROL Configuration]</b></td>
   </tr>
   <tr>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #FFF8DC;">**[!UICONTROL Add filters]**, **[!UICONTROL Add link]**, **[!UICONTROL Add metadata]**</td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] > **[!UICONTROL Configuration]** > Respective pages</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #FFF8DC;"><b>[!UICONTROL Add filters]</b> on 
+       <img alt="Filters" src="/help/assets/assets/filter.svg" /> <b>[!UICONTROL Filters]</b> page, <b>[!UICONTROL Add link]</b> on 
+       <img alt="Custom Links" src="/help/assets/assets/link.svg" /> <b>[!UICONTROL Custom Links]</b> page and <b>[!UICONTROL Add metadata]</b> on 
+       <img alt="Import" src="/help/assets/assets/import.svg" />
+    </td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] > <b>[!UICONTROL Configuration]</b> > Respective pages</td>
   </tr>
   <tr>
     <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #FFF8DC;">Input fields in configuration dialogs</td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] > **[!UICONTROL Configuration]** > Dialog boxes</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] > <b>[!UICONTROL Configuration]</b> > <b>[!UICONTROL Dialog boxes]</b></td>
   </tr>
 </table>
 
