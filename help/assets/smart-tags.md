@@ -277,7 +277,7 @@ These models are not always perfect at identifying tags. The current version of 
 
 +++**How may I know that tagging needs training?**
   
-  Refer to [Determining the requirement of Smart Tags training](smart-tags-training.md#smart-tag-training-requirement).
+  Refer to [Determining the requirement of Smart Tags training](#smart-tags-training.md#smart-tag-training-requirement).
 
 +++
 
