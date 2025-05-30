@@ -56,3 +56,128 @@ Primary color apply to the following places on the [!DNL Content Hub] [!UICONTRO
 * Selecting a row from the table on the configuration pages.
 * Toggle color across all configuration pages.
 * The **[!UICONTROL Confirm]** option in Edit dialog boxes on all configuration pages.
+
+| Location                 | Color Type | UI Element                                                                 | Navigation Path                                                                                   |
+|--------------------------|------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| Content Hub home page    | Primary    | Magnifying glass icon in search bar                                        | Content Hub home page > Search bar                                                                |
+|                          |            | Search bar border when selected                                            | Content Hub home page > Click inside Search bar                                                   |
+|                          |            | Selection checkboxes after selection                                       | Content Hub home page > Select asset cards                                                        |
+|                          |            | Toggle switches and date input fields                                      | Content Hub home page > Filters or relevant forms                                                 |
+|                          |            | [!UICONTROL Add assets] option                                             | Content Hub home page > [!UICONTROL All Assets]                                                   |
+|                          |            | [!UICONTROL Create collection] option                                      | Content Hub home page > [!UICONTROL Collections]                                                  |
+|                          |            | Selecting asset cards                                                      | Content Hub home page > [!UICONTROL All Assets] > Select asset card                               |
+|                          |            | Selecting collection tiles                                                 | Content Hub home page > Add to collection dialog box or panel                                     |
+|                          |            | [!UICONTROL Upload] option                                                 | Content Hub home page > [!UICONTROL Add approved assets] dialog box                               |
+|                          |            | Pane showing selected assets count                                         | Content Hub home page > Select asset card                                                         |
+|                          |            | Hovering/selecting a rendition                                             | Content Hub home page > Click asset thumbnail > [!UICONTROL Download] panel                       |
+|                          | Secondary  | Input fields in dialog boxes (excluding [!UICONTROL Add approved assets])  | Content Hub home page > Any dialog box (except Add approved assets)                               |
+|                          |            | [!UICONTROL Download], [!UICONTROL Generate share link], [!UICONTROL Add to collection] | Content Hub home page > Select asset card > Open relevant dialog                    |
+| Configuration page       | Primary    | Selecting a row in configuration tables                                    | Content Hub home page > [!UICONTROL Configuration] > Select table row                             |
+|                          |            | Toggle switches                                                            | Content Hub home page > [!UICONTROL Configuration] > Toggle switch                                |
+|                          |            | [!UICONTROL Confirm] option in Edit dialogs                                | Content Hub home page > [!UICONTROL Configuration] > Edit dialog                                  |
+|                          | Secondary  | All configuration options ([!UICONTROL Import], [!UICONTROL Filters], etc.)| Content Hub home page > [!UICONTROL Configuration]                                                 |
+|                          |            | [!UICONTROL Add filters], [!UICONTROL Add link], [!UICONTROL Add metadata] | Content Hub home page > [!UICONTROL Configuration] > Relevant page                                |
+|                          |            | Input fields in Add filters/link/metadata dialog boxes                     | Content Hub home page > [!UICONTROL Configuration] > Open dialog box                              |
+
+----
+
+<table>
+  <thead>
+    <tr>
+      <th>Location</th>
+      <th>Color Type</th>
+      <th>UI Element</th>
+      <th>Navigation Path</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Content Hub home page - Primary -->
+    <tr>
+      <td rowspan="13" align="center">Content Hub home page</td>
+      <td rowspan="10" align="center">Primary</td>
+      <td>Magnifying glass icon in search bar</td>
+      <td>Content Hub home page > Search bar</td>
+    </tr>
+    <tr>
+      <td>Search bar border when selected</td>
+      <td>Content Hub home page > Click inside Search bar</td>
+    </tr>
+    <tr>
+      <td>Selection checkboxes after selection</td>
+      <td>Content Hub home page > Select asset cards</td>
+    </tr>
+    <tr>
+      <td>Toggle switches and date input fields</td>
+      <td>Content Hub home page > Filters or relevant forms</td>
+    </tr>
+    <tr>
+      <td>[!UICONTROL Add assets] option</td>
+      <td>Content Hub home page > [!UICONTROL All Assets]</td>
+    </tr>
+    <tr>
+      <td>[!UICONTROL Create collection] option</td>
+      <td>Content Hub home page > [!UICONTROL Collections]</td>
+    </tr>
+    <tr>
+      <td>Selecting asset cards</td>
+      <td>Content Hub home page > [!UICONTROL All Assets] > Select asset card</td>
+    </tr>
+    <tr>
+      <td>Selecting collection tiles</td>
+      <td>Content Hub home page > Add to collection dialog box or panel</td>
+    </tr>
+    <tr>
+      <td>[!UICONTROL Upload] option</td>
+      <td>Content Hub home page > [!UICONTROL Add approved assets] dialog box</td>
+    </tr>
+    <tr>
+      <td>Pane showing selected assets count</td>
+      <td>Content Hub home page > Select asset card</td>
+    </tr>
+    <!-- Content Hub home page - Secondary -->
+    <tr>
+      <td rowspan="3" align="center">Secondary</td>
+      <td>Input fields in dialog boxes (excluding Add approved assets)</td>
+      <td>Content Hub home page > Any dialog box (except Add approved assets)</td>
+    </tr>
+    <tr>
+      <td>[!UICONTROL Download], [!UICONTROL Generate share link], [!UICONTROL Add to collection]</td>
+      <td>Content Hub home page > Select asset card > Open relevant dialog</td>
+    </tr>
+    <tr>
+      <td>Hovering/selecting a rendition</td>
+      <td>Content Hub home page > Click asset thumbnail > [!UICONTROL Download] panel</td>
+    </tr>
+
+    <!-- Configuration page - Primary -->
+    <tr>
+      <td rowspan="6" align="center">Configuration page</td>
+      <td rowspan="3" align="center">Primary</td>
+      <td>Selecting a row in configuration tables</td>
+      <td>Content Hub home page > [!UICONTROL Configuration] > Select table row</td>
+    </tr>
+    <tr>
+      <td>Toggle switches</td>
+      <td>Content Hub home page > [!UICONTROL Configuration] > Toggle switch</td>
+    </tr>
+    <tr>
+      <td>[!UICONTROL Confirm] option in Edit dialogs</td>
+      <td>Content Hub home page > [!UICONTROL Configuration] > Edit dialog</td>
+    </tr>
+
+    <!-- Configuration page - Secondary -->
+    <tr>
+      <td rowspan="3" align="center">Secondary</td>
+      <td>All configuration options</td>
+      <td>Content Hub home page > [!UICONTROL Configuration]</td>
+    </tr>
+    <tr>
+      <td>Add filters/link/metadata options</td>
+      <td>Content Hub home page > [!UICONTROL Configuration] > Relevant page</td>
+    </tr>
+    <tr>
+      <td>Input fields in Add filters/link/metadata dialog boxes</td>
+      <td>Content Hub home page > [!UICONTROL Configuration] > Open dialog box</td>
+    </tr>
+  </tbody>
+</table>
