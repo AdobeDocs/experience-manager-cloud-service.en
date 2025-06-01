@@ -426,7 +426,7 @@ Action list:
 
 ## OSGI Configuration {#osgi-configuration}
 
-The two lists below reflect the AEM as a Cloud Service OSGi configuration surface, describing what customers can configure.
+The sections below reflect the AEM as a Cloud Service OSGi configuration surface, describing what customers can configure.
 
 1. Customer code must not configure the listed OSGi configurations.
 1. A list of OSGi configurations whose properties may be configured, but must abide by the indicated validation rules. These rules include whether declaration of the property is required, its type, and in some cases, its allowed range of values.
@@ -437,18 +437,30 @@ These rules are validated during the Cloud Manager build process. Additional rul
 
 Additional information about OSGI configuration can be found at [this location](/help/implementing/deploying/configuring-osgi.md).
 
-+++OSGi configurations that cannot be modified.
++++Deprecated OSGi properties (those that will no longer be modifiable)
 
-  * **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** (Announcement Date: 4/30/2021, Enforcement Date: 7/31/2021)
-  * **`com.day.cq.auth.impl.cug.CugSupportImpl`** (Announcement Date: 4/30/2021, Enforcement Date: 7/31/2021)
-  * **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** (Announcement Date: 4/30/2021, Enforcement Date: 7/31/2021)
-  * **`org.apache.felix.http (Factory)`** (Announcement Date: 4/30/2021, Enforcement Date: 7/31/2021)
-  * **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** (Announcement Date: 8/25/2021, Enforcement Date: 11/26/2021)
+Some properties for the following OSGi component PIDs can no longer be modified. This will be enforced in the timeframe described below.
+
+  * **`org.apache.sling.commons.log.LogManage`** (Announcement Date: 4/24/2025, Enforcement Date: 8/28/2025, but overrides ignored in June)
+  * **`org.apache.sling.commons.log.LogManager.factory.config`** (Announcement Date: 4/24/2025, Enforcement Date: 8/28/2025, but overrides ignored in June)
 +++
 
-+++OSGi configurations subject to build validation rules.
++++Unmodifiable OSGi properties
 
-  * **`org.apache.felix.eventadmin.impl.EventAdmin`** (Announcement Date: 4/30/2021, Enforcement Date: 7/31/2021)
+Properties for the following OSGi component PIDs cannot be modified, as described below.
+
+  * **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** (all properties unmodifable)
+  * **`com.day.cq.auth.impl.cug.CugSupportImpl`** (all properties unmodifable)
+  * **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** (all properties unmodifable)
+  * **`org.apache.felix.http (Factory)`** (all properties unmodifable)
+  * **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** (all properties unmodifable)
++++
+
++++OSGi property restrictions
+
+The values of some OSGi properties are restricted to the rules described below.
+
+  * **`org.apache.felix.eventadmin.impl.EventAdmin`**
   * `org.apache.felix.eventadmin.ThreadPoolSize`
     * Type: integer
     * Required Range: 2-100
@@ -464,7 +476,7 @@ Additional information about OSGI configuration can be found at [this location](
     * Required Range: Must include at least all of `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*`
   * `org.apache.felix.eventadmin.IgnoreTopic`
     * Type: array of strings
-* **`org.apache.felix.http`** (Announcement Date: 4/30/2021, Enforcement Date: 7/31/2021)
+* **`org.apache.felix.http`**
   * `org.apache.felix.http.timeout`
     * Type: integer
   * `org.apache.felix.http.session.timeout`
@@ -527,7 +539,7 @@ Additional information about OSGI configuration can be found at [this location](
     * Type: array of strings
   * `org.apache.felix.http.session.uniqueid`
     * Type: boolean
-* **`org.apache.sling.scripting.cache`** (Announcement Date: 4/30/2021, Enforcement Date: 7/31/2021)
+* **`org.apache.sling.scripting.cache`**
   * `org.apache.sling.scripting.cache.size`
     * Type: integer
     * Required Range: >= 2048
@@ -535,7 +547,7 @@ Additional information about OSGI configuration can be found at [this location](
     * Required
     * Type: array of strings
     * Required Range: must include js
-* **`com.day.cq.mailer.DefaultMailService`** (Announcement Date: 4/30/2021, Enforcement Date: 7/31/2021)
+* **`com.day.cq.mailer.DefaultMailService`**
   * `smtp.host`
     * Type: string
   * `smtp.port`
@@ -557,13 +569,11 @@ Additional information about OSGI configuration can be found at [this location](
     * Type: boolean
   * `oauth.flow`
     * Type: boolean
-* **`org.apache.sling.commons.log.LogManager.factory.config`** (Announcement Date: 11/16/21, Enforcement Date: 2/16/21)
+* **`org.apache.sling.commons.log.LogManager.factory.config`**
   * `org.apache.sling.commons.log.level`
-    * Type: enumeration
+    * Type: string
     * Required Range: INFO, DEBUG, or TRACE
   * `org.apache.sling.commons.log.names`
-    * Type: string
-  * `org.apache.sling.commons.log.file`
     * Type: string
   * `org.apache.sling.commons.log.additiv`
     * Type: boolean
@@ -571,78 +581,5 @@ Additional information about OSGI configuration can be found at [this location](
 
 ## Java runtime update to version 21 {#java-runtime-update-21}
 
-Adobe Experience Manager as a Cloud Service is transitioning to the Java 21 runtime. To ensure compatibility, updating library versions as outlined in [Runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) is essential.
+Adobe Experience Manager as a Cloud Service has transitioned to the Java 21 runtime. To ensure compatibility, updating library versions as outlined in [Runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) is essential.
 
-<!-- (OLD Removed from here to end of topic 1/16/25 as per instruction in https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3359689801) AEM as a Cloud Service will be moving to Java 21 runtime. In order to ensure compatibility, it is essential to make the following adjustments:
-
-### Runtime Requirements
-
-These adjustments are required to ensure compatibility with the Java 21 runtime. The libraries can be updated at any time as they are compatible with older versions of Java.
-
-#### Minimum version of org.objectweb.asm {#org.objectweb.asm}
-
-Update the usage of org.objectweb.asm to version 9.5 or higher to ensure support for newer JVM runtimes.
-
-#### Minimum version of org.apache.groovy {#org.apache.groovy}
-
-Update the usage of org.apache.groovy to version 4.0.22 or higher to ensure support for newer JVM runtimes.
-
-This bundle can be indirectly included by adding third party dependencies such as the AEM Groovy Console.
-
-### Build-time Requirements
-
-These adjustments are required to allow building the project with newer versions of Java but not required for runtime compatibility. The Maven plug-ins can be updated at any time as they are compatible with older versions of Java.
-
-#### Minimum version of bnd-maven-plugin {#bnd-maven-plugin}
-
-Update the usage of bnd-maven-plugin to version 6.4.0 to ensure support for newer JVM runtimes. Versions 7 or higher are not compatible with Java 11 or lower so an upgrade to that version is not recommended at this time.
-
-#### Minimum version of aemanalyser-maven-plugin {#aemanalyser-maven-plugin}
-
-Update the usage of aemanalyser-maven-plugin to version 1.6.6 or higher to ensure support for newer JVM runtimes.
-
-#### Minimum version of maven-bundle-plugin  {#maven-bundle-plugin}
-
-Update the usage of maven-bundle-plugin to version 5.1.5 or higher to ensure support for newer JVM runtimes.
-
-#### Update dependencies in maven-scr-plugin  {#maven-scr-plugin}
-
-The `maven-scr-plugin` is not directly compatible with Java 17 and 21. However, it is possible to generate the descriptor files by updating the ASM dependency version within the plugin configuration, similar to the snippet below:
-
-```
-[source,xml]
- <project>
-   ...
-   <build>
-     ...
-     <plugins>
-       ...
-       <plugin>
-         <groupId>org.apache.felix</groupId>
-         <artifactId>maven-scr-plugin</artifactId>
-         <version>1.26.4</version>
-         <executions>
-           <execution>
-             <id>generate-scr-scrdescriptor</id>
-             <goals>
-               <goal>scr</goal>
-             </goals>
-           </execution>
-         </executions>
-         <dependencies>
-           <dependency>
-             <groupId>org.ow2.asm</groupId>
-             <artifactId>asm-analysis</artifactId>
-             <version>9.7.1</version>
-             <scope>compile</scope>
-           </dependency>
-         </dependencies>
-       </plugin>
-       ...
-     </plugins>
-     ...
-   </build>
-   ...
- </project>
-```
--->
