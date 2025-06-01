@@ -63,7 +63,7 @@ graph TD
     classDef default rx:10,ry:10
 ```
 
-See the following table for information about the places where both these colors apply:
+See the following table for information on where both these colors apply:
 
 <table style="border-collapse: separate; border-spacing: 0; width: 100%; border-radius: 8px; overflow: hidden;">
   <tr style="background-color: #4682B4;">
