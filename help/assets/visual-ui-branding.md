@@ -14,7 +14,7 @@ On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]
 
 # Add title and body text to your banner and change the text color{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
 
-Add title and body texts to your banner using the respective fileds in the **[!UICONTROL Banner]** section available on the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** page. 
+Add title and body texts to your banner using the respective fields in the **[!UICONTROL Banner]** section available on the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** page. 
 Click the square box next to the **[!UICONTROL Banner text color]** to select a text color from the color picker for your banner text or specify the color's hex code in the field next to the color picker square box.
 
 # Change the primary and secondary color{#Change-the-primary-and-secondary-color}
@@ -114,7 +114,7 @@ See the following table for information on where both these colors apply:
   </tr>
   <tr>
     <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">Selected collection tiles</td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > Select <img alt="Add to collection" src="/help/assets/assets/add-circle.svg" /> available on the asset card or select <img alt="Add to collection" src="/help/assets/assets/add-circle.svg" /><b>[!UICONTROL Add to collection]</b> after selecting one or more asset cards > select the collection tile from <b>[!UICONTROL Add asset to collection]</b> dialog box. You can also click asset thumbnail > Select <img alt="Add to collection" src="/help/assets/assets/add-circle.svg" /> > select the colloection tile from the panel.</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > Select <img alt="Add to collection" src="/help/assets/assets/add-circle.svg" /> available on the asset card or select <img alt="Add to collection" src="/help/assets/assets/add-circle.svg" /><b>[!UICONTROL Add to collection]</b> after selecting one or more asset cards > select the collection tile from <b>[!UICONTROL Add asset to collection]</b> dialog box. You can also click asset thumbnail > Select <img alt="Add to collection" src="/help/assets/assets/add-circle.svg" /> > select the collection tile from the panel.</td>
   </tr>
   <tr>
     <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;"><b>[!UICONTROL Upload]</b> option</td>
@@ -186,7 +186,7 @@ See the following table for information on where both these colors apply:
   </tr>
 </table>
 
-See [Detailed color application guide](#primary-and-secondary-color-on-the-content-hub-home-page) for detailed breakdown of where these colors are applied across different pages and UI elements:
+See [Detailed color application guide](#primary-and-secondary-color-on-the-content-hub-home-page) for a detailed breakdown of where these colors are applied across different pages and UI elements:
 
 <details>
 <summary><strong>Detailed color application guide</strong></summary>
@@ -225,6 +225,6 @@ Primary color apply to the following places on the [!DNL Content Hub] [!UICONTRO
 
 * Selecting a row from the table on the configuration pages.
 * Toggle color across all configuration pages.
-* The **[!UICONTROL Confirm]** option in Edit dialog boxes on all configuration pages.
+* The **[!UICONTROL Confirm]** option in the Edit dialog boxes on all configuration pages.
 
 </details>
