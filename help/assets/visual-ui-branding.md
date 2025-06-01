@@ -162,7 +162,13 @@ See the following table for information about the places where both these colors
     <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #FFF8DC;">
        <img alt="Import" src="/help/assets/assets/import.svg" /> <b>[!UICONTROL Import]</b>, 
        <img alt="Filters" src="/help/assets/assets/filter.svg" /> <b>[!UICONTROL Filters]</b>, 
-       <img alt="Asset details" src="/help/assets/assets/info-icon.svg" /> <b>[!UICONTROL Asset details]</b>
+       <img alt="Asset details" src="/help/assets/assets/info-icon.svg" /> <b>[!UICONTROL Asset details]</b>,
+       <img alt="Asset card" src="/help/assets/assets/asset-card.svg" /> <b>[!UICONTROL Asset Card]</b>,
+       <img alt="Search" src="/help/assets/assets/Magnify.svg" /> <b>[!UICONTROL Search]</b>,
+       <img alt="Branding" src="/help/assets/assets/ColorPalette.svg" /> <b>[!UICONTROL Branding]</b>,
+       <img alt="Expired Assets" src="/help/assets/assets/expired-assets.svg" /> <b>[!UICONTROL Expired Assets]</b>,
+       <b>[!UICONTROL Renditions]</b>, and
+       <img alt="Custom Links" src="/help/assets/assets/link.svg" /> <b>[!UICONTROL Custom Links]</b>
     </td>
     <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] > <b>[!UICONTROL Configuration]</b></td>
   </tr>
@@ -170,20 +176,20 @@ See the following table for information about the places where both these colors
     <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #FFF8DC;"><b>[!UICONTROL Add filters]</b> on 
        <img alt="Filters" src="/help/assets/assets/filter.svg" /> <b>[!UICONTROL Filters]</b> page, <b>[!UICONTROL Add link]</b> on 
        <img alt="Custom Links" src="/help/assets/assets/link.svg" /> <b>[!UICONTROL Custom Links]</b> page and <b>[!UICONTROL Add metadata]</b> on 
-       <img alt="Import" src="/help/assets/assets/import.svg" />
+       <img alt="Import" src="/help/assets/assets/import.svg" /> <b>[!UICONTROL Import]</b>, <img alt="Asset details" src="/help/assets/assets/info-icon.svg" /> <b>[!UICONTROL Asset details]</b>, <img alt="Asset card" src="/help/assets/assets/asset-card.svg" /> <b>[!UICONTROL Asset Card]</b>, and <img alt="Search" src="/help/assets/assets/Magnify.svg" /> <b>[!UICONTROL Search]</b> pages
     </td>
     <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] > <b>[!UICONTROL Configuration]</b> > Respective pages</td>
   </tr>
   <tr>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #FFF8DC;">Input fields in configuration dialogs</td>
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #FFF8DC;">Input fields in <b>[!UICONTROL Add metadata]</b>, <b>[!UICONTROL Add link]</b> and <b>[!UICONTROL Add filters]</b> dialog boxes.</td>
     <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] > <b>[!UICONTROL Configuration]</b> > <b>[!UICONTROL Dialog boxes]</b></td>
   </tr>
 </table>
 
-See [Detailed Color Application Guide](#primary-and-secondary-color-on-the-content-hub-home-page) for detailed breakdown of where these colors are applied across different pages and UI elements:
+See [Detailed color application guide](#primary-and-secondary-color-on-the-content-hub-home-page) for detailed breakdown of where these colors are applied across different pages and UI elements:
 
 <details>
-<summary><strong>Detailed Color Application Guide</strong></summary>
+<summary><strong>Detailed color application guide</strong></summary>
 
 See the following sections to know the places on the [[!DNL Content Hub] home page](#primary-and-secondary-color-on-the-content-hub-home-page) and [[!UICONTROL Configuration]](#primary-and-secondary-color-on-the-content-hub-configuration-page) page where both these colors apply:
 
