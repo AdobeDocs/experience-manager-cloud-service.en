@@ -461,21 +461,21 @@ Properties for the following OSGi component PIDs cannot be modified, as describe
 The values of some OSGi properties are restricted to the rules described below.
 
   * **`org.apache.felix.eventadmin.impl.EventAdmin`**
-  * `org.apache.felix.eventadmin.ThreadPoolSize`
-    * Type: integer
-    * Required Range: 2-100
-  * `org.apache.felix.eventadmin.AsyncToSyncThreadRatio`
-    * Type: double
-  * `org.apache.felix.eventadmin.Timeout`
-    * Type: integer
-  * `org.apache.felix.eventadmin.RequireTopic`
-    * Type: boolean
-  * `org.apache.felix.eventadmin.IgnoreTimeout`
-    * Required
-    * Type: array of strings
-    * Required Range: Must include at least all of `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*`
-  * `org.apache.felix.eventadmin.IgnoreTopic`
-    * Type: array of strings
+    * `org.apache.felix.eventadmin.ThreadPoolSize`
+      * Type: integer
+      * Required Range: 2-100
+    * `org.apache.felix.eventadmin.AsyncToSyncThreadRatio`
+      * Type: double
+    * `org.apache.felix.eventadmin.Timeout`
+      * Type: integer
+    * `org.apache.felix.eventadmin.RequireTopic`
+      * Type: boolean
+    * `org.apache.felix.eventadmin.IgnoreTimeout`
+      * Required
+      * Type: array of strings
+      * Required Range: Must include at least all of `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*`
+    * `org.apache.felix.eventadmin.IgnoreTopic`
+      * Type: array of strings
 * **`org.apache.felix.http`**
   * `org.apache.felix.http.timeout`
     * Type: integer
