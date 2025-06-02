@@ -76,6 +76,10 @@ To proceed with form creation:
 
     ![rename default sheet to "shared-default"](/help/edge/assets/rename-sheet-to-shared-default.png)
 
+    >[!IMPORTANT]
+    >
+    >**The sheet where the form is authored has restrictions on what it can be named. Only `helix-default` and `shared-aem` can be used as sheet names.**
+
 1. To add the form fields, insert rows and column headers into the 'shared-aem' sheet. Each row should represent a [form field](/help/edge/docs/forms/form-components.md#available-components), with column headers defining the corresponding field [properties](/help/edge/docs/forms/form-components.md#components-properties).
 
 
