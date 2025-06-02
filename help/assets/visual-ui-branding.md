@@ -125,8 +125,7 @@ See the following table for information on where both these colors apply:
     <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > Select asset card from <b>[!UICONTROL All Assets]</b> page or <b>[!UICONTROL Collections]</b> page.</td>
   </tr>
   <tr>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">
-       <img alt="Download icon" src="/help/assets/assets/download-icon.svg" /> Hovering or selecting renditions
+    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;"> Hovering or selecting renditions
     </td>
     <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > click asset thumbnail > select <img alt="Download icon" src="/help/assets/assets/download-icon.svg" />.</td>
   </tr>
