@@ -513,6 +513,7 @@ The values of some OSGi properties are restricted to the rules described below.
 |  `org.apache.sling.commons.log.LogManager.factory.config` | `org.apache.sling.commons.log.level` |  Yes | string  | either "INFO", "DEBUG" or "TRACE"  |
 |   |  `org.apache.sling.commons.log.names` |   | array of strings  |   |
 |   |  `org.apache.sling.commons.log.additiv` |   | boolean  |   | 
+
 +++
 
 ## Java runtime update to version 21 {#java-runtime-update-21}
