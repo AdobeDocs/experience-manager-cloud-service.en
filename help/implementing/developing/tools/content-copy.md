@@ -194,3 +194,4 @@ The content copy tool has the following limitations.
 * The content copy tool has no versioning capability and cannot automatically detect modified content or created content on the source environment in a content set since the last content copy operation.
   * If you want to update your destination environment with content changes only, since the last content copy operation, you must create a content set. Then, specify the paths on the source instance where changes were made since the last content copy operation.
 * Version information is not included in a content copy.
+* [Content Fragments Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) can specify reference fields based on universally unique IDs (UUID). Such UUIDs are repository specific, so the content copy tool will recalculate these UUIDs in the target environment when copying Content Fragments.
