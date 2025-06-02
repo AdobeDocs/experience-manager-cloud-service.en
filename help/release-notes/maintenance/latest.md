@@ -52,6 +52,7 @@ None.
 * GRANITE-54164: Removed `org.apache.jackrabbit.oak.plugins.blob` from public API.
 * GRANITE-54280: Removed `org.apache.jackrabbit.oak.cache` from public API.
 * GRANITE-58332: Deprecated `org.apache.jackrabbit.oak.plugins.memory` in public API.
+* YUI compressor for javascript has been deprecated.
 * The [Experience Cloud Setup Automation](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) functionality has been deprecated.
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
