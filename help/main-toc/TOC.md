@@ -529,7 +529,7 @@ user-guide-title: AEM as a Cloud Service
     + [Manage publication](/help/assets/manage-publication.md)
     + [Preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
     + [Smart tags for images](/help/assets/smart-tags.md)
-    + [Smart tag your video assets](/help/assets/smart-tags-video-assets.md)
+    + [Smart tags for videos](/help/assets/smart-tags-for-videos.md)
     + [How to organize assets](/help/assets/organize-assets.md)
     + [Use [!DNL Adobe Stock] assets](/help/assets/aem-assets-adobe-stock.md)
     + [Manage collections](/help/assets/manage-collections.md)
