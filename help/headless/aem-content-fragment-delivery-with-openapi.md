@@ -28,8 +28,6 @@ For full documentation see [AEM Content Fragment Delivery with OpenAPI](https://
 >
 >See [AEM APIs for Structured Content Delivery and Management](/help/headless/apis-headless-and-content-fragments.md) for an overview of the various APIs available and comparison of some of the concepts involved.
 
-<!-- CQDOC-22720 -->
-
 >[!IMPORTANT]
 >
 >To enable Content Fragment Delivery with OpenAPI on AEM as a Cloud Service please ensure that it is not already enabled, then submit an Adobe Support ticket with the title **Enable Content Fragment Delivery with OpenAPI** and specifying:
@@ -66,12 +64,6 @@ For preview the Content Fragment Delivery with OpenAPI can:
 * get the preview URL
 
 ## CORS {#cors}
-
-<!-- CQDOC-22720 -->
-
-<!--
-[CORS allowed origins](/help/headless/deployment/cross-origin-resource-sharing.md) allow customers to define the origins that can call the API. The origins are defined in AEM as an OSGi configuration.
--->
 
 [CORS allowed origins](/help/headless/deployment/cross-origin-resource-sharing.md) define the origins that can call the API. 
 
