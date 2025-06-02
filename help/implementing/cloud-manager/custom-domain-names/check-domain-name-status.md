@@ -50,9 +50,9 @@ Cloud Manager verifies domain ownership through the customer managed (OV/EV) SSL
 | Deletion failed | The deletion of a custom domain name failed and must be retried.<br>See [Manage custom domain names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) to learn more. |
 
 
-## Domain name errors {#domain-error}
+## Domain name error {#domain-error}
 
-The following are some common domain name verification errors and their typical resolutions.
+The following is a common domain name verification error and its typical resolution.
 
 ### Domain not installed error {#domain-not-installed}
 
