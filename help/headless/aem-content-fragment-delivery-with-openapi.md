@@ -38,7 +38,6 @@ For full documentation see [AEM Content Fragment Delivery with OpenAPI](https://
 >* details of the use-case you want to solve with the Content Fragment Delivery OpenAPI
 >* details of all your contacts that Adobe should respond to, and keep informed about the request, and project (if required)
 
-
 ## Caching {#caching}
 
 AEM integrates with the AEM CDN Fastly. This means that JSON responses served on the publish tier are cached at the Fastly level.
