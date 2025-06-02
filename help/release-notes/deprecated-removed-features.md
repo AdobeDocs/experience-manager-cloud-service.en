@@ -460,123 +460,59 @@ Properties for the following OSGi component PIDs cannot be modified, as describe
 
 The values of some OSGi properties are restricted to the rules described below.
 
-  * **`org.apache.felix.eventadmin.impl.EventAdmin`**
-    * `org.apache.felix.eventadmin.ThreadPoolSize`
-      * Type: integer
-      * Required Range: 2-100
-    * `org.apache.felix.eventadmin.AsyncToSyncThreadRatio`
-      * Type: double
-    * `org.apache.felix.eventadmin.Timeout`
-      * Type: integer
-    * `org.apache.felix.eventadmin.RequireTopic`
-      * Type: boolean
-    * `org.apache.felix.eventadmin.IgnoreTimeout`
-      * Required
-      * Type: array of strings
-      * Required Range: Must include at least all of `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*`
-    * `org.apache.felix.eventadmin.IgnoreTopic`
-      * Type: array of strings
-* **`org.apache.felix.http`**
-  * `org.apache.felix.http.timeout`
-    * Type: integer
-  * `org.apache.felix.http.session.timeout`
-    * Type: integer
-  * `org.apache.felix.http.jetty.threadpool.max`
-    * Type: integer
-  * `org.apache.felix.http.jetty.headerBufferSize`
-    * Type: integer
-  * `org.apache.felix.http.jetty.requestBufferSize`
-    * Type: integer
-  * `org.apache.felix.http.jetty.responseBufferSize`
-    * Type: integer
-  * `org.apache.felix.http.jetty.maxFormSize`
-    * Type: integer
-  * `org.apache.felix.https.jetty.session.cookie.httpOnly`
-    * Type: boolean
-  * `org.apache.felix.https.jetty.session.cookie.secure`
-    * Type: boolean
-  * `org.eclipse.jetty.servlet.SessionIdPathParameterName`
-    * Type: string
-  * `org.eclipse.jetty.servlet.CheckingRemoteSessionIdEncoding`
-    * Type: boolean
-  * `org.eclipse.jetty.servlet.SessionCookie`
-    * Type: string
-  * `org.eclipse.jetty.servlet.SessionDomain`
-    * Type: string
-  * `org.eclipse.jetty.servlet.SessionPath`
-    * Type: string
-  * `org.eclipse.jetty.servlet.MaxAge`
-    * Type: integer
-  * `org.eclipse.jetty.servlet.SessionScavengingInterval`
-    * Type: integer
-  * `org.apache.felix.jetty.gziphandler.enable`
-    * Type: boolean
-  * `org.apache.felix.jetty.gzip.minGzipSize`
-    * Type: integer
-  * `org.apache.felix.jetty.gzip.compressionLevel`
-    * Type: integer
-  * `org.apache.felix.jetty.gzip.inflateBufferSize`
-    * Type: integer
-  * `org.apache.felix.jetty.gzip.syncFlush`
-    * Type: boolean
-  * `org.apache.felix.jetty.gzip.excludedUserAgents`
-    * Type: string
-  * `org.apache.felix.jetty.gzip.includedMethods`
-    * Type: array of strings
-  * `org.apache.felix.jetty.gzip.excludedMethods`
-    * Type: array of strings
-  * `org.apache.felix.jetty.gzip.includedPaths`
-    * Type: array of strings
-  * `org.apache.felix.jetty.gzip.excludedPaths`
-    * Type: array of strings
-  * `org.apache.felix.jetty.gzip.includedMimeTypes`
-    * Type: array of strings
-  * `org.apache.felix.jetty.gzip.excludedMimeTypes`
-    * Type: array of strings
-  * `org.apache.felix.http.session.invalidate`
-    * Type: boolean
-  * `org.apache.felix.http.session.container.attribute`
-    * Type: array of strings
-  * `org.apache.felix.http.session.uniqueid`
-    * Type: boolean
-* **`org.apache.sling.scripting.cache`**
-  * `org.apache.sling.scripting.cache.size`
-    * Type: integer
-    * Required Range: >= 2048
-  * `org.apache.sling.scripting.cache.additional_extensions`
-    * Required
-    * Type: array of strings
-    * Required Range: must include js
-* **`com.day.cq.mailer.DefaultMailService`**
-  * `smtp.host`
-    * Type: string
-  * `smtp.port`
-    * Type: integer
-    * Required Range: 465, 587, or 25
-  * `smtp.user`
-    * Type: string
-  * `smtp.password`
-    * Type: string
-  * `from.address`
-    * Type: string
-  * `smtp.ssl`
-    * Type: string
-  * `smtp.starttls`
-    * Type: boolean
-  * `smtp.requiretls`
-    * Type: boolean
-  * `debug.email`
-    * Type: boolean
-  * `oauth.flow`
-    * Type: boolean
-* **`org.apache.sling.commons.log.LogManager.factory.config`**
-  * `org.apache.sling.commons.log.level`
-    * Type: string
-    * Required Range: INFO, DEBUG, or TRACE
-  * `org.apache.sling.commons.log.names`
-    * Type: string
-  * `org.apache.sling.commons.log.additiv`
-    * Type: boolean
+| OSGi component PID  |   | Required  | Type  | Restriction (if applies)  |
+|---|---|---|---|---|
+|  `org.apache.felix.eventadmin.impl.EventAdmin` | `org.apache.felix.eventadmin.ThreadPoolSize`  | Yes  | integer  | 2-100  |
+|   |  `org.apache.felix.eventadmin.AsyncToSyncThreadRatio` |   | double  | --  |
+|   |  `org.apache.felix.eventadmin.AsyncToSyncThreadRatio` |   |  integer | --  |
+|   |  `org.apache.felix.eventadmin.RequireTopic` |   | boolean  |  -- |
+|   |  `org.apache.felix.eventadmin.IgnoreTimeout`  | Yes  | array of strings  | Must include at least all of `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*`  |
+|   |  `org.apache.felix.eventadmin.IgnoreTopic`  |   | array of strings  | --  |
+|  `org.apache.felix.http`  |  `org.apache.felix.http.timeout`  |   | integer  |   |
+|   |  `org.apache.felix.http.session.timeout`  |   | integer  |   |
+|   |   `org.apache.felix.http.jetty.threadpool.max` |   | integer  |   |
+|   |   `org.apache.felix.http.jetty.headerBufferSize` |   | integer  |   |
+|   |  `org.apache.felix.http.jetty.requestBufferSize` |   | integer  |   |
+|   |  `org.apache.felix.http.jetty.responseBufferSize` |   | integer  |   |
+|   |  `org.apache.felix.http.jetty.maxFormSize` |   |  integer |   |
+|   |  `org.apache.felix.https.jetty.session.cookie.httpOnly` |   | boolean  |   |
+|   |  `org.apache.felix.https.jetty.session.cookie.secure` |   | boolean  |   |
+|   |  `org.eclipse.jetty.servlet.SessionIdPathParameterName` |   | string  |   |
+|   |  `org.eclipse.jetty.servlet.CheckingRemoteSessionIdEncoding` |   | boolean  |   |
+|   |  `org.eclipse.jetty.servlet.SessionCookie` |   | string  |   |
+|   |  `org.eclipse.jetty.servlet.SessionDomain` |   |string  |   |
+|   |  `org.eclipse.jetty.servlet.SessionPath` |   | string  |   |
+|   |  `org.eclipse.jetty.servlet.MaxAge` |   |  integer |   |
+|   |  `org.eclipse.jetty.servlet.SessionScavengingInterval` |   | integer  |   |
+|   |  `org.apache.felix.jetty.gziphandler.enable` |   | boolean  |   |
+|   |  `org.apache.felix.jetty.gzip.minGzipSize` |   | integer  |   |
+|   |  `org.apache.felix.jetty.gzip.compressionLevel` |   |  integer |   |
+|   |  `org.apache.felix.jetty.gzip.inflateBufferSize` |   | integer  |   |
+|   |  `org.apache.felix.jetty.gzip.syncFlush` |   | boolean  |   |
+|   |  `org.apache.felix.jetty.gzip.excludedUserAgents` |   | string  |   |
+|   |  `org.apache.felix.jetty.gzip.includedMethods` |   |  array of strings |   |
+|   |  `org.apache.felix.jetty.gzip.excludedMethods` |   | array of strings  |   |
+|   |  `org.apache.felix.jetty.gzip.includedPaths` |   | array of strings  |   |
+|   |  `org.apache.felix.jetty.gzip.excludedPaths` |   | array of strings  |   |
+|   |  `org.apache.felix.jetty.gzip.includedMimeTypes` |   | array of strings  |   |
+|   |  `org.apache.felix.http.session.invalidate` |   | boolean  |   |
+|   |  `org.apache.felix.http.session.container.attribute` |   | array of strings  |   |
+|   |  `org.apache.felix.http.session.uniqueid` |   | boolean  |   |
+| `org.apache.sling.scripting.cache`   | `org.apache.sling.scripting.cache.size`  | Yes  | integer  | >= 2048  |
+|   |  `org.apache.sling.scripting.cache.additional_extensions` |  Yes | array of strings  | must include "js"  |
+| `com.day.cq.mailer.DefaultMailService`   |  `smtp.host` |   | string  |   |
+|   |  `smtp.port` | Yes  | integer  |  either "465", "587" or "25" |
+|   |  `smtp.user`|   | string  |   |
+|   |  `smtp.password` |   | string  |   |
+|   |  `from.address` |   | string  |   |
+|   |  `smtp.ssl` |   | string  |   |
+|   |  `smtp.starttls` |   | boolean  |   |
+|   |  `smtp.requiretls` |   | boolean  |   |
+|   |  `debug.email`|   |  boolean |   |
+|   |  `oauth.flow` |   |  boolean |   |
+|  `org.apache.sling.commons.log.LogManager.factory.config` | `org.apache.sling.commons.log.level` |  Yes | string  | either "INFO", "DEBUG" or "TRACE"  |
+|   |  `org.apache.sling.commons.log.names` |   | array of strings  |   |
+|   |  `org.apache.sling.commons.log.additiv` |   | boolean  |   | 
 +++
 
 ## Java runtime update to version 21 {#java-runtime-update-21}
