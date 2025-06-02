@@ -56,7 +56,13 @@ The following are some common domain name verification errors and their typical 
 
 ### Domain not installed error {#domain-not-installed}
 
-This error may occur during domain validation of the EV/OV certificate even after you have checked that the certificate has been updated appropriately.
+<!-- This error may occur during domain validation of the EV/OV certificate even after you have checked that the certificate has been updated appropriately. -->
+
+When you add a domain mapping in Cloud Manager, you may encounter the following error message: 
+
+*The domain is already installed in a Fastly account. Please remove it first from there before adding to Cloud Service.*
+
+ This message indicates that the domain is currently associated with a different Fastly account—typically outside of Adobe's control. To proceed, the domain must be disassociated from the other account before it can be added to the Adobe-managed Cloud Service. This issue usually occurs when the same domain is already mapped to a different origin in a non-Adobe Fastly configuration.
 
 #### Error cause {#cause}
 
