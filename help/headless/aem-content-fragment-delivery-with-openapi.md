@@ -37,7 +37,7 @@ For full documentation see [AEM Content Fragment Delivery with OpenAPI](https://
 >* the Cloud Service program and environment ID(s)
 >* details of the use-case you want to solve with the Content Fragment Delivery OpenAPI
 >* details of all your contacts that Adobe should respond to, and keep informed about the request, and project (if required)
->* details of the [HTTP allowed origins](#cors) that will trigger requests to the Content Fragment Delivery API 
+
 
 ## Caching {#caching}
 
@@ -74,7 +74,7 @@ For preview the Content Fragment Delivery with OpenAPI can:
 [CORS allowed origins](/help/headless/deployment/cross-origin-resource-sharing.md) allow customers to define the origins that can call the API. The origins are defined in AEM as an OSGi configuration.
 -->
 
-[CORS allowed origins](/help/headless/deployment/cross-origin-resource-sharing.md) define the origins that can call the API. Currently, allowed origins must be configured by Adobe. Please provide information about origins that should be allowed, as part of your initial request (Adobe Support ticket) to enable the API.
+[CORS allowed origins](/help/headless/deployment/cross-origin-resource-sharing.md) define the origins that can call the API. 
 
 The CORS allowed origins defined on the dispatcher configuration side, specifically for GraphQL, are not taken into consideration by this API.
 
