@@ -97,7 +97,7 @@ Execute the following steps to share an asset while previewing it:
 
 ## Access the shared assets {#access-shared-assets}
 
-After receiving the link to shared assets, click the link, to access the page displaying the shared assets. If you access the page through signing-in to your [!DNL Content Hub] environment, it is a private link. If you access the shared assets page without any sign-in step then it is a public link. 
+After receiving the link to shared assets, click the link, to access the page displaying the shared assets. If you access the page through signing-in to your [!DNL Content Hub] environment, it is a private link. If you access the shared assets page without a sign-in step then it is a public link. 
 
 You can do the following on the shared assets page:
 
