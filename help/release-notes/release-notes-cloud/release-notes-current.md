@@ -216,7 +216,7 @@ For more details, see the [Maintenance Tasks article](/help/operations/maintenan
 
 The Adobe-Managed CDN offers flexible configuration options, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#configurations). 
 
-Now in a beta, deploy a config pipeline for features including CDN log forwarding, origin selectors, response and request transformations, and more. Please reach out to [aemcs-new-devconsole-ui-beta@adobe.com](mailto:aemcs-new-devconsole-ui-beta@adobe.com) with the details of your use case.
+Now in a beta, deploy a config pipeline for features including origin selectors, response and request transformations, and more. Please reach out to [aemcs-new-devconsole-ui-beta@adobe.com](mailto:aemcs-new-devconsole-ui-beta@adobe.com) with the details of your use case.
 
 ### AEM Log-Forwarding to More Destinations - Beta Program {#log-forwarding-earlyadopter}
 
