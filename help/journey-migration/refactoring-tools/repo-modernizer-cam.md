@@ -3,8 +3,8 @@ title: Repository Modernizer (CAM)
 description: Learn how to restructure existing project packages and make them compatible with the project structure defined for Adobe Experience Manager as a Cloud Service.
 feature: Migration
 role: Admin
+exl-id: 602aafb5-f5d9-4cff-9736-3b5b02932c5e
 ---
-
 # Repository Modernizer (CAM) {#repo-modernizer-cam}
 
 Repository Modernizer is a utility developed to restructure existing project packages by separating content and code into discrete packages to be compatible with the project structure defined for Adobe Experience Manager as a Cloud Service.
