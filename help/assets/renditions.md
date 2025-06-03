@@ -109,7 +109,7 @@ To view or download dynamic renditions of images in Experience Manager Assets, f
 
 ## Dynamic Media with OpenAPI Capabilities renditions {#dm-with-openapi-renditions}
 
-### Before you begin
+### Before you begin {#prereqs-dm-with-openapi-renditions}
 
 * You must be a licensed AEM Dynamic Media user.
 * Assets must be approved to display Dynamic Media with OpenAPI capabilities renditions. For more information, see [Approve assets in Experience Manager ](/help/assets/approve-assets.md#copy-delivery-url-approved-assets)

@@ -8,6 +8,10 @@ solution: Experience Manager Sites
 ---
 # Integrate Adobe Analytics with Experience Cloud Setup Automation {#integrate-adobe-analytics-automation-setup}
 
+>[!CAUTION]
+>
+>The Experience Cloud Setup Automation functionality is deprecated.
+
 Experience Cloud Setup Automation provides a simple and automated way to integrate and instrument Experience Manager Sites with Experience Platform Tags and Adobe Analytics with a simple UI wizard interface.
 
 It has never been simpler to integrate Adobe Analytics with AEM Sites. With Experience Cloud Setup Automation, setting up, integrating, and instrumenting your site to capture performance analytics to understand how well your customers are engaging and converting is all taken care of with just a few clicks.

@@ -8,12 +8,6 @@ solution: Experience Manager Sites
 ---
 # Defining Content Fragment Models {#defining-content-fragment-models}
 
->[!IMPORTANT]
->
->Various features of the Content Fragment Models are available through the Early Adopter Program.
->
->To see the status, and how to apply if you are interested, check the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md).
-
 Content Fragment Models in Adobe Experience Manager (AEM) as a Cloud Service define the structure for the content of your [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md). These fragments can then be used for page authoring, or as a foundation for your headless content.
 
 This page covers how to define your content fragment model, using the dedicated editor. See [Managing your Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) for further tasks and options available once your fragments are created, including [actions available from the Content Fragments Console](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#actions), [allowing the model on your folder](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder) and [publishing your model](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model).
@@ -125,6 +119,7 @@ A selection of data types is available for defining your model:
     * Create a new Content Fragment, based on the appropriate model
     * Create new instances of the field 
   * The reference specifies the path to the referenced resource; for example `/content/dam/path/to/resource`
+
 * **Fragment Reference (UUID)**
   * References other Content Fragments; can be used to [create nested content](#using-references-to-form-nested-content)
   * The data type can be configured to allow fragment authors to:
@@ -133,18 +128,27 @@ A selection of data types is available for defining your model:
     * Create new instances of the field 
   * In the editor, the reference specifies the path to the referenced resource; internally the reference is held as a universally unique ID (UUID) that references the resource
     * You do not need to know the UUID; in the fragment editor you can browse to the required fragment
+  
+  >[!NOTE]
+  >
+  >The UUIDs are repository specific. If you use the [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) to copy Content Fragments, the UUIDs will be recalculated in the target environment.
 
 * **Content Reference**
   * References other content, of any type; can be used to [create nested content](#using-references-to-form-nested-content)
   * If an image is referenced, you can opt to show a thumbnail
   * The field can be configured to allow fragment authors to create new instances of the field 
   * The reference specifies the path to the referenced resource; for example `/content/dam/path/to/resource`  
+
 * **Content Reference (UUID)**
   * References other content, of any type; can be used to [create nested content](#using-references-to-form-nested-content)
   * If an image is referenced, you can opt to show a thumbnail
   * The field can be configured to allow fragment authors to create new instances of the field 
   * In the editor, the reference specifies the path to the referenced resource; internally the reference is held as a universally unique ID (UUID) that references the resource
     * You do not need to know the UUID; in the fragment editor you can browse to the required asset resource
+
+  >[!NOTE]
+  >
+  >The UUIDs are repository specific. If you use the [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) to copy Content Fragments, the UUIDs will be recalculated in the target environment.
 
 * **JSON Object**
   * Allows the Content Fragment author to enter JSON syntax into the corresponding elements of a fragment. 
