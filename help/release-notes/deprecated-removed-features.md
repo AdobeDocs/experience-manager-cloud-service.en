@@ -164,24 +164,6 @@ The APIs in the table below (click to expand to see it) have been announced as d
     <td>9/23/2024</td>
     <td>8/31/2025</td>
   </tr>
-  </tbody>
-</table>
-</details>
-  
-## Removed APIs {#removed-apis}
-
-This section lists APIs that have been deprecated and removed. Some APIs reference the API Removal Guidance section below.
-
-<details>
-  <summary>Expand to see the list of removed APIs.</summary>
-<table style="table-layout:auto">
-  <tr>
-    <th>Package/Class</th>
-    <th>Comments</th>
-    <th>Deprecation Date</th>
-    <th>Target Removal Date</th>
-  </tr>
-<tbody>
   <tr>
     <td>org.apache.sling.runmode</td>
     <td></td>
@@ -239,12 +221,14 @@ This section lists APIs that have been deprecated and removed. Some APIs referen
     <td>Usage of this API is not supported in AEM as a Cloud Service.</td>
     <td>10/31/2022</td>
     <td>8/31/2025</td>
-  </tr>
-</tbody>
+  </tr>  
+  </tbody>
 </table>
 </details>
+  
+## Removed APIs {#removed-apis}
 
-Below is an extensive list of removed AEM APIs.
+This section lists APIs that have been deprecated and removed. Some APIs reference the API Removal Guidance section below.
 
 <details>
   <summary>Expand to see the list of removed APIs.</summary>
@@ -437,26 +421,28 @@ These rules are validated during the Cloud Manager build process. Additional rul
 
 Additional information about OSGI configuration can be found at [this location](/help/implementing/deploying/configuring-osgi.md).
 
-+++Deprecated OSGi properties (those that will no longer be modifiable)
+### Deprecated OSGi Properties (those that will no longer be modifiable) {#deprecated-osgi-properties}
 
 Some properties for the following OSGi component PIDs can no longer be modified. This will be enforced in the timeframe described below.
 
-  * **`org.apache.sling.commons.log.LogManage`** (Announcement Date: 4/24/2025, Enforcement Date: 8/28/2025, but overrides ignored in June)
-  * **`org.apache.sling.commons.log.LogManager.factory.config`** (Announcement Date: 4/24/2025, Enforcement Date: 8/28/2025, but overrides ignored in June)
-+++
+| **OSGI component ID**| **Unmodifiable Properties** | **Deprecation**  | **Enforcement** |
+|---|---|---|---|
+| **`org.apache.sling.commons.log.LogManager`** | all | 4/24/25   | 8/31/25 (config ignored in June) |
+| **`org.apache.sling.commons.log.LogManager.factory.config`** | org.apache.sling.commons.log.file, org.apache.sling.commons.log.pattern | 4/24/25 | 8/31/25 (config ignored in June) |
 
-+++Unmodifiable OSGi properties
+### Unmodifiable OSGi properties {#unmodifiable-osgi-properties}
 
 Properties for the following OSGi component PIDs cannot be modified, as described below.
 
-  * **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** (all properties unmodifable)
-  * **`com.day.cq.auth.impl.cug.CugSupportImpl`** (all properties unmodifable)
-  * **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** (all properties unmodifable)
-  * **`org.apache.felix.http (Factory)`** (all properties unmodifable)
-  * **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** (all properties unmodifable)
-+++
+| **OSGI component ID** | **Unmodifiable Properties** |
+|---|---|
+| **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** | all | 
+| **`com.day.cq.auth.impl.cug.CugSupportImpl`** | all |
+| **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** | all |
+| **`org.apache.felix.http (Factory)`** | all |
+| **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** | all |
 
-+++OSGi property restrictions
+### OSGi property restrictions {#restrictions-osgi-properties}
 
 The values of some OSGi properties are restricted to the rules described below.
 
@@ -513,8 +499,6 @@ The values of some OSGi properties are restricted to the rules described below.
 |  `org.apache.sling.commons.log.LogManager.factory.config` | `org.apache.sling.commons.log.level` |  Yes | string  | either "INFO", "DEBUG" or "TRACE"  |
 |   |  `org.apache.sling.commons.log.names` |   | array of strings  |   |
 |   |  `org.apache.sling.commons.log.additiv` |   | boolean  |   | 
-
-+++
 
 ## Java runtime update to version 21 {#java-runtime-update-21}
 
