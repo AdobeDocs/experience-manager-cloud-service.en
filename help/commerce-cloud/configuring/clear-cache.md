@@ -69,15 +69,37 @@ Request Type: `POST`
 | `Authorization`                      | Corresponding Author's User credentials (Auth Type: Basic Auth)  | Required | Add the corresponding username and password |
 
 
->[!NOTE]
->
-> Below are existing attributes which the feature is giving out of the Box.
+Below are existing attributes which the feature is giving out of the Box.
 
 
 
 ### Payload
 
-This InvalidateType needs to be given in combination of Mandatory attribute (i.e storePath)
+This InvalidateType needs to be given in combination of Mandatory attribute (i.e storePath).
+
+This table show the mandatory property that need to be passed in every API call:
+
+| Propertie | Value | Type (Array/String/Boolean)| Will this clear the dispatcher cache? | Comment |
+|------------------------------|-------------------|---|---|---|
+| `storePath` | Corresponding value of the site path from where the cache needs be removed (Example : 
+`/content/venia/us/en` as reference with venia project)| String  | Yes | This needs to given with the combination of `invalidateType.` |
+
+
+### Sample API Request
+
+```
+curl --location 'https://author-p10603-e145552-cmstg.adobeaemcloud.com/bin/cif/invalidate-cache' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: ••••••' \
+--header 'Cookie: private_content_version=0299c5e4368a1577a6f454a61370317b' \
+--data '{
+"productSkus": ["VP01", "VT10"], // This will clear cache for the corresponding pages related with mentioned skus.
+"categoryUids":["Mjk="], // This will clear cache for the corresponding pages related with mentioned categories.
+"regexPatterns":["\"uid\"\\s*:\\s*\\{\"id\"\\s*:\\s*\"(Mjk=)\"", "\"sku\":\\s*\"(VP02|VP03)\""],
+"cacheNames": ["venia/components/commerce/product"], // If this been added then it will clear respective caches for the corresponding storepath
+"storePath": "/content/venia/us/en"
+}'
+```
 
 ## Extensibility {#clear-cache-extensibility}
 
