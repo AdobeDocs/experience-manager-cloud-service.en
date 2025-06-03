@@ -186,6 +186,7 @@ Currently, content versions and audit logs have their associated *purge maintena
 However, to optimize repository performance, starting in **late June 2025**, purging will be enabled by default, following these guidelines:
 
 #### Content Versions {#mt-content}
+
 - **New environments** (created after an upcoming date (to be communicated later)
   - Versions older than **30 days** will periodically be deleted.
   - The most recent five versions within the last 30 days are retained, along with the most recent version and the current version, regardless of their age.
@@ -196,7 +197,6 @@ However, to optimize repository performance, starting in **late June 2025**, pur
   - This high default threshold prevents unintended removal of recent data. However, it is recommended to configure lower values to optimize repository performance.
 
 - You may modify these defaults through OSGi configuration overrides.
-
 
 #### Audit Log {#mt-auditlogs}
 - **New environments** (created after an upcoming date, which will be communicated separately):
