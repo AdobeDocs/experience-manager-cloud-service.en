@@ -33,7 +33,7 @@ The next planned release is Thursday, July 10, 2025.
 
     Simplified the flow for adding an Edge Delivery site by requesting the **Edge Delivery Origin** instead of the **Repository URL**, making onboarding and setup faster and more intuitive <!-- CMGR-67686 -->
 
-    ![Add Edge Delivery site dialog box](/???.png)
+    ![Add Edge Delivery site dialog box]()
 
     See [Add an Edge Delivery Site](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md).
 
@@ -58,7 +58,7 @@ See [Adding a Specialized Testing Environment](/help/implementing/cloud-manager/
 
 ![Add environment dialog box with Specialized Testing Environment radio button selected](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
 
-If you are interested in testing this new feature and sharing your feedback, send an email to [] from your email address associated with your Adobe ID.
+If you are interested in testing this new feature and sharing your feedback, send an email to [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) from your email address associated with your Adobe ID.
 
 
 ### Bring Your Own Git - now with support for Azure DevOps {#gitlab-bitbucket-azure-vsts}
