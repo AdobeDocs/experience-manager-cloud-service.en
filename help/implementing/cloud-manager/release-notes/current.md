@@ -46,9 +46,13 @@ Participate in Cloud Manager's Early Adopter Program to get exclusive access to 
 
 The following early adopter opportunities are currently available:
 
-### Edge compute{#edge-compute}
+### Manage Access Tokens{#manage-access-tokens}
 
+Use the **Manage Access Tokens** feature in Cloud Manager to view, rename, and delete access tokens associated with external Bring Your Own Git repositories, such as GitHub Enterprise, GitLab, Bitbucket, and Azure DevOps.
 
+See [Manage Access Tokens](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
+
+If you are interested in testing this new feature and sharing your feedback, send an email to from your email address associated with your Adobe ID.
 
 ### Specialized Testing Environment {#specialized-test-environment}
 
