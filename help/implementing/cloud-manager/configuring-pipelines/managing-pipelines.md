@@ -58,7 +58,7 @@ You can also click ![Ellipsis - More icon](https://spectrum.adobe.com/static/ico
 
 You can mark specific pipelines as favorites so they appear at the top of the list on the **Pipelines** page. This ability makes frequently accessed pipelines easier to find and run.
 
-Favorited pipelines are marked with a ![Star icon for a favorite pipeline](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg). 
+Favorited pipelines are marked with a ![Star icon for a favorite pipeline](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg).
 
 **To mark pipeline favorites:**
 
