@@ -1,6 +1,6 @@
 ---
 title: JSON-LD Metadata
-description: Learn how to  to enable and verify the JSON+LD feature in AEM CIF.
+description: Learn how to enable and verify the JSON+LD feature in AEM CIF.
 feature: Commerce Integration Framework
 role: Admin, Developer
 ---
@@ -16,24 +16,24 @@ To make the **Enable JSON+LD** checkbox available in the CIF configuration, add 
 com.adobe.cq.cif.components.models.JsonLdFeatureEnable`.
 For further details on adding this configuration, refer to the following commit: [Adds configuration for Json-Ld](https://github.com/adobe/aem-cif-guides-venia/commit/8ddec1b) in the public aem-cif-guides-venia repository.
 
-Once this configuration is added and deployed, the checkbox will become visible in the CIF configuration settings and here are the steps to enable **JSON+LD**:
+Once this configuration is added and deployed, the checkbox becomes visible in the CIF configuration settings and here are the steps to enable **JSON+LD**:
 
-1. Navigate to CIF Configuration in AEM.
+1. Navigate to CIF configuration in AEM.
 1. Cancel inheritance.
 1. Check the **Enable JSON+LD** checkbox.
 1. Save the configuration.
 
 ## Verifying JSON+LD on a Product Detail Page (PDP) {#verify}
 
-To illustrate the steps to verify JSON+LD, we are using the Venia project as an example, where we have already added the required JSON+LD configuration to enable the feature. Here are the steps to follow:
+To illustrate the steps to verify JSON+LD,  the Venia project is used as an example, where the required JSON+LD configuration is already added to enable the feature. Here are the steps to follow:
 
-1. Navigate to your local AEM instance and open the Product Detail Page (PDP)page: http://localhost:4502/editor.html/content/venia/us/en/products/product-page.html
+1. Navigate to your local AEM instance and open the Product Detail Page (PDP): http://localhost:4502/editor.html/content/venia/us/en/products/product-page.html
 1. Author a product on the Product Detail Page (PDP).
 1. Switch to **View as Publish** mode.
 1. Open the **View Page Source** in your browser.
 1. Search for JSON+LD in the page source.
 
-If configured correctly, you will find the JSON+LD script associated with the product injected into the page.
+If configured correctly, you find the JSON+LD script associated with the product injected into the page.
 
 ## Sample JSON+LD Structure for a Product {#sample}
 
