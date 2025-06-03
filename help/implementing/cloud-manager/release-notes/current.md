@@ -21,10 +21,23 @@ The next planned release is Thursday, July 10, 2025.
  
 ## What's new {#what-is-new}
 
+* **(UI) License dashboard now includes Edge Delivery Services license**
 
+    Edge Delivery Services license usage is now displayed in the License dashboard, providing you with clearer visibility into your entitlements. <!-- CMGR-67686 -->
 
+    ![License Dashboard](/help/implementing/cloud-manager/assets/license-dashboard.png)
 
+    See [Licence dashboard](/help/implementing/cloud-manager/license-dashboard.md).
 
+* **(UI) Edge Delivery site configuration updated**
+
+    Simplified the flow for adding an Edge Delivery site by requesting the **Edge Delivery Origin** instead of the **Repository URL**, making onboarding and setup faster and more intuitive <!-- CMGR-67686 -->
+
+    ![Add Edge Delivery site dialog box](/???.png)
+
+    See [Add an Edge Delivery Site](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md).
+
+* **
 
 
 ## Early adopter program {#early-adoption}
