@@ -11,28 +11,28 @@ This document provides a comprehensive guide on enabling and verifying the clear
 
 ## Enabling Clear Cache Feature in CIF Configuration {#enable-clear-cache}
 
-By default, the clear-cache feature will be disabled in CIF configuration. To enable it, you need to add the following to your corresponding projects:
+By default, the clear-cache feature is disabled in CIF configuration. To enable it, you need to add the following to your corresponding projects:
 
 * Enable the servlet `/bin/cif/invalidate-cache` which helps you triggering the clear-cache API with their corresponding requests by adding the `com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json` configuration in your project as shown [here](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config.author/com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json).
    >[!NOTE]
    >
    > Configuration needs to be enabled only for the author instances.
-* Enable the listener in order to clear cache from each instance of AEM (publish and author) by adding the `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json` configuration in your project as shown [here](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json).
+* Enable the listener to clear cache from each instance of AEM (publish and author) by adding the `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json` configuration in your project as shown [here](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json).
   * Configuration should be enabled for both author and publish instances.
   * Enable the Dispatcher cache (Optional): you can enable the dispatcher clear cache setting by setting the `enableDispatcherCacheInvalidation` property to true in the above configuration. This provides functionality to clear cache from the dispatcher.
    >[!NOTE]
    >
-   > This will only works with publish instances.
-  * Also, make sure to give the corresponding pattern which suits your product, category and cms page needs to be added to the above configuration file in order to remove it from dispatcher cache. 
-* In order to improve the sql queries performance for finding the corresponding page related with product and category, add the corresponding index in your project (recommended). Fore more information, see [cifCacheInvalidationSupport/](link https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.apps/src/main/content/jcr_root/_oak_index/cifCacheInvalidationSupport/.content.xml).
+   > This will only work with publish instances.
+  * Also, make sure to give the corresponding pattern which suits your product, category and CMS page needs to be added to the above configuration file to remove it from the dispatcher cache. 
+* To improve the SQL queries performance for finding the corresponding page related with product and category, add the corresponding index in your project (recommended). Fore more information, see [cifCacheInvalidationSupport/](link https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.apps/src/main/content/jcr_root/_oak_index/cifCacheInvalidationSupport/.content.xml).
 
 ## Verifying Clear Cache Feature {#verify-clear-cache}
 
 To verify that everything is set up properly:
 
 * Trigger the corresponding servlet to the Author Instance AEM, for example [http://localhost:4502/bin/cif/invalidate-cache](http://localhost:4502/bin/cif/invalidate-cache) and you should get a 200 HTTP response.
-* Verify that a node has been created under the following path in author instances: `/var/cif/cacheinvalidation`. The node name will follow this pattern: `cmd_{{timestamp}}`.
-* Verify the same node has been created in each publish instances too.
+* Verify that a node has been created under the following path in author instances: `/var/cif/cacheinvalidation`. The node name follows this pattern: `cmd_{{timestamp}}`.
+* Verify that the same node has been created in each publish instances too.
 
 Now, to check whether the caches are getting cleared properly:
 1. Navigate to the corresponding PLP and PDP pages.
@@ -44,12 +44,12 @@ Now, to check whether the caches are getting cleared properly:
    --header 'Authorization: ••••••' \ // Mandatory
    --header 'Cookie: private_content_version=0299c5e4368a1577a6f454a61370317b' \
    --data '{
-       "productSkus": ["Sku1", "Sku2"], // Optional: Pass the corresponding sku which got updated
+       "productSkus": ["Sku1", "Sku2"], // Optional: Pass the corresponding sku which got updated.
        "categoryUids":["CategoryUid"], // Optional : Pass the corresponding category-uid which got updated.
-       "storePath": "/content/venia/us/en", // Mandatory : Needs to given in order to know for which site we are removing the clear cache
+       "storePath": "/content/venia/us/en", // Mandatory : Needs to be given to know for which site we are removing the clear cache.
    }'
    ```
-If everything goes well, the new changes will be reflected in every instance. If changes are not reflected for the publish instance, please check in the private window for corresponding PLP and PDP pages.
+If everything goes well, the new changes will be reflected in every instance. If changes are not reflected for the publish instance, please check in the private window for corresponding the PLP and PDP pages.
 
 >[!NOTE]
 >
@@ -57,7 +57,7 @@ If everything goes well, the new changes will be reflected in every instance. If
 
 ## Clear Cache Invalidation API {#clear-cache-api}
 
-This is the API which clients needs to trigger whenever they wanted to clear cache of commerce related data from AEM.
+This is the API which you need to trigger whenever you wanted to clear cache of commerce related data from AEM.
 
 Request Type: `POST`
 
@@ -77,13 +77,13 @@ The following table shows existing attributes which the feature is giving out-of
 |------------------------------|-------------------|---|---|---|
 | `productSkus`                           | Product's sku - which needs to be invalidated from the cache. | Array           | Yes | |
 | `categoryUids`                     | Category's uid - which needs to be invalidated from the cache. | Array  | Yes | Add the corresponding username and password |
-| `regexPatterns`                           | If you need to clear the GraphQL response data  based on regex pattern,use this. | Array           | No | |
+| `regexPatterns`                           | If you need to clear the GraphQL response data  based on regex pattern, use this. | Array           | No | |
 | `cacheNames`                           | This values are defined under the corresponding CIF GraphQL client configuraion factory >> Corresponding StorePath GraphQL configuration >> GraphQL cache configurations | Array           | No | |
 | `invalidateAll`                           | True or false. | Boolean          | Yes | |
 
-This table show the mandatory property that need to be passed in every API call:
+This table shows the mandatory property that need to be passed in every API call:
 
-| Propertie | Value | Type (Array/String/Boolean)| Will this clear the dispatcher cache? | Comment |
+| Property | Value | Type (Array/String/Boolean)| Will this clear the dispatcher cache? | Comment |
 |------------------------------|-------------------|---|---|---|
 | `storePath` | Corresponding value of the site path from where the cache needs be removed (Example : `/content/venia/us/en` as reference with venia project)| String  | Yes | This needs to given with the combination of `invalidateType.`|
 
@@ -115,7 +115,7 @@ In cases where the cache needs to be cleared that are not currently covered by t
 
 ### Adding New Custom Attribute {#new-custom-attribute}
 
-If for example you don't want to use the existing attribute for clearing the cache, then you have the flexibility to create your own attribute and define its corresponding functionality.
+If, for example, you don't want to use the existing attribute for clearing the cache, then you have the flexibility to create your own attribute and define its corresponding functionality.
 
 * If you only need to clear cache from the internal memory of AEM (the graphql response), then you need to follow [this reference](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/CustomInvalidation.java).
 * If you need to clear cache from the internal memory and the dispatcher cache, then you need to follow [this reference](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/CustomDispatcherInvalidation.java).
